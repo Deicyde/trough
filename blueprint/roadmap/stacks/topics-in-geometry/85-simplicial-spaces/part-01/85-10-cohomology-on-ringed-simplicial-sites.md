@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.10 Cohomology on ringed simplicial sites
 
-Section 85.10 of the Stacks Project, [Tag 0D7B](https://stacks.math.columbia.edu/tag/0D7B). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.10 of the Stacks Project, [Tag 0D7B](https://stacks.math.columbia.edu/tag/0D7B). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D9B, a lemma
 
 [Tag 0D9B](https://stacks.math.columbia.edu/tag/0D9B) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.nonempty_simplicialModuleResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolution.lean, line 1529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolution.lean#L1529).
+**`CategoryTheory.SimplicialSiteSituation.nonempty_simplicialModuleResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolution.lean, line 1529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolution.lean#L1529).
 
 > **Stacks 0D9B.** There is a complex of modules over the structure sheaf of the total
 > simplicial site whose term in degree `n` is the lower-shriek image `g_{n!}𝒪_n` of the `n`-th
@@ -31,7 +31,7 @@ public theorem nonempty_simplicialModuleResolution (S : SimplicialSiteSituation.
 
 [Tag 0D9C](https://stacks.math.columbia.edu/tag/0D9C) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L207). The attribute's comment: “the complex”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L207). The attribute's comment: “the complex”.
 
 > **Stacks 0D9C.** The canonical complex
 >
@@ -44,7 +44,7 @@ public theorem nonempty_simplicialModuleResolution (S : SimplicialSiteSituation.
 public def sectionsComplex : CochainComplex AddCommGrpCat.{u} ℕ
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex_exactAt_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L304). The attribute's comment: “exactness in degrees -1 and 0”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex_exactAt_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L304). The attribute's comment: “exactness in degrees -1 and 0”.
 
 > **Stacks 0D9C.** The complex `0 → Γ(C_total, F) → Γ(C_0, F_0) → …` is exact in degrees `-1`
 > and `0`, i.e. in indices `0` and `1`, for every sheaf of `O`-modules `F`.
@@ -54,7 +54,7 @@ public theorem sectionsComplex_exactAt_le_one (i : ℕ) (hi : i ≤ 1) :
     (D.sectionsComplex F).ExactAt i
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L313). The attribute's comment: “exactness in all degrees for an injective module”.
+**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.sectionsComplex_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/SectionsComplex.lean#L313). The attribute's comment: “exactness in all degrees for an injective module”.
 
 > **Stacks 0D9C.** The complex `0 → Γ(C_total, F) → Γ(C_0, F_0) → …` is exact in every degree
 > when `F` is an injective `O`-module.
@@ -67,7 +67,7 @@ public theorem sectionsComplex_acyclic [Injective F] : (D.sectionsComplex F).Acy
 
 [Tag 0D7E](https://stacks.math.columbia.edu/tag/0D7E) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.exists_sectionsSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomologySpectralSequence.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomologySpectralSequence.lean#L688).
+**`CategoryTheory.SimplicialSiteSituation.SimplicialModuleResolution.exists_sectionsSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomologySpectralSequence.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomologySpectralSequence.lean#L688).
 
 > **Stacks 0D7E.** In Situation 09WE let `O` be a sheaf of rings on the total site. For `K` in
 > `D⁺(O)` there is a spectral sequence `(E_r, d_r)`, functorial in `K` and presented from its first
@@ -105,7 +105,7 @@ public theorem exists_sectionsSpectralSequence :
 
 [Tag 0DH2](https://stacks.math.columbia.edu/tag/0DH2) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentModuleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean#L104).
+**`CategoryTheory.SimplicialSiteSituation.componentModuleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean#L104).
 
 > In the situation of Stacks 09WE let `O` be a sheaf of rings on the total site, let `U` be
 > an object of the degree-`n` component and let `p : ℕ`. For a sheaf of `O`-modules `F` one has
@@ -120,7 +120,7 @@ noncomputable def componentModuleCohomologyIso (U : S.component n) (p : ℕ) :
         cohomology S.totalTopology ((componentFunctor S n).obj U) p
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentModuleCohomologyObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean#L125).
+**`CategoryTheory.SimplicialSiteSituation.componentModuleCohomologyObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleCohomology.lean#L125).
 
 > **`H^p(U, g_n^*F) ≅ H^p(U, F)` at a single sheaf of modules.** For `F` a sheaf of
 > `O`-modules on the total site of a simplicial-site situation and `U` an object of the degree-`n`
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.10, Tag 0D7B](https://stacks.math.columbia.edu/tag/0D7B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.89 Smooth base change
 
-Section 59.89 of the Stacks Project, [Tag 0EYQ](https://stacks.math.columbia.edu/tag/0EYQ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.89 of the Stacks Project, [Tag 0EYQ](https://stacks.math.columbia.edu/tag/0EYQ). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EYT, a lemma
 
 [Tag 0EYT](https://stacks.math.columbia.edu/tag/0EYT) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_galoisCover_killing_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/CurveClassKilling.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/CurveClassKilling.lean#L366).
+**`Stacks.EtaleCohomology.exists_galoisCover_killing_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/CurveClassKilling.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/CurveClassKilling.lean#L366).
 
 > **Stacks Project, Tag 0EYT.** Let `K/k` be a field extension, `X` a smooth affine curve over
 > `k` with a rational point `x`, `F` an abelian sheaf on `Spec(K)_étale` annihilated by an integer
@@ -42,7 +42,7 @@ theorem exists_galoisCover_killing_class [IsCurve k f] [Smooth f] [IsAffine X]
 
 [Tag 0EYU](https://stacks.math.columbia.edu/tag/0EYU) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.SmoothBaseChange.isIso_higherBaseChangeMapAb_app_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/Unconditional.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/Unconditional.lean#L53).
+**`Stacks.EtaleCohomology.SmoothBaseChange.isIso_higherBaseChangeMapAb_app_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/Unconditional.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/Unconditional.lean#L53).
 
 > **The smooth base change theorem** ([Stacks, Theorem 0EYU]). In a cartesian square
 > ```
@@ -69,7 +69,7 @@ theorem isIso_higherBaseChangeMapAb_app_of_smooth
 
 [Tag 0F09](https://stacks.math.columbia.edu/tag/0F09) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_smallEtaleDerivedBaseChangeAb_app_of_smoothLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SmoothLimitBaseChangeStalks.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SmoothLimitBaseChangeStalks.lean#L114).
+**`Stacks.EtaleCohomology.isIso_smallEtaleDerivedBaseChangeAb_app_of_smoothLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SmoothLimitBaseChangeStalks.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SmoothLimitBaseChangeStalks.lean#L114).
 
 > **Smooth base change along a limit of smooth schemes** ([Stacks, Tag 0F09]). Let `S` be a
 > scheme and let `S' = lim S_i` be a directed inverse limit of schemes `S_i` smooth over `S` with
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.89, Tag 0EYQ](https://stacks.math.columbia.edu/tag/0EYQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

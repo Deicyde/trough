@@ -7,7 +7,7 @@ statement: formalized
 
 # Higher a-numbers in ℤ_p-towers
 
-53 results, 28 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html).
+53 results, 28 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html).
 
 ## Sum of a periodic sequence
 
@@ -21,7 +21,7 @@ $$\sum_{i=1}^{N} f(i) = N \bar f + \sum_{k=1}^{N \bmod L} \left(f(k) - \bar f\ri
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 1 (Sum of a periodic sequence).
 
-Stated but not proved: `MetaMathlibExt.sum_Icc_of_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-icc-of-periodic).
+Stated but not proved: `MetaMathlibExt.sum_Icc_of_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-icc-of-periodic).
 
 ## Sum of an eventually periodic sequence
 
@@ -37,30 +37,30 @@ $$\sum_{i=1}^{N} f(i) = \sum_{i=1}^{D-1} f(i) + (N - D + 1) \bar f +
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 1 (Sum of an eventually periodic sequence).
 
-Stated but not proved: `MetaMathlibExt.sum_Icc_of_eventually_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-icc-of-eventually-periodic).
+Stated but not proved: `MetaMathlibExt.sum_Icc_of_eventually_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-icc-of-eventually-periodic).
 
 ## Base-$p$ digits of a rational number
 
 For a natural number $p$, a rational number $x$ and
-an integer $k$, the $k$-th base-$p$ digit of $x$ is $[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = \lfloor x / p^k \rfloor \bmod p$;
+an integer $k$, the $k$-th base-$p$ digit of $x$ is $[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = \lfloor x / p^k \rfloor \bmod p$;
 for $p \ge 1$ this is the residue of $\lfloor x / p^k \rfloor$ modulo $p$ in $\{0, \dots, p - 1\}$.
 
 ## Sources
 
-- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Section 2.2 (definition of `[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)`).
+- Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Section 2.2 (definition of `[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)`).
 
-Formalized by `MetaMathlibExt.basePDigit`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit).
+Formalized by `MetaMathlibExt.basePDigit`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit).
 
 ## Base-5 digits of 2/3
 
-Writing $[5^j](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$5$ digit of a rational
-number $x$, we have $[5^{-1}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 3$, $[5^{-2}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 1$ and $[5^0](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 0$.
+Writing $[5^j](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$5$ digit of a rational
+number $x$, we have $[5^{-1}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 3$, $[5^{-2}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 1$ and $[5^0](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/2/3) = 0$.
 
 ## Sources
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Section 2.2 (base-`5` example `2/3 = .3131…`).
 
-Formalized by `MetaMathlibExt.basePDigit_five_two_thirds`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-five-two-thirds).
+Formalized by `MetaMathlibExt.basePDigit_five_two_thirds`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-five-two-thirds).
 
 ## Prime-to-$p$ part of the denominator
 
@@ -75,7 +75,7 @@ $p$, where $x_N$ is the prime-to-$p$ part of the numerator (Notation 2).
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`x_D`).
 
-Formalized by `MetaMathlibExt.primeToPDen`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pden).
+Formalized by `MetaMathlibExt.primeToPDen`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pden).
 
 ## Prime-to-$p$ part of the numerator
 
@@ -88,7 +88,7 @@ $x_N = 0$ when $x = 0$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`x_N`).
 
-Formalized by `MetaMathlibExt.primeToPNum`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pnum).
+Formalized by `MetaMathlibExt.primeToPNum`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pnum).
 
 ## The prime-to-$p$ parts of $1$
 
@@ -99,7 +99,7 @@ of the denominator and the prime-to-$p$ part $x_N$ of the numerator of $x = 1$ a
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`x_N`, `x_D` of `1`).
 
-Formalized by `MetaMathlibExt.primeToPDen_one_primeToPNum_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pden-one-prime-to-pnum-one).
+Formalized by `MetaMathlibExt.primeToPDen_one_primeToPNum_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#prime-to-pden-one-prime-to-pnum-one).
 
 ## Period of the base-$p$ expansion
 
@@ -116,7 +116,7 @@ base-$p$ digits of $x$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `L_x` and Lemma 2.
 
-Formalized by `MetaMathlibExt.basePPeriod`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pperiod).
+Formalized by `MetaMathlibExt.basePPeriod`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pperiod).
 
 ## The base-$p$ expansion of $1$ has period $1$
 
@@ -127,7 +127,7 @@ $L_1$ of the base-$p$ expansion of $1$ equals $1$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 2 (`L_x = 1` when `x_D = 1`).
 
-Formalized by `MetaMathlibExt.basePPeriod_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pperiod-one).
+Formalized by `MetaMathlibExt.basePPeriod_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pperiod-one).
 
 ## Delay of the base-$p$ expansion
 
@@ -142,7 +142,7 @@ base-$p$ digits of $x$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `D_x` and Lemma 2.
 
-Formalized by `MetaMathlibExt.basePDelay`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdelay).
+Formalized by `MetaMathlibExt.basePDelay`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdelay).
 
 ## The delay of $1/p$ is $1$
 
@@ -153,15 +153,15 @@ $1/p$ is $D_{1/p} = -v_p(1/p) = 1$, where $v_p$ is the $p$-adic valuation.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 2 (`D_{1/p} = 1`).
 
-Formalized by `MetaMathlibExt.basePDelay_inv_self`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdelay-inv-self).
+Formalized by `MetaMathlibExt.basePDelay_inv_self`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdelay-inv-self).
 
 ## Average repeating digit
 
 For a natural number $p$ and a rational number $x$, let $D_x$ be
-the delay and $L_x$ the period of the base-$p$ expansion of $x$, and let $[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ be its
+the delay and $L_x$ the period of the base-$p$ expansion of $x$, and let $[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ be its
 $k$-th base-$p$ digit. The average repeating digit of $x$ is
 
-$$\bar{x} = \frac{1}{L_x} \sum_{k=D_x+1}^{D_x+L_x} [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x),$$
+$$\bar{x} = \frac{1}{L_x} \sum_{k=D_x+1}^{D_x+L_x} [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x),$$
 
 with $\bar{x} = 0$ when $L_x = 0$.
 
@@ -169,7 +169,7 @@ with $\bar{x} = 0$ when $L_x = 0$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `x̄`.
 
-Formalized by `MetaMathlibExt.basePDigitAverage`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-average).
+Formalized by `MetaMathlibExt.basePDigitAverage`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-average).
 
 ## The ratio $\tau = (p + 1)/d$
 
@@ -180,7 +180,7 @@ number $(p + 1)/d$, which is $0$ when $d = 0$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 1 (i).
 
-Formalized by `MetaMathlibExt.towerTau`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-tau).
+Formalized by `MetaMathlibExt.towerTau`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-tau).
 
 ## The constant $\gamma$
 
@@ -191,7 +191,7 @@ $\gamma = ((p - 1) r + (p + 1))/d$, a rational number (taken to be $0$ when $d =
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 1 (ii).
 
-Formalized by `MetaMathlibExt.towerGamma`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-gamma).
+Formalized by `MetaMathlibExt.towerGamma`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-gamma).
 
 ## Values of $\tau$ and $\gamma$ for $p = 5$, $d = 4$, $r = 2$
 
@@ -203,7 +203,7 @@ $\gamma = 7/2$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 1 (`p = 5`, `d = 4`, `r = 2`).
 
-Formalized by `MetaMathlibExt.towerTau_towerGamma_five_four`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-tau-tower-gamma-five-four).
+Formalized by `MetaMathlibExt.towerTau_towerGamma_five_four`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-tau-tower-gamma-five-four).
 
 ## Lexicographic order on integer sequences
 
@@ -216,12 +216,12 @@ Definition 1.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Equation (1).
 
-Formalized by `MetaMathlibExt.SeqLexGt`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#seq-lex-gt).
+Formalized by `MetaMathlibExt.SeqLexGt`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#seq-lex-gt).
 
 ## The rounding indicator $\delta$
 
 Let $p$, $d$ and $i$ be natural numbers and let
-$\tau = (p + 1)/d$. For a rational $x$ and an integer $k$, write $[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the residue of
+$\tau = (p + 1)/d$. For a rational $x$ and an integer $k$, write $[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the residue of
 $\lfloor x / p^k \rfloor$ modulo $p$, the $k$-th base-$p$ digit of $x$. Then $\delta(i) = 0$ if
 the integer-part digits $([p^n](\tau i))_{n \ge 0}$ are lexicographically larger than the
 fractional digits $([p^{-1-n}](\tau i))_{n \ge 0}$, that is, the two sequences agree at every
@@ -231,7 +231,7 @@ index below some $m$ and the first is larger at $m$; otherwise $\delta(i) = 1$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `δ`.
 
-Formalized by `MetaMathlibExt.higherANumberDelta`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta).
+Formalized by `MetaMathlibExt.higherANumberDelta`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta).
 
 ## Two values of $\delta$ for $p = 5$ and $d = 4$
 
@@ -242,7 +242,7 @@ $\tau = (p + 1)/d = 3/2$, the rounding indicator satisfies $\delta(1) = 1$ and $
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Table 1 (`δ(1) = 1`, `δ(2) = 0` for `p = 5`, `d = 4`).
 
-Formalized by `MetaMathlibExt.higherANumberDelta_five_four`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-five-four).
+Formalized by `MetaMathlibExt.higherANumberDelta_five_four`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-five-four).
 
 ## The denominator $\tau_D$
 
@@ -254,7 +254,7 @@ so $\tau_D = 1$).
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`τ_D`).
 
-Formalized by `MetaMathlibExt.tauDen`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tau-den).
+Formalized by `MetaMathlibExt.tauDen`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tau-den).
 
 ## $\tau_D = 1$ when $d = 1$
 
@@ -265,7 +265,7 @@ $\tau = (p + 1)/d$ in lowest terms equals $1$ when $d = 1$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`τ_D = 1` when `d = 1`).
 
-Formalized by `MetaMathlibExt.tauDen_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tau-den-one).
+Formalized by `MetaMathlibExt.tauDen_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tau-den-one).
 
 ## The variant $\delta_0$ of the rounding indicator
 
@@ -277,7 +277,7 @@ $\delta(i)$ otherwise.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `δ₀`.
 
-Formalized by `MetaMathlibExt.higherANumberDeltaZero`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero).
+Formalized by `MetaMathlibExt.higherANumberDeltaZero`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero).
 
 ## The indicator $\delta_0$ vanishes at $0$
 
@@ -288,13 +288,13 @@ $\delta_0$ of the rounding indicator for $p$ and $d$ satisfies $\delta_0(0) = 0$
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition of `δ₀` (`δ₀(0) = 0`).
 
-Formalized by `MetaMathlibExt.higherANumberDeltaZero_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero-zero).
+Formalized by `MetaMathlibExt.higherANumberDeltaZero_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero-zero).
 
 ## The lattice boundary $\mu$
 
 Let $p$, $d$ and $i$ be natural numbers and let
 $\tau = (p + 1)/d$, taken to be $0$ when $d = 0$. For a rational $x$ and an integer $k$, write
-$[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the residue of $\lfloor x/p^k \rfloor$ modulo $p$, the $k$-th base-$p$ digit
+$[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the residue of $\lfloor x/p^k \rfloor$ modulo $p$, the $k$-th base-$p$ digit
 of $x$. Then $\mu(i)$ is $\lfloor \tau i \rfloor$ if the integer-part digit sequence
 $([p^n](\tau i))_{n \ge 0}$ is lexicographically larger than the fractional digit sequence
 $([p^{-1-n}](\tau i))_{n \ge 0}$, that is, the two sequences agree at every index below some
@@ -304,7 +304,7 @@ $m$ and the first is larger at $m$; otherwise $\mu(i) = \lceil \tau i \rceil$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 1 (`μ`).
 
-Formalized by `MetaMathlibExt.towerMu`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-mu).
+Formalized by `MetaMathlibExt.towerMu`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-mu).
 
 ## $\mu(2) = 3$ for $p = 5$ and $d = 4$
 
@@ -316,7 +316,7 @@ its floor and ceiling agree.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 1 (`μ(2) = 3` for `p = 5`, `d = 4`, where `τ · 2 = 3`).
 
-Formalized by `MetaMathlibExt.towerMu_five_four_two`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-mu-five-four-two).
+Formalized by `MetaMathlibExt.towerMu_five_four_two`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#tower-mu-five-four-two).
 
 ## The lattice-point count of Theorem 1
 
@@ -324,7 +324,7 @@ For natural numbers $p$, $d$, $r$ and $n$, put
 $\tau = (p + 1)/d$, $\gamma = ((p - 1) r + (p + 1))/d$ and $t_n = \lfloor \gamma^{-1} p^n \rfloor$
 (a floor in $\mathbb{N}$, so $0$ for negative arguments), with the convention that division by
 $0$ gives $0$; thus $\tau = \gamma = 0$ when $d = 0$, and $t_n = 0$ when $\gamma = 0$. For a
-rational $x$ and an integer $k$ let $[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = \lfloor x / p^k \rfloor \bmod p$, the base-$p$
+rational $x$ and an integer $k$ let $[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = \lfloor x / p^k \rfloor \bmod p$, the base-$p$
 digit of $x$ at $p^k$ when $p \ge 2$ (reduction mod $0$ is the identity). Let $\mu(i)$ be the
 lattice boundary of Definition 1: $\mu(i) = \lfloor \tau i \rfloor$ if the sequence
 $([p^k](\tau i))_{k \ge 0}$ is lexicographically larger than the sequence
@@ -342,7 +342,7 @@ $\mu(i) \ge \lfloor \tau i \rfloor \ge i$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 2 and Theorem 1.
 
-Formalized by `MetaMathlibExt.higherANumberLatticeCount`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count).
+Formalized by `MetaMathlibExt.higherANumberLatticeCount`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count).
 
 ## The lattice-point count at $p = 3$, $d = 2$, $r = 1$, $n = 0$
 
@@ -358,7 +358,7 @@ $1 \le j \le p^0 - 1 = 0$ is impossible.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Definition 2 (`n = 0`, `p = 3`, `d = 2`, `r = 1`: no lattice points).
 
-Formalized by `MetaMathlibExt.higherANumberLatticeCount_three_two_one_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-three-two-o).
+Formalized by `MetaMathlibExt.higherANumberLatticeCount_three_two_one_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-three-two-o).
 
 ## The correction term $A_{x^{-1}}$ for sums of floors
 
@@ -379,7 +379,7 @@ This is the periodic correction term of Proposition 4.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 4 (`A_{x^{-1}}`).
 
-Formalized by `MetaMathlibExt.floorSumCorrection`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-sum-correction).
+Formalized by `MetaMathlibExt.floorSumCorrection`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-sum-correction).
 
 ## The correction $A_{x^{-1}}$ vanishes at $x = 1$
 
@@ -390,7 +390,7 @@ periodic correction $A_{x^{-1}}(n)$ of Proposition 4 satisfies $A_1(n) = 0$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 4 (`A_1 = 0`).
 
-Formalized by `MetaMathlibExt.floorSumCorrection_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-sum-correction-one).
+Formalized by `MetaMathlibExt.floorSumCorrection_one`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-sum-correction-one).
 
 ## The correction term $F_y$ for sums of $\delta_0$
 
@@ -412,7 +412,7 @@ In Lemma 9 this is used with $y = x^{-1}$, written $F_{x^{-1}}$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 9 (`F_{x^{-1}}`).
 
-Formalized by `MetaMathlibExt.deltaZeroSumCorrection`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction).
+Formalized by `MetaMathlibExt.deltaZeroSumCorrection`, a definition declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction).
 
 ## The correction $F_y$ vanishes at $y = 0$
 
@@ -423,13 +423,13 @@ correction $F_y(e)$ of Lemma 9, taken at $y = 0$, is $0$.
 
 - Booher, Hsieh, Rivera, Tran, Upton, and Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 9 (`F_0 = 0`).
 
-Formalized by `MetaMathlibExt.deltaZeroSumCorrection_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction-zero).
+Formalized by `MetaMathlibExt.deltaZeroSumCorrection_zero`, a theorem declared in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction-zero).
 
 ## Digits of $m/d$ after the radix point are constant
 
 Let $p$ be a prime, $d$ a divisor of
-$p - 1$, and write $[p^j](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of a rational number $x$. For every
-positive integer $m$ and every integer $k \ge 1$, $[p^{-(k+1)}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/m/d) = [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/m/d)$; that is,
+$p - 1$, and write $[p^j](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of a rational number $x$. For every
+positive integer $m$ and every integer $k \ge 1$, $[p^{-(k+1)}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/m/d) = [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/m/d)$; that is,
 the base-$p$ expansion of $m/d$ is periodic with period $1$ right after the radix point.
 
 The source assumes $p$ odd; for $p = 2$ only $d = 1$ occurs.
@@ -438,16 +438,16 @@ The source assumes $p$ odd; for $p = 2$ only $d = 1$ occurs.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.basePDigit_div_periodic_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-div-periodic-one).
+Stated but not proved: `MetaMathlibExt.basePDigit_div_periodic_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-div-periodic-one).
 
 ## Minimal period and delay of base-$p$ digits
 
 Let $p$ be a prime and $x > 0$ a rational
-number, write $[p^j](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of $x$, and let $L_x$ be the period and
+number, write $[p^j](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of $x$, and let $L_x$ be the period and
 $D_x = -v_p(x)$ the delay of the base-$p$ expansion of $x$. For every integer $D$ and every
-natural number $L > 0$, the identity $[p^{-(k+L)}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ holds for all integers
+natural number $L > 0$, the identity $[p^{-(k+L)}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x) = [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ holds for all integers
 $k \ge D + 1$ if and only if $L_x$ divides $L$ and $D_x \le D$. Thus $L_x$ is the minimal period
-and $D_x$ the minimal delay of the digit sequence $k \mapsto [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$.
+and $D_x$ the minimal delay of the digit sequence $k \mapsto [p^{-k}](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$.
 
 For $v_p(x) > 0$ the delay $D_x$ is negative.
 
@@ -455,12 +455,12 @@ For $v_p(x) > 0$ the delay $D_x$ is negative.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.basePDigit_eventually_periodic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-eventually-periodic-iff).
+Stated but not proved: `MetaMathlibExt.basePDigit_eventually_periodic_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-eventually-periodic-iff).
 
 ## Digits of $\tau i$ next to the radix point
 
 Let $p$ be a prime, $d$ a divisor of $p - 1$
-and $\tau = (p + 1)/d$, and write $[p^j](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of a rational number
+and $\tau = (p + 1)/d$, and write $[p^j](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/x)$ for the $j$-th base-$p$ digit of a rational number
 $x$. For every natural number $i$, $[p^{-1}](\tau i) = [p^0](\tau i)$ if and only if $p$ divides
 $i$.
 
@@ -471,12 +471,12 @@ prime.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.basePDigit_towerTau_neg_one_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-tower-tau-neg-one-eq-zero-if).
+Stated but not proved: `MetaMathlibExt.basePDigit_towerTau_neg_one_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#base-pdigit-tower-tau-neg-one-eq-zero-if).
 
 ## A digit criterion for $\delta(i) = 1$
 
 Let $p$ be a prime, $d$ a divisor of $p - 1$ and
-$\tau = (p + 1)/d$. For a rational $t$ and an integer $k$ write $[p^k](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/t)$ for the $k$-th base-$p$
+$\tau = (p + 1)/d$. For a rational $t$ and an integer $k$ write $[p^k](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/t)$ for the $k$-th base-$p$
 digit of $t$, the residue of $\lfloor t / p^k \rfloor$ modulo $p$ in
 $\lbrace 0, \dots, p - 1 \rbrace$, and let $\delta$ be the rounding indicator. If $i$ is a natural
 number not divisible by $p$, then $[p^0](\tau i) < [p^{-1}](\tau i)$ if and only if $\delta(i) = 1$.
@@ -485,7 +485,7 @@ number not divisible by $p$, then $[p^0](\tau i) < [p^{-1}](\tau i)$ if and only
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.higherANumberDelta_eq_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-eq-one-iff).
+Stated but not proved: `MetaMathlibExt.higherANumberDelta_eq_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-eq-one-iff).
 
 ## Reflection symmetry of the rounding indicator
 
@@ -501,7 +501,7 @@ $\tau_D \mid j$, then $\delta(j) = 0$.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.higherANumberDelta_reflection` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-reflection).
+Stated but not proved: `MetaMathlibExt.higherANumberDelta_reflection` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-reflection).
 
 ## Periodicity and reflection of $\delta$ and $\delta_0$
 
@@ -521,7 +521,7 @@ paper means; the paper's positivity of $i$ and $n$ is dropped (the claims hold a
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.higherANumberDelta_periodicity` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-periodicity).
+Stated but not proved: `MetaMathlibExt.higherANumberDelta_periodicity` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-periodicity).
 
 ## Average of the indicator $\delta_0$
 
@@ -536,7 +536,7 @@ $$\frac{1}{\tau_D p} \sum_{i=1}^{\tau_D p} \delta_0(i) =
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.higherANumberDeltaZero_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero-average).
+Stated but not proved: `MetaMathlibExt.higherANumberDeltaZero_average` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-delta-zero-average).
 
 ## Periodicity and average of the fractional parts of $x p^n$
 
@@ -555,7 +555,7 @@ Here $n$ ranges over the integers, since $D_x$ can be negative.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.fract_mul_pow_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#fract-mul-pow-periodic).
+Stated but not proved: `MetaMathlibExt.fract_mul_pow_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#fract-mul-pow-periodic).
 
 ## Periodicity of $\lfloor x p^n \rfloor$ modulo $x_N$ and modulo $p$
 
@@ -570,7 +570,7 @@ $p$ modulo the prime-to-$p$ part of the denominator of $x$. Then for every integ
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.floor_mul_pow_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-mul-pow-mod-eq).
+Stated but not proved: `MetaMathlibExt.floor_mul_pow_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#floor-mul-pow-mod-eq).
 
 ## Splitting the sum of $\delta$ by powers of $p$
 
@@ -590,7 +590,7 @@ $$
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_by_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-by-exponent).
+Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_by_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-by-exponent).
 
 ## Sum of $p^n - \lfloor x i \rfloor$
 
@@ -609,7 +609,7 @@ and $A_{x^{-1}}(n + L_{x^{-1}}) = A_{x^{-1}}(n)$ for every natural number $n \ge
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_sub_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-pow-sub-floor).
+Stated but not proved: `MetaMathlibExt.sum_pow_sub_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-pow-sub-floor).
 
 ## Difference of the floor sums for $\tau$ and $\gamma$
 
@@ -629,7 +629,7 @@ $$
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_floor_difference` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-floor-difference).
+Stated but not proved: `MetaMathlibExt.sum_floor_difference` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-floor-difference).
 
 ## Higher $a$-numbers as sums of floors and of $\delta$
 
@@ -652,7 +652,7 @@ $$A_r(n) = \left(\sum_{i=1}^{s_n} (p^n - \lfloor \tau i \rfloor) -
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_eq_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-eq-sums).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_eq_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 476](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L476). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-eq-sums).
 
 ## Sum of $\delta$ up to $\lfloor p^n/x \rfloor$
 
@@ -673,7 +673,7 @@ The paper's positivity of $n$ is dropped (the identity holds at $n = 0$).
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-eq).
+Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-eq).
 
 ## Eventual periodicity of the $\delta$ sums
 
@@ -698,7 +698,7 @@ The paper's explicit $B$ (Equation (6)) is replaced by an existential.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-periodic).
+Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-periodic).
 
 ## The linear coefficient of Proposition 5 vanishes at $\tau$
 
@@ -720,7 +720,7 @@ $\tau^{-1}$ is $0$, so the average of $F_{\tau^{-1}}$ is taken over $1 \le e \le
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.deltaZeroSumCorrection_average_towerTau` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction-average-tower).
+Stated but not proved: `MetaMathlibExt.deltaZeroSumCorrection_average_towerTau` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#delta-zero-sum-correction-average-tower).
 
 ## Sum of $\delta$ between the $\gamma$- and $\tau$-cutoffs
 
@@ -746,7 +746,7 @@ The paper's explicit $B$ functions are replaced by the existential $C$.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_difference` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-difference).
+Stated but not proved: `MetaMathlibExt.sum_higherANumberDelta_difference` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#sum-higher-anumber-delta-difference).
 
 ## Asymptotic formula for higher $a$-numbers
 
@@ -772,7 +772,7 @@ states the periodicity as: the minimal period of $\nu_r$ divides $M_r$.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-asymptotic).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-asymptotic).
 
 ## Explicit linear term and period for higher $a$-numbers
 
@@ -804,7 +804,7 @@ for all natural numbers $n \ge D$.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_eq_explicit_linear_add_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-eq-explicit).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_eq_explicit_linear_add_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-eq-explicit).
 
 ## Period of higher $a$-numbers for $d = 1$ or $d = 2$
 
@@ -824,7 +824,7 @@ odd and $L$ or $L/2$ when $L$ is even.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_period_small_d` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-period-smal).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_period_small_d` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-period-smal).
 
 ## The lattice-point count for $r = p + 1$
 
@@ -845,7 +845,7 @@ $n \ge 1$.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_r_eq_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-r-eq-succ).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_r_eq_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-r-eq-succ).
 
 ## The linear coefficient times a period is an integer
 
@@ -862,7 +862,7 @@ an integer.
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_linear_coeff_mul_period` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 667](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L667). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-linear-coef).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_linear_coeff_mul_period` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 667](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L667). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-linear-coef).
 
 ## Passing from $r_0$ to $(r_0 + 1)p + 1$
 
@@ -882,7 +882,7 @@ The first part is the paper's statement that the linear coefficients agree, $\la
 
 - Jeremy Booher, Jack Hsieh, Rakesh Rivera, Vincent Tran, James Upton, and Carol Wu, *Higher a-Numbers in `ℤ_p`-Towers via Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-shift).
+Stated but not proved: `MetaMathlibExt.higherANumberLatticeCount_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HigherANumbersPeriodicSumWanted.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html#higher-anumber-lattice-count-shift).
 
 ## Depends on
 
@@ -891,4 +891,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Higher a-numbers in ℤ_p-towers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/higher-a-numbers-in-p-towers)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.41 Lower shriek for modules
 
-Section 18.41 of the Stacks Project, [Tag 0796](https://stacks.math.columbia.edu/tag/0796). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.41 of the Stacks Project, [Tag 0796](https://stacks.math.columbia.edu/tag/0796). 4 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0797, a lemma
 
 [Tag 0797](https://stacks.math.columbia.edu/tag/0797) in the Stacks Project.
 
-**`Stacks.SheafOfModules.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L85). References: SGA 4 IV (14.2), “j\_!”.
+**`Stacks.SheafOfModules.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L85). References: SGA 4 IV (14.2), “j\_!”.
 
 > **Stacks 0797.** Lower shriek `g_! : Mod(O_C) ⥤ Mod(O_D)` for the morphism of topoi
 > associated with a continuous and cocontinuous functor of sites, where `O_C = g^{-1} O_D`: a
@@ -25,7 +25,7 @@ def lowerShriek [u.IsCocontinuous J K] :
     _root_.SheafOfModules.{v} (inverseImageRing J K u O) ⥤ _root_.SheafOfModules.{v} O
 ```
 
-**`Stacks.SheafOfModules.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L95). References: SGA 4 IV (14.2), “j\_! ⊣ j^*”.
+**`Stacks.SheafOfModules.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L95). References: SGA 4 IV (14.2), “j\_! ⊣ j^*”.
 
 > **Stacks 0797.** Lower shriek is left adjoint to the inverse image `g^* = g^{-1}` of sheaves
 > of modules, for the morphism of topoi associated with a continuous and cocontinuous functor of
@@ -36,7 +36,7 @@ def lowerShriekAdjunction [u.IsCocontinuous J K] :
     lowerShriek.{v} J K u O ⊣ inverseImage.{v} J K u O
 ```
 
-**`AlgebraicGeometry.smallEtaleModuleProjectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ModuleProjectionPullback.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ModuleProjectionPullback.lean#L194). The attribute's comment: “the adjunction at the inclusion of the small étale site of a scheme into its big étale site, at the module universe of Stacks 0DDH part (6)”.
+**`AlgebraicGeometry.smallEtaleModuleProjectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ModuleProjectionPullback.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/ModuleProjectionPullback.lean#L194). The attribute's comment: “the adjunction at the inclusion of the small étale site of a scheme into its big étale site, at the module universe of Stacks 0DDH part (6)”.
 
 > **Stacks 0797 at the small étale inclusion.** `π_S^*` is left adjoint to `π_{S,*}`, which is
 > `AlgebraicGeometry.smallEtaleModuleRestriction B S S (𝟙 S)`.
@@ -50,7 +50,7 @@ public def smallEtaleModuleProjectionAdjunction :
 
 [Tag 0798](https://stacks.math.columbia.edu/tag/0798) in the Stacks Project.
 
-**`Stacks.SheafOfModules.lowerShriekForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L81). The attribute's comment: “comparison\_transformation”.
+**`Stacks.SheafOfModules.lowerShriekForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L81). The attribute's comment: “comparison\_transformation”.
 
 > The canonical natural transformation from lower shriek applied to the underlying abelian
 > sheaf to the underlying abelian sheaf of lower shriek on modules.
@@ -62,7 +62,7 @@ noncomputable def lowerShriekForgetComparison :
       _root_.SheafOfModules.pullback.{w} phi ⋙ _root_.SheafOfModules.toSheaf.{w} R
 ```
 
-**`Stacks.SheafOfModules.lowerShriekForgetComparison_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L133). The attribute's comment: “comparison\_transformation”.
+**`Stacks.SheafOfModules.lowerShriekForgetComparison_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L133). The attribute's comment: “comparison\_transformation”.
 
 > The comparison map is adjoint to the forgotten unit of the module lower-shriek
 > adjunction.
@@ -78,7 +78,7 @@ theorem lowerShriekForgetComparison_homEquiv (M : _root_.SheafOfModules.{w} S) :
         ((_root_.SheafOfModules.pullbackPushforwardAdjunction.{w} phi).unit.app M)
 ```
 
-**`Stacks.SheafOfModules.lowerShriekForget_not_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L448). The attribute's comment: “noncommutativity”.
+**`Stacks.SheafOfModules.lowerShriekForget_not_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L448). The attribute's comment: “noncommutativity”.
 
 > The lower shriek of modules may differ, even as an abelian sheaf, from lower
 > shriek of the underlying abelian sheaf.
@@ -104,7 +104,7 @@ theorem lowerShriekForget_not_isomorphic :
               SheafOfModules.toSheaf.{0} R).obj M))
 ```
 
-**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L653). The attribute's comment: “the criterion: agreement iff the comparison is invertible at every j\_\{U!} O\_U”.
+**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L653). The attribute's comment: “the criterion: agreement iff the comparison is invertible at every j\_\{U!} O\_U”.
 
 > The canonical comparison between lower shriek on sheaves of modules and lower shriek on the
 > underlying abelian sheaves is an isomorphism if and only if it is an isomorphism at the extension
@@ -117,7 +117,7 @@ theorem isIso_lowerShriekForgetComparison_iff :
         (extensionByZeroUnit.{u₁, v₁, u, max u₂ v₂ t} S U))
 ```
 
-**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff_of_isos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L697). The attribute's comment: “the criterion, at any family isomorphic to the extensions by zero of the structure sheaf”.
+**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff_of_isos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L697). The attribute's comment: “the criterion, at any family isomorphic to the extensions by zero of the structure sheaf”.
 
 > If a family `G` of sheaves of modules is isomorphic, object by object, to the extensions by
 > zero of the structure sheaf, then the comparison is an isomorphism exactly when it is an
@@ -131,7 +131,7 @@ theorem isIso_lowerShriekForgetComparison_iff_of_isos
       ∀ U : C, IsIso ((lowerShriekForgetComparison F phi).app (G U))
 ```
 
-**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L778). The attribute's comment: “the criterion in the source's form: the comparison is an isomorphism iff `g_!^{Ab} j_{U!} O_U ⟶ j_{u(U)!} O_{u(U)}` is one for every `U`, the target being identified by Stacks 07AC”.
+**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L778). The attribute's comment: “the criterion in the source's form: the comparison is an isomorphism iff `g_!^{Ab} j_{U!} O_U ⟶ j_{u(U)!} O_{u(U)}` is one for every `U`, the target being identified by Stacks 07AC”.
 
 > The canonical comparison between lower shriek on sheaves of modules and lower shriek on the
 > underlying abelian sheaves is an isomorphism if and only if, for every object `U` of the source
@@ -150,7 +150,7 @@ theorem isIso_lowerShriekForgetComparison_iff_extensionByZeroUnit :
             (pullbackExtensionByZeroUnitIso.{t, u₁, u₂, v₁, v₂} J K u O V).hom)
 ```
 
-**`Stacks.SheafOfModules.lowerShriekForgetComparison_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetCounit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetCounit.lean#L52). The attribute's comment: “the comparison on counits”.
+**`Stacks.SheafOfModules.lowerShriekForgetComparison_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetCounit.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetCounit.lean#L52). The attribute's comment: “the comparison on counits”.
 
 > The lower-shriek forget comparison carries the forgotten counit of the module lower-shriek
 > adjunction to the counit of the abelian one: both sides are maps from the abelian lower shriek of
@@ -167,7 +167,7 @@ theorem lowerShriekForgetComparison_app_comp_counit (N : _root_.SheafOfModules.{
         ((_root_.SheafOfModules.toSheaf.{w} R).obj N)
 ```
 
-**`Stacks.SheafOfModules.abelianShriekOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L103). The attribute's comment: “`g_!^{Ab} j_{U!} = j_{u(U)!} (g')^{Ab}_!`, the consequence of the localized square of Stacks 03EG that the remark uses”.
+**`Stacks.SheafOfModules.abelianShriekOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L103). The attribute's comment: “`g_!^{Ab} j_{U!} = j_{u(U)!} (g')^{Ab}_!`, the consequence of the localized square of Stacks 03EG that the remark uses”.
 
 > Lower shriek of abelian sheaves commutes with localization: with `V = u(U)` and
 > `g' : Sh(C/U) ⟶ Sh(D/V)` the morphism of topoi induced by the localized functor `u' = Over.post u`
@@ -184,7 +184,7 @@ def abelianShriekOverIso :
         (Over.forget (u.obj U)).sheafPullback AddCommGrpCat.{w} (K.over (u.obj U)) K
 ```
 
-**`Stacks.SheafOfModules.homEquiv_comp_lowerShriekForgetComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L567). The attribute's comment: “the composition law for the comparison transformation `g_!^{Ab} ∘ forget ⟶ forget ∘ g_!`”.
+**`Stacks.SheafOfModules.homEquiv_comp_lowerShriekForgetComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L568). The attribute's comment: “the composition law for the comparison transformation `g_!^{Ab} ∘ forget ⟶ forget ∘ g_!`”.
 
 > The composition law for the comparison transformation of Stacks 0798. For a composite
 > `a ⋙ b` of continuous functors of sites, with the structure sheaves the successive restrictions
@@ -219,7 +219,7 @@ theorem homEquiv_comp_lowerShriekForgetComparison
                 (structureMap JA JB a (inverseImageRing JB JE b O))).obj M)))
 ```
 
-**`Stacks.SheafOfModules.localizedStructureSheafComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L1064). The attribute's comment: “the canonical map of equation 0799, `κ_U : (g')_!^{Ab} O_U ⟶ O_{u(U)}`”.
+**`Stacks.SheafOfModules.localizedStructureSheafComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 1065](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L1065). The attribute's comment: “the canonical map of equation 0799, `κ_U : (g')_!^{Ab} O_U ⟶ O_{u(U)}`”.
 
 > The canonical map `(g')_!^{Ab} O_U ⟶ O_{u(U)}` of Stacks 0798: lower shriek of abelian
 > sheaves applied to the underlying abelian sheaf of the structure sheaf of the localized source
@@ -238,7 +238,7 @@ def localizedStructureSheafComparison :
         (_root_.SheafOfModules.unit (O.over (u.obj V)))
 ```
 
-**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_of_localizedStructureSheafComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 1154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L1154). The attribute's comment: “the criterion: `g_! = g_!^{Ab}` if the canonical map of equation 0799 is an isomorphism for every object `U`”.
+**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_of_localizedStructureSheafComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean, line 1156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForgetLocalized.lean#L1156). The attribute's comment: “the criterion: `g_! = g_!^{Ab}` if the canonical map of equation 0799 is an isomorphism for every object `U`”.
 
 > Lower shriek on sheaves of modules agrees with lower shriek on the underlying abelian
 > sheaves, that is, the comparison transformation `Stacks.SheafOfModules.lowerShriekForgetComparison`
@@ -256,7 +256,7 @@ theorem isIso_lowerShriekForgetComparison_of_localizedStructureSheafComparison
     IsIso (lowerShriekForgetComparison u (structureMap J K u O))
 ```
 
-**`AlgebraicGeometry.Space.isIso_etaleLowerShriekForgetComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleExtensionByZeroForget.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleExtensionByZeroForget.lean#L68). The attribute's comment: “postcomposition along an étale morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.isIso_etaleLowerShriekForgetComparison`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleExtensionByZeroForget.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleExtensionByZeroForget.lean#L68). The attribute's comment: “postcomposition along an étale morphism of algebraic spaces”.
 
 > **Stacks 0798** for postcomposition along an étale morphism of algebraic spaces: the
 > comparison from extension by zero of the underlying abelian sheaf to the underlying abelian
@@ -272,7 +272,7 @@ instance isIso_etaleLowerShriekForgetComparison (f : X ⟶ Y) (hf : IsEtale B S 
         (etaleRingSheaf B S hS Y)))
 ```
 
-**`AlgebraicGeometry.Space.etaleModuleShriekForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean#L91). The attribute's comment: “extension by zero of modules and of abelian sheaves, for an étale morphism”.
+**`AlgebraicGeometry.Space.etaleModuleShriekForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean#L91). The attribute's comment: “extension by zero of modules and of abelian sheaves, for an étale morphism”.
 
 > **Tag 0798 for an étale morphism of algebraic spaces.**  The abelian sheaf underlying the
 > extension by zero of a sheaf of `𝒪_X`-modules is the extension by zero of the abelian sheaf
@@ -293,7 +293,7 @@ def etaleModuleShriekForgetIso :
         SheafOfModules.toSheaf (etaleRingSheaf B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.etaleModuleShriekForgetIso_hom_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean#L114). The attribute's comment: “the comparison on counits, for an étale morphism”.
+**`AlgebraicGeometry.Space.etaleModuleShriekForgetIso_hom_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekForgetStalk.lean#L114). The attribute's comment: “the comparison on counits, for an étale morphism”.
 
 > **The comparison of Tag 0798 carries the forgotten counit of the module extension-by-zero
 > adjunction to the counit of the abelian one.**
@@ -313,7 +313,7 @@ theorem etaleModuleShriekForgetIso_hom_app_comp_counit
 
 [Tag 0FN3](https://stacks.math.columbia.edu/tag/0FN3) in the Stacks Project.
 
-**`Stacks.SheafOfModules.inverseImageCompCocontinuousPushforwardOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean#L444). The attribute's comment: “first conclusion: `f'_* ∘ (g')^* ≅ g^* ∘ f_*` on sheaves of modules, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `v`, `v'` continuous as well, with the comparison functors of the index categories of Section 00XF cofinal, and with `g^{-1} O_D = O_{D'}`, `(g')^{-1} O_C = O_{C'}`. An isomorphism rather than an equality, the sheaf-level comparison of Stacks 0FN1 being a base change of right Kan extensions. The direct images of sheaves of modules along the cocontinuous `u` and `u'` are the canonical ones attached to the structure map `f^♯ : O_D → {}_su O_C` of the morphism of ringed topoi, whose underlying sheaves of abelian groups are `{}_su`, `{}_su'`.”.
+**`Stacks.SheafOfModules.inverseImageCompCocontinuousPushforwardOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean#L444). The attribute's comment: “first conclusion: `f'_* ∘ (g')^* ≅ g^* ∘ f_*` on sheaves of modules, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `v`, `v'` continuous as well, with the comparison functors of the index categories of Section 00XF cofinal, and with `g^{-1} O_D = O_{D'}`, `(g')^{-1} O_C = O_{C'}`. An isomorphism rather than an equality, the sheaf-level comparison of Stacks 0FN1 being a base change of right Kan extensions. The direct images of sheaves of modules along the cocontinuous `u` and `u'` are the canonical ones attached to the structure map `f^♯ : O_D → {}_su O_C` of the morphism of ringed topoi, whose underlying sheaves of abelian groups are `{}_su`, `{}_su'`.”.
 
 > **Stacks 0FN3**, first conclusion, for the canonical direct images. For a commutative square
 > of ringed topoi as in the module docstring — all four functors cocontinuous giving `f`, `f'`,
@@ -344,7 +344,7 @@ def inverseImageCompCocontinuousPushforwardOfIso
       (CocontinuousPushforward.of.{v} J K u fSharp).functor ⋙ inverseImage.{v} K' K v OD
 ```
 
-**`Stacks.SheafOfModules.lowerShriekCompLeftAdjointOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean#L501). The attribute's comment: “second conclusion: `g'_! ∘ (f')⁻¹ ≅ f⁻¹ ∘ g_!` on sheaves of modules, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `v`, `v'` continuous as well, with the comparison functors of the index categories of Section 00XF cofinal, and with `g^{-1} O_D = O_{D'}`, `(g')^{-1} O_C = O_{C'}`. Deduced from the first conclusion by uniqueness of left adjoints, so an isomorphism and not an equality. `g_!` and `g'_!` are the lower shriek of Stacks 0797, and `f^{-1}`, `(f')^{-1}` the inverse image `f^* G = O_C ⊗_{f^{-1}O_D} f^{-1}G` of `Stacks.SheafOfModules.inverseImageCocontinuous`: all four are constructed, none assumed, so the source's condition (1) — a cocontinuous functor giving rise to a morphism of ringed topoi — is a theorem here. The direct images along `u` and `u'` are the canonical ones attached to the structure map `f^♯ : O_D → {}_su O_C`.”.
+**`Stacks.SheafOfModules.lowerShriekCompLeftAdjointOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekCocontinuousSquare.lean#L501). The attribute's comment: “second conclusion: `g'_! ∘ (f')⁻¹ ≅ f⁻¹ ∘ g_!` on sheaves of modules, for a commutative square of ringed topoi whose four functors `u`, `u'`, `v`, `v'` are cocontinuous, with `v`, `v'` continuous as well, with the comparison functors of the index categories of Section 00XF cofinal, and with `g^{-1} O_D = O_{D'}`, `(g')^{-1} O_C = O_{C'}`. Deduced from the first conclusion by uniqueness of left adjoints, so an isomorphism and not an equality. `g_!` and `g'_!` are the lower shriek of Stacks 0797, and `f^{-1}`, `(f')^{-1}` the inverse image `f^* G = O_C ⊗_{f^{-1}O_D} f^{-1}G` of `Stacks.SheafOfModules.inverseImageCocontinuous`: all four are constructed, none assumed, so the source's condition (1) — a cocontinuous functor giving rise to a morphism of ringed topoi — is a theorem here. The direct images along `u` and `u'` are the canonical ones attached to the structure map `f^♯ : O_D → {}_su O_C`.”.
 
 > **Stacks 0FN3**, second conclusion, for the canonical direct images. In the situation of
 > `Stacks.SheafOfModules.inverseImageCompCocontinuousPushforwardOfIso` we have
@@ -376,7 +376,7 @@ def lowerShriekCompLeftAdjointOfIso
 
 [Tag 0FN4](https://stacks.math.columbia.edu/tag/0FN4) in the Stacks Project.
 
-**`Stacks.SheafOfModules.inverseImage_comp_pushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean#L139). The attribute's comment: “first conclusion: `f'_* ∘ (g')^* = g^* ∘ f_*` on sheaves of modules, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`”.
+**`Stacks.SheafOfModules.inverseImage_comp_pushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean#L139). The attribute's comment: “first conclusion: `f'_* ∘ (g')^* = g^* ∘ f_*` on sheaves of modules, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`”.
 
 > **Stacks 0FN4**, first conclusion. For a commutative square of ringed topoi as in the module
 > docstring — `u`, `u'` continuous giving `f`, `f'`, the functors `v`, `v'` continuous as well as
@@ -392,7 +392,7 @@ theorem inverseImage_comp_pushforward_eq (hsq : v ⋙ u = u' ⋙ v')
       _root_.SheafOfModules.pushforward.{v} fSharp ⋙ inverseImage.{v} K' K v OD
 ```
 
-**`Stacks.SheafOfModules.pullbackCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean#L176). The attribute's comment: “second conclusion: `g'_! ∘ (f')⁻¹ ≅ f⁻¹ ∘ g_!` on sheaves of modules, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`; a canonical isomorphism rather than an equality, uniqueness of left adjoints giving no more. `g_!` and `g'_!` are the lower shriek of Stacks 0797 and `f⁻¹`, `(f')⁻¹` the pullback of Stacks 03D7; the existence of all four is proved, not assumed.”.
+**`Stacks.SheafOfModules.pullbackCompLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekContinuousSquare.lean#L176). The attribute's comment: “second conclusion: `g'_! ∘ (f')⁻¹ ≅ f⁻¹ ∘ g_!` on sheaves of modules, for a commutative square of ringed topoi whose horizontal functors `u`, `u'` are continuous and whose vertical functors `v`, `v'` are continuous as well as cocontinuous, with `g^{-1} O_D = O_{D'}` and `(g')^{-1} O_C = O_{C'}`; a canonical isomorphism rather than an equality, uniqueness of left adjoints giving no more. `g_!` and `g'_!` are the lower shriek of Stacks 0797 and `f⁻¹`, `(f')⁻¹` the pullback of Stacks 03D7; the existence of all four is proved, not assumed.”.
 
 > **Stacks 0FN4**, second conclusion. In the situation of
 > `Stacks.SheafOfModules.inverseImage_comp_pushforward_eq` we have
@@ -422,4 +422,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.41, Tag 0796](https://stacks.math.columbia.edu/tag/0796)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

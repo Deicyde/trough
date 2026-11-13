@@ -8,7 +8,7 @@ proof: formalized
 
 # Gaussian maximum likelihood
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html).
 
 ## Log-density of the multivariate Gaussian
 
@@ -18,7 +18,7 @@ $\mathcal{N}(x \mid \mu, S)$ for the multivariate Gaussian density at $x$ with m
 covariance $S$. Then $\log \mathcal{N}(x \mid \mu, S) = -\frac{n}{2} \log (2\pi) -
 \frac{1}{2} \log \det S - \frac{1}{2} (x - \mu)^{\mathsf T} S^{-1} (x - \mu)$.
 
-Formalized by `MetaMathlibExt.log_multivariateGaussianPDFReal`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Distributions/GaussianMLE.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#log-multivariate-gaussian-pdfreal).
+Formalized by `MetaMathlibExt.log_multivariateGaussianPDFReal`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/GaussianMLE.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#log-multivariate-gaussian-pdfreal).
 
 ## The weighted Gaussian log-likelihood via the scatter matrix
 
@@ -31,7 +31,7 @@ density at $x$ with mean $\mu$ and covariance $S$. Then
 $\sum_{i \in I} w_i \log \mathcal{N}(x_i \mid \mu, S) = -\frac{W}{2} \big(n \log (2\pi) +
 \log \det S + \operatorname{tr}(S^{-1} C(\mu))\big)$.
 
-Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_eq`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Distributions/GaussianMLE.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea).
+Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_eq`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/GaussianMLE.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea).
 
 ## The weighted mean is the Gaussian MLE of the mean
 
@@ -43,7 +43,7 @@ and covariance $S$. Then for every $\mu \in \mathbb{R}^J$,
 $\sum_{i \in I} w_i \log \mathcal{N}(x_i \mid \mu, S) \le
 \sum_{i \in I} w_i \log \mathcal{N}(x_i \mid m, S)$.
 
-Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le_weightedMean`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Distributions/GaussianMLE.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-2).
+Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le_weightedMean`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/GaussianMLE.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-2).
 
 ## The weighted Gaussian MLE when the sample covariance is positive definite
 
@@ -57,7 +57,7 @@ $J \times J$ matrix $S$,
 $\sum_{i \in I} w_i \log \mathcal{N}(x_i \mid \mu, S) \le
 \sum_{i \in I} w_i \log \mathcal{N}(x_i \mid m, C)$.
 
-Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le_of_posDef`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Distributions/GaussianMLE.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-3).
+Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le_of_posDef`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/GaussianMLE.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-3).
 
 ## The weighted Gaussian MLE for points in general position
 
@@ -73,7 +73,7 @@ $J \times J$ matrix $S$,
 $\sum_{i \in I} w_i \log \mathcal{N}(x_i \mid \mu, S) \le
 \sum_{i \in I} w_i \log \mathcal{N}(x_i \mid m, C)$.
 
-Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Distributions/GaussianMLE.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-4).
+Formalized by `MetaMathlibExt.sum_mul_log_multivariateGaussianPDFReal_le`, a theorem declared in [MathlibExt/Probability/Distributions/GaussianMLE.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/GaussianMLE.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html#sum-mul-log-multivariate-gaussian-pdfrea-4).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gaussian maximum likelihood](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/linear-models-multivariate/gaussian-maximum-likelihood)

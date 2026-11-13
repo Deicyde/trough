@@ -1,6 +1,6 @@
 # Diophantine tuples and Egyptian fractions
 
-63 results of ATLAS's vault, 32 proved and 31 stated but not proved, in this branch's topics.
+63 results of ATLAS's vault, 33 proved and 30 stated but not proved, in this branch's topics.
 
 Diophantine m-tuples, Erdős–Straus problem, Egyptian fraction representations and greedy unit-fraction algorithms.
 

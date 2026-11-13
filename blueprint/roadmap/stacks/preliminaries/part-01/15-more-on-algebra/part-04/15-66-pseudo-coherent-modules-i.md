@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.66 Pseudo-coherent modules, I
 
-Section 15.66 of the Stacks Project, [Tag 064N](https://stacks.math.columbia.edu/tag/064N). 19 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.66 of the Stacks Project, [Tag 064N](https://stacks.math.columbia.edu/tag/064N). 19 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 064P, an equation
 
 [Tag 064P](https://stacks.math.columbia.edu/tag/064P) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.HasFiniteFreeResolutionUpTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Module.lean#L76).
+**`StacksDraft.PseudoCoherence.HasFiniteFreeResolutionUpTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Module.lean#L76).
 
 > A module has a finite free resolution through degree `n` if there is an exact sequence
 > `R^{a_n} → ⋯ → R^{a_0} → M → 0`. Exactness is required at `M` and at every finite free term
@@ -29,7 +29,7 @@ def HasFiniteFreeResolutionUpTo
 
 [Tag 064Q](https://stacks.math.columbia.edu/tag/064Q) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.IsPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L123). The attribute's comment: “(1)”. References: SGA 6 II (2.3.2).
+**`StacksDraft.PseudoCoherence.IsPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L123). The attribute's comment: “(1)”. References: SGA 6 II (2.3.2).
 
 > An object `K` of `D(R)` is *`m`-pseudo-coherent* when there is a bounded complex `E` of
 > finite free `R`-modules and a morphism `α : Q(E) ⟶ K` in `D(R)`, where `Q` sends a complex to its
@@ -40,7 +40,7 @@ def HasFiniteFreeResolutionUpTo
 def IsPseudoCoherentFrom (K : DerivedCategory (ModuleCat.{v} R)) (m : ℤ) : Prop
 ```
 
-**`StacksDraft.PseudoCoherence.IsPseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L132). The attribute's comment: “(2)”.
+**`StacksDraft.PseudoCoherence.IsPseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L132). The attribute's comment: “(2)”.
 
 > An object `K` of `D(R)` is *pseudo-coherent* when it is represented by a bounded-above
 > complex of finite free `R`-modules.
@@ -49,7 +49,7 @@ def IsPseudoCoherentFrom (K : DerivedCategory (ModuleCat.{v} R)) (m : ℤ) : Pro
 def IsPseudoCoherent (K : DerivedCategory (ModuleCat.{v} R)) : Prop
 ```
 
-**`StacksDraft.PseudoCoherence.IsModulePseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L139). The attribute's comment: “(3)”.
+**`StacksDraft.PseudoCoherence.IsModulePseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L139). The attribute's comment: “(3)”.
 
 > An `R`-module `M` is *`m`-pseudo-coherent* when the object of `D(R)` concentrated in
 > degree `0` with value `M` is `m`-pseudo-coherent.
@@ -58,7 +58,7 @@ def IsPseudoCoherent (K : DerivedCategory (ModuleCat.{v} R)) : Prop
 def IsModulePseudoCoherentFrom (M : Type v) [AddCommGroup M] [Module R M] (m : ℤ) : Prop
 ```
 
-**`StacksDraft.PseudoCoherence.IsModulePseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L146). The attribute's comment: “(4)”.
+**`StacksDraft.PseudoCoherence.IsModulePseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/PseudoCoherent.lean#L146). The attribute's comment: “(4)”.
 
 > An `R`-module `M` is *pseudo-coherent* when the object of `D(R)` concentrated in degree `0`
 > with value `M` is pseudo-coherent.
@@ -71,7 +71,7 @@ def IsModulePseudoCoherent (M : Type v) [AddCommGroup M] [Module R M] : Prop
 
 [Tag 064R](https://stacks.math.columbia.edu/tag/064R) in the Stacks Project.
 
-**`PseudoCoherence.isPseudoCoherent_of_distinguished_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 848](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L848). The attribute's comment: “(1)”. References: SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
+**`PseudoCoherence.isPseudoCoherent_of_distinguished_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 848](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L848). The attribute's comment: “(1)”. References: SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
 
 > **Statement (1).** If `K` is `(m+1)`-pseudo-coherent and `L` is
 > `m`-pseudo-coherent, and `(K, L, M, f, g, h)` is a distinguished triangle, then
@@ -95,7 +95,7 @@ theorem isPseudoCoherent_of_distinguished_one
     IsPseudoCoherentFrom T.obj₃ m
 ```
 
-**`PseudoCoherence.isPseudoCoherent_of_distinguished_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L905). The attribute's comment: “(2)”. References: SGA 6 I (2.5), “b), modules over a ring”; SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
+**`PseudoCoherence.isPseudoCoherent_of_distinguished_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L905). The attribute's comment: “(2)”. References: SGA 6 I (2.5), “b), modules over a ring”; SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
 
 > **Statement (2).** If `K` and `M` are both `m`-pseudo-coherent, and
 > `(K, L, M, f, g, h)` is a distinguished triangle, then `L` is
@@ -114,7 +114,7 @@ theorem isPseudoCoherent_of_distinguished_two
     IsPseudoCoherentFrom T.obj₂ m
 ```
 
-**`PseudoCoherence.isPseudoCoherent_of_distinguished_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L930). The attribute's comment: “(3)”. References: SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
+**`PseudoCoherence.isPseudoCoherent_of_distinguished_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Triangle.lean, line 930](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Triangle.lean#L930). The attribute's comment: “(3)”. References: SGA 6 I (2.6), “special case”; SGA 6 III (1.4), “special case”.
 
 > **Statement (3).** If `L` is `(m+1)`-pseudo-coherent and `M` is
 > `m`-pseudo-coherent, and `(K, L, M, f, g, h)` is a distinguished triangle, then
@@ -138,7 +138,7 @@ theorem isPseudoCoherent_of_distinguished_three
 
 [Tag 064S](https://stacks.math.columbia.edu/tag/064S) in the Stacks Project.
 
-**`PseudoCoherence.finite_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Homology.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Homology.lean#L364). The attribute's comment: “(1)”.
+**`PseudoCoherence.finite_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Homology.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Homology.lean#L364). The attribute's comment: “(1)”.
 
 > Statement 1 (Stacks 064S). If `K^•` is `m`-pseudo-coherent and `H^i(K^•) = 0`
 > for all `i > m`, then `H^m(K^•)` is a finite type `R`-module.
@@ -152,7 +152,7 @@ theorem finite_homology_of_isPseudoCoherentFrom {R : Type u} [Ring R]
     Module.Finite R ((DerivedCategory.homologyFunctor (ModuleCat R) m).obj K)
 ```
 
-**`PseudoCoherence.finitePresentation_homology_succ_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Homology.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Homology.lean#L399). The attribute's comment: “(2)”.
+**`PseudoCoherence.finitePresentation_homology_succ_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Homology.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Homology.lean#L399). The attribute's comment: “(2)”.
 
 > Statement 2 (Stacks 064S). If `K^•` is `m`-pseudo-coherent and `H^i(K^•) = 0`
 > for all `i > m + 1`, then `H^{m+1}(K^•)` is a finitely presented `R`-module.
@@ -171,7 +171,7 @@ theorem finitePresentation_homology_succ_of_isPseudoCoherentFrom {R : Type u} [R
 
 [Tag 064T](https://stacks.math.columbia.edu/tag/064T) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.modulePseudoCoherent_iff_finiteness_and_resolutions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Module.lean#L471). References: SGA 6 I (2.9), “special case”.
+**`StacksDraft.PseudoCoherence.modulePseudoCoherent_iff_finiteness_and_resolutions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Module.lean#L471). References: SGA 6 I (2.9), “special case”.
 
 > Finite generation, finite presentation, finite free resolutions of a fixed length, and
 > infinite finite free resolutions characterize the corresponding forms of pseudo-coherence for a
@@ -192,7 +192,7 @@ theorem modulePseudoCoherent_iff_finiteness_and_resolutions
 
 [Tag 064U](https://stacks.math.columbia.edu/tag/064U) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_pseudoCoherentFrom_all_iff_finiteProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Basic.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Basic.lean#L1041).
+**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_pseudoCoherentFrom_all_iff_finiteProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Basic.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Basic.lean#L1041).
 
 > **Stacks 064U.** Pseudo-coherence is equivalent both to `m`-pseudo-coherence for every
 > integer `m` and to admitting a bounded-above finite projective representative. If cohomology
@@ -223,7 +223,7 @@ theorem pseudoCoherent_iff_pseudoCoherentFrom_all_iff_finiteProjective
 
 [Tag 064V](https://stacks.math.columbia.edu/tag/064V) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.isPseudoCoherent_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Basic.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Basic.lean#L1151). References: SGA 6 I (2.5), “b), pseudo-coherent case”; SGA 6 I (2.6), “partial”.
+**`StacksDraft.PseudoCoherence.isPseudoCoherent_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Basic.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Basic.lean#L1151). References: SGA 6 I (2.5), “b), pseudo-coherent case”; SGA 6 I (2.6), “partial”.
 
 > **Stacks 064V.** In a distinguished triangle in `D(R)`, if two of the three objects are
 > pseudo-coherent, then so is the third.
@@ -242,7 +242,7 @@ theorem isPseudoCoherent_of_distinguished
 
 [Tag 064W](https://stacks.math.columbia.edu/tag/064W) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_of_vanishing_and_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Module.lean#L745). References: SGA 6 I (2.11), “b), H^i=0 for i>m+1”.
+**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_of_vanishing_and_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Module.lean#L745). References: SGA 6 I (2.11), “b), H^i=0 for i>m+1”.
 
 > Vanishing above degree `m`, with the appropriate finiteness assumptions on the cohomology
 > in degrees `m` and `m + 1`, implies `m`-pseudo-coherence.
@@ -270,7 +270,7 @@ theorem isPseudoCoherentFrom_of_vanishing_and_finite_homology
 
 [Tag 064X](https://stacks.math.columbia.edu/tag/064X) in the Stacks Project.
 
-**`PseudoCoherence.isPseudoCoherentFrom_and_pseudoCoherent_of_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Characterization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Characterization.lean#L103). References: SGA 6 I (2.12), “necessity”.
+**`PseudoCoherence.isPseudoCoherentFrom_and_pseudoCoherent_of_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Characterization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Characterization.lean#L103). References: SGA 6 I (2.12), “necessity”.
 
 > **Stacks 064X.** Each summand of an `m`-pseudo-coherent binary biproduct is
 > `m`-pseudo-coherent, and each summand of a pseudo-coherent binary biproduct is
@@ -288,7 +288,7 @@ theorem isPseudoCoherentFrom_and_pseudoCoherent_of_biproduct
 
 [Tag 064Y](https://stacks.math.columbia.edu/tag/064Y) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Module.lean#L617). References: SGA 5 VIII (5.1), “'if' direction”; SGA 6 I (2.11), “Part a), special case”.
+**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Module.lean#L617). References: SGA 5 VIII (5.1), “'if' direction”; SGA 6 I (2.11), “Part a), special case”.
 
 > A bounded-above complex with suitably pseudo-coherent terms is pseudo-coherent in the
 > corresponding degrees. In particular, pseudo-coherence of every term implies pseudo-coherence
@@ -307,7 +307,7 @@ theorem pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove
 
 [Tag 066B](https://stacks.math.columbia.edu/tag/066B) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 884](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Module.lean#L884).
+**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Module.lean, line 884](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Module.lean#L884).
 
 > A cohomologically bounded-above derived object whose cohomology modules are
 > pseudo-coherent in the corresponding degrees is pseudo-coherent.
@@ -330,7 +330,7 @@ theorem pseudoCoherentFrom_and_pseudoCoherent_of_boundedAbove_cohomology
 
 [Tag 064Z](https://stacks.math.columbia.edu/tag/064Z) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_iff_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean#L452). References: SGA 6 III (1.12), “affine case, X = Y”.
+**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_and_pseudoCoherent_iff_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean#L453). References: SGA 6 III (1.12), “affine case, X = Y”.
 
 > **Stacks 064Z.** If `B` is pseudo-coherent as an `A`-module, restriction of scalars along
 > `A → B` preserves and reflects both `m`-pseudo-coherence and pseudo-coherence of complexes.
@@ -353,7 +353,7 @@ theorem pseudoCoherentFrom_and_pseudoCoherent_iff_restrictScalars
 
 [Tag 0650](https://stacks.math.columbia.edu/tag/0650) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.derivedExtensionScalars_preserves_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/BaseChange.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/BaseChange.lean#L671). References: SGA 6 I (2.13), “special case”.
+**`StacksDraft.PseudoCoherence.derivedExtensionScalars_preserves_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/BaseChange.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/BaseChange.lean#L671). References: SGA 6 I (2.13), “special case”.
 
 > Derived extension of scalars along a homomorphism `f : R →+* A` of commutative rings
 > preserves `m`-pseudo-coherent objects of the derived category for every integer `m`, and it
@@ -373,7 +373,7 @@ public theorem derivedExtensionScalars_preserves_pseudoCoherent
 
 [Tag 066C](https://stacks.math.columbia.edu/tag/066C) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.extensionScalars_preserves_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean#L83).
+**`StacksDraft.PseudoCoherence.extensionScalars_preserves_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/ChangeOfRings.lean#L83).
 
 > **Stacks 066C.** Extension of scalars along a flat ring homomorphism preserves
 > `m`-pseudo-coherent modules for every integer `m` and preserves pseudo-coherent modules.
@@ -392,7 +392,7 @@ theorem extensionScalars_preserves_pseudoCoherent
 
 [Tag 066D](https://stacks.math.columbia.edu/tag/066D) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_and_isPseudoCoherent_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Local.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Local.lean#L582).
+**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_and_isPseudoCoherent_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Local.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Local.lean#L582).
 
 > **Stacks 066D.** Both `m`-pseudo-coherence and pseudo-coherence descend from a finite
 > principal open cover.
@@ -412,7 +412,7 @@ theorem isPseudoCoherentFrom_and_isPseudoCoherent_of_localization
 
 [Tag 068R](https://stacks.math.columbia.edu/tag/068R) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_and_isPseudoCoherent_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Local.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Local.lean#L550).
+**`StacksDraft.PseudoCoherence.isPseudoCoherentFrom_and_isPseudoCoherent_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Local.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Local.lean#L550).
 
 > **Stacks 068R.** Both `m`-pseudo-coherence and pseudo-coherence descend along a faithfully
 > flat extension of commutative rings.
@@ -438,7 +438,7 @@ theorem isPseudoCoherentFrom_and_isPseudoCoherent_of_faithfullyFlat_baseChange
 
 [Tag 0DJE](https://stacks.math.columbia.edu/tag/0DJE) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherent_derivedTensorProduct_largeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Tensor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Tensor.lean#L487).
+**`StacksDraft.PseudoCoherence.pseudoCoherent_derivedTensorProduct_largeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Tensor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Tensor.lean#L487).
 
 > **Stacks 0DJE.** If `K` is `n`-pseudo-coherent and has no cohomology above `a`, and `L` is
 > `m`-pseudo-coherent and has no cohomology above `b`, then their derived tensor product
@@ -471,7 +471,7 @@ public theorem pseudoCoherent_derivedTensorProduct_largeUniverse
 
 [Tag 066E](https://stacks.math.columbia.edu/tag/066E) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_boundedAbove_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Coherent.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Coherent.lean#L238).
+**`StacksDraft.PseudoCoherence.pseudoCoherent_iff_boundedAbove_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Coherent.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Coherent.lean#L238).
 
 > **Stacks 066E.** Over a Noetherian ring, pseudo-coherence from degree `m` means
 > bounded-above finite homology in degrees at least `m`; pseudo-coherence means bounded-above
@@ -500,7 +500,7 @@ theorem pseudoCoherent_iff_boundedAbove_finite_homology
 
 [Tag 0EWZ](https://stacks.math.columbia.edu/tag/0EWZ) in the Stacks Project.
 
-**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_iff_finite_and_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Coherent.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/Coherent.lean#L410). References: SGA 6 I (3.5), “b), coherent ring”; SGA 6 I (2.11), “Part b), special case”.
+**`StacksDraft.PseudoCoherence.pseudoCoherentFrom_iff_finite_and_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/Coherent.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/Coherent.lean#L410). References: SGA 6 I (3.5), “b), coherent ring”; SGA 6 I (2.11), “Part b), special case”.
 
 > **Stacks 0EWZ.** Over a coherent ring, a bounded-above derived object is
 > `m`-pseudo-coherent exactly when its degree-`m` cohomology is finite and its higher cohomology
@@ -532,4 +532,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.66, Tag 064N](https://stacks.math.columbia.edu/tag/064N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

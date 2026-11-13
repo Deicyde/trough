@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.9 Products of cosimplicial objects
 
-Section 14.9 of the Stacks Project, [Tag 016Y](https://stacks.math.columbia.edu/tag/016Y). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.9 of the Stacks Project, [Tag 016Y](https://stacks.math.columbia.edu/tag/016Y). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 016Z, a definition
 
 [Tag 016Z](https://stacks.math.columbia.edu/tag/016Z) in the Stacks Project.
 
-**`CategoryTheory.Limits.pointwiseProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L98). References: EGA 0 (8.2.1), “more general”; EGA I (3.3.2), “more general”.
+**`CategoryTheory.Limits.pointwiseProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L98). References: EGA 0 (8.2.1), “more general”; EGA I (3.3.2), “more general”.
 
 > The **pointwise product** of two functors `F G : D ⥤ C`, defined when the products
 > `F.obj d ⨯ G.obj d` exist in `C`: it sends `d` to `F.obj d ⨯ G.obj d` and a morphism
@@ -28,7 +28,7 @@ Section 14.9 of the Stacks Project, [Tag 016Y](https://stacks.math.columbia.edu/
 def pointwiseProd (F G : D ⥤ C) [∀ d, HasBinaryProduct (F.obj d) (G.obj d)] : D ⥤ C
 ```
 
-**`CategoryTheory.Limits.map_eq_prod_lift_comp_prod_map_comp_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L233). The attribute's comment: “the definition's second clause, stated for an arbitrary functor satisfying the first: it is forced by the degrees and the two projections. Stated over an arbitrary index category `D`: the product of two cosimplicial objects is the case `D = SimplexCategory` and that of simplicial objects the case `D = SimplexCategoryᵒᵖ`”.
+**`CategoryTheory.Limits.map_eq_prod_lift_comp_prod_map_comp_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L233). The attribute's comment: “the definition's second clause, stated for an arbitrary functor satisfying the first: it is forced by the degrees and the two projections. Stated over an arbitrary index category `D`: the product of two cosimplicial objects is the case `D = SimplexCategory` and that of simplicial objects the case `D = SimplexCategoryᵒᵖ`”.
 
 > **The product of two cosimplicial objects acts on morphisms by the product of the maps**,
 > [Stacks, Tag 016Z]: let `F G P : D ⥤ C` be functors such that the products `F.obj d ⨯ G.obj d`
@@ -53,7 +53,7 @@ theorem map_eq_prod_lift_comp_prod_map_comp_inv {F G P : D ⥤ C}
 
 [Tag 0170](https://stacks.math.columbia.edu/tag/0170) in the Stacks Project.
 
-**`CategoryTheory.Limits.pointwiseProdIsProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L125). The attribute's comment: “stated for an arbitrary index category `D`: the product of cosimplicial objects is the case `D = SimplexCategory`, that of simplicial objects the case `D = SimplexCategoryᵒᵖ`”. References: EGA 0 (8.2.1), “more general”.
+**`CategoryTheory.Limits.pointwiseProdIsProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L125). The attribute's comment: “stated for an arbitrary index category `D`: the product of cosimplicial objects is the case `D = SimplexCategory`, that of simplicial objects the case `D = SimplexCategoryᵒᵖ`”. References: EGA 0 (8.2.1), “more general”.
 
 > **The pointwise product of two functors is their product**, [Stacks, Tag 0170]: for functors
 > `F G : D ⥤ C` whose pointwise products exist, the binary fan on `F` and `G` with point the
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.9, Tag 016Y](https://stacks.math.columbia.edu/tag/016Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

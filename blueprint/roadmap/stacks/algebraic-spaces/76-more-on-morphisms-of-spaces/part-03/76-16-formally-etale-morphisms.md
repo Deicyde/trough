@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.16 Formally étale morphisms
 
-Section 76.16 of the Stacks Project, [Tag 04GB](https://stacks.math.columbia.edu/tag/04GB). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.16 of the Stacks Project, [Tag 04GB](https://stacks.math.columbia.edu/tag/04GB). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04GC, a definition
 
 [Tag 04GC](https://stacks.math.columbia.edu/tag/04GC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallyEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L79). The attribute's comment: “formally étale for a morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally étale”.
+**`AlgebraicGeometry.Space.FormallyEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L79). The attribute's comment: “formally étale for a morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally étale”.
 
 > **Stacks 049S, part (2).** Every commutative affine square against a
 > square-zero closed immersion admits exactly one lift.
@@ -27,7 +27,7 @@ public abbrev FormallyEtale {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type v} (a : F
 
 [Tag 04GD](https://stacks.math.columbia.edu/tag/04GD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_iff_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L130). The attribute's comment: “condition (2)”.
+**`AlgebraicGeometry.Space.formallyEtale_iff_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L130). The attribute's comment: “condition (2)”.
 
 > **Stacks 04GD, the equivalence of (1) and (2).** A morphism of algebraic spaces over `S` is
 > formally étale exactly when the morphism of schemes underlying every commuting square of étale
@@ -42,7 +42,7 @@ theorem formallyEtale_iff_etaleCharts
         (@_root_.AlgebraicGeometry.FormallyEtale.{u} : MorphismProperty Scheme.{u}) f
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_iff_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L147). The attribute's comment: “condition (3)”.
+**`AlgebraicGeometry.Space.formallyEtale_iff_surjectiveEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L147). The attribute's comment: “condition (3)”.
 
 > **Stacks 04GD, the equivalence of (1) and (3).** A morphism of algebraic spaces over `S` is
 > formally étale exactly when there is one commuting square of étale scheme charts, both chart
@@ -71,7 +71,7 @@ theorem formallyEtale_iff_surjectiveEtaleChart
 
 [Tag 0611](https://stacks.math.columbia.edu/tag/0611) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallyEtale.existsUnique_lift_of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean#L312).
+**`AlgebraicGeometry.Space.FormallyEtale.existsUnique_lift_of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean#L312).
 
 > **Stacks 0611.** A formally étale morphism `f : X ⟶ Y` of algebraic spaces over `S` admits
 > exactly one dotted arrow in a solid square over a first-order thickening `T ⊂ T'` of algebraic
@@ -92,13 +92,13 @@ theorem FormallyEtale.existsUnique_lift_of_firstOrderThickening
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.formallyEtale_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L66) (StacksFrontier).
+- [`AlgebraicGeometry.Space.formallyEtale_comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L66) (StacksFrontier).
 
 ## Tag 0613, a lemma
 
 [Tag 0613](https://stacks.math.columbia.edu/tag/0613) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L111).
+**`AlgebraicGeometry.Space.formallyEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L111).
 
 > **Stacks 0613.** A base change of a formally étale morphism of algebraic spaces over `S` is
 > formally étale: if `fst, snd, f, g` is a cartesian square of algebraic spaces over `S` and `f`
@@ -113,13 +113,13 @@ public theorem formallyEtale_of_isPullback (B : BigFppfSite.{u}) (S : Scheme.{u}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.formallyEtale_baseChange`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L240), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L70) (StacksFrontier).
+- [`AlgebraicGeometry.Space.formallyEtale_baseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L240), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L70) (StacksFrontier).
 
 ## Tag 0614, a lemma
 
 [Tag 0614](https://stacks.math.columbia.edu/tag/0614) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_iff_sub_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L335). The attribute's comment: “the equivalence of (1) and (2)”.
+**`AlgebraicGeometry.Space.formallyEtale_iff_sub_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L335). The attribute's comment: “the equivalence of (1) and (2)”.
 
 > **Stacks 0614, the equivalence of (1) and (2).**  A morphism `f : X ⟶ Y` of algebraic spaces
 > over `S` admitting a universal first order thickening `X ⊂ X'` over `Y` is formally étale exactly
@@ -134,7 +134,7 @@ theorem formallyEtale_iff_sub_eq_top (t : UniversalFirstOrderThickening B S hS f
     FormallyEtale f.hom ↔ t.sub = ⊤
 ```
 
-**`AlgebraicGeometry.Space.isZero_conormalSheaf_of_sub_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L358). The attribute's comment: “(2) implies (3)”.
+**`AlgebraicGeometry.Space.isZero_conormalSheaf_of_sub_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L358). The attribute's comment: “(2) implies (3)”.
 
 > **Stacks 0614, (2) implies (3).**  If the smaller space of a universal first order
 > thickening of `X` over `Y` is the whole ambient space, then the conormal sheaf `𝒞_{X/Y}` of
@@ -150,7 +150,7 @@ theorem isZero_conormalSheaf_of_sub_eq_top (t : UniversalFirstOrderThickening B 
     (hsub : t.sub = ⊤) : IsZero (conormalSheaf B S hS t)
 ```
 
-**`AlgebraicGeometry.Space.sub_eq_top_of_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L410). The attribute's comment: “(3) implies (2)”.
+**`AlgebraicGeometry.Space.sub_eq_top_of_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L410). The attribute's comment: “(3) implies (2)”.
 
 > **Stacks 0614, (3) implies (2).**  If the conormal sheaf `𝒞_{X/Y}` of Stacks 0607 vanishes
 > then the smaller space of the universal first order thickening is the whole ambient space.
@@ -175,7 +175,7 @@ theorem sub_eq_top_of_isZero_conormalSheaf (t : UniversalFirstOrderThickening B 
     (h : IsZero (conormalSheaf B S hS t)) : t.sub = ⊤
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_of_isZero_sheafOfDifferentials_of_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L571). The attribute's comment: “(4) implies (1), for the datum of Stacks 0607”.
+**`AlgebraicGeometry.Space.formallyEtale_of_isZero_sheafOfDifferentials_of_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L571). The attribute's comment: “(4) implies (1), for the datum of Stacks 0607”.
 
 > **Stacks 0614, (4) implies (1), for the datum of Stacks 0607.**  If the sheaf of
 > differentials `Ω_{X/Y}` of Stacks 04CT and the conormal sheaf `𝒞_{X/Y}` of Stacks 0607 both
@@ -199,7 +199,7 @@ theorem formallyEtale_of_isZero_sheafOfDifferentials_of_isZero_conormalSheaf
     FormallyEtale f.hom
 ```
 
-**`AlgebraicGeometry.Space.isZero_sheafOfDifferentials_and_isZero_conormalSheaf_of_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L592). The attribute's comment: “(3) implies (4), hence also (1) implies (4) and (2) implies (4) through the proved equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.Space.isZero_sheafOfDifferentials_and_isZero_conormalSheaf_of_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L592). The attribute's comment: “(3) implies (4), hence also (1) implies (4) and (2) implies (4) through the proved equivalence of (1), (2) and (3)”.
 
 > **Stacks 0614, (3) implies (4).**  If `f : X ⟶ Y` is formally unramified and the conormal
 > sheaf `𝒞_{X/Y}` of Stacks 0607 vanishes, then the sheaf of differentials `Ω_{X/Y}` of
@@ -222,7 +222,7 @@ theorem isZero_sheafOfDifferentials_and_isZero_conormalSheaf_of_formallyUnramifi
     IsZero (sheafOfDifferentials B S hS f) ∧ IsZero (conormalSheaf B S hS t)
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_tfae_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L750). The attribute's comment: “the equivalence of the four conditions, with no hypotheses: Stacks 0606 supplies the universal first order thickening”.
+**`AlgebraicGeometry.Space.formallyEtale_tfae_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L750). The attribute's comment: “the equivalence of the four conditions, with no hypotheses: Stacks 0606 supplies the universal first order thickening”.
 
 > **Stacks 0614, with no hypotheses at all.**  Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S`.  Then the four conditions
@@ -269,7 +269,7 @@ theorem formallyEtale_tfae_unconditional :
           ∃ t : UniversalFirstOrderThickening B S hS f, IsZero (conormalSheaf B S hS t)]
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_iff_isZero_sheafOfDifferentials_and_exists_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L781). The attribute's comment: “the equivalence of (1) and (4), with no hypotheses”.
+**`AlgebraicGeometry.Space.formallyEtale_iff_isZero_sheafOfDifferentials_and_exists_isZero_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFormallyEtale.lean#L781). The attribute's comment: “the equivalence of (1) and (4), with no hypotheses”.
 
 > **Stacks 0614, the equivalence of (1) and (4), with no hypotheses.**  A morphism
 > `f : X ⟶ Y` of algebraic spaces over `S` is formally étale exactly when the sheaf of
@@ -292,7 +292,7 @@ theorem formallyEtale_iff_isZero_sheafOfDifferentials_and_exists_isZero_conormal
 
 [Tag 0615](https://stacks.math.columbia.edu/tag/0615) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_of_isUnramified_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L177).
+**`AlgebraicGeometry.Space.formallyEtale_of_isUnramified_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L177).
 
 > **Stacks 0615.** A flat unramified morphism of algebraic spaces over `S` is formally étale.
 >
@@ -312,7 +312,7 @@ theorem formallyEtale_of_isUnramified_of_isFlat
 
 [Tag 0616](https://stacks.math.columbia.edu/tag/0616) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_iff_isLocallyOfFinitePresentation_and_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L195). References: EGA IV (17.6.1), “a) <=> d)”.
+**`AlgebraicGeometry.Space.isEtale_iff_isLocallyOfFinitePresentation_and_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleChartCriterion.lean#L195). References: EGA IV (17.6.1), “a) <=> d)”.
 
 > **Stacks 0616.** A morphism of algebraic spaces over `S` is étale if and only if it is
 > locally of finite presentation and formally étale.
@@ -336,4 +336,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.16, Tag 04GB](https://stacks.math.columbia.edu/tag/04GB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

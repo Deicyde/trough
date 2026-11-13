@@ -8,7 +8,7 @@ proof: formalized
 
 # MC-finite sequences
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html).
 
 ## MC-finite sequences
 
@@ -21,7 +21,7 @@ such that $s(n + p) \equiv \sum_{i=0}^{p-1} c_i\, s(n + i) \pmod{m}$ for all $n 
 
 - Filmus, Fischer, Makowsky, and Rakita, "MC-Finiteness of Restricted Set Partition Functions," Journal of Integer Sequences 26 (2023), Article 23.7.4, lines 281–286.
 
-Formalized by `MetaMathlibExt.IsMCFinite`, a definition declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite).
+Formalized by `MetaMathlibExt.IsMCFinite`, a definition declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite).
 
 ## Polynomial recursions give MC-finite sequences
 
@@ -30,7 +30,7 @@ and let $P_0, \dots, P_k$ be polynomials with integer coefficients in $k + 2$ va
 $u_i(n+1) = P_i(u_0(n), \dots, u_k(n), n)$ for every $i \le k$ and every $n \ge 0$. Then the
 sequence $u_0$ is MC-finite.
 
-Formalized by `MetaMathlibExt.isMCFinite_of_mvPolynomial_recursion`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite-of-mv-polynomial-recursion).
+Formalized by `MetaMathlibExt.isMCFinite_of_mvPolynomial_recursion`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite-of-mv-polynomial-recursion).
 
 ## P-recursive sequences with leading coefficient 1 are MC-finite
 
@@ -39,7 +39,7 @@ sequence that is P-recursive of order $k$ with coefficient polynomials $Q_0, \do
 integer coefficients, that is, $Q_0(n)\, s_n = \sum_{i=1}^{k} Q_i(n)\, s_{n-i}$ for every $n \ge k$.
 If $Q_0 = 1$, then $s$ is MC-finite.
 
-Formalized by `MetaMathlibExt.IsPRecursiveSequence.isMCFinite`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite-2).
+Formalized by `MetaMathlibExt.IsPRecursiveSequence.isMCFinite`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#is-mcfinite-2).
 
 ## Polynomially recursive integer sequences are MC-finite
 
@@ -61,7 +61,7 @@ all $n \ge k$, then $s$ is MC-finite.
 
 - Yuval Filmus, Eldar Fischer, and Johann A. Makowsky, with Vsevolod Rakita, "MC-Finiteness of Restricted Set Partition Functions," Journal of Integer Sequences 26 (2023), Article 23.7.4, Theorem, lines 422–427, with the MC-finite definition at lines 281–286 and the holonomic/PRS definitions at lines 387–412, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Makowsky/makowsky16.tex>. It follows from `isMCFinite_of_mvPolynomial_recursion` and `IsPRecursiveSequence.isMCFinite`; in the holonomic premise the conditions `0 < k`, `P 1 ≠ 0` and `P k ≠ 0` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.polynomially_recursive_MC_finite`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#polynomially-recursive-mc-finite).
+Formalized by `MetaMathlibExt.polynomially_recursive_MC_finite`, a theorem declared in [MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Sequences/PolynomiallyRecursiveMCFinite.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html#polynomially-recursive-mc-finite).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: MC-finite sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/mc-finite-sequences)

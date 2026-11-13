@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.22 Cohen-Macaulay morphisms
 
-Section 37.22 of the Stacks Project, [Tag 045Q](https://stacks.math.columbia.edu/tag/045Q). 11 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.22 of the Stacks Project, [Tag 045Q](https://stacks.math.columbia.edu/tag/045Q). 11 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 045R, a definition
 
 [Tag 045R](https://stacks.math.columbia.edu/tag/045R) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_of_isCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean#L379). The attribute's comment: “flatness of a Cohen-Macaulay morphism”.
+**`AlgebraicGeometry.flat_of_isCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean#L379). The attribute's comment: “flatness of a Cohen-Macaulay morphism”.
 
 > A Cohen--Macaulay morphism is flat: flatness of the stalk map at a point is the first
 > conjunct of Cohen--Macaulayness there, and flatness of a morphism is flatness of every stalk
@@ -26,7 +26,7 @@ theorem flat_of_isCohenMacaulay {X Y : Scheme.{u}}
     (hcm : Scheme.Hom.IsCohenMacaulay f hf) : Flat f
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.IsCohenMacaulayAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean#L73). The attribute's comment: “part (1)”. References: EGA IV (6.8.1), “(ii)”; SGA 1 II (4.19).
+**`AlgebraicGeometry.Scheme.Hom.IsCohenMacaulayAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean#L73). The attribute's comment: “part (1)”. References: EGA IV (6.8.1), “(ii)”; SGA 1 II (4.19).
 
 > A morphism of schemes with locally Noetherian fibres is Cohen–Macaulay at `x` if it is flat
 > at `x` and the local ring of the fibre over `f x` at the point corresponding to `x` is
@@ -37,7 +37,7 @@ public abbrev IsCohenMacaulayAt {X Y : Scheme.{u}} (f : X ⟶ Y)
     (hf : ∀ y : Y, IsLocallyNoetherian (f.fiber y)) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.IsCohenMacaulay`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean#L82). The attribute's comment: “part (2)”. References: EGA IV (6.8.1), “(ii), global”.
+**`AlgebraicGeometry.Scheme.Hom.IsCohenMacaulay`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Defs.lean#L82). The attribute's comment: “part (2)”. References: EGA IV (6.8.1), “(ii), global”.
 
 > A morphism of schemes with locally Noetherian fibres is Cohen–Macaulay if it is
 > Cohen–Macaulay at every point of its source.
@@ -51,7 +51,7 @@ public abbrev IsCohenMacaulay {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 045S](https://stacks.math.columbia.edu/tag/045S) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulay_iff_flat_and_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Fibres.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Fibres.lean#L59). References: EGA IV (19.2.9), “more general”.
+**`AlgebraicGeometry.isCohenMacaulay_iff_flat_and_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Fibres.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Fibres.lean#L59). References: EGA IV (19.2.9), “more general”.
 
 > A morphism with locally Noetherian fibres is Cohen–Macaulay precisely when it is flat and
 > every fibre is a Cohen–Macaulay scheme.
@@ -67,7 +67,7 @@ public theorem isCohenMacaulay_iff_flat_and_fibers {X Y : Scheme.{u}} (f : X ⟶
 
 [Tag 0AFG](https://stacks.math.columbia.edu/tag/0AFG) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_add_topologicalKrullDimAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/CohenMacaulayDimensionFormula.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/CohenMacaulayDimensionFormula.lean#L225).
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_add_topologicalKrullDimAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/CohenMacaulayDimensionFormula.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/CohenMacaulayDimensionFormula.lean#L225).
 
 > **Stacks Project, Tag 0AFG.** For a Cohen-Macaulay morphism locally of finite type between
 > locally Noetherian schemes, the dimension of the source at a point is the dimension of the target
@@ -87,7 +87,7 @@ public theorem topologicalKrullDimAt_eq_add_topologicalKrullDimAt_fiber {X Y : S
 
 [Tag 0C0W](https://stacks.math.columbia.edu/tag/0C0W) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L338). The attribute's comment: “part (1)”. References: EGA IV (6.8.3), “(i), Cohen-Macaulay”; EGA IV (6.6.1), “a) of (i)”.
+**`AlgebraicGeometry.isCohenMacaulayAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L338). The attribute's comment: “part (1)”. References: EGA IV (6.8.3), “(i), Cohen-Macaulay”; EGA IV (6.6.1), “a) of (i)”.
 
 > The composite of morphisms Cohen–Macaulay at the relevant points is Cohen–Macaulay at the
 > point of the source.
@@ -102,7 +102,7 @@ public theorem isCohenMacaulayAt_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y 
     Scheme.Hom.IsCohenMacaulayAt (f ≫ g) hgf x
 ```
 
-**`AlgebraicGeometry.isCohenMacaulay_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L352). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isCohenMacaulay_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L352). The attribute's comment: “part (2)”.
 
 > The composite of Cohen–Macaulay morphisms is Cohen–Macaulay.
 
@@ -116,7 +116,7 @@ public theorem isCohenMacaulay_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y �
     Scheme.Hom.IsCohenMacaulay (f ≫ g) hgf
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_left_of_comp_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L364). The attribute's comment: “part (3), first conclusion”.
+**`AlgebraicGeometry.isCohenMacaulayAt_left_of_comp_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L364). The attribute's comment: “part (3), first conclusion”.
 
 > If the composite is Cohen–Macaulay at `x` and `f` is flat at `x`, then `f` is Cohen–Macaulay
 > at `x`.
@@ -131,7 +131,7 @@ public theorem isCohenMacaulayAt_left_of_comp_of_flatAt {X Y Z : Scheme.{u}}
     Scheme.Hom.IsCohenMacaulayAt f hf x
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_right_of_comp_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L380). The attribute's comment: “part (3), second conclusion”.
+**`AlgebraicGeometry.isCohenMacaulayAt_right_of_comp_of_flatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L380). The attribute's comment: “part (3), second conclusion”.
 
 > If the composite is Cohen–Macaulay at `x` and `f` is flat at `x`, then `g` is Cohen–Macaulay
 > at `f x`.
@@ -146,7 +146,7 @@ public theorem isCohenMacaulayAt_right_of_comp_of_flatAt {X Y Z : Scheme.{u}}
     Scheme.Hom.IsCohenMacaulayAt g hg (f x)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulay_left_of_comp_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L395). The attribute's comment: “part (4), first conclusion”.
+**`AlgebraicGeometry.isCohenMacaulay_left_of_comp_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L395). The attribute's comment: “part (4), first conclusion”.
 
 > If the composite is Cohen–Macaulay and `f` is flat, then `f` is Cohen–Macaulay.
 
@@ -159,7 +159,7 @@ public theorem isCohenMacaulay_left_of_comp_of_flat {X Y Z : Scheme.{u}}
     (hflat : Flat f) : Scheme.Hom.IsCohenMacaulay f hf
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_right_of_comp_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L408). The attribute's comment: “part (4), second conclusion”. References: EGA IV (6.6.1), “a) of (ii)”; EGA IV (6.8.3), “(ii), Cohen-Macaulay”.
+**`AlgebraicGeometry.isCohenMacaulayAt_right_of_comp_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Composition.lean#L408). The attribute's comment: “part (4), second conclusion”. References: EGA IV (6.6.1), “a) of (ii)”; EGA IV (6.8.3), “(ii), Cohen-Macaulay”.
 
 > If the composite is Cohen–Macaulay and `f` is flat, then `g` is Cohen–Macaulay at every
 > point in the image of `f`.
@@ -178,7 +178,7 @@ public theorem isCohenMacaulayAt_right_of_comp_of_flat {X Y Z : Scheme.{u}}
 
 [Tag 0C0X](https://stacks.math.columbia.edu/tag/0C0X) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulay_of_isCohenMacaulay_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean#L57). The attribute's comment: “the morphism is Cohen-Macaulay”.
+**`AlgebraicGeometry.isCohenMacaulay_of_isCohenMacaulay_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean#L57). The attribute's comment: “the morphism is Cohen-Macaulay”.
 
 > **Stacks Project, Tag 0C0X.** A flat morphism of locally Noetherian schemes whose source is
 > Cohen–Macaulay is a Cohen–Macaulay morphism.
@@ -190,7 +190,7 @@ public theorem isCohenMacaulay_of_isCohenMacaulay_source {X Y : Scheme.{u}}
     f.IsCohenMacaulay (isLocallyNoetherian_fiber f)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayLocalRing_targetStalk_of_isCohenMacaulay_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean#L99). The attribute's comment: “the target local rings are Cohen-Macaulay”. References: EGA IV (7.5.3), “(iii), special case”.
+**`AlgebraicGeometry.isCohenMacaulayLocalRing_targetStalk_of_isCohenMacaulay_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FlatSource.lean#L99). The attribute's comment: “the target local rings are Cohen-Macaulay”. References: EGA IV (7.5.3), “(iii), special case”.
 
 > **Stacks Project, Tag 0C0X.** For a flat morphism of locally Noetherian schemes whose source
 > is Cohen–Macaulay, the local ring of the target at the image of any point of the source is
@@ -207,7 +207,7 @@ public theorem isCohenMacaulayLocalRing_targetStalk_of_isCohenMacaulay_source {X
 
 [Tag 045T](https://stacks.math.columbia.edu/tag/045T) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayAt_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L263). The attribute's comment: “part (1)”. References: EGA IV (6.8.3), “(iii) CM, h loc fin type”.
+**`AlgebraicGeometry.isCohenMacaulayAt_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L263). The attribute's comment: “part (1)”. References: EGA IV (6.8.3), “(iii) CM, h loc fin type”.
 
 > **Stacks Project, Tag 045T (1).** Cohen–Macaulayness at a point is preserved under locally
 > finite-type base change.
@@ -221,7 +221,7 @@ public theorem isCohenMacaulayAt_pullback {X Y Y' : Scheme.{u}}
       (fun y' => isLocallyNoetherian_fiber_pullback f g hf y') x'
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_of_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L276). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isCohenMacaulayAt_of_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L276). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 045T (2).** Cohen–Macaulayness descends from a base change when the
 > original morphism is flat at the point in question.
@@ -236,7 +236,7 @@ public theorem isCohenMacaulayAt_of_pullback_of_flat {X Y Y' : Scheme.{u}}
     Scheme.Hom.IsCohenMacaulayAt f hf ((pullback.fst f g).base x')
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_of_pullback_of_flat_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L289). The attribute's comment: “part (3)”. References: EGA IV (6.8.3), “(iii) converse, CM”.
+**`AlgebraicGeometry.isCohenMacaulayAt_of_pullback_of_flat_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/BaseChange.lean#L289). The attribute's comment: “part (3)”. References: EGA IV (6.8.3), “(iii) converse, CM”.
 
 > **Stacks Project, Tag 045T (3).** Cohen–Macaulayness descends from a base change flat at the
 > relevant base point.
@@ -255,7 +255,7 @@ public theorem isCohenMacaulayAt_of_pullback_of_flat_base {X Y Y' : Scheme.{u}}
 
 [Tag 045U](https://stacks.math.columbia.edu/tag/045U) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayAt_set_eq_fiberLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L47). The attribute's comment: “fibre\_local\_ring\_characterization”.
+**`AlgebraicGeometry.isCohenMacaulayAt_set_eq_fiberLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L47). The attribute's comment: “fibre\_local\_ring\_characterization”.
 
 > The Cohen–Macaulay locus of a flat, locally finitely presented morphism is exactly the locus
 > where the local ring of its fibre is Cohen–Macaulay.
@@ -270,7 +270,7 @@ public theorem isCohenMacaulayAt_set_eq_fiberLocalRing
         IsCohenMacaulayLocalRing ((f.fiber (f x)).presheaf.stalk (f.asFiber x))}
 ```
 
-**`AlgebraicGeometry.dense_cohenMacaulayAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L122). The attribute's comment: “cm\_locus\_fibrewise\_dense”. References: SGA 4 XVIII (2.3), “fibrewise density”.
+**`AlgebraicGeometry.dense_cohenMacaulayAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L122). The attribute's comment: “cm\_locus\_fibrewise\_dense”. References: SGA 4 XVIII (2.3), “fibrewise density”.
 
 > The Cohen–Macaulay locus of a flat, locally finitely presented morphism is dense in every
 > fibre.
@@ -283,7 +283,7 @@ public theorem dense_cohenMacaulayAt_fiber
     ∀ s : S, Dense ((f.fiberι s) ⁻¹' {x : X | Scheme.Hom.IsCohenMacaulayAt f hf x})
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean#L267). The attribute's comment: “cm\_locus\_base\_change”. References: EGA IV (6.8.2), “(ii), special case”.
+**`AlgebraicGeometry.isCohenMacaulayAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean#L267). The attribute's comment: “cm\_locus\_base\_change”. References: EGA IV (6.8.2), “(ii), special case”.
 
 > **Stacks Project, Tag 045U (base change).** The Cohen–Macaulay locus of a flat, locally
 > finitely presented morphism commutes with arbitrary base change.
@@ -301,7 +301,7 @@ public theorem isCohenMacaulayAt_pullback_locus {X S S' : Scheme.{u}}
       g'.base ⁻¹' {x : X | Scheme.Hom.IsCohenMacaulayAt f hf x}
 ```
 
-**`AlgebraicGeometry.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean#L151). The attribute's comment: “cm\_locus\_open”. References: EGA IV (12.1.7), “(iii), flat case”; EGA IV (6.11.3), “special case”.
+**`AlgebraicGeometry.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean#L151). The attribute's comment: “cm\_locus\_open”. References: EGA IV (12.1.7), “(iii), flat case”; EGA IV (6.11.3), “special case”.
 
 > **Stacks Project, Tag 045U (Cohen–Macaulay locus).** For a flat morphism locally of finite
 > presentation, the locus of points at which the morphism is Cohen–Macaulay is open.
@@ -318,7 +318,7 @@ public theorem isOpen_setOf_isCohenMacaulayAt
 
 [Tag 0BUU](https://stacks.math.columbia.edu/tag/0BUU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nat_topologicalKrullDimAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 863](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L863). The attribute's comment: “finiteness of the fibre dimension”.
+**`AlgebraicGeometry.exists_nat_topologicalKrullDimAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L863). The attribute's comment: “finiteness of the fibre dimension”.
 
 > The local dimension of a fibre of a locally finitely presented morphism is finite.
 
@@ -329,7 +329,7 @@ public theorem exists_nat_topologicalKrullDimAt_fiber {X S : Scheme.{u}} (f : X 
       topologicalKrullDimAt (f.fiber (f x)) (f.asFiber x) = (n : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L882). The attribute's comment: “the four equivalent conditions”. References: EGA IV (15.4.3), “F = O\_X, f flat”; SGA 4 XVIII (2.4).
+**`AlgebraicGeometry.isCohenMacaulayAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 882](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L882). The attribute's comment: “the four equivalent conditions”. References: EGA IV (15.4.3), “F = O\_X, f flat”; SGA 4 XVIII (2.4).
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation and let `n` be the dimension of
 > the fibre of `f` through `x` at `x`. Then `f` is Cohen–Macaulay at `x` if and only if some open
@@ -365,7 +365,7 @@ public theorem isCohenMacaulayAt_tfae {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 054T](https://stacks.math.columbia.edu/tag/054T) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_relativeDimension_fiberwise_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibrewiseDenseRelativeDimension.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibrewiseDenseRelativeDimension.lean#L188).
+**`AlgebraicGeometry.exists_open_relativeDimension_fiberwise_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibrewiseDenseRelativeDimension.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibrewiseDenseRelativeDimension.lean#L188).
 
 > **Stacks Project, Tag 054T.** A flat morphism locally of finite presentation admits open
 > pieces of every nonnegative relative dimension whose union is dense in every fibre.
@@ -382,7 +382,7 @@ public theorem exists_open_relativeDimension_fiberwise_dense
 
 [Tag 054U](https://stacks.math.columbia.edu/tag/054U) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_specialization_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibreDimensionSpecialization.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibreDimensionSpecialization.lean#L52). References: EGA IV (12.2.1.1), “partial”.
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_specialization_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibreDimensionSpecialization.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FibreDimensionSpecialization.lean#L52). References: EGA IV (12.2.1.1), “partial”.
 
 > **Stacks Project, Tag 054U.** For a flat morphism locally of finite presentation, local
 > dimension in the fibres is constant along a specialization whose endpoint is generic in an
@@ -401,7 +401,7 @@ public theorem topologicalKrullDimAt_fiber_eq_of_specialization_of_mem_genericPo
 
 [Tag 045V](https://stacks.math.columbia.edu/tag/045V) in the Stacks Project.
 
-**`AlgebraicGeometry.cohenMacaulayWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean#L186). The attribute's comment: “fppf local on the target”.
+**`AlgebraicGeometry.cohenMacaulayWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean#L186). The attribute's comment: “fppf local on the target”.
 
 > **Stacks Project, Tag 045V.** Having locally Noetherian fibres and being Cohen–Macaulay is
 > local on the target for the fppf topology.
@@ -412,7 +412,7 @@ public instance cohenMacaulayWithLocallyNoetherianFibers_isLocalAtTarget_fppf :
       Scheme.fppfPrecoverage
 ```
 
-**`AlgebraicGeometry.cohenMacaulayWithLocallyNoetherianFibers_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean#L256). The attribute's comment: “syntomic local on the source”.
+**`AlgebraicGeometry.cohenMacaulayWithLocallyNoetherianFibers_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/FppfLocalTarget.lean#L256). The attribute's comment: “syntomic local on the source”.
 
 > **Stacks Project, Tag 045V.** Having locally Noetherian fibres and being Cohen–Macaulay is
 > local on the source for the syntomic topology.
@@ -430,4 +430,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.22, Tag 045Q](https://stacks.math.columbia.edu/tag/045Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

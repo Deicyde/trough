@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.IsBlowupAtClosedPoint, AlgebraicGeometry.Space.BlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization_restrictionComponent, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalBlowupFactorization_iff, AlgebraicGeometry.Space.exists_blowupFactorization_isPullbackDefined
+lean: AlgebraicGeometry.Space.IsBlowupAtClosedPoint, AlgebraicGeometry.Space.BlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization_restrictionComponent, AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalBlowupFactorization_iff, AlgebraicGeometry.Space.exists_blowupFactorization_isPullbackDefined_of_isNoetherian
 statement: formalized
 proof: formalized
 ---
 
 # 89.4 Dominating by quadratic transformations
 
-Section 89.4 of the Stacks Project, [Tag 0AHG](https://stacks.math.columbia.edu/tag/0AHG). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.4 of the Stacks Project, [Tag 0AHG](https://stacks.math.columbia.edu/tag/0AHG). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BHE, a definition
 
 [Tag 0BHE](https://stacks.math.columbia.edu/tag/0BHE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsBlowupAtClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L187).
+**`AlgebraicGeometry.Space.IsBlowupAtClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L187).
 
 > **Stacks 0BHE.** A morphism `f : Y ⟶ X` of algebraic spaces **is the blowing up of `X` at
 > the closed point `z`** when there is a blowing up of `X` in the reduced closed subspace
@@ -36,7 +36,7 @@ def IsBlowupAtClosedPoint {X Y : AlgebraicSpaces B S hS} (z : points B S hS X.ob
 
 [Tag 0BHF](https://stacks.math.columbia.edu/tag/0BHF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.BlowupFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L397). The attribute's comment: “the condition asserted on both sides of the equivalence: a factorization of the given morphism as a finite sequence of blowings up at closed points lying over the given set of points. The equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
+**`AlgebraicGeometry.Space.BlowupFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L397). The attribute's comment: “the condition asserted on both sides of the equivalence: a factorization of the given morphism as a finite sequence of blowings up at closed points lying over the given set of points. The equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
 
 > **A factorization of `f : Y ⟶ X` as a sequence of blowings up at closed points lying over
 > the set of points `T ⊆ |X|`**: a tower
@@ -54,7 +54,7 @@ structure BlowupFactorization (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
     {X Y : AlgebraicSpaces B S hS} (T : Set (points B S hS X.obj)) (f : Y ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L491). The attribute's comment: “the condition on the morphism to X: it factors as a finite sequence of blowings up at closed points lying over x₁, …, xₙ”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L491). The attribute's comment: “the condition on the morphism to X: it factors as a finite sequence of blowings up at closed points lying over x₁, …, xₙ”.
 
 > **Stacks 0BHF**, the condition on the morphism to `X`: `f : Y ⟶ X` factors as
 >
@@ -67,7 +67,7 @@ structure BlowupFactorization (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
 abbrev GlobalBlowupFactorization {Y : AlgebraicSpaces B S hS} (f : Y ⟶ D.space)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L503). The attribute's comment: “the condition on the morphism to the i-th étale neighborhood: it factors as a finite sequence of blowings up at closed points lying over uᵢ”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.LocalBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupsAtClosedPoints.lean#L503). The attribute's comment: “the condition on the morphism to the i-th étale neighborhood: it factors as a finite sequence of blowings up at closed points lying over uᵢ”.
 
 > **Stacks 0BHF**, the condition on the morphism to the `i`th étale neighborhood:
 > `gᵢ : Yᵢ ⟶ Uᵢ` factors as
@@ -82,7 +82,7 @@ abbrev LocalBlowupFactorization (i : Fin n) {Y : AlgebraicSpaces B S hS}
     (g : Y ⟶ D.neighborhoodSpace i)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean#L474). The attribute's comment: “the only-if direction: a factorization of f as a sequence of blowings up at closed points lying over x₁, …, xₙ gives, for each i, a factorization of its base change gᵢ as a sequence of blowings up at closed points lying over uᵢ. The if direction is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_of\_isPullback and the equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean#L474). The attribute's comment: “the only-if direction: a factorization of f as a sequence of blowings up at closed points lying over x₁, …, xₙ gives, for each i, a factorization of its base change gᵢ as a sequence of blowings up at closed points lying over uᵢ. The if direction is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_of\_isPullback and the equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
 
 > **Stacks 0BHF, the "only if" direction.**  Let `X, xᵢ, Uᵢ ⟶ X, uᵢ` be as in Stacks 0BH9 and
 > let `f : Y ⟶ X` be a morphism of algebraic spaces with base change `gᵢ : Yᵢ ⟶ Uᵢ` along
@@ -103,7 +103,7 @@ theorem nonempty_localBlowupFactorization {i : Fin n} {Y Y' : AlgebraicSpaces B 
     Nonempty (D.LocalBlowupFactorization i g)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean#L501). The attribute's comment: “the only-if direction at the functor F: a factorization of f as a sequence of blowings up at closed points lying over x₁, …, xₙ gives, for each i, a factorization of gᵢ = F(f)ᵢ as a sequence of blowings up at closed points lying over uᵢ. The if direction at F is nonempty\_globalBlowupFactorization\_restrictionComponent and the equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_localBlowupFactorization_restrictionComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerEtaleRestriction.lean#L501). The attribute's comment: “the only-if direction at the functor F: a factorization of f as a sequence of blowings up at closed points lying over x₁, …, xₙ gives, for each i, a factorization of gᵢ = F(f)ᵢ as a sequence of blowings up at closed points lying over uᵢ. The if direction at F is nonempty\_globalBlowupFactorization\_restrictionComponent and the equivalence itself is AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty\_globalBlowupFactorization\_iff.”.
 
 > **Stacks 0BHF, the "only if" direction, for the functor `F` of Stacks 0BHA.**  Let
 > `X, xᵢ, Uᵢ ⟶ X, uᵢ` be as in Stacks 0BH9 and let `f : Y ⟶ X` be an object of
@@ -128,7 +128,7 @@ theorem nonempty_localBlowupFactorization_restrictionComponent
         D.neighborhoodSpace i))
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalBlowupFactorization_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerGlobalConverse.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerGlobalConverse.lean#L487).
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.nonempty_globalBlowupFactorization_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerGlobalConverse.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTowerGlobalConverse.lean#L487).
 
 > **Stacks 0BHF.**  Let `X, xᵢ, Uᵢ ⟶ X, uᵢ` be as in Stacks 0BH9 and let `f : Y ⟶ X` be an
 > object of the category `C_{X, {x₁, …, xₙ}}` of Stacks 0BHA.  Then `f` factors as a finite
@@ -154,77 +154,7 @@ theorem nonempty_globalBlowupFactorization_iff (M : D.modificationsAwayFromPoint
 
 [Tag 0BHG](https://stacks.math.columbia.edu/tag/0BHG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_blowupFactorization_isPullbackDefined`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPoints.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPoints.lean#L159). The attribute's comment: “the induction producing the sequence of blowings up, granted the existence of the blowing up of an algebraic space at a closed point (0BHE, hence 084A/084B/085Q), the algebraic-space analogue of 0809, and the local splitting of 0AGT”.
-
-> **Stacks 0BHG.** Let `S` be a scheme, let `X` be a Noetherian algebraic space over `S` and
-> let `T ⊆ |X|` be a finite set of closed points `x` such that `X` is regular at `x` and the local
-> ring of `X` at `x` has dimension `2`.  Let `ℐ ⊆ 𝒪_X` be a quasi-coherent sheaf of ideals, given
-> by the closed subspace `Z ⊆ X` it cuts out, such that `𝒪_X/ℐ` is supported on `T`, that is,
-> `|Z| ⊆ T`.  **Then there is a sequence**
->
-> `X_m ⟶ X_{m-1} ⟶ … ⟶ X_1 ⟶ X_0 = X`
->
-> **where `X_{j+1} ⟶ X_j` is the blowing up of `X_j` at a closed point `x_j` lying above a point
-> of `T`, such that `ℐ𝒪_{X_m}` is an invertible ideal sheaf** — that is, such that the inverse
-> image of `Z` along the composite `X_m ⟶ X` is an effective Cartier divisor.
->
-> Along the sequence produced, every effective Cartier divisor on `X` also has a defined
-> pullback; that is the form in which the induction uses its own output and it is recorded in the
-> conclusion.
->
-> Three inputs are granted, since the library has them for schemes only: the existence of the
-> blowing up of an algebraic space at a closed point (Stacks 0BHE, whose construction needs the
-> relative `Proj` of Stacks 084A and 084B), the algebraic-space analogue of Stacks 0809, and the
-> local splitting of Stacks 0AGT with respect to a colength function given as a parameter — the
-> hypothesis which the scheme case, Stacks 0AHH, carries as well.  See the module
-> documentation.
-
-```lean
-theorem exists_blowupFactorization_isPullbackDefined
-    (colength : ∀ Y : AlgebraicSpaces B S hS,
-      ClosedSubspaces B S hS Y.1 → Set (points B S hS Y.1) → ℕ∞)
-    (blowupExists : ∀ (Y : AlgebraicSpaces B S hS) (y : points B S hS Y.1)
-      (hy : IsClosed ({y} : Set (points B S hS Y.1))),
-      ∃ (Y' : AlgebraicSpaces B S hS) (b : Y' ⟶ Y), IsBlowupAtClosedPoint B S hS y hy b)
-    (pullbackOfEffectiveCartier : ∀ (Y Y' : AlgebraicSpaces B S hS) (y : points B S hS Y.1)
-      (hy : IsClosed ({y} : Set (points B S hS Y.1))) (b : Y' ⟶ Y),
-      IsBlowupAtClosedPoint B S hS y hy b →
-      ∀ D : ClosedSubspaces B S hS Y.1, IsEffectiveCartierDivisor B S hS Y D →
-        IsPullbackDefined B S hS b D)
-    (splitting : ∀ (Y : AlgebraicSpaces B S hS) (T : Set (points B S hS Y.1)), T.Finite →
-      (∀ y ∈ T, IsClosed ({y} : Set (points B S hS Y.1))) →
-      (∀ y ∈ T, IsRegularAt B S hS Y.1 y) →
-      (∀ y ∈ T, localRingDimension B S hS y = 2) →
-      ∀ Z : ClosedSubspaces B S hS Y.1, subspacePointSet B S hS Y.1 Z.1 ⊆ T →
-      ∀ y ∈ subspacePointSet B S hS Y.1 Z.1,
-      ∀ (hy : IsClosed ({y} : Set (points B S hS Y.1))) (Y' : AlgebraicSpaces B S hS)
-        (b : Y' ⟶ Y), IsBlowupAtClosedPoint B S hS y hy b →
-        ∃ (E Z' : ClosedSubspaces B S hS Y'.1) (T' : Set (points B S hS Y'.1)),
-          preimageClosedSubspace b Z = sumClosedSubspaces B S hS Y' E Z' ∧
-          IsEffectiveCartierDivisor B S hS Y' E ∧
-          T'.Finite ∧
-          (∀ z ∈ T', IsClosed ({z} : Set (points B S hS Y'.1))) ∧
-          (∀ z ∈ T', IsRegularAt B S hS Y'.1 z) ∧
-          (∀ z ∈ T', localRingDimension B S hS z = 2) ∧
-          (∀ z ∈ T', pointsMap B S hS Y'.1 b.hom z ∈ T) ∧
-          subspacePointSet B S hS Y'.1 Z'.1 ⊆ T' ∧
-          colength Y' Z' T' < colength Y Z T)
-    (hterm : B.Contains (⊤_ Scheme.{u}))
-    (X : AlgebraicSpaces B S hS) (_hX : IsNoetherian B S hS hterm X.1)
-    (T : Set (points B S hS X.1)) (hTfinite : T.Finite)
-    (hTclosed : ∀ x ∈ T, IsClosed ({x} : Set (points B S hS X.1)))
-    (hTregular : ∀ x ∈ T, IsRegularAt B S hS X.1 x)
-    (hTdim : ∀ x ∈ T, localRingDimension B S hS x = 2)
-    (Z : ClosedSubspaces B S hS X.1)
-    (hZsupport : subspacePointSet B S hS X.1 Z.1 ⊆ T) :
-    ∃ (Y : AlgebraicSpaces B S hS) (f : Y ⟶ X),
-      Nonempty (BlowupFactorization B S hS T f) ∧
-        IsPullbackDefined B S hS f Z ∧
-        ∀ D : ClosedSubspaces B S hS X.1, IsEffectiveCartierDivisor B S hS X D →
-          IsPullbackDefined B S hS f D
-```
-
-**`AlgebraicGeometry.Space.exists_blowupFactorization_isPullbackDefined_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPointsUnconditional.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPointsUnconditional.lean#L266).
+**`AlgebraicGeometry.Space.exists_blowupFactorization_isPullbackDefined_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPointsUnconditional.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrincipalizationAtClosedPointsUnconditional.lean#L267). The attribute's comment: “the lemma in full, with the source's hypotheses and conclusion and nothing carried”.
 
 > Let `S` be a scheme, let `X` be a Noetherian algebraic space over `S` and let `T ⊆ |X|` be a
 > finite set of closed points `x` such that `X` is regular at `x` and the local ring of `X` at `x`
@@ -256,7 +186,7 @@ theorem exists_blowupFactorization_isPullbackDefined_of_isNoetherian
 
 [Tag 0BHH](https://stacks.math.columbia.edu/tag/0BHH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_blowupFactorization_factors_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DominationByPointBlowups.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DominationByPointBlowups.lean#L91).
+**`AlgebraicGeometry.Space.exists_blowupFactorization_factors_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DominationByPointBlowups.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DominationByPointBlowups.lean#L91).
 
 > **Dominating a modification by blowing up closed points.** Let `S` be a scheme, let `X` be a
 > Noetherian algebraic space over `S` and let `T ⊆ |X|` be a finite set of closed points `x` such
@@ -290,4 +220,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.4, Tag 0AHG](https://stacks.math.columbia.edu/tag/0AHG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

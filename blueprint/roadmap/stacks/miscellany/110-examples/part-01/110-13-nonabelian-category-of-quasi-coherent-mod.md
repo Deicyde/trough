@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.13 Nonabelian category of quasi-coherent modules
 
-Section 110.13 of the Stacks Project, [Tag 0ALF](https://stacks.math.columbia.edu/tag/0ALF). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.13 of the Stacks Project, [Tag 0ALF](https://stacks.math.columbia.edu/tag/0ALF). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ALG, a lemma
 
 [Tag 0ALG](https://stacks.math.columbia.edu/tag/0ALG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.not_nonempty_abelian_quasicoherentModules_padicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L142). The attribute's comment: “the source's example `Spf(ℤ_p)`, for every prime `p`”.
+**`AlgebraicGeometry.FormalSpace.not_nonempty_abelian_quasicoherentModules_padicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L142). The attribute's comment: “the source's example `Spf(ℤ_p)`, for every prime `p`”.
 
 > **Stacks 0ALG, the source's example.** For a prime `p`, the formal spectrum
 > `X = Spf(ℤ_p)` over `Spec ℤ` is a Noetherian affine formal algebraic space whose category of
@@ -32,7 +32,7 @@ theorem not_nonempty_abelian_quasicoherentModules_padicCompletion (B : BigFppfSi
         (isFiberedInGroupoids_completionFibred B _ hZ _ hZp _)))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_isNoetherian_not_nonempty_abelian_quasicoherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L164).
+**`AlgebraicGeometry.FormalSpace.exists_isNoetherian_not_nonempty_abelian_quasicoherentModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L164).
 
 > **Stacks 0ALG.** The category of quasi-coherent modules on a formal algebraic space is not
 > abelian in general, even for a Noetherian affine formal algebraic space: there is a big fppf
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.13, Tag 0ALF](https://stacks.math.columbia.edu/tag/0ALF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

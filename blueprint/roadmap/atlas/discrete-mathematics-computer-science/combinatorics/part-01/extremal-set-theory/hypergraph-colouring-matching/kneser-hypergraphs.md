@@ -7,7 +7,7 @@ statement: formalized
 
 # Kneser hypergraphs
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html).
 
 ## Erdős's Kneser hypergraph problem
 
@@ -16,7 +16,7 @@ $n, k, r, t$ with $r \ge 1$, $t \ge 1$ and $n \ge kr + (t - 1)(k - 1)$, every co
 $r$-element subsets of $\{0, \dots, n - 1\}$ with $t$ colors has a color class containing $k$
 pairwise disjoint $r$-element subsets.
 
-Formalized by `MathlibExt.Combinatorics.KneserHypergraphColoringErdosProblem780Wanted.kneserHypergraphColoring`, a definition declared in [WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html#kneser-hypergraph-coloring).
+Formalized by `MathlibExt.Combinatorics.KneserHypergraphColoringErdosProblem780Wanted.kneserHypergraphColoring`, a definition declared in [WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html#kneser-hypergraph-coloring).
 
 ## Alon–Frankl–Lovász theorem on Kneser hypergraphs
 
@@ -33,7 +33,7 @@ lists the problem as proved.
 
 - T. F. Bloom, Erdős Problems, Problem #780, https://www.erdosproblems.com/780 (status PROVED); resolution: N. Alon, P. Frankl and L. Lovász, The chromatic number of Kneser hypergraphs, Trans. Amer. Math. Soc. 298 (1986), 359-370, Theorem 1.1: for positive integers n, k, r, t with n ≥ kr + (t - 1)(k - 1), if the r-subsets of an n-element set are partitioned into t families then one family contains k pairwise disjoint r-sets (conjectured by Erdős in 1973; k = 2 is Kneser's conjecture, proved by Lovász), https://web.math.princeton.edu/~nalon/PDFS/Publications/The%20chromatic%20number%20of%20Kneser%20hypergraphs.pdf.
 
-Stated but not proved: `MathlibExt.Combinatorics.KneserHypergraphColoringErdosProblem780Wanted.kneserHypergraphColoring_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html#kneser-hypergraph-coloring-holds).
+Stated but not proved: `MathlibExt.Combinatorics.KneserHypergraphColoringErdosProblem780Wanted.kneserHypergraphColoring_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KneserHypergraphColoringErdosProblem780Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html#kneser-hypergraph-coloring-holds).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kneser hypergraphs](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/kneser-hypergraphs)

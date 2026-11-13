@@ -7,7 +7,7 @@ statement: formalized
 
 # Prime-counting formulas from divisor functions
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html).
 
 ## Exponential approximation of the divisibility indicator
 
@@ -26,7 +26,7 @@ When $k \mid n$ the difference is $0$; otherwise it lies in $(0, e^{-nk}]$.
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.abs_exp_approx_sub_dvd_indicator_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#abs-exp-approx-sub-dvd-indicator-le).
+Stated but not proved: `MetaMathlibExt.abs_exp_approx_sub_dvd_indicator_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#abs-exp-approx-sub-dvd-indicator-le).
 
 ## Exponential approximation of the divisor-counting function
 
@@ -43,7 +43,7 @@ Then $\tilde\tau(n) - \tau(n) = O\left(\frac{1}{e^n - 1}\right)$ as $n \to \inft
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.divisorCountApprox_sub_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-count-approx-sub-is-big-o).
+Stated but not proved: `MetaMathlibExt.divisorCountApprox_sub_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-count-approx-sub-is-big-o).
 
 ## Prime counting from the exact divisor count
 
@@ -58,7 +58,7 @@ most $n$.
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.primeCountingApprox_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#prime-counting-approx-sub-lt).
+Stated but not proved: `MetaMathlibExt.primeCountingApprox_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#prime-counting-approx-sub-lt).
 
 ## Sine lower bound at non-divisors
 
@@ -73,7 +73,7 @@ $A(k, n) \sin^2(n\pi/k) \ge 1$ of the exponential approximation of the divisibil
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.one_le_pi_sq_mul_sq_div_two_mul_sin_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#one-le-pi-sq-mul-sq-div-two-mul-sin-sq).
+Stated but not proved: `MetaMathlibExt.one_le_pi_sq_mul_sq_div_two_mul_sin_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#one-le-pi-sq-mul-sq-div-two-mul-sin-sq).
 
 ## Trigonometric approximation of the divisor-counting function
 
@@ -91,7 +91,7 @@ $A(j, k) = \pi^2 j^2 / 2$.
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.divisorCountApprox_one_sub_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-count-approx-one-sub-is-big-o).
+Stated but not proved: `MetaMathlibExt.divisorCountApprox_one_sub_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-count-approx-one-sub-is-big-o).
 
 ## Prime-counting function from the smooth divisor count
 
@@ -110,7 +110,7 @@ two one-sided bounds, as the two-sided bound requires.
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.primeCountingApprox_abs_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#prime-counting-approx-abs-sub-lt).
+Stated but not proved: `MetaMathlibExt.primeCountingApprox_abs_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#prime-counting-approx-abs-sub-lt).
 
 ## Exponential approximation of the sum-of-divisors function
 
@@ -127,7 +127,7 @@ Then $\tilde\sigma(n) - \sigma(n) < \frac{n}{e^n - 1}$.
 
 - Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.divisorSumApprox_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-sum-approx-sub-lt).
+Stated but not proved: `MetaMathlibExt.divisorSumApprox_sub_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DivisorApproximantPrimeCountingWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html#divisor-sum-approx-sub-lt).
 
 ## Depends on
 
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Prime-counting formulas from divisor functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-number-theorem/prime-counting-formulas-from-divisor-functions)

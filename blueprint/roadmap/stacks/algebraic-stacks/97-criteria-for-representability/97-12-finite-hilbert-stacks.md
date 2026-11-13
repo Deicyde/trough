@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.12 Finite Hilbert stacks
 
-Section 97.12 of the Stacks Project, [Tag 05XM](https://stacks.math.columbia.edu/tag/05XM). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.12 of the Stacks Project, [Tag 05XM](https://stacks.math.columbia.edu/tag/05XM). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05XN, a lemma
 
 [Tag 05XN](https://stacks.math.columbia.edu/tag/05XN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.mapAbsolute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L137). The attribute's comment: “the induced 1-morphism of absolute finite Hilbert stacks”.
+**`AlgebraicGeometry.Stack.mapAbsolute`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L137). The attribute's comment: “the induced 1-morphism of absolute finite Hilbert stacks”.
 
 > The 1-morphism `ℋ_d(𝒳') ⟶ ℋ_d(𝒳)` of absolute degree-`d` finite Hilbert stacks induced by a
 > 1-morphism `G : 𝒳' ⟶ 𝒳` of stacks in groupoids: the canonical 1-morphism of finite Hilbert
@@ -27,7 +27,7 @@ def mapAbsolute :
       absoluteHilbertCategory (B := B) (S := S) (hS := hS) (d := d) (𝒳 := 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.mapAbsolute_comp_forgetAbsoluteStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L146). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳) ⟶ ℋ_d`”.
+**`AlgebraicGeometry.Stack.mapAbsolute_comp_forgetAbsoluteStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L146). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳) ⟶ ℋ_d`”.
 
 > The induced 1-morphism of absolute finite Hilbert stacks leaves the underlying degree-`d`
 > finite locally free cover unchanged.
@@ -39,7 +39,7 @@ theorem mapAbsolute_comp_forgetAbsoluteStructure :
       forgetAbsoluteStructure (B := B) (S := S) (hS := hS) (d := d) (𝒳 := 𝒳')
 ```
 
-**`AlgebraicGeometry.Stack.mapRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L198). The attribute's comment: “the canonical 1-morphism”.
+**`AlgebraicGeometry.Stack.mapRelative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L198). The attribute's comment: “the canonical 1-morphism”.
 
 > The canonical 1-morphism `ℋ_d(𝒳'/𝒴') ⟶ ℋ_d(𝒳/𝒴)` of degree-`d` finite Hilbert stacks
 > attached to a 2-commutative square of stacks in groupoids with horizontal arrows `G` and `H`,
@@ -51,7 +51,7 @@ def mapRelative :
       finiteHilbertCategory (B := B) (S := S) (hS := hS) (𝒳 := 𝒳) (𝒴 := 𝒴) (F := F) (d := d)
 ```
 
-**`AlgebraicGeometry.Stack.mapRelative_obj_α`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L207). The attribute's comment: “action on the identification”.
+**`AlgebraicGeometry.Stack.mapRelative_obj_α`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L207). The attribute's comment: “action on the identification”.
 
 > The canonical 1-morphism sends an object with identification `α` to one whose identification
 > is `α` transported across the given 2-isomorphism.
@@ -62,7 +62,7 @@ theorem mapRelative_obj_α (P : FiniteHilbert.Object B S hS 𝒳' 𝒴' F' d) :
       squareComparison γ P.x ≫ H.map P.α
 ```
 
-**`AlgebraicGeometry.Stack.mapRelative_comp_forgetRelativeStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L215). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ ℋ_d(𝒳)`”.
+**`AlgebraicGeometry.Stack.mapRelative_comp_forgetRelativeStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L215). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ ℋ_d(𝒳)`”.
 
 > The canonical 1-morphism is compatible with the forgetful 1-morphisms to the absolute finite
 > Hilbert stacks: on them it induces the 1-morphism attached to `G`.
@@ -78,7 +78,7 @@ theorem mapRelative_comp_forgetRelativeStructure :
         (mapAbsolute B S hS d 𝒳' 𝒳 G)
 ```
 
-**`AlgebraicGeometry.Stack.mapRelative_comp_forgetTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L228). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ 𝒴`”.
+**`AlgebraicGeometry.Stack.mapRelative_comp_forgetTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L228). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ 𝒴`”.
 
 > The canonical 1-morphism is compatible with the forgetful 1-morphisms to the target stacks: on
 > them it induces `H`.
@@ -91,7 +91,7 @@ theorem mapRelative_comp_forgetTarget :
         (forgetTarget (B := B) (S := S) (hS := hS) (d := d) (𝒳 := 𝒳') (𝒴 := 𝒴') (F := F')) H
 ```
 
-**`AlgebraicGeometry.Stack.mapRelative_comp_forgetRelativeToFiniteCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L238). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ ℋ_d`”.
+**`AlgebraicGeometry.Stack.mapRelative_comp_forgetRelativeToFiniteCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L238). The attribute's comment: “compatibility with the forgetful 1-morphism `ℋ_d(𝒳/𝒴) ⟶ ℋ_d`”.
 
 > The canonical 1-morphism leaves the underlying degree-`d` finite locally free cover
 > unchanged.
@@ -109,7 +109,7 @@ theorem mapRelative_comp_forgetRelativeToFiniteCover :
 
 [Tag 05XP](https://stacks.math.columbia.edu/tag/05XP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalence_hilbertComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L588). The attribute's comment: “the comparison functor is an equivalence”.
+**`AlgebraicGeometry.Stack.isEquivalence_hilbertComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L588). The attribute's comment: “the comparison functor is an equivalence”.
 
 > If the comparison functor of the given square is an equivalence, then so is the comparison
 > functor `ℋ_d(𝒳'/𝒴') ⥤ ℋ_d(𝒳/𝒴) ×_𝒴 𝒴'` of the induced square.
@@ -120,7 +120,7 @@ theorem isEquivalence_hilbertComparison
     (hilbertComparison B S hS d 𝒳' 𝒴' 𝒳 𝒴 F' F G H γ).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_hilbertSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L601).
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_hilbertSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/Functoriality.lean#L601).
 
 > If the given 2-commutative square of stacks in groupoids is 2-cartesian, then so is the
 > induced square of degree-`d` finite Hilbert stacks: the canonical 1-morphism
@@ -137,7 +137,7 @@ noncomputable def isTwoFibreProduct_hilbertSquare
 
 [Tag 05YG](https://stacks.math.columbia.edu/tag/05YG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_and_isEtale_mapRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean#L378). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_and_isEtale_mapRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean#L378). The attribute's comment: “part (1)”.
 
 > Let `G : 𝒳' ⟶ 𝒳` be a 1-morphism of stacks in groupoids over the big fppf site of `S` which
 > is representable by algebraic spaces and étale, and let `γ` present `𝒳' ⟶ 𝒴` as the composite of
@@ -187,7 +187,7 @@ theorem isRepresentableByAlgebraicSpaces_and_isEtale_mapRelative
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨A, hA⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_mapRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean#L470). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_mapRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeEtale.lean#L470). The attribute's comment: “part (2)”.
 
 > If `G : 𝒳' ⟶ 𝒳` is representable by algebraic spaces, étale and surjective, then the
 > canonical 1-morphism `ℋ_d(𝒳'/𝒴) ⟶ ℋ_d(𝒳/𝒴)` is surjective.
@@ -225,7 +225,7 @@ theorem isSurjectiveOnObjects_mapRelative
 
 [Tag 05XS](https://stacks.math.columbia.edu/tag/05XS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRelativelyEtale_mapRelativeFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean#L472). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isRelativelyEtale_mapRelativeFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean#L472). The attribute's comment: “part (1)”.
 
 > **Stacks 05XS, part (1).** Let `G : 𝒳' ⟶ 𝒳` and `H : 𝒴' ⟶ 𝒴` be 1-morphisms of stacks in
 > groupoids over the big fppf site of `S` which are representable by algebraic spaces and étale,
@@ -247,7 +247,7 @@ theorem isRelativelyEtale_mapRelativeFibered
     IsRelativelyEtale B S hS (mapRelativeFibered B S hS d 𝒳 𝒴 F 𝒳' 𝒴' F' G H γ)
 ```
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_mapRelativeFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean#L497). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_mapRelativeFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FiniteHilbertEtale.lean#L497). The attribute's comment: “part (2)”.
 
 > **Stacks 05XS, part (2).** Let `G : 𝒳' ⟶ 𝒳` and `H : 𝒴' ⟶ 𝒴` be 1-morphisms of stacks in
 > groupoids over the big fppf site of `S` which are representable by algebraic spaces and étale,
@@ -283,7 +283,7 @@ theorem isSurjectiveOnObjects_mapRelativeFibered
 
 [Tag 05YH](https://stacks.math.columbia.edu/tag/05YH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpacesForgetToProduct_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/ProductFibreEquivalence.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/ProductFibreEquivalence.lean#L1030).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpacesForgetToProduct_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/ProductFibreEquivalence.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/ProductFibreEquivalence.lean#L1030).
 
 > Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf
 > site of a scheme `S` and let `d` be a natural number. If the diagonal `𝒴 ⟶ 𝒴 × 𝒴` is
@@ -304,7 +304,7 @@ theorem isRepresentableByAlgebraicSpacesForgetToProduct_of_diagonal
 
 [Tag 05YJ](https://stacks.math.columbia.edu/tag/05YJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_mapRelative_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeRepresentable.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeRepresentable.lean#L307).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_mapRelative_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeRepresentable.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbertRelativeRepresentable.lean#L307).
 
 > **Stacks 05YJ.** Let `G : 𝒳' ⟶ 𝒳` be a 1-morphism of stacks in groupoids over the big fppf
 > site of `S` which is representable by algebraic spaces, and let `γ` present `𝒳' ⟶ 𝒴` as the
@@ -331,7 +331,7 @@ theorem isRepresentableByAlgebraicSpaces_mapRelative_of_representable
 
 [Tag 06CH](https://stacks.math.columbia.edu/tag/06CH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_finiteHilbertToTargetCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean#L554). The attribute's comment: “p : ℋ\_d(𝒳/𝒴) ⟶ 𝒴 is limit preserving on objects”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_finiteHilbertToTargetCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean#L554). The attribute's comment: “p : ℋ\_d(𝒳/𝒴) ⟶ 𝒴 is limit preserving on objects”.
 
 > **Stacks 06CH.** Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf
 > site of `S` which is representable by algebraic spaces (Stacks 02ZW) and locally of finite
@@ -380,4 +380,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.12, Tag 05XM](https://stacks.math.columbia.edu/tag/05XM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

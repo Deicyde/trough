@@ -1,6 +1,6 @@
 # Number Theory
 
-7,999 results of ATLAS's vault, 4,376 proved, 3,619 stated but not proved and 4 without a declaration, in this subject's topics.
+7,999 results of ATLAS's vault, 4,396 proved, 3,580 stated but not proved, 19 whose declaration the Lean read here does not declare and 4 without a declaration, in this subject's topics.
 
 Number theory studies integers, primes, Diophantine equations, arithmetic functions, and their analytic and algebraic structure.
 

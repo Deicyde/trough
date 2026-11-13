@@ -8,13 +8,13 @@ proof: formalized
 
 # 5.24 Limits of spectral spaces
 
-Section 5.24 of the Stacks Project, [Tag 0A2U](https://stacks.math.columbia.edu/tag/0A2U). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.24 of the Stacks Project, [Tag 0A2U](https://stacks.math.columbia.edu/tag/0A2U). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A2V, a lemma
 
 [Tag 0A2V](https://stacks.math.columbia.edu/tag/0A2V) in the Stacks Project.
 
-**`SpectralLimits.isCompact_limitSubset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean#L133). The attribute's comment: “part (1)”.
+**`SpectralLimits.isCompact_limitSubset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean#L133). The attribute's comment: “part (1)”.
 
 > **Stacks 0A2V (1).** For a diagram of spectral spaces along spectral maps and subsets
 > `Z j ⊆ F.obj j` closed in the constructible topology, the subset
@@ -27,7 +27,7 @@ theorem isCompact_limitSubset
     IsCompact (limitSubset F Z)
 ```
 
-**`SpectralLimits.compactSpace_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean#L173). The attribute's comment: “part (2)”.
+**`SpectralLimits.compactSpace_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitQuasiCompact.lean#L173). The attribute's comment: “part (2)”.
 
 > **Stacks 0A2V (2).** The limit of a diagram of spectral spaces along spectral maps is
 > quasi-compact. This is part (1) with `Z j = univ`.
@@ -41,7 +41,7 @@ theorem compactSpace_limit (hF : ∀ {j i : J} (a : j ⟶ i), IsSpectralMap (F.m
 
 [Tag 0A2W](https://stacks.math.columbia.edu/tag/0A2W) in the Stacks Project.
 
-**`SpectralLimits.nonempty_limitSet_inter_of_isClosed_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitNonempty.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitNonempty.lean#L135). The attribute's comment: “part (1)”.
+**`SpectralLimits.nonempty_limitSet_inter_of_isClosed_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitNonempty.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitNonempty.lean#L135). The attribute's comment: “part (1)”.
 
 > A compatible cofiltered system of nonempty constructibly closed subsets of a spectral diagram
 > has nonempty limit.
@@ -54,7 +54,7 @@ theorem nonempty_limitSet_inter_of_isClosed_constructible [IsCofiltered I]
     { x : ∀ i, F.obj i | x ∈ limitSet F ∧ ∀ i, x i ∈ Z i }.Nonempty
 ```
 
-**`SpectralLimits.nonempty_limitSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitNonempty.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitNonempty.lean#L168). The attribute's comment: “part (2)”.
+**`SpectralLimits.nonempty_limitSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitNonempty.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitNonempty.lean#L168). The attribute's comment: “part (2)”.
 
 > The cofiltered limit of a diagram of nonempty spectral spaces is nonempty.
 
@@ -67,7 +67,7 @@ theorem nonempty_limitSet [IsCofiltered I] (hX_ne : ∀ i, Nonempty (F.obj i)) :
 
 [Tag 0A2X](https://stacks.math.columbia.edu/tag/0A2X) in the Stacks Project.
 
-**`SpectralLimits.preimage_limit_π_subset_iff_exists_map_preimage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitConstructible.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitConstructible.lean#L250).
+**`SpectralLimits.preimage_limit_π_subset_iff_exists_map_preimage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitConstructible.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitConstructible.lean#L250).
 
 > Let `J` be a small cofiltered category and let `F : J ⥤ TopCat` be a diagram of spectral
 > spaces such that, for every morphism `a : j ⟶ i` in `J`, the underlying map
@@ -94,7 +94,7 @@ theorem preimage_limit_π_subset_iff_exists_map_preimage_subset
 
 [Tag 0A2Y](https://stacks.math.columbia.edu/tag/0A2Y) in the Stacks Project.
 
-**`descend_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L108). References: EGA IV (8.3.11), “partial”.
+**`descend_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L108). References: EGA IV (8.3.11), “partial”.
 
 > For a cofiltered diagram `D` of spectral spaces with spectral transition maps, every
 > constructible subset `E` of the inverse limit `D.invLimit` is the preimage under some projection
@@ -106,7 +106,7 @@ theorem descend_isConstructible
     ∃ (i : J) (E_i : Set (D.F.obj i)), IsConstructible E_i ∧ D.projFun i ⁻¹' E_i = E
 ```
 
-**`descend_isConstructible_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L168). The attribute's comment: “open refinement”. References: EGA IV (8.3.12), “open case”; EGA IV (8.3.11), “partial”.
+**`descend_isConstructible_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L168). The attribute's comment: “open refinement”. References: EGA IV (8.3.12), “open case”; EGA IV (8.3.11), “partial”.
 
 > If the constructible subset of the inverse limit is moreover open, the constructible subset it
 > descends from on the factor can be chosen open.
@@ -118,7 +118,7 @@ theorem descend_isConstructible_isOpen
       IsConstructible E_i ∧ IsOpen E_i ∧ D.projFun i ⁻¹' E_i = E
 ```
 
-**`descend_isConstructible_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L179). The attribute's comment: “closed refinement”. References: EGA IV (8.3.12), “resp. closed case”; EGA IV (8.3.11), “partial”.
+**`descend_isConstructible_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/DescentConstructible.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/DescentConstructible.lean#L179). The attribute's comment: “closed refinement”. References: EGA IV (8.3.12), “resp. closed case”; EGA IV (8.3.11), “partial”.
 
 > If the constructible subset of the inverse limit is moreover closed, the constructible subset
 > it descends from on the factor can be chosen closed.
@@ -134,7 +134,7 @@ theorem descend_isConstructible_isClosed
 
 [Tag 0A2Z](https://stacks.math.columbia.edu/tag/0A2Z) in the Stacks Project.
 
-**`spectralDiagram_invLimit_spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimits.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/InverseLimits.lean#L542). The attribute's comment: “inverse limit is spectral”.
+**`spectralDiagram_invLimit_spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimits.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/InverseLimits.lean#L542). The attribute's comment: “inverse limit is spectral”.
 
 > **Stacks 0A2Z** (inverse limit is spectral).
 > The inverse limit of a cofiltered diagram of spectral spaces with spectral transition maps is
@@ -146,7 +146,7 @@ theorem spectralDiagram_invLimit_spectralSpace
     SpectralSpace D.invLimit
 ```
 
-**`spectralDiagram_proj_isSpectralMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimits.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/InverseLimits.lean#L551). The attribute's comment: “projections are spectral”.
+**`spectralDiagram_proj_isSpectralMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimits.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/InverseLimits.lean#L551). The attribute's comment: “projections are spectral”.
 
 > **Stacks 0A2Z** (projections are spectral).
 > Each projection from the inverse limit of a cofiltered diagram of spectral spaces to a
@@ -162,7 +162,7 @@ theorem spectralDiagram_proj_isSpectralMap
 
 [Tag 0A30](https://stacks.math.columbia.edu/tag/0A30) in the Stacks Project.
 
-**`SpectralLimits.descent_of_quasiCompact_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L179). The attribute's comment: “part (1): descent of quasi-compact opens”.
+**`SpectralLimits.descent_of_quasiCompact_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L179). The attribute's comment: “part (1): descent of quasi-compact opens”.
 
 > For every quasi-compact open `U` of the limit `lim F`, there exist an index `i` and a
 > quasi-compact open `Ui` of `F.obj i` whose preimage under the projection equals `U`.
@@ -176,7 +176,7 @@ theorem descent_of_quasiCompact_opens
       (limit.π F i) ⁻¹' Ui = U
 ```
 
-**`SpectralLimits.descent_of_inclusions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L325). The attribute's comment: “part (2): descent of inclusions”.
+**`SpectralLimits.descent_of_inclusions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L325). The attribute's comment: “part (2): descent of inclusions”.
 
 > If two quasi-compact opens `Ui ⊆ F.obj i` and `Uj ⊆ F.obj j` have nested preimages in the
 > limit, the inclusion already holds after pulling back along a span `a : k ⟶ i`, `b : k ⟶ j`.
@@ -193,7 +193,7 @@ theorem descent_of_inclusions
       (F.map a) ⁻¹' Ui ⊆ (F.map b) ⁻¹' Uj
 ```
 
-**`SpectralLimits.descent_of_finite_unions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L387). The attribute's comment: “part (3): descent of finite unions”.
+**`SpectralLimits.descent_of_finite_unions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L387). The attribute's comment: “part (3): descent of finite unions”.
 
 > If, in the limit, the preimage of a quasi-compact open `Ui` equals the union of the preimages
 > of finitely many quasi-compact opens `U s` (`s : Fin n`), then this equality already holds after
@@ -211,7 +211,7 @@ theorem descent_of_finite_unions
       (F.map a) ⁻¹' Ui = ⋃ s, (F.map a) ⁻¹' (U s)
 ```
 
-**`SpectralLimits.descent_of_finite_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L420). The attribute's comment: “part (4): descent of finite intersections”.
+**`SpectralLimits.descent_of_finite_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitOpenDescent.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitOpenDescent.lean#L420). The attribute's comment: “part (4): descent of finite intersections”.
 
 > If, in the limit, the preimage of a quasi-compact open `Ui` equals the intersection of the
 > preimages of finitely many quasi-compact opens `U s` (`s : Fin n`), then this equality already
@@ -233,7 +233,7 @@ theorem descent_of_finite_intersections
 
 [Tag 0A31](https://stacks.math.columbia.edu/tag/0A31) in the Stacks Project.
 
-**`SpectralSubset.characterizations_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L282). The attribute's comment: “equivalence of the five characterizations”.
+**`SpectralSubset.characterizations_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L282). The attribute's comment: “equivalence of the five characterizations”.
 
 > **Stacks 0A31, the equivalence.** For a subset `W` of a spectral space the five conditions
 > (1) intersection of constructibles and stable under generalization, (2) quasi-compact and stable
@@ -248,7 +248,7 @@ theorem characterizations_equiv [SpectralSpace X] (W : Set X) :
           (IsInterCompactOpen W ↔ IsDirectedInterCompactOpen W)
 ```
 
-**`SpectralSubset.spectralSpace_of_isStableCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L301). The attribute's comment: “conclusion (a): W is spectral”.
+**`SpectralSubset.spectralSpace_of_isStableCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L301). The attribute's comment: “conclusion (a): W is spectral”.
 
 > Conclusion (a): under the equivalent conditions, `W` (with the
 > subspace topology) is itself a spectral space.
@@ -258,7 +258,7 @@ theorem spectralSpace_of_isStableCompact [SpectralSpace X] (W : Set X) (h : IsSt
     SpectralSpace W
 ```
 
-**`SpectralSubset.exists_homeomorph_invLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L358). The attribute's comment: “conclusion (b): W ≅ lim U\_i”.
+**`SpectralSubset.exists_homeomorph_invLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L358). The attribute's comment: “conclusion (b): W ≅ lim U\_i”.
 
 > Conclusion (b): the canonical map `W → InvLimit U` is a homeomorphism.
 
@@ -271,7 +271,7 @@ theorem exists_homeomorph_invLimit
       ∀ w : W, ∀ i, ((φ w).1 i : X) = (w : X)
 ```
 
-**`SpectralSubset.exists_subset_of_subset_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L396). The attribute's comment: “conclusion (c): some U\_i ⊆ V”.
+**`SpectralSubset.exists_subset_of_subset_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L396). The attribute's comment: “conclusion (c): some U\_i ⊆ V”.
 
 > Conclusion (c): with the family `U_i` from condition (5), every open
 > subset `V` of `X` containing `W` contains some `U_i`.
@@ -290,7 +290,7 @@ theorem exists_subset_of_subset_isOpen [SpectralSpace X]
 
 [Tag 0AP0](https://stacks.math.columbia.edu/tag/0AP0) in the Stacks Project.
 
-**`isLimit_diffLimitCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitGeneralizations.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitGeneralizations.lean#L350).
+**`isLimit_diffLimitCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitGeneralizations.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitGeneralizations.lean#L350).
 
 > **Stacks 0AP0**.
 > For a spectral space `X`, a monotone family `U` indexed by a nonempty codirected order and
@@ -306,7 +306,7 @@ theorem isLimit_diffLimitCone [SpectralSpace X] [Nonempty I] [IsCodirectedOrder 
     Nonempty (IsLimit (diffLimitCone U E hmono (fun i => hWeq ▸ Set.iInter_subset U i)))
 ```
 
-**`isSpectral_specGen_diff_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitGeneralizations.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/LimitGeneralizations.lean#L364).
+**`isSpectral_specGen_diff_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/LimitGeneralizations.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/LimitGeneralizations.lean#L364).
 
 > **Stacks 0AP0**.
 > If `X` is a spectral space and `E ⊆ X` is a constructible subset, then the set
@@ -325,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.24, Tag 0A2U](https://stacks.math.columbia.edu/tag/0A2U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

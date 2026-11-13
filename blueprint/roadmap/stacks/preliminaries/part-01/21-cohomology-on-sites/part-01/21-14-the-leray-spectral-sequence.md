@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.14 The Leray spectral sequence
 
-Section 21.14 of the Stacks Project, [Tag 072X](https://stacks.math.columbia.edu/tag/072X). 7 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.14 of the Stacks Project, [Tag 072X](https://stacks.math.columbia.edu/tag/072X). 7 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 072Z, a lemma
 
 [Tag 072Z](https://stacks.math.columbia.edu/tag/072Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.acyclicPushforwardOfInjective_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineBasePushforwardInjectiveAcyclic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineBasePushforwardInjectiveAcyclic.lean#L120). The attribute's comment: “at the small étale seating of algebraic spaces, in the shape 0731(3) puts it in: acyclicity of the direct image of an injective for global sections over an affine base”.
+**`AlgebraicGeometry.Space.acyclicPushforwardOfInjective_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineBasePushforwardInjectiveAcyclic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineBasePushforwardInjectiveAcyclic.lean#L120). The attribute's comment: “at the small étale seating of algebraic spaces, in the shape 0731(3) puts it in: acyclicity of the direct image of an injective for global sections over an affine base”.
 
 > If `Y` is an affine algebraic space, the direct image along `f : X ⟶ Y` of an injective
 > `𝒪_X`-module is acyclic for global sections of `𝒪_Y`-modules, that is,
@@ -25,7 +25,7 @@ theorem acyclicPushforwardOfInjective_of_isAffineSpace (f : X ⟶ Y)
     (hY : IsAffineSpace B S hS Y.1) : AcyclicPushforwardOfInjective B S hS f
 ```
 
-**`Stacks.Cohomology.isTotallyAcyclic_pushforwardModules_of_injective_largeSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardLargeSource.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardLargeSource.lean#L273). The attribute's comment: “the source ringed topos's object, morphism and section universes unrelated”.
+**`Stacks.Cohomology.isTotallyAcyclic_pushforwardModules_of_injective_largeSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardLargeSource.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardLargeSource.lean#L273). The attribute's comment: “the source ringed topos's object, morphism and section universes unrelated”.
 
 > **Stacks 072Z with the source ringed topos's universes unconstrained.**  The sheaf of
 > abelian groups underlying the direct image of an injective sheaf of modules along a morphism of
@@ -44,7 +44,7 @@ theorem isTotallyAcyclic_pushforwardModules_of_injective_largeSource :
         ((pushforwardModules f).obj I))
 ```
 
-**`Stacks.Cohomology.isTotallyAcyclic_pushforwardModules_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardOfAnInjective.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardOfAnInjective.lean#L268).
+**`Stacks.Cohomology.isTotallyAcyclic_pushforwardModules_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardOfAnInjective.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/PushforwardOfAnInjective.lean#L268).
 
 > **Stacks 072Z.** The sheaf of abelian groups underlying the direct image of an injective
 > sheaf of modules along a morphism of ringed topoi is totally acyclic: its cohomology over every
@@ -60,7 +60,7 @@ theorem isTotallyAcyclic_pushforwardModules_of_injective :
 
 [Tag 0730](https://stacks.math.columbia.edu/tag/0730) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.preservesInjectiveObjects_modulePushforward_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyCollapse.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyCollapse.lean#L53). The attribute's comment: “for a flat morphism of algebraic spaces, on the small étale ringed topoi”. References: SGA 4 V (4.9), “clause 3”.
+**`AlgebraicGeometry.Space.preservesInjectiveObjects_modulePushforward_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyCollapse.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyCollapse.lean#L53). The attribute's comment: “for a flat morphism of algebraic spaces, on the small étale ringed topoi”. References: SGA 4 V (4.9), “clause 3”.
 
 > The direct image along a flat morphism `f : X ⟶ Y` of algebraic spaces carries injective
 > `𝒪_X`-modules to injective `𝒪_Y`-modules.
@@ -71,7 +71,7 @@ theorem preservesInjectiveObjects_modulePushforward_of_isFlat (f : X ⟶ Y)
     (modulePushforward B S hS f).PreservesInjectiveObjects
 ```
 
-**`AlgebraicGeometry.RingedToposHom.pushforwardModules_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/PushforwardInjective.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/PushforwardInjective.lean#L72). References: SGA 4 V (4.9), “clause 3”.
+**`AlgebraicGeometry.RingedToposHom.pushforwardModules_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/PushforwardInjective.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/PushforwardInjective.lean#L72). References: SGA 4 V (4.9), “clause 3”.
 
 > **Stacks 0730.** The direct image of a sheaf of modules along a *flat* morphism of ringed
 > topoi is injective whenever the sheaf is.
@@ -90,7 +90,7 @@ theorem pushforwardModules_injective {X : RingedTopos.{v, u, w}} {Y : RingedTopo
 
 [Tag 0731](https://stacks.math.columbia.edu/tag/0731) in the Stacks Project.
 
-**`Stacks.Cohomology.rightAcyclic_pushforwardModules_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicDirectImage.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicDirectImage.lean#L259). The attribute's comment: “part (4): direct images”. References: SGA 4 V (5.2), “totally acyclic modules”.
+**`Stacks.Cohomology.rightAcyclic_pushforwardModules_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicDirectImage.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicDirectImage.lean#L260). The attribute's comment: “part (4): direct images”. References: SGA 4 V (5.2), “totally acyclic modules”.
 
 > **Stacks 0731, part (4).** A sheaf of modules whose underlying abelian sheaf is totally
 > acyclic is right acyclic for the direct image along a morphism of ringed topoi.
@@ -105,7 +105,7 @@ theorem rightAcyclic_pushforwardModules_of_isTotallyAcyclic
     (pushforwardModules f).rightAcyclic N
 ```
 
-**`Stacks.Cohomology.isTotallyAcyclic_rightAcyclic_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSections.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSections.lean#L340). The attribute's comment: “part (3): the functor of global sections”. References: SGA 4 V (4.6), “flasque ⇒ Γ-acyclic”.
+**`Stacks.Cohomology.isTotallyAcyclic_rightAcyclic_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSections.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSections.lean#L340). The attribute's comment: “part (3): the functor of global sections”. References: SGA 4 V (4.6), “flasque ⇒ Γ-acyclic”.
 
 > **Stacks 0731, part (3).** A sheaf of modules whose underlying abelian sheaf is totally
 > acyclic is right acyclic for the functor of global sections.
@@ -118,7 +118,7 @@ theorem isTotallyAcyclic_rightAcyclic_globalSections
     (SiteModules.globalSectionsFunctor R).rightAcyclic M
 ```
 
-**`Stacks.Cohomology.GlobalSectionsLargeSite.isZero_rightDerived_globalSectionsFunctor_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSectionsLargeSite.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSectionsLargeSite.lean#L181). The attribute's comment: “part (3): the functor of global sections, on a site whose objects need not be small”.
+**`Stacks.Cohomology.GlobalSectionsLargeSite.isZero_rightDerived_globalSectionsFunctor_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSectionsLargeSite.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicGlobalSectionsLargeSite.lean#L181). The attribute's comment: “part (3): the functor of global sections, on a site whose objects need not be small”.
 
 > **Stacks 0731, part (3), on a site whose objects need not be small.** A sheaf of modules
 > whose underlying abelian sheaf is totally acyclic has vanishing higher right derived global
@@ -138,7 +138,7 @@ theorem isZero_rightDerived_globalSectionsFunctor_of_isTotallyAcyclic
     IsZero (((globalSectionsFunctor.{u', u, u, u} R).rightDerived n).obj M)
 ```
 
-**`Stacks.Cohomology.rightAcyclic_evaluation_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean#L242). The attribute's comment: “part (1): the functor H^0(U, -) of sections over an object of the site”.
+**`Stacks.Cohomology.rightAcyclic_evaluation_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean#L242). The attribute's comment: “part (1): the functor H^0(U, -) of sections over an object of the site”.
 
 > **Stacks 0731, part (1).** A sheaf of modules whose underlying abelian sheaf is totally
 > acyclic is right acyclic for the functor `H^0(U, -)` of sections over an object of the site.
@@ -151,7 +151,7 @@ theorem rightAcyclic_evaluation_of_isTotallyAcyclic (X : Cᵒᵖ)
     (SheafOfModules.evaluation R X).rightAcyclic N
 ```
 
-**`Stacks.Cohomology.rightAcyclic_sectionsOverPresheaf_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean#L277). The attribute's comment: “part (2): the functor F ↦ F(K) of sections against a presheaf of sets”.
+**`Stacks.Cohomology.rightAcyclic_sectionsOverPresheaf_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSections.lean#L277). The attribute's comment: “part (2): the functor F ↦ F(K) of sections against a presheaf of sets”.
 
 > **Stacks 0731, part (2).** A sheaf of modules whose underlying abelian sheaf is totally
 > acyclic is right acyclic for the functor `F ↦ F(K)` of sections against a presheaf of sets.
@@ -164,7 +164,7 @@ theorem rightAcyclic_sectionsOverPresheaf_of_isTotallyAcyclic (K : Cᵒᵖ ⥤ T
     (sectionsOverPresheaf J R K).rightAcyclic N
 ```
 
-**`Stacks.Cohomology.rightAcyclic_pushforwardModules_of_isTotallyAcyclic_largeSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean#L292). The attribute's comment: “part (4): direct images, with the two ringed topoi's object, morphism and section universes unrelated”.
+**`Stacks.Cohomology.rightAcyclic_pushforwardModules_of_isTotallyAcyclic_largeSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean#L292). The attribute's comment: “part (4): direct images, with the two ringed topoi's object, morphism and section universes unrelated”.
 
 > **Stacks 0731, part (4), with both ringed topoi's universes unconstrained.**  A sheaf of
 > modules whose underlying abelian sheaf is totally acyclic is right acyclic for the direct image
@@ -185,7 +185,7 @@ theorem rightAcyclic_pushforwardModules_of_isTotallyAcyclic_largeSite
     (pushforwardModules f).rightAcyclic N
 ```
 
-**`Stacks.Cohomology.isZero_rightDerivedΓ_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean#L166). The attribute's comment: “part (3) for an abelian sheaf, in the derived-functor spelling: a totally acyclic abelian sheaf has vanishing (Sheaf.Gamma J Ab).rightDerived p for p > 0. The tag's part (3) for a sheaf of MODULES, stated as right acyclicity of SiteModules.globalSectionsFunctor, is isTotallyAcyclic\_rightAcyclic\_globalSections; this is not that statement specialised, the abelian sheaf not being a module over the constant sheaf of rings. Parts (1), (2) and (4) are not here.”.
+**`Stacks.Cohomology.isZero_rightDerivedΓ_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean#L167). The attribute's comment: “part (3) for an abelian sheaf, in the derived-functor spelling: a totally acyclic abelian sheaf has vanishing (Sheaf.Gamma J Ab).rightDerived p for p > 0. The tag's part (3) for a sheaf of MODULES, stated as right acyclicity of SiteModules.globalSectionsFunctor, is isTotallyAcyclic\_rightAcyclic\_globalSections; this is not that statement specialised, the abelian sheaf not being a module over the constant sheaf of rings. Parts (1), (2) and (4) are not here.”.
 
 > **Part (3) of [Stacks, Tag 0731] for an abelian sheaf.** A totally acyclic abelian sheaf on a
 > small site — one whose cohomology over every sheaf of sets vanishes in positive degrees,
@@ -214,7 +214,7 @@ theorem isZero_rightDerivedΓ_of_isTotallyAcyclic {C : Type u} [SmallCategory C]
 
 [Tag 08J6](https://stacks.math.columbia.edu/tag/08J6) in the Stacks Project.
 
-**`Stacks.Cohomology.Leray.derivedGlobalSectionsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L242). The attribute's comment: “the identification RΓ(D, Rf\_*F) = RΓ(C, F), read in abelian groups”.
+**`Stacks.Cohomology.Leray.derivedGlobalSectionsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L242). The attribute's comment: “the identification RΓ(D, Rf\_*F) = RΓ(C, F), read in abelian groups”.
 
 > **Stacks 08J6**, read in abelian groups: `RΓ(C, F) = RΓ(D, Rf_*F)`.
 >
@@ -237,7 +237,7 @@ def derivedGlobalSectionsPushforwardIso :
 
 [Tag 0732](https://stacks.math.columbia.edu/tag/0732) in the Stacks Project.
 
-**`Stacks.Cohomology.Leray.exists_leraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L273). The attribute's comment: “read in abelian groups”. References: EGA 0 (12.2.4), “special case”; SGA 4 V (5.3), “more general”; SGA 4 VII (1.5), “more general”; SGA 4½ Arcata (2.3.3), “more general”.
+**`Stacks.Cohomology.Leray.exists_leraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L273). The attribute's comment: “read in abelian groups”. References: EGA 0 (12.2.4), “special case”; SGA 4 V (5.3), “more general”; SGA 4 VII (1.5), “more general”; SGA 4½ Arcata (2.3.3), “more general”.
 
 > **Stacks 0732, the Leray spectral sequence**, read in abelian groups. Let
 > `f : (Sh(C), O_C) → (Sh(D), O_D)` be a morphism of ringed topoi and `F^•` a bounded below
@@ -274,7 +274,7 @@ theorem exists_leraySpectralSequence
 
 [Tag 0733](https://stacks.math.columbia.edu/tag/0733) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cohomologyPushforwardIsoOfIsFlatOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyPullback.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyPullback.lean#L121). The attribute's comment: “part (1), for a flat affine morphism of algebraic spaces on the small étale ringed sites, as a chosen isomorphism and with nothing carried”.
+**`AlgebraicGeometry.Space.cohomologyPushforwardIsoOfIsFlatOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyPullback.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyPullback.lean#L121). The attribute's comment: “part (1), for a flat affine morphism of algebraic spaces on the small étale ringed sites, as a chosen isomorphism and with nothing carried”.
 
 > For a flat affine `f : X ⟶ Y` and a quasi-coherent `𝒪_X`-module `𝓕`, `H^i(X, 𝓕) ≅ H^i(Y, f_*𝓕)`
 > in every degree, as `Γ(Y, 𝒪_Y)`-modules, the scalars of the left-hand side being restricted along
@@ -294,7 +294,7 @@ def cohomologyPushforwardIsoOfIsFlatOfIsAffineHom (f : X ⟶ Y) (haff : IsAffine
         ((modulePushforward B S hS f).obj F))
 ```
 
-**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L249). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
+**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L249). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
 
 > **Stacks 0733, part (1).** Let `f : (Sh(C), O_C) → (Sh(D), O_D)` be a morphism of ringed
 > topoi and `F` an `O_C`-module. If `R^q f_* F = 0` for `q > 0`, then
@@ -313,7 +313,7 @@ theorem nonempty_cohomologyIso_pushforward
         ((pushforwardModules f).obj F))
 ```
 
-**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_globalSections_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L273). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_globalSections_higherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L273). The attribute's comment: “part (2)”.
 
 > **Stacks 0733, part (2).** Let `f : (Sh(C), O_C) → (Sh(D), O_D)` be a morphism of ringed
 > topoi and `F` an `O_C`-module. If `H^p(D, R^q f_* F) = 0` for all `q` and all `p > 0`, then
@@ -341,7 +341,7 @@ theorem nonempty_cohomologyIso_globalSections_higherDirectImage
 
 [Tag 0734](https://stacks.math.columbia.edu/tag/0734) in the Stacks Project.
 
-**`Stacks.Cohomology.Leray.relativeLeraySpectralSequenceComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L313). The attribute's comment: “the spectral sequence for a module, functorial in the module, with its second page R^p g\_*(R^q f\_* F) and its functorial filtered abutment on R^\{p+q}(g ∘ f)\_* F”. References: SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Th finitude (1.3), “more general”.
+**`Stacks.Cohomology.Leray.relativeLeraySpectralSequenceComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L313). The attribute's comment: “the spectral sequence for a module, functorial in the module, with its second page R^p g\_*(R^q f\_* F) and its functorial filtered abutment on R^\{p+q}(g ∘ f)\_* F”. References: SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Th finitude (1.3), “more general”.
 
 > **[Stacks, Tag 0734] for a module.** Let `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and
 > `g : (Sh(D), O_D) ⟶ (Sh(E), O_E)` be morphisms of ringed topoi and let `F` be an
@@ -363,7 +363,7 @@ def relativeLeraySpectralSequenceComp :
       (g.comp f).toRingedToposModulesHom
 ```
 
-**`Stacks.Cohomology.Leray.relativeLeraySpectralSequencePlusComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L331). The attribute's comment: “the version for bounded below complexes of modules, functorial in the complex, with its second page R^p g\_*(H^q(Rf\_* K)) and its functorial filtered abutment on H^\{p+q}(R(g ∘ f)\_* K)”. References: EGA 0 (12.2.4); SGA 4 V (5.4).
+**`Stacks.Cohomology.Leray.relativeLeraySpectralSequencePlusComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L331). The attribute's comment: “the version for bounded below complexes of modules, functorial in the complex, with its second page R^p g\_*(H^q(Rf\_* K)) and its functorial filtered abutment on H^\{p+q}(R(g ∘ f)\_* K)”. References: EGA 0 (12.2.4); SGA 4 V (5.4).
 
 > **[Stacks, Tag 0734] for a bounded below complex**, the "version for bounded below
 > complexes of `O_C`-modules" the source asserts alongside the module case. For `f` and `g` as
@@ -381,7 +381,7 @@ def relativeLeraySpectralSequencePlusComp :
       g.toRingedToposModulesHom (g.comp f).toRingedToposModulesHom
 ```
 
-**`Stacks.Cohomology.Leray.exists_relativeLeraySpectralSequence_largeSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean#L424). The attribute's comment: “the spectral sequence, its second page and its convergence, for a bounded below complex, with the three ringed topoi's object, morphism and section universes unrelated; the functoriality in F is not covered”. References: EGA 0 (12.2.4); SGA 4 V (5.4); SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.4), “more general”.
+**`Stacks.Cohomology.Leray.exists_relativeLeraySpectralSequence_largeSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceLargeSite.lean#L424). The attribute's comment: “the spectral sequence, its second page and its convergence, for a bounded below complex, with the three ringed topoi's object, morphism and section universes unrelated; the functoriality in F is not covered”. References: EGA 0 (12.2.4); SGA 4 V (5.4); SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.4), “more general”.
 
 > **Stacks 0734, the relative Leray spectral sequence, with the three ringed topoi's object,
 > morphism and section universes unrelated.**  Let `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and
@@ -431,4 +431,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.14, Tag 072X](https://stacks.math.columbia.edu/tag/072X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

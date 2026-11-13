@@ -8,7 +8,7 @@ proof: formalized
 
 # Binomial identities for harmonic numbers
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html).
 
 ## Alternating binomial transform of the harmonic numbers
 
@@ -31,7 +31,7 @@ $s \in \mathbb{C} \setminus \mathbb{Z}^-$.
 
 - Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Corollary 3, lines 220–226, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex
 
-Formalized by `MetaMathlibExt.alternating_binomial_transform_harmonic_numbers`, a theorem declared in [MathlibExt/NumberTheory/AlternatingBinomialTransformHarmonic.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlternatingBinomialTransformHarmonic.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#alternating-binomial-transform-harmonic).
+Formalized by `MetaMathlibExt.alternating_binomial_transform_harmonic_numbers`, a theorem declared in [MathlibExt/NumberTheory/AlternatingBinomialTransformHarmonic.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlternatingBinomialTransformHarmonic.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#alternating-binomial-transform-harmonic).
 
 ## Binomial-harmonic convolution identity
 
@@ -45,7 +45,7 @@ $$\sum_{\nu=1}^{n} \left(\binom{n+k-\nu-1}{n-1} - \binom{n+k-\nu-1}{k-1}\right) 
 
 - Horst Alzer and Man Kam Kwong, "Ramanujan and a Combinatorial Identity Involving Harmonic Numbers," Journal of Integer Sequences 29 (2026), Article 26.4.8, Theorem 1, equation (1.1), lines 135–141, https://cs.uwaterloo.ca/journals/JIS/VOL29/Alzer/alzer22.tex
 
-Formalized by `MetaMathlibExt.binomial_harmonic_convolution`, a theorem declared in [MathlibExt/NumberTheory/BinomialHarmonicConvolution.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BinomialHarmonicConvolution.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-harmonic-convolution).
+Formalized by `MetaMathlibExt.binomial_harmonic_convolution`, a theorem declared in [MathlibExt/NumberTheory/BinomialHarmonicConvolution.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BinomialHarmonicConvolution.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-harmonic-convolution).
 
 ## Binomial interchange identity with harmonic weights
 
@@ -62,7 +62,7 @@ generalizes the source's real or complex sequences to any field of characteristi
 
 - Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Lemma A, lines 150–156, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir/batir7.tex
 
-Formalized by `MetaMathlibExt.binomial_harmonic_interchange_identity`, a theorem declared in [MathlibExt/NumberTheory/BinomialHarmonicInterchangeIdentity.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BinomialHarmonicInterchangeIdentity.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-harmonic-interchange-identity).
+Formalized by `MetaMathlibExt.binomial_harmonic_interchange_identity`, a theorem declared in [MathlibExt/NumberTheory/BinomialHarmonicInterchangeIdentity.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BinomialHarmonicInterchangeIdentity.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-harmonic-interchange-identity).
 
 ## Alternating binomial transform of second-order harmonic numbers
 
@@ -81,7 +81,7 @@ s \sum_{k=1}^{n} \frac{(-1)^k \binom{s+k-1}{k-1}}{k^2 \binom{n}{k}}\Bigr).$$
 
 - Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Proposition 6, equation (2.8), lines 260–267, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex
 
-Formalized by `MetaMathlibExt.binomial_transform_second_order_harmonic_numbers`, a theorem declared in [MathlibExt/NumberTheory/BinomialTransformSecondOrderHarmonic.lean, line 934](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BinomialTransformSecondOrderHarmonic.lean#L934). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-transform-second-order-harmonic).
+Formalized by `MetaMathlibExt.binomial_transform_second_order_harmonic_numbers`, a theorem declared in [MathlibExt/NumberTheory/BinomialTransformSecondOrderHarmonic.lean, line 934](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BinomialTransformSecondOrderHarmonic.lean#L934). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-transform-second-order-harmonic).
 
 ## Alternating binomial transform of the squared harmonic numbers
 
@@ -101,7 +101,7 @@ $$
 
 - Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Theorem 7, equation (2.12), lines 287–293, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex
 
-Formalized by `MetaMathlibExt.binomial_transform_sq_harmonic`, a theorem declared in [MathlibExt/NumberTheory/BinomialTransformSquaredHarmonic.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BinomialTransformSquaredHarmonic.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-transform-sq-harmonic).
+Formalized by `MetaMathlibExt.binomial_transform_sq_harmonic`, a theorem declared in [MathlibExt/NumberTheory/BinomialTransformSquaredHarmonic.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BinomialTransformSquaredHarmonic.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html#binomial-transform-sq-harmonic).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial identities for harmonic numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/binomial-identities-for-harmonic-numbers)

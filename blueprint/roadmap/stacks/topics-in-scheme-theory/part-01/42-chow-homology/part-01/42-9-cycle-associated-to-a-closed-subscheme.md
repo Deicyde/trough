@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.9 Cycle associated to a closed subscheme
 
-Section 42.9 of the Stacks Project, [Tag 02QS](https://stacks.math.columbia.edu/tag/02QS). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.9 of the Stacks Project, [Tag 02QS](https://stacks.math.columbia.edu/tag/02QS). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02QT, a lemma
 
 [Tag 02QT](https://stacks.math.columbia.edu/tag/02QT) in the Stacks Project.
 
-**`Stacks.Chow.isGenericPoint_component_of_relativeDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean#L118). The attribute's comment: “maximal\_delta\_component”.
+**`Stacks.Chow.isGenericPoint_component_of_relativeDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean#L118). The attribute's comment: “maximal\_delta\_component”.
 
 > A point of a closed subscheme `i : Z ⟶ X` attaining an upper bound for the delta-dimension
 > of `Z` is the generic point of an irreducible component of `Z`.
@@ -27,7 +27,7 @@ theorem isGenericPoint_component_of_relativeDimension_eq (C : ChowSituation.{u})
     ∃ W : irreducibleComponents Z, IsGenericPoint ξ (W : Set Z)
 ```
 
-**`AlgebraicGeometry.isFiniteLength_stalk_of_isGenericPoint_component`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean#L48). The attribute's comment: “finite\_multiplicity”.
+**`AlgebraicGeometry.isFiniteLength_stalk_of_isGenericPoint_component`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean#L48). The attribute's comment: “finite\_multiplicity”.
 
 > **Stacks Project, Tag 02QT.** At the generic point of an irreducible component of a closed
 > subscheme, its local ring has finite length over the ambient local ring.
@@ -48,7 +48,7 @@ lemma isFiniteLength_stalk_of_isGenericPoint_component
 
 [Tag 02QU](https://stacks.math.columbia.edu/tag/02QU) in the Stacks Project.
 
-**`Stacks.Chow.componentMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L77). The attribute's comment: “part (1): multiplicity”.
+**`Stacks.Chow.componentMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L77). The attribute's comment: “part (1): multiplicity”.
 
 > **Stacks 02QU.** The multiplicity of an irreducible component of a closed subscheme,
 > computed at its generic point as the length of the stalk of the subscheme over the stalk of the
@@ -59,7 +59,7 @@ def componentMultiplicity {X Z : Scheme.{u}} (i : Z ⟶ X) [IsClosedImmersion i]
     (ξ : genericPoints Z) : ℤ
 ```
 
-**`Stacks.Chow.cycleAssociatedToClosedSubscheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L137). The attribute's comment: “part (2): associated cycle”.
+**`Stacks.Chow.cycleAssociatedToClosedSubscheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L137). The attribute's comment: “part (2): associated cycle”.
 
 > **Stacks 02QU.** The `k`-cycle `[Z]_k` associated to a closed subscheme `i : Z ⟶ X`: the
 > coefficient of each irreducible component of delta-dimension `k` is its multiplicity.
@@ -69,7 +69,7 @@ def cycleAssociatedToClosedSubscheme (C : ChowSituation.{u}) {X Z : Scheme.{u}} 
     [LocallyOfFiniteType f] (i : Z ⟶ X) [IsClosedImmersion i] (k : ℤ) : CycleGroup C f k
 ```
 
-**`Stacks.Chow.cycleAssociatedToClosedSubscheme_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L144). The attribute's comment: “coefficient formula”.
+**`Stacks.Chow.cycleAssociatedToClosedSubscheme_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L144). The attribute's comment: “coefficient formula”.
 
 > **Stacks 02QU.** At the image of the generic point of a component of delta-dimension `k`,
 > the associated cycle has that component's multiplicity as coefficient.
@@ -82,7 +82,7 @@ theorem cycleAssociatedToClosedSubscheme_apply (C : ChowSituation.{u}) {X Z : Sc
     (cycleAssociatedToClosedSubscheme C f i k).1 (i ξ.1) = componentMultiplicity i ξ
 ```
 
-**`Stacks.Chow.cycleAssociatedToClosedSubscheme_apply_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L161). The attribute's comment: “zero coefficients”.
+**`Stacks.Chow.cycleAssociatedToClosedSubscheme_apply_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L161). The attribute's comment: “zero coefficients”.
 
 > **Stacks 02QU.** A point that is not the image of the generic point of a component of
 > delta-dimension `k` has coefficient zero in the associated cycle.
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.9, Tag 02QS](https://stacks.math.columbia.edu/tag/02QS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Central limit theorems and Poisson approximation: its own results
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html).
 
 Convergence in law of normalized sums and their error terms: central limit theorems (Lindeberg–Feller, lacunary and infinite-variance variants), Berry–Esseen bounds and constants, global and local de Moivre–Laplace theorems, Edgeworth expansions, Donsker's invariance principle, and Poisson limit theorems for binomial and urn models.
 
@@ -29,7 +29,7 @@ bounded variances the strong law of large numbers still holds.
 
 - S. Ulam, Problem 17 of the Scottish Book. The proof is Kolmogorov's strong law of large numbers for independent bounded variables (1933).
 
-Stated but not proved: `MathlibExt.Probability.ScottishBook17Wanted.urnConversePoisson` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook17Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/ScottishBook17Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#urn-converse-poisson).
+Stated but not proved: `MathlibExt.Probability.ScottishBook17Wanted.urnConversePoisson` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook17Wanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/ScottishBook17Wanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#urn-converse-poisson).
 
 ## Kac's Scottish Book Problem 126
 
@@ -43,7 +43,7 @@ through the natural numbers.
 
 - M. Kac, Problem 126 of the Scottish Book; solved affirmatively by A. Khintchine, fourth communique on dependent functions, Studia Mathematicae 6 or 7, as cited in the typescript addendum Ad 126. The typescript parenthetical states the finite-variance case as `e ^ (-1 / 2)` where `e ^ (-A / 2)` for `A = ∫_0^1 f^2` would be expected; that parenthetical is not used here.
 
-Stated but not proved: `MathlibExt.Probability.ScottishBook126Wanted.khintchine_infinite_variance_limit` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook126Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/ScottishBook126Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#khintchine-infinite-variance-limit).
+Stated but not proved: `MathlibExt.Probability.ScottishBook126Wanted.khintchine_infinite_variance_limit` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook126Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/ScottishBook126Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#khintchine-infinite-variance-limit).
 
 ## Local Edgeworth expansion for the Ewens distribution
 
@@ -68,7 +68,7 @@ them to be polynomials.
 
 - Zakhar Kabluchko, Alexander Marynych, and Henning Sulzbach, "Mode and Edgeworth Expansion for the Ewens Distribution and the Stirling Numbers," Journal of Integer Sequences 19 (2016), Article 16.8.8, Theorem, lines 207–226 (Ewens probability mass function at lines 143–146), https://cs.uwaterloo.ca/journals/JIS/VOL19/Kabluchko/kabl2.tex
 
-Stated but not proved: `MetaMathlibExt.stirling_edgeworth_expansion` is written with `theorem_wanted` in [WantedExt/Probability/StirlingEdgeworthExpansionWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/StirlingEdgeworthExpansionWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#stirling-edgeworth-expansion).
+Stated but not proved: `MetaMathlibExt.stirling_edgeworth_expansion` is written with `theorem_wanted` in [WantedExt/Probability/StirlingEdgeworthExpansionWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/StirlingEdgeworthExpansionWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#stirling-edgeworth-expansion).
 
 ## Mean absolute sum over the unit cube
 
@@ -84,7 +84,7 @@ Then $I_n / \sqrt{n} \to 1 / \sqrt{6\pi}$ as $n \to \infty$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_95`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.CubeAbsSumIntegralAsymptoticWanted.tendsto_integral_abs_sum_cube_div_sqrt` is written with `theorem_wanted` in [WantedExt/MeasureTheory/CubeAbsSumIntegralAsymptoticWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/CubeAbsSumIntegralAsymptoticWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#tendsto-integral-abs-sum-cube-div-sqrt).
+Stated but not proved: `MathlibExt.MeasureTheory.CubeAbsSumIntegralAsymptoticWanted.tendsto_integral_abs_sum_cube_div_sqrt` is written with `theorem_wanted` in [WantedExt/MeasureTheory/CubeAbsSumIntegralAsymptoticWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/CubeAbsSumIntegralAsymptoticWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html#tendsto-integral-abs-sum-cube-div-sqrt).
 
 ## Depends on
 
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Central limit theorems and Poisson approximation](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/central-limit-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/central-limit-theorems)

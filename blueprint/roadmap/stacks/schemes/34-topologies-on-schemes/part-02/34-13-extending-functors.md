@@ -8,13 +8,13 @@ proof: formalized
 
 # 34.13 Extending functors
 
-Section 34.13 of the Stacks Project, [Tag 0EUV](https://stacks.math.columbia.edu/tag/0EUV). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 34.13 of the Stacks Project, [Tag 0EUV](https://stacks.math.columbia.edu/tag/0EUV). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EUW, a lemma
 
 [Tag 0EUW](https://stacks.math.columbia.edu/tag/0EUW) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.extension_hom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean#L304). The attribute's comment: “uniqueness: a morphism between two extensions satisfying the analogues of (a) and (b) is determined by the identifications of their restrictions with the original functor”.
+**`AlgebraicGeometry.ExtendingFunctors.extension_hom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean#L304). The attribute's comment: “uniqueness: a morphism between two extensions satisfying the analogues of (a) and (b) is determined by the identifications of their restrictions with the original functor”.
 
 > **Stacks 0EUW.** The extension of `F` to `Sch/S` is unique: a morphism between two extensions
 > of `F` which both satisfy the analogues of (a) and (b) is determined by its restriction to the
@@ -35,7 +35,7 @@ theorem extension_hom_unique {P : ObjectProperty (Over S)}
     θ = θ'
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.extension_iso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean#L327). The attribute's comment: “uniqueness: two extensions satisfying the analogues of (a) and (b) admit at most one isomorphism compatible with the identifications of their restrictions with the original functor”.
+**`AlgebraicGeometry.ExtendingFunctors.extension_iso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctors.lean#L327). The attribute's comment: “uniqueness: two extensions satisfying the analogues of (a) and (b) admit at most one isomorphism compatible with the identifications of their restrictions with the original functor”.
 
 > **Stacks 0EUW.** The extension of `F` to `Sch/S` is unique: two extensions of `F` which both
 > satisfy the analogues of (a) and (b) admit at most one isomorphism compatible with the
@@ -56,7 +56,7 @@ theorem extension_iso_unique {P : ObjectProperty (Over S)}
     ε = ε'
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.exists_unique_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsLimits/Uniqueness.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsLimits/Uniqueness.lean#L610).
+**`AlgebraicGeometry.ExtendingFunctors.exists_unique_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsLimits/Uniqueness.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsLimits/Uniqueness.lean#L610).
 
 > **Stacks 0EUW.** For a scheme `S` and a full subcategory `𝒞` of `Sch/S` which contains, up to
 > isomorphism, the affine opens of its objects and the affine schemes of finite presentation over
@@ -78,7 +78,7 @@ theorem exists_unique_extension (hP1 : HasAffineOpens P)
         PreservesAffineLimits F'' → (P.ι.op ⋙ F'' ≅ F) → Nonempty (F' ≅ F'')
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isZariskiSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsSheaf/ZariskiSheaf.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsSheaf/ZariskiSheaf.lean#L156). The attribute's comment: “the analogue of condition (a) for the extension `AlgebraicGeometry.ExtendingFunctors.extension`: the extension is a Zariski sheaf on `Sch/S`”.
+**`AlgebraicGeometry.ExtendingFunctors.isZariskiSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsSheaf/ZariskiSheaf.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsSheaf/ZariskiSheaf.lean#L156). The attribute's comment: “the analogue of condition (a) for the extension `AlgebraicGeometry.ExtendingFunctors.extension`: the extension is a Zariski sheaf on `Sch/S`”.
 
 > **The analogue of condition (a) of Stacks 0EUW for the extension.** The extension is a
 > Zariski sheaf on `Sch/S`: its value at `X` is the limit of the colimit formula over the affine
@@ -95,7 +95,7 @@ theorem isZariskiSheaf_extension (hP1 : HasAffineOpens P)
 
 [Tag 049N](https://stacks.math.columbia.edu/tag/049N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isStandardCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean#L75). The attribute's comment: “covering\_existence, stated once for AlgebraicGeometry.IsStandardCovering rather than separately in the idiom native to each of the five topologies”.
+**`AlgebraicGeometry.exists_isStandardCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean#L75). The attribute's comment: “covering\_existence, stated once for AlgebraicGeometry.IsStandardCovering rather than separately in the idiom native to each of the five topologies”.
 
 > **Stacks 049N (1), uniformly in the topology.** Let `T = lim Tᵢ` be an affine scheme written
 > as an inverse limit of a cofiltered system of affine schemes. A standard `τ`-covering of `T` is,
@@ -115,7 +115,7 @@ theorem exists_isStandardCovering_of_isLimit (τ : CoveringTopology)
           Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardZariskiCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L743). The attribute's comment: “covering\_existence”.
+**`AlgebraicGeometry.exists_standardZariskiCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L743). The attribute's comment: “covering\_existence”.
 
 > A finite standard Zariski covering of an affine inverse limit descends to a
 > standard Zariski covering at some stage.
@@ -135,7 +135,7 @@ theorem exists_standardZariskiCovering_of_isLimit
           Over.mk (𝒰.f j))
 ```
 
-**`AlgebraicGeometry.exists_standardEtaleCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L807). The attribute's comment: “covering\_existence”.
+**`AlgebraicGeometry.exists_standardEtaleCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 807](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L807). The attribute's comment: “covering\_existence”.
 
 > A finite standard étale covering of an affine inverse limit descends to a
 > standard étale covering at some stage.
@@ -153,7 +153,7 @@ theorem exists_standardEtaleCovering_of_isLimit
           Over.mk (𝒰.f j))
 ```
 
-**`AlgebraicGeometry.exists_standardSmoothCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L850). The attribute's comment: “covering\_existence”.
+**`AlgebraicGeometry.exists_standardSmoothCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 850](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L850). The attribute's comment: “covering\_existence”.
 
 > A finite standard smooth covering of an affine inverse limit descends to a
 > standard smooth covering at some stage.
@@ -176,7 +176,7 @@ theorem exists_standardSmoothCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardSyntomicCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L880). The attribute's comment: “covering\_existence”.
+**`AlgebraicGeometry.exists_standardSyntomicCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L880). The attribute's comment: “covering\_existence”.
 
 > A finite standard syntomic covering of an affine inverse limit descends to a
 > standard syntomic covering at some stage.
@@ -195,7 +195,7 @@ theorem exists_standardSyntomicCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardFppfCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L912). The attribute's comment: “covering\_existence”.
+**`AlgebraicGeometry.exists_standardFppfCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 912](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L912). The attribute's comment: “covering\_existence”.
 
 > A finite standard fppf covering of an affine inverse limit descends to a
 > standard fppf covering at some stage.
@@ -214,7 +214,7 @@ theorem exists_standardFppfCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.eventually_familyHom_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L99). The attribute's comment: “covering\_morphism\_equality”. References: SGA 3 VIB (10.0), “(i)”; SGA 4 VII (5.2), “a, special case”.
+**`AlgebraicGeometry.eventually_familyHom_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L99). The attribute's comment: “covering\_morphism\_equality”. References: SGA 3 VIB (10.0), “(i)”; SGA 4 VII (5.2), “a, special case”.
 
 > Equality of morphisms of finite families of affine, flat, finitely presented
 > schemes over a limit holds already at some finite stage.
@@ -232,7 +232,7 @@ theorem eventually_familyHom_eq_of_baseChange_eq
     ∃ (j : I) (e : j ⟶ i), FamilyHom.BaseChangeEq (D.map e) E F f g
 ```
 
-**`AlgebraicGeometry.exists_familyHom_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L264). The attribute's comment: “covering\_morphisms”.
+**`AlgebraicGeometry.exists_familyHom_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L263). The attribute's comment: “covering\_morphisms”.
 
 > A morphism of finite standard covering families of an affine inverse limit
 > descends to a morphism at a finite stage, with its given index map unchanged.
@@ -275,16 +275,19 @@ theorem exists_familyHom_after_baseChange
 
 [Tag 0GDW](https://stacks.math.columbia.edu/tag/0GDW) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isStandardAffineSheafOnSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L722). The attribute's comment: “the extension of a functor satisfying conditions (a), (b) and (c) from a full subcategory satisfying conditions (1) and (2) of Tag 0EUW is a sheaf for every τ-covering of Sch/S, for each of the five topologies”.
+**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isStandardAffineSheafOnSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L726). The attribute's comment: “for each of the five topologies Zariski, étale, smooth, syntomic and fppf: the extension F' of a functor F satisfying conditions (a), (b) and (c), from a full subcategory of Sch/S satisfying conditions (1) and (2) of Tag 0EUW, satisfies the sheaf condition for every τ-covering of Sch/S”.
 
 > **Stacks 0GDW.** Let `S` be a scheme, let `𝒞` be a full subcategory of `Sch/S` satisfying
 > conditions (1) and (2) of Stacks 0EUW and let `F : 𝒞ᵒᵖ ⥤ Set` satisfy conditions (a), (b) and
 > (c). Then the extension `F' = AlgebraicGeometry.ExtendingFunctors.extension` of `F` to `Sch/S` is
 > a sheaf for each of the five topologies — Zariski, étale, smooth, syntomic and fppf.
 >
-> This is the unconditional form of
-> `AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension`, whose hypothesis `hstd` is
-> supplied by `AlgebraicGeometry.ExtendingFunctors.isStandardAffineSheaf_extension`.
+> The proof follows the source: the restricted sheaf condition for the extension, on the standard
+> `τ`-coverings of the affine objects of `Sch/S` lying over an affine open of `S`, is deduced from
+> condition (c) by `AlgebraicGeometry.ExtendingFunctors.isStandardAffineSheaf_extension` (the
+> special case of the source's proof), and the general case is
+> `AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_of_isStandardAffineSheaf`, applied to the
+> extension, which is a Zariski sheaf by condition (a).
 
 ```lean
 theorem isCoveringSheaf_extension_of_isStandardAffineSheafOnSubcategory (τ : CoveringTopology)
@@ -295,54 +298,11 @@ theorem isCoveringSheaf_extension_of_isStandardAffineSheafOnSubcategory (τ : Co
     IsCoveringSheaf.{max w (u + 1), u, v} τ (extension P F)
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_of_isStandardAffineSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardTopologies.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardTopologies.lean#L380). The attribute's comment: “the general case of the source's proof: a Zariski sheaf on Sch/S which is a sheaf for the standard τ-coverings of the affine objects lying over an affine open of the base is a sheaf for every τ-covering”.
-
-> **The reduction of Stacks 0GDW to the standard affine case.** A Zariski sheaf on `Sch/S`
-> which satisfies the sheaf condition for the standard `τ`-coverings of the affine objects lying
-> over an affine open of `S` satisfies the sheaf condition for every `τ`-covering.
->
-> This is the general case of the proof of the source. An object of `Sch/S` is covered by its
-> affine opens lying over affine opens of `S`; over each of them the given covering is refined by a
-> standard `τ`-covering, which produces a local section
-> (`AlgebraicGeometry.ExtendingFunctors.exists_section_of_isStandardAffineSheaf`); the local
-> sections agree on the pairwise intersections because both restrictions are computed by the given
-> family over the base change of the covering to the intersection, and they glue by the Zariski
-> sheaf condition.
-
-```lean
-theorem isCoveringSheaf_of_isStandardAffineSheaf (τ : CoveringTopology)
-    {G : (Over S)ᵒᵖ ⥤ Type w} (haG : IsZariskiSheaf G)
-    (hG : IsStandardAffineSheaf.{w, u, v} τ G) : IsCoveringSheaf.{w, u, v} τ G
-```
-
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardTopologies.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardTopologies.lean#L454). The attribute's comment: “the general case: the extension is a sheaf for every τ-covering once it is one for the standard τ-coverings of the affine objects lying over an affine open of the base, which is carried as a hypothesis”.
-
-> **Stacks 0GDW, the general case of the source's proof, at the extension.** Let `S` be a
-> scheme, let `𝒞` be a full subcategory of `Sch/S` satisfying conditions (1) and (2) of Stacks
-> 0EUW and let `F : 𝒞ᵒᵖ ⥤ Set` satisfy condition (a). Then the extension
-> `F' = AlgebraicGeometry.ExtendingFunctors.extension` of `F` to `Sch/S` satisfies the sheaf
-> condition for every `τ`-covering as soon as it satisfies the sheaf condition for the standard
-> `τ`-coverings of the affine objects of `Sch/S` lying over an affine open of `S`.
->
-> The source deduces the latter from its condition (c) by writing such an affine object as a
-> directed limit of affines of finite presentation over an affine open of `S` (Stacks 00QN),
-> descending the standard covering to a stage of that limit (Stacks 049N) and passing to the
-> filtered colimit; that deduction is not formalized here, so the restricted sheaf condition is
-> carried as the hypothesis `hstd`.
-
-```lean
-theorem isCoveringSheaf_extension (τ : CoveringTopology) (P : ObjectProperty (Over S))
-    (F : P.FullSubcategoryᵒᵖ ⥤ Type (max w (u + 1))) (hP1 : HasAffineOpens P)
-    (hP2 : HasFinitePresentationAffines P) (haF : IsZariskiSheafOnSubcategory P F)
-    (hstd : IsStandardAffineSheaf.{max w (u + 1), u, v} τ (extension P F)) :
-    IsCoveringSheaf.{max w (u + 1), u, v} τ (extension P F)
-```
-
 ## Tag 0EUX, a lemma
 
 [Tag 0EUX](https://stacks.math.columbia.edu/tag/0EUX) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_zariski_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsCoveringSheaf.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsCoveringSheaf.lean#L606). The attribute's comment: “τ = Zariski”.
+**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_zariski_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsCoveringSheaf.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsCoveringSheaf.lean#L606). The attribute's comment: “τ = Zariski”.
 
 > **Stacks 0EUX for `τ = Zariski`.** Let `S` be a scheme, let `𝒞` be a full subcategory of
 > `Sch/S` satisfying conditions (1) and (2) of Stacks 0EUW — the big Zariski site `(Sch/S)_Zar` is
@@ -363,7 +323,7 @@ theorem isCoveringSheaf_zariski_extension (P : ObjectProperty (Over S))
     IsCoveringSheaf.{max w (u + 1), u, v} .zariski (extension P F)
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isCoveringSheafOnSubcategory'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 794](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L794). The attribute's comment: “all five topologies: Zariski, étale, smooth, syntomic and fppf”.
+**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isCoveringSheafOnSubcategory'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 798](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L798). The attribute's comment: “all five topologies: Zariski, étale, smooth, syntomic and fppf”.
 
 > **Stacks 0EUX.** Let `τ` be one of Zariski, étale, smooth, syntomic and fppf, let `S` be a
 > scheme, let `𝒞` be a full subcategory of `Sch/S` satisfying conditions (1) and (2) of Stacks
@@ -399,7 +359,7 @@ theorem isCoveringSheaf_extension_of_isCoveringSheafOnSubcategory'
     IsCoveringSheaf.{max w (u + 1), u, v} τ (extension P F)
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isCoveringSheafOnSubcategory_of_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 823](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L823). The attribute's comment: “all five topologies, for coverings indexed in the universe of the objects of Sch/S, which is the big site of the source”.
+**`AlgebraicGeometry.ExtendingFunctors.isCoveringSheaf_extension_of_isCoveringSheafOnSubcategory_of_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean, line 827](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ExtendingFunctorsStandardAffineInterchange.lean#L827). The attribute's comment: “all five topologies, for coverings indexed in the universe of the objects of Sch/S, which is the big site of the source”.
 
 > **Stacks 0EUX for the big site.** Let `τ` be one of Zariski, étale, smooth, syntomic and
 > fppf, let `S` be a scheme, let `𝒞` be a full subcategory of `Sch/S` satisfying conditions (1)
@@ -431,4 +391,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 34.13, Tag 0EUV](https://stacks.math.columbia.edu/tag/0EUV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

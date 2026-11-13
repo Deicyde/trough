@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.8 Formally étale morphisms
 
-Section 37.8 of the Stacks Project, [Tag 02HF](https://stacks.math.columbia.edu/tag/02HF). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.8 of the Stacks Project, [Tag 02HF](https://stacks.math.columbia.edu/tag/02HF). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02HG, a definition
 
 [Tag 02HG](https://stacks.math.columbia.edu/tag/02HG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallyEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean#L118). References: EGA IV (17.1.1); SGA 3 XI (1.1).
+**`AlgebraicGeometry.FormallyEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean#L118). References: EGA IV (17.1.1); SGA 3 XI (1.1).
 
 > A morphism of schemes `f : X ⟶ S` is **formally étale** when it has the unique infinitesimal
 > lifting property: for every first-order thickening `i : T ⟶ T'` of affine schemes, every
@@ -37,7 +37,7 @@ abbrev FormallyEtale {X S : Scheme.{u}} (f : X ⟶ S) : Prop
 
 [Tag 04FD](https://stacks.math.columbia.edu/tag/04FD) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallyEtale.existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Lifting.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Lifting.lean#L78).
+**`AlgebraicGeometry.FormallyEtale.existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Lifting.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Lifting.lean#L78).
 
 > A formally étale morphism admits a unique lift across any first-order
 > thickening of schemes over its base, without affineness assumptions.
@@ -54,7 +54,7 @@ theorem FormallyEtale.existsUnique_lift
 
 [Tag 02HI](https://stacks.math.columbia.edu/tag/02HI) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallyEtale.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L51).
+**`AlgebraicGeometry.FormallyEtale.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L51).
 
 > A composition of formally étale morphisms is formally étale.
 
@@ -68,7 +68,7 @@ theorem FormallyEtale.comp {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S)
 
 [Tag 02HJ](https://stacks.math.columbia.edu/tag/02HJ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallyEtale.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L63).
+**`AlgebraicGeometry.FormallyEtale.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L63).
 
 > A base change of a formally étale morphism is formally étale.
 
@@ -82,7 +82,7 @@ theorem FormallyEtale.pullback_snd {X S S' : Scheme.{u}}
 
 [Tag 02HK](https://stacks.math.columbia.edu/tag/02HK) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallyEtale.resLE`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L85).
+**`AlgebraicGeometry.FormallyEtale.resLE`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L85).
 
 > Formal étaleness is preserved when a morphism is restricted to compatible open subschemes of
 > its source and target.
@@ -98,7 +98,7 @@ lemma FormallyEtale.resLE {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 04FE](https://stacks.math.columbia.edu/tag/04FE) in the Stacks Project.
 
-**`AlgebraicGeometry.formallyEtale_iff_isIso_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L95). The attribute's comment: “equivalence of (1) and (2)”.
+**`AlgebraicGeometry.formallyEtale_iff_isIso_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L95). The attribute's comment: “equivalence of (1) and (2)”.
 
 > **Stacks Project, Tag 04FE, equivalence of (1) and (2).** A morphism of schemes is formally
 > étale if and only if it is formally unramified and the inclusion of its source into its universal
@@ -123,7 +123,7 @@ public theorem formallyEtale_iff_isIso_inclusion (f : X ⟶ S) :
         IsIso (universalFirstOrderThickening f).inclusion
 ```
 
-**`AlgebraicGeometry.formallyEtale_iff_isZero_universalConormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L159). The attribute's comment: “equivalence of (1) and (3)”.
+**`AlgebraicGeometry.formallyEtale_iff_isZero_universalConormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L159). The attribute's comment: “equivalence of (1) and (3)”.
 
 > **Stacks Project, Tag 04FE, equivalence of (1) and (3).** A morphism of schemes is formally
 > étale if and only if it is formally unramified and its conormal sheaf `𝒞_{X/S}` vanishes.
@@ -139,7 +139,7 @@ public theorem formallyEtale_iff_isZero_universalConormalSheaf (f : X ⟶ S) :
         IsZero (universalConormalSheaf f)
 ```
 
-**`AlgebraicGeometry.formallyEtale_iff_isZero_relativeDifferentials_and_universalConormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L176). The attribute's comment: “equivalence of (1) and (4)”.
+**`AlgebraicGeometry.formallyEtale_iff_isZero_relativeDifferentials_and_universalConormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleConormal.lean#L176). The attribute's comment: “equivalence of (1) and (4)”.
 
 > **Stacks Project, Tag 04FE, equivalence of (1) and (4).** A morphism of schemes is formally
 > étale if and only if both its sheaf of relative differentials `Ω_{X/S}` and its conormal sheaf
@@ -162,7 +162,7 @@ public theorem formallyEtale_iff_isZero_relativeDifferentials_and_universalConor
 
 [Tag 04FF](https://stacks.math.columbia.edu/tag/04FF) in the Stacks Project.
 
-**`AlgebraicGeometry.formallyEtale_of_unramified_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean#L214).
+**`AlgebraicGeometry.formallyEtale_of_unramified_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleScheme.lean#L214).
 
 > **An unramified flat morphism of schemes is formally étale.** Existence of the filler is
 > local on the thickening by `AlgebraicGeometry.exists_isAffineOpen_lift_of_unramified_flat`; the
@@ -179,7 +179,7 @@ theorem formallyEtale_of_unramified_flat {X S : Scheme.{u}} (f : X ⟶ S) [Unram
 
 [Tag 02HL](https://stacks.math.columbia.edu/tag/02HL) in the Stacks Project.
 
-**`AlgebraicGeometry.formallyEtale_iff_globalSectionsMap_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleAffine.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleAffine.lean#L38).
+**`AlgebraicGeometry.formallyEtale_iff_globalSectionsMap_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleAffine.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleAffine.lean#L38).
 
 > A morphism of affine schemes is formally étale if and only if its pullback map on global
 > functions is a formally étale ring map.
@@ -194,7 +194,7 @@ theorem formallyEtale_iff_globalSectionsMap_formallyEtale
 
 [Tag 02HM](https://stacks.math.columbia.edu/tag/02HM) in the Stacks Project.
 
-**`AlgebraicGeometry.etale_iff_locallyOfFinitePresentation_and_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleIffFormallyEtale.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/EtaleIffFormallyEtale.lean#L46). References: EGA IV (17.3.2), “(ii) etale”; EGA IV (17.6.1), “a) <=> d)”; EGA IV (17.3.1); SGA 3 XI (1.6), “étale case”; SGA 4 VII (1.1), “functorial criterion”; SGA 3 XI (1.1); SGA 4½ Arcata (2.1.1), “more general”.
+**`AlgebraicGeometry.etale_iff_locallyOfFinitePresentation_and_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleIffFormallyEtale.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/EtaleIffFormallyEtale.lean#L46). References: EGA IV (17.3.2), “(ii) etale”; EGA IV (17.6.1), “a) <=> d)”; EGA IV (17.3.1); SGA 3 XI (1.6), “étale case”; SGA 4 VII (1.1), “functorial criterion”; SGA 3 XI (1.1); SGA 4½ Arcata (2.1.1), “more general”.
 
 > A morphism of schemes is étale exactly when it is locally of finite presentation and formally
 > étale.
@@ -212,4 +212,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.8, Tag 02HF](https://stacks.math.columbia.edu/tag/02HF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.10 Relative approximation
 
-Section 70.10 of the Stacks Project, [Tag 09NR](https://stacks.math.columbia.edu/tag/09NR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.10 of the Stacks Project, [Tag 09NR](https://stacks.math.columbia.edu/tag/09NR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GS3, a lemma
 
 [Tag 0GS3](https://stacks.math.columbia.edu/tag/0GS3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasRelativeApproximation_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean#L52).
+**`AlgebraicGeometry.Space.hasRelativeApproximation_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean#L52).
 
 > **Relative approximation over `Spec ℤ`, on any big fppf site.** A morphism `f : X ⟶ Y` of
 > quasi-compact quasi-separated algebraic spaces over `Spec ℤ` is the limit of a directed inverse
@@ -38,7 +38,7 @@ theorem hasRelativeApproximation_of_isQuasiCompactSpace (B : BigFppfSite.{u})
 
 [Tag 09NS](https://stacks.math.columbia.edu/tag/09NS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean#L93).
+**`AlgebraicGeometry.Space.exists_isLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationApproximation.lean#L93).
 
 > **Stacks 09NS.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`, with `X`
 > quasi-compact and quasi-separated and `Y` quasi-separated. Then `X` is the limit of a directed
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.10, Tag 09NR](https://stacks.math.columbia.edu/tag/09NR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

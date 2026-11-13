@@ -8,7 +8,7 @@ proof: formalized
 
 # Kneser graphs
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html).
 
 ## Kneser graph
 
@@ -18,7 +18,7 @@ adjacent when they are disjoint.
 
 By definition, $K_{v:k}$ is the generalized Johnson graph $J(v, k, 0)$.
 
-Formalized by `MetaMathlibExt.kneserGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Kneser.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/Kneser.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-graph).
+Formalized by `MetaMathlibExt.kneserGraph`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/Kneser.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/Kneser.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-graph).
 
 ## Adjacency in the Kneser graph
 
@@ -26,7 +26,7 @@ For natural numbers $n$ and $k$ and $k$-element subsets
 $x$ and $y$ of $\{0, 1, \dots, n-1\}$, the vertices $x$ and $y$ of the Kneser graph $K(n, k)$
 are adjacent if and only if $x$ and $y$ are disjoint and $x \ne y$.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneserGraph_adj_iff`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-graph-adj-iff).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneserGraph_adj_iff`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-graph-adj-iff).
 
 ## Kneser–Lovász theorem
 
@@ -39,7 +39,7 @@ $n - 2k + 2$.
 
 - L. Lovasz, JCT A 25 (1978), 319-324, DOI 10.1016/0097-3165(78)90022-5.
 
-Formalized by `MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneser_lovasz`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean, line 3113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean#L3113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-lovasz).
+Formalized by `MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneser_lovasz`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean, line 3113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/KneserLovasz.lean#L3113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html#kneser-lovasz).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kneser graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring/part-01/kneser-graphs)

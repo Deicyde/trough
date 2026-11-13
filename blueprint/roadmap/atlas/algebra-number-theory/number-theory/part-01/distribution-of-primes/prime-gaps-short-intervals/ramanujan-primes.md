@@ -7,7 +7,7 @@ statement: formalized
 
 # Ramanujan primes
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html).
 
 ## Labos prime
 
@@ -17,7 +17,7 @@ $\pi(L) - \pi(\lfloor L/2 \rfloor) = n$, and no integer $m$ with $1 \le m < L$ s
 $\pi(m) - \pi(\lfloor m/2 \rfloor) = n$; that is, $L$ is the least positive integer with
 $\pi(L) - \pi(\lfloor L/2 \rfloor) = n$.
 
-Formalized by `MetaMathlibExt.IsLabosPrime`, a definition declared in [MathlibExt/NumberTheory/LabosPrime.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LabosPrime.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-labos-prime).
+Formalized by `MetaMathlibExt.IsLabosPrime`, a definition declared in [MathlibExt/NumberTheory/LabosPrime.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LabosPrime.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-labos-prime).
 
 ## Primes satisfying the Ramanujan counting condition
 
@@ -27,7 +27,7 @@ $n$ when $R$ is prime and $\pi(R) - \pi(R/2) = n$.
 
 Here $\pi(x)$ counts the primes $p \le x$, so $\pi(R/2) = \pi(\lfloor R/2 \rfloor)$.
 
-Formalized by `MetaMathlibExt.IsRamanujanPrime`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-ramanujan-prime).
+Formalized by `MetaMathlibExt.IsRamanujanPrime`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-ramanujan-prime).
 
 ## The $n$-th Ramanujan prime
 
@@ -38,7 +38,7 @@ That is, $R$ is the largest prime satisfying the Ramanujan counting condition fo
 
 Here $\pi(x)$ counts the primes $p \le x$, so $\pi(R/2) = \pi(\lfloor R/2 \rfloor)$.
 
-Formalized by `MetaMathlibExt.IsNthRamanujanPrime`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-nth-ramanujan-prime).
+Formalized by `MetaMathlibExt.IsNthRamanujanPrime`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/RamanujanPrime.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-nth-ramanujan-prime).
 
 ## Counting members of a set up to a real bound
 
@@ -47,7 +47,7 @@ real number $x$, $\pi_P(x)$ is the number of members of $P$ that are at most $x$
 
 In the intended application $P$ is an infinite set of primes.
 
-Formalized by `MetaMathlibExt.primeCountingWithin`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#prime-counting-within).
+Formalized by `MetaMathlibExt.primeCountingWithin`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#prime-counting-within).
 
 ## Generalized Ramanujan numbers
 
@@ -58,7 +58,7 @@ primes, $v > 1$, and $R$ is the least natural number such that $\pi_P(x) - \pi_P
 for every real $x \ge R$, that is, every interval $(x/v, x]$ with $x \ge R$ contains at least
 $m$ members of $P$.
 
-Formalized by `MetaMathlibExt.IsVPRamanujanNumber`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-vpramanujan-number).
+Formalized by `MetaMathlibExt.IsVPRamanujanNumber`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/VPRamanujanNumber.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#is-vpramanujan-number).
 
 ## Laishram's upper bound for Ramanujan primes
 
@@ -70,7 +70,7 @@ entails $n \ge 1$), then $R < p_{3n}$.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL14/Noe/noe12.tex, theorem lines 152-160, definition lines 105-117.
 
-Stated but not proved: `MetaMathlibExt.laishram_ramanujan_prime_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/LaishramRamanujanPrimeBoundWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/LaishramRamanujanPrimeBoundWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#laishram-ramanujan-prime-bound).
+Stated but not proved: `MetaMathlibExt.laishram_ramanujan_prime_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/LaishramRamanujanPrimeBoundWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/LaishramRamanujanPrimeBoundWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html#laishram-ramanujan-prime-bound).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramanujan primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/ramanujan-primes)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 14.11 Simplicial sets
 
-Section 14.11 of the Stacks Project, [Tag 0174](https://stacks.math.columbia.edu/tag/0174). 5 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.11 of the Stacks Project, [Tag 0174](https://stacks.math.columbia.edu/tag/0174). 5 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0175, a definition
 
@@ -16,10 +16,10 @@ Section 14.11 of the Stacks Project, [Tag 0174](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.δ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L99) (StacksFrontier): “j-th face d\_j”. References: SGA 4 V (1.10); SGA 4 Vbis (5.1.0).
-- [`CategoryTheory.SimplicialObject.σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L100) (StacksFrontier): “j-th degeneracy s\_j”. References: SGA 4 Vbis (5.1.0).
-- [`SSet.degenerate`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.degenerate#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L101) (StacksFrontier): “degenerate simplices”.
-- [`SSet.degenerate_eq_iUnion_range_σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.degenerate_eq_iUnion_range_σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L102) (StacksFrontier): “degenerate = a degeneracy s\_j y of another simplex”.
+- [`CategoryTheory.SimplicialObject.δ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L100) (StacksFrontier): “j-th face d\_j”. References: SGA 4 V (1.10); SGA 4 Vbis (5.1.0).
+- [`CategoryTheory.SimplicialObject.σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L101) (StacksFrontier): “j-th degeneracy s\_j”. References: SGA 4 Vbis (5.1.0).
+- [`SSet.degenerate`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.degenerate#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L102) (StacksFrontier): “degenerate simplices”.
+- [`SSet.degenerate_eq_iUnion_range_σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.degenerate_eq_iUnion_range_σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L103) (StacksFrontier): “degenerate = a degeneracy s\_j y of another simplex”.
 
 ## Tag 0176, an example
 
@@ -27,9 +27,9 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`SSet.stdSimplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L105) (StacksFrontier): “Δ[n] = Mor\_Δ(-, [n])”. References: SGA 4 V (7.3.1.6).
-- [`SSet.stdSimplex.instHasDimensionLEObjSimplexCategoryMk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex.instHasDimensionLEObjSimplexCategoryMk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L106) (StacksFrontier): “every m-simplex of Δ[n] with m > n is degenerate”.
-- [`SSet.stdSimplex.nonDegenerate_top_dim`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex.nonDegenerate_top_dim#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L108) (StacksFrontier): “the unique nondegenerate n-simplex is id\_[n]”.
+- [`SSet.stdSimplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L106) (StacksFrontier): “Δ[n] = Mor\_Δ(-, [n])”. References: SGA 4 V (7.3.1.6).
+- [`SSet.stdSimplex.instHasDimensionLEObjSimplexCategoryMk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex.instHasDimensionLEObjSimplexCategoryMk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L107) (StacksFrontier): “every m-simplex of Δ[n] with m > n is degenerate”.
+- [`SSet.stdSimplex.nonDegenerate_top_dim`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.stdSimplex.nonDegenerate_top_dim#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L109) (StacksFrontier): “the unique nondegenerate n-simplex is id\_[n]”.
 
 ## Tag 0177, a lemma
 
@@ -37,13 +37,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`SSet.yonedaEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.yonedaEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L111) (StacksFrontier).
+- [`SSet.yonedaEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.yonedaEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L112) (StacksFrontier).
 
 ## Tag 0178, an example
 
 [Tag 0178](https://stacks.math.columbia.edu/tag/0178) in the Stacks Project.
 
-**`CategoryTheory.CategoryOfElements.exists_opOverEquivalenceElements`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Elements.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Elements.lean#L174). The attribute's comment: “stated for an arbitrary category C and X : C, of which Δ/⦋n⦌ fibred in sets over Δ being the presheaf Δ[n] is the case C = Δ, X = ⦋n⦌, since SSet.stdSimplex is uliftYoneda; the formula Mor(Δ/⦋n⦌, U) = U\_n is then SSet.yonedaEquiv”. References: SGA 4 IV (6.3), “special case”.
+**`CategoryTheory.CategoryOfElements.exists_opOverEquivalenceElements`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Elements.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Elements.lean#L174). The attribute's comment: “stated for an arbitrary category C and X : C, of which Δ/⦋n⦌ fibred in sets over Δ being the presheaf Δ[n] is the case C = Δ, X = ⦋n⦌, since SSet.stdSimplex is uliftYoneda; the formula Mor(Δ/⦋n⦌, U) = U\_n is then SSet.yonedaEquiv”. References: SGA 4 IV (6.3), “special case”.
 
 > **`C/X` is fibred in sets over `C`, and as a presheaf of sets it is represented by `X`.**
 > There is an equivalence of categories from the opposite of the category `C/X` of objects of
@@ -70,7 +70,7 @@ theorem exists_opOverEquivalenceElements (X : C) :
 
 Declarations registered for the tag:
 
-- [`SSet.hasDimensionLE_prod`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.hasDimensionLE_prod#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L113) (StacksFrontier).
+- [`SSet.hasDimensionLE_prod`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet.hasDimensionLE_prod#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L114) (StacksFrontier).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.11, Tag 0174](https://stacks.math.columbia.edu/tag/0174)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

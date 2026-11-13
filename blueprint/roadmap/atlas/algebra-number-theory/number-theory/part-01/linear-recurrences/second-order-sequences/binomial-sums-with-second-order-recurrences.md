@@ -7,7 +7,7 @@ statement: formalized
 
 # Binomial sums with second-order recurrences
 
-16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html).
+16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html).
 
 ## Alternating squared-binomial sum with Lucas sequences
 
@@ -22,7 +22,7 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k}^2 U_{2n-k} V_k = (-1)^n \binom{2n}{n} U_{
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq-alternatin).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq-alternatin).
 
 ## Dixon-type alternating sum with Lucas sequences
 
@@ -38,7 +38,7 @@ where $\binom{3n}{n} \binom{2n}{n} = (3n)!/(n!)^3$ is the trinomial coefficient.
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_cube_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-cube-alternat).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_cube_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-cube-alternat).
 
 ## Squared-binomial convolution of the Lucas sequences U and V
 
@@ -53,7 +53,7 @@ $$\sum_{k=0}^{n} \binom{n}{k}^2 U_{n-k} V_k = \binom{2n}{n} U_n.$$
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.3.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq).
 
 ## Even-index Catalan convolution with Lucas sequences
 
@@ -69,7 +69,7 @@ $$\sum_{k=0}^{n} C_{2n-2k} C_{2k} U_k V_{n-k} =
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.4.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_catalan_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-catalan-even).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_catalan_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-catalan-even).
 
 ## Shifted Catalan convolution with Lucas sequences
 
@@ -88,7 +88,7 @@ The paper states $m \in \mathbb{N}_0$; at $m = 0$ the printed right side is twic
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.5.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_catalan_shifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-catalan-shifted).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_catalan_shifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-catalan-shifted).
 
 ## Convolution of U and V with shifted binomial weights
 
@@ -102,7 +102,7 @@ $$\sum_{k=0}^{n} \binom{2n}{k} \binom{2n}{n+k} U_k V_{n-k} = \binom{4n}{n} U_n.$
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.6.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_two_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-two-n).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_two_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-two-n).
 
 ## Alternating sum of $\binom{2n}{k} \binom{4n}{2k}$ with Lucas sequences
 
@@ -118,7 +118,7 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k} \binom{4n}{2k} U_k V_{2n-k} =
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.7.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_four_n_even_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-four-n-even-a).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_four_n_even_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-four-n-even-a).
 
 ## Alternating triple-binomial convolution of U and V
 
@@ -133,7 +133,7 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k} \binom{4n}{k} \binom{4n}{2n+k} U_k V_{2n-
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.8.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_triple_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-triple-altern).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_triple_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-triple-altern).
 
 ## Alternating sum with reciprocal binomial coefficients and Lucas sequences
 
@@ -149,7 +149,7 @@ $$\sum_{k=0}^{2n} (-1)^k \frac{\binom{2n}{k}}{\binom{4n}{k} \binom{4n}{2n+k}} U_
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.9.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_inv_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-inv-alternati).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_inv_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-inv-alternati).
 
 ## Sum of $\binom{n}{k} \binom{2n}{n+k} \binom{n+k}{k}$ with Lucas sequences
 
@@ -164,7 +164,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} \binom{2n}{n+k} \binom{n+k}{k} U_k V_{n-k} = \bino
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.10.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_n_plus_k` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-n-plus-k).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_n_plus_k` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-n-plus-k).
 
 ## Binomial-Catalan sum with Lucas sequences
 
@@ -179,7 +179,7 @@ $$\sum_{k=0}^{n} \binom{2n}{2k} C_k C_{n-k} U_{n-k} V_k = C_n C_{n+1} U_n.$$
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.11.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-catalan).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-catalan).
 
 ## Alternating binomial-Catalan sum with Lucas sequences
 
@@ -194,7 +194,7 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{4n}{2k} C_k C_{2n-k} U_{2n-k} V_k = (-1)^n C_n C
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.12.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_catalan_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-catalan-alter).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_catalan_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-catalan-alter).
 
 ## Alternating two-binomial Catalan convolution of U and V
 
@@ -210,7 +210,7 @@ $$\sum_{k=0}^{2n} (-1)^k \binom{2n}{k} \binom{4n}{2k} C_k C_{2n-k} U_{2n-k} V_k 
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 2.13.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq_catalan_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq-catalan-al).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sq_catalan_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sq-catalan-al).
 
 ## Binomial sums with signs $(-1)^{\binom{k}{2}}$ and Lucas sequences
 
@@ -229,7 +229,7 @@ $$\sum_{k=0}^{4n+1} (-1)^{\binom{k}{2}} \binom{4n+1}{k} V_k U_{4n+1-k} = (-1)^n 
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sign_choose_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sign-choose-t).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_sum_choose_sign_choose_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#lucas-u-lucas-v-sum-choose-sign-choose-t).
 
 ## Two-sided binomial sums of products of Lucas sequences
 
@@ -256,7 +256,7 @@ $$\sum_{k=-n}^{n} \binom{2n}{n+k} V_{k+m} U_{k+r} = \Delta^{n} U_{m+r}.$$
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 3.2.
 
-Stated but not proved: `MetaMathlibExt.secondOrderBiSeq_sum_central_choose_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#second-order-bi-seq-sum-central-choose-m).
+Stated but not proved: `MetaMathlibExt.secondOrderBiSeq_sum_central_choose_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#second-order-bi-seq-sum-central-choose-m).
 
 ## Weighted two-sided binomial sums of products of Lucas sequences
 
@@ -283,7 +283,7 @@ $$\sum_{k=-n}^{n} k \binom{2n}{n+k} V_{k+m} U_{k+r} = n p \Delta^{n-1} V_{m+r}.$
 
 - John M. Campbell and Emrah Kılıç, *Binomial Sums Involving Second-Order Linearly Recurrent Sequences*, The Fibonacci Quarterly 62 (2024), Article 62-1/campbell10202023, Proposition 3.3.
 
-Stated but not proved: `MetaMathlibExt.secondOrderBiSeq_sum_central_choose_mul_weighted` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#second-order-bi-seq-sum-central-choose-m-2).
+Stated but not proved: `MetaMathlibExt.secondOrderBiSeq_sum_central_choose_mul_weighted` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/SecondOrderBinomialSumsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html#second-order-bi-seq-sum-central-choose-m-2).
 
 ## Depends on
 
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial sums with second-order recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/binomial-sums-with-second-order-recurrences)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Stanley's and Elder's theorems on parts of partitions
 
-33 results, 10 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html).
+33 results, 10 proved and 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html).
 
 ## Elder's theorem
 
@@ -23,7 +23,7 @@ side is $1$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 2 (Elder's theorem).
 
-Stated but not proved: `MetaMathlibExt.sum_count_eq_sum_card_parts_count_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sum-count-eq-sum-card-parts-count-ge).
+Stated but not proved: `MetaMathlibExt.sum_count_eq_sum_card_parts_count_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sum-count-eq-sum-card-parts-count-ge).
 
 ## Stanley's theorem
 
@@ -35,7 +35,7 @@ $\lambda$ of $n$, of the number of distinct parts of $\lambda$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 1 (Stanley's theorem).
 
-Stated but not proved: `MetaMathlibExt.sum_count_one_eq_sum_card_toFinset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sum-count-one-eq-sum-card-to-finset).
+Stated but not proved: `MetaMathlibExt.sum_count_one_eq_sum_card_toFinset` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sum-count-one-eq-sum-card-to-finset).
 
 ## The list of colored parts of size at most $m$
 
@@ -48,7 +48,7 @@ color $j$).
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions).
 
-Formalized by `MetaMathlibExt.nColorPartsUpTo`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-up-to).
+Formalized by `MetaMathlibExt.nColorPartsUpTo`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-up-to).
 
 ## Membership in the colored parts of bounded size
 
@@ -60,7 +60,7 @@ $1 \le j \le k \le m$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions).
 
-Formalized by `MetaMathlibExt.mem_nColorPartsUpTo`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-n-color-parts-up-to).
+Formalized by `MetaMathlibExt.mem_nColorPartsUpTo`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-n-color-parts-up-to).
 
 ## Multisets of parts with a given size sum
 
@@ -78,7 +78,7 @@ lie in $L$ and whose sizes, counted with multiplicity, sum to $n$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions; helper for `C(m)`).
 
-Formalized by `MetaMathlibExt.multisetsWithSizeSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#multisets-with-size-sum).
+Formalized by `MetaMathlibExt.multisetsWithSizeSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#multisets-with-size-sum).
 
 ## Membership in the multisets with a given size sum
 
@@ -92,7 +92,7 @@ multiplicity, sum to $n$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions; helper for `C(m)`).
 
-Formalized by `MetaMathlibExt.mem_multisetsWithSizeSum`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-multisets-with-size-sum).
+Formalized by `MetaMathlibExt.mem_multisetsWithSizeSum`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-multisets-with-size-sum).
 
 ## n-color partitions
 
@@ -105,7 +105,7 @@ multiplicity, sum to $m$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions; `C(m)` is their number).
 
-Formalized by `MetaMathlibExt.nColorPartitions`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-partitions).
+Formalized by `MetaMathlibExt.nColorPartitions`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-partitions).
 
 ## Characterization of $n$-color partitions
 
@@ -118,7 +118,7 @@ multiplicity, sum to $m$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`n`-color partitions).
 
-Formalized by `MetaMathlibExt.mem_nColorPartitions`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-n-color-partitions).
+Formalized by `MetaMathlibExt.mem_nColorPartitions`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#mem-n-color-partitions).
 
 ## Small values of the number of n-color partitions
 
@@ -131,7 +131,7 @@ $2_1$, $2_2$ and $1_1 + 1_1$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Section 1 (`C(m)`, generating function `∏_{m ≥ 1} (1 - q^m)^{-m}`).
 
-Formalized by `MetaMathlibExt.nColorPartitions_card_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-partitions-card-small).
+Formalized by `MetaMathlibExt.nColorPartitions_card_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-partitions-card-small).
 
 ## Sum of odd divisors
 
@@ -142,7 +142,7 @@ the odd positive divisors of $k$. By convention $\sigma_{\mathrm{odd}}(0) = 0$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollaries 2, 4, 7, 10, 12 (`σ_odd`).
 
-Formalized by `MetaMathlibExt.sigmaOdd`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd).
+Formalized by `MetaMathlibExt.sigmaOdd`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd).
 
 ## Sum of the even divisors
 
@@ -153,7 +153,7 @@ sum of the even divisors of $k$ (so $\sigma_{\mathrm{even}}(0) = 0$).
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 3 (`σ_even`).
 
-Formalized by `MetaMathlibExt.sigmaEven`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-even).
+Formalized by `MetaMathlibExt.sigmaEven`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-even).
 
 ## Odd and even divisor sums of 12 and 9
 
@@ -166,7 +166,7 @@ and $\sigma_{\mathrm{even}}(9) = 0$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollaries 3 and 4.
 
-Formalized by `MetaMathlibExt.sigmaOdd_sigmaEven_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-sigma-even-small).
+Formalized by `MetaMathlibExt.sigmaOdd_sigmaEven_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-sigma-even-small).
 
 ## Total number of parts of $n$-color partitions via the divisor sum
 
@@ -183,7 +183,7 @@ where $\sigma(k)$ is the sum of the divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.nColor_totalParts_eq_sum_sigma` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-total-parts-eq-sum-sigma).
+Stated but not proved: `MetaMathlibExt.nColor_totalParts_eq_sum_sigma` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-total-parts-eq-sum-sigma).
 
 ## Odd-divisor sum via the total number of parts of $n$-color partitions
 
@@ -200,7 +200,7 @@ where $\sigma_{\mathrm{odd}}(m)$ is the sum of the odd divisors of $m$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sigmaOdd_eq_sum_nColor_partsDiff_mul_distinct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-eq-sum-n-color-parts-diff-mul).
+Stated but not proved: `MetaMathlibExt.sigmaOdd_eq_sum_nColor_partsDiff_mul_distinct` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-eq-sum-n-color-parts-diff-mul).
 
 ## Even divisor sums count the even parts of $n$-color partitions
 
@@ -217,7 +217,7 @@ where $\sigma_{\mathrm{even}}(k)$ is the sum of the even divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.nColor_evenParts_eq_sum_sigmaEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-even-parts-eq-sum-sigma-even).
+Stated but not proved: `MetaMathlibExt.nColor_evenParts_eq_sum_sigmaEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-even-parts-eq-sum-sigma-even).
 
 ## Number of odd parts in n-color partitions as a divisor sum
 
@@ -236,7 +236,7 @@ where $\sigma_{\mathrm{odd}}(k)$ is the sum of the odd divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-parts-eq-sum-sigma-odd).
+Stated but not proved: `MetaMathlibExt.nColor_oddParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-parts-eq-sum-sigma-odd).
 
 ## Parts of multiplicity at least t in n-color partitions
 
@@ -253,7 +253,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.nColor_partsMultiplicityGe_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-multiplicity-ge-eq-sum).
+Stated but not proved: `MetaMathlibExt.nColor_partsMultiplicityGe_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-multiplicity-ge-eq-sum).
 
 ## Parts in a residue class over n-color partitions as a divisor sum
 
@@ -271,7 +271,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.nColor_partsModEq_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-mod-eq-eq-sum).
+Stated but not proved: `MetaMathlibExt.nColor_partsModEq_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-mod-eq-eq-sum).
 
 ## Odd divisor sums count the parts of distinct $n$-color partitions
 
@@ -289,7 +289,7 @@ where $\sigma_{\mathrm{odd}}(k)$ is the sum of the odd divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.nColor_distinctTotalParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-total-parts-eq-sum-sigm).
+Stated but not proved: `MetaMathlibExt.nColor_distinctTotalParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-total-parts-eq-sum-sigm).
 
 ## Divisor sum via distinct $n$-color partitions
 
@@ -306,7 +306,7 @@ where $\sigma(m)$ is the sum of the divisors of $m$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.sigma_eq_sum_nColor_distinctPartsDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-eq-sum-n-color-distinct-parts-diff).
+Stated but not proved: `MetaMathlibExt.sigma_eq_sum_nColor_distinctPartsDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-eq-sum-n-color-distinct-parts-diff).
 
 ## Number of parts in n-color partitions into odd parts as a divisor sum
 
@@ -325,7 +325,7 @@ where $\sigma_{\mathrm{odd}}(k)$ is the sum of the odd divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 10.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-eq-sum-sigma).
+Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-eq-sum-sigma).
 
 ## Odd divisor sums count the parts of $n$-color partitions into odd parts
 
@@ -343,7 +343,7 @@ where $\sigma_{\mathrm{odd}}(k)$ is the sum of the odd divisors of $k$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 12.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_byParity_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-by-parity-eq).
+Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_byParity_eq_sum_sigmaOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-by-parity-eq).
 
 ## Generating functions for the total number of parts of $n$-color partitions
 
@@ -364,7 +364,7 @@ $$\sum_{m \ge 1} \frac{m q^m}{1 + q^m} =
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.nColor_totalParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-total-parts-generating-function).
+Stated but not proved: `MetaMathlibExt.nColor_totalParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-total-parts-generating-function).
 
 ## Generating function for the even parts of $n$-color partitions
 
@@ -382,7 +382,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.nColor_evenParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-even-parts-generating-function).
+Stated but not proved: `MetaMathlibExt.nColor_evenParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-even-parts-generating-function).
 
 ## Generating function for the number of odd parts in n-color partitions
 
@@ -400,7 +400,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-parts-generating-function).
+Stated but not proved: `MetaMathlibExt.nColor_oddParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-parts-generating-function).
 
 ## Generating function for colored parts of multiplicity at least $t$
 
@@ -415,7 +415,7 @@ $$\sum_{m \ge 1} m q^{mt} = \prod_{m \ge 1} (1 - q^m)^m \sum_{m \ge 0} N^t(m) q^
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.nColor_partsMultiplicityGe_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-multiplicity-ge-generating).
+Stated but not proved: `MetaMathlibExt.nColor_partsMultiplicityGe_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-multiplicity-ge-generating).
 
 ## Generating function for parts in a residue class over n-color partitions
 
@@ -434,7 +434,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.nColor_partsModEq_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-mod-eq-generating-function).
+Stated but not proved: `MetaMathlibExt.nColor_partsModEq_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-parts-mod-eq-generating-function).
 
 ## Generating functions for the parts of distinct $n$-color partitions
 
@@ -462,7 +462,7 @@ hold.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.nColor_distinctTotalParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-total-parts-generating).
+Stated but not proved: `MetaMathlibExt.nColor_distinctTotalParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-total-parts-generating).
 
 ## Odd-divisor sum via distinct $n$-color partitions and signed partition counts
 
@@ -487,7 +487,7 @@ $\sum_{k=1}^{3} C(D, k)\, C_{e-o}(3-k) = 1 \cdot (-1) + 2 \cdot (-1) + 5 \cdot 1
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 9.
 
-Stated but not proved: `MetaMathlibExt.sigmaOdd_eq_sum_nColor_distinctTotalParts_mul_signed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-eq-sum-n-color-distinct-total).
+Stated but not proved: `MetaMathlibExt.sigmaOdd_eq_sum_nColor_distinctTotalParts_mul_signed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#sigma-odd-eq-sum-n-color-distinct-total).
 
 ## Generating function for the number of parts in n-color partitions into odd parts
 
@@ -505,7 +505,7 @@ $$
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-generating-f).
+Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-generating-f).
 
 ## Generating function for parts of a given size in distinct $n$-color partitions
 
@@ -523,7 +523,7 @@ The paper assumes $j \ge 1$; for $j = 0$ both sides vanish.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.nColor_distinctPartsCountOf_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-parts-count-of-generati).
+Stated but not proved: `MetaMathlibExt.nColor_distinctPartsCountOf_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-distinct-parts-count-of-generati).
 
 ## Parts of n-color partitions into odd parts, by parity of the number of parts
 
@@ -553,7 +553,7 @@ $U_o(1) - U_e(1) = 0 - 1 = -1$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_byParity_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-by-parity-ge).
+Stated but not proved: `MetaMathlibExt.nColor_oddPartitionParts_byParity_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#n-color-odd-partition-parts-by-parity-ge).
 
 ## Signed odd-divisor sum via $n$-color partitions into odd parts
 
@@ -576,7 +576,7 @@ and the right side is $(0 - 1) \cdot 1 = -1$.
 
 - Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 13.
 
-Stated but not proved: `MetaMathlibExt.neg_one_pow_mul_sigmaOdd_eq_sum_nColor_oddPartsDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#neg-one-pow-mul-sigma-odd-eq-sum-n-color).
+Stated but not proved: `MetaMathlibExt.neg_one_pow_mul_sigmaOdd_eq_sum_nColor_oddPartsDiff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/StanleyElderPartsWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html#neg-one-pow-mul-sigma-odd-eq-sum-n-color).
 
 ## Depends on
 
@@ -585,4 +585,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stanley's and Elder's theorems on parts of partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/stanley-s-and-elder-s-theorems-on-parts-of-parti)

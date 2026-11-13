@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.22 The derived category
 
-Section 22.22 of the Stacks Project, [Tag 09KV](https://stacks.math.columbia.edu/tag/09KV). 5 tags here are carried by 33 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.22 of the Stacks Project, [Tag 09KV](https://stacks.math.columbia.edu/tag/09KV). 5 tags here are carried by 33 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09KW, a lemma
 
 [Tag 09KW](https://stacks.math.columbia.edu/tag/09KW) in the Stacks Project.
 
-**`DifferentialGradedModule.acyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L102). The attribute's comment: “acyclic subcategory”.
+**`DifferentialGradedModule.acyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L102). The attribute's comment: “acyclic subcategory”.
 
 > The acyclic differential graded modules, as a class of objects of the
 > homotopy category of right differential graded `A`-modules.
@@ -23,7 +23,7 @@ Section 22.22 of the Stacks Project, [Tag 09KV](https://stacks.math.columbia.edu
 def acyclic : ObjectProperty (HomotopyCategory.{u, v, w} A)
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L109). The attribute's comment: “quasi-isomorphisms”.
+**`DifferentialGradedModule.quasiIsomorphisms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L109). The attribute's comment: “quasi-isomorphisms”.
 
 > The quasi-isomorphisms in the homotopy category of right differential graded
 > `A`-modules: those morphisms all of whose representing homomorphisms are
@@ -33,7 +33,7 @@ def acyclic : ObjectProperty (HomotopyCategory.{u, v, w} A)
 def quasiIsomorphisms : MorphismProperty (HomotopyCategory.{u, v, w} A)
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L221). The attribute's comment: “quasi-isomorphisms represented by DG-module maps”.
+**`DifferentialGradedModule.quasiIsomorphisms_map_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L221). The attribute's comment: “quasi-isomorphisms represented by DG-module maps”.
 
 > A homomorphism of differential graded modules induces a quasi-isomorphism in the
 > homotopy category exactly when it is a quasi-isomorphism of the underlying cochain
@@ -45,7 +45,7 @@ theorem quasiIsomorphisms_map_iff {M N : DifferentialGradedModule.{u, v, w} A} (
       QuasiIso ((forgetToCochainComplex A).map g)
 ```
 
-**`DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L231). The attribute's comment: “strict fullness”.
+**`DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L231). The attribute's comment: “strict fullness”.
 
 > Acyclicity is invariant under isomorphism in the homotopy category: an isomorphism there
 > is represented by a homotopy equivalence of the underlying cochain complexes, so it induces
@@ -56,7 +56,7 @@ instance acyclic_isClosedUnderIsomorphisms :
     (acyclic.{u, v, w} A).IsClosedUnderIsomorphisms
 ```
 
-**`DifferentialGradedModule.degreeZeroCohomologyDescent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L324). The attribute's comment: “factorization of degree-zero cohomology”.
+**`DifferentialGradedModule.degreeZeroCohomologyDescent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L324). The attribute's comment: “factorization of degree-zero cohomology”.
 
 > Degree-zero cohomology of differential graded modules factors through the homotopy
 > category, and the resulting functor factors in turn through the localization at the
@@ -70,7 +70,7 @@ noncomputable def degreeZeroCohomologyDescent :
     DegreeZeroCohomologyDescent.{u, v, w} A
 ```
 
-**`DifferentialGradedModule.acyclic_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L599). The attribute's comment: “triangulated subcategory”.
+**`DifferentialGradedModule.acyclic_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L599). The attribute's comment: “triangulated subcategory”.
 
 > Acyclic differential graded modules form a triangulated subcategory of the homotopy category:
 > they are the objects killed by degree-zero cohomology in every shift, and degree-zero cohomology
@@ -80,7 +80,7 @@ noncomputable def degreeZeroCohomologyDescent :
 instance acyclic_isTriangulated : (acyclic.{u, v, w} A).IsTriangulated
 ```
 
-**`DifferentialGradedModule.acyclic_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L607). The attribute's comment: “saturation of acyclic modules”.
+**`DifferentialGradedModule.acyclic_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L607). The attribute's comment: “saturation of acyclic modules”.
 
 > The triangulated subcategory of acyclic differential graded modules is saturated: the kernel of
 > a homological functor is stable under retracts, and a direct summand is a retract.
@@ -89,7 +89,7 @@ instance acyclic_isTriangulated : (acyclic.{u, v, w} A).IsTriangulated
 instance acyclic_isSaturated : (acyclic.{u, v, w} A).IsSaturated
 ```
 
-**`DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L629). The attribute's comment: “associated multiplicative system”.
+**`DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L629). The attribute's comment: “associated multiplicative system”.
 
 > The morphisms of the homotopy category whose cone is acyclic are exactly the
 > quasi-isomorphisms.
@@ -99,7 +99,7 @@ theorem acyclic_trW_eq_quasiIsomorphisms :
     (acyclic.{u, v, w} A).trW = quasiIsomorphisms.{u, v, w} A
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L672). The attribute's comment: “saturated multiplicative system”.
+**`DifferentialGradedModule.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L672). The attribute's comment: “saturated multiplicative system”.
 
 > The quasi-isomorphisms of the homotopy category of right differential graded `A`-modules form
 > a saturated multiplicative system: they are the morphisms whose cone lies in the kernel of
@@ -110,7 +110,7 @@ theorem acyclic_trW_eq_quasiIsomorphisms :
 theorem quasiIsomorphisms_isSaturated : (quasiIsomorphisms.{u, v, w} A).IsSaturated
 ```
 
-**`DifferentialGradedModule.localization_kernel_eq_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L683). The attribute's comment: “kernel of localization”.
+**`DifferentialGradedModule.localization_kernel_eq_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean, line 683](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L683). The attribute's comment: “kernel of localization”.
 
 > The objects of the homotopy category annihilated by the localization at the
 > quasi-isomorphisms are exactly the acyclic differential graded modules: the acyclic modules are a
@@ -122,7 +122,7 @@ theorem localization_kernel_eq_acyclic :
     ((quasiIsomorphisms.{u, v, w} A).Q).kernel = acyclic.{u, v, w} A
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms_iff_forall_isIso_degreeZeroCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryIsoDetection.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryIsoDetection.lean#L82). The attribute's comment: “cohomology detects quasi-isomorphisms”.
+**`DifferentialGradedModule.quasiIsomorphisms_iff_forall_isIso_degreeZeroCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryIsoDetection.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryIsoDetection.lean#L82). The attribute's comment: “cohomology detects quasi-isomorphisms”.
 
 > **Cohomology detects quasi-isomorphisms on the homotopy category.** A morphism of `K(A, d)` is
 > a quasi-isomorphism exactly when degree-zero cohomology of each of its shifts is an isomorphism.
@@ -135,7 +135,7 @@ theorem quasiIsomorphisms_iff_forall_isIso_degreeZeroCohomology {X Y : HomotopyC
       ∀ n : ℤ, IsIso ((degreeZeroCohomologyOnHomotopy' A).map (g⟦n⟧'))
 ```
 
-**`DifferentialGradedModule.acyclic'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L446). The attribute's comment: “acyclic subcategory”.
+**`DifferentialGradedModule.acyclic'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L446). The attribute's comment: “acyclic subcategory”.
 
 > The acyclic differential graded modules, as objects of the homotopy category.
 
@@ -143,7 +143,7 @@ theorem quasiIsomorphisms_iff_forall_isIso_degreeZeroCohomology {X Y : HomotopyC
 def acyclic' : ObjectProperty (HomotopyCategory.{u, u, u} A)
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L451). The attribute's comment: “quasi-isomorphisms”.
+**`DifferentialGradedModule.quasiIsomorphisms'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L451). The attribute's comment: “quasi-isomorphisms”.
 
 > The quasi-isomorphisms in the homotopy category of differential graded modules.
 
@@ -152,7 +152,7 @@ def quasiIsomorphisms' :
     MorphismProperty (HomotopyCategory.{u, u, u} A)
 ```
 
-**`DifferentialGradedModule.degreeZeroCohomologyDescent'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L501). The attribute's comment: “factorization of degree-zero cohomology”.
+**`DifferentialGradedModule.degreeZeroCohomologyDescent'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L501). The attribute's comment: “factorization of degree-zero cohomology”.
 
 > The canonical descent data for degree-zero cohomology.
 
@@ -161,7 +161,7 @@ noncomputable def degreeZeroCohomologyDescent' :
     DegreeZeroCohomologyDescent' A
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms_map_iff'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L537). The attribute's comment: “quasi-isomorphisms represented by DG-module maps”.
+**`DifferentialGradedModule.quasiIsomorphisms_map_iff'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L537). The attribute's comment: “quasi-isomorphisms represented by DG-module maps”.
 
 > A DG-module map induces a quasi-isomorphism in the homotopy category
 > exactly when it is a quasi-isomorphism of the underlying cochain complexes.
@@ -173,7 +173,7 @@ theorem quasiIsomorphisms_map_iff'
       QuasiIso ((forgetToCochainComplex A).map g)
 ```
 
-**`DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L546). The attribute's comment: “strict fullness”.
+**`DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L546). The attribute's comment: “strict fullness”.
 
 > Acyclicity is invariant under isomorphism in the homotopy category.
 
@@ -182,7 +182,7 @@ instance acyclic_isClosedUnderIsomorphisms' :
     (acyclic' A).IsClosedUnderIsomorphisms
 ```
 
-**`DifferentialGradedModule.acyclic_isTriangulated'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L570). The attribute's comment: “triangulated subcategory”.
+**`DifferentialGradedModule.acyclic_isTriangulated'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L570). The attribute's comment: “triangulated subcategory”.
 
 > Acyclic differential graded modules form a triangulated subcategory.
 
@@ -190,7 +190,7 @@ instance acyclic_isClosedUnderIsomorphisms' :
 instance acyclic_isTriangulated' : (acyclic' A).IsTriangulated
 ```
 
-**`DifferentialGradedModule.acyclic_isSaturated'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L578). The attribute's comment: “saturation of acyclic modules”.
+**`DifferentialGradedModule.acyclic_isSaturated'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L578). The attribute's comment: “saturation of acyclic modules”.
 
 > The triangulated subcategory of acyclic modules is saturated.
 
@@ -198,7 +198,7 @@ instance acyclic_isTriangulated' : (acyclic' A).IsTriangulated
 instance acyclic_isSaturated' : (acyclic' A).IsSaturated
 ```
 
-**`DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L620). The attribute's comment: “associated multiplicative system”.
+**`DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L620). The attribute's comment: “associated multiplicative system”.
 
 > The morphisms whose cones are acyclic are exactly the quasi-isomorphisms.
 
@@ -207,7 +207,7 @@ theorem acyclic_trW_eq_quasiIsomorphisms' :
     (acyclic' A).trW = quasiIsomorphisms' A
 ```
 
-**`DifferentialGradedModule.quasiIsomorphisms_isSaturated'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L652). The attribute's comment: “saturated multiplicative system”.
+**`DifferentialGradedModule.quasiIsomorphisms_isSaturated'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L652). The attribute's comment: “saturated multiplicative system”.
 
 > Quasi-isomorphisms form a saturated multiplicative system.
 
@@ -216,7 +216,7 @@ theorem quasiIsomorphisms_isSaturated' :
     (quasiIsomorphisms' A).IsSaturated
 ```
 
-**`DifferentialGradedModule.localization_kernel_eq_acyclic'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L664). The attribute's comment: “kernel of localization”.
+**`DifferentialGradedModule.localization_kernel_eq_acyclic'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L664). The attribute's comment: “kernel of localization”.
 
 > The objects annihilated by localization at quasi-isomorphisms are exactly
 > the acyclic differential graded modules.
@@ -230,7 +230,7 @@ theorem localization_kernel_eq_acyclic' :
 
 [Tag 09KX](https://stacks.math.columbia.edu/tag/09KX) in the Stacks Project.
 
-**`DifferentialGradedModule.derivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L70). The attribute's comment: “derived category”.
+**`DifferentialGradedModule.derivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L70). The attribute's comment: “derived category”.
 
 > The derived category of a differential graded algebra `A`: the localization of the homotopy
 > category of right differential graded `A`-modules at the quasi-isomorphisms.
@@ -239,7 +239,7 @@ theorem localization_kernel_eq_acyclic' :
 abbrev derivedCategory : Type _
 ```
 
-**`DifferentialGradedModule.derivedCategory_eq_verdierQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L93). The attribute's comment: “Verdier quotient”.
+**`DifferentialGradedModule.derivedCategory_eq_verdierQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L93). The attribute's comment: “Verdier quotient”.
 
 > The derived category is the Verdier quotient of the homotopy category by the full
 > triangulated subcategory of acyclic modules: the two descriptions are localizations of the
@@ -251,7 +251,7 @@ theorem derivedCategory_eq_verdierQuotient :
     derivedCategory.{u, v, w} A = (acyclic.{u, v, w} A).verdierQuotient
 ```
 
-**`DifferentialGradedModule.degreeZeroCohomology_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L108). The attribute's comment: “uniqueness of degree-zero cohomology”.
+**`DifferentialGradedModule.degreeZeroCohomology_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L108). The attribute's comment: “uniqueness of degree-zero cohomology”.
 
 > Degree-zero cohomology on the derived category is the unique descent of degree-zero
 > cohomology on the homotopy category: any functor on the derived category whose composite with the
@@ -268,7 +268,7 @@ theorem degreeZeroCohomology_unique
         (degreeZeroCohomologyOnLocalizationIso A).hom = α.hom
 ```
 
-**`DifferentialGradedModule.derivedCategory'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L82). The attribute's comment: “derived category”.
+**`DifferentialGradedModule.derivedCategory'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L82). The attribute's comment: “derived category”.
 
 > The derived category `D(A, d)` of right differential graded `A`-modules: the localization
 > of the homotopy category `K(A, d)` at the quasi-isomorphisms.
@@ -277,7 +277,7 @@ theorem degreeZeroCohomology_unique
 abbrev derivedCategory' : Type (u + 1)
 ```
 
-**`DifferentialGradedModule.derivedCategory_eq_verdierQuotient'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L106). The attribute's comment: “Verdier quotient”.
+**`DifferentialGradedModule.derivedCategory_eq_verdierQuotient'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L106). The attribute's comment: “Verdier quotient”.
 
 > The derived category is the Verdier quotient of the homotopy category by the triangulated
 > subcategory of acyclic differential graded modules.
@@ -287,7 +287,7 @@ theorem derivedCategory_eq_verdierQuotient' :
     derivedCategory' A = (acyclic' A).verdierQuotient
 ```
 
-**`DifferentialGradedModule.degreeZeroCohomology_unique'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L117). The attribute's comment: “uniqueness of degree-zero cohomology”.
+**`DifferentialGradedModule.degreeZeroCohomology_unique'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L117). The attribute's comment: “uniqueness of degree-zero cohomology”.
 
 > Degree-zero cohomology on the derived category is the unique descent of degree-zero
 > cohomology on the homotopy category: a functor `G` on `D(A, d)` together with an identification
@@ -306,16 +306,16 @@ theorem degreeZeroCohomology_unique' (G : derivedCategory' A ⥤ ModuleCat.{u} R
 
 Declarations registered for the tag:
 
-- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L341), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L97) (StacksFrontier): “degree-zero cohomology”.
-- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalizationIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L355), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L99) (StacksFrontier): “cohomology factorization”.
-- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalization'`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L516), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L98) (StacksFrontier): “degree-zero cohomology on the derived category”.
-- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalizationIso'`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L529), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L100) (StacksFrontier): “factorization of degree-zero cohomology through the derived category”.
+- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L341), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L97) (StacksFrontier): “degree-zero cohomology”.
+- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalizationIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/QuasiIsomorphisms.lean#L355), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/DerivedCategory.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/DerivedCategory.lean#L99) (StacksFrontier): “cohomology factorization”.
+- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalization'`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L516), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L98) (StacksFrontier): “degree-zero cohomology on the derived category”.
+- [`DifferentialGradedModule.degreeZeroCohomologyOnLocalizationIso'`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/QuasiIsomorphism.lean#L529), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategory.lean#L100) (StacksFrontier): “factorization of degree-zero cohomology through the derived category”.
 
 ## Tag 09KY, a lemma
 
 [Tag 09KY](https://stacks.math.columbia.edu/tag/09KY) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_homEquiv_of_propertyPResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L136). The attribute's comment: “morphisms\_from\_p\_resolution”.
+**`DifferentialGradedModule.exists_homEquiv_of_propertyPResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L136). The attribute's comment: “morphisms\_from\_p\_resolution”.
 
 > **Stacks 09KY(1).** *"Let `P → M` be a P-resolution as in Lemma 09KP. Then
 > `Hom_{D(A,d)}(M, N) = Hom_{K(Mod_{(A,d)})}(P, N)`."*
@@ -335,7 +335,7 @@ theorem exists_homEquiv_of_propertyPResolution {P M : DifferentialGradedModule A
         (quasiIsomorphisms' A).Q.map ((toHomotopyCategory A).map f) ≫ g
 ```
 
-**`DifferentialGradedModule.exists_homEquiv_of_propertyIResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L156). The attribute's comment: “morphisms\_into\_i\_resolution”.
+**`DifferentialGradedModule.exists_homEquiv_of_propertyIResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L156). The attribute's comment: “morphisms\_into\_i\_resolution”.
 
 > **Stacks 09KY(2).** *"Let `N → I` be an I-resolution as in Lemma 09KU. Then
 > `Hom_{D(A,d)}(M, N) = Hom_{K(Mod_{(A,d)})}(M, I)`."*
@@ -359,7 +359,7 @@ theorem exists_homEquiv_of_propertyIResolution {N I : DifferentialGradedModule A
 
 [Tag 09QI](https://stacks.math.columbia.edu/tag/09QI) in the Stacks Project.
 
-**`DifferentialGradedModule.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean#L697). The attribute's comment: “direct\_sums”.
+**`DifferentialGradedModule.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean#L697). The attribute's comment: “direct\_sums”.
 
 > **Stacks Tag 09QI**, the direct-sum half: *"direct sums in `D(A, d)` are obtained by taking
 > direct sums of differential graded modules"*, in the form that the canonical functor
@@ -379,7 +379,7 @@ instance derivedCategoryQ_preservesCoproducts (A : DifferentialGradedAlgebra R) 
       (toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q)
 ```
 
-**`DifferentialGradedModule.derivedCategoryQ_preservesProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryProducts.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryProducts.lean#L539). The attribute's comment: “products”.
+**`DifferentialGradedModule.derivedCategoryQ_preservesProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryProducts.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryProducts.lean#L539). The attribute's comment: “products”.
 
 > *"Products in `D(A, d)` are obtained by taking products of differential graded modules"*,
 > in the form that the canonical functor
@@ -398,7 +398,7 @@ instance derivedCategoryQ_preservesProducts (A : DifferentialGradedAlgebra.{u, u
 
 [Tag 0FQE](https://stacks.math.columbia.edu/tag/0FQE) in the Stacks Project.
 
-**`DifferentialGradedModule.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean#L275).
+**`DifferentialGradedModule.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean#L275).
 
 > *"Let `R` be a ring. Let `(A, d)` be a differential graded `R`-algebra.
 > Using P-resolutions we can sometimes reduce statements about general objects of `D(A, d)` to
@@ -430,7 +430,7 @@ theorem property_of_coproducts_of_two_out_of_three_of_shifts
     ∀ K : derivedCategory' A, T K
 ```
 
-**`DifferentialGradedModule.General.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean#L1204). The attribute's comment: “algebra carrier universe independent of the base ring; cone-triangle structure”.
+**`DifferentialGradedModule.General.property_of_coproducts_of_two_out_of_three_of_shifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryDevissage.lean#L1204). The attribute's comment: “algebra carrier universe independent of the base ring; cone-triangle structure”.
 
 > The dévissage with the carrier of the algebra in a universe of its own. *"Let `R` be
 > a ring. Let `(A, d)` be a differential graded `R`-algebra. Using P-resolutions we can sometimes
@@ -473,4 +473,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.22, Tag 09KV](https://stacks.math.columbia.edu/tag/09KV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

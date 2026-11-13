@@ -8,13 +8,13 @@ proof: formalized
 
 # 60.3 Some explicit divided power thickenings
 
-Section 60.3 of the Stacks Project, [Tag 07HG](https://stacks.math.columbia.edu/tag/07HG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.3 of the Stacks Project, [Tag 07HG](https://stacks.math.columbia.edu/tag/07HG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07HH, a lemma
 
 [Tag 07HH](https://stacks.math.columbia.edu/tag/07HH) in the Stacks Project.
 
-**`Crystalline.exists_dividedPowers_secondOrderExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean#L981). The attribute's comment: “the first-order case, at N = 0 and q = 0”.
+**`Crystalline.exists_dividedPowers_secondOrderExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean, line 980](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean#L980). The attribute's comment: “the first-order case, at N = 0 and q = 0”.
 
 > The ideal of a second-order extension has divided powers given by the explicit
 > second-order formula, and the scalar inclusion is a divided-power morphism.
@@ -49,7 +49,7 @@ public theorem exists_dividedPowers_secondOrderExtension
 
 [Tag 07HI](https://stacks.math.columbia.edu/tag/07HI) in the Stacks Project.
 
-**`Crystalline.exists_dividedPowers_secondOrderExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean#L981).
+**`Crystalline.exists_dividedPowers_secondOrderExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean, line 980](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/ExplicitDividedPower/Basic.lean#L980).
 
 > The ideal of a second-order extension has divided powers given by the explicit
 > second-order formula, and the scalar inclusion is a divided-power morphism.
@@ -87,4 +87,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.3, Tag 07HG](https://stacks.math.columbia.edu/tag/07HG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

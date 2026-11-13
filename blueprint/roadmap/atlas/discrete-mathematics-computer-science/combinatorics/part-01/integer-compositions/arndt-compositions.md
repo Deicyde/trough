@@ -7,7 +7,7 @@ statement: formalized
 
 # Arndt compositions
 
-85 results, 43 proved and 42 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html).
+85 results, 43 proved and 42 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html).
 
 ## Number of Arndt compositions with parts in a set
 
@@ -21,7 +21,7 @@ $n$ with $k$ parts in $S$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 1 (definition of Arndt compositions, after D. F. Checa and J. L. Ramírez, arXiv:2311.15388, Section 1).
 
-Formalized by `MetaMathlibExt.arndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count).
+Formalized by `MetaMathlibExt.arndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count).
 
 ## Arndt compositions of 6 with two parts
 
@@ -34,7 +34,7 @@ They are $(5, 1)$ and $(4, 2)$.
 
 - D. F. Checa and J. L. Ramírez, *Arndt compositions: a generating functions approach*, arXiv:2311.15388, Section 1 (list of the Arndt compositions of `6`).
 
-Formalized by `MetaMathlibExt.arndtCompositionCount_six_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-two).
+Formalized by `MetaMathlibExt.arndtCompositionCount_six_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-two).
 
 ## Arndt compositions of 6 with three parts
 
@@ -47,7 +47,7 @@ They are $(4, 1, 1)$, $(3, 2, 1)$, $(3, 1, 2)$ and $(2, 1, 3)$.
 
 - D. F. Checa and J. L. Ramírez, *Arndt compositions: a generating functions approach*, arXiv:2311.15388, Section 1 (list of the Arndt compositions of `6`).
 
-Formalized by `MetaMathlibExt.arndtCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-three).
+Formalized by `MetaMathlibExt.arndtCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-three).
 
 ## Arndt compositions of 6 with four parts
 
@@ -60,7 +60,7 @@ It is $(2, 1, 2, 1)$.
 
 - D. F. Checa and J. L. Ramírez, *Arndt compositions: a generating functions approach*, arXiv:2311.15388, Section 1 (list of the Arndt compositions of `6`).
 
-Formalized by `MetaMathlibExt.arndtCompositionCount_six_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-four).
+Formalized by `MetaMathlibExt.arndtCompositionCount_six_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-six-four).
 
 ## Generating function of Arndt compositions with parts in a set
 
@@ -76,7 +76,7 @@ $\mathbb{Z}[y][[x]]$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 2.
 
-Formalized by `MetaMathlibExt.arndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf).
+Formalized by `MetaMathlibExt.arndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf).
 
 ## Coefficients of the generating function of Arndt compositions
 
@@ -90,7 +90,7 @@ in $S$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 2.
 
-Formalized by `MetaMathlibExt.coeff_arndtGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#coeff-arndt-gf).
+Formalized by `MetaMathlibExt.coeff_arndtGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#coeff-arndt-gf).
 
 ## Pair decomposition of the Arndt generating function
 
@@ -108,7 +108,7 @@ Equivalently, $A_S(x, y) = (1 + y P_S(x)) \sum_{m \ge 0} Q_S(x)^m y^{2m}$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 1 (`jis-2025-25.3.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.arndtGF_mul_one_sub_pairs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-mul-one-sub-pairs).
+Stated but not proved: `MetaMathlibExt.arndtGF_mul_one_sub_pairs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-mul-one-sub-pairs).
 
 ## Generating function of all Arndt compositions
 
@@ -125,7 +125,7 @@ $(x; x)_2 = (1 - x)(1 - x^2)$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 9 (`jis-2025-25.3.6-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.arndtGF_univ_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-univ-mul).
+Stated but not proved: `MetaMathlibExt.arndtGF_univ_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-univ-mul).
 
 ## Arndt compositions with a given number of parts as a sum of products
 
@@ -144,7 +144,7 @@ $a_1 + \dots + a_{\ell+1} = n$, $a_1, \dots, a_\ell \ge 3$ and $a_{\ell+1} \ge 1
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 10 (`jis-2025-25.3.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_sum_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-sum-prod).
+Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_sum_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-sum-prod).
 
 ## Arndt compositions with parts at most 3 and the Padovan numbers
 
@@ -159,7 +159,7 @@ given by $P(0) = P(1) = P(2) = 1$ and $P(n) = P(n-2) + P(n-3)$ for $n \ge 3$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 2 (`jis-2025-25.3.6-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.sum_arndtCompositionCount_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#sum-arndt-composition-count-le-three).
+Stated but not proved: `MetaMathlibExt.sum_arndtCompositionCount_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#sum-arndt-composition-count-le-three).
 
 ## Arndt compositions with parts at most 4 and Narayana's cows sequence
 
@@ -173,7 +173,7 @@ sequence: $N_0 = 0$, $N_1 = N_2 = 1$ and $N_m = N_{m-1} + N_{m-3}$ for $m \ge 3$
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 4 (`jis-2025-25.3.6-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.sum_arndtCompositionCount_le_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#sum-arndt-composition-count-le-four).
+Stated but not proved: `MetaMathlibExt.sum_arndtCompositionCount_le_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#sum-arndt-composition-count-le-four).
 
 ## Generating function of Arndt compositions with bounded largest part
 
@@ -194,7 +194,7 @@ The paper assumes $\ell \ge 2$; the identity also holds for $\ell = 0, 1$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 5 (`jis-2025-25.3.6-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.arndtGF_le_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-le-mul).
+Stated but not proved: `MetaMathlibExt.arndtGF_le_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-le-mul).
 
 ## Generating function of Arndt compositions with bounded smallest part
 
@@ -209,7 +209,7 @@ $$B(x, y; \ell) \left(1 - x - x^2 + x^3 - x^{2\ell+1} y^2\right) = (1 - x^2)(1 -
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 6 (`jis-2025-25.3.6-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.arndtGF_ge_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-ge-mul).
+Stated but not proved: `MetaMathlibExt.arndtGF_ge_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-ge-mul).
 
 ## Generating functions of Arndt compositions with even parts and with odd parts
 
@@ -228,7 +228,7 @@ $$A_O(x, y) \left(1 - x^2 + x^6 - x^4 (1 + y^2)\right) = (1 - x^4)(1 - x^2 + x y
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 7 (`jis-2025-25.3.6-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.arndtGF_even_odd_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-even-odd-mul).
+Stated but not proved: `MetaMathlibExt.arndtGF_even_odd_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-even-odd-mul).
 
 ## Down/up compositions
 
@@ -243,7 +243,7 @@ composition ($k = 0$) is taken to have last part $0$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3 (the set `W`, OEIS A025049).
 
-Formalized by `MetaMathlibExt.downUpCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count).
+Formalized by `MetaMathlibExt.downUpCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count).
 
 ## Down/up compositions of 5 with two parts
 
@@ -258,7 +258,7 @@ The compositions counted are $(4, 1)$ and $(3, 2)$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3 (the set `W`).
 
-Formalized by `MetaMathlibExt.downUpCompositionCount_five_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count-five-two).
+Formalized by `MetaMathlibExt.downUpCompositionCount_five_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count-five-two).
 
 ## Down/up compositions of 6 with three parts
 
@@ -273,7 +273,7 @@ The compositions counted are $(2, 1, 3)$ and $(3, 1, 2)$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3 (the set `W`).
 
-Formalized by `MetaMathlibExt.downUpCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count-six-three).
+Formalized by `MetaMathlibExt.downUpCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-composition-count-six-three).
 
 ## Generating function of down/up compositions with an even number of parts
 
@@ -286,7 +286,7 @@ when $k$ is odd. The empty composition, with last part $0$, contributes the cons
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3.1 (definition of `F`).
 
-Formalized by `MetaMathlibExt.downUpEvenGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-even-gf).
+Formalized by `MetaMathlibExt.downUpEvenGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-even-gf).
 
 ## Generating function of down/up compositions with an odd number of parts
 
@@ -299,7 +299,7 @@ when $k$ is even.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3.1 (definition of `G`).
 
-Formalized by `MetaMathlibExt.downUpOddGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-odd-gf).
+Formalized by `MetaMathlibExt.downUpOddGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-odd-gf).
 
 ## The auxiliary series $\alpha$ for down/up compositions
 
@@ -314,7 +314,7 @@ The paper uses it with $w = z$ and with $w = x$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 12, equation (5).
 
-Formalized by `MetaMathlibExt.arndtPalAlpha`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-pal-alpha).
+Formalized by `MetaMathlibExt.arndtPalAlpha`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-pal-alpha).
 
 ## The auxiliary series $\beta$ for down/up compositions
 
@@ -329,7 +329,7 @@ The paper uses it with $w = z$ and with $w = x$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 12, equation (5).
 
-Formalized by `MetaMathlibExt.arndtPalBeta`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-pal-beta).
+Formalized by `MetaMathlibExt.arndtPalBeta`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-pal-beta).
 
 ## Formula for the generating function of even-length down/up compositions
 
@@ -353,7 +353,7 @@ $$F(x, y, z) = \alpha(x, y, z) + \frac{\alpha(x, y, x)\, \beta(x, y, z)}{1 - \be
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 12 (`jis-2025-25.3.6-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.downUpEvenGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-even-gf-eq).
+Stated but not proved: `MetaMathlibExt.downUpEvenGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-even-gf-eq).
 
 ## Odd-length down/up compositions from even-length ones
 
@@ -368,7 +368,7 @@ $$G(x, y, z) = \frac{xyz}{1 - xz}\, F(x, y, xz).$$
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 13 (`jis-2025-25.3.6-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.downUpOddGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-odd-gf-eq).
+Stated but not proved: `MetaMathlibExt.downUpOddGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#down-up-odd-gf-eq).
 
 ## Palindromic Arndt compositions
 
@@ -383,7 +383,7 @@ $\sigma_{\lfloor k/2 \rfloor + 1}$ equals $m$; in particular $p(n, 0, m) = 0$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3 (the set `PA`).
 
-Formalized by `MetaMathlibExt.palindromicArndtCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-count).
+Formalized by `MetaMathlibExt.palindromicArndtCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-count).
 
 ## Palindromic Arndt compositions of 5
 
@@ -398,7 +398,7 @@ $x^5$ in the series expansion of the generating function of palindromic Arndt co
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3.2 (series expansion of `PA(x, y, 1)`).
 
-Formalized by `MetaMathlibExt.palindromicArndtCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-count-five).
+Formalized by `MetaMathlibExt.palindromicArndtCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-count-five).
 
 ## Palindromic Arndt generating function
 
@@ -414,7 +414,7 @@ summand $m$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 3.2 (definition of `PA`).
 
-Formalized by `MetaMathlibExt.palindromicArndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-gf).
+Formalized by `MetaMathlibExt.palindromicArndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-gf).
 
 ## Generating function of palindromic Arndt compositions
 
@@ -434,7 +434,7 @@ $$
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 14 (`jis-2025-25.3.6-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.palindromicArndtGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-gf-eq).
+Stated but not proved: `MetaMathlibExt.palindromicArndtGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#palindromic-arndt-gf-eq).
 
 ## Colored Arndt compositions
 
@@ -449,7 +449,7 @@ compositions $(\sigma_1, \dots, \sigma_k)$ of $n$ with $k$ parts.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 4 (definition of colored Arndt compositions).
 
-Formalized by `MetaMathlibExt.coloredArndtCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count).
+Formalized by `MetaMathlibExt.coloredArndtCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count).
 
 ## Colored Arndt compositions of 4
 
@@ -463,7 +463,7 @@ and $c(4, 3) = 2$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 4, list (6).
 
-Formalized by `MetaMathlibExt.coloredArndtCount_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count-four).
+Formalized by `MetaMathlibExt.coloredArndtCount_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count-four).
 
 ## Generating function of colored Arndt compositions
 
@@ -476,7 +476,7 @@ where $c(n, k)$ is the number of colored Arndt compositions of $n$ with $k$ part
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Section 4 (definition of `C(x, y)`).
 
-Formalized by `MetaMathlibExt.coloredArndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-gf).
+Formalized by `MetaMathlibExt.coloredArndtGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-gf).
 
 ## Closed form of the generating function of colored Arndt compositions
 
@@ -494,7 +494,7 @@ x^4(y^2 - 3) - x^5(3 + y^2) - x^6 + x^7}$.
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 17 (`jis-2025-25.3.6-thm-17`).
 
-Stated but not proved: `MetaMathlibExt.coloredArndtGF_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-gf-mul).
+Stated but not proved: `MetaMathlibExt.coloredArndtGF_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-gf-mul).
 
 ## Generating function for the total number of colored Arndt compositions
 
@@ -511,7 +511,7 @@ $$\Big(\sum_{n \ge 0} c(n) x^n\Big) (1 - x - 3x^2 + x^3 + 2x^4 - 4x^5 - x^6 + x^
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 18 (`jis-2025-25.3.6-cor-18`).
 
-Stated but not proved: `MetaMathlibExt.coloredArndt_total_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-total-mul).
+Stated but not proved: `MetaMathlibExt.coloredArndt_total_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-total-mul).
 
 ## Generating function of colored Arndt compositions with $k$ parts
 
@@ -529,7 +529,7 @@ $C_k(x) = \frac{x^{k + \lfloor k/2 \rfloor} (x^2 + x + 2)^{\lfloor k/2 \rfloor}}
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Theorem 19 (`jis-2025-25.3.6-thm-19`).
 
-Stated but not proved: `MetaMathlibExt.coloredArndt_parts_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-parts-mul).
+Stated but not proved: `MetaMathlibExt.coloredArndt_parts_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-parts-mul).
 
 ## Asymptotics of colored Arndt compositions with $k$ parts
 
@@ -541,7 +541,7 @@ $c(n, k) \sim \frac{n^{2k-1}}{2^{\lfloor k/2 \rfloor} (2k - 1)!}$ as $n \to \inf
 
 - Mohammed L. Nadji, Moussa Ahmia, Daniel F. Checa, and José L. Ramírez, *Arndt Compositions with Restricted Parts, Palindromes, and Colored Variants*, Journal of Integer Sequences 28 (2025), Article 25.3.6, Corollary 20 (`jis-2025-25.3.6-cor-20`).
 
-Stated but not proved: `MetaMathlibExt.coloredArndtCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count-is-equivalent).
+Stated but not proved: `MetaMathlibExt.coloredArndtCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#colored-arndt-count-is-equivalent).
 
 ## Bivariate generating function of a two-index count
 
@@ -556,7 +556,7 @@ $\sum_{n, m} a(n, m)\, x^n y^m$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2 (the series `A(x, y)`, `Ap(x, y)`, `Bp(x, y)`, `B(x, y)`, `A_k(x, y)` and `A^{(k)}(x, y)`).
 
-Formalized by `MetaMathlibExt.bivariateCountGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf).
+Formalized by `MetaMathlibExt.bivariateCountGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf).
 
 ## Coefficients of a bivariate generating function
 
@@ -569,7 +569,7 @@ $\sum_{m = 0}^{n} a(n, m)\, y^m \in \mathbb{Z}[y]$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.
 
-Formalized by `MetaMathlibExt.coeff_bivariateCountGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#coeff-bivariate-count-gf).
+Formalized by `MetaMathlibExt.coeff_bivariateCountGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#coeff-bivariate-count-gf).
 
 ## The Arndt generating function as a bivariate count series
 
@@ -582,7 +582,7 @@ $\sum_{n \ge 0} \sum_{m=0}^{n} a_S(n, m) x^n y^m$ in $\mathbb{Z}[y][[x]]$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2 (definition of `A(x, y)`).
 
-Formalized by `MetaMathlibExt.arndtGF_eq_bivariateCountGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-eq-bivariate-count-gf).
+Formalized by `MetaMathlibExt.arndtGF_eq_bivariateCountGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-gf-eq-bivariate-count-gf).
 
 ## Anti-palindromic compositions
 
@@ -596,7 +596,7 @@ middle part when $m$ is odd.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.1 (definition of anti-palindromic compositions, after Andrews, Just, and Simay).
 
-Formalized by `MetaMathlibExt.antiPalindromicCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count).
+Formalized by `MetaMathlibExt.antiPalindromicCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count).
 
 ## Reduced anti-palindromic compositions
 
@@ -615,7 +615,7 @@ with $m$ parts.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.1 (reduced anti-palindromic compositions and the choice of representative after Theorem 7).
 
-Formalized by `MetaMathlibExt.reducedAntiPalindromicCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou).
+Formalized by `MetaMathlibExt.reducedAntiPalindromicCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou).
 
 ## Anti-palindromic compositions of 6 with three parts
 
@@ -626,7 +626,7 @@ anti-palindromic compositions of $6$ with three parts.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.1 (each class has `2^{⌊ℓ/2⌋}` members).
 
-Formalized by `MetaMathlibExt.antiPalindromicCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count-six-t).
+Formalized by `MetaMathlibExt.antiPalindromicCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count-six-t).
 
 ## Reduced anti-palindromic compositions of 6 with three parts
 
@@ -637,7 +637,7 @@ anti-palindromic compositions of $6$ with three parts.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.1 (each class has `2^{⌊ℓ/2⌋}` members).
 
-Formalized by `MetaMathlibExt.reducedAntiPalindromicCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou-2).
+Formalized by `MetaMathlibExt.reducedAntiPalindromicCompositionCount_six_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou-2).
 
 ## Anti-palindromic compositions of 6 with four parts
 
@@ -649,7 +649,7 @@ composition of $6$ with four parts.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 2.1 (each class has `2^{⌊ℓ/2⌋}` members).
 
-Formalized by `MetaMathlibExt.antiPalindromicCompositionCount_six_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count-six-f).
+Formalized by `MetaMathlibExt.antiPalindromicCompositionCount_six_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#anti-palindromic-composition-count-six-f).
 
 ## Arndt compositions by last part
 
@@ -664,7 +664,7 @@ $j \ge 1$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 3 (definition of `b(n, m)` and Table 2).
 
-Formalized by `MetaMathlibExt.arndtLastPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count).
+Formalized by `MetaMathlibExt.arndtLastPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count).
 
 ## Arndt compositions of 6 by last part
 
@@ -675,7 +675,7 @@ of $n$ with last part $j$. Then $b(6, 1) = 4$, $b(6, 2) = 2$, $b(6, 3) = 1$ and 
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 3, Table 2.
 
-Formalized by `MetaMathlibExt.arndtLastPartCount_six`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-six).
+Formalized by `MetaMathlibExt.arndtLastPartCount_six`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-six).
 
 ## Number of $k$-Arndt compositions
 
@@ -688,7 +688,7 @@ $i \ge 0$ with $2i + 1 < m$. For $k = 0$ these are the Arndt compositions.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 4 (definition of `k`-Arndt compositions, after Hopkins and Tangboonduangjit; Theorem 11 treats `k ≥ 0` and `k < 0`).
 
-Formalized by `MetaMathlibExt.kArndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-count).
+Formalized by `MetaMathlibExt.kArndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-count).
 
 ## Sample values of the $k$-Arndt composition counts
 
@@ -700,7 +700,7 @@ $a_{-3}(4, 2) = 3$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 4 (series expansions after Theorem 11).
 
-Formalized by `MetaMathlibExt.kArndtCompositionCount_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-count-examples).
+Formalized by `MetaMathlibExt.kArndtCompositionCount_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-count-examples).
 
 ## Number of $k$-block Arndt compositions
 
@@ -717,7 +717,7 @@ The definition is meant for $k \ge 1$; its value at $k = 0$ has no combinatorial
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 5 (definition of `k`-block Arndt compositions).
 
-Formalized by `MetaMathlibExt.blockArndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#block-arndt-composition-count).
+Formalized by `MetaMathlibExt.blockArndtCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#block-arndt-composition-count).
 
 ## Four-part 3-block Arndt compositions of 10
 
@@ -731,7 +731,7 @@ $(3,2,1,4)$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Section 5 (list of the compositions counted by `a^{(3)}(10) = 18`).
 
-Formalized by `MetaMathlibExt.blockArndtCompositionCount_three_ten_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#block-arndt-composition-count-three-ten).
+Formalized by `MetaMathlibExt.blockArndtCompositionCount_three_ten_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#block-arndt-composition-count-three-ten).
 
 ## Alternating sum and recurrence for Arndt compositions
 
@@ -750,7 +750,7 @@ index $-1$ is allowed and $\binom{-1}{k} = (-1)^k$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_alternating_sum_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-alternating-s).
+Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_alternating_sum_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-alternating-s).
 
 ## Positive sum for Arndt compositions
 
@@ -770,7 +770,7 @@ term has lower index $\lfloor -1/2 \rfloor = -1$ and vanishes), so the case $m =
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_positive_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-positive-sum).
+Stated but not proved: `MetaMathlibExt.arndtCompositionCount_eq_positive_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-eq-positive-sum).
 
 ## Holonomic recurrence for Arndt compositions
 
@@ -784,7 +784,7 @@ n\, a(n, m) = 0.$$
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.arndtCompositionCount_holonomic_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-holonomic-recurr).
+Stated but not proved: `MetaMathlibExt.arndtCompositionCount_holonomic_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-holonomic-recurr).
 
 ## Asymptotics of Arndt compositions with a fixed number of parts
 
@@ -797,7 +797,7 @@ $$a(n, m) \sim \frac{n^{m-1}}{2^{\lfloor m/2 \rfloor} (m-1)!} \quad (n \to \inft
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.arndtCompositionCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-is-equivalent).
+Stated but not proved: `MetaMathlibExt.arndtCompositionCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-count-is-equivalent).
 
 ## Arndt compositions are counted by Fibonacci numbers
 
@@ -814,7 +814,7 @@ and $a(n) = F_n$ for every $n \ge 1$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.arndtComposition_total_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-total-eq-fib).
+Stated but not proved: `MetaMathlibExt.arndtComposition_total_eq_fib` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-total-eq-fib).
 
 ## Expected number of parts of an Arndt composition
 
@@ -832,7 +832,7 @@ number of parts of a uniformly random Arndt composition of $n$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.arndtComposition_expected_parts_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-expected-parts-is-equi).
+Stated but not proved: `MetaMathlibExt.arndtComposition_expected_parts_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-composition-expected-parts-is-equi).
 
 ## Generating function of anti-palindromic compositions
 
@@ -846,7 +846,7 @@ $Ap(x, y) = (1 - x - x^2 + x^3 + xy - x^3y)/(1 - x - x^2 + x^3 - 2x^3y^2)$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_antiPalindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-anti-palindromic).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_antiPalindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-anti-palindromic).
 
 ## Generating function of reduced anti-palindromic compositions
 
@@ -863,7 +863,7 @@ that is, $B_p(x, y) = (1 - x - x^2 + x^3 + xy - x^3 y)/(1 - x - x^2 + x^3 - x^3 
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_reducedAntiPalindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-reduced-anti-palindro).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_reducedAntiPalindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-reduced-anti-palindro).
 
 ## Arndt compositions and reduced anti-palindromic compositions are equinumerous
 
@@ -876,7 +876,7 @@ allowed as parts.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.reducedAntiPalindromicCompositionCount_eq_arndtCompositionCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou-3).
+Stated but not proved: `MetaMathlibExt.reducedAntiPalindromicCompositionCount_eq_arndtCompositionCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#reduced-anti-palindromic-composition-cou-3).
 
 ## Generating function of Arndt compositions by last part
 
@@ -891,7 +891,7 @@ $B(x, y)\,(1 - x - x^2)(1 - xy)(1 - x^2y) =
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_arndtLastPart` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-arndt-last-part).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_arndtLastPart` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-arndt-last-part).
 
 ## Closed formula for Arndt compositions by last part
 
@@ -909,7 +909,7 @@ while the formula gives $t_1(1) + t_2(1) = 1$), so $m \ge 1$ is assumed.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.arndtLastPartCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-eq).
+Stated but not proved: `MetaMathlibExt.arndtLastPartCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-eq).
 
 ## Asymptotics of Arndt compositions with a fixed last part
 
@@ -923,7 +923,7 @@ $n \to \infty$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.arndtLastPartCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-is-equivalent).
+Stated but not proved: `MetaMathlibExt.arndtLastPartCount_isEquivalent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-count-is-equivalent).
 
 ## Arndt compositions with last part at most or at least $k$
 
@@ -944,7 +944,7 @@ part at most $k - 1$ from $F_n$ gives.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.arndtLastPart_atMost_atLeast` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-at-most-at-least).
+Stated but not proved: `MetaMathlibExt.arndtLastPart_atMost_atLeast` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-last-part-at-most-at-least).
 
 ## Generating function of $k$-Arndt compositions for $k \ge 0$
 
@@ -958,7 +958,7 @@ $A_k(x, y) = (1 - x^2)(1 - x(1 - y))/(1 - x - x^2 + x^3 - x^{3+k}y^2)$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 11, case `k ≥ 0`.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_kArndt_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-k-arndt-nonneg).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_kArndt_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-k-arndt-nonneg).
 
 ## Generating function of $k$-Arndt compositions for negative $k$
 
@@ -973,7 +973,7 @@ $A_k(x, y) = (1 - x^2)(1 - x(1 - y))/(1 - x - x^2(1 + y^2) + x^3(1 - y^2) + y^2x
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 11, case `k < 0`.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_kArndt_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-k-arndt-neg).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_kArndt_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-k-arndt-neg).
 
 ## Counting $k$-Arndt compositions for nonnegative $k$
 
@@ -989,7 +989,7 @@ that is, $\sum_{n \ge 0} a_k(n)\, x^n = (1 - x^2)/(1 - x - x^2 + x^3 - x^{k+3})$
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 6, case `k ≥ 0`.
 
-Stated but not proved: `MetaMathlibExt.kArndtComposition_total_gf_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-total-gf-nonneg).
+Stated but not proved: `MetaMathlibExt.kArndtComposition_total_gf_nonneg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-total-gf-nonneg).
 
 ## Counting $k$-Arndt compositions for negative $k$
 
@@ -1005,7 +1005,7 @@ that is, $\sum_{n \ge 0} a_k(n)\, x^n = (1 - x^2)/(1 - x - 2x^2 + x^{2-k})$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 6, case `k < 0`.
 
-Stated but not proved: `MetaMathlibExt.kArndtComposition_total_gf_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-total-gf-neg).
+Stated but not proved: `MetaMathlibExt.kArndtComposition_total_gf_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-composition-total-gf-neg).
 
 ## Generating function of block Arndt compositions
 
@@ -1022,7 +1022,7 @@ $A^{(k)}(x, y) = \bigl(\sum_{j=0}^{k-1} J_j(x, y)\bigr) / (1 - J_k(x, y))$.
 
 - Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.bivariateCountGF_blockArndt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-block-arndt).
+Stated but not proved: `MetaMathlibExt.bivariateCountGF_blockArndt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtCompositionsGeneratingFunctionsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#bivariate-count-gf-block-arndt).
 
 ## Generalized Arndt compositions
 
@@ -1035,7 +1035,7 @@ unconstrained. The empty composition gives $a(0, k) = 1$, and $k = 0$ gives Arnd
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Definition 4.
 
-Formalized by `MetaMathlibExt.kArndtTotalCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count).
+Formalized by `MetaMathlibExt.kArndtTotalCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count).
 
 ## Generalized Arndt counts for compositions of five
 
@@ -1047,7 +1047,7 @@ whenever $2i \le m$) are $a(5, 0) = 5$, $a(5, -1) = 10$, $a(5, -2) = 14$ and $a(
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Table 9.
 
-Formalized by `MetaMathlibExt.kArndtTotalCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-five).
+Formalized by `MetaMathlibExt.kArndtTotalCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-five).
 
 ## Compositions into odd or small even parts
 
@@ -1059,7 +1059,7 @@ most $2k$. For $k = 0$ these are De Morgan's compositions of $n$ into odd parts.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Definitions 2 and 5.
 
-Formalized by `MetaMathlibExt.oddOrSmallEvenCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#odd-or-small-even-composition-count).
+Formalized by `MetaMathlibExt.oddOrSmallEvenCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#odd-or-small-even-composition-count).
 
 ## Compositions of five into odd or small even parts
 
@@ -1071,7 +1071,7 @@ $c^2_o(5) = 14$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Table 3 and the discussion after Theorem 5.
 
-Formalized by `MetaMathlibExt.oddOrSmallEvenCompositionCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#odd-or-small-even-composition-count-five).
+Formalized by `MetaMathlibExt.oddOrSmallEvenCompositionCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#odd-or-small-even-composition-count-five).
 
 ## Compositions into even or small odd parts
 
@@ -1084,7 +1084,7 @@ $2k + 1$. In particular $c^{2k+1}_e(0) = 1$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Definition 5.
 
-Formalized by `MetaMathlibExt.evenOrSmallOddCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-composition-count).
+Formalized by `MetaMathlibExt.evenOrSmallOddCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-composition-count).
 
 ## Compositions of $5$ into even or small odd parts
 
@@ -1096,7 +1096,7 @@ most $2k + 1$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Table 6 and the discussion after Theorem 6.
 
-Formalized by `MetaMathlibExt.evenOrSmallOddCompositionCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-composition-count-five).
+Formalized by `MetaMathlibExt.evenOrSmallOddCompositionCount_five`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-composition-count-five).
 
 ## The map $U$ on lists
 
@@ -1112,7 +1112,7 @@ $a + b - 2k$ is read as $0$ when it is negative, which happens only when $a = 0$
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 2 and its proof.
 
-Formalized by `MetaMathlibExt.arndtU`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u).
+Formalized by `MetaMathlibExt.arndtU`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u).
 
 ## Values of the map $U$
 
@@ -1123,7 +1123,7 @@ $(1, 4)$, $(3, 2)$ to $(5)$, $(1, 1, 1, 2)$ to $(2, 1, 2)$ and $(1, 3, 1)$ to $(
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Table 3.
 
-Formalized by `MetaMathlibExt.arndtU_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u-examples).
+Formalized by `MetaMathlibExt.arndtU_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u-examples).
 
 ## The map $V$ on lists
 
@@ -1139,7 +1139,7 @@ $a + b - 2k - 1$ is read as $0$ when it is negative, which happens only when $a 
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 3 and its proof.
 
-Formalized by `MetaMathlibExt.arndtV`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v).
+Formalized by `MetaMathlibExt.arndtV`, a definition declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v).
 
 ## Values of the map $V$
 
@@ -1150,7 +1150,7 @@ $(4, 1)$ to $(1, 1, 1, 2)$, $(1, 3, 1)$ to $(1, 3, 1)$ and $(2, 2, 1)$ to $(4, 1
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Table 6.
 
-Formalized by `MetaMathlibExt.arndtV_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v-examples).
+Formalized by `MetaMathlibExt.arndtV_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v-examples).
 
 ## Arndt compositions and compositions into odd parts are equinumerous
 
@@ -1163,7 +1163,7 @@ of $n$ into odd parts. This includes $n = 0$, where both counts are $1$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.kArndtTotalCount_zero_eq_odd_compositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-zero-eq-odd-composit).
+Stated but not proved: `MetaMathlibExt.kArndtTotalCount_zero_eq_odd_compositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-zero-eq-odd-composit).
 
 ## The pairwise map U permutes compositions
 
@@ -1177,7 +1177,7 @@ them.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_perm_composition_blocks_eq_arndtU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#exists-perm-composition-blocks-eq-arndt).
+Stated but not proved: `MetaMathlibExt.exists_perm_composition_blocks_eq_arndtU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#exists-perm-composition-blocks-eq-arndt).
 
 ## The map $V$ permutes compositions
 
@@ -1189,7 +1189,7 @@ of $n$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.exists_perm_composition_blocks_eq_arndtV` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#exists-perm-composition-blocks-eq-arndt-2).
+Stated but not proved: `MetaMathlibExt.exists_perm_composition_blocks_eq_arndtV` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#exists-perm-composition-blocks-eq-arndt-2).
 
 ## Compositions fixed by $U$ and their Padovan count
 
@@ -1204,7 +1204,7 @@ sequence, given by $P_0 = 1$, $P_1 = 0$, $P_2 = 1$ and $P_{j+3} = P_{j+1} + P_j$
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.arndtU_fixed_iff_and_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u-fixed-iff-and-count).
+Stated but not proved: `MetaMathlibExt.arndtU_fixed_iff_and_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-u-fixed-iff-and-count).
 
 ## Compositions fixed by $V$ and their Fibonacci count
 
@@ -1219,7 +1219,7 @@ the Fibonacci sequence with $F_0 = 0$ and $F_1 = 1$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.arndtV_fixed_iff_and_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v-fixed-iff-and-count).
+Stated but not proved: `MetaMathlibExt.arndtV_fixed_iff_and_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#arndt-v-fixed-iff-and-count).
 
 ## Recurrences for generalized Arndt counts
 
@@ -1242,7 +1242,7 @@ bijection uses the empty composition there. At $n = 2$ the recurrences fail for 
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.kArndtTotalCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-recurrence).
+Stated but not proved: `MetaMathlibExt.kArndtTotalCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-recurrence).
 
 ## Generalized Arndt compositions with negative even shift
 
@@ -1256,7 +1256,7 @@ $n = 0$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.kArndtTotalCount_neg_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-neg-even).
+Stated but not proved: `MetaMathlibExt.kArndtTotalCount_neg_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-neg-even).
 
 ## Generalized Arndt compositions with negative odd shift
 
@@ -1269,7 +1269,7 @@ compositions of $n$ in which every part is even or at most $2j + 1$. This includ
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.kArndtTotalCount_neg_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-neg-odd).
+Stated but not proved: `MetaMathlibExt.kArndtTotalCount_neg_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#k-arndt-total-count-neg-odd).
 
 ## Recurrences for even-or-small-odd and odd-or-small-even compositions
 
@@ -1292,7 +1292,7 @@ Both recurrences fail at $n = 2$.
 
 - Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.evenOrSmallOdd_oddOrSmallEven_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-odd-or-small-even-recu).
+Stated but not proved: `MetaMathlibExt.evenOrSmallOdd_oddOrSmallEven_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ArndtDeMorganCompositionsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html#even-or-small-odd-odd-or-small-even-recu).
 
 ## Depends on
 
@@ -1301,4 +1301,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arndt compositions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/arndt-compositions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-compositions/arndt-compositions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-compositions/arndt-compositions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.16 Relatively pure modules
 
-Section 38.16 of the Stacks Project, [Tag 05BB](https://stacks.math.columbia.edu/tag/05BB). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.16 of the Stacks Project, [Tag 05BB](https://stacks.math.columbia.edu/tag/05BB). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05J4, a definition
 
 [Tag 05J4](https://stacks.math.columbia.edu/tag/05J4) in the Stacks Project.
 
-**`AlgebraicGeometry.IsPureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L111). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.IsPureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L111). The attribute's comment: “part (1)”.
 
 > A finite type quasi-coherent module is pure along the fibre over the chosen point if no
 > impurity occurs over an elementary étale neighbourhood of that point.
@@ -23,7 +23,7 @@ Section 38.16 of the Stacks Project, [Tag 05BB](https://stacks.math.columbia.edu
 abbrev IsPureAlong (P : PrePureSituation.{u}) : Prop
 ```
 
-**`AlgebraicGeometry.IsUniversallyPureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L124). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.IsUniversallyPureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L124). The attribute's comment: “part (2)”.
 
 > A finite type quasi-coherent module is universally pure along the fibre over the chosen
 > point if no impurity occurs after any base change.
@@ -32,7 +32,7 @@ abbrev IsPureAlong (P : PrePureSituation.{u}) : Prop
 abbrev IsUniversallyPureAlong (P : PrePureSituation.{u}) : Prop
 ```
 
-**`AlgebraicGeometry.IsSchemePureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L129). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.IsSchemePureAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L129). The attribute's comment: “part (3)”.
 
 > The scheme `X` is pure along the fibre over `s` when its structure sheaf is pure there.
 
@@ -41,7 +41,7 @@ abbrev IsSchemePureAlong {X S : Scheme.{u}} (f : X ⟶ S)
     [LocallyOfFiniteType f] [QuasiCompact f] (s : S) : Prop
 ```
 
-**`AlgebraicGeometry.IsUniversallyPureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L143). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.IsUniversallyPureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L143). The attribute's comment: “part (4)”.
 
 > A finite type quasi-coherent module is universally pure relative to the base if it is
 > universally pure along every fibre.
@@ -52,7 +52,7 @@ abbrev IsUniversallyPureRelative {X S : Scheme.{u}} (f : X ⟶ S)
     [F.IsFiniteType] [F.IsQuasicoherent] : Prop
 ```
 
-**`AlgebraicGeometry.IsPureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L156). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.IsPureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L156). The attribute's comment: “part (5)”.
 
 > A finite type quasi-coherent module is pure relative to the base if it is pure along every
 > fibre.
@@ -63,7 +63,7 @@ abbrev IsPureRelative {X S : Scheme.{u}} (f : X ⟶ S)
     [F.IsFiniteType] [F.IsQuasicoherent] : Prop
 ```
 
-**`AlgebraicGeometry.IsSchemePureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L169). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.IsSchemePureRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Purity.lean#L169). The attribute's comment: “part (6)”.
 
 > The scheme `X` is pure relative to `S` when its structure sheaf is pure relative to the
 > base.
@@ -77,7 +77,7 @@ abbrev IsSchemePureRelative {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 05J5](https://stacks.math.columbia.edu/tag/05J5) in the Stacks Project.
 
-**`AlgebraicGeometry.noElementaryEtaleImpurity_of_noQuasiFiniteImpurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean#L218). The attribute's comment: “condition (2) implies condition (1)”.
+**`AlgebraicGeometry.noElementaryEtaleImpurity_of_noQuasiFiniteImpurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean#L219). The attribute's comment: “condition (2) implies condition (1)”.
 
 > Condition (2) implies condition (1): an elementary étale neighbourhood is étale, hence
 > quasi-finite at its distinguished point.
@@ -91,7 +91,7 @@ theorem noElementaryEtaleImpurity_of_noQuasiFiniteImpurity {f : X ⟶ S} {F : X.
     (h : NoQuasiFiniteImpurity f F s) : NoElementaryEtaleImpurity f F s
 ```
 
-**`AlgebraicGeometry.noHenselianImpurity_iff_relativeAssassinSpecializesIntoClosedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean#L268). The attribute's comment: “conditions (3) and (4) are equivalent”.
+**`AlgebraicGeometry.noHenselianImpurity_iff_relativeAssassinSpecializesIntoClosedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/LocallyOfFiniteTypePurity.lean#L269). The attribute's comment: “conditions (3) and (4) are equivalent”.
 
 > **Stacks Project, Tag 05J5.** For a morphism which is only locally of finite type,
 > conditions (3) and (4) are still equivalent: the impurities above `s` whose test family is a
@@ -109,7 +109,7 @@ theorem noHenselianImpurity_iff_relativeAssassinSpecializesIntoClosedFibre
     NoHenselianImpurity f F s Rh ↔ RelativeAssassinSpecializesIntoClosedFibre f F s Rh
 ```
 
-**`AlgebraicGeometry.noElementaryEtaleImpurity_iff_noQuasiFiniteImpurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean#L285). The attribute's comment: “conditions (1) and (2) are equivalent”.
+**`AlgebraicGeometry.noElementaryEtaleImpurity_iff_noQuasiFiniteImpurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean#L285). The attribute's comment: “conditions (1) and (2) are equivalent”.
 
 > **Stacks Project, Tag 05J5.** For a morphism which is only locally of finite type,
 > conditions (1) and (2) are still equivalent: an impurity above `s` whose test family is merely
@@ -130,7 +130,7 @@ theorem noElementaryEtaleImpurity_iff_noQuasiFiniteImpurity {f : X ⟶ S} [Local
 
 [Tag 05J6](https://stacks.math.columbia.edu/tag/05J6) in the Stacks Project.
 
-**`AlgebraicGeometry.isUniversallyPureAlong_iff_forall_baseChange_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean#L70). The attribute's comment: “the pointed-fibre equivalence”.
+**`AlgebraicGeometry.isUniversallyPureAlong_iff_forall_baseChange_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean#L70). The attribute's comment: “the pointed-fibre equivalence”.
 
 > **Stacks Project, Tag 05J6.** Universal purity along the chosen fibre can be tested by
 > purity after every pointed base change.
@@ -146,7 +146,7 @@ public theorem isUniversallyPureAlong_iff_forall_baseChange_isPureAlong
           IsPureAlong Q
 ```
 
-**`AlgebraicGeometry.isUniversallyPureRelative_iff_forall_baseChange_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean#L117). The attribute's comment: “the relative equivalence”.
+**`AlgebraicGeometry.isUniversallyPureRelative_iff_forall_baseChange_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/BaseChange.lean#L117). The attribute's comment: “the relative equivalence”.
 
 > **Stacks Project, Tag 05J6, in particular.** Universal purity over the base can be tested
 > by purity relative to every base change.
@@ -169,7 +169,7 @@ public theorem isUniversallyPureRelative_iff_forall_baseChange_isPureRelative
 
 [Tag 05J7](https://stacks.math.columbia.edu/tag/05J7) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_of_quasiFiniteAt_of_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFinitePointedBaseChange.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFinitePointedBaseChange.lean#L54).
+**`AlgebraicGeometry.isPureAlong_of_quasiFiniteAt_of_isPureAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFinitePointedBaseChange.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFinitePointedBaseChange.lean#L54).
 
 > **Stacks Project, Tag 05J7.** If a morphism of pointed schemes `(S', s') → (S, s)` is
 > quasi-finite at `s'` and a finite type quasi-coherent module is pure along the fibre over `s`,
@@ -188,7 +188,7 @@ public theorem isPureAlong_of_quasiFiniteAt_of_isPureAlong {P Q : PrePureSituati
 
 [Tag 05J8](https://stacks.math.columbia.edu/tag/05J8) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_iff_isUniversallyPureAlong_of_isNoetherianRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/NoetherianStalk.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/NoetherianStalk.lean#L218).
+**`AlgebraicGeometry.isPureAlong_iff_isUniversallyPureAlong_of_isNoetherianRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/NoetherianStalk.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/NoetherianStalk.lean#L218).
 
 > **Stacks Project, Tag 05J8.** Let `f : X ⟶ S` be of finite type, let `ℱ` be a finite type
 > quasi-coherent `𝒪_X`-module and let `s` be a point of `S` whose local ring `𝒪_{S, s}` is
@@ -205,7 +205,7 @@ theorem isPureAlong_iff_isUniversallyPureAlong_of_isNoetherianRing_stalk
 
 [Tag 05J9](https://stacks.math.columbia.edu/tag/05J9) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L102). The attribute's comment: “flat\_descend\_pure”.
+**`AlgebraicGeometry.isPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L102). The attribute's comment: “flat\_descend\_pure”.
 
 > **Stacks Project, Tag 05J9.** Purity along the original fibre follows from purity along the
 > fibre of a pointed base change which is flat at its distinguished point.
@@ -220,7 +220,7 @@ public theorem isPureAlong_of_flatPointedBaseChange (H : FlatPointedBaseChangeSi
       PrePureSituation.{u})
 ```
 
-**`AlgebraicGeometry.universallyPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L180). The attribute's comment: “flat\_descend\_universally\_pure”.
+**`AlgebraicGeometry.universallyPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L180). The attribute's comment: “flat\_descend\_universally\_pure”.
 
 > **Stacks Project, Tag 05J9.** Universal purity along a fibre descends through a pointed base
 > change which is flat at the new distinguished point.
@@ -237,7 +237,7 @@ public theorem universallyPureAlong_of_flatPointedBaseChange
 
 [Tag 05K1](https://stacks.math.columbia.edu/tag/05K1) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean#L201). The attribute's comment: “purity along the fibre”.
+**`AlgebraicGeometry.isPureAlong_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean#L201). The attribute's comment: “purity along the fibre”.
 
 > **Stacks Project, Tag 05K1.** Purity along a fibre is unchanged by pushing a finite type
 > quasi-coherent module forward along a closed immersion.
@@ -248,7 +248,7 @@ theorem isPureAlong_iff_pushforward :
       IsPureAlong (prePureSituationPushforward i f F s)
 ```
 
-**`AlgebraicGeometry.isUniversallyPureAlong_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean#L225). The attribute's comment: “universal purity along the fibre”.
+**`AlgebraicGeometry.isUniversallyPureAlong_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/FinitePushforward.lean#L225). The attribute's comment: “universal purity along the fibre”.
 
 > **Stacks Project, Tag 05K1.** Universal purity along a fibre is unchanged by pushing a finite
 > type quasi-coherent module forward along a closed immersion.
@@ -266,4 +266,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.16, Tag 05BB](https://stacks.math.columbia.edu/tag/05BB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

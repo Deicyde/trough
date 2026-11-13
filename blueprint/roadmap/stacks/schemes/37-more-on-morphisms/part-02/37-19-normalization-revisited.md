@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections, Stacks.IntegralClosure.SmoothPullback.range_integralClosureAlgebraι_app_pullback, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_eq, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_relativeSpec_eq, AlgebraicGeometry.isPullback_normalizationSchemeMap_of_etale, AlgebraicGeometry.isPullback_normalizationSchemeMap_of_smooth, AlgebraicGeometry.finite_irreducibleComponents_of_smooth
+lean: Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections, Stacks.IntegralClosure.SmoothPullback.range_integralClosureAlgebraι_app_pullback, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_eq, Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_relativeSpec_eq, AlgebraicGeometry.existsUnique_normalizationScheme_iso_pullback_of_smooth, AlgebraicGeometry.normalization_baseChange_henselization, AlgebraicGeometry.normalization_baseChange_strictHenselization
 statement: formalized
 proof: formalized
 ---
 
 # 37.19 Normalization revisited
 
-Section 37.19 of the Stacks Project, [Tag 081J](https://stacks.math.columbia.edu/tag/081J). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.19 of the Stacks Project, [Tag 081J](https://stacks.math.columbia.edu/tag/081J). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 081K, a lemma
 
 [Tag 081K](https://stacks.math.columbia.edu/tag/081K) in the Stacks Project.
 
-**`Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean#L183). The attribute's comment: “affine-open comparison map. The equality of subsheaves is asserted over a pair of affine opens `V ⊆ Y`, `U ⊆ S` with `V ⊆ g⁻¹U`, as bijectivity of the canonical map out of the base change of the sections of the integral closure, the quasi-coherent algebra being presented as `f_*𝒪_X` for `f` quasi-compact and quasi-separated. The identification of the sections of the pullback is `sectionsBaseChangeEquiv`, pinned by `sectionsBaseChangeEquiv_tmul_one` and `sectionsBaseChangeEquiv_one_tmul`. The same assertion in terms of the integral-closure subalgebra itself is `range_integralClosureAlgebraι_app_pullback`. The sheaf-level equality is not asserted here. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth, affine opens”.
+**`Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean#L183). The attribute's comment: “affine-open comparison map. The equality of subsheaves is asserted over a pair of affine opens `V ⊆ Y`, `U ⊆ S` with `V ⊆ g⁻¹U`, as bijectivity of the canonical map out of the base change of the sections of the integral closure, the quasi-coherent algebra being presented as `f_*𝒪_X` for `f` quasi-compact and quasi-separated. The identification of the sections of the pullback is `sectionsBaseChangeEquiv`, pinned by `sectionsBaseChangeEquiv_tmul_one` and `sectionsBaseChangeEquiv_one_tmul`. The same assertion in terms of the integral-closure subalgebra itself is `range_integralClosureAlgebraι_app_pullback`. The sheaf-level equality is not asserted here. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth, affine opens”.
 
 > **Stacks Project, Tag 081K**, over a pair of affine opens. Let `g : Y ⟶ S` be a smooth
 > morphism, let `𝒜 = f_*𝒪_X` be a quasi-coherent sheaf of `𝒪_S`-algebras and let `𝒜'` be the
@@ -34,7 +34,7 @@ public theorem bijective_toIntegralClosure_sections [QuasiCompact f] [QuasiSepar
         (TensorProduct.toIntegralClosure Γ(S, U) Γ(Y, V) Γ(X, f ⁻¹ᵁ U)))
 ```
 
-**`Stacks.IntegralClosure.SmoothPullback.range_integralClosureAlgebraι_app_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean#L211). The attribute's comment: “affine sections of the integral-closure subalgebra. Both sides are read over a pair of affine opens `V ⊆ Y`, `U ⊆ S` with `V ⊆ g⁻¹U`: the left is the sections of the integral-closure subalgebra of Stacks 035F in the pullback, the right the image of the base change of `𝒜'(U)`, which is the sections of that subalgebra over `U` by `AlgebraicGeometry.Scheme.QuasicoherentAlgebra.range_integralClosureAlgebraι_app_of_isAffineOpen`. The pullback is presented as `f_*𝒪_{X ×_S Y}`, not as `algebraPullback g`; the two agree by `Stacks.AffineAlgebraEquivalence.isIso_baseChangeAlgebraHom`, whose sections over an open are not computed in this repository, so the sheaf-level equality is not asserted here. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth, affine opens”.
+**`Stacks.IntegralClosure.SmoothPullback.range_integralClosureAlgebraι_app_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosure.lean#L211). The attribute's comment: “affine sections of the integral-closure subalgebra. Both sides are read over a pair of affine opens `V ⊆ Y`, `U ⊆ S` with `V ⊆ g⁻¹U`: the left is the sections of the integral-closure subalgebra of Stacks 035F in the pullback, the right the image of the base change of `𝒜'(U)`, which is the sections of that subalgebra over `U` by `AlgebraicGeometry.Scheme.QuasicoherentAlgebra.range_integralClosureAlgebraι_app_of_isAffineOpen`. The pullback is presented as `f_*𝒪_{X ×_S Y}`, not as `algebraPullback g`; the two agree by `Stacks.AffineAlgebraEquivalence.isIso_baseChangeAlgebraHom`, whose sections over an open are not computed in this repository, so the sheaf-level equality is not asserted here. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth, affine opens”.
 
 > **Stacks Project, Tag 081K**, over a pair of affine opens and in terms of the integral-closure
 > subalgebra itself. For `g` smooth and `𝒜 = f_*𝒪_X` with `f` affine, the sections over `V` of the
@@ -57,7 +57,7 @@ public theorem range_integralClosureAlgebraι_app_pullback [IsAffineHom f] [Smoo
           (integralClosure Γ(S, U) Γ(X, f ⁻¹ᵁ U)).val))
 ```
 
-**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosurePullback.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosurePullback.lean#L435). The attribute's comment: “the whole statement, in the development's own terms: the integral closure `integralClosureAlgebra` of the structure sheaf, the pullback `algebraPullback` of algebra sheaves, an arbitrary quasi-coherent `𝒜`, an arbitrary open of `Y`, and no hypothesis beyond `g` smooth. The two subsheaves of `g^*𝒜` are compared by the ranges of their sections, which is how the development writes an inclusion of algebra sheaves. The mathematics is `range_integralClosureAlgebraι_app_pullback_eq`, where Stacks 03GG and 03GV are consumed; what is added here is the transport `image_range_integralClosureAlgebraι_app` of the integral closure along an isomorphism of algebra sheaves, together with `normalizationAlgebraIso` and `Stacks.AlgebraPullbackQcoh.baseChangeAlgebraHom_naturality`.”. References: EGA IV (18.12.15).
+**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosurePullback.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosurePullback.lean#L437). The attribute's comment: “the whole statement, in the development's own terms: the integral closure `integralClosureAlgebra` of the structure sheaf, the pullback `algebraPullback` of algebra sheaves, an arbitrary quasi-coherent `𝒜`, an arbitrary open of `Y`, and no hypothesis beyond `g` smooth. The two subsheaves of `g^*𝒜` are compared by the ranges of their sections, which is how the development writes an inclusion of algebra sheaves. The mathematics is `range_integralClosureAlgebraι_app_pullback_eq`, where Stacks 03GG and 03GV are consumed; what is added here is the transport `image_range_integralClosureAlgebraι_app` of the integral closure along an isomorphism of algebra sheaves, together with `normalizationAlgebraIso` and `Stacks.AlgebraPullbackQcoh.baseChangeAlgebraHom_naturality`.”. References: EGA IV (18.12.15).
 
 > **Stacks Project, Tag 081K.** Let `g : Y ⟶ S` be a smooth morphism of schemes, let `𝒜` be a
 > quasi-coherent sheaf of commutative `𝒪_S`-algebras and let `𝒜' = integralClosureAlgebra 𝒜` be
@@ -72,7 +72,7 @@ public theorem range_integralClosureAlgebraι_app_algebraPullback_eq (W : Y.Open
       Set.range (((algebraPullback g).map (integralClosureAlgebraι A)).right.hom.app (op W))
 ```
 
-**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean#L329). The attribute's comment: “the equality of subsheaves, over an arbitrary open of `Y`. The quasi-coherent algebra is presented as `f_* 𝒪_X` for `f` affine rather than as an abstract quasi-coherent algebra, and the pullback as a direct image from a fibre product rather than through `algebraPullback`; the latter two agree by `isIso_baseChangeAlgebraHom_fromNormalization`, and the integral-closure subalgebra `𝒜'` is identified with the relative normalization by `range_integralClosureAlgebraι_app_eq_range_normalizationAlgebraι_app`. The affine-open comparison map, which is where Stacks 03GG is consumed, is `Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections`. Transport of the integral-closure subalgebra along an isomorphism of algebra sheaves, which removes the presentation of `𝒜` as `f_* 𝒪_X`, is `Stacks.IntegralClosure.SheafLevel.image_range_integralClosureAlgebraι_app`, and the resulting presentation-free form of this clause is `Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth base change”.
+**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean#L329). The attribute's comment: “the equality of subsheaves, over an arbitrary open of `Y`. The quasi-coherent algebra is presented as `f_* 𝒪_X` for `f` affine rather than as an abstract quasi-coherent algebra, and the pullback as a direct image from a fibre product rather than through `algebraPullback`; the latter two agree by `isIso_baseChangeAlgebraHom_fromNormalization`, and the integral-closure subalgebra `𝒜'` is identified with the relative normalization by `range_integralClosureAlgebraι_app_eq_range_normalizationAlgebraι_app`. The affine-open comparison map, which is where Stacks 03GG is consumed, is `Stacks.IntegralClosure.SmoothPullback.bijective_toIntegralClosure_sections`. Transport of the integral-closure subalgebra along an isomorphism of algebra sheaves, which removes the presentation of `𝒜` as `f_* 𝒪_X`, is `Stacks.IntegralClosure.SheafLevel.image_range_integralClosureAlgebraι_app`, and the resulting presentation-free form of this clause is `Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`. See the module docstring.”. References: EGA IV (18.12.15); EGA IV (6.14.5), “smooth base change”.
 
 > Let `g : Y ⟶ S` be a smooth morphism, let `𝒜 = f_* 𝒪_X` be a quasi-coherent sheaf of
 > `𝒪_S`-algebras with `f : X ⟶ S` affine, and let `𝒜' ⊆ 𝒜` be the integral closure of `𝒪_S` in
@@ -90,7 +90,7 @@ public theorem range_integralClosureAlgebraι_app_pullback_eq [IsAffineHom f] (W
       Set.range ((baseChangeNormalizationAlgebraι f g).right.hom.app (op W))
 ```
 
-**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_relativeSpec_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean#L383). The attribute's comment: “the equality of subsheaves for an arbitrary quasi-coherent `𝒪_S`-algebra `𝒜`, over an arbitrary open of `Y`. `𝒜` enters through its relative spectrum, so that `𝒜` itself is `(relativeSpecToBase 𝒜)_* 𝒪` up to the isomorphism `Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`. Invariance of the integral-closure subalgebra under an isomorphism of algebra sheaves, which lets the statement be read off `integralClosureAlgebra 𝒜` directly, is `Stacks.IntegralClosure.SheafLevel.image_range_integralClosureAlgebraι_app`, and the resulting statement — the equality of the subsheaves `integralClosureAlgebra (g^*𝒜)` and `g^*(integralClosureAlgebra 𝒜)` of `g^*𝒜` — is `Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`. See the module docstring and `range_integralClosureAlgebraι_app_pullback_eq`.”. References: EGA IV (18.12.15).
+**`Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_pullback_relativeSpec_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/IntegralClosureSheaf.lean#L383). The attribute's comment: “the equality of subsheaves for an arbitrary quasi-coherent `𝒪_S`-algebra `𝒜`, over an arbitrary open of `Y`. `𝒜` enters through its relative spectrum, so that `𝒜` itself is `(relativeSpecToBase 𝒜)_* 𝒪` up to the isomorphism `Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`. Invariance of the integral-closure subalgebra under an isomorphism of algebra sheaves, which lets the statement be read off `integralClosureAlgebra 𝒜` directly, is `Stacks.IntegralClosure.SheafLevel.image_range_integralClosureAlgebraι_app`, and the resulting statement — the equality of the subsheaves `integralClosureAlgebra (g^*𝒜)` and `g^*(integralClosureAlgebra 𝒜)` of `g^*𝒜` — is `Stacks.IntegralClosure.SheafLevel.range_integralClosureAlgebraι_app_algebraPullback_eq`. See the module docstring and `range_integralClosureAlgebraι_app_pullback_eq`.”. References: EGA IV (18.12.15).
 
 > Let `g : Y ⟶ S` be smooth and let `𝒜` be any quasi-coherent sheaf of `𝒪_S`-algebras, with
 > `𝒜' ⊆ 𝒜` the integral closure of `𝒪_S` in `𝒜`. Writing `X = Spec_S(𝒜)` for the relative
@@ -113,57 +113,30 @@ public theorem range_integralClosureAlgebraι_app_pullback_relativeSpec_eq (W : 
 
 [Tag 07TD](https://stacks.math.columbia.edu/tag/07TD) in the Stacks Project.
 
-**`AlgebraicGeometry.isPullback_normalizationSchemeMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleBaseChange.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/EtaleBaseChange.lean#L113). The attribute's comment: “the isomorphism `X^ν = X ×_Y Y^ν`, for an étale morphism”.
+**`AlgebraicGeometry.existsUnique_normalizationScheme_iso_pullback_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SmoothBaseChange.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SmoothBaseChange.lean#L275).
 
-> Let `φ : X ⟶ Y` be an étale morphism of schemes and assume every quasi-compact open of `Y` has
-> finitely many irreducible components. Then the square formed by the normalization morphisms of `X`
-> and `Y`, the morphism of normalizations induced by `φ` and `φ` itself is cartesian, that is,
-> `X^ν = X ×_Y Y^ν`.
-
-```lean
-theorem isPullback_normalizationSchemeMap_of_etale :
-    IsPullback
-      (normalizationSchemeMap φ (finite_irreducibleComponents_of_smooth φ hY) hY)
-      (X.normalization (finite_irreducibleComponents_of_smooth φ hY))
-      (Y.normalization hY) φ
-```
-
-**`AlgebraicGeometry.isPullback_normalizationSchemeMap_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SmoothBaseChange.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SmoothBaseChange.lean#L251). The attribute's comment: “the isomorphism `X^ν = X ×_Y Y^ν`”. References: SGA 3 X (8.9), “more general”.
-
-> **Stacks Project, Tag 07TD, the isomorphism `X^ν = X ×_Y Y^ν`.**
-> Let `φ : X ⟶ Y` be a smooth morphism of schemes and assume every quasi-compact open of `Y` has
-> finitely many irreducible components. Then the square formed by the normalization morphisms of
-> `X` and `Y`, the morphism of normalizations induced by `φ` and `φ` itself is cartesian.
+> **Normalization and smooth morphisms.** Let `φ : X ⟶ Y` be a smooth morphism of schemes and
+> assume every quasi-compact open of `Y` has finitely many irreducible components. Then the same is
+> true for `X`, and there is a unique isomorphism `X^ν ≅ X ×_Y Y^ν` over `X`, where `X^ν` and `Y^ν`
+> are the normalizations of `X` and `Y`.
 >
-> The finiteness hypothesis on `X` is the one ascending along `φ` from `hY`, which is the other
-> assertion of the tag, `AlgebraicGeometry.finite_irreducibleComponents_of_smooth`.
+> Existence is the cartesian square `AlgebraicGeometry.isPullback_normalizationSchemeMap_of_smooth`;
+> uniqueness holds because the only endomorphism of `X^ν` over `X` is the identity, by the universal
+> property `AlgebraicGeometry.Scheme.existsUnique_lift_normalization`.
 
 ```lean
-theorem isPullback_normalizationSchemeMap_of_smooth {X Y : Scheme.{u}} (φ : X ⟶ Y) [Smooth φ]
-    (hY : ∀ U : Y.Opens, IsCompact (U : Set Y) → (irreducibleComponents U).Finite) :
-    IsPullback
-      (normalizationSchemeMap φ (finite_irreducibleComponents_of_smooth φ hY) hY)
-      (X.normalization (finite_irreducibleComponents_of_smooth φ hY))
-      (Y.normalization hY) φ
-```
-
-**`AlgebraicGeometry.finite_irreducibleComponents_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/IrreducibleComponents.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/IrreducibleComponents.lean#L60). The attribute's comment: “finiteness of irreducible components”.
-
-> **Stacks Project, Tag 07TD.** Local finiteness of irreducible components ascends along a
-> smooth morphism.
-
-```lean
-public theorem finite_irreducibleComponents_of_smooth {X Y : Scheme.{u}} (f : X ⟶ Y)
-    [Smooth f]
-    (hY : ∀ U : Y.Opens, IsCompact (U : Set Y) → (irreducibleComponents U).Finite) :
-    ∀ U : X.Opens, IsCompact (U : Set X) → (irreducibleComponents U).Finite
+theorem existsUnique_normalizationScheme_iso_pullback_of_smooth {X Y : Scheme.{u}} (φ : X ⟶ Y)
+    [Smooth φ] (hY : ∀ U : Y.Opens, IsCompact (U : Set Y) → (irreducibleComponents U).Finite) :
+    ∃ hX : ∀ U : X.Opens, IsCompact (U : Set X) → (irreducibleComponents U).Finite,
+      ∃! e : X.normalizationScheme hX ≅ pullback φ (Y.normalization hY),
+        e.hom ≫ pullback.fst φ (Y.normalization hY) = X.normalization hX
 ```
 
 ## Tag 0CBM, a lemma
 
 [Tag 0CBM](https://stacks.math.columbia.edu/tag/0CBM) in the Stacks Project.
 
-**`AlgebraicGeometry.normalization_baseChange_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L294). The attribute's comment: “henselization”.
+**`AlgebraicGeometry.normalization_baseChange_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L294). The attribute's comment: “henselization”.
 
 > The base change of the normalization morphism of a locally Noetherian scheme `X` to the
 > spectrum of the henselization of the local ring of `X` at a point is the normalization morphism
@@ -185,7 +158,7 @@ public theorem normalization_baseChange_henselization (X : Scheme.{u}) [IsLocall
           (finite_irreducibleComponents_of_isCompact (Spec (.of Ah)))))
 ```
 
-**`AlgebraicGeometry.normalization_baseChange_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L313). The attribute's comment: “strict\_henselization”.
+**`AlgebraicGeometry.normalization_baseChange_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L313). The attribute's comment: “strict\_henselization”.
 
 > The base change of the normalization morphism of a locally Noetherian scheme `X` to the
 > spectrum of a strict henselization of the local ring of `X` at a point is the normalization
@@ -216,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.19, Tag 081J](https://stacks.math.columbia.edu/tag/081J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

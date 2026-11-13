@@ -7,7 +7,7 @@ statement: formalized
 
 # Continuity and differentiability at the origin in the plane
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html).
 
 ## The partial derivatives of $x^3/(x^2+y^2)$ are bounded
 
@@ -21,7 +21,7 @@ all $x,y\in\mathbb{R}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_56`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.CubicOverSumSquaresPartialsBoundedWanted.bounded_partialDerivs_cube_div_sq_add_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/CubicOverSumSquaresPartialsBoundedWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/CubicOverSumSquaresPartialsBoundedWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#bounded-partial-derivs-cube-div-sq-add-s).
+Stated but not proved: `MathlibExt.Analysis.Calculus.CubicOverSumSquaresPartialsBoundedWanted.bounded_partialDerivs_cube_div_sq_add_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/CubicOverSumSquaresPartialsBoundedWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/CubicOverSumSquaresPartialsBoundedWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#bounded-partial-derivs-cube-div-sq-add-s).
 
 ## The signed radial function is not differentiable at the origin
 
@@ -43,7 +43,7 @@ Then $f$ is not differentiable at $(0, 0)$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_06`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.SignedRadialNotDifferentiableWanted.not_differentiableAt_signed_norm_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/SignedRadialNotDifferentiableWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/SignedRadialNotDifferentiableWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#not-differentiable-at-signed-norm-zero).
+Stated but not proved: `MathlibExt.Analysis.Calculus.SignedRadialNotDifferentiableWanted.not_differentiableAt_signed_norm_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/SignedRadialNotDifferentiableWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/SignedRadialNotDifferentiableWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#not-differentiable-at-signed-norm-zero).
 
 ## The function $xy/(x^2+y^2)$ is discontinuous only at the origin
 
@@ -56,7 +56,7 @@ and is not continuous at $(0,0)$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_93`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.XYOverNormSqDiscontinuityWanted.continuousOn_compl_and_not_continuousAt_mul_div_sq_add_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/XYOverNormSqDiscontinuityWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/XYOverNormSqDiscontinuityWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#continuous-on-compl-and-not-continuous-a).
+Stated but not proved: `MathlibExt.Analysis.Calculus.XYOverNormSqDiscontinuityWanted.continuousOn_compl_and_not_continuousAt_mul_div_sq_add_sq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/XYOverNormSqDiscontinuityWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/XYOverNormSqDiscontinuityWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html#continuous-on-compl-and-not-continuous-a).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuity and differentiability at the origin in the plane](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/continuity-and-differentiability-at-the-origin-i)

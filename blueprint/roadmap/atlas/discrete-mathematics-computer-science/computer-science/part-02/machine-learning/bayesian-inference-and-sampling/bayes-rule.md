@@ -8,7 +8,7 @@ proof: formalized
 
 # Bayes' rule
 
-16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html).
+16 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html).
 
 ## Bayes posterior
 
@@ -25,7 +25,7 @@ marginal law of the observation. The inverse is taken in $[0, \infty]$, with $0^
 $\infty^{-1} = 0$ and $\infty \cdot 0 = 0$; in particular $\pi_x$ is the zero measure when the
 evidence is zero.
 
-Formalized by `Cslib.MachineLearning.Bayesian.bayesPosterior`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-posterior).
+Formalized by `Cslib.MachineLearning.Bayesian.bayesPosterior`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-posterior).
 
 ## The evidence is the integral of the likelihood
 
@@ -38,7 +38,7 @@ $$(\kappa \circ \mu)(\{x\}) = \int_\Theta \kappa_\theta(\{x\}) \, d\mu(\theta),$
 where $\kappa \circ \mu$ is the composition of $\mu$ with $\kappa$ (the marginal law of the
 observation) and the right side is the Lebesgue integral of a $[0, \infty]$-valued function.
 
-Formalized by `Cslib.MachineLearning.Bayesian.comp_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-apply-singleton).
+Formalized by `Cslib.MachineLearning.Bayesian.comp_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-apply-singleton).
 
 ## Evidence times posterior is the joint mass
 
@@ -53,7 +53,7 @@ $$(\kappa \circ \mu)(\{x\}) \cdot \pi_x(s) = \int_s \kappa_\theta(\{x\}) \, d\mu
 where $\kappa \circ \mu$ is the composition of $\mu$ with $\kappa$, so that the first factor is the
 evidence of $x$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.comp_mul_bayesPosterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-mul-bayes-posterior).
+Formalized by `Cslib.MachineLearning.Bayesian.comp_mul_bayesPosterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-mul-bayes-posterior).
 
 ## Maximum-likelihood hypothesis for a discrete observation
 
@@ -64,7 +64,7 @@ $\theta \in \Theta$ is a maximum-likelihood hypothesis for the observation $x \i
 no hypothesis gives $x$ higher likelihood: $\kappa_{\theta'}(\{x\}) \le \kappa_\theta(\{x\})$ for
 every $\theta' \in \Theta$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.IsMLE`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-mle).
+Formalized by `Cslib.MachineLearning.Bayesian.IsMLE`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-mle).
 
 ## Maximum a posteriori hypothesis
 
@@ -75,7 +75,7 @@ $x \in \mathcal X$ under the likelihood $\kappa$. A hypothesis $\theta \in \Thet
 posteriori (MAP) hypothesis for $x$ when $\pi_x(\{\theta'\}) \le \pi_x(\{\theta\})$ for every
 $\theta' \in \Theta$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.IsMAP`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map).
+Formalized by `Cslib.MachineLearning.Bayesian.IsMAP`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map).
 
 ## Bayes posterior kernel
 
@@ -85,7 +85,7 @@ on $\Theta$. The Bayes posterior kernel is the kernel from $\mathcal X$ to $\The
 observation $x \in \mathcal X$ to the Bayes posterior of the prior $\mu$ after observing $x$ under
 the likelihood $\kappa$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.bayesKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.bayesKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-kernel).
 
 ## Bayes' rule for discrete observations
 
@@ -100,7 +100,7 @@ prior, then the posterior measure $\kappa^\dagger\mu(x)$ equals the Bayes poster
 observing $x$: the prior $\mu$ reweighted by the likelihood $\theta \mapsto \kappa_\theta(\{x\})$
 and divided by the evidence.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_eq_bayesPosterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-eq-bayes-posterior).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_eq_bayesPosterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-eq-bayes-posterior).
 
 ## The evidence as a sum over hypotheses
 
@@ -113,7 +113,7 @@ $$(\kappa \circ \mu)(\{x\}) = \sum_{\theta \in \Theta} \mu(\{\theta\}) \, \kappa
 where $\kappa \circ \mu$ is the composition of $\mu$ with $\kappa$ (the marginal law of the
 observation) and the sum is taken in $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.comp_apply_singleton_eq_tsum`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-apply-singleton-eq-tsum).
+Formalized by `Cslib.MachineLearning.Bayesian.comp_apply_singleton_eq_tsum`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-apply-singleton-eq-tsum).
 
 ## Bayes' rule for countably many hypotheses
 
@@ -129,7 +129,7 @@ $$\pi_x(\{\theta\}) = \frac{\mu(\{\theta\}) \, \kappa_\theta(\{x\})}
 where the quotient is taken in $[0, \infty]$ with $0 / 0 = 0$ and $a / \infty = 0$ for every $a$.
 The denominator is the evidence of $x$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.bayesPosterior_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-posterior-apply-singleton).
+Formalized by `Cslib.MachineLearning.Bayesian.bayesPosterior_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#bayes-posterior-apply-singleton).
 
 ## Bayes' rule for Mathlib's posterior kernel with countably many hypotheses and observations
 
@@ -148,7 +148,7 @@ $$
 {\sum_{\theta' \in \Theta} \mu(\{\theta'\})\,\kappa_{\theta'}(\{x\})}.
 $$
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-apply-singleton).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_apply_singleton`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-apply-singleton).
 
 ## MAP hypotheses maximize prior times likelihood
 
@@ -163,7 +163,7 @@ $\theta' \in \Theta$.
 
 The evidence $(\kappa \circ \mu)(\{x\})$ is a common factor of all posterior masses.
 
-Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff).
+Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff).
 
 ## Under a uniform prior, MAP is maximum likelihood
 
@@ -176,7 +176,7 @@ $\mu$ with $\kappa$. Then a hypothesis $\theta \in \Theta$ is a MAP hypothesis f
 prior $\mu$ and the likelihood $\kappa$ if and only if it is a maximum-likelihood hypothesis for
 $x$ under $\kappa$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff_isMLE_of_uniform`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff-is-mle-of-uniform).
+Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff_isMLE_of_uniform`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff-is-mle-of-uniform).
 
 ## MAP hypotheses through the posterior kernel
 
@@ -191,7 +191,7 @@ likelihood $\kappa$ if and only if
 $\kappa^\dagger_\mu(x)(\{\theta'\}) \le \kappa^\dagger_\mu(x)(\{\theta\})$ for every
 $\theta' \in \Theta$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff_posterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Basic.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff-posterior).
+Formalized by `Cslib.MachineLearning.Bayesian.isMAP_iff_posterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Basic.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Basic.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#is-map-iff-posterior).
 
 ## The evidence from a factorization of densities
 
@@ -208,7 +208,7 @@ the data, the measure $\kappa \circ \mu$ on $\mathcal{X}$ given by
 $(\kappa \circ \mu)(s) = \int \kappa(\theta)(s) \, d\mu(\theta)$ for measurable $s$, has density
 $c$ with respect to $\rho$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.comp_eq_withDensity_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Density.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-eq-with-density-of-mul-eq).
+Formalized by `Cslib.MachineLearning.Bayesian.comp_eq_withDensity_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Density.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-eq-with-density-of-mul-eq).
 
 ## Disintegration of the joint law from a factorization of densities
 
@@ -231,7 +231,7 @@ similarly $(\kappa \circ \mu) \otimes \eta$ on $\mathcal{X} \times \Theta$. Then
 $(\kappa \circ \mu) \otimes \eta$ is the image of $\mu \otimes \kappa$ under the swap
 $(\theta, x) \mapsto (x, \theta)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.compProd_eq_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Density.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-prod-eq-of-mul-eq).
+Formalized by `Cslib.MachineLearning.Bayesian.compProd_eq_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Density.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#comp-prod-eq-of-mul-eq).
 
 ## Bayes' rule for densities
 
@@ -249,7 +249,7 @@ $\kappa \circ \mu$, given by $(\kappa \circ \mu)(s) = \int \kappa(\theta)(s) \, 
 posterior $\kappa^\dagger_\mu(x)$ of $\kappa$ with respect to $\mu$ is the measure with density
 $r(x, \cdot)$ with respect to $\nu$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_ae_eq_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/Density.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-ae-eq-of-mul-eq).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_ae_eq_of_mul_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/Density.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/Density.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html#posterior-ae-eq-of-mul-eq).
 
 ## Depends on
 
@@ -258,4 +258,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bayes' rule](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/bayes-rule)

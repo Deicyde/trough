@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.20 Descending étale morphisms
 
-Section 41.20 of the Stacks Project, [Tag 0BTH](https://stacks.math.columbia.edu/tag/0BTH). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.20 of the Stacks Project, [Tag 0BTH](https://stacks.math.columbia.edu/tag/0BTH). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BTI, an equation
 
 [Tag 0BTI](https://stacks.math.columbia.edu/tag/0BTI) in the Stacks Project.
 
-**`AlgebraicGeometry.canonicalDescentData_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean#L91). The attribute's comment: “étale objects”.
+**`AlgebraicGeometry.canonicalDescentData_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean#L91). The attribute's comment: “étale objects”.
 
 > The canonical descent datum of an étale scheme over `S` has an étale underlying scheme
 > over `X`.
@@ -25,7 +25,7 @@ theorem canonicalDescentData_etale (f : X ⟶ S) (U : S.Etale) :
       ((DescentData.canonicalFunctor f).obj ((Scheme.Etale.forget S).obj U))
 ```
 
-**`AlgebraicGeometry.etaleDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean#L113). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.etaleDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/Descent.lean#L113). The attribute's comment: “the functor”.
 
 > The canonical functor, given by pullback along `f`, from étale `S`-schemes to descent data
 > relative to `f` with étale underlying `X`-scheme.
@@ -39,7 +39,7 @@ def etaleDescentFunctor (f : X ⟶ S) :
 
 [Tag 0BTJ](https://stacks.math.columbia.edu/tag/0BTJ) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleDescentFunctor_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L128).
+**`AlgebraicGeometry.etaleDescentFunctor_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L128).
 
 > Pullback to a surjective scheme detects equality of morphisms
 > between étale schemes over the base.
@@ -53,7 +53,7 @@ theorem etaleDescentFunctor_faithful (f : X ⟶ S) [Surjective f] :
 
 [Tag 0BTK](https://stacks.math.columbia.edu/tag/0BTK) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_submersive_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L275). References: SGA 1 IX (3.4), “fully faithful”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_submersive_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L275). References: SGA 1 IX (3.4), “fully faithful”.
 
 > Étale descent is fully faithful when the morphism and all its
 > étale base changes are submersive.
@@ -70,7 +70,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_submersive_baseChange (f : X ⟶ S)
 
 [Tag 0BTL](https://stacks.math.columbia.edu/tag/0BTL) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L508). The attribute's comment: “universally\_closed”. References: SGA 1 IX (6.9), “fully faithful half”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L508). The attribute's comment: “universally\_closed”. References: SGA 1 IX (6.9), “fully faithful half”.
 
 > Étale descent along a
 > surjective universally closed morphism is fully faithful.
@@ -80,7 +80,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_universallyClosed (f : X ⟶ S) [Su
     [UniversallyClosed f] : Nonempty (etaleDescentFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L518). The attribute's comment: “universally\_open”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L518). The attribute's comment: “universally\_open”.
 
 > Étale descent along a
 > surjective universally open morphism is fully faithful.
@@ -90,7 +90,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_universallyOpen (f : X ⟶ S) [Surj
     [UniversallyOpen f] : Nonempty (etaleDescentFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_quasiCompact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L528). The attribute's comment: “quasi\_compact\_flat”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_quasiCompact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L528). The attribute's comment: “quasi\_compact\_flat”.
 
 > Étale descent along a
 > surjective quasi-compact flat morphism is fully faithful.
@@ -104,7 +104,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_quasiCompact_of_flat (f : X ⟶ S) 
 
 [Tag 0BTM](https://stacks.math.columbia.edu/tag/0BTM) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEtaleEffective_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/EtaleBaseLocal.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/EtaleBaseLocal.lean#L659). References: SGA 1 IX (4.3), “sufficiency”; SGA 1 VIII (7.3), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEtaleEffective_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/EtaleBaseLocal.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Scheme/EtaleBaseLocal.lean#L659). References: SGA 1 IX (4.3), “sufficiency”; SGA 1 VIII (7.3), “partial”.
 
 > **Effectivity of an étale descent datum is Zariski-local on the base.** Let `f : X ⟶ S` be a
 > morphism of schemes and `(V, φ)` a descent datum relative to `X/S` with `V ⟶ X` étale, and let
@@ -128,7 +128,7 @@ theorem isEtaleEffective_of_isOpenCover {S X : Scheme.{u}} {f : X ⟶ S} (D : De
 
 [Tag 0BTN](https://stacks.math.columbia.edu/tag/0BTN) in the Stacks Project.
 
-**`Stacks.Etale.exists_coprod_isFinite_and_isEmpty_closedFiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianSplitting.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianSplitting.lean#L387).
+**`Stacks.Etale.exists_coprod_isFinite_and_isEmpty_closedFiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianSplitting.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianSplitting.lean#L387).
 
 > **Stacks Project, Tag 0BTN.** A quasi-compact separated étale scheme over a henselian pair,
 > with finite closed fibre, is the disjoint union of a finite scheme over the base and a scheme
@@ -151,7 +151,7 @@ lemma exists_coprod_isFinite_and_isEmpty_closedFiber
 
 [Tag 0BTP](https://stacks.math.columbia.edu/tag/0BTP) in the Stacks Project.
 
-**`AlgebraicGeometry.fullyFaithful_quasiCompactSeparatedEtaleDescentFunctor_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IntegralEtaleDescent.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/IntegralEtaleDescent.lean#L224). The attribute's comment: “the fully faithful half of the equivalence”.
+**`AlgebraicGeometry.fullyFaithful_quasiCompactSeparatedEtaleDescentFunctor_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IntegralEtaleDescent.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/IntegralEtaleDescent.lean#L224). The attribute's comment: “the fully faithful half of the equivalence”.
 
 > **Stacks Project, Tag 0BTP, the fully faithful half.** Let `f : X ⟶ S` be a surjective
 > integral morphism. The functor of Tag 0BTI, restricted to the schemes quasi-compact, separated
@@ -167,7 +167,7 @@ theorem fullyFaithful_quasiCompactSeparatedEtaleDescentFunctor_of_isIntegralHom
     Nonempty (quasiCompactSeparatedEtaleDescentFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.isEquivalence_quasiCompactSeparatedEtaleDescentFunctor_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianCase.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianCase.lean#L267). References: SGA 1 IX (4.11), “more general”; SGA 1 IX (4.7).
+**`AlgebraicGeometry.isEquivalence_quasiCompactSeparatedEtaleDescentFunctor_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianCase.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DescentEffectivity/HenselianCase.lean#L267). References: SGA 1 IX (4.11), “more general”; SGA 1 IX (4.7).
 
 > **[Stacks, Tag 0BTP](https://stacks.math.columbia.edu/tag/0BTP).** Let `f : X ⟶ S` be a
 > surjective integral morphism. The functor of Tag 0BTI induces an equivalence between the category
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.20, Tag 0BTH](https://stacks.math.columbia.edu/tag/0BTH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

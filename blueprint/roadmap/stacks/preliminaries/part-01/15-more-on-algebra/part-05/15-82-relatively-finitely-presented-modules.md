@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.82 Relatively finitely presented modules
 
-Section 15.82 of the Stacks Project, [Tag 0659](https://stacks.math.columbia.edu/tag/0659). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.82 of the Stacks Project, [Tag 0659](https://stacks.math.columbia.edu/tag/0659). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05GY, a lemma
 
 [Tag 05GY](https://stacks.math.columbia.edu/tag/05GY) in the Stacks Project.
 
-**`Module.finitePresentationRel_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L117).
+**`Module.finitePresentationRel_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L117).
 
 > Stacks 05GY: for an `A`-module `M` over a finite type ring map `R → A`, the three
 > conditions "some presentation", "all presentations" and "all finitely presented covers" are
@@ -27,7 +27,7 @@ theorem Module.finitePresentationRel_tfae [Algebra.FiniteType R A] :
      Module.FinitePresentationRel.AllFPCovers.{u} R A M].TFAE
 ```
 
-**`Module.FinitePresentationRel.finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Relative.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/Relative.lean#L129). The attribute's comment: “the final conclusion, that a module finitely presented relative to R is a finitely presented A-module”.
+**`Module.FinitePresentationRel.finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Relative.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/Relative.lean#L129). The attribute's comment: “the final conclusion, that a module finitely presented relative to R is a finitely presented A-module”.
 
 > A module finitely presented relative to `R` is a finitely presented `A`-module.
 
@@ -40,7 +40,7 @@ theorem Module.FinitePresentationRel.finitePresentation
 
 [Tag 05GZ](https://stacks.math.columbia.edu/tag/05GZ) in the Stacks Project.
 
-**`Module.FinitePresentationRel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Relative.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/Relative.lean#L40).
+**`Module.FinitePresentationRel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Relative.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/Relative.lean#L40).
 
 > `M` is *finitely presented relative to `R`*: for some surjective `R`-algebra map
 > `α : R[x_1, …, x_n] → A`, the module `M` viewed over `R[x_1, …, x_n]` via `α` is finitely
@@ -55,7 +55,7 @@ def Module.FinitePresentationRel (R A : Type*) [CommRing R] [CommRing A] [Algebr
 
 [Tag 05H0](https://stacks.math.columbia.edu/tag/05H0) in the Stacks Project.
 
-**`Module.finitePresentationRel_iff_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Finite.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Finite.lean#L297).
+**`Module.finitePresentationRel_iff_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Finite.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Finite.lean#L297).
 
 > **Stacks Tag 05H0 (Lemma 15.82.3).** Let `R` be a ring, `φ : A → B` a finite
 > map of `R`-algebras with both `R → A` and `R → B` of finite type, and `M` a
@@ -80,7 +80,7 @@ theorem Module.finitePresentationRel_iff_of_finite
 
 [Tag 065A](https://stacks.math.columbia.edu/tag/065A) in the Stacks Project.
 
-**`Module.finitePresentationRel_away_of_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean#L74).
+**`Module.finitePresentationRel_away_of_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean#L74).
 
 > Let `A` be a finite type algebra over a localization `R_f`, and let `M` be an `A`-module
 > finitely presented relative to `R_f`. For `g : A` the localized module `M_g` over `A_g` is
@@ -100,7 +100,7 @@ theorem finitePresentationRel_away_of_away {R : Type u} [CommRing R] (f : R) {A 
 
 [Tag 065B](https://stacks.math.columbia.edu/tag/065B) in the Stacks Project.
 
-**`finitePresentation_relative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean#L93). References: EGA IV (1.3.1); EGA IV (1.4.1), “more general”.
+**`finitePresentation_relative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean#L90). References: EGA IV (1.3.1); EGA IV (1.4.1), “more general”.
 
 > Let `R → A` be a finite type ring map and `M` an `A`-module finitely presented relative
 > to `R`. For any ring map `R → R'`, set
@@ -124,7 +124,7 @@ theorem finitePresentation_relative_baseChange (R A R' M : Type*)
 
 [Tag 0670](https://stacks.math.columbia.edu/tag/0670) in the Stacks Project.
 
-**`finitelyPresentedRelative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean#L363). References: EGA IV (1.4.1), “more general”.
+**`finitelyPresentedRelative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/BaseChange.lean#L358). References: EGA IV (1.4.1), “more general”.
 
 > Let `R → A` be a ring map, `M` an `A`-module finitely presented relative to `R`, and
 > `A → A'` a ring map of finite presentation. Then the `A'`-module `A' ⊗[A] M` (here
@@ -147,7 +147,7 @@ theorem finitelyPresentedRelative_baseChange
 
 [Tag 065C](https://stacks.math.columbia.edu/tag/065C) in the Stacks Project.
 
-**`Module.finitePresentationRel_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L156).
+**`Module.finitePresentationRel_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L156).
 
 > Stacks 065C, Lemma 15.82.7. Given finite type ring maps `R → A` and `A → B` and a
 > `B`-module `M`, if `M` is finitely presented relative to `A` and `A` is of finite presentation
@@ -164,7 +164,7 @@ theorem Module.finitePresentationRel_comp {R A B : Type*} [CommRing R] [CommRing
 
 [Tag 065D](https://stacks.math.columbia.edu/tag/065D) in the Stacks Project.
 
-**`Module.finitePresentationRel_iff_of_span_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean#L175).
+**`Module.finitePresentationRel_iff_of_span_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Localization.lean#L175).
 
 > Relative finite presentation of a module over a finite type algebra can be checked on a
 > finite family of principal opens covering the spectrum: if `f : ι → A` generates the unit ideal,
@@ -183,7 +183,7 @@ theorem finitePresentationRel_iff_of_span_eq_top {R : Type u} [CommRing R] {A : 
 
 [Tag 0671](https://stacks.math.columbia.edu/tag/0671) in the Stacks Project.
 
-**`Module.finitePresentationRel_two_of_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L230). The attribute's comment: “(1)”.
+**`Module.finitePresentationRel_two_of_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L230). The attribute's comment: “(1)”.
 
 > Stacks 0671, part (1). Given a short exact sequence of `A`-modules
 > `0 → M' →[i] M →[p] M'' → 0` (so `i` is injective, `p` is surjective and
@@ -203,7 +203,7 @@ theorem Module.finitePresentationRel_two_of_three (i : M' →ₗ[A] M) (p : M �
     Module.FinitePresentationRel R A M
 ```
 
-**`Module.finitePresentationRel_of_surjective_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L261). The attribute's comment: “(2)”.
+**`Module.finitePresentationRel_of_surjective_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L261). The attribute's comment: “(2)”.
 
 > Stacks 0671, part (2). Given a short exact sequence of `A`-modules
 > `0 → M' →[i] M →[p] M'' → 0`, if `M'` is a finite type (finitely generated) `A`-module and `M`
@@ -224,7 +224,7 @@ theorem Module.finitePresentationRel_of_surjective_of_finite {R A : Type*} [Comm
 
 [Tag 0672](https://stacks.math.columbia.edu/tag/0672) in the Stacks Project.
 
-**`Module.finitePresentationRel_of_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L305).
+**`Module.finitePresentationRel_of_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/FinitePresentationRel/Basic.lean#L305).
 
 > Stacks 0672 (Lemma 15.82.10).
 >
@@ -246,4 +246,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.82, Tag 0659](https://stacks.math.columbia.edu/tag/0659)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

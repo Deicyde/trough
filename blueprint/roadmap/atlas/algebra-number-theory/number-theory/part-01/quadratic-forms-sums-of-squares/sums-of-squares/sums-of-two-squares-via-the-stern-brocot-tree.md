@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of two squares via the Stern–Brocot tree
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html).
 
 ## Continued fraction convergents as matrix paths
 
@@ -29,7 +29,7 @@ the paper's case split; the identity holds for all $q_i \ge 0$.
 
 - Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.continuedFraction_path_eq_convergents` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#continued-fraction-path-eq-convergents).
+Stated but not proved: `MetaMathlibExt.continuedFraction_path_eq_convergents` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#continued-fraction-path-eq-convergents).
 
 ## Perron's lemma
 
@@ -46,7 +46,7 @@ number of terms and is palindromic.
 
 - Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Lemma 1 (Perron).
 
-Stated but not proved: `MetaMathlibExt.exists_palindrome_continuedFraction_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#exists-palindrome-continued-fraction-div).
+Stated but not proved: `MetaMathlibExt.exists_palindrome_continuedFraction_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#exists-palindrome-continued-fraction-div).
 
 ## Sums of two squares from the Stern–Brocot tree
 
@@ -67,7 +67,7 @@ The fraction $x / y$ is the label of the path $M^{\mathsf T}$ in the Stern–Bro
 
 - Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sq_add_sq_of_sternBrocot_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#sq-add-sq-of-stern-brocot-path).
+Stated but not proved: `MetaMathlibExt.sq_add_sq_of_sternBrocot_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SternBrocotSumTwoSquaresWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html#sq-add-sq-of-stern-brocot-path).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of two squares via the Stern–Brocot tree](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-two-squares-via-the-stern-brocot-tree)

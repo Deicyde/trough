@@ -7,7 +7,7 @@ statement: formalized
 
 # Monochromatic pairwise sums in the reals
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html).
 
 ## Erdős Problem 965
 
@@ -15,7 +15,7 @@ The statement that for every colouring of the real numbers with two
 colours there is a set $A \subseteq \mathbb{R}$ of cardinality $\aleph_1$ such that all sums
 $a + b$ with $a, b \in A$ and $a \ne b$ have the same colour.
 
-Formalized by `MathlibExt.Combinatorics.MonochromaticPairSumsRealsErdosProblem965Wanted.alephOneMonochromaticPairSums`, a definition declared in [WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html#aleph-one-monochromatic-pair-sums).
+Formalized by `MathlibExt.Combinatorics.MonochromaticPairSumsRealsErdosProblem965Wanted.alephOneMonochromaticPairSums`, a definition declared in [WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html#aleph-one-monochromatic-pair-sums).
 
 ## Erdős Problem 965 is false
 
@@ -31,7 +31,7 @@ $\aleph_1$, the sums $a + b$ of distinct $a, b \in A$ take both colours.
 
 - T. F. Bloom, Erdős Problems, Problem #965, https://www.erdosproblems.com/965 (status DISPROVED (LEAN)); resolution: P. Komjáth, A certain 2-coloring of the reals, Real Anal. Exchange (2016), 227-231, erdosproblems.com/965: Komjáth, and independently Soukup and Weiss, proved without the continuum hypothesis that some 2-colouring of ℝ makes the sums of k distinct elements of any uncountable A ⊆ ℝ non-monochromatic, for every k ≥ 1 (the case k = 2 disproves the question), https://www.erdosproblems.com/965.
 
-Stated but not proved: `MathlibExt.Combinatorics.MonochromaticPairSumsRealsErdosProblem965Wanted.alephOneMonochromaticPairSums_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html#aleph-one-monochromatic-pair-sums-refute).
+Stated but not proved: `MathlibExt.Combinatorics.MonochromaticPairSumsRealsErdosProblem965Wanted.alephOneMonochromaticPairSums_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticPairSumsRealsErdosProblem965Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html#aleph-one-monochromatic-pair-sums-refute).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monochromatic pairwise sums in the reals](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/monochromatic-pairwise-sums-in-the-reals)

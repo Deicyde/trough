@@ -7,7 +7,7 @@ statement: formalized
 
 # Palindromic fixed points of morphisms
 
-17 results, 16 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html).
+17 results, 16 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html).
 
 ## The ternary alphabet of Labbé's counterexample
 
@@ -16,7 +16,7 @@ $\{0, 1, 2\}$.
 
 Labbé's counterexample is over a ternary alphabet.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.Sigma`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#sigma).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.Sigma`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#sigma).
 
 ## Morphisms of the ternary alphabet
 
@@ -24,7 +24,7 @@ A morphism of the ternary alphabet $\{0, 1, 2\}$ is
 given by its letter map: a function $\varphi$ that sends each letter $a$ to a finite word
 $\varphi(a)$ over $\{0, 1, 2\}$, possibly the empty word.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.Morphism`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#morphism).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.Morphism`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#morphism).
 
 ## Image of a word under a morphism
 
@@ -32,7 +32,7 @@ A morphism $\varphi$ acts on a word
 $w = w_1 w_2 \cdots w_k$ by $\varphi(w) = \varphi(w_1) \varphi(w_2) \cdots \varphi(w_k)$, the
 concatenation of the images of its letters; the empty word is sent to the empty word.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.extend`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#extend).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.extend`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#extend).
 
 ## Iterated images of words under a morphism
 
@@ -41,7 +41,7 @@ alphabet $\{0, 1, 2\}$, acting on finite words letter by letter. Its iterates $\
 finite words are defined by $\varphi^0(w) = w$ and $\varphi^{n+1}(w) = \varphi(\varphi^n(w))$
 for every natural number $n$ and every finite word $w$ over $\{0, 1, 2\}$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.extendIter`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#extend-iter).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.extendIter`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#extend-iter).
 
 ## Primitive morphisms
 
@@ -51,7 +51,7 @@ letter extension to finite words, with $\varphi^0$ the identity. Then $\varphi$ 
 there is a natural number $n$ such that for all letters $a$ and $b$, the letter $b$ occurs in the
 word $\varphi^n(a)$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPrimitive`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-primitive).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPrimitive`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-primitive).
 
 ## Palindromes
 
@@ -59,7 +59,7 @@ A finite word $w$ over the alphabet $\{0, 1, 2\}$ is a palindrome when it
 equals its reversal, that is, reads the same backwards; in particular the empty word is a
 palindrome.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPalindrome`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-palindrome).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPalindrome`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-palindrome).
 
 ## Class P
 
@@ -71,7 +71,7 @@ $p$ and $q_a$ may be empty.
 
 - Labbé 2014, Section 2.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.InClassP`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#in-class-p).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.InClassP`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#in-class-p).
 
 ## Infinite words
 
@@ -79,7 +79,7 @@ An infinite word over the alphabet $\{0, 1, 2\}$ is a sequence
 $u = u_0 u_1 u_2 \cdots$ of letters indexed by the natural numbers, that is, a map
 $\mathbb{N} \to \{0, 1, 2\}$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.InfWord`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#inf-word).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.InfWord`, an abbreviation declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#inf-word).
 
 ## Occurrence of a word at a position
 
@@ -87,7 +87,7 @@ A finite word $w = w_0 w_1 \cdots w_{n-1}$ over the
 ternary alphabet $\{0, 1, 2\}$ occurs in an infinite word $u = u_0 u_1 u_2 \cdots$ over the same
 alphabet at position $k$ when $w_i = u_{k+i}$ for every $i < n$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.OccursAt`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#occurs-at).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.OccursAt`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#occurs-at).
 
 ## Factors of an infinite word
 
@@ -96,7 +96,7 @@ occurs in $u$ at some position: there is $k \in \mathbb{N}$ with $w_i = u_{k+i}$
 $i < |w|$ (letters of $w$ indexed from $0$). In particular the empty word is a factor of every
 infinite word.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsFactor`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-factor).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsFactor`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-factor).
 
 ## Fixed point of a morphism
 
@@ -105,7 +105,7 @@ when it is the limit of the iterates of a prolongable letter: there is a letter 
 $\varphi(a)$ begins with $a$, the words $\varphi^m(a)$ ($m \ge 0$) are arbitrarily long, and every
 $\varphi^m(a)$ is a prefix of $u$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsFixedPoint`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-fixed-point).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsFixedPoint`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-fixed-point).
 
 ## Palindromic infinite words
 
@@ -120,7 +120,7 @@ Over the finite ternary alphabet this is equivalent to having infinitely many pa
 
 - Labbé 2014.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPalindromic`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-palindromic).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsPalindromic`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-palindromic).
 
 ## Uniformly recurrent infinite words
 
@@ -130,7 +130,7 @@ $u$ at position $m$ when $w_i = u_{m+i}$ for every $i < n$. Then $u$ is uniforml
 for every finite word $w$ that occurs in $u$ at some position, there is a natural number $B$ such
 that for every position $k$, the word $w$ occurs in $u$ at position $k + j$ for some $j \le B$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsUniformlyRecurrent`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-uniformly-recurrent).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsUniformlyRecurrent`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-uniformly-recurrent).
 
 ## Conjugate morphisms
 
@@ -144,14 +144,14 @@ $\theta(a) w = w \psi(a)$ for every letter $a$.
 
 - Labbé 2014, Section 2; Lothaire.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.MorphConjugate`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#morph-conjugate).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.MorphConjugate`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#morph-conjugate).
 
 ## Identity morphism
 
 A morphism $\psi$ is the identity morphism when $\psi(a)$ is the
 one-letter word $a$ for every letter $a$.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsIdentityMorphism`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-identity-morphism).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.IsIdentityMorphism`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#is-identity-morphism).
 
 ## Palindromic uniformly recurrent fixed point outside class P
 
@@ -168,7 +168,7 @@ a prefix of $u$.
 
 - [OWR-4425-004] Labbé, A counterexample to a question of Hof, Knill and Simon, EJC 21 (2014) #P3.11, Theorem 1.
 
-Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#conjecture).
 
 ## Labbé's palindromic fixed point outside class P
 
@@ -191,7 +191,7 @@ Over a binary alphabet the question of Hof, Knill and Simon has a positive answe
 
 - Sébastien Labbé, A counterexample to a question of Hof, Knill and Simon, Electron. J. Combin. 21 (2014) #P3.11, https://doi.org/10.37236/3758.
 
-Stated but not proved: `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PalindromicRecurrentOutsidePWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Palindromic fixed points of morphisms](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/morphic-sturmian-words/palindromic-fixed-points-of-morphisms)

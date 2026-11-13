@@ -7,7 +7,7 @@ statement: formalized
 
 # Irvine's conjecture on Kimberling's word
 
-32 results, 23 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html).
+32 results, 23 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html).
 
 ## Kimberling's morphism
 
@@ -20,7 +20,7 @@ The letters $0$ and $1$ are represented by the Boolean values false and true.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1 and Section 2 (the morphism `h`).
 
-Formalized by `MetaMathlibExt.kimberlingMorphism`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-morphism).
+Formalized by `MetaMathlibExt.kimberlingMorphism`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-morphism).
 
 ## Kimberling's blocks
 
@@ -33,7 +33,7 @@ $h$ applied to the one-letter word $1$. Thus $K_0 = 1$, $K_1 = 110$ and $K_2 = 1
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 (`K_n = h^n(1)`).
 
-Formalized by `MetaMathlibExt.kimberlingBlock`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block).
+Formalized by `MetaMathlibExt.kimberlingBlock`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block).
 
 ## The first Kimberling block
 
@@ -44,7 +44,7 @@ $h(1) = 110$ and $h(0) = 11$, the block $K_1 = h(1)$ is the word $110$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingBlock_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-one).
+Formalized by `MetaMathlibExt.kimberlingBlock_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-one).
 
 ## The second Kimberling block
 
@@ -55,7 +55,7 @@ $h(1) = 110$ and $h(0) = 11$, the block $K_2 = h^2(1)$ is the word $11011011$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingBlock_two`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-two).
+Formalized by `MetaMathlibExt.kimberlingBlock_two`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-two).
 
 ## Each Kimberling block is a prefix of the next
 
@@ -69,7 +69,7 @@ Indeed $h(1) = 110$ begins with $1$, so $h^n(1)$ is a prefix of $h^n(110) = h^{n
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingBlock_prefix_succ`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-prefix-succ).
+Formalized by `MetaMathlibExt.kimberlingBlock_prefix_succ`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-prefix-succ).
 
 ## Kimberling's blocks form a prefix chain
 
@@ -81,7 +81,7 @@ natural numbers $m \le n$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingBlock_prefix`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-prefix).
+Formalized by `MetaMathlibExt.kimberlingBlock_prefix`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-prefix).
 
 ## Lower bound on the length of the Kimberling blocks
 
@@ -95,7 +95,7 @@ This holds because the image of each letter under $h$ has length at least $2$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.two_pow_le_length_kimberlingBlock`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#two-pow-le-length-kimberling-block).
+Formalized by `MetaMathlibExt.two_pow_le_length_kimberlingBlock`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#two-pow-le-length-kimberling-block).
 
 ## Kimberling's word
 
@@ -111,7 +111,7 @@ Every block $K_n$ is a prefix of $k$, so $k$ is the common extension of the bloc
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2 (the limit word `k`) and Section 5 (`k'_n = k_{n+1}`).
 
-Formalized by `MetaMathlibExt.kimberlingWord`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word).
+Formalized by `MetaMathlibExt.kimberlingWord`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word).
 
 ## Every Kimberling block is a prefix of Kimberling's word
 
@@ -123,7 +123,7 @@ $i < |K_n|$, the letter $k_{i+1}$ equals the $(i+1)$-th letter of $K_n$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingWord_eq_getD`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-eq-get-d).
+Formalized by `MetaMathlibExt.kimberlingWord_eq_getD`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-eq-get-d).
 
 ## The first letters of Kimberling's word
 
@@ -134,7 +134,7 @@ $k = k_1 k_2 k_3 \cdots$ are $k_1 k_2 k_3 k_4 = 1101$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Table 1.
 
-Formalized by `MetaMathlibExt.kimberlingWord_initial`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-initial).
+Formalized by `MetaMathlibExt.kimberlingWord_initial`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-initial).
 
 ## The 101st letter of Kimberling's word
 
@@ -145,7 +145,7 @@ $k = k_1 k_2 k_3 \cdots$ is $0$ (OEIS A285431).
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 2.
 
-Formalized by `MetaMathlibExt.kimberlingWord_hundred`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-hundred).
+Formalized by `MetaMathlibExt.kimberlingWord_hundred`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-word-hundred).
 
 ## Table of Gutkovskiy's sequence
 
@@ -162,7 +162,7 @@ step reads only values already computed.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.gutkovskiyTable`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-table).
+Formalized by `MetaMathlibExt.gutkovskiyTable`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-table).
 
 ## Gutkovskiy's sequence
 
@@ -177,7 +177,7 @@ the recurrence is proved from the table.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.gutkovskiy`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy).
+Formalized by `MetaMathlibExt.gutkovskiy`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy).
 
 ## Number of entries of the Gutkovskiy table
 
@@ -189,7 +189,7 @@ exactly $n + 1$ entries.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.size_gutkovskiyTable`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#size-gutkovskiy-table).
+Formalized by `MetaMathlibExt.size_gutkovskiyTable`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#size-gutkovskiy-table).
 
 ## Entries of the Gutkovskiy table
 
@@ -200,7 +200,7 @@ For natural numbers $k \le n$, the entry at index $k$
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.getD_gutkovskiyTable`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#get-d-gutkovskiy-table).
+Formalized by `MetaMathlibExt.getD_gutkovskiyTable`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#get-d-gutkovskiy-table).
 
 ## Gutkovskiy's sequence is bounded by the index
 
@@ -211,7 +211,7 @@ $g_n$ of Gutkovskiy's sequence satisfies $g_n \le n$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.gutkovskiy_le`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-le).
+Formalized by `MetaMathlibExt.gutkovskiy_le`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-le).
 
 ## Recurrence for Gutkovskiy's sequence
 
@@ -223,7 +223,7 @@ truncated at $0$).
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.gutkovskiy_succ`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-succ).
+Formalized by `MetaMathlibExt.gutkovskiy_succ`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-succ).
 
 ## First terms of Gutkovskiy's sequence
 
@@ -234,7 +234,7 @@ $g_0 = 0$, $g_1 = 1$, $g_2 = 2$ and $g_3 = 2$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Table 1.
 
-Formalized by `MetaMathlibExt.gutkovskiy_initial`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-initial).
+Formalized by `MetaMathlibExt.gutkovskiy_initial`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-initial).
 
 ## Gutkovskiy's sequence at $100$
 
@@ -245,7 +245,7 @@ agreement with OEIS A286389.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 1, Equation (1).
 
-Formalized by `MetaMathlibExt.gutkovskiy_hundred`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-hundred).
+Formalized by `MetaMathlibExt.gutkovskiy_hundred`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-hundred).
 
 ## Positions of the ones in Kimberling's word
 
@@ -257,7 +257,7 @@ $n$-th smallest index $j \ge 1$ with $k_j = 1$; by convention $A_0 = 0$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 8 (the sequence `A_n`).
 
-Formalized by `MetaMathlibExt.kimberlingOnePosition`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position).
+Formalized by `MetaMathlibExt.kimberlingOnePosition`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position).
 
 ## Positions of the zeros in Kimberling's word
 
@@ -269,7 +269,7 @@ $n$-th smallest index $j \ge 1$ with $k_j = 0$; by convention $B_0 = 0$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Section 8 (the sequence `B_n`).
 
-Formalized by `MetaMathlibExt.kimberlingZeroPosition`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-zero-position).
+Formalized by `MetaMathlibExt.kimberlingZeroPosition`, a definition declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-zero-position).
 
 ## Position of the first one in Kimberling's word
 
@@ -280,7 +280,7 @@ Kimberling's word $k = k_1 k_2 k_3 \cdots$, counted from $1$, is $A_1 = 1$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Table 3.
 
-Formalized by `MetaMathlibExt.kimberlingOnePosition_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position-one).
+Formalized by `MetaMathlibExt.kimberlingOnePosition_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position-one).
 
 ## The first zero of Kimberling's word
 
@@ -291,7 +291,7 @@ Kimberling's word $k = k_1 k_2 k_3 \cdots$. Then $B_1 = 3$: the first $0$ of $k$
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Table 3.
 
-Formalized by `MetaMathlibExt.kimberlingZeroPosition_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-zero-position-one).
+Formalized by `MetaMathlibExt.kimberlingZeroPosition_one`, a theorem declared in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-zero-position-one).
 
 ## Recursive structure of Kimberling's blocks
 
@@ -303,7 +303,7 @@ $K_n = K_{n-1} K_{n-1} K_{n-2} K_{n-2}$ (concatenation of words).
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.kimberlingBlock_eq_append` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-eq-append).
+Stated but not proved: `MetaMathlibExt.kimberlingBlock_eq_append` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-block-eq-append).
 
 ## Irvine's conjecture for Gutkovskiy's sequence
 
@@ -315,7 +315,7 @@ $0$ and $1$. Then $g_n = k_1 + \dots + k_n$ for every $n \ge 0$ (the empty sum w
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_sum_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-sum-kimberling-word).
+Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_sum_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-sum-kimberling-word).
 
 ## Closed form for Gutkovskiy's sequence
 
@@ -334,7 +334,7 @@ ending in the digit $a_0$; leading zeros are allowed.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_two_mul_floor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-two-mul-floor).
+Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_two_mul_floor` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-two-mul-floor).
 
 ## Positions of ones at the positions of zeros in Kimberling's word
 
@@ -349,7 +349,7 @@ This answers a problem of Fokkink, Ortega and Rust.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.kimberlingOnePosition_kimberlingZeroPosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position-kimberling-zero).
+Stated but not proved: `MetaMathlibExt.kimberlingOnePosition_kimberlingZeroPosition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#kimberling-one-position-kimberling-zero).
 
 ## Gutkovskiy's sequence modulo 2 is generated by a morphism
 
@@ -363,7 +363,7 @@ morphism $0 \mapsto 01$, $1 \mapsto 0010$, and the word is OEIS A284772.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isOmegaLimit_gutkovskiy_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#is-omega-limit-gutkovskiy-mod-two).
+Stated but not proved: `MetaMathlibExt.isOmegaLimit_gutkovskiy_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#is-omega-limit-gutkovskiy-mod-two).
 
 ## Gutkovskiy's sequence from its parities
 
@@ -375,7 +375,7 @@ every $n \ge 0$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_two_mul_sum_mod_two_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-two-mul-sum-mod-two-add).
+Stated but not proved: `MetaMathlibExt.gutkovskiy_eq_two_mul_sum_mod_two_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#gutkovskiy-eq-two-mul-sum-mod-two-add).
 
 ## Lengths with two right-special factors in Kimberling's word
 
@@ -390,7 +390,7 @@ $y_i \le n < y_i + K_{2i+1}$, where $y_i = K_0 + K_2 + \cdots + K_{2i+2}$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.rightSpecialFactors_kimberlingWord_ncard_eq_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#right-special-factors-kimberling-word-nc).
+Stated but not proved: `MetaMathlibExt.rightSpecialFactors_kimberlingWord_ncard_eq_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#right-special-factors-kimberling-word-nc).
 
 ## Factor complexity of Kimberling's word
 
@@ -403,7 +403,7 @@ $\liminf \rho(n)/n = (3 + \sqrt{3})/4$.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.limsup_liminf_wordFactorComplexity_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#limsup-liminf-word-factor-complexity-kim).
+Stated but not proved: `MetaMathlibExt.limsup_liminf_wordFactorComplexity_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#limsup-liminf-word-factor-complexity-kim).
 
 ## Critical exponent of Kimberling's word
 
@@ -418,7 +418,7 @@ Allowing every period, not only the shortest one, does not change the supremum.
 
 - Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sSup_exponent_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#s-sup-exponent-kimberling-word).
+Stated but not proved: `MetaMathlibExt.sSup_exponent_kimberlingWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/IrvineConjectureWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html#s-sup-exponent-kimberling-word).
 
 ## Depends on
 
@@ -427,4 +427,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Irvine's conjecture on Kimberling's word](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/irvine-s-conjecture-on-kimberling-s-word)

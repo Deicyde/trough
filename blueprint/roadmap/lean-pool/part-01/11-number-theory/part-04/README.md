@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Sum of sets in several… to Weierstrass models and singular…
+# Square-difference-free… to Weierstrass models and singular…
 
+- [Square-difference-free polynomials beyond Naslund's conjectured bound](naslund-counterexample.md)
 - [Sum of sets in several dimensions](sum-of-sets-in-several-dimensions.md)
 - [Sums of Distinct Factorials That Are Powers of Two (Erdos Problem 403)](erdos403.md)
 - [Sums of Three Squares](sumsthreesquares.md)

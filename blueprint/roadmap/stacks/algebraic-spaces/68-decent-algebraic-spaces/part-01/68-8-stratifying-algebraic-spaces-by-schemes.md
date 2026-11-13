@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.8 Stratifying algebraic spaces by schemes
 
-Section 68.8 of the Stacks Project, [Tag 0A4I](https://stacks.math.columbia.edu/tag/0A4I). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.8 of the Stacks Project, [Tag 0A4I](https://stacks.math.columbia.edu/tag/0A4I). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07S8, a lemma
 
 [Tag 07S8](https://stacks.math.columbia.edu/tag/07S8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_closedChain_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeClosedStratification.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeClosedStratification.lean#L138).
+**`AlgebraicGeometry.Space.exists_closedChain_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeClosedStratification.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeClosedStratification.lean#L138).
 
 > **Stacks Project, Tag 07S8.** A flat, locally finitely presented, separated, locally
 > quasi-finite morphism from a scheme to an algebraic space with universally bounded fibres induces
@@ -44,7 +44,7 @@ theorem exists_closedChain_isFiniteLocallyFreeOfRank
 
 [Tag 086T](https://stacks.math.columbia.edu/tag/086T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_antitone_isOpenSubspace_iff_fibre_degree_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeStratification.lean, line 982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeStratification.lean#L982).
+**`AlgebraicGeometry.Space.exists_antitone_isOpenSubspace_iff_fibre_degree_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeStratification.lean, line 982](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreDegreeStratification.lean#L982).
 
 > Let `X` be an algebraic space over a scheme `S` and let `f : yoneda.obj W ⟶ X` be a morphism
 > from a scheme which is flat, locally of finite presentation, separated and locally quasi-finite.
@@ -78,7 +78,7 @@ theorem exists_antitone_isOpenSubspace_iff_fibre_degree_ge
 
 [Tag 0BBN](https://stacks.math.columbia.edu/tag/0BBN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_schemeStratification_quasiCompactPoint_mem_stratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L298).
+**`AlgebraicGeometry.Space.exists_schemeStratification_quasiCompactPoint_mem_stratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L298).
 
 > A quasi-compact algebraic space `X` over `S` carries a descending
 > chain of open subspaces starting at `X` whose reduced strata, the differences of
@@ -107,7 +107,7 @@ public theorem exists_schemeStratification_quasiCompactPoint_mem_stratum
 
 [Tag 07S9](https://stacks.math.columbia.edu/tag/07S9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteFiltration_of_isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L474).
+**`AlgebraicGeometry.Space.exists_finiteFiltration_of_isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L474).
 
 > A quasi-compact reasonable algebraic space has a finite filtration by open
 > subspaces such that every reduced stratum has a separated scheme as an étale
@@ -152,7 +152,7 @@ public theorem exists_finiteFiltration_of_isReasonableSpace
 
 [Tag 07SA](https://stacks.math.columbia.edu/tag/07SA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteFiltration_isRepresentable_strata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L519).
+**`AlgebraicGeometry.Space.exists_finiteFiltration_isRepresentable_strata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L519).
 
 > A quasi-compact reasonable algebraic space has a finite filtration by open
 > subspaces whose reduced strata are schemes.
@@ -189,7 +189,7 @@ public theorem exists_finiteFiltration_isRepresentable_strata
 
 [Tag 07ST](https://stacks.math.columbia.edu/tag/07ST) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteFiltration_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L420).
+**`AlgebraicGeometry.Space.exists_finiteFiltration_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FiniteSchemeFiltration/Strata.lean#L420).
 
 > A quasi-compact quasi-separated algebraic space has a finite filtration
 > by open subspaces such that every reduced stratum has a quasi-compact
@@ -236,7 +236,7 @@ public theorem exists_finiteFiltration_of_isQuasiCompactSpace
 
 [Tag 0ECZ](https://stacks.math.columbia.edu/tag/0ECZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_iff_isLocallyConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConstructiblePointsQuasiSeparated.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConstructiblePointsQuasiSeparated.lean#L290).
+**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_iff_isLocallyConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConstructiblePointsQuasiSeparated.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConstructiblePointsQuasiSeparated.lean#L290).
 
 > **Stacks 0ECZ.** A subset of the point space of a quasi-separated algebraic space over `S`
 > is étale locally constructible exactly when it is locally constructible.
@@ -256,4 +256,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.8, Tag 0A4I](https://stacks.math.columbia.edu/tag/0A4I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

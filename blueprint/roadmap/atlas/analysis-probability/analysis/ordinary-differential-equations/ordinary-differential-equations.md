@@ -7,7 +7,7 @@ statement: formalized
 
 # Ordinary differential equations: its own results
 
-8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html).
+8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html).
 
 Existence and uniqueness (Cauchy–Peano, Picard, maximal solutions), linear systems and fundamental matrices, stability and Lyapunov's indirect method, Sturm–Liouville and boundary value problems with their Green's operators and eigenfunctions, oscillation and comparison theorems.
 
@@ -23,7 +23,7 @@ differentiable at $t$ with $x'(t) = f(t, x(t))$.
 
 - G. Peano, Math. Ann. 37 (1890), 182-228, DOI 10.1007/BF01200235.
 
-Formalized by `MathlibExt.Analysis.ODE.CauchyPeanoWanted.cauchy_peano_exists`, a theorem declared in [MathlibExt/Analysis/ODE/CauchyPeano.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/CauchyPeano.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#cauchy-peano-exists).
+Formalized by `MathlibExt.Analysis.ODE.CauchyPeanoWanted.cauchy_peano_exists`, a theorem declared in [MathlibExt/Analysis/ODE/CauchyPeano.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/CauchyPeano.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#cauchy-peano-exists).
 
 ## Comparison principle for the Dirichlet problem on $(0, 1)$
 
@@ -37,7 +37,7 @@ $u(0) \le v(0)$ and $u(1) \le v(1)$, then $u(x) \le v(x)$ for every $x \in [0, 1
 
 - Standard maximum-principle argument; Protter-Weinberger. Problem `bvp_comparison` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.BVPComparisonWanted.Analysis.ODE.bvp_comparison` is written with `theorem_wanted` in [WantedExt/Analysis/BVPComparisonWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/BVPComparisonWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#bvp-comparison).
+Stated but not proved: `MathlibExt.Analysis.BVPComparisonWanted.Analysis.ODE.bvp_comparison` is written with `theorem_wanted` in [WantedExt/Analysis/BVPComparisonWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/BVPComparisonWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#bvp-comparison).
 
 ## Decay rate of solutions of $y' = -y^3$
 
@@ -49,7 +49,7 @@ and such that $y(0) = 1$. Then $y(t) \sqrt{t} \to 1/\sqrt{2}$ as $t \to \infty$.
 
 - Standard ODE textbook exercise. Problem `cubic_decay_asymptotic` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.CubicDecayWanted.Analysis.ODE.cubic_decay_asymptotic` is written with `theorem_wanted` in [WantedExt/Analysis/CubicDecayWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CubicDecayWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#cubic-decay-asymptotic).
+Stated but not proved: `MathlibExt.Analysis.CubicDecayWanted.Analysis.ODE.cubic_decay_asymptotic` is written with `theorem_wanted` in [WantedExt/Analysis/CubicDecayWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CubicDecayWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#cubic-decay-asymptotic).
 
 ## Dirichlet eigenvalues of $-y'' = \lambda y$ on $(0, \pi)$
 
@@ -65,7 +65,7 @@ $y(x) \ne 0$ for some $x \in (0, \pi)$;
 
 - Classical Sturm-Liouville theory. Problem `dirichlet_eigenvalues_eq_nat_sq` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.DirichletEigenvaluesWanted.Analysis.ODE.dirichlet_eigenvalues_eq_nat_sq` is written with `theorem_wanted` in [WantedExt/Analysis/DirichletEigenvaluesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/DirichletEigenvaluesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#dirichlet-eigenvalues-eq-nat-sq).
+Stated but not proved: `MathlibExt.Analysis.DirichletEigenvaluesWanted.Analysis.ODE.dirichlet_eigenvalues_eq_nat_sq` is written with `theorem_wanted` in [WantedExt/Analysis/DirichletEigenvaluesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/DirichletEigenvaluesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#dirichlet-eigenvalues-eq-nat-sq).
 
 ## Duhamel's formula (variation of constants)
 
@@ -86,7 +86,7 @@ Sections 3.2 and 3.4, formula (3.48) and Theorem 3.12 / (3.97).
 
 - G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 3.2; stable ref https://en.wikipedia.org/wiki/Duhamel%27s_principle.
 
-Formalized by `MathlibExt.Analysis.ODE.DuhamelWanted.duhamel_variation_of_constants`, a theorem declared in [MathlibExt/Analysis/ODE/Duhamel.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/Duhamel.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#duhamel-variation-of-constants).
+Formalized by `MathlibExt.Analysis.ODE.DuhamelWanted.duhamel_variation_of_constants`, a theorem declared in [MathlibExt/Analysis/ODE/Duhamel.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/Duhamel.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#duhamel-variation-of-constants).
 
 ## Nonresonant forced oscillator
 
@@ -100,7 +100,7 @@ differentiable solution $u : \mathbb{R} \to \mathbb{R}$ of this equation is boun
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), problem `ma_proofbench_l2_39`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.NonresonantForcedOscillatorPeriodicWanted.existsUnique_periodic_solution_and_isBounded_of_ne_natCast` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/NonresonantForcedOscillatorPeriodicWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/NonresonantForcedOscillatorPeriodicWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#exists-unique-periodic-solution-and-is-b).
+Stated but not proved: `MathlibExt.Analysis.Calculus.NonresonantForcedOscillatorPeriodicWanted.existsUnique_periodic_solution_and_isBounded_of_ne_natCast` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/NonresonantForcedOscillatorPeriodicWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/NonresonantForcedOscillatorPeriodicWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#exists-unique-periodic-solution-and-is-b).
 
 ## Solutions of $xu''+2u'+u=0$ have infinitely many zeros
 
@@ -117,7 +117,7 @@ If $u(x) \ne 0$ for some $x>0$, then $u$ has infinitely many zeros in $(1,\infty
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), problem `ma_proofbench_l2_83`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.BesselTypeOdeInfinitelyManyZerosWanted.setInfinite_zero_of_mul_iteratedDeriv_two_add_two_deriv_add_eq_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/BesselTypeOdeInfinitelyManyZerosWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/BesselTypeOdeInfinitelyManyZerosWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#set-infinite-zero-of-mul-iterated-deriv).
+Stated but not proved: `MathlibExt.Analysis.Calculus.BesselTypeOdeInfinitelyManyZerosWanted.setInfinite_zero_of_mul_iteratedDeriv_two_add_two_deriv_add_eq_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/BesselTypeOdeInfinitelyManyZerosWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/BesselTypeOdeInfinitelyManyZerosWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#set-infinite-zero-of-mul-iterated-deriv).
 
 ## Sturm separation theorem
 
@@ -133,7 +133,7 @@ has exactly one zero in the open interval $(a, b)$.
 
 - C. Sturm, Mémoire sur les équations différentielles linéaires du second ordre, 1836. Problem `sturm_separation` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.SturmSeparationWanted.Analysis.ODE.sturm_separation` is written with `theorem_wanted` in [WantedExt/Analysis/SturmSeparationWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SturmSeparationWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#sturm-separation).
+Stated but not proved: `MathlibExt.Analysis.SturmSeparationWanted.Analysis.ODE.sturm_separation` is written with `theorem_wanted` in [WantedExt/Analysis/SturmSeparationWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SturmSeparationWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html#sturm-separation).
 
 ## Depends on
 
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ordinary differential equations](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/ordinary-differential-equations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/ordinary-differential-equations)

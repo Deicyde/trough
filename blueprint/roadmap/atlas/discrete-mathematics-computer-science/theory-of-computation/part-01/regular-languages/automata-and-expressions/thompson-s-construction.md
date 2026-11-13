@@ -8,7 +8,7 @@ proof: formalized
 
 # Thompson's construction
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html).
 
 ## Basic automata
 
@@ -17,7 +17,7 @@ proof: formalized
 Over an alphabet $\alpha$, this is the ε-NFA whose set of
 states is empty; consequently it has no start states, no accepting states and no transitions.
 
-Formalized by `Cslib.Automata.Thompson.zeroAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#zero-aut).
+Formalized by `Cslib.Automata.Thompson.zeroAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#zero-aut).
 
 ## One-state automaton
 
@@ -25,7 +25,7 @@ The ε-NFA over the alphabet $\alpha$ with a single state, which is both
 its start state and its accepting state, and no moves at all (neither letter moves nor
 ε-moves).
 
-Formalized by `Cslib.Automata.Thompson.oneAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#one-aut).
+Formalized by `Cslib.Automata.Thompson.oneAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#one-aut).
 
 ## Single-letter automaton
 
@@ -33,7 +33,7 @@ For a letter $a$ of the alphabet $\alpha$, this is the ε-NFA over
 $\alpha$ with two states, a start state and an accepting state, and a single move, which reads $a$
 and goes from the start state to the accepting state; it has no other moves and no ε-moves.
 
-Formalized by `Cslib.Automata.Thompson.charAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#char-aut).
+Formalized by `Cslib.Automata.Thompson.charAut`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#char-aut).
 
 ## Union of ε-NFAs
 
@@ -42,7 +42,7 @@ the same alphabet, their union is the ε-NFA on the disjoint union $\sigma \sqcu
 are the moves of $M$ and the moves of $N$, whose start states are the start states of $M$ and of
 $N$, and whose accepting states are the accepting states of $M$ and of $N$.
 
-Formalized by `Cslib.Automata.Thompson.union`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#union).
+Formalized by `Cslib.Automata.Thompson.union`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#union).
 
 ## Concatenation of ε-NFAs
 
@@ -52,7 +52,7 @@ $\sigma \sqcup \tau$ whose moves are the moves of $M$, the moves of $N$, and an 
 accepting state of $M$ to every start state of $N$. Its start states are the start states of $M$
 and its accepting states are the accepting states of $N$.
 
-Formalized by `Cslib.Automata.Thompson.concat`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#concat).
+Formalized by `Cslib.Automata.Thompson.concat`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#concat).
 
 ## Kleene star of an ε-NFA
 
@@ -61,7 +61,7 @@ the states of $M$ together with one new state $q_0$, which is its only start sta
 accepting state. Its moves are the moves of $M$, an ε-move from $q_0$ to every start state of $M$,
 and an ε-move from every accepting state of $M$ to $q_0$.
 
-Formalized by `Cslib.Automata.Thompson.star`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#star).
+Formalized by `Cslib.Automata.Thompson.star`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#star).
 
 ## States of Thompson's automaton
 
@@ -70,7 +70,7 @@ expression $r$ is defined by structural recursion: $S(0)$ is empty, $S(\varepsil
 element, $S(a)$ has two elements for a letter $a$, both $S(P + Q)$ and $S(PQ)$ are the disjoint
 union $S(P) \sqcup S(Q)$, and $S(P^*)$ is $S(P)$ together with one new element.
 
-Formalized by `Cslib.Automata.Thompson.State`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#state).
+Formalized by `Cslib.Automata.Thompson.State`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#state).
 
 ## Thompson's construction
 
@@ -81,14 +81,14 @@ automaton, a letter $a$ to the single-letter automaton of $a$, $P + Q$ to the un
 automata of $P$ and $Q$, $PQ$ to their concatenation, and $P^*$ to the star automaton of the
 automaton of $P$.
 
-Formalized by `Cslib.Automata.Thompson.toεNFA`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#to-nfa).
+Formalized by `Cslib.Automata.Thompson.toεNFA`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#to-nfa).
 
 ## Correctness of Thompson's construction
 
 The automaton accepts exactly the words the
 regular expression matches.
 
-Formalized by `Cslib.Automata.Thompson.accepts_toεNFA`, a theorem declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#accepts-to-nfa).
+Formalized by `Cslib.Automata.Thompson.accepts_toεNFA`, a theorem declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#accepts-to-nfa).
 
 ## Thompson state count
 
@@ -98,7 +98,7 @@ $n(P + Q) = n(P) + n(Q)$, $n(PQ) = n(P) + n(Q)$ and $n(P^*) = n(P) + 1$.
 
 It is the number of states of Thompson's automaton of $r$.
 
-Formalized by `Cslib.Automata.Thompson.numStates`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#num-states).
+Formalized by `Cslib.Automata.Thompson.numStates`, a definition declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#num-states).
 
 ## Number of states of Thompson's automaton
 
@@ -107,7 +107,7 @@ states of Thompson's automaton of $r$ is $n(r)$, the Thompson state count of $r$
 $n(\varepsilon) = 1$, $n(a) = 2$ for a letter $a$, $n(P + Q) = n(P) + n(Q)$, $n(PQ) = n(P) + n(Q)$
 and $n(P^*) = n(P) + 1$.
 
-Formalized by `Cslib.Automata.Thompson.card_state`, a theorem declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#card-state).
+Formalized by `Cslib.Automata.Thompson.card_state`, a theorem declared in [CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Automata/EpsilonNA/Thompson.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html#card-state).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Thompson's construction](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/regular-languages/automata-and-expressions/thompson-s-construction)

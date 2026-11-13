@@ -1,6 +1,6 @@
 # 5 Topology
 
-Chapter 5 of the Stacks Project, *Topology*, [Tag 004C](https://stacks.math.columbia.edu/tag/004C): the 28 sections of its 30 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 197 tags are carried by 217 declarations of the repository (24 in StacksCore and 193 in StacksFrontier) and 124 registered declarations.
+Chapter 5 of the Stacks Project, *Topology*, [Tag 004C](https://stacks.math.columbia.edu/tag/004C): the 28 sections of its 30 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 198 tags are carried by 227 declarations of the repository (24 in StacksCore and 203 in StacksFrontier) and 125 registered declarations.
 
 ## [5.3 Hausdorff spaces to 5.22 Profinite spaces](part-01/README.md)
 

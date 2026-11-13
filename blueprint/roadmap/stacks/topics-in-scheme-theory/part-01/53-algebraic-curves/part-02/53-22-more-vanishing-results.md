@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.22 More vanishing results
 
-Section 53.22 of the Stacks Project, [Tag 0E39](https://stacks.math.columbia.edu/tag/0E39). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.22 of the Stacks Project, [Tag 0E39](https://stacks.math.columbia.edu/tag/0E39). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E3A, a lemma
 
 [Tag 0E3A](https://stacks.math.columbia.edu/tag/0E3A) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.invertibleCurveDegree_le_and_lt_or_nonempty_iso_of_not_isZero_cohomology_idealTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistVanishing.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistVanishing.lean#L441).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.invertibleCurveDegree_le_and_lt_or_nonempty_iso_of_not_isZero_cohomology_idealTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistVanishing.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistVanishing.lean#L441).
 
 > **Stacks Project, Tag 0E3A.** In Situation [Stacks, Tag 0B5D] assume `X` is integral of genus
 > `g`. Let `ℒ` be an invertible `𝒪_X`-module and let `Z ⊆ X` be a closed subscheme of dimension at
@@ -42,7 +42,7 @@ theorem invertibleCurveDegree_le_and_lt_or_nonempty_iso_of_not_isZero_cohomology
 
 [Tag 0E3B](https://stacks.math.columbia.edu/tag/0E3B) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_cohomology_one_idealTwist_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L62). The attribute's comment: “the vanishing of H^1(X, IL)”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_cohomology_one_idealTwist_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L62). The attribute's comment: “the vanishing of H^1(X, IL)”.
 
 > **[Stacks, Tag 0E3B], the vanishing.** If `deg(ℒ) > 2g - 2 + deg(Z)` then
 > `H¹(X, ℐℒ) = 0`: a nonzero `H¹(X, ℐℒ)` would force `deg(ℒ) ≤ 2g - 2 + deg(Z)` by
@@ -55,7 +55,7 @@ theorem isZero_cohomology_one_idealTwist_of_lt (hZ : topologicalKrullDim Z.subsc
     IsZero (cohomologyOverField S.k S.f (S.idealTwist Z L) 1)
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.not_isZero_cohomology_zero_idealTwist_or_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L73). The attribute's comment: “possibilities (1) and (2)”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.not_isZero_cohomology_zero_idealTwist_or_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L73). The attribute's comment: “possibilities (1) and (2)”.
 
 > **[Stacks, Tag 0E3B], the alternative.** If `deg(ℒ) > 2g - 2 + deg(Z)` then either
 > `H⁰(X, ℐℒ) ≠ 0`, or `g = 0` and `deg(ℒ) = deg(Z) - 1`. When `H⁰(X, ℐℒ) = 0` the Euler
@@ -70,7 +70,7 @@ theorem not_isZero_cohomology_zero_idealTwist_or_of_lt (hZ : topologicalKrullDim
         (S.subschemeDegree Z : ℤ) - 1)
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.exists_isIso_projectiveLine_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L104). The attribute's comment: “in case (2) with Z empty, X is P^1\_k and L corresponds to O(-1)”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.exists_isIso_projectiveLine_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L104). The attribute's comment: “in case (2) with Z empty, X is P^1\_k and L corresponds to O(-1)”.
 
 > **[Stacks, Tag 0E3B], case (2) with `Z = ∅`.** If `g = 0` and `deg(ℒ) = -1`, then `X ≅ 𝐏¹_k`
 > over `k`, and under this isomorphism `ℒ^{⊗ -1}` is the pullback of `𝒪(1)`, i.e. `ℒ` corresponds to
@@ -96,7 +96,7 @@ theorem exists_isIso_projectiveLine_of_genus_eq_zero
 
 [Tag 0E3C](https://stacks.math.columbia.edu/tag/0E3C) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isGeneratedByGlobalSections_of_two_mul_genus_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean#L140).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isGeneratedByGlobalSections_of_two_mul_genus_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean#L140).
 
 > **Stacks Project, Tag 0E3C.** In Situation [Stacks, Tag 0B5D] assume `X` is integral of genus
 > `g`, and let `ℒ` be an invertible `𝒪_X`-module. If `deg(ℒ) ≥ 2g`, then `ℒ` is generated by its
@@ -113,7 +113,7 @@ theorem isGeneratedByGlobalSections_of_two_mul_genus_le [IsIntegral S.X] (L : S.
 
 [Tag 0E3D](https://stacks.math.columbia.edu/tag/0E3D) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isGeneratedByGlobalSections_and_surjective_subschemeRestrictionπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean#L306).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isGeneratedByGlobalSections_and_surjective_subschemeRestrictionπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalGenerationLargeDegree.lean#L306).
 
 > **Stacks Project, Tag 0E3D.** In Situation [Stacks, Tag 0B5D] assume `X` is integral of genus
 > `g`, let `ℒ` be an invertible `𝒪_X`-module, and let `Z ⊆ X` be a nonempty `0`-dimensional closed
@@ -139,7 +139,7 @@ theorem isGeneratedByGlobalSections_and_surjective_subschemeRestrictionπ [IsInt
 
 [Tag 0H2V](https://stacks.math.columbia.edu/tag/0H2V) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isRelativelyVeryAmple_of_two_mul_genus_add_one_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/VeryAmpleLargeDegree.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/VeryAmpleLargeDegree.lean#L264).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isRelativelyVeryAmple_of_two_mul_genus_add_one_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/VeryAmpleLargeDegree.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/VeryAmpleLargeDegree.lean#L264).
 
 > **Invertible modules of degree at least `2g + 1` are very ample.** In Situation
 > [Stacks, Tag 0B5D] — a proper one-dimensional scheme `X` over a field `k` with `H⁰(X, 𝒪_X) = k` —
@@ -159,7 +159,7 @@ theorem isRelativelyVeryAmple_of_two_mul_genus_add_one_le
 
 [Tag 0E3E](https://stacks.math.columbia.edu/tag/0E3E) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_subcurve_invertibleCurveDegree_le_of_not_isZero_cohomology_idealTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveDegreeBound.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveDegreeBound.lean#L452).
+**`AlgebraicGeometry.exists_subcurve_invertibleCurveDegree_le_of_not_isZero_cohomology_idealTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveDegreeBound.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveDegreeBound.lean#L452).
 
 > **Stacks Project, Tag 0E3E.** Let `k` be a field and `X` a proper scheme over `k` which is
 > reduced and of dimension `1`. Let `ℒ` be an invertible `𝒪_X`-module and `Z ⊆ X` a closed subscheme
@@ -202,7 +202,7 @@ theorem exists_subcurve_invertibleCurveDegree_le_of_not_isZero_cohomology_idealT
 
 [Tag 0E3F](https://stacks.math.columbia.edu/tag/0E3F) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeneratedByGlobalSections_of_forall_subcurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveFieldExtension.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveFieldExtension.lean#L557).
+**`AlgebraicGeometry.isGeneratedByGlobalSections_of_forall_subcurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveFieldExtension.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/SubcurveFieldExtension.lean#L557).
 
 > **Stacks Project, Tag 0E3F.** Let `k` be a field and `X` a proper scheme over `k` which is
 > reduced and of dimension `1`, and let `ℒ` be an invertible `𝒪_X`-module such that
@@ -235,4 +235,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.22, Tag 0E39](https://stacks.math.columbia.edu/tag/0E39)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

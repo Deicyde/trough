@@ -8,7 +8,7 @@ proof: formalized
 
 # Orthogonal polynomials and polynomial sequences: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html).
 
 Classical and combinatorial families of polynomials, their recurrences and generating functions, and orthogonality via Favard's theorem, J-fractions and Riordan arrays.
 
@@ -23,7 +23,7 @@ $$(a+b)^{\overline{n}} = \sum_{k=0}^{n} \binom{n}{k}\, a^{\overline{k}}\, b^{\ov
 
 - Paul Eloe and Catherine Kublik, "When Numerical Analysis Crosses Paths with Catalan and Generalized Motzkin Numbers," Journal of Integer Sequences 21 (2018), Article 18.8.4, Theorem, equation, lines 156–161, https://cs.uwaterloo.ca/journals/JIS/VOL21/Kublik/kublik2.tex
 
-Formalized by `MetaMathlibExt.ascPochhammer_eval_add`, a theorem declared in [MathlibExt/Algebra/Polynomial/RisingFactorialBinomial.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/RisingFactorialBinomial.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#asc-pochhammer-eval-add).
+Formalized by `MetaMathlibExt.ascPochhammer_eval_add`, a theorem declared in [MathlibExt/Algebra/Polynomial/RisingFactorialBinomial.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/RisingFactorialBinomial.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#asc-pochhammer-eval-add).
 
 ## Classical orthogonal polynomial family
 
@@ -38,7 +38,7 @@ with $v_0, v_1, v_2$ not all zero, such that at every interior point $x$ of $D$ 
 differentiable and $(v_0 + v_1 x + v_2 x^2) \, w'(x) = (u_0 + u_1 x) \, w(x)$ (the Pearson
 equation).
 
-Formalized by `MetaMathlibExt.ClassicalOrthogonalPolynomialFamily`, a structure declared in [MathlibExt/Analysis/SpecialFunctions/ClassicalOrthogonalPolynomial.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/ClassicalOrthogonalPolynomial.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#classical-orthogonal-polynomial-family).
+Formalized by `MetaMathlibExt.ClassicalOrthogonalPolynomialFamily`, a structure declared in [MathlibExt/Analysis/SpecialFunctions/ClassicalOrthogonalPolynomial.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/ClassicalOrthogonalPolynomial.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#classical-orthogonal-polynomial-family).
 
 ## Meixner-type characterization of Riordan orthogonal polynomial arrays
 
@@ -74,7 +74,7 @@ inverse-array equivalence from the Stieltjes production construction of the inve
 
 - Paul Barry and Aoife Hennessy, "Meixner-Type Results for Riordan Arrays and Associated Integer Sequences," Journal of Integer Sequences 13 (2010), Article 10.9.4, Proposition (referee's summary of the main results), lines 733–752, https://cs.uwaterloo.ca/journals/JIS/VOL13/Barry5/barry96s.tex
 
-Formalized by `MetaMathlibExt.riordan_coeff_orth_equiv`, a theorem declared in [MathlibExt/Algebra/Polynomial/RiordanOrthogonalPolynomials.lean, line 2710](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/RiordanOrthogonalPolynomials.lean#L2710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#riordan-coeff-orth-equiv).
+Formalized by `MetaMathlibExt.riordan_coeff_orth_equiv`, a theorem declared in [MathlibExt/Algebra/Polynomial/RiordanOrthogonalPolynomials.lean, line 2710](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/RiordanOrthogonalPolynomials.lean#L2710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html#riordan-coeff-orth-equiv).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Orthogonal polynomials and polynomial sequences](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/orthogonal-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/orthogonal-polynomials)

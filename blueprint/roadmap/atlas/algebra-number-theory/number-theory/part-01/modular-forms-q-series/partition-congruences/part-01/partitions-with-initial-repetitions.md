@@ -7,7 +7,7 @@ statement: formalized
 
 # Partitions with initial repetitions
 
-24 results, 5 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html).
+24 results, 5 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html).
 
 ## Residues that are squares modulo $2^{2k-1}$ but not modulo $2^{2k}$
 
@@ -22,7 +22,7 @@ For $k \ge 1$ these are exactly two residues; for $k = 0$ both sides of the equi
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.isSquare_mod_two_pow_odd_not_even_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#is-square-mod-two-pow-odd-not-even-iff).
+Stated but not proved: `MetaMathlibExt.isSquare_mod_two_pow_odd_not_even_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#is-square-mod-two-pow-odd-not-even-iff).
 
 ## Residues that are squares modulo $2^{2k}$ but not modulo $2^{2k+1}$
 
@@ -37,7 +37,7 @@ For $k \ge 1$ this is the unique such residue; for $k = 0$ both sides of the equ
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.isSquare_mod_two_pow_even_not_odd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#is-square-mod-two-pow-even-not-odd-iff).
+Stated but not proved: `MetaMathlibExt.isSquare_mod_two_pow_even_not_odd_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#is-square-mod-two-pow-even-not-odd-iff).
 
 ## Residues $r$ with $16r + 1$ and $8r + 1$ both non-squares modulo $p$
 
@@ -53,7 +53,7 @@ the count at $p = 5$ would be $2$ instead of $1$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.card_not_isSquare_sixteen_mul_add_one_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-not-is-square-sixteen-mul-add-one-e).
+Stated but not proved: `MetaMathlibExt.card_not_isSquare_sixteen_mul_add_one_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-not-is-square-sixteen-mul-add-one-e).
 
 ## Residues $r$ with $12r + 1$ and $8r + 1$ both non-squares modulo $p$
 
@@ -70,7 +70,7 @@ the count at $p = 5$ would be $2$ instead of $0$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.card_not_isSquare_twelve_mul_add_one_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-not-is-square-twelve-mul-add-one-ei).
+Stated but not proved: `MetaMathlibExt.card_not_isSquare_twelve_mul_add_one_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-not-is-square-twelve-mul-add-one-ei).
 
 ## Counting $r$ with $mr + 1$ and $nr + 1$ both quadratic nonresidues
 
@@ -87,7 +87,7 @@ $$4N = 4\left\lfloor \frac{p}{4} \right\rfloor -
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.four_mul_card_legendreSym_pair_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#four-mul-card-legendre-sym-pair-eq-neg-o).
+Stated but not proved: `MetaMathlibExt.four_mul_card_legendreSym_pair_eq_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#four-mul-card-legendre-sym-pair-eq-neg-o).
 
 ## Andrews' theorem on partitions with initial repetitions
 
@@ -102,7 +102,7 @@ appears more than $2k - 1$ times.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 1, quoting Andrews.
 
-Stated but not proved: `MetaMathlibExt.card_initialRepetitions_eq_card_not_dvd_eq_card_count_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-initial-repetitions-eq-card-not-dvd).
+Stated but not proved: `MetaMathlibExt.card_initialRepetitions_eq_card_not_dvd_eq_card_count_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#card-initial-repetitions-eq-card-not-dvd).
 
 ## The partition function $c_2$ of Nyirenda and Mugwangwavari
 
@@ -117,7 +117,7 @@ Odd parts that are at least $2j + 1$ may appear any number of times.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of `c₂`, from Nyirenda and Mugwangwavari).
 
-Formalized by `MetaMathlibExt.initialRepetitionsC2`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2).
+Formalized by `MetaMathlibExt.initialRepetitionsC2`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2).
 
 ## The initial-repetitions partition function $c_3$
 
@@ -131,7 +131,7 @@ and divisible by $4$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of `c₃`, from Nyirenda and Mugwangwavari).
 
-Formalized by `MetaMathlibExt.initialRepetitionsC3`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3).
+Formalized by `MetaMathlibExt.initialRepetitionsC3`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3).
 
 ## The partition function $c_8$
 
@@ -150,7 +150,7 @@ contradicting Theorem 11 of the paper since $31$ is not a square).
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 3 (definition of `c₈`, from Nyirenda and Mugwangwavari).
 
-Formalized by `MetaMathlibExt.initialRepetitionsC8`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8).
+Formalized by `MetaMathlibExt.initialRepetitionsC8`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8).
 
 ## The initial-repetitions partition function $c_8'$
 
@@ -168,7 +168,7 @@ conditions above hold for $m$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Section 4 (definition of `c₈'`).
 
-Formalized by `MetaMathlibExt.initialRepetitionsC8Prime`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime).
+Formalized by `MetaMathlibExt.initialRepetitionsC8Prime`, a definition declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime).
 
 ## Small values of the partition functions $c_2$, $c_3$, $c_8$ and $c_8'$
 
@@ -179,7 +179,7 @@ $c_2(0) = 0$, $c_2(1) = 1$, $c_3(1) = 1$, $c_8(0) = c_8(1) = 1$, $c_8'(0) = 1$ a
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Sections 3 and 4 (definitions of `c₂`, `c₃`, `c₈`, `c₈'`).
 
-Formalized by `MetaMathlibExt.initialRepetitions_values_zero_one`, a theorem declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-values-zero-one).
+Formalized by `MetaMathlibExt.initialRepetitions_values_zero_one`, a theorem declared in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-values-zero-one).
 
 ## Parity of $c_2(5n + 2)$
 
@@ -192,7 +192,7 @@ Nyirenda and Mugwangwavari: for every integer $n \ge 0$, the number $c_2(5n + 2)
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC2_five_mul_add_two_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2-five-mul-add-two).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC2_five_mul_add_two_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2-five-mul-add-two).
 
 ## Parity of $c_2(pn + r)$ for primes $p \ge 5$
 
@@ -210,7 +210,7 @@ quadratic nonresidues modulo $p$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC2_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2-prime-mul-add-eve).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC2_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c2-prime-mul-add-eve).
 
 ## Parity of $c_3(11n + 5)$, $c_3(11n + 7)$ and $c_3(11n + 9)$
 
@@ -225,7 +225,7 @@ $c_3(11n + 7)$ and $c_3(11n + 9)$ are all even.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC3_eleven_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3-eleven-mul-add-ev).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC3_eleven_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3-eleven-mul-add-ev).
 
 ## Parity of $c_3$ on residue classes modulo a prime
 
@@ -241,7 +241,7 @@ of $p$ count as squares.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC3_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3-prime-mul-add-eve).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC3_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c3-prime-mul-add-eve).
 
 ## $c_8$ is even on six residue classes modulo $49$
 
@@ -255,7 +255,7 @@ This result is due to Nyirenda and Mugwangwavari.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_fortyNine_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-forty-nine-mul-ad).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_fortyNine_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-forty-nine-mul-ad).
 
 ## Andrews' identity for the first Rogers–Ramanujan series
 
@@ -273,7 +273,7 @@ All exponents on the right are nonnegative for integer $\lambda$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 10, quoting Andrews.
 
-Stated but not proved: `MetaMathlibExt.andrews_rogersRamanujan_first_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#andrews-rogers-ramanujan-first-dissectio).
+Stated but not proved: `MetaMathlibExt.andrews_rogersRamanujan_first_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#andrews-rogers-ramanujan-first-dissectio).
 
 ## $c_8(N)$ is even when $15N + 1$ is not a square
 
@@ -285,7 +285,7 @@ is not a perfect square, $c_8(N)$ is even.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_even_of_not_isSquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-even-of-not-is-sq).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_even_of_not_isSquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-even-of-not-is-sq).
 
 ## Andrews' identity for the second Rogers–Ramanujan series
 
@@ -303,7 +303,7 @@ All exponents on the right are nonnegative for integer $\lambda$.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 12, quoting Andrews.
 
-Stated but not proved: `MetaMathlibExt.andrews_rogersRamanujan_second_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#andrews-rogers-ramanujan-second-dissecti).
+Stated but not proved: `MetaMathlibExt.andrews_rogersRamanujan_second_dissection` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#andrews-rogers-ramanujan-second-dissecti).
 
 ## $c_8'(N)$ is even when $15N + 4$ is not a square
 
@@ -315,7 +315,7 @@ $15N + 4$ is not a perfect square, $c_8'(N)$ is even.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_even_of_not_isSquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-even-of-not).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_even_of_not_isSquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-even-of-not).
 
 ## Parity of $c_8$ on residue classes modulo powers of $2$
 
@@ -333,7 +333,7 @@ These $r$ are the paper's least nonnegative residues $r_{k,1}$, $r_{k,2}$, $r_{k
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_two_pow_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-two-pow-mul-add-e).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_two_pow_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-two-pow-mul-add-e).
 
 ## Parity of $c_8$ on residue classes modulo a prime
 
@@ -349,7 +349,7 @@ of $p$ count as squares.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-mul-add-eve).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-mul-add-eve).
 
 ## Parity of $c_8'$ on residue classes modulo powers of $2$
 
@@ -367,7 +367,7 @@ These $r$ are the paper's least nonnegative residues $r'_{k,1}$, $r'_{k,2}$, $r'
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_two_pow_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-two-pow-mul).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_two_pow_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-two-pow-mul).
 
 ## Parity of $c_8'$ on residue classes modulo a prime
 
@@ -383,7 +383,7 @@ of $p$ count as squares.
 
 - John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-prime-mul-a).
+Stated but not proved: `MetaMathlibExt.initialRepetitionsC8Prime_prime_mul_add_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GreeneSellersInitialRepetitionsWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html#initial-repetitions-c8-prime-prime-mul-a).
 
 ## Depends on
 
@@ -392,4 +392,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Partitions with initial repetitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-initial-repetitions)

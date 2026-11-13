@@ -7,7 +7,7 @@ statement: formalized
 
 # Exponential and character sums: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html).
 
 Gauss sums, Weyl and Vinogradov sums, incomplete exponential sums, Burgess bounds, Dirichlet polynomials, trigonometric and cotangent sums.
 
@@ -24,7 +24,7 @@ $$
 
 - https://en.wikipedia.org/wiki/Landsberg%E2%80%93Schaar_relation.
 
-Formalized by `MetaMathlibExt.landsberg_schaar`, a theorem declared in [MathlibExt/NumberTheory/LandsbergSchaar.lean, line 714](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LandsbergSchaar.lean#L714). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html#landsberg-schaar).
+Formalized by `MetaMathlibExt.landsberg_schaar`, a theorem declared in [MathlibExt/NumberTheory/LandsbergSchaar.lean, line 714](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LandsbergSchaar.lean#L714). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html#landsberg-schaar).
 
 ## Mittou's evaluation of a quadratic sum over congruent pairs
 
@@ -48,7 +48,7 @@ depends only on $p \bmod l$ is not restated.
 
 - Brahim Mittou, *Explicit Evaluation of a Quadratic Sum Over Congruent Pairs Modulo a Prime*, INTEGERS 25 (2025), Article A85, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.congruentPairQuadraticSum_eq_sub_dedekindSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CongruentPairQuadraticSumWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CongruentPairQuadraticSumWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html#congruent-pair-quadratic-sum-eq-sub-dede).
+Stated but not proved: `MetaMathlibExt.congruentPairQuadraticSum_eq_sub_dedekindSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CongruentPairQuadraticSumWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CongruentPairQuadraticSumWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html#congruent-pair-quadratic-sum-eq-sub-dede).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Exponential and character sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums)

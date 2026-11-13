@@ -7,7 +7,7 @@ statement: formalized
 
 # Congruences for Delannoy numbers
 
-10 results, 2 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html).
+10 results, 2 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html).
 
 ## Harmonic numbers modulo $m$
 
@@ -16,7 +16,7 @@ $H_k$ modulo $m$ is the residue $\sum_{i=1}^{k} i^{-1}$ in $\mathbb{Z}/m\mathbb{
 $i^{-1}$ is the inverse of $i$ modulo $m$ when $i$ is coprime to $m$; for other $i$ it is the
 conventional value that Mathlib assigns to the inverse of a non-unit.
 
-Formalized by `MathlibExt.NumberTheory.DelannoyTriangleWanted.harmonicMod`, a definition declared in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#harmonic-mod).
+Formalized by `MathlibExt.NumberTheory.DelannoyTriangleWanted.harmonicMod`, a definition declared in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#harmonic-mod).
 
 ## Harmonic numbers of order two modulo $m$
 
@@ -26,7 +26,7 @@ in $\mathbb{Z}/m\mathbb{Z}$, where $(i^2)^{-1}$ is the inverse of $i^2$ modulo $
 coprime to $m$; for other $i$ it is the conventional value that Mathlib assigns to the
 inverse of a non-unit.
 
-Formalized by `MathlibExt.NumberTheory.DelannoyTriangleWanted.harmonic2Mod`, a definition declared in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#harmonic2-mod).
+Formalized by `MathlibExt.NumberTheory.DelannoyTriangleWanted.harmonic2Mod`, a definition declared in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#harmonic2-mod).
 
 ## Delannoy triangle entries $T(2p, p; 1)$ and $T(2p-1, p-1; 1)$ modulo $p^3$
 
@@ -45,7 +45,7 @@ $$T(2p-1, p-1; 1) \equiv 1 + 2p\,q_p(2) - p^2 q_p(2)^2 \pmod{p^3}.$$
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.delannoy_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#delannoy-two-mul).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.delannoy_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#delannoy-two-mul).
 
 ## Delannoy triangle entry $T(np-1, p-1; 1)$ modulo $p^3$
 
@@ -60,7 +60,7 @@ $$T(np - 1, p - 1; 1) \equiv 1 + (n - 1)\,p\,q_p(2)\,\bigl(2 - p\,q_p(2)\bigr) \
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.delannoy_mul_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#delannoy-mul-sub-one).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.delannoy_mul_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#delannoy-mul-sub-one).
 
 ## Expansion of $\binom{sp-1}{k}$ modulo $p^3$
 
@@ -81,7 +81,7 @@ binomial coefficient $\binom{sp-1}{k}$.
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.choose_mul_sub_one_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#choose-mul-sub-one-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.choose_mul_sub_one_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#choose-mul-sub-one-mod).
 
 ## Sums of $2^k/k$ and $2^k/k^2$ over $1 \le k \le p - 1$
 
@@ -100,7 +100,7 @@ where $1/k$ is the inverse of $k$ modulo $p^2$ and $1/k^2$ the inverse of $k^2$ 
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Lemma 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_two_pow_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-two-pow-div).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_two_pow_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-two-pow-div).
 
 ## Sum of $H_k 2^k / k$ over $1 \le k \le p - 1$ modulo $p$
 
@@ -114,7 +114,7 @@ $$\sum_{k=1}^{p-1} \frac{H_k\, 2^k}{k} \equiv -q_p(2)^2 \pmod{p}.$$
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Lemma 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_harmonic_two_pow_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-harmonic-two-pow-div).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_harmonic_two_pow_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-harmonic-two-pow-div).
 
 ## Sum of the Delannoy triangle entries in rows $0$ to $p - 1$ modulo $p$
 
@@ -130,7 +130,7 @@ where $\left(\frac{2}{p}\right)$ is the Legendre symbol.
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Theorem 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_delannoy` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-delannoy).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_delannoy` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-delannoy).
 
 ## Reflection congruence for binomial coefficients modulo a prime
 
@@ -143,7 +143,7 @@ $$\binom{p-j}{k+1} + (-1)^k \binom{k+j}{k+1} \equiv 0 \pmod{p}.$$
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Lemma 11.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.choose_add_choose_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#choose-add-choose-mod).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.choose_add_choose_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#choose-add-choose-mod).
 
 ## A binomial sum through central Delannoy numbers
 
@@ -158,7 +158,7 @@ number with $r = s = 1$, that is, the $n$-th central Delannoy number.
 
 - Chahinaze Djadi and Hacène Belbachir, "Congruence Properties for the Delannoy Triangle Coefficients", Lemma 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_choose_choose_binomialPowerSeq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-choose-choose-binomial-power-seq).
+Stated but not proved: `MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_choose_choose_binomialPowerSeq` is written with `theorem_wanted` in [WantedExt/NumberTheory/DelannoyTriangleWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DelannoyTriangleWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html#sum-choose-choose-binomial-power-seq).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Congruences for Delannoy numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/congruences-for-delannoy-numbers)

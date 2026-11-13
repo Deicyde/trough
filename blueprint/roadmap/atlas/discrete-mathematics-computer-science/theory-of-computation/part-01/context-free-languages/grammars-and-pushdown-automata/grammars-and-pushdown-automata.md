@@ -8,7 +8,7 @@ proof: formalized
 
 # Grammars, parsing and pushdown automata: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/index.html).
 
 Grammar basics and derivation forests, Chomsky and Greibach normal forms, ε- and unit-production elimination, CYK and Earley recognizers, leftmost derivations and (inherent) ambiguity, pushdown automata, deterministic context-free languages, and the grammar–PDA equivalence.
 
@@ -21,7 +21,7 @@ Finiteness of the alphabet is necessary: a grammar has finitely many
 productions, hence mentions only finitely many terminal symbols, but a DFA
 over an infinite alphabet may accept every one-letter word.
 
-Formalized by `Cslib.Language.IsRegular.isContextFree`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Regular.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Regular.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/index.html#is-context-free).
+Formalized by `Cslib.Language.IsRegular.isContextFree`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Regular.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Regular.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/index.html#is-context-free).
 
 ## Depends on
 
@@ -30,4 +30,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Grammars, parsing and pushdown automata](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata)

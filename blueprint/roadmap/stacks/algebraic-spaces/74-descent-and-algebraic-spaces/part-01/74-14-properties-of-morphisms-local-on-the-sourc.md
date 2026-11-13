@@ -8,7 +8,7 @@ proof: formalized
 
 # 74.14 Properties of morphisms local on the source
 
-Section 74.14 of the Stacks Project, [Tag 06EN](https://stacks.math.columbia.edu/tag/06EN). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.14 of the Stacks Project, [Tag 06EN](https://stacks.math.columbia.edu/tag/06EN). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06EP, a definition
 
@@ -16,13 +16,13 @@ Section 74.14 of the Stacks Project, [Tag 06EN](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsLocalAtSource`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtSource#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L420) (StacksFrontier). References: SGA 4 IV (8.5.4).
+- [`CategoryTheory.MorphismProperty.IsLocalAtSource`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtSource#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L420) (StacksFrontier). References: SGA 4 IV (8.5.4).
 
 ## Tag 06EQ, a lemma
 
 [Tag 06EQ](https://stacks.math.columbia.edu/tag/06EQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.comp_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L164). The attribute's comment: “fpqc”.
+**`AlgebraicGeometry.Space.comp_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L164). The attribute's comment: “fpqc”.
 
 > **Stacks 06EQ**, the fpqc case. A property fpqc local on the source is stable under
 > precomposition with a flat morphism.
@@ -33,7 +33,7 @@ theorem comp_isFlat [P.IsLocalAtSource (Topology.precoverage.{u, v} .fpqc B S hS
     (ha : IsFlat B S hS a.hom) (hf : P f) : P (a ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.comp_isFlat_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L172). The attribute's comment: “fppf”.
+**`AlgebraicGeometry.Space.comp_isFlat_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L172). The attribute's comment: “fppf”.
 
 > **Stacks 06EQ**, the fppf case. A property fppf local on the source is stable under
 > precomposition with a flat morphism which is locally of finite presentation.
@@ -46,7 +46,7 @@ theorem comp_isFlat_isLocallyOfFinitePresentation
     (hlfp : IsLocallyOfFinitePresentation B S hS a.hom) (hf : P f) : P (a ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.comp_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L182). The attribute's comment: “syntomic”.
+**`AlgebraicGeometry.Space.comp_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L182). The attribute's comment: “syntomic”.
 
 > **Stacks 06EQ**, the syntomic case. A property syntomic local on the source is stable under
 > precomposition with a syntomic morphism.
@@ -57,7 +57,7 @@ theorem comp_isSyntomic [P.IsLocalAtSource (Topology.precoverage.{u, v} .syntomi
     (ha : IsSyntomic B S hS a.hom) (hf : P f) : P (a ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.comp_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L190). The attribute's comment: “smooth”.
+**`AlgebraicGeometry.Space.comp_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L190). The attribute's comment: “smooth”.
 
 > **Stacks 06EQ**, the smooth case. A property smooth local on the source is stable under
 > precomposition with a smooth morphism.
@@ -68,7 +68,7 @@ theorem comp_isSmooth [P.IsLocalAtSource (Topology.precoverage.{u, v} .smooth B 
     (ha : IsSmooth B S hS a.hom) (hf : P f) : P (a ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.comp_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L198). The attribute's comment: “étale”.
+**`AlgebraicGeometry.Space.comp_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Precomposition.lean#L198). The attribute's comment: “étale”.
 
 > **Stacks 06EQ**, the étale case. A property étale local on the source is stable under
 > precomposition with an étale morphism.
@@ -83,7 +83,7 @@ theorem comp_isEtale [P.IsLocalAtSource (Topology.precoverage.{u, v} .etale B S 
 
 [Tag 06ER](https://stacks.math.columbia.edu/tag/06ER) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Topology.isLocalAtSource_holdsOnEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/PropertyLocalOnSource.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/PropertyLocalOnSource.lean#L126).
+**`AlgebraicGeometry.Space.Topology.isLocalAtSource_holdsOnEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/PropertyLocalOnSource.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/PropertyLocalOnSource.lean#L126).
 
 > **Stacks 06ER.** Let `P` be a property of morphisms of schemes over `S` which is étale local
 > on the source and target, and let `τ` be one of the five topologies of Stacks 03YH. If `P` is
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.14, Tag 06EN](https://stacks.math.columbia.edu/tag/06EN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

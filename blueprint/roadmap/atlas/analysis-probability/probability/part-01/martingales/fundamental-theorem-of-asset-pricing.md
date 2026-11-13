@@ -8,7 +8,7 @@ proof: formalized
 
 # Fundamental theorem of asset pricing
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html).
 
 ## Fundamental theorem of asset pricing for a finite one-period market
 
@@ -21,7 +21,7 @@ $q \colon \Omega \to \mathbb{R}$ with $q(\omega) > 0$ for every $\omega \in \Ome
 $\sum_{\omega \in \Omega} q(\omega) = 1$ such that
 $\sum_{\omega \in \Omega} q(\omega)\, g(a, \omega) = 0$ for every asset $a \in A$.
 
-Formalized by `MathlibExt.Probability.Finance.FundamentalTheoremAssetPricing.one_period_fundamental_theorem_asset_pricing_general`, a theorem declared in [MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html#one-period-fundamental-theorem-asset-pri).
+Formalized by `MathlibExt.Probability.Finance.FundamentalTheoremAssetPricing.one_period_fundamental_theorem_asset_pricing_general`, a theorem declared in [MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html#one-period-fundamental-theorem-asset-pri).
 
 ## One-period fundamental theorem of asset pricing
 
@@ -39,7 +39,7 @@ strictly positive probability on the states under which every asset has zero exp
 
 - J. M. Harrison and D. M. Kreps, J. Econom. Theory 20 (1979), DOI 10.1016/0022-0531(79)90043-7. It follows from `one_period_fundamental_theorem_asset_pricing_general`; the unused `[DecidableEq Ω]` and `[DecidableEq A]` keep the source's shape.
 
-Formalized by `MathlibExt.Probability.Finance.FundamentalTheoremAssetPricing.one_period_fundamental_theorem_asset_pricing`, a theorem declared in [MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html#one-period-fundamental-theorem-asset-pri-2).
+Formalized by `MathlibExt.Probability.Finance.FundamentalTheoremAssetPricing.one_period_fundamental_theorem_asset_pricing`, a theorem declared in [MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Finance/FundamentalTheoremAssetPricing.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html#one-period-fundamental-theorem-asset-pri-2).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fundamental theorem of asset pricing](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/martingales/fundamental-theorem-of-asset-pricing)

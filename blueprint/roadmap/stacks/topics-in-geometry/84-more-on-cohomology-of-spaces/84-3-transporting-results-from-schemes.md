@@ -8,13 +8,13 @@ proof: formalized
 
 # 84.3 Transporting results from schemes
 
-Section 84.3 of the Stacks Project, [Tag 0DFU](https://stacks.math.columbia.edu/tag/0DFU). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 84.3 of the Stacks Project, [Tag 0DFU](https://stacks.math.columbia.edu/tag/0DFU). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DFV, a lemma
 
 [Tag 0DFV](https://stacks.math.columbia.edu/tag/0DFV) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1216). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.etaleSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1216). The attribute's comment: “étale case”.
 
 > **Stacks 0DFV, étale case.** The inclusion of schemes into algebraic
 > spaces is special cocontinuous for the big étale sites.
@@ -28,7 +28,7 @@ public theorem etaleSchemeToSpace_isSpecialCocontinuous
       T.topology (etaleSchemeToSpace T h)
 ```
 
-**`AlgebraicGeometry.fppfSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1233). The attribute's comment: “fppf case”.
+**`AlgebraicGeometry.fppfSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1234). The attribute's comment: “fppf case”.
 
 > **Stacks 0DFV, fppf case.** The Yoneda inclusion of schemes into
 > algebraic spaces is special cocontinuous for the big fppf sites.
@@ -42,7 +42,7 @@ public theorem fppfSchemeToSpace_isSpecialCocontinuous
       (AlgebraicGeometry.schemeSpaceFunctor T.schemeSite S T.scheme_mem)
 ```
 
-**`AlgebraicGeometry.phSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1261). The attribute's comment: “ph case”.
+**`AlgebraicGeometry.phSchemeToSpace_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1262). The attribute's comment: “ph case”.
 
 > **Stacks 0DFV, ph case.** The inclusion of schemes into algebraic
 > spaces is special cocontinuous for the big ph sites.
@@ -55,7 +55,7 @@ public theorem phSchemeToSpace_isSpecialCocontinuous
       T.topology T.schemeToSpace
 ```
 
-**`AlgebraicGeometry.etaleSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1277). The attribute's comment: “étale case, equivalence of topoi”.
+**`AlgebraicGeometry.etaleSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1279). The attribute's comment: “étale case, equivalence of topoi”.
 
 > **Stacks 0DFV, étale case: the identification of topoi.** The inclusion of schemes into
 > algebraic spaces induces an equivalence between the big étale topos of the scheme site and the
@@ -70,7 +70,7 @@ public noncomputable def etaleSchemeToSpaceSheafEquiv {S : Scheme.{u}}
       Sheaf T.topology (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.fppfSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1291). The attribute's comment: “fppf case, equivalence of topoi”.
+**`AlgebraicGeometry.fppfSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1294). The attribute's comment: “fppf case, equivalence of topoi”.
 
 > **Stacks 0DFV, fppf case: the identification of topoi.** The Yoneda inclusion of schemes
 > into algebraic spaces induces an equivalence between the big fppf topos of the scheme site and
@@ -84,7 +84,7 @@ public noncomputable def fppfSchemeToSpaceSheafEquiv {S : Scheme.{u}}
       Sheaf T.topology (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1305). The attribute's comment: “ph case, equivalence of topoi”.
+**`AlgebraicGeometry.phSchemeToSpaceSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean, line 1309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SchemeToSpaceSites.lean#L1309). The attribute's comment: “ph case, equivalence of topoi”.
 
 > **Stacks 0DFV, ph case: the identification of topoi.** The inclusion of schemes into
 > algebraic spaces induces an equivalence between the big ph topos of the scheme site and the
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 84.3, Tag 0DFU](https://stacks.math.columbia.edu/tag/0DFU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

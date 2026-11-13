@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.35 Étale morphisms
 
-Section 101.35 of the Stacks Project, [Tag 0CIK](https://stacks.math.columbia.edu/tag/0CIK). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.35 of the Stacks Project, [Tag 0CIK](https://stacks.math.columbia.edu/tag/0CIK). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CIL, a definition
 
 [Tag 0CIL](https://stacks.math.columbia.edu/tag/0CIL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L228).
+**`AlgebraicGeometry.Stack.IsEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSmoothLocalMorphism.lean#L228).
 
 > **Stacks 0CIL.** A 1-morphism of algebraic stacks over `S` is *étale* when it is
 > Deligne–Mumford and its universal étale-smooth diagram tests are étale morphisms of algebraic
@@ -28,7 +28,7 @@ abbrev IsEtale {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) :
 
 [Tag 0CIM](https://stacks.math.columbia.edu/tag/0CIM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismComp.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismComp.lean#L66).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismComp.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismComp.lean#L66).
 
 > **Stacks 0CIM.** The composite of two étale 1-morphisms of algebraic stacks over `S` is
 > étale, in the sense of **Stacks 0CIL**: it is Deligne–Mumford and passes the universal
@@ -45,7 +45,7 @@ theorem isEtale_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     Stack.IsEtale B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_comp_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean#L94). The attribute's comment: “the Deligne–Mumford conjunct of the conclusion”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_comp_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean#L94). The attribute's comment: “the Deligne–Mumford conjunct of the conclusion”.
 
 > **The Deligne–Mumford conjunct of Stacks 0CIM.** A composite of two étale 1-morphisms of
 > algebraic stacks over `S` is Deligne–Mumford.
@@ -64,7 +64,7 @@ theorem isDM_comp_of_isEtale {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S 
 
 [Tag 0CIN](https://stacks.math.columbia.edu/tag/0CIN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBaseChange.lean#L116).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBaseChange.lean#L116).
 
 > **Stacks 0CIN.** A base change of an étale 1-morphism of algebraic stacks over `S` is étale:
 > if `f : 𝒳 ⟶ 𝒴` is étale and `Q` is any 2-fibre product of a cospan `(g : 𝒴' ⟶ 𝒴, f)`, then
@@ -82,7 +82,7 @@ theorem isEtale_baseChange {𝒳 𝒴 𝒴' : AlgebraicStacks.{u, w} B S hS}
     IsEtale B S hS Q.fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_baseChange_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean#L109). The attribute's comment: “the Deligne–Mumford conjunct of the conclusion”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_baseChange_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismPermanence.lean#L109). The attribute's comment: “the Deligne–Mumford conjunct of the conclusion”.
 
 > **The Deligne–Mumford conjunct of Stacks 0CIN.** The projection to `𝒴'` of any 2-fibre
 > product of a cospan `(g : 𝒴' ⟶ 𝒴, f : 𝒳 ⟶ 𝒴)` of 1-morphisms of algebraic stacks over `S` is
@@ -105,7 +105,7 @@ theorem isDM_baseChange_of_isEtale {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, 
 
 [Tag 0CIP](https://stacks.math.columbia.edu/tag/0CIP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleOpenImmersion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleOpenImmersion.lean#L155).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleOpenImmersion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleOpenImmersion.lean#L155).
 
 > An open immersion of algebraic stacks over `S` is étale in the sense of Stacks 0CIL.
 
@@ -119,7 +119,7 @@ theorem isEtale_of_isOpenImmersion (f : 𝒳 ⟶ 𝒴)
 
 [Tag 0CIQ](https://stacks.math.columbia.edu/tag/0CIQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEtale_of_etaleOnEveryAlgebraicSpaceDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean#L110). The attribute's comment: “the implication (2) => (1)”.
+**`AlgebraicGeometry.Stack.isEtale_of_etaleOnEveryAlgebraicSpaceDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean#L110). The attribute's comment: “the implication (2) => (1)”.
 
 > A Deligne–Mumford 1-morphism of algebraic stacks whose every algebraic-space diagram with
 > étale comparisons has étale top horizontal morphism is étale.
@@ -130,7 +130,7 @@ theorem isEtale_of_etaleOnEveryAlgebraicSpaceDiagram
     (hf : EtaleOnEveryAlgebraicSpaceDiagram B S hS f) : IsEtale B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isDM_of_hasEtaleAlgebraicSpaceCoverAfterFppfBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean#L144). The attribute's comment: “the Deligne-Mumford half of the implication (3) => (1), for a site containing the terminal scheme”.
+**`AlgebraicGeometry.Stack.isDM_of_hasEtaleAlgebraicSpaceCoverAfterFppfBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterion.lean#L144). The attribute's comment: “the Deligne-Mumford half of the implication (3) => (1), for a site containing the terminal scheme”.
 
 > If the big fppf site contains the terminal scheme, a 1-morphism `f` of algebraic stacks
 > satisfying `AlgebraicGeometry.Stack.HasEtaleAlgebraicSpaceCoverAfterFppfBaseChange` is
@@ -143,7 +143,7 @@ theorem isDM_of_hasEtaleAlgebraicSpaceCoverAfterFppfBaseChange
     (hf : HasEtaleAlgebraicSpaceCoverAfterFppfBaseChange B S hS f) : IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isEtale_tfae_algebraicSpaceCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterionEquivalence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterionEquivalence.lean#L58).
+**`AlgebraicGeometry.Stack.isEtale_tfae_algebraicSpaceCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterionEquivalence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleAlgebraicSpaceCriterionEquivalence.lean#L58).
 
 > **Stacks 0CIQ.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -167,7 +167,7 @@ theorem isEtale_tfae_algebraicSpaceCharts
 
 [Tag 0CIR](https://stacks.math.columbia.edu/tag/0CIR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isEtale_over_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBetweenEtaleStacks.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBetweenEtaleStacks.lean#L52).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEtale_of_isEtale_over_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBetweenEtaleStacks.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleMorphismBetweenEtaleStacks.lean#L52).
 
 > **Stacks 0CIR.** Let `𝒳` and `𝒴` be algebraic stacks étale over an algebraic stack `𝒵`, with
 > structure 1-morphisms `p : 𝒳 ⟶ 𝒵` and `q : 𝒴 ⟶ 𝒵`. Any 1-morphism `f : 𝒳 ⟶ 𝒴` over `𝒵`, i.e.
@@ -185,7 +185,7 @@ theorem isEtale_of_isEtale_over_base {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w} B 
     (hp : Stack.IsEtale B S hS p) (hq : Stack.IsEtale B S hS q) : Stack.IsEtale B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isEtale_over_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L191). The attribute's comment: “the Deligne-Mumford conjunct of the conclusion: a morphism between two stacks etale over a base is DM. The remaining conjunct of Tag 0CIL, the universal etale-smooth diagram condition, is not proved here”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isEtale_over_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L191). The attribute's comment: “the Deligne-Mumford conjunct of the conclusion: a morphism between two stacks etale over a base is DM. The remaining conjunct of Tag 0CIL, the universal etale-smooth diagram condition, is not proved here”.
 
 > **The Deligne–Mumford conjunct of Stacks 0CIR.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks over `𝒵` whose structural 1-morphism `p : 𝒳 ⟶ 𝒵` is étale is Deligne–Mumford.
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.35, Tag 0CIK](https://stacks.math.columbia.edu/tag/0CIK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

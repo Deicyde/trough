@@ -7,7 +7,7 @@ statement: formalized
 
 # Leonardo numbers
 
-22 results, 4 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html).
+22 results, 4 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html).
 
 ## Generalized Leonardo numbers
 
@@ -21,7 +21,7 @@ The paper takes $k$ positive; here $k$ may be any integer.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly 62.3 (2024), introduction.
 
-Formalized by `MetaMathlibExt.genLeonardo`, a definition declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo).
+Formalized by `MetaMathlibExt.genLeonardo`, a definition declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo).
 
 ## Generalized Leonardo number of index two
 
@@ -32,7 +32,7 @@ Leonardo number $L_{k,2}$ equals $2 + k$.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024).
 
-Formalized by `MetaMathlibExt.genLeonardo_two`, a theorem declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-two).
+Formalized by `MetaMathlibExt.genLeonardo_two`, a theorem declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-two).
 
 ## Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$
 
@@ -45,7 +45,7 @@ $a_{n+2} = a_{n+1} + a_n + k$.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly 62.3 (2024), introduction; Kusrini, Putra, and Kuhapatanakul, *On Generalized Leonardo p-Numbers*, Journal of Integer Sequences 27 (2024), Article 24.4.6.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_eq_leonardoPK_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-eq-leonardo-pk-one).
+Stated but not proved: `MetaMathlibExt.genLeonardo_eq_leonardoPK_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-eq-leonardo-pk-one).
 
 ## Dual generalized Leonardo numbers
 
@@ -61,7 +61,7 @@ $M_{k,n+1} = M_{k,n} + M_{k,n-1} + 2k$ for $n \ge 1$.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly 62.3 (2024), Definition 2.1 and identity (2.1).
 
-Formalized by `MetaMathlibExt.genLeonardoCompanion`, a definition declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-companion).
+Formalized by `MetaMathlibExt.genLeonardoCompanion`, a definition declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-companion).
 
 ## The dual generalized Leonardo number of index one
 
@@ -72,7 +72,7 @@ generalized Leonardo number $M_{k,1}$ equals $3 + k$.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024).
 
-Formalized by `MetaMathlibExt.genLeonardoCompanion_one`, a theorem declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-companion-one).
+Formalized by `MetaMathlibExt.genLeonardoCompanion_one`, a theorem declared in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-companion-one).
 
 ## Product of a generalized Leonardo number and its dual
 
@@ -86,7 +86,7 @@ $$L_{k,n} M_{k,n} = (k+1) L_{k,2n+1} - k L_{k,n+3} + k\,(2k+1).$$
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_mul_companion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-mul-companion).
+Stated but not proved: `MetaMathlibExt.genLeonardo_mul_companion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-mul-companion).
 
 ## Cross-product identity for generalized Leonardo numbers
 
@@ -100,7 +100,7 @@ $$L_{k,n} M_{k,n+1} - L_{k,n+1} M_{k,n-1} = (k+1) L_{k,2n} - k L_{k,n} + k.$$
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_cross` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-cross).
+Stated but not proved: `MetaMathlibExt.genLeonardo_cross` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-cross).
 
 ## Square-difference identity for generalized Leonardo numbers
 
@@ -114,7 +114,7 @@ $$M_{k,n}^2 - L_{k,n}^2 = 4 L_{k,n-1} L_{k,n+1} + 2k L_{k,n} + k^2.$$
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.4.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-sq-sub-sq).
+Stated but not proved: `MetaMathlibExt.genLeonardo_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-sq-sub-sq).
 
 ## Shift identity for generalized Leonardo numbers
 
@@ -132,7 +132,7 @@ The paper also allows $t = 0$, reading $L_{k,-1}$ by extending the sequence to n
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-shift).
+Stated but not proved: `MetaMathlibExt.genLeonardo_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-shift).
 
 ## Sum-and-difference square identities for generalized Leonardo numbers
 
@@ -156,7 +156,7 @@ identity reads $82 = 78$. The reading used here agrees with the paper's outline 
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.6.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_sq_sum_diff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-sq-sum-diff).
+Stated but not proved: `MetaMathlibExt.genLeonardo_sq_sum_diff` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-sq-sum-diff).
 
 ## Binomial convolution identities for generalized Leonardo numbers
 
@@ -178,7 +178,7 @@ negative indices by the recurrence, the left side is $2$ and the printed right s
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.1 (i),(ii).
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-sum).
+Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-sum).
 
 ## Even-order binomial identities for generalized Leonardo numbers
 
@@ -199,7 +199,7 @@ $k = n = 1$, $r = 0$ the first odd identity reads $4 = 6$).
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.2, even case.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_sum_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-sum-two-mul).
+Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_sum_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-sum-two-mul).
 
 ## Alternating binomial identities for generalized Leonardo numbers
 
@@ -219,7 +219,7 @@ The hypothesis $n \ge 1$ is needed: for $n = 0$ the two sums equal $L_{k,r}$ and
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.3.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-alternating).
+Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_alternating` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-alternating).
 
 ## Binomial identities with steps three and four for generalized Leonardo numbers
 
@@ -249,7 +249,7 @@ as in parts (ii) of Theorems 3.1–3.3.
 
 - Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 3.4.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_steps` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GenLeonardoWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-steps).
+Stated but not proved: `MetaMathlibExt.genLeonardo_binomial_steps` is written with `theorem_wanted` in [WantedExt/NumberTheory/GenLeonardoWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GenLeonardoWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-binomial-steps).
 
 ## Log-concavity propagates along a linear recurrence
 
@@ -271,7 +271,7 @@ the recurrence at $n = k$ forces $c_1 > 0$.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 1 (quoted from the paper's reference [17]).
 
-Stated but not proved: `MetaMathlibExt.logConcave_of_linearRecurrence_of_initial_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#log-concave-of-linear-recurrence-of-init).
+Stated but not proved: `MetaMathlibExt.logConcave_of_linearRecurrence_of_initial_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#log-concave-of-linear-recurrence-of-init).
 
 ## Log-convexity propagates along a linear recurrence
 
@@ -293,7 +293,7 @@ $c_1 > 0$.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 1, log-convex reading (quoted from the paper's reference [17]).
 
-Stated but not proved: `MetaMathlibExt.logConvex_of_linearRecurrence_of_initial_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#log-convex-of-linear-recurrence-of-initi).
+Stated but not proved: `MetaMathlibExt.logConvex_of_linearRecurrence_of_initial_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#log-convex-of-linear-recurrence-of-initi).
 
 ## Log-balancedness of reciprocals along a three-term recurrence
 
@@ -315,7 +315,7 @@ The paper also assumes $c_1 > 0$; this follows from positivity, the recurrence a
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.inv_logBalanced_of_recurrence_of_initial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#inv-log-balanced-of-recurrence-of-initia).
+Stated but not proved: `MetaMathlibExt.inv_logBalanced_of_recurrence_of_initial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#inv-log-balanced-of-recurrence-of-initia).
 
 ## Log-balancedness of the reciprocals of generalized Leonardo numbers
 
@@ -334,7 +334,7 @@ $$\frac{1}{L_{k,n-1} \, (n-1)!} \cdot \frac{1}{L_{k,n+1} \, (n+1)!} \le
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.inv_genLeonardo_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#inv-gen-leonardo-log-balanced).
+Stated but not proved: `MetaMathlibExt.inv_genLeonardo_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#inv-gen-leonardo-log-balanced).
 
 ## Log-convexity of the n-th roots of generalized Leonardo numbers
 
@@ -347,7 +347,7 @@ $(L_{k,n}^{1/n})^2 \le L_{k,n-1}^{1/(n-1)} L_{k,n+1}^{1/(n+1)}$ for every intege
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_rpow_inv_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-rpow-inv-log-convex).
+Stated but not proved: `MetaMathlibExt.genLeonardo_rpow_inv_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-rpow-inv-log-convex).
 
 ## Log-concavity of partial sums of generalized Leonardo numbers
 
@@ -364,7 +364,7 @@ $F_n$ the Fibonacci numbers, gives the same value $-k$ at $n = 1$.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_partialSum_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-partial-sum-log-concave).
+Stated but not proved: `MetaMathlibExt.genLeonardo_partialSum_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-partial-sum-log-concave).
 
 ## Log-balancedness of the n-th roots of generalized Leonardo numbers
 
@@ -391,7 +391,7 @@ $n = 9$ on).
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_rpow_inv_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-rpow-inv-log-balanced).
+Stated but not proved: `MetaMathlibExt.genLeonardo_rpow_inv_logBalanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-rpow-inv-log-balanced).
 
 ## Log-convexity of the self-powers of generalized Leonardo numbers
 
@@ -404,7 +404,7 @@ every integer $n \ge 4$.
 
 - Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.genLeonardo_pow_self_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-pow-self-log-convex).
+Stated but not proved: `MetaMathlibExt.genLeonardo_pow_self_logConvex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedLeonardoLogBehaviorWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html#gen-leonardo-pow-self-log-convex).
 
 ## Depends on
 
@@ -413,4 +413,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Leonardo numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/leonardo-numbers)

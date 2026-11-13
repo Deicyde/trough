@@ -8,13 +8,13 @@ proof: formalized
 
 # 5.25 Stone-Čech compactification
 
-Section 5.25 of the Stacks Project, [Tag 0908](https://stacks.math.columbia.edu/tag/0908). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.25 of the Stacks Project, [Tag 0908](https://stacks.math.columbia.edu/tag/0908). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0909, a lemma
 
 [Tag 0909](https://stacks.math.columbia.edu/tag/0909) in the Stacks Project.
 
-**`mk_le_mk_set_set_of_denseRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compactification/CardinalityBound.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Compactification/CardinalityBound.lean#L106).
+**`mk_le_mk_set_set_of_denseRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compactification/CardinalityBound.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Compactification/CardinalityBound.lean#L106).
 
 > **Stacks 0909.** If `f : X → Y` is a continuous map of topological spaces with dense image
 > and `Y` is Hausdorff, then `#Y ≤ #P(P(X))`.
@@ -30,7 +30,7 @@ theorem mk_le_mk_set_set_of_denseRange
 
 [Tag 090A](https://stacks.math.columbia.edu/tag/090A) in the Stacks Project.
 
-**`exists_compactification_and_isOpenEmbedding_stoneCechUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compactification/OnePoint.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Compactification/OnePoint.lean#L220).
+**`exists_compactification_and_isOpenEmbedding_stoneCechUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Compactification/OnePoint.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Compactification/OnePoint.lean#L220).
 
 > **Stacks 090A.**  For a Hausdorff, locally quasi-compact space `X`:
 > (1) there exists a compact Hausdorff space `X*` and an open embedding
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.25, Tag 0908](https://stacks.math.columbia.edu/tag/0908)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

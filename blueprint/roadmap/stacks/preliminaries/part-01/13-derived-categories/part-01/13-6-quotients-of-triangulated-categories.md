@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.6 Quotients of triangulated categories
 
-Section 13.6 of the Stacks Project, [Tag 05RA](https://stacks.math.columbia.edu/tag/05RA). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.6 of the Stacks Project, [Tag 05RA](https://stacks.math.columbia.edu/tag/05RA). 11 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05RB, a definition
 
 [Tag 05RB](https://stacks.math.columbia.edu/tag/05RB) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.IsSaturated`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L156). References: SGA 4½ Etat 0 (2.1.1), “partial”.
+**`CategoryTheory.ObjectProperty.IsSaturated`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L160). References: SGA 4½ Etat 0 (2.1.1), “partial”.
 
 > A property `P` of the objects of a category with zero morphisms is *saturated* if whenever
 > a biproduct `X ⊞ Y` is isomorphic to an object satisfying `P`, then both `X` and `Y` are
@@ -30,7 +30,7 @@ public class IsSaturated : Prop
 
 [Tag 05RC](https://stacks.math.columbia.edu/tag/05RC) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_and_isSaturated_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L328). References: SGA 4½ Etat 0 (2.2), “thickness”.
+**`CategoryTheory.Functor.isTriangulated_and_isSaturated_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L332). References: SGA 4½ Etat 0 (2.2), “thickness”.
 
 > Let `F : C ⥤ D` be an exact functor of pre-triangulated categories. The full subcategory of `C`
 > spanned by the objects `X` with `F X = 0`, namely `F.kernel`, is a pre-triangulated subcategory of
@@ -48,7 +48,7 @@ theorem isTriangulated_and_isSaturated_kernel (F : C ⥤ D) [F.CommShift ℤ]
 
 [Tag 05RD](https://stacks.math.columbia.edu/tag/05RD) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_and_isSaturated_homologicalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L356). References: SGA 4½ Etat 0 (2.4.1), “thickness”.
+**`CategoryTheory.Functor.isTriangulated_and_isSaturated_homologicalKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L371). References: SGA 4½ Etat 0 (2.4.1), “thickness”.
 
 > Let `H : C ⥤ A` be a homological functor from a pre-triangulated category to an abelian
 > category. The full subcategory of `C` spanned by the objects `X` with `H (X⟦n⟧) = 0` for all
@@ -66,7 +66,7 @@ theorem isTriangulated_and_isSaturated_homologicalKernel (H : C ⥤ A) [H.IsHomo
 
 [Tag 05RE](https://stacks.math.columbia.edu/tag/05RE) in the Stacks Project.
 
-**`StacksBoundedSubcategories.boundedBelow_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L981). The attribute's comment: “D\_H^+ strictly full”.
+**`StacksBoundedSubcategories.boundedBelow_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1090](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1090). The attribute's comment: “D\_H^+ strictly full”.
 
 > The property `D_H^+` of being `H`-bounded below is closed under isomorphisms.
 
@@ -75,7 +75,7 @@ theorem boundedBelow_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (boundedBelow H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.boundedBelow_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L990). The attribute's comment: “D\_H^+ pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.boundedBelow_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1099). The attribute's comment: “D\_H^+ pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^+` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^+`.
@@ -86,7 +86,7 @@ theorem boundedBelow_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (boundedBelow H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.boundedBelow_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1000). The attribute's comment: “D\_H^+ saturated”.
+**`StacksBoundedSubcategories.boundedBelow_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1109). The attribute's comment: “D\_H^+ saturated”.
 
 > `D_H^+` is saturated: if `X ⊞ Y` is bounded below then so are `X` and `Y`, each being a retract
 > of the biproduct.
@@ -96,7 +96,7 @@ theorem boundedBelow_isSaturated (H : D ⥤ A) [H.IsHomological] :
     IsSaturated (boundedBelow H)
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1007). The attribute's comment: “D\_H^- strictly full”.
+**`StacksBoundedSubcategories.boundedAbove_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1116). The attribute's comment: “D\_H^- strictly full”.
 
 > The property `D_H^-` of being `H`-bounded above is closed under isomorphisms.
 
@@ -105,7 +105,7 @@ theorem boundedAbove_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (boundedAbove H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1016](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1016). The attribute's comment: “D\_H^- pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.boundedAbove_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1125). The attribute's comment: “D\_H^- pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^-` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^-`.
@@ -116,7 +116,7 @@ theorem boundedAbove_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (boundedAbove H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1026). The attribute's comment: “D\_H^- saturated”.
+**`StacksBoundedSubcategories.boundedAbove_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1135). The attribute's comment: “D\_H^- saturated”.
 
 > `D_H^-` is saturated: if `X ⊞ Y` is bounded above then so are `X` and `Y`, each being a retract
 > of the biproduct.
@@ -126,7 +126,7 @@ theorem boundedAbove_isSaturated (H : D ⥤ A) [H.IsHomological] :
     IsSaturated (boundedAbove H)
 ```
 
-**`StacksBoundedSubcategories.bounded_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1033). The attribute's comment: “D\_H^b strictly full”.
+**`StacksBoundedSubcategories.bounded_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1142). The attribute's comment: “D\_H^b strictly full”.
 
 > The property `D_H^b` of being `H`-bounded is closed under isomorphisms.
 
@@ -135,7 +135,7 @@ theorem bounded_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (bounded H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.bounded_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1042). The attribute's comment: “D\_H^b pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.bounded_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1151). The attribute's comment: “D\_H^b pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^b` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^b`.
@@ -146,7 +146,7 @@ theorem bounded_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (bounded H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.bounded_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1054). The attribute's comment: “D\_H^b saturated”.
+**`StacksBoundedSubcategories.bounded_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1163). The attribute's comment: “D\_H^b saturated”.
 
 > `D_H^b` is saturated: if `X ⊞ Y` is bounded then so are `X` and `Y`, each being a retract of
 > the biproduct.
@@ -160,23 +160,43 @@ theorem bounded_isSaturated (H : D ⥤ A) [H.IsHomological] :
 
 [Tag 05RF](https://stacks.math.columbia.edu/tag/05RF) in the Stacks Project.
 
-**`CategoryTheory.Functor.homologicalKernel_eq_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L381).
+**`CategoryTheory.Functor.kernel_isStacksKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L343). The attribute's comment: “(1): Ker(F) for an exact functor: the strictly full saturated triangulated subcategory of objects with F(X) = 0 (Mathlib's Functor.kernel; see 05RC)”.
 
-> The kernel of a functor `F` commuting with the shift by `ℤ`, described as in [Stacks, Tag 05RD]
-> by the vanishing of `F (X⟦n⟧)` for all `n : ℤ`, is described as in [Stacks, Tag 05RC] by the
-> vanishing of `F X`: the homological kernel and the kernel of such a functor — in particular of an
-> exact functor of pre-triangulated categories — are the same strictly full subcategory of `C`.
+> **Definition 05RF (1).** The kernel `Ker(F)` of an exact functor `F : C ⥤ D` of
+> pre-triangulated categories is the strictly full saturated (pre-)triangulated subcategory of
+> `C` of Lemma 05RC: its objects are the `X` with `F X = 0`. In Lean this is Mathlib's
+> `CategoryTheory.Functor.kernel`.
 
 ```lean
-public theorem homologicalKernel_eq_kernel (F : C ⥤ D) [F.CommShift ℤ] :
-    F.homologicalKernel = F.kernel
+theorem kernel_isStacksKernel (F : C ⥤ D) [F.CommShift ℤ] [F.IsTriangulated] :
+    (∀ X, F.kernel X ↔ IsZero (F.obj X)) ∧ F.kernel.IsClosedUnderIsomorphisms ∧
+      F.kernel.IsTriangulated ∧ F.kernel.IsSaturated
 ```
+
+**`CategoryTheory.Functor.homologicalKernel_isStacksKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L382). The attribute's comment: “(2): Ker(H) for a homological functor: the strictly full saturated triangulated subcategory of objects with H(X[n]) = 0 for all n (Mathlib's Functor.homologicalKernel; see 05RD)”.
+
+> **Definition 05RF (2).** The kernel `Ker(H)` of a homological functor `H : C ⥤ A` from a
+> pre-triangulated category to an abelian category is the strictly full saturated
+> (pre-)triangulated subcategory of `C` of Lemma 05RD: its objects are the `X` with `H (X⟦n⟧) = 0`
+> for all `n : ℤ`. In Lean this is Mathlib's `CategoryTheory.Functor.homologicalKernel`.
+
+```lean
+theorem homologicalKernel_isStacksKernel (H : C ⥤ A) [H.IsHomological] :
+    (∀ X, H.homologicalKernel X ↔ ∀ n : ℤ, IsZero (H.obj (X⟦n⟧))) ∧
+      H.homologicalKernel.IsClosedUnderIsomorphisms ∧
+      H.homologicalKernel.IsTriangulated ∧ H.homologicalKernel.IsSaturated
+```
+
+Declarations registered for the tag:
+
+- [`CategoryTheory.Functor.kernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.kernel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L79) (StacksFrontier): “(1) the kernel Ker(F) of an exact functor F : D ⥤ D': the objects X with F(X) = 0, as an `ObjectProperty`; it is strictly full and, by 05RC (`CategoryTheory.Functor.isTriangulated_and_isSaturated_kernel`), a saturated (pre-)triangulated subcategory”. References: SGA 4½ Etat 0 (2.2).
+- [`CategoryTheory.Functor.homologicalKernel`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.homologicalKernel#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L84) (StacksFrontier): “(2) the kernel Ker(H) of a homological functor H : D ⥤ A to an abelian category: the objects X with H(X[n]) = 0 for all n : ℤ, as an `ObjectProperty`; it is strictly full and, by 05RD (`CategoryTheory.Functor.isTriangulated_and_isSaturated_homologicalKernel`), a saturated (pre-)triangulated subcategory”. References: SGA 4½ Etat 0 (2.4.1).
 
 ## Tag 05RG, a lemma
 
 [Tag 05RG](https://stacks.math.columbia.edu/tag/05RG) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.hasCalculusOfFractions_isCompatibleWithTriangulation_and_isSaturated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L495). References: SGA 4½ Etat 0 (2.2), “S=φ(B) sat. mult. system”; SGA 4½ Etat 0 (2.3.1), “special case”.
+**`CategoryTheory.ObjectProperty.hasCalculusOfFractions_isCompatibleWithTriangulation_and_isSaturated_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L525). References: SGA 4½ Etat 0 (2.2), “S=φ(B) sat. mult. system”; SGA 4½ Etat 0 (2.3.1), “special case”.
 
 > Let `C` be a triangulated category, let `P` be a full triangulated subcategory of `C`, and let
 > `S` be the class of morphisms `f` that fit into a distinguished triangle `(X, Y, Z, f, g, h)` with
@@ -198,7 +218,7 @@ theorem hasCalculusOfFractions_isCompatibleWithTriangulation_and_isSaturated_iff
 
 [Tag 05RI](https://stacks.math.columbia.edu/tag/05RI) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.verdierQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L553). References: SGA 4½ Etat 0 (2.3.3); SGA 4½ Etat 0 (2.5); SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (Problem2).
+**`CategoryTheory.ObjectProperty.verdierQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L583). References: SGA 4½ Etat 0 (2.3.3); SGA 4½ Etat 0 (2.5); SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (Problem2).
 
 > The *quotient category* `C/P` of a pretriangulated category `C` by a subcategory
 > `P : ObjectProperty C`: the localization `S⁻¹C` of `C` at the class `S = P.trW` of morphisms whose
@@ -217,7 +237,7 @@ public abbrev verdierQuotient (P : ObjectProperty C) : Type u
 
 [Tag 05RJ](https://stacks.math.columbia.edu/tag/05RJ) in the Stacks Project.
 
-**`VerdierQuotientUniversalProperty.homological_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1133). The attribute's comment: “(1)”. References: SGA 4½ Etat 0 (2.4.1), “more general”.
+**`VerdierQuotientUniversalProperty.homological_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1242). The attribute's comment: “(1)”. References: SGA 4½ Etat 0 (2.4.1), “more general”.
 
 > **Universal property of the Verdier quotient for homological functors**.
 >
@@ -248,7 +268,7 @@ theorem homological_universal_property
         ∃! e : G ≅ H', Functor.whiskerLeft P.trW.Q e.hom ≫ fac.hom = α.hom
 ```
 
-**`VerdierQuotientUniversalProperty.exact_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1207). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (2.2), “partial”; SGA 4½ Etat 0 (2.3.2), “(A\_S”; SGA 4½ Etat 0 (2.3.3), “more general”; SGA 4½ Etat 0 (4.2.3), “(b)”; SGA 4½ Etat 0 (Problem2), “partial”.
+**`VerdierQuotientUniversalProperty.exact_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1316). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (2.2), “partial”; SGA 4½ Etat 0 (2.3.2), “(A\_S”; SGA 4½ Etat 0 (2.3.3), “more general”; SGA 4½ Etat 0 (4.2.3), “(b)”; SGA 4½ Etat 0 (Problem2), “partial”.
 
 > **Universal property of the Verdier quotient for exact (triangulated) functors**.
 >
@@ -289,7 +309,7 @@ theorem exact_universal_property
 
 [Tag 05RK](https://stacks.math.columbia.edu/tag/05RK) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.kernel_iff_exists_isoClosure_biprod_and_isLeast_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L614).
+**`CategoryTheory.ObjectProperty.kernel_iff_exists_isoClosure_biprod_and_isLeast_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L644).
 
 > Let `C` be a triangulated category, let `P` be a full triangulated subcategory of `C` and let
 > `L : C ⥤ D` be a localization of `C` at the class `P.trW` of morphisms whose cone lies in `P`, i.e.
@@ -310,40 +330,49 @@ theorem kernel_iff_exists_isoClosure_biprod_and_isLeast_kernel
 
 [Tag 05RL](https://stacks.math.columbia.edu/tag/05RL) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isLeast_trW_kernel_and_kernel_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 708](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L708).
+**`CategoryTheory.ObjectProperty.isLeast_trW_kernel_and_isLeast_kernel_and_orderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 786](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L786).
 
-> Let `C` be a triangulated category. Passing from a multiplicative system `S` compatible with
-> the triangulated structure to the kernel `B(S)` of a localization of `C` at `S`, and from a full
-> triangulated subcategory `P` to the class `S(P) = P.trW` of morphisms whose cone lies in `P`, one
-> has:
+> **[Stacks, Tag 05RL].** Let `C` be a triangulated category. Consider the constructions
+> `S ↦ B(S) = Ker(Q : C → S⁻¹C)` (the kernel of a localization `L : C ⥤ D` of `C` at `S`) on
+> multiplicative systems `S` compatible with the triangulated structure, and `P ↦ S(P) = P.trW`
+> (the morphisms fitting in a distinguished triangle whose third object is isomorphic to an object
+> of `P`) on full triangulated subcategories `P`. Then
 >
-> * `S(B(S))` is the *saturation* of `S`: the smallest saturated multiplicative system
->   ([Stacks, Tag 05Q8]) of `C` containing `S`;
-> * if `P` is a strictly full saturated ([Stacks, Tag 05RB]) triangulated subcategory, then
->   `B(S(P)) = P`.
+> 1. `S(B(S))` is the saturation of `S`: the smallest saturated multiplicative system
+>    ([Stacks, Tag 05Q8]) of `C` containing `S`;
+> 2. `B(S(P))` is the saturation of `P`: the smallest strictly full saturated
+>    ([Stacks, Tag 05RB]) triangulated subcategory of `C` containing `P`;
+> 3. in particular the two constructions — `B` computed with the canonical localization
+>    `S.Q : C ⥤ S.Localization` — are mutually inverse, order preserving bijections between the
+>    (partially ordered) set of saturated multiplicative systems of `C` compatible with the
+>    triangulated structure and the (partially ordered) set of strictly full saturated triangulated
+>    subcategories of `C`.
 >
-> Together with [Stacks, Tag 05RK] — which says that `B(S(P))` is in general the smallest strictly
-> full saturated triangulated subcategory containing `P` — this says that the two constructions are
-> mutually inverse, order preserving bijections between the saturated multiplicative systems of `C`
-> compatible with the triangulated structure and the strictly full saturated triangulated
-> subcategories of `C`.
+> Part (2) is [Stacks, Tag 05RK] (`kernel_iff_exists_isoClosure_biprod_and_isLeast_kernel`), and
+> that `S(P)` is a multiplicative system compatible with the triangulation is Mathlib's
+> `ObjectProperty.trW` instances, with saturation from [Stacks, Tag 05RG]. A strictly full
+> triangulated subcategory `P` is recovered from `S(P)` as the objects `X` with `(X ⟶ 0) ∈ S(P)`,
+> which makes `P ↦ S(P)` an order embedding.
 
 ```lean
-theorem isLeast_trW_kernel_and_kernel_eq_self :
+theorem isLeast_trW_kernel_and_isLeast_kernel_and_orderIso :
     (∀ (S : MorphismProperty C) [S.HasLeftCalculusOfFractions]
         [S.HasRightCalculusOfFractions] [S.IsCompatibleWithTriangulation]
         (L : C ⥤ D) [L.IsLocalization S],
       IsLeast {S' : MorphismProperty C | S'.IsSaturated ∧ S ≤ S'} L.kernel.trW) ∧
-    (∀ (P : ObjectProperty C) [P.IsTriangulated] [P.IsClosedUnderIsomorphisms] [P.IsSaturated]
-        (L : C ⥤ D) [L.IsLocalization P.trW],
-      L.kernel = P)
+    (∀ (P : ObjectProperty C) [P.IsTriangulated] (L : C ⥤ D) [L.IsLocalization P.trW],
+      IsLeast {P' : ObjectProperty C | P'.IsClosedUnderIsomorphisms ∧ P'.IsTriangulated ∧
+        P'.IsSaturated ∧ P ≤ P'} L.kernel) ∧
+    ∃ e : {S : MorphismProperty C // S.IsSaturated ∧ S.IsCompatibleWithTriangulation} ≃o
+        {P : ObjectProperty C // P.IsClosedUnderIsomorphisms ∧ P.IsTriangulated ∧ P.IsSaturated},
+      (∀ S, (e S).1 = S.1.Q.kernel) ∧ ∀ P, (e.symm P).1 = P.1.trW
 ```
 
 ## Tag 05RM, a lemma
 
 [Tag 05RM](https://stacks.math.columbia.edu/tag/05RM) in the Stacks Project.
 
-**`CategoryTheory.Functor.isSaturated_homologicalKernel_and_mem_trW_iff_and_exists_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L807). References: SGA 4½ Etat 0 (2.4.1); SGA 4½ Etat 0 (3.1.6), “factors through quotient”.
+**`CategoryTheory.Functor.isSaturated_homologicalKernel_and_mem_trW_iff_and_exists_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 916](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L916). References: SGA 4½ Etat 0 (2.4.1); SGA 4½ Etat 0 (3.1.6), “factors through quotient”.
 
 > Let `H : C ⥤ A` be a homological functor from a triangulated category to an abelian category,
 > write `Hⁱ = H(-⟦i⟧)`, and let `L : C ⥤ D` be a localization of `C` at the class of morphisms whose
@@ -376,4 +405,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.6, Tag 05RA](https://stacks.math.columbia.edu/tag/05RA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

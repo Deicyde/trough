@@ -7,7 +7,7 @@ statement: formalized
 
 # Kassel–Reutenauer polynomials
 
-32 results, 10 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html).
+32 results, 10 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html).
 
 ## The Kassel–Reutenauer coefficients $a_{n,i}$
 
@@ -23,7 +23,7 @@ taken to be empty, so $a_{0,i} = 0$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, display (2.3), quoting their earlier Theorem 1.3 of *Complete determination of the zeta function of the Hilbert scheme of n points on a two-dimensional torus*.
 
-Formalized by `MetaMathlibExt.kasselReutenauerCoeff`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff).
+Formalized by `MetaMathlibExt.kasselReutenauerCoeff`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff).
 
 ## Kassel–Reutenauer polynomial
 
@@ -49,7 +49,7 @@ expansion (2.4) of the paper instead.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, (2.1)–(2.4) and Table 2.
 
-Formalized by `MetaMathlibExt.kasselReutenauerPoly`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly).
+Formalized by `MetaMathlibExt.kasselReutenauerPoly`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly).
 
 ## Partial sums of the monic Chebyshev polynomials
 
@@ -67,7 +67,7 @@ $F_n = F_{n-1} + \bar T_n$ for $n \ge 1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, (3.6)–(3.7).
 
-Formalized by `MetaMathlibExt.chebyshevCPartialSum`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum).
+Formalized by `MetaMathlibExt.chebyshevCPartialSum`, a definition declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum).
 
 ## Small values of the coefficients $a_{n,i}$
 
@@ -78,7 +78,7 @@ $a_{1,0} = 1$, $a_{2,0} = a_{2,1} = 1$, $a_{3,0} = 0$ and $a_{3,1} = a_{3,2} = 1
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, (2.3) and Table 2.
 
-Formalized by `MetaMathlibExt.kasselReutenauerCoeff_small`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff-small).
+Formalized by `MetaMathlibExt.kasselReutenauerCoeff_small`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff-small).
 
 ## The first Kassel–Reutenauer polynomial
 
@@ -89,7 +89,7 @@ constant polynomial $1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Table 2.
 
-Formalized by `MetaMathlibExt.kasselReutenauerPoly_one`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-one).
+Formalized by `MetaMathlibExt.kasselReutenauerPoly_one`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-one).
 
 ## The Kassel–Reutenauer polynomial $\bar P_2$
 
@@ -100,7 +100,7 @@ $\bar P_2(X) \in \mathbb{Z}[X]$ equals $X + 1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Table 2.
 
-Formalized by `MetaMathlibExt.kasselReutenauerPoly_two`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-two).
+Formalized by `MetaMathlibExt.kasselReutenauerPoly_two`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-two).
 
 ## The third Kassel–Reutenauer polynomial
 
@@ -111,7 +111,7 @@ $X^2 + X - 2$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Table 2.
 
-Formalized by `MetaMathlibExt.kasselReutenauerPoly_three`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-three).
+Formalized by `MetaMathlibExt.kasselReutenauerPoly_three`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-three).
 
 ## Zeroth partial sum of the Chebyshev polynomials
 
@@ -124,7 +124,7 @@ Then $F_0 = 1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, (3.6).
 
-Formalized by `MetaMathlibExt.chebyshevCPartialSum_zero`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-zero).
+Formalized by `MetaMathlibExt.chebyshevCPartialSum_zero`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-zero).
 
 ## Successive partial sums of the Chebyshev polynomials
 
@@ -137,7 +137,7 @@ For every natural number $n$, $F_{n+1} = F_n + \bar T_{n+1}$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, (3.6).
 
-Formalized by `MetaMathlibExt.chebyshevCPartialSum_succ`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-succ).
+Formalized by `MetaMathlibExt.chebyshevCPartialSum_succ`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-succ).
 
 ## First and second partial sums of the Chebyshev polynomials
 
@@ -150,7 +150,7 @@ Then $F_1 = X + 1$ and $F_2 = X^2 + X - 1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Table 4.
 
-Formalized by `MetaMathlibExt.chebyshevCPartialSum_one_two`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-one-two).
+Formalized by `MetaMathlibExt.chebyshevCPartialSum_one_two`, a theorem declared in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-one-two).
 
 ## Positivity of the Kassel–Reutenauer polynomials at integers $N \ge 2$
 
@@ -162,7 +162,7 @@ $\bar P_n(N) > 0$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 2.1 (`jis-2026-26.4.4-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eval_pos` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eval-pos).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eval_pos` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eval-pos).
 
 ## Multiplicativity at roots of unity of order at most 4
 
@@ -181,7 +181,7 @@ polynomial $P_n(q) = q^{n-1} \bar P_n(q + q^{-1})$, so $n \mapsto |P_n(q)|$ is m
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 2.2 (`jis-2026-26.4.4-prop-2`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_norm_multiplicative_rootOfUnity` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-norm-multiplicati).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_norm_multiplicative_rootOfUnity` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-norm-multiplicati).
 
 ## Almost multiplicativity at a primitive sixth root of unity
 
@@ -200,7 +200,7 @@ $P_n(q) = q^{n-1} \bar P_n(q + q^{-1})$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 2.3 (`jis-2026-26.4.4-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_norm_almost_multiplicative_sixth` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-norm-almost-multi).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_norm_almost_multiplicative_sixth` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-norm-almost-multi).
 
 ## Multiplicativity of $\bar P_n^2$ modulo $X (X + 1) (X^2 - 4)$
 
@@ -214,7 +214,7 @@ it is divisible by $X (X + 1) (X^2 - 4) (X - 1)$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Corollary 2.4 (`jis-2026-26.4.4-cor-4`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_sq_sub_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-sq-sub-dvd).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_sq_sub_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-sq-sub-dvd).
 
 ## Integers at which $|\bar P_n|$ is multiplicative
 
@@ -227,7 +227,7 @@ if and only if $N \in \{-2, -1, 0, 2\}$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 2.5 (`jis-2026-26.4.4-prop-5`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_abs_eval_multiplicative_iff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-abs-eval-multipli).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_abs_eval_multiplicative_iff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-abs-eval-multipli).
 
 ## Positivity of the monic Chebyshev polynomials
 
@@ -240,7 +240,7 @@ and every real number $x \ge 2$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 3.1 (`jis-2026-26.4.4-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevC_eval_pos_of_two_le` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-c-eval-pos-of-two-le).
+Stated but not proved: `MetaMathlibExt.chebyshevC_eval_pos_of_two_le` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-c-eval-pos-of-two-le).
 
 ## Trace formula for the monic Chebyshev polynomials
 
@@ -254,7 +254,7 @@ every natural number $k$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 3.2 (`jis-2026-26.4.4-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevC_eq_trace_pow` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-c-eq-trace-pow).
+Stated but not proved: `MetaMathlibExt.chebyshevC_eq_trace_pow` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-c-eq-trace-pow).
 
 ## Generating function of the partial sums of Chebyshev polynomials
 
@@ -272,7 +272,7 @@ $\sum_{n \ge 0} F_n t^n = (1 + t)/(1 - X t + t^2)$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 3.3 (`jis-2026-26.4.4-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-generating-functi).
+Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-generating-functi).
 
 ## Binomial expansion of the partial sums of Chebyshev polynomials
 
@@ -288,7 +288,7 @@ $$F_n = \sum_{m=0}^{\lfloor n/2 \rfloor} (-1)^m \binom{n-m}{m} X^{n-2m} +
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 3.4 (`jis-2026-26.4.4-prop-9`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-eq-binomial-sum).
+Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-eq-binomial-sum).
 
 ## Leading coefficients of the partial sums of Chebyshev polynomials
 
@@ -308,7 +308,7 @@ Here $\binom{n-2}{2} = (n-2)(n-3)/2$ and $\binom{n-3}{2} = (n-3)(n-4)/2$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Corollary 3.5 (`jis-2026-26.4.4-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_top_coeffs` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-top-coeffs).
+Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_top_coeffs` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-top-coeffs).
 
 ## Three-term recurrence for the partial sums of Chebyshev polynomials
 
@@ -321,7 +321,7 @@ For every $k \ge 1$, $F_{k+1} = X F_k - F_{k-1}$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 3.6 (`jis-2026-26.4.4-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_recurrence` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-recurrence).
+Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_recurrence` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-recurrence).
 
 ## Approximation of $\bar P_n$ by $F_{n-1}$
 
@@ -335,7 +335,7 @@ degree less than $n/2 - 1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Theorem 4.1 (`jis-2026-26.4.4-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_sub_chebyshevCPartialSum_coeff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-sub-chebyshev-cpa).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_sub_chebyshevCPartialSum_coeff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-sub-chebyshev-cpa).
 
 ## Top coefficients of the Kassel–Reutenauer polynomials
 
@@ -355,7 +355,7 @@ $X^{n-1} + X^{n-2} - (n-2) X^{n-3} - (n-3) X^{n-4} + \frac{(n-3)(n-4)}{2} X^{n-5
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Corollary 4.2 (`jis-2026-26.4.4-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_top_coeffs` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-top-coeffs).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_top_coeffs` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-top-coeffs).
 
 ## The top coefficients $a_{n,i}$ equal $1$
 
@@ -368,7 +368,7 @@ equals $1$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Lemma 4.3 (`jis-2026-26.4.4-lem-14`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerCoeff_eq_one` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff-eq-one).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerCoeff_eq_one` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-coeff-eq-one).
 
 ## Odd-divisor formula for the Kassel–Reutenauer polynomials
 
@@ -388,7 +388,7 @@ polynomials $\bar T_k$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Theorem 4.4 (`jis-2026-26.4.4-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eq_oddDivisor_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eq-odd-divisor-su).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eq_oddDivisor_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eq-odd-divisor-su).
 
 ## $\bar P_n$ equals $F_{n-1}$ exactly for powers of two
 
@@ -401,7 +401,7 @@ some natural number $k$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Corollary 4.5 (`jis-2026-26.4.4-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eq_chebyshevCPartialSum_iff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eq-chebyshev-cpar).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_eq_chebyshevCPartialSum_iff` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-eq-chebyshev-cpar).
 
 ## $C_n(q)/q^n$ as a sum over the solutions of $h(h + 1 + 2a) = 2n$
 
@@ -423,7 +423,7 @@ and $|a| \le n$, so the sum runs over all such pairs.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Lemma 5.2 (`jis-2026-26.4.4-lem-22`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_div_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-div-pow-eq-sum).
+Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_div_pow_eq_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-div-pow-eq-sum).
 
 ## Increasing-sequence and odd-divisor formulas for $C_n(q)/q^n$
 
@@ -455,7 +455,7 @@ $h \le 2n$ and $|a| \le n$, so the sum in (i) runs over all such sequences.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Theorem 5.3 (`jis-2026-26.4.4-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_div_pow_increasingSequences` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-div-pow-increasing-s).
+Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_div_pow_increasingSequences` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-div-pow-increasing-s).
 
 ## The absolute coefficient sum of $C_n$ counts odd divisors
 
@@ -471,7 +471,7 @@ the polynomial $C_n(q)$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Corollary 5.4 (`jis-2026-26.4.4-cor-24`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_abs_coeff_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-abs-coeff-sum).
+Stated but not proved: `MetaMathlibExt.kasselReutenauer_C_abs_coeff_sum` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-c-abs-coeff-sum).
 
 ## Laurent polynomial identity for the partial sums of Chebyshev polynomials
 
@@ -486,7 +486,7 @@ $$q^{r+1} + q^{-r-1} - q^r - q^{-r} = q^{-1} (q - 1)^2 F_r(q + q^{-1}).$$
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Lemma 6.1 (`jis-2026-26.4.4-lem-26`).
 
-Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_laurent_identity` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-laurent-identity).
+Stated but not proved: `MetaMathlibExt.chebyshevCPartialSum_laurent_identity` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#chebyshev-cpartial-sum-laurent-identity).
 
 ## Increasing-sequence formula for the Kassel–Reutenauer polynomials
 
@@ -508,7 +508,7 @@ The left-hand side is the paper's $P_n(q)/q^{n-1}$.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 6.2 (`jis-2026-26.4.4-prop-27`).
 
-Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_laurent_increasingSequences` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-laurent-increasin).
+Stated but not proved: `MetaMathlibExt.kasselReutenauerPoly_laurent_increasingSequences` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#kassel-reutenauer-poly-laurent-increasin).
 
 ## Zeta function of the Hilbert scheme of points on the two-dimensional torus
 
@@ -532,7 +532,7 @@ The exponents $a_d$, $b_d$, $a_d + 1$ and $b_d - 1$ are nonnegative integers.
 
 - C. Kassel and C. Reutenauer, *Pairs of Intertwined Integer Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.4, Proposition 5.5 (`jis-2026-26.4.4-prop-25`).
 
-Stated but not proved: `MetaMathlibExt.hilbertSchemeTorus_zeta_eq_prod` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#hilbert-scheme-torus-zeta-eq-prod).
+Stated but not proved: `MetaMathlibExt.hilbertSchemeTorus_zeta_eq_prod` is written with `theorem_wanted` in [WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntertwinedIntegerSequencesWanted.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html#hilbert-scheme-torus-zeta-eq-prod).
 
 ## Depends on
 
@@ -541,4 +541,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kassel–Reutenauer polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/orthogonal-polynomials/kassel-reutenauer-polynomials)

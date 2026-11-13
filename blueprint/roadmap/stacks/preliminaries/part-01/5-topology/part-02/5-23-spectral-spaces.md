@@ -8,13 +8,13 @@ proof: formalized
 
 # 5.23 Spectral spaces
 
-Section 5.23 of the Stacks Project, [Tag 08YF](https://stacks.math.columbia.edu/tag/08YF). 14 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.23 of the Stacks Project, [Tag 08YF](https://stacks.math.columbia.edu/tag/08YF). 14 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0901, a lemma
 
 [Tag 0901](https://stacks.math.columbia.edu/tag/0901) in the Stacks Project.
 
-**`withConstructibleTopology_t2_totallyDisconnected_compact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructibleProfinite.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/ConstructibleProfinite.lean#L97). References: EGA IV (1.9.15), “(ii)(iii) suff, spectral”.
+**`withConstructibleTopology_t2_totallyDisconnected_compact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructibleProfinite.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/ConstructibleProfinite.lean#L97). References: EGA IV (1.9.15), “(ii)(iii) suff, spectral”.
 
 > **Stacks 0901**.
 > For a spectral space `X`, the constructible topology on `X` is Hausdorff, totally
@@ -32,7 +32,7 @@ theorem withConstructibleTopology_t2_totallyDisconnected_compact (X : Type*) [To
 
 [Tag 0A2S](https://stacks.math.columbia.edu/tag/0A2S) in the Stacks Project.
 
-**`spectralMap_continuous_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L667). The attribute's comment: “continuity in the constructible topology”. References: EGA IV (1.9.14), “iii, special case”.
+**`spectralMap_continuous_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L667). The attribute's comment: “continuity in the constructible topology”. References: EGA IV (1.9.14), “iii, special case”.
 
 > **Stacks 0A2S** (continuity in the constructible topology).
 > A spectral map `f : X → Y` is continuous for the constructible topologies on `X` and `Y`.
@@ -46,7 +46,7 @@ theorem spectralMap_continuous_withConstructibleTopology
             x)))
 ```
 
-**`spectralMap_fibre_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L685). The attribute's comment: “quasi-compact fibres”.
+**`spectralMap_fibre_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L685). The attribute's comment: “quasi-compact fibres”.
 
 > **Stacks 0A2S** (quasi-compact fibres).
 > The fibres of a spectral map between spectral spaces are quasi-compact.
@@ -57,7 +57,7 @@ theorem spectralMap_fibre_isCompact
     IsCompact (f ⁻¹' {y})
 ```
 
-**`spectralMap_range_isClosed_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L703). The attribute's comment: “closed image in the constructible topology”. References: EGA IV (1.9.14), “iv, special case”.
+**`spectralMap_range_isClosed_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMaps.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/SpectralMaps.lean#L703). The attribute's comment: “closed image in the constructible topology”. References: EGA IV (1.9.14), “iv, special case”.
 
 > **Stacks 0A2S** (closed image in the constructible topology).
 > The image of a spectral map between spectral spaces is closed in the constructible topology on the
@@ -73,7 +73,7 @@ theorem spectralMap_range_isClosed_withConstructibleTopology
 
 [Tag 0G1J](https://stacks.math.columbia.edu/tag/0G1J) in the Stacks Project.
 
-**`TopologicalSpace.isSpectralMap_iff_continuous_constructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMapConstructible.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/SpectralMapConstructible.lean#L108). References: EGA IV (1.9.14), “(iii)”.
+**`TopologicalSpace.isSpectralMap_iff_continuous_constructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SpectralMapConstructible.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/SpectralMapConstructible.lean#L108). References: EGA IV (1.9.14), “(iii)”.
 
 > **Stacks 0G1J.** Let `X` and `Y` be spectral spaces and let `f : X → Y` be continuous.
 > Then `f` is a spectral map if and only if it is continuous for the constructible topologies
@@ -89,7 +89,7 @@ theorem isSpectralMap_iff_continuous_constructibleTopology
 
 [Tag 0902](https://stacks.math.columbia.edu/tag/0902) in the Stacks Project.
 
-**`spectralSpace_of_isClosed_constructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructiblyClosed.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/ConstructiblyClosed.lean#L286). References: SGA 4 IV (9.1.11), “partial”.
+**`spectralSpace_of_isClosed_constructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructiblyClosed.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/ConstructiblyClosed.lean#L286). References: SGA 4 IV (9.1.11), “partial”.
 
 > **Stacks 0902**.
 > For a spectral space `X` and a subset `E ⊆ X` closed in the constructible topology on `X`, the set
@@ -107,7 +107,7 @@ theorem spectralSpace_of_isClosed_constructibleTopology
 
 [Tag 0903](https://stacks.math.columbia.edu/tag/0903) in the Stacks Project.
 
-**`specializes_and_isClosed_and_isOpen_of_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructiblyClosedStable.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/ConstructiblyClosedStable.lean#L162).
+**`specializes_and_isClosed_and_isOpen_of_constructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ConstructiblyClosedStable.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/ConstructiblyClosedStable.lean#L162).
 
 > **Stacks 0903**.
 > For a spectral space `X`: a point of the closure of a constructibly closed set is a specialization
@@ -128,7 +128,7 @@ theorem specializes_and_isClosed_and_isOpen_of_constructible [SpectralSpace X] :
 
 [Tag 0904](https://stacks.math.columbia.edu/tag/0904) in the Stacks Project.
 
-**`Topology.exists_specializes_or_exists_disjoint_nhds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/Generization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/Generization.lean#L82).
+**`Topology.exists_specializes_or_exists_disjoint_nhds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/Generization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/Generization.lean#L82).
 
 > **Stacks 0904.** For any two points `x`, `y` of a spectral space, either there is a point
 > `z` specializing to both (equivalently, `x` and `y` both lie in `closure {z}`), or `x` and `y`
@@ -144,22 +144,37 @@ theorem exists_specializes_or_exists_disjoint_nhds [SpectralSpace X] (x y : X) :
 
 [Tag 0905](https://stacks.math.columbia.edu/tag/0905) in the Stacks Project.
 
-**`spectralSpace_profinite_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ProfiniteCharacterization.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/ProfiniteCharacterization.lean#L219).
+**`spectralSpace_profinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ProfiniteCharacterizationTFAE.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/ProfiniteCharacterizationTFAE.lean#L82). The attribute's comment: “items (1)-(8); the source's item (9) is the placeholder 'add more here' and states nothing; profinite is read as quasi-compact, Hausdorff and totally disconnected”.
 
 > **Stacks 0905**.
-> A Hausdorff spectral space is profinite: it is both Hausdorff and totally disconnected
-> (quasi-compactness is automatic from `SpectralSpace`).
+> For a spectral space `X` the following are equivalent:
+> 1. `X` is profinite, i.e. quasi-compact, Hausdorff and totally disconnected;
+> 2. `X` is Hausdorff;
+> 3. `X` is totally disconnected;
+> 4. every quasi-compact open of `X` is closed;
+> 5. there are no nontrivial specializations between points of `X`;
+> 6. every point of `X` is closed;
+> 7. every point of `X` is the generic point of an irreducible component of `X`;
+> 8. the constructible topology of `X` equals its given topology.
 
 ```lean
-theorem spectralSpace_profinite_of_t2 [SpectralSpace X] [T2Space X] :
-    T2Space X ∧ TotallyDisconnectedSpace X
+theorem spectralSpace_profinite_tfae [SpectralSpace X] :
+    List.TFAE
+      [CompactSpace X ∧ T2Space X ∧ TotallyDisconnectedSpace X,
+        T2Space X,
+        TotallyDisconnectedSpace X,
+        ∀ U : Set X, IsOpen U → IsCompact U → IsClosed U,
+        ∀ x y : X, x ⤳ y → x = y,
+        ∀ x : X, IsClosed ({x} : Set X),
+        ∀ x : X, ∃ Z ∈ irreducibleComponents X, IsGenericPoint x Z,
+        constructibleTopology X = ‹TopologicalSpace X›]
 ```
 
 ## Tag 0906, a lemma
 
 [Tag 0906](https://stacks.math.columbia.edu/tag/0906) in the Stacks Project.
 
-**`connectedComponents_isProfinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ComponentSpace.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/ComponentSpace.lean#L286).
+**`connectedComponents_isProfinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/ComponentSpace.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/ComponentSpace.lean#L286).
 
 > **Stacks 0906**.
 > For a spectral space `X` the space of connected components `π₀(X) = ConnectedComponents X` is
@@ -177,7 +192,7 @@ theorem connectedComponents_isProfinite
 
 [Tag 0907](https://stacks.math.columbia.edu/tag/0907) in the Stacks Project.
 
-**`prod_spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/Products.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/Products.lean#L165).
+**`prod_spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/Products.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/Products.lean#L165).
 
 > The product of two spectral spaces is a spectral space.
 
@@ -192,7 +207,7 @@ theorem prod_spectralSpace (X Y : Type*)
 
 [Tag 09XU](https://stacks.math.columbia.edu/tag/09XU) in the Stacks Project.
 
-**`Topology.isHomeomorph_of_isSpectralMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/BijectionHomeomorph.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/BijectionHomeomorph.lean#L223).
+**`Topology.isHomeomorph_of_isSpectralMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/BijectionHomeomorph.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/BijectionHomeomorph.lean#L223).
 
 > **Stacks 09XU.** Let `f : X → Y` be a spectral, bijective map of spectral topological
 > spaces. If generalizations or specializations lift along `f`, then `f` is a homeomorphism.
@@ -207,7 +222,7 @@ theorem isHomeomorph_of_isSpectralMap_of_bijective [SpectralSpace X] [SpectralSp
 
 [Tag 09XV](https://stacks.math.columbia.edu/tag/09XV) in the Stacks Project.
 
-**`spectralSpace_inverseLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimitFiniteSober.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/InverseLimitFiniteSober.lean#L181).
+**`spectralSpace_inverseLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/InverseLimitFiniteSober.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/InverseLimitFiniteSober.lean#L181).
 
 > **Stacks 09XV**. The inverse limit of a directed inverse system of finite sober topological
 > spaces is a spectral topological space. Here a sober space in the sense of the Stacks project is a
@@ -224,7 +239,7 @@ theorem spectralSpace_inverseLimit [Nonempty I] [IsDirectedOrder I] [∀ i, Fini
 
 [Tag 09XW](https://stacks.math.columbia.edu/tag/09XW) in the Stacks Project.
 
-**`Topology.spectralSpace_iff_exists_isClosed_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SierpinskiEmbedding.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/SierpinskiEmbedding.lean#L577).
+**`Topology.spectralSpace_iff_exists_isClosed_withConstructibleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/SierpinskiEmbedding.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/SierpinskiEmbedding.lean#L577).
 
 > A topological space is spectral if and only if it is homeomorphic to a subset of a product of
 > copies of the Sierpinski space which is closed for the constructible topology of that product.
@@ -241,7 +256,7 @@ theorem spectralSpace_iff_exists_isClosed_withConstructibleTopology (X : Type u)
 
 [Tag 09XX](https://stacks.math.columbia.edu/tag/09XX) in the Stacks Project.
 
-**`spectralSpace_iff_isDirectedInverseLimitOfFiniteSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/AsDirectedInverseLimit.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/AsDirectedInverseLimit.lean#L175).
+**`spectralSpace_iff_isDirectedInverseLimitOfFiniteSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/AsDirectedInverseLimit.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/AsDirectedInverseLimit.lean#L175).
 
 > A topological space is spectral if and only if it is a directed inverse limit of finite
 > sober topological spaces.
@@ -256,7 +271,7 @@ theorem spectralSpace_iff_isDirectedInverseLimitOfFiniteSober
 
 [Tag 0A2T](https://stacks.math.columbia.edu/tag/0A2T) in the Stacks Project.
 
-**`UniversalSoberMap.compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L291). The attribute's comment: “part (1): quasi-compactness”.
+**`UniversalSoberMap.compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L291). The attribute's comment: “part (1): quasi-compactness”.
 
 > **Statement (1).** If `X` is quasi-compact, then so is `X'`.
 > This is the first part of Stacks Project Lemma 5.23.15 (tag `0A2T`).
@@ -268,7 +283,7 @@ theorem UniversalSoberMap.compactSpace
     CompactSpace X'
 ```
 
-**`UniversalSoberMap.spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L385). The attribute's comment: “part (2): spectral”.
+**`UniversalSoberMap.spectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L385). The attribute's comment: “part (2): spectral”.
 
 > **Statement (2).** If `X` is quasi-compact, has a basis of quasi-compact opens, and the
 > intersection of any two quasi-compact opens of `X` is quasi-compact, then `X'` is a spectral
@@ -282,7 +297,7 @@ theorem UniversalSoberMap.spectralSpace
     SpectralSpace X'
 ```
 
-**`UniversalSoberMap.noetherianSpectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L415). The attribute's comment: “part (3): Noetherian spectral”.
+**`UniversalSoberMap.noetherianSpectralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/UniversalSoberMap.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Spectral/UniversalSoberMap.lean#L415). The attribute's comment: “part (3): Noetherian spectral”.
 
 > **Statement (3).** If `X` is Noetherian, then `X'` is a Noetherian spectral space.
 > This is the third part of Stacks Project Lemma 5.23.15 (tag `0A2T`).
@@ -301,4 +316,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.23, Tag 08YF](https://stacks.math.columbia.edu/tag/08YF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

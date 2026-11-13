@@ -1,6 +1,6 @@
 # 86 Duality for Spaces
 
-Chapter 86 of the Stacks Project, *Duality for Spaces*, [Tag 0E4V](https://stacks.math.columbia.edu/tag/0E4V): the 9 sections of its 10 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 36 tags are carried by 61 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
+Chapter 86 of the Stacks Project, *Duality for Spaces*, [Tag 0E4V](https://stacks.math.columbia.edu/tag/0E4V): the 9 sections of its 10 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 36 tags are carried by 59 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
 
 - [86.2 Dualizing complexes on algebraic spaces](86-2-dualizing-complexes-on-algebraic-spaces.md)
 - [86.3 Right adjoint of pushforward](86-3-right-adjoint-of-pushforward.md)

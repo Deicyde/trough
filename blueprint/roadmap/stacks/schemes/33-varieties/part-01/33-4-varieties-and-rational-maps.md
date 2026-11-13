@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite, AlgebraicGeometry.birationalOver_tfae_functionField
+lean: AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite, AlgebraicGeometry.Variety.nonempty_iso_tfae
 statement: formalized
 proof: formalized
 ---
 
 # 33.4 Varieties and rational maps
 
-Section 33.4 of the Stacks Project, [Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.4 of the Stacks Project, [Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BXN, a theorem
 
 [Tag 0BXN](https://stacks.math.columbia.edu/tag/0BXN) in the Stacks Project.
 
-**`AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean#L85).
+**`AlgebraicGeometry.varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Varieties/FunctionFieldEquivalence/Equivalence.lean#L85).
 
 > **Stacks Project, Tag 0BXN.** Varieties and dominant rational maps over a field are
 > contravariantly equivalent to finitely generated field extensions of that field.
@@ -29,35 +29,28 @@ noncomputable def varietyEquivalenceFinitelyGeneratedFieldExtensionOpposite
 
 [Tag 0BXP](https://stacks.math.columbia.edu/tag/0BXP) in the Stacks Project.
 
-**`AlgebraicGeometry.birationalOver_tfae_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/FunctionField.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/FunctionField.lean#L254).
+**`AlgebraicGeometry.Variety.nonempty_iso_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/RationalMap/BirationalVariety.lean#L140). The attribute's comment: “Item (1), birationality of varieties, which the source defines as Spec(k)-birationality in the sense of Tag 0A20, is isomorphism in `AlgebraicGeometry.Variety k`, the category of varieties over `k` and dominant rational maps of Tag 0BXN. The function field in item (2) is the stalk at the generic point with its `k`-algebra structure from Tag 0BXN. The opens in items (3) and (4) are nonempty, as varieties are, and the isomorphism and the morphism commute with the structure morphisms to `Spec k`.”.
 
-> **Stacks Project, Tag 0BXP.** The four characterizations of birationality for varieties over
-> a field: birationality over `k`, isomorphy of the function fields as extensions of `k`, isomorphy
-> of nonempty open subvarieties, and the existence of a birational morphism from an open
-> subvariety.
+> **Stacks Project, Tag 0BXP.** Let `X` and `Y` be varieties over a field `k`. The following
+> are equivalent:
+> 1. `X` and `Y` are birational varieties, that is, isomorphic in the category of varieties over
+>    `k` and dominant rational maps;
+> 2. the function fields `k(X)` and `k(Y)` are isomorphic as extensions of `k`;
+> 3. there exist nonempty opens of `X` and `Y` which are isomorphic as varieties over `k`;
+> 4. there exist an open `U ⊆ X` and a birational morphism `U → Y` of varieties over `k`.
 
 ```lean
-public theorem birationalOver_tfae_functionField
-    (k : Type u) [Field k] {X Y : Scheme.{u}}
-    (sX : X ⟶ Spec (.of k)) (sY : Y ⟶ Spec (.of k))
-    [IsVariety k sX] [IsVariety k sY] :
-    letI : Algebra k (Stacks.Chow.rationalFunctions X) :=
-      ((Stacks.Chow.ofSectionRingHom X ⟨⊤, dense_univ⟩).comp
-        ((Scheme.ΓSpecIso (.of k)).inv ≫ sX.appTop).hom).toAlgebra
-    letI : Algebra k (Stacks.Chow.rationalFunctions Y) :=
-      ((Stacks.Chow.ofSectionRingHom Y ⟨⊤, dense_univ⟩).comp
-        ((Scheme.ΓSpecIso (.of k)).inv ≫ sY.appTop).hom).toAlgebra
+theorem Variety.nonempty_iso_tfae (X Y : Variety k) :
     List.TFAE [
-      Scheme.BirationalOver sX sY,
-      Nonempty (Stacks.Chow.rationalFunctions X ≃ₐ[k]
-        Stacks.Chow.rationalFunctions Y),
-      ∃ (U : X.Opens) (V : Y.Opens),
-        (U : Set X).Nonempty ∧ (V : Set Y).Nonempty ∧
+      Nonempty (X ≅ Y),
+      Nonempty (X.toScheme.functionField ≃ₐ[k] Y.toScheme.functionField),
+      ∃ (U : X.toScheme.Opens) (V : Y.toScheme.Opens),
+        (U : Set X.toScheme).Nonempty ∧ (V : Set Y.toScheme).Nonempty ∧
           ∃ e : U.toScheme ≅ V.toScheme,
-            e.hom ≫ V.ι ≫ sY = U.ι ≫ sX,
-      ∃ (U : X.Opens), (U : Set X).Nonempty ∧
-        ∃ f : U.toScheme ⟶ Y,
-          IsBirational f ∧ f ≫ sY = U.ι ≫ sX]
+            e.hom ≫ V.ι ≫ Y.structureMap = U.ι ≫ X.structureMap,
+      ∃ (U : X.toScheme.Opens), (U : Set X.toScheme).Nonempty ∧
+        ∃ f : U.toScheme ⟶ Y.toScheme,
+          IsBirational f ∧ f ≫ Y.structureMap = U.ι ≫ X.structureMap]
 ```
 
 ## Depends on
@@ -67,4 +60,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.4, Tag 0BXM](https://stacks.math.columbia.edu/tag/0BXM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

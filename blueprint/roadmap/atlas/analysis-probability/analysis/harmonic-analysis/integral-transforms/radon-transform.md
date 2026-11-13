@@ -7,7 +7,7 @@ statement: formalized
 
 # Radon transform
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html).
 
 ## Radon transform on the plane
 
@@ -19,7 +19,7 @@ $$Rf(p, \theta) = \int_{\mathbb{R}} f(p\cos\theta - t\sin\theta, p\sin\theta + t
 
 where the integral is taken to be $0$ when the integrand is not integrable.
 
-Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.radon`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadonTransformWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#radon).
+Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.radon`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadonTransformWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#radon).
 
 ## One-dimensional Fourier transform
 
@@ -30,7 +30,7 @@ $$\hat g(k) = \int_{\mathbb{R}} e^{-2\pi i p k} \, g(p) \, dp,$$
 
 where the integral is taken to be $0$ when the integrand is not integrable.
 
-Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.fourier1`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadonTransformWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#fourier1).
+Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.fourier1`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadonTransformWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#fourier1).
 
 ## Two-dimensional Fourier transform
 
@@ -42,7 +42,7 @@ $$\hat f(k) = \int_{\mathbb{R}^2} e^{-2\pi i (x_1 k_1 + x_2 k_2)} \, f(x) \, dx,
 where $dx$ is Lebesgue measure on $\mathbb{R}^2$ and the integral is taken to be $0$ when the
 integrand is not integrable.
 
-Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.fourier2`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadonTransformWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#fourier2).
+Formalized by `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.fourier2`, a definition declared in [WantedExt/Analysis/RadonTransformWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadonTransformWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#fourier2).
 
 ## Fourier slice theorem and injectivity of the Radon transform on Schwartz functions
 
@@ -62,7 +62,7 @@ continuity is asserted for the left inverse $S$.
 
 - J. Radon (1917); R. N. Bracewell (Fourier slice theorem, 1956). Knill, *Some fundamental theorems in mathematics*, §100. Problem `radon_transform_inversion` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.radon_can_be_diagonalized_and_pseudo_inverted` is written with `theorem_wanted` in [WantedExt/Analysis/RadonTransformWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/RadonTransformWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#radon-can-be-diagonalized-and-pseudo-inv).
+Stated but not proved: `MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.radon_can_be_diagonalized_and_pseudo_inverted` is written with `theorem_wanted` in [WantedExt/Analysis/RadonTransformWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/RadonTransformWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html#radon-can-be-diagonalized-and-pseudo-inv).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Radon transform](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/integral-transforms/radon-transform)

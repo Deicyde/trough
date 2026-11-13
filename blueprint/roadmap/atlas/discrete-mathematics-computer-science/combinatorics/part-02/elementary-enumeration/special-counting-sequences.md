@@ -8,7 +8,7 @@ proof: formalized
 
 # Special counting sequences
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html).
 
 ## Lattice paths with prescribed steps
 
@@ -20,7 +20,7 @@ that $v_0 = p$, $v_m = q$, and $v_i - v_{i-1} \in D$ for $1 \le i \le m$.
 The case $m = 0$ is the path of length zero, which is a lattice path from $p$ to $q$ exactly when
 $p = q$.
 
-Formalized by `MetaMathlibExt.LatticePath`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#lattice-path).
+Formalized by `MetaMathlibExt.LatticePath`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#lattice-path).
 
 ## Fixed-length necklaces
 
@@ -33,14 +33,14 @@ For $n = 0$ there is exactly one necklace over $A$, represented by the empty wor
 
 Reflections are not identified.
 
-Formalized by `MetaMathlibExt.Necklace`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#necklace).
+Formalized by `MetaMathlibExt.Necklace`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#necklace).
 
 ## Lucas number sequence
 
 The Lucas numbers $(L_n)_{n \ge 0}$ are the natural numbers
 defined by $L_0 = 2$, $L_1 = 1$, and $L_{n+2} = L_{n+1} + L_n$ for every $n \in \mathbb{N}$.
 
-Formalized by `MetaMathlibExt.Nat.lucas`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#lucas).
+Formalized by `MetaMathlibExt.Nat.lucas`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#lucas).
 
 ## Motzkin number sequence
 
@@ -49,7 +49,7 @@ defined by $M_0 = 1$ and, for every $n \in \mathbb{N}$,
 $M_{n+1} = M_n + \sum_{k=0}^{n-1} M_k M_{n-1-k}$, where the sum is empty when $n = 0$. Thus
 $M_0, M_1, M_2, M_3 = 1, 1, 2, 4$.
 
-Formalized by `MetaMathlibExt.Nat.motzkin`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#motzkin).
+Formalized by `MetaMathlibExt.Nat.motzkin`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#motzkin).
 
 ## Delannoy numbers
 
@@ -60,7 +60,7 @@ $D(m+1,n+1) = D(m,n+1) + D(m+1,n) + D(m,n)$ for all $m, n \in \mathbb{N}$.
 Equivalently, $D(m,n)$ is the number of lattice paths from $(0,0)$ to $(m,n)$ with steps
 $(1,0)$, $(0,1)$ and $(1,1)$.
 
-Formalized by `MetaMathlibExt.Nat.delannoy`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#delannoy).
+Formalized by `MetaMathlibExt.Nat.delannoy`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#delannoy).
 
 ## Southeast paths
 
@@ -75,7 +75,7 @@ when $p = q$. The empty list is not a southeast path. Writing $p = (a, b)$ and $
 southeast path from $p$ to $q$ exists exactly when $a \le c$ and $d \le b$, and then
 $m = (c - a) + (b - d)$.
 
-Formalized by `MetaMathlibExt.SoutheastPath`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#southeast-path).
+Formalized by `MetaMathlibExt.SoutheastPath`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#southeast-path).
 
 ## Weight of a southeast path
 
@@ -89,7 +89,7 @@ $v$ is $\operatorname{wt}(v) = \prod_{t=1}^{m} w_t$.
 For $m = 0$ the product is empty, so the one-point path $[p]$ has weight $1$; so does every path
 all of whose steps are south steps. The weight depends only on the list $v$.
 
-Formalized by `MetaMathlibExt.SoutheastPath.weight`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#weight).
+Formalized by `MetaMathlibExt.SoutheastPath.weight`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#weight).
 
 ## Nonintersecting families of southeast paths
 
@@ -102,7 +102,7 @@ Endpoints count as points of a path, so two paths that meet only at a common end
 form a nonintersecting family. Distinctness is of indices, not of paths: if $i \ne j$ and
 $L_i = L_j$, the family is not nonintersecting. For $n \le 1$ every family is nonintersecting.
 
-Formalized by `MetaMathlibExt.IsNonintersectingPathFamily`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#is-nonintersecting-path-family).
+Formalized by `MetaMathlibExt.IsNonintersectingPathFamily`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#is-nonintersecting-path-family).
 
 ## Weighted sum over nonintersecting path families
 
@@ -118,7 +118,7 @@ There are only finitely many such families. If for some $i$ there is no southeas
 $p_i$ to $q_i$, then $W(p, q) = 0$. For $n = 0$ the empty family is the only one, and
 $W(p, q) = 1$.
 
-Formalized by `MetaMathlibExt.nonintersectingPathWeightSum`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#nonintersecting-path-weight-sum).
+Formalized by `MetaMathlibExt.nonintersectingPathWeightSum`, a definition declared in [MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Fundamentals/SpecialSequences.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html#nonintersecting-path-weight-sum).
 
 ## Depends on
 
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Special counting sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/elementary-enumeration/special-counting-sequences)

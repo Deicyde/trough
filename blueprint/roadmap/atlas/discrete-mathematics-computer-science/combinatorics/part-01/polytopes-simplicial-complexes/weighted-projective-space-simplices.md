@@ -7,7 +7,7 @@ statement: formalized
 
 # Weighted projective space simplices
 
-72 results, 44 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html).
+72 results, 44 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html).
 
 ## Basic geometric and enumerative definitions
 
@@ -22,7 +22,7 @@ $-(q_1 e_1 + \dots + q_n e_n)$, whose $i$th coordinate is $-q_i$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Formalized by `MetaMathlibExt.weightedSimplex`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex).
+Formalized by `MetaMathlibExt.weightedSimplex`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex).
 
 ## Dilate of a set
 
@@ -37,7 +37,7 @@ dilations.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 4.
 
-Formalized by `MetaMathlibExt.polytopeDilate`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#polytope-dilate).
+Formalized by `MetaMathlibExt.polytopeDilate`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#polytope-dilate).
 
 ## Lattice points of a set
 
@@ -50,7 +50,7 @@ $P \cap \mathbb{Z}^\iota$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 4.
 
-Formalized by `MetaMathlibExt.IsLatticePoint`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-lattice-point).
+Formalized by `MetaMathlibExt.IsLatticePoint`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-lattice-point).
 
 ## Integer decomposition property
 
@@ -67,7 +67,7 @@ $(m,w)$, correcting its displayed $(k,w)$ typo.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Formalized by `MetaMathlibExt.HasIDP`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#has-idp).
+Formalized by `MetaMathlibExt.HasIDP`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#has-idp).
 
 ## Reflexive polytopes
 
@@ -83,7 +83,7 @@ the divisibility criterion for weighted simplices.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Formalized by `MetaMathlibExt.IsReflexive`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-reflexive).
+Formalized by `MetaMathlibExt.IsReflexive`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-reflexive).
 
 ## Ehrhart function
 
@@ -99,7 +99,7 @@ lattice-point enumerator of $P$ at the real dilate $t$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Formalized by `MetaMathlibExt.ehrhart`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#ehrhart).
+Formalized by `MetaMathlibExt.ehrhart`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#ehrhart).
 
 ## The Ehrhart function agrees with the lattice-point enumerator
 
@@ -113,7 +113,7 @@ $tP \cap \mathbb{Z}^d$. Both counts are taken to be $0$ when the set counted is 
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Formalized by `MetaMathlibExt.ehrhart_eq_latticeEnumerator`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#ehrhart-eq-lattice-enumerator).
+Formalized by `MetaMathlibExt.ehrhart_eq_latticeEnumerator`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#ehrhart-eq-lattice-enumerator).
 
 ## The $h^*$-polynomial
 
@@ -133,7 +133,7 @@ $h^*$ is characterised by this identity rather than by the explicit formula for 
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Formalized by `MetaMathlibExt.IsHStarPolynomial`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hstar-polynomial).
+Formalized by `MetaMathlibExt.IsHStarPolynomial`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hstar-polynomial).
 
 ## Unimodal polynomials
 
@@ -148,7 +148,7 @@ stated over $\mathbb{Z}$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Formalized by `MetaMathlibExt.IsUnimodal`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-unimodal).
+Formalized by `MetaMathlibExt.IsUnimodal`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-unimodal).
 
 ## $h^*$-unimodal polytopes
 
@@ -168,7 +168,7 @@ it is not built from the explicit formula for weighted simplices.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Formalized by `MetaMathlibExt.IsHStarUnimodal`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hstar-unimodal).
+Formalized by `MetaMathlibExt.IsHStarUnimodal`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hstar-unimodal).
 
 ## Expansion of support values with multiplicities
 
@@ -181,7 +181,7 @@ followed by $x_2$ copies of $r_2$, and so on, ending with $x_d$ copies of $r_d$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Formalized by `MetaMathlibExt.expandSupport`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#expand-support).
+Formalized by `MetaMathlibExt.expandSupport`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#expand-support).
 
 ## Valid support data
 
@@ -197,7 +197,7 @@ weight vector in which each $r_i$ is repeated $x_i$ times.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Formalized by `MetaMathlibExt.ValidSupport`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#valid-support).
+Formalized by `MetaMathlibExt.ValidSupport`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#valid-support).
 
 ## Weighted projective space simplex of a list of weights
 
@@ -211,7 +211,7 @@ $-q_i$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Formalized by `MetaMathlibExt.weightedSimplexList`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex-list).
+Formalized by `MetaMathlibExt.weightedSimplexList`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex-list).
 
 ## Least common multiple of a list of weights
 
@@ -225,7 +225,7 @@ multiple $1$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Lemma 1.
 
-Formalized by `MetaMathlibExt.weightLcm`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-lcm).
+Formalized by `MetaMathlibExt.weightLcm`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-lcm).
 
 ## The integer $\ell$ of support data
 
@@ -241,7 +241,7 @@ $1 + \sum_i x_i r_i$, so the division is exact.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Lemma 1.
 
-Formalized by `MetaMathlibExt.setupEll`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-ell).
+Formalized by `MetaMathlibExt.setupEll`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-ell).
 
 ## Complementary factors of support data
 
@@ -256,7 +256,7 @@ $s_i = \operatorname{lcm}(r_1, \dots, r_d) / r_i$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Lemma 1.
 
-Formalized by `MetaMathlibExt.setupS`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-s).
+Formalized by `MetaMathlibExt.setupS`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-s).
 
 ## The weight statistic
 
@@ -270,7 +270,7 @@ The sum of the floors never exceeds $b$, so the difference is a natural number.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Formalized by `MetaMathlibExt.weightStatistic`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-statistic).
+Formalized by `MetaMathlibExt.weightStatistic`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-statistic).
 
 ## The $h^*$ formula of a weight vector
 
@@ -286,7 +286,7 @@ defined Ehrhart-series condition.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Formalized by `MetaMathlibExt.hStarFormula`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-formula).
+Formalized by `MetaMathlibExt.hStarFormula`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-formula).
 
 ## The exponent $u(\alpha)$ of support data
 
@@ -303,7 +303,7 @@ The results that use $u$ assume valid support data and reflexivity.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 6.
 
-Formalized by `MetaMathlibExt.setupU`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-u).
+Formalized by `MetaMathlibExt.setupU`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-u).
 
 ## The polynomial $g_r^x$
 
@@ -317,7 +317,7 @@ is $0$ when $L = 0$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 6.
 
-Formalized by `MetaMathlibExt.setupG`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-g).
+Formalized by `MetaMathlibExt.setupG`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-g).
 
 ## IDP-necessary condition
 
@@ -330,7 +330,7 @@ $q_i \bmod 0 = q_i$).
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Corollary 1.
 
-Formalized by `MetaMathlibExt.SatisfiesIDPNecessary`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#satisfies-idpnecessary).
+Formalized by `MetaMathlibExt.SatisfiesIDPNecessary`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#satisfies-idpnecessary).
 
 ## Support form of the IDP necessary condition
 
@@ -348,7 +348,7 @@ index $j$ of $q$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Corollary 1.
 
-Formalized by `MetaMathlibExt.SatisfiesSupportIDPNecessary`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#satisfies-support-idpnecessary).
+Formalized by `MetaMathlibExt.SatisfiesSupportIDPNecessary`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#satisfies-support-idpnecessary).
 
 ## Reflexivity criterion for weighted projective simplices
 
@@ -363,7 +363,7 @@ so the statement relates two independently defined properties.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.reflexive_iff_weight_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-iff-weight-dvd).
+Stated but not proved: `MetaMathlibExt.reflexive_iff_weight_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-iff-weight-dvd).
 
 ## Reflexivity criterion in support form
 
@@ -378,7 +378,7 @@ $1 + \sum_{i=1}^d x_i r_i$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.reflexive_support_iff_lcm_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-support-iff-lcm-dvd).
+Stated but not proved: `MetaMathlibExt.reflexive_support_iff_lcm_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-support-iff-lcm-dvd).
 
 ## Support gcd and complementary lcm of reflexive support data
 
@@ -394,7 +394,7 @@ $s_i = \operatorname{lcm}(r_1, \dots, r_d) / r_i$ are the complementary factors.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.support_gcd_and_complementary_lcm` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#support-gcd-and-complementary-lcm).
+Stated but not proved: `MetaMathlibExt.support_gcd_and_complementary_lcm` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#support-gcd-and-complementary-lcm).
 
 ## Affine free sum
 
@@ -407,7 +407,7 @@ $Q - v = \{y - v : y \in Q\}$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Formalized by `MetaMathlibExt.affineFreeSum`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum).
+Formalized by `MetaMathlibExt.affineFreeSum`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum).
 
 ## Negative weight vertex
 
@@ -421,7 +421,7 @@ The weighted projective simplex with weights $q$ is the convex hull of $e_1, \do
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Formalized by `MetaMathlibExt.negativeWeightVertex`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#negative-weight-vertex).
+Formalized by `MetaMathlibExt.negativeWeightVertex`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#negative-weight-vertex).
 
 ## Reflexivity of the weighted free sum
 
@@ -440,7 +440,7 @@ $3$ divide $6$, while $\Delta_{(1,p)}$ is not since $2$ does not divide $3$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.weighted_free_sum_reflexive` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-free-sum-reflexive).
+Stated but not proved: `MetaMathlibExt.weighted_free_sum_reflexive` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-free-sum-reflexive).
 
 ## Affine free sums of IDP weighted simplices at the negative weight vertex of a reflexive summand are IDP
 
@@ -464,7 +464,7 @@ $\mathbb{Z}^n \times \mathbb{Z}^m$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.affineFreeSum_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum-idp).
+Stated but not proved: `MetaMathlibExt.affineFreeSum_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum-idp).
 
 ## Affine free sums of weighted simplices at the negative weight vertex preserve reflexivity, IDP and $h^\ast$-unimodality
 
@@ -488,7 +488,7 @@ $\mathbb{Z}^n \times \mathbb{Z}^m$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.affineFreeSum_reflexive_idp_hStarUnimodal` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum-reflexive-idp-h-star-uni).
+Stated but not proved: `MetaMathlibExt.affineFreeSum_reflexive_idp_hStarUnimodal` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#affine-free-sum-reflexive-idp-h-star-uni).
 
 ## Finitely many reflexive IDP multiplicity vectors
 
@@ -503,7 +503,7 @@ $r_2$, and so on, ending with $x_d$ copies of $r_d$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.finite_idp_reflexive_multiplicities` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#finite-idp-reflexive-multiplicities).
+Stated but not proved: `MetaMathlibExt.finite_idp_reflexive_multiplicities` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#finite-idp-reflexive-multiplicities).
 
 ## Floor criterion for IDP of reflexive weighted simplices
 
@@ -528,7 +528,7 @@ All differences are taken in the natural numbers, truncated at $0$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.idp_reflexive_floor_characterization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-floor-characterization).
+Stated but not proved: `MetaMathlibExt.idp_reflexive_floor_characterization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-floor-characterization).
 
 ## A necessary condition for IDP reflexive weighted simplices
 
@@ -544,7 +544,7 @@ Here $a \bmod b$ is the remainder of $a$ on division by $b$, with the convention
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.idp_reflexive_implies_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-implies-necessary).
+Stated but not proved: `MetaMathlibExt.idp_reflexive_implies_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-implies-necessary).
 
 ## Necessary condition for IDP reflexive weighted simplices, support form
 
@@ -561,7 +561,7 @@ $1 + \sum_{i=1}^{d} x_i \, (r_i \bmod r_j) = r_j$ for every $j \in \{1, \dots, d
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.idp_reflexive_implies_support_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-implies-support-necessary).
+Stated but not proved: `MetaMathlibExt.idp_reflexive_implies_support_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-implies-support-necessary).
 
 ## The $h^*$-polynomial of a weighted projective space simplex
 
@@ -579,7 +579,7 @@ weight statistic.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.weightedSimplex_hStar_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex-h-star-formula).
+Stated but not proved: `MetaMathlibExt.weightedSimplex_hStar_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weighted-simplex-h-star-formula).
 
 ## Geometric factorization of the $h^*$ formula
 
@@ -600,7 +600,7 @@ supplies exactness of $\ell$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.hStar_geometric_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-geometric-factorization).
+Stated but not proved: `MetaMathlibExt.hStar_geometric_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-geometric-factorization).
 
 ## Multiplicity bounds for IDP reflexive weighted simplices
 
@@ -615,7 +615,7 @@ and for every $j < d$ with $r_j \nmid r_d$ we have $x_d \le \lfloor r_j / (r_d \
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.idp_reflexive_multiplicity_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-multiplicity-bounds).
+Stated but not proved: `MetaMathlibExt.idp_reflexive_multiplicity_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#idp-reflexive-multiplicity-bounds).
 
 ## One-supported IDP reflexive weighted simplices have all weights one
 
@@ -628,7 +628,7 @@ integer decomposition property, then $r = 1$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.one_supported_idp_reflexive_support_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#one-supported-idp-reflexive-support-eq-o).
+Stated but not proved: `MetaMathlibExt.one_supported_idp_reflexive_support_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#one-supported-idp-reflexive-support-eq-o).
 
 ## IDP reflexive two-supported weighted simplices
 
@@ -643,7 +643,7 @@ $1 + \sum_{i=1}^{2} x_i (r_i \bmod r_j) = r_j$ for $j = 1, 2$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.two_supported_idp_reflexive_iff_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#two-supported-idp-reflexive-iff-necessar).
+Stated but not proved: `MetaMathlibExt.two_supported_idp_reflexive_iff_necessary` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#two-supported-idp-reflexive-iff-necessar).
 
 ## Classification of two-supported vectors satisfying the necessary condition
 
@@ -657,7 +657,7 @@ $r = (1 + x_2, 1 + (1 + x_2)x_1)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.two_supported_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#two-supported-classification).
+Stated but not proved: `MetaMathlibExt.two_supported_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#two-supported-classification).
 
 ## Support triples of the three-supported classification
 
@@ -683,7 +683,7 @@ The cases $c = 0, \dots, 6$ are forms (i)–(vii) of the source's Theorem 9 and 
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 9.
 
-Formalized by `MetaMathlibExt.threeSupportFamily`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#three-support-family).
+Formalized by `MetaMathlibExt.threeSupportFamily`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#three-support-family).
 
 ## Classification of three-supported vectors satisfying the necessary condition
 
@@ -702,7 +702,7 @@ $r = (3, 20, 24)$, which fails the necessary condition.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.three_supported_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#three-supported-classification).
+Stated but not proved: `MetaMathlibExt.three_supported_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#three-supported-classification).
 
 ## Cases (i)–(vii) of the three-support family give IDP reflexive simplices
 
@@ -717,7 +717,7 @@ and $-q$, is reflexive and has the integer decomposition property.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.first_seven_three_supported_families_are_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#first-seven-three-supported-families-are).
+Stated but not proved: `MetaMathlibExt.first_seven_three_supported_families_are_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#first-seven-three-supported-families-are).
 
 ## Case (viii) of the three-supported classification is reflexive but not IDP
 
@@ -737,7 +737,7 @@ alone need not imply it.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.eighth_three_supported_family_is_not_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#eighth-three-supported-family-is-not-idp).
+Stated but not proved: `MetaMathlibExt.eighth_three_supported_family_is_not_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#eighth-three-supported-family-is-not-idp).
 
 ## Reflexive stabilization number
 
@@ -753,7 +753,7 @@ For positive weights such a $k$ always exists by the reflexivity criterion of Th
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 10.
 
-Formalized by `MetaMathlibExt.reflexiveStabilizationNumber`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization-number).
+Formalized by `MetaMathlibExt.reflexiveStabilizationNumber`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization-number).
 
 ## Reflexive stabilization
 
@@ -766,7 +766,7 @@ reflexive stabilization number of $q$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 10.
 
-Formalized by `MetaMathlibExt.reflexiveStabilization`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 570](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L570). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization).
+Formalized by `MetaMathlibExt.reflexiveStabilization`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 570](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L570). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization).
 
 ## Higher reflexive stabilizations
 
@@ -782,7 +782,7 @@ so $\mathrm{rs}(q, 0) = \mathrm{rs}(q, 1)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 10.
 
-Formalized by `MetaMathlibExt.reflexiveStabilizationAt`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization-at).
+Formalized by `MetaMathlibExt.reflexiveStabilizationAt`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#reflexive-stabilization-at).
 
 ## The number $\ell(q)$ of a weight list
 
@@ -797,7 +797,7 @@ When the weights are positive and the weighted simplex of $q$ is reflexive, this
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 12.
 
-Formalized by `MetaMathlibExt.listEll`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#list-ell).
+Formalized by `MetaMathlibExt.listEll`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#list-ell).
 
 ## Higher reflexive stabilizations are not IDP
 
@@ -817,7 +817,7 @@ $\operatorname{rs}((),2) = (1)$ gives the interval $[-1,1]$, which has IDP.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.higher_reflexive_stabilizations_not_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#higher-reflexive-stabilizations-not-idp).
+Stated but not proved: `MetaMathlibExt.higher_reflexive_stabilizations_not_idp` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#higher-reflexive-stabilizations-not-idp).
 
 ## Large reflexive stabilizations of weights at least $2$ with lcm at least $3$ are not $h^\ast$-unimodal
 
@@ -839,7 +839,7 @@ $(1, \dots, 1, 2, 1, \dots, 1)$, which is unimodal.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.stabilization_eventually_not_unimodal_coefficients_one_or_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-eventually-not-unimodal-co).
+Stated but not proved: `MetaMathlibExt.stabilization_eventually_not_unimodal_coefficients_one_or_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-eventually-not-unimodal-co).
 
 ## The first reflexive stabilization preserves the weight statistic
 
@@ -858,7 +858,7 @@ leading $1$; no correction to the printed statement is needed.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.stabilization_weightStatistic_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-weight-statistic-eq).
+Stated but not proved: `MetaMathlibExt.stabilization_weightStatistic_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-weight-statistic-eq).
 
 ## The first reflexive stabilization adds one monomial to the $h^*$-formula
 
@@ -876,7 +876,7 @@ that $\ell(\operatorname{rs}(q)) = 1$. Then $h_{\operatorname{rs}(q)}(z) = h_q(z
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.stabilization_hStar_add_monomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-h-star-add-monomial).
+Stated but not proved: `MetaMathlibExt.stabilization_hStar_add_monomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#stabilization-h-star-add-monomial).
 
 ## Lattice points of the cone over a polytope
 
@@ -892,7 +892,7 @@ decomposition property.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.IsConeLatticePoint`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 645](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L645). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-cone-lattice-point).
+Formalized by `MetaMathlibExt.IsConeLatticePoint`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 645](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L645). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-cone-lattice-point).
 
 ## Hilbert basis elements of the cone over a polytope
 
@@ -909,7 +909,7 @@ minimal generating set, the Hilbert basis, of the monoid of lattice points of th
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.IsHilbertBasisElement`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hilbert-basis-element).
+Formalized by `MetaMathlibExt.IsHilbertBasisElement`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#is-hilbert-basis-element).
 
 ## Hilbert basis of the cone over a polytope
 
@@ -926,7 +926,7 @@ set, so this is an equivalent formulation of the usual Hilbert basis.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.hilbertBasis`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#hilbert-basis).
+Formalized by `MetaMathlibExt.hilbertBasis`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#hilbert-basis).
 
 ## The almost-IDP weight vector
 
@@ -941,7 +941,7 @@ For $n = 0$ the definition gives the vector $(0, 0)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.almostIDPWeights`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights).
+Formalized by `MetaMathlibExt.almostIDPWeights`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights).
 
 ## $(1^{2n-1}, 3n, 10n, 15n)$ is a reflexive stabilization
 
@@ -953,7 +953,7 @@ the first reflexive stabilization of $(3n, 10n, 15n)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.almostIDPWeights_eq_reflexiveStabilization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights-eq-reflexive-stabiliza).
+Stated but not proved: `MetaMathlibExt.almostIDPWeights_eq_reflexiveStabilization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights-eq-reflexive-stabiliza).
 
 ## Homogenized vertices of a weighted simplex
 
@@ -968,7 +968,7 @@ For the weights $q(n)$ of Theorem 13 this is the set $V(n)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.homogenizedWeightedVertices`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#homogenized-weighted-vertices).
+Formalized by `MetaMathlibExt.homogenizedWeightedVertices`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#homogenized-weighted-vertices).
 
 ## Exceptional Hilbert basis columns
 
@@ -985,7 +985,7 @@ For $n = 0$ the vector $v_j \in \mathbb{Z}^2$ consists of the first and third en
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.exceptionalHilbertColumn`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 705](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L705). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#exceptional-hilbert-column).
+Formalized by `MetaMathlibExt.exceptionalHilbertColumn`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 705](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L705). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#exceptional-hilbert-column).
 
 ## Hilbert basis of $\Delta_{(1,q(n))}$
 
@@ -1003,7 +1003,7 @@ and $(-1,-4,-6)$ at height $k = 1$, and $(-2,-7,-10)$ and $(-3,-10,-15)$ at heig
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.almostIDP_hilbertBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-hilbert-basis).
+Stated but not proved: `MetaMathlibExt.almostIDP_hilbertBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-hilbert-basis).
 
 ## Exactly two Hilbert basis elements of height two
 
@@ -1017,7 +1017,7 @@ of this Hilbert basis have height $k > 1$, and every element of height $k > 1$ h
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.almostIDP_exactly_two_height_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-exactly-two-height-two).
+Stated but not proved: `MetaMathlibExt.almostIDP_exactly_two_height_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-exactly-two-height-two).
 
 ## Even geometric factor
 
@@ -1029,7 +1029,7 @@ for $n = 0$ it is the zero polynomial.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.evenGeometricFactor`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#even-geometric-factor).
+Formalized by `MetaMathlibExt.evenGeometricFactor`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#even-geometric-factor).
 
 ## The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$
 
@@ -1040,7 +1040,7 @@ integer coefficients, the quartic factor from Theorem 13.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.almostIDPQuartic`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpquartic).
+Formalized by `MetaMathlibExt.almostIDPQuartic`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpquartic).
 
 ## Coefficient vector $(1, 7, 15, 14, \dots, 15, 7, 1)$
 
@@ -1054,7 +1054,7 @@ It makes exact the ellipsis in the coefficient vector displayed in Theorem 13.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.almostIDPCoefficientVector`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpcoefficient-vector).
+Formalized by `MetaMathlibExt.almostIDPCoefficientVector`, a definition declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpcoefficient-vector).
 
 ## The $h^*$-polynomial of $\Delta_{(1,q(n))}$ factors
 
@@ -1072,7 +1072,7 @@ $$\Big(\sum_{t \ge 0} L(t)\, z^t\Big)(1 - z)^{2n+3} = h(z).$$
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.almostIDP_hStar_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 765](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-h-star-factorization).
+Stated but not proved: `MetaMathlibExt.almostIDP_hStar_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 765](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L765). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-h-star-factorization).
 
 ## Coefficients of $(1 + z^2 + \dots + z^{2n-2})(1 + 7z + 14z^2 + 7z^3 + z^4)$
 
@@ -1085,7 +1085,7 @@ $n - 2$ repetitions of $16, 14$, then $15, 7, 1$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.almostIDP_hStar_coefficients` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-h-star-coefficients).
+Stated but not proved: `MetaMathlibExt.almostIDP_hStar_coefficients` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idp-h-star-coefficients).
 
 ## Example of support expansion
 
@@ -1098,7 +1098,7 @@ $(1^2, 3^1) = (1, 1, 3)$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Section 2 (notation `(r_1^{x_1}, …, r_d^{x_d})`).
 
-Formalized by `MetaMathlibExt.expandSupport_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 785](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L785). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#expand-support-example).
+Formalized by `MetaMathlibExt.expandSupport_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 785](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L785). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#expand-support-example).
 
 ## Least common multiple of the weights $(2, 2, 3)$
 
@@ -1109,7 +1109,7 @@ $(2, 2, 3)$ is $\operatorname{lcm}(2, 2, 3) = 6$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Section 2.
 
-Formalized by `MetaMathlibExt.weightLcm_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 793](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L793). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-lcm-example).
+Formalized by `MetaMathlibExt.weightLcm_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 793](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L793). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#weight-lcm-example).
 
 ## The $h^*$ formula for the weights $(2,2,3)$
 
@@ -1122,7 +1122,7 @@ integer polynomial $1 + 2z + 4z^2 + z^3$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, example after Theorem 5.
 
-Formalized by `MetaMathlibExt.hStarFormula_two_two_three`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 802](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L802). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-formula-two-two-three).
+Formalized by `MetaMathlibExt.hStarFormula_two_two_three`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 802](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L802). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#h-star-formula-two-two-three).
 
 ## The integer $\ell$ for the weights $(1^7, 3^4, 5^5)$
 
@@ -1137,7 +1137,7 @@ Indeed $1 + 7 \cdot 1 + 4 \cdot 3 + 5 \cdot 5 = 45$ and $\operatorname{lcm}(1, 3
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, example after Theorem 6.
 
-Formalized by `MetaMathlibExt.setupEll_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-ell-example).
+Formalized by `MetaMathlibExt.setupEll_example`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 817](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#setup-ell-example).
 
 ## Dilation by one
 
@@ -1148,7 +1148,7 @@ the dilate $1P = \{1 \cdot y : y \in P\}$ equals $P$.
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Section 2.3 (dilates `tP`).
 
-Formalized by `MetaMathlibExt.polytopeDilate_one`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#polytope-dilate-one).
+Formalized by `MetaMathlibExt.polytopeDilate_one`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#polytope-dilate-one).
 
 ## The almost-IDP weight vector for $n = 1$
 
@@ -1160,7 +1160,7 @@ equal to $1$, taken at $n = 1$ and listed in coordinate order, is $(1, 3, 10, 15
 
 - Benjamin Braun, Robert Davis, Derek Hanely, Morgan Lane, and Liam Solus, *The Integer Decomposition Property and Weighted Projective Space Simplices*, INTEGERS 24 (2024), Article A60, Theorem 13.
 
-Formalized by `MetaMathlibExt.almostIDPWeights_one`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 834](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights-one).
+Formalized by `MetaMathlibExt.almostIDPWeights_one`, a theorem declared in [WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean, line 834](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeightedProjectiveSimplexIDPWanted.lean#L834). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html#almost-idpweights-one).
 
 ## Depends on
 
@@ -1169,4 +1169,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted projective space simplices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/weighted-projective-space-simplices)

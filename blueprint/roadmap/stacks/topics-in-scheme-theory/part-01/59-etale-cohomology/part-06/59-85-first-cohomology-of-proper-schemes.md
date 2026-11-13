@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.85 First cohomology of proper schemes
 
-Section 59.85 of the Stacks Project, [Tag 0A5F](https://stacks.math.columbia.edu/tag/0A5F). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.85 of the Stacks Project, [Tag 0A5F](https://stacks.math.columbia.edu/tag/0A5F). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A5G, a lemma
 
 [Tag 0A5G](https://stacks.math.columbia.edu/tag/0A5G) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.bijective_etaleConstantCohomologyRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomology.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomology.lean#L268). The attribute's comment: “the reduction of the tag to an Ext computation, in every degree q: the canonical map H^q(X, M) -> H^q(X\_0, M) is bijective if and only if etale inverse image along the closed-fibre inclusion is bijective on Ext^q out of the constant sheaf Z. The geometric content of the tag -- that this holds in degree one for a proper morphism over a henselian local ring -- is not proved here. The inputs the source's degree-one argument needs ARE available: Stacks 03AJ as Stacks.Cohomology.Torsors.torsorIsoClassesEquivH1, Stacks 03RV as AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence, and Stacks 0A48 as AlgebraicGeometry.isEquivalence\_finiteEtaleBaseChange\_of\_isProper\_of\_henselianLocalRing. What is missing is the bridge between them: no result transports an Ext^1 or Sheaf.H map along a CHANGE OF SITE into torsor language -- torsorIsoClassesEquivH1\_naturality is naturality in the coefficient sheaf on a fixed site -- and the restriction map here lives on Mathlib's Scheme.smallEtaleTopology while 03RV lives on SmallEtale.topology of a BigEtaleSite, with no comparison. Nor does anything say that a torsor under a finite constant sheaf is finite locally constant”.
+**`Stacks.EtaleCohomology.bijective_etaleConstantCohomologyRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomology.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomology.lean#L268). The attribute's comment: “the reduction of the tag to an Ext computation, in every degree q: the canonical map H^q(X, M) -> H^q(X\_0, M) is bijective if and only if etale inverse image along the closed-fibre inclusion is bijective on Ext^q out of the constant sheaf Z. The geometric content of the tag -- that this holds in degree one for a proper morphism over a henselian local ring -- is not proved here. The inputs the source's degree-one argument needs ARE available: Stacks 03AJ as Stacks.Cohomology.Torsors.torsorIsoClassesEquivH1, Stacks 03RV as AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence, and Stacks 0A48 as AlgebraicGeometry.isEquivalence\_finiteEtaleBaseChange\_of\_isProper\_of\_henselianLocalRing. What is missing is the bridge between them: no result transports an Ext^1 or Sheaf.H map along a CHANGE OF SITE into torsor language -- torsorIsoClassesEquivH1\_naturality is naturality in the coefficient sheaf on a fixed site -- and the restriction map here lives on Mathlib's Scheme.smallEtaleTopology while 03RV lives on SmallEtale.topology of a BigEtaleSite, with no comparison. Nor does anything say that a torsor under a finite constant sheaf is finite locally constant”.
 
 > **Stacks 0A5G reduced to an `Ext` computation.** Restriction to the closed fibre is bijective
 > in degree `q` exactly when the étale inverse-image functor along the closed-fibre inclusion is
@@ -37,7 +37,7 @@ theorem bijective_etaleConstantCohomologyRestriction_iff :
           (etaleConstantSheaf.{u, v} X M) q)
 ```
 
-**`Stacks.EtaleCohomology.bijective_etaleConstantCohomologyRestriction_one_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomologyBijective.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomologyBijective.lean#L370).
+**`Stacks.EtaleCohomology.bijective_etaleConstantCohomologyRestriction_one_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomologyBijective.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperHenselianFirstCohomologyBijective.lean#L370).
 
 > For `A` a henselian local ring, `X` proper over `A` and `M` a finite abelian group,
 > restriction `H¹(X, M) ⟶ H¹(X₀, M)` to the closed fibre is bijective.
@@ -62,7 +62,7 @@ theorem bijective_etaleConstantCohomologyRestriction_one_of_isProper
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.subsingleton_H_closedFibre_projectiveLine_of_injective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreProjectiveLineInjective.lean#L258), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L45) (StacksFrontier).
+- [`Stacks.EtaleCohomology.subsingleton_H_closedFibre_projectiveLine_of_injective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ClosedFibreProjectiveLineInjective.lean#L258), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L43) (StacksFrontier).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.85, Tag 0A5F](https://stacks.math.columbia.edu/tag/0A5F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

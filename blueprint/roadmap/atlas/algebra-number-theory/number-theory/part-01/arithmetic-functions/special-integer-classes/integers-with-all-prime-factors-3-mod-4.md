@@ -7,7 +7,7 @@ statement: formalized
 
 # Integers with all prime factors 3 mod 4
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html).
 
 ## Raikov's Tauberian theorem
 
@@ -31,7 +31,7 @@ $s \neq 1$, assumed in the paper, follows from the representation through $H$.
 
 - Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isEquivalent_sum_of_LSeries_eq_div_cpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html#is-equivalent-sum-of-lseries-eq-div-cpow).
+Stated but not proved: `MetaMathlibExt.isEquivalent_sum_of_LSeries_eq_div_cpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html#is-equivalent-sum-of-lseries-eq-div-cpow).
 
 ## Counting integers whose prime factors are all $\equiv 3 \pmod 4$
 
@@ -52,7 +52,7 @@ the constant in front of $x / \sqrt{\ln x}$ is $0.48651\ldots$.
 
 - Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isEquivalent_card_primeFactors_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html#is-equivalent-card-prime-factors-three-m).
+Stated but not proved: `MetaMathlibExt.isEquivalent_card_primeFactors_three_mod_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThreeModFourIntegersWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html#is-equivalent-card-prime-factors-three-m).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Integers with all prime factors 3 mod 4](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/integers-with-all-prime-factors-3-mod-4)

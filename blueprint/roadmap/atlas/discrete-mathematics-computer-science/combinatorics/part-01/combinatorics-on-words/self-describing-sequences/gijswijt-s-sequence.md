@@ -7,7 +7,7 @@ statement: formalized
 
 # Gijswijt's sequence
 
-34 results, 19 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html).
+34 results, 19 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html).
 
 ## Curling number
 
@@ -19,7 +19,7 @@ nonempty; for the empty string $\varepsilon$ it is $\mathcal{C}(\varepsilon) = 1
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (curling number) and Section 1.2 (`𝒞(ε) := 1`).
 
-Formalized by `MetaMathlibExt.curlingNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number).
+Formalized by `MetaMathlibExt.curlingNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number).
 
 ## Curling number of $112112223$
 
@@ -30,7 +30,7 @@ $\mathcal{C}(112112223) = 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (curling number examples).
 
-Formalized by `MetaMathlibExt.curlingNumber_example_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-example-one).
+Formalized by `MetaMathlibExt.curlingNumber_example_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-example-one).
 
 ## Curling number of $222322232223$
 
@@ -41,7 +41,7 @@ $\mathcal{C}(222322232223) = 3$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (curling number examples).
 
-Formalized by `MetaMathlibExt.curlingNumber_example_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-example-three).
+Formalized by `MetaMathlibExt.curlingNumber_example_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-example-three).
 
 ## Curling number of the empty string
 
@@ -52,7 +52,7 @@ $\mathcal{C}(\varepsilon) = 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1.2 (`𝒞(ε) := 1`).
 
-Formalized by `MetaMathlibExt.curlingNumber_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-nil).
+Formalized by `MetaMathlibExt.curlingNumber_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-nil).
 
 ## Prefixes of the $m$th order Gijswijt sequence
 
@@ -68,7 +68,7 @@ sequence.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (definition of `A^{(m)}`).
 
-Formalized by `MetaMathlibExt.gijswijtPrefix`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix).
+Formalized by `MetaMathlibExt.gijswijtPrefix`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix).
 
 ## Terms of the $m$th order Gijswijt sequence
 
@@ -80,7 +80,7 @@ terms. For $k = 0$ the value is $0$ by convention.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (definition of `A^{(m)}`).
 
-Formalized by `MetaMathlibExt.gijswijtTerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-term).
+Formalized by `MetaMathlibExt.gijswijtTerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-term).
 
 ## First terms of Gijswijt's sequence
 
@@ -91,7 +91,7 @@ are $1, 1, 2, 1, 1, 2, 2, 2, 3$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (initial terms of `A`).
 
-Formalized by `MetaMathlibExt.gijswijtPrefix_one_nine`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix-one-nine).
+Formalized by `MetaMathlibExt.gijswijtPrefix_one_nine`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix-one-nine).
 
 ## Initial terms of the second-order Gijswijt sequence
 
@@ -102,7 +102,7 @@ second-order sequence $A^{(2)}$ are $2, 2, 2, 3, 2, 2, 2, 3$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (initial terms of `A^{(2)}`).
 
-Formalized by `MetaMathlibExt.gijswijtPrefix_two_eight`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix-two-eight).
+Formalized by `MetaMathlibExt.gijswijtPrefix_two_eight`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-prefix-two-eight).
 
 ## First occurrence of a value in a Gijswijt sequence
 
@@ -114,7 +114,7 @@ $k \ge 1$ with $A^{(m)}(k) = n$, and it is $0$ if $n$ does not occur in $A^{(m)}
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 1 (first occurrence) and Section 3 (definition of `t(m, n)`).
 
-Formalized by `MetaMathlibExt.gijswijtFirstOccurrence`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence).
+Formalized by `MetaMathlibExt.gijswijtFirstOccurrence`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence).
 
 ## Block lengths of the higher-order Gijswijt sequences
 
@@ -130,7 +130,7 @@ string $S_t$ is the run of terms after position $(m+1)\,\beta^{(m)}(t)$ up to th
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks `B_t^{(m)}`, glue strings `S_t^{(m)}`, and their lengths `β^{(m)}(t)`).
 
-Formalized by `MetaMathlibExt.gijswijtBlockLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length).
+Formalized by `MetaMathlibExt.gijswijtBlockLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length).
 
 ## Gijswijt blocks
 
@@ -142,7 +142,7 @@ the $t$th block length.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (blocks `B_t^{(m)}`).
 
-Formalized by `MetaMathlibExt.gijswijtBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block).
+Formalized by `MetaMathlibExt.gijswijtBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block).
 
 ## Glue strings of a Gijswijt sequence
 
@@ -155,7 +155,7 @@ $B^{(m)}_t$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (glue strings `S_t^{(m)}`).
 
-Formalized by `MetaMathlibExt.gijswijtGlue`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue).
+Formalized by `MetaMathlibExt.gijswijtGlue`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue).
 
 ## Concatenated glue strings of a Gijswijt sequence
 
@@ -167,7 +167,7 @@ strings of the $m$th order Gijswijt sequence; it is empty when $t \le 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (strings `T_t^{(m)}`).
 
-Formalized by `MetaMathlibExt.gijswijtGlueConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat).
+Formalized by `MetaMathlibExt.gijswijtGlueConcat`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat).
 
 ## Block index of the first occurrence
 
@@ -181,7 +181,7 @@ block $B_t^{(m)}$; if there is no such $t$, then $t(m, n) = 0$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 3 (definition of `t(m, n)`).
 
-Formalized by `MetaMathlibExt.gijswijtBlockIndex`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-index).
+Formalized by `MetaMathlibExt.gijswijtBlockIndex`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-index).
 
 ## Block words
 
@@ -195,7 +195,7 @@ $u \le 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 4, Expression (1) in Lemma 11.
 
-Formalized by `MetaMathlibExt.gijswijtBlockWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-word).
+Formalized by `MetaMathlibExt.gijswijtBlockWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-word).
 
 ## The first block has length one
 
@@ -206,7 +206,7 @@ $\beta^{(m)}(1)$ of the $m$th order Gijswijt sequence equals $1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (`B_1^{(m)} = m`).
 
-Formalized by `MetaMathlibExt.gijswijtBlockLength_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-one).
+Formalized by `MetaMathlibExt.gijswijtBlockLength_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-one).
 
 ## The first block
 
@@ -217,7 +217,7 @@ Gijswijt sequence is the one-term string $m$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (`B_1^{(m)} = m`, Table 1).
 
-Formalized by `MetaMathlibExt.gijswijtBlock_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-one).
+Formalized by `MetaMathlibExt.gijswijtBlock_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-one).
 
 ## The first concatenated glue string is empty
 
@@ -228,7 +228,7 @@ concatenated glue string $T^{(m)}_1$ is the empty string.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Section 2 (Table 1).
 
-Formalized by `MetaMathlibExt.gijswijtGlueConcat_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-one).
+Formalized by `MetaMathlibExt.gijswijtGlueConcat_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-one).
 
 ## The empty block word
 
@@ -241,7 +241,7 @@ and hence the empty string.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, proof of Lemma 11 (case `u = 1`).
 
-Formalized by `MetaMathlibExt.gijswijtBlockWord_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-word-one).
+Formalized by `MetaMathlibExt.gijswijtBlockWord_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-word-one).
 
 ## Van de Pol's tower formula for first occurrences
 
@@ -255,7 +255,7 @@ is $2^{2^{\alpha}}$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Theorem 1 (`jis-2025-25.4.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtFirstOccurrence_tower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence-tower).
+Stated but not proved: `MetaMathlibExt.gijswijtFirstOccurrence_tower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence-tower).
 
 ## The curling number is monotone under suffixes
 
@@ -266,7 +266,7 @@ if $T$ is a suffix of $S$, then $\mathcal{C}(T) \le \mathcal{C}(S)$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 3 (`jis-2025-25.4.6-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.curlingNumber_le_of_suffix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-le-of-suffix).
+Stated but not proved: `MetaMathlibExt.curlingNumber_le_of_suffix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-le-of-suffix).
 
 ## Concatenated glue strings occur in a block only at its end
 
@@ -279,7 +279,7 @@ empty; that is, $T^{(m)}_t$ occurs in $B^{(m)}_t$ only as a suffix.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 4 (`jis-2025-25.4.6-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_suffix_block` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-suffix-block).
+Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_suffix_block` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-suffix-block).
 
 ## Concatenated glue strings are the next-order prefixes with small curling number
 
@@ -292,7 +292,7 @@ some $t \ge 1$, where $T^{(m)}_t$ is the concatenated glue string.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 5 (`jis-2025-25.4.6-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_iff_prefix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-iff-prefix).
+Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_iff_prefix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-iff-prefix).
 
 ## Runs of the smallest term in a block
 
@@ -305,7 +305,7 @@ $m + 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 6 (`jis-2025-25.4.6-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtBlock_runs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-runs).
+Stated but not proved: `MetaMathlibExt.gijswijtBlock_runs` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-runs).
 
 ## First occurrences end blocks
 
@@ -319,7 +319,7 @@ block $B_t^{(m)}$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 7 (`jis-2025-25.4.6-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtFirstOccurrence_eq_blockLength` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence-eq-block-lengt).
+Stated but not proved: `MetaMathlibExt.gijswijtFirstOccurrence_eq_blockLength` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-first-occurrence-eq-block-lengt).
 
 ## Concatenated glue strings at first occurrences are blocks of the next order
 
@@ -334,7 +334,7 @@ equals the block $B^{(m+1)}_{t(m+1,n)}$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 9 (`jis-2025-25.4.6-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_blockIndex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-block-index).
+Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_blockIndex` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-block-index).
 
 ## Proper prefixes of a block with curling number at most $m + 1$
 
@@ -349,7 +349,7 @@ $B_t$ concatenated.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 11 (`jis-2025-25.4.6-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtProperPrefix_curling_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-proper-prefix-curling-iff).
+Stated but not proved: `MetaMathlibExt.gijswijtProperPrefix_curling_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-proper-prefix-curling-iff).
 
 ## Curling number of block words with a maximal exponent
 
@@ -363,7 +363,7 @@ $\mathcal{C}(P) = m + 1$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 12 (`jis-2025-25.4.6-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.curlingNumber_blockWord_of_max` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-block-word-of-max).
+Stated but not proved: `MetaMathlibExt.curlingNumber_blockWord_of_max` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-block-word-of-max).
 
 ## Curling number of block words with small exponents
 
@@ -376,7 +376,7 @@ $P = B_{u-1}^{a_{u-1}} \cdots B_2^{a_2} B_1^{a_1}$ has curling number $\mathcal{
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 13 (`jis-2025-25.4.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.curlingNumber_blockWord_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-block-word-le).
+Stated but not proved: `MetaMathlibExt.curlingNumber_blockWord_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#curling-number-block-word-le).
 
 ## Concatenated glue strings inside a block of the next order
 
@@ -393,7 +393,7 @@ $W(a) = T^{(m)}_t$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 16 (`jis-2025-25.4.6-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_blockWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-block-word).
+Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_blockWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-block-word).
 
 ## Bounds on the block lengths of order $m+1$
 
@@ -408,7 +408,7 @@ inequality is strict when $u = m + 3$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 17 (`jis-2025-25.4.6-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtBlockLength_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-estimates).
+Stated but not proved: `MetaMathlibExt.gijswijtBlockLength_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-estimates).
 
 ## Length estimates for concatenated glue strings
 
@@ -422,7 +422,7 @@ $\beta^{(m+1)}(c) \le \tau^{(m)}(t) \le \beta^{(m+1)}(c + 2)$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Proposition 18 (`jis-2025-25.4.6-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_length_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-length-estimates).
+Stated but not proved: `MetaMathlibExt.gijswijtGlueConcat_length_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-glue-concat-length-estimates).
 
 ## Recursive estimate for the block index
 
@@ -436,7 +436,7 @@ strict when $n = m + 3$.
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Proposition 19 (`jis-2025-25.4.6-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtBlockIndex_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-index-estimates).
+Stated but not proved: `MetaMathlibExt.gijswijtBlockIndex_estimates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-index-estimates).
 
 ## Upper bound on block lengths
 
@@ -448,7 +448,7 @@ $m$th order Gijswijt sequence $A^{(m)}$ satisfy $\beta^{(m)}(u) / (m+1)^{u-1} < 
 
 - Levi van de Pol, *The Growth Rate of Gijswijt's Sequence*, Journal of Integer Sequences 28 (2025), Article 25.4.6, Lemma 20 (`jis-2025-25.4.6-lem-20`).
 
-Stated but not proved: `MetaMathlibExt.gijswijtBlockLength_div_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-div-lt).
+Stated but not proved: `MetaMathlibExt.gijswijtBlockLength_div_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GijswijtSequenceWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html#gijswijt-block-length-div-lt).
 
 ## Depends on
 
@@ -457,4 +457,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gijswijt's sequence](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/gijswijt-s-sequence)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.6 The alternating Čech complex
 
-Section 69.6 of the Stacks Project, [Tag 0721](https://stacks.math.columbia.edu/tag/0721). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.6 of the Stacks Project, [Tag 0721](https://stacks.math.columbia.edu/tag/0721). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0722, a lemma
 
 [Tag 0722](https://stacks.math.columbia.edu/tag/0722) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstant_preservesBinaryCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCoproduct.lean, line 584](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCoproduct.lean#L584). The attribute's comment: “coproduct\_sum”.
+**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstant_preservesBinaryCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCoproduct.lean, line 584](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCoproduct.lean#L584). The attribute's comment: “coproduct\_sum”.
 
 > The two canonical maps induced by the inclusions into a binary coproduct of the
 > spaces-étale site give a direct-sum decomposition of extensions by zero.
@@ -29,7 +29,7 @@ theorem extensionByZeroConstant_preservesBinaryCoproduct
       (extensionByZeroConstantMap B S hS X i₂)))
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstantTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean#L852). The attribute's comment: “product\_tensor”.
+**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstantTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean, line 841](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean#L841). The attribute's comment: “product\_tensor”.
 
 > The tensor product of the extensions by zero of the constant sheaf `ℤ` from two objects of
 > the spaces-étale site of `X` is the extension by zero from their product.
@@ -42,7 +42,7 @@ def extensionByZeroConstantTensorIso (U₁ U₂ U₁₂ : SpacesEtale B S hS X) 
       extensionByZeroConstant B S hS X U₁₂
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstantTensorIso_hom_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean, line 924](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean#L924). The attribute's comment: “product\_tensor on generators”.
+**`AlgebraicGeometry.Space.SpacesEtale.extensionByZeroConstantTensorIso_hom_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean, line 913](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleTensor.lean#L913). The attribute's comment: “product\_tensor on generators”.
 
 > The tensor-product isomorphism sends the pure tensor of the generators indexed by `φ₁` and
 > `φ₂` to the generator indexed by their pairing into the product.
@@ -65,7 +65,7 @@ theorem extensionByZeroConstantTensorIso_hom_generator (U₁ U₂ U₁₂ : Spac
 
 [Tag 0723](https://stacks.math.columbia.edu/tag/0723) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.koszulAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulComplex.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulComplex.lean#L176). The attribute's comment: “the augmentation K^• ⟶ ℤ[0]”.
+**`AlgebraicGeometry.Space.SpacesEtale.koszulAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulComplex.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulComplex.lean#L176). The attribute's comment: “the augmentation K^• ⟶ ℤ[0]”.
 
 > **Stacks 0723.** The augmentation `K^• ⟶ ℤ[0]` of the complex `K^•` attached to an object
 > of the spaces-étale site of `X`: the trace in degree `0` and zero in higher degrees.
@@ -77,7 +77,7 @@ def koszulAugmentation (U : SpacesEtale B S hS X) :
         (constantIntSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.koszulAugmentation_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulResolution.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulResolution.lean#L401). The attribute's comment: “the augmentation is a quasi-isomorphism for a surjective cover”.
+**`AlgebraicGeometry.Space.SpacesEtale.koszulAugmentation_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulResolution.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/KoszulResolution.lean#L401). The attribute's comment: “the augmentation is a quasi-isomorphism for a surjective cover”.
 
 > **Stacks 0723.** For an algebraic space `U` étale and surjective over `X`, the augmentation
 > `K^• ⟶ ℤ[0]` of the Koszul complex of the trace `j_{U!} ℤ ⟶ ℤ` is a quasi-isomorphism: `K^•`
@@ -93,7 +93,7 @@ theorem koszulAugmentation_quasiIso (U : SpacesEtale B S hS X)
 
 [Tag 0724](https://stacks.math.columbia.edu/tag/0724) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.alternatingCechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/Complex.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/Complex.lean#L66).
+**`AlgebraicGeometry.Space.SpacesEtale.alternatingCechComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/Complex.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/Complex.lean#L66).
 
 > **Stacks 0724.** The alternating Čech complex `Č^•_alt(f, F)` associated to an abelian
 > sheaf `F` on the spaces-étale site of `X` and an object `U` of that site: the complex
@@ -110,7 +110,7 @@ def alternatingCechComplex (U : SpacesEtale B S hS X)
 
 [Tag 0725](https://stacks.math.columbia.edu/tag/0725) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.alternatingCechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DerivedGlobalSections.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DerivedGlobalSections.lean#L557). The attribute's comment: “the canonical map Č^•\_alt(f, ℱ) ⟶ RΓ(X, ℱ) in D(Ab)”.
+**`AlgebraicGeometry.Space.SpacesEtale.alternatingCechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DerivedGlobalSections.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DerivedGlobalSections.lean#L557). The attribute's comment: “the canonical map Č^•\_alt(f, ℱ) ⟶ RΓ(X, ℱ) in D(Ab)”.
 
 > Let `S` be a scheme, let `f : U ⟶ X` be a surjective étale morphism of algebraic spaces over
 > `S` and let `ℱ` be an abelian sheaf on the spaces-étale site of `X`. There is a canonical map
@@ -136,7 +136,7 @@ def alternatingCechToDerivedGlobalSections (U : SpacesEtale B S hS X)
       derivedGlobalSections B S hS X F
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L167). The attribute's comment: “the spectral sequence with E₁^\{p,q} = Ext^q(K^p, ℱ), abutting to Ext^\{p+q}(K^•, ℱ)”.
+**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L167). The attribute's comment: “the spectral sequence with E₁^\{p,q} = Ext^q(K^p, ℱ), abutting to Ext^\{p+q}(K^•, ℱ)”.
 
 > **Stacks 0725, the first page of the spectral sequence.** Let `X` be an algebraic space over
 > a scheme `S`, let `U` be an algebraic space étale over `X` and let `ℱ` be an abelian sheaf on the
@@ -159,7 +159,7 @@ theorem exists_alternatingCechExtSpectralSequence (U : SpacesEtale B S hS X)
             (Sheaf (topology B S hS X) AddCommGrpCat.{u + 1}) 0).obj F) n))
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechCohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L256). The attribute's comment: “the abutment is the cohomology of X, for a surjective cover”.
+**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechCohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L256). The attribute's comment: “the abutment is the cohomology of X, for a surjective cover”.
 
 > **Stacks 0725.** Let `X` be an algebraic space over a scheme `S`, let `U` be an algebraic
 > space étale and *surjective* over `X` and let `ℱ` be an abelian sheaf on the spaces-étale site
@@ -188,7 +188,7 @@ theorem exists_alternatingCechCohomologySpectralSequence (U : SpacesEtale B S hS
 
 [Tag 0726](https://stacks.math.columbia.edu/tag/0726) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.isIso_signTwistToKoszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L847). The attribute's comment: “the canonical map ℤ(sign) ⟶ K^p is an isomorphism”.
+**`AlgebraicGeometry.Space.SpacesEtale.isIso_signTwistToKoszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L847). The attribute's comment: “the canonical map ℤ(sign) ⟶ K^p is an isomorphism”.
 
 > **Stacks 0726.** The canonical map `ℤ(sign) ⟶ K^p` from the sign twist of `W_p` to the
 > `(p+1)`-st exterior power of the extension by zero of `ℤ` from `U` is an isomorphism: it is the
@@ -201,7 +201,7 @@ theorem isIso_signTwistToKoszul (U : SpacesEtale B S hS X) (p : ℕ)
     IsIso (signTwistToKoszul B S hS X U p hsep)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.bijective_koszulHomToSignSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L865). The attribute's comment: “bijectivity of the map Hom(K^p, F) ⟶ anti-invariant sections”.
+**`AlgebraicGeometry.Space.SpacesEtale.bijective_koszulHomToSignSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 865](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L865). The attribute's comment: “bijectivity of the map Hom(K^p, F) ⟶ anti-invariant sections”.
 
 > **Stacks 0726.** The canonical map from `Hom(K^p, ℱ)` to the `S_{p+1}`-anti-invariant
 > sections of `ℱ` over `W_p` is bijective: it is precomposition with the isomorphism
@@ -215,7 +215,7 @@ theorem bijective_koszulHomToSignSections (U : SpacesEtale B S hS X) (p : ℕ)
     Function.Bijective (koszulHomToSignSections B S hS X U p hsep F).hom
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.koszulHomSignSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 883](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L883). The attribute's comment: “the map Hom(K^p, F) ⟶ anti-invariant sections is an isomorphism of groups”.
+**`AlgebraicGeometry.Space.SpacesEtale.koszulHomSignSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 883](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L883). The attribute's comment: “the map Hom(K^p, F) ⟶ anti-invariant sections is an isomorphism of groups”.
 
 > **Stacks 0726.** The identification of `Hom(K^p, ℱ)` with the group of
 > `S_{p+1}`-anti-invariant sections of `ℱ` over `W_p`, as an isomorphism of abelian groups.
@@ -229,7 +229,7 @@ def koszulHomSignSectionsEquiv (U : SpacesEtale B S hS X) (p : ℕ)
         (diagonalComplementAut B S hS X U (p + 1) hsep) Equiv.Perm.sign F.obj
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.freeAction_and_bijective_koszulHomToSignSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L902).
+**`AlgebraicGeometry.Space.SpacesEtale.freeAction_and_bijective_koszulHomToSignSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean, line 902](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/AntiInvariantSections.lean#L902).
 
 > **Stacks 0726.** For `U` étale and separated over `X` the space
 > `W_p = U ×_X ⋯ ×_X U ∖ (all diagonals)` with `p + 1` factors carries a free action of the
@@ -258,7 +258,7 @@ theorem freeAction_and_bijective_koszulHomToSignSections (U : SpacesEtale B S hS
             (((koszulHomToSignSections B S hS X U p hsep F).hom g).1))
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.diagonalComplement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L487). The attribute's comment: “the space W\_p”.
+**`AlgebraicGeometry.Space.SpacesEtale.diagonalComplement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L488). The attribute's comment: “the space W\_p”.
 
 > **Stacks 0726.** The space `W = U ×_X ⋯ ×_X U ∖ (all diagonals)` with `n` factors, as an
 > object of the spaces-étale site of `X`: the complement of the diagonals is an open subspace of
@@ -269,7 +269,7 @@ def diagonalComplement (U : SpacesEtale B S hS X) (n : ℕ)
     (hsep : IsSeparated B S hS U.1.hom.hom) : SpacesEtale B S hS X
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.diagonalComplementAut`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L637). The attribute's comment: “the action of S\_\{p+1} on W\_p over X”.
+**`AlgebraicGeometry.Space.SpacesEtale.diagonalComplementAut`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L638). The attribute's comment: “the action of S\_\{p+1} on W\_p over X”.
 
 > **Stacks 0726.** The action of the symmetric group on `n` letters on `W` by permuting the
 > factors of `U^n`.  It is an action over `X` because `W` and the permutations of the factors
@@ -281,7 +281,7 @@ def diagonalComplementAut (U : SpacesEtale B S hS X) (n : ℕ)
     Equiv.Perm (Fin n) →* Aut (diagonalComplement B S hS X U n hsep)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.isEmpty_points_of_comp_diagonalComplementAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L695). The attribute's comment: “freeness of the action of S\_\{p+1} on W\_p: a fixed morphism has empty source”.
+**`AlgebraicGeometry.Space.SpacesEtale.isEmpty_points_of_comp_diagonalComplementAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 696](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L696). The attribute's comment: “freeness of the action of S\_\{p+1} on W\_p: a fixed morphism has empty source”.
 
 > **Stacks 0726.** The action of the symmetric group on `W` is free: an object of the site
 > carrying a morphism to `W` fixed by a permutation `σ ≠ 1` has no points.
@@ -297,7 +297,7 @@ theorem isEmpty_points_of_comp_diagonalComplementAut (U : SpacesEtale B S hS X) 
     IsEmpty (points B S hS (underlying B S hS X V).1)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.eq_one_of_comp_diagonalComplementAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L724). The attribute's comment: “freeness of the action of S\_\{p+1} on W\_p”.
+**`AlgebraicGeometry.Space.SpacesEtale.eq_one_of_comp_diagonalComplementAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L725). The attribute's comment: “freeness of the action of S\_\{p+1} on W\_p”.
 
 > **Stacks 0726.** The action of the symmetric group on `W` is free, in the shape the
 > site-theoretic notion of a torsor asks for: a morphism `φ : V ⟶ W` fixed by `σ` forces `σ = 1`
@@ -311,7 +311,7 @@ theorem eq_one_of_comp_diagonalComplementAut (U : SpacesEtale B S hS X) (n : ℕ
     (⊥ : Sieve V) ∈ topology B S hS X V ∨ σ = 1
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.signTwistToKoszul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 867](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L867). The attribute's comment: “the canonical map ℤ(sign) ⟶ K^p”.
+**`AlgebraicGeometry.Space.SpacesEtale.signTwistToKoszul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L868). The attribute's comment: “the canonical map ℤ(sign) ⟶ K^p”.
 
 > **Stacks 0726.** The canonical map `ℤ(sign) ⟶ K^p` from the sign twist of `W_p` to the
 > `(p+1)`-st exterior power of the extension by zero of `ℤ` from `U`: the sheafification of the
@@ -323,7 +323,7 @@ def signTwistToKoszul (U : SpacesEtale B S hS X) (p : ℕ)
     signTwist B S hS X U (p + 1) hsep ⟶ (koszulComplex B S hS X U).X p
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.koszulHomToSignSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 879](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L879). The attribute's comment: “the map Hom(K^p, F) ⟶ S\_\{p+1}-anti-invariant sections of F over W\_p”.
+**`AlgebraicGeometry.Space.SpacesEtale.koszulHomToSignSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 880](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L880). The attribute's comment: “the map Hom(K^p, F) ⟶ S\_\{p+1}-anti-invariant sections of F over W\_p”.
 
 > **Stacks 0726.** The canonical map from `Hom(K^p, ℱ)` to the `S_{p+1}`-anti-invariant
 > sections of `ℱ` over `W_p`: precompose with `ℤ(sign) ⟶ K^p` and use that a map out of
@@ -340,7 +340,7 @@ def koszulHomToSignSections (U : SpacesEtale B S hS X) (p : ℕ)
         (diagonalComplementAut B S hS X U (p + 1) hsep) Equiv.Perm.sign F.obj)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.koszulHomToSignSections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 898](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L898). The attribute's comment: “functoriality in F of the map Hom(K^p, F) ⟶ anti-invariant sections”.
+**`AlgebraicGeometry.Space.SpacesEtale.koszulHomToSignSections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplement.lean#L899). The attribute's comment: “functoriality in F of the map Hom(K^p, F) ⟶ anti-invariant sections”.
 
 > **Stacks 0726.** The map from `Hom(K^p, ℱ)` to the `S_{p+1}`-anti-invariant sections of `ℱ`
 > over `W_p` is functorial in `ℱ`: composing a map `K^p ⟶ ℱ` with `ℱ ⟶ ℱ'` takes the
@@ -361,7 +361,7 @@ theorem koszulHomToSignSections_naturality (U : SpacesEtale B S hS X) (p : ℕ)
 
 [Tag 0727](https://stacks.math.columbia.edu/tag/0727) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.freeActionChartSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean#L83). The attribute's comment: “the identification of the chi-semi-invariant sections over the chart with the global sections of the twist, for the quotient of an object of a big fppf site by a free action of a u-small group. The source's group is finite; finiteness is not used here. The locally free rank one half is freeActionChartTwistOverIso”.
+**`AlgebraicGeometry.Space.freeActionChartSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean#L83). The attribute's comment: “the identification of the chi-semi-invariant sections over the chart with the global sections of the twist, for the quotient of an object of a big fppf site by a free action of a u-small group. The source's group is finite; finiteness is not used here. The locally free rank one half is freeActionChartTwistOverIso”.
 
 > **[Stacks, Tag 0727], the sections half, for the quotient of an object of a big fppf site by
 > a free action.**  The `χ`-semi-invariant sections of an abelian sheaf `ℱ` on the spaces-étale
@@ -383,7 +383,7 @@ def freeActionChartSectionsEquiv
         (op (SpacesEtale.final B S hS (actionQuotientSpace G B S hS V a ha)))
 ```
 
-**`AlgebraicGeometry.Space.freeActionChartTwistOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean#L101). The attribute's comment: “the twist is locally free of rank one, for the quotient of an object of a big fppf site by a free action of a u-small group: it restricts to the constant sheaf Z on the site localized at the chart. The sections half is freeActionChartSectionsEquiv”.
+**`AlgebraicGeometry.Space.freeActionChartTwistOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotientSignTwist.lean#L101). The attribute's comment: “the twist is locally free of rank one, for the quotient of an object of a big fppf site by a free action of a u-small group: it restricts to the constant sheaf Z on the site localized at the chart. The sections half is freeActionChartSectionsEquiv”.
 
 > **[Stacks, Tag 0727], the local freeness half, for the quotient of an object of a big fppf
 > site by a free action.**  The twist `ℤ(χ)` on the spaces-étale site of the quotient `U = V/G`
@@ -402,7 +402,7 @@ def freeActionChartTwistOverIso :
           (SpacesEtale.topology B S hS (actionQuotientSpace G B S hS V a ha)))
 ```
 
-**`AlgebraicGeometry.Space.characterTwistOfOrbitQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpacesEtaleCharacterTwist.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpacesEtaleCharacterTwist.lean#L90).
+**`AlgebraicGeometry.Space.characterTwistOfOrbitQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpacesEtaleCharacterTwist.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpacesEtaleCharacterTwist.lean#L90).
 
 > **Stacks 0727.** Let `W` be an algebraic space over a scheme `S` carrying a free action of
 > a group `G`, let `U = W/G` be the quotient of [Stacks 071S] and let `χ : G → ℤˣ` be a
@@ -426,7 +426,7 @@ def characterTwistOfOrbitQuotient (χ : G →* ℤˣ) :
       (SpacesEtale.final B S hS (orbitQuotientSpace hnat hW hfree))
 ```
 
-**`CategoryTheory.IsTorsorObject.twistTensorSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCharacterTwistTorsor.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCharacterTwistTorsor.lean#L555). The attribute's comment: “the sections transforming according to the character”.
+**`CategoryTheory.IsTorsorObject.twistTensorSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCharacterTwistTorsor.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleCharacterTwistTorsor.lean#L552). The attribute's comment: “the sections transforming according to the character”.
 
 > For a torsor `W` under a group `G` over the final object of a site and a character
 > `χ : G → ℤˣ`, the sections of an abelian sheaf `F` over `W` that transform according to `χ` are
@@ -437,7 +437,7 @@ def twistTensorSectionsEquiv (F : Sheaf J AddCommGrpCat.{u + 1}) :
     characterSections W act χ F.obj ≃+ (characterTwistTensor F.obj act χ J).obj.obj (op T)
 ```
 
-**`CategoryTheory.characterTwistOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CharacterTwistLocalFreeness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CharacterTwistLocalFreeness.lean#L146). The attribute's comment: “the twist is locally free of rank one”.
+**`CategoryTheory.characterTwistOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CharacterTwistLocalFreeness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CharacterTwistLocalFreeness.lean#L146). The attribute's comment: “the twist is locally free of rank one”.
 
 > **The twist `ℤ(χ)` becomes constant on the localized site `Over W`**: its pullback along
 > `Over.forget W` is the constant sheaf with value `ℤ`. This is the sheaf-theoretic form of the
@@ -449,7 +449,7 @@ noncomputable def characterTwistOverIso (h : IsTorsorObject act J) (χ : G →* 
       (J.overPullback AddCommGrpCat.{v} W).obj (characterTwist W act χ J)
 ```
 
-**`CategoryTheory.characterTwistOfQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FreeQuotientCharacterTwist.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/FreeQuotientCharacterTwist.lean#L120).
+**`CategoryTheory.characterTwistOfQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/FreeQuotientCharacterTwist.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/FreeQuotientCharacterTwist.lean#L120).
 
 > **Stacks 0727.** Let `C` be a site with final object `T`, let a group `G` act freely by
 > automorphisms on an object `W` of `C`, let `q : W ⟶ T` exhibit `T` as the quotient `W/G` and
@@ -471,7 +471,7 @@ noncomputable def characterTwistOfQuotient {T : C} {q : W ⟶ T} (hfree : ActsFr
 
 [Tag 0728](https://stacks.math.columbia.edu/tag/0728) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechSignTwistedSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L330). The attribute's comment: “the row q = 0 of the E₁-page, as the S\_\{p+1}-anti-invariant sections of ℱ over W\_p, and the convergence to H^\{p+q}(X, ℱ)”.
+**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechSignTwistedSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/ExtSpectralSequence.lean#L330). The attribute's comment: “the row q = 0 of the E₁-page, as the S\_\{p+1}-anti-invariant sections of ℱ over W\_p, and the convergence to H^\{p+q}(X, ℱ)”.
 
 > **Stacks 0728.** Let `S` be a scheme, let `f : U ⟶ X` be a surjective, étale and separated
 > morphism of algebraic spaces over `S` and let `ℱ` be an abelian sheaf on the spaces-étale site
@@ -503,7 +503,7 @@ theorem exists_alternatingCechSignTwistedSpectralSequence (U : SpacesEtale B S h
         AddCommGrpCat.of (Abelian.zExt (constantIntSheaf B S hS X) F (n : ℤ)))
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechQuotientSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuotientSpectralSequence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuotientSpectralSequence.lean#L103). The attribute's comment: “the E₁-page is H^q(U\_p, F|\_\{U\_p} ⊗ Z(χ\_p)) in every degree q, and the convergence to H^\{p+q}(X, F)”.
+**`AlgebraicGeometry.Space.SpacesEtale.exists_alternatingCechQuotientSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuotientSpectralSequence.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuotientSpectralSequence.lean#L103). The attribute's comment: “the E₁-page is H^q(U\_p, F|\_\{U\_p} ⊗ Z(χ\_p)) in every degree q, and the convergence to H^\{p+q}(X, F)”.
 
 > **Stacks 0728.** Let `S` be a scheme, let `f : U ⟶ X` be a surjective, étale and separated
 > morphism of algebraic spaces over `S` and let `ℱ` be an abelian sheaf on the spaces-étale site
@@ -559,4 +559,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.6, Tag 0721](https://stacks.math.columbia.edu/tag/0721)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

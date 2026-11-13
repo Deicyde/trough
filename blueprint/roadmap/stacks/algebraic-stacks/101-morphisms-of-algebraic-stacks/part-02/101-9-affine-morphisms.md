@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.9 Affine morphisms
 
-Section 101.9 of the Stacks Project, [Tag 0CHP](https://stacks.math.columbia.edu/tag/0CHP). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.9 of the Stacks Project, [Tag 0CHP](https://stacks.math.columbia.edu/tag/0CHP). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CHQ, a definition
 
 [Tag 0CHQ](https://stacks.math.columbia.edu/tag/0CHQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAffineHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphism.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphism.lean#L105).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAffineHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphism.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphism.lean#L105).
 
 > **Stacks 0CHQ.** A 1-morphism of algebraic stacks over `S` is *affine* when it is
 > representable by algebraic spaces and is affine in the sense of Stacks 04XB.
@@ -27,7 +27,7 @@ abbrev IsAffineHom (f : 𝒳 ⟶ 𝒴) : Prop
 
 [Tag 0CHR](https://stacks.math.columbia.edu/tag/0CHR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_and_isAffineHom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismBaseChange.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismBaseChange.lean#L58).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_and_isAffineHom_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismBaseChange.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismBaseChange.lean#L58).
 
 > **Stacks 0CHR.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : 𝒵 ⟶ 𝒴` be an affine 1-morphism of algebraic stacks, that is (Stacks 0CHQ) one which is
@@ -45,7 +45,7 @@ theorem isRepresentableByAlgebraicSpaces_and_isAffineHom_snd
       Stack.IsAffineHom B S hS P.snd.hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean#L267).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean#L267).
 
 > **Stacks 0CHR.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`, let
 > `g : 𝒵 ⟶ 𝒴` be an affine 1-morphism of algebraic stacks, and let `P` be a 2-fibre product of the
@@ -67,7 +67,7 @@ theorem isAffineHom_snd_of_isTwoFibreProduct
 
 [Tag 0CHS](https://stacks.math.columbia.edu/tag/0CHS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableMorphism_comp_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismRepresentableComp.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismRepresentableComp.lean#L119). The attribute's comment: “with 0CHQ read literally: representable by schemes and affine in the sense of 04XB”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableMorphism_comp_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismRepresentableComp.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismRepresentableComp.lean#L119). The attribute's comment: “with 0CHQ read literally: representable by schemes and affine in the sense of 04XB”.
 
 > **Stacks 0CHS, for the definition of Stacks 0CHQ read literally.** Call a 1-morphism of
 > algebraic stacks over `S` affine when it is representable (by schemes, Stacks 02Y7) and affine in
@@ -88,7 +88,7 @@ theorem isRepresentableMorphism_comp_isAffineHom (f : 𝒳 ⟶ 𝒴) (g : 𝒴 �
       Stack.IsAffineHom B S hS (f ≫ g).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean#L285).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineMorphismStability.lean#L285).
 
 > **Stacks 0CHS.** A composite of two affine 1-morphisms of algebraic stacks over `S` is
 > affine: representability by algebraic spaces composes by Stacks 0301, and affineness in the sense
@@ -106,7 +106,7 @@ theorem isAffineHom_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
 
 [Tag 0GQE](https://stacks.math.columbia.edu/tag/0GQE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_of_comp_of_isAffineHom_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineDiagonalPermanence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AffineDiagonalPermanence.lean#L182).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAffineHom_of_comp_of_isAffineHom_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AffineDiagonalPermanence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AffineDiagonalPermanence.lean#L182).
 
 > **Stacks 0GQE.** Let
 >
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.9, Tag 0CHP](https://stacks.math.columbia.edu/tag/0CHP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

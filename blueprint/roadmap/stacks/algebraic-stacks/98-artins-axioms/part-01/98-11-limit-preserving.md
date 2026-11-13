@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Deformation.Artin.IsLimitPreserving, AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProduct, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct, AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinitePresentation, AlgebraicGeometry.Stack.isStackInSetoids_isLimitPreserving_tfae, AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isLimitPreserving, AlgebraicGeometry.Stack.isLocallyOfFiniteType_diagonal
+lean: Deformation.Artin.IsLimitPreserving, AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProduct, AlgebraicGeometry.Stack.isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct, AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinPres, AlgebraicGeometry.Stack.isStackInSetoids_isLimitPreserving_tfae, AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isLimitPreserving, AlgebraicGeometry.Stack.isLocallyOfFiniteType_diagonal
 statement: formalized
 proof: formalized
 ---
 
 # 98.11 Limit preserving
 
-Section 98.11 of the Stacks Project, [Tag 07XK](https://stacks.math.columbia.edu/tag/07XK). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.11 of the Stacks Project, [Tag 07XK](https://stacks.math.columbia.edu/tag/07XK). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07XL, a definition
 
 [Tag 07XL](https://stacks.math.columbia.edu/tag/07XL) in the Stacks Project.
 
-**`Deformation.Artin.IsLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/LimitPreserving.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/LimitPreserving.lean#L144).
+**`Deformation.Artin.IsLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/LimitPreserving.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/LimitPreserving.lean#L144).
 
 > A category fibred in groupoids is limit preserving if for every directed inverse
 > limit of affine schemes the canonical comparison `colim 𝒳_{Tᵢ} ⥤ 𝒳_T` is an equivalence
@@ -31,7 +31,7 @@ public abbrev IsLimitPreserving
 
 [Tag 07XM](https://stacks.math.columbia.edu/tag/07XM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProduct.lean, line 715](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProduct.lean#L715). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isLimitPreserving_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProduct.lean, line 715](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProduct.lean#L715). The attribute's comment: “part (2)”.
 
 > **Stacks 07XM, part (2).** If `𝒳`, `𝒴` and `𝒵` are limit preserving categories fibred in
 > groupoids over `(Sch/S)_{fppf}`, then so is the 2-fibre product `𝒳 ×_𝒴 𝒵`: for every directed
@@ -47,7 +47,7 @@ theorem isLimitPreserving_twoFibreProduct
       (BigFppfOver.twoFibreProduct.{u, u, u + 1} B S hS 𝒳 𝒴 𝒵 pf qf)
 ```
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProductObjects.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProductObjects.lean#L435). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProductObjects.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingTwoFibreProductObjects.lean#L435). The attribute's comment: “part (1)”.
 
 > **Stacks 07XM, part (1).** If the structure morphisms of `𝒳` and of `𝒵` to `(Sch/S)_{fppf}`
 > are limit preserving on objects and `𝒴` is limit preserving, then the structure morphism of the
@@ -73,7 +73,7 @@ theorem isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct
 
 [Tag 07XN](https://stacks.math.columbia.edu/tag/07XN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSetoidRepresentable.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSetoidRepresentable.lean#L206). The attribute's comment: “the implication (3) ⟹ (1), with condition (3) read as `IsRepresentableBySpaceLocallyOfFinitePresentation` and limit preservation on objects for cofiltered index categories in the universe of the schemes, which is the scope of the library's form of Tag 06CX that the proof uses”.
+**`AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinPres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSetoidRepresentable.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingSetoidRepresentable.lean#L207). The attribute's comment: “the implication (3) ⟹ (1), with condition (3) read as `IsRepresentableBySpaceLocallyOfFinitePresentation` and limit preservation on objects for cofiltered index categories in the universe of the schemes, which is the scope of the library's form of Tag 06CX that the proof uses”.
 
 > **Stacks 07XN, the implication (3) ⟹ (1).** A category fibred in groupoids over the big fppf
 > site of `S` which is representable by an algebraic space locally of finite presentation over `S`
@@ -85,7 +85,7 @@ theorem isLimitPreservingOnObjects_toTerminalCFG_twoFibreProduct
 > used.
 
 ```lean
-theorem isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinitePresentation
+theorem isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpaceLocallyOfFinPres
     (h : IsRepresentableBySpaceLocallyOfFinitePresentation B S hS 𝒳) :
     𝒳.val.p.IsStackInSetoids (BigFppfOver.topology B S hS) ∧
       BigFppfOver.IsLimitPreservingOnObjects.{u, u, u, u, u + 1} B S hS 𝒳
@@ -93,7 +93,7 @@ theorem isStackInSetoids_and_isLimitPreservingOnObjects_of_isRepresentableBySpac
         (Bicategory.InducedBicategory.mkHom (toTerminalCFG B S hS 𝒳))
 ```
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStackInSetoids.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStackInSetoids.lean#L303).
+**`AlgebraicGeometry.Stack.isStackInSetoids_isLimitPreserving_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStackInSetoids.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStackInSetoids.lean#L303).
 
 > **Stacks 07XN.** For an algebraic stack `𝒳` over the big fppf site of a scheme `S` the
 > following are equivalent:
@@ -120,7 +120,7 @@ theorem isStackInSetoids_isLimitPreserving_tfae
         IsRepresentableBySpaceLocallyOfFinitePresentation B S hS 𝒳]
 ```
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStructureMorphism.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStructureMorphism.lean#L216). The attribute's comment: “the implication (2) ⟹ (1)”.
+**`AlgebraicGeometry.Stack.isStackInSetoids_and_isLimitPreservingOnObjects_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStructureMorphism.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LimitPreservingStructureMorphism.lean#L216). The attribute's comment: “the implication (2) ⟹ (1)”.
 
 > **Stacks 07XN, the implication (2) ⟹ (1).** A category fibred in groupoids over the big fppf
 > site of `S` which is a stack in setoids and is limit preserving is a stack in setoids whose
@@ -144,7 +144,7 @@ theorem isStackInSetoids_and_isLimitPreservingOnObjects_of_isLimitPreserving
 
 [Tag 0CXI](https://stacks.math.columbia.edu/tag/0CXI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalLocallyOfFiniteType.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalLocallyOfFiniteType.lean#L239).
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalLocallyOfFiniteType.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalLocallyOfFiniteType.lean#L239).
 
 > **Stacks 0CXI.** Let `𝒳` be a category fibred in groupoids over the big fppf site of a scheme
 > `S` whose diagonal `Δ : 𝒳 ⟶ 𝒳 × 𝒳` is representable by algebraic spaces. If `𝒳` is limit
@@ -172,4 +172,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.11, Tag 07XK](https://stacks.math.columbia.edu/tag/07XK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

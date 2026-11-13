@@ -1,14 +1,33 @@
 ---
 declaration: section
 origin: cited
-lean: PrimeSpectrum.instSpectralSpace, PrimeSpectrum.irreducibleClosedThroughEquiv, PrimeSpectrum.irreducibleComponentsThroughEquiv, PrimeSpectrum.exists_disjoint_basicOpen_of_mem_minimalPrimes, spec_profinite_tfae
+lean: PrimeSpectrum.isClosed_and_isIrreducible_iff_exists_isPrime_eq_zeroLocus, PrimeSpectrum.closure_singleton, PrimeSpectrum.zeroLocus_minimalPrimes, PrimeSpectrum.instSpectralSpace, PrimeSpectrum.irreducibleClosedThroughEquiv, PrimeSpectrum.irreducibleComponentsThroughEquiv, PrimeSpectrum.exists_disjoint_basicOpen_of_mem_minimalPrimes, spec_profinite_tfae
 statement: formalized
 proof: formalized
 ---
 
 # 10.26 Irreducible components of spectra
 
-Section 10.26 of the Stacks Project, [Tag 00ER](https://stacks.math.columbia.edu/tag/00ER). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.26 of the Stacks Project, [Tag 00ER](https://stacks.math.columbia.edu/tag/00ER). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+
+## Tag 00ES, a lemma
+
+[Tag 00ES](https://stacks.math.columbia.edu/tag/00ES) in the Stacks Project.
+
+**`PrimeSpectrum.isClosed_and_isIrreducible_iff_exists_isPrime_eq_zeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/MathlibRegistrations/Stacks00ES.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Stacks00ES.lean#L28). The attribute's comment: “(2) the irreducible closed subsets of Spec R are exactly the V(p), p prime”.
+
+> A subset of `Spec R` is closed and irreducible if and only if it is `V(p)` for a prime
+> ideal `p` of `R`.
+
+```lean
+theorem isClosed_and_isIrreducible_iff_exists_isPrime_eq_zeroLocus {s : Set (PrimeSpectrum R)} :
+    IsClosed s ∧ IsIrreducible s ↔ ∃ p : Ideal R, p.IsPrime ∧ s = zeroLocus (p : Set R)
+```
+
+Declarations registered for the tag:
+
+- [`PrimeSpectrum.closure_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.closure_singleton#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks00ES.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Stacks00ES.lean#L17) (StacksFrontier): “(1) the closure of \{p} is V(p)”. References: EGA I (1.1.7), “more general”.
+- [`PrimeSpectrum.zeroLocus_minimalPrimes`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.zeroLocus_minimalPrimes#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Stacks00ES.lean, line 18](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Stacks00ES.lean#L18) (StacksFrontier): “(3) the irreducible components of Spec R are exactly the V(p), p minimal”. References: EGA 0 (16.3.1), “a = 0”; EGA I (1.1.14).
 
 ## Tag 090M, a lemma
 
@@ -16,13 +35,13 @@ Section 10.26 of the Stacks Project, [Tag 00ER](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`PrimeSpectrum.instSpectralSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.instSpectralSpace#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean#L216) (StacksFrontier): “the spectrum of a ring is a spectral space”. References: EGA I (1.1.8), “more general”; EGA I (1.1.10), “more general”.
+- [`PrimeSpectrum.instSpectralSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.instSpectralSpace#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean#L216) (StacksFrontier): “the spectrum of a ring is a spectral space”. References: EGA I (1.1.8), “more general”; EGA I (1.1.10), “more general”.
 
 ## Tag 00ET, a lemma
 
 [Tag 00ET](https://stacks.math.columbia.edu/tag/00ET) in the Stacks Project.
 
-**`PrimeSpectrum.irreducibleClosedThroughEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean#L53). The attribute's comment: “(1)”.
+**`PrimeSpectrum.irreducibleClosedThroughEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean#L53). The attribute's comment: “(1)”.
 
 > Part (1): The irreducible closed subsets of `Spec(R)` passing through `𝔭`
 > correspond to the prime ideals of any localization `S` of `R` at `𝔭`.
@@ -32,7 +51,7 @@ def irreducibleClosedThroughEquiv :
     irreducibleClosedThrough R 𝔭 ≃ { q : Ideal S // q.IsPrime }
 ```
 
-**`PrimeSpectrum.irreducibleComponentsThroughEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean#L149). The attribute's comment: “(2)”. References: EGA IV (5.1.12), “special case”.
+**`PrimeSpectrum.irreducibleComponentsThroughEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleComponents.lean#L149). The attribute's comment: “(2)”. References: EGA IV (5.1.12), “special case”.
 
 > Part (2): The irreducible components of `Spec(R)` passing through `𝔭`
 > correspond to the minimal prime ideals of any localization `S` of `R` at `𝔭`.
@@ -46,7 +65,7 @@ def irreducibleComponentsThroughEquiv :
 
 [Tag 00EV](https://stacks.math.columbia.edu/tag/00EV) in the Stacks Project.
 
-**`PrimeSpectrum.exists_disjoint_basicOpen_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean#L290).
+**`PrimeSpectrum.exists_disjoint_basicOpen_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean#L290).
 
 > Let `𝔭` be a minimal prime of `R` and let `W ⊆ Spec R` be a quasi-compact open not containing
 > `𝔭`. Then some `f ∉ 𝔭` has `D(f)` disjoint from `W`.
@@ -67,7 +86,7 @@ theorem PrimeSpectrum.exists_disjoint_basicOpen_of_mem_minimalPrimes
 
 [Tag 04MG](https://stacks.math.columbia.edu/tag/04MG) in the Stacks Project.
 
-**`spec_profinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean#L184).
+**`spec_profinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Profinite.lean#L184).
 
 > For a ring `R` the following are equivalent: `Spec R` is profinite;
 > `Spec R` is Hausdorff; `Spec R` is totally disconnected; every quasi-compact open of
@@ -103,4 +122,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.26, Tag 00ER](https://stacks.math.columbia.edu/tag/00ER)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

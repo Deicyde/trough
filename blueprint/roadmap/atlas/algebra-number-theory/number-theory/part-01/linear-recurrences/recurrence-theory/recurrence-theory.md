@@ -8,7 +8,7 @@ proof: formalized
 
 # General theory of recurrences: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html).
 
 C-finite, P-recursive and MC-finite sequences, Binet formulas, Skolem–Mahler–Lech, growth, generating functions and decomposable forms.
 
@@ -22,7 +22,7 @@ $$
 P_0(n)\, u_n = \sum_{i=1}^{r} P_i(n)\, u_{n-i}.
 $$
 
-Formalized by `MetaMathlibExt.IsPRecursiveSequence`, a definition declared in [MathlibExt/NumberTheory/PRecursiveSequence.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PRecursiveSequence.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#is-precursive-sequence).
+Formalized by `MetaMathlibExt.IsPRecursiveSequence`, a definition declared in [MathlibExt/NumberTheory/PRecursiveSequence.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PRecursiveSequence.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#is-precursive-sequence).
 
 ## Binet formula for second-order linear recurrences
 
@@ -37,7 +37,7 @@ $$u_n = \frac{(u_1 - \beta u_0)\alpha^n - (u_1 - \alpha u_0)\beta^n}{\alpha - \b
 
 - Hongshen Chua, "A Study of Second-Order Linear Recurrence Sequences via Continuants," Journal of Integer Sequences 26 (2023), Article 23.8.8, Theorem [Binet's formula], lines 270–274, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Chua2/chua13.tex>.
 
-Formalized by `MetaMathlibExt.binet_closed_form_second_order`, a theorem declared in [MathlibExt/NumberTheory/BinetClosedForm.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BinetClosedForm.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#binet-closed-form-second-order).
+Formalized by `MetaMathlibExt.binet_closed_form_second_order`, a theorem declared in [MathlibExt/NumberTheory/BinetClosedForm.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BinetClosedForm.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#binet-closed-form-second-order).
 
 ## Skolem–Mahler–Lech theorem
 
@@ -60,7 +60,7 @@ J. W. S. Cassels, An embedding theorem for fields, Bull. Austral. Math. Soc. 14 
 
 - https://en.wikipedia.org/wiki/Skolem%E2%80%93Mahler%E2%80%93Lech_theorem (statement id `skolem-lech-s1`).
 
-Formalized by `MetaMathlibExt.skolemMahlerLech`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/SkolemMahlerLech.lean, line 914](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/SkolemMahlerLech.lean#L914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#skolem-mahler-lech).
+Formalized by `MetaMathlibExt.skolemMahlerLech`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/SkolemMahlerLech.lean, line 914](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/SkolemMahlerLech.lean#L914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html#skolem-mahler-lech).
 
 ## Depends on
 
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: General theory of recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory)

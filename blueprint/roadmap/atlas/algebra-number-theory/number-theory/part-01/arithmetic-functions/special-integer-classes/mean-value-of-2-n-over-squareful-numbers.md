@@ -7,7 +7,7 @@ statement: formalized
 
 # Mean value of 2^ω(n) over squareful numbers
 
-8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html).
+8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html).
 
 ## Fine zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series
 
@@ -26,7 +26,7 @@ $$F(s) = \frac{\zeta(2s)^2 \zeta(3s)^2 \zeta(7s)^2 \zeta(8s)^4 \zeta(12s)^5 \zet
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_LSeries_eq_zeta_quotient_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-lseries-eq-zeta).
+Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_LSeries_eq_zeta_quotient_fifteen` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-lseries-eq-zeta).
 
 ## Coarse zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series
 
@@ -44,7 +44,7 @@ $$F(s) = \frac{\zeta(2s)^2 \zeta(3s)^2}{\zeta(4s)} H(s).$$
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_LSeries_eq_zeta_quotient_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-lseries-eq-zeta-2).
+Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_LSeries_eq_zeta_quotient_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-lseries-eq-zeta-2).
 
 ## Uniform fourth-moment bound for the Riemann zeta function
 
@@ -58,7 +58,7 @@ $$\int_1^T |\zeta(\sigma + it)|^4 \, dt \le C T (\log T)^4.$$
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.zeta_fourth_moment_le_uniform` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-fourth-moment-le-uniform).
+Stated but not proved: `MetaMathlibExt.zeta_fourth_moment_le_uniform` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-fourth-moment-le-uniform).
 
 ## Vinogradov–Korobov bound for $1/\zeta$
 
@@ -71,7 +71,7 @@ $\sigma \ge 1 - C / g(T)$, we have $\zeta(s) \ne 0$ and $|1/\zeta(s)| \le K g(T)
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.inv_zeta_le_vinogradov_korobov` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#inv-zeta-le-vinogradov-korobov).
+Stated but not proved: `MetaMathlibExt.inv_zeta_le_vinogradov_korobov` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#inv-zeta-le-vinogradov-korobov).
 
 ## Vinogradov–Korobov zero-free region
 
@@ -83,7 +83,7 @@ $\sigma \ge 1 - C / \bigl((\log |t|)^{2/3} (\log \log |t|)^{1/3}\bigr)$.
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.zeta_ne_zero_vinogradov_korobov` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-ne-zero-vinogradov-korobov).
+Stated but not proved: `MetaMathlibExt.zeta_ne_zero_vinogradov_korobov` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-ne-zero-vinogradov-korobov).
 
 ## Lindelöf bound from the Riemann hypothesis
 
@@ -96,7 +96,7 @@ $1/2 \le \sigma \le 1$ and $|t| \ge t_0$.
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.zeta_le_rpow_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-le-rpow-of-riemann-hypothesis).
+Stated but not proved: `MetaMathlibExt.zeta_le_rpow_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#zeta-le-rpow-of-riemann-hypothesis).
 
 ## Bound for $1/\zeta$ from the Riemann hypothesis
 
@@ -109,7 +109,7 @@ for every real $t$ with $|t| \ge t_0$.
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.inv_zeta_le_rpow_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#inv-zeta-le-rpow-of-riemann-hypothesis).
+Stated but not proved: `MetaMathlibExt.inv_zeta_le_rpow_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#inv-zeta-le-rpow-of-riemann-hypothesis).
 
 ## Asymptotic for the sum of $2^{\omega(n)}$ over squareful $n$
 
@@ -136,7 +136,7 @@ stays bounded away from $0$ and the statement is one existential $c > 0$.
 
 - Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-sum-asymptotic).
+Stated but not proved: `MetaMathlibExt.squareful_two_pow_omega_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/SquarefulTwoPowOmegaWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html#squareful-two-pow-omega-sum-asymptotic).
 
 ## Depends on
 
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mean value of 2^ω(n) over squareful numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/mean-value-of-2-n-over-squareful-numbers)

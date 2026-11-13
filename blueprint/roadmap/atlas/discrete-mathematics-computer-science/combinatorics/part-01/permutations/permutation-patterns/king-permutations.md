@@ -7,7 +7,7 @@ statement: formalized
 
 # King permutations
 
-23 results, 13 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html).
+23 results, 13 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html).
 
 ## No king permutation of length at least $2$ is separable
 
@@ -21,7 +21,7 @@ avoiding both $2413$ and $3142$, no such permutation is separable.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.king_permutation_not_separable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-permutation-not-separable).
+Stated but not proved: `MetaMathlibExt.king_permutation_not_separable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-permutation-not-separable).
 
 ## King permutations of length at least $2$ contain $12$, $21$, $132$, $213$, $231$ and $312$
 
@@ -36,7 +36,7 @@ not part of this statement.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.king_permutation_hasPattern_classical` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-permutation-has-pattern-classical).
+Stated but not proved: `MetaMathlibExt.king_permutation_hasPattern_classical` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-permutation-has-pattern-classical).
 
 ## King permutations
 
@@ -49,7 +49,7 @@ $|\sigma(i + 1) - \sigma(i)| > 1$ for all adjacent positions $i$ and $i + 1$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.3.
 
-Formalized by `MetaMathlibExt.IsKingPerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#is-king-perm).
+Formalized by `MetaMathlibExt.IsKingPerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#is-king-perm).
 
 ## Number of ascents of a permutation
 
@@ -61,7 +61,7 @@ $i + 1 < n$ and $\sigma(i) < \sigma(i + 1)$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permAscentCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-ascent-count).
+Formalized by `MetaMathlibExt.permAscentCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-ascent-count).
 
 ## Number of descents of a permutation
 
@@ -73,7 +73,7 @@ $i + 1 < n$ and $\sigma(i + 1) < \sigma(i)$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permDescentCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-descent-count).
+Formalized by `MetaMathlibExt.permDescentCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-descent-count).
 
 ## Statistics of the permutation $123$
 
@@ -86,7 +86,7 @@ three right-to-left minima.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permStats_one_fin_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-stats-one-fin-three).
+Formalized by `MetaMathlibExt.permStats_one_fin_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-stats-one-fin-three).
 
 ## Statistics of the permutation $321$
 
@@ -99,7 +99,7 @@ left-to-right minima and one right-to-left minimum.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permStats_revPerm_fin_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-stats-rev-perm-fin-three).
+Formalized by `MetaMathlibExt.permStats_revPerm_fin_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#perm-stats-rev-perm-fin-three).
 
 ## Containing a flat pattern with one bottom label
 
@@ -113,7 +113,7 @@ $\sigma(i_j) < \sigma(i_m)$ for every $m \in \{0, 1, 2, 3\}$ with $m \neq j$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.1 and Table 1.
 
-Formalized by `MetaMathlibExt.ContainsFlatPOPBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#contains-flat-popbelow).
+Formalized by `MetaMathlibExt.ContainsFlatPOPBelow`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#contains-flat-popbelow).
 
 ## Containing a flat pattern with one top label
 
@@ -130,7 +130,7 @@ below the other three labels.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.1 and Table 1.
 
-Formalized by `MetaMathlibExt.ContainsFlatPOPAbove`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#contains-flat-popabove).
+Formalized by `MetaMathlibExt.ContainsFlatPOPAbove`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#contains-flat-popabove).
 
 ## Containing $P_{j+1}$ forces length at least $4$
 
@@ -143,7 +143,7 @@ then $n \ge 4$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.1.
 
-Formalized by `MetaMathlibExt.four_le_of_containsFlatPOPBelow`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#four-le-of-contains-flat-popbelow).
+Formalized by `MetaMathlibExt.four_le_of_containsFlatPOPBelow`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#four-le-of-contains-flat-popbelow).
 
 ## Containing $Q_{j+1}$ forces length at least $4$
 
@@ -156,7 +156,7 @@ then $n \ge 4$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.1.
 
-Formalized by `MetaMathlibExt.four_le_of_containsFlatPOPAbove`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#four-le-of-contains-flat-popabove).
+Formalized by `MetaMathlibExt.four_le_of_containsFlatPOPAbove`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#four-le-of-contains-flat-popabove).
 
 ## Generating function of king permutations avoiding $P_{j+1}$
 
@@ -181,7 +181,7 @@ count ascents, descents, left-to-right maxima and right-to-left maxima.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.4.
 
-Formalized by `MetaMathlibExt.kingFlatPOPBelowGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf).
+Formalized by `MetaMathlibExt.kingFlatPOPBelowGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf).
 
 ## Generating function of king permutations avoiding $Q_{j+1}$
 
@@ -206,7 +206,7 @@ count ascents, descents, left-to-right minima and right-to-left minima.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.4.
 
-Formalized by `MetaMathlibExt.kingFlatPOPAboveGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf).
+Formalized by `MetaMathlibExt.kingFlatPOPAboveGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf).
 
 ## Constant term of $A_{P_{j+1}}$
 
@@ -221,7 +221,7 @@ $P_{j+1}$, and it has no ascents, descents, left-to-right maxima or right-to-lef
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.4 and proof of Theorem 3.
 
-Formalized by `MetaMathlibExt.constantCoeff_kingFlatPOPBelowGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#constant-coeff-king-flat-popbelow-gf).
+Formalized by `MetaMathlibExt.constantCoeff_kingFlatPOPBelowGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#constant-coeff-king-flat-popbelow-gf).
 
 ## Constant term of $\bar A_{Q_{j+1}}$
 
@@ -236,7 +236,7 @@ $Q_{j+1}$, and it has no ascents, descents, left-to-right minima or right-to-lef
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1.4 and proof of Theorem 3.
 
-Formalized by `MetaMathlibExt.constantCoeff_kingFlatPOPAboveGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#constant-coeff-king-flat-popabove-gf).
+Formalized by `MetaMathlibExt.constantCoeff_kingFlatPOPAboveGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#constant-coeff-king-flat-popabove-gf).
 
 ## Rational generating function for king permutations avoiding $P_1$
 
@@ -258,7 +258,7 @@ determines $A_{P_1} = A / B$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_zero_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-zero-eq).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_zero_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-zero-eq).
 
 ## Rational generating function for king permutations avoiding $P_2$
 
@@ -278,7 +278,7 @@ constant term $-1$, this determines $A_{P_2} = A / B$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_one_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-one-eq).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_one_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-one-eq).
 
 ## The generating functions for $P_4$ and $P_1$ differ by a change of variables
 
@@ -294,7 +294,7 @@ $A_{P_1}$ by exchanging $p$ with $q$ and $u$ with $v$ in every coefficient.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_three_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-three-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_three_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-three-eq-rename).
 
 ## The generating functions for $Q_1$ and $P_1$ differ by a change of variables
 
@@ -312,7 +312,7 @@ from $A_{P_1}$ by exchanging $p$ with $q$ in every coefficient and writing $s$, 
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_zero_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-zero-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_zero_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-zero-eq-rename).
 
 ## The king generating function avoiding $Q_4$
 
@@ -330,7 +330,7 @@ last two variables.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_three_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-three-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_three_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-three-eq-rename).
 
 ## The generating functions for $P_3$ and $P_2$ differ by a change of variables
 
@@ -346,7 +346,7 @@ $A_{P_2}$ by exchanging $p$ with $q$ and $u$ with $v$ in every coefficient.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_two_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-two-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPBelowGF_two_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popbelow-gf-two-eq-rename).
 
 ## The king generating function avoiding $Q_2$
 
@@ -364,7 +364,7 @@ and $q$.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_one_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-one-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_one_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-one-eq-rename).
 
 ## The king generating function avoiding $Q_3$
 
@@ -382,7 +382,7 @@ last two variables.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_two_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-two-eq-rename).
+Stated but not proved: `MetaMathlibExt.kingFlatPOPAboveGF_two_eq_rename` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KingPermutationsWanted.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html#king-flat-popabove-gf-two-eq-rename).
 
 ## Depends on
 
@@ -391,4 +391,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: King permutations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/king-permutations)

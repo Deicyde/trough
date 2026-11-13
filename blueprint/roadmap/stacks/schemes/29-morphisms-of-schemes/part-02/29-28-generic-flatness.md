@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.28 Generic flatness
 
-Section 29.28 of the Stacks Project, [Tag 0529](https://stacks.math.columbia.edu/tag/0529). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.28 of the Stacks Project, [Tag 0529](https://stacks.math.columbia.edu/tag/0529). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 052A, a proposition
 
 [Tag 052A](https://stacks.math.columbia.edu/tag/052A) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dense_open_flat_finitePresentation_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatnessIntegralBase.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatnessIntegralBase.lean#L52). The attribute's comment: “Deduced from the reduced-base Proposition 052B, which the Stacks Project notes supersedes this one, using that an integral scheme is reduced (01ON).”. References: EGA IV (8.9.4), “more general”; EGA IV (6.9.1), “more general”.
+**`AlgebraicGeometry.exists_dense_open_flat_finitePresentation_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatnessIntegralBase.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatnessIntegralBase.lean#L52). The attribute's comment: “Deduced from the reduced-base Proposition 052B, which the Stacks Project notes supersedes this one, using that an integral scheme is reduced (01ON).”. References: EGA IV (8.9.4), “more general”; EGA IV (6.9.1), “more general”.
 
 > **Stacks 052A.** For a finite type morphism `f : X ⟶ S` to an integral scheme and a finite
 > type quasi-coherent module `F` on `X`, there is a dense open `U ⊆ S` such that `X_U → U` is flat
@@ -41,7 +41,7 @@ public theorem exists_dense_open_flat_finitePresentation_of_isIntegral
 
 [Tag 052B](https://stacks.math.columbia.edu/tag/052B) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dense_open_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatness.lean, line 1269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatness.lean#L1269). References: EGA IV (8.9.4), “more general”.
+**`AlgebraicGeometry.exists_dense_open_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatness.lean, line 1267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FlatMorphisms/GenericFlatness.lean#L1267). References: EGA IV (8.9.4), “more general”.
 
 > **Stacks Project, Tag 052B.** A finite type morphism and a finite type
 > quasi-coherent module become flat and finitely presented over a common dense
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.28, Tag 0529](https://stacks.math.columbia.edu/tag/0529)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

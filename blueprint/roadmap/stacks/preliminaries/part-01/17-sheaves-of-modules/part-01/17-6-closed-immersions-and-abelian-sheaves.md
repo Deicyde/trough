@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.6 Closed immersions and abelian sheaves
 
-Section 17.6 of the Stacks Project, [Tag 01AW](https://stacks.math.columbia.edu/tag/01AW). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.6 of the Stacks Project, [Tag 01AW](https://stacks.math.columbia.edu/tag/01AW). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01AX, a lemma
 
 [Tag 01AX](https://stacks.math.columbia.edu/tag/01AX) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.exactFunctor_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L145). The attribute's comment: “exactness”.
+**`Stacks.ClosedImmersion.exactFunctor_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L148). The attribute's comment: “exactness”.
 
 > **Stacks 01AX, exactness.** Pushforward of sheaves of abelian groups along a closed
 > embedding `i : Z ⟶ X` is an exact functor `Ab(Z) ⥤ Ab(X)`.
@@ -29,7 +29,7 @@ theorem exactFunctor_closedInclusionPushforward (hi : IsClosedEmbedding i.hom) :
       (closedInclusionPushforward Z X i)
 ```
 
-**`Stacks.ClosedImmersion.preservesFiniteLimits_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L163). The attribute's comment: “exactness: left exactness”.
+**`Stacks.ClosedImmersion.preservesFiniteLimits_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L166). The attribute's comment: “exactness: left exactness”.
 
 > **Stacks 01AX, exactness.** Pushforward along a closed embedding preserves finite
 > limits.
@@ -39,7 +39,7 @@ theorem preservesFiniteLimits_closedInclusionPushforward (hi : IsClosedEmbedding
     PreservesFiniteLimits (closedInclusionPushforward Z X i)
 ```
 
-**`Stacks.ClosedImmersion.preservesFiniteColimits_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L170). The attribute's comment: “exactness: right exactness”.
+**`Stacks.ClosedImmersion.preservesFiniteColimits_closedInclusionPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L173). The attribute's comment: “exactness: right exactness”.
 
 > **Stacks 01AX, exactness.** Pushforward along a closed embedding preserves finite
 > colimits.
@@ -49,7 +49,7 @@ theorem preservesFiniteColimits_closedInclusionPushforward (hi : IsClosedEmbeddi
     PreservesFiniteColimits (closedInclusionPushforward Z X i)
 ```
 
-**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_forall_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L210). The attribute's comment: “essential image”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
+**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_forall_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L213). The attribute's comment: “essential image”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
 
 > **Stacks 01AX, essential image.** A sheaf `G` of abelian groups on `X` is in the essential
 > image of pushforward along the closed embedding `i : Z ⟶ X` if and only if the stalk of `G`
@@ -70,7 +70,7 @@ theorem essImage_closedInclusionPushforward_iff_forall_stalk_isZero
       ∀ x : X, x ∉ Set.range i.hom → IsZero (G.presheaf.stalk x)
 ```
 
-**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L248). The attribute's comment: “essential image, in terms of the support”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
+**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L251). The attribute's comment: “essential image, in terms of the support”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
 
 > **Stacks 01AX, essential image.** The essential image of pushforward along a closed
 > embedding `i : Z ⟶ X` consists exactly of the sheaves of abelian groups whose support is
@@ -89,15 +89,15 @@ theorem essImage_closedInclusionPushforward_iff_support_subset
 
 Declarations registered for the tag:
 
-- [`closedInclusion_pushforward_faithful`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L261) (StacksFrontier): “fully faithful: faithfulness”.
-- [`closedInclusion_pushforward_full`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L71), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L262) (StacksFrontier): “fully faithful: fullness”.
-- [`ClosedImmersionSheaves.sheaf_pullback_pushforward_counit_isIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L202), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L263) (StacksFrontier): “`i^{-1}` is a left inverse to `i_*`: the counit of `i^{-1} ⊣ i_*` is an isomorphism”.
+- [`closedInclusion_pushforward_faithful`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L67), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L283) (StacksFrontier): “fully faithful: faithfulness”.
+- [`closedInclusion_pushforward_full`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L75), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L284) (StacksFrontier): “fully faithful: fullness”.
+- [`ClosedImmersionSheaves.sheaf_pullback_pushforward_counit_isIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L202), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L285) (StacksFrontier): “`i^{-1}` is a left inverse to `i_*`: the counit of `i^{-1} ⊣ i_*` is an isomorphism”.
 
 ## Tag 01AY, a remark
 
 [Tag 01AY](https://stacks.math.columbia.edu/tag/01AY) in the Stacks Project.
 
-**`ClosedImmersionSheaves.supportedSectionsSheaf_mem_closedInclusionPushforward_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L105). The attribute's comment: “realization on Z”.
+**`ClosedImmersionSheaves.supportedSectionsSheaf_mem_closedInclusionPushforward_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L105). The attribute's comment: “realization on Z”.
 
 > **Stacks 01AY.** For a closed subset `Z`, the sheaf of sections supported on `Z` is, up
 > to isomorphism, pushed forward from an abelian sheaf on `Z`.
@@ -109,7 +109,7 @@ theorem supportedSectionsSheaf_mem_closedInclusionPushforward_essImage
       (supportedSectionsSheaf Z F)
 ```
 
-**`ClosedImmersionSheaves.supportedSectionsSheaf_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L184). The attribute's comment: “largest abelian subsheaf supported in Z”.
+**`ClosedImmersionSheaves.supportedSectionsSheaf_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L184). The attribute's comment: “largest abelian subsheaf supported in Z”.
 
 > **Stacks 01AY.** The sheaf of sections supported on `Z` is the largest abelian subsheaf
 > of `F` whose support is contained in `Z`: every abelian subsheaf of `F` supported in `Z`
@@ -122,7 +122,7 @@ theorem supportedSectionsSheaf_maximal {X : TopCat.{u}} (Z : Set X)
     ∃! g : A ⟶ supportedSectionsSheaf Z F, g ≫ supportedSectionsSheafι Z F = f
 ```
 
-**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L287). The attribute's comment: “realization on Z”.
+**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L287). The attribute's comment: “realization on Z”.
 
 > The supported-sections functor, regarded as taking values in abelian sheaves on the
 > closed subspace `Z`.
@@ -133,7 +133,7 @@ noncomputable def supportedSectionsOnClosedFunctor {X : TopCat.{u}}
     X.Sheaf AddCommGrpCat.{u} ⥤ (TopCat.of Z).Sheaf AddCommGrpCat.{u}
 ```
 
-**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor_comp_pushforward_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L301). The attribute's comment: “realization on Z”.
+**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor_comp_pushforward_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L301). The attribute's comment: “realization on Z”.
 
 > Pushforward of the realization on the closed subspace is naturally isomorphic to the
 > sheaf of supported sections.
@@ -146,7 +146,7 @@ noncomputable def supportedSectionsOnClosedFunctor_comp_pushforward_iso
       supportedSectionsFunctor Z
 ```
 
-**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor_leftExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L318). The attribute's comment: “left exact functor Ab(X) → Ab(Z)”. References: SGA 4 V (6.3), “special case”.
+**`ClosedImmersionSheaves.supportedSectionsOnClosedFunctor_leftExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L318). The attribute's comment: “left exact functor Ab(X) → Ab(Z)”. References: SGA 4 V (6.3), “special case”.
 
 > **Stacks 01AY.** Taking sections supported on a closed subset, viewed as an abelian sheaf
 > on that subset, is left exact.
@@ -159,7 +159,7 @@ theorem supportedSectionsOnClosedFunctor_leftExact {X : TopCat.{u}}
       (supportedSectionsOnClosedFunctor Z hZ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.supportedSectionsSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Support.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Support.lean#L196). The attribute's comment: “supported\_sections\_subsheaf”. References: SGA 2 XIV (1.0), “sheaf Γ\_Y(F)”.
+**`AlgebraicGeometry.SheafOfModules.supportedSectionsSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Support.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Support.lean#L196). The attribute's comment: “supported\_sections\_subsheaf”. References: SGA 2 XIV (1.0), “sheaf Γ\_Y(F)”.
 
 > The abelian subsheaf of `F` consisting of the local sections supported on
 > `Z`. It is bundled together with its canonical inclusion into `F`.
@@ -173,7 +173,7 @@ public noncomputable def supportedSectionsSubsheaf (Z : Set X)
 
 [Tag 01AZ](https://stacks.math.columbia.edu/tag/01AZ) in the Stacks Project.
 
-**`ClosedImmersionSheaves.closedInclusionPushforward_supportedSectionsOnClosedFunctor_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L345). The attribute's comment: “adjunction”.
+**`ClosedImmersionSheaves.closedInclusionPushforward_supportedSectionsOnClosedFunctor_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L345). The attribute's comment: “adjunction”.
 
 > **Stacks 01AZ, adjunction.** Pushforward from a closed subset is left adjoint to the
 > functor of sections supported on that subset.
@@ -185,7 +185,7 @@ noncomputable def closedInclusionPushforward_supportedSectionsOnClosedFunctor_ad
       supportedSectionsOnClosedFunctor Z hZ
 ```
 
-**`ClosedImmersionSheaves.closedInclusionPushforward_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L412). The attribute's comment: “colimits”.
+**`ClosedImmersionSheaves.closedInclusionPushforward_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SupportedSectionsOnClosed.lean#L412). The attribute's comment: “colimits”.
 
 > **Stacks 01AZ, colimits.** Pushforward of abelian sheaves along a closed inclusion
 > preserves arbitrary colimits.
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.6, Tag 01AW](https://stacks.math.columbia.edu/tag/01AW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

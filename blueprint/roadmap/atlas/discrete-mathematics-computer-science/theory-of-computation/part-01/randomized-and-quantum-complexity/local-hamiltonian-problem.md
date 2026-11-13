@@ -7,7 +7,7 @@ statement: formalized
 
 # Local Hamiltonian problem
 
-11 results, 10 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html).
+11 results, 10 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html).
 
 ## Initial state of a QMA verifier
 
@@ -20,7 +20,7 @@ $s < 2^{n+m}$ and $s \bmod 2^n = \sum_{k < n} x_k 2^k$, and $0$ otherwise. So $x
 $n$ low-order bits of the index, the witness the next $m$ bits and the ancillas the $a$
 high-order bits.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.initState`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#init-state).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.initState`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#init-state).
 
 ## QMA for promise problems
 
@@ -36,7 +36,7 @@ $m(|x|)$ qubits with squared norm $1$ makes this acceptance probability at most 
 
 No condition is imposed on bitstrings outside $\Pi_{\mathrm{yes}} \cup \Pi_{\mathrm{no}}$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.QMAPromise`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#qmapromise).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.QMAPromise`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#qmapromise).
 
 ## Polynomial-time reduction between promise problems
 
@@ -45,7 +45,7 @@ given by sets $Y_1$ and $N_1$ of bitstrings, reduces to another such promise pro
 when there is a polynomial-time computable map $f$ from bitstrings to bitstrings with
 $f(x) \in Y_2$ for every $x \in Y_1$ and $f(x) \in N_2$ for every $x \in N_1$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.PromiseReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#promise-reduces).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.PromiseReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#promise-reduces).
 
 ## Encoded 2-local Hamiltonian term
 
@@ -58,7 +58,7 @@ The encoding itself does not require $e$ to have $16$ entries or the matrix to b
 qubit bounds, the number of entries and positive semidefiniteness (hence Hermiticity) are part of
 the validity of a term.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalTerm`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-term).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalTerm`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-term).
 
 ## Embedding of a 2-local term into $n$ qubits
 
@@ -72,7 +72,7 @@ $s_k = \lfloor s / 2^k \rfloor \bmod 2$ is bit $k$ of $s$.
 When $i \ne j$ and $i, j < n$, this is $M$ acting on qubits $i$ and $j$, tensored with the
 identity on the other qubits.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.embedTerm`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#embed-term).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.embedTerm`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#embed-term).
 
 ## Hamiltonian of a list of 2-local terms
 
@@ -81,14 +81,14 @@ $h_1, \dots, h_m$ of 2-local terms, the Hamiltonian is the $2^n \times 2^n$ comp
 $\tilde h_1 + \dots + \tilde h_m$, where $\tilde h_l$ is the embedding of $h_l$ into $n$ qubits;
 for the empty list it is the zero matrix.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.hamiltonian`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#hamiltonian).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.hamiltonian`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#hamiltonian).
 
 ## Ground energy of a Hermitian matrix
 
 For a natural number $n$, the ground energy of a
 Hermitian $2^n \times 2^n$ complex matrix $H$ is the smallest eigenvalue of $H$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.groundEnergy`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#ground-energy).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.groundEnergy`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#ground-energy).
 
 ## Valid 2-local Hamiltonian term
 
@@ -100,7 +100,7 @@ $\sum_{p, q} |M_{pq}|^2 \le 1$, that is, $M$ has Frobenius norm at most $1$.
 
 In particular $M$ is Hermitian and has operator norm at most $1$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.localTermValid`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-term-valid).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.localTermValid`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-term-valid).
 
 ## Yes-instances of the 2-local Hamiltonian problem
 
@@ -111,7 +111,7 @@ whose values we also write $a$ and $b$, such that every $h_l$ is valid on $n$ qu
 $b - a \ge 1/(m + 1)$, and the Hamiltonian $H$ of $h_1, \dots, h_m$ on $n$ qubits is Hermitian
 and has ground energy at most $a$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamYes`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-ham-yes).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamYes`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-ham-yes).
 
 ## No-instances of the 2-local Hamiltonian problem
 
@@ -122,7 +122,7 @@ whose values we also write $a$ and $b$, such that every $h_l$ is valid on $n$ qu
 $b - a \ge 1/(m + 1)$, and the Hamiltonian $H$ of $h_1, \dots, h_m$ on $n$ qubits is Hermitian
 and has ground energy at least $b$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamNo`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-ham-no).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.LocalHamNo`, a definition declared in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-ham-no).
 
 ## The 2-local Hamiltonian problem is QMA-complete
 
@@ -140,7 +140,7 @@ no-instance when it is Hermitian with ground energy at least $b$.
 
 - A. Y. Kitaev, "Quantum NP", talk at AQIP 1999; A. Y. Kitaev, A. H. Shen, and M. N. Vyalyi, Classical and Quantum Computation, American Mathematical Society, 2002, Section 14.4; J. Kempe, A. Y. Kitaev, and O. Regev, "The complexity of the local Hamiltonian problem", SIAM Journal on Computing 35 (2006), 1070-1097 (the 2-local reduction); A. D. Bookatz, "QMA-complete problems", arXiv:1212.6312 (2012), Section 2 (survey of the QMA-completeness of the local Hamiltonian problem); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Chapter 10, for the QMA-completeness of 2-local Hamiltonian.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.local_hamiltonian_qma_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-hamiltonian-qma-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.LocalHamiltonianQMA.local_hamiltonian_qma_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/LocalHamiltonianQMAWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html#local-hamiltonian-qma-complete).
 
 ## Depends on
 
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Local Hamiltonian problem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/local-hamiltonian-problem)

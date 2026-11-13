@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Algebra.Presentation.lichtenbaumSchlessingerComplex, Biderivation, Biderivation.IsCompatibleOnVars, Biderivation.existsUnique_mvPolynomial, Biderivation.existsUnique_mvPolynomial_of_op_smul_eq, Algebra.Presentation.cotangentToLichtenbaumSchlessinger, Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger, Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger_fac
+lean: Algebra.Presentation.lichtenbaumSchlessingerComplex, Biderivation, Biderivation.IsCompatibleOnVars, Biderivation.existsUnique_mvPolynomial, Biderivation.existsUnique_mvPolynomial_of_op_smul_eq, Algebra.Presentation.cotangentToLichtenbaumSchlessinger, Algebra.Presentation.isIso_descTruncGE_cotangentToLichtenbaumSchlessinger, Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger
 statement: formalized
 proof: formalized
 ---
 
 # 92.13 Comparison with Lichtenbaum-Schlessinger
 
-Section 92.13 of the Stacks Project, [Tag 09AM](https://stacks.math.columbia.edu/tag/09AM). 5 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.13 of the Stacks Project, [Tag 09AM](https://stacks.math.columbia.edu/tag/09AM). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09CD, an equation
 
 [Tag 09CD](https://stacks.math.columbia.edu/tag/09CD) in the Stacks Project.
 
-**`Algebra.Presentation.lichtenbaumSchlessingerComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessinger.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessinger.lean#L392).
+**`Algebra.Presentation.lichtenbaumSchlessingerComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessinger.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessinger.lean#L391).
 
 > The Lichtenbaum–Schlessinger complex associated to a polynomial presentation and chosen
 > generators of its defining ideal.
@@ -28,7 +28,7 @@ noncomputable def lichtenbaumSchlessingerComplex
 
 [Tag 09CE](https://stacks.math.columbia.edu/tag/09CE) in the Stacks Project.
 
-**`Biderivation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Biderivation.lean#L77). References: EGA 0 (20.1.2); EGA 0 (20.1.1).
+**`Biderivation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Biderivation.lean#L77). References: EGA 0 (20.1.2); EGA 0 (20.1.1).
 
 > An `A`-biderivation from an `A`-algebra `B` to a `(B, B)`-bimodule `M` is
 > an `A`-linear map satisfying the Leibniz rule for the left and right actions.
@@ -46,7 +46,7 @@ structure Biderivation (A : Type u) (B : Type v) (M : Type w)
 
 [Tag 09CF](https://stacks.math.columbia.edu/tag/09CF) in the Stacks Project.
 
-**`Biderivation.IsCompatibleOnVars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Biderivation.lean#L130). The attribute's comment: “the compatibility equations the values on the variables must satisfy”.
+**`Biderivation.IsCompatibleOnVars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Biderivation.lean#L130). The attribute's comment: “the compatibility equations the values on the variables must satisfy”.
 
 > **Stacks 09CF.** The equations that commutativity of the polynomial variables forces on the
 > values of a biderivation of `A[S]`: the Leibniz rule applied to the two readings of
@@ -63,7 +63,7 @@ def IsCompatibleOnVars (A : Type u) {S : Type v} {M : Type w} [CommSemiring A]
     (m : S → M) : Prop
 ```
 
-**`Biderivation.existsUnique_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Biderivation.lean#L358). The attribute's comment: “existence and uniqueness of the biderivation with prescribed values”.
+**`Biderivation.existsUnique_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Biderivation.lean#L358). The attribute's comment: “existence and uniqueness of the biderivation with prescribed values”.
 
 > **Stacks 09CF.** Let `P = A[S]` be a polynomial ring over `A` and let `M` be a `(P, P)`
 > bimodule over `A`. Given `m s ∈ M` for `s ∈ S` satisfying the compatibility equations that
@@ -84,7 +84,7 @@ theorem existsUnique_mvPolynomial (m : S → M) (hcomm : IsCompatibleOnVars A m)
     ∃! D : Biderivation A (MvPolynomial S A) M, ∀ s, D (X s) = m s
 ```
 
-**`Biderivation.existsUnique_mvPolynomial_of_op_smul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Biderivation.lean#L391). The attribute's comment: “the unrestricted assertion of the source, for a bimodule whose two actions agree”.
+**`Biderivation.existsUnique_mvPolynomial_of_op_smul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Biderivation.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Biderivation.lean#L391). The attribute's comment: “the unrestricted assertion of the source, for a bimodule whose two actions agree”.
 
 > **Stacks 09CF**, in the case the source applies it: when the two actions of the polynomial
 > ring on `M` agree, the compatibility equations hold for every family of prescribed values, and
@@ -106,44 +106,54 @@ theorem existsUnique_mvPolynomial_of_op_smul_eq
 
 [Tag 09CG](https://stacks.math.columbia.edu/tag/09CG) in the Stacks Project.
 
-**`Algebra.Presentation.cotangentToLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L154). The attribute's comment: “the canonical map L\_\{B/A} → L in D(B), attached to a chain-level comparison carried as the explicit datum Algebra.Presentation.LichtenbaumSchlessingerComparison”.
+**`Algebra.Presentation.cotangentToLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L143). The attribute's comment: “the canonical map L\_\{B/A} → L in D(B), the class of the map of complexes dψ ⊗ 1, λ̄, q built from the choices ψ : P₀ → P and the biderivation λ of the source”.
 
-> **Stacks 09CG.** The canonical map `L_{B/A} → L` in `D(B)` attached to a chain-level
-> comparison: its image under the localization functor.
+> **Stacks 09CG.** The canonical map `L_{B/A} → L` in `D(B)`: the class of the map of
+> complexes `Algebra.Presentation.lsChainMap`, which is `dψ ⊗ 1`, `λ̄` and `q` in degrees `0`,
+> `-1` and `-2`.
 
 ```lean
-public def cotangentToLichtenbaumSchlessinger (c : LichtenbaumSchlessingerComparison P) :
+public def cotangentToLichtenbaumSchlessinger :
     DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B) ⟶
       DerivedCategory.Q.obj (lichtenbaumSchlessingerComplex P).complex
 ```
 
-**`Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L190). The attribute's comment: “the induced map τ\_\{≥ -2} L\_\{B/A} → L is an isomorphism in D(B)”.
+**`Algebra.Presentation.isIso_descTruncGE_cotangentToLichtenbaumSchlessinger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L161). The attribute's comment: “the canonical map L\_\{B/A} → L induces an isomorphism τ\_\{≥ -2} L\_\{B/A} → L in D(B)”.
+
+> **Stacks 09CG.** The canonical map `L_{B/A} → L` factors through the truncation
+> `τ_{≥ -2} L_{B/A}`, since `L` lies in `D^{≥ -2}(B)`, and the factorization is an isomorphism.
+
+```lean
+public theorem isIso_descTruncGE_cotangentToLichtenbaumSchlessinger :
+    IsIso (DerivedCategory.TStructure.t.descTruncGE
+      (cotangentToLichtenbaumSchlessinger P) (-2))
+```
+
+**`Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L168). The attribute's comment: “the induced map τ\_\{≥ -2} L\_\{B/A} → L is an isomorphism in D(B)”.
 
 > **Stacks 09CG.** The isomorphism `τ_{≥ -2} L_{B/A} ≅ L` induced by the canonical map.
 
 ```lean
-public def truncGECotangentIsoLichtenbaumSchlessinger
-    (c : LichtenbaumSchlessingerComparison P) :
+public def truncGECotangentIsoLichtenbaumSchlessinger :
     (DerivedCategory.TStructure.t.truncGE (-2)).obj
         (DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B)) ≅
       DerivedCategory.Q.obj (lichtenbaumSchlessingerComplex P).complex
 ```
 
-**`Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L202). The attribute's comment: “the isomorphism τ\_\{≥ -2} L\_\{B/A} → L is induced by the canonical map L\_\{B/A} → L”.
+**`Algebra.Presentation.truncGECotangentIsoLichtenbaumSchlessinger_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparison.lean#L179). The attribute's comment: “the isomorphism τ\_\{≥ -2} L\_\{B/A} → L is induced by the canonical map L\_\{B/A} → L”.
 
 > **Stacks 09CG.** The isomorphism `τ_{≥ -2} L_{B/A} ≅ L` is the one induced by the canonical
 > map `L_{B/A} → L`: composing it with the projection to the truncation returns that map.
 
 ```lean
-public theorem truncGECotangentIsoLichtenbaumSchlessinger_fac
-    (c : LichtenbaumSchlessingerComparison P) :
+public theorem truncGECotangentIsoLichtenbaumSchlessinger_fac :
     (DerivedCategory.TStructure.t.truncGEπ (-2)).app
         (DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B)) ≫
-      (truncGECotangentIsoLichtenbaumSchlessinger c).hom =
-        cotangentToLichtenbaumSchlessinger c
+      (truncGECotangentIsoLichtenbaumSchlessinger P).hom =
+        cotangentToLichtenbaumSchlessinger P
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerComparison.canonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L37). The attribute's comment: “the map of complexes L\_\{B/A} → L built from the choices ψ and λ of the source, with its isomorphisms on H^0 (Remark 08UP, Lemma 08RB), H^\{-1} (idem) and H^\{-2} (Remark 09D6)”.
+**`Algebra.Presentation.LichtenbaumSchlessingerComparison.canonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L40). The attribute's comment: “the map of complexes L\_\{B/A} → L built from the choices ψ and λ of the source, with its isomorphisms on H^0 (Remark 08UP, Lemma 08RB), H^\{-1} (idem) and H^\{-2} (Remark 09D6)”.
 
 > The chain-level comparison of a presentation constructed in the source: the map of complexes
 > `Algebra.Presentation.lsChainMap`, which is `dψ ⊗ 1`, `λ̄` and `q` in degrees `0`, `-1` and `-2`,
@@ -153,54 +163,7 @@ public theorem truncGECotangentIsoLichtenbaumSchlessinger_fac
 public def LichtenbaumSchlessingerComparison.canonical : LichtenbaumSchlessingerComparison P
 ```
 
-**`Algebra.Presentation.canonicalCotangentToLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L53). The attribute's comment: “the canonical map L\_\{B/A} → L in D(B), the class of the map of complexes dψ ⊗ 1, λ̄, q built from the choices ψ : P₀ → P and the biderivation λ of the source”.
-
-> The canonical map `L_{B/A} → L` in `D(B)`: the image under the localization functor of the
-> map of complexes `Algebra.Presentation.lsChainMap`. It does not depend on the choices `ψ` and
-> `λ`: `Algebra.Presentation.Q_map_eq_canonicalCotangentToLichtenbaumSchlessinger`.
-
-```lean
-public def canonicalCotangentToLichtenbaumSchlessinger :
-    DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B) ⟶
-      DerivedCategory.Q.obj (lichtenbaumSchlessingerComplex P).complex
-```
-
-**`Algebra.Presentation.isIso_descTruncGE_canonicalCotangentToLichtenbaumSchlessinger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L71). The attribute's comment: “the canonical map L\_\{B/A} → L induces an isomorphism τ\_\{≥ -2} L\_\{B/A} → L in D(B)”.
-
-> The canonical map `L_{B/A} → L` factors through the truncation `τ_{≥ -2} L_{B/A}`, and the
-> factorization is an isomorphism.
-
-```lean
-public theorem isIso_descTruncGE_canonicalCotangentToLichtenbaumSchlessinger :
-    IsIso (DerivedCategory.TStructure.t.descTruncGE
-      (canonicalCotangentToLichtenbaumSchlessinger P) (-2))
-```
-
-**`Algebra.Presentation.canonicalTruncGECotangentIsoLichtenbaumSchlessinger`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L79). The attribute's comment: “the induced map τ\_\{≥ -2} L\_\{B/A} → L is an isomorphism in D(B)”.
-
-> The isomorphism `τ_{≥ -2} L_{B/A} ≅ L` induced by the canonical map.
-
-```lean
-public def canonicalTruncGECotangentIsoLichtenbaumSchlessinger :
-    (DerivedCategory.TStructure.t.truncGE (-2)).obj
-        (DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B)) ≅
-      DerivedCategory.Q.obj (lichtenbaumSchlessingerComplex P).complex
-```
-
-**`Algebra.Presentation.canonicalTruncGECotangentIsoLichtenbaumSchlessinger_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonCanonical/Canonical.lean#L90). The attribute's comment: “the isomorphism τ\_\{≥ -2} L\_\{B/A} → L is induced by the canonical map L\_\{B/A} → L”.
-
-> The isomorphism `τ_{≥ -2} L_{B/A} ≅ L` is the one induced by the canonical map
-> `L_{B/A} → L`: composing it with the projection to the truncation returns that map.
-
-```lean
-public theorem canonicalTruncGECotangentIsoLichtenbaumSchlessinger_fac :
-    (DerivedCategory.TStructure.t.truncGEπ (-2)).app
-        (DerivedCategory.Q.obj (cotangentComplexULift.{u, v, w} A B)) ≫
-      (canonicalTruncGECotangentIsoLichtenbaumSchlessinger P).hom =
-        canonicalCotangentToLichtenbaumSchlessinger P
-```
-
-**`Algebra.Presentation.Q_map_eq_canonicalCotangentToLichtenbaumSchlessinger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonIndependence.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonIndependence.lean#L630). The attribute's comment: “the formulas dψ ⊗ 1, λ̄, q specify the comparison for every permissible choice of ψ and λ, and changing these choices gives the same morphism in D(B)”.
+**`Algebra.Presentation.Q_map_eq_canonicalCotangentToLichtenbaumSchlessinger`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonIndependence.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonIndependence.lean#L630). The attribute's comment: “the formulas dψ ⊗ 1, λ̄, q specify the comparison for every permissible choice of ψ and λ, and changing these choices gives the same morphism in D(B)”.
 
 > **Independence of the choices.** Every map of complexes `L_{B/A} → L` given by the formulas
 > `dψ ⊗ 1`, `λ̄`, `q` of the source, for any permissible choice of `ψ : P₀ → P` and of the
@@ -218,7 +181,7 @@ theorem Q_map_eq_canonicalCotangentToLichtenbaumSchlessinger (c : LichtenbaumSch
 
 [Tag 09D7](https://stacks.math.columbia.edu/tag/09D7) in the Stacks Project.
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.canonicalCotangentToLichtenbaumSchlessinger_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonNatural.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonNatural.lean#L411). The attribute's comment: “the second commutative diagram: L\_\{B/A} → L, L → L' equals L\_\{B/A} → L\_\{B'/A'}, L\_\{B'/A'} → L' in D(B)”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.canonicalCotangentToLichtenbaumSchlessinger_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonNatural.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerComparisonNatural.lean#L411). The attribute's comment: “the second commutative diagram: L\_\{B/A} → L, L → L' equals L\_\{B/A} → L\_\{B'/A'}, L\_\{B'/A'} → L' in D(B)”.
 
 > For a commutative square of rings `A → A'`, `B → B'` and compatible presentations `P → P'`
 > with `f'_t` the image of `f_t`, the canonical maps `L_{B/A} → L` and `L_{B'/A'} → L'` commute in
@@ -238,7 +201,7 @@ theorem canonicalCotangentToLichtenbaumSchlessinger_naturality :
         DerivedCategory.Q.map f.complexMap
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.relationQuotientMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L206). The attribute's comment: “the vertical arrow Rel/TrivRel → Rel'/TrivRel' of the displayed diagram”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.relationQuotientMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L207). The attribute's comment: “the vertical arrow Rel/TrivRel → Rel'/TrivRel' of the displayed diagram”.
 
 > The map `Rel/TrivRel → Rel'/TrivRel'` induced by `Rel → Rel'`, in degree `-2`.
 
@@ -246,7 +209,7 @@ theorem canonicalCotangentToLichtenbaumSchlessinger_naturality :
 def relationQuotientMap : relationQuotient P →ₛₗ[f.ringHom] relationQuotient P'
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.freeTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L246). The attribute's comment: “the vertical arrow F ⊗\_P B → F' ⊗\_\{P'} B' of the displayed diagram”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.freeTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L247). The attribute's comment: “the vertical arrow F ⊗\_P B → F' ⊗\_\{P'} B' of the displayed diagram”.
 
 > **Stacks 09D7.** The arrow `F ⊗_P B → F' ⊗_{P'} B'` of the diagram, in degree `-1`.
 
@@ -255,7 +218,7 @@ def freeTensorMap :
     (B ⊗[P.Ring] (T →₀ P.Ring)) →ₗ[B] B' ⊗[P'.Ring] ((T ⊕ S) →₀ P'.Ring)
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.differentialTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L270). The attribute's comment: “the vertical arrow Ω\_\{P/A} ⊗\_P B → Ω\_\{P'/A'} ⊗\_\{P'} B' of the displayed diagram”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.differentialTensorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L271). The attribute's comment: “the vertical arrow Ω\_\{P/A} ⊗\_P B → Ω\_\{P'/A'} ⊗\_\{P'} B' of the displayed diagram”.
 
 > **Stacks 09D7.** The arrow `Ω_{P/A} ⊗_P B → Ω_{P'/A'} ⊗_{P'} B'` of the diagram, in degree
 > `0`.
@@ -265,7 +228,7 @@ def differentialTensorMap :
     (B ⊗[P.Ring] Ω[P.Ring⁄A]) →ₗ[B] B' ⊗[P'.Ring] Ω[P'.Ring⁄A']
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.freeTensorMap_relationBoundaryR`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L308). The attribute's comment: “commutativity of the left-hand square of the displayed diagram”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.freeTensorMap_relationBoundaryR`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L309). The attribute's comment: “commutativity of the left-hand square of the displayed diagram”.
 
 > **Stacks 09D7.** The left-hand square of the displayed diagram commutes: the arrow
 > `Rel/TrivRel → F ⊗_P B` followed by the vertical arrow in degree `-1` agrees with the vertical
@@ -277,7 +240,7 @@ lemma freeTensorMap_relationBoundaryR (q : relationQuotient P) :
       relationBoundaryR P' (f.relationQuotientMap q)
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.differentialTensorMap_relationDifferentialB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L331). The attribute's comment: “commutativity of the right-hand square of the displayed diagram”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.differentialTensorMap_relationDifferentialB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctoriality.lean#L332). The attribute's comment: “commutativity of the right-hand square of the displayed diagram”.
 
 > **Stacks 09D7.** The right-hand square of the displayed diagram commutes: the arrow
 > `F ⊗_P B → Ω_{P/A} ⊗_P B` followed by the vertical arrow in degree `0` agrees with the vertical
@@ -289,7 +252,7 @@ lemma differentialTensorMap_relationDifferentialB (z : B ⊗[P.Ring] (T →₀ P
       relationDifferentialB P' (f.freeTensorMap z)
 ```
 
-**`Algebra.Presentation.LichtenbaumSchlessingerHom.complexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctorialityComplex.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctorialityComplex.lean#L272). The attribute's comment: “the first commutative diagram: the canonical map of Lichtenbaum–Schlessinger complexes L → L' with vertical arrows Rel/TrivRel → Rel'/TrivRel', F ⊗\_P B → F' ⊗\_\{P'} B', Ω\_\{P/A} ⊗\_P B → Ω\_\{P'/A'} ⊗\_\{P'} B'”.
+**`Algebra.Presentation.LichtenbaumSchlessingerHom.complexMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctorialityComplex.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/LichtenbaumSchlessingerFunctorialityComplex.lean#L271). The attribute's comment: “the first commutative diagram: the canonical map of Lichtenbaum–Schlessinger complexes L → L' with vertical arrows Rel/TrivRel → Rel'/TrivRel', F ⊗\_P B → F' ⊗\_\{P'} B', Ω\_\{P/A} ⊗\_P B → Ω\_\{P'/A'} ⊗\_\{P'} B'”.
 
 > The canonical map of Lichtenbaum–Schlessinger complexes `L → L'` attached to compatible
 > presentations of a commutative square of rings: the arrows `Rel/TrivRel → Rel'/TrivRel'`,
@@ -309,4 +272,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.13, Tag 09AM](https://stacks.math.columbia.edu/tag/09AM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

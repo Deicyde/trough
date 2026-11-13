@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.47 Universal homeomorphisms of affine schemes
 
-Section 29.47 of the Stacks Project, [Tag 0CN6](https://stacks.math.columbia.edu/tag/0CN6). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.47 of the Stacks Project, [Tag 0CN6](https://stacks.math.columbia.edu/tag/0CN6). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CN7, a lemma
 
 [Tag 0CN7](https://stacks.math.columbia.edu/tag/0CN7) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyClosed_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L83). The attribute's comment: “universally\_closed”.
+**`AlgebraicGeometry.universallyClosed_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L83). The attribute's comment: “universally\_closed”.
 
 > **Stacks 0CN7.** If the morphism on spectra associated to an algebra is universally closed,
 > the same holds for the morphism associated to any subalgebra.
@@ -27,7 +27,7 @@ lemma universallyClosed_specMap_subalgebra
     UniversallyClosed (Spec.map (CommRingCat.ofHom (algebraMap A B')))
 ```
 
-**`AlgebraicGeometry.universallyInjective_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L99). The attribute's comment: “universally\_closed\_and\_injective”.
+**`AlgebraicGeometry.universallyInjective_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L99). The attribute's comment: “universally\_closed\_and\_injective”.
 
 > **Stacks 0CN7.** Universal injectivity of the map on spectra passes from an algebra to any
 > of its subalgebras, provided the original map is universally closed and universally
@@ -42,7 +42,7 @@ lemma universallyInjective_specMap_subalgebra
     UniversallyInjective (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A B')).op)
 ```
 
-**`AlgebraicGeometry.universalHomeomorphism_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L155). The attribute's comment: “universal\_homeomorphism”.
+**`AlgebraicGeometry.universalHomeomorphism_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L155). The attribute's comment: “universal\_homeomorphism”.
 
 > **Stacks 0CN7.** If the map on spectra of an algebra is a universal homeomorphism, then so
 > is the map on spectra of any intermediate subalgebra.
@@ -57,7 +57,7 @@ lemma universalHomeomorphism_specMap_subalgebra
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A B')).op)
 ```
 
-**`AlgebraicGeometry.isIso_residueFieldMap_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L218). The attribute's comment: “universal\_homeomorphism\_residue\_fields”.
+**`AlgebraicGeometry.isIso_residueFieldMap_specMap_subalgebra`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Subalgebra.lean#L218). The attribute's comment: “universal\_homeomorphism\_residue\_fields”.
 
 > **Stacks 0CN7.** If a universal homeomorphism between affine spectra induces isomorphisms
 > on residue fields, then so does the map associated to any intermediate subalgebra.
@@ -78,7 +78,7 @@ lemma isIso_residueFieldMap_specMap_subalgebra
 
 [Tag 0CN8](https://stacks.math.columbia.edu/tag/0CN8) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyClosed_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L127). The attribute's comment: “universally\_closed”.
+**`AlgebraicGeometry.universallyClosed_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L127). The attribute's comment: “universally\_closed”.
 
 > **Stacks 0CN8.** A filtered colimit of commutative `A`-algebras whose spectrum morphisms to
 > `Spec A` are universally closed again has universally closed spectrum morphism to `Spec A`.
@@ -93,7 +93,7 @@ lemma universallyClosed_specMap_of_isColimit
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A c.pt)).op)
 ```
 
-**`AlgebraicGeometry.universallyInjective_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L159). The attribute's comment: “closed\_injective”.
+**`AlgebraicGeometry.universallyInjective_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L159). The attribute's comment: “closed\_injective”.
 
 > **Stacks 0CN8.** A filtered colimit of commutative `A`-algebras whose spectrum morphisms to
 > `Spec A` are universally injective again has universally injective spectrum morphism to
@@ -109,7 +109,7 @@ lemma universallyInjective_specMap_of_isColimit
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A c.pt)).op)
 ```
 
-**`AlgebraicGeometry.universalHomeomorphism_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L255). The attribute's comment: “universal\_homeomorphism”.
+**`AlgebraicGeometry.universalHomeomorphism_specMap_of_isColimit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L256). The attribute's comment: “universal\_homeomorphism”.
 
 > **Stacks 0CN8.** A filtered colimit of commutative `A`-algebras whose spectrum morphisms to
 > `Spec A` are universal homeomorphisms again has universal-homeomorphic spectrum morphism to
@@ -125,7 +125,7 @@ lemma universalHomeomorphism_specMap_of_isColimit
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A c.pt)).op)
 ```
 
-**`AlgebraicGeometry.isIso_residueFieldMap_specMap_of_colimitPresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L357). The attribute's comment: “homeomorphism\_equal\_residue\_fields”.
+**`AlgebraicGeometry.isIso_residueFieldMap_specMap_of_colimitPresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FilteredColimit.lean#L358). The attribute's comment: “homeomorphism\_equal\_residue\_fields”.
 
 > **Stacks 0CN8.** A filtered colimit of affine maps which induce isomorphisms on residue
 > fields still induces an isomorphism on the residue field at every point.
@@ -145,7 +145,7 @@ lemma isIso_residueFieldMap_specMap_of_colimitPresentation
 
 [Tag 0CN9](https://stacks.math.columbia.edu/tag/0CN9) in the Stacks Project.
 
-**`IsLocalization.exists_numerator_not_mem_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Denominators.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Denominators.lean#L71).
+**`IsLocalization.exists_numerator_not_mem_of_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Denominators.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Denominators.lean#L71).
 
 > **Stacks 0CN9.** Special-element conditions over a localization can be witnessed by a
 > numerator before localization.
@@ -171,7 +171,7 @@ theorem exists_numerator_not_mem_of_localization
 
 [Tag 0CNA](https://stacks.math.columbia.edu/tag/0CNA) in the Stacks Project.
 
-**`Subring.exists_not_mem_and_sq_mem_and_cube_mem_of_pow_mem_of_succ_pow_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Powers.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Powers.lean#L63).
+**`Subring.exists_not_mem_and_sq_mem_and_cube_mem_of_pow_mem_of_succ_pow_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Powers.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Powers.lean#L63).
 
 > **Stacks 0CNA.** If an element outside a subring has two consecutive powers,
 > with the first exponent at least two, in the subring, then some element outside the subring has
@@ -188,7 +188,7 @@ lemma exists_not_mem_and_sq_mem_and_cube_mem_of_pow_mem_of_succ_pow_mem
 
 [Tag 0CNB](https://stacks.math.columbia.edu/tag/0CNB) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_not_mem_and_sq_mem_and_cube_mem_of_universalHomeomorphism_of_residueFieldMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCube.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCube.lean#L767).
+**`AlgebraicGeometry.exists_not_mem_and_sq_mem_and_cube_mem_of_universalHomeomorphism_of_residueFieldMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCube.lean, line 767](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCube.lean#L767).
 
 > A proper subring extension which is a universal homeomorphism on spectra
 > and induces isomorphisms on residue fields contains an element outside the
@@ -209,7 +209,7 @@ theorem exists_not_mem_and_sq_mem_and_cube_mem_of_universalHomeomorphism_of_resi
 
 [Tag 0CNC](https://stacks.math.columbia.edu/tag/0CNC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_special_element_of_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SpecialElement.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SpecialElement.lean#L703).
+**`AlgebraicGeometry.exists_special_element_of_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SpecialElement.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SpecialElement.lean#L703).
 
 > **Stacks Project, Tag 0CNC.** A proper extension inducing a universal homeomorphism on
 > spectra contains either a square-and-cube special element or a prime-power special element.
@@ -229,7 +229,7 @@ theorem exists_special_element_of_universalHomeomorphism
 
 [Tag 0CND](https://stacks.math.columbia.edu/tag/0CND) in the Stacks Project.
 
-**`AlgebraicGeometry.universalHomeomorphism_and_residueFieldIso_iff_finite_adjoin_square_cube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/TowerResidue.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/TowerResidue.lean#L341).
+**`AlgebraicGeometry.universalHomeomorphism_and_residueFieldIso_iff_finite_adjoin_square_cube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/TowerResidue.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/TowerResidue.lean#L341).
 
 > An injective extension induces a universal homeomorphism with unchanged residue fields
 > if and only if each finite subset is contained in an algebra generated by a sequence whose
@@ -254,7 +254,7 @@ public theorem universalHomeomorphism_and_residueFieldIso_iff_finite_adjoin_squa
 
 [Tag 0CNE](https://stacks.math.columbia.edu/tag/0CNE) in the Stacks Project.
 
-**`AlgebraicGeometry.universalHomeomorphism_spec_iff_finite_adjoin_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Tower.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Tower.lean#L364).
+**`AlgebraicGeometry.universalHomeomorphism_spec_iff_finite_adjoin_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Tower.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/Tower.lean#L364).
 
 > An inclusion of rings induces a universal homeomorphism on spectra exactly when every finite
 > set is contained in a finite, successively elementary extension.
@@ -283,7 +283,7 @@ theorem universalHomeomorphism_spec_iff_finite_adjoin_tower
 
 [Tag 0CNF](https://stacks.math.columbia.edu/tag/0CNF) in the Stacks Project.
 
-**`AlgebraicGeometry.universalHomeomorphism_iff_locallyNilpotent_ker_and_pow_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/InvertPrime.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/InvertPrime.lean#L321).
+**`AlgebraicGeometry.universalHomeomorphism_iff_locallyNilpotent_ker_and_pow_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/InvertPrime.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/InvertPrime.lean#L321).
 
 > A ring map that is an isomorphism after inverting a prime induces a universal
 > homeomorphism on spectra precisely when its kernel is locally nilpotent and
@@ -308,7 +308,7 @@ theorem universalHomeomorphism_iff_locallyNilpotent_ker_and_pow_mem_range
 
 [Tag 0EUI](https://stacks.math.columbia.edu/tag/0EUI) in the Stacks Project.
 
-**`AlgebraicGeometry.universalHomeomorphism_spec_quotient_of_pPower_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/PrimePowerAlg.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/PrimePowerAlg.lean#L188). The attribute's comment: “p\_power\_multiple”.
+**`AlgebraicGeometry.universalHomeomorphism_spec_quotient_of_pPower_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/PrimePowerAlg.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/PrimePowerAlg.lean#L188). The attribute's comment: “p\_power\_multiple”.
 
 > If `p` is prime and `p ^ p * x = y ^ p`, adjoining a common prime-power root as in
 > Stacks Project, Tag 0EUI, induces a universal homeomorphism on spectra.
@@ -324,7 +324,7 @@ theorem universalHomeomorphism_spec_quotient_of_pPower_mul
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A B)).op)
 ```
 
-**`AlgebraicGeometry.squareCubeSpecMap_universalHomeomorphism`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean#L468). The attribute's comment: “square\_cube”.
+**`AlgebraicGeometry.squareCubeSpecMap_universalHomeomorphism`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean#L468). The attribute's comment: “square\_cube”.
 
 > The square-cube extension induces a universal homeomorphism on spectra.
 
@@ -334,7 +334,7 @@ public lemma squareCubeSpecMap_universalHomeomorphism
     UniversalHomeomorphism (squareCubeSpecMap A x y)
 ```
 
-**`AlgebraicGeometry.isIso_residueFieldMap_squareCubeSpecMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean#L482). The attribute's comment: “square\_cube”.
+**`AlgebraicGeometry.isIso_residueFieldMap_squareCubeSpecMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/SquareCubeAlg.lean#L482). The attribute's comment: “square\_cube”.
 
 > The square-cube extension induces an isomorphism on the residue field at every point.
 
@@ -349,7 +349,7 @@ public lemma isIso_residueFieldMap_squareCubeSpecMap
 
 [Tag 0EUJ](https://stacks.math.columbia.edu/tag/0EUJ) in the Stacks Project.
 
-**`AlgebraicGeometry.isFilteredColimit_finitePresentation_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean#L152). The attribute's comment: “universal\_homeomorphism\_filtered\_colimit”.
+**`AlgebraicGeometry.isFilteredColimit_finitePresentation_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean#L152). The attribute's comment: “universal\_homeomorphism\_filtered\_colimit”.
 
 > A ring map inducing a universal homeomorphism on spectra is a filtered colimit of finitely
 > presented ring maps which induce universal homeomorphisms on spectra.
@@ -366,7 +366,7 @@ public theorem isFilteredColimit_finitePresentation_universalHomeomorphism
       (Under.mk (CommRingCat.ofHom f))
 ```
 
-**`AlgebraicGeometry.ind_finitePresentation_residueFieldMap_isIso_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean#L263). The attribute's comment: “residue\_field\_isomorphism\_filtered\_colimit”.
+**`AlgebraicGeometry.ind_finitePresentation_residueFieldMap_isIso_universalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/UniversalHomeomorphismFilteredColimit.lean#L263). The attribute's comment: “residue\_field\_isomorphism\_filtered\_colimit”.
 
 > A ring map which is a universal homeomorphism on spectra and induces isomorphisms on
 > residue fields is a filtered colimit of finitely presented ring maps with both properties.
@@ -387,7 +387,7 @@ public theorem ind_finitePresentation_residueFieldMap_isIso_universalHomeomorphi
       (Under.mk (CommRingCat.ofHom f))
 ```
 
-**`AlgebraicGeometry.exists_universalHomeomorphism_specMap_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean#L481). The attribute's comment: “universal homeomorphism at a finite stage”.
+**`AlgebraicGeometry.exists_universalHomeomorphism_specMap_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean#L481). The attribute's comment: “universal homeomorphism at a finite stage”.
 
 > **Stacks 0EUJ.** Let a commutative `A`-algebra of finite type be presented as a filtered
 > colimit of `A`-algebras of finite presentation with surjective transition maps.  If its morphism
@@ -407,7 +407,7 @@ theorem exists_universalHomeomorphism_specMap_of_isColimit
         (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A (F.obj j))).op)
 ```
 
-**`AlgebraicGeometry.exists_universalHomeomorphism_and_isIso_residueFieldMap_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean#L525). The attribute's comment: “universal homeomorphism with equal residue fields at a finite stage”.
+**`AlgebraicGeometry.exists_universalHomeomorphism_and_isIso_residueFieldMap_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversalHomeomorphism/Affine/FiniteStage.lean#L525). The attribute's comment: “universal homeomorphism with equal residue fields at a finite stage”.
 
 > **Stacks 0EUJ.** Let a commutative `A`-algebra of finite type be presented as a filtered
 > colimit of `A`-algebras of finite presentation with surjective transition maps.  If its morphism
@@ -438,4 +438,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.47, Tag 0CN6](https://stacks.math.columbia.edu/tag/0CN6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

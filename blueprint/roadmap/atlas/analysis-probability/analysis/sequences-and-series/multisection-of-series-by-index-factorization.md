@@ -7,7 +7,7 @@ statement: formalized
 
 # Multisection of series by index factorization
 
-23 results, 2 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html).
+23 results, 2 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html).
 
 ## Parametric two-adic multisection
 
@@ -25,7 +25,7 @@ The two summability hypotheses imply that $(b_m)_{m \ge 1}$ is summable.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 1, series version (`jis-2024-24.5.5-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.tsum_twoAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-parametric-multisection).
+Stated but not proved: `MetaMathlibExt.tsum_twoAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-parametric-multisection).
 
 ## Parametric 3-adic multisection of a series
 
@@ -41,7 +41,7 @@ q^j (q - 1) b_{3n \cdot 3^j} \Bigr) = \sum_{m \ge 1} b_m.$$
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 6, first display in sum form (`jis-2024-24.5.5-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.tsum_threeAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-three-adic-parametric-multisection).
+Stated but not proved: `MetaMathlibExt.tsum_threeAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-three-adic-parametric-multisection).
 
 ## Regrouping the multiples of 3 by their 3-adic factorization
 
@@ -57,7 +57,7 @@ where the sum on the left is an unconditional sum over the pairs $(j, n)$.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 6, deduced identity in sum form (`jis-2024-24.5.5-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.tsum_threeAdic_multiples_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-three-adic-multiples-regroup).
+Stated but not proved: `MetaMathlibExt.tsum_threeAdic_multiples_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-three-adic-multiples-regroup).
 
 ## Parametric base-B multisection of a series
 
@@ -74,7 +74,7 @@ q^j (q - 1) c_{Bn \cdot B^j} \Bigr) = \sum_{m \ge 1} c_m.$$
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 7, first display in sum form (`jis-2024-24.5.5-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.tsum_baseAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-parametric-multisection).
+Stated but not proved: `MetaMathlibExt.tsum_baseAdic_parametric_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-parametric-multisection).
 
 ## Regrouping the multiples of B by their B-adic factorization
 
@@ -90,7 +90,7 @@ where the outer sum on the left is an unconditional sum over the pairs $(j, n)$.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 7, deduced identity in sum form (`jis-2024-24.5.5-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.tsum_baseAdic_multiples_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-multiples-regroup).
+Stated but not proved: `MetaMathlibExt.tsum_baseAdic_multiples_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-multiples-regroup).
 
 ## Weighted base-B multisection of a series
 
@@ -110,7 +110,7 @@ $$\sum_{j \ge 0,\, n \ge 1} \Bigl( \sum_{k=1}^{B-1} \varphi(j) c_{(Bn-k) B^j} +
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 8, base-`b` sum form (`jis-2024-24.5.5-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.tsum_baseAdic_weighted_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-weighted-multisection).
+Stated but not proved: `MetaMathlibExt.tsum_baseAdic_weighted_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-base-adic-weighted-multisection).
 
 ## Truncated two-adic regrouping
 
@@ -129,7 +129,7 @@ not summable.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 13, in sum form (`jis-2024-24.5.5-prop-13`).
 
-Stated but not proved: `MetaMathlibExt.tsum_twoAdic_truncated_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-truncated-regroup).
+Stated but not proved: `MetaMathlibExt.tsum_twoAdic_truncated_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-truncated-regroup).
 
 ## Regrouping the multiples of a power of 2 by their 2-adic factorization
 
@@ -146,7 +146,7 @@ are summable together or not at all, and a non-summable family has sum $0$ by co
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 14, first display in sum form (`jis-2024-24.5.5-cor-14`).
 
-Stated but not proved: `MetaMathlibExt.tsum_twoAdic_high_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-high-regroup).
+Stated but not proved: `MetaMathlibExt.tsum_twoAdic_high_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-high-regroup).
 
 ## Two-adic regrouping of the non-multiples of a power of two
 
@@ -163,7 +163,7 @@ unconditional sum, taken to be $0$ when its family is not summable.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 14, second display in sum form (`jis-2024-24.5.5-cor-14`).
 
-Stated but not proved: `MetaMathlibExt.tsum_twoAdic_low_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-low-regroup).
+Stated but not proved: `MetaMathlibExt.tsum_twoAdic_low_regroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-low-regroup).
 
 ## Double 2-adic multisection of a double series
 
@@ -184,7 +184,7 @@ $(j, k, n, m)$ respectively.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 15, sum version (`jis-2024-24.5.5-prop-15`).
 
-Stated but not proved: `MetaMathlibExt.tsum_twoAdic_double_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-double-multisection).
+Stated but not proved: `MetaMathlibExt.tsum_twoAdic_double_multisection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tsum-two-adic-double-multisection).
 
 ## $2$-adic expansion of the weighted Lambert series $f$
 
@@ -197,7 +197,7 @@ $f(q) = \sum_{j, k \ge 0} 2^{2j+k} \bigl(g(q^{2^{j+k}}) - 4 g(q^{2^{j+k+1}})\big
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 16 (`jis-2024-24.5.5-cor-16`).
 
-Stated but not proved: `MetaMathlibExt.lambert_sigma_eq_tsum_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#lambert-sigma-eq-tsum-two-adic).
+Stated but not proved: `MetaMathlibExt.lambert_sigma_eq_tsum_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#lambert-sigma-eq-tsum-two-adic).
 
 ## 2-adic dissection of the Euler function
 
@@ -212,7 +212,7 @@ $$\prod_{j \ge 0} \left( \frac{(q^{2^j}; q^{2^{j+1}})_\infty}
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 19, first display (`jis-2024-24.5.5-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic).
 
 ## Parametric 2-adic dissection of the Euler function for real q
 
@@ -227,7 +227,7 @@ $$\prod_{j \ge 0} \left( \frac{(q^{2^j}; q^{2^{j+1}})_\infty}
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 19, second display, real case (`jis-2024-24.5.5-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic_parametric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic-parametric).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic_parametric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic-parametric).
 
 ## Parametric $3$-adic dissection of the Euler function
 
@@ -241,7 +241,7 @@ $\prod_{j \ge 0} \bigl((q^{3^j}; q^{3^{j+1}})_\infty\, (q^{2 \cdot 3^j}; q^{3^{j
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 19, third display, real case (`jis-2024-24.5.5-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_threeAdic_parametric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-three-adic-parametric).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_threeAdic_parametric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-three-adic-parametric).
 
 ## 2-adic product factorization of the Euler function
 
@@ -254,7 +254,7 @@ $\prod_{j \ge 0} (q^{2^j}; q^{2^{j+1}})_\infty = (q; q)_\infty$.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 19, case `p = 1`, base 2 (`jis-2024-24.5.5-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic-factorizatio).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_twoAdic_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-two-adic-factorizatio).
 
 ## $3$-adic factorization of the Euler function
 
@@ -268,7 +268,7 @@ $\prod_{j \ge 0} (q^{3^j}; q^{3^{j+1}})_\infty\, (q^{2 \cdot 3^j}; q^{3^{j+1}})_
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 19, case `p = 1`, base 3 (`jis-2024-24.5.5-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_threeAdic_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-three-adic-factorizat).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_threeAdic_factorization` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-three-adic-factorizat).
 
 ## $2$-adic multisection of the infinite $q$-Pochhammer symbol
 
@@ -282,7 +282,7 @@ $\prod_{j \ge 0} \bigl((a q^{2^j - 1}; q^{2^{j+1}})_\infty /
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 20 (`jis-2024-24.5.5-prop-20`).
 
-Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_shifted_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-shifted-two-adic).
+Stated but not proved: `MetaMathlibExt.tprod_qPochhammer_shifted_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#tprod-q-pochhammer-shifted-two-adic).
 
 ## $2$-adic dissection of a ratio of Gamma functions
 
@@ -295,7 +295,7 @@ $f(a, z) = \prod_{j \ge 0} f(a / 2^{j+1} - 1/2,\ z / 2^{j+1})$.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 22 (`jis-2024-24.5.5-prop-22`).
 
-Stated but not proved: `MetaMathlibExt.gamma_ratio_eq_tprod_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-ratio-eq-tprod-two-adic).
+Stated but not proved: `MetaMathlibExt.gamma_ratio_eq_tprod_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-ratio-eq-tprod-two-adic).
 
 ## Two-adic multisection of the power-weighted Lambert series
 
@@ -321,7 +321,7 @@ factor of the index $(2n-1) 2^j$ in the summand $n$, which becomes $2^{\mu j}$ f
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Corollary 17 (`jis-2024-24.5.5-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.lambertMu_sigma_eq_tsum_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#lambert-mu-sigma-eq-tsum-two-adic).
+Stated but not proved: `MetaMathlibExt.lambertMu_sigma_eq_tsum_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#lambert-mu-sigma-eq-tsum-two-adic).
 
 ## Borwein's eta–Lambert correspondence
 
@@ -340,7 +340,7 @@ absolutely.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 18 (`jis-2024-24.5.5-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.eta_mul_LSeries_iff_lambert` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#eta-mul-lseries-iff-lambert).
+Stated but not proved: `MetaMathlibExt.eta_mul_LSeries_iff_lambert` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#eta-mul-lseries-iff-lambert).
 
 ## The Gamma quadratic ratio
 
@@ -354,7 +354,7 @@ principal complex square root (the value does not depend on the choice of root).
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 23.
 
-Formalized by `MetaMathlibExt.gammaQuadraticRatio`, a definition declared in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio).
+Formalized by `MetaMathlibExt.gammaQuadraticRatio`, a definition declared in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio).
 
 ## The Gamma quadratic ratio at $z = 0$
 
@@ -366,7 +366,7 @@ the principal complex square root. Then the Gamma quadratic ratio $g$ satisfies 
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 23.
 
-Formalized by `MetaMathlibExt.gammaQuadraticRatio_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio-zero-right).
+Formalized by `MetaMathlibExt.gammaQuadraticRatio_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio-zero-right).
 
 ## $2$-adic dissection of the Gamma quadratic ratio
 
@@ -388,7 +388,7 @@ and $b - z$.
 
 - Christophe Vignat and Michael Milgram, *Curious Multisection Identities by Index Factorization*, Journal of Integer Sequences 27 (2024), Article 24.5.5, Proposition 23 (`jis-2024-24.5.5-prop-23`).
 
-Stated but not proved: `MetaMathlibExt.gammaQuadraticRatio_eq_tprod_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio-eq-tprod-two-adic).
+Stated but not proved: `MetaMathlibExt.gammaQuadraticRatio_eq_tprod_twoAdic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IndexFactorizationMultisectionWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html#gamma-quadratic-ratio-eq-tprod-two-adic).
 
 ## Depends on
 
@@ -397,4 +397,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multisection of series by index factorization](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/multisection-of-series-by-index-factorization)

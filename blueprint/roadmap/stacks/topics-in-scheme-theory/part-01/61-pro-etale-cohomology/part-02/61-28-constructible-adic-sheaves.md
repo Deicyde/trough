@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.28 Constructible adic sheaves
 
-Section 61.28 of the Stacks Project, [Tag 09BS](https://stacks.math.columbia.edu/tag/09BS). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.28 of the Stacks Project, [Tag 09BS](https://stacks.math.columbia.edu/tag/09BS). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09BT, a definition
 
 [Tag 09BT](https://stacks.math.columbia.edu/tag/09BT) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleAdicSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L84). The attribute's comment: “part (1): constructible Λ-sheaves”.
+**`AlgebraicGeometry.ProEtale.IsConstructibleAdicSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L84). The attribute's comment: “part (1): constructible Λ-sheaves”.
 
 > A sheaf of `Λ`-modules on the small pro-étale site is a *constructible `Λ`-sheaf* if it is
 > the limit of its quotients by the powers of `I` and each of those quotients is, as a sheaf of
@@ -34,7 +34,7 @@ abbrev IsConstructibleAdicSheaf (X : Scheme.{u}) (Λ : Type v) [CommRing Λ] [Is
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L106). The attribute's comment: “part (2): lisse”.
+**`AlgebraicGeometry.ProEtale.IsLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L106). The attribute's comment: “part (2): lisse”.
 
 > A constructible `Λ`-sheaf is *lisse* if each of its quotients by a power of `I` is a locally
 > constant sheaf of `Λ ⧸ Iⁿ`-modules.
@@ -53,7 +53,7 @@ abbrev IsLisse (X : Scheme.{u}) (Λ : Type v) [CommRing Λ] [IsNoetherianRing Λ
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicConstructible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L128). The attribute's comment: “part (4): adic constructible”.
+**`AlgebraicGeometry.ProEtale.IsAdicConstructible`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Adic.lean#L128). The attribute's comment: “part (4): adic constructible”.
 
 > A sheaf of `Λ`-modules on the small pro-étale site of `X` is *adic constructible* if every
 > affine open of `X` decomposes into constructible locally closed subschemes on each of which the
@@ -71,7 +71,7 @@ abbrev IsAdicConstructible (X : Scheme.{u}) (Λ : Type v) [CommRing Λ] (I : Ide
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleAdicModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L95). The attribute's comment: “part (1): constructible Λ-sheaves”.
+**`AlgebraicGeometry.ProEtale.IsConstructibleAdicModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L95). The attribute's comment: “part (1): constructible Λ-sheaves”.
 
 > **Stacks 09BT (1).** A sheaf of `Λ`-modules on the small pro-étale site is a *constructible
 > `Λ`-sheaf* if it is the limit of its quotients by the powers of `I` and each of those quotients
@@ -82,7 +82,7 @@ def IsConstructibleAdicModuleSheaf [IsNoetherianRing Λ]
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{max (u + 1) v w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsLisseAdicModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L111). The attribute's comment: “part (2): lisse”.
+**`AlgebraicGeometry.ProEtale.IsLisseAdicModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L111). The attribute's comment: “part (2): lisse”.
 
 > **Stacks 09BT (2).** A constructible `Λ`-sheaf is *lisse* if each of its quotients by a
 > power of `I` is a locally constant sheaf of `Λ ⧸ Iⁿ`-modules.
@@ -92,7 +92,7 @@ def IsLisseAdicModuleSheaf [IsNoetherianRing Λ]
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{max (u + 1) v w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicConstructibleModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L137). The attribute's comment: “part (4): adic constructible”.
+**`AlgebraicGeometry.ProEtale.IsAdicConstructibleModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicModuleSheaf.lean#L137). The attribute's comment: “part (4): adic constructible”.
 
 > **Stacks 09BT (4).** A sheaf of `Λ`-modules on the small pro-étale site of `X` is *adic
 > constructible* if every affine open of `X` decomposes into constructible locally closed
@@ -103,7 +103,7 @@ def IsAdicConstructibleModuleSheaf
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{max (u + 1) v w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean#L77). The attribute's comment: “adic\_lisse\_sheaf”.
+**`AlgebraicGeometry.ProEtale.IsAdicLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean#L77). The attribute's comment: “adic\_lisse\_sheaf”.
 
 > A sheaf which is pro-étale locally the completed constant sheaf of a fixed
 > `I`-adically complete module with finite quotient modulo `I`.
@@ -118,7 +118,7 @@ abbrev IsAdicLisse (X : Scheme.{u}) (Λ : Type v) [CommRing Λ] (I : Ideal Λ)
 
 [Tag 09BU](https://stacks.math.columbia.edu/tag/09BU) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_isLisseAdicModuleSheaf_stratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/LisseStratification.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/LisseStratification.lean#L541). References: SGA 4½ Rapport (2.5), “more general”.
+**`AlgebraicGeometry.ProEtale.exists_isLisseAdicModuleSheaf_stratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/LisseStratification.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/LisseStratification.lean#L541). References: SGA 4½ Rapport (2.5), “more general”.
 
 > **Stacks 09BU.** Let `X` be a Noetherian scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an ideal.
 > A constructible `Λ`-sheaf on `X_proet` is lisse on the strata of a finite partition of `X` into
@@ -137,7 +137,7 @@ theorem exists_isLisseAdicModuleSheaf_stratification [IsNoetherianRing Λ] {X : 
 
 [Tag 09BV](https://stacks.math.columbia.edu/tag/09BV) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_iso_completedConstantSheaf_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicCompletedIso.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicCompletedIso.lean#L169). The attribute's comment: “the sheaf is the completed constant sheaf of a finite complete module”.
+**`AlgebraicGeometry.ProEtale.exists_iso_completedConstantSheaf_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicCompletedIso.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicCompletedIso.lean#L169). The attribute's comment: “the sheaf is the completed constant sheaf of a finite complete module”.
 
 > Let `X` be a scheme whose pro-étale topos is not empty, let `Λ` be a Noetherian ring and
 > `I ⊆ Λ` an ideal, and let `F` be a sheaf of `Λ`-modules on the small pro-étale site of `X` such
@@ -170,7 +170,7 @@ theorem exists_iso_completedConstantSheaf_of_isConstant
       Nonempty (F ≅ completedConstantSheaf X Λ I M)
 ```
 
-**`Stacks.ModuleSheaf.exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicQuotientTower.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicQuotientTower.lean#L355). The attribute's comment: “the coefficient module, on any site with a terminal object”.
+**`Stacks.ModuleSheaf.exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicQuotientTower.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicQuotientTower.lean#L355). The attribute's comment: “the coefficient module, on any site with a terminal object”.
 
 > **Stacks 09BV, the coefficient module, on a site with a terminal object.** Let `Λ` be
 > Noetherian, `I ⊆ Λ` an ideal and `F` a sheaf of `Λ`-modules on a site with a terminal object whose
@@ -201,7 +201,7 @@ theorem exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant (I : Ideal 
           Q.obj (op n))
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicReductions.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicReductions.lean#L475). The attribute's comment: “the finite complete coefficient module and its termwise constant reductions”.
+**`AlgebraicGeometry.ProEtale.exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicReductions.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/ConstantAdicReductions.lean#L475). The attribute's comment: “the finite complete coefficient module and its termwise constant reductions”.
 
 > **Stacks 09BV, the coefficient module.** Let `Λ` be Noetherian, `I ⊆ Λ` an ideal and `F` a
 > sheaf of `Λ`-modules on the small pro-étale site whose reductions `F / IⁿF` are constant sheaves
@@ -235,7 +235,7 @@ theorem exists_finite_isAdicComplete_constantSheaf_iso_of_isConstant (I : Ideal 
 
 [Tag 09BW](https://stacks.math.columbia.edu/tag/09BW) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isAdicLisse_of_isLisseAdicModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicLisse.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicLisse.lean#L62).
+**`AlgebraicGeometry.ProEtale.isAdicLisse_of_isLisseAdicModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicLisse.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicLisse.lean#L62).
 
 > **Stacks 09BW.** Let `X` be a connected scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an ideal.
 > A lisse constructible `Λ`-sheaf on the small pro-étale site of `X` is adic lisse.
@@ -250,7 +250,7 @@ theorem isAdicLisse_of_isLisseAdicModuleSheaf [ConnectedSpace X] [IsNoetherianRi
 
 [Tag 09BX](https://stacks.math.columbia.edu/tag/09BX) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isAdicConstructibleModuleSheaf_of_isConstructibleAdicModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicConstructible.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicConstructible.lean#L84).
+**`AlgebraicGeometry.ProEtale.isAdicConstructibleModuleSheaf_of_isConstructibleAdicModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicConstructible.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/AdicConstructible.lean#L84).
 
 > **Stacks 09BX.** Let `X` be a Noetherian scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an ideal.
 > A constructible `Λ`-sheaf on the small pro-étale site of `X` is adic constructible: it is lisse on
@@ -268,7 +268,7 @@ theorem isAdicConstructibleModuleSheaf_of_isConstructibleAdicModuleSheaf [IsNoet
 
 [Tag 09BY](https://stacks.math.columbia.edu/tag/09BY) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1152). The attribute's comment: “generalized to a ringed site with a covering collection of objects testing surjectivity of sheaves of sets in the module universe, on the site and on its slices, and to an arbitrary sheaf of ideals; the Small and HasSheafify hypotheses that used to exclude the pro-etale site are gone, but the sliced bundle is not yet constructed for that site, so the pro-etale site is still NOT an instance of this statement”.
+**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1152). The attribute's comment: “generalized to a ringed site with a covering collection of objects testing surjectivity of sheaves of sets in the module universe, on the site and on its slices, and to an arbitrary sheaf of ideals; the Small and HasSheafify hypotheses that used to exclude the pro-etale site are gone, but the sliced bundle is not yet constructed for that site, so the pro-etale site is still NOT an instance of this statement”.
 
 > **Stacks 09BY.** A sheaf of modules on a ringed site with enough weakly contractible
 > objects which is derived complete along a sheaf of ideals and satisfies `IF = F`, that is
@@ -309,7 +309,7 @@ theorem isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_slicedObjectsSitua
     IsZero F
 ```
 
-**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1424).
+**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1424).
 
 > **Stacks 09BY.** A sheaf of modules on a ringed site with enough weakly contractible
 > objects which is derived complete along a sheaf of ideals and satisfies `IF = F`, that is
@@ -335,7 +335,7 @@ theorem isZero_of_isDerivedComplete_of_idealProduct_eq_top
     IsZero F
 ```
 
-**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean#L796).
+**`AlgebraicGeometry.RingedSite.isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean#L796).
 
 > **Stacks 09BY.** A sheaf of modules on a ringed site with enough weakly contractible
 > objects which is derived complete along a sheaf of ideals and satisfies `IF = F`, that is
@@ -360,7 +360,7 @@ theorem isZero_of_isDerivedComplete_of_idealProduct_eq_top_of_sliceTestingFamily
     IsZero F
 ```
 
-**`AlgebraicGeometry.ProEtale.isZero_of_isDerivedComplete_constantCoefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantCoefficients.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantCoefficients.lean#L249).
+**`AlgebraicGeometry.ProEtale.isZero_of_isDerivedComplete_constantCoefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantCoefficients.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantCoefficients.lean#L249).
 
 > **[Stacks, Tag 09BY].** Let `X` be a scheme, let `Λ` be a ring with a finitely generated
 > ideal `I ⊂ Λ`, and let `ℱ` be a sheaf of `Λ`-modules on `X_proétale` — a sheaf of modules over
@@ -400,7 +400,7 @@ theorem isZero_of_isDerivedComplete_constantCoefficients (X : Scheme.{u}) (Λ : 
 
 [Tag 09BZ](https://stacks.math.columbia.edu/tag/09BZ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_epi_biproduct_completedConstantCoefficientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedConstantSheafMaps.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedConstantSheafMaps.lean#L737). The attribute's comment: “`F/IF` is only assumed of finite type, which a locally constant sheaf of finite type is”.
+**`AlgebraicGeometry.ProEtale.exists_epi_biproduct_completedConstantCoefficientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedConstantSheafMaps.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedConstantSheafMaps.lean#L737). The attribute's comment: “`F/IF` is only assumed of finite type, which a locally constant sheaf of finite type is”.
 
 > **Derived complete sheaves are quotients of finite sums of `\underline{Λ}^∧`.** Let `X` be a
 > weakly contractible affine scheme, `Λ` a Noetherian ring and `I ⊆ Λ` an ideal. Let `F` be a
@@ -424,7 +424,7 @@ theorem exists_epi_biproduct_completedConstantCoefficientSheaf [IsAffine X]
           (Functor.unitModule Λ)) ⟶ F), Epi α
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_epi_sigma_completedConstantSheaf_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteFiniteGeneration.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteFiniteGeneration.lean#L682).
+**`AlgebraicGeometry.ProEtale.exists_epi_sigma_completedConstantSheaf_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteFiniteGeneration.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteFiniteGeneration.lean#L682).
 
 > **[Stacks, Tag 09BZ].** Let `X` be a weakly contractible affine scheme, let `Λ` be a
 > Noetherian ring and let `I ⊂ Λ` be an ideal. Let `ℱ` be a sheaf of `Λ`-modules on `X_proétale`
@@ -458,4 +458,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.28, Tag 09BS](https://stacks.math.columbia.edu/tag/09BS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

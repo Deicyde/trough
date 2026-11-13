@@ -1,6 +1,6 @@
 # 51 Local Cohomology
 
-Chapter 51 of the Stacks Project, *Local Cohomology*, [Tag 0DWN](https://stacks.math.columbia.edu/tag/0DWN): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 110 tags are carried by 282 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
+Chapter 51 of the Stacks Project, *Local Cohomology*, [Tag 0DWN](https://stacks.math.columbia.edu/tag/0DWN): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 110 tags are carried by 263 declarations of the repository (all in StacksFrontier) and 1 registered declaration.
 
 ## [51.2 Generalities to 51.14 Finiteness of local…](part-01/README.md)
 

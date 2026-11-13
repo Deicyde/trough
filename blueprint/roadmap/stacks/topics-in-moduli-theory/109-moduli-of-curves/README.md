@@ -1,6 +1,6 @@
 # 109 Moduli of Curves
 
-Chapter 109 of the Stacks Project, *Moduli of Curves*, [Tag 0DMG](https://stacks.math.columbia.edu/tag/0DMG): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 69 tags are carried by 189 declarations of the repository (all in StacksFrontier).
+Chapter 109 of the Stacks Project, *Moduli of Curves*, [Tag 0DMG](https://stacks.math.columbia.edu/tag/0DMG): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 69 tags are carried by 190 declarations of the repository (all in StacksFrontier).
 
 ## [109.3 The stack of curves to 109.22 Stable curves](part-01/README.md)
 

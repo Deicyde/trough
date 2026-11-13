@@ -7,7 +7,7 @@ statement: formalized
 
 # Large values of Dirichlet polynomials
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html).
 
 ## The Guth–Maynard large values bound
 
@@ -16,7 +16,7 @@ $T$, this is the real number $N^2 V^{-2} + N^{18/5} V^{-4} + T N^{12/5} V^{-4}$,
 multiplying $T^{o(T)}$ on the right-hand side of the Guth–Maynard large values estimate for
 Dirichlet polynomials. Here $V^{-2}$ and $V^{-4}$ are read as $0$ when $V = 0$.
 
-Formalized by `MathlibExt.NumberTheory.LargeValueEstimatesWanted.LargeValueEstimates.bound`, a definition declared in [WantedExt/NumberTheory/LargeValueEstimatesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeValueEstimatesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html#bound).
+Formalized by `MathlibExt.NumberTheory.LargeValueEstimatesWanted.LargeValueEstimates.bound`, a definition declared in [WantedExt/NumberTheory/LargeValueEstimatesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeValueEstimatesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html#bound).
 
 ## Guth–Maynard large values estimate
 
@@ -39,7 +39,7 @@ be false at $T = 1$.
 
 - L. Guth and J. Maynard, `New large value estimates for Dirichlet polynomials`, Annals of Math, 203 (2) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_large_value_estimates` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.LargeValueEstimatesWanted.LargeValueEstimates.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeValueEstimatesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LargeValueEstimatesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.NumberTheory.LargeValueEstimatesWanted.LargeValueEstimates.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/LargeValueEstimatesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LargeValueEstimatesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Large values of Dirichlet polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums/large-values-of-dirichlet-polynomials)

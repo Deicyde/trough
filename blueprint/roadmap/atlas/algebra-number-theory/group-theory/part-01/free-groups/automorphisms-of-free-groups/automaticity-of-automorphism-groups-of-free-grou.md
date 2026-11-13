@@ -7,7 +7,7 @@ statement: formalized
 
 # Automaticity of automorphism groups of free groups
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html).
 
 ## Automatic group
 
@@ -30,7 +30,7 @@ Processing in Groups, Theorem 2.3.5).
 
 - Question 7.3 [AMR-109-0302], Farb - Problems on Mapping Class Groups and Related Topics, PDF p. 339, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.
 
-Formalized by `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.IsAutomaticGroup`, a definition declared in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#is-automatic-group).
+Formalized by `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.IsAutomaticGroup`, a definition declared in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#is-automatic-group).
 
 ## Automaticity of automorphism groups of free groups (Farb's Question 7.3)
 
@@ -42,7 +42,7 @@ $F_n$ on $n$ generators is an automatic group.
 
 - Question 7.3 [AMR-109-0302], Farb - Problems on Mapping Class Groups and Related Topics, PDF p. 339, https://www.math.uchicago.edu/~farb/papers/mcgbook.pdf.
 
-Formalized by `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.conjecture`, a definition declared in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#conjecture).
+Formalized by `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.conjecture`, a definition declared in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#conjecture).
 
 ## Negative answer to Farb's Question 7.3
 
@@ -58,7 +58,7 @@ Dehn function for every $n \ge 3$, while automatic groups have at most quadratic
 
 - M. R. Bridson, K. Vogtmann, The Dehn functions of Out(F_n) and Aut(F_n), Annales de l'Institut Fourier 62(5) (2012) 1811-1817, arXiv:1011.1506, https://arxiv.org/abs/1011.1506.
 
-Stated but not proved: `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/AutFnAutomaticQuestion73Wanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Automaticity of automorphism groups of free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/free-groups/automorphisms-of-free-groups/automaticity-of-automorphism-groups-of-free-grou)

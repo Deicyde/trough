@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.74 Sign rules
 
-Section 15.74 of the Stacks Project, [Tag 0FNG](https://stacks.math.columbia.edu/tag/0FNG). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.74 of the Stacks Project, [Tag 0FNG](https://stacks.math.columbia.edu/tag/0FNG). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FNH, an item
 
 [Tag 0FNH](https://stacks.math.columbia.edu/tag/0FNH) in the Stacks Project.
 
-**`CochainComplex.HomComplex.tensorShiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L77). The attribute's comment: “canonical isomorphism”.
+**`CochainComplex.HomComplex.tensorShiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L77). The attribute's comment: “canonical isomorphism”.
 
 > **Stacks 0FNH.** The canonical isomorphism from the shift by `a + b` of the tensor product
 > `M ⊗ N` to the tensor product `M[a] ⊗ N[b]` of the shifts.
@@ -29,7 +29,7 @@ noncomputable def tensorShiftIso (M N : CochainComplex (ModuleCat R) ℤ) (a b :
     (M ⊗ N)⟦a + b⟧ ≅ M⟦a⟧ ⊗ N⟦b⟧
 ```
 
-**`CochainComplex.HomComplex.tensorShiftHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L90). The attribute's comment: “corresponding shifted map”.
+**`CochainComplex.HomComplex.tensorShiftHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L90). The attribute's comment: “corresponding shifted map”.
 
 > **Stacks 0FNH.** The morphism corresponding to
 > `CochainComplex.HomComplex.tensorShiftIso`: its source is the unshifted tensor product and its
@@ -40,7 +40,7 @@ noncomputable def tensorShiftHom (M N : CochainComplex (ModuleCat R) ℤ) (a b :
     M ⊗ N ⟶ (M⟦a⟧ ⊗ N⟦b⟧)⟦-a - b⟧
 ```
 
-**`CochainComplex.HomComplex.tensorShiftIso_hom_ι_and_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L225). The attribute's comment: “homogeneous sign formula and naturality”.
+**`CochainComplex.HomComplex.tensorShiftIso_hom_ι_and_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftTensor.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ShiftTensor.lean#L225). The attribute's comment: “homogeneous sign formula and naturality”.
 
 > **Stacks 0FNH.** On the summand `M^p ⊗ N^q`, the simultaneous-shift isomorphism
 > `CochainComplex.HomComplex.tensorShiftIso` is multiplication by the Koszul sign `(-1)^(p*b)`
@@ -72,7 +72,7 @@ theorem tensorShiftIso_hom_ι_and_naturality
 
 [Tag 0GWR](https://stacks.math.columbia.edu/tag/0GWR) in the Stacks Project.
 
-**`TotalTensorComplex.cochainComplex_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L115).
+**`TotalTensorComplex.cochainComplex_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/Monoidal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/Monoidal.lean#L116).
 
 > The category of cochain complexes of modules over a commutative ring, with tensor product
 > given by the total complex of the degreewise tensor product, is symmetric monoidal. On the
@@ -94,7 +94,7 @@ public theorem cochainComplex_symmetricMonoidalCategory (R : Type u) [CommRing R
 
 [Tag 0FNJ](https://stacks.math.columbia.edu/tag/0FNJ) in the Stacks Project.
 
-**`ModuleCat.LeftDual.finite_projective_and_linearDual_equiv_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/LeftDual.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/LeftDual.lean#L254).
+**`ModuleCat.LeftDual.finite_projective_and_linearDual_equiv_of_exactPairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/LeftDual.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/LeftDual.lean#L251).
 
 > If `N` is a left dual of `M` in the monoidal category of `R`-modules, then `M` and `N` are
 > finite projective. Moreover, contraction with the coevaluation identifies `M⁺` with `N`, and
@@ -115,7 +115,7 @@ theorem finite_projective_and_linearDual_equiv_of_exactPairing :
 
 [Tag 0FNK](https://stacks.math.columbia.edu/tag/0FNK) in the Stacks Project.
 
-**`CochainComplex.LeftDual.exactPairing_iff_bounded_finiteProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LeftDual.lean, line 1127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/LeftDual.lean#L1127).
+**`CochainComplex.LeftDual.exactPairing_iff_bounded_finiteProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LeftDual.lean, line 1127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/LeftDual.lean#L1127).
 
 > A complex of modules and a chosen left dual are bounded complexes of finite projective
 > modules, and the pairing is the termwise linear-dual pairing with signed transpose differential.
@@ -142,7 +142,7 @@ theorem exactPairing_iff_bounded_finiteProjective (R : Type u) [CommRing R] :
 
 [Tag 0FNL](https://stacks.math.columbia.edu/tag/0FNL) in the Stacks Project.
 
-**`CochainComplex.LeftDual.tensorLeftDualIsoHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LeftDual.lean, line 1261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/LeftDual.lean#L1261).
+**`CochainComplex.LeftDual.tensorLeftDualIsoHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LeftDual.lean, line 1261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/LeftDual.lean#L1261).
 
 > **Stacks 0FNL.** For a complex `M` with left dual `N`, the canonical sign-free tensor–Hom
 > morphism is a natural isomorphism `K ⊗ N ≅ Hom^•(M, K)`. On the summand `K^p ⊗ N^q`, its
@@ -171,7 +171,7 @@ theorem tensorLeftDualIsoHomComplex
 
 [Tag 0FNM](https://stacks.math.columbia.edu/tag/0FNM) in the Stacks Project.
 
-**`CochainComplex.HomComplex.evaluationToDoubleHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Differentials.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/Differentials.lean#L501).
+**`CochainComplex.HomComplex.evaluationToDoubleHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Differentials.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/Differentials.lean#L500).
 
 > **Stacks 0FNM.** The canonical evaluation into the double Hom complex sends homogeneous
 > `x ∈ K^n` and `f ∈ Hom^m(K, M)` to `(-1)^(nm) f(x)`. It is natural in `K` and dinatural in the
@@ -200,7 +200,7 @@ theorem evaluationToDoubleHom_apply :
 
 [Tag 0FNN](https://stacks.math.columbia.edu/tag/0FNN) in the Stacks Project.
 
-**`CochainComplex.HomComplex.homComplexShiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftHom.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/ShiftHom.lean#L191).
+**`CochainComplex.HomComplex.homComplexShiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/ShiftHom.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/ShiftHom.lean#L191).
 
 > **Stacks 0FNN.** The canonical identification
 > `Hom^•(M, K)[a - b] ≅ Hom^•(M[b], K[a])`.
@@ -242,4 +242,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.74, Tag 0FNG](https://stacks.math.columbia.edu/tag/0FNG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Deep power-sum congruences
 
-37 results, 15 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html).
+37 results, 15 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html).
 
 ## Divided-power ideal
 
@@ -20,7 +20,7 @@ $a^k / k! \in I$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 2.2.
 
-Formalized by `MetaMathlibExt.IsDividedPowerIdeal`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal).
+Formalized by `MetaMathlibExt.IsDividedPowerIdeal`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal).
 
 ## The zero ideal is a divided-power ideal
 
@@ -31,7 +31,7 @@ divided-power ideal.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 2.2 (the definition).
 
-Formalized by `MetaMathlibExt.isDividedPowerIdeal_bot`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-bot).
+Formalized by `MetaMathlibExt.isDividedPowerIdeal_bot`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-bot).
 
 ## Ideals with divided powers are divided-power ideals
 
@@ -44,7 +44,7 @@ $a^k = k!\, c$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 2.2 (the maps `γ_k(a) = a ^ k / k!`).
 
-Formalized by `MetaMathlibExt.DividedPowers.isDividedPowerIdeal`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-2).
+Formalized by `MetaMathlibExt.DividedPowers.isDividedPowerIdeal`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-2).
 
 ## Elementary symmetric functions of a polynomial
 
@@ -57,7 +57,7 @@ $e_0(P) = 1$ when $P$ is monic.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2, Notation.
 
-Formalized by `MetaMathlibExt.polyElemSymm`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm).
+Formalized by `MetaMathlibExt.polyElemSymm`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm).
 
 ## The zeroth elementary symmetric function of a monic polynomial
 
@@ -68,7 +68,7 @@ polynomial $P$ over a commutative ring, $e_0(P) = 1$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2, Notation.
 
-Formalized by `MetaMathlibExt.polyElemSymm_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-zero).
+Formalized by `MetaMathlibExt.polyElemSymm_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-zero).
 
 ## Elementary symmetric functions vanish above the degree
 
@@ -79,7 +79,7 @@ $d$ over a commutative ring, with $d = 0$ for $P = 0$. Then $e_n(P) = 0$ for eve
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2, Notation.
 
-Formalized by `MetaMathlibExt.polyElemSymm_of_natDegree_lt`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-of-nat-degree-lt).
+Formalized by `MetaMathlibExt.polyElemSymm_of_natDegree_lt`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-of-nat-degree-lt).
 
 ## Power sums of a polynomial
 
@@ -97,7 +97,7 @@ $p_n = \alpha_1^n + \cdots + \alpha_d^n$ for every $n$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Sections 2.1 and 3.2 (Newton's identities, Macdonald I.2.11').
 
-Formalized by `MetaMathlibExt.polyPowerSum`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum).
+Formalized by `MetaMathlibExt.polyPowerSum`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum).
 
 ## The zeroth power sum of a polynomial is its degree
 
@@ -109,7 +109,7 @@ commutative ring $A$, the power sum $p_0(P)$ equals the degree of $P$ as a natur
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2, Notation.
 
-Formalized by `MetaMathlibExt.polyPowerSum_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-zero).
+Formalized by `MetaMathlibExt.polyPowerSum_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-zero).
 
 ## The first power sum is the first elementary symmetric function
 
@@ -120,7 +120,7 @@ over a commutative ring, $p_1(P) = e_1(P)$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2 (Newton's identities).
 
-Formalized by `MetaMathlibExt.polyPowerSum_one`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-one).
+Formalized by `MetaMathlibExt.polyPowerSum_one`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-one).
 
 ## Newton's recurrence for the power sums of a polynomial
 
@@ -134,7 +134,7 @@ $$p_{n+1} = (-1)^n (n+1)\, e_{n+1} + \sum_{i=0}^{n-1} (-1)^i e_{i+1}\, p_{n-i}.$
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 3.2 (Newton's identities).
 
-Formalized by `MetaMathlibExt.polyPowerSum_succ`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-succ).
+Formalized by `MetaMathlibExt.polyPowerSum_succ`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-succ).
 
 ## A prime-exponent criterion for powers in an ideal
 
@@ -148,7 +148,7 @@ $c \in \mathfrak{b}$ with $a^p = p c$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.pow_mem_prime_pow_padicValNat_factorial_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#pow-mem-prime-pow-padic-val-nat-factoria).
+Stated but not proved: `MetaMathlibExt.pow_mem_prime_pow_padicValNat_factorial_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#pow-mem-prime-pow-padic-val-nat-factoria).
 
 ## The $p$-th power criterion for divided-power ideals
 
@@ -164,7 +164,7 @@ The paper also assumes $A$ torsion-free; the statement does not need it.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_iff_pow_prime_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-iff-pow-prime-mem).
+Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_iff_pow_prime_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-iff-pow-prime-mem).
 
 ## Divided-power ideals generated by a set
 
@@ -180,7 +180,7 @@ Torsion-freeness of $A$ is not needed.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_span_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-span-iff).
+Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_span_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-span-iff).
 
 ## Product of a divided-power ideal with an ideal
 
@@ -192,7 +192,7 @@ product $\mathfrak{a}\mathfrak{b}$ is a divided-power ideal.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.IsDividedPowerIdeal.mul` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#mul).
+Stated but not proved: `MetaMathlibExt.IsDividedPowerIdeal.mul` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#mul).
 
 ## Powers of the maximal ideal of a DVR that are divided-power ideals
 
@@ -209,7 +209,7 @@ localizations of rings of integers; here $O$ is any such ring, and the zero idea
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_pow_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-maximal-ideal-pow).
+Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_pow_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-maximal-ideal-pow).
 
 ## When the maximal ideal of a DVR is a divided-power ideal
 
@@ -221,7 +221,7 @@ some integer $e \ge 1$. Then $\mathfrak{m}$ is a divided-power ideal if and only
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-maximal-ideal-iff).
+Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_iff` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-maximal-ideal-iff).
 
 ## $(p)$ is a divided-power ideal of $\mathbb{Z}_p$
 
@@ -232,7 +232,7 @@ by $p$ in the ring $\mathbb{Z}_p$ of $p$-adic integers is a divided-power ideal.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 8, last sentence.
 
-Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_span_prime_padicInt` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-span-prime-padic).
+Stated but not proved: `MetaMathlibExt.isDividedPowerIdeal_span_prime_padicInt` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-divided-power-ideal-span-prime-padic).
 
 ## Congruent elementary symmetric functions give deep power-sum congruences
 
@@ -249,7 +249,7 @@ $p_N(P) \equiv p_N(Q) \pmod{N \mathfrak{a}}$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.polyPowerSum_sub_mem_of_polyElemSymm_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-sub-mem-of-poly-elem-symm).
+Stated but not proved: `MetaMathlibExt.polyPowerSum_sub_mem_of_polyElemSymm_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-power-sum-sub-mem-of-poly-elem-symm).
 
 ## Power-sum congruences imply elementary symmetric congruences
 
@@ -265,7 +265,7 @@ with $1 \le n \le N$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.polyElemSymm_sub_mem_of_polyPowerSum_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-sub-mem-of-poly-power-sum).
+Stated but not proved: `MetaMathlibExt.polyElemSymm_sub_mem_of_polyPowerSum_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#poly-elem-symm-sub-mem-of-poly-power-sum).
 
 ## Exponential of a power-sum series restricted to a set of degrees
 
@@ -285,7 +285,7 @@ whose parts lie in $S$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 19.
 
-Stated but not proved: `MetaMathlibExt.exp_signedPowerSumSeries_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#exp-signed-power-sum-series-eq-sum-parti).
+Stated but not proved: `MetaMathlibExt.exp_signedPowerSumSeries_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#exp-signed-power-sum-series-eq-sum-parti).
 
 ## The generating function of the elementary symmetric polynomials
 
@@ -300,7 +300,7 @@ $$\sum_{k \ge 0} e_k t^k = \exp\Big(\sum_{n \ge 1} \frac{(-1)^{n-1}}{n} p_n t^n\
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 20.
 
-Stated but not proved: `MetaMathlibExt.exp_signedPowerSumSeries_eq_esymmSeries` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#exp-signed-power-sum-series-eq-esymm-ser).
+Stated but not proved: `MetaMathlibExt.exp_signedPowerSumSeries_eq_esymmSeries` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#exp-signed-power-sum-series-eq-esymm-ser).
 
 ## Elementary symmetric polynomials in terms of power sums
 
@@ -318,7 +318,7 @@ $$e_n = \sum_{\lambda \vdash n} \frac{\varepsilon_\lambda}{z_\lambda} \, p_\lamb
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 21.
 
-Stated but not proved: `MetaMathlibExt.esymm_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#esymm-eq-sum-partitions).
+Stated but not proved: `MetaMathlibExt.esymm_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#esymm-eq-sum-partitions).
 
 ## Kummer's theorem for multinomial coefficients
 
@@ -335,7 +335,7 @@ $c_i = 0$ for $i > m$, so the right side is the sum of all the carries.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Theorem 23.
 
-Stated but not proved: `MetaMathlibExt.padicValNat_multinomial_eq_sum_carries` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#padic-val-nat-multinomial-eq-sum-carries).
+Stated but not proved: `MetaMathlibExt.padicValNat_multinomial_eq_sum_carries` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#padic-val-nat-multinomial-eq-sum-carries).
 
 ## A valuation bound from Kummer's theorem
 
@@ -353,7 +353,7 @@ the inequality fails at $j = 1$. With the paper's convention $v_p(0) = \infty$ t
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 24.
 
-Stated but not proved: `MetaMathlibExt.padicValNat_sum_le_add_padicValNat_multinomial` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#padic-val-nat-sum-le-add-padic-val-nat-m).
+Stated but not proved: `MetaMathlibExt.padicValNat_sum_le_add_padicValNat_multinomial` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#padic-val-nat-sum-le-add-padic-val-nat-m).
 
 ## Powers of elements congruent modulo a divided-power ideal
 
@@ -370,7 +370,7 @@ The ring $A$ is not assumed to be torsion-free.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.pow_sub_pow_mem_of_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#pow-sub-pow-mem-of-sub-mem).
+Stated but not proved: `MetaMathlibExt.pow_sub_pow_mem_of_sub_mem` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#pow-sub-pow-mem-of-sub-mem).
 
 ## Congruence of products over a partition with multiplicities divisible by $p^v$
 
@@ -395,7 +395,7 @@ statement only uses their values.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 26.
 
-Stated but not proved: `MetaMathlibExt.multiset_prod_sub_prod_mem_of_count_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#multiset-prod-sub-prod-mem-of-count-dvd).
+Stated but not proved: `MetaMathlibExt.multiset_prod_sub_prod_mem_of_count_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#multiset-prod-sub-prod-mem-of-count-dvd).
 
 ## Möbius sum over the divisors prime to a given prime
 
@@ -407,7 +407,7 @@ $n$ is a power of $p$ (including $n = 1 = p^0$) and $0$ otherwise.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 28.
 
-Stated but not proved: `MetaMathlibExt.sum_moebius_divisors_not_dvd_prime` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#sum-moebius-divisors-not-dvd-prime).
+Stated but not proved: `MetaMathlibExt.sum_moebius_divisors_not_dvd_prime` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#sum-moebius-divisors-not-dvd-prime).
 
 ## The Artin–Hasse exponential has $p$-integral coefficients
 
@@ -420,7 +420,7 @@ denominator not divisible by $p$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Corollary 29.
 
-Stated but not proved: `MetaMathlibExt.artinHasse_coeff_den_not_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#artin-hasse-coeff-den-not-dvd).
+Stated but not proved: `MetaMathlibExt.artinHasse_coeff_den_not_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#artin-hasse-coeff-den-not-dvd).
 
 ## The Artin–Hasse exponential as a product
 
@@ -437,7 +437,7 @@ $F(z) = \prod_{p \nmid d} (1 - z^d)^{-\mu(d)/d}$ read coefficientwise.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 27.
 
-Stated but not proved: `MetaMathlibExt.artinHasse_eq_prod_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#artin-hasse-eq-prod-one-sub-pow).
+Stated but not proved: `MetaMathlibExt.artinHasse_eq_prod_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#artin-hasse-eq-prod-one-sub-pow).
 
 ## $p$-splitting of multisets of parts
 
@@ -450,7 +450,7 @@ and adding $p$ copies of $u$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Definition 30.
 
-Formalized by `MetaMathlibExt.IsPSplitting`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-psplitting).
+Formalized by `MetaMathlibExt.IsPSplitting`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-psplitting).
 
 ## $p$ copies of $u$ form a $p$-splitting of $\{pu\}$
 
@@ -462,7 +462,7 @@ one-element multiset $\{pu\}$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Definition 30.
 
-Formalized by `MetaMathlibExt.isPSplitting_replicate_singleton`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-psplitting-replicate-singleton).
+Formalized by `MetaMathlibExt.isPSplitting_replicate_singleton`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#is-psplitting-replicate-singleton).
 
 ## The $p$-equivalence class of a multiset of parts
 
@@ -475,7 +475,7 @@ the equivalence relation on multisets of natural numbers generated by $p$-splitt
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Definition 31.
 
-Formalized by `MetaMathlibExt.pEquivClass`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class).
+Formalized by `MetaMathlibExt.pEquivClass`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class).
 
 ## The $p$-equivalence class sum
 
@@ -496,7 +496,7 @@ $p$-equivalent to $\lambda$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 5.2, display (8).
 
-Formalized by `MetaMathlibExt.pEquivClassSum`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum).
+Formalized by `MetaMathlibExt.pEquivClassSum`, a definition declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum).
 
 ## The class sum of the empty partition
 
@@ -507,7 +507,7 @@ natural number $p$, the $p$-equivalence class sum of the empty multiset is $g_\e
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Section 5.2.
 
-Formalized by `MetaMathlibExt.pEquivClassSum_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-zero).
+Formalized by `MetaMathlibExt.pEquivClassSum_zero`, a theorem declared in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-zero).
 
 ## Multiplicativity of $g_\lambda$ over disjoint parts
 
@@ -524,7 +524,7 @@ $\lambda$ and $(u)^r$ is the multiset of $r$ copies of $u$.
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 34.
 
-Stated but not proved: `MetaMathlibExt.pEquivClassSum_add_of_disjoint` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-add-of-disjoint).
+Stated but not proved: `MetaMathlibExt.pEquivClassSum_add_of_disjoint` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-add-of-disjoint).
 
 ## For odd $p$ the signs in $g_\lambda$ are constant
 
@@ -543,7 +543,7 @@ distinct parts $a$ of $\mu$, with $r_a$ the number of parts of $\mu$ equal to $a
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 35.
 
-Stated but not proved: `MetaMathlibExt.pEquivClassSum_eq_neg_one_pow_smul` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-eq-neg-one-pow-smul).
+Stated but not proved: `MetaMathlibExt.pEquivClassSum_eq_neg_one_pow_smul` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-eq-neg-one-pow-smul).
 
 ## $g_\lambda$ is $p$-integral
 
@@ -558,7 +558,7 @@ This is the paper's $g_\lambda \in \Lambda_{\mathbb{Z}_{(p)}}$, in finitely many
 
 - S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Proposition 36.
 
-Stated but not proved: `MetaMathlibExt.pEquivClassSum_coeff_den_not_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-coeff-den-not-dvd).
+Stated but not proved: `MetaMathlibExt.pEquivClassSum_coeff_den_not_dvd` is written with `theorem_wanted` in [WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/DeepPowerSumCongruencesWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html#p-equiv-class-sum-coeff-den-not-dvd).
 
 ## Depends on
 
@@ -567,4 +567,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Deep power-sum congruences](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/deep-power-sum-congruences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/deep-power-sum-congruences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/deep-power-sum-congruences)

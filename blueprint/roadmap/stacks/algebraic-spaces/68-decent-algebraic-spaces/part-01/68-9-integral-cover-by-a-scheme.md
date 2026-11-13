@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.9 Integral cover by a scheme
 
-Section 68.9 of the Stacks Project, [Tag 0D2T](https://stacks.math.columbia.edu/tag/0D2T). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.9 of the Stacks Project, [Tag 0D2T](https://stacks.math.columbia.edu/tag/0D2T). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G2D, a lemma
 
 [Tag 0G2D](https://stacks.math.columbia.edu/tag/0G2D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isIntegralHom_isPullback_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ExtendIntegralMorphism.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ExtendIntegralMorphism.lean#L111).
+**`AlgebraicGeometry.Space.exists_isIntegralHom_isPullback_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ExtendIntegralMorphism.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ExtendIntegralMorphism.lean#L111).
 
 > **Stacks 0G2D.** Let `j : V ⟶ Y` be a quasi-compact open immersion of algebraic spaces over
 > a scheme `S` and let `π : Z ⟶ V` be an integral morphism. Then there is an integral morphism
@@ -39,7 +39,7 @@ theorem exists_isIntegralHom_isPullback_of_isOpenImmersion
 
 [Tag 09YB](https://stacks.math.columbia.edu/tag/09YB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsIntegralSurjectiveSchemeCover_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverExistence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverExistence.lean#L185).
+**`AlgebraicGeometry.Space.existsIntegralSurjectiveSchemeCover_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverExistence.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverExistence.lean#L185).
 
 > **Stacks Project, Tag 09YB.** Let `X` be a quasi-compact and quasi-separated algebraic
 > space over a scheme `S`. Then
@@ -74,7 +74,7 @@ theorem existsIntegralSurjectiveSchemeCover_and_refining
 
 [Tag 0GUL](https://stacks.math.columbia.edu/tag/0GUL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_integralSchemeCover_finiteEtaleOverDenseOpen_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverEtaleInduction.lean, line 1423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverEtaleInduction.lean#L1423).
+**`AlgebraicGeometry.Space.exists_integralSchemeCover_finiteEtaleOverDenseOpen_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverEtaleInduction.lean, line 1423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralSchemeCoverEtaleInduction.lean#L1423).
 
 > **Stacks Project, Tag 0GUL.** Let `X` be a quasi-compact and quasi-separated algebraic
 > space over a scheme `S` such that `|X|` has finitely many irreducible components. Then
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.9, Tag 0D2T](https://stacks.math.columbia.edu/tag/0D2T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

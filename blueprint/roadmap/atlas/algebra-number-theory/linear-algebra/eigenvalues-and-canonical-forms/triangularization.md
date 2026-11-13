@@ -8,7 +8,7 @@ proof: formalized
 
 # Triangularization
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html).
 
 ## Triangularization of an endomorphism with split characteristic polynomial
 
@@ -28,7 +28,7 @@ ed., Cambridge University Press (2013), Theorem 2.3.1, without unitarity.
 
 - S. Axler, Linear Algebra Done Right, 4th ed., Springer (2024), Theorem 5.41.
 
-Formalized by `MathlibExt.LinearAlgebra.TriangularizationWanted.exists_basis_upperTriangular_toMatrix`, a theorem declared in [MathlibExt/LinearAlgebra/Triangularization.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Triangularization.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html#exists-basis-upper-triangular-to-matrix).
+Formalized by `MathlibExt.LinearAlgebra.TriangularizationWanted.exists_basis_upperTriangular_toMatrix`, a theorem declared in [MathlibExt/LinearAlgebra/Triangularization.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Triangularization.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html#exists-basis-upper-triangular-to-matrix).
 
 ## Triangularization of a matrix with split characteristic polynomial
 
@@ -45,7 +45,7 @@ by the change-of-basis matrix from the standard basis to the triangularizing bas
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 2.3.1.
 
-Formalized by `MathlibExt.LinearAlgebra.TriangularizationWanted.exists_upperTriangular_similar_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Triangularization.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Triangularization.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html#exists-upper-triangular-similar-of-split).
+Formalized by `MathlibExt.LinearAlgebra.TriangularizationWanted.exists_upperTriangular_similar_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Triangularization.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Triangularization.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html#exists-upper-triangular-similar-of-split).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Triangularization](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/triangularization)

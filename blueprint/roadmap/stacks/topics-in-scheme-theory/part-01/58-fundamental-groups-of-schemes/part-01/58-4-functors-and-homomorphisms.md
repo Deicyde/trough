@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.4 Functors and homomorphisms
 
-Section 58.4 of the Stacks Project, [Tag 0BTQ](https://stacks.math.columbia.edu/tag/0BTQ). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.4 of the Stacks Project, [Tag 0BTQ](https://stacks.math.columbia.edu/tag/0BTQ). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BTR, an equation
 
 [Tag 0BTR](https://stacks.math.columbia.edu/tag/0BTR) in the Stacks Project.
 
-**`CategoryTheory.TranslationDiagram.outerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean#L70). The attribute's comment: “the outer rectangle”.
+**`CategoryTheory.TranslationDiagram.outerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean#L70). The attribute's comment: “the outer rectangle”.
 
 > The outer rectangle of the diagram 2-commutes: restricting first along `h` and then along `h'`
 > agrees with the composite functor `H ⋙ H'`.
@@ -26,7 +26,7 @@ public def outerIso (D : TranslationDiagram F F' F'' H H') :
       H ⋙ H' ⋙ PreGaloisCategory.functorToContAction F''
 ```
 
-**`CategoryTheory.nonempty_translationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean#L83). The attribute's comment: “the two 2-commutative squares”.
+**`CategoryTheory.nonempty_translationDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TranslationDiagram.lean#L83). The attribute's comment: “the two 2-commutative squares”.
 
 > Two composable exact functors between Galois categories admit fibre-functor isomorphisms whose
 > induced continuous homomorphisms fit into a 2-commutative diagram over the categories of finite
@@ -47,7 +47,7 @@ public theorem nonempty_translationDiagram
 
 [Tag 0BN6](https://stacks.math.columbia.edu/tag/0BN6) in the Stacks Project.
 
-**`CategoryTheory.surjective_inducedHom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean#L325). References: SGA 1 V (6.9), “more general”; SGA 1 V (6.10), “a) <=> fully faithful”.
+**`CategoryTheory.surjective_inducedHom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean#L325). References: SGA 1 V (6.9), “more general”; SGA 1 V (6.10), “a) <=> fully faithful”.
 
 > The five characterizations of surjectivity of the homomorphism induced by an exact functor
 > between Galois categories.
@@ -71,7 +71,7 @@ public theorem surjective_inducedHom_tfae
         ∀ X : C, Function.Bijective (mapFromTerminal H hstar' hHstar X) ]
 ```
 
-**`CategoryTheory.surjective_inducedHom_tfae_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean#L369). References: SGA 1 V (6.9), “more general”; SGA 1 V (6.10), “a) <=> fully faithful”.
+**`CategoryTheory.surjective_inducedHom_tfae_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Surjectivity.lean#L369). References: SGA 1 V (6.9), “more general”; SGA 1 V (6.10), “a) <=> fully faithful”.
 
 > The five characterizations of surjectivity of the homomorphism induced by an exact functor
 > between Galois categories.
@@ -103,7 +103,7 @@ public theorem surjective_inducedHom_tfae_of_fiberIso
 
 [Tag 0BS8](https://stacks.math.columbia.edu/tag/0BS8) in the Stacks Project.
 
-**`CategoryTheory.inducedHom_comp_eq_one_iff_forall_isFiniteCoproductOfTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/InducedHomTrivialComposite.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/InducedHomTrivialComposite.lean#L50). The attribute's comment: “for every choice of fibre-functor isomorphisms; continuity of the induced homomorphisms and the 2-commutative squares are constructed, not assumed”. References: SGA 1 V (6.5), “more general”.
+**`CategoryTheory.inducedHom_comp_eq_one_iff_forall_isFiniteCoproductOfTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/InducedHomTrivialComposite.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/InducedHomTrivialComposite.lean#L50). The attribute's comment: “for every choice of fibre-functor isomorphisms; continuity of the induced homomorphisms and the 2-commutative squares are constructed, not assumed”. References: SGA 1 V (6.5), “more general”.
 
 > **Stacks Project, Tag 0BS8.** Let `H : C ⥤ C'` and `H' : C' ⥤ C''` be functors between
 > Galois categories with fibre functors `F`, `F'`, `F''`, and let `t : H ⋙ F' ≅ F` and
@@ -124,7 +124,7 @@ public theorem inducedHom_comp_eq_one_iff_forall_isFiniteCoproductOfTerminal
       ∀ X : C, IsFiniteCoproductOfTerminal ((H ⋙ H').obj X)
 ```
 
-**`CategoryTheory.comp_hom_eq_one_iff_forall_isFiniteCoproductOfTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TrivialComposite.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TrivialComposite.lean#L177). References: SGA 1 V (6.5).
+**`CategoryTheory.comp_hom_eq_one_iff_forall_isFiniteCoproductOfTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TrivialComposite.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/TrivialComposite.lean#L180). References: SGA 1 V (6.5).
 
 > The composite homomorphism associated to two successive functors of Galois categories is
 > trivial exactly when every object in the image of the composite functor is a finite coproduct of
@@ -151,7 +151,7 @@ public theorem comp_hom_eq_one_iff_forall_isFiniteCoproductOfTerminal
 
 [Tag 0BS9](https://stacks.math.columbia.edu/tag/0BS9) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.galoisExact_iff_categorical_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean, line 725](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean#L725).
+**`Stacks.FundamentalGroup.galoisExact_iff_categorical_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean#L725).
 
 > **Stacks 0BS9.** For composable exact functors between Galois categories, exactness of the
 > induced sequence of automorphism groups is equivalent both to the essential-image criterion and to
@@ -183,7 +183,7 @@ theorem galoisExact_iff_categorical_conditions
             ∃ (X : C) (f : H.obj X ⟶ X'), Epi f) ]
 ```
 
-**`Stacks.FundamentalGroup.galoisExact_iff_categorical_conditions_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean, line 798](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean#L798).
+**`Stacks.FundamentalGroup.galoisExact_iff_categorical_conditions_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean, line 798](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategoryExactSequence.lean#L798).
 
 > **Stacks 0BS9.** For composable exact functors between Galois categories, exactness of the
 > induced sequence of automorphism groups is equivalent both to the essential-image criterion and to
@@ -223,7 +223,7 @@ theorem galoisExact_iff_categorical_conditions_of_fiberIso
 
 [Tag 0BN7](https://stacks.math.columbia.edu/tag/0BN7) in the Stacks Project.
 
-**`CategoryTheory.injective_inducedHom_iff_exists_epi_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean#L134). References: SGA 1 V (6.8).
+**`CategoryTheory.injective_inducedHom_iff_exists_epi_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean#L134). References: SGA 1 V (6.8).
 
 > The induced homomorphism is injective precisely when every connected target object admits
 > an epimorphic cover that is a subobject of the image of a source object.
@@ -241,7 +241,7 @@ public theorem injective_inducedHom_iff_exists_epi_mono
           Epi p ∧ Mono i
 ```
 
-**`CategoryTheory.injective_inducedHom_iff_exists_epi_mono_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean#L402). References: SGA 1 V (6.8).
+**`CategoryTheory.injective_inducedHom_iff_exists_epi_mono_of_fiberIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/Injectivity.lean#L402). References: SGA 1 V (6.8).
 
 > The induced homomorphism is injective precisely when every connected target object admits
 > an epimorphic cover that is a subobject of the image of a source object.
@@ -266,7 +266,7 @@ public theorem injective_inducedHom_iff_exists_epi_mono_of_fiberIso
 
 [Tag 0BTS](https://stacks.math.columbia.edu/tag/0BTS) in the Stacks Project.
 
-**`CategoryTheory.normal_range_iff_connected_image_finite_coproduct_of_terminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/NormalImage.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/NormalImage.lean#L197).
+**`CategoryTheory.normal_range_iff_connected_image_finite_coproduct_of_terminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/NormalImage.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FunctorsHomomorphisms/NormalImage.lean#L197).
 
 > Normality of the image of the homomorphism induced by an exact functor of Galois categories
 > is equivalent to the terminal-object criterion on images of connected objects.
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.4, Tag 0BTQ](https://stacks.math.columbia.edu/tag/0BTQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

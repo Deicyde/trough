@@ -7,7 +7,7 @@ statement: formalized
 
 # Greedy B_h-sets
 
-6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html).
+6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html).
 
 ## Next term of a greedy $B_h$-set
 
@@ -16,7 +16,7 @@ numbers. Then $a$ is the next greedy $B_h$ choice after $A$ if $a$ is greater th
 of $A$, the set $A \cup \{a\}$ is a $B_h$-set, and for every natural number $b < a$ that is
 greater than every element of $A$, the set $A \cup \{b\}$ is not a $B_h$-set.
 
-Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.IsNextGreedyBh`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-next-greedy-bh).
+Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.IsNextGreedyBh`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-next-greedy-bh).
 
 ## Fourth positive term of the greedy $B_h$-set
 
@@ -26,7 +26,7 @@ $B_h$ choice after $\{0\}$, $h + 1$ is the next greedy $B_h$ choice after $\{0, 
 $h^2 + h + 1$ is the next greedy $B_h$ choice after $\{0, 1, h + 1\}$, and $a$ is the next
 greedy $B_h$ choice after $\{0, 1, h + 1, h^2 + h + 1\}$.
 
-Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.IsFourthGreedyBh`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh).
+Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.IsFourthGreedyBh`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh).
 
 ## Quasipolynomial for the fourth greedy $B_h$ term
 
@@ -35,7 +35,7 @@ $v(h)$ is $(h^3 + 3h^2 + 3h + 1)/2$ if $h$ is odd and $(h^3 + 2h^2 + 3h + 2)/2$ 
 
 Both numerators are even, so the divisions are exact.
 
-Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.fourthValue`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#fourth-value).
+Formalized by `MathlibExt.Combinatorics.GreedyBhFourthWanted.fourthValue`, a definition declared in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#fourth-value).
 
 ## Formula for the fourth greedy $B_h$ term
 
@@ -47,7 +47,7 @@ $(h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 - Melvyn B. Nathanson and Kevin O'Bryant, "The Fourth Positive Element in the Greedy `B_h`-Set", Theorem 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.isFourthGreedyBh_fourthValue` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh-fourth-value).
+Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.isFourthGreedyBh_fourthValue` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh-fourth-value).
 
 ## Lower bound for the fourth greedy $B_h$ term
 
@@ -60,7 +60,7 @@ $v(h) = (h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 - Melvyn B. Nathanson and Kevin O'Bryant, "The Fourth Positive Element in the Greedy `B_h`-Set", Lemma 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.fourthValue_le_of_isFourthGreedyBh` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#fourth-value-le-of-is-fourth-greedy-bh).
+Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.fourthValue_le_of_isFourthGreedyBh` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#fourth-value-le-of-is-fourth-greedy-bh).
 
 ## Upper bound for the fourth greedy $B_h$ term
 
@@ -73,7 +73,7 @@ $v(h) = (h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 
 - Melvyn B. Nathanson and Kevin O'Bryant, "The Fourth Positive Element in the Greedy `B_h`-Set", Lemma 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.isFourthGreedyBh_le_fourthValue` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh-le-fourth-value).
+Stated but not proved: `MathlibExt.Combinatorics.GreedyBhFourthWanted.isFourthGreedyBh_le_fourthValue` is written with `theorem_wanted` in [WantedExt/Combinatorics/GreedyBhFourthWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GreedyBhFourthWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html#is-fourth-greedy-bh-le-fourth-value).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Greedy B_h-sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/greedy-b-h-sets)

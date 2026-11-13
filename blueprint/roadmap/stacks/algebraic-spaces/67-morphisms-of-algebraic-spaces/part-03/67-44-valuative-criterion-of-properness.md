@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.44 Valuative criterion of properness
 
-Section 67.44 of the Stacks Project, [Tag 0CKZ](https://stacks.math.columbia.edu/tag/0CKZ). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.44 of the Stacks Project, [Tag 0CKZ](https://stacks.math.columbia.edu/tag/0CKZ). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A40, a lemma
 
 [Tag 0A40](https://stacks.math.columbia.edu/tag/0A40) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_tfae_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L54).
+**`AlgebraicGeometry.Space.isProper_tfae_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L54).
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` which is of finite type and
 > quasi-separated, being proper, satisfying the valuative criterion of Stacks 03IX, and having
@@ -31,7 +31,7 @@ public theorem isProper_tfae_of_isFiniteType_of_isQuasiSeparated
         ∀ q : ValuativeSquare f, Nonempty q.Lift ∧ Subsingleton q.Lift]
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_valuativeCriterion_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L72). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isProper_iff_valuativeCriterion_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L72). The attribute's comment: “conditions (1) and (2)”.
 
 > A morphism of algebraic spaces over `S` which is of finite type and quasi-separated is proper
 > exactly when it satisfies the valuative criterion of Stacks 03IX.
@@ -43,7 +43,7 @@ public theorem isProper_iff_valuativeCriterion_of_isFiniteType_of_isQuasiSeparat
     IsProper B S hS f ↔ ValuativeCriterion f
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_forall_unique_lift_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L82). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isProper_iff_forall_unique_lift_of_isFiniteType_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Properness.lean#L82). The attribute's comment: “conditions (1) and (3)”.
 
 > A morphism of algebraic spaces over `S` which is of finite type and quasi-separated is proper
 > exactly when every valuative square for it has exactly one dotted arrow over the given valuation
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.44, Tag 0CKZ](https://stacks.math.columbia.edu/tag/0CKZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

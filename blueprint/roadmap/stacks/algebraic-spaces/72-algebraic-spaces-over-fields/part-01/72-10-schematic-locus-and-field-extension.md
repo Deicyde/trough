@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.10 Schematic locus and field extension
 
-Section 72.10 of the Stacks Project, [Tag 0B82](https://stacks.math.columbia.edu/tag/0B82). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.10 of the Stacks Project, [Tag 0B82](https://stacks.math.columbia.edu/tag/0B82). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B83, a lemma
 
 [Tag 0B83](https://stacks.math.columbia.edu/tag/0B83) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isPurelyInseparable_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PurelyInseparableSchemeDescent.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PurelyInseparableSchemeDescent.lean#L304).
+**`AlgebraicGeometry.Space.isRepresentable_of_isPurelyInseparable_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PurelyInseparableSchemeDescent.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PurelyInseparableSchemeDescent.lean#L305).
 
 > **Stacks 0B83.** Let `k` be a field and let `X` be an algebraic space over `k`. If there
 > exists a purely inseparable field extension `k'/k` such that the base change `X_{k'}` is a
@@ -46,7 +46,7 @@ theorem isRepresentable_of_isPurelyInseparable_of_isRepresentable [IsPurelyInsep
 
 [Tag 0B84](https://stacks.math.columbia.edu/tag/0B84) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finite_separable_isRepresentable_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean#L418). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_finite_separable_isRepresentable_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean#L418). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0B84] part (2).** Let `k` be a field and let `X` be a quasi-compact and
 > quasi-separated algebraic space over `k`. If there is a field extension `K/k` such that the base
@@ -76,7 +76,7 @@ theorem exists_finite_separable_isRepresentable_relocalizeRestrict (k K : Type u
         X).IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.isRepresentable_relocalizeRestrict_algebraicClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean#L597). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isRepresentable_relocalizeRestrict_algebraicClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/AlgClosureSchemeDescent.lean#L597). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 0B84] part (1).** Let `k` be a field with algebraic closure `k̄` and let `X`
 > be a quasi-separated algebraic space over `k`. If there is a field extension `K/k` such that the
@@ -103,7 +103,7 @@ theorem isRepresentable_relocalizeRestrict_algebraicClosure (k K : Type u) [Fiel
 
 [Tag 0B86](https://stacks.math.columbia.edu/tag/0B86) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_extensionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L164). The attribute's comment: “the base change is an algebraic space”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_extensionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L164). The attribute's comment: “the base change is an algebraic space”.
 
 > **Stacks 0B86**, the algebraicity of the base change: the base change of an algebraic space
 > over `k` along a field extension `k'/k` is, viewed over `k`, an algebraic space.
@@ -114,7 +114,7 @@ theorem isAlgebraicSpace_extensionBaseChange
     IsAlgebraicSpace B (Spec (.of k)) hk (extensionBaseChange k k' B hk hk' X)
 ```
 
-**`AlgebraicGeometry.Space.isFreeOnNonemptyPoints_extensionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L271). The attribute's comment: “the Galois group acts freely on the base change”.
+**`AlgebraicGeometry.Space.isFreeOnNonemptyPoints_extensionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L271). The attribute's comment: “the Galois group acts freely on the base change”.
 
 > **Stacks 0B86**, the freeness assertion: the group of `k`-automorphisms of `k'` acts freely
 > on `X_{k'}`.  For a finite Galois extension this is the first half of the tag; freeness in fact
@@ -126,7 +126,7 @@ theorem isFreeOnNonemptyPoints_extensionBaseChange :
       (extensionBaseChange k k' B hk hk' X)
 ```
 
-**`AlgebraicGeometry.Space.isIso_extensionBaseChangeQuotientLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L635). The attribute's comment: “X = X\_\{k'}/G”.
+**`AlgebraicGeometry.Space.isIso_extensionBaseChangeQuotientLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L635). The attribute's comment: “X = X\_\{k'}/G”.
 
 > **Stacks 0B86**, the quotient assertion: for a finite Galois extension `k'/k` with Galois
 > group `G`, an algebraic space `X` over `k` is the quotient `X_{k'}/G`.
@@ -141,7 +141,7 @@ theorem isIso_extensionBaseChangeQuotientLift [FiniteDimensional k k'] [IsGalois
 
 [Tag 0B87](https://stacks.math.columbia.edu/tag/0B87) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mem_schematicLocus_actionQuotient_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FiniteFreeActionSchematicLocus.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FiniteFreeActionSchematicLocus.lean#L292). The attribute's comment: “for a free action of a finite group on an object of the big fppf site over `S` in place of an action on an arbitrary algebraic space, the quotient being the quotient sheaf of the graph relation of the action as in the library's form of Tag 071S, freeness being read on the points over the test schemes with nonempty underlying space, and the affine open of condition (2) being presented as in the library's form of Tag 0BA1, by an open immersion into the functor of points of the scheme acted on out of an affine object of the site”.
+**`AlgebraicGeometry.Space.mem_schematicLocus_actionQuotient_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FiniteFreeActionSchematicLocus.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FiniteFreeActionSchematicLocus.lean#L292). The attribute's comment: “for a free action of a finite group on an object of the big fppf site over `S` in place of an action on an arbitrary algebraic space, the quotient being the quotient sheaf of the graph relation of the action as in the library's form of Tag 071S, freeness being read on the points over the test schemes with nonempty underlying space, and the affine open of condition (2) being presented as in the library's form of Tag 0BA1, by an open immersion into the functor of points of the scheme acted on out of an affine object of the site”.
 
 > **Stacks 0B87.** Let a finite group `G` act freely on an object `V` of a big fppf site over
 > a scheme `S` and let `y` be a point of the quotient `V/G`. Then `y` lies in the schematic locus
@@ -166,7 +166,7 @@ theorem mem_schematicLocus_actionQuotient_iff [Finite G]
             x ∈ Set.range (pointsMap B S hS (yoneda.obj U) i)
 ```
 
-**`AlgebraicGeometry.Space.mem_schematicLocus_orbitQuotient_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceSchematicLocus.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceSchematicLocus.lean#L495).
+**`AlgebraicGeometry.Space.mem_schematicLocus_orbitQuotient_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceSchematicLocus.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceSchematicLocus.lean#L495).
 
 > **Stacks 0B87.** Let `S` be a scheme, let `X` be an algebraic space over `S`, let `G` be a
 > finite group acting freely on `X` and let `Y = X/G` be the quotient of Tag 071S. For a point
@@ -202,7 +202,7 @@ theorem mem_schematicLocus_orbitQuotient_iff
 
 [Tag 0B85](https://stacks.math.columbia.edu/tag/0B85) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_purelyTranscendental_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/PurelyTranscendentalDescent/Descent.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/PurelyTranscendentalDescent/Descent.lean#L239).
+**`AlgebraicGeometry.Space.isRepresentable_of_isRepresentable_purelyTranscendental_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/PurelyTranscendentalDescent/Descent.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/PurelyTranscendentalDescent/Descent.lean#L239).
 
 > **Stacks 0B85.** Let `k` be a field and `X` a quasi-separated algebraic space over `k`. If
 > there is a purely transcendental field extension `K/k` such that `X_K` is a scheme, then `X` is a
@@ -228,7 +228,7 @@ theorem isRepresentable_of_isRepresentable_purelyTranscendental_baseChange
 
 [Tag 0BA7](https://stacks.math.columbia.edu/tag/0BA7) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIrreducible.finiteField_remark`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIrreducibleFiniteFieldDescent.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIrreducibleFiniteFieldDescent.lean#L171).
+**`Algebra.IsGeometricallyIrreducible.finiteField_remark`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIrreducibleFiniteFieldDescent.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyIrreducibleFiniteFieldDescent.lean#L171).
 
 > **Stacks 0BA7.** Let `k` be a finite field and `K/k` a geometrically irreducible field
 > extension.
@@ -261,7 +261,7 @@ theorem finiteField_remark (k K : Type u) [Field k] [Finite k] [Field K] [Algebr
 
 [Tag 0B88](https://stacks.math.columbia.edu/tag/0B88) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_isAlgClosure_finite_rationalPoints_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/DecentFiniteTypeScheme.lean, line 916](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/DecentFiniteTypeScheme.lean#L916). The attribute's comment: “all three hypotheses of the source, none dropped, weakened or added”.
+**`AlgebraicGeometry.Space.isRepresentable_of_isAlgClosure_finite_rationalPoints_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OverFields/DecentFiniteTypeScheme.lean, line 921](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OverFields/DecentFiniteTypeScheme.lean#L921). The attribute's comment: “hypotheses (1) and (3) of the source; (2) is not needed”.
 
 > **Stacks 0B88.** Let `k` be a field with algebraic closure `K = k̄` and let `X` be an
 > algebraic space over `k`.  Assume
@@ -272,8 +272,9 @@ theorem finiteField_remark (k K : Type u) [Field k] [Finite k] [Field K] [Algebr
 >
 > Then `X` is a scheme.
 >
-> All three source hypotheses are present and none is weakened: `hdecent` together with
-> `hfinite` is hypothesis (1), `hbase` is hypothesis (2), and `haffine` is hypothesis (3).
+> Hypotheses (1) and (3) are present and not weakened: `hdecent` together with `hfinite` is
+> hypothesis (1), and `haffine` is hypothesis (3).  Hypothesis (2) is not needed by the proof
+> below and is omitted, so the statement is stronger than the source's.
 >
 > `X_{k̄}` is the restriction of `X` to the big fppf site over `Spec k̄` along the morphism
 > `g : Spec k̄ ⟶ Spec k` of the site, a `k̄`-rational point of it is a section over the terminal
@@ -303,9 +304,6 @@ theorem isRepresentable_of_isAlgClosure_finite_rationalPoints_isAffine
     (hdecent : IsDecentSpace B (Spec (.of k)) hk X)
     (f : X ⟶ yoneda.obj (Over.mk (𝟙 (B.obj hk))))
     (hfinite : IsLocallyOfFiniteType B (Spec (.of k)) hk f)
-    (hbase : ((OverShriek.relocalizeRestrict
-      (ObjectProperty.homMk (Spec.map (CommRingCat.ofHom (algebraMap k K))) :
-        B.obj hK ⟶ B.obj hk)).obj X).IsRepresentable)
     (haffine :
       let Xbase := (OverShriek.relocalizeRestrict
         (ObjectProperty.homMk (Spec.map (CommRingCat.ofHom (algebraMap k K))) :
@@ -322,7 +320,7 @@ theorem isRepresentable_of_isAlgClosure_finite_rationalPoints_isAffine
 
 [Tag 06S0](https://stacks.math.columbia.edu/tag/06S0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_isLocallyQuasiFinite_to_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyQuasiFiniteOverFieldTfae.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LocallyQuasiFiniteOverFieldTfae.lean#L84).
+**`AlgebraicGeometry.Space.tfae_isLocallyQuasiFinite_to_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LocallyQuasiFiniteOverFieldTfae.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LocallyQuasiFiniteOverFieldTfae.lean#L84).
 
 > **Stacks 06S0.** Let `k` be a field and `X` an algebraic space over `k`, presented as an
 > algebraic space over `S` with a morphism `g : X ⟶ h_K` to an object `K` of the site whose
@@ -357,7 +355,7 @@ theorem tfae_isLocallyQuasiFinite_to_field {k : Type u} [Field k]
 
 [Tag 06S1](https://stacks.math.columbia.edu/tag/06S1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_mono_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonoLocallyQuasiFiniteOverField.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MonoLocallyQuasiFiniteOverField.lean#L68).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_mono_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonoLocallyQuasiFiniteOverField.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MonoLocallyQuasiFiniteOverField.lean#L68).
 
 > **Stacks 06S1.** Let `k` be a field and `f : X ⟶ Y` a monomorphism of algebraic spaces over
 > `k`. If `Y` is locally quasi-finite over `k`, so is `X`.
@@ -377,4 +375,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.10, Tag 0B82](https://stacks.math.columbia.edu/tag/0B82)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

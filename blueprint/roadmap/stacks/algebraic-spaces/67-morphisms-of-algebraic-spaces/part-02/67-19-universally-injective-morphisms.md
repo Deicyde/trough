@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.19 Universally injective morphisms
 
-Section 67.19 of the Stacks Project, [Tag 03MT](https://stacks.math.columbia.edu/tag/03MT). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.19 of the Stacks Project, [Tag 03MT](https://stacks.math.columbia.edu/tag/03MT). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03MU, a lemma
 
 [Tag 03MU](https://stacks.math.columbia.edu/tag/03MU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_iff_injective_on_field_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L197).
+**`AlgebraicGeometry.Space.universallyInjective_iff_injective_on_field_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L197).
 
 > **Stacks 03MU.** A representable transformation is universally injective if and only if
 > its maps on field-valued points are injective.
@@ -35,7 +35,7 @@ theorem universallyInjective_iff_injective_on_field_points
 
 [Tag 040X](https://stacks.math.columbia.edu/tag/040X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.injectiveOnFieldPoints_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFieldPoints.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFieldPoints.lean#L291).
+**`AlgebraicGeometry.Space.injectiveOnFieldPoints_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFieldPoints.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversallyInjectiveFieldPoints.lean#L291).
 
 > **Stacks 040X.** For a morphism `f : X ⟶ Y` from an algebraic space over `S` the
 > following are equivalent:
@@ -55,7 +55,7 @@ theorem injectiveOnFieldPoints_tfae (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ 
 
 [Tag 03MV](https://stacks.math.columbia.edu/tag/03MV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.UniversallyInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L46).
+**`AlgebraicGeometry.Space.UniversallyInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L46).
 
 > **Stacks 03MV.** A morphism is universally injective if every base change along an
 > algebraic space induces an injective map on points.
@@ -68,7 +68,7 @@ abbrev UniversallyInjective {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f : X
 
 [Tag 05VS](https://stacks.math.columbia.edu/tag/05VS) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineLineInvolution.not_isSeparated_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionSquaringMap.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionSquaringMap.lean#L500). The attribute's comment: “part (5): the squaring morphism is not separated”.
+**`AlgebraicGeometry.AffineLineInvolution.not_isSeparated_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionSquaringMap.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionSquaringMap.lean#L501). The attribute's comment: “part (5): the squaring morphism is not separated”.
 
 > **Stacks 05VS, part (5)**, which is also the last assertion of the example of **Stacks
 > 05Z6**: the squaring map `X ⟶ 𝐀¹_k` on the involution quotient is not separated. Its relative
@@ -80,7 +80,7 @@ theorem not_isSeparated_squaringMap (hchar : (2 : k) ≠ 0) :
     ¬ Space.IsSeparated B (Spec (.of k)) hk (squaringMap k B hk)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.squaringMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean#L111). The attribute's comment: “part (1): the morphism X ⟶ 𝐀¹\_k squaring the coordinate”.
+**`AlgebraicGeometry.AffineLineInvolution.squaringMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean#L111). The attribute's comment: “part (1): the morphism X ⟶ 𝐀¹\_k squaring the coordinate”.
 
 > **Stacks 05VS, part (1).** The canonical morphism from the involution quotient to the
 > affine line, descended from squaring the coordinate: the point with coordinate `x` is sent to
@@ -93,7 +93,7 @@ noncomputable def squaringMap (B : BigFppfSite.{u}) (hk : B.Contains (Spec (.of 
       Stacks.Groupoids.points (Over.post (X := B.obj hk) B.inclusion) (affineLine k)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isIso_squaringMap_pullback_puncturedAffineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L362). The attribute's comment: “part (2): an isomorphism away from the origin”.
+**`AlgebraicGeometry.AffineLineInvolution.isIso_squaringMap_pullback_puncturedAffineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L362). The attribute's comment: “part (2): an isomorphism away from the origin”.
 
 > **Stacks 05VS, part (2).** Over a field in which `2` is invertible, the squaring map from
 > the involution quotient to the affine line is an isomorphism away from the origin: its base
@@ -108,7 +108,7 @@ theorem isIso_squaringMap_pullback_puncturedAffineLine (hchar : (2 : k) ≠ 0)
         (yoneda.map (puncturedAffineLineInclusion k))))
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.existsUnique_pointsMap_squaringMap_eq_originPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L540). The attribute's comment: “part (3): exactly one point above the origin”.
+**`AlgebraicGeometry.AffineLineInvolution.existsUnique_pointsMap_squaringMap_eq_originPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L540). The attribute's comment: “part (3): exactly one point above the origin”.
 
 > **Stacks 05VS, part (3).** Exactly one point of the involution quotient lies over the
 > origin of the affine line under the morphism descended from squaring the coordinate.
@@ -129,7 +129,7 @@ theorem existsUnique_pointsMap_squaringMap_eq_originPoint (B : BigFppfSite.{u})
       Space.pointsMap B (Spec (.of k)) hk _ (squaringMap k B hk) x = originPoint k B hk
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.universallyInjective_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L594). The attribute's comment: “part (4): universally injective”.
+**`AlgebraicGeometry.AffineLineInvolution.universallyInjective_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMapProperties.lean#L594). The attribute's comment: “part (4): universally injective”.
 
 > **Stacks 05VS, part (4).** Away from characteristic two the morphism descended from
 > squaring the coordinate is universally injective.
@@ -155,7 +155,7 @@ theorem universallyInjective_squaringMap (hchar : (2 : k) ≠ 0) (B : BigFppfSit
 
 [Tag 03MW](https://stacks.math.columbia.edu/tag/03MW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L248). References: EGA IV (11.9.14), “base change stability”.
+**`AlgebraicGeometry.Space.universallyInjective_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L248). References: EGA IV (11.9.14), “base change stability”.
 
 > **Stacks 03MW.** A base change of a universally injective morphism of algebraic spaces
 > over `S` is universally injective.
@@ -169,7 +169,7 @@ theorem universallyInjective_pullback (f : X ⟶ Y) (g : Z ⟶ Y)
     UniversallyInjective B S hS (pullback.fst g f)
 ```
 
-**`AlgebraicGeometry.Space.universallyInjective_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L302). References: EGA IV (11.9.14), “base change stability”.
+**`AlgebraicGeometry.Space.universallyInjective_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L302). References: EGA IV (11.9.14), “base change stability”.
 
 > **Stacks 03MW** for an arbitrary cartesian square: if `IsPullback a b g f` and `f` is
 > universally injective, then so is `a`.
@@ -188,7 +188,7 @@ theorem universallyInjective_of_isPullback (hC : IsAlgebraicSpace B S hS C)
 
 [Tag 03MX](https://stacks.math.columbia.edu/tag/03MX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveSchemeTests.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveSchemeTests.lean#L362).
+**`AlgebraicGeometry.Space.universallyInjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveSchemeTests.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjectiveSchemeTests.lean#L362).
 
 > **Stacks 03MX.** For a morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S` the
 > following are equivalent: `f` is universally injective; the base change `Z ×_Y X ⟶ Z` of `f`
@@ -217,7 +217,7 @@ theorem universallyInjective_tfae {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03MY](https://stacks.math.columbia.edu/tag/03MY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyInjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L277).
+**`AlgebraicGeometry.Space.universallyInjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/Basic.lean#L277).
 
 > **Stacks 03MY.** A composition of universally injective morphisms of algebraic spaces over
 > `S` is universally injective.
@@ -240,4 +240,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.19, Tag 03MT](https://stacks.math.columbia.edu/tag/03MT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

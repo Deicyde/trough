@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.10 Group algebraic spaces over fields
 
-Section 79.10 of the Stacks Project, [Tag 0B8D](https://stacks.math.columbia.edu/tag/0B8D). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 79.10 of the Stacks Project, [Tag 0B8D](https://stacks.math.columbia.edu/tag/0B8D). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B8E, a lemma
 
 [Tag 0B8E](https://stacks.math.columbia.edu/tag/0B8E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_relocalizeRestrict_algebraicClosure_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/AlgebraicClosureScheme.lean, line 662](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/AlgebraicClosureScheme.lean#L662).
+**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_relocalizeRestrict_algebraicClosure_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/AlgebraicClosureScheme.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/AlgebraicClosureScheme.lean#L663).
 
 > Let `k` be a field with algebraic closure `k̄` and let `G` be a separated group algebraic
 > space over `k`. Then `G_{k̄}` is a scheme.
@@ -39,7 +39,7 @@ theorem isRepresentable_relocalizeRestrict_algebraicClosure_of_isSeparatedOver
 
 [Tag 0B8F](https://stacks.math.columbia.edu/tag/0B8F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_of_isSeparatedOver_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedFiniteTypeScheme.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedFiniteTypeScheme.lean#L50).
+**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_of_isSeparatedOver_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedFiniteTypeScheme.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedFiniteTypeScheme.lean#L50).
 
 > **A separated group algebraic space locally of finite type over a field is a scheme.** Let
 > `G` be a group algebraic space over `S ≅ Spec k` which is separated over `k` and locally of
@@ -62,7 +62,7 @@ theorem isRepresentable_of_isSeparatedOver_of_isLocallyOfFiniteType (e : S ≅ S
 
 [Tag 0B8G](https://stacks.math.columbia.edu/tag/0B8G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedScheme.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedScheme.lean#L253).
+**`AlgebraicGeometry.Space.GroupOverField.isRepresentable_of_isSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedScheme.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpacesOverFields/SeparatedScheme.lean#L253).
 
 > **Stacks 0B8G.** Let `k` be a field and let `G` be a group algebraic space over `k`. If `G`
 > is separated, then `G` is a scheme.
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.10, Tag 0B8D](https://stacks.math.columbia.edu/tag/0B8D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

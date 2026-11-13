@@ -7,7 +7,7 @@ statement: formalized
 
 # Topological reconstruction of varieties
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html).
 
 ## Structure morphism of a projective spectrum
 
@@ -21,7 +21,7 @@ $R \to \mathcal{A}_0$.
 For a polynomial ring over $R$ graded by total degree, this is the structure morphism of
 projective space over $R$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.projToSpec`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#proj-to-spec).
+Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.projToSpec`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#proj-to-spec).
 
 ## Projective morphism to an affine scheme
 
@@ -31,14 +31,14 @@ closed immersion $i$ of $X$ into $\operatorname{Proj} R[x_1, \dots, x_n]$, the p
 graded by total degree, such that $f$ is $i$ followed by the structure morphism
 $\operatorname{Proj} R[x_1, \dots, x_n] \to \operatorname{Spec} R$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsProjectiveHom`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#is-projective-hom).
+Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsProjectiveHom`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#is-projective-hom).
 
 ## Normal scheme
 
 A scheme $X$ is normal if for every point $x \in X$ the local ring
 $\mathcal{O}_{X,x}$ is an integrally closed domain.
 
-Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsNormalScheme`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#is-normal-scheme).
+Formalized by `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsNormalScheme`, a definition declared in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#is-normal-scheme).
 
 ## Kollár–Lieblich–Olsson–Sawin topological reconstruction theorem
 
@@ -54,7 +54,7 @@ of schemes $X \cong Y$ whose underlying map is $h$.
 
 - János Kollár, Max Lieblich, Martin Olsson, and Will Sawin. The Zariski topology, linear systems, and algebraic varieties. Problem `kollar_lieblich_olsson_sawin` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.kollar_lieblich_olsson_sawin` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#kollar-lieblich-olsson-sawin).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.kollar_lieblich_olsson_sawin` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/TopologicalReconstructionWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html#kollar-lieblich-olsson-sawin).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Topological reconstruction of varieties](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/topological-reconstruction-of-varieties)

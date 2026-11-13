@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.23 Jacobson spaces
 
-Section 68.23 of the Stacks Project, [Tag 0BA2](https://stacks.math.columbia.edu/tag/0BA2). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.23 of the Stacks Project, [Tag 0BA2](https://stacks.math.columbia.edu/tag/0BA2). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BA3, a lemma
 
 [Tag 0BA3](https://stacks.math.columbia.edu/tag/0BA3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_jacobson_atlas_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Jacobson.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Jacobson.lean#L54). References: EGA IV (10.4.7), “Y Jacobson”.
+**`AlgebraicGeometry.Space.exists_jacobson_atlas_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Jacobson.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Jacobson.lean#L54). References: EGA IV (10.4.7), “Y Jacobson”.
 
 > **Stacks 0BA3.** An algebraic space locally of finite type over a Jacobson algebraic
 > space is Jacobson: if the algebraic space `X` over `S` has a surjective étale atlas by a
@@ -43,7 +43,7 @@ theorem exists_jacobson_atlas_of_isLocallyOfFiniteType (B : BigFppfSite.{u}) (S 
 
 [Tag 0BA4](https://stacks.math.columbia.edu/tag/0BA4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isClosed_pointsToScheme_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonClosedPoints.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonClosedPoints.lean#L74).
+**`AlgebraicGeometry.Space.exists_isClosed_pointsToScheme_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonClosedPoints.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonClosedPoints.lean#L74).
 
 > **Stacks 0BA4.** Let `X` be a Jacobson algebraic space over `S`, written as having a
 > surjective étale atlas by a Jacobson scheme, and let `g : h_W ⟶ X` be locally of finite type
@@ -74,7 +74,7 @@ theorem exists_isClosed_pointsToScheme_of_isFiniteTypePoint
 
 [Tag 0BA5](https://stacks.math.columbia.edu/tag/0BA5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean#L149). The attribute's comment: “pointwise form”.
+**`AlgebraicGeometry.Space.isFiniteTypePoint_iff_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean#L149). The attribute's comment: “pointwise form”.
 
 > **Stacks 0BA5**, pointwise. Let `X` be a decent Jacobson algebraic space over `S`, the
 > Jacobson condition being written as the existence of a surjective étale atlas by a Jacobson
@@ -95,7 +95,7 @@ theorem isFiniteTypePoint_iff_isClosed_singleton
     IsFiniteTypePoint B S hS X x ↔ IsClosed ({x} : Set (points B S hS X))
 ```
 
-**`AlgebraicGeometry.Space.finiteTypePoints_eq_setOf_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean#L200).
+**`AlgebraicGeometry.Space.finiteTypePoints_eq_setOf_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonFiniteTypePoints.lean#L200).
 
 > **Stacks 0BA5.** Let `X` be a decent Jacobson algebraic space over `S`, the Jacobson
 > condition being written as the existence of a surjective étale atlas by a Jacobson scheme.
@@ -119,7 +119,7 @@ theorem finiteTypePoints_eq_setOf_isClosed_singleton
 
 [Tag 0BA6](https://stacks.math.columbia.edu/tag/0BA6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_jacobson_atlas_iff_jacobsonSpace_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonPointSpace.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonPointSpace.lean#L295).
+**`AlgebraicGeometry.Space.exists_jacobson_atlas_iff_jacobsonSpace_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/JacobsonPointSpace.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/JacobsonPointSpace.lean#L295).
 
 > **Stacks 0BA6.** A decent algebraic space `X` over `S` is Jacobson — the Jacobson
 > condition being written as the existence of a surjective étale atlas by a Jacobson scheme —
@@ -143,7 +143,7 @@ theorem exists_jacobson_atlas_iff_jacobsonSpace_points
 
 [Tag 0ED2](https://stacks.math.columbia.edu/tag/0ED2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.stacksSober_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L224). The attribute's comment: “sobriety”.
+**`AlgebraicGeometry.Space.stacksSober_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L224). The attribute's comment: “sobriety”.
 
 > **Stacks 0ED2, sobriety.** The proper generalizations of a point `x` of a decent
 > algebraic space over `S` form a sober topological space, sobriety being that of Stacks 004X:
@@ -155,7 +155,7 @@ theorem stacksSober_properGeneralizations (hX : IsAlgebraicSpace B S hS X)
     StacksSober {x' : points B S hS X // x' ⤳ x ∧ x' ≠ x}
 ```
 
-**`AlgebraicGeometry.Space.spectralSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L235). The attribute's comment: “spectrality”.
+**`AlgebraicGeometry.Space.spectralSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L235). The attribute's comment: “spectrality”.
 
 > **Stacks 0ED2, spectrality.** The proper generalizations of a point `x` of a decent
 > locally Noetherian algebraic space over `S` form a spectral topological space.
@@ -168,7 +168,7 @@ theorem spectralSpace_properGeneralizations (hX : IsAlgebraicSpace B S hS X)
     SpectralSpace {x' : points B S hS X // x' ⤳ x ∧ x' ≠ x}
 ```
 
-**`AlgebraicGeometry.Space.jacobsonSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L252). The attribute's comment: “the Jacobson property”.
+**`AlgebraicGeometry.Space.jacobsonSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProperGeneralizations.lean#L252). The attribute's comment: “the Jacobson property”.
 
 > **Stacks 0ED2, the Jacobson property.** The proper generalizations of a point `x` of a
 > decent locally Noetherian algebraic space over `S` form a Jacobson topological space.
@@ -181,7 +181,7 @@ theorem jacobsonSpace_properGeneralizations (hX : IsAlgebraicSpace B S hS X)
     JacobsonSpace {x' : points B S hS X // x' ⤳ x ∧ x' ≠ x}
 ```
 
-**`AlgebraicGeometry.Space.noetherianSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGeneralizations.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperGeneralizations.lean#L50). The attribute's comment: “the Noetherian property”.
+**`AlgebraicGeometry.Space.noetherianSpace_properGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGeneralizations.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperGeneralizations.lean#L50). The attribute's comment: “the Noetherian property”.
 
 > **Stacks 0ED2, the Noetherian property.** The proper generalizations of a point `x` of a
 > locally Noetherian algebraic space over `S` form a Noetherian topological space.
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.23, Tag 0BA2](https://stacks.math.columbia.edu/tag/0BA2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

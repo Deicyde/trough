@@ -7,7 +7,7 @@ statement: formalized
 
 # Pillai's gcd-sum function
 
-19 results, 6 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html).
+19 results, 6 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html).
 
 ## Dirichlet series of the gcd-sum function
 
@@ -23,7 +23,7 @@ function $\varphi$, which gives the factorization $\zeta(s-1) \cdot (\zeta(s-1)/
 
 - Kevin A. Broughan, "The gcd-sum function," Journal of Integer Sequences 4 (2001), Article 01.2.2, Theorem (unlabeled), equations (labels 12, 8), lines 336–349, https://cs.uwaterloo.ca/journals/JIS/VOL4/BROUGHAN/gcdsum.tex
 
-Formalized by `MetaMathlibExt.dirichlet_series_gcd_sum`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/GcdSumDirichlet.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/GcdSumDirichlet.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#dirichlet-series-gcd-sum).
+Formalized by `MetaMathlibExt.dirichlet_series_gcd_sum`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/GcdSumDirichlet.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/GcdSumDirichlet.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#dirichlet-series-gcd-sum).
 
 ## The gcd-sum as a divisor sum of totients
 
@@ -38,7 +38,7 @@ equals $\sum_{e \mid n} e \, \varphi(n/e)$.
 
 - Kevin A. Broughan, "The Gcd-Sum Function," Journal of Integer Sequences 4 (2001), Article 01.2.2, Theorem 2.3, lines 220–226, https://cs.uwaterloo.ca/journals/JIS/VOL4/BROUGHAN/gcdsum.tex
 
-Formalized by `MetaMathlibExt.gcd_sum_eq_totient_sum`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/GcdSumTotient.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/GcdSumTotient.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-eq-totient-sum).
+Formalized by `MetaMathlibExt.gcd_sum_eq_totient_sum`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/GcdSumTotient.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/GcdSumTotient.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-eq-totient-sum).
 
 ## The mean gcd-sum function
 
@@ -50,7 +50,7 @@ $A(n) = P(n)/n$ for $n \ge 1$ and $A(0) = 0$.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Section 1 (definition of `A(n)`).
 
-Formalized by `MetaMathlibExt.gcdSumMean`, a definition declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean).
+Formalized by `MetaMathlibExt.gcdSumMean`, a definition declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean).
 
 ## The mean gcd-sum function at $1$
 
@@ -60,7 +60,7 @@ The mean gcd-sum function $A$ satisfies $A(1) = 1$.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Section 1 (definition of `A(n)`).
 
-Formalized by `MetaMathlibExt.gcdSumMean_one`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-one).
+Formalized by `MetaMathlibExt.gcdSumMean_one`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-one).
 
 ## The mean gcd-sum function at $2$
 
@@ -72,7 +72,7 @@ and $P(2) = \gcd(1, 2) + \gcd(2, 2) = 3$.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Section 1 (definition of `A(n)`).
 
-Formalized by `MetaMathlibExt.gcdSumMean_two`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-two).
+Formalized by `MetaMathlibExt.gcdSumMean_two`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-two).
 
 ## Divisor-sum formula for the mean gcd-sum function
 
@@ -84,7 +84,7 @@ Euler's totient function and the sum runs over the positive divisors $d$ of $n$.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Section 1 (Pillai's identity).
 
-Formalized by `MetaMathlibExt.gcdSumMean_eq_sum_totient_div`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-eq-sum-totient-div).
+Formalized by `MetaMathlibExt.gcdSumMean_eq_sum_totient_div`, a theorem declared in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-eq-sum-totient-div).
 
 ## Asymptotic formula for the second moment of the mean gcd-sum function
 
@@ -99,7 +99,7 @@ O\left(x^{1/2} \exp\left(C (\log \log x)^2\right)\right).$$
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_sq_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-sq-asymptotic).
+Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_sq_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-sq-asymptotic).
 
 ## Asymptotic formula for the third moment of the mean gcd-sum function
 
@@ -114,7 +114,7 @@ O\left(x^{5/8} \exp\left(C (\log \log x)^2\right)\right).$$
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_cube_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-cube-asymptotic).
+Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_cube_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-cube-asymptotic).
 
 ## Asymptotic formula for the fourth moment of the mean gcd-sum function
 
@@ -128,7 +128,7 @@ $$\sum_{1 \le n \le x} A(n)^4 = x P(\log x) + O_\varepsilon\left(x^{157/199 + \v
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_pow_four_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-pow-four-asymptotic).
+Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_pow_four_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-pow-four-asymptotic).
 
 ## Asymptotic formula for the higher moments of the mean gcd-sum function
 
@@ -144,7 +144,7 @@ O_{k,\varepsilon}\left(x^{1 + 2\varepsilon - 42/(13 \cdot 2^k - 9)}\right).$$
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_pow_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-pow-asymptotic).
+Stated but not proved: `MetaMathlibExt.sum_gcdSumMean_pow_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#sum-gcd-sum-mean-pow-asymptotic).
 
 ## Factorization of the Dirichlet series of powers of the mean gcd-sum function
 
@@ -170,7 +170,7 @@ $\tilde G_{k,2}$, which is not stated here.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.LSeries_gcdSumMean_pow_eq_riemannZeta_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#lseries-gcd-sum-mean-pow-eq-riemann-zeta).
+Stated but not proved: `MetaMathlibExt.LSeries_gcdSumMean_pow_eq_riemannZeta_pow_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#lseries-gcd-sum-mean-pow-eq-riemann-zeta).
 
 ## An alternating binomial sum vanishes
 
@@ -194,7 +194,7 @@ index, so the truncated sum is no longer the coefficient read off from the paper
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.alternating_choose_two_pow_mul_pow_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#alternating-choose-two-pow-mul-pow-eq-ze).
+Stated but not proved: `MetaMathlibExt.alternating_choose_two_pow_mul_pow_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#alternating-choose-two-pow-mul-pow-eq-ze).
 
 ## Dirichlet series of the square of the mean gcd-sum function
 
@@ -213,7 +213,7 @@ $\operatorname{Re} s > 0$.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.LSeries_gcdSumMean_sq_eq_riemannZeta_pow_four_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#lseries-gcd-sum-mean-sq-eq-riemann-zeta).
+Stated but not proved: `MetaMathlibExt.LSeries_gcdSumMean_sq_eq_riemannZeta_pow_four_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#lseries-gcd-sum-mean-sq-eq-riemann-zeta).
 
 ## Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$
 
@@ -226,7 +226,7 @@ $$\int_{T/2}^{T} |\zeta(5/8 + it)|^8 \, dt \le C T (\log T)^{38}.$$
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.riemannZeta_eighth_moment_five_eighths_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-eighth-moment-five-eighths).
+Stated but not proved: `MetaMathlibExt.riemannZeta_eighth_moment_five_eighths_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-eighth-moment-five-eighths).
 
 ## Lemma 3
 
@@ -239,7 +239,7 @@ by the integration range and omitted.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.riemannZeta_twelfth_moment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-twelfth-moment-asymptotic).
+Stated but not proved: `MetaMathlibExt.riemannZeta_twelfth_moment_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-twelfth-moment-asymptotic).
 
 ## A weighted fourth-moment bound for $\zeta$ on the critical line
 
@@ -252,7 +252,7 @@ $$\int_{10}^{T} \frac{|\zeta(1/2 + it)|^4}{|\zeta(1 + 2it)|} \, dt \le C T (\log
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.riemannZeta_fourth_moment_div_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-fourth-moment-div-le).
+Stated but not proved: `MetaMathlibExt.riemannZeta_fourth_moment_div_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#riemann-zeta-fourth-moment-div-le).
 
 ## Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height
 
@@ -272,7 +272,7 @@ consequence is not part of this statement.
 
 - M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.exists_riemannZeta_norm_le_exp_loglog_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#exists-riemann-zeta-norm-le-exp-loglog-s).
+Stated but not proved: `MetaMathlibExt.exists_riemannZeta_norm_le_exp_loglog_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMomentsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMomentsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#exists-riemann-zeta-norm-le-exp-loglog-s).
 
 ## Mean square of the error term for gcd-sum moments under RH
 
@@ -289,7 +289,7 @@ $$\int_1^T E(u)^2 \, du \le C \, T^{2 - 1/2^k} \exp\left(\frac{2 \eta \log T}{\l
 
 - Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.gcdSumMean_pow_error_sq_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-pow-error-sq-integral-le).
+Stated but not proved: `MetaMathlibExt.gcdSumMean_pow_error_sq_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-pow-error-sq-integral-le).
 
 ## Integral of the error term for gcd-sum moments under RH
 
@@ -307,7 +307,7 @@ $$\left|\int_1^T E(u) \, du\right| \le C \, T^{3/2 - 1/2^{k+1}}
 
 - Isao Kiuchi and Yuki Tsuruta, *Mean Square Estimates for GCD-Sum Functions*, INTEGERS 25 (2025), Article A53, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.gcdSumMean_pow_error_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-pow-error-integral-le).
+Stated but not proved: `MetaMathlibExt.gcdSumMean_pow_error_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GcdSumMeanSquareWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html#gcd-sum-mean-pow-error-integral-le).
 
 ## Depends on
 
@@ -316,4 +316,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pillai's gcd-sum function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/pillai-s-gcd-sum-function)

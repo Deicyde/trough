@@ -1,47 +1,38 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Examples.CurveFamilyNotScheme.not_exists_scheme_of_no_dominating_closed_avoiding
+lean: Stacks.Examples.CurveFamilyNotScheme.exists_curveFamily_total_not_scheme
 statement: formalized
 proof: formalized
 ---
 
 # 110.69 A family of curves whose total space is not a scheme
 
-Section 110.69 of the Stacks Project, [Tag 0D5D](https://stacks.math.columbia.edu/tag/0D5D). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.69 of the Stacks Project, [Tag 0D5D](https://stacks.math.columbia.edu/tag/0D5D). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D5E, a lemma
 
 [Tag 0D5E](https://stacks.math.columbia.edu/tag/0D5E) in the Stacks Project.
 
-**`Stacks.Examples.CurveFamilyNotScheme.not_exists_scheme_of_no_dominating_closed_avoiding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/CurveFamilyNotScheme.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/CurveFamilyNotScheme.lean#L197). The attribute's comment: “the obstruction: no scheme carries the geometry of the construction, conditional on Artin's contraction theorem and on the choice of the point on the central fibre, whose outputs are the hypotheses”.
+**`Stacks.Examples.CurveFamilyNotScheme.exists_curveFamily_total_not_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/CurveFamilyNotScheme/Main.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/CurveFamilyNotScheme/Main.lean#L63). The attribute's comment: “with k = ℂ: a family of curves over A¹\_ℂ in the sense of Tag 0D4Z, Artin's contraction of the strict transform of the central fibre of the blown-up cubic surface, whose total space is not isomorphic to the algebraic space of any scheme”.
 
-> **Stacks 0D5E.** There exists a field `k` and a family of curves `X → A¹_k` such that `X` is
-> not a scheme.
+> **A family of curves whose total space is not a scheme** ([Stacks, Tag 0D5E]). There are a
+> field `k` and a family of curves `F` (Stacks 0D4Z: a flat, proper morphism of finite
+> presentation of relative dimension at most one, from an algebraic space over `Spec ℤ` to a
+> scheme) in a big fppf site, whose base is the affine line `A¹_k = Spec k[t]` and whose total space
+> is not isomorphic to the algebraic space of any scheme.
 >
-> What is proved is the obstruction: no *scheme* carries the geometry that the construction
-> produces. Explicitly, there is no scheme `X` with a proper morphism `f : X ⟶ S` to an affine base
-> whose fibres are all infinite, together with a point `x` of `X` such that no closed subset of `X`
-> avoiding `x` surjects onto `S`.
->
-> The total space of the source's family satisfies the three hypotheses with `S = A¹_k`: it is
-> proper over the affine line with one-dimensional, hence infinite, fibres, and the point `x` to
-> which the strict transform of the central fibre is contracted is avoided by no dominating closed
-> subset, because such a subset would push down to a proper closed subscheme of the cubic surface
-> `Y` dominating the affine line and meeting `Y₀` only in the chosen point `y`. So the total space
-> is not a scheme.
->
-> What is *not* proved is that the family exists. Its construction needs Artin's contraction
-> theorem for algebraic spaces, which this library does not have, and the point `y` on the Fermat
-> cubic is chosen by a countability argument against the Picard group of the rational surface `Y`;
-> both are inputs rather than conclusions here, and what they deliver is precisely the third
-> hypothesis below.
+> The construction is that of Stacks, Section 0D5D, with `k = ℂ`: `Y ⊆ ℙ²_{k[t]}` is the cubic
+> surface `T₀ ^ 3 + T₁ ^ 3 + T₂ ^ 3 - t T₀ T₁ T₂ = 0`, `y` a point of the central fibre `Y₀` with
+> property (2), `Z` the blowup of `Y` at `y` and `C ⊆ Z` the strict transform of `Y₀`; the total
+> space of `F` is Artin's contraction of `C` (Stacks 0GIB), read over `Spec ℤ`.
 
 ```lean
-theorem not_exists_scheme_of_no_dominating_closed_avoiding (S : Scheme.{u}) [IsAffine S] :
-    ¬ ∃ (X : Scheme.{u}) (f : X ⟶ S) (_ : IsProper f) (x : X),
-        (∀ s : S, ¬ (f ⁻¹' {s}).Finite) ∧
-          ∀ T : Set X, IsClosed T → x ∉ T → ∃ s : S, ∀ y ∈ T, f y ≠ s
+theorem exists_curveFamily_total_not_scheme :
+    ∃ (k : Type) (_ : Field k) (B : BigFppfSite.{0}) (hZ : B.Contains integerBase)
+      (F : AlgebraicGeometry.CurveFamily B hZ),
+      Nonempty (F.base.left.obj ≅ Spec (CommRingCat.of (Polynomial k))) ∧
+        ¬ ∃ V : BigFppfOver B integerBase hZ, Nonempty (F.total ≅ schemeSpace V)
 ```
 
 ## Depends on
@@ -51,4 +42,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.69, Tag 0D5D](https://stacks.math.columbia.edu/tag/0D5D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

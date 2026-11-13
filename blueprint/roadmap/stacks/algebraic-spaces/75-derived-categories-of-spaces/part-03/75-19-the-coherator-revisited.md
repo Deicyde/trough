@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.19 The coherator revisited
 
-Section 75.19 of the Stacks Project, [Tag 0CR3](https://stacks.math.columbia.edu/tag/0CR3). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.19 of the Stacks Project, [Tag 0CR3](https://stacks.math.columbia.edu/tag/0CR3). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CR4, a lemma
 
 [Tag 0CR4](https://stacks.math.columbia.edu/tag/0CR4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLeftAdjoint_ι_derivedCategoryB_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoherator.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoherator.lean#L365).
+**`AlgebraicGeometry.Space.isLeftAdjoint_ι_derivedCategoryB_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoherator.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoherator.lean#L366).
 
 > **Stacks 0CR4.**  Let `S` be a scheme and `X` a quasi-compact and quasi-separated algebraic
 > space over `S`.  The inclusion functor `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a right adjoint, the coherator
@@ -36,7 +36,7 @@ theorem isLeftAdjoint_ι_derivedCategoryB_isQuasicoherentOnSite
         (ringSheaf (smallEtaleRingedSite B S hS X.1 X.2).O))).ι.IsLeftAdjoint
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedInclusion_isLeftAdjoint_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsCoherator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsCoherator.lean#L109).
+**`AlgebraicGeometry.Space.quasicoherentDerivedInclusion_isLeftAdjoint_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsCoherator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/QcqsCoherator.lean#L109).
 
 > **Stacks 0CR4.**  Let `S` be a scheme and let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S`.  The inclusion functor `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a right adjoint.
@@ -60,13 +60,13 @@ theorem quasicoherentDerivedInclusion_isLeftAdjoint_of_qcqs
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.quasicoherentDerivedPushforwardCompCoheratorIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedAdjunction.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardTags.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardTags.lean#L29) (StacksFrontier).
+- [`AlgebraicGeometry.Space.quasicoherentDerivedPushforwardCompCoheratorIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedAdjunction.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardTags.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPushforwardTags.lean#L29) (StacksFrontier).
 
 ## Tag 0CR6, a remark
 
 [Tag 0CR6](https://stacks.math.columbia.edu/tag/0CR6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.coherator_edsMayerVietoris_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CoheratorMayerVietoris.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CoheratorMayerVietoris.lean#L298).
+**`AlgebraicGeometry.Space.coherator_edsMayerVietoris_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CoheratorMayerVietoris.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CoheratorMayerVietoris.lean#L298).
 
 > **Stacks 0CR6.**  Let `S` be a scheme and `(U ⊆ X, j_V : V ⟶ X)` an elementary distinguished
 > square of algebraic spaces over `S` (here `X = W`, `U = Uo`, `j_V = fV`) with `X`, `U` and `V`
@@ -211,7 +211,7 @@ theorem coherator_edsMayerVietoris_triangle
 
 [Tag 0CSS](https://stacks.math.columbia.edu/tag/0CSS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isZero_homology_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorBounded.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorBounded.lean#L757).
+**`AlgebraicGeometry.Space.exists_isZero_homology_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorBounded.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorBounded.lean#L756).
 
 > **Stacks 0CSS.**  Let `S` be a scheme and `X` a quasi-compact and quasi-separated algebraic
 > space over `S`, and let `DQ_X` be the right adjoint of the inclusion `D_QCoh(𝒪_X) ⥤ D(𝒪_X)`
@@ -251,7 +251,7 @@ theorem exists_isZero_homology_coherator_obj (X : AlgebraicSpaces B S hS)
 
 [Tag 0CST](https://stacks.math.columbia.edu/tag/0CST) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L107). The attribute's comment: “assertion DQ\_X(R lim F\_n) = (R lim in D\_QCoh(O\_X))(F\_n): for every right adjoint DQ of the inclusion D\_QCoh(O\_X) -> D(O\_X), at every model of D(O\_X), and every inverse system in D\_QCoh(O\_X); DQ\_X exists on a qcqs X by 0CR4”.
+**`AlgebraicGeometry.Space.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L107). The attribute's comment: “assertion DQ\_X(R lim F\_n) = (R lim in D\_QCoh(O\_X))(F\_n): for every right adjoint DQ of the inclusion D\_QCoh(O\_X) -> D(O\_X), at every model of D(O\_X), and every inverse system in D\_QCoh(O\_X); DQ\_X exists on a qcqs X by 0CR4”.
 
 > **Stacks 0CST, the coherator commutes with derived limits.**  Let `X` be an algebraic space
 > over `S`, `DQ` a right adjoint of the inclusion `ι : D_QCoh(𝒪_X) ⥤ D(𝒪_X)` and `F` an inverse
@@ -285,7 +285,7 @@ theorem isDerivedLimit_coherator_obj
       IsDerivedLimit F (DQ.obj L)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_homology_chartSections_iso_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L254). The attribute's comment: “assertion H^i(U, K) = H^i(R lim Gamma(U, F\_n)) for K = R lim F\_n in D(O\_X) and U affine etale over X; R lim Gamma(U, F\_n) is any derived limit in D(Ab), at any models; H^i(U, K) is computed on a K-injective representative, as in 0CSS”.
+**`AlgebraicGeometry.Space.nonempty_homology_chartSections_iso_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L254). The attribute's comment: “assertion H^i(U, K) = H^i(R lim Gamma(U, F\_n)) for K = R lim F\_n in D(O\_X) and U affine etale over X; R lim Gamma(U, F\_n) is any derived limit in D(Ab), at any models; H^i(U, K) is computed on a K-injective representative, as in 0CSS”.
 
 > **Stacks 0CST, `H^i(U, K) = H^i(R lim Γ(U, 𝓕ₙ))`.**  Let `(𝓕ₙ)` be an inverse system of
 > quasi-coherent `𝒪_X`-modules on an algebraic space `X`, let `L = R lim 𝓕ₙ` be a derived limit in
@@ -317,7 +317,7 @@ theorem nonempty_homology_chartSections_iso_of_isDerivedLimit_single
       I).homology i ≅ (DerivedCategory.homologyFunctor AddCommGrpCat.{u} i).obj R)
 ```
 
-**`AlgebraicGeometry.Space.isZero_homology_chartSections_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L289). The attribute's comment: “assertion H^i(U, R lim F\_n) = 0 for i outside [0, 1] and U affine etale over X, at any model of D(O\_X)”.
+**`AlgebraicGeometry.Space.isZero_homology_chartSections_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L289). The attribute's comment: “assertion H^i(U, R lim F\_n) = 0 for i outside [0, 1] and U affine etale over X, at any model of D(O\_X)”.
 
 > **Stacks 0CST, `H^i(U, K) = 0` unless `i ∈ [0, 1]`.**  Let `(𝓕ₙ)` be an inverse system of
 > quasi-coherent `𝒪_X`-modules on an algebraic space `X` and `L = R lim 𝓕ₙ` a derived limit in
@@ -339,7 +339,7 @@ theorem isZero_homology_chartSections_of_isDerivedLimit_single
       I).homology i)
 ```
 
-**`AlgebraicGeometry.Space.exists_isZero_homology_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L344). The attribute's comment: “conclusion: the R lim in D\_QCoh(O\_X), i.e. DQ\_X(R lim F\_n), lies in D^b\_QCoh(O\_X) and has vanishing cohomology sheaves in negative degrees (in [0, 1 + N], N = N(X) uniform), by 0CSS; at the standard model, the one of 0CSS”.
+**`AlgebraicGeometry.Space.exists_isZero_homology_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedCoheratorInverseLimit.lean#L344). The attribute's comment: “conclusion: the R lim in D\_QCoh(O\_X), i.e. DQ\_X(R lim F\_n), lies in D^b\_QCoh(O\_X) and has vanishing cohomology sheaves in negative degrees (in [0, 1 + N], N = N(X) uniform), by 0CSS; at the standard model, the one of 0CSS”.
 
 > **Stacks 0CST, `DQ_X(R lim 𝓕ₙ)` is in `D^b_QCoh(𝒪_X)` with no negative cohomology.**  Let
 > `X` be a quasi-compact and quasi-separated algebraic space over `S` and `DQ` a right adjoint of
@@ -381,4 +381,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.19, Tag 0CR3](https://stacks.math.columbia.edu/tag/0CR3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

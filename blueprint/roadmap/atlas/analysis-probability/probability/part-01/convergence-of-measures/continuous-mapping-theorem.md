@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuous mapping theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html).
 
 ## Probability Theory
 
@@ -26,7 +26,7 @@ bounded continuous function $f : \mathbb{R} \to \mathbb{R}$.
 
 - Lecture 12, continuous mapping theorem.
 
-Formalized by `ProbabilityTheory.continuous_mapping`, a theorem declared in [MathlibExt/Probability/ContinuousMapping.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ContinuousMapping.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html#continuous-mapping).
+Formalized by `ProbabilityTheory.continuous_mapping`, a theorem declared in [MathlibExt/Probability/ContinuousMapping.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ContinuousMapping.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html#continuous-mapping).
 
 ## Continuous mapping theorem for weak convergence of probability measures
 
@@ -42,7 +42,7 @@ This generalizes the case where $g$ is continuous everywhere, which is already i
 
 - Lecture 12, continuous mapping theorem.
 
-Formalized by `MeasureTheory.ProbabilityMeasure.tendsto_map_of_tendsto_of_ae_continuous`, a theorem declared in [MathlibExt/Probability/ContinuousMapping.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ContinuousMapping.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html#tendsto-map-of-tendsto-of-ae-continuous).
+Formalized by `MeasureTheory.ProbabilityMeasure.tendsto_map_of_tendsto_of_ae_continuous`, a theorem declared in [MathlibExt/Probability/ContinuousMapping.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ContinuousMapping.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html#tendsto-map-of-tendsto-of-ae-continuous).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuous mapping theorem](https://deicyde.github.io/atlas-lean/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/convergence-of-measures/continuous-mapping-theorem)

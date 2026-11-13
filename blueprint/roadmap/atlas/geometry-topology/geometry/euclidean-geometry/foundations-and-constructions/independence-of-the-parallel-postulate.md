@@ -7,7 +7,7 @@ statement: formalized
 
 # Independence of the parallel postulate
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html).
 
 ## Tarski's absolute plane geometry
 
@@ -34,7 +34,7 @@ $B(b, c, a)$ or $B(c, a, b)$;
 $x \in X$ and $y \in Y$, then there is a point $b$ with $B(x, b, y)$ for all $x \in X$ and
 $y \in Y$.
 
-Formalized by `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.TarskiAbsolute`, a class declared in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ParallelPostulateWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#tarski-absolute).
+Formalized by `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.TarskiAbsolute`, a class declared in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ParallelPostulateWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#tarski-absolute).
 
 ## Tarski's Euclidean axiom
 
@@ -47,7 +47,7 @@ $B(a, b, x)$, $B(a, c, y)$ and $B(x, t, y)$.
 In the presence of the other axioms of absolute geometry, this axiom is equivalent to Euclid's
 parallel postulate.
 
-Formalized by `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.Euclidean`, a definition declared in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ParallelPostulateWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#euclidean).
+Formalized by `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.Euclidean`, a definition declared in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ParallelPostulateWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#euclidean).
 
 ## Independence of the parallel postulate
 
@@ -59,7 +59,7 @@ the Euclidean axiom holds, and there is a model of absolute plane geometry in wh
 
 - Independence of Euclid's parallel postulate; the hyperbolic-plane models are due to E. Beltrami (1868) and F. Klein (1871). Tarski's axiomatization: W. Schwabhäuser, W. Szmielew, A. Tarski, Metamathematische Methoden in der Geometrie, Springer (1983). Formalized in HOL Light by John Harrison and in Isabelle by Tim Makarios (T.J.M. Makarios, A Mechanical Verification of the Independence of Tarski's Euclidean Axiom, MSc thesis, Victoria University of Wellington, 2012; Isabelle/AFP entry Tarskis_Geometry). Problem `parallel_postulate_independent` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.parallel_postulate_independent` is written with `theorem_wanted` in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/ParallelPostulateWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#parallel-postulate-independent).
+Stated but not proved: `MathlibExt.Geometry.ParallelPostulateWanted.Geometry.parallel_postulate_independent` is written with `theorem_wanted` in [WantedExt/Geometry/ParallelPostulateWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/ParallelPostulateWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html#parallel-postulate-independent).
 
 ## Depends on
 
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Independence of the parallel postulate](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/foundations-and-constructions/independence-of-the-parallel-postulate)

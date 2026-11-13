@@ -7,7 +7,7 @@ statement: formalized
 
 # Totient of the sum of divisors
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html).
 
 ## Pollack–Pomerance sieve bound
 
@@ -20,7 +20,7 @@ $A_P(x) = \sum_{p \in P,\ p \le x} 1/p$.
 
 - Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Lemma 1, quoting Pollack and Pomerance, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_free_of_prime_set_le_exp_neg_sum_inv` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-free-of-prime-set-le-exp-neg-sum-in).
+Stated but not proved: `MetaMathlibExt.card_free_of_prime_set_le_exp_neg_sum_inv` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-free-of-prime-set-le-exp-neg-sum-in).
 
 ## Integers whose sum of divisors is not divisible by $p$
 
@@ -33,7 +33,7 @@ $C x (\log \log x / \log x)^{1/(p-1)}$.
 
 - Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_not_dvd_sigma_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-not-dvd-sigma-le).
+Stated but not proved: `MetaMathlibExt.card_not_dvd_sigma_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-not-dvd-sigma-le).
 
 ## Upper bound for the number of $n$ with $\varphi(\sigma(n)) \ge c n$
 
@@ -54,7 +54,7 @@ The bound is only claimed for large $x$ since it needs $\log_4 x > 0$, that is, 
 
 - Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_totient_sigma_ge_mul_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-ge-mul-le).
+Stated but not proved: `MetaMathlibExt.card_totient_sigma_ge_mul_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-ge-mul-le).
 
 ## How often $\varphi(\sigma(n)) \ge n / f(n)$
 
@@ -75,7 +75,7 @@ and $P_f(x) = o(x)$.
 
 - Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_totient_sigma_ge_div_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-ge-div-is-big-o).
+Stated but not proved: `MetaMathlibExt.card_totient_sigma_ge_div_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-ge-div-is-big-o).
 
 ## Exceptions to $\varphi(\sigma(n)) \le n / \log_5 n$
 
@@ -91,7 +91,7 @@ $O$-term.
 
 - Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.card_totient_sigma_gt_div_log_five_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-gt-div-log-five-is-bi).
+Stated but not proved: `MetaMathlibExt.card_totient_sigma_gt_div_log_five_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TotientSigmaDistributionWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html#card-totient-sigma-gt-div-log-five-is-bi).
 
 ## Depends on
 
@@ -100,4 +100,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Totient of the sum of divisors](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/totient-of-the-sum-of-divisors)

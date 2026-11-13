@@ -8,7 +8,7 @@ proof: formalized
 
 # A- and Z-sequences of Riordan arrays
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html).
 
 ## A- and Z-sequence characterization of integer Riordan arrays
 
@@ -37,7 +37,7 @@ the route of Barry's Proposition Char following He and Sprugnoli's Theorems 2.1 
 
 - P. Barry, *A Note on a Family of Generalized Pascal Matrices Defined by Riordan Arrays*, Journal of Integer Sequences 16 (2013), Article 13.5.4, Proposition Char, lines 173-180, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Barry2/barry231.tex>, after Theorems 2.1 and 2.2 of He.
 
-Formalized by `MetaMathlibExt.riordan_iff_AZ_sequences`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanAZSequences.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RiordanAZSequences.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-iff-az-sequences).
+Formalized by `MetaMathlibExt.riordan_iff_AZ_sequences`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanAZSequences.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RiordanAZSequences.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-iff-az-sequences).
 
 ## Inverse of a Riordan array from its A- and Z-sequences (one-sided form)
 
@@ -54,7 +54,7 @@ Here $A$ and $Z$ are the generating functions of the A- and Z-sequences of the R
 $(g, f)$, and the pair on the left is its inverse. Only $f(\bar f(x)) = x$ is assumed, not also
 $\bar f(f(x)) = x$.
 
-Formalized by `MetaMathlibExt.riordan_array_inverse_via_a_and_z_sequences_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-array-inverse-via-a-and-z-sequen).
+Formalized by `MetaMathlibExt.riordan_array_inverse_via_a_and_z_sequences_general`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-array-inverse-via-a-and-z-sequen).
 
 ## Inverse of a Riordan array from its A- and Z-sequences
 
@@ -76,7 +76,7 @@ $\bar f(f(x)) = x$ is not needed for the conclusion; it is kept to match the sou
 
 - Paul Barry and Aoife Hennessy, "Meixner-Type Results for Riordan Arrays and Associated Integer Sequences," Journal of Integer Sequences 13 (2010), Article 10.9.4, Lemma, lines 280-283, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Barry5/barry96s.tex>. The paper attributes this formula to Luzon.
 
-Formalized by `MetaMathlibExt.riordan_array_inverse_via_a_and_z_sequences`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-array-inverse-via-a-and-z-sequen-2).
+Formalized by `MetaMathlibExt.riordan_array_inverse_via_a_and_z_sequences`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/RiordanArrayInverse.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html#riordan-array-inverse-via-a-and-z-sequen-2).
 
 ## Depends on
 
@@ -85,4 +85,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: A- and Z-sequences of Riordan arrays](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/a-and-z-sequences-of-riordan-arrays)

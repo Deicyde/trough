@@ -2,11 +2,11 @@
 navigation: transparent
 ---
 
-# 52.10 Algebraization of local… to 52.15 The completion functor
+# 52.23 Algebraization of… to 52.28 Application to Lefschetz…
 
-- [52.10 Algebraization of local cohomology, III](52-10-algebraization-of-local-cohomology-iii.md)
-- [52.11 Algebraization of formal sections, I](52-11-algebraization-of-formal-sections-i.md)
-- [52.12 Algebraization of formal sections, II](52-12-algebraization-of-formal-sections-ii.md)
-- [52.13 Algebraization of formal sections, III](52-13-algebraization-of-formal-sections-iii.md)
-- [52.14 Application to connectedness](52-14-application-to-connectedness.md)
-- [52.15 The completion functor](52-15-the-completion-functor.md)
+- [52.23 Algebraization of coherent formal modules, VI](52-23-algebraization-of-coherent-formal-modules.md)
+- [52.24 Application to the completion functor](52-24-application-to-the-completion-functor.md)
+- [52.25 Coherent triples](52-25-coherent-triples.md)
+- [52.26 Invertible modules on punctured spectra, I](52-26-invertible-modules-on-punctured-spectra-i.md)
+- [52.27 Invertible modules on punctured spectra, II](52-27-invertible-modules-on-punctured-spectra-ii.md)
+- [52.28 Application to Lefschetz theorems](52-28-application-to-lefschetz-theorems.md)

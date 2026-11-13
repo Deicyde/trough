@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.26 Presentations of deformation categories
 
-Section 90.26 of the Stacks Project, [Tag 06L0](https://stacks.math.columbia.edu/tag/06L0). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.26 of the Stacks Project, [Tag 06L0](https://stacks.math.columbia.edu/tag/06L0). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06L1, a lemma
 
 [Tag 06L1](https://stacks.math.columbia.edu/tag/06L1) in the Stacks Project.
 
-**`Deformation.presentationMorphism_isEquivalence_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/QuotientEquivalence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/CofiberedPresentation/QuotientEquivalence.lean#L44). The attribute's comment: “quotient\_equivalence”.
+**`Deformation.presentationMorphism_isEquivalence_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/QuotientEquivalence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/CofiberedPresentation/QuotientEquivalence.lean#L44). The attribute's comment: “quotient\_equivalence”.
 
 > The canonical quotient morphism associated to a smooth presentation is an equivalence if
 > the presentation is essentially surjective over the residue field.
@@ -28,7 +28,7 @@ theorem presentationMorphism_isEquivalence_of_isSmooth_of_fiber_essSurj
       (presentationGroupoid p U f.toFunctor f.w hp)).1.IsEquivalence
 ```
 
-**`Deformation.isSmooth_presentationGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Smooth.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/CofiberedPresentation/Smooth.lean#L546). The attribute's comment: “smooth\_groupoid”.
+**`Deformation.isSmooth_presentationGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Smooth.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/CofiberedPresentation/Smooth.lean#L546). The attribute's comment: “smooth\_groupoid”.
 
 > A smooth presentation has a smooth associated groupoid in functors.
 >
@@ -49,7 +49,7 @@ theorem isSmooth_presentationGroupoid
 
 [Tag 06L6](https://stacks.math.columbia.edu/tag/06L6) in the Stacks Project.
 
-**`Deformation.isDeformationFunctor_twoFibreProductOver_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean#L373). The attribute's comment: “part (1), that the 2-fibre product is a deformation functor; the exact sequence 0 → Inf(ℱ) → T(U ×\_\{f,ℱ,f} U) → TU ⊕ TU of part (2) is not covered”.
+**`Deformation.isDeformationFunctor_twoFibreProductOver_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean#L373). The attribute's comment: “part (1), that the 2-fibre product is a deformation functor; the exact sequence 0 → Inf(ℱ) → T(U ×\_\{f,ℱ,f} U) → TU ⊕ TU of part (2) is not covered”.
 
 > **Stacks Project, Tag 06L6, part (1).** Let `U : 𝒞_Λ → Sets` be a deformation functor,
 > `ℱ` a deformation category and `f : U → ℱ` a `1`-morphism of categories cofibered in
@@ -77,11 +77,11 @@ theorem isDeformationFunctor_twoFibreProductOver_self
     {F : Type u₃} [Category.{v₃} F]
     (pF : F ⥤ ArtinianLocalAlgCat.{u, max v w, w} Λ k)
     (f : U.Elements ⥤ F)
-    (hf : f ⋙ pF = CategoryOfElements.π U)
+    (hf : f ⋙ pF = Functor.Elements.π U)
     (hU : IsDeformationFunctor U)
     (hF : IsDeformationCategory pF) :
     let p𝒲 := TwoFibreProductOver.structureFunctor
-      (CategoryOfElements.π U) (CategoryOfElements.π U) pF f f
+      (Functor.Elements.π U) (Functor.Elements.π U) pF f f
     IsDeformationCategory p𝒲 ∧
       ∀ (hcof : IsCofiberedInGroupoids p𝒲)
         {A₀ Aε : ArtinianLocalAlgCat.{u, max v w, w} Λ k}
@@ -91,7 +91,7 @@ theorem isDeformationFunctor_twoFibreProductOver_self
         infinitesimalAutomorphisms hcof g e hpair i hi = ⊥
 ```
 
-**`Deformation.exact_selfBoundaryLinearMap_tangentProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean#L384). The attribute's comment: “part (2), the exact sequence of k-vector spaces 0 → Inf(ℱ) → T(U ×\_\{f,ℱ,f} U) → TU ⊕ TU”.
+**`Deformation.exact_selfBoundaryLinearMap_tangentProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean#L384). The attribute's comment: “part (2), the exact sequence of k-vector spaces 0 → Inf(ℱ) → T(U ×\_\{f,ℱ,f} U) → TU ⊕ TU”.
 
 > **Stacks Project, Tag 06L6, part (2).** Let `U : 𝒞_Λ → Sets` be a deformation functor, `ℱ` a
 > deformation category and `f : U → ℱ` a `1`-morphism of categories cofibered in groupoids over
@@ -117,7 +117,7 @@ theorem isDeformationFunctor_twoFibreProductOver_self
 public theorem exact_selfBoundaryLinearMap_tangentProjPair
     (U : ArtinianLocalAlgCat.{u, max v w, w} Λ k ⥤ Type t)
     (pF : F ⥤ ArtinianLocalAlgCat.{u, max v w, w} Λ k) (f : U.Elements ⥤ F)
-    (hf : f ⋙ pF = CategoryOfElements.π U) (hU : IsDeformationFunctor.{u, v, w} U)
+    (hf : f ⋙ pF = Functor.Elements.π U) (hU : IsDeformationFunctor.{u, v, w} U)
     (hF : IsDeformationCategory.{u, v, w} pF) {y₀ : U.Elements}
     (PH : ChosenPushforwardsAt (f ⋙ pF) y₀) (PF : ChosenPushforwardsAt pF (f.obj y₀))
     (M : FGModuleCat.{max v w} k) :
@@ -135,7 +135,7 @@ public theorem exact_selfBoundaryLinearMap_tangentProjPair
 
 [Tag 06L7](https://stacks.math.columbia.edu/tag/06L7) in the Stacks Project.
 
-**`Deformation.isProrepresentable_presentationGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Prorepresentable.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/CofiberedPresentation/Prorepresentable.lean#L402). The attribute's comment: “the hom-set universe of ℱ is at most that of 𝒞\_Λ: the base is written ArtinianLocalAlgCat.\{u, max v v₃ w, w} with v₃ the hom-set universe of ℱ, because the criterion of 06KG part (2) is available only at value universe equal to the hom-set universe”.
+**`Deformation.isProrepresentable_presentationGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Prorepresentable.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/CofiberedPresentation/Prorepresentable.lean#L402). The attribute's comment: “the hom-set universe of ℱ is at most that of 𝒞\_Λ: the base is written ArtinianLocalAlgCat.\{u, max v v₃ w, w} with v₃ the hom-set universe of ℱ, because the criterion of 06KG part (2) is available only at value universe equal to the hom-set universe”.
 
 > Let `ℱ` be a deformation category, let `U : 𝒞_Λ → Sets` be a prorepresentable functor and let
 > `f : U → ℱ` be a `1`-morphism of categories cofibered in groupoids. Let `(U, R, s, t, c)` be the
@@ -160,7 +160,7 @@ public theorem isProrepresentable_presentationGroupoid
 
 [Tag 06L8](https://stacks.math.columbia.edu/tag/06L8) in the Stacks Project.
 
-**`Deformation.hasSmoothPresentation_iff_isFiniteDimensionalDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Criteria.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/CofiberedPresentation/Criteria.lean#L532). The attribute's comment: “the tag in full: ℱ admits a presentation by a smooth prorepresentable groupoid in functors on 𝒞\_Λ iff (1) ℱ is a deformation category, (2) dim\_k Tℱ is finite and (3) dim\_k Inf(ℱ) is finite. Both directions, at the general universes of the chapter: ℱ has hom-set universe v and the base is ArtinianLocalAlgCat.\{u, max v w, w}, with no universe equation imposed. The standing hypothesis of the source that ℱ be cofibered in groupoids is not carried: it is part of condition (1) on one side, and on the other it is derived from the presentation by Deformation.isCofiberedInGroupoids\_of\_equivalenceOver. The forward direction goes through Stacks 06L2 rather than through the construction of Stacks 06L8 itself, which Deformation.exists\_isSmooth\_isProrepresentable\_presentation carries at the restricted universe”. References: SGA 7 VI (2.12), “more general”.
+**`Deformation.hasSmoothPresentation_iff_isFiniteDimensionalDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Criteria.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/CofiberedPresentation/Criteria.lean#L532). The attribute's comment: “the tag in full: ℱ admits a presentation by a smooth prorepresentable groupoid in functors on 𝒞\_Λ iff (1) ℱ is a deformation category, (2) dim\_k Tℱ is finite and (3) dim\_k Inf(ℱ) is finite. Both directions, at the general universes of the chapter: ℱ has hom-set universe v and the base is ArtinianLocalAlgCat.\{u, max v w, w}, with no universe equation imposed. The standing hypothesis of the source that ℱ be cofibered in groupoids is not carried: it is part of condition (1) on one side, and on the other it is derived from the presentation by Deformation.isCofiberedInGroupoids\_of\_equivalenceOver. The forward direction goes through Stacks 06L2 rather than through the construction of Stacks 06L8 itself, which Deformation.exists\_isSmooth\_isProrepresentable\_presentation carries at the restricted universe”. References: SGA 7 VI (2.12), “more general”.
 
 > **Stacks Project, Tag 06L8.** Let `ℱ` be a category cofibered in groupoids over `𝒞_Λ`.
 > Then `ℱ` admits a presentation by a smooth prorepresentable groupoid in functors on `𝒞_Λ` if
@@ -179,7 +179,7 @@ theorem hasSmoothPresentation_iff_isFiniteDimensionalDeformationCategory [IsNoet
     HasSmoothPresentation.{u, v, w} p ↔ IsFiniteDimensionalDeformationCategory.{u, v, w} p
 ```
 
-**`Deformation.exists_isSmooth_isProrepresentable_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Existence.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/CofiberedPresentation/Existence.lean#L155). The attribute's comment: “the construction of the tag's existence direction: (1)(2)(3) ⟹ ℱ admits a presentation by a smooth prorepresentable groupoid in functors on 𝒞\_Λ, built as the source builds it, from a versal formal object and the groupoid in functors of 06KY. Only that direction, and only when the hom-set universe of ℱ equals that of k, the restriction 06L7 carries here. The tag in full — the biconditional, at the general universes, both directions — is Deformation.hasSmoothPresentation\_iff\_isFiniteDimensionalDeformationCategory, whose existence direction goes through 06L2 instead and whose converse direction is Deformation.isFiniteDimensionalDeformationCategory\_of\_hasSmoothPresentation, proved from part (3) of 06KU, Inf([U/R]) = Ker(ds ⊕ dt), which the library now has as Deformation.quotientInfinitesimalBoundary\_exact”.
+**`Deformation.exists_isSmooth_isProrepresentable_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/CofiberedPresentation/Existence.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/CofiberedPresentation/Existence.lean#L155). The attribute's comment: “the construction of the tag's existence direction: (1)(2)(3) ⟹ ℱ admits a presentation by a smooth prorepresentable groupoid in functors on 𝒞\_Λ, built as the source builds it, from a versal formal object and the groupoid in functors of 06KY. Only that direction, and only when the hom-set universe of ℱ equals that of k, the restriction 06L7 carries here. The tag in full — the biconditional, at the general universes, both directions — is Deformation.hasSmoothPresentation\_iff\_isFiniteDimensionalDeformationCategory, whose existence direction goes through 06L2 instead and whose converse direction is Deformation.isFiniteDimensionalDeformationCategory\_of\_hasSmoothPresentation, proved from part (3) of 06KU, Inf([U/R]) = Ker(ds ⊕ dt), which the library now has as Deformation.quotientInfinitesimalBoundary\_exact”.
 
 > **Stacks Project, Tag 06L8**, the existence direction. A category `ℱ` cofibered in
 > groupoids over `𝒞_Λ` which is a deformation category and whose tangent space and space of
@@ -222,4 +222,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.26, Tag 06L0](https://stacks.math.columbia.edu/tag/06L0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

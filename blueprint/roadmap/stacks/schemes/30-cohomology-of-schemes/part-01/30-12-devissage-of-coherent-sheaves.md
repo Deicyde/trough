@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.12 Devissage of coherent sheaves
 
-Section 30.12 of the Stacks Project, [Tag 01YC](https://stacks.math.columbia.edu/tag/01YC). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.12 of the Stacks Project, [Tag 01YC](https://stacks.math.columbia.edu/tag/01YC). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01YD, a lemma
 
 [Tag 01YD](https://stacks.math.columbia.edu/tag/01YD) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageCoherent.exists_shortExact_coherent_of_supp_eq_union`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/SupportSeparation.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/SupportSeparation.lean#L241).
+**`Stacks.AlgebraicGeometry.HigherDirectImageCoherent.exists_shortExact_coherent_of_supp_eq_union`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/SupportSeparation.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/SupportSeparation.lean#L241).
 
 > **[Stacks, Tag 01YD].** A coherent module whose support is a union of two closed sets is an
 > extension of coherent modules supported on those sets: there is a short exact sequence
@@ -32,7 +32,7 @@ public theorem exists_shortExact_coherent_of_supp_eq_union
         SheafOfModules.supp G' ⊆ Z' ∧ SheafOfModules.supp G ⊆ Z
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSmul.hasSupportSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSmul/Splitting.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSmul/Splitting.lean#L78).
+**`Stacks.AlgebraicGeometry.IdealPowerSmul.hasSupportSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSmul/Splitting.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/IdealPowerSmul/Splitting.lean#L79).
 
 > **[Stacks, Tag 01YD].** A coherent module on a Noetherian scheme whose support is the union
 > of two closed sets sits in a short exact sequence of coherent modules whose sub is supported in
@@ -47,7 +47,7 @@ theorem hasSupportSplitting (X : Scheme.{u}) [IsNoetherian X] :
 
 [Tag 01YE](https://stacks.math.columbia.edu/tag/01YE) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.exists_idealCoproduct_pushforward_mono_isIso_near_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IrreducibleDevissage/GenericIdealPushforward.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IrreducibleDevissage/GenericIdealPushforward.lean#L226).
+**`Stacks.ClosedImmersion.exists_idealCoproduct_pushforward_mono_isIso_near_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IrreducibleDevissage/GenericIdealPushforward.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/IrreducibleDevissage/GenericIdealPushforward.lean#L226).
 
 > **[Stacks, Tag 01YE].** Let `X` be a Noetherian scheme, let `i : Z ⟶ X` be an integral
 > closed subscheme with generic point `ξ`, and let `ℱ` be a coherent `𝒪_X`-module whose stalk at
@@ -81,7 +81,7 @@ theorem exists_idealCoproduct_pushforward_mono_isIso_near_genericPoint
 
 [Tag 01YF](https://stacks.math.columbia.edu/tag/01YF) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentDevissage.exists_filtration_by_integral_ideal_pushforwards`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealFiltration/NoetherianInduction.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealFiltration/NoetherianInduction.lean#L638).
+**`Stacks.AlgebraicGeometry.CoherentDevissage.exists_filtration_by_integral_ideal_pushforwards`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealFiltration/NoetherianInduction.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealFiltration/NoetherianInduction.lean#L638).
 
 > **[Stacks, Tag 01YF].** A coherent module on a Noetherian scheme has a finite filtration by
 > coherent submodules, starting at `⊥` and ending at `⊤`, whose successive quotients are direct
@@ -106,7 +106,7 @@ public theorem exists_filtration_by_integral_ideal_pushforwards
 
 [Tag 01YG](https://stacks.math.columbia.edu/tag/01YG) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentDevissage.property_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealPushforwardCriterion.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealPushforwardCriterion.lean#L73).
+**`Stacks.AlgebraicGeometry.CoherentDevissage.property_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealPushforwardCriterion.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IdealPushforwardCriterion.lean#L73).
 
 > Let `X` be a Noetherian scheme and let `P` be a property of
 > coherent `𝒪_X`-modules which holds on the zero module, is stable under extensions of coherent
@@ -134,7 +134,7 @@ public theorem property_of_isCoherent (X : Scheme.{u}) [IsNoetherian X]
 
 [Tag 01YH](https://stacks.math.columbia.edu/tag/01YH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.IrreducibleSupportDevissage.property_of_irreducible_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IrreducibleSupportCriterion.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IrreducibleSupportCriterion.lean#L706).
+**`Stacks.AlgebraicGeometry.IrreducibleSupportDevissage.property_of_irreducible_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/IrreducibleSupportCriterion.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/IrreducibleSupportCriterion.lean#L706).
 
 > A two-out-of-three property of coherent sheaves holds for every sheaf
 > supported on the given irreducible closed subset if it holds on proper
@@ -171,7 +171,7 @@ public theorem property_of_irreducible_support
 
 [Tag 01YI](https://stacks.math.columbia.edu/tag/01YI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentDevissage.property_of_isCoherent_of_generic_stalk_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/GenericStalkCriterion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/GenericStalkCriterion.lean#L166).
+**`Stacks.AlgebraicGeometry.CoherentDevissage.property_of_isCoherent_of_generic_stalk_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/GenericStalkCriterion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/GenericStalkCriterion.lean#L166).
 
 > **[Stacks, Tag 01YI].** Let `X` be a nonempty Noetherian scheme and let `P` be a property of
 > coherent `𝒪_X`-modules such that
@@ -209,7 +209,7 @@ public theorem property_of_isCoherent_of_generic_stalk_of_nonempty
     ∀ F : X.Modules, _root_.SheafOfModules.IsCoherent F → P F
 ```
 
-**`Stacks.AlgebraicGeometry.GenericRankOneDevissage.property_of_genericRankOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean#L217). The attribute's comment: “corrected: the source statement is false on the empty scheme, where condition (2) is vacuous and the identically false property satisfies both hypotheses, so `P` on the zero module is added”.
+**`Stacks.AlgebraicGeometry.GenericRankOneDevissage.property_of_genericRankOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean#L217). The attribute's comment: “corrected: the source statement is false on the empty scheme, where condition (2) is vacuous and the identically false property satisfies both hypotheses, so `P` on the zero module is added”.
 
 > **The dévissage criterion of [Stacks, Tag 01YI], with the zero module added to its
 > hypotheses.** On a Noetherian scheme `X`, a property `P` of coherent modules which holds for the
@@ -245,7 +245,7 @@ theorem property_of_genericRankOne (X : Scheme.{u}) [IsNoetherian X]
     ∀ F : X.Modules, F.IsCoherent → P F
 ```
 
-**`Stacks.AlgebraicGeometry.GenericRankOneDevissage.property_of_genericRankOne_of_exists_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean#L253). The attribute's comment: “corrected: the source statement is false on the empty scheme, where condition (2) is vacuous and the identically false property satisfies both hypotheses, so the existence of one integral closed subscheme is added”.
+**`Stacks.AlgebraicGeometry.GenericRankOneDevissage.property_of_genericRankOne_of_exists_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericRankOneDevissage/Basic.lean#L253). The attribute's comment: “corrected: the source statement is false on the empty scheme, where condition (2) is vacuous and the identically false property satisfies both hypotheses, so the existence of one integral closed subscheme is added”.
 
 > **The dévissage criterion of [Stacks, Tag 01YI], with one integral closed subscheme added to
 > its hypotheses.** On a Noetherian scheme carrying at least one integral closed subscheme, a
@@ -284,7 +284,7 @@ theorem property_of_genericRankOne_of_exists_isIntegral (X : Scheme.{u}) [IsNoet
 
 [Tag 01YL](https://stacks.math.columbia.edu/tag/01YL) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.HigherRankIrreducibleDevissage.property_irreducible_higher_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/HigherRankIrreducibleCriterion.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/HigherRankIrreducibleCriterion.lean#L1080).
+**`Stacks.AlgebraicGeometry.HigherRankIrreducibleDevissage.property_irreducible_higher_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/HigherRankIrreducibleCriterion.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/HigherRankIrreducibleCriterion.lean#L1081).
 
 > **[Stacks, Tag 01YL], in the corrected form.** Let `X` be a Noetherian scheme, `Z₀` an
 > irreducible closed subset with generic point `ξ`, and `P` a property of coherent modules which
@@ -338,7 +338,7 @@ public theorem property_irreducible_higher_rank
 
 [Tag 01YM](https://stacks.math.columbia.edu/tag/01YM) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.NoetherianDevissage.property_higher_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/NoetherianDevissage.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentDevissage/NoetherianDevissage.lean#L82). The attribute's comment: “plus P on the zero sheaf, which conditions (1) and (2) do not give”.
+**`Stacks.AlgebraicGeometry.NoetherianDevissage.property_higher_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentDevissage/NoetherianDevissage.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentDevissage/NoetherianDevissage.lean#L82). The attribute's comment: “plus P on the zero sheaf, which conditions (1) and (2) do not give”.
 
 > **The dévissage of coherent sheaves on a Noetherian scheme.** A property closed under
 > extensions, descending from a nonempty finite direct sum, and holding for a suitable coherent
@@ -378,4 +378,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.12, Tag 01YC](https://stacks.math.columbia.edu/tag/01YC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

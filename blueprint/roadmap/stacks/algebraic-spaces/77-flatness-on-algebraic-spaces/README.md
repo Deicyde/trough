@@ -1,6 +1,6 @@
 # 77 Flatness on Algebraic Spaces
 
-Chapter 77 of the Stacks Project, *Flatness on Algebraic Spaces*, [Tag 0CU3](https://stacks.math.columbia.edu/tag/0CU3): the 12 sections of its 13 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 70 tags are carried by 165 declarations of the repository (all in StacksFrontier).
+Chapter 77 of the Stacks Project, *Flatness on Algebraic Spaces*, [Tag 0CU3](https://stacks.math.columbia.edu/tag/0CU3): the 12 sections of its 13 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 70 tags are carried by 156 declarations of the repository (all in StacksFrontier).
 
 - [77.2 Impurities](77-2-impurities.md)
 - [77.3 Relatively pure modules](77-3-relatively-pure-modules.md)

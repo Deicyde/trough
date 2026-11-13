@@ -7,7 +7,7 @@ statement: formalized
 
 # Comma sequences
 
-14 results, 6 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html).
+14 results, 6 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html).
 
 ## Most significant digit
 
@@ -17,7 +17,7 @@ $m \ge 1$, and $k = 0$ otherwise. The most significant digit of $m$ in base $b$ 
 $\lfloor m / b^k \rfloor$. When $b \ge 2$ and $m \ge 1$ this is the leading digit of the
 base-$b$ expansion of $m$.
 
-Formalized by `MetaMathlibExt.commaMsd`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 18](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L18). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-msd).
+Formalized by `MetaMathlibExt.commaMsd`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 18](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L18). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-msd).
 
 ## Comma candidate digits
 
@@ -30,7 +30,7 @@ For such a candidate $y$ in base $b \ge 2$, the difference $m - n = b\,(n \bmod 
 written with the base-$b$ digits $n \bmod b$ and $y$: the last digit of $n$ followed by the
 leading digit of $m$.
 
-Formalized by `MetaMathlibExt.IsCommaCandidate`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-candidate).
+Formalized by `MetaMathlibExt.IsCommaCandidate`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-candidate).
 
 ## Comma successor
 
@@ -40,7 +40,7 @@ $m = n + b\,(n \bmod b) + y$ and no digit $y' < y$ is a comma candidate for $n$ 
 
 Taking the least candidate $y$ makes $m$ the smallest possible next term.
 
-Formalized by `MetaMathlibExt.IsCommaSucc`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-succ).
+Formalized by `MetaMathlibExt.IsCommaSucc`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-succ).
 
 ## Comma-terminal numbers
 
@@ -48,7 +48,7 @@ Let $b$ and $n$ be natural numbers. Then $n$ is comma-terminal in
 base $b$ if no digit $y$ with $0 \le y < b$ is a comma candidate for $n$ in base $b$, so $n$ has
 no comma successor in base $b$.
 
-Formalized by `MetaMathlibExt.IsCommaTerminal`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminal).
+Formalized by `MetaMathlibExt.IsCommaTerminal`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminal).
 
 ## Infinite comma sequences
 
@@ -59,7 +59,7 @@ the comma successor of $a_n$ in base $b$.
 
 Indexing starts at $1$; the value $a_0$ is unconstrained.
 
-Formalized by `MetaMathlibExt.IsInfiniteCommaSeq`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-infinite-comma-seq).
+Formalized by `MetaMathlibExt.IsInfiniteCommaSeq`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-infinite-comma-seq).
 
 ## Terminating comma sequences
 
@@ -67,7 +67,7 @@ Let $b$ and $v$ be natural numbers. The comma sequence in
 base $b$ starting at $v$ terminates if $b \ge 2$, $v > 0$, and there is no infinite comma
 sequence in base $b$ starting at $v$.
 
-Formalized by `MetaMathlibExt.IsCommaTerminating`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/CommaSequence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminating).
+Formalized by `MetaMathlibExt.IsCommaTerminating`, a definition declared in [MathlibExt/NumberTheory/CommaSequence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/CommaSequence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminating).
 
 ## Comma sequences terminate in bases 3 to 633
 
@@ -79,7 +79,7 @@ is, there is no infinite comma sequence in base $b$ starting at $v$.
 
 - Dougherty, *Comma Sequences*, JIS 28, lines 134–137.
 
-Stated but not proved: `MetaMathlibExt.commaSequence_terminates_of_base_le_633` is written with `theorem_wanted` in [WantedExt/NumberTheory/CommaSequenceWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CommaSequenceWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-sequence-terminates-of-base-le-633).
+Stated but not proved: `MetaMathlibExt.commaSequence_terminates_of_base_le_633` is written with `theorem_wanted` in [WantedExt/NumberTheory/CommaSequenceWanted.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CommaSequenceWanted.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-sequence-terminates-of-base-le-633).
 
 ## Landmines of the comma sequence
 
@@ -93,7 +93,7 @@ $1 \le x \le b - 2$.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 5.1.
 
-Stated but not proved: `MetaMathlibExt.isCommaTerminal_iff_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminal-iff-digits).
+Stated but not proved: `MetaMathlibExt.isCommaTerminal_iff_digits` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#is-comma-terminal-iff-digits).
 
 ## Numbers with two comma-children
 
@@ -110,7 +110,7 @@ of middle digits $b - 1$ and $1 \le d \le b - 2$.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 5.2.
 
-Stated but not proved: `MetaMathlibExt.two_commaChildren_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#two-comma-children-iff).
+Stated but not proved: `MetaMathlibExt.two_commaChildren_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#two-comma-children-iff).
 
 ## Recovering the parent of a comma-child
 
@@ -125,7 +125,7 @@ of any positive integer.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 5.3.
 
-Stated but not proved: `MetaMathlibExt.commaChild_parent_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-child-parent-eq).
+Stated but not proved: `MetaMathlibExt.commaChild_parent_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#comma-child-parent-eq).
 
 ## Numbers that are not comma successors
 
@@ -137,7 +137,7 @@ $i \ge 2$ and some $c$ with $2 \le c \le b - 1$.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 5.4.
 
-Stated but not proved: `MetaMathlibExt.not_commaSucc_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#not-comma-succ-iff).
+Stated but not proved: `MetaMathlibExt.not_commaSucc_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#not-comma-succ-iff).
 
 ## Every number at least the square of the base is a comma-child
 
@@ -149,7 +149,7 @@ base $b$ with $n = k + b\,(k \bmod b) + y$, that is, $n$ is a comma-child of $k$
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 5.5.
 
-Stated but not proved: `MetaMathlibExt.exists_commaParent_of_sq_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-comma-parent-of-sq-le).
+Stated but not proved: `MetaMathlibExt.exists_commaParent_of_sq_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-comma-parent-of-sq-le).
 
 ## The comma-child graph has an infinite path
 
@@ -162,7 +162,7 @@ a comma-child of $a_i$.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 5.6.
 
-Stated but not proved: `MetaMathlibExt.exists_infinite_commaChild_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-infinite-comma-child-path).
+Stated but not proved: `MetaMathlibExt.exists_infinite_commaChild_path` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-infinite-comma-child-path).
 
 ## There is a unique infinite comma-child path from 1 in base 3
 
@@ -178,7 +178,7 @@ higher child); that description is not part of this statement.
 
 - Éric Angelini, Michael S. Branicky, Giovanni Resta, N. J. A. Sloane, and David W. Wilson, *The Comma Sequence: A Simple Sequence with Bizarre Properties*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 10.1.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_commaChild_path_base_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-unique-comma-child-path-base-thre).
+Stated but not proved: `MetaMathlibExt.existsUnique_commaChild_path_base_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/CommaSequenceGraphsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html#exists-unique-comma-child-path-base-thre).
 
 ## Depends on
 
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Comma sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/comma-sequences)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.27 Constructible sheaves on the pro-étale site
 
-Section 61.27 of the Stacks Project, [Tag 09AI](https://stacks.math.columbia.edu/tag/09AI). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.27 of the Stacks Project, [Tag 09AI](https://stacks.math.columbia.edu/tag/09AI). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09AJ, a definition
 
 [Tag 09AJ](https://stacks.math.columbia.edu/tag/09AJ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleModuleSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Defs.lean#L79).
+**`AlgebraicGeometry.ProEtale.IsConstructibleModuleSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/Defs.lean#L79).
 
 > **Stacks 09AJ.** A sheaf of `Λ`-modules on the small pro-étale site of `X`, with `Λ`
 > Noetherian, is *constructible* if every affine open of `X` has a finite partition into
@@ -34,7 +34,7 @@ abbrev IsConstructibleModuleSheaf (X : Scheme.{u}) (Λ : Type v) [CommRing Λ]
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsConstructibleModuleSheaf'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleSheaves.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleSheaves.lean#L85).
+**`AlgebraicGeometry.ProEtale.IsConstructibleModuleSheaf'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleSheaves.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ConstructibleSheaves.lean#L85).
 
 > **Stacks 09AJ.** A sheaf of `Λ`-modules on the small pro-étale site of `X` is
 > *constructible* when every affine open `U` of `X` admits a finite decomposition into
@@ -64,13 +64,13 @@ public abbrev IsConstructibleModuleSheaf' (X : Scheme.{u}) (Λ : Type v) [CommRi
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProEtale.isEquivalence_etaleInverseImageConstructible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ConstructibleComparison.lean#L196), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean#L66) (StacksFrontier).
+- [`AlgebraicGeometry.ProEtale.isEquivalence_etaleInverseImageConstructible`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ConstructibleComparison.lean#L196), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean#L66) (StacksFrontier).
 
 ## Tag 09B5, a lemma
 
 [Tag 09B5](https://stacks.math.columbia.edu/tag/09B5) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isWeakSerreClass_isConstructibleModuleSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/WeakSerre.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/WeakSerre.lean#L113).
+**`AlgebraicGeometry.ProEtale.isWeakSerreClass_isConstructibleModuleSheaf'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/WeakSerre.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/WeakSerre.lean#L113).
 
 > **Stacks 09B5.** For `Λ` a Noetherian ring, the constructible sheaves of `Λ`-modules on the
 > small pro-étale site of a scheme `X` form a weak Serre subcategory of all sheaves of
@@ -89,13 +89,13 @@ public theorem isWeakSerreClass_isConstructibleModuleSheaf' :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProEtale.isEquivalence_etaleInverseImageDerivedConstructible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ModuleComparisonWithEtale.lean#L346), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean#L68) (StacksFrontier).
+- [`AlgebraicGeometry.ProEtale.isEquivalence_etaleInverseImageDerivedConstructible`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ModuleComparisonWithEtale.lean#L346), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Cohomology/ComparisonWithEtaleRegistrations.lean#L68) (StacksFrontier).
 
 ## Tag 09BQ, a lemma
 
 [Tag 09BQ](https://stacks.math.columbia.edu/tag/09BQ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.minus_tensor_and_isConstructibleModuleSheaf'_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedTensor.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedTensor.lean#L158).
+**`AlgebraicGeometry.ProEtale.minus_tensor_and_isConstructibleModuleSheaf'_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedTensor.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedTensor.lean#L158).
 
 > **Stacks 09BQ.** Let `X` be a scheme and `Λ` a Noetherian ring. If `K` and `L` are bounded
 > above objects of `D(X_proét, Λ)` whose cohomology sheaves are constructible, then their derived
@@ -119,7 +119,7 @@ theorem minus_tensor_and_isConstructibleModuleSheaf'_homology
 
 [Tag 09BR](https://stacks.math.columbia.edu/tag/09BR) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.minus_and_isConstructibleModuleSheaf'_homology_derivedExtendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedReduction.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedReduction.lean#L265).
+**`AlgebraicGeometry.ProEtale.minus_and_isConstructibleModuleSheaf'_homology_derivedExtendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedReduction.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Constructible/DerivedReduction.lean#L265).
 
 > **Stacks 09BR.** Let `X` be a scheme, `Λ` a Noetherian ring, `I ⊆ Λ` an ideal and `K` an
 > object of `D(X_proét, Λ)`. Set `Kₙ = K ⊗_Λ^L Λ/Iⁿ`, the derived extension of scalars of `K` along
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.27, Tag 09AI](https://stacks.math.columbia.edu/tag/09AI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

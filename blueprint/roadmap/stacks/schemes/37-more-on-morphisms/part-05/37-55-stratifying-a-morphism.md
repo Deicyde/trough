@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.55 Stratifying a morphism
 
-Section 37.55 of the Stacks Project, [Tag 0H42](https://stacks.math.columbia.edu/tag/0H42). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.55 of the Stacks Project, [Tag 0H42](https://stacks.math.columbia.edu/tag/0H42). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H43, a lemma
 
 [Tag 0H43](https://stacks.math.columbia.edu/tag/0H43) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_smooth_stratification_at_generic_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratification.lean, line 1279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratification.lean#L1279).
+**`AlgebraicGeometry.exists_smooth_stratification_at_generic_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratification.lean, line 1279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratification.lean#L1279).
 
 > **Stacks Project, Tag 0H43.** Smooth stratification near the generic
 > point of an irreducible component of a reduced base.
@@ -47,7 +47,7 @@ theorem exists_smooth_stratification_at_generic_point
 
 [Tag 0H44](https://stacks.math.columbia.edu/tag/0H44) in the Stacks Project.
 
-**`AlgebraicGeometry.hasSmoothStratificationAfterFiniteLocallyFreeCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratificationQcqs.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratificationQcqs.lean#L359).
+**`AlgebraicGeometry.hasSmoothStratificationAfterFiniteLocallyFreeCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratificationQcqs.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/SmoothStratificationQcqs.lean#L359).
 
 > **Stacks Project, Tag 0H44.** Let `f : X ⟶ S` be a morphism of finite presentation between
 > quasi-compact and quasi-separated schemes. Then there are a `t ≥ 0` and closed subschemes
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.55, Tag 0H42](https://stacks.math.columbia.edu/tag/0H42)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

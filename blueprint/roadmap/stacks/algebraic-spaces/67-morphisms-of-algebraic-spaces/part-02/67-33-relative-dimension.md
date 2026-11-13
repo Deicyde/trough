@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.33 Relative dimension
 
-Section 67.33 of the Stacks Project, [Tag 04NH](https://stacks.math.columbia.edu/tag/04NH). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.33 of the Stacks Project, [Tag 04NH](https://stacks.math.columbia.edu/tag/04NH). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04NM, a definition
 
 [Tag 04NM](https://stacks.math.columbia.edu/tag/04NM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasFiberLocalRingDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L81). The attribute's comment: “local\_ring\_fibre\_dimension”.
+**`AlgebraicGeometry.Space.HasFiberLocalRingDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L81). The attribute's comment: “local\_ring\_fibre\_dimension”.
 
 > **Stacks 04NM, dimension of the local ring of a fibre.** The local ring of the fibre of
 > `f` has dimension `d` at `x`, tested on every étale chart at `x`.
@@ -26,7 +26,7 @@ abbrev HasFiberLocalRingDimension (d : ℕ∞) (B : BigFppfSite.{u}) (S : Scheme
     (f : F ⟶ G) (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasRelativeDimensionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L92). The attribute's comment: “relative\_dimension\_at\_point”.
+**`AlgebraicGeometry.Space.HasRelativeDimensionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L92). The attribute's comment: “relative\_dimension\_at\_point”.
 
 > **Stacks 04NM, relative dimension at a point.** A morphism of algebraic spaces has
 > relative dimension `d` at `x` if its fibre has dimension `d` at the corresponding point in
@@ -38,7 +38,7 @@ abbrev HasRelativeDimensionAt (d : ℕ∞) (B : BigFppfSite.{u}) (S : Scheme.{u}
     (f : F ⟶ G) (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasTranscendenceDegreeAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L101). The attribute's comment: “transcendence\_degree”.
+**`AlgebraicGeometry.Space.HasTranscendenceDegreeAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L101). The attribute's comment: “transcendence\_degree”.
 
 > **Stacks 04NM, transcendence degree at a point.** The transcendence degree of `x` over
 > its image under `f` is `r`. For algebraic spaces this is equivalently tested on one or every
@@ -54,7 +54,7 @@ abbrev HasTranscendenceDegreeAt (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.C
 
 [Tag 06LR](https://stacks.math.columbia.edu/tag/06LR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasRelativeDimensionLE`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L150). The attribute's comment: “part (1): relative dimension at most d”.
+**`AlgebraicGeometry.Space.HasRelativeDimensionLE`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L150). The attribute's comment: “part (1): relative dimension at most d”.
 
 > **Stacks 06LR, part (1).** A morphism of algebraic spaces has *relative dimension `≤ d`*
 > if it has relative dimension `≤ d` at every point of its source.
@@ -64,7 +64,7 @@ abbrev HasRelativeDimensionLE (d : ℕ) (B : BigFppfSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S) {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasRelativeDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L157). The attribute's comment: “part (2): relative dimension d”.
+**`AlgebraicGeometry.Space.HasRelativeDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L157). The attribute's comment: “part (2): relative dimension d”.
 
 > **Stacks 06LR, part (2).** A morphism of algebraic spaces has *relative dimension `d`* if
 > it has relative dimension `d` at every point of its source.
@@ -78,7 +78,7 @@ abbrev HasRelativeDimension (d : ℕ) (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 06RX](https://stacks.math.columbia.edu/tag/06RX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_comp_iff_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L363).
+**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_comp_iff_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L363).
 
 > **Stacks 06RX.** Let `X ⟶ Y ⟶ Z` be morphisms of algebraic spaces over `S` with `X ⟶ Y`
 > locally quasi-finite, and let `x` be a point of `X`. The transcendence degree of `x` over its
@@ -101,7 +101,7 @@ theorem hasTranscendenceDegreeAt_comp_iff_of_isLocallyQuasiFinite
 
 [Tag 0ECY](https://stacks.math.columbia.edu/tag/0ECY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_zero_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L409).
+**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_zero_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L409).
 
 > **Stacks 0ECY.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, with `Y` Jacobson. Then the transcendence degree of a finite type
@@ -130,7 +130,7 @@ theorem hasTranscendenceDegreeAt_zero_of_isFiniteTypePoint
 
 [Tag 0AFH](https://stacks.math.columbia.edu/tag/0AFH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimensionAtPoint_eq_add_of_hasRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L500).
+**`AlgebraicGeometry.Space.dimensionAtPoint_eq_add_of_hasRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimension.lean#L500).
 
 > **Stacks 0AFH.** Let `f : X ⟶ Y` be a morphism of locally Noetherian algebraic spaces over
 > `S` which is flat, locally of finite type and of relative dimension `d`. Then for every point
@@ -175,4 +175,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.33, Tag 04NH](https://stacks.math.columbia.edu/tag/04NH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

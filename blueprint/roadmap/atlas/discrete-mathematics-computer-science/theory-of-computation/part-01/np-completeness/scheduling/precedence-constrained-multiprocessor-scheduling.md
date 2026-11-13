@@ -7,7 +7,7 @@ statement: formalized
 
 # Precedence-constrained multiprocessor scheduling
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html).
 
 ## Instances of precedence-constrained multiprocessor scheduling
 
@@ -17,7 +17,7 @@ duration of job $j$; $P$ is a list of pairs $(a, b)$ of natural numbers, each re
 precedence constraint that job $a$ precedes job $b$; $m$ is a natural number, the number of
 machines; and $D$ is a natural number, the deadline.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.PrecedenceMultiprocessorSchedulingInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-ins).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.PrecedenceMultiprocessorSchedulingInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-ins).
 
 ## Well-formed precedence-multiprocessor scheduling instances
 
@@ -27,7 +27,7 @@ $(a, b) \in P$ satisfies $a < n$, $b < n$ and $a \ne b$, and there is an orderin
 $0, \dots, n-1$ (a permutation of this list) in which $a$ comes before $b$ for every
 $(a, b) \in P$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#well-formed).
 
 ## Feasible precedence-multiprocessor scheduling instances
 
@@ -39,7 +39,7 @@ precedence pair $(a, b) \in P$, and for all jobs $a < b < n$ with $\mu_a = \mu_b
 $s_a + d_a \le s_b$ or $s_b + d_b \le s_a$. Here $s_j$ and $d_j$ are read as $0$ when
 $j \ge n$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.PrecedenceMultiprocessorSchedulingFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-fea).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.PrecedenceMultiprocessorSchedulingFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-fea).
 
 ## The precedence-constrained multiprocessor scheduling decision problem
 
@@ -48,7 +48,7 @@ problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonic
 encoding, to a precedence-multiprocessor scheduling instance that is well formed and feasible.
 Bitstrings that do not decode to an instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.precedenceMultiprocessorSchedulingDec`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.precedenceMultiprocessorSchedulingDec`, a definition declared in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-dec).
 
 ## PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING is NP-complete
 
@@ -60,7 +60,7 @@ problem in NP has a polynomial-time many-one reduction to it.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING; J. D. Ullman, "NP-complete scheduling problems" (1975).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.precedenceMultiprocessorScheduling_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-np).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.PrecedenceMultiprocessorScheduling.precedenceMultiprocessorScheduling_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecedenceMultiprocessorSchedulingWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html#precedence-multiprocessor-scheduling-np).
 
 ## Depends on
 
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Precedence-constrained multiprocessor scheduling](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/precedence-constrained-multiprocessor-scheduling)

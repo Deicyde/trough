@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.25 Application of fpqc descent of properties of morphisms
 
-Section 35.25 of the Stacks Project, [Tag 02LB](https://stacks.math.columbia.edu/tag/02LB). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.25 of the Stacks Project, [Tag 02LB](https://stacks.math.columbia.edu/tag/02LB). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02LC, a lemma
 
 [Tag 02LC](https://stacks.math.columbia.edu/tag/02LC) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_of_etale_universallyInjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean#L53). References: EGA IV (17.9.1), “c) => a)”; SGA 1 IX (1.4), “étale+radicial ⇒ open”; SGA 1 I (5.1), “sufficiency”.
+**`AlgebraicGeometry.isOpenImmersion_of_etale_universallyInjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean#L53). References: EGA IV (17.9.1), “c) => a)”; SGA 1 IX (1.4), “étale+radicial ⇒ open”; SGA 1 I (5.1), “sufficiency”.
 
 > A universally injective étale morphism of schemes is an open immersion.
 
@@ -28,7 +28,7 @@ public instance isOpenImmersion_of_etale_universallyInjective
 
 [Tag 09NP](https://stacks.math.columbia.edu/tag/09NP) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_of_flat_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SchemeProperty/UniversallyInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SchemeProperty/UniversallyInjective.lean#L60).
+**`AlgebraicGeometry.universallyInjective_of_flat_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SchemeProperty/UniversallyInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SchemeProperty/UniversallyInjective.lean#L60).
 
 > **Stacks Project, Tag 09NP.** A flat separated morphism with isomorphic residue fields
 > at, and distinct images of, the generic points of its source is universally injective.
@@ -45,7 +45,7 @@ public theorem universallyInjective_of_flat_of_separated_of_genericPoints_injOn
 
 [Tag 09NQ](https://stacks.math.columbia.edu/tag/09NQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_of_etale_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean#L63).
+**`AlgebraicGeometry.isOpenImmersion_of_etale_of_separated_of_genericPoints_injOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FpqcDescentApplication/OpenImmersion.lean#L63).
 
 > An étale separated morphism with isomorphic residue fields at, and distinct images of, the
 > generic points of its source is an open immersion.
@@ -62,7 +62,7 @@ public theorem isOpenImmersion_of_etale_of_separated_of_genericPoints_injOn
 
 [Tag 0F4J](https://stacks.math.columbia.edu/tag/0F4J) in the Stacks Project.
 
-**`AlgebraicGeometry.isProperOver_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ProperClosedSubsetFpqc.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/ProperClosedSubsetFpqc.lean#L49).
+**`AlgebraicGeometry.isProperOver_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ProperClosedSubsetFpqc.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/ProperClosedSubsetFpqc.lean#L49).
 
 > **Stacks 0F4J.** Properness over a base of a closed subset descends along an fpqc covering
 > of the base.
@@ -81,7 +81,7 @@ public theorem isProperOver_of_fpqc {X Y : Scheme.{u}} (f : X ⟶ Y) [LocallyOfF
 
 [Tag 0D2P](https://stacks.math.columbia.edu/tag/0D2P) in the Stacks Project.
 
-**`Stacks.Descent.isRelativelyAmple_pullbackModule_of_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean#L181). The attribute's comment: “(1) implies (2)”.
+**`Stacks.Descent.isRelativelyAmple_pullbackModule_of_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean#L181). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks Tag 0D2P, clause (1) implies clause (2).** Let `f : X ⟶ S` be a morphism of schemes,
 > `L` an invertible `𝒪_X`-module and `{g i : S' i ⟶ S}` an fpqc covering of `S`. Let `f' i` be the
@@ -104,7 +104,7 @@ theorem isRelativelyAmple_pullbackModule_of_fpqcCover {S : Scheme.{u}} {I : Type
     ∀ i, Stacks.RelativeAmple.IsRelativelyAmple (f' i) (pullbackModule (p i) L)
 ```
 
-**`Stacks.Descent.isRelativelyAmple_iff_forall_of_fpqcCover_of_iso_unitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean#L238). The attribute's comment: “the full equivalence for an invertible module isomorphic to the structure sheaf”. References: SGA 1 VIII (7.8), “special case”.
+**`Stacks.Descent.isRelativelyAmple_iff_forall_of_fpqcCover_of_iso_unitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBase.lean#L238). The attribute's comment: “the full equivalence for an invertible module isomorphic to the structure sheaf”. References: SGA 1 VIII (7.8), “special case”.
 
 > **Stacks Tag 0D2P, both directions, for an invertible module isomorphic to `𝒪_X`.** With
 > `{g i : S' i ⟶ S}` an fpqc covering of `S` and each square with sides `p i`, `f' i`, `f` and
@@ -129,7 +129,7 @@ theorem isRelativelyAmple_iff_forall_of_fpqcCover_of_iso_unitModule {S : Scheme.
       ∀ i, Stacks.RelativeAmple.IsRelativelyAmple (f' i) (pullbackModule (p i) L)
 ```
 
-**`Stacks.Descent.isRelativelyAmple_iff_forall_of_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBaseFull.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBaseFull.lean#L363). References: SGA 1 VIII (7.8), “more general”.
+**`Stacks.Descent.isRelativelyAmple_iff_forall_of_fpqcCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBaseFull.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/RelativeAmpleFpqcLocalOnBaseFull.lean#L360). References: SGA 1 VIII (7.8), “more general”.
 
 > **Stacks Tag 0D2P.** Let `f : X ⟶ S` be a morphism of schemes, `L` an invertible
 > `𝒪_X`-module and `{g i : S' i ⟶ S}_{i ∈ I}` an fpqc covering of `S`. Let `f' i : X' i ⟶ S' i` be
@@ -160,4 +160,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.25, Tag 02LB](https://stacks.math.columbia.edu/tag/02LB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

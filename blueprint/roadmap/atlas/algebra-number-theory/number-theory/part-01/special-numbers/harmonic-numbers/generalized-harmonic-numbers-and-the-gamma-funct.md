@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized harmonic numbers and the Gamma function
 
-7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html).
+7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html).
 
 ## Generalized harmonic numbers
 
@@ -19,7 +19,7 @@ real power.
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Section 1 (definition of `H_n^{(s)}`).
 
-Formalized by `MetaMathlibExt.generalizedHarmonic`, a definition declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic).
+Formalized by `MetaMathlibExt.generalizedHarmonic`, a definition declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic).
 
 ## The zeroth generalized harmonic number
 
@@ -30,7 +30,7 @@ number $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ vanishes at $n = 0$: $H_0^{(s)} = 0$.
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Section 1 (definition of `H_n^{(s)}`).
 
-Formalized by `MetaMathlibExt.generalizedHarmonic_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-zero).
+Formalized by `MetaMathlibExt.generalizedHarmonic_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-zero).
 
 ## Recurrence for generalized harmonic numbers
 
@@ -42,7 +42,7 @@ $H_{n+1}^{(s)} = H_n^{(s)} + 1/(n+1)^s$.
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Section 1 (definition of `H_n^{(s)}`).
 
-Formalized by `MetaMathlibExt.generalizedHarmonic_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-succ).
+Formalized by `MetaMathlibExt.generalizedHarmonic_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-succ).
 
 ## Gamma representation of generalized harmonic numbers
 
@@ -58,7 +58,7 @@ $$H_n^{(s)} = \sum_{k=0}^{n-1} \mathbb{E}[e^{-k X_s}] =
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Lemma 1, Equation (5).
 
-Stated but not proved: `MetaMathlibExt.generalizedHarmonic_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-eq-gamma-expectatio).
+Stated but not proved: `MetaMathlibExt.generalizedHarmonic_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-eq-gamma-expectatio).
 
 ## Shifted Gamma representation of generalized harmonic numbers
 
@@ -76,7 +76,7 @@ The source assumes $0 < u < s$; the identity holds for every real $u$.
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Lemma 2, Equation (7).
 
-Stated but not proved: `MetaMathlibExt.generalizedHarmonic_sub_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-sub-eq-gamma-expect).
+Stated but not proved: `MetaMathlibExt.generalizedHarmonic_sub_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#generalized-harmonic-sub-eq-gamma-expect).
 
 ## Binomially weighted sums of generalized harmonic numbers
 
@@ -92,7 +92,7 @@ $$\sum_{j=1}^{n-1} \binom{j}{m} H_j^{(\alpha)} = \binom{n}{m+1} H_n^{(\alpha)} -
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Proposition 1, Equation (3).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_generalizedHarmonic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#sum-choose-mul-generalized-harmonic).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_generalizedHarmonic` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#sum-choose-mul-generalized-harmonic).
 
 ## Gamma representation of the Stirling combination of generalized harmonic numbers
 
@@ -112,7 +112,7 @@ The source assumes $s > m + 1$; the identity holds for every $s > 0$.
 
 - Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Corollary 1, Equation (8).
 
-Stated but not proved: `MetaMathlibExt.stirlingFirst_generalizedHarmonic_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#stirling-first-generalized-harmonic-eq-g).
+Stated but not proved: `MetaMathlibExt.stirlingFirst_generalizedHarmonic_eq_gamma_expectation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedHarmonicGammaWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html#stirling-first-generalized-harmonic-eq-g).
 
 ## Depends on
 
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized harmonic numbers and the Gamma function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/harmonic-numbers/generalized-harmonic-numbers-and-the-gamma-funct)

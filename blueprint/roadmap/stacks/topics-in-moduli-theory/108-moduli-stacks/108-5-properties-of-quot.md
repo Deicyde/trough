@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.5 Properties of Quot
 
-Section 108.5 of the Stacks Project, [Tag 0DM1](https://stacks.math.columbia.edu/tag/0DM1). 11 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 108.5 of the Stacks Project, [Tag 0DM1](https://stacks.math.columbia.edu/tag/0DM1). 11 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DM2, a lemma
 
 [Tag 0DM2](https://stacks.math.columbia.edu/tag/0DM2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.diagonal_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L425).
+**`AlgebraicGeometry.Space.QuotSituation.diagonal_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L425).
 
 > The diagonal of `Quot_{F/X/B} ⟶ B` is a closed immersion. If `F` is of finite type, then the
 > diagonal is a closed immersion of finite presentation.
@@ -35,7 +35,7 @@ theorem diagonal_quotSitePresheafToBase :
 
 [Tag 0DM3](https://stacks.math.columbia.edu/tag/0DM3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.isLocallyOfFinitePresentationULift_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean#L103). The attribute's comment: “the finite-presentation clause: if F is of finite presentation, Quot\_\{F/X/B} → B is locally of finite presentation”.
+**`AlgebraicGeometry.Space.QuotSituation.isLocallyOfFinitePresentationULift_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean#L104). The attribute's comment: “the finite-presentation clause: if F is of finite presentation, Quot\_\{F/X/B} → B is locally of finite presentation”.
 
 > If `F` is of finite presentation, then `Quot_{F/X/B} ⟶ B` is locally of finite presentation:
 > the morphism of schemes underlying every commuting square of étale charts of the Quot presheaf over
@@ -47,7 +47,7 @@ theorem isLocallyOfFinitePresentationULift_quotSitePresheafToBase
     IsLocallyOfFinitePresentationULift.{u + 1} B S hS D.quotSitePresheafToBase
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.isSeparatedULift_and_imp_isLocallyOfFinitePresentationULift_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean#L112).
+**`AlgebraicGeometry.Space.QuotSituation.isSeparatedULift_and_imp_isLocallyOfFinitePresentationULift_quotSitePresheafToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorLocallyFinitePresentationOfLimits.lean#L113).
 
 > The morphism `Quot_{F/X/B} ⟶ B` is separated, and if `F` is of finite presentation it is also
 > locally of finite presentation.
@@ -61,13 +61,13 @@ theorem isSeparatedULift_and_imp_isLocallyOfFinitePresentationULift_quotSitePres
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.QuotSituation.isSeparatedULift_quotSitePresheafToBase`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L441), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L447) (StacksFrontier): “the separation clause: the diagonal of Quot over B is a closed immersion”.
+- [`AlgebraicGeometry.Space.QuotSituation.isSeparatedULift_quotSitePresheafToBase`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L441), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorDiagonal.lean#L447) (StacksFrontier): “the separation clause: the diagonal of Quot over B is a closed immersion”.
 
 ## Tag 0DM4, a lemma
 
 [Tag 0DM4](https://stacks.math.columbia.edu/tag/0DM4) in the Stacks Project.
 
-**`StacksDraft.GenericFibre.existsUnique_submodule_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeAffineChart.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeAffineChart.lean#L210). The attribute's comment: “the affine-chart case: over a valuation ring a quotient of the generic fibre of a finite module extends uniquely to a quotient flat over the valuation ring and finite over the chart, the extension being the generic-kernel quotient and its flatness Stacks 0539; the etale gluing of Stacks 03M3, the proper support, and the finite presentation of Stacks 0DLR are not covered”. References: EGA IV (2.8.1.1), “special case”.
+**`StacksDraft.GenericFibre.existsUnique_submodule_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeAffineChart.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeAffineChart.lean#L210). The attribute's comment: “the affine-chart case: over a valuation ring a quotient of the generic fibre of a finite module extends uniquely to a quotient flat over the valuation ring and finite over the chart, the extension being the generic-kernel quotient and its flatness Stacks 0539; the etale gluing of Stacks 03M3, the proper support, and the finite presentation of Stacks 0DLR are not covered”. References: EGA IV (2.8.1.1), “special case”.
 
 > **Stacks 0DM4, on an affine chart over a valuation ring.**  Let `R` be a valuation ring, `A`
 > an `R`-algebra, `M` a finite `A`-module and `M_K` the generic fibre of `M`, that is, its
@@ -84,7 +84,7 @@ theorem existsUnique_submodule_flat_quotient [ValuationRing R] [Module.Finite A 
         = P.restrictScalars R
 ```
 
-**`AlgebraicGeometry.Space.QuotSitePresheafModel.valuativeCriterionExistence_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeExistence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeExistence.lean#L397).
+**`AlgebraicGeometry.Space.QuotSitePresheafModel.valuativeCriterionExistence_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeExistence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotValuativeExistence.lean#L397).
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces which is proper and of finite
 > presentation, and let `F` be a quasi-coherent `𝒪_X`-module of finite type.  Then
@@ -102,7 +102,7 @@ theorem QuotSitePresheafModel.valuativeCriterionExistence_toBase (D : QuotSituat
 
 [Tag 0DP1](https://stacks.math.columbia.edu/tag/0DP1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffinePushforward.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffinePushforward.lean#L361).
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffinePushforward.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffinePushforward.lean#L361).
 
 > Let `B` be an algebraic space, let `π : X ⟶ Y` be an affine quasi-finite morphism of
 > algebraic spaces which are separated and of finite presentation over `B`, and let `F` be a
@@ -115,7 +115,7 @@ def pushforwardQuotFunctorMap :
     D.sourceSituation.quotFunctor ⟶ D.directImageSituation.quotFunctor
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L130). The attribute's comment: “the standing data”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L130). The attribute's comment: “the standing data”.
 
 > **Stacks 0DP1, the standing data.**  An affine quasi-finite morphism `π : X ⟶ Y` of algebraic
 > spaces which are separated and of finite presentation over an algebraic space `B`, together with
@@ -126,7 +126,7 @@ def pushforwardQuotFunctorMap :
 structure QuotPushforwardSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L267). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L267). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
 
 > **Stacks 0DP1, the direct image of a quotient.**  The quotient `G_T ⟶ π_{T,*}(F_T/K)` of
 > `G_T` obtained from a quotient `F_T ⟶ F_T/K` by applying `π_{T,*}` and reading the result through
@@ -139,7 +139,7 @@ def pushforwardQuotient (h : SchemeTargetAffinePushforwardQuasicoherent B S hS)
     Subobject ((D.targetSituation h).baseChangeModule T)
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L325). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L325). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
 
 > **Stacks 0DP1.**  The direct image of a quotient in `Quot_{F/X/B}(T)` lies in
 > `Quot_{G/Y/B}(T)`: the quotient of `G_T` by it is `π_{T,*}(F_T/K)`, which is quasi-coherent, of
@@ -155,7 +155,7 @@ theorem pushforwardQuotient_mem (h : SchemeTargetAffinePushforwardQuasicoherent 
       (D.targetSituation h).properlySupportedQuotients T
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.quotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L344). The attribute's comment: “the induced morphism of Quot functors”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.quotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforward.lean#L344). The attribute's comment: “the induced morphism of Quot functors”.
 
 > **Stacks 0DP1.**  The morphism of Quot functors `Quot_{F/X/B} ⟶ Quot_{π_*F/Y/B}` induced by
 > the direct image: over a test scheme it sends a quotient `F_T ⟶ Q` to `G_T ⟶ π_{T,*}Q`.
@@ -169,7 +169,7 @@ def quotFunctorMap (h : SchemeTargetAffinePushforwardQuasicoherent B S hS)
     D.sourceSituation.quotFunctor ⟶ (D.targetSituation h).quotFunctor
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L71). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L71). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
 
 > **Stacks 0DP1, the direct image of a quotient.**  The quotient `G_T ⟶ π_{T,*}(F_T/K)` of
 > `G_T` obtained from a quotient `F_T ⟶ F_T/K` by applying `π_{T,*}` and reading the result through
@@ -181,7 +181,7 @@ def pushforwardQuotient' (c : PushforwardComparison D) (T : SchemesOver D.base)
     Subobject (D.targetSituation'.baseChangeModule T)
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient_mem'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L114). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.pushforwardQuotient_mem'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L114). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
 
 > **Stacks 0DP1.**  The direct image of a quotient in `Quot_{F/X/B}(T)` lies in
 > `Quot_{G/Y/B}(T)`: the quotient of `G_T` by it is `π_{T,*}(F_T/K)`, which is quasi-coherent, of
@@ -196,7 +196,7 @@ theorem pushforwardQuotient_mem' (I : AffinePushforwardQuotInputs' D) (T : Schem
       D.targetSituation'.properlySupportedQuotients T
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.quotFunctorMap'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L132). The attribute's comment: “the induced morphism of Quot functors”.
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.quotFunctorMap'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorPushforwardSupplement.lean#L132). The attribute's comment: “the induced morphism of Quot functors”.
 
 > **Stacks 0DP1.**  The morphism of Quot functors `Quot_{F/X/B} ⟶ Quot_{π_*F/Y/B}` induced by
 > the direct image: over a test scheme it sends a quotient `F_T ⟶ Q` to `G_T ⟶ π_{T,*}Q`.
@@ -213,7 +213,7 @@ def quotFunctorMap' (I : AffinePushforwardQuotInputs' D) :
 
 [Tag 0DP2](https://stacks.math.columbia.edu/tag/0DP2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.isOpenImmersion_pushforwardQuotModelMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffineOpenImmersionDirectImage.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffineOpenImmersionDirectImage.lean#L171).
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.isOpenImmersion_pushforwardQuotModelMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffineOpenImmersionDirectImage.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorAffineOpenImmersionDirectImage.lean#L171).
 
 > Let `B` be an algebraic space, let `π : X ⟶ Y` be an affine open immersion of algebraic spaces
 > which are separated and of finite presentation over `B`, and let `F` be a quasi-coherent
@@ -243,7 +243,7 @@ theorem isOpenImmersion_pushforwardQuotModelMap (base X Y : AlgebraicSpaces B S 
 
 [Tag 0DP3](https://stacks.math.columbia.edu/tag/0DP3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotOpenImmersionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L101). The attribute's comment: “the standing data”.
+**`AlgebraicGeometry.Space.QuotOpenImmersionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L101). The attribute's comment: “the standing data”.
 
 > **Stacks 0DP3, the standing data.**  An open immersion `j : X ⟶ Y` of algebraic spaces which
 > are separated and of finite presentation over an algebraic space `B`, together with a
@@ -255,7 +255,7 @@ structure QuotOpenImmersionSituation (B : BigFppfSite.{u}) (S : Scheme.{u})
     (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.directImageQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L254). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
+**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.directImageQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L254). The attribute's comment: “the direct image of a quotient, recorded by its kernel”.
 
 > **Stacks 0DP3, the direct image of a quotient.**  The quotient `G_T ⟶ j_{T,*}(F_T/K)` of
 > `G_T`, recorded — as the quotients themselves are — by its kernel.
@@ -266,7 +266,7 @@ def directImageQuotient (ν : DirectImageInputs D) (T : SchemesOver D.base)
     Subobject (D.targetSituation.baseChangeModule T)
 ```
 
-**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.directImageQuotient_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L302). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
+**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.directImageQuotient_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L302). The attribute's comment: “the direct image of a quotient of the Quot functor is one”.
 
 > **Stacks 0DP3.**  The direct image of a quotient in `Quot_{F/X/B}(T)` lies in
 > `Quot_{G/Y/B}(T)`: the quotient of `G_T` by it is `j_{T,*}(F_T/K)`, which is quasi-coherent, of
@@ -281,7 +281,7 @@ theorem directImageQuotient_mem (I : QuotDirectImageInputs D) (T : SchemesOver D
       D.targetSituation.properlySupportedQuotients T
 ```
 
-**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.quotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L322). The attribute's comment: “the morphism of Quot functors the source constructs, not its being open”.
+**`AlgebraicGeometry.Space.QuotOpenImmersionSituation.quotFunctorMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenImmersionDirectImage.lean#L322). The attribute's comment: “the morphism of Quot functors the source constructs, not its being open”.
 
 > **Stacks 0DP3, the morphism of Quot functors.**  The morphism
 > `Quot_{F/X/B} ⟶ Quot_{G/Y/B}` induced by the direct image: over a test scheme it sends a quotient
@@ -296,7 +296,7 @@ def quotFunctorMap (I : QuotDirectImageInputs D) :
     D.sourceSituation.quotFunctor ⟶ D.targetSituation.quotFunctor
 ```
 
-**`AlgebraicGeometry.Space.QuotOpenSubspaceSituation.isOpenImmersion_quotSitePresheafModelMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean#L847).
+**`AlgebraicGeometry.Space.QuotOpenSubspaceSituation.isOpenImmersion_quotSitePresheafModelMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean#L847).
 
 > Let `B` be an algebraic space, let `j : X ⟶ Y` be an open immersion of algebraic spaces which
 > are separated and of finite presentation over `B`, let `G` be a quasi-coherent `𝒪_Y`-module and set
@@ -317,7 +317,7 @@ theorem isOpenImmersion_quotSitePresheafModelMap :
         D.sourceSituation.quotSitePresheafModel.toBase
 ```
 
-**`AlgebraicGeometry.Space.QuotOpenSubspaceSituation.isOpenImmersion_quotSitePresheafModelMap_ofOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean, line 901](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean#L901).
+**`AlgebraicGeometry.Space.QuotOpenSubspaceSituation.isOpenImmersion_quotSitePresheafModelMap_ofOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean, line 901](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorOpenSubspace.lean#L901).
 
 > Let `B` be an algebraic space, let `j : X ⟶ Y` be an open immersion of algebraic spaces which
 > are separated and of finite presentation over `B`, let `G` be a quasi-coherent `𝒪_Y`-module and set
@@ -358,7 +358,7 @@ theorem isOpenImmersion_quotSitePresheafModelMap_ofOpenImmersion
 
 [Tag 0DP4](https://stacks.math.columbia.edu/tag/0DP4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.isIso_pushforwardQuotFunctorMap_ofIsClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionDirectImageIso.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionDirectImageIso.lean#L103).
+**`AlgebraicGeometry.Space.QuotPushforwardSituation.isIso_pushforwardQuotFunctorMap_ofIsClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionDirectImageIso.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionDirectImageIso.lean#L107). The attribute's comment: “the direct image along a closed immersion `π : X ⟶ Y` of algebraic spaces separated and of finite presentation over `B` gives an isomorphism `Quot_{F/X/B} ⟶ Quot_{π_*F/Y/B}` for every quasi-coherent `𝒪_X`-module `F`”.
 
 > Let `B` be an algebraic space, let `π : X ⟶ Y` be a closed immersion of algebraic spaces
 > which are separated and of finite presentation over `B`, and let `F` be a quasi-coherent
@@ -378,25 +378,11 @@ theorem isIso_pushforwardQuotFunctorMap_ofIsClosedImmersion (base X Y : Algebrai
       separatedX separatedY finitePresentationX finitePresentationY).pushforwardQuotFunctorMap
 ```
 
-**`AlgebraicGeometry.Space.QuotPushforwardSituation.isIso_quotFunctorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionPushforward.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorClosedImmersionPushforward.lean#L190). The attribute's comment: “an isomorphism, granted 04CJ (3) essential image and 0DN9 reversed”.
-
-> **Stacks 0DP4.**  The morphism of Quot functors `Quot_{F/X/B} ⟶ Quot_{π_*F/Y/B}` induced by
-> the direct image along a closed immersion is an isomorphism: over every test scheme it is a
-> bijection, injectively by full faithfulness of `π_{T,*}` (Stacks 04CJ) and surjectively by the
-> two carried inputs.
-
-```lean
-theorem isIso_quotFunctorMap (h : SchemeTargetAffinePushforwardQuasicoherent B S hS)
-    (I : D.AffinePushforwardQuotInputs h) (J : D.ClosedImmersionQuotInputs h)
-    (hπ : IsClosedImmersion B S hS D.π.hom) :
-    IsIso (D.quotFunctorMap h I)
-```
-
 ## Tag 0DP5, a lemma
 
 [Tag 0DP5](https://stacks.math.columbia.edu/tag/0DP5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.relative_closedImmersionOver_quotientInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorSurjection.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorSurjection.lean#L380).
+**`AlgebraicGeometry.Space.QuotSituation.relative_closedImmersionOver_quotientInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorSurjection.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorSurjection.lean#L382).
 
 > Let `φ : F ⟶ G` be a surjection of quasi-coherent `𝒪_X`-modules. The canonical transformation
 > `Quot_{G/X/B} ⟶ Quot_{F/X/B}` of functors on the test schemes over `B`, sending a quotient
@@ -415,7 +401,7 @@ theorem relative_closedImmersionOver_quotientInclusion :
 
 [Tag 0DP6](https://stacks.math.columbia.edu/tag/0DP6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.numericalQuot`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalFibreProduct.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalFibreProduct.lean#L164). The attribute's comment: “the fibre product Quot^P = Quot\_\{F/X/B} ×\_\{Coh\_\{X/B}} Coh^P\_\{X/B}, as the 2-fibre product over the site of Stacks 0040 of the morphism Quot ⟶ Coh and the inclusion Coh^P ⟶ Coh”.
+**`AlgebraicGeometry.Space.QuotSituation.numericalQuot`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalFibreProduct.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalFibreProduct.lean#L164). The attribute's comment: “the fibre product Quot^P = Quot\_\{F/X/B} ×\_\{Coh\_\{X/B}} Coh^P\_\{X/B}, as the 2-fibre product over the site of Stacks 0040 of the morphism Quot ⟶ Coh and the inclusion Coh^P ⟶ Coh”.
 
 > **The fibre product `Quot^P_{F/X/B} = Quot_{F/X/B} ×_{Coh_{X/B}} Coh^P_{X/B}`**, as a category
 > over the big fppf site of `S`: an object over a scheme `U` is a member `F_T ⟶ 𝒬` of
@@ -426,7 +412,7 @@ theorem relative_closedImmersionOver_quotientInclusion :
 def numericalQuot : BasedCategory.{u + 1, u + 1} (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.numericalQuotSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L105). The attribute's comment: “Quot^P\_\{F/X/B} as the subfunctor of Quot\_\{F/X/B} of the quotients whose object of Coh\_\{X/B} lies in Coh^P\_\{X/B}; it is the fibre product numericalQuot by mem\_numericalQuotSubspace\_iff\_exists\_numericalQuot”.
+**`AlgebraicGeometry.Space.QuotSituation.numericalQuotSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L105). The attribute's comment: “Quot^P\_\{F/X/B} as the subfunctor of Quot\_\{F/X/B} of the quotients whose object of Coh\_\{X/B} lies in Coh^P\_\{X/B}; it is the fibre product numericalQuot by mem\_numericalQuotSubspace\_iff\_exists\_numericalQuot”.
 
 > **`Quot^P_{F/X/B}`**, as the subfunctor of the Quot presheaf it is: the
 > quotients `F_T ⟶ 𝒬` whose object `(T, 𝒬)` of `Coh_{X/B}` has `χ(K_i ⊗^𝐋 κ(t)) = P(i)` for all
@@ -438,7 +424,7 @@ def numericalQuot : BasedCategory.{u + 1, u + 1} (BigFppfOver B S hS)
 def numericalQuotSubspace : Subfunctor D.quotSitePresheaf
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.numericalQuotToQuot_fullyFaithful_and_mem_numericalQuotSubspace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L123). The attribute's comment: “the fibre product Quot\_\{F/X/B} x\_\{Coh\_\{X/B}} Coh^P\_\{X/B} is the subfunctor numericalQuotSubspace: the left vertical arrow is fully faithful with that essential image”.
+**`AlgebraicGeometry.Space.QuotSituation.numericalQuotToQuot_fullyFaithful_and_mem_numericalQuotSubspace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L123). The attribute's comment: “the fibre product Quot\_\{F/X/B} x\_\{Coh\_\{X/B}} Coh^P\_\{X/B} is the subfunctor numericalQuotSubspace: the left vertical arrow is fully faithful with that essential image”.
 
 > The fibre product
 > `Quot^P_{F/X/B} = Quot_{F/X/B} ×_{Coh_{X/B}} Coh^P_{X/B}` of the remark
@@ -455,7 +441,7 @@ theorem numericalQuotToQuot_fullyFaithful_and_mem_numericalQuotSubspace_iff :
           ∃ P : D.NumericalQuotObjects N, P.x = QuotFamilyOver.toQuotObjects x
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.relative_closedImmersion_flat_numericalQuotSubspace_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L137). The attribute's comment: “the left vertical arrow Quot^P -> Quot is a flat closed immersion”.
+**`AlgebraicGeometry.Space.QuotSituation.relative_closedImmersion_flat_numericalQuotSubspace_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L137). The attribute's comment: “the left vertical arrow Quot^P -> Quot is a flat closed immersion”.
 
 > **`Quot^P_{F/X/B} ⟶ Quot_{F/X/B}` is a flat closed immersion**: its base change
 > to every scheme of the site is a flat closed immersion.  It is the base change of the flat closed
@@ -470,7 +456,7 @@ theorem relative_closedImmersion_flat_numericalQuotSubspace_ι :
         (D.numericalQuotSubspace N).ι
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L149). The attribute's comment: “the left vertical arrow is an open and closed immersion if I is finite”.
+**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L149). The attribute's comment: “the left vertical arrow is an open and closed immersion if I is finite”.
 
 > **For a finite index set, `Quot^P_{F/X/B} ⟶ Quot_{F/X/B}` is an open and closed
 > immersion.**
@@ -484,7 +470,7 @@ theorem relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_finit
         (D.numericalQuotSubspace N).ι
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L164). The attribute's comment: “the left vertical arrow is an open and closed immersion if B is locally Noetherian”.
+**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L164). The attribute's comment: “the left vertical arrow is an open and closed immersion if B is locally Noetherian”.
 
 > **For `B` locally Noetherian, `Quot^P_{F/X/B} ⟶ Quot_{F/X/B}` is an open and
 > closed immersion**, however large the index set: every object of `Coh_{X/B}` is étale locally
@@ -501,7 +487,7 @@ theorem relative_openImmersion_closedImmersion_numericalQuotSubspace_ι_of_isLoc
         (D.numericalQuotSubspace N).ι
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.isAlgebraicSpace_subfunctorModel_numericalQuotSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L183). The attribute's comment: “Quot^P\_\{F/X/B} is an algebraic space, for F etale-locally generated by fewer than mu sections with mu below the cutoff of the site (every F of finite type)”.
+**`AlgebraicGeometry.Space.QuotSituation.isAlgebraicSpace_subfunctorModel_numericalQuotSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L183). The attribute's comment: “Quot^P\_\{F/X/B} is an algebraic space, for F etale-locally generated by fewer than mu sections with mu below the cutoff of the site (every F of finite type)”.
 
 > **`Quot^P_{F/X/B}` is an algebraic space**, for `F` étale-locally generated by
 > fewer than `μ` sections with `μ` below the cutoff of the site (for instance `F` of finite type):
@@ -515,7 +501,7 @@ theorem isAlgebraicSpace_subfunctorModel_numericalQuotSubspace
     (F : D.SubfunctorModel (D.numericalQuotSubspace N)) : IsAlgebraicSpace B S hS F.presheaf
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_hilbertPolynomialQuot_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L206). The attribute's comment: “the left vertical arrow is an open and closed immersion if I = Z and E\_i = L^\{(x) i} for an invertible L; this is Quot^\{P,L}, cut out by P(n) = chi(X\_t, Q\_t (x) L\_t^n)”.
+**`AlgebraicGeometry.Space.QuotSituation.relative_openImmersion_closedImmersion_hilbertPolynomialQuot_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotNumericalSubspace.lean#L206). The attribute's comment: “the left vertical arrow is an open and closed immersion if I = Z and E\_i = L^\{(x) i} for an invertible L; this is Quot^\{P,L}, cut out by P(n) = chi(X\_t, Q\_t (x) L\_t^n)”.
 
 > **For `I = ℤ` and `E_i = 𝓛^{⊗ i}`, `Quot^{P, 𝓛}_{F/X/B} ⟶ Quot_{F/X/B}` is an open and
 > closed immersion.**  For an invertible `𝒪_X`-module `𝓛` and `P : ℤ → ℤ`, the subfunctor
@@ -533,7 +519,7 @@ theorem relative_openImmersion_closedImmersion_hilbertPolynomialQuot_ι (P : ℤ
         (D.hilbertPolynomialQuot L P).ι
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.cohObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean#L289). The attribute's comment: “the object part of the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B}: a quotient F\_T ⟶ Q in Quot\_\{F/X/B}(T) goes to the object Q of Coh\_\{X/B} over T. The action on morphisms of test schemes is `AlgebraicGeometry.Space.QuotSituation.cohHom`. The functor laws hold for the OBJECT part (`cohObject_quotientPullback_id`, `cohObject_quotientPullback_comp`) but are NOT established for the module comparisons, Coh\_\{X/B} not being a category in this development; and the fibre product Quot^P = Quot ×\_\{Coh} Coh^P of the remark is NOT formed: Coh^P\_\{X/B} is not constructed anywhere in this development, only the standing data of Situation 0DNC. See the module docstring for the full accounting”.
+**`AlgebraicGeometry.Space.QuotSituation.cohObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean#L289). The attribute's comment: “the object part of the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B}: a quotient F\_T ⟶ Q in Quot\_\{F/X/B}(T) goes to the object Q of Coh\_\{X/B} over T. The action on morphisms of test schemes is `AlgebraicGeometry.Space.QuotSituation.cohHom`. The functor laws hold for the OBJECT part (`cohObject_quotientPullback_id`, `cohObject_quotientPullback_comp`) but are NOT established for the module comparisons, Coh\_\{X/B} not being a category in this development; and the fibre product Quot^P = Quot ×\_\{Coh} Coh^P of the remark is NOT formed: Coh^P\_\{X/B} is not constructed anywhere in this development, only the standing data of Situation 0DNC. See the module docstring for the full accounting”.
 
 > **Stacks 0DP6, the object part of the morphism `Quot_{F/X/B} ⟶ Coh_{X/B}`.**  A `T`-point
 > `F_T ⟶ 𝒬` of the Quot functor, recorded by its kernel `K`, goes to the object `(T, F_T/K)` of
@@ -546,7 +532,7 @@ def cohObject (T : SchemesOver D.Y) (K : Subobject (D.baseChangeModule T))
     (hK : K ∈ D.properlySupportedQuotients T) : CoherentObject D.toCoherentSituation
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.cohHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean#L313). The attribute's comment: “the action of the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B} on morphisms of test schemes, whose object part is `AlgebraicGeometry.Space.QuotSituation.cohObject`: the base map is h itself, so the morphism lies over the identity of the schemes over B, and the module comparison is the one of Tag 03LU identifying the inverse image of F\_T/K with the quotient of F\_\{T'} by the pulled-back kernel. No hypothesis is carried: the preservation under inverse image of finite presentation (Properties of Spaces, Section 05VR) is the theorem `AlgebraicGeometry.Space.QuotientSituation.pullbackPreservesFinitePresentation`. The functor laws for the module comparisons are NOT established and the fibre product Quot^P of the remark is NOT formed; see the module docstring”.
+**`AlgebraicGeometry.Space.QuotSituation.cohHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStack.lean#L313). The attribute's comment: “the action of the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B} on morphisms of test schemes, whose object part is `AlgebraicGeometry.Space.QuotSituation.cohObject`: the base map is h itself, so the morphism lies over the identity of the schemes over B, and the module comparison is the one of Tag 03LU identifying the inverse image of F\_T/K with the quotient of F\_\{T'} by the pulled-back kernel. No hypothesis is carried: the preservation under inverse image of finite presentation (Properties of Spaces, Section 05VR) is the theorem `AlgebraicGeometry.Space.QuotientSituation.pullbackPreservesFinitePresentation`. The functor laws for the module comparisons are NOT established and the fibre product Quot^P of the remark is NOT formed; see the module docstring”.
 
 > **Stacks 0DP6, the action of the morphism `Quot_{F/X/B} ⟶ Coh_{X/B}` on morphisms of test
 > schemes.**  A morphism `h : T' ⟶ T` of test schemes over `B` and a member `K` of
@@ -565,7 +551,7 @@ def cohHom {T' T : SchemesOver D.Y}
       (D.cohObject T K hK)
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.quotToCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStackFunctor.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStackFunctor.lean#L308). The attribute's comment: “the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B} sending F\_T ⟶ Q to the object Q over T, as a 1-morphism of categories over the big fppf site (functor laws included)”.
+**`AlgebraicGeometry.Space.QuotSituation.quotToCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStackFunctor.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotToCoherentStackFunctor.lean#L308). The attribute's comment: “the morphism Quot\_\{F/X/B} ⟶ Coh\_\{X/B} sending F\_T ⟶ Q to the object Q over T, as a 1-morphism of categories over the big fppf site (functor laws included)”.
 
 > **Stacks 0DP6, the morphism `Quot_{F/X/B} ⟶ Coh_{X/B}`.**  The rule sending an element
 > `F_T ⟶ 𝒬` of `Quot_{F/X/B}(T)` to the object `𝒬` of `Coh_{X/B}` over `T`, and a morphism of test
@@ -584,7 +570,7 @@ def quotToCoherent :
 
 [Tag 0DP7](https://stacks.math.columbia.edu/tag/0DP7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPrescribedTwistedEuler_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean#L289). The attribute's comment: “the final statement at the level of membership conditions: the condition for `P` and `𝓕` is the condition for `P'(t) = P(t + 1)` and `𝓕 ⊗ L`. The isomorphism `Quot_{𝓕/X/B} ⟶ Quot_{𝓕 ⊗ L/X/B}` itself is not constructed”.
+**`AlgebraicGeometry.Space.isPrescribedTwistedEuler_iff_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean#L289). The attribute's comment: “the final statement at the level of membership conditions: the condition for `P` and `𝓕` is the condition for `P'(t) = P(t + 1)` and `𝓕 ⊗ L`. The isomorphism `Quot_{𝓕/X/B} ⟶ Quot_{𝓕 ⊗ L/X/B}` itself is not constructed”.
 
 > **Stacks 0DP7, the final statement, at the level of membership conditions.**  Tensoring with
 > an invertible module `L` replaces the twisted Euler characteristics `n ↦ χ(X_t, 𝓕_t ⊗ L_t^{⊗ n})`
@@ -602,7 +588,7 @@ theorem isPrescribedTwistedEuler_iff_shift {ι : Type v} {P : ℤ → ℤ} {χ �
     IsPrescribedTwistedEuler P χ ↔ IsPrescribedTwistedEuler (fun m => P (m + 1)) χ'
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.quotSitePresheafTensorInvertibleIso_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorInvertible.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorInvertible.lean#L553). The attribute's comment: “the isomorphism `Quot_{F/X/B} ≅ Quot_{F ⊗ L/X/B}` given by tensoring with `L`, and its restriction to `Quot^P ≅ Quot^{P'}` for `P'(t) = P(t + 1)`, membership read on the actual twisted Euler characteristics `χ(X_t, Q_t ⊗ L_t^{⊗ n})`”.
+**`AlgebraicGeometry.Space.QuotSituation.quotSitePresheafTensorInvertibleIso_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorInvertible.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorInvertible.lean#L553). The attribute's comment: “the isomorphism `Quot_{F/X/B} ≅ Quot_{F ⊗ L/X/B}` given by tensoring with `L`, and its restriction to `Quot^P ≅ Quot^{P'}` for `P'(t) = P(t + 1)`, membership read on the actual twisted Euler characteristics `χ(X_t, Q_t ⊗ L_t^{⊗ n})`”.
 
 > **Stacks 0DP7.**  Let `f : X ⟶ B` be a morphism of algebraic spaces of finite presentation,
 > `F` a quasi-coherent `𝒪_X`-module and `L` an invertible `𝒪_X`-module.  Tensoring with `L` is an
@@ -646,7 +632,7 @@ theorem quotSitePresheafTensorInvertibleIso_spec :
 
 [Tag 0DP8](https://stacks.math.columbia.edu/tag/0DP8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPrescribedTwistedEuler_iff_reindexMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean#L307). The attribute's comment: “the equality `Quot^{P,L} = Quot^{P',L^{⊗ n}}` with `P'(t) = P(n t)`, read on the two membership conditions, for `n ≠ 0` and numerical-polynomial invariants; the substacks themselves are not constructed in this development”.
+**`AlgebraicGeometry.Space.isPrescribedTwistedEuler_iff_reindexMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalInvariantsTwist.lean#L307). The attribute's comment: “the equality `Quot^{P,L} = Quot^{P',L^{⊗ n}}` with `P'(t) = P(n t)`, read on the two membership conditions, for `n ≠ 0` and numerical-polynomial invariants; the substacks themselves are not constructed in this development”.
 
 > **Stacks 0DP8, at the level of membership conditions.**  Replacing `L` by `L^{⊗ n}` replaces
 > the twisted Euler characteristics `m ↦ χ(X_t, 𝓕_t ⊗ L_t^{⊗ m})` by `m ↦ χ(X_t, 𝓕_t ⊗ L_t^{⊗ n m})`,
@@ -667,7 +653,7 @@ theorem isPrescribedTwistedEuler_iff_reindexMul {ι : Type v} {P : ℤ → ℤ} 
     IsPrescribedTwistedEuler P χ ↔ IsPrescribedTwistedEuler (fun m => P (n * m)) χ'
 ```
 
-**`AlgebraicGeometry.Space.QuotSituation.setOf_hasHilbertPolynomial_invertibleTensorPower_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorPowerReindex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorPowerReindex.lean#L106). The attribute's comment: “the equality `Quot^{P,L} = Quot^{P',L^{⊗ n}}` with `P'(t) = P(n t)`, for `n ≠ 0` and `P` a numerical polynomial, compared on the sections over every scheme of the site, membership read on the actual twisted Euler characteristics `χ(X_t, Q_t ⊗ L_t^{⊗ m})`”.
+**`AlgebraicGeometry.Space.QuotSituation.setOf_hasHilbertPolynomial_invertibleTensorPower_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorPowerReindex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorTensorPowerReindex.lean#L106). The attribute's comment: “the equality `Quot^{P,L} = Quot^{P',L^{⊗ n}}` with `P'(t) = P(n t)`, for `n ≠ 0` and `P` a numerical polynomial, compared on the sections over every scheme of the site, membership read on the actual twisted Euler characteristics `χ(X_t, Q_t ⊗ L_t^{⊗ m})`”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces of finite presentation, `F` a
 > quasi-coherent `𝒪_X`-module, `L` an invertible `𝒪_X`-module, `P : ℤ → ℤ` a numerical polynomial
@@ -704,4 +690,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.5, Tag 0DM1](https://stacks.math.columbia.edu/tag/0DM1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

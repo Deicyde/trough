@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Topologies.Fppf.etaleFiniteLocallyFreeDominates, Stacks.Topologies.Fppf.exists_openCover_finiteLocallyFree_refinement, AlgebraicGeometry.exists_integral_surjective_extension, Stacks.FiniteFactorization.exists_finite_surjective_extension, AlgebraicGeometry.exists_integral_surjective_openCover_factorization_of_mem_fppfPrecoverage, AlgebraicGeometry.exists_finite_surjective_openCover_factorization_of_mem_fppfPrecoverage, AlgebraicGeometry.isPHCoveringInCutoff_of_isEtaleCovering, AlgebraicGeometry.bigEtaleOverTopology_le_bigPHOverTopology
+lean: Stacks.Topologies.Fppf.etaleFiniteLocallyFreeDominates, Stacks.Topologies.Fppf.exists_openCover_finiteLocallyFree_refinement, AlgebraicGeometry.exists_integral_surjective_extension_and_not_forall, AlgebraicGeometry.exists_integral_surjective_extension, Stacks.FiniteFactorization.exists_finite_surjective_extension, AlgebraicGeometry.exists_integral_surjective_openCover_factorization_of_mem_fppfPrecoverage, AlgebraicGeometry.exists_finite_surjective_openCover_factorization_of_mem_fppfPrecoverage, AlgebraicGeometry.isPHCoveringInCutoff_of_isEtaleCovering
 statement: formalized
 proof: formalized
 ---
 
 # 37.48 Application to the fppf topology
 
-Section 37.48 of the Stacks Project, [Tag 05WM](https://stacks.math.columbia.edu/tag/05WM). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.48 of the Stacks Project, [Tag 05WM](https://stacks.math.columbia.edu/tag/05WM). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DET, a lemma
 
 [Tag 0DET](https://stacks.math.columbia.edu/tag/0DET) in the Stacks Project.
 
-**`Stacks.Topologies.Fppf.etaleFiniteLocallyFreeDominates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L151).
+**`Stacks.Topologies.Fppf.etaleFiniteLocallyFreeDominates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L151).
 
 > **Stacks Project, Tag 0DET.** An fppf covering `{S_i ⟶ S}` is refined by an fppf covering
 > `{V_a ⟶ S}` whose members factor as `V_a ⟶ S'_a ⟶ S` with `{S'_a ⟶ S}` an étale covering and
@@ -30,7 +30,7 @@ theorem etaleFiniteLocallyFreeDominates {S : Scheme.{u}}
 
 [Tag 05WN](https://stacks.math.columbia.edu/tag/05WN) in the Stacks Project.
 
-**`Stacks.Topologies.Fppf.exists_openCover_finiteLocallyFree_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L193).
+**`Stacks.Topologies.Fppf.exists_openCover_finiteLocallyFree_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L193).
 
 > **Stacks Project, Tag 05WN.** Let `𝒮 = {S_i ⟶ S}` be an fppf covering of a scheme. Then
 > there are a Zariski open covering `S = ⋃ U_j`, surjective finite locally free morphisms
@@ -64,7 +64,39 @@ theorem exists_openCover_finiteLocallyFree_refinement (S : Scheme.{u})
 
 [Tag 0CNX](https://stacks.math.columbia.edu/tag/0CNX) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_integral_surjective_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralSurjectiveExtension.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralSurjectiveExtension.lean#L81). The attribute's comment: “a surjective integral morphism over a retrocompact open of S extends to a surjective integral morphism over S with the same restriction to the open”.
+**`AlgebraicGeometry.exists_integral_surjective_extension_and_not_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralExtensionCounterexampleMain.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralExtensionCounterexampleMain.lean#L99). The attribute's comment: “the lemma as corrected in the errata: over every retrocompact open U of S a surjective integral V ⟶ U is the base change along U ↪ S of a surjective integral morphism over S, as schemes over U; and the statement for an arbitrary open U is false”.
+
+> **Stacks Project, Tag 0CNX, corrected.** The general statement of [Stacks, Tag 0CNX] is
+> false; this is its corrected (retrocompact) form, together with the failure of the general
+> statement.
+>
+> 1. Over a retrocompact open `U` of a scheme `S` (that is, `U.ι` quasi-compact), every surjective
+>    integral `f : V ⟶ U` is, as a scheme over `U`, the base change along `U ↪ S` of a surjective
+>    integral morphism `g : W ⟶ S`.
+> 2. For an arbitrary open subscheme this fails: the statement of the tag as written, quantified
+>    over all schemes `S`, all opens `U`, and all surjective integral `f : V ⟶ U`, is false.
+>    The witness is `S = Spec (∏ (n : ℕ), ℤ)`, `U = D(2, 2, …) ∪ ⋃ n, D(eₙ)` for the standard
+>    idempotents `eₙ`, and `V` the relative spectrum over `U` of the square-zero extension of `𝒪_U`
+>    by an invertible ideal sheaf that is not generated by its global sections; any integral
+>    extension over the affine `S` would force that ideal sheaf to be globally generated.
+>
+> The source's proof uses the relative normalization of `S` in `V`, which exists only when
+> `V ⟶ S` is quasi-compact and quasi-separated, i.e. when `U` is retrocompact; the second half
+> shows this restriction cannot be removed.
+
+```lean
+theorem exists_integral_surjective_extension_and_not_forall :
+    (∀ (S : Scheme.{u}) (U : S.Opens) [QuasiCompact U.ι] (V : Scheme.{u}) (f : V ⟶ U.toScheme)
+        [IsIntegralHom f] [Surjective f],
+        ∃ (W : Scheme.{u}) (g : W ⟶ S), IsIntegralHom g ∧ Surjective g ∧
+          Nonempty (Over.mk f ≅ (Over.pullback U.ι).obj (Over.mk g))) ∧
+      ¬ ∀ (S : Scheme.{u}) (U : S.Opens) (V : Scheme.{u}) (f : V ⟶ U.toScheme),
+        IsIntegralHom f → Surjective f →
+        ∃ (W : Scheme.{u}) (g : W ⟶ S), IsIntegralHom g ∧ Surjective g ∧
+          Nonempty (Over.mk f ≅ (Over.pullback U.ι).obj (Over.mk g))
+```
+
+**`AlgebraicGeometry.exists_integral_surjective_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralSurjectiveExtension.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralSurjectiveExtension.lean#L84). The attribute's comment: “the lemma as corrected in the errata (U retrocompact in S; false for an arbitrary open, see exists\_integral\_surjective\_extension\_and\_not\_forall): a surjective integral V ⟶ U extends to a surjective integral morphism over S whose base change along U ↪ S is V, as schemes over U”.
 
 > **Stacks Project, Tag 0CNX**, in corrected form, with `U` retrocompact in `S`: a surjective
 > integral morphism over a retrocompact open subscheme extends to a surjective integral morphism
@@ -86,7 +118,7 @@ theorem exists_integral_surjective_extension
 
 [Tag 0CNY](https://stacks.math.columbia.edu/tag/0CNY) in the Stacks Project.
 
-**`Stacks.FiniteFactorization.exists_finite_surjective_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteFactorization/ExtendFiniteSurjective.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteFactorization/ExtendFiniteSurjective.lean#L47).
+**`Stacks.FiniteFactorization.exists_finite_surjective_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteFactorization/ExtendFiniteSurjective.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteFactorization/ExtendFiniteSurjective.lean#L47).
 
 > Let `S` be a quasi-compact quasi-separated scheme and let `U ⊆ S` be a quasi-compact open.
 > A finite surjective morphism `f : V ⟶ U` extends to a finite surjective morphism `g : V̄ ⟶ S`:
@@ -108,7 +140,7 @@ theorem exists_finite_surjective_extension {S V : Scheme.{u}}
 
 [Tag 0CNZ](https://stacks.math.columbia.edu/tag/0CNZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_integral_surjective_openCover_factorization_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralDomination.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralDomination.lean#L125).
+**`AlgebraicGeometry.exists_integral_surjective_openCover_factorization_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralDomination.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/IntegralDomination.lean#L125).
 
 > **Stacks Project, Tag 0CNZ.** For every fppf covering `{X i ⟶ S}` of a scheme `S` there
 > are a surjective integral morphism `g : S' ⟶ S` and an open covering of `S'` such that each
@@ -130,7 +162,7 @@ theorem exists_integral_surjective_openCover_factorization_of_mem_fppfPrecoverag
 
 [Tag 0CP0](https://stacks.math.columbia.edu/tag/0CP0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_surjective_openCover_factorization_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/FiniteDomination.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/FiniteDomination.lean#L165).
+**`AlgebraicGeometry.exists_finite_surjective_openCover_factorization_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/FiniteDomination.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FppfApplication/FiniteDomination.lean#L165).
 
 > **[Stacks, Tag 0CP0].** For every fppf covering `{X i ⟶ S}` of a quasi-compact and
 > quasi-separated scheme `S` there are a surjective finite morphism `g : S' ⟶ S` of finite
@@ -155,7 +187,7 @@ theorem exists_finite_surjective_openCover_factorization_of_mem_fppfPrecoverage
 
 [Tag 0DBT](https://stacks.math.columbia.edu/tag/0DBT) in the Stacks Project.
 
-**`AlgebraicGeometry.isPHCoveringInCutoff_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean#L81). The attribute's comment: “étale coverings in a cutoff category”.
+**`AlgebraicGeometry.isPHCoveringInCutoff_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean#L81). The attribute's comment: “étale coverings in a cutoff category”.
 
 > An étale covering family in a size-bounded category of schemes is a ph covering family
 > there, since both conditions are read off the image of the family in all schemes.
@@ -166,7 +198,7 @@ public theorem isPHCoveringInCutoff_of_isEtaleCovering {κ : Cardinal.{u}}
     IsPHCoveringInCutoff 𝒰
 ```
 
-**`AlgebraicGeometry.bigEtaleOverTopology_le_bigPHOverTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean#L176). The attribute's comment: “étale coverings on a slice”.
+**`AlgebraicGeometry.bigEtaleOverTopology_le_bigPHOverTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToEtaleSquares.lean#L176). The attribute's comment: “étale coverings on a slice”.
 
 > The big-site comparison from ph to étale is induced by the identity functor on the common
 > slice category: every étale covering of the slice is a ph covering of the slice.
@@ -176,7 +208,7 @@ public theorem bigEtaleOverTopology_le_bigPHOverTopology (B : BigPHSite.{u}) (X 
     BigEtaleOver.topology (phAssociatedBigEtaleSite B) X.1 X.2 ≤ B.topology.over X
 ```
 
-**`AlgebraicGeometry.isPHCovering_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/EtaleHComparison.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/EtaleHComparison.lean#L102). The attribute's comment: “étale coverings”.
+**`AlgebraicGeometry.isPHCovering_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/HTopology/EtaleHComparison.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/HTopology/EtaleHComparison.lean#L102). The attribute's comment: “étale coverings”.
 
 > A family of étale morphisms of schemes whose images cover the target is a ph covering.
 
@@ -187,7 +219,7 @@ public theorem isPHCovering_of_etale {T : Scheme.{u}} {I : Type v} (X : I → Sc
     IsPHCovering X f
 ```
 
-**`AlgebraicGeometry.IsPHCovering.of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FppfAffineDomination.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FppfAffineDomination.lean#L116).
+**`AlgebraicGeometry.IsPHCovering.of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FppfAffineDomination.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FppfAffineDomination.lean#L116).
 
 > An fppf covering of schemes is a ph covering.
 
@@ -202,7 +234,7 @@ theorem IsPHCovering.of_mem_fppfPrecoverage
 
 [Tag 0DBU](https://stacks.math.columbia.edu/tag/0DBU) in the Stacks Project.
 
-**`AlgebraicGeometry.phToFppf_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L407). The attribute's comment: “the comparison is the morphism of sites given by the identity functor on underlying categories”.
+**`AlgebraicGeometry.phToFppf_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L407). The attribute's comment: “the comparison is the morphism of sites given by the identity functor on underlying categories”.
 
 > **Stacks 0DBU: `ε` is the morphism of sites given by the identity functor on underlying
 > categories.** The two sites have the one underlying category, the slice over `X` of the common
@@ -217,7 +249,7 @@ public theorem phToFppf_isMorphismOfSites (B : BigPHSite.{u}) (X : B.Schemes) :
       (BigFppfOver.topology (phAssociatedBigFppfSite B) X.1 X.2) (B.topology.over X)
 ```
 
-**`AlgebraicGeometry.phToBigFppf_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L419). The attribute's comment: “the direct image is the identity on underlying presheaves”.
+**`AlgebraicGeometry.phToBigFppf_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L419). The attribute's comment: “the direct image is the identity on underlying presheaves”.
 
 > **Stacks 0DBU: `ε_*` is the identity on underlying presheaves.** Forming the direct image of
 > a ph sheaf and then forgetting the fppf sheaf condition gives back the presheaf one started
@@ -233,7 +265,7 @@ public theorem phToBigFppf_pushforward_comp_sheafToPresheaf (B : BigPHSite.{u})
       sheafToPresheaf (B.topology.over X) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phToBigFppf_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L439). The attribute's comment: “the inverse image is the ph sheafification of an fppf sheaf”.
+**`AlgebraicGeometry.phToBigFppf_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L439). The attribute's comment: “the inverse image is the ph sheafification of an fppf sheaf”.
 
 > **Stacks 0DBU: `ε⁻¹` associates to an fppf sheaf its ph sheafification.** The inverse image
 > is the functor on sheaves of sets induced by the identity functor of the common slice, and the
@@ -253,7 +285,7 @@ public def phToBigFppf_inverseImageIso (B : BigPHSite.{u}) (X : B.Schemes) :
         presheafToSheaf (B.topology.over X) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phToZariski_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L518). The attribute's comment: “by composition, the comparison of the ph topology with the Zariski topology”.
+**`AlgebraicGeometry.phToZariski_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L518). The attribute's comment: “by composition, the comparison of the ph topology with the Zariski topology”.
 
 > **Stacks 0DBU: by composition the ph topology is compared with the Zariski topology.**
 > `AlgebraicGeometry.phToZariskiMorphism`, the composition of `ε` with the change-of-topology
@@ -269,7 +301,7 @@ public theorem phToZariski_pushforward_comp_sheafToPresheaf (B : BigPHSite.{u})
       sheafToPresheaf (B.topology.over X) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phToEtale_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L544). The attribute's comment: “by composition, the comparison of the ph topology with the étale topology”.
+**`AlgebraicGeometry.phToEtale_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L544). The attribute's comment: “by composition, the comparison of the ph topology with the étale topology”.
 
 > **Stacks 0DBU: by composition the ph topology is compared with the étale topology.**
 > `AlgebraicGeometry.phToEtaleMorphism`, the composition of `ε` with the change-of-topology
@@ -284,7 +316,7 @@ public theorem phToEtale_pushforward_comp_sheafToPresheaf (B : BigPHSite.{u}) (X
       sheafToPresheaf (B.topology.over X) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phToSmooth_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L569). The attribute's comment: “by composition, the comparison of the ph topology with the smooth topology”.
+**`AlgebraicGeometry.phToSmooth_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L569). The attribute's comment: “by composition, the comparison of the ph topology with the smooth topology”.
 
 > **Stacks 0DBU: by composition the ph topology is compared with the smooth topology.**
 > `AlgebraicGeometry.phToSmoothMorphism`, the composition of `ε` with the change-of-topology
@@ -299,7 +331,7 @@ public theorem phToSmooth_pushforward_comp_sheafToPresheaf (B : BigPHSite.{u}) (
       sheafToPresheaf (B.topology.over X) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.phToSyntomic_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L594). The attribute's comment: “by composition, the comparison of the ph topology with the syntomic topology”.
+**`AlgebraicGeometry.phToSyntomic_pushforward_comp_sheafToPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/PhToFppfComparison.lean#L594). The attribute's comment: “by composition, the comparison of the ph topology with the syntomic topology”.
 
 > **Stacks 0DBU: by composition the ph topology is compared with the syntomic topology.**
 > `AlgebraicGeometry.phToSyntomicMorphism`, the composition of `ε` with the change-of-topology
@@ -322,4 +354,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.48, Tag 05WM](https://stacks.math.columbia.edu/tag/05WM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

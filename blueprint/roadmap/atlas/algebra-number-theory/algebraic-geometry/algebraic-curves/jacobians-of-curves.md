@@ -7,7 +7,7 @@ statement: formalized
 
 # Jacobians of curves
 
-10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html).
+10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html).
 
 ## Genus of a smooth proper curve
 
@@ -19,7 +19,7 @@ genus of $C$ is a natural number.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.genus` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#genus).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.genus` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#genus).
 
 ## Jacobian of a smooth proper curve
 
@@ -31,7 +31,7 @@ Jacobian $J(C)$ of $C$ is a $k$-scheme.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#jacobian).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#jacobian).
 
 ## The Jacobian has dimension equal to the genus
 
@@ -43,7 +43,7 @@ $k$, where $g$ is the genus of $C$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.smoothOfRelativeDimension_genus` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#smooth-of-relative-dimension-genus).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.smoothOfRelativeDimension_genus` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#smooth-of-relative-dimension-genus).
 
 ## Abel–Jacobi map
 
@@ -55,7 +55,7 @@ its Jacobian, the Abel–Jacobi map based at $P$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.ofCurve` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#of-curve).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.ofCurve` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#of-curve).
 
 ## The Abel–Jacobi map sends the base point to zero
 
@@ -68,7 +68,7 @@ identity point of $J(C)$ for its group scheme structure.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.comp_ofCurve` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#comp-of-curve).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.comp_ofCurve` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#comp-of-curve).
 
 ## Universal property of the Jacobian
 
@@ -85,7 +85,7 @@ In other words, the Jacobian of $C$ is the Albanese variety of $C$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.exists_unique_ofCurve_comp` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#exists-unique-of-curve-comp).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.Jacobian.exists_unique_ofCurve_comp` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#exists-unique-of-curve-comp).
 
 ## Group law on the rational points of the Jacobian
 
@@ -101,7 +101,7 @@ This pins down the group law rather than allowing an arbitrary commutative group
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge/near/587802685. Problem `jacobian_challenge_alggeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.instCommGroup_eq` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#inst-comm-group-eq).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.instCommGroup_eq` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#inst-comm-group-eq).
 
 ## Uniform Mordell–Lang constant
 
@@ -113,14 +113,14 @@ Dimitrov, Gao and Habegger.
 
 - V. Dimitrov, Z. Gao, and P. Habegger, `Uniformity in Mordell–Lang for curves`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_uniform_mordell_lang` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.c` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#c).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.c` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#c).
 
 ## The uniform Mordell–Lang constant is at least one
 
 For all natural numbers $g$ and
 $d$, the uniform constant satisfies $c(g, d) \ge 1$.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.c_pos` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#c-pos).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.c_pos` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#c-pos).
 
 ## Uniform Mordell–Lang for curves
 
@@ -134,7 +134,7 @@ is the free rank of the group of $F$-rational points of the Jacobian of $C$.
 
 - V. Dimitrov, Z. Gao, and P. Habegger, `Uniformity in Mordell–Lang for curves`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_uniform_mordell_lang` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.theorem_1_1` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.theorem_1_1` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/JacobianChallengeWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Jacobians of curves](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-curves)

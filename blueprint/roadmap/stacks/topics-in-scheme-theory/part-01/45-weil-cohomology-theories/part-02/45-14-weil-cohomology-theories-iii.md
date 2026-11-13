@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.14 Weil cohomology theories, III
 
-Section 45.14 of the Stacks Project, [Tag 0FID](https://stacks.math.columbia.edu/tag/0FID). 18 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 45.14 of the Stacks Project, [Tag 0FID](https://stacks.math.columbia.edu/tag/0FID). 18 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FIE, a lemma
 
 [Tag 0FIE](https://stacks.math.columbia.edu/tag/0FIE) in the Stacks Project.
 
-**`Stacks.WeilCohomology.eq_of_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean#L238). The attribute's comment: “uniqueness, for the class of a finite locally free module of constant rank: two rules compatible with pullbacks and taking the value `exp(c₁^H(ℒ))` on an invertible module agree there. Constant rank is the source's reduction by condition (2) of the situation of Section 45.12, which `ChernSetup` does not transcribe, and the pullback homomorphism of `K₀(Vect(-))`, which this repository does not construct, is a hypothesis”.
+**`Stacks.WeilCohomology.eq_of_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean#L238). The attribute's comment: “uniqueness, for the class of a finite locally free module of constant rank: two rules compatible with pullbacks and taking the value `exp(c₁^H(ℒ))` on an invertible module agree there. Constant rank is the source's reduction by condition (2) of the situation of Section 45.12, which `ChernSetup` does not transcribe, and the pullback homomorphism of `K₀(Vect(-))`, which this repository does not construct, is a hypothesis”.
 
 > **The uniqueness half of Stacks Tag 0FIE.** Two rules assigning to every object `X` of `𝒞` a
 > ring homomorphism `K₀(Vect(X)) ⟶ ∏_{i ≥ 0} H^{2i}(X)(i)`, compatible with pullbacks and taking
@@ -54,7 +54,7 @@ theorem eq_of_cohomologicalChernCharacter
       ch' X (VectorBundleKZero.classOf (S.obj X) E)
 ```
 
-**`Stacks.WeilCohomology.exists_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean#L287). The attribute's comment: “existence: the rule, as a ring homomorphism out of `K₀(Vect(X))` into `∏_{i ≥ 0} H^{2i}(X)(i)`, together with its grading, its compatibility with pullbacks and its value `exp(c₁^H(ℒ))` on an invertible module. The cohomological Chern character of a single finite locally free module, which Tag 0FI9's existence half constructs from the locally constant rank `r^A` and the Chern classes of Tag 0FI5 on all of `K₀` — neither available here, both resting on condition (2) of the situation, which `ChernSetup` does not transcribe — is a hypothesis, as is the pullback homomorphism of `K₀(Vect(-))`”.
+**`Stacks.WeilCohomology.exists_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacter.lean#L287). The attribute's comment: “existence: the rule, as a ring homomorphism out of `K₀(Vect(X))` into `∏_{i ≥ 0} H^{2i}(X)(i)`, together with its grading, its compatibility with pullbacks and its value `exp(c₁^H(ℒ))` on an invertible module. The cohomological Chern character of a single finite locally free module, which Tag 0FI9's existence half constructs from the locally constant rank `r^A` and the Chern classes of Tag 0FI5 on all of `K₀` — neither available here, both resting on condition (2) of the situation, which `ChernSetup` does not transcribe — is a hypothesis, as is the pullback homomorphism of `K₀(Vect(-))`”.
 
 > **The existence half of Stacks Tag 0FIE.** The cohomological Chern character of a single
 > finite locally free module extends to a ring homomorphism
@@ -113,7 +113,7 @@ theorem exists_cohomologicalChernCharacter
                 expFirstChernClass 𝔄 X (picardClassOf (S.obj X) L hL)
 ```
 
-**`Stacks.WeilCohomology.eq_of_cohomologicalChernCharacter'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean#L180). The attribute's comment: “uniqueness: two rules assigning to every object a ring homomorphism out of `K₀(Vect(X))`, compatible with pullbacks and taking the value `exp(c₁^H(ℒ))` on an invertible module, agree on every class and at every object. Every input is discharged here: compatibility with pullbacks is read against the CONSTRUCTED pullback homomorphism AlgebraicGeometry.VectorBundleKZero.pullbackRingHom of `K₀(Vect(-))`”.
+**`Stacks.WeilCohomology.eq_of_cohomologicalChernCharacter'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean#L180). The attribute's comment: “uniqueness: two rules assigning to every object a ring homomorphism out of `K₀(Vect(X))`, compatible with pullbacks and taking the value `exp(c₁^H(ℒ))` on an invertible module, agree on every class and at every object. Every input is discharged here: compatibility with pullbacks is read against the CONSTRUCTED pullback homomorphism AlgebraicGeometry.VectorBundleKZero.pullbackRingHom of `K₀(Vect(-))`”.
 
 > **The uniqueness half of Stacks Tag 0FIE.** Two rules assigning to every object `X` of `𝒞` a
 > ring homomorphism `K₀(Vect(X)) ⟶ ∏_{i ≥ 0} H^{2i}(X)(i)`, compatible with pullbacks and taking
@@ -149,7 +149,7 @@ theorem eq_of_cohomologicalChernCharacter'
     ch X α = ch' X α
 ```
 
-**`Stacks.WeilCohomology.exists_cohomologicalChernCharacter_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean#L527). The attribute's comment: “existence: the rule, as a ring homomorphism out of `K₀(Vect(X))` into `∏_{i ≥ 0} H^{2i}(X)(i)`, together with its grading, its compatibility with the CONSTRUCTED pullback homomorphism AlgebraicGeometry.VectorBundleKZero.pullbackRingHom of `K₀(Vect(-))` and its value `exp(c₁^H(ℒ))` on an invertible module, stated over the data and the conditions of Sections 45.12 and 45.14 themselves and over NO structure argument. The standing situation is the structure Stacks.WeilCohomology.ChernSetup -- the data the source fixes, with clause (1), clause (2), clause (3)(a), condition (1), condition (2), condition (4) and the source's grading A(X) = sum of the A^i(X) as isInternal\_grade -- together with the section's three remaining conditions: condition (3) at f^*L itself, in the source's own form (PullbackFirstChernCondition); clause (3)(b) as the closure property IsBundleCompare at f^*E itself, in the source's own form (BundleCompareClause); clause (3)(c) as the closure property IsBundleEmbedding with condition (5) read at c\_1^A(O\_P(P')) for the divisor module characterized divisor-theoretically by IsSubbundleDivisorModule (DivisorDatumClause); and the Q-structure of A as data (D0) and (D1) of Section 45.14 read for A, that is Stacks.WeilCohomology.ChernSetup.IsRationallyGraded. The structure Stacks.WeilCohomology.ChernSituation is built inside the proof by Stacks.WeilCohomology.chernSituationOfSource and is not an argument, and no RationalChernSituation occurs. PROVED and not assumed: the cohomological Chern character of a single finite locally free module, which the source's proof cites from Tag 0FI9's existence half and which Stacks.WeilCohomology.exists\_cohomologicalChernCharacter leaves open as `chM` with seven properties, discharged here by Stacks.WeilCohomology.chernCharacterOfModule and its seven lemmas; the total Chern classes of Tag 0FI5 those rest on, at the constructed situation (ChernSituation.isTotalChernClass\_totalChernClass); the rank class `r^A`, which is Stacks.WeilCohomology.SourceChernSetup.rankClass, built from condition (2); the pullback homomorphism of K\_0(Vect(-)), which is AlgebraicGeometry.VectorBundleKZero.pullbackRingHom; the Whitney formula this half needs, proved from clause (3)(c) with condition (5); and the one-degree form of the Q-structure, the rationals lying in A^0(X), DERIVED from (D0) and (D1) by Stacks.WeilCohomology.ChernSetup.algebraMap\_mem\_grade\_zero\_of\_isRationallyGraded. Nothing outside the data and the conditions of Sections 45.12 and 45.14 is assumed, and NO hypothesis is read more strongly than the source states it: the invariance of the total Chern class under an isomorphism of modules, which K\_0(Vect(X)) forces on any rule out of it and which a comparison of P(E) with P(E') would get only by asking clause (3)(b) at every module isomorphic to f^*E, is PROVED (chernSeries\_eq\_of\_iso), as is the pseudofunctoriality coherence isomorphism h^*(g^*E) = (h . g)^*E (pull\_chernSeries\_coeff\_of\_iso)”.
+**`Stacks.WeilCohomology.exists_cohomologicalChernCharacter_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CohomologicalChernCharacterConstructed.lean#L527). The attribute's comment: “existence: the rule, as a ring homomorphism out of `K₀(Vect(X))` into `∏_{i ≥ 0} H^{2i}(X)(i)`, together with its grading, its compatibility with the CONSTRUCTED pullback homomorphism AlgebraicGeometry.VectorBundleKZero.pullbackRingHom of `K₀(Vect(-))` and its value `exp(c₁^H(ℒ))` on an invertible module, stated over the data and the conditions of Sections 45.12 and 45.14 themselves and over NO structure argument. The standing situation is the structure Stacks.WeilCohomology.ChernSetup -- the data the source fixes, with clause (1), clause (2), clause (3)(a), condition (1), condition (2), condition (4) and the source's grading A(X) = sum of the A^i(X) as isInternal\_grade -- together with the section's three remaining conditions: condition (3) at f^*L itself, in the source's own form (PullbackFirstChernCondition); clause (3)(b) as the closure property IsBundleCompare at f^*E itself, in the source's own form (BundleCompareClause); clause (3)(c) as the closure property IsBundleEmbedding with condition (5) read at c\_1^A(O\_P(P')) for the divisor module characterized divisor-theoretically by IsSubbundleDivisorModule (DivisorDatumClause); and the Q-structure of A as data (D0) and (D1) of Section 45.14 read for A, that is Stacks.WeilCohomology.ChernSetup.IsRationallyGraded. The structure Stacks.WeilCohomology.ChernSituation is built inside the proof by Stacks.WeilCohomology.chernSituationOfSource and is not an argument, and no RationalChernSituation occurs. PROVED and not assumed: the cohomological Chern character of a single finite locally free module, which the source's proof cites from Tag 0FI9's existence half and which Stacks.WeilCohomology.exists\_cohomologicalChernCharacter leaves open as `chM` with seven properties, discharged here by Stacks.WeilCohomology.chernCharacterOfModule and its seven lemmas; the total Chern classes of Tag 0FI5 those rest on, at the constructed situation (ChernSituation.isTotalChernClass\_totalChernClass); the rank class `r^A`, which is Stacks.WeilCohomology.SourceChernSetup.rankClass, built from condition (2); the pullback homomorphism of K\_0(Vect(-)), which is AlgebraicGeometry.VectorBundleKZero.pullbackRingHom; the Whitney formula this half needs, proved from clause (3)(c) with condition (5); and the one-degree form of the Q-structure, the rationals lying in A^0(X), DERIVED from (D0) and (D1) by Stacks.WeilCohomology.ChernSetup.algebraMap\_mem\_grade\_zero\_of\_isRationallyGraded. Nothing outside the data and the conditions of Sections 45.12 and 45.14 is assumed, and NO hypothesis is read more strongly than the source states it: the invariance of the total Chern class under an isomorphism of modules, which K\_0(Vect(X)) forces on any rule out of it and which a comparison of P(E) with P(E') would get only by asking clause (3)(b) at every module isomorphic to f^*E, is PROVED (chernSeries\_eq\_of\_iso), as is the pseudofunctoriality coherence isomorphism h^*(g^*E) = (h . g)^*E (pull\_chernSeries\_coeff\_of\_iso)”.
 
 > **Stacks Project, Tag 0FIE, existence half.** In the standing situation of Section 45.12,
 > read with the `𝐐`-structure data (D0) and (D1) of Section 45.14 give, there is a rule assigning
@@ -222,7 +222,7 @@ theorem exists_cohomologicalChernCharacter_of_source (𝔄 : SourceChernSetup.{u
                 expFirstChernClass 𝔄.toChernSetup X (picardClassOf (S.obj X) L hL)
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/WeilChernCharacter.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/WeilChernCharacter.lean#L334). The attribute's comment: “under exactly (D0), (D1), (D2') and (A1)-(A4), for all smooth projective schemes over k (not necessarily irreducible or nonempty), with the tensor-defined Tate twists: existence and uniqueness of the rule K\_0(Vect(X)) -> prod\_\{i >= 0} H^\{2i}(X)(i), a ring homomorphism for the cup product of the product. (D1) is Z-graded as in the chapter's conventions; the proof uses condition (4) of Section 45.12 only through injectivity and the resolution of the top power, which is what (A3) gives on A when H^* has negative-degree classes”.
+**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_cohomologicalChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/WeilChernCharacter.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/WeilChernCharacter.lean#L334). The attribute's comment: “under exactly (D0), (D1), (D2') and (A1)-(A4), for all smooth projective schemes over k (not necessarily irreducible or nonempty), with the tensor-defined Tate twists: existence and uniqueness of the rule K\_0(Vect(X)) -> prod\_\{i >= 0} H^\{2i}(X)(i), a ring homomorphism for the cup product of the product. (D1) is Z-graded as in the chapter's conventions; the proof uses condition (4) of Section 45.12 only through injectivity and the resolution of the top power, which is what (A3) gives on A when H^* has negative-degree classes”.
 
 > **Stacks Project, Tag 0FIE.** Assume given data (D0), (D1), (D2') satisfying axioms (A1),
 > (A2), (A3) and (A4). There is a unique rule which assigns to every smooth projective `X` over `k`
@@ -270,7 +270,7 @@ theorem existsUnique_cohomologicalChernCharacter [CharZero F] (hA1 : 𝔇.Coprod
 
 [Tag 0FIF](https://stacks.math.columbia.edu/tag/0FIF) in the Stacks Project.
 
-**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_codimensionCycleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassIntegral.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassIntegral.lean#L302). The attribute's comment: “the integral form: existence and uniqueness, under exactly (D0), (D1), (D2') and (A1)-(A4), of γ on the integral Chow groups CH^i(X) = prod\_d CH\_\{d-i}(X\_d) of every smooth projective X over k, with values in H^\{2i}(X)(i), additive, multiplicative for the intersection product of 0FC0 and the cup product, γ([X]) = 1, compatible with the codimension-graded Gysin pullbacks f^! of 0FF3, and with γ(ch(α)) = ch^H(α) read through CH -> CH ⊗ Q (the Q-linear extension of γ sends ch(α) ∩ [X] to ch^H(α), ch^H as in 0FIE). Derived from the rational form existsUnique\_cycleClassMap; nothing is assumed”.
+**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_codimensionCycleClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassIntegral.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassIntegral.lean#L302). The attribute's comment: “the integral form: existence and uniqueness, under exactly (D0), (D1), (D2') and (A1)-(A4), of γ on the integral Chow groups CH^i(X) = prod\_d CH\_\{d-i}(X\_d) of every smooth projective X over k, with values in H^\{2i}(X)(i), additive, multiplicative for the intersection product of 0FC0 and the cup product, γ([X]) = 1, compatible with the codimension-graded Gysin pullbacks f^! of 0FF3, and with γ(ch(α)) = ch^H(α) read through CH -> CH ⊗ Q (the Q-linear extension of γ sends ch(α) ∩ [X] to ch^H(α), ch^H as in 0FIE). Derived from the rational form existsUnique\_cycleClassMap; nothing is assumed”.
 
 > **Stacks Project, Tag 0FIF, on the integral Chow ring.** Assume given (D0), (D1), (D2')
 > satisfying axioms (A1), (A2), (A3) and (A4). There is a unique rule which assigns to every smooth
@@ -303,7 +303,7 @@ theorem existsUnique_codimensionCycleClass (hA1 : 𝔇.CoproductAxiom) (hA2 : �
           (a : codimensionChowGroup k X.obj.hom i)
         (b : codimensionChowGroup k X.obj.hom j),
         γ X (i + j) (codimensionIntersectionProduct k X.obj.hom i j a b) =
-          tateCup 𝔇.finrank_tate (𝔇.cup X) i j (i + j) (by push_cast; ring) (γ X i a)
+          tateCup 𝔇.finrank_tate (𝔇.cup X) i j (i + j) (by ring) (γ X i a)
             (γ X j b)) ∧
       (∀ X : (SmoothProjectiveScheme k).FullSubcategory, γ X 0 (fundamentalClass X) = 𝔇.unitTw X) ∧
       (∀ {X Y : (SmoothProjectiveScheme k).FullSubcategory} (f : X ⟶ Y) (i : ℕ)
@@ -331,7 +331,7 @@ theorem existsUnique_codimensionCycleClass (hA1 : 𝔇.CoproductAxiom) (hA2 : �
               ch X a
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_cycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassMap.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassMap.lean#L339). The attribute's comment: “existence and uniqueness, under exactly (D0), (D1), (D2') and (A1)-(A4) (FirstChernClassData with its four axioms), for all smooth projective X over k: γ on CH^*(X) ⊗ Q (the actual rational Chow group of X with the intersection product of Chow Homology, Section 0FEX, and its codimension grading) is graded, additive, multiplicative and unital for the cup product of prod\_i H^\{2i}(X)(i), compatible with the actual Gysin pullbacks f^!, and γ(ch(α) ∩ [X]) = ch^H(α) for every α in K\_0(Vect(X)) and the ch^H of Tag 0FIE. The source prints the last equation as ch^H(α) = γ(ch(α)), which typechecks only after capping with [X], and takes γ on CH^*(X); its proof defines γ on CH^*(X) ⊗ Q, where the equation lives, and so does this statement. 0FEY, 0FEM, 0FF8, 0FEN, 0FEX and 0FIA are proved, not assumed”.
+**`Stacks.WeilCohomology.FirstChernClassData.existsUnique_cycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassMap.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ChernClassCycleClassMap.lean#L335). The attribute's comment: “existence and uniqueness, under exactly (D0), (D1), (D2') and (A1)-(A4) (FirstChernClassData with its four axioms), for all smooth projective X over k: γ on CH^*(X) ⊗ Q (the actual rational Chow group of X with the intersection product of Chow Homology, Section 0FEX, and its codimension grading) is graded, additive, multiplicative and unital for the cup product of prod\_i H^\{2i}(X)(i), compatible with the actual Gysin pullbacks f^!, and γ(ch(α) ∩ [X]) = ch^H(α) for every α in K\_0(Vect(X)) and the ch^H of Tag 0FIE. The source prints the last equation as ch^H(α) = γ(ch(α)), which typechecks only after capping with [X], and takes γ on CH^*(X); its proof defines γ on CH^*(X) ⊗ Q, where the equation lives, and so does this statement. 0FEY, 0FEM, 0FF8, 0FEN, 0FEX and 0FIA are proved, not assumed”.
 
 > **Stacks Project, Tag 0FIF.** Assume given (D0), (D1), (D2') satisfying axioms (A1), (A2),
 > (A3) and (A4). There is a unique rule which assigns to every smooth projective `X` over `k` a
@@ -381,7 +381,7 @@ theorem existsUnique_cycleClassMap (hA1 : 𝔇.CoproductAxiom) (hA2 : 𝔇.Pullb
             ch X a
 ```
 
-**`Stacks.WeilCohomology.CycleClassSetup.isCycleClassRule_cycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean#L204). The attribute's comment: “existence: the rule, constructed rather than chosen, together with its three properties — graded, compatible with pullbacks, and `γ(ch(α) ∩ [X]) = ch^H(α)`. The source prints that equation as `ch^H(α) = γ(ch(α))`, which typechecks only after capping with `[X]`; the form proved is the one the source's own proof defines, and `γ` is correspondingly taken on `CH^*(X) ⊗ ℚ`, where the equation lives. Tag 0FIE (`ch^H`), Tags 0FEY and 0FEM (the ring isomorphism `K₀(Vect(X)) ⊗ ℚ ≅ CH^*(X) ⊗ ℚ`), Tag 0FEJ (`ψ²`) and Tags 0FEX and 0FIA (the two eigenvalue statements) are hypotheses, carried by `CycleClassSetup`”.
+**`Stacks.WeilCohomology.CycleClassSetup.isCycleClassRule_cycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean#L204). The attribute's comment: “existence: the rule, constructed rather than chosen, together with its three properties — graded, compatible with pullbacks, and `γ(ch(α) ∩ [X]) = ch^H(α)`. The source prints that equation as `ch^H(α) = γ(ch(α))`, which typechecks only after capping with `[X]`; the form proved is the one the source's own proof defines, and `γ` is correspondingly taken on `CH^*(X) ⊗ ℚ`, where the equation lives. Tag 0FIE (`ch^H`), Tags 0FEY and 0FEM (the ring isomorphism `K₀(Vect(X)) ⊗ ℚ ≅ CH^*(X) ⊗ ℚ`), Tag 0FEJ (`ψ²`) and Tags 0FEX and 0FIA (the two eigenvalue statements) are hypotheses, carried by `CycleClassSetup`”.
 
 > **The existence half of Stacks Tag 0FIF.** The transported cohomological Chern character is
 > graded, compatible with pullbacks, and satisfies `γ(ch(α) ∩ [X]) = ch^H(α)`.
@@ -395,7 +395,7 @@ theorem existsUnique_cycleClassMap (hA1 : 𝔇.CoproductAxiom) (hA2 : 𝔇.Pullb
 theorem isCycleClassRule_cycleClassMap : IsCycleClassRule S S.cycleClassMap
 ```
 
-**`Stacks.WeilCohomology.eq_of_isCycleClassRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean#L224). The attribute's comment: “uniqueness: the defining equation `γ(ch(α) ∩ [X]) = ch^H(α)` alone determines the rule, the Chern character isomorphism of Tags 0FEY and 0FEM being surjective. As in the existence half the equation is the corrected form of the source's `ch^H(α) = γ(ch(α))` and `γ` is taken on `CH^*(X) ⊗ ℚ`”.
+**`Stacks.WeilCohomology.eq_of_isCycleClassRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/CycleClassMap.lean#L224). The attribute's comment: “uniqueness: the defining equation `γ(ch(α) ∩ [X]) = ch^H(α)` alone determines the rule, the Chern character isomorphism of Tags 0FEY and 0FEM being surjective. As in the existence half the equation is the corrected form of the source's `ch^H(α) = γ(ch(α))` and `γ` is taken on `CH^*(X) ⊗ ℚ`”.
 
 > **The uniqueness half of Stacks Tag 0FIF.** Two rules with the three properties are equal.
 >
@@ -412,7 +412,7 @@ theorem eq_of_isCycleClassRule {S : CycleClassSetup.{v, v₁, w} C}
 
 [Tag 0FIH](https://stacks.math.columbia.edu/tag/0FIH) in the Stacks Project.
 
-**`Stacks.WeilCohomology.SmoothProjectiveScheme.exists_blowup_relations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupRelationGeneral.lean, line 856](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupRelationGeneral.lean#L856).
+**`Stacks.WeilCohomology.SmoothProjectiveScheme.exists_blowup_relations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupRelationGeneral.lean, line 856](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupRelationGeneral.lean#L856).
 
 > **Lemma 0FIH.** Let `b : X' ⟶ X` be the blowing up of a smooth projective scheme `X` over `k`
 > (not necessarily equidimensional) in a smooth closed subscheme `i : Z ⟶ X`, with exceptional
@@ -468,7 +468,7 @@ theorem exists_blowup_relations {r : ℕ} (hr0 : 0 < r)
 
 [Tag 0FII](https://stacks.math.columbia.edu/tag/0FII) in the Stacks Project.
 
-**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.cup_codimensionCycleClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean#L370). The attribute's comment: “for any smooth projective X and smooth closed Z all of whose irreducible components have codimension r, with [C\_\{Z/X}] restricted from K\_0(X): a|\_Z = 0 implies γ([Z]) ∪ a = 0, γ the cycle class map of 0FIF; the case r = 0 by (A1)”.
+**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.cup_codimensionCycleClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean#L370). The attribute's comment: “for any smooth projective X and smooth closed Z all of whose irreducible components have codimension r, with [C\_\{Z/X}] restricted from K\_0(X): a|\_Z = 0 implies γ([Z]) ∪ a = 0, γ the cycle class map of 0FIF; the case r = 0 by (A1)”.
 
 > **Stacks Project, Lemma 0FII.** Let (D0), (D1), (D2') satisfy (A1)–(A4) and (A7), with `γ` the
 > cycle class map of Tag 0FIF. Let `X` be a smooth projective scheme over `k` and `i : Z ⟶ X` a
@@ -498,7 +498,7 @@ theorem cup_codimensionCycleClass_eq_zero (hA1 : 𝔇.CoproductAxiom)
       (h.codimensionCycleClass X r (closedSubschemeClass X.obj.hom i.hom.left r)) = 0
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.codimensionCycleClass_cup_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean#L394). The attribute's comment: “in the source's order γ([Z]) ∪ a = 0, for any smooth projective X and smooth closed Z all of whose irreducible components have codimension r, with [C\_\{Z/X}] restricted from K\_0(X), and a|\_Z = 0; γ the cycle class map of 0FIF”.
+**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.codimensionCycleClass_cup_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassCupVanishingGeneral.lean#L394). The attribute's comment: “in the source's order γ([Z]) ∪ a = 0, for any smooth projective X and smooth closed Z all of whose irreducible components have codimension r, with [C\_\{Z/X}] restricted from K\_0(X), and a|\_Z = 0; γ the cycle class map of 0FIF”.
 
 > **Stacks Project, Lemma 0FII, in the source's order: `γ([Z]) ∪ a = 0`.** Here `γ([Z]) ∪ a` is
 > the cup product with the twisted class on the left, `tateCupLeft` of the flipped cup product. It
@@ -523,7 +523,7 @@ theorem codimensionCycleClass_cup_eq_zero (hA1 : 𝔇.CoproductAxiom)
 
 [Tag 0FIJ](https://stacks.math.columbia.edu/tag/0FIJ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.poincareDuality_toWeilData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PoincareDualityWeilThree.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PoincareDualityWeilThree.lean#L127). The attribute's comment: “axiom (A) for the data of (A1)-(A7), with trace map λ of (A6) and γ the cycle class map of 0FIF”.
+**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.poincareDuality_toWeilData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PoincareDualityWeilThree.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/PoincareDualityWeilThree.lean#L127). The attribute's comment: “axiom (A) for the data of (A1)-(A7), with trace map λ of (A6) and γ the cycle class map of 0FIF”.
 
 > **Stacks Project, Lemma 0FIJ.** Let (D0), (D1), (D2') satisfy axioms (A1)–(A7). Then axiom
 > (A) of Section 0FHA holds with `∫_X = λ` as in axiom (A6): for `X` nonempty and equidimensional
@@ -538,78 +538,44 @@ theorem poincareDuality_toWeilData : (h.toWeilData hA1 hA3 hA5 hA6).PoincareDual
 
 [Tag 0FIK](https://stacks.math.columbia.edu/tag/0FIK) in the Stacks Project.
 
-**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.trace_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean#L196). The attribute's comment: “uniqueness of the trace map λ of (A6): two linear maps H^\{2d}(X)(d) → F normalized by (1 ⊗ λ)γ([Δ]) = 1 are equal, for X nonempty equidimensional of dimension d and γ the cycle class map of 0FIF”.
+**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.perfectDuality_diagonalClass_and_existsUnique_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean#L244). The attribute's comment: “for X nonempty smooth projective equidimensional of dimension d and data satisfying (A1)-(A7): γ([Δ]) defines a perfect duality between H^i(X) and H^\{2d-i}(X)(d) for all i (both finite dimensional, contraction (H^\{2d-i}(X)(d))^* → H^i(X) bijective), and the trace map λ of (A6) is unique”.
 
-> **Stacks Project, Remark 0FIK: uniqueness of the trace map.** Let (D0), (D1), (D2') satisfy
+> **Stacks Project, Remark 0FIK: uniqueness of trace maps.** Let (D0), (D1), (D2') satisfy
 > (A1)–(A7), with `γ` the cycle class map of Tag 0FIF, and let `X` be a nonempty smooth projective
-> scheme over `k`, equidimensional of dimension `d`. Then a linear map `λ : H^{2d}(X)(d) ⟶ F` with
-> `(1 ⊗ λ)γ([Δ]) = 1` as in axiom (A6) is unique.
+> scheme over `k`, equidimensional of dimension `d`. Then:
 >
-> The axioms used are (A1), (A3), (A4), (A5) and (A7), through the identity
-> `γ([Δ]) ∪ p₁^*a = γ([Δ]) ∪ p₂^*a` (`key_diagonalClass`); (A2) enters through `γ` itself.
+> * `γ([Δ]) ∈ ⨁_i H^i(X) ⊗ H^{2d-i}(X)(d)` defines a perfect duality between `H^i(X)` and
+>   `H^{2d-i}(X)(d)` for all `i`: both are finite dimensional, and contraction against the
+>   `(i, 2d-i)` Künneth component of `γ([Δ])`, `μ ↦ (1 ⊗ μ)γ([Δ])_{i,2d-i}`, is a bijection
+>   `(H^{2d-i}(X)(d))^* ⟶ H^i(X)`;
+> * the linear map `∫_X = λ : H^{2d}(X)(d) ⟶ F` of axiom (A6), normalised by
+>   `(1 ⊗ λ)γ([Δ]) = 1`, exists and is unique.
+>
+> The proof is the remark's: the left-dual structure of Lemma 0FIJ, through the identity
+> `γ([Δ]) ∪ p₁^*a = γ([Δ]) ∪ p₂^*a` (`key_diagonalClass`), and the linear algebra of Tag 0FFV
+> (`...Concrete.DiagonalExpansion`). Axiom (A2) enters only through `γ`.
 
 ```lean
-theorem trace_unique (hA1 : 𝔇.CoproductAxiom) (hA3 : 𝔇.ProjectiveBundleAxiom)
-    (hA4 : 𝔇.DivisorAxiom) (hA5 : 𝔇.KunnethAxiom) (hA7 : 𝔇.BlowupAxiom)
-    (X : (SmoothProjectiveScheme k).FullSubcategory) (d : ℕ) (hX : IsNonemptyEquidimensional X d)
-    (lam lam' : tateTwist F 𝔇.tate (𝔇.grade X (2 * (d : ℤ))) d →ₗ[F] F)
-    (hlam : 𝔇.traceContract hA5 X d lam
-      (h.codimensionCycleClass (prod X X) d (diagonalClass X d)) = 1)
-    (hlam' : 𝔇.traceContract hA5 X d lam'
-      (h.codimensionCycleClass (prod X X) d (diagonalClass X d)) = 1) :
-    lam = lam'
-```
-
-**`Stacks.WeilCohomology.FirstChernClassData.IsCohomologicalChernCharacter.bijective_diagonalContract`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/TraceUniqueness.lean#L217). The attribute's comment: “γ([Δ]) ∈ ⊕\_i H^i(X) ⊗ H^\{2d-i}(X)(d) defines a perfect duality between H^i(X) and H^\{2d-i}(X)(d): contraction against its (i, 2d-i) Künneth component is a bijection (H^\{2d-i}(X)(d))^* → H^i(X), for X nonempty equidimensional of dimension d”.
-
-> **Stacks Project, Remark 0FIK: `γ([Δ])` defines a perfect duality** between `H^i(X)` and
-> `H^{2d-i}(X)(d)`. Let (D0), (D1), (D2') satisfy (A1)–(A7), with `γ` the cycle class map of Tag
-> 0FIF, and let `X` be a nonempty smooth projective scheme over `k`, equidimensional of dimension
-> `d`. For `i + j = 2d`, contraction against the `(i, j)` Künneth component of `γ([Δ])`,
-> `μ ↦ (1 ⊗ μ)γ([Δ])_{i,j}`, is a bijection `(H^j(X)(d))^* ⟶ H^i(X)`.
-
-```lean
-theorem bijective_diagonalContract (hA1 : 𝔇.CoproductAxiom) (hA3 : 𝔇.ProjectiveBundleAxiom)
-    (hA4 : 𝔇.DivisorAxiom) (hA5 : 𝔇.KunnethAxiom)
+theorem perfectDuality_diagonalClass_and_existsUnique_trace (hA1 : 𝔇.CoproductAxiom)
+    (hA3 : 𝔇.ProjectiveBundleAxiom) (hA4 : 𝔇.DivisorAxiom) (hA5 : 𝔇.KunnethAxiom)
     (hA6 : 𝔇.TraceAxiomFor hA5 h.codimensionCycleClass) (hA7 : 𝔇.BlowupAxiom)
-        (X : (SmoothProjectiveScheme k).FullSubcategory) (d : ℕ)
-    (hX : IsNonemptyEquidimensional X d) {i j : ℤ} (hij : i + j = 2 * (d : ℤ)) :
-    Function.Bijective (𝔇.diagonalContract hA5 X d
-      (h.codimensionCycleClass (prod X X) d (diagonalClass X d)) i j)
-```
-
-**`Stacks.WeilCohomology.diagonalDuality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/TraceMap.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/TraceMap.lean#L156). The attribute's comment: “the perfect duality that `γ([Δ])` defines between `H^i(X)` and `H^{2d-i}(X)(d)`; the left-dual structure of `H^*(X)` produced by Lemma 45.14.5, Tag 0FIJ, is carried as the hypothesis `ExactPairing V W`, as the remark itself directs”.
-
-> **Stacks Project, Tag 0FIK.** The class `γ([Δ])` defines a perfect duality between `H^i(X)`
-> and `H^{2d - i}(X)(d)`: contracting its degree-`i` Künneth component against a linear functional
-> on `H^{2d - i}(X)(d)` is a linear isomorphism onto `H^i(X)`.
->
-> Here `V i` is `H^i(X)`, `W (-i)` is `H^{2d - i}(X)(d)`, and the left-dual structure is the one
-> Lemma 45.14.5, Tag 0FIJ, produces, whose coevaluation is multiplication by `γ([Δ])`. The
-> inverse is the pairing of Tag 0FFV, recorded in `diagonalDuality_symm_apply`.
-
-```lean
-noncomputable def diagonalDuality (i : ℤ) : (W (-i) →ₗ[F] F) ≃ₗ[F] V i
-```
-
-**`Stacks.WeilCohomology.traceMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/TraceMap.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/TraceMap.lean#L185). The attribute's comment: “uniqueness of the trace map `∫_X = λ` of axiom (A6), the remark's conclusion; the normalisation `(id ⊗ λ) γ([Δ]) = 1` is axiom (A6) and the left-dual structure is Lemma 45.14.5, Tag 0FIJ”.
-
-> **Stacks Project, Tag 0FIK.** The trace map is unique: an `F`-linear map
-> `λ : H^{2d}(X)(d) → F` satisfying the normalisation `(id ⊗ λ) γ([Δ]) = 1` of axiom `(A6)` is
-> determined by that equation, because contraction of `γ([Δ])` against a functional is injective
-> in degree `0`. This is what licenses the notation `∫_X` for it.
-
-```lean
-theorem traceMap_unique (one : V 0) {lam lam' : W 0 →ₗ[F] F}
-    (hlam : diagonalDuality V W 0 lam = one) (hlam' : diagonalDuality V W 0 lam' = one) :
-    lam = lam'
+    (X : (SmoothProjectiveScheme k).FullSubcategory) (d : ℕ)
+    (hX : IsNonemptyEquidimensional X d) :
+    (∀ i j : ℤ, i + j = 2 * (d : ℤ) →
+      FiniteDimensional F (𝔇.grade X i) ∧
+        FiniteDimensional F (tateTwist F 𝔇.tate (𝔇.grade X j) d) ∧
+        Function.Bijective (𝔇.diagonalContract hA5 X d
+          (h.codimensionCycleClass (prod X X) d (diagonalClass X d)) i j)) ∧
+      ∃! lam : tateTwist F 𝔇.tate (𝔇.grade X (2 * (d : ℤ))) d →ₗ[F] F,
+        𝔇.traceContract hA5 X d lam
+          (h.codimensionCycleClass (prod X X) d (diagonalClass X d)) = 1
 ```
 
 ## Tag 0FIL, a lemma
 
 [Tag 0FIL](https://stacks.math.columbia.edu/tag/0FIL) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.kunneth_toWeilData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/KunnethWeilThree.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/KunnethWeilThree.lean#L422). The attribute's comment: “axiom (B) of 0FHA for the data of (A1)-(A7): the Künneth map is an isomorphism and ∫\_\{X×Y} = ∫\_X ⊗ ∫\_Y, with ∫ = λ of (A6) and γ the cycle class map of 0FIF”.
+**`Stacks.WeilCohomology.WeilChernData.kunneth_toWeilData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/KunnethWeilThree.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/KunnethWeilThree.lean#L419). The attribute's comment: “axiom (B) of 0FHA for the data of (A1)-(A7): the Künneth map is an isomorphism and ∫\_\{X×Y} = ∫\_X ⊗ ∫\_Y, with ∫ = λ of (A6) and γ the cycle class map of 0FIF”.
 
 > **Stacks Project, Lemma 0FIL.** Let (D0), (D1), (D2') be data satisfying axioms (A1)–(A7) of
 > Section 45.14. Then axiom (B) of Section 0FHA holds for the data (D0)–(D3) they define
@@ -626,7 +592,7 @@ theorem kunneth_toWeilData (𝔚 : WeilChernData k F) : 𝔚.toWeilData.Kunneth
 
 [Tag 0FIM](https://stacks.math.columbia.edu/tag/0FIM) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.cycleClassPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPointWeilThree.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPointWeilThree.lean#L115).
+**`Stacks.WeilCohomology.WeilChernData.cycleClassPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPointWeilThree.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPointWeilThree.lean#L115).
 
 > **Stacks Project, Lemma 0FIM.** Assume given data (D0), (D1) and (D2') satisfying axioms
 > (A1)–(A7). Then axiom (C)(d) of Section 0FHA holds for the data of Section 0FHA they define:
@@ -641,7 +607,7 @@ theorem cycleClassPoint : 𝔚.toWeilData.CycleClassPoint
 
 [Tag 0FIN](https://stacks.math.columbia.edu/tag/0FIN) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.cycleClass_equidimensionalPushforward_bundleProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundlePushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundlePushforward.lean#L309). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): for p : P(E) -> X with E of rank r + 1 >= 1 and X nonempty equidimensional, gamma(p\_* alpha) = p\_* gamma(alpha) for every alpha in CH^i(P), with the pushforward of Section 0FHA for toWeilData; nothing assumed”.
+**`Stacks.WeilCohomology.WeilChernData.cycleClass_equidimensionalPushforward_bundleProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundlePushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundlePushforward.lean#L309). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): for p : P(E) -> X with E of rank r + 1 >= 1 and X nonempty equidimensional, gamma(p\_* alpha) = p\_* gamma(alpha) for every alpha in CH^i(P), with the pushforward of Section 0FHA for toWeilData; nothing assumed”.
 
 > **Stacks Project, Lemma 0FIN.** Let (D0), (D1), (D2') satisfy axioms (A1)–(A7), let `ℰ` be
 > a finite locally free module of rank `r + 1 ≥ 1` on a nonempty equidimensional smooth projective
@@ -665,7 +631,7 @@ theorem cycleClass_equidimensionalPushforward_bundleProj {d e : ℕ}
 
 [Tag 0FVR](https://stacks.math.columbia.edu/tag/0FVR) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.untwistTrace_one_spec_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean#L374). The attribute's comment: “the source's statement on the actual data (D0), (D1), (D2') satisfying (A1)-(A7) (WeilChernData, with γ of 0FIF): every λ normalised as in (A6) at Spec(k'), i.e. ∫\_\{Spec(k')} (unique by 0FIK), takes the unit class to [k' : k]; the nonvanishing of H^*(Spec(k')) needed to cancel the unit is derived from (A3), (A4), (A5)”.
+**`Stacks.WeilCohomology.WeilChernData.untwistTrace_one_spec_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean#L372). The attribute's comment: “the source's statement on the actual data (D0), (D1), (D2') satisfying (A1)-(A7) (WeilChernData, with γ of 0FIF): every λ normalised as in (A6) at Spec(k'), i.e. ∫\_\{Spec(k')} (unique by 0FIK), takes the unit class to [k' : k]; the nonvanishing of H^*(Spec(k')) needed to cancel the unit is derived from (A3), (A4), (A5)”.
 
 > **Stacks Project, Tag 0FVR.** Assume given data (D0), (D1), (D2') satisfying axioms
 > (A1)–(A7), and let `k'/k` be a finite Galois extension. Then `∫_{Spec(k')} 1 = [k' : k]`: every
@@ -681,10 +647,11 @@ theorem untwistTrace_one_spec_galois
     𝔚.untwistTrace (spec k k') 0 lam 1 = (Module.finrank k k' : F)
 ```
 
-**`Stacks.WeilCohomology.WeilChernData.toWeilData_trace_one_spec_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean#L388). The attribute's comment: “the same for the trace map ∫ of 𝔚.toWeilData, the λ of (A6)”.
+**`Stacks.WeilCohomology.WeilChernData.toWeilData_trace_one_spec_galois`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GaloisTraceDegree.lean#L388). The attribute's comment: “the source's statement for the trace map ∫\_\{Spec(k')} of 𝔚.toWeilData, the λ of (A6) at Spec(k'), on the data (D0), (D1), (D2') satisfying (A1)-(A7): ∫\_\{Spec(k')} 1 = [k' : k]”.
 
 > **Stacks 0FVR for the trace map `∫_X` of the data of Section 0FHA defined by `𝔚`**:
-> `∫_{Spec(k')} 1 = [k' : k]`.
+> `∫_{Spec(k')} 1 = [k' : k]`, where `∫_{Spec(k')}` is the trace map of `𝔚.toWeilData`, the `λ`
+> of the axiom (A6) at `Spec(k')`.
 
 ```lean
 theorem toWeilData_trace_one_spec_galois :
@@ -694,45 +661,11 @@ theorem toWeilData_trace_one_spec_galois :
       (Module.finrank k k' : F)
 ```
 
-**`Stacks.WeilCohomology.integration_one_eq_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/GaloisExtension.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/GaloisExtension.lean#L100). The attribute's comment: “the value of the trace map of axiom (A6) on the unit class of the spectrum of a finite Galois extension; the part of the data (D0), (D1), (D2') and of the axioms (A1) -- (A7) the argument consumes is carried as hypotheses, as elsewhere in Section 45.14, and the decomposition of the self-product into Galois translates of the diagonal is the hypothesis `decomposition`”.
-
-> **Stacks Project, Tag 0FVR.** For a finite Galois extension `k'/k` the trace map
-> `∫_{Spec(k')} = λ` of axiom `(A6)` takes the unit class to the degree of the extension:
-> `∫_{Spec(k')} 1 = [k' : k]`.
->
-> Here `A` is `H^0(Spec(k'))`, nonzero because `Spec(k')` is nonempty, and `A ⊗_F A` is the
-> cohomology of `Spec(k') × Spec(k')` in the same degree by axioms `(A5)` and `(A1)`; `CH` is the
-> group of cycles on the self-product, carrying the fundamental class `fund` and the class `diag`
-> of the diagonal. The hypothesis `decomposition` is the source's identity of cycles
-> `Spec(k') × Spec(k') = ∐_{σ ∈ Gal(k'/k)} (Spec(σ) × id)^{-1} Δ`, and `normalization` is the
-> equation of axiom `(A6)` that characterises `λ`. The module documentation reads each hypothesis
-> against the data `(D0)`, `(D1)`, `(D2')` and the axioms.
-
-```lean
-theorem integration_one_eq_finrank
-    (k k' : Type u) [Field k] [Field k'] [Algebra k k']
-    [FiniteDimensional k k'] [IsGalois k k']
-    {F : Type uF} [Field F] {A : Type uA} [Ring A] [Algebra F A] [Nontrivial A]
-    {CH : Type uC} [AddCommGroup CH]
-    (fund diag : CH)
-    (cyclePull : (k' ≃ₐ[k] k') → CH →+ CH)
-    (gamma : CH →+ A ⊗[F] A)
-    (pullback : (k' ≃ₐ[k] k') → A →ₗ[F] A)
-    (decomposition : fund = ∑ σ : k' ≃ₐ[k] k', cyclePull σ diag)
-    (gamma_fund : gamma fund = (1 : A) ⊗ₜ[F] (1 : A))
-    (gamma_cyclePull : ∀ (σ : k' ≃ₐ[k] k') (c : CH),
-      gamma (cyclePull σ c) = TensorProduct.map (pullback σ) LinearMap.id (gamma c))
-    (pullback_one : ∀ σ : k' ≃ₐ[k] k', pullback σ 1 = 1)
-    (lam : A →ₗ[F] F)
-    (normalization : tensorContractRight lam (gamma diag) = (1 : A)) :
-    lam 1 = (Module.finrank k k' : F)
-```
-
 ## Tag 0FIP, a lemma
 
 [Tag 0FIP](https://stacks.math.columbia.edu/tag/0FIP) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfClosedImmersion.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfClosedImmersion.lean#L52). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): if i\_*(1) = gamma([Z]) for every closed immersion i : Z -> X of nonempty equidimensional smooth projective schemes over k, then gamma commutes with pushforward (axiom (C)(b) for toWeilData); nothing assumed”.
+**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfClosedImmersion.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfClosedImmersion.lean#L52). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): if i\_*(1) = gamma([Z]) for every closed immersion i : Z -> X of nonempty equidimensional smooth projective schemes over k, then gamma commutes with pushforward (axiom (C)(b) for toWeilData); nothing assumed”.
 
 > **Stacks Project, Lemma 0FIP.** Assume given data (D0), (D1), (D2') satisfying axioms
 > (A1)–(A7). In order to show that `γ` commutes with pushforward (axiom (C)(b) of Section 0FHA for
@@ -756,7 +689,7 @@ theorem cycleClassPushforward_of_closedImmersion
 
 [Tag 0FIQ](https://stacks.math.columbia.edu/tag/0FIQ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.pushforwardCompatible_fst_grassmannian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GrassmannianProjectionPushforward.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GrassmannianProjectionPushforward.lean#L130). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): for l < n (so in particular 0 < l < n) and X nonempty equidimensional, gamma commutes with pushforward along p : X × G(l, n) -> X, gamma(p\_* alpha) = p\_* gamma(alpha) for every alpha in CH^i(X × G(l, n)), with the pushforward of Section 0FHA for toWeilData; nothing assumed”.
+**`Stacks.WeilCohomology.WeilChernData.pushforwardCompatible_fst_grassmannian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GrassmannianProjectionPushforward.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GrassmannianProjectionPushforward.lean#L130). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): for l < n (so in particular 0 < l < n) and X nonempty equidimensional, gamma commutes with pushforward along p : X × G(l, n) -> X, gamma(p\_* alpha) = p\_* gamma(alpha) for every alpha in CH^i(X × G(l, n)), with the pushforward of Section 0FHA for toWeilData; nothing assumed”.
 
 > Let data (D0), (D1), (D2') satisfy axioms (A1)–(A7) of Section 45.14 (`WeilChernData`), with
 > `γ` the cycle class map of Tag 0FIF and the pushforward on cohomology of Section 45.9 built from
@@ -777,7 +710,7 @@ theorem pushforwardCompatible_fst_grassmannian {l n : ℕ} (hln : l < n)
 
 [Tag 0FIR](https://stacks.math.columbia.edu/tag/0FIR) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_extendableConormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfExtendableConormal.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfExtendableConormal.lean#L65). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): if i\_*(1) = gamma([Z]) for every closed immersion i : Z -> X of nonempty equidimensional smooth projective schemes over k whose conormal class in K\_0(Z) is the pullback of a class in K\_0(X), then gamma commutes with pushforward (axiom (C)(b) for toWeilData); nothing assumed”.
+**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_extendableConormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfExtendableConormal.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardOfExtendableConormal.lean#L65). The attribute's comment: “the whole lemma, under exactly (A1)-(A7) (WeilChernData): if i\_*(1) = gamma([Z]) for every closed immersion i : Z -> X of nonempty equidimensional smooth projective schemes over k whose conormal class in K\_0(Z) is the pullback of a class in K\_0(X), then gamma commutes with pushforward (axiom (C)(b) for toWeilData); nothing assumed”.
 
 > **Stacks Project, Lemma 0FIR.** Assume given data (D0), (D1), (D2') satisfying axioms
 > (A1)–(A7). In order to show that `γ` commutes with pushforward (axiom (C)(b) of Section 0FHA for
@@ -806,7 +739,7 @@ theorem cycleClassPushforward_of_extendableConormal
 
 [Tag 0FVS](https://stacks.math.columbia.edu/tag/0FVS) in the Stacks Project.
 
-**`Stacks.WeilCohomology.FirstChernClassData.injective_pull_specMap_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean#L402). The attribute's comment: “the source's statement, on the actual data (D0), (D1), (D2') over smooth projective k-schemes: with H^*(Spec K) ≠ 0 for a finite normal separable K ⊇ k'' (a normal closure), H^*(Spec k') ⟶ H^*(Spec k'') is injective, from (A1) and (A5)”.
+**`Stacks.WeilCohomology.FirstChernClassData.injective_pull_specMap_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean#L402). The attribute's comment: “the source's statement, on the actual data (D0), (D1), (D2') over smooth projective k-schemes: with H^*(Spec K) ≠ 0 for a finite normal separable K ⊇ k'' (a normal closure), H^*(Spec k') ⟶ H^*(Spec k'') is injective, from (A1) and (A5)”.
 
 > For finite separable field extensions `k''/k'/k` and a finite normal separable extension `K/k`
 > containing `k''` (for instance a normal closure of `k''/k`) with `H^*(Spec(K)) ≠ 0`, pullback
@@ -822,7 +755,7 @@ theorem injective_pull_specMap_of_nontrivial (hA1 : 𝔇.CoproductAxiom) (hA5 : 
     Function.Injective (𝔇.pull (specMap incl))
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.injective_pull_specMap_of_axioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean#L463). The attribute's comment: “unconditional form: the nonvanishing hypothesis is derived from (A3), (A4), (A5)”.
+**`Stacks.WeilCohomology.FirstChernClassData.injective_pull_specMap_of_axioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/SeparableExtensionCohomology.lean#L463). The attribute's comment: “unconditional form: the nonvanishing hypothesis is derived from (A3), (A4), (A5)”.
 
 > For finite separable field extensions `k''/k'/k`, pullback `H^*(Spec(k')) ⟶ H^*(Spec(k''))` is
 > injective under axioms (A1), (A3), (A4) and (A5), `F` having characteristic zero: the hypothesis
@@ -838,7 +771,7 @@ theorem injective_pull_specMap_of_axioms [CharZero F] (hA1 : 𝔇.CoproductAxiom
     (incl : k' →ₐ[k] k'') : Function.Injective (𝔇.pull (specMap incl))
 ```
 
-**`Stacks.WeilCohomology.injective_pullback_of_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/SeparableExtension.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/SeparableExtension.lean#L417). The attribute's comment: “injectivity on cohomology for a tower of finite separable field extensions; the Künneth decomposition of Spec(k') x Spec(K) as a product over the embeddings, the functoriality relations, and the nonvanishing of the cohomology of Spec(K) are derived from the functor of (D1) together with axioms (A1), (A5), (A6) and (C)(b), which are explicit arguments here, as elsewhere in Section 45.14”.
+**`Stacks.WeilCohomology.injective_pullback_of_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/SeparableExtension.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/SeparableExtension.lean#L418). The attribute's comment: “injectivity on cohomology for a tower of finite separable field extensions; the Künneth decomposition of Spec(k') x Spec(K) as a product over the embeddings, the functoriality relations, and the nonvanishing of the cohomology of Spec(K) are derived from the functor of (D1) together with axioms (A1), (A5), (A6) and (C)(b), which are explicit arguments here, as elsewhere in Section 45.14”.
 
 > Let `k''/k'/k` be finite separable field extensions. Then pullback
 > `H^0(Spec(k')) → H^0(Spec(k''))` is injective.
@@ -878,7 +811,7 @@ theorem injective_pullback_of_separable
 
 [Tag 0FIS](https://stacks.math.columbia.edu/tag/0FIS) in the Stacks Project.
 
-**`Stacks.WeilCohomology.integration_comp_pullback_eq_integration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean#L149). The attribute's comment: “integration agrees with integration after pullback to the blowup”.
+**`Stacks.WeilCohomology.integration_comp_pullback_eq_integration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean#L148). The attribute's comment: “integration agrees with integration after pullback to the blowup”.
 
 > **Stacks Project, Tag 0FIS.** For a blowup `b : X' ⟶ X` of a nonempty equidimensional smooth
 > projective scheme of dimension `d` in a nowhere dense smooth centre, integration over `X'` after
@@ -902,7 +835,7 @@ theorem integration_comp_pullback_eq_integration
     integration' ∘ₗ pullbackTop = integration
 ```
 
-**`Stacks.WeilCohomology.pushforwardOne_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean#L175).
+**`Stacks.WeilCohomology.pushforwardOne_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/BlowupPushforward.lean#L174).
 
 > **Stacks Project, Tag 0FIS.** For a blowup `b : X' ⟶ X` of a nonempty equidimensional smooth
 > projective scheme of dimension `d` in a nowhere dense smooth centre, the Poincaré-dual
@@ -927,7 +860,7 @@ theorem pushforwardOne_blowup
     poincareDualPushforward pairing' pairing pullbackTop one' = one
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.trace_comp_pullGradeTw_blowupHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean#L203). The attribute's comment: “∫\_\{X'} ∘ b^* = ∫\_X on H^\{2d}(X)(d) for the blowing up in a nowhere dense smooth centre, the trace maps being the λ of (A6) and γ the cycle class map of 0FIF, under (A1)-(A8); the form b\_*(1) = 1 of the statement is this identity read through Poincaré duality”.
+**`Stacks.WeilCohomology.FirstChernClassData.trace_comp_pullGradeTw_blowupHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean#L203). The attribute's comment: “∫\_\{X'} ∘ b^* = ∫\_X on H^\{2d}(X)(d) for the blowing up in a nowhere dense smooth centre, the trace maps being the λ of (A6) and γ the cycle class map of 0FIF, under (A1)-(A8); the form b\_*(1) = 1 of the statement is this identity read through Poincaré duality”.
 
 > **Stacks Project, Tag 0FIS.** Let data (D0), (D1), (D2') satisfy axioms (A1)–(A8) of
 > Section 45.14 (of which (A1), (A3), (A4), (A5), (A7), (A8) are used), with `γ` the cycle class map
@@ -956,7 +889,7 @@ theorem trace_comp_pullGradeTw_blowupHom (h : 𝔇.IsCohomologicalChernCharacter
     lam' ∘ₗ 𝔇.pullGradeTw (blowupHom i) (2 * (d : ℤ)) d = lam
 ```
 
-**`Stacks.WeilCohomology.FirstChernClassData.pushforward_unitTw_blowupHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean#L229). The attribute's comment: “b\_*(1) = 1 for the blowing up in a nowhere dense smooth centre, for the pushforward of Section 45.9 attached to the data of (A1)-(A8) with the trace maps of (A6) and γ of 0FIF”.
+**`Stacks.WeilCohomology.FirstChernClassData.pushforward_unitTw_blowupHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/BlowupPushforwardOne.lean#L229). The attribute's comment: “b\_*(1) = 1 for the blowing up in a nowhere dense smooth centre, for the pushforward of Section 45.9 attached to the data of (A1)-(A8) with the trace maps of (A6) and γ of 0FIF”.
 
 > **Stacks Project, Tag 0FIS: `b_*(1) = 1`.** Let data (D0), (D1), (D2') satisfy axioms
 > (A1)–(A8) of Section 45.14 (of which (A1), (A3)–(A8) are used), `γ` the cycle class map of
@@ -985,7 +918,7 @@ theorem pushforward_unitTw_blowupHom (h : 𝔇.IsCohomologicalChernCharacter ch)
 
 [Tag 0FIT](https://stacks.math.columbia.edu/tag/0FIT) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardGlobalSections.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardGlobalSections.lean#L144). The attribute's comment: “the whole lemma, under exactly (A1)-(A8): WeilChernData bundles (A1)-(A7) and the only hypothesis is (A8) GlobalSections; conclusion: gamma commutes with pushforward (axiom (C)(b) for toWeilData) for every morphism of nonempty equidimensional smooth projective schemes; nothing assumed, (A9) is not used”.
+**`Stacks.WeilCohomology.WeilChernData.cycleClassPushforward_of_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardGlobalSections.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassPushforwardGlobalSections.lean#L144). The attribute's comment: “the whole lemma, under exactly (A1)-(A8): WeilChernData bundles (A1)-(A7) and the only hypothesis is (A8) GlobalSections; conclusion: gamma commutes with pushforward (axiom (C)(b) for toWeilData) for every morphism of nonempty equidimensional smooth projective schemes; nothing assumed, (A9) is not used”.
 
 > **Tag 0FIT**: for data (D0), (D1), (D2') satisfying axioms (A1)–(A8) (a `WeilChernData`,
 > which bundles (A1)–(A7), and (A8) `GlobalSections`), the cycle class map `γ` commutes with
@@ -1006,7 +939,7 @@ theorem cycleClassPushforward_of_globalSections (hA8 : 𝔚.GlobalSections) :
 
 [Tag 0FIU](https://stacks.math.columbia.edu/tag/0FIU) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilChernData.exists_weilCohomologyTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryOfWeilChern.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryOfWeilChern.lean#L85). The attribute's comment: “the whole proposition, under exactly (A1)-(A8): WeilChernData bundles (A1)-(A7) and the only hypothesis is (A8) GlobalSections; conclusion: a Weil cohomology theory (Definition 0FI2) whose data (D0)-(D3) are F(1), H^*, gamma of 0FIF and the trace of (A6); nothing assumed, (A9) is not used”.
+**`Stacks.WeilCohomology.WeilChernData.exists_weilCohomologyTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryOfWeilChern.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryOfWeilChern.lean#L85). The attribute's comment: “the whole proposition, under exactly (A1)-(A8): WeilChernData bundles (A1)-(A7) and the only hypothesis is (A8) GlobalSections; conclusion: a Weil cohomology theory (Definition 0FI2) whose data (D0)-(D3) are F(1), H^*, gamma of 0FIF and the trace of (A6); nothing assumed, (A9) is not used”.
 
 > **Proposition 0FIU: data (D0), (D1), (D2') satisfying (A1)–(A8) give a Weil cohomology
 > theory**: there is a Weil cohomology theory (Definition 0FI2) whose data (D0)–(D3) are
@@ -1022,7 +955,7 @@ theorem exists_weilCohomologyTheory (hA8 : 𝔚.GlobalSections) :
 
 [Tag 0FVT](https://stacks.math.columbia.edu/tag/0FVT) in the Stacks Project.
 
-**`Stacks.WeilCohomology.exists_axioms_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BaseFieldExtension/Descent.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/BaseFieldExtension/Descent.lean#L215).
+**`Stacks.WeilCohomology.exists_axioms_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/BaseFieldExtension/Descent.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/BaseFieldExtension/Descent.lean#L215).
 
 > **Stacks Tag 0FVT.** Let `k'/k` be an extension of fields and `F'/F` an extension of fields
 > of characteristic zero. Let `𝔇 = (F(1), H^*, c₁^H)` be data (D0), (D1), (D2') for `k` and `F`
@@ -1052,4 +985,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.14, Tag 0FID](https://stacks.math.columbia.edu/tag/0FID)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

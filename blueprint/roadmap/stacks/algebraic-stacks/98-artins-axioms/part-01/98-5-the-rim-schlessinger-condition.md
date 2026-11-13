@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.5 The Rim-Schlessinger condition
 
-Section 98.5 of the Stacks Project, [Tag 06L9](https://stacks.math.columbia.edu/tag/06L9). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.5 of the Stacks Project, [Tag 06L9](https://stacks.math.columbia.edu/tag/06L9). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07WP, a definition
 
 [Tag 07WP](https://stacks.math.columbia.edu/tag/07WP) in the Stacks Project.
 
-**`Deformation.Artin.SatisfiesRS`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/ConditionRS.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/ConditionRS.lean#L79).
+**`Deformation.Artin.SatisfiesRS`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/ConditionRS.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/ConditionRS.lean#L79).
 
 > Condition (RS): restriction across a finite-type local Artinian pushout
 > along a closed immersion is an equivalence onto the two-fibre product of fibres.
@@ -27,7 +27,7 @@ public abbrev SatisfiesRS (hp : p.IsFiberedInGroupoids) : Prop
 
 [Tag 07WQ](https://stacks.math.columbia.edu/tag/07WQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ThickeningPushout.satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningPushoutEquivalence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningPushoutEquivalence.lean#L87).
+**`AlgebraicGeometry.Stack.ThickeningPushout.satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningPushoutEquivalence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningPushoutEquivalence.lean#L87).
 
 > **Stacks 07WQ.** An algebraic stack satisfies the Rim–Schlessinger condition (RS). The
 > source states this over a locally Noetherian base; the hypothesis is not needed, since the proof
@@ -39,7 +39,7 @@ theorem satisfiesRS.{w'} (𝒵 : BasedCategory.{u, u + 1} (BigFppfOver B S hS))
     Deformation.Artin.SatisfiesRS B S hS 𝒵.p (Classical.choose h𝒵)
 ```
 
-**`Deformation.Artin.satisfiesRS_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/ArtinianAtlas.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/ArtinianAtlas.lean#L221).
+**`Deformation.Artin.satisfiesRS_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/ArtinianAtlas.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/RimSchlessinger/ArtinianAtlas.lean#L221).
 
 > **Stacks 07WQ: an algebraic stack satisfies condition (RS).** Let `𝒳` be an algebraic stack
 > over `S`. At every pushout `Y' = Y ⨿_X X'` of spectra of Artinian local rings of finite type over
@@ -67,7 +67,7 @@ theorem satisfiesRS_of_isAlgebraicStack (𝒳 : Stack.AlgebraicStacks.{u, w} B S
 
 [Tag 07WR](https://stacks.math.columbia.edu/tag/07WR) in the Stacks Project.
 
-**`Deformation.Artin.satisfiesRS_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean#L1177).
+**`Deformation.Artin.satisfiesRS_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/RimSchlessinger.lean#L1177).
 
 > Condition (RS) is preserved by the two-fibre product of categories fibred in groupoids over
 > the big fppf site.
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.5, Tag 06L9](https://stacks.math.columbia.edu/tag/06L9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

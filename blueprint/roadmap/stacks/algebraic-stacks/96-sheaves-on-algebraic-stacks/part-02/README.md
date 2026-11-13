@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# 96.16 Cohomology to 96.26 Quasi-coherent objects in…
+# 96.17 Injective sheaves to 96.26 Quasi-coherent objects in…
 
-- [96.16 Cohomology](96-16-cohomology.md)
 - [96.17 Injective sheaves](96-17-injective-sheaves.md)
 - [96.18 The Čech complex](96-18-the-cech-complex.md)
 - [96.19 The relative Čech complex](96-19-the-relative-cech-complex.md)

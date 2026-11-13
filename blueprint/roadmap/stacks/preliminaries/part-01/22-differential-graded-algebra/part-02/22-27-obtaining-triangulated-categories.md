@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.27 Obtaining triangulated categories
 
-Section 22.27 of the Stacks Project, [Tag 09P5](https://stacks.math.columbia.edu/tag/09P5). 17 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.27 of the Stacks Project, [Tag 09P5](https://stacks.math.columbia.edu/tag/09P5). 17 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09P6, a lemma
 
 [Tag 09P6](https://stacks.math.columbia.edu/tag/09P6) in the Stacks Project.
 
-**`DifferentialGradedModule.connectingHom_gradedSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/GradedSplitAdmissible.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/GradedSplitAdmissible.lean#L143). The attribute's comment: “the connecting morphism of a graded splitting is the connecting homomorphism”.
+**`DifferentialGradedModule.connectingHom_gradedSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/GradedSplitAdmissible.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/GradedSplitAdmissible.lean#L143). The attribute's comment: “the connecting morphism of a graded splitting is the connecting homomorphism”.
 
 > **The connecting homomorphism of the admissible sequence is the connecting morphism of the
 > graded splitting.** Both are `π d(s)`: the Hom differential of the differential graded category
@@ -30,7 +30,7 @@ theorem connectingHom_gradedSplit (z : Z.M) :
       (DGCategory.GradedSplitShortExact.connectingHom E).1 z
 ```
 
-**`CochainComplex.gradedSplitOfDegreewiseSplit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean#L102). The attribute's comment: “a degreewise split short exact sequence of complexes”.
+**`CochainComplex.gradedSplitOfDegreewiseSplit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean#L102). The attribute's comment: “a degreewise split short exact sequence of complexes”.
 
 > **A degreewise split short complex of cochain complexes is a graded-split short exact
 > sequence of the differential graded category of complexes.**
@@ -40,7 +40,7 @@ def gradedSplitOfDegreewiseSplit :
     DGCategory.GradedSplitShortExact (A := dgCategory B) S.X₁ S.X₂ S.X₃
 ```
 
-**`CochainComplex.connectingHom_gradedSplitOfDegreewiseSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean#L163). The attribute's comment: “the connecting morphism of a degreewise split sequence of complexes”.
+**`CochainComplex.connectingHom_gradedSplitOfDegreewiseSplit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexGradedSplit.lean#L163). The attribute's comment: “the connecting morphism of a degreewise split sequence of complexes”.
 
 > **The connecting morphism of a degreewise split sequence of complexes is Mathlib's
 > `CochainComplex.cocycleOfDegreewiseSplit`.** The Hom differential of `s` is the graded
@@ -53,7 +53,7 @@ theorem connectingHom_gradedSplitOfDegreewiseSplit :
       (cocycleOfDegreewiseSplit S σ).1
 ```
 
-**`CochainComplex.dgShiftComparisonData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexShiftComparison.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexShiftComparison.lean#L111). The attribute's comment: “axiom (B)'s identification of Hom complexes, for complexes”.
+**`CochainComplex.dgShiftComparisonData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexShiftComparison.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexShiftComparison.lean#L111). The attribute's comment: “axiom (B)'s identification of Hom complexes, for complexes”.
 
 > **Mathlib's shift supplies axiom (B)'s identification of Hom modules for the differential
 > graded category of complexes.** A degree `k + n` cochain `X ⟶ Y` is a degree `k` cochain
@@ -65,7 +65,7 @@ noncomputable def dgShiftComparisonData :
     DGCategory.ShiftComparisonData (dgCategory B)
 ```
 
-**`DGCategory.GradedSplitShortExact.connectingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L165). The attribute's comment: “the connecting morphism”.
+**`DGCategory.GradedSplitShortExact.connectingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L165). The attribute's comment: “the connecting morphism”.
 
 > The connecting morphism `π d(s)`, as a homogeneous morphism of degree one.
 
@@ -74,7 +74,7 @@ public def connectingHom {x y z : A.Obj} (E : GradedSplitShortExact (A := A) x y
     A.Hom z x 1
 ```
 
-**`DGCategory.GradedSplitShortExact.connectingHom_eq_neg_d_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L282). The attribute's comment: “alternative formula for the connecting morphism”.
+**`DGCategory.GradedSplitShortExact.connectingHom_eq_neg_d_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L282). The attribute's comment: “alternative formula for the connecting morphism”.
 
 > The alternative formula `δ = -d(π)s` for the connecting morphism.
 
@@ -85,7 +85,7 @@ public theorem connectingHom_eq_neg_d_comp {x y z : A.Obj}
       -A.comp (by omega : (0 + 1 : ℤ) + 0 = 1) (A.d E.π) E.s
 ```
 
-**`DGCategory.GradedSplitShortExact.connectingHom_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L290). The attribute's comment: “the connecting morphism is closed”.
+**`DGCategory.GradedSplitShortExact.connectingHom_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L290). The attribute's comment: “the connecting morphism is closed”.
 
 > The connecting morphism is a cocycle.
 
@@ -94,7 +94,7 @@ public theorem connectingHom_closed {x y z : A.Obj}
     (E : GradedSplitShortExact (A := A) x y z) : A.d (connectingHom E) = 0
 ```
 
-**`DGCategory.GradedSplitShortExact.comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L300). The attribute's comment: “the first consecutive composite”.
+**`DGCategory.GradedSplitShortExact.comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L300). The attribute's comment: “the first consecutive composite”.
 
 > The composite `x ⟶ y ⟶ z` is zero.
 
@@ -104,7 +104,7 @@ public theorem comp_zero {x y z : A.Obj}
     A.comp (by omega : (0 : ℤ) + 0 = 0) E.b.1 E.a.1 = 0
 ```
 
-**`DGCategory.GradedSplitShortExact.comp_connectingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L338). The attribute's comment: “the third consecutive composite”.
+**`DGCategory.GradedSplitShortExact.comp_connectingHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L338). The attribute's comment: “the third consecutive composite”.
 
 > The composite `z ⟶ x[1] ⟶ y[1]` is the boundary `d(s)` before shifting.
 
@@ -114,7 +114,7 @@ public theorem comp_connectingHom {x y z : A.Obj}
     A.comp (by omega : (0 : ℤ) + 1 = 1) E.a.1 (connectingHom E) = A.d E.s
 ```
 
-**`DGCategory.GradedSplitShortExact.connectingHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L345). The attribute's comment: “the second consecutive composite”.
+**`DGCategory.GradedSplitShortExact.connectingHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L345). The attribute's comment: “the second consecutive composite”.
 
 > The composite `y ⟶ z ⟶ x[1]` is the boundary `d(-π)` before shifting.
 
@@ -124,7 +124,7 @@ public theorem connectingHom_comp {x y z : A.Obj}
     A.comp (by omega : (1 : ℤ) + 0 = 1) (connectingHom E) E.b.1 = A.d (-E.π)
 ```
 
-**`DGCategory.GradedSplitShortExact.connecting_shift_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L353). The attribute's comment: “closed connecting map into the shift”.
+**`DGCategory.GradedSplitShortExact.connecting_shift_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L353). The attribute's comment: “closed connecting map into the shift”.
 
 > The degree-one connecting cocycle remains closed after conversion to a map into
 > the shifted object.
@@ -135,7 +135,7 @@ public theorem connecting_shift_closed {x y z : A.Obj}
     A.d ((S.toShift 1 z x 0) (connectingHom E)) = 0
 ```
 
-**`DGCategory.GradedSplitShortExact.connectingCocycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L366). The attribute's comment: “the triangle's connecting arrow”.
+**`DGCategory.GradedSplitShortExact.connectingCocycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L366). The attribute's comment: “the triangle's connecting arrow”.
 
 > The actual connecting arrow `z ⟶ x[1]` in `Comp(A)`.
 
@@ -145,7 +145,7 @@ public def connectingCocycle {x y z : A.Obj}
     A.Cocycle z ((S.shiftFunctor 1).obj x)
 ```
 
-**`DGCategory.GradedSplitShortExact.associatedCompTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L384). The attribute's comment: “the associated triangle in the category of complexes”.
+**`DGCategory.GradedSplitShortExact.associatedCompTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L384). The attribute's comment: “the associated triangle in the category of complexes”.
 
 > The associated triangle in the category of complexes, with the arrow
 > `z ⟶ x[1]` given by `π d(s)`.
@@ -157,7 +157,7 @@ public def associatedCompTriangle {x y z : A.Obj}
     Pretriangulated.Triangle A.Comp
 ```
 
-**`DGCategory.GradedSplitShortExact.associatedKTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L397). The attribute's comment: “the associated triangle in the homotopy category”.
+**`DGCategory.GradedSplitShortExact.associatedKTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L397). The attribute's comment: “the associated triangle in the homotopy category”.
 
 > The same triangle, regarded in the homotopy category.
 
@@ -168,7 +168,7 @@ public def associatedKTriangle {x y z : A.Obj}
     Pretriangulated.Triangle A.K
 ```
 
-**`DGCategory.GradedSplitShortExact.first_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L413). The attribute's comment: “first composite vanishes in the homotopy category”.
+**`DGCategory.GradedSplitShortExact.first_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L413). The attribute's comment: “first composite vanishes in the homotopy category”.
 
 > The first two arrows compose to zero in the homotopy category.
 
@@ -181,7 +181,7 @@ public theorem first_comp_zero_in_K {x y z : A.Obj}
       (⟨0, A.d_zero⟩ : A.Cocycle x z)
 ```
 
-**`DGCategory.GradedSplitShortExact.connecting_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L436). The attribute's comment: “second composite vanishes in the homotopy category”.
+**`DGCategory.GradedSplitShortExact.connecting_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L436). The attribute's comment: “second composite vanishes in the homotopy category”.
 
 > The composite `y ⟶ z ⟶ x[1]` is zero in `K(A)`.
 
@@ -196,7 +196,7 @@ public theorem connecting_comp_zero_in_K {x y z : A.Obj}
       (⟨0, A.d_zero⟩ : A.Cocycle y ((S.shiftFunctor 1).obj x))
 ```
 
-**`DGCategory.GradedSplitShortExact.comp_connecting_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L465). The attribute's comment: “third composite vanishes in the homotopy category”.
+**`DGCategory.GradedSplitShortExact.comp_connecting_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L465). The attribute's comment: “third composite vanishes in the homotopy category”.
 
 > The composite `z ⟶ x[1] ⟶ y[1]` is zero in `K(A)`.
 
@@ -212,7 +212,7 @@ public theorem comp_connecting_zero_in_K {x y z : A.Obj}
       (⟨0, A.d_zero⟩ : A.Cocycle z ((S.shiftFunctor 1).obj y))
 ```
 
-**`DGCategory.GradedSplitShortExact.shifted_connecting_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L527). The attribute's comment: “rotated composite vanishes in the homotopy category”.
+**`DGCategory.GradedSplitShortExact.shifted_connecting_comp_zero_in_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Triangulated.lean#L527). The attribute's comment: “rotated composite vanishes in the homotopy category”.
 
 > The rotated composite `z[-1] ⟶ x ⟶ y` is zero in `K(A)`.
 
@@ -231,7 +231,7 @@ public theorem shifted_connecting_comp_zero_in_K {x y z : A.Obj}
 
 [Tag 09QJ](https://stacks.math.columbia.edu/tag/09QJ) in the Stacks Project.
 
-**`DGCategory.ConeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeSituation.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeSituation.lean#L37).
+**`DGCategory.ConeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeSituation.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeSituation.lean#L37).
 
 > Axioms (A), (B), and (C) for a differential graded category. For every closed degree-zero
 > arrow `f : x ⟶ y`, the sequence `y ⟶ c(f) ⟶ x[1]` is admissible and its connecting arrow
@@ -245,7 +245,7 @@ structure ConeSituation {R : Type w} [CommRing R] (A : DGCategory.{v, u} R)
 
 [Tag 09P7](https://stacks.math.columbia.edu/tag/09P7) in the Stacks Project.
 
-**`DGCategory.exists_coneTriangleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean#L254).
+**`DGCategory.exists_coneTriangleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean#L254).
 
 > A homotopy-commutative square of complexes induces a morphism of their cone triangles, whose
 > cone component has a representative in the category of complexes.
@@ -282,7 +282,7 @@ theorem exists_coneTriangleMorphism (S : ConeSituation A)
 
 [Tag 09QK](https://stacks.math.columbia.edu/tag/09QK) in the Stacks Project.
 
-**`DGCategory.id_cone_homotopic_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean#L404).
+**`DGCategory.id_cone_homotopic_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeMorphism.lean#L404).
 
 > The identity of the cone of an identity morphism is homotopic to zero.
 
@@ -296,7 +296,7 @@ theorem id_cone_homotopic_zero (S : ConeSituation A) (x : A.Obj) :
 
 [Tag 09QL](https://stacks.math.columbia.edu/tag/09QL) in the Stacks Project.
 
-**`DGCategory.exists_rectification_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L66). The attribute's comment: “adjust\_right”.
+**`DGCategory.exists_rectification_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L66). The attribute's comment: “adjust\_right”.
 
 > Rectify the right arrow of a homotopy-commutative square along an admissible
 > monomorphism.
@@ -310,7 +310,7 @@ theorem exists_rectification_of_isAdmissibleMono {x y z w : A.Obj}
       A.Homotopic b b' ∧ A.compCocycle b' f = A.compCocycle g a
 ```
 
-**`DGCategory.exists_rectification_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L87). The attribute's comment: “adjust\_left”.
+**`DGCategory.exists_rectification_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L87). The attribute's comment: “adjust\_left”.
 
 > Rectify the left arrow of a homotopy-commutative square along an admissible epimorphism,
 > presented by a degree-zero section of its lower horizontal arrow.
@@ -327,7 +327,7 @@ theorem exists_rectification_left (C : ConeSituation A) (S : HomotopyCommutative
 
 [Tag 09QM](https://stacks.math.columbia.edu/tag/09QM) in the Stacks Project.
 
-**`DGCategory.exists_admissibleMono_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean#L351).
+**`DGCategory.exists_admissibleMono_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean#L351).
 
 > Every morphism in the category of complexes factors through an admissible monomorphism
 > followed by a retraction admitting a strict section and a homotopy inverse.
@@ -348,7 +348,7 @@ public theorem exists_admissibleMono_factorization
 
 [Tag 09QN](https://stacks.math.columbia.edu/tag/09QN) in the Stacks Project.
 
-**`DGCategory.exists_admissibleMono_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean#L515).
+**`DGCategory.exists_admissibleMono_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleMonoFactorization.lean#L515).
 
 > A finite chain of maps in the category of complexes has a commuting replacement by
 > admissible monomorphisms, with a homotopy equivalence at every vertex.
@@ -372,7 +372,7 @@ public theorem exists_admissibleMono_sequence {R : Type w} [CommRing R]
 
 [Tag 09QP](https://stacks.math.columbia.edu/tag/09QP) in the Stacks Project.
 
-**`DGCategory.comp_homotopic_zero_of_gradedSplitShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleNullHomotopy.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleNullHomotopy.lean#L109).
+**`DGCategory.comp_homotopic_zero_of_gradedSplitShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleNullHomotopy.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/AdmissibleNullHomotopy.lean#L109).
 
 > Two morphisms whose composites with opposite sides of an admissible short exact sequence
 > vanish up to homotopy have null-homotopic composite.
@@ -390,7 +390,7 @@ theorem comp_homotopic_zero_of_gradedSplitShortExact {x y z y₁ y₃ : A.Obj}
 
 [Tag 09QQ](https://stacks.math.columbia.edu/tag/09QQ) in the Stacks Project.
 
-**`DGCategory.associatedKTriangle_eq_of_same_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/TriangleIndependence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/TriangleIndependence.lean#L139).
+**`DGCategory.associatedKTriangle_eq_of_same_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/TriangleIndependence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/TriangleIndependence.lean#L139).
 
 > Changing the graded splitting of an admissible short exact sequence does not change its
 > associated triangle in the homotopy category.
@@ -406,7 +406,7 @@ theorem associatedKTriangle_eq_of_same_sequence {x y z : A.Obj} (S : ShiftAxiomB
 
 [Tag 09QR](https://stacks.math.columbia.edu/tag/09QR) in the Stacks Project.
 
-**`DGCategory.associatedCompTriangle_coneSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L60). The attribute's comment: “the statement in `Comp(A)`: the triangle associated to the cone sequence of `f` is the triangle on `y`, `c(f)`, `x[1]` whose first two arrows are that sequence's inclusion and projection and whose connecting arrow is `f[1]`. The homotopy-category form is `associatedKTriangle_coneSequence`; neither covers the comparison with the cone triangle of `f` (Tag 09QU) nor the rotation of this triangle (Tag 09QS)”.
+**`DGCategory.associatedCompTriangle_coneSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L60). The attribute's comment: “the statement in `Comp(A)`: the triangle associated to the cone sequence of `f` is the triangle on `y`, `c(f)`, `x[1]` whose first two arrows are that sequence's inclusion and projection and whose connecting arrow is `f[1]`. The homotopy-category form is `associatedKTriangle_coneSequence`; neither covers the comparison with the cone triangle of `f` (Tag 09QU) nor the rotation of this triangle (Tag 09QS)”.
 
 > Let `f : x ⟶ y` be a morphism in `Comp(𝒜)`. The triangle `(y, c(f), x[1], i, p, f[1])` is
 > the triangle associated to the admissible short exact sequence `y ⟶ c(f) ⟶ x[1]`.
@@ -428,7 +428,7 @@ theorem associatedCompTriangle_coneSequence (C : ConeSituation A) {x y : A.Obj}
             (C.shift.compShift_functor 1)).symm)
 ```
 
-**`DGCategory.associatedKTriangle_coneSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L86). The attribute's comment: “the statement in `K(A)`: the triangle associated to the cone sequence of `f` is the triangle on `y`, `c(f)`, `x[1]` whose first two arrows are the homotopy classes of that sequence's inclusion and projection and whose connecting arrow is the class of `f[1]`. The form in `Comp(A)` is `associatedCompTriangle_coneSequence`; neither covers the comparison with the cone triangle of `f` (Tag 09QU) nor the rotation of this triangle (Tag 09QS)”.
+**`DGCategory.associatedKTriangle_coneSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L86). The attribute's comment: “the statement in `K(A)`: the triangle associated to the cone sequence of `f` is the triangle on `y`, `c(f)`, `x[1]` whose first two arrows are the homotopy classes of that sequence's inclusion and projection and whose connecting arrow is the class of `f[1]`. The form in `Comp(A)` is `associatedCompTriangle_coneSequence`; neither covers the comparison with the cone triangle of `f` (Tag 09QU) nor the rotation of this triangle (Tag 09QS)”.
 
 > The same identification in the homotopy category: the triangle
 > `(y, c(f), x[1], i, p, f[1])` is the triangle associated to the admissible short exact sequence
@@ -454,7 +454,7 @@ theorem associatedKTriangle_coneSequence (C : ConeSituation A) {x y : A.Obj}
 
 [Tag 09QS](https://stacks.math.columbia.edu/tag/09QS) in the Stacks Project.
 
-**`DGCategory.rotatedAssociatedTriangle_iso_connectingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L308).
+**`DGCategory.rotatedAssociatedTriangle_iso_connectingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/RotatedConeTriangle.lean#L308).
 
 > The rotated triangle of an admissible sequence is isomorphic to the cone
 > triangle of its desuspended connecting map.
@@ -471,7 +471,7 @@ theorem rotatedAssociatedTriangle_iso_connectingConeTriangle
 
 [Tag 09QT](https://stacks.math.columbia.edu/tag/09QT) in the Stacks Project.
 
-**`DGCategory.isIso_cone_of_isIso_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeHomotopyEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeHomotopyEquivalence.lean#L293).
+**`DGCategory.isIso_cone_of_isIso_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeHomotopyEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeHomotopyEquivalence.lean#L293).
 
 > In a morphism of cone triangles, homotopy equivalences on the source and target
 > induce a homotopy equivalence on the cones.
@@ -491,7 +491,7 @@ public theorem isIso_cone_of_isIso_source_target
 
 [Tag 09QU](https://stacks.math.columbia.edu/tag/09QU) in the Stacks Project.
 
-**`DGCategory.coneTriangleIsoOfShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean#L713). The attribute's comment: “part (1)”. References: SGA 4 XVII (1.1.1), “DG category setting”.
+**`DGCategory.coneTriangleIsoOfShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean, line 713](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean#L713). The attribute's comment: “part (1)”. References: SGA 4 XVII (1.1.1), “DG category setting”.
 
 > An admissible short exact sequence identifies its quotient with the cone of its
 > first arrow, compatibly with the two triangles and the identity on their first two terms.
@@ -504,7 +504,7 @@ public theorem coneTriangleIsoOfShortExact (S : ConeSituation A)
       φ.hom₁ = 𝟙 _ ∧ φ.hom₂ = 𝟙 _ ∧ IsIso φ.hom₃
 ```
 
-**`DGCategory.shortExactTriangleIsoOfFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean, line 864](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean#L864). The attribute's comment: “part (2)”. References: SGA 4 XVII (1.1.1), “DG cat. with cone situat”.
+**`DGCategory.shortExactTriangleIsoOfFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean, line 864](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ConeTriangleComparison.lean#L864). The attribute's comment: “part (2)”. References: SGA 4 XVII (1.1.1), “DG cat. with cone situat”.
 
 > The admissible sequence in a factorization of a closed arrow gives a triangle
 > isomorphic to the cone triangle of that arrow, by the identity on the source and the
@@ -530,7 +530,7 @@ public theorem shortExactTriangleIsoOfFactorization (S : ConeSituation A)
 
 [Tag 09QW](https://stacks.math.columbia.edu/tag/09QW) in the Stacks Project.
 
-**`DGCategory.homotopyPretriangulated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1406). The attribute's comment: “the pre-triangulated structure”. References: SGA 4½ Etat 0 (1.2.2), “TR1, TR2, TR3”.
+**`DGCategory.homotopyPretriangulated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1406). The attribute's comment: “the pre-triangulated structure”. References: SGA 4½ Etat 0 (1.2.2), “TR1, TR2, TR3”.
 
 > The homotopy category with the triangles of admissible short exact sequences as its
 > distinguished triangles is pretriangulated.
@@ -544,7 +544,7 @@ public noncomputable def homotopyPretriangulated :
     Pretriangulated A.K
 ```
 
-**`DGCategory.distinguishedTriangles_homotopyPretriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1417). The attribute's comment: “its distinguished triangles”. References: SGA 4½ Etat 0 (1.2.2), “more general”.
+**`DGCategory.distinguishedTriangles_homotopyPretriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1417). The attribute's comment: “its distinguished triangles”. References: SGA 4½ Etat 0 (1.2.2), “more general”.
 
 > The distinguished triangles of the pretriangulated structure on `K(A)` are exactly the
 > triangles isomorphic to that of an admissible short exact sequence.
@@ -563,7 +563,7 @@ public theorem distinguishedTriangles_homotopyPretriangulated :
 
 [Tag 09QX](https://stacks.math.columbia.edu/tag/09QX) in the Stacks Project.
 
-**`DGCategory.admissibleMonomorphisms_octahedron`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Octahedron.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Octahedron.lean#L761).
+**`DGCategory.admissibleMonomorphisms_octahedron`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Octahedron.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/Octahedron.lean#L761).
 
 > The octahedral diagram associated to two composable admissible monomorphisms.
 > The input exact sequences witness admissibility and fix the two quotient objects.
@@ -595,7 +595,7 @@ theorem admissibleMonomorphisms_octahedron
 
 [Tag 09QY](https://stacks.math.columbia.edu/tag/09QY) in the Stacks Project.
 
-**`DGCategory.homotopyCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1431). References: SGA 4½ Etat 0 (1.2.2); SGA 4 Vbis (2.5.1), “more general”.
+**`DGCategory.homotopyCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean, line 1431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/HomotopyCategoryTriangulated.lean#L1431). References: SGA 4½ Etat 0 (1.2.2); SGA 4 Vbis (2.5.1), “more general”.
 
 > The homotopy category of a differential graded category satisfying axioms (A), (B) and (C),
 > with the translation functors of axiom (B) and the triangles of admissible short exact sequences
@@ -615,7 +615,7 @@ public theorem homotopyCategory_isTriangulated :
 
 [Tag 0FQF](https://stacks.math.columbia.edu/tag/0FQF) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.isTriangulated_onK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCrossSiteExact.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCrossSiteExact.lean#L149). The attribute's comment: “the induced functor on homotopy categories is exact, across two ringed sites”.
+**`SheafOfModules.DifferentialGradedModule.isTriangulated_onK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCrossSiteExact.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedCrossSiteExact.lean#L149). The attribute's comment: “the induced functor on homotopy categories is exact, across two ringed sites”.
 
 > **A differential graded functor across two ringed sites commuting with the shift is exact on
 > the homotopy categories**, which is [Stacks, Tag 0FQF] in the generality the derived pullback
@@ -653,7 +653,7 @@ theorem isTriangulated_onK
     F.onK.IsTriangulated
 ```
 
-**`DGCategory.DGFunctor.CommShiftB.isDistinguishedTriangle_mapTriangleK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L427). The attribute's comment: “distinguished triangles are carried to distinguished triangles”.
+**`DGCategory.DGFunctor.CommShiftB.isDistinguishedTriangle_mapTriangleK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L427). The attribute's comment: “distinguished triangles are carried to distinguished triangles”.
 
 > **Tag 0FQF.** The functor induced by `F` on homotopy categories carries the distinguished
 > triangles of `K(A)` to the distinguished triangles of `K(B)`, the third arrow of the image
@@ -668,7 +668,7 @@ theorem isDistinguishedTriangle_mapTriangleK (CA : ConeSituation A) (CB : ConeSi
       IsDistinguishedTriangle B CB (hF.mapTriangleK.obj T)
 ```
 
-**`DGCategory.DGFunctor.CommShiftK.commShift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L523). The attribute's comment: “the induced functor commutes with the translations”.
+**`DGCategory.DGFunctor.CommShiftK.commShift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L523). The attribute's comment: “the induced functor commutes with the translations”.
 
 > **Tag 0FQF.** The induced functor `K(A) ⥤ K(B)` commutes with the translation functors.
 
@@ -679,7 +679,7 @@ def commShift (hF : F.CommShiftK SA SB) :
     F.onK.CommShift ℤ
 ```
 
-**`DGCategory.DGFunctor.CommShiftK.isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L544). The attribute's comment: “the induced functor on homotopy categories is exact, from the translation coherences as data”. References: SGA 4 Vbis (2.5.1), “more general”.
+**`DGCategory.DGFunctor.CommShiftK.isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L544). The attribute's comment: “the induced functor on homotopy categories is exact, from the translation coherences as data”. References: SGA 4 Vbis (2.5.1), “more general”.
 
 > **Tag 0FQF.** A functor `F : A ⥤ B` of differential graded categories over `R` between
 > categories satisfying axioms (A), (B) and (C), which commutes with the shift, induces an exact
@@ -708,7 +708,7 @@ theorem isTriangulated (CA : ConeSituation A) (CB : ConeSituation B)
     F.onK.IsTriangulated
 ```
 
-**`DGCategory.DGFunctor.CommShiftB.isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L580). The attribute's comment: “the induced functor on homotopy categories is exact, from F(x[1]) = F(x)[1]”. References: SGA 4 Vbis (2.5.1), “more general”.
+**`DGCategory.DGFunctor.CommShiftB.isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L580). The attribute's comment: “the induced functor on homotopy categories is exact, from F(x[1]) = F(x)[1]”. References: SGA 4 Vbis (2.5.1), “more general”.
 
 > **Tag 0FQF.** A functor `F : A ⥤ B` of differential graded categories over `R` between
 > categories satisfying axioms (A), (B) and (C) and such that `F(x[1]) = F(x)[1]` induces an exact
@@ -741,7 +741,7 @@ theorem isTriangulated (CA : ConeSituation A) (CB : ConeSituation B)
     F.onK.IsTriangulated
 ```
 
-**`DGCategory.DGFunctor.CommShiftB.isTriangulated_strictify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L637). The attribute's comment: “the induced functor on homotopy categories is exact, from F(x[1]) = F(x)[1] alone”. References: SGA 4 Vbis (2.5.1), “more general”.
+**`DGCategory.DGFunctor.CommShiftB.isTriangulated_strictify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialGraded/ExactFunctor.lean#L637). The attribute's comment: “the induced functor on homotopy categories is exact, from F(x[1]) = F(x)[1] alone”. References: SGA 4 Vbis (2.5.1), “more general”.
 
 > **Tag 0FQF, with nothing assumed but the source's hypothesis.** A functor `F : A ⥤ B` of
 > differential graded categories over `R` between categories satisfying axioms (A), (B) and (C) and
@@ -783,4 +783,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.27, Tag 09P5](https://stacks.math.columbia.edu/tag/09P5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

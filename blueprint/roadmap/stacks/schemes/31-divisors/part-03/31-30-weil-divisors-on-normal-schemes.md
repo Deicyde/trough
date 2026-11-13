@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.30 Weil divisors on normal schemes
 
-Section 31.30 of the Stacks Project, [Tag 0EBK](https://stacks.math.columbia.edu/tag/0EBK). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.30 of the Stacks Project, [Tag 0EBK](https://stacks.math.columbia.edu/tag/0EBK). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EBL, a lemma
 
 [Tag 0EBL](https://stacks.math.columbia.edu/tag/0EBL) in the Stacks Project.
 
-**`AlgebraicGeometry.CoherentReflexive.isIso_dualTensorHullToSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean#L438). The attribute's comment: “the comparison (ℋom(ℱ, 𝒪\_X) ⊗ 𝒢)^∨∨ → ℋom(ℱ, 𝒢) is an isomorphism”.
+**`AlgebraicGeometry.CoherentReflexive.isIso_dualTensorHullToSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean#L437). The attribute's comment: “the comparison (ℋom(ℱ, 𝒪\_X) ⊗ 𝒢)^∨∨ → ℋom(ℱ, 𝒢) is an isomorphism”.
 
 > Let `X` be an integral locally Noetherian normal scheme and let `ℱ` and `𝒢` be coherent
 > reflexive `𝒪_X`-modules. Then the canonical map
@@ -29,7 +29,7 @@ theorem isIso_dualTensorHullToSheafHom (E F : X.Modules) [E.IsCoherent] [F.IsCoh
     IsIso (dualTensorHullToSheafHom E F hF)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonMul_toSkeleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean#L307). The attribute's comment: “the monoid law is the double dual of the tensor product”.
+**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonMul_toSkeleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean#L309). The attribute's comment: “the monoid law is the double dual of the tensor product”.
 
 > **Stacks Project, Tag 0EBL.**  The product of two isomorphism classes of rank one coherent
 > reflexive modules is the class of `(ℱ ⊗_{𝒪_X} 𝒢)^∨∨`.  This identifies the monoid law of
@@ -41,7 +41,7 @@ theorem rankOneSkeletonMul_toSkeleton (F G : RankOneReflexiveModules X) :
     rankOneSkeletonMul (toSkeleton F) (toSkeleton G) = toSkeleton (rankOneTensorObj F G)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonCommMonoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean#L357). The attribute's comment: “commutative monoid law on rank 1 coherent reflexive classes”.
+**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonCommMonoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneTensorMonoid.lean#L359). The attribute's comment: “commutative monoid law on rank 1 coherent reflexive classes”.
 
 > **Stacks Project, Tag 0EBL, the monoid part of the group law.**  On an integral locally
 > Noetherian scheme the rule `ℱ, 𝒢 ↦ (ℱ ⊗_{𝒪_X} 𝒢)^∨∨` is a commutative monoid law on the set of
@@ -53,7 +53,7 @@ noncomputable def rankOneSkeletonCommMonoid (X : Scheme.{u}) [IsIntegral X]
     [IsLocallyNoetherian X] : CommMonoid (Skeleton (RankOneReflexiveModules X))
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonCommGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean#L104). The attribute's comment: “the abelian group law on isomorphism classes of rank 1 coherent reflexive modules”.
+**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonCommGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean#L104). The attribute's comment: “the abelian group law on isomorphism classes of rank 1 coherent reflexive modules”.
 
 > On an integral locally Noetherian normal scheme the rule `ℱ, 𝒢 ↦ (ℱ ⊗_{𝒪_X} 𝒢)^∨∨` is an
 > **abelian group law** on the set of isomorphism classes of rank one coherent reflexive
@@ -73,7 +73,7 @@ noncomputable def rankOneSkeletonCommGroup (X : Scheme.{u}) [IsIntegral X]
 
 [Tag 0EBM](https://stacks.math.columbia.edu/tag/0EBM) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_iso_of_weilDivisorClassOfInvertibleSheaf_restrict_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DivisorClassFaithful.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DivisorClassFaithful.lean#L166). The attribute's comment: “the injectivity clause, with the two modules compared directly”.
+**`AlgebraicGeometry.nonempty_iso_of_weilDivisorClassOfInvertibleSheaf_restrict_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DivisorClassFaithful.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DivisorClassFaithful.lean#L167). The attribute's comment: “the injectivity clause, with the two modules compared directly”.
 
 > **Stacks Project, Tag 0EBM, the injectivity clause.**  Let `X` be an integral locally
 > Noetherian normal scheme and `U ⊆ X` an open subscheme whose complement has codimension at least
@@ -105,7 +105,7 @@ theorem nonempty_iso_of_weilDivisorClassOfInvertibleSheaf_restrict_eq {X : Schem
     Nonempty (M ≅ N)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonMulEquivWeilDivisorClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean#L75).
+**`AlgebraicGeometry.CoherentReflexive.rankOneSkeletonMulEquivWeilDivisorClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneWeilClassSurjective.lean#L75).
 
 > On an integral locally Noetherian normal scheme the isomorphism classes of rank one coherent
 > reflexive `𝒪_X`-modules, under the monoid law `ℱ, 𝒢 ↦ (ℱ ⊗_{𝒪_X} 𝒢)^∨∨` of [Stacks, Tag 0EBL],
@@ -124,7 +124,7 @@ def rankOneSkeletonMulEquivWeilDivisorClass :
 
 [Tag 0EBN](https://stacks.math.columbia.edu/tag/0EBN) in the Stacks Project.
 
-**`AlgebraicGeometry.CoherentReflexive.isOpen_sectionIsomorphismLocus_and_nonempty_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowerColimit.lean, line 690](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowerColimit.lean#L690).
+**`AlgebraicGeometry.CoherentReflexive.isOpen_sectionIsomorphismLocus_and_nonempty_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowerColimit.lean, line 690](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowerColimit.lean#L690).
 
 > Let `X` be an integral locally Noetherian normal scheme, `ℱ` a rank one coherent reflexive
 > `𝒪_X`-module and `s ∈ Γ(X, ℱ)`.  The set `U = {x ∈ X | s : 𝒪_{X, x} → ℱ_x is an isomorphism}`
@@ -144,7 +144,7 @@ theorem isOpen_sectionIsomorphismLocus_and_nonempty_isColimit (F : RankOneReflex
       Nonempty (IsColimit (sectionIsomorphismOpenCocone F.obj s))
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexivePowers.reflexivePower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean#L81). The attribute's comment: “the reflexive powers ℱ^[1] = ℱ, ℱ^[n+1] = (ℱ ⊗ ℱ^[n])^\{**}”.
+**`Stacks.AlgebraicGeometry.ReflexivePowers.reflexivePower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean#L81). The attribute's comment: “the reflexive powers ℱ^[1] = ℱ, ℱ^[n+1] = (ℱ ⊗ ℱ^[n])^\{**}”.
 
 > The reflexive powers of `ℱ`: `ℱ^{[1]} = ℱ` and `ℱ^{[n + 1]} = (ℱ ⊗_{𝒪_X} ℱ^{[n]})^{**}`; the
 > value at `0` is `𝒪_X`, the first term of the system `𝒪_X → ℱ → ℱ^{[2]} → ⋯`.
@@ -157,7 +157,7 @@ noncomputable def reflexivePower (F : X.Modules) : ℕ → X.Modules
 
 [Tag 0EBP](https://stacks.math.columbia.edu/tag/0EBP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_ringKrullDim_stalk_eq_one_of_maximal_irreducible_compl_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean#L246).
+**`AlgebraicGeometry.exists_ringKrullDim_stalk_eq_one_of_maximal_irreducible_compl_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean#L246).
 
 > Assumptions and notation as in [Stacks, Tag 0EBN]: `X` is an integral locally Noetherian normal
 > scheme, `ℱ` is a coherent reflexive `𝒪_X`-module of rank one, `s` is a global section of `ℱ`, and
@@ -177,7 +177,7 @@ theorem exists_ringKrullDim_stalk_eq_one_of_maximal_irreducible_compl_locus [IsI
     ∃ ξ : X, closure {ξ} = Z ∧ ringKrullDim (X.presheaf.stalk ξ) = 1
 ```
 
-**`AlgebraicGeometry.codimension_eq_one_of_maximal_irreducible_compl_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean#L271). The attribute's comment: “every irreducible component of the complement of the isomorphism locus has codimension one in X”.
+**`AlgebraicGeometry.codimension_eq_one_of_maximal_irreducible_compl_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusCodimension.lean#L271). The attribute's comment: “every irreducible component of the complement of the isomorphism locus has codimension one in X”.
 
 > Let `X` be an integral locally Noetherian normal scheme, `ℱ` a coherent reflexive `𝒪_X`-module
 > of rank one, `s` a nonzero global section, and `U = sectionIsomorphismLocus ℱ s` the open locus of
@@ -200,7 +200,7 @@ theorem codimension_eq_one_of_maximal_irreducible_compl_locus [IsIntegral X]
 
 [Tag 0EBQ](https://stacks.math.columbia.edu/tag/0EBQ) in the Stacks Project.
 
-**`AlgebraicGeometry.objective_0EBQ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveColimitSections.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveColimitSections.lean#L125).
+**`AlgebraicGeometry.objective_0EBQ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveColimitSections.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveColimitSections.lean#L125).
 
 > For `A` a Noetherian normal domain, `M` a finite reflexive `A`-module of rank one and `s ∈ M`
 > nonzero, the open `U` of [Stacks, Tag 0EBN] is the complement of `V(𝔭₁) ∪ ⋯ ∪ V(𝔭_r)` for the
@@ -215,7 +215,7 @@ theorem objective_0EBQ (hrank : Module.rank R M = 1) {s : M} (hs : s ≠ 0) :
       Nonempty (IsColimit (moduleColimitCocone R M hrank hs))
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L176). The attribute's comment: “the open U of Lemma 31.30.3, on Spec(A), identified with the complement of the support of M/As; the identification of that support with V(p\_1) ∪ … ∪ V(p\_r) is Lemma 31.30.4 (Tag 0EBP)”.
+**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L176). The attribute's comment: “the open U of Lemma 31.30.3, on Spec(A), identified with the complement of the support of M/As; the identification of that support with V(p\_1) ∪ … ∪ V(p\_r) is Lemma 31.30.4 (Tag 0EBP)”.
 
 > For `A` a Noetherian normal domain, `M` a finite reflexive `A`-module and `s ∈ M` nonzero, the
 > set of primes at which `s : A_𝔭 → M_𝔭` is an isomorphism is the complement of the support of
@@ -227,7 +227,7 @@ theorem sectionIsomorphismPrimes_eq_compl_support [IsDomain A] [IsNoetherianRing
     sectionIsomorphismPrimes A s = (Module.support A (M ⧸ (A ∙ s)))ᶜ
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_heightOneSupportZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L231). The attribute's comment: “the first display, U = Spec(A) \ (V(p\_1) ∪ … ∪ V(p\_r)), unconditionally; the colimit Γ(U, O\_U) = colim M^[n] is AlgebraicGeometry.objective\_0EBQ of Divisors/Reflexive/ReflexiveColimitSections.lean”.
+**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_heightOneSupportZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L231). The attribute's comment: “the first display, U = Spec(A) \ (V(p\_1) ∪ … ∪ V(p\_r)), unconditionally; the colimit Γ(U, O\_U) = colim M^[n] is AlgebraicGeometry.objective\_0EBQ of Divisors/Reflexive/ReflexiveColimitSections.lean”.
 
 > For `A` a Noetherian normal domain, `M` a finite reflexive `A`-module of rank one and `s ∈ M`
 > nonzero, `U = Spec(A) \ (V(𝔭₁) ∪ ⋯ ∪ V(𝔭_r))`, where `U` is the set of primes at which
@@ -245,7 +245,7 @@ theorem sectionIsomorphismPrimes_eq_compl_heightOneSupportZeroLocus [IsDomain A]
 
 [Tag 0EBR](https://stacks.math.columbia.edu/tag/0EBR) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.SectionLocusAffine.exists_pos_sectionPowStalk_mem_smul_maximalIdeal_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean#L172). The attribute's comment: “(1) ⇒ (2)”.
+**`Stacks.AlgebraicGeometry.SectionLocusAffine.exists_pos_sectionPowStalk_mem_smul_maximalIdeal_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean#L172). The attribute's comment: “(1) ⇒ (2)”.
 
 > **[Stacks, Tag 0EBR], (1) ⇒ (2).** With `X`, `ℱ`, `s` and `U` as in [Stacks, Tag 0EBN]:
 > if the inclusion `j : U → X` is affine, then for every `x ∈ X \ U` there is an `n > 0` with
@@ -274,7 +274,7 @@ theorem exists_pos_sectionPowStalk_mem_smul_maximalIdeal_of_isAffineHom
       (⊤ : Submodule ↑(X.presheaf.stalk x) (reflexivePowerStalk F x n))
 ```
 
-**`Stacks.AlgebraicGeometry.SectionLocusAffine.isAffineHom_of_forall_exists_pos_sectionPowStalk_mem_smul_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean#L216). The attribute's comment: “(2) ⇒ (1)”.
+**`Stacks.AlgebraicGeometry.SectionLocusAffine.isAffineHom_of_forall_exists_pos_sectionPowStalk_mem_smul_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SectionLocusAffineTag.lean#L216). The attribute's comment: “(2) ⇒ (1)”.
 
 > **[Stacks, Tag 0EBR], (2) ⇒ (1).** With `X`, `ℱ`, `s` and `U` as in [Stacks, Tag 0EBN]:
 > if for every `x ∈ X \ U` there is an `n > 0` with `sⁿ ∈ 𝔪_x ℱ^{[n]}_x`, then the inclusion
@@ -307,4 +307,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.30, Tag 0EBK](https://stacks.math.columbia.edu/tag/0EBK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

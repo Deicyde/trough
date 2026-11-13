@@ -7,7 +7,7 @@ statement: formalized
 
 # Sokhotski–Plemelj formula
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html).
 
 ## The pairing with $(x + i\varepsilon)^{-1}$
 
@@ -18,7 +18,7 @@ $\int_{\mathbb{R}} (x + i\varepsilon)^{-1}\phi(x)\, dx$.
 The integral is the Lebesgue integral, taken to be $0$ when the integrand is not integrable;
 this can happen only for $\varepsilon = 0$.
 
-Formalized by `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.uPlusEps`, a definition declared in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#u-plus-eps).
+Formalized by `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.uPlusEps`, a definition declared in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#u-plus-eps).
 
 ## The pairing with $(x - i\varepsilon)^{-1}$
 
@@ -29,7 +29,7 @@ $\int_{\mathbb{R}} (x - i\varepsilon)^{-1}\phi(x)\, dx$.
 The integral is the Lebesgue integral, taken to be $0$ when the integrand is not integrable;
 this can happen only for $\varepsilon = 0$.
 
-Formalized by `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.uMinusEps`, a definition declared in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#u-minus-eps).
+Formalized by `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.uMinusEps`, a definition declared in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#u-minus-eps).
 
 ## The tempered distributions $(x \pm i\varepsilon)^{-1}$ converge as $\varepsilon \to 0^+$
 
@@ -45,7 +45,7 @@ $u_{-,\varepsilon}(\phi) \to u_-(\phi)$ as $\varepsilon \to 0^+$ for every $\phi
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Distributions, generalized functions, distribution spaces), problem `ma_proofbench_l2_15`.
 
-Stated but not proved: `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.exists_temperedDistribution_tendsto_inv_add_mul_I` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#exists-tempered-distribution-tendsto-inv).
+Stated but not proved: `MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.exists_temperedDistribution_tendsto_inv_add_mul_I` is written with `theorem_wanted` in [WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Distribution/PlemeljLimitTemperedDistributionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html#exists-tempered-distribution-tendsto-inv).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sokhotski–Plemelj formula](https://deicyde.github.io/atlas-lean/roadmap/Analysis/distributions/sokhotski-plemelj-formula/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/distributions/sokhotski-plemelj-formula)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/distributions/sokhotski-plemelj-formula)

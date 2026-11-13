@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.18 Limits and dimensions of fibres
 
-Section 32.18 of the Stacks Project, [Tag 05M4](https://stacks.math.columbia.edu/tag/05M4). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.18 of the Stacks Project, [Tag 05M4](https://stacks.math.columbia.edu/tag/05M4). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05M5, a lemma
 
 [Tag 05M5](https://stacks.math.columbia.edu/tag/05M5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_forall_topologicalKrullDim_fiber_le_of_isLimit_of_essentiallySmall`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionBound.lean, line 824](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionBound.lean#L824).
+**`AlgebraicGeometry.exists_forall_topologicalKrullDim_fiber_le_of_isLimit_of_essentiallySmall`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionBound.lean, line 824](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionBound.lean#L824).
 
 > **Stacks Project, Tag 05M5**, for an index category that is essentially small relative to
 > the universe of the schemes: a uniform bound on the dimensions of the fibres of a morphism
@@ -41,7 +41,7 @@ public lemma exists_forall_topologicalKrullDim_fiber_le_of_isLimit_of_essentiall
 
 [Tag 094M](https://stacks.math.columbia.edu/tag/094M) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_quasiFinite_baseChange_of_quasiFinite_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/QuasiFinite.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/QuasiFinite.lean#L91).
+**`AlgebraicGeometry.exists_quasiFinite_baseChange_of_quasiFinite_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/QuasiFinite.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/QuasiFinite.lean#L91).
 
 > Let `c` be a limit cone of a cofiltered diagram `D` of schemes with affine transition
 > morphisms, and let `f₀ : X₀ ⟶ Y₀` be a morphism locally of finite type of quasi-compact and
@@ -72,7 +72,7 @@ theorem exists_quasiFinite_baseChange_of_quasiFinite_limitBaseChange
 
 [Tag 0H3V](https://stacks.math.columbia.edu/tag/0H3V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_relativeDimensionLE_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean#L431).
+**`AlgebraicGeometry.exists_relativeDimensionLE_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean#L431).
 
 > In the situation of Tag 081D, if the base change of `f₀` to the limit has relative
 > dimension at most `d` and `f₀` is locally of finite type, then the base change of `f₀` to some
@@ -94,7 +94,7 @@ theorem exists_relativeDimensionLE_baseChange_of_limitBaseChange
 
 [Tag 0EY2](https://stacks.math.columbia.edu/tag/0EY2) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_relativeDimension_baseChange_of_relativeDimension_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean#L348).
+**`AlgebraicGeometry.exists_relativeDimension_baseChange_of_relativeDimension_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/RelativeDimension.lean#L348).
 
 > In the situation of Tag 081D, if the base change of `f₀` to the limit has relative
 > dimension `d` and `f₀` is locally of finite presentation, then the base change of `f₀` to some
@@ -116,7 +116,7 @@ theorem exists_relativeDimension_baseChange_of_relativeDimension_limitBaseChange
 
 [Tag 05M6](https://stacks.math.columbia.edu/tag/05M6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finitePresentation_closedImmersion_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionEnlargement.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionEnlargement.lean#L79).
+**`AlgebraicGeometry.exists_finitePresentation_closedImmersion_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionEnlargement.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/FibreDimensionEnlargement.lean#L79).
 
 > **Stacks Project, Tag 05M6.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be a morphism of finite presentation and let `d` be a natural number.  A closed
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.18, Tag 05M4](https://stacks.math.columbia.edu/tag/05M4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

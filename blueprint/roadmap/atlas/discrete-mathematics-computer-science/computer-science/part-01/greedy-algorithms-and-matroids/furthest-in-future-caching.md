@@ -8,7 +8,7 @@ proof: formalized
 
 # Furthest-in-future caching
 
-18 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html).
+18 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html).
 
 ## Offline Caching
 
@@ -18,7 +18,7 @@ A cache event over a type $\alpha$ of blocks records how one request is
 served: either a hit on the requested block $r \in \alpha$, or a miss on the requested block $r$
 together with an optional evicted block $v \in \alpha$, absent when nothing is evicted.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent`, an inductive type declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-event).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent`, an inductive type declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-event).
 
 ## Legal cache transitions
 
@@ -32,7 +32,7 @@ $C'$ are both empty, or $|C| < k$ and $C'$ is a permutation of $r :: C$; and lab
 $r$ evicting $v$ when $k > 0$, $r \notin C$, $|C| = k$, $v \in C$ and $C'$ is a permutation of
 $r :: (C \setminus v)$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts).
 
 ## Furthest-in-future caching
 
@@ -46,7 +46,7 @@ page whose next occurrence among the later requests is furthest away (a page nev
 again counts as infinitely far, and ties go to the page listed first in the cache), removes it
 and adds $r$ at the front.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future).
 
 ## Furthest-in-future on no requests
 
@@ -54,7 +54,7 @@ For every capacity $k$ and every list $C$ of blocks,
 the furthest-in-future manager with capacity $k$ on the empty request list from the initial
 cache $C$ emits no events and ends with the cache $C$, unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-nil).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-nil).
 
 ## One step of the furthest-in-future manager
 
@@ -76,7 +76,7 @@ the first entry of $C$ at which $\nu$ is maximal on $C$, then
 $\mathrm{FIF}_k(r :: f, C) = (\mathrm{miss}(r, v) :: E, D)$ where
 $(E, D) = \mathrm{FIF}_k(f, r :: (C \setminus v))$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_cons`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-cons).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_cons`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-cons).
 
 ## The furthest-in-future manager produces legal traces
 
@@ -87,7 +87,7 @@ $R$ from the initial cache $C$. Then $E$ leads from $C$ to $D$ by legal cache tr
 capacity $k$, the blocks requested by the events of $E$ are, in order, exactly $R$, and $D$ is
 duplicate-free of length at most $k$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_legal`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-legal).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_legal`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-legal).
 
 ## Furthest-in-future caching with zero capacity
 
@@ -96,7 +96,7 @@ sequence $r_1, \dots, r_n$ from the empty cache, the furthest-in-future manager 
 the events $\mathrm{miss}(r_1), \dots, \mathrm{miss}(r_n)$, one miss per request in order and
 each evicting no page, and its final cache is empty.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_zero_capacity`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-zero-capacity).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_zero_capacity`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-zero-capacity).
 
 ## Optimality of furthest-in-future caching
 
@@ -110,28 +110,28 @@ $E'$ contains.
 Legal transitions may reorder the list representing the cache, so a competing trace need not
 keep the manager's order.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_min_misses`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-min-misses).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_min_misses`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 665](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L665). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-min-misses).
 
 ## Page served by a cache event
 
 The page served by a cache event is the page it requests,
 whether the event is a hit or a miss.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.request`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.request`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request).
 
 ## Miss indicator
 
 The miss indicator of a cache event is true if the event is a miss and
 false if it is a hit.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.isMiss`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#is-miss).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.isMiss`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#is-miss).
 
 ## Number of misses in a trace
 
 The number of misses of a finite list of cache events is the
 number of events in the list that are misses.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.misses`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#misses).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.misses`, a definition declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#misses).
 
 ## Legal cache transitions preserve valid caches
 
@@ -140,7 +140,7 @@ be a legal cache transition for capacity $k$, labelled by any cache event. If $C
 duplicate entries and length at most $k$, then $C'$ has no duplicate entries and length at
 most $k$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS_valid`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts-valid).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS_valid`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 712](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L712). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts-valid).
 
 ## Legal cache traces preserve valid caches
 
@@ -149,7 +149,7 @@ sequence of cache events leads from the cache $C$ to the cache $C'$ by legal cac
 for capacity $k$. If $C$ has no duplicate entries and length at most $k$, then $C'$ has no
 duplicate entries and length at most $k$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS_mtr_valid`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 719](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L719). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts-mtr-valid).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.cacheLTS_mtr_valid`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 719](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L719). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#cache-lts-mtr-valid).
 
 ## A legal step caches the served page
 
@@ -157,7 +157,7 @@ Let $k > 0$ be a capacity. If a legal transition for
 capacity $k$ takes a cache $C$ to a cache $C'$ by a cache event, then the page served by that
 event lies in $C'$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.request_mem_of_tr`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request-mem-of-tr).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.request_mem_of_tr`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request-mem-of-tr).
 
 ## A legal trace without misses serves only cached pages
 
@@ -165,7 +165,7 @@ Let $k$ be a capacity. If a legal
 trace of cache events for capacity $k$ starts from a cache $C$ and contains no miss, then every
 page served by an event of the trace lies in $C$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.request_mem_of_misses_eq_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request-mem-of-misses-eq-zero).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.request_mem_of_misses_eq_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#request-mem-of-misses-eq-zero).
 
 ## A legal trace misses at least once
 
@@ -174,7 +174,7 @@ $k$ pages, and consider a legal trace of cache events for capacity $k$ that star
 $p$ be a page in $C$. If at least $k + 1$ distinct pages are each equal to $p$ or served by some
 event of the trace, then the trace contains at least one miss.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.one_le_misses`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 774](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#one-le-misses).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.one_le_misses`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 774](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#one-le-misses).
 
 ## Furthest-in-future caching has the fewest misses
 
@@ -185,7 +185,7 @@ capacity $k$ and whose events serve, in order, exactly the blocks of $R$. Then t
 misses among the events emitted by the furthest-in-future manager with capacity $k$ on $R$ from
 the initial cache $C$ is at most the number of misses of $E'$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_misses_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-misses-le).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_misses_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-misses-le).
 
 ## Furthest-in-future serves exactly the requests
 
@@ -194,7 +194,7 @@ requested blocks and $C$ a duplicate-free list of blocks of length at most $k$. 
 emitted by the furthest-in-future manager with capacity $k$ on $R$ from the initial cache $C$
 serve, in order, exactly the blocks of $R$.
 
-Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_requests`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 803](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L803). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-requests).
+Formalized by `Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_requests`, a theorem declared in [CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean, line 803](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Greedy/OfflineCaching.lean#L803). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html#furthest-in-future-requests).
 
 ## Depends on
 
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Furthest-in-future caching](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/greedy-algorithms-and-matroids/furthest-in-future-caching)

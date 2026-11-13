@@ -7,7 +7,7 @@ statement: formalized
 
 # Schreier sets
 
-96 results, 61 proved and 35 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html).
+96 results, 61 proved and 35 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html).
 
 ## Number of (p, q)-Schreier sets with given maximum
 
@@ -20,7 +20,7 @@ $p|F| \le q \min F$).
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.schreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count).
+Formalized by `MetaMathlibExt.schreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count).
 
 ## Number of maximal $(p, q)$-Schreier sets
 
@@ -32,7 +32,7 @@ $F \subseteq \{1, \dots, n\}$ with $n \in F$ and $q \min F = p |F|$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.maximalSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count).
+Formalized by `MetaMathlibExt.maximalSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count).
 
 ## Padovan-like sequence for Schreier sets
 
@@ -46,7 +46,7 @@ $n < 2p$ and $a_{p,q,n} = 2$ for $n \ge 2p$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.schreierPadovan`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan).
+Formalized by `MetaMathlibExt.schreierPadovan`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan).
 
 ## Padovan-like sequence of maximal Schreier sets
 
@@ -60,7 +60,7 @@ $a^{(m)}_{p,q,n}$ is $1$ for $n = 2p$ and $0$ for every other $n$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.maximalSchreierPadovan`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan).
+Formalized by `MetaMathlibExt.maximalSchreierPadovan`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan).
 
 ## Recurrence for the Padovan-like sequence
 
@@ -72,7 +72,7 @@ $a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.schreierPadovan_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan-rec).
+Formalized by `MetaMathlibExt.schreierPadovan_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan-rec).
 
 ## Recurrence for the Padovan-like sequence of maximal Schreier sets
 
@@ -84,7 +84,7 @@ maximal Schreier sets satisfies $a^{(m)}_{p,q,n} = a^{(m)}_{p,q,n-q} + a^{(m)}_{
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 1.
 
-Formalized by `MetaMathlibExt.maximalSchreierPadovan_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan-rec).
+Formalized by `MetaMathlibExt.maximalSchreierPadovan_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan-rec).
 
 ## Small values of the Padovan-like sequences
 
@@ -96,7 +96,7 @@ $0, 1, 1, 1, 2, 3, 4, 6$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Table 3.
 
-Formalized by `MetaMathlibExt.schreierPadovan_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan-small).
+Formalized by `MetaMathlibExt.schreierPadovan_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-padovan-small).
 
 ## First values of the Padovan-like sequences of maximal Schreier sets
 
@@ -109,7 +109,7 @@ $0, 1, 0, 0, 1, 1, 1, 2$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Table 4.
 
-Formalized by `MetaMathlibExt.maximalSchreierPadovan_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan-small).
+Formalized by `MetaMathlibExt.maximalSchreierPadovan_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-padovan-small).
 
 ## Small values of the (1, 2)-Schreier counts
 
@@ -121,7 +121,7 @@ $|M^{1/2}_n|$ of maximal $(1, 2)$-Schreier sets with maximum $n$ takes the value
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Tables 1 and 2.
 
-Formalized by `MetaMathlibExt.schreierCount_one_two_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-one-two-small).
+Formalized by `MetaMathlibExt.schreierCount_one_two_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-one-two-small).
 
 ## Sequences satisfying a polynomial
 
@@ -134,7 +134,7 @@ $n \ge r$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 4, Definition 4.
 
-Formalized by `MetaMathlibExt.SatisfiesPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#satisfies-poly).
+Formalized by `MetaMathlibExt.SatisfiesPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#satisfies-poly).
 
 ## Every sequence satisfies the zero polynomial
 
@@ -145,7 +145,7 @@ satisfies the zero polynomial.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Section 4, Definition 4.
 
-Formalized by `MetaMathlibExt.satisfiesPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#satisfies-poly-zero).
+Formalized by `MetaMathlibExt.satisfiesPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#satisfies-poly-zero).
 
 ## Schreier counts as Padovan-like sequences
 
@@ -159,7 +159,7 @@ equals $a^{(m)}_{p,q,(n-1)q}$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Theorem 1 (`jis-2026-26.2.2-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.schreierCount_eq_schreierPadovan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-eq-schreier-padovan).
+Stated but not proved: `MetaMathlibExt.schreierCount_eq_schreierPadovan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-eq-schreier-padovan).
 
 ## Closed formula and recurrence for Schreier counts
 
@@ -183,7 +183,7 @@ restriction is dropped.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Corollary 2 (`jis-2026-26.2.2-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.schreierCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-formula-and-recurrence).
+Stated but not proved: `MetaMathlibExt.schreierCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-formula-and-recurrence).
 
 ## Closed form and recurrence for maximal $(p, q)$-Schreier sets
 
@@ -210,7 +210,7 @@ Theorem 1.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Corollary 3 (`jis-2026-26.2.2-cor-3`).
 
-Stated but not proved: `MetaMathlibExt.maximalSchreierCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count-formula-and-recur).
+Stated but not proved: `MetaMathlibExt.maximalSchreierCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count-formula-and-recur).
 
 ## A sequence satisfying a polynomial satisfies its multiples
 
@@ -222,7 +222,7 @@ satisfies $Q$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Lemma 5 (`jis-2026-26.2.2-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.SatisfiesPoly.of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#of-dvd).
+Stated but not proved: `MetaMathlibExt.SatisfiesPoly.of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#of-dvd).
 
 ## Counting $(p, 1)$-Schreier sets by maximal $(p, 1)$-Schreier sets
 
@@ -237,7 +237,7 @@ The paper states this for $n \ge 1$; at $n = 0$ both sides are $0$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Theorem 8 (`jis-2026-26.2.2-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.schreierCount_eq_maximalSchreierCount_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-eq-maximal-schreier-count).
+Stated but not proved: `MetaMathlibExt.schreierCount_eq_maximalSchreierCount_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-count-eq-maximal-schreier-count).
 
 ## Maximal $(1, q)$-Schreier sets counted by $(1, q)$-Schreier sets
 
@@ -251,14 +251,14 @@ $n$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Linear Recurrences of Generalized Schreier Sets Revisited*, Journal of Integer Sequences 29 (2026), Article 26.2.2, Theorem 9 (`jis-2026-26.2.2-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.maximalSchreierCount_eq_two_mul_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count-eq-two-mul-sub).
+Stated but not proved: `MetaMathlibExt.maximalSchreierCount_eq_two_mul_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedSchreierPadovanWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#maximal-schreier-count-eq-two-mul-sub).
 
 ## Schreier sets
 
 A finite set $A$ of natural numbers is *Schreier* if $|A| \le a$ for
 every $a \in A$; equivalently, $A$ is empty or $\min A \ge |A|$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-schreier).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-schreier).
 
 ## Strong Schreier sets
 
@@ -266,35 +266,35 @@ For a natural number $\ell$, a finite set $A$ of natural numbers is
 *$\ell$-strong Schreier* if $\ell |A| + 1 \le a + \ell$ for every $a \in A$; equivalently, $A$ is
 empty or $\min A \ge \ell |A| - \ell + 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStrongSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-strong-schreier).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStrongSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-strong-schreier).
 
 ## Sparse sets
 
 A finite set of natural numbers is *sparse* if the differences between
 consecutive elements in increasing order are non-decreasing.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsSparse`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-sparse).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsSparse`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-sparse).
 
 ## Strongly sparse sets
 
 A finite set of natural numbers is *strongly sparse* if the
 differences between consecutive elements in increasing order are strictly increasing.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStronglySparse`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-strongly-sparse).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStronglySparse`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-strongly-sparse).
 
 ## Partitions into exactly $k$ parts
 
 For natural numbers $u$ and $k$, $p(u, k)$ is the
 number of partitions of $u$ into exactly $k$ parts.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-exact-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-exact-count).
 
 ## The partition number $p(u)$
 
 For a natural number $u$, $p(u)$ is the number of partitions
 of $u$, that is, of multisets of positive integers summing to $u$; in particular $p(0) = 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-count).
 
 ## Number of Schreier sparse sets with given minimum and maximum
 
@@ -302,14 +302,14 @@ For natural numbers $n$
 and $m$, $|F_{n,m}|$ is the number of sets $F \subseteq \{1, \dots, n\}$ that are Schreier and
 sparse, contain $n$, and have minimum $m$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-min-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-min-count).
 
 ## Number of Schreier sparse sets with maximum $n$
 
 For a natural number $n$, $|F_n|$ is the
 number of sets $F \subseteq \{1, \dots, n\}$ with $n \in F$ that are Schreier and sparse.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-count).
 
 ## Number of sparse strong Schreier sets with maximum $n$
 
@@ -317,7 +317,7 @@ For natural numbers $n$ and
 $\ell$, $|A_{n,\ell}|$ is the number of sets $A \subseteq \{1, \dots, n\}$ with $n \in A$ that
 are sparse and $\ell$-strong Schreier.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count).
 
 ## Number of strongly sparse strong Schreier sets with a given maximum
 
@@ -327,7 +327,7 @@ that are strongly sparse, meaning that the differences between consecutive eleme
 increasing order are strictly increasing, and $\ell$-strong Schreier, meaning that every element
 of $A$ is at least $\ell|A| - \ell + 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count).
 
 ## Number of strong Schreier sets with a given maximum
 
@@ -335,7 +335,7 @@ For natural numbers $n$ and $\ell$,
 $|B_{n,\ell}|$ is the number of sets $B \subseteq \{1, \dots, n\}$ with $n \in B$ that are
 $\ell$-strong Schreier, that is, every element of $B$ is at least $\ell|B| - \ell + 1$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-count).
 
 ## Number of strong Schreier sets of given size with maximum $n$
 
@@ -343,14 +343,14 @@ For natural numbers $n$,
 $\ell$ and $m$, $|B_{n,\ell,m}|$ is the number of $\ell$-strong Schreier sets
 $B \subseteq \{1, \dots, n\}$ with $n \in B$ and exactly $m$ elements.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCardCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-card-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCardCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-card-count).
 
 ## Partitions with all parts at least a given size
 
 For natural numbers $n$ and $\ell$,
 $|E_{n,\ell}|$ is the number of partitions of $n$ all of whose parts are at least $\ell$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-count).
 
 ## Partitions into distinct parts at least $\ell$
 
@@ -358,7 +358,7 @@ For natural numbers $n$ and $\ell$, let
 $E^d_{n,\ell}$ be the set of partitions of $n$ into pairwise distinct parts, each at least
 $\ell$. This is its number of elements $|E^d_{n,\ell}|$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionDistinctMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-distinct-min-part-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionDistinctMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-distinct-min-part-count).
 
 ## Partitions with a given number of parts, all at least a given size
 
@@ -366,7 +366,7 @@ For natural numbers
 $n$, $\ell$ and $k$, $|E_{n,\ell,k}|$ is the number of partitions of $n$ into exactly $k$ parts,
 all of which are at least $\ell$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-exact-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-exact-count).
 
 ## Partitions with a given gap between the two largest parts
 
@@ -376,7 +376,7 @@ all at least $\ell$, whose largest part exceeds the second largest part (counted
 multiplicity) by exactly $q$; such a partition has at least two parts, so the count is $0$ for
 $k < 2$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartGapCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-gap-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartGapCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-gap-count).
 
 ## Partitions avoiding parts from 2 up to a bound
 
@@ -384,7 +384,7 @@ For natural numbers $n$ and $\ell$,
 $|G_{n,\ell}|$ is the number of partitions of $n$ none of whose parts lies in
 $\{2, \dots, \ell\}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionNoSmallPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-no-small-part-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionNoSmallPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-no-small-part-count).
 
 ## Partitions avoiding parts from 2 up to a bound and large even parts
 
@@ -392,7 +392,7 @@ For natural numbers
 $n$ and $\ell$, $|H_{n,\ell}|$ is the number of partitions of $n$ none of whose parts lies in
 $\{2, \dots, \ell\}$ and none of whose parts is an even number greater than $2\ell$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionNoSmallNoEvenCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-no-small-no-even-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionNoSmallNoEvenCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-no-small-no-even-count).
 
 ## Compositions with exactly $s$ parts, each at least $v$
 
@@ -400,7 +400,7 @@ For natural numbers $u$, $v$
 and $s$, $c(u, v, s)$ is the number of compositions of $u$ (ordered sequences of positive
 integers summing to $u$) into exactly $s$ parts, each at least $v$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#composition-min-part-exact-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartExactCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#composition-min-part-exact-count).
 
 ## Compositions with parts at least $v$
 
@@ -408,7 +408,7 @@ For natural numbers $u$ and $v$, $c(u, v)$ is the
 number of compositions of $u$ (ordered sequences of positive integers summing to $u$) all of
 whose parts are at least $v$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#composition-min-part-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#composition-min-part-count).
 
 ## The refined Schreier family $F_{n,\ell}$
 
@@ -417,7 +417,7 @@ set $A$ of natural numbers belongs to $F_{n,\ell}$ if $n + 1$ is the largest ele
 $A$ has at least three elements, $A$ is sparse and $\ell$-strong Schreier, and the two largest
 elements $a < b$ of $A$ below $n + 1$ satisfy $n + 1 + a = 2b$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsRefinedSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-refined-schreier).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsRefinedSchreier`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#is-refined-schreier).
 
 ## Refined Schreier count
 
@@ -427,7 +427,7 @@ $n + 1$, $A$ has at least three elements, $A$ is sparse and $\ell$-strong Schrei
 largest elements $a < b$ of $A$ below $n + 1$ satisfy $n + 1 + a = 2b$. Every such set is
 contained in $\{0, \dots, n + 1\}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-count).
 
 ## Refined Schreier sets with a given number of elements
 
@@ -439,7 +439,7 @@ consecutive elements, in increasing order, are non-decreasing) and $\ell$-strong
 $b > a$ of $A$ satisfy $n + 1 + a = 2b$. For a natural number $k$, $|F_{n,\ell,k}|$ is the
 number of sets in $F_{n,\ell}$ with exactly $k$ elements.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-count).
 
 ## Refined Schreier sets with a given size and minimum
 
@@ -452,7 +452,7 @@ $b > a$ of $A$ satisfy $n + 1 + a = 2b$. For natural numbers $k$ and $q$, $|F_{n
 is the number of sets in $F_{n,\ell}$ with exactly $k$ elements whose smallest element is
 $q$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardMinCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-min-count).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardMinCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-min-count).
 
 ## Schreier sparse sets with given minimum and maximum
 
@@ -465,7 +465,7 @@ exactly $m$ parts.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Proposition 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-min-count-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-min-count-eq).
 
 ## Counting Schreier sparse sets by partition numbers
 
@@ -477,7 +477,7 @@ the number of partitions of $n - 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Corollary 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-count-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-sparse-count-eq).
 
 ## Sparse strong Schreier sets as a sum of partition counts
 
@@ -490,7 +490,7 @@ $|E_{i,\ell+1}|$ is the number of partitions of $i$ into parts that are all at l
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 6.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count-eq-sum).
 
 ## Strongly sparse strong Schreier sets and partitions into distinct parts
 
@@ -507,7 +507,7 @@ $\ell|A| - \ell + 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 6.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count-eq-sum).
 
 ## Sparse strong Schreier sets and partitions avoiding small parts
 
@@ -522,7 +522,7 @@ The identity fails at $\ell = 0$; the paper's $\mathbb{N}$ is the positive integ
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 7.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_noSmall` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count-eq-no-small).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_noSmall` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#sparse-strong-count-eq-no-small).
 
 ## Strongly sparse strong Schreier sets and partitions with restricted parts
 
@@ -538,7 +538,7 @@ at least $\ell|A| - \ell + 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 7.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount_eq_noSmallNoEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count-eq-no-small).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.stronglySparseStrongCount_eq_noSmallNoEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strongly-sparse-strong-count-eq-no-small).
 
 ## Strong Schreier sets of given size and compositions
 
@@ -551,7 +551,7 @@ compositions of $n + \ell$ into exactly $m$ parts, each at least $\ell + 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCardCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-card-count-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCardCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-card-count-eq).
 
 ## Strong Schreier sets with a given maximum are counted by compositions
 
@@ -565,7 +565,7 @@ $\ell$-strong Schreier when every element of $B$ is at least $\ell|B| - \ell + 1
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Theorem 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-count-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#strong-schreier-count-eq).
 
 ## Refined Schreier sets with a given minimum and partitions with a given top gap
 
@@ -585,7 +585,7 @@ exactly $q - 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Lemma 11.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardMinCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-min-count-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardMinCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#refined-schreier-card-min-count-eq).
 
 ## Partitions with a fixed number of large parts and refined Schreier sets
 
@@ -603,7 +603,7 @@ with exactly $k + 1$ elements.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Corollary 12.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartExactCount_eq_refined` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-exact-count-eq-refine).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartExactCount_eq_refined` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-exact-count-eq-refine).
 
 ## Partitions into large parts and the refined Schreier family
 
@@ -620,7 +620,7 @@ $|F_{n,\ell}| + 1$.
 
 - Kevin Beanland and Hùng Việt Chu, "On Schreier-Type Sets, Partitions, and Compositions", Corollary 13.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartCount_eq_refined_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-count-eq-refined-add).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartCount_eq_refined_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeSetsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#partition-min-part-count-eq-refined-add).
 
 ## Ground multiset for Schreier-type multisets
 
@@ -632,7 +632,7 @@ and $n$ appears once.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1 (definition of `A^{(s)}_{p,n}`).
 
-Formalized by `MetaMathlibExt.schreierMultisetPool`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-pool).
+Formalized by `MetaMathlibExt.schreierMultisetPool`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-pool).
 
 ## Number of Schreier-type multisets
 
@@ -645,7 +645,7 @@ is at least $p|F|$, where $|F|$ counts multiplicity.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1 (definition of `A^{(s)}_{p,n}`).
 
-Formalized by `MetaMathlibExt.schreierMultisetCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count).
+Formalized by `MetaMathlibExt.schreierMultisetCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count).
 
 ## Small values of the Schreier multiset count
 
@@ -658,7 +658,7 @@ $|A^{(2)}_{2,5}| = 2$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Table 1.
 
-Formalized by `MetaMathlibExt.schreierMultisetCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count-small).
+Formalized by `MetaMathlibExt.schreierMultisetCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count-small).
 
 ## Counting colored Schreier-type multisets
 
@@ -673,7 +673,7 @@ integers.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1 (definition of `B^{(s)}_{p,n}`).
 
-Formalized by `MetaMathlibExt.coloredSchreierMultisetCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count).
+Formalized by `MetaMathlibExt.coloredSchreierMultisetCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count).
 
 ## Small values of the colored Schreier multiset count
 
@@ -684,7 +684,7 @@ multisets satisfy $|B^{(2)}_{1,4}| = 6$ and $|B^{(2)}_{2,5}| = 3$ (Table 2 of th
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Table 2.
 
-Formalized by `MetaMathlibExt.coloredSchreierMultisetCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-small).
+Formalized by `MetaMathlibExt.coloredSchreierMultisetCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-small).
 
 ## First non-multiples of an integer
 
@@ -697,7 +697,7 @@ set of the first $n$ positive integers not divisible by $u$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1 (definition of `G_{u,n}`).
 
-Formalized by `MetaMathlibExt.firstNonMultiples`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#first-non-multiples).
+Formalized by `MetaMathlibExt.firstNonMultiples`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#first-non-multiples).
 
 ## The first four positive integers not divisible by 3
 
@@ -708,7 +708,7 @@ positive integers not divisible by $3$ is $\{1, 2, 4, 5\}$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1.
 
-Formalized by `MetaMathlibExt.firstNonMultiples_three_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#first-non-multiples-three-four).
+Formalized by `MetaMathlibExt.firstNonMultiples_three_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#first-non-multiples-three-four).
 
 ## Schreier sets avoiding multiples
 
@@ -726,7 +726,7 @@ expression.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 1 (definition of `D_{u,n}`).
 
-Formalized by `MetaMathlibExt.schreierAvoidingMultiplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count).
+Formalized by `MetaMathlibExt.schreierAvoidingMultiplesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count).
 
 ## Small values of the count of Schreier sets avoiding multiples
 
@@ -737,7 +737,7 @@ sets avoiding multiples satisfy $|D_{2,6}| = 12$ and $|D_{3,6}| = 9$ (Table 3 of
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Table 3.
 
-Formalized by `MetaMathlibExt.schreierAvoidingMultiplesCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-small).
+Formalized by `MetaMathlibExt.schreierAvoidingMultiplesCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-small).
 
 ## Parent sequence b for Schreier-type multisets
 
@@ -753,7 +753,7 @@ The paper indexes from $n = 1$; here $b^{(s)}_{p,0} = 0$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 3 (definition of `b^{(s)}_{p,n}`).
 
-Formalized by `MetaMathlibExt.schreierParentB`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b).
+Formalized by `MetaMathlibExt.schreierParentB`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b).
 
 ## The parent sequence b vanishes for small indices
 
@@ -767,7 +767,7 @@ for every natural number $n$ with $n \le (p - 1)s$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.schreierParentB_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-of-le).
+Formalized by `MetaMathlibExt.schreierParentB_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-of-le).
 
 ## The parent sequence b equals one on its initial window
 
@@ -781,7 +781,7 @@ natural number $n$ with $(p - 1)s < n \le ps + 1$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.schreierParentB_of_mem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-of-mem).
+Formalized by `MetaMathlibExt.schreierParentB_of_mem`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-of-mem).
 
 ## Recurrence for the parent sequence b
 
@@ -795,7 +795,7 @@ $b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for every natural number 
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 3.
 
-Formalized by `MetaMathlibExt.schreierParentB_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-rec).
+Formalized by `MetaMathlibExt.schreierParentB_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-rec).
 
 ## The parent sequence $d_{u,n}$
 
@@ -810,7 +810,7 @@ here $d_{u,0} = 1$ as well, and the degenerate case $u = 0$ is set to $1$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 4 (definition of `d_{u,n}`).
 
-Formalized by `MetaMathlibExt.schreierParentD`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d).
+Formalized by `MetaMathlibExt.schreierParentD`, a definition declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d).
 
 ## Initial values of the parent sequence
 
@@ -821,7 +821,7 @@ the parent sequence $d_{u,n}$ satisfies $d_{u,n} = 1$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 4.
 
-Formalized by `MetaMathlibExt.schreierParentD_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-of-lt).
+Formalized by `MetaMathlibExt.schreierParentD_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-of-lt).
 
 ## Recurrence for the parent sequence
 
@@ -832,7 +832,7 @@ parent sequence $d_{u,n}$ satisfies $d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 4.
 
-Formalized by `MetaMathlibExt.schreierParentD_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-rec).
+Formalized by `MetaMathlibExt.schreierParentD_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-rec).
 
 ## Formula and recurrence for Schreier-type multisets
 
@@ -855,7 +855,7 @@ $\binom{0}{0} = 1$ there as well.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.schreierMultisetCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count-formula-and-recu).
+Stated but not proved: `MetaMathlibExt.schreierMultisetCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-multiset-count-formula-and-recu).
 
 ## Closed form and recurrence for colored Schreier multiset counts
 
@@ -873,7 +873,7 @@ $$|B^{(s)}_{p,n}| = \sum_{i=0}^{s} \binom{s}{i} \, |B^{(s)}_{p,n-1-ip}|.$$
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.coloredSchreierMultisetCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-formula).
+Stated but not proved: `MetaMathlibExt.coloredSchreierMultisetCount_formula_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-formula).
 
 ## Binomial-sum formula for the parent sequence b
 
@@ -891,7 +891,7 @@ where the sum is empty when $n \le s(p - 1)$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.schreierParentB_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.schreierParentB_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-b-eq-sum-choose).
 
 ## Colored Schreier multiset counts are a subsequence of the parent sequence
 
@@ -903,7 +903,7 @@ multisets equals the term $b^{(s)}_{p,ns-s+1}$ of the parent sequence $b^{(s)}_{
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.coloredSchreierMultisetCount_eq_schreierParentB` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-eq-schre).
+Stated but not proved: `MetaMathlibExt.coloredSchreierMultisetCount_eq_schreierParentB` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#colored-schreier-multiset-count-eq-schre).
 
 ## The non-multiples of an integer as values of a floor function
 
@@ -915,7 +915,7 @@ integers, is the set of positive integers not divisible by $u$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.image_floor_eq_nonMultiples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#image-floor-eq-non-multiples).
+Stated but not proved: `MetaMathlibExt.image_floor_eq_nonMultiples` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#image-floor-eq-non-multiples).
 
 ## Binomial sum formula for the parent sequence
 
@@ -934,7 +934,7 @@ $\binom{-1}{0} = 1$.
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.schreierParentD_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.schreierParentD_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-parent-d-eq-sum-choose).
 
 ## Schreier sets avoiding multiples are counted by a subsequence of the parent sequence
 
@@ -945,7 +945,7 @@ sets avoiding multiples of $u$ equals the term $d_{u,un-(u-1)}$ of the parent se
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.schreierAvoidingMultiplesCount_eq_schreierParentD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-eq-sch).
+Stated but not proved: `MetaMathlibExt.schreierAvoidingMultiplesCount_eq_schreierParentD` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-eq-sch).
 
 ## Fibonacci values and a recurrence for Schreier sets avoiding multiples
 
@@ -960,7 +960,7 @@ $$|D_{u,n}| = \sum_{i=1}^{u} (-1)^{i-1} \binom{u}{i} |D_{u,n-i}| + |D_{u,n-2u+1}
 
 - Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.schreierAvoidingMultiplesCount_fib_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-fib-an).
+Stated but not proved: `MetaMathlibExt.schreierAvoidingMultiplesCount_fib_and_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SchreierTypeMultisetsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#schreier-avoiding-multiples-count-fib-an).
 
 ## Weighted Schreier-type sets
 
@@ -973,7 +973,7 @@ $\omega_k(E) < \min E$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 1 (definition of `A_{k,n}` and `a_{k,n}`).
 
-Formalized by `MetaMathlibExt.weightedSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count).
+Formalized by `MetaMathlibExt.weightedSchreierCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count).
 
 ## Weighted Schreier count $a_{1,1}$
 
@@ -983,7 +983,7 @@ The weighted Schreier count $a_{1,1}$ equals $2$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 1, Table 1.
 
-Formalized by `MetaMathlibExt.weightedSchreierCount_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one-one).
+Formalized by `MetaMathlibExt.weightedSchreierCount_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one-one).
 
 ## Weighted Schreier count $a_{2,1}$
 
@@ -993,7 +993,7 @@ The weighted Schreier count $a_{2,1}$ equals $1$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 1, Table 1.
 
-Formalized by `MetaMathlibExt.weightedSchreierCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-two-one).
+Formalized by `MetaMathlibExt.weightedSchreierCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-two-one).
 
 ## Weighted Schreier count $a_{3,3}$
 
@@ -1003,7 +1003,7 @@ The weighted Schreier count $a_{3,3}$ equals $4$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 1, Table 1.
 
-Formalized by `MetaMathlibExt.weightedSchreierCount_three_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-three-three).
+Formalized by `MetaMathlibExt.weightedSchreierCount_three_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-three-three).
 
 ## Weighted Schreier count $a_{1,4}$
 
@@ -1013,7 +1013,7 @@ The weighted Schreier count $a_{1,4}$ equals $6$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 1, Table 1.
 
-Formalized by `MetaMathlibExt.weightedSchreierCount_one_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one-four).
+Formalized by `MetaMathlibExt.weightedSchreierCount_one_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one-four).
 
 ## Seeded partial sums
 
@@ -1026,7 +1026,7 @@ $t^s_{0,n} = a_n$ and $t^s_{k+1,n} = s_k + \sum_{i\lt n} t^s_{k,i}$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 3 (partial sum operator `P_b` and the sequences `t^s_{k,n}`).
 
-Formalized by `MetaMathlibExt.seededPartialSums`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums).
+Formalized by `MetaMathlibExt.seededPartialSums`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums).
 
 ## Iterated partial sums
 
@@ -1039,7 +1039,7 @@ Thus $P^{(0)}(a)(m) = a_m$ and $P^{(k+1)}(a)(m) = \sum_{i\lt m} P^{(k)}(a)(i)$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 3 (definition of `P^{(k)}`).
 
-Formalized by `MetaMathlibExt.iteratedPartialSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum).
+Formalized by `MetaMathlibExt.iteratedPartialSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum).
 
 ## Seeded partial sums start at the seed
 
@@ -1052,7 +1052,7 @@ $k \ge 0$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 3 (partial sum operator `P_b`).
 
-Formalized by `MetaMathlibExt.seededPartialSums_succ_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums-succ-zero).
+Formalized by `MetaMathlibExt.seededPartialSums_succ_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums-succ-zero).
 
 ## The first iterated partial sum
 
@@ -1064,7 +1064,7 @@ of $(a_n)$ at $m$ is the ordinary partial sum: $P^{(1)}((a_n)_{n \ge 0})(m) = \s
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 3 (definition of `P^{(k)}`).
 
-Formalized by `MetaMathlibExt.iteratedPartialSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-one).
+Formalized by `MetaMathlibExt.iteratedPartialSum_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-one).
 
 ## Recurrence for iterated partial sums
 
@@ -1077,7 +1077,7 @@ $P^{(k+1)}(a)(m+1) = P^{(k+1)}(a)(m) + P^{(k)}(a)(m)$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Section 3 (definition of `P^{(k)}`; recurrence used in the proofs of Lemmas 3.3 and 3.4).
 
-Formalized by `MetaMathlibExt.iteratedPartialSum_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-succ-succ).
+Formalized by `MetaMathlibExt.iteratedPartialSum_succ_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-succ-succ).
 
 ## Diagonal weighted Schreier counts
 
@@ -1089,7 +1089,7 @@ Schreier count satisfies $a_{n,n} = 2F_n$, where $F_n$ is the $n$-th Fibonacci n
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-diag).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-diag).
 
 ## Weighted Schreier counts for $k = 1$
 
@@ -1101,7 +1101,7 @@ number ($F_0 = 0$, $F_1 = 1$).
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.2, case `k = 1`.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-one).
 
 ## Weighted Schreier counts on and above the diagonal
 
@@ -1115,7 +1115,7 @@ $a_{k,k+\ell} = 2\sum_{i=0}^{k-2} \binom{\ell}{i} F_{k-i} + 2\binom{\ell}{k-1} +
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.2, case `k ≥ 2`, `ℓ ≥ 0`.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-add).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-add).
 
 ## Weighted Schreier counts for $0 < m < k$
 
@@ -1127,7 +1127,7 @@ $j$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.2, case `k ≥ 2`, `-k < ℓ < 0`.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_of_pos_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-of-pos-of-lt).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_of_pos_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-of-pos-of-lt).
 
 ## Weighted Schreier counts equal twice a Fibonacci number for small offsets
 
@@ -1140,7 +1140,7 @@ $a_{k,k+\ell} = 2F_{k+\ell}$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_add_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-add-of-le).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_add_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-add-of-le).
 
 ## Recurrence for weighted Schreier counts
 
@@ -1154,7 +1154,7 @@ set $E \subseteq \{1, \dots, n-2\}$ equals $0$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-recurrence).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-recurrence).
 
 ## Effect of the seed on seeded partial sums
 
@@ -1169,7 +1169,7 @@ are read as elements of $R$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.seededPartialSums_sub_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums-sub-zero).
+Stated but not proved: `MetaMathlibExt.seededPartialSums_sub_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#seeded-partial-sums-sub-zero).
 
 ## Adding one to a sequence shifts its iterated partial sums by a binomial coefficient
 
@@ -1182,7 +1182,7 @@ $\binom{m}{k}$ is read as an element of $R$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.3.
 
-Stated but not proved: `MetaMathlibExt.iteratedPartialSum_add_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-add-one-sub).
+Stated but not proved: `MetaMathlibExt.iteratedPartialSum_add_one_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-add-one-sub).
 
 ## Iterated partial sums of shifted Fibonacci numbers
 
@@ -1196,7 +1196,7 @@ P^{(k)}((F_n)_{n \ge 0})(\ell + 1)$.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.4.
 
-Stated but not proved: `MetaMathlibExt.iteratedPartialSum_fib_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-fib-add-two).
+Stated but not proved: `MetaMathlibExt.iteratedPartialSum_fib_add_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#iterated-partial-sum-fib-add-two).
 
 ## Weighted Schreier counts for $n < k$
 
@@ -1210,7 +1210,7 @@ This includes $n = 0$, where $a_{k,0} = 1 = F_1$; the source takes $n$ positive.
 
 - Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.5.
 
-Stated but not proved: `MetaMathlibExt.weightedSchreierCount_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-of-lt).
+Stated but not proved: `MetaMathlibExt.weightedSchreierCount_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/WeightedSchreierWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html#weighted-schreier-count-of-lt).
 
 ## Depends on
 
@@ -1219,4 +1219,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Schreier sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/schreier-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/elementary-enumeration/schreier-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/elementary-enumeration/schreier-sets)

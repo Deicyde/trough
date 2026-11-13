@@ -7,7 +7,7 @@ statement: formalized
 
 # Smooth gaps between primes
 
-8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html).
+8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html).
 
 ## Difference-smooth sets of integers
 
@@ -19,7 +19,7 @@ $h - h'$ is at most $y$.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Definition 3.
 
-Formalized by `MetaMathlibExt.IsDifferenceSmooth`, a definition declared in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#is-difference-smooth).
+Formalized by `MetaMathlibExt.IsDifferenceSmooth`, a definition declared in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#is-difference-smooth).
 
 ## One-element sets are difference smooth
 
@@ -30,7 +30,7 @@ $a$, the set $\{a\}$ is difference $y$-smooth.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Definition 3.
 
-Formalized by `MetaMathlibExt.isDifferenceSmooth_singleton`, a theorem declared in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#is-difference-smooth-singleton).
+Formalized by `MetaMathlibExt.isDifferenceSmooth_singleton`, a theorem declared in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#is-difference-smooth-singleton).
 
 ## Infinitely many prime pairs with $47$-smooth difference
 
@@ -41,7 +41,7 @@ of primes $p > q$ such that every prime factor of $p - q$ is at most $47$.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.infinite_prime_pairs_smooth_47_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-pairs-smooth-47-gap).
+Stated but not proved: `MetaMathlibExt.infinite_prime_pairs_smooth_47_gap` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-pairs-smooth-47-gap).
 
 ## Maynard–Tao theorem
 
@@ -53,7 +53,7 @@ integers $n$ for which $n + h$ is a (positive) prime for at least $m$ elements $
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 2, citing J. Maynard, *Small gaps between primes*, Ann. of Math. 181 (2015).
 
-Stated but not proved: `MetaMathlibExt.maynard_tao_admissible_tuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#maynard-tao-admissible-tuples).
+Stated but not proved: `MetaMathlibExt.maynard_tao_admissible_tuples` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#maynard-tao-admissible-tuples).
 
 ## Prime $m$-tuples with smooth gaps
 
@@ -70,7 +70,7 @@ this with the admissible values $k_m$ of the Maynard–Tao theorem listed in its
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.infinite_prime_tuples_smooth_gaps` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-tuples-smooth-gaps).
+Stated but not proved: `MetaMathlibExt.infinite_prime_tuples_smooth_gaps` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-tuples-smooth-gaps).
 
 ## Prime pairs with $5$-smooth difference under Elliott–Halberstam
 
@@ -82,7 +82,7 @@ that every prime factor of $p - q$ is at most $5$.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.infinite_prime_pairs_smooth_5_gap_of_elliottHalberstam` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-pairs-smooth-5-gap-of-ell).
+Stated but not proved: `MetaMathlibExt.infinite_prime_pairs_smooth_5_gap_of_elliottHalberstam` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#infinite-prime-pairs-smooth-5-gap-of-ell).
 
 ## Admissible difference-smooth sets of every size
 
@@ -94,7 +94,7 @@ $h, h' \in H$, every prime factor of $h - h'$ is at most $k$.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.exists_admissible_differenceSmooth` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#exists-admissible-difference-smooth).
+Stated but not proved: `MetaMathlibExt.exists_admissible_differenceSmooth` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#exists-admissible-difference-smooth).
 
 ## Admissible sets are not difference smooth at small bounds
 
@@ -107,7 +107,7 @@ $\ell$-smooth for any $\ell$ less than the largest prime at most $k$.
 
 - Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.not_isDifferenceSmooth_of_isAdmissibleFinset` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#not-is-difference-smooth-of-is-admissibl).
+Stated but not proved: `MetaMathlibExt.not_isDifferenceSmooth_of_isAdmissibleFinset` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmoothPrimeGapsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html#not-is-difference-smooth-of-is-admissibl).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Smooth gaps between primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/prime-gaps-short-intervals/smooth-gaps-between-primes)

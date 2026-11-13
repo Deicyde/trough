@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.130 Big projective modules are free
 
-Section 15.130 of the Stacks Project, [Tag 0GVE](https://stacks.math.columbia.edu/tag/0GVE). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.130 of the Stacks Project, [Tag 0GVE](https://stacks.math.columbia.edu/tag/0GVE). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GVF, a lemma
 
 [Tag 0GVF](https://stacks.math.columbia.edu/tag/0GVF) in the Stacks Project.
 
-**`eilenberg_swindle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle.lean#L81).
+**`eilenberg_swindle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle.lean#L81).
 
 > **Eilenberg's lemma / Eilenberg swindle (Stacks Tag 0GVF).**
 > Let `R` be a ring and `P`, `Q`, `F` left `R`-modules with `P ⊕ Q ≅ F`, where `F` is a
@@ -31,7 +31,7 @@ theorem eilenberg_swindle {R : Type*} [Ring R] (P Q F : Type*) [AddCommGroup P] 
 
 [Tag 0GVG](https://stacks.math.columbia.edu/tag/0GVG) in the Stacks Project.
 
-**`exists_free_prod_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L107).
+**`exists_free_prod_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L107).
 
 > A projective module is a direct summand of a free module with a free complementary
 > summand.
@@ -48,7 +48,7 @@ theorem exists_free_prod_of_projective
 
 [Tag 0GVH](https://stacks.math.columbia.edu/tag/0GVH) in the Stacks Project.
 
-**`exists_finite_free_summand_containing_zero_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L258).
+**`exists_finite_free_summand_containing_zero_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L258).
 
 > For an element `s` of a projective module `P`, there is a finite free module `F` and a
 > finite free direct summand of `F × P` containing `(0, s)`.
@@ -67,7 +67,7 @@ theorem exists_finite_free_summand_containing_zero_prod
 
 [Tag 0GVI](https://stacks.math.columbia.edu/tag/0GVI) in the Stacks Project.
 
-**`exists_mem_add_unimodular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L637).
+**`exists_mem_add_unimodular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L637).
 
 > If `P` is projective and has infinite rank after localization at every maximal ideal, then
 > an element which generates `P` together with `M` can be modified by an element of `M` to become
@@ -89,7 +89,7 @@ theorem exists_mem_add_unimodular
 
 [Tag 0GVJ](https://stacks.math.columbia.edu/tag/0GVJ) in the Stacks Project.
 
-**`exists_finite_isStablyFree_summand_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L1142).
+**`exists_finite_isStablyFree_summand_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L1142).
 
 > Every element of a projective module of infinite rank at all maximal ideals lies in a finite
 > stably free direct summand, provided the quotient by the Jacobson radical is Noetherian.
@@ -111,7 +111,7 @@ theorem exists_finite_isStablyFree_summand_containing
 
 [Tag 0GVK](https://stacks.math.columbia.edu/tag/0GVK) in the Stacks Project.
 
-**`free_of_countablyGenerated_projective_of_localization_not_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 1341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L1341).
+**`free_of_countablyGenerated_projective_of_localization_not_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean, line 1341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/EilenbergSwindle/BigProjective.lean#L1341).
 
 > A countably generated projective module over a commutative ring is free if the quotient by
 > the Jacobson radical is Noetherian and every localization at a maximal ideal has infinite
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.130, Tag 0GVE](https://stacks.math.columbia.edu/tag/0GVE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

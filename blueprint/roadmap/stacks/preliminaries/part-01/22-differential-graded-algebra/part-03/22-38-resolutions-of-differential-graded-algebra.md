@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.38 Resolutions of differential graded algebras
 
-Section 22.38 of the Stacks Project, [Tag 0BZ6](https://stacks.math.columbia.edu/tag/0BZ6). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.38 of the Stacks Project, [Tag 0BZ6](https://stacks.math.columbia.edu/tag/0BZ6). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BZ7, a lemma
 
 [Tag 0BZ7](https://stacks.math.columbia.edu/tag/0BZ7) in the Stacks Project.
 
-**`Stacks.DGA.exists_kFlat_freeGraded_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/FreeResolution/KFlatResolution.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/FreeResolution/KFlatResolution.lean#L749).
+**`Stacks.DGA.exists_kFlat_freeGraded_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/FreeResolution/KFlatResolution.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/FreeResolution/KFlatResolution.lean#L749).
 
 > Every differential graded algebra has a quasi-isomorphic K-flat resolution
 > which is free as a graded algebra.
@@ -35,7 +35,7 @@ public theorem exists_kFlat_freeGraded_resolution
         QuasiIso g
 ```
 
-**`DifferentialGradedAlgebra.exists_kFlat_resolution_bijective_cohomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean#L297). The attribute's comment: “the resolution read as a homomorphism of differential graded algebras which is K-flat over the base and bijective on cohomology in every degree, which is the hypothesis of Tag 09S6”.
+**`DifferentialGradedAlgebra.exists_kFlat_resolution_bijective_cohomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean#L297). The attribute's comment: “the resolution read as a homomorphism of differential graded algebras which is K-flat over the base and bijective on cohomology in every degree, which is the hypothesis of Tag 09S6”.
 
 > **Stacks Tag 0BZ7, in the encoding Tag 09S6 consumes.** Every differential graded
 > `R`-algebra `(B, d)` admits a homomorphism `φ : (B', d) → (B, d)` of differential graded algebras
@@ -58,7 +58,7 @@ theorem exists_kFlat_resolution_bijective_cohomologyMap (B : DifferentialGradedA
         ∀ k : ℤ, Function.Bijective (φ.cohomologyMap k)
 ```
 
-**`DifferentialGradedAlgebra.exists_kFlat_resolution_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean#L319). The attribute's comment: “the resolution together with the derived equivalence of Tag 09S6 it gives”.
+**`DifferentialGradedAlgebra.exists_kFlat_resolution_derivedEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionDerivedEquivalence.lean#L319). The attribute's comment: “the resolution together with the derived equivalence of Tag 09S6 it gives”.
 
 > **The derived equivalence attached to the K-flat resolution of a differential graded
 > algebra.** Every differential graded `R`-algebra `(B, d)` is the target of a homomorphism
@@ -84,7 +84,7 @@ theorem exists_kFlat_resolution_derivedEquivalence (B : DifferentialGradedAlgebr
 
 [Tag 0BZ8](https://stacks.math.columbia.edu/tag/0BZ8) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.exists_derivedTensorFunctorCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionGeneralBase.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionGeneralBase.lean#L190). The attribute's comment: “the composition of the two derived tensor functors is a derived tensor functor, with no hypothesis on the middle algebra”.
+**`DifferentialGraded.Bimodule.exists_derivedTensorFunctorCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionGeneralBase.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionGeneralBase.lean#L190). The attribute's comment: “the composition of the two derived tensor functors is a derived tensor functor, with no hypothesis on the middle algebra”.
 
 > **Stacks Tag 0BZ8.** *"Let `R` be a ring. Let `(A, d)`, `(B, d)`, and `(C, d)` be differential
 > graded `R`-algebras. Assume that `A ⊗_R C` represents `A ⊗^𝐋_R C` in `D(R)`. Let `N` be a
@@ -111,7 +111,7 @@ theorem exists_derivedTensorFunctorCompIso {A B C : DifferentialGradedAlgebra.{u
         derivedTensorFunctor N'')
 ```
 
-**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L135). The attribute's comment: “the second half of the proof: for B K-flat as a complex of R-modules, representability of A ⊗^L\_R C by A ⊗\_R C makes the map (0BZ4) an isomorphism”.
+**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L135). The attribute's comment: “the second half of the proof: for B K-flat as a complex of R-modules, representability of A ⊗^L\_R C by A ⊗\_R C makes the map (0BZ4) an isomorphism”.
 
 > **The second half of the proof of Stacks Tag 0BZ8.** If the differential graded algebra
 > `(B, d)` is K-flat as a complex of `R`-modules and `A ⊗_R C` represents `A ⊗^𝐋_R C` in `D(R)`,
@@ -135,7 +135,7 @@ theorem isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents
     IsIso (derivedTensorBaseChangeComparison A B C)
 ```
 
-**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L215). The attribute's comment: “for B K-flat as a complex of R-modules, with representability of A ⊗^L\_R C by A ⊗\_R C as its only other hypothesis”.
+**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L215). The attribute's comment: “for B K-flat as a complex of R-modules, with representability of A ⊗^L\_R C by A ⊗\_R C as its only other hypothesis”.
 
 > **Stacks Tag 0BZ8 for a K-flat middle algebra.** Let `R` be a ring, let `(A, d)`, `(B, d)`
 > and `(C, d)` be differential graded `R`-algebras with `A ⊗_R C` representing `A ⊗^𝐋_R C` in
@@ -163,7 +163,7 @@ def dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase
       derivedTensorFunctor (compTensorResolution N N')
 ```
 
-**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean#L113). The attribute's comment: “with the passage from the representability hypothesis to the Stacks 0BZ4 hypothesis of Stacks 0BZ5 as hbridge, which is proved for B K-flat as a complex of R-modules by dgaResolutionRepresentsInvertsBaseChange\_of\_kFlat and for a general B needs the transport along the Stacks 09S6 equivalence that the source's K-flat replacement of B by Stacks 0BZ7 sets up”.
+**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean#L113). The attribute's comment: “with the passage from the representability hypothesis to the Stacks 0BZ4 hypothesis of Stacks 0BZ5 as hbridge, which is proved for B K-flat as a complex of R-modules by dgaResolutionRepresentsInvertsBaseChange\_of\_kFlat and for a general B needs the transport along the Stacks 09S6 equivalence that the source's K-flat replacement of B by Stacks 0BZ7 sets up”.
 
 > Let `(A, d)`, `(B, d)` and `(C, d)` be differential graded `R`-algebras with `A ⊗_R C`
 > representing `A ⊗^𝐋_R C` in `D(R)` (`hrep`), and assume that representability makes
@@ -186,7 +186,7 @@ def dgaResolutionDerivedTensorFunctorCompIso
 
 [Tag 0CRM](https://stacks.math.columbia.edu/tag/0CRM) in the Stacks Project.
 
-**`DifferentialGradedModule.countable_cohomology_of_isHomotopyColimit_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableCohomology.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableCohomology.lean#L189). The attribute's comment: “(1) implies (2)”.
+**`DifferentialGradedModule.countable_cohomology_of_isHomotopyColimit_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableCohomology.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableCohomology.lean#L189). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0CRM, the implication (1) ⇒ (2).** *"Let `(A, d)` be a differential graded algebra
 > such that `H^i(A)` is countable for every `i`. Let `M` be an object of `D(A, d)`. If
@@ -204,7 +204,7 @@ theorem countable_cohomology_of_isHomotopyColimit_of_isCompactObject
     Countable ((cohomologyFunctor A i).obj M)
 ```
 
-**`DifferentialGradedModule.exists_isHomotopyColimit_isCompactObject_of_countable_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean#L499). The attribute's comment: “(2) implies (1)”.
+**`DifferentialGradedModule.exists_isHomotopyColimit_isCompactObject_of_countable_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean#L499). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0CRM, the implication (2) ⇒ (1).** *"Let `(A, d)` be a differential graded algebra
 > such that `H^i(A)` is countable for every `i`. Let `M` be an object of `D(A, d)`. If `H^i(M)` is
@@ -229,7 +229,7 @@ theorem exists_isHomotopyColimit_isCompactObject_of_countable_cohomology
       (∀ n : ℕ, IsCompactObject.{u} (F.obj n)) ∧ IsHomotopyColimit F M
 ```
 
-**`DifferentialGradedModule.exists_isHomotopyColimit_isCompactObject_iff_countable_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean#L527).
+**`DifferentialGradedModule.exists_isHomotopyColimit_isCompactObject_iff_countable_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/CompactCountableConverse.lean#L527).
 
 > **Stacks 0CRM.** *"Let `(A, d)` be a differential graded algebra with `H^i(A)` countable for
 > each `i`. Let `M` be an object of `D(A, d)`. Then the following are equivalent: (1)
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.38, Tag 0BZ6](https://stacks.math.columbia.edu/tag/0BZ6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

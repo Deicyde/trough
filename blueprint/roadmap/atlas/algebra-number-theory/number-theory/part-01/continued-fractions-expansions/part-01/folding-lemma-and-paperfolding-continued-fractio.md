@@ -7,7 +7,7 @@ statement: formalized
 
 # Folding lemma and paperfolding continued fractions
 
-19 results, 13 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html).
+19 results, 13 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html).
 
 ## Value of a finite continued fraction
 
@@ -22,7 +22,7 @@ denominator, $0^{-1}$ is taken to be $0$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13 (bracket notation).
 
-Formalized by `MetaMathlibExt.finiteContFrac`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac).
+Formalized by `MetaMathlibExt.finiteContFrac`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac).
 
 ## Recursion for finite continued fractions
 
@@ -35,7 +35,7 @@ whenever $[l_1; l_2, \dots, l_n] = 0$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13 (bracket notation).
 
-Formalized by `MetaMathlibExt.finiteContFrac_cons`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-cons).
+Formalized by `MetaMathlibExt.finiteContFrac_cons`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-cons).
 
 ## Continued fraction of length one
 
@@ -46,7 +46,7 @@ $[a]$ has value $a$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13 (bracket notation).
 
-Formalized by `MetaMathlibExt.finiteContFrac_singleton`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-singleton).
+Formalized by `MetaMathlibExt.finiteContFrac_singleton`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-singleton).
 
 ## The continued fraction $(1; 2, 2)$
 
@@ -57,7 +57,7 @@ $7/5$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13 (bracket notation).
 
-Formalized by `MetaMathlibExt.finiteContFrac_one_two_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-one-two-two).
+Formalized by `MetaMathlibExt.finiteContFrac_one_two_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-one-two-two).
 
 ## Folding lemma for finite continued fractions
 
@@ -73,7 +73,7 @@ For positive partial quotients, $q$ is the continuant $q_t$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13, equation (`eq:fold`) (`jis-2026-26.3.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.finiteContFrac_add_inv_mul_den_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-add-inv-mul-den-sq).
+Stated but not proved: `MetaMathlibExt.finiteContFrac_add_inv_mul_den_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-add-inv-mul-den-sq).
 
 ## A zero partial quotient merges its neighbours
 
@@ -86,7 +86,7 @@ fractions satisfy $[u_1, \dots, u_m, a, 0, b, v_1, \dots, v_n] =
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13, equation (`eq:normzero`) (`jis-2026-26.3.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.finiteContFrac_zero_merge` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-zero-merge).
+Stated but not proved: `MetaMathlibExt.finiteContFrac_zero_merge` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-zero-merge).
 
 ## Normalizing a negated block
 
@@ -100,7 +100,7 @@ $[b_1, \dots, b_m, x, -a_t, -a_{t-1}, \dots, -a_1] =
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Lemma 13, equation (`eq:normnegblock`) (`jis-2026-26.3.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.finiteContFrac_neg_block` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-neg-block).
+Stated but not proved: `MetaMathlibExt.finiteContFrac_neg_block` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#finite-cont-frac-neg-block).
 
 ## Terms of the paperfolding sums
 
@@ -112,7 +112,7 @@ read as $0$ when $x_k = 0$. They are the terms of the sums $S = \sum_k s_k$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Section 5, equation (`eq:sumform`).
 
-Formalized by `MetaMathlibExt.paperfoldingSumTerm`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term).
+Formalized by `MetaMathlibExt.paperfoldingSumTerm`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term).
 
 ## First term of the paperfolding sums
 
@@ -123,7 +123,7 @@ $s_0$ of the paperfolding sum terms defined by $x$ equals $1$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Section 5, equation (`eq:sumform`).
 
-Formalized by `MetaMathlibExt.paperfoldingSumTerm_zero`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-zero).
+Formalized by `MetaMathlibExt.paperfoldingSumTerm_zero`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-zero).
 
 ## Recursion for the paperfolding sum terms
 
@@ -135,7 +135,7 @@ $s_{k+1} = s_k^2 / x_k$, where the quotient is read as $0$ when $x_k = 0$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Section 5, equation (`eq:sumform`).
 
-Formalized by `MetaMathlibExt.paperfoldingSumTerm_succ`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-succ).
+Formalized by `MetaMathlibExt.paperfoldingSumTerm_succ`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-succ).
 
 ## Second term of the paperfolding sums
 
@@ -146,7 +146,7 @@ $x_0 = 2$, the term $s_1$ of the paperfolding sum terms defined by $x$ equals $1
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Section 5, equation (`eq:sumform`).
 
-Formalized by `MetaMathlibExt.paperfoldingSumTerm_one`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-one).
+Formalized by `MetaMathlibExt.paperfoldingSumTerm_one`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-term-one).
 
 ## Interleaving creases into a Cloitre word
 
@@ -164,7 +164,7 @@ The last case is unreachable on the approximants $A_k$ of Cloitre's sequence.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Theorem 14 (Cloitre's sequence occurs one `[1, 1]` or `[2]` at a time, interleaved with crease terms).
 
-Formalized by `MetaMathlibExt.cloitreCreaseInterleave`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#cloitre-crease-interleave).
+Formalized by `MetaMathlibExt.cloitreCreaseInterleave`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#cloitre-crease-interleave).
 
 ## Crease interleaving of the Cloitre approximant $A_2$
 
@@ -178,7 +178,7 @@ $(1, 1)$ of $A_2$ is followed by its crease $c_1$, $c_2$, $c_3$, $c_4$ in turn.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Theorem 14.
 
-Formalized by `MetaMathlibExt.cloitreCreaseInterleave_cloitreApprox_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#cloitre-crease-interleave-cloitre-approx).
+Formalized by `MetaMathlibExt.cloitreCreaseInterleave_cloitreApprox_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#cloitre-crease-interleave-cloitre-approx).
 
 ## Continued-fraction words of the paperfolding sums
 
@@ -193,7 +193,7 @@ other word unchanged.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Corollary 15.
 
-Formalized by `MetaMathlibExt.paperfoldingContFracWord`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word).
+Formalized by `MetaMathlibExt.paperfoldingContFracWord`, a definition declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word).
 
 ## The second paperfolding continued-fraction word
 
@@ -204,7 +204,7 @@ the continued-fraction word $A_1$ defined by $x$ is $(1, 1, \max(x_1 - 1, 0), 2)
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Corollary 15.
 
-Formalized by `MetaMathlibExt.paperfoldingContFracWord_one`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word-one).
+Formalized by `MetaMathlibExt.paperfoldingContFracWord_one`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word-one).
 
 ## The paperfolding continued-fraction word $A_2$ for constant $x_k = 6$
 
@@ -220,7 +220,7 @@ This is the start of the paper's expansion of $6 \sum_{k \ge 0} 12^{-2^k}$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Corollary 15 and Section 6.
 
-Formalized by `MetaMathlibExt.paperfoldingContFracWord_const_six_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word-const-six-tw).
+Formalized by `MetaMathlibExt.paperfoldingContFracWord_const_six_two`, a theorem declared in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-cont-frac-word-const-six-tw).
 
 ## Continued fraction of a paperfolding sum in Cloitre and ruler order
 
@@ -237,7 +237,7 @@ its $j$-th letter, for every $j$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Theorem 14 (`jis-2026-26.3.6-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.paperfoldingSum_contFrac_cloitre_ruler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-cont-frac-cloitre-ruler).
+Stated but not proved: `MetaMathlibExt.paperfoldingSum_contFrac_cloitre_ruler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-cont-frac-cloitre-ruler).
 
 ## Continued fraction of a paperfolding sum via the words $A_k$
 
@@ -254,7 +254,7 @@ partial quotients $a_1, a_2, \ldots$ begin with the word $A_k$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Corollary 15 (`jis-2026-26.3.6-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.paperfoldingSum_contFrac_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-cont-frac-recursion).
+Stated but not proved: `MetaMathlibExt.paperfoldingSum_contFrac_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#paperfolding-sum-cont-frac-recursion).
 
 ## Digit frequencies in Cloitre's approximants
 
@@ -266,7 +266,7 @@ $2/3$, and the proportion of entries equal to $2$ tends to $1/3$.
 
 - Daniel J. Hoyt, *The Self-Describing Paperfolding Sequence in Continued Fractions*, Journal of Integer Sequences 29 (2026), Article 26.3.6, Theorem 17 (`jis-2026-26.3.6-thm-17`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_cloitreApprox_count_div_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#tendsto-cloitre-approx-count-div-length).
+Stated but not proved: `MetaMathlibExt.tendsto_cloitreApprox_count_div_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ContinuedFractionFoldingWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html#tendsto-cloitre-approx-count-div-length).
 
 ## Depends on
 
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Folding lemma and paperfolding continued fractions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/folding-lemma-and-paperfolding-continued-fractio)

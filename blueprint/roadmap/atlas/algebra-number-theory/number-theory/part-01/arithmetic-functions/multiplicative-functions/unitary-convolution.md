@@ -8,7 +8,7 @@ proof: formalized
 
 # Unitary convolution
 
-20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html).
+20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html).
 
 ## Unitary divisors of a prime power
 
@@ -20,7 +20,7 @@ exactly $1$ and $p^m$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `Nat.unitaryDivisors_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-divisors-prime-pow).
+Formalized by `Nat.unitaryDivisors_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-divisors-prime-pow).
 
 ## Products of unitary divisors of coprime numbers
 
@@ -32,7 +32,7 @@ unitary divisor of $mn$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `Nat.mul_mem_unitaryDivisors_mul`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#mul-mem-unitary-divisors-mul).
+Formalized by `Nat.mul_mem_unitaryDivisors_mul`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#mul-mem-unitary-divisors-mul).
 
 ## Gcd with a coprime factor preserves unitary divisors
 
@@ -43,7 +43,7 @@ numbers. If $d$ is a unitary divisor of $mn$, then $\gcd(d, m)$ is a unitary div
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `Nat.gcd_mem_unitaryDivisors_of_mem_mul`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#gcd-mem-unitary-divisors-of-mem-mul).
+Formalized by `Nat.gcd_mem_unitaryDivisors_of_mem_mul`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#gcd-mem-unitary-divisors-of-mem-mul).
 
 ## The arithmetic function $c^{\Omega}$
 
@@ -56,7 +56,7 @@ $n$ counted with multiplicity. It is completely multiplicative.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.powOmega`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega).
+Formalized by `MetaMathlibExt.powOmega`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega).
 
 ## Value of $c^{\Omega}$ at a positive integer
 
@@ -69,7 +69,7 @@ with multiplicity. For every natural number $n \ne 0$, its value at $n$ is $c^{\
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.powOmega_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-apply).
+Formalized by `MetaMathlibExt.powOmega_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-apply).
 
 ## Value of $c^{\Omega}$ at $1$
 
@@ -82,7 +82,7 @@ Its value at $1$ is $1$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.powOmega_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-one).
+Formalized by `MetaMathlibExt.powOmega_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-one).
 
 ## Value of $c^{\Omega}$ at prime powers
 
@@ -95,7 +95,7 @@ with multiplicity. For every prime $p$ and every natural number $m$, its value a
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.powOmega_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-prime-pow).
+Formalized by `MetaMathlibExt.powOmega_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#pow-omega-prime-pow).
 
 ## Complete multiplicativity of $c^{\Omega}$
 
@@ -109,7 +109,7 @@ of its values at $m$ and at $n$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.isCompletelyMultiplicative_powOmega`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-completely-multiplicative-pow-omega).
+Formalized by `MetaMathlibExt.isCompletelyMultiplicative_powOmega`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-completely-multiplicative-pow-omega).
 
 ## Multiplicativity of $c^{\Omega}$
 
@@ -121,7 +121,7 @@ prime factors of $n$ counted with multiplicity, is multiplicative.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 2.
 
-Formalized by `MetaMathlibExt.isMultiplicative_powOmega`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-pow-omega).
+Formalized by `MetaMathlibExt.isMultiplicative_powOmega`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-pow-omega).
 
 ## Unitary convolution
 
@@ -135,7 +135,7 @@ no unitary divisors. In particular $(f \sqcup g)(0) = 0$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.unitaryConv`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv).
+Formalized by `MetaMathlibExt.unitaryConv`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv).
 
 ## Unitary convolution as a sum over unitary divisors
 
@@ -149,7 +149,7 @@ with $\gcd(d, n/d) = 1$, and for $n = 0$ there are none, so the sum is $0$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.unitaryConv_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-apply).
+Formalized by `MetaMathlibExt.unitaryConv_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-apply).
 
 ## Unitary convolution at $1$
 
@@ -162,7 +162,7 @@ satisfies $(f \sqcup g)(1) = f(1)\, g(1)$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.unitaryConv_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-one).
+Formalized by `MetaMathlibExt.unitaryConv_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-one).
 
 ## Unitary convolution at prime powers
 
@@ -175,7 +175,7 @@ $(f \sqcup g)(p^m) = f(1)\, g(p^m) + f(p^m)\, g(1)$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.unitaryConv_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-prime-pow).
+Formalized by `MetaMathlibExt.unitaryConv_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#unitary-conv-prime-pow).
 
 ## The unitary convolution of multiplicative functions is multiplicative
 
@@ -188,7 +188,7 @@ with $d$ running over the unitary divisors of $n$, is multiplicative.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3 (`(𝓜, ⊔)` is a group).
 
-Formalized by `MetaMathlibExt.isMultiplicative_unitaryConv`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-unitary-conv).
+Formalized by `MetaMathlibExt.isMultiplicative_unitaryConv`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-unitary-conv).
 
 ## Multiplicative function with prescribed values at prime powers
 
@@ -203,7 +203,7 @@ at $1$ is the empty product $1$, so $g(0)$ never enters.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3 (a multiplicative function is determined by its values at the prime powers).
 
-Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers).
+Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers).
 
 ## Value of the function with prescribed prime-power values
 
@@ -217,7 +217,7 @@ the exponent of $q$ in the factorization of $n$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-apply).
+Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-apply).
 
 ## The function with prescribed prime-power values is $1$ at $1$
 
@@ -231,7 +231,7 @@ whatever $g(0)$ is.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-one).
+Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-one).
 
 ## The function with prescribed prime-power values at a prime power
 
@@ -245,7 +245,7 @@ $n$ and $v_q(n)$ the exponent of $q$ in $n$), takes the value $g(m)$ at $p^m$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-prime-pow).
+Formalized by `MetaMathlibExt.multiplicativeOfPrimePowers_prime_pow`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#multiplicative-of-prime-powers-prime-pow).
 
 ## Multiplicativity of the function with prescribed prime-power values
 
@@ -258,7 +258,7 @@ and $v_q(n)$ is the exponent of $q$ in $n$, is multiplicative.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.
 
-Formalized by `MetaMathlibExt.isMultiplicative_multiplicativeOfPrimePowers`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-multiplicative-of-prim).
+Formalized by `MetaMathlibExt.isMultiplicative_multiplicativeOfPrimePowers`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#is-multiplicative-multiplicative-of-prim).
 
 ## A multiplicative function with prescribed prime-power values
 
@@ -273,7 +273,7 @@ primes dividing $n$ and $v_q(n)$ is the exponent of $q$ in $n$.
 
 - Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3 (a multiplicative function is determined by its values at the prime powers).
 
-Formalized by `MetaMathlibExt.eq_multiplicativeOfPrimePowers`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#eq-multiplicative-of-prime-powers).
+Formalized by `MetaMathlibExt.eq_multiplicativeOfPrimePowers`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/UnitaryConvolution.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html#eq-multiplicative-of-prime-powers).
 
 ## Depends on
 
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Unitary convolution](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/unitary-convolution)

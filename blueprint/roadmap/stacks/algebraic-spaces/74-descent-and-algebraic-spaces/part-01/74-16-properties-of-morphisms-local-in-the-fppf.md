@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.16 Properties of morphisms local in the fppf topology on the source
 
-Section 74.16 of the Stacks Project, [Tag 06EU](https://stacks.math.columbia.edu/tag/06EU). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.16 of the Stacks Project, [Tag 06EU](https://stacks.math.columbia.edu/tag/06EU). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06EV, a lemma
 
 [Tag 06EV](https://stacks.math.columbia.edu/tag/06EV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Fppf.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Fppf.lean#L63).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Fppf.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSource/Fppf.lean#L63).
 
 > **Stacks 06EV.** Being locally of finite presentation, for a morphism of algebraic spaces
 > over `S`, is local on the source for the fppf topology.
@@ -31,7 +31,7 @@ instance isLocallyOfFinitePresentation_isLocalAtSource_fppf :
 
 [Tag 06EW](https://stacks.math.columbia.edu/tag/06EW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FppfSourceLocalityFiniteType.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FppfSourceLocalityFiniteType.lean#L58).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FppfSourceLocalityFiniteType.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FppfSourceLocalityFiniteType.lean#L58).
 
 > **Stacks 06EW.** Being locally of finite type, as a property of morphisms of algebraic spaces
 > over `S`, is local on the source for the fppf topology.
@@ -48,7 +48,7 @@ instance isLocallyOfFiniteType_isLocalAtSource_fppf :
 
 [Tag 06EX](https://stacks.math.columbia.edu/tag/06EX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenMorphism_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean#L113).
+**`AlgebraicGeometry.Space.isOpenMorphism_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean#L113).
 
 > **Stacks 06EX.** Being open, for a morphism of algebraic spaces over `S`, is local on the
 > source for the fppf topology.
@@ -64,7 +64,7 @@ instance isOpenMorphism_isLocalAtSource_fppf :
 
 [Tag 06EY](https://stacks.math.columbia.edu/tag/06EY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean#L135).
+**`AlgebraicGeometry.Space.universallyOpen_isLocalAtSource_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSourceLocality.lean#L135).
 
 > **Stacks 06EY.** Being universally open, for a morphism of algebraic spaces over `S`, is
 > local on the source for the fppf topology.
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.16, Tag 06EU](https://stacks.math.columbia.edu/tag/06EU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

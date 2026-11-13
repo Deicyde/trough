@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_flatBaseChange, AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_isLocallyBijective_flatLfp, AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_of_lqcFbc, AlgebraicGeometry.Stack.isSheaf_fppf_of_lqc_flatLfp, AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_lqcFbcModule, AlgebraicGeometry.Stack.nonempty_fppfCohomologyIso_etaleCohomology_lqcFbcModule, AlgebraicGeometry.Stack.nonempty_higherDirectImageIso_sheafify_etale_lqcFbcModule, AlgebraicGeometry.Stack.inclusionToposMorphism
+lean: AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_flatBaseChange, AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_isLocallyBijective_flatLfp, AlgebraicGeometry.Stack.isSheaf_fppf_of_lqc_flatLfp, AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_lqcFbcModule, AlgebraicGeometry.Stack.nonempty_fppfCohomologyIso_etaleCohomology_lqcFbcModule, AlgebraicGeometry.Stack.nonempty_higherDirectImageIso_sheafify_etale_lqcFbcModule, AlgebraicGeometry.Stack.inclusionToposMorphism, AlgebraicGeometry.Stack.subsite_cohomology_comparison
 statement: formalized
 proof: formalized
 ---
 
 # 96.23 Change of topology
 
-Section 96.23 of the Stacks Project, [Tag 075Q](https://stacks.math.columbia.edu/tag/075Q). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.23 of the Stacks Project, [Tag 075Q](https://stacks.math.columbia.edu/tag/075Q). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 076T, a lemma
 
 [Tag 076T](https://stacks.math.columbia.edu/tag/076T) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafFlatBaseChangeProved.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafFlatBaseChangeProved.lean#L90).
+**`AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafFlatBaseChangeProved.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafFlatBaseChangeProved.lean#L90).
 
 > **Stacks 076T.** Let `F` be a presheaf of modules over the structure sheaf of a category
 > fibred in groupoids over the big fppf category of schemes over `S`. If `F` is locally
@@ -38,7 +38,7 @@ theorem isSheaf_fppf_of_isLocallyQuasicoherent_of_flatBaseChange
     Presheaf.IsSheaf (associatedTopology B S hS p B.topology) F.presheaf
 ```
 
-**`AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_isLocallyBijective_flatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafOfLocallyBijectiveFlatLfpComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafOfLocallyBijectiveFlatLfpComparison.lean#L62). The attribute's comment: “with the pullback of sheaves of Stacks 06WC in hypothesis (b)”.
+**`AlgebraicGeometry.Stack.isSheaf_fppf_of_isLocallyQuasicoherent_of_isLocallyBijective_flatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafOfLocallyBijectiveFlatLfpComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfSheafOfLocallyBijectiveFlatLfpComparison.lean#L62). The attribute's comment: “with the pullback of sheaves of Stacks 06WC in hypothesis (b)”.
 
 > **Stacks 076T**, with the pullback of sheaves of Stacks 06WC. Let `F` be a presheaf of
 > modules over the structure sheaf of a category fibred in groupoids over `(Sch/S)_{fppf}`. If `F`
@@ -62,38 +62,7 @@ theorem isSheaf_fppf_of_isLocallyQuasicoherent_of_isLocallyBijective_flatLfp
 
 [Tag 075R](https://stacks.math.columbia.edu/tag/075R) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_of_lqcFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/EtaleComparisonAcyclicity.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/EtaleComparisonAcyclicity.lean#L197). The attribute's comment: “clause (1), `Rε_*ℱ = ε_*ℱ` for the comparison ε : 𝒳\_fppf ⟶ 𝒳\_étale and a module which is locally quasi-coherent with flat base change: the vanishing of the higher direct images, reduced through Stacks 072W to the affine-object vanishing Stacks 08IY and 08IZ carry, which is carried here as that same predicate `hvan`, together with the étale covering class of the affine objects as `hB`. Clauses (2) and (3), which the source deduces from (1) by the Leray spectral sequence and by Stacks 075G, are not covered”.
-
-> **Stacks 075R, clause (1).**  Let `𝒳` be a category fibred in groupoids over the big fppf
-> site of `S`, let `ε : 𝒳_fppf ⟶ 𝒳_étale` be the comparison morphism, and let `ℱ` be a sheaf of
-> `𝒪_𝒳`-modules on the fppf site which is locally quasi-coherent (**Stacks 06WJ**) and has the flat
-> base change property (**Stacks 0762**).  Then
->
-> `R^iε_*ℱ = 0` for `i > 0`,
->
-> that is, `Rε_*ℱ = ε_*ℱ`.
->
-> This is the source's reduction: by **Stacks 072W** the sheaf `R^iε_*ℱ` is the étale
-> sheafification of the presheaf `x ↦ H^i_{fppf}(x, ℱ)`, and that presheaf vanishes on the objects
-> lying over an affine scheme, which cover étale-locally.
->
-> The affine vanishing `hvan` and the covering class `hB` are carried; see this file's module
-> documentation.
-
-```lean
-theorem isZero_rightDerived_etaleComparisonPushforward_of_lqcFbc
-    [HasSheafify (BigFppfOver.associatedTopology B S hS p .etale) AddCommGrpCat.{u}]
-    [(BigFppfOver.associatedTopology B S hS p .etale).WEqualsLocallyBijective AddCommGrpCat.{u}]
-    (hB : (BigFppfOver.associatedTopology B S hS p .etale).HasEnoughObjects
-      (fun x => IsAffineOver B S hS (p.obj x)))
-    (hvan : HasAffineAcyclicLqcFbcModules B E h S hS p hp)
-    (ℱ : fppfSiteModules B S hS p hp)
-    (hℱ : IsLocallyQuasicoherentWithFlatBaseChange B E h S hS p hp ℱ.val)
-    (i : ℕ) (hi : 0 < i) :
-    IsZero (((etaleComparisonPushforward B S hS p hp).rightDerived i).obj ℱ)
-```
-
-**`AlgebraicGeometry.Stack.isSheaf_fppf_of_lqc_flatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean#L107). The attribute's comment: “the first assertion: a presheaf of modules satisfying (a) and (b) is an 𝒪\_𝒳-module, i.e. a sheaf for the fppf topology”.
+**`AlgebraicGeometry.Stack.isSheaf_fppf_of_lqc_flatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean#L109). The attribute's comment: “the first assertion: a presheaf of modules satisfying (a) and (b) is an 𝒪\_𝒳-module, i.e. a sheaf for the fppf topology”.
 
 > **Stacks 075R, the first assertion.** A presheaf of `𝒪_𝒳`-modules which is locally
 > quasi-coherent (**Stacks 06WJ**) and whose comparison maps `c_φ` of **Stacks 06WC** are
@@ -105,7 +74,7 @@ theorem isSheaf_fppf_of_lqc_flatLfp :
     Presheaf.IsSheaf (BigFppfOver.associatedTopology B S hS p .fppf) F.presheaf
 ```
 
-**`AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean#L200). The attribute's comment: “clause (1): `Rε_*ℱ = ε_*ℱ`, i.e. `R^iε_*ℱ = 0` for `i > 0`, for the comparison `ε : 𝒳_fppf ⟶ 𝒳_étale` and a module satisfying (a) and (b)”.
+**`AlgebraicGeometry.Stack.isZero_rightDerived_etaleComparisonPushforward_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FppfEtaleComparisonLqcFbc.lean#L202). The attribute's comment: “clause (1): `Rε_*ℱ = ε_*ℱ`, i.e. `R^iε_*ℱ = 0` for `i > 0`, for the comparison `ε : 𝒳_fppf ⟶ 𝒳_étale` and a module satisfying (a) and (b)”.
 
 > **Stacks 075R, clause (1).** Let `ℱ` be a presheaf of `𝒪_𝒳`-modules which is locally
 > quasi-coherent (**Stacks 06WJ**) and whose comparison maps `c_φ` of **Stacks 06WC** are
@@ -123,7 +92,7 @@ theorem isZero_rightDerived_etaleComparisonPushforward_lqcFbcModule (i : ℕ) (h
       (lqcFbcModule B E h S hS p hp F hlqc hbc))
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_fppfCohomologyIso_etaleCohomology_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleCohomology.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleCohomology.lean#L203). The attribute's comment: “clause (2): fppf cohomology `H^p(𝒳, ℱ)`, `H^p(x, ℱ)` and the derived sections `RΓ(𝒳, ℱ)`, `RΓ(x, ℱ)` of a module satisfying (a) and (b) agree with those computed in the étale topology”.
+**`AlgebraicGeometry.Stack.nonempty_fppfCohomologyIso_etaleCohomology_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleCohomology.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleCohomology.lean#L203). The attribute's comment: “clause (2): fppf cohomology `H^p(𝒳, ℱ)`, `H^p(x, ℱ)` and the derived sections `RΓ(𝒳, ℱ)`, `RΓ(x, ℱ)` of a module satisfying (a) and (b) agree with those computed in the étale topology”.
 
 > **Stacks 075R, clause (2).** Let `ℱ` be a presheaf of `𝒪_𝒳`-modules satisfying (a) and (b) of
 > Stacks 075R, so an `𝒪_𝒳`-module (`AlgebraicGeometry.Stack.lqcFbcModule`), and let
@@ -174,7 +143,7 @@ theorem nonempty_fppfCohomologyIso_etaleCohomology_lqcFbcModule :
           (lqcFbcModule B E h S hS p hp F hlqc hbc))))
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_higherDirectImageIso_sheafify_etale_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleHigherDirectImage.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleHigherDirectImage.lean#L282). The attribute's comment: “clause (3): for a 1-morphism `f : 𝒳 → 𝒴` of categories fibred in groupoids and a module `ℱ` satisfying (a) and (b), `R^if_*ℱ` is the fppf sheafification of the higher direct image computed in the étale topology, and similarly for the derived direct image”.
+**`AlgebraicGeometry.Stack.nonempty_higherDirectImageIso_sheafify_etale_lqcFbcModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleHigherDirectImage.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LqcFbcModuleFppfEtaleHigherDirectImage.lean#L282). The attribute's comment: “clause (3): for a 1-morphism `f : 𝒳 → 𝒴` of categories fibred in groupoids and a module `ℱ` satisfying (a) and (b), `R^if_*ℱ` is the fppf sheafification of the higher direct image computed in the étale topology, and similarly for the derived direct image”.
 
 > **Stacks 075R, clause (3).** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids
 > over `(Sch/S)_{fppf}` and let `ℱ` be a presheaf of `𝒪_𝒳`-modules satisfying (a) and (b) of
@@ -212,7 +181,7 @@ theorem nonempty_higherDirectImageIso_sheafify_etale_lqcFbcModule :
 
 [Tag 07AK](https://stacks.math.columbia.edu/tag/07AK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inclusionToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubcategorySiteKind.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubcategorySiteKind.lean#L133). The attribute's comment: “the morphism of topoi `g : Sh(𝒳'_τ) ⟶ Sh(𝒳_τ)` defined by the inclusion, whose inverse image is restriction to `𝒳'`”.
+**`AlgebraicGeometry.Stack.inclusionToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubcategorySiteKind.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubcategorySiteKind.lean#L133). The attribute's comment: “the morphism of topoi `g : Sh(𝒳'_τ) ⟶ Sh(𝒳_τ)` defined by the inclusion, whose inverse image is restriction to `𝒳'`”.
 
 > **Stacks 07AK, the morphism of topoi.** Cocontinuity of the inclusion gives the adjoint pair
 > `g^{-1} ⊣ g_*` between the topos of the subcategory site and that of the ambient site, with
@@ -230,7 +199,7 @@ def inclusionToposMorphism (τ : SiteKind) (hp : p.IsFiberedInGroupoids)
       (Sheaf (BigFppfOver.associatedTopology B S hS p τ) (Type max v w))
 ```
 
-**`AlgebraicGeometry.Stack.subsite_cohomology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyAtlas.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyAtlas.lean#L238).
+**`AlgebraicGeometry.Stack.subsite_cohomology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyAtlas.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteCohomologyAtlas.lean#L238).
 
 > **Stacks 07AK.** Let `𝒳` be an algebraic stack over `S`, let `τ` be the étale or the fppf
 > topology, and let `𝒳' ⊆ 𝒳` be a full subcategory such that
@@ -283,4 +252,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.23, Tag 075Q](https://stacks.math.columbia.edu/tag/075Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.19 Rig-étale homomorphisms
 
-Section 88.19 of the Stacks Project, [Tag 0GCT](https://stacks.math.columbia.edu/tag/0GCT). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.19 of the Stacks Project, [Tag 0GCT](https://stacks.math.columbia.edu/tag/0GCT). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GCU, a lemma
 
 [Tag 0GCU](https://stacks.math.columbia.edu/tag/0GCU) in the Stacks Project.
 
-**`Rig.rigEtaleOver_iff_forall_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L220).
+**`Rig.rigEtaleOver_iff_forall_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L220).
 
 > **Stacks Project, Tag 0GCU.** For an adic morphism of topologically finite type between
 > Noetherian adic rings, rig-étaleness over one ideal of definition is equivalent to
@@ -39,7 +39,7 @@ public theorem rigEtaleOver_iff_forall_idealOfDefinition
 
 [Tag 0GCV](https://stacks.math.columbia.edu/tag/0GCV) in the Stacks Project.
 
-**`RingHom.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L277).
+**`RingHom.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmooth.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmooth.lean#L277).
 
 > **Stacks Project, Tag 0GCV.** A continuous homomorphism of Noetherian adic topological
 > rings is *rig-étale* when it is adic of topologically finite type — condition (6) of Tag 0GBW
@@ -59,7 +59,7 @@ public abbrev IsRigEtale {A : Type u} {B : Type v}
 
 [Tag 0AQL](https://stacks.math.columbia.edu/tag/0AQL) in the Stacks Project.
 
-**`Rig.rigEtale_propertyIsLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleIsLocal.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleIsLocal.lean#L649).
+**`Rig.rigEtale_propertyIsLocalNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleIsLocal.lean, line 650](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleIsLocal.lean#L650).
 
 > **Stacks 0AQL.** Rig-étaleness is a local property of arrows of `WAdm^Noeth`, in the sense
 > of Situation 0CBA in the Noetherian form of Remark 0ANI: it ascends along a completed étale
@@ -78,7 +78,7 @@ public theorem rigEtale_propertyIsLocalNoetherian :
 
 [Tag 0GCW](https://stacks.math.columbia.edu/tag/0GCW) in the Stacks Project.
 
-**`TopologicalRing.rigEtale_completedTensorProduct_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStability.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothStability.lean#L801).
+**`TopologicalRing.rigEtale_completedTensorProduct_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStability.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothStability.lean#L802).
 
 > Rig-étaleness (Tag 0GCV) is stable under base change by adic morphisms (Tag 0GBR) in the
 > sense of Remark 0GBG: if `B → A` is rig-étale and `B → C` is adic, both arrows of
@@ -107,7 +107,7 @@ public theorem rigEtale_completedTensorProduct_of_isAdic
 
 [Tag 0GCX](https://stacks.math.columbia.edu/tag/0GCX) in the Stacks Project.
 
-**`Rig.rigEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L615).
+**`Rig.rigEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L615).
 
 > **Stacks Project, Tag 0GCX.**  Rig-étaleness of arrows of `WAdm^Noeth` is stable under
 > composition in the sense of Formal Spaces Remark 0GBK: if `f : B →+* A` and `g : C →+* B` are
@@ -139,7 +139,7 @@ public theorem rigEtale_comp
 
 [Tag 0GCY](https://stacks.math.columbia.edu/tag/0GCY) in the Stacks Project.
 
-**`Rig.rigEtale_hasNoetherianCancellationProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 834](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L834).
+**`Rig.rigEtale_hasNoetherianCancellationProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean, line 834](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothStableUnderComposition.lean#L834).
 
 > **Stacks Project, Tag 0GCY.**  Rig-étaleness on arrows of `WAdm^Noeth` has the
 > cancellation property of Formal Spaces Remark 0GBP: for `f : B →+* A` and `g : C →+* B`
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.19, Tag 0GCT](https://stacks.math.columbia.edu/tag/0GCT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.6 Application to flat modules on flat thickenings of ringed spaces
 
-Section 91.6 of the Stacks Project, [Tag 08VQ](https://stacks.math.columbia.edu/tag/08VQ). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.6 of the Stacks Project, [Tag 08VQ](https://stacks.math.columbia.edu/tag/08VQ). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08VR, a lemma
 
 [Tag 08VR](https://stacks.math.columbia.edu/tag/08VR) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.nonempty_flatLift_iff_flatDeformationObstruction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L244). The attribute's comment: “clause (1)”.
+**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.nonempty_flatLift_iff_flatDeformationObstruction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L257). The attribute's comment: “clause (1)”.
 
 > **Stacks Project, Tag 08VR**, clause (1). Let `(f, f')` be a strict morphism of first order
 > thickenings of ringed spaces with `f'` flat, and let `ℱ` be an `𝒪_X`-module flat over `S`. There
@@ -33,7 +33,7 @@ theorem nonempty_flatLift_iff_flatDeformationObstruction_eq_zero
       flatDeformationObstruction D hi (isIso_baseToSourceIdeal_of_isFlat D hs hf') F = 0
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.flatLiftClassDifferenceBase_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L294). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.flatLiftClassDifferenceBase_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L307). The attribute's comment: “clause (2)”.
 
 > **Stacks Project, Tag 08VR**, clause (2). Let `(f, f')` be a strict morphism of first order
 > thickenings of ringed spaces with `f'` flat, and let `ℱ` be an `𝒪_X`-module flat over `S`. The
@@ -57,7 +57,7 @@ theorem flatLiftClassDifferenceBase_isPrincipalHomogeneous (hi : IsFirstOrderThi
         flatLiftClassDifferenceBase D hi hs (isIso_baseToSourceIdeal_of_isFlat D hs hf') F a b
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.exists_identityLiftAut_equiv_ext_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L444). The attribute's comment: “clause (3)”.
+**`AlgebraicGeometry.RingedSpaceThickening.FlatModuleDeformation.exists_identityLiftAut_equiv_ext_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatModuleDeformation.lean#L460). The attribute's comment: “clause (3)”.
 
 > **Stacks Project, Tag 08VR**, clause (3). Given a lift `ℱ'` of `ℱ` to an `𝒪_{X'}`-module
 > flat over `S'`, the set of automorphisms of `ℱ'` which pull back to the identity of `ℱ` is
@@ -70,7 +70,8 @@ theorem exists_identityLiftAut_equiv_ext_zero [CategoryTheory.HasExt.{w}
       (SheafOfModules.{u} (structureSheafRing D.X))]
     (hi : IsFirstOrderThickening D.i) (hs : D.IsStrict)
     {F : SheafOfModules.{u} (structureSheafRing D.X)} (A : FlatLift D F) :
-    ∃ e : { φ : A.module' ≅ A.module' // (modulePullback D.i).map φ.hom = 𝟙 ((modulePullback D.i).obj A.module') } ≃
+    ∃ e : { φ : A.module' ≅ A.module' //
+          (modulePullback D.i).map φ.hom = 𝟙 ((modulePullback D.i).obj A.module') } ≃
         CategoryTheory.Abelian.Ext.{w} F (baseIdealTensor D F) 0,
       ∀ φ, φ.1.hom = 𝟙 A.module' +
         liftInfinitesimalEndo D hi hs A (CategoryTheory.Abelian.Ext.homEquiv₀ (e φ))
@@ -80,7 +81,7 @@ theorem exists_identityLiftAut_equiv_ext_zero [CategoryTheory.HasExt.{w}
 
 [Tag 08VS](https://stacks.math.columbia.edu/tag/08VS) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.FlatShortExactThickeningDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningSituation.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningSituation.lean#L46). The attribute's comment: “the situation”.
+**`AlgebraicGeometry.RingedSpaceThickening.FlatShortExactThickeningDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningSituation.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningSituation.lean#L46). The attribute's comment: “the situation”.
 
 > Two short exact sequences of first order thickenings, one over the other, with strict and flat
 > vertical arrows, together with a module on the middle upper space which is flat over the middle
@@ -94,7 +95,7 @@ structure FlatShortExactThickeningDiagram
 
 [Tag 08VT](https://stacks.math.columbia.edu/tag/08VT) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.boundary_flatLiftClassDifferenceBase_eq_flatDeformationObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundary.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundary.lean#L250). The attribute's comment: “the boundary of the difference of `π^* ℱ` and `h^* ℱ'₂` is the obstruction to lifting `ℱ` to an `𝒪'₃`-module flat over `S'₃`, difference in the order `(h^* ℱ'₂, π^* ℱ)`; inputs of the source are hypotheses -- the 08VQ identifications `ℐᵢ = f^* 𝒥ᵢ`, as 08VR already carries them, the short exactness of the tensored ideal sequence, and 08LF's own `hrestrict` -- each named in the Scope section of the module docstring”.
+**`AlgebraicGeometry.RingedSpaceThickening.boundary_flatLiftClassDifferenceBase_eq_flatDeformationObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundary.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundary.lean#L250). The attribute's comment: “the boundary of the difference of `π^* ℱ` and `h^* ℱ'₂` is the obstruction to lifting `ℱ` to an `𝒪'₃`-module flat over `S'₃`, difference in the order `(h^* ℱ'₂, π^* ℱ)`; inputs of the source are hypotheses -- the 08VQ identifications `ℐᵢ = f^* 𝒥ᵢ`, as 08VR already carries them, the short exactness of the tensored ideal sequence, and 08LF's own `hrestrict` -- each named in the Scope section of the module docstring”.
 
 > In the situation of **Stacks 08VS** the two `𝒪'₁`-modules
 > `π^* ℱ` and `h^* ℱ'₂` are flat over `S'₁` and restrict to `ℱ` on `X`, so **Stacks 08VR**
@@ -152,7 +153,7 @@ theorem boundary_flatLiftClassDifferenceBase_eq_flatDeformationObstruction
       flatDeformationObstruction D.morphism₃ D.upper.firstOrder₃ hI₃ D.restriction
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.FlatShortExactThickeningDiagram.boundary_difference_trivialLift_pulledLift_eq_flatDeformationObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundaryUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundaryUnconditional.lean#L100).
+**`AlgebraicGeometry.RingedSpaceThickening.FlatShortExactThickeningDiagram.boundary_difference_trivialLift_pulledLift_eq_flatDeformationObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundaryUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatThickeningBoundaryUnconditional.lean#L100).
 
 > In Situation **Stacks 08VS** — a commutative diagram of short exact sequences of first order
 > thickenings `X'₁ ⟶ X'₂ ⟶ X'₃` of `X` over `S'₁ ⟶ S'₂ ⟶ S'₃` of `S`, with every
@@ -193,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.6, Tag 08VQ](https://stacks.math.columbia.edu/tag/08VQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

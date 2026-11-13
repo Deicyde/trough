@@ -8,7 +8,7 @@ proof: formalized
 
 # 26.20 Valuative criterion for universal closedness
 
-Section 26.20 of the Stacks Project, [Tag 01KA](https://stacks.math.columbia.edu/tag/01KA). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 26.20 of the Stacks Project, [Tag 01KA](https://stacks.math.columbia.edu/tag/01KA). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01KB, a definition
 
@@ -16,7 +16,7 @@ Section 26.20 of the Stacks Project, [Tag 01KA](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.UniversallyClosed`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyClosed#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L222) (StacksFrontier). References: EGA II (5.4.1); EGA II (5.4.9).
+- [`AlgebraicGeometry.UniversallyClosed`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyClosed#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L222) (StacksFrontier). References: EGA II (5.4.1); EGA II (5.4.9).
 
 ## Tag 01KC, a lemma
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.universallyClosed_eq_universallySpecializing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.universallyClosed_eq_universallySpecializing#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L223) (StacksFrontier): “(1) and (2)”.
+- [`AlgebraicGeometry.universallyClosed_eq_universallySpecializing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.universallyClosed_eq_universallySpecializing#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L223) (StacksFrontier): “(1) and (2)”.
 
 ## Tag 01KD, a definition
 
@@ -32,14 +32,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ValuativeCriterion.Existence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCriterion.Existence#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L248) (StacksFrontier): “existence part of the valuative criterion”.
-- [`AlgebraicGeometry.ValuativeCriterion.Uniqueness`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCriterion.Uniqueness#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L250) (StacksFrontier): “uniqueness part of the valuative criterion”.
+- [`AlgebraicGeometry.ValuativeCriterion.Existence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCriterion.Existence#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L248) (StacksFrontier): “existence part of the valuative criterion”.
+- [`AlgebraicGeometry.ValuativeCriterion.Uniqueness`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ValuativeCriterion.Uniqueness#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L250) (StacksFrontier): “uniqueness part of the valuative criterion”.
 
 ## Tag 01J8, a lemma
 
 [Tag 01J8](https://stacks.math.columbia.edu/tag/01J8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_valuation_ring_of_specializes`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Valuative/Specialization.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Valuative/Specialization.lean#L49).
+**`AlgebraicGeometry.exists_valuation_ring_of_specializes`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Valuative/Specialization.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Valuative/Specialization.lean#L49).
 
 > A specialization of points of a scheme is witnessed by a valuation ring.  The valuation
 > ring may be chosen so that the residue-field extension at its generic point is any prescribed
@@ -63,7 +63,7 @@ public lemma exists_valuation_ring_of_specializes (S : AlgebraicGeometry.Scheme.
 
 [Tag 01KG](https://stacks.math.columbia.edu/tag/01KG) in the Stacks Project.
 
-**`AlgebraicGeometry.projectiveLine_valuativeCriterion_existence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L127). The attribute's comment: “valuative extension”.
+**`AlgebraicGeometry.projectiveLine_valuativeCriterion_existence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L127). The attribute's comment: “valuative extension”.
 
 > Every valuative square for the structure morphism of the projective line
 > has a diagonal lift.
@@ -74,7 +74,7 @@ theorem projectiveLine_valuativeCriterion_existence (k : Type u) [CommRing k] :
       (projectiveLine k ↘ Spec (.of k))
 ```
 
-**`AlgebraicGeometry.projectiveLine_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L346). The attribute's comment: “quasi-compactness”.
+**`AlgebraicGeometry.projectiveLine_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L346). The attribute's comment: “quasi-compactness”.
 
 > The structure morphism of the projective line is quasi-compact.
 
@@ -83,7 +83,7 @@ theorem projectiveLine_quasiCompact (k : Type u) [CommRing k] :
     QuasiCompact (projectiveLine k ↘ Spec (.of k))
 ```
 
-**`AlgebraicGeometry.projectiveLine_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L353). The attribute's comment: “universal closedness”.
+**`AlgebraicGeometry.projectiveLine_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineUniversallyClosed.lean#L353). The attribute's comment: “universal closedness”.
 
 > The structure morphism of the projective line is universally closed.
 
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 26.20, Tag 01KA](https://stacks.math.columbia.edu/tag/01KA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.8 Descent of finiteness and smoothness properties of morphisms
 
-Section 74.8 of the Stacks Project, [Tag 06NQ](https://stacks.math.columbia.edu/tag/06NQ). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.8 of the Stacks Project, [Tag 06NQ](https://stacks.math.columbia.edu/tag/06NQ). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06NR, a lemma
 
 [Tag 06NR](https://stacks.math.columbia.edu/tag/06NR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L184). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.Space.isFlat_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L184). The attribute's comment: “flatness”.
 
 > **Stacks 06NR.** Flatness of a composite of morphisms of algebraic spaces descends to the
 > second factor when the first factor is surjective as a morphism of fppf sheaves.
@@ -32,7 +32,7 @@ theorem isFlat_of_comp_of_locallySurjective
     IsFlat B S hS g
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L204). The attribute's comment: “locally finite type”.
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L204). The attribute's comment: “locally finite type”.
 
 > **Stacks 06NR.** Local finite type of a composite of morphisms of algebraic spaces
 > descends to the second factor when the first factor is surjective as a morphism of fppf
@@ -51,7 +51,7 @@ theorem isLocallyOfFiniteType_of_comp_of_locallySurjective
     IsLocallyOfFiniteType B S hS g
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L224). The attribute's comment: “locally finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_comp_of_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L224). The attribute's comment: “locally finite presentation”.
 
 > **Stacks 06NR.** Local finite presentation of a composite of morphisms of algebraic spaces
 > descends to the second factor when the first factor is surjective as a morphism of fppf
@@ -74,7 +74,7 @@ theorem isLocallyOfFinitePresentation_of_comp_of_locallySurjective
 
 [Tag 0AHC](https://stacks.math.columbia.edu/tag/0AHC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_commonFppfDescentSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L244). The attribute's comment: “the case of local finite type”. References: EGA IV (11.3.16), “locally of finite type”.
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_commonFppfDescentSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L244). The attribute's comment: “the case of local finite type”. References: EGA IV (11.3.16), “locally of finite type”.
 
 > **Stacks 0AHC**, the case of local finite type. In a commutative triangle `X ⟶ Y ⟶ B` of
 > algebraic spaces whose first morphism is surjective, flat and locally of finite presentation,
@@ -86,7 +86,7 @@ theorem isLocallyOfFiniteType_of_commonFppfDescentSituation
     IsLocallyOfFiniteType T.site T.S T.hS T.q
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_commonFppfDescentSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L260). The attribute's comment: “the case of local finite presentation”. References: EGA IV (11.3.16), “loc. fin. presentation”; SGA 4 IV (8.5.5), “partial”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_commonFppfDescentSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/MorphismFiniteness.lean#L260). The attribute's comment: “the case of local finite presentation”. References: EGA IV (11.3.16), “loc. fin. presentation”; SGA 4 IV (8.5.5), “partial”.
 
 > **Stacks 0AHC**, the case of local finite presentation. In a commutative triangle
 > `X ⟶ Y ⟶ B` of algebraic spaces whose first morphism is surjective, flat and locally of finite
@@ -103,7 +103,7 @@ theorem isLocallyOfFinitePresentation_of_commonFppfDescentSituation
 
 [Tag 0AHD](https://stacks.math.columbia.edu/tag/0AHD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_of_comp_surjective_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean#L115). The attribute's comment: “smooth case”.
+**`AlgebraicGeometry.Space.isSmooth_of_comp_surjective_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean#L115). The attribute's comment: “smooth case”.
 
 > **Stacks 0AHD**, smooth case. In a commuting triangle `p = f ≫ q` of morphisms of
 > algebraic spaces over `S` with `f` surjective and smooth, smoothness of `p` implies smoothness
@@ -120,7 +120,7 @@ theorem isSmooth_of_comp_surjective_isSmooth
     IsSmooth B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isEtale_of_comp_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean#L132). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.Space.isEtale_of_comp_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Permanence.lean#L132). The attribute's comment: “étale case”.
 
 > **Stacks 0AHD**, étale case. In a commuting triangle `p = f ≫ q` of morphisms of algebraic
 > spaces over `S` with `f` surjective and étale, étaleness of `p` implies étaleness of `q`.
@@ -136,7 +136,7 @@ theorem isEtale_of_comp_surjective_isEtale
     IsEtale B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isSyntomic_of_comp_surjective_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/SyntomicPermanence.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/SyntomicPermanence.lean#L51). The attribute's comment: “syntomic case”.
+**`AlgebraicGeometry.Space.isSyntomic_of_comp_surjective_isSyntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/SyntomicPermanence.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/SyntomicPermanence.lean#L51). The attribute's comment: “syntomic case”.
 
 > **Stacks 0AHD**, syntomic case. In a commuting triangle `p = f ≫ q` of morphisms of
 > algebraic spaces over `S` with `f` surjective and syntomic, syntomicity of `p` implies
@@ -157,7 +157,7 @@ theorem isSyntomic_of_comp_surjective_isSyntomic
 
 [Tag 0AHE](https://stacks.math.columbia.edu/tag/0AHE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean#L151). The attribute's comment: “smooth case”.
+**`AlgebraicGeometry.Space.isSmooth_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean#L151). The attribute's comment: “smooth case”.
 
 > **Stacks 0AHE**, smooth case. In a commuting triangle `p = f ≫ q` of morphisms of
 > algebraic spaces over `S` with `f` surjective, flat and locally of finite presentation,
@@ -174,7 +174,7 @@ theorem isSmooth_of_comp_of_fppf
     IsSmooth B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isEtale_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean#L167). The attribute's comment: “étale case”.
+**`AlgebraicGeometry.Space.isEtale_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/FppfPermanence.lean#L167). The attribute's comment: “étale case”.
 
 > **Stacks 0AHE**, étale case. In a commuting triangle `p = f ≫ q` of morphisms of
 > algebraic spaces over `S` with `f` surjective, flat and locally of finite presentation,
@@ -195,7 +195,7 @@ theorem isEtale_of_comp_of_fppf
 
 [Tag 0AHF](https://stacks.math.columbia.edu/tag/0AHF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean#L102). The attribute's comment: “syntomicity of q”.
+**`AlgebraicGeometry.Space.isSyntomic_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean#L102). The attribute's comment: “syntomicity of q”.
 
 > **Stacks 0AHF.** Syntomicity descends from a composite of morphisms of algebraic spaces over
 > `S` along a surjective, flat morphism which is locally of finite presentation: if `f : X ⟶ Y` is
@@ -213,7 +213,7 @@ theorem isSyntomic_of_comp_of_fppf
     IsSyntomic B S hS q
 ```
 
-**`AlgebraicGeometry.Space.isSyntomic_of_isSyntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean#L117). The attribute's comment: “syntomicity of f”.
+**`AlgebraicGeometry.Space.isSyntomic_of_isSyntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SyntomicFactor.lean#L117). The attribute's comment: “syntomicity of f”.
 
 > **Stacks 0AHF.** A flat morphism of algebraic spaces over `S` which is locally of finite
 > presentation is syntomic as soon as its composite with another morphism is syntomic. The source
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.8, Tag 06NQ](https://stacks.math.columbia.edu/tag/06NQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

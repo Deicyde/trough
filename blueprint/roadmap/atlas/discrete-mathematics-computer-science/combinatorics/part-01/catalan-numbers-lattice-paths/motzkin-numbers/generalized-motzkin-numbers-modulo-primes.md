@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Motzkin numbers modulo primes
 
-34 results, 9 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html).
+34 results, 9 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html).
 
 ## The symmetric trinomial Laurent polynomial
 
@@ -19,7 +19,7 @@ trinomial coefficients and the generalized Motzkin numbers.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.trinomialLaurent`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#trinomial-laurent).
+Formalized by `MetaMathlibExt.trinomialLaurent`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#trinomial-laurent).
 
 ## Laurent polynomials of degree at most one
 
@@ -30,7 +30,7 @@ Laurent polynomial $\alpha x^{-1} + \beta + \gamma x$ with integer coefficients.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 1. The degree-one hypotheses of Lemma 1 are imposed on the coefficients in the statements that use this polynomial.
 
-Formalized by `MetaMathlibExt.linearLaurent`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#linear-laurent).
+Formalized by `MetaMathlibExt.linearLaurent`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#linear-laurent).
 
 ## Generalized central trinomial coefficients
 
@@ -42,7 +42,7 @@ polynomial $(a x^{-1} + b + a x)^n$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.centralTrinomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial).
+Formalized by `MetaMathlibExt.centralTrinomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial).
 
 ## Generalized Motzkin numbers
 
@@ -54,7 +54,7 @@ $(a x^{-1} + b + a x)^n (1 - x^2)$ with integer coefficients.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.generalizedMotzkin`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin).
+Formalized by `MetaMathlibExt.generalizedMotzkin`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin).
 
 ## OEIS A005717
 
@@ -65,7 +65,7 @@ polynomial $x (x^{-1} + 1 + x)^n$ with integer coefficients.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.a005717`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005717).
+Formalized by `MetaMathlibExt.a005717`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005717).
 
 ## OEIS A005773
 
@@ -76,7 +76,7 @@ polynomial $(1 + x)(x^{-1} + 1 + x)^n$ with integer coefficients.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.a005773`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005773).
+Formalized by `MetaMathlibExt.a005773`, a definition declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005773).
 
 ## The first five powers of $x^{-1} + 1 + x$
 
@@ -92,7 +92,7 @@ $(x^{-1} + 1 + x)^4 = x^{-4} + 4x^{-3} + 10x^{-2} + 16x^{-1} + 19 + 16x + 10x^2 
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.trinomialLaurent_one_one_powers`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#trinomial-laurent-one-one-powers).
+Formalized by `MetaMathlibExt.trinomialLaurent_one_one_powers`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#trinomial-laurent-one-one-powers).
 
 ## First five central trinomial coefficients
 
@@ -103,7 +103,7 @@ constant terms of $(x^{-1} + 1 + x)^n$, are $1, 1, 3, 7, 19$ for $n = 0, 1, 2, 3
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.centralTrinomial_one_one_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-one-one-values).
+Formalized by `MetaMathlibExt.centralTrinomial_one_one_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-one-one-values).
 
 ## First five generalized Motzkin numbers at $a = b = 1$
 
@@ -115,7 +115,7 @@ for $n = 0, 1, 2, 3, 4$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
-Formalized by `MetaMathlibExt.generalizedMotzkin_one_one_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-one-one-values).
+Formalized by `MetaMathlibExt.generalizedMotzkin_one_one_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-one-one-values).
 
 ## Generalized Motzkin numbers from three central trinomial coefficients
 
@@ -132,7 +132,7 @@ $$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_centralTrinomial_relation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-central-trinomial-re).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_centralTrinomial_relation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-central-trinomial-re).
 
 ## Recurrence for generalized central trinomial coefficients
 
@@ -148,7 +148,7 @@ number.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.centralTrinomial_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-recurrence).
+Stated but not proved: `MetaMathlibExt.centralTrinomial_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-recurrence).
 
 ## Three-term recurrence for generalized Motzkin numbers
 
@@ -166,7 +166,7 @@ The source states the recurrence for $M_n$ with $n \ge 2$; it is written here at
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-recurrence).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-recurrence).
 
 ## Mirror symmetry of central trinomial coefficients modulo a prime
 
@@ -180,7 +180,7 @@ $$T_{p-1-k} \equiv (b^2 - 4a^2)^{(p-1)/2 - k} \, T_k \pmod p.$$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.centralTrinomial_mod_prime_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-mod-prime-symmetry).
+Stated but not proved: `MetaMathlibExt.centralTrinomial_mod_prime_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-mod-prime-symmetry).
 
 ## Reflection symmetry of generalized Motzkin numbers modulo $p$
 
@@ -196,7 +196,7 @@ $$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_mod_prime_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-mod-prime-symmetry).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_mod_prime_symmetry` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-mod-prime-symmetry).
 
 ## Squared central trinomial coefficient at one less than a prime
 
@@ -211,7 +211,7 @@ modulo $p$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.centralTrinomial_prime_minus_one_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-prime-minus-one-sq).
+Stated but not proved: `MetaMathlibExt.centralTrinomial_prime_minus_one_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#central-trinomial-prime-minus-one-sq).
 
 ## Primes dividing the Motzkin number $M_{p-2}$
 
@@ -224,7 +224,7 @@ For $p = 2$ both sides are false, since $M_0 = 1$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_motzkin_prime_minus_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#prime-dvd-motzkin-prime-minus-two-iff).
+Stated but not proved: `MetaMathlibExt.prime_dvd_motzkin_prime_minus_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#prime-dvd-motzkin-prime-minus-two-iff).
 
 ## Lucas property for constant terms of powers of linear Laurent polynomials
 
@@ -248,7 +248,7 @@ includes that case.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.constantTerm_linearLaurent_pow_digits` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-laurent-pow-digits).
+Stated but not proved: `MetaMathlibExt.constantTerm_linearLaurent_pow_digits` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-laurent-pow-digits).
 
 ## Digit decomposition of shifted sums of constant terms modulo a prime
 
@@ -269,7 +269,7 @@ where the last sum is empty when $h < p - n_0$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.constantTermLinearCombination_digit_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-combination-digit-d).
+Stated but not proved: `MetaMathlibExt.constantTermLinearCombination_digit_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-combination-digit-d).
 
 ## Digit formula for shifted sums of constant terms, small last digit
 
@@ -291,7 +291,7 @@ $$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.constantTermLinearCombination_small_last_digit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-combination-small-l).
+Stated but not proved: `MetaMathlibExt.constantTermLinearCombination_small_last_digit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#constant-term-linear-combination-small-l).
 
 ## Density one for zeros of shifted combinations of central trinomial coefficients
 
@@ -307,7 +307,7 @@ $r \in \mathbb{N}$ with $b_r \equiv 0 \pmod p$ has natural density $1$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.symmetricConstantTerm_zero_density_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#symmetric-constant-term-zero-density-one).
+Stated but not proved: `MetaMathlibExt.symmetricConstantTerm_zero_density_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#symmetric-constant-term-zero-density-one).
 
 ## Zero density of shifted combinations of central trinomial coefficients
 
@@ -332,7 +332,7 @@ No assumption $p > 2$ is made.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.symmetricConstantTerm_zero_density_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#symmetric-constant-term-zero-density-for).
+Stated but not proved: `MetaMathlibExt.symmetricConstantTerm_zero_density_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#symmetric-constant-term-zero-density-for).
 
 ## Generalized Motzkin numbers modulo $p$ with last digit below $p - 2$
 
@@ -350,7 +350,7 @@ $$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 5(i).
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_below_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-below-prime-mi).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_below_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-below-prime-mi).
 
 ## Generalized Motzkin numbers modulo $p$ with last digit $p - 2$
 
@@ -370,7 +370,7 @@ $$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 5(ii).
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-prime-minus-tw).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-prime-minus-tw).
 
 ## Generalized Motzkin numbers modulo $p$ with last digit $p - 1$
 
@@ -394,7 +394,7 @@ here it is multiplied out so that every exponent is nonnegative.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 5(iii).
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_prime_minus_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-prime-minus-on).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_digit_prime_minus_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-digit-prime-minus-on).
 
 ## Zeros of generalized Motzkin numbers with a small last digit
 
@@ -408,7 +408,7 @@ generalized Motzkin number $M^{(a,b)}_n$ if and only if $p$ divides $M^{(a,b)}_{
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_below_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-below-pri).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_below_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-below-pri).
 
 ## Zeros of generalized Motzkin numbers with last digit $p - 2$
 
@@ -427,7 +427,7 @@ $b T_m \equiv T_{p-1}^{k+1} T_{m+1} \pmod p$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 3. The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the paper, which cancels $2a^2$.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-prime-min).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_prime_minus_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-prime-min).
 
 ## Zeros of generalized Motzkin numbers with last digit $p - 1$
 
@@ -446,7 +446,7 @@ only if $b T_\ell \equiv T_{p-1}^{k+1} T_{\ell+1} \pmod p$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 3. The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the paper, which cancels $2a^2$.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_prime_minus_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-prime-min-2).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_digit_prime_minus_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-digit-prime-min-2).
 
 ## Generalized Motzkin numbers vanish modulo a prime with density one
 
@@ -459,7 +459,7 @@ generalized Motzkin number $M^{(a,b)}_n$ has natural density $1$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_density_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-density-one).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_density_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-density-one).
 
 ## Zero density formula for generalized Motzkin numbers modulo a prime
 
@@ -478,7 +478,7 @@ $$D_0 = \frac{A}{p} + \frac{2B}{(p-1)(p+1)} + \frac{2C}{(p-1)p(p+1)}.$$
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3. The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the paper, which cancels $2a^2$.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_density_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-density-formula).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_zero_density_formula` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-zero-density-formula).
 
 ## Density of each nonzero residue among generalized Motzkin numbers modulo $p$
 
@@ -504,7 +504,7 @@ The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the source, which cancels
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedMotzkin_nonzero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-nonzero-density).
+Stated but not proved: `MetaMathlibExt.generalizedMotzkin_nonzero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#generalized-motzkin-nonzero-density).
 
 ## Zero density of Motzkin numbers modulo a prime
 
@@ -524,7 +524,7 @@ and $D_0 \ge \frac{2}{p(p-1)}$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 4. The paper's conjecture-conditional middle clause is omitted.
 
-Stated but not proved: `MetaMathlibExt.motzkin_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#motzkin-zero-density).
+Stated but not proved: `MetaMathlibExt.motzkin_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#motzkin-zero-density).
 
 ## Zero density of A005717 modulo a prime
 
@@ -541,7 +541,7 @@ $D_0 = (N_1 + p N_2) / ((p - 1)(p + 1))$, and $D_0 \ge 1/(p - 1)$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.a005717_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005717-zero-density).
+Stated but not proved: `MetaMathlibExt.a005717_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005717-zero-density).
 
 ## Zero density of Riordan numbers modulo a prime
 
@@ -561,7 +561,7 @@ and $D_0 \ge \frac{1}{p-1}$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.riordan_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#riordan-zero-density).
+Stated but not proved: `MetaMathlibExt.riordan_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#riordan-zero-density).
 
 ## Zero density of A005773 modulo a prime
 
@@ -578,7 +578,7 @@ $D_0 = (N_1 + p N_2) / ((p - 1)(p + 1))$, and $D_0 \ge 1/(p - 1)$.
 
 - Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.a005773_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005773-zero-density).
+Stated but not proved: `MetaMathlibExt.a005773_zero_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GeneralizedMotzkinModPWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html#a005773-zero-density).
 
 ## Depends on
 
@@ -587,4 +587,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Motzkin numbers modulo primes](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/generalized-motzkin-numbers-modulo-primes)

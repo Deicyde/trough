@@ -7,7 +7,7 @@ statement: formalized
 
 # Reverse Minkowski theorem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html).
 
 ## Gaussian mass of a lattice
 
@@ -18,7 +18,7 @@ Euclidean norm.
 
 The sum is taken to be $0$ when the series is not summable.
 
-Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.ρ`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#untitled).
+Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.ρ`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#untitled).
 
 ## Basis matrix of a lattice
 
@@ -27,7 +27,7 @@ $\mathbb{Z}$-submodule of rank $m$. Its basis matrix $B(\mathcal{L})$ is the rea
 $n \times m$ matrix whose $j$-th column is the $j$-th vector of a fixed, arbitrarily chosen
 $\mathbb{Z}$-basis of $\mathcal{L}$.
 
-Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.B`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#b).
+Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.B`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#b).
 
 ## Determinant of a lattice
 
@@ -36,7 +36,7 @@ $\mathcal{L} \subseteq \mathbb{R}^n$ with basis matrix $B = B(\mathcal{L})$ (the
 columns form a fixed $\mathbb{Z}$-basis of $\mathcal{L}$), the determinant of $\mathcal{L}$ is
 $\det(\mathcal{L}) = \sqrt{\det(B^{T} B)}$.
 
-Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.determinant`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#determinant).
+Formalized by `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.determinant`, a definition declared in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#determinant).
 
 ## Reverse Minkowski theorem
 
@@ -52,7 +52,7 @@ $\|y\|$ is the Euclidean norm.
 
 - O. Regev, N. Stephens-Davidowitz, `A reverse Minkowski theorem`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_reverse_minkowski` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.theorem_1_2` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.theorem_1_2` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReverseMinkowskiWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReverseMinkowskiWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html#theorem-1-2).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reverse Minkowski theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/reverse-minkowski-theorem)

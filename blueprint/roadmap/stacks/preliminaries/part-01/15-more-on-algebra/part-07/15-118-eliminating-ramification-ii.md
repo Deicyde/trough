@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.118 Eliminating ramification, II
 
-Section 15.118 of the Stacks Project, [Tag 0GLQ](https://stacks.math.columbia.edu/tag/0GLQ). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.118 of the Stacks Project, [Tag 0GLQ](https://stacks.math.columbia.edu/tag/0GLQ). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GLR, a lemma
 
 [Tag 0GLR](https://stacks.math.columbia.edu/tag/0GLR) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isSolution_of_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SolutionTower.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/SolutionTower.lean#L590).
+**`IsDiscreteValuationRing.exists_isSolution_of_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SolutionTower.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/SolutionTower.lean#L590).
 
 > A finite extension of a solution for an extension of discrete valuation rings is again a
 > solution.
@@ -51,7 +51,7 @@ theorem exists_isSolution_of_tower
 
 [Tag 0GLS](https://stacks.math.columbia.edu/tag/0GLS) in the Stacks Project.
 
-**`IsNagataRing.of_isSeparable_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Descent.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Descent.lean#L463).
+**`IsNagataRing.of_isSeparable_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Descent.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Descent.lean#L460).
 
 > Let `A → B` be an extension of discrete valuation rings, and let `K → L` be the induced
 > extension of their fraction fields. If `B` is Nagata and `L/K` is separable, then `A` is
@@ -73,7 +73,7 @@ theorem of_isSeparable_fractionRing
 
 [Tag 0GLT](https://stacks.math.columbia.edu/tag/0GLT) in the Stacks Project.
 
-**`exists_bound_finite_extension_ringEquiv_mod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean#L241).
+**`exists_bound_finite_extension_ringEquiv_mod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean#L241).
 
 > **Stacks 0GLT**.
 > Let `A' ⊂ A` be an extension of rings and `f ∈ A'`, with `A` finite over `A'`, `f` a nonzerodivisor
@@ -111,7 +111,7 @@ theorem exists_bound_finite_extension_ringEquiv_mod
 
 [Tag 0GLU](https://stacks.math.columbia.edu/tag/0GLU) in the Stacks Project.
 
-**`exists_compatible_finite_extensions_of_quotient_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean#L469).
+**`exists_compatible_finite_extensions_of_quotient_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FiniteExtension/ModPow/QuotientEquiv.lean#L469).
 
 > **Stacks 0GLU**. The construction of `exists_bound_finite_extension_ringEquiv_mod` is
 >   functorial. Given a commutative square
@@ -200,7 +200,7 @@ theorem exists_compatible_finite_extensions_of_quotient_equiv
 
 [Tag 0GLV](https://stacks.math.columbia.edu/tag/0GLV) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isSeparable_solution_of_isPurelyInseparable_finrank_eq_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean#L45).
+**`IsDiscreteValuationRing.exists_isSeparable_solution_of_isPurelyInseparable_finrank_eq_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean#L45).
 
 > Let `A → B` be an extension of discrete valuation rings with separable fraction-field
 > extension `L/K`, where `K` has prime characteristic `p`, and suppose that `B` is Nagata. If
@@ -249,7 +249,7 @@ theorem exists_isSeparable_solution_of_isPurelyInseparable_finrank_eq_prime
 
 [Tag 0BRN](https://stacks.math.columbia.edu/tag/0BRN) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isSeparableSolution_of_exists_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean, line 784](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean#L784).
+**`IsDiscreteValuationRing.exists_isSeparableSolution_of_exists_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/SeparableSolution/InseparableStep.lean#L784).
 
 > Let `A → B` be an extension of discrete valuation rings with separable fraction-field
 > extension `L/K`. If `B` is Nagata and there is a solution for `A → B`, then there is a
@@ -286,7 +286,7 @@ theorem exists_isSeparableSolution_of_exists_isSolution
 
 [Tag 09IH](https://stacks.math.columbia.edu/tag/09IH) in the Stacks Project.
 
-**`IsDiscreteValuationRing.integralClosure_reducedTensorProduct_isNoetherian_and_spec_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationII.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationII.lean#L430).
+**`IsDiscreteValuationRing.integralClosure_reducedTensorProduct_isNoetherian_and_spec_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationII.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationII.lean#L429).
 
 > Let `A → B` be an essentially finite type extension of discrete valuation
 > rings with fraction fields `K → L`. If `K'/K` is algebraic and the integral
@@ -327,7 +327,7 @@ theorem integralClosure_reducedTensorProduct_isNoetherian_and_spec_surjective
 
 [Tag 09II](https://stacks.math.columbia.edu/tag/09II) in the Stacks Project.
 
-**`Stacks.EliminateRamification.exists_finite_extension_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationTheorem.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationTheorem.lean#L90).
+**`Stacks.EliminateRamification.exists_finite_extension_isSolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationTheorem.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EliminateRamificationTheorem.lean#L90).
 
 > **Tag 09II.** An essentially finite type extension of discrete valuation rings admits a
 > finite base-field extension which is a solution.
@@ -352,7 +352,7 @@ theorem exists_finite_extension_isSolution
 
 [Tag 0BRP](https://stacks.math.columbia.edu/tag/0BRP) in the Stacks Project.
 
-**`IsDiscreteValuationRing.exists_isSeparableSolution_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppSeparableSolutionII.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/EppSeparableSolutionII.lean#L120).
+**`IsDiscreteValuationRing.exists_isSeparableSolution_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/EppSeparableSolutionII.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/EppSeparableSolutionII.lean#L120).
 
 > Let `A → B` be an extension of discrete valuation rings with fraction fields `K ⊂ L` such that
 > `B` is essentially of finite type over `A`, `A` or `B` is a Nagata ring, and `L / K` is separable.
@@ -386,4 +386,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.118, Tag 0GLQ](https://stacks.math.columbia.edu/tag/0GLQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

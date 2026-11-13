@@ -7,7 +7,7 @@ statement: formalized
 
 # Perfect subset-sum covers of abelian 2-groups
 
-37 results, 11 proved and 26 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html).
+37 results, 11 proved and 26 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html).
 
 ## Perfect Subset Sum Cover
 
@@ -22,7 +22,7 @@ times $s$ covers $g$ by its subset sums (the empty set covers $0$).
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (subset sums, "covered `m` times", Lemma 8).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.coverCount`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.coverCount`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count).
 
 ## Perfect $m$-cover
 
@@ -36,7 +36,7 @@ empty subset has sum $0$).
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (perfect `m`-covers, Lemmas 5 and 8).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.IsPerfectMCover`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.IsPerfectMCover`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover).
 
 ## Perfect cover
 
@@ -48,7 +48,7 @@ sum $0$); that is, the family of the elements of $S$ is a perfect $1$-cover of $
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (perfect covers, Lemma 16).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.IsPerfectCover`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-cover).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.IsPerfectCover`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-cover).
 
 ## Number of perfect covers
 
@@ -60,7 +60,7 @@ exactly one subset of $S$ (the empty subset has sum $0$).
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (`C(G)`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count).
 
 ## Perfect cover count as a finset cardinality
 
@@ -72,7 +72,7 @@ $G$ that are perfect covers.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (`C(G)`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count_eq_card_filter`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-eq-card-filter).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count_eq_card_filter`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-eq-card-filter).
 
 ## Small values of the perfect cover count
 
@@ -86,7 +86,7 @@ The two perfect covers of $\mathbb{Z}_4$ are $\{1, 2\}$ and $\{2, 3\}$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorems 2 and 4 at `n = 1, 2` and `m = 2`.
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count_small`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-small).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.count_small`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-small).
 
 ## Perfect covers of ℤ₄: an example and a non-example
 
@@ -98,7 +98,7 @@ $\{1, 3\}$ is not, since $1 + 3 = 0$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 1 (perfect covers).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.isPerfectCover_zmod_four`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-cover-zmod-four).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.isPerfectCover_zmod_four`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-cover-zmod-four).
 
 ## Odd combinations
 
@@ -110,7 +110,7 @@ either $0$ or odd.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 3 (the operator `𝒯`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.oddCombinations`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.oddCombinations`, a definition declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations).
 
 ## Zero is an odd combination
 
@@ -121,7 +121,7 @@ in the set $\mathcal{T}(A)$ of odd combinations of $A$ (take every coefficient e
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 3 (the operator `𝒯`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.zero_mem_oddCombinations`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#zero-mem-odd-combinations).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.zero_mem_oddCombinations`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#zero-mem-odd-combinations).
 
 ## Elements of a finite set are odd combinations of it
 
@@ -134,7 +134,7 @@ take $c_x = 1$ and $c_y = 0$ for $y \neq x$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 3 (the operator `𝒯`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.mem_oddCombinations_of_mem`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#mem-odd-combinations-of-mem).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.mem_oddCombinations_of_mem`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#mem-odd-combinations-of-mem).
 
 ## Odd combinations of the empty set
 
@@ -146,7 +146,7 @@ every integer coefficient $c_x$ is $0$ or odd. Then $\mathcal{T}(\emptyset) = \{
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Section 3 (the operator `𝒯`).
 
-Formalized by `MetaMathlibExt.PerfectSubsetSumCover.oddCombinations_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations-empty).
+Formalized by `MetaMathlibExt.PerfectSubsetSumCover.oddCombinations_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations-empty).
 
 ## Existence of perfect covers
 
@@ -157,7 +157,7 @@ cover, and every nonzero $x \in G$ lies in some perfect cover of $G$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 1 (`jis-2025-25.7.8-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.exists_isPerfectCover_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-cover-mem).
+Stated but not proved: `MetaMathlibExt.exists_isPerfectCover_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-cover-mem).
 
 ## Number of perfect covers of a cyclic 2-group
 
@@ -168,7 +168,7 @@ $\mathbb{Z}_{2^n}$ has exactly $2^{n(n-1)/2}$ perfect covers.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 2 (`jis-2025-25.7.8-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.count_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow).
+Stated but not proved: `MetaMathlibExt.count_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow).
 
 ## Perfect covers of a product of two cyclic 2-groups
 
@@ -184,7 +184,7 @@ such that $a_{m,n} = 2^{(m-1)n} \, 2^{m(m-1)/2} \, p(m)$ for all $m \ge n$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 3 (`jis-2025-25.7.8-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.count_zmod_two_pow_prod_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow-prod-recurrence).
+Stated but not proved: `MetaMathlibExt.count_zmod_two_pow_prod_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow-prod-recurrence).
 
 ## Perfect covers of $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$
 
@@ -203,7 +203,7 @@ $2^{m(n-1)}$ has an integer exponent (it is $2^{-m}$ at $n = 0$).
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 4 (`jis-2025-25.7.8-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.count_elementary_prod_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-elementary-prod-zmod-two-pow).
+Stated but not proved: `MetaMathlibExt.count_elementary_prod_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-elementary-prod-zmod-two-pow).
 
 ## Perfect covers of a cyclic 2-group times a cyclic group of order 2, 4 or 8
 
@@ -220,7 +220,7 @@ $C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_8) =
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 25 (`jis-2025-25.7.8-cor-25`). The record gives no range; the second identity fails at `n = 0` (`C(ℤ₄) = 2`, formula `1`) and the third at `n = 0, 1` (`C(ℤ₈) = 8`, formula `-16`; `C(ℤ₂ ⊕ ℤ₈) = 160`, formula `80`), matching Theorem 3's range `m ≥ n`.
 
-Stated but not proved: `MetaMathlibExt.count_zmod_two_pow_prod_small_special` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow-prod-small-special).
+Stated but not proved: `MetaMathlibExt.count_zmod_two_pow_prod_small_special` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-zmod-two-pow-prod-small-special).
 
 ## Perfect covers of an elementary abelian group of order 4 or 8 times a cyclic 2-group
 
@@ -235,7 +235,7 @@ where $2^{2n-2}$ and $2^{3n-3}$ are integer powers of $2$ (fractional at $n = 0$
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 26 (`jis-2025-25.7.8-cor-26`). The record's third identity, for `(ℤ₂)^4 ⊕ ℤ_{2^n}`, is omitted: it fails as printed at `n = 1` (`C((ℤ₂)^5) = 83328`, formula `72328`).
 
-Stated but not proved: `MetaMathlibExt.count_elementary_two_three_prod_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-elementary-two-three-prod-zmod).
+Stated but not proved: `MetaMathlibExt.count_elementary_two_three_prod_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#count-elementary-two-three-prod-zmod).
 
 ## Adjoining an element doubles the multiplicity of a perfect cover
 
@@ -247,7 +247,7 @@ family $(g, s_1, \dots, s_k)$ is a perfect $2m$-cover of $G$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 5 (`jis-2025-25.7.8-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.isPerfectMCover_cons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-cons).
+Stated but not proved: `MetaMathlibExt.isPerfectMCover_cons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-cons).
 
 ## Projections of a perfect cover of a direct sum
 
@@ -260,7 +260,7 @@ perfect $2^n l$-cover of $H$, and the second coordinates form a perfect $2^m l$-
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 6 (`jis-2025-25.7.8-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.isPerfectMCover_fst_snd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-fst-snd).
+Stated but not proved: `MetaMathlibExt.isPerfectMCover_fst_snd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-fst-snd).
 
 ## Removing one element from a perfect cover
 
@@ -275,7 +275,7 @@ not.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 7 (`jis-2025-25.7.8-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.perfectCover_erase_coverCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-erase-cover-count).
+Stated but not proved: `MetaMathlibExt.perfectCover_erase_coverCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-erase-cover-count).
 
 ## Removing the last element of a perfect $2^j$-cover
 
@@ -288,7 +288,7 @@ $S_1$ covers $a + x_{k+1}$ exactly $2^j - c$ times.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 8 (`jis-2025-25.7.8-lem-8`). The paper's `|G| = 2^n` and `k + 1 = j + n` are not needed.
 
-Stated but not proved: `MetaMathlibExt.coverCount_init_add_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-init-add-last).
+Stated but not proved: `MetaMathlibExt.coverCount_init_add_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-init-add-last).
 
 ## Shifting by multiples of the last element of a perfect $2^j$-cover
 
@@ -302,7 +302,7 @@ $b + (2t + 1)\,x_{k+1}$ exactly $2^j - c$ times.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 9 (`jis-2025-25.7.8-cor-9`). `t` ranges over `ℤ`.
 
-Stated but not proved: `MetaMathlibExt.coverCount_init_add_zsmul_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-init-add-zsmul-last).
+Stated but not proved: `MetaMathlibExt.coverCount_init_add_zsmul_last` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-init-add-zsmul-last).
 
 ## Odd multiples and replacement in perfect covers
 
@@ -316,7 +316,7 @@ no perfect cover of $G$ contains both $a$ and $b$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 10 (`jis-2025-25.7.8-thm-10`). `a, b ≠ 0` added and `a ≠ b` added for (3): for `a = 0, b ≠ 0` conditions (2) and (3) hold vacuously while (1) fails, and for `a = b ≠ 0` condition (3) fails (Theorem 1 puts `a` in a perfect cover) while (1) holds.
 
-Stated but not proved: `MetaMathlibExt.oddMultiple_iff_perfectCover_replace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-multiple-iff-perfect-cover-replace).
+Stated but not proved: `MetaMathlibExt.oddMultiple_iff_perfectCover_replace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-multiple-iff-perfect-cover-replace).
 
 ## Replacing an entry of a perfect $2^k$-cover by an odd multiple
 
@@ -329,7 +329,7 @@ then the family $(b, s_1, \dots, s_N)$ is also a perfect $2^k$-cover of $G$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 11 (`jis-2025-25.7.8-lem-11`). The paper's `|G| = 2^n` and length `n + k` are not needed.
 
-Stated but not proved: `MetaMathlibExt.isPerfectMCover_cons_oddMultiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-cons-odd-multiple).
+Stated but not proved: `MetaMathlibExt.isPerfectMCover_cons_oddMultiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#is-perfect-mcover-cons-odd-multiple).
 
 ## Which families are perfect $m$-covers of $\mathbb{Z}_{2^n}$
 
@@ -342,7 +342,7 @@ $1 \le j \le n$ some $s_i$ has additive order $2^j$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 12 (`jis-2025-25.7.8-thm-12`). The multiplicity `m` is existentially quantified.
 
-Stated but not proved: `MetaMathlibExt.exists_isPerfectMCover_zmod_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-mcover-zmod-iff).
+Stated but not proved: `MetaMathlibExt.exists_isPerfectMCover_zmod_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-mcover-zmod-iff).
 
 ## Perfect $m$-covers of $\mathbb{Z}_{2^n}$ contain perfect covers
 
@@ -355,7 +355,7 @@ such that the subfamily $(s_i)_{i \in T}$ is a perfect $1$-cover of $\mathbb{Z}_
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 13 (`jis-2025-25.7.8-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.exists_perfectCover_subfamily_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-perfect-cover-subfamily-zmod).
+Stated but not proved: `MetaMathlibExt.exists_perfectCover_subfamily_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-perfect-cover-subfamily-zmod).
 
 ## Orders of second coordinates in perfect $m$-covers
 
@@ -368,7 +368,7 @@ every $j$ with $1 \le j \le n$ the second coordinate of some $s_i$ has additive 
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Corollary 14 (`jis-2025-25.7.8-cor-14`). The family has any finite index type (the record reuses `n` for its length).
 
-Stated but not proved: `MetaMathlibExt.exists_snd_addOrderOf_of_isPerfectMCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-snd-add-order-of-of-is-perfect-mc).
+Stated but not proved: `MetaMathlibExt.exists_snd_addOrderOf_of_isPerfectMCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-snd-add-order-of-of-is-perfect-mc).
 
 ## Odd combinations of disjoint parts of a perfect cover
 
@@ -382,7 +382,7 @@ or odd. Then: (a) for disjoint $A, B \subseteq S$, $\mathcal{T}(A) \cap \mathcal
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 15 (a), (b) (`jis-2025-25.7.8-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.oddCombinations_inter_of_isPerfectCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations-inter-of-is-perfect-cov).
+Stated but not proved: `MetaMathlibExt.oddCombinations_inter_of_isPerfectCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#odd-combinations-inter-of-is-perfect-cov).
 
 ## Odd combinations are closed under odd multiples
 
@@ -394,7 +394,7 @@ $(2j+1)g \in \mathcal{T}(A)$ for every integer $j$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Theorem 15 (c) (`jis-2025-25.7.8-thm-15`). "Union of equivalence classes" is stated as closure under odd multiples (`0 ∈ 𝒯(A)` is `zero_mem_oddCombinations`).
 
-Stated but not proved: `MetaMathlibExt.zsmul_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#zsmul-mem-odd-combinations).
+Stated but not proved: `MetaMathlibExt.zsmul_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#zsmul-mem-odd-combinations).
 
 ## Distinct subset sums from the odd-combination condition
 
@@ -410,7 +410,7 @@ perfect $1$-cover of $G$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 16 (`jis-2025-25.7.8-lem-16`). The paper's "nonzero" hypothesis is the `i = 1` case of `hx`; distinctness needs no finiteness, and "`m = n`" is `Nat.card G = 2 ^ m`.
 
-Stated but not proved: `MetaMathlibExt.coverCount_le_one_of_not_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-le-one-of-not-mem-odd-combin).
+Stated but not proved: `MetaMathlibExt.coverCount_le_one_of_not_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#cover-count-le-one-of-not-mem-odd-combin).
 
 ## Perfect covers containing a perfect cover of a subgroup
 
@@ -423,7 +423,7 @@ number of perfect covers of a group $K$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 17 (`jis-2025-25.7.8-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.card_perfectCover_superset_subgroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#card-perfect-cover-superset-subgroup).
+Stated but not proved: `MetaMathlibExt.card_perfectCover_superset_subgroup` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#card-perfect-cover-superset-subgroup).
 
 ## Elements of order two among odd combinations of part of a perfect cover
 
@@ -437,7 +437,7 @@ exactly one element of order $2$: it contains none or at least two.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 18 (`jis-2025-25.7.8-lem-18`). "No elements of order `2`, or at least two" is stated as "not exactly one".
 
-Stated but not proved: `MetaMathlibExt.not_existsUnique_addOrderOf_two_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#not-exists-unique-add-order-of-two-mem-o).
+Stated but not proved: `MetaMathlibExt.not_existsUnique_addOrderOf_two_mem_oddCombinations` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#not-exists-unique-add-order-of-two-mem-o).
 
 ## Elements of order $2$ in perfect covers of $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$
 
@@ -448,7 +448,7 @@ $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$ contains an element of order $2$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 19 (`jis-2025-25.7.8-lem-19`). Hypothesis `0 < m + n` added: the trivial group's perfect cover is empty.
 
-Stated but not proved: `MetaMathlibExt.exists_addOrderOf_eq_two_of_isPerfectCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-add-order-of-eq-two-of-is-perfect).
+Stated but not proved: `MetaMathlibExt.exists_addOrderOf_eq_two_of_isPerfectCover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 449](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L449). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-add-order-of-eq-two-of-is-perfect).
 
 ## Perfect covers with a prescribed number of odd last coordinates
 
@@ -461,7 +461,7 @@ whose coordinate $y \in \mathbb{Z}_{2^n}$ is odd.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 20 (`jis-2025-25.7.8-lem-20`). The setting `G = H ⊕ ℤ_{2^n}`, `|H| = 2^m`, is the one fixed before the lemma in Section 5; `y` odd means `y.val` odd; `n ≥ 1` added (for `n = 0` no `y` is odd).
 
-Stated but not proved: `MetaMathlibExt.exists_isPerfectCover_card_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-cover-card-odd).
+Stated but not proved: `MetaMathlibExt.exists_isPerfectCover_card_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#exists-is-perfect-cover-card-odd).
 
 ## Perfect covers with exactly one odd element
 
@@ -476,7 +476,7 @@ perfect covers of a group $K$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 21 (`jis-2025-25.7.8-lem-21`). "`y_1` odd, all other `y_i` even" is read as "exactly one odd `y`" for the unordered set; `y` odd means `y.val` odd; `n ≥ 1` added (`ℤ_{2^{n-1}}`).
 
-Stated but not proved: `MetaMathlibExt.card_perfectCover_one_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#card-perfect-cover-one-odd).
+Stated but not proved: `MetaMathlibExt.card_perfectCover_one_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#card-perfect-cover-one-odd).
 
 ## Spans of the odd and even entries of a perfect cover
 
@@ -493,7 +493,7 @@ $U \cap V = 0$ and $U + V = (\mathbb{Z}_2)^m$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 23 (`jis-2025-25.7.8-lem-23`). Indices are `0`-based (`i < k + 1` are the odd ones, and `k + 1 ≤ m + n` makes `y_1, …, y_{k+1}` exist); the perfect cover is an indexed family (perfect covers have distinct entries); `(ℤ₂)^m = U ⊕ V` is stated as `U ⊔ V = ⊤`.
 
-Stated but not proved: `MetaMathlibExt.perfectCover_odd_even_span` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-odd-even-span).
+Stated but not proved: `MetaMathlibExt.perfectCover_odd_even_span` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-odd-even-span).
 
 ## The even tail of a perfect cover
 
@@ -509,7 +509,7 @@ $s_i$ over exactly one set of indices taken from $\{k+2, \dots, m+n\}$.
 
 - John Greene and Clayton Higgins, *Maximal Subset Sums in a Group of Order a Power of 2*, Journal of Integer Sequences 28 (2025), Article 25.7.8, Lemma 24 (`jis-2025-25.7.8-lem-24`). The family's elements lie in `V ⊕ 2ℤ_{2^n}` by hypothesis and by definition of `V`; only the covering statement is stated.
 
-Stated but not proved: `MetaMathlibExt.perfectCover_even_tail_coverCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-even-tail-cover-count).
+Stated but not proved: `MetaMathlibExt.perfectCover_even_tail_coverCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/PerfectSubsetSumCoverWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html#perfect-cover-even-tail-cover-count).
 
 ## Depends on
 
@@ -518,4 +518,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Perfect subset-sum covers of abelian 2-groups](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/perfect-subset-sum-covers-of-abelian-2-groups)

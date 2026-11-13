@@ -8,7 +8,7 @@ proof: formalized
 
 # Cook-Levin: generator machine for the transition clause families
 
-58 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html).
+58 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html).
 
 ## Draft C3 variable layout
 
@@ -18,7 +18,7 @@ A layout consists of four natural numbers
 derived from the verifier: the size $A$ of the label/state block of a row, the number $K$ of
 stacks, the number $g$ of symbol codes (code $0$ is the empty cell), and the window depth $d$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#layout).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#layout).
 
 ## Variables per time step
 
@@ -26,7 +26,7 @@ For a layout with label/state block size $A$, $K$ stacks and $g$
 symbol codes, and a height $H$, the row width is $W = A + K \cdot (H \cdot g)$: the label/state
 block of $A$ variables, followed by $K \cdot H \cdot g$ cell variables.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.rowW`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#row-w).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.rowW`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#row-w).
 
 ## Number of variables of the transition-clause formula
 
@@ -34,7 +34,7 @@ For a layout $L$ and bounds $T$
 and $H$, the number of variables is $V = (T + 1) \cdot W$, where $W$ is the number of variables
 per time step at height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.numVars`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#num-vars).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.numVars`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#num-vars).
 
 ## Index of a label/state variable
 
@@ -43,7 +43,7 @@ index of label/state variable $a$ at time $t$ is $t \cdot W + a$, where $W$ is t
 (variables per time step) at height $H$. It is used for $a < A$, the size of the label/state
 block.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.xIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#x-idx).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.xIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#x-idx).
 
 ## Index of a cell variable in the transition-family layout
 
@@ -53,7 +53,7 @@ $j$, $x$, the variable for stack $k$, depth $j$ from the top and symbol code $x$
 index $tW + A + (kH + j)g + x$, where $W = A + KHg$ is the number of variables per time step. It is
 meant for $k < K$, $j < H$ and $x < g$ but is defined for all values.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.cIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#c-idx).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.cIdx`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#c-idx).
 
 ## Number of literals of a transition clause
 
@@ -61,7 +61,7 @@ For a layout $L$ with $KK$ stacks and window
 depth $d$, a label-transition clause has $KK \cdot d + 2$ literals: the current label, the
 $KK \cdot d$ window cells and the next label.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.nLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#n-lits).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.nLits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#n-lits).
 
 ## Position of a literal in a transition clause
 
@@ -75,7 +75,7 @@ the label/state variable $a'(i)$ at time $t + 1$.
 
 The literals of a clause are numbered $0, \dots, Kd + 1$, so the last case is the next label.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.litPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-pos).
+Formalized by `Cslib.Complexity.CookLevin.Family.litPos`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-pos).
 
 ## Literals of a transition clause
 
@@ -86,7 +86,7 @@ $n = KK \cdot d + 2$ is the number of literals, $p_j$ is the position of literal
 $(t, i)$, and the polarity $b_j$ is true exactly when $j = n - 1$. So every literal is negative
 except the last one, the next label.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.lits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lits).
+Formalized by `Cslib.Complexity.CookLevin.Family.lits`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lits).
 
 ## Dense clause from a list of literals
 
@@ -96,7 +96,7 @@ $v < V$, slot $v$ equal to the literal $x_v$ if the first pair in $\ell$ with in
 $(v, \mathrm{true})$, the literal $\neg x_v$ if it is $(v, \mathrm{false})$, and empty if $\ell$
 has no pair with index $v$. Pairs with index at least $V$ are ignored.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.denseClause`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#dense-clause).
+Formalized by `Cslib.Complexity.CookLevin.Family.denseClause`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#dense-clause).
 
 ## The transition clause family
 
@@ -110,7 +110,7 @@ $(T + 1)W$ variables built from the literal list $\neg X[t, \mathrm{la}(i)]$, th
 $\neg C[t, k, j, \mathrm{wa}(i, k, j)]$ for $k < K$ and $j < d$ in lexicographic order, then
 $X[t + 1, \mathrm{na}(i)]$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.family`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#family).
+Formalized by `Cslib.Complexity.CookLevin.Family.family`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#family).
 
 ## Gap encoding of a dense clause
 
@@ -126,7 +126,7 @@ When the positions in $\ell$ are strictly increasing, at least $m$ and less than
 encoding of the slots $m, \dots, V - 1$ of the dense clause over $V$ variables with literals
 $\ell$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.gapEnc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gap-enc).
+Formalized by `Cslib.Complexity.CookLevin.Family.gapEnc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gap-enc).
 
 ## Increasing literal positions
 
@@ -135,7 +135,7 @@ $(p_1, b_1), \dots, (p_n, b_n)$ with positions $p_k \in \mathbb{N}$ and signs $b
 literal positions from $\mathit{lo}$ below $V$ when $\mathit{lo} \le p_1 < p_2 < \dots < p_n < V$;
 for the empty list ($n = 0$) the condition is $\mathit{lo} \le V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Inc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#inc).
+Formalized by `Cslib.Complexity.CookLevin.Family.Inc`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#inc).
 
 ## Lowering the lower bound keeps a literal list increasing
 
@@ -144,7 +144,7 @@ $lo' \le lo$ and $V$ and a list $ls$ of literals, if the positions in $ls$ are s
 increasing, at least $lo$ and below $V$ (with $lo \le V$ if $ls$ is empty), then the same holds
 with $lo'$ in place of $lo$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Inc.mono_lo`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#mono-lo).
+Formalized by `Cslib.Complexity.CookLevin.Family.Inc.mono_lo`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#mono-lo).
 
 ## Encoding a dense clause block by block
 
@@ -153,7 +153,7 @@ a list of literals with $p_1 < p_2 < \dots < p_n < V$. Then the bit encoding of 
 over $V$ variables with literals $\ell$ is the gap encoding of $\ell$ from slot $0$ to $V$,
 followed by the clause terminator $00$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.encodeClause_denseClause`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#encode-clause-dense-clause).
+Formalized by `Cslib.Complexity.CookLevin.Family.encodeClause_denseClause`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#encode-clause-dense-clause).
 
 ## Shifting the start of a gap encoding
 
@@ -163,7 +163,7 @@ $m' \le p_1 < \dots < p_n < V$ (if $\ell$ is empty, require $m' \le V$). Then th
 of $\ell$ from slot $m$ to $V$ is $m' - m$ copies of the absent-slot block $01$ followed by the
 gap encoding of $\ell$ from slot $m'$ to $V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.gapEnc_shift`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gap-enc-shift).
+Formalized by `Cslib.Complexity.CookLevin.Family.gapEnc_shift`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gap-enc-shift).
 
 ## Successor of a number with a non-maximal remainder
 
@@ -171,7 +171,7 @@ Let $c$ and $d$ be natural numbers
 with $0 < d$ and $(c \bmod d) + 1 < d$. Then $\lfloor (c + 1) / d \rfloor = \lfloor c / d \rfloor$
 and $(c + 1) \bmod d = (c \bmod d) + 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.div_mod_succ_of_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#div-mod-succ-of-lt).
+Formalized by `Cslib.Complexity.CookLevin.Family.div_mod_succ_of_lt`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#div-mod-succ-of-lt).
 
 ## Increasing literal sequences
 
@@ -182,7 +182,7 @@ $n, a, \mathit{lo} \in \mathbb{N}$ with $a + n = m$ such that $\mathit{lo} \le V
 $\mathit{lo} \le p_a$ if $n > 0$, the list $f(a), f(a + 1), \dots, f(a + n - 1)$ has increasing
 literal positions from $\mathit{lo}$ below $V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.inc_of_mono`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#inc-of-mono).
+Formalized by `Cslib.Complexity.CookLevin.Family.inc_of_mono`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#inc-of-mono).
 
 ## Well-formed situation tables for the transition clauses
 
@@ -192,7 +192,7 @@ next-code table $\nu$ and a window table $w$, the tables are well formed for sit
 height $H$ when $\ell(i) < A$, $\nu(i) < A$, $w(i, k, j) < g$ for all $k < K$ and $j < d$, and
 $d \le H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.WF`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#wf).
+Formalized by `Cslib.Complexity.CookLevin.Family.WF`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#wf).
 
 ## Counters of the transition-family generator
 
@@ -202,7 +202,7 @@ $\mathrm{Hs}$, $\mathrm{Gc}$, $\mathrm{HG}$, $\mathrm{Ka}$, $\mathrm{Wc}$, $\mat
 $\mathrm{TW}$, $\mathrm{P}$, $\mathrm{Q}$, $\mathrm{tmp}$, $\mathrm{md}$, $\mathrm{c1}$ and
 $\mathrm{c2}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ck).
+Formalized by `Cslib.Complexity.CookLevin.Family.CK`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ck).
 
 ## Stacks of the clause-family generator
 
@@ -210,7 +210,7 @@ The stacks of the counter machine over the
 generator's counters: one stack of Booleans for the output and one unit counter for each of the
 generator's fifteen counters.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GK`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gk).
+Formalized by `Cslib.Complexity.CookLevin.Family.GK`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gk).
 
 ## Stack alphabets of the generator
 
@@ -218,7 +218,7 @@ The generator has an output stack and one counter stack
 for each of its counter names; the output stack has the alphabet $\{\mathrm{false},
 \mathrm{true}\}$ and every counter stack has a one-element alphabet.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#g).
+Formalized by `Cslib.Complexity.CookLevin.Family.GΓ`, an abbreviation declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#g).
 
 ## Stages of the transition-clause generator's precomputation
 
@@ -227,7 +227,7 @@ precomputation of the transition-clause generator. There are eight plain stages 
 $ek$, $dk$, $cp_1$, $cp_2$, $inc$ and $dk_2$, and three families $hg(s)$, $w(s)$ and $v(s)$
 indexed by the four stages $s$ of a multiplication site.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ps).
+Formalized by `Cslib.Complexity.CookLevin.Family.PS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ps).
 
 ## Stages of the transition-clause generator's literal routine
 
@@ -238,7 +238,7 @@ $cmp$, $emL$, $bad$, $slot$ and $dq$; two families $ma(s)$ and $mb(s)$ indexed b
 stages $s$ of a multiplication site; and two families $r(o)$ and $rB(o)$ indexed by the three
 comparison outcomes $o$ (less, equal, greater).
 
-Formalized by `Cslib.Complexity.CookLevin.Family.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ls).
+Formalized by `Cslib.Complexity.CookLevin.Family.LS`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#ls).
 
 ## Labels of the clause-family generator
 
@@ -250,7 +250,7 @@ finishes clause $i$; the label that ends a time step; or the final label $\maths
 successful run halts. There are finitely many labels; the generator uses $m$ equal to the number
 of literals of a clause.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gl).
+Formalized by `Cslib.Complexity.CookLevin.Family.GL`, an inductive type declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gl).
 
 ## Entry label of a literal routine (transition-clause generator)
 
@@ -261,7 +261,7 @@ $j < m$, and the halting label $\mathrm{done}$ when $j \ge m$.
 
 The generator never uses it with $j \ge m$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-l).
+Formalized by `Cslib.Complexity.CookLevin.Family.GL.litL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-l).
 
 ## Label after a literal routine in the transition-family generator
 
@@ -272,7 +272,7 @@ moves to the label that emits the leading gap of that clause if $j = 0$. Otherwi
 first label of the routine for literal $j - 1$ if $j - 1 < m$, and to the halting label if
 $j - 1 \ge m$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#after).
+Formalized by `Cslib.Complexity.CookLevin.Family.GL.after`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#after).
 
 ## Entry label of the clause routine for situation $i$
 
@@ -280,7 +280,7 @@ For $i < N$, the generator label
 $\mathrm{e00}_i$ at which the routine emitting the clause of situation $i$ starts; for $i \ge N$,
 the end-of-time-step label $\mathrm{dtw}$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GL.sitL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#sit-l).
+Formalized by `Cslib.Complexity.CookLevin.Family.GL.sitL`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#sit-l).
 
 ## Label after a situation clause in the transition-family generator
 
@@ -290,7 +290,7 @@ situation $i$ is the end-of-time-step label if $i = 0$. Otherwise it is the firs
 clause routine for situation $i - 1$ if $i - 1 < N$, and the end-of-time-step label again if
 $i - 1 \ge N$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.GL.afterS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#after-s).
+Formalized by `Cslib.Complexity.CookLevin.Family.GL.afterS`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#after-s).
 
 ## Stack index of a literal in a transition clause
 
@@ -302,7 +302,7 @@ With the row offset $k_B$ and the constant offset $c_i$ of situation $i$, the po
 $j$ of clause $(t, i)$ at height $H$ is $tW + k_A(j)\,Hg + k_B(j)\,W + c_i(j)$, where $g$ is the
 number of symbol codes and $W$ the number of variables per time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.kA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#k-a).
+Formalized by `Cslib.Complexity.CookLevin.Family.kA`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#k-a).
 
 ## Row offset of a literal in a transition clause
 
@@ -312,7 +312,7 @@ depth $d$, the row offset $k_B(j)$ of literal $j$ is $0$ when $j \le Kd$ and $1$
 Among the literals $0, \dots, Kd + 1$ of a transition clause it is $1$ only for the last one,
 the next-label literal, which refers to the following time step.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.kB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#k-b).
+Formalized by `Cslib.Complexity.CookLevin.Family.kB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 415](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L415). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#k-b).
 
 ## Constant offset of a literal position
 
@@ -323,7 +323,7 @@ constant part of the position of literal $j$ of situation $i$ is $\mathrm{la}(i)
 $A + ((j - 1) \bmod d)\,g + \mathrm{wa}(i, \lfloor (j - 1)/d \rfloor, (j - 1) \bmod d)$ if
 $1 \le j \le Kd$, and is $\mathrm{na}(i)$ if $j > Kd$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.cst`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#cst).
+Formalized by `Cslib.Complexity.CookLevin.Family.cst`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#cst).
 
 ## Polarity of a transition-clause literal
 
@@ -331,7 +331,7 @@ For a layout with $K$ stacks and window depth
 $d$, a label-transition clause has $n = K d + 2$ literals, and literal $j$ is positive (polarity
 $\mathrm{true}$) exactly when $j = n - 1$: only the last (next-code) literal is positive.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.sgn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#sgn).
+Formalized by `Cslib.Complexity.CookLevin.Family.sgn`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#sgn).
 
 ## Literal routine of the transition-clause generator
 
@@ -367,7 +367,7 @@ $11$ otherwise, and goes to $dq$, which empties $\mathsf{Q}$ and then goes to th
 finishes the clause of situation $i$ if $j = 0$, and to the first stage of the routine for
 literal $j - 1$ otherwise.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-p).
+Formalized by `Cslib.Complexity.CookLevin.Family.litP`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-p).
 
 ## Generator machine for the transition clause families
 
@@ -398,7 +398,7 @@ the end of a time step it empties $\mathsf{TW}$ and returns to the loop head.
 It is meant to be started with $T$ on $\mathsf{Tn}$, $H$ on $\mathsf{Hs}$ and every other
 counter empty.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#prog).
+Formalized by `Cslib.Complexity.CookLevin.Family.prog`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#prog).
 
 ## The clause-family generator as a finite stack machine
 
@@ -411,7 +411,7 @@ generator's alphabets, its labels are the generator's labels for $N$ situations 
 numbers below the number of literals of a clause, execution starts at the first precomputation
 stage, and its internal state is a Boolean, initially false.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.genTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-tm).
+Formalized by `Cslib.Complexity.CookLevin.Family.genTM`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-tm).
 
 ## Scratch counters at rest in the clause-family generator
 
@@ -419,7 +419,7 @@ A counter assignment $F$ of the
 generator (a natural number for each of its counters) is at rest when its six scratch counters
 $Q$, $K_a$, $\mathit{tmp}$, $\mathit{md}$, $c_1$ and $c_2$ all hold $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#rest).
+Formalized by `Cslib.Complexity.CookLevin.Family.Rest`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#rest).
 
 ## Run of one literal routine (transition-clause generator)
 
@@ -438,7 +438,7 @@ counters $F$ and output $o$, to the label that follows literal $j$, with state f
 except that $P = q$, and output $s\,(01)^m\,o$, where $s$ is the slot code of a literal with
 polarity $\mathrm{sgn}(j)$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-run).
+Formalized by `Cslib.Complexity.CookLevin.Family.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-run).
 
 ## Boundary before a literal of a transition clause
 
@@ -448,7 +448,7 @@ $j$ is less than the number $m = Kd + 2$ of literals of a transition clause, thi
 of literal $j$ of clause $(t, i)$; otherwise it is the number $V$ of variables of $L$ for $T$ and
 $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#bnd).
+Formalized by `Cslib.Complexity.CookLevin.Family.bnd`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 618](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L618). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#bnd).
 
 ## Resting counter values in the transition-family time loop
 
@@ -460,7 +460,7 @@ counters $\mathrm{Q}$, $\mathrm{Ka}$, $\mathrm{tmp}$, $\mathrm{md}$, $\mathrm{c1
 are all $0$, $F(\mathrm{TW}) = tW$, $F(\mathrm{HG}) = Hg$, $F(\mathrm{Wc}) = W$ and
 $F(\mathrm{Vc}) = V$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Base`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#base).
+Formalized by `Cslib.Complexity.CookLevin.Family.Base`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#base).
 
 ## Per-literal time bound of the transition-clause generator
 
@@ -471,7 +471,7 @@ variables. The per-literal time bound is $6V + K(2Hg + 3) + 2K + 2W + 22$.
 
 It bounds the steps spent on one literal apart from the loop that emits the gap before it.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-e).
+Formalized by `Cslib.Complexity.CookLevin.Family.litE`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lit-e).
 
 ## Step bound for one clause of the transition-family generator
 
@@ -480,7 +480,7 @@ label/state block size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, a
 natural numbers. With $W = A + KHg$, $V = (T + 1)W$, $m = Kd + 2$ and
 $E = 6V + K(2Hg + 3) + 2K + 2W + 22$, the bound is $V(3V + 6) + mE + 3V + 4$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#clause-b).
+Formalized by `Cslib.Complexity.CookLevin.Family.clauseB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#clause-b).
 
 ## Run of the literal routines of a clause (transition-clause generator)
 
@@ -501,7 +501,7 @@ with state $v'$, counters $F$ except that $P = b_0$, and output $e_0\,00\,o$.
 The label that follows literal $j$ is the routine for literal $j - 1$, or the leading-gap stage
 when $j = 0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lits-run).
+Formalized by `Cslib.Complexity.CookLevin.Family.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 683](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L683). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#lits-run).
 
 ## Run of the transition-family generator on one clause
 
@@ -516,7 +516,7 @@ counter values $F$, and output stack the encoding of the dense clause over $V$ v
 literals of clause $(t, i)$ followed by $o$. Here $V$ is the number of variables of $L$ for $T$
 and $H$, and $C$ is the step bound for one whole clause of $L$ for $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#clause-run).
+Formalized by `Cslib.Complexity.CookLevin.Family.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#clause-run).
 
 ## Encoded transition clauses of one time step
 
@@ -527,7 +527,7 @@ $t$, this is the bit string obtained by concatenating, for $i = 0, 1, \dots, N -
 the encoding of the dense clause over $V$ variables whose literals are the literals of clause
 $(t, i)$, where $V$ is the number of variables of $L$ for $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.blk`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 795](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L795). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#blk).
+Formalized by `Cslib.Complexity.CookLevin.Family.blk`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 795](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L795). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#blk).
 
 ## Time-loop invariant of the transition-family generator
 
@@ -541,7 +541,7 @@ $f(\mathrm{Wc}) = W$ and $f(\mathrm{Vc}) = V$.
 
 The counters $\mathrm{Tn}$, $\mathrm{Ti}$, $\mathrm{Hs}$ and $\mathrm{Gc}$ are not constrained.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.LoopP`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#loop-p).
+Formalized by `Cslib.Complexity.CookLevin.Family.LoopP`, a structure declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#loop-p).
 
 ## Step bound for one time-loop iteration of the transition-family generator
 
@@ -550,7 +550,7 @@ $L$ and natural numbers $N$, $T$, $H$, let $W$ be the number of variables per ti
 height $H$ and $C$ the step bound for one whole clause of $L$ for $T$ and $H$. The bound is
 $T(2W + 3) + TW + T + 3 + NC$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.bodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 832](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L832). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#body-b).
+Formalized by `Cslib.Complexity.CookLevin.Family.bodyB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 832](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L832). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#body-b).
 
 ## Step bound for the transition-clause generator's precomputation
 
@@ -559,7 +559,7 @@ $KK$ stacks and $g$ symbol codes and bounds $T$ and $H$, the bound is
 $H (2g + 3) + KK (2Hg + 3) + (T + 1)(2W + 3) + H + 2 KK + 4T + 16$, where $W$ is the number of
 variables per time step at height $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 836](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L836). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#pre-b).
+Formalized by `Cslib.Complexity.CookLevin.Family.preB`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 836](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L836). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#pre-b).
 
 ## Time bound of the generator
 
@@ -571,7 +571,7 @@ for $L$, $N$, $T$ and $H$.
 The bound is explicit; that it is at most $C\,(T + H + 1)^5$ for a constant $C$ depending only
 on $L$ and $N$ is proved separately.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.genBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-bound).
+Formalized by `Cslib.Complexity.CookLevin.Family.genBound`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-bound).
 
 ## One iteration of the time loop
 
@@ -584,7 +584,7 @@ counters $f$ and output $b_t o$ in at most $B$ steps. Here $b_t$ is the concaten
 encoded clauses of time step $t$ for situations $0, \dots, N-1$, and $B$ is the time-loop body
 bound for $N$, $T$ and $H$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.time_body`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#time-body).
+Formalized by `Cslib.Complexity.CookLevin.Family.time_body`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#time-body).
 
 ## Generator output after part of the time loop
 
@@ -594,7 +594,7 @@ iterations is the concatenation, over the $m$ consecutive time steps $s$ startin
 increasing order, of the encoded clauses of time step $s$, followed by $o$. Here $T - m$ is
 truncated subtraction, so for $m \le T$ these are the time steps $T - m, \dots, T - 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.outAfter`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#out-after).
+Formalized by `Cslib.Complexity.CookLevin.Family.outAfter`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#out-after).
 
 ## Initial counters of the transition-clause generator
 
@@ -602,7 +602,7 @@ For natural numbers $T$ and $H$,
 the initial counter assignment gives the counter $\mathrm{Tn}$ the value $T$, the counter
 $\mathrm{Hs}$ the value $H$, and every other counter of the generator the value $0$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 912](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L912). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#init-f).
+Formalized by `Cslib.Complexity.CookLevin.Family.initF`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 912](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L912). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#init-f).
 
 ## Correctness of the clause-family generator, with its explicit time bound
 
@@ -618,7 +618,7 @@ the error stage of the literal routine, which also halts), in some state, with s
 stack holds the encoding of the clause family for $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$,
 $T$, $H$ and $N$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.gen_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 924](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L924). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-run).
+Formalized by `Cslib.Complexity.CookLevin.Family.gen_run`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 924](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L924). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-run).
 
 ## Correctness of the clause-family generator
 
@@ -633,14 +633,14 @@ reaches its final label $\mathsf{done}$ (not the error stage of the literal rout
 halts), in some state, with stacks whose output stack holds the encoding of the clause family for
 $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.gen_correct`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-correct).
+Formalized by `Cslib.Complexity.CookLevin.Family.gen_correct`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-correct).
 
 ## Uniform layout
 
 For $k \in \mathbb{N}$, the layout whose label/state block size, number of
 stacks, number of symbol codes and window depth are all equal to $k$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.Layout.uni`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1023](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1023). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#uni).
+Formalized by `Cslib.Complexity.CookLevin.Family.Layout.uni`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1023](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1023). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#uni).
 
 ## Uniform bound on the generator's time
 
@@ -652,7 +652,7 @@ at most $323\,k^5 y^5$.
 Every monomial of the bound is at most $k^5 y^5$, and its coefficients sum to $323$, its value at
 $k = y = 1$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.genBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1033](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1033). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-bound-uni).
+Formalized by `Cslib.Complexity.CookLevin.Family.genBound_uni`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1033](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1033). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-bound-uni).
 
 ## Constant of the generator's time bound
 
@@ -660,7 +660,7 @@ For a layout $L$ with label/state block size $A$,
 $K$ stacks, $g$ symbol codes and window depth $d$, and for $N$ situations, the constant is
 $323\,(A + K + g + d + N + 1)^5$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.genC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1051](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1051). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-c).
+Formalized by `Cslib.Complexity.CookLevin.Family.genC`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1051](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1051). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-c).
 
 ## Time-bound polynomial of the clause-family generator
 
@@ -671,7 +671,7 @@ is the constant of the generator's time bound for $L$ and $N$.
 Evaluated at $T + H$ it is $c\,(T + H + 1)^5$, the generator's time bound, in the polynomial form
 that polynomial-time computability of a multi-stack machine uses.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.genPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1063](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1063). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-poly).
+Formalized by `Cslib.Complexity.CookLevin.Family.genPoly`, a definition declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1063](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1063). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-poly).
 
 ## Polynomial time bound for the clause-family generator
 
@@ -687,7 +687,7 @@ final label $\mathsf{done}$ (not the error stage of the literal routine, which a
 state, with stacks whose output stack holds the encoding of the clause family for $L$,
 $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 
-Formalized by `Cslib.Complexity.CookLevin.Family.gen_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1070](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1070). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-time).
+Formalized by `Cslib.Complexity.CookLevin.Family.gen_time`, a theorem declared in [CSLibExt/Computability/Complexity/CookLevin/Family.lean, line 1070](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/CookLevin/Family.lean#L1070). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html#gen-time).
 
 ## Depends on
 
@@ -696,4 +696,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cook-Levin: generator machine for the transition clause families](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/cook-levin/cook-levin-generator-machine-for-the-transition)

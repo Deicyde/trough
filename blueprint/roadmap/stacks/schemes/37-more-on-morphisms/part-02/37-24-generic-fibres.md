@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.24 Generic fibres
 
-Section 37.24 of the Stacks Project, [Tag 054V](https://stacks.math.columbia.edu/tag/054V). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.24 of the Stacks Project, [Tag 054V](https://stacks.math.columbia.edu/tag/054V). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 054W, a lemma
 
 [Tag 054W](https://stacks.math.columbia.edu/tag/054W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_preimage_eq_bot_of_isEmpty_generic_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean#L154).
+**`AlgebraicGeometry.exists_open_preimage_eq_bot_of_isEmpty_generic_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean#L154).
 
 > **Stacks Project, Tag 054W.** Let `f : X ⟶ Y` be a finite type morphism with `Y`
 > irreducible with generic point `η`. If the fibre over `η` is empty, then the base change of `f`
@@ -32,7 +32,7 @@ theorem exists_open_preimage_eq_bot_of_isEmpty_generic_fiber
 
 [Tag 05F5](https://stacks.math.columbia.edu/tag/05F5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nonempty_open_surjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Surjective.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Surjective.lean#L45). References: EGA IV (1.8.6), “first assertion”.
+**`AlgebraicGeometry.exists_nonempty_open_surjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Surjective.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Surjective.lean#L45). References: EGA IV (1.8.6), “first assertion”.
 
 > **Stacks Project, Tag 05F5.** A finite type morphism to an irreducible scheme
 > with nonempty generic fibre is surjective over some nonempty open subscheme of
@@ -50,7 +50,7 @@ theorem exists_nonempty_open_surjective_baseChange
 
 [Tag 054X](https://stacks.math.columbia.edu/tag/054X) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_isNowhereDense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/NowhereDenseGenericFibre.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/NowhereDenseGenericFibre.lean#L444).
+**`AlgebraicGeometry.exists_open_isNowhereDense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/NowhereDenseGenericFibre.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/NowhereDenseGenericFibre.lean#L444).
 
 > **Stacks Project, Tag 054X.** A closed subset that is nowhere dense in the generic fibre of a
 > finite type morphism remains nowhere dense in all fibres over a nonempty open subset of the
@@ -73,7 +73,7 @@ theorem exists_open_isNowhereDense_fiber {X Y : Scheme.{u}} (f : X ⟶ Y) [Irred
 
 [Tag 0573](https://stacks.math.columbia.edu/tag/0573) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_isSchemeTheoreticallyDense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/SchemeTheoreticDenseFibre.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/SchemeTheoreticDenseFibre.lean#L71).
+**`AlgebraicGeometry.exists_open_isSchemeTheoreticallyDense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/SchemeTheoreticDenseFibre.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/SchemeTheoreticDenseFibre.lean#L71).
 
 > **Stacks Project, Tag 0573.** Let `f : X ⟶ Y` be a finite type morphism of schemes with `Y`
 > irreducible with generic point `η`, and let `U ⊆ X` be an open subscheme whose trace on the fibre
@@ -93,7 +93,7 @@ public theorem exists_open_isSchemeTheoreticallyDense_fiber {X Y : Scheme.{u}} (
 
 [Tag 054Y](https://stacks.math.columbia.edu/tag/054Y) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_fiber_covered_by_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean#L117).
+**`AlgebraicGeometry.exists_open_fiber_covered_by_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/CoveringFibres.lean#L117).
 
 > **Stacks Project, Tag 054Y.** Let `f : X ⟶ Y` be a finite type morphism with `Y`
 > irreducible with generic point `η`. If the subsets `Z i` cover the generic fibre, then over
@@ -116,7 +116,7 @@ theorem exists_open_fiber_covered_by_closures
 
 [Tag 054Z](https://stacks.math.columbia.edu/tag/054Z) in the Stacks Project.
 
-**`AlgebraicGeometry.comap_nilradical_fiberι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/GenericFibreReduction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/GenericFibreReduction.lean#L99).
+**`AlgebraicGeometry.comap_nilradical_fiberι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/GenericFibreReduction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/GenericFibreReduction.lean#L99).
 
 > The reduction of the fibre over a generic point of an irreducible component is the
 > base change of the reduction of the source.
@@ -131,7 +131,7 @@ theorem comap_nilradical_fiberι {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0550](https://stacks.math.columbia.edu/tag/0550) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteUniversalHomeomorphism_geometricallyReduced_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyReducedGenericFibre.lean, line 978](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyReducedGenericFibre.lean#L978).
+**`AlgebraicGeometry.exists_finiteUniversalHomeomorphism_geometricallyReduced_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyReducedGenericFibre.lean, line 978](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyReducedGenericFibre.lean#L978).
 
 > **Stacks Project, Tag 0550.** A finite type morphism over an irreducible
 > base admits, locally on the base, a finite universal homeomorphic cover whose
@@ -166,7 +166,7 @@ public theorem exists_finiteUniversalHomeomorphism_geometricallyReduced_genericF
 
 [Tag 0551](https://stacks.math.columbia.edu/tag/0551) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nonemptyOpen_finiteEtale_cover_geometricallyIrreducible_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyIrreducible.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyIrreducible.lean#L574).
+**`AlgebraicGeometry.exists_nonemptyOpen_finiteEtale_cover_geometricallyIrreducible_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyIrreducible.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GeometricallyIrreducible.lean#L574).
 
 > **Stacks Project, Tag 0551.** After passing to a nonempty open of an irreducible base, a
 > finite type morphism has a finite etale surjective base change from an irreducible affine
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.24, Tag 054V](https://stacks.math.columbia.edu/tag/054V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

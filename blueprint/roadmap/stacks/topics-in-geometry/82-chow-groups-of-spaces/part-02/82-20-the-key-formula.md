@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.20 The key formula
 
-Section 82.20 of the Stacks Project, [Tag 0EQU](https://stacks.math.columbia.edu/tag/0EQU). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.20 of the Stacks Project, [Tag 0EQU](https://stacks.math.columbia.edu/tag/0EQU). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EQU, the section
 
 [Tag 0EQU](https://stacks.math.columbia.edu/tag/0EQU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.genericResidueFieldEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L188). The attribute's comment: “the identification κ(ξ) = R(Z) of the residue field at the generic point of a prime divisor with its function field, at the residue field of the chosen chart”.
+**`AlgebraicGeometry.Space.PrimeDivisor.genericResidueFieldEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L188). The attribute's comment: “the identification κ(ξ) = R(Z) of the residue field at the generic point of a prime divisor with its function field, at the residue field of the chosen chart”.
 
 > **The canonical isomorphism `θ_Z : κ(u) ≃+* R(Z)`** of Section 0EQU between the residue
 > field of the local ring of the chart at the generic point of a prime divisor and the function
@@ -25,7 +25,7 @@ def PrimeDivisor.genericResidueFieldEquivFunctionField :
     Z.genericResidueField B S hS hX hdec ≃+* rationalFunctions B S hS Z.closed.1
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.henselianResidueFieldEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L306). The attribute's comment: “the residue field of the henselian local ring at the generic point of a prime divisor is its function field”.
+**`AlgebraicGeometry.Space.PrimeDivisor.henselianResidueFieldEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericResidueField.lean#L306). The attribute's comment: “the residue field of the henselian local ring at the generic point of a prime divisor is its function field”.
 
 > **The composite `κ(𝒪^h_{X, ξ}) ≃+* R(Z)`**: the residue field of the henselian local ring at
 > the generic point of a prime divisor is the function field of the prime divisor, through the
@@ -40,7 +40,7 @@ def PrimeDivisor.henselianResidueFieldEquivFunctionField :
       rationalFunctions B S hS Z.closed.1
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.genericRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericRestriction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericRestriction.lean#L268). The attribute's comment: “the image s\_ξ|\_Z of a generator s\_ξ of ℒ\_ξ in the fibre at the generic point, as a meromorphic section of ℒ|\_Z”.
+**`AlgebraicGeometry.Space.PrimeDivisor.genericRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericRestriction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormula/GenericRestriction.lean#L268). The attribute's comment: “the image s\_ξ|\_Z of a generator s\_ξ of ℒ\_ξ in the fibre at the generic point, as a meromorphic section of ℒ|\_Z”.
 
 > **`σ_Z = s_ξ|_Z`, the restriction to a prime divisor of the generator at its generic point**:
 > the unique meromorphic section of `ℒ|_Z` whose pullback along `ρ_Z : Spec κ(u) → Z` is the image
@@ -52,7 +52,7 @@ def PrimeDivisor.genericRestriction :
       (Z.restrictModule B S hS hX L)
 ```
 
-**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean#L420). The attribute's comment: “either cycle identity of the section, c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i) in Z\_\{n-2}(X), with the component cycle no longer a parameter: it is the Weil divisor div\_\{N|W}(t\_W) of Stacks 0EQE part (1) on W, for the restriction N|W of Stacks 03LU. N is arbitrary here, and what is then carried on W is what Stacks 0EQE carries on X: the meromorphic section t W, the Stacks 0EPR ratio family, the Stacks 0EPS local finiteness and the Stacks 0EDN dimension function. For N invertible, which is the section's own hypothesis, t W and the dimension function are produced and not carried, see firstChernCapCycleMap\_divisorCycleAt\_eq\_componentDivisorSum\_of\_isInvertible. hdim is Stacks 0EPZ. The key formula 0EQV IS proved, unconditionally and axiom-clean, as keyFormula\_of\_ne\_zero of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, and 0EQX follows there as canonicalFirstChernCap\_divisor\_comm; what is still open is only the quantified predicate KeyFormula of KeyFormulaCycleIdentities, which ranges over the component rules of 0EQJ and the tame-symbol divisors”.
+**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean#L422). The attribute's comment: “either cycle identity of the section, c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i) in Z\_\{n-2}(X), with the component cycle no longer a parameter: it is the Weil divisor div\_\{N|W}(t\_W) of Stacks 0EQE part (1) on W, for the restriction N|W of Stacks 03LU. N is arbitrary here, and what is then carried on W is what Stacks 0EQE carries on X: the meromorphic section t W, the Stacks 0EPR ratio family, the Stacks 0EPS local finiteness and the Stacks 0EDN dimension function. For N invertible, which is the section's own hypothesis, t W and the dimension function are produced and not carried, see firstChernCapCycleMap\_divisorCycleAt\_eq\_componentDivisorSum\_of\_isInvertible. hdim is Stacks 0EPZ. The key formula 0EQV IS proved, unconditionally and axiom-clean, as keyFormula\_of\_ne\_zero of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, and 0EQX follows there as canonicalFirstChernCap\_divisor\_comm; what is still open is only the quantified predicate KeyFormula of KeyFormulaCycleIdentities, which ranges over the component rules of 0EQJ and the tame-symbol divisors”.
 
 > **Stacks 0EQU: either cycle identity of the section preceding the key formula, with the
 > component cycle `div_{𝒩|Z_i}(t_i|Z_i)` constructed and not assumed.**  In Situation 0EDT let
@@ -86,7 +86,8 @@ def PrimeDivisor.genericRestriction :
 >
 > The key formula itself, Stacks 0EQV, **is** proved, unconditionally and axiom-clean:
 > `AlgebraicGeometry.Space.keyFormula_of_ne_zero` of
-> `StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline`, at the canonical choices and
+> `StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline`, at the canonical choices
+> and
 > for the constructed tame-symbol sum, from which Stacks 0EQX follows there as
 > `AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`.  What is still open is only the
 > *predicate* `AlgebraicGeometry.Space.KeyFormula` of
@@ -142,7 +143,7 @@ theorem firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum
               ((Z i).toIntegralClosedSubspace D.site D.base D.base_mem) (hdim i))
 ```
 
-**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean#L597). The attribute's comment: “either cycle identity of the section for an invertible N, with the component cycle div\_\{N|W}(t\_W) of Stacks 0EQE part (1) on W and its meromorphic section t\_W no longer a parameter: t\_W is a regular meromorphic section of N|W produced by Stacks 0EPQ on W, and the Stacks 0EDN dimension function on W is the one on X pulled back along the closed embedding. What is carried on W is the Stacks 0EPR ratio family and the Stacks 0EPS local finiteness of the prime divisors of nonzero order, both blocked by LocalRatio being an unconstrained function type. hdim is Stacks 0EPZ. The key formula 0EQV IS proved, unconditionally and axiom-clean, as keyFormula\_of\_ne\_zero of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, and 0EQX follows there as canonicalFirstChernCap\_divisor\_comm; what is still open is only the quantified predicate KeyFormula of KeyFormulaCycleIdentities, which ranges over the component rules of 0EQJ and the tame-symbol divisors”.
+**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaComponentDivisor.lean#L601). The attribute's comment: “either cycle identity of the section for an invertible N, with the component cycle div\_\{N|W}(t\_W) of Stacks 0EQE part (1) on W and its meromorphic section t\_W no longer a parameter: t\_W is a regular meromorphic section of N|W produced by Stacks 0EPQ on W, and the Stacks 0EDN dimension function on W is the one on X pulled back along the closed embedding. What is carried on W is the Stacks 0EPR ratio family and the Stacks 0EPS local finiteness of the prime divisors of nonzero order, both blocked by LocalRatio being an unconstrained function type. hdim is Stacks 0EPZ. The key formula 0EQV IS proved, unconditionally and axiom-clean, as keyFormula\_of\_ne\_zero of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, and 0EQX follows there as canonicalFirstChernCap\_divisor\_comm; what is still open is only the quantified predicate KeyFormula of KeyFormulaCycleIdentities, which ranges over the component rules of 0EQJ and the tame-symbol divisors”.
 
 > **Stacks 0EQU for an invertible `𝒩`, with the component cycle's meromorphic section and
 > dimension function produced and not assumed.**  Section 0EQU's cycle identity
@@ -176,7 +177,8 @@ theorem firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum
 >
 > The key formula itself, Stacks 0EQV, **is** proved, unconditionally and axiom-clean:
 > `AlgebraicGeometry.Space.keyFormula_of_ne_zero` of
-> `StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline`, at the canonical choices and
+> `StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline`, at the canonical choices
+> and
 > for the constructed tame-symbol sum, from which Stacks 0EQX follows there as
 > `AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`.  What is still open is only the
 > *predicate* `AlgebraicGeometry.Space.KeyFormula` of
@@ -232,7 +234,7 @@ theorem firstChernCapCycleMap_divisorCycleAt_eq_componentDivisorSum_of_isInverti
               ((Z i).toIntegralClosedSubspace D.site D.base D.base_mem) (hdim i))
 ```
 
-**`AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L137). The attribute's comment: “the key formula of the section, c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X), at the section's hypotheses; Lemma 0EQV is keyFormula\_of\_ne\_zero”.
+**`AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L137). The attribute's comment: “the key formula of the section, c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X), at the section's hypotheses; Lemma 0EQV is keyFormula\_of\_ne\_zero”.
 
 > **Section 0EQU, the key formula: `c₁(𝒩) ∩ div_ℒ(s) = c₁(ℒ) ∩ div_𝒩(t)` in `CH_{n-2}(X)`.**
 > In Situation 0EDT let `X/B` be good, `X` integral with `dim_δ(X) = n`, let `ℒ` and `𝒩` be
@@ -262,7 +264,7 @@ theorem canonicalFirstChernCap_divisor_comm
           (deltaDimensionClosed_eq_sub_two_add_one_add_one D sX hX hn))
 ```
 
-**`AlgebraicGeometry.Space.canonicalFirstChernCap_canonicalDivisorCycleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean#L309). The attribute's comment: “the cycle identities of the section, in CH\_\{n-2}(X) as the source states them: c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i), with everything at the canonical choices (the cap product, the divisors and the ratios s = f\_i s\_i are constructed, not carried) and for an arbitrary regular meromorphic section of N|Z\_i in place of t\_i|Z\_i; the second identity is the same statement with (L, s) and (N, t) exchanged. Claims (1)-(2) of the section are canonicalDivisorCycle\_apply\_eq\_zero\_of\_notMem, canonicalDivisorCycle\_apply\_primeDivisor and orderOfVanishingSection\_canonical\_eq\_ord”.
+**`AlgebraicGeometry.Space.canonicalFirstChernCap_canonicalDivisorCycleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean#L310). The attribute's comment: “the cycle identities of the section, in CH\_\{n-2}(X) as the source states them: c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i), with everything at the canonical choices (the cap product, the divisors and the ratios s = f\_i s\_i are constructed, not carried) and for an arbitrary regular meromorphic section of N|Z\_i in place of t\_i|Z\_i; the second identity is the same statement with (L, s) and (N, t) exchanged. Claims (1)-(2) of the section are canonicalDivisorCycle\_apply\_eq\_zero\_of\_notMem, canonicalDivisorCycle\_apply\_primeDivisor and orderOfVanishingSection\_canonical\_eq\_ord”.
 
 > **Section 0EQU, claim (3).** In Situation 0EDT let `X/B` be good, `X` integral with
 > `dim_δ(X) = n = k + 2`, let `ℒ`, `𝒩` be invertible with `s` a regular meromorphic section of
@@ -335,7 +337,7 @@ theorem canonicalFirstChernCap_canonicalDivisorCycleAt
             (deltaDimensionClosed_univ_toIntegralClosedSubspace D sX hX hint hn (Zf i))))
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_sectionGenerates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean#L436). The attribute's comment: “existence of the family \{Z\_i}: the prime divisors at whose generic point s or t fails to generate form a locally finite family (by 0EPS)”.
+**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_sectionGenerates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaSection.lean#L437). The attribute's comment: “existence of the family \{Z\_i}: the prime divisors at whose generic point s or t fails to generate form a locally finite family (by 0EPS)”.
 
 > **Section 0EQU: the family exists** ("Such a set exists by Spaces over Fields, Lemma 0EPS").
 > The prime divisors at whose generic point `s` fails to generate `ℒ_ξ` or `t` fails to generate
@@ -352,7 +354,7 @@ theorem locallyFinite_primeDivisor_not_sectionGenerates :
 
 [Tag 0EQV](https://stacks.math.columbia.edu/tag/0EQV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_cycleFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean#L345). The attribute's comment: “the situation above, not the lemma: either cycle identity of Section 0EQU, c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i) in Z\_\{n-2}(X), for an arbitrary component rule chern of Stacks 0EQJ, of which it uses no property; hdim is Stacks 0EPZ. DISCHARGED ELSEWHERE: the instance at the registered cap product — the component cycle canonicalFirstChernRule at the canonical choices, in CH\_\{n-2}(X) — is canonicalFirstChernCap\_canonicalDivisorCycleAt, and the key formula itself is proved unconditionally as keyFormula\_of\_ne\_zero; neither carries a free component rule”.
+**`AlgebraicGeometry.Space.firstChernCapCycleMap_divisorCycleAt_eq_cycleFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean#L345). The attribute's comment: “the situation above, not the lemma: either cycle identity of Section 0EQU, c\_1(N) ∩ div\_L(s) = ∑ ord\_\{B\_i}(f\_i) (Z\_i → X)\_* div\_\{N|Z\_i}(t\_i|Z\_i) in Z\_\{n-2}(X), for an arbitrary component rule chern of Stacks 0EQJ, of which it uses no property; hdim is Stacks 0EPZ. DISCHARGED ELSEWHERE: the instance at the registered cap product — the component cycle canonicalFirstChernRule at the canonical choices, in CH\_\{n-2}(X) — is canonicalFirstChernCap\_canonicalDivisorCycleAt, and the key formula itself is proved unconditionally as keyFormula\_of\_ne\_zero; neither carries a free component rule”.
 
 > **Either cycle identity of the section preceding the key formula, for an arbitrary component
 > rule.**  In Situation 0EDT let `X/B` be good and integral with `dim_δ(X) = n`, let `ℒ` be an
@@ -421,7 +423,7 @@ theorem firstChernCapCycleMap_divisorCycleAt_eq_cycleFamilySum
             chern ((Z i).toIntegralClosedSubspace D.site D.base D.base_mem) (hdim i))
 ```
 
-**`AlgebraicGeometry.Space.firstChernCap_sub_firstChernCap_eq_cycleFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean#L528). The attribute's comment: “the situation above, not the lemma: the FIRST cycle of the key formula equals c\_1(N) ∩ div\_L(s) - c\_1(L) ∩ div\_N(t), from the two cycle identities of Section 0EQU, for arbitrary component rules chernN and chernL of Stacks 0EQJ, of which no property is used; hdim is Stacks 0EPZ. DISCHARGED ELSEWHERE: the key formula itself is proved unconditionally, at the canonical choices and for the constructed tame-symbol sum, as keyFormula\_of\_ne\_zero, and its Section 0EQU consequence in CH\_\{n-2}(X) as canonicalFirstChernCap\_divisor\_comm”.
+**`AlgebraicGeometry.Space.firstChernCap_sub_firstChernCap_eq_cycleFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaCycleIdentities.lean#L528). The attribute's comment: “the situation above, not the lemma: the FIRST cycle of the key formula equals c\_1(N) ∩ div\_L(s) - c\_1(L) ∩ div\_N(t), from the two cycle identities of Section 0EQU, for arbitrary component rules chernN and chernL of Stacks 0EQJ, of which no property is used; hdim is Stacks 0EPZ. DISCHARGED ELSEWHERE: the key formula itself is proved unconditionally, at the canonical choices and for the constructed tame-symbol sum, as keyFormula\_of\_ne\_zero, and its Section 0EQU consequence in CH\_\{n-2}(X) as canonicalFirstChernCap\_divisor\_comm”.
 
 > The first cycle of the key formula is the difference of the two cap products of Section
 > 0EQU: with the family `{Z_i}` containing every prime divisor along which `s` or `t` has nonzero
@@ -482,7 +484,7 @@ theorem firstChernCap_sub_firstChernCap_eq_cycleFamilySum
         (keyFormulaDivisorTerm.{u, z} D sX hX hdec L N chernL chernN Z s t ratioL ratioN hdim)
 ```
 
-**`AlgebraicGeometry.Space.keyFormula_of_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L93).
+**`AlgebraicGeometry.Space.keyFormula_of_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L93).
 
 > **Stacks 0EQV, the key formula, for nonzero meromorphic sections.** In Situation 0EDT let
 > `X/B` be good, `X` integral with `dim_δ(X) = n`, let `ℒ`, `𝒩` be invertible with nonzero
@@ -531,4 +533,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.20, Tag 0EQU](https://stacks.math.columbia.edu/tag/0EQU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

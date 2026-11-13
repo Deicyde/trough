@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.25 Closed immersions and pro-étale sites
 
-Section 61.25 of the Stacks Project, [Tag 09A9](https://stacks.math.columbia.edu/tag/09A9). 6 tags here are carried by 55 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.25 of the Stacks Project, [Tag 09A9](https://stacks.math.columbia.edu/tag/09A9). 6 tags here are carried by 55 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09BK, a lemma
 
 [Tag 09BK](https://stacks.math.columbia.edu/tag/09BK) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.appBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AppProetaleSite.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AppProetaleSite.lean#L223). The attribute's comment: “the base-change functor”.
+**`AlgebraicGeometry.ProEtale.appBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AppProetaleSite.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AppProetaleSite.lean#L223). The attribute's comment: “the base-change functor”.
 
 > The functor `u`: pro-étale base change along a morphism of affine schemes `i : Z ⟶ X`, as a
 > functor `X_app ⥤ Z_app` between the affine ind-étale sites. On underlying schemes it is
@@ -25,7 +25,7 @@ public noncomputable def appBaseChange {Z X : Scheme.{u}} [IsAffine X] [IsAffine
     (i : Z ⟶ X) : AppProetale X ⥤ AppProetale Z
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L428). The attribute's comment: “the base change functor”.
+**`AlgebraicGeometry.ProEtale.appProetaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L428). The attribute's comment: “the base change functor”.
 
 > **The base change functor.** For a morphism `i : Z ⟶ X` of affine schemes,
 > pulling back along `i` carries an affine object of the small pro-étale site of `X` with
@@ -36,7 +36,7 @@ public noncomputable def appBaseChange {Z X : Scheme.{u}} [IsAffine X] [IsAffine
 public noncomputable def appProetaleBaseChange : AppSmallProetale X ⥤ AppSmallProetale Z
 ```
 
-**`AlgebraicGeometry.ProEtale.isClosedImmersion_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L489). The attribute's comment: “the closed immersion V → v(V)”.
+**`AlgebraicGeometry.ProEtale.isClosedImmersion_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L489). The attribute's comment: “the closed immersion V → v(V)”.
 
 > **The closed immersion `V → v(V)`.** The first projection of the fibre product
 > `U ×_X Z` is a closed immersion, being the base change of `i`; combined with the identification
@@ -47,7 +47,7 @@ public theorem isClosedImmersion_pullback_fst (U : AppSmallProetale X) :
     IsClosedImmersion (pullback.fst U.obj.hom i)
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L506). The attribute's comment: “the left adjoint”.
+**`AlgebraicGeometry.ProEtale.appProetaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L506). The attribute's comment: “the left adjoint”.
 
 > **The left adjoint `v` of base change.** For a closed immersion `i : Z ⟶ X` of affine
 > schemes, the lift of an object of `Z_app` to `X_app`: it is the right-adjoint lift of
@@ -58,7 +58,7 @@ public theorem isClosedImmersion_pullback_fst (U : AppSmallProetale X) :
 public noncomputable def appProetaleLift : AppSmallProetale Z ⥤ AppSmallProetale X
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_hasLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L514). The attribute's comment: “the adjunction”.
+**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_hasLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L514). The attribute's comment: “the adjunction”.
 
 > **The adjunction.** The base change functor `U ↦ U ×_X Z` along a closed
 > immersion of affine schemes has a left adjoint.
@@ -68,7 +68,7 @@ public theorem appProetaleBaseChange_hasLeftAdjoint :
     Nonempty (appProetaleLift i ⊣ appProetaleBaseChange i)
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleLift_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L523). The attribute's comment: “full faithfulness of the left adjoint”.
+**`AlgebraicGeometry.ProEtale.appProetaleLift_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L523). The attribute's comment: “full faithfulness of the left adjoint”.
 
 > **Full faithfulness of the left adjoint.**
 
@@ -77,7 +77,7 @@ public theorem appProetaleLift_fullyFaithful :
     Nonempty (appProetaleLift i).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleLift_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L533). The attribute's comment: “the identification of V with u(v(V))”.
+**`AlgebraicGeometry.ProEtale.appProetaleLift_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersion.lean#L533). The attribute's comment: “the identification of V with u(v(V))”.
 
 > **The identification of `V` with `u(v(V))`.** For `V` in `Z_app` the unit of
 > the adjunction identifies `V` with the fibre product `v(V) ×_X Z`.
@@ -87,7 +87,7 @@ public theorem appProetaleLift_baseChangeIso :
     Nonempty (𝟭 (AppSmallProetale Z) ≅ appProetaleLift i ⋙ appProetaleBaseChange i)
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean#L73). The attribute's comment: “the base change functor is continuous”.
+**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean#L73). The attribute's comment: “the base change functor is continuous”.
 
 > **Stacks 09BK, continuity of the base change functor: coverings.** For a morphism
 > `i : Z ⟶ X` of affine schemes, the base change functor `U ↦ U ×_X Z` from `X_app` to `Z_app`
@@ -101,7 +101,7 @@ public theorem appProetaleBaseChange_isCovering {X Z : Scheme.{u}} [IsAffine X] 
       ⟨(appProetaleBaseChange i).obj U, E.map (appProetaleBaseChange i)⟩
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleLift_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean#L103). The attribute's comment: “the functor v is cocontinuous”.
+**`AlgebraicGeometry.ProEtale.appProetaleLift_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteContinuous.lean#L103). The attribute's comment: “the functor v is cocontinuous”.
 
 > **Stacks 09BK, cocontinuity of the left adjoint.** For a closed immersion `i : Z ⟶ X` of
 > affine schemes the left adjoint `v : Z_app ⥤ X_app` of the base change functor is cocontinuous:
@@ -114,7 +114,7 @@ public theorem appProetaleLift_isCocontinuous {X Z : Scheme.{u}} (i : Z ⟶ X)
       (AppSmallProetale.topology X)
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSitePullback.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSitePullback.lean#L190). The attribute's comment: “the base change functor is continuous”.
+**`AlgebraicGeometry.ProEtale.appProetaleBaseChange_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSitePullback.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSitePullback.lean#L190). The attribute's comment: “the base change functor is continuous”.
 
 > **Stacks 09BK, continuity of the base change functor: fibre products.** For a morphism
 > `i : Z ⟶ X` of affine schemes the functor `U ↦ U ×_X Z` from `X_app` to `Z_app` preserves fibre
@@ -126,7 +126,7 @@ public noncomputable instance appProetaleBaseChange_preservesPullbacks {X Z : Sc
     PreservesLimitsOfShape WalkingCospan (appProetaleBaseChange i)
 ```
 
-**`AlgebraicGeometry.ProEtale.indEtaleQuotientLift_exists_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteSpecialization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteSpecialization.lean#L72). The attribute's comment: “every point of v(V) specialises to a point of V”.
+**`AlgebraicGeometry.ProEtale.indEtaleQuotientLift_exists_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteSpecialization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteSpecialization.lean#L72). The attribute's comment: “every point of v(V) specialises to a point of V”.
 
 > **Stacks 09BK, specialization to a point of `V`.** Let `A` be a ring, `I ⊆ A` an ideal and
 > `V` an ind-étale `A ⧸ I`-algebra. Writing `C` for the lift of `V` to an ind-étale `A`-algebra,
@@ -141,7 +141,7 @@ public theorem indEtaleQuotientLift_exists_specializes (A : Type u) [CommRing A]
       I.map ((indEtaleQuotientLift A I).obj V).obj.hom.hom ≤ q.asIdeal
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L517). The attribute's comment: “the base-change functor”.
+**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L517). The attribute's comment: “the base-change functor”.
 
 > Pullback along a morphism of the base, on affine ind-étale pro-étale sites.
 
@@ -151,7 +151,7 @@ public noncomputable def affineIndEtaleBaseChange (i : Z ⟶ X)
     AffineIndEtaleProetale B X ⥤ AffineIndEtaleProetale B Z
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L614).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L614).
 
 > Base change on the affine ind-étale sites is continuous.
 
@@ -162,7 +162,7 @@ public instance affineIndEtaleBaseChange_isContinuous (i : Z ⟶ X)
       (AffineIndEtaleProetale.topology B Z)
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L963). The attribute's comment: “the base-change comparison”.
+**`AlgebraicGeometry.ProEtale.affineIndEtaleBaseChange_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 963](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L963). The attribute's comment: “the base-change comparison”.
 
 > On underlying schemes, affine ind-étale base change is ordinary fibre product.
 
@@ -174,7 +174,7 @@ public theorem affineIndEtaleBaseChange_comp_forget :
         Over.pullback i))
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_adj_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1697).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_adj_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1697).
 
 > The lift is left adjoint to base change.
 
@@ -183,7 +183,7 @@ public theorem affineIndEtaleLift_adj_baseChange :
     Nonempty (affineIndEtaleLift B i ⊣ affineIndEtaleBaseChange B i)
 ```
 
-**`AlgebraicGeometry.ProEtale.closedFiberInclusion_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1806).
+**`AlgebraicGeometry.ProEtale.closedFiberInclusion_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1806](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1806).
 
 > The natural inclusion identifies an object with the closed fibre of its lift.
 
@@ -194,7 +194,7 @@ public theorem closedFiberInclusion_isPullback
       (B.inclusion.map ((affineIndEtaleLift B i).obj V).obj.obj.hom) (B.inclusion.map i)
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1936).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_baseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 1936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L1936).
 
 > Base change of the lift is canonically the original object, naturally in that object.
 
@@ -204,7 +204,7 @@ public theorem affineIndEtaleLift_baseChangeIso :
       𝟭 (AffineIndEtaleProetale B Z))
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2048](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2048).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2048](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2048).
 
 > The left-adjoint lift is fully faithful.
 
@@ -213,7 +213,7 @@ public theorem affineIndEtaleLift_fullyFaithful :
     Nonempty (affineIndEtaleLift B i).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.closedFiberInclusion_isClosedImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2058](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2058).
+**`AlgebraicGeometry.ProEtale.closedFiberInclusion_isClosedImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2058](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2058).
 
 > The natural map from an object to its lift is a closed immersion.
 
@@ -223,7 +223,7 @@ public instance closedFiberInclusion_isClosedImmersion
     IsClosedImmersion ((closedFiberInclusion B i).app V)
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_specialization_closedFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2083](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2083).
+**`AlgebraicGeometry.ProEtale.exists_specialization_closedFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2083](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2083).
 
 > Every point of the lift specializes to a point of its closed fibre.
 
@@ -235,7 +235,7 @@ public theorem exists_specialization_closedFiber
       x ⤳ ((closedFiberInclusion B i).app V).base z
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2124).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2124).
 
 > The lift is cocontinuous for the affine ind-étale topologies.
 
@@ -245,7 +245,7 @@ public instance affineIndEtaleLift_isCocontinuous :
       (AffineIndEtaleProetale.topology B X)
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2133).
+**`AlgebraicGeometry.ProEtale.affineIndEtaleLift_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean, line 2133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleLift.lean#L2133).
 
 > The lift takes finite standard pro-étale coverings to such coverings.
 
@@ -261,7 +261,7 @@ public theorem affineIndEtaleLift_isCovering
 
 [Tag 09BL](https://stacks.math.columbia.edu/tag/09BL) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.abelianSmallProetalePushforward_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L262). The attribute's comment: “(6), full faithfulness of the direct image i\_* on abelian sheaves, for the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.abelianSmallProetalePushforward_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L262). The attribute's comment: “(6), full faithfulness of the direct image i\_* on abelian sheaves, for the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (6) for the direct image on abelian sheaves.** For a closed immersion of
 > affine schemes the direct image `i_*` on abelian sheaves on the small pro-étale sites is fully
@@ -274,7 +274,7 @@ def abelianSmallProetalePushforward_fullyFaithful :
       (SmallProetale.topology B Z.obj Z.property)).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.abelianSmallProetale_isIso_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L290). The attribute's comment: “(5), the map i^\{-1} i\_* -> id is an isomorphism on abelian sheaves, for the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.abelianSmallProetale_isIso_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L290). The attribute's comment: “(5), the map i^\{-1} i\_* -> id is an isomorphism on abelian sheaves, for the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (5) for the direct image on abelian sheaves.** For a closed immersion of
 > affine schemes the counit `i^{-1} i_* ⟶ id` on abelian sheaves on the small pro-étale sites is
@@ -288,7 +288,7 @@ theorem abelianSmallProetale_isIso_counit :
       (SmallProetale.topology B Z.obj Z.property)).counit
 ```
 
-**`AlgebraicGeometry.ProEtale.isRightAdjoint_abelianSmallProetaleSheafPullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L332). The attribute's comment: “(4), the inverse image i^\{-1} : Ab(X\_proetale) -> Ab(Z\_proetale) of a closed immersion of affine objects of a chosen big pro-etale site has a left adjoint i\_!”.
+**`AlgebraicGeometry.ProEtale.isRightAdjoint_abelianSmallProetaleSheafPullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L332). The attribute's comment: “(4), the inverse image i^\{-1} : Ab(X\_proetale) -> Ab(Z\_proetale) of a closed immersion of affine objects of a chosen big pro-etale site has a left adjoint i\_!”.
 
 > **Stacks 09BL (4).** The inverse image `i^{-1}` on abelian sheaves on the small pro-étale
 > sites of a closed immersion of affine schemes has a left adjoint `i_!`.
@@ -300,7 +300,7 @@ instance isRightAdjoint_abelianSmallProetaleSheafPullback :
       (SmallProetale.topology B Z.obj Z.property)).IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.ProEtale.abelianSmallProetaleLowerShriek_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L380). The attribute's comment: “(5), the map id -> i^\{-1} i\_! is an isomorphism, for abelian sheaves on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.abelianSmallProetaleLowerShriek_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L380). The attribute's comment: “(5), the map id -> i^\{-1} i\_! is an isomorphism, for abelian sheaves on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (5), the unit of lower shriek on abelian sheaves.** For a closed immersion of
 > affine schemes the unit `id ⟶ i^{-1} i_!` of the adjunction `i_! ⊣ i^{-1}` on abelian sheaves on
@@ -315,7 +315,7 @@ theorem abelianSmallProetaleLowerShriek_unit_isIso :
     IsIso (abelianSmallProetaleLowerShriekAdjunction B i).unit
 ```
 
-**`AlgebraicGeometry.ProEtale.abelianSmallProetaleLowerShriek_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L390). The attribute's comment: “(6), full faithfulness of i\_!, for abelian sheaves on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.abelianSmallProetaleLowerShriek_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AbelianLowerShriek.lean#L390). The attribute's comment: “(6), full faithfulness of i\_!, for abelian sheaves on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (6) for lower shriek on abelian sheaves.** For a closed immersion of affine
 > schemes the left adjoint `i_!` of the inverse image on abelian sheaves on the small pro-étale
@@ -326,7 +326,7 @@ def abelianSmallProetaleLowerShriek_fullyFaithful :
     (abelianSmallProetaleLowerShriek B i).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L69). The attribute's comment: “topos\_identification”.
+**`AlgebraicGeometry.ProEtale.affineIndEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L69). The attribute's comment: “topos\_identification”.
 
 > **Stacks 09BL.** The direct image of the small pro-étale morphism of a closed immersion of
 > affine schemes, read through the restriction equivalences to the affine ind-étale sites, is the
@@ -343,7 +343,7 @@ def affineIndEtalePushforwardIso :
         (AffineIndEtaleProetale.topology B Z) (AffineIndEtaleProetale.topology B X)
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_counit_isIso_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L158). The attribute's comment: “pushforward\_counit”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_counit_isIso_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L158). The attribute's comment: “pushforward\_counit”.
 
 > **Stacks 09BL.** For a closed immersion of affine schemes, the counit
 > `i^{-1} i_* → id` of the small pro-étale adjunction is an isomorphism.
@@ -353,7 +353,7 @@ theorem smallProetaleMorphism_counit_isIso_of_isAffine :
     IsIso (smallProetaleMorphism B Z X i).adj.counit
 ```
 
-**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sheafify_affineIndEtaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L170). The attribute's comment: “inverse\_image\_formula”.
+**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sheafify_affineIndEtaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersion.lean#L170). The attribute's comment: “inverse\_image\_formula”.
 
 > **Stacks 09BL.** For a closed immersion of affine schemes, the inverse image of a small
 > pro-étale sheaf, restricted to the affine ind-étale site of `Z`, is the sheafification of the
@@ -371,7 +371,7 @@ def proetaleInverseImage_sheafify_affineIndEtaleLift :
         presheafToSheaf (AffineIndEtaleProetale.topology B Z) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.ProEtale.isRightAdjoint_smallProetaleMorphism_inverseImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L220). The attribute's comment: “(3), the inverse image i^\{-1} : Sh(X\_proetale) -> Sh(Z\_proetale) of a closed immersion of affine objects of a chosen big pro-etale site has a left adjoint i^\{Sh}\_!”.
+**`AlgebraicGeometry.ProEtale.isRightAdjoint_smallProetaleMorphism_inverseImage`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L220). The attribute's comment: “(3), the inverse image i^\{-1} : Sh(X\_proetale) -> Sh(Z\_proetale) of a closed immersion of affine objects of a chosen big pro-etale site has a left adjoint i^\{Sh}\_!”.
 
 > **Stacks 09BL (3).** The inverse image `i^{-1}` on small pro-étale sheaves of sets of a
 > closed immersion of affine schemes has a left adjoint `i^{Sh}_!`.
@@ -381,7 +381,7 @@ instance isRightAdjoint_smallProetaleMorphism_inverseImage :
     (smallProetaleMorphism B Z X i).inverseImage.IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleLowerShriek_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L270). The attribute's comment: “(5), the map id -> i^\{-1} i^\{Sh}\_! is an isomorphism, for sheaves of sets on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.smallProetaleLowerShriek_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L270). The attribute's comment: “(5), the map id -> i^\{-1} i^\{Sh}\_! is an isomorphism, for sheaves of sets on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (5), the unit of lower shriek.** For a closed immersion of affine schemes the
 > unit `id ⟶ i^{-1} i^{Sh}_!` of the adjunction `i^{Sh}_! ⊣ i^{-1}` on small pro-étale sheaves of
@@ -395,7 +395,7 @@ theorem smallProetaleLowerShriek_unit_isIso :
     IsIso (smallProetaleLowerShriekAdjunction B i).unit
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleLowerShriek_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L279). The attribute's comment: “(6), full faithfulness of i^\{Sh}\_!, for sheaves of sets on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.smallProetaleLowerShriek_fullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/LowerShriek.lean#L279). The attribute's comment: “(6), full faithfulness of i^\{Sh}\_!, for sheaves of sets on the small pro-etale sites of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (6) for lower shriek.** For a closed immersion of affine schemes the left
 > adjoint `i^{Sh}_!` of the inverse image on small pro-étale sheaves of sets is fully faithful.
@@ -405,7 +405,7 @@ def smallProetaleLowerShriek_fullyFaithful :
     (smallProetaleLowerShriek B i).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sections_iso_affineIndEtaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractible.lean, line 575](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractible.lean#L575). The attribute's comment: “weakly\_contractible\_evaluation”.
+**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sections_iso_affineIndEtaleLift`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractible.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractible.lean#L575). The attribute's comment: “weakly\_contractible\_evaluation”.
 
 > At a weakly contractible affine ind-étale object of the closed fibre, inverse image is
 > evaluation at its lift, naturally in the sheaf.
@@ -426,7 +426,7 @@ def proetaleInverseImage_sections_iso_affineIndEtaleLift (V : AffineIndEtaleProe
           ((affineIndEtaleLift B i).obj V)))
 ```
 
-**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sections_iso_affineIndEtaleLiftAddCommGrp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractibleAbelian.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractibleAbelian.lean#L182). The attribute's comment: “(2) for abelian sheaves: at a weakly contractible object V of Z\_app the inverse image of an abelian sheaf is F(v(V)), for the morphism of topoi of a closed immersion of affine objects of a chosen big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.proetaleInverseImage_sections_iso_affineIndEtaleLiftAddCommGrp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractibleAbelian.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/WeaklyContractibleAbelian.lean#L182). The attribute's comment: “(2) for abelian sheaves: at a weakly contractible object V of Z\_app the inverse image of an abelian sheaf is F(v(V)), for the morphism of topoi of a closed immersion of affine objects of a chosen big pro-etale site”.
 
 > **Stacks 09BL (2) for abelian sheaves.** At a weakly contractible affine ind-étale object of
 > the closed fibre, the inverse image of an abelian pro-étale sheaf is evaluation at the lift of
@@ -447,7 +447,7 @@ def proetaleInverseImage_sections_iso_affineIndEtaleLiftAddCommGrp
           ((affineIndEtaleLift B i).obj V)))
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleInverseImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L135). The attribute's comment: “(1), the inverse image is the sheafification of the presheaf V -> F(v(V)), for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
+**`AlgebraicGeometry.ProEtale.appProetaleInverseImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L135). The attribute's comment: “(1), the inverse image is the sheafification of the presheaf V -> F(v(V)), for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
 
 > **Stacks 09BL (1), the formula.** The inverse image of the morphism of topoi induced by `v`
 > is the sheafification of the presheaf `V ↦ F(v(V))` on `Z_app`: it is restriction along `v.op`
@@ -462,7 +462,7 @@ public theorem appProetaleInverseImage_eq :
           presheafToSheaf (AppSmallProetale.topology Z) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleInverseImageAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L148). The attribute's comment: “(1), the sheafification of V -> F(v(V)) is the inverse image, being left adjoint to the direct image of the morphism of topoi induced by the cocontinuous functor v of Tag 09BK”.
+**`AlgebraicGeometry.ProEtale.appProetaleInverseImageAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L148). The attribute's comment: “(1), the sheafification of V -> F(v(V)) is the inverse image, being left adjoint to the direct image of the morphism of topoi induced by the cocontinuous functor v of Tag 09BK”.
 
 > **Stacks 09BL (1), that this is the inverse image.** The sheafification of `V ↦ F(v(V))` is
 > left adjoint to the direct image, so it is the inverse image of the morphism of topoi induced
@@ -473,7 +473,7 @@ public noncomputable def appProetaleInverseImageAdjunction :
     appProetaleInverseImage i ⊣ appProetalePushforward i
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetalePushforwardFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L176). The attribute's comment: “(6), full faithfulness of the direct image i\_*, for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
+**`AlgebraicGeometry.ProEtale.appProetalePushforwardFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L176). The attribute's comment: “(6), full faithfulness of the direct image i\_*, for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
 
 > **Stacks 09BL (6) for the direct image.** The direct image `i_*` of the morphism of topoi
 > induced by `v` is fully faithful.
@@ -487,7 +487,7 @@ public noncomputable def appProetalePushforwardFullyFaithful :
     (appProetalePushforward i).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetale_isIso_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L193). The attribute's comment: “(5), the map i^\{-1} i\_* -> id is an isomorphism, for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
+**`AlgebraicGeometry.ProEtale.appProetale_isIso_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteClosedImmersionTopos.lean#L193). The attribute's comment: “(5), the map i^\{-1} i\_* -> id is an isomorphism, for the morphism of topoi induced by the fully faithful cocontinuous functor v of Tag 09BK”.
 
 > **Stacks 09BL (5) for the direct image.** The counit `i^{-1}i_* ⟶ id` of the morphism of
 > topoi induced by `v` is an isomorphism, because its right adjoint `i_*` is fully faithful.
@@ -501,7 +501,7 @@ public theorem appProetale_isIso_counit :
 
 [Tag 09AA](https://stacks.math.columbia.edu/tag/09AA) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_counit_isIso_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L174). The attribute's comment: “(3), the counit i^\{-1} i\_* -> id of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site is an isomorphism”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_counit_isIso_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L174). The attribute's comment: “(3), the counit i^\{-1} i\_* -> id of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site is an isomorphism”.
 
 > **Stacks 09AA (3).** For a closed immersion `i : Z ⟶ X` of objects of a chosen big pro-étale
 > site, the counit `i⁻¹ i_* ⟶ id` of the direct-image adjunction on small pro-étale sheaves of sets
@@ -518,7 +518,7 @@ theorem smallProetaleMorphism_counit_isIso_of_isClosedImmersion
     IsIso (smallProetaleMorphism B Z X i).adj.counit
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_pushforward_fullyFaithful_of_isClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L189). The attribute's comment: “(2), the direct image i\_* of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site is fully faithful”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_pushforward_fullyFaithful_of_isClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L189). The attribute's comment: “(2), the direct image i\_* of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site is fully faithful”.
 
 > **Stacks 09AA (2).** For a closed immersion `i : Z ⟶ X` of objects of a chosen big pro-étale
 > site, the direct image `i_*` on small pro-étale sheaves of sets is fully faithful.
@@ -531,7 +531,7 @@ def smallProetaleMorphism_pushforward_fullyFaithful_of_isClosedImmersion :
     (smallProetaleMorphism B Z X i).pushforward.FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_inverseImage_preservesLimits_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L207). The attribute's comment: “(1), the inverse image i^\{-1} of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site commutes with limits”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_inverseImage_preservesLimits_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedImmersionEmbedding.lean#L207). The attribute's comment: “(1), the inverse image i^\{-1} of the morphism of topoi of a closed immersion of objects of a chosen big pro-etale site commutes with limits”.
 
 > **Stacks 09AA (1).** For a closed immersion `i : Z ⟶ X` of objects of a chosen big pro-étale
 > site, the inverse image `i⁻¹` on small pro-étale sheaves of sets commutes with limits.
@@ -550,7 +550,7 @@ theorem smallProetaleMorphism_inverseImage_preservesLimits_of_isClosedImmersion 
     PreservesLimits (smallProetaleMorphism B Z X i).inverseImage
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphismPushforwardFullyFaithfulOfAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L77). The attribute's comment: “(2), the direct image is fully faithful, given that pro-etale base change admits a fully faithful left adjoint -- the adjoint that Tag 09BK supplies for a closed immersion”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphismPushforwardFullyFaithfulOfAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L77). The attribute's comment: “(2), the direct image is fully faithful, given that pro-etale base change admits a fully faithful left adjoint -- the adjoint that Tag 09BK supplies for a closed immersion”.
 
 > **Stacks 09AA (2) given the adjoint of Stacks 09BK.** If small pro-étale base change along
 > `f` admits a fully faithful left adjoint, the direct image `f_*` on small pro-étale sheaves of
@@ -565,7 +565,7 @@ public noncomputable def smallProetaleMorphismPushforwardFullyFaithfulOfAdjoint
     (smallProetaleMorphism B T S f).pushforward.FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_isIso_counit_of_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L92). The attribute's comment: “(3), the counit of the morphism of topoi is an isomorphism, given that pro-etale base change admits a fully faithful left adjoint”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_isIso_counit_of_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L92). The attribute's comment: “(3), the counit of the morphism of topoi is an isomorphism, given that pro-etale base change admits a fully faithful left adjoint”.
 
 > **Stacks 09AA (3) given the adjoint of Stacks 09BK.** If small pro-étale base change along
 > `f` admits a fully faithful left adjoint, the counit `f⁻¹f_*F ⟶ F` of the morphism of topoi is an
@@ -576,7 +576,7 @@ public theorem smallProetaleMorphism_isIso_counit_of_adjoint [v.Full] [v.Faithfu
     IsIso (smallProetaleMorphism B T S f).adj.counit
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_inverseImage_preservesLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L103). The attribute's comment: “(1), the inverse image commutes with limits, given that it admits a left adjoint -- which is clause (3) of Tag 09BL”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_inverseImage_preservesLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChangeAdjoint.lean#L103). The attribute's comment: “(1), the inverse image commutes with limits, given that it admits a left adjoint -- which is clause (3) of Tag 09BL”.
 
 > **Stacks 09AA (1) given the left adjoint of Stacks 09BL (3).** If the inverse image `f⁻¹` on
 > small pro-étale sheaves of sets admits a left adjoint, it commutes with limits.
@@ -591,7 +591,7 @@ public theorem smallProetaleMorphism_inverseImage_preservesLimits
 
 [Tag 09AB](https://stacks.math.columbia.edu/tag/09AB) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.smallProetalePushforward_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean, line 1641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean#L1641). The attribute's comment: “direct image, assuming essential surjectivity of etale pullback (the content of Stacks 04DZ) and Stacks 09YZ over a qcqs base”.
+**`AlgebraicGeometry.ProEtale.smallProetalePushforward_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean, line 1639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean#L1639). The attribute's comment: “direct image, assuming essential surjectivity of etale pullback (the content of Stacks 04DZ) and Stacks 09YZ over a qcqs base”.
 
 > **Topological invariance of the small pro-étale topos, direct image.** For an integral,
 > universally injective and surjective morphism `f : T ⟶ S` in a chosen big pro-étale site, the
@@ -611,7 +611,7 @@ theorem smallProetalePushforward_isEquivalence
     (smallProetaleMorphism B T S f).pushforward.IsEquivalence
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleInverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean, line 1687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean#L1687). The attribute's comment: “inverse image, assuming essential surjectivity of etale pullback (the content of Stacks 04DZ) and Stacks 09YZ over a qcqs base”.
+**`AlgebraicGeometry.ProEtale.smallProetaleInverseImage_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean, line 1685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance.lean#L1685). The attribute's comment: “inverse image, assuming essential surjectivity of etale pullback (the content of Stacks 04DZ) and Stacks 09YZ over a qcqs base”.
 
 > **Topological invariance of the small pro-étale topos, inverse image.** For an integral,
 > universally injective and surjective morphism `f : T ⟶ S` in a chosen big pro-étale site, the
@@ -629,7 +629,7 @@ theorem smallProetaleInverseImage_isEquivalence
     (smallProetaleMorphism B T S f).inverseImage.IsEquivalence
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_isIso_unit_and_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L89). The attribute's comment: “unit and counit of f^\{-1} -| f\_* are isomorphisms; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphism_isIso_unit_and_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L89). The attribute's comment: “unit and counit of f^\{-1} -| f\_* are isomorphisms; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
 
 > **Topological invariance of the small pro-étale topos.** Let `f : T ⟶ S` be an integral,
 > universally injective and surjective morphism of schemes. Then the direct image `f_*` and the
@@ -651,7 +651,7 @@ theorem smallProetaleMorphism_isIso_unit_and_counit
       IsIso (smallProetaleMorphism B T S f).adj.counit
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetalePushforward_isEquivalence_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L120). The attribute's comment: “direct image f\_* is an equivalence; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
+**`AlgebraicGeometry.ProEtale.smallProetalePushforward_isEquivalence_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L120). The attribute's comment: “direct image f\_* is an equivalence; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
 
 > **Topological invariance of the small pro-étale topos, direct image, unconditionally.** Let
 > `f : T ⟶ S` be an integral, universally injective and surjective morphism of schemes. Then the
@@ -672,7 +672,7 @@ theorem smallProetalePushforward_isEquivalence_of_isIntegralHom
     (smallProetaleMorphism B T S f).pushforward.IsEquivalence
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleInverseImage_isEquivalence_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L140). The attribute's comment: “inverse image f^\{-1} is an equivalence; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
+**`AlgebraicGeometry.ProEtale.smallProetaleInverseImage_isEquivalence_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L140). The attribute's comment: “inverse image f^\{-1} is an equivalence; unconditional: only f integral, universally injective, surjective; 04DZ and 09YZ are proved and supplied, not assumed”.
 
 > **Topological invariance of the small pro-étale topos, inverse image, unconditionally.** Let
 > `f : T ⟶ S` be an integral, universally injective and surjective morphism of schemes. Then the
@@ -692,7 +692,7 @@ theorem smallProetaleInverseImage_isEquivalence_of_isIntegralHom
     (smallProetaleMorphism B T S f).inverseImage.IsEquivalence
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L159). The attribute's comment: “f^\{-1} and f\_* as quasi-inverse equivalences of the small pro-etale topoi; unconditional: only f integral, universally injective, surjective”.
+**`AlgebraicGeometry.ProEtale.smallProetaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/TopologicalInvariance/QuasiInverse.lean#L159). The attribute's comment: “f^\{-1} and f\_* as quasi-inverse equivalences of the small pro-etale topoi; unconditional: only f integral, universally injective, surjective”.
 
 > **The small pro-étale topoi along an integral universal homeomorphism are equivalent.** For
 > `f : T ⟶ S` integral, universally injective and surjective, the equivalence between the small
@@ -718,7 +718,7 @@ noncomputable def smallProetaleEquivalence
 
 [Tag 09AC](https://stacks.math.columbia.edu/tag/09AC) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.abelianProetaleInverseImage_sections_iso_closedFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedFibreInverseImage.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedFibreInverseImage.lean#L193). The attribute's comment: “i^\{-1}F(U x\_X Z) = F(U) for every abelian sheaf F on X\_proetale, naturally in F, for an ARBITRARY closed immersion i : Z -> X and U affine and weakly contractible (in the chosen big pro-etale site, Tag 098H) all of whose points specialize into U x\_X Z”.
+**`AlgebraicGeometry.ProEtale.abelianProetaleInverseImage_sections_iso_closedFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedFibreInverseImage.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/ClosedFibreInverseImage.lean#L193). The attribute's comment: “i^\{-1}F(U x\_X Z) = F(U) for every abelian sheaf F on X\_proetale, naturally in F, for an ARBITRARY closed immersion i : Z -> X and U affine and weakly contractible (in the chosen big pro-etale site, Tag 098H) all of whose points specialize into U x\_X Z”.
 
 > **Stacks 09AC.** Let `i : Z ⟶ X` be a closed immersion of objects of a chosen big pro-étale
 > site and let `U` be an object of the small pro-étale site of `X` such that
@@ -747,7 +747,7 @@ def abelianProetaleInverseImage_sections_iso_closedFibre [IsAffine U.obj.left.ob
       (evaluation _ _).obj (op U)
 ```
 
-**`AlgebraicGeometry.ProEtale.existsUnique_algHom_comp_quotientMk_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/JacobsonQuotientRetraction.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/JacobsonQuotientRetraction.lean#L231). The attribute's comment: “the ring-theoretic statement the lemma reduces to: for A w-contractible and I in the Jacobson radical, a factorization A -> B -> A/I with A -> B ind-etale has a unique retraction B -> A compatible with the maps to A/I; the source's B/IB = A/I x R splitting is not used, see the module docstring”.
+**`AlgebraicGeometry.ProEtale.existsUnique_algHom_comp_quotientMk_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/JacobsonQuotientRetraction.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/JacobsonQuotientRetraction.lean#L231). The attribute's comment: “the ring-theoretic statement the lemma reduces to: for A w-contractible and I in the Jacobson radical, a factorization A -> B -> A/I with A -> B ind-etale has a unique retraction B -> A compatible with the maps to A/I; the source's B/IB = A/I x R splitting is not used, see the module docstring”.
 
 > **The ring-theoretic content of Stacks 09AC.** Let `A` be a w-contractible ring and `I ⊆ A`
 > an ideal contained in the Jacobson radical of `A`. Every `A`-algebra map from an ind-étale
@@ -762,7 +762,7 @@ theorem existsUnique_algHom_comp_quotientMk_eq (A : Type u) [CommRing A]
     ∃! σ : B →ₐ[A] A, (Ideal.Quotient.mkₐ A I).comp σ = φ
 ```
 
-**`AlgebraicGeometry.ProEtale.appProetaleLiftBaseChangeObjIsoOfIsWContractible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteLiftOfClosedFibre.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteLiftOfClosedFibre.lean#L157). The attribute's comment: “the identification v(U x\_X Z) = U, to which Stacks 09BL (1) reduces the lemma; hypothesis (1) is w-contractibility of Gamma(U, O\_U) and hypothesis (2) is containment of the ideal of the closed fibre in its Jacobson radical”.
+**`AlgebraicGeometry.ProEtale.appProetaleLiftBaseChangeObjIsoOfIsWContractible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteLiftOfClosedFibre.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AppSiteLiftOfClosedFibre.lean#L157). The attribute's comment: “the identification v(U x\_X Z) = U, to which Stacks 09BL (1) reduces the lemma; hypothesis (1) is w-contractibility of Gamma(U, O\_U) and hypothesis (2) is containment of the ideal of the closed fibre in its Jacobson radical”.
 
 > **Stacks 09AC.** Let `i : Z ⟶ X` be a closed immersion of affine schemes and let `U` be an
 > object of `X_app` which is affine and weakly contractible and every point of which specializes
@@ -779,7 +779,7 @@ public noncomputable def appProetaleLiftBaseChangeObjIsoOfIsWContractible (U : A
 
 [Tag 09BM](https://stacks.math.columbia.edu/tag/09BM) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exact_smallProetalePushforward_of_isRetrocompact_compl_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/ClosedImmersionPushforwardExact.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/ClosedImmersionPushforwardExact.lean#L156).
+**`AlgebraicGeometry.ProEtale.exact_smallProetalePushforward_of_isRetrocompact_compl_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/ClosedImmersionPushforwardExact.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/ClosedImmersionPushforwardExact.lean#L156).
 
 > **Stacks 09BM.** Let `i : Z → X` be a closed immersion of schemes whose open complement is
 > retrocompact. Then direct image of abelian sheaves along the induced morphism of small pro-étale
@@ -805,4 +805,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.25, Tag 09A9](https://stacks.math.columbia.edu/tag/09A9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

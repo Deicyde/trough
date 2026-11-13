@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.3 Correspondences
 
-Section 45.3 of the Stacks Project, [Tag 0FFZ](https://stacks.math.columbia.edu/tag/0FFZ). 9 tags here are carried by 51 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 45.3 of the Stacks Project, [Tag 0FFZ](https://stacks.math.columbia.edu/tag/0FFZ). 9 tags here are carried by 51 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FG0, a lemma
 
 [Tag 0FG0](https://stacks.math.columbia.edu/tag/0FG0) in the Stacks Project.
 
-**`Stacks.WeilCohomology.correspondenceToPointEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean#L137). The attribute's comment: “CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k)”.
+**`Stacks.WeilCohomology.correspondenceToPointEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean#L137). The attribute's comment: “CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k)”.
 
 > **Stacks Project, Tag 0FG0 (2).** The canonical `ℚ`-linear isomorphism
 >
@@ -29,7 +29,7 @@ def correspondenceToPointEquiv (r : ℤ) :
     TensorProduct ℤ ℚ (chowGroup C sX (-r)) ≃ₗ[ℚ] Correspondence C sX (𝟙 C.S) 0 r
 ```
 
-**`Stacks.WeilCohomology.correspondenceFromPointEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean#L163). The attribute's comment: “CH^r(X) ⊗ Q = Corr^r(Spec k, X)”.
+**`Stacks.WeilCohomology.correspondenceFromPointEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/BasePoint.lean#L163). The attribute's comment: “CH^r(X) ⊗ Q = Corr^r(Spec k, X)”.
 
 > **Stacks Project, Tag 0FG0 (3).** The canonical `ℚ`-linear isomorphism
 >
@@ -45,7 +45,7 @@ def correspondenceFromPointEquiv (d r : ℤ) :
     TensorProduct ℤ ℚ (chowGroup C sX (d - r)) ≃ₗ[ℚ] Correspondence C (𝟙 C.S) sX d r
 ```
 
-**`Stacks.WeilCohomology.corrToPointEquiv_pullback_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 997](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L997). The attribute's comment: “(2): CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k), under which pullback by correspondences corresponds to composition”.
+**`Stacks.WeilCohomology.corrToPointEquiv_pullback_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 997](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L997). The attribute's comment: “(2): CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k), under which pullback by correspondences corresponds to composition”.
 
 > **Stacks Project, Tag 0FG0 (2).** For schemes `X'`, `X` smooth and proper over `k`, of
 > arbitrary, not necessarily constant, dimension, the canonical isomorphism
@@ -64,7 +64,7 @@ theorem corrToPointEquiv_pullback_canonicalDiagonalClassFamily [IsProper sX'] [I
       comp k sX' sX (𝟙 _) (canonicalDiagonalClassFamily k) s r c (corrToPointEquiv k sX r β)
 ```
 
-**`Stacks.WeilCohomology.corrFromPointEquiv_pushforward_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1018). The attribute's comment: “(3): CH^r(X) ⊗ Q = Corr^r(Spec k, X), under which pushforward by correspondences corresponds to composition”.
+**`Stacks.WeilCohomology.corrFromPointEquiv_pushforward_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1018). The attribute's comment: “(3): CH^r(X) ⊗ Q = Corr^r(Spec k, X), under which pushforward by correspondences corresponds to composition”.
 
 > **Stacks Project, Tag 0FG0 (3).** For schemes `X`, `Y` smooth over `k`, of arbitrary, not
 > necessarily constant, dimension, with `X` proper, the canonical isomorphism
@@ -80,7 +80,7 @@ theorem corrFromPointEquiv_pushforward_canonicalDiagonalClassFamily [IsProper sX
       comp k (𝟙 _) sX sY (canonicalDiagonalClassFamily k) i s (corrFromPointEquiv k sX i α) c
 ```
 
-**`Stacks.WeilCohomology.comp_bilinear_assoc_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean#L378). The attribute's comment: “(1): composition of correspondences is Q-bilinear and associative”.
+**`Stacks.WeilCohomology.comp_bilinear_assoc_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean#L378). The attribute's comment: “(1): composition of correspondences is Q-bilinear and associative”.
 
 > **Stacks Project, Tag 0FG0 (1).** For schemes `X`, `Y`, `Z`, `W` smooth over `k`, of arbitrary,
 > not necessarily constant, dimension, with `Y` and `Z` proper, composition of correspondences
@@ -107,7 +107,7 @@ theorem comp_bilinear_assoc_canonicalDiagonalClassFamily [IsProper sY] [IsProper
           (comp k sY sZ sW (canonicalDiagonalClassFamily k) s t c' c'')
 ```
 
-**`Stacks.WeilCohomology.comp_pullback_pushforward_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean#L408). The attribute's comment: “(4): composition of correspondences is compatible with pushforward and pullback of cycles”.
+**`Stacks.WeilCohomology.comp_pullback_pushforward_canonicalDiagonalClassFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonalFlat.lean#L408). The attribute's comment: “(4): composition of correspondences is compatible with pushforward and pullback of cycles”.
 
 > **Stacks Project, Tag 0FG0 (4).** For schemes `X`, `Y`, `Z` smooth and proper over `k`, of
 > arbitrary, not necessarily constant, dimension, composition of correspondences is compatible with
@@ -139,14 +139,14 @@ theorem comp_pullback_pushforward_canonicalDiagonalClassFamily [IsProper sX] [Is
 
 Declarations registered for the tag:
 
-- [`Stacks.WeilCohomology.corrToPointEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/DimensionDecompositionBasePoint.lean#L807), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1007) (StacksFrontier): “(2): CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k), under which pullback by correspondences corresponds to composition”.
-- [`Stacks.WeilCohomology.corrFromPointEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/DimensionDecompositionBasePoint.lean#L853), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1026) (StacksFrontier): “(3): CH^r(X) ⊗ Q = Corr^r(Spec k, X), under which pushforward by correspondences corresponds to composition”.
+- [`Stacks.WeilCohomology.corrToPointEquiv`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/DimensionDecompositionBasePoint.lean#L802), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1007) (StacksFrontier): “(2): CH\_\{-r}(X) ⊗ Q = Corr^r(X, Spec k), under which pullback by correspondences corresponds to composition”.
+- [`Stacks.WeilCohomology.corrFromPointEquiv`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/DimensionDecompositionBasePoint.lean#L848), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalDiagonal.lean#L1026) (StacksFrontier): “(3): CH^r(X) ⊗ Q = Corr^r(Spec k, X), under which pushforward by correspondences corresponds to composition”.
 
 ## Tag 0FG1, an example
 
 [Tag 0FG1](https://stacks.math.columbia.edu/tag/0FG1) in the Stacks Project.
 
-**`Stacks.WeilCohomology.graph`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean#L71). The attribute's comment: “graph\_of\_morphism”.
+**`Stacks.WeilCohomology.graph`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean#L71). The attribute's comment: “graph\_of\_morphism”.
 
 > **Stacks Project, Tag 0FG1.** The graph `Γ_f ⊆ X ×_S Y` of a morphism `f : Y ⟶ X` over `S`:
 > the scheme-theoretic image of `(f, 𝟙 Y) : Y ⟶ X ×_S Y`.
@@ -155,7 +155,7 @@ Declarations registered for the tag:
 abbrev graph (pX : X ⟶ S) (pY : Y ⟶ S) (f : Y ⟶ X) (hf : f ≫ pX = pY) : Scheme.{u}
 ```
 
-**`Stacks.WeilCohomology.isClosedImmersion_graphMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean#L80). The attribute's comment: “graph\_closed\_immersion”. References: EGA I (5.4.3); EGA I (10.15.4), “ordinary schemes”; EGA I (5.3.11), “separated case”; EGA I (5.4.2), “special case”.
+**`Stacks.WeilCohomology.isClosedImmersion_graphMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Graph.lean#L80). The attribute's comment: “graph\_closed\_immersion”. References: EGA I (5.4.3); EGA I (10.15.4), “ordinary schemes”; EGA I (5.3.11), “separated case”; EGA I (5.4.2), “special case”.
 
 > **Stacks Project, Tag 0FG1.** The graph morphism of an `S`-morphism `f : Y ⟶ X` is a closed
 > immersion whenever `X` is separated over `S`.
@@ -166,7 +166,7 @@ theorem isClosedImmersion_graphMorphism (pX : X ⟶ S) (pY : Y ⟶ S) (f : Y ⟶
     IsClosedImmersion (graphMorphism pX pY f hf)
 ```
 
-**`Stacks.WeilCohomology.codimension_graphPartMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L381). The attribute's comment: “graph\_pure\_codimension”.
+**`Stacks.WeilCohomology.codimension_graphPartMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L381). The attribute's comment: “graph\_pure\_codimension”.
 
 > **Stacks 0FG1: the intersection `Γ_f ∩ (X_d × Y)` has pure codimension `d`.**
 >
@@ -191,7 +191,7 @@ theorem codimension_graphPartMorphism (hU : IsClopen (U : Set X)) (d : ℕ)
     codimension (closureSingleton ((graphPartMorphism sX sY f hf U).base ξ)) = (d : ℕ∞)
 ```
 
-**`Stacks.WeilCohomology.cycleAssociatedToClosedSubscheme_graphMorphism_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L465). The attribute's comment: “graph\_degree\_zero\_correspondence”.
+**`Stacks.WeilCohomology.cycleAssociatedToClosedSubscheme_graphMorphism_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L465). The attribute's comment: “graph\_degree\_zero\_correspondence”.
 
 > **Stacks 0FG1: `[Γ_f]` is a correspondence of degree zero.** If every generic point of `Y`
 > has delta-dimension `e` — which is what it means for `Y` to be equidimensional of dimension `e` —
@@ -208,7 +208,7 @@ theorem cycleAssociatedToClosedSubscheme_graphMorphism_eq_zero (e : ℤ)
       (graphMorphism sX sY f hf) m = 0
 ```
 
-**`Stacks.WeilCohomology.graphCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L483). The attribute's comment: “graph\_degree\_zero\_correspondence”. References: SGA 7 XX (4.4), “partial”.
+**`Stacks.WeilCohomology.graphCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L483). The attribute's comment: “graph\_degree\_zero\_correspondence”. References: SGA 7 XX (4.4), “partial”.
 
 > **Stacks 0FG1.** The graph of `f` as a correspondence of degree zero from `X` to a target
 > equidimensional of dimension `e`: the class of the cycle `[Γ_f]` of the graph on `X ×_k Y`, with
@@ -218,7 +218,7 @@ theorem cycleAssociatedToClosedSubscheme_graphMorphism_eq_zero (e : ℤ)
 def graphCorrespondence (e : ℤ) : Correspondence (fieldChowSituation k) sX sY e 0
 ```
 
-**`Stacks.WeilCohomology.exists_decomposition_graph_pure_codimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L521). The attribute's comment: “graph\_pure\_codimension\_degree\_zero\_correspondence”.
+**`Stacks.WeilCohomology.exists_decomposition_graph_pure_codimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphCodimension.lean#L521). The attribute's comment: “graph\_pure\_codimension\_degree\_zero\_correspondence”.
 
 > **Stacks Project, Tag 0FG1.** Let `f : Y ⟶ X` be a morphism of smooth projective schemes
 > over a field `k` and let `Γ_f ⊆ X ×_k Y` be the graph of `f`, the image of the closed immersion
@@ -281,7 +281,7 @@ theorem exists_decomposition_graph_pure_codimension (k : Type u) [Field k] {X Y 
 
 [Tag 0FG2](https://stacks.math.columbia.edu/tag/0FG2) in the Stacks Project.
 
-**`Stacks.WeilCohomology.canonicalCorrespondences_gradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean#L53).
+**`Stacks.WeilCohomology.canonicalCorrespondences_gradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean#L53).
 
 > Correspondences between smooth projective schemes over `k` form a graded category over `ℚ`:
 > the morphisms from `X` to `Y` are `⨁ᵣ Corrʳ(X, Y)`, the identity is the class of the diagonal, of
@@ -293,7 +293,7 @@ instance canonicalCorrespondences_gradedCategory :
     GradedCategory ℚ (canonicalCorrespondenceCompositionData k).Obj
 ```
 
-**`Stacks.WeilCohomology.GradedCompositionData.gradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GradedStructure.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GradedStructure.lean#L241). The attribute's comment: “correspondences form a graded category over Q”.
+**`Stacks.WeilCohomology.GradedCompositionData.gradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GradedStructure.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GradedStructure.lean#L241). The attribute's comment: “correspondences form a graded category over Q”.
 
 > Correspondences form a graded category over `ℚ` in the sense of Definition 09L2: the morphism
 > module `⨁ᵣ Corrʳ(X, Y)` is the direct sum of its homogeneous pieces `Corrʳ(X, Y)`, the
@@ -308,7 +308,7 @@ instance gradedCategory : GradedCategory ℚ D.Obj
 
 [Tag 0FG3](https://stacks.math.columbia.edu/tag/0FG3) in the Stacks Project.
 
-**`Stacks.WeilCohomology.canonicalGraphFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean#L61).
+**`Stacks.WeilCohomology.canonicalGraphFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/CanonicalGradedCategory.lean#L61).
 
 > The contravariant functor from smooth projective schemes over `k` to the category of
 > correspondences which is the identity on objects and sends `f : X ⟶ Y` to the class
@@ -320,7 +320,7 @@ noncomputable def canonicalGraphFunctor :
       (canonicalCorrespondenceCompositionData k).Obj
 ```
 
-**`Stacks.WeilCohomology.GradedCompositionData.PushforwardData.graphFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphFunctor.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphFunctor.lean#L326). The attribute's comment: “the contravariant functor f ↦ [graph f] to correspondences, identity on objects”.
+**`Stacks.WeilCohomology.GradedCompositionData.PushforwardData.graphFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphFunctor.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphFunctor.lean#L326). The attribute's comment: “the contravariant functor f ↦ [graph f] to correspondences, identity on objects”.
 
 > **Stacks Project, Tag 0FG3.** The contravariant functor from the ambient category — in the
 > source the smooth projective schemes over `k` — to the category of correspondences which is the
@@ -341,7 +341,7 @@ def graphFunctor : Cᵒᵖ ⥤ D.Obj
 
 [Tag 0FG4](https://stacks.math.columbia.edu/tag/0FG4) in the Stacks Project.
 
-**`Stacks.WeilCohomology.cycleTranspose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L95). The attribute's comment: “transpose”.
+**`Stacks.WeilCohomology.cycleTranspose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L95). The attribute's comment: “transpose”.
 
 > **Stacks Project, Tag 0FG4.** Transposition of cycles on a fibre product: proper pushforward
 > along the factor switch `X ×_S Y ≅ Y ×_S X`.
@@ -351,7 +351,7 @@ def cycleTranspose (n : ℤ) :
     CycleGroup C (pullback.fst sX sY ≫ sX) n →+ CycleGroup C (pullback.fst sY sX ≫ sY) n
 ```
 
-**`Stacks.WeilCohomology.chowTranspose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L104). The attribute's comment: “transpose”.
+**`Stacks.WeilCohomology.chowTranspose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L104). The attribute's comment: “transpose”.
 
 > **Stacks Project, Tag 0FG4.** Transposition of Chow classes on a fibre product, induced by
 > transposition of cycles. The factor switch is an isomorphism, so this needs no instance of
@@ -362,7 +362,7 @@ def chowTranspose (n : ℤ) :
     chowGroup C (pullback.fst sX sY ≫ sX) n →+ chowGroup C (pullback.fst sY sX ≫ sY) n
 ```
 
-**`Stacks.WeilCohomology.cycleTransposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L126). The attribute's comment: “the transpose is an isomorphism, on cycles”.
+**`Stacks.WeilCohomology.cycleTransposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L126). The attribute's comment: “the transpose is an isomorphism, on cycles”.
 
 > **Stacks Project, Tag 0FG4.** Transposition of cycles on a fibre product is an isomorphism
 > of groups of `n`-cycles, with inverse the transposition in the other direction.
@@ -372,7 +372,7 @@ def cycleTransposeEquiv (n : ℤ) :
     CycleGroup C (pullback.fst sX sY ≫ sX) n ≃+ CycleGroup C (pullback.fst sY sX ≫ sY) n
 ```
 
-**`Stacks.WeilCohomology.chowTransposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L169). The attribute's comment: “the transpose is an isomorphism, on cycle classes”.
+**`Stacks.WeilCohomology.chowTransposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L169). The attribute's comment: “the transpose is an isomorphism, on cycle classes”.
 
 > **Stacks Project, Tag 0FG4.** Transposition of Chow classes on a fibre product is an
 > isomorphism of Chow groups, with inverse the transposition in the other direction.
@@ -382,7 +382,7 @@ def chowTransposeEquiv (n : ℤ) :
     chowGroup C (pullback.fst sX sY ≫ sX) n ≃+ chowGroup C (pullback.fst sY sX ≫ sY) n
 ```
 
-**`Stacks.WeilCohomology.transpose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L199). The attribute's comment: “transpose”.
+**`Stacks.WeilCohomology.transpose`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L199). The attribute's comment: “transpose”.
 
 > **Stacks Project, Tag 0FG4.** The transpose `c ↦ cᵗ` of a rational correspondence. For `X`
 > equidimensional of dimension `d` and `Y` equidimensional of dimension `e` it maps
@@ -393,7 +393,7 @@ def transpose (d e r : ℤ) :
     Correspondence C sX sY e r →ₗ[ℤ] Correspondence C sY sX d (d - e + r)
 ```
 
-**`Stacks.WeilCohomology.transposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L224). The attribute's comment: “the transpose is an isomorphism Corr^r(X, Y) = Corr^\{d - e + r}(Y, X)”.
+**`Stacks.WeilCohomology.transposeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/Transpose.lean#L224). The attribute's comment: “the transpose is an isomorphism Corr^r(X, Y) = Corr^\{d - e + r}(Y, X)”.
 
 > **Stacks Project, Tag 0FG4.** For `X` equidimensional of dimension `d` and `Y`
 > equidimensional of dimension `e`, the factor switch `X ×_S Y ≅ Y ×_S X` determines an
@@ -408,7 +408,7 @@ def transposeEquiv (d e r : ℤ) :
     Correspondence C sX sY e r ≃ₗ[ℚ] Correspondence C sY sX d (d - e + r)
 ```
 
-**`Stacks.WeilCohomology.cycleTranspose_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean#L155). The attribute's comment: “transpose\_graph”.
+**`Stacks.WeilCohomology.cycleTranspose_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean#L155). The attribute's comment: “transpose\_graph”.
 
 > **Stacks Project, Tag 0FG4.** Transposing the cycle of the graph of `f : Y ⟶ X` gives the
 > cycle of the transposed graph.
@@ -422,7 +422,7 @@ theorem cycleTranspose_graph (f : Y ⟶ X) (hf : f ≫ sX = sY) (k : ℤ) :
         (graphMorphism sX sY f hf ≫ (pullbackSymmetry sX sY).hom).imageι k
 ```
 
-**`Stacks.WeilCohomology.transpose_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean#L171). The attribute's comment: “transpose\_graph”.
+**`Stacks.WeilCohomology.transpose_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/TransposeGraph.lean#L171). The attribute's comment: “transpose\_graph”.
 
 > **Stacks Project, Tag 0FG4.** The transpose of the rational correspondence of the graph of
 > `f : Y ⟶ X` is the rational correspondence of the transposed graph: `[Γ_f]ᵗ = [Γ_fᵗ]`.
@@ -442,7 +442,7 @@ theorem transpose_graph (f : Y ⟶ X) (hf : f ≫ sX = sY) (d e r : ℤ) (q : �
 
 [Tag 0FG5](https://stacks.math.columbia.edu/tag/0FG5) in the Stacks Project.
 
-**`Stacks.WeilCohomology.pullback_graphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1075). The attribute's comment: “(2): pullback of cycles by the correspondence [Γ\_f] agrees with the pushforward f\_* : CH\_*(Y) → CH\_*(X), in every dimension, with rational coefficients”.
+**`Stacks.WeilCohomology.pullback_graphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1075). The attribute's comment: “(2): pullback of cycles by the correspondence [Γ\_f] agrees with the pushforward f\_* : CH\_*(Y) → CH\_*(X), in every dimension, with rational coefficients”.
 
 > **Stacks Project, Tag 0FG5 (2).** Let `f : Y ⟶ X` be a morphism of smooth projective
 > schemes over `k` and `[Γ_f] ∈ Corr⁰(X, Y)` its graph (Example 0FG1). Pullback of cycles by the
@@ -460,7 +460,7 @@ theorem pullback_graphCorrespondenceSP (m : ℤ) :
           (properPushforwardDescends _ _ _ _ _ _))).toIntLinearMap.baseChange ℚ
 ```
 
-**`Stacks.WeilCohomology.pullback_transposeGraphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1099). The attribute's comment: “(3)(b): for X and Y equidimensional of dimensions d and e, pullback of cycles by the transposed graph [Γ\_f]ᵗ ∈ Corr^\{d-e}(Y, X) of Remark 0FG4 agrees with the Gysin map f^!, in every dimension, with rational coefficients”.
+**`Stacks.WeilCohomology.pullback_transposeGraphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1099). The attribute's comment: “(3)(b): for X and Y equidimensional of dimensions d and e, pullback of cycles by the transposed graph [Γ\_f]ᵗ ∈ Corr^\{d-e}(Y, X) of Remark 0FG4 agrees with the Gysin map f^!, in every dimension, with rational coefficients”.
 
 > **Stacks Project, Tag 0FG5 (3)(b).** Let `f : Y ⟶ X` be a morphism of smooth projective
 > schemes over `k`, with `X` and `Y` equidimensional of dimensions `d` and `e`. Pullback of cycles
@@ -478,7 +478,7 @@ theorem pullback_transposeGraphCorrespondenceSP {d e : ℕ} (hX : RelativeDimens
         m).toIntLinearMap.baseChange ℚ
 ```
 
-**`Stacks.WeilCohomology.pushforward_transposeGraphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1152). The attribute's comment: “(3)(a): for X and Y equidimensional of dimensions d and e, pushforward of cycles by the transposed graph [Γ\_f]ᵗ ∈ Corr^\{d-e}(Y, X) of Remark 0FG4 corresponds to pushforward of cycles by f, on CH^i(Y) ⊗ Q for every i”.
+**`Stacks.WeilCohomology.pushforward_transposeGraphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1152). The attribute's comment: “(3)(a): for X and Y equidimensional of dimensions d and e, pushforward of cycles by the transposed graph [Γ\_f]ᵗ ∈ Corr^\{d-e}(Y, X) of Remark 0FG4 corresponds to pushforward of cycles by f, on CH^i(Y) ⊗ Q for every i”.
 
 > **Stacks Project, Tag 0FG5 (3)(a).** Let `f : Y ⟶ X` be a morphism of smooth projective
 > schemes over `k`, with `X` and `Y` equidimensional of dimensions `d` and `e`. Pushforward of
@@ -499,7 +499,7 @@ theorem pushforward_transposeGraphCorrespondenceSP {d e : ℕ}
           ℚ
 ```
 
-**`Stacks.WeilCohomology.pushforward_graphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1177). The attribute's comment: “(1): pushforward of cycles by the correspondence [Γ\_f] agrees with the Gysin map f^! : CH^*(X) → CH^*(Y), on CH^i(X) ⊗ Q for every i, X and Y not necessarily equidimensional”.
+**`Stacks.WeilCohomology.pushforward_graphCorrespondenceSP`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/GraphAction.lean#L1177). The attribute's comment: “(1): pushforward of cycles by the correspondence [Γ\_f] agrees with the Gysin map f^! : CH^*(X) → CH^*(Y), on CH^i(X) ⊗ Q for every i, X and Y not necessarily equidimensional”.
 
 > **Stacks Project, Tag 0FG5 (1).** Let `f : Y ⟶ X` be a morphism of smooth projective
 > schemes over `k` and `[Γ_f] ∈ Corr⁰(X, Y)` its graph (Example 0FG1). Pushforward of cycles by
@@ -525,7 +525,7 @@ theorem pushforward_graphCorrespondenceSP (i : ℤ) :
 
 [Tag 0FG6](https://stacks.math.columbia.edu/tag/0FG6) in the Stacks Project.
 
-**`Stacks.WeilCohomology.projectiveLineCorrEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L111). The attribute's comment: “Corr⁰(X, X) = CH¹(X × X) ⊗ ℚ = CH₁(X × X) ⊗ ℚ”.
+**`Stacks.WeilCohomology.projectiveLineCorrEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L111). The attribute's comment: “Corr⁰(X, X) = CH¹(X × X) ⊗ ℚ = CH₁(X × X) ⊗ ℚ”.
 
 > `Corr⁰(P¹_k, P¹_k) = CH¹(P¹ × P¹) ⊗ ℚ = CH₁(P¹ × P¹) ⊗ ℚ`: a correspondence of degree zero
 > on the projective line is a rational cycle class of dimension one on `P¹_k ×_k P¹_k`.
@@ -536,7 +536,7 @@ def projectiveLineCorrEquiv :
       Correspondence (fieldChowSituation k) σ σ 1 0
 ```
 
-**`Stacks.WeilCohomology.projectiveLineCorrBasis`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L120). The attribute's comment: “c₀ and c₂ are a basis of Corr⁰(X, X)”.
+**`Stacks.WeilCohomology.projectiveLineCorrBasis`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L120). The attribute's comment: “c₀ and c₂ are a basis of Corr⁰(X, X)”.
 
 > A basis of `Corr⁰(P¹_k, P¹_k)` over `ℚ`, formed by `c₀ = [x × P¹]` and `c₂ = [P¹ × x]`.
 
@@ -545,7 +545,7 @@ def projectiveLineCorrBasis :
     Module.Basis (Fin 2) ℚ (SmoothProjectiveCorr (projectiveLineObj k) (projectiveLineObj k) 0)
 ```
 
-**`Stacks.WeilCohomology.projectiveLinePointFibreCorr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L163). The attribute's comment: “c₀ = [x × X]”.
+**`Stacks.WeilCohomology.projectiveLinePointFibreCorr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L163). The attribute's comment: “c₀ = [x × X]”.
 
 > The correspondence `c₀ = [x × P¹] ∈ Corr⁰(P¹_k, P¹_k)` of a rational point `x`.
 
@@ -554,7 +554,7 @@ def projectiveLinePointFibreCorr :
     SmoothProjectiveCorr (projectiveLineObj k) (projectiveLineObj k) 0
 ```
 
-**`Stacks.WeilCohomology.projectiveLineFibrePointCorr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L169). The attribute's comment: “c₂ = [X × x]”.
+**`Stacks.WeilCohomology.projectiveLineFibrePointCorr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L169). The attribute's comment: “c₂ = [X × x]”.
 
 > The correspondence `c₂ = [P¹ × x] ∈ Corr⁰(P¹_k, P¹_k)` of a rational point `x`.
 
@@ -563,7 +563,7 @@ def projectiveLineFibrePointCorr :
     SmoothProjectiveCorr (projectiveLineObj k) (projectiveLineObj k) 0
 ```
 
-**`Stacks.WeilCohomology.projectiveLine_diagonal_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L225). The attribute's comment: “1 = [Δ] = c₀ + c₂”.
+**`Stacks.WeilCohomology.projectiveLine_diagonal_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L225). The attribute's comment: “1 = [Δ] = c₀ + c₂”.
 
 > `1 = [Δ] = c₀ + c₂` in `Corr⁰(P¹_k, P¹_k)`.
 
@@ -573,7 +573,7 @@ theorem projectiveLine_diagonal_eq_add :
       projectiveLinePointFibreCorr x hx + projectiveLineFibrePointCorr x hx
 ```
 
-**`Stacks.WeilCohomology.projectiveLine_pointFibre_comp_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L252). The attribute's comment: “c₀ ∘ c₀ = c₀”.
+**`Stacks.WeilCohomology.projectiveLine_pointFibre_comp_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L252). The attribute's comment: “c₀ ∘ c₀ = c₀”.
 
 > `c₀ ∘ c₀ = c₀` in the category of correspondences.
 
@@ -583,7 +583,7 @@ theorem projectiveLine_pointFibre_comp_pointFibre :
       projectiveLinePointFibreHom x hx
 ```
 
-**`Stacks.WeilCohomology.projectiveLine_fibrePoint_comp_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L278). The attribute's comment: “c₀ ∘ c₂ = 0”.
+**`Stacks.WeilCohomology.projectiveLine_fibrePoint_comp_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L278). The attribute's comment: “c₀ ∘ c₂ = 0”.
 
 > `c₀ ∘ c₂ = 0` in the category of correspondences.
 
@@ -592,7 +592,7 @@ theorem projectiveLine_fibrePoint_comp_pointFibre :
     projectiveLineFibrePointHom x hx ≫ projectiveLinePointFibreHom x hx = 0
 ```
 
-**`Stacks.WeilCohomology.projectiveLine_pointFibre_comp_fibrePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L285). The attribute's comment: “c₂ ∘ c₀ = 0”.
+**`Stacks.WeilCohomology.projectiveLine_pointFibre_comp_fibrePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L285). The attribute's comment: “c₂ ∘ c₀ = 0”.
 
 > `c₂ ∘ c₀ = 0` in the category of correspondences.
 
@@ -601,7 +601,7 @@ theorem projectiveLine_pointFibre_comp_fibrePoint :
     projectiveLinePointFibreHom x hx ≫ projectiveLineFibrePointHom x hx = 0
 ```
 
-**`Stacks.WeilCohomology.projectiveLine_fibrePoint_comp_fibrePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L292). The attribute's comment: “c₂ ∘ c₂ = c₂”.
+**`Stacks.WeilCohomology.projectiveLine_fibrePoint_comp_fibrePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L292). The attribute's comment: “c₂ ∘ c₂ = c₂”.
 
 > `c₂ ∘ c₂ = c₂` in the category of correspondences.
 
@@ -611,7 +611,7 @@ theorem projectiveLine_fibrePoint_comp_fibrePoint :
       projectiveLineFibrePointHom x hx
 ```
 
-**`Stacks.WeilCohomology.projectiveLineCorrAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L351). The attribute's comment: “Corr⁰(X, X) = ℚ × ℚ as a ℚ-algebra”.
+**`Stacks.WeilCohomology.projectiveLineCorrAlgEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCorrespondenceAlgebra.lean#L351). The attribute's comment: “Corr⁰(X, X) = ℚ × ℚ as a ℚ-algebra”.
 
 > `Corr⁰(P¹_k, P¹_k) = ℚ × ℚ` as a `ℚ`-algebra: the degree-zero endomorphisms of `P¹_k` in the
 > category of correspondences, with composition as multiplication, are the product algebra, via
@@ -621,7 +621,7 @@ theorem projectiveLine_fibrePoint_comp_fibrePoint :
 def projectiveLineCorrAlgEquiv : (ℚ × ℚ) ≃ₐ[ℚ] degreeZeroSubalgebra (R := ℚ) 𝐗
 ```
 
-**`Stacks.WeilCohomology.mul_self_of_add_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L78). The attribute's comment: “c₂ ∘ c₂ = c₂”.
+**`Stacks.WeilCohomology.mul_self_of_add_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L78). The attribute's comment: “c₂ ∘ c₂ = c₂”.
 
 > The complement of an idempotent is idempotent: from `[Δ] = c₀ + c₂` and `c₀ ∘ c₀ = c₀`
 > follows `c₂ ∘ c₂ = c₂`.
@@ -630,7 +630,7 @@ def projectiveLineCorrAlgEquiv : (ℚ × ℚ) ≃ₐ[ℚ] degreeZeroSubalgebra (
 theorem mul_self_of_add_eq_one (hsum : c₀ + c₂ = 1) (h₀ : c₀ * c₀ = c₀) : c₂ * c₂ = c₂
 ```
 
-**`Stacks.WeilCohomology.mul_eq_zero_of_add_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L85). The attribute's comment: “c₀ ∘ c₂ = 0”.
+**`Stacks.WeilCohomology.mul_eq_zero_of_add_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L85). The attribute's comment: “c₀ ∘ c₂ = 0”.
 
 > An idempotent and its complement are orthogonal: from `[Δ] = c₀ + c₂` and `c₀ ∘ c₀ = c₀`
 > follows `c₀ ∘ c₂ = 0`.
@@ -639,7 +639,7 @@ theorem mul_self_of_add_eq_one (hsum : c₀ + c₂ = 1) (h₀ : c₀ * c₀ = c�
 theorem mul_eq_zero_of_add_eq_one (hsum : c₀ + c₂ = 1) (h₀ : c₀ * c₀ = c₀) : c₀ * c₂ = 0
 ```
 
-**`Stacks.WeilCohomology.mul_eq_zero_of_add_eq_one'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L92). The attribute's comment: “c₂ ∘ c₀ = 0”.
+**`Stacks.WeilCohomology.mul_eq_zero_of_add_eq_one'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L92). The attribute's comment: “c₂ ∘ c₀ = 0”.
 
 > An idempotent and its complement are orthogonal in the other order too: from
 > `[Δ] = c₀ + c₂` and `c₀ ∘ c₀ = c₀` follows `c₂ ∘ c₀ = 0`.
@@ -648,7 +648,7 @@ theorem mul_eq_zero_of_add_eq_one (hsum : c₀ + c₂ = 1) (h₀ : c₀ * c₀ =
 theorem mul_eq_zero_of_add_eq_one' (hsum : c₀ + c₂ = 1) (h₀ : c₀ * c₀ = c₀) : c₂ * c₀ = 0
 ```
 
-**`Stacks.WeilCohomology.algEquivProdOfBasisOfAddEqOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L111). The attribute's comment: “Corr⁰(X, X) = ℚ × ℚ as a ℚ-algebra”.
+**`Stacks.WeilCohomology.algEquivProdOfBasisOfAddEqOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L111). The attribute's comment: “Corr⁰(X, X) = ℚ × ℚ as a ℚ-algebra”.
 
 > An algebra with a two-element basis `c₀`, `c₂` whose sum is the identity and whose first
 > member is idempotent is the product algebra `R × R`: the two basis elements are orthogonal
@@ -660,7 +660,7 @@ def algEquivProdOfBasisOfAddEqOne (b : Module.Basis (Fin 2) R A) (hsum : b 0 + b
     (h₀ : b 0 * b 0 = b 0) : (R × R) ≃ₐ[R] A
 ```
 
-**`Stacks.WeilCohomology.pointFibreCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L147). The attribute's comment: “c₀ = [x × X]”.
+**`Stacks.WeilCohomology.pointFibreCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L147). The attribute's comment: “c₀ = [x × X]”.
 
 > The degree-zero correspondence `c₀ = [x × X]` attached to a section `x` of `sX`, for a source
 > equidimensional of dimension `d`: the rational class of the fibre `x × X ⊆ X ×_S X`, which is the
@@ -670,7 +670,7 @@ def algEquivProdOfBasisOfAddEqOne (b : Module.Basis (Fin 2) R A) (hsum : b 0 + b
 def pointFibreCorrespondence (d : ℤ) : Correspondence C sX sX d 0
 ```
 
-**`Stacks.WeilCohomology.fibrePointCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L155). The attribute's comment: “c₂ = [X × x]”.
+**`Stacks.WeilCohomology.fibrePointCorrespondence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L155). The attribute's comment: “c₂ = [X × x]”.
 
 > The degree-zero correspondence `c₂ = [X × x]` attached to a section `x` of `sX`: the rational
 > class of the fibre `X × x ⊆ X ×_S X`, the factor switch of `x × X`.
@@ -679,7 +679,7 @@ def pointFibreCorrespondence (d : ℤ) : Correspondence C sX sX d 0
 def fibrePointCorrespondence (d : ℤ) : Correspondence C sX sX d 0
 ```
 
-**`Stacks.WeilCohomology.cycleTranspose_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L164). The attribute's comment: “[X × x] is the transpose of [x × X]”.
+**`Stacks.WeilCohomology.cycleTranspose_pointFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L164). The attribute's comment: “[X × x] is the transpose of [x × X]”.
 
 > The fibre `X × x` is the transpose of the fibre `x × X`: transposing the cycle of the one gives
 > the cycle of the other.
@@ -694,7 +694,7 @@ theorem cycleTranspose_pointFibre (k : ℤ) :
           (pullbackSymmetry sX sX).hom).imageι k
 ```
 
-**`Stacks.WeilCohomology.correspondence_zero_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L177). The attribute's comment: “Corr⁰(X, X) = CH₁(X × X) ⊗ ℚ”.
+**`Stacks.WeilCohomology.correspondence_zero_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/ProjectiveLineAlgebra.lean#L177). The attribute's comment: “Corr⁰(X, X) = CH₁(X × X) ⊗ ℚ”.
 
 > For a source equidimensional of dimension one, such as the projective line, the degree-zero
 > correspondences are the rational dimension-one Chow classes of the square,
@@ -710,7 +710,7 @@ theorem correspondence_zero_eq :
 
 [Tag 0FG7](https://stacks.math.columbia.edu/tag/0FG7) in the Stacks Project.
 
-**`Stacks.WeilCohomology.CorrespondenceCategory.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean#L1045).
+**`Stacks.WeilCohomology.CorrespondenceCategory.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean#L1043).
 
 > **Stacks Project, Tag 0FG7** (monoidal structure). The tensor product of correspondences
 > `c ⊗ c' = pr₁₃^* c · pr₂₄^* c'` turns the category of correspondences between smooth projective
@@ -722,7 +722,7 @@ theorem correspondence_zero_eq :
 instance monoidalCategory : MonoidalCategory (CorrespondenceCategory k)
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceCategory.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean, line 1105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean#L1105).
+**`Stacks.WeilCohomology.CorrespondenceCategory.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean, line 1103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CorrespondenceMonoidal.lean#L1103).
 
 > **Stacks Project, Tag 0FG7.** The tensor product of correspondences
 > `c ⊗ c' = pr₁₃^* c · pr₂₄^* c'` turns the category of correspondences between smooth projective
@@ -735,7 +735,7 @@ instance monoidalCategory : MonoidalCategory (CorrespondenceCategory k)
 instance symmetricCategory : SymmetricCategory (CorrespondenceCategory k)
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean#L243). The attribute's comment: “the category of correspondences is monoidal for the exterior product”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.monoidalCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean#L243). The attribute's comment: “the category of correspondences is monoidal for the exterior product”.
 
 > **Stacks Project, Tag 0FG7.** The exterior product of correspondences makes the category of
 > correspondences monoidal. The pentagon and the triangle hold because every morphism they
@@ -745,7 +745,7 @@ instance symmetricCategory : SymmetricCategory (CorrespondenceCategory k)
 instance monoidalCategory : MonoidalCategory S.Obj
 ```
 
-**`Stacks.WeilCohomology.CorrespondenceStructure.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean#L295). The attribute's comment: “the category of correspondences is symmetric monoidal with unit Spec(k)”.
+**`Stacks.WeilCohomology.CorrespondenceStructure.symmetricCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Correspondences/MonoidalStructure.lean#L295). The attribute's comment: “the category of correspondences is symmetric monoidal with unit Spec(k)”.
 
 > **Stacks Project, Tag 0FG7.** The exterior product of correspondences makes the category of
 > correspondences symmetric monoidal with unit `Spec(k)`: the commutativity constraint is the
@@ -759,7 +759,7 @@ instance symmetricCategory : SymmetricCategory S.Obj
 
 [Tag 0FG8](https://stacks.math.columbia.edu/tag/0FG8) in the Stacks Project.
 
-**`Stacks.WeilCohomology.graph_tensor_diagonal_fundamental_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GraphFundamentalPairing.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GraphFundamentalPairing.lean#L783).
+**`Stacks.WeilCohomology.graph_tensor_diagonal_fundamental_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GraphFundamentalPairing.lean, line 783](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GraphFundamentalPairing.lean#L783).
 
 > **Stacks Project, Tag 0FG8.** Let `f : Y ⟶ X` be a morphism of smooth projective schemes over
 > `k`, with `X` and `Y` equidimensional of dimensions `d` and `e`. Let `a = [Γ_f] ∈ Corr⁰(X, Y)`,
@@ -794,4 +794,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.3, Tag 0FFZ](https://stacks.math.columbia.edu/tag/0FFZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

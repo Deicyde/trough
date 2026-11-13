@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.38 Brown representability
 
-Section 13.38 of the Stacks Project, [Tag 0A8E](https://stacks.math.columbia.edu/tag/0A8E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.38 of the Stacks Project, [Tag 0A8E](https://stacks.math.columbia.edu/tag/0A8E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A8F, a lemma
 
 [Tag 0A8F](https://stacks.math.columbia.edu/tag/0A8F) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_iso_preadditiveYoneda_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L322).
+**`CategoryTheory.Pretriangulated.exists_iso_preadditiveYoneda_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L322).
 
 > **Brown representability**: let `D` be a triangulated category with arbitrary direct sums
 > which is compactly generated, i.e. there is a family `E : ι → D` of compact objects (each
@@ -38,7 +38,7 @@ public theorem exists_iso_preadditiveYoneda_of_compactlyGenerated
 
 [Tag 0A8G](https://stacks.math.columbia.edu/tag/0A8G) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_isTriangulated_rightAdjoint_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L415). References: SGA 4 XVII (2.2.13.1), “Triangulated case”.
+**`CategoryTheory.Pretriangulated.exists_isTriangulated_rightAdjoint_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/BrownRepresentability.lean#L415). References: SGA 4 XVII (2.2.13.1), “Triangulated case”.
 
 > Let `D` be a triangulated category with arbitrary direct sums which is compactly generated,
 > i.e. there is a family `E : ι → D` of compact objects (each `preadditiveCoyoneda.obj (op (E i))`
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.38, Tag 0A8E](https://stacks.math.columbia.edu/tag/0A8E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

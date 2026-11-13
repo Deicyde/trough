@@ -8,7 +8,7 @@ proof: formalized
 
 # Asymptotic expansions of factorial series
 
-20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html).
+20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html).
 
 ## Terms of Ramanujan's factorial series
 
@@ -16,7 +16,7 @@ For a real number $x$ and a natural number $j$,
 the $j$-th term of Ramanujan's factorial series is $(-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$,
 read as $0$ when the denominator vanishes.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-cterm).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-cterm).
 
 ## Ramanujan's factorial series
 
@@ -27,7 +27,7 @@ the series is not summable.
 
 The series is summable for every $x > 0$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-csum).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-csum).
 
 ## Convergence of Ramanujan's factorial series
 
@@ -36,7 +36,7 @@ $\sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ is summable.
 
 Its $j$-th term is bounded in absolute value by $1 / (j + 1)!$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.summable_chapter6Section13ExampleCTerm`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#summable-chapter6-section13-example-cter).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.summable_chapter6Section13ExampleCTerm`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#summable-chapter6-section13-example-cter).
 
 ## Recursion for the terms of Ramanujan's factorial series
 
@@ -45,7 +45,7 @@ $c_j(x) = (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ for the $j$-th term of R
 factorial series, with division by $0$ read as $0$. For every real $x$ and every natural number
 $j$, $c_{j+1}(x) = -\frac{1}{x + 1} \, c_j(x + 1)$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm_succ`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-cterm-succ).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm_succ`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-cterm-succ).
 
 ## Functional equation of Ramanujan's factorial series
 
@@ -53,7 +53,7 @@ Let
 $C(x) = \sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ be Ramanujan's factorial
 series. For every real $x > 0$, $C(x) = \frac{1}{x + 1} - \frac{C(x + 1)}{x + 1}$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum_eq`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-csum-eq).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum_eq`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#chapter6-section13-example-csum-eq).
 
 ## Asymptotic expansion of Ramanujan's factorial series
 
@@ -64,7 +64,7 @@ series and let $B_n$ denote the $n$-th Bell number. For every natural number $N$
 $$C(x) - \sum_{j=0}^{N-1} \frac{(-1)^j B_{j+1}}{x^{j+1}} = O\left(\frac{1}{x^{N+1}}\right)
 \quad \text{as } x \to \infty.$$
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.isBigO_chapter6Section13ExampleCSum_sub_sum_bell`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#is-big-o-chapter6-section13-example-csum).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.isBigO_chapter6Section13ExampleCSum_sub_sum_bell`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 556](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L556). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#is-big-o-chapter6-section13-example-csum).
 
 ## Convergence and asymptotic expansion of Ramanujan's factorial series
 
@@ -80,7 +80,7 @@ $$C(x) - \sum_{j=0}^{N-1} \frac{(-1)^j B_{j+1}}{x^{j+1}} = O\left(\frac{1}{x^{N+
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.ramanujan_part1_ch6_entry5_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 758](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L758). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch6-entry5-digamma).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.ramanujan_part1_ch6_entry5_digamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch6Entry5Digamma.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch6-entry5-digamma).
 
 ## Summability of Ramanujan's factorial series in a sector, for every $x$
 
@@ -90,7 +90,7 @@ that for every complex number $z$ with $|z| \ge R$ whose principal argument sati
 $-\pi + \varepsilon \le \arg z \le \pi - \varepsilon$, the series
 $\sum_{j=0}^{\infty} \frac{(-1)^j x^{j+1}}{(z+1)(z+2)\cdots(z+j+1)}$ is summable.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3Psisummable.ramanujan_part1_ch3_entry3_psisummable_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-psisummable-g).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3Psisummable.ramanujan_part1_ch3_entry3_psisummable_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-psisummable-g).
 
 ## Summability of Ramanujan's factorial series in a sector
 
@@ -107,7 +107,7 @@ match the source.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 3, printed p. 47 / PDF p. 57. It follows from `ramanujan_part1_ch3_entry3_psisummable_general`; the hypotheses `x ≠ 0` and `ε < π` are unused and keep the source's shape.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3Psisummable.ramanujan_part1_ch3_entry3_psisummable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-psisummable).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3Psisummable.ramanujan_part1_ch3_entry3_psisummable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3Psisummable.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-psisummable).
 
 ## Ramanujan's product series
 
@@ -124,7 +124,7 @@ singularity there. Off the poles, when $b \neq 0$ and $w = (z + a)/b$ is nonzero
 $|\arg w| \le \pi - \varepsilon$ for some $0 < \varepsilon < \pi$, the closed form of Ramanujan's
 product series identifies $P$ with the source's closed form.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.entry9_P`, a definition declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#entry9-p).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.entry9_P`, a definition declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#entry9-p).
 
 ## Closed form of Ramanujan's product series off the poles
 
@@ -135,7 +135,7 @@ natural number $r$. Then Ramanujan's product series $P$ satisfies
 
 $$P(a, b, x; z) = e^{-x} \sum_{m=0}^{\infty} \frac{x^{m+1}}{m!\,(z + a + b(m + 1))}.$$
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.entry9_P_closed`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#entry9-p-closed).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.entry9_P_closed`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#entry9-p-closed).
 
 ## Asymptotic expansion of Ramanujan's product series
 
@@ -155,7 +155,7 @@ $-\pi + \varepsilon \le \arg((z + a)/b) \le \pi - \varepsilon$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 9(i), definitions printed p. 53 / PDF p. 63 and result printed p. 54 / PDF p. 64.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.ramanujan_part1_ch3_entry9_odd`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 814](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L814). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry9-odd).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9Odd.ramanujan_part1_ch3_entry9_odd`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean, line 814](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9Odd.lean#L814). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry9-odd).
 
 ## Entry 3 coefficients as generalized Bell values
 
@@ -164,7 +164,7 @@ function. For every complex number $x$ and every natural number $j$, let
 $f(x, j) = e^{-x} \sum_{k=0}^{\infty} \frac{(k+1)^j x^{k+1}}{k!}$. Then
 $f(x, j) = F(0, 1, x; j)$.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.fCoeff_eq_generalizedBellGenerating`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#f-coeff-eq-generalized-bell-generating).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.fCoeff_eq_generalizedBellGenerating`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#f-coeff-eq-generalized-bell-generating).
 
 ## Ramanujan's factorial series as the Entry 9 product series at $a = 0$, $b = 1$
 
@@ -176,7 +176,7 @@ $\psi(x, z) = P(0, 1, x; z)$.
 
 Since division by zero is taken to give zero, the case distinction in $t_j$ changes nothing.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.psi_eq_entry9_P`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#psi-eq-entry9-p).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.psi_eq_entry9_P`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#psi-eq-entry9-p).
 
 ## Asymptotic expansion of Ramanujan's factorial series, for every $x$
 
@@ -193,7 +193,7 @@ $$\psi(x, z) - \sum_{j=0}^{N} \frac{(-1)^j f(x, j)}{z^{j+1}} = O\left(\frac{1}{z
 
 as $|z| \to \infty$ with $z \in S_\varepsilon$.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.ramanujan_part1_ch3_entry3_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-general).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.ramanujan_part1_ch3_entry3_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3-general).
 
 ## Ramanujan's asymptotic expansion of a factorial series
 
@@ -216,7 +216,7 @@ The hypothesis $x \neq 0$ is not needed for the proof; it is kept to match the s
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 3, printed p. 47 / PDF p. 57.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.ramanujan_part1_ch3_entry3`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.ramanujan_part1_ch3_entry3`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry3.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry3).
 
 ## Convergence of Ramanujan's product series in a sector
 
@@ -233,7 +233,7 @@ converges absolutely.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 9(i), definitions printed p. 53 / PDF p. 63 and result printed p. 54 / PDF p. 64. It follows from `Complex.summable_neg_pow_mul_pow_div_prod_add_mul`: the upper sector bound keeps `(z + a) / b` off the negative real axis, so no factor of the denominator vanishes. The hypothesis `hεlt`, the radius (taken to be `0`) and the lower sector bound are unused and keep the source's shape.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9OddProductsummable.ramanujan_part1_ch3_entry9_odd_productsummable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9OddProductsummable.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9OddProductsummable.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry9-odd-productsu).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry9OddProductsummable.ramanujan_part1_ch3_entry9_odd_productsummable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9OddProductsummable.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry9OddProductsummable.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-entry9-odd-productsu).
 
 ## Asymptotic expansion of a factorial series
 
@@ -265,7 +265,7 @@ then expand each $1/((z + 1)\cdots(z + j + 1))$ termwise in powers of $1/z$ and 
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 1, formula (8.1), printed p. 50 / PDF p. 60.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Asymptotic.ramanujan_part1_ch3_section8_example1_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Asymptotic.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Asymptotic.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-as).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Asymptotic.ramanujan_part1_ch3_section8_example1_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Asymptotic.lean, line 738](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Asymptotic.lean#L738). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-as).
 
 ## Convergence of a factorial series in a sector, general form
 
@@ -281,7 +281,7 @@ absolutely for every complex $z$ with $|z| > R$ that lies in the sector
 $|\arg(z - \lambda)| \le \pi/2 - \varepsilon$ when $\lambda$ is real, or
 $|\arg z| \le \pi - \varepsilon$ when $\lambda = -\infty$.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Summable.ramanujan_part1_ch3_section8_example1_summable_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-su).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Summable.ramanujan_part1_ch3_section8_example1_summable_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-su).
 
 ## Convergence of a factorial series in a sector
 
@@ -302,7 +302,7 @@ $|\arg z| \le \pi - \varepsilon$ when $\lambda = -\infty$.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 1, formula (8.1), printed p. 50 / PDF p. 60. It follows from `ramanujan_part1_ch3_section8_example1_summable_general`; the upper bound `heps_lt` is unused and keeps the source's shape.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Summable.ramanujan_part1_ch3_section8_example1_summable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-su-2).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Section8Example1Summable.ramanujan_part1_ch3_section8_example1_summable`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Section8Example1Summable.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html#ramanujan-part1-ch3-section8-example1-su-2).
 
 ## Depends on
 
@@ -311,4 +311,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotic expansions of factorial series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-factorial-series)

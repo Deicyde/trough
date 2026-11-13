@@ -7,7 +7,7 @@ statement: formalized
 
 # Hessian estimates for the σ₂ equation
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html).
 
 ## C¹ norm on a set
 
@@ -23,7 +23,7 @@ Fréchet derivative of $f$ on all of $E$ (taken to be $0$ at points where $f$ is
 differentiable), a function from $E$ to the continuous linear maps $E \to F$, measured in the
 operator norm.
 
-Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.eC1NormOn`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HessianEstimatesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#e-c1-norm-on).
+Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.eC1NormOn`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HessianEstimatesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#e-c1-norm-on).
 
 ## Hessian operator within a set
 
@@ -34,7 +34,7 @@ derivative of $f$ within $s$ at $y$; it is a continuous bilinear form on $E$. Th
 operator of $f$ within $s$ at $x$ is the continuous linear map $Hf(x) : E \to E$ determined by
 $\langle Hf(x)\, u, v \rangle = D^2 f(x)(u, v)$ for all $u, v \in E$.
 
-Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.H`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HessianEstimatesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#h).
+Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.H`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HessianEstimatesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#h).
 
 ## Frobenius norm
 
@@ -43,7 +43,7 @@ Frobenius norm of a continuous linear map $T : E \to F$ is
 $\|T\|_F = \sqrt{\operatorname{tr}(T^* T)}$, where $T^* : F \to E$ is the adjoint of $T$ and the
 trace is taken on $E$.
 
-Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.frobeniusNorm`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HessianEstimatesWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#frobenius-norm).
+Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.frobeniusNorm`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HessianEstimatesWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#frobenius-norm).
 
 ## Second elementary symmetric function of the eigenvalues
 
@@ -53,7 +53,7 @@ eigenvalues $\lambda_1, \dots, \lambda_n$, listed with multiplicity, then
 $\sigma_2(T) = \sum_{1 \le i < j \le n} \lambda_i \lambda_j$. If $T$ is not symmetric, then
 $\sigma_2(T) = 0$ by convention.
 
-Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.σ₂`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HessianEstimatesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#untitled).
+Formalized by `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.σ₂`, a definition declared in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HessianEstimatesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#untitled).
 
 ## Shankar–Yuan Hessian estimate for the sigma-2 equation in dimension four
 
@@ -71,7 +71,7 @@ $\|Hu(0)\|_F \le C(\|u\|_{C^1(B_1(0))})$.
 
 - R. Shankar and Y. Yuan, `Hessian estimates for the sigma-2 equation in dimension four`, Annals of Math, 201 (2) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hessian_estimates` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HessianEstimatesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Analysis/HessianEstimatesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HessianEstimatesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hessian estimates for the σ₂ equation](https://deicyde.github.io/atlas-lean/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/partial-differential-equations/hessian-estimates-for-the-equation)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 65.7 Fibre products of algebraic spaces
 
-Section 65.7 of the Stacks Project, [Tag 04T8](https://stacks.math.columbia.edu/tag/04T8). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.7 of the Stacks Project, [Tag 04T8](https://stacks.math.columbia.edu/tag/04T8). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02X0, a lemma
 
 [Tag 02X0](https://stacks.math.columbia.edu/tag/02X0) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean#L111). The attribute's comment: “the product is an algebraic space”.
+**`AlgebraicGeometry.isAlgebraicSpace_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean#L111). The attribute's comment: “the product is an algebraic space”.
 
 > The presheaf product of two algebraic spaces over `S` is an algebraic space over `S`.
 
@@ -25,7 +25,7 @@ theorem isAlgebraicSpace_prod (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
     IsAlgebraicSpace B S hS (F ⨯ G)
 ```
 
-**`AlgebraicGeometry.AlgebraicSpaces.isLimitBinaryFanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean#L143). The attribute's comment: “the universal property”.
+**`AlgebraicGeometry.AlgebraicSpaces.isLimitBinaryFanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits.lean#L143). The attribute's comment: “the universal property”.
 
 > The presheaf product of two algebraic spaces over `S`, with the two presheaf projections, is
 > a product in the category of algebraic spaces over `S`.
@@ -43,7 +43,7 @@ noncomputable def isLimitBinaryFanProduct (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 04T9](https://stacks.math.columbia.edu/tag/04T9) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean#L129).
+**`AlgebraicGeometry.isAlgebraicSpace_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean#L129).
 
 > Let `F` and `G` be algebraic spaces over `S`, let `H` be an fppf sheaf on the big fppf site of
 > `S` whose diagonal is representable, and let `f : F ⟶ H` and `g : G ⟶ H`. Then a fibre product
@@ -58,7 +58,7 @@ theorem isAlgebraicSpace_of_isPullback
     IsAlgebraicSpace B S hS Z
 ```
 
-**`AlgebraicGeometry.isAlgebraicSpace_pullback_of_representable_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean#L165). The attribute's comment: “the chosen presheaf fibre product”.
+**`AlgebraicGeometry.isAlgebraicSpace_pullback_of_representable_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreProduct.lean#L165). The attribute's comment: “the chosen presheaf fibre product”.
 
 > The chosen presheaf fibre product of two algebraic spaces over an fppf sheaf with
 > representable diagonal is an algebraic space.
@@ -77,7 +77,7 @@ theorem isAlgebraicSpace_pullback_of_representable_diagonal
 
 [Tag 02X2](https://stacks.math.columbia.edu/tag/02X2) in the Stacks Project.
 
-**`AlgebraicGeometry.AlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L265). The attribute's comment: “the category of algebraic spaces over the base”.
+**`AlgebraicGeometry.AlgebraicSpaces`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L265). The attribute's comment: “the category of algebraic spaces over the base”.
 
 > **Stacks 02X2.** The category of algebraic spaces over a scheme `S` of a big fppf site:
 > the full subcategory of presheaves on the big fppf site of `S` whose objects are algebraic
@@ -87,7 +87,7 @@ theorem isAlgebraicSpace_pullback_of_representable_diagonal
 abbrev AlgebraicSpaces (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.isAlgebraicSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L350). The attribute's comment: “algebraicity of the fibre product”.
+**`AlgebraicGeometry.isAlgebraicSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L350). The attribute's comment: “algebraicity of the fibre product”.
 
 > **Stacks 02X2.** The presheaf fibre product of two algebraic spaces over an algebraic
 > space is an algebraic space.
@@ -99,7 +99,7 @@ theorem isAlgebraicSpace_pullback {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
     IsAlgebraicSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.AlgebraicSpaces.isPullback_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L403). The attribute's comment: “universal property among algebraic spaces”.
+**`AlgebraicGeometry.AlgebraicSpaces.isPullback_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Category.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L403). The attribute's comment: “universal property among algebraic spaces”.
 
 > **Stacks 02X2.** The presheaf fibre product of two algebraic spaces is a fibre product
 > in the category of algebraic spaces over the base.
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.7, Tag 04T8](https://stacks.math.columbia.edu/tag/04T8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

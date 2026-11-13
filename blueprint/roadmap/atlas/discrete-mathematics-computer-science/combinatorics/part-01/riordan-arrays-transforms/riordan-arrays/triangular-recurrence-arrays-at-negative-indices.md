@@ -7,7 +7,7 @@ statement: formalized
 
 # Triangular recurrence arrays at negative indices
 
-19 results, 15 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html).
+19 results, 15 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html).
 
 ## Triangular recurrences
 
@@ -26,7 +26,7 @@ $$
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Equation (1).
 
-Formalized by `MetaMathlibExt.TriangularRecurrence`, a structure declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#triangular-recurrence).
+Formalized by `MetaMathlibExt.TriangularRecurrence`, a structure declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#triangular-recurrence).
 
 ## Triangular array of a linear recurrence
 
@@ -40,7 +40,7 @@ $a_{n,k} = (\alpha n + \beta k + \gamma)\, a_{n-1,k} +
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Equation (1).
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.array`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#array).
+Formalized by `MetaMathlibExt.TriangularRecurrence.array`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#array).
 
 ## The binomial array at $(4, 2)$
 
@@ -52,7 +52,7 @@ coefficients (Table 1), the triangular array $a$ satisfies $a_{4,2} = 6$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Table 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.array_binomial_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#array-binomial-four-two).
+Formalized by `MetaMathlibExt.TriangularRecurrence.array_binomial_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#array-binomial-four-two).
 
 ## First weight of a triangular recurrence
 
@@ -66,7 +66,7 @@ It is the divisor in the recurrence defining the negative-positive number $a^{NP
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.weight`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#weight).
+Formalized by `MetaMathlibExt.TriangularRecurrence.weight`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#weight).
 
 ## Second weight of a triangular recurrence
 
@@ -80,7 +80,7 @@ It is the divisor in the recurrence defining the negative-negative number $a^{NN
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 2.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.weight'`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#weight-2).
+Formalized by `MetaMathlibExt.TriangularRecurrence.weight'`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#weight-2).
 
 ## Negative-positive numbers at negative rows (auxiliary)
 
@@ -95,7 +95,7 @@ $s = c_{p,k-1}$ if $k \ge 1$, $s = 0$ if $k = 0$. Division by $0$ gives $0$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negPosAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-aux).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negPosAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-aux).
 
 ## Negative-positive numbers
 
@@ -116,7 +116,7 @@ where division by $0$ gives $0$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negPos`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negPos`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos).
 
 ## The negative-positive number at $(-1, 0)$
 
@@ -128,7 +128,7 @@ row $-1$ and column $0$ is $a^{NP}_{-1,0} = 1/\gamma$, computed in $\mathbb{Q}$ 
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negPos_neg_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-neg-one-zero).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negPos_neg_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-neg-one-zero).
 
 ## Recurrence for the negative-positive numbers
 
@@ -147,7 +147,7 @@ where the division is in $\mathbb{Q}$ and division by $0$ gives $0$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 1.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negPos_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-rec).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negPos_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-rec).
 
 ## Negative-negative numbers on and below the diagonal (auxiliary)
 
@@ -162,7 +162,7 @@ $e = b_{p,q-1}$ if $q \ge 1$, $e = 0$ if $q = 0$. Division by $0$ gives $0$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 2.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negNegAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-aux).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negNegAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-aux).
 
 ## Negative-negative numbers
 
@@ -179,7 +179,7 @@ $a^{NN}_{n,k} = (a^{NN}_{n+1,k+1} - (\alpha(n+1) + \beta(k+1) + \gamma)\, a^{NN}
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 2.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg).
 
 ## Negative-negative numbers at $(-1, -1)$ and $(-1, 0)$
 
@@ -191,7 +191,7 @@ $a^{NN}_{-1,-1} = 1/\gamma'$ (read as $0$ when $\gamma' = 0$) and $a^{NN}_{-1,0}
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 2.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg_neg_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-neg-one).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg_neg_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-neg-one).
 
 ## Recurrence for the negative-negative numbers
 
@@ -205,7 +205,7 @@ $a^{NN}_{n,k} = (a^{NN}_{n+1,k+1} - (\alpha(n+1) + \beta(k+1) + \gamma)\, a^{NN}
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Definition 2.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-rec).
+Formalized by `MetaMathlibExt.TriangularRecurrence.negNeg_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-rec).
 
 ## Reflected triangular recurrence
 
@@ -220,7 +220,7 @@ reflected array $\tilde a_{n,k} = a_{n,n-k}$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Proposition 3.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.reflect`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect).
+Formalized by `MetaMathlibExt.TriangularRecurrence.reflect`, a definition declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect).
 
 ## Reflection of triangular recurrences is an involution
 
@@ -232,7 +232,7 @@ recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, proof of Proposition 3.
 
-Formalized by `MetaMathlibExt.TriangularRecurrence.reflect_reflect`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect-reflect).
+Formalized by `MetaMathlibExt.TriangularRecurrence.reflect_reflect`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect-reflect).
 
 ## Linear Diophantine equations
 
@@ -246,7 +246,7 @@ $a x + b y + c = 0$ has no solution in integers $x, y$.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.linear_diophantine_solutions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#linear-diophantine-solutions).
+Stated but not proved: `MetaMathlibExt.linear_diophantine_solutions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#linear-diophantine-solutions).
 
 ## Knuth-type duality
 
@@ -261,7 +261,7 @@ first kind and $\{n, k\}$ of the second kind.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.TriangularRecurrence.negNeg_duality` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-duality).
+Stated but not proved: `MetaMathlibExt.TriangularRecurrence.negNeg_duality` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-neg-duality).
 
 ## NP/NN duality
 
@@ -284,7 +284,7 @@ With junk value $0$ for a zero divisor, the two identities need no existence hyp
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.TriangularRecurrence.reflect_negPos_eq_negNeg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect-neg-pos-eq-neg-neg).
+Stated but not proved: `MetaMathlibExt.TriangularRecurrence.reflect_negPos_eq_negNeg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#reflect-neg-pos-eq-neg-neg).
 
 ## Generating function of the negative-positive numbers for $\beta = \beta' = 0$
 
@@ -314,7 +314,7 @@ that row on.
 
 - Lars Palapies, *On Extensions of Triangular Arrays to Negative Row Indices and Their Generating Functions*, INTEGERS 26 (2026), Article A83, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.TriangularRecurrence.negPos_egf_beta_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-egf-beta-zero).
+Stated but not proved: `MetaMathlibExt.TriangularRecurrence.negPos_egf_beta_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PalapiesTriangularArraysWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html#neg-pos-egf-beta-zero).
 
 ## Depends on
 
@@ -323,4 +323,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Triangular recurrence arrays at negative indices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/triangular-recurrence-arrays-at-negative-indices)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.50 Étale cohomology
 
-Section 59.50 of the Stacks Project, [Tag 03Q3](https://stacks.math.columbia.edu/tag/03Q3). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.50 of the Stacks Project, [Tag 03Q3](https://stacks.math.columbia.edu/tag/03Q3). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A50, a lemma
 
 [Tag 0A50](https://stacks.math.columbia.edu/tag/0A50) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.MayerVietoris.cohomologySequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean#L325). The attribute's comment: “exactness of each six-term window”.
+**`Stacks.EtaleCohomology.MayerVietoris.cohomologySequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean#L325). The attribute's comment: “exactness of each six-term window”.
 
 > **Stacks 0A50.** The Mayer--Vietoris sequence in étale cohomology is exact: for open
 > subschemes `U`, `V` of a scheme `X` and an abelian sheaf `F` on the small étale site of `X`,
@@ -29,7 +29,7 @@ theorem cohomologySequence_exact (n₀ n₁ : ℕ) (h : n₀ + 1 = n₁) :
     (cohomologySequence F U V n₀ n₁ h).Exact
 ```
 
-**`Stacks.EtaleCohomology.MayerVietoris.initialSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean#L343). The attribute's comment: “the long exact sequence, with its leading zero”.
+**`Stacks.EtaleCohomology.MayerVietoris.initialSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietoris.lean#L343). The attribute's comment: “the long exact sequence, with its leading zero”.
 
 > **Stacks 0A50.** The Mayer--Vietoris sequence in étale cohomology is exact at its initial
 > segment, leading zero included: the sum of the two restriction maps
@@ -39,7 +39,7 @@ theorem cohomologySequence_exact (n₀ n₁ : ℕ) (h : n₀ + 1 = n₁) :
 theorem initialSequence_exact : (initialSequence F U V).Exact
 ```
 
-**`Stacks.EtaleCohomology.MayerVietoris.mayerVietoris_longExactSequence_etaleCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean#L582).
+**`Stacks.EtaleCohomology.MayerVietoris.mayerVietoris_longExactSequence_etaleCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean#L582).
 
 > **Stacks 0A50: Mayer--Vietoris for étale cohomology.** For open subschemes `U`, `V` of a
 > scheme `X` and an abelian sheaf `F` on the small étale site of `X`, the sequence
@@ -92,7 +92,7 @@ theorem mayerVietoris_longExactSequence_etaleCohomology :
           absoluteFromBiprod F U V n ≫ opensCohomologyMap X (U ⊓ V) n f
 ```
 
-**`Stacks.EtaleCohomology.MayerVietoris.mayerVietoris_longExactSequence_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean, line 829](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean#L829). The attribute's comment: “the source's own statement: the hypothesis `X = U ∪ V`, with the ambient terms of the sequence the global étale cohomology groups of `X` itself”.
+**`Stacks.EtaleCohomology.MayerVietoris.mayerVietoris_longExactSequence_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean, line 829](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MayerVietorisAbsolute.lean#L829). The attribute's comment: “the source's own statement: the hypothesis `X = U ∪ V`, with the ambient terms of the sequence the global étale cohomology groups of `X` itself”.
 
 > **Stacks 0A50: Mayer--Vietoris for étale cohomology, as the source states it.** Let `X` be a
 > scheme which is the union `X = U ∪ V` of two open subschemes and let `F` be an abelian sheaf on
@@ -146,7 +146,7 @@ theorem mayerVietoris_longExactSequence_cover (hUV : U ⊔ V = ⊤) :
 
 [Tag 0EYK](https://stacks.math.columbia.edu/tag/0EYK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.toCover`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L659). The attribute's comment: “the map Rⁿf\_*F → Rⁿa\_*(F|\_U) ⊕ Rⁿb\_*(F|\_V)”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.toCover`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L659). The attribute's comment: “the map Rⁿf\_*F → Rⁿa\_*(F|\_U) ⊕ Rⁿb\_*(F|\_V)”.
 
 > **The first map of the Mayer--Vietoris sequence in degree `n`**,
 > `Rⁿf_*F ⟶ Rⁿa_*(F|_U) ⊕ Rⁿb_*(F|_V)`, as a natural transformation of functors in `F`: that
@@ -159,7 +159,7 @@ def toCover (n : ℕ) :
         restrictedHigherDirectImage.{u, v} f V n
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.toIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L670). The attribute's comment: “the map Rⁿa\_*(F|\_U) ⊕ Rⁿb\_*(F|\_V) → Rⁿc\_*(F|\_\{U ∩ V})”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.toIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L670). The attribute's comment: “the map Rⁿa\_*(F|\_U) ⊕ Rⁿb\_*(F|\_V) → Rⁿc\_*(F|\_\{U ∩ V})”.
 
 > **The second map of the Mayer--Vietoris sequence in degree `n`**,
 > `Rⁿa_*(F|_U) ⊕ Rⁿb_*(F|_V) ⟶ Rⁿc_*(F|_{U ∩ V})`, as a natural transformation of functors
@@ -172,7 +172,7 @@ def toIntersection (n : ℕ) :
       restrictedHigherDirectImage.{u, v} f (U ⊓ V) n
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.boundary`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L681). The attribute's comment: “the connecting map Rⁿc\_*(F|\_\{U ∩ V}) → Rⁿ⁺¹f\_*F”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.boundary`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 681](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L681). The attribute's comment: “the connecting map Rⁿc\_*(F|\_\{U ∩ V}) → Rⁿ⁺¹f\_*F”.
 
 > **The connecting map of the Mayer--Vietoris sequence**,
 > `Rⁿc_*(F|_{U ∩ V}) ⟶ Rⁿ⁺¹f_*F`, as a natural transformation of functors in `F`.
@@ -183,7 +183,7 @@ def boundary (hUV : U ⊔ V = ⊤) (n : ℕ) :
       higherDirectImage.{u, v} f (n + 1)
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.cohomologySequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L698). The attribute's comment: “exactness of the long sequence”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.cohomologySequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L698). The attribute's comment: “exactness of the long sequence”.
 
 > **Stacks Project, Tag 0EYK (relative Mayer--Vietoris), exactness.** For a morphism
 > `f : X ⟶ Y` of schemes, two open subschemes `U` and `V` covering `X`, and every abelian sheaf
@@ -203,7 +203,7 @@ theorem cohomologySequence_exact (hUV : U ⊔ V = ⊤) (n : ℕ)
       ((toIntersection.{u, v} f U V (n + 1)).app F)).Exact
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.mono_toCover_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L736). The attribute's comment: “the sequence begins with 0 ⟶ f\_*F”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.mono_toCover_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L736). The attribute's comment: “the sequence begins with 0 ⟶ f\_*F”.
 
 > **Stacks Project, Tag 0EYK (relative Mayer--Vietoris), the left end.** The Mayer--Vietoris
 > sequence starts with `0 ⟶ f_*F`: the degree-zero map `f_*F ⟶ a_*(F|_U) ⊕ b_*(F|_V)` is a
@@ -215,7 +215,7 @@ theorem mono_toCover_zero (hUV : U ⊔ V = ⊤)
     Mono ((toCover.{u, v} f U V 0).app F)
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.higherDirectImageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 753](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L753). The attribute's comment: “the degree-zero term is f\_*F”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.higherDirectImageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 753](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L753). The attribute's comment: “the degree-zero term is f\_*F”.
 
 > **The degree-zero term of the sequence is the direct image itself.** The direct image along
 > `f` is left exact, being a right adjoint, so `R⁰f_* ≅ f_*`; this is what makes the sequence of
@@ -226,7 +226,7 @@ def higherDirectImageZeroIso :
     higherDirectImage.{u, v} f 0 ≅ etaleAbelianDirectImage.{u, v} f
 ```
 
-**`Stacks.EtaleCohomology.RelativeMayerVietoris.restrictedHigherDirectImageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L761). The attribute's comment: “the degree-zero restricted term is a\_*(F|\_U)”.
+**`Stacks.EtaleCohomology.RelativeMayerVietoris.restrictedHigherDirectImageZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RelativeMayerVietoris.lean#L761). The attribute's comment: “the degree-zero restricted term is a\_*(F|\_U)”.
 
 > **The degree-zero restricted term of the sequence is the pushed-forward restriction
 > itself**, `R⁰(F ↦ a_*(F|_U)) ≅ (F ↦ a_*(F|_U))`: restriction to `U` is exact and the direct
@@ -244,4 +244,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.50, Tag 03Q3](https://stacks.math.columbia.edu/tag/03Q3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

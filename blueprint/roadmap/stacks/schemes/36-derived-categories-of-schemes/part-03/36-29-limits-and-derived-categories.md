@@ -8,16 +8,21 @@ proof: formalized
 
 # 36.29 Limits and derived categories
 
-Section 36.29 of the Stacks Project, [Tag 09RC](https://stacks.math.columbia.edu/tag/09RC). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.29 of the Stacks Project, [Tag 09RC](https://stacks.math.columbia.edu/tag/09RC). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09RD, a situation
 
 [Tag 09RD](https://stacks.math.columbia.edu/tag/09RD) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Limits.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Limits.lean#L36). References: SGA 6 IV (3.2).
+**`AlgebraicGeometry.DescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Limits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/Limits.lean#L41). References: SGA 6 IV (3.2).
 
 > A directed inverse system of quasi-compact and quasi-separated schemes whose transition
 > morphisms are affine, equipped with a chosen limit cone and a chosen index.
+>
+> The index universe `v` is not bounded here, so a large index preorder is admitted, whose
+> categorical limit in `Scheme.{u}` need not be the limit of the source's directed set.
+> Situation 086P, whose index is a set, is `AlgebraicGeometry.SmallDescentSituation`, which adds
+> `Small.{u} I`.
 
 ```lean
 structure AlgebraicGeometry.DescentSituation (I : Type v) [Preorder I]
@@ -28,7 +33,7 @@ structure AlgebraicGeometry.DescentSituation (I : Type v) [Preorder I]
 
 [Tag 09RE](https://stacks.math.columbia.edu/tag/09RE) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentSituation.homProjection_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L206). The attribute's comment: “the maps to Hom(E, K) are compatible with the transition maps of the directed system, for all E\_0 and K\_0”.
+**`AlgebraicGeometry.DescentSituation.homProjection_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L206). The attribute's comment: “the maps to Hom(E, K) are compatible with the transition maps of the directed system, for all E\_0 and K\_0”.
 
 > **The cocone clause of the conclusion of Stacks 09RE.** Pushing a homomorphism from the
 > stage `i` to the stage `j` and then to the limit gives the same homomorphism `E ⟶ K` as pushing
@@ -44,7 +49,7 @@ theorem homProjection_homTransition (i j : D.Stages) (h : i ≤ j)
     homProjection E₀ K₀ j (homTransition E₀ K₀ i j h g) = homProjection E₀ K₀ i g
 ```
 
-**`AlgebraicGeometry.DescentSituation.homTransition_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L225). The attribute's comment: “the directed system whose colimit the tag takes: its transition maps compose, for all E\_0 and K\_0”.
+**`AlgebraicGeometry.DescentSituation.homTransition_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L225). The attribute's comment: “the directed system whose colimit the tag takes: its transition maps compose, for all E\_0 and K\_0”.
 
 > **The maps of the directed system of Stacks 09RE compose.** For `i ≤ j ≤ k` among the
 > stages, pushing a homomorphism from the stage `i` to the stage `j` and then to the stage `k`
@@ -64,7 +69,7 @@ theorem homTransition_homTransition (i j k : D.Stages) (h : i ≤ j) (h' : j ≤
       homTransition E₀ K₀ i k (h.trans h') g
 ```
 
-**`AlgebraicGeometry.DescentSituation.isHomColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L301).
+**`AlgebraicGeometry.DescentSituation.isHomColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L301).
 
 > **Stacks 09RE.** In Situation 09RD, let `E₀` and `K₀` be objects of `D(𝒪_{S₀})`, put
 > `E_i = Lf_{i0}^*E₀`, `K_i = Lf_{i0}^*K₀` for `i ≥ 0` and `E = Lf_0^*E₀`, `K = Lf_0^*K₀`.  If
@@ -98,7 +103,7 @@ theorem isHomColimit
 
 [Tag 09RF](https://stacks.math.columbia.edu/tag/09RF) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentSituation.perfect_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectCategoryColimit.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectCategoryColimit.lean#L201).
+**`AlgebraicGeometry.DescentSituation.perfect_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectCategoryColimit.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectCategoryColimit.lean#L201).
 
 > **[Stacks, Tag 09RF].** In the situation of [Stacks, Tag 09RD], the category of perfect
 > objects of `D(𝒪_S)` is the colimit of the categories of perfect objects of `D(𝒪_{S_i})`: the
@@ -126,7 +131,7 @@ theorem perfect_isColimit :
       IsPerfect (X := (D.stage i).toRingedSpace) K → IsHomColimit (D := D.atStage i) E K)
 ```
 
-**`AlgebraicGeometry.DescentSituation.isPerfect_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L135). The attribute's comment: “derived pullback along the transition morphisms of the situation sends perfect objects to perfect objects, so the transition functors of the colimit statement are defined; the colimit property itself is not included”.
+**`AlgebraicGeometry.DescentSituation.isPerfect_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L135). The attribute's comment: “derived pullback along the transition morphisms of the situation sends perfect objects to perfect objects, so the transition functors of the colimit statement are defined; the colimit property itself is not included”.
 
 > **Derived pullback along a transition morphism of the situation preserves perfectness.**
 > This is Stacks 09UA at `f_{ji}`, and it is what makes the transition functor on the categories
@@ -139,7 +144,7 @@ theorem isPerfect_transition {i j : I} (h : i ≤ j)
       ((derivedPullback (D.transition h).toLRSHom.toShHom).obj E)
 ```
 
-**`AlgebraicGeometry.DescentSituation.isPerfect_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L147). The attribute's comment: “derived pullback along the projections of the situation sends perfect objects to perfect objects, so the comparison functors of the colimit statement are defined; the colimit property itself is not included”.
+**`AlgebraicGeometry.DescentSituation.isPerfect_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L147). The attribute's comment: “derived pullback along the projections of the situation sends perfect objects to perfect objects, so the comparison functors of the colimit statement are defined; the colimit property itself is not included”.
 
 > **Derived pullback along a projection of the situation preserves perfectness.** This is
 > Stacks 09UA at `f_i`, and it is what makes the comparison functor from the stage `i` to the limit
@@ -152,7 +157,7 @@ theorem isPerfect_projection (i : I)
       ((derivedPullback (D.projection i).toLRSHom.toShHom).obj E)
 ```
 
-**`AlgebraicGeometry.DescentSituation.perfectComparison_coherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L240). The attribute's comment: “the canonical cocone of the colimit statement: the functors between the categories of perfect objects induced by derived pullback along the projections, and their coherence with the transition functors. Neither full faithfulness nor essential surjectivity of the comparison out of the colimit is included”.
+**`AlgebraicGeometry.DescentSituation.perfectComparison_coherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L240). The attribute's comment: “the canonical cocone of the colimit statement: the functors between the categories of perfect objects induced by derived pullback along the projections, and their coherence with the transition functors. Neither full faithfulness nor essential surjectivity of the comparison out of the colimit is included”.
 
 > **The cocone coherence on the categories of perfect objects.** For `i ≤ j ≤ k`, comparing
 > through the stage `j` and comparing after composing the two transitions give the same
@@ -171,7 +176,7 @@ theorem perfectComparison_coherence {i j k : I} (h : i ≤ j) (h' : j ≤ k)
         ((D.perfectComparison (h.trans h')).app E).hom
 ```
 
-**`AlgebraicGeometry.DescentSituation.perfectTransitionComp_coherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L280). The attribute's comment: “the system of categories of perfect objects along the transition morphisms: the transition functors, their composition isomorphisms and the cocycle identity those satisfy. Neither full faithfulness nor essential surjectivity of the comparison out of the colimit is included”.
+**`AlgebraicGeometry.DescentSituation.perfectTransitionComp_coherence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjects.lean#L280). The attribute's comment: “the system of categories of perfect objects along the transition morphisms: the transition functors, their composition isomorphisms and the cocycle identity those satisfy. Neither full faithfulness nor essential surjectivity of the comparison out of the colimit is included”.
 
 > **The system of transition functors on the categories of perfect objects is coherent.** For
 > `i ≤ j ≤ k ≤ l`, the two ways of composing the comparison isomorphisms of the three transitions
@@ -186,7 +191,7 @@ theorem perfectTransitionComp_coherence {i j k l : I} (h : i ≤ j) (h' : j ≤ 
         ((D.perfectTransitionComp (h.trans h') h'').app E).hom
 ```
 
-**`AlgebraicGeometry.AffinePerfectLimit.exists_isPerfect_stage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean#L53). The attribute's comment: “essential surjectivity of the comparison out of the colimit, in the affine base case of the source's induction: for a filtered system of rings with colimit R, every perfect object of D(𝒪\_\{Spec R}) is derived pullback of a perfect object at a stage. The induction over the quasi-compact opens of S\_0 that globalises it is not included, and neither is full faithfulness”.
+**`AlgebraicGeometry.AffinePerfectLimit.exists_isPerfect_stage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean#L53). The attribute's comment: “essential surjectivity of the comparison out of the colimit, in the affine base case of the source's induction: for a filtered system of rings with colimit R, every perfect object of D(𝒪\_\{Spec R}) is derived pullback of a perfect object at a stage. The induction over the quasi-compact opens of S\_0 that globalises it is not included, and neither is full faithfulness”.
 
 > **Stacks 09RF**, the affine base case of essential surjectivity. Let `i ↦ R_i` be a filtered
 > diagram of commutative rings whose colimit is computed on underlying sets, with colimit cocone `c`,
@@ -211,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.29, Tag 09RC](https://stacks.math.columbia.edu/tag/09RC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

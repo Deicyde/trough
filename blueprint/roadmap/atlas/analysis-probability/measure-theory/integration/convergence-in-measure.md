@@ -7,7 +7,7 @@ statement: formalized
 
 # Convergence in measure
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html).
 
 ## Measurable functions representing $L^0((0,1))$
 
@@ -17,7 +17,7 @@ $f : \mathbb{R} \to \mathbb{R}$, used as representatives of the elements of $L^0
 The pseudometric and the convergence in measure built on them depend only on the restriction
 of $f$ to $[0,1]$ up to a null set.
 
-Formalized by `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0UnitInterval`, an abbreviation declared in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#l0-unit-interval).
+Formalized by `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0UnitInterval`, an abbreviation declared in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#l0-unit-interval).
 
 ## The $L^0$ pseudometric on $(0,1)$
 
@@ -33,7 +33,7 @@ the integral being with respect to Lebesgue measure on $[0,1]$.
 This is a pseudometric: functions that agree almost everywhere on $[0,1]$ are at distance $0$,
 and on the almost-everywhere classes it is the usual metric of $L^0([0,1])$.
 
-Formalized by `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0PseudoMetric`, a definition declared in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#l0-pseudo-metric).
+Formalized by `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0PseudoMetric`, a definition declared in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#l0-pseudo-metric).
 
 ## Convergence in the $L^0$ pseudometric is convergence in measure
 
@@ -58,7 +58,7 @@ almost-everywhere classes of the functions on $[0,1]$, so the two statements say
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_07`, with the change above.
 
-Stated but not proved: `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.tendsto_L0PseudoMetric_zero_iff_tendstoInMeasure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#tendsto-l0-pseudo-metric-zero-iff-tendst).
+Stated but not proved: `MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.tendsto_L0PseudoMetric_zero_iff_tendstoInMeasure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html#tendsto-l0-pseudo-metric-zero-iff-tendst).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convergence in measure](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/integration/convergence-in-measure/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/integration/convergence-in-measure)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/integration/convergence-in-measure)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Three-term Hofstadter-like sequences
 
-19 results, 10 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html).
+19 results, 10 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html).
 
 ## Value of a partially computed sequence at an index
 
@@ -20,7 +20,7 @@ and is undefined otherwise (for $j \le 0$ in the unpadded case, and for $j > m$)
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1 (initial-condition and sequence-death conventions).
 
-Formalized by `MetaMathlibExt.threeTermHofstadterLookup`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-lookup).
+Formalized by `MetaMathlibExt.threeTermHofstadterLookup`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-lookup).
 
 ## Next term of the three-term Hofstadter-like recurrence
 
@@ -34,7 +34,7 @@ sits at an undefined index: a nonpositive index in the unpadded case, or an inde
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterNext`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-next).
+Formalized by `MetaMathlibExt.threeTermHofstadterNext`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-next).
 
 ## Computing further terms of a three-term Hofstadter-like sequence
 
@@ -49,7 +49,7 @@ nonpositive index in the unpadded case, or an index not yet computed).
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterExtend`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-extend).
+Formalized by `MetaMathlibExt.threeTermHofstadterExtend`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-extend).
 
 ## Initial segment of a three-term Hofstadter-like sequence
 
@@ -69,7 +69,7 @@ $k$ terms; it is undefined when one of $B(m + 1), \dots, B(m + k)$ is undefined.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterPrefix`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-prefix).
+Formalized by `MetaMathlibExt.threeTermHofstadterPrefix`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-prefix).
 
 ## Three-term Hofstadter-like sequence
 
@@ -90,7 +90,7 @@ for the padded sequence and undefined for the unpadded one.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterTerm`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term).
+Formalized by `MetaMathlibExt.threeTermHofstadterTerm`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term).
 
 ## Exact length of a three-term Hofstadter-like sequence
 
@@ -106,7 +106,7 @@ computed, and $B(T + 1)$ cannot.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1 ("dies after `n - 1` terms"; "ends" in the padded case).
 
-Formalized by `MetaMathlibExt.ThreeTermHofstadterEndsAfter`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-ends-after).
+Formalized by `MetaMathlibExt.ThreeTermHofstadterEndsAfter`, a definition declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-ends-after).
 
 ## The initial conditions are the first terms
 
@@ -120,7 +120,7 @@ padded sequence and undefined for the unpadded one.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterTerm_of_le_length`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-of-le-length).
+Formalized by `MetaMathlibExt.threeTermHofstadterTerm_of_le_length`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-of-le-length).
 
 ## Index zero of the sequence started at 5
 
@@ -132,7 +132,7 @@ sequence is padded, and it is undefined when the sequence is unpadded.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterTerm_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-zero).
+Formalized by `MetaMathlibExt.threeTermHofstadterTerm_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-zero).
 
 ## Sixth and seventh terms of the sequence started at 1, 2, 3, 4, 5
 
@@ -144,7 +144,7 @@ and $B(7)$ are defined, with $B(6) = B(1) + B(2) + B(3) = 6$ and $B(7) = B(1) + 
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Section 1.
 
-Formalized by `MetaMathlibExt.threeTermHofstadterTerm_bSequence_six_seven`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-b-sequence-si).
+Formalized by `MetaMathlibExt.threeTermHofstadterTerm_bSequence_six_seven`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-term-b-sequence-si).
 
 ## The sequence from $1, 2, 3$ dies after four terms
 
@@ -158,7 +158,7 @@ exactly four terms: $B(4)$ can be computed and $B(5)$ cannot.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, proof of Theorem 1 (`B_3(4) = 6`).
 
-Formalized by `MetaMathlibExt.threeTermHofstadterEndsAfter_one_two_three`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-ends-after-one-two).
+Formalized by `MetaMathlibExt.threeTermHofstadterEndsAfter_one_two_three`, a theorem declared in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-ends-after-one-two).
 
 ## Death of the unpadded sequence from $1, \dots, N$ for $N = 3$, $4$ or $N \ge 10$
 
@@ -173,7 +173,7 @@ because the recurrence refers to a nonpositive index or to an index not yet comp
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Theorem 1 (`jis-2024-24.7.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_linear_dies` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-linear-dies).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_linear_dies` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-linear-dies).
 
 ## Length of the unpadded sequence from $1, \dots, N$
 
@@ -187,7 +187,7 @@ cannot, because the recurrence refers to a nonpositive index or to an index not 
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Theorem 1 (`jis-2024-24.7.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_linear_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-linear-length).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_linear_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-linear-length).
 
 ## Period-seven pattern of the padded sequence from $1, \dots, N$
 
@@ -203,7 +203,7 @@ $2N + 2k + 45$, $2N + k - 7$ or $N - 2$ according as $r = 0, 1, 2, 3, 4, 5$ or $
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Theorem 2 (`jis-2024-24.7.4-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_padded_linear_period_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-padded-linear-peri).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_padded_linear_period_seven` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-padded-linear-peri).
 
 ## Length of the padded sequence from $1, \dots, N$
 
@@ -219,7 +219,7 @@ because the recurrence refers to an index not yet computed.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Theorem 2 (`jis-2024-24.7.4-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_padded_linear_endsAfter` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-padded-linear-ends).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_padded_linear_endsAfter` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-padded-linear-ends).
 
 ## Seven-cycle lemma for the three-term Hofstadter-like recurrence
 
@@ -240,7 +240,7 @@ $B(M + 7k + 4) = 2K + 2k + \lambda$, $B(M + 7k + 5) = 2K + k + \mu$ and $B(M + 7
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 3 (`jis-2024-24.7.4-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sevenCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-seven-cycle).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sevenCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-seven-cycle).
 
 ## Two-cycle lemma for the three-term Hofstadter-like recurrence
 
@@ -254,7 +254,7 @@ and equals $2$, and for every $k \ge 1$ the term $B(K + 2k)$ is defined and equa
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 4, citing the author's thesis, Proposition 9.9 (`jis-2024-24.7.4-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_twoCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-two-cycle).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_twoCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-two-cycle).
 
 ## Five-cycle lemma for the three-term Hofstadter-like recurrence
 
@@ -272,7 +272,7 @@ as $r = 0, 1, 2, 3$ or $4$.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 5, citing the author's thesis, Proposition 9.10 (`jis-2024-24.7.4-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_fiveCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-five-cycle).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_fiveCycle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-five-cycle).
 
 ## Second sixteen-cycle lemma for the three-term Hofstadter-like recurrence
 
@@ -294,7 +294,7 @@ $B(K + 16k + 14) = \lambda$ and $B(K + 16k + 15) = 16$.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 7, citing the author's thesis, Proposition 9.16 (`jis-2024-24.7.4-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sixteenCycle_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-sixteen-cycle-two).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sixteenCycle_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-sixteen-cycle-two).
 
 ## First sixteen-cycle lemma for the three-term Hofstadter-like recurrence
 
@@ -320,7 +320,7 @@ term.
 
 - Nathan Fox, *The Behavior of a Three-Term Hofstadter-Like Recurrence with Linear Initial Conditions*, Journal of Integer Sequences 27 (2024), Article 24.7.4, Lemma 6, citing the author's thesis, Proposition 9.13 (`jis-2024-24.7.4-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sixteenCycle_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-sixteen-cycle-one).
+Stated but not proved: `MetaMathlibExt.threeTermHofstadter_sixteenCycle_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ThreeTermHofstadterWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html#three-term-hofstadter-sixteen-cycle-one).
 
 ## Depends on
 
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Three-term Hofstadter-like sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/three-term-hofstadter-like-sequences)

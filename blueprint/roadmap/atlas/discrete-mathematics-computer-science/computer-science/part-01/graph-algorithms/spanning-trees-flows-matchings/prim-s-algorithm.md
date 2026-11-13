@@ -8,7 +8,7 @@ proof: formalized
 
 # Prim's algorithm
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html).
 
 ## Prim's algorithm with an indexed binary heap
 
@@ -32,7 +32,7 @@ replacements), the number of adjacency entries inspected, and the number of insp
 found still in the queue, which is the number of key comparisons. On a disconnected graph every
 vertex is still extracted and the parents form a forest.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Basic.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Basic.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Basic.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Basic.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim).
 
 ## Number of adjacency inspections in Prim's algorithm
 
@@ -43,7 +43,7 @@ not necessarily distinct, and let $r$ be a vertex. The number of adjacency entri
 Prim's algorithm on $D$, $w$ and $r$ equals the sum of the lengths $|A(u)|$ over all vertices
 $u$.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_inspections`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-inspections).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_inspections`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-inspections).
 
 ## Bound on key comparisons in Prim's algorithm
 
@@ -54,7 +54,7 @@ necessarily distinct, and let $r$ be a vertex. The number of inspected adjacency
 Prim's algorithm on $D$, $w$ and $r$ finds still in the queue, which is its number of key
 comparisons, is at most the sum of the lengths $|A(u)|$ over all vertices $u$.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_key_tests_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-key-tests-le).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_key_tests_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-key-tests-le).
 
 ## Logarithmic heap cost of Prim's algorithm
 
@@ -66,7 +66,7 @@ $u$. Each of the five heap event counts of Prim's algorithm on $D$, $w$ and $r$ 
 swaps, reads of the position vector, writes to the position vector, and entry appends, pops or
 replacements) is at most $20(2n + a)(\lfloor \log_2(n + 1) \rfloor + 1) + a$.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_heap_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-heap-time).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_heap_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-heap-time).
 
 ## Adjacency inspections of Prim's algorithm on a simple graph
 
@@ -79,7 +79,7 @@ $u$ and $v$ are adjacent in $G$, and that no list $A(u)$ has repeated entries. T
 of adjacency entries inspected by Prim's algorithm on $D$, $w$ and $r$ is twice the number of
 edges of $G$.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_edge_inspections`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-edge-inspections).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_edge_inspections`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Complexity.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-edge-inspections).
 
 ## The root has no parent in Prim's algorithm
 
@@ -89,7 +89,7 @@ assign a weight in $W$ to every unordered pair of vertices, not necessarily dist
 $r$ be a vertex. In the output of Prim's algorithm on $D$, $w$ and $r$, the vertex $r$ has no
 parent.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_root`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-root).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_root`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-root).
 
 ## Parents returned by Prim's algorithm are adjacency-list neighbors
 
@@ -100,7 +100,7 @@ pair of vertices, not necessarily distinct, and let $r$ be a vertex. For all ver
 $v$, if Prim's algorithm on $D$, $w$ and $r$ returns $u$ as the parent of $v$, then $v$ occurs
 in $A(u)$.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_parent_edge`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-parent-edge).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_parent_edge`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-parent-edge).
 
 ## Prim's algorithm returns a tree
 
@@ -113,7 +113,7 @@ vertex. Let $T$ be the simple graph on the vertices $0, \dots, n-1$ in which two
 vertices are adjacent when one of them is the parent of the other in the output of Prim's
 algorithm on $D$, $w$ and $r$. Then $T$ is a tree.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_isTree`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-is-tree).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_isTree`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-is-tree).
 
 ## Prim's algorithm returns a minimum spanning tree
 
@@ -130,7 +130,7 @@ satisfies $\sum_{e \in E(T)} w(e) \le \sum_{e \in E(H)} w(e)$.
 
 Weights are arbitrary signed real numbers, and ties are allowed.
 
-Formalized by `Cslib.Algorithms.Lean.Prim.prim_minimum_spanningTree`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-minimum-spanning-tree).
+Formalized by `Cslib.Algorithms.Lean.Prim.prim_minimum_spanningTree`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Prim/Correctness.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html#prim-minimum-spanning-tree).
 
 ## Depends on
 
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Prim's algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/prim-s-algorithm)

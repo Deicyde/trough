@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.32 Invertible modules
 
-Section 18.32 of the Stacks Project, [Tag 0408](https://stacks.math.columbia.edu/tag/0408). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.32 of the Stacks Project, [Tag 0408](https://stacks.math.columbia.edu/tag/0408). 6 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0409, a definition
 
 [Tag 0409](https://stacks.math.columbia.edu/tag/0409) in the Stacks Project.
 
-**`Stacks.SheafOfModules.IsInvertible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L130). The attribute's comment: “invertible”.
+**`Stacks.SheafOfModules.IsInvertible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L131). The attribute's comment: “invertible”.
 
 > **Stacks Project, Tag 01CS**, equivalently **Tag 0409 (2)**. A sheaf of `O`-modules is
 > *invertible* when its tensor functor is an equivalence. The universal property specifies that
@@ -26,7 +26,7 @@ class IsInvertible
     (L : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO)) : Prop
 ```
 
-**`Stacks.SheafOfModules.Invertible.isInvertible_iff_tensorRightFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TensorPower.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/TensorPower.lean#L132). The attribute's comment: “invertible”.
+**`Stacks.SheafOfModules.Invertible.isInvertible_iff_tensorRightFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/TensorPower.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/TensorPower.lean#L132). The attribute's comment: “invertible”.
 
 > **Stacks Project, Tag 0409 (2)**, equivalently **Tag 01CS**, in the source's own form: a
 > sheaf of `O`-modules `L` is invertible exactly when the functor `F ↦ (F ⊗_O L)^#` of the
@@ -42,7 +42,7 @@ theorem isInvertible_iff_tensorRightFunctor_isEquivalence
         L).IsEquivalence
 ```
 
-**`AlgebraicGeometry.RingedSite.IsFiniteLocallyFreeOfRank`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FiniteLocallyFreeOfRank.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FiniteLocallyFreeOfRank.lean#L62). The attribute's comment: “rank”. References: EGA 0 (5.4.1), “rank n”.
+**`AlgebraicGeometry.RingedSite.IsFiniteLocallyFreeOfRank`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FiniteLocallyFreeOfRank.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FiniteLocallyFreeOfRank.lean#L62). The attribute's comment: “rank”. References: EGA 0 (5.4.1), “rank n”.
 
 > A sheaf of modules on a ringed site is finite locally free of rank `r` if it is, over a
 > covering family of every object, a coproduct of `r` copies of the structure sheaf. This is the
@@ -53,7 +53,7 @@ abbrev IsFiniteLocallyFreeOfRank (X : RingedSite.{u, v, w})
     (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) (r : ℕ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSite.unitsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L50). The attribute's comment: “units sheaf”.
+**`AlgebraicGeometry.RingedSite.unitsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L50). The attribute's comment: “units sheaf”.
 
 > The sheaf of units `O_X^*` of the structure sheaf of a ringed site.
 
@@ -61,7 +61,7 @@ abbrev IsFiniteLocallyFreeOfRank (X : RingedSite.{u, v, w})
 noncomputable def unitsSheaf (X : RingedSite.{u, v, w}) : Sheaf X.J CommGrpCat.{w}
 ```
 
-**`AlgebraicGeometry.RingedSite.unitsSheafι_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L64). The attribute's comment: “subsheaf”.
+**`AlgebraicGeometry.RingedSite.unitsSheafι_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L64). The attribute's comment: “subsheaf”.
 
 > The canonical inclusion of the units sheaf into the structure sheaf is a monomorphism.
 
@@ -69,7 +69,7 @@ noncomputable def unitsSheaf (X : RingedSite.{u, v, w}) : Sheaf X.J CommGrpCat.{
 instance unitsSheafι_mono (X : RingedSite.{u, v, w}) : Mono (unitsSheafι X)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_unitsSheaf_iff_exists_mul_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L84). The attribute's comment: “defining rule”.
+**`AlgebraicGeometry.RingedSite.exists_unitsSheaf_iff_exists_mul_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L84). The attribute's comment: “defining rule”.
 
 > A section belongs to the units subsheaf exactly when it has a right inverse: the units
 > subsheaf is `U ↦ {f ∈ O(U) | ∃ g ∈ O(U), fg = 1}`.
@@ -81,7 +81,7 @@ theorem exists_unitsSheaf_iff_exists_mul_eq_one (X : RingedSite.{u, v, w}) (U : 
       ∃ g : X.O.obj.obj U, f * g = 1
 ```
 
-**`AlgebraicGeometry.RingedSite.unitsSheafι_hom_app_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L103). The attribute's comment: “group law”.
+**`AlgebraicGeometry.RingedSite.unitsSheafι_hom_app_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/UnitsSheaf.lean#L103). The attribute's comment: “group law”.
 
 > The group law on the sheaf of units is multiplication: the subsheaf inclusion
 > `O_X^* ⟶ O_X` is multiplicative.
@@ -97,7 +97,7 @@ theorem unitsSheafι_hom_app_mul (X : RingedSite.{u, v, w}) (U : X.Cᵒᵖ)
 
 [Tag 0B8N](https://stacks.math.columbia.edu/tag/0B8N) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Invertible.tensorInverseIsoDualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L307). The attribute's comment: “(c)”. References: SGA 6 VIII (3.5), “partial”.
+**`Stacks.SheafOfModules.Invertible.tensorInverseIsoDualSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L307). The attribute's comment: “(c)”. References: SGA 6 VIII (3.5), “partial”.
 
 > **Stacks Project, Tag 0B8N (c).** A sheaf of `𝒪`-modules `N` whose tensor product with `L` is
 > isomorphic to the structure sheaf is isomorphic to `SheafHom(L, 𝒪)`.
@@ -118,18 +118,19 @@ noncomputable def tensorInverseIsoDualSheaf
     N ≅ dualSheaf 𝒪 h𝒪 L
 ```
 
-**`Stacks.SheafOfModules.isFlat_of_isInvertible_ringedSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleEquivalence.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleEquivalence.lean#L207). The attribute's comment: “(a), the flatness half”.
+**`Stacks.SheafOfModules.isFlat_of_isInvertible_ringedSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleEquivalence.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleEquivalence.lean#L207). The attribute's comment: “(a), the flatness half”.
 
 > An invertible sheaf of modules on a ringed site is flat.
 
 ```lean
 theorem isFlat_of_isInvertible_ringedSite
+    [J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]
     (L : SheafOfModules.{w} (TensorSheafification.structureSheaf O.obj hO))
     (hL : IsInvertible O.obj hO L) :
     IsFlat (O := O) L
 ```
 
-**`Stacks.SheafOfModules.isFinitePresentation_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleFinitePresentation.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleFinitePresentation.lean#L289). The attribute's comment: “(a), the finite-presentation half”.
+**`Stacks.SheafOfModules.isFinitePresentation_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleFinitePresentation.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleFinitePresentation.lean#L289). The attribute's comment: “(a), the finite-presentation half”.
 
 > **An invertible sheaf of modules is of finite presentation.**
 >
@@ -149,7 +150,7 @@ theorem isFinitePresentation_of_isInvertible
     L.IsFinitePresentation
 ```
 
-**`Stacks.SheafOfModules.isInvertible_iff_exists_tensor_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleRankOne.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleRankOne.lean#L298). The attribute's comment: “(1) ⟺ (2)”.
+**`Stacks.SheafOfModules.isInvertible_iff_exists_tensor_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleRankOne.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleRankOne.lean#L298). The attribute's comment: “(1) ⟺ (2)”.
 
 > **Stacks Project, Tag 0B8K and Tag 0B8N, (1) ⟺ (2).** A sheaf of `O`-modules `L` is invertible
 > if and only if there is a sheaf of `O`-modules `N` whose tensor product with `L` is isomorphic
@@ -173,7 +174,7 @@ theorem isInvertible_iff_exists_tensor_iso_unit
         SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))
 ```
 
-**`Stacks.SheafOfModules.exists_cover_isDirectSummand_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean#L378). The attribute's comment: “(b), invertible\_local\_summand”.
+**`Stacks.SheafOfModules.exists_cover_isDirectSummand_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean#L378). The attribute's comment: “(b), invertible\_local\_summand”.
 
 > **Stacks Project, Tag 0B8N (b).** On a cover of any object, an invertible module embeds as a
 > direct summand of a finite free module. The two sheafification hypotheses are used only by
@@ -198,7 +199,7 @@ theorem exists_cover_isDirectSummand_finiteFree
 
 [Tag 0B8P](https://stacks.math.columbia.edu/tag/0B8P) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isInvertible_pullbackModules_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean#L86).
+**`Stacks.SheafOfModules.isInvertible_pullbackModules_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean#L86).
 
 > **Stacks Project, Tag 0B8P.** The pullback of an invertible module along a morphism of
 > ringed topoi is invertible.
@@ -211,7 +212,7 @@ theorem isInvertible_pullbackModules_obj (f : RingedToposHom X Y)
       ((f.pullbackModules).obj L)
 ```
 
-**`Stacks.SheafOfModules.isInvertible_pullbackModules_obj_ringedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean#L102).
+**`Stacks.SheafOfModules.isInvertible_pullbackModules_obj_ringedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackInvertible/RingedTopos.lean#L102).
 
 > **Stacks Project, Tag 0B8P** for a morphism of ringed topoi in the two-field sense of Tag
 > 01D3 part (2): the pullback of an invertible module is invertible.
@@ -225,7 +226,7 @@ theorem isInvertible_pullbackModules_obj_ringedToposHom
       ((f.toRingedToposModulesHom.pullbackModules).obj L)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L234). The attribute's comment: “the inverse image of an invertible module along a morphism of algebraic spaces is invertible”.
+**`AlgebraicGeometry.Space.modulePullbackInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardFunctor.lean#L228). The attribute's comment: “the inverse image of an invertible module along a morphism of algebraic spaces is invertible”.
 
 > **The inverse image of an invertible module along a morphism of algebraic spaces is
 > invertible.**  This is `AlgebraicGeometry.Space.isInvertible_modulePullback_obj`, read through
@@ -240,7 +241,7 @@ theorem modulePullbackInvertible : ModulePullbackInvertible B S hS
 
 [Tag 040A](https://stacks.math.columbia.edu/tag/040A) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Invertible.isIso_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L261). The attribute's comment: “part (2)”. References: EGA 0 (5.4.3), “more general”.
+**`Stacks.SheafOfModules.Invertible.isIso_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L261). The attribute's comment: “part (2)”. References: EGA 0 (5.4.3), “more general”.
 
 > **Stacks Project, Tag 040A (2), the evaluation clause.** For an invertible sheaf of
 > `𝒪`-modules `L` on a ringed site the evaluation pairing `SheafHom(L, 𝒪) ⊗_𝒪 L ⟶ 𝒪` is an
@@ -257,7 +258,7 @@ theorem modulePullbackInvertible : ModulePullbackInvertible B S hS
 theorem isIso_evaluation [IsInvertible 𝒪 h𝒪 L] : IsIso (evaluation 𝒪 h𝒪 L)
 ```
 
-**`Stacks.SheafOfModules.Invertible.isIso_tensorSheafBraiding_hom_comp_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L277). The attribute's comment: “part (2)”. References: EGA 0 (5.4.3), “more general”.
+**`Stacks.SheafOfModules.Invertible.isIso_tensorSheafBraiding_hom_comp_evaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L277). The attribute's comment: “part (2)”. References: EGA 0 (5.4.3), “more general”.
 
 > **Stacks Project, Tag 040A (2) and Tag 01CT (2), the evaluation clause in the order the tags
 > write it.** The evaluation map `L ⊗_𝒪 SheafHom(L, 𝒪) ⟶ 𝒪` is an isomorphism. It is the canonical
@@ -271,7 +272,7 @@ theorem isIso_tensorSheafBraiding_hom_comp_evaluation [IsInvertible 𝒪 h𝒪 L
     IsIso ((tensorSheafBraiding 𝒪 h𝒪 L (dualSheaf 𝒪 h𝒪 L)).hom ≫ evaluation 𝒪 h𝒪 L)
 ```
 
-**`Stacks.SheafOfModules.Invertible.isInvertible_dualSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L287). The attribute's comment: “part (2)”.
+**`Stacks.SheafOfModules.Invertible.isInvertible_dualSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L287). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 040A (2) and Tag 01CT (2), the invertibility clause.** The dual
 > `L^∨ = SheafHom(L, 𝒪)` of an invertible sheaf of `𝒪`-modules is again invertible: the evaluation
@@ -282,7 +283,7 @@ theorem isInvertible_dualSheaf [IsInvertible 𝒪 h𝒪 L] :
     IsInvertible 𝒪 h𝒪 (dualSheaf 𝒪 h𝒪 L)
 ```
 
-**`Stacks.SheafOfModules.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L474). The attribute's comment: “part (1)”.
+**`Stacks.SheafOfModules.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L482). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 01CT (1), Tag 040A (1).** The tensor product of two invertible sheaves
 > of modules is invertible.
@@ -299,7 +300,7 @@ theorem tensorProduct_isInvertible
 
 [Tag 040B](https://stacks.math.columbia.edu/tag/040B) in the Stacks Project.
 
-**`Stacks.SheafOfModules.essentiallySmall_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/EssentiallySmall/Invertible.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/EssentiallySmall/Invertible.lean#L249).
+**`Stacks.SheafOfModules.essentiallySmall_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/EssentiallySmall/Invertible.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/EssentiallySmall/Invertible.lean#L249).
 
 > **Stacks 040B.** The invertible sheaves of modules on a ringed site form an essentially
 > small class: there is a set of invertible modules such that every invertible module is
@@ -322,7 +323,7 @@ theorem essentiallySmall_isInvertible
 
 [Tag 040C](https://stacks.math.columbia.edu/tag/040C) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Picard.PicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L170). The attribute's comment: “the Picard group”. References: EGA IV (21.3.2), “Pic(X) definition”; SGA 6 X (5.1), “Pic(X) definition”.
+**`Stacks.SheafOfModules.Picard.PicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L170). The attribute's comment: “the Picard group”. References: EGA IV (21.3.2), “Pic(X) definition”; SGA 6 X (5.1), “Pic(X) definition”.
 
 > The Picard group of `O`: the group of isomorphism classes of
 > invertible sheaves of `O`-modules, as a small type.
@@ -331,7 +332,7 @@ theorem essentiallySmall_isInvertible
 noncomputable def PicardGroup : Type (max (max u v) w)
 ```
 
-**`Stacks.SheafOfModules.Picard.instAddCommGroupPicardGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L176). The attribute's comment: “abelian group structure”.
+**`Stacks.SheafOfModules.Picard.instAddCommGroupPicardGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L176). The attribute's comment: “abelian group structure”.
 
 > The abelian group structure on the Picard group; its addition is the tensor product sheaf,
 > by `classOf_tensor`.
@@ -340,7 +341,7 @@ noncomputable def PicardGroup : Type (max (max u v) w)
 noncomputable instance instAddCommGroupPicardGroup : AddCommGroup (PicardGroup O hO)
 ```
 
-**`Stacks.SheafOfModules.Picard.classOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L181). The attribute's comment: “class of an invertible module”. References: EGA IV (21.3.2), “cl(L)”.
+**`Stacks.SheafOfModules.Picard.classOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L181). The attribute's comment: “class of an invertible module”. References: EGA IV (21.3.2), “cl(L)”.
 
 > The class in the Picard group of an invertible sheaf of modules.
 
@@ -350,7 +351,7 @@ noncomputable abbrev classOf (L : SheafOfModules.{w}
     (hL : IsInvertible O hO L) : PicardGroup O hO
 ```
 
-**`Stacks.SheafOfModules.Picard.classOf_eq_classOf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L200). The attribute's comment: “elements are isomorphism classes of invertible modules”. References: EGA IV (21.3.2), “cl(L)=cl(L') iff iso”.
+**`Stacks.SheafOfModules.Picard.classOf_eq_classOf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L200). The attribute's comment: “elements are isomorphism classes of invertible modules”. References: EGA IV (21.3.2), “cl(L)=cl(L') iff iso”.
 
 > Two invertible sheaves of modules determine the same Picard class exactly when they are
 > isomorphic, so the elements of the Picard group are the isomorphism classes.
@@ -362,7 +363,7 @@ theorem classOf_eq_classOf_iff (L N : SheafOfModules.{w}
     classOf O hO L hL = classOf O hO N hN ↔ Nonempty (L ≅ N)
 ```
 
-**`Stacks.SheafOfModules.Picard.classOf_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L211). The attribute's comment: “addition is tensor product”.
+**`Stacks.SheafOfModules.Picard.classOf_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/Picard.lean#L211). The attribute's comment: “addition is tensor product”.
 
 > Addition in the Picard group is the tensor product sheaf.
 
@@ -386,4 +387,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.32, Tag 0408](https://stacks.math.columbia.edu/tag/0408)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

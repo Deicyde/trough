@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized cubic partitions
 
-7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html).
+7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html).
 
 ## Generating function of generalized cubic partitions
 
@@ -22,7 +22,7 @@ truncated to $0$, so the series is then the inverse of $f_1$.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedCubicPartitionSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-series).
+Formalized by `MetaMathlibExt.generalizedCubicPartitionSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-series).
 
 ## Generalized cubic partition numbers
 
@@ -38,7 +38,7 @@ the number of partitions of $n$.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedCubicPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count).
+Formalized by `MetaMathlibExt.generalizedCubicPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count).
 
 ## Generating function identity for generalized cubic partition numbers
 
@@ -52,7 +52,7 @@ $c = 0$ the exponent $c - 1$ is truncated to $0$.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedCubicPartitionCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-genera).
+Formalized by `MetaMathlibExt.generalizedCubicPartitionCount_generatingFunction`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-genera).
 
 ## Generalized cubic partitions of zero
 
@@ -63,7 +63,7 @@ cubic partition number $a_c(0)$ equals $1$.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedCubicPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-zero).
+Formalized by `MetaMathlibExt.generalizedCubicPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-zero).
 
 ## Amdeberhan–Sellers–Singh congruences
 
@@ -75,7 +75,7 @@ $a_5(11n + 10) \equiv 0 \pmod{11}$.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Theorem 1 (quoting Amdeberhan, Sellers, and Singh), Equations (1) and (2).
 
-Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_seven_eleven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-seven).
+Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_seven_eleven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-seven).
 
 ## Generalized cubic partition congruences for primes $p \equiv 5, 7 \pmod 8$
 
@@ -91,7 +91,7 @@ $l \bmod p$, which satisfies the same divisibility.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Theorem 2, Equation (9).
 
-Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_prime_five_seven_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-prime).
+Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_prime_five_seven_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-prime).
 
 ## Generalized cubic partition congruences modulo primes $p \ge 7$, $p \equiv 3, 7 \pmod 8$
 
@@ -105,7 +105,7 @@ Since $24 \mid p^2 - 1$, the shift $13(p^2 - 1)/24$ is a natural number.
 
 - Russelle Guadalupe, *A Note on Congruences for Generalized Cubic Partitions Modulo Primes*, INTEGERS 25 (2025), Article A20, Theorem 3, Equation (13).
 
-Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_prime_three_seven_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-prime-2).
+Stated but not proved: `MetaMathlibExt.generalizedCubicPartitionCount_prime_three_seven_mod_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/GeneralizedCubicPartitionWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html#generalized-cubic-partition-count-prime-2).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized cubic partitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/generalized-cubic-partitions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.86 Two term complexes
 
-Section 15.86 of the Stacks Project, [Tag 0G9B](https://stacks.math.columbia.edu/tag/0G9B). 12 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.86 of the Stacks Project, [Tag 0G9B](https://stacks.math.columbia.edu/tag/0G9B). 12 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G9C, a lemma
 
 [Tag 0G9C](https://stacks.math.columbia.edu/tag/0G9C) in the Stacks Project.
 
-**`TwoTermComplex.projective_homology_iff_ext_one_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean#L155).
+**`TwoTermComplex.projective_homology_iff_ext_one_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean#L155).
 
 > **Stacks 0G9C.** For a derived object with cohomology concentrated in degrees `-1` and `0`,
 > vanishing of degree-one Ext against every module is equivalent to vanishing of degree-minus-one
@@ -50,7 +50,7 @@ public theorem projective_homology_iff_ext_one_vanishing
 
 [Tag 0G9D](https://stacks.math.columbia.edu/tag/0G9D) in the Stacks Project.
 
-**`TwoTermComplex.smooth_and_formallySmooth_iff_ext_one_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean#L358).
+**`TwoTermComplex.smooth_and_formallySmooth_iff_ext_one_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/ProjectiveCohomology.lean#L358).
 
 > **Stacks 0G9D.** A ring map is smooth if and only if it is of finite presentation and
 > degree-one Ext from its naive cotangent complex to every module vanishes. It is formally smooth
@@ -77,7 +77,7 @@ public theorem smooth_and_formallySmooth_iff_ext_one_vanishing
 
 [Tag 0G9E](https://stacks.math.columbia.edu/tag/0G9E) in the Stacks Project.
 
-**`TwoTermComplex.exists_twoTerm_representative_free_zero_and_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Representative.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Representative.lean#L111).
+**`TwoTermComplex.exists_twoTerm_representative_free_zero_and_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Representative.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Representative.lean#L111).
 
 > **Stacks 0G9E.** A derived object with cohomology only in degrees `-1` and `0` has a
 > two-term representative whose degree-zero term is free. If the ring is Noetherian and both
@@ -108,7 +108,7 @@ public theorem exists_twoTerm_representative_free_zero_and_finite
 
 [Tag 0ALN](https://stacks.math.columbia.edu/tag/0ALN) in the Stacks Project.
 
-**`TwoTermComplexExt.exists_hom_Q_map_eq_of_comp_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/ChainRepresentative.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Ext/ChainRepresentative.lean#L441). The attribute's comment: “(3)”.
+**`TwoTermComplexExt.exists_hom_Q_map_eq_of_comp_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/ChainRepresentative.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Ext/ChainRepresentative.lean#L441). The attribute's comment: “(3)”.
 
 > **(3)** Assume `K^i = 0` for `i ≤ -3`. Let `α ∈ Hom_{D(R)}(M, K)`. Suppose the
 > composite of `α` with the canonical map `K → K^{-2}[2]`, viewed in
@@ -143,7 +143,7 @@ theorem exists_hom_Q_map_eq_of_comp_canonical
       DerivedCategory.Q.map ab = α ∧ HomologicalComplex.Hom.f ab (-2) = a
 ```
 
-**`TwoTermComplexExt.toHomD_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean#L385). The attribute's comment: “(1)”.
+**`TwoTermComplexExt.toHomD_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean#L385). The attribute's comment: “(1)”.
 
 > **(1)** Assume `K^i = 0` for `i ≤ -2`. Then the canonical map
 > `Hom_{K(R)}(M, K) → Hom_{D(R)}(M, K)` is an isomorphism (bijective).
@@ -165,7 +165,7 @@ theorem toHomD_bijective
     Function.Bijective (fun f : HomK M K => (toHomD f : HomD M K))
 ```
 
-**`TwoTermComplexExt.forall_Q_map_comp_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean#L638). The attribute's comment: “(2)”.
+**`TwoTermComplexExt.forall_Q_map_comp_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Ext/HomotopyComparison.lean#L638). The attribute's comment: “(2)”.
 
 > **(2)** Assume `K^i = 0` for `i ∉ {-1, 0}` and that `K^0` is projective.
 > For a morphism of complexes `a : M → K`, condition (2a) — that for every module
@@ -190,7 +190,7 @@ theorem forall_Q_map_comp_eq_zero_iff
         HomologicalComplex.Hom.f a (-1) + M.d (-1) 0 ≫ h0 = 0)
 ```
 
-**`TwoTermComplexExt.exists_homotopy_components_of_Q_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/RepresentativeHomotopy.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Ext/RepresentativeHomotopy.lean#L441). The attribute's comment: “(4)”.
+**`TwoTermComplexExt.exists_homotopy_components_of_Q_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Ext/RepresentativeHomotopy.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Ext/RepresentativeHomotopy.lean#L441). The attribute's comment: “(4)”.
 
 > **(4)** In the situation of (3): given `α` and a representing morphism of complexes
 > `a^•` with `a^{-2} = a` (as produced in (3)), for any second representing morphism
@@ -227,7 +227,7 @@ theorem exists_homotopy_components_of_Q_map_eq
 
 [Tag 0G9F](https://stacks.math.columbia.edu/tag/0G9F) in the Stacks Project.
 
-**`TwoTermComplex.ext_one_annihilated_iff_twoTerm_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Representative.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Representative.lean#L356).
+**`TwoTermComplex.ext_one_annihilated_iff_twoTerm_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Representative.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Representative.lean#L356).
 
 > **Stacks 0G9F.** For a derived object with cohomology concentrated in degrees `-1` and `0`,
 > the first Ext groups are annihilated by an ideal exactly when multiplication by every element of
@@ -278,7 +278,7 @@ public theorem ext_one_annihilated_iff_twoTerm_factorization
 
 [Tag 0G9G](https://stacks.math.columbia.edu/tag/0G9G) in the Stacks Project.
 
-**`TwoTermComplex.twoTermBaseChange_iso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/BaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/BaseChange.lean#L344).
+**`TwoTermComplex.twoTermBaseChange_iso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/BaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/BaseChange.lean#L344).
 
 > **Stacks 0G9G.** Termwise base change of a two-term representative whose degree-zero term
 > is flat represents the truncation in degrees at least `-1` of the derived base change: the
@@ -319,7 +319,7 @@ public theorem twoTermBaseChange_iso_truncGE
 
 [Tag 0G9H](https://stacks.math.columbia.edu/tag/0G9H) in the Stacks Project.
 
-**`TwoTermComplex.ext_one_annihilated_truncGE_derivedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ExtAnnihilationCriteria.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/ExtAnnihilationCriteria.lean#L51).
+**`TwoTermComplex.ext_one_annihilated_truncGE_derivedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ExtAnnihilationCriteria.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/ExtAnnihilationCriteria.lean#L51).
 
 > **Stacks 0G9H.** If an ideal annihilates every degree-one Ext group from a two-term derived
 > object, then the extended ideal has the same property for its derived base change truncated in
@@ -355,7 +355,7 @@ public theorem ext_one_annihilated_truncGE_derivedBaseChange
 
 [Tag 0G9I](https://stacks.math.columbia.edu/tag/0G9I) in the Stacks Project.
 
-**`TwoTermComplex.smul_id_eq_zero_of_two_term_homology_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Morphisms.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Morphisms.lean#L103).
+**`TwoTermComplex.smul_id_eq_zero_of_two_term_homology_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Morphisms.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Morphisms.lean#L103).
 
 > **Stacks 0G9I.** Let `α : K ⟶ K'` be a morphism of `D(R)` between objects with cohomology in
 > degrees `-1` and `0` such that `H⁰(α)` is an isomorphism and `H⁻¹(α)` is surjective. If
@@ -379,7 +379,7 @@ public theorem smul_id_eq_zero_of_two_term_homology_map
 
 [Tag 0G9J](https://stacks.math.columbia.edu/tag/0G9J) in the Stacks Project.
 
-**`TwoTermComplexExt.ext_one_annihilated_of_homology_iso_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ExtAnnihilation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/ExtAnnihilation.lean#L53).
+**`TwoTermComplexExt.ext_one_annihilated_of_homology_iso_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/ExtAnnihilation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/ExtAnnihilation.lean#L53).
 
 > **Stacks 0G9J.** Let `K ⟶ K'` be a morphism of derived objects whose cohomology is
 > concentrated in degrees `-1` and `0`. If it induces an isomorphism in degree `0` and an
@@ -411,7 +411,7 @@ public theorem ext_one_annihilated_of_homology_iso_epi
 
 [Tag 0G9K](https://stacks.math.columbia.edu/tag/0G9K) in the Stacks Project.
 
-**`TwoTermComplex.exists_power_ext_one_annihilated_iff_cohomology_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/IdealPower.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/IdealPower.lean#L362).
+**`TwoTermComplex.exists_power_ext_one_annihilated_iff_cohomology_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/IdealPower.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/IdealPower.lean#L362).
 
 > **Stacks 0G9K.** For a two-term derived object, some power of an ideal annihilates all
 > first Ext groups if and only if some power annihilates degree-minus-one cohomology and makes
@@ -465,7 +465,7 @@ public theorem exists_power_ext_one_annihilated_iff_cohomology_conditions
 
 [Tag 0AJT](https://stacks.math.columbia.edu/tag/0AJT) in the Stacks Project.
 
-**`TwoTermComplex.comp_eq_zero_of_two_term_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Morphisms.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Morphisms.lean#L55).
+**`TwoTermComplex.comp_eq_zero_of_two_term_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Morphisms.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Morphisms.lean#L55).
 
 > **Stacks 0AJT.** Let `K₁, K₂, K₃` be objects of `D(R)` with cohomology in degrees `-1` and
 > `0`, and let `φ : K₁ ⟶ K₂`, `ψ : K₂ ⟶ K₃`. If `H⁰(φ) = 0` and `H⁻¹(ψ) = 0`, then `φ ≫ ψ = 0`.
@@ -490,7 +490,7 @@ public theorem comp_eq_zero_of_two_term_homology
 
 [Tag 0G9L](https://stacks.math.columbia.edu/tag/0G9L) in the Stacks Project.
 
-**`Matrix.Q_map_detSmul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Determinant.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TwoTermComplex/Determinant.lean#L208).
+**`Matrix.Q_map_detSmul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TwoTermComplex/Determinant.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TwoTermComplex/Determinant.lean#L208).
 
 > **Stacks 0G9L**.
 > The morphism `det(A) : K → K` is the zero morphism in the derived category `D(R)`.
@@ -507,4 +507,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.86, Tag 0G9B](https://stacks.math.columbia.edu/tag/0G9B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

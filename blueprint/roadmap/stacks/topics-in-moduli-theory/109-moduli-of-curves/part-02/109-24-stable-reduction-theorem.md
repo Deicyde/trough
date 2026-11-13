@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.24 Stable reduction theorem
 
-Section 109.24 of the Stacks Project, [Tag 0E8C](https://stacks.math.columbia.edu/tag/0E8C). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.24 of the Stacks Project, [Tag 0E8C](https://stacks.math.columbia.edu/tag/0E8C). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E8D, a lemma
 
 [Tag 0E8D](https://stacks.math.columbia.edu/tag/0E8D) in the Stacks Project.
 
-**`Stacks.Models.hasSemistableReduction_iff_exists_isStableCurveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean#L119). The attribute's comment: “`C ⟶ Spec K` is smooth, projective, a curve (`IsCurve`), with `H⁰(C, 𝒪_C) = K` and genus `≥ 2`. (1) is `HasSemistableReduction R c hc` (Semistable Reduction, Definition 0CDH). (2), a stable family of curves over `R` with generic fibre `C`, is a stable family of curves `F` (Stacks 0E75) whose base is identified with `Spec R` (`ψ`), with a morphism of families of curves (a cartesian square) from the family `C ⟶ Spec K` to `F` lying over `Spec K ⟶ Spec R`.”.
+**`Stacks.Models.hasSemistableReduction_iff_exists_isStableCurveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean#L119). The attribute's comment: “`C ⟶ Spec K` is smooth, projective, a curve (`IsCurve`), with `H⁰(C, 𝒪_C) = K` and genus `≥ 2`. (1) is `HasSemistableReduction R c hc` (Semistable Reduction, Definition 0CDH). (2), a stable family of curves over `R` with generic fibre `C`, is a stable family of curves `F` (Stacks 0E75) whose base is identified with `Spec R` (`ψ`), with a morphism of families of curves (a cartesian square) from the family `C ⟶ Spec K` to `F` lying over `Spec K ⟶ Spec R`.”.
 
 > Let `R` be a discrete valuation ring with fraction field `K` and `C` a smooth projective curve
 > over `K` with `H⁰(C, 𝒪_C) = K` of genus `g ≥ 2`. Then `C` has semistable reduction (Stacks 0CDH)
@@ -41,7 +41,7 @@ theorem hasSemistableReduction_iff_exists_isStableCurveFamily
 
 [Tag 0E97](https://stacks.math.columbia.edu/tag/0E97) in the Stacks Project.
 
-**`Stacks.Models.existsUnique_isModelHom_iso_of_isStableFamilyOfSchemesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableModelExistsUnique.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StableModelExistsUnique.lean#L179).
+**`Stacks.Models.existsUnique_isModelHom_iso_of_isStableFamilyOfSchemesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableModelExistsUnique.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StableModelExistsUnique.lean#L179).
 
 > Let `R` be a discrete valuation ring with fraction field `K` and `C` a smooth proper curve over
 > `K` with `K = H⁰(C, 𝒪_C)` and genus `g`. If `X` and `X'` are models of `C` (Section 0C2R) which are
@@ -66,7 +66,7 @@ theorem existsUnique_isModelHom_iso_of_isStableFamilyOfSchemesOfGenus (B : BigFp
 
 [Tag 0E98](https://stacks.math.columbia.edu/tag/0E98) in the Stacks Project.
 
-**`Stacks.Models.stableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableReduction/Main.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StableReduction/Main.lean#L151).
+**`Stacks.Models.stableReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableReduction/Main.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/StableReduction/Main.lean#L152).
 
 > **Stacks Project, Tag 0E98** (stable reduction, [DM, Corollary 2.7]). Let `R` be a discrete
 > valuation ring with fraction field `K` and let `C` be a smooth projective curve over `K` with
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.24, Tag 0E8C](https://stacks.math.columbia.edu/tag/0E8C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

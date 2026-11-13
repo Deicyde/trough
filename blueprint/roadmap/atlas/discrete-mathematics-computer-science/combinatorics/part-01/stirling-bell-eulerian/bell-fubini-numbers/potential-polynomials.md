@@ -8,7 +8,7 @@ proof: formalized
 
 # Potential polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html).
 
 ## Howard's formula for the series $\sum_{k \ge 0} 2x^k/(k+2)!$
 
@@ -32,7 +32,7 @@ polynomial evaluated at the sequence whose first term is $0$ and whose other ter
 
 - G. Nemes, Journal of Integer Sequences 13 (2010), https://cs.uwaterloo.ca/journals/JIS/VOL13/Nemes/nemes2.tex, lines 120-133 (generic) and 166-173 (specialization).
 
-Formalized by `MetaMathlibExt.howard_potentialPolynomial_rTwo_eq_partialBell`, a theorem declared in [MathlibExt/Combinatorics/HowardPotentialPolynomial.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/HowardPotentialPolynomial.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html#howard-potential-polynomial-r-two-eq-par).
+Formalized by `MetaMathlibExt.howard_potentialPolynomial_rTwo_eq_partialBell`, a theorem declared in [MathlibExt/Combinatorics/HowardPotentialPolynomial.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/HowardPotentialPolynomial.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html#howard-potential-polynomial-r-two-eq-par).
 
 ## Howard's formula for potential polynomials
 
@@ -57,7 +57,7 @@ is the sequence with $\tilde a_j = a_j$ for $j \ge r$ and $\tilde a_j = 0$ for $
 
 - G. Nemes, Journal of Integer Sequences 13 (2010), https://cs.uwaterloo.ca/journals/JIS/VOL13/Nemes/nemes2.tex, lines 120-133 (generic) and 166-173 (specialization).
 
-Formalized by `MetaMathlibExt.howard_potentialPolynomial_eq_partialBell`, a theorem declared in [MathlibExt/Combinatorics/HowardPotentialPolynomial.lean, line 1893](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/HowardPotentialPolynomial.lean#L1893). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html#howard-potential-polynomial-eq-partial-b).
+Formalized by `MetaMathlibExt.howard_potentialPolynomial_eq_partialBell`, a theorem declared in [MathlibExt/Combinatorics/HowardPotentialPolynomial.lean, line 1893](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/HowardPotentialPolynomial.lean#L1893). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html#howard-potential-polynomial-eq-partial-b).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Potential polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/potential-polynomials)

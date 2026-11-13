@@ -1,6 +1,6 @@
 # 49 Discriminants and Differents
 
-Chapter 49 of the Stacks Project, *Discriminants and Differents*, [Tag 0DWH](https://stacks.math.columbia.edu/tag/0DWH): the 14 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 239 declarations of the repository (all in StacksFrontier) and 5 registered declarations.
+Chapter 49 of the Stacks Project, *Discriminants and Differents*, [Tag 0DWH](https://stacks.math.columbia.edu/tag/0DWH): the 14 sections of its 16 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 244 declarations of the repository (all in StacksFrontier) and 5 registered declarations.
 
 ## [49.2 Dualizing modules for… to 49.15 Comparison with duality…](part-01/README.md)
 

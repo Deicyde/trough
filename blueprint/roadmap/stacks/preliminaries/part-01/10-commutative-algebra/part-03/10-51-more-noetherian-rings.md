@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.51 More Noetherian rings
 
-Section 10.51 of the Stacks Project, [Tag 00IJ](https://stacks.math.columbia.edu/tag/00IJ). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.51 of the Stacks Project, [Tag 00IJ](https://stacks.math.columbia.edu/tag/00IJ). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00IK, a lemma
 
@@ -16,16 +16,16 @@ Section 10.51 of the Stacks Project, [Tag 00IJ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`Module.finitePresentation_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.finitePresentation_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/Basic.lean#L23) (StacksFrontier): “(1)”. References: EGA 0 (1.0.5), “more general”; EGA 0 (1.3.5), “more general”.
-- [`isNoetherian_of_isNoetherianRing_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNoetherian_of_isNoetherianRing_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/Basic.lean#L24) (StacksFrontier): “(2) and (3): a finite module over a Noetherian ring is Noetherian”. References: SGA 6 I (1.3), “more general”.
-- [`IsNoetherian.noetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsNoetherian.noetherian#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/Basic.lean#L27) (StacksFrontier): “(2): the submodules of a Noetherian module are finitely generated”.
-- [`isNoetherian_iff'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNoetherian_iff'#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/Basic.lean#L29) (StacksFrontier): “(3): a Noetherian module satisfies the ascending chain condition on submodules”.
+- [`Module.finitePresentation_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.finitePresentation_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/Basic.lean#L23) (StacksFrontier): “(1)”. References: EGA 0 (1.0.5), “more general”; EGA 0 (1.3.5), “more general”.
+- [`isNoetherian_of_isNoetherianRing_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNoetherian_of_isNoetherianRing_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/Basic.lean#L24) (StacksFrontier): “(2) and (3): a finite module over a Noetherian ring is Noetherian”. References: SGA 6 I (1.3), “more general”.
+- [`IsNoetherian.noetherian`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsNoetherian.noetherian#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/Basic.lean#L27) (StacksFrontier): “(2): the submodules of a Noetherian module are finitely generated”.
+- [`isNoetherian_iff'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNoetherian_iff'#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/Basic.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/Basic.lean#L29) (StacksFrontier): “(3): a Noetherian module satisfies the ascending chain condition on submodules”.
 
 ## Tag 00IN, a lemma
 
 [Tag 00IN](https://stacks.math.columbia.edu/tag/00IN) in the Stacks Project.
 
-**`artin_rees`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L66). References: EGA 0 (7.3.2.1).
+**`artin_rees`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L66). References: EGA 0 (7.3.2.1).
 
 > **Artin–Rees lemma.** For a Noetherian ring `R`, an ideal `I ⊆ R` and a submodule `N` of a
 > finite `R`-module `M`, there is a constant `c > 0` with `I^n M ⊓ N = I^(n-c) • (I^c M ⊓ N)` for
@@ -45,7 +45,7 @@ theorem artin_rees
 
 [Tag 00IO](https://stacks.math.columbia.edu/tag/00IO) in the Stacks Project.
 
-**`exists_comap_smul_eq_and_range_inf_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L158). References: EGA 0 (7.3.2.1), “more general”.
+**`exists_comap_smul_eq_and_range_inf_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L158). References: EGA 0 (7.3.2.1), “more general”.
 
 > **Map version of Artin–Rees.** For an exact sequence `0 → K → M → N` of
 > finitely generated modules over a Noetherian ring `R` and an ideal `I`, there is
@@ -72,13 +72,13 @@ theorem exists_comap_smul_eq_and_range_inf_le
 
 Declarations registered for the tag:
 
-- [`Ideal.iInf_pow_smul_eq_bot_of_isLocalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.iInf_pow_smul_eq_bot_of_isLocalRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L175) (StacksFrontier): “Krull's intersection theorem for a finite module over a Noetherian local ring”.
+- [`Ideal.iInf_pow_smul_eq_bot_of_isLocalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.iInf_pow_smul_eq_bot_of_isLocalRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L175) (StacksFrontier): “Krull's intersection theorem for a finite module over a Noetherian local ring”.
 
 ## Tag 00IQ, a lemma
 
 [Tag 00IQ](https://stacks.math.columbia.edu/tag/00IQ) in the Stacks Project.
 
-**`exists_notMem_localized_krullIntersection_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L206). References: EGA 0 (7.4.2), “more general”; SGA 3 VIB (6.5.3), “special case”.
+**`exists_notMem_localized_krullIntersection_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L206). References: EGA 0 (7.4.2), “more general”; SGA 3 VIB (6.5.3), “special case”.
 
 > For every prime ideal `p` containing `I`, there exists `f ∈ R` with
 > `f ∉ p` such that the localization of `N = ⋂_n I^n M` at the submonoid
@@ -93,7 +93,7 @@ theorem exists_notMem_localized_krullIntersection_eq_bot
       (krullIntersection M I).localized (Submonoid.powers f) = ⊥
 ```
 
-**`krullIntersection_eq_bot_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L228). References: EGA 0 (7.3.5), “(a) => (c)”.
+**`krullIntersection_eq_bot_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Noetherian/ArtinRees.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Noetherian/ArtinRees.lean#L228). References: EGA 0 (7.3.5), “(a) => (c)”.
 
 > If `I` is contained in the Jacobson radical of `R`, then `N = ⋂_n I^n M = 0`.
 
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.51, Tag 00IJ](https://stacks.math.columbia.edu/tag/00IJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

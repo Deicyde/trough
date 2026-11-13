@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.51 Applications
 
-Section 67.51 of the Stacks Project, [Tag 05W4](https://stacks.math.columbia.edu/tag/05W4). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.51 of the Stacks Project, [Tag 05W4](https://stacks.math.columbia.edu/tag/05W4). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0418, a lemma
 
 [Tag 0418](https://stacks.math.columbia.edu/tag/0418) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_of_isLocallyQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean#L465).
+**`AlgebraicGeometry.Space.relativelyRepresentable_of_isLocallyQuasiFinite_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean#L466).
 
 > **Stacks 0418.** A separated, locally quasi-finite morphism of algebraic spaces over `S`
 > is relatively representable along the Yoneda embedding of the big fppf site.
@@ -35,7 +35,7 @@ theorem relativelyRepresentable_of_isLocallyQuasiFinite_isSeparated
 
 [Tag 05W5](https://stacks.math.columbia.edu/tag/05W5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_of_isEtale_of_universallyInjective_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L92).
+**`AlgebraicGeometry.Space.isIso_of_isEtale_of_universallyInjective_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L95).
 
 > **Stacks 05W5.** A morphism of algebraic spaces over `S` which is étale, universally
 > injective and surjective is an isomorphism.
@@ -52,7 +52,7 @@ theorem isIso_of_isEtale_of_universallyInjective_of_isSurjective
     (hsurj : IsSurjective B S hS f) : IsIso f
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_of_isEtale_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleUniversallyInjectiveOpenImmersion.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleUniversallyInjectiveOpenImmersion.lean#L47). The attribute's comment: “the open immersion clause”.
+**`AlgebraicGeometry.Space.isOpenImmersion_of_isEtale_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleUniversallyInjectiveOpenImmersion.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleUniversallyInjectiveOpenImmersion.lean#L47). The attribute's comment: “the open immersion clause”.
 
 > An étale universally injective morphism of algebraic spaces over `S` is an open immersion.
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.51, Tag 05W4](https://stacks.math.columbia.edu/tag/05W4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

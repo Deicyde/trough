@@ -1,6 +1,6 @@
 # 104 Derived Categories of Stacks
 
-Chapter 104 of the Stacks Project, *Derived Categories of Stacks*, [Tag 08MW](https://stacks.math.columbia.edu/tag/08MW): the 6 sections of its 8 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 17 tags are carried by 131 declarations of the repository (all in StacksFrontier).
+Chapter 104 of the Stacks Project, *Derived Categories of Stacks*, [Tag 08MW](https://stacks.math.columbia.edu/tag/08MW): the 6 sections of its 8 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 17 tags are carried by 100 declarations of the repository (all in StacksFrontier).
 
 - [104.3 The lisse-étale and the flat-fppf sites](104-3-the-lisse-etale-and-the-flat-fppf-sites.md)
 - [104.4 Cohomology and the lisse-étale and flat-fppf sites](104-4-cohomology-and-the-lisse-etale-and-flat-fp.md)

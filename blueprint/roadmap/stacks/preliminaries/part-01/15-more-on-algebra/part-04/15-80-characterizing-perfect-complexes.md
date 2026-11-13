@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.80 Characterizing perfect complexes
 
-Section 15.80 of the Stacks Project, [Tag 07LQ](https://stacks.math.columbia.edu/tag/07LQ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.80 of the Stacks Project, [Tag 07LQ](https://stacks.math.columbia.edu/tag/07LQ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ATI, a lemma
 
 [Tag 0ATI](https://stacks.math.columbia.edu/tag/0ATI) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_eq_triangEnvelope_singleton_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Characterizing.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Characterizing.lean#L330).
+**`StacksDraft.Perfect.isPerfect_eq_triangEnvelope_singleton_regularModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Characterizing.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Characterizing.lean#L330).
 
 > **Stacks 0ATI.** The perfect objects of `D(R)` form the smallest strictly full, saturated,
 > triangulated subcategory containing the regular module `R` in degree zero. Equivalently, `R[0]`
@@ -32,7 +32,7 @@ theorem isPerfect_eq_triangEnvelope_singleton_regularModule {R : Type u} [Ring R
 
 [Tag 07LR](https://stacks.math.columbia.edu/tag/07LR) in the Stacks Project.
 
-**`Stacks.MappingTelescope.isIso_colimHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/HomColimit.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/HomColimit.lean#L451).
+**`Stacks.MappingTelescope.isIso_colimHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/HomColimit.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/HomColimit.lean#L451).
 
 > **Stacks 07LR**.
 > Let `R` be a ring and let `K ∈ D(R)` be such that for every sequence `(E_n)` of objects of `D(R)`
@@ -50,7 +50,7 @@ theorem isIso_colimHomComparison (K : DMod R) (hK : CommutesWithCountableCoprodu
 
 [Tag 07LT](https://stacks.math.columbia.edu/tag/07LT) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_iff_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Characterizing.lean, line 1129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Characterizing.lean#L1129).
+**`StacksDraft.Perfect.isPerfect_iff_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Characterizing.lean, line 1129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Characterizing.lean#L1129).
 
 > **Stacks 07LT.** An object of the derived category of modules over a ring is perfect if and
 > only if it is compact. Perfectness is thus intrinsic to the triangulated category `D(R)` with its
@@ -66,7 +66,7 @@ theorem isPerfect_iff_isCompactObject
 
 [Tag 07LU](https://stacks.math.columbia.edu/tag/07LU) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_isPerfect_mod_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 884](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L884).
+**`StacksDraft.Perfect.isPerfect_of_isPerfect_mod_isNilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 884](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L884).
 
 > **Stacks 07LU.** An object of `D(R)` whose derived reduction modulo a nilpotent ideal `I` is
 > perfect is itself perfect.
@@ -91,7 +91,7 @@ public theorem isPerfect_of_isPerfect_mod_isNilpotent
 
 [Tag 09AS](https://stacks.math.columbia.edu/tag/09AS) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_derivedReduction_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProductOfIdeals.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/ProductOfIdeals.lean#L621).
+**`StacksDraft.Perfect.isPerfect_derivedReduction_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/ProductOfIdeals.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/ProductOfIdeals.lean#L620).
 
 > **Stacks 09AS.** Let `I` and `J` be ideals of a commutative ring `R` and let `K` be an object
 > of the derived category of `R`-modules. If the derived reductions of `K` modulo `I` and modulo `J`
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.80, Tag 07LQ](https://stacks.math.columbia.edu/tag/07LQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

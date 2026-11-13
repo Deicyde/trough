@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.42 An operator introduced by Berthelot and Ogus
 
-Section 38.42 of the Stacks Project, [Tag 0F8L](https://stacks.math.columbia.edu/tag/0F8L). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.42 of the Stacks Project, [Tag 0F8L](https://stacks.math.columbia.edu/tag/0F8L). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F8M, a lemma
 
 [Tag 0F8M](https://stacks.math.columbia.edu/tag/0F8M) in the Stacks Project.
 
-**`Stacks.Divisors.Eta.etaSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaAffineComparison.lean, line 863](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EtaAffineComparison.lean#L863). The attribute's comment: “the affine comparison of eta complexes”.
+**`Stacks.Divisors.Eta.etaSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaAffineComparison.lean, line 861](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EtaAffineComparison.lean#L861). The attribute's comment: “the affine comparison of eta complexes”.
 
 > **[Stacks, Tag 0F8M], second assertion.** Let `Y` be a scheme, let `D ⊆ Y` be an effective
 > Cartier divisor with ideal sheaf `I ⊆ 𝒪_Y`, and let `F^•` be a complex of quasi-coherent
@@ -38,7 +38,7 @@ noncomputable def etaSectionsIso (D : Y.IdealSheafData)
         (etaObj Y.toRingedSpace (idealSheaf D) (idealSheafι D) F htf) U
 ```
 
-**`Stacks.Divisors.Eta.isQuasicoherent_etaObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaQuasicoherent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EtaQuasicoherent.lean#L245). The attribute's comment: “eta is a complex of quasi-coherent modules”.
+**`Stacks.Divisors.Eta.isQuasicoherent_etaObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaQuasicoherent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EtaQuasicoherent.lean#L245). The attribute's comment: “eta is a complex of quasi-coherent modules”.
 
 > **[Stacks, Tag 0F8M], first assertion.** Let `X` be a scheme, let `D ⊆ X` be an effective
 > Cartier divisor with ideal sheaf `I ⊆ 𝒪_X`, and let `F^•` be a complex of quasi-coherent
@@ -59,7 +59,7 @@ theorem isQuasicoherent_etaObj (D : X.IdealSheafData)
 
 [Tag 0GTV](https://stacks.math.columbia.edu/tag/0GTV) in the Stacks Project.
 
-**`Stacks.Divisors.Eta.derivedEta_isQuasicoherent_and_affineComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedBerthelotOgus.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedBerthelotOgus.lean#L151).
+**`Stacks.Divisors.Eta.derivedEta_isQuasicoherent_and_affineComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedBerthelotOgus.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedBerthelotOgus.lean#L151).
 
 > **[Stacks, Tag 0GTV].** Let `X` be a scheme and let `D ⊆ X` be an effective Cartier divisor
 > with ideal sheaf `I ⊆ 𝒪_X`. The functor `Lη_I : D(𝒪_X) ⥤ D(𝒪_X)` of [Stacks, Tag 0F8Q] sends
@@ -89,7 +89,7 @@ theorem derivedEta_isQuasicoherent_and_affineComparison :
             derivedTildeGamma R)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.chartDecalage_of_derivedEta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean#L395). The attribute's comment: “the second assertion, on an affine chart with principal determinantal ideals”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.chartDecalage_of_derivedEta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean#L395). The attribute's comment: “the second assertion, on an affine chart with principal determinantal ideals”.
 
 > **The derived décalage of a triple on its affine charts with principal determinantal
 > ideals**, for every triple `(X, D, M)` and every derived décalage `Lη_I` of its divisor: on such
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.42, Tag 0F8L](https://stacks.math.columbia.edu/tag/0F8L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

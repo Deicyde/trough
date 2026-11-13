@@ -7,7 +7,7 @@ statement: formalized
 
 # Leonardo p-numbers
 
-79 results, 42 proved and 37 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html).
+79 results, 42 proved and 37 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html).
 
 ## Initial values of the generalized Leonardo $p$-numbers
 
@@ -16,7 +16,7 @@ and $n$, this is the list of integers $(\mathcal{L}_{p,k}(0), \mathcal{L}_{p,k}(
 \mathcal{L}_{p,k}(n))$ of length $n + 1$, where $\mathcal{L}_{p,k}(i) = 1$ for $0 \le i \le p$
 and $\mathcal{L}_{p,k}(i) = \mathcal{L}_{p,k}(i-1) + \mathcal{L}_{p,k}(i-p-1) + k$ for $i > p$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPKSeq`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pkseq).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPKSeq`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pkseq).
 
 ## Generalized Leonardo $p$-numbers
 
@@ -25,7 +25,7 @@ Leonardo $p$-numbers are the integers $\mathcal{L}_{p,k}(n)$, $n \in \mathbb{N}$
 $\mathcal{L}_{p,k}(n) = 1$ for $0 \le n \le p$ and
 $\mathcal{L}_{p,k}(n) = \mathcal{L}_{p,k}(n-1) + \mathcal{L}_{p,k}(n-p-1) + k$ for $n > p$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk).
 
 ## Forward evaluation of the $H(p)$ recurrence
 
@@ -38,7 +38,7 @@ list, so evaluation takes polynomial time.
 
 For $p = 0$, where this rule is circular, every appended value is $0$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqForward`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-forward).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqForward`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-forward).
 
 ## Backward evaluation of the $H(p)$ recurrence
 
@@ -51,7 +51,7 @@ value to the previous list.
 
 For $p = 0$, where this rule is circular, every prepended value equals $s(0)$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqBackward`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-backward).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqBackward`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-backward).
 
 ## Two-sided extension of initial values by the $H(p)$ recurrence
 
@@ -62,7 +62,7 @@ $H(t) = H(t-1) + H(t-p) - H(t-2p-1)$ for every integer $t$: its values at $t > p
 forward and its values at $t < -p$ backward from this recurrence. For $p = 0$ its value is $s(0)$
 at every $t \le 0$ and $0$ at every $t > 0$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-z).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.hSeqZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-seq-z).
 
 ## The sequence $A_p$
 
@@ -71,7 +71,7 @@ the unique sequence with $A_p(n) = 0$ for $-p \le n \le 0$ and $A_p(n) = 1$ for 
 that satisfies $A_p(n) = A_p(n-1) + A_p(n-p) - A_p(n-2p-1)$ for every integer $n$. For $p = 0$
 it is the zero sequence.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az).
 
 ## The two-sided sequence $B_p$
 
@@ -84,7 +84,7 @@ $B_p(-p+1) = 1$, and $B_p(n) = 0$ for the other integers $n$ with $-p \le n \le 
 The definition also accepts $p = 0$, where the recurrence is trivial and the construction has no
 mathematical meaning.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.seqBZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-bz).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.seqBZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-bz).
 
 ## The companion matrix $Q_p$
 
@@ -93,7 +93,7 @@ integer matrix with rows and columns indexed by $0, 1, \dots, 2p$ whose entry $(
 whose other entries $(0, 0)$, $(p-1, 0)$ and $(i, i+1)$ for $0 \le i < 2p$ are $1$, and whose
 remaining entries are $0$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.companionQ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#companion-q).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.companionQ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#companion-q).
 
 ## Entry formula for the powers of $Q_p$
 
@@ -107,7 +107,7 @@ This is the formula of Theorem 9 of the source for the $(a, b)$ entry of $Q_p^n$
 and $Q_p$ is the $(2p+1) \times (2p+1)$ companion matrix of the source, with the index direction
 along the $B_p$ rows corrected (the source's display reverses it after the first entry).
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.qPowEntry`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#q-pow-entry).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.qPowEntry`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#q-pow-entry).
 
 ## The Hankel matrix $R_{p,m}$
 
@@ -116,7 +116,7 @@ $H : \mathbb{Z} \to \mathbb{Z}$ and a natural number $m$, $R_{p,m}$ is the $(2p+
 integer matrix, with rows and columns indexed by $0, 1, \dots, 2p$, whose $(a, b)$ entry is
 $H(m - a - b)$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.rMatrix`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#r-matrix).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.rMatrix`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#r-matrix).
 
 ## Generalized Leonardo $p$-numbers in terms of Fibonacci $p$-numbers
 
@@ -129,7 +129,7 @@ $\mathcal{L}_{p,k}(n) = (k+1)F_p(n+1) - k$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-eq).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-eq).
 
 ## Partial sums of the generalized Leonardo $p$-numbers
 
@@ -144,7 +144,7 @@ $\sum_{i=0}^{n} \mathcal{L}_{p,k}(i) = \mathcal{L}_{p,k}(n+p+1) - k(n+1) - 1$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.sum_leonardoPK` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-leonardo-pk).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.sum_leonardoPK` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-leonardo-pk).
 
 ## Stride sums of the generalized Leonardo $p$-numbers
 
@@ -161,7 +161,7 @@ $S = \mathcal{L}_{p,k}((p+1)(n+1)) - k(n+1) - 1$ if $m = p$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.sum_leonardoPK_stride` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-leonardo-pk-stride).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.sum_leonardoPK_stride` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-leonardo-pk-stride).
 
 ## Fibonacci $p$-numbers as differences of $A_p$
 
@@ -175,7 +175,7 @@ integer $t$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.fibonacciP_eq_seqAZ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#fibonacci-p-eq-seq-az-sub).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.fibonacciP_eq_seqAZ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#fibonacci-p-eq-seq-az-sub).
 
 ## The sequence $A_p$ as a sum of Fibonacci $p$-numbers
 
@@ -187,7 +187,7 @@ $A_p(mp + j) = \sum_{i=0}^{m} F_p(ip + j)$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Corollary 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_sum_fibonacciP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-eq-sum-fibonacci-p).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_sum_fibonacciP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-eq-sum-fibonacci-p).
 
 ## Recurrence for the sequence $A_p$
 
@@ -199,7 +199,7 @@ $n \equiv 1 \pmod p$, and $A_p(n) = A_p(n-1) + A_p(n-p-1)$ otherwise.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-recurrence).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-recurrence).
 
 ## Recurrence for the sequence $B_p$
 
@@ -213,7 +213,7 @@ $\varepsilon = -1$ for even $n$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqBZ_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-bz-recurrence).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqBZ_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-bz-recurrence).
 
 ## Relation between the sequences $A_p$ and $B_p$
 
@@ -225,7 +225,7 @@ $A_p(n) = B_p(n+1)$ otherwise.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Proposition 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_seqBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-eq-seq-bz).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_seqBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#seq-az-eq-seq-bz).
 
 ## Entries of the powers of the companion matrix $Q_p$
 
@@ -242,7 +242,7 @@ $1 \le t \le p$ and for $t = -p+1$ and $B_p(t) = 0$ for the other $-p \le t \le 
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.companionQ_pow_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#companion-q-pow-apply).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.companionQ_pow_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#companion-q-pow-apply).
 
 ## Powers of $Q_p$ shift the Hankel matrices $R_{p,m}$
 
@@ -258,7 +258,7 @@ natural numbers $m \ge 1$ and $n$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 10.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.rMatrix_mul_companionQ_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#r-matrix-mul-companion-q-pow).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.rMatrix_mul_companionQ_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#r-matrix-mul-companion-q-pow).
 
 ## Convolution identity for sequences in $H(p)$
 
@@ -280,7 +280,7 @@ and for $t = -p+1$ and $B_p(t) = 0$ for the other $-p \le t \le 0$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Corollary 11.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.h_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-add-eq).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.h_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#h-add-eq).
 
 ## Sums of $p+1$ consecutive Fibonacci $p$-numbers
 
@@ -296,7 +296,7 @@ Then $(k+1) \sum_{i=0}^{p} F_p(n+i) = \mathcal{L}_{p,k}(n+2p-1) + k$.
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Lemma 12.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.succ_mul_sum_fibonacciP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#succ-mul-sum-fibonacci-p).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.succ_mul_sum_fibonacciP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#succ-mul-sum-fibonacci-p).
 
 ## Generalized Leonardo $p$-numbers at integer arguments
 
@@ -309,7 +309,7 @@ recurrence $\mathcal{L}_{p,k}(n) = \mathcal{L}_{p,k}(n-1) + \mathcal{L}_{p,k}(n-
 backwards; below $-p$ they need not be, but Theorem 13 of the source only uses arguments
 $z \ge -p$.
 
-Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPKZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pkz).
+Formalized by `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPKZ`, a definition declared in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pkz).
 
 ## Honsberger-type identity for generalized Leonardo $p$-numbers
 
@@ -331,7 +331,7 @@ paper prints the summation index as $j$ in $\mathcal{L}(m-j)$; it is corrected t
 
 - "On Generalized Leonardo `p`-Numbers", Journal of Integer Sequences 27 (2024), Article 24.4.6, Theorem 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_honsberger` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-honsberger).
+Stated but not proved: `MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_honsberger` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-honsberger).
 
 ## Lucas-type recurrence lists
 
@@ -348,7 +348,7 @@ Lucas and Lucas-Leonardo $p$-numbers are the cases $c = 0$ and $c = p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1, display (5).
 
-Formalized by `MetaMathlibExt.lucasTypeSeq`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq).
+Formalized by `MetaMathlibExt.lucasTypeSeq`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq).
 
 ## Length of a Lucas-type list
 
@@ -360,7 +360,7 @@ list with parameters $p$, $a_0$, $c$ ending at index $n$ has exactly $n + 1$ ent
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasTypeSeq_length`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-length).
+Formalized by `MetaMathlibExt.lucasTypeSeq_length`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-length).
 
 ## Entries of a Lucas-type list do not depend on its length
 
@@ -373,7 +373,7 @@ ending at index $n$ equals the entry at index $i$ of the Lucas-type list ending 
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasTypeSeq_getD`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-get-d).
+Formalized by `MetaMathlibExt.lucasTypeSeq_getD`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-get-d).
 
 ## Last entry of a Lucas-type list
 
@@ -387,7 +387,7 @@ $S_{n+1}[n+1] = S_n[n] + S_{n-p}[n-p] + c$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasTypeSeq_getD_succ`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-get-d-succ).
+Formalized by `MetaMathlibExt.lucasTypeSeq_getD_succ`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-type-seq-get-d-succ).
 
 ## Lucas $p$-numbers
 
@@ -399,7 +399,7 @@ $L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for $n > p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1 (after (6)).
 
-Formalized by `MetaMathlibExt.lucasP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p).
+Formalized by `MetaMathlibExt.lucasP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p).
 
 ## Initial Lucas $p$-number
 
@@ -410,7 +410,7 @@ equals $p + 1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-zero).
+Formalized by `MetaMathlibExt.lucasP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-zero).
 
 ## Lucas $p$-numbers at indices $1$ to $p$
 
@@ -421,7 +421,7 @@ $1 \le n \le p$, the Lucas $p$-number $L_{p,n}$ equals $1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasP_of_le`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-of-le).
+Formalized by `MetaMathlibExt.lucasP_of_le`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-of-le).
 
 ## Recurrence for the Lucas $p$-numbers
 
@@ -432,7 +432,7 @@ the Lucas $p$-numbers. Then $L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for every $n > p
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasP_of_lt`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-of-lt).
+Formalized by `MetaMathlibExt.lucasP_of_lt`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-of-lt).
 
 ## Lucas-Leonardo $p$-numbers
 
@@ -444,7 +444,7 @@ $R_{p,n} = R_{p,n-1} + R_{p,n-p-1} + p$ for $n > p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 1, display (5).
 
-Formalized by `MetaMathlibExt.lucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p).
+Formalized by `MetaMathlibExt.lucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p).
 
 ## Initial Lucas-Leonardo $p$-number
 
@@ -455,7 +455,7 @@ $p$-number $R_{p,0}$ equals $p^2 + p + 1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (5).
 
-Formalized by `MetaMathlibExt.lucasLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-zero).
+Formalized by `MetaMathlibExt.lucasLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-zero).
 
 ## Lucas-Leonardo $p$-numbers at indices $1$ to $p$
 
@@ -466,7 +466,7 @@ $n$ with $1 \le n \le p$, the Lucas-Leonardo $p$-number $R_{p,n}$ equals $1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (5).
 
-Formalized by `MetaMathlibExt.lucasLeonardoP_of_le`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-of-le).
+Formalized by `MetaMathlibExt.lucasLeonardoP_of_le`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-of-le).
 
 ## Recurrence for the Lucas-Leonardo $p$-numbers
 
@@ -478,7 +478,7 @@ every $n > p$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (5).
 
-Formalized by `MetaMathlibExt.lucasLeonardoP_of_lt`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-of-lt).
+Formalized by `MetaMathlibExt.lucasLeonardoP_of_lt`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-of-lt).
 
 ## First values of the Lucas and Lucas-Leonardo $1$-numbers
 
@@ -490,7 +490,7 @@ $R_{1,0}, \dots, R_{1,5}$ are $3, 1, 5, 7, 13, 21$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 1.
 
-Formalized by `MetaMathlibExt.lucasP_lucasLeonardoP_one_values`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-lucas-leonardo-p-one-values).
+Formalized by `MetaMathlibExt.lucasP_lucasLeonardoP_one_values`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-p-lucas-leonardo-p-one-values).
 
 ## Incomplete Leonardo p-numbers
 
@@ -507,7 +507,7 @@ On the paper's range $0 \le k \le \lfloor n/(p+1) \rfloor$ the maximum is always
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, display (4).
 
-Formalized by `MetaMathlibExt.incompleteLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p).
+Formalized by `MetaMathlibExt.incompleteLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p).
 
 ## Incomplete Leonardo p-numbers at zero
 
@@ -518,7 +518,7 @@ incomplete Leonardo $p$-number $\mathcal{L}_{p,n}(0)$ equals $1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (4).
 
-Formalized by `MetaMathlibExt.incompleteLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p-zero).
+Formalized by `MetaMathlibExt.incompleteLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p-zero).
 
 ## Incomplete Lucas-Leonardo p-numbers
 
@@ -536,7 +536,7 @@ $0 \le k \le \lfloor n/(p+1) \rfloor$ with $n \ge 1$, every $m_i$ is positive.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, display (8).
 
-Formalized by `MetaMathlibExt.incompleteLucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p).
+Formalized by `MetaMathlibExt.incompleteLucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p).
 
 ## Incomplete Lucas-Leonardo p-numbers at zero
 
@@ -547,7 +547,7 @@ natural number $n \ge 1$, the incomplete Lucas-Leonardo $p$-number $R_{p,n}(0)$ 
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (8).
 
-Formalized by `MetaMathlibExt.incompleteLucasLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p-zero).
+Formalized by `MetaMathlibExt.incompleteLucasLeonardoP_zero`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p-zero).
 
 ## Hyper Leonardo $p$-numbers
 
@@ -561,7 +561,7 @@ $$\mathcal{L}^{(k)}_{p,n} = (p + 1) \sum_{i=0}^{\lfloor n/(p+1) \rfloor}
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, display (12) (quoting Belaggoun and Belbachir).
 
-Formalized by `MetaMathlibExt.hyperLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p).
+Formalized by `MetaMathlibExt.hyperLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p).
 
 ## Hyper Leonardo $p$-numbers at $n = 0$
 
@@ -572,7 +572,7 @@ Leonardo $p$-number $\mathcal{L}^{(k)}_{p,0}$ equals $1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, display (12) and Proposition 10.
 
-Formalized by `MetaMathlibExt.hyperLeonardoP_zero_left`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-zero-left).
+Formalized by `MetaMathlibExt.hyperLeonardoP_zero_left`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-zero-left).
 
 ## Hyper Lucas-Leonardo p-numbers
 
@@ -597,7 +597,7 @@ entries.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Definition 2.
 
-Formalized by `MetaMathlibExt.hyperLucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p).
+Formalized by `MetaMathlibExt.hyperLucasLeonardoP`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p).
 
 ## Hyper Lucas–Leonardo $p$-numbers at $n = 0$
 
@@ -610,7 +610,7 @@ For $k = 0$ this is the initial value $R_{p,0} = p^2 + p + 1$ of the Lucas–Leo
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Definition 2.
 
-Formalized by `MetaMathlibExt.hyperLucasLeonardoP_zero_left`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-zero-left).
+Formalized by `MetaMathlibExt.hyperLucasLeonardoP_zero_left`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-zero-left).
 
 ## Hyper Lucas-Leonardo p-numbers of order zero
 
@@ -622,7 +622,7 @@ $R^{(0)}_{p,n} = R_{p,n}$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Definition 2.
 
-Formalized by `MetaMathlibExt.hyperLucasLeonardoP_zero_right`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-zero-right).
+Formalized by `MetaMathlibExt.hyperLucasLeonardoP_zero_right`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-zero-right).
 
 ## Leonardo $p$-tilings
 
@@ -637,7 +637,7 @@ square or a $p$-mino; the lengths of all pieces sum to $n$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Definition 1 and the set `K_{p,n}` before Proposition 1.
 
-Formalized by `MetaMathlibExt.leonardoPTilings`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-ptilings).
+Formalized by `MetaMathlibExt.leonardoPTilings`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-ptilings).
 
 ## The all-squares tiling is a Leonardo $p$-tiling
 
@@ -648,7 +648,7 @@ linear tiling of an $n$-board by $n$ squares, with no $p$-tile, lies in the tili
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 2.
 
-Formalized by `MetaMathlibExt.replicate_mem_leonardoPTilings`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#replicate-mem-leonardo-ptilings).
+Formalized by `MetaMathlibExt.replicate_mem_leonardoPTilings`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#replicate-mem-leonardo-ptilings).
 
 ## First tile of a bracelet
 
@@ -667,7 +667,7 @@ impose it.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 3.
 
-Formalized by `MetaMathlibExt.BraceletFirstTile`, an inductive type declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#bracelet-first-tile).
+Formalized by `MetaMathlibExt.BraceletFirstTile`, an inductive type declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#bracelet-first-tile).
 
 ## Length of the first tile of a bracelet
 
@@ -680,7 +680,7 @@ $p$-tile of length $l$ (in any color) starting at cell $1$.
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 3.
 
-Formalized by `MetaMathlibExt.BraceletFirstTile.length`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#length).
+Formalized by `MetaMathlibExt.BraceletFirstTile.length`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#length).
 
 ## Lucas–Leonardo bracelets
 
@@ -699,7 +699,7 @@ The source sets $|B_{p,0}| = p^2 + p + 1$ by convention; that value is not model
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Section 3, the set `B_{p,n}` before Proposition 12.
 
-Formalized by `MetaMathlibExt.lucasLeonardoBracelets`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-bracelets).
+Formalized by `MetaMathlibExt.lucasLeonardoBracelets`, a definition declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-bracelets).
 
 ## The all-squares bracelet is a Lucas–Leonardo bracelet
 
@@ -711,7 +711,7 @@ and whose remaining $n - 1$ pieces are all curved squares lies in the bracelet s
 
 - Belkhir and Tan, INTEGERS 25 (2025), Article A57, Section 3.
 
-Formalized by `MetaMathlibExt.square_replicate_mem_lucasLeonardoBracelets`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#square-replicate-mem-lucas-leonardo-brac).
+Formalized by `MetaMathlibExt.square_replicate_mem_lucasLeonardoBracelets`, a theorem declared in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#square-replicate-mem-lucas-leonardo-brac).
 
 ## Counting Leonardo $p$-tilings
 
@@ -727,7 +727,7 @@ $\mathcal{L}_{p,n} = \mathcal{L}_{p,n-1} + \mathcal{L}_{p,n-p-1} + p$ for $n > p
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.card_leonardoPTilings` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#card-leonardo-ptilings).
+Stated but not proved: `MetaMathlibExt.card_leonardoPTilings` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#card-leonardo-ptilings).
 
 ## Homogeneous recurrence for the Leonardo $p$-numbers
 
@@ -741,7 +741,7 @@ and $\mathcal{L}_{p,p+j} = (j + 1) + jp$ for every $j$ with $1 \le j \le p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.leonardoPK_self_homogeneous` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-self-homogeneous).
+Stated but not proved: `MetaMathlibExt.leonardoPK_self_homogeneous` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-self-homogeneous).
 
 ## Recurrence for incomplete Leonardo p-numbers
 
@@ -757,7 +757,7 @@ $$
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.incompleteLeonardoP_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p-succ).
+Stated but not proved: `MetaMathlibExt.incompleteLeonardoP_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-leonardo-p-succ).
 
 ## Binomial sum identity for incomplete Leonardo p-numbers
 
@@ -774,7 +774,7 @@ $$
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_incompleteLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-choose-mul-incomplete-leonardo-p).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_incompleteLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-choose-mul-incomplete-leonardo-p).
 
 ## Partial sums of incomplete Leonardo p-numbers
 
@@ -793,7 +793,7 @@ where the sum is empty when $r = 0$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.sum_incompleteLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-incomplete-leonardo-p).
+Stated but not proved: `MetaMathlibExt.sum_incompleteLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-incomplete-leonardo-p).
 
 ## Binomial addition formula for hyper Leonardo $p$-numbers
 
@@ -806,7 +806,7 @@ $$\mathcal{L}^{(k)}_{p,n+m} = \sum_{i=0}^{m} \binom{m}{i} \mathcal{L}^{(k-i)}_{p
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.hyperLeonardoP_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-add).
+Stated but not proved: `MetaMathlibExt.hyperLeonardoP_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-add).
 
 ## Recurrence for the hyper Leonardo $p$-numbers
 
@@ -821,7 +821,7 @@ $\mathcal{L}_{p,n} = \mathcal{L}_{p,n-1} + \mathcal{L}_{p,n-p-1} + p$ for $n > p
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.hyperLeonardoP_rec` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-rec).
+Stated but not proved: `MetaMathlibExt.hyperLeonardoP_rec` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-leonardo-p-rec).
 
 ## Leonardo p-numbers split into incomplete and hyper parts
 
@@ -842,7 +842,7 @@ the hyper Leonardo $p$-number.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.leonardoPK_eq_incomplete_add_hyper` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-eq-incomplete-add-hyper).
+Stated but not proved: `MetaMathlibExt.leonardoPK_eq_incomplete_add_hyper` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#leonardo-pk-eq-incomplete-add-hyper).
 
 ## Counting Lucas–Leonardo bracelets
 
@@ -858,7 +858,7 @@ $1 \le i \le p$ and $R_{p,n} = R_{p,n-1} + R_{p,n-p-1} + p$ for $n > p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.card_lucasLeonardoBracelets` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#card-lucas-leonardo-bracelets).
+Stated but not proved: `MetaMathlibExt.card_lucasLeonardoBracelets` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#card-lucas-leonardo-bracelets).
 
 ## Lucas-Leonardo $p$-numbers from Lucas $p$-numbers
 
@@ -870,7 +870,7 @@ satisfy $R_{p,n} = (p + 1) L_{p,n} - p$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.lucasLeonardoP_eq_lucasP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-eq-lucas-p).
+Stated but not proved: `MetaMathlibExt.lucasLeonardoP_eq_lucasP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-eq-lucas-p).
 
 ## Lucas-Leonardo $p$-numbers from Leonardo $p$-numbers
 
@@ -884,7 +884,7 @@ for every natural number $n$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 14.
 
-Stated but not proved: `MetaMathlibExt.lucasLeonardoP_eq_leonardoPK` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-eq-leonardo-pk).
+Stated but not proved: `MetaMathlibExt.lucasLeonardoP_eq_leonardoPK` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#lucas-leonardo-p-eq-leonardo-pk).
 
 ## Sum of the Lucas-Leonardo p-numbers
 
@@ -896,7 +896,7 @@ $\sum_{i=0}^{n} R_{p,i} = R_{p,n+p+1} - p(n + 1) - 1$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 15.
 
-Stated but not proved: `MetaMathlibExt.sum_lucasLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-lucas-leonardo-p).
+Stated but not proved: `MetaMathlibExt.sum_lucasLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-lucas-leonardo-p).
 
 ## Sum of the Lucas-Leonardo p-numbers at multiples of $p + 1$
 
@@ -908,7 +908,7 @@ $\sum_{i=0}^{n} R_{p,(p+1)i} = R_{p,(p+1)n+1} - p(n - p - 1)$, an identity of in
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 16.
 
-Stated but not proved: `MetaMathlibExt.sum_lucasLeonardoP_stride` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-lucas-leonardo-p-stride).
+Stated but not proved: `MetaMathlibExt.sum_lucasLeonardoP_stride` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-lucas-leonardo-p-stride).
 
 ## Recurrence for incomplete Lucas-Leonardo p-numbers
 
@@ -927,7 +927,7 @@ $\frac{0}{0} \binom{0}{0}$, so that case is excluded.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 17.
 
-Stated but not proved: `MetaMathlibExt.incompleteLucasLeonardoP_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p-succ).
+Stated but not proved: `MetaMathlibExt.incompleteLucasLeonardoP_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#incomplete-lucas-leonardo-p-succ).
 
 ## Binomial sum identity for incomplete Lucas-Leonardo p-numbers
 
@@ -946,7 +946,7 @@ is read as $k$, as in Proposition 7.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 18.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_incompleteLucasLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-choose-mul-incomplete-lucas-leonardo).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_incompleteLucasLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#sum-choose-mul-incomplete-lucas-leonardo).
 
 ## Hyper Lucas–Leonardo numbers from incomplete ones
 
@@ -961,7 +961,7 @@ $$R^{(k)}_{p,n} = R_{p,n+(p+1)k} - R_{p,n+(p+1)k}(k - 1) - p \binom{n + k}{k}.$$
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 19.
 
-Stated but not proved: `MetaMathlibExt.hyperLucasLeonardoP_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-eq).
+Stated but not proved: `MetaMathlibExt.hyperLucasLeonardoP_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-eq).
 
 ## Hyper Lucas–Leonardo numbers from hyper Leonardo numbers
 
@@ -980,7 +980,7 @@ ends with $p^2 \binom{n + k - 1}{k - 1}$.
 
 - Amine Belkhir and Elif Tan, *Combinatorial Insights into Leonardo `p`-Numbers and Lucas-Leonardo `p`-Numbers*, INTEGERS 25 (2025), Article A57, Proposition 20.
 
-Stated but not proved: `MetaMathlibExt.hyperLucasLeonardoP_eq_hyperLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-eq-hyper-leonardo).
+Stated but not proved: `MetaMathlibExt.hyperLucasLeonardoP_eq_hyperLeonardoP` is written with `theorem_wanted` in [WantedExt/NumberTheory/LeonardoPTilingsWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LeonardoPTilingsWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#hyper-lucas-leonardo-p-eq-hyper-leonardo).
 
 ## Supergeneralized Leonardo p-numbers
 
@@ -994,7 +994,7 @@ for $n > p$. Only the initial values $x_0, \dots, x_p$ are used.
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Definition 1.
 
-Formalized by `MetaMathlibExt.superLeonardoP`, a definition declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p).
+Formalized by `MetaMathlibExt.superLeonardoP`, a definition declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p).
 
 ## Initial values of the supergeneralized Leonardo p-numbers
 
@@ -1006,7 +1006,7 @@ $\mathcal{L}_{p,k,x}(n)$ equals $x_n$.
 
 - Schütz and Kelly, Journal of Integer Sequences 28 (2025), Article 25.8.2, Definition 1.
 
-Formalized by `MetaMathlibExt.superLeonardoP_of_le`, a theorem declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-of-le).
+Formalized by `MetaMathlibExt.superLeonardoP_of_le`, a theorem declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-of-le).
 
 ## Recurrence for the supergeneralized Leonardo p-numbers
 
@@ -1019,7 +1019,7 @@ $\mathcal{L}_{p,k,x}(n) = \mathcal{L}_{p,k,x}(n-1) + \mathcal{L}_{p,k,x}(n-p-1) 
 
 - Schütz and Kelly, Journal of Integer Sequences 28 (2025), Article 25.8.2, Definition 1.
 
-Formalized by `MetaMathlibExt.superLeonardoP_of_lt`, a theorem declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-of-lt).
+Formalized by `MetaMathlibExt.superLeonardoP_of_lt`, a theorem declared in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-of-lt).
 
 ## Reduction of supergeneralized Leonardo p-numbers to the homogeneous case
 
@@ -1037,7 +1037,7 @@ is $0$ for $n \le p$; for $n > p$ the $\max$ is redundant since $\mathcal{L}_{p,
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_add_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-add-mul).
+Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_add_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-add-mul).
 
 ## Homogeneous supergeneralized Leonardo p-numbers via Fibonacci p-numbers
 
@@ -1052,7 +1052,7 @@ $$\mathcal{L}_{p,0,x}(n) = F_p(n-p+1)\,x_p + \sum_{i=0}^{\min(p-1,\,n-p-1)} F_p(
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.superLeonardoP_zero_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-zero-eq).
+Stated but not proved: `MetaMathlibExt.superLeonardoP_zero_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-zero-eq).
 
 ## Binomial sum for supergeneralized Leonardo p-numbers with linear initial values
 
@@ -1067,7 +1067,7 @@ $$\mathcal{L}_{p,1,y}(n) = \sum_{i=0}^{\lfloor (n+1)/(p+1) \rfloor} \binom{n+1-p
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.superLeonardoP_one_succ_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-one-succ-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.superLeonardoP_one_succ_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-one-succ-eq-sum-choose).
 
 ## Schütz–Kelly binomial sum identity
 
@@ -1084,7 +1084,7 @@ includes the value $0$ beyond the paper's positive range.
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.one_add_sum_choose_add_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#one-add-sum-choose-add-sum-choose).
+Stated but not proved: `MetaMathlibExt.one_add_sum_choose_add_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#one-add-sum-choose-add-sum-choose).
 
 ## Supergeneralized Leonardo p-numbers via Fibonacci p-numbers
 
@@ -1105,7 +1105,7 @@ to be an immediate combination with Theorems 4 and 5.
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_fibonacciP_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-fibonacci-p-sum).
+Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_fibonacciP_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-fibonacci-p-sum).
 
 ## Binomial sum formula for Fibonacci p-numbers
 
@@ -1124,7 +1124,7 @@ $\binom{0}{0} = 1$, so $p \ge 1$ is assumed.
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 8 (Kuhapatanakul).
 
-Stated but not proved: `MetaMathlibExt.fibonacciP_succ_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#fibonacci-p-succ-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.fibonacciP_succ_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#fibonacci-p-succ-eq-sum-choose).
 
 ## Explicit formula for the supergeneralized Leonardo p-numbers
 
@@ -1146,7 +1146,7 @@ $p = 1$, $k = 2$, $n = 2$, $x = (1, 1)$ gives $4$ versus $3$).
 
 - Clemens Schütz and Kristian Kelly, *An Explicit Formula for Supergeneralized Leonardo `p`-numbers*, Journal of Integer Sequences 28 (2025), Article 25.8.2, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.superLeonardoP_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/SuperLeonardoPWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SuperLeonardoPWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html#super-leonardo-p-eq-sum-choose).
 
 ## Depends on
 
@@ -1155,4 +1155,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Leonardo p-numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/leonardo-p-numbers)

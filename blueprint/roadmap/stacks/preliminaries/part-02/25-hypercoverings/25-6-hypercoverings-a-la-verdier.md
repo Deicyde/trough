@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.6 Hypercoverings a la Verdier
 
-Section 25.6 of the Stacks Project, [Tag 09VT](https://stacks.math.columbia.edu/tag/09VT). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.6 of the Stacks Project, [Tag 09VT](https://stacks.math.columbia.edu/tag/09VT). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09VU, a definition
 
 [Tag 09VU](https://stacks.math.columbia.edu/tag/09VU) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.HypercoveringOf`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean#L201). The attribute's comment: “hypercovering of a presheaf”. References: SGA 4 V (7.3.1.2); SGA 4 V (7.3.1.3), “a)”.
+**`Stacks.CategoryTheory.Hypercovering.HypercoveringOf`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean#L201). The attribute's comment: “hypercovering of a presheaf”. References: SGA 4 V (7.3.1.2); SGA 4 V (7.3.1.3), “a)”.
 
 > A hypercovering of a presheaf of sets.
 
@@ -22,7 +22,7 @@ Section 25.6 of the Stacks Project, [Tag 09VT](https://stacks.math.columbia.edu/
 structure HypercoveringOf (J : Pretopology C) (G : Cᵒᵖ ⥤ Type q)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.HypercoveringOfTerminal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean#L226). The attribute's comment: “hypercovering of the final presheaf”. References: SGA 4 V (7.3.1.2); SGA 4 V (7.3.1.3), “a)”.
+**`Stacks.CategoryTheory.Hypercovering.HypercoveringOfTerminal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Presheaf.lean#L226). The attribute's comment: “hypercovering of the final presheaf”. References: SGA 4 V (7.3.1.2); SGA 4 V (7.3.1.3), “a)”.
 
 > A hypercovering is a hypercovering of the final presheaf.
 
@@ -34,7 +34,7 @@ abbrev HypercoveringOfTerminal (J : Pretopology C)
 
 [Tag 09VV](https://stacks.math.columbia.edu/tag/09VV) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.nonempty_cechCohomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cohomology.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cohomology.lean#L527).
+**`Stacks.CategoryTheory.Hypercovering.nonempty_cechCohomologyZeroIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Cohomology.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Cohomology.lean#L527).
 
 > **Stacks Project, Tag 09VV.** Degree-zero Čech cohomology of a hypercovering of a presheaf is
 > the degree-zero cohomology of that presheaf with coefficients in the given sheaf of abelian
@@ -54,7 +54,7 @@ theorem nonempty_cechCohomologyZeroIso (J : Pretopology C)
 
 [Tag 09VW](https://stacks.math.columbia.edu/tag/09VW) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.cechCohomology_isZero_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean#L362). The attribute's comment: “positive degrees”.
+**`Stacks.CategoryTheory.Hypercovering.cechCohomology_isZero_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean#L362). The attribute's comment: “positive degrees”.
 
 > **Stacks Project, Tag 09VW (positive degrees).** Positive-degree Čech cohomology of an
 > injective abelian sheaf on a hypercovering of a presheaf vanishes.
@@ -67,7 +67,7 @@ theorem cechCohomology_isZero_of_injective (J : Pretopology C)
     IsZero (cechCohomology.{q, w, v, u} J G K I p)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.cechCohomologyIsoOfInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean#L423).
+**`Stacks.CategoryTheory.Hypercovering.cechCohomologyIsoOfInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Injectives.lean#L423).
 
 > **Stacks Project, Tag 09VW.** For a hypercovering `K` of a presheaf `G` and an injective
 > abelian sheaf `I`, the Čech cohomology `Ȟᵖ(K, I)` is the degree-zero cohomology `H⁰(G, I)` of `G`
@@ -89,7 +89,7 @@ noncomputable def cechCohomologyIsoOfInjective (J : Pretopology C)
 
 [Tag 09VX](https://stacks.math.columbia.edu/tag/09VX) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercoverPresheafToDerivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean#L162). The attribute's comment: “the comparison map s(F(K)) ⟶ RΓ(G, F) in D⁺(Ab), functorial in F”.
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercoverPresheafToDerivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean#L162). The attribute's comment: “the comparison map s(F(K)) ⟶ RΓ(G, F) in D⁺(Ab), functorial in F”.
 
 > For a hypercovering `K` of a presheaf `G` on a site with equalizers and fibre products there
 > are a canonical map `ψ` from the sections over `G` to derived sections at the single complex, and
@@ -122,7 +122,7 @@ theorem exists_hypercoverPresheafToDerivedSections :
           Injective F → IsIso (α.app F)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.exists_presheafCechCohomologyToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean#L220). The attribute's comment: “the induced natural transformations Ȟ^i(K, -) ⟶ H^i(G, -)”.
+**`Stacks.CategoryTheory.Hypercovering.exists_presheafCechCohomologyToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafCohomologyComparison.lean#L220). The attribute's comment: “the induced natural transformations Ȟ^i(K, -) ⟶ H^i(G, -)”.
 
 > The comparison map of `exists_hypercoverPresheafToDerivedSections` induces, in every degree
 > `i`, a natural transformation
@@ -149,7 +149,7 @@ theorem exists_presheafCechCohomologyToCohomology :
         Injective F → IsIso ((β i).app F)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.presheafHypercoveringSpectralSequenceFunctoriality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean#L280). The attribute's comment: “spectral sequence functorial in the hypercovering”.
+**`Stacks.CategoryTheory.Hypercovering.presheafHypercoveringSpectralSequenceFunctoriality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean#L280). The attribute's comment: “spectral sequence functorial in the hypercovering”.
 
 > **The spectral sequence of [Stacks, Tag 09VX] is functorial in the hypercovering**: the data
 > `PresheafHypercoveringSpectralSequenceFunctoriality`, supplied by
@@ -160,7 +160,7 @@ def presheafHypercoveringSpectralSequenceFunctoriality :
     PresheafHypercoveringSpectralSequenceFunctoriality.{q, w, v, u} J G
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.presheafHypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean#L332). The attribute's comment: “spectral sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3)”.
+**`Stacks.CategoryTheory.Hypercovering.presheafHypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/PresheafSpectralSequence/Functoriality.lean#L332). The attribute's comment: “spectral sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3)”.
 
 > **The functorial spectral sequence of a hypercovering of a presheaf**, with second page
 > `Ȟ^p(K, H̲^{q'}(F))` and abutment `H^{p+q'}(G, F)`.
@@ -181,7 +181,7 @@ def presheafHypercoveringSpectralSequence :
 
 [Tag 09VY](https://stacks.math.columbia.edu/tag/09VY) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoveringGlobalSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/GlobalCohomologySpectralSequence.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/GlobalCohomologySpectralSequence.lean#L245). References: SGA 4 V (7.4.0), “(7.4.0.3)”; SGA 4 V (3.6), “more general”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoveringGlobalSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/GlobalCohomologySpectralSequence.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/GlobalCohomologySpectralSequence.lean#L245). References: SGA 4 V (7.4.0), “(7.4.0.3)”; SGA 4 V (3.6), “more general”.
 
 > **Stacks Project, Tag 09VY.**  For a hypercovering `K` of the final presheaf on a site with
 > equalizers and fibre products there is a spectral sequence, functorial in the sheaf of abelian
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.6, Tag 09VT](https://stacks.math.columbia.edu/tag/09VT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

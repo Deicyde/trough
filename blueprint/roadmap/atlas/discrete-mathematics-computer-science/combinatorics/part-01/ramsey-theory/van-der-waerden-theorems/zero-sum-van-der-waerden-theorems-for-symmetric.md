@@ -7,7 +7,7 @@ statement: formalized
 
 # Zero-sum van der Waerden theorems for symmetric functions
 
-20 results, 6 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html).
+20 results, 6 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html).
 
 ## $m$-vanishing family
 
@@ -23,7 +23,7 @@ of which $f^{(l)}$ vanishes.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (definition of `m`-vanishing).
 
-Formalized by `MetaMathlibExt.IsMVanishingFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family).
+Formalized by `MetaMathlibExt.IsMVanishingFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family).
 
 ## Vanishing family
 
@@ -35,7 +35,7 @@ every positive integer $m$.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (definition of vanishing).
 
-Formalized by `MetaMathlibExt.IsVanishingFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family).
+Formalized by `MetaMathlibExt.IsVanishingFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family).
 
 ## The sum-plus-product family $F_c$
 
@@ -48,7 +48,7 @@ empty product is $1$.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (the family `F_c`).
 
-Formalized by `MetaMathlibExt.sumAddMulProdFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-family).
+Formalized by `MetaMathlibExt.sumAddMulProdFamily`, a definition declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-family).
 
 ## Monotonicity of $m$-vanishing
 
@@ -60,7 +60,7 @@ then $F$ is $m'$-vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (definition of `m`-vanishing).
 
-Formalized by `MetaMathlibExt.IsMVanishingFamily.mono`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#mono).
+Formalized by `MetaMathlibExt.IsMVanishingFamily.mono`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#mono).
 
 ## Every family is $0$-vanishing
 
@@ -72,7 +72,7 @@ element, $F$ is $0$-vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (definition of `m`-vanishing).
 
-Formalized by `MetaMathlibExt.isMVanishingFamily_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family-zero).
+Formalized by `MetaMathlibExt.isMVanishingFamily_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family-zero).
 
 ## The sum-plus-product family on blocks of length two
 
@@ -84,7 +84,7 @@ $F_c(b_0, b_1) = b_0 + b_1 + c\, b_0 b_1$.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Section 2 (the family `F_c`).
 
-Formalized by `MetaMathlibExt.sumAddMulProdFamily_two`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-family-two).
+Formalized by `MetaMathlibExt.sumAddMulProdFamily_two`, a theorem declared in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-family-two).
 
 ## Zero-sum van der Waerden theorem
 
@@ -97,7 +97,7 @@ common length $l > 1$, each with sum zero.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isVanishingFamily_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum).
+Stated but not proved: `MetaMathlibExt.isVanishingFamily_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum).
 
 ## $F_c$ with $c \notin \{0, \pm 1\}$ is not $m$-vanishing for $m > 0$
 
@@ -110,7 +110,7 @@ $F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is not $m$-vani
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_of_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_of_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro).
 
 ## Classification of vanishing for the sum-plus-product family $F_1$
 
@@ -124,7 +124,7 @@ vanishing. If $n = 6$, then $F_1$ is $1$-vanishing but not $m$-vanishing for any
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sumAddMulProd_one_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-one-classification).
+Stated but not proved: `MetaMathlibExt.sumAddMulProd_one_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#sum-add-mul-prod-one-classification).
 
 ## The sum-plus-product family is vanishing over $\mathbb{Z}/3\mathbb{Z}$
 
@@ -136,7 +136,7 @@ $\sum_i b_i + \prod_i b_i$. Then $F_1$ is vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_one_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-one).
+Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_one_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-one).
 
 ## The sum-plus-product family is vanishing over $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/8\mathbb{Z}$
 
@@ -149,7 +149,7 @@ $F_1$ is vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_one_four_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-one-2).
+Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_one_four_eight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-one-2).
 
 ## The sum-plus-product family is $1$-vanishing over $\mathbb{Z}/6\mathbb{Z}$
 
@@ -163,7 +163,7 @@ $F_1$ vanishes.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.isMVanishingFamily_one_sumAddMulProd_one_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family-one-sum-add-mul-pro).
+Stated but not proved: `MetaMathlibExt.isMVanishingFamily_one_sumAddMulProd_one_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-mvanishing-family-one-sum-add-mul-pro).
 
 ## $F_{\pm 1}$ over $\mathbb{Z}/6$ is not $m$-vanishing for $m > 1$
 
@@ -175,7 +175,7 @@ $F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is $m$-vanishin
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-2).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-2).
 
 ## $F_1$ modulo a prime $n \equiv 1 \pmod 4$ is not $m$-vanishing for $m > 0$
 
@@ -188,7 +188,7 @@ $m$-vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 5, quoting Theorem 3.6 of Bialostocki and Dierker.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_prime_one_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-3).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_prime_one_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-3).
 
 ## Nonzero solutions of a two-equation system modulo primes greater than 3 congruent to 3 mod 4
 
@@ -204,7 +204,7 @@ whose first case computes $xy^2 = x^3/4 = 1$.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.exists_add_mul_eq_zero_mul_pow_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#exists-add-mul-eq-zero-mul-pow-eq-one).
+Stated but not proved: `MetaMathlibExt.exists_add_mul_eq_zero_mul_pow_eq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#exists-add-mul-eq-zero-mul-pow-eq-one).
 
 ## $F_1$ modulo a prime $n > 3$ with $n \equiv 3 \pmod 4$ is not $m$-vanishing for $m > 0$
 
@@ -216,7 +216,7 @@ not $m$-vanishing.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-4).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-4).
 
 ## $F_1$ modulo $8u$ with $u > 1$ is not $m$-vanishing for $m > 0$
 
@@ -228,7 +228,7 @@ $F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishin
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_eight_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-5).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_eight_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-5).
 
 ## $F_1$ modulo $9u$ with $u > 0$ is not $m$-vanishing for $m > 0$
 
@@ -240,7 +240,7 @@ $F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishin
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_nine_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-6).
+Stated but not proved: `MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_nine_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#not-is-mvanishing-family-sum-add-mul-pro-6).
 
 ## The sum-minus-product family is vanishing modulo prime powers
 
@@ -252,7 +252,7 @@ block $(b_1, \dots, b_l)$ to $\sum_i b_i - \prod_i b_i$. Then $F_{-1}$ is vanish
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_neg_one_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-neg).
+Stated but not proved: `MetaMathlibExt.isVanishingFamily_sumAddMulProd_neg_one_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-sum-add-mul-prod-neg).
 
 ## Vanishing of families of sums of transformed entries
 
@@ -268,7 +268,7 @@ The source assumes $d > 0$; for $d = 0$ the statement is trivial.
 
 - Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.isVanishingFamily_transformation_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-transformation-sums).
+Stated but not proved: `MetaMathlibExt.isVanishingFamily_transformation_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/VanDerWaerdenSymmetricFunctionsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html#is-vanishing-family-transformation-sums).
 
 ## Depends on
 
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zero-sum van der Waerden theorems for symmetric functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/zero-sum-van-der-waerden-theorems-for-symmetric)

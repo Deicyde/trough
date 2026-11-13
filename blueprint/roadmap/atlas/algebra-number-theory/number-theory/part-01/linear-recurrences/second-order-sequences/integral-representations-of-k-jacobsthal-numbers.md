@@ -7,7 +7,7 @@ statement: formalized
 
 # Integral representations of k-Jacobsthal numbers
 
-23 results, 7 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html).
+23 results, 7 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html).
 
 ## Lucas parameters of the k-Jacobsthal numbers
 
@@ -21,7 +21,7 @@ $x_{n+2} = k x_{n+1} + 2 x_n$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Section 1, recurrences (1) and (2).
 
-Formalized by `MetaMathlibExt.kJacobsthalParams`, a definition declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-params).
+Formalized by `MetaMathlibExt.kJacobsthalParams`, a definition declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-params).
 
 ## The second k-Jacobsthal number
 
@@ -32,7 +32,7 @@ $J_{k,2} = U_2(k, -2)$ equals $k$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, proof of Theorem 2.
 
-Formalized by `MetaMathlibExt.lucasU_kJacobsthalParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-params-two).
+Formalized by `MetaMathlibExt.lucasU_kJacobsthalParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-params-two).
 
 ## The $k$-Jacobsthal-Lucas number $j_{k,2}$
 
@@ -44,7 +44,7 @@ $(P, Q) = (k, -2)$, satisfy $j_{k,2} = k^2 + 4$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, proof of Theorem 2.
 
-Formalized by `MetaMathlibExt.lucasV_kJacobsthalParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-params-two).
+Formalized by `MetaMathlibExt.lucasV_kJacobsthalParams_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-params-two).
 
 ## Companion $k$-Jacobsthal numbers
 
@@ -57,7 +57,7 @@ $\mathcal{J}_{k,n+2}(a, b) = k\,\mathcal{J}_{k,n+1}(a, b) + 2\,\mathcal{J}_{k,n}
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Section 4.
 
-Formalized by `MetaMathlibExt.companionKJacobsthal`, a definition declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal).
+Formalized by `MetaMathlibExt.companionKJacobsthal`, a definition declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal).
 
 ## Recurrence of the companion $k$-Jacobsthal numbers
 
@@ -69,7 +69,7 @@ $\mathcal{J}_{k,n+2}(a, b) = k\,\mathcal{J}_{k,n+1}(a, b) + 2\,\mathcal{J}_{k,n}
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Section 4.
 
-Formalized by `MetaMathlibExt.companionKJacobsthal_add_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-add-two).
+Formalized by `MetaMathlibExt.companionKJacobsthal_add_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-add-two).
 
 ## The second companion $k$-Jacobsthal number
 
@@ -80,7 +80,7 @@ $a, b$, the companion $k$-Jacobsthal numbers satisfy $\mathcal{J}_{k,2}(a, b) = 
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Section 4, list of the first companion numbers.
 
-Formalized by `MetaMathlibExt.companionKJacobsthal_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-two).
+Formalized by `MetaMathlibExt.companionKJacobsthal_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-two).
 
 ## The $k$-Jacobsthal numbers as companion numbers
 
@@ -94,7 +94,7 @@ $1$ are the $k$-Jacobsthal numbers.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Section 4, special cases of the companion numbers.
 
-Formalized by `MetaMathlibExt.companionKJacobsthal_zero_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-zero-one).
+Formalized by `MetaMathlibExt.companionKJacobsthal_zero_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-zero-one).
 
 ## Binet-type identities for k-Jacobsthal numbers
 
@@ -109,7 +109,7 @@ $j_{k,n}^2 - (k^2 + 8) J_{k,n}^2 = (-2)^{n+2}$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.kJacobsthal_binet_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-binet-identities).
+Stated but not proved: `MetaMathlibExt.kJacobsthal_binet_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-binet-identities).
 
 ## Addition formulas for k-Jacobsthal numbers
 
@@ -122,7 +122,7 @@ $2j_{k,m+n} = j_{k,m} j_{k,n} + (k^2 + 8) J_{k,m} J_{k,n}$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.kJacobsthal_add_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-add-formulas).
+Stated but not proved: `MetaMathlibExt.kJacobsthal_add_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#k-jacobsthal-add-formulas).
 
 ## Integral representation of k-Jacobsthal numbers at multiples
 
@@ -139,7 +139,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_kJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-mul-eq-integral).
+Stated but not proved: `MetaMathlibExt.lucasU_kJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-mul-eq-integral).
 
 ## Integral representation of even- and odd-indexed k-Jacobsthal numbers
 
@@ -160,7 +160,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.lucasU_kJacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-even-odd-eq-integra).
+Stated but not proved: `MetaMathlibExt.lucasU_kJacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-u-k-jacobsthal-even-odd-eq-integra).
 
 ## Integral representation of k-Jacobsthal–Lucas numbers at multiples
 
@@ -177,7 +177,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.lucasV_kJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-mul-eq-integral).
+Stated but not proved: `MetaMathlibExt.lucasV_kJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-mul-eq-integral).
 
 ## Integral representation of even- and odd-indexed k-Jacobsthal–Lucas numbers
 
@@ -199,7 +199,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.lucasV_kJacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-even-odd-eq-integra).
+Stated but not proved: `MetaMathlibExt.lucasV_kJacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#lucas-v-k-jacobsthal-even-odd-eq-integra).
 
 ## Integral representation of Jacobsthal numbers at multiples
 
@@ -215,7 +215,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.jacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-mul-eq-integral).
+Stated but not proved: `MetaMathlibExt.jacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-mul-eq-integral).
 
 ## Integral formulas for even- and odd-indexed Jacobsthal numbers
 
@@ -234,7 +234,7 @@ where $(5 + 3x)^{n-1}$ is an integer power (for $n = 0$ it is $(5 + 3x)^{-1}$).
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.jacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-even-odd-eq-integral).
+Stated but not proved: `MetaMathlibExt.jacobsthal_even_odd_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-even-odd-eq-integral).
 
 ## Integral representation of the Jacobsthal-Lucas numbers at multiples of an index
 
@@ -254,7 +254,7 @@ where $(j_\ell + 3J_\ell x)^{n-1}$ is an integer power (for $n = 0$ it is the re
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.jacobsthalLucas_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-lucas-mul-eq-integral).
+Stated but not proved: `MetaMathlibExt.jacobsthalLucas_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-lucas-mul-eq-integral).
 
 ## Integral representation of Jacobsthal numbers with an offset
 
@@ -271,7 +271,7 @@ Here $n - 1$ is an integer exponent, so for $n = 0$ the power is a reciprocal.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.jacobsthal_mul_add_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-mul-add-eq-integral).
+Stated but not proved: `MetaMathlibExt.jacobsthal_mul_add_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-mul-add-eq-integral).
 
 ## Integral representation of the Jacobsthal-Lucas numbers along arithmetic progressions
 
@@ -290,7 +290,7 @@ where $(j_\ell + 3J_\ell x)^{n-1}$ is an integer power (for $n = 0$ it is the re
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.jacobsthalLucas_mul_add_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-lucas-mul-add-eq-integral).
+Stated but not proved: `MetaMathlibExt.jacobsthalLucas_mul_add_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#jacobsthal-lucas-mul-add-eq-integral).
 
 ## Ratio of consecutive $k$-Jacobsthal numbers
 
@@ -303,7 +303,7 @@ the quotients taken in $\mathbb{R}$.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.tendsto_lucasU_kJacobsthal_ratio` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#tendsto-lucas-u-k-jacobsthal-ratio).
+Stated but not proved: `MetaMathlibExt.tendsto_lucasU_kJacobsthal_ratio` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#tendsto-lucas-u-k-jacobsthal-ratio).
 
 ## Companion $k$-Jacobsthal numbers via Lucas sequences
 
@@ -319,7 +319,7 @@ The source states this as $\mathcal{J}_{k,n} = \tfrac{a}{2} j_{k,n} + \tfrac{2b 
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.two_mul_companionKJacobsthal` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#two-mul-companion-kjacobsthal).
+Stated but not proved: `MetaMathlibExt.two_mul_companionKJacobsthal` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#two-mul-companion-kjacobsthal).
 
 ## Generating function of the companion $k$-Jacobsthal numbers
 
@@ -336,7 +336,7 @@ with the denominator cleared.
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.companionKJacobsthal_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-generating-functio).
+Stated but not proved: `MetaMathlibExt.companionKJacobsthal_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-generating-functio).
 
 ## Catalan's identity for the companion $k$-Jacobsthal numbers
 
@@ -358,7 +358,7 @@ $(2b - ak + a\Delta_k)(ak - 2b + a\Delta_k)$, the form in which the source state
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.companionKJacobsthal_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-catalan).
+Stated but not proved: `MetaMathlibExt.companionKJacobsthal_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-catalan).
 
 ## Integral representation of the companion $k$-Jacobsthal numbers
 
@@ -380,7 +380,7 @@ where the power $n - 1$ is an integer power (for $n = 0$ it is the reciprocal).
 
 - Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.companionKJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-mul-eq-integral).
+Stated but not proved: `MetaMathlibExt.companionKJacobsthal_mul_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KJacobsthalIntegralWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html#companion-kjacobsthal-mul-eq-integral).
 
 ## Depends on
 
@@ -389,4 +389,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Integral representations of k-Jacobsthal numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/integral-representations-of-k-jacobsthal-numbers)

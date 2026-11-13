@@ -7,7 +7,7 @@ statement: formalized
 
 # Platonic solids and regular polytopes
 
-17 results, 16 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html).
+17 results, 16 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html).
 
 ## Classification of the Platonic solids
 
@@ -53,14 +53,14 @@ give $1/p + 1/q > 1/2$, which leaves the five tuples; explicit coordinates reali
 
 - https://en.wikipedia.org/wiki/Platonic_solid.
 
-Formalized by `MetaMathlibExt.platonic_solids_classification`, a theorem declared in [MathlibExt/Geometry/Polyhedra/PlatonicSolidsClassification.lean, line 4331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Polyhedra/PlatonicSolidsClassification.lean#L4331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-solids-classification).
+Formalized by `MetaMathlibExt.platonic_solids_classification`, a theorem declared in [MathlibExt/Geometry/Polyhedra/PlatonicSolidsClassification.lean, line 4331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Polyhedra/PlatonicSolidsClassification.lean#L4331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-solids-classification).
 
 ## Ambient Euclidean space of the Platonic classification
 
 For a natural number $n$, the real
 Euclidean space $\mathbb{R}^n$: $n$-tuples of reals with the standard inner product and norm.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.E`, an abbreviation declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#e).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.E`, an abbreviation declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#e).
 
 ## Convex polytope
 
@@ -68,14 +68,14 @@ A convex polytope in $\mathbb{R}^n$ is given by its vertex set: a finite
 nonempty set $V \subseteq \mathbb{R}^n$ that equals the set of extreme points of its convex hull
 $\operatorname{conv}(V)$. The polytope itself is the convex set $\operatorname{conv}(V)$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope`, a structure declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#convex-polytope).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope`, a structure declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#convex-polytope).
 
 ## Underlying set of a convex polytope
 
 The underlying set of a convex polytope $P$ in
 $\mathbb{R}^n$ is the convex hull of its vertex set.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.toSet`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#to-set).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.toSet`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#to-set).
 
 ## Dimension of a convex polytope
 
@@ -83,14 +83,14 @@ The dimension of a convex polytope
 $P \subseteq \mathbb{R}^n$ is its affine dimension: the dimension of the real vector space
 spanned by the differences $x - y$ of points $x, y \in P$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.dim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#dim).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.dim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#dim).
 
 ## Full-dimensional convex polytope
 
 A convex polytope $P \subseteq \mathbb{R}^n$ is
 full-dimensional if its dimension equals $n$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsFullDim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-full-dim).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsFullDim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-full-dim).
 
 ## Face of a convex polytope
 
@@ -99,7 +99,7 @@ nonempty set of the form $\{x \in P : \ell(y) \le \ell(x) \text{ for all } y \in
 linear functional $\ell$ on $\mathbb{R}^n$, that is, the set of points where $\ell$ attains its
 maximum over $P$. Taking $\ell = 0$ shows that $P$ itself is a face.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsFace`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-face).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsFace`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-face).
 
 ## Affine dimension of a set
 
@@ -107,7 +107,7 @@ For a subset $F \subseteq \mathbb{R}^n$, its affine dimension is
 the dimension of the real vector space spanned by the differences $x - y$ with $x, y \in F$.
 The empty set and every single point get dimension $0$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.faceDim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#face-dim).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.faceDim`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#face-dim).
 
 ## Flag of a convex polytope
 
@@ -117,21 +117,21 @@ and $F_i \subsetneq F_j$ whenever $i < j$.
 
 The definition applies to every $P$; it is used for full-dimensional $P$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Flag`, a structure declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#flag).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Flag`, a structure declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#flag).
 
 ## Rigid motions
 
 The rigid motions of $\mathbb{R}^n$ are the affine isometric bijections
 $\mathbb{R}^n \to \mathbb{R}^n$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Isom`, an abbreviation declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#isom).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Isom`, an abbreviation declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#isom).
 
 ## Symmetry of a convex polytope
 
 An affine isometry $\varphi$ of $\mathbb{R}^n$ is a
 symmetry of a convex polytope $P \subseteq \mathbb{R}^n$ if $\varphi(P) = P$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.isSymmetry`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-symmetry).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.isSymmetry`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-symmetry).
 
 ## Regular convex polytope
 
@@ -140,7 +140,7 @@ A convex polytope $P \subseteq \mathbb{R}^n$ is regular
 $(G_0, \dots, G_{n-1})$ of $P$ there is an affine isometry $\varphi$ of $\mathbb{R}^n$ with
 $\varphi(P) = P$ and $\varphi(F_k) = G_k$ for every $k < n$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsRegular`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-regular).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsRegular`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#is-regular).
 
 ## Similar polytopes
 
@@ -148,7 +148,7 @@ Two convex polytopes $P$ and $Q$ in $\mathbb{R}^n$ are **similar** when
 there are a real number $a > 0$ and an affine isometry $\varphi$ of $\mathbb{R}^n$ such that the
 underlying set of $Q$ is $\{a\,\varphi(x) : x \in P\}$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Similar`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#similar).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.Similar`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#similar).
 
 ## Regular polytopes
 
@@ -156,7 +156,7 @@ For $d \in \mathbb{N}$, this is the set of regular (Platonic) convex
 polytopes in $\mathbb{R}^d$: the convex polytopes in $\mathbb{R}^d$ that are full-dimensional and
 whose symmetry group acts transitively on their flags.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.regularPolytopes`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#regular-polytopes).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.regularPolytopes`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#regular-polytopes).
 
 ## Similarity of regular polytopes
 
@@ -165,7 +165,7 @@ $\mathbb{R}^d$, $P$ is related to $Q$ when they are similar as convex polytopes,
 there are a real number $a > 0$ and an affine isometry $\varphi$ of $\mathbb{R}^d$ such that the
 underlying set of $Q$ is $\{a\,\varphi(x) : x \in P\}$.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.regularSimilar`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#regular-similar).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.regularSimilar`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#regular-similar).
 
 ## Number of Platonic polytopes
 
@@ -173,7 +173,7 @@ For $d \in \mathbb{N}$, $p_d \in \mathbb{N} \cup \{\infty\}$
 is the number of similarity classes of regular convex polytopes in $\mathbb{R}^d$, with
 $p_d = \infty$ when there are infinitely many classes.
 
-Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonicCount`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-count).
+Formalized by `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonicCount`, a definition declared in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-count).
 
 ## Classification of the Platonic polytopes
 
@@ -185,7 +185,7 @@ similarity. Then $p_2 = \infty$, $p_3 = 5$, $p_4 = 6$, and $p_d = 3$ for every $
 
 - Euclid, Elements, Book XIII (~300 BC, p_3 = 5); L. Schläfli, Theorie der vielfachen Kontinuität (1852, posthumous publication; p_4 = 6, p_d = 3 for d ≥ 5). Listed as §42 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `platonic_classification` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonic_classification` is written with `theorem_wanted` in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/PlatonicClassificationWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-classification).
+Stated but not proved: `MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonic_classification` is written with `theorem_wanted` in [WantedExt/Geometry/PlatonicClassificationWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/PlatonicClassificationWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html#platonic-classification).
 
 ## Depends on
 
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Platonic solids and regular polytopes](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/discrete-geometry/part-01/platonic-solids-and-regular-polytopes)

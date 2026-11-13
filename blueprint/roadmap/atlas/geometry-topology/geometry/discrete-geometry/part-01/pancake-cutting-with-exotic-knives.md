@@ -7,7 +7,7 @@ statement: formalized
 
 # Pancake cutting with exotic knives
 
-7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html).
+7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html).
 
 ## Number of regions cut out of the plane
 
@@ -19,7 +19,7 @@ complement $\mathbb{R}^2 \setminus K$, or $0$ if there are infinitely many compo
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Section 1.
 
-Formalized by `MetaMathlibExt.planeRegionCount`, a definition declared in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#plane-region-count).
+Formalized by `MetaMathlibExt.planeRegionCount`, a definition declared in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#plane-region-count).
 
 ## No cuts, one region
 
@@ -29,7 +29,7 @@ The empty set of cuts divides the plane into exactly one region.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Section 1 (`n = 0`).
 
-Formalized by `MetaMathlibExt.planeRegionCount_empty`, a theorem declared in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#plane-region-count-empty).
+Formalized by `MetaMathlibExt.planeRegionCount_empty`, a theorem declared in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#plane-region-count-empty).
 
 ## Maximum region count for three-armed V's
 
@@ -43,7 +43,7 @@ three-armed V's can divide the plane is $(9n^2 - 5n + 2)/2$.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Theorem 1 (`jis-2026-26.4.5-thm-1`), with the definition in the section *The k-armed V*.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_threeArmedV` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-three-arm).
+Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_threeArmedV` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-three-arm).
 
 ## Maximum region count for 3-chains
 
@@ -57,7 +57,7 @@ union of $n$ 3-chains can divide the plane is $(9n^2 - 5n + 2)/2$.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Theorem 1 (`jis-2026-26.4.5-thm-1`), with the definition in the section *The k-chain*.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_threeChain` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-three-cha).
+Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_threeChain` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-three-cha).
 
 ## Maximum region count for long-legged A's
 
@@ -71,7 +71,7 @@ the union of $n$ long-legged A's can divide the plane is $(9n^2 - 5n + 2)/2$.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Theorem 1 (`jis-2026-26.4.5-thm-1`), with the definition in the section *The long-legged A*.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_longLeggedA` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-long-legg).
+Stated but not proved: `MetaMathlibExt.isGreatest_planeRegionCount_longLeggedA` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#is-greatest-plane-region-count-long-legg).
 
 ## Four-point intersections of constrained T's
 
@@ -87,7 +87,7 @@ an angle greater than $\pi/2$.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Lemma 2 (`jis-2026-26.4.5-lem-2`), with the definition in the subsection *The constrained long-legged T̄*.
 
-Stated but not proved: `MetaMathlibExt.cos_sub_neg_of_tbar_inter_ncard_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#cos-sub-neg-of-tbar-inter-ncard-four).
+Stated but not proved: `MetaMathlibExt.cos_sub_neg_of_tbar_inter_ncard_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#cos-sub-neg-of-tbar-inter-ncard-four).
 
 ## Stem–circle intersections of two lollipops
 
@@ -106,7 +106,7 @@ the circle of the first is $3$ or $4$, then $\cos(\theta_1 - \theta_2) < 0$.
 
 - David O. H. Cutler, Jonas Karlsson and Neil J. A. Sloane, *Cutting a Pancake with an Exotic Knife*, Journal of Integer Sequences 29 (2026), Article 26.4.5, Lemma 3 (`jis-2026-26.4.5-lem-3`), with the definition in the subsection *The lollipop or qoppa*.
 
-Stated but not proved: `MetaMathlibExt.cos_sub_neg_of_lollipop_good_pair` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#cos-sub-neg-of-lollipop-good-pair).
+Stated but not proved: `MetaMathlibExt.cos_sub_neg_of_lollipop_good_pair` is written with `theorem_wanted` in [WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ExoticKnifePancakeWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html#cos-sub-neg-of-lollipop-good-pair).
 
 ## Depends on
 
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pancake cutting with exotic knives](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/discrete-geometry/part-01/pancake-cutting-with-exotic-knives)

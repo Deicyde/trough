@@ -8,7 +8,7 @@ proof: formalized
 
 # Clique, independent set and vertex cover
 
-151 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/index.html).
+151 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/index.html).
 
 ## Vertex pairs in encoding order
 
@@ -16,7 +16,7 @@ For a natural number $n$, the list of all pairs $(i, j)$ of
 natural numbers with $i < j < n$, ordered by $i$ ascending and, for each $i$, by $j$ descending
 from $n - 1$ to $i + 1$.
 
-Formalized by `Cslib.Complexity.Karp.pairs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#pairs).
+Formalized by `Cslib.Complexity.Karp.pairs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#pairs).
 
 ## Adjacency bit of a vertex pair
 
@@ -27,7 +27,7 @@ positions as both lists have. The adjacency bit of $\{i, j\}$ is the bit matched
 $(\min(i, j), \max(i, j))$, and false when that pair has no matched bit (for instance when
 $i = j$, when $\max(i, j) \ge n$, or when $b$ is too short).
 
-Formalized by `Cslib.Complexity.Karp.adjBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#adj-bits).
+Formalized by `Cslib.Complexity.Karp.adjBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#adj-bits).
 
 ## The graph encoded by pair bits
 
@@ -38,7 +38,7 @@ the list makes two vertices $i < j$ adjacent when the bit of $(i, j)$ is true; a
 without a bit because the list is too short is not an edge, and bits beyond the last pair are
 ignored.
 
-Formalized by `Cslib.Complexity.Karp.toGraph`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#to-graph).
+Formalized by `Cslib.Complexity.Karp.toGraph`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#to-graph).
 
 ## Encoding of a graph instance
 
@@ -47,7 +47,7 @@ encoding is $1^k\,0\,1^n\,0\,b$, writing $1$ for true and $0$ for false: $k$ one
 $n$ ones, a zero, and then $b$. Here $k$ is the target size and $b$ lists the pair bits of a
 graph on $n$ vertices.
 
-Formalized by `Cslib.Complexity.Karp.encodeKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#encode-kg).
+Formalized by `Cslib.Complexity.Karp.encodeKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#encode-kg).
 
 ## Decoding a graph instance
 
@@ -55,7 +55,7 @@ Writing $1$ for true and $0$ for false, a bit string of the
 form $1^k\,0\,1^n\,0\,b$ with natural numbers $k$, $n$ and a list of bits $b$ decodes to the
 triple $(k, n, b)$. A bit string with fewer than two zeros does not decode.
 
-Formalized by `Cslib.Complexity.Karp.decodeKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#decode-kg).
+Formalized by `Cslib.Complexity.Karp.decodeKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#decode-kg).
 
 ## Fixed no-instance
 
@@ -65,7 +65,7 @@ which encodes $k = 1$ together with the graph with no vertices ($n = 0$ and no p
 A graph with no vertices has no clique, independent set or vertex cover of exactly one vertex,
 so this string lies in none of CLIQUE, INDEPENDENT-SET and VERTEX-COVER.
 
-Formalized by `Cslib.Complexity.Karp.noKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#no-kg).
+Formalized by `Cslib.Complexity.Karp.noKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#no-kg).
 
 ## Language of graph instances with a property
 
@@ -77,7 +77,7 @@ $i < j < n$, such that $P$ holds of $n$, $k$ and the graph on $\{0, \dots, n-1\}
 In that graph, distinct $i$ and $j$ are adjacent when the bit of the pair $\{i, j\}$ is true,
 the pairs being listed with $i$ ascending and, for each $i$, $j$ descending.
 
-Formalized by `Cslib.Complexity.Karp.kgDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#kg-dec).
+Formalized by `Cslib.Complexity.Karp.kgDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#kg-dec).
 
 ## CLIQUE
 
@@ -88,7 +88,7 @@ $\{0, \dots, n-1\}$ given by $b$ has a clique of exactly $k$ vertices. In that g
 $i$ and $j$ are adjacent when the bit of the pair $\{i, j\}$ is true, the pairs being listed
 with $i$ ascending and, for each $i$, $j$ descending.
 
-Formalized by `Cslib.Complexity.Karp.cliqueDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#clique-dec).
+Formalized by `Cslib.Complexity.Karp.cliqueDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#clique-dec).
 
 ## INDEPENDENT-SET
 
@@ -99,7 +99,7 @@ $\{0, \dots, n-1\}$ given by $b$ has an independent set of exactly $k$ vertices.
 distinct $i$ and $j$ are adjacent when the bit of the pair $\{i, j\}$ is true, the pairs being
 listed with $i$ ascending and, for each $i$, $j$ descending.
 
-Formalized by `Cslib.Complexity.Karp.indSetDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#ind-set-dec).
+Formalized by `Cslib.Complexity.Karp.indSetDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#ind-set-dec).
 
 ## The VERTEX-COVER problem
 
@@ -113,7 +113,7 @@ pair bits is rejected.
 This is Sipser's $k$-node vertex cover; for $k \le n$ it is the same as a cover of at most $k$
 vertices.
 
-Formalized by `Cslib.Complexity.Karp.vertexCoverDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#vertex-cover-dec).
+Formalized by `Cslib.Complexity.Karp.vertexCoverDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#vertex-cover-dec).
 
 ## Literal occurrences of a CNF formula
 
@@ -122,7 +122,7 @@ $C_0, \dots, C_{m-1}$, the list of triples $(i, x, b)$, one for each literal $(x
 clause $C_i$, where $x$ is the variable index and $b$ the polarity. The triples are listed clause
 by clause in order of $i$, and within a clause in the order of its literals.
 
-Formalized by `Cslib.Complexity.Karp.occs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#occs).
+Formalized by `Cslib.Complexity.Karp.occs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#occs).
 
 ## Adjacency of literal occurrences in Karp's clique graph
 
@@ -131,7 +131,7 @@ $(c, x, b)$ of a clause index $c$, a variable index $x$ and a polarity $b$. Two 
 $(c, x, b)$ and $(c', x', b')$ are adjacent when $c \ne c'$ and they are not complementary, that
 is, it is not the case that $x = x'$ and $b \ne b'$.
 
-Formalized by `Cslib.Complexity.Karp.occAdj`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#occ-adj).
+Formalized by `Cslib.Complexity.Karp.occAdj`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#occ-adj).
 
 ## Adjacency bits of Karp's clique graph
 
@@ -142,7 +142,7 @@ pairs taken in encoding order ($i$ ascending and, for each $i$, $j$ descending).
 $(i, j)$ is true exactly when $o_i$ and $o_j$ lie in different clauses and are not
 complementary, that is, are not occurrences of the same variable with opposite polarities.
 
-Formalized by `Cslib.Complexity.Karp.cliqueBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#clique-bits).
+Formalized by `Cslib.Complexity.Karp.cliqueBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#clique-bits).
 
 ## Karp's CLIQUE instance of a CNF formula
 
@@ -154,7 +154,7 @@ The graph $G$ has the literal occurrences of $\varphi$, in order, as its vertice
 $0, \dots, N - 1$, and two occurrences are adjacent when they lie in different clauses and are
 not complementary (the same variable with opposite polarities).
 
-Formalized by `Cslib.Complexity.Karp.toClique`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#to-clique).
+Formalized by `Cslib.Complexity.Karp.toClique`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#to-clique).
 
 ## Karp's SAT-to-CLIQUE map on bit strings
 
@@ -163,7 +163,7 @@ a CNF formula $\varphi$ (rejecting missing or trailing bits) and returns Karp's 
 $\varphi$; an input that does not decode is sent to the fixed no-instance $k = 1$ on the graph
 with no vertices.
 
-Formalized by `Cslib.Complexity.Karp.reduceClique`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#reduce-clique).
+Formalized by `Cslib.Complexity.Karp.reduceClique`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#reduce-clique).
 
 ## Complementing map from CLIQUE to INDEPENDENT-SET instances
 
@@ -172,7 +172,7 @@ for false, the map sends a bit string $1^k\,0\,1^n\,0\,b$ to $1^k\,0\,1^n\,0\,\b
 $\bar b$ is $b$ with every bit complemented. A bit string with fewer than two zeros goes to the
 fixed no-instance $1\,0\,0$.
 
-Formalized by `Cslib.Complexity.Karp.flipKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#flip-kg).
+Formalized by `Cslib.Complexity.Karp.flipKG`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#flip-kg).
 
 ## Map from INDEPENDENT-SET to VERTEX-COVER instances
 
@@ -181,7 +181,7 @@ false, the map sends a bit string $1^k\,0\,1^n\,0\,b$ with $k \le n$ to $1^{n-k}
 Every other bit string, namely one of this form with $k > n$ or one with fewer than two zeros,
 goes to the fixed no-instance $1\,0\,0$.
 
-Formalized by `Cslib.Complexity.Karp.isToVc`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/Clique.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#is-to-vc).
+Formalized by `Cslib.Complexity.Karp.isToVc`, a definition declared in [CSLibExt/Computability/Complexity/Karp/Clique.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/Clique.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#is-to-vc).
 
 ## Unparsable input is rejected
 
@@ -190,7 +190,7 @@ $k$ are natural numbers and $G$ is a simple graph on the vertices $0, 1, \dots, 
 that does not begin with two unary numbers (each a run of $1$s ended by a $0$) is rejected by the
 language of valid instances $(k, G)$ satisfying $P$.
 
-Formalized by `Cslib.Complexity.Karp.kgDec_of_decodeKG_eq_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#kg-dec-of-decode-kg-eq-none).
+Formalized by `Cslib.Complexity.Karp.kgDec_of_decodeKG_eq_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#kg-dec-of-decode-kg-eq-none).
 
 ## Membership in the vertex pairs
 
@@ -198,7 +198,7 @@ For natural numbers $n$, $i$ and $j$, the pair
 $(i, j)$ belongs to the list of vertex pairs in encoding order for $n$ if and only if $i < j$
 and $j < n$.
 
-Formalized by `Cslib.Complexity.Karp.mem_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#mem-pairs).
+Formalized by `Cslib.Complexity.Karp.mem_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#mem-pairs).
 
 ## The vertex pairs are listed without repetition
 
@@ -206,7 +206,7 @@ For every natural number $n$, the list
 of pairs $(i, j)$ of natural numbers with $i < j < n$, in encoding order ($i$ ascending and, for
 each $i$, $j$ descending from $n - 1$ to $i + 1$), contains no pair twice.
 
-Formalized by `Cslib.Complexity.Karp.pairs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#pairs-nodup).
+Formalized by `Cslib.Complexity.Karp.pairs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-01/index.html#pairs-nodup).
 
 ## Pair bits are read off by position
 
@@ -215,7 +215,7 @@ $n$ be the list of pairs $(i, j)$ with $i < j < n$ in encoding order. Let $b$ be
 whose length equals the length of the pair list of $n$. For all $i < j < n$, the bit of the pair
 $(i, j)$ in $b$ is the entry of $b$ at the position of $(i, j)$ in the pair list of $n$.
 
-Formalized by `Cslib.Complexity.Karp.adjBits_eq_getElem`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#adj-bits-eq-get-elem).
+Formalized by `Cslib.Complexity.Karp.adjBits_eq_getElem`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#adj-bits-eq-get-elem).
 
 ## Pair bits computed by a function
 
@@ -224,7 +224,7 @@ pairs of natural numbers to bits, and let $b$ be the list obtained by applying $
 the pair list of $n$ (the pairs $(i, j)$ with $i < j < n$ in encoding order). Then for all
 $i < j < n$, the bit of the pair $(i, j)$ in $b$ is $f(i, j)$.
 
-Formalized by `Cslib.Complexity.Karp.adjBits_map_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#adj-bits-map-pairs).
+Formalized by `Cslib.Complexity.Karp.adjBits_map_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#adj-bits-map-pairs).
 
 ## Complementing the pair bits complements the graph
 
@@ -233,7 +233,7 @@ list of bits whose length is the number of pairs $(i, j)$ with $i < j < n$. Then
 $\{0, \dots, n-1\}$ read off the list obtained by negating every bit of $b$ is the complement of
 the graph on $\{0, \dots, n-1\}$ read off $b$.
 
-Formalized by `Cslib.Complexity.Karp.toGraph_map_not`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#to-graph-map-not).
+Formalized by `Cslib.Complexity.Karp.toGraph_map_not`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#to-graph-map-not).
 
 ## Correctness of the complementing map from CLIQUE to INDEPENDENT-SET
 
@@ -241,7 +241,7 @@ For every bit
 string $x$, CLIQUE accepts $x$ if and only if INDEPENDENT-SET accepts the image of $x$ under the
 complementing map from CLIQUE to INDEPENDENT-SET instances.
 
-Formalized by `Cslib.Complexity.Karp.cliqueDec_eq_indSetDec_flipKG`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#clique-dec-eq-ind-set-dec-flip-kg).
+Formalized by `Cslib.Complexity.Karp.cliqueDec_eq_indSetDec_flipKG`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#clique-dec-eq-ind-set-dec-flip-kg).
 
 ## Independent sets and vertex covers of complementary sizes
 
@@ -249,7 +249,7 @@ Let $G$ be a simple graph whose
 vertices are $0, 1, \dots, n - 1$, and let $k \le n$. Then $G$ has an independent set of exactly
 $k$ vertices if and only if $G$ has a vertex cover of exactly $n - k$ vertices.
 
-Formalized by `Cslib.Complexity.Karp.exists_isNIndepSet_iff_exists_isVertexCover`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#exists-is-nindep-set-iff-exists-is-verte).
+Formalized by `Cslib.Complexity.Karp.exists_isNIndepSet_iff_exists_isVertexCover`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#exists-is-nindep-set-iff-exists-is-verte).
 
 ## Membership in the literal occurrences of a CNF formula
 
@@ -258,7 +258,7 @@ with clauses $C_0, \dots, C_{m-1}$, let $i$ and $x$ be natural numbers and let $
 The triple $(i, x, b)$ belongs to the list of literal occurrences of $\varphi$ if and only if
 $i < m$ and the literal $(x, b)$ belongs to $C_i$.
 
-Formalized by `Cslib.Complexity.Karp.mem_occs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#mem-occs).
+Formalized by `Cslib.Complexity.Karp.mem_occs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#mem-occs).
 
 ## Adjacency in Karp's clique graph
 
@@ -269,7 +269,7 @@ bits of $\varphi$, vertices $i$ and $j$ are adjacent if and only if $i \ne j$ an
 $o_i$ and $o_j$ are adjacent, that is, they lie in different clauses and are not complementary
 (they are not the same variable with opposite polarities).
 
-Formalized by `Cslib.Complexity.Karp.toGraph_cliqueBits_adj`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#to-graph-clique-bits-adj).
+Formalized by `Cslib.Complexity.Karp.toGraph_cliqueBits_adj`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#to-graph-clique-bits-adj).
 
 ## Karp's reduction from SAT to CLIQUE is correct
 
@@ -278,13 +278,13 @@ satisfiable if and only if Karp's graph of $\varphi$ has a clique of exactly $m$
 graph has one vertex for each literal occurrence of $\varphi$, and two occurrences are adjacent
 when they lie in different clauses and are not complementary.
 
-Formalized by `Cslib.Complexity.Karp.cnfSat_iff_exists_isNClique`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#cnf-sat-iff-exists-is-nclique).
+Formalized by `Cslib.Complexity.Karp.cnfSat_iff_exists_isNClique`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#cnf-sat-iff-exists-is-nclique).
 
 ## SAT decision on undecodable input (moved alias)
 
 Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`).
 
-Formalized by `Cslib.Complexity.Karp.satDec_of_decodeCNF_eq_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#sat-dec-of-decode-cnf-eq-none).
+Formalized by `Cslib.Complexity.Karp.satDec_of_decodeCNF_eq_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueCorrect.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#sat-dec-of-decode-cnf-eq-none).
 
 ## Modes of the clique verifier
 
@@ -292,7 +292,7 @@ A mode is one of three values, clique, independent set
 and vertex cover, naming the three graph problems CLIQUE, INDEPENDENT-SET and VERTEX-COVER that
 share one NP verifier.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Mode`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#mode).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Mode`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#mode).
 
 ## Pair condition of the clique verifier
 
@@ -302,7 +302,7 @@ condition $\mathrm{ok}_m(b, s_i, s_j)$ is $\lnot(s_i \land s_j) \lor b$ for cliq
 $\lnot(s_i \land s_j) \lor \lnot b$ for independent set, and $\lnot b \lor s_i \lor s_j$ for
 vertex cover.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.ok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#ok).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.ok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#ok).
 
 ## The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER
 
@@ -314,7 +314,7 @@ $w$ are set, and for every pair $(i, j)$, matched with its bit $b$ in the encodi
 pairs, the pair condition of $m$ holds for $b$, $w_i$ and $w_j$. So the first $n$ bits of $w$
 choose the vertices.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#kg-check).
+Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#kg-check).
 
 ## Vertices that settle their pairs alone
 
@@ -323,7 +323,7 @@ vertex $i$ is chosen, the result is true when $i$ alone settles the condition on
 $\{i, j\}$: in the clique and independent-set modes it is true exactly when $i$ is not chosen,
 and in the vertex-cover mode exactly when $i$ is chosen.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.free`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#free).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.free`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#free).
 
 ## The pair condition left to the later vertex
 
@@ -334,7 +334,7 @@ $\lnot b \lor s_j$ for vertex cover.
 
 It is the pair condition on $\{i, j\}$ when vertex $i$ does not settle it.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.sat`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#sat).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.sat`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#sat).
 
 ## The pair condition splits by vertex
 
@@ -348,7 +348,7 @@ $\lnot s_j \lor \lnot b$ for independent set and $\lnot b \lor s_j$ for vertex c
 every mode $m$ and all Booleans $b$, $s_i$, $s_j$, we have
 $\mathrm{ok}_m(b, s_i, s_j) = \mathrm{free}_m(s_i) \lor \mathrm{sat}_m(b, s_j)$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.ok_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#ok-eq).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Mode.ok_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#ok-eq).
 
 ## Vertex pairs in encoding order for one more vertex
 
@@ -358,7 +358,7 @@ ascending and, for each $i$, by $j$ descending. Then for every natural number $n
 the list $(0, n), (0, n - 1), \dots, (0, 1)$ (empty when $n = 0$) followed by the pairs
 $(i + 1, j + 1)$ for the pairs $(i, j)$ of $P(n)$, in the order of $P(n)$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.pairs_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pairs-succ).
+Formalized by `Cslib.Complexity.Karp.KGVerify.pairs_succ`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pairs-succ).
 
 ## Chosen-flag pairs
 
@@ -367,7 +367,7 @@ chosen-flag pairs of $s$ are the pairs $(s_i, s_j)$, one for each vertex pair $(
 $i < j < \ell$, listed in the encoding order of the vertex pairs of $\ell$ vertices (rows $i$
 ascending, within a row $j$ descending).
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.pairVals`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pair-vals).
+Formalized by `Cslib.Complexity.Karp.KGVerify.pairVals`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pair-vals).
 
 ## Reading a list at every index
 
@@ -375,7 +375,7 @@ For every list $s$ of Booleans of length $\ell$,
 reading $s$ at the indices $0, 1, \dots, \ell - 1$ in turn (with default value false) gives
 back $s$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.map_getD_range`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#map-get-d-range).
+Formalized by `Cslib.Complexity.Karp.KGVerify.map_getD_range`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#map-get-d-range).
 
 ## Chosen-flag pairs of a list with a new head
 
@@ -384,7 +384,7 @@ $s = (s_0, \dots, s_{\ell - 1})$ of Booleans, the chosen-flag pairs of the list
 $(a, s_0, \dots, s_{\ell - 1})$ are $(a, s_{\ell - 1}), (a, s_{\ell - 2}), \dots, (a, s_0)$,
 followed by the chosen-flag pairs of $s$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.pairVals_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pair-vals-cons).
+Formalized by `Cslib.Complexity.Karp.KGVerify.pairVals_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#pair-vals-cons).
 
 ## The row-by-row check of the clique verifier
 
@@ -397,7 +397,7 @@ either $a$ is free for $m$ or $\mathrm{sat}_m(b_t, \rho_t)$ holds for every $t <
 
 This is what the machine checks, vertex by vertex; at the end no bit may be left.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.rowsOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#rows-ok).
+Formalized by `Cslib.Complexity.Karp.KGVerify.rowsOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-02/index.html#rows-ok).
 
 ## The row-by-row check is the pairwise check
 
@@ -407,7 +407,7 @@ one bit per pair $i < j < |s|$ and, listing these pairs in encoding order (rows 
 ascending, within a row $j$ descending), the $t$-th pair $(i, j)$ and the $t$-th bit $b_t$
 satisfy the pair condition $\mathrm{ok}_m(b_t, s_i, s_j)$ for every $t$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.rowsOk_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#rows-ok-eq).
+Formalized by `Cslib.Complexity.Karp.KGVerify.rowsOk_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#rows-ok-eq).
 
 ## The verifier as a row-by-row check
 
@@ -417,7 +417,7 @@ exactly $k$ of the first $n$ bits of $w$ are set. Then the verifier for mode $m$
 and witness $w$ returns the same value as the row-by-row check for mode $m$ of the first $n$
 bits of $w$ against the pair bits $\mathit{bits}$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_eq_rowsOk`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-eq-rows-ok).
+Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_eq_rowsOk`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-eq-rows-ok).
 
 ## Lookup in a list of pairs with distinct keys
 
@@ -425,7 +425,7 @@ Let $l$ be a list of pairs whose keys lie
 in a type with a lawful Boolean equality and are pairwise distinct. If $(a, b)$ occurs in $l$,
 then looking up the key $a$ in $l$ returns $b$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.lookup_of_mem`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#lookup-of-mem).
+Formalized by `Cslib.Complexity.Karp.KGVerify.lookup_of_mem`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#lookup-of-mem).
 
 ## Checking each listed vertex pair against its bit
 
@@ -436,7 +436,7 @@ a bit, $P$ holds on every entry of the pair list zipped with $b$ (the $t$-th pai
 the $t$-th bit of $b$) if and only if, for all natural numbers $i < j < n$, $P$ holds on the
 pair $(i, j)$ together with the adjacency bit of $\{i, j\}$ in $b$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.all_zip_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#all-zip-pairs).
+Formalized by `Cslib.Complexity.Karp.KGVerify.all_zip_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#all-zip-pairs).
 
 ## Characterization of the CLIQUE verifier
 
@@ -447,7 +447,7 @@ $\mathit{bits}$ has one bit per pair $(i, j)$ with $i < j < n$, $w$ has at least
 exactly $k$ of the first $n$ bits of $w$ are set, and for all $i < j < n$ the pair condition of
 $m$ holds for the bit of the pair $\{i, j\}$ and the bits $w_i$ and $w_j$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-iff).
 
 ## Counting the set bits of a list built from a function
 
@@ -456,7 +456,7 @@ every function $f$ from $\{0, \dots, n-1\}$ to the Booleans, the number of entri
 true in the list $f(0), f(1), \dots, f(n-1)$ equals the number of indices $i < n$ with $f(i)$
 true.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.count_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#count-of-fn).
+Formalized by `Cslib.Complexity.Karp.KGVerify.count_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#count-of-fn).
 
 ## The first $n$ bits of a list, read index by index
 
@@ -464,7 +464,7 @@ If a bit list $w$ has length at
 least $n$, then the first $n$ entries of $w$ form the list $(w_0, \dots, w_{n-1})$, where $w_i$
 is the entry of $w$ at index $i$ (taken as false past the end of $w$).
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.take_eq_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#take-eq-of-fn).
+Formalized by `Cslib.Complexity.Karp.KGVerify.take_eq_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#take-eq-of-fn).
 
 ## Vertex sets meeting a mode's pair condition
 
@@ -476,7 +476,7 @@ chosen and $b_{ij}$ is the bit of the pair $\{i, j\}$: listing the pairs $i' < j
 encoding order (rows $i'$ ascending, within a row $j'$ descending), the $t$-th bit of the list
 belongs to the $t$-th pair, and $b_{ij}$ is false if the list has no bit for $\{i, j\}$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.SetOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#set-ok).
+Formalized by `Cslib.Complexity.Karp.KGVerify.SetOk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#set-ok).
 
 ## An accepted input encodes an instance with a good vertex set
 
@@ -487,7 +487,7 @@ bits $b$ such that $x$ is the encoding of the instance $(k, n, b)$, $b$ has exac
 vertex pair $(i, j)$ with $i < j < n$, and some set of exactly $k$ of the vertices
 $0, \dots, n-1$ meets the mode's pair condition on every pair $i < j$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.exists_setOk`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#exists-set-ok).
+Formalized by `Cslib.Complexity.Karp.KGVerify.exists_setOk`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#exists-set-ok).
 
 ## The characteristic vector of a good vertex set is accepted
 
@@ -498,7 +498,7 @@ condition of $m$ on every pair $i < j$. Then the verifier for mode $m$ accepts t
 $(k, n, \mathit{bits})$ with witness the characteristic vector of $s$: the list of $n$ bits whose
 $i$-th bit is set if and only if $i \in s$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-of-fn).
+Formalized by `Cslib.Complexity.Karp.KGVerify.kgCheck_ofFn`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-check-of-fn).
 
 ## Verifying a graph language defined by a vertex-set condition
 
@@ -510,7 +510,7 @@ the pair condition of $m$ on every pair $i < j$. Then for every bit list $x$, $x
 the language of instances satisfying $P$ if and only if the verifier for mode $m$ accepts $x$
 with some witness $w$ of length $|w| \le |x|$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.kgDec_iff_exists`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-dec-iff-exists).
+Formalized by `Cslib.Complexity.Karp.KGVerify.kgDec_iff_exists`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#kg-dec-iff-exists).
 
 ## Symmetric relations on increasing pairs
 
@@ -518,7 +518,7 @@ Let $n$ be a natural number and $R$ a relation
 on $\{0, \dots, n-1\}$ such that $R(i, j)$ implies $R(j, i)$. Then $R(i, j)$ holds for all
 $i \ne j$ if and only if $R(i, j)$ holds for all $i < j$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.forall_ne_iff_lt`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#forall-ne-iff-lt).
+Formalized by `Cslib.Complexity.Karp.KGVerify.forall_ne_iff_lt`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#forall-ne-iff-lt).
 
 ## Cliques of the graph given by pair bits
 
@@ -528,7 +528,7 @@ vertices if and only if there is a set $s$ of exactly $k$ of these vertices meet
 clique-mode pair condition on every pair $i < j$: whenever $i$ and $j$ both lie in $s$, the
 bit of the pair $\{i, j\}$ in $b$ is set.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.clique_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#clique-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.clique_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#clique-iff).
 
 ## Independent sets of the graph given by pair bits
 
@@ -538,7 +538,7 @@ of exactly $k$ vertices if and only if there is a set $s$ of exactly $k$ of thes
 meeting the independent-set-mode pair condition on every pair $i < j$: whenever $i$ and $j$ both
 lie in $s$, the bit of the pair $\{i, j\}$ in $b$ is not set.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.indep_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#indep-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.indep_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#indep-iff).
 
 ## Vertex covers of the graph given by pair bits
 
@@ -548,7 +548,7 @@ exactly $k$ vertices if and only if there is a set $s$ of exactly $k$ of these v
 the cover-mode pair condition on every pair $i < j$: whenever the bit of the pair $\{i, j\}$ in
 $b$ is set, $i$ or $j$ lies in $s$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.cover_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#cover-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.cover_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#cover-iff).
 
 ## CLIQUE is verified with witnesses no longer than the input
 
@@ -557,7 +557,7 @@ $x$ is in CLIQUE if and only if there is a bit string $w$ of length at most the 
 such that the shared CLIQUE / INDEPENDENT-SET / VERTEX-COVER verifier, run in clique mode,
 accepts the input $x$ with witness $w$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.cliqueDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#clique-dec-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.cliqueDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#clique-dec-iff).
 
 ## INDEPENDENT-SET is verified with witnesses no longer than the input
 
@@ -566,7 +566,7 @@ $x$, $x$ is in INDEPENDENT-SET if and only if there is a bit string $w$ of lengt
 length of $x$ such that the shared CLIQUE / INDEPENDENT-SET / VERTEX-COVER verifier, run in
 independent-set mode, accepts the input $x$ with witness $w$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.indSetDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#ind-set-dec-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.indSetDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#ind-set-dec-iff).
 
 ## VERTEX-COVER is verified by the clique verifier in cover mode
 
@@ -574,7 +574,7 @@ A bit string $x$ is in
 VERTEX-COVER if and only if there is a bit string $w$, no longer than $x$, such that the
 clique-family verifier in vertex-cover mode accepts $x$ with witness $w$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.vertexCoverDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#vertex-cover-dec-iff).
+Formalized by `Cslib.Complexity.Karp.KGVerify.vertexCoverDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#vertex-cover-dec-iff).
 
 ## Stacks of the CLIQUE verifier
 
@@ -583,7 +583,7 @@ VERTEX-COVER, run on an instance with target size $k$ and $n$ vertices, has six 
 input $X$, the witness $W$, the counter $C$ (holding $k$), the counter $N$ (holding $n$), the
 vertex stack $V$ and its scratch stack $T$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#k).
+Formalized by `Cslib.Complexity.Karp.KGVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#k).
 
 ## Labels of the CLIQUE verifier
 
@@ -592,7 +592,7 @@ verifier machine has the labels: read $k$, read $n$, load the witness, walk a ro
 $c$, the conjunction of the row's pair conditions so far), put the row back, accept, and
 reject.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-03/index.html#lab).
 
 ## Statements of the clique verifier
 
@@ -601,7 +601,7 @@ multi-stack Turing machine (Mathlib's TM2 model) with the six stacks $X, W, C, N
 over the symbol alphabet of the SAT verifier, the verifier's labels, and one Boolean of local
 state.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#stmt).
+Formalized by `Cslib.Complexity.Karp.KGVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#stmt).
 
 ## The clique verifier's unary reader
 
@@ -614,7 +614,7 @@ the bit $1$; if so, it pushes the bit $1$ onto $c$ and goes to $\ell$, while any
 
 Run from $\ell$, it reads a unary number off $X$ onto the counter $c$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.readU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u).
+Formalized by `Cslib.Complexity.Karp.KGVerify.readU`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u).
 
 ## Load step of the CLIQUE verifier
 
@@ -629,7 +629,7 @@ and rejects otherwise.
 Started from $n$ on $N$ and $k$ on $C$, it loads the first $n$ witness bits onto $V$, bit
 $n - 1$ on top, and rejects if $W$ runs out or the number of set bits among them is not $k$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.loadS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#load-s).
+Formalized by `Cslib.Complexity.Karp.KGVerify.loadS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#load-s).
 
 ## Rest of a walk step of the clique verifier
 
@@ -643,7 +643,7 @@ it moves to the reject label if the input stack $X$ is empty, and otherwise pops
 of $X$, reads it as a bit $b$ (a non-bit symbol reads as false), and moves to the walk label
 with flag $c \wedge \mathrm{sat}_m(b, z)$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.walkZ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-z).
+Formalized by `Cslib.Complexity.Karp.KGVerify.walkZ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-z).
 
 ## Walk step of the clique verifier
 
@@ -653,7 +653,7 @@ empty and to the reject label otherwise. If $V$ is not empty, it pops the top sy
 reads it as a bit $z$ (a non-bit symbol reads as false), and continues with the rest of the walk
 step for $m$, $c$ and $z$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.walkS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-s).
+Formalized by `Cslib.Complexity.Karp.KGVerify.walkS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-s).
 
 ## Program of the clique verifier
 
@@ -671,7 +671,7 @@ with flag true; and to the accept and reject labels, the statement that halts.
 Run from the label that reads $k$, it parses $k$ and $n$, loads the witness and walks the
 rows.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.KGVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#prog).
 
 ## Start label of the clique verifier
 
@@ -679,7 +679,7 @@ The verifier for CLIQUE, INDEPENDENT-SET and
 VERTEX-COVER starts at the label that reads the instance's size parameter $k$ (the number of
 vertices to choose) in unary off the input stack $X$ onto the counter $C$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#start).
+Formalized by `Cslib.Complexity.Karp.KGVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#start).
 
 ## One step of a clique-verifier program to a known label
 
@@ -690,7 +690,7 @@ label $\ell'$, then there are a state $v'$ and stack contents $S'$ such that $M$
 exactly one step from label $\ell$ with state $v$ and stacks $S$ to label $\ell'$ with
 state $v'$ and stacks $S'$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.run_one`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#run-one).
+Formalized by `Cslib.Complexity.Karp.KGVerify.run_one`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#run-one).
 
 ## The clique verifier's unary reader succeeds
 
@@ -705,7 +705,7 @@ with state $v$ and stacks $S$ to label $\ell'$ with state $v'$ and stacks $S'$, 
 $S'$ the stack $X$ holds the bits of $r$, the stack $c$ holds exactly $k + j$ copies of
 the bit $1$, and every stack other than $X$ and $c$ is as in $S$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.readU_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u-some).
+Formalized by `Cslib.Complexity.Karp.KGVerify.readU_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u-some).
 
 ## Reading an unterminated unary number rejects
 
@@ -717,7 +717,7 @@ machine variable $v$ and all stack contents in which $X$ holds exactly the bits 
 verifier for $m$ goes from label $\lambda$ to the rejecting label no in at most $|l| + 1$
 steps.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.readU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u-none).
+Formalized by `Cslib.Complexity.Karp.KGVerify.readU_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#read-u-none).
 
 ## Run of the load phase
 
@@ -730,7 +730,7 @@ so far) set to true if $w$ has at least $n$ bits and exactly $j$ of its first $n
 and the reject label otherwise. In the first case $V$ then holds the first $n$ bits of $w$, bit
 $n - 1$ on top, above $\mathit{acc}$, and the stacks $X$ and $T$ are unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.load_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#load-run).
+Formalized by `Cslib.Complexity.Karp.KGVerify.load_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#load-run).
 
 ## Walking the pairs of one row of the clique verifier
 
@@ -748,7 +748,7 @@ label otherwise. Moreover, if $r \le q$, then in $S'$ the stack $V$ is empty, th
 $T$ holds $z_{r-1}, \dots, z_0$ from the top above its contents in $S$, and $X$ holds, from the
 top, $b_r, \dots, b_{q-1}$.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.walkRow_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-row-run).
+Formalized by `Cslib.Complexity.Karp.KGVerify.walkRow_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#walk-row-run).
 
 ## One row of the clique verifier's walk
 
@@ -764,7 +764,7 @@ condition holds and at the rejecting label otherwise; and if the row condition h
 in $S'$ the stack $V$ holds the bits of $\rho$, $T$ is empty, and $X$ holds $b$ with its
 first $|r|$ bits dropped.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#row-run).
+Formalized by `Cslib.Complexity.Karp.KGVerify.row_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#row-run).
 
 ## All rows of the clique verifier's walk
 
@@ -777,7 +777,7 @@ mode $m$ goes from label walk(true) with state $v$ and stacks $S$ to state $v'$ 
 $S'$ at the accepting label if the row-by-row check of $r$ against $b$ holds for $m$, and
 at the rejecting label otherwise.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#rows-run).
+Formalized by `Cslib.Complexity.Karp.KGVerify.rows_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 639](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L639). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#rows-run).
 
 ## The verifier machine for clique, independent set and vertex cover
 
@@ -790,13 +790,13 @@ state $v$ and stacks $S$ to state $v'$ and stacks $S'$ at the accepting label if
 verifier check of mode $m$ accepts $x$ with witness $w$, and at the rejecting label
 otherwise.
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#run).
+Formalized by `Cslib.Complexity.Karp.KGVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#run).
 
 ## Distinctness of CLIQUE verifier pairs (moved alias)
 
 Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`).
 
-Formalized by `Cslib.Complexity.Karp.KGVerify.pairs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#pairs-nodup).
+Formalized by `Cslib.Complexity.Karp.KGVerify.pairs_nodup`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean, line 756](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueVerify.lean#L756). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#pairs-nodup).
 
 ## Karp adjacency of two literals
 
@@ -806,7 +806,7 @@ adjacency bit of $l$ and $l'$ is false when they are complementary, that is $x =
 $p \ne q$, and true otherwise. It is the adjacency of two occurrences in different clauses in
 Karp's graph.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.adjL`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#adj-l).
+Formalized by `Cslib.Complexity.Karp.EmitClique.adjL`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#adj-l).
 
 ## Row-by-row pair bits of an occurrence list
 
@@ -816,7 +816,7 @@ none, and for a list $o, o_1, \dots, o_k$ they are the adjacency bits of $o$ wit
 $o_k, \dots, o_1$, in that order, followed by the row-by-row pair bits of $o_1, \dots, o_k$.
 Two occurrences are adjacent when they lie in different clauses and are not complementary.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#bits-rec).
+Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#bits-rec).
 
 ## Pair bits of an occurrence list, row by row
 
@@ -828,7 +828,7 @@ empty list and otherwise are the adjacency bits of $o_0$ with $o_{m-1}, o_{m-2},
 this order, followed by the recursive pair bits of $o_1, \dots, o_{m-1}$. Two occurrences are
 adjacent when they lie in different clauses and are not complementary.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.pairBits_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#pair-bits-eq).
+Formalized by `Cslib.Complexity.Karp.EmitClique.pairBits_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#pair-bits-eq).
 
 ## Row-by-row pair bits see only adjacency
 
@@ -838,7 +838,7 @@ $f$ be a map on occurrences such that $f(a)$ and $f(b)$ are adjacent exactly whe
 are, for all occurrences $a$ and $b$. Then for every list of occurrences $o_1, \dots, o_k$, the
 row-by-row pair bits of $f(o_1), \dots, f(o_k)$ equal those of $o_1, \dots, o_k$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec_map`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#bits-rec-map).
+Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec_map`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-04/index.html#bits-rec-map).
 
 ## Occurrences of a formula with a first clause
 
@@ -849,7 +849,7 @@ remaining clauses are those of $\varphi$ is the list of $(0, \ell)$ for the lite
 in order, followed by the list of $(i + 1, \ell)$ for the occurrences $(i, \ell)$ of $\varphi$ in
 order.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.occs_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#occs-cons).
+Formalized by `Cslib.Complexity.Karp.EmitClique.occs_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#occs-cons).
 
 ## Polarity-first tokens of a literal
 
@@ -860,7 +860,7 @@ followed by one name-bit symbol for each bit of the canonical binary representat
 
 This is how the CLIQUE emitter writes a walked literal occurrence on its stack $D$, top first.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.dTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#d-tok).
+Formalized by `Cslib.Complexity.Karp.EmitClique.dTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#d-tok).
 
 ## Tokens of an item on the walked stack
 
@@ -869,7 +869,7 @@ standing for a clause marker, or an occurrence $(x, p)$ of the variable $x$ with
 tokens of $\mathrm{none}$ are the single clause-marker symbol; the tokens of $(x, p)$ are the
 polarity marker of $p$ followed by the binary encoding of $x$ as name-bit symbols.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.itemTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#item-tok).
+Formalized by `Cslib.Complexity.Karp.EmitClique.itemTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#item-tok).
 
 ## Bits pushed by a walk of the CLIQUE emitter
 
@@ -885,7 +885,7 @@ is false exactly when $l$ and $l'$ have the same name and opposite polarities.
 The flag $f$ records whether a clause marker has been passed; while it is false, each occurrence
 contributes a false bit.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.walkBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#walk-bits).
+Formalized by `Cslib.Complexity.Karp.EmitClique.walkBits`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#walk-bits).
 
 ## Walked items of a formula
 
@@ -894,7 +894,7 @@ order, the items of $\varphi$ are the list made of, for each $i = 1, \dots, m$ i
 literals of $C_i$ in order, each as an occurrence item, followed by one clause-marker item
 $\mathrm{none}$. These are the items on the stack $D$ once the clauses of $\varphi$ are walked.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.items`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#items).
+Formalized by `Cslib.Complexity.Karp.EmitClique.items`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#items).
 
 ## Rows pushed for a clause's literals
 
@@ -904,7 +904,7 @@ of the walk bits of $l_i$ with flag false over the items $l_{i+1}, \dots, l_k$ (
 items) followed by $I$. These are the bits pushed when the literals of a clause are walked above
 the items $I$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.lrows`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#lrows).
+Formalized by `Cslib.Complexity.Karp.EmitClique.lrows`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#lrows).
 
 ## Row bits of a formula for the CLIQUE emitter
 
@@ -923,7 +923,7 @@ defined by recursion on its clauses: the empty formula has none, and for the for
 clause $C$ and remaining clauses $\varphi$ they are the rows of the literals of $C$ for $\delta$
 the clause marker followed by the items of $\varphi$, followed by the row bits of $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.rowsF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#rows-f).
+Formalized by `Cslib.Complexity.Karp.EmitClique.rowsF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#rows-f).
 
 ## Pair bits of a leading clause
 
@@ -934,7 +934,7 @@ literals of $C$, each with clause index $0$, followed by $O_\varphi$, are the ro
 literals of $C$ walked above a clause marker and the items of $\varphi$, followed by the
 row-by-row pair bits of $O_\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#bits-rec-clause).
+Formalized by `Cslib.Complexity.Karp.EmitClique.bitsRec_clause`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#bits-rec-clause).
 
 ## The CLIQUE emitter's row bits are Karp's pair bits
 
@@ -944,7 +944,7 @@ $o_0, \dots, o_{m-1}$ the literal occurrences of $\varphi$, these are, for the p
 $i < j < m$ in encoding order (rows $i$ ascending, and $j$ descending within a row), the bits
 telling whether $o_i$ and $o_j$ lie in different clauses and are not complementary.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.rowsF_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#rows-f-eq).
+Formalized by `Cslib.Complexity.Karp.EmitClique.rowsF_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#rows-f-eq).
 
 ## Stacks of the SAT-to-CLIQUE emitter
 
@@ -952,7 +952,7 @@ The emitter has nine stacks: $T$ (tokens), $O$
 (output), $A$ (the current name), $B$ (scratch), $D$ (walked occurrences), $E$ (the walk's other
 side), $X$ (scratch), $C$ (the clause count) and $N$ (the occurrence count).
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#k).
+Formalized by `Cslib.Complexity.Karp.EmitClique.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#k).
 
 ## Stack alphabets of the CLIQUE emitter
 
@@ -961,7 +961,7 @@ the Booleans as its alphabet, and every other stack has the token symbols as its
 
 The counter stacks $C$ and $N$ hold copies of the clause marker.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#untitled).
+Formalized by `Cslib.Complexity.Karp.EmitClique.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#untitled).
 
 ## Labels of the SAT-to-CLIQUE emitter
 
@@ -978,7 +978,7 @@ $\mathsf{mvN}$ moves that occurrence's name to $E$; $\mathsf{back}$ moves $E$ ba
 $\mathsf{put}$, $\mathsf{put2}$ and $\mathsf{put3}$ put the current occurrence on $D$;
 $\mathsf{fin}$ to $\mathsf{finC}$ push the instance prefix, and $\mathsf{done}$ halts.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.EmitClique.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#lab).
 
 ## The CLIQUE emitter machine
 
@@ -1023,14 +1023,14 @@ else go to $\mathrm{fin2}$. At $\mathrm{fin2}$: push false onto $O$ and go to $\
 $\mathrm{finC}$: pop $C$, testing whether a symbol was popped; if so push true onto $O$ and stay,
 else go to $\mathrm{done}$. At $\mathrm{done}$: halt.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.EmitClique.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#prog).
 
 ## Start label of the CLIQUE emitter
 
 The start label of the CLIQUE emitter machine is its
 label $\mathsf{start}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#start).
+Formalized by `Cslib.Complexity.Karp.EmitClique.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#start).
 
 ## Configuration stacks of the CLIQUE emitter
 
@@ -1042,7 +1042,7 @@ walk's other stack $E$ holds $e$, the clause counter $C$ holds $c$ copies of the
 the occurrence counter $N$ holds $n$ copies of the clause marker, and the scratch stacks $B$ and
 $X$ are empty.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#st).
+Formalized by `Cslib.Complexity.Karp.EmitClique.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#st).
 
 ## CLIQUE emitter: recognizing a standard state
 
@@ -1052,7 +1052,7 @@ the counters $C$ and $N$ hold exactly $c$ and $n$ clause markers, then $S$ is th
 whose stacks $T$, $O$, $A$, $D$, $E$ hold what they hold in $S$, whose stacks $B$ and $X$ are
 empty and whose counters $C$ and $N$ hold $c$ and $n$ clause markers.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.st_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#st-eq).
+Formalized by `Cslib.Complexity.Karp.EmitClique.st_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#st-eq).
 
 ## Tokens moved by the walk
 
@@ -1060,7 +1060,7 @@ A symbol is a token of the walk between the stacks $D$ and $E$
 when it is a name bit, a literal marker or a clause marker; the value symbols and the dead
 symbol are not.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.isTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#is-tok).
+Formalized by `Cslib.Complexity.Karp.EmitClique.isTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#is-tok).
 
 ## Name bits of a variable in the CLIQUE emitter
 
@@ -1069,7 +1069,7 @@ the list of symbols obtained from the binary encoding of $x$ (least significant 
 for $x = 0$) by writing each bit $b$ as the bit symbol $\mathrm{bit}(b)$. This is the form in which
 the stacks $A$ and $D$ of the CLIQUE emitter hold variable names.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.name`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#name).
+Formalized by `Cslib.Complexity.Karp.EmitClique.name`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#name).
 
 ## CLIQUE emitter: reading a variable name
 
@@ -1083,7 +1083,7 @@ on the counters $C$ and $N$, the CLIQUE emitter reaches, in exactly $\ell + 1$ s
 some flag, the label $\mathrm{walk}(p, \mathrm{false})$ with $T$ holding $R$, $A$ holding $w$,
 and all other stacks as before.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.nm_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#nm-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.nm_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#nm-run).
 
 ## Moving a walked name from $D$ to $E$
 
@@ -1099,7 +1099,7 @@ $\langle \mathsf{mvN}(p, f), v \mid t, o, a, \bar w R, e, c, n\rangle$ to
 $\langle \mathsf{walk}(p, f), v' \mid t, o, a, R, \bar w^{\mathrm{rev}} e, c, n\rangle$, where
 $\bar w^{\mathrm{rev}}$ is the reverse of $\bar w$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.mvN_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#mv-n-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.mvN_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-05/index.html#mv-n-run).
 
 ## Clique emitter: comparing two names
 
@@ -1113,7 +1113,7 @@ empty scratch stacks to label $\mathrm{mvN}(p, \mathrm{true})$ with flag $v'$ an
 except that the output is $b$ followed by $o$. Here $u$ and $w$ lie on the stacks as name-bit
 symbols.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#cmp-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#cmp-run).
 
 ## CLIQUE emitter: putting the current occurrence on the walked stack
 
@@ -1128,7 +1128,7 @@ literal marker $\mathrm{lit}(p)$ on top of $\bar u$ on top of $d$, and all other
 
 The name goes from $A$ to $D$ through $B$, so it is reversed twice.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.put_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#put-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.put_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#put-run).
 
 ## Clique emitter: moving the walk side back
 
@@ -1141,7 +1141,7 @@ the emitter machine reaches in exactly $|L| + 1$ steps, for some flag $v'$, labe
 $\mathrm{put}(p)$ with flag $v'$ and the same state except that the walked stack is the reverse
 of $L$ followed by $d$ and the walk side is empty.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#back-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 485](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L485). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#back-run).
 
 ## Clique emitter: the instance prefix
 
@@ -1152,7 +1152,7 @@ $c$, occurrence count $n$ and empty scratch stacks, the emitter machine reaches 
 $n + c + 4$ steps label done with some flag and some state whose output, read top-down, is $c$
 ones, false, $n$ ones, false, then $o$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.fin_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#fin-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.fin_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#fin-run).
 
 ## Reversing a list preserves the length of a flat map
 
@@ -1161,7 +1161,7 @@ $l$ a list of elements of $\alpha$ and $f$ a function from $\alpha$ to lists of 
 $\beta$. Concatenating the lists $f(a)$ for $a$ running through the reverse of $l$ gives a list
 of the same length as concatenating them for $a$ running through $l$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.flatMap_reverse_length`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#flat-map-reverse-length).
+Formalized by `Cslib.Complexity.Karp.EmitClique.flatMap_reverse_length`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#flat-map-reverse-length).
 
 ## Walk over the occurrence stack in the CLIQUE emitter
 
@@ -1179,7 +1179,7 @@ stacks with token stack $t$, output stack the reverse of $\mathrm{walkBits}(l, f
 by $o$, name stack the name bits of $x$, empty walked-occurrence stack, other walk stack the
 reverse of $D$ followed by $e$, and counts $c$ and $n$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.walk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 597](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L597). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#walk-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.walk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 597](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L597). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#walk-run).
 
 ## Emitter run over one literal occurrence
 
@@ -1197,7 +1197,7 @@ $7|\delta| + 3|\mathrm{enc}(x)| + 7$ steps, where $\mathrm{enc}(x)$ is the binar
 from $\langle \mathsf{lits}, v \mid \lambda R, o, [], \delta, [], c, n\rangle$ to
 $\langle \mathsf{lits}, v' \mid R, \rho\, o, [], \delta', [], c, n + 1\rangle$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lit-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lit-run).
 
 ## Emitter run over a clause's literals
 
@@ -1216,7 +1216,7 @@ $\langle \mathsf{lits}, v' \mid R, \rho\, o, [], \delta', [], c, n + k\rangle$, 
 rows pushed for the literals $l_1, \dots, l_k$ above the items $I$ and $\delta'$ is the
 concatenation of the tokens of the items $l_1, \dots, l_k$ followed by those of $I$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lits-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lits-run).
 
 ## Clique emitter: one clause
 
@@ -1232,7 +1232,7 @@ the rows pushed for the literals of $C$ walked above a clause marker and the ite
 followed by $o$, walked stack $D_{C \varphi}$ for the formula $C\varphi$ with first clause $C$,
 clause count $c + 1$, occurrence count $n + |C|$ and all other stacks empty.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#clause-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#clause-run).
 
 ## Emitter run over a formula's clauses
 
@@ -1250,7 +1250,7 @@ $\langle \mathsf{start}, v' \mid R, \rho\, o, [], \delta, [], m, s\rangle$, wher
 row bits of $\varphi$, $\delta$ is the concatenation of the tokens of the items of $\varphi$ and
 $s = |C_1| + \dots + |C_m|$ is the total number of literals of $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.formula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#formula-run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.formula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#formula-run).
 
 ## The CLIQUE emitter computes Karp's instance in cubic time
 
@@ -1262,7 +1262,7 @@ $v$ and stacks $S$, the CLIQUE emitter reaches the label $\mathrm{done}$ in at m
 $8(|\tau| + 1)^3$ steps, with some flag and stacks $S'$ such that $O$ holds, in $S'$, Karp's
 CLIQUE instance of $\varphi$ followed by $o$.
 
-Formalized by `Cslib.Complexity.Karp.EmitClique.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 771](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#run).
+Formalized by `Cslib.Complexity.Karp.EmitClique.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean, line 771](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueEmit.lean#L771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#run).
 
 ## Modes of the CLIQUE/VERTEX-COVER reduction machine
 
@@ -1271,7 +1271,7 @@ flip mode and the vertex-cover mode. They select the reduction that the machine 
 computes: CLIQUE to INDEPENDENT-SET in the flip mode, INDEPENDENT-SET to VERTEX-COVER in the
 vertex-cover mode.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Mode`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#mode).
+Formalized by `Cslib.Complexity.Karp.KGMap.Mode`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#mode).
 
 ## Reduction computed in each mode
 
@@ -1280,14 +1280,14 @@ CLIQUE/VERTEX-COVER reduction machine computes: in the flip mode it is the reduc
 to INDEPENDENT-SET on bit strings, and in the vertex-cover mode it is the reduction from
 INDEPENDENT-SET to VERTEX-COVER on bit strings.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Mode.f`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#f).
+Formalized by `Cslib.Complexity.Karp.KGMap.Mode.f`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#f).
 
 ## Stacks of the CLIQUE to VERTEX-COVER reduction machine
 
 Stacks: input `X`, output `O`, counters `A` (`k`), `B` (`n`), `D` (`n`, then `n - k`), and
 the reversed pair bits `Y`.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#k).
+Formalized by `Cslib.Complexity.Karp.KGMap.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#k).
 
 ## Stack alphabets of the clique reduction machine
 
@@ -1295,7 +1295,7 @@ The alphabet $\Gamma(k)$ of a stack $k$
 is the Booleans if $k$ is the output stack $O$, and the token alphabet $\mathrm{Sym}$ for every
 other stack ($X$, $A$, $B$, $D$ and $Y$).
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#untitled).
+Formalized by `Cslib.Complexity.Karp.KGMap.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#untitled).
 
 ## Labels of the KG-map machine
 
@@ -1306,7 +1306,7 @@ the separator, output the last number, the failure label and the halting label.
 The machine reaches the subtraction label only in the vertex-cover mode, and at the failure label
 it writes the fixed no-instance.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.KGMap.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#lab).
 
 ## Counter unit symbol of the clique reduction machine
 
@@ -1316,7 +1316,7 @@ the token alphabet $\mathrm{Sym}$.
 It is the unit of the counter stacks $A$, $B$ and $D$, which hold a number $n$ as $n$ copies of
 $U$.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.U`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#u).
+Formalized by `Cslib.Complexity.Karp.KGMap.U`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#u).
 
 ## Test for the input bit true
 
@@ -1324,7 +1324,7 @@ A test on the result of popping a stack: it is true
 exactly when a symbol was popped and that symbol is $\mathrm{bit}(\mathrm{true})$, and false for
 every other symbol and for an empty stack.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.isT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#is-t).
+Formalized by `Cslib.Complexity.Karp.KGMap.isT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#is-t).
 
 ## Test for the moved bit true
 
@@ -1332,7 +1332,7 @@ A test on the result of popping a stack: it is true
 exactly when a symbol was popped and that symbol is $\mathrm{val}(\mathrm{true})$, and false for
 every other symbol and for an empty stack.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.isV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#is-v).
+Formalized by `Cslib.Complexity.Karp.KGMap.isV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#is-v).
 
 ## Pair-bit transform of each mode
 
@@ -1340,7 +1340,7 @@ For a mode of the CLIQUE/VERTEX-COVER reduction
 machine, the map on booleans applied to each pair bit as it is written to the output: negation in
 the flip mode and the identity in the vertex-cover mode.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Mode.fb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#fb).
+Formalized by `Cslib.Complexity.Karp.KGMap.Mode.fb`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-06/index.html#fb).
 
 ## Label after the move phase of the KG-map machine
 
@@ -1349,7 +1349,7 @@ machine to its labels that sends the flip mode to the label output the pair bits
 vertex-cover mode to the subtraction label. The machine goes to this label after moving the pair
 bits.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Mode.next`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#next).
+Formalized by `Cslib.Complexity.Karp.KGMap.Mode.next`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#next).
 
 ## Counter of the first output number of the KG-map machine
 
@@ -1360,7 +1360,7 @@ mode to the counter $D$.
 This is the counter the machine drains last, as the first number of its output: $A$ holds $k$,
 and in the vertex-cover mode $D$ holds $n - k$ by then.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.Mode.ctr`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#ctr).
+Formalized by `Cslib.Complexity.Karp.KGMap.Mode.ctr`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#ctr).
 
 ## The KG-map machine
 
@@ -1389,13 +1389,13 @@ bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit s
   the empty graph) onto $O$ so that $O$ starts with them, and go to the halting label.
 - Halting label: halt.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.KGMap.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#prog).
 
 ## Start label of the KG-map machine
 
 The KG-map machine starts at the label read $k$.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#start).
+Formalized by `Cslib.Complexity.Karp.KGMap.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#start).
 
 ## Reading the first unary number in the KG-map machine
 
@@ -1407,7 +1407,7 @@ stack $A$ holds $i$ copies of the unit symbol. Then in exactly $k + 1$ steps $M_
 label read $n$ with $X$ holding $\mathrm{bit}(b)$ for the bits $b$ of $r$, $A$ holding $i + k$
 copies of the unit symbol, and every stack other than $X$ and $A$ unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.rdK_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-k-some).
+Formalized by `Cslib.Complexity.Karp.KGMap.rdK_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-k-some).
 
 ## Unterminated first unary number in the KG-map machine
 
@@ -1418,7 +1418,7 @@ internal bit, in which stack $X$ holds the input symbols $\mathrm{bit}(b)$ for t
 $r$, top first, $M_m$ reaches the failure label in exactly $|r| + 1$ steps, with every stack
 other than $X$ and $A$ unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.rdK_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-k-none).
+Formalized by `Cslib.Complexity.Karp.KGMap.rdK_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-k-none).
 
 ## Reading the second unary number in the KG-map machine
 
@@ -1431,7 +1431,7 @@ reaches the label move with $X$ holding $\mathrm{bit}(b)$ for the bits $b$ of $r
 each holding $i + n$ copies of the unit symbol, and every stack other than $X$, $B$ and $D$
 unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.rdN_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-n-some).
+Formalized by `Cslib.Complexity.Karp.KGMap.rdN_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-n-some).
 
 ## Unterminated second unary number in the KG-map machine
 
@@ -1442,7 +1442,7 @@ internal bit, in which stack $X$ holds the input symbols $\mathrm{bit}(b)$ for t
 $r$, top first, $M_m$ reaches the failure label in exactly $|r| + 1$ steps, with every stack
 other than $X$, $B$ and $D$ unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.rdN_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-n-none).
+Formalized by `Cslib.Complexity.Karp.KGMap.rdN_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#rd-n-none).
 
 ## Moving the pair bits onto stack $Y$
 
@@ -1454,7 +1454,7 @@ it is at the label that follows moving the pair bits in mode $m$, with some inte
 stacks in which $Y$ holds the symbols $\mathrm{val}(b)$ for the bits $b$ of $r$, in reverse
 order, on top of $y$, and every stack other than $X$ and $Y$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#mv-run).
+Formalized by `Cslib.Complexity.Karp.KGMap.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#mv-run).
 
 ## Subtraction loop of the clique reduction machine
 
@@ -1466,7 +1466,7 @@ of mode $m$ runs in exactly $k + 1$ steps from label $\mathsf{sub}$ with local s
 stacks $S$ to label $\mathsf{outY}$ with local state $v'$ and stacks $S'$, the stack $D$ of $S'$
 holds $U^{n-k}$, and every stack other than $A$ and $D$ has the same contents in $S'$ as in $S$.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.sub_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#sub-le).
+Formalized by `Cslib.Complexity.Karp.KGMap.sub_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#sub-le).
 
 ## Failed subtraction in the KG-map machine
 
@@ -1476,7 +1476,7 @@ in which stack $A$ holds $k$ copies of the unit symbol and stack $D$ holds $n$ c
 reaches the failure label in exactly $n + 1$ steps, with every stack other than $A$ and $D$
 unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.sub_gt`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#sub-gt).
+Formalized by `Cslib.Complexity.Karp.KGMap.sub_gt`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#sub-gt).
 
 ## Output loop for the pair bits of the KG-map machine
 
@@ -1488,7 +1488,7 @@ $|y| + 1$ steps $M_m$ reaches the label output $n$ with $O$ equal, top first, to
 reverse of $\beta_m(y)$, then $o$, where $\beta_m$ negates every bit for flip and leaves the
 bits unchanged for vc; every stack other than $Y$ and $O$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.outY_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#out-y-run).
+Formalized by `Cslib.Complexity.Karp.KGMap.outY_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#out-y-run).
 
 ## Number output of the clique reduction machine
 
@@ -1502,7 +1502,7 @@ stacks $S$ to label $\mathsf{done}$ with local state $v'$ and stacks $S'$, and t
 $O$ of $S'$ holds, from the top, $c$ copies of $\mathrm{true}$, then $\mathrm{false}$, then $n$
 copies of $\mathrm{true}$, then the contents of $O$ in $S$.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#tail-run).
+Formalized by `Cslib.Complexity.Karp.KGMap.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#tail-run).
 
 ## Output phase of the KG-map machine
 
@@ -1516,7 +1516,7 @@ label with $O$ equal, top first, to the encoding of the instance with numbers $c
 pair bits $\beta_m(r)$: $c$ trues, a false, $n$ trues, a false, then $\beta_m(r)$, where
 $\beta_m$ negates every bit for flip and leaves the bits unchanged for vc.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.out_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#out-run).
+Formalized by `Cslib.Complexity.Karp.KGMap.out_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#out-run).
 
 ## Correctness and running time of the KG-map machine
 
@@ -1528,7 +1528,7 @@ $\mathrm{bit}(b)$ for the bits $b$ of $x$, top first, and every other stack is e
 reaches the halting label in at most $3(|x| + 1)$ steps with the output stack $O$ equal to
 $F_m(x)$, top first.
 
-Formalized by `Cslib.Complexity.Karp.KGMap.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#run).
+Formalized by `Cslib.Complexity.Karp.KGMap.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/KGMap.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/KGMap.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#run).
 
 ## The CLIQUE-to-INDEPENDENT-SET and INDEPENDENT-SET-to-VERTEX-COVER map as a host component
 
@@ -1538,7 +1538,7 @@ from INDEPENDENT-SET to VERTEX-COVER, this is the host component whose stacks (l
 $X, O, A, B, D, Y$), stack alphabets, labels and program are those of the Turing machine that
 computes the reduction of mode $m$.
 
-Formalized by `Cslib.Complexity.Karp.kgMapComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#kg-map-comp).
+Formalized by `Cslib.Complexity.Karp.kgMapComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#kg-map-comp).
 
 ## CLIQUE ≤ INDEPENDENT-SET is polynomial-time
 
@@ -1547,7 +1547,7 @@ $1^k 0 1^n 0 b$, for natural numbers $k$ and $n$ and a bit string $b$, to $1^k 0
 where $\bar b$ is $b$ with every bit complemented, and sends every string not of this form to the
 string $100$, is computable in polynomial time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_flipKG`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-flip-kg).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_flipKG`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-flip-kg).
 
 ## INDEPENDENT-SET ≤ VERTEX-COVER is polynomial-time
 
@@ -1556,7 +1556,7 @@ $1^k 0 1^n 0 b$, for natural numbers $k \le n$ and a bit string $b$, to $1^{n-k}
 sends every other string (including $1^k 0 1^n 0 b$ with $k > n$) to the string $100$, is
 computable in polynomial time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_isToVc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-is-to-vc).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_isToVc`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-is-to-vc).
 
 ## The CLIQUE emitter
 
@@ -1568,7 +1568,7 @@ tokens. Started with the tokens of $\varphi$ on $T$, last token on top, and all 
 empty, the machine reaches its exit label within $8(m + 1)^3$ steps, with Karp's CLIQUE instance
 of $\varphi$ on $O$, first bit on top.
 
-Formalized by `Cslib.Complexity.Karp.emitClique`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#emit-clique).
+Formalized by `Cslib.Complexity.Karp.emitClique`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#emit-clique).
 
 ## SAT ≤ CLIQUE is polynomial-time
 
@@ -1579,7 +1579,7 @@ Here $G$ has one vertex per literal occurrence in $\varphi$, two occurrences are
 they lie in different clauses and are not complementary, and $k$ is the number of clauses of
 $\varphi$. Then $f$ is computable in polynomial time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceClique`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-reduce-clique).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceClique`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-07/index.html#is-poly-time-reduce-clique).
 
 ## CLIQUE is NP-hard
 
@@ -1587,7 +1587,7 @@ Every decision problem $L$ in NP has a polynomial-time many-one
 reduction to CLIQUE: a polynomial-time computable map $f$ on bit strings such that, for every
 bit string $x$, $L$ accepts $x$ exactly when CLIQUE accepts $f(x)$.
 
-Formalized by `Cslib.Complexity.Karp.cliqueDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.cliqueDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-np-hard).
 
 ## INDEPENDENT-SET is NP-hard
 
@@ -1595,7 +1595,7 @@ Every decision problem $L$ in NP has a polynomial-time
 many-one reduction to INDEPENDENT-SET: a polynomial-time computable map $f$ on bit strings such
 that, for every bit string $x$, $L$ accepts $x$ exactly when INDEPENDENT-SET accepts $f(x)$.
 
-Formalized by `Cslib.Complexity.Karp.indSetDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.indSetDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-np-hard).
 
 ## VERTEX-COVER (exact size `k`) is NP-hard
 
@@ -1604,7 +1604,7 @@ polynomial-time many-one reduction to the decision problem VERTEX-COVER, which a
 the valid encodings of a number $k$ and a graph $G$ such that $G$ has a vertex cover of exactly
 $k$ vertices.
 
-Formalized by `Cslib.Complexity.Karp.vertexCoverDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.vertexCoverDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-np-hard).
 
 ## The CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier as a host component
 
@@ -1613,7 +1613,7 @@ For a mode $m$
 $X, W, C, N, V, T$, each over the symbol alphabet of the SAT verifier, and whose labels and
 program are those of the verifier machine of mode $m$.
 
-Formalized by `Cslib.Complexity.Karp.kgVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#kg-verify-comp).
+Formalized by `Cslib.Complexity.Karp.kgVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#kg-verify-comp).
 
 ## NP membership from the CLIQUE, INDEPENDENT-SET and VERTEX-COVER verifier
 
@@ -1622,19 +1622,19 @@ decision problem, let $m$ be a mode (clique, independent set or vertex cover), a
 the verifier of mode $m$. If for every bit string $x$, $L$ accepts $x$ exactly when there is a
 bit string $w$ with $|w| \le |x|$ such that $V_m$ accepts $(x, w)$, then $L$ is in NP.
 
-Formalized by `Cslib.Complexity.Karp.mem_NP_of_kgCheck`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#mem-np-of-kg-check).
+Formalized by `Cslib.Complexity.Karp.mem_NP_of_kgCheck`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#mem-np-of-kg-check).
 
 ## CLIQUE is in NP
 
 **CLIQUE is in NP**.
 
-Formalized by `Cslib.Complexity.Karp.cliqueDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-mem-np).
+Formalized by `Cslib.Complexity.Karp.cliqueDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-mem-np).
 
 ## INDEPENDENT-SET is in NP
 
 **INDEPENDENT-SET is in NP**.
 
-Formalized by `Cslib.Complexity.Karp.indSetDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-mem-np).
+Formalized by `Cslib.Complexity.Karp.indSetDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-mem-np).
 
 ## VERTEX-COVER (exact size `k`) is in NP
 
@@ -1642,21 +1642,21 @@ The decision problem VERTEX-COVER, which accepts
 exactly the valid encodings of a number $k$ and a graph $G$ such that $G$ has a vertex cover of
 exactly $k$ vertices, is in NP.
 
-Formalized by `Cslib.Complexity.Karp.vertexCoverDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-mem-np).
+Formalized by `Cslib.Complexity.Karp.vertexCoverDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-mem-np).
 
 ## CLIQUE is NP-complete
 
 CLIQUE lies in NP, and every decision problem in NP has a
 polynomial-time many-one reduction to CLIQUE.
 
-Formalized by `Cslib.Complexity.Karp.cliqueDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.cliqueDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#clique-dec-np-complete).
 
 ## INDEPENDENT-SET is NP-complete
 
 INDEPENDENT-SET lies in NP, and every decision problem
 in NP has a polynomial-time many-one reduction to INDEPENDENT-SET.
 
-Formalized by `Cslib.Complexity.Karp.indSetDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.indSetDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#ind-set-dec-np-complete).
 
 ## VERTEX-COVER (exact size `k`) is NP-complete
 
@@ -1665,7 +1665,7 @@ accepts exactly the valid encodings of a number $k$ and a graph $G$ such that $G
 cover of exactly $k$ vertices, is in NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 
-Formalized by `Cslib.Complexity.Karp.vertexCoverDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.vertexCoverDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/CliqueComplete.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/part-08/index.html#vertex-cover-dec-np-complete).
 
 ## Depends on
 
@@ -1674,4 +1674,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Clique, independent set and vertex cover](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/clique-independent-set-and-vertex-cover)

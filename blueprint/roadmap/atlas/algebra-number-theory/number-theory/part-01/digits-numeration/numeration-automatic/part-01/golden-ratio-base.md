@@ -7,7 +7,7 @@ statement: formalized
 
 # Golden ratio base
 
-84 results, 46 proved and 38 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html).
+84 results, 46 proved and 38 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html).
 
 ## Value of a base phi expansion
 
@@ -20,7 +20,7 @@ $S$ and digit $0$ at every other position.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (definition of a base phi representation).
 
-Formalized by `MetaMathlibExt.basePhiValue`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value).
+Formalized by `MetaMathlibExt.basePhiValue`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value).
 
 ## Bergman expansions
 
@@ -32,7 +32,7 @@ expansion when no two digits $1$ are adjacent, that is, $i + 1 \notin S$ for eve
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (Bergman representation).
 
-Formalized by `MetaMathlibExt.IsBergmanExpansion`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-bergman-expansion).
+Formalized by `MetaMathlibExt.IsBergmanExpansion`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-bergman-expansion).
 
 ## Golden mean flips
 
@@ -46,7 +46,7 @@ position $i$ is replaced by digits $1$ at positions $i - 1$ and $i - 2$, which w
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Sections 1 and 2 (the map `T_i`).
 
-Formalized by `MetaMathlibExt.IsGoldenMeanFlip`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-golden-mean-flip).
+Formalized by `MetaMathlibExt.IsGoldenMeanFlip`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-golden-mean-flip).
 
 ## Knott's truncation rule
 
@@ -61,7 +61,7 @@ $R + 2 \notin S$. The empty expansion satisfies the condition.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1, Equation (1.1).
 
-Formalized by `MetaMathlibExt.SatisfiesKnottCondition`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#satisfies-knott-condition).
+Formalized by `MetaMathlibExt.SatisfiesKnottCondition`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#satisfies-knott-condition).
 
 ## Knott expansions
 
@@ -75,7 +75,7 @@ satisfy Knott's condition.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.knottExpansions`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansions).
+Formalized by `MetaMathlibExt.knottExpansions`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansions).
 
 ## Number of Knott expansions
 
@@ -86,7 +86,7 @@ number of Knott expansions of $N$ (OEIS A289749).
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.knottExpansionCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count).
+Formalized by `MetaMathlibExt.knottExpansionCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count).
 
 ## Natural base phi expansions
 
@@ -102,7 +102,7 @@ equal.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.naturalExpansions`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansions).
+Formalized by `MetaMathlibExt.naturalExpansions`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansions).
 
 ## Number of natural expansions
 
@@ -113,7 +113,7 @@ number of natural base phi expansions of $N$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.naturalExpansionCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count).
+Formalized by `MetaMathlibExt.naturalExpansionCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count).
 
 ## Number of Fibonacci representations
 
@@ -127,7 +127,7 @@ the number of ways to write $m$ as a sum of Fibonacci numbers with distinct indi
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (base Fibonacci representations).
 
-Formalized by `MetaMathlibExt.fibonacciRepresentationCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fibonacci-representation-count).
+Formalized by `MetaMathlibExt.fibonacciRepresentationCount`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fibonacci-representation-count).
 
 ## The empty base phi expansion has value zero
 
@@ -138,7 +138,7 @@ positions is $0$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.basePhiValue_empty`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-empty).
+Formalized by `MetaMathlibExt.basePhiValue_empty`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-empty).
 
 ## The single digit $1$ at position $0$ has value one
 
@@ -149,7 +149,7 @@ is $1$, that is, $\varphi^0 = 1$, where $\varphi$ is the golden ratio.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.basePhiValue_singleton_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-singleton-zero).
+Formalized by `MetaMathlibExt.basePhiValue_singleton_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-singleton-zero).
 
 ## The base phi expansion $10.01$ has value two
 
@@ -160,7 +160,7 @@ is $2$, that is, $\varphi + \varphi^{-2} = 2$, where $\varphi$ is the golden rat
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), proof of Proposition 3.1.
 
-Formalized by `MetaMathlibExt.basePhiValue_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-one-neg-two).
+Formalized by `MetaMathlibExt.basePhiValue_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-one-neg-two).
 
 ## The base phi expansion $1.11$ has value two
 
@@ -172,7 +172,7 @@ golden ratio.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 2.
 
-Formalized by `MetaMathlibExt.basePhiValue_zero_neg_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-zero-neg-one-neg-two).
+Formalized by `MetaMathlibExt.basePhiValue_zero_neg_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-value-zero-neg-one-neg-two).
 
 ## The expansion 10.01 is a Bergman expansion
 
@@ -184,7 +184,7 @@ Bergman expansion.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.isBergmanExpansion_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-bergman-expansion-one-neg-two).
+Formalized by `MetaMathlibExt.isBergmanExpansion_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-bergman-expansion-one-neg-two).
 
 ## A golden mean flip from 10.01 to 1.11
 
@@ -196,7 +196,7 @@ and $-1$) gives $1.11$, the expansion with digits $1$ at positions $0$, $-1$ and
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 2.
 
-Formalized by `MetaMathlibExt.isGoldenMeanFlip_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-golden-mean-flip-one-neg-two).
+Formalized by `MetaMathlibExt.isGoldenMeanFlip_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-golden-mean-flip-one-neg-two).
 
 ## A Knott expansion of two
 
@@ -208,7 +208,7 @@ its value is $1 + \varphi^{-1} + \varphi^{-2} = 2$ and it satisfies Knott's trun
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1.
 
-Formalized by `MetaMathlibExt.zero_neg_one_neg_two_mem_knottExpansions`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#zero-neg-one-neg-two-mem-knott-expansion).
+Formalized by `MetaMathlibExt.zero_neg_one_neg_two_mem_knottExpansions`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#zero-neg-one-neg-two-mem-knott-expansion).
 
 ## The expansion 0.11 violates Knott's truncation rule
 
@@ -223,7 +223,7 @@ is not a Knott expansion of $1$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1, Equation (1.1).
 
-Formalized by `MetaMathlibExt.not_satisfiesKnottCondition_neg_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#not-satisfies-knott-condition-neg-one-ne).
+Formalized by `MetaMathlibExt.not_satisfiesKnottCondition_neg_one_neg_two`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#not-satisfies-knott-condition-neg-one-ne).
 
 ## The expansion 10.01 is a natural expansion of 2
 
@@ -236,7 +236,7 @@ It is the Bergman expansion of $2$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.one_neg_two_mem_naturalExpansions`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#one-neg-two-mem-natural-expansions).
+Formalized by `MetaMathlibExt.one_neg_two_mem_naturalExpansions`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#one-neg-two-mem-natural-expansions).
 
 ## Small values of the Fibonacci representation count
 
@@ -250,7 +250,7 @@ $1, 1, 1, 2, 1, 2, 2, 1, 3$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Section 1 (the listed values of `Tot_FIB`).
 
-Formalized by `MetaMathlibExt.fibonacciRepresentationCount_small`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fibonacci-representation-count-small).
+Formalized by `MetaMathlibExt.fibonacciRepresentationCount_small`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fibonacci-representation-count-small).
 
 ## Golden mean flips connect all expansions to the Bergman expansion
 
@@ -263,7 +263,7 @@ golden mean flips $100 \to 011$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.reflTransGen_isGoldenMeanFlip_of_isBergmanExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#refl-trans-gen-is-golden-mean-flip-of-is).
+Stated but not proved: `MetaMathlibExt.reflTransGen_isGoldenMeanFlip_of_isBergmanExpansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#refl-trans-gen-is-golden-mean-flip-of-is).
 
 ## Recursion for the number of Knott expansions
 
@@ -281,7 +281,7 @@ expansions of $N$ is $r_n$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.knottExpansionCount_eq_of_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-eq-of-recursion).
+Stated but not proved: `MetaMathlibExt.knottExpansionCount_eq_of_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-eq-of-recursion).
 
 ## Bergman expansions of the Fibonacci numbers
 
@@ -298,7 +298,7 @@ $(1000)^{n-1}1001$; the position of the radix point is not determined.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.bergmanWord_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-word-fib).
+Stated but not proved: `MetaMathlibExt.bergmanWord_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-word-fib).
 
 ## Knott expansions of Fibonacci numbers
 
@@ -309,7 +309,7 @@ $F_1 = 1$). For every $n \ge 1$, the number of Knott expansions of $F_n$ is $F_n
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 3.2.
 
-Stated but not proved: `MetaMathlibExt.knottExpansionCount_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-fib).
+Stated but not proved: `MetaMathlibExt.knottExpansionCount_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-fib).
 
 ## Knott expansions of Lucas numbers
 
@@ -320,7 +320,7 @@ and $L_{2n+1}$ (with $L_0 = 2$, $L_1 = 1$) has exactly $2n + 1$ Knott expansions
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 3.3.
 
-Stated but not proved: `MetaMathlibExt.knottExpansionCount_lucasNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-lucas-number).
+Stated but not proved: `MetaMathlibExt.knottExpansionCount_lucasNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#knott-expansion-count-lucas-number).
 
 ## Recursion for the number of natural expansions
 
@@ -340,7 +340,7 @@ $s_1$ differs, and $N \ge 2$ is not assumed.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.naturalExpansionCount_eq_of_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-eq-of-recursion).
+Stated but not proved: `MetaMathlibExt.naturalExpansionCount_eq_of_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-eq-of-recursion).
 
 ## Fibonacci numbers in the Lucas intervals
 
@@ -354,7 +354,7 @@ $F_{2n+2} \in \Lambda_{2n}$ and $F_{2n+3} \in \Lambda_{2n+1}$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Lemma 4.2.
 
-Stated but not proved: `MetaMathlibExt.fib_mem_lucasIntervals` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fib-mem-lucas-intervals).
+Stated but not proved: `MetaMathlibExt.fib_mem_lucasIntervals` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fib-mem-lucas-intervals).
 
 ## Natural expansions of Fibonacci numbers
 
@@ -367,7 +367,7 @@ $\mathrm{Tot}_\nu(F_{2n+3}) = F_{2n+3}$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.3.
 
-Stated but not proved: `MetaMathlibExt.naturalExpansionCount_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-fib).
+Stated but not proved: `MetaMathlibExt.naturalExpansionCount_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-fib).
 
 ## Natural expansions are counted by Fibonacci representations
 
@@ -381,7 +381,7 @@ representations of $F_{2-R} N$ as a sum of Fibonacci numbers with distinct indic
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 4.4.
 
-Stated but not proved: `MetaMathlibExt.naturalExpansionCount_eq_fibonacciRepresentationCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-eq-fibonacci-rep).
+Stated but not proved: `MetaMathlibExt.naturalExpansionCount_eq_fibonacciRepresentationCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#natural-expansion-count-eq-fibonacci-rep).
 
 ## Lucas interval of $N$ from the gap between its two lowest Bergman digits
 
@@ -397,7 +397,7 @@ $L_{2n+1} + 1 \le N \le L_{2n+2} - 1$ for some natural number $n$ if and only if
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(a).
 
-Stated but not proved: `MetaMathlibExt.bergman_tail_parity_iff_lucasInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-tail-parity-iff-lucas-interval).
+Stated but not proved: `MetaMathlibExt.bergman_tail_parity_iff_lucasInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-tail-parity-iff-lucas-interval).
 
 ## Lowest Bergman digit of $N$ from its Lucas interval
 
@@ -411,7 +411,7 @@ then $-R = 2n + 2$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(b).
 
-Stated but not proved: `MetaMathlibExt.bergman_lowest_position_lucasInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lowest-position-lucas-interval).
+Stated but not proved: `MetaMathlibExt.bergman_lowest_position_lucasInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lowest-position-lucas-interval).
 
 ## Bergman expansion of $L_{2n} + k$
 
@@ -425,7 +425,7 @@ $T = S \cup \{2n, -2n\}$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 I, quoting F. M. Dekking, *How to add two numbers in base phi*.
 
-Stated but not proved: `MetaMathlibExt.bergman_lucas_even_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lucas-even-add).
+Stated but not proved: `MetaMathlibExt.bergman_lucas_even_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lucas-even-add).
 
 ## Recursive structure of Bergman expansions, odd Lucas case
 
@@ -451,7 +451,7 @@ $T = \{b, b + 3, b + (t - a) + 4, b + (t - a) + 7\} \cup (S' + (b - a + 4))$.
 
 - Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 II, quoting F. M. Dekking, *How to add two numbers in base phi*.
 
-Stated but not proved: `MetaMathlibExt.bergman_lucas_odd_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lucas-odd-add).
+Stated but not proved: `MetaMathlibExt.bergman_lucas_odd_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiRepresentationsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#bergman-lucas-odd-add).
 
 ## Base phi expansion
 
@@ -464,7 +464,7 @@ adjacent: $i \in S$ implies $i + 1 \notin S$) and its value $\sum_{i \in S} \var
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 1 (definition of `β(N)`).
 
-Formalized by `MetaMathlibExt.IsBasePhiExpansion`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion).
+Formalized by `MetaMathlibExt.IsBasePhiExpansion`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion).
 
 ## Base phi expansion of zero
 
@@ -476,7 +476,7 @@ equal to $0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 1.
 
-Formalized by `MetaMathlibExt.isBasePhiExpansion_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion-zero).
+Formalized by `MetaMathlibExt.isBasePhiExpansion_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion-zero).
 
 ## Base phi expansion of one
 
@@ -488,7 +488,7 @@ adjacent digits $1$, and its value $\varphi^0$ equals $1$, where $\varphi$ is th
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Table 1.
 
-Formalized by `MetaMathlibExt.isBasePhiExpansion_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion-one).
+Formalized by `MetaMathlibExt.isBasePhiExpansion_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-base-phi-expansion-one).
 
 ## Digit block of an expansion
 
@@ -504,7 +504,7 @@ and any other letter for the digit $0$; the empty word occurs at every position.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (digit blocks `d_{m-1} ⋯ d_0` and `d_{-1} ⋯ d_{-m}`).
 
-Formalized by `MetaMathlibExt.HasDigitBlock`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block).
+Formalized by `MetaMathlibExt.HasDigitBlock`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block).
 
 ## The empty digit block occurs everywhere
 
@@ -516,7 +516,7 @@ digit block of $S$ at position $k$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6.
 
-Formalized by `MetaMathlibExt.hasDigitBlock_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block-nil).
+Formalized by `MetaMathlibExt.hasDigitBlock_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block-nil).
 
 ## Peeling off the leading letter of a digit block
 
@@ -530,7 +530,7 @@ when $b = 1$, and $w$ occurs as a digit block of $S$ at position $k - 1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6.
 
-Formalized by `MetaMathlibExt.hasDigitBlock_cons`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block-cons).
+Formalized by `MetaMathlibExt.hasDigitBlock_cons`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#has-digit-block-cons).
 
 ## Occurrence set of a digit block
 
@@ -548,7 +548,7 @@ positions $-1, \dots, -\ell$ spell $w$, is the case $k = -1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Sections 6 and 7 (occurrence sequences `R_w`).
 
-Formalized by `MetaMathlibExt.basePhiOccurrences`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-occurrences).
+Formalized by `MetaMathlibExt.basePhiOccurrences`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-occurrences).
 
 ## A base phi expansion of 1 ends in the digit 1
 
@@ -560,7 +560,7 @@ expansion of $1$ has the digit $1$ at position $0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 6.
 
-Formalized by `MetaMathlibExt.one_mem_basePhiOccurrences_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#one-mem-base-phi-occurrences-one).
+Formalized by `MetaMathlibExt.one_mem_basePhiOccurrences_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#one-mem-base-phi-occurrences-one).
 
 ## Generalized Beatty sequence
 
@@ -572,7 +572,7 @@ $n$, including $n = 0$, by $V(p, q, r)(n) = p\lfloor n\varphi \rfloor + qn + r$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 5.
 
-Formalized by `MetaMathlibExt.generalizedBeatty`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty).
+Formalized by `MetaMathlibExt.generalizedBeatty`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty).
 
 ## Generalized Beatty sequence at zero
 
@@ -584,7 +584,7 @@ takes the value $V(p, q, r)(0) = r$ at $n = 0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 (`V₀`).
 
-Formalized by `MetaMathlibExt.generalizedBeatty_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-zero).
+Formalized by `MetaMathlibExt.generalizedBeatty_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-zero).
 
 ## Generalized Beatty sequence at one
 
@@ -596,7 +596,7 @@ takes the value $V(p, q, r)(1) = p + q + r$ at $n = 1$, since $\lfloor \varphi \
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 5.
 
-Formalized by `MetaMathlibExt.generalizedBeatty_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-one).
+Formalized by `MetaMathlibExt.generalizedBeatty_one`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-one).
 
 ## Terms of a generalized Beatty sequence
 
@@ -609,7 +609,7 @@ sequence $V(p, q, r)$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 5.
 
-Formalized by `MetaMathlibExt.beattySet`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set).
+Formalized by `MetaMathlibExt.beattySet`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set).
 
 ## Terms of a generalized Beatty sequence from index zero
 
@@ -622,7 +622,7 @@ generalized Beatty sequence $V(p, q, r)$, which the paper denotes $V_0(p, q, r)$
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6 (definition of `V₀`).
 
-Formalized by `MetaMathlibExt.beattySet₀`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set-2).
+Formalized by `MetaMathlibExt.beattySet₀`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set-2).
 
 ## The value at one is a term of a generalized Beatty sequence
 
@@ -635,7 +635,7 @@ $V(p, q, r)$; it is the term at $n = 1$, since $\lfloor \varphi \rfloor = 1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 5.
 
-Formalized by `MetaMathlibExt.add_add_mem_beattySet`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#add-add-mem-beatty-set).
+Formalized by `MetaMathlibExt.add_add_mem_beattySet`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#add-add-mem-beatty-set).
 
 ## The initial term of a generalized Beatty set
 
@@ -648,7 +648,7 @@ is its term at $n = 0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 6.
 
-Formalized by `MetaMathlibExt.mem_beattySet₀_self`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#mem-beatty-set-self).
+Formalized by `MetaMathlibExt.mem_beattySet₀_self`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#mem-beatty-set-self).
 
 ## The blocks $10^{2m} \cdot 1$ and $10^{2m+1} \cdot 0$ never occur
 
@@ -661,7 +661,7 @@ $d_{2m+1} \cdots d_0 \cdot d_{-1} = 10^{2m+1} \cdot 0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.basePhi_no_block_one_zeros_dot` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-no-block-one-zeros-dot).
+Stated but not proved: `MetaMathlibExt.basePhi_no_block_one_zeros_dot` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-no-block-one-zeros-dot).
 
 ## Propagation principle for base phi expansions
 
@@ -678,7 +678,7 @@ The hypothesis includes $N = 0$, as in the paper's proof.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 2 (a).
 
-Stated but not proved: `MetaMathlibExt.basePhi_propagation_principle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-propagation-principle).
+Stated but not proved: `MetaMathlibExt.basePhi_propagation_principle` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-propagation-principle).
 
 ## Generalized Beatty sequences composed with the Wythoff sequences
 
@@ -693,7 +693,7 @@ $V(p, q, r)(A(n)) = V(p + q, p, r - p)(n)$ and $V(p, q, r)(B(n)) = V(2p + q, p +
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.generalizedBeatty_comp_wythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-comp-wythoff).
+Stated but not proved: `MetaMathlibExt.generalizedBeatty_comp_wythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-comp-wythoff).
 
 ## Complement of the lower Wythoff part of a generalized Beatty sequence
 
@@ -711,7 +711,7 @@ sequences are.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.beattySet_complement_of_lowerWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set-complement-of-lower-wythoff).
+Stated but not proved: `MetaMathlibExt.beattySet_complement_of_lowerWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#beatty-set-complement-of-lower-wythoff).
 
 ## First differences of a generalized Beatty sequence
 
@@ -728,7 +728,7 @@ with $v(n) = V(a - b, 2b - a, r')(n)$ for every $n \ge 1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.generalizedBeatty_diff_eq_fibInf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-diff-eq-fib-inf).
+Stated but not proved: `MetaMathlibExt.generalizedBeatty_diff_eq_fibInf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#generalized-beatty-diff-eq-fib-inf).
 
 ## For $m \ge 2$, no base phi expansion has end block $1\,0^{2m}\,1$
 
@@ -742,7 +742,7 @@ $1 \le i \le 2m$ lies in $S$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.basePhi_no_end_block_one_zeros_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-no-end-block-one-zeros-one).
+Stated but not proved: `MetaMathlibExt.basePhi_no_end_block_one_zeros_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-no-end-block-one-zeros-one).
 
 ## End blocks $u1 \cdot 0$ and $u0 \cdot 0$ of consecutive numbers
 
@@ -761,7 +761,7 @@ $10 \cdot 01$ of $2$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.basePhi_end_block_one_iff_pred` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-block-one-iff-pred).
+Stated but not proved: `MetaMathlibExt.basePhi_end_block_one_iff_pred` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-block-one-iff-pred).
 
 ## Lucas numbers from Fibonacci numbers
 
@@ -773,7 +773,7 @@ $L_j$ is the $j$-th Lucas number ($L_0 = 2$, $L_1 = 1$).
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.fib_add_three_mul_fib_succ_eq_lucasNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fib-add-three-mul-fib-succ-eq-lucas-numb).
+Stated but not proved: `MetaMathlibExt.fib_add_three_mul_fib_succ_eq_lucasNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#fib-add-three-mul-fib-succ-eq-lucas-numb).
 
 ## Border words and codes of Lucas numbers
 
@@ -799,7 +799,7 @@ $C(L_{2n+1}+1) = F_{2n+2} - 1$ and $C(L_{2n+2}-1) = 0$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.basePhi_lucas_border_codes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-lucas-border-codes).
+Stated but not proved: `MetaMathlibExt.basePhi_lucas_border_codes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-lucas-border-codes).
 
 ## The digit blocks $10 \cdot 1$ and $00 \cdot 1$ around the radix point
 
@@ -813,7 +813,7 @@ some integer $n \ge 1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.basePhi_digits_dot_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-digits-dot-one).
+Stated but not proved: `MetaMathlibExt.basePhi_digits_dot_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-digits-dot-one).
 
 ## End blocks of length at most three ending in $0$
 
@@ -832,7 +832,7 @@ Moreover $V_0(1, 2, 0)$ and $V_0(4, 3, 0)$ are each disjoint from $V(3, 1, 1)$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.basePhi_short_end_blocks_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-end-blocks-zero).
+Stated but not proved: `MetaMathlibExt.basePhi_short_end_blocks_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-end-blocks-zero).
 
 ## Short prefixes of the negative parts of base phi expansions
 
@@ -862,7 +862,7 @@ $1010 \cdot 0001$, and contains $12$, whose expansion is $100000 \cdot 101001$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.basePhi_short_negative_prefixes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-negative-prefixes).
+Stated but not proved: `MetaMathlibExt.basePhi_short_negative_prefixes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-negative-prefixes).
 
 ## Embedding of base phi expansions into Zeckendorf expansions
 
@@ -887,7 +887,7 @@ $\{1, 3\}$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.basePhi_positive_part_eq_zeckendorf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-positive-part-eq-zeckendorf).
+Stated but not proved: `MetaMathlibExt.basePhi_positive_part_eq_zeckendorf` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-positive-part-eq-zeckendorf).
 
 ## Recursive structure theorem for base phi expansions, part (A)
 
@@ -918,7 +918,7 @@ position $3$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure).
+Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure).
 
 ## Recursive structure of base phi expansions on Lucas intervals
 
@@ -951,7 +951,7 @@ $N = 10$ give $10\,\beta(6)\,01 = 101010 \cdot 000101$, which is not $\beta(10) 
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure_lucas_intervals` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure-lucas-inter).
+Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure_lucas_intervals` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure-lucas-inter).
 
 ## Short end blocks
 
@@ -971,7 +971,7 @@ $R_{00 \cdot 0} = V_0(1, 2, 0)$ and $R_{00 \cdot 1} = V(3, 1, 1)$, on the number
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.basePhi_short_end_blocks` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-end-blocks).
+Stated but not proved: `MetaMathlibExt.basePhi_short_end_blocks` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-short-end-blocks).
 
 ## End blocks ending in $0$ are Lucas–Wythoff sequences
 
@@ -996,7 +996,7 @@ $V_0(L_{2m+1}, L_{2m}, 0)$ and $V(L_{2m}, L_{2m-1}, 1)$ are disjoint.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.basePhi_end_blocks_lucasWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-blocks-lucas-wythoff).
+Stated but not proved: `MetaMathlibExt.basePhi_end_blocks_lucasWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-blocks-lucas-wythoff).
 
 ## End blocks ending in $1$ are Lucas–Wythoff sequences
 
@@ -1025,7 +1025,7 @@ under the assumption $R_w \ne \emptyset$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.basePhi_end_blocks_one_lucasWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-blocks-one-lucas-wythoff).
+Stated but not proved: `MetaMathlibExt.basePhi_end_blocks_one_lucasWythoff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-end-blocks-one-lucas-wythoff).
 
 ## Every even-length Zeckendorf word ending in $1$ is a negative part
 
@@ -1040,7 +1040,7 @@ some $N$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.basePhi_negative_parts_surject` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-parts-surject).
+Stated but not proved: `MetaMathlibExt.basePhi_negative_parts_surject` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-parts-surject).
 
 ## Recursive structure of the negative parts of base phi expansions
 
@@ -1067,7 +1067,7 @@ $N = 10$ give $\gamma^-(6)\,01 = 0001$ while $\gamma^-(10) = 01$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure_gamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure-gamma).
+Stated but not proved: `MetaMathlibExt.basePhi_recursive_structure_gamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 534](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-recursive-structure-gamma).
 
 ## The codes of the negative parts follow an orbit of addition modulo a Fibonacci number
 
@@ -1087,7 +1087,7 @@ negative positions), and the merged runs are its tridents.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.basePhi_negative_part_order_orbit` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 568](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L568). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-part-order-orbit).
+Stated but not proved: `MetaMathlibExt.basePhi_negative_part_order_orbit` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 568](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L568). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-part-order-orbit).
 
 ## Left end of a Lucas interval
 
@@ -1100,7 +1100,7 @@ is even and $L_m + 1$ when $m$ is odd.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 3 (Lucas intervals).
 
-Formalized by `MetaMathlibExt.lucasIntervalLo`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-lo).
+Formalized by `MetaMathlibExt.lucasIntervalLo`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-lo).
 
 ## Right end of a Lucas interval
 
@@ -1113,7 +1113,7 @@ $m$ is even and $L_{m+1} - 1$ when $m$ is odd.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 3 (Lucas intervals).
 
-Formalized by `MetaMathlibExt.lucasIntervalHi`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-hi).
+Formalized by `MetaMathlibExt.lucasIntervalHi`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-hi).
 
 ## Endpoints of the Lucas interval $\Lambda_3$
 
@@ -1124,7 +1124,7 @@ $5$ and right end $6$, that is, $\Lambda_3 = [5, 6]$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 3.
 
-Formalized by `MetaMathlibExt.lucasInterval_three`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-three).
+Formalized by `MetaMathlibExt.lucasInterval_three`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 595](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L595). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-three).
 
 ## Endpoints of the Lucas interval $\Lambda_4$
 
@@ -1135,7 +1135,7 @@ $7$ and right end $11$, that is, $\Lambda_4 = [7, 11]$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 3.
 
-Formalized by `MetaMathlibExt.lucasInterval_four`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-four).
+Formalized by `MetaMathlibExt.lucasInterval_four`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-four).
 
 ## Endpoints of the Lucas interval $\Lambda_5$
 
@@ -1146,7 +1146,7 @@ $12$ and right end $17$, that is, $\Lambda_5 = [12, 17]$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 3.
 
-Formalized by `MetaMathlibExt.lucasInterval_five`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-five).
+Formalized by `MetaMathlibExt.lucasInterval_five`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 607](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L607). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-five).
 
 ## Lucas tilings
 
@@ -1162,7 +1162,7 @@ tiling of $[a, b]$ exactly when $\ell_k + t = a$ and $P$ is a Lucas tiling of $[
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4 ("a union of adjacent translations" of Lucas intervals).
 
-Formalized by `MetaMathlibExt.IsLucasTiling`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling).
+Formalized by `MetaMathlibExt.IsLucasTiling`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling).
 
 ## Lucas tilings by the empty list
 
@@ -1173,7 +1173,7 @@ Lucas tiling of $[a, b]$ if and only if $a = b + 1$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.isLucasTiling_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 624](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling-nil).
+Formalized by `MetaMathlibExt.isLucasTiling_nil`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 624](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L624). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling-nil).
 
 ## Lucas tilings of a list with a first interval
 
@@ -1187,7 +1187,7 @@ $[h_k + t + 1, b]$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.isLucasTiling_cons`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling-cons).
+Formalized by `MetaMathlibExt.isLucasTiling_cons`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#is-lucas-tiling-cons).
 
 ## Canonical splitting of a Lucas interval
 
@@ -1212,7 +1212,7 @@ $\Lambda_4$ and $\Lambda_5$ is the paper's Theorem 4. Only $m \ge 3$ is used.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4 (canonical splitting).
 
-Formalized by `MetaMathlibExt.canonicalLucasSplitting`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting).
+Formalized by `MetaMathlibExt.canonicalLucasSplitting`, a definition declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting).
 
 ## Canonical splitting of a short Lucas interval
 
@@ -1224,7 +1224,7 @@ $\Lambda_m$ itself.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.canonicalLucasSplitting_of_lt_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 655](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L655). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-of-lt-six).
+Formalized by `MetaMathlibExt.canonicalLucasSplitting_of_lt_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 655](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L655). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-of-lt-six).
 
 ## Recursion for the canonical splitting
 
@@ -1239,7 +1239,7 @@ coordinate of each pair, where $L_j$ is the $j$-th Lucas number.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.canonicalLucasSplitting_add_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-add-six).
+Formalized by `MetaMathlibExt.canonicalLucasSplitting_add_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-add-six).
 
 ## Canonical splitting of the sixth Lucas interval
 
@@ -1253,7 +1253,7 @@ where $L_5 = 11$ and $L_6 = 18$ are Lucas numbers.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Section 4.
 
-Formalized by `MetaMathlibExt.canonicalLucasSplitting_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-six).
+Formalized by `MetaMathlibExt.canonicalLucasSplitting_six`, a theorem declared in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#canonical-lucas-splitting-six).
 
 ## Dekking's Theorem 4: the coding of the canonical splittings of Lucas intervals
 
@@ -1272,7 +1272,7 @@ $n$-fold iterate of $\kappa$ applied to the one-letter word.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.lucasInterval_canonical_splitting_coding` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-canonical-splitting-codin).
+Stated but not proved: `MetaMathlibExt.lucasInterval_canonical_splitting_coding` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#lucas-interval-canonical-splitting-codin).
 
 ## Canonical splitting and coding of unions of two Lucas intervals
 
@@ -1291,7 +1291,7 @@ $a \mapsto 54$, $b \mapsto 34$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.xi_canonical_splitting_coding` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#xi-canonical-splitting-coding).
+Stated but not proved: `MetaMathlibExt.xi_canonical_splitting_coding` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#xi-canonical-splitting-coding).
 
 ## Trident splitting at an even Lucas number
 
@@ -1309,7 +1309,7 @@ the negative part of the base phi expansion.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.basePhi_trident_splitting` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-trident-splitting).
+Stated but not proved: `MetaMathlibExt.basePhi_trident_splitting` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-trident-splitting).
 
 ## The codes of the negative parts follow the golden rotation
 
@@ -1333,7 +1333,7 @@ the paper's worked case $n = 3$, where $\Pi^\beta_6 = 7\,2\,5\,0\,3\,6\,1\,4$.
 
 - F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.basePhi_negative_part_order_rotation` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-part-order-rotation).
+Stated but not proved: `MetaMathlibExt.basePhi_negative_part_order_rotation` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/BasePhiStructureWanted.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html#base-phi-negative-part-order-rotation).
 
 ## Depends on
 
@@ -1342,4 +1342,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Golden ratio base](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/golden-ratio-base)

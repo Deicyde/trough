@@ -8,7 +8,7 @@ proof: formalized
 
 # Complex multiplication of period lattices
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html).
 
 ## Endomorphism ring of a period lattice
 
@@ -18,7 +18,7 @@ $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$. The endomorphism ring of $\
 subring of $\mathbb{C}$ consisting of all $a \in \mathbb{C}$ such that $a z \in \Lambda$ for every
 $z \in \Lambda$.
 
-Formalized by `PeriodPair.endomorphismRing`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html#endomorphism-ring).
+Formalized by `PeriodPair.endomorphismRing`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html#endomorphism-ring).
 
 ## Lattices that are proper ideals
 
@@ -31,7 +31,7 @@ equals $\mathcal{O}$.
 The ambient assumptions that $\mathcal{O}$ is an imaginary quadratic order and that $\Lambda$ is
 an $\mathcal{O}$-ideal are deliberately kept separate from this predicate.
 
-Formalized by `PeriodPair.IsProperIdeal`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html#is-proper-ideal).
+Formalized by `PeriodPair.IsProperIdeal`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Elliptic/ComplexMultiplication.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html#is-proper-ideal).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Complex multiplication of period lattices](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/elliptic-functions/complex-multiplication-of-period-lattices)

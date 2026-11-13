@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectrum of compact operators
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html).
 
 ## Eigenvectors for distinct eigenvalues are not in the span of earlier ones
 
@@ -22,7 +22,7 @@ This is the non-orthogonal replacement for the orthogonality of eigenspaces used
 self-adjoint case: it follows from the fact that the eigenspaces of a linear operator form an
 independent family.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.eigenvector_not_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#eigenvector-not-mem-span-prefix).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.eigenvector_not_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#eigenvector-not-mem-span-prefix).
 
 ## An operator acts as a scalar on a span of eigenvectors modulo a smaller span
 
@@ -36,7 +36,7 @@ $T y - \lambda_n y \in V_n$.
 The proof is induction on the span: each generator $u_i$ with $i < n$ contributes
 $(\lambda_i - \lambda_n) u_i$ and the generator $u_n$ contributes $0$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.sub_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#sub-mem-span-prefix).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.sub_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#sub-mem-span-prefix).
 
 ## Invariance of spans of eigenvectors
 
@@ -46,7 +46,7 @@ $(\lambda_n)_{n \in \mathbb{N}}$ in $\mathbb{K}$ and $(u_n)_{n \in \mathbb{N}}$ 
 $T u_n = \lambda_n u_n$ for every $n$. Then for every $n$ and every $y$ in the linear span of
 $\{u_i : i \le n\}$, the vector $T y$ also lies in that span.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.map_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#map-mem-span-prefix).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.map_mem_span_prefix`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#map-mem-span-prefix).
 
 ## Riesz separation for nested spans
 
@@ -60,7 +60,7 @@ This is Riesz's lemma for the finite-dimensional, hence closed, subspace $V_n$: 
 the normalization of $u_n - z$ for a $z \in V_n$ almost realizing the distance $d > 0$ from
 $u_n$ to $V_n$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.exists_unit_vector_far`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#exists-unit-vector-far).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.exists_unit_vector_far`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#exists-unit-vector-far).
 
 ## Finiteness of eigenvalues of a compact operator bounded away from zero
 
@@ -74,7 +74,7 @@ separation for the spans of the $u_n$, unit vectors $y_n$ whose images $T y_n$ a
 distance at least $\varepsilon / 2$, contradicting compactness of $T$. No self-adjointness, inner
 product or completeness is needed.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.finite_eigenvalues_of_ge`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#finite-eigenvalues-of-ge).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.finite_eigenvalues_of_ge`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#finite-eigenvalues-of-ge).
 
 ## Eigenvalues of a compact operator tend to zero along any injective sequence
 
@@ -87,7 +87,7 @@ Otherwise some $\varepsilon > 0$ would satisfy $|\lambda_n| \ge \varepsilon$ for
 $n$, giving infinitely many eigenvalues of modulus at least $\varepsilon$, which contradicts the
 finiteness of eigenvalues of a compact operator bounded away from zero.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.tendsto_eigenvalue_of_injective`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#tendsto-eigenvalue-of-injective).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues.tendsto_eigenvalue_of_injective`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorEigenvalues.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#tendsto-eigenvalue-of-injective).
 
 ## A compact operator on an infinite-dimensional space is not a unit
 
@@ -95,7 +95,7 @@ If `T` is compact and `E` is infinite-dimensional, then `T` has no
 two-sided inverse among bounded operators. (Completeness of `E` is not
 needed for this statement.)
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.not_isUnit_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#not-is-unit-of-is-compact-operator).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.not_isUnit_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#not-is-unit-of-is-compact-operator).
 
 ## A compact operator on an infinite-dimensional Banach space is not bijective
 
@@ -107,7 +107,7 @@ By the bounded inverse theorem, a bijective bounded operator on a Banach space h
 inverse, so this follows from the fact that a compact operator on an infinite-dimensional space
 has no bounded two-sided inverse.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.not_bijective_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#not-bijective-of-is-compact-operator).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.not_bijective_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#not-bijective-of-is-compact-operator).
 
 ## Zero lies in the spectrum of a compact operator on an infinite-dimensional space
 
@@ -116,7 +116,7 @@ an infinite-dimensional normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{
 a compact bounded linear operator on $E$. Then $0$ lies in the spectrum of $T$ in the algebra of
 bounded linear operators on $E$; that is, $T$ has no bounded two-sided inverse.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.zero_mem_spectrum_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#zero-mem-spectrum-of-is-compact-operator).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit.zero_mem_spectrum_of_isCompactOperator`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/CompactOperatorNotUnit.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html#zero-mem-spectrum-of-is-compact-operator).
 
 ## Depends on
 
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spectrum of compact operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/spectrum-of-compact-operators)

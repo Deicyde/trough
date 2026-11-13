@@ -8,7 +8,7 @@ proof: formalized
 
 # Angle bisector theorem
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html).
 
 ## Angle bisector theorem without distinctness hypotheses
 
@@ -20,7 +20,7 @@ and $C$ and $\angle BAD = \angle DAC$ (unoriented angles), then $BD / DC = AB / 
 The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ of the usual statement are not needed: they
 follow from the others.
 
-Formalized by `MetaMathlibExt.angle_bisector_theorem_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-theorem-general).
+Formalized by `MetaMathlibExt.angle_bisector_theorem_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-theorem-general).
 
 ## Angle bisector theorem
 
@@ -34,7 +34,7 @@ $BD / DC = AB / AC$.
 
 - https://en.wikipedia.org/wiki/Angle_bisector_theorem. It follows from `angle_bisector_theorem_general`; the hypotheses `hAB`, `hAC` and `hAD` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.angle_bisector_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-theorem).
+Formalized by `MetaMathlibExt.angle_bisector_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-theorem).
 
 ## Converse of the angle bisector theorem without distinctness hypotheses
 
@@ -47,7 +47,7 @@ angles), that is, $D$ lies on the internal bisector of the angle at $A$.
 The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ of the usual statement are not needed: they
 follow from the others.
 
-Formalized by `MetaMathlibExt.angle_bisector_converse_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-converse-general).
+Formalized by `MetaMathlibExt.angle_bisector_converse_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-converse-general).
 
 ## Converse of the angle bisector theorem
 
@@ -62,7 +62,7 @@ angle at $A$.
 
 - https://en.wikipedia.org/wiki/Angle_bisector_theorem. It follows from `angle_bisector_converse_general`; the hypotheses `hAB`, `hAC` and `hAD` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.angle_bisector_converse`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-converse).
+Formalized by `MetaMathlibExt.angle_bisector_converse`, a theorem declared in [MathlibExt/Geometry/Euclidean/AngleBisector.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/AngleBisector.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html#angle-bisector-converse).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Angle bisector theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/angle-bisector-theorem)

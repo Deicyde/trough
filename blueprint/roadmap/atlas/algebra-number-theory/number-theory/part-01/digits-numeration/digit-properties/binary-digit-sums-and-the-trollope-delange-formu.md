@@ -7,7 +7,7 @@ statement: formalized
 
 # Binary digit sums and the Trollope–Delange formula
 
-19 results, 15 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html).
+19 results, 15 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html).
 
 ## The $q$-weighted binary digit sum
 
@@ -21,7 +21,7 @@ are nonzero.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1 (definition of `s_q`).
 
-Formalized by `MetaMathlibExt.qWeightedDigitSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum).
+Formalized by `MetaMathlibExt.qWeightedDigitSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum).
 
 ## Partial sums of the $q$-weighted binary digit sum
 
@@ -33,7 +33,7 @@ is the $q$-weighted binary digit sum.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1 (definition of `S_q`).
 
-Formalized by `MetaMathlibExt.qWeightedDigitPartialSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-partial-sum).
+Formalized by `MetaMathlibExt.qWeightedDigitPartialSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-partial-sum).
 
 ## The Takagi–Landsberg function
 
@@ -47,7 +47,7 @@ $|a| < 1$, and at dyadic rationals $x$ it is a finite sum.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1.1, equation (TakagiLandsberg).
 
-Formalized by `MetaMathlibExt.takagiLandsberg`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#takagi-landsberg).
+Formalized by `MetaMathlibExt.takagiLandsberg`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#takagi-landsberg).
 
 ## The $q$-weighted digit sum of zero
 
@@ -58,7 +58,7 @@ $q$-weighted binary digit sum of $0$ is $s_q(0) = 0$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1.
 
-Formalized by `MetaMathlibExt.qWeightedDigitSum_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum-zero).
+Formalized by `MetaMathlibExt.qWeightedDigitSum_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum-zero).
 
 ## Binary recursion for the $q$-weighted digit sum
 
@@ -73,7 +73,7 @@ $s_q(2j+1) = q\,s_q(j) + q$ for $j \ge 0$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, proof of Theorem 1, equations (s(2j)) and (s(2j+1)).
 
-Formalized by `MetaMathlibExt.qWeightedDigitSum_of_pos`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum-of-pos).
+Formalized by `MetaMathlibExt.qWeightedDigitSum_of_pos`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-sum-of-pos).
 
 ## The Takagi–Landsberg function vanishes at zero
 
@@ -84,7 +84,7 @@ the Takagi–Landsberg function satisfies $\mathcal{T}_a(0) = 0$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 1.1.
 
-Formalized by `MetaMathlibExt.takagiLandsberg_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#takagi-landsberg-zero).
+Formalized by `MetaMathlibExt.takagiLandsberg_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#takagi-landsberg-zero).
 
 ## Dyadic values of the normalized $q$-weighted fluctuation
 
@@ -102,7 +102,7 @@ fluctuation $S_q(t_j l) - t_j\,S_q(l)$ at the grid point $t_j$ of $[0, 1]$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.qWeightedDigitPartialSum_dyadic_fluctuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-partial-sum-dyadic-fluc).
+Stated but not proved: `MetaMathlibExt.qWeightedDigitPartialSum_dyadic_fluctuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-digit-partial-sum-dyadic-fluc).
 
 ## The $q$-weighted Trollope–Delange formula
 
@@ -120,7 +120,7 @@ Takagi–Landsberg function.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.qWeighted_trollopeDelange` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-trollope-delange).
+Stated but not proved: `MetaMathlibExt.qWeighted_trollopeDelange` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#q-weighted-trollope-delange).
 
 ## Girgensohn's lemma
 
@@ -135,7 +135,7 @@ integer $n$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Lemma 1, quoting Girgensohn, *Digital Sums and Functional Equations*, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.dyadicMantissa_wellDefined_iff_doubling_invariant` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-mantissa-well-defined-iff-doublin).
+Stated but not proved: `MetaMathlibExt.dyadicMantissa_wellDefined_iff_doubling_invariant` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-mantissa-well-defined-iff-doublin).
 
 ## Carry in adding a natural number to a dyadic integer
 
@@ -149,7 +149,7 @@ defined by $c_0 = 0$ and $c_{i+1} = \lfloor (\omega_i + j_i + c_i)/2 \rfloor$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5 (dyadic integers and the odometer).
 
-Formalized by `MetaMathlibExt.dyadicAddNatCarry`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-add-nat-carry).
+Formalized by `MetaMathlibExt.dyadicAddNatCarry`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-add-nat-carry).
 
 ## Adding a natural number to a dyadic integer
 
@@ -163,7 +163,7 @@ carries are given by $c_0 = 0$ and $c_{i+1} = \lfloor (\omega_i + j_i + c_i)/2 \
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5 (dyadic integers and the odometer).
 
-Formalized by `MetaMathlibExt.dyadicAddNat`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-add-nat).
+Formalized by `MetaMathlibExt.dyadicAddNat`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-add-nat).
 
 ## Dyadic odometer
 
@@ -175,7 +175,7 @@ first), given by $T\omega = \omega + 1$, binary addition of $1$ with carries.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5.
 
-Formalized by `MetaMathlibExt.dyadicOdometer`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-odometer).
+Formalized by `MetaMathlibExt.dyadicOdometer`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-odometer).
 
 ## First digits of the odometer at zero
 
@@ -188,7 +188,7 @@ $T(0)_2 = 0$.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5.
 
-Formalized by `MetaMathlibExt.dyadicOdometer_zero_apply`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-odometer-zero-apply).
+Formalized by `MetaMathlibExt.dyadicOdometer_zero_apply`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-odometer-zero-apply).
 
 ## Haar measure on the dyadic integers
 
@@ -200,7 +200,7 @@ product of the uniform probability measures on $\{0, 1\}$, one for each digit.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5.
 
-Formalized by `MetaMathlibExt.dyadicHaar`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-haar).
+Formalized by `MetaMathlibExt.dyadicHaar`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#dyadic-haar).
 
 ## Odometer partial sums
 
@@ -220,7 +220,7 @@ the function $S_{q,\omega}$ interpolates these values linearly between consecuti
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Sections 4 and 5.
 
-Formalized by `MetaMathlibExt.odometerDigitPartialSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-digit-partial-sum).
+Formalized by `MetaMathlibExt.odometerDigitPartialSum`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-digit-partial-sum).
 
 ## The odometer partial sum vanishes at zero
 
@@ -231,7 +231,7 @@ integer $\omega$, the interpolated odometer partial sum satisfies $S_{q,\omega}(
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 5.
 
-Formalized by `MetaMathlibExt.odometerDigitPartialSum_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-digit-partial-sum-zero).
+Formalized by `MetaMathlibExt.odometerDigitPartialSum_zero`, a theorem declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-digit-partial-sum-zero).
 
 ## Maximal fluctuation of the odometer partial sums
 
@@ -249,7 +249,7 @@ $|\mathcal{S}(t \cdot l_n(x)) - t \cdot \mathcal{S}(l_n)|$".
 
 - Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, Section 2.2 (definition of `φ_n` and `R_n`), and *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3 (definition of the normalization factor `R_n`).
 
-Formalized by `MetaMathlibExt.odometerMaxFluctuation`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-max-fluctuation).
+Formalized by `MetaMathlibExt.odometerMaxFluctuation`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-max-fluctuation).
 
 ## Stabilizing sequence for the dyadic odometer
 
@@ -277,7 +277,7 @@ a limiting curve recorded in the odometer paper.
 
 - Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*, Definition 1 and Section 3.1, restated in *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3.
 
-Formalized by `MetaMathlibExt.IsStabilizingSeq`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#is-stabilizing-seq).
+Formalized by `MetaMathlibExt.IsStabilizingSeq`, a definition declared in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#is-stabilizing-seq).
 
 ## Odometer limiting curve is the negative Takagi–Landsberg function
 
@@ -297,7 +297,7 @@ This is Theorem 2 of the source, which quotes it from the author's earlier work.
 
 - Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.odometer_limitingCurve_eq_neg_takagi` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-limiting-curve-eq-neg-takagi).
+Stated but not proved: `MetaMathlibExt.odometer_limitingCurve_eq_neg_takagi` is written with `theorem_wanted` in [WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QWeightedTrollopeDelangeWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html#odometer-limiting-curve-eq-neg-takagi).
 
 ## Depends on
 
@@ -306,4 +306,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binary digit sums and the Trollope–Delange formula](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/binary-digit-sums-and-the-trollope-delange-formu)

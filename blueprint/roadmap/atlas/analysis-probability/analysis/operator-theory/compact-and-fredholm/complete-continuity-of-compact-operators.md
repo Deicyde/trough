@@ -8,7 +8,7 @@ proof: formalized
 
 # Complete continuity of compact operators
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html).
 
 ## Complete continuity of compact operators
 
@@ -25,7 +25,7 @@ norm to some $a$; but $T$ preserves weak convergence, so $a = T x$ by uniqueness
 limits and the fact that the dual separates points, contradicting the
 $\varepsilon$-separation.
 
-Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_forall_tendsto`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of).
+Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_forall_tendsto`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of).
 
 ## Compact operators send weakly null sequences to norm null sequences
 
@@ -35,7 +35,7 @@ $T : E \to F$ be a compact continuous linear operator. If a sequence $(u_n)$ in 
 weakly to $0$, that is, $f(u_n) \to 0$ for every continuous linear functional
 $f : E \to \mathbb{K}$, then $T u_n \to 0$ in norm.
 
-Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_tendsto_zero`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of-2).
+Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_tendsto_zero`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of-2).
 
 ## Complete continuity of compact operators, weak-topology form
 
@@ -44,7 +44,7 @@ $\mathbb{R}$ or $\mathbb{C}$, let $E$ and $F$ be normed spaces over $\mathbb{K}$
 $T : E \to F$ be a compact continuous linear operator. If a sequence $(u_n)$ in $E$ converges
 to $x \in E$ in the weak topology of $E$, then $T u_n \to T x$ in norm.
 
-Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_tendsto_weakSpace`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of-3).
+Formalized by `MathlibExt.Analysis.Normed.Operator.CompleteContinuity.tendsto_apply_of_isCompactOperator_of_tendsto_weakSpace`, a theorem declared in [MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Operator/CompleteContinuity.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html#tendsto-apply-of-is-compact-operator-of-3).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Complete continuity of compact operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/complete-continuity-of-compact-operators)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Primes in numerical semigroups with two generators
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html).
 
 ## Two representations by coprime generators
 
@@ -21,7 +21,7 @@ The paper's standing assumption $1 < c < d$ is not needed and is dropped.
 
 - Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.twoGenerator_dvd_sub_of_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#two-generator-dvd-sub-of-eq).
+Stated but not proved: `MetaMathlibExt.twoGenerator_dvd_sub_of_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#two-generator-dvd-sub-of-eq).
 
 ## Normal form of a number with exactly $\ell$ representations
 
@@ -37,7 +37,7 @@ paper's standing assumption $1 < c < d$ is weakened to $0 < c$, $0 < d$.
 
 - Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_eq_of_ncard_twoGeneratorReps` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#exists-eq-of-ncard-two-generator-reps).
+Stated but not proved: `MetaMathlibExt.exists_eq_of_ncard_twoGeneratorReps` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#exists-eq-of-ncard-two-generator-reps).
 
 ## Counting primes with more than $\ell$ representations
 
@@ -53,7 +53,7 @@ $x_0 \le d$ and $y_0 \le c$.
 
 - Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 3, with `g_ℓ(c, d)` from equation (1).
 
-Stated but not proved: `MetaMathlibExt.card_primes_ellNumericalSemigroup_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#card-primes-ell-numerical-semigroup-eq).
+Stated but not proved: `MetaMathlibExt.card_primes_ellNumericalSemigroup_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#card-primes-ell-numerical-semigroup-eq).
 
 ## Weighted count of primes in the $\ell$-numerical semigroup
 
@@ -75,7 +75,7 @@ That is, $\psi_{\ell,c,d} \sim g_0(c, d)/2$ as $c \to \infty$, uniformly over co
 
 - Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Proposition 1, with `g_ℓ(c, d)` from equation (1).
 
-Stated but not proved: `MetaMathlibExt.vonMangoldt_sum_ellNumericalSemigroup_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#von-mangoldt-sum-ell-numerical-semigroup).
+Stated but not proved: `MetaMathlibExt.vonMangoldt_sum_ellNumericalSemigroup_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#von-mangoldt-sum-ell-numerical-semigroup).
 
 ## Asymptotic count of primes with more than $\ell$ representations
 
@@ -98,7 +98,7 @@ coprime $d > c$.
 
 - Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Theorem 1, with `g_ℓ(c, d)` from equation (1).
 
-Stated but not proved: `MetaMathlibExt.card_primes_ellNumericalSemigroup_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#card-primes-ell-numerical-semigroup-asym).
+Stated but not proved: `MetaMathlibExt.card_primes_ellNumericalSemigroup_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamirezAlfonsinSkalbaWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html#card-primes-ell-numerical-semigroup-asym).
 
 ## Depends on
 
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Primes in numerical semigroups with two generators](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/numerical-semigroups/primes-in-numerical-semigroups-with-two-generato)

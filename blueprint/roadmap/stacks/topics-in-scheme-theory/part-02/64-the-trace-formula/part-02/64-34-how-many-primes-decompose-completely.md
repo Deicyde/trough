@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.34 How many primes decompose completely?
 
-Section 64.34 of the Stacks Project, [Tag 03W4](https://stacks.math.columbia.edu/tag/03W4). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.34 of the Stacks Project, [Tag 03W4](https://stacks.math.columbia.edu/tag/03W4). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03W5, a proposition
 
 [Tag 03W5](https://stacks.math.columbia.edu/tag/03W5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_closedPoints_frobeniusElements_topologicalClosure_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FrobeniusSplitting/Generation.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FrobeniusSplitting/Generation.lean#L181).
+**`AlgebraicGeometry.exists_finite_closedPoints_frobeniusElements_topologicalClosure_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FrobeniusSplitting/Generation.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FrobeniusSplitting/Generation.lean#L181).
 
 > **Stacks Project, Tag 03W5.** For a smooth, geometrically irreducible, proper curve over a
 > finite field there is a finite set of closed points such that the set of **all** Frobenius elements
@@ -36,4 +36,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.34, Tag 03W4](https://stacks.math.columbia.edu/tag/03W4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.9 Descending properties of spaces
 
-Section 74.9 of the Stacks Project, [Tag 06DP](https://stacks.math.columbia.edu/tag/06DP). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.9 of the Stacks Project, [Tag 06DP](https://stacks.math.columbia.edu/tag/06DP). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06DQ, a lemma
 
 [Tag 06DQ](https://stacks.math.columbia.edu/tag/06DQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyUnibranchAt_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/GeometricallyUnibranch.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/GeometricallyUnibranch.lean#L108).
+**`AlgebraicGeometry.Space.isGeometricallyUnibranchAt_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/GeometricallyUnibranch.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/GeometricallyUnibranch.lean#L108).
 
 > **Stacks 06DQ.** Let `f : F ⟶ G` be a morphism of algebraic spaces over a scheme `S` and
 > let `x` be a point of `|F|`. If `f` is flat at `x` and `F` is geometrically unibranch at `x`,
@@ -31,7 +31,7 @@ theorem isGeometricallyUnibranchAt_of_isFlatAt (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 06MI](https://stacks.math.columbia.edu/tag/06MI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_of_flat_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L41).
+**`AlgebraicGeometry.Space.isReduced_of_flat_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L41).
 
 > A flat surjective morphism of algebraic spaces over `S` whose source is reduced has reduced
 > target.
@@ -53,7 +53,7 @@ theorem isReduced_of_flat_of_surjective
 
 [Tag 06MJ](https://stacks.math.columbia.edu/tag/06MJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyNoetherian_of_isSurjective_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Noetherian.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Noetherian.lean#L85).
+**`AlgebraicGeometry.Space.isLocallyNoetherian_of_isSurjective_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Noetherian.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Noetherian.lean#L85).
 
 > **Stacks 06MJ.** Local Noetherianity passes from the source of a surjective, flat
 > morphism of algebraic spaces over `S` locally of finite presentation to its target.
@@ -80,7 +80,7 @@ theorem isLocallyNoetherian_of_isSurjective_of_isFlat_of_isLocallyOfFinitePresen
 
 [Tag 06MK](https://stacks.math.columbia.edu/tag/06MK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_of_isSurjective_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Regular.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Regular.lean#L109). References: SGA 1 I (9.2), “converse (X reg ⇒ Y reg)”.
+**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_of_isSurjective_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Regular.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Regular.lean#L109). References: SGA 1 I (9.2), “converse (X reg ⇒ Y reg)”.
 
 > **Stacks 06MK.** Regularity passes from the source of a surjective, flat morphism of
 > algebraic spaces over `S` locally of finite presentation to its target.
@@ -107,7 +107,7 @@ theorem hasEtaleLocalProperty_isRegular_of_isSurjective_of_isFlat_of_isLocallyOf
 
 [Tag 0GB3](https://stacks.math.columbia.edu/tag/0GB3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasEtaleLocalPropertyULift_isReduced_of_isSmoothULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L143). The attribute's comment: “reducedness of the source, in an arbitrary value universe”.
+**`AlgebraicGeometry.Space.hasEtaleLocalPropertyULift_isReduced_of_isSmoothULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L143). The attribute's comment: “reducedness of the source, in an arbitrary value universe”.
 
 > **Stacks 0GB3, reducedness of the source**, for presheaves with values in a universe
 > `max w u` independent of the universe `u` of the schemes: a smooth morphism of algebraic spaces
@@ -127,7 +127,7 @@ theorem hasEtaleLocalPropertyULift_isReduced_of_isSmoothULift
     HasEtaleLocalPropertyULift.{w} B S hS F (fun T : Scheme.{u} ↦ IsReduced T)
 ```
 
-**`AlgebraicGeometry.Space.isReduced_of_flat_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L41). The attribute's comment: “reducedness of the target under surjectivity”.
+**`AlgebraicGeometry.Space.isReduced_of_flat_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L41). The attribute's comment: “reducedness of the target under surjectivity”.
 
 > A flat surjective morphism of algebraic spaces over `S` whose source is reduced has reduced
 > target.
@@ -145,7 +145,7 @@ theorem isReduced_of_flat_of_surjective
     HasEtaleLocalProperty B S hS Y (fun T : Scheme.{u} => IsReduced T)
 ```
 
-**`AlgebraicGeometry.Space.isReduced_source_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L64). The attribute's comment: “reducedness of the source”. References: SGA 1 II (3.1), “reduced, Y ⇒ X”.
+**`AlgebraicGeometry.Space.isReduced_source_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/Properties/Reduced.lean#L64). The attribute's comment: “reducedness of the source”. References: SGA 1 II (3.1), “reduced, Y ⇒ X”.
 
 > A smooth morphism of algebraic spaces over `S` whose target is reduced has reduced source.
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.9, Tag 06DP](https://stacks.math.columbia.edu/tag/06DP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

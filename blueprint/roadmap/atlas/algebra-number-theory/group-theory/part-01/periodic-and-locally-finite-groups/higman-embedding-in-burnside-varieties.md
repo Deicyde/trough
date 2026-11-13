@@ -7,7 +7,7 @@ statement: formalized
 
 # Higman embedding in Burnside varieties
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html).
 
 ## Groups finitely presented in a Burnside variety
 
@@ -17,7 +17,7 @@ generators $x_0, \dots, x_{m-1}$ and relators $S$ together with $w^n$ for every 
 free group: the group finitely presented by $S$ in the Burnside variety $\mathfrak{B}_n$ of groups
 of exponent $n$.
 
-Formalized by `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.BurnsidePresented`, an abbreviation declared in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#burnside-presented).
+Formalized by `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.BurnsidePresented`, an abbreviation declared in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#burnside-presented).
 
 ## Kourovka Problem 12.32: Higman embedding for Burnside varieties
 
@@ -31,7 +31,7 @@ every element $w$ of that free group.
 
 The relators are words in the generators, and recursive enumerability refers to these words.
 
-Formalized by `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.higmanEmbeddingBurnsideVariety`, a definition declared in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#higman-embedding-burnside-variety).
+Formalized by `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.higmanEmbeddingBurnsideVariety`, a definition declared in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#higman-embedding-burnside-variety).
 
 ## Higman embedding theorem for Burnside varieties
 
@@ -47,7 +47,7 @@ Olshanskii proves this with the ambient group 2-generated; the statement here do
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 12.32 (S. V. Ivanov); resolution: A. Yu. Olshanskii, Groups finitely presented in Burnside varieties, J. Algebra 560 (2020), 960-1052, Theorem 1.1 (finitely generated groups) and Corollary 1.2 (countably many generators; the ambient group can be taken 2-generated), for all odd n ≥ C; Kourovka Archive, Problem 12.32.
 
-Stated but not proved: `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.higmanEmbeddingBurnsideVariety_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#higman-embedding-burnside-variety-holds).
+Stated but not proved: `MathlibExt.GroupTheory.BurnsideHigmanEmbeddingKourovka12Problem32Wanted.higmanEmbeddingBurnsideVariety_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BurnsideHigmanEmbeddingKourovka12Problem32Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html#higman-embedding-burnside-variety-holds).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Higman embedding in Burnside varieties](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/higman-embedding-in-burnside-varieties)

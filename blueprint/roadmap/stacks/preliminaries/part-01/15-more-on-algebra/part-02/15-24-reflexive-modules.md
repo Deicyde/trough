@@ -8,7 +8,7 @@ proof: formalized
 
 # 15.24 Reflexive modules
 
-Section 15.24 of the Stacks Project, [Tag 0AUY](https://stacks.math.columbia.edu/tag/0AUY). 20 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.24 of the Stacks Project, [Tag 0AUY](https://stacks.math.columbia.edu/tag/0AUY). 20 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AUZ, a definition
 
@@ -16,13 +16,13 @@ Section 15.24 of the Stacks Project, [Tag 0AUY](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`Module.IsReflexive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.IsReflexive#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Reflexive.lean, line 2851](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L2851) (StacksFrontier).
+- [`Module.IsReflexive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.IsReflexive#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/Reflexive.lean, line 2851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L2851) (StacksFrontier).
 
 ## Tag 0AV0, a lemma
 
 [Tag 0AV0](https://stacks.math.columbia.edu/tag/0AV0) in the Stacks Project.
 
-**`isTorsionFree_of_isReflexive_and_dualEval_isTorsion_and_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L425).
+**`isTorsionFree_of_isReflexive_and_dualEval_isTorsion_and_injective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L425).
 
 > **Stacks Tag 0AV0.** A reflexive module over a domain is torsion-free. For a finite module,
 > the kernel and cokernel of the canonical evaluation map into the double dual are torsion,
@@ -45,7 +45,7 @@ theorem isTorsionFree_of_isReflexive_and_dualEval_isTorsion_and_injective_iff
 
 [Tag 0B36](https://stacks.math.columbia.edu/tag/0B36) in the Stacks Project.
 
-**`surjective_dualEval_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 679](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L679).
+**`surjective_dualEval_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L679).
 
 > **Stacks Tag 0B36.** The canonical evaluation map from a finite module over a Dedekind domain
 > to its double dual is surjective.
@@ -61,7 +61,7 @@ theorem surjective_dualEval_of_finite
 
 [Tag 0AV1](https://stacks.math.columbia.edu/tag/0AV1) in the Stacks Project.
 
-**`reflexive_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive/Localization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive/Localization.lean#L186).
+**`reflexive_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive/Localization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive/Localization.lean#L186).
 
 > **Stacks 0AV1**.
 > Let `R` be a Noetherian ring and `M` a finite `R`-module. The following are equivalent: `M` is
@@ -84,7 +84,7 @@ theorem reflexive_tfae
 
 [Tag 0EB8](https://stacks.math.columbia.edu/tag/0EB8) in the Stacks Project.
 
-**`isReflexive_of_exact_of_isReflexive_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L446).
+**`isReflexive_of_exact_of_isReflexive_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L446).
 
 > **Stacks Tag 0EB8.** Let `R` be a Noetherian domain and let `0 → M → M' → M''` be an exact
 > sequence of finite `R`-modules. If `M'` is reflexive and `M''` is torsion-free, then `M` is
@@ -107,7 +107,7 @@ theorem isReflexive_of_exact_of_isReflexive_of_isTorsionFree
 
 [Tag 0AV2](https://stacks.math.columbia.edu/tag/0AV2) in the Stacks Project.
 
-**`isReflexive_iff_exists_finFree_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L526).
+**`isReflexive_iff_exists_finFree_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L526).
 
 > **Stacks Tag 0AV2.** A finite module over a Noetherian domain is reflexive if and only if it
 > fits into a short exact sequence `0 → M → F → N → 0` with `F` finite free and `N`
@@ -128,7 +128,7 @@ theorem isReflexive_iff_exists_finFree_shortExact
 
 [Tag 0EB9](https://stacks.math.columbia.edu/tag/0EB9) in the Stacks Project.
 
-**`isReflexive_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L636).
+**`isReflexive_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L636).
 
 > **Stacks Tag 0EB9.** A finite reflexive module over a Noetherian domain remains reflexive
 > after flat base change to a Noetherian domain. The base-changed module is automatically
@@ -147,7 +147,7 @@ theorem isReflexive_baseChange_of_flat
 
 [Tag 0AV3](https://stacks.math.columbia.edu/tag/0AV3) in the Stacks Project.
 
-**`isReflexive_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L612).
+**`isReflexive_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L612).
 
 > **Stacks Tag 0AV3.** Over a Noetherian domain, the module of linear maps from a finite module
 > into a finite reflexive module is reflexive.
@@ -165,7 +165,7 @@ theorem isReflexive_linearMap
 
 [Tag 0AV4](https://stacks.math.columbia.edu/tag/0AV4) in the Stacks Project.
 
-**`Module.reflexiveHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L116).
+**`Module.reflexiveHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L116).
 
 > **Stacks Tag 0AV4.** The reflexive hull of an `R`-module `M` is its double dual
 > `Hom_R(Hom_R(M, R), R)`.
@@ -179,7 +179,7 @@ abbrev Module.reflexiveHull (R : Type u) [CommSemiring R]
 
 [Tag 0AV5](https://stacks.math.columbia.edu/tag/0AV5) in the Stacks Project.
 
-**`one_le_depth_and_two_le_depth_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L730).
+**`one_le_depth_and_two_le_depth_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L730).
 
 > **Stacks Tag 0AV5.** If `M` and `N` are finite modules over a Noetherian local ring, then
 > `Hom(M, N)` has depth at least one (respectively, at least two) whenever `N` does.
@@ -199,7 +199,7 @@ theorem one_le_depth_and_two_le_depth_linearMap
 
 [Tag 0AV6](https://stacks.math.columbia.edu/tag/0AV6) in the Stacks Project.
 
-**`propertySk_linearMap_one_two_and_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 843](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L843).
+**`propertySk_linearMap_one_two_and_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 843](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L843).
 
 > **Stacks Tag 0AV6.** For finite modules `M` and `N` over a Noetherian ring, the module
 > `Hom_R(M, N)` inherits `(S₁)` and `(S₂)` from `N`; if the ring is a domain, it also
@@ -220,7 +220,7 @@ theorem propertySk_linearMap_one_two_and_isTorsionFree
 
 [Tag 0AV7](https://stacks.math.columbia.edu/tag/0AV7) in the Stacks Project.
 
-**`injective_of_injective_localized_at_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AssociatedPrime/Injective.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AssociatedPrime/Injective.lean#L42).
+**`injective_of_injective_localized_at_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AssociatedPrime/Injective.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AssociatedPrime/Injective.lean#L42).
 
 > Stacks Tag 0AV7. If for every prime ideal `p` of the Noetherian ring `R` either
 > the localized map `φ_p : M_p → N_p` is injective or `p` is not an associated prime
@@ -237,7 +237,7 @@ theorem injective_of_injective_localized_at_associatedPrimes (φ : M →ₗ[R] N
 
 [Tag 0AV8](https://stacks.math.columbia.edu/tag/0AV8) in the Stacks Project.
 
-**`bijective_of_bijective_localized_or_depth_two_and_notMem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1009](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1009).
+**`bijective_of_bijective_localized_or_depth_two_and_notMem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1009](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1009).
 
 > **Stacks Tag 0AV8.** A map from a finite module over a Noetherian ring is bijective if, at
 > every prime, it is bijective after localization or the localized source has depth at least two
@@ -260,7 +260,7 @@ theorem bijective_of_bijective_localized_or_depth_two_and_notMem_associatedPrime
 
 [Tag 0AV9](https://stacks.math.columbia.edu/tag/0AV9) in the Stacks Project.
 
-**`bijective_of_bijective_localized_or_depth_two_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1120).
+**`bijective_of_bijective_localized_or_depth_two_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1120).
 
 > **Stacks Tag 0AV9.** A map from a finite nonzero module to a torsion-free module over a
 > Noetherian domain is bijective if, at every prime, either its localization is bijective or the
@@ -284,7 +284,7 @@ theorem bijective_of_bijective_localized_or_depth_two_of_isTorsionFree
 
 [Tag 0AVA](https://stacks.math.columbia.edu/tag/0AVA) in the Stacks Project.
 
-**`isReflexive_iff_localized_isReflexive_or_depth_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1177).
+**`isReflexive_iff_localized_isReflexive_or_depth_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1177).
 
 > **Stacks Tag 0AVA.** A finite module over a Noetherian domain is reflexive if and only if, at
 > every prime, its localization is reflexive or has depth at least two.
@@ -305,7 +305,7 @@ theorem isReflexive_iff_localized_isReflexive_or_depth_two
 
 [Tag 0EBA](https://stacks.math.columbia.edu/tag/0EBA) in the Stacks Project.
 
-**`depth_localized_ge_two_and_propertyS2_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 868](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L868).
+**`depth_localized_ge_two_and_propertyS2_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L868).
 
 > **Stacks Tag 0EBA.** A finite reflexive module over a Noetherian commutative ring has depth at
 > least two at a prime whenever the localized ring does, and inherits Serre's condition `(S₂)`
@@ -329,7 +329,7 @@ theorem depth_localized_ge_two_and_propertyS2_of_isReflexive
 
 [Tag 0EBB](https://stacks.math.columbia.edu/tag/0EBB) in the Stacks Project.
 
-**`mvPolynomial_adjoin_reflexive_propertyS2_module_not_propertyS2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 2811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L2811).
+**`mvPolynomial_adjoin_reflexive_propertyS2_module_not_propertyS2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 2811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L2811).
 
 > **Stacks Tag 0EBB.** The subalgebra `R = k[1, y, x², xy, x³]` of `k[x, y]` is a
 > Noetherian domain which is not `(S₂)`.  Both `R` and `k[x, y]` are reflexive as
@@ -362,7 +362,7 @@ theorem mvPolynomial_adjoin_reflexive_propertyS2_module_not_propertyS2
 
 [Tag 0AVB](https://stacks.math.columbia.edu/tag/0AVB) in the Stacks Project.
 
-**`isReflexive_isTorsionFree_propertyS2_intersection_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1418). References: EGA 0 (23.2.9), “special case”; EGA IV (7.8.3), “(viii), special case”.
+**`isReflexive_isTorsionFree_propertyS2_intersection_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1418). References: EGA 0 (23.2.9), “special case”; EGA IV (7.8.3), “(viii), special case”.
 
 > **Stacks Tag 0AVB.** Let `R` be a Noetherian normal domain and `M` a finite `R`-module. The
 > following are equivalent: `M` is reflexive; `M` is torsion-free and satisfies `(S₂)`; and `M` is
@@ -388,7 +388,7 @@ theorem isReflexive_isTorsionFree_propertyS2_intersection_tfae
 
 [Tag 0AVC](https://stacks.math.columbia.edu/tag/0AVC) in the Stacks Project.
 
-**`reflexiveHull_eq_iInf_localization_mod_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1597). References: EGA 0 (23.2.9), “special case”.
+**`reflexiveHull_eq_iInf_localization_mod_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1597). References: EGA 0 (23.2.9), “special case”.
 
 > **Stacks Tag 0AVC.** Let `R` be a Noetherian normal domain and `M` a finite `R`-module. Inside
 > the generic fibre, the reflexive hull `M⁎⁎` is the intersection over height-one primes `p` of
@@ -424,7 +424,7 @@ theorem reflexiveHull_eq_iInf_localization_mod_torsion
 
 [Tag 0BM4](https://stacks.math.columbia.edu/tag/0BM4) in the Stacks Project.
 
-**`integralClosure_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Reflexive.lean#L1657).
+**`integralClosure_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Reflexive.lean, line 1657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Reflexive.lean#L1657).
 
 > **Stacks Tag 0BM4.** If `A` is a Noetherian normal domain, `K` is its fraction field, and `L`
 > is a finite extension of `K`, then a module-finite integral closure of `A` in `L` is reflexive as
@@ -446,4 +446,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.24, Tag 0AUY](https://stacks.math.columbia.edu/tag/0AUY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

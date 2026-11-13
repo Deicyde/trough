@@ -7,7 +7,7 @@ statement: formalized
 
 # Randomized, interactive and quantum complexity: its own results
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html).
 
 Probabilistic classes (RP, BPP), Arthur–Merlin and interactive proofs (AM, MA, IP = PSPACE, graph (non)isomorphism), BPP versus nonuniform and alternating classes, randomized reductions (Valiant–Vazirani), and quantum classes BQP and QMA.
 
@@ -20,7 +20,7 @@ P/poly.
 
 - L. Adleman, "Two theorems on random polynomial time", Proceedings of the Nineteenth Annual Symposium on Foundations of Computer Science (FOCS 1978), 75-83.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Adleman.adleman` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/AdlemanWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/AdlemanWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#adleman).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Adleman.adleman` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/AdlemanWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/AdlemanWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#adleman).
 
 ## IP = PSPACE (Shamir)
 
@@ -34,7 +34,7 @@ machines in polynomial space.
 
 - A. Shamir, "IP = PSPACE", Journal of the ACM 39 (1992), 869-877 (FOCS 1990); see also C. Lund, L. Fortnow, H. Karloff, and N. Nisan, "Algebraic methods for interactive proof systems", Journal of the ACM 39 (1992), 859-868.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.IPEqualsPSPACE.ip_eq_pspace` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/IPEqualsPSPACEWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/IPEqualsPSPACEWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#ip-eq-pspace).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.IPEqualsPSPACE.ip_eq_pspace` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/IPEqualsPSPACEWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/IPEqualsPSPACEWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#ip-eq-pspace).
 
 ## Sipser-Gács-Lautemann: BPP is in $\Sigma_2^p$ and $\Pi_2^p$
 
@@ -47,7 +47,7 @@ $\forall$ respectively.
 
 - M. Sipser, "A complexity theoretic approach to randomness", Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC 1983), 330-335; P. Gács (unpublished); C. Lautemann, "BPP and the polynomial hierarchy", Information Processing Letters 17 (1983), 215-217.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.SipserGacs.sipser_gacs_lautemann` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/SipserGacsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/SipserGacsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#sipser-gacs-lautemann).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.SipserGacs.sipser_gacs_lautemann` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/SipserGacsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/SipserGacsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html#sipser-gacs-lautemann).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Randomized, interactive and quantum complexity](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity)

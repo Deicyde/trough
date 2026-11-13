@@ -7,7 +7,7 @@ statement: formalized
 
 # Rogers–Ramanujan continued fraction
 
-4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html).
+4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html).
 
 ## The real Rogers–Ramanujan continued fraction
 
@@ -29,7 +29,7 @@ Rogers–Ramanujan continued fraction, where $(c; q)_\infty = \prod_{m \ge 0} (1
 
 - S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Section 1 (the Rogers-Ramanujan continued fraction formula).
 
-Formalized by `MetaMathlibExt.rogersRamanujanContFracReal`, a definition declared in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-cont-frac-real).
+Formalized by `MetaMathlibExt.rogersRamanujanContFracReal`, a definition declared in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-cont-frac-real).
 
 ## The Rogers–Ramanujan continued fraction vanishes at zero
 
@@ -40,7 +40,7 @@ continued fraction $R$ satisfies $R(0) = 0$.
 
 - S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Section 1 (the Rogers-Ramanujan continued fraction formula).
 
-Formalized by `MetaMathlibExt.rogersRamanujanContFracReal_zero`, a theorem declared in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-cont-frac-real-zero).
+Formalized by `MetaMathlibExt.rogersRamanujanContFracReal_zero`, a theorem declared in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-cont-frac-real-zero).
 
 ## Golden-ratio relation for the Rogers–Ramanujan continued fraction
 
@@ -70,7 +70,7 @@ $q' = e^{\pi i z'}$ with $z z' = -1$.
 
 - S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 1, Equation (3).
 
-Stated but not proved: `MetaMathlibExt.rogersRamanujan_golden_ratio_theta_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-golden-ratio-theta-rela).
+Stated but not proved: `MetaMathlibExt.rogersRamanujan_golden_ratio_theta_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-golden-ratio-theta-rela).
 
 ## Eta-quotient form of the Gladun–Chaudhary theta coefficient
 
@@ -94,7 +94,7 @@ as $E_5^5/E_{25} + 20q\,E_1^4E_{25}/E_5 + 110q^2E_1^3E_{25}^2/E_5 + 350q^3E_1^2E
 
 - S. E. Gladun and M. P. Chaudhary, *Connecting Ramanujan's Theta Functions, the Rogers-Ramanujan Continued Fraction, and the Golden Ratio*, INTEGERS 25 (2025), Article A43, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.rogersRamanujan_theta_coeff_eta_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-theta-coeff-eta-quotien).
+Stated but not proved: `MetaMathlibExt.rogersRamanujan_theta_coeff_eta_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersRamanujanGoldenRatioWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html#rogers-ramanujan-theta-coeff-eta-quotien).
 
 ## Depends on
 
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rogers–Ramanujan continued fraction](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/rogers-ramanujan-continued-fraction)

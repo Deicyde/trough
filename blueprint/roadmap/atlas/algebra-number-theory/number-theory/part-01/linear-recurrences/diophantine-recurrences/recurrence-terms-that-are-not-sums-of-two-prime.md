@@ -7,7 +7,7 @@ statement: formalized
 
 # Recurrence terms that are not sums of two prime powers
 
-8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html).
+8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html).
 
 ## Sums of two prime powers
 
@@ -19,7 +19,7 @@ exponents may be $0$, the number $1 = p^0$ counts as a prime power here.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3.
 
-Formalized by `MetaMathlibExt.IsSumOfTwoPrimePowers`, a definition declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#is-sum-of-two-prime-powers).
+Formalized by `MetaMathlibExt.IsSumOfTwoPrimePowers`, a definition declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#is-sum-of-two-prime-powers).
 
 ## $2$ is a sum of two prime powers
 
@@ -30,7 +30,7 @@ $2 = 2^0 + 2^0$.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3.
 
-Formalized by `MetaMathlibExt.isSumOfTwoPrimePowers_two`, a theorem declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#is-sum-of-two-prime-powers-two).
+Formalized by `MetaMathlibExt.isSumOfTwoPrimePowers_two`, a theorem declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#is-sum-of-two-prime-powers-two).
 
 ## Integers below $2$ are not sums of two prime powers
 
@@ -41,7 +41,7 @@ then $n$ is not a sum of two prime powers, since every prime power $p^a$ is at l
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3.
 
-Formalized by `MetaMathlibExt.not_isSumOfTwoPrimePowers_of_lt_two`, a theorem declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#not-is-sum-of-two-prime-powers-of-lt-two).
+Formalized by `MetaMathlibExt.not_isSumOfTwoPrimePowers_of_lt_two`, a theorem declared in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#not-is-sum-of-two-prime-powers-of-lt-two).
 
 ## Infinitely many Tribonacci numbers are not sums of two prime powers
 
@@ -58,7 +58,7 @@ on how the sequence is indexed.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 2 (`jis-2026-26.2.3-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.tribonacci_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#tribonacci-infinite-not-is-sum-of-two-pr).
+Stated but not proved: `MetaMathlibExt.tribonacci_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#tribonacci-infinite-not-is-sum-of-two-pr).
 
 ## Infinitely many Padovan numbers are not sums of two prime powers
 
@@ -76,7 +76,7 @@ on how the sequence is indexed.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 3 (`jis-2026-26.2.3-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.shiftedPadovan_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#shifted-padovan-infinite-not-is-sum-of-t).
+Stated but not proved: `MetaMathlibExt.shiftedPadovan_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#shifted-padovan-infinite-not-is-sum-of-t).
 
 ## Infinitely many Perrin numbers are not sums of two prime powers
 
@@ -92,7 +92,7 @@ depends on how the sequence is indexed.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 5 (`jis-2026-26.2.3-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.perrin_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#perrin-infinite-not-is-sum-of-two-prime).
+Stated but not proved: `MetaMathlibExt.perrin_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#perrin-infinite-not-is-sum-of-two-prime).
 
 ## Infinitely many Leonardo numbers are not sums of two prime powers
 
@@ -109,7 +109,7 @@ on how the sequence is indexed.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Theorem 6 (`jis-2026-26.2.3-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.leonardo_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#leonardo-infinite-not-is-sum-of-two-prim).
+Stated but not proved: `MetaMathlibExt.leonardo_infinite_not_isSumOfTwoPrimePowers` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#leonardo-infinite-not-is-sum-of-two-prim).
 
 ## Third-order recurrences with infinitely many terms not sums of two prime powers
 
@@ -128,7 +128,7 @@ prime powers.
 
 - Baczkowski and Keener, *Third-Order Recurrence Sequences with Infinitely Many Terms not Equal to the Sum of Two Prime Powers*, Journal of Integer Sequences 29 (2026), Article 26.2.3, Corollary 1 (`jis-2026-26.2.3-cor-1`).
 
-Stated but not proved: `MetaMathlibExt.infinite_thirdOrderRecurrence_with_infinite_not_isSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#infinite-third-order-recurrence-with-inf).
+Stated but not proved: `MetaMathlibExt.infinite_thirdOrderRecurrence_with_infinite_not_isSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ThirdOrderPrimePowersWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html#infinite-third-order-recurrence-with-inf).
 
 ## Depends on
 
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Recurrence terms that are not sums of two prime powers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/recurrence-terms-that-are-not-sums-of-two-prime)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Dynamic table
 
-32 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html).
+32 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html).
 
 ## Dynamic table
 
@@ -16,7 +16,7 @@ A dynamic table with items of type $\alpha$ consists of an array of slots
 $s_0, \dots, s_{m-1}$, each either empty or holding an item of type $\alpha$, together with an
 item count $n$ satisfying $n \le m$. The number $m$ of slots is the capacity of the table.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.Table`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.Table`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table).
 
 ## Well-formed dynamic table
 
@@ -26,7 +26,7 @@ the occupied slots are exactly the first $n$.
 
 The items held in the occupied slots are not constrained.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.WellFormed`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#well-formed).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.WellFormed`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#well-formed).
 
 ## Characterization of well-formed dynamic tables
 
@@ -34,7 +34,7 @@ A dynamic table with slots
 $s_0, \dots, s_{m-1}$ and item count $n$ is well formed if and only if, for every $i < m$, slot
 $s_i$ is occupied exactly when $i < n$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.wellFormed_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#well-formed-iff).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.wellFormed_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#well-formed-iff).
 
 ## Contents of a dynamic table
 
@@ -45,7 +45,7 @@ prefix are skipped.
 
 The insertion procedure never consults the contents.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.contents`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#contents).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.contents`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#contents).
 
 ## Formula for the contents of a dynamic table
 
@@ -54,21 +54,21 @@ $s_0, \dots, s_{m-1}$, each empty or holding an item, and item count $n \le m$. 
 $T$ is the array obtained from the prefix $s_0, \dots, s_{n-1}$ by skipping the empty slots and
 keeping the items of the occupied ones, in order.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.contents_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#contents-eq).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.contents_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#contents-eq).
 
 ## Empty dynamic table
 
 The empty dynamic table is the table with no slots (capacity $0$)
 and item count $0$. It models a table before its first allocation.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.empty`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#empty).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.empty`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#empty).
 
 ## The empty dynamic table has no slots and no items
 
 The empty dynamic table has an empty
 slot array, so capacity $0$, and item count $0$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.empty_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#empty-eq).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.empty_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#empty-eq).
 
 ## TABLE-INSERT
 
@@ -79,7 +79,7 @@ current capacity $c$, allocate $2c$ empty slots and copy the $c$ old slots into 
 them, at cost $1$ per copied slot. Finally write $x$ into slot $n$, at cost $1$, and set the item
 count to $n + 1$. The result is the new table together with the total cost.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert).
 
 ## Inserting an array of items into a dynamic table
 
@@ -89,7 +89,7 @@ from $T$ and inserting $x_0, x_1, \dots, x_{k-1}$ one at a time with TABLE-INSER
 order. Its cost is the sum of the costs of the $k$ insertions; for an empty array the result is
 $T$ at cost $0$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many).
 
 ## Insertion increases the item count by one
 
@@ -97,7 +97,7 @@ For every dynamic table $T$ with item count $n$
 and every item $x$, the table returned by inserting $x$ into $T$ with TABLE-INSERT has item count
 $n + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_num`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-num).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_num`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-num).
 
 ## Capacity after an insertion
 
@@ -106,7 +106,7 @@ Let $T$ be a dynamic table with item count $n$ and capacity
 TABLE-INSERT has capacity $1$ if $m = 0$, capacity $2m$ if $m > 0$ and $n = m$, and capacity $m$
 otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-size).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-size).
 
 ## Cost of an insertion
 
@@ -114,7 +114,7 @@ Let $T$ be a dynamic table with item count $n$ and capacity $m$, and
 let $x$ be an item. Inserting $x$ into $T$ with TABLE-INSERT costs $1 + n$ if $m > 0$ and $n = m$,
 and costs $1$ otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-time).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_time`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-time).
 
 ## Amortized cost of dynamic-table insertion
 
@@ -124,7 +124,7 @@ If inserting an item $x$ into $T$ has cost $c$ and returns the table $T'$, then
 $c + \Phi(T') - \Phi(T) \le 3$. Here the cost of an insertion is one unit for writing $x$ plus
 one unit for each old slot copied when a full table is doubled.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_amortized`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-amortized).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_amortized`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-amortized).
 
 ## Slots after an insertion
 
@@ -133,14 +133,14 @@ $s_0, \dots, s_{m-1}$ and item count $n$, let $x$ be an item, and let $T'$ be th
 by inserting $x$ into $T$ with TABLE-INSERT, with capacity $m'$. Then the slots of $T'$ are
 $s_0, \dots, s_{n-1}$, followed by a slot holding $x$, followed by $m' - (n + 1)$ empty slots.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_slots`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-slots).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_slots`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-slots).
 
 ## Insertion preserves well-formedness
 
 If $T$ is a well-formed dynamic table and $x$ is an
 item, then the table returned by inserting $x$ into $T$ with TABLE-INSERT is well formed.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-well-formed).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-well-formed).
 
 ## Insertion appends to the contents
 
@@ -148,7 +148,7 @@ If $T$ is a well-formed dynamic table and $x$ is an
 item, then the contents of the table obtained by inserting $x$ into $T$ are the contents of $T$
 followed by $x$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-contents).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsert_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-contents).
 
 ## Repeated insertion preserves well-formedness of a dynamic table
 
@@ -158,7 +158,7 @@ when $i < n$. If a dynamic table $T$ is well formed, then for every array $xs$, 
 obtained from $T$ by inserting the entries of $xs$ one at a time with TABLE-INSERT, in array
 order, is again well formed.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-well-formed).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-well-formed).
 
 ## Inserting an array appends it to the contents
 
@@ -167,7 +167,7 @@ and $x_1, \dots, x_k$ is an array of items, then inserting $x_1, \dots, x_k$ int
 time, in this order, gives a table whose contents are the contents of $T$ followed by
 $x_1, \dots, x_k$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-contents).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-contents).
 
 ## Capacity after inserting into the empty table
 
@@ -175,7 +175,7 @@ Starting from the empty dynamic table
 and inserting the items of an array of length $k$ one at a time, the resulting table has
 capacity (number of slots) at most $2k$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_size_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-size-le).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_size_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-size-le).
 
 ## Total cost of insertions into the empty table
 
@@ -184,7 +184,7 @@ and inserting the items of an array of length $k$ one at a time, the total cost 
 $3k$, where each insertion costs one unit for writing the new item plus one unit for each old
 slot copied when a full table is doubled.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-time-le).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-time-le).
 
 ## Strict cost bound for nonempty insertion sequences
 
@@ -195,7 +195,7 @@ is less than $3k$.
 The bound is strict because the first insertion, which allocates the first slot, has amortized
 cost $2$ rather than $3$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_time_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 600](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-time-lt).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_time_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean, line 600](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Basic.lean#L600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-insert-many-time-lt).
 
 ## Lookup in a dynamic table
 
@@ -204,7 +204,7 @@ each empty or holding an item, and item count $n \le m$. The lookup at logical p
 returns the item held by $s_i$ when $i < n$ and $s_i$ is occupied; it returns no value when
 $i < n$ and $s_i$ is empty, and when $i \ge n$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get).
 
 ## Lookup beyond the item count returns nothing
 
@@ -212,7 +212,7 @@ Let $T$ be a dynamic table with item count
 $n$. For every natural number $i \ge n$, the lookup at logical position $i$ in $T$ returns no
 value.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_eq_none_of_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-eq-none-of-le).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_eq_none_of_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-eq-none-of-le).
 
 ## Lookup succeeds exactly below the item count
 
@@ -220,7 +220,7 @@ Let $T$ be a well-formed dynamic table
 holding $n$ items. For every natural number $i$, the lookup at logical position $i$ in $T$
 returns a value if and only if $i < n$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_isSome_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-is-some-iff).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_isSome_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-is-some-iff).
 
 ## Deletion from a dynamic table
 
@@ -232,14 +232,14 @@ $s_0, \dots, s_{n-2}$ followed by $\lfloor m/2 \rfloor - (n-1)$ empty slots, so 
 $\lfloor m/2 \rfloor$, and item count $n-1$. Otherwise the result has the slots of $T$ with
 $s_{n-1}$ made empty, and item count $n-1$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete).
 
 ## Item count after deletion
 
 Applying deletion to a dynamic table with item count $n$ gives
 a table with item count $n - 1$ when $n \ge 1$, and item count $0$ when $n = 0$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_num`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-num).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_num`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-num).
 
 ## Capacity after deletion
 
@@ -247,7 +247,7 @@ Let $T$ be a dynamic table with capacity $m$ and item count $n$,
 and apply deletion to $T$. If $n = 0$, the capacity stays $m$. If $n \ge 1$ and $4(n-1) < m$, the
 new capacity is $\lfloor m/2 \rfloor$. Otherwise the capacity stays $m$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-size).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_size`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-size).
 
 ## Slots after deletion
 
@@ -256,7 +256,7 @@ $s_0, \dots, s_{m-1}$ holding $n \ge 1$ items, and let $m'$ be the capacity of t
 by applying deletion to $T$. The slots of that table are the first $n - 1$ slots
 $s_0, \dots, s_{n-2}$ of $T$ followed by $m' - (n - 1)$ empty slots.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_slots`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-slots).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_slots`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-slots).
 
 ## Deletion preserves well-formedness
 
@@ -264,7 +264,7 @@ Let $T$ be a well-formed dynamic table, that is, its
 occupied slots are exactly its first $n$ slots, where $n$ is its item count. Then the table
 obtained by applying deletion to $T$ is again well-formed.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-well-formed).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_wellFormed`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-well-formed).
 
 ## Deletion removes the last item from the contents
 
@@ -272,7 +272,7 @@ Let $T$ be a well-formed dynamic table.
 The contents of the table obtained by applying deletion to $T$ is the contents of $T$ with its
 last entry removed; when the contents of $T$ is empty, it stays empty.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-contents).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.tableDelete_contents`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#table-delete-contents).
 
 ## Deletion preserves lookups below the last position
 
@@ -281,7 +281,7 @@ table holding $n$ items, and let $i$ be a natural number with $i < n - 1$. After
 deletion to $T$, the lookup at logical position $i$ returns the same result as the lookup at
 position $i$ in $T$.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_delete_of_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-delete-of-lt).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_delete_of_lt`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-delete-of-lt).
 
 ## Lookup at the vacated position after deletion
 
@@ -289,7 +289,7 @@ Let $T$ be a dynamic table with item count
 $n$, where $n - 1$ is read as $0$ when $n = 0$. After applying deletion to $T$, the lookup at
 logical position $n - 1$ returns no value.
 
-Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_delete_last`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-delete-last).
+Formalized by `Cslib.Algorithms.Lean.DynamicTable.get?_delete_last`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/DynamicTable/Delete.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html#get-delete-last).
 
 ## Depends on
 
@@ -298,4 +298,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dynamic table](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/data-structures/linear-structures/dynamic-table)

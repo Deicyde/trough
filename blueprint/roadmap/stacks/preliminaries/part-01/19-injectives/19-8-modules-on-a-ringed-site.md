@@ -8,13 +8,13 @@ proof: formalized
 
 # 19.8 Modules on a ringed site
 
-Section 19.8 of the Stacks Project, [Tag 01DQ](https://stacks.math.columbia.edu/tag/01DQ). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 19.8 of the Stacks Project, [Tag 01DQ](https://stacks.math.columbia.edu/tag/01DQ). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01DR, a lemma
 
 [Tag 01DR](https://stacks.math.columbia.edu/tag/01DR) in the Stacks Project.
 
-**`Stacks.Duality.shortExact_internalHomMapLeft_of_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L382). The attribute's comment: “for sheaves of modules on a ringed space, against the sequence of a sheaf of ideals; the library's `Stacks.Injectives.AbelianDual.dualFunctor_shortExact_of_injective` is the statement for the abelian-sheaf internal Hom against an injective abelian sheaf instead”.
+**`Stacks.Duality.shortExact_internalHomMapLeft_of_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Sweep/NormalSheafAsSheafExt.lean#L382). The attribute's comment: “for sheaves of modules on a ringed space, against the sequence of a sheaf of ideals; the library's `Stacks.Injectives.AbelianDual.dualFunctor_shortExact_of_injective` is the statement for the abelian-sheaf internal Hom against an injective abelian sheaf instead”.
 
 > **[Stacks, Tag 01DR] for sheaves of modules, on the ideal sequence.** For an injective sheaf
 > of `𝒪_Y`-modules `K` the internal Hom `𝓗om_{𝒪_Y}(-, K)` carries `0 ⟶ ℐ ⟶ 𝒪_Y ⟶ 𝒪_X ⟶ 0` to a
@@ -39,7 +39,7 @@ public lemma shortExact_internalHomMapLeft_of_injective
         rfl)).ShortExact
 ```
 
-**`internalHom_exact_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean, line 897](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean#L897). References: SGA 4 V (4.10), “1), A = Z”.
+**`internalHom_exact_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean, line 897](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean#L897). References: SGA 4 V (4.10), “1), A = Z”.
 
 > **Statement 1 (Stacks Tag 01DR, abelian-sheaf level).**
 > Let `J` be an injective abelian sheaf on a site `(C, K)`. Then the contravariant
@@ -56,7 +56,7 @@ theorem internalHom_exact_of_injective (K : GrothendieckTopology C) [HasSheafify
     (S.op.map (internalHomFunctor K J)).ShortExact
 ```
 
-**`Stacks.Injectives.AbelianDual.dualFunctor_shortExact_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean#L1248). The attribute's comment: “module-valued exactness”.
+**`Stacks.Injectives.AbelianDual.dualFunctor_shortExact_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/InternalHomExact.lean#L1248). The attribute's comment: “module-valued exactness”.
 
 > **Stacks 01DR (Lemma 19.8.1), the statement itself.** The functor `F ↦ F^∨`, with its
 > natural `O`-module structure, is exact when `J` is an injective abelian sheaf: it carries a
@@ -82,7 +82,7 @@ theorem dualFunctor_shortExact_of_injective
 
 [Tag 01DS](https://stacks.math.columbia.edu/tag/01DS) in the Stacks Project.
 
-**`Stacks.Injectives.DualEvaluation.evaluation_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/DualEvaluationMono.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/DualEvaluationMono.lean#L330).
+**`Stacks.Injectives.DualEvaluation.evaluation_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/DualEvaluationMono.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/DualEvaluationMono.lean#L330).
 
 > For every sheaf of `O`-modules `F` on a ringed site the evaluation map `ev : F ⟶ (F^∨)^∨`
 > into the double dual is a monomorphism, the dual being taken against the dualizing sheaf of the
@@ -97,7 +97,7 @@ theorem evaluation_mono (F : SheafOfModules.{u} (underlyingRingSheaf O)) :
 
 [Tag 01DT](https://stacks.math.columbia.edu/tag/01DT) in the Stacks Project.
 
-**`Stacks.Injectives.DualEvaluation.injective_standardModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/StandardInjectiveModule.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/StandardInjectiveModule.lean#L221).
+**`Stacks.Injectives.DualEvaluation.injective_standardModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/StandardInjectiveModule.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/StandardInjectiveModule.lean#L221).
 
 > For every sheaf `F` of `O`-modules the standard module `J(F) = Fr(F^∨)^∨` is an injective
 > `O`-module.
@@ -111,7 +111,7 @@ theorem injective_standardModule (F : SheafOfModules.{u} (underlyingRingSheaf O)
 
 [Tag 01DU](https://stacks.math.columbia.edu/tag/01DU) in the Stacks Project.
 
-**`Stacks.Injectives.sheafOfModules_hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean#L111).
+**`Stacks.Injectives.sheafOfModules_hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean#L111).
 
 > **Stacks Project, Tag 01DU.** The category of sheaves of modules over a sheaf of rings on
 > a site has functorial injective embeddings (and consequently enough injectives).
@@ -125,13 +125,13 @@ theorem sheafOfModules_hasFunctorialInjectiveEmbeddings
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsGrothendieckAbelian.enoughInjectives`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsGrothendieckAbelian.enoughInjectives#doc) registered with `add_to_stacks` in [StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean#L56) (StacksFrontier): “enough injectives”. References: SGA 3 I (5.3.1.1), “more general”; SGA 4 I (7.13); SGA 4 V (0.1.1); SGA 4 V (0.2.1); SGA 4 V (2.5.2), “more general”.
+- [`CategoryTheory.IsGrothendieckAbelian.enoughInjectives`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsGrothendieckAbelian.enoughInjectives#doc) registered with `add_to_stacks` in [StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/ModulesOnRingedSite.lean#L56) (StacksFrontier): “enough injectives”. References: SGA 3 I (5.3.1.1), “more general”; SGA 4 I (7.13); SGA 4 V (0.1.1); SGA 4 V (0.2.1); SGA 4 V (2.5.2), “more general”.
 
 ## Tag 01DV, a proposition
 
 [Tag 01DV](https://stacks.math.columbia.edu/tag/01DV) in the Stacks Project.
 
-**`Stacks.Injectives.presheafOfModules_hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/PresheavesOfModules.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Sheaf/PresheavesOfModules.lean#L198). References: SGA 3 I (3.1.2), “more general”.
+**`Stacks.Injectives.presheafOfModules_hasFunctorialInjectiveEmbeddings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Sheaf/PresheavesOfModules.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Sheaf/PresheavesOfModules.lean#L198). References: SGA 3 I (3.1.2), “more general”.
 
 > **Stacks Project, Tag 01DV.** The category of presheaves of modules over a presheaf of
 > rings has functorial injective embeddings (and consequently enough injectives).
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 19.8, Tag 01DQ](https://stacks.math.columbia.edu/tag/01DQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

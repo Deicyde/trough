@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.29 Change of residue field
 
-Section 90.29 of the Stacks Project, [Tag 07W7](https://stacks.math.columbia.edu/tag/07W7). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.29 of the Stacks Project, [Tag 07W7](https://stacks.math.columbia.edu/tag/07W7). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07W8, a situation
 
 [Tag 07W8](https://stacks.math.columbia.edu/tag/07W8) in the Stacks Project.
 
-**`Deformation.ChangeOfFieldsSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L104). The attribute's comment: “the standing situation”.
+**`Deformation.ChangeOfFieldsSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L104). The attribute's comment: “the standing situation”.
 
 > **Stacks Project, Tag 07W8.** The standing finite tower of fields over the
 > Noetherian base ring `Λ`.
@@ -23,7 +23,7 @@ Section 90.29 of the Stacks Project, [Tag 07W7](https://stacks.math.columbia.edu
 public structure ChangeOfFieldsSituation
 ```
 
-**`Deformation.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L340). The attribute's comment: “the comparison functor”.
+**`Deformation.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L340). The attribute's comment: “the comparison functor”.
 
 > **Stacks Project, Tag 07W8.** The canonical comparison functor sending
 > `B` to `B ×_l k`, with its prescribed algebra, residue and morphism maps.
@@ -34,7 +34,7 @@ public noncomputable def comparisonFunctor
     ComparisonFunctor.{u, v, w, x} S
 ```
 
-**`Deformation.changeOfFieldsProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L454). The attribute's comment: “the associated projection”.
+**`Deformation.changeOfFieldsProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L454). The attribute's comment: “the associated projection”.
 
 > **Stacks Project, Tag 07W8.** The projection
 > `p_{l/k} : F_{l/k} ⟶ 𝒞_{Λ,l}` associated to `p : F ⟶ 𝒞_{Λ,k}`.
@@ -47,7 +47,7 @@ public def changeOfFieldsProjection (S : ChangeOfFieldsSituation.{u, v, w})
       ArtinianLocalAlgCat.{u, x, w} S.Λ S.l
 ```
 
-**`Deformation.changeOfFieldsFiberInclusion_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L494). The attribute's comment: “the fibers”.
+**`Deformation.changeOfFieldsFiberInclusion_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L494). The attribute's comment: “the fibers”.
 
 > **Stacks Project, Tag 07W8.** The canonical fiber inclusion is an equivalence.
 > This fixes the identification of the changed fiber with the original fiber over
@@ -63,7 +63,7 @@ public theorem changeOfFieldsFiberInclusion_isEquivalence
     (changeOfFieldsFiberInclusion S p B).IsEquivalence
 ```
 
-**`Deformation.changeOfFieldsProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L582). The attribute's comment: “cofibered in groupoids”.
+**`Deformation.changeOfFieldsProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L582). The attribute's comment: “cofibered in groupoids”.
 
 > **Stacks Project, Tag 07W8.** The projection obtained by change of residue field is
 > cofibered in groupoids whenever the original projection is.
@@ -83,13 +83,13 @@ public theorem changeOfFieldsProjection_isCofiberedInGroupoids
 
 Declarations registered for the tag:
 
-- [`comparisonFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=comparisonFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L695) (StacksFrontier).
+- [`comparisonFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=comparisonFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L695) (StacksFrontier).
 
 ## Tag 07WA, a lemma
 
 [Tag 07WA](https://stacks.math.columbia.edu/tag/07WA) in the Stacks Project.
 
-**`Deformation.changeOfFieldsIsoClassMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L720). The attribute's comment: “isomorphism\_classes”.
+**`Deformation.changeOfFieldsIsoClassMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L720). The attribute's comment: “isomorphism\_classes”.
 
 > The canonical fiber inclusion induces a bijection on isomorphism classes,
 > without restricting the universe of the total category.
@@ -104,7 +104,7 @@ public theorem changeOfFieldsIsoClassMap_bijective
     Function.Bijective (changeOfFieldsIsoClassMap S p B)
 ```
 
-**`Deformation.changeOfFieldsIsoClassMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L757). The attribute's comment: “isomorphism\_classes”.
+**`Deformation.changeOfFieldsIsoClassMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L757). The attribute's comment: “isomorphism\_classes”.
 
 > Naturality of the canonical identification on representative classes: a
 > coCartesian pushforward and the change-of-fields fiber inclusion commute on
@@ -143,7 +143,7 @@ public theorem changeOfFieldsIsoClassMap_naturality
           (changeOfFieldsProjection S p).op.Fiber (Opposite.op C))
 ```
 
-**`Deformation.changeOfFieldsProjection_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L1025). The attribute's comment: “predeformation”.
+**`Deformation.changeOfFieldsProjection_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Basic.lean#L1025). The attribute's comment: “predeformation”.
 
 > Changing the residue field of a predeformation category along `k → l`
 > again gives a predeformation category.
@@ -158,7 +158,7 @@ public theorem changeOfFieldsProjection_isPredeformationCategory
       (changeOfFieldsProjection.{u, v, w, max x w, y, z} S p)
 ```
 
-**`Deformation.schlessingerConditionS1_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L688). The attribute's comment: “condition (S1)”.
+**`Deformation.schlessingerConditionS1_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L688). The attribute's comment: “condition (S1)”.
 
 > A change of residue field preserves Schlessinger's condition (S1).
 
@@ -172,7 +172,7 @@ public theorem schlessingerConditionS1_changeOfFields
       (changeOfFieldsProjection S p)
 ```
 
-**`Deformation.schlessingerConditionS2_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L707). The attribute's comment: “condition (S2)”.
+**`Deformation.schlessingerConditionS2_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L707). The attribute's comment: “condition (S2)”.
 
 > A change of residue field preserves Schlessinger's condition (S2) for a functor cofibered
 > in groupoids.
@@ -188,7 +188,7 @@ public theorem schlessingerConditionS2_changeOfFields
       (changeOfFieldsProjection S p)
 ```
 
-**`Deformation.changeOfFieldsProjection_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L881). The attribute's comment: “condition (RS)”.
+**`Deformation.changeOfFieldsProjection_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsConditionS2.lean#L881). The attribute's comment: “condition (RS)”.
 
 > A change of residue field preserves the Rim-Schlessinger condition (RS).
 
@@ -205,7 +205,7 @@ public theorem changeOfFieldsProjection_satisfiesRS
 
 [Tag 07WB](https://stacks.math.columbia.edu/tag/07WB) in the Stacks Project.
 
-**`Deformation.tangentSpaceChangeOfFields`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean, line 1567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean#L1567).
+**`Deformation.tangentSpaceChangeOfFields`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean, line 1567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean#L1567).
 
 ```lean
 public noncomputable def tangentSpaceChangeOfFields
@@ -213,7 +213,7 @@ public noncomputable def tangentSpaceChangeOfFields
     (𝓕 : BasedCategory.{z, y} (ArtinianLocalAlgCat.{u, v, v} S.Λ S.k))
     (hp : IsPredeformationCategory 𝓕.p)
     (hS2 : SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 hp.cofibered))) :
+      (Functor.Elements.π (isomorphismClasses 𝓕 hp.cofibered))) :
     let q := changeOfFieldsProjection.{u, v, v, v, y, z} S 𝓕.p
     let hq := changeOfFieldsProjection_isPredeformationCategory
       S 𝓕.p hp
@@ -222,11 +222,11 @@ public noncomputable def tangentSpaceChangeOfFields
       ⟨ChangeOfFieldsCategory S 𝓕.p, inferInstance, q⟩
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨hp⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses
+      (Functor.Elements.π (isomorphismClasses
         𝓕 hp.cofibered))) := ⟨hS2⟩
     letI : Fact (IsPredeformationCategory 𝓖.p) := ⟨hq⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses
+      (Functor.Elements.π (isomorphismClasses
         𝓖 hq.cofibered))) :=
       ⟨associatedSchlessingerConditionS2_changeOfFields S 𝓕 hp hS2⟩
     letI : AddCommGroup (artinianTangentSpace S.Λ S.k
@@ -248,7 +248,7 @@ public noncomputable def tangentSpaceChangeOfFields
         (isomorphismClasses 𝓖 hq.cofibered)
 ```
 
-**`Deformation.tangentSpaceChangeOfFields_tmul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean, line 1859](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean#L1859). The attribute's comment: “canonical pure-tensor formula”.
+**`Deformation.tangentSpaceChangeOfFields_tmul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean, line 1859](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFieldsTangentSpace.lean#L1859). The attribute's comment: “canonical pure-tensor formula”.
 
 > The scalar-extension equivalence sends a tangent vector tensored with `1`
 > to its image under the canonical map on square-zero extensions and the
@@ -260,7 +260,7 @@ public theorem tangentSpaceChangeOfFields_tmul_one
     (𝓕 : BasedCategory.{z, y} (ArtinianLocalAlgCat.{u, v, v} S.Λ S.k))
     (hp : IsPredeformationCategory 𝓕.p)
     (hS2 : SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓕 hp.cofibered))) :
+      (Functor.Elements.π (isomorphismClasses 𝓕 hp.cofibered))) :
     let q := changeOfFieldsProjection.{u, v, v, v, y, z} S 𝓕.p
     let hq := changeOfFieldsProjection_isPredeformationCategory
       S 𝓕.p hp
@@ -275,7 +275,7 @@ public theorem tangentSpaceChangeOfFields_tmul_one
     let j : A ⟶ C := (canonicalDualNumberInclusion S).val
     letI : Fact (IsPredeformationCategory 𝓕.p) := ⟨hp⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses
+      (Functor.Elements.π (isomorphismClasses
         𝓕 hp.cofibered))) := ⟨hS2⟩
     letI : AddCommGroup (artinianTangentSpace S.Λ S.k
       (isomorphismClasses 𝓕 hp.cofibered)) :=
@@ -296,7 +296,7 @@ public theorem tangentSpaceChangeOfFields_tmul_one
 
 [Tag 07WC](https://stacks.math.columbia.edu/tag/07WC) in the Stacks Project.
 
-**`Deformation.existsUnique_infinitesimalAutomorphismsChangeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/ChangeOfFields.lean, line 1765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/InfinitesimalAutomorphism/ChangeOfFields.lean#L1765).
+**`Deformation.existsUnique_infinitesimalAutomorphismsChangeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/InfinitesimalAutomorphism/ChangeOfFields.lean, line 1762](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/InfinitesimalAutomorphism/ChangeOfFields.lean#L1762).
 
 > **Stacks Project, Tag 07WC.** For a deformation category over the residue field `k`, the
 > space of infinitesimal automorphisms extends by scalars along `k → l` to the space of
@@ -356,7 +356,7 @@ public theorem existsUnique_infinitesimalAutomorphismsChangeOfFields
 
 [Tag 07WD](https://stacks.math.columbia.edu/tag/07WD) in the Stacks Project.
 
-**`Deformation.isSmooth_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Comparison.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Comparison.lean#L329).
+**`Deformation.isSmooth_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Comparison.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ResidueField/Comparison.lean#L329).
 
 > **Stacks Project, Tag 07WD.** A smooth morphism of categories over the
 > Artinian algebras with residue field `k` remains smooth after changing the
@@ -377,7 +377,7 @@ public theorem isSmooth_changeOfFields
 
 [Tag 0DQF](https://stacks.math.columbia.edu/tag/0DQF) in the Stacks Project.
 
-**`Deformation.exists_versal_formalObject_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFields.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/ChangeOfFields.lean#L1022).
+**`Deformation.exists_versal_formalObject_changeOfFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/ChangeOfFields.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/ChangeOfFields.lean#L1022).
 
 > **Stacks Project, Tag 0DQF.** For a versal formal object `ξ` of a category cofibered in
 > groupoids over `𝒞_{Λ,k}`, there is a Noetherian complete local `Λ`-algebra with residue field
@@ -413,4 +413,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.29, Tag 07W7](https://stacks.math.columbia.edu/tag/07W7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

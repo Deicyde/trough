@@ -7,7 +7,7 @@ statement: formalized
 
 # Geometric-progression-free sets of Hurwitz quaternions
 
-13 results, 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html).
+13 results, 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html).
 
 ## Number of Hurwitz quaternions of a given norm
 
@@ -22,7 +22,7 @@ the sum of the odd divisors of $N$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.card_hurwitz_norm_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#card-hurwitz-norm-eq).
+Stated but not proved: `MetaMathlibExt.card_hurwitz_norm_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#card-hurwitz-norm-eq).
 
 ## Counting Hurwitz quaternions of bounded norm
 
@@ -47,7 +47,7 @@ where $\varphi$ is Euler's totient function and the product runs over the primes
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.card_hurwitz_norm_le_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#card-hurwitz-norm-le-asymptotic).
+Stated but not proved: `MetaMathlibExt.card_hurwitz_norm_le_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#card-hurwitz-norm-le-asymptotic).
 
 ## Density of Hurwitz quaternions whose norm has prescribed prime exponents
 
@@ -68,7 +68,7 @@ the product running over the odd primes $p$. Here $6/\pi^2 = 1/\zeta(2)$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.density_hurwitz_norm_valuations_in` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#density-hurwitz-norm-valuations-in).
+Stated but not proved: `MetaMathlibExt.density_hurwitz_norm_valuations_in` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#density-hurwitz-norm-valuations-in).
 
 ## Density of Hurwitz quaternions with norm in Rankin's greedy set
 
@@ -93,7 +93,7 @@ $1/\zeta(2) = 6/\pi^2$, and gives its value as approximately $0.782643$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Theorem 7 (restated as the unnumbered theorem of the introduction).
 
-Stated but not proved: `MetaMathlibExt.density_hurwitz_norm_in_rankin_greedy` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#density-hurwitz-norm-in-rankin-greedy).
+Stated but not proved: `MetaMathlibExt.density_hurwitz_norm_in_rankin_greedy` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#density-hurwitz-norm-in-rankin-greedy).
 
 ## Upper density of Hurwitz quaternions with norms in a lacunary union of intervals
 
@@ -113,7 +113,7 @@ $17665627/18662400$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 10 (the set `𝒮` from Section 4.1).
 
-Stated but not proved: `MetaMathlibExt.upperDensity_hurwitz_norm_in_interval_union` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#upper-density-hurwitz-norm-in-interval-u).
+Stated but not proved: `MetaMathlibExt.upperDensity_hurwitz_norm_in_interval_union` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#upper-density-hurwitz-norm-in-interval-u).
 
 ## Many disjoint geometric progressions among Hurwitz quaternions
 
@@ -135,7 +135,7 @@ for every natural number $N \ge 2$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.disjoint_progressions_hurwitz_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#disjoint-progressions-hurwitz-card).
+Stated but not proved: `MetaMathlibExt.disjoint_progressions_hurwitz_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#disjoint-progressions-hurwitz-card).
 
 ## Upper bound for geometric-progression-free Hurwitz sets
 
@@ -152,7 +152,7 @@ upper density $\limsup_{N \to \infty} |A \cap S(N)| / |S(N)|$ of $A$ is at most 
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.upperDensity_le_of_hurwitz_gpFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#upper-density-le-of-hurwitz-gp-free).
+Stated but not proved: `MetaMathlibExt.upperDensity_le_of_hurwitz_gpFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#upper-density-le-of-hurwitz-gp-free).
 
 ## Bounds on the supremum of upper densities of geometric-progression-free Hurwitz sets
 
@@ -171,7 +171,7 @@ densities of such sets. Then $17665627/18662400 \le \bar m_{\mathrm{Hur}} \le 20
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Theorem 14 (restated as the unnumbered theorem of the introduction).
 
-Stated but not proved: `MetaMathlibExt.sSup_upperDensity_hurwitz_gpFree_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#s-sup-upper-density-hurwitz-gp-free-boun).
+Stated but not proved: `MetaMathlibExt.sSup_upperDensity_hurwitz_gpFree_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#s-sup-upper-density-hurwitz-gp-free-boun).
 
 ## Squarefree norms and the lower density of the quaternion greedy set
 
@@ -193,7 +193,7 @@ where $\zeta(3) = \sum_{n \ge 1} n^{-3}$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 17.
 
-Stated but not proved: `MetaMathlibExt.quaternionGreedy_squarefree_norm_and_lowerDensity` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-squarefree-norm-and-lo).
+Stated but not proved: `MetaMathlibExt.quaternionGreedy_squarefree_norm_and_lowerDensity` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-squarefree-norm-and-lo).
 
 ## The quaternion greedy set is not determined by norms
 
@@ -210,7 +210,7 @@ $\mathcal{G}$ is not the set of Hurwitz quaternions whose norm lies in $G$.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 18.
 
-Stated but not proved: `MetaMathlibExt.quaternionGreedy_ne_norm_preimage` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-ne-norm-preimage).
+Stated but not proved: `MetaMathlibExt.quaternionGreedy_ne_norm_preimage` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-ne-norm-preimage).
 
 ## The quaternion greedy set and the norm preimage of Rankin's set differ infinitely
 
@@ -230,7 +230,7 @@ $\mathcal{G} \setminus S(G^*_3)$ and $S(G^*_3) \setminus \mathcal{G}$ are infini
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 19.
 
-Stated but not proved: `MetaMathlibExt.quaternionGreedy_diff_rankin_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-diff-rankin-infinite).
+Stated but not proved: `MetaMathlibExt.quaternionGreedy_diff_rankin_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-diff-rankin-infinite).
 
 ## Hurwitz quaternions of square norm that are not a unit times a square
 
@@ -247,7 +247,7 @@ viewed as a quaternion with zero imaginary part, is such a quaternion.
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 20.
 
-Stated but not proved: `MetaMathlibExt.exists_hurwitz_norm_sq_not_unit_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#exists-hurwitz-norm-sq-not-unit-mul-sq).
+Stated but not proved: `MetaMathlibExt.exists_hurwitz_norm_sq_not_unit_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#exists-hurwitz-norm-sq-not-unit-mul-sq).
 
 ## Quaternions of prime-square norm separating the greedy set from Rankin's set
 
@@ -269,7 +269,7 @@ $Q \in \mathcal{G} \setminus S(G^*_3)$ and $Q^2 \in S(G^*_3) \setminus \mathcal{
 
 - Asada, Fang, Fourakis, Manski, McNew, Miller, Moreland, Yamin, and Zhang, *Avoiding 3-Term Geometric Progressions in Hurwitz Quaternions*, J. Integer Seq. 27 (2024), Article 24.7.7, Proposition 21.
 
-Stated but not proved: `MetaMathlibExt.quaternionGreedy_mem_of_not_unit_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-mem-of-not-unit-mul-sq).
+Stated but not proved: `MetaMathlibExt.quaternionGreedy_mem_of_not_unit_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzGeometricProgressionFreeWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html#quaternion-greedy-mem-of-not-unit-mul-sq).
 
 ## Depends on
 
@@ -278,4 +278,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Geometric-progression-free sets of Hurwitz quaternions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/additive-number-theory/geometric-progression-free-sets-of-hurwitz-quate)

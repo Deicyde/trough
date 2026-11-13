@@ -7,7 +7,7 @@ statement: formalized
 
 # Valiant–Vazirani theorem
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html).
 
 ## SAT with a unary variable count as a decision problem
 
@@ -18,7 +18,7 @@ variable occurring in $\varphi$ is less than $m$ and some assignment of booleans
 $0, \dots, m - 1$ satisfies $\varphi$ once it is extended by assigning false to every variable
 $v \ge m$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.satDec'`, a definition declared in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#sat-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.satDec'`, a definition declared in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#sat-dec).
 
 ## UniqueSAT with a unary variable count as a decision problem
 
@@ -29,7 +29,7 @@ every variable occurring in $\varphi$ is less than $m$ and exactly one assignmen
 the variables $0, \dots, m - 1$ satisfies $\varphi$ once it is extended by assigning false to
 every variable $v \ge m$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.uniqueSatDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#unique-sat-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.uniqueSatDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#unique-sat-dec).
 
 ## Valiant-Vazirani: SAT reduces to UniqueSAT
 
@@ -47,7 +47,7 @@ count given in unary.
 
 - L. G. Valiant and V. V. Vazirani, "NP is as easy as detecting unique solutions", Theoretical Computer Science 47 (1986), 85-93 (STOC 1985).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.valiant_vazirani` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#valiant-vazirani).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ValiantVazirani.valiant_vazirani` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ValiantVaziraniWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html#valiant-vazirani).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Valiant–Vazirani theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/randomized-and-quantum-complexity/valiant-vazirani-theorem)

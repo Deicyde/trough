@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.13 Stalks of presheaves of algebraic structures
 
-Section 6.13 of the Stacks Project, [Tag 007G](https://stacks.math.columbia.edu/tag/007G). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 6.13 of the Stacks Project, [Tag 007G](https://stacks.math.columbia.edu/tag/007G). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 007H, a lemma
 
 [Tag 007H](https://stacks.math.columbia.edu/tag/007H) in the Stacks Project.
 
-**`Stacks.Topology.CategoryStalk.stalk_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L96).
+**`Stacks.Topology.CategoryStalk.stalk_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L96).
 
 > **Existence of the stalk.** Assuming filtered colimits of the appropriate size
 > exist in `C`, the directed colimit
@@ -29,7 +29,7 @@ theorem stalk_exists
     HasColimit (stalkDiagram x ℱ)
 ```
 
-**`Stacks.Topology.CategoryStalk.stalkUnderlyingSetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L121).
+**`Stacks.Topology.CategoryStalk.stalkUnderlyingSetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L121).
 
 > **Underlying set of the stalk.** Applying `F` to the stalk `ℱ_x` yields the stalk
 > of the underlying presheaf of sets: the canonical comparison morphism furnishes an
@@ -52,7 +52,7 @@ noncomputable def stalkUnderlyingSetIso
       colimit (stalkDiagram x (underlyingPresheafOfSets F ℱ))
 ```
 
-**`Stacks.Topology.CategoryStalk.stalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L145). References: EGA 0 (3.1.6).
+**`Stacks.Topology.CategoryStalk.stalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/ValuedInCategory.lean#L145). References: EGA 0 (3.1.6).
 
 > **Functoriality.** The stalk construction `ℱ ↦ ℱ_x` extends to a functor
 >   `(·)_x : TopCat.Presheaf C X ⥤ C`.
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.13, Tag 007G](https://stacks.math.columbia.edu/tag/007G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Poisson random field model
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html).
 
 ## Sawyer–Hartl Poisson random field density
 
@@ -20,20 +20,20 @@ and scaled genic selection `σ = 2Ns`:
 The model domain is `θ > 0` and `x ∈ (0, 1)`; at `x = 0, 1` Lean's `a / 0 = 0` gives the junk
 value `0`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity`, a definition declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity`, a definition declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density).
 
 ## Closed form of the Poisson random field density with selection
 
 The Poisson-random-field density with selection, explicitly:
 `θ (1 - e^{-2σ(1 - x)}) / ((1 - e^{-2σ}) x (1 - x))` for `σ ≠ 0`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_of_ne_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-of-ne-zero).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_of_ne_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-of-ne-zero).
 
 ## Neutral Poisson random field density
 
 The neutral Poisson-random-field density is `θ / x` (for `x ≠ 1`).
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-zero).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-zero).
 
 ## The neutral density from the Green's function
 
@@ -42,7 +42,7 @@ small frequency `p`; with mutations arriving at rate `θ / (2p)` per unit time (
 mutational input of frequency is `θ / 2`), the expected sojourn density at `x ≥ p` is
 `θ / (2p) · G(p, x) = θ / x`, the neutral Poisson-random-field density.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_zero_eq_neutralGreen`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-zero-eq-neutral-green).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.prfDensity_zero_eq_neutralGreen`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#prf-density-zero-eq-neutral-green).
 
 ## Stationary forward equation (Sawyer–Hartl 1992)
 
@@ -51,7 +51,7 @@ On `(0, 1)` the weighted density
 Fokker–Planck equation `½ F'' - σ F' = 0` of the Wright–Fisher diffusion with genic selection
 `σ` (the forward equation `½ (x (1 - x) φ)'' - (σ x (1 - x) φ)' = 0`).
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.forward_prfDensity`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#forward-prf-density).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.forward_prfDensity`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#forward-prf-density).
 
 ## Probability current
 
@@ -61,21 +61,21 @@ forward equation, for the weighted density `F(x) = x (1 - x) φ(x)`, is the cons
 `J = θ σ / (1 - e^{-2σ})`, and `J = θ / 2` in the neutral case: the mutational input of
 frequency at `0`, carried through `(0, 1)` to fixation at `1`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.current_prfDensity`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#current-prf-density).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.current_prfDensity`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#current-prf-density).
 
 ## Boundary normalization at `0`
 
 As `x → 0⁺` the weighted density `x (1 - x) φ(x)` tends
 to `θ`. (This is not the probability current, which is `current_prfDensity`.)
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.tendsto_weighted_prfDensity_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#tendsto-weighted-prf-density-zero).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.tendsto_weighted_prfDensity_zero`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#tendsto-weighted-prf-density-zero).
 
 ## Boundary normalization at `1`
 
 As `x → 1⁻` the weighted density `x (1 - x) φ(x)` tends
 to `0`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.tendsto_weighted_prfDensity_one`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#tendsto-weighted-prf-density-one).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.tendsto_weighted_prfDensity_one`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#tendsto-weighted-prf-density-one).
 
 ## ODE characterization of the Poisson-random-field density
 
@@ -85,7 +85,7 @@ continuous on `[0, 1]`, twice differentiable on `(0, 1)`, solving the stationary
 equation `½ F'' - σ F' = 0` there, with boundary normalizations `F(0) = θ` and `F(1) = 0`.
 Then `φ` is the Sawyer–Hartl density on `(0, 1)`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.eq_prfDensity_of_forward`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#eq-prf-density-of-forward).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.eq_prfDensity_of_forward`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#eq-prf-density-of-forward).
 
 ## Expected site frequency spectrum under the Poisson random field
 
@@ -98,7 +98,7 @@ the sample, `expectedSFS_neutral_self`); for `i = 0` the integrand is not integr
 expected number of ancestral-monomorphic sites is infinite) and Lean's integral returns its junk
 value `0`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS`, a definition declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS`, a definition declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs).
 
 ## Neutral site-frequency spectrum (Fu 1995)
 
@@ -106,7 +106,7 @@ With `σ = 0`, for the segregating classes
 `1 ≤ i < n` the expected number of sites with `i` derived copies in a sample of `n` is
 `θ / i`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS_neutral`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs-neutral).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS_neutral`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs-neutral).
 
 ## Expected number of sites derived in the whole neutral sample
 
@@ -114,7 +114,7 @@ With `σ = 0` the expected number of sites at which all `n ≥ 1` sampled copies
 derived allele is `θ / n`. These sites are monomorphic in the sample, so this is not a class of
 the site-frequency spectrum.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS_neutral_self`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs-neutral-self).
+Formalized by `MathlibExt.Biology.PopulationGenetics.Diffusion.expectedSFS_neutral_self`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/Diffusion/PoissonRandomField.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html#expected-sfs-neutral-self).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Poisson random field model](https://deicyde.github.io/atlas-lean/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Biology/population-genetics/diffusion-theory/poisson-random-field-model)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Zeta functions of generalized Fibonacci numbers
 
-15 results, 10 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html).
+15 results, 10 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html).
 
 ## ℓ-generalized Fibonacci sequence
 
@@ -23,7 +23,7 @@ that index onward.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Definition preceding Proposition 1.
 
-Formalized by `MetaMathlibExt.IsLGeneralizedFibonacci`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#is-lgeneralized-fibonacci).
+Formalized by `MetaMathlibExt.IsLGeneralizedFibonacci`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#is-lgeneralized-fibonacci).
 
 ## Characteristic polynomial of the ℓ-generalized Fibonacci recurrence
 
@@ -36,7 +36,7 @@ $\ell \ge 2$ this is $X^\ell - X^{\ell-1} - \cdots - X - 1$.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Characteristic polynomial definition.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciCharacteristic`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-characteristic).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciCharacteristic`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-characteristic).
 
 ## Dresden–Du coefficient
 
@@ -49,7 +49,7 @@ vanishes.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Coefficient definition preceding Lemma 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciCoefficient`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-coefficient).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciCoefficient`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-coefficient).
 
 ## Other roots of the ℓ-generalized Fibonacci characteristic polynomial
 
@@ -64,7 +64,7 @@ Each root is listed once, without multiplicity; the roots of $\varphi_\ell$ are 
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Root notation preceding Proposition 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciOtherRoots`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-other-roots).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciOtherRoots`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-other-roots).
 
 ## Possible pole of the ℓ-generalized Fibonacci zeta function at a given index
 
@@ -86,7 +86,7 @@ Only the values of $\kappa$ on $R$ enter; their sum is the number called $k$ in 
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPole`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPole`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole).
 
 ## The ℓ-generalized Fibonacci characteristic polynomial for ℓ = 2
 
@@ -98,7 +98,7 @@ Fibonacci polynomial $X^2 - X - 1$ in $\mathbb{C}[X]$.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Equation (3).
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciCharacteristic_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-characteristic-t).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciCharacteristic_two`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-characteristic-t).
 
 ## The possible pole at the zero index is zero
 
@@ -110,7 +110,7 @@ function indexed by the identically zero function $\kappa$ and $n = 0$ equals $0
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPole_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole-zero).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPole_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole-zero).
 
 ## Set of possible poles of the ℓ-generalized Fibonacci zeta function
 
@@ -126,7 +126,7 @@ $\log$ is the principal complex logarithm.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPoleSet`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole-set).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaPoleSet`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-pole-set).
 
 ## Residue expression of the ℓ-generalized Fibonacci zeta function
 
@@ -153,7 +153,7 @@ branch of the complex logarithm.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaResidue`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-residue).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaResidue`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-residue).
 
 ## Corollary pole of the ℓ-generalized Fibonacci zeta function
 
@@ -168,7 +168,7 @@ $\ell$ is odd, where $\log$ is the principal complex logarithm.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Corollary 1.
 
-Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaCorollaryPole`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-corollary-p).
+Formalized by `MetaMathlibExt.lGeneralizedFibonacciZetaCorollaryPole`, a definition declared in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-corollary-p).
 
 ## Absolute convergence of the ℓ-generalized Fibonacci zeta series
 
@@ -181,7 +181,7 @@ the principal complex power of $F_n$ viewed as a complex number.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_summable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-summable).
+Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_summable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-summable).
 
 ## Meromorphic continuation of the ℓ-generalized Fibonacci zeta function
 
@@ -200,7 +200,7 @@ stated separately.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_meromorphicContinuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-meromorphic).
+Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_meromorphicContinuation` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-meromorphic).
 
 ## Residues of the ℓ-generalized Fibonacci zeta function
 
@@ -225,7 +225,7 @@ formula does not address.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 1 (residue formula).
 
-Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_residue` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-residue-2).
+Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_residue` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-residue-2).
 
 ## Explicit possible poles of the ℓ-generalized Fibonacci zeta function
 
@@ -243,7 +243,7 @@ polynomial other than $\alpha$.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_corollaryPole_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-corollary-p-2).
+Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_corollaryPole_mem` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-corollary-p-2).
 
 ## Rational values of the ℓ-generalized Fibonacci zeta function at negative integers
 
@@ -259,7 +259,7 @@ $f$ is complex differentiable at $-m$, then $f(-m)$ is a rational number.
 
 - Nabin Kumar Meher and Dilip Kumar Sahoo, *Analytic Continuation of the ℓ-Generalized Fibonacci Zeta Function*, INTEGERS 24 (2024), Article A85, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_negInt_rational` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-neg-int-rat).
+Stated but not proved: `MetaMathlibExt.lGeneralizedFibonacciZeta_negInt_rational` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedFibonacciZetaWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html#l-generalized-fibonacci-zeta-neg-int-rat).
 
 ## Depends on
 
@@ -268,4 +268,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zeta functions of generalized Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/zeta-functions-of-generalized-fibonacci-numbers)

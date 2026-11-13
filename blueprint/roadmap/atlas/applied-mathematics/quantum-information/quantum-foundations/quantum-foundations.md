@@ -8,7 +8,7 @@ proof: formalized
 
 # Quantum foundations: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html).
 
 Quantum foundations studies what quantum mechanics rules out and allows at the level of measurement outcomes, including contextuality, Bell nonlocality and bounds on quantum correlations.
 
@@ -23,7 +23,7 @@ $c(i) + c(j) + c(k) = 1$ whenever $(v_i, v_j, v_k)$ is an orthonormal triple.
 
 - S. Kochen, E. P. Specker, The Problem of Hidden Variables in Quantum Mechanics, J. Math. Mech. 17 (1967), 59-87, DOI 10.1512/iumj.1968.17.17004.
 
-Formalized by `MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three`, a theorem declared in [MathlibExt/QuantumInformation/Finite/KochenSpecker.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/QuantumInformation/Finite/KochenSpecker.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html#kochen-specker-finite-real-three).
+Formalized by `MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three`, a theorem declared in [MathlibExt/QuantumInformation/Finite/KochenSpecker.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/QuantumInformation/Finite/KochenSpecker.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html#kochen-specker-finite-real-three).
 
 ## Tsirelson's bound is attained
 
@@ -38,7 +38,7 @@ This shows that the upper bound $2\sqrt{2}$ in Tsirelson's inequality for CHSH t
 
 - B. S. Cirel'son/Tsirelson, "Quantum generalizations of Bell's inequality", Lett. Math. Phys. 4 (1980), 93-100, DOI 10.1007/BF00417500.
 
-Formalized by `MathlibExt.QuantumInformation.Finite.TsirelsonTight.tsirelson_bound_tight`, a theorem declared in [MathlibExt/QuantumInformation/Finite/TsirelsonTight.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/QuantumInformation/Finite/TsirelsonTight.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html#tsirelson-bound-tight).
+Formalized by `MathlibExt.QuantumInformation.Finite.TsirelsonTight.tsirelson_bound_tight`, a theorem declared in [MathlibExt/QuantumInformation/Finite/TsirelsonTight.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/QuantumInformation/Finite/TsirelsonTight.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html#tsirelson-bound-tight).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Quantum foundations](https://deicyde.github.io/atlas-lean/roadmap/QuantumInformation/quantum-foundations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/QuantumInformation/quantum-foundations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/QuantumInformation/quantum-foundations)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Hankel transforms and Jacobi continued fractions
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html).
 
 ## Hankel transform
 
@@ -16,7 +16,7 @@ Let $R$ be a commutative ring and let $(a_k)_{k \ge 0}$ be a sequence
 in $R$. The Hankel transform of $a$ is the sequence $(h_n)_{n \ge 0}$ in $R$ whose term $h_n$ is
 the determinant of the $(n + 1) \times (n + 1)$ Hankel matrix $(a_{i+j})_{0 \le i, j \le n}$.
 
-Formalized by `MetaMathlibExt.hankelTransform`, a definition declared in [MathlibExt/NumberTheory/HankelTransform.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/HankelTransform.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html#hankel-transform).
+Formalized by `MetaMathlibExt.hankelTransform`, a definition declared in [MathlibExt/NumberTheory/HankelTransform.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/HankelTransform.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html#hankel-transform).
 
 ## Jacobi continued fraction expansion
 
@@ -39,7 +39,7 @@ determinants of $a$.
 
 - Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," JIS 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117.
 
-Formalized by `MetaMathlibExt.HasJacobiFraction`, a definition declared in [MathlibExt/NumberTheory/HankelTransform.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/HankelTransform.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html#has-jacobi-fraction).
+Formalized by `MetaMathlibExt.HasJacobiFraction`, a definition declared in [MathlibExt/NumberTheory/HankelTransform.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/HankelTransform.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html#has-jacobi-fraction).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hankel transforms and Jacobi continued fractions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/hankel-transforms-and-jacobi-continued-fractions)

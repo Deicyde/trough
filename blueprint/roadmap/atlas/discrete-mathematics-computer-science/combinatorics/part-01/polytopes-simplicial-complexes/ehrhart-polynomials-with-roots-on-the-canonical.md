@@ -7,7 +7,7 @@ statement: formalized
 
 # Ehrhart polynomials with roots on the canonical line
 
-47 results, 29 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html).
+47 results, 29 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html).
 
 ## Canonical line
 
@@ -18,7 +18,7 @@ with real part $-1/2$, that is, $\mathrm{CL} = \{z \in \mathbb{C} : \operatornam
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Definition of `CL`.
 
-Formalized by `MetaMathlibExt.canonicalLine`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line).
+Formalized by `MetaMathlibExt.canonicalLine`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line).
 
 ## The h-star coefficients of a polynomial
 
@@ -34,7 +34,7 @@ the coefficient of $t^i$ in the power series $(1-t)^{d+1} \sum_{k \ge 0} f(k)\, 
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of the `h*`-polynomial.
 
-Formalized by `MetaMathlibExt.hStarCoeff`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#h-star-coeff).
+Formalized by `MetaMathlibExt.hStarCoeff`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#h-star-coeff).
 
 ## SNN polynomials
 
@@ -50,7 +50,7 @@ the condition.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of SNN-polynomial.
 
-Formalized by `MetaMathlibExt.IsSNN`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-snn).
+Formalized by `MetaMathlibExt.IsSNN`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-snn).
 
 ## Product of quadratic canonical-line factors
 
@@ -62,7 +62,7 @@ gives the constant polynomial $1$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, factored definition of CL-polynomials.
 
-Formalized by `MetaMathlibExt.clQuadraticProduct`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-quadratic-product).
+Formalized by `MetaMathlibExt.clQuadraticProduct`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-quadratic-product).
 
 ## CL-polynomials with given parameters
 
@@ -78,7 +78,7 @@ The parameters form a list so that later statements can refer to individual para
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of CL-polynomial.
 
-Formalized by `MetaMathlibExt.IsCLWithParameters`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-clwith-parameters).
+Formalized by `MetaMathlibExt.IsCLWithParameters`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-clwith-parameters).
 
 ## CL-polynomials
 
@@ -91,7 +91,7 @@ $f = a (2X + 1) \prod_{i=1}^{m} (X^2 + X + c_i)$ if $d$ is odd.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of CL-polynomial.
 
-Formalized by `MetaMathlibExt.IsCL`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-cl).
+Formalized by `MetaMathlibExt.IsCL`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-cl).
 
 ## The basis polynomials $b^d_j$
 
@@ -105,7 +105,7 @@ versus falling Pochhammer symbols.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of `bᵈⱼ`.
 
-Formalized by `MetaMathlibExt.bBasis`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#b-basis).
+Formalized by `MetaMathlibExt.bBasis`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#b-basis).
 
 ## Symmetric basis polynomials
 
@@ -120,7 +120,7 @@ Statements that use $p^d_j$ assume $j \le d$, where the truncation plays no role
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of `pᵈⱼ`.
 
-Formalized by `MetaMathlibExt.pBasis`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis).
+Formalized by `MetaMathlibExt.pBasis`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis).
 
 ## The basis polynomial $p^1_0$
 
@@ -131,7 +131,7 @@ polynomial $2X + 1$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, characteristic case of the `pᵈⱼ` definition.
 
-Formalized by `MetaMathlibExt.pBasis_one_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-one-zero).
+Formalized by `MetaMathlibExt.pBasis_one_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-one-zero).
 
 ## The basis polynomial $p^2_0$
 
@@ -142,7 +142,7 @@ polynomial $2(X^2 + X + 1)$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, characteristic case of the `pᵈⱼ` definition.
 
-Formalized by `MetaMathlibExt.pBasis_two_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-two-zero).
+Formalized by `MetaMathlibExt.pBasis_two_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-two-zero).
 
 ## Interlacing lists
 
@@ -157,7 +157,7 @@ empty list interlaces every one-element list.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of interlacing.
 
-Formalized by `MetaMathlibExt.ListInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#list-interlaces).
+Formalized by `MetaMathlibExt.ListInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#list-interlaces).
 
 ## Alternating lists of equal length
 
@@ -175,7 +175,7 @@ Leibniz rule.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 2 (quoting Fisk, Lemma 1.26).
 
-Formalized by `MetaMathlibExt.ListAlternates`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#list-alternates).
+Formalized by `MetaMathlibExt.ListAlternates`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#list-alternates).
 
 ## Real interlacing
 
@@ -189,7 +189,7 @@ the roots alternate as $b_1 \le a_1 \le b_2 \le a_2 \le \dots \le a_d \le b_{d+1
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of real interlacing.
 
-Formalized by `MetaMathlibExt.RealInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#real-interlaces).
+Formalized by `MetaMathlibExt.RealInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#real-interlaces).
 
 ## Alternating roots of equal-degree real polynomials
 
@@ -206,7 +206,7 @@ This equal-degree notion is used for two clauses of Fisk's Leibniz rule.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 2 (quoting Fisk, Lemma 1.26).
 
-Formalized by `MetaMathlibExt.RealAlternates`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#real-alternates).
+Formalized by `MetaMathlibExt.RealAlternates`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#real-alternates).
 
 ## Interlacing on the canonical line
 
@@ -222,7 +222,7 @@ $\operatorname{Im} b_1 \le \operatorname{Im} a_1 \le \operatorname{Im} b_2 \le \
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of CL-interlacing.
 
-Formalized by `MetaMathlibExt.CLInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clinterlaces).
+Formalized by `MetaMathlibExt.CLInterlaces`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clinterlaces).
 
 ## Real-rooted polynomials
 
@@ -233,7 +233,7 @@ number of real roots of $f$, counted with multiplicity, equals the degree of $f$
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 2 (quoting Fisk, Lemma 1.26).
 
-Formalized by `MetaMathlibExt.HasOnlyRealRoots`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#has-only-real-roots).
+Formalized by `MetaMathlibExt.HasOnlyRealRoots`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#has-only-real-roots).
 
 ## Lattice points as real points
 
@@ -244,7 +244,7 @@ is regarded as the point of $\mathbb{R}^d$ with the same coordinates $x_1, \dots
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of a lattice polytope.
 
-Formalized by `MetaMathlibExt.latticePointToReal`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#lattice-point-to-real).
+Formalized by `MetaMathlibExt.latticePointToReal`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#lattice-point-to-real).
 
 ## Lattice polytopes
 
@@ -255,7 +255,7 @@ is the convex hull in $\mathbb{R}^d$ of the points of $V$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of a lattice polytope.
 
-Formalized by `MetaMathlibExt.latticePolytope`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#lattice-polytope).
+Formalized by `MetaMathlibExt.latticePolytope`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#lattice-polytope).
 
 ## Full-dimensional sets
 
@@ -270,7 +270,7 @@ whose direction $\{0\}$ is all of $\mathbb{R}^0$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, full-dimensional lattice-polytope convention.
 
-Formalized by `MetaMathlibExt.IsFullDimensional`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-full-dimensional).
+Formalized by `MetaMathlibExt.IsFullDimensional`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#is-full-dimensional).
 
 ## Polynomial counting the lattice points of dilates
 
@@ -286,7 +286,7 @@ By Ehrhart's theorem such a polynomial exists, and it is unique.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of the Ehrhart polynomial.
 
-Formalized by `MetaMathlibExt.EhrhartCounts`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-counts).
+Formalized by `MetaMathlibExt.EhrhartCounts`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-counts).
 
 ## Binomial polynomial
 
@@ -297,7 +297,7 @@ $\binom{X+n}{d}$ is the real polynomial $\frac{1}{d!} \prod_{i=0}^{d-1} (X + n -
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 7.
 
-Formalized by `MetaMathlibExt.binomialPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#binomial-polynomial).
+Formalized by `MetaMathlibExt.binomialPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#binomial-polynomial).
 
 ## Complex binomial polynomial
 
@@ -310,7 +310,7 @@ $$\binom{X+n}{d} = \frac{1}{d!} \prod_{i=0}^{d-1} (X + n - i).$$
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 3 (quoting Braun and Develin, Theorem 2.3).
 
-Formalized by `MetaMathlibExt.complexBinomialPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#complex-binomial-polynomial).
+Formalized by `MetaMathlibExt.complexBinomialPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#complex-binomial-polynomial).
 
 ## Model polynomial
 
@@ -325,7 +325,7 @@ $M_d$ need not be an Ehrhart polynomial.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 3 (quoting Braun and Develin, Theorem 2.3).
 
-Formalized by `MetaMathlibExt.modelPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#model-polynomial).
+Formalized by `MetaMathlibExt.modelPolynomial`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#model-polynomial).
 
 ## Property (♢)
 
@@ -341,7 +341,7 @@ the property.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of `(♢)`.
 
-Formalized by `MetaMathlibExt.HasDiamond`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#has-diamond).
+Formalized by `MetaMathlibExt.HasDiamond`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#has-diamond).
 
 ## The set $\Omega_d$ of attainable canonical-line roots
 
@@ -353,7 +353,7 @@ some CL-polynomial of degree $d$ satisfying $(\diamondsuit)$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, definition of `Ω_d`.
 
-Formalized by `MetaMathlibExt.canonicalLineRootSet`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line-root-set).
+Formalized by `MetaMathlibExt.canonicalLineRootSet`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line-root-set).
 
 ## Functional equation versus palindromic h-star coefficients
 
@@ -366,7 +366,7 @@ $i \le d$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 1 (quoting Corollary 2.2 in Kölbl's [11]).
 
-Stated but not proved: `MetaMathlibExt.functionalEquation_iff_hStar_palindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#functional-equation-iff-h-star-palindrom).
+Stated but not proved: `MetaMathlibExt.functionalEquation_iff_hStar_palindromic` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#functional-equation-iff-h-star-palindrom).
 
 ## Values of CL-polynomials on the canonical line
 
@@ -378,7 +378,7 @@ is, $f$ maps the canonical line into $\mathbb{R}\, i^d$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.cl_value_on_canonicalLine` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-value-on-canonical-line).
+Stated but not proved: `MetaMathlibExt.cl_value_on_canonicalLine` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-value-on-canonical-line).
 
 ## $p^d_0$ CL-interlaces $p^{d+1}_0$
 
@@ -389,7 +389,7 @@ basis polynomial $p^d_0$ CL-interlaces $p^{d+1}_0$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.pBasis_zero_interlaces_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-zero-interlaces-succ).
+Stated but not proved: `MetaMathlibExt.pBasis_zero_interlaces_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-zero-interlaces-succ).
 
 ## CL-interlacing of $p^d_0$ with a perturbation of $p^{d+1}_0$
 
@@ -404,7 +404,7 @@ differs.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.pBasis_zero_interlaces_perturbation` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-zero-interlaces-perturbation).
+Stated but not proved: `MetaMathlibExt.pBasis_zero_interlaces_perturbation` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-zero-interlaces-perturbation).
 
 ## Multiplying by $2X+1$ preserves SNN
 
@@ -415,7 +415,7 @@ polynomial, then so is $(2X + 1) f$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.two_mul_X_add_one_preserves_snn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#two-mul-x-add-one-preserves-snn).
+Stated but not proved: `MetaMathlibExt.two_mul_X_add_one_preserves_snn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#two-mul-x-add-one-preserves-snn).
 
 ## Multiplying a binomial polynomial by a quadratic
 
@@ -438,7 +438,7 @@ The paper assumes $c \ge 1/4$; the identity holds for every real $c$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.quadratic_mul_binomialPolynomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#quadratic-mul-binomial-polynomial).
+Stated but not proved: `MetaMathlibExt.quadratic_mul_binomialPolynomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#quadratic-mul-binomial-polynomial).
 
 ## Fisk's Leibniz rule for interlacing
 
@@ -460,7 +460,7 @@ $b_1 \le a_1 \le \dots \le b_n \le a_n$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 2 (quoting Fisk, Lemma 1.26, “Leibnitz rule”).
 
-Stated but not proved: `MetaMathlibExt.leibniz_rule_interlacing` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#leibniz-rule-interlacing).
+Stated but not proved: `MetaMathlibExt.leibniz_rule_interlacing` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#leibniz-rule-interlacing).
 
 ## Coefficientwise limits preserve real interlacing
 
@@ -476,7 +476,7 @@ interlaces $g$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 3 (quoting Fisk, Corollary 1.41).
 
-Stated but not proved: `MetaMathlibExt.coefficientwise_limit_interlaces` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#coefficientwise-limit-interlaces).
+Stated but not proved: `MetaMathlibExt.coefficientwise_limit_interlaces` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#coefficientwise-limit-interlaces).
 
 ## Small sorted CL parameters give an SNN polynomial
 
@@ -494,7 +494,7 @@ SNN, since its zeroth $h^*$-coefficient is $f(0) = -1 < 0$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sorted_cl_parameters_are_snn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#sorted-cl-parameters-are-snn).
+Stated but not proved: `MetaMathlibExt.sorted_cl_parameters_are_snn` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#sorted-cl-parameters-are-snn).
 
 ## Classical bounds on Ehrhart roots
 
@@ -508,7 +508,7 @@ of $E$ satisfies $-d \le \alpha < \lfloor d/2 \rfloor$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 1 (quoting Beck, De Loera, Develin, Pfeifle, and Stanley, Theorem 1.2).
 
-Stated but not proved: `MetaMathlibExt.ehrhart_root_classical_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-root-classical-bounds).
+Stated but not proved: `MetaMathlibExt.ehrhart_root_classical_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-root-classical-bounds).
 
 ## Braun's disc for Ehrhart roots
 
@@ -524,7 +524,7 @@ By Ehrhart's theorem, $E$ has degree $d$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 2 (quoting Braun, Theorem 1).
 
-Stated but not proved: `MetaMathlibExt.ehrhart_roots_in_braun_disc` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-roots-in-braun-disc).
+Stated but not proved: `MetaMathlibExt.ehrhart_roots_in_braun_disc` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#ehrhart-roots-in-braun-disc).
 
 ## Asymptotics of the largest root of the model polynomial
 
@@ -541,7 +541,7 @@ asymptotic statement.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 3 (quoting Braun and Develin, Theorem 2.3).
 
-Stated but not proved: `MetaMathlibExt.maximal_model_root_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#maximal-model-root-asymptotic).
+Stated but not proved: `MetaMathlibExt.maximal_model_root_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#maximal-model-root-asymptotic).
 
 ## Hibi's lower bound
 
@@ -557,7 +557,7 @@ The $h^*$-coefficients are defined as complex numbers, so the inequality compare
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 5 (quoting Hibi's lower bound theorem).
 
-Stated but not proved: `MetaMathlibExt.hibi_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#hibi-lower-bound).
+Stated but not proved: `MetaMathlibExt.hibi_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#hibi-lower-bound).
 
 ## The set of attainable canonical-line roots is connected
 
@@ -569,7 +569,7 @@ $(\diamondsuit)$ is a nonempty connected subset of $\mathbb{C}$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.canonicalLineRootSet_isConnected` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line-root-set-is-connected).
+Stated but not proved: `MetaMathlibExt.canonicalLineRootSet_isConnected` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#canonical-line-root-set-is-connected).
 
 ## Parameter bound for SNN CL-polynomials
 
@@ -583,7 +583,7 @@ $c_k \le \tfrac14 + \beta^2$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 7 (restatement of Theorem 4).
 
-Stated but not proved: `MetaMathlibExt.cl_parameter_bounded_by_pBasis_root` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-parameter-bounded-by-p-basis-root).
+Stated but not proved: `MetaMathlibExt.cl_parameter_bounded_by_pBasis_root` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#cl-parameter-bounded-by-p-basis-root).
 
 ## CL-span
 
@@ -598,7 +598,7 @@ When nonempty, the CL-span is an interval of the canonical line.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2 (definition of `clspan`).
 
-Formalized by `MetaMathlibExt.clspan`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan).
+Formalized by `MetaMathlibExt.clspan`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 491](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L491). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan).
 
 ## CL-span of the zero polynomial
 
@@ -609,7 +609,7 @@ is empty).
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2 (definition of `clspan`).
 
-Formalized by `MetaMathlibExt.clspan_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-zero).
+Formalized by `MetaMathlibExt.clspan_zero`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-zero).
 
 ## Vertices of the standard reflexive simplex
 
@@ -623,7 +623,7 @@ reflexive simplex $\Delta^d_{\mathrm{sr}}$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2.2 (definition of `Δᵈ_sr`).
 
-Formalized by `MetaMathlibExt.standardReflexiveSimplexVertices`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#standard-reflexive-simplex-vertices).
+Formalized by `MetaMathlibExt.standardReflexiveSimplexVertices`, a definition declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 505](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L505). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#standard-reflexive-simplex-vertices).
 
 ## The all-minus-one vector is a vertex of the standard reflexive simplex
 
@@ -636,7 +636,7 @@ $\{e_1, \dots, e_d, -(e_1 + \dots + e_d)\}$ of the standard reflexive simplex $\
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Section 2.2 (definition of `Δᵈ_sr`).
 
-Formalized by `MetaMathlibExt.neg_one_mem_standardReflexiveSimplexVertices`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#neg-one-mem-standard-reflexive-simplex-v).
+Formalized by `MetaMathlibExt.neg_one_mem_standardReflexiveSimplexVertices`, a theorem declared in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#neg-one-mem-standard-reflexive-simplex-v).
 
 ## The symmetric basis polynomials on the canonical line
 
@@ -658,7 +658,7 @@ fails because $p^0_0 = 1$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.pBasis_canonicalLine_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-canonical-line-properties).
+Stated but not proved: `MetaMathlibExt.pBasis_canonicalLine_properties` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#p-basis-canonical-line-properties).
 
 ## CL-span bound for SNN CL-polynomials
 
@@ -670,7 +670,7 @@ CL-span of the symmetric basis polynomial $p^d_0$.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.clspan_subset_clspan_pBasis_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-subset-clspan-p-basis-zero).
+Stated but not proved: `MetaMathlibExt.clspan_subset_clspan_pBasis_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-subset-clspan-p-basis-zero).
 
 ## Ehrhart CL-spans of reflexive polytopes in dimension at most 9
 
@@ -689,7 +689,7 @@ not change the Ehrhart polynomial.
 
 - Max Kölbl, *Properties of Ehrhart Polynomials Whose Roots Lie on the Canonical Line*, INTEGERS 25 (2025), Article A68, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.clspan_ehrhart_subset_standardReflexiveSimplex` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-ehrhart-subset-standard-reflexive).
+Stated but not proved: `MetaMathlibExt.clspan_ehrhart_subset_standardReflexiveSimplex` is written with `theorem_wanted` in [WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/CanonicalLineEhrhartWanted.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html#clspan-ehrhart-subset-standard-reflexive).
 
 ## Depends on
 
@@ -698,4 +698,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ehrhart polynomials with roots on the canonical line](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/polytopes-simplicial-complexes/ehrhart-polynomials-with-roots-on-the-canonical)

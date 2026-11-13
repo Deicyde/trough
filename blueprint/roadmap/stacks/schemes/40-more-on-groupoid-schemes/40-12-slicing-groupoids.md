@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.12 Slicing groupoids
 
-Section 40.12 of the Stacks Project, [Tag 04LV](https://stacks.math.columbia.edu/tag/04LV). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 40.12 of the Stacks Project, [Tag 04LV](https://stacks.math.columbia.edu/tag/04LV). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04MY, a situation
 
 [Tag 04MY](https://stacks.math.columbia.edu/tag/04MY) in the Stacks Project.
 
-**`AlgebraicGeometry.SliceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L61). The attribute's comment: “the slice situation”.
+**`AlgebraicGeometry.SliceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L61). The attribute's comment: “the slice situation”.
 
 > The standing data for the slice situation: a groupoid scheme, a morphism
 > to its object scheme, and points lying over one another.
@@ -23,7 +23,7 @@ Section 40.12 of the Stacks Project, [Tag 04LV](https://stacks.math.columbia.edu
 public structure SliceSituation
 ```
 
-**`AlgebraicGeometry.SliceSituation.sliceFiberComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L259). The attribute's comment: “the fibre comparison”.
+**`AlgebraicGeometry.SliceSituation.sliceFiberComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L259). The attribute's comment: “the fibre comparison”.
 
 > **Stacks Project, Tag 04MY.** The source fibre in the restricted groupoid
 > is canonically the base change of `h⁻¹(u)` along
@@ -34,7 +34,7 @@ noncomputable def sliceFiberComparison (D : SliceSituation) :
     SliceFiberComparison D
 ```
 
-**`AlgebraicGeometry.SliceSituation.sliceIdentityPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L628). The attribute's comment: “the compatible identity points”.
+**`AlgebraicGeometry.SliceSituation.sliceIdentityPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L628). The attribute's comment: “the compatible identity points”.
 
 > **Stacks Project, Tag 04MY.** The identity arrows determine compatible
 > points of the stabilizer and source fibres before and after restriction; the
@@ -46,7 +46,7 @@ noncomputable def sliceIdentityPoints (D : SliceSituation) :
     SliceIdentityPoints D
 ```
 
-**`AlgebraicGeometry.stabilizerArrow_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L637). The attribute's comment: “the stabilizer is locally closed”.
+**`AlgebraicGeometry.stabilizerArrow_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceSituation.lean#L637). The attribute's comment: “the stabilizer is locally closed”.
 
 > **Stacks Project, Tag 04MY.** The stabilizer of a groupoid scheme is a
 > locally closed subscheme of its arrow scheme.
@@ -60,7 +60,7 @@ public theorem stabilizerArrow_isImmersion {S : Scheme.{u}} (G : GroupoidScheme 
 
 [Tag 0461](https://stacks.math.columbia.edu/tag/0461) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affine_slice_dim_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceDimensionDrop.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceDimensionDrop.lean#L543).
+**`AlgebraicGeometry.exists_affine_slice_dim_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceDimensionDrop.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SliceDimensionDrop.lean#L543).
 
 > **Stacks Project, Tag 0461.** Let `(U, R, s, t, c)` be a groupoid scheme with `s` and `t`
 > Cohen--Macaulay and locally of finite presentation, let `u` be a finite type point of `U`, and
@@ -97,7 +97,7 @@ public theorem exists_affine_slice_dim_sub_one {S : Scheme.{u}}
           topologicalKrullDimAt (G.source.left.fiber u) (sourceFiberIdentity G u)
 ```
 
-**`Module.IsMaximalCohenMacaulay.exists_mem_notMem_minimalPrimes_of_ringKrullDim_quotient_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L188). The attribute's comment: “step 2 of the proof: the minimal-prime avoidance, from equidimensionality of a Cohen--Macaulay local ring (Tag 00NA) and prime avoidance (Tag 00DS). The ideal is not assumed maximal and the source ring is not assumed Noetherian or local”. References: EGA 0 (16.5.5), “special case”.
+**`Module.IsMaximalCohenMacaulay.exists_mem_notMem_minimalPrimes_of_ringKrullDim_quotient_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L189). The attribute's comment: “step 2 of the proof: the minimal-prime avoidance, from equidimensionality of a Cohen--Macaulay local ring (Tag 00NA) and prime avoidance (Tag 00DS). The ideal is not assumed maximal and the source ring is not assumed Noetherian or local”. References: EGA 0 (16.5.5), “special case”.
 
 > **Minimal-prime avoidance in a Cohen–Macaulay local ring.** Let `R` be a Noetherian local
 > Cohen–Macaulay ring, `u : A →+* R` a ring map and `I` an ideal of `A` such that the ideal
@@ -112,7 +112,7 @@ theorem Module.IsMaximalCohenMacaulay.exists_mem_notMem_minimalPrimes_of_ringKru
     ∃ f ∈ I, ∀ p ∈ minimalPrimes R, u f ∉ p
 ```
 
-**`Module.IsMaximalCohenMacaulay.exists_mem_isSMulRegular_map_quotient_isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L238). The attribute's comment: “the commutative-algebra core, conclusions (a), (b) and (c), over an abstract Noetherian local Cohen--Macaulay ring and a ring map into it; no groupoid, scheme or localisation data appears, and the dimension drop is stated additively”. References: EGA 0 (16.5.5), “special case”.
+**`Module.IsMaximalCohenMacaulay.exists_mem_isSMulRegular_map_quotient_isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L239). The attribute's comment: “the commutative-algebra core, conclusions (a), (b) and (c), over an abstract Noetherian local Cohen--Macaulay ring and a ring map into it; no groupoid, scheme or localisation data appears, and the dimension drop is stated additively”. References: EGA 0 (16.5.5), “special case”.
 
 > **Slicing a Cohen–Macaulay local ring, the commutative-algebra core of Stacks 0461.** Let
 > `(R, 𝔪_R)` be a Noetherian local Cohen–Macaulay ring, let `u : A →+* R` be a ring map and let `I`
@@ -132,7 +132,7 @@ theorem Module.IsMaximalCohenMacaulay.exists_mem_isSMulRegular_map_quotient_isMa
           ringKrullDim (R ⧸ Ideal.span {u f}) + 1 = ringKrullDim R
 ```
 
-**`IsCohenMacaulayLocalRing.exists_mem_maximalIdeal_isSMulRegular_map_of_ringKrullDim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L262). The attribute's comment: “the commutative-algebra core along a local homomorphism, at the maximal ideal of the source, in the Tag 00N8 spelling of Cohen--Macaulayness; this is the form the geometric argument consumes”.
+**`IsCohenMacaulayLocalRing.exists_mem_maximalIdeal_isSMulRegular_map_of_ringKrullDim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/SliceDimensionDrop.lean#L263). The attribute's comment: “the commutative-algebra core along a local homomorphism, at the maximal ideal of the source, in the Tag 00N8 spelling of Cohen--Macaulayness; this is the form the geometric argument consumes”.
 
 > **Slicing along a local homomorphism.** Let `φ : A →+* C` be a local homomorphism of local
 > rings with `C` Noetherian and Cohen–Macaulay, and suppose the ideal `φ(𝔪_A)C` already cuts the
@@ -152,7 +152,7 @@ theorem IsCohenMacaulayLocalRing.exists_mem_maximalIdeal_isSMulRegular_map_of_ri
 
 [Tag 04MZ](https://stacks.math.columbia.edu/tag/04MZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affine_slice_dim_eq_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean, line 1276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean#L1276).
+**`AlgebraicGeometry.exists_affine_slice_dim_eq_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean, line 1276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaximalSlice.lean#L1276).
 
 > **Stacks Project, Tag 04MZ.** Let `(U, R, s, t, c, e, i)` be a groupoid scheme whose source
 > and target maps are Cohen--Macaulay and locally of finite presentation, and let `u` be a finite
@@ -203,7 +203,7 @@ public theorem exists_affine_slice_dim_eq_stabilizer {S : Scheme.{u}}
 
 [Tag 04N0](https://stacks.math.columbia.edu/tag/04N0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affine_slice_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaxSliceQuasiFinite.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaxSliceQuasiFinite.lean#L121). The attribute's comment: “conclusions (1)-(5) with the fibre products of schemes: `g` an affine immersion locally of finite presentation, `h`, `s'`, `t'` flat, locally finitely presented, quasi-finite”.
+**`AlgebraicGeometry.exists_affine_slice_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaxSliceQuasiFinite.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/MaxSliceQuasiFinite.lean#L121). The attribute's comment: “conclusions (1)-(5) with the fibre products of schemes: `g` an affine immersion locally of finite presentation, `h`, `s'`, `t'` flat, locally finitely presented, quasi-finite”.
 
 > **Stacks Project, Tag 04N0.** A finite type point of a groupoid scheme whose source and
 > target maps are Cohen--Macaulay and locally of finite presentation and whose stabilizer group
@@ -241,7 +241,7 @@ public theorem exists_affine_slice_locallyQuasiFinite {S : Scheme.{u}}
         (Over.homMk g : Over.mk (g ≫ G.objects.hom) ⟶ G.objects)).groupoid.target.left
 ```
 
-**`AlgebraicGeometry.exists_affine_slice_locallyQuasiFinite_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/QuasiFiniteSlice.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/QuasiFiniteSlice.lean#L308). The attribute's comment: “conclusions (1)-(5): an affine immersion locally of finite presentation whose `h`, `s'` and `t'` are flat, locally of finite presentation and locally quasi-finite”.
+**`AlgebraicGeometry.exists_affine_slice_locallyQuasiFinite_of_isFiniteTypePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/QuasiFiniteSlice.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/QuasiFiniteSlice.lean#L308). The attribute's comment: “conclusions (1)-(5): an affine immersion locally of finite presentation whose `h`, `s'` and `t'` are flat, locally of finite presentation and locally quasi-finite”.
 
 > **Stacks Project, Tag 04N0.** Let `(U, R, s, t, c, e, i)` be a groupoid scheme with `s` and
 > `t` Cohen-Macaulay and locally of finite presentation, let `u` be a finite type point of `U`,
@@ -283,4 +283,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.12, Tag 04LV](https://stacks.math.columbia.edu/tag/04LV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

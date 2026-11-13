@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.57 Descending separated locally quasi-finite morphisms
 
-Section 37.57 of the Stacks Project, [Tag 02W7](https://stacks.math.columbia.edu/tag/02W7). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.57 of the Stacks Project, [Tag 02W7](https://stacks.math.columbia.edu/tag/02W7). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02W8, a lemma
 
 [Tag 02W8](https://stacks.math.columbia.edu/tag/02W8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveEtale_isSeparated_inf_locallyQuasiFinite_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean#L474). The attribute's comment: “effective descent along a surjective étale chart of the site”.
+**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveEtale_isSeparated_inf_locallyQuasiFinite_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean#L474). The attribute's comment: “effective descent along a surjective étale chart of the site”.
 
 > Effective descent along the surjective étale morphisms of the big fppf site of `S` for the
 > separated, locally quasi-finite morphisms which are locally of finite type.
@@ -27,7 +27,7 @@ theorem isEffectiveDescentAlongSurjectiveEtale_isSeparated_inf_locallyQuasiFinit
         MorphismProperty Scheme.{u})
 ```
 
-**`AlgebraicGeometry.Space.isEffectiveDescentAlongCoveringSieve_monomorphisms_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatChartDescent.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatChartDescent.lean#L519). The attribute's comment: “effective descent along the covering sieves of the site, at the monomorphisms locally of finite type”.
+**`AlgebraicGeometry.Space.isEffectiveDescentAlongCoveringSieve_monomorphisms_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatChartDescent.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFlatChartDescent.lean#L519). The attribute's comment: “effective descent along the covering sieves of the site, at the monomorphisms locally of finite type”.
 
 > **Effective descent along the covering sieves of the big fppf site of `S` at the
 > monomorphisms locally of finite type**, unconditionally. This is
@@ -46,7 +46,7 @@ theorem isEffectiveDescentAlongCoveringSieve_monomorphisms_inf_lft :
       (MorphismProperty.monomorphisms Scheme.{u} ⊓ @LocallyOfFiniteType)
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isSeparated_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L188). The attribute's comment: “the scheme-descent-datum form, for a single quasi-compact chart”. References: SGA 3 X (5.4), “special case”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isSeparated_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L188). The attribute's comment: “the scheme-descent-datum form, for a single quasi-compact chart”. References: SGA 3 X (5.4), “special case”.
 
 > **[Stacks, Tag 02W8](https://stacks.math.columbia.edu/tag/02W8) in the scheme-descent-datum
 > form, for a single quasi-compact chart.** Let `f : X ⟶ S` be a surjective, flat, quasi-compact
@@ -64,7 +64,7 @@ theorem isEffective_of_isSeparated_of_locallyQuasiFinite {S X : Scheme.{u}} {f :
     (hft : LocallyOfFiniteType D.over.hom) : DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isSeparated_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L224). References: SGA 3 X (5.4), “more general”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isSeparated_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L224). References: SGA 3 X (5.4), “more general”.
 
 > **[Stacks, Tag 02W8](https://stacks.math.columbia.edu/tag/02W8).** Let `S` be a scheme, let
 > `{X i ⟶ S}` be an fppf covering family and let `D = (V i / X i, φ i j)` be a descent datum
@@ -91,7 +91,7 @@ theorem isFamilyEffective_of_forall_isSeparated_of_locallyQuasiFinite {ι : Type
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveFlat_isSeparated_inf_locallyQuasiFinite_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SurjectiveFlatDescent.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SurjectiveFlatDescent.lean#L442). The attribute's comment: “effective descent along a single surjective flat chart of the site”.
+**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveFlat_isSeparated_inf_locallyQuasiFinite_inf_lft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SurjectiveFlatDescent.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SurjectiveFlatDescent.lean#L442). The attribute's comment: “effective descent along a single surjective flat chart of the site”.
 
 > **Effective descent along a single surjective flat morphism of the site locally of finite
 > presentation, for the separated locally quasi-finite morphisms locally of finite type**, over an
@@ -124,7 +124,7 @@ theorem isEffectiveDescentAlongSurjectiveFlat_isSeparated_inf_locallyQuasiFinite
         MorphismProperty Scheme.{u})
 ```
 
-**`AlgebraicGeometry.FormalSpace.isEffectiveDescentAlongSurjectiveEtale_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionDescent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionDescent.lean#L147). The attribute's comment: “effective descent along a surjective étale chart of the site, for thickenings”.
+**`AlgebraicGeometry.FormalSpace.isEffectiveDescentAlongSurjectiveEtale_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionDescent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionDescent.lean#L147). The attribute's comment: “effective descent along a surjective étale chart of the site, for thickenings”.
 
 > Effective descent along a surjective étale morphism of the big fppf site of `S` holds for the
 > thickenings.
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.57, Tag 02W7](https://stacks.math.columbia.edu/tag/02W7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

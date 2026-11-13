@@ -7,7 +7,7 @@ statement: formalized
 
 # Representations by squares and triangular numbers
 
-23 results, 12 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html).
+23 results, 12 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html).
 
 ## The square theta series
 
@@ -19,7 +19,7 @@ coefficient of $q^n$ is the number of integers $m$ with $m^2 = n$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.squareThetaSeries`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#square-theta-series).
+Formalized by `MetaMathlibExt.squareThetaSeries`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#square-theta-series).
 
 ## Triangular theta series
 
@@ -31,7 +31,7 @@ its coefficient of $q^n$ is the number of natural numbers $m$ with $m(m+1)/2 = n
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.triangularThetaSeries`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-theta-series).
+Formalized by `MetaMathlibExt.triangularThetaSeries`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-theta-series).
 
 ## First coefficients of the square theta series
 
@@ -43,7 +43,7 @@ $1$, $2$, $0$ and $2$ respectively.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.coeff_squareThetaSeries_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#coeff-square-theta-series-small).
+Formalized by `MetaMathlibExt.coeff_squareThetaSeries_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#coeff-square-theta-series-small).
 
 ## First coefficients of the triangular theta series
 
@@ -55,7 +55,7 @@ $1$, $0$ and $1$ respectively.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.coeff_triangularThetaSeries_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#coeff-triangular-theta-series-small).
+Formalized by `MetaMathlibExt.coeff_triangularThetaSeries_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#coeff-triangular-theta-series-small).
 
 ## The square theta series is a unit
 
@@ -67,7 +67,7 @@ power series with integer coefficients, since its constant coefficient is $1$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.isUnit_squareThetaSeries`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#is-unit-square-theta-series).
+Formalized by `MetaMathlibExt.isUnit_squareThetaSeries`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#is-unit-square-theta-series).
 
 ## The triangular theta series is a unit
 
@@ -79,7 +79,7 @@ series with integer coefficients, since its constant coefficient is $1$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.isUnit_triangularThetaSeries`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#is-unit-triangular-theta-series).
+Formalized by `MetaMathlibExt.isUnit_triangularThetaSeries`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#is-unit-triangular-theta-series).
 
 ## Representation numbers for sums of squares
 
@@ -95,7 +95,7 @@ integers.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.sumOfSquaresRepCount`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count).
+Formalized by `MetaMathlibExt.sumOfSquaresRepCount`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count).
 
 ## Representation numbers for sums of triangular numbers
 
@@ -111,7 +111,7 @@ numbers $m(m+1)/2$ with $m \ge 0$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.sumOfTriangularRepCount`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count).
+Formalized by `MetaMathlibExt.sumOfTriangularRepCount`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count).
 
 ## The one-square counts are the coefficients of the square theta series
 
@@ -124,7 +124,7 @@ $\theta(q)$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.sumOfSquaresRepCount_one`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-one).
+Formalized by `MetaMathlibExt.sumOfSquaresRepCount_one`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-one).
 
 ## Triangular representation numbers with one summand
 
@@ -136,7 +136,7 @@ natural number $n$, $t_1(n)$ equals the coefficient of $q^n$ in $\psi(q)$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Section 1.
 
-Formalized by `MetaMathlibExt.sumOfTriangularRepCount_one`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-one).
+Formalized by `MetaMathlibExt.sumOfTriangularRepCount_one`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-one).
 
 ## Divisibility of square representation counts by a large prime is periodic
 
@@ -150,7 +150,7 @@ $p \ge n + 1$. If $p$ divides $r_k(n)$, then $p$ divides $r_{k+jp}(n)$ for every
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sumOfSquaresRepCount_add_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-add-mul-prime).
+Stated but not proved: `MetaMathlibExt.sumOfSquaresRepCount_add_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-add-mul-prime).
 
 ## Prime divisibility of triangular representation numbers persists under prime shifts
 
@@ -164,7 +164,7 @@ integer $r$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_add_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-add-mul-prim).
+Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_add_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-add-mul-prim).
 
 ## Window congruence for sums of squares
 
@@ -177,7 +177,7 @@ $\sum_{i=0}^{p-1} r_{s-i}(n)$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sum_sumOfSquaresRepCount_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-sum-of-squares-rep-count-window).
+Stated but not proved: `MetaMathlibExt.sum_sumOfSquaresRepCount_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-sum-of-squares-rep-count-window).
 
 ## Window congruence for sums of triangular numbers
 
@@ -190,7 +190,7 @@ $\sum_{i=0}^{p-1} t_{s-i}(n)$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sum_sumOfTriangularRepCount_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-sum-of-triangular-rep-count-window).
+Stated but not proved: `MetaMathlibExt.sum_sumOfTriangularRepCount_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-sum-of-triangular-rep-count-window).
 
 ## Representability criterion from a window of counts
 
@@ -207,7 +207,7 @@ The source places no condition on $s$, so the statement is made for every intege
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.repCount_ne_zero_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#rep-count-ne-zero-of-window).
+Stated but not proved: `MetaMathlibExt.repCount_ne_zero_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#rep-count-ne-zero-of-window).
 
 ## Window criterion for representability by triangular numbers
 
@@ -220,7 +220,7 @@ not divide $\sum_{i=1}^{p-1} t_{s-i}(n)$, then $t_s(n) \ne 0$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_ne_zero_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-ne-zero-of-w).
+Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_ne_zero_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-ne-zero-of-w).
 
 ## A prime between $p/2$ and $p$ divides the representation counts of $p$
 
@@ -234,7 +234,7 @@ $p/2 < \ell < p$. Then $\ell$ divides both $r_\ell(p)$ and $t_\ell(p)$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_repCount_of_half_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#prime-dvd-rep-count-of-half-lt).
+Stated but not proved: `MetaMathlibExt.prime_dvd_repCount_of_half_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#prime-dvd-rep-count-of-half-lt).
 
 ## Logarithmic coefficients of the triangular theta series
 
@@ -253,7 +253,7 @@ of $-1/2$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 2 and its proof.
 
-Formalized by `MetaMathlibExt.triangularLogCoeff`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-log-coeff).
+Formalized by `MetaMathlibExt.triangularLogCoeff`, a definition declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-log-coeff).
 
 ## First logarithmic coefficients of the triangular theta series
 
@@ -266,7 +266,7 @@ $\log(1 + q + q^3 + \cdots) = q - q^2/2 + 4q^3/3 + \cdots$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 2 and its proof.
 
-Formalized by `MetaMathlibExt.triangularLogCoeff_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-log-coeff-small).
+Formalized by `MetaMathlibExt.triangularLogCoeff_small`, a theorem declared in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#triangular-log-coeff-small).
 
 ## Composition formula for triangular representation numbers
 
@@ -288,7 +288,7 @@ formula fails, giving $t_1(2) = 1$ although $t_1(2) = 0$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_eq_sum_compositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-eq-sum-compo).
+Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_eq_sum_compositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-eq-sum-compo).
 
 ## Recurrence for triangular representation numbers
 
@@ -303,7 +303,7 @@ $$t_k(n + 1) = \sum_{j=0}^{n} \frac{k (j + 1)\, b_{j+1}}{n + 1}\, t_k(n - j).$$
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Corollary 1, second recurrence.
 
-Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-succ).
+Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-succ).
 
 ## Integer zeros of the sums-of-squares counting polynomial
 
@@ -320,7 +320,7 @@ Equivalently, $|k| < 2 R_n$ with $R_n = \max_{0 \le i \le n-1} |c_i|^{1/(n-i)}$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.sumOfSquaresRepCount_integer_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-integer-root).
+Stated but not proved: `MetaMathlibExt.sumOfSquaresRepCount_integer_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-squares-rep-count-integer-root).
 
 ## Integer roots of triangular representation numbers
 
@@ -336,7 +336,7 @@ For $n \ge 1$ the bound says $|k| < 2 \max_{0 \le i \le n-1} |a_i|^{1/(n-i)}$.
 
 - Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_integer_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-integer-root).
+Stated but not proved: `MetaMathlibExt.sumOfTriangularRepCount_integer_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquaresTriangularRepresentationsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html#sum-of-triangular-rep-count-integer-root).
 
 ## Depends on
 
@@ -345,4 +345,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Representations by squares and triangular numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/representations-by-squares-and-triangular-number)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.25 Descending quasi-projective schemes
 
-Section 39.25 of the Stacks Project, [Tag 0CCH](https://stacks.math.columbia.edu/tag/0CCH). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.25 of the Stacks Project, [Tag 0CCH](https://stacks.math.columbia.edu/tag/0CCH). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H8K, a lemma
 
 [Tag 0H8K](https://stacks.math.columbia.edu/tag/0H8K) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_cardinalMk_geometricFibre_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L511). References: SGA 1 VIII (7.6), “sufficiency, fibres ≤ d”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_cardinalMk_geometricFibre_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L511). References: SGA 1 VIII (7.6), “sufficiency, fibres ≤ d”.
 
 > **Stacks Project, Tag 0H8K.** Let `f : X ⟶ Y` be a surjective finite locally free morphism
 > of schemes and let `d` be a positive integer such that every geometric fibre of `f` has at most
@@ -39,7 +39,7 @@ theorem isEffective_of_cardinalMk_geometricFibre_le
 
 [Tag 0CCI](https://stacks.math.columbia.edu/tag/0CCI) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L597).
+**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L597).
 
 > **Stacks Project, Tag 0CCI.** Let `f : X ⟶ Y` be a surjective finite locally free morphism
 > of schemes and let `D` be a descent datum relative to `f` whose underlying scheme `V` has the
@@ -59,7 +59,7 @@ theorem isEffective_of_forall_exists_isAffineOpen
 
 [Tag 0CCJ](https://stacks.math.columbia.edu/tag/0CCJ) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L173). The attribute's comment: “condition (3), an ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L173). The attribute's comment: “condition (3), an ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”.
 
 > **Stacks Project, Tag 0CCJ, condition (3).** Let `f : X ⟶ Y` be a surjective finite locally
 > free morphism. A descent datum on `V/X/Y` whose scheme `V` carries an ample invertible
@@ -73,7 +73,7 @@ theorem isEffective_of_isAmple {X Y : Scheme.{u}} {f : X ⟶ Y} [Surjective f]
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L192). The attribute's comment: “condition (4), an X-ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “more general”; SGA 1 VIII (7.7), “more general”; SGA 1 VIII (7.8), “partial”; SGA 1 XI (4.6), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L192). The attribute's comment: “condition (4), an X-ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “more general”; SGA 1 VIII (7.7), “more general”; SGA 1 VIII (7.8), “partial”; SGA 1 XI (4.6), “partial”.
 
 > **Stacks Project, Tag 0CCJ, condition (4).** Let `f : X ⟶ Y` be a surjective finite locally
 > free morphism. A descent datum on `V/X/Y` whose scheme `V` carries an invertible `𝒪_V`-module
@@ -87,7 +87,7 @@ theorem isEffective_of_isRelativelyAmple {X Y : Scheme.{u}} {f : X ⟶ Y} [Surje
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L207). The attribute's comment: “condition (2), V ⟶ X quasi-projective”. References: SGA 1 VIII (7.6); SGA 1 VIII (7.7), “Effectivity clause”; SGA 1 XI (4.6), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L207). The attribute's comment: “condition (2), V ⟶ X quasi-projective”. References: SGA 1 VIII (7.6); SGA 1 VIII (7.7), “Effectivity clause”; SGA 1 XI (4.6), “partial”.
 
 > **Stacks Project, Tag 0CCJ, condition (2).** Let `f : X ⟶ Y` be a surjective finite locally
 > free morphism. A descent datum on `V/X/Y` whose scheme `V` is quasi-projective over `X` is
@@ -99,7 +99,7 @@ theorem isEffective_of_isQuasiProjective {X Y : Scheme.{u}} {f : X ⟶ Y} [Surje
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L222). The attribute's comment: “condition (1), V ⟶ X H-projective”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 XI (4.6), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L222). The attribute's comment: “condition (1), V ⟶ X H-projective”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 XI (4.6), “partial”.
 
 > **Stacks Project, Tag 0CCJ, condition (1), H-projective case.** Let `f : X ⟶ Y` be a
 > surjective finite locally free morphism. A descent datum on `V/X/Y` whose scheme `V` is
@@ -111,7 +111,7 @@ theorem isEffective_of_isProjectiveMorphism {X Y : Scheme.{u}} {f : X ⟶ Y} [Su
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L273). The attribute's comment: “condition (1), V ⟶ X projective”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 XI (4.6), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L273). The attribute's comment: “condition (1), V ⟶ X projective”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 XI (4.6), “partial”.
 
 > **Stacks Project, Tag 0CCJ, condition (1).** Let `f : X ⟶ Y` be a surjective finite locally
 > free morphism. A descent datum on `V/X/Y` whose scheme `V` is projective over `X` — in the sense
@@ -124,7 +124,7 @@ theorem isEffective_of_isProjective {X Y : Scheme.{u}} {f : X ⟶ Y} [Surjective
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L304). The attribute's comment: “condition (5), an X-very ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 VIII (7.8), “partial”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isRelativelyVeryAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/QuasiProjective.lean#L304). The attribute's comment: “condition (5), an X-very ample invertible sheaf on V”. References: SGA 1 VIII (7.6), “special case”; SGA 1 VIII (7.7), “special case”; SGA 1 VIII (7.8), “partial”.
 
 > **Stacks Project, Tag 0CCJ, condition (5).** Let `f : X ⟶ Y` be a surjective finite locally
 > free morphism. A descent datum on `V/X/Y` whose scheme `V` carries an invertible `𝒪_V`-module
@@ -142,7 +142,7 @@ theorem isEffective_of_isRelativelyVeryAmple {X Y : Scheme.{u}} {f : X ⟶ Y} [S
 
 [Tag 0H8L](https://stacks.math.columbia.edu/tag/0H8L) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 624](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L624).
+**`AlgebraicGeometry.DescentDatum.isEffective_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BoundedFibreDescent/Effective.lean#L624).
 
 > **Stacks Project, Tag 0H8L.** Every descent datum relative to a surjective finite locally
 > free radicial morphism of schemes is effective: such a morphism is universally injective, so
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.25, Tag 0CCH](https://stacks.math.columbia.edu/tag/0CCH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

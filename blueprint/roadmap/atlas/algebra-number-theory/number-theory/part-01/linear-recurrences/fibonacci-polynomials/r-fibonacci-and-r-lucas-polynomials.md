@@ -7,7 +7,7 @@ statement: formalized
 
 # r-Fibonacci and r-Lucas polynomials
 
-59 results, 31 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html).
+59 results, 31 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html).
 
 ## The $r$-Fibonacci polynomials
 
@@ -23,7 +23,7 @@ at $m = 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 4.
 
-Formalized by `MetaMathlibExt.rFibonacciPolynomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial).
+Formalized by `MetaMathlibExt.rFibonacciPolynomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial).
 
 ## The zeroth $r$-Fibonacci polynomial vanishes
 
@@ -34,7 +34,7 @@ $x, y$ in a commutative semiring $R$, the $r$-Fibonacci polynomial $U^{(r)}_0(x,
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 4.
 
-Formalized by `MetaMathlibExt.rFibonacciPolynomial_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-zero).
+Formalized by `MetaMathlibExt.rFibonacciPolynomial_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-zero).
 
 ## Initial values of the $r$-Fibonacci polynomials
 
@@ -46,7 +46,7 @@ $U^{(r)}_{n+1}(x, y)$ equals $x^n$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 4.
 
-Formalized by `MetaMathlibExt.rFibonacciPolynomial_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-succ-of-lt).
+Formalized by `MetaMathlibExt.rFibonacciPolynomial_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-succ-of-lt).
 
 ## Recurrence for the $r$-Fibonacci polynomials
 
@@ -58,7 +58,7 @@ $U_m = U^{(r)}_m(x, y)$ satisfy $U_{n+1} = x \, U_n + y \, U_{n-r}$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 4.
 
-Formalized by `MetaMathlibExt.rFibonacciPolynomial_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-succ-of-le).
+Formalized by `MetaMathlibExt.rFibonacciPolynomial_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-succ-of-le).
 
 ## The $1$-Fibonacci polynomials at $x = y = 1$ are the Fibonacci numbers
 
@@ -71,7 +71,7 @@ $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
 
-Formalized by `MetaMathlibExt.rFibonacciPolynomial_one_one_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-one-one-one).
+Formalized by `MetaMathlibExt.rFibonacciPolynomial_one_one_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-one-one-one).
 
 ## Geometrically weighted sum of $r$-Fibonacci polynomials
 
@@ -92,7 +92,7 @@ The paper takes $m$ a positive integer; here $m$ is any element of $K$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-pow-mul-r-fibonacci-polynomial).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-pow-mul-r-fibonacci-polynomial).
 
 ## Sum of the first $n$ $r$-Fibonacci polynomials
 
@@ -110,7 +110,7 @@ where the terms of the inner sum with $n - r + j \le 0$ are zero.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-r-fibonacci-polynomial).
+Stated but not proved: `MetaMathlibExt.sum_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-r-fibonacci-polynomial).
 
 ## Alternating sum of $r$-Fibonacci polynomials
 
@@ -129,7 +129,7 @@ where the terms of the inner sum with $n - r + j \le 0$ are zero.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-neg-one-pow-mul-r-fibonacci-polynomi).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_rFibonacciPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-neg-one-pow-mul-r-fibonacci-polynomi).
 
 ## The $r$-Lucas polynomials of type $s$
 
@@ -144,7 +144,7 @@ The paper takes $1 \le s \le r$; the definition makes sense for every natural nu
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
 
-Formalized by `MetaMathlibExt.rLucasPolynomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial).
+Formalized by `MetaMathlibExt.rLucasPolynomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial).
 
 ## Initial value of the $r$-Lucas polynomials
 
@@ -156,7 +156,7 @@ $V^{(r,s)}_0(x, y) = s + 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
 
-Formalized by `MetaMathlibExt.rLucasPolynomial_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-zero).
+Formalized by `MetaMathlibExt.rLucasPolynomial_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-zero).
 
 ## Initial values of the $r$-Lucas polynomials
 
@@ -168,7 +168,7 @@ polynomial of type $s$ satisfies $V^{(r,s)}_{n+1}(x, y) = x^{n+1}$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
 
-Formalized by `MetaMathlibExt.rLucasPolynomial_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-succ-of-lt).
+Formalized by `MetaMathlibExt.rLucasPolynomial_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-succ-of-lt).
 
 ## Recurrence for the $r$-Lucas polynomials
 
@@ -180,7 +180,7 @@ polynomials of type $s$, $V_m = V^{(r,s)}_m(x, y)$, satisfy $V_{n+1} = x \, V_n 
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 1.
 
-Formalized by `MetaMathlibExt.rLucasPolynomial_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-succ-of-le).
+Formalized by `MetaMathlibExt.rLucasPolynomial_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-succ-of-le).
 
 ## Binet formula for the $r$-Fibonacci polynomials (distinct zeros)
 
@@ -200,7 +200,7 @@ when $y = 0$, $r \ge 2$).
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.rFibonacciPolynomial_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.rFibonacciPolynomial_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-eq-sum-roots).
 
 ## Binet formula for the $r$-Lucas polynomials (distinct zeros)
 
@@ -218,7 +218,7 @@ The paper takes $1 \le s \le r$; the identity holds for every $s$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.rLucasPolynomial_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.rLucasPolynomial_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-eq-sum-roots).
 
 ## Binet formula for the r-Fibonacci polynomials with one double zero
 
@@ -242,7 +242,7 @@ $\alpha = rx/(r+1)$ the double zero) is replaced by the factorization it yields.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.rFibonacciPolynomial_eq_of_double_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-eq-of-double-root).
+Stated but not proved: `MetaMathlibExt.rFibonacciPolynomial_eq_of_double_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-fibonacci-polynomial-eq-of-double-root).
 
 ## Binet formula for the $r$-Lucas polynomials (one double zero)
 
@@ -268,7 +268,7 @@ $x \ne 0$, so $\alpha \ne 0$; the only other $\alpha = 0$ case, $r = 1$, $x = y 
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.rLucasPolynomial_eq_of_double_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-eq-of-double-root).
+Stated but not proved: `MetaMathlibExt.rLucasPolynomial_eq_of_double_root` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#r-lucas-polynomial-eq-of-double-root).
 
 ## $(p,q)$-binomial coefficient
 
@@ -287,7 +287,7 @@ coefficient $\binom{n}{k}_q$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 3, Equation (3).
 
-Formalized by `MetaMathlibExt.pqBinomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial).
+Formalized by `MetaMathlibExt.pqBinomial`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial).
 
 ## $(p,q)$-binomial coefficients with lower index zero
 
@@ -299,7 +299,7 @@ $\binom{n}{0}_{p,q}$ equals $1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 3.
 
-Formalized by `MetaMathlibExt.pqBinomial_zero_right`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-zero-right).
+Formalized by `MetaMathlibExt.pqBinomial_zero_right`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-zero-right).
 
 ## $(p,q)$-binomial coefficients with upper index zero and positive lower index
 
@@ -311,7 +311,7 @@ coefficient $\binom{0}{k+1}_{p,q}$ equals $0$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 3.
 
-Formalized by `MetaMathlibExt.pqBinomial_zero_succ`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-zero-succ).
+Formalized by `MetaMathlibExt.pqBinomial_zero_succ`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-zero-succ).
 
 ## Pascal recursion for $(p,q)$-binomial coefficients
 
@@ -324,7 +324,7 @@ is truncated subtraction ($0$ when $k > n$).
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 3, Equation (3).
 
-Formalized by `MetaMathlibExt.pqBinomial_succ_succ`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-succ-succ).
+Formalized by `MetaMathlibExt.pqBinomial_succ_succ`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-succ-succ).
 
 ## The $(p, q)$-binomial coefficients at $p = 1$
 
@@ -336,7 +336,7 @@ $[n, k]_{p,q}$ at $p = 1$ equals the Gaussian binomial coefficient $\binom{n}{k}
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Section 3 (Remark 1: `p = 1` gives the `q`-analogue).
 
-Formalized by `MetaMathlibExt.pqBinomial_one_left`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-one-left).
+Formalized by `MetaMathlibExt.pqBinomial_one_left`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-binomial-one-left).
 
 ## $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
@@ -360,7 +360,7 @@ not $p^3 x$). The sum, which Theorem 2 of the source requires, is used.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 1.
 
-Formalized by `MetaMathlibExt.pqRFibonacci`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci).
+Formalized by `MetaMathlibExt.pqRFibonacci`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci).
 
 ## Zeroth value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
@@ -372,7 +372,7 @@ $(p,q)$-analogue of the $r$-Fibonacci polynomial satisfies $U^{(r)}_0(x, y, p, q
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 1.
 
-Formalized by `MetaMathlibExt.pqRFibonacci_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-zero).
+Formalized by `MetaMathlibExt.pqRFibonacci_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-zero).
 
 ## First value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
@@ -384,7 +384,7 @@ $(p,q)$-analogue of the $r$-Fibonacci polynomial satisfies $U^{(r)}_1(x, y, p, q
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 1.
 
-Formalized by `MetaMathlibExt.pqRFibonacci_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-one).
+Formalized by `MetaMathlibExt.pqRFibonacci_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-one).
 
 ## First recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
@@ -399,7 +399,7 @@ $$U_{n+1}(x, y) = p x \, U_n(p x, q y) + q y \, U_{n-r}(p x, q^{m+1} y).$$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 2, Equation (4).
 
-Stated but not proved: `MetaMathlibExt.pqRFibonacci_succ_eq_left` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-succ-eq-left).
+Stated but not proved: `MetaMathlibExt.pqRFibonacci_succ_eq_left` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-succ-eq-left).
 
 ## Second recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
@@ -414,7 +414,7 @@ $$U_{n+1}(x, y) = p x \, U_n(p x, p y) + q y \, U_{n-r}(q x, q^{m+1} y).$$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 2, Equation (5).
 
-Stated but not proved: `MetaMathlibExt.pqRFibonacci_succ_eq_right` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-succ-eq-right).
+Stated but not proved: `MetaMathlibExt.pqRFibonacci_succ_eq_right` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rfibonacci-succ-eq-right).
 
 ## First-kind (p, q)-Lucas polynomials
 
@@ -441,7 +441,7 @@ and agrees with it whenever $[n - rk]_{p,q} \ne 0$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 2.
 
-Formalized by `MetaMathlibExt.pqRLucas`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas).
+Formalized by `MetaMathlibExt.pqRLucas`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas).
 
 ## Initial value of the first-kind (p, q)-Lucas polynomials
 
@@ -454,7 +454,7 @@ $V^{(r,s)}_0(x, y, p, q, m) = s + 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 2.
 
-Formalized by `MetaMathlibExt.pqRLucas_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-zero).
+Formalized by `MetaMathlibExt.pqRLucas_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-zero).
 
 ## Second-kind (p, q)-Lucas polynomials
 
@@ -482,7 +482,7 @@ $(p, q)$-numbers; the two agree whenever $[n - rk]_{p,q} \ne 0$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 2.
 
-Formalized by `MetaMathlibExt.pqRLucasSecond`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second).
+Formalized by `MetaMathlibExt.pqRLucasSecond`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 408](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L408). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second).
 
 ## Initial value of the second-kind (p, q)-Lucas polynomials
 
@@ -495,7 +495,7 @@ $\mathbb{V}^{(r,s)}_0(x, y, p, q, m) = s + 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 2.
 
-Formalized by `MetaMathlibExt.pqRLucasSecond_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-zero).
+Formalized by `MetaMathlibExt.pqRLucasSecond_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-zero).
 
 ## Splitting formula for first-kind (p, q)-Lucas polynomials
 
@@ -515,7 +515,7 @@ The paper takes positive $s$; the identity holds for every natural number $s$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 1.
 
-Stated but not proved: `MetaMathlibExt.pqRLucas_eq_pqRFibonacci_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-pq-rfibonacci-add).
+Stated but not proved: `MetaMathlibExt.pqRLucas_eq_pqRFibonacci_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-pq-rfibonacci-add).
 
 ## Splitting formula for second-kind (p, q)-Lucas polynomials
 
@@ -534,7 +534,7 @@ $$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 1.
 
-Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_pqRFibonacci_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-pq-rfibonacci-add).
+Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_pqRFibonacci_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-pq-rfibonacci-add).
 
 ## First-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials
 
@@ -552,7 +552,7 @@ $$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 2.
 
-Stated but not proved: `MetaMathlibExt.pqRLucas_eq_succ_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-succ-mul-sub).
+Stated but not proved: `MetaMathlibExt.pqRLucas_eq_succ_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-succ-mul-sub).
 
 ## Second-kind (p, q)-Lucas polynomials as a difference of (p, q)-Fibonacci polynomials
 
@@ -570,7 +570,7 @@ $$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 2.
 
-Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_succ_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-succ-mul-sub).
+Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_succ_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-succ-mul-sub).
 
 ## First-kind $(p,q)$-analogue of the $r$-Lucas polynomial via two $r$-Fibonacci terms
 
@@ -587,7 +587,7 @@ $$V_n(x, y) = x \, U_n(x, y) + (1 + s) \, y \, U_{n-r}(x, y q^m).$$
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 3.
 
-Stated but not proved: `MetaMathlibExt.pqRLucas_eq_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-mul-add).
+Stated but not proved: `MetaMathlibExt.pqRLucas_eq_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-eq-mul-add).
 
 ## Recurrence-type formula for second-kind (p, q)-Lucas polynomials
 
@@ -609,7 +609,7 @@ $(x, y p^r q^{m-r}, m)$; they are unchanged.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 3, part 3.
 
-Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-mul-add).
+Stated but not proved: `MetaMathlibExt.pqRLucasSecond_eq_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#pq-rlucas-second-eq-mul-add).
 
 ## Geometrically weighted sum of $r$-Lucas polynomials
 
@@ -631,7 +631,7 @@ $n < r - 1$ the right side involves $V$ at negative indices.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-pow-mul-r-lucas-polynomial).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-pow-mul-r-lucas-polynomial).
 
 ## Sum of the first $n$ $r$-Lucas polynomials
 
@@ -650,7 +650,7 @@ The paper states $n \ge 1$; for $n < r - 1$ the right side involves $V$ at negat
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.sum_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-r-lucas-polynomial).
+Stated but not proved: `MetaMathlibExt.sum_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-r-lucas-polynomial).
 
 ## Alternating sum of $r$-Lucas polynomials
 
@@ -671,7 +671,7 @@ For $n < r - 1$ the right side involves $V$ at negative indices.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-neg-one-pow-mul-r-lucas-polynomial).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_rLucasPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#sum-neg-one-pow-mul-r-lucas-polynomial).
 
 ## The (-r)-Fibonacci polynomials
 
@@ -687,7 +687,7 @@ The paper takes $r \ge 2$; the case $r = 0$ only makes the definition total.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3.
 
-Formalized by `MetaMathlibExt.negRFibonacci`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci).
+Formalized by `MetaMathlibExt.negRFibonacci`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci).
 
 ## The zeroth (-r)-Fibonacci polynomial
 
@@ -699,7 +699,7 @@ $U^{(-r)}_0(x, y) = 0$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3.
 
-Formalized by `MetaMathlibExt.negRFibonacci_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-zero).
+Formalized by `MetaMathlibExt.negRFibonacci_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-zero).
 
 ## The first (-r)-Fibonacci polynomial
 
@@ -711,7 +711,7 @@ $U^{(-r)}_1(x, y) = 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3.
 
-Formalized by `MetaMathlibExt.negRFibonacci_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-one).
+Formalized by `MetaMathlibExt.negRFibonacci_one`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-one).
 
 ## The (-r)-Fibonacci polynomials vanish at indices 2 to r
 
@@ -723,7 +723,7 @@ $(-r)$-Fibonacci polynomial satisfies $U^{(-r)}_{n+1}(x, y) = 0$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3.
 
-Formalized by `MetaMathlibExt.negRFibonacci_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-of-lt).
+Formalized by `MetaMathlibExt.negRFibonacci_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-of-lt).
 
 ## Recurrence for the (-r)-Fibonacci polynomials
 
@@ -735,7 +735,7 @@ $U_m = U^{(-r)}_m(x, y)$. Then $U_{n+1} = y^{-1} U_{n-r+1} - y^{-1} x U_{n-r}$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 3, Equation (7).
 
-Formalized by `MetaMathlibExt.negRFibonacci_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-of-le).
+Formalized by `MetaMathlibExt.negRFibonacci_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-of-le).
 
 ## Companion sequence of the $(-r)$-Fibonacci polynomials
 
@@ -752,7 +752,7 @@ The paper takes $r \ge 2$; the case $r = 0$ only makes the definition total.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
 
-Formalized by `MetaMathlibExt.negRLucas`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 613](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L613). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas).
+Formalized by `MetaMathlibExt.negRLucas`, a definition declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 613](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L613). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas).
 
 ## Zeroth term of the companion sequence $V^{(-r)}$
 
@@ -764,7 +764,7 @@ $(-r)$-Fibonacci polynomials satisfies $V^{(-r)}_0(x, y) = r + 1$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
 
-Formalized by `MetaMathlibExt.negRLucas_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-zero).
+Formalized by `MetaMathlibExt.negRLucas_zero`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-zero).
 
 ## Vanishing initial terms of the companion sequence $V^{(-r)}$
 
@@ -777,7 +777,7 @@ that is, $V^{(-r)}_m(x, y) = 0$ for $1 \le m < r$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
 
-Formalized by `MetaMathlibExt.negRLucas_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-succ-of-lt).
+Formalized by `MetaMathlibExt.negRLucas_succ_of_lt`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-succ-of-lt).
 
 ## The $r$-th term of the companion sequence $V^{(-r)}$
 
@@ -789,7 +789,7 @@ $(-r)$-Fibonacci polynomials satisfies $V^{(-r)}_r(x, y) = r y^{-1}$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
 
-Formalized by `MetaMathlibExt.negRLucas_self`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-self).
+Formalized by `MetaMathlibExt.negRLucas_self`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-self).
 
 ## Recurrence for the companion sequence $V^{(-r)}$
 
@@ -802,7 +802,7 @@ $V^{(-r)}_{n+1}(x, y) = y^{-1} V^{(-r)}_{n-r+1}(x, y) - y^{-1} x V^{(-r)}_{n-r}(
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Definition 4.
 
-Formalized by `MetaMathlibExt.negRLucas_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-succ-of-le).
+Formalized by `MetaMathlibExt.negRLucas_succ_of_le`, a theorem declared in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-succ-of-le).
 
 ## Explicit sum for the (-r)-Fibonacci polynomials
 
@@ -820,7 +820,7 @@ The paper states $n \ge 1$ and $x$ a unit; the identity holds for $n = 0$ and ev
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.negRFibonacci_succ_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-eq-sum).
+Stated but not proved: `MetaMathlibExt.negRFibonacci_succ_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-eq-sum).
 
 ## Explicit sum for the (-r)-Fibonacci polynomials, second form
 
@@ -833,7 +833,7 @@ $k$ with $0 \le k \le \lfloor n/r \rfloor$ and $r \mid n - k$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.negRFibonacci_succ_eq_sum'` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-eq-sum-2).
+Stated but not proved: `MetaMathlibExt.negRFibonacci_succ_eq_sum'` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-succ-eq-sum-2).
 
 ## The companion sequence in terms of the $(-r)$-Fibonacci polynomials
 
@@ -849,7 +849,7 @@ The paper takes $x$ a unit; the identity holds for every $x$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Proposition 1, Equation (8).
 
-Stated but not proved: `MetaMathlibExt.negRLucas_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq).
+Stated but not proved: `MetaMathlibExt.negRLucas_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq).
 
 ## Explicit sum for the companion sequence $V^{(-r)}$
 
@@ -874,7 +874,7 @@ $-x$ instead of $V^{(-r)}_1 = 0$); both are excluded.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum).
+Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum).
 
 ## Explicit sum for the (-r)-Lucas polynomials, second form
 
@@ -892,7 +892,7 @@ plus $r y^{-n/r}$ when $r \mid n$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum'` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 728](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L728). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum-2).
+Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum'` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 728](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L728). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum-2).
 
 ## Generating function of the (-r)-Fibonacci polynomials
 
@@ -908,7 +908,7 @@ The paper states the identity for complex $z$; convergence is not part of this s
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.negRFibonacci_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-generating-function).
+Stated but not proved: `MetaMathlibExt.negRFibonacci_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-generating-function).
 
 ## Generating function of the companion sequence $V^{(-r)}$
 
@@ -923,7 +923,7 @@ $$(1 - y^{-1} z^r + x y^{-1} z^{r+1}) \sum_{n \ge 0} V^{(-r)}_n(x, y) z^n = r + 
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.negRLucas_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-generating-function).
+Stated but not proved: `MetaMathlibExt.negRLucas_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-generating-function).
 
 ## Separability of $t^{r+1} - y^{-1} t + x y^{-1}$
 
@@ -942,7 +942,7 @@ that is, $(r+1)^{r+1} x^r y = r^r$, which is the branch-free condition used here
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.separable_negRFibonacci_charPoly` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 773](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L773). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#separable-neg-rfibonacci-char-poly).
+Stated but not proved: `MetaMathlibExt.separable_negRFibonacci_charPoly` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 773](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L773). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#separable-neg-rfibonacci-char-poly).
 
 ## Binet formula for the (-r)-Fibonacci polynomials
 
@@ -963,7 +963,7 @@ the zeros (compare Lemma 1).
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.negRFibonacci_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.negRFibonacci_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rfibonacci-eq-sum-roots).
 
 ## Binet formula for the companion sequence $V^{(-r)}$
 
@@ -978,7 +978,7 @@ number $n$.
 
 - Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.negRLucas_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean, line 801](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RFibonacciPolynomialWanted.lean#L801). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html#neg-rlucas-eq-sum-roots).
 
 ## Depends on
 
@@ -987,4 +987,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: r-Fibonacci and r-Lucas polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/r-fibonacci-and-r-lucas-polynomials)

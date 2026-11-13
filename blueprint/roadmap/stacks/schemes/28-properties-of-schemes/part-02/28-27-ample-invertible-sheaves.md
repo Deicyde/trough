@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.27 Ample invertible sheaves
 
-Section 28.27 of the Stacks Project, [Tag 01PR](https://stacks.math.columbia.edu/tag/01PR). 15 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 28.27 of the Stacks Project, [Tag 01PR](https://stacks.math.columbia.edu/tag/01PR). 15 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01PS, a definition
 
 [Tag 01PS](https://stacks.math.columbia.edu/tag/01PS) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.IsAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/Defs.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/Defs.lean#L95). References: EGA II (4.5.3).
+**`AlgebraicGeometry.Scheme.Modules.IsAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/Defs.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Ample/Defs.lean#L95). References: EGA II (4.5.3).
 
 > An invertible sheaf of modules on a scheme is *ample* if the scheme is quasi-compact and
 > every point has an affine nonvanishing locus for some global section of a tensor power of
@@ -28,7 +28,7 @@ public def IsAmple : Prop
 
 [Tag 01PT](https://stacks.math.columbia.edu/tag/01PT) in the Stacks Project.
 
-**`Stacks.AmplePositivePower.isAmple_iff_isAmple_tensorPowModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePositivePower/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePositivePower/Basic.lean#L72). References: EGA II (4.5.6), “(i)”.
+**`Stacks.AmplePositivePower.isAmple_iff_isAmple_tensorPowModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePositivePower/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePositivePower/Basic.lean#L72). References: EGA II (4.5.6), “(i)”.
 
 > An invertible `𝒪_X`-module `L` is ample if and only if its tensor power `L ^⊗ d` is ample,
 > for any `d ≥ 1`.
@@ -38,7 +38,7 @@ theorem isAmple_iff_isAmple_tensorPowModule (d : ℕ) (hd : 1 ≤ d) :
     IsAmple X L ↔ IsAmple X (tensorPowModule X L (d : ℤ))
 ```
 
-**`AlgebraicGeometry.isAmple_iff_tensorPower_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/TensorPower.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/TensorPower.lean#L589). References: EGA II (4.5.6), “(i)”.
+**`AlgebraicGeometry.isAmple_iff_tensorPower_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/TensorPower.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/TensorPower.lean#L589). References: EGA II (4.5.6), “(i)”.
 
 > An invertible sheaf is ample if and only if any of its positive tensor
 > powers is ample.
@@ -58,7 +58,7 @@ theorem isAmple_iff_tensorPower_isAmple (X : Scheme.{u}) (L : X.Modules)
 
 [Tag 01PU](https://stacks.math.columbia.edu/tag/01PU) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isAmple_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean#L108). References: EGA II (4.5.14), “necessity”; EGA II (4.5.13), “necessity”; EGA III (2.6.2.3), “special case”; EGA III (5.2.5), “Ampleness of L'\_0 = L/JL”.
+**`AlgebraicGeometry.Scheme.Modules.isAmple_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean#L108). References: EGA II (4.5.14), “necessity”; EGA II (4.5.13), “necessity”; EGA III (2.6.2.3), “special case”; EGA III (5.2.5), “Ampleness of L'\_0 = L/JL”.
 
 > **Stacks Project, Tag 01PU.** The restriction of an ample invertible sheaf of modules to a
 > closed subscheme is ample. The closed immersion is affine, and its source is quasi-compact
@@ -73,7 +73,7 @@ public theorem isAmple_pullback_of_isClosedImmersion [IsClosedImmersion f] (h : 
 
 [Tag 01PV](https://stacks.math.columbia.edu/tag/01PV) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basic.lean#L325). References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
+**`AlgebraicGeometry.Scheme.Modules.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basic.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basic.lean#L325). References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
 
 > For an invertible module `L` on a scheme `X` and a global section `s` of `L`, every affine
 > open `U ⊆ X` meets the nonvanishing locus `X_s` in an affine open.
@@ -86,7 +86,7 @@ public theorem isAffineOpen_inf_nonvanishingOpen {X : Scheme.{u}} (L : X.Modules
     IsAffineOpen (U ⊓ nonvanishingOpen (X := X.toRingedSpace) L s)
 ```
 
-**`Stacks.NonvanishingAffineIntersection.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean#L122). References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
+**`Stacks.NonvanishingAffineIntersection.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean#L122). References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
 
 > Let `X` be a scheme, `M` an invertible `𝒪_X`-module and `s` a global section of `M`. For every
 > affine open `U` of `X`, the intersection `U ∩ X_s` of `U` with the nonvanishing locus of `s` is
@@ -101,7 +101,7 @@ theorem isAffineOpen_inf_nonvanishingOpen {U : X.Opens} (hU : IsAffineOpen U) :
 
 [Tag 0890](https://stacks.math.columbia.edu/tag/0890) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isAmple_tensor_of_power_sections_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorPowerProduct/Basic.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorPowerProduct/Basic.lean#L213). References: EGA II (4.5.6), “(ii)”.
+**`AlgebraicGeometry.Scheme.Modules.isAmple_tensor_of_power_sections_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorPowerProduct/Basic.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorPowerProduct/Basic.lean#L213). References: EGA II (4.5.6), “(ii)”.
 
 > **Stacks Project, Tag 0890.** Let `L` and `M` be invertible modules on a scheme `X`. If `L`
 > is ample and the nonvanishing opens of the global sections of the positive tensor powers of `M`
@@ -132,7 +132,7 @@ theorem isAmple_tensor_of_power_sections_cover (X : Scheme.{u}) (L M : X.Modules
 
 [Tag 01PX](https://stacks.math.columbia.edu/tag/01PX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isBasis_affine_nonvanishingOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basis.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basis.lean#L59).
+**`AlgebraicGeometry.Scheme.Modules.isBasis_affine_nonvanishingOpens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basis.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Basis.lean#L59).
 
 > **Stacks Project, Tag 01PX.** If the nonvanishing opens of global sections of the positive
 > tensor powers of an invertible sheaf form a basis of the topology, then the affine ones among
@@ -161,7 +161,7 @@ public theorem isBasis_affine_nonvanishingOpens
 
 [Tag 01PY](https://stacks.math.columbia.edu/tag/01PY) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isSeparated_of_affine_nonvanishingOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Separated.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Separated.lean#L351).
+**`AlgebraicGeometry.Scheme.Modules.isSeparated_of_affine_nonvanishingOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Separated.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/Separated.lean#L351).
 
 > **Stacks Project, Tag 01PY.** A scheme carrying an invertible sheaf of modules such that
 > every point lies in an *affine* nonvanishing open of a global section of some positive tensor
@@ -181,7 +181,7 @@ public theorem isSeparated_of_affine_nonvanishingOpen_cover
     Scheme.IsSeparated X
 ```
 
-**`Stacks.AmpleNonvanishing.isSeparated_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/AmpleAffineDiagonal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/AmpleAffineDiagonal.lean#L71). The attribute's comment: “at the predicate Stacks.Ample.IsAmple”.
+**`Stacks.AmpleNonvanishing.isSeparated_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/AmpleAffineDiagonal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleNonvanishing/AmpleAffineDiagonal.lean#L71). The attribute's comment: “at the predicate Stacks.Ample.IsAmple”.
 
 > **A scheme carrying an ample invertible module is separated**, at the predicate
 > `Stacks.Ample.IsAmple`. This is [Stacks, Tag 01PY], available as
@@ -194,7 +194,7 @@ theorem isSeparated_of_isAmple (X : Scheme.{u}) (L : X.Modules) [IsInvertibleMod
     (hL : IsAmple X L) : Scheme.IsSeparated X
 ```
 
-**`AlgebraicGeometry.isSeparated_of_exists_affine_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean#L295).
+**`AlgebraicGeometry.isSeparated_of_exists_affine_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean#L295).
 
 > A scheme is separated as soon as every point lies in an affine nonvanishing open of a global
 > section of some positive tensor power of an invertible sheaf.
@@ -217,7 +217,7 @@ theorem isSeparated_of_exists_affine_nonvanishingOpen
 
 [Tag 09MP](https://stacks.math.columbia.edu/tag/09MP) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.IsAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean#L342).
+**`AlgebraicGeometry.Scheme.Modules.IsAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleAndExtension/Separated.lean#L342).
 
 > **A scheme carrying an ample invertible sheaf is separated.**
 
@@ -230,7 +230,7 @@ theorem Scheme.Modules.IsAmple.isSeparated (hL : Scheme.Modules.IsAmple X L) :
 
 [Tag 01PZ](https://stacks.math.columbia.edu/tag/01PZ) in the Stacks Project.
 
-**`Stacks.SectionRingProjMorphism.projHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L177).
+**`Stacks.SectionRingProjMorphism.projHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L177).
 
 > **The canonical morphism `⋃ X_a ⟶ Proj Γ_*(X, L)` of Stacks Tag 01PZ.** It is glued from the
 > charts `Stacks.SectionRingChartMap.chartHom` over the cover of `⋃ X_a` by the nonvanishing opens
@@ -246,7 +246,7 @@ theorem Scheme.Modules.IsAmple.isSeparated (hL : Scheme.Modules.IsAmple X L) :
 public noncomputable def projHom : (nvUnion L).toScheme ⟶ Proj (grading L)
 ```
 
-**`Stacks.SectionRingProjMorphism.homOfLE_projHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L203). The attribute's comment: “the restriction to a nonvanishing open is the chart”.
+**`Stacks.SectionRingProjMorphism.homOfLE_projHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L203). The attribute's comment: “the restriction to a nonvanishing open is the chart”.
 
 > **On `X_a` the canonical morphism is the chart at `a`.** This is the second half of the
 > characterisation of the morphism of Stacks Tag 01PZ, not one of the tag's numbered clauses. For
@@ -260,7 +260,7 @@ public theorem homOfLE_projHom {d : ℕ} (a : powSections L d) (hd : 0 < d) :
       = Stacks.SectionRingChartMap.chartHom L a hd
 ```
 
-**`Stacks.SectionRingProjMorphism.projHom_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L216). The attribute's comment: “the preimage of a basic open”.
+**`Stacks.SectionRingProjMorphism.projHom_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L216). The attribute's comment: “the preimage of a basic open”.
 
 > **Clause (1) of Stacks Tag 01PZ: the preimage of a basic open.** For every homogeneous element
 > `a` of `Γ_*(X, L)` of positive degree, the canonical morphism pulls the chart `D₊(a)` of
@@ -276,7 +276,7 @@ public theorem projHom_preimage_projBasicOpen {d : ℕ} (a : powSections L d) (h
       = (nvUnion L).ι ⁻¹ᵁ nvOpen L a
 ```
 
-**`Stacks.SectionRingProjMorphism.image_projHom_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L231). The attribute's comment: “the preimage of a basic open, as an open of X”.
+**`Stacks.SectionRingProjMorphism.image_projHom_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Basic.lean#L231). The attribute's comment: “the preimage of a basic open, as an open of X”.
 
 > **Clause (1) of Stacks Tag 01PZ, read as an open of `X`.** The image in `X` of the preimage of
 > `D₊(a)` is the nonvanishing open `X_a` itself, which is the shape the Stacks project's statement
@@ -289,7 +289,7 @@ public theorem image_projHom_preimage_projBasicOpen {d : ℕ} (a : powSections L
       = nvOpen L a
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.homOfLE_projHom_eq_glued`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L104). The attribute's comment: “the canonical morphism is the morphism r\_\{L,psi} of Tag 01NK at psi the identity map of the section ring, with no hypothesis on L; this is what the clauses below are clauses about”.
+**`Stacks.SectionRingProjMorphism.Theta.homOfLE_projHom_eq_glued`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L109). The attribute's comment: “the canonical morphism is the morphism r\_\{L,psi} of Tag 01NK at psi the identity map of the section ring, with no hypothesis on L; this is what the clauses below are clauses about”.
 
 > **The canonical morphism `Stacks.SectionRingProjMorphism.projHom` is the morphism `r_{L, ψ}` of
 > [Stacks, Tag 01NK] at `ψ` the identity map of `Γ_*(X, L)`**, with no hypothesis on `L`: the two
@@ -303,7 +303,7 @@ theorem homOfLE_projHom_eq_glued :
       = (canonicalSections L).glued
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.glued_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L120). The attribute's comment: “clause (1): f^\{-1}(D\_+(s)) = X\_s for every homogeneous s in S\_+, for the morphism f = r\_\{L,psi} that clauses (2), (3) and (4) are stated at, as opens of its source U(psi)”.
+**`Stacks.SectionRingProjMorphism.Theta.glued_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L125). The attribute's comment: “clause (1): f^\{-1}(D\_+(s)) = X\_s for every homogeneous s in S\_+, for the morphism f = r\_\{L,psi} that clauses (2), (3) and (4) are stated at, as opens of its source U(psi)”.
 
 > `f^{-1}(D₊(s)) = X_s` for every homogeneous `s ∈ S_+`, where `f` is `r_{L, ψ}` at `ψ` the
 > identity map of `S = Γ_*(X, L)`. Both sides are opens of the source `U(ψ) = ⋃_a X_a` of `f`, the
@@ -316,7 +316,7 @@ theorem glued_preimage_projBasicOpen {d : ℕ} (a : powSections L d) (hd : 0 < d
       = (canonicalSections L).coveringOpen.ι ⁻¹ᵁ nvOpen L a
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.projTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L140). The attribute's comment: “clause (2): the O\_X-module maps f^*O\_Y(n) -> L^\{tensor n} for all n in Z, as a homomorphism of sheaves of Z-graded algebras, whose map\_mul is their compatibility with the multiplication maps of Constructions Equation 01MO”.
+**`Stacks.SectionRingProjMorphism.Theta.projTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L145). The attribute's comment: “clause (2): the O\_X-module maps f^*O\_Y(n) -> L^\{tensor n} for all n in Z, as a homomorphism of sheaves of Z-graded algebras, whose map\_mul is their compatibility with the multiplication maps of Constructions Equation 01MO”.
 
 > **The `𝒪_X`-module maps `f^*𝒪_Y(n) ⟶ L^{⊗ n}`, compatible with the multiplication maps of
 > Constructions, Equation 01MO.** All degrees at once, as a homomorphism of sheaves of `ℤ`-graded
@@ -333,7 +333,7 @@ def projTheta : SheafOfModules.GradedAlgebra.Hom
     (laurentRestrict (grading L) (canonicalSections L))
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.projTheta_app_top_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L163). The attribute's comment: “clause (3): the composite S\_d -> Gamma(Y, O\_Y(d)) -> Gamma(X, L^\{tensor d}) is the identity map, read on the open where the canonical morphism is defined”.
+**`Stacks.SectionRingProjMorphism.Theta.projTheta_app_top_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L210). The attribute's comment: “clause (3): the composite S\_d -> Gamma(Y, O\_Y(d)) -> Gamma(X, L^\{tensor d}) is the identity map, read on the open where the canonical morphism is defined”.
 
 > **The composite `S_d ⟶ Γ(Y, 𝒪_Y(d)) ⟶ Γ(X, L^{⊗ d})` is the identity map.** For a homogeneous
 > element `z` of `S = Γ_*(X, L)` of degree `d`, the first map sends `z` to the global section of
@@ -356,7 +356,7 @@ theorem projTheta_app_top_degreeSection (d : ℕ) {z : sectionRing L} (hz : z �
           ((canonicalSections L).coveringOpen.ι ''ᵁ ⊤)
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.exists_isIso_pullback_projTheta_app_intMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean#L484). The attribute's comment: “clause (4): every point of the open where the canonical morphism is defined has an integer d >= 1 and an open neighbourhood U of it on which f^*O\_Y(dn) -> L^\{tensor dn} is an isomorphism for all n in Z, positive, zero and negative; d is the degree of a homogeneous element of the section ring not vanishing at the point and U is the nonvanishing open of that element”.
+**`Stacks.SectionRingProjMorphism.Theta.exists_isIso_pullback_projTheta_app_intMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean#L484). The attribute's comment: “clause (4): every point of the open where the canonical morphism is defined has an integer d >= 1 and an open neighbourhood U of it on which f^*O\_Y(dn) -> L^\{tensor dn} is an isomorphism for all n in Z, positive, zero and negative; d is the degree of a homogeneous element of the section ring not vanishing at the point and U is the nonvanishing open of that element”.
 
 > Every point of `⋃_a X_a` has an integer `d ≥ 1` and an open neighbourhood `U` on which
 > `f^*𝒪_Y(d n)|_U ⟶ L^{⊗ d n}|_U` is an isomorphism **for all `n ∈ ℤ`**.
@@ -374,7 +374,7 @@ theorem exists_isIso_pullback_projTheta_app_intMul {x : X}
 
 [Tag 01Q0](https://stacks.math.columbia.edu/tag/01Q0) in the Stacks Project.
 
-**`Stacks.SectionRingProjQuasiCompact.quasiCompact_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L220). The attribute's comment: “the canonical morphism of 01PZ is quasi-compact, under (a) the X\_s cover X and (b) X quasi-compact”.
+**`Stacks.SectionRingProjQuasiCompact.quasiCompact_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L221). The attribute's comment: “the canonical morphism of 01PZ is quasi-compact, under (a) the X\_s cover X and (b) X quasi-compact”.
 
 > **Stacks Tag 01Q0, the quasi-compactness.** Under clause (a) of Stacks Tag 01PZ — the `X_s`
 > cover `X` — and `X` quasi-compact, the canonical morphism `f : X ⟶ Proj Γ_*(X, L)` of Stacks Tag
@@ -390,7 +390,7 @@ theorem quasiCompact_projHomOfCovers [CompactSpace X]
     QuasiCompact (Stacks.SectionRingProjMorphism.projHomOfCovers L hcov)
 ```
 
-**`Stacks.SectionRingProjQuasiCompact.denseRange_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L233). The attribute's comment: “the canonical morphism of 01PZ has dense image, under (a) the X\_s cover X and (b) X quasi-compact”.
+**`Stacks.SectionRingProjQuasiCompact.denseRange_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L235). The attribute's comment: “the canonical morphism of 01PZ has dense image, under (a) the X\_s cover X and (b) X quasi-compact”.
 
 > **Stacks Tag 01Q0, the dense image.** Under clause (a) of Stacks Tag 01PZ — the `X_s` cover
 > `X` — and `X` quasi-compact, the canonical morphism `f : X ⟶ Proj Γ_*(X, L)` of Stacks Tag 01PZ
@@ -410,7 +410,7 @@ theorem denseRange_projHomOfCovers [CompactSpace X]
 
 [Tag 01Q1](https://stacks.math.columbia.edu/tag/01Q1) in the Stacks Project.
 
-**`Stacks.SectionRingProjImmersion.isOpenImmersion_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean#L141). The attribute's comment: “open immersion”. References: EGA II (4.5.2), “partial”.
+**`Stacks.SectionRingProjImmersion.isOpenImmersion_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean#L142). The attribute's comment: “open immersion”. References: EGA II (4.5.2), “partial”.
 
 > **Stacks Tag 01Q1, the open immersion.** For `L` an ample invertible `𝒪_X`-module, the
 > canonical morphism `X ⟶ Proj Γ_*(X, L)` of Stacks Tag 01PZ is an open immersion.
@@ -420,7 +420,7 @@ theorem isOpenImmersion_projHomOfIsAmple (hL : IsAmple X L) :
     IsOpenImmersion (Stacks.SectionRingProjMorphism.projHomOfIsAmple L hL)
 ```
 
-**`Stacks.SectionRingProjImmersion.denseRange_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean#L166). The attribute's comment: “dense image”.
+**`Stacks.SectionRingProjImmersion.denseRange_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjImmersion/Basic.lean#L167). The attribute's comment: “dense image”.
 
 > **Stacks Tag 01Q1, the dense image.** For `L` an ample invertible `𝒪_X`-module, the canonical
 > morphism `X ⟶ Proj Γ_*(X, L)` of Stacks Tag 01PZ has dense image.
@@ -438,7 +438,7 @@ theorem denseRange_projHomOfIsAmple (hL : IsAmple X L) :
 
 [Tag 01Q2](https://stacks.math.columbia.edu/tag/01Q2) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjAmpleTwist.exists_isAmple_pullback_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleProjOpenImmersion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleProjOpenImmersion.lean#L208). References: EGA II (8.14.4), “invertible for some d”.
+**`Stacks.AlgebraicGeometry.ProjAmpleTwist.exists_isAmple_pullback_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleProjOpenImmersion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleProjOpenImmersion.lean#L208). References: EGA II (8.14.4), “invertible for some d”.
 
 > **Stacks Project, Tag 01Q2.** Let `X` be a quasi-compact scheme and `S` a graded ring, and
 > assume there is an open immersion `j : X ⟶ Proj(S)`. Then `j^* 𝒪(d)` is an invertible ample
@@ -456,7 +456,7 @@ theorem exists_isAmple_pullback_twistingSheaf {X : Scheme.{u}} [CompactSpace X]
 
 [Tag 01Q3](https://stacks.math.columbia.edu/tag/01Q3) in the Stacks Project.
 
-**`Stacks.AmpleCharacterization.exists_nvUnion_eq_top_and_isOpenImmersion_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L129). The attribute's comment: “clause (2)”. References: EGA II (4.5.2), “(a) ⇒ (a'')”.
+**`Stacks.AmpleCharacterization.exists_nvUnion_eq_top_and_isOpenImmersion_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L130). The attribute's comment: “clause (2)”. References: EGA II (4.5.2), “(a) ⇒ (a'')”.
 
 > **Clause (2) of [Stacks, Tag 01Q3]** — the clause labelled 01Q5: for `L` ample the open sets
 > `X_s`, with `s ∈ S₊` homogeneous, cover `X`, and the associated morphism `X ⟶ Proj S` is an open
@@ -473,7 +473,7 @@ theorem exists_nvUnion_eq_top_and_isOpenImmersion_of_isAmple (hL : IsAmple X L) 
       IsOpenImmersion (Stacks.SectionRingProjMorphism.projHomOfCovers L h)
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_isOpenImmersion_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L145). The attribute's comment: “clause (2) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a'')”.
+**`Stacks.AmpleCharacterization.isAmple_of_isOpenImmersion_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L146). The attribute's comment: “clause (2) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a'')”.
 
 > **Clause (2) of [Stacks, Tag 01Q3] implies clause (1).** If the opens `X_s` cover the
 > quasi-compact scheme `X` and the resulting morphism `j : X ⟶ Proj Γ_*(X, L)` is an open immersion,
@@ -492,7 +492,7 @@ theorem isAmple_of_isOpenImmersion_projHomOfCovers [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_isBasisNonvanishing_and_isBasisAffineNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L188). The attribute's comment: “(3) and (4) imply (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”.
+**`Stacks.AmpleCharacterization.isAmple_of_isBasisNonvanishing_and_isBasisAffineNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L189). The attribute's comment: “(3) and (4) imply (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”.
 
 > **Clauses (3) and (4) of [Stacks, Tag 01Q3] imply clause (1)** — the converse of
 > `Stacks.SheafOfModules.Invertible.exists_sections_mem_nonvanishingOpen_le_of_isAmple`, which is the
@@ -510,7 +510,7 @@ theorem isAmple_of_isBasisNonvanishing_and_isBasisAffineNonvanishing [CompactSpa
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_isBasisNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L232). The attribute's comment: “clause (3) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”; EGA II (5.1.2), “d) ⇒ c')”; SGA 6 II (2.2.3), “(i) ⇒ (ii)”; SGA 6 II (2.2.4), “partial”.
+**`Stacks.AmpleCharacterization.isAmple_of_isBasisNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L233). The attribute's comment: “clause (3) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”; EGA II (5.1.2), “d) ⇒ c')”; SGA 6 II (2.2.3), “(i) ⇒ (ii)”; SGA 6 II (2.2.4), “partial”.
 
 > **Clause (3) of [Stacks, Tag 01Q3] implies clause (1)**, from clause (3) alone: on a
 > quasi-compact scheme, an invertible `L` whose nonvanishing opens `X_s` — for `s` a global section
@@ -543,7 +543,7 @@ theorem isAmple_of_isBasisNonvanishing [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L271). The attribute's comment: “clause (9)”. References: EGA II (2.7.10), “ideals”; EGA II (4.5.5), “(a) ⇒ (d'), ideals”.
+**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/Basic.lean#L273). The attribute's comment: “clause (9)”. References: EGA II (2.7.10), “ideals”; EGA II (4.5.5), “(a) ⇒ (d'), ideals”.
 
 > **Clause (9) of [Stacks, Tag 01Q3]** — the clause labelled 01QC: `X` is quasi-separated, and
 > every sheaf of ideals of finite type on `X` is a quotient of a direct sum of `k` copies of
@@ -572,7 +572,7 @@ theorem quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_isAmple (hL : IsAm
             (_ : b.IsBilimit) (p : b.pt ⟶ J), CategoryTheory.Epi p
 ```
 
-**`Stacks.AmpleCharacterization.iSup_range_twistHom_eq_top_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean#L289). The attribute's comment: “clause (5)”. References: EGA II (4.5.5), “(a) ⇒ (b)”.
+**`Stacks.AmpleCharacterization.iSup_range_twistHom_eq_top_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean#L290). The attribute's comment: “clause (5)”. References: EGA II (4.5.5), “(a) ⇒ (b)”.
 
 > **Clause (5) of [Stacks, Tag 01Q3]** — the clause labelled 01Q8: for every quasi-coherent
 > sheaf `F` on `X` the sum of the images of the canonical maps
@@ -597,7 +597,7 @@ theorem iSup_range_twistHom_eq_top_of_isAmple (hL : IsAmple X L) :
         LinearMap.range (Stacks.ModuleStalk.map (twistHom L F (n : ℤ) m) x)) = ⊤
 ```
 
-**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean#L308). The attribute's comment: “clause (6)”. References: EGA II (4.5.5), “(a) ⇒ (b), ideals”.
+**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseFive.lean#L309). The attribute's comment: “clause (6)”. References: EGA II (4.5.5), “(a) ⇒ (b), ideals”.
 
 > **Clause (6) of [Stacks, Tag 01Q3]** — the clause labelled 01Q9: clause (5) with `F` ranging
 > over the quasi-coherent sheaves of ideals of `X`.
@@ -614,7 +614,7 @@ theorem iSup_range_twistHom_ideal_eq_top_of_isAmple (hL : IsAmple X L) :
         LinearMap.range (Stacks.ModuleStalk.map (twistHom L J (n : ℤ) m) x)) = ⊤
 ```
 
-**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseNineDirect.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseNineDirect.lean#L167). The attribute's comment: “clause (9) implies (6)”.
+**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseNineDirect.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseNineDirect.lean#L167). The attribute's comment: “clause (9) implies (6)”.
 
 > **Clause (9) of [Stacks, Tag 01Q3] implies clause (6)**, by the source's own argument through
 > [Stacks, Tag 01PG] rather than through ampleness.
@@ -647,7 +647,7 @@ theorem iSup_range_twistHom_ideal_eq_top_of_exists_epi_biproduct_ideal [CompactS
         LinearMap.range (Stacks.ModuleStalk.map (twistHom L J (n : ℤ) m) x)) = ⊤
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_iSup_range_twistHom_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L445). The attribute's comment: “clause (6) implies (1)”. References: EGA II (4.5.5), “(b) ⇒ (a), ideals”.
+**`Stacks.AmpleCharacterization.isAmple_of_iSup_range_twistHom_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L443). The attribute's comment: “clause (6) implies (1)”. References: EGA II (4.5.5), “(b) ⇒ (a), ideals”.
 
 > **Clause (6) of [Stacks, Tag 01Q3] implies clause (1)** — the implication the source's cycle
 > re-enters ampleness through. If for every quasi-coherent sheaf of ideals of the quasi-compact
@@ -671,7 +671,7 @@ theorem isAmple_of_iSup_range_twistHom_ideal [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_iSup_range_twistHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L489). The attribute's comment: “clause (5) implies (1)”. References: EGA II (4.5.5), “(b) ⇒ (a)”.
+**`Stacks.AmpleCharacterization.isAmple_of_iSup_range_twistHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L487). The attribute's comment: “clause (5) implies (1)”. References: EGA II (4.5.5), “(b) ⇒ (a)”.
 
 > **Clause (5) of [Stacks, Tag 01Q3] implies clause (1)**: clause (5) is clause (6) with its
 > quantifier widened from the quasi-coherent sheaves of ideals to all quasi-coherent sheaves, so
@@ -686,7 +686,7 @@ theorem isAmple_of_iSup_range_twistHom [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L532). The attribute's comment: “clause (7) implies (8)”. References: EGA II (2.7.10), “(d) ⇒ (d')”.
+**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L530). The attribute's comment: “clause (7) implies (8)”. References: EGA II (2.7.10), “(d) ⇒ (d')”.
 
 > **Clause (7) of [Stacks, Tag 01Q3] implies clause (8), at clause (7)'s own strength.** The
 > clause asks only that `F ⊗ L ^⊗ n` be *globally generated* for every `n ≥ n₀` — generated by
@@ -720,7 +720,7 @@ theorem quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSecti
             (p : b.pt ⟶ F), Epi p
 ```
 
-**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isEventuallyGloballyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L570). The attribute's comment: “clause (7) implies (8), under the strengthened hypothesis that the twists are generated by finitely many global sections; the tag's own implication is `quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections` above”. References: EGA II (2.7.10), “(d) ⇒ (d')”.
+**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isEventuallyGloballyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L568). The attribute's comment: “clause (7) implies (8), under the strengthened hypothesis that the twists are generated by finitely many global sections; the tag's own implication is `quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections` above”. References: EGA II (2.7.10), “(d) ⇒ (d')”.
 
 > **Clause (7) of [Stacks, Tag 01Q3] implies clause (8)**, from the *strengthened* hypothesis
 > that the twists are generated by **finitely many** global sections — which is more than clause
@@ -747,7 +747,7 @@ theorem quasiSeparatedSpace_and_exists_epi_biproduct_of_isEventuallyGloballyGene
             (p : b.pt ⟶ F), Epi p
 ```
 
-**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_exists_epi_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L591). The attribute's comment: “clause (8) implies (9)”. References: EGA II (2.7.10), “(d'), ideals”.
+**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_exists_epi_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L589). The attribute's comment: “clause (8) implies (9)”. References: EGA II (2.7.10), “(d'), ideals”.
 
 > **Clause (8) of [Stacks, Tag 01Q3] implies clause (9)**, the source's "trivial" step: clause
 > (9) is clause (8) with its quantifier restricted to the sheaves of ideals.
@@ -766,7 +766,7 @@ theorem quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_exists_epi_biprodu
             (p : b.pt ⟶ J), Epi p
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L630). The attribute's comment: “clause (9) implies (1)”. References: EGA II (2.7.10), “(d') ⇒ (a), ideals”; EGA II (4.5.5), “(d') ⇒ (a), ideals”.
+**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L628). The attribute's comment: “clause (9) implies (1)”. References: EGA II (2.7.10), “(d') ⇒ (a), ideals”; EGA II (4.5.5), “(d') ⇒ (a), ideals”.
 
 > **Clause (9) of [Stacks, Tag 01Q3] implies clause (1)** — the step the source's second cycle
 > re-enters ampleness through, and with the two implications above the last link of the
@@ -800,7 +800,7 @@ theorem isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal [CompactSp
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L702). The attribute's comment: “clause (9) implies (6)”. References: EGA II (4.5.5), “(d') ⇒ (b), ideals”.
+**`Stacks.AmpleCharacterization.iSup_range_twistHom_ideal_eq_top_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean, line 700](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/ClauseSixConverse.lean#L700). The attribute's comment: “clause (9) implies (6)”. References: EGA II (4.5.5), “(d') ⇒ (b), ideals”.
 
 > **Clause (9) of [Stacks, Tag 01Q3] implies clause (6)**, the implication the source's cycle
 > runs through. It is clause (9) implies clause (1)
@@ -821,7 +821,7 @@ theorem iSup_range_twistHom_ideal_eq_top_of_quasiSeparatedSpace_and_exists_epi_b
         LinearMap.range (Stacks.ModuleStalk.map (twistHom L J (n : ℤ) m) x)) = ⊤
 ```
 
-**`Stacks.AmpleCharacterization.isBasisNonvanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L123). The attribute's comment: “clause (3)”. References: EGA II (4.5.2), “(a) ⇒ (a')”.
+**`Stacks.AmpleCharacterization.isBasisNonvanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L124). The attribute's comment: “clause (3)”. References: EGA II (4.5.2), “(a) ⇒ (a')”.
 
 > **Clause (1) of [Stacks, Tag 01Q3] implies clause (3)** — the clause labelled 01Q6: for `L`
 > ample the opens `X_s`, with `s ∈ S₊` homogeneous, form a basis for the topology of `X`.
@@ -837,7 +837,7 @@ theorem isBasisNonvanishing_of_isAmple (hL : IsAmple X L) :
         x ∈ powNonvanishingOpen X L n s ∧ powNonvanishingOpen X L n s ≤ U
 ```
 
-**`Stacks.AmpleCharacterization.isBasisAffineNonvanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L137). The attribute's comment: “clause (4)”. References: EGA II (4.5.2), “(a) ⇒ (a')”.
+**`Stacks.AmpleCharacterization.isBasisAffineNonvanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L138). The attribute's comment: “clause (4)”. References: EGA II (4.5.2), “(a) ⇒ (a')”.
 
 > **Clause (1) of [Stacks, Tag 01Q3] implies clause (4)** — the clause labelled 01Q7: for `L`
 > ample the opens `X_s`, with `s ∈ S₊` homogeneous, **which are affine** form a basis for the
@@ -855,7 +855,7 @@ theorem isBasisAffineNonvanishing_of_isAmple (hL : IsAmple X L) :
           x ∈ powNonvanishingOpen X L n s ∧ powNonvanishingOpen X L n s ≤ U
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_isBasisAffineNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L156). The attribute's comment: “clause (4) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”.
+**`Stacks.AmpleCharacterization.isAmple_of_isBasisAffineNonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L157). The attribute's comment: “clause (4) implies (1)”. References: EGA II (4.5.2), “(a) ⇐ (a')”.
 
 > **Clause (4) of [Stacks, Tag 01Q3] implies clause (1)**, with clause (4) as the tag states it
 > and nothing else beyond the standing quasi-compactness: if the affine opens `X_s`, for `s ∈ S₊`
@@ -876,7 +876,7 @@ theorem isAmple_of_isBasisAffineNonvanishing [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_isGeneratedByGlobalSections_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L178). The attribute's comment: “clause (7)”. References: EGA II (4.5.5), “(a) ⇒ (d)”; EGA II (2.7.9).
+**`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_isGeneratedByGlobalSections_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L179). The attribute's comment: “clause (7)”. References: EGA II (4.5.5), “(a) ⇒ (d)”; EGA II (2.7.9).
 
 > **Clause (1) of [Stacks, Tag 01Q3] implies clause (7)** — the clause labelled 01QA — *as the
 > tag states it*: `X` is quasi-separated, and for every quasi-coherent sheaf `F` of finite type there
@@ -887,7 +887,7 @@ theorem isAmple_of_isBasisAffineNonvanishing [CompactSpace X]
 > concludes the stronger statement that the generating family may be taken **finite**, which is more
 > than the clause says; this is the clause itself, and it is the form the equivalence below and the
 > implication `(7) ⇒ (8)` of
-> `Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`
+> `AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`
 > are stated at.
 
 ```lean
@@ -899,14 +899,14 @@ theorem quasiSeparatedSpace_and_isGeneratedByGlobalSections_of_isAmple (hL : IsA
             ((F ⊗ tensorPowModule X L n : X.Modules))
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_isGeneratedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L196). The attribute's comment: “clause (7) implies (1)”. References: EGA II (4.5.5), “(d) ⇒ (a)”.
+**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_isGeneratedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L197). The attribute's comment: “clause (7) implies (1)”. References: EGA II (4.5.5), “(d) ⇒ (a)”.
 
 > **Clause (7) of [Stacks, Tag 01Q3] implies clause (1)**, from clause (7) at its own strength —
 > the twists merely globally generated, with no bound on the generating family — and with no
 > hypothesis beyond the tag's standing quasi-compactness.
 >
 > The route is the source's own: clause (7) implies clause (8)
-> (`Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`,
+> (`quasiSeparatedSpace_and_exists_epi_biproduct_of_isGeneratedByGlobalSections`,
 > where the quasi-compactness cuts the generating family down to a finite one by
 > [Stacks, Tag 01BB]), clause (8) implies clause (9), and clause (9) implies clause (1).
 
@@ -920,10 +920,10 @@ theorem isAmple_of_quasiSeparatedSpace_and_isGeneratedByGlobalSections [CompactS
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L212). The attribute's comment: “clause (8) implies (1)”. References: EGA II (4.5.5), “(d') ⇒ (a)”.
+**`Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L213). The attribute's comment: “clause (8) implies (1)”. References: EGA II (4.5.5), “(d') ⇒ (a)”.
 
 > **Clause (8) of [Stacks, Tag 01Q3] implies clause (1)**: the source's `(8) ⇒ (9) ⇒ (1)` in one
-> step, `Stacks.AmpleCharacterization.quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_exists_epi_biproduct`
+> step, `quasiSeparatedSpace_and_exists_epi_biproduct_ideal_of_exists_epi_biproduct`
 > followed by
 > `Stacks.AmpleCharacterization.isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct_ideal`.
 
@@ -937,7 +937,7 @@ theorem isAmple_of_quasiSeparatedSpace_and_exists_epi_biproduct [CompactSpace X]
     IsAmple X L
 ```
 
-**`Stacks.AmpleCharacterization.tfae_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L246). References: EGA II (4.5.2); EGA II (4.5.5); EGA II (2.7.10); SGA 6 II (2.2.3), “single L”.
+**`Stacks.AmpleCharacterization.tfae_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleCharacterization/NineClauses.lean#L247). References: EGA II (4.5.2); EGA II (4.5.5); EGA II (2.7.10); SGA 6 II (2.2.3), “single L”.
 
 > **[Stacks, Tag 01Q3].** Let `X` be a quasi-compact scheme, `L` an invertible `𝒪_X`-module, and
 > `S = Γ_*(X, L)`. The nine conditions of the source Proposition are equivalent:
@@ -997,7 +997,7 @@ theorem tfae_isAmple [CompactSpace X] :
                 (p : b.pt ⟶ J), Epi p ]
 ```
 
-**`Stacks.AmpleLocalGeneration.quasiSeparatedSpace_and_isEventuallyGloballyGenerated_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean#L226). The attribute's comment: “clause (7)”. References: EGA II (4.6.8), “absolute case of (c)”; EGA II (4.5.5), “(a) ⇒ (d)”; EGA II (2.7.9).
+**`Stacks.AmpleLocalGeneration.quasiSeparatedSpace_and_isEventuallyGloballyGenerated_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean#L227). The attribute's comment: “clause (7)”. References: EGA II (4.6.8), “absolute case of (c)”; EGA II (4.5.5), “(a) ⇒ (d)”; EGA II (2.7.9).
 
 > **Clause (7) of [Stacks, Tag 01Q3]** — the clause labelled 01QA: `X` is quasi-separated, and
 > for every quasi-coherent sheaf `F` of finite type on `X` there is an integer `n₀` such that
@@ -1020,7 +1020,7 @@ theorem quasiSeparatedSpace_and_isEventuallyGloballyGenerated_of_isAmple (L : X.
           ∃ σ : (F ⊗ tensorPowModule X L n).GeneratingSections, Finite σ.I
 ```
 
-**`Stacks.AmpleLocalGeneration.quasiSeparatedSpace_and_exists_epi_biproduct_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean#L253). The attribute's comment: “clause (8)”. References: EGA II (2.7.10), “exists n,k quotient”; EGA II (4.5.5), “(a) ⇒ (d')”; SGA 6 II (2.2.3), “(iii), single L”.
+**`Stacks.AmpleLocalGeneration.quasiSeparatedSpace_and_exists_epi_biproduct_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleLocalGeneration/FromExtension.lean#L254). The attribute's comment: “clause (8)”. References: EGA II (2.7.10), “exists n,k quotient”; EGA II (4.5.5), “(a) ⇒ (d')”; SGA 6 II (2.2.3), “(iii), single L”.
 
 > **Clause (8) of [Stacks, Tag 01Q3]** — the clause labelled 01QB: `X` is quasi-separated, and
 > for every quasi-coherent sheaf `F` of finite type on `X` there are integers `n > 0` and `k ≥ 0`
@@ -1047,7 +1047,7 @@ theorem quasiSeparatedSpace_and_exists_epi_biproduct_of_isAmple (L : X.Modules)
             (p : b.pt ⟶ F), Epi p
 ```
 
-**`Stacks.SheafOfModules.Invertible.exists_sections_mem_nonvanishingOpen_le_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionExtensionAffineCover/Basic.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionExtensionAffineCover/Basic.lean#L380). The attribute's comment: “(1) implies (3) and (4)”. References: EGA II (4.5.2), “(a') => (a)”; SGA 6 II (2.2.3), “(i), single L”.
+**`Stacks.SheafOfModules.Invertible.exists_sections_mem_nonvanishingOpen_le_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionExtensionAffineCover/Basic.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionExtensionAffineCover/Basic.lean#L380). The attribute's comment: “(1) implies (3) and (4)”. References: EGA II (4.5.2), “(a') => (a)”; SGA 6 II (2.2.3), “(i), single L”.
 
 > **Tag 01Q6 (item (3) of Tag 01Q3): the nonvanishing opens of the global sections of the
 > positive tensor powers of an ample invertible sheaf form a basis for the topology** -- and the
@@ -1069,7 +1069,7 @@ theorem exists_sections_mem_nonvanishingOpen_le_of_isAmple
 
 [Tag 0B3E](https://stacks.math.columbia.edu/tag/0B3E) in the Stacks Project.
 
-**`Stacks.AmplePullbackCovering.isAmple_modulePullback_of_immersion_or_isEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackCovering/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullbackCovering/Basic.lean#L84). References: EGA II (4.6.13), “(i bis), absolute case”.
+**`Stacks.AmplePullbackCovering.isAmple_modulePullback_of_immersion_or_isEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackCovering/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePullbackCovering/Basic.lean#L84). References: EGA II (4.6.13), “(i bis), absolute case”.
 
 > **Stacks Tag 0B3E.** For `L` an ample invertible `𝒪_X`-module and `i : X' ⟶ X` a
 > quasi-compact immersion, an immersion of a quasi-compact scheme, a quasi-compact homeomorphism
@@ -1092,7 +1092,7 @@ theorem isAmple_modulePullback_of_immersion_or_isEmbedding {X X' : Scheme.{u}} (
 
 [Tag 0DNK](https://stacks.math.columbia.edu/tag/0DNK) in the Stacks Project.
 
-**`Stacks.AmpleExternalTensor.isInvertibleModule_externalTensor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean#L119). The attribute's comment: “invertibility: the half of Tag 0DNK's conclusion saying that `pr₁^* L ⊗ pr₂^* N` is an invertible module on `X ×_S Y`. No hypothesis on `S` and no ampleness; the ample half is `isAmple_externalTensor`.”.
+**`Stacks.AmpleExternalTensor.isInvertibleModule_externalTensor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean#L119). The attribute's comment: “invertibility: the half of Tag 0DNK's conclusion saying that `pr₁^* L ⊗ pr₂^* N` is an invertible module on `X ×_S Y`. No hypothesis on `S` and no ampleness; the ample half is `isAmple_externalTensor`.”.
 
 > The external tensor product of two invertible modules is invertible.
 
@@ -1102,7 +1102,7 @@ instance isInvertibleModule_externalTensor (L : X.Modules) (N : Y.Modules)
     IsInvertibleModule (pullback f g) (externalTensor f g L N)
 ```
 
-**`Stacks.AmpleExternalTensor.isAmple_externalTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean#L348). The attribute's comment: “the whole lemma: for `S` quasi-separated, `X` and `Y` schemes over `S`, `L` ample invertible on `X` and `N` ample invertible on `Y`, the external tensor product `pr₁^* L ⊗ pr₂^* N` is ample on `X ×_S Y`. Invertibility of that module, the other half of the tag's conclusion, is the instance `isInvertibleModule_externalTensor` of this file, which the statement uses. No hypothesis beyond the tag's own.”.
+**`Stacks.AmpleExternalTensor.isAmple_externalTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/AmpleExternalTensorProduct.lean#L348). The attribute's comment: “the whole lemma: for `S` quasi-separated, `X` and `Y` schemes over `S`, `L` ample invertible on `X` and `N` ample invertible on `Y`, the external tensor product `pr₁^* L ⊗ pr₂^* N` is ample on `X ×_S Y`. Invertibility of that module, the other half of the tag's conclusion, is the instance `isInvertibleModule_externalTensor` of this file, which the statement uses. No hypothesis beyond the tag's own.”.
 
 > **Stacks Tag 0DNK.** Let `S` be a quasi-separated scheme, let `X` and `Y` be schemes over
 > `S`, let `L` be an ample invertible `𝒪_X`-module and `N` an ample invertible `𝒪_Y`-module. Then
@@ -1128,4 +1128,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.27, Tag 01PR](https://stacks.math.columbia.edu/tag/01PR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

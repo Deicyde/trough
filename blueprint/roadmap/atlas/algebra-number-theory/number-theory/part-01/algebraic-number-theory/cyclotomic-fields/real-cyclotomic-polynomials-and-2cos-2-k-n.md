@@ -7,7 +7,7 @@ statement: formalized
 
 # Real cyclotomic polynomials and 2cos(2πk/n)
 
-8 results, 6 proved and 2 without a declaration, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html).
+8 results, 6 proved and 2 without a declaration, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html).
 
 ## Degree of the real cyclotomic polynomial
 
@@ -35,7 +35,7 @@ $\zeta = 1$), but results about $\psi_n$ assume $n > 2$.
 
 - Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π", Journal of Integer Sequences 19 (2016), source lines 83-90: https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
 
-Formalized by `MetaMathlibExt.realCyclotomicPolynomial`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/RealCyclotomicPolynomial.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/RealCyclotomicPolynomial.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial).
+Formalized by `MetaMathlibExt.realCyclotomicPolynomial`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/RealCyclotomicPolynomial.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/RealCyclotomicPolynomial.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial).
 
 ## Minimal polynomial of $2\cos(2\pi k/n)$ for $k$ coprime to $n$
 
@@ -45,7 +45,7 @@ the minimal polynomial over $\mathbb{Z}$ of the complex number $2\cos(2\pi k/n)$
 
 No bound on $k$ is needed, since the cosine depends only on $k$ modulo $n$.
 
-Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_two_cos`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tw).
+Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_two_cos`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tw).
 
 ## Minimal polynomial of $2\cos(2\pi k/n)$ for $1 \le k \le n$ coprime to $n$
 
@@ -60,7 +60,7 @@ The bounds $1 \le k \le n$ are not needed: the same holds for every $k$ coprime 
 
 - Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π", Journal of Integer Sequences 19 (2016), source lines 83-90: https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
 
-Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_two_cos_of_coprime`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tw-2).
+Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_two_cos_of_coprime`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/LehmerCoprimeIndexMinpoly.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tw-2).
 
 ## Real cyclotomic polynomial has degree half the totient
 
@@ -88,7 +88,7 @@ $\psi_n(x + x^{-1}) = x^{-\varphi(n)/2} \, \Phi_n(x)$.
 
 - Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π", Journal of Integer Sequences 19 (2016), source lines 83-90: https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
 
-Formalized by `MetaMathlibExt.lehmer_cyclotomic_identity`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerLaurentIdentity.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/LehmerLaurentIdentity.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#lehmer-cyclotomic-identity).
+Formalized by `MetaMathlibExt.lehmer_cyclotomic_identity`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerLaurentIdentity.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/LehmerLaurentIdentity.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#lehmer-cyclotomic-identity).
 
 ## The real cyclotomic polynomial is the minimal polynomial of $\zeta + \zeta^{-1}$
 
@@ -101,7 +101,7 @@ polynomial of $\zeta + \zeta^{-1}$ over $\mathbb{Z}$.
 
 - Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π", Journal of Integer Sequences 19 (2016), source lines 83–90: https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
 
-Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_trace`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerMinpolyTrace.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/LehmerMinpolyTrace.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tr).
+Formalized by `MetaMathlibExt.realCyclotomicPolynomial_eq_minpoly_trace`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/LehmerMinpolyTrace.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/LehmerMinpolyTrace.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#real-cyclotomic-polynomial-eq-minpoly-tr).
 
 ## Lehmer's theorem on the degree of 2cos(2πk/n)
 
@@ -117,7 +117,7 @@ finite and positive, $2\cos(2\pi k/n)$ is algebraic over $\mathbb{Q}$ of degree 
 
 - Pinthira Tangsupphathawat and Vichian Laohakosol, "Minimal Polynomials of Algebraic Cosine Values at Rational Multiples of π," Journal of Integer Sequences 19 (2016), Article 16.2.8, Lehmer's theorem recalled in the Introduction, lines 83–90, https://cs.uwaterloo.ca/journals/JIS/VOL19/Laohakosol/lao2.tex
 
-Formalized by `MetaMathlibExt.finrank_adjoin_two_cos`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/TwoCosAlgebraicDegree.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/TwoCosAlgebraicDegree.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#finrank-adjoin-two-cos).
+Formalized by `MetaMathlibExt.finrank_adjoin_two_cos`, a theorem declared in [MathlibExt/NumberTheory/Cyclotomic/TwoCosAlgebraicDegree.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/TwoCosAlgebraicDegree.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html#finrank-adjoin-two-cos).
 
 ## Depends on
 
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Real cyclotomic polynomials and 2cos(2πk/n)](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/real-cyclotomic-polynomials-and-2cos-2-k-n)

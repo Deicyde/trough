@@ -7,7 +7,7 @@ statement: formalized
 
 # Cyclotomic integers of small house
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html).
 
 ## Real cyclotomic integers with house at most 2
 
@@ -23,7 +23,7 @@ integer $m \ge 1$.
 
 - https://arxiv.org/pdf/1004.0665. Problem `cyclotomic_integer_house_le_two` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallHouseWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallHouseWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html#cyclotomic-integer-house-le-two).
+Stated but not proved: `MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallHouseWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallHouseWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html#cyclotomic-integer-house-le-two).
 
 ## Real cyclotomic integers with house between 2 and 76/33
 
@@ -39,7 +39,7 @@ $1 + 2\cos(2\pi/7)$, $(1 + \sqrt{5})/\sqrt{2}$ and $(1 + \sqrt{13})/2$.
 
 - https://arxiv.org/pdf/1004.0665. Problem `cyclotomic_integer_house_between_two_and_76_33` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_between_two_and_76_33` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallHouseWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SmallHouseWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html#cyclotomic-integer-house-between-two-and).
+Stated but not proved: `MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_between_two_and_76_33` is written with `theorem_wanted` in [WantedExt/NumberTheory/SmallHouseWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SmallHouseWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html#cyclotomic-integer-house-between-two-and).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cyclotomic integers of small house](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/heights-mahler-measure/cyclotomic-integers-of-small-house)

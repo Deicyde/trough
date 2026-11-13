@@ -7,7 +7,7 @@ statement: formalized
 
 # Alder-type inequalities for fixed perimeter partitions
 
-23 results, 13 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html).
+23 results, 13 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html).
 
 ## Prepending a part to a multiset
 
@@ -22,7 +22,7 @@ and their remaining parts.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1 (a partition is determined by its largest part and its remaining parts).
 
-Formalized by `MetaMathlibExt.symConsEmbedding`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#sym-cons-embedding).
+Formalized by `MetaMathlibExt.symConsEmbedding`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#sym-cons-embedding).
 
 ## Partitions with fixed perimeter
 
@@ -40,7 +40,7 @@ deduplication.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1 (perimeter `Γ(π) = α(π) + λ(π) - 1`).
 
-Formalized by `MetaMathlibExt.fixedPerimeterPartitions`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#fixed-perimeter-partitions).
+Formalized by `MetaMathlibExt.fixedPerimeterPartitions`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#fixed-perimeter-partitions).
 
 ## Membership in the partitions with fixed perimeter
 
@@ -53,7 +53,7 @@ plus the number of elements of $s$, counted with multiplicity, equals $n + 1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.mem_fixedPerimeterPartitions`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#mem-fixed-perimeter-partitions).
+Formalized by `MetaMathlibExt.mem_fixedPerimeterPartitions`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#mem-fixed-perimeter-partitions).
 
 ## The partitions of perimeter three
 
@@ -67,7 +67,7 @@ They are $3$, $2 + 1$, $2 + 2$ and $1 + 1 + 1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.card_fixedPerimeterPartitions_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#card-fixed-perimeter-partitions-three).
+Formalized by `MetaMathlibExt.card_fixedPerimeterPartitions_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#card-fixed-perimeter-partitions-three).
 
 ## Partitions into d-distinct parts
 
@@ -79,7 +79,7 @@ elements $x < y$ of $s$ satisfy $x + d \le y$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1 (`d`-distinct parts, as in Alder's `q_d(n)`).
 
-Formalized by `MetaMathlibExt.IsDDistinctParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#is-ddistinct-parts).
+Formalized by `MetaMathlibExt.IsDDistinctParts`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#is-ddistinct-parts).
 
 ## Examples of 2-distinct partitions
 
@@ -90,7 +90,7 @@ partition $4 + 3$ does not.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.isDDistinctParts_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#is-ddistinct-parts-examples).
+Formalized by `MetaMathlibExt.isDDistinctParts_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#is-ddistinct-parts-examples).
 
 ## Fixed perimeter partitions into $d$-distinct parts
 
@@ -104,7 +104,7 @@ by at least $d$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Equation (1.1).
 
-Formalized by `MetaMathlibExt.perimeterDistinctCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count).
+Formalized by `MetaMathlibExt.perimeterDistinctCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count).
 
 ## Partitions into d-distinct parts by largest part and length
 
@@ -117,7 +117,7 @@ and $d$-distinct parts. Such a partition has perimeter $m + k - 1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.1 (refinement of (1.1)).
 
-Formalized by `MetaMathlibExt.perimeterDistinctArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count).
+Formalized by `MetaMathlibExt.perimeterDistinctArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count).
 
 ## Fixed perimeter partitions into parts in one residue class
 
@@ -130,7 +130,7 @@ and its perimeter is its largest part plus its number of parts minus one.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Equation (1.2).
 
-Formalized by `MetaMathlibExt.perimeterResidueCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-count).
+Formalized by `MetaMathlibExt.perimeterResidueCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-count).
 
 ## Partitions into parts in one residue class, by largest part and length
 
@@ -146,7 +146,7 @@ $m + k - 1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.1 (refinement of (1.2)).
 
-Formalized by `MetaMathlibExt.perimeterResidueArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-arm-leg-count).
+Formalized by `MetaMathlibExt.perimeterResidueArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-arm-leg-count).
 
 ## Fixed perimeter partitions into parts $\equiv \pm a \pmod{d+3}$
 
@@ -159,7 +159,7 @@ plus its number of parts minus $1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Equation (1.3).
 
-Formalized by `MetaMathlibExt.perimeterPMResidueCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count).
+Formalized by `MetaMathlibExt.perimeterPMResidueCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count).
 
 ## Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts
 
@@ -172,7 +172,7 @@ and exactly $\lambda$ parts (so $\ell_d^{(a)}(0, 0) = 0$: the empty partition is
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Section 1.1 (refinement of (1.3)).
 
-Formalized by `MetaMathlibExt.perimeterPMResidueArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-arm-leg-count).
+Formalized by `MetaMathlibExt.perimeterPMResidueArmLegCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-arm-leg-count).
 
 ## Small values of the fixed-perimeter partition counts
 
@@ -190,7 +190,7 @@ The partitions counted in the last three cases are $2 + 1$, $3$ and $1 + 1 + 1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Equations (1.1)–(1.3).
 
-Formalized by `MetaMathlibExt.perimeterCounts_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-counts-small-values).
+Formalized by `MetaMathlibExt.perimeterCounts_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-counts-small-values).
 
 ## Fixed-perimeter identity for $d$-distinct parts
 
@@ -205,7 +205,7 @@ number of parts minus $1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_eq_perimeterResidueCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-eq-perimeter-re).
+Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_eq_perimeterResidueCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-eq-perimeter-re).
 
 ## Refined equality of distinct-part and residue counts
 
@@ -223,7 +223,7 @@ positive, and then both sides vanish.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.perimeterDistinctArmLegCount_eq_perimeterResidueArmLegCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count-eq-peri).
+Stated but not proved: `MetaMathlibExt.perimeterDistinctArmLegCount_eq_perimeterResidueArmLegCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count-eq-peri).
 
 ## Counting d-distinct partitions by largest part and length
 
@@ -237,7 +237,7 @@ $h_d^{(a)}(m, k) = \binom{m - a - (d - 1)(k - 1)}{k - 1}$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.perimeterDistinctArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count-ne-zero).
+Stated but not proved: `MetaMathlibExt.perimeterDistinctArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-arm-leg-count-ne-zero).
 
 ## Nonvanishing and binomial count for parts $\equiv a \pmod{d+1}$
 
@@ -252,7 +252,7 @@ $f_d^{(a)}(\alpha, \lambda) = \binom{(\alpha - a)/(d + 1) + \lambda - 1}{\lambda
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.perimeterResidueArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-arm-leg-count-ne-zero).
+Stated but not proved: `MetaMathlibExt.perimeterResidueArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-residue-arm-leg-count-ne-zero).
 
 ## A floor inequality for perimeter counts
 
@@ -268,7 +268,7 @@ The lower bounds by $0$ in the source hold automatically and are not stated.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.floor_half_div_le_div_of_two_mul_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#floor-half-div-le-div-of-two-mul-lt).
+Stated but not proved: `MetaMathlibExt.floor_half_div_le_div_of_two_mul_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#floor-half-div-le-div-of-two-mul-lt).
 
 ## Nonvanishing and binomial count for parts $\equiv \pm a \pmod{d+3}$
 
@@ -286,7 +286,7 @@ $\ell_d^{(a)}(\alpha, \lambda) = \binom{2(\alpha + a)/(d + 3) + \lambda - 2}{\la
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.perimeterPMResidueArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-arm-leg-count-ne-zer).
+Stated but not proved: `MetaMathlibExt.perimeterPMResidueArmLegCount_ne_zero_iff_and_eq_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-arm-leg-count-ne-zer).
 
 ## Reverse Alder-type inequality for fixed perimeter partitions
 
@@ -301,7 +301,7 @@ plus its number of parts minus $1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_le_perimeterPMResidueCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-le-perimeter-pm).
+Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_le_perimeterPMResidueCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-le-perimeter-pm).
 
 ## Monotonicity of fixed perimeter counts with $d$-distinct parts
 
@@ -316,7 +316,7 @@ $h_d^{(a)}(n) \le h_d^{(a)}(n + 1)$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_shift_inequalities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-shift-inequalit).
+Stated but not proved: `MetaMathlibExt.perimeterDistinctCount_shift_inequalities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-distinct-count-shift-inequalit).
 
 ## Monotonicity of fixed perimeter counts with parts $\equiv \pm a \pmod{d+3}$
 
@@ -330,7 +330,7 @@ $\ell_d^{(a)}(n) \le \ell_d^{(a)}(n + 1)$ and $\ell_{d+1}^{(a)}(n) \le \ell_d^{(
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.perimeterPMResidueCount_shift_inequalities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count-shift-inequali).
+Stated but not proved: `MetaMathlibExt.perimeterPMResidueCount_shift_inequalities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count-shift-inequali).
 
 ## Alder-type inequality in the degenerate case $a = (d + 3)/2$
 
@@ -345,7 +345,7 @@ perimeter of a partition is its largest part plus its number of parts minus $1$.
 
 - Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.perimeterPMResidueCount_le_perimeterDistinctCount_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count-le-perimeter-d).
+Stated but not proved: `MetaMathlibExt.perimeterPMResidueCount_le_perimeterDistinctCount_of_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FixedPerimeterAlderWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html#perimeter-pmresidue-count-le-perimeter-d).
 
 ## Depends on
 
@@ -354,4 +354,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alder-type inequalities for fixed perimeter partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/alder-type-inequalities-for-fixed-perimeter-part)

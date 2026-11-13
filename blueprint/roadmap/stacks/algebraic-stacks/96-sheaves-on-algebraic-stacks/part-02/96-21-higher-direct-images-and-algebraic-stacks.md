@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.21 Higher direct images and algebraic stacks
 
-Section 96.21 of the Stacks Project, [Tag 072F](https://stacks.math.columbia.edu/tag/072F). 3 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.21 of the Stacks Project, [Tag 072F](https://stacks.math.columbia.edu/tag/072F). 3 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 072G, a proposition
 
 [Tag 072G](https://stacks.math.columbia.edu/tag/072G) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L123). The attribute's comment: “part (1)(a): spectral sequence in Ab(𝒴\_étale) along a smooth surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L123). The attribute's comment: “part (1)(a): spectral sequence in Ab(𝒴\_étale) along a smooth surjective presentation”.
 
 > Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of algebraic stacks and assume `f`
 > is representable by algebraic spaces, surjective and smooth. For an abelian sheaf `𝓕` on the étale
@@ -36,7 +36,7 @@ theorem exists_etaleDirectImageSpectralSequence
       (CatFiberedInGroupoids.homFunctor g.hom) SiteKind.etale 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleModuleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L144). The attribute's comment: “part (1)(b): spectral sequence in Mod(𝒴\_étale, 𝒪\_𝒴) along a smooth surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleModuleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L144). The attribute's comment: “part (1)(b): spectral sequence in Mod(𝒴\_étale, 𝒪\_𝒴) along a smooth surjective presentation”.
 
 > Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of algebraic stacks and assume `f`
 > is representable by algebraic spaces, surjective and smooth. For a sheaf of `𝒪_𝒳`-modules `𝓕` on
@@ -65,7 +65,7 @@ theorem exists_etaleModuleDirectImageSpectralSequence
         g.hom.hom.w) 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L178). The attribute's comment: “part (2)(a): spectral sequence in Ab(𝒴) along a flat, locally finitely presented, surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L178). The attribute's comment: “part (2)(a): spectral sequence in Ab(𝒴) along a flat, locally finitely presented, surjective presentation”.
 
 > Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of algebraic stacks and assume `f`
 > is representable by algebraic spaces, surjective, flat and locally of finite presentation. For an
@@ -89,7 +89,7 @@ theorem exists_fppfDirectImageSpectralSequence
       (CatFiberedInGroupoids.homFunctor g.hom) SiteKind.fppf 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfModuleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L200). The attribute's comment: “part (2)(b): spectral sequence in Mod(𝒪\_𝒴) along a flat, locally finitely presented, surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfModuleDirectImageSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/PresentationDirectImageSpectralSequence.lean#L200). The attribute's comment: “part (2)(b): spectral sequence in Mod(𝒪\_𝒴) along a flat, locally finitely presented, surjective presentation”.
 
 > Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of algebraic stacks and assume `f`
 > is representable by algebraic spaces, surjective, flat and locally of finite presentation. For a
@@ -119,7 +119,7 @@ theorem exists_fppfModuleDirectImageSpectralSequence
         g.hom.hom.w) 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleDirectImageSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean#L379). The attribute's comment: “part (1)(a): the étale spectral sequence for higher direct images along a smooth surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_etaleDirectImageSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean#L379). The attribute's comment: “part (1)(a): the étale spectral sequence for higher direct images along a smooth surjective presentation”.
 
 > **Stacks 072G, part (1)(a).** Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of
 > algebraic stacks and assume `f` is representable by algebraic spaces, surjective and smooth. For
@@ -139,7 +139,7 @@ theorem exists_etaleDirectImageSpectralSequenceData
       (CatFiberedInGroupoids.homFunctor g.hom) SiteKind.etale 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfDirectImageSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean#L423). The attribute's comment: “part (2)(a): the fppf spectral sequence for higher direct images along a flat surjective presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfDirectImageSpectralSequenceData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/SmoothCoveringSpectralSequence.lean#L423). The attribute's comment: “part (2)(a): the fppf spectral sequence for higher direct images along a flat surjective presentation”.
 
 > **Stacks 072G, part (2)(a).** Let `f : 𝒰 ⟶ 𝒳` and `g : 𝒳 ⟶ 𝒴` be composable `1`-morphisms of
 > algebraic stacks and assume `f` is representable by algebraic spaces, surjective, flat and
@@ -163,7 +163,7 @@ theorem exists_fppfDirectImageSpectralSequenceData
 
 [Tag 075G](https://stacks.math.columbia.edu/tag/075G) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.derivedDirectImageIsoSheafifyDerivedPresheafDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImage.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImage.lean#L104). The attribute's comment: “abelian sheafification formula”.
+**`AlgebraicGeometry.Stack.derivedDirectImageIsoSheafifyDerivedPresheafDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImage.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImage.lean#L104). The attribute's comment: “abelian sheafification formula”.
 
 > **Stacks 075G.** Higher direct image of abelian sheaves is the sheafification of the
 > derived presheaf direct image.
@@ -183,7 +183,7 @@ noncomputable def derivedDirectImageIsoSheafifyDerivedPresheafDirectImage
         presheafToSheaf (associatedTopology B S hS q τ) AddCommGrpCat.{a}
 ```
 
-**`AlgebraicGeometry.Stack.higherDirectImageIsoSheafifyFibreCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomology.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomology.lean#L348). The attribute's comment: “abelian sheaves: R^n f\_* F is the sheafification of y ↦ H^n((Sch/V) ×\_\{y,Y} X, pr^\{-1} F)”. References: SGA 4 V (5.1), “clause 1”.
+**`AlgebraicGeometry.Stack.higherDirectImageIsoSheafifyFibreCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomology.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomology.lean#L348). The attribute's comment: “abelian sheaves: R^n f\_* F is the sheafification of y ↦ H^n((Sch/V) ×\_\{y,Y} X, pr^\{-1} F)”. References: SGA 4 V (5.1), “clause 1”.
 
 > **Stacks 075G, abelian sheaves.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over
 > `S` and `τ` one of the Zariski, étale, smooth, syntomic and fppf topologies. For an abelian sheaf
@@ -204,7 +204,7 @@ def higherDirectImageIsoSheafifyFibreCohomology (n : ℕ)
         (objectFibreCohomologyPresheaf.{u, w, a} B S hS f c τ n F)
 ```
 
-**`AlgebraicGeometry.Stack.moduleHigherDirectImageIsoSheafifyFibreModuleCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomologyScalars.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomologyScalars.lean#L350). The attribute's comment: “sheaves of modules: R^n f\_* F is, as an O\_Y-module, the sheafification of the presheaf of O\_Y-modules y ↦ H^n((Sch/V) ×\_\{y,Y} X, pr^\{-1} F)”.
+**`AlgebraicGeometry.Stack.moduleHigherDirectImageIsoSheafifyFibreModuleCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomologyScalars.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageFibreCohomologyScalars.lean#L350). The attribute's comment: “sheaves of modules: R^n f\_* F is, as an O\_Y-module, the sheafification of the presheaf of O\_Y-modules y ↦ H^n((Sch/V) ×\_\{y,Y} X, pr^\{-1} F)”.
 
 > **Stacks 075G, sheaves of modules.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks
 > over `S` and `τ` one of the Zariski, étale, smooth, syntomic and fppf topologies. For a sheaf `ℱ`
@@ -234,7 +234,7 @@ def moduleHigherDirectImageIsoSheafifyFibreModuleCohomology (n : ℕ)
 
 [Tag 075H](https://stacks.math.columbia.edu/tag/075H) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.abelianDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L358). The attribute's comment: “degree zero, abelian sheaves: g⁻¹f\_*ℱ ≅ f'\_*(g')⁻¹ℱ”.
+**`AlgebraicGeometry.Stack.abelianDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L358). The attribute's comment: “degree zero, abelian sheaves: g⁻¹f\_*ℱ ≅ f'\_*(g')⁻¹ℱ”.
 
 > **Stacks 075H in degree zero.** For the canonical 2-cartesian square of categories fibred in
 > groupoids over the big fppf category of `S` and any topology `τ` on `B.Schemes`, the
@@ -280,7 +280,7 @@ noncomputable def abelianDirectImageBaseChangeIso
           (associatedTopology B S hS p𝒴' τ)
 ```
 
-**`AlgebraicGeometry.Stack.abelianHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L438). The attribute's comment: “all degrees, abelian sheaves; Rⁱf'\_*(g')⁻¹ as the right derived functor of the composite f'\_* ∘ (g')⁻¹”.
+**`AlgebraicGeometry.Stack.abelianHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChange.lean#L438). The attribute's comment: “all degrees, abelian sheaves; Rⁱf'\_*(g')⁻¹ as the right derived functor of the composite f'\_* ∘ (g')⁻¹”.
 
 > **Stacks 075H in every degree.** For the canonical 2-cartesian square of categories fibred
 > in groupoids over the big fppf category of `S` and any topology `τ` on `B.Schemes`, the
@@ -362,7 +362,7 @@ noncomputable def abelianHigherDirectImageBaseChangeIso
             (associatedTopology B S hS p𝒴' τ)).rightDerived n
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.abelianHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean, line 938](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean#L938). The attribute's comment: “abelian sheaves: g⁻¹Rⁱf\_*F ≅ Rⁱf'\_*((g')⁻¹F) for every i, naturally in F”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.abelianHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean, line 938](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean#L938). The attribute's comment: “abelian sheaves: g⁻¹Rⁱf\_*F ≅ Rⁱf'\_*((g')⁻¹F) for every i, naturally in F”.
 
 > **Stacks 075H for abelian sheaves.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴' ⟶ 𝒴` be 1-morphisms of
 > algebraic stacks over `S`, with 2-cartesian square
@@ -445,7 +445,7 @@ noncomputable def abelianHigherDirectImageBaseChangeIso {𝒳 𝒴 𝒴' : Algeb
             (associatedTopology B S hS 𝒴'.val.val.p τ)).rightDerived n
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.moduleHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean#L1018). The attribute's comment: “sheaves of modules: g⁻¹Rⁱf\_*F ≅ Rⁱf'\_*((g')⁻¹F) in Mod(O) for every i, naturally in F”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.moduleHigherDirectImageBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeAlgebraicStacks.lean#L1018). The attribute's comment: “sheaves of modules: g⁻¹Rⁱf\_*F ≅ Rⁱf'\_*((g')⁻¹F) in Mod(O) for every i, naturally in F”.
 
 > **Stacks 075H for sheaves of modules.** For 1-morphisms `f : 𝒳 ⟶ 𝒴` and `g : 𝒴' ⟶ 𝒴` of
 > algebraic stacks over `S` with 2-cartesian square `𝒴' ×_𝒴 𝒳` as in
@@ -485,7 +485,7 @@ noncomputable def moduleHigherDirectImageBaseChangeIso {𝒳 𝒴 𝒴' : Algebr
           TwoFibreProductOver.snd_comp_eq τ hτ).rightDerived n
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_abelianDerivedDirectImageBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean#L640). The attribute's comment: “abelian sheaves: the base change map g⁻¹Rf\_*F ⟶ Rf'\_*(g')⁻¹F is an isomorphism, functorially in F in D⁺(Ab(𝒳\_τ))”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_abelianDerivedDirectImageBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean#L640). The attribute's comment: “abelian sheaves: the base change map g⁻¹Rf\_*F ⟶ Rf'\_*(g')⁻¹F is an isomorphism, functorially in F in D⁺(Ab(𝒳\_τ))”.
 
 > **Stacks 075H for abelian sheaves.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴' ⟶ 𝒴` be 1-morphisms of
 > algebraic stacks over `S`, with 2-cartesian square
@@ -512,7 +512,7 @@ theorem isIso_abelianDerivedDirectImageBaseChange {𝒳 𝒴 𝒴' : AlgebraicSt
       (CatFiberedInGroupoids.homFunctor_comp_p g.hom))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_moduleDerivedDirectImageBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean#L663). The attribute's comment: “sheaves of modules: the base change map g⁻¹Rf\_*F ⟶ Rf'\_*(g')⁻¹F is an isomorphism, functorially in F in D⁺(Mod(𝒳\_τ, O\_𝒳))”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_moduleDerivedDirectImageBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/HigherDirectImageBaseChangeMap.lean#L663). The attribute's comment: “sheaves of modules: the base change map g⁻¹Rf\_*F ⟶ Rf'\_*(g')⁻¹F is an isomorphism, functorially in F in D⁺(Mod(𝒳\_τ, O\_𝒳))”.
 
 > **Stacks 075H for sheaves of modules.** For 1-morphisms `f : 𝒳 ⟶ 𝒴` and `g : 𝒴' ⟶ 𝒴` of
 > algebraic stacks over `S` with 2-cartesian square `𝒴' ×_𝒴 𝒳` as in
@@ -539,4 +539,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.21, Tag 072F](https://stacks.math.columbia.edu/tag/072F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

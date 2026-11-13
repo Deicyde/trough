@@ -8,7 +8,7 @@ proof: formalized
 
 # Planar graphs and minors: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/index.html).
 
 Graphs drawn in the plane and on the square lattice, crossing numbers, Euler's formula, discrete Jordan curve and turning-number theorems, and the theory of graph minors.
 
@@ -31,7 +31,7 @@ The difference is taken in $\mathbb{N}$; since $S_2 \le S_1$, it is the ordinary
 
 - Stéphane Legendre, "The Number of Crossings in a Regular Drawing of the Complete Bipartite Graph", Journal of Integer Sequences 12 (2009), Article 09.5.5, Proposition `count_all`, line 263, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Legendre/legendre2.tex>.
 
-Formalized by `MetaMathlibExt.legendre_regular_crossing`, a theorem declared in [MathlibExt/Combinatorics/Graph/CompleteBipartiteCrossing.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/CompleteBipartiteCrossing.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/index.html#legendre-regular-crossing).
+Formalized by `MetaMathlibExt.legendre_regular_crossing`, a theorem declared in [MathlibExt/Combinatorics/Graph/CompleteBipartiteCrossing.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/CompleteBipartiteCrossing.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/index.html#legendre-regular-crossing).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Planar graphs and minors](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/planar-graphs-and-minors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/planar-graphs-and-minors)

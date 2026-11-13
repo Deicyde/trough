@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Scheme.etaleCohomologicalDimension, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_one_add, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_spec_le_add_trdeg, AlgebraicGeometry.exists_strictHenselization_map_of_finiteType, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add
+lean: AlgebraicGeometry.Scheme.etaleCohomologicalDimension, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_one_add, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_spec_le_add_trdeg, AlgebraicGeometry.exists_strictHenselization_map_of_finiteType, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le, AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add, AlgebraicGeometry.subsingleton_H_of_smallEtaleSupport_subset_trdegLESet
 statement: formalized
 proof: formalized
 ---
 
 # 59.95 Cohomological dimension
 
-Section 59.95 of the Stacks Project, [Tag 0F0P](https://stacks.math.columbia.edu/tag/0F0P). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.95 of the Stacks Project, [Tag 0F0P](https://stacks.math.columbia.edu/tag/0F0P). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F0Q, a definition
 
 [Tag 0F0Q](https://stacks.math.columbia.edu/tag/0F0Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean#L103).
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension.lean#L103).
 
 > **Stacks Project, Tag 0F0Q.** The least degree above which the étale cohomology
 > of every torsion abelian sheaf on a quasi-compact, quasi-separated scheme vanishes.
@@ -30,56 +30,31 @@ public def etaleCohomologicalDimension (X : Scheme.{u}) [CompactSpace X]
 
 [Tag 0F0R](https://stacks.math.columbia.edu/tag/0F0R) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionLimits.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionLimits.lean#L199). The attribute's comment: “the hypothesis `h09YQ` of this declaration is the transport of vanishing that Tags 0EYN and 09YQ supply: a degree in which the étale cohomology of every direct image `f_{i,*}𝓕` vanishes is a degree in which that of `𝓕` vanishes”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/DirectedLimit.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/DirectedLimit.lean#L112). The attribute's comment: “cd(lim X\_i) ≤ max cd(X\_i) for a directed limit of qcqs schemes with affine transition morphisms”.
 
 > **Stacks Project, Tag 0F0R** (Étale Cohomology, Lemma 59.95.2). Let `X = lim X_i` be a
 > directed limit of a system of quasi-compact and quasi-separated schemes with affine transition
 > morphisms. Then `cd(X) ≤ max cd(X_i)`.
 >
-> The directed system is the cofiltered diagram `D` with affine maps and quasi-compact,
-> quasi-separated values, the limit is the cone `c` with `hc : IsLimit c`, the projections
-> `f_i : X ⟶ X_i` are `c.π.app i`, and the maximum over the index set is the supremum in the
-> complete lattice `ℕ∞`, which is attained because a cofiltered category is nonempty.
->
-> `h09YQ` is the consequence of [Stacks, Tag 0EYN] and [Stacks, Tag 09YQ] that the proof uses:
-> since `𝓕 = colim f_i^{-1} f_{i,*}𝓕` and hence
-> `H^q_étale(X, 𝓕) = colim H^q_étale(X_i, f_{i,*}𝓕)`, a degree in which the cohomology of every
-> `f_{i,*}𝓕` vanishes is a degree in which the cohomology of `𝓕` vanishes.
->
-> The proof is then the source's: a degree above `⨆ i, cd(X_i)` is above every `cd(X_i)`, so each
-> `H^q_étale(X_i, f_{i,*}𝓕)` vanishes by the defining property of `cd(X_i)` applied to the sheaf
-> `f_{i,*}𝓕`, which is torsion by [Stacks, Tag 0DDD] part (1) in degree zero —
-> `Stacks.EtaleCohomology.torsionSheafProperty_rightDerived_smallEtaleDirectImageAb` read through
-> `CategoryTheory.Functor.rightDerivedZeroIsoSelf`, the projection `f_i` being affine and hence
-> quasi-compact and quasi-separated — and `h09YQ` transports the vanishing to `X`.
+> The directed system is the diagram `D : Iᵒᵖ ⥤ Scheme` over a directed set `I`, with affine
+> transition maps and quasi-compact quasi-separated values; the limit is the cone `c` with
+> `hc : IsLimit c`; the maximum over the index set is the supremum in the complete lattice `ℕ∞`,
+> attained because a directed set is nonempty. The instances on `c.pt` are what makes `cd(X)`
+> defined and are consequences of `hc`
+> (`AlgebraicGeometry.Scheme.compactSpace_of_isLimit'`,
+> `AlgebraicGeometry.Scheme.quasiSeparatedSpace_pt_of_isLimit`).
 
 ```lean
-public theorem etaleCohomologicalDimension_le_iSup_of_isLimit
-    [CompactSpace c.pt] [QuasiSeparatedSpace c.pt]
-    [HasSheafify c.pt.smallEtaleTopology AddCommGrpCat.{u + 1}]
-    [HasExt.{u + 1} (Sheaf c.pt.smallEtaleTopology AddCommGrpCat.{u + 1})]
-    [∀ i : I, HasSheafify (D.obj i).smallEtaleTopology AddCommGrpCat.{u + 1}]
-    [∀ i : I, HasExt.{u + 1} (Sheaf (D.obj i).smallEtaleTopology AddCommGrpCat.{u + 1})]
-    (hc : IsLimit c)
-    (h09YQ : ∀ F : Sheaf c.pt.smallEtaleTopology AddCommGrpCat.{u + 1},
-      Stacks.Torsion.torsionSheafProperty c.pt.smallEtaleTopology F →
-        ∀ q : ℕ, (∀ i : I, Subsingleton (Sheaf.H.{u + 1, u + 1}
-            ((Stacks.EtaleCohomology.smallEtalePushforward
-              (c.π.app i) AddCommGrpCat.{u + 1}).obj F) q)) →
-          Subsingleton (Sheaf.H.{u + 1, u + 1} F q)) :
-    etaleCohomologicalDimension c.pt ≤
-      ⨆ i : I, etaleCohomologicalDimension (D.obj i)
+theorem etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected
+    [CompactSpace c.pt] [QuasiSeparatedSpace c.pt] (hc : IsLimit c) :
+    etaleCohomologicalDimension c.pt ≤ ⨆ i : Iᵒᵖ, etaleCohomologicalDimension (D.obj i)
 ```
-
-Declarations registered for the tag:
-
-- [`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/DirectedLimit.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean#L29) (StacksFrontier): “cd(lim X\_i) ≤ max cd(X\_i) for a directed limit of qcqs schemes with affine transition morphisms”.
 
 ## Tag 0F0S, a lemma
 
 [Tag 0F0S](https://stacks.math.columbia.edu/tag/0F0S) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_one_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineCurve.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineCurve.lean#L237). The attribute's comment: “for `X` of dimension at most one, which contains the source's dimension one”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “special case”; SGA 4½ Arcata (4.6.4), “special case”; SGA 5 I (1.5.2), “special case”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_one_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineCurve.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineCurve.lean#L237). The attribute's comment: “for `X` of dimension at most one, which contains the source's dimension one”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “special case”; SGA 4½ Arcata (4.6.4), “special case”; SGA 5 I (1.5.2), “special case”.
 
 > **Stacks Project, Tag 0F0S.** Let `K` be a field and `X` an affine scheme of finite type over
 > `K` of dimension at most one. Then `cd(X) ≤ 1 + cd(K)`.
@@ -107,7 +82,7 @@ public theorem etaleCohomologicalDimension_le_one_add
 
 [Tag 0F0T](https://stacks.math.columbia.edu/tag/0F0T) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_spec_le_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FieldExtension.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FieldExtension.lean#L224).
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_spec_le_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FieldExtension.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/FieldExtension.lean#L224).
 
 > **Stacks Project, Tag 0F0T** (Étale Cohomology, Lemma 59.95.4). Let `L/K` be a field
 > extension. Then `cd(L) ≤ cd(K) + trdeg_K(L)`.
@@ -134,7 +109,7 @@ theorem etaleCohomologicalDimension_spec_le_add_trdeg
 
 [Tag 0F0U](https://stacks.math.columbia.edu/tag/0F0U) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_strictHenselization_map_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/StrictHenselizationOverField.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/StrictHenselizationOverField.lean#L563).
+**`AlgebraicGeometry.exists_strictHenselization_map_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/StrictHenselizationOverField.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/StrictHenselizationOverField.lean#L563).
 
 > **Stacks Project, Tag 0F0U.** At a point `x` of a finite-type `K`-scheme, a strict
 > henselization of the local ring admits a map from a separable closure of a rational function
@@ -174,7 +149,7 @@ theorem exists_strictHenselization_map_of_finiteType
 
 [Tag 0F0V](https://stacks.math.columbia.edu/tag/0F0V) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L142). The attribute's comment: “for every natural number n ≥ dim X, which also covers the empty scheme; the literal inequality cd(X) ≤ dim(X) + cd(K) for nonempty X is etaleCohomologicalDimension\_le\_topologicalKrullDim\_add”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “more general”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L142). The attribute's comment: “for every natural number n ≥ dim X, which also covers the empty scheme; the literal inequality cd(X) ≤ dim(X) + cd(K) for nonempty X is etaleCohomologicalDimension\_le\_topologicalKrullDim\_add”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “more general”.
 
 > **Stacks Project, Tag 0F0V**, for every bound `n` on the dimension. Let `K` be a field and
 > let `X` be an affine scheme of finite type over `K` with `dim(X) ≤ n`. Then `cd(X) ≤ n + cd(K)`.
@@ -191,7 +166,7 @@ theorem etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le
     etaleCohomologicalDimension X ≤ n + etaleCohomologicalDimension (Spec (.of K))
 ```
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L197). The attribute's comment: “verbatim, cd(X) ≤ dim(X) + cd(K) in WithBot ℕ∞, for nonempty X: for X = ∅ the source's inequality reads 0 ≤ −∞ and fails; etaleCohomologicalDimension\_le\_add\_of\_topologicalKrullDim\_le covers every X”. References: SGA 4 X (5.2), “special case”; SGA 5 VII (7.1.1), “a), special case”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L197). The attribute's comment: “verbatim, cd(X) ≤ dim(X) + cd(K) in WithBot ℕ∞, for nonempty X: for X = ∅ the source's inequality reads 0 ≤ −∞ and fails; etaleCohomologicalDimension\_le\_add\_of\_topologicalKrullDim\_le covers every X”. References: SGA 4 X (5.2), “special case”; SGA 5 VII (7.1.1), “a), special case”.
 
 > **Stacks Project, Tag 0F0V.** Let `K` be a field and let `X` be a nonempty affine scheme of
 > finite type over `K`. Then `cd(X) ≤ dim(X) + cd(K)`.
@@ -212,7 +187,7 @@ theorem etaleCohomologicalDimension_le_topologicalKrullDim_add
 
 [Tag 0F0W](https://stacks.math.columbia.edu/tag/0F0W) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_H_of_smallEtaleSupport_subset_trdegLESet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/TrdegSupportVanishingUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/TrdegSupportVanishingUnconditional.lean#L52). References: SGA 2 XIV (3.1), “special case”; SGA 4½ Arcata (4.6.4), “more general”.
+**`AlgebraicGeometry.subsingleton_H_of_smallEtaleSupport_subset_trdegLESet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/TrdegSupportVanishingUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/TrdegSupportVanishingUnconditional.lean#L52). References: SGA 2 XIV (3.1), “special case”; SGA 4½ Arcata (4.6.4), “more general”.
 
 > **Stacks Project, Tag 0F0W.** Let `K` be a field and `X` an affine scheme of finite type over
 > `K`. Let `E_a ⊆ X` be the set of points `x` with `trdeg_K κ(x) ≤ a`, and let `𝓕` be an abelian
@@ -240,7 +215,7 @@ theorem subsingleton_H_of_smallEtaleSupport_subset_trdegLESet (K : Type u) [Fiel
 
 [Tag 0F0X](https://stacks.math.columbia.edu/tag/0F0X) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleSupport_rightDerived_etaleAbelianDirectImage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineHigherDirectImageSupport.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineHigherDirectImageSupport.lean#L466). References: SGA 4 XIV (3.1), “more general”.
+**`AlgebraicGeometry.smallEtaleSupport_rightDerived_etaleAbelianDirectImage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineHigherDirectImageSupport.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineHigherDirectImageSupport.lean#L466). References: SGA 4 XIV (3.1), “more general”.
 
 > **Stacks Project, Tag 0F0X.** Let `f : X ⟶ Y` be an affine morphism of schemes locally of
 > finite type over a field `K` (the structure morphisms `gX`, `gY`, with `f ≫ gY = gX`), let
@@ -275,4 +250,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.95, Tag 0F0P](https://stacks.math.columbia.edu/tag/0F0P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

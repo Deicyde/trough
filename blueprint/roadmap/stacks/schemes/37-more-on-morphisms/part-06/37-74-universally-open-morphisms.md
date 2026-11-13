@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.74 Universally open morphisms
 
-Section 37.74 of the Stacks Project, [Tag 0F30](https://stacks.math.columbia.edu/tag/0F30). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.74 of the Stacks Project, [Tag 0F30](https://stacks.math.columbia.edu/tag/0F30). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F31, a lemma
 
 [Tag 0F31](https://stacks.math.columbia.edu/tag/0F31) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyOpen_iff_forall_isOpenMap_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean#L314). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.universallyOpen_iff_forall_isOpenMap_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean#L314). The attribute's comment: “parts (1) and (2)”.
 
 > A morphism of schemes is universally open if and only if its base change along every
 > morphism locally of finite presentation is an open map.
@@ -26,7 +26,7 @@ theorem universallyOpen_iff_forall_isOpenMap_pullback_snd {X S : Scheme.{u}} (f 
         LocallyOfFinitePresentation g → IsOpenMap (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.universallyOpen_iff_forall_isOpenMap_affineSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean#L325). The attribute's comment: “parts (1) and (3)”.
+**`AlgebraicGeometry.universallyOpen_iff_forall_isOpenMap_affineSpaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/Criteria.lean#L325). The attribute's comment: “parts (1) and (3)”.
 
 > A morphism of schemes is universally open if and only if the induced morphism of affine
 > `n`-spaces is an open map for every `n`.
@@ -41,7 +41,7 @@ theorem universallyOpen_iff_forall_isOpenMap_affineSpaceMap {X S : Scheme.{u}} (
 
 [Tag 0F32](https://stacks.math.columbia.edu/tag/0F32) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyOpen_of_locallyQuasiFinite_of_dominant_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/QuasiFiniteDominant.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/QuasiFiniteDominant.lean#L417). References: EGA IV (14.4.5), “quasi-finite case”; EGA IV (14.4.2), “quasi-finite, b)=>a)”; EGA IV (14.4.4), “loc. quasi-finite case”; EGA IV (14.5.6), “(d) ⇒ (b)”; EGA IV (14.5.9), “(d) ⇒ (a), special case”; EGA IV (18.10.2), “special case”; SGA 3 VIB (5.6.0), “(i), (ii), special case”.
+**`AlgebraicGeometry.universallyOpen_of_locallyQuasiFinite_of_dominant_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/QuasiFiniteDominant.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/QuasiFiniteDominant.lean#L417). References: EGA IV (14.4.5), “quasi-finite case”; EGA IV (14.4.2), “quasi-finite, b)=>a)”; EGA IV (14.4.4), “loc. quasi-finite case”; EGA IV (14.5.6), “(d) ⇒ (b)”; EGA IV (14.5.9), “(d) ⇒ (a), special case”; EGA IV (18.10.2), “special case”; SGA 3 VIB (5.6.0), “(i), (ii), special case”.
 
 > **Stacks Project, Tag 0F32.** A locally quasi-finite morphism to a geometrically unibranch,
 > locally Noetherian scheme is universally open as soon as every irreducible component of its
@@ -60,7 +60,7 @@ theorem universallyOpen_of_locallyQuasiFinite_of_dominant_components
 
 [Tag 0F33](https://stacks.math.columbia.edu/tag/0F33) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyOpen_iff_isOpen_image_basicOpen_linearCombination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversallyOpenFinite.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversallyOpenFinite.lean#L162).
+**`AlgebraicGeometry.universallyOpen_iff_isOpen_image_basicOpen_linearCombination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversallyOpenFinite.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversallyOpenFinite.lean#L161).
 
 > Universal openness of a finite algebra is detected by the image of the
 > principal open defined by a universal linear combination of module generators.
@@ -80,7 +80,7 @@ theorem universallyOpen_iff_isOpen_image_basicOpen_linearCombination
 
 [Tag 0F34](https://stacks.math.columbia.edu/tag/0F34) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_locallyQuasiFinite_universallyOpen_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/UniversallyOpen.lean, line 829](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/UniversallyOpen.lean#L829).
+**`AlgebraicGeometry.exists_locallyQuasiFinite_universallyOpen_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/UniversallyOpen.lean, line 829](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/UniversallyOpen.lean#L829).
 
 > Let `S` be the limit of a cofiltered system of schemes with affine transition morphisms and
 > `f₀ : X₀ ⟶ Y₀` a locally finitely presented morphism over a quasi-compact quasi-separated stage
@@ -112,7 +112,7 @@ public theorem exists_locallyQuasiFinite_universallyOpen_baseChange_of_limitBase
 
 [Tag 0F35](https://stacks.math.columbia.edu/tag/0F35) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricIrreducibleComponentCount_eq_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L112). The attribute's comment: “agreement”.
+**`AlgebraicGeometry.geometricIrreducibleComponentCount_eq_numGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L112). The attribute's comment: “agreement”.
 
 > For a locally quasi-finite morphism, the functions counting geometrically irreducible and
 > geometrically connected components of its fibres agree.
@@ -124,7 +124,7 @@ theorem geometricIrreducibleComponentCount_eq_numGeometricConnectedComponents
       numGeometricConnectedComponents f
 ```
 
-**`AlgebraicGeometry.exists_forall_geometricIrreducibleComponentCount_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L162). The attribute's comment: “boundedness”.
+**`AlgebraicGeometry.exists_forall_geometricIrreducibleComponentCount_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L162). The attribute's comment: “boundedness”.
 
 > The geometric fibre count of a locally quasi-finite morphism whose source is quasi-compact
 > is bounded by a natural number.
@@ -135,7 +135,7 @@ theorem exists_forall_geometricIrreducibleComponentCount_le {X Y : Scheme.{u}} (
     ∃ d : ℕ, ∀ y : Y, geometricIrreducibleComponentCount f y ≤ (d : ℕ∞)
 ```
 
-**`AlgebraicGeometry.exists_isGreatest_range_geometricIrreducibleComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L176). The attribute's comment: “maximum, the target is assumed nonempty”.
+**`AlgebraicGeometry.exists_isGreatest_range_geometricIrreducibleComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/GeometricFibreCount.lean#L176). The attribute's comment: “maximum, the target is assumed nonempty”.
 
 > The geometric fibre count of a locally quasi-finite morphism whose source is quasi-compact
 > and whose target is nonempty attains a finite maximum: its set of values has a greatest element.
@@ -150,7 +150,7 @@ theorem exists_isGreatest_range_geometricIrreducibleComponentCount {X Y : Scheme
 
 [Tag 0F36](https://stacks.math.columbia.edu/tag/0F36) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_geometricIrreducibleComponentCount_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/FibreCountLowerBound.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/FibreCountLowerBound.lean#L414). References: EGA IV (18.10.17.1), “globally univ. open”; SGA 1 I (10.7), “more general”.
+**`AlgebraicGeometry.isOpen_geometricIrreducibleComponentCount_ge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/FibreCountLowerBound.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/FibreCountLowerBound.lean#L414). References: EGA IV (18.10.17.1), “globally univ. open”; SGA 1 I (10.7), “more general”.
 
 > **Stacks Project, Tag 0F36.** For a separated, locally quasi-finite and universally open
 > morphism of schemes, the locus where the number of geometric components of the fibre is at least
@@ -166,7 +166,7 @@ theorem isOpen_geometricIrreducibleComponentCount_ge {X Y : Scheme.{u}} (f : X �
 
 [Tag 0F37](https://stacks.math.columbia.edu/tag/0F37) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_geometricIrreducibleComponentCount_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean#L350). The attribute's comment: “openness”.
+**`AlgebraicGeometry.isOpen_geometricIrreducibleComponentCount_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean#L350). The attribute's comment: “openness”.
 
 > **Stacks Project, Tag 0F37.** For a separated, locally quasi-finite and universally open
 > morphism whose geometric fibre count attains the finite maximum `d`, the locus where the count
@@ -180,7 +180,7 @@ theorem isOpen_geometricIrreducibleComponentCount_maxLocus
     IsOpen {y : Y | geometricIrreducibleComponentCount f y = (d : ℕ∞)}
 ```
 
-**`AlgebraicGeometry.isFinite_restrict_geometricIrreducibleComponentCount_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean#L362). The attribute's comment: “finiteness”.
+**`AlgebraicGeometry.isFinite_restrict_geometricIrreducibleComponentCount_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/UniversallyOpen/MaximalFibreCount.lean#L362). The attribute's comment: “finiteness”.
 
 > **Stacks Project, Tag 0F37.** The morphism is finite over the open locus where its geometric
 > fibre count attains the finite maximum.
@@ -201,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.74, Tag 0F30](https://stacks.math.columbia.edu/tag/0F30)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

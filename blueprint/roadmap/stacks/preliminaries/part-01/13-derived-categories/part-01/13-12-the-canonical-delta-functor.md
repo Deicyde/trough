@@ -1,20 +1,51 @@
 ---
 declaration: section
 origin: cited
-lean: DerivedCategory.exists_deltaFunctorStructure_δ_eq, triangleOfSESIsoOfQuasiIsoHom, DerivedCategory.mapTriangle_triangleOfDegreewiseSplit_eq_triangleOfSES, DerivedCategory.exists_truncLESucc_triangle, DerivedCategory.exists_truncGESucc_triangle, CategoryTheory.Triangulated.TStructure.triangleLEGE_distinguished, main_covariant, main_contravariant
+lean: DerivedCategory.exists_deltaFunctorStructure_δ_eq_and_plus_minus_bounded, DerivedCategory.exists_deltaFunctorStructure_δ_eq, triangleOfSESIsoOfQuasiIsoHom, DerivedCategory.mapTriangle_triangleOfDegreewiseSplit_eq_triangleOfSES, DerivedCategory.triangleTruncLETruncGE_distinguished, DerivedCategory.triangleTruncLETruncLESucc_distinguished, DerivedCategory.triangleTruncGETruncGESucc_distinguished, main_covariant
 statement: formalized
 proof: formalized
 ---
 
 # 13.12 The canonical delta-functor
 
-Section 13.12 of the Stacks Project, [Tag 014Z](https://stacks.math.columbia.edu/tag/014Z). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.12 of the Stacks Project, [Tag 014Z](https://stacks.math.columbia.edu/tag/014Z). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0152, a lemma
 
 [Tag 0152](https://stacks.math.columbia.edu/tag/0152) in the Stacks Project.
 
-**`DerivedCategory.exists_deltaFunctorStructure_δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L162). References: SGA 4½ Etat 0 (3.1.5), “partial”.
+**`DerivedCategory.exists_deltaFunctorStructure_δ_eq_and_plus_minus_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDeltaFunctor.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDeltaFunctor.lean#L248).
+
+> **The canonical `δ`-functors** ([Stacks, Tag 0152]). Let `𝒜` be an abelian category. Each of
+> the four functors `Q : Comp(𝒜) ⥤ D(𝒜)`, `Comp⁺(𝒜) ⥤ D⁺(𝒜)`, `Comp⁻(𝒜) ⥤ D⁻(𝒜)` and
+> `Compᵇ(𝒜) ⥤ Dᵇ(𝒜)` has a `δ`-functor structure whose connecting morphism attached to a short exact
+> sequence `0 → A^• → B^• → C^• → 0` is `δ = -p ∘ q⁻¹ = DerivedCategory.triangleOfSESδ` (for the
+> three bounded variants: its image in `D(𝒜)` under the fully faithful inclusion is).
+
+```lean
+theorem exists_deltaFunctorStructure_δ_eq_and_plus_minus_bounded :
+    (∃ h : Functor.DeltaFunctorStructure (CochainComplex C ℤ) (DerivedCategory C) Q,
+      ∀ {S : ShortComplex (CochainComplex C ℤ)} (hS : S.ShortExact),
+        h.δ hS = triangleOfSESδ hS) ∧
+    (∃ h : Functor.DeltaFunctorStructure (CochainComplex.Plus C) (DerivedCategory.Plus C) Plus.Q,
+      ∀ {S : ShortComplex (CochainComplex.Plus C)} (hS : S.ShortExact),
+        Plus.ι.map (h.δ hS) ≫ (Plus.ι.commShiftIso (1 : ℤ)).hom.app (Plus.Q.obj S.X₁) =
+          triangleOfSESδ (hS.map_of_exact (CochainComplex.Plus.ι C))) ∧
+    (∃ h : Functor.DeltaFunctorStructure (CochainComplex.minus C).FullSubcategory
+        (DerivedCategory.Minus C) Minus.Q,
+      ∀ {S : ShortComplex (CochainComplex.minus C).FullSubcategory} (hS : S.ShortExact),
+        Minus.ι.map (h.δ hS) ≫ (Minus.ι.commShiftIso (1 : ℤ)).hom.app (Minus.Q.obj S.X₁) =
+          triangleOfSESδ (hS.map_of_exact (CochainComplex.minus C).ι)) ∧
+    (∃ h : Functor.DeltaFunctorStructure
+        (CochainComplex.plus C ⊓ CochainComplex.minus C).FullSubcategory
+        (DerivedCategory.Bounded C) Bounded.Q,
+      ∀ {S : ShortComplex (CochainComplex.plus C ⊓ CochainComplex.minus C).FullSubcategory}
+        (hS : S.ShortExact),
+        Bounded.ι.map (h.δ hS) ≫ (Bounded.ι.commShiftIso (1 : ℤ)).hom.app (Bounded.Q.obj S.X₁) =
+          triangleOfSESδ (hS.map_of_exact (CochainComplex.plus C ⊓ CochainComplex.minus C).ι))
+```
+
+**`DerivedCategory.exists_deltaFunctorStructure_δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L163). The attribute's comment: “the functor Comp(𝒜) ⥤ D(𝒜)”. References: SGA 4½ Etat 0 (3.1.5), “partial”.
 
 > **The canonical `δ`-functor.** Let `𝒜` be an abelian category. The localization functor
 > `Q : CochainComplex 𝒜 ℤ ⥤ DerivedCategory 𝒜` has the structure of a `δ`-functor whose connecting
@@ -35,7 +66,7 @@ public theorem exists_deltaFunctorStructure_δ_eq
 
 [Tag 0153](https://stacks.math.columbia.edu/tag/0153) in the Stacks Project.
 
-**`triangleOfSESIsoOfQuasiIsoHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L274).
+**`triangleOfSESIsoOfQuasiIsoHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L275).
 
 > The two distinguished triangles associated to `S₁` and `S₂` are isomorphic in
 > `D(𝒜)`, via the canonical isomorphism with components `Q φ₁, Q φ₂, Q φ₃`.
@@ -52,7 +83,7 @@ noncomputable def triangleOfSESIsoOfQuasiIsoHom
 
 [Tag 0154](https://stacks.math.columbia.edu/tag/0154) in the Stacks Project.
 
-**`DerivedCategory.mapTriangle_triangleOfDegreewiseSplit_eq_triangleOfSES`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L200).
+**`DerivedCategory.mapTriangle_triangleOfDegreewiseSplit_eq_triangleOfSES`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L201).
 
 > **The `δ`-functor on a termwise split short exact sequence.** Let `𝒜` be an abelian category
 > and let `S` be a short exact sequence of cochain complexes in `𝒜` which is split in each degree,
@@ -74,51 +105,46 @@ public theorem mapTriangle_triangleOfDegreewiseSplit_eq_triangleOfSES
 
 [Tag 08J5](https://stacks.math.columbia.edu/tag/08J5) in the Stacks Project.
 
-**`DerivedCategory.exists_truncLESucc_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean#L91). The attribute's comment: “(2)”.
+**`DerivedCategory.triangleTruncLETruncGE_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean#L197). The attribute's comment: “(1) the triangle τ\_\{≤a}K → K → τ\_\{≥a+1}K → (τ\_\{≤a}K)[1] on the truncations of the complex K, with connecting map from the short exact sequence 0 → τ\_\{≤a}K → K → K/τ\_\{≤a}K → 0”.
 
-> **Stacks Project, Tag 08J5** (second triangle). Two successive truncations from above of an
-> object of the derived category differ by its cohomology in the newly retained degree, placed in
-> that degree: there is a distinguished triangle
-> `τ^{≤a} E ⟶ τ^{≤a+1} E ⟶ H^{a+1}(E)[-a-1] ⟶ (τ^{≤a} E)[1]` whose first map is the canonical
-> comparison of truncations.
+> **Stacks Project, Tag 08J5** (1). For a complex `K` and an integer `a`, the triangle
+> `τ_{≤a} K ⟶ K ⟶ τ_{≥a+1} K ⟶ (τ_{≤a} K)[1]` on the canonical truncations of `K`, with the
+> canonical maps, is distinguished in `D(C)`.
 
 ```lean
-public theorem exists_truncLESucc_triangle (E : DerivedCategory C) (a : ℤ) :
-    ∃ (g : (TStructure.t.truncLE (a + 1)).obj E ⟶
-        (singleFunctor C (a + 1)).obj ((homologyFunctor C (a + 1)).obj E))
-      (δ : (singleFunctor C (a + 1)).obj ((homologyFunctor C (a + 1)).obj E) ⟶
-        ((TStructure.t.truncLE a).obj E)⟦(1 : ℤ)⟧),
-      Triangle.mk ((TStructure.t.natTransTruncLEOfLE a (a + 1) (by omega)).app E) g δ ∈
-        distTriang (DerivedCategory C)
+theorem triangleTruncLETruncGE_distinguished (K : CochainComplex C ℤ) (a : ℤ) :
+    triangleTruncLETruncGE K a ∈ distTriang (DerivedCategory C)
 ```
 
-**`DerivedCategory.exists_truncGESucc_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean#L160). The attribute's comment: “(3)”.
+**`DerivedCategory.triangleTruncLETruncLESucc_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean#L265). The attribute's comment: “(2) the triangle τ\_\{≤a}K → τ\_\{≤a+1}K → H^\{a+1}(K)[-a-1] → (τ\_\{≤a}K)[1] on the truncations of the complex K, with the canonical maps”.
 
-> **Stacks Project, Tag 08J5** (third triangle).  Two successive truncations from below of an
-> object of the derived category differ by its cohomology in the lower degree, placed in that
-> degree: there is a distinguished triangle
-> `H^a(E)[-a] ⟶ τ^{≥a} E ⟶ τ^{≥a+1} E ⟶ (H^a(E)[-a])[1]` whose second map is the canonical
-> comparison of truncations.
+> **Stacks Project, Tag 08J5** (2). For a complex `K` and an integer `a`, the triangle
+> `τ_{≤a} K ⟶ τ_{≤a+1} K ⟶ H^{a+1}(K)[-a-1] ⟶ (τ_{≤a} K)[1]`, whose first map is the canonical
+> inclusion of truncations and whose second map is the canonical projection onto the cohomology in
+> degree `a + 1`, is distinguished in `D(C)`.
 
 ```lean
-public theorem exists_truncGESucc_triangle (E : DerivedCategory C) (a : ℤ) :
-    ∃ (f : (singleFunctor C a).obj ((homologyFunctor C a).obj E) ⟶
-        (TStructure.t.truncGE a).obj E)
-      (δ : (TStructure.t.truncGE (a + 1)).obj E ⟶
-        ((singleFunctor C a).obj ((homologyFunctor C a).obj E))⟦(1 : ℤ)⟧),
-      Triangle.mk f ((TStructure.t.natTransTruncGEOfLE a (a + 1) (by omega)).app E) δ ∈
-        distTriang (DerivedCategory C)
+theorem triangleTruncLETruncLESucc_distinguished (K : CochainComplex C ℤ) (a : ℤ) :
+    triangleTruncLETruncLESucc K a ∈ distTriang (DerivedCategory C)
 ```
 
-Declarations registered for the tag:
+**`DerivedCategory.triangleTruncGETruncGESucc_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/TruncationTriangles.lean#L313). The attribute's comment: “(3) the triangle H^a(K)[-a] → τ\_\{≥a}K → τ\_\{≥a+1}K → H^a(K)[-a+1] on the truncations of the complex K, with the canonical maps”.
 
-- [`CategoryTheory.Triangulated.TStructure.triangleLEGE_distinguished`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Triangulated.TStructure.triangleLEGE_distinguished#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/TruncGESuccTriangle.lean#L73) (StacksFrontier): “(1)”.
+> **Stacks Project, Tag 08J5** (3). For a complex `K` and an integer `a`, the triangle
+> `H^a(K)[-a] ⟶ τ_{≥a} K ⟶ τ_{≥a+1} K ⟶ (H^a(K)[-a])[1]`, whose first map is the canonical
+> inclusion of the cohomology in degree `a` and whose second map is the canonical projection of
+> truncations, is distinguished in `D(C)`.
+
+```lean
+theorem triangleTruncGETruncGESucc_distinguished (K : CochainComplex C ℤ) (a : ℤ) :
+    triangleTruncGETruncGESucc K a ∈ distTriang (DerivedCategory C)
+```
 
 ## Tag 08Q2, a lemma
 
 [Tag 08Q2](https://stacks.math.columbia.edu/tag/08Q2) in the Stacks Project.
 
-**`main_covariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L710). The attribute's comment: “(1)”.
+**`main_covariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 711](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L711). The attribute's comment: “(1)”.
 
 > Statement 1 (covariant case). If `H^i(K 0) = 0` for `i > 0` and the induced
 > map `H^{-j}(f j)` vanishes for each `0 ≤ j ≤ n-1`, then the composite
@@ -143,7 +169,7 @@ theorem main_covariant
         h ≫ DerivedCategory.Q.map ((K n).ιTruncLE (-(n : ℤ)))
 ```
 
-**`main_contravariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L742). The attribute's comment: “(2)”. References: SGA 4 XVIII (2.14.2), “partial”.
+**`main_contravariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/CanonicalDeltaFunctor.lean#L743). The attribute's comment: “(2)”. References: SGA 4 XVIII (2.14.2), “partial”.
 
 > Statement 2 (contravariant / dual case). If `H^i(K 0) = 0` for `i < 0` and
 > the induced map `H^{j}(g j)` vanishes for each `0 ≤ j ≤ n-1`, then the composite
@@ -170,4 +196,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.12, Tag 014Z](https://stacks.math.columbia.edu/tag/014Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

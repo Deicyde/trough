@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.IsRelativelyAmple, AlgebraicGeometry.Space.IsRelativelyAmple.isRepresentable, AlgebraicGeometry.Space.isRelativelyAmple_iff_exists_scheme, AlgebraicGeometry.Space.isRelativelyAmple_baseChange, AlgebraicGeometry.Space.IsRelativelyAmple.relativelyRepresentable, AlgebraicGeometry.Space.IsRelativelyAmple.isQuasiCompact, AlgebraicGeometry.Space.IsRelativelyAmple.isSeparated, AlgebraicGeometry.Space.isRelativelyAmple_of_baseChange_etale
+lean: AlgebraicGeometry.Space.IsRelativelyAmple, AlgebraicGeometry.Space.IsRelativelyAmple.isRepresentable, AlgebraicGeometry.Space.isRelativelyAmple_iff_exists_scheme, AlgebraicGeometry.Space.isRelativelyAmple_baseChange, AlgebraicGeometry.Space.IsRelativelyAmple.relativelyRepresentable, AlgebraicGeometry.Space.IsRelativelyAmple.isQuasiCompact, AlgebraicGeometry.Space.IsRelativelyAmple.isSeparated, AlgebraicGeometry.Space.isRelativelyAmple_of_isRelativelyAmple_baseChange_etale
 statement: formalized
 proof: formalized
 ---
 
 # 71.14 Relatively ample sheaves
 
-Section 71.14 of the Stacks Project, [Tag 0D30](https://stacks.math.columbia.edu/tag/0D30). 7 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.14 of the Stacks Project, [Tag 0D30](https://stacks.math.columbia.edu/tag/0D30). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D31, a definition
 
 [Tag 0D31](https://stacks.math.columbia.edu/tag/0D31) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativelyAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L177).
+**`AlgebraicGeometry.Space.IsRelativelyAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L177).
 
 > **Stacks 0D31.** A module `L` on an algebraic space `X` is *ample relative to*
 > `f : X ⟶ Y`, or *`f`-ample*, when `f` is representable and, for every scheme `T` over the base
@@ -31,7 +31,7 @@ def IsRelativelyAmple {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y)
 
 [Tag 0D32](https://stacks.math.columbia.edu/tag/0D32) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativelyAmple.isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean#L59). The attribute's comment: “the source is a scheme”.
+**`AlgebraicGeometry.Space.IsRelativelyAmple.isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean#L59). The attribute's comment: “the source is a scheme”.
 
 > If a module is ample relative to `f : X ⟶ Y` and the algebraic space `Y` is a scheme, then
 > the algebraic space `X` is a scheme.
@@ -42,7 +42,7 @@ theorem IsRelativelyAmple.isRepresentable {X Y : AlgebraicSpaces B S hS} {f : X 
     [Y.1.IsRepresentable] : X.1.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_exists_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean#L144).
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_exists_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleOverScheme.lean#L144).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over the base, let `L` be
 > an invertible `𝒪_X`-module, and assume that the algebraic space `Y` is the scheme `V`. The
@@ -71,7 +71,7 @@ theorem isRelativelyAmple_iff_exists_scheme {X Y : AlgebraicSpaces B S hS} (f : 
 
 [Tag 0D33](https://stacks.math.columbia.edu/tag/0D33) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L267).
+**`AlgebraicGeometry.Space.isRelativelyAmple_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L267).
 
 > **Stacks 0D33.** Relative ampleness is stable under arbitrary base change of algebraic
 > spaces: if `L` is `f`-ample and `f' : X' ⟶ Y'` is the base change of `f : X ⟶ Y` along
@@ -88,7 +88,7 @@ theorem isRelativelyAmple_baseChange {X Y X' Y' : AlgebraicSpaces B S hS} {f : X
 
 [Tag 0D34](https://stacks.math.columbia.edu/tag/0D34) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativelyAmple.relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L192). The attribute's comment: “representable”.
+**`AlgebraicGeometry.Space.IsRelativelyAmple.relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L192). The attribute's comment: “representable”.
 
 > **Stacks 0D34, representability.** A relatively ample module is ample relative to a
 > representable morphism.
@@ -99,7 +99,7 @@ theorem IsRelativelyAmple.relativelyRepresentable {X Y : AlgebraicSpaces B S hS}
     yoneda.relativelyRepresentable f.hom
 ```
 
-**`AlgebraicGeometry.Space.IsRelativelyAmple.isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L236). The attribute's comment: “quasi-compact”.
+**`AlgebraicGeometry.Space.IsRelativelyAmple.isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L236). The attribute's comment: “quasi-compact”.
 
 > **Stacks 0D34, quasi-compactness.** A morphism of algebraic spaces admitting a relatively
 > ample module is quasi-compact.
@@ -114,7 +114,7 @@ theorem IsRelativelyAmple.isQuasiCompact {X Y : AlgebraicSpaces B S hS} {f : X �
     IsQuasiCompact B S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.IsRelativelyAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L253). The attribute's comment: “separated”. References: EGA II (4.6.3), “more general”.
+**`AlgebraicGeometry.Space.IsRelativelyAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L253). The attribute's comment: “separated”. References: EGA II (4.6.3), “more general”.
 
 > **Stacks 0D34, separatedness.** A morphism of algebraic spaces admitting a relatively ample
 > module is separated.
@@ -135,73 +135,7 @@ theorem IsRelativelyAmple.isSeparated {X Y : AlgebraicSpaces B S hS} {f : X ⟶ 
 
 [Tag 0D35](https://stacks.math.columbia.edu/tag/0D35) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_of_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleBaseChange.lean#L183). The attribute's comment: “(2) implies (1), on RelativeAmpleEtaleDescentOfSchemes and with the source's conclusion that X is a scheme assumed”.
-
-> **Stacks 0D35, (2) implies (1).** Let `g : V ⟶ U` be a morphism of algebraic spaces which are
-> the schemes `V₀` and `U₀`, induced by a surjective étale `h₀ : V₀ ⟶ U₀`, let `f : X ⟶ U` be a
-> morphism of algebraic spaces, let `L` be an invertible `𝒪_X`-module, and let `pr : Y ⟶ X`,
-> `f' : Y ⟶ V` present `Y` as `V ×_U X`. If the pullback of `L` to `Y` is ample on `Y/V` and `X` is
-> a scheme, then `L` is ample on `X/U`.
->
-> Both clauses are read on the base by [Stacks, Tag 0D32]: clause (2) gives a scheme `Y₀` with `N`
-> ample on `Y₀/V₀`, the square of schemes `Y₀ ⟶ V₀` over `X₀ ⟶ U₀` is cartesian because `yoneda` is
-> fully faithful and reflects limits while the passage to schemes preserves fibre products, and the
-> module on `Y₀` is the pullback of the module on `X₀` by
-> `AlgebraicGeometry.Space.nonempty_baseChangeModule_baseChange_of_isInvertible`. One application
-> of `AlgebraicGeometry.Space.RelativeAmpleEtaleDescentOfSchemes` at that single square
-> finishes.
->
-> The hypothesis `hX` that `X` is a scheme is a *conclusion* of the source's proof, which obtains
-> it from the relative `Proj`; that route is unavailable here. See the module documentation.
-
-```lean
-theorem isRelativelyAmple_of_baseChange_etale
-    (hdesc : RelativeAmpleEtaleDescentOfSchemes.{u})
-    {U V X Y : AlgebraicSpaces B S hS} {f : X ⟶ U} {g : V ⟶ U} {f' : Y ⟶ V} {pr : Y ⟶ X}
-    (hsq : IsPullback pr f' f g) (L : Modules.{u, u} B S hS X.1 X.2)
-    (hLinv : Stacks.SheafOfModules.IsInvertible (structurePresheaf B S hS X.1)
-      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS X.1 X.2).O)).property L)
-    (U₀ V₀ : BigFppfOver B S hS) (eU : U.1 ≅ yoneda.obj U₀) (eV : V.1 ≅ yoneda.obj V₀)
-    (h₀ : V₀ ⟶ U₀) (hg : g.hom ≫ eU.hom = eV.hom ≫ yoneda.map h₀)
-    (hsurj : Surjective ((BigFppfOver.toScheme B S hS).map h₀))
-    (hetale : Etale ((BigFppfOver.toScheme B S hS).map h₀))
-    (hX : X.1.IsRepresentable)
-    (hN : IsRelativelyAmple B S hS f' ((modulePullback B S hS pr).obj L)) :
-    IsRelativelyAmple B S hS f L
-```
-
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleBaseChange.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleBaseChange.lean#L236). The attribute's comment: “the equivalence; (1) implies (2) is unconditional, (2) implies (1) rests on the carried statement about schemes and on the source's conclusion that X is a scheme”.
-
-> **Stacks 0D35.** Let `g : V ⟶ U` be a morphism of algebraic spaces which are the schemes `V₀`
-> and `U₀`, induced by a surjective étale morphism `h₀ : V₀ ⟶ U₀`, let `f : X ⟶ U` be a morphism of
-> algebraic spaces, let `L` be an invertible `𝒪_X`-module and let `pr : Y ⟶ X`, `f' : Y ⟶ V`
-> present `Y` as `V ×_U X`. The following are equivalent:
->
-> 1. `L` is ample on `X/U`;
-> 2. the pullback of `L` to `Y` is ample on `Y/V`.
->
-> Clause (1) implies clause (2) by [Stacks, Tag 0D33],
-> `AlgebraicGeometry.Space.isRelativelyAmple_baseChange`, and uses neither the hypothesis `hdesc`
-> nor `hX`, nor the surjectivity or étaleness of `h₀`. The converse is
-> `AlgebraicGeometry.Space.isRelativelyAmple_of_baseChange_etale`, which rests on all of them.
-
-```lean
-theorem isRelativelyAmple_iff_baseChange_etale
-    (hdesc : RelativeAmpleEtaleDescentOfSchemes.{u})
-    {U V X Y : AlgebraicSpaces B S hS} {f : X ⟶ U} {g : V ⟶ U} {f' : Y ⟶ V} {pr : Y ⟶ X}
-    (hsq : IsPullback pr f' f g) (L : Modules.{u, u} B S hS X.1 X.2)
-    (hLinv : Stacks.SheafOfModules.IsInvertible (structurePresheaf B S hS X.1)
-      ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS X.1 X.2).O)).property L)
-    (U₀ V₀ : BigFppfOver B S hS) (eU : U.1 ≅ yoneda.obj U₀) (eV : V.1 ≅ yoneda.obj V₀)
-    (h₀ : V₀ ⟶ U₀) (hg : g.hom ≫ eU.hom = eV.hom ≫ yoneda.map h₀)
-    (hsurj : Surjective ((BigFppfOver.toScheme B S hS).map h₀))
-    (hetale : Etale ((BigFppfOver.toScheme B S hS).map h₀))
-    (hX : X.1.IsRepresentable) :
-    IsRelativelyAmple B S hS f L ↔
-      IsRelativelyAmple B S hS f' ((modulePullback B S hS pr).obj L)
-```
-
-**`AlgebraicGeometry.Space.isRelativelyAmple_of_isRelativelyAmple_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean#L292). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.Space.isRelativelyAmple_of_isRelativelyAmple_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean#L294). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0D35, (2) implies (1).** Let `g : V ⟶ U` be a morphism of algebraic spaces which
 > are the affine schemes `V₀` and `U₀`, induced by a surjective étale `h₀ : V₀ ⟶ U₀`, let
@@ -229,7 +163,7 @@ theorem isRelativelyAmple_of_isRelativelyAmple_baseChange_etale (hsq : IsPullbac
     IsRelativelyAmple B S hS f L
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_isRelativelyAmple_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean#L321).
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_isRelativelyAmple_baseChange_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleEtaleSourceScheme.lean#L323).
 
 > **Stacks 0D35.** Let `g : V ⟶ U` be a morphism of algebraic spaces which are the affine
 > schemes `V₀` and `U₀`, induced by a surjective étale morphism `h₀ : V₀ ⟶ U₀`, let `f : X ⟶ U` be
@@ -262,7 +196,7 @@ theorem isRelativelyAmple_iff_isRelativelyAmple_baseChange_etale (hsq : IsPullba
 
 [Tag 0D36](https://stacks.math.columbia.edu/tag/0D36) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L108). The attribute's comment: “parts (1) and (2), which the source calls equivalent by definition and which the library's Tag 0D31 predicate makes so here too”.
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L110). The attribute's comment: “parts (1) and (2), which the source calls equivalent by definition and which the library's Tag 0D31 predicate makes so here too”.
 
 > **Stacks 0D36, parts (1) and (2).** A module is ample relative to `f : X ⟶ Y` precisely when
 > every base change of `f` along a scheme of the site is represented by a scheme carrying a
@@ -280,7 +214,7 @@ theorem isRelativelyAmple_iff_forall_isAmpleOnBaseChange {X Y : AlgebraicSpaces 
         IsAmpleOnBaseChange B S hS f L T g
 ```
 
-**`AlgebraicGeometry.Space.isAmpleOnBaseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L126). The attribute's comment: “part (1) implies part (2) at a single base change, hence part (1) implies part (3) by restriction to affine Z”.
+**`AlgebraicGeometry.Space.isAmpleOnBaseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L128). The attribute's comment: “part (1) implies part (2) at a single base change, hence part (1) implies part (3) by restriction to affine Z”.
 
 > **Stacks 0D36, part (1) implies part (3).** For a relatively ample module the base change of
 > `f` along any scheme of the site is a scheme carrying a relatively ample pullback; part (3) of
@@ -293,7 +227,7 @@ theorem isAmpleOnBaseChange_of_isRelativelyAmple {X Y : AlgebraicSpaces B S hS} 
     IsAmpleOnBaseChange B S hS f L T g
 ```
 
-**`AlgebraicGeometry.Space.exists_etaleChart_isAmpleOnBaseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L138). The attribute's comment: “part (1) implies part (4): a surjective etale chart of the base over which the pullback is a scheme with ample pullback”.
+**`AlgebraicGeometry.Space.exists_etaleChart_isAmpleOnBaseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L140). The attribute's comment: “part (1) implies part (4): a surjective etale chart of the base over which the pullback is a scheme with ample pullback”.
 
 > **Stacks 0D36, part (1) implies part (4).** A module ample relative to `f : X ⟶ Y` admits a
 > scheme `V` of the site and a surjective étale morphism `yoneda.obj V ⟶ Y` over which the base
@@ -314,7 +248,7 @@ theorem exists_etaleChart_isAmpleOnBaseChange_of_isRelativelyAmple
       IsAmpleOnBaseChange B S hS f L V g
 ```
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_of_forall_affine_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L162). The attribute's comment: “part (3) implies the REPRESENTABILITY clause of part (2) — every base change to a scheme is a scheme — unconditionally. The ampleness clause of that implication is not proved here; see `isRelativelyAmple_tfae_of_isInvertible`”.
+**`AlgebraicGeometry.Space.relativelyRepresentable_of_forall_affine_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteria.lean#L164). The attribute's comment: “part (3) implies the REPRESENTABILITY clause of part (2) — every base change to a scheme is a scheme — unconditionally. The ampleness clause of that implication is not proved here; see `isRelativelyAmple_tfae_of_isInvertible`”.
 
 > **Stacks 0D36, the schematic half of part (3) implies part (2).** If the base change of
 > `f : X ⟶ Y` along every affine object of the site is a scheme, then the base change of `f` along
@@ -332,7 +266,7 @@ theorem relativelyRepresentable_of_forall_affine_isAmpleOnBaseChange
     yoneda.relativelyRepresentable f.hom
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_tfae_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteriaComplete.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteriaComplete.lean#L472).
+**`AlgebraicGeometry.Space.isRelativelyAmple_tfae_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteriaComplete.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleBaseChangeCriteriaComplete.lean#L473).
 
 > **Stacks 0D36.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` and `L` an
 > invertible `𝒪_X`-module. The following are equivalent:
@@ -378,7 +312,7 @@ theorem isRelativelyAmple_tfae_of_isInvertible {X Y : AlgebraicSpaces B S hS} (f
 
 [Tag 0GUQ](https://stacks.math.columbia.edu/tag/0GUQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiAffineHom_iff_isRelativelyAmple_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L311). References: EGA II (5.1.6), “more general”.
+**`AlgebraicGeometry.Space.isQuasiAffineHom_iff_isRelativelyAmple_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmple.lean#L311). References: EGA II (5.1.6), “more general”.
 
 > **Stacks 0GUQ.** A morphism `f : X ⟶ Y` of algebraic spaces is quasi-affine if and only if
 > the structure sheaf `𝒪_X` is `f`-relatively ample.
@@ -405,4 +339,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.14, Tag 0D30](https://stacks.math.columbia.edu/tag/0D30)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

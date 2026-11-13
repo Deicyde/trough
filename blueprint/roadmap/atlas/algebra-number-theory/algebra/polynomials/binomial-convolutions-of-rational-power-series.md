@@ -7,7 +7,7 @@ statement: formalized
 
 # Binomial convolutions of rational power series
 
-15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html).
+15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html).
 
 ## Binomial (Hurwitz) product of power series
 
@@ -19,7 +19,7 @@ power series $\sum_n c_n X^n$ with $c_n = \sum_{k=0}^{n} \binom{n}{k} a_k b_{n-k
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, equation (1).
 
-Formalized by `MetaMathlibExt.binomialProduct`, a definition declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product).
+Formalized by `MetaMathlibExt.binomialProduct`, a definition declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product).
 
 ## Coefficients of the binomial product
 
@@ -32,7 +32,7 @@ $\sum_{k=0}^{n} \binom{n}{k} a_k b_{n-k}$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, equation (1).
 
-Formalized by `MetaMathlibExt.coeff_binomialProduct`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#coeff-binomial-product).
+Formalized by `MetaMathlibExt.coeff_binomialProduct`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#coeff-binomial-product).
 
 ## Constant coefficient of the binomial product
 
@@ -44,7 +44,7 @@ $B$ is the product of the constant coefficients of $A$ and $B$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, equation (1).
 
-Formalized by `MetaMathlibExt.constantCoeff_binomialProduct`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#constant-coeff-binomial-product).
+Formalized by `MetaMathlibExt.constantCoeff_binomialProduct`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/BinomialProduct.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#constant-coeff-binomial-product).
 
 ## Rationality of power series descends from field extensions
 
@@ -58,7 +58,7 @@ $A Q = P$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 1 (`jis-2024-24.1.3-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.exists_polynomial_quotient_of_extension` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#exists-polynomial-quotient-of-extension).
+Stated but not proved: `MetaMathlibExt.exists_polynomial_quotient_of_extension` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#exists-polynomial-quotient-of-extension).
 
 ## Orthogonal vectors descend from field extensions
 
@@ -72,7 +72,7 @@ $s \in S$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Lemma 3 (`jis-2024-24.1.3-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.exists_orthogonal_of_orthogonal_over_extension` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#exists-orthogonal-of-orthogonal-over-ext).
+Stated but not proved: `MetaMathlibExt.exists_orthogonal_of_orthogonal_over_extension` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#exists-orthogonal-of-orthogonal-over-ext).
 
 ## Binomial product of shifted powers of geometric series
 
@@ -88,7 +88,7 @@ where $\odot$ is the binomial product.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Lemma 4 (`jis-2024-24.1.3-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_X_pow_mul_inv_pow` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-x-pow-mul-inv-pow).
+Stated but not proved: `MetaMathlibExt.binomialProduct_X_pow_mul_inv_pow` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-x-pow-mul-inv-pow).
 
 ## Binomial product with a geometric series
 
@@ -104,7 +104,7 @@ $x/(1 - \beta x)$, which has zero constant term, into $A$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Corollary 5 (`jis-2024-24.1.3-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_inv_one_sub` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-inv-one-sub).
+Stated but not proved: `MetaMathlibExt.binomialProduct_inv_one_sub` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-inv-one-sub).
 
 ## Binomial products of proper rational series
 
@@ -125,7 +125,7 @@ Here $\deg 0 = -\infty$, so $T = 0$ when $mn = 0$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 6 (`jis-2024-24.1.3-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_rational` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-rational).
+Stated but not proved: `MetaMathlibExt.binomialProduct_rational` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-rational).
 
 ## Binomial products of arbitrary rational series
 
@@ -147,7 +147,7 @@ where $\odot$ is the binomial product.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Corollary 7 (`jis-2024-24.1.3-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_rational_general` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-rational-general).
+Stated but not proved: `MetaMathlibExt.binomialProduct_rational_general` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-rational-general).
 
 ## Binomial product with a monomial
 
@@ -162,7 +162,7 @@ where $\odot$ is the binomial product and $d/dx$ is the formal derivative.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Lemma 8 (`jis-2024-24.1.3-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-x-pow).
+Stated but not proved: `MetaMathlibExt.binomialProduct_X_pow` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-x-pow).
 
 ## Resultant identity for pairwise sums
 
@@ -185,7 +185,7 @@ are $f(y) = (1 - y)^m U(x / (1 - y))$ and $g(y) = y^n V(x / y)$, the form used i
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 10 (`jis-2024-24.1.3-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.prod_one_sub_add_eq_resultant` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#prod-one-sub-add-eq-resultant).
+Stated but not proved: `MetaMathlibExt.prod_one_sub_add_eq_resultant` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#prod-one-sub-add-eq-resultant).
 
 ## Binomial square of the Lucas generating function
 
@@ -202,7 +202,7 @@ $\sum_{k=0}^{n} \binom{n}{k} G_k G_{n-k} = 2a^n + 2^n G_n$ for every $n \ge 0$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 11 (`jis-2024-24.1.3-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_lucasV_generatingFunction` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-lucas-v-generating-func).
+Stated but not proved: `MetaMathlibExt.binomialProduct_lucasV_generatingFunction` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-lucas-v-generating-func).
 
 ## Binomial products of series with a cubic denominator
 
@@ -224,7 +224,7 @@ fails for the tribonacci series $x/(1 - x - x^2 - x^3)$, where $A = -1$.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 12 (`jis-2024-24.1.3-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.binomialProduct_cubic_denominator` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-cubic-denominator).
+Stated but not proved: `MetaMathlibExt.binomialProduct_cubic_denominator` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#binomial-product-cubic-denominator).
 
 ## Hadamard products of rational series
 
@@ -241,7 +241,7 @@ $Q(0) \ne 0$ and $\deg P < \deg Q$. If $A$ and $B$ are proper, then so is $A * B
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 13 (`jis-2024-24.1.3-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.hadamardProduct_rational` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#hadamard-product-rational).
+Stated but not proved: `MetaMathlibExt.hadamardProduct_rational` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#hadamard-product-rational).
 
 ## Resultant identity for pairwise products
 
@@ -263,7 +263,7 @@ are $f(y) = U(y)$ and $g(y) = y^n V(x / y)$, the form used in the source.
 
 - Ira M. Gessel and Ishan Kar, *Binomial Convolutions for Rational Power Series*, Journal of Integer Sequences 27 (2024), Article 24.1.3, Theorem 14 (`jis-2024-24.1.3-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.prod_one_sub_mul_eq_resultant` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#prod-one-sub-mul-eq-resultant).
+Stated but not proved: `MetaMathlibExt.prod_one_sub_mul_eq_resultant` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/BinomialConvolutionRationalWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html#prod-one-sub-mul-eq-resultant).
 
 ## Depends on
 
@@ -272,4 +272,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial convolutions of rational power series](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/binomial-convolutions-of-rational-power-series)

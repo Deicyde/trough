@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.24 Explicit description of quotient stacks
 
-Section 78.24 of the Stacks Project, [Tag 04MB](https://stacks.math.columbia.edu/tag/04MB). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.24 of the Stacks Project, [Tag 04MB](https://stacks.math.columbia.edu/tag/04MB). 1 tag here is carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 044X, a lemma
 
 [Tag 044X](https://stacks.math.columbia.edu/tag/044X) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.essImage_toQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStack.lean#L217). The attribute's comment: “part (1): local representatives”.
+**`AlgebraicGeometry.Stack.essImage_toQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStack.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStack.lean#L217). The attribute's comment: “part (1): local representatives”.
 
 > Every object of the quotient locally comes from the pointwise groupoid presentation: clause
 > (2) of Stacks 02ZN for this witness, and part (1) of Stacks 044X.
@@ -29,7 +29,7 @@ theorem essImage_toQuotientStack
           (Functor.pullbackFiber (quotientStack G).p x f)
 ```
 
-**`AlgebraicGeometry.Stack.fullyFaithful_fiberFunctor_toQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/FibreFullFaithfulness.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/FibreFullFaithfulness.lean#L57). The attribute's comment: “part (2): transition arrows”.
+**`AlgebraicGeometry.Stack.fullyFaithful_fiberFunctor_toQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/FibreFullFaithfulness.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/FibreFullFaithfulness.lean#L57). The attribute's comment: “part (2): transition arrows”.
 
 > **Stacks 044X**, part (2). A transition isomorphism between two objects of a fibre of the
 > quotient stack that come from points of the object space is the image under `π` of a unique
@@ -44,7 +44,7 @@ theorem fullyFaithful_fiberFunctor_toQuotientStack
       (isFibredOneMorphism_toQuotientStack G).comp_eq T).FullyFaithful
 ```
 
-**`AlgebraicGeometry.Stack.presentingDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L307). The attribute's comment: “parts (2) and (3): projection of presenting data”.
+**`AlgebraicGeometry.Stack.presentingDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L307). The attribute's comment: “parts (2) and (3): projection of presenting data”.
 
 > **Stacks 044X**, parts (2) and (3). The functor on descent data relative to a fixed covering
 > of a test object induced by the canonical 1-morphism `π : 𝒮_U ⟶ [U/R]`: a system `(u i, r i j)`
@@ -62,7 +62,7 @@ noncomputable def presentingDescentFunctor
       Functor.FamilyDescentDatum (quotientStack G).p 𝒰
 ```
 
-**`AlgebraicGeometry.Stack.presentingDescentFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L401). The attribute's comment: “part (2): local components”.
+**`AlgebraicGeometry.Stack.presentingDescentFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L401). The attribute's comment: “part (2): local components”.
 
 > **Stacks 044X**, part (2). The local objects of the projected descent datum are the images
 > under `π` of the local points of the object space.
@@ -79,7 +79,7 @@ theorem presentingDescentFunctor_obj
         (𝒰.X i)).obj (D.obj i)
 ```
 
-**`AlgebraicGeometry.Stack.presentingDescentFunctor_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L416). The attribute's comment: “part (2): transition specification”.
+**`AlgebraicGeometry.Stack.presentingDescentFunctor_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L416). The attribute's comment: “part (2): transition specification”.
 
 > **Stacks 044X**, part (2). The transition isomorphism of the projected descent datum on an
 > overlap is the image under `π` of the arrow of the arrow space, conjugated by the canonical
@@ -104,7 +104,7 @@ theorem presentingDescentFunctor_hom
         (D.obj j) b).inv)
 ```
 
-**`AlgebraicGeometry.Stack.presentingDescentFunctor_map_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L436). The attribute's comment: “part (5): local arrows of the projected morphism”.
+**`AlgebraicGeometry.Stack.presentingDescentFunctor_map_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L436). The attribute's comment: “part (5): local arrows of the projected morphism”.
 
 > **Stacks 044X**, part (5). On morphisms the projection applies `π` to each local arrow of
 > the arrow space.
@@ -121,7 +121,7 @@ theorem presentingDescentFunctor_map_hom
         (𝒰.X i)).map (f.hom i))
 ```
 
-**`AlgebraicGeometry.Stack.exists_presentingDescentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L712). The attribute's comment: “parts (1)–(3): local presenting descent datum”.
+**`AlgebraicGeometry.Stack.exists_presentingDescentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L712). The attribute's comment: “parts (1)–(3): local presenting descent datum”.
 
 > **Stacks 044X**, parts (1)–(3). Every object `x` of a fibre of the quotient stack is, after
 > an fppf covering of the test object, the projection of a descent datum for the pointwise
@@ -144,7 +144,7 @@ theorem exists_presentingDescentDatum
           (presentingDescentFunctor G 𝒰).obj D)
 ```
 
-**`AlgebraicGeometry.Stack.effective_presentingDescentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L736). The attribute's comment: “part (4): effectivity”.
+**`AlgebraicGeometry.Stack.effective_presentingDescentDatum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L736). The attribute's comment: “part (4): effectivity”.
 
 > **Stacks 044X**, part (4). Every descent datum for the pointwise groupoid presentation
 > relative to an fppf covering arises as in parts (1)–(3): its projection is the canonical descent
@@ -163,7 +163,7 @@ theorem effective_presentingDescentDatum
           (presentingDescentFunctor G 𝒰).obj D)
 ```
 
-**`AlgebraicGeometry.Stack.fullyFaithful_presentingDescentFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L754). The attribute's comment: “part (5): morphisms of presenting data”.
+**`AlgebraicGeometry.Stack.fullyFaithful_presentingDescentFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 754](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L754). The attribute's comment: “part (5): morphisms of presenting data”.
 
 > **Stacks 044X**, part (5). For a fixed covering the projection is fully faithful on descent
 > data for the presentation: a morphism of the projected data is the image of a unique compatible
@@ -176,7 +176,7 @@ theorem fullyFaithful_presentingDescentFunctor
     Nonempty (presentingDescentFunctor G 𝒰).FullyFaithful
 ```
 
-**`AlgebraicGeometry.Stack.homEquiv_presentingDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L796). The attribute's comment: “part (5): canonical bijection”.
+**`AlgebraicGeometry.Stack.homEquiv_presentingDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L796). The attribute's comment: “part (5): canonical bijection”.
 
 > **Stacks 044X**, part (5). The canonical bijection between the morphisms `x ⟶ y` of a fibre
 > of the quotient stack and the morphisms of the descent data for the presentation that represent
@@ -200,7 +200,7 @@ noncomputable def homEquiv_presentingDescentDatum
         (Functor.toFamilyDescentDatum (quotientStack G).p 𝒰).map f ≫ ε.hom}
 ```
 
-**`AlgebraicGeometry.Stack.presentingDescentFunctor_refinementIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 845](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L845). The attribute's comment: “part (6): refinement compatibility”.
+**`AlgebraicGeometry.Stack.presentingDescentFunctor_refinementIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean, line 904](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/PresentingDescentData.lean#L904). The attribute's comment: “part (6): refinement compatibility”.
 
 > **Stacks 044X**, part (6). The correspondence of parts (1)–(5) is compatible with refinement
 > of the fppf covering: projecting a descent datum for the presentation and then pulling it back
@@ -226,4 +226,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.24, Tag 04MB](https://stacks.math.columbia.edu/tag/04MB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

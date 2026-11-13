@@ -7,7 +7,7 @@ statement: formalized
 
 # Von Neumann bicommutant theorem
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html).
 
 ## Finite-dimensional bicommutant theorem
 
@@ -20,7 +20,7 @@ with all elements of $S$ if and only if it lies in $S$.
 
 - John von Neumann, "Zur Algebra der Funktionaloperationen und Theorie der normalen Operatoren", Mathematische Annalen 102 (1930), 370--427, DOI 10.1007/BF01782352. This is the finite-dimensional specialization: in finite dimension every subspace is closed, so the strong-operator closure condition of the general theorem is vacuous.
 
-Formalized by `MathlibExt.Analysis.CStarAlgebra.Bicommutant.bicommutant_finiteDimensional_matrix`, a theorem declared in [MathlibExt/Analysis/CStarAlgebra/Bicommutant.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/CStarAlgebra/Bicommutant.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html#bicommutant-finite-dimensional-matrix).
+Formalized by `MathlibExt.Analysis.CStarAlgebra.Bicommutant.bicommutant_finiteDimensional_matrix`, a theorem declared in [MathlibExt/Analysis/CStarAlgebra/Bicommutant.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/CStarAlgebra/Bicommutant.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html#bicommutant-finite-dimensional-matrix).
 
 ## Von Neumann's double commutant theorem
 
@@ -35,7 +35,7 @@ convergence on $H$.
 
 - J. von Neumann, *Zur Algebra der Funktionaloperationen und Theorie der normalen Operatoren*, Math. Ann. 102 (1929) (double commutant theorem). Problem `vonneumann_double_commutant` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.VonNeumannDoubleCommutantWanted.Analysis.vonNeumann_doubleCommutant_tfae` is written with `theorem_wanted` in [WantedExt/Analysis/VonNeumannDoubleCommutantWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/VonNeumannDoubleCommutantWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html#von-neumann-double-commutant-tfae).
+Stated but not proved: `MathlibExt.Analysis.VonNeumannDoubleCommutantWanted.Analysis.vonNeumann_doubleCommutant_tfae` is written with `theorem_wanted` in [WantedExt/Analysis/VonNeumannDoubleCommutantWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/VonNeumannDoubleCommutantWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html#von-neumann-double-commutant-tfae).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Von Neumann bicommutant theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-algebras/von-neumann-bicommutant-theorem)

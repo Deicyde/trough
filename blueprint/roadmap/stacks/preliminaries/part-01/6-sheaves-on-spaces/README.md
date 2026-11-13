@@ -1,6 +1,6 @@
 # 6 Sheaves on Spaces
 
-Chapter 6 of the Stacks Project, *Sheaves on Spaces*, [Tag 006A](https://stacks.math.columbia.edu/tag/006A): the 30 sections of its 33 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 127 tags are carried by 234 declarations of the repository (all in StacksFrontier) and 74 registered declarations.
+Chapter 6 of the Stacks Project, *Sheaves on Spaces*, [Tag 006A](https://stacks.math.columbia.edu/tag/006A): the 30 sections of its 33 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 127 tags are carried by 268 declarations of the repository (all in StacksFrontier) and 76 registered declarations.
 
 ## [6.3 Presheaves to 6.22 Continuous maps and…](part-01/README.md)
 

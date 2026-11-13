@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of consecutive squares
 
-10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html).
+10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html).
 
 ## The sum of consecutive squares equation
 
@@ -22,7 +22,7 @@ $P_n - P_{n-1} = n^2$. No order or sign condition on $a$, $b$, $c$ is imposed.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, equations (1) and (2).
 
-Formalized by `MetaMathlibExt.SoCSEq`, a definition declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cseq).
+Formalized by `MetaMathlibExt.SoCSEq`, a definition declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cseq).
 
 ## Solutions of the sum of consecutive squares problem
 
@@ -35,7 +35,7 @@ $(a+1)^2 + \dots + b^2 = (b+1)^2 + \dots + c^2$.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Section 1.
 
-Formalized by `MetaMathlibExt.IsSoCSSolution`, a definition declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#is-so-cssolution).
+Formalized by `MetaMathlibExt.IsSoCSSolution`, a definition declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#is-so-cssolution).
 
 ## $(2, 4, 5)$ solves the sum of consecutive squares problem
 
@@ -46,7 +46,7 @@ solution of the sum of consecutive squares problem: $0 < 3 < 4 < 5$ and $3^2 + 4
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Section 1.
 
-Formalized by `MetaMathlibExt.isSoCSSolution_two_four_five`, a theorem declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#is-so-cssolution-two-four-five).
+Formalized by `MetaMathlibExt.isSoCSSolution_two_four_five`, a theorem declared in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#is-so-cssolution-two-four-five).
 
 ## Bounds on the ratio of the two spans
 
@@ -57,7 +57,7 @@ consecutive squares problem, $1 < (b - a)/(c - b) < 1 + 2^{1/3} + 2^{2/3}$.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.soCS_ratio_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-ratio-bounds).
+Stated but not proved: `MetaMathlibExt.soCS_ratio_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-ratio-bounds).
 
 ## The Pell-type parameter is a positive nonsquare
 
@@ -70,7 +70,7 @@ perfect square.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 1, verified against arXiv:2411.08398 (the formula is garbled in the statement extraction).
 
-Stated but not proved: `MetaMathlibExt.soCS_pell_param_pos_nonsquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-pell-param-pos-nonsquare).
+Stated but not proved: `MetaMathlibExt.soCS_pell_param_pos_nonsquare` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-pell-param-pos-nonsquare).
 
 ## Infinite families of solutions in a plane
 
@@ -84,7 +84,7 @@ $(b - c)x + (c - a)y + (a - b)z = 0$ and $z - x \equiv c - a \pmod 2$.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.soCS_infinite_family_plane` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-infinite-family-plane).
+Stated but not proved: `MetaMathlibExt.soCS_infinite_family_plane` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-infinite-family-plane).
 
 ## Solutions with odd span $c - a$
 
@@ -101,7 +101,7 @@ of this statement.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 2, verified against arXiv:2411.08398.
 
-Stated but not proved: `MetaMathlibExt.soCS_odd_span` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-odd-span).
+Stated but not proved: `MetaMathlibExt.soCS_odd_span` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-odd-span).
 
 ## Infinitely many solutions with $c - a$ even
 
@@ -112,7 +112,7 @@ $(a, b, c)$ of the sum of consecutive squares problem with $c - a$ even.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.soCS_even_span_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-even-span-infinite).
+Stated but not proved: `MetaMathlibExt.soCS_even_span_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-even-span-infinite).
 
 ## At most $2(N - 1)$ solutions with $c - a = N$
 
@@ -124,7 +124,7 @@ with $c - a = N$.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.soCS_card_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-card-le).
+Stated but not proved: `MetaMathlibExt.soCS_card_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-card-le).
 
 ## No finitely many planes contain all solutions
 
@@ -137,7 +137,7 @@ $S$, that is, $ua + vb + wc \ne t$ for every plane in $S$.
 
 - Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 2; the proof text appended to the extracted statement is not part of the claim.
 
-Stated but not proved: `MetaMathlibExt.soCS_not_finite_planes` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-not-finite-planes).
+Stated but not proved: `MetaMathlibExt.soCS_not_finite_planes` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutiveSquaresWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html#so-cs-not-finite-planes).
 
 ## Depends on
 
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of consecutive squares](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/pell-quadratic-equations/sums-of-consecutive-squares)

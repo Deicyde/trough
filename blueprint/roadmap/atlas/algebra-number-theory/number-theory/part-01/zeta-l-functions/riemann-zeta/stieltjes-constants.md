@@ -8,7 +8,7 @@ proof: formalized
 
 # Stieltjes constants
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html).
 
 ## Stieltjes constants exist, and the zeroth is Euler's constant
 
@@ -24,7 +24,7 @@ and $c_0 = \gamma$, where $\gamma$ is Euler's constant.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 13.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry13Bernoullipolyadd.ramanujan_part1_ch7_entry13_bernoullipolyadd`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullipolyadd.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullipolyadd.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry13-bernoullipol).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry13Bernoullipolyadd.ramanujan_part1_ch7_entry13_bernoullipolyadd`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullipolyadd.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullipolyadd.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry13-bernoullipol).
 
 ## Laurent expansion of $\zeta$ at $s = 1$
 
@@ -40,7 +40,7 @@ converges absolutely, and its sum is $\zeta(s) - \frac{1}{s-1}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 13.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry13Bernoullirecurrence.ramanujan_part1_ch7_entry13_bernoullirecurrence`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullirecurrence.lean, line 1016](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullirecurrence.lean#L1016). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry13-bernoullirec).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry13Bernoullirecurrence.ramanujan_part1_ch7_entry13_bernoullirecurrence`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullirecurrence.lean, line 1016](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry13Bernoullirecurrence.lean#L1016). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry13-bernoullirec).
 
 ## Expansion of $\sum 1/(n^{s+1} \log n)$ in the Stieltjes constants
 
@@ -66,7 +66,7 @@ derivatives agree on $s > 0$, and the two sides agree at $s = 1$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoulliasymptotic.ramanujan_part1_ch7_entry14_bernoulliasymptotic`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoulliasymptotic.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoulliasymptotic.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry14-bernoulliasy).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoulliasymptotic.ramanujan_part1_ch7_entry14_bernoulliasymptotic`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoulliasymptotic.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoulliasymptotic.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry14-bernoulliasy).
 
 ## Two definitions of the normalized Stieltjes coefficients agree
 
@@ -75,14 +75,14 @@ $(c_k)_{k \ge 0}$, the coefficients $A_k = (-1)^k c_k / k!$ defined for the asym
 $\sum 1/(n(n^x - 1))$ are, by definition, the coefficients $A_k$ used in the expansion of
 $\sum 1/(n^{s+1} \log n)$ in the Stieltjes constants.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.chapter7StieltjesA_eq_entry14Bernoulliasymptotic`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#chapter7-stieltjes-a-eq-entry14-bernoull).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.chapter7StieltjesA_eq_entry14Bernoulliasymptotic`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#chapter7-stieltjes-a-eq-entry14-bernoull).
 
 ## Convergence of $\sum 1/(n(n^x - 1))$
 
 For every real $x > 0$ the series
 $\sum_{n \ge 2} \frac{1}{n(n^x - 1)}$ converges absolutely.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.summable_chapter7Entry14Term`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#summable-chapter7-entry14-term).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.summable_chapter7Entry14Term`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#summable-chapter7-entry14-term).
 
 ## Two definitions of the Stieltjes approximants agree
 
@@ -91,7 +91,7 @@ $\sum_{j=1}^{m} (\log j)^k / j - (\log m)^{k+1} / (k+1)$ defined for the asympto
 $\sum 1/(n(n^x - 1))$ is, by definition, the approximant used for the existence of the Stieltjes
 constants.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.chapter7StieltjesApprox_eq_entry13Bernoullipolyadd`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 581](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L581). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#chapter7-stieltjes-approx-eq-entry13-ber).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.chapter7StieltjesApprox_eq_entry13Bernoullipolyadd`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 581](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L581). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#chapter7-stieltjes-approx-eq-entry13-ber).
 
 ## Asymptotic expansion of $\sum 1/(n(n^x - 1))$ as $x \to 0^+$
 
@@ -115,7 +115,7 @@ and a sum-versus-integral error bound, followed by passage to the defining limit
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.ramanujan_part1_ch7_entry14_bernoullipolymult`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 1021](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L1021). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry14-bernoullipol).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.ramanujan_part1_ch7_entry14_bernoullipolymult`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean, line 1015](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean#L1015). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html#ramanujan-part1-ch7-entry14-bernoullipol).
 
 ## Depends on
 
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stieltjes constants](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stieltjes-constants)

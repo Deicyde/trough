@@ -7,7 +7,7 @@ statement: formalized
 
 # Distribution of Zeckendorf expressions
 
-91 results, 45 proved and 46 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html).
+91 results, 45 proved and 46 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html).
 
 ## Powers of two are the only binary fundamental sequence
 
@@ -20,7 +20,7 @@ $s \subseteq \mathbb{N}$ if and only if $H_k = 2^k$ for all $k$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.bijective_finset_sum_iff_eq_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#bijective-finset-sum-iff-eq-two-pow).
+Stated but not proved: `MetaMathlibExt.bijective_finset_sum_iff_eq_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#bijective-finset-sum-iff-eq-two-pow).
 
 ## The Fibonacci numbers are the only Zeckendorf fundamental sequence
 
@@ -35,7 +35,7 @@ $F_{n+2} = F_{n+1} + F_n$ are the Fibonacci numbers.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.bijective_nonadjacent_finset_sum_iff_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#bijective-nonadjacent-finset-sum-iff-eq).
+Stated but not proved: `MetaMathlibExt.bijective_nonadjacent_finset_sum_iff_eq_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#bijective-nonadjacent-finset-sum-iff-eq).
 
 ## Duality formula for binary expansions without adjacent ones
 
@@ -50,7 +50,7 @@ where $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$ are the Fibonacci numbe
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.card_zeckendorfBinary_lt_sum_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#card-zeckendorf-binary-lt-sum-two-pow).
+Stated but not proved: `MetaMathlibExt.card_zeckendorfBinary_lt_sum_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#card-zeckendorf-binary-lt-sum-two-pow).
 
 ## Ascending lexicographic order
 
@@ -63,7 +63,7 @@ where they differ, $\mu$ is smaller.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.AscLexLT`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#asc-lex-lt).
+Formalized by `MetaMathlibExt.AscLexLT`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#asc-lex-lt).
 
 ## Example of the ascending lexicographic order
 
@@ -76,7 +76,7 @@ order: the largest index where they differ is $3$, where $3 < 4$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2, example).
 
-Formalized by `MetaMathlibExt.ascLexLT_example`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#asc-lex-lt-example).
+Formalized by `MetaMathlibExt.ascLexLT_example`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#asc-lex-lt-example).
 
 ## Immediate predecessor
 
@@ -90,7 +90,7 @@ That is, $\mu$ is the largest element of $E$ that is $\lt _a \nu$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.IsImmediatePredecessor`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-immediate-predecessor).
+Formalized by `MetaMathlibExt.IsImmediatePredecessor`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-immediate-predecessor).
 
 ## Immediate successor
 
@@ -104,7 +104,7 @@ That is, $\nu$ is the smallest element of $E$ that is $>_a \mu$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.IsImmediateSuccessor`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-immediate-successor).
+Formalized by `MetaMathlibExt.IsImmediateSuccessor`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-immediate-successor).
 
 ## Zeckendorf collections
 
@@ -123,7 +123,7 @@ predecessor of $\beta^n$ in $E$ and $\tilde\mu = \beta^n + \operatorname{res}^n(
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.IsZeckendorfCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-zeckendorf-collection).
+Formalized by `MetaMathlibExt.IsZeckendorfCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-zeckendorf-collection).
 
 ## Zeckendorf collections contain zero
 
@@ -134,7 +134,7 @@ coefficient functions $\mathbb N \to \mathbb N$ contains the zero coefficient fu
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.IsZeckendorfCollection.zero_mem`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zero-mem).
+Formalized by `MetaMathlibExt.IsZeckendorfCollection.zero_mem`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zero-mem).
 
 ## The maximal $L$-block $\theta^{m+1}$
 
@@ -153,7 +153,7 @@ followed by zeros.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 10 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.periodicTheta`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-theta).
+Formalized by `MetaMathlibExt.periodicTheta`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-theta).
 
 ## The maximal block $\theta^4$ in the Fibonacci case
 
@@ -165,7 +165,7 @@ entries from index $3$ on are $0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 10 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.periodicTheta_one_zero_three`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-theta-one-zero-three).
+Formalized by `MetaMathlibExt.periodicTheta_one_zero_three`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-theta-one-zero-three).
 
 ## L-blocks
 
@@ -181,7 +181,7 @@ In the paper's indexing this is a block at index $n - 1$ with $n = m + 1 \ge 2$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 10 (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.IsLBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lblock).
+Formalized by `MetaMathlibExt.IsLBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lblock).
 
 ## Periodic Zeckendorf collection
 
@@ -195,7 +195,7 @@ pairwise disjoint.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 and the definition following it (arXiv:2308.12872v1, Section 2.2).
 
-Formalized by `MetaMathlibExt.periodicZeckendorfCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-zeckendorf-collection).
+Formalized by `MetaMathlibExt.periodicZeckendorfCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#periodic-zeckendorf-collection).
 
 ## Evaluation of a coefficient function at an integer sequence
 
@@ -208,7 +208,7 @@ natural number $\mathrm{eval}_H(\varepsilon) = \sum_{k \ge 0} \varepsilon_k H_k$
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 1 (arXiv:2308.12872v1, Section 1).
 
-Formalized by `MetaMathlibExt.zeckendorfEval`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-eval).
+Formalized by `MetaMathlibExt.zeckendorfEval`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-eval).
 
 ## Zeckendorf collections are determined by their immediate predecessors
 
@@ -224,7 +224,7 @@ $E$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 3 (arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).
 
-Stated but not proved: `MetaMathlibExt.existsUnique_zeckendorfCollection` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-zeckendorf-collection).
+Stated but not proved: `MetaMathlibExt.existsUnique_zeckendorfCollection` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-zeckendorf-collection).
 
 ## Periodic collections are Zeckendorf collections
 
@@ -239,7 +239,7 @@ $n \ge 2$ the immediate predecessor of $\beta^n$ in $E$ is the maximal $L$-block
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 4 (arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).
 
-Stated but not proved: `MetaMathlibExt.isZeckendorfCollection_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-zeckendorf-collection-periodic).
+Stated but not proved: `MetaMathlibExt.isZeckendorfCollection_periodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-zeckendorf-collection-periodic).
 
 ## Fundamental sequences of Zeckendorf collections
 
@@ -257,7 +257,7 @@ if and only if $\mathrm{eval}_H(\mu) < \mathrm{eval}_H(\nu)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 5 (arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).
 
-Stated but not proved: `MetaMathlibExt.existsUnique_zeckendorf_fundamentalSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-zeckendorf-fundamental-seq).
+Stated but not proved: `MetaMathlibExt.existsUnique_zeckendorf_fundamentalSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-zeckendorf-fundamental-seq).
 
 ## Criterion for one Zeckendorf collection to contain another
 
@@ -272,7 +272,7 @@ $\hat\beta^n \in \tilde E$ for all $n \ge 2$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 1 (arXiv:2308.12872v1, Section 2.2).
 
-Stated but not proved: `MetaMathlibExt.zeckendorfCollection_subset_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-collection-subset-iff).
+Stated but not proved: `MetaMathlibExt.zeckendorfCollection_subset_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-collection-subset-iff).
 
 ## Counting function of a subcollection
 
@@ -285,7 +285,7 @@ $n = \sum_k \mu_k H_k$ for some $\mu \in E$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1 and Section 3 (arXiv:2308.12872v1, Sections 1 and 3.2).
 
-Formalized by `MetaMathlibExt.subcollectionCount`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count).
+Formalized by `MetaMathlibExt.subcollectionCount`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count).
 
 ## The counting function $z$ vanishes for $x \le 0$
 
@@ -298,7 +298,7 @@ $z(x) = 0$ for every real $x \le 0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 3 (arXiv:2308.12872v1, Section 3.2).
 
-Formalized by `MetaMathlibExt.subcollectionCount_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count-of-nonpos).
+Formalized by `MetaMathlibExt.subcollectionCount_of_nonpos`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count-of-nonpos).
 
 ## Power-law bounds for the subcollection count
 
@@ -315,7 +315,7 @@ such that $a < z(x) / x^\gamma < b$ for all sufficiently large real $x$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1 (arXiv:2308.12872v1, Section 1, with the standing assumption of Section 3 that `E` is a proper subcollection).
 
-Stated but not proved: `MetaMathlibExt.exists_rpow_bounds_subcollectionCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-rpow-bounds-subcollection-count).
+Stated but not proved: `MetaMathlibExt.exists_rpow_bounds_subcollectionCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-rpow-bounds-subcollection-count).
 
 ## Limsup of the count of binary expansions without adjacent ones
 
@@ -328,7 +328,7 @@ $\limsup_{x \to \infty} z(x) / x^{\gamma} = 3^{\gamma} (\varphi + 2) / 5$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1, Equation (1) (arXiv:2308.12872v1, Section 1).
 
-Stated but not proved: `MetaMathlibExt.limsup_zeckendorfBinaryCount_div_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#limsup-zeckendorf-binary-count-div-rpow).
+Stated but not proved: `MetaMathlibExt.limsup_zeckendorfBinaryCount_div_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#limsup-zeckendorf-binary-count-div-rpow).
 
 ## Liminf of the count of binary expansions without adjacent ones
 
@@ -341,7 +341,7 @@ $\liminf_{x \to \infty} z(x) / x^{\gamma} = (3\varphi + 1) / 5$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1, Equation (1) (arXiv:2308.12872v1, Section 1).
 
-Stated but not proved: `MetaMathlibExt.liminf_zeckendorfBinaryCount_div_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#liminf-zeckendorf-binary-count-div-rpow).
+Stated but not proved: `MetaMathlibExt.liminf_zeckendorfBinaryCount_div_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#liminf-zeckendorf-binary-count-div-rpow).
 
 ## Asymptotic form of the subcollection count
 
@@ -360,7 +360,7 @@ fractional part of $t$, and $\Phi$ is differentiable at almost every point of $(
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 2 (arXiv:2308.12872v1, Section 1).
 
-Stated but not proved: `MetaMathlibExt.exists_isEquivalent_subcollectionCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-is-equivalent-subcollection-count).
+Stated but not proved: `MetaMathlibExt.exists_isEquivalent_subcollectionCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-is-equivalent-subcollection-count).
 
 ## Growth of fundamental sequences
 
@@ -380,7 +380,7 @@ $H_n / \tilde H_n^{\gamma} \to \alpha / \tilde\alpha^{\gamma}$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 7 (arXiv:2308.12872v1, Section 3.1).
 
-Stated but not proved: `MetaMathlibExt.fundamentalSequence_div_rpow_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#fundamental-sequence-div-rpow-tendsto).
+Stated but not proved: `MetaMathlibExt.fundamentalSequence_div_rpow_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#fundamental-sequence-div-rpow-tendsto).
 
 ## Reduction lemma for counting a subcollection
 
@@ -398,7 +398,7 @@ Then $R(\sum_k \mu_k \tilde H_k) = R(\sum_k \bar\mu_k \tilde H_k)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 7 (arXiv:2308.12872v1, Section 3.2, with the paper's definition of `μ̌` and `μ̄` there).
 
-Stated but not proved: `MetaMathlibExt.subcollectionLT_eval_eq_eval_bar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-lt-eval-eq-eval-bar).
+Stated but not proved: `MetaMathlibExt.subcollectionLT_eval_eq_eval_bar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-lt-eval-eq-eval-bar).
 
 ## Duality formula
 
@@ -416,7 +416,7 @@ $z\left(\sum_k \mu_k \tilde H_k\right) = \sum_k \bar\mu_k H_k$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 8 (arXiv:2308.12872v1, Section 3.2).
 
-Stated but not proved: `MetaMathlibExt.subcollectionCount_eval_eq_eval_bar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count-eval-eq-eval-bar).
+Stated but not proved: `MetaMathlibExt.subcollectionCount_eval_eq_eval_bar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subcollection-count-eval-eq-eval-bar).
 
 ## Descending lexicographic order
 
@@ -430,7 +430,7 @@ $\varepsilon$ is smaller.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.DescLexLT`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#desc-lex-lt).
+Formalized by `MetaMathlibExt.DescLexLT`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#desc-lex-lt).
 
 ## The maximal $L^*$-block
 
@@ -444,7 +444,7 @@ $\bar\beta^{s+1}$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.maxLStarBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block).
+Formalized by `MetaMathlibExt.maxLStarBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block).
 
 ## The maximal block $\bar\beta^2$ for $L = (2, 3, 0)$
 
@@ -456,7 +456,7 @@ $0, 2, 3, 0, 2$ at the indices $0, 1, 2, 3, 4$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3, example).
 
-Formalized by `MetaMathlibExt.maxLStarBlock_example`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block-example).
+Formalized by `MetaMathlibExt.maxLStarBlock_example`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block-example).
 
 ## Proper $L^*$-blocks
 
@@ -470,7 +470,7 @@ and $\zeta_i = 0$ for all $i > k$. Since $\bar\beta^s$ vanishes below $s$, so do
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.IsProperLStarBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-proper-lstar-block).
+Formalized by `MetaMathlibExt.IsProperLStarBlock`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-proper-lstar-block).
 
 ## Sums of disjoint proper $L^\ast$-blocks
 
@@ -488,7 +488,7 @@ none of the intervals.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.IsLStarBlockSum`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lstar-block-sum).
+Formalized by `MetaMathlibExt.IsLStarBlockSum`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lstar-block-sum).
 
 ## The periodic collection $E^*$
 
@@ -502,7 +502,7 @@ $(0, 1)$ determined by $L$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.lStarCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-collection).
+Formalized by `MetaMathlibExt.lStarCollection`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-collection).
 
 ## The zero function is not in the periodic Zeckendorf collection for $(0, 1)$
 
@@ -514,7 +514,7 @@ belong to the periodic Zeckendorf collection $E^*$ for the interval $(0, 1)$ det
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.zero_notMem_lStarCollection`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zero-not-mem-l-star-collection).
+Formalized by `MetaMathlibExt.zero_notMem_lStarCollection`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zero-not-mem-l-star-collection).
 
 ## Real Zeckendorf expansions
 
@@ -534,7 +534,7 @@ $Q_m = \omega^{m+1}$ for every $m$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 6 (arXiv:2308.12872v1, Section 2.3, quoting Chang 2021).
 
-Stated but not proved: `MetaMathlibExt.existsUnique_lStar_fundamentalSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-l-star-fundamental-sequenc).
+Stated but not proved: `MetaMathlibExt.existsUnique_lStar_fundamentalSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-unique-l-star-fundamental-sequenc).
 
 ## The coefficient function $\inf(\varepsilon)$
 
@@ -555,7 +555,7 @@ $\bar\beta^{c+2}$ is the maximal $L^*$-block starting at index $c + 2$ (all in p
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.lStarInf`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-inf).
+Formalized by `MetaMathlibExt.lStarInf`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-inf).
 
 ## $\inf(\varepsilon) = \varepsilon$ for infinite support
 
@@ -568,7 +568,7 @@ $\inf(\varepsilon) = \varepsilon$, where $\inf$ is taken with respect to $L$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2 (arXiv:2308.12872v1, Section 2.3).
 
-Formalized by `MetaMathlibExt.lStarInf_of_infinite_support`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-inf-of-infinite-support).
+Formalized by `MetaMathlibExt.lStarInf_of_infinite_support`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-inf-of-infinite-support).
 
 ## $\varepsilon$ and $\inf(\varepsilon)$ have the same value
 
@@ -588,7 +588,7 @@ $\varepsilon \in E^*$ satisfies $\sum_k \varepsilon_k Q_k = \sum_k \inf(\varepsi
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 4 (arXiv:2308.12872v1, Section 2.3).
 
-Stated but not proved: `MetaMathlibExt.tsum_lStarInf_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#tsum-l-star-inf-mul-eq).
+Stated but not proved: `MetaMathlibExt.tsum_lStarInf_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#tsum-l-star-inf-mul-eq).
 
 ## Nearby expansions share long prefixes
 
@@ -610,7 +610,7 @@ satisfies $\varepsilon'_i = \inf(\varepsilon)_i$ for all $i \le n$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 5 (arXiv:2308.12872v1, Section 2.3).
 
-Stated but not proved: `MetaMathlibExt.exists_prefix_eq_of_lStar_near` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-prefix-eq-of-l-star-near).
+Stated but not proved: `MetaMathlibExt.exists_prefix_eq_of_lStar_near` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-prefix-eq-of-l-star-near).
 
 ## Proper blocks below a maximal block
 
@@ -625,7 +625,7 @@ $i > k$ is a proper $L^*$-block with support interval $[b, k]$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 8 (arXiv:2308.12872v1, Section 3.3).
 
-Stated but not proved: `MetaMathlibExt.descLexLT_maxLStarBlock_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#desc-lex-lt-max-lstar-block-iff).
+Stated but not proved: `MetaMathlibExt.descLexLT_maxLStarBlock_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#desc-lex-lt-max-lstar-block-iff).
 
 ## Decomposing $L^*$-blocks into $\tilde L^*$-blocks
 
@@ -639,7 +639,7 @@ support intervals all lie in $[0, b]$, one of which has support interval $[a, b]
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 9 (arXiv:2308.12872v1, Section 3.3).
 
-Stated but not proved: `MetaMathlibExt.exists_lStarBlockSum_of_properLStarBlock` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-l-star-block-sum-of-proper-lstar).
+Stated but not proved: `MetaMathlibExt.exists_lStarBlockSum_of_properLStarBlock` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-l-star-block-sum-of-proper-lstar).
 
 ## The tail of an $L^\ast$-block decomposition lies in $\tilde E^\ast$
 
@@ -661,7 +661,7 @@ $\mu \in \tilde E^*$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 2 (arXiv:2308.12872v1, Section 3.3).
 
-Stated but not proved: `MetaMathlibExt.mem_lStarCollection_of_lStarBar_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-l-star-collection-of-l-star-bar-deco).
+Stated but not proved: `MetaMathlibExt.mem_lStarCollection_of_lStarBar_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-l-star-collection-of-l-star-bar-deco).
 
 ## Shifted maximal blocks scale geometrically
 
@@ -682,7 +682,7 @@ $\tilde Q_1 = \tilde\omega$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 16 (arXiv:2308.12872v1, Section 4.1).
 
-Stated but not proved: `MetaMathlibExt.tsum_maxLStarBlock_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#tsum-max-lstar-block-mul-eq).
+Stated but not proved: `MetaMathlibExt.tsum_maxLStarBlock_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#tsum-max-lstar-block-mul-eq).
 
 ## Number of proper $L^*$-blocks with a given support interval
 
@@ -696,7 +696,7 @@ interval $[s, k]$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 15 (arXiv:2308.12872v1, Section 4.1).
 
-Stated but not proved: `MetaMathlibExt.ncard_properLStarBlock` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#ncard-proper-lstar-block).
+Stated but not proved: `MetaMathlibExt.ncard_properLStarBlock` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#ncard-proper-lstar-block).
 
 ## Number of $L^*$-block sums of length $n$
 
@@ -709,7 +709,7 @@ support intervals inside $[1, n]$. The zero function (the empty sum) is counted,
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 4 (arXiv:2308.12872v1, Section 4.1).
 
-Formalized by `MetaMathlibExt.lStarBlockSumCount`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count).
+Formalized by `MetaMathlibExt.lStarBlockSumCount`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count).
 
 ## The empty block-sum count
 
@@ -721,7 +721,7 @@ for $n = 0$ the zero function is the only such sum.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 4 (arXiv:2308.12872v1, Section 4.1, `S_0 = {0}`).
 
-Formalized by `MetaMathlibExt.lStarBlockSumCount_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count-zero).
+Formalized by `MetaMathlibExt.lStarBlockSumCount_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count-zero).
 
 ## Recurrence for the number of $L^*$-block sums
 
@@ -735,7 +735,7 @@ $1 \le k \le N$, and $C_n = \sum_{k=1}^{N-1} e_k C_{n-k} + (1 + e_N) C_{n-N}$ fo
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 4 (arXiv:2308.12872v1, Section 4.1).
 
-Stated but not proved: `MetaMathlibExt.lStarBlockSumCount_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count-recurrence).
+Stated but not proved: `MetaMathlibExt.lStarBlockSumCount_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-block-sum-count-recurrence).
 
 ## Generating function of the $L^\ast$-block-sum counts
 
@@ -751,7 +751,7 @@ sum $(1 - x^N) / f(x)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 5 (arXiv:2308.12872v1, Section 4.1).
 
-Stated but not proved: `MetaMathlibExt.hasSum_lStarBlockSumCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#has-sum-l-star-block-sum-count).
+Stated but not proved: `MetaMathlibExt.hasSum_lStarBlockSumCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#has-sum-l-star-block-sum-count).
 
 ## Periodic Zeckendorf pairs
 
@@ -766,7 +766,7 @@ This is the standing assumption of Sections 3 and 4 of the source.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 3.1.
 
-Formalized by `MetaMathlibExt.IsPeriodicZeckendorfPair`, a structure declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 629](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-periodic-zeckendorf-pair).
+Formalized by `MetaMathlibExt.IsPeriodicZeckendorfPair`, a structure declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 629](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-periodic-zeckendorf-pair).
 
 ## Periodic Zeckendorf pairs are nested
 
@@ -778,7 +778,7 @@ periodic Zeckendorf collection determined by $\tilde L$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 3.1.
 
-Formalized by `MetaMathlibExt.IsPeriodicZeckendorfPair.subset`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subset).
+Formalized by `MetaMathlibExt.IsPeriodicZeckendorfPair.subset`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 640](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L640). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#subset).
 
 ## Evaluation of a coefficient function at a real sequence
 
@@ -791,7 +791,7 @@ $\sum_{k \ge 0} \varepsilon_k Q_k$, taken to be $0$ when the series is not absol
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2.1.
 
-Formalized by `MetaMathlibExt.zeckendorfRealEval`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-real-eval).
+Formalized by `MetaMathlibExt.zeckendorfRealEval`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-real-eval).
 
 ## Evaluating the zero coefficient function
 
@@ -802,7 +802,7 @@ the zero coefficient function at $Q$ is $0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Section 2.1.
 
-Formalized by `MetaMathlibExt.zeckendorfRealEval_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 655](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L655). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-real-eval-zero).
+Formalized by `MetaMathlibExt.zeckendorfRealEval_zero`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 655](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L655). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-real-eval-zero).
 
 ## Fundamental sequence of an $L^\ast$-collection
 
@@ -816,7 +816,7 @@ $(0, 1)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 6 and Definition 18.
 
-Formalized by `MetaMathlibExt.IsLStarFundamentalSequence`, a structure declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lstar-fundamental-sequence).
+Formalized by `MetaMathlibExt.IsLStarFundamentalSequence`, a structure declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-lstar-fundamental-sequence).
 
 ## Fundamental sequences of $E^*$ are positive
 
@@ -828,7 +828,7 @@ $n$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 6.
 
-Formalized by `MetaMathlibExt.IsLStarFundamentalSequence.pos`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#pos).
+Formalized by `MetaMathlibExt.IsLStarFundamentalSequence.pos`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#pos).
 
 ## Reversal of the first $n$ entries
 
@@ -842,7 +842,7 @@ $\mathrm{rev}_n(\varepsilon) = (\varepsilon_n, \dots, \varepsilon_1)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 5.
 
-Formalized by `MetaMathlibExt.zeckendorfRev`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev).
+Formalized by `MetaMathlibExt.zeckendorfRev`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev).
 
 ## Reversal of the first three entries
 
@@ -856,7 +856,7 @@ $\mathrm{rev}_3(\varepsilon) = (\varepsilon_3, \varepsilon_2, \varepsilon_1)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 5.
 
-Formalized by `MetaMathlibExt.zeckendorfRev_three`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-three).
+Formalized by `MetaMathlibExt.zeckendorfRev_three`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-three).
 
 ## The coefficient function $\bar\mu$
 
@@ -871,7 +871,7 @@ successor; otherwise $\bar\mu = 0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 20.
 
-Formalized by `MetaMathlibExt.zeckendorfBar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-bar).
+Formalized by `MetaMathlibExt.zeckendorfBar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 699](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L699). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-bar).
 
 ## The bar of a coefficient function is a successor of its predecessor
 
@@ -889,7 +889,7 @@ $E$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 20.
 
-Formalized by `MetaMathlibExt.zeckendorfBar_spec`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-bar-spec).
+Formalized by `MetaMathlibExt.zeckendorfBar_spec`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-bar-spec).
 
 ## The closure $\bar E^*$ of $E^*$
 
@@ -907,7 +907,7 @@ $b = 0$ gives $\bar\beta^1$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 22.
 
-Formalized by `MetaMathlibExt.lStarClosure`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 720](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L720). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-closure).
+Formalized by `MetaMathlibExt.lStarClosure`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 720](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L720). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-closure).
 
 ## $\bar\beta^1$ lies in $\bar E^*$
 
@@ -920,7 +920,7 @@ which the maximal block starts at index $0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 22.
 
-Formalized by `MetaMathlibExt.maxLStarBlock_zero_mem_lStarClosure`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 728](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L728). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block-zero-mem-l-star-closure).
+Formalized by `MetaMathlibExt.maxLStarBlock_zero_mem_lStarClosure`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 728](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L728). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#max-lstar-block-zero-mem-l-star-closure).
 
 ## The map $\overline{\mathrm{rev}}$
 
@@ -938,7 +938,7 @@ at $i$ when that entry is eventually constant, and $0$ when it is not.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 23.
 
-Formalized by `MetaMathlibExt.zeckendorfRevBar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar).
+Formalized by `MetaMathlibExt.zeckendorfRevBar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar).
 
 ## $\overline{\mathrm{rev}}$ of a function not below $\bar\beta^1$
 
@@ -952,7 +952,7 @@ $\varepsilon \lt _d \bar\beta^1$ fails, $\overline{\mathrm{rev}}(\varepsilon) = 
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 23.
 
-Formalized by `MetaMathlibExt.zeckendorfRevBar_of_not_descLexLT`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 751](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L751). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-of-not-desc-lex-lt).
+Formalized by `MetaMathlibExt.zeckendorfRevBar_of_not_descLexLT`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 751](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L751). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-of-not-desc-lex-lt).
 
 ## The function $\delta_1^\ast$
 
@@ -972,7 +972,7 @@ In the paper $\delta_1^*$ is used on $[\tilde\omega, 1)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 23.
 
-Formalized by `MetaMathlibExt.zeckendorfDeltaStarOne`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 760](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L760). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-one).
+Formalized by `MetaMathlibExt.zeckendorfDeltaStarOne`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 760](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L760). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-one).
 
 ## The function $\delta^*$
 
@@ -995,7 +995,7 @@ $\tilde\omega$ (Notation 1).
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 23.
 
-Formalized by `MetaMathlibExt.zeckendorfDeltaStar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star).
+Formalized by `MetaMathlibExt.zeckendorfDeltaStar`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star).
 
 ## $\delta^*$ agrees with $\delta_1^*$ on $(\tilde\omega, 1)$
 
@@ -1009,7 +1009,7 @@ $\delta^*(y) = \delta_1^*(y)$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 23.
 
-Formalized by `MetaMathlibExt.zeckendorfDeltaStar_of_mem_Ico`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-of-mem-ico).
+Formalized by `MetaMathlibExt.zeckendorfDeltaStar_of_mem_Ico`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-of-mem-ico).
 
 ## The generic exponent
 
@@ -1025,7 +1025,7 @@ In the paper, $p$ is the exponent of the generic upper bound of the function $\d
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 25.
 
-Formalized by `MetaMathlibExt.zeckendorfGenericExponent`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 797](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L797). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-generic-exponent).
+Formalized by `MetaMathlibExt.zeckendorfGenericExponent`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 797](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L797). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-generic-exponent).
 
 ## The generic exponent satisfies its defining inequality
 
@@ -1039,7 +1039,7 @@ $\gamma \tilde\omega^{p-1} < \omega^p$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Definition 25.
 
-Formalized by `MetaMathlibExt.zeckendorfGenericExponent_spec`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 804](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L804). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-generic-exponent-spec).
+Formalized by `MetaMathlibExt.zeckendorfGenericExponent_spec`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 804](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L804). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-generic-exponent-spec).
 
 ## The set $U$ of evaluations of $\tilde E^* \setminus \bar E^*$
 
@@ -1053,7 +1053,7 @@ $\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Notation 2.
 
-Formalized by `MetaMathlibExt.zeckendorfSmoothSet`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-smooth-set).
+Formalized by `MetaMathlibExt.zeckendorfSmoothSet`, a definition declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-smooth-set).
 
 ## Membership in the set $U$
 
@@ -1069,7 +1069,7 @@ $\varepsilon \notin \bar E^*$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Notation 2.
 
-Formalized by `MetaMathlibExt.mem_zeckendorfSmoothSet_iff`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 822](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L822). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-zeckendorf-smooth-set-iff).
+Formalized by `MetaMathlibExt.mem_zeckendorfSmoothSet_iff`, a theorem declared in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 822](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L822). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-zeckendorf-smooth-set-iff).
 
 ## Reversals characterize the nonzero elements of $\bar E^\ast$
 
@@ -1093,7 +1093,7 @@ since $\mathrm{rev}_n(\bar\beta^1)$ is the maximal $L$-block $\theta^{n+1}$, whi
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.forall_zeckendorfRev_mem_iff_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#forall-zeckendorf-rev-mem-iff-mem-l-star).
+Stated but not proved: `MetaMathlibExt.forall_zeckendorfRev_mem_iff_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#forall-zeckendorf-rev-mem-iff-mem-l-star).
 
 ## Decomposition along $L^*$-blocks (Corollary 1)
 
@@ -1112,7 +1112,7 @@ $\varepsilon \notin E^*$, then $\varepsilon$ has exactly one decomposition index
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.lStarBar_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-bar-decomposition).
+Stated but not proved: `MetaMathlibExt.lStarBar_decomposition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#l-star-bar-decomposition).
 
 ## Lemma 10: $\mathrm{rev}_n$ of the bar of $\mathrm{rev}_n(\varepsilon)$
 
@@ -1137,7 +1137,7 @@ $1$ at index $b - 1$ and $0$ elsewhere, and equals $\mathrm{res}_n(\varepsilon)$
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfRev_bar_zeckendorfRev_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 863](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L863). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-zeckendorf-rev-eq).
+Stated but not proved: `MetaMathlibExt.zeckendorfRev_bar_zeckendorfRev_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 863](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L863). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-zeckendorf-rev-eq).
 
 ## Fixed points of $\overline{\mathrm{rev}}$ in $\tilde E^*$
 
@@ -1153,7 +1153,7 @@ $\overline{\mathrm{rev}}(\varepsilon) = \varepsilon$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.mem_lStarClosure_iff_zeckendorfRevBar_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 883](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L883). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-l-star-closure-iff-zeckendorf-rev-ba).
+Stated but not proved: `MetaMathlibExt.mem_lStarClosure_iff_zeckendorfRevBar_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 883](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L883). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#mem-l-star-closure-iff-zeckendorf-rev-ba).
 
 ## $\overline{\mathrm{rev}}$ of the reversal of an element of $\tilde E$ (Lemma 12)
 
@@ -1176,7 +1176,7 @@ at index $t$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfRevBar_zeckendorfRev_of_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-zeckendorf-rev-of-ord).
+Stated but not proved: `MetaMathlibExt.zeckendorfRevBar_zeckendorfRev_of_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-zeckendorf-rev-of-ord).
 
 ## Transition from the subcollection count to $\delta^\ast$
 
@@ -1203,7 +1203,7 @@ Indices are zero-based.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.isEquivalent_subcollectionCount_div_rpow_deltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-equivalent-subcollection-count-div-rp).
+Stated but not proved: `MetaMathlibExt.isEquivalent_subcollectionCount_div_rpow_deltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-equivalent-subcollection-count-div-rp).
 
 ## Lemma 13: behaviour of $\overline{\mathrm{rev}}$ near a point
 
@@ -1230,7 +1230,7 @@ $|x(\varepsilon') - x(\varepsilon)| < \delta$. Indices start at $0$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfRevBar_eventually_near` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 932](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L932). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-eventually-near).
+Stated but not proved: `MetaMathlibExt.zeckendorfRevBar_eventually_near` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 932](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L932). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-rev-bar-eventually-near).
 
 ## Infinitely many unit reductions stay in the $L^\ast$-closure
 
@@ -1246,7 +1246,7 @@ entry at $r$ by one lies in $\bar E^*$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 14.
 
-Stated but not proved: `MetaMathlibExt.infinite_setOf_sub_single_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 955](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L955). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#infinite-set-of-sub-single-mem-l-star-cl).
+Stated but not proved: `MetaMathlibExt.infinite_setOf_sub_single_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 955](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L955). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#infinite-set-of-sub-single-mem-l-star-cl).
 
 ## Proposition 3: $U$ is a disjoint union of open intervals
 
@@ -1266,7 +1266,7 @@ intervals of two distinct admissible pairs are disjoint; and $U$ is open and mea
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfSmoothSet_eq_iUnion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-smooth-set-eq-i-union).
+Stated but not proved: `MetaMathlibExt.zeckendorfSmoothSet_eq_iUnion` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 967](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L967). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-smooth-set-eq-i-union).
 
 ## Continuity and local monotonicity of $\delta^{\ast}$
 
@@ -1281,7 +1281,7 @@ differentiable and strictly decreasing on some neighbourhood of $x$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.continuousOn_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 989](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L989). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#continuous-on-zeckendorf-delta-star).
+Stated but not proved: `MetaMathlibExt.continuousOn_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 989](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L989). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#continuous-on-zeckendorf-delta-star).
 
 ## $\delta^*$ is not differentiable at the evaluations of $\bar E^*$
 
@@ -1297,7 +1297,7 @@ by $L$, $\delta^*$ is not differentiable at $\sum_k \varepsilon_k \tilde Q_k$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.not_differentiableAt_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#not-differentiable-at-zeckendorf-delta-s).
+Stated but not proved: `MetaMathlibExt.not_differentiableAt_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#not-differentiable-at-zeckendorf-delta-s).
 
 ## The smooth set $U$ has Lebesgue measure $1$
 
@@ -1311,7 +1311,7 @@ $\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$. Then $U$ has Lebesgue mea
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.volume_zeckendorfSmoothSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1009](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1009). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#volume-zeckendorf-smooth-set).
+Stated but not proved: `MetaMathlibExt.volume_zeckendorfSmoothSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1009](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1009). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#volume-zeckendorf-smooth-set).
 
 ## Local minima of $\delta^\ast$ at finitely supported points
 
@@ -1325,7 +1325,7 @@ $\delta^*$ has a local minimum at $\sum_k \varepsilon_k \tilde Q_k$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.isLocalMin_zeckendorfDeltaStar_of_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-local-min-zeckendorf-delta-star-of-fi).
+Stated but not proved: `MetaMathlibExt.isLocalMin_zeckendorfDeltaStar_of_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-local-min-zeckendorf-delta-star-of-fi).
 
 ## $\delta^*$ has no local extremum at infinite expansions in $E^*$
 
@@ -1341,7 +1341,7 @@ $\delta^*$ has neither a local minimum nor a local maximum at $\sum_k \varepsilo
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.not_isLocalExtr_zeckendorfDeltaStar_of_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1028](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1028). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#not-is-local-extr-zeckendorf-delta-star).
+Stated but not proved: `MetaMathlibExt.not_isLocalExtr_zeckendorfDeltaStar_of_infinite` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1028](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1028). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#not-is-local-extr-zeckendorf-delta-star).
 
 ## Strict local maxima of $\delta^{\ast}$ at the closure points
 
@@ -1357,7 +1357,7 @@ $y \ne x$ sufficiently close to $x$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.eventually_zeckendorfDeltaStar_lt_of_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1040](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1040). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#eventually-zeckendorf-delta-star-lt-of-m).
+Stated but not proved: `MetaMathlibExt.eventually_zeckendorfDeltaStar_lt_of_mem_lStarClosure` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1040](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1040). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#eventually-zeckendorf-delta-star-lt-of-m).
 
 ## Classification of the local extrema of $\delta^\ast$
 
@@ -1376,7 +1376,7 @@ $\varepsilon \in \bar E^* \setminus E^*$, $\delta^*$ has a local maximum at $x_\
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.isLocalExtr_zeckendorfDeltaStar_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-local-extr-zeckendorf-delta-star-clas).
+Stated but not proved: `MetaMathlibExt.isLocalExtr_zeckendorfDeltaStar_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-local-extr-zeckendorf-delta-star-clas).
 
 ## Generic upper bound for $\delta^*$ (Lemma 17)
 
@@ -1406,7 +1406,7 @@ $16 \omega^4 = 2.33436\ldots$, while $(\omega / \tilde\omega)^2 / \gamma = 2.200
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 17.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_genericBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1073](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1073). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-generic-bound).
+Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_genericBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1073](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1073). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-generic-bound).
 
 ## Monotonicity of the ratio under steep increments
 
@@ -1431,7 +1431,7 @@ right side is $0.99999999364\ldots$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 18.
 
-Stated but not proved: `MetaMathlibExt.div_rpow_lt_add_div_add_rpow_of_genericBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1091](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1091). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#div-rpow-lt-add-div-add-rpow-of-generic).
+Stated but not proved: `MetaMathlibExt.div_rpow_lt_add_div_add_rpow_of_genericBound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1091](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1091). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#div-rpow-lt-add-div-add-rpow-of-generic).
 
 ## Monotonicity of the ratio under fundamental increments (Corollary 3)
 
@@ -1458,7 +1458,7 @@ the right side $1.01645\ldots$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_add_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-add-fundamental).
+Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_add_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-add-fundamental).
 
 ## Where $\delta^\ast$ can attain its maximum
 
@@ -1494,7 +1494,7 @@ source's $\max\{2, p^*\}$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.isMaxOn_zeckendorfDeltaStar_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-max-on-zeckendorf-delta-star-bound).
+Stated but not proved: `MetaMathlibExt.isMaxOn_zeckendorfDeltaStar_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#is-max-on-zeckendorf-delta-star-bound).
 
 ## Where $\delta^*$ attains its minimum
 
@@ -1512,7 +1512,7 @@ $y \in (0, 1)$ and $\delta^*(\tilde Q_0) = 1$.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.exists_isMinOn_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-is-min-on-zeckendorf-delta-star).
+Stated but not proved: `MetaMathlibExt.exists_isMinOn_zeckendorfDeltaStar` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#exists-is-min-on-zeckendorf-delta-star).
 
 ## Shifting a unit one entry down increases $\delta^*$ (Lemma 19)
 
@@ -1541,7 +1541,7 @@ and $\varepsilon' = \beta^3$ give the value $1$ on both sides.
 
 - Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 19.
 
-Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_shift_baseN` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-shift-base-n).
+Stated but not proved: `MetaMathlibExt.zeckendorfDeltaStar_lt_shift_baseN` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/ZeckendorfBinaryExpansionWanted.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html#zeckendorf-delta-star-lt-shift-base-n).
 
 ## Depends on
 
@@ -1550,4 +1550,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Distribution of Zeckendorf expressions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/distribution-of-zeckendorf-expressions)

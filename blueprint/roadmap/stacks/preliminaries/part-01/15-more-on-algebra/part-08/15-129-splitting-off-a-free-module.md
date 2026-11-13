@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.129 Splitting off a free module
 
-Section 15.129 of the Stacks Project, [Tag 0GV7](https://stacks.math.columbia.edu/tag/0GV7). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.129 of the Stacks Project, [Tag 0GV7](https://stacks.math.columbia.edu/tag/0GV7). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GV8, a situation
 
 [Tag 0GV8](https://stacks.math.columbia.edu/tag/0GV8) in the Stacks Project.
 
-**`ClosedPointSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L83).
+**`ClosedPointSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L83).
 
 > The space of closed points of the prime spectrum of `R`, with its induced topology.
 
@@ -22,7 +22,7 @@ Section 15.129 of the Stacks Project, [Tag 0GV7](https://stacks.math.columbia.ed
 abbrev ClosedPointSpace (R : Type u) [CommRing R]
 ```
 
-**`ClosedPointResidueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L88).
+**`ClosedPointResidueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L88).
 
 > The residue field at a closed point `x` of `Spec(R)`.
 
@@ -30,7 +30,7 @@ abbrev ClosedPointSpace (R : Type u) [CommRing R]
 abbrev ClosedPointResidueField {R : Type u} [CommRing R] (x : ClosedPointSpace R)
 ```
 
-**`ClosedPointFiber`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L105).
+**`ClosedPointFiber`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L105).
 
 > The fibre `M(x) = M / xM` of an `R`-module at a closed point `x`.
 
@@ -39,7 +39,7 @@ abbrev ClosedPointFiber {R : Type u} [CommRing R] (M : Type v) [AddCommGroup M] 
     (x : ClosedPointSpace R)
 ```
 
-**`sectionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L111).
+**`sectionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L111).
 
 > The canonical image `s(x)` of a module element `s` in the fibre at `x`.
 
@@ -48,7 +48,7 @@ abbrev sectionAt {R : Type u} [CommRing R] {M : Type v} [AddCommGroup M] [Module
     (x : ClosedPointSpace R) (s : M) : ClosedPointFiber M x
 ```
 
-**`finiteDimensional_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L118).
+**`finiteDimensional_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L118).
 
 > The fibre of a finite module at a closed point is finite-dimensional over the
 > residue field at that point.
@@ -64,7 +64,7 @@ theorem finiteDimensional_fiber
 
 [Tag 0GV9](https://stacks.math.columbia.edu/tag/0GV9) in the Stacks Project.
 
-**`canonicalKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L154).
+**`canonicalKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L154).
 
 > The canonical subspace `B(x)` of the fibre: the common kernel of all fibre
 > functionals induced by `R`-linear maps `M → R`.
@@ -75,7 +75,7 @@ noncomputable def canonicalKernel {R : Type u} [CommRing R]
     Submodule (ClosedPointResidueField x) (ClosedPointFiber M x)
 ```
 
-**`CanonicalQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L169).
+**`CanonicalQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L169).
 
 > The canonical quotient `V(x) = M(x) / B(x)`.
 
@@ -84,7 +84,7 @@ abbrev CanonicalQuotient {R : Type u} [CommRing R]
     (M : Type v) [AddCommGroup M] [Module R M] (x : ClosedPointSpace R)
 ```
 
-**`canonical_exact_and_splits_iff_linearIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L368). References: EGA 0 (5.5.5), “affine case, closed pt”.
+**`canonical_exact_and_splits_iff_linearIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L368). References: EGA 0 (5.5.5), “affine case, closed pt”.
 
 > The canonical sequence `0 → B(x) → M(x) → V(x) → 0` is short exact.
 > Moreover, a finite family of elements of `M` splits off a free direct summand after
@@ -108,7 +108,7 @@ theorem canonical_exact_and_splits_iff_linearIndependent
 
 [Tag 0GVA](https://stacks.math.columbia.edu/tag/0GVA) in the Stacks Project.
 
-**`pi_canonicalQuotient_mkQ_sectionAt_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L390).
+**`pi_canonicalQuotient_mkQ_sectionAt_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Fibres.lean#L390).
 
 > At finitely many distinct closed points, every family of values in the canonical quotients
 > `V(x)` is induced by a single element of the module.
@@ -125,7 +125,7 @@ theorem pi_canonicalQuotient_mkQ_sectionAt_surjective
 
 [Tag 0GVB](https://stacks.math.columbia.edu/tag/0GVB) in the Stacks Project.
 
-**`exists_section_dependentLocus_subset_union_of_card_add_le_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean#L348).
+**`exists_section_dependentLocus_subset_union_of_card_add_le_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean#L348).
 
 > Suppose that the dependent locus of `h` sections of a finitely presented module is contained
 > in a closed set `F` of the Noetherian space of closed points. If every canonical quotient `V(y)`
@@ -161,7 +161,7 @@ theorem exists_section_dependentLocus_subset_union_of_card_add_le_finrank
 
 [Tag 0GVC](https://stacks.math.columbia.edu/tag/0GVC) in the Stacks Project.
 
-**`exists_linearEquiv_prod_of_local_free_summand_rank_gt_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean#L716).
+**`exists_linearEquiv_prod_of_local_free_summand_rank_gt_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean, line 716](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Projective/SplitFree/Basic.lean#L716).
 
 > Let `M` be a finitely presented module over a commutative ring whose Noetherian space of
 > closed points has dimension at most `d`. If at every closed point the localization of `M` has
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.129, Tag 0GV7](https://stacks.math.columbia.edu/tag/0GV7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

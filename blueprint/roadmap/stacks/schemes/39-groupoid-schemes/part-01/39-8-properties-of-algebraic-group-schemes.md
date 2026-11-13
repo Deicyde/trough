@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.8 Properties of algebraic group schemes
 
-Section 39.8 of the Stacks Project, [Tag 0BF6](https://stacks.math.columbia.edu/tag/0BF6). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.8 of the Stacks Project, [Tag 0BF6](https://stacks.math.columbia.edu/tag/0BF6). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 045X, a lemma
 
 [Tag 045X](https://stacks.math.columbia.edu/tag/045X) in the Stacks Project.
 
-**`AlgebraicGeometry.equidimensional_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L78). The attribute's comment: “equidimensionality”. References: SGA 3 VIA (2.4.1), “special case”; SGA 3 VIB (1.5).
+**`AlgebraicGeometry.equidimensional_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L78). The attribute's comment: “equidimensionality”. References: SGA 3 VIA (2.4.1), “special case”; SGA 3 VIB (1.5).
 
 > **Stacks Project, Tag 045X.** A group scheme locally of finite type over a field is
 > equidimensional.
@@ -26,7 +26,7 @@ theorem equidimensional_of_groupScheme (k : Type u) [Field k] (G : Scheme.{u})
     Equidimensional G
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L92). The attribute's comment: “dimension at every point”. References: EGA IV (15.6.10), “dim(G\_y^0) = dim(G\_y)”; SGA 3 VIB (1.2), “partial”; SGA 3 VIB (1.5).
+**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L92). The attribute's comment: “dimension at every point”. References: EGA IV (15.6.10), “dim(G\_y^0) = dim(G\_y)”; SGA 3 VIB (1.2), “partial”; SGA 3 VIB (1.5).
 
 > **Stacks Project, Tag 045X.** The dimension of a group scheme locally of finite type over a
 > field is its dimension at every point.
@@ -38,7 +38,7 @@ theorem topologicalKrullDim_eq_topologicalKrullDimAt_of_groupScheme (k : Type u)
     topologicalKrullDim G = topologicalKrullDimAt G g
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_ringKrullDim_stalk_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L105). The attribute's comment: “dimension at a closed point”.
+**`AlgebraicGeometry.topologicalKrullDim_eq_ringKrullDim_stalk_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L105). The attribute's comment: “dimension at a closed point”.
 
 > **Stacks Project, Tag 045X.** At a closed point of a group scheme locally of finite type
 > over a field, the dimension of the scheme is the Krull dimension of the local ring.
@@ -54,7 +54,7 @@ theorem topologicalKrullDim_eq_ringKrullDim_stalk_of_groupScheme (k : Type u) [F
 
 [Tag 047N](https://stacks.math.columbia.edu/tag/047N) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_of_groupScheme_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean#L118). References: SGA 3 VIA (1.1); SGA 3 VIA (6.9), “special case”; SGA 3 VIB (1.6), “Case S = Spec k”; SGA 3 VIB (1.6.1); SGA 3 VIIA (8.4), “more general”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 XV (6.5), “partial”; SGA 3 XVII (5.5), “partial”.
+**`AlgebraicGeometry.smooth_of_groupScheme_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean#L118). References: SGA 3 VIA (1.1); SGA 3 VIA (6.9), “special case”; SGA 3 VIB (1.6), “Case S = Spec k”; SGA 3 VIB (1.6.1); SGA 3 VIIA (8.4), “more general”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 XV (6.5), “partial”; SGA 3 XVII (5.5), “partial”.
 
 > **Stacks Project, Tag 047N.**  Let `k` be a field of characteristic `0` and let `G` be a
 > locally algebraic group scheme over `k`, i.e. a scheme whose structure morphism
@@ -70,7 +70,7 @@ theorem smooth_of_groupScheme_of_charZero (k : Type u) [Field k] [CharZero k] (G
     Smooth f
 ```
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace.isSmooth_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/OverField/SmoothCharacteristicZero.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/OverField/SmoothCharacteristicZero.lean#L227). The attribute's comment: “group algebraic spaces over `Spec k` which are schemes locally of finite type over `k`”. References: SGA 3 VIA (1.1), “special case”; SGA 3 VIA (6.9), “special case”; SGA 3 VIB (1.6.1), “special case”; SGA 3 VIIA (8.4), “more general”; SGA 3 XV (6.5), “special case”; SGA 3 XVII (5.5), “more general”.
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace.isSmooth_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/OverField/SmoothCharacteristicZero.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/OverField/SmoothCharacteristicZero.lean#L227). The attribute's comment: “group algebraic spaces over `Spec k` which are schemes locally of finite type over `k`”. References: SGA 3 VIA (1.1), “special case”; SGA 3 VIA (6.9), “special case”; SGA 3 VIB (1.6.1), “special case”; SGA 3 VIIA (8.4), “more general”; SGA 3 XV (6.5), “special case”; SGA 3 XVII (5.5), “more general”.
 
 > **Stacks 047N.** Let `k` be a field of characteristic `0` and let `G` be a group algebraic
 > space over `Spec k` which is a scheme locally of finite type over `k`. Then the structure
@@ -93,7 +93,7 @@ theorem GroupAlgebraicSpace.isSmooth_of_charZero
 
 [Tag 047O](https://stacks.math.columbia.edu/tag/047O) in the Stacks Project.
 
-**`AlgebraicGeometry.isReduced_of_grpObj_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ReducedCharacteristicZeroGeneral.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ReducedCharacteristicZeroGeneral.lean#L46). References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “more general”.
+**`AlgebraicGeometry.isReduced_of_grpObj_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ReducedCharacteristicZeroGeneral.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/ReducedCharacteristicZeroGeneral.lean#L46). References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “more general”.
 
 > **Stacks Project, Tag 047O.**  Any group scheme over a field of characteristic `0` is
 > reduced (Perrin, thèse I 1.1, I 3.9, II 2.4; Bull. SMF 104, Prop. 4.2.8): a scheme `G` with a
@@ -106,7 +106,7 @@ theorem isReduced_of_grpObj_of_charZero (k : Type u) [Field k] [CharZero k] (G :
     (f : G ⟶ Spec (CommRingCat.of k)) [GrpObj (Over.mk f)] : IsReduced G
 ```
 
-**`AlgebraicGeometry.isReduced_of_groupScheme_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean#L138). The attribute's comment: “locally of finite type case; the general case is cited to Perrin”. References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “more general”.
+**`AlgebraicGeometry.isReduced_of_groupScheme_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothCharacteristicZero.lean#L138). The attribute's comment: “locally of finite type case; the general case is cited to Perrin”. References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “more general”.
 
 > **Stacks Project, Tag 047O**, the case the source proves.  A locally algebraic group scheme
 > over a field `k` of characteristic `0` is reduced: it is smooth over `k` by [Stacks, Tag 047N],
@@ -123,7 +123,7 @@ theorem isReduced_of_groupScheme_of_charZero (k : Type u) [Field k] [CharZero k]
     IsReduced G
 ```
 
-**`AlgebraicGeometry.isReduced_of_groupScheme_of_charZero_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HopfAlgebra/ReducedCharacteristicZero.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/HopfAlgebra/ReducedCharacteristicZero.lean#L90). The attribute's comment: “for affine group schemes”. References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “affine group schemes”.
+**`AlgebraicGeometry.isReduced_of_groupScheme_of_charZero_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HopfAlgebra/ReducedCharacteristicZero.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/HopfAlgebra/ReducedCharacteristicZero.lean#L90). The attribute's comment: “for affine group schemes”. References: SGA 3 VIA (6.9), “partial”; SGA 3 VIIA (8.5.1), “more general”; SGA 3 VIII (7.1), “affine group schemes”.
 
 > **Stacks Project, Tag 047O**, for affine group schemes.  An affine group scheme over a field
 > of characteristic `0` is reduced, with no finiteness hypothesis: its ring of global sections is a
@@ -139,7 +139,7 @@ theorem isReduced_of_groupScheme_of_charZero_of_isAffine (k : Type u) [Field k] 
 
 [Tag 047P](https://stacks.math.columbia.edu/tag/047P) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_of_isReduced_groupScheme_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothPerfectField.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothPerfectField.lean#L48). References: EGA IV (15.6.10), “special case”; SGA 3 VIIA (8.3), “Smoothness clause”; SGA 3 XII (1.0), “partial”; SGA 3 XV (4.6), “(2), special case”.
+**`AlgebraicGeometry.smooth_of_isReduced_groupScheme_of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothPerfectField.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/SmoothPerfectField.lean#L48). References: EGA IV (15.6.10), “special case”; SGA 3 VIIA (8.3), “Smoothness clause”; SGA 3 XII (1.0), “partial”; SGA 3 XV (4.6), “(2), special case”.
 
 > Let `k` be a perfect field and let `G` be a reduced locally algebraic group scheme over `k`,
 > that is, a reduced scheme whose structure morphism `f : G ⟶ Spec k` is locally of finite type and
@@ -156,7 +156,7 @@ theorem smooth_of_isReduced_groupScheme_of_perfectField (k : Type u) [Field k] [
 
 [Tag 0B7S](https://stacks.math.columbia.edu/tag/0B7S) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affineOpen_containing_rational_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/RationalPointsAffineOpen.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/RationalPointsAffineOpen.lean#L287). References: SGA 3 XII (6.1).
+**`AlgebraicGeometry.exists_affineOpen_containing_rational_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/RationalPointsAffineOpen.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/RationalPointsAffineOpen.lean#L287). References: SGA 3 XII (6.1).
 
 > A finite family of rational points of a group scheme locally of finite type over an
 > algebraically closed field lies in an affine open.
@@ -173,7 +173,7 @@ theorem exists_affineOpen_containing_rational_points (k : Type u) [Field k] [IsA
 
 [Tag 0BF7](https://stacks.math.columbia.edu/tag/0BF7) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiProjective_of_groupScheme_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/QuasiProjective.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/QuasiProjective.lean#L168). References: SGA 3 VIB (5.5), “special case”.
+**`AlgebraicGeometry.isQuasiProjective_of_groupScheme_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/QuasiProjective.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/QuasiProjective.lean#L168). References: SGA 3 VIB (5.5), “special case”.
 
 > Let `k` be a field and `G` an algebraic group scheme over `k`. Then `G` is quasi-projective
 > over `k`.
@@ -189,7 +189,7 @@ theorem isQuasiProjective_of_groupScheme_over_field
 
 [Tag 0BF8](https://stacks.math.columbia.edu/tag/0BF8) in the Stacks Project.
 
-**`Stacks.Groupoids.IsCentralPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean#L91). The attribute's comment: “the functorial centre”. References: SGA 3 I (2.3.6), “center”; SGA 3 VIII (6.5).
+**`Stacks.Groupoids.IsCentralPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean#L91). The attribute's comment: “the functorial centre”. References: SGA 3 I (2.3.6), “center”; SGA 3 VIII (6.5).
 
 > A relative point of a group scheme lies in its functorial centre if it commutes with every
 > point after every base change of its domain.
@@ -198,7 +198,7 @@ theorem isQuasiProjective_of_groupScheme_over_field
 def IsCentralPoint {S : Scheme.{u}} (G : Grp (Over S)) {T : Over S} (h : T ⟶ G.X) : Prop
 ```
 
-**`Stacks.Groupoids.exists_closedSubgroupScheme_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean#L391). The attribute's comment: “representability of the centre by a closed subgroup scheme”. References: SGA 3 VIB (6.2.4), “special case”; SGA 3 VIB (6.2.5), “(i), special case”; SGA 3 VIB (6.2.6), “more general”; SGA 3 VIB (6.5.5), “Clause a), special case”; SGA 3 VIB (7.3.0), “special case”; SGA 3 VIII (6.5), “special case”; SGA 3 VIII (6.7), “first item, special case”.
+**`Stacks.Groupoids.exists_closedSubgroupScheme_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Center.lean#L391). The attribute's comment: “representability of the centre by a closed subgroup scheme”. References: SGA 3 VIB (6.2.4), “special case”; SGA 3 VIB (6.2.5), “(i), special case”; SGA 3 VIB (6.2.6), “more general”; SGA 3 VIB (6.5.5), “Clause a), special case”; SGA 3 VIB (7.3.0), “special case”; SGA 3 VIII (6.5), “special case”; SGA 3 VIII (6.7), “first item, special case”.
 
 > **Stacks Project, Tag 0BF8.** The centre of a locally algebraic group scheme over a field is
 > a closed subgroup scheme: the functorial centre `Stacks.Groupoids.IsCentralPoint` is represented
@@ -227,4 +227,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.8, Tag 0BF6](https://stacks.math.columbia.edu/tag/0BF6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

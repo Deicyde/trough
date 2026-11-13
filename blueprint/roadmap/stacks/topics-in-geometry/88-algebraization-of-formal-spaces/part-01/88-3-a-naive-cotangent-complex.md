@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.3 A naive cotangent complex
 
-Section 88.3 of the Stacks Project, [Tag 0AJL](https://stacks.math.columbia.edu/tag/0AJL). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.3 of the Stacks Project, [Tag 0AJL](https://stacks.math.columbia.edu/tag/0AJL). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AJR, an equation
 
 [Tag 0AJR](https://stacks.math.columbia.edu/tag/0AJR) in the Stacks Project.
 
-**`Rig.completedNaiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent.lean#L478).
+**`Rig.completedNaiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent.lean#L478).
 
 > For a supplied presentation `B = A[x₁, …, xᵣ]̂ / J`, construct its completed naive
 > cotangent complex `J / J² → ⨁ i, B dxᵢ`. Its differential sends the class of a power
@@ -31,7 +31,7 @@ public noncomputable def completedNaiveCotangentComplex
 
 [Tag 0GAE](https://stacks.math.columbia.edu/tag/0GAE) in the Stacks Project.
 
-**`Rig.completedNaiveCotangentComplex_homotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/NaiveCotangentHomotopy.lean, line 1704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/NaiveCotangentHomotopy.lean#L1704).
+**`Rig.completedNaiveCotangentComplex_homotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/NaiveCotangentHomotopy.lean, line 1704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/NaiveCotangentHomotopy.lean#L1704).
 
 > The completed naive cotangent complexes associated to two completed polynomial
 > presentations of the same `I`-adically complete algebra are homotopy equivalent.
@@ -50,7 +50,7 @@ public theorem completedNaiveCotangentComplex_homotopyEquiv
 
 [Tag 0GAF](https://stacks.math.columbia.edu/tag/0GAF) in the Stacks Project.
 
-**`Rig.surjective_completedPresentationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L397). The attribute's comment: “B^ = A[x₁, …, xₙ]^ / J^: the completed presentation is surjective”.
+**`Rig.surjective_completedPresentationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L396). The attribute's comment: “B^ = A[x₁, …, xₙ]^ / J^: the completed presentation is surjective”.
 
 > The completion `α^ : A[x₁, …, xₙ]^ → B^` of a presentation `α : A[x₁, …, xₙ] → B` of a finite
 > type algebra over a Noetherian ring is surjective.
@@ -60,7 +60,7 @@ public theorem surjective_completedPresentationMap (α : MvPolynomial (Fin n) A 
     (hα : Function.Surjective α) : Function.Surjective (completedPresentationMap I α)
 ```
 
-**`Rig.ker_completedPresentationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L404). The attribute's comment: “B^ = A[x₁, …, xₙ]^ / J^: the kernel of the completed presentation is J^”.
+**`Rig.ker_completedPresentationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L403). The attribute's comment: “B^ = A[x₁, …, xₙ]^ / J^: the kernel of the completed presentation is J^”.
 
 > The kernel of the completion `α^` of a presentation `α` with kernel `J` is the ideal
 > `J^ = J · A[x₁, …, xₙ]^` generated by `J` in the completed polynomial ring.
@@ -73,7 +73,7 @@ public theorem ker_completedPresentationMap (α : MvPolynomial (Fin n) A →ₐ[
         (algebraMap (MvPolynomial (Fin n) A) (adicCompletionMvPolynomial I n))
 ```
 
-**`Rig.differential_conormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L522). The attribute's comment: “the comparison commutes with the differentials”.
+**`Rig.differential_conormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L521). The attribute's comment: “the comparison commutes with the differentials”.
 
 > **The square of differentials commutes**: both ways round, the class of `g ∈ J` goes to the
 > tuple of the images in `B^` of the partial derivatives `∂g/∂xᵢ`.
@@ -85,7 +85,7 @@ public theorem differential_conormalComparison (x : G.toExtension.Cotangent) :
         (presentationDifferential G x i)
 ```
 
-**`Rig.completionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L544). The attribute's comment: “the comparison of complexes NL(α) ⊗\_B B^ → NL^∧\_\{B^/A}”.
+**`Rig.completionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L543). The attribute's comment: “the comparison of complexes NL(α) ⊗\_B B^ → NL^∧\_\{B^/A}”.
 
 > The canonical comparison of complexes `NL(α) ⊗_B B^ → NL^∧_{B^/A}`: in degree `-1` it is the
 > `B^`-linear extension of the map `J / J² → J^ / (J^)²` and in degree `0` it is `dxᵢ ↦ dxᵢ`.
@@ -97,7 +97,7 @@ public def completionComparison :
       (completedComplex I G).twoTerm
 ```
 
-**`Rig.bijective_completionComparison_f₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L565). The attribute's comment: “the comparison is bijective in degree 0”.
+**`Rig.bijective_completionComparison_f₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 564](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L564). The attribute's comment: “the comparison is bijective in degree 0”.
 
 > The comparison `NL(α) ⊗_B B^ → NL^∧_{B^/A}` is bijective in degree `0`.
 
@@ -106,7 +106,7 @@ public theorem bijective_completionComparison_f₀ :
     Function.Bijective (completionComparison I G).f₀
 ```
 
-**`Rig.bijective_completionComparison_f₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L572). The attribute's comment: “the comparison is bijective in degree 1”.
+**`Rig.bijective_completionComparison_f₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L571). The attribute's comment: “the comparison is bijective in degree 1”.
 
 > The comparison `NL(α) ⊗_B B^ → NL^∧_{B^/A}` is bijective in degree `1`, that is
 > `B^ ⊗_B (J / J²) = J^ / (J^)²`.
@@ -116,7 +116,7 @@ public theorem bijective_completionComparison_f₁ :
     Function.Bijective (completionComparison I G).f₁
 ```
 
-**`Rig.bijective_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L637). The attribute's comment: “NL^∧\_\{B^/A} = NL(α) ⊗\_B B^ as complexes”.
+**`Rig.bijective_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L635). The attribute's comment: “NL^∧\_\{B^/A} = NL(α) ⊗\_B B^ as complexes”.
 
 > `NL^∧_{B^/A} = NL(α) ⊗_B B^` as complexes: the comparison of two-term complexes is bijective
 > in both degrees and commutes with the two differentials.
@@ -131,7 +131,7 @@ public theorem bijective_completionComparison :
             (presentationDifferential G)).d
 ```
 
-**`Rig.completedNaiveCotangentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean#L236). The attribute's comment: “NL^∧\_\{B^/A} = NL\_\{B/A} ⊗^L\_B B^ in D(B^)”.
+**`Rig.completedNaiveCotangentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean#L235). The attribute's comment: “NL^∧\_\{B^/A} = NL\_\{B/A} ⊗^L\_B B^ in D(B^)”.
 
 > **Stacks 0GAF, second clause.** `NL^∧_{B^/A} = NL_{B/A} ⊗^L_B B^` in `D(B^)`, for the
 > canonical derived tensor product along `B → B^` with the unit complex `B^` in degree `0`.
@@ -148,7 +148,7 @@ public def completedNaiveCotangentDerivedTensorIso :
       DerivedCategory.Q.obj (completedComplex I G).cochainComplex
 ```
 
-**`Rig.bijective_limitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L185). The attribute's comment: “lim NL(α) = NL(α) ⊗\_B B^ as complexes”.
+**`Rig.bijective_limitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L185). The attribute's comment: “lim NL(α) = NL(α) ⊗\_B B^ as complexes”.
 
 > **Stacks 0GAF, the `lim` form of the first clause.** `lim NL(α) = NL(α) ⊗_B B^` as
 > complexes: the comparison is bijective in both degrees and commutes with the differentials.
@@ -163,7 +163,7 @@ public theorem bijective_limitComparison :
             (presentationDifferential G)).d
 ```
 
-**`Rig.bijective_limitCompletionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L209). The attribute's comment: “NL^∧\_\{B^/A} = lim NL(α) ⊗\_B B^ as complexes”.
+**`Rig.bijective_limitCompletionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L209). The attribute's comment: “NL^∧\_\{B^/A} = lim NL(α) ⊗\_B B^ as complexes”.
 
 > **Stacks 0GAF, first clause in its `lim` form.** `NL^∧_{B^/A} = lim NL(α) ⊗_B B^` as
 > complexes: the comparison from the degreewise `I`-adic completion of `NL(α)` to the completed
@@ -182,7 +182,7 @@ public theorem bijective_limitCompletionComparison :
 
 [Tag 0AJS](https://stacks.math.columbia.edu/tag/0AJS) in the Stacks Project.
 
-**`Rig.CompletedNaiveCotangentComplex.isDerivedLimit_reductionTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/DerivedProLimit.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/DerivedProLimit.lean#L657). The attribute's comment: “part (2)”.
+**`Rig.CompletedNaiveCotangentComplex.isDerivedLimit_reductionTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/DerivedProLimit.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/DerivedProLimit.lean#L657). The attribute's comment: “part (2)”.
 
 > **Stacks 0AJS (2).**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` an object of
 > the category of Stacks 0AL4, presented as `B = A⟨x₁, …, x_r⟩ / J`.  Then the completed naive
@@ -199,7 +199,7 @@ public theorem isDerivedLimit_reductionTower [IsNoetherianRing A]
       DerivedCategory.Q) (DerivedCategory.Q.obj K.cochainComplex)
 ```
 
-**`Rig.CompletedNaiveCotangentComplex.nonempty_iso_reductionTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/StrictProLimit.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/StrictProLimit.lean#L336). The attribute's comment: “part (1)”.
+**`Rig.CompletedNaiveCotangentComplex.nonempty_iso_reductionTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/StrictProLimit.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/StrictProLimit.lean#L336). The attribute's comment: “part (1)”.
 
 > **Stacks 0AJS (1).**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` an object of
 > the category of Stacks 0AL4, presented as `B = A⟨x₁, …, x_r⟩ / J`.  Then the pro-objects
@@ -224,7 +224,7 @@ public theorem nonempty_iso_reductionTower [IsNoetherianRing A]
 
 [Tag 0GAG](https://stacks.math.columbia.edu/tag/0GAG) in the Stacks Project.
 
-**`Rig.baseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L251). The attribute's comment: “the comparison map”.
+**`Rig.baseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L250). The attribute's comment: “the comparison map”.
 
 > The canonical comparison map `NL^∧_{B₁/A₁} ⊗_{B₁} B₂ → NL^∧_{B₂/A₂}`, for the presentation of
 > `B₁` cut out by a generating family `g` of `B₁` modulo `I₁` and the compatible presentation of the
@@ -242,7 +242,7 @@ public def baseChangeComparison :
         (baseChangePresentation (B₁ := B₁) hI₂ hc hmap hspan r g hgen)).twoTerm
 ```
 
-**`Rig.bijective_onH₀_baseChangeComparison_of_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L369). The attribute's comment: “isomorphism on H⁰”.
+**`Rig.bijective_onH₀_baseChangeComparison_of_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L368). The attribute's comment: “isomorphism on H⁰”.
 
 > Let `(A₁, I₁) → (A₂, I₂)` be as in Stacks Remark 0AL5 — a map of Noetherian pairs carrying a
 > positive power of `I₁` into `I₂` — let `B₁` be adically of finite type over `(A₁, I₁)`, and let
@@ -256,7 +256,7 @@ public theorem bijective_onH₀_baseChangeComparison_of_completedBaseChange :
       (le_span_range_sup_adicIdeal_of_completedBaseChange hI₂ e heA heB) r g hgen).onH₀
 ```
 
-**`Rig.surjective_onH₁_baseChangeComparison_of_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L381). The attribute's comment: “surjection on H⁻¹”.
+**`Rig.surjective_onH₁_baseChangeComparison_of_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeComparison.lean#L380). The attribute's comment: “surjection on H⁻¹”.
 
 > In the situation of
 > `Rig.bijective_onH₀_baseChangeComparison_of_completedBaseChange` — `(A₁, I₁) → (A₂, I₂)` as in
@@ -274,7 +274,7 @@ public theorem surjective_onH₁_baseChangeComparison_of_completedBaseChange :
 
 [Tag 0ALM](https://stacks.math.columbia.edu/tag/0ALM) in the Stacks Project.
 
-**`Rig.CompletedPolynomialPresentation.exists_sixTerm_exact_combined`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedPresentation.lean, line 1196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedPresentation.lean#L1196).
+**`Rig.CompletedPolynomialPresentation.exists_sixTerm_exact_combined`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedPresentation.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedPresentation.lean#L1195).
 
 > **The six-term exact sequence of Stacks 0ALM.**
 >
@@ -337,7 +337,7 @@ public theorem exists_sixTerm_exact_combined
 
 [Tag 0AQJ](https://stacks.math.columbia.edu/tag/0AQJ) in the Stacks Project.
 
-**`Rig.CompletedPolynomialPresentation.injective_onH₁_chainMapInl_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedLci.lean, line 1014](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedLci.lean#L1014).
+**`Rig.CompletedPolynomialPresentation.injective_onH₁_chainMapInl_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedLci.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/CombinedLci.lean#L1011).
 
 > **Stacks 0AQJ.**  Let `A` be Noetherian, `I ⊆ A` an ideal, `B → C` a morphism of the
 > category (Stacks 0AL4), `B = A⟨x₁, …, x_r⟩ / J` a completed polynomial presentation and
@@ -367,4 +367,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.3, Tag 0AJL](https://stacks.math.columbia.edu/tag/0AJL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

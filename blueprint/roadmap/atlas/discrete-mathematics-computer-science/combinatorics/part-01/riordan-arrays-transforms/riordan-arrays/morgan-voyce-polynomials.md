@@ -8,7 +8,7 @@ proof: formalized
 
 # Morgan–Voyce polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html).
 
 ## Morgan–Voyce coefficients
 
@@ -18,7 +18,7 @@ $d(n, k)$ is the binomial coefficient $\binom{n + k}{n - k}$ if $k \le n$, and $
 These numbers form the lower-triangular Riordan array
 $\left(\frac{1}{1 - x}, \frac{x}{(1 - x)^2}\right)$, OEIS A085478.
 
-Formalized by `MetaMathlibExt.morganVoyceCoeff`, a definition declared in [MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html#morgan-voyce-coeff).
+Formalized by `MetaMathlibExt.morganVoyceCoeff`, a definition declared in [MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html#morgan-voyce-coeff).
 
 ## Morgan–Voyce polynomials
 
@@ -37,7 +37,7 @@ $\left(\frac{1}{1 - x}, \frac{x}{(1 - x)^2}\right)$, OEIS A085478.
 
 - OEIS A085478.
 
-Formalized by `MetaMathlibExt.morganVoycePolynomial`, a definition declared in [MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html#morgan-voyce-polynomial).
+Formalized by `MetaMathlibExt.morganVoycePolynomial`, a definition declared in [MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Polynomial/MorganVoycePolynomial.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html#morgan-voyce-polynomial).
 
 ## Depends on
 
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Morgan–Voyce polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/morgan-voyce-polynomials)

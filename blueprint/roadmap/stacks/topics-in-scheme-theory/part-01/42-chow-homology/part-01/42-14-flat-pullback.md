@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.14 Flat pullback
 
-Section 42.14 of the Stacks Project, [Tag 02RA](https://stacks.math.columbia.edu/tag/02RA). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.14 of the Stacks Project, [Tag 02RA](https://stacks.math.columbia.edu/tag/02RA). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02RB, a definition
 
 [Tag 02RB](https://stacks.math.columbia.edu/tag/02RB) in the Stacks Project.
 
-**`Stacks.Chow.flatPullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Cycles.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Cycles.lean#L41). The attribute's comment: “pullback of an integral closed subscheme”.
+**`Stacks.Chow.flatPullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Cycles.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Cycles.lean#L41). The attribute's comment: “pullback of an integral closed subscheme”.
 
 > The flat pullback of the cycle of an integral closed subscheme
 > `i : Z ⟶ X` of delta-dimension `k` is the cycle of delta-dimension `k + r` of its
@@ -31,7 +31,7 @@ theorem flatPullback_cycleAssociatedToClosedSubscheme (C : ChowSituation.{u})
       cycleAssociatedToClosedSubscheme C sX' (pullback.fst f i) (k + (r : ℤ))
 ```
 
-**`Stacks.Chow.flatPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullback.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullback.lean#L263). The attribute's comment: “flat pullback homomorphism”.
+**`Stacks.Chow.flatPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullback.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullback.lean#L263). The attribute's comment: “flat pullback homomorphism”.
 
 > **Stacks 02RB.** Flat pullback of cycles along a flat morphism of relative dimension `r`, as
 > a homomorphism `Z_k(X) ⟶ Z_{k+r}(X')`.
@@ -48,7 +48,7 @@ def flatPullback (C : ChowSituation.{u}) {X' X : Scheme.{u}} (sX' : X' ⟶ C.S)
 
 [Tag 02RC](https://stacks.math.columbia.edu/tag/02RC) in the Stacks Project.
 
-**`Stacks.Chow.cycleGroupRestrict_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean#L266). The attribute's comment: “surjectivity onto the open complement”.
+**`Stacks.Chow.cycleGroupRestrict_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean#L266). The attribute's comment: “surjectivity onto the open complement”.
 
 > Restriction of cycles along an open immersion is surjective.
 
@@ -59,7 +59,7 @@ theorem cycleGroupRestrict_surjective (C : ChowSituation.{u}) {X U : Scheme.{u}}
     Function.Surjective (cycleGroupRestrict C sX sU j hj k)
 ```
 
-**`Stacks.Chow.cycleGroupRestrict_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean#L317). The attribute's comment: “kernel of restriction”.
+**`Stacks.Chow.cycleGroupRestrict_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocalizationSequence.lean#L317). The attribute's comment: “kernel of restriction”.
 
 > A cycle restricts to zero on the open complement exactly when it is the proper pushforward of
 > a cycle on the closed complement.
@@ -78,7 +78,7 @@ theorem cycleGroupRestrict_eq_zero_iff (C : ChowSituation.{u}) {X Y U : Scheme.{
 
 [Tag 02RD](https://stacks.math.columbia.edu/tag/02RD) in the Stacks Project.
 
-**`Stacks.Chow.flatPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L225). The attribute's comment: “composition of flat pullbacks”.
+**`Stacks.Chow.flatPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L225). The attribute's comment: “composition of flat pullbacks”.
 
 > **Stacks 02RD.** For flat morphisms `f : X ⟶ Y` and `g : Y ⟶ Z` of relative dimensions `r`
 > and `s`, flat pullback of cycles satisfies `f^* ∘ g^* = (g ∘ f)^*` as maps
@@ -105,14 +105,14 @@ theorem flatPullback_comp (C : ChowSituation.{u}) {X Y Z : Scheme.{u}}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Flat.comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Flat.comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L181) (StacksFrontier): “flatness of the composite”. References: EGA 0 (6.7.5), “Schemes (EGA preschemes)”; EGA IV (2.1.5), “global case Y' = Y”; EGA IV (2.1.6); EGA IV (2.2.11), “(iii), special case”; EGA IV (2.2.13), “(iii)”; EGA IV (6.6.1), “(i): flatness of h = g∘f”; EGA IV (7.3.5), “partial”; SGA 3 VIIB (1.3.3), “(i), special case”.
-- [`AlgebraicGeometry.RelativeDimension.comp_of_flat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Composition.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L190) (StacksFrontier): “relative dimension of the composite”.
+- [`AlgebraicGeometry.Flat.comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Flat.comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L181) (StacksFrontier): “flatness of the composite”. References: EGA 0 (6.7.5), “Schemes (EGA preschemes)”; EGA IV (2.1.5), “global case Y' = Y”; EGA IV (2.1.6); EGA IV (2.2.11), “(iii), special case”; EGA IV (2.2.13), “(iii)”; EGA IV (6.6.1), “(i): flatness of h = g∘f”; EGA IV (7.3.5), “partial”; SGA 3 VIIB (1.3.3), “(i), special case”.
+- [`AlgebraicGeometry.RelativeDimension.comp_of_flat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Composition.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/Composition.lean#L190) (StacksFrontier): “relative dimension of the composite”.
 
 ## Tag 02RE, a lemma
 
 [Tag 02RE](https://stacks.math.columbia.edu/tag/02RE) in the Stacks Project.
 
-**`Stacks.Chow.flatPullback_cycleAssociatedToClosedSubscheme_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L490). The attribute's comment: “part (1): cycle identity”.
+**`Stacks.Chow.flatPullback_cycleAssociatedToClosedSubscheme_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductAssociativity.lean#L490). The attribute's comment: “part (1): cycle identity”.
 
 > **Stacks 02RE, part (1), cycle identity.** For `q : X' ⟶ X` flat of relative dimension `r`
 > between schemes locally of finite type over the base of chapter 42, and `i : Z ⟶ X` a closed
@@ -146,7 +146,7 @@ theorem flatPullback_cycleAssociatedToClosedSubscheme_of_le (C : ChowSituation.{
       cycleAssociatedToClosedSubscheme C sX' (pullback.fst q i) (k + (r : ℤ))
 ```
 
-**`Stacks.Chow.flatPullback_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/CoherentSheafCycle.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/CoherentSheafCycle.lean#L161). The attribute's comment: “part (2): cycle identity”.
+**`Stacks.Chow.flatPullback_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/CoherentSheafCycle.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/CoherentSheafCycle.lean#L161). The attribute's comment: “part (2): cycle identity”.
 
 > For `f : X ⟶ Y` flat of relative dimension `r` between schemes locally of finite type over
 > the base of chapter 42, and `F` a coherent sheaf on `Y` whose support has delta-dimension at most
@@ -169,7 +169,7 @@ theorem flatPullback_cycleAssociatedToCoherentSheaf (C : ChowSituation.{u}) {X Y
         (schemeDeltaDimension_support_pullback_le C sX sY f hbase r hf F k hFk)
 ```
 
-**`Stacks.Chow.flatPullback_closedSubscheme_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean#L65). The attribute's comment: “part (1)”.
+**`Stacks.Chow.flatPullback_closedSubscheme_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean#L65). The attribute's comment: “part (1)”.
 
 > **Stacks 02RE, part (1).** Let `f : X ⟶ Y` be flat of relative dimension `r` between schemes
 > locally of finite type over the base of chapter 42, and let `i : Z ⟶ Y` be a closed subscheme
@@ -187,7 +187,7 @@ theorem flatPullback_closedSubscheme_cycle (C : ChowSituation.{u}) {X Y Z : Sche
         flatPullback C sX sY f hbase r hf k (cycleAssociatedToClosedSubscheme C sY i k)
 ```
 
-**`Stacks.Chow.flatPullback_coherentSheaf_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean#L81). The attribute's comment: “part (2)”.
+**`Stacks.Chow.flatPullback_coherentSheaf_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageCycle.lean#L81). The attribute's comment: “part (2)”.
 
 > **Stacks 02RE, part (2).** Let `f : X ⟶ Y` be flat of relative dimension `r` between schemes
 > locally of finite type over the base of chapter 42, and let `F` be a coherent sheaf on `Y` with
@@ -211,7 +211,7 @@ theorem flatPullback_coherentSheaf_cycle (C : ChowSituation.{u}) {X Y : Scheme.{
           (k + (r : ℤ)) hFk'
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L336). The attribute's comment: “part (1): dimension bound”.
+**`Stacks.Chow.schemeDeltaDimension_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L336). The attribute's comment: “part (1): dimension bound”.
 
 > **Stacks 02RE, part (1), dimension bound.** The scheme-theoretic inverse image of a closed
 > subscheme of delta-dimension at most `k` under a flat morphism of relative dimension `r` has
@@ -229,7 +229,7 @@ theorem schemeDeltaDimension_pullback_le
     schemeDeltaDimension C (pullback.fst f i ≫ sX) ≤ ((k + (r : ℤ) : ℤ) : EInt)
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_support_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L398). The attribute's comment: “part (2): support dimension bound”.
+**`Stacks.Chow.schemeDeltaDimension_support_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L398). The attribute's comment: “part (2): support dimension bound”.
 
 > **Stacks 02RE, part (2), dimension bound.** If a coherent sheaf on `Y` has support of
 > delta-dimension at most `k`, then the support of its pullback along a flat morphism of relative
@@ -253,7 +253,7 @@ theorem schemeDeltaDimension_support_pullback_le
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isCoherent_pullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L330) (StacksFrontier): “part (2): pullback coherence”.
+- [`AlgebraicGeometry.isCoherent_pullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDeltaDimension.lean#L330) (StacksFrontier): “part (2): pullback coherence”.
 
 ## Depends on
 
@@ -262,4 +262,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.14, Tag 02RA](https://stacks.math.columbia.edu/tag/02RA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

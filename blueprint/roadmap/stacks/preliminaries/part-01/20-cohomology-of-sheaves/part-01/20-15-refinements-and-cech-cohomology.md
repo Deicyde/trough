@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.15 Refinements and Čech cohomology
 
-Section 20.15 of the Stacks Project, [Tag 09UY](https://stacks.math.columbia.edu/tag/09UY). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.15 of the Stacks Project, [Tag 09UY](https://stacks.math.columbia.edu/tag/09UY). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09UZ, an equation
 
 [Tag 09UZ](https://stacks.math.columbia.edu/tag/09UZ) in the Stacks Project.
 
-**`Stacks.Cohomology.CechRefinement.cechDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L498). The attribute's comment: “the diagram of Čech cohomology over refinements”.
+**`Stacks.Cohomology.CechRefinement.cechDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L498). The attribute's comment: “the diagram of Čech cohomology over refinements”.
 
 > **Stacks Project, Tag 09UZ.** Čech cohomology of an abelian sheaf in a fixed degree, as a
 > functor of the open covering: a refinement acts through the induced map of Čech complexes.
@@ -23,7 +23,7 @@ Section 20.15 of the Stacks Project, [Tag 09UY](https://stacks.math.columbia.edu
 def cechDiagram : OpenCoverSet X ⥤ AddCommGrpCat.{max u v}
 ```
 
-**`Stacks.Cohomology.CechRefinement.colimitToCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L549). The attribute's comment: “the comparison from the colimit”.
+**`Stacks.Cohomology.CechRefinement.colimitToCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L549). The attribute's comment: “the comparison from the colimit”.
 
 > **Stacks Project, Tag 09UZ.** The canonical comparison from the Čech cohomology of a
 > topological space — the colimit, over all open coverings, of the Čech cohomology of the
@@ -37,7 +37,7 @@ def colimitToCohomology :
         DerivedCategory.Plus.homologyFunctor AddCommGrpCat.{max u v} p).obj G
 ```
 
-**`Stacks.Cohomology.CechRefinement.ι_colimitToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L560). The attribute's comment: “compatibility with the fixed-covering comparison”.
+**`Stacks.Cohomology.CechRefinement.ι_colimitToCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/ColimitOverRefinements.lean#L560). The attribute's comment: “compatibility with the fixed-covering comparison”.
 
 > **Stacks Project, Tag 09UZ.** On each open covering, the comparison out of the colimit
 > restricts to the fixed-covering comparison of Stacks 03AX.
@@ -53,7 +53,7 @@ theorem ι_colimitToCohomology (U : OpenCoverSet X) :
 
 [Tag 01FD](https://stacks.math.columbia.edu/tag/01FD) in the Stacks Project.
 
-**`Stacks.Cohomology.CechRefinement.cechToDerivedGlobalSections_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1002). The attribute's comment: “derived\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
+**`Stacks.Cohomology.CechRefinement.cechToDerivedGlobalSections_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1002). The attribute's comment: “derived\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
 
 > **[Stacks, Tag 01FD].** Let `f : X ⟶ Y` be a morphism of ringed spaces, let `φ : f^* G ⟶ F`
 > be an `f`-map of sheaves of modules, let `U` be an open covering of `X`, let `V` be an open
@@ -84,7 +84,7 @@ theorem cechToDerivedGlobalSections_naturality_of_refinement :
         derivedModuleGlobalSectionsMap f φ
 ```
 
-**`Stacks.Cohomology.CechRefinement.cechCohomologyToCohomology_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1045). The attribute's comment: “cohomology\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
+**`Stacks.Cohomology.CechRefinement.cechCohomologyToCohomology_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1045). The attribute's comment: “cohomology\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
 
 > **[Stacks, Tag 01FD] on cohomology.** The canonical maps from Čech cohomology to sheaf
 > cohomology of [Stacks, Tag 01EQ] commute with an `f`-map and a refinement of the inverse-image
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.15, Tag 09UY](https://stacks.math.columbia.edu/tag/09UY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

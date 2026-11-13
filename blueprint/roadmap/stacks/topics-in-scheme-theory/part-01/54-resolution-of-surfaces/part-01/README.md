@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 54.2 A trace map in positive… to 54.14 Resolution
+# 54.2 A trace map in positive… to 54.15 Embedded resolution
 
 - [54.2 A trace map in positive characteristic](54-2-a-trace-map-in-positive-characteristic.md)
 - [54.3 Quadratic transformations](54-3-quadratic-transformations.md)
@@ -17,3 +17,4 @@ navigation: transparent
 - [54.12 Rational double points](54-12-rational-double-points.md)
 - [54.13 Implied properties](54-13-implied-properties.md)
 - [54.14 Resolution](54-14-resolution.md)
+- [54.15 Embedded resolution](54-15-embedded-resolution.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.31 Supports of abelian sheaves
 
-Section 59.31 of the Stacks Project, [Tag 04FQ](https://stacks.math.columbia.edu/tag/04FQ). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.31 of the Stacks Project, [Tag 04FQ](https://stacks.math.columbia.edu/tag/04FQ). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04HV, a lemma
 
 [Tag 04HV](https://stacks.math.columbia.edu/tag/04HV) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_open_of_isSubterminal_topos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/ExistenceClause.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/ExistenceClause.lean#L465). The attribute's comment: “the case of a subterminal object of the topos of `AlgebraicGeometry.smallEtaleRingedSite`, whose sections are of `Type u`; this is `AlgebraicGeometry.existsUnique_open_of_isSubterminal`, which carries the tag in its own generality `Type (max u v)`, instantiated at `v := u` with no transport in between”.
+**`AlgebraicGeometry.existsUnique_open_of_isSubterminal_topos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/ExistenceClause.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/ExistenceClause.lean#L471). The attribute's comment: “the case of a subterminal object of the topos of `AlgebraicGeometry.smallEtaleRingedSite`, whose sections are of `Type u`; this is `AlgebraicGeometry.existsUnique_open_of_isSubterminal`, which carries the tag in its own generality `Type (max u v)`, instantiated at `v := u` with no transport in between”.
 
 > **Stacks 04HV for a subterminal object of the topos of the small étale ringed site.** A
 > subsheaf of the final object of `(Sh(S_étale), 𝒪_S)` is represented by exactly one open
@@ -40,7 +40,7 @@ theorem existsUnique_open_of_isSubterminal_topos (X : B.Scheme)
             uliftYoneda.{u}.obj (Over.mk W.ι)))
 ```
 
-**`AlgebraicGeometry.existsUnique_open_of_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubterminalSheaves.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubterminalSheaves.lean#L722).
+**`AlgebraicGeometry.existsUnique_open_of_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubterminalSheaves.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SubterminalSheaves.lean#L722).
 
 > A subterminal sheaf on the small étale site is represented by a unique open
 > subscheme of the base.
@@ -63,7 +63,7 @@ public theorem existsUnique_open_of_isSubterminal
 
 [Tag 04FR](https://stacks.math.columbia.edu/tag/04FR) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.etaleGerm_eq_zero_iff_mem_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkVanishing.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkVanishing.lean#L89). The attribute's comment: “part (3): a germ vanishes exactly when the lift lands in the zero locus”.
+**`AlgebraicGeometry.SmallEtale.etaleGerm_eq_zero_iff_mem_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkVanishing.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteSupportStalkVanishing.lean#L89). The attribute's comment: “part (3): a germ vanishes exactly when the lift lands in the zero locus”.
 
 > **Stacks 04FR, part (3).** A germ vanishes exactly when the lift lands in the maximal open
 > zero locus of the section.
@@ -89,7 +89,7 @@ public theorem etaleGerm_eq_zero_iff_mem_zeroOpen (W : SmallEtale B S hS)
         (zeroOpen B S hS F W a : Set ((SmallEtale.toScheme B S hS).obj W))
 ```
 
-**`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_range_subset_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L552). The attribute's comment: “part (2): vanishing over the image”. References: SGA 2 XIV (1.8.2.1), “abelian, image criterion”.
+**`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_range_subset_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L552). The attribute's comment: “part (2): vanishing over the image”. References: SGA 2 XIV (1.8.2.1), “abelian, image criterion”.
 
 > A section pulls back to zero along an arbitrary arrow of the small étale site precisely when
 > the image of that arrow is contained in its maximal Zariski open zero locus.
@@ -106,14 +106,14 @@ public theorem map_eq_zero_iff_range_subset_zeroOpen
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SmallEtale.zeroOpen`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L188), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L395) (StacksFrontier): “part (1): maximal open zero locus”.
-- [`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_le_zeroOpen`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L272), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L397) (StacksFrontier): “part (1): vanishing and maximality on Zariski opens”.
+- [`AlgebraicGeometry.SmallEtale.zeroOpen`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L188), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L395) (StacksFrontier): “part (1): maximal open zero locus”.
+- [`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_le_zeroOpen`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L272), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L397) (StacksFrontier): “part (1): vanishing and maximality on Zariski opens”.
 
 ## Tag 04FS, a definition
 
 [Tag 04FS](https://stacks.math.columbia.edu/tag/04FS) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L196). The attribute's comment: “support of a section”. References: SGA 4 VIII (6.6), “support of a section”.
+**`AlgebraicGeometry.SmallEtale.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L196). The attribute's comment: “support of a section”. References: SGA 4 VIII (6.6), “support of a section”.
 
 > The support of a section of an abelian sheaf on the small étale site is the complement of its
 > maximal Zariski open zero locus.
@@ -124,7 +124,7 @@ public def supportSection (F : Sheaf (SmallEtale.topology B S hS) AddCommGrpCat.
     Set ((SmallEtale.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L272). The attribute's comment: “support of a section”. References: SGA 2 XIV (1.8.2.1), “abelian, s'=0”.
+**`AlgebraicGeometry.SmallEtale.map_eq_zero_iff_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L272). The attribute's comment: “support of a section”. References: SGA 2 XIV (1.8.2.1), “abelian, s'=0”.
 
 > Along an open immersion of the small étale site, a section restricts to zero precisely when the
 > image is contained in the maximal zero open.
@@ -139,7 +139,7 @@ public theorem map_eq_zero_iff_le_zeroOpen
       ((SmallEtale.toScheme B S hS).map f).opensRange ≤ zeroOpen B S hS F U s
 ```
 
-**`AlgebraicGeometry.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L136). The attribute's comment: “support\_section”.
+**`AlgebraicGeometry.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L136). The attribute's comment: “support\_section”.
 
 > The support of a section is the complement of its maximal Zariski open
 > zero locus.
@@ -152,7 +152,7 @@ public def supportSection (B : BigEtaleSite.{u}) (S : Scheme.{u})
     Set ((SmallEtale.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.zero_restrict_iff_image_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L146). The attribute's comment: “support\_section”.
+**`AlgebraicGeometry.zero_restrict_iff_image_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L146). The attribute's comment: “support\_section”.
 
 > On an open immersion, the section vanishes precisely when the image is
 > contained in the maximal zero open.
@@ -168,7 +168,7 @@ public theorem zero_restrict_iff_image_le_zeroOpen (B : BigEtaleSite.{u})
   ((SmallEtale.toScheme B S hS).map f).opensRange ≤ zeroOpen B S hS F U s
 ```
 
-**`AlgebraicGeometry.supportSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L76). The attribute's comment: “support\_sheaf”.
+**`AlgebraicGeometry.supportSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L76). The attribute's comment: “support\_sheaf”.
 
 > The points of a scheme at which a geometric stalk of an abelian étale
 > sheaf is nonzero.
@@ -177,7 +177,7 @@ public theorem zero_restrict_iff_image_le_zeroOpen (B : BigEtaleSite.{u})
 public def supportSheaf : Set S
 ```
 
-**`AlgebraicGeometry.mem_supportSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L133). The attribute's comment: “support\_sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
+**`AlgebraicGeometry.mem_supportSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L133). The attribute's comment: “support\_sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
 
 > Nonvanishing of a stalk is independent of the geometric point above `x`.
 
@@ -193,7 +193,7 @@ public theorem mem_supportSheaf_iff (p : GeometricPoint S) (x : S)
 
 [Tag 04FT](https://stacks.math.columbia.edu/tag/04FT) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isClosed_supportSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L621). The attribute's comment: “the support of a section is closed”.
+**`AlgebraicGeometry.SmallEtale.isClosed_supportSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L621). The attribute's comment: “the support of a section is closed”.
 
 > The support of a section of an abelian étale sheaf is closed.
 
@@ -204,7 +204,7 @@ public theorem isClosed_supportSection
     IsClosed (supportSection B S hS F U s)
 ```
 
-**`AlgebraicGeometry.SmallEtale.supportSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L629). The attribute's comment: “the support of a sum of sections”.
+**`AlgebraicGeometry.SmallEtale.supportSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L629). The attribute's comment: “the support of a sum of sections”.
 
 > The support of a sum of sections is contained in the union of their supports.
 
@@ -216,7 +216,7 @@ public theorem supportSection_add_subset
       supportSection B S hS F U s ∪ supportSection B S hS F U s'
 ```
 
-**`AlgebraicGeometry.SmallEtale.supportSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L659). The attribute's comment: “the support under a morphism of sheaves”.
+**`AlgebraicGeometry.SmallEtale.supportSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSections.lean#L659). The attribute's comment: “the support under a morphism of sheaves”.
 
 > A morphism of abelian sheaves cannot enlarge the support of a section.
 
@@ -227,7 +227,7 @@ public theorem supportSection_map_subset
     supportSection B S hS G U (φ.hom.app (op U) s) ⊆ supportSection B S hS F U s
 ```
 
-**`AlgebraicGeometry.supportSheaf_eq_iUnion_image_supportSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L134). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.supportSheaf_eq_iUnion_image_supportSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L134). The attribute's comment: “part (4)”.
 
 > **Stacks 04FT, part (4).** The support of an abelian sheaf on the small étale site is the
 > union, over all objects of the site and all sections of the sheaf over them, of the images in the
@@ -240,7 +240,7 @@ public theorem supportSheaf_eq_iUnion_image_supportSection :
         (B.inclusion.map U.obj.hom).base '' supportSection B S hS F U a
 ```
 
-**`AlgebraicGeometry.supportSheaf_subset_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L163). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.supportSheaf_subset_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L163). The attribute's comment: “part (5)”.
 
 > **Stacks 04FT, part (5).** If a map of abelian sheaves on the small étale site is surjective,
 > that is locally surjective, then the support of its target is contained in the support of its
@@ -252,7 +252,7 @@ public theorem supportSheaf_subset_of_isLocallySurjective (φ : F ⟶ G)
     AlgebraicGeometry.supportSheaf B S hS G ⊆ AlgebraicGeometry.supportSheaf B S hS F
 ```
 
-**`AlgebraicGeometry.supportSheaf_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L192). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.supportSheaf_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L192). The attribute's comment: “part (6)”.
 
 > **Stacks 04FT, part (6).** If a map of abelian sheaves on the small étale site is injective,
 > then the support of its source is contained in the support of its target.
@@ -263,7 +263,7 @@ public theorem supportSheaf_subset_of_injective (φ : F ⟶ G)
     AlgebraicGeometry.supportSheaf B S hS F ⊆ AlgebraicGeometry.supportSheaf B S hS G
 ```
 
-**`AlgebraicGeometry.isClosed_supportSection_and_supportSheaf_eq_iUnion_image_supportSection_and_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L247).
+**`AlgebraicGeometry.isClosed_supportSection_and_supportSheaf_eq_iUnion_image_supportSection_and_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSheafSections.lean#L247).
 
 > **Stacks Project, Tag 04FT.** Let `S` be a scheme, let `F` be an abelian sheaf on the small
 > étale site of `S`, let `U` be an object of that site and let `σ ∈ F(U)`. Then
@@ -317,7 +317,7 @@ public theorem isClosed_supportSection_and_supportSheaf_eq_iUnion_image_supportS
 
 [Tag 04FU](https://stacks.math.columbia.edu/tag/04FU) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isClosed_supportSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheaf.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/SupportSheaf.lean#L165).
+**`AlgebraicGeometry.SmallEtale.isClosed_supportSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/SupportSheaf.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/SupportSheaf.lean#L165).
 
 > **Stacks 04FU.** The support of a sheaf of rings on the small étale site is closed: a ring
 > is zero exactly when its unit is zero, so the support of a sheaf of rings is the support of its
@@ -335,4 +335,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.31, Tag 04FQ](https://stacks.math.columbia.edu/tag/04FQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

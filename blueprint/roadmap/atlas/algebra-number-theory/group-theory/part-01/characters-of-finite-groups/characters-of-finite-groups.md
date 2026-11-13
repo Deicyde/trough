@@ -7,7 +7,7 @@ statement: formalized
 
 # Characters of finite groups: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/index.html).
 
 Complex characters and representations used to study finite groups: class functions and orthogonality, irreducible character bases, character degrees and values, McKay conjecture, rational groups, permutation characters, blocks of defect zero, Frobenius group determinant, convolution on finite groups, and Burnside's p^a q^b theorem; general representation theory of algebras and Lie groups belongs to RepresentationTheory.
 
@@ -23,7 +23,7 @@ $g \mapsto \rho(g) \otimes \rho(g)$, has exactly $4$ isotypic components.
 
 - É. Mathieu, Sur les fonctions cinq fois transitives de 24 quantités, J. Math. Pures Appl. (1873); ATLAS of Finite Groups, M₂₃ character table. Problem `m23_irrep_tensor_square_decomp` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.M23TensorSquareWanted.RepresentationTheory.m23_irrep_tensor_square_decomp` is written with `theorem_wanted` in [WantedExt/GroupTheory/M23TensorSquareWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/M23TensorSquareWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/index.html#m23-irrep-tensor-square-decomp).
+Stated but not proved: `MathlibExt.GroupTheory.M23TensorSquareWanted.RepresentationTheory.m23_irrep_tensor_square_decomp` is written with `theorem_wanted` in [WantedExt/GroupTheory/M23TensorSquareWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/M23TensorSquareWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/index.html#m23-irrep-tensor-square-decomp).
 
 ## Depends on
 
@@ -32,4 +32,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Characters of finite groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/characters-of-finite-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/characters-of-finite-groups)

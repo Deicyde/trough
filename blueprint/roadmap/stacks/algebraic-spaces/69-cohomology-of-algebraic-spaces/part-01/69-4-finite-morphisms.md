@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.4 Finite morphisms
 
-Section 69.4 of the Stacks Project, [Tag 0DK2](https://stacks.math.columbia.edu/tag/0DK2). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.4 of the Stacks Project, [Tag 0DK2](https://stacks.math.columbia.edu/tag/0DK2). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A4K, a lemma
 
 [Tag 0A4K](https://stacks.math.columbia.edu/tag/0A4K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L136). The attribute's comment: “exactness of f\_*, the finite case”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L136). The attribute's comment: “exactness of f\_*, the finite case”.
 
 > **Stacks 0A4K, exactness, for a finite morphism.** For a finite morphism `f : X ⟶ Y` of
 > algebraic spaces over `S` the direct image on the abelian sheaves of the small étale sites is
@@ -36,7 +36,7 @@ theorem smallEtaleAbelianPushforward_exact_of_isFinite {X Y : AlgebraicSpaces B 
         (smallToposMorphism B S hS f))
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L154). The attribute's comment: “vanishing of R^p f\_* for p > 0, the finite case”. References: SGA 4 Vbis (4.3.4), “Remarque 4.3.4”; SGA 4½ Arcata (2.3.6), “more general”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L154). The attribute's comment: “vanishing of R^p f\_* for p > 0, the finite case”. References: SGA 4 Vbis (4.3.4), “Remarque 4.3.4”; SGA 4½ Arcata (2.3.6), “more general”.
 
 > **Stacks 0A4K, vanishing of the positive-degree higher direct images, for a finite
 > morphism.** For a finite morphism `f : X ⟶ Y` of algebraic spaces over `S` the right derived
@@ -55,7 +55,7 @@ theorem smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite
       (smallToposMorphism B S hS f)).rightDerivedPlus p).obj F)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L112). The attribute's comment: “exactness of f\_* for an integral morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L112). The attribute's comment: “exactness of f\_* for an integral morphism of algebraic spaces”.
 
 > **Stacks 0A4K, exactness.** For an integral morphism `f : X ⟶ Y` of algebraic spaces over
 > `S` the direct image on the abelian sheaves of the small étale sites is exact.
@@ -74,7 +74,7 @@ theorem smallEtaleAbelianPushforward_exact_of_isIntegralHom {X Y : AlgebraicSpac
         (smallToposMorphism B S hS f))
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L131). The attribute's comment: “vanishing of R^p f\_* for p > 0 for an integral morphism of algebraic spaces”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4½ Arcata (2.3.6), “more general”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L131). The attribute's comment: “vanishing of R^p f\_* for p > 0 for an integral morphism of algebraic spaces”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4½ Arcata (2.3.6), “more general”.
 
 > **Stacks 0A4K, vanishing of the positive-degree higher direct images.** For an integral
 > morphism `f : X ⟶ Y` of algebraic spaces over `S` the right derived functors of the small étale
@@ -97,7 +97,7 @@ theorem smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isIntegralHom
 
 [Tag 0DK3](https://stacks.math.columbia.edu/tag/0DK3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_geometricLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L180). The attribute's comment: “the lifts `x₁, …, xₙ` of `y` are finite in number”.
+**`AlgebraicGeometry.Space.finite_geometricLifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L180). The attribute's comment: “the lifts `x₁, …, xₙ` of `y` are finite in number”.
 
 > **Stacks 0DK3, finiteness of the index set.** A geometric point of the target of a finite
 > morphism of algebraic spaces has finitely many lifts, so the product in the statement is a
@@ -115,7 +115,7 @@ theorem finite_geometricLifts (hπ : IsFinite B S hS π.hom)
     Finite (GeometricLifts B S hS π y)
 ```
 
-**`AlgebraicGeometry.Space.stalkPushforwardToProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L301). The attribute's comment: “the canonical map `(π_*F)_y ⟶ ∏ᵢ F_{xᵢ}` over the lifts of `y`”.
+**`AlgebraicGeometry.Space.stalkPushforwardToProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L301). The attribute's comment: “the canonical map `(π_*F)_y ⟶ ∏ᵢ F_{xᵢ}` over the lifts of `y`”.
 
 > **The comparison map of Stacks 0DK3.** For a finite morphism `π : X ⟶ Y` of algebraic
 > spaces and a geometric point `y` of `Y`, the stalk at `y` of the direct image of a sheaf of
@@ -136,7 +136,7 @@ def stalkPushforwardToProduct (y : GeometricPoint B S hS Y.1)
         stalkSet (geometricLiftPoint B S hS π y v) F.obj)
 ```
 
-**`AlgebraicGeometry.Space.stalkPushforwardToProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L323). The attribute's comment: “naturality of the comparison map in the sheaf”.
+**`AlgebraicGeometry.Space.stalkPushforwardToProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L323). The attribute's comment: “naturality of the comparison map in the sheaf”.
 
 > **Stacks 0DK3 is natural in the sheaf.** The comparison map commutes with the stalk maps
 > induced by a morphism of sheaves of sets on `X_étale`.
@@ -152,7 +152,7 @@ theorem stalkPushforwardToProduct_natural (y : GeometricPoint B S hS Y.1)
         (stalkPushforwardToProduct B S hS π y F z v)
 ```
 
-**`AlgebraicGeometry.Space.geometricLiftsEquivOfIsPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L415). The attribute's comment: “the lifts of `y` are the lifts of `v` along the base change of `π`”.
+**`AlgebraicGeometry.Space.geometricLiftsEquivOfIsPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforward.lean#L415). The attribute's comment: “the lifts of `y` are the lifts of `v` along the base change of `π`”.
 
 > **Stacks 0DK3: the index set of the product is unchanged by base change.** For a
 > cartesian square
@@ -184,7 +184,7 @@ noncomputable def geometricLiftsEquivOfIsPullback {X' V : AlgebraicSpaces B S hS
     GeometricLifts B S hS f' v ≃ GeometricLifts B S hS π (geometricPointMap g.hom v)
 ```
 
-**`AlgebraicGeometry.Space.bijective_presheafFiberCompToPi_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforwardProduct.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforwardProduct.lean#L356).
+**`AlgebraicGeometry.Space.bijective_presheafFiberCompToPi_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforwardProduct.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteStalkPushforwardProduct.lean#L356).
 
 > **Stacks 0DK3.** Let `π : X ⟶ Y` be a finite morphism of algebraic spaces and `y` a geometric
 > point of `Y` with lifts `x₁, …, xₙ` in `X`. For every sheaf of sets `F` on `X_étale` the stalk of
@@ -216,7 +216,7 @@ theorem bijective_presheafFiberCompToPi_of_isFinite (hπ : IsFinite B S hS π.ho
 
 [Tag 0DK4](https://stacks.math.columbia.edu/tag/0DK4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHomOfSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean#L181). The attribute's comment: “the morphism of ringed topoi determined by `π`, `𝒜`, `ℬ` and `φ`”.
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHomOfSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean#L182). The attribute's comment: “the morphism of ringed topoi determined by `π`, `𝒜`, `ℬ` and `φ`”.
 
 > **The morphism of ringed topoi of Stacks 04G0**, `f : (Sh(Z_étale), ℬ) ⟶ (Sh(X_étale), 𝒜)`:
 > its underlying morphism of topoi is that of Stacks 03G2, part (3), and its structure map is `φ`.
@@ -235,7 +235,7 @@ noncomputable def smallEtaleRingedToposHomOfSharp (i : Z ⟶ X)
       (smallEtaleRingedToposOfRings B S hS Z ℬ) (smallEtaleRingedToposOfRings B S hS X 𝒜)
 ```
 
-**`AlgebraicGeometry.Space.tensorPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean#L201). The attribute's comment: “the canonical map `𝓖 ⊗_ℬ f_*𝓕 ⟶ f_*(f^*𝓖 ⊗_𝒜 𝓕)`”.
+**`AlgebraicGeometry.Space.tensorPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionModuleTensorPushforward.lean#L202). The attribute's comment: “the canonical map `𝓖 ⊗_ℬ f_*𝓕 ⟶ f_*(f^*𝓖 ⊗_𝒜 𝓕)`”.
 
 > **The canonical map of Stacks 04G0**, `𝓕 ⊗_𝒜 f_*𝓖 ⟶ f_*(f^*𝓕 ⊗_ℬ 𝓖)`: the adjoint
 > transpose of `f^*(𝓕 ⊗_𝒜 f_*𝓖) = f^*𝓕 ⊗_ℬ f^*f_*𝓖 ⟶ f^*𝓕 ⊗_ℬ 𝓖`, built from the identity of
@@ -250,8 +250,10 @@ noncomputable def tensorPushforwardMap (i : Z ⟶ X)
     {ℬ : Sheaf (SmallEtale.topology B S hS Z.1) CommRingCat.{u}}
     (φ : 𝒜 ⟶ (pushforwardCommRingFunctor.{u, u, u, u + 1, u, u + 1}
       (smallToposMorphismTypeU B S hS i)).obj ℬ)
-    (𝓕 : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedToposOfRings B S hS X 𝒜).O))
-    (𝓖 : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedToposOfRings B S hS Z ℬ).O)) :
+    (𝓕 : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf
+      (smallEtaleRingedToposOfRings B S hS X 𝒜).O))
+    (𝓖 : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf
+      (smallEtaleRingedToposOfRings B S hS Z ℬ).O)) :
     ((Stacks.SheafOfModules.Tensor.sheafTensor.{u + 1, u, u, u, u} 𝒜).obj 𝓕).obj
       ((pushforwardModules (smallEtaleRingedToposHomOfSharp B S hS i φ)).obj 𝓖) ⟶
       (pushforwardModules (smallEtaleRingedToposHomOfSharp B S hS i φ)).obj
@@ -259,7 +261,7 @@ noncomputable def tensorPushforwardMap (i : Z ⟶ X)
           (((smallEtaleRingedToposHomOfSharp B S hS i φ).pullbackModules).obj 𝓕)).obj 𝓖)
 ```
 
-**`AlgebraicGeometry.Space.isIso_tensorPushforwardMap_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTensorPushforwardIso.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTensorPushforwardIso.lean#L108).
+**`AlgebraicGeometry.Space.isIso_tensorPushforwardMap_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTensorPushforwardIso.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTensorPushforwardIso.lean#L108).
 
 > **Stacks 0DK4.** Let `π : X ⟶ Y` be a finite morphism of algebraic spaces over `S`, `𝒜` a
 > sheaf of rings on `X_étale`, `ℬ` a sheaf of rings on `Y_étale` and `φ : ℬ ⟶ π_*𝒜` a
@@ -285,7 +287,7 @@ theorem isIso_tensorPushforwardMap_of_isFinite (π : X ⟶ Y) (hπ : IsFinite B 
 
 [Tag 0DK5](https://stacks.math.columbia.edu/tag/0DK5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_derivedProjectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L164). The attribute's comment: “the invertibility clause, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for”.
+**`AlgebraicGeometry.Space.isIso_derivedProjectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L164). The attribute's comment: “the invertibility clause, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for”.
 
 > **Stacks 0DK5, the invertibility clause**, reduced to the derived adjunction of Stacks 07A6:
 > the canonical map `Rf_*M ⊗^L_{𝒪_D} K ⟶ Rf_*(M ⊗^L_{𝒪_C} Lf^*K)` of Equation 21.50.0.1 is an
@@ -311,7 +313,7 @@ theorem isIso_derivedProjectionFormulaMap
     IsIso (projectionFormulaMap f hmos M K)
 ```
 
-**`AlgebraicGeometry.Space.derivedProjectionFormulaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L188). The attribute's comment: “the isomorphism, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for; the tensor factors in the order of Equation 21.50.0.1”.
+**`AlgebraicGeometry.Space.derivedProjectionFormulaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L188). The attribute's comment: “the isomorphism, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for; the tensor factors in the order of Equation 21.50.0.1”.
 
 > **Stacks 0DK5** as an isomorphism `Rf_*M ⊗^L_{𝒪_D} K ≅ Rf_*(M ⊗^L_{𝒪_C} Lf^*K)`, with the
 > tensor factors in the order Equation 21.50.0.1 of Stacks 0B56 is written in; the forward map is
@@ -330,7 +332,7 @@ def derivedProjectionFormulaIso
         (((derivedTensorProductFunctor X.O).obj M).obj ((derivedPullback f).obj K))
 ```
 
-**`AlgebraicGeometry.Space.derivedProjectionFormulaIsoSourceOrder`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L225). The attribute's comment: “the isomorphism in the source's order of tensor factors, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for”.
+**`AlgebraicGeometry.Space.derivedProjectionFormulaIsoSourceOrder`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedModuleTensorPushforward.lean#L225). The attribute's comment: “the isomorphism in the source's order of tensor factors, for a morphism of ringed topoi arising from a morphism of sites at a single universe, which is what the derived pullback tensor comparison of 07A4 requires — the small étale ringed topos of an algebraic space does not satisfy this — and given the counit of 07A6 at `M` and its unit at `Rf_*M ⊗^L K`, which is what finiteness of `π` is used for”.
 
 > **Stacks 0DK5 in the order the source writes it**,
 > `K ⊗^L_{𝒪_D} Rf_*M ≅ Rf_*(Lf^*K ⊗^L_{𝒪_C} M)`.
@@ -352,7 +354,7 @@ def derivedProjectionFormulaIsoSourceOrder
         (((derivedTensorProductFunctor X.O).obj ((derivedPullback f).obj K)).obj M)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_derivedTensorPushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDerivedTensorPushforward.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDerivedTensorPushforward.lean#L525).
+**`AlgebraicGeometry.Space.nonempty_derivedTensorPushforwardIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDerivedTensorPushforward.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDerivedTensorPushforward.lean#L528).
 
 > **Stacks 0DK5.** Let `π : X ⟶ Y` be a finite morphism of algebraic spaces over `S`, `𝒜` a
 > sheaf of rings on `X_étale`, `ℬ` a sheaf of rings on `Y_étale` and `φ : ℬ ⟶ π_*𝒜` a homomorphism
@@ -392,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.4, Tag 0DK2](https://stacks.math.columbia.edu/tag/0DK2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,50 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.flatPullbackFamily, Stacks.Chow.baseChangeFamily_baseChangeFamily_comp, Stacks.Chow.restrictedFamily_eq_flatPullbackFamily_baseChangeFamily, Stacks.Chow.baseChangeFamily_flatPullbackFamily, Stacks.Chow.flatPullbackFamily_flatPullbackFamily, Stacks.Chow.baseChangeFamily_properPushforwardFamily_of_isProper, Stacks.Chow.properPushforwardFamily_properPushforwardFamily, Stacks.Chow.flatPullbackFamily_properPushforwardFamily
+lean: Stacks.Chow.baseChangeFamilyOfIsPullback, Stacks.Chow.FamilyOfCycles, Stacks.Chow.properPushforwardFamily, Stacks.Chow.flatPullbackFamily, Stacks.Chow.restrictedFamily, Stacks.Chow.baseChangeFamily_baseChangeFamily_comp, Stacks.Chow.restrictedFamily_eq_flatPullbackFamily_baseChangeFamily, Stacks.Chow.baseChangeFamily_flatPullbackFamily
 statement: formalized
 proof: formalized
 ---
 
 # 62.5 Families of cycles on fibres
 
-Section 62.5 of the Stacks Project, [Tag 0H4N](https://stacks.math.columbia.edu/tag/0H4N). 11 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.5 of the Stacks Project, [Tag 0H4N](https://stacks.math.columbia.edu/tag/0H4N). 11 tags here are carried by 38 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H4N, the section
 
 [Tag 0H4N](https://stacks.math.columbia.edu/tag/0H4N) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackFamily.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackFamily.lean#L162). The attribute's comment: “flat pullback of a family of cycles on fibres”.
+**`Stacks.Chow.baseChangeFamilyOfIsPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSquare.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSquare.lean#L80). The attribute's comment: “base change of a family of cycles on fibres through a cartesian square”.
+
+> **The base change of a family of cycles through a cartesian square.** For a cartesian square
+> with right-hand column `f : X ⟶ S`, bottom edge `g : T ⟶ S` and left-hand column `p : P ⟶ T`,
+> the base change `g^*α`, read on the fibres of `p` through the canonical isomorphism
+> `P ≅ X ×_S T` over `T`.
+
+```lean
+def baseChangeFamilyOfIsPullback (α : FamilyOfCycles f r) : FamilyOfCycles p r
+```
+
+**`Stacks.Chow.FamilyOfCycles`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean#L84). The attribute's comment: “a family of `r`-cycles on the fibres of `X/S`”.
+
+> A family of `r`-cycles on the fibres of `f`: an `r`-cycle on the scheme-theoretic fibre
+> over each point of the base.
+
+```lean
+abbrev FamilyOfCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f] (r : ℕ) : Type u
+```
+
+**`Stacks.Chow.properPushforwardFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L129). The attribute's comment: “proper pushforward of a family of cycles on fibres”.
+
+> **The pushforward `f_*α` of a family of cycles on fibres.** The member over `s` is the proper
+> pushforward of the member of `α` over `s` along the morphism `f_s : X_s ⟶ Y_s` induced on the
+> fibres.
+
+```lean
+def properPushforwardFamily (r : ℕ) (α : FamilyOfCycles sX r) : FamilyOfCycles sY r
+```
+
+**`Stacks.Chow.flatPullbackFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackFamily.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackFamily.lean#L162). The attribute's comment: “flat pullback of a family of cycles on fibres”.
 
 > **Stacks Project, Section 0H4N.** The flat pullback `j^*α` of a family `α` of `r`-cycles on
 > the fibres of `X/S` along a flat morphism `j : U ⟶ X` of schemes over `S`, locally of finite type
@@ -28,11 +58,28 @@ def flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f
     FamilyOfCycles fU (r + e)
 ```
 
+**`Stacks.Chow.restrictedFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Restriction.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Restriction.lean#L306). The attribute's comment: “restriction of a family of cycles on fibres to open subschemes”.
+
+> The restriction of a family of cycles to the fibres of an open subscheme, specified by
+> restriction of the coefficients along the canonical fibre map.
+
+```lean
+def restrictedFamily {X S U V : Scheme.{u}} (f : X ⟶ S)
+    [LocallyOfFiniteType f] (fU : U ⟶ V) [LocallyOfFiniteType fU]
+    (j : U ⟶ X) [IsOpenImmersion j] (i : V ⟶ S) [IsOpenImmersion i]
+    (h : j ≫ f = fU ≫ i) (r : ℕ) (α : FamilyOfCycles f r) :
+    {β : FamilyOfCycles fU r //
+      ∀ (t : V) (x : fU.fiber t),
+        (β t : AlgebraicCycle (fU.fiber t) ℤ) x =
+          (α (i t) : AlgebraicCycle (f.fiber (i t)) ℤ)
+            (restrictedFiberMap f fU j i h t x)}
+```
+
 ## Tag 0H4P, a lemma
 
 [Tag 0H4P](https://stacks.math.columbia.edu/tag/0H4P) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeFamily_baseChangeFamily_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L98). The attribute's comment: “part (1): base change is functorial”.
+**`Stacks.Chow.baseChangeFamily_baseChangeFamily_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L98). The attribute's comment: “part (1): base change is functorial”.
 
 > **Stacks Project, Tag 0H4P, part (1).** Base change of families of cycles on fibres is
 > functorial: base changing a family `α` of `r`-cycles on the fibres of `X/S` along `g : S' ⟶ S`
@@ -48,7 +95,7 @@ theorem baseChangeFamily_baseChangeFamily_comp {X S S' S'' : Scheme.{u}} (f : X 
         (baseChangeFamily f (h ≫ g) r α u)
 ```
 
-**`Stacks.Chow.restrictedFamily_eq_flatPullbackFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L150). The attribute's comment: “part (2): restriction is base change followed by flat pullback”.
+**`Stacks.Chow.restrictedFamily_eq_flatPullbackFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L150). The attribute's comment: “part (2): restriction is base change followed by flat pullback”.
 
 > **Stacks Project, Tag 0H4P, part (2).** Restriction of families of cycles on fibres is a
 > combination of base change and flat pullback: for open subschemes `U ⊆ X` and `V ⊆ S` with
@@ -64,7 +111,7 @@ theorem restrictedFamily_eq_flatPullbackFamily_baseChangeFamily (r : ℕ)
         (relativeDimension_of_isOpenImmersion _) r (baseChangeFamily f i r α)
 ```
 
-**`Stacks.Chow.baseChangeFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L183). The attribute's comment: “part (3): flat pullback commutes with base change”.
+**`Stacks.Chow.baseChangeFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L183). The attribute's comment: “part (3): flat pullback commutes with base change”.
 
 > **Stacks Project, Tag 0H4P, part (3).** Flat pullback of families of cycles on fibres commutes
 > with base change: for a flat morphism `j : U ⟶ X` over `S`, locally of finite type and of
@@ -83,7 +130,7 @@ theorem baseChangeFamily_flatPullbackFamily {X S U T : Scheme.{u}} (f : X ⟶ S)
         (baseChangeFamily f g r α)
 ```
 
-**`Stacks.Chow.flatPullbackFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L258). The attribute's comment: “part (4): flat pullback is functorial”.
+**`Stacks.Chow.flatPullbackFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L258). The attribute's comment: “part (4): flat pullback is functorial”.
 
 > **Stacks Project, Tag 0H4P, part (4).** Flat pullback of families of cycles on fibres is
 > functorial: for flat morphisms `j : U ⟶ X` and `k : V ⟶ U` over `S`, locally of finite type and
@@ -109,7 +156,7 @@ theorem flatPullbackFamily_flatPullbackFamily {X S U V : Scheme.{u}} (f : X ⟶ 
           AlgebraicCycle (fV.fiber s) ℤ)
 ```
 
-**`Stacks.Chow.baseChangeFamily_properPushforwardFamily_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L326). The attribute's comment: “part (5): proper pushforward commutes with base change”.
+**`Stacks.Chow.baseChangeFamily_properPushforwardFamily_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L326). The attribute's comment: “part (5): proper pushforward commutes with base change”.
 
 > **Stacks Project, Tag 0H4P, part (5).** Proper pushforward of families of cycles on fibres
 > commutes with base change: for a proper morphism `f : X ⟶ Y` of schemes locally of finite type
@@ -124,7 +171,7 @@ theorem baseChangeFamily_properPushforwardFamily_of_isProper (r : ℕ) (α : Fam
         (baseChangeFamily sX g r α)
 ```
 
-**`Stacks.Chow.properPushforwardFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L391). The attribute's comment: “part (6): proper pushforward is functorial”.
+**`Stacks.Chow.properPushforwardFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L391). The attribute's comment: “part (6): proper pushforward is functorial”.
 
 > **Stacks Project, Tag 0H4P, part (6).** Proper pushforward of families of cycles on fibres is
 > functorial: for proper morphisms `f₁ : X ⟶ Y` and `f₂ : Y ⟶ Z` of schemes locally of finite type
@@ -140,7 +187,7 @@ theorem properPushforwardFamily_properPushforwardFamily {S X Y Z : Scheme.{u}} (
       properPushforwardFamily sX sZ (f₁ ≫ f₂) (by rw [Category.assoc, hf₂, hf₁]) r α
 ```
 
-**`Stacks.Chow.flatPullbackFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L447). The attribute's comment: “part (7): proper pushforward commutes with flat pullback”.
+**`Stacks.Chow.flatPullbackFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Compatibilities.lean#L447). The attribute's comment: “part (7): proper pushforward commutes with flat pullback”.
 
 > **Stacks Project, Tag 0H4P, part (7).** Proper pushforward of families of cycles on fibres
 > commutes with flat pullback: for a proper morphism `f : X ⟶ Y` and a flat morphism `g : Y' ⟶ Y`
@@ -163,7 +210,7 @@ theorem flatPullbackFamily_properPushforwardFamily (e : ℕ)
 
 [Tag 0H4Q](https://stacks.math.columbia.edu/tag/0H4Q) in the Stacks Project.
 
-**`Stacks.Chow.familyAssociatedToModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean#L161). The attribute's comment: “the associated family”.
+**`Stacks.Chow.familyAssociatedToModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean#L161). The attribute's comment: “the associated family”.
 
 > **Stacks 0H4Q.** The family `[F/X/S]_r` of `r`-cycles on the fibres of `f` attached to a
 > quasi-coherent module `F` of finite type whose support on every fibre has dimension at most
@@ -179,7 +226,7 @@ def familyAssociatedToModule (f : X ⟶ S) [LocallyOfFiniteType f] (F : X.Module
     FamilyOfCycles f r
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean#L175). The attribute's comment: “fibrewise formula”.
+**`Stacks.Chow.familyAssociatedToModule_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFamily.lean#L175). The attribute's comment: “fibrewise formula”.
 
 > **Stacks 0H4Q.** The member of `[F/X/S]_r` over a point `s` of the base is the cycle
 > `[F_s]_r` associated to the pullback of `F` to the fibre over `s`.
@@ -200,7 +247,7 @@ theorem familyAssociatedToModule_apply (f : X ⟶ S) [LocallyOfFiniteType f] (F 
 
 [Tag 0H4R](https://stacks.math.columbia.edu/tag/0H4R) in the Stacks Project.
 
-**`Stacks.Chow.supportDimension_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L126). The attribute's comment: “module\_base\_change, residue-field-isomorphism case: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L126). The attribute's comment: “module\_base\_change, residue-field-isomorphism case: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The dimension bound on the fibrewise supports of a
 > quasi-coherent module of finite type survives base change along a morphism that induces an
@@ -217,7 +264,7 @@ theorem supportDimension_le_of_baseChange (f : X ⟶ S) [LocallyOfFiniteType f] 
         ((Scheme.Modules.pullback (pullback.fst f g)).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L148). The attribute's comment: “module\_base\_change, residue-field-isomorphism case”.
+**`Stacks.Chow.familyAssociatedToModule_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L148). The attribute's comment: “module\_base\_change, residue-field-isomorphism case”.
 
 > **Stacks Project, Tag 0H4R.** Base change along a morphism `g` that induces an isomorphism on
 > every residue field carries the family of cycles associated to a quasi-coherent module of finite
@@ -238,7 +285,7 @@ theorem familyAssociatedToModule_baseChange (f : X ⟶ S) [LocallyOfFiniteType f
         (supportDimension_le_of_baseChange f g hres F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L93). The attribute's comment: “module\_flat\_pullback: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L93). The attribute's comment: “module\_flat\_pullback: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The fibrewise support dimension bound on a quasi-coherent
 > module of finite type passes to its pullback along a flat morphism `j : U ⟶ X` of schemes over
@@ -259,7 +306,7 @@ theorem supportDimension_le_of_flatPullback (f : X ⟶ S) [LocallyOfFiniteType f
         ((Scheme.Modules.pullback j).obj F))) ≤ ((r + e : ℕ) : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L137). The attribute's comment: “module\_flat\_pullback”.
+**`Stacks.Chow.familyAssociatedToModule_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L137). The attribute's comment: “module\_flat\_pullback”.
 
 > **Stacks Project, Tag 0H4R.** The flat pullback of the family `[F/X/S]_r` of cycles
 > associated to a quasi-coherent module of finite type, along a flat morphism `j : U ⟶ X` of
@@ -285,7 +332,7 @@ theorem familyAssociatedToModule_flatPullback (f : X ⟶ S) [LocallyOfFiniteType
         (supportDimension_le_of_flatPullback f fU j h e he F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L102). The attribute's comment: “module\_base\_change, arbitrary morphism of bases: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L102). The attribute's comment: “module\_base\_change, arbitrary morphism of bases: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The fibrewise support dimension bound on a quasi-coherent
 > module of finite type survives base change along an arbitrary morphism of bases: the fibre of
@@ -305,7 +352,7 @@ theorem supportDimension_le_of_baseChange_general (f : X ⟶ S) [LocallyOfFinite
         ((Scheme.Modules.pullback (pullback.fst f g)).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L138). The attribute's comment: “module\_base\_change, arbitrary morphism of bases”.
+**`Stacks.Chow.familyAssociatedToModule_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L138). The attribute's comment: “module\_base\_change, arbitrary morphism of bases”.
 
 > **Stacks Project, Tag 0H4R.** Base change of the family `[F/X/S]_r` of cycles associated to a
 > quasi-coherent module of finite type along an *arbitrary* morphism `g : S' ⟶ S` of bases is the
@@ -330,7 +377,7 @@ theorem familyAssociatedToModule_baseChange_general (f : X ⟶ S) [LocallyOfFini
         (supportDimension_le_of_baseChange_general f g F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L187). The attribute's comment: “module\_restriction: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L187). The attribute's comment: “module\_restriction: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The dimension bound on the fibrewise supports of a
 > quasi-coherent module of finite type survives restriction of both the source and the base to
@@ -349,7 +396,7 @@ theorem supportDimension_le_of_openRestriction {X S U V : Scheme.{u}} (f : X ⟶
         ((Scheme.Modules.pullback j).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L207). The attribute's comment: “module\_restriction”.
+**`Stacks.Chow.familyAssociatedToModule_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L207). The attribute's comment: “module\_restriction”.
 
 > **Stacks Project, Tag 0H4R.** The restriction to `U/V` of the family of cycles associated to
 > a quasi-coherent module of finite type is the family associated to the module restricted to `U`.
@@ -373,7 +420,7 @@ theorem familyAssociatedToModule_openRestriction {X S U V : Scheme.{u}} (f : X �
 
 [Tag 0H4S](https://stacks.math.columbia.edu/tag/0H4S) in the Stacks Project.
 
-**`Stacks.Chow.familyAssociatedToClosedSubscheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean#L113). The attribute's comment: “the associated family”.
+**`Stacks.Chow.familyAssociatedToClosedSubscheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean#L113). The attribute's comment: “the associated family”.
 
 > The family `[Z/X/S]_r` of `r`-cycles on the fibres of `f` attached to a
 > closed subscheme `i : Z ⟶ X` whose fibres have dimension at most `r`: its member over `s` is the
@@ -384,7 +431,7 @@ def familyAssociatedToClosedSubscheme (f : X ⟶ S) [LocallyOfFiniteType f] {Z :
     (i : Z ⟶ X) [IsClosedImmersion i] (r : ℕ) : FamilyOfCycles f r
 ```
 
-**`Stacks.Chow.familyAssociatedToClosedSubscheme_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean#L121). The attribute's comment: “fibrewise formula”.
+**`Stacks.Chow.familyAssociatedToClosedSubscheme_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFamily.lean#L121). The attribute's comment: “fibrewise formula”.
 
 > The member of `[Z/X/S]_r` over a point `s` of the base is the cycle
 > `[Z_s]_r` of the inverse image of `Z` in the fibre over `s`.
@@ -401,7 +448,7 @@ theorem familyAssociatedToClosedSubscheme_apply (f : X ⟶ S) [LocallyOfFiniteTy
 
 [Tag 0H4T](https://stacks.math.columbia.edu/tag/0H4T) in the Stacks Project.
 
-**`Stacks.Chow.familyAssociatedToClosedSubscheme_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeBaseChange.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeBaseChange.lean#L100). The attribute's comment: “base change”.
+**`Stacks.Chow.familyAssociatedToClosedSubscheme_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeBaseChange.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeBaseChange.lean#L100). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0H4T (base change).** The construction of Example 0H4S is compatible
 > with base change: let `f : X ⟶ S` be locally of finite type, let `i : Z ⟶ X` be a closed
@@ -424,7 +471,7 @@ theorem familyAssociatedToClosedSubscheme_baseChange (f : X ⟶ S) [LocallyOfFin
         (pullback.snd i (pullback.fst f g)) r
 ```
 
-**`Stacks.Chow.familyAssociatedToClosedSubscheme_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFlatPullback.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFlatPullback.lean#L79). The attribute's comment: “flat pullback”.
+**`Stacks.Chow.familyAssociatedToClosedSubscheme_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFlatPullback.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeFlatPullback.lean#L79). The attribute's comment: “flat pullback”.
 
 > The construction of Example 0H4S is compatible with flat pullback: let `f : X ⟶ S` be locally
 > of finite type, let `i : Z ⟶ X` be a closed subscheme with `dim(Z_s) ≤ r` for every `s ∈ S`, and
@@ -444,7 +491,7 @@ theorem familyAssociatedToClosedSubscheme_flatPullback (f : X ⟶ S) [LocallyOfF
       familyAssociatedToClosedSubscheme fU (pullback.snd i j) (r + e)
 ```
 
-**`Stacks.Chow.familyAssociatedToClosedSubscheme_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeRestriction.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeRestriction.lean#L347). The attribute's comment: “restriction”.
+**`Stacks.Chow.familyAssociatedToClosedSubscheme_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeRestriction.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeRestriction.lean#L347). The attribute's comment: “restriction”.
 
 > **Stacks Project, Tag 0H4T (restriction).** The construction of Example 0H4S is compatible
 > with restriction: let `f : X ⟶ S` be locally of finite type, let `i : Z ⟶ X` be a closed
@@ -473,7 +520,7 @@ theorem familyAssociatedToClosedSubscheme_openRestriction (f : X ⟶ S) [Locally
 
 [Tag 0H4U](https://stacks.math.columbia.edu/tag/0H4U) in the Stacks Project.
 
-**`Stacks.Chow.supportOfFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean#L89). The attribute's comment: “support\_of\_a\_family\_of\_cycles”.
+**`Stacks.Chow.supportOfFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean#L90). The attribute's comment: “support\_of\_a\_family\_of\_cycles”.
 
 > The support of a family of cycles on the fibres of `f`: the union in `X` of the images of the
 > supports of its members.
@@ -483,7 +530,7 @@ def supportOfFamily {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f] {r 
     (α : FamilyOfCycles f r) : Set X
 ```
 
-**`Stacks.Chow.exists_family_support_not_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonclosedSupport.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonclosedSupport.lean#L77).
+**`Stacks.Chow.exists_family_support_not_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonclosedSupport.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonclosedSupport.lean#L77).
 
 > **Stacks Project, Tag 0H4U.** The support of a family of cycles on fibres need not be
 > closed in the total space.
@@ -499,7 +546,7 @@ theorem exists_family_support_not_closed :
 
 [Tag 0H4V](https://stacks.math.columbia.edu/tag/0H4V) in the Stacks Project.
 
-**`Stacks.Chow.supportOfFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSupport.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSupport.lean#L204). The attribute's comment: “base change”.
+**`Stacks.Chow.supportOfFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSupport.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSupport.lean#L204). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0H4V, the base-change clause.** Taking the support of a family of
 > cycles on the fibres is compatible with base change: the support of `g^*α` is the inverse image
@@ -512,7 +559,7 @@ theorem supportOfFamily_baseChangeFamily {X S S' : Scheme.{u}} (f : X ⟶ S)
       pullback.fst f g ⁻¹' supportOfFamily f α
 ```
 
-**`Stacks.Chow.supportOfFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackSupport.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackSupport.lean#L160). The attribute's comment: “flat pullback”.
+**`Stacks.Chow.supportOfFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackSupport.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackSupport.lean#L160). The attribute's comment: “flat pullback”.
 
 > **Stacks Project, Tag 0H4V, the flat pullback clause.** Taking the support of a family of
 > cycles on the fibres is compatible with flat pullback: the support of `j^*α` is the inverse
@@ -527,7 +574,7 @@ theorem supportOfFamily_flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S)
     supportOfFamily fU (flatPullbackFamily f fU j hj e he r α) = j ⁻¹' supportOfFamily f α
 ```
 
-**`Stacks.Chow.image_supportOfFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean#L47). The attribute's comment: “support\_restriction”.
+**`Stacks.Chow.image_supportOfFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean#L47). The attribute's comment: “support\_restriction”.
 
 > The support of a restricted family of cycles, mapped back into the original total space, is
 > the intersection of the original support with the open subscheme.
@@ -548,7 +595,7 @@ theorem image_supportOfFamily_restrictedFamily
 
 [Tag 0H4W](https://stacks.math.columbia.edu/tag/0H4W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_preimage_preserving_residueField_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean#L98). The attribute's comment: “part (1)”. References: SGA 2 XIV (2.1.1), “special case”.
+**`AlgebraicGeometry.exists_preimage_preserving_residueField_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean#L98). The attribute's comment: “part (1)”. References: SGA 2 XIV (2.1.1), “special case”.
 
 > Let `f : X ⟶ S` be locally of finite type, let
 > `g : S' ⟶ S` be surjective and let `f' : X' ⟶ S'` be the base change of `f`. A point `x : X`
@@ -567,7 +614,7 @@ public theorem exists_preimage_preserving_residueField_trdeg {p : X' ⟶ X} {f' 
       Algebra.trdeg ↥(S'.residueField (f' x')) ↥(X'.residueField x') = r
 ```
 
-**`AlgebraicGeometry.exists_common_preimage_preserving_residueField_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean#L260). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_common_preimage_preserving_residueField_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/TrdegLift.lean#L260). The attribute's comment: “part (2)”.
 
 > In the situation of `AlgebraicGeometry.exists_preimage_preserving_residueField_trdeg`, let
 > `S''` be the self-intersection `S' ×_S S'` of the base change, with projections `q₁` and `q₂`,
@@ -598,7 +645,7 @@ public theorem exists_common_preimage_preserving_residueField_trdeg {p : X' ⟶ 
 
 [Tag 0H4X](https://stacks.math.columbia.edu/tag/0H4X) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeFamily_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L729). The attribute's comment: “injectivity of base change on families of cycles on fibres”.
+**`Stacks.Chow.baseChangeFamily_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L729). The attribute's comment: “injectivity of base change on families of cycles on fibres”.
 
 > Base change of families of `r`-cycles on the fibres of `X / S` along a surjective morphism
 > `g : S' ⟶ S` is injective: if `g^*α₁ = g^*α₂` then `α₁ = α₂`.
@@ -610,7 +657,7 @@ theorem baseChangeFamily_injective (f : X ⟶ S) [LocallyOfFiniteType f] (g : S'
     α₁ = α₂
 ```
 
-**`Stacks.Chow.existsUnique_familyOfCycles_baseChangeFamily_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Descent.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Descent.lean#L485). The attribute's comment: “descent of a family of cycles on fibres along a morphism with separable residue field extensions”.
+**`Stacks.Chow.existsUnique_familyOfCycles_baseChangeFamily_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Descent.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Descent.lean#L485). The attribute's comment: “descent of a family of cycles on fibres along a morphism with separable residue field extensions”.
 
 > **Stacks Project, Tag 0H4X (2).** Let `f : X ⟶ S` be locally of finite type, let `r ≥ 0`, let
 > `g : S' ⟶ S` be a morphism such that every point of `S` has a preimage in `S'` whose residue
@@ -637,7 +684,7 @@ theorem existsUnique_familyOfCycles_baseChangeFamily_eq (f : X ⟶ S) [LocallyOf
 
 [Tag 0H4Y](https://stacks.math.columbia.edu/tag/0H4Y) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeFamilyOfCyclesAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L291). The attribute's comment: “the additive equivalence”.
+**`Stacks.Chow.baseChangeFamilyOfCyclesAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L291). The attribute's comment: “the additive equivalence”.
 
 > Base change along a morphism that is bijective on points and
 > induces isomorphisms of residue fields identifies the groups of families of cycles on the
@@ -651,7 +698,7 @@ def baseChangeFamilyOfCyclesAddEquiv
     FamilyOfCycles f r ≃+ FamilyOfCycles (pullback.snd f g) r
 ```
 
-**`Stacks.Chow.baseChangeFamilyOfCyclesAddEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L302). The attribute's comment: “the coefficient formula”.
+**`Stacks.Chow.baseChangeFamilyOfCyclesAddEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChange.lean#L302). The attribute's comment: “the coefficient formula”.
 
 > The base-changed family has, on each fibre, the coefficients
 > of the original family transported along the canonical map of fibres.
@@ -676,4 +723,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.5, Tag 0H4N](https://stacks.math.columbia.edu/tag/0H4N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

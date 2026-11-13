@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.7 Universally injective, unramified morphisms
 
-Section 41.7 of the Stacks Project, [Tag 06ND](https://stacks.math.columbia.edu/tag/06ND). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.7 of the Stacks Project, [Tag 06ND](https://stacks.math.columbia.edu/tag/06ND). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05VH, a lemma
 
 [Tag 05VH](https://stacks.math.columbia.edu/tag/05VH) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_unramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/Basic.lean#L87). References: EGA IV (17.2.6); EGA IV (8.11.5.1), “loc. finite type case”.
+**`AlgebraicGeometry.universallyInjective_unramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/Basic.lean#L87). References: EGA IV (17.2.6); EGA IV (8.11.5.1), “loc. finite type case”.
 
 > The equivalent characterizations of an unramified universally injective morphism of
 > schemes.
@@ -35,7 +35,7 @@ public theorem universallyInjective_unramified_tfae {X S : Scheme.{u}} (f : X �
 
 [Tag 04XV](https://stacks.math.columbia.edu/tag/04XV) in the Stacks Project.
 
-**`AlgebraicGeometry.closedImmersion_conditions_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/ClosedImmersion.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/ClosedImmersion.lean#L60). The attribute's comment: “(2) <=> (3) <=> (4) <=> (5) <=> (6) <=> (7)”. References: EGA IV (18.12.6), “b) <=> c)”; EGA IV (8.11.5), “b) <=> c)”.
+**`AlgebraicGeometry.closedImmersion_conditions_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/ClosedImmersion.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/ClosedImmersion.lean#L60). The attribute's comment: “(2) <=> (3) <=> (4) <=> (5) <=> (6) <=> (7)”. References: EGA IV (18.12.6), “b) <=> c)”; EGA IV (8.11.5), “b) <=> c)”.
 
 > The six equivalent characterizations of a proper monomorphism, hence of a closed immersion,
 > in parts (2) through (7).
@@ -56,7 +56,7 @@ public theorem closedImmersion_conditions_tfae {X S : Scheme.{u}} (f : X ⟶ S) 
 
 [Tag 04DG](https://stacks.math.columbia.edu/tag/04DG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_restrict_isClosedImmersion_of_finite_unramified_fiber_eq_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/FiniteUnramified.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/FiniteUnramified.lean#L147).
+**`AlgebraicGeometry.exists_open_restrict_isClosedImmersion_of_finite_unramified_fiber_eq_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/FiniteUnramified.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/UniversallyInjectiveUnramified/FiniteUnramified.lean#L147).
 
 > A finite unramified morphism with a singleton fibre and purely inseparable residue-field
 > extension is a closed immersion over some neighbourhood of the point in the target.
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.7, Tag 06ND](https://stacks.math.columbia.edu/tag/06ND)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

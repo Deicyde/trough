@@ -7,7 +7,7 @@ statement: formalized
 
 # Rényi–Vincze characterization of the exponential
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html).
 
 ## Hayman Problem 2.32: a non-exponential solution of the Rényi–Vincze conditions
 
@@ -24,7 +24,7 @@ $\int_0^\infty f(\rho x) / f(x)\,dx = 1/(1-\rho)$ for every real $\rho$ with $0 
 
 - AMR-022-2032, Hayman - Research Problems in Function Theory (2018), Problem 2.32 (https://arxiv.org/abs/1809.07200, source labels 2.6 and 2.6', A. Renyi, St. Vincze).
 
-Formalized by `MathlibExt.Analysis.HaymanProblem232Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanProblem232Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanProblem232Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.HaymanProblem232Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanProblem232Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanProblem232Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html#conjecture).
 
 ## No non-exponential solution of the Rényi–Vincze conditions
 
@@ -44,7 +44,7 @@ first.
 
 - Antonio Greco and Andrea Loi, Radial balanced metrics on the unit disk, arXiv:0803.3711 (2008), https://arxiv.org/abs/0803.3711.
 
-Stated but not proved: `MathlibExt.Analysis.HaymanProblem232Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanProblem232Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanProblem232Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Analysis.HaymanProblem232Wanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanProblem232Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanProblem232Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rényi–Vincze characterization of the exponential](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/r-nyi-vincze-characterization-of-the-exponential)

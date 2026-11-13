@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.20 Supports of abelian sheaves
 
-Section 66.20 of the Stacks Project, [Tag 04K7](https://stacks.math.columbia.edu/tag/04K7). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.20 of the Stacks Project, [Tag 04K7](https://stacks.math.columbia.edu/tag/04K7). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04K8, a lemma
 
 [Tag 04K8](https://stacks.math.columbia.edu/tag/04K8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_openSubspace_of_subterminalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSubterminalSheaf.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSubterminalSheaf.lean#L245).
+**`AlgebraicGeometry.Space.existsUnique_openSubspace_of_subterminalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSubterminalSheaf.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSubterminalSheaf.lean#L245).
 
 > **Stacks 04K8.** Every subsheaf of the terminal sheaf on the spaces-étale site of an
 > algebraic space is the sheaf of a unique open subspace.
@@ -31,7 +31,7 @@ theorem existsUnique_openSubspace_of_subterminalSheaf
 
 [Tag 04K9](https://stacks.math.columbia.edu/tag/04K9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L271). The attribute's comment: “part (1): the open subspace”.
+**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L271). The attribute's comment: “part (1): the open subspace”.
 
 > **Stacks 04K9, part (1).** The largest open subspace of the algebraic space underlying an
 > object `U` of the spaces-étale site of `X` on which a section of an abelian sheaf over `U`
@@ -44,7 +44,7 @@ noncomputable def largestOpenZeroSubspace
     {W : Subfunctor (underlying B S hS X U).1 // IsOpenSubspace B S hS W}
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace_restrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L295). The attribute's comment: “part (2): the pullback criterion”.
+**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace_restrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L295). The attribute's comment: “part (2): the pullback criterion”.
 
 > **Stacks 04K9, part (2).** A section restricts to zero on an object of the spaces-étale
 > site over `U` exactly when the image of the points of that object lies in the largest open
@@ -60,7 +60,7 @@ theorem largestOpenZeroSubspace_restrict_iff
         (openPoints B S hS X U (largestOpenZeroSubspace B S hS X F U σ)) f
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.restrict_largestOpenZeroSubspace_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L308). The attribute's comment: “part (1): the section vanishes on the open subspace”.
+**`AlgebraicGeometry.Space.SpacesEtale.restrict_largestOpenZeroSubspace_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L308). The attribute's comment: “part (1): the section vanishes on the open subspace”.
 
 > **Stacks 04K9, part (1).** A section vanishes on its largest open zero subspace.
 
@@ -72,7 +72,7 @@ theorem restrict_largestOpenZeroSubspace_eq_zero
       (largestOpenZeroSubspace B S hS X F U σ)).op σ = 0
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L320). The attribute's comment: “part (1): maximality”.
+**`AlgebraicGeometry.Space.SpacesEtale.largestOpenZeroSubspace_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L320). The attribute's comment: “part (1): maximality”.
 
 > **Stacks 04K9, part (1).** Every open subspace on which a section vanishes is contained in
 > its largest open zero subspace.
@@ -86,7 +86,7 @@ theorem largestOpenZeroSubspace_maximal
     W.1 ≤ (largestOpenZeroSubspace B S hS X F U σ).1
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.germ_eq_zero_iff_mem_largestOpenZeroSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L358). The attribute's comment: “part (3): the geometric-point criterion”. References: SGA 2 XIV (1.8.2.1), “abelian, geom. point”.
+**`AlgebraicGeometry.Space.SpacesEtale.germ_eq_zero_iff_mem_largestOpenZeroSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L358). The attribute's comment: “part (3): the geometric-point criterion”. References: SGA 2 XIV (1.8.2.1), “abelian, geom. point”.
 
 > **Stacks 04K9, part (3).** The germ of a section at a geometric point of the algebraic
 > space underlying an object `U` of the spaces-étale site of `X` vanishes in the spaces-étale
@@ -113,7 +113,7 @@ theorem germ_eq_zero_iff_mem_largestOpenZeroSubspace
       p.image ∈ openPoints B S hS X U (largestOpenZeroSubspace B S hS X F U σ)
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.exists_largestOpenZeroSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L448). References: SGA 2 XIV (1.8.2.1), “abelian, spaces”.
+**`AlgebraicGeometry.Space.SpacesEtale.exists_largestOpenZeroSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleZeroLocus.lean#L447). References: SGA 2 XIV (1.8.2.1), “abelian, spaces”.
 
 > **Stacks 04K9.** A section `σ` of an abelian sheaf on the spaces-étale site of an
 > algebraic space `X`, over an object `U` of that site, has an open subspace `W` of the
@@ -147,7 +147,7 @@ theorem exists_largestOpenZeroSubspace
 
 [Tag 04KA](https://stacks.math.columbia.edu/tag/04KA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.supportOfSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L418). The attribute's comment: “support of a section”. References: SGA 4 VIII (6.6), “support of a section”.
+**`AlgebraicGeometry.Space.supportOfSection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L418). The attribute's comment: “support of a section”. References: SGA 4 VIII (6.6), “support of a section”.
 
 > The *support* of a section of an abelian sheaf on the small étale site of an algebraic
 > space over an étale chart: the complement of the largest open on which the section restricts
@@ -159,7 +159,7 @@ abbrev supportOfSection (F : Sheaf (SmallEtale.topology B S hS X) AddCommGrpCat.
     Set (points B S hS (yoneda.obj ((SmallEtale.toOver B S hS X).obj U)))
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L626). The attribute's comment: “support of a sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
+**`AlgebraicGeometry.Space.supportOfSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L626). The attribute's comment: “support of a sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
 
 > The *support* of an abelian sheaf on the small étale site of an algebraic space: the set
 > of points at which the stalk at some geometric point lying over that point is nonzero, that is,
@@ -174,7 +174,7 @@ def supportOfSheaf (F : Sheaf (SmallEtale.topology B S hS X) AddCommGrpCat.{v}) 
 
 [Tag 04KB](https://stacks.math.columbia.edu/tag/04KB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L436). The attribute's comment: “closed\_section\_support”.
+**`AlgebraicGeometry.Space.isClosed_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L436). The attribute's comment: “closed\_section\_support”.
 
 > The support of a section is closed.
 
@@ -185,7 +185,7 @@ theorem isClosed_supportOfSection
     IsClosed (supportOfSection B S hS X F U σ)
 ```
 
-**`AlgebraicGeometry.Space.supportOfSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L494). The attribute's comment: “support\_sum”.
+**`AlgebraicGeometry.Space.supportOfSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L494). The attribute's comment: “support\_sum”.
 
 > The support of a sum is contained in the union of the supports.
 
@@ -197,7 +197,7 @@ theorem supportOfSection_add_subset
       supportOfSection B S hS X F U σ ∪ supportOfSection B S hS X F U τ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L521). The attribute's comment: “support\_image\_section”.
+**`AlgebraicGeometry.Space.supportOfSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L521). The attribute's comment: “support\_image\_section”.
 
 > A morphism of abelian sheaves cannot enlarge the support of a section: the support of the
 > image of `σ` under `φ` is contained in the support of `σ`.
@@ -210,7 +210,7 @@ theorem supportOfSection_map_subset
       supportOfSection B S hS X F U σ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L644). The attribute's comment: “support\_injection”.
+**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L644). The attribute's comment: “support\_injection”.
 
 > The support of an abelian subsheaf is contained in the support of the ambient sheaf: a
 > monomorphism `f : F ⟶ G` of abelian sheaves on the small étale site cannot enlarge the support
@@ -222,7 +222,7 @@ theorem supportOfSheaf_subset_of_mono (hX : IsAlgebraicSpace B S hS X)
     supportOfSheaf B S hS X F ⊆ supportOfSheaf B S hS X G
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean#L161). The attribute's comment: “part (6): support along an injection”.
+**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean#L161). The attribute's comment: “part (6): support along an injection”.
 
 > **Stacks 04KB, part (6).** If a map of abelian sheaves on the small étale site of an
 > algebraic space is injective on sections over every étale chart, then the support of its source
@@ -244,7 +244,7 @@ theorem supportOfSheaf_subset_of_injective (hX : IsAlgebraicSpace B S hS X)
     supportOfSheaf B S hS X F ⊆ supportOfSheaf B S hS X G
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “sheaf\_support\_sections”.
+**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “sheaf\_support\_sections”.
 
 > **Stacks 04KB, part (4).** The support of an abelian sheaf on the small étale site of an
 > algebraic space is the union, over all étale charts and all sections on them, of the images of
@@ -264,7 +264,7 @@ theorem supportOfSheaf_eq_iUnion_image_supportOfSection
           supportOfSection B S hS X F U σ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “part (4): the support of a sheaf is the union of the section supports”.
+**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “part (4): the support of a sheaf is the union of the section supports”.
 
 > **Stacks 04KB, part (4).** The support of an abelian sheaf on the small étale site of an
 > algebraic space is the union, over all étale charts and all sections on them, of the images of
@@ -284,7 +284,7 @@ theorem supportOfSheaf_eq_iUnion_image_supportOfSection
           supportOfSection B S hS X F U σ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L300). The attribute's comment: “part (5): support along a surjection”.
+**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L300). The attribute's comment: “part (5): support along a surjection”.
 
 > **Stacks 04KB.** A surjection of abelian sheaves on the small étale site of an algebraic
 > space does not enlarge the support: the support of the target is contained in the support of
@@ -305,7 +305,7 @@ theorem supportOfSheaf_subset_of_isLocallySurjective
 
 [Tag 04KC](https://stacks.math.columbia.edu/tag/04KC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean#L303).
+**`AlgebraicGeometry.Space.isClosed_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportProperties.lean#L303).
 
 > **Stacks 04KC.** The support of a sheaf of rings on the small étale site of an algebraic
 > space is closed.
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.20, Tag 04K7](https://stacks.math.columbia.edu/tag/04K7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

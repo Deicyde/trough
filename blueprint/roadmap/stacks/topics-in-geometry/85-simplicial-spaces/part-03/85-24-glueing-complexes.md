@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.24 Glueing complexes
 
-Section 85.24 of the Stacks Project, [Tag 0DC8](https://stacks.math.columbia.edu/tag/0DC8). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.24 of the Stacks Project, [Tag 0DC8](https://stacks.math.columbia.edu/tag/0DC8). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DC9, a situation
 
 [Tag 0DC9](https://stacks.math.columbia.edu/tag/0DC9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.LocallyGiven`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenDerived.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenDerived.lean#L209).
+**`AlgebraicGeometry.RingedSite.LocallyGiven`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenDerived.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenDerived.lean#L209).
 
 > Derived objects given locally on a category mapping to a ringed site, with isomorphisms on
 > restriction satisfying the cocycle condition: a category `B` with a functor `u : B ⥤ 𝒞`, an object
@@ -30,7 +30,7 @@ structure LocallyGiven.{uM, u, v, w, uB, vB} (X : RingedSite.{u, v, w})
 
 [Tag 0DCA](https://stacks.math.columbia.edu/tag/0DCA) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_cartesian_summandIdentification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenGlueing.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenGlueing.lean#L113).
+**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_cartesian_summandIdentification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenGlueing.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenGlueing.lean#L113).
 
 > **Stacks 0DCA.** In Situation 0DC9, assume the negative self-exts of every `E_U` in
 > `D(O_{u(U)})` vanish. Let `L` be a simplicial object of `SR(B)`, let `K = u(L)` and let
@@ -67,7 +67,7 @@ theorem exists_unique_cartesian_summandIdentification
 
 [Tag 0DCB](https://stacks.math.columbia.edu/tag/0DCB) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_solution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenBBDGlueing.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenBBDGlueing.lean#L593).
+**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_solution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenBBDGlueing.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenBBDGlueing.lean#L593).
 
 > **Stacks 0DCB (BBD glueing lemma).** In Situation 0DC9 — a ringed site `(C, O_C)`, a category
 > `B` with a functor `u : B ⥤ C`, objects `E_U` of `D(O_{u(U)})` and isomorphisms
@@ -109,7 +109,7 @@ theorem exists_unique_solution {X : RingedSite.{u, u, u}} [HasEqualizers X.C] [H
 
 [Tag 0DCC](https://stacks.math.columbia.edu/tag/0DCC) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_solution_localSerre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenUnboundedBBDGlueing.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenUnboundedBBDGlueing.lean#L125).
+**`AlgebraicGeometry.RingedSite.LocallyGiven.exists_unique_solution_localSerre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenUnboundedBBDGlueing.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/LocallyGivenUnboundedBBDGlueing.lean#L125).
 
 > The unbounded BBD glueing lemma. In Situation 0DC9 — a ringed site `(C, O_C)`, a category
 > `B` with a functor `u : B ⥤ C`, objects `E_U` of `D(O_{u(U)})` and isomorphisms
@@ -154,7 +154,7 @@ theorem exists_unique_solution_localSerre {X : RingedSite.{u, u, u}} [HasEqualiz
 
 [Tag 0GMG](https://stacks.math.columbia.edu/tag/0GMG) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.CoveringGlueing.existsUnique_glueing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CoveringGlueing/Glueing.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CoveringGlueing/Glueing.lean#L315).
+**`AlgebraicGeometry.RingedSite.CoveringGlueing.existsUnique_glueing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CoveringGlueing/Glueing.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/CoveringGlueing/Glueing.lean#L315).
 
 > Let `(C, O_C)` be a ringed site with fibre products and `{U_i ⟶ X}_{i ∈ I}` a covering in
 > `C`. For `i ∈ I` let `E_i` be an object of `D(O_{U_i})` and for `i, j ∈ I` let
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.24, Tag 0DC8](https://stacks.math.columbia.edu/tag/0DC8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

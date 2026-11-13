@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.24 Glueing functions
 
-Section 10.24 of the Stacks Project, [Tag 00EI](https://stacks.math.columbia.edu/tag/00EI). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.24 of the Stacks Project, [Tag 00EI](https://stacks.math.columbia.edu/tag/00EI). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00EK, a lemma
 
 [Tag 00EK](https://stacks.math.columbia.edu/tag/00EK) in the Stacks Project.
 
-**`IsLocalizedModule.Away.injective_pi_and_exact_of_span_range_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/Exactness.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Localization/Exactness.lean#L294).
+**`IsLocalizedModule.Away.injective_pi_and_exact_of_span_range_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Localization/Exactness.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Localization/Exactness.lean#L294).
 
 > Let `R` be a commutative semiring, let `f : ι → R` be a family of elements generating the unit
 > ideal and let `M` be an `R`-module. Let `Mf i` be the localization of `M` away from `f i`, with
@@ -37,7 +37,7 @@ public theorem injective_pi_and_exact_of_span_range_eq_top
 
 [Tag 00EJ](https://stacks.math.columbia.edu/tag/00EJ) in the Stacks Project.
 
-**`alphaLin_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L125). The attribute's comment: “exactness at `R`, i.e. injectivity of `α`”.
+**`alphaLin_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L125). The attribute's comment: “exactness at `R`, i.e. injectivity of `α`”.
 
 > If `f` generates the unit ideal, then `α` is injective.
 
@@ -46,7 +46,7 @@ theorem alphaLin_injective (hf : Ideal.span (Set.range f) = ⊤) :
     Function.Injective (alphaLin R n f)
 ```
 
-**`ker_betaLin_eq_range_alphaLin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L234). The attribute's comment: “exactness at the middle term, i.e. `ker β = im α`”.
+**`ker_betaLin_eq_range_alphaLin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L234). The attribute's comment: “exactness at the middle term, i.e. `ker β = im α`”.
 
 > If `f` generates the unit ideal, then the kernel of `β` equals the range of `α`.
 
@@ -59,7 +59,7 @@ theorem ker_betaLin_eq_range_alphaLin (hf : Ideal.span (Set.range f) = ⊤) :
 
 [Tag 00EM](https://stacks.math.columbia.edu/tag/00EM) in the Stacks Project.
 
-**`PrimeSpectrum.exists_ringEquiv_prod_of_isOpen_of_isCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/ConnectedComponents.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/ConnectedComponents.lean#L538).
+**`PrimeSpectrum.exists_ringEquiv_prod_of_isOpen_of_isCompl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/ConnectedComponents.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/ConnectedComponents.lean#L538).
 
 > A disjoint open cover of `Spec R` yields a product decomposition of `R`.
 >
@@ -106,7 +106,7 @@ theorem PrimeSpectrum.exists_ringEquiv_prod_of_isOpen_of_isCompl
 
 [Tag 0565](https://stacks.math.columbia.edu/tag/0565) in the Stacks Project.
 
-**`bigLambda_injective_iff_bigPhi_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L429).
+**`bigLambda_injective_iff_bigPhi_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Functions.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/Functions.lean#L429).
 
 > The map `Λ : M → ⨁_i M_{f_i}`, `m ↦ (m/1, ..., m/1)`,
 > is injective if and only if the map `Φ : M → ⨁_i M`, `m ↦ (f_1 m, ..., f_n m)`, is
@@ -122,7 +122,7 @@ theorem bigLambda_injective_iff_bigPhi_injective
 
 [Tag 00EQ](https://stacks.math.columbia.edu/tag/00EQ) in the Stacks Project.
 
-**`ModuleGluingData.psi_apply_of_mem_gluedModule`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Modules.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/Modules.lean#L272). The attribute's comment: “moreover clause: `ψ i j (m/1) = m/1` for `m` in the glued module”.
+**`ModuleGluingData.psi_apply_of_mem_gluedModule`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Modules.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/Modules.lean#L272). The attribute's comment: “moreover clause: `ψ i j (m/1) = m/1` for `m` in the glued module”.
 
 > For `m ∈ gluedModule`, the gluing relation holds: `ψ i j (m_i/1) = m_j/1`.
 
@@ -134,7 +134,7 @@ lemma psi_apply_of_mem_gluedModule
       LocalizedModule.mkLinearMap (Submonoid.powers (f i)) (D.M j) ((m : D.DirectSumM) j)
 ```
 
-**`ModuleGluingData.proj_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Modules.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/Modules.lean#L452). The attribute's comment: “localization comparison”.
+**`ModuleGluingData.proj_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/Modules.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/Modules.lean#L452). The attribute's comment: “localization comparison”.
 
 > **Stacks 00EQ (localization comparison).** For finite module gluing data, projection to the
 > `i`-th component is the localization map at the powers of `f i`. Thus the induced canonical map
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.24, Tag 00EI](https://stacks.math.columbia.edu/tag/00EI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

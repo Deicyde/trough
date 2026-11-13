@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.38 Relatively ample sheaves
 
-Section 29.38 of the Stacks Project, [Tag 01VG](https://stacks.math.columbia.edu/tag/01VG). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.38 of the Stacks Project, [Tag 01VG](https://stacks.math.columbia.edu/tag/01VG). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01VH, a definition
 
 [Tag 01VH](https://stacks.math.columbia.edu/tag/01VH) in the Stacks Project.
 
-**`Stacks.RelativeAmple.IsRelativelyAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean#L164). References: EGA II (4.6.1).
+**`Stacks.RelativeAmple.IsRelativelyAmple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean#L164). References: EGA II (4.6.1).
 
 > **Stacks Tag 01VH.** An invertible `𝒪_X`-module `L` is *ample relative to* `f : X ⟶ S` when
 > `f` is quasi-compact and, for every affine open `V` of `S`, the restriction of `L` to the open
@@ -30,7 +30,7 @@ def IsRelativelyAmple {X S : Scheme.{u}} (f : X ⟶ S) (L : X.Modules)
 
 [Tag 02NN](https://stacks.math.columbia.edu/tag/02NN) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isRelativelyAmple_iff_tensorPower_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/TensorPower.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/TensorPower.lean#L136). References: EGA II (4.6.9).
+**`AlgebraicGeometry.Scheme.Modules.isRelativelyAmple_iff_tensorPower_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/TensorPower.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/TensorPower.lean#L136). References: EGA II (4.6.9).
 
 > An invertible sheaf of modules on a scheme is ample relative to a morphism if and only if any
 > one of its positive tensor powers is.
@@ -50,7 +50,7 @@ theorem isRelativelyAmple_iff_tensorPower_isRelativelyAmple
 
 [Tag 01VI](https://stacks.math.columbia.edu/tag/01VI) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.IsRelativelyAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativelyAmple/Separated.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativelyAmple/Separated.lean#L41). References: EGA II (4.6.3).
+**`AlgebraicGeometry.Scheme.Modules.IsRelativelyAmple.isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativelyAmple/Separated.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativelyAmple/Separated.lean#L41). References: EGA II (4.6.3).
 
 > A morphism of schemes admitting a relatively ample invertible sheaf is separated.
 
@@ -64,7 +64,7 @@ theorem IsRelativelyAmple.isSeparated {X S : Scheme.{u}} {f : X ⟶ S} {L : X.Mo
 
 [Tag 01VJ](https://stacks.math.columbia.edu/tag/01VJ) in the Stacks Project.
 
-**`Stacks.RelativeAmple.IsRelativelyAmple.quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L125). The attribute's comment: “(5), the quasi-separatedness assertion: a morphism carrying a relatively ample invertible module is quasi-separated”.
+**`Stacks.RelativeAmple.IsRelativelyAmple.quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L125). The attribute's comment: “(5), the quasi-separatedness assertion: a morphism carrying a relatively ample invertible module is quasi-separated”.
 
 > **Stacks Tag 01VJ, clause (5), the quasi-separatedness assertion.** A morphism carrying a
 > relatively ample invertible module is quasi-separated. It is in fact separated, which is
@@ -77,7 +77,7 @@ theorem IsRelativelyAmple.quasiSeparated {X S : Scheme.{u}} {f : X ⟶ S} {L : X
     [IsInvertibleModule X L] (hL : IsRelativelyAmple f L) : QuasiSeparated f
 ```
 
-**`Stacks.RelativeAmple.isQuasicoherent_gradedDirectImage_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L185). The attribute's comment: “(5), the homogeneous pieces of the graded algebra A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) of the clause: their quasi-coherence in nonnegative degree (the step the source attributes to Schemes 26.24.1) and their vanishing in negative degree. The graded algebra A itself, with its multiplication, is Stacks.RelativeAmple.directImageAlgebra; see the module docstring”.
+**`Stacks.RelativeAmple.isQuasicoherent_gradedDirectImage_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L185). The attribute's comment: “(5), the homogeneous pieces of the graded algebra A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) of the clause: their quasi-coherence in nonnegative degree (the step the source attributes to Schemes 26.24.1) and their vanishing in negative degree. The graded algebra A itself, with its multiplication, is Stacks.RelativeAmple.directImageAlgebra; see the module docstring”.
 
 > **The pieces of `𝒜` in nonnegative degree are quasi-coherent**, for a relatively ample `L`:
 > both hypotheses of [Stacks, Tag 01LC] are then available, quasi-compactness from
@@ -90,7 +90,7 @@ theorem isQuasicoherent_gradedDirectImage_of_isRelativelyAmple
     (gradedDirectImage f L (d : ℤ)).IsQuasicoherent
 ```
 
-**`Stacks.RelativeAmple.iSup_nonvanishingOpenOn_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L219). The attribute's comment: “(5), the assertion U(psi) = X: for L ample relative to f, the nonvanishing opens of the positive-degree sections of A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) cover X”.
+**`Stacks.RelativeAmple.iSup_nonvanishingOpenOn_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L219). The attribute's comment: “(5), the assertion U(psi) = X: for L ample relative to f, the nonvanishing opens of the positive-degree sections of A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) cover X”.
 
 > **Stacks Tag 01VJ, clause (5), the assertion `U(ψ) = X`.** For `L` ample relative to `f`,
 > the nonvanishing opens of the sections of positive degree of `𝒜 = f_*(⨁_{d ≥ 0} L^{⊗ d})` cover
@@ -109,7 +109,7 @@ theorem iSup_nonvanishingOpenOn_eq_top (hL : IsRelativelyAmple f L) :
       nonvanishingOpenOn (tensorPowModule X L (p.2.2.1 : ℤ)) (f ⁻¹ᵁ p.1) p.2.2.2.2) = ⊤
 ```
 
-**`Stacks.RelativeAmpleLocalOnBase.isRelativelyAmple_of_forall_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean#L391). The attribute's comment: “(3) implies (1): relative ampleness may be checked on an affine open covering”. References: EGA II (4.6.4), “Sufficiency”; EGA II (8.10.6), “partial”.
+**`Stacks.RelativeAmpleLocalOnBase.isRelativelyAmple_of_forall_exists_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean#L391). The attribute's comment: “(3) implies (1): relative ampleness may be checked on an affine open covering”. References: EGA II (4.6.4), “Sufficiency”; EGA II (8.10.6), “partial”.
 
 > **Stacks Tag 01VJ, clause (3) implies clause (1).** Let `f : X ⟶ S` be a quasi-compact
 > morphism of schemes and `L` an invertible `𝒪_X`-module. If every point of `S` has an affine open
@@ -130,7 +130,7 @@ theorem isRelativelyAmple_of_forall_exists_isAmple {X S : Scheme.{u}} (f : X ⟶
     Stacks.RelativeAmple.IsRelativelyAmple f L
 ```
 
-**`Stacks.RelativeAmpleLocalOnBase.exists_affine_isAmple_cover_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean#L440). The attribute's comment: “(1) implies (3): the affine opens of the base are such a covering”.
+**`Stacks.RelativeAmpleLocalOnBase.exists_affine_isAmple_cover_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/LocalOnBase.lean#L440). The attribute's comment: “(1) implies (3): the affine opens of the base are such a covering”.
 
 > **Stacks Tag 01VJ, clause (1) implies clause (3).** A relatively ample module restricts to an
 > ample module on the preimage of *some* affine open neighbourhood of every point of the base,
@@ -144,7 +144,7 @@ theorem exists_affine_isAmple_cover_of_isRelativelyAmple {X S : Scheme.{u}} (f :
       IsAmple (f ⁻¹ᵁ V).toScheme (Stacks.AmpleLocallyClosed.pullbackModule (f ⁻¹ᵁ V).ι L)
 ```
 
-**`Stacks.RelativeAmple.IsRelativelyAmple.isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L271). The attribute's comment: “(1) implies (5), the assertion that r\_\{L,psi} is an open immersion”.
+**`Stacks.RelativeAmple.IsRelativelyAmple.isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L271). The attribute's comment: “(1) implies (5), the assertion that r\_\{L,psi} is an open immersion”.
 
 > **[Stacks, Tag 01VJ], (1) implies the open-immersion assertion of (5).** For `L` ample relative
 > to `f`, with `𝒜 = f_*(⨁_{d ≥ 0} L^{⊗ d})` and `ψ` the adjunction map, the morphism
@@ -158,7 +158,7 @@ theorem IsRelativelyAmple.isOpenImmersion_globalMorphism (hL : IsRelativelyAmple
       ((directImagePowerMap f L).globalMorphism (relativeProj (directImageAlgebra f L)))
 ```
 
-**`Stacks.RelativeAmple.isRelativelyAmple_of_isImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L305). The attribute's comment: “(6) implies (1)”.
+**`Stacks.RelativeAmple.isRelativelyAmple_of_isImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L305). The attribute's comment: “(6) implies (1)”.
 
 > **[Stacks, Tag 01VJ], (6) implies (1).** Let `f` be quasi-compact, `𝒜` a quasi-coherent
 > graded `𝒪_S`-algebra and `ψ : f^*𝒜 ⟶ ⨁_{d ≥ 0} L^{⊗ d}` a graded map with `U(ψ) = X` such that
@@ -174,7 +174,7 @@ theorem isRelativelyAmple_of_isImmersion_globalMorphism (hf : QuasiCompact f)
     IsRelativelyAmple f L
 ```
 
-**`Stacks.RelativeAmple.isRelativelyAmple_of_isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L325). The attribute's comment: “(4) implies (1)”.
+**`Stacks.RelativeAmple.isRelativelyAmple_of_isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L325). The attribute's comment: “(4) implies (1)”.
 
 > **[Stacks, Tag 01VJ], (4) implies (1)**: an open immersion is an immersion.
 
@@ -185,7 +185,7 @@ theorem isRelativelyAmple_of_isOpenImmersion_globalMorphism (hf : QuasiCompact f
     IsRelativelyAmple f L
 ```
 
-**`Stacks.RelativeAmple.isRelativelyAmple_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L345).
+**`Stacks.RelativeAmple.isRelativelyAmple_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L345).
 
 > **[Stacks, Tag 01VJ].** For a quasi-compact morphism of schemes `f : X ⟶ S` and an invertible
 > `𝒪_X`-module `L` the following are equivalent:
@@ -221,7 +221,7 @@ theorem isRelativelyAmple_tfae (f : X ⟶ S) (L : X.Modules)
         P.coveringOpen = ⊤ ∧ IsImmersion (P.globalMorphism (relativeProj A))]
 ```
 
-**`Stacks.RelativeAmpleRestrictBase.isRelativelyAmple_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean#L214). The attribute's comment: “(1) implies (2): relative ampleness is inherited by the restriction of the morphism over an arbitrary open of the base, so every open covering witnesses clause (2)”. References: EGA II (4.6.4), “Necessity”.
+**`Stacks.RelativeAmpleRestrictBase.isRelativelyAmple_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean#L214). The attribute's comment: “(1) implies (2): relative ampleness is inherited by the restriction of the morphism over an arbitrary open of the base, so every open covering witnesses clause (2)”. References: EGA II (4.6.4), “Necessity”.
 
 > **Stacks Tag 01VJ, clause (1) implies clause (2).** If `L` is ample relative to `f : X ⟶ S`
 > then, for *every* open `V ⊆ S`, the restriction `L|_{f⁻¹V}` is ample relative to the restricted
@@ -243,7 +243,7 @@ theorem isRelativelyAmple_morphismRestrict
     Stacks.RelativeAmple.IsRelativelyAmple (f ∣_ V) (pullbackModule (f ⁻¹ᵁ V).ι L)
 ```
 
-**`Stacks.RelativeAmpleRestrictBase.isRelativelyAmple_of_forall_exists_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean#L235). The attribute's comment: “(2) implies (1): relative ampleness over the members of an arbitrary open covering of the base implies relative ampleness”.
+**`Stacks.RelativeAmpleRestrictBase.isRelativelyAmple_of_forall_exists_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/RestrictBase.lean#L235). The attribute's comment: “(2) implies (1): relative ampleness over the members of an arbitrary open covering of the base implies relative ampleness”.
 
 > **Stacks Tag 01VJ, clause (2) implies clause (1).** Let `f : X ⟶ S` be quasi-compact and `L`
 > invertible. If every point of `S` has an open neighbourhood `V` such that `L|_{f⁻¹V}` is ample
@@ -268,7 +268,7 @@ theorem isRelativelyAmple_of_forall_exists_isRelativelyAmple (hf : QuasiCompact 
 
 [Tag 01VK](https://stacks.math.columbia.edu/tag/01VK) in the Stacks Project.
 
-**`Stacks.RelativeAmpleAffineBase.isRelativelyAmple_iff_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmpleAffineBase/Basic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmpleAffineBase/Basic.lean#L167). References: EGA II (4.6.6).
+**`Stacks.RelativeAmpleAffineBase.isRelativelyAmple_iff_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmpleAffineBase/Basic.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmpleAffineBase/Basic.lean#L167). References: EGA II (4.6.6).
 
 > **Stacks Tag 01VK.** Over an affine base, an invertible `𝒪_X`-module is ample relative to
 > `f : X ⟶ S` if and only if it is ample on `X`.
@@ -291,7 +291,7 @@ theorem isRelativelyAmple_iff_isAmple {X S : Scheme.{u}} [IsAffine S] (f : X ⟶
 
 [Tag 0891](https://stacks.math.columbia.edu/tag/0891) in the Stacks Project.
 
-**`Stacks.RelativeAmple.isRelativelyAmple_unitModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean#L212). References: EGA II (5.1.6), “(a) <=> (c')”.
+**`Stacks.RelativeAmple.isRelativelyAmple_unitModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/Basic.lean#L212). References: EGA II (5.1.6), “(a) <=> (c')”.
 
 > **Stacks Tag 0891.** The structure sheaf `𝒪_X` is ample relative to `f : X ⟶ S` if and only
 > if the preimage under `f` of every affine open of `S` is a quasi-affine scheme — that is, if and
@@ -314,7 +314,7 @@ theorem isRelativelyAmple_unitModule_iff {X S : Scheme.{u}} (f : X ⟶ S) :
 
 [Tag 0892](https://stacks.math.columbia.edu/tag/0892) in the Stacks Project.
 
-**`Stacks.AmplePullbackDatum.exists_threshold_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Basic.lean#L259). The attribute's comment: “part (1)”.
+**`Stacks.AmplePullbackDatum.exists_threshold_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Basic.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Basic.lean#L259). The attribute's comment: “part (1)”.
 
 > **Part (1) of [Stacks, Tag 0892].** For `L` ample relative to `f : X ⟶ S` and `M` an ample
 > invertible `𝒪_S`-module there is a threshold `n` with `L ⊗ f^* M ^⊗ a` ample on `X` for every
@@ -336,7 +336,7 @@ theorem exists_threshold_isAmple (hL : Stacks.RelativeAmple.IsRelativelyAmple f 
       IsAmple X (Stacks.AmplePullbackPart1.tensorPullbackPowModule f L M a)
 ```
 
-**`Stacks.SectionRatioNoAmple.isAmple_modulePullback_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRatioNoAmple/Pullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRatioNoAmple/Pullback.lean#L93). The attribute's comment: “part (2)”. References: EGA II (5.1.12), “absolute case”.
+**`Stacks.SectionRatioNoAmple.isAmple_modulePullback_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRatioNoAmple/Pullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRatioNoAmple/Pullback.lean#L93). The attribute's comment: “part (2)”. References: EGA II (5.1.12), “absolute case”.
 
 > The pullback of an ample invertible module along a quasi-affine morphism is ample.
 
@@ -349,7 +349,7 @@ theorem isAmple_modulePullback_of_isQuasiAffineHom [IsQuasiAffineHom f] (hM : Is
 
 [Tag 0C4K](https://stacks.math.columbia.edu/tag/0C4K) in the Stacks Project.
 
-**`Stacks.AmplePullbackDatum.exists_threshold_isRelativelyAmple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Composition.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Composition.lean#L125).
+**`Stacks.AmplePullbackDatum.exists_threshold_isRelativelyAmple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Composition.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmplePullbackDatum/Composition.lean#L126).
 
 > **[Stacks, Tag 0C4K].** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes, `L` an
 > invertible `𝒪_X`-module and `M` an invertible `𝒪_Y`-module. If `S` is quasi-compact, `L` is ample
@@ -369,7 +369,7 @@ theorem exists_threshold_isRelativelyAmple_comp [CompactSpace S]
       (tensorPullbackPowModule f L M a)
 ```
 
-**`Stacks.RelativeAmpleCompositionThreshold.exists_threshold_isRelativelyAmple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionThreshold.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionThreshold.lean#L217). The attribute's comment: “on Tag 01PW as EventualAffineDatum over each affine open of the base”.
+**`Stacks.RelativeAmpleCompositionThreshold.exists_threshold_isRelativelyAmple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionThreshold.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionThreshold.lean#L217). The attribute's comment: “on Tag 01PW as EventualAffineDatum over each affine open of the base”.
 
 > **Stacks Tag 0C4K**, on the single premise
 > `Stacks.RelativeAmpleCompositionThreshold.RelativeEventualAffineDatum` — [Stacks, Tag 01PW] over
@@ -402,7 +402,7 @@ theorem exists_threshold_isRelativelyAmple_comp [CompactSpace S]
 
 [Tag 0893](https://stacks.math.columbia.edu/tag/0893) in the Stacks Project.
 
-**`Stacks.AmpleBridge.isRelativelyAmple_pullbackModule_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleBridge/BaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleBridge/BaseChange.lean#L111). The attribute's comment: “for an arbitrary cartesian square”.
+**`Stacks.AmpleBridge.isRelativelyAmple_pullbackModule_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleBridge/BaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleBridge/BaseChange.lean#L111). The attribute's comment: “for an arbitrary cartesian square”.
 
 > If `L` is ample relative to `f : X ⟶ S` and the square with sides `p : X' ⟶ X`,
 > `f' : X' ⟶ S'`, `f` and `g : S' ⟶ S` is cartesian, then the pullback of `L` along `p` is ample
@@ -416,7 +416,7 @@ theorem isRelativelyAmple_pullbackModule_of_isPullback {X S X' S' : Scheme.{u}} 
     Stacks.RelativeAmple.IsRelativelyAmple f' (pullbackModule p L)
 ```
 
-**`Stacks.RelativeAmpleBaseChange.isRelativelyAmple_modulePullback_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmpleBaseChange/Basic.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmpleBaseChange/Basic.lean#L262).
+**`Stacks.RelativeAmpleBaseChange.isRelativelyAmple_modulePullback_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmpleBaseChange/Basic.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmpleBaseChange/Basic.lean#L262).
 
 > If `L` is ample relative to `f : X ⟶ S`, then its pullback to `X ×_S S'` is ample relative
 > to the base change `X ×_S S' ⟶ S'`, for any `g : S' ⟶ S`.
@@ -432,7 +432,7 @@ theorem isRelativelyAmple_modulePullback_unconditional
 
 [Tag 0C4L](https://stacks.math.columbia.edu/tag/0C4L) in the Stacks Project.
 
-**`Stacks.RelativeAmpleCompositionPermanence.isRelativelyAmple_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionPermanence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionPermanence.lean#L68).
+**`Stacks.RelativeAmpleCompositionPermanence.isRelativelyAmple_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionPermanence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeAmple/CompositionPermanence.lean#L68).
 
 > **Stacks Tag 0C4L.** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes and let `L` be
 > an invertible `𝒪_X`-module. If `L` is ample relative to `g ∘ f` and `f` is quasi-compact, then
@@ -458,4 +458,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.38, Tag 01VG](https://stacks.math.columbia.edu/tag/01VG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

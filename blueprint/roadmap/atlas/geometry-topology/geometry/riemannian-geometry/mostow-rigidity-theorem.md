@@ -7,7 +7,7 @@ statement: formalized
 
 # Mostow rigidity theorem
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html).
 
 ## Projective indefinite orthogonal group
 
@@ -17,7 +17,7 @@ $q$ are $-1$, and let $\mathrm{O}(p,q)$ be the group of real $(p+q) \times (p+q)
 with $J A^{\mathsf{T}} J A = A J A^{\mathsf{T}} J = I$. The group $\mathrm{PO}(p,q)$ is the
 quotient of $\mathrm{O}(p,q)$ by its center.
 
-Formalized by `MathlibExt.Geometry.MostowRigidityWanted.Geometry.MostowRigidity.PO`, a definition declared in [WantedExt/Geometry/MostowRigidityWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MostowRigidityWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html#po).
+Formalized by `MathlibExt.Geometry.MostowRigidityWanted.Geometry.MostowRigidity.PO`, a definition declared in [WantedExt/Geometry/MostowRigidityWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MostowRigidityWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html#po).
 
 ## Mostow rigidity, algebraic form
 
@@ -31,7 +31,7 @@ $g \in \mathrm{PO}(n,1)$ such that $f(\gamma) = g \gamma g^{-1}$ for all $\gamma
 
 - https://en.wikipedia.org/wiki/Mostow_rigidity_theorem#Algebraic_form and Gopal Prasad, *Strong rigidity of ℚ-rank 1 lattices*, Invent. Math. 21 (1973), 255–286. Problem `mostow_rigidity` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.MostowRigidityWanted.Geometry.MostowRigidity.mostow_rigidity` is written with `theorem_wanted` in [WantedExt/Geometry/MostowRigidityWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MostowRigidityWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html#mostow-rigidity).
+Stated but not proved: `MathlibExt.Geometry.MostowRigidityWanted.Geometry.MostowRigidity.mostow_rigidity` is written with `theorem_wanted` in [WantedExt/Geometry/MostowRigidityWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MostowRigidityWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html#mostow-rigidity).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mostow rigidity theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry/mostow-rigidity-theorem)

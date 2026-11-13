@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.37 The resolution property and perfect complexes
 
-Section 36.37 of the Stacks Project, [Tag 0F8D](https://stacks.math.columbia.edu/tag/0F8D). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.37 of the Stacks Project, [Tag 0F8D](https://stacks.math.columbia.edu/tag/0F8D). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F8E, a lemma
 
 [Tag 0F8E](https://stacks.math.columbia.edu/tag/0F8E) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/FiniteLocallyFreeReplacement.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/FiniteLocallyFreeReplacement.lean#L1029).
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/FiniteLocallyFreeReplacement.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/FiniteLocallyFreeReplacement.lean#L1029).
 
 > **Stacks Project, Tag 0F8E.** On a quasi-compact and quasi-separated scheme with the
 > resolution property, a bounded below complex of quasi-coherent modules representing a perfect
@@ -36,7 +36,7 @@ theorem exists_boundedFiniteLocallyFree_quasiIso (X : Scheme.{u})
 
 [Tag 0F8F](https://stacks.math.columbia.edu/tag/0F8F) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_iso_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/PerfectRepresentative.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/PerfectRepresentative.lean#L81).
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_iso_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/PerfectRepresentative.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/PerfectRepresentative.lean#L81).
 
 > **[Stacks, Tag 0F8F].**  Let `X` be a quasi-compact and quasi-separated scheme with the
 > resolution property.  Every perfect object of `D(𝒪_X)` is isomorphic to the image of a bounded
@@ -58,7 +58,7 @@ theorem exists_boundedFiniteLocallyFree_iso_of_hasResolutionProperty (X : Scheme
 
 [Tag 0F8G](https://stacks.math.columbia.edu/tag/0F8G) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_roof_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedRoof.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedRoof.lean#L183).
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_roof_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedRoof.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedRoof.lean#L183).
 
 > **[Stacks, Tag 0F8G].**  Let `X` be a quasi-compact and quasi-separated scheme with the
 > resolution property and let `ℰ^•`, `ℱ^•` be finite complexes of finite locally free
@@ -84,7 +84,7 @@ theorem exists_boundedFiniteLocallyFree_roof_of_hasResolutionProperty (X : Schem
 
 [Tag 0F8H](https://stacks.math.columbia.edu/tag/0F8H) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_homotopy_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedHomotopy.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedHomotopy.lean#L209).
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.exists_boundedFiniteLocallyFree_homotopy_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedHomotopy.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/DerivedHomotopy.lean#L209).
 
 > Let `X` be a quasi-compact and quasi-separated scheme with the resolution property and let
 > `ℰ^•`, `ℱ^•` be finite complexes of finite locally free `𝒪_X`-modules.  If two maps of complexes
@@ -106,7 +106,7 @@ theorem exists_boundedFiniteLocallyFree_homotopy_of_hasResolutionProperty (X : S
 
 [Tag 0F8I](https://stacks.math.columbia.edu/tag/0F8I) in the Stacks Project.
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L58). The attribute's comment: “perfect objects form a triangulated subcategory”. References: SGA 6 I (5.8.4), “special case”; SGA 6 III (4.2), “Identity-morphism case”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L58). The attribute's comment: “perfect objects form a triangulated subcategory”. References: SGA 6 I (5.8.4), “special case”; SGA 6 III (4.2), “Identity-morphism case”.
 
 > **Perfect objects form a triangulated subcategory of `D(O_X)`.** This is the ringed-space
 > statement `Stacks.Cohomology.PerfectTriangulatedSubcategory.isTriangulated_isPerfect`, read on the
@@ -118,7 +118,7 @@ instance perfectDerivedProperty_isTriangulated (X : Scheme.{u}) :
       fun K => IsPerfect (X := X.toRingedSpace) K).IsTriangulated
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L124). The attribute's comment: “exactness of the canonical functor”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/CanonicalFunctor.lean#L124). The attribute's comment: “exactness of the canonical functor”.
 
 > **The canonical functor `K^b(A) ⥤ D_perf(O_X)` is exact.** The composite
 > `K^b(A) ⥤ K(O_X) ⥤ D(O_X)` is exact, being the inclusion of a triangulated subcategory
@@ -131,7 +131,7 @@ instance perfectComplexFunctor_isTriangulated (X : Scheme.{u}) :
     (perfectComplexFunctor X).IsTriangulated
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.BoundedFiniteLocallyFreeHomotopyCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L88). The attribute's comment: “the category K^b(A)”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.BoundedFiniteLocallyFreeHomotopyCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L88). The attribute's comment: “the category K^b(A)”.
 
 > The homotopy category `K^b(A)` of bounded complexes of finite locally free modules.
 
@@ -139,7 +139,7 @@ instance perfectComplexFunctor_isTriangulated (X : Scheme.{u}) :
 abbrev BoundedFiniteLocallyFreeHomotopyCategory (X : Scheme.{u})
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.PerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L93). The attribute's comment: “the category of perfect objects”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.PerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L93). The attribute's comment: “the category of perfect objects”.
 
 > The full subcategory `D_perf(O_X)` of perfect objects of the derived category.
 
@@ -147,7 +147,7 @@ abbrev BoundedFiniteLocallyFreeHomotopyCategory (X : Scheme.{u})
 abbrev PerfectDerivedCategory (X : Scheme.{u})
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L99). The attribute's comment: “the system S of quasi-isomorphisms”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L99). The attribute's comment: “the system S of quasi-isomorphisms”.
 
 > The system `S` of quasi-isomorphisms of `K^b(A)`.
 
@@ -156,7 +156,7 @@ abbrev quasiIsomorphisms (X : Scheme.{u}) :
     MorphismProperty (BoundedFiniteLocallyFreeHomotopyCategory X)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L109). The attribute's comment: “perfect objects are closed under isomorphism”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectDerivedProperty_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Defs.lean#L109). The attribute's comment: “perfect objects are closed under isomorphism”.
 
 > **Perfect objects form a strictly full subcategory of `D(O_X)`.**
 
@@ -166,7 +166,7 @@ instance perfectDerivedProperty_isClosedUnderIsomorphisms (X : Scheme.{u}) :
       (fun K : DerivedCategory X.Modules => IsPerfect (X := X.toRingedSpace) K)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isInvertedBy_perfectComplexFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/InvertsQuasiIsomorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/InvertsQuasiIsomorphisms.lean#L75). The attribute's comment: “the canonical functor inverts the system `S` of quasi-isomorphisms, so that it factors through `S⁻¹K^b(A)`; this is the first field of `Functor.IsLocalization`, for every scheme X”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isInvertedBy_perfectComplexFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/InvertsQuasiIsomorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/InvertsQuasiIsomorphisms.lean#L75). The attribute's comment: “the canonical functor inverts the system `S` of quasi-isomorphisms, so that it factors through `S⁻¹K^b(A)`; this is the first field of `Functor.IsLocalization`, for every scheme X”.
 
 > **The canonical functor `K^b(A) ⥤ D_perf(O_X)` inverts the quasi-isomorphisms of `K^b(A)`.**
 > A morphism of `K^b(A)` is a quasi-isomorphism exactly when its image in `K(O_X)` is one, so
@@ -179,7 +179,7 @@ theorem quasiIsomorphisms_isInvertedBy_perfectComplexFunctor (X : Scheme.{u}) :
     (quasiIsomorphisms X).IsInvertedBy (perfectComplexFunctor X)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor_isLocalization_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Localization.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Localization.lean#L150). The attribute's comment: “the canonical functor presents the perfect derived category as the localization of the bounded homotopy category at the quasi-isomorphisms”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor_isLocalization_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Localization.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Localization.lean#L152). The attribute's comment: “the canonical functor presents the perfect derived category as the localization of the bounded homotopy category at the quasi-isomorphisms”.
 
 > **The equivalence clause of [Stacks, Tag 0F8I].**  On a quasi-compact and quasi-separated
 > scheme with the resolution property, the canonical functor `K^b(A) ⥤ D_perf(𝒪_X)` presents
@@ -196,7 +196,7 @@ theorem perfectComplexFunctor_isLocalization_of_hasResolutionProperty (X : Schem
     (perfectComplexFunctor X).IsLocalization (quasiIsomorphisms X)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfect_of_boundedFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Perfectness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Perfectness.lean#L99). The attribute's comment: “the functor lands in perfect objects”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfect_of_boundedFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Perfectness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Perfectness.lean#L99). The attribute's comment: “the functor lands in perfect objects”.
 
 > **`K^b(A)` lands in `D_perf(O_X)`.** A bounded complex of finite locally free modules is
 > strictly perfect on a small enough neighbourhood of each point of `X`, so it is perfect in the
@@ -209,7 +209,7 @@ theorem perfect_of_boundedFiniteLocallyFree (X : Scheme.{u})
     IsPerfect (X := X.toRingedSpace) (DerivedCategory.Qh.obj E.obj)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.isSaturated_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Saturation.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Saturation.lean#L63). The attribute's comment: “`D_perf(O_X)` is a saturated subcategory of `D(O_X)` -- the adjective `saturated` of the source's item (3), which is closure under direct summands, on any ringed space”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.isSaturated_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Saturation.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Saturation.lean#L63). The attribute's comment: “`D_perf(O_X)` is a saturated subcategory of `D(O_X)` -- the adjective `saturated` of the source's item (3), which is closure under direct summands, on any ringed space”.
 
 > **Perfectness is a saturated property of objects of `D(O_X)` on a ringed space.**  Both
 > summands of a perfect biproduct are perfect by [Stacks, Tag 08CS], and perfectness is closed
@@ -224,7 +224,7 @@ theorem isSaturated_isPerfect {X : RingedSpace.{u, u}}
       (fun K : DerivedCategory (OXMod.{u, u} X) => IsPerfect K)
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.boundedFiniteLocallyFreeHomotopyProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L269). The attribute's comment: “the homotopy subcategory is triangulated”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.boundedFiniteLocallyFreeHomotopyProperty_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L269). The attribute's comment: “the homotopy subcategory is triangulated”.
 
 > **`K^b(A)` is a triangulated subcategory of `K(O_X)`.** The property of being a bounded
 > complex with finite locally free terms holds of the zero complex, is stable under shift, and is
@@ -236,7 +236,7 @@ instance boundedFiniteLocallyFreeHomotopyProperty_isTriangulated
     (boundedFiniteLocallyFreeHomotopyProperty X).IsTriangulated
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L335). The attribute's comment: “the canonical functor”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.perfectComplexFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L335). The attribute's comment: “the canonical functor”.
 
 > **The canonical functor `K^b(A) ⥤ D_perf(O_X)`.** It is `DerivedCategory.Qh` restricted to
 > `K^b(A)`, lifted to the full subcategory of perfect objects along
@@ -247,7 +247,7 @@ def perfectComplexFunctor (X : Scheme.{u}) :
     BoundedFiniteLocallyFreeHomotopyCategory X ⥤ PerfectDerivedCategory X
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L367). The attribute's comment: “saturation of the quasi-isomorphism system”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L367). The attribute's comment: “saturation of the quasi-isomorphism system”.
 
 > **The system `S` of quasi-isomorphisms of `K^b(A)` is saturated.**
 
@@ -256,7 +256,7 @@ theorem quasiIsomorphisms_isSaturated (X : Scheme.{u}) :
     (quasiIsomorphisms X).IsSaturated
 ```
 
-**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L374). The attribute's comment: “compatibility of quasi-isomorphisms with triangulation”.
+**`Stacks.Perfect.BoundedLocallyFreeComplexes.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BoundedLocallyFreeComplexes/Triangulated.lean#L374). The attribute's comment: “compatibility of quasi-isomorphisms with triangulation”.
 
 > **The system `S` of quasi-isomorphisms of `K^b(A)` is compatible with the triangulated
 > structure.**
@@ -273,4 +273,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.37, Tag 0F8D](https://stacks.math.columbia.edu/tag/0F8D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

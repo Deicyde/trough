@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.46 Pseudo-coherent morphisms
 
-Section 76.46 of the Stacks Project, [Tag 06BQ](https://stacks.math.columbia.edu/tag/06BQ). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.46 of the Stacks Project, [Tag 06BQ](https://stacks.math.columbia.edu/tag/06BQ). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06BR, a definition
 
 [Tag 06BR](https://stacks.math.columbia.edu/tag/06BR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsPseudoCoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean#L69). The attribute's comment: “part (1): pseudo-coherent morphism”.
+**`AlgebraicGeometry.Space.IsPseudoCoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean#L69). The attribute's comment: “part (1): pseudo-coherent morphism”.
 
 > **Stacks 06BR, part (1).** A morphism of algebraic spaces over `S` is
 > *pseudo-coherent* when every commuting square of étale scheme charts induces a
@@ -24,7 +24,7 @@ Section 76.46 of the Stacks Project, [Tag 06BQ](https://stacks.math.columbia.edu
 abbrev IsPseudoCoherent (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsPseudoCoherentAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean#L77). The attribute's comment: “part (2): pseudo-coherent at a point”.
+**`AlgebraicGeometry.Space.IsPseudoCoherentAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Basic.lean#L77). The attribute's comment: “part (2): pseudo-coherent at a point”.
 
 > **Stacks 06BR, part (2).** A morphism of algebraic spaces over `S` is
 > *pseudo-coherent at* a point `x` of its source when it is pseudo-coherent on an open
@@ -38,7 +38,7 @@ abbrev IsPseudoCoherentAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 06BS](https://stacks.math.columbia.edu/tag/06BS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_baseChange_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FlatBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FlatBaseChange.lean#L234).
+**`AlgebraicGeometry.Space.isPseudoCoherent_baseChange_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FlatBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FlatBaseChange.lean#L234).
 
 > **Stacks 06BS.** A flat base change of a pseudo-coherent morphism of algebraic spaces over `S`
 > is pseudo-coherent: in a cartesian square with `g : Y ⟶ Z` pseudo-coherent and `f : X ⟶ Z` flat,
@@ -56,7 +56,7 @@ theorem isPseudoCoherent_baseChange_of_isFlat
 
 [Tag 06BT](https://stacks.math.columbia.edu/tag/06BT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean#L95).
+**`AlgebraicGeometry.Space.isPseudoCoherent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean#L95).
 
 > **Stacks 06BT.** A composition of pseudo-coherent morphisms of algebraic spaces over `S` is
 > pseudo-coherent.
@@ -77,7 +77,7 @@ theorem isPseudoCoherent_comp (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
 
 [Tag 06BU](https://stacks.math.columbia.edu/tag/06BU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L55).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L55).
 
 > **Stacks 06BU.** A pseudo-coherent morphism of algebraic spaces over `S` is locally of
 > finite presentation.
@@ -93,7 +93,7 @@ theorem isLocallyOfFinitePresentation_of_isPseudoCoherent (B : BigFppfSite.{u})
 
 [Tag 06BV](https://stacks.math.columbia.edu/tag/06BV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L65).
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_isFlat_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L65).
 
 > **Stacks 06BV.** A flat morphism of algebraic spaces over `S` which is locally of
 > finite presentation is pseudo-coherent.
@@ -109,7 +109,7 @@ theorem isPseudoCoherent_of_isFlat_of_isLocallyOfFinitePresentation (B : BigFppf
 
 [Tag 06BW](https://stacks.math.columbia.edu/tag/06BW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean#L111). References: SGA 6 III (1.14), “partial”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Composition.lean#L111). References: SGA 6 III (1.14), “partial”.
 
 > **Stacks 06BW.** A morphism of algebraic spaces over `S` between two algebraic spaces
 > pseudo-coherent over a base algebraic space is pseudo-coherent.
@@ -131,7 +131,7 @@ theorem isPseudoCoherent_of_comp (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.
 
 [Tag 06BX](https://stacks.math.columbia.edu/tag/06BX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Noetherian.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Noetherian.lean#L50). References: SGA 6 III (1.3), “Y loc. noetherian case”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Noetherian.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Noetherian.lean#L50). References: SGA 6 III (1.3), “Y loc. noetherian case”.
 
 > **Stacks 06BX.** For a morphism of algebraic spaces over `S` whose target is locally
 > Noetherian, pseudo-coherence is equivalent to being locally of finite type.
@@ -153,4 +153,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.46, Tag 06BQ](https://stacks.math.columbia.edu/tag/06BQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

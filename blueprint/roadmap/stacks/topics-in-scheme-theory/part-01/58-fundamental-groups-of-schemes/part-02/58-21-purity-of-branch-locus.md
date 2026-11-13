@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.21 Purity of branch locus
 
-Section 58.21 of the Stacks Project, [Tag 0BJE](https://stacks.math.columbia.edu/tag/0BJE). 6 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.21 of the Stacks Project, [Tag 0BJE](https://stacks.math.columbia.edu/tag/0BJE). 6 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BJG, a lemma
 
 [Tag 0BJG](https://stacks.math.columbia.edu/tag/0BJG) in the Stacks Project.
 
-**`IsLocalRing.exists_isPrime_height_eq_one_of_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/Basic.lean#L40).
+**`IsLocalRing.exists_isPrime_height_eq_one_of_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/Basic.lean#L40).
 
 > An element of the maximal ideal of a positive-dimensional Noetherian local ring is
 > contained in a prime ideal of height one.
@@ -30,7 +30,7 @@ public theorem exists_isPrime_height_eq_one_of_mem_maximalIdeal
 
 [Tag 0BJH](https://stacks.math.columbia.edu/tag/0BJH) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleAt_of_flat_of_unramifiedAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/UnramifiedCodimensionOne.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/UnramifiedCodimensionOne.lean#L328).
+**`AlgebraicGeometry.etaleAt_of_flat_of_unramifiedAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/UnramifiedCodimensionOne.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/UnramifiedCodimensionOne.lean#L328).
 
 > **Stacks Project, Tag 0BJH.** A flat morphism of locally Noetherian schemes which is
 > quasi-finite at a point that is not the generic point of an irreducible component of its source
@@ -49,7 +49,7 @@ public theorem etaleAt_of_flat_of_unramifiedAt_codimensionOne
 
 [Tag 0BMA](https://stacks.math.columbia.edu/tag/0BMA) in the Stacks Project.
 
-**`Stacks.PurityDimensionTwo.quotient_maximalIdeal_counterexample_clauseTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityClauseTwoCounterexample.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityClauseTwoCounterexample.lean#L116). The attribute's comment: “clause (2) as literally stated is false: for every regular local ring `A` with `2 ≤ ringKrullDim A`, `B = A ⧸ 𝔪` is a finite `A`-algebra and a normal ring (`IsNormalRing`), the preimage of the punctured spectrum under `Spec B ⟶ Spec A` is empty, so the induced morphism over the punctured spectrum is finite étale, but `A → B` is not étale (`A ⧸ 𝔪` is not even torsion-free over `A`). This is why the clause-(2) declaration `Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim` carries the extra hypothesis `Module.IsTorsionFree A B`.”.
+**`Stacks.PurityDimensionTwo.quotient_maximalIdeal_counterexample_clauseTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityClauseTwoCounterexample.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityClauseTwoCounterexample.lean#L116). The attribute's comment: “clause (2) as literally stated is false: for every regular local ring `A` with `2 ≤ ringKrullDim A`, `B = A ⧸ 𝔪` is a finite `A`-algebra and a normal ring (`IsNormalRing`), the preimage of the punctured spectrum under `Spec B ⟶ Spec A` is empty, so the induced morphism over the punctured spectrum is finite étale, but `A → B` is not étale (`A ⧸ 𝔪` is not even torsion-free over `A`). This is why the clause-(2) declaration `Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim` carries the extra hypothesis `Module.IsTorsionFree A B`.”.
 
 > **Clause (2) of [Stacks, Tag 0BMA] as literally stated is false: the residue field is a
 > counterexample.** Let `A` be a regular local ring of dimension at least two and `B = A ⧸ 𝔪`.
@@ -70,7 +70,7 @@ theorem quotient_maximalIdeal_counterexample_clauseTwo [IsRegularLocalRing A]
       ¬ Algebra.Etale A (A ⧸ maximalIdeal A)
 ```
 
-**`Stacks.PurityDimensionTwo.hasPurity_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularDimensionTwo.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularDimensionTwo.lean#L127). The attribute's comment: “clause (1) of the tag, and in the case `d = 2`: `A` regular local with `ringKrullDim A = 2`, and the conclusion is `AlgebraicGeometry.HasPurity A`, i.e. essential surjectivity of `FÉt_{Spec A} ⟶ FÉt_U`, which is the source's definition of purity for `(A, 𝔪)`. This is the base case of the source's induction on `d`; the inductive step is tag 0BLM.”. References: SGA 2 X (3.4), “partial”.
+**`Stacks.PurityDimensionTwo.hasPurity_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularDimensionTwo.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularDimensionTwo.lean#L127). The attribute's comment: “clause (1) of the tag, and in the case `d = 2`: `A` regular local with `ringKrullDim A = 2`, and the conclusion is `AlgebraicGeometry.HasPurity A`, i.e. essential surjectivity of `FÉt_{Spec A} ⟶ FÉt_U`, which is the source's definition of purity for `(A, 𝔪)`. This is the base case of the source's induction on `d`; the inductive step is tag 0BLM.”. References: SGA 2 X (3.4), “partial”.
 
 > **Purity of the branch locus, [Stacks, Tag 0BMA] clause (1), in dimension two.** Let `A` be
 > a regular local ring of Krull dimension `2`. Then every finite étale cover of the punctured
@@ -90,7 +90,7 @@ public theorem hasPurity_of_ringKrullDim_eq_two (A : Type u) [CommRing A]
     HasPurity A
 ```
 
-**`Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean#L85). The attribute's comment: “clause (2) of the tag, at every `d ≥ 2`: `A` regular local with `2 ≤ ringKrullDim A`, `B` a finite `A`-algebra which is a normal ring in the sense of `IsNormalRing` (item (1) of tag 030C) and is torsion-free over `A`, and `Spec B ⟶ Spec A` étale over the punctured spectrum; the conclusion is `Algebra.Etale A B`. The source's derivation from clause (1) through tag 0BM9 is the proof, and clause (1) at every `d ≥ 2` is `AlgebraicGeometry.purityAtRegularLocalRings`. Torsion-freeness over `A` is an extra hypothesis, not present in the source and necessary for the statement to be true: the residue field `A ⧸ 𝔪` is a finite normal `A`-algebra whose spectrum misses the punctured spectrum, hence is étale there, and is not flat over `A`. Weakening it to injectivity of `algebraMap A B`, or to surjectivity of `Spec B ⟶ Spec A`, leaves the statement false as well: `B = A × (A ⧸ 𝔪)` is a finite normal `A`-algebra with both properties which is the identity over the punctured spectrum and is not flat over `A`. That clause (2) as literally stated is false is proved in `Stacks.PurityDimensionTwo.quotient_maximalIdeal_counterexample_clauseTwo` (`PurityBranchLocus.PurityClauseTwoCounterexample`); see also the module docstring of `PurityBranchLocus.RegularDimensionTwo`.”. References: SGA 1 X (3.2), “Case B finite over A”; SGA 4½ Arcata (5.2.4), “special case”.
+**`Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean#L85). The attribute's comment: “clause (2) of the tag, at every `d ≥ 2`: `A` regular local with `2 ≤ ringKrullDim A`, `B` a finite `A`-algebra which is a normal ring in the sense of `IsNormalRing` (item (1) of tag 030C) and is torsion-free over `A`, and `Spec B ⟶ Spec A` étale over the punctured spectrum; the conclusion is `Algebra.Etale A B`. The source's derivation from clause (1) through tag 0BM9 is the proof, and clause (1) at every `d ≥ 2` is `AlgebraicGeometry.purityAtRegularLocalRings`. Torsion-freeness over `A` is an extra hypothesis, not present in the source and necessary for the statement to be true: the residue field `A ⧸ 𝔪` is a finite normal `A`-algebra whose spectrum misses the punctured spectrum, hence is étale there, and is not flat over `A`. Weakening it to injectivity of `algebraMap A B`, or to surjectivity of `Spec B ⟶ Spec A`, leaves the statement false as well: `B = A × (A ⧸ 𝔪)` is a finite normal `A`-algebra with both properties which is the identity over the punctured spectrum and is not flat over `A`. That clause (2) as literally stated is false is proved in `Stacks.PurityDimensionTwo.quotient_maximalIdeal_counterexample_clauseTwo` (`PurityBranchLocus.PurityClauseTwoCounterexample`); see also the module docstring of `PurityBranchLocus.RegularDimensionTwo`.”. References: SGA 1 X (3.2), “Case B finite over A”; SGA 4½ Arcata (5.2.4), “special case”.
 
 > **[Stacks, Tag 0BMA] clause (2) for every `d ≥ 2`.** Let `A` be a regular local ring of
 > dimension at least two and let `B` be a finite `A`-algebra which is a normal ring and
@@ -125,7 +125,7 @@ public theorem etale_of_isNormalRing_of_two_le_ringKrullDim
     Algebra.Etale A B
 ```
 
-**`Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularDimensionTwo.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularDimensionTwo.lean#L439). The attribute's comment: “clause (2) of the tag, and only in the case `d = 2`: `A` regular local with `ringKrullDim A = 2`, `B` a finite `A`-algebra which is a normal ring in the sense of `IsNormalRing` (item (1) of tag 030C) and is torsion-free over `A`, and `Spec B ⟶ Spec A` étale over the punctured spectrum; the conclusion is `Algebra.Etale A B`. This is the base case of the source's induction on `d`; the inductive step is tag 0BLM, and clause (2) for every `d ≥ 2` is `etale_of_isNormalRing_of_two_le_ringKrullDim` in `PurityBranchLocus.PurityRegularLocal`. Clause (1) at `d = 2` — essential surjectivity of `FÉt_X ⟶ FÉt_U`, i.e. purity for `A` — follows from this result through tag 0BM9 and is `Stacks.PurityDimensionTwo.hasPurity_of_ringKrullDim_eq_two`. Torsion-freeness over `A` is an extra hypothesis, not present in the source and necessary for the statement to be true: the residue field `A ⧸ 𝔪` is a finite normal `A`-algebra whose spectrum misses the punctured spectrum, hence is étale there, and is not étale over `A`. See the module docstring.”. References: SGA 1 X (3.2), “special case”.
+**`Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_ringKrullDim_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularDimensionTwo.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularDimensionTwo.lean#L439). The attribute's comment: “clause (2) of the tag, and only in the case `d = 2`: `A` regular local with `ringKrullDim A = 2`, `B` a finite `A`-algebra which is a normal ring in the sense of `IsNormalRing` (item (1) of tag 030C) and is torsion-free over `A`, and `Spec B ⟶ Spec A` étale over the punctured spectrum; the conclusion is `Algebra.Etale A B`. This is the base case of the source's induction on `d`; the inductive step is tag 0BLM, and clause (2) for every `d ≥ 2` is `etale_of_isNormalRing_of_two_le_ringKrullDim` in `PurityBranchLocus.PurityRegularLocal`. Clause (1) at `d = 2` — essential surjectivity of `FÉt_X ⟶ FÉt_U`, i.e. purity for `A` — follows from this result through tag 0BM9 and is `Stacks.PurityDimensionTwo.hasPurity_of_ringKrullDim_eq_two`. Torsion-freeness over `A` is an extra hypothesis, not present in the source and necessary for the statement to be true: the residue field `A ⧸ 𝔪` is a finite normal `A`-algebra whose spectrum misses the punctured spectrum, hence is étale there, and is not étale over `A`. See the module docstring.”. References: SGA 1 X (3.2), “special case”.
 
 > Let `A` be a regular local ring of Krull dimension `2`, and let `B` be a finite `A`-algebra
 > which is a normal ring and torsion-free over `A`, such that the induced morphism on punctured
@@ -142,13 +142,13 @@ public theorem etale_of_isNormalRing_of_ringKrullDim_eq_two
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.purityAtRegularLocalRings`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularPurity.lean#L234), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean#L128) (StacksFrontier): “clause (1) of the tag, at every `d ≥ 2`: for every regular local ring `A` with `2 ≤ ringKrullDim A`, `AlgebraicGeometry.HasPurity A`, i.e. essential surjectivity of `FÉt_{Spec A} ⟶ FÉt_U` for `U` the punctured spectrum, which is the source's definition of purity for `(A, 𝔪)`.”.
+- [`AlgebraicGeometry.purityAtRegularLocalRings`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/RegularPurity.lean#L234), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/PurityRegularLocal.lean#L128) (StacksFrontier): “clause (1) of the tag, at every `d ≥ 2`: for every regular local ring `A` with `2 ≤ ringKrullDim A`, `AlgebraicGeometry.HasPurity A`, i.e. essential surjectivity of `FÉt_{Spec A} ⟶ FÉt_U` for `U` the punctured spectrum, which is the source's definition of purity for `(A, 𝔪)`.”.
 
 ## Tag 0BMB, a lemma
 
 [Tag 0BMB](https://stacks.math.columbia.edu/tag/0BMB) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/AnyDimension.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/AnyDimension.lean#L697). The attribute's comment: “the whole tag, in every dimension: hypotheses (1) `𝒪_{X,x}` normal, (2) `𝒪_{Y,f x}` regular, (3) `f` quasi-finite at `x`, (4) `dim 𝒪_{X,x} = dim 𝒪_{Y,f x}` and `1 ≤ dim 𝒪_{X,x}`, and (5) `f` unramified at every point specializing to `x` whose local ring has dimension one; the conclusion is `EtaleAt f x`. The proof is the source's induction on `dim 𝒪_{X,x}`, with the case `dim 𝒪_{X,x} ≤ 2` as its base case and tag 0BMA clause (2) in every dimension, `Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim`, supplying Cohen–Macaulayness of `𝒪_{X,x}` above it.”. References: EGA IV (21.12.14), “(v), (v), special case”; SGA 1 X (3.1), “more general”; SGA 1 X (3.2), “more general”.
+**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/AnyDimension.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/AnyDimension.lean#L697). The attribute's comment: “the whole tag, in every dimension: hypotheses (1) `𝒪_{X,x}` normal, (2) `𝒪_{Y,f x}` regular, (3) `f` quasi-finite at `x`, (4) `dim 𝒪_{X,x} = dim 𝒪_{Y,f x}` and `1 ≤ dim 𝒪_{X,x}`, and (5) `f` unramified at every point specializing to `x` whose local ring has dimension one; the conclusion is `EtaleAt f x`. The proof is the source's induction on `dim 𝒪_{X,x}`, with the case `dim 𝒪_{X,x} ≤ 2` as its base case and tag 0BMA clause (2) in every dimension, `Stacks.PurityDimensionTwo.etale_of_isNormalRing_of_two_le_ringKrullDim`, supplying Cohen–Macaulayness of `𝒪_{X,x}` above it.”. References: EGA IV (21.12.14), “(v), (v), special case”; SGA 1 X (3.1), “more general”; SGA 1 X (3.2), “more general”.
 
 > **Purity of the branch locus, [Stacks, Tag 0BMB], in any dimension.** Let `f : X ⟶ Y` be a
 > morphism of locally Noetherian schemes and let `x : X` be a point whose local ring is normal,
@@ -180,7 +180,7 @@ public theorem etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne
     EtaleAt f x
 ```
 
-**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionAtMostTwo.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionAtMostTwo.lean#L232). The attribute's comment: “the case `1 ≤ dim 𝒪_{X,x} = dim 𝒪_{Y,f x} ≤ 2`. Hypotheses (1), (2), (3) and (5) are the tag's own; hypothesis (4) is the tag's `dim 𝒪_{X,x} = dim 𝒪_{Y,f x} ≥ 1` together with the case restriction `dim 𝒪_{X,x} ≤ 2`. Flatness of `𝒪_{Y,f x} → 𝒪_{X,x}` is miracle flatness (tag 00R4), a normal Noetherian local ring of dimension at most two being Cohen–Macaulay by Serre's criterion (tag 031S) and the fibre ring being zero-dimensional by quasi-finiteness; étaleness at `x` then follows from tag 0BJH. For `dim 𝒪_{X,x} ≥ 3` the same reduction leaves exactly the flatness of `𝒪_{Y,f x} → 𝒪_{X,x}`, which is tag 0BMA clause (2) at a general dimension. See the module docstring.”. References: EGA IV (21.12.14), “(v), (v), special case”; SGA 1 X (3.1), “partial, special case”.
+**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionAtMostTwo.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionAtMostTwo.lean#L232). The attribute's comment: “the case `1 ≤ dim 𝒪_{X,x} = dim 𝒪_{Y,f x} ≤ 2`. Hypotheses (1), (2), (3) and (5) are the tag's own; hypothesis (4) is the tag's `dim 𝒪_{X,x} = dim 𝒪_{Y,f x} ≥ 1` together with the case restriction `dim 𝒪_{X,x} ≤ 2`. Flatness of `𝒪_{Y,f x} → 𝒪_{X,x}` is miracle flatness (tag 00R4), a normal Noetherian local ring of dimension at most two being Cohen–Macaulay by Serre's criterion (tag 031S) and the fibre ring being zero-dimensional by quasi-finiteness; étaleness at `x` then follows from tag 0BJH. For `dim 𝒪_{X,x} ≥ 3` the same reduction leaves exactly the flatness of `𝒪_{Y,f x} → 𝒪_{X,x}`, which is tag 0BMA clause (2) at a general dimension. See the module docstring.”. References: EGA IV (21.12.14), “(v), (v), special case”; SGA 1 X (3.1), “partial, special case”.
 
 > **Purity of the branch locus, [Stacks, Tag 0BMB], in dimension at most two.** Let
 > `f : X ⟶ Y` be a morphism of locally Noetherian schemes and let `x : X` be a point whose local
@@ -205,7 +205,7 @@ public theorem etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_le
     EtaleAt f x
 ```
 
-**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionOne.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionOne.lean#L201). The attribute's comment: “the case `dim 𝒪_{X,x} = dim 𝒪_{Y,f x} = 1`, which is the base case of the source's induction on the dimension; hypotheses (1), (2), (3) and (5) are the tag's own and hypothesis (4) is the tag's with `1 ≤ d` restricted to `d = 1`. The range `1 ≤ d ≤ 2` is `etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_le_two` in `PurityBranchLocus.DimensionAtMostTwo`.”. References: EGA IV (21.12.14), “(v)”; SGA 1 X (3.1), “partial”.
+**`AlgebraicGeometry.etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionOne.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/DimensionOne.lean#L201). The attribute's comment: “the case `dim 𝒪_{X,x} = dim 𝒪_{Y,f x} = 1`, which is the base case of the source's induction on the dimension; hypotheses (1), (2), (3) and (5) are the tag's own and hypothesis (4) is the tag's with `1 ≤ d` restricted to `d = 1`. The range `1 ≤ d ≤ 2` is `etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_le_two` in `PurityBranchLocus.DimensionAtMostTwo`.”. References: EGA IV (21.12.14), “(v)”; SGA 1 X (3.1), “partial”.
 
 > **Purity of the branch locus, [Stacks, Tag 0BMB], in dimension one.** Let `f : X ⟶ Y` be a
 > morphism of locally Noetherian schemes and let `x : X` be a point whose local ring is normal,
@@ -234,7 +234,7 @@ theorem etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_eq_one
 
 [Tag 0EY6](https://stacks.math.columbia.edu/tag/0EY6) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.flatBaseChange_algebraPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean#L395). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.flatBaseChange_algebraPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean#L395). The attribute's comment: “flat\_base\_change”.
 
 > **The base-change clause of [Stacks, Tag 0EY6].**  For a quasi-compact quasi-separated
 > morphism `f : V ⟶ Y` and a flat morphism `q : Y' ⟶ Y`, the pushed-forward structure sheaf of the
@@ -250,7 +250,7 @@ public theorem flatBaseChange_algebraPullback {V Y Y' : Scheme.{u}} (f : V ⟶ Y
       (pushforwardAlgebra ((Over.pullback q).obj (Over.mk f)).hom).hom
 ```
 
-**`Stacks.FundamentalGroup.exists_extendedEtaleAlgebraComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean#L266). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.exists_extendedEtaleAlgebraComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean#L266). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], flat base change of the extension algebra.**  Let `X` be locally
 > Noetherian, `j : U ⟶ X` an open immersion whose complement carries depth at least two and
@@ -290,7 +290,7 @@ public theorem exists_extendedEtaleAlgebraComparison {U X V U' X' V' : Scheme.{u
           (pushforwardAlgebraMap e.hom).right
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleAlgebraComparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L125). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.extendedEtaleAlgebraComparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L125). The attribute's comment: “flat\_base\_change”.
 
 > **The comparison carries the canonical map of the extension of scalars to the base-change
 > morphism**, transported along the Cartesian comparison of covers.  This is the property that
@@ -319,7 +319,7 @@ public theorem extendedEtaleAlgebraComparison_map {U X V U' X' V' : Scheme.{u}}
             Over.mk (π' ≫ j') ≅ (Over.pullback g).obj (Over.mk (π ≫ j))).hom).right
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleSpectrumComparison_universalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L187). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.extendedEtaleSpectrumComparison_universalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L187). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], the universal-map equation for the spectrum comparison.**  Under the
 > representing bijection of [Stacks, Tag 01LV] the comparison is the structure morphism of the
@@ -353,7 +353,7 @@ public theorem extendedEtaleSpectrumComparison_universalMap {U X V U' X' V' : Sc
           universalAlgebraMap e⟩
 ```
 
-**`Stacks.FundamentalGroup.isIso_extendedEtaleSpectrumComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L216). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.isIso_extendedEtaleSpectrumComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L216). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], the spectrum comparison is an isomorphism.**  The two relative spectra
 > represent functors identified by
@@ -378,7 +378,7 @@ public theorem isIso_extendedEtaleSpectrumComparison {U X V U' X' V' : Scheme.{u
     IsIso (extendedEtaleSpectrumComparison j π g j' gU π' gV hj hπ hdepth d)
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleAlgebra_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L134). The attribute's comment: “algebra”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleAlgebra_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L134). The attribute's comment: “algebra”.
 
 > **The extension algebra of a finite étale cover is a coherent module over the base.** Let
 > `j : U ⟶ X` be an open immersion into a locally Noetherian scheme whose complement carries depth at
@@ -395,7 +395,7 @@ public theorem extendedEtaleAlgebra_isCoherent {U X V : Scheme.{u}} [IsLocallyNo
       (AlgebraSheaf.underlyingModule (pushforwardAlgebra (π ≫ j)))
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleAlgebra_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L149). The attribute's comment: “algebra”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleAlgebra_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L149). The attribute's comment: “algebra”.
 
 > **The extension algebra of a finite étale cover is reflexive as a module over the base.** Let
 > `j : U ⟶ X` be an open immersion into a locally Noetherian scheme whose complement carries depth at
@@ -411,7 +411,7 @@ public theorem extendedEtaleAlgebra_isReflexive {U X V : Scheme.{u}} [IsLocallyN
     IsReflexive (AlgebraSheaf.underlyingModule (pushforwardAlgebra (π ≫ j)))
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L165). The attribute's comment: “algebra”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Algebra.lean#L165). The attribute's comment: “algebra”.
 
 > **The extension algebra, with its quasi-coherence, as a relative-spectrum situation.** It is
 > the pair consisting of `X` and the quasi-coherent `𝒪_X`-algebra `𝓑 = (π ≫ j)_* 𝒪_V`, whose relative
@@ -426,7 +426,7 @@ public def extendedEtaleSituation {U X V : Scheme.{u}} [IsLocallyNoetherian X] (
     Stacks.RelativeSpec.RelativeSpecSituation.{u}
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleSpectrum_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean#L122). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.extendedEtaleSpectrum_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean#L123). The attribute's comment: “flat\_base\_change”.
 
 > **The `flat_base_change` clause of [Stacks, Tag 0EY6], the Cartesian square of relative
 > spectra.** Let `X` be locally Noetherian, `j : U ⟶ X` an open immersion whose complement
@@ -466,7 +466,7 @@ public theorem extendedEtaleSpectrum_flatBaseChange {U X V U' X' V' : Scheme.{u}
       g (gluedSpectrum (ExtendedEtaleFold.extendedEtaleSituation j π hdepth)).toBase
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.existsUnique_restrictionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean#L68). The attribute's comment: “larger\_open”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.existsUnique_restrictionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean#L68). The attribute's comment: “larger\_open”.
 
 > **The `larger_open` clause of [Stacks, Tag 0EY6].** Let `i : U ⟶ U'` and `k : U' ⟶ X` be
 > open immersions into a locally Noetherian scheme with `X ∖ (i ≫ k)(U)` of depth at least two,
@@ -497,7 +497,7 @@ public theorem existsUnique_restrictionIso {U U' X V V' : Scheme.{u}} [IsLocally
           (Over.pullback i).map e.hom ≫ eV.hom = eY.hom
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.etaleAt_iff_isFlatAt_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L148). The attribute's comment: “etale\_iff\_flat”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.etaleAt_iff_isFlatAt_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L148). The attribute's comment: “etale\_iff\_flat”.
 
 > **The `etale_iff_flat` clause of [Stacks, Tag 0EY6].** Let `j : U ⟶ X` be an open immersion
 > into a locally Noetherian scheme whose complement carries depth at least two and let
@@ -526,7 +526,7 @@ public theorem etaleAt_iff_isFlatAt_extendedEtale {U X V : Scheme.{u}}
       EtaleAt Y.toBase y ↔ IsFlatAt Y.toBase.toLRSHom.toShHom y
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.etale_iff_isFiniteLocallyFree_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L238). The attribute's comment: “etale\_iff\_free”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.etale_iff_isFiniteLocallyFree_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L238). The attribute's comment: “etale\_iff\_free”.
 
 > **The `etale_iff_free` clause of [Stacks, Tag 0EY6].** The structure morphism of the
 > canonical extension `Y = Spec_X(𝓑)` is étale if and only if `𝓑 = (π ≫ j)_* 𝒪_V` is finite
@@ -554,7 +554,7 @@ public theorem etale_iff_isFiniteLocallyFree_extendedEtale {U X V : Scheme.{u}}
         (AlgebraSheaf.underlyingModule (pushforwardAlgebra (π ≫ j)))
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.isFinite_extendedEtaleToBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean#L70). The attribute's comment: “unique\_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.isFinite_extendedEtaleToBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean#L70). The attribute's comment: “unique\_extension”.
 
 > The extension of a finite étale cover across a depth-two complement is finite over the base:
 > the structure morphism of `Spec_X(𝓑)`, for `𝓑 = (π ≫ j)_* 𝒪_V`, is a finite morphism.
@@ -563,7 +563,7 @@ public theorem etale_iff_isFiniteLocallyFree_extendedEtale {U X V : Scheme.{u}}
 public instance isFinite_extendedEtaleToBase : IsFinite (extendedEtaleToBase j π hdepth)
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleCoverMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean#L134). The attribute's comment: “unique\_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleCoverMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean#L134). The attribute's comment: “unique\_extension”.
 
 > **The comparison morphism identifies the cover with the restriction of the extension to the
 > open subscheme.** This is the pullback clause of [Stacks, Tag 0EY6]: the square formed by the
@@ -576,7 +576,7 @@ public theorem extendedEtaleCoverMap_isPullback :
       (gluedSpectrum (extendedEtaleSituation j π hdepth)).toBase
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_depth_ge_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean#L284). The attribute's comment: “unique\_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_depth_ge_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean#L284). The attribute's comment: “unique\_extension”.
 
 > **The depth clause of [Stacks, Tag 0EY6].** The local rings of the extension
 > `Spec_X(𝓑)` of a finite étale cover across a depth-two complement have depth at least two above
@@ -599,7 +599,7 @@ public theorem extendedEtale_depth_ge_two :
         (Y.presheaf.stalk y)
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean#L245). The attribute's comment: “unique\_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean#L245). The attribute's comment: “unique\_extension”.
 
 > **The extension of a finite étale cover is the unique finite extension with the same
 > restriction over the open subscheme and the same depth condition off it.** This is the
@@ -627,7 +627,7 @@ public theorem extendedEtale_unique {U X V Y' : Scheme.{u}}
       (g' ≫ e.hom = extendedEtaleCoverMap j π hdepth)
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleDepth_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean#L92). The attribute's comment: “flat\_base\_change”.
+**`Stacks.FundamentalGroup.extendedEtaleDepth_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean#L92). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks 0EY6, flat base change: the depth condition.** Depth at least two outside the open
 > subscheme persists after flat base change: if the local rings of `X` at the points outside the
@@ -661,7 +661,7 @@ theorem extendedEtaleDepth_flatBaseChange {U X U' X' : Scheme.{u}}
 
 [Tag 0EY7](https://stacks.math.columbia.edu/tag/0EY7) in the Stacks Project.
 
-**`AlgebraicGeometry.essSurj_finiteEtaleBaseChange_of_hasPurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/ExtendFiniteEtale.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/ExtendFiniteEtale.lean#L346).
+**`AlgebraicGeometry.essSurj_finiteEtaleBaseChange_of_hasPurity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/ExtendFiniteEtale.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityBranchLocus/ExtendFiniteEtale.lean#L346).
 
 > **Stacks Project, Tag 0EY7.** Let `j : U ⟶ X` be an open immersion of Noetherian schemes
 > such that purity holds for `𝒪_{X, x}` at every point `x` outside the image of `j`.  Then every
@@ -681,4 +681,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.21, Tag 0BJE](https://stacks.math.columbia.edu/tag/0BJE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

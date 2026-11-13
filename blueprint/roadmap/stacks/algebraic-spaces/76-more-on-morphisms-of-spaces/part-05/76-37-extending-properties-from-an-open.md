@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.37 Extending properties from an open
 
-Section 76.37 of the Stacks Project, [Tag 0875](https://stacks.math.columbia.edu/tag/0875). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.37 of the Stacks Project, [Tag 0875](https://stacks.math.columbia.edu/tag/0875). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0876, a lemma
 
 [Tag 0876](https://stacks.math.columbia.edu/tag/0876) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentation_chartModule_of_isFlatOver_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentationFromDenseOpen.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentationFromDenseOpen.lean#L435). The attribute's comment: “hypotheses (1) and (2) and the conclusion are read on the etale scheme charts: they are the corresponding properties of the restriction of the module to the charts, as for Space.IsFlatOver of Tag 05VV. Hypothesis (4) is read on the open subscheme that V cuts out in each chart of the target, which by Space.preimage\_chartOpenOfOpenSubspace is the chart-level inverse image of V. The conclusion is stated on a commuting square of charts of f rather than on an arbitrary chart of the source, since not every chart of the source is the source of such a square”.
+**`AlgebraicGeometry.Space.isFinitePresentation_chartModule_of_isFlatOver_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentationFromDenseOpen.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FinitePresentationFromDenseOpen.lean#L435). The attribute's comment: “hypotheses (1) and (2) and the conclusion are read on the etale scheme charts: they are the corresponding properties of the restriction of the module to the charts, as for Space.IsFlatOver of Tag 05VV. Hypothesis (4) is read on the open subscheme that V cuts out in each chart of the target, which by Space.preimage\_chartOpenOfOpenSubspace is the chart-level inverse image of V. The conclusion is stated on a commuting square of charts of f rather than on an arbitrary chart of the source, since not every chart of the source is the source of such a square”.
 
 > **Stacks 0876.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`
 > contained in a big fppf site `B` which is locally of finite presentation, let `F` be an
@@ -50,7 +50,7 @@ theorem isFinitePresentation_chartModule_of_isFlatOver_of_dense_open
 
 [Tag 0877](https://stacks.math.columbia.edu/tag/0877) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_fromPreimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/LocallyOfFinitePresentationFromDenseOpen.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/LocallyOfFinitePresentationFromDenseOpen.lean#L194).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_fromPreimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/LocallyOfFinitePresentationFromDenseOpen.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/LocallyOfFinitePresentationFromDenseOpen.lean#L194).
 
 > **Stacks 0877.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`
 > contained in a big fppf site `B` which is locally of finite type and flat, and let `V ⊆ Y` be an
@@ -77,7 +77,7 @@ theorem isLocallyOfFinitePresentation_of_fromPreimage
 
 [Tag 0878](https://stacks.math.columbia.edu/tag/0878) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeDimensionLE_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimensionDenseOpen.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimensionDenseOpen.lean#L393).
+**`AlgebraicGeometry.Space.relativeDimensionLE_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimensionDenseOpen.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RelativeDimensionDenseOpen.lean#L394).
 
 > **Stacks 0878.** A flat morphism of algebraic spaces over `S` locally of finite type has
 > relative dimension at most `d` if its restriction over a dense open subspace of the target does,
@@ -98,7 +98,7 @@ theorem relativeDimensionLE_of_dense_open (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0B4J](https://stacks.math.columbia.edu/tag/0B4J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_of_isFinite_over_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FiniteDenseOpen.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FiniteDenseOpen.lean#L119).
+**`AlgebraicGeometry.Space.isFinite_of_isFinite_over_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FiniteDenseOpen.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FiniteDenseOpen.lean#L120).
 
 > **Stacks 0B4J.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is flat
 > and proper. Let `V` be an open subspace of `Y` whose points are dense in the points of `Y` and
@@ -120,7 +120,7 @@ theorem isFinite_of_isFinite_over_dense_open
 
 [Tag 0879](https://stacks.math.columbia.edu/tag/0879) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenImmersion_of_isIso_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/OpenImmersionFromDenseOpen.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/OpenImmersionFromDenseOpen.lean#L177).
+**`AlgebraicGeometry.Space.isOpenImmersion_of_isIso_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/OpenImmersionFromDenseOpen.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/OpenImmersionFromDenseOpen.lean#L178).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S` contained in a big fppf
 > site `B` which is separated, locally of finite type and flat, and let `V ⊆ Y` be an open subspace
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.37, Tag 0875](https://stacks.math.columbia.edu/tag/0875)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

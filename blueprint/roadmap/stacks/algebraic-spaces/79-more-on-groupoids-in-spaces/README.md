@@ -1,6 +1,6 @@
 # 79 More on Groupoids in Spaces
 
-Chapter 79 of the Stacks Project, *More on Groupoids in Spaces*, [Tag 04P4](https://stacks.math.columbia.edu/tag/04P4): the 14 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 64 tags are carried by 200 declarations of the repository (all in StacksFrontier) and 6 registered declarations.
+Chapter 79 of the Stacks Project, *More on Groupoids in Spaces*, [Tag 04P4](https://stacks.math.columbia.edu/tag/04P4): the 14 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 64 tags are carried by 200 declarations of the repository (all in StacksFrontier) and 4 registered declarations.
 
 - [79.1 Introduction](79-1-introduction.md)
 - [79.3 Useful diagrams](79-3-useful-diagrams.md)

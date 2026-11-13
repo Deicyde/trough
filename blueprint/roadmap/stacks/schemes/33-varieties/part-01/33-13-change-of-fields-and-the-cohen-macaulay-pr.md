@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.13 Change of fields and the Cohen-Macaulay property
 
-Section 33.13 of the Stacks Project, [Tag 045O](https://stacks.math.columbia.edu/tag/045O). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.13 of the Stacks Project, [Tag 045O](https://stacks.math.columbia.edu/tag/045O). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 045P, a lemma
 
 [Tag 045P](https://stacks.math.columbia.edu/tag/045P) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L374). The attribute's comment: “finitely generated field extension”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”; EGA IV (6.7.2), “special case”; SGA 3 VIA (1.1.1), “more general”.
+**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L374). The attribute's comment: “finitely generated field extension”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”; EGA IV (6.7.2), “special case”; SGA 3 VIA (1.1.1), “more general”.
 
 > **Stacks Project, Tag 045P.** Cohen-Macaulayness of local rings is unchanged after a
 > finitely generated extension of the ground field of a locally Noetherian scheme.
@@ -38,7 +38,7 @@ public theorem isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension
         ((pullback f (Spec.map (CommRingCat.ofHom (algebraMap k K)))).presheaf.stalk x')
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L398). The attribute's comment: “arbitrary field extension for a locally finite type scheme”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”.
+**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L398). The attribute's comment: “arbitrary field extension for a locally finite type scheme”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”.
 
 > **Stacks Project, Tag 045P.** Cohen-Macaulayness of local rings is unchanged after an
 > arbitrary extension of the ground field when the scheme is locally of finite type over that
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.13, Tag 045O](https://stacks.math.columbia.edu/tag/045O)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

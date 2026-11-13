@@ -7,7 +7,7 @@ statement: formalized
 
 # Eigenvalues and canonical forms: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html).
 
 Eigenvalues, eigenspaces and characteristic polynomials of matrices and endomorphisms, and the normal forms they lead to: diagonalization, triangularization, Jordan and Smith normal forms.
 
@@ -23,7 +23,7 @@ eigenvalue $\mu^{-1}$.
 
 - https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix.
 
-Stated but not proved: `MetaMathlibExt.inverse_eigenvalues` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html#inverse-eigenvalues).
+Stated but not proved: `MetaMathlibExt.inverse_eigenvalues` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/Matrix/InverseEigenvaluesWanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html#inverse-eigenvalues).
 
 ## Spectral theorem for normal matrices
 
@@ -37,7 +37,7 @@ the diagonal matrix with diagonal entries $d_i$.
 
 - AlgebraNotes, Section: The Spectral Theorem, Subsection: The Spectral Theorem, Theorem (Spectral Theorem) (normal-matrix case; the Hermitian cases are Mathlib's `Matrix.IsHermitian.spectral_theorem`).
 
-Formalized by `Matrix.exists_unitary_diagonal_of_isStarNormal`, a theorem declared in [MathlibExt/Analysis/Matrix/NormalSpectralTheorem.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Matrix/NormalSpectralTheorem.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html#exists-unitary-diagonal-of-is-star-norma).
+Formalized by `Matrix.exists_unitary_diagonal_of_isStarNormal`, a theorem declared in [MathlibExt/Analysis/Matrix/NormalSpectralTheorem.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Matrix/NormalSpectralTheorem.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html#exists-unitary-diagonal-of-is-star-norma).
 
 ## Depends on
 
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Eigenvalues and canonical forms](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms)

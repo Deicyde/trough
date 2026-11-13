@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.9 The example of G-sets
 
-Section 7.9 of the Stacks Project, [Tag 00VZ](https://stacks.math.columbia.edu/tag/00VZ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.9 of the Stacks Project, [Tag 00VZ](https://stacks.math.columbia.edu/tag/00VZ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00W0, a proposition
 
 [Tag 00W0](https://stacks.math.columbia.edu/tag/00W0) in the Stacks Project.
 
-**`CategoryTheory.Sites.Sheaf.Action.exists_equivalence_sheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Sheaf/ExampleOfGSets.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Sheaf/ExampleOfGSets.lean#L597). References: SGA 4 IV (2.3), “special case”; SGA 4 IV (9.1.12), “Clause e)”.
+**`CategoryTheory.Sites.Sheaf.Action.exists_equivalence_sheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Sheaf/ExampleOfGSets.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Sheaf/ExampleOfGSets.lean#L597). References: SGA 4 IV (2.3), “special case”; SGA 4 IV (9.1.12), “Clause e)”.
 
 > **Stacks 00W0**. Sheaves on `𝒯_G` are `G`-sets: let `G` be a monoid and let `J` be a
 > Grothendieck topology on a full subcategory `ι : T ⥤ Action (Type u) G` of the category of `G`-sets
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.9, Tag 00VZ](https://stacks.math.columbia.edu/tag/00VZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Parameterized complexity
 
-16 results, 15 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html).
+16 results, 15 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html).
 
 ## Parameterized problems
 
@@ -15,7 +15,7 @@ A parameterized problem is a function that assigns a boolean
 answer to every pair of a bitstring (a finite list of booleans) $x$ and a natural-number
 parameter $k$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.ParamProblem`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#param-problem).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.ParamProblem`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#param-problem).
 
 ## FPT time
 
@@ -31,7 +31,7 @@ $F(k) \cdot p(n)$ for a computable $F$ and a polynomial $p$, where $n$ is the le
 the padding function must be computable, since otherwise every predicate on the parameter would
 be fixed-parameter tractable.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPTTime`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fpttime).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPTTime`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fpttime).
 
 ## Fixed-parameter tractable problems
 
@@ -40,7 +40,7 @@ tractable when there is a function $D$, from pairs $(x, k)$ of a bitstring $x$ a
 number $k$ to booleans, that is computable in FPT time and satisfies $P(x, k) = D(x, k)$ for
 every bitstring $x$ and every $k \in \mathbb{N}$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPT`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fpt).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPT`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fpt).
 
 ## FPT-reductions
 
@@ -50,7 +50,7 @@ $k$ to such a pair $R(x, k) = (x', k')$, that is computable in FPT time, and a c
 function $g : \mathbb{N} \to \mathbb{N}$, such that for every bitstring $x$ and every
 $k \in \mathbb{N}$, $k' \le g(k)$ and $P(x, k)$ is true if and only if $Q(x', k')$ is true.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPTReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fptreduces).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.FPTReduces`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#fptreduces).
 
 ## Encoded gates for weighted circuit satisfiability
 
@@ -63,7 +63,7 @@ true exactly when $b = 1$, $(2, [a])$ is the negation of gate $a$, and $(3, r)$ 
 the AND and the OR of the gates listed in $r$; every other pair, including $(0, [i])$ with
 $i \ge n$ and $(2, r)$ with $r$ not of length one, evaluates to false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WCGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wcgate).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WCGate`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wcgate).
 
 ## Gate values of an encoded circuit
 
@@ -76,7 +76,7 @@ assignment that gives input $i$ the value $a_i$.
 Decoding turns an input gate with index $i \ge n$ into the constant false, so such inputs read
 as false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-eval).
 
 ## Predecessors of an encoded gate
 
@@ -87,7 +87,7 @@ Variable (kind $0$) and constant (kind $1$) payloads are a variable index and a 
 not predecessor gates; folding over them would attribute unrelated gates' weft or depth (for
 example, an input gate $(0, [0])$ inheriting gate $0$'s depth).
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGatePreds`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-preds).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGatePreds`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-preds).
 
 ## Weft of an encoded gate
 
@@ -97,7 +97,7 @@ large AND or OR gate ($k \in \{3, 4\}$ and $r$ has more than $2$ entries) and $0
 plus the maximum of $w_a$ over the entries $a$ of its predecessor list (the maximum over an
 empty list is $0$). In particular, input and constant gates have weft $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGateWeft`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-weft).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGateWeft`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-weft).
 
 ## Depth of one encoded gate
 
@@ -107,7 +107,7 @@ $(c, r)$ be a gate encoded as a (kind, references) pair. Its depth is $0$ if $c 
 (an input or constant gate), and otherwise one plus the maximum of $d_a$ over the entries $a$ of
 $r$, the maximum over no entries being $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGateDepth`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-depth).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcGateDepth`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-gate-depth).
 
 ## Wefts of the gates of an encoded circuit
 
@@ -119,7 +119,7 @@ more than $2$ entries, and $0$ otherwise, plus, when $c = 2$, $c = 3$ or $c = 4$
 $w_a$ over the entries $a$ of $r$, where $w_a$ is read as $0$ for $a \ge j$ and the maximum
 over no entries is $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitWefts`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-wefts).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitWefts`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-wefts).
 
 ## Depths of the gates of an encoded circuit
 
@@ -130,7 +130,7 @@ $g_j = (c, r)$. If $c = 0$ or $c = 1$ (an input or constant gate), then $d_j = 0
 $d_j$ is one plus the maximum of $d_a$ over the entries $a$ of $r$, where $d_a$ is read as $0$
 for $a \ge j$ and the maximum over no entries is $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitDepths`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-depths).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.wcCircuitDepths`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wc-circuit-depths).
 
 ## Well-formed encoded circuits
 
@@ -139,7 +139,7 @@ well-formed when every NOT, AND or OR gate references only strictly earlier gate
 $j < m$ such that $g_j = (k, r)$ has kind $k \in \{2, 3, 4\}$, every entry $a$ of $r$ satisfies
 $a < j$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WCWellFormed`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wcwell-formed).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WCWellFormed`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wcwell-formed).
 
 ## Weighted circuit satisfiability with bounded weft and depth
 
@@ -151,7 +151,7 @@ strictly earlier gates; every gate of $C$ has weft at most $t$ and depth at most
 is an assignment of $n$ Boolean values to the inputs, exactly $k$ of them true, under which $C$
 has a last gate and that gate evaluates to true.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WeightedCircuitSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#weighted-circuit-sat).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WeightedCircuitSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#weighted-circuit-sat).
 
 ## Parameterized Clique
 
@@ -166,7 +166,7 @@ That is, on a well-formed input the answer says whether the graph on the vertice
 $0, \dots, n - 1$ whose edges are the pairs in $E$, with direction ignored, has a clique of
 size $k$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.CliqueParam`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#clique-param).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.CliqueParam`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#clique-param).
 
 ## The level $\mathrm{W}(t)$ of the W-hierarchy
 
@@ -175,7 +175,7 @@ the set of parameterized problems $P$ for which there is a natural number $d$ su
 FPT-reduces to weighted circuit satisfiability for circuits of weft at most $t$ and depth at
 most $d$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WLevel`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wlevel).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.WLevel`, a definition declared in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#wlevel).
 
 ## Parameterized complexity: FPT and W(1)-completeness of Clique
 
@@ -188,7 +188,7 @@ parameterized problem lies in $W[1]$. For every $t \in \mathbb{N}$, $W[t] \subse
 
 - R. G. Downey and M. R. Fellows, Parameterized Complexity, Springer, 1999 (W[1]-completeness of Clique); J. Flum and M. Grohe, Parameterized Complexity Theory, Springer, 2006.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.parameterized_clique_w1_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#parameterized-clique-w1-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Parameterized.parameterized_clique_w1_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ParameterizedWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html#parameterized-clique-w1-complete).
 
 ## Depends on
 
@@ -197,4 +197,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Parameterized complexity](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/complexity-classes/parameterized-complexity)

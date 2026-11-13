@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Stack.exists_smooth_atlas_iff_forall_smooth_chart, AlgebraicGeometry.Stack.forall_smooth_chart_iff_forall_space, AlgebraicGeometry.Stack.forall_smooth_chart_iff_finite_irreducibleComponents, AlgebraicGeometry.Stack.AlgebraicStacks.isIntegralHom_normalization_and_isTwoFibreProduct_normSpace, AlgebraicGeometry.Stack.AlgebraicStacks.exists_isIntegralHom_and_isTwoFibreProduct_normSpace, AlgebraicGeometry.Stack.isTwoFibreProduct_normalizationChartSquare, AlgebraicGeometry.Stack.isIntegralHom_quotientStackMapHom_normalization, AlgebraicGeometry.Stack.exists_isIntegralHom_quotientStackMapHom_normalization
+lean: AlgebraicGeometry.Stack.exists_smooth_atlas_iff_forall_smooth_chart, AlgebraicGeometry.Stack.forall_smooth_chart_iff_forall_space, AlgebraicGeometry.Stack.forall_smooth_chart_iff_finite_irreducibleComponents, AlgebraicGeometry.Stack.AlgebraicStacks.isIntegralHom_normalization_and_isTwoFibreProduct_normSpace, AlgebraicGeometry.Stack.AlgebraicStacks.exists_isIntegralHom_and_isTwoFibreProduct_normSpace, AlgebraicGeometry.Stack.AlgebraicStacks.normalization, AlgebraicGeometry.Stack.normalization
 statement: formalized
 proof: formalized
 ---
 
 # 101.46 Normalization
 
-Section 101.46 of the Stacks Project, [Tag 0GMH](https://stacks.math.columbia.edu/tag/0GMH). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.46 of the Stacks Project, [Tag 0GMH](https://stacks.math.columbia.edu/tag/0GMH). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GMI, a lemma
 
 [Tag 0GMI](https://stacks.math.columbia.edu/tag/0GMI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_smooth_atlas_iff_forall_smooth_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L120). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Stack.exists_smooth_atlas_iff_forall_smooth_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L120). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0GMI, conditions (1) and (2).** One smooth surjective scheme chart whose
 > quasi-compact opens have finitely many irreducible components suffices: then every smooth scheme
@@ -30,7 +30,7 @@ theorem exists_smooth_atlas_iff_forall_smooth_chart (𝒳 : AlgebraicStacks.{u, 
           ∀ V : X.Opens, IsCompact (V : Set X) → (irreducibleComponents V).Finite) 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.forall_smooth_chart_iff_forall_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L133). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Stack.forall_smooth_chart_iff_forall_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L133). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 0GMI, conditions (2) and (3).** Every smooth scheme chart of the algebraic stack has
 > finitely many irreducible components over each of its quasi-compact opens exactly when every
@@ -47,7 +47,7 @@ theorem forall_smooth_chart_iff_forall_space (𝒳 : AlgebraicStacks.{u, w} B S 
           Space.HasLocallyFiniteIrreducibleComponents B S hS F
 ```
 
-**`AlgebraicGeometry.Stack.forall_smooth_chart_iff_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L153). The attribute's comment: “conditions (2) and (4)”.
+**`AlgebraicGeometry.Stack.forall_smooth_chart_iff_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Normalization.lean#L153). The attribute's comment: “conditions (2) and (4)”.
 
 > **Stacks 0GMI, conditions (2) and (4).** Every smooth scheme chart of the algebraic stack has
 > finitely many irreducible components over each of its quasi-compact opens exactly when the space
@@ -71,7 +71,7 @@ theorem forall_smooth_chart_iff_finite_irreducibleComponents
 
 [Tag 0GMJ](https://stacks.math.columbia.edu/tag/0GMJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIntegralHom_normalization_and_isTwoFibreProduct_normSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean#L344).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIntegralHom_normalization_and_isTwoFibreProduct_normSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean#L351).
 
 > **Stacks 0GMJ.** Let `𝒳` be an algebraic stack over `S` satisfying the equivalent conditions
 > of Stacks 0GMI, and let `ν : 𝒳^ν ⟶ 𝒳` be its normalization (Stacks 0GMK). Then `ν` is integral
@@ -82,6 +82,13 @@ theorem forall_smooth_chart_iff_finite_irreducibleComponents
 >
 > The finiteness of irreducible components of the quasi-compact opens of `U` that the
 > normalization of `U` needs is condition (2) of Stacks 0GMI for the smooth chart `f`.
+>
+> Nothing beyond the hypothesis of Stacks 0GMI is assumed: the normalized groupoid, the 2-fibre
+> product along the presenting chart and its descent to an arbitrary smooth chart are all
+> constructed. This is the complete registration of Stacks 0GMJ; the integrality step of
+> `StacksFrontier.AlgebraicGeometry.Stacks.NormalizationMorphism` and the presenting-chart step of
+> `StacksFrontier.AlgebraicGeometry.Stacks.NormalizationChartFibreProduct`, which take the normalized
+> groupoid as data, are not tagged.
 
 ```lean
 theorem isIntegralHom_normalization_and_isTwoFibreProduct_normSpace :
@@ -100,7 +107,7 @@ theorem isIntegralHom_normalization_and_isTwoFibreProduct_normSpace :
               (PresheafOfCategories.sliceElementsEquivalenceOver U) P.fst.hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isIntegralHom_and_isTwoFibreProduct_normSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean#L387). The attribute's comment: “the existential form”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isIntegralHom_and_isTwoFibreProduct_normSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationBaseChange.lean#L394). The attribute's comment: “the existential form”.
 
 > **Stacks 0GMJ, in the existential form the source states.** An algebraic stack `𝒳` over `S`
 > satisfying the equivalent conditions of Stacks 0GMI admits an integral 1-morphism of algebraic
@@ -125,96 +132,11 @@ theorem exists_isIntegralHom_and_isTwoFibreProduct_normSpace :
               (PresheafOfCategories.sliceElementsEquivalenceOver U) P.fst.hom
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_normalizationChartSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationChartFibreProduct.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationChartFibreProduct.lean#L97). The attribute's comment: “the fibre product with a presenting chart is the normalization of the chart”.
-
-> **Stacks 0GMJ, the fibre-product assertion at the presenting chart.**  For a groupoid in
-> algebraic spaces `(U, R, s, t, c)` presenting `𝒳 = [U/R]` and a normalized groupoid `N` for it,
-> the square formed by the normalization 1-morphism `ν : [U^ν/R^ν] ⟶ [U/R]` of Stacks 046Q and the
-> canonical projection `𝒮_U ⟶ [U/R]` of Stacks 044R is a 2-fibre product with apex `𝒮_{U^ν}`; that
-> is, `𝒳^ν ×_𝒳 U = U^ν`.
->
-> This is the assertion of Stacks 0GMJ that the source obtains from `R^ν = R ×_{s, U} U^ν` by
-> citing Stacks 04ZN, and the proof here is that citation: the cartesian source square is the field
-> `AlgebraicGeometry.Stack.NormalizationGroupoid.isPullback_source` of the normalized groupoid, and
-> Stacks 04ZN is
-> `AlgebraicGeometry.Stack.isTwoFibreProduct_functorialitySquare_of_isPullback`.
-
-```lean
-noncomputable def isTwoFibreProduct_normalizationChartSquare
-    (N : NormalizationGroupoid C S hS G) :
-    Bicategory.IsTwoFibreProduct (functorialitySquare N.hom)
-```
-
-**`AlgebraicGeometry.Stack.isIntegralHom_quotientStackMapHom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean#L231). The attribute's comment: “integrality of ν; the normalized groupoid, Stacks 04ZP and the 04ZN form of the base change are hypotheses”.
-
-> **Stacks 0GMJ, the 1-morphism `𝒳^ν ⟶ 𝒳` and its integrality.** Let `(U, R, s, t, c)` be a
-> groupoid in algebraic spaces whose quotient stack is `𝒳 = [U/R]`, and let `N` be a normalized
-> groupoid for it. Then the 1-morphism `ν : [U^ν/R^ν] ⟶ [U/R]` of Stacks 046Q induced by the
-> morphism of groupoids `(U^ν, R^ν) ⟶ (U, R)` is integral in the sense of Stacks 04XB.
->
-> The source's argument is exactly this one: `U^ν ⟶ U` is integral, it is the base change of `ν`
-> along the presenting chart, and integrality descends. The base-change identification is
-> Stacks 04ZN and is carried; integrality of `U^ν ⟶ U` is Stacks 0BB4, part (2), and is proved in
-> this library. See the partial-coverage section of the module documentation for every hypothesis
-> and the result it stands for.
-
-```lean
-theorem isIntegralHom_quotientStackMapHom_normalization
-    {G : GroupoidInAlgebraicSpaces C S hS B} (N : NormalizationGroupoid C S hS G)
-    (hf : IsRepresentableByAlgebraicSpaces C S hS (quotientStackMapHom N.hom).hom)
-    (Q : Bicategory.TwoCommSq (quotientStackProjectionHom G) (quotientStackMapHom N.hom))
-    (hQ : Bicategory.IsTwoFibreProduct Q)
-    (hQfst : IsRepresentableByAlgebraicSpaces C S hS Q.fst.hom)
-    {𝒜 𝒞 : CatFiberedInGroupoids.{u, u, u + 1, u + 1} (BigFppfOver C S hS)}
-    (a : 𝒜 ⟶ 𝒞) (ha : IsRepresentableByAlgebraicSpaces C S hS a.hom)
-    (p : Q.pt.val ⥤ᵇ 𝒜.val) (q : (liftedObjectSpace G).val ⥤ᵇ 𝒞.val)
-    [Functor.IsEquivalence p.toFunctor] [Functor.IsEquivalence q.toFunctor]
-    (α : BasedFunctor.comp p a.hom ≅ BasedFunctor.comp Q.fst.hom q)
-    (eF : StacksRepresentableCFG.EquivalenceOver
-      𝒜.val.p (presheafOfCategories (N.data.space ⋙ typeToCat)).p)
-    (eG₀ : StacksRepresentableCFG.EquivalenceOver
-      𝒞.val.p (presheafOfCategories (G.objects.obj ⋙ typeToCat)).p)
-    (hrep : representingMap C S hS 𝒜 𝒞 N.data.space G.objects.obj eF eG₀ a = N.data.hom) :
-    IsIntegralHom C S hS (quotientStackMapHom N.hom) hf
-```
-
-**`AlgebraicGeometry.Stack.exists_isIntegralHom_quotientStackMapHom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean#L263). The attribute's comment: “the existence assertion, witnessed by [U^ν/R^ν] and the 1-morphism of Stacks 046Q”.
-
-> **Stacks 0GMJ in the existential form the source states it.** For a groupoid in algebraic
-> spaces with a normalized groupoid, there is a category fibred in groupoids `𝒳^ν` over the big
-> fppf site together with an integral 1-morphism `𝒳^ν ⟶ [U/R]`.
->
-> The witnesses are the quotient stack `[U^ν/R^ν]` of Stacks 044Q and the 1-morphism of
-> Stacks 046Q, so the existential is inhabited by the source's own construction.
-
-```lean
-theorem exists_isIntegralHom_quotientStackMapHom_normalization
-    {G : GroupoidInAlgebraicSpaces C S hS B} (N : NormalizationGroupoid C S hS G)
-    (hf : IsRepresentableByAlgebraicSpaces C S hS (quotientStackMapHom N.hom).hom)
-    (Q : Bicategory.TwoCommSq (quotientStackProjectionHom G) (quotientStackMapHom N.hom))
-    (hQ : Bicategory.IsTwoFibreProduct Q)
-    (hQfst : IsRepresentableByAlgebraicSpaces C S hS Q.fst.hom)
-    {𝒜 𝒞 : CatFiberedInGroupoids.{u, u, u + 1, u + 1} (BigFppfOver C S hS)}
-    (a : 𝒜 ⟶ 𝒞) (ha : IsRepresentableByAlgebraicSpaces C S hS a.hom)
-    (p : Q.pt.val ⥤ᵇ 𝒜.val) (q : (liftedObjectSpace G).val ⥤ᵇ 𝒞.val)
-    [Functor.IsEquivalence p.toFunctor] [Functor.IsEquivalence q.toFunctor]
-    (α : BasedFunctor.comp p a.hom ≅ BasedFunctor.comp Q.fst.hom q)
-    (eF : StacksRepresentableCFG.EquivalenceOver
-      𝒜.val.p (presheafOfCategories (N.data.space ⋙ typeToCat)).p)
-    (eG₀ : StacksRepresentableCFG.EquivalenceOver
-      𝒞.val.p (presheafOfCategories (G.objects.obj ⋙ typeToCat)).p)
-    (hrep : representingMap C S hS 𝒜 𝒞 N.data.space G.objects.obj eF eG₀ a = N.data.hom) :
-    ∃ (𝒳ν : CatFiberedInGroupoids (BigFppfOver C S hS))
-      (ν : 𝒳ν ⟶ quotientStackCFG C S hS G)
-      (hν : IsRepresentableByAlgebraicSpaces C S hS ν.hom),
-      IsIntegralHom.{u, u + 1, u + 1, u + 1} C S hS ν hν
-```
-
 ## Tag 0GMK, a definition
 
 [Tag 0GMK](https://stacks.math.columbia.edu/tag/0GMK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationAlgebraicStack.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationAlgebraicStack.lean#L130).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationAlgebraicStack.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationAlgebraicStack.lean#L130).
 
 > **Stacks 0GMK, the normalization of an algebraic stack.** Let `𝒳` be an algebraic stack
 > satisfying the equivalent conditions of Stacks 0GMI. Its *normalization* is the morphism
@@ -235,7 +157,7 @@ noncomputable def normalization (𝒳 : AlgebraicStacks.{u, w} B S hS)
     normalizationStack 𝒳 h𝒳 ⟶ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.normalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean#L325). The attribute's comment: “the normalization ν : 𝒳^ν ⟶ 𝒳 at a presenting smooth groupoid, with the normalized groupoid as data”.
+**`AlgebraicGeometry.Stack.normalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NormalizationMorphism.lean#L344). The attribute's comment: “the normalization ν : 𝒳^ν ⟶ 𝒳 at a presenting smooth groupoid, with the normalized groupoid as data”.
 
 > **Stacks 0GMK, the normalization of an algebraic stack.** For a groupoid in algebraic spaces
 > `(U, R, s, t, c)` presenting `ð³ = [U/R]`, and a normalized groupoid `N` for it, the
@@ -273,4 +195,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.46, Tag 0GMH](https://stacks.math.columbia.edu/tag/0GMH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

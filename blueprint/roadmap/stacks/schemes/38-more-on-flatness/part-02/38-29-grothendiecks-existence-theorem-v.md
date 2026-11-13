@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.29 Grothendieck's Existence Theorem, V
 
-Section 38.29 of the Stacks Project, [Tag 0DIA](https://stacks.math.columbia.edu/tag/0DIA). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.29 of the Stacks Project, [Tag 0DIA](https://stacks.math.columbia.edu/tag/0DIA). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DIB, a situation
 
 [Tag 0DIB](https://stacks.math.columbia.edu/tag/0DIB) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/Basic.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/Basic.lean#L99).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/Basic.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/Basic.lean#L99).
 
 > **Stacks Project, Tag 0DIB.** The standing data of Grothendieck's existence theorem in its
 > derived form: an inverse system of rings with surjective, locally nilpotent transitions, a
@@ -29,7 +29,7 @@ public structure DerivedExistenceSituation
 
 [Tag 0DIC](https://stacks.math.columbia.edu/tag/0DIC) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean#L164). The attribute's comment: “the displayed equality only; the coherator of Stacks 0CR0 is an argument, as in Stacks 0CSA and 0CR2, and the tower is an arbitrary inverse system in D(O\_X) rather than the system Ri\_n,* K\_n of Situation 0DIB, which this library cannot yet form at the locally small model the coherator lives at”.
+**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean#L164). The attribute's comment: “the displayed equality only; the coherator of Stacks 0CR0 is an argument, as in Stacks 0CSA and 0CR2, and the tower is an arbitrary inverse system in D(O\_X) rather than the system Ri\_n,* K\_n of Situation 0DIB, which this library cannot yet form at the locally small model the coherator lives at”.
 
 > **The displayed equality of [Stacks, Tag 0DIC]**: `Rlim_{D_QCoh(𝒪_X)}(Kₙ)` and
 > `DQ_X(Rlim_{D(𝒪_X)} Kₙ)` agree. Precisely, if `K` is a derived limit of an inverse system `(Kₙ)`
@@ -49,7 +49,7 @@ theorem isDerivedLimit_coherator_obj (adj : quasiCoherentι X ⊣ DQ) [DQ.CommSh
       @IsDerivedLimit (quasiCoherentDerivedCategory X) _ _ _ _ _ _ (L ⋙ DQ) h (DQ.obj K)
 ```
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.limitObject_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBoundedAbove.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBoundedAbove.lean#L183).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.limitObject_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBoundedAbove.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBoundedAbove.lean#L183).
 
 > **Stacks Project, Tag 0DIC.** In Situation [Stacks, Tag 0DIB] consider
 > `K = R lim_{D_QCoh(𝒪_X)}(Kₙ) = DQ_X(R lim_{D(𝒪_X)} Kₙ)`. Then `K` is in `D^-_QCoh(𝒪_X)`.
@@ -83,7 +83,7 @@ theorem limitObject_spec :
 
 [Tag 0DID](https://stacks.math.columbia.edu/tag/0DID) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isPseudoCoherent_cohomology_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/CohomologyAgainstPerfect.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/CohomologyAgainstPerfect.lean#L617).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isPseudoCoherent_cohomology_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/CohomologyAgainstPerfect.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/CohomologyAgainstPerfect.lean#L617).
 
 > **[Stacks, Tag 0DID].** In Situation [Stacks, Tag 0DIB] let `K` be as in
 > [Stacks, Tag 0DIC]. For any perfect object `E` of `D(𝒪_X)` the cohomology
@@ -117,7 +117,7 @@ theorem isPseudoCoherent_cohomology_and_isIso
 
 [Tag 0DIE](https://stacks.math.columbia.edu/tag/0DIE) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isPseudoCoherent_limitObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/LimitObjectPseudoCoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/LimitObjectPseudoCoherent.lean#L77).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isPseudoCoherent_limitObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/LimitObjectPseudoCoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/LimitObjectPseudoCoherent.lean#L77).
 
 > **Stacks Project, Tag 0DIE.** In Situation [Stacks, Tag 0DIB] let `K` be as in
 > [Stacks, Tag 0DIC]. Then `K` is pseudo-coherent on `X`.
@@ -142,7 +142,7 @@ theorem isPseudoCoherent_limitObject (S : DerivedExistenceSituation.{u}) :
 
 [Tag 0DIF](https://stacks.math.columbia.edu/tag/0DIF) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isIso_derivedBaseChangeComparison_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedSectionsBaseChange.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedSectionsBaseChange.lean#L155).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.isIso_derivedBaseChangeComparison_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedSectionsBaseChange.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedSectionsBaseChange.lean#L155).
 
 > In Situation [Stacks, Tag 0DIB] let `K` be as in [Stacks, Tag 0DIC]. For any quasi-compact
 > open `U ⊆ X` we have `RΓ(U, K) ⊗^𝐋_A Aₙ = RΓ(Uₙ, Kₙ)` in `D(Aₙ)`, where `Uₙ = U ∩ Xₙ`.
@@ -165,7 +165,7 @@ theorem isIso_derivedBaseChangeComparison_derivedSections (hU : IsCompact (U : S
 
 [Tag 0DIG](https://stacks.math.columbia.edu/tag/0DIG) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.exists_isPseudoCoherent_derivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedExistenceTheorem.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedExistenceTheorem.lean#L66).
+**`AlgebraicGeometry.GrothendieckExistence.DerivedExistenceSituation.exists_isPseudoCoherent_derivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedExistenceTheorem.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedExistenceTheorem.lean#L66).
 
 > **[Stacks, Tag 0DIG], Grothendieck's existence theorem in its derived form.** In Situation
 > [Stacks, Tag 0DIB] there is a pseudo-coherent `K ∈ D(𝒪_X)` together with isomorphisms
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.29, Tag 0DIA](https://stacks.math.columbia.edu/tag/0DIA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

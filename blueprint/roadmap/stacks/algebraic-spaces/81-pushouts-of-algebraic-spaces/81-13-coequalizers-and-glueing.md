@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.properKernelPairCoequalizers_of_core, AlgebraicGeometry.Space.properKernelPairCoequalizers_holds, AlgebraicGeometry.Space.CoequalizerGlueSituation, AlgebraicGeometry.Space.CoequalizerGlueSituation.nonempty_glueCoequalizer, AlgebraicGeometry.Space.CoequalizerGlueSituation.isFinite_glueCoequalizer_toTarget, AlgebraicGeometry.Space.CoequalizerGlueSituation.universalHomeomorphism_glueCoequalizer_toTarget, AlgebraicGeometry.Space.CoequalizerGlueSituation.glueCoequalizer_closedSubspace_lift, AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_glueCoequalizer
+lean: AlgebraicGeometry.Space.properKernelPairCoequalizers_of_core, AlgebraicGeometry.Space.properKernelPairCoequalizers_holds, AlgebraicGeometry.Space.CoequalizerGlueSituation, AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_glueCoequalizer, AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap, AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap_comp_toTarget, AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_factorsThroughSection, AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_isEssentiallyConstantWith
 statement: formalized
 proof: formalized
 ---
 
 # 81.13 Coequalizers and glueing
 
-Section 81.13 of the Stacks Project, [Tag 0AGF](https://stacks.math.columbia.edu/tag/0AGF). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.13 of the Stacks Project, [Tag 0AGF](https://stacks.math.columbia.edu/tag/0AGF). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AGG, a lemma
 
 [Tag 0AGG](https://stacks.math.columbia.edu/tag/0AGG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.properKernelPairCoequalizers_of_core`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairCoequalizer.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairCoequalizer.lean#L122). The attribute's comment: “all six clauses; clause (5) is proved from the others, while existence of the coequalizer and clauses (1) to (4) are carried in the hypothesis”.
+**`AlgebraicGeometry.Space.properKernelPairCoequalizers_of_core`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairCoequalizer.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairCoequalizer.lean#L122). The attribute's comment: “all six clauses; clause (5) is proved from the others, while existence of the coequalizer and clauses (1) to (4) are carried in the hypothesis”.
 
 > Let `g : Y ⟶ X` be a proper morphism of algebraic spaces over `S` with `X` locally
 > Noetherian and let `R = Y ×_X Y` with its two projections `s, t : R ⟶ Y`. Then `s` and `t` have a
@@ -30,7 +30,7 @@ theorem properKernelPairCoequalizers_of_core
     ProperKernelPairCoequalizers B S hS
 ```
 
-**`AlgebraicGeometry.Space.properKernelPairCoequalizers_holds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairSheafDescent.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairSheafDescent.lean#L207).
+**`AlgebraicGeometry.Space.properKernelPairCoequalizers_holds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairSheafDescent.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ProperKernelPairSheafDescent.lean#L207).
 
 > **Stacks 0AGG.** Let `S` be a scheme and let `g : Y ⟶ X` be a morphism of algebraic spaces
 > over `S` with `X` locally Noetherian and `g` proper. Let `R = Y ×_X Y` with projections
@@ -59,7 +59,7 @@ theorem properKernelPairCoequalizers_holds : ProperKernelPairCoequalizers B S hS
 
 [Tag 0AGH](https://stacks.math.columbia.edu/tag/0AGH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Coequalizers.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Coequalizers.lean#L49).
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Coequalizers.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Coequalizers.lean#L49).
 
 > **Stacks 0AGH.** The standing situation for the coequalizer construction: a locally
 > Noetherian algebraic space `X` over `S`, a closed immersion `i : Z ⟶ X` with complementary open
@@ -73,57 +73,7 @@ structure CoequalizerGlueSituation
 
 [Tag 0AGI](https://stacks.math.columbia.edu/tag/0AGI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.nonempty_glueCoequalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L286). The attribute's comment: “existence of the coequalizer; this clause is Stacks 0AGG, carried as the hypothesis hAGG because 0AGG rests on 08AR, which the library does not have”.
-
-> **Stacks 0AGI**, existence of the coequalizer `X₁` of `s, t : R ⟶ Y` in the category of
-> algebraic spaces over `S`, for `Y = X' ⨿ Z` and `R = Y ×_X Y`.
-
-```lean
-theorem nonempty_glueCoequalizer
-    (hAGG : ProperKernelPairCoequalizers T.B T.S T.hS)
-    (hproper : IsProper T.B T.S T.hS T.glueMap.hom) :
-    Nonempty (KernelPairCoequalizer T.B T.S T.hS T.glueMap)
-```
-
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.isFinite_glueCoequalizer_toTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L295). The attribute's comment: “the morphism to X is finite; this clause is part (1) of Stacks 0AGG, carried as the hypothesis hAGG”.
-
-> **Stacks 0AGI**, finiteness of `X₁ ⟶ X`.
-
-```lean
-theorem isFinite_glueCoequalizer_toTarget
-    (hAGG : ProperKernelPairCoequalizers T.B T.S T.hS)
-    (hproper : IsProper T.B T.S T.hS T.glueMap.hom)
-    (D : KernelPairCoequalizer T.B T.S T.hS T.glueMap) :
-    IsFinite T.B T.S T.hS D.toTarget.hom
-```
-
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.universalHomeomorphism_glueCoequalizer_toTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L307). The attribute's comment: “the morphism to X is a universal homeomorphism; part (5) of Stacks 0AGG is carried as the hypothesis hAGG, and its surjectivity input is proved here”.
-
-> **Stacks 0AGI**, the morphism `X₁ ⟶ X` is a universal homeomorphism. The surjectivity of
-> `g` which part (5) of Stacks 0AGG asks for is supplied by
-> `AlgebraicGeometry.Space.CoequalizerGlueSituation.isSurjective_glueMap`.
-
-```lean
-theorem universalHomeomorphism_glueCoequalizer_toTarget
-    (hAGG : ProperKernelPairCoequalizers T.B T.S T.hS)
-    (hproper : IsProper T.B T.S T.hS T.glueMap.hom)
-    (D : KernelPairCoequalizer T.B T.S T.hS T.glueMap) :
-    UniversalHomeomorphism T.B T.S T.hS D.toTarget.hom
-```
-
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.glueCoequalizer_closedSubspace_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L319). The attribute's comment: “Z lifts to the coequalizer; proved here”.
-
-> **Stacks 0AGI**, the closed immersion `Z ⟶ X` lifts to the coequalizer: the composition of
-> the coproduct inclusion of `Z` with the quotient morphism is a lift. This clause is proved
-> outright: it needs only that `Y ⟶ X₁ ⟶ X` is `g`, which is `g` on the summand `Z`.
-
-```lean
-theorem glueCoequalizer_closedSubspace_lift
-    (D : KernelPairCoequalizer T.B T.S T.hS T.glueMap) :
-    (coprod.inr ≫ D.π) ≫ D.toTarget = (ObjectProperty.homMk T.i : _ ⟶ T.targetSpace)
-```
-
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_glueCoequalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L56).
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_glueCoequalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L57). The attribute's comment: “the coequalizer X₁ exists, X₁ ⟶ X is finite, a universal homeomorphism and an isomorphism over U, and Z ⟶ X lifts to X₁”.
 
 > **Stacks 0AGI.** In Situation 0AGH (`X` locally Noetherian over `S`, `Z ⟶ X` a closed
 > immersion with complementary open `U`, `f : X' ⟶ X` proper and an isomorphism over `U`), let
@@ -146,7 +96,7 @@ theorem exists_glueCoequalizer :
 
 [Tag 0AGJ](https://stacks.math.columbia.edu/tag/0AGJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L396). The attribute's comment: “the morphism of the tower”.
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L379). The attribute's comment: “the morphism of the tower”.
 
 > **Stacks 0AGJ.** The morphism `X_n ⟶ X_{n+1}` of the tower
 > `X_1 ⟶ X_2 ⟶ X_3 ⟶ … ⟶ X`, induced by the morphisms `Y_n ⟶ Y_{n+1}` and `R_n ⟶ R_{n+1}`.
@@ -155,7 +105,7 @@ theorem exists_glueCoequalizer :
 def towerMap (n : ℕ) : (D n).space ⟶ (D (n + 1)).space
 ```
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap_comp_toTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L411). The attribute's comment: “the tower is a tower over X”.
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation.ClosedSubspaceSystem.towerMap_comp_toTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueing.lean#L394). The attribute's comment: “the tower is a tower over X”.
 
 > **Stacks 0AGJ.** Each morphism of the tower `X_1 ⟶ X_2 ⟶ X_3 ⟶ … ⟶ X` is a morphism over
 > `X`: the triangle formed with the two morphisms to `X` commutes.
@@ -169,7 +119,7 @@ theorem towerMap_comp_toTarget (n : ℕ) :
 
 [Tag 0AGK](https://stacks.math.columbia.edu/tag/0AGK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_factorsThroughSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L73).
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_factorsThroughSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L74).
 
 > **Stacks 0AGK.** In Situation 0AGH assume `X` quasi-compact. Let `Z_n` be the infinitesimal
 > neighbourhoods of `Z` in `X` and `X_n` the coequalizers of the kernel pairs of
@@ -189,7 +139,7 @@ theorem exists_factorsThroughSection (hqc : IsQuasiCompactSpace T.B T.S T.hS T.X
 
 [Tag 0AGL](https://stacks.math.columbia.edu/tag/0AGL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_isEssentiallyConstantWith`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L85).
+**`AlgebraicGeometry.Space.CoequalizerGlueSituation.exists_isEssentiallyConstantWith`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/CoequalizerGlueingUnconditional.lean#L86).
 
 > **Stacks 0AGL.** In Situation 0AGH with `X` quasi-compact, the system
 > `X_1 ⟶ X_2 ⟶ X_3 ⟶ …` of Stacks 0AGJ (for any choice `D` of the coequalizers) is essentially
@@ -213,4 +163,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.13, Tag 0AGF](https://stacks.math.columbia.edu/tag/0AGF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

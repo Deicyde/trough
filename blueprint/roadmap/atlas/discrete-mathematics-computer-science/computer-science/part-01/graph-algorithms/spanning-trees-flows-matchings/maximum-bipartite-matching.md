@@ -8,7 +8,7 @@ proof: formalized
 
 # Maximum bipartite matching
 
-91 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html).
+91 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html).
 
 ## Matching in a bipartite graph
 
@@ -18,7 +18,7 @@ pairs $(i, j)$ of a left vertex $i$ and a right vertex $j$ is a matching when ev
 an edge ($j$ is in the adjacency list of $i$), no two distinct pairs of $M$ have the same left
 vertex, and no two distinct pairs of $M$ have the same right vertex.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsMatching`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsMatching`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching).
 
 ## Matched pairs of a partner assignment
 
@@ -27,7 +27,7 @@ sends each right vertex $j < b$ to a left vertex $i < a$ or to nothing, the matc
 $\mathrm{mate}$ form the set of all pairs $(i, j)$ of a left vertex $i < a$ and a right vertex
 $j < b$ with $\mathrm{mate}(j) = i$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pairs`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pairs).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pairs`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pairs).
 
 ## Partner arrays that describe a matching
 
@@ -38,7 +38,7 @@ vertex as its partner. It is valid when every partner is a neighbour (if $i$ is 
 $j$, then $j$ is in the list of neighbours of $i$) and no left vertex is the partner of two
 different right vertices (if $i$ is the partner of both $j$ and $j'$, then $j = j'$).
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.Valid`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.Valid`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid).
 
 ## Unmatched left vertex
 
@@ -46,7 +46,7 @@ Given a partner array $\mu$, which assigns to each right vertex $j$
 either a left vertex $\mu(j)$ as partner or no partner, a left vertex $i$ is unmatched (free) when
 no right vertex $j$ has $\mu(j) = i$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.Free`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#free).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.Free`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#free).
 
 ## Alternating breadth-first layers
 
@@ -61,7 +61,7 @@ The layers are cumulative on both sides: $Z_k$ holds the left vertices reached w
 and $R_k$ the right vertices reached within $k$ rounds. The round where a vertex is first reached
 is its breadth-first level.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers).
 
 ## Matched reached left vertices are reached through a partner
 
@@ -70,7 +70,7 @@ and $k$ a natural number. If a left vertex $i$ is reached within $k$ rounds of t
 and is matched (some right vertex has partner $i$), then some right vertex $j$ reached within $k$
 rounds has partner $i$, that is, $\mu(j) = i$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.exists_mate_of_mem_layers`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#exists-mate-of-mem-layers).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.exists_mate_of_mem_layers`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#exists-mate-of-mem-layers).
 
 ## The left layers stop growing once two consecutive ones agree
 
@@ -78,7 +78,7 @@ For any partner array, if
 the layered search reaches the same left vertices within $k$ rounds as within $k + 1$ rounds,
 then for every $m \ge k$ it reaches exactly those left vertices within $m$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_fst_eq_of_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-fst-eq-of-eq).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_fst_eq_of_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-fst-eq-of-eq).
 
 ## Rounds $a$ and $a + 1$ reach the same left vertices
 
@@ -86,7 +86,7 @@ In a bipartite graph with $a$ left
 vertices, for every partner array $\mu$, the alternating layered search for $\mu$ reaches the same
 left vertices within $a + 1$ rounds as within $a$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_fst_stable`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-fst-stable).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_fst_stable`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-fst-stable).
 
 ## Walking the layers back
 
@@ -104,7 +104,7 @@ the least right vertex $j'$ with $\mathrm{mate}(j') = i$.
 When $j$ is reached within $k + 1$ rounds, the walk descends to the round where $j$ is first
 reached and lists the pairs to match, $j$ first.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to).
 
 ## Flipping a list of pairs
 
@@ -114,7 +114,7 @@ right vertex $j$. The flip of $\mu$ along $P$ sends each right vertex $j$ to the
 the first pair in $P$ whose right vertex is $j$, and to $\mu(j)$ (a partner or none) when no pair
 of $P$ has right vertex $j$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.flip`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#flip).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.flip`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#flip).
 
 ## Alternating path
 
@@ -130,7 +130,7 @@ partner of $j''$; and the left vertex of the last pair of $P$ is the partner of 
 
 When $j$ is unmatched as well, $P$ is an augmenting path.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.AltPath`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#alt-path).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.AltPath`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#alt-path).
 
 ## Augmenting path
 
@@ -142,7 +142,7 @@ $\mu$ gives $j$ no partner.
 Since the last left vertex of an alternating path is unmatched, both endpoints of an augmenting
 path are unmatched.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsAugmentingPath`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-augmenting-path).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsAugmentingPath`, a structure declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-augmenting-path).
 
 ## The walk back is an alternating path
 
@@ -154,7 +154,7 @@ rounds and its right vertices within $k + 1$ rounds, no vertex occurs twice, eac
 after the first is the partner of the previous left vertex, and the last left vertex is
 unmatched.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to-spec).
 
 ## Flipping an alternating path keeps a matching
 
@@ -163,7 +163,7 @@ are neighbours and no left vertex is the partner of two right vertices), and let
 alternating path for $\mu$ from a right vertex $j$ with round bound $k$. Then the partner array
 obtained from $\mu$ by matching each pair of $P$ and keeping the other partners is valid.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.valid_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid-flip).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.valid_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid-flip).
 
 ## Matched right vertices
 
@@ -171,7 +171,7 @@ Let $\mu$ give each right vertex $j$ of a bipartite graph at
 most one partner $\mu(j)$ among the left vertices. The matched right vertices of $\mu$ are the
 right vertices $j$ that have a partner $\mu(j)$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.matched`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#matched).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.matched`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#matched).
 
 ## Flipping an alternating path matches its first vertex
 
@@ -182,7 +182,7 @@ flipping $P$ are exactly $j$ and the right vertices matched under $\mu$.
 
 The other right vertices of $P$ change partners but stay matched.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.matched_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#matched-flip).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.matched_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#matched-flip).
 
 ## The walk back from an unmatched reached vertex is an augmenting path
 
@@ -191,7 +191,7 @@ partner array, $k$ a natural number and $j$ a right vertex that is unmatched and
 $k + 1$ rounds of the alternating layered search for $\mu$. Then the walk back from $j$ at level
 $k$ is an augmenting path from $j$ within round $k$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo_isAugmentingPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to-is-augmenting-path).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pathTo_isAugmentingPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#path-to-is-augmenting-path).
 
 ## Flipping an augmenting path adds one matched vertex
 
@@ -199,7 +199,7 @@ If $P$ is an augmenting path for a
 partner array $\mu$, then flipping $P$ in $\mu$ gives a partner array with exactly one more
 matched right vertex than $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_matched_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-matched-flip).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_matched_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-matched-flip).
 
 ## One augmentation step
 
@@ -211,7 +211,7 @@ obtained from $\mu$ by flipping the path found by walking back from $j$ through 
 layers: every right vertex $j'$ on the path gets as partner the left vertex paired with it on the
 path, and every other right vertex keeps its partner.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment).
 
 ## Augmentation loop
 
@@ -222,7 +222,7 @@ the loop returns $\mu$; otherwise it runs with fuel $f - 1$ on the array that th
 obtained by flipping the pairs walked back through the layers from the least-indexed unmatched
 right vertex that the search reaches. Thus it augments while possible, at most $f$ times.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatchingAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching-aux).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatchingAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching-aux).
 
 ## The augmenting-path maximum matching
 
@@ -230,7 +230,7 @@ In a bipartite graph with right vertices
 $0, \dots, b-1$, the partner array obtained by running the augmentation loop with fuel $b + 1$ from
 the empty matching, in which no right vertex has a partner.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatching`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatching`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching).
 
 ## Matched pairs and matched right vertices are equinumerous
 
@@ -238,7 +238,7 @@ For every partner array
 $\mu$, the number of matched pairs $(i, j)$ of $\mu$, those with $\mu(j) = i$, equals the number
 of matched right vertices of $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_pairs`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-pairs).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_pairs`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-pairs).
 
 ## A valid partner array gives a matching
 
@@ -247,7 +247,7 @@ have at most one partner, a left vertex. If the partners are valid for the graph
 $j$ is adjacent to $j$, and no left vertex is the partner of two right vertices), then the set of
 pairs $(i, j)$ with $i$ the partner of $j$ is a matching of the graph.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_pairs`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-pairs).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_pairs`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-pairs).
 
 ## A successful augmentation grows the matching by one edge
 
@@ -256,7 +256,7 @@ that describes a matching. If the augmentation step on $\mu$ returns a partner a
 $\mu'$ also describes a matching, and $\mu'$ has exactly one more matched right vertex than
 $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment-some).
 
 ## A failed augmentation reaches no unmatched right vertex
 
@@ -265,7 +265,7 @@ bipartite graph with $a$ left vertices. If the augmentation step on $\mu$ fails,
 right vertex is reached within $a + 1$ rounds of the alternating search from the unmatched left
 vertices.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment-none).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.augment_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#augment-none).
 
 ## Kőnig's certificate
 
@@ -275,7 +275,7 @@ of the alternating search from the unmatched left vertices, then no matching has
 the matching of $\mu$: the unreached left vertices and the reached right vertices cover every
 edge, and each of them is matched, to distinct matching edges.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_of_no_free`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-of-no-free).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_of_no_free`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-of-no-free).
 
 ## Enough augmentations reach a maximum matching
 
@@ -288,7 +288,7 @@ from $\mu$ with fuel $f$. Then $\mu'$ is valid, and every matching $M$ of the gr
 $|M| \le |\mathrm{pairs}(\mu')|$, where $\mathrm{pairs}(\mu')$ is the set of pairs $(i, j)$ with
 $\mu'(j) = i$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatchingAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching-aux-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.maxMatchingAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#max-matching-aux-spec).
 
 ## The augmenting-path algorithm returns a matching
 
@@ -299,7 +299,7 @@ empty matching, repeatedly flip an augmenting path found by the layered search) 
 partner of $j$ form a matching of the graph: each pair is an edge, and no two distinct pairs
 share a left or a right vertex.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_maxMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-max-matching).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_maxMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-max-matching).
 
 ## Optimality of the augmenting-path matching algorithm
 
@@ -307,7 +307,7 @@ In a bipartite graph with $b$ right
 vertices, start from the empty matching and repeat the augmentation step until it fails, at most
 $b + 1$ times. No matching of the graph has more edges than the resulting matching.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_maxMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-max-matching).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_maxMatching`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-max-matching).
 
 ## Partner of a left vertex
 
@@ -316,7 +316,7 @@ vertex $j < b$ to a left vertex $i < a$ or to nothing, the partner of a left ver
 least right vertex $j$ with $\mathrm{mate}(j) = i$; it is undefined when there is no such $j$,
 that is, when $i$ is unmatched.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.partnerOf`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#partner-of).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.partnerOf`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#partner-of).
 
 ## Marking a right vertex dead
 
@@ -324,7 +324,7 @@ Given a set $D$ of right vertices, represented by its
 indicator function, and a right vertex $j$, the result is the indicator function of
 $D \cup \{j\}$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markDead`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-dead).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markDead`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-dead).
 
 ## Trying the candidate predecessors of a right vertex
 
@@ -339,7 +339,7 @@ $P$, it returns the path $(i, j)$ followed by $P$, with the dead set returned by
 $s(j', D)$ finds no path, it continues with the rest of the list from the dead set returned by
 $s$. When the list is exhausted, it fails and returns the current dead set with $j$ added.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds).
 
 ## Depth-first search of a Hopcroft–Karp phase
 
@@ -365,7 +365,7 @@ pairs of a left and a right vertex) together with a new dead set:
 This is the pruning of Hopcroft and Karp: a right vertex from which the search fails is marked
 dead and not searched again.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 688](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L688). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path).
 
 ## Trying candidates keeps dead vertices dead
 
@@ -379,7 +379,7 @@ dead set returned by $s(j', d)$ contains $d$.
 Then for every list $l$ of left vertices and every dead set $D$, the dead set of $T(l, D)$
 contains $D$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_mono`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-mono).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_mono`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 721](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L721). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-mono).
 
 ## A path found by trying candidates comes from one candidate
 
@@ -395,7 +395,7 @@ dead set $D_0$ containing $D$ such that either $\pi(i)$ is undefined and $P = [(
 $\pi(i) = j'$ for a right vertex $j'$ and $s(j', D_0)$ returns a path $P'$ with $P$ equal to
 $(i, j)$ followed by $P'$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 745](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L745). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 745](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L745). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-some).
 
 ## When trying candidates finds a path
 
@@ -411,7 +411,7 @@ Then $T(l, D)$ finds a path.
 Only the initial dead set matters: it does not change before the first vertex passing
 $\mathrm{ok}$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_isSome`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 778](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L778). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-is-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_isSome`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 778](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L778). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-is-some).
 
 ## The dead set of a search only grows
 
@@ -419,7 +419,7 @@ For every set of used left vertices, every level
 $k$, every right vertex $j$ and every set of dead right vertices, each right vertex that is dead
 before the search at level $k$ from $j$ is still dead after it.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_mono`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 808](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L808). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-mono).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_mono`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 808](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L808). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-mono).
 
 ## Search paths are alternating paths through unused vertices
 
@@ -430,7 +430,7 @@ vertices, if the search at level $k$ from $j$ finds a path $P$, then $P$ is an a
 level $k$ from $j$, no left vertex of $P$ is used, and no right vertex of $P$ was dead before the
 search.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-spec).
 
 ## Searches from reached vertices succeed when nothing is used or dead
 
@@ -439,7 +439,7 @@ describes a matching, then for every $k$ and every right vertex $j$ reached with
 of the alternating breadth-first search, the search at level $k$ from $j$, with no left vertex
 used and no right vertex dead, finds a path.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_isSome`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-is-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_isSome`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 908](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-is-some).
 
 ## Marking the left vertices of a path used
 
@@ -448,7 +448,7 @@ by its indicator function, and a list $P$ of pairs $(i, j)$ of a left vertex $i$
 vertex $j$, the result is the indicator function of $U$ together with the left vertices of the
 pairs of $P$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markL`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 936](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L936). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-l).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markL`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 936](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L936). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-l).
 
 ## Marking the right vertices of a path used
 
@@ -457,7 +457,7 @@ represented by its indicator function, and a list $P$ of pairs $(i, j)$ of a lef
 a right vertex $j$, the result is the indicator function of $U$ together with the right vertices
 of the pairs of $P$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markR`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 940](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L940). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-r).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.markR`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 940](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L940). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mark-r).
 
 ## Phase search over candidates
 
@@ -470,7 +470,7 @@ search continues with the remaining candidates, $U$ and $D'$; if it finds a path
 $P$ and continues with the remaining candidates, $U$ together with the left vertices of $P$, and
 $D'$ together with the right vertices of $P$. The result is the list of the recorded paths.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 946](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L946). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux).
 
 ## First free round
 
@@ -478,7 +478,7 @@ For a partner array $\mu$ of a bipartite graph with $a$ left vertices,
 the first free round of $\mu$ is the least $d \le a$ such that some unmatched right vertex is
 reached within $d + 1$ rounds of the layered search; it is undefined if there is no such $d$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 956](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L956). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 956](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L956). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round).
 
 ## Hopcroft–Karp phase
 
@@ -490,7 +490,7 @@ vertex dead, and lists the paths found. After each search, the left vertices of 
 become used and its right vertices become dead, and right vertices that the search marked dead
 stay dead for the later searches.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 962](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 962](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase).
 
 ## Hopcroft–Karp step
 
@@ -498,7 +498,7 @@ Given a partner array $\mu$, consider the phase of $\mu$, a list of
 paths, each a list of pairs. If the phase is empty, the step returns nothing; otherwise it returns
 the flip of $\mu$ along the concatenation of all the paths of the phase.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 971](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L971). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step).
 
 ## Hopcroft–Karp phase loop
 
@@ -507,7 +507,7 @@ loop returns $\mu$ when $n = 0$ or when the Hopcroft–Karp step on $\mu$ return
 $n \ge 1$ and the step returns a partner array $\mu'$, it returns the loop with fuel $n - 1$ run
 from $\mu'$. So it runs Hopcroft–Karp steps while they find paths, at most $n$ times.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 976](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L976). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 976](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L976). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux).
 
 ## Hopcroft–Karp
 
@@ -521,7 +521,7 @@ partner (or the absence of one) of each right vertex.
 
 The result is a maximum matching.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarp`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 984](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L984). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarp`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 984](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L984). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp).
 
 ## Characterization of the first free round
 
@@ -530,7 +530,7 @@ with $a$ left vertices and a natural number $d$, the first free round of $\mu$ e
 only if $d \le a$, some unmatched right vertex is reached within $d + 1$ rounds of the layered
 search, and for every $k < d$ no unmatched right vertex is reached within $k + 1$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_eq_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-eq-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_eq_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1000](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1000). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-eq-some).
 
 ## When there is no first free round
 
@@ -538,7 +538,7 @@ For a partner array $\mu$ of a bipartite graph with
 $a$ left vertices, the first free round of $\mu$ is undefined if and only if no unmatched right
 vertex is reached within $a + 1$ rounds of the layered search.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_eq_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-eq-none).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_eq_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-eq-none).
 
 ## Phase paths are disjoint augmenting paths
 
@@ -551,7 +551,7 @@ within $k$ rounds and right vertices within $k + 1$ rounds; no left vertex and n
 occurs twice among all pairs of all these paths; and every pair $(i, j)$ of these paths has
 $i \notin U_L$ and $j \notin U_R$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-spec).
 
 ## Flipping disjoint alternating paths at once keeps a matching
 
@@ -562,7 +562,7 @@ round bound $k$, from some right vertex. Suppose no left vertex and no right ver
 the concatenation $P_1 \cdots P_r$. Then the partner array obtained from $\mu$ by matching each
 pair of the concatenation and keeping the other partners is valid.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.valid_flip_flatten`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1077](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1077). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid-flip-flatten).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.valid_flip_flatten`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1077](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1077). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#valid-flip-flatten).
 
 ## Flipping disjoint augmenting paths matches at least one more vertex
 
@@ -573,7 +573,7 @@ $P_1 P_2 \cdots P_n$. Then flipping this concatenation in $\mu$ gives a partner 
 least one more matched right vertex than $\mu$: the right vertices matched before stay matched,
 and so does the start of the first path.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_matched_flip_flatten`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-matched-flip-flatten).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_matched_flip_flatten`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-matched-flip-flatten).
 
 ## A phase finds a path when an unmatched right vertex is reached
 
@@ -584,7 +584,7 @@ at least one path.
 
 The search from the first candidate always yields a path.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_ne_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-ne-nil).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_ne_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-ne-nil).
 
 ## A successful Hopcroft–Karp step grows the matching
 
@@ -593,7 +593,7 @@ matching of the graph). If the Hopcroft–Karp step on $\mu$ returns a partner a
 $\mu'$ is valid and $|\mathrm{matched}(\mu)| + 1 \le |\mathrm{matched}(\mu')|$, where
 $\mathrm{matched}(\nu)$ is the set of right vertices that have a partner in $\nu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step-some).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep_some`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step-some).
 
 ## A Hopcroft–Karp step that finds nothing
 
@@ -602,7 +602,7 @@ the graph, whose left vertices number $a$). If the Hopcroft–Karp step on $\mu$
 then no right vertex without a partner in $\mu$ is reached within $a + 1$ rounds of the
 alternating breadth-first layers of $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step-none).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hkStep_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hk-step-none).
 
 ## Correctness of the phase loop
 
@@ -614,7 +614,7 @@ result of the Hopcroft–Karp phase loop with fuel $n$ from $\mu$. Then $\mu'$ i
 matching $M$ of the graph satisfies $|M| \le |\mathrm{pairs}(\mu')|$, where $\mathrm{pairs}(\mu')$
 is the set of pairs $(i, j)$ with $\mu'(j) = i$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-spec).
 
 ## Hopcroft–Karp returns a matching
 
@@ -623,13 +623,13 @@ $0, \dots, a-1$, right vertices $0, \dots, b-1$ and an adjacency list for each l
 pairs $(i, j)$ such that the Hopcroft–Karp algorithm makes $i$ the partner of $j$ form a matching
 of the graph: each pair is an edge, and no two distinct pairs share a left or a right vertex.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_hopcroftKarp`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-hopcroft-karp).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.isMatching_hopcroftKarp`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-matching-hopcroft-karp).
 
 ## Correctness of Hopcroft–Karp
 
 No matching is larger than the result.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarp`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarp`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp).
 
 ## The start of an alternating chain of $L$ pairs is reached within $L$ rounds
 
@@ -641,7 +641,7 @@ vertices reached within $L$ rounds of the alternating layered search for $\mu$.
 
 From the unmatched end, each pair advances one round.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mem_layers_length`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mem-layers-length).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mem_layers_length`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mem-layers-length).
 
 ## No augmenting path is shorter than a phase's
 
@@ -649,7 +649,7 @@ Let $\mu$ give each right vertex of a
 bipartite graph at most one partner among the left vertices. If the first free round of $\mu$ is
 $d$, then every augmenting path for $\mu$ has at least $d + 1$ pairs.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.le_length_of_isAugmentingPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#le-length-of-is-augmenting-path).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.le_length_of_isAugmentingPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#le-length-of-is-augmenting-path).
 
 ## Length bound for search paths
 
@@ -657,7 +657,7 @@ For every set of used left vertices, every level $k$,
 every right vertex $j$ and every set of dead right vertices, a path found by the search at level
 $k$ from $j$ has at most $k + 1$ pairs.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-length-le).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-length-le).
 
 ## Length bound for phase paths
 
@@ -665,7 +665,7 @@ For every partner assignment $\mathrm{mate}$, level $k$,
 list of candidate right vertices and sets of used left and right vertices, every path that the
 phase search at level $k$ collects from these candidates has at most $k + 1$ pairs.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-length-le).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_length_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-length-le).
 
 ## Phases use shortest augmenting paths
 
@@ -676,7 +676,7 @@ has exactly $d + 1$ pairs.
 Every augmenting path for $\mu$ has at least $d + 1$ pairs, so these paths are shortest
 augmenting paths.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.length_of_mem_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#length-of-mem-phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.length_of_mem_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#length-of-mem-phase).
 
 ## Exact level of a right vertex
 
@@ -684,7 +684,7 @@ For a partner array $\mu$, a natural number $m$ and a
 right vertex $z$, $z$ has exact level $m$ when $z$ is first reached in round $m + 1$ of the
 layered search for $\mu$: it is reached within $m + 1$ rounds but not within $m$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#exact-level).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#exact-level).
 
 ## Alternating chain to an unmatched left vertex
 
@@ -698,7 +698,7 @@ and its last left vertex is the partner of no right vertex.
 Unlike an augmenting path, $z$ may be matched, the vertices need not lie in the layers of the
 search, and a vertex may occur more than once.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsChainFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-chain-from).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.IsChainFrom`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#is-chain-from).
 
 ## No shortest escape
 
@@ -712,7 +712,7 @@ $\mu(j_t) \ne i_t$, $\mu(j_{t+1}) = i_t$ for $t \le m$, and $i_{m+1}$ is unmatch
 
 A phase gives this property to every right vertex it marks dead after a failed search.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.NoEscape`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1340](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#no-escape).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.NoEscape`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1340](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1340). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#no-escape).
 
 ## The second pair of a shortest alternating chain
 
@@ -723,7 +723,7 @@ $m + 1$ pairs, at least two of them. Let $(i', j')$ be the second pair of $Q$. T
 right vertex $j'$ is first reached in round $m$, and $Q$ without its first pair is an alternating
 chain for $\mu$ from $j'$ ending at an unmatched left vertex.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel.tail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#tail).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel.tail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#tail).
 
 ## Partners of predecessors lie one level earlier
 
@@ -734,7 +734,7 @@ reached within $k + 1$ rounds with $z \in \mathrm{adj}(i)$ and $\mathrm{mate}(z)
 $j'$ be a right vertex with $\mathrm{mate}(j') = i$. Then $j'$ is first reached in round
 $k + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel.partner`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#partner).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.ExactLevel.partner`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#partner).
 
 ## Where newly dead vertices come from
 
@@ -751,7 +751,7 @@ $\mathrm{ok}$, a right vertex $j'$ and a dead set $d$ containing $D$ such that $
 $y \notin d$, $y$ is in the dead set returned by $s(j', d)$, and that dead set is contained in
 $E$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_dead`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-dead).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_dead`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-dead).
 
 ## When trying candidates fails
 
@@ -767,7 +767,7 @@ of $l$ passing $\mathrm{ok}$ there are a right vertex $j'$ and a dead set $d$ su
 $\pi(i) = j'$, $s(j', d)$ finds no path, and the dead set returned by $s(j', d)$ is contained in
 $E$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-none).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.tryPreds_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#try-preds-none).
 
 ## A failed search marks its start dead
 
@@ -775,7 +775,7 @@ For every set of used left vertices, every level
 $k$, every right vertex $z$ and every set of dead right vertices, if the search at level $k$ from
 $z$ finds no path, then $z$ is dead after it.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_none_marks`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1504](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-none-marks).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_none_marks`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1504](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-none-marks).
 
 ## Dead vertices have no escape
 
@@ -789,7 +789,7 @@ $D'$.
 
 So Hopcroft and Karp's pruning loses no path.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_dead`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-dead).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.searchPath_dead`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#search-path-dead).
 
 ## Shortest chains avoiding earlier paths contain no dead vertex
 
@@ -803,7 +803,7 @@ and no right vertex of $S$ lies in $R$. Then no right vertex of $S$ lies in $D$.
 
 In a phase, $L$ and $R$ are the left and right vertices of the paths found so far.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.not_dead_of_chain`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#not-dead-of-chain).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.not_dead_of_chain`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#not-dead-of-chain).
 
 ## Invariant of a phase
 
@@ -817,7 +817,7 @@ or in $D$, then some path in $F$, or among the paths that the phase search at le
 from $J$ with used left vertices $U$ and used right vertices $D$, shares a left vertex or a right
 vertex with $Q$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_maximal`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1629](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-maximal).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_maximal`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1629](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1629). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-aux-maximal).
 
 ## Phases are maximal
 
@@ -831,7 +831,7 @@ Every augmenting path has at least $d + 1$ pairs, so these are the shortest augm
 the phase's vertex-disjoint shortest augmenting paths form a maximal set, as Hopcroft and Karp
 require.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_maximal`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-maximal).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_maximal`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-maximal).
 
 ## A matched right vertex is reached no later than its partner
 
@@ -841,7 +841,7 @@ be a right vertex with partner $\mu(j) = i$, and let $k \in \mathbb{N}$. If $i$ 
 vertices reached within $k$ rounds of the alternating layered search for $\mu$, then $j$ is among
 the right vertices reached within $k$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mem_layers_snd_of_mate`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1763](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mem-layers-snd-of-mate).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mem_layers_snd_of_mate`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1763](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mem-layers-snd-of-mate).
 
 ## Levels along a shortest alternating chain
 
@@ -851,7 +851,7 @@ layered search for $\mu$, and let $S$ be an alternating chain from $z$ with $m +
 for every pair $(i, j)$ of $S$ there is $m' \in \mathbb{N}$ such that $j$ is first reached in round
 $m' + 1$ and $i$ is reached within $m'$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pair_levels_of_chain`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1770](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pair-levels-of-chain).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pair_levels_of_chain`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1770](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1770). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pair-levels-of-chain).
 
 ## Levels of the pairs of a phase
 
@@ -862,7 +862,7 @@ $\mu$ reaches an unmatched right vertex and no earlier round does. Then for ever
 a path of the Hopcroft–Karp phase for $\mu$ there is $m \in \mathbb{N}$ such that $j$ is first
 reached in round $m + 1$ and $i$ is among the left vertices reached within $m$ rounds.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pair_levels_of_mem_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1796](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pair-levels-of-mem-phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.pair_levels_of_mem_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1796](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#pair-levels-of-mem-phase).
 
 ## A phase leaves no new unmatched left vertex
 
@@ -874,7 +874,7 @@ then $i$ is unmatched in $\mu$.
 The first pair of each path starts at an unmatched right vertex, and every other right vertex of a
 path had the previous left vertex as partner, which the phase rematches.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.free_of_free_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#free-of-free-flip).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.free_of_free_flip`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1824](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#free-of-free-flip).
 
 ## Distances do not decrease across a phase
 
@@ -887,7 +887,7 @@ rounds before the flip.
 
 This is a step of Hopcroft and Karp's analysis.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_flip_phase_subset`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1855](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1855). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-flip-phase-subset).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.layers_flip_phase_subset`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1855](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1855). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#layers-flip-phase-subset).
 
 ## The first free round does not decrease across a phase
 
@@ -896,7 +896,7 @@ assignment of a bipartite graph (a matching), and let $\mu'$ be obtained from $\
 all the paths of the phase of $\mu$ at once. If the first free round of $\mu$ is $d$ and the first
 free round of $\mu'$ is $d'$, then $d \le d'$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.le_firstFreeRound_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1890](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#le-first-free-round-flip-phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.le_firstFreeRound_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1890](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#le-first-free-round-flip-phase).
 
 ## The paths of a phase are vertex-disjoint augmenting paths
 
@@ -906,7 +906,7 @@ breadth-first search reaches an unmatched right vertex. Then every path of the p
 augmenting path at level $d$ from some right vertex, and no left vertex and no right vertex occurs
 twice among the pairs of all the paths of the phase.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1908](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-spec).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.phase_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1908](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1908). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#phase-spec).
 
 ## Shortest chains from a vertex whose level a phase keeps were chains before it
 
@@ -921,7 +921,7 @@ right vertex of any pair on the paths of the phase.
 
 A flipped edge would step back a round, which a chain of this length cannot afford.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.chain_of_chain_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1920](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1920). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#chain-of-chain-flip-phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.chain_of_chain_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1920](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1920). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#chain-of-chain-flip-phase).
 
 ## The next phase's paths are strictly longer
 
@@ -933,7 +933,7 @@ the first free round of $\mu'$ is $d'$, then $d < d'$.
 A shortest augmenting path for $\mu'$ of the same length would be a shortest augmenting chain for
 $\mu$ that is disjoint from the paths of the phase, contradicting the maximality of the phase.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.lt_firstFreeRound_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1991](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1991). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#lt-first-free-round-flip-phase).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.lt_firstFreeRound_flip_phase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 1991](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L1991). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#lt-first-free-round-flip-phase).
 
 ## One round of the layered search bounds the deficit
 
@@ -942,7 +942,7 @@ by round `k + 1`, every matching has at most as many edges as the current one pl
 vertices first reached in round `k + 1`: the unreached left vertices and the right vertices reached
 by round `k + 1` cover every edge.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_card_pairs_add`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2093](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2093). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-card-pairs-add).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_card_pairs_add`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2093](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2093). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-card-pairs-add).
 
 ## The deficit is at most $b / d$
 
@@ -957,7 +957,7 @@ reached within $d$ rounds.
 This is the counting step of Hopcroft and Karp's bound: since $R_d$ has at most $b$ elements, the
 deficit of the current matching against any matching is at most $b / d$ when $d \ge 1$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mul_card_sub_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mul-card-sub-le).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.mul_card_sub_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#mul-card-sub-le).
 
 ## The phase loop stops when a step finds nothing
 
@@ -965,7 +965,7 @@ If the Hopcroft–Karp step on a partner
 array $\mu$ returns nothing, then for every fuel $f \in \mathbb{N}$ the Hopcroft–Karp phase loop
 with fuel $f$ from $\mu$ returns $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_of_hkStep_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-of-hk-step-none).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_of_hkStep_none`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-of-hk-step-none).
 
 ## Fuel adds up in the phase loop
 
@@ -973,7 +973,7 @@ For all $f, g \in \mathbb{N}$ and every partner array
 $\mu$, the Hopcroft–Karp phase loop with fuel $f + g$ from $\mu$ returns the same partner array as
 the loop with fuel $g$ run from the result of the loop with fuel $f$ from $\mu$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_add`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-add).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_add`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#hopcroft-karp-aux-add).
 
 ## Each phase lengthens the shortest augmenting paths
 
@@ -983,7 +983,7 @@ For every natural number $f$, running at most $f$ Hopcroft–Karp phases from $\
 early when a phase finds no path, gives a valid partner array whose first free round, if
 defined, is at least $c + f$.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_hopcroftKarpAux`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-hopcroft-karp-aux).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_hopcroftKarpAux`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#first-free-round-hopcroft-karp-aux).
 
 ## Closing a deficit of $f$ in $f$ Hopcroft–Karp phases
 
@@ -995,7 +995,7 @@ partner array returned by the Hopcroft–Karp phase loop with fuel $f$ from $\mu
 Each phase that finds a path adds at least one edge, and a phase that finds none leaves a maximum
 matching.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_of_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp-aux-of-le).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_of_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp-aux-of-le).
 
 ## Hopcroft and Karp's bound on the number of phases
 
@@ -1008,7 +1008,7 @@ After the first $\lfloor \sqrt{b} \rfloor + 1$ phases every augmenting path has 
 $\lfloor \sqrt{b} \rfloor$ pairs, so the deficit against any matching is at most
 $\lfloor \sqrt{b} \rfloor$, and each further phase adds an edge.
 
-Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_sqrt`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp-aux-sqrt).
+Formalized by `Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_sqrt`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean, line 2238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/BipartiteMatching.lean#L2238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html#card-le-hopcroft-karp-aux-sqrt).
 
 ## Depends on
 
@@ -1017,4 +1017,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Maximum bipartite matching](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/spanning-trees-flows-matchings/maximum-bipartite-matching)

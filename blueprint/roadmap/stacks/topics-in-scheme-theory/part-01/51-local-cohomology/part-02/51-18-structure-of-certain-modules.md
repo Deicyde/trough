@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.18 Structure of certain modules
 
-Section 51.18 of the Stacks Project, [Tag 0EC1](https://stacks.math.columbia.edu/tag/0EC1). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.18 of the Stacks Project, [Tag 0EC1](https://stacks.math.columbia.edu/tag/0EC1). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EC2, a lemma
 
 [Tag 0EC2](https://stacks.math.columbia.edu/tag/0EC2) in the Stacks Project.
 
-**`MvPowerSeries.exists_linearEquiv_directSum_injectiveHull_of_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/LeibnizTorsionModule.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MvPowerSeries/LeibnizTorsionModule.lean#L703).
+**`MvPowerSeries.exists_linearEquiv_directSum_injectiveHull_of_leibniz`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/LeibnizTorsionModule.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MvPowerSeries/LeibnizTorsionModule.lean#L704).
 
 > A maximal-ideal-power-torsion module over a characteristic-zero formal power series ring,
 > equipped with additive operators satisfying the partial-derivative Leibniz rules, is a direct sum
@@ -43,7 +43,7 @@ theorem exists_linearEquiv_directSum_injectiveHull_of_leibniz
 
 [Tag 0EC3](https://stacks.math.columbia.edu/tag/0EC3) in the Stacks Project.
 
-**`Dualizing.isIPowerTorsion_frobeniusStable_exists_equiv_directSum_injectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FrobeniusStableTorsion.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FrobeniusStableTorsion.lean#L620).
+**`Dualizing.isIPowerTorsion_frobeniusStable_exists_equiv_directSum_injectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FrobeniusStableTorsion.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FrobeniusStableTorsion.lean#L619).
 
 > **Stacks Project, Tag 0EC3.** A maximal-ideal-power-torsion module over a regular local ring
 > of prime characteristic which is invariant under extension of scalars by Frobenius is a direct
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.18, Tag 0EC1](https://stacks.math.columbia.edu/tag/0EC1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

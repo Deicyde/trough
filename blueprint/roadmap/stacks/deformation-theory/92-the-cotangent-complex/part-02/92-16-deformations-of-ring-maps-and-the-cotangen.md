@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.16 Deformations of ring maps and the cotangent complex
 
-Section 92.16 of the Stacks Project, [Tag 08SM](https://stacks.math.columbia.edu/tag/08SM). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.16 of the Stacks Project, [Tag 08SM](https://stacks.math.columbia.edu/tag/08SM). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08SN, an equation
 
 [Tag 08SN](https://stacks.math.columbia.edu/tag/08SN) in the Stacks Project.
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.CompatibleExtension`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/Problem.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/Problem.lean#L107). The attribute's comment: “the same extension problem diagram”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.CompatibleExtension`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/Problem.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SquareZero/Problem.lean#L107). The attribute's comment: “the same extension problem diagram”.
 
 > A solution of a square-zero extension problem.
 >
@@ -30,7 +30,7 @@ public structure CompatibleExtension (S : SquareZeroExtensionProblem)
 
 [Tag 08SP](https://stacks.math.columbia.edu/tag/08SP) in the Stacks Project.
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.isoFittingMapEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean#L285). The attribute's comment: “automorphisms are the fitting maps of the self-comparison diagram”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.isoFittingMapEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean#L285). The attribute's comment: “automorphisms are the fitting maps of the self-comparison diagram”.
 
 > The automorphisms of a solution of a square-zero extension problem which induce the identity
 > on `B` and on `N` are exactly the maps filling the diagram comparing the problem with itself.
@@ -40,7 +40,7 @@ noncomputable def isoFittingMapEquiv (X : S.CompatibleExtension.{w}) :
     CompatibleExtension.Iso X X ≃ (comparisonDiagram X X).FittingMap
 ```
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.automorphismsExtEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean#L304). The attribute's comment: “automorphisms”. References: EGA 0 (20.1.4), “Commutative case”; SGA 7 VI (4.16), “(a), affine case”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.automorphismsExtEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/CotangentAutomorphisms.lean#L304). The attribute's comment: “automorphisms”. References: EGA 0 (20.1.4), “Commutative case”; SGA 7 VI (4.16), “(a), affine case”.
 
 > **Stacks 08SP**, part (3). For a solution `B'` of a square-zero extension problem, the
 > automorphisms of `B'` inducing the identity on `B` and on `N` are canonically
@@ -61,7 +61,7 @@ noncomputable def automorphismsExtEquiv (X : S.CompatibleExtension.{w}) :
           RingHom.ker X.toB.toRingHom) : X.B') = f.toAlgEquiv b' - b'}
 ```
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.cotangentObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean#L111). The attribute's comment: “(1): there is a class in Ext²\_B(L\_\{B/A}, N) whose vanishing is necessary and sufficient for the existence of a solution”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.cotangentObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean#L111). The attribute's comment: “(1): there is a class in Ext²\_B(L\_\{B/A}, N) whose vanishing is necessary and sufficient for the existence of a solution”.
 
 > **Stacks 08SP**, part (1). The class `ξ ∈ Ext²_B(L_{B/A}, N)` vanishes if and only if the
 > square-zero extension problem has a solution.
@@ -71,7 +71,7 @@ theorem cotangentObstructionClass_eq_zero_iff :
     S.cotangentObstructionClass = 0 ↔ Nonempty (S.CompatibleExtension.{u})
 ```
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.isomorphismClassesCotangentTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean#L50). The attribute's comment: “(2): if a solution exists, the isomorphism classes of solutions form a principal homogeneous space under Ext¹\_B(L\_\{B/A}, N)”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.isomorphismClassesCotangentTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean#L50). The attribute's comment: “(2): if a solution exists, the isomorphism classes of solutions form a principal homogeneous space under Ext¹\_B(L\_\{B/A}, N)”.
 
 > **Stacks 08SP**, part (2). If the square-zero extension problem has a solution, its set of
 > isomorphism classes of solutions is a principal homogeneous space under `Ext¹_B(L_{B/A}, N)`.
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.16, Tag 08SM](https://stacks.math.columbia.edu/tag/08SM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

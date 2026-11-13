@@ -7,7 +7,7 @@ statement: formalized
 
 # Absolutely continuous functions
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html).
 
 ## Absolutely continuous functions have the Lusin N property
 
@@ -20,7 +20,7 @@ zero, the image $f(s)$ has Lebesgue outer measure zero.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_75`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.AbsContLusinNPropertyWanted.volume_image_eq_zero_of_absolutelyContinuous` is written with `theorem_wanted` in [WantedExt/MeasureTheory/AbsContLusinNPropertyWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/AbsContLusinNPropertyWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#volume-image-eq-zero-of-absolutely-conti).
+Stated but not proved: `MathlibExt.MeasureTheory.AbsContLusinNPropertyWanted.volume_image_eq_zero_of_absolutelyContinuous` is written with `theorem_wanted` in [WantedExt/MeasureTheory/AbsContLusinNPropertyWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/AbsContLusinNPropertyWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#volume-image-eq-zero-of-absolutely-conti).
 
 ## Lipschitz functions are the absolutely continuous functions with bounded derivative
 
@@ -35,7 +35,7 @@ differentiable.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_62`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.LipschitzIffAbsContBoundedDerivWanted.lipschitzWith_iff_absolutelyContinuous_and_ae_norm_deriv_le` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LipschitzIffAbsContBoundedDerivWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/LipschitzIffAbsContBoundedDerivWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#lipschitz-with-iff-absolutely-continuous).
+Stated but not proved: `MathlibExt.MeasureTheory.LipschitzIffAbsContBoundedDerivWanted.lipschitzWith_iff_absolutelyContinuous_and_ae_norm_deriv_le` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LipschitzIffAbsContBoundedDerivWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/LipschitzIffAbsContBoundedDerivWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#lipschitz-with-iff-absolutely-continuous).
 
 ## A $1$-Lipschitz function on $(a,b)$ is absolutely continuous with essentially bounded derivative
 
@@ -50,7 +50,7 @@ $[a, b]$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_34`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.LipschitzOneAbsContDerivLinftyWanted.absolutelyContinuousOnInterval_and_eLpNorm_deriv_lt_top_of_lipschitzOnWith` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LipschitzOneAbsContDerivLinftyWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/LipschitzOneAbsContDerivLinftyWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#absolutely-continuous-on-interval-and-e).
+Stated but not proved: `MathlibExt.MeasureTheory.LipschitzOneAbsContDerivLinftyWanted.absolutelyContinuousOnInterval_and_eLpNorm_deriv_lt_top_of_lipschitzOnWith` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LipschitzOneAbsContDerivLinftyWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/LipschitzOneAbsContDerivLinftyWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html#absolutely-continuous-on-interval-and-e).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Absolutely continuous functions](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/real-functions/absolutely-continuous-functions)

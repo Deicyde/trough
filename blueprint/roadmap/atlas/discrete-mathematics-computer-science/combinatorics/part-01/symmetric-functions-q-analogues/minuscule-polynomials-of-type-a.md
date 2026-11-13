@@ -7,7 +7,7 @@ statement: formalized
 
 # Minuscule polynomials of type A
 
-19 results, 4 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html).
+19 results, 4 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html).
 
 ## Type-A minuscule polynomial
 
@@ -22,7 +22,7 @@ For $n = 0$ the sum is empty, so $N_0 = 0$.
 
 - Ming-Jian Ding and Jiang Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, definition (1.1) (arXiv:2308.16782v3, equation (1.1)).
 
-Formalized by `MetaMathlibExt.minusculePolynomialA`, a definition declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a).
+Formalized by `MetaMathlibExt.minusculePolynomialA`, a definition declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a).
 
 ## The minuscule polynomial $N_1$ vanishes
 
@@ -33,7 +33,7 @@ zero polynomial.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, table of `N_n(x)` after (1.1).
 
-Formalized by `MetaMathlibExt.minusculePolynomialA_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-one).
+Formalized by `MetaMathlibExt.minusculePolynomialA_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-one).
 
 ## The minuscule polynomial $N_2$
 
@@ -43,7 +43,7 @@ The type-A minuscule polynomial $N_2(x)$ equals $2x$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, table of `N_n(x)` after (1.1).
 
-Formalized by `MetaMathlibExt.minusculePolynomialA_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-two).
+Formalized by `MetaMathlibExt.minusculePolynomialA_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-two).
 
 ## The minuscule polynomial $N_3$
 
@@ -54,7 +54,7 @@ $8x + 8x^2$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, table of `N_n(x)` after (1.1).
 
-Formalized by `MetaMathlibExt.minusculePolynomialA_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-three).
+Formalized by `MetaMathlibExt.minusculePolynomialA_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-three).
 
 ## Real-rootedness of the minuscule polynomials
 
@@ -69,7 +69,7 @@ of roots is taken to be empty.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 5 (first part).
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_isRealRooted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-is-real-rooted).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_isRealRooted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-is-real-rooted).
 
 ## Interlacing of consecutive minuscule polynomials
 
@@ -86,7 +86,7 @@ order.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 5 (second part).
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_interlaces_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-interlaces-succ).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_interlaces_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-interlaces-succ).
 
 ## Log-concavity of the coefficients of the minuscule polynomials
 
@@ -100,7 +100,7 @@ The cases outside $n \ge 1$, $1 \le k \le n - 1$ hold because the coefficients i
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_coeff_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-coeff-log-concave).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_coeff_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-coeff-log-concave).
 
 ## Gamma-positivity of the minuscule polynomials
 
@@ -115,7 +115,7 @@ For $n = 0$ this holds with every $\gamma_{0,k} = 0$, since $N_0 = 0$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_gamma_positive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-gamma-positive).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_gamma_positive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-gamma-positive).
 
 ## Binomial closed form of the minuscule polynomials
 
@@ -132,7 +132,7 @@ Dividing by $16x$ gives $N_n(x^2) = \frac{n+1}{8} \bigl((1+x)^{2n} + (1-x)^{2n}\
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_comp_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-comp-sq).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_comp_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-comp-sq).
 
 ## Exponential generating function of the minuscule polynomials
 
@@ -148,7 +148,7 @@ The sum starts at $n = 0$, where $N_0 = 0$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_egf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-egf).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_egf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-egf).
 
 ## Bourn–Erickson formula for the minuscule polynomials at one
 
@@ -159,7 +159,7 @@ the type-A minuscule polynomial $N_n$ satisfies $N_n(1) = (n - 1)\, 2^{2n-3}$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Corollary 11.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_eval_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-eval-one).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_eval_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-eval-one).
 
 ## Bender's central limit theorem for polynomials with non-positive real zeros
 
@@ -178,7 +178,7 @@ as $n \to \infty$, where $\Phi$ is the distribution function of the standard nor
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 12 (Bender, Theorem 2).
 
-Stated but not proved: `MetaMathlibExt.bender_asymptotic_normality` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#bender-asymptotic-normality).
+Stated but not proved: `MetaMathlibExt.bender_asymptotic_normality` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#bender-asymptotic-normality).
 
 ## Asymptotic normality of the coefficients of the minuscule polynomials
 
@@ -196,7 +196,7 @@ distribution $k \mapsto N_{n,k}/N_n(1)$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_asymptotically_normal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-asymptotically-no).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_asymptotically_normal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-asymptotically-no).
 
 ## $x$-log-concavity of the minuscule polynomials
 
@@ -210,7 +210,7 @@ For $n \le 1$ the polynomial is $0$ since $N_0 = N_1 = 0$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_x_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-x-log-concave).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_x_logConcave` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-x-log-concave).
 
 ## Total positivity of the coefficient matrix of the minuscule polynomials
 
@@ -226,7 +226,7 @@ The matrix vanishes on and above its diagonal, since $N_n$ has degree at most $n
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.minusculePolynomialA_coeffMatrix_hasNonnegativeMinors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-coeff-matrix-has).
+Stated but not proved: `MetaMathlibExt.minusculePolynomialA_coeffMatrix_hasNonnegativeMinors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#minuscule-polynomial-a-coeff-matrix-has).
 
 ## Craven–Csordas characterization of multiplier $n$-sequences
 
@@ -244,7 +244,7 @@ Only $t_0, \dots, t_n$ matter.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 3 (Craven and Csordas, Theorem 3.7).
 
-Stated but not proved: `MetaMathlibExt.multiplier_n_sequence_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-n-sequence-iff).
+Stated but not proved: `MetaMathlibExt.multiplier_n_sequence_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-n-sequence-iff).
 
 ## Pólya–Schur characterization of multiplier sequences
 
@@ -260,7 +260,7 @@ roots are either all $\ge 0$ or all $\le 0$.
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 18 (Pólya and Schur).
 
-Stated but not proved: `MetaMathlibExt.multiplier_sequence_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-sequence-iff).
+Stated but not proved: `MetaMathlibExt.multiplier_sequence_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-sequence-iff).
 
 ## Aissen–Schoenberg–Whitney–Edrei theorem
 
@@ -277,7 +277,7 @@ $a_0 e^{\gamma x} \prod_{i \ge 0} (1 + \alpha_i x) / \prod_{i \ge 0} (1 - \beta_
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 16 (Schoenberg–Edrei Theorem, Karlin p. 154).
 
-Stated but not proved: `MetaMathlibExt.polyaFrequency_iff_hasSum_edrei_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#polya-frequency-iff-has-sum-edrei-produc).
+Stated but not proved: `MetaMathlibExt.polyaFrequency_iff_hasSum_edrei_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#polya-frequency-iff-has-sum-edrei-produc).
 
 ## Pólya–Schur transcendental characterization of multiplier sequences
 
@@ -296,7 +296,7 @@ Convergence at every real $x$ encodes that the exponential generating function i
 
 - Ding and Zeng, *Some New Results on the Minuscule Polynomials of Type A*, Journal of Integer Sequences 28 (2025), Article 25.1.2, Lemma 17 (Pólya and Schur, PS14 p. 93).
 
-Stated but not proved: `MetaMathlibExt.multiplier_sequence_iff_hasSum_exp_mul_tprod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-sequence-iff-has-sum-exp-mul).
+Stated but not proved: `MetaMathlibExt.multiplier_sequence_iff_hasSum_exp_mul_tprod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MinusculePolynomialWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html#multiplier-sequence-iff-has-sum-exp-mul).
 
 ## Depends on
 
@@ -305,4 +305,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minuscule polynomials of type A](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/minuscule-polynomials-of-type-a)

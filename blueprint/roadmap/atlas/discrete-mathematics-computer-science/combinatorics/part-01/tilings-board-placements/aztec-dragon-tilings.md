@@ -7,7 +7,7 @@ statement: formalized
 
 # Aztec dragon tilings
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html).
 
 ## Cells of the Aztec diamond
 
@@ -19,7 +19,7 @@ so the condition says that this center satisfies $|i + \frac12| + |j + \frac12| 
 The Aztec diamond graph $AD_m$ has these $2m(m + 1)$ cells as vertices and joins two cells when
 they share a side.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.AztecCell`, an abbreviation declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-cell).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.AztecCell`, an abbreviation declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-cell).
 
 ## Ciucu's weight matrix for the Aztec dragon
 
@@ -32,7 +32,7 @@ $$A = \begin{pmatrix}1 & 1 & 1 & 1\\1 & 0 & 1 & 1\\0 & 1 & 1 & 1\\1 & 1 & 1 & 1\
 Its two zero entries, in positions $(1, 1)$ and $(2, 0)$, delete edges of the Aztec diamond
 graph.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.ciucuMatrix`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#ciucu-matrix).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.ciucuMatrix`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#ciucu-matrix).
 
 ## Row index of an edge of the Aztec diamond
 
@@ -43,7 +43,7 @@ $\lfloor (X + Y + 2m - 1) / 2 \rfloor$, so the rows of the $2m \times 2m$ array 
 the Aztec diamond graph $AD_m$ are the diagonals $X + Y = \mathrm{const}$, numbered
 $0, \dots, 2m - 1$.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeRow`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#edge-row).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeRow`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#edge-row).
 
 ## Column index of an edge of the Aztec diamond
 
@@ -53,7 +53,7 @@ doubled coordinates of the center of the edge joining $c$ and $d$. The column in
 $\lfloor (X - Y + 2m - 1) / 2 \rfloor$, so the columns of the array of edge centers of the Aztec
 diamond graph $AD_m$ are the diagonals $X - Y = \mathrm{const}$, numbered $0, \dots, 2m - 1$.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeCol`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#edge-col).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.edgeCol`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#edge-col).
 
 ## Ciucu's periodic weight
 
@@ -63,7 +63,7 @@ Aztec diamond graph $AD_m$. The weight $\mathrm{wt}_A(c, d)$ is the entry of Ciu
 row $r \bmod 4$ and column $s \bmod 4$; that is, $A$ is placed in a corner of the array and
 repeated with period $4$ in both directions (Ciucu's Definition 3.3).
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.ciucuWeight`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#ciucu-weight).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.ciucuWeight`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#ciucu-weight).
 
 ## The Aztec dragon graph
 
@@ -74,7 +74,7 @@ has weight $\mathrm{wt}_A(c, d) = 1$ under Ciucu's periodic weight. It is the sp
 the Aztec diamond graph $AD_{2n}$ obtained by deleting the edges of weight $0$; Ciucu's (7.1)
 shows that its perfect matchings are equinumerous with the tilings of the Aztec dragon $R_n$.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.dragonGraph`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#dragon-graph).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.dragonGraph`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#dragon-graph).
 
 ## Propp's Aztec dragon count
 
@@ -84,7 +84,7 @@ the edges of weight $1$ under Ciucu's periodic weight $\mathrm{wt}_A$) has exact
 perfect matchings. This is Propp's Problem 15 in the form of Ciucu's (7.1) and Theorem 7.1 at
 $a = 1$.
 
-Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.aztecDragonCount`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-dragon-count).
+Formalized by `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.aztecDragonCount`, a definition declared in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-dragon-count).
 
 ## Perfect matchings of the Aztec dragon graph (Ciucu, Wieland)
 
@@ -102,7 +102,7 @@ matchings with the tilings of the Aztec dragon $R_n$, that $R_n$ has $2^{n(n+1)}
 
 - J. Propp, Twenty open problems in enumeration of matchings (1998), arXiv:math/9801060, Problem 15; resolution: M. Ciucu, Perfect matchings and perfect powers, J. Algebraic Combin. 17 (2003), 335-375, arXiv:math/0501521, Section 7 (The Aztec dragon): (7.1) M(R_n) = M(AD_2n; wt_A) for the displayed 4 × 4 matrix A; Theorem 7.1, M(AD_2n; wt_B) = (1 + a²)^(n(n+1)), where B at a = 1 is A; Corollary 7.2, T(R_n) = 2^(n(n+1)); Ciucu calls it an ex-conjecture of Propp first proved by B. Wieland (unpublished; Propp's progress report arXiv:math/9904150, Problem 15: 'Ben Wieland solved this problem'), https://arxiv.org/abs/math/0501521.
 
-Stated but not proved: `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.aztecDragonCount_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-dragon-count-holds).
+Stated but not proved: `MathlibExt.Combinatorics.AztecDragonPowerOfTwoAMR122Problem0015Wanted.aztecDragonCount_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/AztecDragonPowerOfTwoAMR122Problem0015Wanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html#aztec-dragon-count-holds).
 
 ## Depends on
 
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Aztec dragon tilings](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/aztec-dragon-tilings)

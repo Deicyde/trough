@@ -8,15 +8,16 @@ proof: formalized
 
 # 100.10 Reduced algebraic stacks
 
-Section 100.10 of the Stacks Project, [Tag 0508](https://stacks.math.columbia.edu/tag/0508). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 100.10 of the Stacks Project, [Tag 0508](https://stacks.math.columbia.edu/tag/0508). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0509, a lemma
 
 [Tag 0509](https://stacks.math.columbia.edu/tag/0509) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.eq_of_isReducedStack_of_range_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstack.lean#L89). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.Stack.eq_of_isReducedStack_of_range_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstack.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstack.lean#L91). The attribute's comment: “uniqueness”.
 
-> **The uniqueness assertion of Stacks 0509.** Two reduced closed substacks of an algebraic stack `𝒳` over `S`
+> **The uniqueness assertion of Stacks 0509.** Two reduced closed substacks
+> of an algebraic stack `𝒳` over `S`
 > with the same set of points are equal: each is contained in the other by
 > `AlgebraicGeometry.Stack.le_of_isReducedStack_of_range_pointsMap_subset`.
 
@@ -34,7 +35,7 @@ theorem eq_of_isReducedStack_of_range_pointsMap_eq {𝒳 : AlgebraicStacks.{u, w
     P = Q
 ```
 
-**`AlgebraicGeometry.Stack.existsUnique_reducedClosedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstackExistence.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstackExistence.lean#L520).
+**`AlgebraicGeometry.Stack.existsUnique_reducedClosedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstackExistence.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedClosedSubstackExistence.lean#L520).
 
 > Let `𝒳` be an algebraic stack over `S` and let `T` be a closed subset of its space of points
 > `|𝒳|`. There exists a unique closed substack `𝒵 ⊆ 𝒳` such that (a) `|𝒵| = T` and (b) `𝒵` is
@@ -59,7 +60,7 @@ theorem existsUnique_reducedClosedSubstack :
 
 [Tag 050A](https://stacks.math.columbia.edu/tag/050A) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.eq_top_of_isClosedSubstack_of_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackClosedSubstack.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackClosedSubstack.lean#L221).
+**`AlgebraicGeometry.Stack.eq_top_of_isClosedSubstack_of_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackClosedSubstack.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackClosedSubstack.lean#L223).
 
 > **Stacks 050A.** Let `𝒳` be an algebraic stack over `S` and let `P` cut out a closed substack
 > of `𝒳`. If `𝒳` is reduced and the inclusion of the substack is surjective on points, then the
@@ -84,7 +85,7 @@ theorem eq_top_of_isClosedSubstack_of_isReducedStack {𝒳 : AlgebraicStacks.{u,
 
 [Tag 050B](https://stacks.math.columbia.edu/tag/050B) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.factorsThroughSubstack_iff_range_pointsMap_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackFactorization.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackFactorization.lean#L73).
+**`AlgebraicGeometry.Stack.factorsThroughSubstack_iff_range_pointsMap_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackFactorization.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedStackFactorization.lean#L73).
 
 > Let `𝒳` and `𝒴` be algebraic stacks over `S`, let `P` cut out a closed
 > substack of `𝒳` and let `𝒴` be reduced. A 1-morphism `f : 𝒴 ⟶ 𝒳` factors through the substack
@@ -106,7 +107,7 @@ theorem factorsThroughSubstack_iff_range_pointsMap_subset
 
 [Tag 050C](https://stacks.math.columbia.edu/tag/050C) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsAlgebraicStackStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L94). The attribute's comment: “algebraic stack structure on a closed set of points”.
+**`AlgebraicGeometry.Stack.IsAlgebraicStackStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L94). The attribute's comment: “algebraic stack structure on a closed set of points”.
 
 > **Stacks 050C, an algebraic stack structure on a closed set of points.** Let `𝒳` be an
 > algebraic stack over `S` and let `Z` be a set of points of `𝒳`. An *algebraic stack structure* on
@@ -119,7 +120,7 @@ def IsAlgebraicStackStructure {𝒳 : AlgebraicStacks.{u, w} B S hS}
     (Z : Set (AlgebraicStacks.points B S hS 𝒳)) (P : ObjectProperty 𝒳.val.val.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsReducedInducedStackStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L131). The attribute's comment: “the reduced induced algebraic stack structure”.
+**`AlgebraicGeometry.Stack.IsReducedInducedStackStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L131). The attribute's comment: “the reduced induced algebraic stack structure”.
 
 > **Stacks 050C, the reduced induced algebraic stack structure.** The *reduced induced
 > algebraic stack structure* on a set `Z` of points of `𝒳` is the algebraic stack structure on `Z`
@@ -132,7 +133,7 @@ def IsReducedInducedStackStructure {𝒳 : AlgebraicStacks.{u, w} B S hS}
     (Z : Set (AlgebraicStacks.points B S hS 𝒳)) (P : ObjectProperty 𝒳.val.val.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsReducedInducedStackStructure.unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L159). The attribute's comment: “uniqueness of the reduced induced structure”.
+**`AlgebraicGeometry.Stack.IsReducedInducedStackStructure.unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L159). The attribute's comment: “uniqueness of the reduced induced structure”.
 
 > **Stacks 050C, uniqueness of the reduced induced structure.** Two reduced induced algebraic
 > stack structures on the same set of points are equal. This is the uniqueness half of
@@ -146,7 +147,7 @@ theorem IsReducedInducedStackStructure.unique {𝒳 : AlgebraicStacks.{u, w} B S
     P = Q
 ```
 
-**`AlgebraicGeometry.Stack.IsReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L171). The attribute's comment: “the reduction”.
+**`AlgebraicGeometry.Stack.IsReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Reduction.lean#L171). The attribute's comment: “the reduction”.
 
 > **Stacks 050C, the reduction.** The *reduction* `𝒳_red` of an algebraic stack `𝒳` over `S` is
 > the reduced induced algebraic stack structure on the whole of its space of points. It is unique,
@@ -160,7 +161,7 @@ def IsReduction {𝒳 : AlgebraicStacks.{u, w} B S hS} (P : ObjectProperty 𝒳.
 
 [Tag 06FK](https://stacks.math.columbia.edu/tag/06FK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_reducedInducedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedInducedSubstackLocallyClosed.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedInducedSubstackLocallyClosed.lean#L123). The attribute's comment: “a locally closed T in |X|: the open substack U with |U| = |X| minus the boundary of T, the reduced induced closed substack Z of U on the points of T (Stacks 050C), the immersion Z -> U -> X, Z reduced, and |Z| = T in |X|”.
+**`AlgebraicGeometry.Stack.exists_reducedInducedSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedInducedSubstackLocallyClosed.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedInducedSubstackLocallyClosed.lean#L123). The attribute's comment: “a locally closed T in |X|: the open substack U with |U| = |X| minus the boundary of T, the reduced induced closed substack Z of U on the points of T (Stacks 050C), the immersion Z -> U -> X, Z reduced, and |Z| = T in |X|”.
 
 > **The reduced induced substack structure on a locally closed set of points.**
 > Let `𝒳` be an algebraic stack over `S` and let `T` be a locally closed subset of its space of
@@ -203,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.10, Tag 0508](https://stacks.math.columbia.edu/tag/0508)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

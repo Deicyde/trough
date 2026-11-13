@@ -7,7 +7,7 @@ statement: formalized
 
 # Combinations without specified separations
 
-35 results, 21 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html).
+35 results, 21 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html).
 
 ## Restricted combinations
 
@@ -20,7 +20,7 @@ whether $0 \in Q$ makes no difference.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedCombinations`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combinations).
+Formalized by `MetaMathlibExt.restrictedCombinations`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combinations).
 
 ## Number of restricted combinations
 
@@ -32,7 +32,7 @@ two distinct elements differ by an element of $Q$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedCombinationCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count).
+Formalized by `MetaMathlibExt.restrictedCombinationCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count).
 
 ## Number of subsets avoiding a set of differences
 
@@ -45,7 +45,7 @@ $S^Q_{n,k}$ is the number of such subsets with $k$ elements.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedCombinationTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total).
+Formalized by `MetaMathlibExt.restrictedCombinationTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total).
 
 ## Restricted combinations with no forbidden differences
 
@@ -57,7 +57,7 @@ elements differ by an element of the empty set is the binomial coefficient $\bin
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedCombinationCount_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-empty).
+Formalized by `MetaMathlibExt.restrictedCombinationCount_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-empty).
 
 ## Subsets of $\{1, 2, 3, 4\}$ with no two consecutive elements
 
@@ -72,7 +72,7 @@ $m$-th Fibonacci number ($F_1 = F_2 = 1$): $F_6 = 8$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1 (`S^{1}_n = F_{n+2}`).
 
-Formalized by `MetaMathlibExt.restrictedCombinationTotal_singleton_one_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-singleton-o).
+Formalized by `MetaMathlibExt.restrictedCombinationTotal_singleton_one_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-singleton-o).
 
 ## Forbidden differences 1 and q and windowed adjacent-swap permutations
 
@@ -93,7 +93,7 @@ elements differing by $1$ or $2$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_one_q_eq_card_windowedAdjacentSwapPerms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-one-q-eq-ca).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_one_q_eq_card_windowedAdjacentSwapPerms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-one-q-eq-ca).
 
 ## Generating function for subsets avoiding differences 1 and 4
 
@@ -111,7 +111,7 @@ polynomials, with the denominator cleared.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_four_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-four-ge).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_four_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-four-ge).
 
 ## Generating function for subsets avoiding differences 1 and 5
 
@@ -130,7 +130,7 @@ polynomials, with the denominator cleared.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_five_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-five-ge).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_five_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-five-ge).
 
 ## Generating function for subsets avoiding differences 1 and 6
 
@@ -151,7 +151,7 @@ of degree $17$ by a polynomial of degree $18$, with the denominator cleared.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_six_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-six-gen).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_one_six_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-one-six-gen).
 
 ## Forbidden differences m, 2m, …, jm and strongly restricted permutations
 
@@ -165,7 +165,7 @@ every $i$ and $\pi$ has exactly $k$ excedances (points $i$ with $\pi(i) > i$).
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_multiples_eq_card_strongPerms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-multiples-e).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_multiples_eq_card_strongPerms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-multiples-e).
 
 ## The $(1,t)$-bonacci polynomials
 
@@ -182,7 +182,7 @@ $f^{(t)}_n(x) = 0$ for $n < 0$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 3.2.
 
-Formalized by `MetaMathlibExt.oneTBonacciPolynomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial).
+Formalized by `MetaMathlibExt.oneTBonacciPolynomial`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial).
 
 ## Initial value of the $(1,t)$-bonacci polynomials
 
@@ -193,7 +193,7 @@ $(1,s+1)$-bonacci polynomial of index $0$ is $f^{(s+1)}_0(x) = 1$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 3.2.
 
-Formalized by `MetaMathlibExt.oneTBonacciPolynomial_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-zero).
+Formalized by `MetaMathlibExt.oneTBonacciPolynomial_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-zero).
 
 ## Recurrence for the $(1,t)$-bonacci polynomials
 
@@ -205,7 +205,7 @@ $f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x) + x \, f^{(s+1)}_{n-s}(x)$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 3.2.
 
-Formalized by `MetaMathlibExt.oneTBonacciPolynomial_succ_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-succ-of-le).
+Formalized by `MetaMathlibExt.oneTBonacciPolynomial_succ_of_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-succ-of-le).
 
 ## The $(1,t)$-bonacci polynomials below the recurrence range
 
@@ -217,7 +217,7 @@ $f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x)$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 3.2.
 
-Formalized by `MetaMathlibExt.oneTBonacciPolynomial_succ_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-succ-of-lt).
+Formalized by `MetaMathlibExt.oneTBonacciPolynomial_succ_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#one-tbonacci-polynomial-succ-of-lt).
 
 ## Counting strongly restricted permutations with displacements $-m$, $0$, $jm$
 
@@ -236,7 +236,7 @@ $(1,t)$-bonacci numbers $f^{(t)}_n$ satisfy $f^{(j+1)}_n = F_j(n+1)$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Corollary 14.
 
-Stated but not proved: `MetaMathlibExt.card_strongPerms_multiples_eq_fibonacciP` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#card-strong-perms-multiples-eq-fibonacci).
+Stated but not proved: `MetaMathlibExt.card_strongPerms_multiples_eq_fibonacciP` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#card-strong-perms-multiples-eq-fibonacci).
 
 ## Excedances of strongly restricted permutations with displacements $-m$, $0$, $jm$
 
@@ -252,7 +252,7 @@ coefficient of $x^k$ in $f_i(x)^{m-r} f_{i+1}(x)^r$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Corollary 14.
 
-Stated but not proved: `MetaMathlibExt.card_strongPerms_multiples_excedance_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#card-strong-perms-multiples-excedance-eq).
+Stated but not proved: `MetaMathlibExt.card_strongPerms_multiples_excedance_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#card-strong-perms-multiples-excedance-eq).
 
 ## Combinations avoiding an interval of differences with one value removed
 
@@ -266,7 +266,7 @@ either $1$ or of the form $q + 1 + jp$ for some integer $j \ge 0$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_Icc_erase_eq_card_compositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-icc-erase-e).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_Icc_erase_eq_card_compositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-icc-erase-e).
 
 ## Well-based sets
 
@@ -281,7 +281,7 @@ of positive integers the condition forces $1 \in Q$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 5.1.
 
-Formalized by `MetaMathlibExt.IsWellBased`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based).
+Formalized by `MetaMathlibExt.IsWellBased`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based).
 
 ## The set $\{1, \dots, q\}$ is well based
 
@@ -292,7 +292,7 @@ $\{1, 2, \dots, q\}$ is well based.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 5.1.
 
-Formalized by `MetaMathlibExt.isWellBased_Icc`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based-icc).
+Formalized by `MetaMathlibExt.isWellBased_Icc`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based-icc).
 
 ## The set $\{1, 3, 4\}$ is not well based
 
@@ -303,7 +303,7 @@ $4 = 2 + 2$ neither part lies in the set.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 5.1.
 
-Formalized by `MetaMathlibExt.not_isWellBased_one_three_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#not-is-well-based-one-three-four).
+Formalized by `MetaMathlibExt.not_isWellBased_one_three_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#not-is-well-based-one-three-four).
 
 ## Shift set of a binary subword
 
@@ -317,7 +317,7 @@ $l - j$ bits.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 21.
 
-Formalized by `MetaMathlibExt.subwordShiftSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#subword-shift-set).
+Formalized by `MetaMathlibExt.subwordShiftSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#subword-shift-set).
 
 ## Shift set of the subword 1010
 
@@ -328,7 +328,7 @@ The shift set of the binary subword $1010$ of length $4$
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 5.1 (OEIS list after Theorem 21).
 
-Formalized by `MetaMathlibExt.subwordShiftSet_1010`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#subword-shift-set-1010).
+Formalized by `MetaMathlibExt.subwordShiftSet_1010`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#subword-shift-set-1010).
 
 ## Subword shift sets are well based
 
@@ -348,7 +348,7 @@ condition $q = l - 1$ of Theorem 21 is not needed.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.isWellBased_subwordShiftSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based-subword-shift-set).
+Stated but not proved: `MetaMathlibExt.isWellBased_subwordShiftSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#is-well-based-subword-shift-set).
 
 ## Bivariate generating function for well-based forbidden differences
 
@@ -367,7 +367,7 @@ is included.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Corollary 24.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombination_bivariate_genFun_of_isWellBased` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-bivariate-gen-fun).
+Stated but not proved: `MetaMathlibExt.restrictedCombination_bivariate_genFun_of_isWellBased` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-bivariate-gen-fun).
 
 ## Restricted-overlap tilings
 
@@ -384,7 +384,7 @@ $j \in Q$ (no comb's leftmost cell is covered by a non-leftmost tooth of another
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedOverlapTilings`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tilings).
+Formalized by `MetaMathlibExt.restrictedOverlapTilings`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tilings).
 
 ## Number of restricted-overlap tilings
 
@@ -396,7 +396,7 @@ squares and $k$ $Q$-combs.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedOverlapTilingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count).
+Formalized by `MetaMathlibExt.restrictedOverlapTilingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count).
 
 ## Two dominoes on a 4-board
 
@@ -408,7 +408,7 @@ $1$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedOverlapTilingCount_singleton_one_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count-singleto).
+Formalized by `MetaMathlibExt.restrictedOverlapTilingCount_singleton_one_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count-singleto).
 
 ## Two interlocking $\{2\}$-combs on a 4-board
 
@@ -422,7 +422,7 @@ the unique tiling the two combs start in cells $0$ and $1$ and interlock.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.restrictedOverlapTilingCount_singleton_two_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count-singleto-2).
+Formalized by `MetaMathlibExt.restrictedOverlapTilingCount_singleton_two_four_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-overlap-tiling-count-singleto-2).
 
 ## Restricted combinations and restricted-overlap tilings
 
@@ -438,7 +438,7 @@ $S^Q_n = \sum_{j=0}^{n+q} B^Q_{n+q,j}$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_eq_restrictedOverlapTilingCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-eq-restrict).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationCount_eq_restrictedOverlapTilingCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-count-eq-restrict).
 
 ## Generating functions of restricted combinations and restricted-overlap tilings
 
@@ -460,7 +460,7 @@ cleared.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombination_genFun_eq_tiling_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-gen-fun-eq-tiling).
+Stated but not proved: `MetaMathlibExt.restrictedCombination_genFun_eq_tiling_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-gen-fun-eq-tiling).
 
 ## Fence tilings and strongly restricted permutations
 
@@ -483,7 +483,7 @@ The lemma is due to Edwards and Allen (2015); the fences are $(\tfrac12, g)$-fen
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.fenceTiling_strongPerm_bijection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#fence-tiling-strong-perm-bijection).
+Stated but not proved: `MetaMathlibExt.fenceTiling_strongPerm_bijection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#fence-tiling-strong-perm-bijection).
 
 ## Metatiles with at most two combs
 
@@ -503,7 +503,7 @@ condition says that every metatile of every such tiling contains at most two com
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1 (metatiles) and Lemma 15.
 
-Formalized by `MetaMathlibExt.MetatilesHaveAtMostTwoCombs`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#metatiles-have-at-most-two-combs).
+Formalized by `MetaMathlibExt.MetatilesHaveAtMostTwoCombs`, a definition declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#metatiles-have-at-most-two-combs).
 
 ## For $Q = \emptyset$, metatiles have at most two combs
 
@@ -517,7 +517,7 @@ single tile.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.metatilesHaveAtMostTwoCombs_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#metatiles-have-at-most-two-combs-empty).
+Formalized by `MetaMathlibExt.metatilesHaveAtMostTwoCombs_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#metatiles-have-at-most-two-combs-empty).
 
 ## For $Q = \{3\}$, a metatile can contain three combs
 
@@ -532,7 +532,7 @@ a single metatile with three combs.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Section 1.
 
-Formalized by `MetaMathlibExt.not_metatilesHaveAtMostTwoCombs_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#not-metatiles-have-at-most-two-combs-thr).
+Formalized by `MetaMathlibExt.not_metatilesHaveAtMostTwoCombs_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#not-metatiles-have-at-most-two-combs-thr).
 
 ## Restricted combinations counted by compositions
 
@@ -550,7 +550,7 @@ $p \in \{1, \dots, q\} \setminus Q$.
 
 - Michael A. Allen, *Connections Between Combinations Without Specified Separations and Strongly Restricted Permutations, Compositions, and Bit Strings*, Journal of Integer Sequences 28 (2025), Article 25.3.7, Lemma 15.
 
-Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_eq_card_compositions_iff_metatiles` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-eq-card-com).
+Stated but not proved: `MetaMathlibExt.restrictedCombinationTotal_eq_card_compositions_iff_metatiles` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RestrictedCombinationsWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html#restricted-combination-total-eq-card-com).
 
 ## Depends on
 
@@ -559,4 +559,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Combinations without specified separations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/elementary-enumeration/combinations-without-specified-separations)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of practical and polygonal numbers
 
-12 results, 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html).
+12 results, 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html).
 
 ## Every positive integer is a practical number plus a triangular number
 
@@ -19,7 +19,7 @@ $n = q + k(k+1)/2$; the case $k = 0$, where the triangular number is $0$, is all
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Theorem 1 (`jis-2024-24.5.1-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.exists_practical_add_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-practical-add-triangular).
+Stated but not proved: `MetaMathlibExt.exists_practical_add_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-practical-add-triangular).
 
 ## Large integers as a practical number plus two polygonal numbers
 
@@ -33,7 +33,7 @@ $x, y$ natural numbers.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Theorem 2 (`jis-2024-24.5.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.eventually_practical_add_two_polygonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#eventually-practical-add-two-polygonal).
+Stated but not proved: `MetaMathlibExt.eventually_practical_add_two_polygonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#eventually-practical-add-two-polygonal).
 
 ## Square roots modulo powers of two
 
@@ -44,7 +44,7 @@ a natural number $x$ with $1 \le x \le 2^m - 1$ and $x^2 \equiv 8n + 1 \pmod{2^{
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 3 (arXiv Lemma 3.1; `jis-2024-24.5.1-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.exists_sq_modEq_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-sq-mod-eq-eight-mul-add-one).
+Stated but not proved: `MetaMathlibExt.exists_sq_modEq_eight_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-sq-mod-eq-eight-mul-add-one).
 
 ## Products of a practical number with small factors
 
@@ -56,7 +56,7 @@ with $1 \le n \le \sigma(m) + 1$, the product $mn$ is a practical number.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 4 (arXiv Lemma 3.2; `jis-2024-24.5.1-lem-4`), quoting Margenstern.
 
-Stated but not proved: `MetaMathlibExt.isPracticalNumber_mul_of_le_sigma_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#is-practical-number-mul-of-le-sigma-add).
+Stated but not proved: `MetaMathlibExt.isPracticalNumber_mul_of_le_sigma_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#is-practical-number-mul-of-le-sigma-add).
 
 ## Odd squares and triangular numbers
 
@@ -68,7 +68,7 @@ $(x^2 - 1)/8 = p_3(k)$, where $p_3(k) = k(k+1)/2$ is the $k$-th $3$-gonal number
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 5 (arXiv Lemma 3.3; `jis-2024-24.5.1-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.sq_sub_one_div_eight_eq_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#sq-sub-one-div-eight-eq-triangular).
+Stated but not proved: `MetaMathlibExt.sq_sub_one_div_eight_eq_triangular` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#sq-sub-one-div-eight-eq-triangular).
 
 ## Sums of two polygonal numbers modulo an odd prime
 
@@ -81,7 +81,7 @@ $P_s(x) + P_s(y) \equiv n \pmod{p}$.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 6 (arXiv Lemma 4.1; `jis-2024-24.5.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.exists_polygonal_add_polygonal_modEq_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-polygonal-add-polygonal-mod-eq-pr).
+Stated but not proved: `MetaMathlibExt.exists_polygonal_add_polygonal_modEq_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-polygonal-add-polygonal-mod-eq-pr).
 
 ## Parity of sums of two polygonal numbers
 
@@ -95,7 +95,7 @@ $x_1 \equiv x \pmod{4}$ and $y_1 \equiv y \pmod{4}$.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 7 (arXiv Lemma 4.2; `jis-2024-24.5.1-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.exists_polygonal_add_polygonal_modEq_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-polygonal-add-polygonal-mod-eq-tw).
+Stated but not proved: `MetaMathlibExt.exists_polygonal_add_polygonal_modEq_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-polygonal-add-polygonal-mod-eq-tw).
 
 ## Sums of two squares modulo prime powers
 
@@ -107,7 +107,7 @@ $x^2 + y^2 \equiv n \pmod{p^k}$ and $p \nmid y$.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 8 (arXiv Lemma 4.3; `jis-2024-24.5.1-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.exists_sq_add_sq_modEq_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-sq-add-sq-mod-eq-prime-pow).
+Stated but not proved: `MetaMathlibExt.exists_sq_add_sq_modEq_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-sq-add-sq-mod-eq-prime-pow).
 
 ## Sums of two polygonal numbers modulo prime powers
 
@@ -124,7 +124,7 @@ choice made in its proof via Lemma 8 (arXiv Lemma 4.3).
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 9 (arXiv Lemma 4.4; `jis-2024-24.5.1-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_polygonal_add_polygonal_modEq_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-prime-polygonal-add-polygonal-mod).
+Stated but not proved: `MetaMathlibExt.exists_prime_polygonal_add_polygonal_modEq_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-prime-polygonal-add-polygonal-mod).
 
 ## Quadratic upper bound for polygonal numbers
 
@@ -140,7 +140,7 @@ Lemma 4.4), and for real $x$; here $c$ is an arbitrary natural number and $x$ is
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 10 (arXiv Lemma 4.5; `jis-2024-24.5.1-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.exists_two_polygonal_two_mul_le_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-two-polygonal-two-mul-le-mul-sq).
+Stated but not proved: `MetaMathlibExt.exists_two_polygonal_two_mul_le_mul_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#exists-two-polygonal-two-mul-le-mul-sq).
 
 ## Practical numbers divisible by neither 3 nor 4
 
@@ -151,7 +151,7 @@ divisible by neither $3$ nor $4$, then $q = 1$ or $q = 2$.
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Lemma 11 (arXiv Lemma 4.6; `jis-2024-24.5.1-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.isPracticalNumber_eq_one_or_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#is-practical-number-eq-one-or-two).
+Stated but not proved: `MetaMathlibExt.isPracticalNumber_eq_one_or_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#is-practical-number-eq-one-or-two).
 
 ## Exceptions to sums of a practical number and polygonal numbers
 
@@ -166,7 +166,7 @@ be written as $n = q + p_t(x) + p_t(y)$ with $q$ a practical number and integers
 
 - Sai Teja Somu and Duc Van Khanh Tran, *On Sums of Practical Numbers and Polygonal Numbers*, Journal of Integer Sequences 27 (2024), Article 24.5.1, Proposition 12 (arXiv Proposition 4.7; `jis-2024-24.5.1-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.practical_add_polygonal_exceptions` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#practical-add-polygonal-exceptions).
+Stated but not proved: `MetaMathlibExt.practical_add_polygonal_exceptions` is written with `theorem_wanted` in [WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PracticalPolygonalSumsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html#practical-add-polygonal-exceptions).
 
 ## Depends on
 
@@ -175,4 +175,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of practical and polygonal numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/additive-number-theory/sums-of-practical-and-polygonal-numbers)

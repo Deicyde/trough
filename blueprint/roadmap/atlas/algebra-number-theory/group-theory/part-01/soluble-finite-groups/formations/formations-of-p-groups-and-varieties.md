@@ -7,7 +7,7 @@ statement: formalized
 
 # Formations of p-groups and varieties
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html).
 
 ## Classes of groups
 
@@ -15,7 +15,7 @@ A class of groups is a predicate on groups: it assigns to every group
 $G$ (in the lowest universe of types) a proposition, read as "$G$ belongs to the class". No
 closure under isomorphism is required.
 
-Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.GroupClass`, an abbreviation declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#group-class).
+Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.GroupClass`, an abbreviation declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#group-class).
 
 ## Formations of finite groups
 
@@ -26,7 +26,7 @@ subgroup of $G$, then $G/N \in \mathfrak F$), and $\mathfrak F$ is closed under 
 if $G$ is a finite group with normal subgroups $M$ and $N$ such that $G/M \in \mathfrak F$ and
 $G/N \in \mathfrak F$, then $G/(M \cap N) \in \mathfrak F$.
 
-Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.IsFormation`, a structure declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#is-formation).
+Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.IsFormation`, a structure declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#is-formation).
 
 ## Groups satisfying a set of laws
 
@@ -35,7 +35,7 @@ many generators $x_0, x_1, x_2, \dots$. A group $G$ satisfies the laws in $W$ wh
 homomorphism from this free group to $G$ sends every $w \in W$ to $1$. The groups satisfying $W$
 form the variety defined by $W$, and every variety arises this way.
 
-Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.SatisfiesLaws`, a definition declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#satisfies-laws).
+Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.SatisfiesLaws`, a definition declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#satisfies-laws).
 
 ## Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups)
 
@@ -47,7 +47,7 @@ $\mathfrak F$ if and only if it satisfies every law in $W$. In other words, ever
 $\mathfrak F$ equals $\mathfrak N_p \cap \mathfrak M$ for the variety $\mathfrak M$ defined by
 $W$.
 
-Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.subformationOfPGroupsIsVarietal`, a definition declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#subformation-of-pgroups-is-varietal).
+Formalized by `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.subformationOfPGroupsIsVarietal`, a definition declared in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#subformation-of-pgroups-is-varietal).
 
 ## Kourovka Problem 11.21 has a negative answer
 
@@ -70,7 +70,7 @@ countably many varieties of nilpotent groups of class at most $6$ (all finitely 
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.21 (A. F. Vasil'yev); resolution: A. N. Krasil'nikov, letter of 17 July 1998, using A. N. Zubkov, Siberian Math. J. 29, no. 3 (1988), 491-494, Kourovka Archive, Problem 11.21: "No, it is not true"; formations of finite `p`-groups correspond to varieties of pro-`p` groups, there are continuously many varieties of nilpotent pro-`p` groups of class at most 6 (Zubkov) but only countably many varieties of nilpotent groups of class at most 6, https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.subformationOfPGroupsIsVarietal_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#subformation-of-pgroups-is-varietal-refu).
+Stated but not proved: `MathlibExt.GroupTheory.FormationVarietyPGroupsKourovka11Problem21Wanted.subformationOfPGroupsIsVarietal_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FormationVarietyPGroupsKourovka11Problem21Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html#subformation-of-pgroups-is-varietal-refu).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Formations of p-groups and varieties](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/soluble-finite-groups/formations/formations-of-p-groups-and-varieties)

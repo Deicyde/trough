@@ -8,7 +8,7 @@ proof: formalized
 
 # Ekeland variational principle
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html).
 
 ## Ekeland variational principle without a nonemptiness assumption
 
@@ -21,7 +21,7 @@ for every $y \ne x_\varepsilon$.
 
 The space $X$ is not separately assumed nonempty, since the point $x_0$ already lies in it.
 
-Formalized by `MetaMathlibExt.ekeland_variational_principle_general`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#ekeland-variational-principle-general).
+Formalized by `MetaMathlibExt.ekeland_variational_principle_general`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#ekeland-variational-principle-general).
 
 ## Ekeland variational principle
 
@@ -35,7 +35,7 @@ $f(x_\varepsilon) < f(y) + \varepsilon\, d(x_\varepsilon, y)$ for every $y \ne x
 
 - I. Ekeland, J. Math. Anal. Appl. 47 (1974), 324-353, DOI 10.1016/0022-247X(74)90025-0. It follows from `ekeland_variational_principle_general`; the instance `[Nonempty X]` is unused and keeps the source's shape.
 
-Formalized by `MetaMathlibExt.ekeland_variational_principle`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#ekeland-variational-principle).
+Formalized by `MetaMathlibExt.ekeland_variational_principle`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#ekeland-variational-principle).
 
 ## Caristi fixed-point theorem
 
@@ -48,7 +48,7 @@ point: there is $x \in X$ with $T x = x$.
 
 - J. Caristi, Trans. Amer. Math. Soc. 215 (1976), 241-251, DOI 10.1090/S0002-9947-1976-0394329-4.
 
-Formalized by `MetaMathlibExt.caristi_fixedPoint`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#caristi-fixed-point).
+Formalized by `MetaMathlibExt.caristi_fixedPoint`, a theorem declared in [MathlibExt/Analysis/Variational/EkelandCaristi.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Variational/EkelandCaristi.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html#caristi-fixed-point).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ekeland variational principle](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/convex-analysis-and-variations/ekeland-variational-principle)

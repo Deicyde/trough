@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.4 Specialization of cycles
 
-Section 62.4 of the Stacks Project, [Tag 0H4H](https://stacks.math.columbia.edu/tag/0H4H). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.4 of the Stacks Project, [Tag 0H4H](https://stacks.math.columbia.edu/tag/0H4H). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H4H, the section
 
 [Tag 0H4H](https://stacks.math.columbia.edu/tag/0H4H) in the Stacks Project.
 
-**`Stacks.Chow.specializationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Specialization.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Specialization.lean#L327). The attribute's comment: “the specialization map sp\_\{X/R}”.
+**`Stacks.Chow.specializationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Specialization.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Specialization.lean#L327). The attribute's comment: “the specialization map sp\_\{X/R}”.
 
 > **Stacks 0H4H.** The specialization map `sp_{X/R} : Z_r(X_K) ⟶ Z_r(X_κ)` of a scheme locally
 > of finite type over a discrete valuation ring `R`, from the cycles on the generic fibre to the
@@ -33,7 +33,7 @@ def specializationMap (R : Type u) [CommRing R] [IsDomain R] [IsDiscreteValuatio
 
 [Tag 0H4I](https://stacks.math.columbia.edu/tag/0H4I) in the Stacks Project.
 
-**`Stacks.Chow.topologicalKrullDim_supp_fiberModule_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean#L595). The attribute's comment: “the dimension bound on the special fibre”.
+**`Stacks.Chow.topologicalKrullDim_supp_fiberModule_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean#L595). The attribute's comment: “the dimension bound on the special fibre”.
 
 > **Stacks Project, Tag 0H4I.** Let `R` be a discrete valuation ring with fraction field `K`
 > and residue field `kappa`, let `X` be a scheme locally of finite type over `R`, let `r >= 0` and
@@ -51,7 +51,7 @@ theorem topologicalKrullDim_supp_fiberModule_closedPoint_le
       (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.specializationCycle_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean, line 613](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean#L613). The attribute's comment: “the specialization formula”.
+**`Stacks.Chow.specializationCycle_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleSpecialization/SpecializationFormula.lean#L613). The attribute's comment: “the specialization formula”.
 
 > **Stacks Project, Tag 0H4I.** Let `R` be a discrete valuation ring with fraction field `K`
 > and residue field `kappa`, let `X` be a scheme locally of finite type over `R`, let `r >= 0` and
@@ -79,7 +79,7 @@ theorem specializationCycle_familyAssociatedToModule
 
 [Tag 0H4J](https://stacks.math.columbia.edu/tag/0H4J) in the Stacks Project.
 
-**`Stacks.Chow.topologicalKrullDim_supp_fiberClosedSubscheme_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L181). The attribute's comment: “the dimension bound on the special fibre, for the support of i\_* 𝒪\_Z”.
+**`Stacks.Chow.topologicalKrullDim_supp_fiberClosedSubscheme_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L185). The attribute's comment: “the dimension bound on the special fibre, for the support of i\_* 𝒪\_Z”.
 
 > **Stacks Project, Lemma 0H4J**, the dimension clause for the support of `i_* 𝒪_Z`. Let `R`
 > be a discrete valuation ring with fraction field `K` and residue field `κ`, let `Y` be locally
@@ -104,7 +104,7 @@ theorem topologicalKrullDim_supp_fiberClosedSubscheme_closedPoint_le {r : ℕ} {
         (structureSheafPushforward i))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.specializationCycle_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L206). The attribute's comment: “the specialization formula for the family of i\_* 𝒪\_Z”.
+**`Stacks.Chow.specializationCycle_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L210). The attribute's comment: “the specialization formula for the family of i\_* 𝒪\_Z”.
 
 > **Stacks Project, Lemma 0H4J**, the specialization formula for the family of `i_* 𝒪_Z`. Let
 > `R` be a discrete valuation ring with fraction field `K` and residue field `κ`, let `Y` be
@@ -136,7 +136,7 @@ theorem specializationCycle_familyAssociatedToClosedSubscheme {r : ℕ} {R : Typ
         (IsLocalRing.closedPoint R)
 ```
 
-**`Stacks.Chow.topologicalKrullDim_pullback_fiberClosedSubscheme_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L265). The attribute's comment: “the dimension bound on the special fibre”.
+**`Stacks.Chow.topologicalKrullDim_pullback_fiberClosedSubscheme_closedPoint_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L269). The attribute's comment: “the dimension bound on the special fibre”.
 
 > **Stacks Project, Lemma 0H4J.** Let `R` be a discrete valuation ring with fraction field `K`
 > and residue field `κ`, let `Y` be locally of finite type over `R`, let `r ≥ 0` and let `Z ⊆ Y` be
@@ -155,7 +155,7 @@ theorem topologicalKrullDim_pullback_fiberClosedSubscheme_closedPoint_le {r : �
       Scheme.{u}) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.specializationCycle_familyAssociatedToClosedSubscheme_of_genericFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L287). The attribute's comment: “the specialization formula”.
+**`Stacks.Chow.specializationCycle_familyAssociatedToClosedSubscheme_of_genericFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L291). The attribute's comment: “the specialization formula”.
 
 > **Stacks Project, Lemma 0H4J.** Let `R` be a discrete valuation ring with fraction field `K`
 > and residue field `κ`, let `Y` be locally of finite type over `R`, let `r ≥ 0` and let `Z ⊆ Y` be
@@ -185,7 +185,7 @@ theorem specializationCycle_familyAssociatedToClosedSubscheme_of_genericFibre {r
 
 [Tag 0H4K](https://stacks.math.columbia.edu/tag/0H4K) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeFiberCycleOfEq_comp_specializationCycleHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationBaseChange.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationBaseChange.lean#L645).
+**`Stacks.Chow.baseChangeFiberCycleOfEq_comp_specializationCycleHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationBaseChange.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationBaseChange.lean#L645).
 
 > **Stacks Project, Tag 0H4K.** Let `R'/R` be an extension of discrete valuation rings,
 > inducing a fraction field extension `K'/K` and a residue field extension `κ'/κ`, let `X` be
@@ -209,7 +209,7 @@ theorem baseChangeFiberCycleOfEq_comp_specializationCycleHom :
 
 [Tag 0H4L](https://stacks.math.columbia.edu/tag/0H4L) in the Stacks Project.
 
-**`Stacks.Chow.fiberCycleFlatPullback_comp_specializationCycleHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean#L188).
+**`Stacks.Chow.fiberCycleFlatPullback_comp_specializationCycleHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean#L188).
 
 > **Stacks Project, Lemma 0H4L.** Let `R` be a discrete valuation ring with fraction field `K`
 > and residue field `κ`, let `X` be a scheme locally of finite type over `R`, and let `p : X' ⟶ X`
@@ -234,7 +234,7 @@ theorem fiberCycleFlatPullback_comp_specializationCycleHom :
         (fiberCycleFlatPullback f fX' p hp e he (genericPoint (Spec (.of R))) r)
 ```
 
-**`Stacks.Chow.specializationCycle_baseChangedFiberCycleFlatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean#L289). The attribute's comment: “for the base change of the flat morphism to the spectrum of a discrete valuation ring over the base”.
+**`Stacks.Chow.specializationCycle_baseChangedFiberCycleFlatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationFlatPullback.lean#L289). The attribute's comment: “for the base change of the flat morphism to the spectrum of a discrete valuation ring over the base”.
 
 > **Stacks Project, Lemma 0H4L** for the base change of a flat morphism of the source to the
 > spectrum of a discrete valuation ring over the base. This is the shape in which the valuative
@@ -256,7 +256,7 @@ theorem specializationCycle_baseChangedFiberCycleFlatPullback {X S U : Scheme.{u
           (genericPoint (Spec (.of R))) r c)
 ```
 
-**`Stacks.Chow.specializationCycle_fiberCycleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean#L271). The attribute's comment: “open immersions”.
+**`Stacks.Chow.specializationCycle_fiberCycleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean#L271). The attribute's comment: “open immersions”.
 
 > The specialization map commutes with restriction to an open subscheme of the source: for
 > `j : U ⟶ X` an open immersion of schemes locally of finite type over a discrete valuation ring
@@ -278,7 +278,7 @@ theorem specializationCycle_fiberCycleRestrict {R : Type u} [CommRing R] [IsDoma
 
 [Tag 0H4M](https://stacks.math.columbia.edu/tag/0H4M) in the Stacks Project.
 
-**`Stacks.Chow.specializationCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L267). The attribute's comment: “specialization commutes with pushforward along a closed immersion”.
+**`Stacks.Chow.specializationCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L268). The attribute's comment: “specialization commutes with pushforward along a closed immersion”.
 
 > Specialization of cycles over a discrete valuation ring commutes with pushforward along a
 > closed immersion over that ring: pushing the specialization of a cycle on the generic fibre forward
@@ -293,7 +293,7 @@ theorem specializationCycle_properPushforwardFamily
         (fiberProperPushforward sX sY i hi (genericPoint (Spec (.of R))) r c)
 ```
 
-**`Stacks.Chow.specializationCycle_fiberProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean#L362). The attribute's comment: “the square of the specialization maps and the proper pushforwards commutes”.
+**`Stacks.Chow.specializationCycle_fiberProperPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean#L362). The attribute's comment: “the square of the specialization maps and the proper pushforwards commutes”.
 
 > **Stacks 0H4M.** Let `R` be a discrete valuation ring with fraction field `K` and residue
 > field `κ`, let `f : X ⟶ Y` be a proper morphism of schemes locally of finite type over `R` and
@@ -312,7 +312,7 @@ theorem specializationCycle_fiberProperPushforward (sX : X ⟶ Spec (.of R))
         (fiberProperPushforward sX sY f hf (genericPoint (Spec (.of R))) r c)
 ```
 
-**`Stacks.Chow.properPushforward_specializationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean#L412). The attribute's comment: “the square, read on the specialization map sp\_\{X/R} of Stacks 0H4H”.
+**`Stacks.Chow.properPushforward_specializationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationProperPushforward.lean#L412). The attribute's comment: “the square, read on the specialization map sp\_\{X/R} of Stacks 0H4H”.
 
 > **Stacks 0H4M**, read on the specialization map `sp_{X/R}` of Stacks 0H4H: the square
 > formed by `sp_{X/R}`, `sp_{Y/R}` and the proper pushforwards along the morphisms induced by `f`
@@ -337,4 +337,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.4, Tag 0H4H](https://stacks.math.columbia.edu/tag/0H4H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

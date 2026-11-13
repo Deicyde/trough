@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 37.28 Connected components of… to 37.45 Applications of Zariski's…
+# 37.28 Connected components of… to 37.47 Application to the…
 
 - [37.28 Connected components of fibres](37-28-connected-components-of-fibres.md)
 - [37.29 Connected components meeting a section](37-29-connected-components-meeting-a-section.md)
@@ -22,3 +22,5 @@ navigation: transparent
 - [37.43 Zariski's Main Theorem](37-43-zariskis-main-theorem.md)
 - [37.44 Applications of Zariski's Main Theorem, I](37-44-applications-of-zariskis-main-theorem-i.md)
 - [37.45 Applications of Zariski's Main Theorem, II](37-45-applications-of-zariskis-main-theorem-ii.md)
+- [37.46 Application to morphisms with connected fibres](37-46-application-to-morphisms-with-connected-fi.md)
+- [37.47 Application to the structure of finite type morphisms](37-47-application-to-the-structure-of-finite-typ.md)

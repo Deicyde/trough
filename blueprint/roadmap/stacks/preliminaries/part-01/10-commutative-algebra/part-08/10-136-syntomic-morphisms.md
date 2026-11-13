@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.136 Syntomic morphisms
 
-Section 10.136 of the Stacks Project, [Tag 00SK](https://stacks.math.columbia.edu/tag/00SK). 17 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.136 of the Stacks Project, [Tag 00SK](https://stacks.math.columbia.edu/tag/00SK). 17 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00SL, a definition
 
 [Tag 00SL](https://stacks.math.columbia.edu/tag/00SL) in the Stacks Project.
 
-**`Algebra.Syntomic`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Defs.lean#L70). The attribute's comment: “Stated for an `R`-algebra `S`, as Mathlib states `Algebra.Smooth`; for a ring map `f : R →+* S` it is `Algebra.Syntomic R S` at `f.toAlgebra`. The fibre ring is Mathlib's `Ideal.Fiber p S = κ(p) ⊗[R] S`, the source's `S ⊗_R κ(p)` with the factors exchanged so that the `κ(p)`-algebra structure is the one Mathlib puts on a tensor product. See the module docstring.”. References: EGA IV (19.3.6), “affine case”.
+**`Algebra.Syntomic`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Defs.lean#L70). The attribute's comment: “Stated for an `R`-algebra `S`, as Mathlib states `Algebra.Smooth`; for a ring map `f : R →+* S` it is `Algebra.Syntomic R S` at `f.toAlgebra`. The fibre ring is Mathlib's `Ideal.Fiber p S = κ(p) ⊗[R] S`, the source's `S ⊗_R κ(p)` with the factors exchanged so that the `κ(p)`-algebra structure is the one Mathlib puts on a tensor product. See the module docstring.”. References: EGA IV (19.3.6), “affine case”.
 
 > A ring map `R → S` is **syntomic**, and `S` is a **flat local complete intersection over
 > `R`**, if it is flat, of finite presentation, and if all of its fibre rings `S ⊗_R κ(p)` are
@@ -29,7 +29,7 @@ public class Algebra.Syntomic (R : Type*) [CommRing R] (S : Type*) [CommRing S] 
 
 [Tag 00SM](https://stacks.math.columbia.edu/tag/00SM) in the Stacks Project.
 
-**`Algebra.IsPushout.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/BaseChange.lean#L227). The attribute's comment: “The base change `S' = R' ⊗_R S` is an arbitrary pushout square `Algebra.IsPushout R R' S S'`; the source's literal form is `inferInstance` once `Algebra.TensorProduct.rightAlgebra` is a local instance. Faithful flatness is `Module.FaithfullyFlat R R'`, the module-level form Mathlib's descent lemmas use. See the module docstring.”.
+**`Algebra.IsPushout.syntomic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/BaseChange.lean#L227). The attribute's comment: “The base change `S' = R' ⊗_R S` is an arbitrary pushout square `Algebra.IsPushout R R' S S'`; the source's literal form is `inferInstance` once `Algebra.TensorProduct.rightAlgebra` is a local instance. Faithful flatness is `Module.FaithfullyFlat R R'`, the module-level form Mathlib's descent lemmas use. See the module docstring.”.
 
 > Let `R → S` be a ring map, let `R → R'` be faithfully flat and let `S'` be the base change of
 > `S` along `R → R'`, so `S' = R' ⊗_R S`. Then `R' → S'` is syntomic if and only if `R → S` is
@@ -47,7 +47,7 @@ public theorem Algebra.IsPushout.syntomic_iff (R R' S S' : Type*) [CommRing R] [
 
 [Tag 00SN](https://stacks.math.columbia.edu/tag/00SN) in the Stacks Project.
 
-**`Algebra.IsPushout.syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/BaseChange.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/BaseChange.lean#L211). The attribute's comment: “The base change is an arbitrary pushout square `Algebra.IsPushout R S R' S'`, the square `RingHom.IsStableUnderBaseChange` quantifies over and the orientation of Mathlib's `Algebra.IsPushout.isIntegral`; the source's literal `S' = S ⊗_R R'` is `TensorProduct.isPushout`. Nothing is assumed about `R → R'`. See the module docstring.”.
+**`Algebra.IsPushout.syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/BaseChange.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/BaseChange.lean#L211). The attribute's comment: “The base change is an arbitrary pushout square `Algebra.IsPushout R S R' S'`, the square `RingHom.IsStableUnderBaseChange` quantifies over and the orientation of Mathlib's `Algebra.IsPushout.isIntegral`; the source's literal `S' = S ⊗_R R'` is `TensorProduct.isPushout`. Nothing is assumed about `R → R'`. See the module docstring.”.
 
 > Any base change of a syntomic ring map is syntomic: if `R → S` is syntomic and `S'` is the base
 > change of `S` along an arbitrary ring map `R → R'`, so `S' = S ⊗_R R'`, then `R' → S'` is
@@ -65,7 +65,7 @@ public theorem Algebra.IsPushout.syntomic (R S : Type*) [CommRing R] [CommRing S
 
 [Tag 00SO](https://stacks.math.columbia.edu/tag/00SO) in the Stacks Project.
 
-**`isSyntomic_of_isSyntomic_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RingHom/FinitePresentation.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RingHom/FinitePresentation.lean#L378).
+**`isSyntomic_of_isSyntomic_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RingHom/FinitePresentation.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RingHom/FinitePresentation.lean#L378).
 
 > Syntomic is local on the source: let `R → S` be a ring map and suppose there are
 > elements `g_1, …, g_m ∈ S` generating the unit ideal of `S` such that for each `i` the
@@ -83,7 +83,7 @@ theorem isSyntomic_of_isSyntomic_localization_away
 
 [Tag 00SP](https://stacks.math.columbia.edu/tag/00SP) in the Stacks Project.
 
-**`Algebra.Presentation.IsRelativeGlobalCompleteIntersection`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L245). The attribute's comment: “The source's displayed `S = R[x_1, …, x_n]/(f_1, …, f_c)`, a presentation together with the dimension property of its fibres; `Algebra.IsRelativeGlobalCompleteIntersection` is the property of the ring map, defined through this one. Stated for arbitrary finite index types, with `n = Nat.card ι` and `c = Nat.card σ`. The fibre ring is `Ideal.Fiber p S = κ(p) ⊗[R] S`, and `dim = n - c` is written additively as `ringKrullDim (p.Fiber S) + Nat.card σ = Nat.card ι` in `WithBot ℕ∞` rather than with the truncated subtraction `Algebra.Presentation.dimension`. See the module docstring.”.
+**`Algebra.Presentation.IsRelativeGlobalCompleteIntersection`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L245). The attribute's comment: “The source's displayed `S = R[x_1, …, x_n]/(f_1, …, f_c)`, a presentation together with the dimension property of its fibres; `Algebra.IsRelativeGlobalCompleteIntersection` is the property of the ring map, defined through this one. Stated for arbitrary finite index types, with `n = Nat.card ι` and `c = Nat.card σ`. The fibre ring is `Ideal.Fiber p S = κ(p) ⊗[R] S`, and `dim = n - c` is written additively as `ringKrullDim (p.Fiber S) + Nat.card σ = Nat.card ι` in `WithBot ℕ∞` rather than with the truncated subtraction `Algebra.Presentation.dimension`. See the module docstring.”.
 
 > A presentation `S = R[x_1, …, x_n]/(f_1, …, f_c)` of `S` over `R` **is a relative global
 > complete intersection** if every nonempty fibre of `Spec(S) → Spec(R)` has dimension `n - c`.
@@ -99,7 +99,7 @@ public class Algebra.Presentation.IsRelativeGlobalCompleteIntersection {R S : Ty
     (P : Algebra.Presentation R S ι σ) : Prop
 ```
 
-**`Algebra.IsRelativeGlobalCompleteIntersection`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L264). The attribute's comment: “Stated for an `R`-algebra `S`, as Mathlib states `Algebra.Smooth` and as the sibling `Algebra.Syntomic` (00SL) is stated; for a ring map `f : R →+* S` it is `Algebra.IsRelativeGlobalCompleteIntersection R S` at `f.toAlgebra`. The presentation `S = R[x_1, …, x_n]/(f_1, …, f_c)` is `Algebra.Presentation R S (Fin n) (Fin c)` and the dimension condition on it is `Algebra.Presentation.IsRelativeGlobalCompleteIntersection`, through which this one is defined, as Mathlib defines `Algebra.IsStandardSmoothOfRelativeDimension` through `Algebra.SubmersivePresentation`. See the module docstring.”.
+**`Algebra.IsRelativeGlobalCompleteIntersection`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L264). The attribute's comment: “Stated for an `R`-algebra `S`, as Mathlib states `Algebra.Smooth` and as the sibling `Algebra.Syntomic` (00SL) is stated; for a ring map `f : R →+* S` it is `Algebra.IsRelativeGlobalCompleteIntersection R S` at `f.toAlgebra`. The presentation `S = R[x_1, …, x_n]/(f_1, …, f_c)` is `Algebra.Presentation R S (Fin n) (Fin c)` and the dimension condition on it is `Algebra.Presentation.IsRelativeGlobalCompleteIntersection`, through which this one is defined, as Mathlib defines `Algebra.IsStandardSmoothOfRelativeDimension` through `Algebra.SubmersivePresentation`. See the module docstring.”.
 
 > A ring map `R → S` is a **relative global complete intersection** if there is a presentation
 > `S = R[x_1, …, x_n]/(f_1, …, f_c)` such that every nonempty fibre of `Spec(S) → Spec(R)` has
@@ -115,7 +115,7 @@ public class Algebra.IsRelativeGlobalCompleteIntersection (R : Type*) [CommRing 
 
 [Tag 07CF](https://stacks.math.columbia.edu/tag/07CF) in the Stacks Project.
 
-**`Algebra.exists_presentation_basis_cotangent_of_free_cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cotangent/FreeConormalPresentation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cotangent/FreeConormalPresentation.lean#L42).
+**`Algebra.exists_presentation_basis_cotangent_of_free_cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cotangent/FreeConormalPresentation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cotangent/FreeConormalPresentation.lean#L42).
 
 > A finitely presented `R`-algebra `S` admitting a presentation `S = R[x₁, …, xₙ]/I` with
 > `I/I²` free over `S` admits a presentation `S = R[y₁, …, y_m]/(f₁, …, f_c)` whose conormal
@@ -134,7 +134,7 @@ theorem exists_presentation_basis_cotangent_of_free_cotangent [FinitePresentatio
 
 [Tag 00SQ](https://stacks.math.columbia.edu/tag/00SQ) in the Stacks Project.
 
-**`MvPolynomial.universalFactorizationMapBaseChangeAlgHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L79). The attribute's comment: “the source's `k`-algebra maps `S_k → K` are tuples `β, γ` with `x^{n+m} + α_1 x^{n+m-1} + … = (x^n + β_1 x^{n-1} + …)(x^m + γ_1 x^{m-1} + …)` in `K`; here for any `K`-algebra `L` over any base ring, the tuples being the monic factors of degrees `m` and `k`, the total degree being `n = m + k`”.
+**`MvPolynomial.universalFactorizationMapBaseChangeAlgHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L79). The attribute's comment: “the source's `k`-algebra maps `S_k → K` are tuples `β, γ` with `x^{n+m} + α_1 x^{n+m-1} + … = (x^n + β_1 x^{n-1} + …)(x^m + γ_1 x^{m-1} + …)` in `K`; here for any `K`-algebra `L` over any base ring, the tuples being the monic factors of degrees `m` and `k`, the total degree being `n = m + k`”.
 
 > `K`-algebra maps from the fibre ring `K ⊗_{R[a]} S` of the universal factorization map
 > `φ : R[a] → S` to a `K`-algebra `L` correspond to factorizations over `L` of the image
@@ -152,7 +152,7 @@ noncomputable def universalFactorizationMapBaseChangeAlgHomEquiv (K L : Type*) [
         q.1.1 * q.2.1 = (freeMonic R n).map (algebraMap (MvPolynomial (Fin n) R) L)}
 ```
 
-**`Polynomial.finite_monicDegreeEq_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L137). The attribute's comment: “the source's finiteness of the set of tuples `β, γ` in a field `K` with `x^{n+m} + α_1 x^{n+m-1} + … = (x^n + β_1 x^{n-1} + …)(x^m + γ_1 x^{m-1} + …)`; here for any polynomial over any field, with factor degrees `m` and `k`”.
+**`Polynomial.finite_monicDegreeEq_mul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L137). The attribute's comment: “the source's finiteness of the set of tuples `β, γ` in a field `K` with `x^{n+m} + α_1 x^{n+m-1} + … = (x^n + β_1 x^{n-1} + …)(x^m + γ_1 x^{m-1} + …)`; here for any polynomial over any field, with factor degrees `m` and `k`”.
 
 > Over a field `L`, a polynomial has only finitely many factorizations into monic polynomials of
 > given degrees `m` and `k`.
@@ -162,7 +162,7 @@ theorem finite_monicDegreeEq_mul_eq (L : Type*) [Field L] (m k : ℕ) (p : L[X])
     Finite {q : MonicDegreeEq L m × MonicDegreeEq L k // q.1.1 * q.2.1 = p}
 ```
 
-**`MvPolynomial.isIntegral_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L166). The attribute's comment: “the source's last paragraph: each of `b_i, c_j` is integral over `R`; here every element of `S`, over any base ring, the total degree being `n = m + k`”.
+**`MvPolynomial.isIntegral_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L166). The attribute's comment: “the source's last paragraph: each of `b_i, c_j` is integral over `R`; here every element of `S`, over any base ring, the total degree being `n = m + k`”.
 
 > Every element of `S` is integral over `R[a]` under the universal factorization map.
 
@@ -173,7 +173,7 @@ theorem isIntegral_universalFactorizationMap :
       (MvPolynomial (Fin m) R ⊗[R] MvPolynomial (Fin k) R)
 ```
 
-**`MvPolynomial.finite_primeSpectrum_tensorProduct_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L192). The attribute's comment: “the source's statement that all fibres have finitely many closed points; here all points, over any base ring, the total degree being `n = m + k`”.
+**`MvPolynomial.finite_primeSpectrum_tensorProduct_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L192). The attribute's comment: “the source's statement that all fibres have finitely many closed points; here all points, over any base ring, the total degree being `n = m + k`”.
 
 > Every fibre `K ⊗_{R[a]} S` of the universal factorization map `R[a] → S` over a field `K` has
 > finitely many points.
@@ -186,7 +186,7 @@ theorem finite_primeSpectrum_tensorProduct_universalFactorizationMap (K : Type*)
       (K ⊗[MvPolynomial (Fin n) R] (MvPolynomial (Fin m) R ⊗[R] MvPolynomial (Fin k) R)))
 ```
 
-**`MvPolynomial.ringKrullDim_tensorProduct_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L205). The attribute's comment: “the source's statement that all fibres have dimension `0`, over any base ring, the total degree being `n = m + k`; the fibre over a prime `p` is the case `K = κ(p)`”.
+**`MvPolynomial.ringKrullDim_tensorProduct_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L205). The attribute's comment: “the source's statement that all fibres have dimension `0`, over any base ring, the total degree being `n = m + k`; the fibre over a prime `p` is the case `K = κ(p)`”.
 
 > Every nonempty fibre `K ⊗_{R[a]} S` of the universal factorization map `R[a] → S` over a field
 > `K` has dimension `0`.
@@ -201,7 +201,7 @@ theorem ringKrullDim_tensorProduct_universalFactorizationMap (K : Type*) [Field 
         (K ⊗[MvPolynomial (Fin n) R] (MvPolynomial (Fin m) R ⊗[R] MvPolynomial (Fin k) R)) = 0
 ```
 
-**`MvPolynomial.universalFactorizationMapPresentation_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L223). The attribute's comment: “the source's `S` is a relative global complete intersection over `R`, for the presentation by the `b_i, c_j` and the equations `a_k = a_k(b_i, c_j)`, over any base ring, the total degree being `n = m + k`”.
+**`MvPolynomial.universalFactorizationMapPresentation_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L223). The attribute's comment: “the source's `S` is a relative global complete intersection over `R`, for the presentation by the `b_i, c_j` and the equations `a_k = a_k(b_i, c_j)`, over any base ring, the total degree being `n = m + k`”.
 
 > The canonical presentation `S = R[a][b, c]/(a_l - a_l(b, c))` of the universal factorization
 > map, with `m + k` variables and `n = m + k` relations, is a relative global complete
@@ -214,7 +214,7 @@ theorem universalFactorizationMapPresentation_isRelativeGlobalCompleteIntersecti
       (universalFactorizationMapPresentation R n m k hn).toPresentation
 ```
 
-**`MvPolynomial.isRelativeGlobalCompleteIntersection_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L236). The attribute's comment: “the source's `R → S` is a relative global complete intersection, as a property of the ring map, over any base ring, the total degree being `n = m + k`”.
+**`MvPolynomial.isRelativeGlobalCompleteIntersection_universalFactorizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L236). The attribute's comment: “the source's `R → S` is a relative global complete intersection, as a property of the ring map, over any base ring, the total degree being `n = m + k`”.
 
 > The universal factorization map `R[a_0, …, a_{n-1}] → R[b] ⊗_R R[c]` is a relative global
 > complete intersection.
@@ -228,89 +228,44 @@ theorem isRelativeGlobalCompleteIntersection_universalFactorizationMap :
 
 Declarations registered for the tag:
 
-- [`MvPolynomial.universalFactorizationMapPresentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.universalFactorizationMapPresentation#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L61) (StacksFrontier): “the source's `S` generated over `R` by the `n + m` elements `b_i, c_j`, with the `n + m` equations `a_k = a_k(b_i, c_j)`: a presentation with variables `Fin m ⊕ Fin k` and relations `Fin n`, over any base ring, the total degree being `n = m + k`”.
-- [`MvPolynomial.finite_universalFactorizationMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.finite_universalFactorizationMap#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L66) (StacksFrontier): “the source's last paragraph: `R → S` is a finite ring map, over any base ring, the total degree being `n = m + k`”.
+- [`MvPolynomial.universalFactorizationMapPresentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.universalFactorizationMapPresentation#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L61) (StacksFrontier): “the source's `S` generated over `R` by the `n + m` elements `b_i, c_j`, with the `n + m` equations `a_k = a_k(b_i, c_j)`: a presentation with variables `Fin m ⊕ Fin k` and relations `Fin n`, over any base ring, the total degree being `n = m + k`”.
+- [`MvPolynomial.finite_universalFactorizationMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=MvPolynomial.finite_universalFactorizationMap#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/UniversalFactorization.lean#L66) (StacksFrontier): “the source's last paragraph: `R → S` is a finite ring map, over any base ring, the total degree being `n = m + k`”.
 
 ## Tag 00SS, a lemma
 
 [Tag 00SS](https://stacks.math.columbia.edu/tag/00SS) in the Stacks Project.
 
-**`Algebra.IsRelativeGlobalCompleteIntersection.baseChange_and_localization_away_and_localization_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L314). The attribute's comment: “The three parts are the three conjuncts, with the auxiliary rings quantified inside the statement so that each carries only its own data, and each part is available separately as `baseChange`, `of_isLocalizationAway` and `localization_base`. Part (1) is over an arbitrary pushout square `Algebra.IsPushout R S R' S'`, the orientation of the sibling 00SN, with nothing assumed about `R → R'`; part (2) over an arbitrary `IsLocalization.Away g S'`, the source's `h` restricting nothing since `R[x_1, …, x_n] → S` is surjective; part (3) over a localization at an arbitrary submonoid `M ⊆ R` rather than only at the powers of one `f ∈ R`, the factorization `R → Rₘ → S` being `[Algebra Rₘ S]` with `[IsScalarTower R Rₘ S]`. See the module docstring.”.
+**`Algebra.Presentation.IsRelativeGlobalCompleteIntersection.baseChange_and_localizationAwayComp_and_localizationBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L607). The attribute's comment: “The given relative global complete intersection `S = R[x_1, …, x_n]/(f_1, …, f_c)` is a presentation `P` with `P.IsRelativeGlobalCompleteIntersection`, the numbers of variables and relations being `Nat.card ι` and `Nat.card σ`, and each conclusion is that the named presentation is a relative global complete intersection. (1) is `P.baseChange R'`, the presentation `R'[x_1, …, x_n]/(f_1, …, f_c)` of `R' ⊗_R S`; the version along an arbitrary pushout square is `baseChange_ofAlgEquiv_isPushoutEquiv`. (2) is `P.localizationAwayComp h T`, with variables `Unit ⊕ ι` and relations `Unit ⊕ σ`, the new relation being `h x_{n+1} - 1`, for any localization `T` of `S` away from the image `g` of `h`. (3) is `P.localizationBase M Rₘ`, with the same variables (`localizationBase_val`) and the images of the same relations (`localizationBase_relation`), for a localization `Rₘ` of `R` at an arbitrary submonoid `M`, not only at the powers of one `f ∈ R`; the factorization `R → Rₘ → S` is `[Algebra Rₘ S]` with `[IsScalarTower R Rₘ S]`. The auxiliary rings are quantified inside the statement; each part is also stated separately.”.
 
-> Let `S = R[x_1, …, x_n]/(f_1, …, f_c)` be a relative global complete intersection over `R`.
-> Then
+> Let `S = R[x_1, …, x_n]/(f_1, …, f_c)` be a relative global complete intersection, presented
+> by `P` with `n` variables and `c` relations. Then
 >
-> 1. for any ring map `R → R'` the base change `S' = R' ⊗_R S` is a relative global complete
->    intersection over `R'`, presented as `R'[x_1, …, x_n]/(f_1, …, f_c)`;
-> 2. for any `g ∈ S`, the image of some `h ∈ R[x_1, …, x_n]`, the localization `S_g` is a relative
->    global complete intersection over `R`, presented as
->    `R[x_1, …, x_n, x_{n+1}]/(f_1, …, f_c, hx_{n+1} - 1)`;
-> 3. if `R → S` factors through a localization `R_M` of `R`, then `S` is a relative global complete
->    intersection over `R_M`, presented as `R_M[x_1, …, x_n]/(f_1, …, f_c)`.
+> 1. for any ring map `R → R'` the presentation `R' ⊗_R S = R'[x_1, …, x_n]/(f_1, …, f_c)` with `n`
+>    variables and `c` relations is a relative global complete intersection over `R'`;
+> 2. for any `g ∈ S` which is the image of `h ∈ R[x_1, …, x_n]`, the presentation
+>    `S_g = R[x_1, …, x_n, x_{n+1}]/(f_1, …, f_c, h x_{n+1} - 1)` with `n + 1` variables and `c + 1`
+>    relations is a relative global complete intersection over `R`;
+> 3. if `R → S` factors as `R → Rₘ → S` through a localization `Rₘ` of `R`, the presentation
+>    `S = Rₘ[x_1, …, x_n]/(f_1, …, f_c)` with `n` variables and `c` relations is a relative global
+>    complete intersection over `Rₘ`.
 
 ```lean
-public theorem baseChange_and_localization_away_and_localization_base (R : Type u) (S : Type v)
-    [CommRing R] [CommRing S] [Algebra R S]
-    [Algebra.IsRelativeGlobalCompleteIntersection R S] :
-    (∀ (R' : Type u') (S' : Type v') [CommRing R'] [CommRing S'] [Algebra R R'] [Algebra R S']
-        [Algebra S S'] [Algebra R' S'] [IsScalarTower R R' S'] [IsScalarTower R S S']
-        [Algebra.IsPushout R S R' S'], Algebra.IsRelativeGlobalCompleteIntersection R' S') ∧
-      (∀ (g : S) (S' : Type w) [CommRing S'] [Algebra S S'] [Algebra R S'] [IsScalarTower R S S']
-        [IsLocalization.Away g S'], Algebra.IsRelativeGlobalCompleteIntersection R S') ∧
-      (∀ (M : Submonoid R) (Rₘ : Type t) [CommRing Rₘ] [Algebra R Rₘ] [IsLocalization M Rₘ]
+theorem baseChange_and_localizationAwayComp_and_localizationBase :
+    (∀ (R' : Type*) [CommRing R'] [Algebra R R'],
+        (P.baseChange R').IsRelativeGlobalCompleteIntersection) ∧
+      (∀ (h : P.Ring) (T : Type*) [CommRing T] [Algebra S T] [Algebra R T] [IsScalarTower R S T]
+        [IsLocalization.Away (algebraMap P.Ring S h) T],
+          (P.localizationAwayComp h T).IsRelativeGlobalCompleteIntersection) ∧
+      (∀ (M : Submonoid R) (Rₘ : Type*) [CommRing Rₘ] [Algebra R Rₘ] [IsLocalization M Rₘ]
         [Algebra Rₘ S] [IsScalarTower R Rₘ S],
-          Algebra.IsRelativeGlobalCompleteIntersection Rₘ S)
-```
-
-**`Algebra.IsRelativeGlobalCompleteIntersection.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L333). The attribute's comment: “Part (1), over an arbitrary pushout square `Algebra.IsPushout R S R' S'` — the orientation and binders of the sibling 00SN, `Algebra.IsPushout.syntomic`.”.
-
-> The base change of a relative global complete intersection is a relative global complete
-> intersection: if `S = R[x_1, …, x_n]/(f_1, …, f_c)` is one over `R` and
-> `Algebra.IsPushout R S R' S'`, so that `S' = R' ⊗_R S = R'[x_1, …, x_n]/(f_1, …, f_c)`, then `S'`
-> is a relative global complete intersection over `R'`. Nothing is assumed about `R → R'`.
-
-```lean
-public theorem baseChange (R : Type u) (S : Type v) [CommRing R] [CommRing S] [Algebra R S]
-    (R' : Type u') (S' : Type v') [CommRing R'] [CommRing S'] [Algebra R R'] [Algebra R S']
-    [Algebra S S'] [Algebra R' S'] [IsScalarTower R R' S'] [IsScalarTower R S S']
-    [Algebra.IsPushout R S R' S'] [Algebra.IsRelativeGlobalCompleteIntersection R S] :
-    Algebra.IsRelativeGlobalCompleteIntersection R' S'
-```
-
-**`Algebra.IsRelativeGlobalCompleteIntersection.of_isLocalizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L348). The attribute's comment: “Part (2), for an arbitrary localization away from `g`; the source's `h` restricts nothing, since `R[x_1, …, x_n] → S` is surjective. Binders as in `Algebra.FinitePresentation.of_isLocalizationAway`, the same statement for finite presentation.”.
-
-> A localization of a relative global complete intersection away from an element is a relative
-> global complete intersection: if `S = R[x_1, …, x_n]/(f_1, …, f_c)` is one over `R`, `g ∈ S` is the
-> image of `h ∈ R[x_1, …, x_n]`, and `S'` is the localization `S_g`, then
-> `S' = R[x_1, …, x_n, x_{n+1}]/(f_1, …, f_c, hx_{n+1} - 1)` is a relative global complete
-> intersection over `R`.
-
-```lean
-public theorem of_isLocalizationAway {R : Type u} {S : Type v} [CommRing R] [CommRing S]
-    [Algebra R S] [Algebra.IsRelativeGlobalCompleteIntersection R S] (g : S) {S' : Type w}
-    [CommRing S'] [Algebra S S'] [Algebra R S'] [IsScalarTower R S S'] [IsLocalization.Away g S'] :
-    Algebra.IsRelativeGlobalCompleteIntersection R S'
-```
-
-**`Algebra.IsRelativeGlobalCompleteIntersection.localization_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L361). The attribute's comment: “Part (3), for a localization at an arbitrary submonoid `M ⊆ R` rather than only at the powers of one `f ∈ R`; the factorization `R → Rₘ → S` is `[Algebra Rₘ S]` with `[IsScalarTower R Rₘ S]`. Binders as in `Algebra.FormallySmooth.localization_base`.”.
-
-> A relative global complete intersection over `R` whose structure map factors through a
-> localization `Rₘ` of `R` is a relative global complete intersection over `Rₘ`: if
-> `S = R[x_1, …, x_n]/(f_1, …, f_c)` is one over `R` and `R → S` factors as `R → Rₘ → S`, then
-> `S = Rₘ[x_1, …, x_n]/(f_1, …, f_c)` is a relative global complete intersection over `Rₘ`.
-
-```lean
-public theorem localization_base {R : Type u} [CommRing R] (M : Submonoid R) {S : Type v}
-    [CommRing S] [Algebra R S] [Algebra.IsRelativeGlobalCompleteIntersection R S] {Rₘ : Type t}
-    [CommRing Rₘ] [Algebra R Rₘ] [IsLocalization M Rₘ] [Algebra Rₘ S] [IsScalarTower R Rₘ S] :
-    Algebra.IsRelativeGlobalCompleteIntersection Rₘ S
+          (P.localizationBase M Rₘ).IsRelativeGlobalCompleteIntersection)
 ```
 
 ## Tag 00ST, a lemma
 
 [Tag 00ST](https://stacks.math.columbia.edu/tag/00ST) in the Stacks Project.
 
-**`Algebra.Presentation.exists_sub_one_mem_map_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L538). The attribute's comment: “(1): the fibre of `Spec(S/IS) → Spec(R/I)` over `𝔭/I` is the fibre `κ(𝔭) ⊗_R S = 𝔭.Fiber S` of `Spec(S) → Spec(R)` over `𝔭 ⊇ I`, and only nonempty fibres are constrained, as in Definition 00SP; `g ↦ 1 ∈ S/IS` is `g - 1 ∈ IS`. The presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`.”.
+**`Algebra.Presentation.exists_sub_one_mem_map_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L722). The attribute's comment: “(1): the fibre of `Spec(S/IS) → Spec(R/I)` over `𝔭/I` is the fibre `κ(𝔭) ⊗_R S = 𝔭.Fiber S` of `Spec(S) → Spec(R)` over `𝔭 ⊇ I`, and only nonempty fibres are constrained, as in Definition 00SP; `g ↦ 1 ∈ S/IS` is `g - 1 ∈ IS`. The presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`.”.
 
 > Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, and let `I ⊆ R`
 > be an ideal such that the fibres of `Spec(S/IS) → Spec(R/I)` have dimension `n - c`, that is, every
@@ -331,7 +286,7 @@ theorem Algebra.Presentation.exists_sub_one_mem_map_isRelativeGlobalCompleteInte
         (Localization.Away (algebraMap P.Ring S h))).IsRelativeGlobalCompleteIntersection
 ```
 
-**`Algebra.Presentation.exists_isUnit_fiber_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L595). The attribute's comment: “(2): the fibre `S ⊗_R κ(𝔭)` is `𝔭.Fiber S = κ(𝔭) ⊗_R S`, in which `g` is `1 ⊗ g`, and `dim = n - c` is written additively as in Definition 00SP. The presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`.”.
+**`Algebra.Presentation.exists_isUnit_fiber_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L779). The attribute's comment: “(2): the fibre `S ⊗_R κ(𝔭)` is `𝔭.Fiber S = κ(𝔭) ⊗_R S`, in which `g` is `1 ⊗ g`, and `dim = n - c` is written additively as in Definition 00SP. The presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`.”.
 
 > Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, and let `𝔭` be a
 > prime of `R` with `dim(S ⊗_R κ(𝔭)) = n - c`. Then there is an `h ∈ R[x_1, …, x_n]` whose image
@@ -351,7 +306,7 @@ theorem Algebra.Presentation.exists_isUnit_fiber_isRelativeGlobalCompleteInterse
         (Localization.Away (algebraMap P.Ring S h))).IsRelativeGlobalCompleteIntersection
 ```
 
-**`Algebra.Presentation.exists_notMem_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L641). The attribute's comment: “(3): the presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`, the source's `R[x_1, …, x_n, x_{n+1}]/(f_1, …, f_c, h x_{n+1} - 1)`, and `dim_𝔮(S/R) = n - c` is `Algebra.relativeDimensionAt R 𝔮 + c = n` (tag 00QD), written additively as in Definition 00SP. The numbers of variables and relations are `Nat.card ι` and `Nat.card σ`.”.
+**`Algebra.Presentation.exists_notMem_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Relative.lean, line 825](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Relative.lean#L825). The attribute's comment: “(3): the presentation of `S_g` is `Algebra.Presentation.localizationAwayComp`, the source's `R[x_1, …, x_n, x_{n+1}]/(f_1, …, f_c, h x_{n+1} - 1)`, and `dim_𝔮(S/R) = n - c` is `Algebra.relativeDimensionAt R 𝔮 + c = n` (tag 00QD), written additively as in Definition 00SP. The numbers of variables and relations are `Nat.card ι` and `Nat.card σ`.”.
 
 > Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, and let `𝔮` be a
 > prime of `S` with `dim_𝔮(S/R) = n - c`. Then there is an `h ∈ R[x_1, …, x_n]` whose image `g ∈ S`
@@ -374,7 +329,7 @@ theorem Algebra.Presentation.exists_notMem_isRelativeGlobalCompleteIntersection
 
 [Tag 00SU](https://stacks.math.columbia.edu/tag/00SU) in the Stacks Project.
 
-**`Algebra.Presentation.exists_fg_isRelativeGlobalCompleteIntersection_naive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L698). The attribute's comment: “The subalgebra is a finitely generated `Subalgebra ℤ R`, the relations over it are `f₀` with `MvPolynomial.map (algebraMap R₀ R) (f₀ k) = f_k`, and `S₀` is presented by `Algebra.Presentation.naive`. Stated for arbitrary finite index types.”.
+**`Algebra.Presentation.exists_fg_isRelativeGlobalCompleteIntersection_naive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L698). The attribute's comment: “The subalgebra is a finitely generated `Subalgebra ℤ R`, the relations over it are `f₀` with `MvPolynomial.map (algebraMap R₀ R) (f₀ k) = f_k`, and `S₀` is presented by `Algebra.Presentation.naive`. Stated for arbitrary finite index types.”.
 
 > **Stacks 00SU.** Let `S = R[x_1, …, x_n]/(f_1, …, f_c)` be a relative global complete
 > intersection. There is a finite type `ℤ`-subalgebra `R₀ ⊆ R` with `f_k ∈ R₀[x_1, …, x_n]` such
@@ -393,7 +348,7 @@ theorem Algebra.Presentation.exists_fg_isRelativeGlobalCompleteIntersection_naiv
 
 [Tag 00SV](https://stacks.math.columbia.edu/tag/00SV) in the Stacks Project.
 
-**`Algebra.Presentation.isRegular_localization_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 947](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L947). The attribute's comment: “(1): `RingTheory.Sequence.IsRegular` is Definition 00LF verbatim, nonvanishing clause included, for the list of images of `f_1, …, f_c` in `Localization.AtPrime 𝔮'`, `𝔮' = 𝔮 ∩ R[x_1, …, x_n]`.”.
+**`Algebra.Presentation.isRegular_localization_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 947](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L947). The attribute's comment: “(1): `RingTheory.Sequence.IsRegular` is Definition 00LF verbatim, nonvanishing clause included, for the list of images of `f_1, …, f_c` in `Localization.AtPrime 𝔮'`, `𝔮' = 𝔮 ∩ R[x_1, …, x_n]`.”.
 
 > **Stacks 00SV (1).** Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, be a relative
 > global complete intersection (Definition 00SP). For every prime `𝔮` of `S`, with corresponding
@@ -410,7 +365,7 @@ theorem Algebra.Presentation.isRegular_localization_relation {R : Type*} [CommRi
         (algebraMap P.Ring (Localization.AtPrime (q.comap (algebraMap P.Ring S)))))
 ```
 
-**`Algebra.Presentation.flat_localization_quotient_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 964](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L964). The attribute's comment: “(2): `R[x_1, …, x_n]_{𝔮'}/(f_1, …, f_i)` is the quotient of `Localization.AtPrime 𝔮'` by the ideal generated by the first `i` images of the relations, for every `i : ℕ` (`List.take` saturates at `c`).”.
+**`Algebra.Presentation.flat_localization_quotient_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 964](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L964). The attribute's comment: “(2): `R[x_1, …, x_n]_{𝔮'}/(f_1, …, f_i)` is the quotient of `Localization.AtPrime 𝔮'` by the ideal generated by the first `i` images of the relations, for every `i : ℕ` (`List.take` saturates at `c`).”.
 
 > **Stacks 00SV (2).** Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, be a relative
 > global complete intersection (Definition 00SP). For every prime `𝔮` of `S`, with corresponding
@@ -427,7 +382,7 @@ theorem Algebra.Presentation.flat_localization_quotient_relation {R : Type*} [Co
         (algebraMap P.Ring (Localization.AtPrime (q.comap (algebraMap P.Ring S))))).take i))
 ```
 
-**`Algebra.Presentation.exists_basis_cotangent_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981). The attribute's comment: “(3): the conormal module `I/I²` is `P.toExtension.Cotangent`, and the basis is pinned: its `i`-th vector is the class of the relation `f_i`.”.
+**`Algebra.Presentation.exists_basis_cotangent_relation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean, line 981](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/RelativeConormal.lean#L981). The attribute's comment: “(3): the conormal module `I/I²` is `P.toExtension.Cotangent`, and the basis is pinned: its `i`-th vector is the class of the relation `f_i`.”.
 
 > **Stacks 00SV (3).** Let `S = R[x_1, …, x_n]/(f_1, …, f_c)`, presented by `P`, be a relative
 > global complete intersection (Definition 00SP). Then the conormal module `I/I²` of
@@ -445,7 +400,7 @@ theorem Algebra.Presentation.exists_basis_cotangent_relation {R : Type*} [CommRi
 
 [Tag 00SW](https://stacks.math.columbia.edu/tag/00SW) in the Stacks Project.
 
-**`Algebra.Syntomic.of_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/RelativeGlobalCompleteIntersection.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/RelativeGlobalCompleteIntersection.lean#L138). The attribute's comment: “Stated for the class `Algebra.IsRelativeGlobalCompleteIntersection R S` and concluding `Algebra.Syntomic R S`, the whole of Definition 00SL, not only the flatness that the source's "i.e., flat" singles out.”.
+**`Algebra.Syntomic.of_isRelativeGlobalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/RelativeGlobalCompleteIntersection.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/RelativeGlobalCompleteIntersection.lean#L139). The attribute's comment: “Stated for the class `Algebra.IsRelativeGlobalCompleteIntersection R S` and concluding `Algebra.Syntomic R S`: flatness, finite presentation and local complete intersection fibres, the three clauses of Definition 00SL. Flatness is the clause the source's proof singles out as needing an argument.”.
 
 > A relative global complete intersection is syntomic: if `S = R[x_1, …, x_n]/(f_1, …, f_c)`
 > is a relative global complete intersection over `R`, then `R → S` is flat, of finite
@@ -461,7 +416,7 @@ theorem Algebra.Syntomic.of_isRelativeGlobalCompleteIntersection (R S : Type*) [
 
 [Tag 03HS](https://stacks.math.columbia.edu/tag/03HS) in the Stacks Project.
 
-**`Polynomial.Monic.exists_finite_free_faithfullyFlat_syntomic_map_eq_prod_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SplittingExtension.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/SplittingExtension.lean#L287). The attribute's comment: “The source's finite free faithfully flat *extension* `A ⊂ A'`: the injectivity of `algebraMap A A'` is not a conjunct, being `FaithfulSMul.algebraMap_injective` applied to `Module.FaithfullyFlat A A'`. The splitting is the explicit product over `Fin P.natDegree`, which names the roots the consumers use and is stronger than `Polynomial.Splits`. Unlike the Mathlib sibling `Polynomial.Monic.exists_splits_map`, no `Nontrivial A` is assumed and the extension is also faithfully flat and syntomic (Definition 00SL). See the module docstring.”.
+**`Polynomial.Monic.exists_finite_free_faithfullyFlat_syntomic_map_eq_prod_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SplittingExtension.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/SplittingExtension.lean#L287). The attribute's comment: “The source's finite free faithfully flat *extension* `A ⊂ A'`: the injectivity of `algebraMap A A'` is not a conjunct, being `FaithfulSMul.algebraMap_injective` applied to `Module.FaithfullyFlat A A'`. The splitting is the explicit product over `Fin P.natDegree`, which names the roots the consumers use and is stronger than `Polynomial.Splits`. Unlike the Mathlib sibling `Polynomial.Monic.exists_splits_map`, no `Nontrivial A` is assumed and the extension is also faithfully flat and syntomic (Definition 00SL). See the module docstring.”.
 
 > **Stacks 03HS.** Let `A` be a ring and let `P ∈ A[x]` be monic. There is a finite free,
 > faithfully flat, syntomic extension `A ⊂ A'` and elements `β_1, …, β_n ∈ A'`, `n = deg P`, with
@@ -480,7 +435,7 @@ public theorem Polynomial.Monic.exists_finite_free_faithfullyFlat_syntomic_map_e
 
 [Tag 00SY](https://stacks.math.columbia.edu/tag/00SY) in the Stacks Project.
 
-**`Algebra.exists_notMem_syntomic_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SyntomicAt.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/SyntomicAt.lean#L561). The attribute's comment: “The principal localization `S_g` is `Localization.Away g`, the local ring map `R_𝔭 → S_𝔮` is `Localization.localRingHom` for the lying-over relation, and `S_𝔮/𝔭S_𝔮` is the fibre `𝔭.Fiber S_𝔮 = κ(𝔭) ⊗_R S_𝔮`, canonically a `κ(𝔭)`-algebra, which is `S_𝔮/𝔭S_𝔮` because `S_𝔮` is an `R_𝔭`-algebra.”.
+**`Algebra.exists_notMem_syntomic_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SyntomicAt.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/SyntomicAt.lean#L561). The attribute's comment: “The principal localization `S_g` is `Localization.Away g`, the local ring map `R_𝔭 → S_𝔮` is `Localization.localRingHom` for the lying-over relation, and `S_𝔮/𝔭S_𝔮` is the fibre `𝔭.Fiber S_𝔮 = κ(𝔭) ⊗_R S_𝔮`, canonically a `κ(𝔭)`-algebra, which is `S_𝔮/𝔭S_𝔮` because `S_𝔮` is an `R_𝔭`-algebra.”.
 
 > Let `R → S` be a ring map and let `𝔮` be a prime of `S` lying over the prime `𝔭` of `R`. The
 > following are equivalent:
@@ -509,7 +464,7 @@ theorem Algebra.exists_notMem_syntomic_tfae {R S : Type*} [CommRing R] [CommRing
 
 [Tag 07BT](https://stacks.math.columbia.edu/tag/07BT) in the Stacks Project.
 
-**`Algebra.Generators.finite_and_projective_tensor_cotangent_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 918](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L918). The attribute's comment: “The presentation `R[x_1, …, x_n] → S` is `Algebra.Generators R S (Fin n)`, `I/I²` is its cotangent module `P.toExtension.Cotangent`, and `(I/I²)_g` is the base change `T ⊗_S I/I²` to a localization `T` of `S` away from `g`. The source's hypothesis that `I` is finitely generated is not needed.”.
+**`Algebra.Generators.finite_and_projective_tensor_cotangent_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 918](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L918). The attribute's comment: “The presentation `R[x_1, …, x_n] → S` is `Algebra.Generators R S (Fin n)`, `I/I²` is its cotangent module `P.toExtension.Cotangent`, and `(I/I²)_g` is the base change `T ⊗_S I/I²` to a localization `T` of `S` away from `g`. The source's hypothesis that `I` is finitely generated is not needed.”.
 
 > **Stacks 07BT.** Let `S = R[x_1, …, x_n]/I` and let `g ∈ S` be such that `S_g` is syntomic
 > over `R`. Then `(I/I²)_g` is a finite projective `S_g`-module.
@@ -527,7 +482,7 @@ theorem Algebra.Generators.finite_and_projective_tensor_cotangent_of_syntomic {R
 
 [Tag 00SZ](https://stacks.math.columbia.edu/tag/00SZ) in the Stacks Project.
 
-**`Algebra.IsRelativeGlobalCompleteIntersection.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L477). The attribute's comment: “(2). Stated for the class `Algebra.IsRelativeGlobalCompleteIntersection` along a scalar tower `R → S → S'`; the composite presentation is `Algebra.Presentation.isRelativeGlobalCompleteIntersection_comp`.”.
+**`Algebra.IsRelativeGlobalCompleteIntersection.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L477). The attribute's comment: “(2). Stated for the class `Algebra.IsRelativeGlobalCompleteIntersection` along a scalar tower `R → S → S'`; the composite presentation is `Algebra.Presentation.isRelativeGlobalCompleteIntersection_comp`.”.
 
 > **Stacks 00SZ (2).** If `R → S` and `S → S'` are relative global complete intersections,
 > then so is `R → S'`.
@@ -540,7 +495,7 @@ theorem Algebra.IsRelativeGlobalCompleteIntersection.comp (R S S' : Type*) [Comm
     Algebra.IsRelativeGlobalCompleteIntersection R S'
 ```
 
-**`Algebra.Syntomic.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L490). The attribute's comment: “(1). Stated for the class `Algebra.Syntomic` along a scalar tower `R → S → S'`.”.
+**`Algebra.Syntomic.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L490). The attribute's comment: “(1). Stated for the class `Algebra.Syntomic` along a scalar tower `R → S → S'`.”.
 
 > **Stacks 00SZ (1).** If `R → S` and `S → S'` are syntomic, then so is `R → S'`.
 
@@ -554,7 +509,7 @@ theorem Algebra.Syntomic.comp (R S S' : Type*) [CommRing R] [CommRing S] [CommRi
 
 [Tag 00T0](https://stacks.math.columbia.edu/tag/00T0) in the Stacks Project.
 
-**`Algebra.Syntomic.exists_span_eq_top_algEquiv_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L852). The attribute's comment: “The syntomic `R/I`-algebra `S̄` is an `R`-algebra through `R → R/I`, the elements `ḡ_i` are a set `s` with `Ideal.span s = ⊤`, and `S̄_{ḡ_i} ≅ S_i/IS_i` is an isomorphism of `R`-algebras.”.
+**`Algebra.Syntomic.exists_span_eq_top_algEquiv_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/Morphisms.lean, line 852](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Syntomic/Morphisms.lean#L852). The attribute's comment: “The syntomic `R/I`-algebra `S̄` is an `R`-algebra through `R → R/I`, the elements `ḡ_i` are a set `s` with `Ideal.span s = ⊤`, and `S̄_{ḡ_i} ≅ S_i/IS_i` is an isomorphism of `R`-algebras.”.
 
 > **Stacks 00T0.** Let `I ⊆ R` be an ideal and let `R/I → S̄` be syntomic. There are
 > elements `ḡ_i ∈ S̄` generating the unit ideal such that every `S̄_{ḡ_i}` is isomorphic to
@@ -576,4 +531,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.136, Tag 00SK](https://stacks.math.columbia.edu/tag/00SK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

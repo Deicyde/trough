@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.18 Points of fibres
 
-Section 68.18 of the Stacks Project, [Tag 0AC0](https://stacks.math.columbia.edu/tag/0AC0). 12 tags here are carried by 97 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.18 of the Stacks Project, [Tag 0AC0](https://stacks.math.columbia.edu/tag/0AC0). 12 tags here are carried by 97 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AC1, an equation
 
 [Tag 0AC1](https://stacks.math.columbia.edu/tag/0AC1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PointsFibresDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean#L38).
+**`AlgebraicGeometry.Space.PointsFibresDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean#L38).
 
 > A cartesian diagram of algebraic spaces `W → Z`, `W → X`, `X → Y` and `Z → Y` over `S`.
 
@@ -26,7 +26,7 @@ structure PointsFibresDiagram (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
 
 [Tag 0AC2](https://stacks.math.columbia.edu/tag/0AC2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean#L69).
+**`AlgebraicGeometry.Space.fibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibres.lean#L69).
 
 > The points of `W` mapping to the specified points `x` of `X` and `z` of `Z`, which have the
 > same image in `Y`, in a cartesian diagram.
@@ -42,7 +42,7 @@ def fibrePoints {B : BigFppfSite.{u}} {S : Scheme.{u}} {hS : B.Contains S}
 
 [Tag 0AC3](https://stacks.math.columbia.edu/tag/0AC3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fibreSpectrumEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L353). The attribute's comment: “spectrum of the fibre”.
+**`AlgebraicGeometry.Space.fibreSpectrumEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L353). The attribute's comment: “spectrum of the fibre”.
 
 > In a cartesian square of Tag 0AC1 whose three non-pullback corners are schemes, the set of
 > Tag 0AC2 attached to two points `x` and `z` with a common image `y` is in bijection with the
@@ -57,7 +57,7 @@ noncomputable def fibreSpectrumEquiv
         (schemeF_eq_schemeG_of_pointsMap_eq R x z h)).tensor
 ```
 
-**`AlgebraicGeometry.Space.fibreSpectrumEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L377). The attribute's comment: “canonical correspondence”.
+**`AlgebraicGeometry.Space.fibreSpectrumEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L377). The attribute's comment: “canonical correspondence”.
 
 > The inverse of `AlgebraicGeometry.Space.fibreSpectrumEquiv` is the canonical map
 > `AlgebraicGeometry.Scheme.Pullback.Triplet.SpecTensorTo`, read through the point presentation.
@@ -74,7 +74,7 @@ theorem fibreSpectrumEquiv_symm_apply
         (schemeF_eq_schemeG_of_pointsMap_eq R x z h)).SpecTensorTo p
 ```
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_finite_residueField_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L423). The attribute's comment: “finite left residue extension”.
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_finite_residueField_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L423). The attribute's comment: “finite left residue extension”.
 
 > The set of Tag 0AC2 is finite when the residue field extension `κ(y) ⊂ κ(x)` is finite.
 
@@ -88,7 +88,7 @@ theorem finite_fibrePoints_of_finite_residueField_left
     (fibrePoints D x z h).Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_finite_residueField_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L440). The attribute's comment: “finite right residue extension”.
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_finite_residueField_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L440). The attribute's comment: “finite right residue extension”.
 
 > The set of Tag 0AC2 is finite when the residue field extension `κ(y) ⊂ κ(z)` is finite.
 
@@ -102,7 +102,7 @@ theorem finite_fibrePoints_of_finite_residueField_right
     (fibrePoints D x z h).Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L457). The attribute's comment: “quasi-finite case”.
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresSchemes.lean#L457). The attribute's comment: “quasi-finite case”.
 
 > The set of Tag 0AC2 is finite whenever the lower horizontal morphism is quasi-finite at
 > `z`.
@@ -118,7 +118,7 @@ theorem finite_fibrePoints_of_quasiFiniteAt
 
 [Tag 0AC4](https://stacks.math.columbia.edu/tag/0AC4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPullback_twistedLineQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean#L228). The attribute's comment: “the square is cartesian, with W the affine line”.
+**`AlgebraicGeometry.Space.exists_isPullback_twistedLineQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean#L228). The attribute's comment: “the square is cartesian, with W the affine line”.
 
 > **Stacks 0AC4**, the square. The projections of the affine line and of `Spec K` onto their
 > quotients by the twisted actions and the inclusion of the constants form a cartesian square, so
@@ -141,7 +141,7 @@ theorem exists_isPullback_twistedLineQuotient [CharZero K] (hσ : orderOf σ = 0
         (twistedBaseProjection hS hK s σ hs)
 ```
 
-**`AlgebraicGeometry.Space.twistedFibreEquivInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean#L455). The attribute's comment: “the fibre of points is the integers”.
+**`AlgebraicGeometry.Space.twistedFibreEquivInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/TwistedLineFibrePoints.lean#L455). The attribute's comment: “the fibre of points is the integers”.
 
 > **Stacks 0AC4**, the fibre. The set `F_{x,z}` of Stacks 0AC2 for the square of Stacks 0AC4
 > is in bijection with `ℤ`: the points `t = n` of the affine line all have the same image in the
@@ -157,7 +157,7 @@ def twistedFibreEquivInt [CharZero K] : twistedFibreSet hS hK hL s σ hs ≃ ℤ
 
 [Tag 0AC5](https://stacks.math.columbia.edu/tag/0AC5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.surjOn_fibrePoints_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresBaseChange.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresBaseChange.lean#L78).
+**`AlgebraicGeometry.Space.surjOn_fibrePoints_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresBaseChange.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresBaseChange.lean#L78).
 
 > Let `D` be a cartesian square of algebraic spaces, let `t : Z' ⟶ D.Z` be a morphism of
 > algebraic spaces and let `z'` be a point of `|Z'|`. Then the map `F_{x, z'} → F_{x, z}` induced
@@ -181,7 +181,7 @@ theorem surjOn_fibrePoints_baseChange (D : PointsFibresDiagram B S hS)
 
 [Tag 0AC6](https://stacks.math.columbia.edu/tag/0AC6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_isFiniteType_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresQuasiFinite.lean#L54).
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_isFiniteType_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresQuasiFinite.lean#L54).
 
 > **Stacks 0AC6.** In a cartesian square of algebraic spaces as in Stacks 0AC1, the set of
 > points of the upper-left corner lying over prescribed points `x` and `z` of the upper-right
@@ -200,7 +200,7 @@ theorem finite_fibrePoints_of_isFiniteType_of_isQuasiFiniteAt
 
 [Tag 0AC7](https://stacks.math.columbia.edu/tag/0AC7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_mono_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean#L359). The attribute's comment: “finite fibre over a monomorphic point”.
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_mono_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean#L359). The attribute's comment: “finite fibre over a monomorphic point”.
 
 > In a cartesian square of Tag 0AC1, the set of Tag 0AC2 attached to two points `x` of `|X|`
 > and `z` of `|Z|` with common image `y` in `|Y|` is finite whenever `y` can be represented by a
@@ -216,7 +216,7 @@ theorem finite_fibrePoints_of_mono_of_isQuasiFiniteAt (D : PointsFibresDiagram B
     (fibrePoints D x z h).Finite
 ```
 
-**`AlgebraicGeometry.Space.finite_fibrePoints_of_isDecentSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean#L410). The attribute's comment: “special case: decent lower-right corner and étale lower horizontal morphism”.
+**`AlgebraicGeometry.Space.finite_fibrePoints_of_isDecentSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresFiniteDecent.lean#L410). The attribute's comment: “special case: decent lower-right corner and étale lower horizontal morphism”.
 
 > In a cartesian square of Tag 0AC1 whose lower-right corner is a decent algebraic space and
 > whose lower horizontal morphism is étale, the set of Tag 0AC2 is finite.
@@ -233,7 +233,7 @@ theorem finite_fibrePoints_of_isDecentSpace_of_isEtale (D : PointsFibresDiagram 
 
 [Tag 0AC8](https://stacks.math.columbia.edu/tag/0AC8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isInducing_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L304). The attribute's comment: “the topology of the fibre”.
+**`AlgebraicGeometry.Space.isInducing_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L305). The attribute's comment: “the topology of the fibre”.
 
 > **Stacks 0AC8, the topology of the fibre.** Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` and let `p` be a field-valued point of `Y` whose presenting morphism
@@ -249,7 +249,7 @@ theorem isInducing_pointsMap_fibre_fieldMorphism (hX : IsAlgebraicSpace B S hS X
       (pullback.fst f (fieldMorphism B S hS Y p)))
 ```
 
-**`AlgebraicGeometry.Space.isEmbedding_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L360). The attribute's comment: “the fibre is embedded”.
+**`AlgebraicGeometry.Space.isEmbedding_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L361). The attribute's comment: “the fibre is embedded”.
 
 > **Stacks 0AC8, the topology of the fibre.** The map on points induced by the projection
 > `X ×_Y Spec k ⟶ X` is a topological embedding when the morphism `Spec k ⟶ Y` presenting the
@@ -264,7 +264,7 @@ theorem isEmbedding_pointsMap_fibre_fieldMorphism (hX : IsAlgebraicSpace B S hS 
       (pullback.fst f (fieldMorphism B S hS Y p)))
 ```
 
-**`AlgebraicGeometry.Space.fibreHomeomorph`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L374). The attribute's comment: “homeomorphism onto the fibre”.
+**`AlgebraicGeometry.Space.fibreHomeomorph`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreOverFieldPoint.lean#L375). The attribute's comment: “homeomorphism onto the fibre”.
 
 > **Stacks 0AC8.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` and a
 > field-valued point `p` of `Y` whose presenting morphism `Spec k ⟶ Y` is a quasi-compact
@@ -280,7 +280,7 @@ noncomputable def fibreHomeomorph (hX : IsAlgebraicSpace B S hS X)
       (pointsMap B S hS X f ⁻¹' {p.class B S hS Y})
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean#L106). The attribute's comment: “the image of the fibre”.
+**`AlgebraicGeometry.Space.range_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean#L106). The attribute's comment: “the image of the fibre”.
 
 > **Stacks 0AC8, the image of the fibre.** For a morphism `f : X ⟶ Y` of presheaves on the
 > big fppf site of `S` and a field-valued point `p` of `Y`, the map on points induced by the
@@ -294,7 +294,7 @@ theorem range_pointsMap_fibre_fieldMorphism (f : X ⟶ Y) (p : FieldValuedPoint 
       {x : points B S hS X | pointsMap B S hS X f x = p.class B S hS Y}
 ```
 
-**`AlgebraicGeometry.Space.injective_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean#L123). The attribute's comment: “injectivity of the fibre”.
+**`AlgebraicGeometry.Space.injective_pointsMap_fibre_fieldMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PointsOfFibresCardinality.lean#L123). The attribute's comment: “injectivity of the fibre”.
 
 > **Stacks 0AC8, injectivity of the fibre.** When the morphism presenting a field-valued
 > point `p` of `Y` is a monomorphism, the map on points induced by the projection
@@ -307,7 +307,7 @@ theorem injective_pointsMap_fibre_fieldMorphism (f : X ⟶ Y) (p : FieldValuedPo
       (pullback.fst f (fieldMorphism B S hS Y p)))
 ```
 
-**`AlgebraicGeometry.Space.injective_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L101). The attribute's comment: “injectivity on points”.
+**`AlgebraicGeometry.Space.injective_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L101). The attribute's comment: “injectivity on points”.
 
 > **Stacks 0AC8, injectivity.** If the morphism `Spec(k) ⟶ Y` presented by a field-valued
 > point `p` of `Y` is a monomorphism, then the comparison map `|X_k| → |X|` from the points of
@@ -323,7 +323,7 @@ theorem injective_pointsMap_fst_fieldFibre (f : X ⟶ Y) (p : FieldValuedPoint B
       (pullback.fst f (yonedaEquiv.symm p.value)))
 ```
 
-**`AlgebraicGeometry.Space.bijOn_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L117). The attribute's comment: “bijection onto the set-theoretic fibre”.
+**`AlgebraicGeometry.Space.bijOn_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L117). The attribute's comment: “bijection onto the set-theoretic fibre”.
 
 > **Stacks 0AC8, the bijection.** Under the monomorphism hypothesis the comparison map
 > `|X_k| → |X|` is a bijection from the points of the field fibre onto the set-theoretic fibre
@@ -340,7 +340,7 @@ theorem bijOn_pointsMap_fst_fieldFibre (f : X ⟶ Y) (p : FieldValuedPoint B S h
       Set.univ (setFibre B S hS f p)
 ```
 
-**`AlgebraicGeometry.Space.isInducing_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean#L390). The attribute's comment: “the induced topology”.
+**`AlgebraicGeometry.Space.isInducing_pointsMap_fst_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean#L390). The attribute's comment: “the induced topology”.
 
 > **Stacks 0AC8, the induced topology.** For a morphism `f : X ⟶ Y` of algebraic spaces over
 > `S` and a field-valued point `p` of `Y` presented by a quasi-compact monomorphism, the
@@ -360,7 +360,7 @@ theorem isInducing_pointsMap_fst_fieldFibre {X Y : (BigFppfOver B S hS)ᵒᵖ �
       (pullback.fst f (fieldMorphism B S hS Y p)))
 ```
 
-**`AlgebraicGeometry.Space.homeomorphSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean#L437). The attribute's comment: “homeomorphism onto the set-theoretic fibre”.
+**`AlgebraicGeometry.Space.homeomorphSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreInducing.lean#L437). The attribute's comment: “homeomorphism onto the set-theoretic fibre”.
 
 > **Stacks 0AC8.** The point space of the field fibre `X_k` is homeomorphic to the
 > set-theoretic fibre `f^{-1}({y}) ⊂ |X|` with its induced topology, by the comparison map.
@@ -381,7 +381,7 @@ noncomputable def homeomorphSetFibre {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 0AC9](https://stacks.math.columbia.edu/tag/0AC9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.topologicalKrullDimAt_points_eq_dimensionAtPoint_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Dimension.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Dimension.lean#L96). The attribute's comment: “conditions (1) and (4) for decent spaces”.
+**`AlgebraicGeometry.Space.topologicalKrullDimAt_points_eq_dimensionAtPoint_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Dimension.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Dimension.lean#L96). The attribute's comment: “conditions (1) and (4) for decent spaces”.
 
 > **Stacks 0A4J, part (1)**, and the fourth clause of **Stacks 0AC9**. At every point of a
 > decent algebraic space over `S` the local Krull dimension of the point space agrees with the
@@ -396,7 +396,7 @@ theorem topologicalKrullDimAt_points_eq_dimensionAtPoint_of_isDecentSpace
     topologicalKrullDimAt (points B S hS X) x = dimensionAtPoint B S hS X hX x
 ```
 
-**`AlgebraicGeometry.Space.isClosedNoGeneralization_iff_isIsolatedPoint_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L416). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.isClosedNoGeneralization_iff_isIsolatedPoint_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L416). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 0AC9, conditions (2) and (3).** A point of an algebraic space locally of finite
 > type over a field is closed with no nontrivial generalization exactly when it is isolated.
@@ -411,7 +411,7 @@ theorem isClosedNoGeneralization_iff_isIsolatedPoint_over_field
         ∀ x' : points B (Spec (.of k)) hK Z, x' ⤳ x → x' = x) ↔ IsIsolatedPoint x
 ```
 
-**`AlgebraicGeometry.Space.isIsolatedPoint_iff_dimensionAtPoint_eq_zero_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L430). The attribute's comment: “conditions (3) and (4)”.
+**`AlgebraicGeometry.Space.isIsolatedPoint_iff_dimensionAtPoint_eq_zero_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L430). The attribute's comment: “conditions (3) and (4)”.
 
 > **Stacks 0AC9, conditions (3) and (4).** A point of an algebraic space locally of finite
 > type over a field is isolated exactly when the space has dimension zero there.
@@ -425,7 +425,7 @@ theorem isIsolatedPoint_iff_dimensionAtPoint_eq_zero_over_field
     IsIsolatedPoint x ↔ dimensionAtPoint B (Spec (.of k)) hK Z hZ x = 0
 ```
 
-**`AlgebraicGeometry.Space.dimensionAtPoint_eq_zero_iff_isQuasiFiniteAt_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L444). The attribute's comment: “conditions (4) and (5)”.
+**`AlgebraicGeometry.Space.dimensionAtPoint_eq_zero_iff_isQuasiFiniteAt_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalPoint.lean#L444). The attribute's comment: “conditions (4) and (5)”.
 
 > **Stacks 0AC9, conditions (4) and (5).** An algebraic space locally of finite type over a
 > field has dimension zero at a point exactly when its structure morphism is quasi-finite
@@ -445,7 +445,7 @@ theorem dimensionAtPoint_eq_zero_iff_isQuasiFiniteAt_over_field
 
 [Tag 0ACA](https://stacks.math.columbia.edu/tag/0ACA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_finitePoints_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L185). The attribute's comment: “decent clause of the corrected statement: (1) implies the others”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_finitePoints_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L185). The attribute's comment: “decent clause of the corrected statement: (1) implies the others”.
 
 > **Stacks 0ACA, condition (1) implies the others for a decent space.** A decent algebraic
 > space locally of finite type over a field whose point space is finite has discrete point space;
@@ -460,7 +460,7 @@ theorem discretePoints_of_finitePoints_of_isDecentSpace (D : FiniteTypeOverField
     (hfinite : D.FinitePoints) : D.DiscretePoints
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_zeroTopologicalDimension_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L197). The attribute's comment: “corrected part (3) => (2): decency gives the Kolmogorov hypothesis, by 03K3”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_zeroTopologicalDimension_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L197). The attribute's comment: “corrected part (3) => (2): decency gives the Kolmogorov hypothesis, by 03K3”.
 
 > **Stacks 0ACA, condition (3) implies condition (2) for a decent space.** The point space of
 > a decent algebraic space is Kolmogorov, by Stacks 03K3, which is exactly the hypothesis that
@@ -474,7 +474,7 @@ theorem discretePoints_of_zeroTopologicalDimension_of_isDecentSpace
     (hD : D.ZeroTopologicalDimension) : D.DiscretePoints
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.tfae_discretePoints_zeroDimension_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L217). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form for a nonempty space; (3) not among them”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.tfae_discretePoints_zeroDimension_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L217). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form for a nonempty space; (3) not among them”.
 
 > **Stacks 0ACA, conditions (2), (4) and (5) are equivalent.** For a nonempty algebraic space
 > locally of finite type over a field, with no separation hypothesis and no decency: the point
@@ -494,7 +494,7 @@ theorem tfae_discretePoints_zeroDimension_locallyQuasiFinite (D : FiniteTypeOver
     [D.DiscretePoints, D.ZeroDimension, D.LocallyQuasiFiniteOverField].TFAE
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.tfae_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L233). The attribute's comment: “decent case: (2) <=> (3) <=> (4) <=> (5), the arrow out of (3) by 03K3”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.tfae_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitePointSpaces.lean#L233). The attribute's comment: “decent case: (2) <=> (3) <=> (4) <=> (5), the arrow out of (3) by 03K3”.
 
 > **Stacks 0ACA, conditions (2), (3), (4) and (5) are equivalent for a decent space.** For a
 > nonempty decent algebraic space locally of finite type over a field, the point space is
@@ -513,7 +513,7 @@ theorem tfae_of_isDecentSpace (D : FiniteTypeOverField.{u})
       D.LocallyQuasiFiniteOverField].TFAE
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_iff_zeroDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L629). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (2) <=> (4) for a nonempty space”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_iff_zeroDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L629). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (2) <=> (4) for a nonempty space”.
 
 > The point space of a nonempty algebraic space
 > locally of finite type over a field is discrete exactly when the algebraic space has
@@ -524,7 +524,7 @@ theorem discretePoints_iff_zeroDimension (D : FiniteTypeOverField.{u}) :
     D.DiscretePoints ↔ D.ZeroDimension
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.zeroTopologicalDimension_of_discretePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L639). The attribute's comment: “the arrow into (3): (2) => (3), in the dim = 0 form”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.zeroTopologicalDimension_of_discretePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L639). The attribute's comment: “the arrow into (3): (2) => (3), in the dim = 0 form”.
 
 > If the point space is discrete then it has
 > Krull dimension zero.
@@ -534,7 +534,7 @@ theorem zeroTopologicalDimension_of_discretePoints (D : FiniteTypeOverField.{u})
     (hD : D.DiscretePoints) : D.ZeroTopologicalDimension
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_zeroTopologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L648). The attribute's comment: “corrected part (3) => (2), the sharp form: |X| Kolmogorov”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.discretePoints_of_zeroTopologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L648). The attribute's comment: “corrected part (3) => (2), the sharp form: |X| Kolmogorov”.
 
 > If the point space is `T0` and has Krull dimension zero, then it is discrete. The hypothesis
 > that the point space is `T0` cannot be dropped.
@@ -545,7 +545,7 @@ theorem discretePoints_of_zeroTopologicalDimension (D : FiniteTypeOverField.{u})
     (hD : D.ZeroTopologicalDimension) : D.DiscretePoints
 ```
 
-**`AlgebraicGeometry.Space.FiniteTypeOverField.zeroDimension_iff_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L659). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (4) <=> (5) for a nonempty space”.
+**`AlgebraicGeometry.Space.FiniteTypeOverField.zeroDimension_iff_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ZeroDimensionalFibres.lean#L659). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (4) <=> (5) for a nonempty space”.
 
 > A nonempty algebraic space locally of finite type
 > over a field has dimension zero exactly when its structure morphism is locally
@@ -556,7 +556,7 @@ theorem zeroDimension_iff_locallyQuasiFinite (D : FiniteTypeOverField.{u}) :
     D.ZeroDimension ↔ D.LocallyQuasiFiniteOverField
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L247). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (4) <=> (5), dim <= 0 form”. References: EGA IV (4.1.2), “(ii), case Y = Spec(k)”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L247). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (4) <=> (5), dim <= 0 form”. References: EGA IV (4.1.2), “(ii), case Y = Spec(k)”.
 
 > **Stacks 0ACA, condition (4) is equivalent to condition (5).** An algebraic space over `S`
 > locally of finite type over a representable base whose scheme has at most one point has
@@ -574,7 +574,7 @@ theorem isLocallyQuasiFinite_iff_dimension_le_zero (hX : IsAlgebraicSpace B S hS
     IsLocallyQuasiFinite B S hS g ↔ dimension B S hS X hX ≤ 0
 ```
 
-**`AlgebraicGeometry.Space.dimension_eq_zero_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L260). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (5) => (4) for a nonempty space”.
+**`AlgebraicGeometry.Space.dimension_eq_zero_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L260). The attribute's comment: “(2) <=> (4) <=> (5), the dim = 0 form: (5) => (4) for a nonempty space”.
 
 > **Stacks 0ACA, condition (5) implies condition (4).** The `= 0` form of the dimension
 > statement, which needs the space to have a point: the dimension of Tag 04N6 is a supremum, so
@@ -588,7 +588,7 @@ theorem dimension_eq_zero_of_isLocallyQuasiFinite (hX : IsAlgebraicSpace B S hS 
     dimension B S hS X hX = 0
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_points_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L287). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (5) => (2)”.
+**`AlgebraicGeometry.Space.discreteTopology_points_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L287). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (5) => (2)”.
 
 > **Stacks 0ACA, condition (5) implies condition (2).** If the structure morphism of an
 > algebraic space over `S` to a representable base whose scheme has at most one point is locally
@@ -605,7 +605,7 @@ theorem discreteTopology_points_of_isLocallyQuasiFinite (hX : IsAlgebraicSpace B
     DiscreteTopology (points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.topologicalKrullDim_points_le_zero_of_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L312). The attribute's comment: “the arrow into (3): (2) => (3), unconditional, dim <= 0 form”.
+**`AlgebraicGeometry.Space.topologicalKrullDim_points_le_zero_of_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverField.lean#L312). The attribute's comment: “the arrow into (3): (2) => (3), unconditional, dim <= 0 form”.
 
 > **Stacks 0ACA, condition (2) implies condition (3).** A discrete point space has dimension
 > at most zero. The source writes condition (3) as `dim(|X|) = 0`; the empty space is discrete and
@@ -617,7 +617,7 @@ theorem topologicalKrullDim_points_le_zero_of_discreteTopology
     topologicalKrullDim (points B S hS X) ≤ 0
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_points_of_finite_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldDecent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldDecent.lean#L111). The attribute's comment: “decent clause of the corrected statement: (1) => (2)”.
+**`AlgebraicGeometry.Space.discreteTopology_points_of_finite_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldDecent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldDecent.lean#L111). The attribute's comment: “decent clause of the corrected statement: (1) => (2)”.
 
 > **Stacks 0ACA, condition (1) implies condition (2) for a decent space.** Let `X` be a
 > decent algebraic space over `S`, locally of finite type over a representable base whose
@@ -637,7 +637,7 @@ theorem discreteTopology_points_of_finite_of_isDecentSpace
     DiscreteTopology (points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.dimension_le_zero_of_discreteTopology_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L267). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (2) => (4), dim <= 0 form”.
+**`AlgebraicGeometry.Space.dimension_le_zero_of_discreteTopology_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L267). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (2) => (4), dim <= 0 form”.
 
 > **Stacks 0ACA, condition (2) implies condition (4).** An algebraic space locally of finite
 > type over a field whose point space of Tag 03BU is discrete has dimension at most zero.
@@ -656,7 +656,7 @@ theorem dimension_le_zero_of_discreteTopology_points (hX : IsAlgebraicSpace B S 
     dimension B S hS X hX ≤ 0
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_discreteTopology_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L281). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (2) => (5)”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_discreteTopology_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L281). The attribute's comment: “unconditional part (2) <=> (4) <=> (5): the arrow (2) => (5)”.
 
 > **Stacks 0ACA, condition (2) implies condition (5).** An algebraic space locally of finite
 > type over a field whose point space of Tag 03BU is discrete is locally quasi-finite over the
@@ -671,7 +671,7 @@ theorem isLocallyQuasiFinite_of_discreteTopology_points (hX : IsAlgebraicSpace B
     IsLocallyQuasiFinite B S hS g
 ```
 
-**`AlgebraicGeometry.Space.tfae_discreteTopology_dimension_le_zero_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L313). The attribute's comment: “unconditional part: (2) <=> (4) <=> (5), no T0Space, no decency, no nonemptiness”. References: EGA IV (4.1.2), “(ii), case Y = Spec(κ)”.
+**`AlgebraicGeometry.Space.tfae_discreteTopology_dimension_le_zero_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L313). The attribute's comment: “unconditional part: (2) <=> (4) <=> (5), no T0Space, no decency, no nonemptiness”. References: EGA IV (4.1.2), “(ii), case Y = Spec(κ)”.
 
 > **Stacks 0ACA, conditions (2), (4) and (5) are equivalent.** For an algebraic space locally
 > of finite type over a field, with *no* further hypothesis: the point space of Tag 03BU is
@@ -702,7 +702,7 @@ theorem tfae_discreteTopology_dimension_le_zero_isLocallyQuasiFinite
       IsLocallyQuasiFinite B S hS g].TFAE
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_points_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L349). The attribute's comment: “corrected part (3) => (2), the sharp form: |X| Kolmogorov”.
+**`AlgebraicGeometry.Space.discreteTopology_points_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L349). The attribute's comment: “corrected part (3) => (2), the sharp form: |X| Kolmogorov”.
 
 > **Condition (3) of Stacks 0ACA implies condition (2), for a `T₀` point space.** An algebraic
 > space locally of finite type over a field whose point space of Tag 03BU is `T₀` and has Krull
@@ -730,7 +730,7 @@ theorem discreteTopology_points_of_topologicalKrullDim_eq_zero (hX : IsAlgebraic
     DiscreteTopology (points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_points_of_topologicalKrullDim_eq_zero_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L372). The attribute's comment: “corrected part (3) => (2): decency gives the Kolmogorov hypothesis, by 03K3”.
+**`AlgebraicGeometry.Space.discreteTopology_points_of_topologicalKrullDim_eq_zero_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DimensionZeroOverFieldSpecialization.lean#L372). The attribute's comment: “corrected part (3) => (2): decency gives the Kolmogorov hypothesis, by 03K3”.
 
 > **Stacks 0ACA, condition (3) implies condition (2) for a decent space.** A decent algebraic
 > space locally of finite type over a field whose point space of Tag 03BU has Krull dimension
@@ -750,7 +750,7 @@ theorem discreteTopology_points_of_topologicalKrullDim_eq_zero_of_isDecentSpace
     DiscreteTopology (points B S hS X)
 ```
 
-**`Stacks.Examples.DimensionVersusPointSet.exists_zeroTopologicalDimension_not_discretePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean#L129). The attribute's comment: “the erratum's counterexample: the unrestricted (3) => (2) is false”.
+**`Stacks.Examples.DimensionVersusPointSet.exists_zeroTopologicalDimension_not_discretePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean#L129). The attribute's comment: “the erratum's counterexample: the unrestricted (3) => (2) is false”.
 
 > **Stacks 0ACA.** Conditions (2), (3), (4) and (5) are not equivalent for a general
 > nonempty algebraic space locally of finite type over a field: the quotient of the affine line
@@ -763,7 +763,7 @@ theorem exists_zeroTopologicalDimension_not_discretePoints :
       ¬ D.ZeroDimension ∧ ¬ D.LocallyQuasiFiniteOverField
 ```
 
-**`Stacks.Examples.DimensionVersusPointSet.not_forall_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean#L148). The attribute's comment: “the erratum's counterexample: the tag's four-way equivalence, negated”.
+**`Stacks.Examples.DimensionVersusPointSet.not_forall_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/ZeroDimensionalPointsNotDiscrete.lean#L148). The attribute's comment: “the erratum's counterexample: the tag's four-way equivalence, negated”.
 
 > **Stacks 0ACA is false as stated.** The source asserts that conditions (2), (3), (4) and
 > (5) are equivalent for every algebraic space locally of finite type over a field; they are not.
@@ -783,7 +783,7 @@ theorem not_forall_tfae :
 
 [Tag 0ACB](https://stacks.math.columbia.edu/tag/0ACB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIsolatedPoint_fieldFibre_of_topologicalKrullDimAt_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L134). The attribute's comment: “condition (4) implies (5) for decent morphisms”.
+**`AlgebraicGeometry.Space.isIsolatedPoint_fieldFibre_of_topologicalKrullDimAt_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L134). The attribute's comment: “condition (4) implies (5) for decent morphisms”.
 
 > **Stacks 0ACB, condition (4) implies condition (5) for a decent morphism.** If the point
 > space of the field fibre of a decent morphism of algebraic spaces locally of finite type has
@@ -802,7 +802,7 @@ theorem isIsolatedPoint_fieldFibre_of_topologicalKrullDimAt_eq_zero
     IsIsolatedPoint z
 ```
 
-**`AlgebraicGeometry.Space.topologicalKrullDimAt_points_fieldFibre_eq_zero_iff_isIsolatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L154). The attribute's comment: “conditions (4) and (5) for decent spaces”.
+**`AlgebraicGeometry.Space.topologicalKrullDimAt_points_fieldFibre_eq_zero_iff_isIsolatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L154). The attribute's comment: “conditions (4) and (5) for decent spaces”.
 
 > **Stacks 0ACB, conditions (4) and (5) for decent spaces.** A point of the point space of
 > the field fibre of a morphism of algebraic spaces locally of finite type with decent source is
@@ -821,7 +821,7 @@ theorem topologicalKrullDimAt_points_fieldFibre_eq_zero_iff_isIsolatedPoint
       IsIsolatedPoint z
 ```
 
-**`AlgebraicGeometry.Space.isIsolatedPoint_fieldFibre_iff_isClosedNoGeneralization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L130). The attribute's comment: “conditions (5) and (6)”.
+**`AlgebraicGeometry.Space.isIsolatedPoint_fieldFibre_iff_isClosedNoGeneralization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L130). The attribute's comment: “conditions (5) and (6)”.
 
 > **Stacks 0ACB, conditions (5) and (6).** A point of the field fibre of a morphism of
 > algebraic spaces locally of finite type is isolated exactly when it is closed in the field
@@ -840,7 +840,7 @@ theorem isIsolatedPoint_fieldFibre_iff_isClosedNoGeneralization
         ∀ z' : points B S hS (fieldFibre B S hS f p), z' ⤳ z → z' = z)
 ```
 
-**`AlgebraicGeometry.Space.isClosedNoGeneralization_fieldFibre_iff_dimensionAtPoint_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L146). The attribute's comment: “conditions (6) and (7)”.
+**`AlgebraicGeometry.Space.isClosedNoGeneralization_fieldFibre_iff_dimensionAtPoint_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L146). The attribute's comment: “conditions (6) and (7)”.
 
 > **Stacks 0ACB, conditions (6) and (7).** A point of the field fibre of a morphism of
 > algebraic spaces locally of finite type is closed there with no nontrivial generalization
@@ -860,7 +860,7 @@ theorem isClosedNoGeneralization_fieldFibre_iff_dimensionAtPoint_eq_zero
         (isAlgebraicSpace_fieldFibre hX hY f p) z = 0
 ```
 
-**`AlgebraicGeometry.Space.dimensionAtPoint_fieldFibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L170). The attribute's comment: “conditions (7) and (8)”.
+**`AlgebraicGeometry.Space.dimensionAtPoint_fieldFibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedFibrePoint.lean#L170). The attribute's comment: “conditions (7) and (8)”.
 
 > **Stacks 0ACB, conditions (7) and (8).** The field fibre of a morphism of algebraic spaces
 > locally of finite type has dimension zero at a point exactly when the morphism is quasi-finite
@@ -884,7 +884,7 @@ theorem dimensionAtPoint_fieldFibre_eq_zero_iff_isQuasiFiniteAt
           (pullback.fst f (yonedaEquiv.symm p.value)) z)
 ```
 
-**`AlgebraicGeometry.Space.isIsolatedPoint_fibre_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L258). The attribute's comment: “conditions (2) and (8), for a decent target”.
+**`AlgebraicGeometry.Space.isIsolatedPoint_fibre_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L259). The attribute's comment: “conditions (2) and (8), for a decent target”.
 
 > **Stacks 0ACB, conditions (2) and (8).** Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` which is locally of finite type with decent target, let `y` be a point of
@@ -904,7 +904,7 @@ theorem isIsolatedPoint_fibre_iff_isQuasiFiniteAt
     IsIsolatedPoint x ↔ IsQuasiFiniteAt B S hS f (x : points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.isClosedNoGeneralization_fibre_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L275). The attribute's comment: “conditions (3) and (8), for a decent target”.
+**`AlgebraicGeometry.Space.isClosedNoGeneralization_fibre_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L276). The attribute's comment: “conditions (3) and (8), for a decent target”.
 
 > **Stacks 0ACB, conditions (3) and (8).** In the situation above, a point of
 > `F = f^{-1}({y})` is closed in `F` and admits no nontrivial generalization there exactly when
@@ -924,7 +924,7 @@ theorem isClosedNoGeneralization_fibre_iff_isQuasiFiniteAt
       IsQuasiFiniteAt B S hS f (x : points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.topologicalKrullDimAt_fibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L296). The attribute's comment: “conditions (1) and (8), for a decent morphism with decent target”.
+**`AlgebraicGeometry.Space.topologicalKrullDimAt_fibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/IsolatedSetFibrePoint.lean#L297). The attribute's comment: “conditions (1) and (8), for a decent morphism with decent target”.
 
 > **Stacks 0ACB, conditions (1) and (8).** For a decent morphism of algebraic spaces over
 > `S` which is locally of finite type and has decent target, the set-theoretic fibre
@@ -950,7 +950,7 @@ theorem topologicalKrullDimAt_fibre_eq_zero_iff_isQuasiFiniteAt
 
 [Tag 0ACK](https://stacks.math.columbia.edu/tag/0ACK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_setFibre_of_finite_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibre.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibre.lean#L174). The attribute's comment: “condition (4) implies condition (1)”.
+**`AlgebraicGeometry.Space.finite_setFibre_of_finite_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibre.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibre.lean#L174). The attribute's comment: “condition (4) implies condition (1)”.
 
 > If the point set of the field fibre `X_k` of a morphism `f : X ⟶ Y` of algebraic spaces is
 > finite, then the set-theoretic fibre `f^{-1}({y}) ⊂ |X|` is finite.
@@ -963,7 +963,7 @@ theorem finite_setFibre_of_finite_fieldFibre
     (setFibre B S hS f p).Finite
 ```
 
-**`AlgebraicGeometry.Space.IsDiscreteSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L79). The attribute's comment: “condition (2)”.
+**`AlgebraicGeometry.Space.IsDiscreteSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L79). The attribute's comment: “condition (2)”.
 
 > The set-theoretic fibre `F = f^{-1}({y})`, with the topology induced from `|X|`, is a discrete
 > topological space.
@@ -972,7 +972,7 @@ theorem finite_setFibre_of_finite_fieldFibre
 def IsDiscreteSetFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsZeroDimensionalSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L85). The attribute's comment: “condition (3)”.
+**`AlgebraicGeometry.Space.IsZeroDimensionalSetFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L85). The attribute's comment: “condition (3)”.
 
 > The set-theoretic fibre `F = f^{-1}({y})`, with the topology induced from `|X|`, has dimension
 > zero.
@@ -981,7 +981,7 @@ def IsDiscreteSetFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 def IsZeroDimensionalSetFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsDiscreteFieldFibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L90). The attribute's comment: “condition (5)”.
+**`AlgebraicGeometry.Space.IsDiscreteFieldFibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L90). The attribute's comment: “condition (5)”.
 
 > The point set of the field fibre `X_k` is a discrete topological space.
 
@@ -989,7 +989,7 @@ def IsZeroDimensionalSetFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Pr
 def IsDiscreteFieldFibrePoints (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsZeroDimensionalFieldFibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L95). The attribute's comment: “condition (6)”.
+**`AlgebraicGeometry.Space.IsZeroDimensionalFieldFibrePoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L95). The attribute's comment: “condition (6)”.
 
 > The point set of the field fibre `X_k` has dimension zero.
 
@@ -997,7 +997,7 @@ def IsDiscreteFieldFibrePoints (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : P
 def IsZeroDimensionalFieldFibrePoints (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsZeroDimensionalFieldFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L103). The attribute's comment: “condition (7)”.
+**`AlgebraicGeometry.Space.IsZeroDimensionalFieldFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L103). The attribute's comment: “condition (7)”.
 
 > The field fibre `X_k`, as an algebraic space over `S`, has dimension zero in the sense of Tag
 > 04N6.
@@ -1007,7 +1007,7 @@ def IsZeroDimensionalFieldFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y)
     (hXk : IsAlgebraicSpace B S hS (fieldFibre B S hS f p)) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiFiniteAboveFieldValuedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L112). The attribute's comment: “condition (8)”.
+**`AlgebraicGeometry.Space.IsQuasiFiniteAboveFieldValuedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L112). The attribute's comment: “condition (8)”.
 
 > The morphism `f` is quasi-finite, in the sense of part (2) of Tag 03XJ, at every point of `|X|`
 > lying above the point of `|Y|` represented by `p`.
@@ -1016,7 +1016,7 @@ def IsZeroDimensionalFieldFibre (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y)
 def IsQuasiFiniteAboveFieldValuedPoint (f : X ⟶ Y) (p : FieldValuedPoint B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalSetFibre_of_isDiscreteSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L143). The attribute's comment: “condition (2) implies condition (3), nonempty fibre”.
+**`AlgebraicGeometry.Space.isZeroDimensionalSetFibre_of_isDiscreteSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L143). The attribute's comment: “condition (2) implies condition (3), nonempty fibre”.
 
 > A nonempty discrete set-theoretic fibre has dimension zero.
 
@@ -1027,7 +1027,7 @@ theorem isZeroDimensionalSetFibre_of_isDiscreteSetFibre (f : X ⟶ Y)
     IsZeroDimensionalSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L160). The attribute's comment: “condition (5) implies condition (6), nonempty fibre”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreConditions.lean#L160). The attribute's comment: “condition (5) implies condition (6), nonempty fibre”.
 
 > A nonempty discrete point set of the field fibre has dimension zero.
 
@@ -1038,7 +1038,7 @@ theorem isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoints (f : X �
     IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L190). The attribute's comment: “condition (5) implies condition (7), nonempty fibre”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L190). The attribute's comment: “condition (5) implies condition (7), nonempty fibre”.
 
 > **Stacks 0ACK, condition (5) implies condition (7)** for a nonempty fibre. If the point
 > space of the field fibre `X_k` is discrete and nonempty, then `X_k` has dimension zero as an
@@ -1060,7 +1060,7 @@ theorem isZeroDimensionalFieldFibre_of_isDiscreteFieldFibrePoints
     IsZeroDimensionalFieldFibre B S hS f p hXk
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L220). The attribute's comment: “conditions (5) and (8)”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L220). The attribute's comment: “conditions (5) and (8)”.
 
 > **Stacks 0ACK, conditions (5) and (8).** For a morphism locally of finite type and a
 > field-valued point of its target, the point space of the field fibre `X_k` is discrete exactly
@@ -1084,7 +1084,7 @@ theorem isDiscreteFieldFibrePoints_iff_isQuasiFiniteAboveFieldValuedPoint
       IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_setFibre_iff_discreteTopology_points_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L251). The attribute's comment: “conditions (2) and (5) for a decent target”.
+**`AlgebraicGeometry.Space.discreteTopology_setFibre_iff_discreteTopology_points_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreDiscreteDecent.lean#L251). The attribute's comment: “conditions (2) and (5) for a decent target”.
 
 > **Stacks 0ACK, conditions (2) and (5) for a decent target.** Let `f : X ⟶ Y` be a morphism
 > of algebraic spaces locally of finite type, let `p` be a field-valued point of `Y` with
@@ -1109,7 +1109,7 @@ theorem discreteTopology_setFibre_iff_discreteTopology_points_fieldFibre
       DiscreteTopology (points B S hS (fieldFibre B S hS f p))
 ```
 
-**`AlgebraicGeometry.Space.finite_univ_points_fieldFibre_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L144). The attribute's comment: “condition (1) implies condition (4), monomorphic representative”.
+**`AlgebraicGeometry.Space.finite_univ_points_fieldFibre_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEmbedding.lean#L144). The attribute's comment: “condition (1) implies condition (4), monomorphic representative”.
 
 > **Stacks 0ACK, condition (1) implies condition (4)** for a point represented by a
 > monomorphism. This is the converse of
@@ -1123,7 +1123,7 @@ theorem finite_univ_points_fieldFibre_of_finite_setFibre (f : X ⟶ Y)
     (Set.univ : Set (points B S hS (fieldFibre B S hS f p))).Finite
 ```
 
-**`AlgebraicGeometry.Space.discreteTopology_points_fieldFibre_of_finite_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean#L155). The attribute's comment: “condition (4) implies condition (5) for a decent morphism”.
+**`AlgebraicGeometry.Space.discreteTopology_points_fieldFibre_of_finite_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean#L155). The attribute's comment: “condition (4) implies condition (5) for a decent morphism”.
 
 > **Stacks 0ACK, condition (4) implies condition (5) for a decent morphism.** If `f` is a
 > decent morphism locally of finite type and the point set of the field fibre `X_k` is finite,
@@ -1144,7 +1144,7 @@ theorem discreteTopology_points_fieldFibre_of_finite_of_isDecent
     DiscreteTopology (points B S hS (fieldFibre B S hS f p))
 ```
 
-**`AlgebraicGeometry.Space.dimension_fieldFibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean#L192). The attribute's comment: “conditions (7) and (8)”.
+**`AlgebraicGeometry.Space.dimension_fieldFibre_eq_zero_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreEquivalences.lean#L192). The attribute's comment: “conditions (7) and (8)”.
 
 > **Stacks 0ACK, conditions (7) and (8).** For a morphism `f` locally of finite type and a
 > field-valued point `p` of its target with nonempty set-theoretic fibre, the field fibre `X_k`
@@ -1167,7 +1167,7 @@ theorem dimension_fieldFibre_eq_zero_iff_isQuasiFiniteAt
       ∀ x : points B S hS X, x ∈ setFibre B S hS f p → IsQuasiFiniteAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.finite_univ_points_fieldFibre_of_finite_setFibre_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreFiniteDecent.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreFiniteDecent.lean#L204). The attribute's comment: “condition (1) implies condition (4) for decent spaces”.
+**`AlgebraicGeometry.Space.finite_univ_points_fieldFibre_of_finite_setFibre_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreFiniteDecent.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreFiniteDecent.lean#L204). The attribute's comment: “condition (1) implies condition (4) for decent spaces”.
 
 > **Stacks 0ACK, condition (1) implies condition (4) for decent spaces.** Let `f : X ⟶ Y` be
 > a morphism of algebraic spaces over `S` which is locally of finite type, let `p` be a
@@ -1192,7 +1192,7 @@ theorem finite_univ_points_fieldFibre_of_finite_setFibre_of_isDecent
     (Set.univ : Set (points B S hS (fieldFibre B S hS f p))).Finite
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L147). The attribute's comment: “condition (7) implies condition (5)”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L147). The attribute's comment: “condition (7) implies condition (5)”.
 
 > **Stacks 0ACK, condition (7) implies condition (5).** If the field fibre `X_k` has
 > dimension zero as an algebraic space, then its point space `|X_k|` is discrete.
@@ -1209,7 +1209,7 @@ theorem isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibre
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibrePoints_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L164). The attribute's comment: “condition (7) implies condition (6)”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibrePoints_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L164). The attribute's comment: “condition (7) implies condition (6)”.
 
 > **Stacks 0ACK, condition (7) implies condition (6).** If the field fibre `X_k` has
 > dimension zero as an algebraic space, then its point space `|X_k|` has dimension zero.
@@ -1226,7 +1226,7 @@ theorem isZeroDimensionalFieldFibrePoints_of_isZeroDimensionalFieldFibre
     IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L235). The attribute's comment: “condition (7) implies condition (8)”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L235). The attribute's comment: “condition (7) implies condition (8)”.
 
 > **Stacks 0ACK, condition (7) implies condition (8).** If the field fibre `X_k` has
 > dimension zero as an algebraic space, then `f` is quasi-finite at every point of `|X|` above
@@ -1245,7 +1245,7 @@ theorem isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibre
     IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L254). The attribute's comment: “condition (8) implies condition (7), nonempty fibre”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L254). The attribute's comment: “condition (8) implies condition (7), nonempty fibre”.
 
 > **Stacks 0ACK, condition (8) implies condition (7).** If `f` is quasi-finite at every point
 > of `|X|` above the point represented by `p`, and the field fibre `X_k` has a point, then `X_k`
@@ -1266,7 +1266,7 @@ theorem isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedPoint
     IsZeroDimensionalFieldFibre B S hS f p hXk
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L278). The attribute's comment: “condition (8) implies condition (5)”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreQuasiFinite.lean#L278). The attribute's comment: “condition (8) implies condition (5)”.
 
 > **Stacks 0ACK, condition (8) implies condition (5).** If `f` is quasi-finite at every point
 > of `|X|` above the point represented by `p`, then the point space `|X_k|` of the field fibre is
@@ -1286,7 +1286,7 @@ theorem isDiscreteFieldFibrePoints_of_isQuasiFiniteAboveFieldValuedPoint
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints_of_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L227). The attribute's comment: “(6) implies (5), corrected: the source omits that |X\_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints_of_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L227). The attribute's comment: “(6) implies (5), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (5), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then it is discrete.
@@ -1311,7 +1311,7 @@ theorem isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints_of_t0Spa
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L248). The attribute's comment: “decent morphism: condition (6) implies condition (5)”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L248). The attribute's comment: “decent morphism: condition (6) implies condition (5)”.
 
 > **Stacks 0ACK, condition (6) implies condition (5), for a decent morphism.** If `f` is a
 > decent morphism locally of finite type and the point space of the field fibre `X_k` has Krull
@@ -1332,7 +1332,7 @@ theorem isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L271). The attribute's comment: “(6) implies (7), corrected: the source omits that |X\_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L271). The attribute's comment: “(6) implies (7), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (7), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then `X_k` has
@@ -1356,7 +1356,7 @@ theorem isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints
     IsZeroDimensionalFieldFibre B S hS f p hXk
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L294). The attribute's comment: “(6) implies (8), corrected: the source omits that |X\_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L294). The attribute's comment: “(6) implies (8), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (8), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then `f` is
@@ -1378,7 +1378,7 @@ theorem isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints
     IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L316). The attribute's comment: “conditions (5) and (6), corrected: |X\_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L316). The attribute's comment: “conditions (5) and (6), corrected: |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, conditions (5) and (6).** For a morphism locally of finite type and a
 > field-valued point of its target with nonempty field fibre whose point space is `T₀`, the point
@@ -1399,7 +1399,7 @@ theorem isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints
     IsDiscreteFieldFibrePoints B S hS f p ↔ IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L338). The attribute's comment: “conditions (6) and (7), corrected: |X\_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L338). The attribute's comment: “conditions (6) and (7), corrected: |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, conditions (6) and (7) for a decent morphism.** For a decent morphism
 > locally of finite type and a field-valued point of its target, the point space `|X_k|` of the
@@ -1422,7 +1422,7 @@ theorem isZeroDimensionalFieldFibre_iff_isZeroDimensionalFieldFibrePoints
     IsZeroDimensionalFieldFibre B S hS f p hXk ↔ IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteSetFibre_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L369). The attribute's comment: “decent target: (3) implies (2), corrected: F must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteSetFibre_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L369). The attribute's comment: “decent target: (3) implies (2), corrected: F must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (3) implies condition (2), for a decent target and a Kolmogorov
 > `F`.** Let `f : X ⟶ Y` be a morphism of algebraic spaces locally of finite type, let `p` be a
@@ -1453,7 +1453,7 @@ theorem isDiscreteSetFibre_of_isZeroDimensionalSetFibre
     IsDiscreteSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L394). The attribute's comment: “decent target: (3) implies (5), corrected: F must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L394). The attribute's comment: “decent target: (3) implies (5), corrected: F must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (3) implies condition (5), for a decent target and a Kolmogorov
 > `F`.** If the set-theoretic fibre `F` is `T₀` and has Krull dimension zero, `Y` is decent and
@@ -1472,7 +1472,7 @@ theorem isDiscreteFieldFibrePoints_of_isZeroDimensionalSetFibre
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteSetFibre_iff_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L413). The attribute's comment: “decent target: conditions (2) and (3), corrected: F must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteSetFibre_iff_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L413). The attribute's comment: “decent target: conditions (2) and (3), corrected: F must be Kolmogorov”.
 
 > **Stacks 0ACK, conditions (2) and (3) for a decent target and a Kolmogorov `F`.** For a
 > morphism locally of finite type into a decent algebraic space, and a field-valued point of the
@@ -1493,7 +1493,7 @@ theorem isDiscreteSetFibre_iff_isZeroDimensionalSetFibre
     IsDiscreteSetFibre B S hS f p ↔ IsZeroDimensionalSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.tfae_fibre_conditions_of_isDecentSpace_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L435). The attribute's comment: “decent target: conditions (2), (5), (7) and (8)”.
+**`AlgebraicGeometry.Space.tfae_fibre_conditions_of_isDecentSpace_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L435). The attribute's comment: “decent target: conditions (2), (5), (7) and (8)”.
 
 > **Stacks 0ACK, conditions (2), (5), (7) and (8) for a decent target.** Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces locally of finite type, let `Y` be a decent algebraic space and let
@@ -1516,7 +1516,7 @@ theorem tfae_fibre_conditions_of_isDecentSpace_target
       IsQuasiFiniteAboveFieldValuedPoint B S hS f p].TFAE
 ```
 
-**`AlgebraicGeometry.Space.tfae_fibre_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L473). The attribute's comment: “decent target: conditions (2), (3), (5), (6), (7) and (8), Kolmogorov fibres”.
+**`AlgebraicGeometry.Space.tfae_fibre_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L473). The attribute's comment: “decent target: conditions (2), (3), (5), (6), (7) and (8), Kolmogorov fibres”.
 
 > **Stacks 0ACK, conditions (2), (3), (5), (6), (7) and (8) for a decent target and
 > Kolmogorov fibres.** Let `f : X ⟶ Y` be a morphism of algebraic spaces locally of finite type,
@@ -1548,7 +1548,7 @@ theorem tfae_fibre_conditions
       IsQuasiFiniteAboveFieldValuedPoint B S hS f p].TFAE
 ```
 
-**`AlgebraicGeometry.Space.fibre_conditions_of_finite_setFibre_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L522). The attribute's comment: “decent spaces: condition (1) implies the other seven conditions”.
+**`AlgebraicGeometry.Space.fibre_conditions_of_finite_setFibre_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L522). The attribute's comment: “decent spaces: condition (1) implies the other seven conditions”.
 
 > **Stacks 0ACK, condition (1) implies all the other conditions, for decent spaces.** Let
 > `f : X ⟶ Y` be a morphism of algebraic spaces locally of finite type with `X` and `Y` both
@@ -1586,7 +1586,7 @@ theorem fibre_conditions_of_finite_setFibre_of_isDecent
       IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalSetFibre_of_isDiscreteSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L223). The attribute's comment: “(2) => (3) is false: an empty fibre is discrete of dimension -infinity”.
+**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalSetFibre_of_isDiscreteSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L223). The attribute's comment: “(2) => (3) is false: an empty fibre is discrete of dimension -infinity”.
 
 > **The source's implication from condition (2) to condition (3) is false.** There is a
 > decent algebraic space locally of finite type over a decent algebraic space, and a field-valued
@@ -1602,7 +1602,7 @@ theorem not_forall_isZeroDimensionalSetFibre_of_isDiscreteSetFibre :
         IsDiscreteSetFibre B S hS f p → IsZeroDimensionalSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L238). The attribute's comment: “(5) => (6) is false: an empty field fibre is discrete of dimension -infinity”.
+**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L238). The attribute's comment: “(5) => (6) is false: an empty field fibre is discrete of dimension -infinity”.
 
 > **The source's implication from condition (5) to condition (6) is false.** The field fibre
 > over a field-valued point outside the image has no points, so its point set is discrete and has
@@ -1618,7 +1618,7 @@ theorem not_forall_isZeroDimensionalFieldFibrePoints_of_isDiscreteFieldFibrePoin
           IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L254). The attribute's comment: “(8) => (7) is false: an empty field fibre has dimension -infinity”.
+**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L254). The attribute's comment: “(8) => (7) is false: an empty field fibre has dimension -infinity”.
 
 > **The source's implication from condition (8) to condition (7) is false.** A morphism is
 > quasi-finite above every point outside its image, while the field fibre there has no points and
@@ -1634,7 +1634,7 @@ theorem not_forall_isZeroDimensionalFieldFibre_of_isQuasiFiniteAboveFieldValuedP
           IsZeroDimensionalFieldFibre B S hS f p (isAlgebraicSpace_fieldFibre hX hY f p)
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalSetFibre_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L273). The attribute's comment: “decent spaces: (1) => (3) is false: an empty fibre is finite of dimension -infinity”.
+**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalSetFibre_of_finite_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/EmptyFibreNotZeroDimensional.lean#L273). The attribute's comment: “decent spaces: (1) => (3) is false: an empty fibre is finite of dimension -infinity”.
 
 > **The source's last clause is false.** Stacks 0ACK asserts that when `X` and `Y` are
 > decent, condition (1) implies all the other conditions; the empty fibre is finite while failing
@@ -1652,7 +1652,7 @@ theorem not_forall_isZeroDimensionalSetFibre_of_finite_setFibre :
         (setFibre B S hS f p).Finite → IsZeroDimensionalSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L197). The attribute's comment: “the unrestricted (6) => (5) is false, even for a decent target”.
+**`AlgebraicGeometry.Space.not_forall_isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L197). The attribute's comment: “the unrestricted (6) => (5) is false, even for a decent target”.
 
 > **The source's unrestricted implication from condition (6) to condition (5) is false.**
 > There is a morphism of algebraic spaces locally of finite type into a decent algebraic space,
@@ -1670,7 +1670,7 @@ theorem not_forall_isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoin
           IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L217). The attribute's comment: “the source's unrestricted (6) => (7) is false, even for a decent target”.
+**`AlgebraicGeometry.Space.not_forall_isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L217). The attribute's comment: “the source's unrestricted (6) => (7) is false, even for a decent target”.
 
 > **The source's unrestricted implication from condition (6) to condition (7) is false.**
 > Condition (7) implies condition (5) with no further hypothesis, which condition (6) does not.
@@ -1686,7 +1686,7 @@ theorem not_forall_isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoi
           IsZeroDimensionalFieldFibre B S hS f p (isAlgebraicSpace_fieldFibre hX hY f p)
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L235). The attribute's comment: “the source's unrestricted (6) => (8) is false, even for a decent target”.
+**`AlgebraicGeometry.Space.not_forall_isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L235). The attribute's comment: “the source's unrestricted (6) => (8) is false, even for a decent target”.
 
 > **The source's unrestricted implication from condition (6) to condition (8) is false.**
 > Conditions (5) and (8) are equivalent with no further hypothesis, and condition (6) implies
@@ -1703,7 +1703,7 @@ theorem not_forall_isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldF
           IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L252). The attribute's comment: “the row (5) <=> (6) <=> (7) <=> (8) is false as stated”.
+**`AlgebraicGeometry.Space.not_forall_isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L252). The attribute's comment: “the row (5) <=> (6) <=> (7) <=> (8) is false as stated”.
 
 > **The source's equivalence of conditions (5) and (6) is false.** This is the negation of
 > that equivalence, in the source's own vocabulary.
@@ -1719,7 +1719,7 @@ theorem not_forall_isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoi
           IsZeroDimensionalFieldFibrePoints B S hS f p)
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isDiscreteSetFibre_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L293). The attribute's comment: “the decent-target clause's (3) => (2) is false”.
+**`AlgebraicGeometry.Space.not_forall_isDiscreteSetFibre_of_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L293). The attribute's comment: “the decent-target clause's (3) => (2) is false”.
 
 > **The source's implication from condition (3) to condition (2) for a decent target is
 > false.** There is a morphism of algebraic spaces locally of finite type into a decent algebraic
@@ -1736,7 +1736,7 @@ theorem not_forall_isDiscreteSetFibre_of_isZeroDimensionalSetFibre :
         IsZeroDimensionalSetFibre B S hS f p → IsDiscreteSetFibre B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.not_forall_isDiscreteSetFibre_iff_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L312). The attribute's comment: “the decent-target clause's (2) <=> (3) is false as stated”.
+**`AlgebraicGeometry.Space.not_forall_isDiscreteSetFibre_iff_isZeroDimensionalSetFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/FieldFibreZeroDimensionalNotDiscrete.lean#L312). The attribute's comment: “the decent-target clause's (2) <=> (3) is false as stated”.
 
 > **The source's equivalence of conditions (2) and (3) for a decent target is false.** This is
 > the negation of that equivalence, in the source's own vocabulary.
@@ -1758,4 +1758,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.18, Tag 0AC0](https://stacks.math.columbia.edu/tag/0AC0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

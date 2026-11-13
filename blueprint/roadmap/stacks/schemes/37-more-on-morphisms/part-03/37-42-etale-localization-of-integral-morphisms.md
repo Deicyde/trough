@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.42 Étale localization of integral morphisms
 
-Section 37.42 of the Stacks Project, [Tag 0BUH](https://stacks.math.columbia.edu/tag/0BUH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.42 of the Stacks Project, [Tag 0BUH](https://stacks.math.columbia.edu/tag/0BUH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BSR, a lemma
 
 [Tag 0BSR](https://stacks.math.columbia.edu/tag/0BSR) in the Stacks Project.
 
-**`Algebra.exists_etale_completeOrthogonalIdempotents_integral_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/IntegralSplitting.lean, line 1285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/IntegralSplitting.lean#L1285).
+**`Algebra.exists_etale_completeOrthogonalIdempotents_integral_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/IntegralSplitting.lean, line 1284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/IntegralSplitting.lean#L1284).
 
 > **Splitting an integral algebra after an étale extension.**
 > If an integral `R`-algebra `S` has finitely many primes over `p`, and the maximal separable
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.42, Tag 0BUH](https://stacks.math.columbia.edu/tag/0BUH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

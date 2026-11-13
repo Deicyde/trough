@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.66 Ind-quasi-affine morphisms
 
-Section 37.66 of the Stacks Project, [Tag 0AP5](https://stacks.math.columbia.edu/tag/0AP5). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.66 of the Stacks Project, [Tag 0AP5](https://stacks.math.columbia.edu/tag/0AP5). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AP6, a definition
 
 [Tag 0AP6](https://stacks.math.columbia.edu/tag/0AP6) in the Stacks Project.
 
-**`AlgebraicGeometry.IsIndQuasiAffine`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean#L39). The attribute's comment: “schemes”.
+**`AlgebraicGeometry.IsIndQuasiAffine`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean#L39). The attribute's comment: “schemes”.
 
 > A scheme is ind-quasi-affine if each quasi-compact open subscheme is quasi-affine.
 
@@ -22,7 +22,7 @@ Section 37.66 of the Stacks Project, [Tag 0AP5](https://stacks.math.columbia.edu
 class IsIndQuasiAffine (X : Scheme.{u}) : Prop
 ```
 
-**`AlgebraicGeometry.IsIndQuasiAffineHom`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean#L48). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.IsIndQuasiAffineHom`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffine.lean#L48). The attribute's comment: “morphisms”.
 
 > A morphism of schemes is ind-quasi-affine if the inverse image of every affine open subscheme
 > of its target is an ind-quasi-affine scheme.
@@ -35,7 +35,7 @@ class IsIndQuasiAffineHom {X Y : Scheme.{u}} (f : X ⟶ Y) : Prop
 
 [Tag 0F1U](https://stacks.math.columbia.edu/tag/0F1U) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean#L106). The attribute's comment: “equivalent characterizations”.
+**`AlgebraicGeometry.isIndQuasiAffineHom_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean#L106). The attribute's comment: “equivalent characterizations”.
 
 > Ind-quasi-affineness of a morphism of schemes can be tested on the quasi-compact open
 > subschemes above the affine opens of the target, above the members of one cover of the target by
@@ -61,7 +61,7 @@ theorem isIndQuasiAffineHom_tfae {X Y : Scheme.{u}} (f : X ⟶ Y) :
           IsQuasiAffineHom (U.ι ≫ f ∣_ V)]
 ```
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_isZariskiLocalAtTarget`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean#L242). The attribute's comment: “Zariski locality on the base”.
+**`AlgebraicGeometry.isIndQuasiAffineHom_isZariskiLocalAtTarget`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Characterization.lean#L242). The attribute's comment: “Zariski locality on the base”.
 
 > Being an ind-quasi-affine morphism is Zariski local on the base.
 
@@ -74,7 +74,7 @@ instance isIndQuasiAffineHom_isZariskiLocalAtTarget :
 
 [Tag 0F1V](https://stacks.math.columbia.edu/tag/0F1V) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean#L71).
+**`AlgebraicGeometry.isIndQuasiAffineHom_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean#L71).
 
 > Being an ind-quasi-affine morphism of schemes is stable under composition.
 
@@ -88,7 +88,7 @@ instance isIndQuasiAffineHom_isStableUnderComposition :
 
 [Tag 0F1W](https://stacks.math.columbia.edu/tag/0F1W) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean#L36). The attribute's comment: “quasi-affine morphisms”.
+**`AlgebraicGeometry.isIndQuasiAffineHom_of_isQuasiAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean#L36). The attribute's comment: “quasi-affine morphisms”.
 
 > A quasi-affine morphism of schemes is ind-quasi-affine.
 
@@ -97,7 +97,7 @@ instance isIndQuasiAffineHom_of_isQuasiAffineHom {X Y : Scheme.{u}} (f : X ⟶ Y
     [IsQuasiAffineHom f] : IsIndQuasiAffineHom f
 ```
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_of_isImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean#L45). The attribute's comment: “immersions”.
+**`AlgebraicGeometry.isIndQuasiAffineHom_of_isImmersion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/QuasiAffineAndImmersion.lean#L45). The attribute's comment: “immersions”.
 
 > An immersion of schemes is ind-quasi-affine.
 
@@ -110,7 +110,7 @@ instance isIndQuasiAffineHom_of_isImmersion {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0F1X](https://stacks.math.columbia.edu/tag/0F1X) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean#L79).
+**`AlgebraicGeometry.isIndQuasiAffineHom_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/Comp.lean#L79).
 
 > If the composite `f ≫ g` of two morphisms of schemes is ind-quasi-affine, then `f` is
 > ind-quasi-affine.
@@ -124,7 +124,7 @@ theorem isIndQuasiAffineHom_of_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y �
 
 [Tag 0AP7](https://stacks.math.columbia.edu/tag/0AP7) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/BaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/BaseChange.lean#L41).
+**`AlgebraicGeometry.isIndQuasiAffineHom_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/BaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/BaseChange.lean#L41).
 
 > Ind-quasi-affine morphisms of schemes are stable under arbitrary base change.
 
@@ -138,7 +138,7 @@ instance isIndQuasiAffineHom_isStableUnderBaseChange :
 
 [Tag 0AP8](https://stacks.math.columbia.edu/tag/0AP8) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/FpqcDescent.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/FpqcDescent.lean#L55).
+**`AlgebraicGeometry.isIndQuasiAffineHom_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/FpqcDescent.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/IndQuasiAffine/FpqcDescent.lean#L55).
 
 > Being an ind-quasi-affine morphism of schemes is fpqc local on the base.
 
@@ -152,7 +152,7 @@ instance isIndQuasiAffineHom_isLocalAtTarget_fpqc :
 
 [Tag 0AP9](https://stacks.math.columbia.edu/tag/0AP9) in the Stacks Project.
 
-**`AlgebraicGeometry.isIndQuasiAffineHom_of_isSeparated_of_locallyQuasiFinite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffineSeparated.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffineSeparated.lean#L59).
+**`AlgebraicGeometry.isIndQuasiAffineHom_of_isSeparated_of_locallyQuasiFinite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffineSeparated.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IndQuasiAffineSeparated.lean#L59).
 
 > A separated morphism of schemes which is locally quasi-finite and locally of finite type is
 > ind-quasi-affine.
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.66, Tag 0AP5](https://stacks.math.columbia.edu/tag/0AP5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

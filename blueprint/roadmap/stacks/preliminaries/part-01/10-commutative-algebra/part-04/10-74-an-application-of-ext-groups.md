@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.74 An application of Ext groups
 
-Section 10.74 of the Stacks Project, [Tag 02HN](https://stacks.math.columbia.edu/tag/02HN). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.74 of the Stacks Project, [Tag 02HN](https://stacks.math.columbia.edu/tag/02HN). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02HO, a lemma
 
 [Tag 02HO](https://stacks.math.columbia.edu/tag/02HO) in the Stacks Project.
 
-**`split_injection_of_arbitrarily_large_split_mod_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/SplitInjection.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/SplitInjection.lean#L439). References: EGA 0 (19.1.8), “partial”.
+**`split_injection_of_arbitrarily_large_split_mod_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/SplitInjection.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/SplitInjection.lean#L439). References: EGA 0 (19.1.8), “partial”.
 
 > **Theorem (Stacks Tag 02HO, Lemma 10.74.1).**
 > Let `R` be a Noetherian commutative ring, `I ⊆ R` an ideal contained in the Jacobson
@@ -39,4 +39,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.74, Tag 02HN](https://stacks.math.columbia.edu/tag/02HN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

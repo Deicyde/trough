@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.8 Fitting ideals
 
-Section 15.8 of the Stacks Project, [Tag 07Z6](https://stacks.math.columbia.edu/tag/07Z6). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.8 of the Stacks Project, [Tag 07Z6](https://stacks.math.columbia.edu/tag/07Z6). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07Z7, a lemma
 
 [Tag 07Z7](https://stacks.math.columbia.edu/tag/07Z7) in the Stacks Project.
 
-**`minorIdeal_succ_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L78). The attribute's comment: “(1)”.
+**`minorIdeal_succ_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L78). The attribute's comment: “(1)”.
 
 > **Stacks 07Z7** (part 1).
 > For every `r ≥ 0`, `I_{r+1}(A) ⊆ I_r(A)`; equivalently
@@ -26,7 +26,7 @@ theorem minorIdeal_succ_le {R : Type*} [CommRing R] {l o : Type*}
     minorIdeal A (r + 1) ≤ minorIdeal A r
 ```
 
-**`minorIdeal_fromRows_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L188). The attribute's comment: “(2)”.
+**`minorIdeal_fromRows_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L188). The attribute's comment: “(2)”.
 
 > **Stacks 07Z7** (part 2).
 > If `B = fromRows A C` consists of the `n` rows of `A` followed by `n'` extra rows `C`, then
@@ -38,7 +38,7 @@ theorem minorIdeal_fromRows_le {R : Type*} [CommRing R] {m : Type*}
     minorIdeal (Matrix.fromRows A C) (r + n') ≤ minorIdeal A r
 ```
 
-**`minorIdeal_mul_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L223). The attribute's comment: “(3)”.
+**`minorIdeal_mul_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L223). The attribute's comment: “(3)”.
 
 > **Stacks 07Z7** (part 3).
 > For a square matrix `C` and the product `C * A`,
@@ -50,7 +50,7 @@ theorem minorIdeal_mul_le {R : Type*} [CommRing R] {l o : Type*}
     minorIdeal (C * A) r ≤ minorIdeal A r
 ```
 
-**`minorIdeal_fromBlocks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L471). The attribute's comment: “(4)”.
+**`minorIdeal_fromBlocks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/MinorIdeal.lean#L471). The attribute's comment: “(4)”.
 
 > **Stacks 07Z7** (part 4).
 > For the block diagonal matrix `diag(A₁, A₂) = fromBlocks A₁ 0 0 A₂`,
@@ -64,7 +64,7 @@ theorem minorIdeal_fromBlocks {R : Type*} [CommRing R] {l₁ o₁ l₂ o₂ : Ty
       ∑ p ∈ Finset.antidiagonal r, minorIdeal A₁ p.1 * minorIdeal A₂ p.2
 ```
 
-**`Stacks.Fitting.fittingIdeal_monotone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 886](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L886). The attribute's comment: “(1), for Fitting ideals”. References: SGA 7 VI (5.1).
+**`Stacks.Fitting.fittingIdeal_monotone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L899). The attribute's comment: “(1), for Fitting ideals”. References: SGA 7 VI (5.1).
 
 > **Stacks Project, Tag 07Z7.** The Fitting ideals of a finite module increase.
 
@@ -78,7 +78,7 @@ theorem fittingIdeal_monotone {R : Type*} [CommRing R] {M : Type*}
 
 [Tag 07Z8](https://stacks.math.columbia.edu/tag/07Z8) in the Stacks Project.
 
-**`minorIdeal_eq_of_quotientLinearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdealInvariance.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/MinorIdealInvariance.lean#L474). References: SGA 7 VI (4.16), “Section 5, special case”.
+**`minorIdeal_eq_of_quotientLinearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/MinorIdealInvariance.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/MinorIdealInvariance.lean#L474). References: SGA 7 VI (4.16), “Section 5, special case”.
 
 > **Stacks 07Z8.** The ideal generated by the `(n - k) × (n - k)` minors of a presentation
 > matrix of a finite module is independent of the presentation: if `A` has `n` rows, `B` has `m`
@@ -100,7 +100,7 @@ theorem minorIdeal_eq_of_quotientLinearEquiv {R : Type*} [CommRing R]
 
 [Tag 07Z9](https://stacks.math.columbia.edu/tag/07Z9) in the Stacks Project.
 
-**`fittingIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L76). References: SGA 7 VI (4.16).
+**`fittingIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L78). References: SGA 7 VI (4.16).
 
 > The `k`th Fitting ideal of a finite module. For negative indices, in particular `-1`, it is
 > the zero ideal. For nonnegative indices it is generated by the minors of a finite free
@@ -111,7 +111,7 @@ noncomputable def fittingIdeal {R : Type*} [CommRing R] {M : Type*}
     [AddCommGroup M] [Module R M] [Module.Finite R M] (k : ℤ) : Ideal R
 ```
 
-**`fittingIdeal_eq_minorIdeal_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L94). References: SGA 7 VI (4.16), “partial”.
+**`fittingIdeal_eq_minorIdeal_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L96). References: SGA 7 VI (4.16), “partial”.
 
 > **Stacks 07Z9.** The Fitting ideal agrees with the minor ideal of any finite free
 > presentation of the module, not only the presentation chosen in the definition.
@@ -129,7 +129,7 @@ theorem fittingIdeal_eq_minorIdeal_of_presentation {R : Type*} [CommRing R]
 
 [Tag 07ZA](https://stacks.math.columbia.edu/tag/07ZA) in the Stacks Project.
 
-**`fittingIdeal_basic_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L670). References: SGA 7 VI (5.1).
+**`fittingIdeal_basic_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L671). References: SGA 7 VI (5.1).
 
 > **Stacks 07ZA.** Basic properties of the Fitting ideals of a finite module: generation in
 > bounded degree, compatibility with direct sums and scalar extension, finite generation for
@@ -168,7 +168,7 @@ theorem fittingIdeal_basic_properties {R : Type u} [CommRing R]
 
 [Tag 07ZB](https://stacks.math.columbia.edu/tag/07ZB) in the Stacks Project.
 
-**`fittingIdeal_fin_eq_bot_or_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L727).
+**`fittingIdeal_fin_eq_bot_or_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L740).
 
 > **Stacks 07ZB.** The Fitting ideal of a finite free module is zero below its rank and the
 > unit ideal from its rank onward.
@@ -183,7 +183,7 @@ theorem fittingIdeal_fin_eq_bot_or_top {R : Type*} [CommRing R] (n : ℕ) (k : �
 
 [Tag 0H73](https://stacks.math.columbia.edu/tag/0H73) in the Stacks Project.
 
-**`fittingIdeal_quotient_and_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 858](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Basic.lean#L858).
+**`fittingIdeal_quotient_and_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Basic.lean, line 871](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Basic.lean#L871).
 
 > **Stacks 0H73.** The zeroth Fitting ideal of `R ⧸ I` is `I`; for the direct sum of two such
 > quotients, the zeroth and first Fitting ideals are respectively the product and sum of the
@@ -200,7 +200,7 @@ theorem fittingIdeal_quotient_and_prod {R : Type*} [CommRing R] (I J : Ideal R) 
 
 [Tag 07ZC](https://stacks.math.columbia.edu/tag/07ZC) in the Stacks Project.
 
-**`fittingIdeal_local_generation_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Rank.lean#L231).
+**`fittingIdeal_local_generation_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Rank.lean#L231).
 
 > Let `M` be a finite module over a commutative ring `R`, let `k` be a natural
 > number, and let `p` be a prime ideal of `R`. The following are equivalent: the `k`th Fitting ideal
@@ -226,7 +226,7 @@ theorem fittingIdeal_local_generation_tfae
 
 [Tag 07ZD](https://stacks.math.columbia.edu/tag/07ZD) in the Stacks Project.
 
-**`finiteLocallyFreeOfRank_fittingIdeal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Rank.lean#L359). References: SGA 7 VI (5.1), “5.1(b), special case”.
+**`finiteLocallyFreeOfRank_fittingIdeal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Rank.lean#L359). References: SGA 7 VI (5.1), “5.1(b), special case”.
 
 > A finite module is finite locally free of rank `r` if and only if its
 > `(r - 1)`st Fitting ideal is zero and its `r`th Fitting ideal is the unit ideal; equivalently, all
@@ -249,7 +249,7 @@ theorem finiteLocallyFreeOfRank_fittingIdeal_tfae
 
 [Tag 080Z](https://stacks.math.columbia.edu/tag/080Z) in the Stacks Project.
 
-**`exists_fin_generating_family_quotient_ker_lsmul_of_fittingIdeal_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/Rank.lean#L636).
+**`exists_fin_generating_family_quotient_ker_lsmul_of_fittingIdeal_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/Rank.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/Rank.lean#L636).
 
 > If the `k`th Fitting ideal of a finite module over a local ring is generated
 > by `f`, then the quotient by the submodule of elements annihilated by `f` is generated by `k`
@@ -268,7 +268,7 @@ theorem exists_fin_generating_family_quotient_ker_lsmul_of_fittingIdeal_eq_span_
 
 [Tag 0F7M](https://stacks.math.columbia.edu/tag/0F7M) in the Stacks Project.
 
-**`hasProjectiveDimensionLE_one_and_split_of_fittingIdeal_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ProjectiveDimension.lean, line 1083](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ProjectiveDimension.lean#L1083).
+**`hasProjectiveDimensionLE_one_and_split_of_fittingIdeal_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ProjectiveDimension.lean, line 1083](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Fitting/ProjectiveDimension.lean#L1083).
 
 > **Stacks 0F7M.** Let `M` be a finitely presented module. If its `k`th Fitting ideal is
 > generated by a nonzerodivisor `f` and its `(k - 1)`st Fitting ideal vanishes, then `M` and its
@@ -301,4 +301,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.8, Tag 07Z6](https://stacks.math.columbia.edu/tag/07Z6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # Mathematical Biology
 
-2,949 results of ATLAS's vault, 2,934 proved, 3 with `sorry` in their value, 8 stated but not proved and 4 without a declaration, in this subject's topics.
+2,949 results of ATLAS's vault, 2,938 proved, 3 with `sorry` in their value, 4 stated but not proved and 4 without a declaration, in this subject's topics.
 
 Mathematical biology models populations, genomes, and biochemical networks, from coalescents and reaction dynamics to the algorithms that read biological sequences.
 

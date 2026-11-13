@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.64 Locally constant sheaves
 
-Section 59.64 of the Stacks Project, [Tag 09Y8](https://stacks.math.columbia.edu/tag/09Y8). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.64 of the Stacks Project, [Tag 09Y8](https://stacks.math.columbia.edu/tag/09Y8). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03RU, a definition
 
 [Tag 03RU](https://stacks.math.columbia.edu/tag/03RU) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.IsLocallyConstant`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L73). The attribute's comment: “finite locally constant sheaves of sets and of abelian groups”. References: EGA 0 (3.6.1), “locally simple”; SGA 3 X (9.2.1), “(2), (4)”; SGA 4 IX (2.0), “locally constant”.
+**`Stacks.ConstantSheaf.IsLocallyConstant`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L73). The attribute's comment: “finite locally constant sheaves of sets and of abelian groups”. References: EGA 0 (3.6.1), “locally simple”; SGA 3 X (9.2.1), “(2), (4)”; SGA 4 IX (2.0), “locally constant”.
 
 > **Stacks 093Q (2).** A sheaf is locally constant if every object of the site has a covering
 > on each member of which its restriction is a constant sheaf.
@@ -23,7 +23,7 @@ Section 59.64 of the Stacks Project, [Tag 09Y8](https://stacks.math.columbia.edu
 class IsLocallyConstant [∀ U : C, HasWeakSheafify (J.over U) D] (F : Sheaf J D) : Prop
 ```
 
-**`Stacks.ConstantSheaf.IsFiniteLocallyConstant`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L86). The attribute's comment: “finite locally constant sheaves of sets and of abelian groups”.
+**`Stacks.ConstantSheaf.IsFiniteLocallyConstant`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L86). The attribute's comment: “finite locally constant sheaves of sets and of abelian groups”.
 
 > **Stacks 093Q (3).** A sheaf with values in a concrete category is finite locally constant
 > if every object of the site has a covering on each member of which it is a constant sheaf with
@@ -38,13 +38,13 @@ class IsFiniteLocallyConstant {FD : D → D → Type*} {CD : D → Type w}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Sheaf.IsConstant`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.IsConstant#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L61) (StacksFrontier): “constant sheaves of sets, of abelian groups and of Lambda-modules”. References: EGA 0 (3.6.1); SGA 4 IV (2.7.5); SGA 4 IV (4.3.4); SGA 4 IX (2.0).
+- [`CategoryTheory.Sheaf.IsConstant`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.IsConstant#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/Defs.lean#L61) (StacksFrontier): “constant sheaves of sets, of abelian groups and of Lambda-modules”. References: EGA 0 (3.6.1); SGA 4 IV (2.7.5); SGA 4 IV (4.3.4); SGA 4 IX (2.0).
 
 ## Tag 095A, a lemma
 
 [Tag 095A](https://stacks.math.columbia.edu/tag/095A) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstant_smallEtaleSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantPullback/SmallEtaleInverseImage.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantPullback/SmallEtaleInverseImage.lean#L129). The attribute's comment: “small étale inverse image”.
+**`AlgebraicGeometry.isLocallyConstant_smallEtaleSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantPullback/SmallEtaleInverseImage.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantPullback/SmallEtaleInverseImage.lean#L129). The attribute's comment: “small étale inverse image”.
 
 > **Tag 093R for small étale sites.** The inverse image of a locally constant sheaf along a
 > morphism of small étale sites is locally constant, for arbitrary coefficients.
@@ -63,7 +63,7 @@ public theorem isLocallyConstant_smallEtaleSheafPullback
 
 [Tag 095B](https://stacks.math.columbia.edu/tag/095B) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L486). The attribute's comment: “locally constant sheaves of sets”.
+**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L486). The attribute's comment: “locally constant sheaves of sets”.
 
 > Direct image of a locally constant étale sheaf of sets along a finite étale
 > morphism is locally constant.
@@ -78,7 +78,7 @@ public theorem isLocallyConstant_finiteEtalePushforward {X Y : Scheme.{u}}
         (Type (max (u + 1) v)) (smallEtaleTopology Y) (smallEtaleTopology X)).obj F)
 ```
 
-**`Stacks.ConstantSheaf.isFiniteLocallyConstant_finiteEtalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L502). The attribute's comment: “finite locally constant sheaves of sets”.
+**`Stacks.ConstantSheaf.isFiniteLocallyConstant_finiteEtalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L502). The attribute's comment: “finite locally constant sheaves of sets”.
 
 > Direct image of a finite locally constant étale sheaf of sets along a finite
 > étale morphism is finite locally constant.
@@ -93,7 +93,7 @@ public theorem isFiniteLocallyConstant_finiteEtalePushforward {X Y : Scheme.{u}}
         (Type (max (u + 1) v)) (smallEtaleTopology Y) (smallEtaleTopology X)).obj F)
 ```
 
-**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L518). The attribute's comment: “locally constant sheaves of abelian groups”.
+**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L518). The attribute's comment: “locally constant sheaves of abelian groups”.
 
 > Direct image of a locally constant étale sheaf of abelian groups along a
 > finite étale morphism is locally constant.
@@ -110,7 +110,7 @@ public theorem isLocallyConstant_finiteEtalePushforward_abelian {X Y : Scheme.{u
         AddCommGrpCat.{max (u + 1) v} (smallEtaleTopology Y) (smallEtaleTopology X)).obj F)
 ```
 
-**`Stacks.ConstantSheaf.isFiniteLocallyConstant_finiteEtalePushforward_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L536). The attribute's comment: “finite locally constant sheaves of abelian groups”.
+**`Stacks.ConstantSheaf.isFiniteLocallyConstant_finiteEtalePushforward_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L536). The attribute's comment: “finite locally constant sheaves of abelian groups”.
 
 > Direct image of a finite locally constant étale sheaf of abelian groups
 > along a finite étale morphism is finite locally constant.
@@ -127,7 +127,7 @@ public theorem isFiniteLocallyConstant_finiteEtalePushforward_abelian {X Y : Sch
         AddCommGrpCat.{max (u + 1) v} (smallEtaleTopology Y) (smallEtaleTopology X)).obj F)
 ```
 
-**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L554). The attribute's comment: “locally constant sheaves of modules”.
+**`Stacks.ConstantSheaf.isLocallyConstant_finiteEtalePushforward_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L554). The attribute's comment: “locally constant sheaves of modules”.
 
 > Direct image of a locally constant étale sheaf of modules along a finite
 > étale morphism is locally constant.
@@ -145,7 +145,7 @@ public theorem isLocallyConstant_finiteEtalePushforward_modules {X Y : Scheme.{u
         (ModuleCat.{max (u + 1) v} R) (smallEtaleTopology Y) (smallEtaleTopology X)).obj F)
 ```
 
-**`Stacks.ConstantSheaf.isFiniteTypeLocallyConstant_finiteEtalePushforward_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L573). The attribute's comment: “finite-type locally constant sheaves of modules”.
+**`Stacks.ConstantSheaf.isFiniteTypeLocallyConstant_finiteEtalePushforward_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/FiniteEtalePushforward/LocallyQConstant.lean#L573). The attribute's comment: “finite-type locally constant sheaves of modules”.
 
 > Direct image of a finite-type locally constant étale sheaf of modules
 > along a finite étale morphism is finite-type locally constant.
@@ -167,7 +167,7 @@ public theorem isFiniteTypeLocallyConstant_finiteEtalePushforward_modules {X Y :
 
 [Tag 03RV](https://stacks.math.columbia.edu/tag/03RV) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isFiniteLocallyConstant_iff_finiteEtaleRepresentable_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/EtaleLocalRepresentability.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/EtaleLocalRepresentability.lean#L179).
+**`Stacks.EtaleCohomology.isFiniteLocallyConstant_iff_finiteEtaleRepresentable_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/EtaleLocalRepresentability.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/EtaleLocalRepresentability.lean#L179).
 
 > A sheaf of sets on the small étale site of `X` is finite locally constant if and only if it is
 > represented by an object of the site whose structure morphism is finite, that is, by a scheme
@@ -188,7 +188,7 @@ public theorem isFiniteLocallyConstant_iff_finiteEtaleRepresentable_of_descent
             (Sheaf.sheafifiedYoneda (SmallEtale.topology B X.1 X.property)).obj U)
 ```
 
-**`Stacks.EtaleCohomology.isFiniteLocallyConstant_iff_finiteEtaleRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/RepresentabilityDescent.lean, line 1316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/RepresentabilityDescent.lean#L1316). References: SGA 4 IX (2.2).
+**`Stacks.EtaleCohomology.isFiniteLocallyConstant_iff_finiteEtaleRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/RepresentabilityDescent.lean, line 1320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/RepresentabilityDescent.lean#L1320). References: SGA 4 IX (2.2).
 
 > **Stacks Project, Tag 03RV.** A sheaf of sets on the small étale site of `X` is finite
 > locally constant if and only if it is represented by an object of the site whose structure
@@ -212,7 +212,7 @@ public theorem isFiniteLocallyConstant_iff_finiteEtaleRepresentable
             (Sheaf.sheafifiedYoneda (SmallEtale.topology B X.1 X.2)).obj U)
 ```
 
-**`AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L67). The attribute's comment: “the equivalence of categories; the object-level statement is Stacks.EtaleCohomology.isFiniteLocallyConstant\_iff\_finiteEtaleRepresentable”.
+**`AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L67). The attribute's comment: “the equivalence of categories; the object-level statement is Stacks.EtaleCohomology.isFiniteLocallyConstant\_iff\_finiteEtaleRepresentable”.
 
 > The equivalence between the finite locally constant sheaves of sets on the small étale site
 > of `X` and the finite étale covers of `X`.
@@ -226,7 +226,7 @@ public noncomputable def finiteLocallyConstantFiniteEtaleEquivalence :
 
 [Tag 095C](https://stacks.math.columbia.edu/tag/095C) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L68). The attribute's comment: “sheaves of sets”. References: SGA 4 IX (2.1), “(i), étale site”.
+**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L68). The attribute's comment: “sheaves of sets”. References: SGA 4 IX (2.1), “(i), étale site”.
 
 > **Stacks 095C (1).** A morphism of locally constant sheaves of sets on the small étale site
 > of a scheme, whose source is finite locally constant, is on an étale covering of any object the
@@ -250,7 +250,7 @@ lemma exists_etaleCover_restrict_eq_constantSheaf_map
                 eF.hom ≫ ((smallEtaleTopology X).overPullback (Type w) (V i)).map φ
 ```
 
-**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map_abelian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L89). The attribute's comment: “sheaves of abelian groups”. References: SGA 4 IX (2.1), “(ii) map, étale abelian”.
+**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map_abelian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L89). The attribute's comment: “sheaves of abelian groups”. References: SGA 4 IX (2.1), “(ii) map, étale abelian”.
 
 > **Stacks 095C (2).** A morphism of locally constant sheaves of abelian groups on the small
 > étale site of a scheme, whose source is finite locally constant, is on an étale covering of any
@@ -274,7 +274,7 @@ lemma exists_etaleCover_restrict_eq_constantSheaf_map_abelian [UnivLE.{u + 1, w}
                 eF.hom ≫ ((smallEtaleTopology X).overPullback Ab.{w} (V i)).map φ
 ```
 
-**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map_modules`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L110). The attribute's comment: “sheaves of modules”. References: SGA 4 IX (2.1), “(ii) map, étale site”.
+**`Stacks.ConstantSheaf.exists_etaleCover_restrict_eq_constantSheaf_map_modules`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleLocallyConstantMorphisms.lean#L110). The attribute's comment: “sheaves of modules”. References: SGA 4 IX (2.1), “(ii) map, étale site”.
 
 > **Stacks 095C (3).** A morphism of locally constant sheaves of `R`-modules on the small
 > étale site of a scheme, whose source is locally constant of finite type, is on an étale covering
@@ -305,16 +305,16 @@ lemma exists_etaleCover_restrict_eq_constantSheaf_map_modules {R : Type r} [Ring
 
 Declarations registered for the tag:
 
-- [`Stacks.ConstantSheaf.isClosedUnderFiniteLimits_isFiniteLocallyConstantSetSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/FiniteLimits.lean#L725), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L60) (StacksFrontier): “part (1), finite limits”.
-- [`Stacks.ConstantSheaf.isClosedUnderFiniteColimits_isFiniteLocallyConstantSetSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/FiniteLimits.lean#L730), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L62) (StacksFrontier): “part (1), finite colimits”.
-- [`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteLocallyConstantAbelianSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean#L439), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L64) (StacksFrontier): “part (2)”.
-- [`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteTypeLocallyConstantModuleSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean#L793), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L66) (StacksFrontier): “part (3)”.
+- [`Stacks.ConstantSheaf.isClosedUnderFiniteLimits_isFiniteLocallyConstantSetSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/FiniteLimits.lean#L725), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L60) (StacksFrontier): “part (1), finite limits”.
+- [`Stacks.ConstantSheaf.isClosedUnderFiniteColimits_isFiniteLocallyConstantSetSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/FiniteLimits.lean#L730), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L62) (StacksFrontier): “part (1), finite colimits”.
+- [`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteLocallyConstantAbelianSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean#L439), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L64) (StacksFrontier): “part (2)”.
+- [`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteTypeLocallyConstantModuleSheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean#L793), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SmallEtaleSubcategories.lean#L66) (StacksFrontier): “part (3)”.
 
 ## Tag 095D, a lemma
 
 [Tag 095D](https://stacks.math.columbia.edu/tag/095D) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.isLocallyConstant_tensor_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/TensorProduct.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/TensorProduct.lean#L66). References: SGA 5 VI (1.4.5), “locally constant claim”.
+**`Stacks.ConstantSheaf.isLocallyConstant_tensor_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/TensorProduct.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/TensorProduct.lean#L66). References: SGA 5 VI (1.4.5), “locally constant claim”.
 
 > **Stacks 095D.** The tensor product of two locally constant sheaves of `Λ`-modules on the
 > small étale site of a scheme is a locally constant sheaf of `Λ`-modules.
@@ -334,7 +334,7 @@ theorem isLocallyConstant_tensor_smallEtale {X : Scheme.{u}} (Λ : Type w) [Comm
 
 [Tag 09BF](https://stacks.math.columbia.edu/tag/09BF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleCover_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/ConnectedTrivialization.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/ConnectedTrivialization.lean#L238).
+**`AlgebraicGeometry.exists_etaleCover_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/ConnectedTrivialization.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocallyConstantSheaves/ConnectedTrivialization.lean#L238).
 
 > **Stacks 09BF.** On a connected scheme, a locally constant sheaf of modules becomes the
 > constant sheaf associated to one fixed module after an étale covering.
@@ -363,4 +363,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.64, Tag 09Y8](https://stacks.math.columbia.edu/tag/09Y8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

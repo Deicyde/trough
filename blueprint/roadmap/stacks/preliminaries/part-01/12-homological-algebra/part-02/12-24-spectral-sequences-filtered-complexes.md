@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.24 Spectral sequences: filtered complexes
 
-Section 12.24 of the Stacks Project, [Tag 012K](https://stacks.math.columbia.edu/tag/012K). 15 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 12.24 of the Stacks Project, [Tag 012K](https://stacks.math.columbia.edu/tag/012K). 15 tags here are carried by 33 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 012L, a definition
 
 [Tag 012L](https://stacks.math.columbia.edu/tag/012L) in the Stacks Project.
 
-**`CochainComplex.Filtered`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean#L49). The attribute's comment: “as a complex filtered by subcomplexes, the same datum as a complex of `Fil(𝒜)`”. References: EGA 0 (11.2.2).
+**`CochainComplex.Filtered`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean#L49). The attribute's comment: “as a complex filtered by subcomplexes, the same datum as a complex of `Fil(𝒜)`”. References: EGA 0 (11.2.2).
 
 > A filtered complex of `C`: a cochain complex `K^•` together with a decreasing filtration
 > `F^pK^•` of it by subcomplexes, i.e. a filtered object of `CochainComplex C ℤ` indexed by `ℤᵒᵖ`.
@@ -23,7 +23,7 @@ Section 12.24 of the Stacks Project, [Tag 012K](https://stacks.math.columbia.edu
 abbrev Filtered (C : Type u) [Category.{v} C] [HasZeroMorphisms C] : Type _
 ```
 
-**`CochainComplex.ImageSystem.filtered`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/ImageFiltration.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/ImageFiltration.lean#L130). The attribute's comment: “a complex filtered by the images of a system of complexes mapping into it”.
+**`CochainComplex.ImageSystem.filtered`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/ImageFiltration.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/ImageFiltration.lean#L130). The attribute's comment: “a complex filtered by the images of a system of complexes mapping into it”.
 
 > **The filtration of `X^•` by the images of a system**, as a filtered complex in the sense of
 > [Stacks, Tag 012L].
@@ -36,7 +36,7 @@ public def filtered : CochainComplex.Filtered C
 
 [Tag 012M](https://stacks.math.columbia.edu/tag/012M) in the Stacks Project.
 
-**`CochainComplex.exists_cohomologicalSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 775](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L775).
+**`CochainComplex.exists_cohomologicalSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 775](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L775).
 
 > **The spectral sequence of a filtered complex.**  For a filtered complex `(K^•, F)` of an
 > abelian category, with `Z_r^{p, q} = F^p K^n ⊓ (d^n)⁻¹(F^{p + r}K^{n + 1})` and
@@ -87,7 +87,7 @@ public theorem exists_cohomologicalSpectralSequence
 
 [Tag 012N](https://stacks.math.columbia.edu/tag/012N) in the Stacks Project.
 
-**`CochainComplex.Filtered.exists_iso_firstPage_homology_d_eq_δ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L750). The attribute's comment: “(1)”.
+**`CochainComplex.Filtered.exists_iso_firstPage_homology_d_eq_δ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L750). The attribute's comment: “(1)”.
 
 > **Stacks 012N (1).** Let `E` be the spectral sequence of the filtered complex `K`, presented
 > on its first page as in [Stacks, Tag 012M]: `E_1^{p, q} = Z_1^{p, q}/(D_1^{p, q} ∩ Z_1^{p, q})`,
@@ -116,7 +116,7 @@ theorem exists_iso_firstPage_homology_d_eq_δ :
               (by simp)
 ```
 
-**`CochainComplex.Filtered.d_gr_eq_zero_and_exists_iso_firstPage_d_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 802](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L802). The attribute's comment: “(2)”.
+**`CochainComplex.Filtered.d_gr_eq_zero_and_exists_iso_firstPage_d_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L802). The attribute's comment: “(2)”.
 
 > **Stacks 012N (2).** If `d(F^pK) ⊆ F^{p + 1}K` for all `p`, then `d` induces the zero
 > differential on every `gr^pK^•`, so that `E_1^{p, q} = gr^pK^{p + q}`, the class of
@@ -148,7 +148,7 @@ theorem d_gr_eq_zero_and_exists_iso_firstPage_d_eq
 
 [Tag 012O](https://stacks.math.columbia.edu/tag/012O) in the Stacks Project.
 
-**`FilteredComplexSpectralSequence.spectralSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Functoriality.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Functoriality.lean#L204). References: EGA 0 (11.2.3), “existence of E(u)”; EGA 0 (11.2.2), “functoriality”.
+**`FilteredComplexSpectralSequence.spectralSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Functoriality.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Functoriality.lean#L204). References: EGA 0 (11.2.3), “existence of E(u)”; EGA 0 (11.2.2), “functoriality”.
 
 > A morphism `φ : K ⟶ L` of filtered complexes, i.e. carrying each `F^p K^n` into `F^p L^n`,
 > induces a morphism of spectral sequences `E_r(K) ⟶ E_r(L)`: on the `r`-th pages it is the map
@@ -164,7 +164,7 @@ noncomputable def spectralSequenceMap :
 
 [Tag 012P](https://stacks.math.columbia.edu/tag/012P) in the Stacks Project.
 
-**`CochainComplex.Filtered.inducedFilteredObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L271). The attribute's comment: “the induced filtration of `H^n(K^•)`, bundled as an object of `Fil(𝒜)`”. References: EGA 0 (11.2.2).
+**`CochainComplex.Filtered.inducedFilteredObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L271). The attribute's comment: “the induced filtration of `H^n(K^•)`, bundled as an object of `Fil(𝒜)`”. References: EGA 0 (11.2.2).
 
 > **The cohomology of a filtered complex, filtered.** `H^n(K^•)` together with the filtration
 > `F^pH^n(K^•) = Im(H^n(F^pK^•) ⟶ H^n(K^•))` induced on it by `(K^•, F)` ([Stacks, Tag 012P]), as
@@ -176,7 +176,7 @@ noncomputable def spectralSequenceMap :
 noncomputable def inducedFilteredObject (K : Filtered C) (n : ℤ) : FilteredObject C ℤᵒᵖ
 ```
 
-**`CochainComplex.Filtered.inducedFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean#L72).
+**`CochainComplex.Filtered.inducedFiltration`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Defs.lean#L72).
 
 > The filtration of `H^n(K^•)` induced by a filtered complex `K^•`, with steps
 > `F^pH^n(K^•) = Im(H^n(F^pK^•) ⟶ H^n(K^•))`.
@@ -185,7 +185,7 @@ noncomputable def inducedFilteredObject (K : Filtered C) (n : ℤ) : FilteredObj
 noncomputable def inducedFiltration : Filtration (K.X.homology n) ℤᵒᵖ
 ```
 
-**`CochainComplex.Filtered.inducedFilteredObjectFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/FunctorialFilteredAbutment.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Leray/FunctorialFilteredAbutment.lean#L118). The attribute's comment: “the induced filtration of `H^n`, functorially in the filtered complex”.
+**`CochainComplex.Filtered.inducedFilteredObjectFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/FunctorialFilteredAbutment.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Leray/FunctorialFilteredAbutment.lean#L118). The attribute's comment: “the induced filtration of `H^n`, functorially in the filtered complex”.
 
 > The cohomology `H^n` of a functorial filtered complex, with its induced filtration, as a
 > functor to `Fil(𝒜)`.
@@ -198,7 +198,7 @@ def inducedFilteredObjectFunctor (G : D ⥤ Filtered C) (n : ℤ) : D ⥤ Filter
 
 [Tag 012R](https://stacks.math.columbia.edu/tag/012R) in the Stacks Project.
 
-**`sub_image_homologyMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/InducedFiltration.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/InducedFiltration.lean#L601).
+**`sub_image_homologyMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/InducedFiltration.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/InducedFiltration.lean#L601).
 
 > **Stacks 012R.** The step `F^{p'}H^n(K^•)` of the induced filtration on cohomology, read as a
 > subobject of `K^n`, is `Ker(d^n) ∩ F^{p'}K^n + Im(d^{n-1})`.
@@ -216,7 +216,7 @@ lemma sub_image_homologyMap (F : ℤ → ∀ m : ℤ, Subobject (K.X.X m))
 
 [Tag 0BDT](https://stacks.math.columbia.edu/tag/0BDT) in the Stacks Project.
 
-**`CochainComplex.Filtered.exists_iso_gradedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L419).
+**`CochainComplex.Filtered.exists_iso_gradedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L419).
 
 > **Stacks 0BDT.** The graded piece `gr^pH^n(K^•) = F^pH^n(K^•)/F^{p + 1}H^n(K^•)` of the
 > filtration induced on cohomology is
@@ -247,7 +247,7 @@ theorem exists_iso_gradedHomology (p n : ℤ) :
 
 [Tag 012Q](https://stacks.math.columbia.edu/tag/012Q) in the Stacks Project.
 
-**`CochainComplex.exists_epi_gradedPiece_homology_of_isGLB_isLUB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean#L569).
+**`CochainComplex.exists_epi_gradedPiece_homology_of_isGLB_isLUB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean#L569).
 
 > **Stacks 012Q.** Let `𝒜` be an abelian category and let `(K^•, F)` be a filtered complex of
 > `𝒜`, with degreewise filtration subobjects `F^p K^n`. Fix `p, n : ℤ` and write `q = n - p`.
@@ -297,7 +297,7 @@ public theorem exists_epi_gradedPiece_homology_of_isGLB_isLUB
 
 [Tag 0BDU](https://stacks.math.columbia.edu/tag/0BDU) in the Stacks Project.
 
-**`IsRegularChainComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L45). The attribute's comment: “regular”.
+**`IsRegularChainComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L45). The attribute's comment: “regular”.
 
 > A cohomological spectral sequence `E` (with `d_r` of bidegree `(r, 1 - r)`) is
 > *regular* if for every `(p, q) : ℤ × ℤ` there exists `b : ℤ` such that the
@@ -308,7 +308,7 @@ public theorem exists_epi_gradedPiece_homology_of_isGLB_isLUB
 def IsRegularChainComplex (E : CohomologicalSpectralSequence C r₀) : Prop
 ```
 
-**`IsCoregular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L54). The attribute's comment: “coregular”.
+**`IsCoregular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L54). The attribute's comment: “coregular”.
 
 > A cohomological spectral sequence `E` (with `d_r` of bidegree `(r, 1 - r)`)
 > is *coregular* if for every `(p, q) : ℤ × ℤ` there exists `b : ℤ` such that the
@@ -319,7 +319,7 @@ def IsRegularChainComplex (E : CohomologicalSpectralSequence C r₀) : Prop
 def IsCoregular (E : CohomologicalSpectralSequence C r₀) : Prop
 ```
 
-**`IsBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L62). The attribute's comment: “bounded”. References: EGA 0 (11.1.1), “partial”.
+**`IsBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L62). The attribute's comment: “bounded”. References: EGA 0 (11.1.1), “partial”.
 
 > A cohomological spectral sequence `E` is *bounded* if for every total degree
 > `n : ℤ` there are only finitely many pairs `p : ℤ` such that
@@ -329,7 +329,7 @@ def IsCoregular (E : CohomologicalSpectralSequence C r₀) : Prop
 def IsBounded (E : CohomologicalSpectralSequence C r₀) : Prop
 ```
 
-**`IsBoundedBelow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L69). The attribute's comment: “bounded below”.
+**`IsBoundedBelow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L69). The attribute's comment: “bounded below”.
 
 > A cohomological spectral sequence `E` is *bounded below* if for every total
 > degree `n : ℤ` there exists `b : ℤ` such that `E_{r₀}^{p, n - p} = 0` for all
@@ -339,7 +339,7 @@ def IsBounded (E : CohomologicalSpectralSequence C r₀) : Prop
 def IsBoundedBelow (E : CohomologicalSpectralSequence C r₀) : Prop
 ```
 
-**`IsBoundedAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L76). The attribute's comment: “bounded above”.
+**`IsBoundedAbove`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L76). The attribute's comment: “bounded above”.
 
 > A cohomological spectral sequence `E` is *bounded above* if for every total
 > degree `n : ℤ` there exists `b : ℤ` such that `E_{r₀}^{p, n - p} = 0` for all
@@ -353,7 +353,7 @@ def IsBoundedAbove (E : CohomologicalSpectralSequence C r₀) : Prop
 
 [Tag 0BDV](https://stacks.math.columbia.edu/tag/0BDV) in the Stacks Project.
 
-**`CohomologicalSpectralSequence.isRegularChainComplex_iff_Z_eventually_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L175). The attribute's comment: “(1)”.
+**`CohomologicalSpectralSequence.isRegularChainComplex_iff_Z_eventually_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L175). The attribute's comment: “(1)”.
 
 > Part (1): the spectral sequence is regular iff for all `p, q` the cycles `Z_r^{p,q}` are
 > eventually constant.
@@ -363,7 +363,7 @@ theorem isRegularChainComplex_iff_Z_eventually_constant :
     IsRegularChainComplex E ↔ ∀ p q : ℤ, ∃ b : ℤ, ∀ r, b ≤ r → E.Z (p, q) r = E.Z (p, q) b
 ```
 
-**`CohomologicalSpectralSequence.isCoregular_iff_B_eventually_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L192). The attribute's comment: “(2)”.
+**`CohomologicalSpectralSequence.isCoregular_iff_B_eventually_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L192). The attribute's comment: “(2)”.
 
 > Part (2): the spectral sequence is coregular iff for all `p, q` the boundaries `B_r^{p,q}`
 > are eventually constant.
@@ -373,7 +373,7 @@ theorem isCoregular_iff_B_eventually_constant :
     IsCoregular E ↔ ∀ p q : ℤ, ∃ b : ℤ, ∀ r, b ≤ r → E.B (p, q) r = E.B (p, q) b
 ```
 
-**`CohomologicalSpectralSequence.isBounded_iff_isBoundedBelow_and_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L206). The attribute's comment: “(3)”.
+**`CohomologicalSpectralSequence.isBounded_iff_isBoundedBelow_and_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L206). The attribute's comment: “(3)”.
 
 > Part (3): the spectral sequence is bounded iff it is both bounded below and bounded
 > above.
@@ -383,7 +383,7 @@ theorem isBounded_iff_isBoundedBelow_and_isBoundedAbove :
     IsBounded E ↔ IsBoundedBelow E ∧ IsBoundedAbove E
 ```
 
-**`CohomologicalSpectralSequence.isRegularChainComplex_of_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L224). The attribute's comment: “(4)”.
+**`CohomologicalSpectralSequence.isRegularChainComplex_of_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L224). The attribute's comment: “(4)”.
 
 > Part (4): if the spectral sequence is bounded below, then it is regular.
 
@@ -392,7 +392,7 @@ theorem isRegularChainComplex_of_isBoundedBelow (h : IsBoundedBelow E) :
     IsRegularChainComplex E
 ```
 
-**`CohomologicalSpectralSequence.isCoregular_of_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L234). The attribute's comment: “(5)”.
+**`CohomologicalSpectralSequence.isCoregular_of_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Boundedness.lean#L234). The attribute's comment: “(5)”.
 
 > Part (5): if the spectral sequence is bounded above, then it is coregular.
 
@@ -404,7 +404,7 @@ theorem isCoregular_of_isBoundedAbove (h : IsBoundedAbove E) : IsCoregular E
 
 [Tag 012U](https://stacks.math.columbia.edu/tag/012U) in the Stacks Project.
 
-**`CochainComplex.Filtered.WeaklyConverges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L211). The attribute's comment: “(1)”. References: EGA 0 (11.1.3), “special case”.
+**`CochainComplex.Filtered.WeaklyConverges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L211). The attribute's comment: “(1)”. References: EGA 0 (11.1.3), “special case”.
 
 > **Stacks 012U (1).** The spectral sequence of a filtered complex `K` *weakly converges* to
 > `H^*(K^•)` if for all `p, n` the stable cycles `Z_∞^{p, n - p}` and boundaries
@@ -416,7 +416,7 @@ theorem isCoregular_of_isBoundedAbove (h : IsBoundedAbove E) : IsCoregular E
 def WeaklyConverges : Prop
 ```
 
-**`CochainComplex.Filtered.Abuts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L231). The attribute's comment: “(2)”.
+**`CochainComplex.Filtered.Abuts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L231). The attribute's comment: “(2)”.
 
 > **Stacks 012U (2).** The spectral sequence of a filtered complex `K` *abuts* to `H^*(K^•)` if
 > it weakly converges to `H^*(K^•)` and for all `n` the induced filtration on `H^n(K^•)` is
@@ -426,7 +426,7 @@ def WeaklyConverges : Prop
 def Abuts : Prop
 ```
 
-**`CochainComplex.Filtered.Converges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L239). The attribute's comment: “(3)”.
+**`CochainComplex.Filtered.Converges`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L239). The attribute's comment: “(3)”.
 
 > **Stacks 012U (3).** The spectral sequence of a filtered complex `K` *converges* to
 > `H^*(K^•)` if it is regular, abuts to `H^*(K^•)`, and
@@ -440,7 +440,7 @@ def Converges : Prop
 
 [Tag 012V](https://stacks.math.columbia.edu/tag/012V) in the Stacks Project.
 
-**`CochainComplex.exists_iso_stablePage_iff_and_isGLB_isLUB_inducedFiltration_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean, line 648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean#L648).
+**`CochainComplex.exists_iso_stablePage_iff_and_isGLB_isLUB_inducedFiltration_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/StablePage.lean#L648).
 
 > **Stacks 012V.** Let `𝒜` be an abelian category, let `(K^•, F)` be a filtered complex of `𝒜`
 > with degreewise filtration subobjects `F p n = F^p K^n`, and fix `p n : ℤ`; write `q = n - p`,
@@ -507,7 +507,7 @@ public theorem exists_iso_stablePage_iff_and_isGLB_isLUB_inducedFiltration_iff
 
 [Tag 012W](https://stacks.math.columbia.edu/tag/012W) in the Stacks Project.
 
-**`CochainComplex.Filtered.abutsTo_of_isDegreewiseFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean#L132). The attribute's comment: “(2) and (3) together, in the form `E` abuts to `H^*(K^•)`”.
+**`CochainComplex.Filtered.abutsTo_of_isDegreewiseFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean#L132). The attribute's comment: “(2) and (3) together, in the form `E` abuts to `H^*(K^•)`”.
 
 > **The spectral sequence of a degreewise finite filtered complex abuts to its cohomology.**
 >
@@ -535,7 +535,7 @@ theorem abutsTo_of_isDegreewiseFinite (K : Filtered C) (F : ∀ (_p n : ℤ), Su
     SpectralSequence.AbutsTo E (fun n => K.X.homology n)
 ```
 
-**`CochainComplex.Filtered.abutsTo_of_isDegreewiseFinite'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean#L161). The attribute's comment: “(2) and (3), for the canonical spectral sequence of a filtered complex”. References: SGA 4 Vbis (2.5.2), “partial”.
+**`CochainComplex.Filtered.abutsTo_of_isDegreewiseFinite'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsTo.lean#L161). The attribute's comment: “(2) and (3), for the canonical spectral sequence of a filtered complex”. References: SGA 4 Vbis (2.5.2), “partial”.
 
 > **The canonical spectral sequence of a degreewise finite filtered complex abuts to its
 > cohomology.**  `abutsTo_of_isDegreewiseFinite` for
@@ -549,7 +549,7 @@ theorem abutsTo_of_isDegreewiseFinite' (K : Filtered C)
     SpectralSequence.AbutsTo (spectralSequenceFunctor.obj K) (fun n => K.X.homology n)
 ```
 
-**`CochainComplex.Filtered.nonempty_pageInfinityIso_gr'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L801). The attribute's comment: “(3), the comparison `E_∞^{p,q} ≅ gr^pH^n(K^•)` of (012V) is an isomorphism”.
+**`CochainComplex.Filtered.nonempty_pageInfinityIso_gr'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 801](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L801). The attribute's comment: “(3), the comparison `E_∞^{p,q} ≅ gr^pH^n(K^•)` of (012V) is an isomorphism”.
 
 > **`E_∞^{p,q} ≅ gr^p H^{p+q}(K^•)`.**  For a filtered complex `(K^•, F)` of an abelian
 > category whose filtration is finite in each degree, the infinity page of its spectral sequence at
@@ -569,7 +569,7 @@ theorem nonempty_pageInfinityIso_gr' (hK : K.filtration.IsDegreewiseFinite) (p q
       (FilteredObject.gr p).obj (K.inducedFilteredObject (p + q)))
 ```
 
-**`CochainComplex.Filtered.nonempty_pageInfinityIso_gr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 832](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L832). The attribute's comment: “(3), for the canonical spectral sequence of a filtered complex”. References: SGA 4 Vbis (2.5.2), “partial”.
+**`CochainComplex.Filtered.nonempty_pageInfinityIso_gr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean, line 832](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Convergence.lean#L832). The attribute's comment: “(3), for the canonical spectral sequence of a filtered complex”. References: SGA 4 Vbis (2.5.2), “partial”.
 
 > **`E_∞^{p,q} ≅ gr^p H^{p+q}(K^•)` for the canonical spectral sequence of a filtered
 > complex.**  `nonempty_pageInfinityIso_gr'` for
@@ -583,7 +583,7 @@ theorem nonempty_pageInfinityIso_gr (K : Filtered C)
       (FilteredObject.gr p).obj (K.inducedFilteredObject (p + q)))
 ```
 
-**`CochainComplex.isBounded_and_converges_of_isDegreewiseFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L378). References: EGA 0 (11.2.4), “special case”.
+**`CochainComplex.isBounded_and_converges_of_isDegreewiseFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L378). References: EGA 0 (11.2.4), “special case”.
 
 > **Stacks 012W.** Let `𝒜` be an abelian category and let `(K^•, F)` be a filtered complex of
 > `𝒜` whose filtration is finite in each degree. Let `E` be the spectral sequence of `(K^•, F)`,
@@ -639,7 +639,7 @@ public theorem isBounded_and_converges_of_isDegreewiseFinite
 
 [Tag 0BDW](https://stacks.math.columbia.edu/tag/0BDW) in the Stacks Project.
 
-**`CochainComplex.Filtered.finite_homology_and_sum_negOnePow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 1212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L1212).
+**`CochainComplex.Filtered.finite_homology_and_sum_negOnePow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean, line 1212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex.lean#L1212).
 
 > **Stacks 0BDW.** Let `(K^•, F)` be a filtered complex of `C` whose filtration is finite in
 > each degree, and let `E` be its spectral sequence, presented by the identification of its pages
@@ -667,7 +667,7 @@ theorem finite_homology_and_sum_negOnePow_eq (hK : K.filtration.IsDegreewiseFini
 
 [Tag 0BK5](https://stacks.math.columbia.edu/tag/0BK5) in the Stacks Project.
 
-**`CochainComplex.isBounded_and_converges_of_eventually_isZero_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L677). References: EGA 0 (13.6.4), “partial”.
+**`CochainComplex.isBounded_and_converges_of_eventually_isZero_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredComplex/Basic/Convergence.lean#L677). References: EGA 0 (13.6.4), “partial”.
 
 > **Stacks 0BK5.** Let `𝒜` be an abelian category and let `(K^•, F)` be a filtered complex of
 > `𝒜` such that, for every `n`, `H^n(F^pK^•) = 0` for `p ≫ 0` and `H^n(F^pK^•) ⟶ H^n(K^•)` is an
@@ -752,4 +752,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.24, Tag 012K](https://stacks.math.columbia.edu/tag/012K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

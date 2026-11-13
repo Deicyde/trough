@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: schanuel, Module.projectiveDimension, pd_syzygy_projective, CategoryTheory.hasProjectiveDimensionLE_tfae_leftResolution, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_projective_finite, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free_finite, CategoryTheory.hasProjectiveDimensionLT_of_enoughProjectives
+lean: schanuel, Module.projectiveDimension, pd_syzygy_projective_of_le, CategoryTheory.hasProjectiveDimensionLE_tfae_leftResolution, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_projective_finite, ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free_finite, CategoryTheory.hasProjectiveDimensionLT_of_enoughProjectives
 statement: formalized
 proof: formalized
 ---
 
 # 10.109 Rings of finite global dimension
 
-Section 10.109 of the Stacks Project, [Tag 00O2](https://stacks.math.columbia.edu/tag/00O2). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.109 of the Stacks Project, [Tag 00O2](https://stacks.math.columbia.edu/tag/00O2). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00O3, a lemma
 
 [Tag 00O3](https://stacks.math.columbia.edu/tag/00O3) in the Stacks Project.
 
-**`schanuel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 923](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L923).
+**`schanuel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 924](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L924).
 
 > **Schanuel's Lemma (Stacks Tag 00O3).**
 > Given two short exact sequences `0 → K → P₁ → M → 0` and `0 → L → P₂ → M → 0`
@@ -57,13 +57,14 @@ theorem schanuel
 
 [Tag 00O4](https://stacks.math.columbia.edu/tag/00O4) in the Stacks Project.
 
-**`Module.projectiveDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Defs.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/Defs.lean#L136). References: EGA 0 (17.2.1), “dim.proj definition”.
+**`Module.projectiveDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Defs.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Defs.lean#L142). References: EGA 0 (17.2.1), “dim.proj definition”.
 
 > The **projective dimension** of an `R`-module `M`: the least `d` with `Ext^i(M, -) = 0` for
 > all `i > d`. For `R` small in `M`'s universe this is the source's invariant, the least `d` for
 > which there is an exact sequence `0 → P_d → ⋯ → P_0 → M → 0` with all `P_i` projective (00O5,
 > 0CXC), and `M` then has *finite projective dimension* in the sense of the source exactly when
-> this is `≠ ⊤` (`CategoryTheory.projectiveDimension_ne_top_iff`). It is `⊥` for the zero module.
+> this is `≠ ⊤` (`CategoryTheory.projectiveDimension_ne_top_iff`). It is `⊥` for the zero module,
+> whose projective dimension in the source is `0`.
 
 ```lean
 public noncomputable abbrev Module.projectiveDimension (R : Type u) [Ring R] (M : Type v)
@@ -74,18 +75,24 @@ public noncomputable abbrev Module.projectiveDimension (R : Type u) [Ring R] (M 
 
 [Tag 00O5](https://stacks.math.columbia.edu/tag/00O5) in the Stacks Project.
 
-**`pd_syzygy_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1490). References: EGA 0 (17.2.1), “Necessity”.
+**`pd_syzygy_projective_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1499). The attribute's comment: “The source's hypothesis `pd(M) = d` is relaxed to `projectiveDimension M ≤ d`, which also covers the zero module, of projective dimension `0` in the source and `⊥` here.”. References: EGA 0 (17.2.1), “Necessity”.
 
-> **Stacks Tag 00O5 / Lemma 10.109.3.** Let `M` have projective dimension `d` and let
+> **Stacks Tag 00O5 / Lemma 10.109.3.** Let `M` have projective dimension at most `d` and let
 > `F_e → ⋯ → F_0 → M → 0` be exact with every `F_i` projective and `d ≤ e + 1`. Then the
 > leftmost syzygy `Ker(F_e → F_{e-1})`, or `Ker(F_0 → M)` when `e = 0`, is projective.
+>
+> The source assumes `pd(M) = d` for its minimal-resolution projective dimension (00O4), under
+> which the zero module has projective dimension `0`; the library's projective dimension of the zero
+> module is `⊥` instead. The hypothesis `projectiveDimension M ≤ d` covers the source's hypothesis
+> in both cases (for `M ≠ 0` the two invariants coincide, and for `M = 0` the value `⊥` is `≤ d`),
+> so this is the source's statement, in a slightly more general form.
 
 ```lean
-theorem pd_syzygy_projective (d e : ℕ)
+theorem pd_syzygy_projective_of_le (d e : ℕ)
     -- the truncated sequence `F_e → ⋯ → F_0 → M → 0`
     (S : ComposableArrows (ModuleCat R) (e + 2))
-    -- `M`, the object at position `e + 1`, has projective dimension `d`
-    (hpd : projectiveDimension (S.obj ⟨e + 1, by omega⟩) = (d : WithBot ℕ∞))
+    -- `M`, the object at position `e + 1`, has projective dimension at most `d`
+    (hpd : projectiveDimension (S.obj ⟨e + 1, by omega⟩) ≤ (d : WithBot ℕ∞))
     -- the hypothesis `e ≥ d - 1`, equivalently `d ≤ e + 1`
     (hde : d ≤ e + 1)
     -- exactness at every internal object (in particular `F_0 → M` is surjective);
@@ -104,7 +111,7 @@ theorem pd_syzygy_projective (d e : ℕ)
 
 [Tag 0CXC](https://stacks.math.columbia.edu/tag/0CXC) in the Stacks Project.
 
-**`CategoryTheory.hasProjectiveDimensionLE_tfae_leftResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L659). The attribute's comment: “A resolution `⋯ → P₁ → P₀ → M → 0` is an `ObjectProperty.LeftResolution` by the class of projective objects (00LQ), the notion 00O7 uses; the source's `M`, `Ker(P₀ → M)` and `Ker(P_{d-1} → P_{d-2})` are the single syzygy `(F.complex.toSingle₀AsComplex X F.π).cycles d`, the `d`-th cycles of the augmentation `F.π` read as a complex; see the module docstring.”. References: EGA 0 (17.2.1), “dim.proj resolution char”.
+**`CategoryTheory.hasProjectiveDimensionLE_tfae_leftResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L660). The attribute's comment: “A resolution `⋯ → P₁ → P₀ → M → 0` is an `ObjectProperty.LeftResolution` by the class of projective objects (00LQ), the notion 00O7 uses; the source's `M`, `Ker(P₀ → M)` and `Ker(P_{d-1} → P_{d-2})` are the single syzygy `(F.complex.toSingle₀AsComplex X F.π).cycles d`, the `d`-th cycles of the augmentation `F.π` read as a complex; see the module docstring.”. References: EGA 0 (17.2.1), “dim.proj resolution char”.
 
 > **Stacks 0CXC.** Let `X` be an object of an abelian category which admits a projective
 > resolution, and let `d : ℕ`. The following are equivalent: (1) `X` has projective dimension
@@ -131,7 +138,7 @@ public theorem CategoryTheory.hasProjectiveDimensionLE_tfae_leftResolution {C : 
 
 [Tag 0CXD](https://stacks.math.columbia.edu/tag/0CXD) in the Stacks Project.
 
-**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean#L177). The attribute's comment: “Condition (5) is added to Lemma 0CXC by stating its equivalence with item 1 of that lemma's `TFAE`. A resolution `0 → P_d → ⋯ → P₀ → M → 0` by frees is an `ObjectProperty.LeftResolution` for the class of free modules (00LQ), the notion 0CXC and 00O7 use, vanishing in degrees `> d`; see the module docstring.”.
+**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean#L177). The attribute's comment: “Condition (5) is added to Lemma 0CXC by stating its equivalence with item 1 of that lemma's `TFAE`. A resolution `0 → P_d → ⋯ → P₀ → M → 0` by frees is an `ObjectProperty.LeftResolution` for the class of free modules (00LQ), the notion 0CXC and 00O7 use, vanishing in degrees `> d`; see the module docstring.”.
 
 > **Stacks 0CXD.** Let `R` be a commutative local ring, let `M` be an `R`-module and let
 > `d : ℕ`. Then `M` has projective dimension at most `d` — equivalently, by Stacks 0CXC, `M` has a
@@ -151,7 +158,7 @@ public theorem ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free
 
 [Tag 0CXE](https://stacks.math.columbia.edu/tag/0CXE) in the Stacks Project.
 
-**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_projective_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/FiniteResolution.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/FiniteResolution.lean#L332). The attribute's comment: “Condition (6) is added to Lemma 0CXC by stating its equivalence with item 1 of that lemma's `TFAE`. A resolution `0 → P_d → ⋯ → P₀ → M → 0` by finite projectives is an `ObjectProperty.LeftResolution` for the class of finite projective modules (00LQ), the notion 0CXC, 0CXD and 00O7 use, vanishing in degrees `> d`; stated for a not necessarily commutative ring. See the module docstring.”. References: EGA 0 (17.2.2).
+**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_projective_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/FiniteResolution.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/FiniteResolution.lean#L332). The attribute's comment: “Condition (6) is added to Lemma 0CXC by stating its equivalence with item 1 of that lemma's `TFAE`. A resolution `0 → P_d → ⋯ → P₀ → M → 0` by finite projectives is an `ObjectProperty.LeftResolution` for the class of finite projective modules (00LQ), the notion 0CXC, 0CXD and 00O7 use, vanishing in degrees `> d`; stated for a not necessarily commutative ring. See the module docstring.”. References: EGA 0 (17.2.2).
 
 > **Stacks 0CXE.** Let `R` be a Noetherian ring, let `M` be a finite `R`-module and let `d : ℕ`.
 > Then `M` has projective dimension at most `d` — equivalently, by Stacks 0CXC, `M` has a resolution
@@ -173,7 +180,7 @@ public theorem ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_proj
 
 [Tag 0CXF](https://stacks.math.columbia.edu/tag/0CXF) in the Stacks Project.
 
-**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean#L379). The attribute's comment: “Condition (7) is added to Lemmas 0CXC, 0CXD and 0CXE by stating its equivalence with item 1 of 0CXC's `TFAE`. A resolution `0 → F_d → ⋯ → F₀ → M → 0` by finite frees is an `ObjectProperty.LeftResolution` for the class of finite free modules (00LQ), the notion 00O7 uses, vanishing in degrees `> d`; see the module docstring.”. References: EGA 0 (17.2.2).
+**`ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/ProjectiveDimension.lean#L379). The attribute's comment: “Condition (7) is added to Lemmas 0CXC, 0CXD and 0CXE by stating its equivalence with item 1 of 0CXC's `TFAE`. A resolution `0 → F_d → ⋯ → F₀ → M → 0` by finite frees is an `ObjectProperty.LeftResolution` for the class of finite free modules (00LQ), the notion 00O7 uses, vanishing in degrees `> d`; see the module docstring.”. References: EGA 0 (17.2.2).
 
 > **Stacks 0CXF.** Let `R` be a local Noetherian ring, let `M` be a finite `R`-module and let
 > `d : ℕ`. Then `M` has projective dimension at most `d` — equivalently, by Stacks 0CXC, 0CXD and
@@ -196,7 +203,7 @@ public theorem ModuleCat.hasProjectiveDimensionLE_iff_exists_leftResolution_free
 
 [Tag 065R](https://stacks.math.columbia.edu/tag/065R) in the Stacks Project.
 
-**`CategoryTheory.hasProjectiveDimensionLT_of_enoughProjectives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/Projective/Dimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Abelian/Projective/Dimension.lean#L103). The attribute's comment: “The implication `(3) ⇒ (1)`, proved the source's way: in an abelian category with enough projectives, indexed by `HasProjectiveDimensionLT X n`, so that the source's `R`-modules of projective dimension `≤ n` are the case `C = ModuleCat.{v} R` at `n + 1`. The converse `(1) ⇒ (2)` and, at a single degree, `(2) ⇒ (3)` are `hasProjectiveDimensionLT_iff`; the sibling under enough injectives is `hasProjectiveDimensionLT_of_enoughInjectives`. Projective dimension is Ext-measured here rather than defined by a finite projective resolution (Definition 00O4, Lemma 0CXC); see the module docstring.”.
+**`CategoryTheory.hasProjectiveDimensionLT_of_enoughProjectives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/Projective/Dimension.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Abelian/Projective/Dimension.lean#L103). The attribute's comment: “The implication `(3) ⇒ (1)`, proved the source's way: in an abelian category with enough projectives, indexed by `HasProjectiveDimensionLT X n`, so that the source's `R`-modules of projective dimension `≤ n` are the case `C = ModuleCat.{v} R` at `n + 1`. The converse `(1) ⇒ (2)` and, at a single degree, `(2) ⇒ (3)` are `hasProjectiveDimensionLT_iff`; the sibling under enough injectives is `hasProjectiveDimensionLT_of_enoughInjectives`. Projective dimension is Ext-measured here rather than defined by a finite projective resolution (Definition 00O4, Lemma 0CXC); see the module docstring.”.
 
 > Let `X` be an object of an abelian category with enough projectives and let `n : ℕ`. If the
 > single group `Extⁿ(X, Y)` vanishes for every object `Y`, then `X` has projective dimension `< n`.
@@ -213,15 +220,15 @@ public theorem CategoryTheory.hasProjectiveDimensionLT_of_enoughProjectives {C :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₁#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1785](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1785) (StacksFrontier): “(1)”.
-- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₂`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₂#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1786](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1786) (StacksFrontier): “(2)”.
-- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₃`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₃#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1787) (StacksFrontier): “(3)”.
+- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₁`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₁#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1821) (StacksFrontier): “(1)”.
+- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₂`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₂#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1822](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1822) (StacksFrontier): “(2)”.
+- [`CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₃`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ShortComplex.ShortExact.hasProjectiveDimensionLT_X₃#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1823) (StacksFrontier): “(3)”.
 
 ## Tag 00O6, a definition
 
 [Tag 00O6](https://stacks.math.columbia.edu/tag/00O6) in the Stacks Project.
 
-**`ringGlobalDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GlobalDimension/Defs.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GlobalDimension/Defs.lean#L128). The attribute's comment: “The global dimension is the supremum `⨆ M, projectiveDimension M` over the `R`-modules in `R`'s own universe; `R` has finite global dimension iff this is `≠ ⊤`. See the module docstring.”.
+**`ringGlobalDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GlobalDimension/Defs.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GlobalDimension/Defs.lean#L128). The attribute's comment: “The global dimension is the supremum `⨆ M, projectiveDimension M` over the `R`-modules in `R`'s own universe; `R` has finite global dimension iff this is `≠ ⊤`. See the module docstring.”.
 
 > The **global dimension** of a ring `R`: the supremum of the projective dimensions of all
 > `R`-modules, an element of `WithBot ℕ∞`. It is `≤ n` exactly when every `R`-module admits a
@@ -237,7 +244,7 @@ public noncomputable abbrev ringGlobalDimension (R : Type u) [Ring R] : WithBot 
 
 [Tag 0D1U](https://stacks.math.columbia.edu/tag/0D1U) in the Stacks Project.
 
-**`ModuleCat.hasProjectiveDimensionLT_of_monotone_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Filtration.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/Filtration.lean#L637). The attribute's comment: “Indexed by `HasProjectiveDimensionLT _ n`, so that the source's `≤ n` is the case `n + 1`; the source's well-ordered family of submodules is a `Monotone` family over a type with `[LinearOrder E] [WellFoundedLT E]`, its union is `⨆ e, N e = ⊤`, and the graded piece at `e` is `↥(N e) ⧸ (⨆ e' < e, N e').submoduleOf (N e)`. See the module docstring.”.
+**`ModuleCat.hasProjectiveDimensionLT_of_monotone_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Filtration.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Filtration.lean#L637). The attribute's comment: “Indexed by `HasProjectiveDimensionLT _ n`, so that the source's `≤ n` is the case `n + 1`; the source's well-ordered family of submodules is a `Monotone` family over a type with `[LinearOrder E] [WellFoundedLT E]`, its union is `⨆ e, N e = ⊤`, and the graded piece at `e` is `↥(N e) ⧸ (⨆ e' < e, N e').submoduleOf (N e)`. See the module docstring.”.
 
 > **Stacks 0D1U.** Let `R` be a ring and let `M` be an `R`-module which is the union
 > `⨆ e, N e = ⊤` of a monotone family of submodules `N` indexed by a well-ordered type `E`. If each
@@ -256,7 +263,7 @@ public theorem ModuleCat.hasProjectiveDimensionLT_of_monotone_of_iSup_eq_top {R 
 
 [Tag 065T](https://stacks.math.columbia.edu/tag/065T) in the Stacks Project.
 
-**`ringGlobalDimension_lt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GlobalDimension/Cyclic.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GlobalDimension/Cyclic.lean#L273). The attribute's comment: “Indexed by `HasProjectiveDimensionLT _ n`, so that the source's `≤ n` is the case `n + 1`; item (1) is the global dimension `⨆ M, projectiveDimension M` of Tag 00O6, and the modules of items (2) and (3) range over an arbitrary universe `v` with `Small.{v} R`, of which the source is the case `v = u`. See the module docstring.”. References: EGA 0 (17.2.8), “a) <=> a')”.
+**`ringGlobalDimension_lt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GlobalDimension/Cyclic.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GlobalDimension/Cyclic.lean#L273). The attribute's comment: “Indexed by `HasProjectiveDimensionLT _ n`, so that the source's `≤ n` is the case `n + 1`; item (1) is the global dimension `⨆ M, projectiveDimension M` of Tag 00O6, and the modules of items (2) and (3) range over an arbitrary universe `v` with `Small.{v} R`, of which the source is the case `v = u`. See the module docstring.”. References: EGA 0 (17.2.8), “a) <=> a')”.
 
 > **Stacks 065T.** Let `R` be a ring and `n : ℕ`. The following are equivalent: the global
 > dimension of `R` is `< n`; every `R`-module has projective dimension `< n`; every finite
@@ -276,50 +283,33 @@ public theorem ringGlobalDimension_lt_tfae (R : Type u) [Ring R] [Small.{v} R] (
 
 [Tag 00O8](https://stacks.math.columbia.edu/tag/00O8) in the Stacks Project.
 
-**`projectiveDimension_localization_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1728](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1728). The attribute's comment: “(1)”. References: EGA 0 (17.2.5), “partial”; EGA IV (6.2.1), “(i), special case”.
+**`Module.projectiveDimension_localizedModule_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Localization.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Localization.lean#L49). The attribute's comment: “(1)”.
 
-> **Statement 1.** If `M` has projective dimension `≤ n` as an `R`-module, then
-> the localization `S⁻¹M` has projective dimension `≤ n` as an `S⁻¹R`-module.
->
-> Proof by induction on `n`: base case proved inline (projective localizes to
-> projective); inductive step is `projectiveDimension_localization_le_step`.  The
-> induction generalizes `M` so the hypothesis applies to the syzygy `K` at the next
-> level.
+> **Stacks 00O8 (1).** Let `R` be a ring, `M` an `R`-module and `S ⊆ R` a multiplicative
+> subset. If `M` has projective dimension `≤ n`, then `S⁻¹M` has projective dimension `≤ n` over
+> `S⁻¹R`. Projective dimension is the library's `Module.projectiveDimension` (Stacks 00O4); the
+> module `M` lives in any universe in which `R` is small, the hypothesis under which that invariant
+> is the source's minimal length of a projective resolution (00O5, 0CXC). The localization `S⁻¹M`
+> is `LocalizedModule S M` itself, in its own universe.
 
 ```lean
-theorem projectiveDimension_localization_le
-    (R : Type u) [CommRing R] (S : Submonoid R)
-    (M : Type u) [AddCommGroup M] [Module R M] (n : ℕ)
-    (hM : ModuleProjectiveDimensionLE R M n) :
-    ModuleProjectiveDimensionLE (Localization S) (LocalizedModule S M) n
+theorem Module.projectiveDimension_localizedModule_le {R : Type u} [CommRing R] [Small.{v} R]
+    (S : Submonoid R) (M : Type v) [AddCommGroup M] [Module R M] (n : ℕ)
+    (hM : Module.projectiveDimension R M ≤ n) :
+    Module.projectiveDimension (Localization S) (LocalizedModule S M) ≤ n
 ```
 
-**`globalDimension_localization_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension.lean, line 1759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension.lean#L1759). The attribute's comment: “(2)”. References: EGA 0 (17.2.10), “partial”.
+**`ringGlobalDimension_localization_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Localization.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Localization.lean#L73). The attribute's comment: “(2)”.
 
-> **Statement 2.** If `R` has global dimension `≤ n`, then `S⁻¹R` has global
-> dimension `≤ n`.
->
-> This reduces to Statement 1. Let `X : ModuleCat (S⁻¹R)` be
-> arbitrary, with underlying type `M'`.  View `M'` as an `R`-module by restriction of
-> scalars along `algebraMap R (S⁻¹R)` (`Module.compHom`, giving `IsScalarTower
-> R (S⁻¹R) M'`).  Every `S⁻¹R`-module is its own localization:
-> `isLocalizedModule_id S M' (Localization S)` gives `IsLocalizedModule S
-> (LinearMap.id : M' →ₗ[R] M')`, whence `IsLocalizedModule.iso S LinearMap.id :
-> LocalizedModule S M' ≃ₗ[R] M'`, upgraded to a `Localization S`-linear equivalence by
-> `LinearEquiv.extendScalarsOfIsLocalization S (Localization S)`.  This linear
-> equivalence yields an isomorphism `e : ModuleCat.of (S⁻¹R) (LocalizedModule S M') ≅
-> X` in `ModuleCat (S⁻¹R)` (`LinearEquiv.toModuleIso`).  By `hR` (applied to
-> `ModuleCat.of R M'`), `M'` has `pd_R M' ≤ n`, i.e. `ModuleProjectiveDimensionLE R M' n`.
-> Statement 1 gives `ModuleProjectiveDimensionLE (S⁻¹R) (LocalizedModule S M') n`, i.e.
-> `HasProjectiveDimensionLT (ModuleCat.of (S⁻¹R) (LocalizedModule S M')) (n+1)`.
-> Transport across `e` with `hasProjectiveDimensionLT_of_iso` to obtain
-> `HasProjectiveDimensionLT X (n+1)`.
+> **Stacks 00O8 (2).** Let `R` be a ring and `S ⊆ R` a multiplicative subset. If `R` has
+> finite global dimension `≤ n`, then so does `S⁻¹R`. Global dimension is the library's
+> `ringGlobalDimension` (Stacks 00O6), the supremum of the projective dimensions of all modules,
+> which is `≤ n` exactly when every module has a projective resolution of length `≤ n`. The proof
+> is the source's: every `S⁻¹R`-module `M'` is its own localization `S⁻¹M'`, so (1) applies.
 
 ```lean
-theorem globalDimension_localization_le
-    (R : Type u) [CommRing R] (S : Submonoid R) (n : ℕ)
-    (hR : RingGlobalDimensionLE R n) :
-    RingGlobalDimensionLE (Localization S) n
+theorem ringGlobalDimension_localization_le {R : Type u} [CommRing R] (S : Submonoid R) (n : ℕ)
+    (hR : ringGlobalDimension R ≤ n) : ringGlobalDimension (Localization S) ≤ n
 ```
 
 ## Depends on
@@ -329,4 +319,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.109, Tag 00O2](https://stacks.math.columbia.edu/tag/00O2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

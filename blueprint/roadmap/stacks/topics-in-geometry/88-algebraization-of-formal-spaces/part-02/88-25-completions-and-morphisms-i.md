@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.25 Completions and morphisms, I
 
-Section 88.25 of the Stacks Project, [Tag 0GDP](https://stacks.math.columbia.edu/tag/0GDP). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.25 of the Stacks Project, [Tag 0GDP](https://stacks.math.columbia.edu/tag/0GDP). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AR4, a lemma
 
 [Tag 0AR4](https://stacks.math.columbia.edu/tag/0AR4) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_affine_algebraization_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean#L320).
+**`AlgebraicGeometry.FormalSpace.exists_affine_algebraization_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean#L320).
 
 > Let `X = Spec R` be a Noetherian affine scheme over `S` in the big fppf
 > site, let `T ⊆ |X|` be closed, let `W` be a Noetherian affine formal algebraic space and let
@@ -46,7 +46,7 @@ theorem exists_affine_algebraization_of_isRigEtale
       (IsRepresentableEtale B S hS g → Etale ((BigFppfOver.toScheme B S hS).map f))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isEtale_of_isEtale_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean#L546). The attribute's comment: “the étale clause: a morphism locally of finite type which is étale away from `T` and whose completion `f_{/T}` is étale is étale everywhere, by Tag 0A43 (`AlgebraicGeometry.etaleAt_of_etale_infinitesimalNeighbourhoods`) above the closed subscheme cut out by `T`. Stated for `f` locally of finite type over a locally Noetherian `X`, where the source has `f` of finite type over an affine Noetherian `X`. The existence clause of the tag is not stated”.
+**`AlgebraicGeometry.FormalSpace.isEtale_of_isEtale_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean#L546). The attribute's comment: “the étale clause: a morphism locally of finite type which is étale away from `T` and whose completion `f_{/T}` is étale is étale everywhere, by Tag 0A43 (`AlgebraicGeometry.etaleAt_of_etale_infinitesimalNeighbourhoods`) above the closed subscheme cut out by `T`. Stated for `f` locally of finite type over a locally Noetherian `X`, where the source has `f` of finite type over an affine Noetherian `X`. The existence clause of the tag is not stated”.
 
 > Let `f : X' ⟶ X` be a morphism of the big fppf site over `S` which is locally of finite
 > type, let `X` be locally Noetherian, let `T` be a set of points of `X` and let `i : Z ⟶ X` be a
@@ -79,7 +79,7 @@ theorem isEtale_of_isEtale_completionSheafMap
 
 [Tag 0AR3](https://stacks.math.columbia.edu/tag/0AR3) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_etale_completion_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionMorphismsAffine.lean, line 1355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionMorphismsAffine.lean#L1355).
+**`AlgebraicGeometry.FormalSpace.exists_etale_completion_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionMorphismsAffine.lean, line 1355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionMorphismsAffine.lean#L1355).
 
 > Let `X`, `X'`, `Y` be Noetherian affine schemes of the big fppf site over `S`, let `T ⊆ |X|`
 > be closed, let `f : X' ⟶ X` be locally of finite type and étale over `X ∖ T`, let `h : Y ⟶ X` be
@@ -124,7 +124,7 @@ theorem exists_etale_completion_factorization {X X' Y : BigFppfOver B S hS}
 
 [Tag 0AR6](https://stacks.math.columbia.edu/tag/0AR6) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_factorization_of_openComplement_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFactorization.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFactorization.lean#L184). The attribute's comment: “the completion hypothesis is stated on the unsheafified subfunctor of sections with point-set image in `T` (`AlgebraicGeometry.Space.completionSubfunctor`), whose sheafification is the completion `X_{/T}` of Tag 0AMC by Tag 0AIZ, because the completion lands one universe above `Y` and so admits no morphism to `Y` in this library; no other hypothesis is carried”.
+**`AlgebraicGeometry.FormalSpace.exists_factorization_of_openComplement_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFactorization.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFactorization.lean#L184). The attribute's comment: “the completion hypothesis is stated on the unsheafified subfunctor of sections with point-set image in `T` (`AlgebraicGeometry.Space.completionSubfunctor`), whose sheafification is the completion `X_{/T}` of Tag 0AMC by Tag 0AIZ, because the completion lands one universe above `Y` and so admits no morphism to `Y` in this library; no other hypothesis is carried”.
 
 > **Stacks 0AR6.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of algebraic spaces over `S`
 > and let `T ⊆ |X|` be closed. Assume that `X` is locally Noetherian, that `g` is a monomorphism
@@ -161,7 +161,7 @@ theorem exists_factorization_of_openComplement_and_completion
 
 [Tag 0GI1](https://stacks.math.columbia.edu/tag/0GI1) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.eq_of_eq_on_openComplement_of_eq_on_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismEqualityFromCompletion.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismEqualityFromCompletion.lean#L504).
+**`AlgebraicGeometry.FormalSpace.eq_of_eq_on_openComplement_of_eq_on_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismEqualityFromCompletion.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismEqualityFromCompletion.lean#L504).
 
 > **Stacks 0GI1.** Let `X` and `W` be algebraic spaces over `S` with `X` locally Noetherian,
 > let `T ⊆ |X|` be a closed subset and let `a, b : X ⟶ W` be morphisms over `S` which agree on
@@ -190,7 +190,7 @@ theorem eq_of_eq_on_openComplement_of_eq_on_completion
 
 [Tag 0AR7](https://stacks.math.columbia.edu/tag/0AR7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_eq_on_compl_of_completionSubfunctorMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismUniquenessAlongClosedSubset.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismUniquenessAlongClosedSubset.lean#L367).
+**`AlgebraicGeometry.Space.eq_of_eq_on_compl_of_completionSubfunctorMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismUniquenessAlongClosedSubset.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismUniquenessAlongClosedSubset.lean#L367).
 
 > **Stacks 0AR7.** Let `X` and `Y` be locally Noetherian algebraic spaces over `S`, let
 > `T ⊆ |X|` and `T' ⊆ |Y|` be closed subsets and let `a, b : X ⟶ Y` be morphisms with
@@ -218,7 +218,7 @@ theorem eq_of_eq_on_compl_of_completionSubfunctorMap_eq
 
 [Tag 0AR8](https://stacks.math.columbia.edu/tag/0AR8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEtaleEquivalenceRelation_of_openComplement_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EquivalenceRelationFromCompletion.lean, line 1157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/EquivalenceRelationFromCompletion.lean#L1157). The attribute's comment: “WHAT IS FORMALIZED: hypothesis (3) is read as saying that the formal completion `(t_{/T}, s_{/T})` is an *étale* equivalence relation — an equivalence relation whose two maps `s_{/T}` and `t_{/T}` are étale — and not merely an equivalence relation. THE LITERAL READING OF (3) IS FALSE: take `X = Spec k` and `T = |X|`, so that `X ∖ T` is empty and (2) is vacuous, and `U = 𝔸¹`, `R = U ×_X U`, `t = pr₀`, `s = pr₁`; then `X_{/T} = X`, `U_{/T} = U`, `R_{/T} = R`, so (3) says that the identity is an equivalence relation, (1) and (2) hold, and yet `s = pr₁ : 𝔸¹ × 𝔸¹ ⟶ 𝔸¹` is not étale, so the conclusion fails. THE ÉTALE READING IS THE ONE THE SOURCE'S OWN PROOF USES: "Since the formal completions of the maps `s`, `t` are étale, we see that `s` and `t` are étale for example by More on Morphisms, Lemma 37.12.3". Otherwise the statement is the tag's: hypothesis (2) is read as the restrictions of `s` and `t` to the subspaces cut out by the complements of the inverse images of `T`, which is the base change to `X ∖ T` by `AlgebraicGeometry.FormalSpace.isPullback_ι_openSubspaceOfPoints_compl`, and (3) as the restriction morphisms of the completions of Tag 0AMC along those inverse images. No further hypothesis is added and no part of the conclusion is dropped: the conclusion carries monomorphy of `(t, s)`, the equivalence-relation structure, and étaleness of both `s` and `t`”.
+**`AlgebraicGeometry.FormalSpace.isEtaleEquivalenceRelation_of_openComplement_and_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EquivalenceRelationFromCompletion.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EquivalenceRelationFromCompletion.lean#L1158). The attribute's comment: “WHAT IS FORMALIZED: hypothesis (3) is read as saying that the formal completion `(t_{/T}, s_{/T})` is an *étale* equivalence relation — an equivalence relation whose two maps `s_{/T}` and `t_{/T}` are étale — and not merely an equivalence relation. THE LITERAL READING OF (3) IS FALSE: take `X = Spec k` and `T = |X|`, so that `X ∖ T` is empty and (2) is vacuous, and `U = 𝔸¹`, `R = U ×_X U`, `t = pr₀`, `s = pr₁`; then `X_{/T} = X`, `U_{/T} = U`, `R_{/T} = R`, so (3) says that the identity is an equivalence relation, (1) and (2) hold, and yet `s = pr₁ : 𝔸¹ × 𝔸¹ ⟶ 𝔸¹` is not étale, so the conclusion fails. THE ÉTALE READING IS THE ONE THE SOURCE'S OWN PROOF USES: "Since the formal completions of the maps `s`, `t` are étale, we see that `s` and `t` are étale for example by More on Morphisms, Lemma 37.12.3". Otherwise the statement is the tag's: hypothesis (2) is read as the restrictions of `s` and `t` to the subspaces cut out by the complements of the inverse images of `T`, which is the base change to `X ∖ T` by `AlgebraicGeometry.FormalSpace.isPullback_ι_openSubspaceOfPoints_compl`, and (3) as the restriction morphisms of the completions of Tag 0AMC along those inverse images. No further hypothesis is added and no part of the conclusion is dropped: the conclusion carries monomorphy of `(t, s)`, the equivalence-relation structure, and étaleness of both `s` and `t`”.
 
 > Let `S` be a scheme, let `X` be a locally Noetherian algebraic space over
 > `S`, let `T ⊆ |X|` be a closed subset and let `s, t : R ⟶ U` be two morphisms of algebraic
@@ -277,7 +277,7 @@ theorem isEtaleEquivalenceRelation_of_openComplement_and_completion
 
 [Tag 0AR9](https://stacks.math.columbia.edu/tag/0AR9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_factorization_isIso_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAwayFromClosedFactorization.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAwayFromClosedFactorization.lean#L180).
+**`AlgebraicGeometry.FormalSpace.exists_factorization_isIso_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAwayFromClosedFactorization.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleAwayFromClosedFactorization.lean#L183).
 
 > Let `X` be an algebraic space over `S`, let `T ⊆ |X|` be closed with open
 > complement `U = X ∖ T`, and let `f : X' ⟶ X` be a morphism of algebraic spaces which is locally
@@ -304,7 +304,7 @@ theorem exists_factorization_isIso_completionSheafMap
         IsIso (Space.completionSheafMap B S hS g (Space.pointsMap B S hS X'' p ⁻¹' T))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_factorization_of_isEtale_openComplementRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleOutsideFactorization.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleOutsideFactorization.lean#L447). The attribute's comment: “stated without the hypothesis that X be locally Noetherian, which the source's proof does not use; X'' ⟶ X is an isomorphism over U in the form that its base change to the open subspace with point set |X| ∖ T is an isomorphism, and the completions are the completionSheafMap of Section 0GDB”.
+**`AlgebraicGeometry.FormalSpace.exists_factorization_of_isEtale_openComplementRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleOutsideFactorization.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleOutsideFactorization.lean#L448). The attribute's comment: “stated without the hypothesis that X be locally Noetherian, which the source's proof does not use; X'' ⟶ X is an isomorphism over U in the form that its base change to the open subspace with point set |X| ∖ T is an isomorphism, and the completions are the completionSheafMap of Section 0GDB”.
 
 > **Stacks 0AR9.** Let `S` be a scheme contained in a big fppf site `B`, let `X` be an algebraic
 > space over `S` and let `T ⊆ |X|` be closed. Let `f : X' ⟶ X` be a morphism of algebraic spaces
@@ -339,4 +339,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.25, Tag 0GDP](https://stacks.math.columbia.edu/tag/0GDP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

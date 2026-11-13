@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.162 Nagata rings
 
-Section 10.162 of the Stacks Project, [Tag 032E](https://stacks.math.columbia.edu/tag/032E). 17 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.162 of the Stacks Project, [Tag 032E](https://stacks.math.columbia.edu/tag/032E). 17 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 032R, a definition
 
 [Tag 032R](https://stacks.math.columbia.edu/tag/032R) in the Stacks Project.
 
-**`IsUniversallyJapaneseRing`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Defs.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Defs.lean#L119). The attribute's comment: “(1)”. References: EGA 0 (23.1.1); EGA IV (7.7.1).
+**`IsUniversallyJapaneseRing`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Defs.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Defs.lean#L119). The attribute's comment: “(1)”. References: EGA 0 (23.1.1); EGA IV (7.7.1).
 
 > A ring `R` is **universally Japanese** if for every finite-type ring map `R → S` with `S` a
 > domain, the domain `S` is N-2 (Japanese), i.e. satisfies `IsJapaneseRing`.
@@ -23,7 +23,7 @@ Section 10.162 of the Stacks Project, [Tag 032E](https://stacks.math.columbia.ed
 class IsUniversallyJapaneseRing (R : Type u) [CommRing R] : Prop
 ```
 
-**`IsNagataRing`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Defs.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Defs.lean#L129). The attribute's comment: “(2)”.
+**`IsNagataRing`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Defs.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Defs.lean#L129). The attribute's comment: “(2)”.
 
 > A ring `R` is a **Nagata ring** if `R` is Noetherian and for every prime ideal `p ⊆ R` the
 > quotient domain `R ⧸ p` is N-2 (Japanese), i.e. satisfies `IsJapaneseRing`.
@@ -36,7 +36,7 @@ class IsNagataRing (R : Type u) [CommRing R] : Prop
 
 [Tag 03GH](https://stacks.math.columbia.edu/tag/03GH) in the Stacks Project.
 
-**`IsIntegralClosure.finite_of_essFiniteType_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/IntegralClosure.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/IntegralClosure.lean#L264). References: EGA II (6.3.10), “special case”.
+**`IsIntegralClosure.finite_of_essFiniteType_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/IntegralClosure.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/IntegralClosure.lean#L264). References: EGA II (6.3.10), “special case”.
 
 > **A Nagata ring has finite integral closure in a reduced algebra essentially of finite type.**
 >
@@ -58,7 +58,7 @@ public theorem IsIntegralClosure.finite_of_essFiniteType_of_isReduced
 
 [Tag 0351](https://stacks.math.columbia.edu/tag/0351) in the Stacks Project.
 
-**`isUniversallyJapanese_of_finiteType_isN1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/N1Criterion.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Japanese/N1Criterion.lean#L258). References: EGA IV (7.7.1), “N-1 ⇒ univ. Japanese”.
+**`isUniversallyJapanese_of_finiteType_isN1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/N1Criterion.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Japanese/N1Criterion.lean#L258). References: EGA IV (7.7.1), “N-1 ⇒ univ. Japanese”.
 
 > **Stacks Tag 0351.** Let `R` be a ring such that for every finite type ring map
 > `R → S` with `S` a domain, the domain `S` is N-1. Then `R` is universally Japanese.
@@ -73,7 +73,7 @@ theorem isUniversallyJapanese_of_finiteType_isN1 (R : Type u) [CommRing R]
 
 [Tag 032S](https://stacks.math.columbia.edu/tag/032S) in the Stacks Project.
 
-**`isUniversallyJapanese_of_isEssentiallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/EssFiniteType.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Japanese/EssFiniteType.lean#L372). References: EGA IV (7.7.2), “moreover clause”.
+**`isUniversallyJapanese_of_isEssentiallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/EssFiniteType.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Japanese/EssFiniteType.lean#L372). References: EGA IV (7.7.2), “moreover clause”.
 
 > (Stacks Tag 032S, Lemma 10.162.4) If `R` is universally Japanese then any
 > `R`-algebra `A` essentially of finite type over `R` is universally Japanese.
@@ -88,7 +88,7 @@ theorem isUniversallyJapanese_of_isEssentiallyOfFiniteType (R : Type u) [CommRin
 
 [Tag 032T](https://stacks.math.columbia.edu/tag/032T) in the Stacks Project.
 
-**`isNagataRing_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/QuasiFinite.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/QuasiFinite.lean#L154).
+**`isNagataRing_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/QuasiFinite.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/QuasiFinite.lean#L154).
 
 > **A quasi-finite algebra over a Nagata ring is a Nagata ring.** If `R` is a Nagata ring —
 > Noetherian, with every quotient `R ⧸ p` by a prime N-2 — and `R → S` is quasi-finite, that is of
@@ -108,7 +108,7 @@ public theorem isNagataRing_of_quasiFinite {R S : Type u} [CommRing R] [CommRing
 
 [Tag 032U](https://stacks.math.columbia.edu/tag/032U) in the Stacks Project.
 
-**`isNagata_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/Localization.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Japanese/Localization.lean#L211). References: EGA IV (7.7.2).
+**`isNagata_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Japanese/Localization.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Japanese/Localization.lean#L211). References: EGA IV (7.7.2).
 
 > (Stacks Tag 032U) A localization of a Nagata ring is a Nagata ring.
 >
@@ -133,7 +133,7 @@ theorem isNagata_of_isLocalization (R : Type u) [CommRing R] (M : Submonoid R) (
 
 [Tag 032V](https://stacks.math.columbia.edu/tag/032V) in the Stacks Project.
 
-**`isUniversallyJapaneseRing_and_isNagataRing_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Descent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Descent.lean#L288).
+**`isUniversallyJapaneseRing_and_isNagataRing_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Descent.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Descent.lean#L288).
 
 > **Universally Japanese and Nagata descend along a principal open cover.** Let `t ⊆ R`
 > generate the unit ideal and for `g ∈ t` let `Rₚ g` be a localization of `R` away from `g`. If
@@ -155,7 +155,7 @@ public theorem isUniversallyJapaneseRing_and_isNagataRing_of_localizationSpan {R
 
 [Tag 032W](https://stacks.math.columbia.edu/tag/032W) in the Stacks Project.
 
-**`IsNagataRing.of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean#L290). References: EGA 0 (23.1.5), “more general”.
+**`IsNagataRing.of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean#L290). References: EGA 0 (23.1.5), “more general”.
 
 > **A Noetherian complete local ring is a Nagata ring.** If `R` is Noetherian, local, and
 > complete for the topology defined by its maximal ideal `m`, then `R` is a Nagata ring: for every
@@ -175,7 +175,7 @@ public theorem IsNagataRing.of_isPrecomplete_maximalIdeal {R : Type u} [CommRing
 
 [Tag 032X](https://stacks.math.columbia.edu/tag/032X) in the Stacks Project.
 
-**`IsAnalyticallyUnramified`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Defs.lean#L107). References: SGA 1 I (9.4).
+**`IsAnalyticallyUnramified`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Defs.lean#L107). References: SGA 1 I (9.4).
 
 > A local ring `R` with maximal ideal `m` is **analytically unramified** if its completion
 > `R^ = lim_n R ⧸ mⁿ` is reduced.
@@ -192,7 +192,7 @@ public def IsAnalyticallyUnramified (R : Type*) [CommRing R] [IsLocalRing R] : P
 
 [Tag 032Y](https://stacks.math.columbia.edu/tag/032Y) in the Stacks Project.
 
-**`isAnalyticallyUnramified_iff_minimalPrimes_and_isN1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/MinimalPrimes.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/MinimalPrimes.lean#L638).
+**`isAnalyticallyUnramified_iff_minimalPrimes_and_isN1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/MinimalPrimes.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/MinimalPrimes.lean#L636).
 
 > **Tag 032Y.** Let `(R, m)` be a Noetherian local ring. Then `R` is analytically unramified if
 > and only if `R` is reduced and each of its minimal primes `q` is analytically unramified, i.e.
@@ -216,7 +216,7 @@ public theorem isAnalyticallyUnramified_iff_minimalPrimes_and_isN1 (R : Type*) [
 
 [Tag 032Z](https://stacks.math.columbia.edu/tag/032Z) in the Stacks Project.
 
-**`exists_isDiscreteValuationRing_atPrime_of_analyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/AnalyticallyUnramified.lean, line 1235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/AnalyticallyUnramified.lean#L1235).
+**`exists_isDiscreteValuationRing_atPrime_of_analyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/AnalyticallyUnramified.lean, line 1235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/AnalyticallyUnramified.lean#L1235).
 
 > **Stacks Tag 032Z.** Let `R` be a Noetherian local ring and `p ⊂ R` a prime
 > ideal such that the localization `R_p` is a discrete valuation ring and `p` is
@@ -243,7 +243,7 @@ theorem exists_isDiscreteValuationRing_atPrime_of_analyticallyUnramified {R : Ty
 
 [Tag 0330](https://stacks.math.columbia.edu/tag/0330) in the Stacks Project.
 
-**`IsAnalyticallyUnramified.of_associatedPrimes_quotient_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/CuttingByNonzerodivisor.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/CuttingByNonzerodivisor.lean#L507). The attribute's comment: “The source's `R` a domain with `x ≠ 0` is generalized to `x` a nonzerodivisor, which is all the proof uses; `R ⧸ xR` having no embedded primes is spelled as every associated prime of `R ⧸ xR` being minimal over `xR`, there being no predicate for it in this library.”.
+**`IsAnalyticallyUnramified.of_associatedPrimes_quotient_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/CuttingByNonzerodivisor.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/CuttingByNonzerodivisor.lean#L508). The attribute's comment: “The source's `R` a domain with `x ≠ 0` is generalized to `x` a nonzerodivisor, which is all the proof uses; `R ⧸ xR` having no embedded primes is spelled as every associated prime of `R ⧸ xR` being minimal over `xR`, there being no predicate for it in this library.”.
 
 > **Stacks Tag 0330.** Let `(R, 𝔪)` be a Noetherian local ring and let `x ∈ 𝔪` be a
 > nonzerodivisor. If `R ⧸ xR` has no embedded primes — every associated prime of the module `R ⧸ xR`
@@ -269,7 +269,7 @@ public theorem IsAnalyticallyUnramified.of_associatedPrimes_quotient_span_single
 
 [Tag 0331](https://stacks.math.columbia.edu/tag/0331) in the Stacks Project.
 
-**`IsAnalyticallyUnramified.of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/NagataDomain.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/NagataDomain.lean#L316). The attribute's comment: “Nagata is `IsNagataRing` of Definition 032R(2), whose first conjunct is `IsNoetherianRing R`, so the source's Noetherian hypothesis is absorbed rather than restated; analytically unramified is the predicate of Tag 032X, reducedness of the `𝔪`-adic completion.”.
+**`IsAnalyticallyUnramified.of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/NagataDomain.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Criteria/NagataDomain.lean#L316). The attribute's comment: “Nagata is `IsNagataRing` of Definition 032R(2), whose first conjunct is `IsNoetherianRing R`, so the source's Noetherian hypothesis is absorbed rather than restated; analytically unramified is the predicate of Tag 032X, reducedness of the `𝔪`-adic completion.”.
 
 > **Stacks Tag 0331.** A local ring `(R, 𝔪)` which is a domain and a Nagata ring is
 > analytically unramified: its completion `R^ = lim_n R ⧸ 𝔪ⁿ` is reduced.
@@ -285,7 +285,7 @@ public theorem IsAnalyticallyUnramified.of_isNagataRing {R : Type*} [CommRing R]
 
 [Tag 0BI2](https://stacks.math.columbia.edu/tag/0BI2) in the Stacks Project.
 
-**`isNagataRing_tfae_isAnalyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/AnalyticallyUnramified.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/AnalyticallyUnramified.lean#L236).
+**`isNagataRing_tfae_isAnalyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/AnalyticallyUnramified.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/AnalyticallyUnramified.lean#L236).
 
 > **Stacks 0BI2.** For a Noetherian local ring `R`, the following are equivalent:
 >
@@ -309,7 +309,7 @@ theorem isNagataRing_tfae_isAnalyticallyUnramified {R : Type u} [CommRing R] [Is
 
 [Tag 0334](https://stacks.math.columbia.edu/tag/0334) in the Stacks Project.
 
-**`isNagataRing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/FiniteType.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/FiniteType.lean#L478). The attribute's comment: “Items (1)-(3) as a `List.TFAE`. Nagata is `IsNagataRing` (032R(2)) and universally Japanese is `IsUniversallyJapaneseRing` (032R(1)); item (2), the condition the source's proof calls universally Nagata, is stated as the quantification over finite-type `R`-algebras rather than through a predicate of its own. See the module docstring.”. References: EGA IV (7.7.2), “a) <=> b)”; EGA IV (10.4.10), “more general”.
+**`isNagataRing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/FiniteType.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/FiniteType.lean#L478). The attribute's comment: “Items (1)-(3) as a `List.TFAE`. Nagata is `IsNagataRing` (032R(2)) and universally Japanese is `IsUniversallyJapaneseRing` (032R(1)); item (2), the condition the source's proof calls universally Nagata, is stated as the quantification over finite-type `R`-algebras rather than through a predicate of its own. See the module docstring.”. References: EGA IV (7.7.2), “a) <=> b)”; EGA IV (10.4.10), “more general”.
 
 > **Nagata's theorem.** For a ring `R` the following are equivalent: `R` is a Nagata ring;
 > every finite-type `R`-algebra is a Nagata ring; `R` is universally Japanese and Noetherian.
@@ -330,7 +330,7 @@ public theorem isNagataRing_tfae {R : Type u} [CommRing R] :
 
 [Tag 0335](https://stacks.math.columbia.edu/tag/0335) in the Stacks Project.
 
-**`isNagataRing_field_and_int_and_isDedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L128). The attribute's comment: “Items (1), (3) and (4) as one conjunction, since they share one proof; each is available separately as `IsNagataRing.of_field`, `Int.isNagataRing` and `IsNagataRing.of_isDedekindDomain_of_charZero`. Item (2) is Tag 032W and item (5) with the closing clause "and in particular universally Japanese" is Tag 0334, both tagged 0335 below. Nagata is `IsNagataRing` (032R(2)) and universally Japanese is `IsUniversallyJapaneseRing` (032R(1)). See the module docstring.”.
+**`isNagataRing_field_and_int_and_isDedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L128). The attribute's comment: “Items (1), (3) and (4) as one conjunction, since they share one proof; each is available separately as `IsNagataRing.of_field`, `Int.isNagataRing` and `IsNagataRing.of_isDedekindDomain_of_charZero`. Item (2) is Tag 032W and item (5) with the closing clause "and in particular universally Japanese" is Tag 0334, both tagged 0335 below. Nagata is `IsNagataRing` (032R(2)) and universally Japanese is `IsUniversallyJapaneseRing` (032R(1)). See the module docstring.”.
 
 > **Fields, `ℤ` and Dedekind domains whose fraction field has characteristic zero are Nagata
 > rings**, hence in particular universally Japanese. These are items (1), (3) and (4) of the source,
@@ -347,7 +347,7 @@ public theorem isNagataRing_field_and_int_and_isDedekindDomain :
     ∀ (R : Type u) [CommRing R] [IsDedekindDomain R] [CharZero R], IsNagataRing R
 ```
 
-**`IsNagataRing.of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L138). The attribute's comment: “(1) Fields.”.
+**`IsNagataRing.of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L138). The attribute's comment: “(1) Fields.”.
 
 > **Stacks 0335 (1).** A field is a Nagata ring, hence in particular universally Japanese: the
 > only prime of a field `K` is `0`, and `K ⧸ 0 = K` is N-2 because the integral closure of `K` in a
@@ -357,7 +357,7 @@ public theorem isNagataRing_field_and_int_and_isDedekindDomain :
 public theorem IsNagataRing.of_field {K : Type u} [Field K] : IsNagataRing K
 ```
 
-**`Int.isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L146). The attribute's comment: “(3) The ring `ℤ`.”. References: EGA IV (7.7.4), “in particular Z”; EGA IV (7.8.3), “(vi), special case”.
+**`Int.isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L146). The attribute's comment: “(3) The ring `ℤ`.”. References: EGA IV (7.7.4), “in particular Z”; EGA IV (7.8.3), “(vi), special case”.
 
 > **Stacks 0335 (3).** The ring `ℤ` is a Nagata ring, hence in particular universally Japanese.
 > This is the case `R = ℤ` of `IsNagataRing.of_isDedekindDomain_of_charZero`.
@@ -366,7 +366,7 @@ public theorem IsNagataRing.of_field {K : Type u} [Field K] : IsNagataRing K
 public theorem Int.isNagataRing : IsNagataRing ℤ
 ```
 
-**`IsNagataRing.of_isDedekindDomain_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L162). The attribute's comment: “(4) Dedekind domains with fraction field of characteristic zero, the latter read as `CharZero R`.”. References: EGA IV (7.7.4), “Dedekind char 0”; EGA IV (7.8.3), “(vi), special case”; EGA IV (7.8.4), “special case”.
+**`IsNagataRing.of_isDedekindDomain_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L162). The attribute's comment: “(4) Dedekind domains with fraction field of characteristic zero, the latter read as `CharZero R`.”. References: EGA IV (7.7.4), “Dedekind char 0”; EGA IV (7.8.3), “(vi), special case”; EGA IV (7.8.4), “special case”.
 
 > **Stacks 0335 (4).** A Dedekind domain whose fraction field has characteristic zero is a
 > Nagata ring, hence in particular universally Japanese. For a prime `𝔭 ≠ 0` the quotient `R ⧸ 𝔭` is
@@ -384,14 +384,14 @@ public theorem IsNagataRing.of_isDedekindDomain_of_charZero {R : Type u} [CommRi
 
 Declarations registered for the tag:
 
-- [`IsNagataRing.of_isPrecomplete_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean#L290), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L170) (StacksFrontier): “(2) Noetherian complete local rings, which is Tag 032W.”.
-- [`isNagataRing_tfae`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/FiniteType.lean#L478), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/Examples.lean#L177) (StacksFrontier): “(5) Finite type ring extensions of any of the above, which is the implication (1) ⇒ (2) of Tag 0334, and the closing clause "and in particular universally Japanese", which is its implication (1) ⇒ (3).”.
+- [`IsNagataRing.of_isPrecomplete_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/CompleteLocalRing.lean#L290), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L170) (StacksFrontier): “(2) Noetherian complete local rings, which is Tag 032W.”.
+- [`isNagataRing_tfae`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/FiniteType.lean#L478), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Nagata/Examples.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/Examples.lean#L177) (StacksFrontier): “(5) Finite type ring extensions of any of the above, which is the implication (1) ⇒ (2) of Tag 0334, and the closing clause "and in particular universally Japanese", which is its implication (1) ⇒ (3).”.
 
 ## Tag 09E2, a lemma
 
 [Tag 09E2](https://stacks.math.columbia.edu/tag/09E2) in the Stacks Project.
 
-**`IsNagataRing.exists_pow_eq_iff_exists_pow_eq_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/PthRoot.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Nagata/PthRoot.lean#L479). The attribute's comment: “Stated as a biconditional, the reverse implication being `map_pow` on the completion map. Noetherian is absorbed into `IsNagataRing` (Definition 032R(2)), primality of `p` into `p ≠ 0` over a domain (`CharP.char_is_prime_or_zero`), and the characteristic of `Frac A` is read off `A`. The completion is `AdicCompletion (maximalIdeal A) A` as in Tag 032X.”.
+**`IsNagataRing.exists_pow_eq_iff_exists_pow_eq_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nagata/PthRoot.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nagata/PthRoot.lean#L479). The attribute's comment: “Stated as a biconditional, the reverse implication being `map_pow` on the completion map. Noetherian is absorbed into `IsNagataRing` (Definition 032R(2)), primality of `p` into `p ≠ 0` over a domain (`CharP.char_is_prime_or_zero`), and the characteristic of `Frac A` is read off `A`. The completion is `AdicCompletion (maximalIdeal A) A` as in Tag 032X.”.
 
 > **Stacks Tag 09E2.** Let `(A, 𝔪)` be a local domain which is a Nagata ring and has
 > characteristic `p ≠ 0`, and let `A^ = lim_n A ⧸ 𝔪ⁿ` be its completion. An element `a : A` has a
@@ -418,4 +418,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.162, Tag 032E](https://stacks.math.columbia.edu/tag/032E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

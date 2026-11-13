@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.15 Applications
 
-Section 63.15 of the Stacks Project, [Tag 0GLG](https://stacks.math.columbia.edu/tag/0GLG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.15 of the Stacks Project, [Tag 0GLG](https://stacks.math.columbia.edu/tag/0GLG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GLH, a lemma
 
 [Tag 0GLH](https://stacks.math.columbia.edu/tag/0GLH) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.module_finite_compactlySupportedCohomologyGroup_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/CompactSupportFinitenessAlgClosed.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/CompactSupportFinitenessAlgClosed.lean#L54). The attribute's comment: “both cases: K in D+\_\{tors,c}(X, Λ), and K in D\_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; H^i\_c on D(X, Λ) is compactlySupportedCohomologyGroupUnbounded); H^i\_c through any compactification j of X over k”. References: SGA 4 XVII (5.3.8), “special case”.
+**`Stacks.EtaleCohomology.module_finite_compactlySupportedCohomologyGroup_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/CompactSupportFinitenessAlgClosed.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/CompactSupportFinitenessAlgClosed.lean#L54). The attribute's comment: “both cases: K in D+\_\{tors,c}(X, Λ), and K in D\_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; H^i\_c on D(X, Λ) is compactlySupportedCohomologyGroupUnbounded); H^i\_c through any compactification j of X over k”. References: SGA 4 XVII (5.3.8), “special case”.
 
 > Let `k` be an algebraically closed field, `X` a separated scheme of finite type over `k` (a
 > scheme of a big étale site `B`, with structure morphism `f`), `j` a compactification of `X` over
@@ -46,7 +46,7 @@ theorem module_finite_compactlySupportedCohomologyGroup_of_isConstructible
 
 [Tag 0GLI](https://stacks.math.columbia.edu/tag/0GLI) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isFiniteTypeLocallyConstantModuleSheaf_rightDerived_of_smooth_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothProperHigherDirectImageLocallyConstant.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothProperHigherDirectImageLocallyConstant.lean#L330). References: SGA 1 XIII (2.9), “special case”; SGA 4 XVI (2.1), “special case”; SGA 4 XVI (2.2), “Abelian torsion case”; SGA 7 I (0.1.5), “special case”.
+**`Stacks.EtaleCohomology.isFiniteTypeLocallyConstantModuleSheaf_rightDerived_of_smooth_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothProperHigherDirectImageLocallyConstant.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothProperHigherDirectImageLocallyConstant.lean#L331). References: SGA 1 XIII (2.9), “special case”; SGA 4 XVI (2.1), “special case”; SGA 4 XVI (2.2), “Abelian torsion case”; SGA 7 I (0.1.5), “special case”.
 
 > Let `f : X ⟶ S` be a smooth proper morphism of schemes, let `Λ` be a Noetherian ring and let
 > `F` be a finite type, locally constant sheaf of `Λ`-modules on
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.15, Tag 0GLG](https://stacks.math.columbia.edu/tag/0GLG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

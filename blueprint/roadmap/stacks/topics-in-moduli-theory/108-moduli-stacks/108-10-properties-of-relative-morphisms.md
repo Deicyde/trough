@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.10 Properties of relative morphisms
 
-Section 108.10 of the Stacks Project, [Tag 0DPL](https://stacks.math.columbia.edu/tag/0DPL). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 108.10 of the Stacks Project, [Tag 0DPL](https://stacks.math.columbia.edu/tag/0DPL). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DPM, a lemma
 
 [Tag 0DPM](https://stacks.math.columbia.edu/tag/0DPM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.diagonal_relativeHomProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismDiagonal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismDiagonal.lean#L94).
+**`AlgebraicGeometry.Space.diagonal_relativeHomProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismDiagonal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismDiagonal.lean#L94).
 
 > **Stacks 0DPM.** The diagonal of `Mor_B(Y, X) ⟶ B` is a closed immersion of finite
 > presentation, for `Y ⟶ B` flat, proper and of finite presentation and `X ⟶ B` separated and of
@@ -33,7 +33,7 @@ theorem diagonal_relativeHomProjection (hsep : IsSeparated B S hS x)
 
 [Tag 0DPN](https://stacks.math.columbia.edu/tag/0DPN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_and_isLocallyOfFinitePresentation_relativeHomProjection_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismSeparatedFinitePresentationUnconditional.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismSeparatedFinitePresentationUnconditional.lean#L56).
+**`AlgebraicGeometry.Space.isSeparated_and_isLocallyOfFinitePresentation_relativeHomProjection_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismSeparatedFinitePresentationUnconditional.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismSeparatedFinitePresentationUnconditional.lean#L56).
 
 > **Stacks 0DPN.** Let `Q` be an algebraic space, `z : Z ⟶ Q` flat, proper and of finite
 > presentation and `x : X ⟶ Q` separated and of finite presentation, all algebraic spaces over `S`.
@@ -53,7 +53,7 @@ theorem isSeparated_and_isLocallyOfFinitePresentation_relativeHomProjection_unco
 
 [Tag 0DPP](https://stacks.math.columbia.edu/tag/0DPP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L290). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms”.
+**`AlgebraicGeometry.Space.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L290). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms”.
 
 > **Stacks 0DPP,** the subfunctor `Isom_Q(Z, X) ⊆ Mor_Q(Z, X)` of relative isomorphisms: its
 > sections over a scheme `T` are the pairs `(a, b)` of Stacks 05Y1 at `T` whose morphism of base
@@ -67,7 +67,7 @@ theorem isSeparated_and_isLocallyOfFinitePresentation_relativeHomProjection_unco
 def isomSubfunctor : Subfunctor (relativeHom B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L322). The attribute's comment: “openness of the subfunctor of isomorphisms”.
+**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L322). The attribute's comment: “openness of the subfunctor of isomorphisms”.
 
 > **Stacks 0DPP.** With `Z ⟶ Q` flat, proper and of finite presentation and `X ⟶ Q` proper,
 > the subfunctor `Isom_Q(Z, X) ⊆ Mor_Q(Z, X)` of relative isomorphisms is an open subspace.
@@ -92,7 +92,7 @@ theorem isOpenSubspace_isomSubfunctor (hzfp : IsFinitePresentation B S hS z)
     IsOpenSubspace B S hS (isomSubfunctor B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean#L59). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms is an open subspace, for Y ⟶ B flat, proper and of finite presentation and X ⟶ B proper and of finite presentation”.
+**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean#L59). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms is an open subspace, for Y ⟶ B flat, proper and of finite presentation and X ⟶ B proper and of finite presentation”.
 
 > Let `Q` be an algebraic space and `z : Z ⟶ Q`, `x : X ⟶ Q` morphisms of algebraic spaces over
 > `S` with `z` flat, proper and of finite presentation and `x` proper and of finite presentation (in
@@ -111,7 +111,7 @@ theorem isOpenSubspace_isomSubfunctor_of_isFinitePresentation
 
 [Tag 0DPQ](https://stacks.math.columbia.edu/tag/0DPQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.numericalRelativeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphisms.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphisms.lean#L320). The attribute's comment: “the definition of `Mor^P_B(Y, X)` as the subfunctor of `Mor_B(Y, X)` of relative morphisms whose graph has the prescribed invariants, with the open subspace of a test scheme that tests the source's open immersion for a finite index set; that `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion rests on Lemmas 0DND and 0DNE, which are assertions about a morphism of algebraic stacks and are unavailable in this development, and is not stated”.
+**`AlgebraicGeometry.Space.numericalRelativeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphisms.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphisms.lean#L320). The attribute's comment: “the definition of `Mor^P_B(Y, X)` as the subfunctor of `Mor_B(Y, X)` of relative morphisms whose graph has the prescribed invariants, with the open subspace of a test scheme that tests the source's open immersion for a finite index set; that `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion rests on Lemmas 0DND and 0DNE, which are assertions about a morphism of algebraic stacks and are unavailable in this development, and is not stated”.
 
 > **Stacks 0DPQ,** the subfunctor `Mor^P_Q(Z, X) ⊆ Mor_Q(Z, X)`: its sections over a scheme `T`
 > are the pairs `(a, b)` of Stacks 05Y1 at `T` whose graph, a point of `Hilb_{Z ×_Q X / Q}` over
@@ -126,7 +126,7 @@ theorem isOpenSubspace_isomSubfunctor_of_isFinitePresentation
 def numericalRelativeHom : Subfunctor (relativeHom B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.numericalSituationRelativeHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L173). The attribute's comment: “the definition `Mor^P_B(Y, X) = Mor_B(Y, X) ∩ Hilb^P_{Y ×_B X/B}`, for the numerical invariants `χ(K_i ⊗^𝐋 κ(t))` of Situation 0DNC on `Y ×_B X ⟶ B`”.
+**`AlgebraicGeometry.Space.numericalSituationRelativeHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L173). The attribute's comment: “the definition `Mor^P_B(Y, X) = Mor_B(Y, X) ∩ Hilb^P_{Y ×_B X/B}`, for the numerical invariants `χ(K_i ⊗^𝐋 κ(t))` of Situation 0DNC on `Y ×_B X ⟶ B`”.
 
 > The subfunctor `Mor^P_Q(Z, X) = Mor_Q(Z, X) ∩ Hilb^P_{Z ×_Q X / Q}`. For the standing data `N`
 > of Situation 0DNC on `Z ×_Q X ⟶ Q` (a set `I`, perfect objects `E_i` of `D(𝒪_{Z ×_Q X})` and
@@ -139,7 +139,7 @@ def numericalRelativeHom : Subfunctor (relativeHom B S hS Z X Q z x hZ hX hQ)
 abbrev numericalSituationRelativeHom : Subfunctor (relativeHom B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isFlat_and_isClosedImmersion_numericalSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L222). The attribute's comment: “`Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion”.
+**`AlgebraicGeometry.Space.isFlat_and_isClosedImmersion_numericalSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L222). The attribute's comment: “`Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion”.
 
 > The morphism `Mor^P_Q(Z, X) ⟶ Mor_Q(Z, X)` is a flat closed immersion.
 
@@ -150,7 +150,7 @@ theorem isFlat_and_isClosedImmersion_numericalSituationRelativeHom_ι :
         (numericalSituationRelativeHom B S hS hsep hx_fp hfp hflat hproper N).ι
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L232). The attribute's comment: “for `I` finite, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
+**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L232). The attribute's comment: “for `I` finite, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
 
 > For `I` finite the morphism `Mor^P_Q(Z, X) ⟶ Mor_Q(Z, X)` is an open and closed immersion.
 
@@ -161,7 +161,7 @@ theorem isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι [
         (numericalSituationRelativeHom B S hS hsep hx_fp hfp hflat hproper N).ι
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L244). The attribute's comment: “for `B` locally Noetherian, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion, for an arbitrary index set `I`”.
+**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L244). The attribute's comment: “for `B` locally Noetherian, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion, for an arbitrary index set `I`”.
 
 > If `Q` is locally Noetherian, then for any index set `I` the morphism
 > `Mor^P_Q(Z, X) ⟶ Mor_Q(Z, X)` is an open and closed immersion.
@@ -174,7 +174,7 @@ theorem isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι_o
         (numericalSituationRelativeHom B S hS hsep hx_fp hfp hflat hproper N).ι
 ```
 
-**`AlgebraicGeometry.Space.hilbertPolynomialSituationRelativeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L301). The attribute's comment: “the notation `Mor^{P, L}_B(Y, X)`: `Mor^P_B(Y, X)` for `I = ℤ` and `E_i = L^{⊗ i}`, the relative morphisms whose graph `W` has `χ((Y ×_B X)_t, 𝒪_{W_t} ⊗ L_t^{⊗ i}) = P(i)` for all `i` and `t`”.
+**`AlgebraicGeometry.Space.hilbertPolynomialSituationRelativeHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L301). The attribute's comment: “the notation `Mor^{P, L}_B(Y, X)`: `Mor^P_B(Y, X)` for `I = ℤ` and `E_i = L^{⊗ i}`, the relative morphisms whose graph `W` has `χ((Y ×_B X)_t, 𝒪_{W_t} ⊗ L_t^{⊗ i}) = P(i)` for all `i` and `t`”.
 
 > The subfunctor `Mor^{P, L}_Q(Z, X)`: `Mor^P_Q(Z, X)` for `I = ℤ` and `E_n = L^{⊗ n}`, an
 > invertible `𝒪_{Z ×_Q X}`-module `L`. Its sections over `T` are the relative morphisms whose graph
@@ -187,7 +187,7 @@ theorem isOpenImmersion_and_isClosedImmersion_numericalSituationRelativeHom_ι_o
 def hilbertPolynomialSituationRelativeHom : Subfunctor (relativeHom B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_hilbertPolynomialSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L323). The attribute's comment: “for `I = ℤ` and `E_i = L^{⊗ i}` with `L` an invertible module on `Y ×_B X`, `Mor^{P, L}_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
+**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_hilbertPolynomialSituationRelativeHom_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsClopen.lean#L323). The attribute's comment: “for `I = ℤ` and `E_i = L^{⊗ i}` with `L` an invertible module on `Y ×_B X`, `Mor^{P, L}_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
 
 > For an invertible `𝒪_{Z ×_Q X}`-module `L` and any `P : ℤ → ℤ`, the morphism
 > `Mor^{P, L}_Q(Z, X) ⟶ Mor_Q(Z, X)` is an open and closed immersion.
@@ -200,7 +200,7 @@ theorem isOpenImmersion_and_isClosedImmersion_hilbertPolynomialSituationRelative
         (hilbertPolynomialSituationRelativeHom B S hS hsep hx_fp hfp hflat hproper L P).ι
 ```
 
-**`AlgebraicGeometry.Space.isFlat_and_isClosedImmersion_numericalRelativeHomInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean#L244). The attribute's comment: “`Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion”.
+**`AlgebraicGeometry.Space.isFlat_and_isClosedImmersion_numericalRelativeHomInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean#L244). The attribute's comment: “`Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is a flat closed immersion”.
 
 > **Stacks 0DPQ.**  The morphism `Mor^P_Q(Z, X) ⟶ Mor_Q(Z, X)` is a flat closed immersion.
 
@@ -212,7 +212,7 @@ theorem isFlat_and_isClosedImmersion_numericalRelativeHomInclusion :
         (numericalRelativeHomInclusion B S hS Z X Q z x hZ hX hQ χd P hsep hfp hflat hproper)
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalRelativeHomInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean#L256). The attribute's comment: “for `I` finite, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
+**`AlgebraicGeometry.Space.isOpenImmersion_and_isClosedImmersion_numericalRelativeHomInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/NumericalRelativeMorphismsImmersion.lean#L256). The attribute's comment: “for `I` finite, `Mor^P_B(Y, X) ⟶ Mor_B(Y, X)` is an open and closed immersion”.
 
 > **Stacks 0DPQ, the case of a finite index set.**  For `I` finite the morphism
 > `Mor^P_Q(Z, X) ⟶ Mor_Q(Z, X)` is an open and closed immersion.
@@ -229,7 +229,7 @@ theorem isOpenImmersion_and_isClosedImmersion_numericalRelativeHomInclusion [Fin
 
 [Tag 0DPR](https://stacks.math.columbia.edu/tag/0DPR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_and_isFinitePresentation_relativeHomHilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsHilbertPolynomialFinitePresentation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsHilbertPolynomialFinitePresentation.lean#L59).
+**`AlgebraicGeometry.Space.isSeparated_and_isFinitePresentation_relativeHomHilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsHilbertPolynomialFinitePresentation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeMorphismsHilbertPolynomialFinitePresentation.lean#L59).
 
 > Let `Q` be an algebraic space over `Spec ℤ`, `z : Z ⟶ Q` flat, proper and of finite
 > presentation, `x : X ⟶ Q` separated and of finite presentation, `N` an invertible module ample on
@@ -276,4 +276,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.10, Tag 0DPL](https://stacks.math.columbia.edu/tag/0DPL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

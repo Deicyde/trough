@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.8 Completion and Mittag-Leffler modules
 
-Section 38.8 of the Stacks Project, [Tag 05DI](https://stacks.math.columbia.edu/tag/05DI). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.8 of the Stacks Project, [Tag 05DI](https://stacks.math.columbia.edu/tag/05DI). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05DJ, a lemma
 
 [Tag 05DJ](https://stacks.math.columbia.edu/tag/05DJ) in the Stacks Project.
 
-**`AdicCompletion.isMittagLeffler_finsupp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean#L186). The attribute's comment: “the Mittag-Leffler property; the direct sum `⊕_{α ∈ A} R` is spelled `A →₀ R`. Mittag-Leffler is `IsMittagLeffler`, condition (1) of 059E, as in 059N and 059X.”.
+**`AdicCompletion.isMittagLeffler_finsupp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean#L186). The attribute's comment: “the Mittag-Leffler property; the direct sum `⊕_{α ∈ A} R` is spelled `A →₀ R`. Mittag-Leffler is `IsMittagLeffler`, condition (1) of 059E, as in 059N and 059X.”.
 
 > **Stacks Project, Tag 05DJ.** If `R` is Noetherian and `I`-adically complete, then the
 > `I`-adic completion of the direct sum of an `A`-indexed family of copies of `R` is a
@@ -28,13 +28,13 @@ theorem isMittagLeffler_finsupp {R : Type uR} [CommRing R] (I : Ideal R) [IsNoet
 
 Declarations registered for the tag:
 
-- [`AdicCompletion.flat_directSum`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L202), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean#L59) (StacksFrontier): “flatness; neither `IsAdicComplete` nor the shape of the direct sum is needed, so the library statement is the more general Tag 06LE”.
+- [`AdicCompletion.flat_directSum`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L202), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveCompletedDirectSum.lean#L59) (StacksFrontier): “flatness; neither `IsAdicComplete` nor the shape of the direct sum is needed, so the library statement is the more general Tag 06LE”.
 
 ## Tag 05DK, a lemma
 
 [Tag 05DK](https://stacks.math.columbia.edu/tag/05DK) in the Stacks Project.
 
-**`AdicCompletion.flat_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean#L112). The attribute's comment: “flatness; `M/IM` is `M ⧸ I • ⊤`. The source's hypothesis that `R` be `I`-adically complete is dropped: it is unused, neither Tag 05D3 nor Tag 06LE needing it, so this is strictly more general than the source's statement.”. References: SGA 1 IV (3.1).
+**`AdicCompletion.flat_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean#L112). The attribute's comment: “flatness; `M/IM` is `M ⧸ I • ⊤`. The source's hypothesis that `R` be `I`-adically complete is dropped: it is unused, neither Tag 05D3 nor Tag 06LE needing it, so this is strictly more general than the source's statement.”. References: SGA 1 IV (3.1).
 
 > **Stacks Project, Tag 05DK.** If `R` is Noetherian, `M` is flat and `M/IM` is projective over
 > `R/I`, then the `I`-adic completion of `M` is flat over `R`. The source's hypothesis that `R` be
@@ -46,7 +46,7 @@ theorem flat_of_projective_quotient_smul_top [IsNoetherianRing R]
     Module.Flat R (AdicCompletion I M)
 ```
 
-**`AdicCompletion.isMittagLeffler_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean#L129). The attribute's comment: “the Mittag-Leffler property; `M/IM` is `M ⧸ I • ⊤`, and Mittag-Leffler is `IsMittagLeffler`, condition (1) of 059E, as in 059N and 05DJ.”.
+**`AdicCompletion.isMittagLeffler_of_projective_quotient_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveQuotientAdicCompletion.lean#L129). The attribute's comment: “the Mittag-Leffler property; `M/IM` is `M ⧸ I • ⊤`, and Mittag-Leffler is `IsMittagLeffler`, condition (1) of 059E, as in 059N and 05DJ.”.
 
 > **Stacks Project, Tag 05DK.** If `R` is Noetherian and `I`-adically complete, `M` is flat and
 > `M/IM` is projective over `R/I`, then the `I`-adic completion of `M` is a Mittag-Leffler
@@ -62,7 +62,7 @@ theorem isMittagLeffler_of_projective_quotient_smul_top [IsNoetherianRing R] [Is
 
 [Tag 05DL](https://stacks.math.columbia.edu/tag/05DL) in the Stacks Project.
 
-**`AdicCompletion.universallyInjective_of_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean#L227). The attribute's comment: “`IS` is `I.map (algebraMap R S)` and `IS + 𝔮` is a supremum of ideals; associatedness is `IsAssociatedPrimeStacks`, the source's definition; the tensor product is written `N ⊗[R] Q`, with `N` on the left, so that it carries its standard `S`-module structure. The source's hypothesis that `R` be Noetherian is dropped: the argument runs entirely over `S`, using Tag 00IQ and Tag 0311 there, so this is strictly more general than the source's statement.”.
+**`AdicCompletion.universallyInjective_of_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean#L225). The attribute's comment: “`IS` is `I.map (algebraMap R S)` and `IS + 𝔮` is a supremum of ideals; associatedness is `IsAssociatedPrimeStacks`, the source's definition; the tensor product is written `N ⊗[R] Q`, with `N` on the left, so that it carries its standard `S`-module structure. The source's hypothesis that `R` be Noetherian is dropped: the argument runs entirely over `S`, using Tag 00IQ and Tag 0311 there, so this is strictly more general than the source's statement.”.
 
 > **Stacks Project, Tag 05DL.** Let `R → S` be a map of Noetherian rings, let `I ⊆ R` be an
 > ideal and let `N` be a finite `S`-module. If for every finite `R`-module `Q` and every associated
@@ -82,7 +82,7 @@ theorem universallyInjective_of_associatedPrimes {R : Type u} [CommRing R] (I : 
 
 [Tag 05DM](https://stacks.math.columbia.edu/tag/05DM) in the Stacks Project.
 
-**`AdicCompletion.universallyInjective_of_flat_of_fibre_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean#L303). The attribute's comment: “`IS` is `I.map (algebraMap R S)` and `IS + 𝔮` is a supremum of ideals; the contraction `𝔭 = R ∩ 𝔮` is `PrimeSpectrum.comap (algebraMap R S) 𝔮`, and `κ(𝔭)` is its `ResidueField`; the tensor product is written `N ⊗[R] κ(𝔭)`, with `N` on the left, so that it carries its standard `S`-module structure.”.
+**`AdicCompletion.universallyInjective_of_flat_of_fibre_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/ProjectiveAdicCompletionInjectivity.lean#L300). The attribute's comment: “`IS` is `I.map (algebraMap R S)` and `IS + 𝔮` is a supremum of ideals; the contraction `𝔭 = R ∩ 𝔮` is `PrimeSpectrum.comap (algebraMap R S) 𝔮`, and `κ(𝔭)` is its `ResidueField`; the tensor product is written `N ⊗[R] κ(𝔭)`, with `N` on the left, so that it carries its standard `S`-module structure.”.
 
 > **Stacks Project, Tag 05DM.** Let `R → S` be a map of Noetherian rings, let `I ⊆ R` be an
 > ideal and let `N` be a finite `S`-module which is flat over `R`. If for every prime `𝔮` of `S`
@@ -108,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.8, Tag 05DI](https://stacks.math.columbia.edu/tag/05DI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

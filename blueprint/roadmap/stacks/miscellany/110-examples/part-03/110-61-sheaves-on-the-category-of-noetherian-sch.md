@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.61 Sheaves on the category of Noetherian schemes
 
-Section 110.61 of the Stacks Project, [Tag 0GE8](https://stacks.math.columbia.edu/tag/0GE8). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 110.61 of the Stacks Project, [Tag 0GE8](https://stacks.math.columbia.edu/tag/0GE8). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GE9, a lemma
 
 [Tag 0GE9](https://stacks.math.columbia.edu/tag/0GE9) in the Stacks Project.
 
-**`AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L416).
+**`AlgebraicGeometry.LocallyNoetherianOver.not_isMorphismOfSites_toBigFppfOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sites/NoetherianSiteNotMorphismOfSites.lean#L416).
 
 > **Stacks 0GE9.** *With `S = Spec 𝐅_p` the inclusion functor
 > `(Noetherian/S)_{fppf} ⟶ (Sch/S)_{fppf}` does not define a morphism of sites.*
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.61, Tag 0GE8](https://stacks.math.columbia.edu/tag/0GE8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Zeros and ones of entire functions on lines
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html).
 
 ## Straight lines in the complex plane
 
@@ -18,7 +18,7 @@ there are $a, v \in \mathbb{C}$ with $v \ne 0$ such that $s = \{a + tv : t \in \
 
 - Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
 
-Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.IsComplexLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#is-complex-line).
+Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.IsComplexLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#is-complex-line).
 
 ## Functions whose zeros lie in a given set
 
@@ -30,7 +30,7 @@ in $l$.
 
 - Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
 
-Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.ZerosOnLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#zeros-on-line).
+Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.ZerosOnLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#zeros-on-line).
 
 ## Functions whose ones lie in a given set
 
@@ -42,7 +42,7 @@ in $m$.
 
 - Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
 
-Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.OnesOnLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#ones-on-line).
+Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.OnesOnLine`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#ones-on-line).
 
 ## Zeros and ones of an entire function on two distinct lines
 
@@ -56,7 +56,7 @@ a straight line is a set $\{a + tv : t \in \mathbb{R}\}$ with $a, v \in \mathbb{
 
 - Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).
 
-Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.conjecture`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.EntireZerosOnesLinesWanted.conjecture`, a definition declared in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#conjecture).
 
 ## Entire functions with zeros and ones on two distinct lines exist
 
@@ -75,7 +75,7 @@ transcendental examples are $f = P(e^{az})$ with $P$ a polynomial and $a$ a cons
 
 - Walter Bergweiler, Alexandre Eremenko and Aimo Hinkkanen, Entire functions with two radially distributed values, Math. Proc. Cambridge Philos. Soc. 165 (2018) 93-108, arXiv:1509.03283, https://arxiv.org/abs/1509.03283.
 
-Stated but not proved: `MathlibExt.Analysis.EntireZerosOnesLinesWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.EntireZerosOnesLinesWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/EntireZerosOnesLinesWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/EntireZerosOnesLinesWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zeros and ones of entire functions on lines](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/zeros-and-ones-of-entire-functions-on-lines)

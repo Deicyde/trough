@@ -7,7 +7,7 @@ statement: formalized
 
 # Product growth in special linear groups over finite fields
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html).
 
 ## Product set of a finite set
 
@@ -19,7 +19,7 @@ of $A$.
 
 - AIM-COMBINATORICS-0241, Problem 3.4, aim-combinatorics-notes.json notes[240].
 
-Formalized by `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.AIMCombinatorics0241_prodSet`, a definition declared in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#aimcombinatorics0241-prod-set).
+Formalized by `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.AIMCombinatorics0241_prodSet`, a definition declared in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#aimcombinatorics0241-prod-set).
 
 ## Two-step product growth in $\mathrm{SL}_2(\mathbb{F}_p)$ (AIM Problem 3.4)
 
@@ -37,7 +37,7 @@ $|A \cdot A| > p^{5/2 + \delta}$?
 
 - AIM-COMBINATORICS-0241, Problem 3.4, aim-combinatorics-notes.json notes[240], https://aimath.org/WWN/additivecomb/additivecomb.pdf.
 
-Formalized by `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#conjecture).
 
 ## Sets of size about $p^{5/2}$ in $\mathrm{SL}_2(\mathbb{F}_p)$ grow under multiplication
 
@@ -56,7 +56,7 @@ additive-combinatorics Problem 3.4 (Green, after Venkatesh).
 
 - N. Nikolov and L. Pyber, Product decompositions of quasirandom groups and a Jordan type theorem, arXiv:math/0703343, https://arxiv.org/abs/math/0703343.
 
-Stated but not proved: `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.SL2TwoStepProductGrowthWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SL2TwoStepProductGrowthWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Product growth in special linear groups over finite fields](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/combinatorics-in-groups/product-growth-in-special-linear-groups-over-fin)

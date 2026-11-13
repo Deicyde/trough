@@ -8,7 +8,7 @@ proof: formalized
 
 # 60.25 Pulling back along purely inseparable maps
 
-Section 60.25 of the Stacks Project, [Tag 07PZ](https://stacks.math.columbia.edu/tag/07PZ). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.25 of the Stacks Project, [Tag 07PZ](https://stacks.math.columbia.edu/tag/07PZ). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07Q1, an item
 
@@ -16,16 +16,16 @@ Section 60.25 of the Stacks Project, [Tag 07PZ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`Crystalline.DzDecomposition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L45), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 790](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L790) (StacksFrontier): “the decomposition of one-forms”.
-- [`Crystalline.DzDecomposition.dOne`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L791) (StacksFrontier): “the component d\_1 of the differential”.
-- [`Crystalline.DzDecomposition.partialZ`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L64), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L792) (StacksFrontier): “the coefficient of dz in the differential”.
-- [`Crystalline.DzDecomposition.dOne_add_partialZ_smul`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 794](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L794) (StacksFrontier): “the equation d(f) = d\_1(f) + the coefficient of dz times dz”.
+- [`Crystalline.DzDecomposition`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L45), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L790) (StacksFrontier): “the decomposition of one-forms”.
+- [`Crystalline.DzDecomposition.dOne`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 791](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L791) (StacksFrontier): “the component d\_1 of the differential”.
+- [`Crystalline.DzDecomposition.partialZ`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L64), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L792) (StacksFrontier): “the coefficient of dz in the differential”.
+- [`Crystalline.DzDecomposition.dOne_add_partialZ_smul`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/DzDecomposition.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 794](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L794) (StacksFrontier): “the equation d(f) = d\_1(f) + the coefficient of dz times dz”.
 
 ## Tag 07Q7, a lemma
 
 [Tag 07Q7](https://stacks.math.columbia.edu/tag/07Q7) in the Stacks Project.
 
-**`Crystalline.exists_homotopyInverse_baseChangeDeRhamMap_baseLinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L139). The attribute's comment: “with the B-linearity of the reverse map e and of the homotopy h, which the p-adically completed form of Tag 07N1 needs”.
+**`Crystalline.exists_homotopyInverse_baseChangeDeRhamMap_baseLinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L139). The attribute's comment: “with the B-linearity of the reverse map e and of the homotopy h, which the p-adically completed form of Tag 07N1 needs”.
 
 > **Stacks 07Q7 (Lemma 60.25.1).** In the situation of Section 60.25 — a commutative square
 > `B → B'` over `A → A'`, quotients `Ω_{B/A} → Ω` and `Ω_{B'/A'} → Ω'` to which the de Rham
@@ -135,7 +135,7 @@ public theorem exists_homotopyInverse_baseChangeDeRhamMap_baseLinear
                 RestrictScalars.lsmul A B (M ⊗[B] (⋀[B]^p Omega)) b (k p x)))
 ```
 
-**`Crystalline.exists_homotopyInverse_baseChangeDeRhamMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L368).
+**`Crystalline.exists_homotopyInverse_baseChangeDeRhamMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChangeHomotopyInverse/Existence.lean#L368).
 
 > Let `c_M^• : M ⊗_B Ω^• ⟶ (M ⊗_B B') ⊗_{B'} (Ω')^•` be the base change map of de Rham
 > complexes of a `B`-module `M` with integrable connection `∇`. Given `a ∈ B` with `d(a) = 0`, a
@@ -234,7 +234,7 @@ public theorem exists_homotopyInverse_baseChangeDeRhamMap
 
 [Tag 07Q8](https://stacks.math.columbia.edu/tag/07Q8) in the Stacks Project.
 
-**`Crystalline.oneVariableTheta_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1030). The attribute's comment: “the operator θ”.
+**`Crystalline.oneVariableTheta_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1030). The attribute's comment: “the operator θ”.
 
 > **The operator `θ` of Example 07Q8.**  It raises the divided power degree of the variable by
 > one in every term of the divided power monomial expansion: `θ(∑ bₘ z^[m]) = ∑ bₘ z^[m+1]`.
@@ -246,7 +246,7 @@ public theorem oneVariableTheta_apply (f : oneVariableDividedPowerPolynomial B) 
         b • (oneVariableDividedPowers B).dpow (m + 1) (oneVariableVariable B)
 ```
 
-**`Crystalline.oneVariable_sub_theta_partialZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1058). The attribute's comment: “f - θ(∂\_z f) = f(0)”.
+**`Crystalline.oneVariable_sub_theta_partialZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1058). The attribute's comment: “f - θ(∂\_z f) = f(0)”.
 
 > **Assumption (6) of Section 60.25 at `a = 1`, in sharp form.**  The difference
 > `f - θ(∂_z(f))` is the constant term `f(0)` of `f`, the image under `B → B⟨z⟩` of the
@@ -259,7 +259,7 @@ public theorem oneVariable_sub_theta_partialZ (f : oneVariableDividedPowerPolyno
         (dividedPowerPolynomialAugmentation (B : Type u) Unit f)
 ```
 
-**`Crystalline.oneVariableDividedPowerPolynomial_standingAssumptions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1087). The attribute's comment: “the seven standing assumptions for B⟨z⟩ at a = 1”.
+**`Crystalline.oneVariableDividedPowerPolynomial_standingAssumptions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1087). The attribute's comment: “the seven standing assumptions for B⟨z⟩ at a = 1”.
 
 > **Example 07Q8, the verification of the standing assumptions.**  For a divided power ring
 > `(B, J, δ)` over `A`, the divided power polynomial ring `B' = B⟨z⟩` with its divided powers on
@@ -291,7 +291,7 @@ public theorem oneVariableDividedPowerPolynomial_standingAssumptions :
             (dividedPowerDifferentials (A := A) B.dividedPowers) 1))
 ```
 
-**`Crystalline.exists_homotopyEquiv_oneVariableDeRhamComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1131). The attribute's comment: “Lemma 07Q7 at a = 1 for B⟨z⟩”.
+**`Crystalline.exists_homotopyEquiv_oneVariableDeRhamComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean, line 1131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/RelativePoincare.lean#L1131). The attribute's comment: “Lemma 07Q7 at a = 1 for B⟨z⟩”.
 
 > **Example 07Q8, the conclusion.**  Let `(B, J, δ)` be a divided power ring which is an
 > `A`-algebra, let `B⟨z⟩` be the divided power polynomial ring on one divided power variable, and
@@ -327,7 +327,7 @@ public theorem exists_homotopyEquiv_oneVariableDeRhamComparison
 
 [Tag 07N1](https://stacks.math.columbia.edu/tag/07N1) in the Stacks Project.
 
-**`Crystalline.PthRootExtension.exists_homotopyInverse_completedPthRootExtension_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/PthRootCompletedSituation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/PthRootCompletedSituation.lean#L74). The attribute's comment: “in Situation 07MD with D the completed divided power envelope of 07J8 and the completed forms of 07J9; for every completed connection integrable in the sense of 07I0”.
+**`Crystalline.PthRootExtension.exists_homotopyInverse_completedPthRootExtension_situation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/PthRootCompletedSituation.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/PthRootCompletedSituation.lean#L74). The attribute's comment: “in Situation 07MD with D the completed divided power envelope of 07J8 and the completed forms of 07J9; for every completed connection integrable in the sense of 07I0”.
 
 > **[Stacks, Lemma 60.25.3, Tag 07N1].**
 >
@@ -435,14 +435,14 @@ theorem exists_homotopyInverse_completedPthRootExtension_situation
 
 [Tag 07Q9](https://stacks.math.columbia.edu/tag/07Q9) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.annihilation07Q9_of_isIteratedAlphaPCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCover07Q9Main.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCover07Q9Main.lean#L114). The attribute's comment: “for an iterated α\_p-cover f : X' → X over S\_0 of constant degree q and a crystal in quasi-coherent modules F on Cris(X/S), with F' = f\_cris^* F, the cone E of Ru\_\{X/S,*}F → f\_* Ru\_\{X'/S,*}F' has all cohomology sheaves annihilated by q”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.annihilation07Q9_of_isIteratedAlphaPCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCover07Q9Main.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCover07Q9Main.lean#L114). The attribute's comment: “for an iterated α\_p-cover f : X' → X over S\_0 of constant degree q and a crystal in quasi-coherent modules F on Cris(X/S), with F' = f\_cris^* F, the cone E of Ru\_\{X/S,*}F → f\_* Ru\_\{X'/S,*}F' has all cohomology sheaves annihilated by q”.
 
 > **Stacks Project, Lemma 60.26.3, Tag 07Q9.**  Let `p = T.p` be the prime of the global
-> crystalline situation `T`, whose divided power scheme `(S, 𝓘, γ)` lies over `ℤ_(p)`, and assume
-> `p ∈ 𝓘` (`hpI`).  Let `f : X' ⟶ X` be an iterated `α_p`-cover (`hf`) of schemes over
-> `S₀ = V(𝓘)` — `X'` lies over `S₀` through `f`, which is the situation `overSituation T f` — of
-> constant degree `q` (`hq`).  Let `ℱ` be a crystal in quasi-coherent sheaves on `Cris(X/S)` (`hF`)
-> and `ℱ' = f_cris^*ℱ` (`crisModuleInverseImage` of `ℱ`).  Then in every distinguished triangle
+> crystalline situation `T`, whose divided power scheme `(S, 𝓘, γ)` lies over `ℤ_(p)`.  Let
+> `f : X' ⟶ X` be an iterated `α_p`-cover (`hf`) of schemes over `S₀ = V(𝓘)` — `X'` lies over
+> `S₀` through `f`, which is the situation `overSituation T f` — of constant degree `q` (`hq`).
+> Let `ℱ` be a crystal in quasi-coherent sheaves on `Cris(X/S)` (`hF`) and `ℱ' = f_cris^*ℱ`
+> (`crisModuleInverseImage` of `ℱ`).  Then in every distinguished triangle
 >
 > `Ru_{X/S, *}ℱ ⟶ f_*Ru_{X'/S, *}ℱ' ⟶ E ⟶ Ru_{X/S, *}ℱ[1]`
 >
@@ -450,13 +450,12 @@ theorem exists_homotopyInverse_completedPthRootExtension_situation
 > `f_*` is the derived direct image of the Zariski topoi, which is `f_*` since `f` is a
 > homeomorphism), the object `E` has every cohomology sheaf annihilated by `q` (`Annihilation07Q9`).
 >
-> The hypothesis `p ∈ 𝓘` of the source is stated; the argument only uses that `p` is nilpotent on
-> `X`, which every global crystalline situation carries.
+> The hypothesis `p ∈ 𝓘` of the source is not needed: the argument only uses that `p` is nilpotent
+> on `X`, which every global crystalline situation carries.
 
 ```lean
 theorem annihilation07Q9_of_isIteratedAlphaPCover
-    (hpI : (T.p : Γ(T.S.scheme, ⊤)) ∈ T.S.ideal.obj (op ⊤)) {q : ℕ}
-    (hf : IsIteratedAlphaPCover T.p f) (hq : HasConstantDegree f q)
+    {q : ℕ} (hf : IsIteratedAlphaPCover T.p f) (hq : HasConstantDegree f q)
     (F : SheafOfModules.{u} (structureSheaf T)) (hF : IsQuasiCoherentCrystal T F) :
     Annihilation07Q9 T q
       (moduleComparison07Q9 (overSituation T f) T (𝟙 T.S) f (overSituation_compat T f)
@@ -467,11 +466,11 @@ theorem annihilation07Q9_of_isIteratedAlphaPCover
 
 [Tag 07QA](https://stacks.math.columbia.edu/tag/07QA) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.annihilated_ker_coker_crisModuleCohomologyMap_of_isIteratedAlphaPCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrisCohomologyBound07QAMain.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrisCohomologyBound07QAMain.lean#L84). The attribute's comment: “f^* : H^i(Cris(X/S), F) → H^i(Cris(X'/S), F') has kernel and cokernel annihilated by q^(i+1)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.annihilated_ker_coker_crisModuleCohomologyMap_of_isIteratedAlphaPCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrisCohomologyBound07QAMain.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrisCohomologyBound07QAMain.lean#L84). The attribute's comment: “f^* : H^i(Cris(X/S), F) → H^i(Cris(X'/S), F') has kernel and cokernel annihilated by q^(i+1)”.
 
-> Let `p` be a prime and `(S, I, γ)` a divided power scheme over `ℤ_(p)` with `p ∈ I` (the
-> prime, the `ℤ_(p)`-structure of the base and the local nilpotence of `p` on `X` are part of the
-> situation `T`; `p ∈ I` is `hpI`), `S₀ = V(I)`.  Let `f : X' ⟶ X` be an iterated `α_p`-cover of
+> Let `p` be a prime and `(S, I, γ)` a divided power scheme over `ℤ_(p)` (the prime, the
+> `ℤ_(p)`-structure of the base and the local nilpotence of `p` on `X` are part of the situation
+> `T`), `S₀ = V(I)`.  Let `f : X' ⟶ X` be an iterated `α_p`-cover of
 > schemes over `S₀` of constant degree `q`, `ℱ` a crystal in quasi-coherent modules on `Cris(X/S)`
 > and `ℱ' = f_cris^*ℱ`.  Then the kernel and the cokernel of
 >
@@ -482,8 +481,7 @@ theorem annihilation07Q9_of_isIteratedAlphaPCover
 
 ```lean
 theorem annihilated_ker_coker_crisModuleCohomologyMap_of_isIteratedAlphaPCover
-    (hpI : (T.p : Γ(T.S.scheme, ⊤)) ∈ T.S.ideal.obj (op ⊤)) (q : ℕ)
-    (hf : IsIteratedAlphaPCover T.p f) (hq : HasConstantDegree f q)
+    (q : ℕ) (hf : IsIteratedAlphaPCover T.p f) (hq : HasConstantDegree f q)
     (F : SheafOfModules.{u} (structureSheaf T)) (hF : IsQuasiCoherentCrystal T F)
     [HasDerivedCategory.{w} (Sheaf (smallTopology (overSituation T f)) AddCommGrpCat.{u + 1})]
     [HasDerivedCategory.{w} (Sheaf (smallTopology T) AddCommGrpCat.{u + 1})]
@@ -501,7 +499,7 @@ theorem annihilated_ker_coker_crisModuleCohomologyMap_of_isIteratedAlphaPCover
 
 [Tag 07QB](https://stacks.math.columbia.edu/tag/07QB) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.relativeFrobeniusToTwist_isIteratedAlphaPCover_cohomologyBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCoverRelativeFrobenius07QB.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCoverRelativeFrobenius07QB.lean#L204). The attribute's comment: “for the global crystalline situation with p in I and X -> S\_0 smooth of relative dimension d: F\_\{X/S\_0} : X -> X^\{(1)} is an iterated alpha\_p-cover of degree p ^ d, and for every crystal in quasi-coherent modules G on Cris(X^\{(1)}/S) and every i the map F\_\{X/S\_0}^* : H^i(Cris(X^\{(1)}/S), G) -> H^i(Cris(X/S), F\_\{X/S\_0,cris}^* G) has kernel and cokernel annihilated by p^\{d(i+1)}”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.relativeFrobeniusToTwist_isIteratedAlphaPCover_cohomologyBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCoverRelativeFrobenius07QB.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/AlphaPCoverRelativeFrobenius07QB.lean#L204). The attribute's comment: “for the global crystalline situation with p in I and X -> S\_0 smooth of relative dimension d: F\_\{X/S\_0} : X -> X^\{(1)} is an iterated alpha\_p-cover of degree p ^ d, and for every crystal in quasi-coherent modules G on Cris(X^\{(1)}/S) and every i the map F\_\{X/S\_0}^* : H^i(Cris(X^\{(1)}/S), G) -> H^i(Cris(X/S), F\_\{X/S\_0,cris}^* G) has kernel and cokernel annihilated by p^\{d(i+1)}”.
 
 > **[Stacks, Lemma 60.26.5, Tag 07QB].**  In the global crystalline situation `X/S` of
 > [Stacks, Tag 07MF] with `p` in the divided power ideal `I`, let `S₀ = V(I)`,
@@ -548,4 +546,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.25, Tag 07PZ](https://stacks.math.columbia.edu/tag/07PZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

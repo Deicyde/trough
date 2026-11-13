@@ -1,6 +1,6 @@
 # 110 Examples
 
-Chapter 110 of the Stacks Project, *Examples*, [Tag 026Z](https://stacks.math.columbia.edu/tag/026Z): the 64 sections of its 82 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 95 tags are carried by 130 declarations of the repository (all in StacksFrontier) and 5 registered declarations.
+Chapter 110 of the Stacks Project, *Examples*, [Tag 026Z](https://stacks.math.columbia.edu/tag/026Z): the 68 sections of its 82 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 100 tags are carried by 133 declarations of the repository (all in StacksFrontier) and 5 registered declarations.
 
 ## [110.4 Non-quasi-compact inverse… to 110.32 A noninvertible ideal…](part-01/README.md)
 
@@ -48,11 +48,12 @@ Chapter 110 of the Stacks Project, *Examples*, [Tag 026Z](https://stacks.math.co
 - [110.51 Specializations between points in fibre étale morphism](part-02/110-51-specializations-between-points-in-fibre-e.md)
 - [110.52 A torsor which is not an fppf torsor](part-02/110-52-a-torsor-which-is-not-an-fppf-torsor.md)
 
-## [110.53 Stack with quasi-compact… to 110.78 Flat maps are not…](part-03/README.md)
+## [110.53 Stack with quasi-compact… to 110.74 An example of a…](part-03/README.md)
 
 - [110.53 Stack with quasi-compact flat covering which is not algebraic](part-03/110-53-stack-with-quasi-compact-flat-covering-wh.md)
 - [110.54 Limit preserving on objects, not limit preserving](part-03/110-54-limit-preserving-on-objects-not-limit-pre.md)
 - [110.56 Sheaf with quasi-compact flat covering which is not algebraic](part-03/110-56-sheaf-with-quasi-compact-flat-covering-wh.md)
+- [110.57 The étale topology vs Zariski and finite étale Covers](part-03/110-57-the-etale-topology-vs-zariski-and-finite.md)
 - [110.58 Sheaves and specializations](part-03/110-58-sheaves-and-specializations.md)
 - [110.59 Sheaves and constructible functions](part-03/110-59-sheaves-and-constructible-functions.md)
 - [110.60 The lisse-étale site is not functorial](part-03/110-60-the-lisse-etale-site-is-not-functorial.md)
@@ -61,18 +62,21 @@ Chapter 110 of the Stacks Project, *Examples*, [Tag 026Z](https://stacks.math.co
 - [110.63 A big abelian category](part-03/110-63-a-big-abelian-category.md)
 - [110.64 Weakly associated points and scheme theoretic density](part-03/110-64-weakly-associated-points-and-scheme-theor.md)
 - [110.65 Example of non-additivity of traces](part-03/110-65-example-of-non-additivity-of-traces.md)
+- [110.66 Nonfinite cohomology of the structure sheaf of a projective scheme](part-03/110-66-nonfinite-cohomology-of-the-structure-she.md)
 - [110.67 Being projective is not local on the base](part-03/110-67-being-projective-is-not-local-on-the-base.md)
 - [110.68 Non-effective descent data for projective schemes](part-03/110-68-non-effective-descent-data-for-projective.md)
 - [110.69 A family of curves whose total space is not a scheme](part-03/110-69-a-family-of-curves-whose-total-space-is-n.md)
 - [110.70 Derived base change](part-03/110-70-derived-base-change.md)
 - [110.71 An interesting compact object](part-03/110-71-an-interesting-compact-object.md)
+- [110.73 The stack of proper algebraic spaces is not algebraic](part-03/110-73-the-stack-of-proper-algebraic-spaces-is-n.md)
 - [110.74 An example of a non-algebraic Hom-stack](part-03/110-74-an-example-of-a-non-algebraic-hom-stack.md)
-- [110.75 An algebraic stack not satisfying strong formal effectiveness](part-03/110-75-an-algebraic-stack-not-satisfying-strong.md)
-- [110.77 Affine formal algebraic spaces](part-03/110-77-affine-formal-algebraic-spaces.md)
-- [110.78 Flat maps are not directed limits of finitely presented flat maps](part-03/110-78-flat-maps-are-not-directed-limits-of-fini.md)
 
-## [110.79 The category of modules… to 110.82 The spectrum of the…](part-04/README.md)
+## [110.75 An algebraic stack not… to 110.82 The spectrum of the…](part-04/README.md)
 
+- [110.75 An algebraic stack not satisfying strong formal effectiveness](part-04/110-75-an-algebraic-stack-not-satisfying-strong.md)
+- [110.76 A counter example to Grothendieck's existence theorem](part-04/110-76-a-counter-example-to-grothendiecks-existe.md)
+- [110.77 Affine formal algebraic spaces](part-04/110-77-affine-formal-algebraic-spaces.md)
+- [110.78 Flat maps are not directed limits of finitely presented flat maps](part-04/110-78-flat-maps-are-not-directed-limits-of-fini.md)
 - [110.79 The category of modules modulo torsion modules](part-04/110-79-the-category-of-modules-modulo-torsion-mo.md)
 - [110.80 Different colimit topologies](part-04/110-80-different-colimit-topologies.md)
 - [110.81 Universally submersive but not V covering](part-04/110-81-universally-submersive-but-not-v-covering.md)

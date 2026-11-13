@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.33 Unbounded Mayer-Vietoris
 
-Section 20.33 of the Stacks Project, [Tag 08BR](https://stacks.math.columbia.edu/tag/08BR). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.33 of the Stacks Project, [Tag 08BR](https://stacks.math.columbia.edu/tag/08BR). 7 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08BU, a lemma
 
 [Tag 08BU](https://stacks.math.columbia.edu/tag/08BU) in the Stacks Project.
 
-**`Stacks.ExtensionByZero.distinguished_extensionRestriction_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/MayerVietorisTriangle.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/MayerVietorisTriangle.lean#L1386). The attribute's comment: “the whole statement: the distinguished triangle, for every choice of the three derived functors `R(j_!j^*)` and their units — the degreewise one of Section 20.32 included — with the two maps out of the intersection term pinned by the adjunction counits, the second with the Mayer--Vietoris sign”.
+**`Stacks.ExtensionByZero.distinguished_extensionRestriction_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/MayerVietorisTriangle.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ExtensionByZero/MayerVietorisTriangle.lean#L1386). The attribute's comment: “the whole statement: the distinguished triangle, for every choice of the three derived functors `R(j_!j^*)` and their units — the degreewise one of Section 20.32 included — with the two maps out of the intersection term pinned by the adjunction counits, the second with the Mayer--Vietoris sign”.
 
 > **Stacks 08BU.** For a cover by two open subspaces, extension by zero of the
 > restrictions to their intersection and to the two opens forms a distinguished triangle,
@@ -48,7 +48,7 @@ public theorem distinguished_extensionRestriction_triangle {X : TopCat.{u}}
           distTriang (DerivedCategory (SheafOfModules.{u} O)))
 ```
 
-**`Stacks.ExtensionByZero.distinguished_derivedExtensionRestriction_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L383). The attribute's comment: “the whole statement at the presentation built in this file: the three clauses of `distinguished_extensionRestriction_triangle` for `derivedExtensionRestriction`, `derivedExtensionRestrictionFactorsh` and the instance `derivedExtensionRestriction_isRightDerivedFunctor`, with the maps to the identity functor the canonical derived adjunction counits of Stacks 08BT and the two maps out of the intersection term pinned by composing them with those counits, the second with the Mayer--Vietoris sign”.
+**`Stacks.ExtensionByZero.distinguished_derivedExtensionRestriction_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L383). The attribute's comment: “the whole statement at the presentation built in this file: the three clauses of `distinguished_extensionRestriction_triangle` for `derivedExtensionRestriction`, `derivedExtensionRestrictionFactorsh` and the instance `derivedExtensionRestriction_isRightDerivedFunctor`, with the maps to the identity functor the canonical derived adjunction counits of Stacks 08BT and the two maps out of the intersection term pinned by composing them with those counits, the second with the Mayer--Vietoris sign”.
 
 > Let `X` be a ringed space which is the union of two open subspaces `U` and `V`. Then there
 > are comparison maps out of `D(j_!)D(j^*)` for `U ∩ V` into the ones for `U` and for `V`, and a
@@ -81,7 +81,7 @@ public theorem distinguished_derivedExtensionRestriction_triangle {X : TopCat.{u
 
 [Tag 08BV](https://stacks.math.columbia.edu/tag/08BV) in the Stacks Project.
 
-**`Stacks.Duality.Coherator.isMayerVietorisApex_restrictPushforward_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean#L77). The attribute's comment: “the scheme-level form: `U`, `V` opens of a scheme inside their union, with the terms `Rj_{W,*}(K|_W)` of `D(𝒪_X)` at the locally small model”.
+**`Stacks.Duality.Coherator.isMayerVietorisApex_restrictPushforward_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean#L77). The attribute's comment: “the scheme-level form: `U`, `V` opens of a scheme inside their union, with the terms `Rj_{W,*}(K|_W)` of `D(𝒪_X)` at the locally small model”.
 
 > **[Stacks, Tag 08BV] for a scheme.** For opens `U`, `V` of a scheme `X` and any object `K` of
 > the unbounded derived category `D(𝒪_X)` there is a distinguished triangle
@@ -98,7 +98,7 @@ theorem isMayerVietorisApex_restrictPushforward_sup (K : DerivedCategory X.Modul
     IsMayerVietorisApex X U V K (restrictPushforward (U ⊔ V) K)
 ```
 
-**`Stacks.Duality.Coherator.isMayerVietorisApex_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean#L90). The attribute's comment: “the scheme-level form for a cover of the whole scheme, with `K` itself as the first term of the triangle”.
+**`Stacks.Duality.Coherator.isMayerVietorisApex_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/UnboundedMayerVietoris.lean#L90). The attribute's comment: “the scheme-level form for a cover of the whole scheme, with `K` itself as the first term of the triangle”.
 
 > **[Stacks, Tag 08BV] for a scheme, in the form of the source.** If the opens `U`, `V` cover the
 > scheme `X`, then every object `K` of `D(𝒪_X)` itself sits in a distinguished triangle
@@ -113,7 +113,7 @@ theorem isMayerVietorisApex_self (hUV : U ⊔ V = ⊤) (K : DerivedCategory X.Mo
     IsMayerVietorisApex X U V K K
 ```
 
-**`Stacks.Cohomology.MayerVietoris.exists_distinguished_triangle_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietoris.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietoris.lean#L442).
+**`Stacks.Cohomology.MayerVietoris.exists_distinguished_triangle_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietoris.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietoris.lean#L442).
 
 > **Stacks 08BV.** A two-open cover gives a distinguished Mayer--Vietoris triangle, naturally
 > in every object of the unbounded derived category of modules.
@@ -156,7 +156,7 @@ theorem exists_distinguished_triangle_of_cover
           distTriang (DerivedCategory (SheafOfModules.{u} O))
 ```
 
-**`Stacks.Cohomology.MayerVietoris.exists_distinguished_triangle_of_cover_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietorisCanonical.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietorisCanonical.lean#L144). The attribute's comment: “the ringed-space form with the three derived pushforwards constructed by `rightDerivedRestrictPush`, at the standard model of `D(O)`: no derived functor, comparison map or derived-functor hypothesis is taken as a parameter”.
+**`Stacks.Cohomology.MayerVietoris.exists_distinguished_triangle_of_cover_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietorisCanonical.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/MayerVietorisCanonical.lean#L144). The attribute's comment: “the ringed-space form with the three derived pushforwards constructed by `rightDerivedRestrictPush`, at the standard model of `D(O)`: no derived functor, comparison map or derived-functor hypothesis is taken as a parameter”.
 
 > **Stacks 08BV.** A two-open cover of a space carrying a sheaf of rings `O` gives a
 > distinguished Mayer--Vietoris triangle
@@ -208,7 +208,7 @@ theorem exists_distinguished_triangle_of_cover_rightDerived
 
 [Tag 08BW](https://stacks.math.columbia.edu/tag/08BW) in the Stacks Project.
 
-**`Stacks.ExtensionByZero.exists_mayerVietoris_ext_longExactSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L426). The attribute's comment: “long exact sequence of the Ext groups on the two opens and their intersection”.
+**`Stacks.ExtensionByZero.exists_mayerVietoris_ext_longExactSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L426). The attribute's comment: “long exact sequence of the Ext groups on the two opens and their intersection”.
 
 > Let `X` be a ringed space covered by two open subspaces `U` and `V`, and let `E` and `F` be
 > objects of `D(𝒪_X)`. There are restriction, difference and connecting homomorphisms making the
@@ -240,7 +240,7 @@ public theorem exists_mayerVietoris_ext_longExactSequence {X : TopCat.{u}}
         Function.Exact (boundary n) (restriction (n + 1))
 ```
 
-**`Stacks.ExtensionByZero.exists_mayerVietoris_hom_longExactSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L491). The attribute's comment: “long exact sequence, extension-by-zero form of the Ext groups”.
+**`Stacks.ExtensionByZero.exists_mayerVietoris_hom_longExactSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequence.lean#L491). The attribute's comment: “long exact sequence, extension-by-zero form of the Ext groups”.
 
 > Let `X` be a ringed space covered by two open subspaces `U` and `V`, and let `E` and `F` be
 > objects of `D(𝒪_X)`. For every choice of the three derived functors of extension by zero of the
@@ -292,7 +292,7 @@ public theorem exists_mayerVietoris_hom_longExactSequence {X : TopCat.{u}}
                 (derivedExtensionRestrictionCounit O V DV aV).app E ≫ x))
 ```
 
-**`Stacks.ExtensionByZero.exists_mayerVietoris_ext_longExactSequence_restrictions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequenceRestrictions.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequenceRestrictions.lean#L495). The attribute's comment: “the long exact sequence, with its first map the pair of the restrictions to the two opens and its second map the difference of two restrictions to their intersection”.
+**`Stacks.ExtensionByZero.exists_mayerVietoris_ext_longExactSequence_restrictions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequenceRestrictions.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/ExtSequenceRestrictions.lean#L496). The attribute's comment: “the long exact sequence, with its first map the pair of the restrictions to the two opens and its second map the difference of two restrictions to their intersection”.
 
 > **Stacks 08BW, with every map of the sequence named.** For a ringed space covered by two
 > open subspaces `U` and `V` and objects `E`, `F` of `D(𝒪_X)`, the Mayer--Vietoris sequence
@@ -357,7 +357,47 @@ theorem exists_mayerVietoris_ext_longExactSequence_restrictions (hUV : U ⊔ V =
 
 [Tag 08BX](https://stacks.math.columbia.edu/tag/08BX) in the Stacks Project.
 
-**`Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean, line 849](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean#L849). The attribute's comment: “the triangle in D(A), A = Γ(X, 𝒪\_X)”.
+**`Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris_longExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedLongExact.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedLongExact.lean#L163). The attribute's comment: “the triangle and the long exact cohomology sequence, functorial in E, in D(A)”.
+
+> **Stacks 08BX, the long exact cohomology sequence.** Let `X` be a ringed space covered by
+> two open subsets `U` and `V`, and let `A = Γ(X, 𝒪_X)`.  There is a natural transformation
+> `δ : RΓ(U ∩ V, -) ⟶ RΓ(X, -)[1]` such that, for every object `E` of `D(𝒪_X)`,
+>
+> * `RΓ(X, E) ⟶ RΓ(U, E) ⊕ RΓ(V, E) ⟶ RΓ(U ∩ V, E) ⟶ RΓ(X, E)[1]` is a distinguished
+>   triangle in `D(A)`, the first two maps being the restrictions with the usual sign;
+> * writing `H^n(W, E) = H^n(RΓ(W, E))`, the sequence
+>   `H^n(X, E) ⟶ H^n(U, E) ⊕ H^n(V, E) ⟶ H^n(U ∩ V, E) ⟶ H^\{n+1}(X, E) ⟶
+>     H^\{n+1}(U, E) ⊕ H^\{n+1}(V, E)`
+>   is exact for every `n ∈ ℤ`, the connecting map being the one induced by `δ`; as `n` varies
+>   these windows make up the whole long exact Mayer--Vietoris sequence;
+> * every map of the long exact sequence is natural in `E`.
+
+```lean
+theorem linearUnboundedMayerVietoris_longExact (hUV : U ⊔ V = ⊤) :
+    ∃ δ : derivedLinearSections X (U ⊓ V) ⟶ derivedLinearSections X ⊤ ⋙
+          shiftFunctor (DerivedCategory (ModuleCat.{u} (baseRing X))) (1 : ℤ),
+      (∀ E, Triangle.mk
+        (biprod.lift ((derivedLinearRestriction X (le_top : U ≤ ⊤)).app E)
+          ((derivedLinearRestriction X (le_top : V ≤ ⊤)).app E))
+        (biprod.desc ((derivedLinearRestriction X (inf_le_left : U ⊓ V ≤ U)).app E)
+          (-((derivedLinearRestriction X (inf_le_right : U ⊓ V ≤ V)).app E)))
+        (δ.app E) ∈ distTriang (DerivedCategory (ModuleCat.{u} (baseRing X)))) ∧
+      (∀ E (n₀ n₁ : ℤ) (h : n₀ + 1 = n₁),
+        (ComposableArrows.mk₄ (cohomologyToBiprod X U V n₀ E) (cohomologyFromBiprod X U V n₀ E)
+          (cohomologyConnecting X U V δ n₀ n₁ h E) (cohomologyToBiprod X U V n₁ E)).Exact) ∧
+      (∀ (n : ℤ) {E E'} (φ : E ⟶ E'),
+        cohomologyToBiprod X U V n E ≫
+            biprod.map ((linearCohomology X U n).map φ) ((linearCohomology X V n).map φ) =
+          (linearCohomology X ⊤ n).map φ ≫ cohomologyToBiprod X U V n E' ∧
+        cohomologyFromBiprod X U V n E ≫ (linearCohomology X (U ⊓ V) n).map φ =
+          biprod.map ((linearCohomology X U n).map φ) ((linearCohomology X V n).map φ) ≫
+            cohomologyFromBiprod X U V n E') ∧
+      (∀ (n₀ n₁ : ℤ) (h : n₀ + 1 = n₁) {E E'} (φ : E ⟶ E'),
+        cohomologyConnecting X U V δ n₀ n₁ h E ≫ (linearCohomology X ⊤ n₁).map φ =
+          (linearCohomology X (U ⊓ V) n₀).map φ ≫ cohomologyConnecting X U V δ n₀ n₁ h E')
+```
+
+**`Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean, line 853](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean#L853). The attribute's comment: “the triangle, in D(A), A = Γ(X, 𝒪\_X)”.
 
 > Let `X` be a ringed space covered by two open subsets `U` and `V`, and let `A = Γ(X, 𝒪_X)`.
 > The restriction maps of the `A`-linear derived sections functors, with the usual sign on the
@@ -377,7 +417,7 @@ theorem linearUnboundedMayerVietoris (hUV : U ⊔ V = ⊤) :
         (δ.app E) ∈ distTriang (DerivedCategory (ModuleCat.{u} (baseRing X)))
 ```
 
-**`Stacks.Cohomology.SpaceMayerVietoris.relativeUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean#L283). The attribute's comment: “for a pair of opens covering an arbitrary open, not only the whole space”.
+**`Stacks.Cohomology.SpaceMayerVietoris.relativeUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean#L284). The attribute's comment: “the triangle, for a pair of opens covering an arbitrary open, not only the whole space”.
 
 > **Stacks 08BX for a cover of an arbitrary open.** Let `X` be a ringed space and let
 > `W = U ∪ V` be an open subset written as the union of two open subsets.  For any choice of
@@ -424,7 +464,7 @@ public theorem relativeUnboundedMayerVietoris (X : RingedSpace.{u, u})
         (δ.app E) ∈ distTriang (DerivedCategory AddCommGrpCat.{u})
 ```
 
-**`Stacks.Cohomology.SpaceMayerVietoris.unboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean#L431).
+**`Stacks.Cohomology.SpaceMayerVietoris.unboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/UnboundedDerivedSections.lean#L432). The attribute's comment: “the triangle, in the derived category of abelian groups”.
 
 > **Stacks 08BX.** Let `X` be a ringed space covered by two open subsets `U` and `V`.  For
 > any choice of derived sections functors over `X`, `U`, `V` and `U ∩ V` — that is, any right
@@ -432,8 +472,8 @@ public theorem relativeUnboundedMayerVietoris (X : RingedSpace.{u, u})
 > restriction maps, with the usual sign on the overlap, fit into a distinguished triangle in the
 > derived category of abelian groups, naturally in the object of `D(𝒪_X)`: the connecting map is
 > a natural transformation and the other four maps are natural transformations of the given
-> functors.  Applying the cohomological functors gives the functorial Mayer--Vietoris long exact
-> sequence.
+> functors.  The functorial Mayer--Vietoris long exact cohomology sequence obtained from the
+> triangle is `Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris_longExact`.
 
 ```lean
 public theorem unboundedMayerVietoris (X : RingedSpace.{u, u}) (U V : Opens X.carrier)
@@ -474,7 +514,7 @@ public theorem unboundedMayerVietoris (X : RingedSpace.{u, u}) (U V : Opens X.ca
 
 [Tag 08HZ](https://stacks.math.columbia.edu/tag/08HZ) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeMayerVietoris.canonicalPushforwardTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/CanonicalDerivedTriangle.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/CanonicalDerivedTriangle.lean#L139). The attribute's comment: “the triangle with no choices: the canonical derived functors of `canonicalRightDerived` and the canonical sequence of Tag 01EC, which is the form in which two such triangles can be compared”.
+**`Stacks.Cohomology.RelativeMayerVietoris.canonicalPushforwardTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/CanonicalDerivedTriangle.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/CanonicalDerivedTriangle.lean#L139). The attribute's comment: “the triangle with no choices: the canonical derived functors of `canonicalRightDerived` and the canonical sequence of Tag 01EC, which is the form in which two such triangles can be compared”.
 
 > The relative Mayer--Vietoris triangle built from the canonical derived functors and the
 > canonical relative Mayer--Vietoris sequence is distinguished at every object of the unbounded
@@ -487,7 +527,7 @@ public theorem canonicalPushforwardTriangle_distinguished
       distTriang (DerivedCategory (SheafOfModules.{u} (structureSheafRing Y)))
 ```
 
-**`Stacks.Cohomology.RelativeMayerVietoris.unboundedRelativeMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean, line 906](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean#L906).
+**`Stacks.Cohomology.RelativeMayerVietoris.unboundedRelativeMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean, line 906](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean#L906).
 
 > **Stacks 08HZ.** For a morphism of ringed spaces and a cover of its source by two open
 > subsets, the four derived pushforwards attached to the cover fit into a distinguished triangle,
@@ -516,7 +556,7 @@ public theorem unboundedRelativeMayerVietoris (f : X ⟶ Y) (U V : Opens X) (hUV
           distTriang (DerivedCategory (SheafOfModules.{u} (structureSheafRing Y)))
 ```
 
-**`Stacks.Cohomology.RelativeMayerVietoris.pushforwardTriangleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean, line 1046](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean#L1046). The attribute's comment: “functoriality of the triangle in `E`: the lemma's second assertion, which the existential form above cannot express because it hides the morphisms”.
+**`Stacks.Cohomology.RelativeMayerVietoris.pushforwardTriangleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean, line 1046](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/UnboundedDerivedPushforward.lean#L1046). The attribute's comment: “functoriality of the triangle in `E`: the lemma's second assertion, which the existential form above cannot express because it hides the morphisms”.
 
 > The relative Mayer--Vietoris triangle is functorial in the derived object: a morphism
 > `e : E ⟶ E'` induces a morphism of triangles whose components are the four derived functors
@@ -533,7 +573,7 @@ public def pushforwardTriangleMap
 
 [Tag 08DF](https://stacks.math.columbia.edu/tag/08DF) in the Stacks Project.
 
-**`Stacks.Cohomology.PushforwardRestriction.isIso_derivedOpenPushforward_restrictionUnit_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean, line 1067](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean#L1067). The attribute's comment: “part (1)”.
+**`Stacks.Cohomology.PushforwardRestriction.isIso_derivedOpenPushforward_restrictionUnit_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean, line 1067](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean#L1067). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 08DF, part (1).** Let `j : U → X` be the inclusion of an open
 > subspace of a ringed space and `T ⊆ U` a closed subset of `X`. If every cohomology sheaf of
@@ -552,7 +592,7 @@ theorem isIso_derivedOpenPushforward_restrictionUnit_app_of_supported
       (derivedOpenPushforwardUnit O U)).app E)
 ```
 
-**`Stacks.Cohomology.PushforwardRestriction.isIso_extensionByZeroToDerivedOpenPushforward_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean, line 1084](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean#L1084). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.PushforwardRestriction.isIso_extensionByZeroToDerivedOpenPushforward_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean, line 1084](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/PushforwardAndRestriction.lean#L1084). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 08DF, part (2).** Let `j : U → X` be the inclusion of an open
 > subspace of a ringed space and `T ⊆ U` a closed subset of `X`. If every cohomology sheaf of
@@ -576,7 +616,7 @@ theorem isIso_extensionByZeroToDerivedOpenPushforward_app_of_supported
 
 [Tag 0G6X](https://stacks.math.columbia.edu/tag/0G6X) in the Stacks Project.
 
-**`Stacks.Cohomology.LinearCupProductTriangle.linearCupProductMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean#L717). The attribute's comment: “the map of triangles, with the vertices read on the chosen representatives”.
+**`Stacks.Cohomology.LinearCupProductTriangle.linearCupProductMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean, line 717](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean#L717). The attribute's comment: “the map of triangles, with the vertices read on the chosen representatives”.
 
 > **Stacks 0G6X.**  Let `(X, 𝒪_X)` be a ringed space, `A = Γ(X, 𝒪_X)`, and let
 > `X = U ∪ V` be a union of two open subsets.  For a choice of resolutions of two complexes `K`
@@ -605,7 +645,7 @@ theorem linearCupProductMayerVietoris (hUV : U ⊔ V = ⊤) :
             DerivedCategory.triangleOfSESδ (shortExact_cupTarget U V d hUV)
 ```
 
-**`Stacks.Cohomology.LinearCupProductTriangle.exists_cupData_linearCupProductMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean#L742). The attribute's comment: “for arbitrary complexes, after replacing K by a K-injective resolution”.
+**`Stacks.Cohomology.LinearCupProductTriangle.exists_cupData_linearCupProductMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearCupProductTriangle.lean#L742). The attribute's comment: “for arbitrary complexes, after replacing K by a K-injective resolution”.
 
 > **Stacks 0G6X for arbitrary complexes.**  Every complex `K` of `𝒪_X`-modules admits a
 > quasi-isomorphism into a complex carrying a choice of resolutions, so that the map of
@@ -641,4 +681,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.33, Tag 08BR](https://stacks.math.columbia.edu/tag/08BR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

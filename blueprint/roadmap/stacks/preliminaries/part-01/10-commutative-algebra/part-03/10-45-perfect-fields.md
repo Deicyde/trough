@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: exists_isPurelyInseparable_and_isSeparableExtension_of_essFiniteType, perfectClosure.isPurelyInseparable, perfectClosure.perfectField, IsPurelyInseparable.instNonemptyAlgHomOfPerfectField, instSubsingletonAlgHomOfIsPurelyInseparable, perfectClosure, isReduced_tensorProduct_baseField_left
+lean: exists_isPurelyInseparable_and_isSeparableExtension_of_essFiniteType, perfectClosure.isPurelyInseparable, perfectClosure.perfectField, IsPurelyInseparable.instNonemptyAlgHomOfPerfectField, instSubsingletonAlgHomOfIsPurelyInseparable, perfectClosure, Algebra.IsGeometricallyReduced.of_perfectField, PerfectField.isReduced_tensorProduct
 statement: formalized
 proof: formalized
 ---
 
 # 10.45 Perfect fields
 
-Section 10.45 of the Stacks Project, [Tag 05DU](https://stacks.math.columbia.edu/tag/05DU). 4 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.45 of the Stacks Project, [Tag 05DU](https://stacks.math.columbia.edu/tag/05DU). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 030R, a lemma
 
 [Tag 030R](https://stacks.math.columbia.edu/tag/030R) in the Stacks Project.
 
-**`exists_isPurelyInseparable_and_isSeparableExtension_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PurelyInseparable/BaseChange.lean, line 979](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PurelyInseparable/BaseChange.lean#L979). References: EGA 0 (19.6.6).
+**`exists_isPurelyInseparable_and_isSeparableExtension_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PurelyInseparable/BaseChange.lean, line 979](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PurelyInseparable/BaseChange.lean#L979). References: EGA 0 (19.6.6).
 
 > Let `K/k` be a finitely generated field extension and let `Ω/K` be a perfect field extension.
 > Then inside `Ω` there is a diagram
@@ -49,10 +49,10 @@ public theorem exists_isPurelyInseparable_and_isSeparableExtension_of_essFiniteT
 
 Declarations registered for the tag:
 
-- [`perfectClosure.isPurelyInseparable`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.isPurelyInseparable#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L291) (StacksFrontier): “existence: the perfect closure of `k` in an algebraic closure is purely inseparable”.
-- [`perfectClosure.perfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.perfectField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L294) (StacksFrontier): “existence: it is perfect (given a perfect ambient field, e.g. `IsAlgClosed.perfectField`)”.
-- [`IsPurelyInseparable.instNonemptyAlgHomOfPerfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsPurelyInseparable.instNonemptyAlgHomOfPerfectField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L297) (StacksFrontier): “uniqueness: a `k`-map into any perfect extension exists”.
-- [`instSubsingletonAlgHomOfIsPurelyInseparable`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instSubsingletonAlgHomOfIsPurelyInseparable#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L299) (StacksFrontier): “uniqueness: such a `k`-map is unique”. References: EGA I (3.5.8), “special case”.
+- [`perfectClosure.isPurelyInseparable`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.isPurelyInseparable#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L292) (StacksFrontier): “existence: the perfect closure of `k` in an algebraic closure is purely inseparable”.
+- [`perfectClosure.perfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.perfectField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L295) (StacksFrontier): “existence: it is perfect (given a perfect ambient field, e.g. `IsAlgClosed.perfectField`)”.
+- [`IsPurelyInseparable.instNonemptyAlgHomOfPerfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsPurelyInseparable.instNonemptyAlgHomOfPerfectField#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L298) (StacksFrontier): “uniqueness: a `k`-map into any perfect extension exists”.
+- [`instSubsingletonAlgHomOfIsPurelyInseparable`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instSubsingletonAlgHomOfIsPurelyInseparable#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L300) (StacksFrontier): “uniqueness: such a `k`-map is unique”. References: EGA I (3.5.8), “special case”.
 
 ## Tag 046X, a definition
 
@@ -60,21 +60,42 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`perfectClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PerfectClosure.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PerfectClosure.lean#L20) (StacksFrontier): “the perfect closure of `k`, as the largest purely inseparable subextension of a given extension; the tag's `k^perf` is this taken inside an algebraic closure”.
-- [`perfectClosure.perfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.perfectField#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PerfectClosure.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PerfectClosure.lean#L23) (StacksFrontier): “that it is a perfect field”.
+- [`perfectClosure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PerfectClosure.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PerfectClosure.lean#L20) (StacksFrontier): “the perfect closure of `k`, as the largest purely inseparable subextension of a given extension; the tag's `k^perf` is this taken inside an algebraic closure”.
+- [`perfectClosure.perfectField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=perfectClosure.perfectField#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PerfectClosure.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PerfectClosure.lean#L23) (StacksFrontier): “that it is a perfect field”.
 
 ## Tag 00I4, a lemma
 
 [Tag 00I4](https://stacks.math.columbia.edu/tag/00I4) in the Stacks Project.
 
-**`isReduced_tensorProduct_baseField_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TensorProduct/Reduced.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TensorProduct/Reduced.lean#L188). The attribute's comment: “Only the degenerate R = k case of clause (2); clause (1) and the general clause (2) are not formalized.”.
+**`Algebra.IsGeometricallyReduced.of_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean#L132). The attribute's comment: “Clause (1): over a perfect field `k` every reduced `k`-algebra is geometrically reduced, stated with Mathlib's `Algebra.IsGeometricallyReduced` (equivalent to the source's Definition 030S by Lemma 030V); the source's form, reducedness of `K ⊗[k] S` for every field extension `K/k`, is `PerfectField.isReduced_tensorProduct_field`.”.
 
-> **Stacks 00I4**, the degenerate `R = k` case of clause (2): the tensor product `k ⊗[k] S` of
-> `k` with a reduced `k`-algebra `S` is reduced.
+> Over a perfect field `k`, every reduced `k`-algebra is geometrically reduced.
 
 ```lean
-theorem isReduced_tensorProduct_baseField_left (k : Type*) [Field k] (S : Type*)
-    [CommRing S] [Algebra k S] [IsReduced S] : IsReduced (k ⊗[k] S)
+public theorem Algebra.IsGeometricallyReduced.of_perfectField (k S : Type*) [Field k]
+    [PerfectField k] [CommRing S] [Algebra k S] [IsReduced S] :
+    Algebra.IsGeometricallyReduced k S
+```
+
+**`PerfectField.isReduced_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean#L144). The attribute's comment: “Clause (2): over a perfect field `k` the tensor product `R ⊗[k] S` of two reduced `k`-algebras is reduced.”.
+
+> Over a perfect field `k`, the tensor product of two reduced `k`-algebras is reduced.
+
+```lean
+public theorem PerfectField.isReduced_tensorProduct (k R S : Type*) [Field k] [PerfectField k]
+    [CommRing R] [Algebra k R] [IsReduced R] [CommRing S] [Algebra k S] [IsReduced S] :
+    IsReduced (R ⊗[k] S)
+```
+
+**`PerfectField.isReduced_tensorProduct_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyReduced/TensorProduct.lean#L155). The attribute's comment: “Clause (1) in the source's Definition 030S of geometric reducedness: over a perfect field `k`, for a reduced `k`-algebra `S`, the ring `K ⊗[k] S` is reduced for every field extension `K/k`.”.
+
+> Over a perfect field `k`, a reduced `k`-algebra `S` is geometrically reduced in the sense of
+> Definition 030S: `K ⊗[k] S` is reduced for every field extension `K/k`.
+
+```lean
+public theorem PerfectField.isReduced_tensorProduct_field (k S : Type*) [Field k] [PerfectField k]
+    [CommRing S] [Algebra k S] [IsReduced S] (K : Type*) [Field K] [Algebra k K] :
+    IsReduced (K ⊗[k] S)
 ```
 
 ## Depends on
@@ -84,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.45, Tag 05DU](https://stacks.math.columbia.edu/tag/05DU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

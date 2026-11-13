@@ -7,7 +7,7 @@ statement: formalized
 
 # Ulam words
 
-28 results, 14 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html).
+28 results, 14 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html).
 
 ## Fuel-bounded Ulam test
 
@@ -24,7 +24,7 @@ word.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (definition of Ulam words, after Bade, Cui, Labelle, and Li).
 
-Formalized by `MetaMathlibExt.ulamWordAux`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-aux).
+Formalized by `MetaMathlibExt.ulamWordAux`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-aux).
 
 ## Ulam words
 
@@ -37,7 +37,7 @@ is exactly one way to write $w = uv$ with $u$ and $v$ nonempty, distinct Ulam wo
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (definition of Ulam words, after Bade, Cui, Labelle, and Li).
 
-Formalized by `MetaMathlibExt.IsUlamWord`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word).
+Formalized by `MetaMathlibExt.IsUlamWord`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word).
 
 ## Ulam words of length at most three
 
@@ -49,7 +49,7 @@ and the Ulam words of length three are exactly $001$, $011$, $100$ and $110$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (displayed `U₁, …, U₄`).
 
-Formalized by `MetaMathlibExt.isUlamWord_small`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-small).
+Formalized by `MetaMathlibExt.isUlamWord_small`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-small).
 
 ## Ulam words of length four: examples
 
@@ -60,7 +60,7 @@ $0011$ and $0110$ are not.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (displayed `U₄`).
 
-Formalized by `MetaMathlibExt.isUlamWord_length_four_examples`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-length-four-examples).
+Formalized by `MetaMathlibExt.isUlamWord_length_four_examples`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-length-four-examples).
 
 ## Number of Ulam words of a given length
 
@@ -72,7 +72,7 @@ letters $0$ and $1$ that are Ulam words.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.ulamWordCount`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count).
+Formalized by `MetaMathlibExt.ulamWordCount`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count).
 
 ## Numbers of short Ulam words
 
@@ -84,7 +84,7 @@ $\#U_n$ is the number of Ulam words of length $n$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (displayed `U₁, …, U₄`).
 
-Formalized by `MetaMathlibExt.ulamWordCount_small`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-small).
+Formalized by `MetaMathlibExt.ulamWordCount_small`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-small).
 
 ## Ulam words in a residue class
 
@@ -101,7 +101,7 @@ Ulam words of length $n$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 3, definition of `ρ_{a,N}(n)`).
 
-Formalized by `MetaMathlibExt.ulamResidueCount`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count).
+Formalized by `MetaMathlibExt.ulamResidueCount`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count).
 
 ## Residues of the Ulam words of length 2 modulo 3
 
@@ -113,7 +113,7 @@ $3$, exactly one is congruent to $1$, and exactly one is congruent to $2$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 6.
 
-Formalized by `MetaMathlibExt.ulamResidueCount_three_two`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count-three-two).
+Formalized by `MetaMathlibExt.ulamResidueCount_three_two`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count-three-two).
 
 ## Sorted binary values of Ulam words
 
@@ -125,7 +125,7 @@ letter first, of the Ulam words $w$ of length $n$, in increasing order.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 2, ordered elements of `π(U_n)`).
 
-Formalized by `MetaMathlibExt.ulamValuesSorted`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-values-sorted).
+Formalized by `MetaMathlibExt.ulamValuesSorted`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-values-sorted).
 
 ## Binary values of the Ulam words of length 3
 
@@ -139,7 +139,7 @@ These values come from the Ulam words $001$, $011$, $100$, $110$ of length $3$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1.
 
-Formalized by `MetaMathlibExt.ulamValuesSorted_three`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-values-sorted-three).
+Formalized by `MetaMathlibExt.ulamValuesSorted_three`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-values-sorted-three).
 
 ## Mean gap of the Ulam values
 
@@ -155,7 +155,7 @@ where a quotient by $0$ is read as $0$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 1 (Conjecture 2, `μ_g(n)` as the mean of the gap distribution `p_n`).
 
-Formalized by `MetaMathlibExt.ulamGapMean`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-gap-mean).
+Formalized by `MetaMathlibExt.ulamGapMean`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-gap-mean).
 
 ## Stages of the discrete Sierpiński triangle
 
@@ -168,7 +168,7 @@ $S + (u, v) = \{(x + u, y + v) : (x, y) \in S\}$ denotes a translate.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4 (recursive definition of `S_n`).
 
-Formalized by `MetaMathlibExt.discreteSierpinskiStage`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski-stage).
+Formalized by `MetaMathlibExt.discreteSierpinskiStage`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski-stage).
 
 ## The discrete Sierpiński triangle
 
@@ -180,7 +180,7 @@ stages $S_n$ of the discrete Sierpiński triangle.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4.
 
-Formalized by `MetaMathlibExt.discreteSierpinski`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski).
+Formalized by `MetaMathlibExt.discreteSierpinski`, a definition declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski).
 
 ## The first stage of the discrete Sierpiński triangle
 
@@ -191,7 +191,7 @@ Sierpiński triangle is $\{(2, 1), (3, 1), (3, 2)\}$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Section 4.
 
-Formalized by `MetaMathlibExt.discreteSierpinskiStage_one`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski-stage-one).
+Formalized by `MetaMathlibExt.discreteSierpinskiStage_one`, a theorem declared in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#discrete-sierpinski-stage-one).
 
 ## Ulam words with a block of four ones
 
@@ -203,7 +203,7 @@ and only if $a + b \equiv 1 \pmod 4$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_four_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-four-ones-zeros-iff).
+Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_four_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-four-ones-zeros-iff).
 
 ## Square of the Ulam word count is at most a block sum
 
@@ -214,7 +214,7 @@ $(\#U_n)^2 \le \sum_{i=n}^{2n} \#U_i$, where $\#U_i$ is the number of Ulam words
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.ulamWordCount_sq_le_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-sq-le-sum).
+Stated but not proved: `MetaMathlibExt.ulamWordCount_sq_le_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-sq-le-sum).
 
 ## Ulam words with three leading ones
 
@@ -226,7 +226,7 @@ $n \equiv 1 \pmod 4$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_three_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-three-ones-zeros-iff).
+Stated but not proved: `MetaMathlibExt.isUlamWord_three_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-three-ones-zeros-iff).
 
 ## Linear lower bound on the number of Ulam words
 
@@ -237,7 +237,7 @@ number of Ulam words of length $n$ is at least $2n + 4$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.two_mul_add_four_le_ulamWordCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#two-mul-add-four-le-ulam-word-count).
+Stated but not proved: `MetaMathlibExt.two_mul_add_four_le_ulamWordCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#two-mul-add-four-le-ulam-word-count).
 
 ## Exponential lower bound for Ulam word counts along a subsequence
 
@@ -253,7 +253,7 @@ Here $\alpha_0$ is the constant from the paper's proof, with $n_1 = 30$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.ulamWordCount_limsup_div_pow_eq_top` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-limsup-div-pow-eq-top).
+Stated but not proved: `MetaMathlibExt.ulamWordCount_limsup_div_pow_eq_top` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-word-count-limsup-div-pow-eq-top).
 
 ## The inverse Ulam density has the order of the mean gap
 
@@ -267,7 +267,7 @@ that $c \, \mu_g(n) \le 2^n / |U_n| \le C \, \mu_g(n)$ for all sufficiently larg
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 4 (first sentence).
 
-Stated but not proved: `MetaMathlibExt.ulamDensity_inv_isTheta_ulamGapMean` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-density-inv-is-theta-ulam-gap-mean).
+Stated but not proved: `MetaMathlibExt.ulamDensity_inv_isTheta_ulamGapMean` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-density-inv-is-theta-ulam-gap-mean).
 
 ## Counting Ulam words with a single one
 
@@ -280,7 +280,7 @@ digits of $m$. This number is the term $G(n - 1)$ of Gould's sequence.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 5 (Corollary 3.4 of Bade, Cui, Labelle, and Li).
 
-Stated but not proved: `MetaMathlibExt.card_ulam_zeros_one_zeros` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#card-ulam-zeros-one-zeros).
+Stated but not proved: `MetaMathlibExt.card_ulam_zeros_one_zeros` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#card-ulam-zeros-one-zeros).
 
 ## Ulam words with a block of two ones
 
@@ -292,7 +292,7 @@ odd.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 6 (Theorem 3.5 of Bade, Cui, Labelle, and Li).
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_two_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-two-ones-zeros-iff).
+Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_two_ones_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-two-ones-zeros-iff).
 
 ## Ulam words with one 101 block
 
@@ -304,7 +304,7 @@ if and only if $a + b$ is odd.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 7 (Theorem 3.6 of Bade, Cui, Labelle, and Li).
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_one_zero_one_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-one-zero-one-zeros-if).
+Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_one_zero_one_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-one-zero-one-zeros-if).
 
 ## Parity criterion for Ulam words with a single one
 
@@ -316,7 +316,7 @@ the binomial coefficient $\binom{a + b}{a}$ is odd.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 8 (Theorem 3.4 of Bade, Cui, Labelle, and Li).
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_one_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-one-zeros-iff).
+Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_one_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-one-zeros-iff).
 
 ## Ulam words made of ones followed by zeros
 
@@ -329,7 +329,7 @@ $\mathcal{S}$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 9 (precise form of Theorem 3).
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_ones_zeros_iff_mem_discreteSierpinski` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-ones-zeros-iff-mem-discrete).
+Stated but not proved: `MetaMathlibExt.isUlamWord_ones_zeros_iff_mem_discreteSierpinski` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-ones-zeros-iff-mem-discrete).
 
 ## Padding the word 10101 with zeros
 
@@ -341,7 +341,7 @@ and $b$ are both even and at least one of $a$ and $b$ is zero.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_10101_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-10101-zeros-iff).
+Stated but not proved: `MetaMathlibExt.isUlamWord_zeros_10101_zeros_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-zeros-10101-zeros-iff).
 
 ## Complement symmetry of Ulam words
 
@@ -361,7 +361,7 @@ $\rho_{a,N}(n) = \rho_{2^n-1-a,N}(n)$.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.isUlamWord_map_not_and_ulamResidueCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-map-not-and-ulam-residue-co).
+Stated but not proved: `MetaMathlibExt.isUlamWord_map_not_and_ulamResidueCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#is-ulam-word-map-not-and-ulam-residue-co).
 
 ## Residue symmetries of Ulam words modulo 2 and 3
 
@@ -376,7 +376,7 @@ $c_{a,3}(n) = c_{1-a,3}(n)$ if $n$ is odd.
 
 - Adutwum, Clark, Emerson, A. Sheydvasser, A. Sheydvasser, and Tougouma, *Distributions of Ulam Words up to Length 30*, INTEGERS 25 (2025), Article A102, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.ulamResidueCount_mod_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count-mod-two-three).
+Stated but not proved: `MetaMathlibExt.ulamResidueCount_mod_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Words/UlamWordsWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Words/UlamWordsWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html#ulam-residue-count-mod-two-three).
 
 ## Depends on
 
@@ -385,4 +385,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ulam words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/ulam-words)

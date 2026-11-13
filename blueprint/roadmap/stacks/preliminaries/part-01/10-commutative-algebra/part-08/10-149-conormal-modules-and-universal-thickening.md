@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUnique_lift, Algebra.FormallyUnramified.universalFirstOrderThickening, Algebra.FormallyUnramified.conormal, UniversalThickening.universal_property, UniversalThickening.conormal_module, Algebra.Extension.IsUniversalFirstOrderThickening.localization, Algebra.Extension.IsUniversalFirstOrderThickening.formallyUnramified_ring_and_bijective_map
+lean: Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUnique_lift, Algebra.FormallyUnramified.universalFirstOrderThickening, Algebra.FormallyUnramified.conormal, UniversalThickening.isUniversalFirstOrderThickening_pi_and_nonempty_conormal_linearEquiv, Algebra.Extension.IsUniversalFirstOrderThickening.localization, Algebra.Extension.IsUniversalFirstOrderThickening.formallyUnramified_ring_and_bijective_map
 statement: formalized
 proof: formalized
 ---
 
 # 10.149 Conormal modules and universal thickenings
 
-Section 10.149 of the Stacks Project, [Tag 04EA](https://stacks.math.columbia.edu/tag/04EA). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.149 of the Stacks Project, [Tag 04EA](https://stacks.math.columbia.edu/tag/04EA). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04EB, a lemma
 
 [Tag 04EB](https://stacks.math.columbia.edu/tag/04EB) in the Stacks Project.
 
-**`Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L289). The attribute's comment: “The surjection of `R`-algebras `S' → S` is an `Algebra.Extension R S` (the structure whose data is exactly a surjection onto `S` of `R`-algebras). The source's square is encoded by `A` being an `R`-algebra — its `b : R → A` is `algebraMap R A` — and `a` being an `R`-algebra map, so that commutativity of the square is `a`'s `R`-linearity. The test algebra lives in a universe of its own; see the module docstring.”.
+**`Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L289). The attribute's comment: “The surjection of `R`-algebras `S' → S` is an `Algebra.Extension R S` (the structure whose data is exactly a surjection onto `S` of `R`-algebras). The source's square is encoded by `A` being an `R`-algebra — its `b : R → A` is `algebraMap R A` — and `a` being an `R`-algebra map, so that commutativity of the square is `a`'s `R`-linearity. The test algebra lives in a universe of its own; see the module docstring.”.
 
 > **Stacks 04EB.** Let `R → S` be a formally unramified ring map. There is a surjection of
 > `R`-algebras `S' → S` whose kernel is an ideal of square zero and which is universal: for every
@@ -36,7 +36,7 @@ theorem Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUniq
 
 [Tag 04EC](https://stacks.math.columbia.edu/tag/04EC) in the Stacks Project.
 
-**`Algebra.FormallyUnramified.universalFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L368). The attribute's comment: “Part (1). The surjection `S' → S` is an `Algebra.Extension R S`, the structure whose data is exactly a surjection of `R`-algebras onto `S`; the surjection is `algebraMap S'.Ring S`. Only determined up to unique isomorphism, so defined by choosing one of the thickenings produced by Tag 04EB and used only through `Algebra.FormallyUnramified.isUniversalFirstOrderThickening`. See the module docstring.”.
+**`Algebra.FormallyUnramified.universalFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L368). The attribute's comment: “Part (1). The surjection `S' → S` is an `Algebra.Extension R S`, the structure whose data is exactly a surjection of `R`-algebras onto `S`; the surjection is `algebraMap S'.Ring S`. Only determined up to unique isomorphism, so defined by choosing one of the thickenings produced by Tag 04EB and used only through `Algebra.FormallyUnramified.isUniversalFirstOrderThickening`. See the module docstring.”.
 
 > The **universal first order thickening** `S' → S` of `S` over a formally unramified base
 > `R`: the surjection of `R`-algebras onto `S` with square-zero kernel through which every
@@ -48,7 +48,7 @@ theorem Algebra.FormallyUnramified.exists_extension_ker_sq_eq_bot_and_existsUniq
 noncomputable def universalFirstOrderThickening : Extension.{max u v} R S
 ```
 
-**`Algebra.FormallyUnramified.conormal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L385). The attribute's comment: “Part (2). The kernel of `algebraMap S'.Ring S` seen as an `S`-module is `Algebra.Extension.Cotangent`, the quotient of the kernel by its square — equal to the kernel because the square is zero, and the object on which `S` acts. See the module docstring.”.
+**`Algebra.FormallyUnramified.conormal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L385). The attribute's comment: “Part (2). The kernel of `algebraMap S'.Ring S` seen as an `S`-module is `Algebra.Extension.Cotangent`, the quotient of the kernel by its square — equal to the kernel because the square is zero, and the object on which `S` acts. See the module docstring.”.
 
 > The **conormal module** `C_{S/R}` of a formally unramified ring map `R → S`: the kernel of
 > the universal first order thickening `S' → S`, as a module over `S`. Being an ideal of square
@@ -63,49 +63,23 @@ abbrev conormal : Type (max u v)
 
 [Tag 04ED](https://stacks.math.columbia.edu/tag/04ED) in the Stacks Project.
 
-**`UniversalThickening.universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L1174).
+**`UniversalThickening.isUniversalFirstOrderThickening_pi_and_nonempty_conormal_linearEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 1370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L1370). The attribute's comment: “The surjection `R/I² → R/I` is packaged as an `Algebra.Extension R (R ⧸ I)`, and being the universal first order thickening is `Algebra.Extension.IsUniversalFirstOrderThickening` (Tag 04EC); the conormal module is `Algebra.FormallyUnramified.conormal`, and `I/I²` is `Ideal.Cotangent I`, both as `R/I`-modules.”.
 
-> For any commutative ring `A` with a
-> square-zero ideal `J ⊆ A`, and ring homomorphisms `b : R → A`,
-> `a : R/I → A/J` such that the square
-> `a ∘ (R → R/I) = (A → A/J) ∘ b` commutes (where `R → A/J` is `b` followed
-> by `A → A/J`), there exists a **unique** `R`-algebra homomorphism
-> `a' : R/I² → A`, encoded as a unique ring homomorphism with
-> `a' ∘ (R → R/I²) = b` (the `R`-algebra condition), such that
-> `(A → A/J) ∘ a' = a ∘ π`.
+> **Stacks 04ED.** Let `I ⊆ R` be an ideal. The universal first order thickening of `R/I` over
+> `R` is the surjection `π : R/I² → R/I`, and the conormal module `C_{(R/I)/R}` of `R/I` over `R`
+> is `I/I²`.
 
 ```lean
-theorem universal_property
-    {A : Type*} [CommRing A] (J : Ideal A) (hJ : IsSquareZero J)
-    (b : R →+* A) (a : (R ⧸ I) →+* (A ⧸ J))
-    (hcomm : a.comp (Ideal.Quotient.mk I) = (Ideal.Quotient.mk J).comp b) :
-    ∃! a' : (R ⧸ I ^ 2) →+* A,
-      a'.comp (Ideal.Quotient.mk (I ^ 2)) = b ∧
-      (Ideal.Quotient.mk J).comp a' = a.comp (pi I : (R ⧸ I ^ 2) →+* (R ⧸ I))
-```
-
-**`UniversalThickening.conormal_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 1222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L1222). References: EGA 0 (20.5.12), “kernel of E → C is R/R²”.
-
-> Consequently the
-> universal first order thickening of `R/I` over `R` is the surjection
-> `π : R/I² → R/I`, whose kernel — the conormal module `C_{(R/I)/R}` — is
-> `I/I²`. Concretely, the kernel of `π` is `Ideal.cotangentIdeal I`
-> (Statement 1b), and the conormal module `Ideal.Cotangent I` (the `R`-module
-> `I/I²`) is `R`-linearly isomorphic to this kernel via
-> `Ideal.cotangentEquivIdeal`. We record both facts:
-> the kernel description and the existence of such an `R`-linear equivalence.
-
-```lean
-theorem conormal_module :
-    RingHom.ker (pi I : (R ⧸ I ^ 2) →+* (R ⧸ I)) = I.cotangentIdeal ∧
-    Nonempty (I.Cotangent ≃ₗ[R] (RingHom.ker (pi I : (R ⧸ I ^ 2) →+* (R ⧸ I))))
+theorem isUniversalFirstOrderThickening_pi_and_nonempty_conormal_linearEquiv :
+    (piExtension I).IsUniversalFirstOrderThickening ∧
+      Nonempty (Algebra.FormallyUnramified.conormal R (R ⧸ I) ≃ₗ[R ⧸ I] I.Cotangent)
 ```
 
 ## Tag 04EE, a lemma
 
 [Tag 04EE](https://stacks.math.columbia.edu/tag/04EE) in the Stacks Project.
 
-**`Algebra.Extension.IsUniversalFirstOrderThickening.localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L473). The attribute's comment: “Both parts at once: part (1) is `N = Algebra.algebraMapSubmonoid B M`, part (2) is `M = ⊥`, whose instance `IsLocalization (⊥ : Submonoid A) A` is not found by synthesis and is supplied as `IsLocalization.of_le_isUnit bot_le`. The localized thickening is an arbitrary `Q : Algebra.Extension Aₘ Bₙ` pinned by the `IsLocalization` and `IsScalarTower` hypotheses and by `algebraMap_comp`, because Mathlib's `Algebra.Extension.localization` does not localize the base. The `In particular` on conormal modules is the ideal equation, `Algebra.idealMap_isLocalizedModule` supplying the rest. That `φ⁻¹(N)` is multiplicative is `Submonoid.comap`. See the module docstring.”.
+**`Algebra.Extension.IsUniversalFirstOrderThickening.localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L530). The attribute's comment: “Both parts at once: part (1) is `N = Algebra.algebraMapSubmonoid B M`, part (2) is `M = ⊥`, whose instance `IsLocalization (⊥ : Submonoid A) A` is not found by synthesis and is supplied as `IsLocalization.of_le_isUnit bot_le`. The localized thickening is an arbitrary `Q : Algebra.Extension Aₘ Bₙ` pinned by the `IsLocalization` and `IsScalarTower` hypotheses and by `algebraMap_comp`, because Mathlib's `Algebra.Extension.localization` does not localize the base. The `In particular` on conormal modules is the ideal equation, `Algebra.idealMap_isLocalizedModule` supplying the rest. That `φ⁻¹(N)` is multiplicative is `Submonoid.comap`. See the module docstring.”.
 
 > **Stacks 04EE.** Let `A → B` be a ring map, let `φ : P.Ring → B` be a universal first order
 > thickening of `B` over `A`, let `M ⊆ A` and `N ⊆ B` be multiplicative subsets, and let `Aₘ` and
@@ -134,7 +108,7 @@ theorem Algebra.Extension.IsUniversalFirstOrderThickening.localization {A : Type
 
 [Tag 04EF](https://stacks.math.columbia.edu/tag/04EF) in the Stacks Project.
 
-**`Algebra.Extension.IsUniversalFirstOrderThickening.formallyUnramified_ring_and_bijective_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Unramified/Thickening.lean#L1052). The attribute's comment: “The thickening `B' → B` is an `Algebra.Extension A B` satisfying `Algebra.Extension.IsUniversalFirstOrderThickening` (04EC); existence is 04EB. Tensor products carry the scalars on the left, as in `KaehlerDifferential.mapBaseChange`, and the source's canonical map is spelled as the `B`-linear extension of `ω ↦ 1 ⊗ₜ KaehlerDifferential.map ω`. Formal unramifiedness of `A → B` is not assumed: it follows from `hP`. See the module docstring.”.
+**`Algebra.Extension.IsUniversalFirstOrderThickening.formallyUnramified_ring_and_bijective_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Unramified/Thickening.lean, line 1106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Unramified/Thickening.lean#L1106). The attribute's comment: “The thickening `B' → B` is an `Algebra.Extension A B` satisfying `Algebra.Extension.IsUniversalFirstOrderThickening` (04EC); existence is 04EB. Tensor products carry the scalars on the left, as in `KaehlerDifferential.mapBaseChange`, and the source's canonical map is spelled as the `B`-linear extension of `ω ↦ 1 ⊗ₜ KaehlerDifferential.map ω`. Formal unramifiedness of `A → B` is not assumed: it follows from `hP`. See the module docstring.”.
 
 > **Stacks 04EF.** Let `R → A → B` be ring maps and let `B' → B` be the universal first order
 > thickening of `B` over `A`. Then `B'` is formally unramified over `A`, and the canonical map
@@ -158,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.149, Tag 04EA](https://stacks.math.columbia.edu/tag/04EA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

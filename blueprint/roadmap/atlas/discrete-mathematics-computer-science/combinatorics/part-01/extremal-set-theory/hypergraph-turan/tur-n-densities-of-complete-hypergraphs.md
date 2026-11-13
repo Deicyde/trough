@@ -7,7 +7,7 @@ statement: formalized
 
 # Turán densities of complete hypergraphs
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html).
 
 ## Edges of the complete uniform hypergraph
 
@@ -19,7 +19,7 @@ family of all $k$-element subsets of $\{0, 1, \dots, m-1\}$.
 
 - [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
 
-Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.completeHypergraphEdges`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#complete-hypergraph-edges).
+Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.completeHypergraphEdges`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#complete-hypergraph-edges).
 
 ## Turán number of the complete $k$-graph on $k+1$ vertices
 
@@ -35,7 +35,7 @@ $f$ of every edge of $K_{k+1}^{(k)}$ belongs to $E$.
 
 - [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
 
-Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanNumber`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-number).
+Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanNumber`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-number).
 
 ## Turán density ratio
 
@@ -50,7 +50,7 @@ $\binom{n}{k} = 0$, that is, when $n < k$.
 
 - [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
 
-Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanDensityRatio`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-density-ratio).
+Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanDensityRatio`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-density-ratio).
 
 ## Turán density of the complete $k$-graph on $k+1$ vertices
 
@@ -64,7 +64,7 @@ Turán number of $K_{k+1}^{(k)}$ and the ratio is taken to be $0$ when $\binom{n
 
 - [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
 
-Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanDensityComplete`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-density-complete).
+Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.turanDensityComplete`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#turan-density-complete).
 
 ## De Caen's conjecture on Turán densities of complete hypergraphs
 
@@ -77,7 +77,7 @@ as $k \to \infty$.
 
 - [AIM-COMBINATORICS-0149], aim-combinatorics-notes.json notes[148], Source item 11.3, Section Complete hypergraphs, Workshop Hypergraph Turan problem, Source URL http://aimpl.org/hypergraphturan/1/.
 
-Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#conjecture).
 
 ## De Caen's conjecture is false
 
@@ -95,7 +95,7 @@ for every $k \ge 1$, and the paper states that this disproves de Caen's conjectu
 
 - O. Pikhurko, Constructions of Turán systems that are tight up to a multiplicative constant, Advances in Mathematics 464 (2025), 110148, https://pikhurko.github.io/E/Pikhurko25am.pdf.
 
-Stated but not proved: `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.DeCaenTuranDefectGrowthWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DeCaenTuranDefectGrowthWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Turán densities of complete hypergraphs](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-turan/tur-n-densities-of-complete-hypergraphs)

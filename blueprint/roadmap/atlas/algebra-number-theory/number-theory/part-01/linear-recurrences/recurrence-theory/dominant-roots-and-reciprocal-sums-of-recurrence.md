@@ -7,7 +7,7 @@ statement: formalized
 
 # Dominant roots and reciprocal sums of recurrences
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html).
 
 ## Eneström–Kakeya theorem
 
@@ -19,7 +19,7 @@ of this polynomial satisfies $|z| \le 1$.
 
 - Tingting Du, *On the Reciprocal Sums and Products of m th-order Linear Recursive Sequences*, Journal of Integer Sequences 27 (2024), Article 24.2.3, Lemma 3 (`jis-2024-24.2.3-lem-3`), quoted there as the Eneström–Kakeya theorem.
 
-Stated but not proved: `MetaMathlibExt.norm_le_one_of_aeval_eq_zero_of_monotone_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#norm-le-one-of-aeval-eq-zero-of-monotone).
+Stated but not proved: `MetaMathlibExt.norm_le_one_of_aeval_eq_zero_of_monotone_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#norm-le-one-of-aeval-eq-zero-of-monotone).
 
 ## Dominant root of $x^m - a_1 x^{m-1} - \cdots - a_m$ with positive coefficients
 
@@ -34,7 +34,7 @@ $\lambda$.
 
 - Tingting Du, *On the Reciprocal Sums and Products of m th-order Linear Recursive Sequences*, Journal of Integer Sequences 27 (2024), Article 24.2.3, Lemma 4 (`jis-2024-24.2.3-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.exists_dominant_root_of_pos_coeff_charPoly` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#exists-dominant-root-of-pos-coeff-char-p).
+Stated but not proved: `MetaMathlibExt.exists_dominant_root_of_pos_coeff_charPoly` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#exists-dominant-root-of-pos-coeff-char-p).
 
 ## Asymptotic expansion of a perturbed tail product
 
@@ -49,7 +49,7 @@ O\bigl((\mu/\lambda^3)^{n/2}\bigr)$.
 
 - Tingting Du, *On the Reciprocal Sums and Products of m th-order Linear Recursive Sequences*, Journal of Integer Sequences 27 (2024), Article 24.2.3, Lemma 7 (`jis-2024-24.2.3-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.tprod_one_sub_inv_add_eq_one_sub_tsum_add_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#tprod-one-sub-inv-add-eq-one-sub-tsum-ad).
+Stated but not proved: `MetaMathlibExt.tprod_one_sub_inv_add_eq_one_sub_tsum_add_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/ReciprocalSumsLinearRecurrenceWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html#tprod-one-sub-inv-add-eq-one-sub-tsum-ad).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dominant roots and reciprocal sums of recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/dominant-roots-and-reciprocal-sums-of-recurrence)

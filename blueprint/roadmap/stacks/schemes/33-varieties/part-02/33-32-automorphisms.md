@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.32 Automorphisms
 
-Section 33.32 of the Stacks Project, [Tag 0GWY](https://stacks.math.columbia.edu/tag/0GWY). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.32 of the Stacks Project, [Tag 0GWY](https://stacks.math.columbia.edu/tag/0GWY). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G05, a lemma
 
 [Tag 0G05](https://stacks.math.columbia.edu/tag/0G05) in the Stacks Project.
 
-**`AlgebraicGeometry.eq_id_of_isIso_of_eq_on_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean#L88). The attribute's comment: “clause (2) in full: an automorphism over `k` of a reduced scheme locally of finite type over `k` fixing every point of the underlying space is the identity when every irreducible component has positive dimension. No hypothesis on the base field and nothing carried. The automorphism hypothesis is necessary — for an endomorphism the statement fails over a finite field, by `AlgHom.exists_comap_eq_ne_id_of_finite_field` — which is why this stands beside `AlgebraicGeometry.eq_id_of_eq_on_points`, the endomorphism statement with the base field in a disjunctive hypothesis”.
+**`AlgebraicGeometry.eq_id_of_isIso_of_eq_on_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean#L88). The attribute's comment: “clause (2) in full: an automorphism over `k` of a reduced scheme locally of finite type over `k` fixing every point of the underlying space is the identity when every irreducible component has positive dimension. No hypothesis on the base field and nothing carried. The automorphism hypothesis is necessary — for an endomorphism the statement fails over a finite field, by `AlgHom.exists_comap_eq_ne_id_of_finite_field` — which is why this stands beside `AlgebraicGeometry.eq_id_of_eq_on_points`, the endomorphism statement with the base field in a disjunctive hypothesis”.
 
 > **Stacks Project, Tag 0G05, clause (2).** Let `X` be a reduced scheme locally of finite type
 > over a field `k` and let `f : X ⟶ X` be an automorphism over `k` which induces the identity map
@@ -35,7 +35,7 @@ theorem eq_id_of_isIso_of_eq_on_points {k : Type u} [Field k] {X : Scheme.{u}} [
     f = 𝟙 X
 ```
 
-**`AlgebraicGeometry.exists_iso_pullback_of_isIso_of_eq_on_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean#L232). The attribute's comment: “clause (1) in full: every module on a reduced scheme of finite type over `k` is isomorphic to its pullback along an automorphism over `k` fixing every point of the underlying space. No hypothesis on the base field, nothing carried, and the module is arbitrary rather than coherent. The connected components are clopen and finite in number; on each of them clause (2) applies, or the component is the spectrum of a finite extension of `k` and the twist of a module is isomorphic to it through a basis; the isomorphisms glue over the pairwise disjoint cover”.
+**`AlgebraicGeometry.exists_iso_pullback_of_isIso_of_eq_on_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Automorphisms/PointwiseTrivialAut.lean#L232). The attribute's comment: “clause (1) in full: every module on a reduced scheme of finite type over `k` is isomorphic to its pullback along an automorphism over `k` fixing every point of the underlying space. No hypothesis on the base field, nothing carried, and the module is arbitrary rather than coherent. The connected components are clopen and finite in number; on each of them clause (2) applies, or the component is the spectrum of a finite extension of `k` and the twist of a module is isomorphic to it through a basis; the isomorphisms glue over the pairwise disjoint cover”.
 
 > **Stacks Project, Tag 0G05, clause (1).** Let `X` be a reduced scheme of finite type over a
 > field `k` and let `f : X ⟶ X` be an automorphism over `k` which induces the identity map on the
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.32, Tag 0GWY](https://stacks.math.columbia.edu/tag/0GWY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

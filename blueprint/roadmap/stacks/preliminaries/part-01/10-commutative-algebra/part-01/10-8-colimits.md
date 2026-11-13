@@ -1,14 +1,14 @@
 ---
 declaration: section
 origin: cited
-lean: DirectedSystem, Module.DirectLimit, DirectLimit.Module.of, DirectLimit.Module.lift, ModuleCat.directLimitIsColimit, DirectLimit.exists_eq_zero, ModuleCat.ker_hom_comp_inl_and_ker_hom_inl_of_isPushout, Module.IsSystemHom
+lean: DirectedSystem, Module.ColimitQuotient.existsUnique_comp_eq, Module.DirectLimit, DirectLimit.Module.of, DirectLimit.Module.lift, ModuleCat.isColimitDirectLimitSigmaCocone, ModuleCat.colimitDirectLimitSigmaIso, DirectLimit.mk_eq_mk_iff
 statement: formalized
 proof: formalized
 ---
 
 # 10.8 Colimits
 
-Section 10.8 of the Stacks Project, [Tag 07N7](https://stacks.math.columbia.edu/tag/07N7). 10 tags here are carried by 6 declarations of the repository (2 in StacksCore and 4 in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.8 of the Stacks Project, [Tag 07N7](https://stacks.math.columbia.edu/tag/07N7). 10 tags here are carried by 12 declarations of the repository (2 in StacksCore and 10 in StacksFrontier) and 11 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00D4, a definition
 
@@ -16,25 +16,82 @@ Section 10.8 of the Stacks Project, [Tag 07N7](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`DirectedSystem`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectedSystem#doc) registered with `add_to_stacks` in [StacksCore/Order/DirectedInverseSystem.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Order/DirectedInverseSystem.lean#L10) (StacksCore).
+- [`DirectedSystem`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectedSystem#doc) registered with `add_to_stacks` in [StacksCore/Order/DirectedInverseSystem.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Order/DirectedInverseSystem.lean#L10) (StacksCore).
 
 ## Tag 00D5, a lemma
 
 [Tag 00D5](https://stacks.math.columbia.edu/tag/00D5) in the Stacks Project.
 
+**`Module.ColimitQuotient.existsUnique_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Colimit/ModuleQuotient.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Colimit/ModuleQuotient.lean#L63). The attribute's comment: “The identities `μ_ii = id` and `μ_ik = μ_jk ∘ μ_ij` of a system are not needed.”.
+
+> **Stacks Lemma 10.8.2**: for a system `(M_i, μ_ij)` of modules over a preordered set `I`,
+> the quotient `(⨁ i, M i) / Q` together with the maps `φ_i = π ∘ ι_i` is the colimit:
+> for every module `Y` and maps `ψ_i : M_i → Y` with `ψ_j ∘ μ_ij = ψ_i`, there is a unique
+> `g : (⨁ i, M i) / Q → Y` with `g ∘ φ_i = ψ_i` for all `i`. The compatibility
+> `φ_j ∘ μ_ij = φ_i` is `ColimitQuotient.of_comp`.
+
+```lean
+public theorem ColimitQuotient.existsUnique_comp_eq {Y : Type*} [AddCommGroup Y] [Module R Y]
+    (ψ : (i : ι) → M i →ₗ[R] Y) (hψ : ∀ (i j : ι) (h : i ≤ j), ψ j ∘ₗ μ i j h = ψ i) :
+    ∃! g : ColimitQuotient M μ →ₗ[R] Y, ∀ i, g ∘ₗ ColimitQuotient.of M μ i = ψ i
+```
+
 Declarations registered for the tag:
 
-- [`Module.DirectLimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 9](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L9) (StacksCore). References: EGA 0 (6.2.3), “special case”.
-- [`DirectLimit.Module.of`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.Module.of#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L10) (StacksCore).
-- [`DirectLimit.Module.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.Module.lift#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L11) (StacksCore).
+- [`Module.DirectLimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L9) (StacksCore). References: EGA 0 (6.2.3), “special case”.
+- [`DirectLimit.Module.of`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.Module.of#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L10) (StacksCore).
+- [`DirectLimit.Module.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.Module.lift#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L11) (StacksCore).
 
 ## Tag 00D6, a lemma
 
 [Tag 00D6](https://stacks.math.columbia.edu/tag/00D6) in the Stacks Project.
 
+**`ModuleCat.isColimitDirectLimitSigmaCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean#L167). The attribute's comment: “the module `Σ i, G i` modulo eventual equality, with the maps `φ_i`, is the colimit”.
+
+> **The colimit of a directed system of modules is the disjoint union modulo eventual
+> equality.** Over a nonempty directed preorder `ι`, the module `_root_.DirectLimit G f`, the
+> quotient of `Σ i, G i` by `m ∼ m' ↔ μ_{ij} m = μ_{i'j} m'` for some `j ≥ i, i'`, together with
+> the maps `φ_i : x ↦ ⟦⟨i, x⟩⟧`, is a colimit of the system in `ModuleCat R`.
+
+```lean
+def isColimitDirectLimitSigmaCocone : IsColimit (directLimitSigmaCocone G f)
+```
+
+**`ModuleCat.colimitDirectLimitSigmaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean#L174). The attribute's comment: “the canonical isomorphism of the colimit with `Σ i, G i` mod eventual equality”.
+
+> The canonical isomorphism between the colimit of `ModuleCat.directLimitDiagram G f` and
+> the explicit module `_root_.DirectLimit G f`, over a nonempty directed preorder.
+
+```lean
+def colimitDirectLimitSigmaIso :
+    colimit (directLimitDiagram G f) ≅ of R (_root_.DirectLimit G f)
+```
+
+**`DirectLimit.mk_eq_mk_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean#L314). The attribute's comment: “item (1): the equivalence relation on `Σ i, G i`”.
+
+> In the direct limit over a directed preorder, the classes of `m ∈ G i` and `m' ∈ G i'`
+> agree exactly when `μ_{ij} m = μ_{i'j} m'` for some `j ≥ i, i'`.
+
+```lean
+theorem mk_eq_mk_iff {i i' : ι} (m : G i) (m' : G i') :
+    (⟦⟨i, m⟩⟧ : DirectLimit G f) = ⟦⟨i', m'⟩⟧ ↔
+      ∃ (j : ι) (hij : i ≤ j) (hi'j : i' ≤ j), f i j hij m = f i' j hi'j m'
+```
+
+**`DirectLimit.mk_add_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/DirectLimitColimit.lean#L322). The attribute's comment: “item (2): the addition, through any common upper bound”.
+
+> In the direct limit over a directed preorder, the sum of the classes of `m ∈ G i` and
+> `m' ∈ G i'` is the class of `μ_{ij} m + μ_{i'j} m'`, for any `j ≥ i, i'`.
+
+```lean
+theorem mk_add_mk {i i' j : ι} (hij : i ≤ j) (hi'j : i' ≤ j) (m : G i) (m' : G i') :
+    (⟦⟨i, m⟩⟧ : DirectLimit G f) + ⟦⟨i', m'⟩⟧ = ⟦⟨j, f i j hij m + f i' j hi'j m'⟩⟧
+```
+
 Declarations registered for the tag:
 
-- [`ModuleCat.directLimitIsColimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.directLimitIsColimit#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/ModuleCat/Limits.lean, line 8](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Category/ModuleCat/Limits.lean#L8) (StacksCore).
+- [`ModuleCat.directLimitIsColimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.directLimitIsColimit#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/ModuleCat/Limits.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Category/ModuleCat/Limits.lean#L8) (StacksCore).
+- [`DirectLimit.smul_def`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.smul_def#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L302) (StacksFrontier): “item (3): the scalar multiplication `x • ⟦⟨i, m⟩⟧ = ⟦⟨i, x • m⟩⟧`”.
 
 ## Tag 00D7, a lemma
 
@@ -42,13 +99,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`DirectLimit.exists_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.exists_eq_zero#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 12](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L12) (StacksCore).
+- [`DirectLimit.exists_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DirectLimit.exists_eq_zero#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L12) (StacksCore).
 
 ## Tag 00D8, an example
 
 [Tag 00D8](https://stacks.math.columbia.edu/tag/00D8) in the Stacks Project.
 
-**`ModuleCat.ker_hom_comp_inl_and_ker_hom_inl_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L112). The attribute's comment: “The poset `{a < b, a < c}` is the span shape, so the colimit of a system over it is a pushout in `ModuleCat R`, taken here abstractly rather than through the model `Coker(μ_ab ⊕ -μ_ac)`; that the pushout is that cokernel is Mathlib's `CategoryTheory.IsPushout.isColimitCokernelCofork`. The mirror `Ker(inr) = μ_ac(Ker(μ_ab))` is this statement applied to `h.flip`.”.
+**`ModuleCat.ker_hom_comp_inl_and_ker_hom_inl_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L112). The attribute's comment: “The poset `{a < b, a < c}` is the span shape, so the colimit of a system over it is a pushout in `ModuleCat R`, taken here abstractly rather than through the model `Coker(μ_ab ⊕ -μ_ac)`; that the pushout is that cokernel is Mathlib's `CategoryTheory.IsPushout.isColimitCokernelCofork`. The mirror `Ker(inr) = μ_ac(Ker(μ_ab))` is this statement applied to `h.flip`.”.
 
 > Let `R` be a ring and let `M = colim M_i` be the colimit of a system of
 > `R`-modules over the poset `{a < b, a < c}`, that is, the pushout of a span
@@ -68,7 +125,7 @@ theorem ModuleCat.ker_hom_comp_inl_and_ker_hom_inl_of_isPushout {R : Type u} [Ri
 
 [Tag 00D9](https://stacks.math.columbia.edu/tag/00D9) in the Stacks Project.
 
-**`Module.IsSystemHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs/Colimits.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs/Colimits.lean#L75). The attribute's comment: “Stated as a `Prop`-valued predicate on the family `φ`, in the unbundled language of `Module.DirectLimit`, so that `Module.DirectLimit.map φ h` is the induced map on colimits of Lemma 00DA. The axioms of a system (`DirectedSystem`) are not assumed, the commuting squares not referring to them, and `R` is only a semiring acting on additive commutative monoids.”.
+**`Module.IsSystemHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs/Colimits.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs/Colimits.lean#L75). The attribute's comment: “Stated as a `Prop`-valued predicate on the family `φ`, in the unbundled language of `Module.DirectLimit`, so that `Module.DirectLimit.map φ h` is the induced map on colimits of Lemma 00DA. The axioms of a system (`DirectedSystem`) are not assumed, the commuting squares not referring to them, and `R` is only a semiring acting on additive commutative monoids.”.
 
 > **Stacks 00D9.** Let `(M i, μ i j)` and `(N i, ν i j)` be systems of `R`-modules over the same
 > preordered set `ι`. A family of `R`-linear maps `φ i : M i →ₗ[R] N i` is a *homomorphism of
@@ -88,28 +145,43 @@ def IsSystemHom {R : Type*} [Semiring R] {ι : Type*} [Preorder ι]
 
 Declarations registered for the tag:
 
-- [`Module.DirectLimit.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit.map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 13](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L13) (StacksCore).
+- [`Module.DirectLimit.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit.map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L13) (StacksCore).
 
 ## Tag 00DA, a lemma
 
 [Tag 00DA](https://stacks.math.columbia.edu/tag/00DA) in the Stacks Project.
 
+**`Module.DirectLimit.existsUnique_comp_of_eq_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Colimit/Module.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Colimit/Module.lean#L61). The attribute's comment: “Existence and uniqueness of the induced map `Module.DirectLimit.map φ hφ`, from Mathlib's `Module.DirectLimit.map_apply_of` (the squares commute) and `Module.DirectLimit.hom_ext` (uniqueness). Stated in the generality of `Module.DirectLimit`: `R` a semiring acting on additive commutative monoids, and the system axioms of `μ` and `ν` not assumed, neither part depending on them.”.
+
+> **Stacks 00DA.** Let `(M i, μ i j)` and `(N i, ν i j)` be systems of `R`-modules over the same
+> preordered set `ι`. A homomorphism of systems `φ i : M i →ₗ[R] N i` (so
+> `φ j ∘ₗ μ i j = ν i j ∘ₗ φ i` for all `i ≤ j`) induces a unique `R`-linear map
+> `ψ : colim M →ₗ[R] colim N` such that the square `ψ ∘ₗ of i = of i ∘ₗ φ i` commutes for every
+> `i`; the map is `Module.DirectLimit.map φ hφ`.
+
+```lean
+theorem existsUnique_comp_of_eq_of_comp (φ : (i : ι) → M i →ₗ[R] N i)
+    (hφ : ∀ i j h, φ j ∘ₗ μ i j h = ν i j h ∘ₗ φ i) :
+    ∃! ψ : DirectLimit M μ →ₗ[R] DirectLimit N ν,
+      ∀ i, ψ ∘ₗ of R ι M μ i = of R ι N ν i ∘ₗ φ i
+```
+
 Declarations registered for the tag:
 
-- [`Module.DirectLimit.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit.map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L14) (StacksCore).
+- [`Module.DirectLimit.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.DirectLimit.map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Colimit/Module.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L14) (StacksCore).
 
 ## Tag 00DB, a lemma
 
 [Tag 00DB](https://stacks.math.columbia.edu/tag/00DB) in the Stacks Project.
 
-**`Module.DirectLimit.comp_eq_zero`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Colimit/Module.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L28). The attribute's comment: “part 1”.
+**`Module.DirectLimit.comp_eq_zero`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Colimit/Module.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L28). The attribute's comment: “part 1”.
 
 ```lean
 public lemma Module.DirectLimit.comp_eq_zero :
     Module.DirectLimit.map g' hg' ∘ₗ Module.DirectLimit.map g hg = 0
 ```
 
-**`Module.DirectLimit.homologyColimitEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Colimit/Module.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Colimit/Module.lean#L127). The attribute's comment: “part 2”.
+**`Module.DirectLimit.homologyColimitEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Colimit/Module.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Colimit/Module.lean#L127). The attribute's comment: “part 2”.
 
 > Homology intertwines with direct limits.
 
@@ -125,7 +197,7 @@ public def Module.DirectLimit.homologyColimitEquiv
 
 [Tag 00DC](https://stacks.math.columbia.edu/tag/00DC) in the Stacks Project.
 
-**`ModuleCat.not_injective_hom_of_isColimit_binaryCofan_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L149). The attribute's comment: “The poset `{a < b, a < c}` is the span shape, so the colimit of a system over it is a pushout in `ModuleCat R` and the colimit of the sub-system with apex the zero module is the coproduct `B ⊔ C`; the morphism of systems `(0 → A, 𝟙 B, 𝟙 C)` is injective on each object, and `ψ` is pinned by the two commuting squares of `Stacks 00DA`. Stated for an arbitrary nonzero span over an arbitrary ring instead of the source's `(0, ℤ, ℤ, 0, 0) → (ℤ, ℤ, ℤ, 1, 1)`.”.
+**`ModuleCat.not_injective_hom_of_isColimit_binaryCofan_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L149). The attribute's comment: “The poset `{a < b, a < c}` is the span shape, so the colimit of a system over it is a pushout in `ModuleCat R` and the colimit of the sub-system with apex the zero module is the coproduct `B ⊔ C`; the morphism of systems `(0 → A, 𝟙 B, 𝟙 C)` is injective on each object, and `ψ` is pinned by the two commuting squares of `Stacks 00DA`. Stated for an arbitrary nonzero span over an arbitrary ring instead of the source's `(0, ℤ, ℤ, 0, 0) → (ℤ, ℤ, ℤ, 1, 1)`.”.
 
 > Taking colimits is not exact in general: let `R` be a ring, let `M` be the
 > colimit of a system `(A, B, C, μ_ab, μ_ac)` of `R`-modules over the poset `{a < b, a < c}`, that
@@ -147,7 +219,7 @@ theorem ModuleCat.not_injective_hom_of_isColimit_binaryCofan_of_isPushout {R : T
 
 [Tag 04B0](https://stacks.math.columbia.edu/tag/04B0) in the Stacks Project.
 
-**`CategoryTheory.hasExactColimitsOfShape_of_isPseudofiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L290). The attribute's comment: “Stated as `HasExactColimitsOfShape J C`, i.e. `colim : (J ⥤ C) ⥤ C` preserves finite limits, which for a left adjoint is exactness and is the form of `Stacks 00DB` the source asks for. The assumptions of `Stacks 002X` are spelled out because Mathlib has no predicate for a pseudofiltered category. Stated for an arbitrary abelian category with colimits of size `w` whose filtered colimits are exact, instead of the source's abelian groups, since the source's proof uses only that; AB4 is derived from AB5 rather than assumed.”.
+**`CategoryTheory.hasExactColimitsOfShape_of_isPseudofiltered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Colimits.lean#L290). The attribute's comment: “Stated as `HasExactColimitsOfShape J C`, i.e. `colim : (J ⥤ C) ⥤ C` preserves finite limits, which for a left adjoint is exactness and is the form of `Stacks 00DB` the source asks for. The assumptions of `Stacks 002X` are spelled out because Mathlib has no predicate for a pseudofiltered category. Stated for an arbitrary abelian category with colimits of size `w` whose filtered colimits are exact, instead of the source's abelian groups, since the source's proof uses only that; AB4 is derived from AB5 rather than assumed.”.
 
 > Let `J` be an index category satisfying the assumptions of Stacks 002X: every span
 > `y ← x → z` is completed by some commutative square, and every pair of parallel morphisms
@@ -166,8 +238,8 @@ theorem CategoryTheory.hasExactColimitsOfShape_of_isPseudofiltered {C : Type u}
 
 Declarations registered for the tag:
 
-- [`instPreservesHomologyFunctorAddCommGrpCatColim`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instPreservesHomologyFunctorAddCommGrpCatColim#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/Grp/AB.lean, line 8](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Category/Grp/AB.lean#L8) (StacksCore). References: EGA 0 (11.2.4), “special case”; SGA 4 XVII (5.5.6.3), “A = ℤ”.
-- [`instAB5AddCommGrpCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instAB5AddCommGrpCat#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/Grp/AB.lean, line 9](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Category/Grp/AB.lean#L9) (StacksCore). References: SGA 4 I (2.10), “special case”; SGA 6 II (3.1), “special case”.
+- [`instPreservesHomologyFunctorAddCommGrpCatColim`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instPreservesHomologyFunctorAddCommGrpCatColim#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/Grp/AB.lean, line 8](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Category/Grp/AB.lean#L8) (StacksCore). References: EGA 0 (11.2.4), “special case”; SGA 4 XVII (5.5.6.3), “A = ℤ”.
+- [`instAB5AddCommGrpCat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instAB5AddCommGrpCat#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Category/Grp/AB.lean, line 9](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Category/Grp/AB.lean#L9) (StacksCore). References: SGA 4 I (2.10), “special case”; SGA 6 II (3.1), “special case”.
 
 ## Depends on
 
@@ -176,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.8, Tag 07N7](https://stacks.math.columbia.edu/tag/07N7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

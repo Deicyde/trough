@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.32 Étale local structure
 
-Section 101.32 of the Stacks Project, [Tag 0DU0](https://stacks.math.columbia.edu/tag/0DU0). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.32 of the Stacks Project, [Tag 0DU0](https://stacks.math.columbia.edu/tag/0DU0). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DU1, a lemma
 
 [Tag 0DU1](https://stacks.math.columbia.edu/tag/0DU1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_quotientSheaf_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L429). The attribute's comment: “algebraicity of the quotient U/R”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_quotientSheaf_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L429). The attribute's comment: “algebraicity of the quotient U/R”.
 
 > **Stacks 0DU1, algebraicity of the quotient.** Let `(U, R, s, t, c)` be a groupoid in
 > algebraic spaces over an algebraic space `Y` whose object space is flat and locally of finite
@@ -32,7 +32,7 @@ theorem isAlgebraicSpace_quotientSheaf_of_isOpenImmersion
     IsAlgebraicSpace C S hS (quotientSheaf (groupoidPreRelation G)).obj
 ```
 
-**`AlgebraicGeometry.Space.isEtale_quotientSheafToBase_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L574). The attribute's comment: “étaleness of the structural morphism U/R → Y”.
+**`AlgebraicGeometry.Space.isEtale_quotientSheafToBase_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L574). The attribute's comment: “étaleness of the structural morphism U/R → Y”.
 
 > **Stacks 0DU1, étaleness of the quotient over the base.** Let `(U, R, s, t, c)` be a
 > groupoid in algebraic spaces over an algebraic space `Y` whose object space is flat and locally
@@ -51,7 +51,7 @@ theorem isEtale_quotientSheafToBase_of_isOpenImmersion
     IsEtale C S hS (quotientSheafToBase Y.property.isSheaf (groupoidPreRelation G)).hom
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackToQuotientSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L638). The attribute's comment: “the canonical comparison [U/R] → U/R”.
+**`AlgebraicGeometry.Stack.quotientStackToQuotientSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L638). The attribute's comment: “the canonical comparison [U/R] → U/R”.
 
 > **Stacks 0DU1, the canonical comparison `[U/R] ⟶ U/R`.** Under the hypotheses of Stacks 0DU1
 > the quotient sheaf is an algebraic space
@@ -70,7 +70,7 @@ noncomputable def quotientStackToQuotientSheaf :
       (fibredCategory C S hS (quotientSheafSpace G hflat hlfp hopen).obj).val
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackProjection_comp_quotientStackToQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L648). The attribute's comment: “the comparison composed with the quotient projection is the map attached to U → U/R”.
+**`AlgebraicGeometry.Stack.quotientStackProjection_comp_quotientStackToQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L648). The attribute's comment: “the comparison composed with the quotient projection is the map attached to U → U/R”.
 
 > **Stacks 0DU1.** The canonical comparison composed with the projection `U ⟶ [U/R]` of
 > Stacks 044R is the 1-morphism that Stacks 0458 attaches to the quotient map `U ⟶ U/R`.
@@ -82,7 +82,7 @@ theorem quotientStackProjection_comp_quotientStackToQuotientSheaf :
       (associatedMap C S hS (Space.toQuotientSheaf (Space.groupoidPreRelation G))).1.hom
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackToQuotientSheaf_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 678](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L678). The attribute's comment: “the comparison is compatible with the structural morphisms to the base”.
+**`AlgebraicGeometry.Stack.quotientStackToQuotientSheaf_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean, line 678](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotient.lean#L678). The attribute's comment: “the comparison is compatible with the structural morphisms to the base”.
 
 > **Stacks 0DU1.** The canonical comparison is a morphism over the base: composed with the
 > 1-morphism attached to the structural morphism `U/R ⟶ Y` it is the structure arrow
@@ -99,7 +99,7 @@ theorem quotientStackToQuotientSheaf_comp_toBase :
       quotientStackToBase G
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpace_and_equivalenceOver_and_isEtale_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotientEquivalence.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotientEquivalence.lean#L413).
+**`AlgebraicGeometry.Stack.isAlgebraicSpace_and_equivalenceOver_and_isEtale_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotientEquivalence.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenRelationEtaleQuotientEquivalence.lean#L413).
 
 > **Stacks 0DU1.** Let `(U, R, s, t, c)` be a groupoid in algebraic spaces over an algebraic
 > space `Y` whose object space `U` is flat and locally of finite presentation over `Y` and whose
@@ -127,7 +127,7 @@ theorem isAlgebraicSpace_and_equivalenceOver_and_isEtale_of_isOpenImmersion :
 
 [Tag 0DU2](https://stacks.math.columbia.edu/tag/0DU2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_representable_surjective_etale_quotientStackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenSubgroupoidQuotientStackFull.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenSubgroupoidQuotientStackFull.lean#L84).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_representable_surjective_etale_quotientStackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenSubgroupoidQuotientStackFull.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/OpenSubgroupoidQuotientStackFull.lean#L84).
 
 > **Stacks 0DU2.** Let `(U, R, s, t, c)` be a groupoid in algebraic spaces (here over an
 > algebraic space `A` over `S`, which contains the case of a groupoid over `S`) with `s`, `t` flat
@@ -159,7 +159,7 @@ theorem isAlgebraicStack_representable_surjective_etale_quotientStackMap
 
 [Tag 0DU3](https://stacks.math.columbia.edu/tag/0DU3) in the Stacks Project.
 
-**`Stacks.Groupoids.GroupoidScheme.exists_quasiSplitting_isAffine_isFinite_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureQuasiSplitting.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureQuasiSplitting.lean#L165). The attribute's comment: “the groupoid scheme of clause (3), with U and its arrow scheme affine and source and target finite, flat and locally of finite presentation, built from a quasi-splitting of Stacks 04RK. Clause (1), clause (2) and the identification of the stack with [U/R] in clause (3) are NOT covered: see the implementation notes for the three named obstructions”.
+**`Stacks.Groupoids.GroupoidScheme.exists_quasiSplitting_isAffine_isFinite_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureQuasiSplitting.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureQuasiSplitting.lean#L165). The attribute's comment: “the groupoid scheme of clause (3), with U and its arrow scheme affine and source and target finite, flat and locally of finite presentation, built from a quasi-splitting of Stacks 04RK. Clause (1), clause (2) and the identification of the stack with [U/R] in clause (3) are NOT covered: see the implementation notes for the three named obstructions”.
 
 > **Stacks 0DU3, the groupoid of clause (3).**
 >
@@ -201,7 +201,7 @@ theorem exists_quasiSplitting_isAffine_isFinite_flat [IsAffine G.objects.left]
       Flat G'.target.left ∧ LocallyOfFinitePresentation G'.target.left
 ```
 
-**`AlgebraicGeometry.Stack.exists_etale_quotientStack_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureStack.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureStack.lean#L341).
+**`AlgebraicGeometry.Stack.exists_etale_quotientStack_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureStack.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureStack.lean#L341).
 
 > **Stacks 0DU3.** Let `𝒳` be an algebraic stack over `S` which is quasi-DM (Stacks 050D) with
 > separated diagonal `Δ_{𝒳/S}` (Stacks 04XB), and let `x ∈ |𝒳|`. Then there is a 1-morphism of
@@ -240,7 +240,7 @@ theorem exists_etale_quotientStack_of_isQuasiDM (𝒳 : AlgebraicStacks.{u, w} B
 
 [Tag 0DU4](https://stacks.math.columbia.edu/tag/0DU4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_etale_quotientStack_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureAutomorphism.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureAutomorphism.lean#L86).
+**`AlgebraicGeometry.Stack.exists_etale_quotientStack_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureAutomorphism.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureAutomorphism.lean#L86).
 
 > **Stacks 0DU4.** Let `𝒳` be an algebraic stack over `S` which is quasi-DM (Stacks 050D) with
 > separated diagonal `Δ_{𝒳/S}` (Stacks 04XB), and let `x ∈ |𝒳|` be a point at which the automorphism
@@ -282,7 +282,7 @@ theorem exists_etale_quotientStack_inducesIsomorphismAt (𝒳 : AlgebraicStacks.
 
 [Tag 0DU5](https://stacks.math.columbia.edu/tag/0DU5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_etale_quotientStack_residualGerbeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureResidualGerbeExistence.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureResidualGerbeExistence.lean#L98).
+**`AlgebraicGeometry.Stack.exists_etale_quotientStack_residualGerbeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureResidualGerbeExistence.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleLocalStructureResidualGerbeExistence.lean#L98).
 
 > **Stacks 0DU5.** Let `𝒳` be an algebraic stack over `S` which is quasi-DM (Stacks 050D) with
 > separated diagonal `Δ_{𝒳/S}` (Stacks 04XB), and let `x ∈ |𝒳|` be a point which can be represented
@@ -342,4 +342,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.32, Tag 0DU0](https://stacks.math.columbia.edu/tag/0DU0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.119 Around Krull-Akizuki
 
-Section 10.119 of the Stacks Project, [Tag 00P7](https://stacks.math.columbia.edu/tag/00P7). 11 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.119 of the Stacks Project, [Tag 00P7](https://stacks.math.columbia.edu/tag/00P7). 11 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00P8, a lemma
 
 [Tag 00P8](https://stacks.math.columbia.edu/tag/00P8) in the Stacks Project.
 
-**`exists_localSubring_isNoetherian_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/DominatingDimOne.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullAkizuki/DominatingDimOne.lean#L330).
+**`exists_localSubring_isNoetherian_ringKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/DominatingDimOne.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullAkizuki/DominatingDimOne.lean#L330).
 
 > **Stacks Tag 00P8 (Lemma 10.119.1).**
 > Let `R` be a local Noetherian domain with fraction field `K` that is not a field.
@@ -44,7 +44,7 @@ theorem exists_localSubring_isNoetherian_ringKrullDim_eq_one
 
 [Tag 0BHZ](https://stacks.math.columbia.edu/tag/0BHZ) in the Stacks Project.
 
-**`IsLocalRing.existsUnique_isArtinianRing_or_isRegularLocalRing_or_two_le_depth_or_exists_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/FiniteModification.lean, line 773](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalRing/FiniteModification.lean#L773). The attribute's comment: “The four alternatives are indexed by `Fin 4` in the order of the tag, so that `∃!` states both that they cover and that they are pairwise exclusive. See the module docstring for the spelling of each one, in particular for case (4).”.
+**`IsLocalRing.existsUnique_isArtinianRing_or_isRegularLocalRing_or_two_le_depth_or_exists_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/FiniteModification.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/FiniteModification.lean#L773). The attribute's comment: “The four alternatives are indexed by `Fin 4` in the order of the tag, so that `∃!` states both that they cover and that they are pairwise exclusive. See the module docstring for the spelling of each one, in particular for case (4).”.
 
 > **Kollár's four cases.** For a Noetherian local ring `(R, 𝔪)` exactly one of the following
 > holds: (0) `R` is Artinian; (1) `R` is regular of dimension `1`; (2) `depth_𝔪(R) ≥ 2`; (3) there
@@ -71,7 +71,7 @@ public theorem
 
 [Tag 00P9](https://stacks.math.columbia.edu/tag/00P9) in the Stacks Project.
 
-**`IsLocalRing.exists_finite_of_ringKrullDim_eq_one_of_one_lt_finrank_cotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/FiniteModification.lean, line 958](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalRing/FiniteModification.lean#L958). The attribute's comment: “The conclusion is case (4) of Lemma 0BHZ, spelled the same way there; see the module docstring for the reading of each of the four conditions. The hypothesis `dim(𝔪/𝔪²) > 1` is `1 < finrank (ResidueField R) (CotangentSpace R)`.”.
+**`IsLocalRing.exists_finite_of_ringKrullDim_eq_one_of_one_lt_finrank_cotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalRing/FiniteModification.lean, line 958](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalRing/FiniteModification.lean#L958). The attribute's comment: “The conclusion is case (4) of Lemma 0BHZ, spelled the same way there; see the module docstring for the reading of each of the four conditions. The hypothesis `dim(𝔪/𝔪²) > 1` is `1 < finrank (ResidueField R) (CotangentSpace R)`.”.
 
 > **A one-dimensional local ring with non-principal maximal ideal admits a finite
 > modification.** Let `(R, 𝔪)` be a Noetherian local ring of dimension `1` with
@@ -97,7 +97,7 @@ public theorem
 
 [Tag 00PB](https://stacks.math.columbia.edu/tag/00PB) in the Stacks Project.
 
-**`exists_noetherianLocalDomain_adicCompletion_not_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Counterexample.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Counterexample.lean#L389). The attribute's comment: “The existential form of the tag, which is what Stacks 07NZ consumes: the source's `k` is any countable field of characteristic two, here `ULift (ZMod 2)`, so that the witness lands in an arbitrary universe. `StacksFrontier.RingTheory.AnalyticallyUnramified.Examples` carries the source's other construction, over a field with `[k : k^p] = ∞`.”.
+**`exists_noetherianLocalDomain_adicCompletion_not_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Counterexample.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Counterexample.lean#L390). The attribute's comment: “The existential form of the tag, which is what Stacks 07NZ consumes: the source's `k` is any countable field of characteristic two, here `ULift (ZMod 2)`, so that the witness lands in an arbitrary universe. `StacksFrontier.RingTheory.AnalyticallyUnramified.Examples` carries the source's other construction, over a field with `[k : k^p] = ∞`.”.
 
 > **Stacks 00PB.** There is a one-dimensional Noetherian local domain of positive prime
 > characteristic whose completion at its maximal ideal is nonreduced, i.e. which is not analytically
@@ -111,7 +111,7 @@ public theorem exists_noetherianLocalDomain_adicCompletion_not_reduced :
         ringKrullDim R = 1 ∧ ¬ IsAnalyticallyUnramified R
 ```
 
-**`PowerSeries.isDiscreteValuationRing_finiteCoeffSubring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L240). The attribute's comment: “The ring `A` is a discrete valuation ring.”.
+**`PowerSeries.isDiscreteValuationRing_finiteCoeffSubring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L240). The attribute's comment: “The ring `A` is a discrete valuation ring.”.
 
 > **Stacks 00PB: `A` is a discrete valuation ring**, with uniformizer `x`.
 
@@ -120,7 +120,7 @@ theorem isDiscreteValuationRing_finiteCoeffSubring :
     IsDiscreteValuationRing (finiteCoeffSubring k p)
 ```
 
-**`PowerSeries.nonempty_algEquiv_adicCompletion_finiteCoeffSubring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L292). The attribute's comment: “The completion of `A` is `k[[x]]`: an isomorphism of `A`-algebras `A^ ≃ k[[x]]`.”.
+**`PowerSeries.nonempty_algEquiv_adicCompletion_finiteCoeffSubring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L292). The attribute's comment: “The completion of `A` is `k[[x]]`: an isomorphism of `A`-algebras `A^ ≃ k[[x]]`.”.
 
 > **Stacks 00PB: the completion of `A` is `k[[x]]`.** The inclusion `A ⊆ k[[x]]` induces an
 > isomorphism of `A`-algebras from the completion of `A` to `k[[x]]`.
@@ -131,7 +131,7 @@ theorem nonempty_algEquiv_adicCompletion_finiteCoeffSubring :
       (finiteCoeffSubring k p) ≃ₐ[finiteCoeffSubring k p] k⟦X⟧)
 ```
 
-**`PowerSeries.isLocalRing_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L453). The attribute's comment: “For `f ∉ A` the ring `R = A[f] ⊆ k[[x]]` is local.”.
+**`PowerSeries.isLocalRing_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L453). The attribute's comment: “For `f ∉ A` the ring `R = A[f] ⊆ k[[x]]` is local.”.
 
 > **Stacks 00PB: `R = A[f]` is local.**
 
@@ -140,7 +140,7 @@ theorem isLocalRing_adjoinSubalgebra {f : k⟦X⟧} (hf : f ∉ finiteCoeffSubri
     IsLocalRing (adjoinSubalgebra (p := p) f)
 ```
 
-**`PowerSeries.isNoetherianRing_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L462). The attribute's comment: “The ring `R = A[f] ⊆ k[[x]]` is Noetherian.”.
+**`PowerSeries.isNoetherianRing_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L462). The attribute's comment: “The ring `R = A[f] ⊆ k[[x]]` is Noetherian.”.
 
 > **Stacks 00PB: `R = A[f]` is Noetherian.** It is of finite type over the Noetherian ring
 > `A`.
@@ -150,7 +150,7 @@ theorem isNoetherianRing_adjoinSubalgebra (f : k⟦X⟧) :
     IsNoetherianRing (adjoinSubalgebra (p := p) f)
 ```
 
-**`PowerSeries.ringKrullDim_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L471). The attribute's comment: “For `f ∉ A` the ring `R = A[f] ⊆ k[[x]]` has Krull dimension one.”.
+**`PowerSeries.ringKrullDim_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L471). The attribute's comment: “For `f ∉ A` the ring `R = A[f] ⊆ k[[x]]` has Krull dimension one.”.
 
 > **Stacks 00PB: `R = A[f]` has dimension one.** It is integral over `A`, with the same Krull
 > dimension.
@@ -160,7 +160,7 @@ theorem ringKrullDim_adjoinSubalgebra {f : k⟦X⟧} (hf : f ∉ finiteCoeffSubr
     ringKrullDim (adjoinSubalgebra (p := p) f) = 1
 ```
 
-**`PowerSeries.not_isAnalyticallyUnramified_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L489). The attribute's comment: “For `f ∉ A` the completion of `R = A[f]` is not reduced, i.e. `R` is not analytically unramified (Definition 032X).”.
+**`PowerSeries.not_isAnalyticallyUnramified_adjoinSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L489). The attribute's comment: “For `f ∉ A` the completion of `R = A[f]` is not reduced, i.e. `R` is not analytically unramified (Definition 032X).”.
 
 > **Stacks 00PB: the completion of `R = A[f]` is not reduced.** The series `f` is a `p`-th root
 > of `f ^ p ∈ A` in the completion `k[[x]]` of `A`, while `R = A[T] ⧸ (T ^ p - f ^ p)`; so the
@@ -174,7 +174,7 @@ theorem not_isAnalyticallyUnramified_adjoinSubalgebra {f : k⟦X⟧}
     ¬ IsAnalyticallyUnramified (adjoinSubalgebra (p := p) f)
 ```
 
-**`PowerSeries.isPurelyInseparable_laurentSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L544). The attribute's comment: “The extension `k((x))` of the fraction field of `A` is purely inseparable; that it has infinite degree is `PowerSeries.not_finiteDimensional_laurentSeries`.”.
+**`PowerSeries.isPurelyInseparable_laurentSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L544). The attribute's comment: “The extension `k((x))` of the fraction field of `A` is purely inseparable; that it has infinite degree is `PowerSeries.not_finiteDimensional_laurentSeries`.”.
 
 > **Stacks 00PB: `k((x))` is purely inseparable over the fraction field of `A`.** The `p`-th
 > power of `x ^ m g`, `g ∈ k[[x]]`, is `x ^ (p m) g ^ p` with `g ^ p ∈ A`.
@@ -185,7 +185,7 @@ theorem isPurelyInseparable_laurentSeries :
     IsPurelyInseparable (FractionRing (finiteCoeffSubring k p)) (LaurentSeries k)
 ```
 
-**`PowerSeries.not_finiteDimensional_laurentSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 920](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L920). The attribute's comment: “The extension `k((x))` of the fraction field of `A` has infinite degree when `[k : k^p] = ∞`.”.
+**`PowerSeries.not_finiteDimensional_laurentSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean, line 920](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AnalyticallyUnramified/Examples.lean#L920). The attribute's comment: “The extension `k((x))` of the fraction field of `A` has infinite degree when `[k : k^p] = ∞`.”.
 
 > **Stacks 00PB: `k((x))` has infinite degree over the fraction field of `A`**, when
 > `[k : k^p] = ∞`. The series `f_j = ∑ₙ t_{⟨j, n⟩} xⁿ` built from a `p`-independent sequence
@@ -202,7 +202,7 @@ theorem not_finiteDimensional_laurentSeries
 
 [Tag 00PD](https://stacks.math.columbia.edu/tag/00PD) in the Stacks Project.
 
-**`isDiscreteValuationRing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TFAE.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/TFAE.lean#L300). The attribute's comment: “Item (6) is the source's closing sentence, stated as an item because it is equivalent to the others: it is item (4) with `IsNoetherianRing` traded for the factorization property. `0` is excluded there, being of no such form in a domain. See the module docstring for the spelling of `dimension 1`, of `generated by a single nonzero element` and of `normal`.”. References: EGA 0 (17.1.4), “(ii)”; EGA II (7.1.6), “more general”; EGA 0 (17.1.4), “(ii)”; EGA IV (14.5.7), “more general”.
+**`isDiscreteValuationRing_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/TFAE.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/TFAE.lean#L299). The attribute's comment: “Item (6) is the source's closing sentence, stated as an item because it is equivalent to the others: it is item (4) with `IsNoetherianRing` traded for the factorization property. `0` is excluded there, being of no such form in a domain. See the module docstring for the spelling of `dimension 1`, of `generated by a single nonzero element` and of `normal`.”. References: EGA 0 (17.1.4), “(ii)”; EGA II (7.1.6), “more general”; EGA IV (14.5.7), “more general”.
 
 > **Characterizations of a discrete valuation ring.** For a commutative ring `A` the following
 > are equivalent: (1) `A` is a discrete valuation ring; (2) `A` is a Noetherian valuation ring and
@@ -233,13 +233,13 @@ public theorem isDiscreteValuationRing_tfae (A : Type u) [CommRing A] :
 
 Declarations registered for the tag:
 
-- [`IsDiscreteValuationRing.irreducible_iff_uniformizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsDiscreteValuationRing.irreducible_iff_uniformizer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L259) (StacksFrontier).
+- [`IsDiscreteValuationRing.irreducible_iff_uniformizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsDiscreteValuationRing.irreducible_iff_uniformizer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L260) (StacksFrontier).
 
 ## Tag 00PE, a lemma
 
 [Tag 00PE](https://stacks.math.columbia.edu/tag/00PE) in the Stacks Project.
 
-**`length_quotient_span_singleton_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean#L63). The attribute's comment: “(1)”.
+**`length_quotient_span_singleton_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean#L63). The attribute's comment: “(1)”.
 
 > **Statement 1 (Finiteness).** If `R` is a local Noetherian integral domain of Krull
 > dimension `1` and `x ≠ 0`, then `R / xR` has finite length as an `R`-module.
@@ -249,7 +249,7 @@ theorem length_quotient_span_singleton_lt_top (hdim : ringKrullDim R = 1) (x : R
     Module.length R (R ⧸ Ideal.span {x}) < ⊤
 ```
 
-**`length_quot_smul_le_mul_length_quot_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean#L474). The attribute's comment: “(2)”.
+**`length_quot_smul_le_mul_length_quot_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullAkizuki/LengthBound.lean#L474). The attribute's comment: “(2)”.
 
 > **Statement 2 (Bound).** Let `R` be a local Noetherian integral domain of Krull
 > dimension `1` with fraction field `K = FractionRing R`. For a non-negative integer `r`,
@@ -268,7 +268,7 @@ theorem length_quot_smul_le_mul_length_quot_span
 
 [Tag 031F](https://stacks.math.columbia.edu/tag/031F) in the Stacks Project.
 
-**`Ideal.isMaximal_and_finite_primesOver_and_module_finite_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean#L654). The attribute's comment: “The three assertions of the tag, for an arbitrary maximal ideal `m` of a Noetherian domain with `Ring.KrullDimLE 1` rather than for the maximal ideal of a local ring of dimension one, together with the finite-dimensionality of `S/mS` over `κ(m)` from which the author's proof deduces them. See the module docstring.”.
+**`Ideal.isMaximal_and_finite_primesOver_and_module_finite_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/Over/HeightOne.lean#L655). The attribute's comment: “The three assertions of the tag, for an arbitrary maximal ideal `m` of a Noetherian domain with `Ring.KrullDimLE 1` rather than for the maximal ideal of a local ring of dimension one, together with the finite-dimensionality of `S/mS` over `κ(m)` from which the author's proof deduces them. See the module docstring.”.
 
 > Let `R` be a Noetherian domain of Krull dimension at most one with fraction field `K`, let
 > `L/K` be a finite field extension, and let `S` be a domain with fraction field `L` which is an
@@ -295,7 +295,7 @@ public theorem isMaximal_and_finite_primesOver_and_module_finite_quotient
 
 [Tag 00PF](https://stacks.math.columbia.edu/tag/00PF) in the Stacks Project.
 
-**`isFiniteLength_quotSMulTop_of_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/QuotSMulTop.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/QuotSMulTop.lean#L380). The attribute's comment: “For an arbitrary finite-dimensional vector space `V` over the fraction field in place of `K^{⊕ r}`, and with `dim R = 1` weakened to `Ring.KrullDimLE 1 R`. See the module docstring.”.
+**`isFiniteLength_quotSMulTop_of_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/QuotSMulTop.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/QuotSMulTop.lean#L380). The attribute's comment: “For an arbitrary finite-dimensional vector space `V` over the fraction field in place of `K^{⊕ r}`, and with `dim R = 1` weakened to `Ring.KrullDimLE 1 R`. See the module docstring.”.
 
 > Let `R` be a Noetherian domain of Krull dimension at most one with fraction field `K`, let
 > `V` be a finite-dimensional `K`-vector space and let `M` be an `R`-submodule of `V`. Then for
@@ -316,7 +316,7 @@ public theorem isFiniteLength_quotSMulTop_of_finiteDimensional
 
 [Tag 00PG](https://stacks.math.columbia.edu/tag/00PG) in the Stacks Project.
 
-**`krull_akizuki`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/IntermediateRingNoetherian.lean, line 728](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullAkizuki/IntermediateRingNoetherian.lean#L728). References: EGA IV (18.9.7.8), “more general”; EGA IV (21.9.10), “Domain case”.
+**`krull_akizuki`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullAkizuki/IntermediateRingNoetherian.lean, line 728](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullAkizuki/IntermediateRingNoetherian.lean#L728). References: EGA IV (18.9.7.8), “more general”; EGA IV (21.9.10), “Domain case”.
 
 > **Krull-Akizuki (Stacks Tag 00PG).** Let `R` be a Noetherian integral domain
 > of Krull dimension one, with fraction field `K`, and let `L` be a finite field
@@ -338,7 +338,7 @@ theorem krull_akizuki
 
 [Tag 00PH](https://stacks.math.columbia.edu/tag/00PH) in the Stacks Project.
 
-**`exists_isDiscreteValuationRing_isFractionRing_of_not_isField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Existence.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DiscreteValuationRing/Existence.lean#L460). The attribute's comment: “`A` is produced as a `Subalgebra R L`, so that both inclusions are `algebraMap`s and domination is `IsLocalHom (algebraMap R ↥A)`. `L/K` finitely generated as a field extension is `Algebra.EssFiniteType K L`, by `IntermediateField.fg_top_iff`. See the module docstring.”. References: EGA II (7.1.7); EGA IV (15.1.1.6), “DVR dom. A, frac field K”; EGA II (7.1.7); EGA II (7.1.2), “special case”.
+**`exists_isDiscreteValuationRing_isFractionRing_of_not_isField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DiscreteValuationRing/Existence.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DiscreteValuationRing/Existence.lean#L458). The attribute's comment: “`A` is produced as a `Subalgebra R L`, so that both inclusions are `algebraMap`s and domination is `IsLocalHom (algebraMap R ↥A)`. `L/K` finitely generated as a field extension is `Algebra.EssFiniteType K L`, by `IntermediateField.fg_top_iff`. See the module docstring.”. References: EGA II (7.1.7); EGA IV (15.1.1.6), “DVR dom. A, frac field K”; EGA II (7.1.2), “special case”.
 
 > **Stacks 00PH.** Let `R` be a Noetherian local domain with fraction field `K` which is not a
 > field, and let `L/K` be a finitely generated field extension. Then there is an `R`-subalgebra `A`
@@ -362,4 +362,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.119, Tag 00P7](https://stacks.math.columbia.edu/tag/00P7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

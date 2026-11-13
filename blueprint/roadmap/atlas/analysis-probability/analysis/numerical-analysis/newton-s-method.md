@@ -8,7 +8,7 @@ proof: formalized
 
 # Newton's method
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html).
 
 ## One-step error bound for Newton's method
 
@@ -18,7 +18,7 @@ Lipschitz with constant $K$ on the closed interval between $c$ and $x$ and $m \l
 then the Newton step from $x$ satisfies
 $\left| x - f(x) / f'(x) - c \right| \le (K / m)\, |x - c|^2$.
 
-Formalized by `MetaMathlibExt.newton_step_sub_root_abs_le`, a theorem declared in [MathlibExt/Analysis/Calculus/NewtonMethod.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/NewtonMethod.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html#newton-step-sub-root-abs-le).
+Formalized by `MetaMathlibExt.newton_step_sub_root_abs_le`, a theorem declared in [MathlibExt/Analysis/Calculus/NewtonMethod.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/NewtonMethod.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html#newton-step-sub-root-abs-le).
 
 ## Local quadratic convergence of Newton's method
 
@@ -40,7 +40,7 @@ and geometric convergence.
 
 - R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Theorem 2.6; stable ref https://en.wikipedia.org/wiki/Newton%27s_method.
 
-Formalized by `MetaMathlibExt.newton_method_local_quadratic_convergence`, a theorem declared in [MathlibExt/Analysis/Calculus/NewtonMethod.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/NewtonMethod.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html#newton-method-local-quadratic-convergenc).
+Formalized by `MetaMathlibExt.newton_method_local_quadratic_convergence`, a theorem declared in [MathlibExt/Analysis/Calculus/NewtonMethod.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/NewtonMethod.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html#newton-method-local-quadratic-convergenc).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Newton's method](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/newton-s-method/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/numerical-analysis/newton-s-method)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/numerical-analysis/newton-s-method)

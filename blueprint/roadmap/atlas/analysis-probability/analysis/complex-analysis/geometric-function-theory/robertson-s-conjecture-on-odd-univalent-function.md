@@ -7,7 +7,7 @@ statement: formalized
 
 # Robertson's conjecture on odd univalent functions
 
-10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html).
+10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html).
 
 ## Open unit disc
 
@@ -18,7 +18,7 @@ complex plane.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanUnitDisc`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-unit-disc).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanUnitDisc`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-unit-disc).
 
 ## Normalized univalent functions (class $S$)
 
@@ -31,7 +31,7 @@ and $f'(0) = 1$.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsSchlicht`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-schlicht).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsSchlicht`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-schlicht).
 
 ## Starlike univalent functions
 
@@ -45,7 +45,7 @@ with $z \ne 0$.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsStarlike`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-starlike).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsStarlike`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-starlike).
 
 ## Real Taylor coefficients at the origin
 
@@ -57,7 +57,7 @@ iterated derivative at $0$ is real (equivalently, every Taylor coefficient $f^{(
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanHasRealCoeffs`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-has-real-coeffs).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanHasRealCoeffs`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-has-real-coeffs).
 
 ## Close-to-convex functions
 
@@ -73,7 +73,7 @@ $\operatorname{Re}\bigl(z g'(z) / g(z)\bigr) > 0$ for every $z \in \mathbb{D}$ w
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsCloseToConvex`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-close-to-convex).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsCloseToConvex`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-close-to-convex).
 
 ## Normalized odd square roots
 
@@ -87,7 +87,7 @@ and $h'(0) = 1$.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsOddSqrt`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-odd-sqrt).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanIsOddSqrt`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-is-odd-sqrt).
 
 ## Taylor coefficients at the origin
 
@@ -100,7 +100,7 @@ problem uses it at odd $n$.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanOddSqrtCoeff`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-odd-sqrt-coeff).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanOddSqrtCoeff`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-odd-sqrt-coeff).
 
 ## Robertson's bound
 
@@ -112,7 +112,7 @@ inequality $|c_1|^2 + |c_3|^2 + \dots + |c_{2n-1}|^2 \le n$ (for $n = 0$ the sum
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanRobertsonBound`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-robertson-bound).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.haymanRobertsonBound`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#hayman-robertson-bound).
 
 ## Robertson's conjecture for real-coefficient and close-to-convex functions
 
@@ -132,7 +132,7 @@ conjecture.
 
 - AMR-022-6039, Hayman Problem 6.39, arXiv:1809.07200.
 
-Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.HaymanRobertson39Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#conjecture).
 
 ## Robertson's conjecture holds for real-coefficient and close-to-convex functions
 
@@ -152,7 +152,7 @@ univalent function, hence for the real-coefficient and close-to-convex subclasse
 
 - de Branges, L., A proof of the Bieberbach conjecture, Acta Math. 154 (1985), 137-152, https://doi.org/10.1007/BF02392821.
 
-Stated but not proved: `MathlibExt.Analysis.HaymanRobertson39Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.HaymanRobertson39Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanRobertson39Wanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanRobertson39Wanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Robertson's conjecture on odd univalent functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/robertson-s-conjecture-on-odd-univalent-function)

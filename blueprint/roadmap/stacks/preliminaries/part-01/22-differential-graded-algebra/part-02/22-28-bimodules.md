@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.28 Bimodules
 
-Section 22.28 of the Stacks Project, [Tag 0FQG](https://stacks.math.columbia.edu/tag/0FQG). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.28 of the Stacks Project, [Tag 0FQG](https://stacks.math.columbia.edu/tag/0FQG). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FQH, a definition
 
 [Tag 0FQH](https://stacks.math.columbia.edu/tag/0FQH) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleDefs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleDefs.lean#L51). The attribute's comment: “(3): a differential graded `(A, B)`-bimodule, presented as in Tag 0FQI by a right differential graded `B`-module together with a left differential graded `A`-action on its underlying complex whose homogeneous multiplications are right `B`-linear; the grading, the differential and the two Leibniz rules are those of the right module and of the left action. Its underlying graded bimodule, part (2), is `DifferentialGraded.Bimodule.toGradedBimodule`”.
+**`DifferentialGraded.Bimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleDefs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleDefs.lean#L51). The attribute's comment: “(3): a differential graded `(A, B)`-bimodule, presented as in Tag 0FQI by a right differential graded `B`-module together with a left differential graded `A`-action on its underlying complex whose homogeneous multiplications are right `B`-linear; the grading, the differential and the two Leibniz rules are those of the right module and of the left action. Its underlying graded bimodule, part (2), is `DifferentialGraded.Bimodule.toGradedBimodule`”.
 
 > A differential graded `(A, B)`-bimodule, presented as a right differential graded `B`-module
 > with a compatible left differential graded `A`-action.
@@ -23,7 +23,7 @@ Section 22.28 of the Stacks Project, [Tag 0FQG](https://stacks.math.columbia.edu
 structure Bimodule
 ```
 
-**`AlgebraBimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L99). The attribute's comment: “(1): an `(A, B)`-bimodule, bundled as a carrier together with the Mathlib classes that discharge the source's clauses — `Module A M` and `Module Bᵐᵒᵖ M` (clause (a) by `mul_smul`, clause (c) by `one_smul`), `SMulCommClass A Bᵐᵒᵖ M` (clause (b)), and `Module R M` with the two `IsScalarTower`s (`R`-bilinearity of the two actions)”.
+**`AlgebraBimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L99). The attribute's comment: “(1): an `(A, B)`-bimodule, bundled as a carrier together with the Mathlib classes that discharge the source's clauses — `Module A M` and `Module Bᵐᵒᵖ M` (clause (a) by `mul_smul`, clause (c) by `one_smul`), `SMulCommClass A Bᵐᵒᵖ M` (clause (b)), and `Module R M` with the two `IsScalarTower`s (`R`-bilinearity of the two actions)”.
 
 > An `(A, B)`-bimodule over a commutative ring `R`, for `R`-algebras `A` and `B`: an `R`-module
 > `M` with an `R`-bilinear left `A`-action and an `R`-bilinear right `B`-action which commute.
@@ -38,7 +38,7 @@ structure AlgebraBimodule (R : Type u) [CommRing R] (A : Type u) [Ring A] [Algeb
     (B : Type u) [Ring B] [Algebra R B]
 ```
 
-**`GradedBimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L133). The attribute's comment: “(2): a graded `(A, B)`-bimodule, an `AlgebraBimodule` (part (1), the parent projection `toAlgebraBimodule`) together with a grading by `R`-submodules which decomposes the module and satisfies `Aⁿ Mᵐ ⊆ Mⁿ⁺ᵐ` and `Mⁿ Bᵐ ⊆ Mⁿ⁺ᵐ`”.
+**`GradedBimodule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L133). The attribute's comment: “(2): a graded `(A, B)`-bimodule, an `AlgebraBimodule` (part (1), the parent projection `toAlgebraBimodule`) together with a grading by `R`-submodules which decomposes the module and satisfies `Aⁿ Mᵐ ⊆ Mⁿ⁺ᵐ` and `Mⁿ Bᵐ ⊆ Mⁿ⁺ᵐ`”.
 
 > A graded `(A, B)`-bimodule over a commutative ring `R`, for `ℤ`-graded `R`-algebras `𝒜` and
 > `ℬ`: an `(A, B)`-bimodule `M` with a grading `M = ⨁ Mⁿ` such that `Aⁿ Mᵐ ⊆ Mⁿ⁺ᵐ` and
@@ -53,7 +53,7 @@ structure GradedBimodule {R : Type u} [CommRing R] {A : Type u} [Ring A] [Algebr
     (ℬ : ℤ → Submodule R B) [GradedAlgebra ℬ] extends AlgebraBimodule R A B
 ```
 
-**`DifferentialGraded.Bimodule.toGradedBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L176). The attribute's comment: “the graded (A, B)-bimodule underlying a differential graded one, which is what makes part (3) a refinement of part (2); the three parts themselves are tagged with stacks\_fixed, which plain @[stacks] cannot carry on a structure”.
+**`DifferentialGraded.Bimodule.toGradedBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L176). The attribute's comment: “the graded (A, B)-bimodule underlying a differential graded one, which is what makes part (3) a refinement of part (2); the three parts themselves are tagged with stacks\_fixed, which plain @[stacks] cannot carry on a structure”.
 
 > The graded `(A, B)`-bimodule underlying a differential graded `(A, B)`-bimodule: the right
 > differential graded `B`-module with its grading, the left `A`-action totalized from the left
@@ -72,7 +72,7 @@ noncomputable def Bimodule.toGradedBimodule (M : Bimodule.{u, u} A B) :
 
 [Tag 0FQI](https://stacks.math.columbia.edu/tag/0FQI) in the Stacks Project.
 
-**`DifferentialGradedModule.bimoduleStructureEquivRightLinearEndomorphismHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Bimodule.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Bimodule.lean#L82).
+**`DifferentialGradedModule.bimoduleStructureEquivRightLinearEndomorphismHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Bimodule.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Bimodule.lean#L82).
 
 > Compatible left differential graded actions on a fixed right differential graded `B`-module
 > correspond bijectively to homomorphisms into its right `B`-linear endomorphism differential graded
@@ -90,7 +90,7 @@ noncomputable def bimoduleStructureEquivRightLinearEndomorphismHom :
 
 [Tag 0FQJ](https://stacks.math.columbia.edu/tag/0FQJ) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.tensorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTensorEquivalence.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTensorEquivalence.lean#L466).
+**`DifferentialGraded.Bimodule.tensorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTensorEquivalence.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTensorEquivalence.lean#L465).
 
 > A differential graded `(A, B)`-bimodule is canonically a right differential graded module over
 > the graded tensor product of the graded opposite of `A` with `B`, and this is an equivalence of
@@ -104,7 +104,7 @@ noncomputable def tensorEquivalence : TensorEquivalence A B
 
 [Tag 0FQK](https://stacks.math.columbia.edu/tag/0FQK) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimodulePropertyP.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimodulePropertyP.lean#L110).
+**`DifferentialGraded.Bimodule.exists_propertyP_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimodulePropertyP.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimodulePropertyP.lean#L110).
 
 > **Stacks 0FQK.** *"Let `R` be a ring. Let `(A, d)` and `(B, d)` be differential graded
 > `R`-algebras. Let `M` be a differential graded `(A, B)`-bimodule. There exists a homomorphism
@@ -127,7 +127,7 @@ theorem exists_propertyP_resolution (A B : DifferentialGradedAlgebra.{u, u} R)
 
 [Tag 0FQL](https://stacks.math.columbia.edu/tag/0FQL) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.exists_admissible_telescope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTelescope.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTelescope.lean#L117).
+**`DifferentialGraded.Bimodule.exists_admissible_telescope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTelescope.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/BimoduleTelescope.lean#L117).
 
 > **Stacks 0FQL.** *"Let `R` be a ring. Let `(A, d)` and `(B, d)` be differential graded
 > `R`-algebras. Let `P` be a differential graded `(A, B)`-bimodule having property (P) with
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.28, Tag 0FQG](https://stacks.math.columbia.edu/tag/0FQG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

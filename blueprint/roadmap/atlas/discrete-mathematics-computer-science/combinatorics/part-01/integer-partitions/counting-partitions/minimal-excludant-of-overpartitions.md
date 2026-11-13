@@ -7,7 +7,7 @@ statement: formalized
 
 # Minimal excludant of overpartitions
 
-18 results, 9 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html).
+18 results, 9 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html).
 
 ## Number of overpartitions
 
@@ -19,7 +19,7 @@ overlined part sizes, each of which occurs as a part of $p$. For example, $\over
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Section 1.
 
-Formalized by `MetaMathlibExt.overpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#overpartition-count).
+Formalized by `MetaMathlibExt.overpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#overpartition-count).
 
 ## Number of non-overlined copies of a part size
 
@@ -34,7 +34,7 @@ overpartition records each overlined size once.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `mex̄_r`.
 
-Formalized by `MetaMathlibExt.nonOverlinedCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#non-overlined-count).
+Formalized by `MetaMathlibExt.nonOverlinedCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#non-overlined-count).
 
 ## Minimal excludant of an overpartition with a multiplicity bound
 
@@ -48,7 +48,7 @@ is $0$ by convention.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `mex̄_r`.
 
-Formalized by `MetaMathlibExt.leastGapOverpartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#least-gap-overpartition).
+Formalized by `MetaMathlibExt.leastGapOverpartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#least-gap-overpartition).
 
 ## Three-colored distinct-part partitions
 
@@ -64,7 +64,7 @@ $\prod_{m \ge 1} (1 + q^m)^3$.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.
 
-Formalized by `MetaMathlibExt.D3`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3).
+Formalized by `MetaMathlibExt.D3`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3).
 
 ## Sums of minimal excludants over overpartitions
 
@@ -82,7 +82,7 @@ and $\sigma_2\overline{\mathrm{mex}}(2) = 5$.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definitions of `σmex̄` and `σ_r mex̄`.
 
-Formalized by `MetaMathlibExt.sigmaMexOverpartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition).
+Formalized by `MetaMathlibExt.sigmaMexOverpartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition).
 
 ## The number of overpartitions of zero
 
@@ -93,7 +93,7 @@ $0$ equals $1$: the empty overpartition is the only one.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Section 1 (`p̄(0) = 1`).
 
-Formalized by `MetaMathlibExt.overpartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#overpartition-count-zero).
+Formalized by `MetaMathlibExt.overpartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#overpartition-count-zero).
 
 ## Three-colored distinct-part partitions of $0$
 
@@ -105,7 +105,7 @@ the only one.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.
 
-Formalized by `MetaMathlibExt.D3_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-zero).
+Formalized by `MetaMathlibExt.D3_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-zero).
 
 ## Three-colored distinct-part partitions of $1$
 
@@ -117,7 +117,7 @@ takes one of the three colors.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.
 
-Formalized by `MetaMathlibExt.D3_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-one).
+Formalized by `MetaMathlibExt.D3_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-one).
 
 ## Three-colored distinct-part partitions of $2$
 
@@ -129,7 +129,7 @@ one of three colors, or two parts $1$ in two different colors.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Definition of `D_3(n)`.
 
-Formalized by `MetaMathlibExt.D3_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-two).
+Formalized by `MetaMathlibExt.D3_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#d3-two).
 
 ## The overpartition mex sum counts three-colored distinct-part partitions
 
@@ -145,7 +145,7 @@ $\{1, \dots, n\}$ whose three element sums add up to $n$.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_eq_D3` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-eq-d3).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_eq_D3` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-eq-d3).
 
 ## Asymptotic formula for the overpartition mex sum
 
@@ -159,7 +159,7 @@ the ratio of the two sides tends to $1$.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-asymptotic).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-asymptotic).
 
 ## Parity of the overpartition mex sum
 
@@ -174,7 +174,7 @@ natural number $j$, and even otherwise.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_parity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-parity).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_parity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-parity).
 
 ## Generating function of the overpartition r-mex sums
 
@@ -193,7 +193,7 @@ $$
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_generating_function` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-generating-funct).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_generating_function` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-generating-funct).
 
 ## Asymptotic formula for the overpartition r-mex sums
 
@@ -210,7 +210,7 @@ The denominator $8\sqrt{r}$ follows the published version of the paper; arXiv v1
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_r_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-r-asymptotic).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_r_asymptotic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-r-asymptotic).
 
 ## Density of overpartition r-mex sums divisible by powers of two
 
@@ -226,7 +226,7 @@ with $n \le X$, divided by $X$, tends to $1$ as $X \to \infty$.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_power_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-power-density).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_power_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-power-density).
 
 ## Ingham's Tauberian theorem
 
@@ -249,7 +249,7 @@ permits either behavior there.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.ingham_tauberian` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#ingham-tauberian).
+Stated but not proved: `MetaMathlibExt.ingham_tauberian` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#ingham-tauberian).
 
 ## The r-mex sum of overpartitions as a sum of overpartition counts
 
@@ -265,7 +265,7 @@ $$\sigma_r\overline{\mathrm{mex}}(n) = \sum_{k \ge 0,\; rT_k \le n} \overline{p}
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_eq_sum_shifted_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-eq-sum-shifted-c).
+Stated but not proved: `MetaMathlibExt.sigmaMexOverpartition_eq_sum_shifted_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#sigma-mex-overpartition-eq-sum-shifted-c).
 
 ## Eta-quotient congruence for sums of overpartition minimal excludants
 
@@ -287,7 +287,7 @@ in the numerator.
 
 - Victor Manuel R. Aricheta, Judy Ann L. Donato, *A Minimal Excludant over Overpartitions*, Journal of Integer Sequences 27 (2024), Article 24.7.1, Proposition 16.
 
-Stated but not proved: `MetaMathlibExt.etaQuotient_sigmaMexOverpartition_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#eta-quotient-sigma-mex-overpartition-mod).
+Stated but not proved: `MetaMathlibExt.etaQuotient_sigmaMexOverpartition_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/OverpartitionMexWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html#eta-quotient-sigma-mex-overpartition-mod).
 
 ## Depends on
 
@@ -296,4 +296,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Minimal excludant of overpartitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/counting-partitions/minimal-excludant-of-overpartitions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.29 Connected components meeting a section
 
-Section 37.29 of the Stacks Project, [Tag 055K](https://stacks.math.columbia.edu/tag/055K). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.29 of the Stacks Project, [Tag 055K](https://stacks.math.columbia.edu/tag/055K). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 055K, the section
 
 [Tag 055K](https://stacks.math.columbia.edu/tag/055K) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection.mem_locus_iff_asFiber_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L57). The attribute's comment: “Situation 055L: X⁰ = ⋃\_y X⁰\_y, pointwise”.
+**`AlgebraicGeometry.ConnectedAlongSection.mem_locus_iff_asFiber_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L57). The attribute's comment: “Situation 055L: X⁰ = ⋃\_y X⁰\_y, pointwise”.
 
 > For a morphism `f : X ⟶ Y` with a section `s`, the subset `X⁰ = ⋃_y X⁰_y` of `X` consists of
 > the points `x` which, viewed as points of their own fibre `X_{f(x)}`, lie in the connected
@@ -25,7 +25,7 @@ theorem mem_locus_iff_asFiber_mem (D : ConnectedAlongSection.{u}) (x : D.X) :
     x ∈ D.locus ↔ D.f.asFiber x ∈ D.fiberComponent (D.f x)
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.ofGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L67). The attribute's comment: “a group scheme G → S with its neutral section e : S → G”.
+**`AlgebraicGeometry.ConnectedAlongSection.ofGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L67). The attribute's comment: “a group scheme G → S with its neutral section e : S → G”.
 
 > A group scheme `G ⟶ S` together with its neutral section `e : S ⟶ G`, as a morphism of
 > schemes with a section. The neutral section is the morphism of schemes underlying the unit
@@ -35,7 +35,7 @@ theorem mem_locus_iff_asFiber_mem (D : ConnectedAlongSection.{u}) (x : D.X) :
 noncomputable def ofGrpObj : ConnectedAlongSection.{u}
 ```
 
-**`AlgebraicGeometry.GroupScheme.neutralLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L98). The attribute's comment: “G⁰ = ⋃\_s G⁰\_s for the neutral section”. References: EGA IV (15.6.8), “special case”; EGA IV (9.7.12), “special case”; SGA 3 XIX (5.10).
+**`AlgebraicGeometry.GroupScheme.neutralLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L98). The attribute's comment: “G⁰ = ⋃\_s G⁰\_s for the neutral section”. References: EGA IV (15.6.8), “special case”; EGA IV (9.7.12), “special case”; SGA 3 XIX (5.10).
 
 > For a group scheme `G ⟶ S` with neutral section `e`, the subset `G⁰ ⊆ G`: the union over
 > `s : S` of the connected components `G⁰_s` of the fibres `G_s` containing `e(s)`, that is, the
@@ -45,7 +45,7 @@ noncomputable def ofGrpObj : ConnectedAlongSection.{u}
 noncomputable def neutralLocus : Set G.left
 ```
 
-**`AlgebraicGeometry.GroupScheme.fiberι_preimage_neutralLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L104). The attribute's comment: “the trace of G⁰ on G\_s is the component of G\_s containing e(s)”.
+**`AlgebraicGeometry.GroupScheme.fiberι_preimage_neutralLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L104). The attribute's comment: “the trace of G⁰ on G\_s is the component of G\_s containing e(s)”.
 
 > For a group scheme `G ⟶ S` with neutral section `e` and a point `s : S`, the trace of `G⁰` on
 > the fibre `G_s` is the connected component of `G_s` containing the point `e(s)`.
@@ -60,7 +60,7 @@ theorem fiberι_preimage_neutralLocus (s : S) (z : G.hom.fiber s)
 
 [Tag 055L](https://stacks.math.columbia.edu/tag/055L) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L55). The attribute's comment: “the sectioned morphism”.
+**`AlgebraicGeometry.ConnectedAlongSection`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L55). The attribute's comment: “the sectioned morphism”.
 
 > **Stacks Project, Tag 055L (standing data).** A morphism of schemes together with a
 > specified section.
@@ -69,7 +69,7 @@ theorem fiberι_preimage_neutralLocus (s : S) (z : G.hom.fiber s)
 structure ConnectedAlongSection
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.fiberComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L79). The attribute's comment: “the component X⁰\_y”. References: EGA IV (15.6.5); EGA IV (15.6.8).
+**`AlgebraicGeometry.ConnectedAlongSection.fiberComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L79). The attribute's comment: “the component X⁰\_y”. References: EGA IV (15.6.5); EGA IV (15.6.8).
 
 > **Stacks Project, Tag 055L (the fibrewise component).** The connected component of the
 > fibre over `y` which contains the point supplied by the section.
@@ -78,7 +78,7 @@ structure ConnectedAlongSection
 noncomputable def fiberComponent (D : ConnectedAlongSection) (y : D.Y) : Set (D.f.fiber y)
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.locus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L85). The attribute's comment: “the union X⁰”. References: EGA IV (15.6.4).
+**`AlgebraicGeometry.ConnectedAlongSection.locus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L85). The attribute's comment: “the union X⁰”. References: EGA IV (15.6.4).
 
 > **Stacks Project, Tag 055L (the union).** The subset `X⁰ ⊆ X` obtained by taking, for
 > every `y : Y`, the image in `X` of the connected component `X⁰_y`.
@@ -91,7 +91,7 @@ noncomputable def locus (D : ConnectedAlongSection) : Set D.X
 
 [Tag 055M](https://stacks.math.columbia.edu/tag/055M) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection.locus_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/BaseChange.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/BaseChange.lean#L287).
+**`AlgebraicGeometry.ConnectedAlongSection.locus_eq_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/BaseChange.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/BaseChange.lean#L287).
 
 > **Stacks Project, Tag 055M.** In a cartesian square of sectioned morphisms, where the
 > sections are compatible with the horizontal maps, the union of the connected components of
@@ -110,7 +110,7 @@ theorem locus_eq_preimage_of_isPullback
 
 [Tag 055N](https://stacks.math.columbia.edu/tag/055N) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection.clopenLocusAfterShrinking`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L90).
+**`AlgebraicGeometry.ConnectedAlongSection.clopenLocusAfterShrinking`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L90).
 
 > **Stacks Project, Tag 055N.** For a finite type morphism with a section and a point `y` of
 > the target, the locus `X⁰` is open and closed in the inverse image of a nonempty open subset of
@@ -124,7 +124,7 @@ theorem clopenLocusAfterShrinking : ClopenLocusAfterShrinking.{u}
 
 [Tag 055P](https://stacks.math.columbia.edu/tag/055P) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection.isLocallyConstructible_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L96). References: EGA IV (9.7.12).
+**`AlgebraicGeometry.ConnectedAlongSection.isLocallyConstructible_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L96). References: EGA IV (9.7.12).
 
 > **Stacks Project, Tag 055P.** For a morphism of finite presentation with a section, the
 > locus `X⁰` is locally constructible in the source.
@@ -137,7 +137,7 @@ theorem isLocallyConstructible_locus : Statement055P.{u}
 
 [Tag 055Q](https://stacks.math.columbia.edu/tag/055Q) in the Stacks Project.
 
-**`AlgebraicGeometry.locus_mem_nhds_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean#L328). The attribute's comment: “the case of a discrete valuation ring base; the source's reduction to this case, and hence the statement for a general base, is not proved here”. References: EGA IV (15.6.5), “DVR base”.
+**`AlgebraicGeometry.locus_mem_nhds_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean#L328). The attribute's comment: “the case of a discrete valuation ring base; the source's reduction to this case, and hence the statement for a general base, is not proved here”. References: EGA IV (15.6.5), “DVR base”.
 
 > **Stacks 055Q over a discrete valuation ring base.** The locus `X⁰` is a neighbourhood of
 > every point of the connected component of the closed fibre containing the section.
@@ -152,7 +152,7 @@ theorem locus_mem_nhds_of_isDiscreteValuationRing
     ConnectedAlongSection.locus ⟨X, Spec (.of R), f, sec, hsec⟩ ∈ nhds x
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhds_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean#L253). The attribute's comment: “the topological reduction to the discrete valuation ring case, for a Noetherian source”. References: EGA IV (15.6.5), “Noeth. source”.
+**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhds_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean#L253). The attribute's comment: “the topological reduction to the discrete valuation ring case, for a Noetherian source”. References: EGA IV (15.6.5), “Noeth. source”.
 
 > **Stacks 055Q for a Noetherian source.** If `X` is a Noetherian scheme, `f` is flat and
 > locally of finite type and the fibre of `f` through `x ∈ X⁰` is geometrically reduced, then `X⁰`
@@ -169,7 +169,7 @@ theorem locus_mem_nhds_of_isConstructible (D : ConnectedAlongSection.{u})
     D.locus ∈ nhds x
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhdsSet_fiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L103). References: EGA IV (15.6.5), “nbhd of X⁰\_y”; EGA IV (15.6.4), “special case”.
+**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhdsSet_fiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L103). References: EGA IV (15.6.5), “nbhd of X⁰\_y”; EGA IV (15.6.4), “special case”.
 
 > **Stacks Project, Tag 055Q.** For a flat morphism of finite presentation with a section
 > whose fibre over `y` is geometrically reduced, the locus `X⁰` is a neighbourhood of the
@@ -186,7 +186,7 @@ theorem locus_mem_nhdsSet_fiberComponent (D : ConnectedAlongSection.{u})
 
 [Tag 055R](https://stacks.math.columbia.edu/tag/055R) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpen_locus_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean#L302). The attribute's comment: “the case of a discrete valuation ring base; the source's reduction to this case, and hence the statement for a general base, is not proved here”. References: EGA IV (15.6.5), “DVR base”.
+**`AlgebraicGeometry.isOpen_locus_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusDVR.lean#L302). The attribute's comment: “the case of a discrete valuation ring base; the source's reduction to this case, and hence the statement for a general base, is not proved here”. References: EGA IV (15.6.5), “DVR base”.
 
 > **Stacks 055R over a discrete valuation ring base.** The locus `X⁰` of connected components
 > of fibres meeting the section is open. Only reducedness of the closed fibre is needed; the
@@ -201,7 +201,7 @@ theorem isOpen_locus_of_isDiscreteValuationRing
     IsOpen (ConnectedAlongSection.locus ⟨X, Spec (.of R), f, sec, hsec⟩)
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.isOpen_locus_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean#L270). The attribute's comment: “the topological reduction to the discrete valuation ring case, for a Noetherian source”. References: EGA IV (15.6.5), “Noeth. source”.
+**`AlgebraicGeometry.ConnectedAlongSection.isOpen_locus_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/SectionLocusReduction.lean#L270). The attribute's comment: “the topological reduction to the discrete valuation ring case, for a Noetherian source”. References: EGA IV (15.6.5), “Noeth. source”.
 
 > **Stacks 055R for a Noetherian source.** If `X` is a Noetherian scheme and `f` is flat and
 > locally of finite type with geometrically reduced fibres, then `X⁰` is open.
@@ -213,7 +213,7 @@ theorem isOpen_locus_of_isConstructible (D : ConnectedAlongSection.{u})
     IsOpen D.locus
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.isOpen_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L112). References: EGA IV (15.6.5), “In particular: X⁰ open”.
+**`AlgebraicGeometry.ConnectedAlongSection.isOpen_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L112). References: EGA IV (15.6.5), “In particular: X⁰ open”.
 
 > **Stacks Project, Tag 055R.** For a flat morphism of finite presentation with a section and
 > geometrically reduced fibres, the locus `X⁰` is open in the source.
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.29, Tag 055K](https://stacks.math.columbia.edu/tag/055K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

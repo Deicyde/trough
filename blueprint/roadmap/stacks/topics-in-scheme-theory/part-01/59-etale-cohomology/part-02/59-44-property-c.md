@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.44 Property (C)
 
-Section 59.44 of the Stacks Project, [Tag 04DS](https://stacks.math.columbia.edu/tag/04DS). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.44 of the Stacks Project, [Tag 04DS](https://stacks.math.columbia.edu/tag/04DS). 4 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04DT, a lemma
 
 [Tag 04DT](https://stacks.math.columbia.edu/tag/04DT) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsMonomorphisms_of_hasPropertyC`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean#L87). The attribute's comment: “reflects injections”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsMonomorphisms_of_hasPropertyC`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean#L87). The attribute's comment: “reflects injections”.
 
 > **Stacks Project, Tag 04DT.** If `f : X ⟶ Y` has property (C), then direct image
 > `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets reflects injections.
@@ -26,7 +26,7 @@ theorem smallEtalePushforward_reflectsMonomorphisms_of_hasPropertyC
       (smallEtaleTopology Y) (smallEtaleTopology X)).ReflectsMonomorphisms
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsEpimorphisms_of_hasPropertyC`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean#L97). The attribute's comment: “reflects surjections”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsEpimorphisms_of_hasPropertyC`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCPushforward.lean#L97). The attribute's comment: “reflects surjections”.
 
 > **Stacks Project, Tag 04DT.** If `f : X ⟶ Y` has property (C), then direct image
 > `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets reflects surjections.
@@ -42,7 +42,7 @@ theorem smallEtalePushforward_reflectsEpimorphisms_of_hasPropertyC
 
 [Tag 04DV](https://stacks.math.columbia.edu/tag/04DV) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtaleBaseChange_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCAlmostCocontinuous.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCAlmostCocontinuous.lean#L82).
+**`Stacks.EtaleCohomology.smallEtaleBaseChange_isAlmostCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCAlmostCocontinuous.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyCAlmostCocontinuous.lean#L82).
 
 > **Stacks Project, Tag 04DV.** If every étale base change `X ×_Y V ⟶ V` of `f : X ⟶ Y` has
 > property (C) and is a closed map, then base change `Y.Etale ⥤ X.Etale`, `V ↦ X ×_Y V`, is an
@@ -63,7 +63,7 @@ theorem smallEtaleBaseChange_isAlmostCocontinuous
 
 [Tag 04DW](https://stacks.math.columbia.edu/tag/04DW) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.hasPropertyC_of_isIntegralHom_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyC.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyC.lean#L341).
+**`Stacks.EtaleCohomology.hasPropertyC_of_isIntegralHom_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyC.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyC.lean#L341).
 
 > **Stacks Project, Tag 04DW.** An integral morphism of schemes which is a homeomorphism onto a
 > closed subset of its target has property (C): every scheme étale over the source is dominated, by
@@ -85,7 +85,7 @@ theorem hasPropertyC_of_isIntegralHom_of_isClosedEmbedding
 
 [Tag 04DX](https://stacks.math.columbia.edu/tag/04DX) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtaleBaseChange_isAlmostCocontinuous_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L165). The attribute's comment: “(7) almost cocontinuous”.
+**`Stacks.EtaleCohomology.smallEtaleBaseChange_isAlmostCocontinuous_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L165). The attribute's comment: “(7) almost cocontinuous”.
 
 > **Stacks Project, Tag 04DX, part (7).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, base change `Y.Etale ⥤ X.Etale`, `V ↦ X ×_Y V`, is almost cocontinuous as a
@@ -101,7 +101,7 @@ public theorem
     IsAlmostCocontinuous (smallEtaleBaseChange f) (smallEtaleTopology Y) (smallEtaleTopology X)
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsMonomorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L181). The attribute's comment: “(1) reflects injections”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsMonomorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L181). The attribute's comment: “(1) reflects injections”.
 
 > **Stacks Project, Tag 04DX, part (1).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets
@@ -117,7 +117,7 @@ public theorem
       (smallEtaleTopology X)).ReflectsMonomorphisms
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L195). The attribute's comment: “(1) reflects surjections”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_reflectsEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L195). The attribute's comment: “(1) reflects surjections”.
 
 > **Stacks Project, Tag 04DX, part (1).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets
@@ -133,7 +133,7 @@ public theorem
       (smallEtaleTopology X)).ReflectsEpimorphisms
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_preservesConnectedColimits_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L212). The attribute's comment: “(2) finite connected colimits”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_preservesConnectedColimits_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L212). The attribute's comment: “(2) finite connected colimits”.
 
 > **Stacks Project, Tag 04DX, part (2).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets
@@ -153,7 +153,7 @@ public theorem
         (smallEtaleTopology Y) (smallEtaleTopology X))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_preservesEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L236). The attribute's comment: “(3) preserves surjections”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_preservesEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L236). The attribute's comment: “(3) preserves surjections”.
 
 > **Stacks Project, Tag 04DX, part (3).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` carries surjections
@@ -170,7 +170,7 @@ public theorem
       (smallEtaleTopology X)).PreservesEpimorphisms
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_preservesEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L252). The attribute's comment: “(3) preserves surjections”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_preservesEpimorphisms_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L252). The attribute's comment: “(3) preserves surjections”.
 
 > **Stacks Project, Tag 04DX, part (3).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Ab(X_étale) ⥤ Ab(Y_étale)` carries surjections
@@ -188,7 +188,7 @@ public theorem
     (smallEtalePushforwardAb f).PreservesEpimorphisms
 ```
 
-**`Stacks.EtaleCohomology.smallEtaleAdjunction_counit_epi_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L276). The attribute's comment: “(4) surjective counit”.
+**`Stacks.EtaleCohomology.smallEtaleAdjunction_counit_epi_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L276). The attribute's comment: “(4) surjective counit”.
 
 > **Stacks Project, Tag 04DX, part (4).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, the counit `f^{-1} f_* F ⟶ F` of the inverse-image/direct-image adjunction is
@@ -205,7 +205,7 @@ public theorem smallEtaleAdjunction_counit_epi_of_isIntegralHom_of_universallyIn
       (smallEtaleTopology Y) (smallEtaleTopology X)).counit.app F)
 ```
 
-**`Stacks.EtaleCohomology.smallEtaleAdjunctionAb_counit_epi_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L293). The attribute's comment: “(4) surjective counit”.
+**`Stacks.EtaleCohomology.smallEtaleAdjunctionAb_counit_epi_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L293). The attribute's comment: “(4) surjective counit”.
 
 > **Stacks Project, Tag 04DX, part (4).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, the counit `f^{-1} f_* F ⟶ F` of the inverse-image/direct-image adjunction is
@@ -221,7 +221,7 @@ public theorem smallEtaleAdjunctionAb_counit_epi_of_isIntegralHom_of_universally
     Epi ((smallEtaleAdjunctionAb f).counit.app F)
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_faithful_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L307). The attribute's comment: “(5) faithful”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_faithful_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L307). The attribute's comment: “(5) faithful”.
 
 > **Stacks Project, Tag 04DX, part (5).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Sh(X_étale) ⥤ Sh(Y_étale)` on sheaves of sets is
@@ -237,7 +237,7 @@ public theorem smallEtalePushforward_faithful_of_isIntegralHom_of_universallyInj
       (smallEtaleTopology Y) (smallEtaleTopology X)).Faithful
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_faithful_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L323). The attribute's comment: “(5) faithful”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_faithful_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L323). The attribute's comment: “(5) faithful”.
 
 > **Stacks Project, Tag 04DX, part (5).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Ab(X_étale) ⥤ Ab(Y_étale)` on abelian sheaves is
@@ -252,7 +252,7 @@ public theorem smallEtalePushforwardAb_faithful_of_isIntegralHom_of_universallyI
     (smallEtalePushforwardAb f).Faithful
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_exact_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L337). The attribute's comment: “(6) exact on abelian sheaves”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_exact_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/IntegralUniversallyInjective.lean#L337). The attribute's comment: “(6) exact on abelian sheaves”.
 
 > **Stacks Project, Tag 04DX, part (6).** For an integral universally injective morphism of
 > schemes `f : X ⟶ Y`, direct image `f_{small, *} : Ab(X_étale) ⥤ Ab(Y_étale)` is an exact functor.
@@ -268,7 +268,7 @@ public theorem smallEtalePushforwardAb_exact_of_isIntegralHom_of_universallyInje
       (Sheaf (smallEtaleTopology Y) Ab.{u + 1}) (smallEtalePushforwardAb f)
 ```
 
-**`AlgebraicGeometry.Space.smallBaseChange_isAlmostCocontinuous_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartBaseChangeAlmostCocontinuous.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartBaseChangeAlmostCocontinuous.lean#L482). The attribute's comment: “part (7) for algebraic spaces: chart base change is almost cocontinuous”.
+**`AlgebraicGeometry.Space.smallBaseChange_isAlmostCocontinuous_of_isIntegralHom_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartBaseChangeAlmostCocontinuous.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartBaseChangeAlmostCocontinuous.lean#L482). The attribute's comment: “part (7) for algebraic spaces: chart base change is almost cocontinuous”.
 
 > **The space-level analogue of [Stacks, Tag 04DX], part (7).** Let `f : Z ⟶ X` be a
 > representable morphism of algebraic spaces over `S` such that every base-change projection of
@@ -302,4 +302,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.44, Tag 04DS](https://stacks.math.columbia.edu/tag/04DS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

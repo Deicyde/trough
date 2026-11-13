@@ -7,7 +7,7 @@ statement: formalized
 
 # Polynomials with coefficients in arithmetic progression
 
-14 results, 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html).
+14 results, 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html).
 
 ## Perron's irreducibility criterion
 
@@ -19,7 +19,7 @@ $|a_{n-1}| > 1 + \sum_{i=0}^{n-2} |a_i|$. Then $f$ is irreducible in $\mathbb{Z}
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 1 (Perron's criterion, quoted from the paper's reference [6]).
 
-Stated but not proved: `MetaMathlibExt.perron_irreducible` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#perron-irreducible).
+Stated but not proved: `MetaMathlibExt.perron_irreducible` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#perron-irreducible).
 
 ## Irreducibility of polynomials with coefficients in an arithmetic progression
 
@@ -32,7 +32,7 @@ $\mathbb{Z}[x]$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_irreducible` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-irreducible).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_irreducible` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-irreducible).
 
 ## The arithmetic-progression quartic is not a product of two quadratics
 
@@ -45,7 +45,7 @@ polynomials of degree $2$ in $\mathbb{Z}[x]$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_four_not_mul_quadratics` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-four-not-mul-quadratics).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_four_not_mul_quadratics` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-four-not-mul-quadratics).
 
 ## Irreducibility when $d$ has a primitive-root prime factor
 
@@ -60,7 +60,7 @@ $\mathbb{Z}[x]$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_irreducible_of_primitiveRoot` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-irreducible-of-primitive).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_irreducible_of_primitiveRoot` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-irreducible-of-primitive).
 
 ## The arithmetic-progression polynomial times $(x - 1)^2$
 
@@ -75,7 +75,7 @@ The source assumes $m$, $a$, $d$ positive.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_mul_sub_one_sq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-mul-sub-one-sq).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_mul_sub_one_sq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-mul-sub-one-sq).
 
 ## Power identity at the roots of an arithmetic-progression polynomial
 
@@ -94,7 +94,7 @@ $z^{m+1} = (a_{m+2} z - a_{m+1}) / (a_1 z - a_0)$. The denominator does not vani
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1, equation (2).
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_root_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-root-pow-eq).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_root_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-root-pow-eq).
 
 ## The auxiliary equation has a unique positive root, which exceeds $1$
 
@@ -107,7 +107,7 @@ solution, and every positive real solution $x$ satisfies $x > 1$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_eq3_existsUnique_pos` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-eq3-exists-unique-pos).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_eq3_existsUnique_pos` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-eq3-exists-unique-pos).
 
 ## Bound on the zeros of the arithmetic-progression polynomial
 
@@ -121,7 +121,7 @@ $|z| \le \lambda$, and $|z| = \lambda$ only if $z = -\lambda$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_root_norm_le` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-root-norm-le).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_root_norm_le` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-root-norm-le).
 
 ## Lower bound on a power of the auxiliary root
 
@@ -134,7 +134,7 @@ $a + md < a \lambda^m$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_lam_pow_gt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-lam-pow-gt).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_lam_pow_gt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-lam-pow-gt).
 
 ## A rational lower bound for $(1 + mx)^{1/m}$
 
@@ -147,7 +147,7 @@ $$\frac{2 + (m + 1)x}{2 + (m - 1)x} < (1 + mx)^{1/m}.$$
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.one_add_mul_rpow_inv_gt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#one-add-mul-rpow-inv-gt).
+Stated but not proved: `MetaMathlibExt.one_add_mul_rpow_inv_gt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#one-add-mul-rpow-inv-gt).
 
 ## Strict upper bound on floors at powers of the auxiliary root
 
@@ -160,7 +160,7 @@ $\lfloor a \lambda^p \rfloor < a + pd$ for every integer $p$ with $1 \le p \le m
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_lt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-lt).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_lt` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-lt).
 
 ## Exact floor at a power of the auxiliary root (single exponent)
 
@@ -174,7 +174,7 @@ $\lfloor a \lambda^p \rfloor = a + pd - 1$.
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-eq).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_eq` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-eq).
 
 ## Exact floors at powers of the auxiliary root (all exponents)
 
@@ -187,7 +187,7 @@ $\lfloor a \lambda^p \rfloor = a + pd - 1$ for every integer $p$ with $1 \le p \
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Proposition 5, second statement.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_eq_of_eight` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-eq-of-eigh).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_floor_lam_pow_eq_of_eight` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-floor-lam-pow-eq-of-eigh).
 
 ## Reducible quadratics with coefficients in an arithmetic progression
 
@@ -206,7 +206,7 @@ $A_2$ is irreducible for every $a \ge 1$, its discriminant $-3a^2 - 6a + 1$ bein
 
 - Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.arithProgPoly_two_reducible_iff` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-two-reducible-iff).
+Stated but not proved: `MetaMathlibExt.arithProgPoly_two_reducible_iff` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ArithmeticProgressionIrreducibleWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html#arith-prog-poly-two-reducible-iff).
 
 ## Depends on
 
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Polynomials with coefficients in arithmetic progression](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/polynomials-with-coefficients-in-arithmetic-prog)

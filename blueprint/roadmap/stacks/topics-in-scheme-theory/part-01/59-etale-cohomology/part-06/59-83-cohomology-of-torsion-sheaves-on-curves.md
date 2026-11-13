@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.83 Cohomology of torsion sheaves on curves
 
-Section 59.83 of the Stacks Project, [Tag 03SB](https://stacks.math.columbia.edu/tag/03SB). 20 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.83 of the Stacks Project, [Tag 03SB](https://stacks.math.columbia.edu/tag/03SB). 20 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A52, a situation
 
 [Tag 0A52](https://stacks.math.columbia.edu/tag/0A52) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/TorsionSheafSituation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/TorsionSheafSituation.lean#L42).
+**`Stacks.EtaleCohomology.TorsionSheafSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/TorsionSheafSituation.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/TorsionSheafSituation.lean#L42).
 
 > An algebraically closed field `k`, a separated scheme `X` of finite type over `k` whose
 > underlying space has Krull dimension at most one, and a torsion abelian sheaf `F` on the small
@@ -28,7 +28,7 @@ public structure TorsionSheafSituation
 
 [Tag 0A53](https://stacks.math.columbia.edu/tag/0A53) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.isVanishingAboveDegreeTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L79).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.isVanishingAboveDegreeTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L79).
 
 > **Stacks Project, Tag 0A53**, statement (1) of Situation 0A52: `H^q(X, F) = 0` for `q > 2`.
 
@@ -38,7 +38,7 @@ theorem isVanishingAboveDegreeTwo
     IsVanishingAboveDegreeTwo.{u, v, w} S.F
 ```
 
-**`Stacks.EtaleCohomology.IsVanishingAboveDegreeTwo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/VanishingAboveDegreeTwo.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/VanishingAboveDegreeTwo.lean#L91). The attribute's comment: “item (1) of 0A52: H^q(X, F) = 0 for q > 2”.
+**`Stacks.EtaleCohomology.IsVanishingAboveDegreeTwo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/VanishingAboveDegreeTwo.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/VanishingAboveDegreeTwo.lean#L91). The attribute's comment: “item (1) of 0A52: H^q(X, F) = 0 for q > 2”.
 
 > **Stacks Project, Tag 0A53.** Statement (1) of the list of Situation 0A52: the étale
 > cohomology `H^q_étale(X, F)` vanishes for every degree `q > 2`.
@@ -52,7 +52,7 @@ def IsVanishingAboveDegreeTwo
 
 [Tag 0A54](https://stacks.math.columbia.edu/tag/0A54) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.IsAffineVanishingAboveDegreeOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/AffineVanishingAboveDegreeOne.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/AffineVanishingAboveDegreeOne.lean#L54). The attribute's comment: “item (2) of 0A52: H^q(X, F) = 0 for q > 1 if X is affine”.
+**`Stacks.EtaleCohomology.IsAffineVanishingAboveDegreeOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/AffineVanishingAboveDegreeOne.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/AffineVanishingAboveDegreeOne.lean#L54). The attribute's comment: “item (2) of 0A52: H^q(X, F) = 0 for q > 1 if X is affine”.
 
 > Statement (2) of the list of Situation 0A52: the étale cohomology `H^q_étale(X, F)` vanishes
 > for every `q > 1` if `X` is affine.
@@ -62,7 +62,7 @@ def IsAffineVanishingAboveDegreeOne
     (F : Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}) : Prop
 ```
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.isAffineVanishingAboveDegreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L87).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.isAffineVanishingAboveDegreeOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L87).
 
 > **Stacks Project, Tag 0A54**, statement (2) of Situation 0A52: if `X` is affine then
 > `H^q(X, F) = 0` for `q > 1`.
@@ -77,7 +77,7 @@ theorem isAffineVanishingAboveDegreeOne
 
 [Tag 0A55](https://stacks.math.columbia.edu/tag/0A55) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.isPrimePowerTorsionVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L95).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.isPrimePowerTorsionVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L95).
 
 > **Stacks Project, Tag 0A55**, statement (3) of Situation 0A52: if `p = char(k) > 0` and `F`
 > is `p`-power torsion then `H^q(X, F) = 0` for `q > 1`.
@@ -86,24 +86,25 @@ theorem isAffineVanishingAboveDegreeOne
 theorem isPrimePowerTorsionVanishing
     [HasExt.{w} (Sheaf S.X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})]
     (p : ℕ) [CharP S.k p] :
-    IsPrimePowerTorsionVanishing.{u, v, w} S.structureMorphism p S.F
+    IsPrimePowerTorsionVanishing.{u, v, w} S.k p S.F
 ```
 
-**`Stacks.EtaleCohomology.IsPrimePowerTorsionVanishing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimePowerVanishingStatement.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimePowerVanishingStatement.lean#L200). The attribute's comment: “item (3) of 0A52: H^q(X, F) = 0 for q > 1 if p = char(k) > 0 and F is p-power torsion”.
+**`Stacks.EtaleCohomology.IsPrimePowerTorsionVanishing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimePowerVanishingStatement.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimePowerVanishingStatement.lean#L203). The attribute's comment: “item (3) of 0A52: H^q(X, F) = 0 for q > 1 if p = char(k) > 0 and F is p-power torsion”.
 
 > **Stacks Project, Tag 0A55**, item (3) of Situation 0A52:
 >
 > > `H^q_étale(X, F) = 0` for `q > 1` if `p = char(k) > 0` and `F` is `p`-power torsion.
 >
-> Here `X` is a scheme with a morphism `π` to the spectrum of a field `k` of characteristic `p`,
-> and `F` is an abelian sheaf on the small étale site of `X`. The source states this as one entry
-> of the list of eight statements that Situation 0A52 asks for, not as an assertion, so it is a
-> predicate on the data; the situation's further hypotheses — `k` algebraically closed, `X`
-> separated of finite type of dimension at most one, `F` torsion — are what make the item a
-> theorem at Tag 03SC, and are not imposed here.
+> Here `X` is a scheme over a field `k` of characteristic `p` (the predicate does not depend on the
+> structure morphism, which is therefore not an argument), and `F` is an abelian sheaf on the
+> small étale site of `X`. The source states this as one entry of the list of eight statements
+> that Situation 0A52 asks for, not as an assertion, so it is a predicate on the data; the
+> situation's further hypotheses — `k` algebraically closed, `X` separated of finite type of
+> dimension at most one, `F` torsion — are what make the item a theorem at Tag 03SC, and are not
+> imposed here.
 
 ```lean
-def IsPrimePowerTorsionVanishing (π : X ⟶ Spec (.of k)) (p : ℕ) [CharP k p]
+def IsPrimePowerTorsionVanishing (k : Type u) [Field k] (p : ℕ) [CharP k p]
     (F : Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})
     [HasExt.{w} (Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})] : Prop
 ```
@@ -112,7 +113,7 @@ def IsPrimePowerTorsionVanishing (π : X ⟶ Spec (.of k)) (p : ℕ) [CharP k p]
 
 [Tag 0A56](https://stacks.math.columbia.edu/tag/0A56) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.finiteCohomologyOfPrimeToCharacteristic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L104). References: SGA 5 VI (3.1), “Finite length of H^i(X”.
+**`Stacks.EtaleCohomology.TorsionSheafSituation.finiteCohomologyOfPrimeToCharacteristic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L104). References: SGA 5 VI (3.1), “Finite length of H^i(X”.
 
 > **Stacks Project, Tag 0A56**, statement (4) of Situation 0A52: if `F` is constructible and
 > torsion prime to `char(k)` then `H^q(X, F)` is finite.
@@ -123,7 +124,7 @@ theorem finiteCohomologyOfPrimeToCharacteristic (B : BigEtaleSite.{u}) (hX : B.C
     S.FiniteCohomologyOfPrimeToCharacteristic.{u, v, w} B hX
 ```
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.FiniteCohomologyOfPrimeToCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimeToCharacteristicFiniteness.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimeToCharacteristicFiniteness.lean#L89). The attribute's comment: “statement (4) of Situation 0A52, as a predicate on the situation”.
+**`Stacks.EtaleCohomology.TorsionSheafSituation.FiniteCohomologyOfPrimeToCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimeToCharacteristicFiniteness.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/PrimeToCharacteristicFiniteness.lean#L89). The attribute's comment: “statement (4) of Situation 0A52, as a predicate on the situation”.
 
 > Statement (4) of Situation 0A52. For an algebraically closed
 > field `k`, a separated finite-type scheme `X` of dimension at most one over `k` and a torsion
@@ -140,7 +141,7 @@ def FiniteCohomologyOfPrimeToCharacteristic : Prop
 
 [Tag 0A57](https://stacks.math.columbia.edu/tag/0A57) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.finiteCohomologyOfIsProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L114).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.finiteCohomologyOfIsProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L114).
 
 > **Stacks Project, Tag 0A57**, statement (5) of Situation 0A52: if `X` is proper and `F` is
 > constructible then `H^q(X, F)` is finite.
@@ -151,7 +152,7 @@ theorem finiteCohomologyOfIsProper (B : BigEtaleSite.{u}) (hX : B.Contains S.X)
     S.FiniteCohomologyOfIsProper.{u, v, w} B hX
 ```
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.FiniteCohomologyOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ProperFinitenessStatement.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ProperFinitenessStatement.lean#L151). The attribute's comment: “statement (5) of Situation 0A52, as a predicate on the situation”.
+**`Stacks.EtaleCohomology.TorsionSheafSituation.FiniteCohomologyOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ProperFinitenessStatement.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ProperFinitenessStatement.lean#L153). The attribute's comment: “statement (5) of Situation 0A52, as a predicate on the situation”.
 
 > **Stacks Project, Tag 0A57**, statement (5) of Situation 0A52. For an algebraically closed
 > field `k`, a separated finite-type scheme `X` of dimension at most one over `k` and a torsion
@@ -171,7 +172,7 @@ def TorsionSheafSituation.FiniteCohomologyOfIsProper (S : TorsionSheafSituation.
 
 [Tag 0A58](https://stacks.math.columbia.edu/tag/0A58) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.BaseChangePrimeToCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/BaseChangePrimeToCharacteristic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/BaseChangePrimeToCharacteristic.lean#L63). The attribute's comment: “statement (6) of Situation 0A52, as a predicate on the situation”.
+**`Stacks.EtaleCohomology.TorsionSheafSituation.BaseChangePrimeToCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/BaseChangePrimeToCharacteristic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/BaseChangePrimeToCharacteristic.lean#L63). The attribute's comment: “statement (6) of Situation 0A52, as a predicate on the situation”.
 
 > Statement (6) of the list of statements of Situation 0A52: if the torsion of the situation's
 > abelian sheaf `F` is prime to the characteristic of the algebraically closed ground field `k`,
@@ -186,7 +187,7 @@ def TorsionSheafSituation.BaseChangePrimeToCharacteristic
     (S : TorsionSheafSituation.{u, v}) : Prop
 ```
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.baseChangePrimeToCharacteristic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L125).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.baseChangePrimeToCharacteristic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L125).
 
 > **Stacks Project, Tag 0A58**, statement (6) of Situation 0A52: if `F` is torsion prime to
 > `char(k)` then `H^q(X, F) → H^q(X_{k'}, F|_{X_{k'}})` is bijective for every extension `k'/k` of
@@ -200,7 +201,7 @@ theorem baseChangePrimeToCharacteristic : S.BaseChangePrimeToCharacteristic.{u, 
 
 [Tag 0A59](https://stacks.math.columbia.edu/tag/0A59) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.ProperBaseChangeStatement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ProperBaseChangeStatement.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ProperBaseChangeStatement.lean#L58). The attribute's comment: “item (7) of Situation 0A52, as a predicate on the situation”.
+**`Stacks.EtaleCohomology.TorsionSheafSituation.ProperBaseChangeStatement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ProperBaseChangeStatement.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ProperBaseChangeStatement.lean#L58). The attribute's comment: “item (7) of Situation 0A52, as a predicate on the situation”.
 
 > Statement (7) of Situation 0A52. For an algebraically closed field `k`, a separated
 > finite-type scheme `X` of dimension at most one over `k` and a torsion abelian sheaf `F` on the
@@ -212,7 +213,7 @@ theorem baseChangePrimeToCharacteristic : S.BaseChangePrimeToCharacteristic.{u, 
 def TorsionSheafSituation.ProperBaseChangeStatement (S : TorsionSheafSituation.{u, v}) : Prop
 ```
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.properBaseChangeStatement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L133).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.properBaseChangeStatement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L133).
 
 > **Stacks Project, Tag 0A59**, statement (7) of Situation 0A52: if `X` is proper then
 > `H^q(X, F) → H^q(X_{k'}, F|_{X_{k'}})` is bijective for every extension `k'/k` of algebraically
@@ -226,7 +227,7 @@ theorem properBaseChangeStatement : S.ProperBaseChangeStatement.{u, v, w}
 
 [Tag 0A5A](https://stacks.math.columbia.edu/tag/0A5A) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionSheafSituation.isDegreeTwoOpenRestrictionSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L140).
+**`Stacks.EtaleCohomology.TorsionSheafSituation.isDegreeTwoOpenRestrictionSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L140).
 
 > **Stacks Project, Tag 0A5A**, statement (8) of Situation 0A52: `H²(X, F) → H²(U, F)` is
 > surjective for every open `U ⊆ X`.
@@ -237,7 +238,7 @@ theorem isDegreeTwoOpenRestrictionSurjective
     IsDegreeTwoOpenRestrictionSurjective.{u, v, w} S.F
 ```
 
-**`Stacks.EtaleCohomology.IsDegreeTwoOpenRestrictionSurjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/DegreeTwoOpenRestrictionSurjectivity.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/DegreeTwoOpenRestrictionSurjectivity.lean#L48). The attribute's comment: “item (8) of 0A52: H²(X, F) → H²(U, F) surjective for all open U ⊆ X”.
+**`Stacks.EtaleCohomology.IsDegreeTwoOpenRestrictionSurjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/DegreeTwoOpenRestrictionSurjectivity.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/DegreeTwoOpenRestrictionSurjectivity.lean#L48). The attribute's comment: “item (8) of 0A52: H²(X, F) → H²(U, F) surjective for all open U ⊆ X”.
 
 > The restriction map `H²_étale(X, F) → H²_étale(U, F)` is surjective for every open subscheme
 > `U ⊆ X`.
@@ -251,7 +252,7 @@ def IsDegreeTwoOpenRestrictionSurjective
 
 [Tag 0A5B](https://stacks.math.columbia.edu/tag/0A5B) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.curveStatements_constantSheaf_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothConstantCurveStatements.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothConstantCurveStatements.lean#L98).
+**`Stacks.EtaleCohomology.curveStatements_constantSheaf_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothConstantCurveStatements.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothConstantCurveStatements.lean#L98).
 
 > **Stacks Project, Lemma 0A5B.** In Situation 0A52 — `k` algebraically closed, `X` separated,
 > of finite type and of dimension at most one over `k` — assume `X` is smooth over `k` and let
@@ -279,7 +280,7 @@ theorem curveStatements_constantSheaf_of_smooth {k : Type u} [Field k] [IsAlgClo
 
 [Tag 0A47](https://stacks.math.columbia.edu/tag/0A47) in the Stacks Project.
 
-**`Stacks.ArtinSchreier.exact_affineLineBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L113). The attribute's comment: “the exact sequence k[x] → k[x] → H¹(A¹\_k, Z/p) → 0, first arrow f ↦ f^p - f”.
+**`Stacks.ArtinSchreier.exact_affineLineBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L113). The attribute's comment: “the exact sequence k[x] → k[x] → H¹(A¹\_k, Z/p) → 0, first arrow f ↦ f^p - f”.
 
 > **The exact sequence `k[x] ⟶ k[x] ⟶ H¹(𝐀¹_k, 𝐙/p𝐙) ⟶ 0`.** Let `k` be a field of
 > characteristic `p > 0`. The boundary of the Artin–Schreier sequence on the affine line is onto
@@ -293,7 +294,7 @@ theorem exact_affineLineBoundary :
       Function.Surjective (affineLineBoundary.{w} k p)
 ```
 
-**`Stacks.ArtinSchreier.existsUnique_affineLineBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L137). The attribute's comment: “every class of H¹(A¹\_k, Z/p) is the image of exactly one sum over p ∤ n of λ\_n x^n”.
+**`Stacks.ArtinSchreier.existsUnique_affineLineBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L137). The attribute's comment: “every class of H¹(A¹\_k, Z/p) is the image of exactly one sum over p ∤ n of λ\_n x^n”.
 
 > **The representatives, read in cohomology.** Let `k` be an algebraically closed field of
 > characteristic `p > 0`. Every class in `H¹(𝐀¹_k, 𝐙/p𝐙)` is the boundary of exactly one polynomial
@@ -305,7 +306,7 @@ theorem existsUnique_affineLineBoundary_eq [IsAlgClosed k]
     ∃! f : k[X], (∀ n, p ∣ n → f.coeff n = 0) ∧ affineLineBoundary.{w} k p f = c
 ```
 
-**`Stacks.ArtinSchreier.not_surjective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L238). The attribute's comment: “H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not surjective when k ⊊ k'”.
+**`Stacks.ArtinSchreier.not_surjective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L238). The attribute's comment: “H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not surjective when k ⊊ k'”.
 
 > **`H¹(𝐀¹_k, 𝐙/p𝐙) → H¹(𝐀¹_{k'}, 𝐙/p𝐙)` is not surjective.** Let `k` be an algebraically closed
 > field of characteristic `p > 0` and `k'/k` an extension with `k' ≠ k`. Then the restriction map
@@ -325,7 +326,7 @@ theorem not_surjective_etaleCohomologyRestrictionMap_affineLine [IsAlgClosed k]
       (etaleConstantZMod (affineLine k) p) 1)
 ```
 
-**`Stacks.ArtinSchreier.exists_not_bijective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L291). The attribute's comment: “so H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not an isomorphism in general”.
+**`Stacks.ArtinSchreier.exists_not_bijective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L291). The attribute's comment: “so H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not an isomorphism in general”.
 
 > **The restriction map is not an isomorphism in general.** For every algebraically closed field
 > `k` of characteristic `p > 0` there is an algebraically closed extension `k'/k` — an algebraic
@@ -342,7 +343,7 @@ theorem exists_not_bijective_etaleCohomologyRestrictionMap_affineLine [IsAlgClos
           (etaleConstantZMod (affineLine k) p) 1)
 ```
 
-**`Stacks.ArtinSchreier.bijective_etaleCohomologyRestrictionMap_affineLine_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L338). The attribute's comment: “only in characteristic p with p-power torsion: bijective for Z/n, n invertible in k”.
+**`Stacks.ArtinSchreier.bijective_etaleCohomologyRestrictionMap_affineLine_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L338). The attribute's comment: “only in characteristic p with p-power torsion: bijective for Z/n, n invertible in k”.
 
 > **The phenomenon only occurs with `p`-power torsion coefficients.** Let `k'/k` be an
 > extension of algebraically closed fields and let `n` be invertible in `k`. Then
@@ -361,7 +362,7 @@ theorem bijective_etaleCohomologyRestrictionMap_affineLine_of_isUnit {n : ℕ} (
         (AddCommGrpCat.of (ULift.{max (u + 1) v} (ZMod n)))) q)
 ```
 
-**`Stacks.ArtinSchreier.not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L223). The attribute's comment: “π₁(A¹\_\{k'}) → π₁(A¹\_k) is not an isomorphism for algebraically closed k ⊊ k'”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.10), “partial”; SGA 1 XIII (2.13), “partial”.
+**`Stacks.ArtinSchreier.not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L223). The attribute's comment: “π₁(A¹\_\{k'}) → π₁(A¹\_k) is not an isomorphism for algebraically closed k ⊊ k'”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.10), “partial”; SGA 1 XIII (2.13), “partial”.
 
 > **[Stacks, Tag 0A47]: `π₁(𝐀¹_{k'}) → π₁(𝐀¹_k)` is not an isomorphism.** Let `k'/k` be an
 > extension of algebraically closed fields of characteristic `p > 0` with `k' ≠ k`. Then for every
@@ -376,7 +377,7 @@ theorem not_bijective_etaleFundamentalGroupMap_affineLine {p : ℕ} [hp : Fact p
       (etaleFundamentalGroupMap (scalarExtensionFst k k' (affineLineStructure k)) x)
 ```
 
-**`Stacks.ArtinSchreier.exists_not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L273). The attribute's comment: “so the étale fundamental group of A¹ depends on the algebraically closed field”. References: SGA 1 IX (6.3); SGA 1 X (1.10), “partial”.
+**`Stacks.ArtinSchreier.exists_not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L273). The attribute's comment: “so the étale fundamental group of A¹ depends on the algebraically closed field”. References: SGA 1 IX (6.3); SGA 1 X (1.10), “partial”.
 
 > **[Stacks, Tag 0A47]: the étale fundamental group of the affine line depends on the
 > algebraically closed ground field.** For every algebraically closed field `k` of characteristic
@@ -397,7 +398,7 @@ theorem exists_not_bijective_etaleFundamentalGroupMap_affineLine {p : ℕ} [Fact
           (etaleFundamentalGroupMap (scalarExtensionFst k k' (affineLineStructure k)) x)
 ```
 
-**`Polynomial.existsUnique_sub_mem_range_ringArtinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L171). The attribute's comment: “the polynomials sum over p ∤ n of λ\_n x^n represent the cokernel of f ↦ f^p - f”.
+**`Polynomial.existsUnique_sub_mem_range_ringArtinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L171). The attribute's comment: “the polynomials sum over p ∤ n of λ\_n x^n represent the cokernel of f ↦ f^p - f”.
 
 > **[Stacks, Tag 0A47], the representatives of the cokernel.** Let `k` be an algebraically
 > closed field of characteristic `p > 0`. Every polynomial `g ∈ k[x]` is congruent modulo the image
@@ -412,7 +413,7 @@ theorem existsUnique_sub_mem_range_ringArtinSchreier [IsAlgClosed k] (g : k[X]) 
       g - f ∈ (ringArtinSchreier k[X] p).range
 ```
 
-**`Polynomial.exists_sub_mem_range_ringArtinSchreier_of_perfectRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L225). The attribute's comment: “if k is not algebraically closed, constants have to be added (k perfect)”.
+**`Polynomial.exists_sub_mem_range_ringArtinSchreier_of_perfectRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L225). The attribute's comment: “if k is not algebraically closed, constants have to be added (k perfect)”.
 
 > **[Stacks, Tag 0A47], the parenthetical case of a field that is not algebraically closed.**
 > Let `k` be a perfect field of characteristic `p > 0`. Then the representatives of the cokernel of
@@ -440,7 +441,7 @@ theorem exists_sub_mem_range_ringArtinSchreier_of_perfectRing [PerfectRing k p] 
 
 [Tag 0A5C](https://stacks.math.columbia.edu/tag/0A5C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.CurveStatements.of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean#L101). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}”.
+**`Stacks.EtaleCohomology.CurveStatements.of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean#L101). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}”.
 
 > Let `0 → F₁ → F → F₂ → 0` be a short exact sequence of abelian sheaves on the small étale
 > site of a Noetherian scheme `X` over a field. If statements (1) -- (8) of Situation 0A52 hold for
@@ -452,7 +453,7 @@ theorem CurveStatements.of_shortExact (hS : S.ShortExact)
     CurveStatements.{u, 0, w} π S.X₂
 ```
 
-**`Stacks.EtaleCohomology.curveCohomologyStatements_X₂_of_shortExact_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L210). The attribute's comment: “the eight statements of Situation 0A52 pass to the middle term of a short exact sequence of abelian sheaves, with constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
+**`Stacks.EtaleCohomology.curveCohomologyStatements_X₂_of_shortExact_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L211). The attribute's comment: “the eight statements of Situation 0A52 pass to the middle term of a short exact sequence of abelian sheaves, with constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
 
 > **Stacks Project, Tag 0A5C.** Let `X` be a Noetherian scheme, let `π` be a morphism from `X`
 > to the spectrum of a field, let `i` be a morphism of schemes to `X`, and let
@@ -493,7 +494,7 @@ theorem curveCohomologyStatements_X₂_of_shortExact_isConstructible [IsNoetheri
       (IsConstructibleEtaleSiteAbelianSheaf B X) S.X₂
 ```
 
-**`Stacks.EtaleCohomology.finite_etaleCohomology_X₂_of_shortExact_of_isPrimeToCharacteristicTorsion_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L236). The attribute's comment: “statement (4): the finiteness of etale cohomology for constructible coefficients of torsion prime to the characteristic passes to the middle term of a short exact sequence, with the constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
+**`Stacks.EtaleCohomology.finite_etaleCohomology_X₂_of_shortExact_of_isPrimeToCharacteristicTorsion_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L237). The attribute's comment: “statement (4): the finiteness of etale cohomology for constructible coefficients of torsion prime to the characteristic passes to the middle term of a short exact sequence, with the constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
 
 > **Statement (4) of Situation 0A52 passes to extensions, for constructible coefficients.** Let
 > `X` be a Noetherian scheme, let `p` be a natural number — the characteristic of the base field in
@@ -522,7 +523,7 @@ theorem finite_etaleCohomology_X₂_of_shortExact_of_isPrimeToCharacteristicTors
     Finite (Sheaf.H.{w} S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.finite_etaleCohomology_X₂_of_shortExact_of_isProper_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L266). The attribute's comment: “statement (5): the finiteness of etale cohomology for constructible coefficients over a proper scheme passes to the middle term of a short exact sequence, with the constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
+**`Stacks.EtaleCohomology.finite_etaleCohomology_X₂_of_shortExact_of_isProper_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactCurveStatements.lean#L267). The attribute's comment: “statement (5): the finiteness of etale cohomology for constructible coefficients over a proper scheme passes to the middle term of a short exact sequence, with the constructibility of the sub- and the quotient sheaf supplied by Proposition 09BH (2)”.
 
 > **Statement (5) of Situation 0A52 passes to extensions, for constructible coefficients.** Let
 > `X` be a Noetherian scheme, let `π` be its structure morphism to the spectrum of a field, and let
@@ -546,7 +547,7 @@ theorem finite_etaleCohomology_X₂_of_shortExact_of_isProper_isConstructible
     Finite (Sheaf.H.{w} S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L72). The attribute's comment: “vanishing”.
+**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L72). The attribute's comment: “vanishing”.
 
 > If the étale cohomology of the sub- and the quotient sheaf of a short exact sequence of abelian
 > sheaves vanishes above degree two, then so does that of the middle sheaf.
@@ -559,7 +560,7 @@ theorem subsingleton_etaleCohomology_X₂_of_shortExact (hS : S.ShortExact)
     Subsingleton (Sheaf.H.{w} S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L85). The attribute's comment: “affine vanishing”.
+**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L85). The attribute's comment: “affine vanishing”.
 
 > If, for an affine scheme, the étale cohomology of the sub- and the quotient sheaf of a short
 > exact sequence of abelian sheaves vanishes above degree one, then so does that of the middle
@@ -573,7 +574,7 @@ theorem subsingleton_etaleCohomology_X₂_of_shortExact_of_isAffine (hS : S.Shor
     Subsingleton (Sheaf.H.{w} S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact_of_isPrimePowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L98). The attribute's comment: “characteristic-primary vanishing”.
+**`Stacks.EtaleCohomology.subsingleton_etaleCohomology_X₂_of_shortExact_of_isPrimePowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L98). The attribute's comment: “characteristic-primary vanishing”.
 
 > Let `l` be a natural number. If the vanishing of étale cohomology above degree one for
 > `l`-power torsion coefficients holds for the sub- and the quotient sheaf of a short exact sequence
@@ -590,7 +591,7 @@ theorem subsingleton_etaleCohomology_X₂_of_shortExact_of_isPrimePowerTorsion
     Subsingleton (Sheaf.H.{w} S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L171). The attribute's comment: “prime-to-characteristic base change”.
+**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L171). The attribute's comment: “prime-to-characteristic base change”.
 
 > Let `p` be a natural number and let `i` be a morphism of schemes. If the bijectivity of
 > restriction along `i` for coefficients of torsion prime to `p` holds in every degree for the sub-
@@ -608,7 +609,7 @@ theorem bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isPrimeToC
     Function.Bijective (etaleCohomologyRestrictionMap.{u, v, w} i S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L187). The attribute's comment: “proper base change”.
+**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L187). The attribute's comment: “proper base change”.
 
 > Let `π` be a morphism from `X` to the spectrum of a field `k` and let `i` be a morphism of
 > schemes. If the bijectivity of restriction along `i` when `π` is proper holds in every degree for
@@ -624,7 +625,7 @@ theorem bijective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_isProper
     Function.Bijective (etaleCohomologyRestrictionMap.{u, v, w} i S.X₂ q)
 ```
 
-**`Stacks.EtaleCohomology.surjective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L200). The attribute's comment: “restriction surjectivity”.
+**`Stacks.EtaleCohomology.surjective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ShortExactExtension.lean#L200). The attribute's comment: “restriction surjectivity”.
 
 > Let `i` be a morphism of schemes. If restriction along `i` is surjective in degree two for the
 > sub- and the quotient sheaf of a short exact sequence of abelian sheaves, and the étale
@@ -643,7 +644,7 @@ theorem surjective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_vanishing
 
 [Tag 0A5D](https://stacks.math.columbia.edu/tag/0A5D) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.CurveStatements.directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean#L104). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}; only f finite and X Noetherian are used”.
+**`Stacks.EtaleCohomology.CurveStatements.directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean#L102). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}; only f finite and X Noetherian are used”.
 
 > **Stacks Project, Lemma 0A5D.** Let `f : X ⟶ Y` be a finite morphism of schemes over a field
 > `k`, with `X` Noetherian, and let `F` be an abelian sheaf on `X_étale`. If statements (1) -- (8)
@@ -658,7 +659,7 @@ theorem CurveStatements.directImage_of_isFinite [IsNoetherian X]
     CurveStatements.{u, 0, u + 1} π ((etaleAbelianDirectImage.{u, 0} f).obj F)
 ```
 
-**`Stacks.EtaleCohomology.curveCohomologyStatements_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImage.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImage.lean#L303). The attribute's comment: “the eight statements of Situation 0A52 pass to a finite direct image, over the Leray comparison and over the transfer of the torsion and constructibility side conditions”.
+**`Stacks.EtaleCohomology.curveCohomologyStatements_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImage.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImage.lean#L303). The attribute's comment: “the eight statements of Situation 0A52 pass to a finite direct image, over the Leray comparison and over the transfer of the torsion and constructibility side conditions”.
 
 > Let `f : X ⟶ Y` be a finite morphism of schemes and let `F` be an abelian sheaf on the small
 > étale site of `X`. If the eight statements of Situation 0A52 hold for `F`, relative to the
@@ -694,7 +695,7 @@ theorem curveCohomologyStatements_smallEtaleDirectImageAb {k : Type u} [Field k]
       ((smallEtaleDirectImageAb f).obj F)
 ```
 
-**`Stacks.EtaleCohomology.curveCohomologyAssertions_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean#L498). The attribute's comment: “statements (1)-(8) of Situation 0A52 pass to f\_* for finite f”.
+**`Stacks.EtaleCohomology.curveCohomologyAssertions_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean#L498). The attribute's comment: “statements (1)-(8) of Situation 0A52 pass to f\_* for finite f”.
 
 > Let `k` be a field, let `f : X ⟶ Y` be a finite morphism of schemes of finite type over `k`,
 > and let `F` be an abelian sheaf on the small étale site of `X`. If statements (1) – (8) of
@@ -718,7 +719,7 @@ theorem curveCohomologyAssertions_smallEtaleDirectImageAb (π : Y ⟶ Spec (.of 
 
 [Tag 0GJA](https://stacks.math.columbia.edu/tag/0GJA) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.curveStatements_iff_curveStatements_extensionByZero_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L163). The attribute's comment: “for every torsion sheaf F, not only constructible ones”.
+**`Stacks.EtaleCohomology.curveStatements_iff_curveStatements_extensionByZero_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveCohomologyTheorem.lean#L163). The attribute's comment: “for every torsion sheaf F, not only constructible ones”.
 
 > In Situation 0A52 let `j : X' → X` be the inclusion of a dense open subscheme. Then statements
 > (1) -- (8) hold for `F` if and only if they hold for `j_! j^{-1} F`.
@@ -740,7 +741,7 @@ theorem curveStatements_iff_curveStatements_extensionByZero_of_dense
 
 [Tag 03SG](https://stacks.math.columbia.edu/tag/03SG) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.curveStatements_extensionByZero_zmod_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothExtensionByZeroCurveStatements.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothExtensionByZeroCurveStatements.lean#L66).
+**`Stacks.EtaleCohomology.curveStatements_extensionByZero_zmod_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothExtensionByZeroCurveStatements.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/SmoothExtensionByZeroCurveStatements.lean#L65).
 
 > **Stacks Project, Lemma 03SG.** In Situation 0A52 — `k` algebraically closed, `X` separated,
 > of finite type and of dimension at most one over `k` — assume `X` is smooth over `k`. Let
@@ -768,7 +769,7 @@ theorem curveStatements_extensionByZero_zmod_of_smooth {k : Type u} [Field k] [I
 
 [Tag 0A3Q](https://stacks.math.columbia.edu/tag/0A3Q) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.curveStatements_extensionByZero_constantSheaf_of_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ReducedExtensionByZeroStatements.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ReducedExtensionByZeroStatements.lean#L82).
+**`Stacks.EtaleCohomology.curveStatements_extensionByZero_constantSheaf_of_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ReducedExtensionByZeroStatements.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ReducedExtensionByZeroStatements.lean#L82).
 
 > **Stacks Project, Lemma 0A3Q.** In Situation 0A52 — `k` algebraically closed, `X` separated,
 > of finite type and of dimension at most one over `k` — assume `X` is reduced. Let `j : U → X` be
@@ -796,7 +797,7 @@ theorem curveStatements_extensionByZero_constantSheaf_of_prime {k : Type u} [Fie
 
 [Tag 03SD](https://stacks.math.columbia.edu/tag/03SD) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.curveStatements_extensionByZero_forget₂_of_isFiniteLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/LocallyConstantCurveStatements.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/LocallyConstantCurveStatements.lean#L63). References: SGA 4 XVI (5.2), “partial”.
+**`Stacks.EtaleCohomology.curveStatements_extensionByZero_forget₂_of_isFiniteLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/LocallyConstantCurveStatements.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/LocallyConstantCurveStatements.lean#L62). References: SGA 4 XVI (5.2), “partial”.
 
 > **Stacks Project, Lemma 03SD.** In Situation 0A52 — `k` algebraically closed, `X` separated,
 > of finite type and of dimension at most one over `k` — assume `X` is reduced. Let `j : U ⟶ X` be
@@ -828,7 +829,7 @@ theorem curveStatements_extensionByZero_forget₂_of_isFiniteLocallyConstant {k 
 
 [Tag 03SC](https://stacks.math.columbia.edu/tag/03SC) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.torsionCurveAssertions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ScalarExtensionColimit.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ScalarExtensionColimit.lean#L257). References: SGA 4 IX (5.7), “special case”; SGA 4 X (5.2), “special case”; SGA 4 XIV (1.2), “special case”; SGA 4½ Arcata (3.3.6); SGA 5 VI (2.2.1), “special case”.
+**`Stacks.EtaleCohomology.torsionCurveAssertions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ScalarExtensionColimit.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/ScalarExtensionColimit.lean#L257). References: SGA 4 IX (5.7), “special case”; SGA 4 X (5.2), “special case”; SGA 4 XIV (1.2), “special case”; SGA 4½ Arcata (3.3.6); SGA 5 VI (2.2.1), “special case”.
 
 > **Stacks Project, Tag 03SC.** Let `k` be an algebraically closed field, let `X` be a separated
 > scheme of finite type over `k` of dimension at most one, with structure morphism `f`, and let `F`
@@ -861,7 +862,7 @@ theorem torsionCurveAssertions {k : Type u} [Field k] [IsAlgClosed k] {X : Schem
 
 [Tag 03RT](https://stacks.math.columbia.edu/tag/03RT) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.subsingleton_sheafH_of_three_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean#L263). The attribute's comment: “H^q(X, F) = 0 for q ≥ 3”. References: SGA 4 XVII (5.2.8.1), “special case”; SGA 4½ Arcata (3.3.6), “more general”.
+**`Stacks.EtaleCohomology.subsingleton_sheafH_of_three_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean#L263). The attribute's comment: “H^q(X, F) = 0 for q ≥ 3”. References: SGA 4 XVII (5.2.8.1), “special case”; SGA 4½ Arcata (3.3.6), “more general”.
 
 > **Stacks Project, Tag 03RT.** Let `X` be a scheme of finite type and of dimension at most one
 > over an algebraically closed field `k`, and let `F` be a torsion abelian sheaf on `X_étale`. Then
@@ -875,7 +876,7 @@ theorem subsingleton_sheafH_of_three_le (q : ℕ) (hq : 3 ≤ q) :
     Subsingleton (Sheaf.H.{w} F q)
 ```
 
-**`Stacks.EtaleCohomology.subsingleton_sheafH_two_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean#L289). The attribute's comment: “H^2(X, F) = 0 if X is affine”. References: SGA 4½ Arcata (3.3.6), “(ii), degree q=2”.
+**`Stacks.EtaleCohomology.subsingleton_sheafH_two_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/NonseparatedCurveVanishing.lean#L289). The attribute's comment: “H^2(X, F) = 0 if X is affine”. References: SGA 4½ Arcata (3.3.6), “(ii), degree q=2”.
 
 > **Stacks Project, Tag 03RT.** Let `X` be an affine scheme of finite type and of dimension at
 > most one over an algebraically closed field `k`, and let `F` be a torsion abelian sheaf on
@@ -893,7 +894,7 @@ theorem subsingleton_sheafH_two_of_isAffine [IsAffine X] : Subsingleton (Sheaf.H
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.etaleCohomologyBaseChangeMap_bijective_of_isSepClosed`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L80), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L51) (StacksFrontier).
+- [`Stacks.EtaleCohomology.etaleCohomologyBaseChangeMap_bijective_of_isSepClosed`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L80), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeStacksTags.lean#L47) (StacksFrontier).
 
 ## Depends on
 
@@ -902,4 +903,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.83, Tag 03SB](https://stacks.math.columbia.edu/tag/03SB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Perfect matchings in dense uniform hypergraphs
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html).
 
 ## Perfect matching in uniform hypergraphs with a codegree condition
 
@@ -19,7 +19,7 @@ $(k-1)$-element subset of $\{0, \dots, n-1\}$ is contained in at least $cn$ edge
 hypergraph $H$ whose edges are the vertex sets of the lists in $E$, and $H$ has a perfect
 matching, that is, $n/k$ pairwise disjoint edges. Inputs that do not decode are rejected.
 
-Formalized by `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.perfectMatchingProblem`, a definition declared in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#perfect-matching-problem).
+Formalized by `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.perfectMatchingProblem`, a definition declared in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#perfect-matching-problem).
 
 ## Ruciński's question on perfect matchings in dense hypergraphs
 
@@ -32,7 +32,7 @@ $cn$ edges of $H$, and $H$ has a perfect matching; inputs that do not decode are
 the positive answer to Ruciński's question (Oberwolfach Combinatorics, Probability and Computing,
 2006, Problem 5).
 
-Formalized by `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.denseHypergraphPerfectMatchingInP`, a definition declared in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#dense-hypergraph-perfect-matching-in-p).
+Formalized by `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.denseHypergraphPerfectMatchingInP`, a definition declared in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#dense-hypergraph-perfect-matching-in-p).
 
 ## Perfect matchings in dense hypergraphs are decidable in polynomial time
 
@@ -48,7 +48,7 @@ k-uniform hypergraphs, Trans. Amer. Math. Soc. 369 (2017), 5197-5218, arXiv:1409
 main theorem (codegree ≥ n/k + γn) and Han main theorem (codegree ≥ n/k): polynomial-time decision,
 https://arxiv.org/abs/1409.5931.
 
-Stated but not proved: `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.denseHypergraphPerfectMatchingInP_holds` is written with `theorem_wanted` in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#dense-hypergraph-perfect-matching-in-p-h).
+Stated but not proved: `MathlibExt.Complexity.DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.denseHypergraphPerfectMatchingInP_holds` is written with `theorem_wanted` in [WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/DenseHypergraphPerfectMatchingOWR1386Problem015Wanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html#dense-hypergraph-perfect-matching-in-p-h).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Perfect matchings in dense uniform hypergraphs](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/perfect-matchings-in-dense-uniform-hypergraphs)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Triangulated.RightOrthogonal.inRightOrthogonal_iff_postcomp_bijective, Stacks.Triangulated.AdmissibleSubcategories.isLeftOrthogonal_iff_bijective_precompMap, CategoryTheory.ObjectProperty.isStableUnderRetracts_rightOrthogonal_and_leftOrthogonal, CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_of_le_rightOrthogonal, CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_leftOrthogonal_self, CategoryTheory.ObjectProperty.isLeftAdjoint_ι_iff_extensionProduct_rightOrthogonal_eq_top_and_isSaturated, CategoryTheory.ObjectProperty.isRightAdjoint_ι_iff_extensionProduct_leftOrthogonal_self_eq_top_and_isSaturated, CategoryTheory.ObjectProperty.IsRightAdmissible
+lean: Stacks.Triangulated.RightOrthogonal.inRightOrthogonal_iff_postcomp_bijective, Stacks.Triangulated.AdmissibleSubcategories.isLeftOrthogonal_iff_bijective_precompMap, CategoryTheory.ObjectProperty.isClosedUnderIsomorphisms_isSaturated_isTriangulated_rightOrthogonal_and_leftOrthogonal, CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_of_le_rightOrthogonal, CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_leftOrthogonal_self, CategoryTheory.ObjectProperty.isLeftAdjoint_ι_iff_extensionProduct_rightOrthogonal_eq_top_and_isSaturated, CategoryTheory.ObjectProperty.isRightAdjoint_ι_iff_extensionProduct_leftOrthogonal_self_eq_top_and_isSaturated, CategoryTheory.ObjectProperty.IsRightAdmissible
 statement: formalized
 proof: formalized
 ---
 
 # 13.40 Admissible subcategories
 
-Section 13.40 of the Stacks Project, [Tag 0CQP](https://stacks.math.columbia.edu/tag/0CQP). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.40 of the Stacks Project, [Tag 0CQP](https://stacks.math.columbia.edu/tag/0CQP). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CQQ, a lemma
 
 [Tag 0CQQ](https://stacks.math.columbia.edu/tag/0CQQ) in the Stacks Project.
 
-**`Stacks.Triangulated.RightOrthogonal.inRightOrthogonal_iff_postcomp_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L1012).
+**`Stacks.Triangulated.RightOrthogonal.inRightOrthogonal_iff_postcomp_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 1050](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L1050).
 
 > Stacks Tag 0CQQ / Lemma 13.40.2.
 >
@@ -47,7 +47,7 @@ theorem inRightOrthogonal_iff_postcomp_bijective
 
 [Tag 0H0M](https://stacks.math.columbia.edu/tag/0H0M) in the Stacks Project.
 
-**`Stacks.Triangulated.AdmissibleSubcategories.isLeftOrthogonal_iff_bijective_precompMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 1245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L1245).
+**`Stacks.Triangulated.AdmissibleSubcategories.isLeftOrthogonal_iff_bijective_precompMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 1283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L1283).
 
 > **Theorem (Stacks Tag 0H0M, Lemma 13.40.3).**
 > Let `B ⊂ D` be a full subcategory invariant under all shifts, and let
@@ -67,23 +67,36 @@ theorem isLeftOrthogonal_iff_bijective_precompMap
 
 [Tag 0FXC](https://stacks.math.columbia.edu/tag/0FXC) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isStableUnderRetracts_rightOrthogonal_and_leftOrthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L158). References: SGA 4½ Etat 0 (2.6.2), “thickness”.
+**`CategoryTheory.ObjectProperty.isClosedUnderIsomorphisms_isSaturated_isTriangulated_rightOrthogonal_and_leftOrthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 871](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L871). References: SGA 4½ Etat 0 (2.6.2), “thickness”.
 
-> Let `C` be a category with zero morphisms and `P : ObjectProperty C` a property of its
-> objects. Then both the right orthogonal `P.rightOrthogonal` and the left orthogonal
-> `P.leftOrthogonal` are stable under retracts; in particular they are saturated, i.e. thick, and
-> strictly full subcategories of `C`.
+> Let `C` be a triangulated category and let `A` be a full subcategory of `C` invariant under
+> all shifts. Then both the right orthogonal `A.rightOrthogonal` and the left orthogonal
+> `A.leftOrthogonal` of `A` are strictly full (`ObjectProperty.IsClosedUnderIsomorphisms`),
+> saturated (`ObjectProperty.IsSaturated`, [Stacks, Tag 05RB]), triangulated subcategories of `C`:
+> each is a pre-triangulated subcategory (`ObjectProperty.IsTriangulated`) whose full subcategory is
+> a triangulated category.
+>
+> Closure under isomorphisms and the triangulated structure are Mathlib's instances on the
+> orthogonals of a shift-invariant property; saturation follows from the stability of the
+> orthogonals under retracts, `isStableUnderRetracts_rightOrthogonal_and_leftOrthogonal`, a direct
+> summand being a retract.
 
 ```lean
-theorem isStableUnderRetracts_rightOrthogonal_and_leftOrthogonal (P : ObjectProperty C) :
-    P.rightOrthogonal.IsStableUnderRetracts ∧ P.leftOrthogonal.IsStableUnderRetracts
+theorem isClosedUnderIsomorphisms_isSaturated_isTriangulated_rightOrthogonal_and_leftOrthogonal
+    (A : ObjectProperty C) [A.IsStableUnderShift ℤ] :
+    (A.rightOrthogonal.IsClosedUnderIsomorphisms ∧ A.rightOrthogonal.IsSaturated ∧
+        A.rightOrthogonal.IsTriangulated ∧
+        CategoryTheory.IsTriangulated A.rightOrthogonal.FullSubcategory) ∧
+      (A.leftOrthogonal.IsClosedUnderIsomorphisms ∧ A.leftOrthogonal.IsSaturated ∧
+        A.leftOrthogonal.IsTriangulated ∧
+        CategoryTheory.IsTriangulated A.leftOrthogonal.FullSubcategory)
 ```
 
 ## Tag 0CQR, a lemma
 
 [Tag 0CQR](https://stacks.math.columbia.edu/tag/0CQR) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_of_le_rightOrthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L580).
+**`CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_of_le_rightOrthogonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 587](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L587).
 
 > Let `C` be a triangulated category, let `A` and `B` be triangulated subcategories of `C`
 > with `B` contained in the right orthogonal of `A`. Then the objects `X` of `C` that fit in a
@@ -103,7 +116,7 @@ theorem isTriangulated_extensionProduct_of_le_rightOrthogonal
 
 [Tag 0H0N](https://stacks.math.columbia.edu/tag/0H0N) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_leftOrthogonal_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L599).
+**`CategoryTheory.ObjectProperty.isTriangulated_extensionProduct_leftOrthogonal_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L606).
 
 > Let `C` be a triangulated category and let `B` be a triangulated subcategory of `C`. Then
 > the objects `X` of `C` that fit in a distinguished triangle `A ⟶ X ⟶ B' ⟶ A⟦1⟧` with `A` in the
@@ -121,7 +134,7 @@ theorem isTriangulated_extensionProduct_leftOrthogonal_self (B : ObjectProperty 
 
 [Tag 0CQS](https://stacks.math.columbia.edu/tag/0CQS) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isLeftAdjoint_ι_iff_extensionProduct_rightOrthogonal_eq_top_and_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L342).
+**`CategoryTheory.ObjectProperty.isLeftAdjoint_ι_iff_extensionProduct_rightOrthogonal_eq_top_and_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L349).
 
 > Let `C` be a pretriangulated category and let `A : ObjectProperty C` be invariant under all
 > shifts, for instance a triangulated subcategory of `C`. Then the inclusion
@@ -144,7 +157,7 @@ theorem isLeftAdjoint_ι_iff_extensionProduct_rightOrthogonal_eq_top_and_isSatur
 
 [Tag 0CQT](https://stacks.math.columbia.edu/tag/0CQT) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isRightAdjoint_ι_iff_extensionProduct_leftOrthogonal_self_eq_top_and_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L484).
+**`CategoryTheory.ObjectProperty.isRightAdjoint_ι_iff_extensionProduct_leftOrthogonal_self_eq_top_and_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L491).
 
 > Let `C` be a pretriangulated category and let `B : ObjectProperty C` be invariant under all
 > shifts, for instance a triangulated subcategory of `C`. Then the inclusion
@@ -167,7 +180,7 @@ theorem isRightAdjoint_ι_iff_extensionProduct_leftOrthogonal_self_eq_top_and_is
 
 [Tag 0FXD](https://stacks.math.columbia.edu/tag/0FXD) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.IsRightAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L271).
+**`CategoryTheory.ObjectProperty.IsRightAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L278).
 
 > A property `A` of the objects of a pretriangulated category `C` is *right admissible* if it is
 > strictly full (closed under isomorphisms) and triangulated, and the inclusion
@@ -180,7 +193,7 @@ public class IsRightAdmissible (A : ObjectProperty C) : Prop extends
   A.IsClosedUnderIsomorphisms, A.IsTriangulated, A.ι.IsLeftAdjoint
 ```
 
-**`CategoryTheory.ObjectProperty.IsLeftAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L280).
+**`CategoryTheory.ObjectProperty.IsLeftAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L287).
 
 > A property `A` of the objects of a pretriangulated category `C` is *left admissible* if it is
 > strictly full (closed under isomorphisms) and triangulated, and the inclusion
@@ -193,7 +206,7 @@ public class IsLeftAdmissible (A : ObjectProperty C) : Prop extends
   A.IsClosedUnderIsomorphisms, A.IsTriangulated, A.ι.IsRightAdjoint
 ```
 
-**`CategoryTheory.ObjectProperty.IsTwoSidedAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L287).
+**`CategoryTheory.ObjectProperty.IsTwoSidedAdmissible`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L294).
 
 > A property `A` of the objects of a pretriangulated category `C` is *two-sided admissible* if
 > it is both right and left admissible, i.e. `A` is a strictly full triangulated subcategory whose
@@ -208,7 +221,7 @@ public class IsTwoSidedAdmissible (A : ObjectProperty C) : Prop extends
 
 [Tag 0H0P](https://stacks.math.columbia.edu/tag/0H0P) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.tfae_isRightAdmissible_isLeftAdmissible_extensionProduct_and_isEquivalence_ι_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L820). References: SGA 4½ Etat 0 (2.6.6).
+**`CategoryTheory.ObjectProperty.tfae_isRightAdmissible_isLeftAdmissible_extensionProduct_and_isEquivalence_ι_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean, line 827](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/AdmissibleSubcategories.lean#L827). References: SGA 4½ Etat 0 (2.6.6).
 
 > Let `C` be a triangulated category and let `A B : ObjectProperty C` be strictly full and
 > invariant under all shifts. Then: `A` is right admissible with `B = Aᗮ` if and only if `B` is left
@@ -242,4 +255,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.40, Tag 0CQP](https://stacks.math.columbia.edu/tag/0CQP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

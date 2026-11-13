@@ -7,7 +7,7 @@ statement: formalized
 
 # Slice knots
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html).
 
 ## The Conway knot is topologically slice
 
@@ -25,7 +25,7 @@ topologically slice, since the Conway knot has $\Delta_K(t) = 1$.
 
 - Freedman, *The topology of four-dimensional manifolds*, J. Diff. Geom. 17 (1982). See also Freedman-Quinn, *Topology of 4-Manifolds*, Princeton 1990. Problem `conway_knot_topologically_slice` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.ConwayTopologicallySliceWanted.KnotTheory.conway_knot_topologically_slice` is written with `theorem_wanted` in [WantedExt/Topology/ConwayTopologicallySliceWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ConwayTopologicallySliceWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-topologically-slice).
+Stated but not proved: `MathlibExt.Topology.ConwayTopologicallySliceWanted.KnotTheory.conway_knot_topologically_slice` is written with `theorem_wanted` in [WantedExt/Topology/ConwayTopologicallySliceWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ConwayTopologicallySliceWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-topologically-slice).
 
 ## The Conway knot polyline is a simple closed curve
 
@@ -41,7 +41,7 @@ edges meet only at their shared vertex.
 
 - https://arxiv.org/abs/1808.02923. Problem `conway_knot_not_smoothly_slice` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.PiccirilloWanted.KnotTheory.conwayKnot_isSimple` is written with `theorem_wanted` in [WantedExt/Topology/PiccirilloWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/PiccirilloWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-is-simple).
+Stated but not proved: `MathlibExt.Topology.PiccirilloWanted.KnotTheory.conwayKnot_isSimple` is written with `theorem_wanted` in [WantedExt/Topology/PiccirilloWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/PiccirilloWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-is-simple).
 
 ## The Conway knot is not smoothly slice (Piccirillo)
 
@@ -60,7 +60,7 @@ circle onto the image of $J$.
 
 - https://arxiv.org/abs/1808.02923. Problem `conway_knot_not_smoothly_slice` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.PiccirilloWanted.KnotTheory.conway_knot_not_smoothly_slice` is written with `theorem_wanted` in [WantedExt/Topology/PiccirilloWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/PiccirilloWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-not-smoothly-slice).
+Stated but not proved: `MathlibExt.Topology.PiccirilloWanted.KnotTheory.conway_knot_not_smoothly_slice` is written with `theorem_wanted` in [WantedExt/Topology/PiccirilloWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/PiccirilloWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#conway-knot-not-smoothly-slice).
 
 ## A topologically slice knot that is not smoothly slice
 
@@ -75,7 +75,7 @@ $\mathbb{R}^3 \times [0, \infty)$.
 
 - Casson, 1980s (unpublished); Akbulut-Matveyev, *A convex decomposition theorem for 4-manifolds*, IMRN 1998. See also Hedden-Kirk-Livingston, *Non-slice linear combinations of algebraic knots*, J. Eur. Math. Soc. 14 (2012). Problem `exists_topologically_slice_not_smoothly_slice` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.SliceDichotomyWanted.KnotTheory.exists_topologically_slice_not_smoothly_slice` is written with `theorem_wanted` in [WantedExt/Topology/SliceDichotomyWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/SliceDichotomyWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#exists-topologically-slice-not-smoothly).
+Stated but not proved: `MathlibExt.Topology.SliceDichotomyWanted.KnotTheory.exists_topologically_slice_not_smoothly_slice` is written with `theorem_wanted` in [WantedExt/Topology/SliceDichotomyWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/SliceDichotomyWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html#exists-topologically-slice-not-smoothly).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Slice knots](https://deicyde.github.io/atlas-lean/roadmap/Topology/knot-theory/slice-knots/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/knot-theory/slice-knots)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/knot-theory/slice-knots)

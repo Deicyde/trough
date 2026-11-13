@@ -7,7 +7,7 @@ statement: formalized
 
 # Unbounded-error probabilistic time (PP)
 
-4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html).
+4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html).
 
 ## The MAJSAT language
 
@@ -19,7 +19,7 @@ $a : \{0, \dots, n-1\} \to \{\mathrm{true}, \mathrm{false}\}$ satisfy $\varphi$,
 their number exceeds $2^n$. Only the length of $u$ matters, and a bitstring that does not decode
 is rejected.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MAJSATPPComplete.majSatDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#maj-sat-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.MAJSATPPComplete.majSatDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#maj-sat-dec).
 
 ## MAJSAT is PP-complete
 
@@ -30,7 +30,7 @@ a polynomial-time many-one reduction to MAJSAT.
 
 - J. Gill, "Computational complexity of probabilistic Turing machines", SIAM Journal on Computing 6 (1977), 675-695.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MAJSATPPComplete.majsat_pp_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#majsat-pp-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.MAJSATPPComplete.majsat_pp_complete` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/MAJSATPPCompleteWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#majsat-pp-complete).
 
 ## NP is contained in PP
 
@@ -41,7 +41,7 @@ decision problems decided in probabilistic polynomial time with unbounded error.
 
 - J. Gill, "Computational complexity of probabilistic Turing machines" (1977).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NPSubsetPP.np_subset_pp` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NPSubsetPPWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NPSubsetPPWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#np-subset-pp).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NPSubsetPP.np_subset_pp` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NPSubsetPPWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NPSubsetPPWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#np-subset-pp).
 
 ## PP is contained in PSPACE
 
@@ -52,7 +52,7 @@ decided with unbounded error in probabilistic polynomial time, belongs to PSPACE
 
 - J. Gill, "Computational complexity of probabilistic Turing machines" (1977); S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009 (PP ⊆ PSPACE).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.PPSubsetPSPACE.pp_subset_pspace` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/PPSubsetPSPACEWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/PPSubsetPSPACEWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#pp-subset-pspace).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.PPSubsetPSPACE.pp_subset_pspace` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/PPSubsetPSPACEWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/PPSubsetPSPACEWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html#pp-subset-pspace).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Unbounded-error probabilistic time (PP)](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/counting-complexity/unbounded-error-probabilistic-time-pp)

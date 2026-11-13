@@ -8,7 +8,7 @@ proof: formalized
 
 # Irreducibility criteria for integer polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html).
 
 ## Cohn's irreducibility criterion
 
@@ -20,7 +20,7 @@ Then the polynomial $f(x) = a_0 + a_1 x + \dots + a_n x^n$ is irreducible in $\m
 
 - https://en.wikipedia.org/wiki/Cohn%27s_irreducibility_criterion
 
-Formalized by `MetaMathlibExt.cohn_criterion`, a theorem declared in [MathlibExt/NumberTheory/Digits/Cohn.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Digits/Cohn.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html#cohn-criterion).
+Formalized by `MetaMathlibExt.cohn_criterion`, a theorem declared in [MathlibExt/NumberTheory/Digits/Cohn.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Digits/Cohn.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html#cohn-criterion).
 
 ## Dumas irreducibility criterion
 
@@ -41,7 +41,7 @@ required only for nonzero $a_i$.
 
 - Randell Heyman, *On the Number of Polynomials of Bounded Height that Satisfy the Dumas Criterion*, Journal of Integer Sequences 17 (2014), Article 14.2.4, Dumas criterion statement, lines 96–102, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Heyman/heyman2.tex>. Exact algebraic form: Martin Juras, arXiv:1505.07633v1, lines 67–100.
 
-Formalized by `MetaMathlibExt.irreducible_of_dumas_padic_criterion`, a theorem declared in [MathlibExt/NumberTheory/Polynomial/DumasIrreducibilityCriterion.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Polynomial/DumasIrreducibilityCriterion.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html#irreducible-of-dumas-padic-criterion).
+Formalized by `MetaMathlibExt.irreducible_of_dumas_padic_criterion`, a theorem declared in [MathlibExt/NumberTheory/Polynomial/DumasIrreducibilityCriterion.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Polynomial/DumasIrreducibilityCriterion.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html#irreducible-of-dumas-padic-criterion).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Irreducibility criteria for integer polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/irreducibility-criteria-for-integer-polynomials)

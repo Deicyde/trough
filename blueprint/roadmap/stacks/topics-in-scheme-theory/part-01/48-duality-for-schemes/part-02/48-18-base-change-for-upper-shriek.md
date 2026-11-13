@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.18 Base change for upper shriek
 
-Section 48.18 of the Stacks Project, [Tag 0BZX](https://stacks.math.columbia.edu/tag/0BZX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.18 of the Stacks Project, [Tag 0BZX](https://stacks.math.columbia.edu/tag/0BZX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E9U, a lemma
 
 [Tag 0E9U](https://stacks.math.columbia.edu/tag/0E9U) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekFlatBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatBaseChangeIso.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatBaseChangeIso.lean#L91).
+**`Stacks.Duality.upperShriekFlatBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatBaseChangeIso.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekFlatBaseChangeIso.lean#L91).
 
 > **Flat base change for `f^!`.** Let `S` be Noetherian and let `X' ⟶ X` over `Y' ⟶ Y` be a
 > cartesian square of `FTS S` with `g` flat. Then `L(g')^* ∘ f^! ≅ (f')^! ∘ Lg^*` on
@@ -35,7 +35,7 @@ def upperShriekFlatBaseChangeIso (c' : CompactificationOf (Over.mk f'.left)) :
 
 [Tag 0FWI](https://stacks.math.columbia.edu/tag/0FWI) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekIsoPullbackOfEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekEtale.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekEtale.lean#L99).
+**`Stacks.Duality.upperShriekIsoPullbackOfEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekEtale.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekEtale.lean#L99).
 
 > **Stacks Project, Tag 0FWI.** In Situation 48.16.1 let `f : X ⟶ Y` be an
 > étale morphism of `FTS S`. Then `f^! ≅ f^*` as functors on `D^+_QCoh(𝒪_Y)`, for `f^!` computed
@@ -54,7 +54,7 @@ def upperShriekIsoPullbackOfEtale [Etale f.left] :
 
 [Tag 0BZY](https://stacks.math.columbia.edu/tag/0BZY) in the Stacks Project.
 
-**`Stacks.Duality.nonempty_restrict_derivedPullback_upperShriek_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/MakeshiftBaseChange.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/MakeshiftBaseChange.lean#L307).
+**`Stacks.Duality.nonempty_restrict_derivedPullback_upperShriek_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/MakeshiftBaseChange.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/MakeshiftBaseChange.lean#L308).
 
 > **[Stacks, Tag 0BZY] (makeshift base change).** In Situation 48.16.1 let `X' = X ×_Y Y'` be a
 > cartesian square of `FTS S` with `f` flat, let `E ∈ D⁺_QCoh(𝒪_Y)` with `Lg^*E` bounded below,
@@ -98,7 +98,7 @@ theorem nonempty_restrict_derivedPullback_upperShriek_iso
 
 [Tag 0BZZ](https://stacks.math.columbia.edu/tag/0BZZ) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingComplex_derivedPullback_fibreι_upperShriek_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/FibreDualizingCharts.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/FibreDualizingCharts.lean#L440).
+**`Stacks.Duality.isDualizingComplex_derivedPullback_fibreι_upperShriek_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/FibreDualizingCharts.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingBaseChange/FibreDualizingCharts.lean#L440).
 
 > **Stacks Project, Tag 0BZZ (Lemma 48.18.4).** In Situation 48.16.1 let `f : X ⟶ Y` be a flat
 > morphism of `FTS S` and set `ω^•_{X/Y} = f^!𝒪_Y`, for any compactification `j` defining `f^!`.
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.18, Tag 0BZX](https://stacks.math.columbia.edu/tag/0BZX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

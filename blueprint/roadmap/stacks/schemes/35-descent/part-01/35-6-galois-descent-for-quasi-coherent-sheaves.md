@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.6 Galois descent for quasi-coherent sheaves
 
-Section 35.6 of the Stacks Project, [Tag 0CDQ](https://stacks.math.columbia.edu/tag/0CDQ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.6 of the Stacks Project, [Tag 0CDQ](https://stacks.math.columbia.edu/tag/0CDQ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CDR, a lemma
 
 [Tag 0CDR](https://stacks.math.columbia.edu/tag/0CDR) in the Stacks Project.
 
-**`Stacks.Descent.nonempty_equivalence_galoisDescentData_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisFieldExtension.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisFieldExtension.lean#L532).
+**`Stacks.Descent.nonempty_equivalence_galoisDescentData_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisFieldExtension.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisFieldExtension.lean#L532).
 
 > **Galois descent for quasi-coherent modules.**  For a finite Galois extension `K/k` with
 > group `G` and a scheme `X` over `k`, the category of quasi-coherent `𝒪_X`-modules is equivalent
@@ -33,7 +33,7 @@ theorem nonempty_equivalence_galoisDescentData_baseChange :
 
 [Tag 0D1V](https://stacks.math.columbia.edu/tag/0D1V) in the Stacks Project.
 
-**`Stacks.Descent.nonempty_equivalence_galoisDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisEquivalence.lean, line 968](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisEquivalence.lean#L968). References: SGA 4½ Arcata (1.5.1), “a), b), c) equivalence”.
+**`Stacks.Descent.nonempty_equivalence_galoisDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisEquivalence.lean, line 968](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/GaloisEquivalence.lean#L968). References: SGA 4½ Arcata (1.5.1), “a), b), c) equivalence”.
 
 > **Galois descent for quasi-coherent modules.**  For a surjective finite étale morphism
 > `f : X ⟶ Y` carrying an action of a finite group `G` over `Y` which identifies `∐_{σ : G} X`
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.6, Tag 0CDQ](https://stacks.math.columbia.edu/tag/0CDQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

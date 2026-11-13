@@ -8,28 +8,28 @@ proof: formalized
 
 # Korovkin's theorem
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html).
 
 ## The identity test function
 
 The function $x \mapsto x$ on $[0, 1]$, as an element
 of $C([0, 1], \mathbb{R})$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinId`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-id).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinId`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-id).
 
 ## The square test function
 
 The function $x \mapsto x^2$ on $[0, 1]$, as an element
 of $C([0, 1], \mathbb{R})$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinIdSq`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-id-sq).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinIdSq`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-id-sq).
 
 ## The shifted square
 
 For $x \in [0, 1]$, the function $y \mapsto (y - x)^2$
 on $[0, 1]$, as an element of $C([0, 1], \mathbb{R})$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinShiftSq`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-shift-sq).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinShiftSq`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-shift-sq).
 
 ## Expansion of the shifted square
 
@@ -38,7 +38,7 @@ and square functions and $1$ for the constant function one, as elements of
 $C([0, 1], \mathbb{R})$. For every $x \in [0, 1]$, the function $y \mapsto (y - x)^2$ in
 $C([0, 1], \mathbb{R})$ equals $q - 2x \cdot e + x^2 \cdot 1$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinShiftSq_eq`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-shift-sq-eq).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkinShiftSq_eq`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin-shift-sq-eq).
 
 ## Uniform convergence implies pointwise convergence
 
@@ -46,7 +46,7 @@ If a sequence $(u_n)$ in
 $C([0, 1], \mathbb{R})$ converges to $e$ in the sup norm, then $u_n(x) \to e(x)$ for every
 $x \in [0, 1]$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.tendsto_apply_of_tendsto`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#tendsto-apply-of-tendsto).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.tendsto_apply_of_tendsto`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#tendsto-apply-of-tendsto).
 
 ## Positive linear operators are monotone
 
@@ -56,7 +56,7 @@ $f(x) \ge 0$ for all $x \in [0, 1]$. If $g, h \in C([0, 1], \mathbb{R})$ satisfy
 $g(x) \le h(x)$ for all $x \in [0, 1]$, then $(L g)(x) \le (L h)(x)$
 for every $x \in [0, 1]$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.le_apply_of_le`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#le-apply-of-le).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.le_apply_of_le`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#le-apply-of-le).
 
 ## Positive linear operators bound absolute values
 
@@ -66,7 +66,7 @@ $x \in [0, 1]$ whenever $f(x) \ge 0$ for all $x \in [0, 1]$. If
 $g, h \in C([0, 1], \mathbb{R})$ satisfy $|g(y)| \le h(y)$ for all $y \in [0, 1]$, then
 $|(L g)(x)| \le (L h)(x)$ for every $x \in [0, 1]$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.abs_apply_le`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#abs-apply-le).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.abs_apply_le`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#abs-apply-le).
 
 ## Quadratic bound from a modulus of continuity
 
@@ -78,7 +78,7 @@ $|f(y) - f(x)| \le \varepsilon + C (y - x)^2$ for every $y \in [0, 1]$.
 
 Korovkin's theorem applies this with $C = 2\|f\| / \delta^2$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.abs_sub_le_add_sq`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#abs-sub-le-add-sq).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.abs_sub_le_add_sq`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#abs-sub-le-add-sq).
 
 ## Korovkin's theorem
 
@@ -89,7 +89,7 @@ positive: $(L_n f)(x) \ge 0$ for all $x \in [0, 1]$ whenever $f(x) \ge 0$ for al
 $x \in [0, 1]$. If $L_n e_i \to e_i$ in the sup norm for $i = 0, 1, 2$, then
 $L_n f \to f$ in the sup norm for every $f \in C([0, 1], \mathbb{R})$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkin`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.Korovkin.korovkin`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/Korovkin.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html#korovkin).
 
 ## Depends on
 
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Korovkin's theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/approximation-theory/korovkin-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/approximation-theory/korovkin-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/approximation-theory/korovkin-s-theorem)

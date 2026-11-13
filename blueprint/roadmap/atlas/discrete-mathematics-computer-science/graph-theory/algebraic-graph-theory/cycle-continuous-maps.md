@@ -7,7 +7,7 @@ statement: formalized
 
 # Cycle-continuous maps
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html).
 
 ## Multigraphs with loops and parallel edges
 
@@ -20,7 +20,7 @@ endpoints of an edge may coincide (a loop). Neither $V$ nor $E$ is required to b
 
 - [OPG-323] Antichains in the cycle continuous order (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
 
-Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.FGraph`, a structure declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#fgraph).
+Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.FGraph`, a structure declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#fgraph).
 
 ## Finite multigraphs with at least one edge
 
@@ -32,7 +32,7 @@ These are the graphs on which the cycle-continuous order is considered.
 
 - [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
 
-Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.IsFiniteNontrivial`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#is-finite-nontrivial).
+Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.IsFiniteNontrivial`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#is-finite-nontrivial).
 
 ## Binary cycle space
 
@@ -46,7 +46,7 @@ binary cycles of $G$.
 
 - [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
 
-Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.cycleSpace`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#cycle-space).
+Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.cycleSpace`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#cycle-space).
 
 ## Cycle-continuous maps
 
@@ -58,7 +58,7 @@ $f^{-1}(C)$ is a binary cycle of $G$.
 
 - [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
 
-Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.IsCycleContinuous`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#is-cycle-continuous).
+Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.IsCycleContinuous`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#is-cycle-continuous).
 
 ## Infinite antichains in the cycle-continuous order
 
@@ -71,7 +71,7 @@ edges of $G_j$.
 
 - [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
 
-Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.conjecture`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#conjecture).
+Formalized by `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.conjecture`, a definition declared in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#conjecture).
 
 ## Samal's theorem: infinite antichains in the cycle-continuous order exist
 
@@ -88,7 +88,7 @@ antichain question positively.
 
 - Robert Samal, Cycle-continuous mappings - order structure, Journal of Graph Theory 85 (2017) 56-73, arXiv:1212.6909, https://arxiv.org/abs/1212.6909.
 
-Stated but not proved: `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.GraphTheory.CycleContinuousAntichainWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/CycleContinuousAntichainWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cycle-continuous maps](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/cycle-continuous-maps)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Wallis-type prime products in residue classes
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html).
 
 ## Factor identity for Wallis-type prime products
 
@@ -21,7 +21,7 @@ where $\chi_4$ is the nontrivial Dirichlet character modulo $4$.
 
 - Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.wallis_prime_factor_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#wallis-prime-factor-eq).
+Stated but not proved: `MetaMathlibExt.wallis_prime_factor_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#wallis-prime-factor-eq).
 
 ## Asymptotic for thinned Wallis-type prime products
 
@@ -39,7 +39,7 @@ $P_S(x) / \left(K (\log x)^{-2\mu(S)/\varphi(q)}\right) \to 1$ as $x \to \infty$
 
 - Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-asymptotic).
+Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-asymptotic).
 
 ## Convergence of thinned Wallis-type prime products
 
@@ -57,7 +57,7 @@ limit if and only if $\mu(S) = 0$.
 
 - Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_tendsto_pos_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-tendsto-pos).
+Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_tendsto_pos_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-tendsto-pos).
 
 ## The constant in the thinned Wallis-type prime product asymptotic
 
@@ -87,7 +87,7 @@ $\mu(S) = 0$ then $P_S(x) \to K$ as $x \to \infty$.
 
 - Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-constant).
+Stated but not proved: `MetaMathlibExt.thinned_wallis_prime_product_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimeCounting/ThinnedWallisPrimeProductWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html#thinned-wallis-prime-product-constant).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Wallis-type prime products in residue classes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/primes-in-progressions/wallis-type-prime-products-in-residue-classes)

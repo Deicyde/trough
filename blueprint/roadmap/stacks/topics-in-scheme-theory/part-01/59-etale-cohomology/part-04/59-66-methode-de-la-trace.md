@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.66 Méthode de la trace
 
-Section 59.66 of the Stacks Project, [Tag 03SH](https://stacks.math.columbia.edu/tag/03SH). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.66 of the Stacks Project, [Tag 03SH](https://stacks.math.columbia.edu/tag/03SH). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03SH, the section
 
 [Tag 03SH](https://stacks.math.columbia.edu/tag/03SH) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.mono_etaleModuleCohomology_map_unit_of_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean#L78). The attribute's comment: “the méthode de la trace: H^n(X, F) → H^n(Y, f⁻¹F) is injective when multiplication by the degree is an isomorphism of F”. References: SGA 5 IIIB (3.2), “partial”.
+**`Stacks.EtaleCohomology.mono_etaleModuleCohomology_map_unit_of_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean#L78). The attribute's comment: “the méthode de la trace: H^n(X, F) → H^n(Y, f⁻¹F) is injective when multiplication by the degree is an isomorphism of F”. References: SGA 5 IIIB (3.2), “partial”.
 
 > **Stacks 03SH, the méthode de la trace.** For `f : T ⟶ S` finite étale of degree `d` and a
 > sheaf of `Λ`-modules `F` on which multiplication by `d` is an isomorphism, the map
@@ -30,7 +30,7 @@ theorem mono_etaleModuleCohomology_map_unit_of_finiteEtale [IsIso (d • 𝟙 F)
         ((etaleModuleInverseImage.{u, r} Λ f).obj F)).hom)
 ```
 
-**`Stacks.EtaleCohomology.isZero_etaleModuleCohomology_of_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean#L96). The attribute's comment: “if H^q(Y, f⁻¹F) = 0 then H^q(X, F) = 0, when multiplication by the degree is an isomorphism of F”.
+**`Stacks.EtaleCohomology.isZero_etaleModuleCohomology_of_finiteEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceCohomology.lean#L96). The attribute's comment: “if H^q(Y, f⁻¹F) = 0 then H^q(X, F) = 0, when multiplication by the degree is an isomorphism of F”.
 
 > **Stacks 03SH, the vanishing consequence of the méthode de la trace.** For `f : T ⟶ S` finite
 > étale of degree `d` and a sheaf of `Λ`-modules `F` on which multiplication by `d` is an
@@ -43,7 +43,7 @@ theorem isZero_etaleModuleCohomology_of_finiteEtale [IsIso (d • 𝟙 F)] (q : 
     IsZero (((etaleModuleGlobalSections.{u, r} Λ S).rightDerived q).obj F)
 ```
 
-**`AlgebraicGeometry.moduleTrace_app_eq_sum_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L142). The attribute's comment: “if Y is a disjoint union of copies of the base, the trace is the sum map, for sheaves of Λ-modules”.
+**`AlgebraicGeometry.moduleTrace_app_eq_sum_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L142). The attribute's comment: “if Y is a disjoint union of copies of the base, the trace is the sum map, for sheaves of Λ-modules”.
 
 > **Stacks 03SH, the trace on a split cover is the sum map.** If over the étale object `Q` of
 > `T` the morphism `f` is described by the pairwise disjoint morphisms `φ i : Q ⟶ T'` whose graphs
@@ -69,7 +69,7 @@ theorem moduleTrace_app_eq_sum_of_cover
           (smallEtaleLiftGraph B T.1 T.property (SmallEtale.ofEtaleHom B f) Q (φ i)).op s)
 ```
 
-**`AlgebraicGeometry.eq_moduleTrace_app_of_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L210). The attribute's comment: “the trace is characterized by being the sum map étale locally on the base, for sheaves of Λ-modules”.
+**`AlgebraicGeometry.eq_moduleTrace_app_of_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L210). The attribute's comment: “the trace is characterized by being the sum map étale locally on the base, for sheaves of Λ-modules”.
 
 > **Stacks 03SH, the trace is characterized by the sum formula.** A morphism
 > `τ : f_* f^{-1} ℱ ⟶ ℱ` which, over every étale neighbourhood `Q` on which `f` is a disjoint union
@@ -99,7 +99,7 @@ theorem eq_moduleTrace_app_of_sum
     τ = (moduleTrace B T.1 T.property (SmallEtale.ofEtaleHom B f) Λ).app F
 ```
 
-**`AlgebraicGeometry.unit_comp_moduleTrace_eq_nsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L257). The attribute's comment: “restriction followed by the trace is multiplication by the degree, for sheaves of Λ-modules”. References: SGA 4 XVII (6.2.3), “Var 4 (normalization)”; SGA 4 XVIII (2.9), “Var 4 (I)”.
+**`AlgebraicGeometry.unit_comp_moduleTrace_eq_nsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/ModuleTraceDegree.lean#L257). The attribute's comment: “restriction followed by the trace is multiplication by the degree, for sheaves of Λ-modules”. References: SGA 4 XVII (6.2.3), “Var 4 (normalization)”; SGA 4 XVIII (2.9), “Var 4 (I)”.
 
 > **Stacks 03SH, the trace of a finite étale morphism of degree `d` on sheaves of modules.**
 > For `f` finite étale and finite locally free of rank `d`, the restriction map `ℱ ⟶ f_* f^{-1} ℱ`
@@ -119,7 +119,7 @@ theorem unit_comp_moduleTrace_eq_nsmul (d : ℕ)
 
 [Tag 03SE](https://stacks.math.columbia.edu/tag/03SE) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean#L114). The attribute's comment: “abelian sheaves”.
+**`AlgebraicGeometry.abelianTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean#L114). The attribute's comment: “abelian sheaves”.
 
 > **Stacks 03SE.** The trace map of the finite étale morphism `U ⟶ X` on abelian étale
 > sheaves: the counit `j_!j^{-1} ⟶ id` of the extension-by-zero adjunction, read as a map
@@ -136,7 +136,7 @@ public def abelianTrace :
       𝟭 (Sheaf (SmallEtale.topology B X hX) AddCommGrpCat.{u + 1})
 ```
 
-**`AlgebraicGeometry.moduleTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean#L216). The attribute's comment: “sheaves of modules”.
+**`AlgebraicGeometry.moduleTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZeroBaseChange/Trace.lean#L216). The attribute's comment: “sheaves of modules”.
 
 > **Stacks 03SE.** The trace map of the finite étale morphism `U ⟶ X` on étale sheaves of
 > `Λ`-modules, constructed exactly as in the abelian case.
@@ -156,7 +156,7 @@ public def moduleTrace :
 
 [Tag 0A3R](https://stacks.math.columbia.edu/tag/0A3R) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_constantFiltration_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllCover.lean, line 806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllCover.lean#L806).
+**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_constantFiltration_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllCover.lean, line 806](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllCover.lean#L806).
 
 > **Stacks Project, Tag 0A3R.** Let `S` be a connected scheme, let `ℓ` be a prime number and
 > let `F` be a finite type locally constant sheaf of `F_ℓ`-vector spaces on `S_étale`. Then there
@@ -185,7 +185,7 @@ theorem exists_primeToEll_finiteEtale_constantFiltration_unconditional {ℓ : �
         IsZero (Subobject.underlying.obj X.head) ∧ IsIso X.last.arrow
 ```
 
-**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_relSeries_constantRankOneStep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllFiltration.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllFiltration.lean#L389).
+**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_relSeries_constantRankOneStep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllFiltration.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PrimeToEllFiltration.lean#L389).
 
 > **Stacks Project, Tag 0A3R.** Let `S` be a connected scheme, `ℓ` a prime number and `F` a
 > finite type locally constant sheaf of `F_ℓ`-vector spaces on `S_étale`. Then there is a finite
@@ -210,7 +210,7 @@ theorem exists_primeToEll_finiteEtale_relSeries_constantRankOneStep {ℓ : ℕ} 
 
 [Tag 0GIZ](https://stacks.math.columbia.edu/tag/0GIZ) in the Stacks Project.
 
-**`Module.exists_relSeries_trivial_action_subquotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PGroupFiltration.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PGroupFiltration.lean#L384). References: SGA 5 I (App.1.3.1), “trivial action quotients”.
+**`Module.exists_relSeries_trivial_action_subquotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PGroupFiltration.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/PGroupFiltration.lean#L384). References: SGA 5 I (App.1.3.1), “trivial action quotients”.
 
 > A module over the group ring of a finite `ℓ`-group, annihilated by a power of `ℓ`,
 > has a finite filtration by group-ring submodules with trivial group action on every successive
@@ -233,41 +233,7 @@ theorem Module.exists_relSeries_trivial_action_subquotient
 
 [Tag 0GJ0](https://stacks.math.columbia.edu/tag/0GJ0) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_finiteModuleFiltration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltration.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltration.lean#L563). The attribute's comment: “granted hypothesis D, the Stacks 0GIY dictionary in finite-module form”.
-
-> **Stacks Project, Tag 0GJ0.** Let `S` be an irreducible, geometrically unibranch scheme, let
-> `ℓ` be a prime number, let `n ≥ 1`, let `Λ` be a Noetherian ring and let `F` be a finite type
-> locally constant sheaf of `Λ`-modules on `S_étale` annihilated by `ℓ ^ n`. Then there is a finite
-> étale morphism `f : T → S` of degree prime to `ℓ` such that `f⁻¹F` has a finite filtration whose
-> successive quotients are of the form `M_T` for finite `Λ`-modules `M`.
->
-> The filtration is a chain of subobjects of `f⁻¹F` running from the zero subobject to the whole
-> sheaf, each step having the constant sheaf of a finite `Λ`-module as its quotient.
->
-> The irreducibility and geometric unibranchness of `S` and the local constancy of `F` are the
-> hypotheses under which the dictionary `D` of Stacks Tag 0GIY is available. The annihilation of `F`
-> by `ℓ ^ n` is stated twice: on the sections of `F`, as `_hann`, because the source states it there,
-> and on the module the dictionary attaches to `F`, as the field `D.annihilated`, because that is the
-> form Tag 0GIZ consumes. Transporting the first to the second is part of Tag 0GIY and so is part of
-> what `D` carries; nothing here derives one from the other.
-
-```lean
-theorem exists_primeToEll_finiteEtale_finiteModuleFiltration {ℓ n : ℕ} (hℓ : ℓ.Prime)
-    (_hn : 1 ≤ n) {Λ : Type v} [CommRing Λ] [IsNoetherianRing Λ]
-    {S : Scheme.{u}} [IrreducibleSpace S] (_hS : IsGeometricallyUnibranch S)
-    (s : GeometricPoint S)
-    (F : Sheaf (smallEtaleTopology S) (ModuleCat.{max (u + 1) v} Λ))
-    (_hF : Stacks.ConstantSheaf.IsFiniteTypeLocallyConstant Λ (smallEtaleTopology S) F)
-    (_hann : ∀ (U : S.Etale) (x : F.obj.obj (Opposite.op U)), (ℓ ^ n) • x = 0)
-    (D : FiniteModuleMonodromyDictionary Λ ℓ n s F) :
-    ∃ (T : Scheme.{u}) (f : T ⟶ S) (d : ℕ), IsFinite f ∧ Etale f ∧
-      Stacks.Morphisms.IsFiniteLocallyFreeOfRank f d ∧ ¬ ℓ ∣ d ∧
-      ∃ X : RelSeries (ConstantFiniteModuleStep Λ
-          ((smallEtalePullbackModuleCat Λ f).obj F)),
-        IsZero (Subobject.underlying.obj X.head) ∧ IsIso X.last.arrow
-```
-
-**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_finiteModuleFiltration_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltrationUnconditional.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltrationUnconditional.lean#L234).
+**`Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_finiteModuleFiltration_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltrationUnconditional.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/ConstantModuleFiltrationUnconditional.lean#L242).
 
 > **Stacks Project, Tag 0GJ0.** Let `S` be an irreducible, geometrically unibranch scheme, let
 > `ℓ` be a prime number, let `n ≥ 1`, let `Λ` be a Noetherian ring and let `F` be a finite type
@@ -278,6 +244,14 @@ theorem exists_primeToEll_finiteEtale_finiteModuleFiltration {ℓ n : ℕ} (hℓ
 > The filtration is a chain of subobjects of `f⁻¹F` running from the zero subobject to the whole
 > sheaf, each step having the constant sheaf of a finite `Λ`-module as its quotient. The degree of
 > `f` is the rank of the finite locally free morphism `f` (Tag 02KA).
+>
+> The proof is the source's: `F` is trivialized by a pointed Galois cover `A` of `S`
+> (`AlgebraicGeometry.trivializedByPointedGaloisCovers`, the input Tag 0GIY provides), `T` is the
+> quotient of `A` by an `ℓ`-Sylow subgroup `H` of its automorphism group, and the filtration of the
+> sections of `F` over `A` by `Λ[H]`-submodules (Tag 0GIZ) descends along `A → T`. It needs no
+> monodromy dictionary, unlike
+> `Stacks.EtaleCohomology.exists_primeToEll_finiteEtale_finiteModuleFiltration`, which reads the
+> same proof through a `FiniteModuleMonodromyDictionary`.
 
 ```lean
 theorem exists_primeToEll_finiteEtale_finiteModuleFiltration_general {ℓ n : ℕ} (hℓ : ℓ.Prime)
@@ -294,7 +268,7 @@ theorem exists_primeToEll_finiteEtale_finiteModuleFiltration_general {ℓ n : �
         IsZero (Subobject.underlying.obj X.head) ∧ IsIso X.last.arrow
 ```
 
-**`Stacks.EtaleCohomology.exists_finiteEtale_primeToEll_constantModuleFiltration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/UnibranchConstantModuleFiltration.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/UnibranchConstantModuleFiltration.lean#L275). The attribute's comment: “the filtration after a finite étale cover of degree prime to ℓ, for S irreducible and geometrically unibranch”.
+**`Stacks.EtaleCohomology.exists_finiteEtale_primeToEll_constantModuleFiltration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/UnibranchConstantModuleFiltration.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/MethodeDeLa/UnibranchConstantModuleFiltration.lean#L276). The attribute's comment: “the filtration after a finite étale cover of degree prime to ℓ, for S irreducible and geometrically unibranch”.
 
 > **Stacks, Tag 0GJ0.** Let `S` be an irreducible, geometrically unibranch scheme, let `ℓ` be a
 > prime number and `n ≥ 1`, let `Λ` be a Noetherian ring and let `F` be a finite type, locally
@@ -342,4 +316,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.66, Tag 03SH](https://stacks.math.columbia.edu/tag/03SH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

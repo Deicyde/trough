@@ -7,7 +7,7 @@ statement: formalized
 
 # Piecewise syndetic sets
 
-16 results, 12 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html).
+16 results, 12 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html).
 
 ## Lattice cube
 
@@ -19,7 +19,7 @@ $a_i \le x_i < a_i + m$ for every coordinate $i$; it is a subcube of size $m^t$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (subcubes of `N^t` of size `m^t`).
 
-Formalized by `MetaMathlibExt.latticeCube`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#lattice-cube).
+Formalized by `MetaMathlibExt.latticeCube`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#lattice-cube).
 
 ## Membership in a lattice cube
 
@@ -31,7 +31,7 @@ $a_i \le x_i < a_i + m$ for every coordinate $i$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (subcubes of `N^t` of size `m^t`).
 
-Formalized by `MetaMathlibExt.mem_latticeCube`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#mem-lattice-cube).
+Formalized by `MetaMathlibExt.mem_latticeCube`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#mem-lattice-cube).
 
 ## Lattice cube of side one
 
@@ -42,7 +42,7 @@ cube with least corner $a$ and side $1$ is the singleton $\{a\}$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (subcubes of `N^t` of size `m^t`).
 
-Formalized by `MetaMathlibExt.latticeCube_one`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#lattice-cube-one).
+Formalized by `MetaMathlibExt.latticeCube_one`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#lattice-cube-one).
 
 ## Density in subcubes
 
@@ -54,7 +54,7 @@ meets $C$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (definition of `m_{i-1}`-dense in `M'`).
 
-Formalized by `MetaMathlibExt.IsDenseInCubes`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-dense-in-cubes).
+Formalized by `MetaMathlibExt.IsDenseInCubes`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-dense-in-cubes).
 
 ## Density one means containment
 
@@ -65,7 +65,7 @@ $1$-dense in $M$ if and only if $M \subseteq C$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1 (definition of `m_{i-1}`-dense in `M'`, with `m_0 = 1`).
 
-Formalized by `MetaMathlibExt.isDenseInCubes_one_iff`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-dense-in-cubes-one-iff).
+Formalized by `MetaMathlibExt.isDenseInCubes_one_iff`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-dense-in-cubes-one-iff).
 
 ## Piecewise syndetic set
 
@@ -78,7 +78,7 @@ $A + [0, d]^t = \{y + z : y \in A,\ z \in [0, d]^t\}$ contains a lattice cube of
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Proof 1 of Theorem 2 (meaning of piecewise syndetic).
 
-Formalized by `MetaMathlibExt.IsPiecewiseSyndetic`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-piecewise-syndetic).
+Formalized by `MetaMathlibExt.IsPiecewiseSyndetic`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-piecewise-syndetic).
 
 ## The whole space is piecewise syndetic
 
@@ -89,7 +89,7 @@ $\mathbb{N}^t$ is piecewise syndetic.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Proof 1 of Theorem 2 (meaning of piecewise syndetic).
 
-Formalized by `MetaMathlibExt.isPiecewiseSyndetic_univ`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-piecewise-syndetic-univ).
+Formalized by `MetaMathlibExt.isPiecewiseSyndetic_univ`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#is-piecewise-syndetic-univ).
 
 ## The empty set is not piecewise syndetic
 
@@ -100,7 +100,7 @@ subset of $\mathbb{N}^t$ is not piecewise syndetic.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Proof 1 of Theorem 2 (meaning of piecewise syndetic).
 
-Formalized by `MetaMathlibExt.not_isPiecewiseSyndetic_empty`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#not-is-piecewise-syndetic-empty).
+Formalized by `MetaMathlibExt.not_isPiecewiseSyndetic_empty`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#not-is-piecewise-syndetic-empty).
 
 ## A color class is dense in a subcube (Brown, Lemma 1)
 
@@ -118,7 +118,7 @@ $r = 0$ admits no coloring of the nonempty cube $M$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_subcube_isDenseInCubes_colorClass` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-subcube-is-dense-in-cubes-color-c).
+Stated but not proved: `MetaMathlibExt.exists_subcube_isDenseInCubes_colorClass` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-subcube-is-dense-in-cubes-color-c).
 
 ## A color class is dense in a large subcube (Brown, Lemma 2)
 
@@ -135,7 +135,7 @@ coloring to $[1, A]^t$ matters.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_cube_bound_isDenseInCubes` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-cube-bound-is-dense-in-cubes).
+Stated but not proved: `MetaMathlibExt.exists_cube_bound_isDenseInCubes` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-cube-bound-is-dense-in-cubes).
 
 ## Piecewise syndeticity is partition regular
 
@@ -147,7 +147,7 @@ some $A_i$ is piecewise syndetic.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.IsPiecewiseSyndetic.exists_of_eq_iUnion` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-of-eq-i-union).
+Stated but not proved: `MetaMathlibExt.IsPiecewiseSyndetic.exists_of_eq_iUnion` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-of-eq-i-union).
 
 ## Gap size
 
@@ -165,7 +165,7 @@ size.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definition 5.
 
-Formalized by `MetaMathlibExt.cubeGapSize`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size).
+Formalized by `MetaMathlibExt.cubeGapSize`, a definition declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size).
 
 ## Density bounds the gap size
 
@@ -177,7 +177,7 @@ satisfies $\operatorname{gs}(S) \le d$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definition 5 (and Proof 1 of Theorem 2, "hence `gs(S) ≤ d`").
 
-Formalized by `MetaMathlibExt.cubeGapSize_le_of_isDenseInCubes`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-le-of-is-dense-in-cubes).
+Formalized by `MetaMathlibExt.cubeGapSize_le_of_isDenseInCubes`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-le-of-is-dense-in-cubes).
 
 ## Finite sets in positive dimension have positive gap size
 
@@ -191,7 +191,7 @@ subcube of side $m + 1$ fits inside.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definition 5.
 
-Formalized by `MetaMathlibExt.cubeGapSize_pos`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-pos).
+Formalized by `MetaMathlibExt.cubeGapSize_pos`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-pos).
 
 ## Gap size of a singleton
 
@@ -202,7 +202,7 @@ $\lbrace x \rbrace$ has gap size $\operatorname{gs}(\lbrace x \rbrace) = 1$.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Definitions 1 and 5 ("If `|S| = 1`, we set `gs(S) = 1`").
 
-Formalized by `MetaMathlibExt.cubeGapSize_singleton`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-singleton).
+Formalized by `MetaMathlibExt.cubeGapSize_singleton`, a theorem declared in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#cube-gap-size-singleton).
 
 ## Monochromatic sets that are large relative to their gap size
 
@@ -222,7 +222,7 @@ holds vacuously.
 
 - Tom C. Brown, *Piecewise Syndetic Sets in `N^t` and `N^X`*, INTEGERS 24 (2024), Article A2, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_cube_bound_monochromatic_card_gt_gapSize` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-cube-bound-monochromatic-card-gt).
+Stated but not proved: `MetaMathlibExt.exists_cube_bound_monochromatic_card_gt_gapSize` is written with `theorem_wanted` in [WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/PiecewiseSyndeticWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html#exists-cube-bound-monochromatic-card-gt).
 
 ## Depends on
 
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Piecewise syndetic sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/piecewise-syndetic-sets)

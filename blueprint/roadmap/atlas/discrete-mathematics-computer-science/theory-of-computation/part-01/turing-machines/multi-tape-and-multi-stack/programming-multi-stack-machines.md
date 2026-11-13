@@ -8,7 +8,7 @@ proof: formalized
 
 # Programming multi-stack machines
 
-59 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html).
+59 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html).
 
 ## Flag bit of a machine state
 
@@ -18,7 +18,7 @@ $\mathrm{untag} : \sigma \to \mathrm{Bool}$ that reads it back, such that
 $\mathrm{untag}(\mathrm{tag}(\beta)) = \beta$ for every bit $\beta$. The program primitives use it
 to branch on whether a pop found a symbol.
 
-Formalized by `MetaMathlibExt.TM2Program.Flag`, a class declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#flag).
+Formalized by `MetaMathlibExt.TM2Program.Flag`, a class declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#flag).
 
 ## A halted run stays halted
 
@@ -27,7 +27,7 @@ function and let $\hat f$ be its lift to $\mathrm{Option}\,\sigma$, which sends 
 $\mathrm{none}$ and $\mathrm{some}\,x$ to $f(x)$. Then $\hat f^{\,n}(\mathrm{none}) = \mathrm{none}$
 for every $n \in \mathbb{N}$.
 
-Formalized by `MetaMathlibExt.TM2Program.iter_none`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#iter-none).
+Formalized by `MetaMathlibExt.TM2Program.iter_none`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#iter-none).
 
 ## Exact-length runs of a TM2 machine
 
@@ -36,7 +36,7 @@ each label, and let $c$ and $d$ be configurations. For $n \in \mathbb{N}$, $M$ r
 $d$ in exactly $n$ steps when applying the step function of $M$ $n$ times, starting at $c$, is
 defined at every step (no configuration before the last one has halted) and ends at $d$.
 
-Formalized by `MetaMathlibExt.TM2Program.Run`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run).
+Formalized by `MetaMathlibExt.TM2Program.Run`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run).
 
 ## A single step executes the statement at the current label
 
@@ -46,14 +46,14 @@ configuration. If executing the statement $M(l)$ from state $v$ and stacks $S$ y
 $M$ runs in exactly one step from the configuration with label $l$, state $v$ and stacks $S$ to
 $d$.
 
-Formalized by `MetaMathlibExt.TM2Program.Run.single`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#single).
+Formalized by `MetaMathlibExt.TM2Program.Run.single`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#single).
 
 ## Unary counter
 
 The unary counter with unit symbol $u$ and value $n \in \mathbb{N}$ is the
 list $u^n$ consisting of exactly $n$ copies of $u$.
 
-Formalized by `MetaMathlibExt.TM2Program.cnt`, an abbreviation declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cnt).
+Formalized by `MetaMathlibExt.TM2Program.cnt`, an abbreviation declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cnt).
 
 ## Counter increment
 
@@ -61,7 +61,7 @@ For a stack $k$, a symbol $u$ of stack $k$ (the unit of a unary
 counter) and a label $\ell$, this statement pushes $u$ onto stack $k$ and then goes to label
 $\ell$.
 
-Formalized by `MetaMathlibExt.TM2Program.incr`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#incr).
+Formalized by `MetaMathlibExt.TM2Program.incr`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#incr).
 
 ## Decrement
 
@@ -69,7 +69,7 @@ For a stack $k$ and labels $\ell_0$ and $\ell_+$, this machine statement pops
 stack $k$, stores in the state whether a symbol was popped, and goes to $\ell_+$ if a symbol was
 popped and to $\ell_0$ if stack $k$ was empty.
 
-Formalized by `MetaMathlibExt.TM2Program.decr`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#decr).
+Formalized by `MetaMathlibExt.TM2Program.decr`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#decr).
 
 ## Pushing symbols onto several stacks
 
@@ -78,7 +78,7 @@ $k$ and a symbol $x$ of the alphabet of stack $k$, and let $q$ be a statement of
 This is the statement that, for each pair $(k, x)$ of $ps$ in list order, pushes $x$ onto stack
 $k$, and then continues with $q$.
 
-Formalized by `MetaMathlibExt.TM2Program.pushAll`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#push-all).
+Formalized by `MetaMathlibExt.TM2Program.pushAll`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#push-all).
 
 ## Adding units to target stacks
 
@@ -90,7 +90,7 @@ holds $S_k$.
 
 When the stacks in the pairs of $ps$ are distinct, the first pair with stack $k$ is the only one.
 
-Formalized by `MetaMathlibExt.TM2Program.addU`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#add-u).
+Formalized by `MetaMathlibExt.TM2Program.addU`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#add-u).
 
 ## Counter transfer loop
 
@@ -104,7 +104,7 @@ Placed at label $\ell$, it pops $k$ until $k$ is empty and pushes one copy of ev
 per popped symbol: with $ps$ empty it drains $k$, with one target it moves the counter, and with
 two targets it copies it.
 
-Formalized by `MetaMathlibExt.TM2Program.xfer`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer).
+Formalized by `MetaMathlibExt.TM2Program.xfer`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer).
 
 ## Running a counter transfer
 
@@ -118,7 +118,7 @@ exactly $n + 1$ steps from label $\ell$ with state $v$ and stacks $S$ to label $
 state that stores the flag value false and the stacks obtained from $S$ by emptying stack $k$
 and then pushing $n$ copies of $x_i$ on each stack $t_i$.
 
-Formalized by `MetaMathlibExt.TM2Program.xfer_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer-run).
+Formalized by `MetaMathlibExt.TM2Program.xfer_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer-run).
 
 ## One round of counter comparison
 
@@ -131,7 +131,7 @@ pop of $a$ found a symbol, it pushes $u_{t_a}$ onto $t_a$ and goes to $\mathit{g
 pop of $b$ found one, it pushes $u_{t_b}$ onto $t_b$ and goes to $\mathit{lt}$; if neither did,
 it goes to $\mathit{eq}$.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpStep`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-step).
+Formalized by `MetaMathlibExt.TM2Program.cmpStep`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-step).
 
 ## The comparison loop
 
@@ -150,7 +150,7 @@ stacks $S'$, where in $S'$ the stack $a$ holds $u_a^{m - \min(m, n+1)}$, $b$ hol
 $u_b^{n - \min(n, m+1)}$, $t_a$ holds $u_{t_a}^{p + \min(m, n+1)}$, $t_b$ holds
 $u_{t_b}^{q + \min(n, m+1)}$, and every other stack is as in $S$.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpLoop_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-loop-run).
+Formalized by `MetaMathlibExt.TM2Program.cmpLoop_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-loop-run).
 
 ## Non-destructive comparison of two counters
 
@@ -170,7 +170,7 @@ $t_a$ and $t_b$ are empty, $M$ runs in exactly $3\min(m, n) + 3 + [m \ne n]$ ste
 $\ell$ with state $v$ and stacks $S$ to label $o(\mathrm{compare}(m, n))$ with the state that
 stores the flag value false and with the same stacks $S$.
 
-Formalized by `MetaMathlibExt.TM2Program.cmp_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-run).
+Formalized by `MetaMathlibExt.TM2Program.cmp_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-run).
 
 ## Sum of consecutive values
 
@@ -178,7 +178,7 @@ For $f : \mathbb{N} \to \mathbb{N}$ and $i, j \in \mathbb{N}$,
 $\mathrm{sumFrom}(f, i, j) = f(i) + f(i+1) + \dots + f(i+j-1)$ is the sum of $f(t)$ over the
 $j$ indices $t$ with $i \le t < i + j$; it is $0$ when $j = 0$.
 
-Formalized by `MetaMathlibExt.TM2Program.sumFrom`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#sum-from).
+Formalized by `MetaMathlibExt.TM2Program.sumFrom`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#sum-from).
 
 ## Termwise bound on a sum of consecutive values
 
@@ -186,7 +186,7 @@ Let $f : \mathbb{N} \to \mathbb{N}$ and
 $c, i, j \in \mathbb{N}$. If $f(t) \le c$ for every $t$ with $i \le t < i + j$, then
 $\mathrm{sumFrom}(f, i, j) = f(i) + f(i+1) + \dots + f(i+j-1)$ is at most $j \cdot c$.
 
-Formalized by `MetaMathlibExt.TM2Program.sumFrom_le`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#sum-from-le).
+Formalized by `MetaMathlibExt.TM2Program.sumFrom_le`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#sum-from-le).
 
 ## Loop head of a for loop over a counter
 
@@ -196,7 +196,7 @@ machine state by the state whose flag bit records whether a symbol was popped, a
 that bit: if a symbol was popped, it pushes $u'$ onto the index stack $c'$ and goes to label $b$
 (the loop body); if $c$ was empty, it goes to label $r$.
 
-Formalized by `MetaMathlibExt.TM2Program.forHead`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-head).
+Formalized by `MetaMathlibExt.TM2Program.forHead`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-head).
 
 ## Exact running time of a for loop over a counter
 
@@ -218,7 +218,7 @@ with $S_c = u^n$, $S_{c'}$ empty and $P(0, S)$, there are stack contents $S'$ su
 from $(h, v, S)$ to $(e, \mathrm{tag}(\mathrm{false}), S')$ in exactly $\sum_{i < n}
 (\mathrm{cost}(i) + 1) + n + 2$ steps, with $S'_c = u^n$, $S'_{c'}$ empty and $P(n, S')$.
 
-Formalized by `MetaMathlibExt.TM2Program.forLoop_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-run).
+Formalized by `MetaMathlibExt.TM2Program.forLoop_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-run).
 
 ## Pushing a list of symbols onto one stack
 
@@ -227,7 +227,7 @@ a list of symbols of the alphabet of stack $k$, and $q$ a statement of a TM2 mac
 statement that pushes $x_1, \dots, x_m$ onto stack $k$ in that order, so that $x_m$ ends on top
 when $m \ge 1$, and then continues with $q$.
 
-Formalized by `MetaMathlibExt.TM2Program.pushList`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#push-list).
+Formalized by `MetaMathlibExt.TM2Program.pushList`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#push-list).
 
 ## Pushing a constant list
 
@@ -236,7 +236,7 @@ stack $k$ and a label $\ell$, this statement pushes $x_1, \dots, x_m$ onto stack
 so that $x_m$ ends on top, and then goes to label $\ell$. The machine executes it in a single
 step.
 
-Formalized by `MetaMathlibExt.TM2Program.emit`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit).
+Formalized by `MetaMathlibExt.TM2Program.emit`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 547](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L547). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit).
 
 ## Copying a counter through a scratch stack
 
@@ -251,7 +251,7 @@ empty. Then exactly $2m + 2$ steps of $M$ lead from label $l_1$ with state $v$ a
 label $\mathit{next}$ with the state storing the flag false and the stacks $S$ with $c$ replaced
 by $u_c^{m+p}$.
 
-Formalized by `MetaMathlibExt.TM2Program.copy_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#copy-run).
+Formalized by `MetaMathlibExt.TM2Program.copy_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#copy-run).
 
 ## Adding two counters into a third
 
@@ -269,7 +269,7 @@ $u_c^p$ and $t$ is empty. Then exactly $2m + 2n + 4$ steps of $M$ lead from labe
 state $v$ and stacks $S$ to label $\mathit{next}$ with the state storing the flag false and the
 stacks $S$ with $c$ replaced by $u_c^{m+n+p}$.
 
-Formalized by `MetaMathlibExt.TM2Program.add_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#add-run).
+Formalized by `MetaMathlibExt.TM2Program.add_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 610](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L610). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#add-run).
 
 ## Multiplying unary counters
 
@@ -289,14 +289,14 @@ empty, $S_b = u_b^n$, $S_c = u_c^p$ and $S_t$ empty, $M$ goes from $(h, v, S)$ t
 $(e, \mathrm{tag}(\mathrm{false}), S')$ in exactly $m(2n + 3) + m + 2$ steps, where $S'$ agrees
 with $S$ on every stack except $c$ and $S'_c = u_c^{mn + p}$.
 
-Formalized by `MetaMathlibExt.TM2Program.mul_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#mul-run).
+Formalized by `MetaMathlibExt.TM2Program.mul_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#mul-run).
 
 ## Repeated block
 
 For a list $ys$ and $n \in \mathbb{N}$, $\mathrm{rep}(ys, n)$ is the
 concatenation of $n$ copies of $ys$; it is the empty list when $n = 0$.
 
-Formalized by `MetaMathlibExt.TM2Program.rep`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#rep).
+Formalized by `MetaMathlibExt.TM2Program.rep`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 682](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L682). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#rep).
 
 ## Prepending a constant list
 
@@ -305,7 +305,7 @@ stack $k$ and a label $\ell$, this statement pushes $y_m, \dots, y_1$ onto stack
 and then goes to label $\ell$; it is the constant-list push of the reversed list. Afterwards
 $y_1, \dots, y_m$ sit on top of stack $k$, read from the top down.
 
-Formalized by `MetaMathlibExt.TM2Program.emitR`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit-r).
+Formalized by `MetaMathlibExt.TM2Program.emitR`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 698](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L698). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit-r).
 
 ## Draining a counter while prepending a block
 
@@ -318,7 +318,7 @@ to $\ell$; if stack $k$ was empty, it goes to $\ell'$.
 Used as the statement at label $\ell$ with $k \ne o$, it empties a unary counter on stack $k$ and
 prepends one copy of $ys$ to stack $o$ per unit removed, then goes to $\ell'$.
 
-Formalized by `MetaMathlibExt.TM2Program.xferE`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer-e).
+Formalized by `MetaMathlibExt.TM2Program.xferE`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#xfer-e).
 
 ## Gap emission
 
@@ -343,7 +343,7 @@ $\mathit{dec}$ with state $v$ and stacks $S$ to label $\mathit{next}$ with the s
 flag false and the stacks $S$ with $P$ replaced by $u_P^q$ and $o$ replaced by $g$ copies of $ys$
 concatenated, followed by the old contents of $o$.
 
-Formalized by `MetaMathlibExt.TM2Program.emitDiff_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit-diff-run).
+Formalized by `MetaMathlibExt.TM2Program.emitDiff_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 750](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L750). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#emit-diff-run).
 
 ## Reachability for a TM2 machine
 
@@ -351,7 +351,7 @@ For a TM2 machine $M$ and configurations $c$ and $d$, $d$
 is reachable from $c$ when there is some $n \in \mathbb{N}$ such that $M$ runs from $c$ to $d$
 in exactly $n$ steps.
 
-Formalized by `MetaMathlibExt.TM2Program.Reach`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#reach).
+Formalized by `MetaMathlibExt.TM2Program.Reach`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 825](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L825). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#reach).
 
 ## A for loop over a counter reaches its exit
 
@@ -372,7 +372,7 @@ contents $S$ with $S_c = u^n$, $S_{c'}$ empty and $P(0, S)$, there are stack con
 $M$ goes from $(h, v, S)$ to $(e, \mathrm{tag}(\mathrm{false}), S')$ in finitely many steps, with
 $S'_c = u^n$, $S'_{c'}$ empty and $P(n, S')$.
 
-Formalized by `MetaMathlibExt.TM2Program.forLoop_reach`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-reach).
+Formalized by `MetaMathlibExt.TM2Program.forLoop_reach`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-reach).
 
 ## Runs within a step budget
 
@@ -380,7 +380,7 @@ For a TM2 machine $M$, a bound $B \in \mathbb{N}$ and
 configurations $c$ and $d$, $M$ runs from $c$ to $d$ within $B$ steps when there is some
 $n \le B$ such that $M$ runs from $c$ to $d$ in exactly $n$ steps.
 
-Formalized by `MetaMathlibExt.TM2Program.RunLe`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 901](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L901). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le).
+Formalized by `MetaMathlibExt.TM2Program.RunLe`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 901](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L901). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le).
 
 ## Budgeted run
 
@@ -390,7 +390,7 @@ is an $n \in \mathbb{N}$ with $K + n \le X$ such that $n$ steps of $M$ lead from
 
 It is used for goal-directed chaining of runs: the chaining lemmas only increase $K$.
 
-Formalized by `MetaMathlibExt.TM2Program.Bud`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#bud).
+Formalized by `MetaMathlibExt.TM2Program.Bud`, a definition declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 907](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L907). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#bud).
 
 ## Time bound for a for loop over a counter
 
@@ -411,7 +411,7 @@ $v$ and all stack contents $S$ with $S_c = u^n$, $S_{c'}$ empty and $P(0, S)$, t
 contents $S'$ such that $M$ goes from $(h, v, S)$ to $(e, \mathrm{tag}(\mathrm{false}), S')$ in at
 most $n(B + 1) + n + 2$ steps, with $S'_c = u^n$, $S'_{c'}$ empty and $P(n, S')$.
 
-Formalized by `MetaMathlibExt.TM2Program.forLoop_le`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Program.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-le).
+Formalized by `MetaMathlibExt.TM2Program.forLoop_le`, a theorem declared in [MathlibExt/Computability/TuringMachine/Program.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Program.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#for-loop-le).
 
 ## Bit test for the top of a stack
 
@@ -420,7 +420,7 @@ bit or as a marker. For an optional symbol $o$ (the top of a stack, absent when 
 empty), the test is true when $o$ is a symbol that $d$ reads as a bit, and false when $o$ is
 absent or $d$ reads it as a marker.
 
-Formalized by `MetaMathlibExt.TM2Program.isBit`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#is-bit).
+Formalized by `MetaMathlibExt.TM2Program.isBit`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#is-bit).
 
 ## Bit on top of a stack
 
@@ -429,7 +429,7 @@ a marker. For an optional symbol $o$ (the top of a stack, absent when the stack 
 bit of $o$ under $d$ is $x$ when $o$ is a symbol that $d$ reads as the bit $x$, and false when $o$
 is absent or $d$ reads it as a marker.
 
-Formalized by `MetaMathlibExt.TM2Program.bitOf`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#bit-of).
+Formalized by `MetaMathlibExt.TM2Program.bitOf`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#bit-of).
 
 ## Bit blocks
 
@@ -437,7 +437,7 @@ Let $d$ be a decoder that reads each symbol either as a bit or as a marker. A
 list of symbols $s_1, \dots, s_n$ is the bit block of a bit string $p$ under $d$ when $p$ has the
 same length $n$ and, for each $i$, $d$ reads $s_i$ as the $i$-th bit of $p$.
 
-Formalized by `MetaMathlibExt.TM2Program.IsBitBlock`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#is-bit-block).
+Formalized by `MetaMathlibExt.TM2Program.IsBitBlock`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#is-bit-block).
 
 ## End of a bit block
 
@@ -445,7 +445,7 @@ Let $d$ be a decoder that reads each symbol either as a bit or as a
 marker. A list of symbols $A$ (the rest of a stack below a block) ends a bit block under $d$ when
 $A$ is empty or $d$ reads its first symbol as a marker.
 
-Formalized by `MetaMathlibExt.TM2Program.EndsBitBlock`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#ends-bit-block).
+Formalized by `MetaMathlibExt.TM2Program.EndsBitBlock`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#ends-bit-block).
 
 ## Bit-moving loop
 
@@ -456,7 +456,7 @@ $a$: if it is a symbol that $d$ reads as a bit $x$, it pops it, pushes $g(x)$ on
 $\mathit{self}$; if it is a marker or $a$ is empty, it goes to $\mathit{next}$. It overwrites the
 state with a flag bit, used as scratch.
 
-Formalized by `MetaMathlibExt.TM2Program.moveB`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b).
+Formalized by `MetaMathlibExt.TM2Program.moveB`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b).
 
 ## Running the bit-moving loop
 
@@ -472,7 +472,7 @@ label $\mathit{next}$, state $v'$ and stacks $S'$, where $S'(a) = A$, $S'(b)$ is
 $g(p_n), \dots, g(p_1)$ (top first) followed by $S(b)$, and $S'(k) = S(k)$ for every other stack
 $k$.
 
-Formalized by `MetaMathlibExt.TM2Program.moveB_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b-run).
+Formalized by `MetaMathlibExt.TM2Program.moveB_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b-run).
 
 ## Bit-block comparison statement
 
@@ -485,7 +485,7 @@ $\ell$. Otherwise it changes no stack: it goes to $\ell_=$ if neither top is a b
 and $b$ is empty or has a marker on top), and to $\ell_{\ne}$ if the tops are different bits or
 exactly one of them is a bit. It records its tests in the one-bit flag of the machine state.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpB`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b).
+Formalized by `MetaMathlibExt.TM2Program.cmpB`, a definition declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b).
 
 ## Four pairwise distinct stacks
 
@@ -494,7 +494,7 @@ distinct: $a \ne b$, $a \ne t_a$, $a \ne t_b$, $b \ne t_a$, $b \ne t_b$ and $t_a
 
 These are the two compared stacks and the two scratch stacks of the bit-block comparison.
 
-Formalized by `MetaMathlibExt.TM2Program.Distinct4`, a structure declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#distinct4).
+Formalized by `MetaMathlibExt.TM2Program.Distinct4`, a structure declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#distinct4).
 
 ## Comparison pops a common prefix
 
@@ -509,7 +509,7 @@ in which stack $a$ is $A$, stack $b$ is $B$, stack $t_a$ holds $e_a(p_n), \dots,
 of its old contents, stack $t_b$ holds $e_b(p_n), \dots, e_b(p_1)$ on top of its old contents,
 and every other stack is unchanged.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpB_prefix`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-prefix).
+Formalized by `MetaMathlibExt.TM2Program.cmpB_prefix`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-prefix).
 
 ## Deciding step of the comparison
 
@@ -521,7 +521,7 @@ program takes one step to a configuration with the same stacks and some state, a
 if neither top is a bit (each of $a$ and $b$ is empty or has a marker on top) and at label
 $\ell_{\ne}$ otherwise.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpB_last`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-last).
+Formalized by `MetaMathlibExt.TM2Program.cmpB_last`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-last).
 
 ## Correctness of the bit-block comparison
 
@@ -540,7 +540,7 @@ stack $b$ holds $Y$ without its first $m$ symbols on top of $B$, stack $t_a$ hol
 $e_a(c_m), \dots, e_a(c_1)$ on top of its old contents, stack $t_b$ holds
 $e_b(c_m), \dots, e_b(c_1)$ on top of its old contents, and every other stack is unchanged.
 
-Formalized by `MetaMathlibExt.TM2Program.cmpB_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-run).
+Formalized by `MetaMathlibExt.TM2Program.cmpB_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#cmp-b-run).
 
 ## Recovering a bit block from its bits
 
@@ -550,7 +550,7 @@ bit $b$. If the symbol list $xs$ is a bit block for the bit list $u$ under $d$ a
 $c = c_1 \cdots c_m$ is a prefix of $u$, then the first $m$ symbols of $xs$ are
 $g(c_1), \dots, g(c_m)$.
 
-Formalized by `MetaMathlibExt.TM2Program.IsBitBlock.take_eq_map`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#take-eq-map).
+Formalized by `MetaMathlibExt.TM2Program.IsBitBlock.take_eq_map`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#take-eq-map).
 
 ## Restoring a stack after a comparison
 
@@ -567,7 +567,7 @@ on top of a list $A$, the program reaches in exactly $m + 1$ steps a configurati
 $\ell'$, with some state, in which stack $t$ is $R$, stack $a$ holds $X$ on top of $A$, and every
 other stack is unchanged.
 
-Formalized by `MetaMathlibExt.TM2Program.moveB_restore`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/BitOps.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b-restore).
+Formalized by `MetaMathlibExt.TM2Program.moveB_restore`, a theorem declared in [MathlibExt/Computability/TuringMachine/BitOps.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/BitOps.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#move-b-restore).
 
 ## Popping a list of stacks
 
@@ -576,7 +576,7 @@ statement that pops the stacks listed in $ks$ in order, once per entry (an empty
 empty), after each pop replacing the state by the one storing the old flag or-ed with whether
 that pop found a symbol, and then continues with $q$.
 
-Formalized by `MetaMathlibExt.TM2Program.popAll`, a definition declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Cleanup.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#pop-all).
+Formalized by `MetaMathlibExt.TM2Program.popAll`, a definition declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Cleanup.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#pop-all).
 
 ## Cleanup round
 
@@ -586,7 +586,7 @@ pops the stacks listed in $ks$ in order, once per entry (an empty stack stays em
 recording in the flag whether some pop found a symbol, and then goes to $\mathit{self}$ if one
 did and to $\mathit{next}$ otherwise.
 
-Formalized by `MetaMathlibExt.TM2Program.cleanS`, a definition declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Cleanup.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#clean-s).
+Formalized by `MetaMathlibExt.TM2Program.cleanS`, a definition declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Cleanup.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#clean-s).
 
 ## Cleanup empties its stacks
 
@@ -599,7 +599,7 @@ $\mathit{self}$, state $v$ and stacks $S$ to label $\mathit{next}$, the state st
 value false, and the stacks $S'$ with $S'(k)$ empty for every $k$ in $ks$ and $S'(k) = S(k)$ for
 every other stack $k$.
 
-Formalized by `MetaMathlibExt.TM2Program.clean_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/Cleanup.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#clean-run).
+Formalized by `MetaMathlibExt.TM2Program.clean_run`, a theorem declared in [MathlibExt/Computability/TuringMachine/Cleanup.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/Cleanup.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#clean-run).
 
 ## Stack embedding
 
@@ -609,7 +609,7 @@ consists of an injective map $e : K \to K'$ renaming the stacks together with, f
 $k \in K$, a bijection $\iota_k : \Gamma_k \to \Gamma'_{e(k)}$ from the alphabet of $k$ onto the
 alphabet of its image.
 
-Formalized by `MetaMathlibExt.TM2Embedding.SEmb`, a structure declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#semb).
+Formalized by `MetaMathlibExt.TM2Embedding.SEmb`, a structure declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#semb).
 
 ## Translating a statement along a stack embedding
 
@@ -622,7 +622,7 @@ pop on stack $e(k)$ whose result is mapped back by $\iota_k^{-1}$ before the sta
 to label $f(s)$ becomes a jump to $\varphi(f(s))$. State updates, branches and halt are kept, with
 their sub-statements translated.
 
-Formalized by `MetaMathlibExt.TM2Embedding.mapS`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#map-s).
+Formalized by `MetaMathlibExt.TM2Embedding.mapS`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#map-s).
 
 ## Embedding of a machine in a host
 
@@ -633,7 +633,7 @@ statement of $M'$ at $\varphi(\ell)$ is the statement of $M$ at $\ell$ translate
 $\varphi$, or the statement of $M$ at $\ell$ is the halt statement (in which case $M'$ may do
 anything at $\varphi(\ell)$).
 
-Formalized by `MetaMathlibExt.TM2Embedding.Embeds`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#embeds).
+Formalized by `MetaMathlibExt.TM2Embedding.Embeds`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#embeds).
 
 ## Agreement of host and sub-machine stacks
 
@@ -642,7 +642,7 @@ renaming $e$ and alphabet bijections $\iota_k$. Stack contents $S$ of the sub-ma
 of the host agree when, for every sub-machine stack $k$, the host stack $e(k)$ holds the list
 obtained from $S(k)$ by applying $\iota_k$ to each symbol.
 
-Formalized by `MetaMathlibExt.TM2Embedding.Agree`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#agree).
+Formalized by `MetaMathlibExt.TM2Embedding.Agree`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#agree).
 
 ## Frame condition for a stack embedding
 
@@ -651,7 +651,7 @@ $e$. Two contents $S'$ and $S''$ of the host's stacks satisfy the frame conditio
 stack $k'$ outside the image of $e$ has the same contents in both: $S''(k') = S'(k')$ whenever
 $e(k) \ne k'$ for every sub-machine stack $k$.
 
-Formalized by `MetaMathlibExt.TM2Embedding.Frame`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#frame).
+Formalized by `MetaMathlibExt.TM2Embedding.Frame`, a definition declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#frame).
 
 ## Executing a translated statement
 
@@ -664,7 +664,7 @@ $\varphi$ from state $v$ and stacks $S'$ yields the next label $\varphi(\ell)$ (
 none), state $w$ and stacks $T'$. Moreover $T'$ agrees with $T$, and $S'$, $T'$ satisfy the frame
 condition.
 
-Formalized by `MetaMathlibExt.TM2Embedding.stepAux_mapS`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#step-aux-map-s).
+Formalized by `MetaMathlibExt.TM2Embedding.stepAux_mapS`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#step-aux-map-s).
 
 ## Run embedding
 
@@ -678,7 +678,7 @@ label $\varphi(\ell)$, state $v$ and stacks $S'$ to label $\varphi(\ell')$, stat
 $T'$. Moreover $T'$ agrees with $T$, and $S'$, $T'$ satisfy the frame condition: host stacks
 outside the image of $e$ are unchanged.
 
-Formalized by `MetaMathlibExt.TM2Embedding.run_embed`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed).
+Formalized by `MetaMathlibExt.TM2Embedding.run_embed`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed).
 
 ## Run embedding for bounded runs
 
@@ -691,28 +691,28 @@ $\varphi(\ell)$, state $v$ and stacks $S'$ to label $\varphi(\ell')$, state $v'$
 Moreover $T'$ agrees with $T$, and $S'$, $T'$ satisfy the frame condition: host stacks outside
 the image of $e$ are unchanged.
 
-Formalized by `MetaMathlibExt.TM2Embedding.runLe_embed`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le-embed).
+Formalized by `MetaMathlibExt.TM2Embedding.runLe_embed`, a theorem declared in [MathlibExt/Computability/TuringMachine/StackEmbedding.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/StackEmbedding.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le-embed).
 
 ## Exact program matching transports a run with its step count
 
 Exact program matching transports a run, including a halted endpoint, while preserving
 the local state, embedded stacks, untouched host stacks, and exact number of steps.
 
-Formalized by `MetaMathlibExt.TM2Embedding.run_embed_exact`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed-exact).
+Formalized by `MetaMathlibExt.TM2Embedding.run_embed_exact`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed-exact).
 
 ## Exact run transport to supplied host final stacks
 
 Source-shaped transport to supplied host final stacks: agreement fixes embedded slots
 and the frame condition fixes every other slot, so the host endpoint is exact.
 
-Formalized by `MetaMathlibExt.TM2Embedding.run_embed_exact_of_agree_frame`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed-exact-of-agree-frame).
+Formalized by `MetaMathlibExt.TM2Embedding.run_embed_exact_of_agree_frame`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-embed-exact-of-agree-frame).
 
 ## Exact matching transports a bounded run
 
 Exact matching transports a bounded run with arbitrary optional endpoints, retaining
 the same step witness and budget as well as agreement and the host frame.
 
-Formalized by `MetaMathlibExt.TM2Embedding.runLe_embed_exact`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le-embed-exact).
+Formalized by `MetaMathlibExt.TM2Embedding.runLe_embed_exact`, a theorem declared in [MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Computability/TuringMachine/ExactStackEmbedding.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html#run-le-embed-exact).
 
 ## Depends on
 
@@ -721,4 +721,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Programming multi-stack machines](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/turing-machines/multi-tape-and-multi-stack/programming-multi-stack-machines)

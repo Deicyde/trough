@@ -8,7 +8,7 @@ proof: formalized
 
 # Fano's inequality
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html).
 
 ## Fano's inequality, general form
 
@@ -23,7 +23,7 @@ $$H(X \mid Y) \le -P_e \log P_e - (1 - P_e) \log (1 - P_e) + P_e \log (|\alpha| 
 
 This version does not assume decidable equality on $\beta$.
 
-Formalized by `MathlibExt.InformationTheory.Fano.fano_inequality_general`, a theorem declared in [MathlibExt/InformationTheory/Fano.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/Fano.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html#fano-inequality-general).
+Formalized by `MathlibExt.InformationTheory.Fano.fano_inequality_general`, a theorem declared in [MathlibExt/InformationTheory/Fano.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/Fano.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html#fano-inequality-general).
 
 ## Fano's inequality
 
@@ -40,7 +40,7 @@ $$H(X \mid Y) \le -P_e \log P_e - (1 - P_e) \log (1 - P_e) + P_e \log (|\alpha| 
 
 - R. M. Fano, Transmission of Information, MIT Press (1961). It follows from `fano_inequality_general`; the unused `[DecidableEq β]` keeps the source's shape.
 
-Formalized by `MathlibExt.InformationTheory.Fano.fano_inequality`, a theorem declared in [MathlibExt/InformationTheory/Fano.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/Fano.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html#fano-inequality).
+Formalized by `MathlibExt.InformationTheory.Fano.fano_inequality`, a theorem declared in [MathlibExt/InformationTheory/Fano.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/Fano.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html#fano-inequality).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fano's inequality](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/fano-s-inequality/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/InformationTheory/information-inequalities/fano-s-inequality)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/InformationTheory/information-inequalities/fano-s-inequality)

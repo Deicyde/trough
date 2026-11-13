@@ -7,7 +7,7 @@ statement: formalized
 
 # Euler's function and divisor sums along linear recurrences
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html).
 
 ## Lower bound for Euler's function and upper bound for the sum of divisors
 
@@ -20,7 +20,7 @@ is a constant $C'$ such that $\sigma(n)/n \le C' \log\log n$ for every integer $
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 1, quoted from Hardy and Wright, Theorems 323, 328 and 329.
 
-Stated but not proved: `MetaMathlibExt.totient_div_gg_and_sigma_div_ll_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#totient-div-gg-and-sigma-div-ll-log-log).
+Stated but not proved: `MetaMathlibExt.totient_div_gg_and_sigma_div_ll_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#totient-div-gg-and-sigma-div-ll-log-log).
 
 ## Sieve bound for integers without small prime factors
 
@@ -33,7 +33,7 @@ most $C x / \log y$.
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 2, quoted from Tenenbaum, page 397.
 
-Stated but not proved: `MetaMathlibExt.card_minFac_gt_le_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-min-fac-gt-le-div-log).
+Stated but not proved: `MetaMathlibExt.card_minFac_gt_le_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-min-fac-gt-le-div-log).
 
 ## Integers with many prime factors are rare
 
@@ -46,7 +46,7 @@ $C x / (\log x)^2$.
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.card_cardFactors_ge_ten_log_log_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-card-factors-ge-ten-log-log-le).
+Stated but not proved: `MetaMathlibExt.card_cardFactors_ge_ten_log_log_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-card-factors-ge-ten-log-log-le).
 
 ## Integers whose sum of divisors has many divisors
 
@@ -59,7 +59,7 @@ $\tau(\sigma(n)) > \exp(\sqrt{\log x})$ is at most $C x / (\log x)^2$.
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.card_divisors_sigma_gt_exp_sqrt_log_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-divisors-sigma-gt-exp-sqrt-log-le).
+Stated but not proved: `MetaMathlibExt.card_divisors_sigma_gt_exp_sqrt_log_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-divisors-sigma-gt-exp-sqrt-log-le).
 
 ## Schmidt's bound on the zeros of a linear recurrence
 
@@ -76,7 +76,7 @@ $\exp(\exp(\exp(3k \log k)))$ such $n$.
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 3, quoted from Schmidt.
 
-Stated but not proved: `MetaMathlibExt.zero_set_card_le_exp_exp_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#zero-set-card-le-exp-exp-exp).
+Stated but not proved: `MetaMathlibExt.zero_set_card_le_exp_exp_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#zero-set-card-le-exp-exp-exp).
 
 ## Few small values of a nondegenerate integer linear recurrence
 
@@ -95,7 +95,7 @@ integers $1 \le n \le x$ with $|U_n| \le |\alpha_1|^{n(1 - x^{-c})}$ is at most 
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.card_abs_le_dominant_root_pow_le_sqrt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-abs-le-dominant-root-pow-le-sqrt).
+Stated but not proved: `MetaMathlibExt.card_abs_le_dominant_root_pow_le_sqrt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-abs-le-dominant-root-pow-le-sqrt).
 
 ## Euler's function and the sum of divisors along a linear recurrence
 
@@ -117,7 +117,7 @@ $|U_{\sigma(n)}| < \sigma(|U_n|)$ is at most $C x / \log x$.
 
 - Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_totient_sigma_inequality_fails_le_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-totient-sigma-inequality-fails-le-d).
+Stated but not proved: `MetaMathlibExt.card_totient_sigma_inequality_fails_le_div_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/EulerFunctionLinearRecurrenceWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html#card-totient-sigma-inequality-fails-le-d).
 
 ## Depends on
 
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Euler's function and divisor sums along linear recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/euler-s-function-and-divisor-sums-along-linear-r)

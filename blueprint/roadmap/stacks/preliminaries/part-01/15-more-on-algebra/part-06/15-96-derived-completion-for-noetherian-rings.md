@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.96 Derived completion for Noetherian rings
 
-Section 15.96 of the Stacks Project, [Tag 0BKH](https://stacks.math.columbia.edu/tag/0BKH). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.96 of the Stacks Project, [Tag 0BKH](https://stacks.math.columbia.edu/tag/0BKH). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0921, a lemma
 
 [Tag 0921](https://stacks.math.columbia.edu/tag/0921) in the Stacks Project.
 
-**`NoetherianKoszulProIso.koszulPowerSystem_proIso_quotientPowerSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianKoszulProIso.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianKoszulProIso.lean#L750).
+**`NoetherianKoszulProIso.koszulPowerSystem_proIso_quotientPowerSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianKoszulProIso.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianKoszulProIso.lean#L750).
 
 > **Stacks Project, Tag 0921.** Over a Noetherian ring, the inverse systems in the derived
 > category formed by the Koszul complexes on the positive powers of a finite sequence and by the
@@ -39,7 +39,7 @@ public theorem koszulPowerSystem_proIso_quotientPowerSystem
 
 [Tag 0922](https://stacks.math.columbia.edu/tag/0922) in the Stacks Project.
 
-**`NoetherianAdicCompletion.idealPowerDerivedLimit_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompleteIdealPowers.lean, line 1146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianCompleteIdealPowers.lean#L1146).
+**`NoetherianAdicCompletion.idealPowerDerivedLimit_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompleteIdealPowers.lean, line 1146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianCompleteIdealPowers.lean#L1146).
 
 > **Stacks 0922.** Over a Noetherian ring, derived completion is left adjoint to the
 > inclusion of derived-complete objects and is computed by `R lim (K ⊗ᴸ[A] A/Iⁿ)`.
@@ -73,7 +73,7 @@ public theorem idealPowerDerivedLimit_isLeftAdjoint
 
 [Tag 0EET](https://stacks.math.columbia.edu/tag/0EET) in the Stacks Project.
 
-**`AdicCompletionTor.derivedCompletion_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionTorSequence.lean, line 1111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionTorSequence.lean#L1111).
+**`AdicCompletionTor.derivedCompletion_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionTorSequence.lean, line 1111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionTorSequence.lean#L1111).
 
 > **Stacks 0EET.** Over a Noetherian ring, derived completion has Milnor short exact
 > sequences. For a module these read
@@ -116,7 +116,7 @@ public theorem derivedCompletion_homology_shortExact
 
 [Tag 0A06](https://stacks.math.columbia.edu/tag/0A06) in the Stacks Project.
 
-**`AdicCompletionCohomology.derivedCompletion_homology_iso_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCohomologyAdicCompletion.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianCohomologyAdicCompletion.lean#L290).
+**`AdicCompletionCohomology.derivedCompletion_homology_iso_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCohomologyAdicCompletion.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianCohomologyAdicCompletion.lean#L290).
 
 > If every cohomology module of a complex over a Noetherian ring is finite,
 > then the cohomology modules of its derived completion are the adic completions of the original
@@ -148,7 +148,7 @@ public theorem derivedCompletion_homology_iso_adicCompletion
 
 [Tag 09BA](https://stacks.math.columbia.edu/tag/09BA) in the Stacks Project.
 
-**`FiniteDerivedComplete.exists_finite_adicCompletionModule_of_isDerivedCompleteModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianExtFiniteComplete.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianExtFiniteComplete.lean#L357).
+**`FiniteDerivedComplete.exists_finite_adicCompletionModule_of_isDerivedCompleteModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianExtFiniteComplete.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianExtFiniteComplete.lean#L357).
 
 > **Stacks 09BA.** A derived-complete module over a Noetherian ring whose reduction modulo
 > `I` is finite is canonically its `I`-adic completion and is finite over the completed ring.
@@ -171,7 +171,7 @@ public theorem exists_finite_adicCompletionModule_of_isDerivedCompleteModule
 
 [Tag 0EEU](https://stacks.math.columbia.edu/tag/0EEU) in the Stacks Project.
 
-**`AdicCompletionFlatTensor.derivedCompletion_iso_adicCompletion_of_finite_tensor_flat_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompleteFlatTensor.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianCompleteFlatTensor.lean#L406).
+**`AdicCompletionFlatTensor.derivedCompletion_iso_adicCompletion_of_finite_tensor_flat_and_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompleteFlatTensor.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianCompleteFlatTensor.lean#L406).
 
 > Let `I` be an ideal of a Noetherian ring `A`. Derived `I`-adic
 > completion agrees with ordinary `I`-adic completion for the tensor product of a finite
@@ -209,7 +209,7 @@ public theorem derivedCompletion_iso_adicCompletion_of_finite_tensor_flat_and_lo
 
 [Tag 0EEV](https://stacks.math.columbia.edu/tag/0EEV) in the Stacks Project.
 
-**`AdicCompletionPseudoCoherentTensor.derivedCompletion_tensor_iso_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianTorPseudoCoherent.lean, line 918](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianTorPseudoCoherent.lean#L918).
+**`AdicCompletionPseudoCoherentTensor.derivedCompletion_tensor_iso_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianTorPseudoCoherent.lean, line 919](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianTorPseudoCoherent.lean#L919).
 
 > **Stacks 0EEV.** Derived completion of a bounded-above complex commutes with derived
 > tensor product by a finite module, and more generally by a pseudo-coherent complex.
@@ -250,4 +250,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.96, Tag 0BKH](https://stacks.math.columbia.edu/tag/0BKH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# 28.23 Extending quasi-coherent… to 28.30 Finding suitable affine…
+# 28.22 Locally projective modules to 28.30 Finding suitable affine…
 
+- [28.22 Locally projective modules](28-22-locally-projective-modules.md)
 - [28.23 Extending quasi-coherent sheaves](28-23-extending-quasi-coherent-sheaves.md)
 - [28.24 Gabber's result](28-24-gabbers-result.md)
 - [28.25 Sections with support in a closed subset](28-25-sections-with-support-in-a-closed-subset.md)

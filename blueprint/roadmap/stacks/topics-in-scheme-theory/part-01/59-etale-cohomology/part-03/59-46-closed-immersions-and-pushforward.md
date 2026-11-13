@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.46 Closed immersions and pushforward
 
-Section 59.46 of the Stacks Project, [Tag 04E1](https://stacks.math.columbia.edu/tag/04E1). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.46 of the Stacks Project, [Tag 04E1](https://stacks.math.columbia.edu/tag/04E1). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04FV, a lemma
 
 [Tag 04FV](https://stacks.math.columbia.edu/tag/04FV) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_span_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/LiftingMorphisms.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/LiftingMorphisms.lean#L83).
+**`AlgebraicGeometry.exists_span_baseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/LiftingMorphisms.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/LiftingMorphisms.lean#L83).
 
 > **Stacks Project, Tag 04FV.** A morphism over a closed subscheme between the
 > base changes of two étale schemes is induced by a span over the original scheme,
@@ -40,7 +40,7 @@ theorem exists_span_baseChange_iso
         e.hom = aZ ∧ h = e.inv ≫ bZ
 ```
 
-**`AlgebraicGeometry.Space.exists_isIso_smallBaseChange_map_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionChartLocalFullness.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionChartLocalFullness.lean#L345). The attribute's comment: “for algebraic spaces”.
+**`AlgebraicGeometry.Space.exists_isIso_smallBaseChange_map_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionChartLocalFullness.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionChartLocalFullness.lean#L345). The attribute's comment: “for algebraic spaces”.
 
 > **Stacks 04FV** for algebraic spaces. Let `i : Z ⟶ X` be a closed immersion of algebraic
 > spaces over a scheme `S`, let `U` and `U'` be étale scheme charts of `X`, and let `φ` be a
@@ -65,7 +65,7 @@ theorem exists_isIso_smallBaseChange_map_of_isClosedImmersion
 
 [Tag 04FW](https://stacks.math.columbia.edu/tag/04FW) in the Stacks Project.
 
-**`Stacks.Etale.exists_etale_openCover_isomorphic_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/LiftAcrossClosedImmersion.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/LiftAcrossClosedImmersion.lean#L219).
+**`Stacks.Etale.exists_etale_openCover_isomorphic_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/LiftAcrossClosedImmersion.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/LiftAcrossClosedImmersion.lean#L219).
 
 > **Stacks Project, Tag 04FW.** If `i : Z ⟶ X` is a closed immersion and `p : V ⟶ Z` is
 > étale, then `V` has a Zariski open cover whose members are, over `Z`, base changes along `i`
@@ -86,7 +86,7 @@ theorem exists_etale_openCover_isomorphic_pullback_of_isClosedImmersion
 
 [Tag 04FX](https://stacks.math.columbia.edu/tag/04FX) in the Stacks Project.
 
-**`AlgebraicGeometry.stalkPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L504). The attribute's comment: “stalk\_pushforward\_inside”.
+**`AlgebraicGeometry.stalkPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L506). The attribute's comment: “stalk\_pushforward\_inside”.
 
 > At a geometric point of the closed subscheme, direct image on the small
 > étale site does not change the stalk. This is natural in the sheaf.
@@ -104,7 +104,7 @@ public noncomputable def stalkPushforwardIso (B : BigEtaleSite.{u})
       etaleStalkPresheafFunctor B T.1 T.property s (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.stalkPushforwardIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L563). The attribute's comment: “stalk\_pushforward\_inside”.
+**`AlgebraicGeometry.stalkPushforwardIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L565). The attribute's comment: “stalk\_pushforward\_inside”.
 
 > The canonical comparison takes the germ of a section over an étale
 > neighborhood of the image point to the germ of the same section over its
@@ -138,7 +138,7 @@ public theorem stalkPushforwardIso_germ (B : BigEtaleSite.{u})
         (Opposite.op (Functor.elementsMk _ ((smallEtaleBaseChange B i).obj N.1) q))).hom σ
 ```
 
-**`AlgebraicGeometry.smallEtalePushforward_stalk_unique_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean#L142). The attribute's comment: “stalk\_pushforward\_outside”.
+**`AlgebraicGeometry.smallEtalePushforward_stalk_unique_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean#L142). The attribute's comment: “stalk\_pushforward\_outside”.
 
 > The stalk of the direct image from a closed subscheme is a singleton
 > outside that subscheme.
@@ -158,7 +158,7 @@ public theorem smallEtalePushforward_stalk_unique_of_not_mem_range
         (SmallEtale.topology B Z.1 Z.property)).obj G).obj), True
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardStalkIsoAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L202). The attribute's comment: “stalk of a direct image inside the closed subscheme, abelian sheaves”.
+**`AlgebraicGeometry.smallEtalePushforwardStalkIsoAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportedDerivedEquivalence.lean#L202). The attribute's comment: “stalk of a direct image inside the closed subscheme, abelian sheaves”.
 
 > **Stacks 04FX for abelian sheaves.** At a geometric point of the closed subscheme, direct
 > image of abelian sheaves along a closed immersion does not change the stalk, naturally in the
@@ -180,7 +180,7 @@ public def smallEtalePushforwardStalkIsoAb (s : GeometricPoint Z.1) :
 
 [Tag 04CA](https://stacks.math.columbia.edu/tag/04CA) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleAdjunction_counit_isIso_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L255). The attribute's comment: “left inverse, abelian sheaves”.
+**`AlgebraicGeometry.smallEtaleAdjunction_counit_isIso_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L255). The attribute's comment: “left inverse, abelian sheaves”.
 
 > **Stacks 04CA.** The counit of the inverse image/direct image adjunction along a closed
 > immersion is an isomorphism on every abelian sheaf.
@@ -193,7 +193,7 @@ public theorem smallEtaleAdjunction_counit_isIso_abelian
       (SmallEtale.topology B Z.1 Z.property)).counit.app F)
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardCompPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L265). The attribute's comment: “left inverse, abelian sheaves”.
+**`AlgebraicGeometry.smallEtalePushforwardCompPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L265). The attribute's comment: “left inverse, abelian sheaves”.
 
 > **Stacks 04CA.** Inverse image along a closed immersion is a left inverse to direct image
 > on abelian sheaves: the counit of the adjunction is a natural isomorphism.
@@ -209,7 +209,7 @@ public def smallEtalePushforwardCompPullbackIso :
       𝟭 (Sheaf (SmallEtale.topology B Z.1 Z.property) AddCommGrpCat.{u + 1})
 ```
 
-**`AlgebraicGeometry.smallEtalePushforward_essImage_iff_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L422). The attribute's comment: “part (2): essential image”.
+**`AlgebraicGeometry.smallEtalePushforward_essImage_iff_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L422). The attribute's comment: “part (2): essential image”.
 
 > **Stacks 04CA, part (2).** An abelian sheaf on the small étale site of `X` lies in the
 > essential image of direct image along a closed immersion `i : Z ⟶ X` exactly when its support
@@ -226,7 +226,7 @@ public theorem smallEtalePushforward_essImage_iff_abelian
         Set.range (B.inclusion.map i).base
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L148). The attribute's comment: “part (1): fully faithful”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L148). The attribute's comment: “part (1): fully faithful”.
 
 > Direct image of sheaves of sets along a closed immersion is fully faithful.
 
@@ -237,7 +237,7 @@ public def smallEtalePushforwardFullyFaithful {Z X : Scheme.{u}} (i : Z ⟶ X)
       (Scheme.smallEtaleTopology X) (Scheme.smallEtaleTopology Z)).FullyFaithful
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L156). The attribute's comment: “left inverse, sheaves of sets”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardCompInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L156). The attribute's comment: “left inverse, sheaves of sets”.
 
 > The counit `i^{-1} i_* ⟶ 𝟭` of the adjunction is an isomorphism.
 
@@ -250,7 +250,7 @@ public def smallEtalePushforwardCompInverseImageIso {Z X : Scheme.{u}} (i : Z �
       𝟭 (Sheaf (Scheme.smallEtaleTopology Z) (Type (max (u + 1) v)))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L318). The attribute's comment: “part (1): essential image”.
+**`Stacks.EtaleCohomology.smallEtalePushforward_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/SetSheafEssentialImage.lean#L319). The attribute's comment: “part (1): essential image”.
 
 > A sheaf of sets on `X_étale` lies in the essential image of direct image along a closed
 > immersion `i : Z ⟶ X` exactly when its restriction to the open complement of `Z` is the
@@ -264,7 +264,7 @@ public theorem smallEtalePushforward_essImage_iff {Z X : Scheme.{u}} (i : Z ⟶ 
       Nonempty (IsTerminal ((smallEtaleInverseImage.{u, v} (openComplement i).ι).obj F))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L59). The attribute's comment: “part (2): essential image”.
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_essImage_iff_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralUniversallyInjectivePushforwardEssImage.lean#L59). The attribute's comment: “part (2): essential image”.
 
 > An abelian sheaf on `W_étale` is a direct image along a closed immersion `j : Z ⟶ W` exactly
 > when its restriction to an open subscheme `U` complementary to the image of `j` vanishes, that
@@ -281,8 +281,8 @@ public theorem smallEtalePushforwardAb_essImage_iff_of_isClosedImmersion {Z W : 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsCoverDense.full_sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsCoverDense.full_sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L245) (StacksFrontier): “part (2): fully faithful”. References: SGA 4 III (4.1), “i) ⇒ ii)”.
-- [`CategoryTheory.Functor.IsCoverDense.faithful_sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsCoverDense.faithful_sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L249) (StacksFrontier): “part (2): fully faithful”.
+- [`CategoryTheory.Functor.IsCoverDense.full_sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsCoverDense.full_sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L245) (StacksFrontier): “part (2): fully faithful”. References: SGA 4 III (4.1), “i) ⇒ ii)”.
+- [`CategoryTheory.Functor.IsCoverDense.faithful_sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.IsCoverDense.faithful_sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/AbelianSheafEssentialImage.lean#L249) (StacksFrontier): “part (2): fully faithful”.
 
 ## Depends on
 
@@ -291,4 +291,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.46, Tag 04E1](https://stacks.math.columbia.edu/tag/04E1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

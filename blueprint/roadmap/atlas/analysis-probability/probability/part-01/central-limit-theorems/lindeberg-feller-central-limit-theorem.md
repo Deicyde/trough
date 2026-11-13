@@ -8,7 +8,7 @@ proof: formalized
 
 # Lindeberg–Feller central limit theorem
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html).
 
 ## Lindeberg condition for a triangular array
 
@@ -21,14 +21,14 @@ $$\sum_{k < n} \int_\Omega X_{n,k}^2 \, \mathbf{1}\{|X_{n,k}| > \varepsilon\} \,
 tend to $0$ as $n \to \infty$. This is the key hypothesis of the Lindeberg–Feller central limit
 theorem.
 
-Formalized by `ProbabilityTheory.LindebergConditionTriangular`, a definition declared in [MathlibExt/Probability/LindebergFeller.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/LindebergFeller.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-condition-triangular).
+Formalized by `ProbabilityTheory.LindebergConditionTriangular`, a definition declared in [MathlibExt/Probability/LindebergFeller.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/LindebergFeller.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-condition-triangular).
 
 ## Second-order Taylor bound for the imaginary exponential
 
 For every real $x$ with
 $|x| \le 1$, $|e^{ix} - 1 - ix| \le x^2$.
 
-Formalized by `ProbabilityTheory.norm_exp_ofReal_mul_I_sub_one_sub_le`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/LindebergFeller.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#norm-exp-of-real-mul-i-sub-one-sub-le).
+Formalized by `ProbabilityTheory.norm_exp_ofReal_mul_I_sub_one_sub_le`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/LindebergFeller.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#norm-exp-of-real-mul-i-sub-one-sub-le).
 
 ## Comparing a finite product with the exponential of a sum
 
@@ -43,7 +43,7 @@ $$
 This is the estimate that turns the second-order expansion of each characteristic function
 into convergence of the product.
 
-Formalized by `ProbabilityTheory.prod_one_add_sub_exp_sum_le`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/LindebergFeller.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#prod-one-add-sub-exp-sum-le).
+Formalized by `ProbabilityTheory.prod_one_add_sub_exp_sum_le`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/LindebergFeller.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#prod-one-add-sub-exp-sum-le).
 
 ## Analytic core of the Lindeberg–Feller theorem
 
@@ -56,7 +56,7 @@ Lindeberg condition. Then for every real $t$ the product $\prod_{k < n} \varphi_
 characteristic functions $\varphi_{n,k}$ of the laws of the $X_{n,k}$ converges to
 $e^{-\sigma^2 t^2 / 2}$ as $n \to \infty$.
 
-Formalized by `ProbabilityTheory.lindeberg_charFun_product_tendsto`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/LindebergFeller.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-char-fun-product-tendsto).
+Formalized by `ProbabilityTheory.lindeberg_charFun_product_tendsto`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/LindebergFeller.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-char-fun-product-tendsto).
 
 ## Lindeberg–Feller central limit theorem
 
@@ -70,7 +70,7 @@ Lindeberg condition. Then the row sums $S_n = \sum_{k < n} X_{n,k}$ converge in 
 the Gaussian law $N(0, \sigma^2)$: for every bounded continuous $f : \mathbb{R} \to \mathbb{R}$,
 $\mathbb{E}[f(S_n)] \to \int_{\mathbb{R}} f \, dN(0, \sigma^2)$ as $n \to \infty$.
 
-Formalized by `ProbabilityTheory.lindeberg_feller_clt_triangular`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/LindebergFeller.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-feller-clt-triangular).
+Formalized by `ProbabilityTheory.lindeberg_feller_clt_triangular`, a theorem declared in [MathlibExt/Probability/LindebergFeller.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/LindebergFeller.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html#lindeberg-feller-clt-triangular).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lindeberg–Feller central limit theorem](https://deicyde.github.io/atlas-lean/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/central-limit-theorems/lindeberg-feller-central-limit-theorem)

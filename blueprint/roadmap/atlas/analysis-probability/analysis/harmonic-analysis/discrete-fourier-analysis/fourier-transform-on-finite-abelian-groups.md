@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier transform on finite abelian groups
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html).
 
 ## Discrete Fourier transform on a finite abelian group
 
@@ -19,7 +19,7 @@ $\psi(a + b) = \psi(a)\psi(b)$) given by $\hat f(\psi) = \sum_{x \in G} \psi(x) 
 
 No complex conjugate is applied to the character.
 
-Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun`, a definition declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-fun).
+Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun`, a definition declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-fun).
 
 ## Fourier inversion on a finite abelian group
 
@@ -40,7 +40,7 @@ inversion sum).
 
 - A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2, Fourier inversion theorem.
 
-Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dft_inversion`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-inversion).
+Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dft_inversion`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-inversion).
 
 ## Plancherel formula on a finite abelian group
 
@@ -59,7 +59,7 @@ Section 4, proves the same identity by checking it on characters.
 
 - A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2, Plancherel formula.
 
-Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dft_plancherel`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-plancherel).
+Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dft_plancherel`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-plancherel).
 
 ## Translation modulates the discrete Fourier transform
 
@@ -75,7 +75,7 @@ Proof: reindex the finite sum by $x \mapsto x + t$ and use $\psi(x + t) = \psi(x
 
 - A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (translation and modulation).
 
-Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun_translate`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-fun-translate).
+Formalized by `MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun_translate`, a theorem declared in [MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/FiniteAbelianDFT.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html#dft-fun-translate).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fourier transform on finite abelian groups](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/discrete-fourier-analysis/fourier-transform-on-finite-abelian-groups)

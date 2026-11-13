@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.26 The derived category
 
-Section 24.26 of the Stacks Project, [Tag 0FT1](https://stacks.math.columbia.edu/tag/0FT1). 8 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.26 of the Stacks Project, [Tag 0FT1](https://stacks.math.columbia.edu/tag/0FT1). 8 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FT2, a lemma
 
 [Tag 0FT2](https://stacks.math.columbia.edu/tag/0FT2) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.zerothCohomology_map_eq_of_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L61). The attribute's comment: “h0\_factors”.
+**`SheafOfModules.DifferentialGradedModule.zerothCohomology_map_eq_of_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L61). The attribute's comment: “h0\_factors”.
 
 > Homotopic morphisms of right differential graded modules act identically on zeroth
 > cohomology.
@@ -25,7 +25,7 @@ theorem zerothCohomology_map_eq_of_homotopic (A : DifferentialGradedAlgebra.{t, 
     (zerothCohomologyFunctor A).map f = (zerothCohomologyFunctor A).map g
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L85). The attribute's comment: “h0\_factors”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L85). The attribute's comment: “h0\_factors”.
 
 > Zeroth cohomology on the homotopy category of right differential graded modules.
 
@@ -34,7 +34,7 @@ noncomputable def zerothCohomologyFunctor (A : DifferentialGradedAlgebra.{t, a} 
     HomotopyCategory.{t, a, m} A ⥤ SheafOfModules.{m} R
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor_isHomological`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyHomological.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyHomological.lean#L239). The attribute's comment: “H^0 on the homotopy category is a homological functor”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor_isHomological`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyHomological.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyHomological.lean#L239). The attribute's comment: “H^0 on the homotopy category is a homological functor”.
 
 > Zeroth cohomology on the homotopy category of right differential graded `A`-modules is a
 > homological functor: it takes a distinguished triangle of `K(Mod(A, d))` to an exact sequence of
@@ -49,7 +49,7 @@ instance zerothCohomologyFunctor_isHomological :
 
 [Tag 0FT3](https://stacks.math.columbia.edu/tag/0FT3) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.acyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L103). The attribute's comment: “the full subcategory of acyclic modules”.
+**`SheafOfModules.DifferentialGradedModule.acyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L103). The attribute's comment: “the full subcategory of acyclic modules”.
 
 > **Stacks Project, Tag 0FT3.** The acyclic objects of the homotopy category of right
 > differential graded `A`-modules: those whose underlying complex of sheaves of `O`-modules has
@@ -59,7 +59,7 @@ instance zerothCohomologyFunctor_isHomological :
 def acyclic : ObjectProperty (HomotopyCategory.{u, v, w} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L150). The attribute's comment: “strict fullness”.
+**`SheafOfModules.DifferentialGradedModule.acyclic_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L150). The attribute's comment: “strict fullness”.
 
 > **Stacks Project, Tag 0FT3.** The subcategory of acyclic objects is strictly full: it is the
 > homological kernel of a functor, which is closed under isomorphisms.
@@ -69,7 +69,7 @@ instance acyclic_isClosedUnderIsomorphisms :
     (acyclic.{u, v, w} A).IsClosedUnderIsomorphisms
 ```
 
-**`SheafOfModules.DifferentialGradedModule.acyclic_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L159). The attribute's comment: “triangulated subcategory”.
+**`SheafOfModules.DifferentialGradedModule.acyclic_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L159). The attribute's comment: “triangulated subcategory”.
 
 > **Stacks Project, Tag 0FT3.** The acyclic objects form a triangulated subcategory of the
 > homotopy category: they are the homological kernel of zeroth cohomology, which is a homological
@@ -79,7 +79,7 @@ instance acyclic_isClosedUnderIsomorphisms :
 instance acyclic_isTriangulated : (acyclic.{u, v, w} A).IsTriangulated
 ```
 
-**`SheafOfModules.DifferentialGradedModule.acyclic_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L168). The attribute's comment: “saturation”.
+**`SheafOfModules.DifferentialGradedModule.acyclic_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAcyclic.lean#L168). The attribute's comment: “saturation”.
 
 > **Stacks Project, Tag 0FT3.** The triangulated subcategory of acyclic objects is saturated:
 > the homological kernel of a homological functor is stable under retracts, and a direct summand is
@@ -93,7 +93,7 @@ instance acyclic_isSaturated : (acyclic.{u, v, w} A).IsSaturated
 
 [Tag 0FT4](https://stacks.math.columbia.edu/tag/0FT4) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean#L190). The attribute's comment: “Qis is the class of arrows attached to Ac”.
+**`SheafOfModules.DifferentialGradedModule.acyclic_trW_eq_quasiIsomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean#L190). The attribute's comment: “Qis is the class of arrows attached to Ac”.
 
 > **Stacks Project, Tag 0FT4.** The quasi-isomorphisms of `K(Mod(A, d))` are exactly the
 > arrows whose cone is acyclic, that is, the class of arrows attached to the triangulated
@@ -110,7 +110,7 @@ theorem acyclic_trW_eq_quasiIsomorphisms :
     (acyclic.{u, v, w} A).trW = quasiIsomorphisms A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L82). The attribute's comment: “Qis is compatible with the triangulation of K(Mod(A,d))”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L82). The attribute's comment: “Qis is compatible with the triangulation of K(Mod(A,d))”.
 
 > **Stacks Project, Tag 0FT4.** The quasi-isomorphisms are compatible with the triangulation
 > of `K(Mod(A, d))`: they are the class of arrows attached to the triangulated subcategory of
@@ -121,7 +121,7 @@ instance quasiIsomorphisms_isCompatibleWithTriangulation :
     (quasiIsomorphisms.{u, v, w} A).IsCompatibleWithTriangulation
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L93). The attribute's comment: “D(A,d) is pre-triangulated, and triangulated”.
+**`SheafOfModules.DifferentialGradedModule.derivedCategory_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L93). The attribute's comment: “D(A,d) is pre-triangulated, and triangulated”.
 
 > **The derived category `D(A, d)` is a triangulated category**, with the images of the
 > distinguished triangles of `K(Mod(A, d))` as its distinguished triangles. Its pre-triangulated
@@ -133,7 +133,7 @@ instance quasiIsomorphisms_isCompatibleWithTriangulation :
 theorem derivedCategory_isTriangulated : IsTriangulated (derivedCategory.{u, v, w} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_mem_of_comp_mem_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L79). The attribute's comment: “axiom MS4: saturation of Qis”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_mem_of_comp_mem_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L79). The attribute's comment: “axiom MS4: saturation of Qis”.
 
 > Axiom MS4, the saturation axiom: an arrow of the homotopy category of right differential
 > graded `A`-modules which becomes a quasi-isomorphism after composing with an arrow on either side
@@ -147,7 +147,7 @@ theorem quasiIsomorphisms_mem_of_comp_mem_comp {X Y Z T : HomotopyCategory.{t, a
     quasiIsomorphisms.{t, a, m} A ψ
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_iff_isIso_homotopyForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L140). The attribute's comment: “Qis is the class of arrows inverted by K(A) ⟶ D(R)”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_iff_isIso_homotopyForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L140). The attribute's comment: “Qis is the class of arrows inverted by K(A) ⟶ D(R)”.
 
 > An arrow of the homotopy category of right differential graded `A`-modules is a
 > quasi-isomorphism exactly when its image under `homotopyForget` is an isomorphism in the derived
@@ -159,7 +159,7 @@ theorem quasiIsomorphisms_iff_isIso_homotopyForget {X Y : HomotopyCategory.{t, a
     quasiIsomorphisms.{t, a, m} A φ ↔ IsIso ((homotopyForget.{w, t, a, m} A).map φ)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_hasLeftCalculusOfFractions`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L150). The attribute's comment: “axioms MS2 and MS3: the left calculus of fractions”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_hasLeftCalculusOfFractions`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L150). The attribute's comment: “axioms MS2 and MS3: the left calculus of fractions”.
 
 > **Stacks Project, Tag 0FT4.** Axioms MS2 and MS3 for the quasi-isomorphisms of the homotopy
 > category of right differential graded `A`-modules, in their left form: the left Ore condition
@@ -171,7 +171,7 @@ instance quasiIsomorphisms_hasLeftCalculusOfFractions :
     (quasiIsomorphisms A).HasLeftCalculusOfFractions
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_hasRightCalculusOfFractions`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L159). The attribute's comment: “axioms MS2 and MS3: the right calculus of fractions”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_hasRightCalculusOfFractions`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L159). The attribute's comment: “axioms MS2 and MS3: the right calculus of fractions”.
 
 > **Stacks Project, Tag 0FT4.** Axioms MS2 and MS3 for the quasi-isomorphisms of the homotopy
 > category of right differential graded `A`-modules, in their right form: the right Ore condition
@@ -183,7 +183,7 @@ instance quasiIsomorphisms_hasRightCalculusOfFractions :
     (quasiIsomorphisms A).HasRightCalculusOfFractions
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L168). The attribute's comment: “compatibility with the triangulated structure”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isCompatibleWithTriangulation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L168). The attribute's comment: “compatibility with the triangulated structure”.
 
 > **Stacks Project, Tag 0FT4.** The quasi-isomorphisms of the homotopy category of right
 > differential graded `A`-modules are compatible with its triangulated structure: a morphism of
@@ -195,7 +195,7 @@ instance quasiIsomorphisms_isCompatibleWithTriangulation :
     (quasiIsomorphisms A).IsCompatibleWithTriangulation
 ```
 
-**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L177). The attribute's comment: “Qis is a saturated multiplicative system”.
+**`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsoMultiplicative.lean#L177). The attribute's comment: “Qis is a saturated multiplicative system”.
 
 > **Stacks Project, Tag 0FT4.** The quasi-isomorphisms of the homotopy category of right
 > differential graded `A`-modules are a saturated multiplicative system: MS1, the two Ore
@@ -208,16 +208,16 @@ theorem quasiIsomorphisms_isSaturated : (quasiIsomorphisms A).IsSaturated
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Triangulated.Localization.isTriangulated_functor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Triangulated.Localization.isTriangulated_functor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L96) (StacksFrontier): “the localization functor is exact”. References: SGA 4½ Etat 0 (2.3.2), “partial”; SGA 4½ Etat 0 (Problem2), “exactness of Q, partial”.
-- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L45) (StacksFrontier): “the class Qis of quasi-isomorphisms of K(A)”.
-- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_quotient_map_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L48) (StacksFrontier): “well-definedness: Qis may be read off any representing morphism”.
-- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isMultiplicative`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L51) (StacksFrontier): “axiom MS1: Qis contains the identities and is stable under composition”.
+- [`CategoryTheory.Triangulated.Localization.isTriangulated_functor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Triangulated.Localization.isTriangulated_functor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryTriangulated.lean#L96) (StacksFrontier): “the localization functor is exact”. References: SGA 4½ Etat 0 (2.3.2), “partial”; SGA 4½ Etat 0 (Problem2), “exactness of Q, partial”.
+- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L45) (StacksFrontier): “the class Qis of quasi-isomorphisms of K(A)”.
+- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_quotient_map_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L48) (StacksFrontier): “well-definedness: Qis may be read off any representing morphism”.
+- [`SheafOfModules.DifferentialGradedModule.quasiIsomorphisms_isMultiplicative`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L128), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedQuasiIsomorphisms.lean#L51) (StacksFrontier): “axiom MS1: Qis contains the identities and is stable under composition”.
 
 ## Tag 0FT5, a definition
 
 [Tag 0FT5](https://stacks.math.columbia.edu/tag/0FT5) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L149).
+**`SheafOfModules.DifferentialGradedModule.derivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L149).
 
 > The derived category of a sheaf of differential graded algebras `(A, d)`: the localization
 > of the homotopy category of right differential graded `A`-modules at the quasi-isomorphisms.
@@ -226,7 +226,7 @@ Declarations registered for the tag:
 abbrev derivedCategory (A : DifferentialGradedAlgebra.{t, a} R) : Type _
 ```
 
-**`SheafOfModules.DifferentialGradedModule.toDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L155). The attribute's comment: “the localization functor”.
+**`SheafOfModules.DifferentialGradedModule.toDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategory.lean#L155). The attribute's comment: “the localization functor”.
 
 > The canonical functor from the homotopy category of right differential graded `A`-modules to
 > the derived category of `(A, d)`, which inverts the quasi-isomorphisms.
@@ -240,7 +240,7 @@ abbrev toDerivedCategory (A : DifferentialGradedAlgebra.{t, a} R) :
 
 [Tag 0FT6](https://stacks.math.columbia.edu/tag/0FT6) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.toDerivedCategory_kernel_eq_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean#L213). The attribute's comment: “ker(Q) = Ac”.
+**`SheafOfModules.DifferentialGradedModule.toDerivedCategory_kernel_eq_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedCategoryLocalization.lean#L213). The attribute's comment: “ker(Q) = Ac”.
 
 > **Stacks Project, Tag 0FT6.** The kernel of the localization functor
 > `Q : K(Mod(A, d)) ⟶ D(A, d)` is the subcategory `Ac` of acyclic right differential graded
@@ -257,7 +257,7 @@ theorem toDerivedCategory_kernel_eq_acyclic :
 
 [Tag 0FT7](https://stacks.math.columbia.edu/tag/0FT7) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean#L139). The attribute's comment: “the factorization of H^0 through the derived category”.
+**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean#L139). The attribute's comment: “the factorization of H^0 through the derived category”.
 
 > Zeroth cohomology on the derived category of `(A, d)`: the factorization of zeroth
 > cohomology on the homotopy category through the localization at the quasi-isomorphisms.
@@ -267,7 +267,7 @@ def derivedZerothCohomologyFunctor (A : DifferentialGradedAlgebra.{t, a} R) :
     derivedCategory.{t, a, m} A ⥤ SheafOfModules.{m} R
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean#L147). The attribute's comment: “the factorization of H^0 through the derived category”.
+**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerived.lean#L147). The attribute's comment: “the factorization of H^0 through the derived category”.
 
 > Zeroth cohomology on the homotopy category is the restriction of zeroth cohomology on the
 > derived category along the localization functor.
@@ -278,7 +278,7 @@ def derivedZerothCohomologyFunctorIso (A : DifferentialGradedAlgebra.{t, a} R) :
       HomotopyCategory.zerothCohomologyFunctor.{t, a, m} A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctor_isHomological`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerivedHomological.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerivedHomological.lean#L103). The attribute's comment: “H^0 on the derived category is a homological functor”.
+**`SheafOfModules.DifferentialGradedModule.derivedZerothCohomologyFunctor_isHomological`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerivedHomological.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomologyDerivedHomological.lean#L103). The attribute's comment: “H^0 on the derived category is a homological functor”.
 
 > **Stacks Project, Tag 0FT7.** Zeroth cohomology on the derived category of `(A, d)` is a
 > homological functor: it takes a distinguished triangle of `D(A, d)` to an exact sequence of
@@ -297,7 +297,7 @@ instance derivedZerothCohomologyFunctor_isHomological :
 
 [Tag 0FT8](https://stacks.math.columbia.edu/tag/0FT8) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedHomEquivHomotopyHomOfKInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean#L94).
+**`SheafOfModules.DifferentialGradedModule.derivedHomEquivHomotopyHomOfKInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean#L94).
 
 > Let `(A, d)` be a sheaf of differential graded algebras on a ringed site, let `M`, `N` be
 > right differential graded `A`-modules and let `N ⟶ I` be a quasi-isomorphism into a graded
@@ -313,7 +313,7 @@ def derivedHomEquivHomotopyHomOfKInjective {M N I : DifferentialGradedModule.{u,
       ((HomotopyCategory.quotient A).obj M ⟶ (HomotopyCategory.quotient A).obj I)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedHomEquivHomotopyHomOfKInjective_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean#L108). The attribute's comment: “the identification is the one of the source and not an arbitrary bijection: it sends a homotopy class to its image in D(A, d) composed with the inverse of the given quasi-isomorphism”.
+**`SheafOfModules.DifferentialGradedModule.derivedHomEquivHomotopyHomOfKInjective_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedHomKInjective.lean#L108). The attribute's comment: “the identification is the one of the source and not an arbitrary bijection: it sends a homotopy class to its image in D(A, d) composed with the inverse of the given quasi-isomorphism”.
 
 > The identification `derivedHomEquivHomotopyHomOfKInjective` sends a homotopy class
 > `f : M ⟶ I` to its image in `D(A, d)` composed with the inverse of the given
@@ -333,7 +333,7 @@ theorem derivedHomEquivHomotopyHomOfKInjective_symm_apply
 
 [Tag 0FT9](https://stacks.math.columbia.edu/tag/0FT9) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.derivedCategory_sumsAndProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedKInjectiveExistence.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedKInjectiveExistence.lean#L290).
+**`SheafOfModules.DifferentialGradedModule.derivedCategory_sumsAndProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedKInjectiveExistence.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedKInjectiveExistence.lean#L290).
 
 > Let `(C, O)` be a ringed site and let `(A, d)` be a sheaf of differential graded algebras on
 > `(C, O)`. Then (1) `D(A, d)` has both direct sums and products, (2) direct sums are obtained by
@@ -389,4 +389,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.26, Tag 0FT1](https://stacks.math.columbia.edu/tag/0FT1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

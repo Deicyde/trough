@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.19 Change of base scheme
 
-Section 94.19 of the Stacks Project, [Tag 04X4](https://stacks.math.columbia.edu/tag/04X4). 4 tags here are carried by 40 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.19 of the Stacks Project, [Tag 04X4](https://stacks.math.columbia.edu/tag/04X4). 4 tags here are carried by 40 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04X4, the section
 
 [Tag 04X4](https://stacks.math.columbia.edu/tag/04X4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L92). The attribute's comment: “the 2-fibre product X'\_S = (Sch/S)\_fppf ×\_\{(Sch/S')\_fppf} X', which is an algebraic stack over S' according to Lemma 04T2”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L92). The attribute's comment: “the 2-fibre product X'\_S = (Sch/S)\_fppf ×\_\{(Sch/S')\_fppf} X', which is an algebraic stack over S' according to Lemma 04T2”.
 
 > **The 2-fibre product `𝒳'_S = (Sch/S)_fppf ×_{(Sch/S')_fppf} 𝒳'` of Section 04X4.** For an
 > algebraic stack `𝒳'` over `S'`, the apex of the canonical 2-fibre product square of the cospan
@@ -27,7 +27,7 @@ def changeOfBaseFibreProduct (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStacks.{u, w} B S' hS'
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L102). The attribute's comment: “the natural 1-morphism p : X'\_S → (Sch/S)\_fppf”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L102). The attribute's comment: “the natural 1-morphism p : X'\_S → (Sch/S)\_fppf”.
 
 > **The natural 1-morphism `p : 𝒳'_S ⟶ (Sch/S)_fppf` of Section 04X4**: the projection of the
 > 2-fibre product `AlgebraicGeometry.Stack.changeOfBaseFibreProduct` to its first factor, the
@@ -38,7 +38,7 @@ def changeOfBaseFibreProductProjection (𝒳' : AlgebraicStacks.{u, w} B S' hS')
     changeOfBaseFibreProduct B S S' hS hS' g 𝒳' ⟶ schemeStack.{u, w} B S' hS' (Over.mk g)
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L113). The attribute's comment: “the pair (X'\_S, p), an algebraic stack over S' with a 1-morphism to (Sch/S)\_fppf, i.e. an object of the right-hand side of Lemma 04X5”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L113). The attribute's comment: “the pair (X'\_S, p), an algebraic stack over S' with a 1-morphism to (Sch/S)\_fppf, i.e. an object of the right-hand side of Lemma 04X5”.
 
 > **The pair `(𝒳'_S, p)` of Section 04X4**, as an object of the right-hand 2-category of
 > Lemma 04X5: an algebraic stack over `S'` with a 1-morphism to the stack represented by
@@ -49,7 +49,7 @@ def changeOfBaseFibreProductPair (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStackPair.{u, w} B S S' hS hS' g
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L123). The attribute's comment: “by Lemma 04X5 the pair (X'\_S, p) corresponds in a canonical way to an algebraic stack over S”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L123). The attribute's comment: “by Lemma 04X5 the pair (X'\_S, p) corresponds in a canonical way to an algebraic stack over S”.
 
 > **The algebraic stack over `S` that `(𝒳'_S, p)` corresponds to (Section 04X4).** The image of
 > the pair `AlgebraicGeometry.Stack.changeOfBaseFibreProductPair` under the inverse of the
@@ -60,7 +60,7 @@ def changeOfBaseFibreProductOverBase (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStacks.{u, w} B S hS
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv_changeOfBaseFibreProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L134). The attribute's comment: “the algebraic stack over S corresponds to (X'\_S, p) under Lemma 04X5: Construction A returns X'\_S over S' together with p”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv_changeOfBaseFibreProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L134). The attribute's comment: “the algebraic stack over S corresponds to (X'\_S, p) under Lemma 04X5: Construction A returns X'\_S over S' together with p”.
 
 > **The correspondence of Lemma 04X5 carries the algebraic stack over `S` of Section 04X4 back
 > to `(𝒳'_S, p)`.** Construction A applied to
@@ -75,7 +75,7 @@ theorem algebraicStackConstructionObjEquiv_changeOfBaseFibreProductOverBase
       changeOfBaseFibreProductPair B S S' hS hS' g 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase_p`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L145). The attribute's comment: “the structure functor of that algebraic stack over S is p”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase_p`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L145). The attribute's comment: “the structure functor of that algebraic stack over S is p”.
 
 > The structure functor over `S` of the algebraic stack of Section 04X4 is the natural
 > 1-morphism `p : 𝒳'_S ⟶ (Sch/S)_fppf`, read through the identification of the big fppf site of `S`
@@ -90,13 +90,13 @@ lemma changeOfBaseFibreProductOverBase_p (𝒳' : AlgebraicStacks.{u, w} B S' hS
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.changeBaseAlgebraicStack`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L1178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L77) (StacksFrontier): “the introduction's upshot: given a morphism S → S' of base schemes, any algebraic stack over S can be viewed as an algebraic stack over S' (Construction A on objects of the 2-category of algebraic stacks)”.
+- [`AlgebraicGeometry.Stack.changeBaseAlgebraicStack`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L1178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L77) (StacksFrontier): “the introduction's upshot: given a morphism S → S' of base schemes, any algebraic stack over S can be viewed as an algebraic stack over S' (Construction A on objects of the 2-category of algebraic stacks)”.
 
 ## Tag 04X5, a lemma
 
 [Tag 04X5](https://stacks.math.columbia.edu/tag/04X5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_comp_p_eq_map_of_changeBase`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L355). The attribute's comment: “the scheme-valued points of Construction A”.
+**`AlgebraicGeometry.Stack.exists_comp_p_eq_map_of_changeBase`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L355). The attribute's comment: “the scheme-valued points of Construction A”.
 
 > **The scheme-valued points of Construction A are those of the original category.** Every
 > scheme-valued point of `changeBase 𝒳` over the big fppf site of `S'` is a scheme-valued point of
@@ -116,7 +116,7 @@ lemma exists_comp_p_eq_map_of_changeBase (𝒳 : BasedCategory.{v, t} (BigFppfOv
     ∃ h : V'.left ⟶ B.obj hS, y ⋙ 𝒳.p = Over.map h ∧ h ≫ g = V'.hom
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_changeBaseFunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L394). The attribute's comment: “representability by algebraic spaces is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_changeBaseFunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L394). The attribute's comment: “representability by algebraic spaces is unchanged by Construction A”.
 
 > **Stacks 02ZW is unchanged by Construction A.** A 1-morphism of categories over the big fppf
 > site of `S` is representable by algebraic spaces exactly when the 1-morphism over the big fppf
@@ -141,7 +141,7 @@ theorem isRepresentableByAlgebraicSpaces_changeBaseFunctor_iff
       IsRepresentableByAlgebraicSpaces B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_surjective_changeBaseHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L504). The attribute's comment: “surjectivity of the presentation is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.hasRelativeProperty_surjective_changeBaseHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L504). The attribute's comment: “surjectivity of the presentation is unchanged by Construction A”.
 
 > **Relative surjectivity is unchanged by Construction A.** A 1-morphism of categories fibred
 > in groupoids over the big fppf site of `S` which is representable by algebraic spaces has the
@@ -169,7 +169,7 @@ theorem hasRelativeProperty_surjective_changeBaseHom_iff
       HasRelativeProperty.{u, v, w, vP} B S hS (Space.surjectiveMorphismProperty B S hS) f hf
 ```
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_smooth_changeBaseHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L558). The attribute's comment: “smoothness of the presentation is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.hasRelativeProperty_smooth_changeBaseHom_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L558). The attribute's comment: “smoothness of the presentation is unchanged by Construction A”.
 
 > **A relative property tested on étale charts is unchanged by Construction A.** Let `Q` be a
 > property of morphisms of schemes. A 1-morphism of categories fibred in groupoids over the big
@@ -244,7 +244,7 @@ theorem hasRelativeProperty_smooth_changeBaseHom_iff (Q : MorphismProperty Schem
               ⟨F, hF⟩)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_diagonalBasedFunctor_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 784](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L784). The attribute's comment: “representability of the diagonal is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_diagonalBasedFunctor_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L784). The attribute's comment: “representability of the diagonal is unchanged by Construction A”.
 
 > **The diagonal clause of Stacks 026O is unchanged by Construction A.** The diagonal of a
 > category fibred in groupoids over the big fppf site of `S` is representable by algebraic spaces
@@ -269,7 +269,7 @@ theorem isRepresentableByAlgebraicSpaces_diagonalBasedFunctor_changeBase_iff
       IsRepresentableByAlgebraicSpaces B S hS (diagonalBasedFunctor B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.exists_factorization_of_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 830](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L830). The attribute's comment: “the descent input of the stack clause of Construction A”.
+**`AlgebraicGeometry.Stack.exists_factorization_of_isCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 830](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L830). The attribute's comment: “the descent input of the stack clause of Construction A”.
 
 > **A point of the big fppf site of `S'` covered by points coming from the site of `S` comes
 > from the site of `S` itself.** If the structure morphism of every member of a covering family of
@@ -294,7 +294,7 @@ theorem exists_factorization_of_isCovering {U' : BigFppfOver B S' hS'} {I : Type
     ∃ h : U'.left ⟶ B.obj hS, h ≫ g = U'.hom ∧ ∀ i, (f i).left ≫ h = a i
 ```
 
-**`AlgebraicGeometry.Stack.isStackInGroupoids_of_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 862](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L862). The attribute's comment: “the stack clause transfers back along Construction A”.
+**`AlgebraicGeometry.Stack.isStackInGroupoids_of_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 862](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L862). The attribute's comment: “the stack clause transfers back along Construction A”.
 
 > **The stack-in-groupoids clause of Stacks 026O transfers back along Construction A.** If the
 > category over the big fppf site of `S'` produced by Construction A is a stack in groupoids for
@@ -323,7 +323,7 @@ theorem isStackInGroupoids_of_changeBase (𝒳 : BasedCategory.{v, t} (BigFppfOv
     𝒳.p.IsStackInGroupoids.{w} (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isStackInGroupoids_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 903](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L903). The attribute's comment: “the stack clause of Stacks 026O is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.isStackInGroupoids_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 903](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L903). The attribute's comment: “the stack clause of Stacks 026O is unchanged by Construction A”.
 
 > **The stack-in-groupoids clause of Stacks 026O is unchanged by Construction A.** A category
 > over the big fppf site of `S` is a stack in groupoids for the fppf topology there exactly when
@@ -345,7 +345,7 @@ theorem isStackInGroupoids_changeBase_iff (𝒳 : BasedCategory.{v, t} (BigFppfO
       𝒳.p.IsStackInGroupoids.{w} (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isStack_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L930). The attribute's comment: “the sieve-indexed stack clause of Stacks 026O is unchanged by Construction A”.
+**`AlgebraicGeometry.Stack.isStack_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 930](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L930). The attribute's comment: “the sieve-indexed stack clause of Stacks 026O is unchanged by Construction A”.
 
 > **The sieve-indexed stack clause of Stacks 026F is unchanged by Construction A.** A category
 > over the big fppf site of `S` is a stack in the sense of Stacks 026F for the fppf topology there
@@ -371,7 +371,7 @@ theorem isStack_changeBase_iff (𝒳 : BasedCategory.{u, u + 1} (BigFppfOver B S
       𝒳.p.IsStack (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 1159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L1159). The attribute's comment: “algebraicity criterion”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_changeBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean, line 1159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBase.lean#L1159). The attribute's comment: “algebraicity criterion”.
 
 > **The algebraicity criterion of Stacks 04X5.** A category over the big fppf site of `S` is an
 > algebraic stack over `S` exactly when the category over the big fppf site of `S'` produced by
@@ -418,7 +418,7 @@ theorem isAlgebraicStack_changeBase_iff (𝒳 : BasedCategory.{u, u + 1} (BigFpp
       IsAlgebraicStack.{u, w} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L196). The attribute's comment: “algebraicity transfers back along Construction A”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L196). The attribute's comment: “algebraicity transfers back along Construction A”.
 
 > **Stacks 04X5, the algebraic-stack clause in the direction Construction A reflects.** Let
 > `g : S ⟶ S'` be a morphism of a big fppf site and let `𝒳` be a category fibred in groupoids over
@@ -436,7 +436,7 @@ theorem isAlgebraicStack_of_changeBase
     IsAlgebraicStack.{u, w} B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L315). The attribute's comment: “algebraicity transfers along Construction A”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L315). The attribute's comment: “algebraicity transfers along Construction A”.
 
 > **Stacks 04X5, the algebraic-stack clause in the direction Construction A produces.** Let
 > `g : S ⟶ S'` be a morphism of a big fppf site and let `𝒳` be a category fibred in groupoids over
@@ -477,7 +477,7 @@ theorem isAlgebraicStack_changeBase
     IsAlgebraicStack.{u, w'} B S' hS' (changeBase B S S' hS hS' g 𝒳.val)
 ```
 
-**`AlgebraicGeometry.Stack.changeBaseStructureHom_toFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L222). The attribute's comment: “Construction A on 1-morphisms, as a functor”.
+**`AlgebraicGeometry.Stack.changeBaseStructureHom_toFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L222). The attribute's comment: “Construction A on 1-morphisms, as a functor”.
 
 > The underlying functor of `AlgebraicGeometry.Stack.changeBaseStructureHom` is the structure
 > functor of `𝒳`, read through the inverse of the iterated-slice equivalence. This is the
@@ -489,7 +489,7 @@ lemma changeBaseStructureHom_toFunctor (𝒳 : AlgebraicStacks.{u, w} B S hS) :
       𝒳.val.val.p ⋙ (Over.iteratedSliceEquiv (Over.mk g)).inverse
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionA_val_val`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L239). The attribute's comment: “Construction A on objects, on the underlying fibred category”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionA_val_val`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L239). The attribute's comment: “Construction A on objects, on the underlying fibred category”.
 
 > The algebraic stack over `S'` underlying Construction A is Construction A of the underlying
 > category over the big fppf site of `S`. This is the `object_underlying` clause of the
@@ -501,7 +501,7 @@ lemma algebraicStackConstructionA_val_val (𝒳 : AlgebraicStacks.{u, w} B S hS)
       changeBase B S S' hS hS' g 𝒳.val.val
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionB_p`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L295). The attribute's comment: “Construction B on objects, on the projection”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionB_p`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L295). The attribute's comment: “Construction B on objects, on the projection”.
 
 > The structure functor produced by Construction B is the pair's 1-morphism to the stack
 > represented by `S/S'`, read through the iterated-slice equivalence.
@@ -512,7 +512,7 @@ lemma algebraicStackConstructionB_p (X : AlgebraicStackPair.{u, w} B S S' hS hS'
       X.2.hom.toFunctor ⋙ (Over.iteratedSliceEquiv (Over.mk g)).functor
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L330). The attribute's comment: “the bijection on objects”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L330). The attribute's comment: “the bijection on objects”.
 
 > **Constructions A and B of Stacks 04X5 are mutually inverse on objects.** An algebraic stack
 > over `S` is the same thing as an algebraic stack over `S'` together with a 1-morphism to the stack
@@ -530,7 +530,7 @@ def algebraicStackConstructionObjEquiv :
     AlgebraicStacks.{u, w} B S hS ≃ AlgebraicStackPair.{u, w} B S S' hS hS' g
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L347). The attribute's comment: “the bijection on 1-morphisms”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L347). The attribute's comment: “the bijection on 1-morphisms”.
 
 > **Constructions A and B of Stacks 04X5 are bijective on 1-morphisms**, and both are the
 > identity on the underlying functor. In one direction the commutation with the structure functors
@@ -545,7 +545,7 @@ def algebraicStackConstructionHomEquiv (𝒳 𝒴 : AlgebraicStacks.{u, w} B S h
       (algebraicStackConstructionA B S S' hS hS' g 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_val_hom_toFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L369). The attribute's comment: “that bijection, on the underlying functor”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_val_hom_toFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L369). The attribute's comment: “that bijection, on the underlying functor”.
 
 > The bijection on 1-morphisms is the identity on the underlying functor. This is the
 > `hom_underlying` clause of the correspondence of Stacks 04X5; no heterogeneous equality is needed,
@@ -558,7 +558,7 @@ lemma algebraicStackConstructionHomEquiv_val_hom_toFunctor
       φ.hom.hom.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_id`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L377). The attribute's comment: “that bijection carries the identity to the identity”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_id`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L377). The attribute's comment: “that bijection carries the identity to the identity”.
 
 > Construction A preserves the identity 1-morphism.
 
@@ -569,7 +569,7 @@ lemma algebraicStackConstructionHomEquiv_id (𝒳 : AlgebraicStacks.{u, w} B S h
         (algebraicStackConstructionA B S S' hS hS' g 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L385). The attribute's comment: “that bijection is compatible with composition”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHomEquiv_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L385). The attribute's comment: “that bijection is compatible with composition”.
 
 > Construction A preserves composition of 1-morphisms.
 
@@ -582,7 +582,7 @@ lemma algebraicStackConstructionHomEquiv_comp {𝒳 𝒴 𝒵 : AlgebraicStacks.
         (algebraicStackConstructionHomEquiv B S S' hS hS' g 𝒴 𝒵 ψ)
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L398). The attribute's comment: “the bijection on 2-morphisms”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L398). The attribute's comment: “the bijection on 2-morphisms”.
 
 > **Constructions A and B of Stacks 04X5 are bijective on 2-morphisms**, and both are the
 > identity on the underlying morphism of functors. The only thing to transfer is the condition that
@@ -596,7 +596,7 @@ def algebraicStackConstructionHom₂Equiv {𝒳 𝒴 : AlgebraicStacks.{u, w} B 
       (algebraicStackConstructionHomEquiv B S S' hS hS' g 𝒳 𝒴 ψ)
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_hom_toNatTrans`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L420). The attribute's comment: “the 2-morphism bijection, on the underlying natural transformation”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_hom_toNatTrans`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L420). The attribute's comment: “the 2-morphism bijection, on the underlying natural transformation”.
 
 > The bijection on 2-morphisms is the identity on the underlying morphism of functors. This is
 > the `twoHom_underlying` clause of the correspondence of Stacks 04X5.
@@ -608,7 +608,7 @@ lemma algebraicStackConstructionHom₂Equiv_hom_toNatTrans
       η.hom.hom.toNatTrans
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_id`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L428). The attribute's comment: “the 2-morphism bijection carries the identity to the identity”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_id`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L428). The attribute's comment: “the 2-morphism bijection carries the identity to the identity”.
 
 > Construction A preserves identity 2-morphisms.
 
@@ -618,7 +618,7 @@ lemma algebraicStackConstructionHom₂Equiv_id {𝒳 𝒴 : AlgebraicStacks.{u, 
     algebraicStackConstructionHom₂Equiv B S S' hS hS' g φ φ (𝟙 φ) = 𝟙 _
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L435). The attribute's comment: “the 2-morphism bijection is compatible with vertical composition”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L435). The attribute's comment: “the 2-morphism bijection is compatible with vertical composition”.
 
 > Construction A preserves vertical composition of 2-morphisms.
 
@@ -630,7 +630,7 @@ lemma algebraicStackConstructionHom₂Equiv_comp {𝒳 𝒴 : AlgebraicStacks.{u
         algebraicStackConstructionHom₂Equiv B S S' hS hS' g ψ χ θ
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_whiskerLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L444). The attribute's comment: “the 2-morphism bijection is compatible with left whiskering”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_whiskerLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L444). The attribute's comment: “the 2-morphism bijection is compatible with left whiskering”.
 
 > Construction A preserves left whiskering.
 
@@ -643,7 +643,7 @@ lemma algebraicStackConstructionHom₂Equiv_whiskerLeft
         (algebraicStackConstructionHom₂Equiv B S S' hS hS' g φ ψ η)
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_whiskerRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L454). The attribute's comment: “the 2-morphism bijection is compatible with right whiskering”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionHom₂Equiv_whiskerRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L454). The attribute's comment: “the 2-morphism bijection is compatible with right whiskering”.
 
 > Construction A preserves right whiskering.
 
@@ -656,7 +656,7 @@ lemma algebraicStackConstructionHom₂Equiv_whiskerRight
         (algebraicStackConstructionHomEquiv B S S' hS hS' g 𝒴 𝒵 a).val
 ```
 
-**`AlgebraicGeometry.Stack.categoryOfAlgebraicStacksOverSmallerBaseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L534). The attribute's comment: “the resulting equivalence of 2-categories”.
+**`AlgebraicGeometry.Stack.categoryOfAlgebraicStacksOverSmallerBaseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseCorrespondence.lean#L534). The attribute's comment: “the resulting equivalence of 2-categories”.
 
 > **Constructions A and B restrict to mutually inverse isomorphisms on objects, 1-morphisms and
 > 2-morphisms of algebraic stacks.** This is the whole of the correspondence of Stacks 04X5 as a
@@ -669,7 +669,7 @@ noncomputable def categoryOfAlgebraicStacksOverSmallerBaseScheme :
     AlgebraicStackCorrespondence.{u, w} B S S' hS hS' g
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_schemeFibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean#L195). The attribute's comment: “the stack of a scheme of the big fppf site is algebraic”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_schemeFibredCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SchemeStack.lean#L195). The attribute's comment: “the stack of a scheme of the big fppf site is algebraic”.
 
 > **Stacks 026O for the big fppf site of a scheme over `S`.** The big fppf site of a scheme
 > `X` over `S`, read as a category fibred in groupoids over the big fppf site of `S`, is an
@@ -694,7 +694,7 @@ theorem isAlgebraicStack_schemeFibredCategory (X : BigFppfOver B S hS) :
 
 [Tag 04X6](https://stacks.math.columbia.edu/tag/04X6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.changeBaseAlgebraicStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L381).
+**`AlgebraicGeometry.Stack.changeBaseAlgebraicStacks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseAlgebraicStack.lean#L381).
 
 > **Stacks 04X6.** An algebraic stack `𝒳` over `S`, *viewed as an algebraic stack over `S'`*
 > along a morphism `g : S ⟶ S'` of the big fppf site: the algebraic stack over `S'` obtained by
@@ -714,7 +714,7 @@ def changeBaseAlgebraicStacks (𝒳 : AlgebraicStacks.{u, w} B S hS) :
 
 [Tag 04X7](https://stacks.math.columbia.edu/tag/04X7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L177). The attribute's comment: “the construction”.
+**`AlgebraicGeometry.Stack.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L177). The attribute's comment: “the construction”.
 
 > **Stacks 04X7, the construction.** The *change of base* of a category `𝒳'` over the big fppf
 > site of `S'` along `g : S ⟶ S'`: the strict pullback of its structure functor along the
@@ -726,7 +726,7 @@ def changeBaseAlgebraicStacks (𝒳 : AlgebraicStacks.{u, w} B S hS) :
 def baseChange : BasedCategory.{u, u + 1} (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L361). The attribute's comment: “the change of base is the two-fibre product over the base”.
+**`AlgebraicGeometry.Stack.baseChangeProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L361). The attribute's comment: “the change of base is the two-fibre product over the base”.
 
 > **The image of the change of base under Construction A is the 2-fibre product
 > `𝒳' ×_{S'} S`.** The identification is strict in one composite: an object of the strict pullback
@@ -742,7 +742,7 @@ noncomputable def baseChangeProductEquivalence :
       (baseChangeProduct B S S' hS hS' g 𝒳')
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L396). The attribute's comment: “the change of base is an algebraic stack”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeAlgebraicStack.lean#L396). The attribute's comment: “the change of base is an algebraic stack”.
 
 > **Stacks 04X7.** The change of base of an algebraic stack over `S'` along `g : S ⟶ S'` is an
 > algebraic stack over `S`.
@@ -757,7 +757,7 @@ theorem isAlgebraicStack_baseChange (h𝒳' : IsAlgebraicStack.{u, u + 1} B S' h
     IsAlgebraicStack.{u, w} B S hS (baseChange B S S' hS hS' g 𝒳')
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean#L332).
+**`AlgebraicGeometry.Stack.changeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean#L332).
 
 > The change of base of an algebraic stack `𝒳'` over `S'` along a morphism `S ⟶ S'` of the big
 > fppf site: the algebraic stack over `S` whose total category is the strict pullback of the
@@ -768,7 +768,7 @@ def changeOfBase (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStacks.{u, w} B S hS
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBase_twoFibreProductWitness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean#L425). The attribute's comment: “canonical two-fibre-product characterization”.
+**`AlgebraicGeometry.Stack.changeOfBase_twoFibreProductWitness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseStack.lean#L425). The attribute's comment: “canonical two-fibre-product characterization”.
 
 > Under the canonical 2-categorical correspondence of Stacks 04X5 between algebraic stacks over
 > `S` and algebraic stacks over `S'` equipped with a 1-morphism to the stack represented by `S/S'`,
@@ -792,4 +792,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.19, Tag 04X4](https://stacks.math.columbia.edu/tag/04X4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

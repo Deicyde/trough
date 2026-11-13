@@ -1,6 +1,6 @@
 # Integral, multiplication and diagonal operators
 
-183 results of ATLAS's vault, 176 proved and 7 stated but not proved, in this branch's topics.
+179 results of ATLAS's vault, 172 proved and 7 stated but not proved, in this branch's topics.
 
 Volterra and kernel integral operators, Cesàro and Hilbert operators, multiplication operators on C(X) and L², diagonal operators, Schur tests, L^p bounds for integral operators.
 

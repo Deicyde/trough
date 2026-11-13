@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.13 Application of descent of properties of morphisms
 
-Section 74.13 of the Stacks Project, [Tag 0D3B](https://stacks.math.columbia.edu/tag/0D3B). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.13 of the Stacks Project, [Tag 0D3B](https://stacks.math.columbia.edu/tag/0D3B). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D3C, a lemma
 
 [Tag 0D3C](https://stacks.math.columbia.edu/tag/0D3C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isRelativelyAmple_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocal.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocal.lean#L57).
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isRelativelyAmple_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocal.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocal.lean#L57).
 
 > **Stacks 0D3C.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, `𝓛` an invertible
 > `𝒪_X`-module and `{gᵢ : Yᵢ ⟶ Y}` an fpqc covering, with base changes `fᵢ : Xᵢ ⟶ Yᵢ` of `f` and
@@ -34,7 +34,7 @@ theorem isRelativelyAmple_iff_forall_isRelativelyAmple_of_isFpqcCovering
       ∀ i, IsRelativelyAmple B S hS (fᵢ i) ((modulePullback B S hS (pᵢ i)).obj L)
 ```
 
-**`AlgebraicGeometry.Space.forall_isRelativelyAmple_baseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L145). The attribute's comment: “(1) implies (2), unconditionally; the fpqc hypothesis on the family is not needed for this direction”.
+**`AlgebraicGeometry.Space.forall_isRelativelyAmple_baseChange_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L145). The attribute's comment: “(1) implies (2), unconditionally; the fpqc hypothesis on the family is not needed for this direction”.
 
 > **Stacks 0D3C, (1) implies (2).** If `L` is ample on `X/Y` then the pullback of `L` to the
 > base change of `f` along any member of the family is ample on that base change: this is the
@@ -46,7 +46,7 @@ theorem forall_isRelativelyAmple_baseChange_of_isRelativelyAmple
     IsRelativelyAmple B S hS (fᵢ i) ((modulePullback B S hS (pᵢ i)).obj L)
 ```
 
-**`AlgebraicGeometry.Space.exists_affineFpqcRefinement_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L162). The attribute's comment: “the unconditional half of (2) implies (1): the clause of Tag 0D36 on a finite affine fpqc covering of each affine scheme over Y. Descending it to the scheme itself is carried by `isRelativelyAmple_iff_forall_isRelativelyAmple_baseChange`”.
+**`AlgebraicGeometry.Space.exists_affineFpqcRefinement_isAmpleOnBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L162). The attribute's comment: “the unconditional half of (2) implies (1): the clause of Tag 0D36 on a finite affine fpqc covering of each affine scheme over Y. Descending it to the scheme itself is carried by `isRelativelyAmple_iff_forall_isRelativelyAmple_baseChange`”.
 
 > **The reduction of Stacks 0D3C, (2) implies (1), to the scheme level.** Assume the pullback
 > of `L` to each base change `Xᵢ` is ample on `Xᵢ/Yᵢ`. Then every affine scheme `T` over `Y`
@@ -72,7 +72,7 @@ theorem exists_affineFpqcRefinement_isAmpleOnBaseChange
         (yoneda.map ((BigAffineFppf.inclusion B S hS).map (U.f j)) ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isRelativelyAmple_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L192). The attribute's comment: “full equivalence, with the hypotheses of the source: L invertible and the family an fpqc covering”.
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isRelativelyAmple_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleFpqcLocalAtTarget.lean#L192). The attribute's comment: “full equivalence, with the hypotheses of the source: L invertible and the family an fpqc covering”.
 
 > **Stacks 0D3C.** Let `L` be an invertible `𝒪_X`-module, let `{gᵢ : Yᵢ ⟶ Y}` be an fpqc
 > covering, let `fᵢ : Xᵢ ⟶ Yᵢ` be the base change of `f : X ⟶ Y` and `Lᵢ` the pullback of `L`.
@@ -98,7 +98,7 @@ theorem isRelativelyAmple_iff_forall_isRelativelyAmple_baseChange
 
 [Tag 0D3D](https://stacks.math.columbia.edu/tag/0D3D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_factors_iff_isRelativelyAmple_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L236).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_factors_iff_isRelativelyAmple_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ProperLimitOfFinitePresentationEmbedding.lean#L236).
 
 > Let `S` be a scheme, `f : X ⟶ Y` a proper morphism of algebraic spaces over `S` and `L` an
 > invertible `𝒪_X`-module. There is an open subspace `V ⊆ Y` such that a morphism `g : Y' ⟶ Y` of
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.13, Tag 0D3B](https://stacks.math.columbia.edu/tag/0D3B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

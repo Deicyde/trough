@@ -1,38 +1,38 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Injectives.SmallSubobjectEpi.exists_subobject_epi_size_le, Stacks.Injectives.acyclicComplexSizeBound, Stacks.Injectives.exists_small_boundedAbove_acyclic_subcomplex, Stacks.Injectives.exists_epi_coproduct_small_boundedAbove_acyclic, Stacks.Injectives.isKInjective_of_small_boundedAbove_acyclic, Stacks.Injectives.isKInjective_of_injective_of_small_boundedAbove_acyclic, Stacks.Injectives.exists_functorial_termwise_mono_quasiIso_homotopy_zero, Stacks.Injectives.exists_functorialInjectiveResolution
+lean: Stacks.Injectives.SmallSubobjectEpi.exists_subobject_epi_smallSize_le, Stacks.Injectives.acyclicComplexSizeBound, Stacks.Injectives.exists_small_boundedAbove_acyclic_subcomplex, Stacks.Injectives.exists_epi_coproduct_small_boundedAbove_acyclic, Stacks.Injectives.isKInjective_of_small_boundedAbove_acyclic, Stacks.Injectives.isKInjective_of_injective_of_small_boundedAbove_acyclic, Stacks.Injectives.exists_functorial_termwise_mono_quasiIso_homotopy_zero, Stacks.Injectives.exists_functorialInjectiveResolution
 statement: formalized
 proof: formalized
 ---
 
 # 19.12 K-injectives in Grothendieck categories
 
-Section 19.12 of the Stacks Project, [Tag 079I](https://stacks.math.columbia.edu/tag/079I). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 19.12 of the Stacks Project, [Tag 079I](https://stacks.math.columbia.edu/tag/079I). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 079J, a lemma
 
 [Tag 079J](https://stacks.math.columbia.edu/tag/079J) in the Stacks Project.
 
-**`Stacks.Injectives.SmallSubobjectEpi.exists_subobject_epi_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SmallSubobjectEpi.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Size/SmallSubobjectEpi.lean#L259).
+**`Stacks.Injectives.SmallSubobjectEpi.exists_subobject_epi_smallSize_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Size/SmallSubobjectEpi.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Size/SmallSubobjectEpi.lean#L371). The attribute's comment: “Mathlib's setting `IsGrothendieckAbelian.{v} C` for `Category.{v} C`; sizes in `Cardinal.{v}`, the generator `U` arbitrary”.
 
-> Let `C` be a Grothendieck abelian category with generator `separator C`. For every
-> epimorphism `π : M ⟶ N` there is a subobject `M' ⊆ M` such that `M'.arrow ≫ π` is an
-> epimorphism and `size M' ≤ cardFn (separator C) (size N)`.
+> **Stacks 079J.** Let `C` be a Grothendieck abelian category with a generator `U`, and let
+> `c(κ) = |⨁_{α ∈ κ} U|` (`smallCardFn U κ`). For every epimorphism `π : M ⟶ N` there is a
+> subobject `M' ⊆ M` such that `M' ⟶ M ⟶ N` is an epimorphism and `|M'| ≤ c(|N|)`, sizes being
+> cardinalities of sets of subobjects (`smallSize`, see `lift_smallSize`).
 
 ```lean
-theorem exists_subobject_epi_size_le
-    (M N : C) (π : M ⟶ N) [Epi π] :
-    ∃ M' : Subobject M,
-      Epi (M'.arrow ≫ π) ∧
-      size ((M' : C)) ≤ cardFn (separator C) (size N)
+theorem exists_subobject_epi_smallSize_le {U : C} (hU : IsSeparator U) {M N : C} (π : M ⟶ N)
+    [Epi π] :
+    ∃ M' : Subobject M, Epi (M'.arrow ≫ π) ∧
+      smallSize (M' : C) ≤ smallCardFn U (smallSize N)
 ```
 
 ## Tag 079K, a lemma
 
 [Tag 079K](https://stacks.math.columbia.edu/tag/079K) in the Stacks Project.
 
-**`Stacks.Injectives.acyclicComplexSizeBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L62). The attribute's comment: “the cardinal”.
+**`Stacks.Injectives.acyclicComplexSizeBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L62). The attribute's comment: “the cardinal”.
 
 > A cardinal which uniformly bounds the sizes of the terms of the small bounded-above acyclic
 > complexes: the supremum over `n` of the `(n + 1)`-st iterate of `κ ↦ #(Subobject (∐_κ U))` at
@@ -43,7 +43,7 @@ noncomputable def acyclicComplexSizeBound (C : Type u) [Category.{v} C] [Abelian
     [IsGrothendieckAbelian.{w} C] : Cardinal.{w}
 ```
 
-**`Stacks.Injectives.exists_small_boundedAbove_acyclic_subcomplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L447). The attribute's comment: “part (1)”.
+**`Stacks.Injectives.exists_small_boundedAbove_acyclic_subcomplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L447). The attribute's comment: “part (1)”.
 
 > Every nonzero acyclic complex contains a nonzero bounded-above acyclic subcomplex
 > whose terms have uniformly bounded size.
@@ -60,7 +60,7 @@ theorem exists_small_boundedAbove_acyclic_subcomplex
         acyclicComplexSizeBound (C := C)
 ```
 
-**`Stacks.Injectives.exists_epi_coproduct_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L475). The attribute's comment: “part (2)”.
+**`Stacks.Injectives.exists_epi_coproduct_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/SmallAcyclicComplexes.lean#L475). The attribute's comment: “part (2)”.
 
 > Every acyclic complex is an epimorphic image of a coproduct of bounded-above
 > acyclic complexes whose terms have uniformly bounded size.
@@ -83,7 +83,7 @@ theorem exists_epi_coproduct_small_boundedAbove_acyclic
 
 [Tag 079L](https://stacks.math.columbia.edu/tag/079L) in the Stacks Project.
 
-**`Stacks.Injectives.isKInjective_of_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Criterion.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/Criterion.lean#L686).
+**`Stacks.Injectives.isKInjective_of_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Criterion.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/Criterion.lean#L686).
 
 > A complex of injective objects is K-injective provided that all maps to it from
 > bounded-above acyclic complexes within the uniform size bound are null-homotopic.
@@ -99,7 +99,7 @@ theorem isKInjective_of_small_boundedAbove_acyclic (I : CochainComplex C ℤ)
     I.IsKInjective
 ```
 
-**`Stacks.Injectives.isKInjective_of_injective_of_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Criterion.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/Criterion.lean#L765).
+**`Stacks.Injectives.isKInjective_of_injective_of_small_boundedAbove_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Criterion.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/Criterion.lean#L765).
 
 > A complex of injective objects in a Grothendieck abelian category is K-injective if every
 > map to it in the homotopy category from a uniformly small bounded-above acyclic complex is zero.
@@ -120,7 +120,7 @@ theorem isKInjective_of_injective_of_small_boundedAbove_acyclic
 
 [Tag 079M](https://stacks.math.columbia.edu/tag/079M) in the Stacks Project.
 
-**`Stacks.Injectives.exists_functorial_termwise_mono_quasiIso_homotopy_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialHomotopies.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialHomotopies.lean#L46).
+**`Stacks.Injectives.exists_functorial_termwise_mono_quasiIso_homotopy_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialHomotopies.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialHomotopies.lean#L46).
 
 > **Stacks Project, Tag 079M.** For a set of acyclic cochain complexes, there is a
 > functorial termwise monomorphic quasi-isomorphism such that postcomposing any map from one
@@ -141,7 +141,7 @@ theorem exists_functorial_termwise_mono_quasiIso_homotopy_zero
 
 [Tag 079N](https://stacks.math.columbia.edu/tag/079N) in the Stacks Project.
 
-**`Stacks.Injectives.exists_functorialInjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Enlargement.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/Enlargement.lean#L681).
+**`Stacks.Injectives.exists_functorialInjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/Enlargement.lean, line 681](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/Enlargement.lean#L681).
 
 > A Grothendieck abelian category admits a functorial termwise monomorphic quasi-isomorphism
 > from every cochain complex to one whose map in each degree factors through an injective
@@ -152,7 +152,7 @@ theorem exists_functorialInjectiveResolution [IsGrothendieckAbelian.{w} C] :
     Nonempty (FunctorialInjectiveResolution C)
 ```
 
-**`Stacks.Injectives.FunctorialEnlargement.exists_functorialInjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean#L685).
+**`Stacks.Injectives.FunctorialEnlargement.exists_functorialInjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean#L685).
 
 > **Stacks Project, Tag 079N.**  A Grothendieck abelian category admits a functorial
 > injective enlargement of unbounded cochain complexes: a functor on `CochainComplex C ℤ`
@@ -172,7 +172,7 @@ theorem exists_functorialInjectiveResolution :
 
 [Tag 079P](https://stacks.math.columbia.edu/tag/079P) in the Stacks Project.
 
-**`Stacks.Injectives.exists_functorial_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1198). The attribute's comment: “existence and functoriality”.
+**`Stacks.Injectives.exists_functorial_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1198). The attribute's comment: “existence and functoriality”.
 
 > Functorial K-injective resolutions exist in a Grothendieck abelian category.
 
@@ -181,7 +181,7 @@ theorem exists_functorial_quasiIso_isKInjective :
     Nonempty (FunctorialKInjectiveResolution C)
 ```
 
-**`Stacks.Injectives.kInjectiveResolutionInclusion_quasiIso`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1372). The attribute's comment: “quasi-isomorphism”.
+**`Stacks.Injectives.kInjectiveResolutionInclusion_quasiIso`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1372). The attribute's comment: “quasi-isomorphism”.
 
 > The inclusion into the chosen K-injective resolution is a quasi-isomorphism.
 
@@ -191,7 +191,7 @@ noncomputable instance kInjectiveResolutionInclusion_quasiIso
     QuasiIso ((kInjectiveResolutionInclusion C).app M)
 ```
 
-**`Stacks.Injectives.kInjectiveResolutionInclusion_f_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1379). The attribute's comment: “termwise monomorphism”.
+**`Stacks.Injectives.kInjectiveResolutionInclusion_f_mono`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1379). The attribute's comment: “termwise monomorphism”.
 
 > The inclusion into the chosen K-injective resolution is termwise monic.
 
@@ -201,7 +201,7 @@ noncomputable instance kInjectiveResolutionInclusion_f_mono
     Mono (((kInjectiveResolutionInclusion C).app M).f n)
 ```
 
-**`Stacks.Injectives.kInjectiveResolutionFunctor_obj_X_injective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1386). The attribute's comment: “injective terms”.
+**`Stacks.Injectives.kInjectiveResolutionFunctor_obj_X_injective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1386). The attribute's comment: “injective terms”.
 
 > Every term of the chosen resolution is an injective object.
 
@@ -211,7 +211,7 @@ noncomputable instance kInjectiveResolutionFunctor_obj_X_injective
     Injective (((kInjectiveResolutionFunctor C).obj M).X n)
 ```
 
-**`Stacks.Injectives.kInjectiveResolutionFunctor_obj_isKInjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1393). The attribute's comment: “K-injective target”.
+**`Stacks.Injectives.kInjectiveResolutionFunctor_obj_isKInjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/KInjective/FunctorialResolution.lean#L1393). The attribute's comment: “K-injective target”.
 
 > The chosen resolution is K-injective.
 
@@ -221,7 +221,7 @@ noncomputable instance kInjectiveResolutionFunctor_obj_isKInjective
     ((kInjectiveResolutionFunctor C).obj M).IsKInjective
 ```
 
-**`Stacks.Injectives.FunctorialEnlargement.exists_functorial_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean#L706). The attribute's comment: “existence and functoriality”. References: SGA 2 VIII (1.4), “more general”.
+**`Stacks.Injectives.FunctorialEnlargement.exists_functorial_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Injectives/Spaltenstein/Enlargement.lean#L706). The attribute's comment: “existence and functoriality”. References: SGA 2 VIII (1.4), “more general”.
 
 > **Stacks Project, Tag 079P**, unconditionally.  Functorial K-injective resolutions
 > exist in a Grothendieck abelian category: every complex `M` admits, functorially in `M`, a
@@ -243,4 +243,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 19.12, Tag 079I](https://stacks.math.columbia.edu/tag/079I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

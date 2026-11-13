@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.6 The structure sheaf
 
-Section 96.6 of the Stacks Project, [Tag 06TU](https://stacks.math.columbia.edu/tag/06TU). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 96.6 of the Stacks Project, [Tag 06TU](https://stacks.math.columbia.edu/tag/06TU). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06TV, a definition
 
 [Tag 06TV](https://stacks.math.columbia.edu/tag/06TV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheaf.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheaf.lean#L108).
+**`AlgebraicGeometry.Stack.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheaf.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheaf.lean#L108).
 
 > The structure sheaf of a category fibred in groupoids, given by inverse image of the
 > commutative ring sheaf of the big site of schemes.
@@ -30,7 +30,7 @@ noncomputable def structureSheaf {X : Type v} [Category.{w} X]
 
 [Tag 06TW](https://stacks.math.columbia.edu/tag/06TW) in the Stacks Project.
 
-**`AlgebraicGeometry.FibredSite.inverseImageStructureSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L64). The attribute's comment: “canonical identification of structure sheaves”.
+**`AlgebraicGeometry.FibredSite.inverseImageStructureSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L64). The attribute's comment: “canonical identification of structure sheaves”.
 
 > For a 1-morphism `F` of categories fibred in groupoids over the big fppf site, the inverse
 > image along `F` of the structure sheaf of the target is the structure sheaf of the source, as a
@@ -56,7 +56,7 @@ theorem inverseImageStructureSheaf_eq
       FibredSite.structureSheaf B S hS p hp τ
 ```
 
-**`AlgebraicGeometry.FibredSite.ringedToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L135). The attribute's comment: “morphism of ringed topoi”.
+**`AlgebraicGeometry.FibredSite.ringedToposMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L135). The attribute's comment: “morphism of ringed topoi”.
 
 > A 1-morphism `F` of categories fibred in groupoids over the big fppf site induces a morphism
 > of ringed topoi in the sense of `AlgebraicGeometry.RingedToposHom`, between the two associated
@@ -79,7 +79,7 @@ noncomputable def ringedToposMorphism
       (associatedRingedTopos B S hS q hq τ)
 ```
 
-**`AlgebraicGeometry.FibredSite.ringedToposMorphism_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L173). The attribute's comment: “inverse image of the underlying geometric morphism”.
+**`AlgebraicGeometry.FibredSite.ringedToposMorphism_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L173). The attribute's comment: “inverse image of the underlying geometric morphism”.
 
 > The morphism of ringed topoi `AlgebraicGeometry.FibredSite.ringedToposMorphism` sits over
 > the morphism of topoi that `F` itself induces: its inverse image is restriction of sheaves along
@@ -105,7 +105,7 @@ theorem ringedToposMorphism_inverseImage
         (BigFppfOver.associatedTopology B S hS q τ)
 ```
 
-**`AlgebraicGeometry.FibredSite.ringedToposMorphism_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L196). The attribute's comment: “canonical structure map”.
+**`AlgebraicGeometry.FibredSite.ringedToposMorphism_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L196). The attribute's comment: “canonical structure map”.
 
 > The inverse-image form of the structure map of
 > `AlgebraicGeometry.FibredSite.ringedToposMorphism` is the canonical identification itself: the
@@ -134,7 +134,7 @@ theorem ringedToposMorphism_fSharpInverseImage
         eqToHom (inverseImageStructureSheaf_eq B S hS p q hp hq F hF τ)
 ```
 
-**`AlgebraicGeometry.FibredSite.ringedToposMorphism_isIso_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L233). The attribute's comment: “canonical identification gives an isomorphism of structure sheaves”.
+**`AlgebraicGeometry.FibredSite.ringedToposMorphism_isIso_fSharpInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/StructureSheafFunctoriality.lean#L233). The attribute's comment: “canonical identification gives an isomorphism of structure sheaves”.
 
 > The inverse-image form of the structure map of
 > `AlgebraicGeometry.FibredSite.ringedToposMorphism` is an isomorphism.
@@ -152,7 +152,7 @@ theorem ringedToposMorphism_isIso_fSharpInverseImage
     IsIso (ringedToposMorphism B S hS p q hp hq F hF τ).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.Stack.sheafPushforwardContinuous_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L85). The attribute's comment: “the canonical identification of structure sheaves”.
+**`AlgebraicGeometry.Stack.sheafPushforwardContinuous_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L85). The attribute's comment: “the canonical identification of structure sheaves”.
 
 > **Stacks 06TW.** The inverse image of the structure sheaf of `𝒴` along a 1-morphism `F` is
 > the structure sheaf of `𝒳`, as an equality of sheaves of commutative rings: being a 1-morphism
@@ -167,7 +167,7 @@ theorem sheafPushforwardContinuous_structureSheaf (hF : F ⋙ q = p)
       structureSheaf B S hS p hp τ hτ
 ```
 
-**`AlgebraicGeometry.Stack.structureSheafInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L141). The attribute's comment: “the structure sheaves are identified by the morphism of topoi”.
+**`AlgebraicGeometry.Stack.structureSheafInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L141). The attribute's comment: “the structure sheaves are identified by the morphism of topoi”.
 
 > **Stacks 06TW.** The inverse image of the structure sheaf of `𝒴` is the structure sheaf of
 > `𝒳`, as sheaves of commutative rings on the associated site of `𝒳`: the inverse image of a
@@ -181,7 +181,7 @@ noncomputable def structureSheafInverseImageIso :
       structureSheaf B S hS p hp τ hτ
 ```
 
-**`AlgebraicGeometry.Stack.associatedRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L156). The attribute's comment: “the morphism of ringed topoi”.
+**`AlgebraicGeometry.Stack.associatedRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L156). The attribute's comment: “the morphism of ringed topoi”.
 
 > **Stacks 06TW.** The morphism of ringed topoi induced by a 1-morphism of categories fibred
 > in groupoids: the morphism of topoi of Stacks 06NW together with the structure map adjoint to
@@ -193,7 +193,7 @@ noncomputable def associatedRingedToposHom :
       (associatedRingedTopos B S hS q hq τ hτ)
 ```
 
-**`AlgebraicGeometry.Stack.fSharpInverseImage_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L173). The attribute's comment: “the structure map is the canonical identification”.
+**`AlgebraicGeometry.Stack.fSharpInverseImage_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L173). The attribute's comment: “the structure map is the canonical identification”.
 
 > **Stacks 06TW.** The structure map of the induced morphism of ringed topoi is, in
 > inverse-image form, exactly the identification of the structure sheaves.
@@ -204,7 +204,7 @@ theorem fSharpInverseImage_associatedRingedToposHom :
       (structureSheafInverseImageIso B S hS p q F hp hq τ hτ hF).hom
 ```
 
-**`AlgebraicGeometry.Stack.isIso_fSharpInverseImage_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L183). The attribute's comment: “the structure map is an isomorphism”.
+**`AlgebraicGeometry.Stack.isIso_fSharpInverseImage_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctoriality.lean#L183). The attribute's comment: “the structure map is an isomorphism”.
 
 > **Stacks 06TW.** The structure map of the induced morphism of ringed topoi is an
 > isomorphism, so the morphism of ringed topoi is a morphism of ringed topoi with invertible
@@ -219,7 +219,7 @@ theorem isIso_fSharpInverseImage_associatedRingedToposHom :
 
 [Tag 06TX](https://stacks.math.columbia.edu/tag/06TX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFlat_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean#L113). The attribute's comment: “flatness of the morphism of ringed topoi of a 1-morphism”.
+**`AlgebraicGeometry.Stack.isFlat_associatedRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean#L113). The attribute's comment: “flatness of the morphism of ringed topoi of a 1-morphism”.
 
 > **Stacks 06TX.** The morphism of ringed topoi `f : Sh(𝒳_τ) → Sh(𝒴_τ)` induced by a 1-morphism
 > of categories fibred in groupoids is flat: its structure map in inverse-image form is the
@@ -234,7 +234,7 @@ theorem isFlat_associatedRingedToposHom :
       (associatedRingedToposHom B S hS p q F hp hq τ hτ hF)
 ```
 
-**`AlgebraicGeometry.Stack.isFlat_associatedRingedToposHom_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean#L172). The attribute's comment: “flatness of the morphism of big τ-sites of a morphism of schemes”.
+**`AlgebraicGeometry.Stack.isFlat_associatedRingedToposHom_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/StructureSheafFunctorialityFlat.lean#L172). The attribute's comment: “flatness of the morphism of big τ-sites of a morphism of schemes”.
 
 > **Stacks 06TX**, the second assertion. For a morphism `i : X ⟶ Y` of schemes over `S` the
 > induced morphism of ringed big `τ`-sites `i : (Sch/X)_τ → (Sch/Y)_τ` is flat, for the same reason:
@@ -260,4 +260,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.6, Tag 06TU](https://stacks.math.columbia.edu/tag/06TU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

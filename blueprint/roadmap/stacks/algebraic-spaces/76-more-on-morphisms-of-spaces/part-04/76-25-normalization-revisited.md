@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.25 Normalization revisited
 
-Section 76.25 of the Stacks Project, [Tag 082D](https://stacks.math.columbia.edu/tag/082D). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.25 of the Stacks Project, [Tag 082D](https://stacks.math.columbia.edu/tag/082D). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 082E, a lemma
 
 [Tag 082E](https://stacks.math.columbia.edu/tag/082E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_iso_algebraPullback_integralClosureSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralClosureSmoothPullbackUnconditional.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralClosureSmoothPullbackUnconditional.lean#L243). References: SGA 3 X (8.9), “partial”.
+**`AlgebraicGeometry.Space.exists_iso_algebraPullback_integralClosureSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralClosureSmoothPullbackUnconditional.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralClosureSmoothPullbackUnconditional.lean#L243). References: SGA 3 X (8.9), “partial”.
 
 > **Stacks 082E.** Let `f : Y ⟶ X` be a smooth morphism of algebraic spaces over `S` and let
 > `A` be a quasi-coherent sheaf of commutative `𝒪_X`-algebras. The integral closure of `𝒪_Y` in
@@ -36,7 +36,7 @@ theorem exists_iso_algebraPullback_integralClosureSheaf_unconditional (f : Y ⟶
 
 [Tag 082F](https://stacks.math.columbia.edu/tag/082F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativeNormalization.existsUnique_iso_baseChange_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean#L174). The attribute's comment: “X₂' ≅ X₂ ×\_\{X₁} X₁' for f qcqs and φ smooth, for normalizations given by the universal property of Tag 0823”.
+**`AlgebraicGeometry.Space.IsRelativeNormalization.existsUnique_iso_baseChange_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean#L174). The attribute's comment: “X₂' ≅ X₂ ×\_\{X₁} X₁' for f qcqs and φ smooth, for normalizations given by the universal property of Tag 0823”.
 
 > **Stacks 082F.**  Let `Y₂ = X₂ ×_{X₁} Y₁` be a fibre square of algebraic spaces over `S`
 > with `f : Y₁ ⟶ X₁` quasi-compact and quasi-separated and `φ : X₂ ⟶ X₁` smooth, and let
@@ -57,7 +57,7 @@ theorem existsUnique_iso_baseChange_of_isSmooth
     ∃! e : X₂' ≅ P, f₂' ≫ e.hom = hnorm₁.baseChangeFactorization sq sqP ∧ e.hom ≫ p = ν₂
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_iso_normalizationInQcqs_baseChange_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean#L203). The attribute's comment: “X₂' ≅ X₂ ×\_\{X₁} X₁' for f qcqs and φ smooth, for the normalizations of Tag 0822”.
+**`AlgebraicGeometry.Space.existsUnique_iso_normalizationInQcqs_baseChange_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInSmoothBaseChange.lean#L203). The attribute's comment: “X₂' ≅ X₂ ×\_\{X₁} X₁' for f qcqs and φ smooth, for the normalizations of Tag 0822”.
 
 > **Stacks 082F, for the normalizations of Stacks 0822.**  Let `Y₂ = X₂ ×_{X₁} Y₁` be a fibre
 > square of algebraic spaces over `S` with `f : Y₁ ⟶ X₁` quasi-compact and quasi-separated and
@@ -79,7 +79,7 @@ theorem existsUnique_iso_normalizationInQcqs_baseChange_of_isSmooth (f : Y₁ �
           e.hom ≫ p.hom = (normalizationInQcqsHom B S hS f₂ hqc₂ hqs₂).hom
 ```
 
-**`AlgebraicGeometry.Space.IsRelativeNormalization.existsUnique_baseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange.lean#L166). The attribute's comment: “the morphism h of the proof: the base change X₂ ×\_\{X₁} X₁' ⟶ X₂ is integral and f₂ factors through it, so the universal property of Tag 0823 supplies a unique h”.
+**`AlgebraicGeometry.Space.IsRelativeNormalization.existsUnique_baseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange.lean#L166). The attribute's comment: “the morphism h of the proof: the base change X₂ ×\_\{X₁} X₁' ⟶ X₂ is integral and f₂ factors through it, so the universal property of Tag 0823 supplies a unique h”.
 
 > **Stacks 082F, the morphism `h`.**  The base change `X₂ ×_{X₁} X₁' ⟶ X₂` is an integral
 > morphism through which `f₂` factors, so the universal property of the normalization `X₂'` of
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.25, Tag 082D](https://stacks.math.columbia.edu/tag/082D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

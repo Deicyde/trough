@@ -8,7 +8,7 @@ proof: formalized
 
 # Rosenthal's ℓ¹ theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html).
 
 ## Uniform $\ell^1$ lower bound
 
@@ -18,7 +18,7 @@ there is a real $c > 0$ such that $\|\sum_i a_i y_i\| \ge c \sum_i |a_i|$ for ev
 supported sequence $(a_i)_{i \in \mathbb{N}}$ of scalars in $\mathbb{K}$, both sums running over
 the finitely many $i$ with $a_i \ne 0$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.HasUniformL1LowerBound`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean, line 1092](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean#L1092). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html#has-uniform-l1-lower-bound).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.HasUniformL1LowerBound`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean, line 1092](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean#L1092). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html#has-uniform-l1-lower-bound).
 
 ## Rosenthal's $\ell^1$ theorem
 
@@ -37,7 +37,7 @@ Albiac and Kalton, Sections 10.1–10.2, and Farahat's 1974 proof.
 
 - H. P. Rosenthal, A Characterization of Banach Spaces Containing l1, PNAS 71 (1974), 2411–2413, DOI 10.1073/pnas.71.6.2411, ℓ¹ dichotomy theorem; Bourgain et al., extensions; Lean states `RCLike` Banach bounded `Set.range` dichotomy with `StrictMono φ` and `HasUniformL1LowerBound` defined via `ℕ →₀ 𝕜` finitely supported coefficients.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.rosenthal_l1`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean, line 1406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean#L1406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html#rosenthal-l1).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.rosenthal_l1`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean, line 1406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/RosenthalL1.lean#L1406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html#rosenthal-l1).
 
 ## Depends on
 
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rosenthal's ℓ¹ theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/sequence-spaces/rosenthal-s-theorem)

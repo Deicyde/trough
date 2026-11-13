@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.47 Pseudo-coherent modules
 
-Section 20.47 of the Stacks Project, [Tag 08CA](https://stacks.math.columbia.edu/tag/08CA). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.47 of the Stacks Project, [Tag 08CA](https://stacks.math.columbia.edu/tag/08CA). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08CB, a definition
 
 [Tag 08CB](https://stacks.math.columbia.edu/tag/08CB) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentComplexFrom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L109). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentComplexFrom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L109). The attribute's comment: “part (1)”.
 
 > A complex of `𝒪_X`-modules is `m`-pseudo-coherent if every point of `X` has an open
 > neighbourhood on which the complex admits a strictly perfect approximation in degrees at
@@ -26,7 +26,7 @@ public abbrev IsPseudoCoherentComplexFrom
     (E : CochainComplex (StrictlyPerfect.OXMod.{u, u, u} X) ℤ) (m : ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L122). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L122). The attribute's comment: “part (2)”.
 
 > A complex of `𝒪_X`-modules is pseudo-coherent if it is `m`-pseudo-coherent for every
 > integer `m`.
@@ -36,7 +36,7 @@ public abbrev IsPseudoCoherentComplex
     (E : CochainComplex (StrictlyPerfect.OXMod.{u, u, u} X) ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentFrom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L129). The attribute's comment: “part (3), m-pseudo-coherent”.
+**`AlgebraicGeometry.RingedSpace.IsPseudoCoherentFrom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L129). The attribute's comment: “part (3), m-pseudo-coherent”.
 
 > An object of the derived category of `𝒪_X`-modules is `m`-pseudo-coherent if it is
 > represented by an `m`-pseudo-coherent complex.
@@ -47,7 +47,7 @@ public abbrev IsPseudoCoherentFrom
     (E : DerivedCategory (StrictlyPerfect.OXMod.{u, u, u} X)) (m : ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.RingedSpace.IsPseudoCoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L138). The attribute's comment: “part (3), pseudo-coherent”.
+**`AlgebraicGeometry.RingedSpace.IsPseudoCoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/SheafLevel.lean#L138). The attribute's comment: “part (3), pseudo-coherent”.
 
 > An object of the derived category of `𝒪_X`-modules is pseudo-coherent if it is represented by
 > a pseudo-coherent complex.
@@ -62,7 +62,7 @@ public abbrev IsPseudoCoherent
 
 [Tag 08CC](https://stacks.math.columbia.edu/tag/08CC) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentComplexFrom_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean#L674). The attribute's comment: “part (2)”. References: SGA 6 I (2.2), “a)”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentComplexFrom_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean#L674). The attribute's comment: “part (2)”. References: SGA 6 I (2.2), “a)”.
 
 > Let `E` be an `m`-pseudo-coherent object of the derived category of `𝒪_X`-modules. Then every
 > complex of `𝒪_X`-modules representing `E` is `m`-pseudo-coherent.
@@ -73,7 +73,7 @@ public theorem isPseudoCoherentComplexFrom_of_iso (E : DerivedCategory (OXMod.{u
     (e : DerivedCategory.Q.obj K ≅ E) : IsPseudoCoherentComplexFrom K m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_local_derived_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean#L704). The attribute's comment: “part (1)”. References: SGA 6 I (2.2), “b) (ii')=>(ii)”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_local_derived_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentIso.lean#L704). The attribute's comment: “part (1)”. References: SGA 6 I (2.2), “b) (ii')=>(ii)”.
 
 > Let `E` be an object of the derived category of `𝒪_X`-modules and suppose that every point of
 > `X` has an open neighbourhood `U` on which some strictly perfect complex `𝒫` maps to `E|_U` in
@@ -96,7 +96,7 @@ public theorem isPseudoCoherentFrom_of_local_derived_approximation
     IsPseudoCoherentFrom E m
 ```
 
-**`Stacks.PseudoCoherence.DerivedCharacterization.isPseudoCoherentFrom_of_local_derived_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean#L244). The attribute's comment: “part (1)”.
+**`Stacks.PseudoCoherence.DerivedCharacterization.isPseudoCoherentFrom_of_local_derived_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean#L244). The attribute's comment: “part (1)”.
 
 > **Tag 08CC part (1).** Local strictly perfect approximations in the derived category make a
 > derived object `m`-pseudo-coherent.
@@ -117,7 +117,7 @@ theorem isPseudoCoherentFrom_of_local_derived_approximation
     AlgebraicGeometry.RingedSpace.PseudoCoherence.IsPseudoCoherentFrom (X := X) E m
 ```
 
-**`Stacks.PseudoCoherence.DerivedCharacterization.isPseudoCoherentComplexFrom_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean#L264). The attribute's comment: “part (2)”. References: SGA 6 I (2.2), “a)”.
+**`Stacks.PseudoCoherence.DerivedCharacterization.isPseudoCoherentComplexFrom_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedCharacterization.lean#L264). The attribute's comment: “part (2)”. References: SGA 6 I (2.2), “a)”.
 
 > **Tag 08CC part (2).** Every complex representing an `m`-pseudo-coherent derived object is
 > `m`-pseudo-coherent.
@@ -133,7 +133,7 @@ theorem isPseudoCoherentComplexFrom_of_iso (E : DerivedCategory (OXMod.{u} X)) (
 
 [Tag 09U7](https://stacks.math.columbia.edu/tag/09U7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPseudoCoherentFrom_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedPullback.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedPullback.lean#L189).
+**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPseudoCoherentFrom_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedPullback.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedPullback.lean#L189).
 
 > **Stacks 09U7.**  The derived pullback of an `m`-pseudo-coherent object of `D(𝒪_Y)` along a
 > morphism of ringed spaces is `m`-pseudo-coherent.
@@ -153,7 +153,7 @@ theorem isPseudoCoherentFrom_derivedPullback {X Y : RingedSpace.{u, u}} (f : X �
 
 [Tag 08CD](https://stacks.math.columbia.edu/tag/08CD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₃_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L483). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₃_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L483). The attribute's comment: “part (1)”.
 
 > **Stacks 08CD, part (1).** If the first term of a distinguished triangle in the derived
 > category of `𝒪_X`-modules is `(m + 1)`-pseudo-coherent and the second is `m`-pseudo-coherent,
@@ -166,7 +166,7 @@ public theorem isPseudoCoherentFrom_obj₃_of_distinguished (m : ℤ)
     IsPseudoCoherentFrom T.obj₃ m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₂_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L497). The attribute's comment: “part (2)”. References: SGA 6 I (2.5), “b), ringed space”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₂_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L497). The attribute's comment: “part (2)”. References: SGA 6 I (2.5), “b), ringed space”.
 
 > **Stacks 08CD, part (2).** If the first and third terms of a distinguished triangle in the
 > derived category of `𝒪_X`-modules are `m`-pseudo-coherent, then so is the second.
@@ -181,7 +181,7 @@ public theorem isPseudoCoherentFrom_obj₂_of_distinguished (m : ℤ)
     IsPseudoCoherentFrom T.obj₂ m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₁_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L511). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_obj₁_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentTriangle.lean#L511). The attribute's comment: “part (3)”.
 
 > **Stacks 08CD, part (3).** If the second term of a distinguished triangle in the derived
 > category of `𝒪_X`-modules is `(m + 1)`-pseudo-coherent and the third is `m`-pseudo-coherent, then
@@ -200,7 +200,7 @@ public theorem isPseudoCoherentFrom_obj₁_of_distinguished (m : ℤ)
 
 [Tag 09J3](https://stacks.math.columbia.edu/tag/09J3) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean#L480). The attribute's comment: “part (1)”. References: SGA 6 I (2.16), “special case”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean#L480). The attribute's comment: “part (1)”. References: SGA 6 I (2.16), “special case”.
 
 > **Tag 09J3, part (1).**  Let `(X, 𝒪_X)` be a ringed space and let `K`, `L` be objects of
 > `D(𝒪_X)`.  If `K` is `n`-pseudo-coherent with `H^i(K) = 0` for `i > a`, and `L` is
@@ -230,7 +230,7 @@ theorem isPseudoCoherentFrom_derivedTensorProduct
     IsPseudoCoherentFrom (X := X) ((T.tensor.obj K).obj L) (max (m + a) (n + b))
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean#L521). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DerivedTensorProduct.lean#L521). The attribute's comment: “part (2)”.
 
 > **Tag 09J3, part (2).**  The derived tensor product of two pseudo-coherent objects of
 > `D(𝒪_X)` is pseudo-coherent.
@@ -255,7 +255,7 @@ theorem isPseudoCoherent_derivedTensorProduct
 
 [Tag 08CE](https://stacks.math.columbia.edu/tag/08CE) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentSummand.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentSummand.lean#L159). The attribute's comment: “m-pseudo-coherent, both summands”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F',F''”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentSummand.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PseudoCoherentSummand.lean#L159). The attribute's comment: “m-pseudo-coherent, both summands”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F',F''”.
 
 > **Stacks 064X on a ringed space: both summands of an `m`-pseudo-coherent binary biproduct in
 > `D(𝒪_X)` are `m`-pseudo-coherent.**
@@ -278,7 +278,7 @@ public theorem isPseudoCoherentFrom_of_biprod (m : ℤ)
     IsPseudoCoherentFrom A m ∧ IsPseudoCoherentFrom B m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L177). The attribute's comment: “m-pseudo-coherent, first summand”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F'”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L177). The attribute's comment: “m-pseudo-coherent, first summand”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F'”.
 
 > **Stacks Project, Tag 08CE.** The first summand of an `m`-pseudo-coherent biproduct is
 > `m`-pseudo-coherent.
@@ -290,7 +290,7 @@ public theorem isPseudoCoherentFrom_left_of_biprod
     (h : IsPseudoCoherentFrom (K ⊞ L) m) : IsPseudoCoherentFrom K m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L234). The attribute's comment: “m-pseudo-coherent, second summand”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F''”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L234). The attribute's comment: “m-pseudo-coherent, second summand”. References: SGA 6 I (2.12), “n-pc: sum ⇒ F''”.
 
 > **Stacks Project, Tag 08CE.** The second summand of an `m`-pseudo-coherent biproduct is
 > `m`-pseudo-coherent.
@@ -302,7 +302,7 @@ public theorem isPseudoCoherentFrom_right_of_biprod
     (h : IsPseudoCoherentFrom (K ⊞ L) m) : IsPseudoCoherentFrom L m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L243). The attribute's comment: “pseudo-coherent, first summand”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L243). The attribute's comment: “pseudo-coherent, first summand”.
 
 > **Stacks Project, Tag 08CE.** The first summand of a pseudo-coherent biproduct is
 > pseudo-coherent.
@@ -314,7 +314,7 @@ public theorem isPseudoCoherent_left_of_biprod
     IsPseudoCoherent K
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L257). The attribute's comment: “pseudo-coherent, second summand”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/DirectSummand.lean#L257). The attribute's comment: “pseudo-coherent, second summand”.
 
 > **Stacks Project, Tag 08CE.** The second summand of a pseudo-coherent biproduct is
 > pseudo-coherent.
@@ -326,7 +326,7 @@ public theorem isPseudoCoherent_right_of_biprod
     IsPseudoCoherent L
 ```
 
-**`Stacks.PseudoCoherence.Summands.isPseudoCoherent_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Summands.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Summands.lean#L62). The attribute's comment: “pseudo-coherent, both summands”.
+**`Stacks.PseudoCoherence.Summands.isPseudoCoherent_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Summands.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Summands.lean#L62). The attribute's comment: “pseudo-coherent, both summands”.
 
 > **Stacks 08CE.** Both summands of a pseudo-coherent binary biproduct in `D(O_X)` are
 > pseudo-coherent.
@@ -351,7 +351,7 @@ theorem isPseudoCoherent_of_biprod {X : RingedSpace.{u, u}}
 
 [Tag 09V7](https://stacks.math.columbia.edu/tag/09V7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentComplexFrom_of_locally_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/BoundedComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/BoundedComplex.lean#L387). References: SGA 5 VIII (5.1), “'if' direction”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentComplexFrom_of_locally_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/BoundedComplex.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/BoundedComplex.lean#L388). References: SGA 5 VIII (5.1), “'if' direction”.
 
 > **Stacks 09V7.** Let `X` be a ringed space, let `m` be an integer and let `𝒦` be a complex of
 > `𝒪_X`-modules which is bounded above on a neighbourhood of every point and whose term `𝒦^i` is
@@ -376,7 +376,7 @@ public theorem isPseudoCoherentComplexFrom_of_locally_boundedAbove (m : ℤ)
 
 [Tag 09V8](https://stacks.math.columbia.edu/tag/09V8) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent/CohomologyBoundedAbove.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/PseudoCoherent/CohomologyBoundedAbove.lean#L208).
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/PseudoCoherent/CohomologyBoundedAbove.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/PseudoCoherent/CohomologyBoundedAbove.lean#L208).
 
 > **Stacks Project, Tag 09V8.** Let `X` be a ringed space, `m : ℤ` and `E` an object of the
 > derived category of `𝒪_X`-modules which is locally bounded above. If the cohomology sheaf `Hⁱ(E)`
@@ -395,7 +395,7 @@ theorem isPseudoCoherentFrom_of_homology (E : DerivedCategory (OXMod.{u, u} X)) 
 
 [Tag 08DN](https://stacks.math.columbia.edu/tag/08DN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isFinitePresentation_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationNextCohomology.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationNextCohomology.lean#L251). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.RingedSpace.isFinitePresentation_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationNextCohomology.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationNextCohomology.lean#L251). The attribute's comment: “part (2)”.
 
 > Let `X` be a ringed space and let `K` be an `m`-pseudo-coherent object of the derived category
 > of `𝒪_X`-modules with `H^i(K) = 0` for `i > m + 1`. Then `H^{m+1}(K)` is an `𝒪_X`-module of finite
@@ -411,7 +411,7 @@ public theorem isFinitePresentation_homology_of_isPseudoCoherentFrom
       ((DerivedCategory.homologyFunctor (OXMod.{u, u} X) (m + 1)).obj K)
 ```
 
-**`AlgebraicGeometry.RingedSpace.isFiniteType_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ImmersionIndependence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ImmersionIndependence.lean#L234). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.RingedSpace.isFiniteType_homology_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ImmersionIndependence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ImmersionIndependence.lean#L234). The attribute's comment: “part (1)”.
 
 > **Stacks 08DN, part (1).** Let `X` be a ringed space and let `K` be an `m`-pseudo-coherent
 > object of the derived category of `𝒪_X`-modules with `H^i(K) = 0` for `i > m`. Then `H^m(K)` is an
@@ -443,7 +443,7 @@ public theorem isFiniteType_homology_of_isPseudoCoherentFrom
 
 [Tag 09V9](https://stacks.math.columbia.edu/tag/09V9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean#L338). The attribute's comment: “finite\_presentation\_iff\_minus\_one\_pseudo\_coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean#L338). The attribute's comment: “finite\_presentation\_iff\_minus\_one\_pseudo\_coherent”.
 
 > Let `X` be a ringed space and let `ℱ` be a sheaf of `𝒪_X`-modules.
 > Then `ℱ`, viewed in degree zero as an object of the derived category of `𝒪_X`-modules, is
@@ -456,7 +456,7 @@ public theorem isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePrese
       SheafOfModules.IsFinitePresentation (R := structureSheafOfRings X) F
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean#L146). The attribute's comment: “finite\_type\_iff\_zero\_pseudo\_coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean#L146). The attribute's comment: “finite\_type\_iff\_zero\_pseudo\_coherent”.
 
 > Let `X` be a ringed space and let `ℱ` be a sheaf of `𝒪_X`-modules. Then `ℱ`, viewed in degree
 > zero as an object of the derived category of `𝒪_X`-modules, is `0`-pseudo-coherent if and only if
@@ -476,4 +476,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.47, Tag 08CA](https://stacks.math.columbia.edu/tag/08CA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

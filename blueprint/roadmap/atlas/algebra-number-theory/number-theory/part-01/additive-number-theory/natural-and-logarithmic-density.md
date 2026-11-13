@@ -8,7 +8,7 @@ proof: formalized
 
 # Natural and logarithmic density
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html).
 
 ## Densities
 
@@ -24,7 +24,7 @@ in $S$, taken to be $0$ when $A_{\lt b}$ is empty. By default $A = \beta$.
 
 - inspired by https://github.com/b-mehta/unit-fractions
 
-Formalized by `Set.partialDensity`, an abbreviation declared in [MathlibExt/Data/Set/Density.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#partial-density).
+Formalized by `Set.partialDensity`, an abbreviation declared in [MathlibExt/Data/Set/Density.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#partial-density).
 
 ## Upper density
 
@@ -33,7 +33,7 @@ is finite, and let $S, A \subseteq \beta$. The upper density of $S$ relative to 
 superior, as $b \to \infty$ in $\beta$, of the partial densities of $S$ relative to $A$ at $b$.
 By default $A = \beta$.
 
-Formalized by `Set.upperDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#upper-density).
+Formalized by `Set.upperDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#upper-density).
 
 ## Lower density
 
@@ -42,7 +42,7 @@ is finite, and let $S, A \subseteq \beta$. The lower density of $S$ relative to 
 inferior, as $b \to \infty$ in $\beta$, of the partial densities of $S$ relative to $A$ at $b$.
 By default $A = \beta$.
 
-Formalized by `Set.lowerDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#lower-density).
+Formalized by `Set.lowerDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#lower-density).
 
 ## Density of a set
 
@@ -55,7 +55,7 @@ the denominator is $0$, tends to $\alpha$ as $b \to \infty$ in $\beta$.
 
 By default $A = \beta$; for $\beta = \mathbb{N}$ this is the natural density of $S$.
 
-Formalized by `Set.HasDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density).
+Formalized by `Set.HasDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density).
 
 ## Positive density
 
@@ -64,7 +64,7 @@ $\{x \in \beta \mid x \le b\}$ is finite, and let $S, A \subseteq \beta$. The se
 density relative to $A$ if there is a real number $\alpha > 0$ such that $S$ has density $\alpha$
 relative to $A$. By default $A = \beta$.
 
-Formalized by `Set.HasPosDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-pos-density).
+Formalized by `Set.HasPosDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-pos-density).
 
 ## Two-sided partial density
 
@@ -72,7 +72,7 @@ For a set $S$ of integers and a natural number $N$, the
 two-sided partial natural density of $S$ at $N$ is $\lvert S \cap [-N, N] \rvert / (2N + 1)$,
 where $[-N, N]$ is the set of integers $m$ with $-N \le m \le N$.
 
-Formalized by `Set.intPartialDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#int-partial-density).
+Formalized by `Set.intPartialDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#int-partial-density).
 
 ## Two-sided natural density
 
@@ -81,7 +81,7 @@ $\alpha \in \mathbb{R}$ if $\lvert S \cap [-N, N] \rvert / (2N + 1)$ tends to $\
 natural number $N$ tends to infinity, where $[-N, N]$ is the set of integers $m$ with
 $-N \le m \le N$.
 
-Formalized by `Set.HasIntDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-int-density).
+Formalized by `Set.HasIntDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-int-density).
 
 ## The whole order has density one
 
@@ -89,28 +89,28 @@ Let $\beta$ be a partial order with a least element
 and at least two elements, in which every closed interval $[a, b]$ is finite. Then the set of
 all elements of $\beta$ has density $1$ (relative to all of $\beta$).
 
-Formalized by `Set.HasDensity.univ`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#univ).
+Formalized by `Set.HasDensity.univ`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#univ).
 
 ## Natural density of the even numbers
 
 The set of even natural numbers has natural
 density $1/2$.
 
-Formalized by `Nat.hasDensity_even`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density-even).
+Formalized by `Nat.hasDensity_even`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density-even).
 
 ## Finite sets have natural density zero
 
 Every finite set of natural numbers has natural
 density $0$.
 
-Formalized by `Nat.hasDensity_zero_of_finite`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density-zero-of-finite).
+Formalized by `Nat.hasDensity_zero_of_finite`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-density-zero-of-finite).
 
 ## Sets of nonzero natural density are infinite
 
 If a set $S$ of natural numbers has
 natural density $\alpha$ with $\alpha \neq 0$, then $S$ is infinite.
 
-Formalized by `Nat.infinite_of_hasDensity_pos`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#infinite-of-has-density-pos).
+Formalized by `Nat.infinite_of_hasDensity_pos`, a theorem declared in [MathlibExt/Data/Set/Density.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#infinite-of-has-density-pos).
 
 ## Logarithmic density
 
@@ -123,7 +123,7 @@ is taken to be $0$, and the whole expression is taken to be $0$ when $\log n = 0
 Logarithmic density is a weaker notion than natural density: if a set has natural density $d$,
 then it also has logarithmic density $d$, but the converse is false.
 
-Formalized by `Set.HasLogDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Set/Density.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-log-density).
+Formalized by `Set.HasLogDensity`, a definition declared in [MathlibExt/Data/Set/Density.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Set/Density.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html#has-log-density).
 
 ## Depends on
 
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Natural and logarithmic density](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/additive-number-theory/natural-and-logarithmic-density)

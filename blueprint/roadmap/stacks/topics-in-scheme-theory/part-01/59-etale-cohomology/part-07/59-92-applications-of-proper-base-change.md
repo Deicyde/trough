@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_scalarExtensionFst_of_isProper, Stacks.EtaleCohomology.isZero_rightDerived_etaleModuleDirectImage_of_isIntegralHom, Stacks.EtaleCohomology.ProperFibreDimension.isZero_rightDerived_etaleAbelianDirectImage_of_isProper, Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isProper, Stacks.EtaleCohomology.isIso_etaleModuleDerivedBaseChangeUnbounded_app_of_isProper, Stacks.EtaleCohomology.DerivedTensorConstant.nonempty_derivedSections_tensor_derivedConstantSheaf_iso, Stacks.EtaleCohomology.isIso_etaleTensorConstComparison, Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper_of_isGE
+lean: Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_scalarExtensionFst_of_isProper, Stacks.EtaleCohomology.isZero_rightDerived_etaleModuleDirectImage_of_isIntegralHom, Stacks.EtaleCohomology.ProperFibreDimension.isZero_rightDerived_etaleAbelianDirectImage_of_isProper, Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isProper, Stacks.EtaleCohomology.isIso_etaleModuleDerivedBaseChangeUnbounded_app_of_isProper, Stacks.EtaleCohomology.DerivedTensorConstant.nonempty_derivedSections_tensor_derivedConstantSheaf_iso, Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper_of_isGE
 statement: formalized
 proof: formalized
 ---
 
 # 59.92 Applications of proper base change
 
-Section 59.92 of the Stacks Project, [Tag 0A5I](https://stacks.math.columbia.edu/tag/0A5I). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.92 of the Stacks Project, [Tag 0A5I](https://stacks.math.columbia.edu/tag/0A5I). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DDG, a lemma
 
 [Tag 0DDG](https://stacks.math.columbia.edu/tag/0DDG) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_scalarExtensionFst_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SeparablyClosedFieldExtension.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SeparablyClosedFieldExtension.lean#L194).
+**`Stacks.EtaleCohomology.bijective_etaleCohomologyRestrictionMap_scalarExtensionFst_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SeparablyClosedFieldExtension.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/SeparablyClosedFieldExtension.lean#L194).
 
 > **Stacks Project, Tag 0DDG.** Let `K/k` be an extension of separably closed fields, `X` a
 > proper scheme over `k` (`f : X ⟶ Spec k` proper) and `F` a torsion abelian sheaf on `X_étale`.
@@ -36,7 +36,7 @@ theorem bijective_etaleCohomologyRestrictionMap_scalarExtensionFst_of_isProper
 
 [Tag 095U](https://stacks.math.columbia.edu/tag/095U) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isZero_rightDerived_etaleModuleDirectImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralCohomologicalDimension.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralCohomologicalDimension.lean#L132). The attribute's comment: “the case n = 0: for an integral morphism — a finite one, for instance, which is what a proper morphism with zero-dimensional fibres is — R^q f\_* F = 0 for every q > 0 and every sheaf of Λ-modules F, with no torsion hypothesis. The general bound 2n is NOT proved: its induction needs the curve case, Tag 03SC, which is not formalized here.”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4 XII (5.3), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XVII (4.3.1), “special case”; SGA 4 XVII (5.1.4), “special case”; SGA 4½ Arcata (2.3.6), “more general”; SGA 4½ Th finitude (1.3), “special case”.
+**`Stacks.EtaleCohomology.isZero_rightDerived_etaleModuleDirectImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralCohomologicalDimension.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralCohomologicalDimension.lean#L132). The attribute's comment: “the case n = 0: for an integral morphism — a finite one, for instance, which is what a proper morphism with zero-dimensional fibres is — R^q f\_* F = 0 for every q > 0 and every sheaf of Λ-modules F, with no torsion hypothesis. The general bound 2n is NOT proved: its induction needs the curve case, Tag 03SC, which is not formalized here.”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4 XII (5.3), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XVII (4.3.1), “special case”; SGA 4 XVII (5.1.4), “special case”; SGA 4½ Arcata (2.3.6), “more general”; SGA 4½ Th finitude (1.3), “special case”.
 
 > Let `Λ` be a ring and let `f : X ⟶ Y` be an integral morphism of schemes. Then the higher
 > direct images of every sheaf of `Λ`-modules `F` on the small étale site of `X` vanish:
@@ -49,7 +49,7 @@ theorem isZero_rightDerived_etaleModuleDirectImage_of_isIntegralHom (Λ : Type r
     IsZero (((etaleModuleDirectImage.{u, r} Λ f).rightDerived q).obj F)
 ```
 
-**`Stacks.EtaleCohomology.ProperFibreDimension.isZero_rightDerived_etaleAbelianDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperFibreDimensionBound.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperFibreDimensionBound.lean#L394). The attribute's comment: “the dévissage, with the curve input still open. PROVED: the tag's own conclusion, R^q f\_* F = 0 for every q > 2n and every abelian TORSION sheaf F, for f proper in the source's sense (IsProper together with QuasiCompact, since Mathlib's IsProper asks only for locally of finite type) with every fibre of dimension at most n. The content proved outright is the Leray/composition step that makes the bounds add, 2(n-1) + 2 = 2n: that is hasEtaleDirectImageBound\_comp, and under it isZero\_rightDerived\_comp, obtained from the Grothendieck spectral sequence of Tag 015N with no hypothesis beyond Tag 015M's acyclicity criterion. The base case n = 0 is proved outright as well: Tag 02LS, proved in this library by isFinite\_iff\_isProper\_and\_forall\_finite\_preimage\_singleton together with finite\_preimage\_singleton\_of\_topologicalKrullDim\_fiber\_le\_zero, makes f finite and therefore integral, and Tag 03QP (2) then gives the vanishing. ASSUMED, about the given f and nothing more: hdev, for n >= 1, a factorisation f = h ≫ g in which h already has the bound 2(n-1) and the curve leg g has the bound 2 — the latter is the conclusion of Tag 03SC (via Tag 0DDF), and TAG 03SC IS OWNED BY ANOTHER ITEM OF THIS PROJECT and is deliberately NOT formalized here, while the existence of the factorisation is the geometry of the source's steps 5-7 (reduction, normalization, graph of a rational function in X x P^1), also not available in this repository. The general bound is therefore NOT proved unconditionally.”. References: SGA 4 XVII (5.1.4), “special case”; SGA 4 XVII (5.2.8.1), “special case”; SGA 4½ Cycle (2.3.1), “special case”.
+**`Stacks.EtaleCohomology.ProperFibreDimension.isZero_rightDerived_etaleAbelianDirectImage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperFibreDimensionBound.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperFibreDimensionBound.lean#L394). The attribute's comment: “the dévissage, with the curve input still open. PROVED: the tag's own conclusion, R^q f\_* F = 0 for every q > 2n and every abelian TORSION sheaf F, for f proper in the source's sense (IsProper together with QuasiCompact, since Mathlib's IsProper asks only for locally of finite type) with every fibre of dimension at most n. The content proved outright is the Leray/composition step that makes the bounds add, 2(n-1) + 2 = 2n: that is hasEtaleDirectImageBound\_comp, and under it isZero\_rightDerived\_comp, obtained from the Grothendieck spectral sequence of Tag 015N with no hypothesis beyond Tag 015M's acyclicity criterion. The base case n = 0 is proved outright as well: Tag 02LS, proved in this library by isFinite\_iff\_isProper\_and\_forall\_finite\_preimage\_singleton together with finite\_preimage\_singleton\_of\_topologicalKrullDim\_fiber\_le\_zero, makes f finite and therefore integral, and Tag 03QP (2) then gives the vanishing. ASSUMED, about the given f and nothing more: hdev, for n >= 1, a factorisation f = h ≫ g in which h already has the bound 2(n-1) and the curve leg g has the bound 2 — the latter is the conclusion of Tag 03SC (via Tag 0DDF), and TAG 03SC IS OWNED BY ANOTHER ITEM OF THIS PROJECT and is deliberately NOT formalized here, while the existence of the factorisation is the geometry of the source's steps 5-7 (reduction, normalization, graph of a rational function in X x P^1), also not available in this repository. The general bound is therefore NOT proved unconditionally.”. References: SGA 4 XVII (5.1.4), “special case”; SGA 4 XVII (5.2.8.1), “special case”; SGA 4½ Cycle (2.3.1), “special case”.
 
 > **[Stacks, Tag 095U], its dévissage.** Let `f : X ⟶ Y` be a proper morphism of schemes — in
 > the source's sense, so `[IsProper f]` together with `[QuasiCompact f]`, Mathlib's `IsProper`
@@ -92,13 +92,13 @@ theorem isZero_rightDerived_etaleAbelianDirectImage_of_isProper
 
 Declarations registered for the tag:
 
-- [`Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L175), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperDirectImageVanishingRegistration.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperDirectImageVanishingRegistration.lean#L23) (StacksFrontier): “f proper (Mathlib's IsProper, which implies quasi-compact) with every fibre of topological Krull dimension at most n, F any abelian torsion sheaf on the small étale site of X: R^q f\_* F = 0 for all q > 2n”.
+- [`Stacks.EtaleCohomology.isZero_rightDerived_etaleAbelianDirectImage_of_isProper`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperBaseChangeTheoremUnconditional.lean#L175), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperDirectImageVanishingRegistration.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ProperDirectImageVanishingRegistration.lean#L23) (StacksFrontier): “f proper (Mathlib's IsProper, which implies quasi-compact) with every fibre of topological Krull dimension at most n, F any abelian torsion sheaf on the small étale site of X: R^q f\_* F = 0 for all q > 2n”.
 
 ## Tag 0F0C, a lemma
 
 [Tag 0F0C](https://stacks.math.columbia.edu/tag/0F0C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleModuleDerivedBaseChangeUnbounded_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ModuleProperBaseChangeUnbounded.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ModuleProperBaseChangeUnbounded.lean#L404). The attribute's comment: “for every commutative ring Λ with n = 0 in Λ for some n ≥ 1, which contains the source's Λ = ℤ/nℤ”. References: SGA 4 XVII (4.3.2), “special case”.
+**`Stacks.EtaleCohomology.isIso_etaleModuleDerivedBaseChangeUnbounded_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ModuleProperBaseChangeUnbounded.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/ModuleProperBaseChangeUnbounded.lean#L405). The attribute's comment: “for every commutative ring Λ with n = 0 in Λ for some n ≥ 1, which contains the source's Λ = ℤ/nℤ”. References: SGA 4 XVII (4.3.2), “special case”.
 
 > **Stacks Project, Tag 0F0C.** Let `f : X ⟶ Y` be a proper morphism of schemes, `g : Y' ⟶ Y`
 > a morphism of schemes, and `X' = Y' ×_Y X`, given as a cartesian square `sq` with projections
@@ -119,7 +119,7 @@ theorem isIso_etaleModuleDerivedBaseChangeUnbounded_app_of_isProper (Λ : Type) 
 
 [Tag 0F0E](https://stacks.math.columbia.edu/tag/0F0E) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.DerivedTensorConstant.nonempty_derivedSections_tensor_derivedConstantSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedGlobalSectionsTensorConstant.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedGlobalSectionsTensorConstant.lean#L474).
+**`Stacks.EtaleCohomology.DerivedTensorConstant.nonempty_derivedSections_tensor_derivedConstantSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedGlobalSectionsTensorConstant.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedGlobalSectionsTensorConstant.lean#L476). The attribute's comment: “abelian sheaves on `X_étale` are sheaves of `ULift ℤ`-modules, `RΓ(X, -)` is any right derived functor of global sections on the unbounded derived category, and the identification is stated as the existence of an isomorphism in `D(ℤ)`”.
 
 > **[Stacks, Tag 0F0E].** Let `X` be a quasi-compact and quasi-separated scheme, let
 > `E ∈ D⁺(X_étale)` and `K ∈ D⁺(ℤ)`. Then
@@ -155,35 +155,11 @@ theorem nonempty_derivedSections_tensor_derivedConstantSheaf_iso
         X.smallEtaleTopology).obj K) ≅ RΓ.obj E ⊗ K)
 ```
 
-**`Stacks.EtaleCohomology.isIso_etaleTensorConstComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsTensorConstant.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsTensorConstant.lean#L594). The attribute's comment: “steps 6-8 of the proof only: the case where `E` in `D⁺(X_étale)` is a single abelian sheaf in one degree and `K` in `D⁺(ℤ)` is a single flat `ℤ`-module in one degree, both carried as explicit hypotheses, so that the assertion reads `H^p(X, E ⊗_ℤ K̲) = H^p(X, E) ⊗_ℤ K`; the reductions of steps 1-5 and the statement for general `E` and `K` are not proved here”.
-
-> **Stacks 0F0E, the case of a single sheaf and a single flat module.** Let `X` be a
-> quasi-compact and quasi-separated scheme, `ℰ` an abelian sheaf on the small étale site of `X`
-> and `M` a flat `ℤ`-module. Then the canonical map
->
-> > `H^p(X, ℰ) ⊗_ℤ M ⟶ H^p(X, ℰ ⊗_ℤ M̲)`
->
-> is an isomorphism, where `M̲` is the constant sheaf on `M`.
->
-> This is steps 6 to 8 of the source's proof. `M` is written as the filtered colimit of its
-> finitely generated subgroups, which are free of finite rank because `M` is torsion free; the
-> comparison is invertible there by additivity of cohomology over a finite direct sum; and both
-> sides commute with the filtered colimit, the left because `- ⊗_ℤ M` is a left adjoint and the
-> right by [Stacks, Tag 03Q5].
-
-```lean
-theorem isIso_etaleTensorConstComparison (X : Scheme.{u})
-    [CompactSpace X] [QuasiSeparatedSpace X] (p : ℕ)
-    (E : Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})
-    (M : AddCommGrpCat.{max (u + 1) v}) [Module.Flat ℤ (M : Type (max (u + 1) v))] :
-    IsIso (etaleTensorConstComparison X p E M)
-```
-
 ## Tag 0F0F, a lemma
 
 [Tag 0F0F](https://stacks.math.columbia.edu/tag/0F0F) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/BoundedBelowTorsionProjectionFormula.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/BoundedBelowTorsionProjectionFormula.lean#L41).
+**`Stacks.EtaleCohomology.isIso_etalePushforwardProjectionMap_of_isProper_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/BoundedBelowTorsionProjectionFormula.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperProjectionFormula/BoundedBelowTorsionProjectionFormula.lean#L41).
 
 > **Projection formula for a proper morphism and a bounded below object with torsion
 > cohomology** [Stacks, Tag 0F0F]. Let `f : X ⟶ Y` be a proper morphism of schemes, let
@@ -205,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.92, Tag 0A5I](https://stacks.math.columbia.edu/tag/0A5I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

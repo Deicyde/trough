@@ -7,7 +7,7 @@ statement: formalized
 
 # Colored partitions and Euler-type identities
 
-8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html).
+8 results, 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html).
 
 ## Colored partitions with distinct colors
 
@@ -23,7 +23,7 @@ it is the same as a finite set of colored parts; the empty partition is not coun
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_coloredPartitions_differentColors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-different-colors).
+Stated but not proved: `MetaMathlibExt.card_coloredPartitions_differentColors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-different-colors).
 
 ## Formula for colored partitions into fully different parts
 
@@ -41,7 +41,7 @@ it for $n \ge 1$.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_coloredPartitions_fullyDifferent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-fully-different).
+Stated but not proved: `MetaMathlibExt.card_coloredPartitions_fullyDifferent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-fully-different).
 
 ## Colored partitions into fully different parts with bounded size
 
@@ -55,7 +55,7 @@ $B_k$ denotes the $k$-th Bell number.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.card_coloredPartitions_fullyDifferent_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-fully-different-2).
+Stated but not proved: `MetaMathlibExt.card_coloredPartitions_fullyDifferent_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#card-colored-partitions-fully-different-2).
 
 ## Constant-block partitions and double compositions
 
@@ -75,7 +75,7 @@ partitions of $m$.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.ncard_constantBlockPartitions_eq_doubleCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#ncard-constant-block-partitions-eq-doubl).
+Stated but not proved: `MetaMathlibExt.ncard_constantBlockPartitions_eq_doubleCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#ncard-constant-block-partitions-eq-doubl).
 
 ## Distinct constant-block partitions and colored compositions
 
@@ -95,7 +95,7 @@ partitions of $m$ into distinct parts.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.ncard_distinctConstantBlockPartitions_eq_coloredCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#ncard-distinct-constant-block-partitions).
+Stated but not proved: `MetaMathlibExt.ncard_distinctConstantBlockPartitions_eq_coloredCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#ncard-distinct-constant-block-partitions).
 
 ## Generalized Euler partition theorem
 
@@ -112,7 +112,7 @@ $k$ is colored by a composition in $S$ with sum at most $k$.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.generalized_euler_partition_theorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#generalized-euler-partition-theorem).
+Stated but not proved: `MetaMathlibExt.generalized_euler_partition_theorem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#generalized-euler-partition-theorem).
 
 ## Euler partition theorem for restricted compositions
 
@@ -127,7 +127,7 @@ even part is colored by a composition whose summands are all even.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.euler_partition_theorem_restrictedCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#euler-partition-theorem-restricted-compo).
+Stated but not proved: `MetaMathlibExt.euler_partition_theorem_restrictedCompositions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#euler-partition-theorem-restricted-compo).
 
 ## Colored partitions with different parts
 
@@ -142,7 +142,7 @@ colored partitions of $n$ in which no even part has an odd color.
 
 - Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.coloredPartitions_differentParts_eq_restrictedColors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#colored-partitions-different-parts-eq-re).
+Stated but not proved: `MetaMathlibExt.coloredPartitions_differentParts_eq_restrictedColors` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/ColoredPartitionsEulerTypeWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html#colored-partitions-different-parts-eq-re).
 
 ## Depends on
 
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Colored partitions and Euler-type identities](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/partition-identities/colored-partitions-and-euler-type-identities)

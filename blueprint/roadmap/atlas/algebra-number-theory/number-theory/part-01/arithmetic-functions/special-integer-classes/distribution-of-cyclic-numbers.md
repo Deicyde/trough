@@ -7,28 +7,28 @@ statement: formalized
 
 # Distribution of cyclic numbers
 
-15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html).
+15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html).
 
 ## Cyclic numbers
 
 A positive integer $n$ is cyclic when $\gcd(n, \varphi(n)) = 1$, where
 $\varphi$ is Euler's totient function.
 
-Formalized by `MetaMathlibExt.IsCyclicNumber`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#is-cyclic-number).
+Formalized by `MetaMathlibExt.IsCyclicNumber`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#is-cyclic-number).
 
 ## Cyclic numbers in the left Oppermann interval
 
 For a natural number $n$, this is the
 number of cyclic numbers $k$ with $n^2 - n \le k \le n^2$.
 
-Formalized by `MetaMathlibExt.oppermannCyclicCountLeft`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-count-left).
+Formalized by `MetaMathlibExt.oppermannCyclicCountLeft`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-count-left).
 
 ## Cyclic numbers in the right Oppermann interval
 
 For a natural number $n$, this is the
 number of cyclic numbers $k$ with $n^2 \le k \le n^2 + n$.
 
-Formalized by `MetaMathlibExt.oppermannCyclicCountRight`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-count-right).
+Formalized by `MetaMathlibExt.oppermannCyclicCountRight`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-count-right).
 
 ## Left-hand approximation for cyclic numbers near squares
 
@@ -44,7 +44,7 @@ Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$,
 is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
 the number of cyclic numbers in $[n^2 - n, n^2]$.
 
-Formalized by `MetaMathlibExt.oppermannCyclicLeftApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-left-approximation).
+Formalized by `MetaMathlibExt.oppermannCyclicLeftApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-left-approximation).
 
 ## Simplified approximation for cyclic numbers near squares
 
@@ -60,7 +60,7 @@ Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$,
 is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
 the number of cyclic numbers in $[n^2 - n, n^2]$ and to the number in $[n^2, n^2 + n]$.
 
-Formalized by `MetaMathlibExt.oppermannCyclicApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-approximation).
+Formalized by `MetaMathlibExt.oppermannCyclicApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-approximation).
 
 ## Right-hand approximation for cyclic numbers near squares
 
@@ -76,7 +76,7 @@ Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$,
 is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
 the number of cyclic numbers in $[n^2, n^2 + n]$.
 
-Formalized by `MetaMathlibExt.oppermannCyclicRightApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-right-approximation).
+Formalized by `MetaMathlibExt.oppermannCyclicRightApproximation`, a definition declared in [MathlibExt/NumberTheory/OppermannCyclicNumbers.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OppermannCyclicNumbers.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-cyclic-right-approximation).
 
 ## Asymptotic count of cyclic and composite cyclic numbers
 
@@ -90,7 +90,7 @@ $\gamma$ is the Euler–Mascheroni constant.
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicCount_isEquivalent_compositeCyclicCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-count-is-equivalent-composite-cyc).
+Stated but not proved: `MetaMathlibExt.cyclicCount_isEquivalent_compositeCyclicCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-count-is-equivalent-composite-cyc).
 
 ## The cyclic counting functions vary regularly with index one
 
@@ -107,7 +107,7 @@ Every prime is cyclic, so $\pi(x)$ is also the number of prime cyclic numbers $\
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicCountingFunctions_regularlyVarying_index_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-counting-functions-regularly-vary).
+Stated but not proved: `MetaMathlibExt.cyclicCountingFunctions_regularlyVarying_index_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-counting-functions-regularly-vary).
 
 ## Taylor's law for cyclic numbers
 
@@ -122,7 +122,7 @@ and to $0$ if $b > 2$.
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicNumbers_variance_div_mean_rpow_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-variance-div-mean-rpow-te).
+Stated but not proved: `MetaMathlibExt.cyclicNumbers_variance_div_mean_rpow_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-variance-div-mean-rpow-te).
 
 ## Mean and variance of the cyclic numbers
 
@@ -136,7 +136,7 @@ $n \to \infty$, $m(c,n) \sim c_n / 2$ and $v(c,n) \sim c_n^2 / 12$.
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicNumbers_mean_variance_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-mean-variance-is-equivale).
+Stated but not proved: `MetaMathlibExt.cyclicNumbers_mean_variance_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-mean-variance-is-equivale).
 
 ## Relation between the moments of the cyclic numbers
 
@@ -153,7 +153,7 @@ $$
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicNumbers_moment_isEquivalent_moment_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-moment-is-equivalent-mome).
+Stated but not proved: `MetaMathlibExt.cyclicNumbers_moment_isEquivalent_moment_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-moment-is-equivalent-mome).
 
 ## Generalized Taylor's law for cyclic numbers
 
@@ -170,7 +170,7 @@ $$
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicNumbers_moment_isEquivalent_mean_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-moment-is-equivalent-mean).
+Stated but not proved: `MetaMathlibExt.cyclicNumbers_moment_isEquivalent_mean_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-numbers-moment-is-equivalent-mean).
 
 ## Gaps between cyclic numbers under the Riemann hypothesis
 
@@ -183,7 +183,7 @@ numbers satisfy $d_n = o(\sqrt{p_n} \log p_n)$ as $n \to \infty$.
 
 - John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.cyclicNumber_gap_isLittleO_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-number-gap-is-little-o-of-riemann).
+Stated but not proved: `MetaMathlibExt.cyclicNumber_gap_isLittleO_of_riemannHypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclicNumberGapsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclicNumberGapsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#cyclic-number-gap-is-little-o-of-riemann).
 
 ## Cohen's Oppermann conjecture for cyclic numbers
 
@@ -198,7 +198,7 @@ $A_L(n) \sim A(n)$, $C_R(n) \sim A_R(n)$ and $A_R(n) \sim A(n)$.
 
 - J. E. Cohen, *Conjectures about Primes and Cyclic Numbers*, J. Integer Seq. 28 (2025), Article 25.4.1.
 
-Stated but not proved: `MetaMathlibExt.oppermannAnalogForCyclicNumbers` is written with `theorem_wanted` in [WantedExt/NumberTheory/OppermannAnalogForCyclicsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OppermannAnalogForCyclicsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-analog-for-cyclic-numbers).
+Stated but not proved: `MetaMathlibExt.oppermannAnalogForCyclicNumbers` is written with `theorem_wanted` in [WantedExt/NumberTheory/OppermannAnalogForCyclicsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OppermannAnalogForCyclicsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#oppermann-analog-for-cyclic-numbers).
 
 ## Power sums of cyclic numbers
 
@@ -224,7 +224,7 @@ $$
 
 - Joel E. Cohen, *Conjectures about Primes and Cyclic Numbers*, Journal of Integer Sequences 28 (2025), Article 25.4.7, Theorem 1 (`jis-2025-25.4.7-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_cyclicNumbers_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/SumsOfCyclicNumbersWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SumsOfCyclicNumbersWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#sum-pow-cyclic-numbers-is-equivalent).
+Stated but not proved: `MetaMathlibExt.sum_pow_cyclicNumbers_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/SumsOfCyclicNumbersWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SumsOfCyclicNumbersWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html#sum-pow-cyclic-numbers-is-equivalent).
 
 ## Depends on
 
@@ -233,4 +233,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Distribution of cyclic numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/distribution-of-cyclic-numbers)

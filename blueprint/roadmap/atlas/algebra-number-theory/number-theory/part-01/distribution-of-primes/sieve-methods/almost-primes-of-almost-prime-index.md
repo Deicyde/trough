@@ -7,7 +7,7 @@ statement: formalized
 
 # Almost primes of almost prime index
 
-22 results, 3 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html).
+22 results, 3 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html).
 
 ## Almost primes of almost prime index
 
@@ -23,7 +23,7 @@ the $i$th one is taken to be $0$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Section 1 (definitions of `N_k`, `N_{j,k}`, and `N_{k_1 ⋯ k_m}`).
 
-Formalized by `MetaMathlibExt.almostPrimeIndexSet`, a definition declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set).
+Formalized by `MetaMathlibExt.almostPrimeIndexSet`, a definition declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set).
 
 ## Almost prime index sets with one index
 
@@ -35,7 +35,7 @@ $n \ne 0$ with exactly $k$ prime factors counted with multiplicity.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Section 1 (definition of `N_k`).
 
-Formalized by `MetaMathlibExt.almostPrimeIndexSet_nil`, a theorem declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-nil).
+Formalized by `MetaMathlibExt.almostPrimeIndexSet_nil`, a theorem declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-nil).
 
 ## Membership in an almost prime index set
 
@@ -49,7 +49,7 @@ if there are fewer than $i$ of them).
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Section 1 (definition of `N_{k_1 ⋯ k_m}`).
 
-Formalized by `MetaMathlibExt.mem_almostPrimeIndexSet_cons`, a theorem declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#mem-almost-prime-index-set-cons).
+Formalized by `MetaMathlibExt.mem_almostPrimeIndexSet_cons`, a theorem declared in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#mem-almost-prime-index-set-cons).
 
 ## Dusart's bounds for the $n$th prime
 
@@ -76,7 +76,7 @@ $$
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 4 (quoting Dusart).
 
-Stated but not proved: `MetaMathlibExt.nth_prime_dusart_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-prime-dusart-bounds).
+Stated but not proved: `MetaMathlibExt.nth_prime_dusart_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-prime-dusart-bounds).
 
 ## Convergence of reciprocal sums over almost primes of almost prime index
 
@@ -95,7 +95,7 @@ of the $j$-almost primes of $k$-almost prime index converges.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.summable_inv_almostPrimeIndexSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#summable-inv-almost-prime-index-set).
+Stated but not proved: `MetaMathlibExt.summable_inv_almostPrimeIndexSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#summable-inv-almost-prime-index-set).
 
 ## Reciprocal sum of the primes of semiprime index
 
@@ -107,7 +107,7 @@ necessarily distinct primes. Then $0.9910 < \sum_{n \in N_{1,2}} 1/n < 0.9915$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_primes_of_semiprime_index_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-primes-of-semiprime-index-bound).
+Stated but not proved: `MetaMathlibExt.tsum_inv_primes_of_semiprime_index_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-primes-of-semiprime-index-bound).
 
 ## Crişan–Erban expansion of the semiprime counting function
 
@@ -135,7 +135,7 @@ only asserted to exist.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 1 (quoting Crişan and Erban).
 
-Stated but not proved: `MetaMathlibExt.semiprime_count_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprime-count-asymptotic-expansion).
+Stated but not proved: `MetaMathlibExt.semiprime_count_asymptotic_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprime-count-asymptotic-expansion).
 
 ## Explicit estimate for the reciprocal sum of the semiprimes
 
@@ -162,7 +162,7 @@ satisfies $|E(x)| < (\log x)^{-3/2}$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 2 (quoting Bayless et al.).
 
-Stated but not proved: `MetaMathlibExt.semiprime_reciprocal_sum_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprime-reciprocal-sum-explicit-estima).
+Stated but not proved: `MetaMathlibExt.semiprime_reciprocal_sum_explicit_estimate` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprime-reciprocal-sum-explicit-estima).
 
 ## Erdős–Sárközy bound for almost primes
 
@@ -175,7 +175,7 @@ $\pi_{k+1}(t) \le C \cdot \frac{k^4}{2^k} \, t \log t$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 3 (quoting Erdős and Sárközy).
 
-Stated but not proved: `MetaMathlibExt.almostPrime_count_le_erdos_sarkozy` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-count-le-erdos-sarkozy).
+Stated but not proved: `MetaMathlibExt.almostPrime_count_le_erdos_sarkozy` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-count-le-erdos-sarkozy).
 
 ## Logarithmic expansions of the prime counting function
 
@@ -210,7 +210,7 @@ inside the parentheses, multiplied out by the factor $1/\log x$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.log_primeCounting_asymptotics` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#log-prime-counting-asymptotics).
+Stated but not proved: `MetaMathlibExt.log_primeCounting_asymptotics` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#log-prime-counting-asymptotics).
 
 ## Expansion of the reciprocal logarithm of the semiprime count
 
@@ -231,7 +231,7 @@ the parentheses, multiplied out by the factor $1/\log x$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.inv_log_semiprime_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#inv-log-semiprime-count-asymptotic).
+Stated but not proved: `MetaMathlibExt.inv_log_semiprime_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#inv-log-semiprime-count-asymptotic).
 
 ## Counting primes of semiprime index
 
@@ -256,7 +256,7 @@ $$
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.primes_of_semiprime_index_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#primes-of-semiprime-index-count-asymptot).
+Stated but not proved: `MetaMathlibExt.primes_of_semiprime_index_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#primes-of-semiprime-index-count-asymptot).
 
 ## Counting semiprimes of prime index
 
@@ -275,7 +275,7 @@ $$
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.semiprimes_of_prime_index_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprimes-of-prime-index-count-asymptot).
+Stated but not proved: `MetaMathlibExt.semiprimes_of_prime_index_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#semiprimes-of-prime-index-count-asymptot).
 
 ## Primes of semiprime index eventually outnumber semiprimes of prime index
 
@@ -299,7 +299,7 @@ factor multiplied out.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.primes_of_semiprime_index_count_sub_semiprimes_of_prime_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#primes-of-semiprime-index-count-sub-semi).
+Stated but not proved: `MetaMathlibExt.primes_of_semiprime_index_count_sub_semiprimes_of_prime_index` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#primes-of-semiprime-index-count-sub-semi).
 
 ## Counting almost primes of almost prime index
 
@@ -316,7 +316,7 @@ swapped, since the main term is symmetric.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.almostPrimeIndexSet_pair_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-pair-count-asympt).
+Stated but not proved: `MetaMathlibExt.almostPrimeIndexSet_pair_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-pair-count-asympt).
 
 ## Counting almost primes of iterated almost prime index
 
@@ -335,7 +335,7 @@ $k_1 + \cdots + k_{m-1} + k_m - m$, as its equivalent product form shows.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.almostPrimeIndexSet_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-count-asymptotic).
+Stated but not proved: `MetaMathlibExt.almostPrimeIndexSet_count_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#almost-prime-index-set-count-asymptotic).
 
 ## Size of the nth almost prime of almost prime index
 
@@ -350,7 +350,7 @@ $p_{j,k,n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ through the integer
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.nth_almostPrimeIndexSet_pair_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-almost-prime-index-set-pair-asymptot).
+Stated but not proved: `MetaMathlibExt.nth_almostPrimeIndexSet_pair_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-almost-prime-index-set-pair-asymptot).
 
 ## Size of the nth element of an iterated almost prime index set
 
@@ -364,7 +364,7 @@ $p_{k_1, \dots, k_m, n} - P(n) = O(P(n) / \log \log n)$ as $n \to \infty$ throug
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.nth_almostPrimeIndexSet_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-almost-prime-index-set-asymptotic).
+Stated but not proved: `MetaMathlibExt.nth_almostPrimeIndexSet_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#nth-almost-prime-index-set-asymptotic).
 
 ## Reciprocal sum of the primes of $k$-almost prime index
 
@@ -377,7 +377,7 @@ $\sum_{n \in N_{1k}} 1/n = 1 + O(e^{-k/2})$ as $k \to \infty$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_primes_of_almostPrime_index_sub_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-primes-of-almost-prime-index-su).
+Stated but not proved: `MetaMathlibExt.tsum_inv_primes_of_almostPrime_index_sub_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-primes-of-almost-prime-index-su).
 
 ## Lower bound for reciprocal sums over almost primes of almost prime index
 
@@ -398,7 +398,7 @@ as $k \to \infty$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_almostPrimeIndexSet_pair_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-almost-prime-index-set-pair-low).
+Stated but not proved: `MetaMathlibExt.tsum_inv_almostPrimeIndexSet_pair_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-almost-prime-index-set-pair-low).
 
 ## Exponential decay of reciprocal sums over triple almost prime index sets
 
@@ -424,7 +424,7 @@ printed bound fails for $m = 3$.
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 9, case `m = 2`.
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_almostPrimeIndexSet_triple_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-almost-prime-index-set-triple-i).
+Stated but not proved: `MetaMathlibExt.tsum_inv_almostPrimeIndexSet_triple_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tsum-inv-almost-prime-index-set-triple-i).
 
 ## Reciprocal sums over iterated almost prime index sets tend to zero
 
@@ -443,7 +443,7 @@ $$
 
 - Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 9, "in particular" clause.
 
-Stated but not proved: `MetaMathlibExt.tendsto_tsum_inv_almostPrimeIndexSet_append_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tendsto-tsum-inv-almost-prime-index-set).
+Stated but not proved: `MetaMathlibExt.tendsto_tsum_inv_almostPrimeIndexSet_append_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AlmostPrimeIndexWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html#tendsto-tsum-inv-almost-prime-index-set).
 
 ## Depends on
 
@@ -452,4 +452,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Almost primes of almost prime index](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes-of-almost-prime-index)

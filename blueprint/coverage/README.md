@@ -59,11 +59,11 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Formal Frontier / Valuation integers | `DECOMPOSED` | [5 highlights of its formalization.yaml](../roadmap/formal-frontier/number-theory/valuation-integers/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Vector bundles | `DECOMPOSED` | [4 highlights of its formalization.yaml and 1 headline result](../roadmap/formal-frontier/topology/vector-bundles/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Conjectures | `DECOMPOSED` | [1,837 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
-| Lean Pool | `DECOMPOSED` | [334 project cards](../roadmap/lean-pool/README.md), one article per card. |
+| Lean Pool | `DECOMPOSED` | [339 project cards](../roadmap/lean-pool/README.md), one article per card. |
 | Fermat's Last Theorem (Anthropic) | `DECOMPOSED` | [49 landmark theorems](../roadmap/anthropic-flt/README.md) in the steps of PROOF-PATH.md, one article each; the other 29,462 theorems are counted, not mapped. |
 | Classification of Finite Simple Groups (Axiom) | `DECOMPOSED` | [The top theorem, its reduction to 9 cases and the theorem for each case, and 110 milestone modules](../roadmap/cfsg/README.md), one article each, with their Lean statements. |
-| The Stacks Project in Lean (Axiom) | `DECOMPOSED` | [2,898 sections of the Stacks Project](../roadmap/stacks/README.md) with a tag that a declaration carries, one article each, with a block per tag. |
-| ATLAS: textbook mathematics in Lean (Meta) | `DECOMPOSED` | [3,605 topics of ATLAS's vault](../roadmap/atlas/README.md), one article each, with a block per result. |
+| The Stacks Project in Lean (Axiom) | `DECOMPOSED` | [2,906 sections of the Stacks Project](../roadmap/stacks/README.md) with a tag that a declaration carries, one article each, with a block per tag. |
+| ATLAS: textbook mathematics in Lean (Meta) | `DECOMPOSED` | [3,607 topics of ATLAS's vault](../roadmap/atlas/README.md), one article each, with a block per result. |
 | CSLib | `DECOMPOSED` | [301 modules](../roadmap/cslib/README.md), one article each, with a block per public declaration. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
 | Foundation | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration; the Zoo's inclusion diagrams between logics as edges. |

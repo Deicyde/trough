@@ -7,7 +7,7 @@ statement: formalized
 
 # Knuth's old sum
 
-66 results, 4 proved and 62 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html).
+66 results, 4 proved and 62 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html).
 
 ## Generalized binomial coefficient of complex arguments
 
@@ -26,7 +26,7 @@ natural arguments $\binom{u}{v}$ is the ordinary binomial coefficient.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Section 2, equation (7).
 
-Formalized by `MetaMathlibExt.gammaBinom`, a definition declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom).
+Formalized by `MetaMathlibExt.gammaBinom`, a definition declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom).
 
 ## The generalized binomial coefficient at natural arguments
 
@@ -39,7 +39,7 @@ $\binom{n}{k}$; in particular it is $0$ when $k > n$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Section 2 (definitions of the binomial and the generalized binomial coefficients).
 
-Formalized by `MetaMathlibExt.gammaBinom_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom-nat-cast).
+Formalized by `MetaMathlibExt.gammaBinom_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom-nat-cast).
 
 ## The generalized binomial coefficient with lower argument zero
 
@@ -51,7 +51,7 @@ $\binom{u}{0} = \Gamma(u+1)/(\Gamma(1)\,\Gamma(u+1))$ equals $1$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Section 2, equation (7).
 
-Formalized by `MetaMathlibExt.gammaBinom_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom-zero-right).
+Formalized by `MetaMathlibExt.gammaBinom_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#gamma-binom-zero-right).
 
 ## Integral of a complex power of $\cos(x/2)$ over $(0, \pi)$
 
@@ -72,7 +72,7 @@ This is the first equality of equation (8) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_cos_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-half-cpow).
+Stated but not proved: `MetaMathlibExt.integral_cos_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-half-cpow).
 
 ## Integral of $\sin(x/2)$ to a complex power over $(0, \pi)$
 
@@ -93,7 +93,7 @@ This is the second equality of equation (8) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_sin_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-sin-half-cpow).
+Stated but not proved: `MetaMathlibExt.integral_sin_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-sin-half-cpow).
 
 ## Integral of $\cos^m x$ over $(0, \pi)$
 
@@ -107,7 +107,7 @@ This is equation (9) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_cos_pow_zero_pi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-pow-zero-pi).
+Stated but not proved: `MetaMathlibExt.integral_cos_pow_zero_pi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-pow-zero-pi).
 
 ## Integral of $\cos^u(x/2)\sin^v(x/2)$ over $(0, \pi)$
 
@@ -129,7 +129,7 @@ This is equation (10) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_cos_half_cpow_mul_sin_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-half-cpow-mul-sin-half-cpow).
+Stated but not proved: `MetaMathlibExt.integral_cos_half_cpow_mul_sin_half_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-half-cpow-mul-sin-half-cpow).
 
 ## Integral of $\cos^m x \, \sin^v x$ over $(0, \pi)$
 
@@ -147,7 +147,7 @@ This is equation (11) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.integral_cos_pow_mul_sin_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-pow-mul-sin-cpow).
+Stated but not proved: `MetaMathlibExt.integral_cos_pow_mul_sin_cpow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#integral-cos-pow-mul-sin-cpow).
 
 ## Knuth's old sum (the Reed–Dawson identity)
 
@@ -159,7 +159,7 @@ is even and $0$ if $n$ is odd.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.knuth_old_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum).
+Stated but not proved: `MetaMathlibExt.knuth_old_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum).
 
 ## Two-parameter generalization of Knuth's old sum
 
@@ -194,7 +194,7 @@ This is equation (14) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.knuth_old_sum_gammaBinom_shift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-gamma-binom-shift).
+Stated but not proved: `MetaMathlibExt.knuth_old_sum_gammaBinom_shift` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-gamma-binom-shift).
 
 ## One-parameter generalization of Knuth's old sum
 
@@ -215,7 +215,7 @@ This is equation (15) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.knuth_old_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-gamma-binom).
+Stated but not proved: `MetaMathlibExt.knuth_old_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-gamma-binom).
 
 ## Even-index binomial sum with inverse generalized binomial coefficients
 
@@ -236,7 +236,7 @@ parameter $m$ is called $n$ here.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-inv-gamma-binom).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-inv-gamma-binom).
 
 ## Odd-index binomial sum with inverse generalized binomial coefficients
 
@@ -258,7 +258,7 @@ parameter $m$ is called $n$ here.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_sub_one_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-sub-one-inv-gamma-bin).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_sub_one_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-sub-one-inv-gamma-bin).
 
 ## Odd-index binomial sum with odd reciprocal weights
 
@@ -271,7 +271,7 @@ $$\sum_{k=1}^{\lceil n/2 \rceil} \frac{1}{2k+1} \binom{n}{2k-1} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_odd_div_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-odd-div-two-mul-add-one).
+Stated but not proved: `MetaMathlibExt.sum_choose_odd_div_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-odd-div-two-mul-add-one).
 
 ## Odd-index binomial sum of Catalan numbers
 
@@ -285,7 +285,7 @@ $$\sum_{k=1}^{\lceil n/2 \rceil} \binom{n}{2k-1} \frac{2^n}{2^{2k}} C_k =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_odd_two_pow_mul_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-odd-two-pow-mul-catalan).
+Stated but not proved: `MetaMathlibExt.sum_choose_odd_two_pow_mul_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-odd-two-pow-mul-catalan).
 
 ## Alternating binomial sum of $2^{k+m}/(k+m+1)$
 
@@ -304,7 +304,7 @@ when $n$ is odd.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_div_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-div-add-o).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_div_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-div-add-o).
 
 ## Alternating convolution of central binomial coefficients
 
@@ -316,7 +316,7 @@ $2^n \binom{n}{n/2}$ when $n$ is even and $0$ when $n$ is odd.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_centralBinom_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-central-binom-mul-centra).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_centralBinom_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-central-binom-mul-centra).
 
 ## Alternating convolution of generalized central binomial coefficients
 
@@ -337,7 +337,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_gammaBinom_complement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-gamma-binom-compl).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_gammaBinom_complement` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-gamma-binom-compl).
 
 ## Convolution of generalized central binomial coefficients
 
@@ -353,7 +353,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} \binom{2k+v}{(2k+v)/2} \binom{2n-2k+v}{(2n-2k+v)/2
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_gammaBinom_convolution` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-gamma-binom-convolution).
+Stated but not proved: `MetaMathlibExt.sum_choose_gammaBinom_convolution` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-gamma-binom-convolution).
 
 ## Reciprocal binomial transform of a polynomial identity
 
@@ -374,7 +374,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sum_inv_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-inv-gamma-binom-of-binomial-poly-ide).
+Stated but not proved: `MetaMathlibExt.sum_inv_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-inv-gamma-binom-of-binomial-poly-ide).
 
 ## Shifted central binomial transform of a polynomial identity
 
@@ -399,7 +399,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_shift_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-shift-of-binomial-poly-i).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_shift_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-shift-of-binomial-poly-i).
 
 ## Shifted central binomial transform of a polynomial identity, dual form
 
@@ -425,7 +425,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_shift_of_binomial_poly_identity'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-shift-of-binomial-poly-i-2).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_shift_of_binomial_poly_identity'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-shift-of-binomial-poly-i-2).
 
 ## Alternating reciprocal generalized-binomial sums from a polynomial identity
 
@@ -453,7 +453,7 @@ stated here, which agrees with the printed one at $v = 0$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_inv_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-inv-gamma-binom-of-binom).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_inv_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-inv-gamma-binom-of-binom).
 
 ## Two-parameter generalized-binomial sums from a polynomial identity
 
@@ -476,7 +476,7 @@ $$\sum_{k=s}^{n} \frac{f(k)}{2^{2p(k)}} \binom{v}{v/2} \binom{2p(k)+u}{(2p(k)+u)
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.sum_two_param_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-two-param-gamma-binom-of-binomial-po).
+Stated but not proved: `MetaMathlibExt.sum_two_param_gammaBinom_of_binomial_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-two-param-gamma-binom-of-binomial-po).
 
 ## Central binomial transform of a polynomial identity, even exponents at even indices
 
@@ -499,7 +499,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 11, part 1.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_q_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_q_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit).
 
 ## Central binomial sums from a polynomial identity: right exponents odd at even indices
 
@@ -527,7 +527,7 @@ This is equation (37) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 11, part 1.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_q_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-2).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_q_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-2).
 
 ## Central binomial sums from a polynomial identity: left exponents even at even indices
 
@@ -556,7 +556,7 @@ This is equation (38) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 11, part 2.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_p_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-3).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_p_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-3).
 
 ## Central binomial sums from a polynomial identity: left exponents odd at even indices
 
@@ -586,7 +586,7 @@ This is equation (39) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 11, part 2.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_p_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-4).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_binomial_poly_identity_p_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-binomial-poly-identit-4).
 
 ## Central binomial transform of a polynomial identity with exponents $k$
 
@@ -609,7 +609,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-poly-identity).
+Stated but not proved: `MetaMathlibExt.sum_gammaBinom_of_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-gamma-binom-of-poly-identity).
 
 ## Alternating companion of a generalized-binomial sum from a polynomial identity in $1+t$
 
@@ -629,7 +629,7 @@ $$\sum_{k=m}^{r} g(k)\, \frac{(-1)^k}{2^k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_gammaBinom_of_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-gamma-binom-of-poly-iden).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_gammaBinom_of_poly_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-gamma-binom-of-poly-iden).
 
 ## Polynomial identity for reciprocal generalized binomial coefficients
 
@@ -650,7 +650,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.sum_inv_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-inv-gamma-binom-one-sub-pow).
+Stated but not proved: `MetaMathlibExt.sum_inv_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-inv-gamma-binom-one-sub-pow).
 
 ## Generalized central binomial polynomial identity, alternating form
 
@@ -666,7 +666,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} 2^{-k} \binom{2k+v}{(2k+v)/2} \binom{k+
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.knuth_poly_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-poly-gamma-binom-one-sub-pow).
+Stated but not proved: `MetaMathlibExt.knuth_poly_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-poly-gamma-binom-one-sub-pow).
 
 ## Alternating polynomial identity in $1 - x$ with weights $2^k/(k+1)$
 
@@ -684,7 +684,7 @@ This is equation (45) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_div_succ_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-div-succ-one-sub-pow).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_div_succ_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-div-succ-one-sub-pow).
 
 ## A polynomial identity for weighted central binomial coefficients
 
@@ -698,7 +698,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{1}{(k+2) 2^k} \binom{2k+2}{k+1} (
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_succ_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-succ-one-sub-po).
+Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_succ_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-succ-one-sub-po).
 
 ## A two-parameter polynomial identity for generalized central binomial coefficients
 
@@ -717,7 +717,7 @@ $$
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.two_param_poly_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 549](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L549). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#two-param-poly-gamma-binom-one-sub-pow).
+Stated but not proved: `MetaMathlibExt.two_param_poly_gammaBinom_one_sub_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 549](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L549). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#two-param-poly-gamma-binom-one-sub-pow).
 
 ## Reflection symmetry of the central binomial polynomial sum
 
@@ -731,7 +731,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{2k}{k} 2^{-2k} \binom{n}{k} (1-x)^{n-k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.sum_centralBinom_choose_one_sub_pow_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-central-binom-choose-one-sub-pow-sym).
+Stated but not proved: `MetaMathlibExt.sum_centralBinom_choose_one_sub_pow_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-central-binom-choose-one-sub-pow-sym).
 
 ## Reflection symmetry of the Catalan polynomial sum
 
@@ -745,7 +745,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} 2^{-2k} \binom{n}{k} C_{k+1} (1-x)^{n-k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.sum_catalan_succ_choose_one_sub_pow_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-catalan-succ-choose-one-sub-pow-symm).
+Stated but not proved: `MetaMathlibExt.sum_catalan_succ_choose_one_sub_pow_symm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-catalan-succ-choose-one-sub-pow-symm).
 
 ## Generalized central binomial polynomial identity, Bernstein form
 
@@ -761,7 +761,7 @@ x^{n-k} = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} 2^{-2k} \binom{2k}{k}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.knuth_poly_gammaBinom_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-poly-gamma-binom-mul-pow).
+Stated but not proved: `MetaMathlibExt.knuth_poly_gammaBinom_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-poly-gamma-binom-mul-pow).
 
 ## Central binomial polynomial identity, Bernstein form
 
@@ -775,7 +775,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k}{k} (1-x)^k x^{n-k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-one-sub-pow-mul).
+Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-one-sub-pow-mul).
 
 ## Polynomial identity in $x$ and $1 - x$ with weights $2^k/(k+1)$
 
@@ -793,7 +793,7 @@ This is equation (53) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_div_succ_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-div-succ-one-sub-pow-2).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_div_succ_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-div-succ-one-sub-pow-2).
 
 ## Catalan polynomial identity, Bernstein form
 
@@ -807,7 +807,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} C_{k+1} (1-x)^k x^{n-k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_catalan_succ_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-catalan-succ-one-sub-pow-mul).
+Stated but not proved: `MetaMathlibExt.sum_choose_catalan_succ_one_sub_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-catalan-succ-one-sub-pow-mul).
 
 ## Alternating sum of reciprocal generalized binomial coefficients
 
@@ -828,7 +828,7 @@ coefficient of complex numbers $a, b$.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 638](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L638). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-inv-gamma-binom).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_inv_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 638](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L638). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-inv-gamma-binom).
 
 ## One-parameter extension of the alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$
 
@@ -845,7 +845,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2^n}{2^{2k}} \binom{2k+v}{(2k+v)/2}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-gamma-bin).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 648](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L648). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-gamma-bin).
 
 ## Binomial transform of generalized central binomial ratios
 
@@ -863,7 +863,7 @@ $$
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 662](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L662). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-gamma-binom).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_pow_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 662](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L662). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-pow-gamma-binom).
 
 ## Alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$
 
@@ -877,7 +877,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2^n}{2^{2k}} \binom{2k}{k}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-central-b).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 674](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L674). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-central-b).
 
 ## Even-index against odd-index reciprocal binomial sums
 
@@ -891,7 +891,7 @@ $$\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_even_div_eq_sum_choose_odd_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-div-eq-sum-choose-odd-di).
+Stated but not proved: `MetaMathlibExt.sum_choose_even_div_eq_sum_choose_odd_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 684](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L684). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-div-eq-sum-choose-odd-di).
 
 ## Alternating binomial sum of Catalan numbers
 
@@ -909,7 +909,7 @@ where $C_k = \binom{2k}{k}/(k+1)$ is the $k$-th Catalan number.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-catalan).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_choose_two_pow_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-choose-two-pow-catalan).
 
 ## Even-index binomial sum equal to a scaled central binomial coefficient
 
@@ -923,7 +923,7 @@ $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{2^{2k}} \binom{2k}{k} 
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_even_centralBinom_div_four_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-central-binom-div-four-p).
+Stated but not proved: `MetaMathlibExt.sum_choose_even_centralBinom_div_four_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-central-binom-div-four-p).
 
 ## Even-index binomial sum with odd reciprocal weights
 
@@ -935,7 +935,7 @@ $$\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} = \frac{2^n}{n+1
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_even_div_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 709](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L709). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-div-two-mul-add-one).
+Stated but not proved: `MetaMathlibExt.sum_choose_even_div_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 709](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L709). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-div-two-mul-add-one).
 
 ## Even-index binomial sum of weighted central binomial coefficients
 
@@ -949,7 +949,7 @@ $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{(k+1) 2^{2k}} \binom{2
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_even_centralBinom_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-central-binom-div-succ).
+Stated but not proved: `MetaMathlibExt.sum_choose_even_centralBinom_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-central-binom-div-succ).
 
 ## Even-index expansion of a weighted central binomial sum
 
@@ -962,7 +962,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k}{k} =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_div_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-div-two-pow).
+Stated but not proved: `MetaMathlibExt.sum_choose_centralBinom_div_two_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-central-binom-div-two-pow).
 
 ## Even-index and odd-index binomial sums weighted by powers of $2$
 
@@ -976,7 +976,7 @@ $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{2^{n-2k+1} - 2^{2k+1}}{2k
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_even_two_pow_sub_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-two-pow-sub-div).
+Stated but not proved: `MetaMathlibExt.sum_choose_even_two_pow_sub_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 734](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L734). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-even-two-pow-sub-div).
 
 ## Binomial transform of weighted Catalan numbers
 
@@ -990,7 +990,7 @@ $$\sum_{k=0}^{n} \binom{n}{k} \frac{2k+1}{k+2} \cdot \frac{2}{2^k} C_k =
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_add_one_div_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-add-one-div-catalan).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_add_one_div_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-add-one-div-catalan).
 
 ## One-parameter extension of the alternating sum of $\binom{n}{k} \binom{2k}{k}$
 
@@ -1005,7 +1005,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/2}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-gamma-binom).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-gamma-binom).
 
 ## Alternating sum of $\binom{n}{k} \binom{2k}{k}$
 
@@ -1022,7 +1022,7 @@ Both sides are the central trinomial coefficient.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-central-binom).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_centralBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-central-binom).
 
 ## Alternating sum of $\binom{n}{k} 2^{2k}/(k+1)$
 
@@ -1036,7 +1036,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2^{2k}}{k+1}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_four_pow_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-four-pow-div).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_four_pow_div_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 772](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L772). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-four-pow-div).
 
 ## Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$
 
@@ -1051,7 +1051,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2(2k+1)}{k+2}\, C_k
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-catalan).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_sub_choose_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-neg-one-pow-sub-choose-catalan).
 
 ## Even-index identity for generalized central binomial coefficients
 
@@ -1072,7 +1072,7 @@ This is equation (56) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_gammaBinom_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-gamma-binom-even).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_gammaBinom_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 791](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L791). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-gamma-binom-even).
 
 ## Odd-index identity for generalized central binomial coefficients
 
@@ -1093,7 +1093,7 @@ This is equation (57) of the source.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_sub_one_gammaBinom_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 807](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L807). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-sub-one-gamma-binom-o).
+Stated but not proved: `MetaMathlibExt.sum_choose_two_mul_sub_one_gammaBinom_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 807](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L807). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#sum-choose-two-mul-sub-one-gamma-binom-o).
 
 ## Waring-type sum of generalized central binomial coefficients
 
@@ -1115,7 +1115,7 @@ states for positive $n$ only.
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.waring_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 826](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L826). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#waring-sum-gamma-binom).
+Stated but not proved: `MetaMathlibExt.waring_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 826](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L826). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#waring-sum-gamma-binom).
 
 ## Simons-type identity for generalized central binomial coefficients
 
@@ -1131,7 +1131,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} 2^{-k} \binom{n+k}{k} \binom{2k+v}{(2k+
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.simons_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 839](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L839). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#simons-sum-gamma-binom).
+Stated but not proved: `MetaMathlibExt.simons_sum_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 839](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L839). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#simons-sum-gamma-binom).
 
 ## Two-parameter Simons-type symmetry
 
@@ -1147,7 +1147,7 @@ $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} 2^{-2k} \binom{n+k}{k} \binom{v}{v/2}
 
 - Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.simons_two_param_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#simons-two-param-gamma-binom).
+Stated but not proved: `MetaMathlibExt.simons_two_param_gammaBinom` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KnuthOldSumWanted.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#simons-two-param-gamma-binom).
 
 ## Weight in Knuth's old sum
 
@@ -1157,7 +1157,7 @@ number $(4^m + 2^m)/2$, which equals $(2^m + 1) 2^{m-1}$.
 It is the number of words of length $m$ over a four-letter alphabet in which a fixed letter
 occurs an even number of times.
 
-Formalized by `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSumWeight`, a definition declared in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-weight).
+Formalized by `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSumWeight`, a definition declared in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-weight).
 
 ## Counting words with an even number of $a$'s
 
@@ -1169,7 +1169,7 @@ an even number of times is $(4^n + 2^n)/2$.
 
 - Akalu Tefera and Aklilu Zeleke, "Combinatorial Identities Inspired by Knuth's Old Sum", Lemma 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.card_evenACount_words` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#card-even-acount-words).
+Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.card_evenACount_words` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#card-even-acount-words).
 
 ## Tefera–Zeleke identity with binomial quotients
 
@@ -1187,7 +1187,7 @@ $(4^m + 2^m)/2$.
 
 - Akalu Tefera and Aklilu Zeleke, "Combinatorial Identities Inspired by Knuth's Old Sum", Theorem 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSum_eq_mul_sum_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-eq-mul-sum-div).
+Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSum_eq_mul_sum_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-eq-mul-sum-div).
 
 ## Tefera–Zeleke identity with powers of $2$, $3$ and $4$
 
@@ -1205,7 +1205,7 @@ on the right as $\binom{2j+k}{k} 2^{k-1} (1 + 2^k 3^{n-k})$.
 
 - Akalu Tefera and Aklilu Zeleke, "Combinatorial Identities Inspired by Knuth's Old Sum", Theorem 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSum_eq_sum_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-eq-sum-pow).
+Stated but not proved: `MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSum_eq_sum_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/KnuthOldSumWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/KnuthOldSumWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html#knuth-old-sum-eq-sum-pow).
 
 ## Depends on
 
@@ -1214,4 +1214,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Knuth's old sum](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/knuth-s-old-sum)

@@ -7,28 +7,28 @@ statement: formalized
 
 # Faulhaber coefficients and sums of powers
 
-18 results, 6 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html).
+18 results, 6 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html).
 
 ## Power sums
 
 For natural numbers $k$ and $n$, the power sum $S_k(n)$ is the rational
 number $\sum_{i=1}^{n} i^k = 1^k + 2^k + \cdots + n^k$, which is $0$ when $n = 0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum).
 
 ## The array $R(k, m)$
 
 For natural numbers $k$ and $m$, $R(k, m)$ is the integer
 $\sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayR`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-r).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayR`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-r).
 
 ## The array $U(k, m)$
 
 For natural numbers $k$ and $m$, $U(k, m)$ is the rational number
 $\frac{2}{(2m)!} \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayU`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-u).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayU`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-u).
 
 ## The Faulhaber coefficients $b_{k,r}$
 
@@ -39,7 +39,7 @@ coefficient of $x^s$ in $\prod_{i=0}^{q-1} (x - i(i+1))$. For natural numbers $k
 $b_{k,r}$ is the rational number
 $\sum_{m=r}^{k} \frac{3 \cdot 2^r}{(2m+1)!}\, R(k, m)\, \mathrm{Ps}_m^{(r)}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.faulhaberB`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#faulhaber-b).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.faulhaberB`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#faulhaber-b).
 
 ## The Faulhaber coefficients $c_{k,r}$
 
@@ -50,7 +50,7 @@ coefficient of $x^s$ in $\prod_{i=0}^{q-1} (x - i(i+1))$. For natural numbers $k
 $c_{k,r}$ is the rational number
 $\sum_{m=r}^{k} \frac{2^{r+1}}{(2m+2)!\,(m+1)}\, R(k+1, m+1)\, \mathrm{Ps}_{m+1}^{(r+1)}$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.faulhaberC`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#faulhaber-c).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.faulhaberC`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#faulhaber-c).
 
 ## The polynomials $Q_{k,m}$ of Theorem 10
 
@@ -62,7 +62,7 @@ $$Q_{k,m}(n) = 2 \sum_{j=m}^{k} \binom{2k-1}{2j-2} R(j-1, m-1) \, n^{2k-2j+1}.$$
 
 Differences of natural numbers such as $2k - 1$ and $m - 1$ are truncated at $0$.
 
-Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.thmQ`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#thm-q).
+Formalized by `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.thmQ`, a definition declared in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#thm-q).
 
 ## Even power sums in terms of $\binom{2n+m+1}{2m+1}$
 
@@ -75,7 +75,7 @@ $2^{2k} S_{2k}(n) = \sum_{m=1}^{k} R(k, m) \binom{2n+m+1}{2m+1}$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Theorem 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_powerSum_even_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#pow-mul-power-sum-even-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_powerSum_even_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#pow-mul-power-sum-even-eq-sum).
 
 ## Knuth's correspondence between even and odd power sums
 
@@ -90,7 +90,7 @@ natural number $n$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_div_iff_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-div-iff-odd).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_div_iff_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-div-iff-odd).
 
 ## Knuth's formula for even power sums
 
@@ -103,7 +103,7 @@ $S_{2k}(n) = \sum_{m=1}^{k} R(k, m)\, \frac{2n+1}{2m+1} \binom{n+m}{2m}$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-eq-sum).
 
 ## Knuth's binomial formula for the odd power sums
 
@@ -118,7 +118,7 @@ where $R(k, m) = \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$ is the array 
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 3.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_odd_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-odd-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_odd_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-odd-eq-sum).
 
 ## Sum of $2i \binom{2i+k-1}{2k-1}$
 
@@ -130,7 +130,7 @@ $$\sum_{i=1}^{n} 2i \binom{2i + k - 1}{2k - 1} = k \binom{2n + k + 1}{2k + 1}.$$
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Lemma 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_two_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-two-mul-choose-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_two_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-two-mul-choose-eq).
 
 ## Inversion formula for the arrays $u(k, m)$ and $U(k, m)$ (Butzer et al.)
 
@@ -146,7 +146,7 @@ $k \ge 1$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Lemma 5.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.inversion_uU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#inversion-u-u).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.inversion_uU` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#inversion-u-u).
 
 ## Closed form for the array $R(k, m)$
 
@@ -163,7 +163,7 @@ $b_1 + 2 b_2 + \dots + k b_k = k$ and $b_1 + \dots + b_k = m$ (each such $b_r$ i
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Corollary 6.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayR_eq_closedForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-r-eq-closed-form).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.arrayR_eq_closedForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#array-r-eq-closed-form).
 
 ## Sum of $i \binom{i+k-1}{2k-1}$
 
@@ -175,7 +175,7 @@ $$\sum_{i=1}^{n} i \binom{i + k - 1}{2k - 1} = \frac{k(2n + 1)}{2k + 1} \binom{n
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Lemma 7.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-mul-choose-eq).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-mul-choose-eq).
 
 ## Odd power sums in terms of $\binom{n+m}{2m-1}$
 
@@ -189,7 +189,7 @@ $2^{2k-1} S_{2k-1}(n) = \sum_{m=1}^{k} Q_{k,m}(n) \binom{n+m}{2m-1}$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Theorem 10.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_powerSum_odd_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#pow-mul-power-sum-odd-eq-sum).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_powerSum_odd_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#pow-mul-power-sum-odd-eq-sum).
 
 ## Faulhaber form of the even power sums
 
@@ -202,7 +202,7 @@ $S_{2k}(n) = S_2(n) \sum_{r=1}^{k} b_{k,r} \, S_1(n)^{r-1}$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 12.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_faulhaber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-faulhaber).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_even_faulhaber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-even-faulhaber).
 
 ## Faulhaber form of the odd power sums
 
@@ -215,7 +215,7 @@ $S_{2k+1}(n) = S_1(n)^2 \sum_{r=1}^{k} c_{k,r} \, S_1(n)^{r-1}$.
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 12.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_odd_faulhaber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-odd-faulhaber).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_odd_faulhaber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#power-sum-odd-faulhaber).
 
 ## Vanishing alternating sum of the A304330 array
 
@@ -229,7 +229,7 @@ where $R(k, m) = \sum_{j=0}^{m} (-1)^j \binom{2m}{j} (m - j)^{2k}$ is the array 
 
 - José L. Cereceda, "Sums of Powers of Integers and the Sequence A304330", Proposition 15.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_neg_factorial_sq_div_arrayR_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-neg-factorial-sq-div-array-r-eq-zero).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_neg_factorial_sq_div_arrayR_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SumsOfPowersA304330Wanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html#sum-neg-factorial-sq-div-array-r-eq-zero).
 
 ## Depends on
 
@@ -238,4 +238,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Faulhaber coefficients and sums of powers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/faulhaber-coefficients-and-sums-of-powers)

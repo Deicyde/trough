@@ -7,7 +7,7 @@ statement: formalized
 
 # Discriminants, ramification and ideals: its own results
 
-4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html).
+4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html).
 
 Discriminants and their bounds, ramification and inertia, orders, units, ideal counting, local degrees under completion, field enumeration and towers.
 
@@ -21,7 +21,7 @@ degree $[K : \mathbb{Q}] = d$ whose discriminant $\Delta_K$ satisfies $|\Delta_K
 
 - Theorem 3.2 of T. F. Bloom, W. Sawin, C. Schildkraut, D. Zhelezov, *The sum-product conjecture is false for real numbers*, arXiv:2605.28781. Lean axiom: https://github.com/mathlib-initiative/sum_product (SumProduct.exists_totallyReal_discr_le). Underlying result: J. Martinet, *Tours de corps de classes et estimations de discriminants*, Invent. Math. 44 (1978), 65–73. Problem `martinet_totally_real_towers` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.MartinetTotallyRealTowersWanted.NumberTheory.exists_totallyReal_discr_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/MartinetTotallyRealTowersWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MartinetTotallyRealTowersWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#exists-totally-real-discr-le).
+Stated but not proved: `MathlibExt.NumberTheory.MartinetTotallyRealTowersWanted.NumberTheory.exists_totallyReal_discr_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/MartinetTotallyRealTowersWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MartinetTotallyRealTowersWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#exists-totally-real-discr-le).
 
 ## Odlyzko's root discriminant bound in degree at least 18
 
@@ -36,7 +36,7 @@ of the Dedekind zeta function of $K$.
 
 - A. M. Odlyzko, *Bounds for discriminants and related estimates for class numbers, regulators and zeros of zeta functions: a survey of recent results*, Sém. Delange-Pisot-Poitou 18(1) (1976–1977), exp. 6, <https://www.numdam.org/item/SDPP_1976-1977__18_1_A6_0/>.
 
-Stated but not proved: `MetaMathlibExt.odlyzko_root_discr_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/OdlyzkoRootDiscriminantWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OdlyzkoRootDiscriminantWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#odlyzko-root-discr-ge).
+Stated but not proved: `MetaMathlibExt.odlyzko_root_discr_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/OdlyzkoRootDiscriminantWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OdlyzkoRootDiscriminantWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#odlyzko-root-discr-ge).
 
 ## Order of the inertia group
 
@@ -51,7 +51,7 @@ over $\mathfrak p$) and $i$ is the inseparable degree of the residue field exten
 $(B/\mathfrak P)/(A/\mathfrak p)$, that is, the degree of $B/\mathfrak P$ over the separable
 closure of $A/\mathfrak p$ in it.
 
-Formalized by `Ideal.card_inertia_eq_ramificationIdxIn_mul_finInsepDegree`, a theorem declared in [MathlibExt/NumberTheory/RamificationInertia/Inseparable.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/RamificationInertia/Inseparable.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#card-inertia-eq-ramification-idx-in-mul).
+Formalized by `Ideal.card_inertia_eq_ramificationIdxIn_mul_finInsepDegree`, a theorem declared in [MathlibExt/NumberTheory/RamificationInertia/Inseparable.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/RamificationInertia/Inseparable.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#card-inertia-eq-ramification-idx-in-mul).
 
 ## Units small away from the diagonal generate a subgroup of finite index
 
@@ -66,7 +66,7 @@ remaining $u_v$ form a square matrix with negative off-diagonal entries and posi
 sums. It is therefore strictly diagonally dominant by columns, hence invertible, so these
 units generate a subgroup of maximal rank.
 
-Formalized by `NumberField.Units.finiteIndex_closure_range_of_lt_one_off_diagonal`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Units.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Units.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#finite-index-closure-range-of-lt-one-off).
+Formalized by `NumberField.Units.finiteIndex_closure_range_of_lt_one_off_diagonal`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Units.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Units.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html#finite-index-closure-range-of-lt-one-off).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Discriminants, ramification and ideals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification)

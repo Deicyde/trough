@@ -8,7 +8,7 @@ proof: formalized
 
 # Conditional entropy and mutual information
 
-13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html).
+13 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html).
 
 ## Conditional entropy of a finite observation given a sub-$\sigma$-algebra
 
@@ -23,7 +23,7 @@ $$H_\mu(f \mid m) = \int_\Omega \sum_{i < n} -P_i(\omega) \log_2 P_i(\omega) \, 
 
 with the convention $0 \log_2 0 = 0$.
 
-Formalized by `InformationTheory.quantizedConditionalEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy).
+Formalized by `InformationTheory.quantizedConditionalEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy).
 
 ## One-valued observations have zero conditional entropy
 
@@ -32,7 +32,7 @@ on a measurable space $\Omega$ and let $m$ be a sub-$\sigma$-algebra of the $\si
 $\Omega$. The quantized conditional entropy given $m$ of the observation that is constantly $0$,
 with values in the one-element set $\{0\}$, is $0$.
 
-Formalized by `InformationTheory.quantizedConditionalEntropy_singleton`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy-singleton).
+Formalized by `InformationTheory.quantizedConditionalEntropy_singleton`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy-singleton).
 
 ## Constant quantized observations have zero conditional entropy
 
@@ -41,7 +41,7 @@ measure on a measurable space $\Omega$, let $m$ be a sub-$\sigma$-algebra of the
 $\Omega$, and let $c \in \{0, \dots, n-1\}$ for some $n \in \mathbb{N}$. The quantized conditional
 entropy given $m$ of the constant observation $\omega \mapsto c$ is $0$.
 
-Formalized by `InformationTheory.quantizedConditionalEntropy_const`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy-const).
+Formalized by `InformationTheory.quantizedConditionalEntropy_const`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#quantized-conditional-entropy-const).
 
 ## Conditional Shannon entropy given a sub-$\sigma$-algebra
 
@@ -56,7 +56,7 @@ conditional entropy of $q \circ X$ given $m$, a negative value of the latter bei
 
 - the supremum over all finite measurable output quantizations.
 
-Formalized by `InformationTheory.conditionalShannonEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#conditional-shannon-entropy).
+Formalized by `InformationTheory.conditionalShannonEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#conditional-shannon-entropy).
 
 ## Conditional entropy of a constant output vanishes
 
@@ -65,7 +65,7 @@ measurable space $\Omega$, let $m$ be a sub-$\sigma$-algebra of the $\sigma$-alg
 and let $y$ be a point of a measurable space $Y$. The conditional Shannon entropy given $m$ of the
 constant output $\omega \mapsto y$ is $0$.
 
-Formalized by `InformationTheory.conditionalShannonEntropy_const`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#conditional-shannon-entropy-const).
+Formalized by `InformationTheory.conditionalShannonEntropy_const`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#conditional-shannon-entropy-const).
 
 ## Mutual information of a joint probability measure
 
@@ -81,7 +81,7 @@ where $D_{\mathrm{KL}}$ is the Kullback–Leibler divergence in nats.
 
 - KL divergence from the actual product of the actual marginals.
 
-Formalized by `InformationTheory.measureMutualInformation`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information).
+Formalized by `InformationTheory.measureMutualInformation`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information).
 
 ## Divergence of a finite joint law from the product of its marginals
 
@@ -92,7 +92,7 @@ Shannon entropy in bits. Then the Kullback–Leibler divergence of $p$ from the 
 $p_X \otimes p_Y$, computed with the natural logarithm and taken as a real number, equals
 $(H(p_X) + H(p_Y) - H(p)) \log 2$.
 
-Formalized by `InformationTheory.toReal_klDiv_prod`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#to-real-kl-div-prod).
+Formalized by `InformationTheory.toReal_klDiv_prod`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#to-real-kl-div-prod).
 
 ## Subadditivity of entropy
 
@@ -100,7 +100,7 @@ Let $p$ be a probability law on $\alpha \times \beta$, where
 $\alpha$ and $\beta$ are finite, with marginals $p_X$ and $p_Y$. Writing $H$ for Shannon entropy
 in bits, $H(p) \le H(p_X) + H(p_Y)$.
 
-Formalized by `InformationTheory.shannonEntropy_le_add`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#shannon-entropy-le-add).
+Formalized by `InformationTheory.shannonEntropy_le_add`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#shannon-entropy-le-add).
 
 ## Mutual information of a finite joint law
 
@@ -111,7 +111,7 @@ $H(Y)$ for the Shannon entropies of $p$ and of its first and second marginals. T
 information of the probability measure defined by $p$, in bits, is the real number
 $H(X) + H(Y) - H(X, Y)$ read as an element of $[0, \infty]$, a negative value being read as $0$.
 
-Formalized by `InformationTheory.measureMutualInformation_toMeasure`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information-to-measure).
+Formalized by `InformationTheory.measureMutualInformation_toMeasure`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information-to-measure).
 
 ## Mutual information vanishes exactly under independence
 
@@ -120,7 +120,7 @@ distribution on $\alpha \times \beta$, where $\alpha$ and $\beta$ are measurable
 information of the probability measure defined by $p$ is $0$ if and only if this measure equals
 the product of the probability measures defined by the two marginals of $p$.
 
-Formalized by `InformationTheory.measureMutualInformation_toMeasure_eq_zero_iff`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information-to-measure-eq).
+Formalized by `InformationTheory.measureMutualInformation_toMeasure_eq_zero_iff`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#measure-mutual-information-to-measure-eq).
 
 ## Conditional entropy of a finite joint law
 
@@ -135,7 +135,7 @@ where every term with $p(a, b) = 0$ is $0$.
 
 It is the finite counterpart of the conditional Shannon entropy given a sub-$\sigma$-algebra.
 
-Formalized by `InformationTheory.finiteConditionalEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#finite-conditional-entropy).
+Formalized by `InformationTheory.finiteConditionalEntropy`, a definition declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#finite-conditional-entropy).
 
 ## Chain rule for entropy
 
@@ -145,7 +145,7 @@ Shannon entropy of $p$, $H(X)$ for the Shannon entropy of $p_X$, and
 $H(Y \mid X) = -\sum_{a, b} p(a, b) \log_2 (p(a, b) / p_X(a))$ for the finite conditional entropy
 of $p$, all in bits. Then $H(X, Y) = H(X) + H(Y \mid X)$.
 
-Formalized by `InformationTheory.shannonEntropy_eq_add_finiteConditionalEntropy`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#shannon-entropy-eq-add-finite-conditiona).
+Formalized by `InformationTheory.shannonEntropy_eq_add_finiteConditionalEntropy`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#shannon-entropy-eq-add-finite-conditiona).
 
 ## Conditioning does not increase entropy
 
@@ -154,7 +154,7 @@ $\alpha \times \beta$, where $\alpha$ and $\beta$ are finite, viewed as the join
 $(X, Y)$. Then the conditional entropy $H(Y \mid X)$ of $p$ is at most the Shannon entropy $H(Y)$
 of the second marginal of $p$, both in bits.
 
-Formalized by `InformationTheory.finiteConditionalEntropy_le`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/ConditionalEntropy.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#finite-conditional-entropy-le).
+Formalized by `InformationTheory.finiteConditionalEntropy_le`, a theorem declared in [MathlibExt/InformationTheory/ConditionalEntropy.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/ConditionalEntropy.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html#finite-conditional-entropy-le).
 
 ## Depends on
 
@@ -163,4 +163,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Conditional entropy and mutual information](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/InformationTheory/entropy-and-mutual-information/conditional-entropy-and-mutual-information)

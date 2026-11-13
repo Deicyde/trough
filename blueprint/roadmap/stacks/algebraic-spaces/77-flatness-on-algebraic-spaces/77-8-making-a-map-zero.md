@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.8 Making a map zero
 
-Section 77.8 of the Stacks Project, [Tag 0CW9](https://stacks.math.columbia.edu/tag/0CW9). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.8 of the Stacks Project, [Tag 0CW9](https://stacks.math.columbia.edu/tag/0CW9). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CWA, a situation
 
 [Tag 0CWA](https://stacks.math.columbia.edu/tag/0CWA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapFlatTargetSituation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapFlatTargetSituation.lean#L68).
+**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapFlatTargetSituation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapFlatTargetSituation.lean#L68).
 
 > **Stacks 0CWA.** The standing data of Stacks 0CWA: an affine base `S = Spec R`, an
 > algebraic space `X` over `S`, and a map `u : F ⟶ G` of quasi-coherent `𝒪_X`-modules whose
@@ -28,7 +28,7 @@ structure ModuleMapFlatTargetSituation [IsAffine S]
 
 [Tag 083K](https://stacks.math.columbia.edu/tag/083K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.exists_closedSubscheme_isZeroAt_of_isZeroAt_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean#L273). The attribute's comment: “main clause”.
+**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.exists_closedSubscheme_isZeroAt_of_isZeroAt_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean#L273). The attribute's comment: “main clause”.
 
 > **The main clause of Stacks 083K.**
 >
@@ -57,7 +57,7 @@ theorem exists_closedSubscheme_isZeroAt_of_isZeroAt_of_quasiCompact (T : BigFppf
           (D.baseTest B S hS Z)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.exists_closedSubscheme_isZeroAt_locallyOfFinitePresentation_of_isZeroAt_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean#L349). The attribute's comment: “finite presentation clause”.
+**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.exists_closedSubscheme_isZeroAt_locallyOfFinitePresentation_of_isZeroAt_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartMapQuasiCompactTest.lean#L349). The attribute's comment: “finite presentation clause”.
 
 > **The finite-presentation clause of Stacks 083K, in the shape the source states it.**
 >
@@ -90,7 +90,7 @@ theorem exists_closedSubscheme_isZeroAt_locallyOfFinitePresentation_of_isZeroAt_
 
 [Tag 083L](https://stacks.math.columbia.edu/tag/083L) in the Stacks Project.
 
-**`Module.exists_ideal_rTensor_eq_zero_iff_map_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean#L48).
+**`Module.exists_ideal_rTensor_eq_zero_iff_map_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/VanishingAfterBaseChange.lean#L48).
 
 > **Stacks Project, Tag 083L.** If the target of a linear map is projective, the base
 > changes on which the map vanishes are cut out by an ideal of the base ring.
@@ -110,7 +110,7 @@ theorem exists_ideal_rTensor_eq_zero_iff_map_eq_bot
 
 [Tag 0CWB](https://stacks.math.columbia.edu/tag/0CWB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.fibreMapEqZero_of_mem_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapVanishingAlongClosureProjective.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapVanishingAlongClosureProjective.lean#L231).
+**`AlgebraicGeometry.Space.ModuleMapFlatTargetSituation.fibreMapEqZero_of_mem_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapVanishingAlongClosureProjective.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapVanishingAlongClosureProjective.lean#L231).
 
 > In Situation 0CWA, let `T` be a subset of the base and let `s` be a point of the closure of
 > `T`.  If `X` is locally of finite presentation over the base, `𝒢` is of finite presentation, and
@@ -139,7 +139,7 @@ theorem fibreMapEqZero_of_mem_closure
 
 [Tag 0CWC](https://stacks.math.columbia.edu/tag/0CWC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isClosedSubspace_zeroSubfunctor_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean#L72). The attribute's comment: “closed immersion: the vanishing locus is a closed subspace of the base, at the source's hypotheses alone”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isClosedSubspace_zeroSubfunctor_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean#L72). The attribute's comment: “closed immersion: the vanishing locus is a closed subspace of the base, at the source's hypotheses alone”.
 
 > **Stacks 0CWC, the closed-immersion clause.**  In Situation 083F, assume (1) `f` is of finite
 > presentation and (2) `𝒢` is of finite presentation, flat over the base and pure relative to it.
@@ -158,7 +158,7 @@ theorem isClosedSubspace_zeroSubfunctor_of_isPureRelative (D : ModuleMapSituatio
     IsClosedSubspace B S hS D.zeroSubfunctor
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isFinitePresentation_zeroSubfunctor_ι_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean#L88). The attribute's comment: “finite presentation: the vanishing locus is of finite presentation over the base when the source module is of finite type, at the source's hypotheses alone”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isFinitePresentation_zeroSubfunctor_ι_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedUnconditional.lean#L88). The attribute's comment: “finite presentation: the vanishing locus is of finite presentation over the base when the source module is of finite type, at the source's hypotheses alone”.
 
 > **Stacks 0CWC, the finite-presentation clause.**  Under the hypotheses of
 > `isClosedSubspace_zeroSubfunctor_of_isPureRelative`, if moreover `ℱ` is of finite type, the
@@ -179,7 +179,7 @@ theorem isFinitePresentation_zeroSubfunctor_ι_of_isPureRelative
 
 [Tag 083M](https://stacks.math.columbia.edu/tag/083M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.zeroLocusRepresentation_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedProperSupportUnconditional.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedProperSupportUnconditional.lean#L369). The attribute's comment: “every case: f locally of finite presentation (which includes the case of the first paragraph of the proof, f of finite presentation), G of finite presentation and flat over B, the support of G proper over B; F\_zero is represented by a closed subspace of B, of finite presentation over B when F is of finite type -- at the source's hypotheses alone”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.zeroLocusRepresentation_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedProperSupportUnconditional.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroLocusClosedProperSupportUnconditional.lean#L369). The attribute's comment: “every case: f locally of finite presentation (which includes the case of the first paragraph of the proof, f of finite presentation), G of finite presentation and flat over B, the support of G proper over B; F\_zero is represented by a closed subspace of B, of finite presentation over B when F is of finite type -- at the source's hypotheses alone”.
 
 > **Stacks 083M.**  In Situation 083F, assume that
 > 1. `f` is locally of finite presentation,
@@ -218,4 +218,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.8, Tag 0CW9](https://stacks.math.columbia.edu/tag/0CW9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

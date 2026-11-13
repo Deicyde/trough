@@ -7,7 +7,7 @@ statement: formalized
 
 # Essential supremum
 
-4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html).
+4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html).
 
 ## Essential supremum of a continuous map
 
@@ -17,7 +17,7 @@ open set, let $E$ be a seminormed additive commutative group, and let $f : \alph
 continuous. Then the essential supremum of $\|f\|$ with respect to $\mu$ equals the supremum norm
 $\sup_{x \in \alpha} \|f(x)\|$ of $f$, as an equality in $[0, \infty]$.
 
-Formalized by `MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNormEssSup_eq_enorm_continuousMap`, a theorem declared in [MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-ess-sup-eq-enorm-continuous-ma).
+Formalized by `MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNormEssSup_eq_enorm_continuousMap`, a theorem declared in [MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-ess-sup-eq-enorm-continuous-ma).
 
 ## The $L^\infty$ norm of a continuous map is its supremum norm
 
@@ -27,7 +27,7 @@ positive on every nonempty open set, let $E$ be a seminormed additive commutativ
 $\alpha$ or $E$ is second-countable, and let $f : \alpha \to E$ be continuous. Then
 $\|f\|_{L^\infty(\mu)} = \sup_{x \in \alpha} \|f(x)\|$, as an equality in $[0, \infty]$.
 
-Formalized by `MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNorm_top_eq_enorm_continuousMap`, a theorem declared in [MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-top-eq-enorm-continuous-map).
+Formalized by `MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNorm_top_eq_enorm_continuousMap`, a theorem declared in [MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-top-eq-enorm-continuous-map).
 
 ## The $L^p$ norm tends to the $L^\infty$ norm
 
@@ -40,7 +40,7 @@ $p$ tends to $\infty$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_42`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.LpNormTendstoEssSupWanted.tendsto_eLpNorm_atTop_eLpNorm_top_of_isFiniteMeasure` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/LpNormTendstoEssSupWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/LpNormTendstoEssSupWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#tendsto-e-lp-norm-at-top-e-lp-norm-top-o).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.LpNormTendstoEssSupWanted.tendsto_eLpNorm_atTop_eLpNorm_top_of_isFiniteMeasure` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/LpNormTendstoEssSupWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/LpNormTendstoEssSupWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#tendsto-e-lp-norm-at-top-e-lp-norm-top-o).
 
 ## Uniform $L^p$ bounds on $(0,1)$ give the same $L^\infty$ bound
 
@@ -55,7 +55,7 @@ measure restricted to $[0,1]$ and may be infinite.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_52`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.LinftyNormLeSupLpNormUnitIntervalWanted.eLpNorm_top_le_of_forall_one_le_eLpNorm_le` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LinftyNormLeSupLpNormUnitIntervalWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/LinftyNormLeSupLpNormUnitIntervalWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-top-le-of-forall-one-le-e-lp-n).
+Stated but not proved: `MathlibExt.MeasureTheory.LinftyNormLeSupLpNormUnitIntervalWanted.eLpNorm_top_le_of_forall_one_le_eLpNorm_le` is written with `theorem_wanted` in [WantedExt/MeasureTheory/LinftyNormLeSupLpNormUnitIntervalWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/LinftyNormLeSupLpNormUnitIntervalWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html#e-lp-norm-top-le-of-forall-one-le-e-lp-n).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Essential supremum](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/lp-spaces/essential-supremum/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/lp-spaces/essential-supremum)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/lp-spaces/essential-supremum)

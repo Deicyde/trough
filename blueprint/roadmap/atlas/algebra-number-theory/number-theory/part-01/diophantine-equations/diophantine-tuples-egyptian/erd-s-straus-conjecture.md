@@ -7,7 +7,7 @@ statement: formalized
 
 # Erdős–Straus conjecture
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html).
 
 ## Type I Erdős–Straus triples from divisors of a square
 
@@ -22,7 +22,7 @@ Since $4x > p$, these equations say $y = (px + d)/(4x - p)$ and $z = p(x + px^2/
 
 - Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.erdosStraus_typeI_of_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-i-of-dvd-sq).
+Stated but not proved: `MetaMathlibExt.erdosStraus_typeI_of_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-i-of-dvd-sq).
 
 ## Divisor criterion necessary for type I Erdős–Straus solutions
 
@@ -38,7 +38,7 @@ $z = p(x + px^2/d)/(4x - p)$.
 
 - Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.erdosStraus_typeI_exists_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-i-exists-dvd-sq).
+Stated but not proved: `MetaMathlibExt.erdosStraus_typeI_exists_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-i-exists-dvd-sq).
 
 ## Divisor criterion necessary for type II Erdős–Straus solutions
 
@@ -54,7 +54,7 @@ $z = p(x + x^2/d)/(4x - p)$.
 
 - Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.erdosStraus_typeII_exists_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-ii-exists-dvd-sq).
+Stated but not proved: `MetaMathlibExt.erdosStraus_typeII_exists_dvd_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosStrausDivisorPatternsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-type-ii-exists-dvd-sq).
 
 ## Chamberland's characterization of restricted Erdős–Straus representations
 
@@ -67,7 +67,7 @@ $q \equiv 3 \pmod 4$, both $s_1$ and $s_2$ dividing $(q + 1)/4$, and $p + 4 s_1 
 
 - Marc Chamberland, "The Erdős-Straus Conjecture and the Structure of Primes", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.ErdosStrausPrimeStructureWanted.erdos_straus_prime_restricted_representation_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausPrimeStructureWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosStrausPrimeStructureWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-prime-restricted-representa).
+Stated but not proved: `MathlibExt.NumberTheory.ErdosStrausPrimeStructureWanted.erdos_straus_prime_restricted_representation_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosStrausPrimeStructureWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosStrausPrimeStructureWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html#erdos-straus-prime-restricted-representa).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Erdős–Straus conjecture](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/erd-s-straus-conjecture)

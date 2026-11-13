@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.51 Residual gerbes
 
-Section 101.51 of the Stacks Project, [Tag 0H23](https://stacks.math.columbia.edu/tag/0H23). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.51 of the Stacks Project, [Tag 0H23](https://stacks.math.columbia.edu/tag/0H23). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H24, a lemma
 
 [Tag 0H24](https://stacks.math.columbia.edu/tag/0H24) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbe.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbe.lean#L122). The attribute's comment: “existence clause: condition (1) of Stacks 06MT transports along a gerbe”.
+**`AlgebraicGeometry.Stack.hasSingletonPointMonomorphism_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbe.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbe.lean#L122). The attribute's comment: “existence clause: condition (1) of Stacks 06MT transports along a gerbe”.
 
 > **The existence clause of Stacks 0H24.** Let `f : 𝒳 ⟶ 𝒴` make `𝒳` a gerbe over `𝒴` and let
 > `x` be a point of `𝒳`. If condition (1) of **Stacks 06MT** holds for `𝒴` at the image of `x`,
@@ -39,7 +39,7 @@ theorem hasSingletonPointMonomorphism_of_isGerbeOver
     HasSingletonPointMonomorphism B S hS 𝒳 x
 ```
 
-**`AlgebraicGeometry.Stack.isResidualGerbeAt_inverseImage_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeFibreProduct.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeFibreProduct.lean#L110).
+**`AlgebraicGeometry.Stack.isResidualGerbeAt_inverseImage_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeFibreProduct.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeResidualGerbeFibreProduct.lean#L110).
 
 > **Stacks 0H24.** Let `π : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` making `𝒳` a
 > gerbe over `𝒴`, let `x` be a point of `𝒳` and let `y` be its image in `|𝒴|`. Assume the residual
@@ -84,7 +84,7 @@ theorem isResidualGerbeAt_inverseImage_of_isGerbeOver
 
 [Tag 0H25](https://stacks.math.columbia.edu/tag/0H25) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.residualGerbe_factorization_of_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedResidualGerbeFactorization.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ReducedResidualGerbeFactorization.lean#L269).
+**`AlgebraicGeometry.Stack.residualGerbe_factorization_of_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ReducedResidualGerbeFactorization.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ReducedResidualGerbeFactorization.lean#L269).
 
 > **A reduced stack over a point factors through the residual gerbe.** Let `f : 𝒴 ⟶ 𝒳` be a
 > 1-morphism of algebraic stacks over `S` and let `x ∈ |𝒳|`. Assume that
@@ -121,7 +121,7 @@ theorem residualGerbe_factorization_of_isReducedStack
 
 [Tag 0H26](https://stacks.math.columbia.edu/tag/0H26) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.factorsThroughSubstack_residualGerbe_of_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPointFactorization.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPointFactorization.lean#L123). The attribute's comment: “the closed-point case the remark asserts: for X locally Noetherian and x a closed point, f : Y -> X with Y reduced and |f|(|Y|) in \{x} factors through the residual gerbe at x, which exists (via 0H27). The remark's open question, whether Lemma 0H25 holds for every point of a locally Noetherian X without the quasi-compact inertia hypothesis, is NOT asserted”.
+**`AlgebraicGeometry.Stack.factorsThroughSubstack_residualGerbe_of_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPointFactorization.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPointFactorization.lean#L123). The attribute's comment: “the closed-point case the remark asserts: for X locally Noetherian and x a closed point, f : Y -> X with Y reduced and |f|(|Y|) in \{x} factors through the residual gerbe at x, which exists (via 0H27). The remark's open question, whether Lemma 0H25 holds for every point of a locally Noetherian X without the quasi-compact inertia hypothesis, is NOT asserted”.
 
 > **Stacks 0H26, the closed-point case.** Let `𝒳` be a locally Noetherian algebraic stack over
 > `S`, let `x ∈ |𝒳|` be a closed point, and let `f : 𝒴 ⟶ 𝒳` be a 1-morphism of algebraic stacks with
@@ -153,7 +153,7 @@ theorem factorsThroughSubstack_residualGerbe_of_isClosed_singleton
 
 [Tag 0H27](https://stacks.math.columbia.edu/tag/0H27) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_and_isClosed_singleton_iff_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPoint.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPoint.lean#L127).
+**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_and_isClosed_singleton_iff_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPoint.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeClosedPoint.lean#L127).
 
 > **Stacks 0H27.** Let `𝒳` be a locally Noetherian algebraic stack over `S` and `x ∈ |𝒳|`.
 > The residual gerbe `𝒵_x ⊂ 𝒳` of `𝒳` at `x` exists (**Stacks 0H22**), and for it, `x` is a closed
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.51, Tag 0H23](https://stacks.math.columbia.edu/tag/0H23)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Van der Waerden-type theorems: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/index.html).
 
 Monochromatic arithmetic progressions: van der Waerden's theorem and van der Waerden numbers (off-diagonal, W(3,k)), short or large-difference progressions, rainbow progressions, descending waves, accessible sets and diffsequences, and progression-free Ramsey sets.
 
@@ -28,7 +28,7 @@ Spencer, *Ramsey Theory*, Section 2.3, from van der Waerden (1927).
 
 - https://en.wikipedia.org/wiki/Van_der_Waerden%27s_theorem
 
-Formalized by `MetaMathlibExt.vanDerWaerden`, a theorem declared in [MathlibExt/Combinatorics/Additive/VanDerWaerdenAP.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/VanDerWaerdenAP.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/index.html#van-der-waerden).
+Formalized by `MetaMathlibExt.vanDerWaerden`, a theorem declared in [MathlibExt/Combinatorics/Additive/VanDerWaerdenAP.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/VanDerWaerdenAP.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/index.html#van-der-waerden).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Van der Waerden-type theorems](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems)

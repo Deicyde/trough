@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.20 Generic points
 
-Section 68.20 of the Stacks Project, [Tag 0BB7](https://stacks.math.columbia.edu/tag/0BB7). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.20 of the Stacks Project, [Tag 0BB7](https://stacks.math.columbia.edu/tag/0BB7). 4 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ABV, a lemma
 
 [Tag 0ABV](https://stacks.math.columbia.edu/tag/0ABV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mem_genericPoints_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionZeroCriterion.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionZeroCriterion.lean#L165).
+**`AlgebraicGeometry.Space.mem_genericPoints_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionZeroCriterion.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionZeroCriterion.lean#L165).
 
 > **Stacks 0ABV.** For a point `x` of a decent algebraic space `X` over `S` the following
 > are equivalent: `x` is a generic point of an irreducible component of `|X|`; for every étale
@@ -41,7 +41,7 @@ theorem mem_genericPoints_tfae (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0ED1](https://stacks.math.columbia.edu/tag/0ED1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.codimension_eq_localRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionLocalRing.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionLocalRing.lean#L85).
+**`AlgebraicGeometry.Space.codimension_eq_localRingDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionLocalRing.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/CodimensionLocalRing.lean#L85).
 
 > For an irreducible closed subset `T` of the point space of a decent algebraic space over `S`,
 > with generic point `ξ`, the codimension of `T` is the dimension of the local ring of the space
@@ -58,7 +58,7 @@ theorem codimension_eq_localRingDimension (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0BB8](https://stacks.math.columbia.edu/tag/0BB8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReasonableSpace_of_finite_irreducibleComponents_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReasonableFromGenericPoints.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReasonableFromGenericPoints.lean#L358).
+**`AlgebraicGeometry.Space.isReasonableSpace_of_finite_irreducibleComponents_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReasonableFromGenericPoints.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ReasonableFromGenericPoints.lean#L358).
 
 > **Stacks 0BB8.** An algebraic space over a scheme `S` is reasonable as soon as every
 > quasi-compact scheme étale over it has finitely many irreducible components and every one of
@@ -86,7 +86,7 @@ theorem isReasonableSpace_of_finite_irreducibleComponents_of_mono
 
 [Tag 0BB9](https://stacks.math.columbia.edu/tag/0BB9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.hasMonomorphicCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L388). The attribute's comment: “condition (1) implies the third clause of condition (2)”.
+**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.hasMonomorphicCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L388). The attribute's comment: “condition (1) implies the third clause of condition (2)”.
 
 > **Stacks 0BB9, condition (1) implies the third clause of condition (2).** A decent
 > algebraic space has a monomorphic field-valued representative at every point, in particular at
@@ -99,7 +99,7 @@ theorem IsDecentWithFinitelyManyComponents.hasMonomorphicCodimensionZeroPoints
     HasMonomorphicCodimensionZeroPoints B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L510). The attribute's comment: “condition (3) implies the first clause of condition (2)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L510). The attribute's comment: “condition (3) implies the first clause of condition (2)”.
 
 > **Stacks 0BB9, condition (3) implies the first clause of condition (2).** If an algebraic
 > space over `S` has a dense open subspace which is a scheme with finitely many irreducible
@@ -121,7 +121,7 @@ theorem HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleIrreducibleComponent
     HasFiniteEtaleIrreducibleComponents B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L612). The attribute's comment: “condition (3) implies the second clause of condition (2)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L612). The attribute's comment: “condition (3) implies the second clause of condition (2)”.
 
 > **Stacks 0BB9, condition (3) implies the second clause of condition (2).** Only finitely
 > many points have codimension `0`: each of them lies over the dense open subspace, and is the
@@ -134,7 +134,7 @@ theorem HasQuasiCompactGenericDenseOpenScheme.hasFiniteCodimensionZeroPoints
     HasFiniteCodimensionZeroPoints B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasMonomorphicCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L632). The attribute's comment: “condition (3) implies the third clause of condition (2)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasMonomorphicCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L632). The attribute's comment: “condition (3) implies the third clause of condition (2)”.
 
 > **Stacks 0BB9, condition (3) implies the third clause of condition (2).** A point of
 > codimension `0` lies over the dense open subspace, which is a scheme, so the residue field at
@@ -147,7 +147,7 @@ theorem HasQuasiCompactGenericDenseOpenScheme.hasMonomorphicCodimensionZeroPoint
     HasMonomorphicCodimensionZeroPoints B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleComponentsAndCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L645). The attribute's comment: “condition (3) implies condition (2)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleComponentsAndCodimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L645). The attribute's comment: “condition (3) implies condition (2)”.
 
 > **Stacks 0BB9, condition (3) implies condition (2).** The three clauses together.
 
@@ -158,7 +158,7 @@ theorem HasQuasiCompactGenericDenseOpenScheme.hasFiniteEtaleComponentsAndCodimen
     HasFiniteEtaleComponentsAndCodimensionZeroPoints B S hS X
 ```
 
-**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.hasQuasiCompactGenericDenseOpenScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L720). The attribute's comment: “condition (1) implies condition (3)”.
+**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.hasQuasiCompactGenericDenseOpenScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 720](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L720). The attribute's comment: “condition (1) implies condition (3)”.
 
 > **Stacks 0BB9, condition (1) implies condition (3).** A decent algebraic space over `S`
 > whose space of points has finitely many irreducible components has a dense open subspace which
@@ -181,7 +181,7 @@ theorem IsDecentWithFinitelyManyComponents.hasQuasiCompactGenericDenseOpenScheme
     HasQuasiCompactGenericDenseOpenScheme B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteEtaleComponentsAndCodimensionZeroPoints.isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L740). The attribute's comment: “condition (2) implies the conclusion that the space is reasonable”.
+**`AlgebraicGeometry.Space.HasFiniteEtaleComponentsAndCodimensionZeroPoints.isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L740). The attribute's comment: “condition (2) implies the conclusion that the space is reasonable”.
 
 > **Condition (2) of Stacks 0BB9 makes the algebraic space reasonable.** This is Stacks 0BB8,
 > `AlgebraicGeometry.Space.isReasonableSpace_of_finite_irreducibleComponents_of_mono`, whose two
@@ -194,7 +194,7 @@ theorem HasFiniteEtaleComponentsAndCodimensionZeroPoints.isReasonableSpace
     IsReasonableSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteEtaleComponentsAndCodimensionZeroPoints.isDecentWithFinitelyManyComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L755). The attribute's comment: “condition (2) implies condition (1)”.
+**`AlgebraicGeometry.Space.HasFiniteEtaleComponentsAndCodimensionZeroPoints.isDecentWithFinitelyManyComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 755](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L755). The attribute's comment: “condition (2) implies condition (1)”.
 
 > **Stacks 0BB9, condition (2) implies condition (1).** Decency comes from Stacks 0BB8: the
 > first and third clauses of condition (2) make the space reasonable, and a reasonable algebraic
@@ -210,7 +210,7 @@ theorem HasFiniteEtaleComponentsAndCodimensionZeroPoints.isDecentWithFinitelyMan
     IsDecentWithFinitelyManyComponents B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isDecentWithFinitelyManyComponents_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 777](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L777).
+**`AlgebraicGeometry.Space.isDecentWithFinitelyManyComponents_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L777).
 
 > **Stacks 0BB9.** For an algebraic space `X` over a scheme `S` the three conditions are
 > equivalent: `X` is decent with finitely many irreducible components; every quasi-compact scheme
@@ -227,7 +227,7 @@ theorem isDecentWithFinitelyManyComponents_tfae
       HasQuasiCompactGenericDenseOpenScheme B S hS X].TFAE
 ```
 
-**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L791). The attribute's comment: “the conclusion that the space is reasonable”.
+**`AlgebraicGeometry.Space.IsDecentWithFinitelyManyComponents.isReasonableSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 791](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L791). The attribute's comment: “the conclusion that the space is reasonable”.
 
 > **Stacks 0BB9, the concluding assertion that the space is reasonable.** An algebraic space
 > over `S` which is decent and has finitely many irreducible components is reasonable.
@@ -239,7 +239,7 @@ theorem IsDecentWithFinitelyManyComponents.isReasonableSpace
     IsReasonableSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.image_genericPoints_eq_genericPoints_of_denseRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L808). The attribute's comment: “the conclusion identifying the generic points of the dense open subscheme”.
+**`AlgebraicGeometry.Space.image_genericPoints_eq_genericPoints_of_denseRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean, line 808](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GenericPointsFiniteComponents.lean#L808). The attribute's comment: “the conclusion identifying the generic points of the dense open subscheme”.
 
 > **Stacks 0BB9, the concluding assertion about generic points.** If the space of points of
 > an algebraic space over `S` has finitely many irreducible components and `X' ⊂ X` is an open
@@ -267,4 +267,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.20, Tag 0BB7](https://stacks.math.columbia.edu/tag/0BB7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # Diophantine equations
 
-379 results of ATLAS's vault, 141 proved and 238 stated but not proved, in this branch's topics.
+379 results of ATLAS's vault, 143 proved, 231 stated but not proved and 5 whose declaration the Lean read here does not declare, in this branch's topics.
 
 Integer and rational solutions of polynomial and exponential equations, Pell equations, Thue equations, Diophantine tuples, Egyptian fractions.
 

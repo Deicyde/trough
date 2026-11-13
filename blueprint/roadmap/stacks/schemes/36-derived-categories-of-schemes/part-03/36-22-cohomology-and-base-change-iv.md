@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.22 Cohomology and base change, IV
 
-Section 36.22 of the Stacks Project, [Tag 08ET](https://stacks.math.columbia.edu/tag/08ET). 9 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.22 of the Stacks Project, [Tag 08ET](https://stacks.math.columbia.edu/tag/08ET). 9 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08EU, a lemma
 
 [Tag 08EU](https://stacks.math.columbia.edu/tag/08EU) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenCoverDescent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenCoverDescent.lean#L111). The attribute's comment: “the localization argument of the source's proof, closed over an open cover: for an arbitrary morphism of schemes and arbitrary complexes, invertibility of the projection-formula map for f|\_U at the restricted complexes, for U running through an open cover of the base, implies invertibility of the map for f; the affine case of the tag is NOT proved here, so the tag is not closed”.
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenCoverDescent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenCoverDescent.lean#L111). The attribute's comment: “the localization argument of the source's proof, closed over an open cover: for an arbitrary morphism of schemes and arbitrary complexes, invertibility of the projection-formula map for f|\_U at the restricted complexes, for U running through an open cover of the base, implies invertibility of the map for f; the affine case of the tag is NOT proved here, so the tag is not closed”.
 
 > **The projection-formula morphism of [Stacks, Tag 0B53] is invertible as soon as it is after
 > restriction to the members of an open cover of the base.**
@@ -38,7 +38,7 @@ theorem isIso_projectionFormulaMap_of_openCover {ι : Type*} (U : ι → Y.Opens
     IsIso (projectionFormulaMap f.toLRSHom.toShHom E K)
 ```
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_derivedPullback_map_projectionFormulaMap_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenImmersionBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenImmersionBaseChange.lean#L262). The attribute's comment: “the localization step of the source's proof, for schemes: for a Cartesian square of schemes whose bottom arrow is an open immersion, invertibility of the projection-formula map for f' at the restricted complexes implies invertibility of the derived pullback along g of the map for f; unconditional in both complexes, but only one implication of the source's reduction — the affine case and the descent from an open cover back to the base are not proved”.
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_derivedPullback_map_projectionFormulaMap_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenImmersionBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ProjectionFormulaOpenImmersionBaseChange.lean#L262). The attribute's comment: “the localization step of the source's proof, for schemes: for a Cartesian square of schemes whose bottom arrow is an open immersion, invertibility of the projection-formula map for f' at the restricted complexes implies invertibility of the derived pullback along g of the map for f; unconditional in both complexes, but only one implication of the source's reduction — the affine case and the descent from an open cover back to the base are not proved”.
 
 > **Invertibility of the derived projection-formula map of [Stacks, Tag 0B53] descends along an
 > open immersion of the base, for schemes.**
@@ -67,7 +67,7 @@ theorem isIso_derivedPullback_map_projectionFormulaMap_of_isOpenImmersion
       (projectionFormulaMap f.toLRSHom.toShHom E K))
 ```
 
-**`AlgebraicGeometry.projectionFormulaIsIsoOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/ProjectionFormulaDischarged.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/ProjectionFormulaDischarged.lean#L46). The attribute's comment: “the whole tag, in the shape of the proposition AlgebraicGeometry.ProjectionFormulaIsIsoOnQuasicoherent, which this proves”.
+**`AlgebraicGeometry.projectionFormulaIsIsoOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/ProjectionFormulaDischarged.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/ProjectionFormulaDischarged.lean#L46). The attribute's comment: “the whole tag, in the shape of the proposition AlgebraicGeometry.ProjectionFormulaIsIsoOnQuasicoherent, which this proves”.
 
 > **[Stacks, Tag 08EU].** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > schemes. For `E` in `D_QCoh(𝒪_X)` and `K` in `D_QCoh(𝒪_Y)` the projection-formula morphism of
@@ -82,7 +82,7 @@ theorem projectionFormulaIsIsoOnQuasicoherent :
     ProjectionFormulaIsIsoOnQuasicoherent.{u}
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaDevissage.isIso_projectionFormulaMap_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaDevissage.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaDevissage.lean#L138). The attribute's comment: “the triangle step of the source's dévissage, with no hypothesis: for a distinguished triangle of D(𝒪\_Y), invertibility of the Tag 0B53 map at all shifts of two of the three vertices gives it at all shifts of the third, in each of the three rotations. The source states this as `two out of three of the functors being exact`; the direct-sum step is isIso\_projectionFormulaMap\_coproduct and the affine reduction is isIso\_projectionFormulaMap\_of\_derivedModuleFunctor, both of which carry a geometric input and so are not registered”.
+**`Stacks.Cohomology.ProjectionFormulaDevissage.isIso_projectionFormulaMap_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaDevissage.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaDevissage.lean#L138). The attribute's comment: “the triangle step of the source's dévissage, with no hypothesis: for a distinguished triangle of D(𝒪\_Y), invertibility of the Tag 0B53 map at all shifts of two of the three vertices gives it at all shifts of the third, in each of the three rotations. The source states this as `two out of three of the functors being exact`; the direct-sum step is isIso\_projectionFormulaMap\_coproduct and the affine reduction is isIso\_projectionFormulaMap\_of\_derivedModuleFunctor, both of which carry a geometric input and so are not registered”.
 
 > Let `Δ` be a distinguished triangle of `D(𝒪_Y)`. If the projection-formula morphism of
 > [Stacks, Tag 0B53] is invertible at every shift of two of the three vertices of `Δ`, it is
@@ -103,7 +103,7 @@ theorem isIso_projectionFormulaMap_twoOutOfThree
         ∀ n : ℤ, IsIso (projectionFormulaMap f E (Δ.obj₁⟦n⟧)))
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaGeneralBase.isIso_projectionFormulaMap_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaGeneralBase.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaGeneralBase.lean#L177). The attribute's comment: “the tag in full: for a quasi-compact quasi-separated morphism of schemes f : X ⟶ Y, an E in D\_QCoh(𝒪\_X) and a K in D\_QCoh(𝒪\_Y), the Tag 0B53 map Rf\_*E ⊗ᴸ K ⟶ Rf\_*(E ⊗ᴸ Lf^*K) is invertible, with no hypothesis beyond those. The source's first step, that invertibility is a local question on Y, is carried out here: over an affine open V ⊆ Y the square of Tag 0B6B identifies L((V).ι)^* of the map with the map for the base change f ∣\_ V, every other arrow of that square being invertible because (V).ι is an open immersion; the map for f ∣\_ V is the affine case; and invertibility in D(𝒪\_Y) is local on the affine opens of Y”.
+**`Stacks.Cohomology.ProjectionFormulaGeneralBase.isIso_projectionFormulaMap_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaGeneralBase.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaGeneralBase.lean#L177). The attribute's comment: “the tag in full: for a quasi-compact quasi-separated morphism of schemes f : X ⟶ Y, an E in D\_QCoh(𝒪\_X) and a K in D\_QCoh(𝒪\_Y), the Tag 0B53 map Rf\_*E ⊗ᴸ K ⟶ Rf\_*(E ⊗ᴸ Lf^*K) is invertible, with no hypothesis beyond those. The source's first step, that invertibility is a local question on Y, is carried out here: over an affine open V ⊆ Y the square of Tag 0B6B identifies L((V).ι)^* of the map with the map for the base change f ∣\_ V, every other arrow of that square being invertible because (V).ι is an open immersion; the map for f ∣\_ V is the affine case; and invertibility in D(𝒪\_Y) is local on the affine opens of Y”.
 
 > **[Stacks, Tag 08EU].**  For a quasi-compact quasi-separated morphism of schemes
 > `f : X ⟶ Y`, an `E` in `D_QCoh(𝒪_X)` and a `K` in `D_QCoh(𝒪_Y)`, the projection-formula
@@ -119,7 +119,7 @@ theorem isIso_projectionFormulaMap_of_isQuasicoherent {X Y : Scheme.{u}} (f : X 
     IsIso (projectionFormulaMap f.toLRSHom.toShHom E K)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaOverAffineBase.isIso_projectionFormulaMap_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaOverAffineBase.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaOverAffineBase.lean#L253). The attribute's comment: “the affine case, with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes g : X ⟶ Spec A, an E in D\_QCoh(𝒪\_X) and a K in D\_QCoh(𝒪\_\{Spec A}), the Tag 0B53 map Rg\_*E ⊗ᴸ K ⟶ Rg\_*(E ⊗ᴸ Lg^*K) is invertible. This is the source's dévissage carried out — direct sums (Tag 08DZ), distinguished triangles, and the reduction to the shifts of the structure sheaf through the equivalence D(A) ≌ D\_QCoh(𝒪\_\{Spec A}) of Tag 06Z0 and the remark of Tag 09PB. This is the tag over a base of the form Spec A; the source's first step, the reduction of a general base Y to an affine one, is carried out in Stacks.Cohomology.ProjectionFormulaGeneralBase, where the tag is registered in full”.
+**`Stacks.Cohomology.ProjectionFormulaOverAffineBase.isIso_projectionFormulaMap_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaOverAffineBase.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaOverAffineBase.lean#L253). The attribute's comment: “the affine case, with no hypothesis beyond the tag's own: for a quasi-compact quasi-separated morphism of schemes g : X ⟶ Spec A, an E in D\_QCoh(𝒪\_X) and a K in D\_QCoh(𝒪\_\{Spec A}), the Tag 0B53 map Rg\_*E ⊗ᴸ K ⟶ Rg\_*(E ⊗ᴸ Lg^*K) is invertible. This is the source's dévissage carried out — direct sums (Tag 08DZ), distinguished triangles, and the reduction to the shifts of the structure sheaf through the equivalence D(A) ≌ D\_QCoh(𝒪\_\{Spec A}) of Tag 06Z0 and the remark of Tag 09PB. This is the tag over a base of the form Spec A; the source's first step, the reduction of a general base Y to an affine one, is carried out in Stacks.Cohomology.ProjectionFormulaGeneralBase, where the tag is registered in full”.
 
 > Let `g : X ⟶ Spec A` be a quasi-compact and quasi-separated morphism of schemes, let `E` be
 > an object of `D_QCoh(𝒪_X)` and let `K` be an object of `D_QCoh(𝒪_{Spec A})`. Then the
@@ -140,7 +140,7 @@ theorem isIso_projectionFormulaMap_of_isQuasicoherent
     IsIso (projectionFormulaMap g.toLRSHom.toShHom E K)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaPerfect.isIso_derivedPullback_map_projectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean#L218). The attribute's comment: “the localization step of the source's proof: for a Cartesian square of ringed spaces whose horizontal arrows are open immersions, invertibility of the projection-formula map for f' at the restricted complexes implies invertibility of the derived pullback along g of the map for f; unconditional in both complexes, but only one implication of the source's reduction — the affine case and the passage from an open cover back to the base are not proved”.
+**`Stacks.Cohomology.ProjectionFormulaPerfect.isIso_derivedPullback_map_projectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean#L218). The attribute's comment: “the localization step of the source's proof: for a Cartesian square of ringed spaces whose horizontal arrows are open immersions, invertibility of the projection-formula map for f' at the restricted complexes implies invertibility of the derived pullback along g of the map for f; unconditional in both complexes, but only one implication of the source's reduction — the affine case and the passage from an open cover back to the base are not proved”.
 
 > **The projection-formula morphism of [Stacks, Tag 0B53] is invertible after derived pullback
 > along an open immersion of the base, as soon as it is invertible upstairs.**
@@ -182,7 +182,7 @@ theorem isIso_derivedPullback_map_projectionFormulaMap
     IsIso ((derivedPullback g).map (projectionFormulaMap f E K))
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaQCoh.isIso_projectionFormulaMap_of_isDQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQCoh.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQCoh.lean#L89). The attribute's comment: “the whole lemma: for a quasi-compact and quasi-separated morphism of schemes f : X ⟶ Y, E in D\_QCoh(𝒪\_X) and K in D\_QCoh(𝒪\_Y), the projection-formula morphism Rf\_*E ⊗ᴸ K ⟶ Rf\_*(E ⊗ᴸ Lf^*K) of Tag 0B53 is invertible. The proof is the source's dévissage: locality on Y, the affine equivalence D(A) ≌ D\_QCoh(𝒪\_Y) of Tag 06Z0 with the resolution of Tag 09PB, direct sums through Tag 08DZ, two-out-of-three on distinguished triangles, and the shifts of the structure sheaf as the base case”.
+**`Stacks.Cohomology.ProjectionFormulaQCoh.isIso_projectionFormulaMap_of_isDQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQCoh.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQCoh.lean#L89). The attribute's comment: “the whole lemma: for a quasi-compact and quasi-separated morphism of schemes f : X ⟶ Y, E in D\_QCoh(𝒪\_X) and K in D\_QCoh(𝒪\_Y), the projection-formula morphism Rf\_*E ⊗ᴸ K ⟶ Rf\_*(E ⊗ᴸ Lf^*K) of Tag 0B53 is invertible. The proof is the source's dévissage: locality on Y, the affine equivalence D(A) ≌ D\_QCoh(𝒪\_Y) of Tag 06Z0 with the resolution of Tag 09PB, direct sums through Tag 08DZ, two-out-of-three on distinguished triangles, and the shifts of the structure sheaf as the base case”.
 
 > **[Stacks, Tag 08EU].**  For a quasi-compact and quasi-separated morphism of schemes
 > `f : X ⟶ Y`, an `E` in `D_QCoh(𝒪_X)` and a `K` in `D_QCoh(𝒪_Y)`, the projection-formula morphism
@@ -207,7 +207,7 @@ theorem isIso_projectionFormulaMap_of_isDQCoh {X Y : Scheme.{u}} (f : X ⟶ Y)
     IsIso (projectionFormulaMap f.toLRSHom.toShHom E K)
 ```
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_quasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQuasiCoherent.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQuasiCoherent.lean#L183).
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_quasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQuasiCoherent.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaQuasiCoherent.lean#L183).
 
 > **[Stacks, Tag 08EU].**  Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > schemes.  For `E` in `D_QCoh(𝒪_X)` and `K` in `D_QCoh(𝒪_Y)` the projection-formula morphism of
@@ -228,7 +228,7 @@ theorem isIso_projectionFormulaMap_quasiCoherent
     IsIso (projectionFormulaMap f.toLRSHom.toShHom E K)
 ```
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_unitObject_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitKFlat.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitKFlat.lean#L550). The attribute's comment: “the case K = 𝒪\_Y[0]: for an arbitrary morphism of ringed spaces f and an arbitrary E in D(𝒪\_X), the projection-formula morphism Rf\_*E ⊗ᴸ 𝒪\_Y ⟶ Rf\_*(E ⊗ᴸ Lf^*𝒪\_Y) is invertible; the right unitors are derivedTensorRightUnitorNatIso, the unit comparison is derivedPullbackUnitIso and the right-unitor coherence of Tag 079U is rightUnitorCoherence\_unitObject”.
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_unitObject_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitKFlat.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitKFlat.lean#L550). The attribute's comment: “the case K = 𝒪\_Y[0]: for an arbitrary morphism of ringed spaces f and an arbitrary E in D(𝒪\_X), the projection-formula morphism Rf\_*E ⊗ᴸ 𝒪\_Y ⟶ Rf\_*(E ⊗ᴸ Lf^*𝒪\_Y) is invertible; the right unitors are derivedTensorRightUnitorNatIso, the unit comparison is derivedPullbackUnitIso and the right-unitor coherence of Tag 079U is rightUnitorCoherence\_unitObject”.
 
 > **[Stacks, Tag 08EU] at `K = 𝒪_Y[0]`.**  For an arbitrary
 > morphism of ringed spaces `f : X ⟶ Y` and an arbitrary `E` in `D(𝒪_X)`, the derived
@@ -250,7 +250,7 @@ theorem isIso_projectionFormulaMap_unitObject_unconditional
     IsIso (projectionFormulaMap f E (singleUnit Y))
 ```
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_unitShift_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitShifts.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitShifts.lean#L224). The attribute's comment: “the case K = 𝒪\_Y[0]⟦m⟧, every shift of the structure sheaf: for an arbitrary morphism of ringed spaces and an arbitrary E in D(𝒪\_X), Rf\_*E ⊗ᴸ 𝒪\_Y[0]⟦m⟧ ⟶ Rf\_*(E ⊗ᴸ Lf^*(𝒪\_Y[0]⟦m⟧)) is invertible for every integer m”.
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMap_unitShift_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitShifts.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaUnitShifts.lean#L224). The attribute's comment: “the case K = 𝒪\_Y[0]⟦m⟧, every shift of the structure sheaf: for an arbitrary morphism of ringed spaces and an arbitrary E in D(𝒪\_X), Rf\_*E ⊗ᴸ 𝒪\_Y[0]⟦m⟧ ⟶ Rf\_*(E ⊗ᴸ Lf^*(𝒪\_Y[0]⟦m⟧)) is invertible for every integer m”.
 
 > **[Stacks, Tag 08EU] at `K = 𝒪_Y[0]⟦m⟧`, for every integer `m`.**
 > For an arbitrary morphism of ringed spaces `f : X ⟶ Y` and an arbitrary `E ∈ D(𝒪_X)`, the derived
@@ -276,7 +276,7 @@ theorem isIso_projectionFormulaMap_unitShift_unconditional
 
 [Tag 08IA](https://stacks.math.columbia.edu/tag/08IA) in the Stacks Project.
 
-**`AlgebraicGeometry.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean#L101). References: SGA 6 III (1.5); SGA 5 III (6.2).
+**`AlgebraicGeometry.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean#L101). References: SGA 6 III (1.5); SGA 5 III (6.2).
 
 > Two schemes over a common base are Tor independent if their local rings at
 > every pair of points with the same image are Tor independent over the local
@@ -290,7 +290,7 @@ def TorIndependent {S X Y : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S) : Prop
 
 [Tag 0FXV](https://stacks.math.columbia.edu/tag/0FXV) in the Stacks Project.
 
-**`AlgebraicGeometry.torIndependent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean#L430). References: SGA 6 III (1.5), “affine/local criterion”.
+**`AlgebraicGeometry.torIndependent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorIndependence.lean#L430). References: SGA 6 III (1.5), “affine/local criterion”.
 
 > Tor independence of two schemes over a base can be checked on every
 > compatible triple of affine opens, or on affine open coverings of the base and
@@ -331,7 +331,7 @@ theorem torIndependent_tfae {S X Y : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S) :
 
 [Tag 0FXW](https://stacks.math.columbia.edu/tag/0FXW) in the Stacks Project.
 
-**`AlgebraicGeometry.torIndependent_pullback_of_flat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BaseChangeFour/FlatBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/BaseChangeFour/FlatBaseChange.lean#L55).
+**`AlgebraicGeometry.torIndependent_pullback_of_flat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/BaseChangeFour/FlatBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/BaseChangeFour/FlatBaseChange.lean#L55).
 
 > Tor independence of two schemes over a common base is preserved by a flat base change.
 
@@ -346,7 +346,7 @@ lemma torIndependent_pullback_of_flat
 
 [Tag 08IB](https://stacks.math.columbia.edu/tag/08IB) in the Stacks Project.
 
-**`AlgebraicGeometry.BaseChangeChart.isIso_derivedBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparison.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparison.lean#L194). The attribute's comment: “the Tor-independence input of the proof: on every Cartesian affine-open chart of the square the coordinate rings are Tor independent, so the ring-level derived base-change comparison of Stacks 065Z is invertible there. The global statement is isIso\_derivedBaseChangeMap\_of\_torIndependent”.
+**`AlgebraicGeometry.BaseChangeChart.isIso_derivedBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparison.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/AffineChartComparison.lean#L194). The attribute's comment: “the Tor-independence input of the proof: on every Cartesian affine-open chart of the square the coordinate rings are Tor independent, so the ring-level derived base-change comparison of Stacks 065Z is invertible there. The global statement is isIso\_derivedBaseChangeMap\_of\_torIndependent”.
 
 > **Stacks 0661 on a Cartesian affine-open chart.** If `X` and `S'` are Tor independent over
 > `S`, then for every chart the canonical comparison
@@ -382,7 +382,7 @@ public theorem isIso_derivedBaseChangeComparison (hTor : TorIndependent f g)
       ch.a.hom ch.b.hom ch.c.hom ch.d.hom ch.isPushout_hom L_g L_h alpha_g alpha_h).2.1
 ```
 
-**`AlgebraicGeometry.derivedBaseChangeIsIsoOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeUnitSingle.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeUnitSingle.lean#L285). References: SGA 6 IV (3.1.0), “more general”.
+**`AlgebraicGeometry.derivedBaseChangeIsIsoOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeUnitSingle.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeUnitSingle.lean#L285). References: SGA 6 IV (3.1.0), “more general”.
 
 > **[Stacks, Tag 08IB].**  Let
 >
@@ -409,7 +409,7 @@ public theorem isIso_derivedBaseChangeComparison (hTor : TorIndependent f g)
 theorem derivedBaseChangeIsIsoOnQuasicoherent : DerivedBaseChangeIsIsoOnQuasicoherent.{u}
 ```
 
-**`AlgebraicGeometry.isIso_derivedBaseChangeMap_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TorIndependentBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TorIndependentBaseChange.lean#L55).
+**`AlgebraicGeometry.isIso_derivedBaseChangeMap_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TorIndependentBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/TorIndependentBaseChange.lean#L55).
 
 > Let `g : S' ⟶ S` be a morphism of schemes, `f : X ⟶ S` quasi-compact and quasi-separated,
 > and `X' = X ×_S S'` with projections `g' : X' ⟶ X` and `f' : X' ⟶ S'`. If `X` and `S'` are Tor
@@ -426,7 +426,7 @@ theorem isIso_derivedBaseChangeMap_of_torIndependent (sq : IsPullback g' f' f g)
       g.toLRSHom.toShHom (comp_toShHom_of_comm sq.w) E)
 ```
 
-**`Stacks.Duality.OpenImmersion.isIso_quasiCoherentDerivedBaseChangeSquare_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L401). The attribute's comment: “for base change along an OPEN IMMERSION of the base, hence flat, hence Tor independent of f: invertibility of Stacks.Duality.quasiCoherentDerivedBaseChangeSquare, the derived base change map of Stacks 08HY on the quasi-coherent derived categories at the locally small model. The general Tor-independent case is not proved in this repository; see Stacks.Duality.OpenImmersion.isIso\_twistedInverseImagePushforwardBaseChange\_of\_isOpenImmersion”.
+**`Stacks.Duality.OpenImmersion.isIso_quasiCoherentDerivedBaseChangeSquare_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L401). The attribute's comment: “for base change along an OPEN IMMERSION of the base, hence flat, hence Tor independent of f: invertibility of Stacks.Duality.quasiCoherentDerivedBaseChangeSquare, the derived base change map of Stacks 08HY on the quasi-coherent derived categories at the locally small model. The general Tor-independent case is not proved in this repository; see Stacks.Duality.OpenImmersion.isIso\_twistedInverseImagePushforwardBaseChange\_of\_isOpenImmersion”.
 
 > **[Stacks, Tag 08IB] for base change along an open immersion of the base**, on the
 > quasi-coherent derived categories at the locally small model: the derived base change map
@@ -454,7 +454,7 @@ theorem isIso_quasiCoherentDerivedBaseChangeSquare_of_isOpenImmersion
 
 [Tag 0AA7](https://stacks.math.columbia.edu/tag/0AA7) in the Stacks Project.
 
-**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L505). The attribute's comment: “case (1): M perfect and K in D\_QCoh(O\_X)”.
+**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L505). The attribute's comment: “case (1): M perfect and K in D\_QCoh(O\_X)”.
 
 > **Stacks 0AA7, case (1).**  Let `X' --g'--> X`, `f : X ⟶ Spec R`, `f' : X' ⟶ Spec R'` be a
 > cartesian square over `Spec φ : Spec R' ⟶ Spec R`, with `f` quasi-compact and quasi-separated and
@@ -470,7 +470,7 @@ theorem isIso_globalHomBaseChangeMap_of_isPerfect (hsq : IsPullback g' f' f (Spe
     IsIso (globalHomBaseChangeMap φ f f' g' hsq.w M K)
 ```
 
-**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L521). The attribute's comment: “case (2): M pseudo-coherent, K in D^+\_QCoh(O\_X), R' of finite tor dimension over R”.
+**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L521). The attribute's comment: “case (2): M pseudo-coherent, K in D^+\_QCoh(O\_X), R' of finite tor dimension over R”.
 
 > **Stacks 0AA7, case (2).**  Let `X' --g'--> X`, `f : X ⟶ Spec R`, `f' : X' ⟶ Spec R'` be a
 > cartesian square over `Spec φ : Spec R' ⟶ Spec R`, with `f` quasi-compact and quasi-separated and
@@ -492,7 +492,7 @@ theorem isIso_globalHomBaseChangeMap_of_isPseudoCoherent (hsq : IsPullback g' f'
 
 [Tag 0BZA](https://stacks.math.columbia.edu/tag/0BZA) in the Stacks Project.
 
-**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomAdjunctionMap_and_globalHomBaseChangeMap_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L639).
+**`AlgebraicGeometry.GlobalHomBaseChange.isIso_globalHomAdjunctionMap_and_globalHomBaseChangeMap_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/GlobalHomBaseChangeIso.lean#L639).
 
 > **Stacks 0BZA.**  With notation as in Stacks 0AA7, the square
 >
@@ -530,7 +530,7 @@ theorem isIso_globalHomAdjunctionMap_and_globalHomBaseChangeMap_comp_counit
 
 [Tag 0C0V](https://stacks.math.columbia.edu/tag/0C0V) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedPullback_hasTorAmplitudeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean#L223). The attribute's comment: “preservation of Tor amplitude over the base”. References: SGA 6 III (3.5.2); SGA 6 III (4.7.2), “amplitude inclusion”.
+**`AlgebraicGeometry.derivedPullback_hasTorAmplitudeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean#L223). The attribute's comment: “preservation of Tor amplitude over the base”. References: SGA 6 III (3.5.2); SGA 6 III (4.7.2), “amplitude inclusion”.
 
 > **Stacks 0C0V (1).** For a cartesian square of schemes whose two morphisms to the base are
 > Tor independent, derived pullback preserves Tor amplitude over the base.
@@ -546,7 +546,7 @@ public theorem derivedPullback_hasTorAmplitudeOver
         g'.toLRSHom.toShHom).obj E) a b
 ```
 
-**`AlgebraicGeometry.derivedPullbackComparison_isIso_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean#L408). The attribute's comment: “derived pullback of a module flat over the base is the ordinary pullback”.
+**`AlgebraicGeometry.derivedPullbackComparison_isIso_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeTorAmplitudeBaseChange.lean#L408). The attribute's comment: “derived pullback of a module flat over the base is the ordinary pullback”.
 
 > **Stacks 0C0V (2).** For a Tor-independent cartesian square of schemes and an `𝒪_X`-module
 > `G` flat over `S`, the canonical comparison from the derived pullback of `G` along `g'` to its
@@ -567,7 +567,7 @@ public theorem derivedPullbackComparison_isIso_of_isFlatOver
 
 [Tag 0E23](https://stacks.math.columbia.edu/tag/0E23) in the Stacks Project.
 
-**`Stacks.Cohomology.ClosedImmersionBaseChange.isIso_derivedBaseChangeSquare_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean#L275). The attribute's comment: “the canonical base change map Lf^* ∘ Ri\_* ⟶ Ri'\_* ∘ Lg^* is invertible”.
+**`Stacks.Cohomology.ClosedImmersionBaseChange.isIso_derivedBaseChangeSquare_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean#L275). The attribute's comment: “the canonical base change map Lf^* ∘ Ri\_* ⟶ Ri'\_* ∘ Lg^* is invertible”.
 
 > In a cartesian square of schemes with `i` a closed immersion and `Z`, `X'` Tor independent
 > over `X`, the canonical morphism of functors `Ri_* ⋙ Lf^* ⟶ Lg^* ⋙ Ri'_*` of Stacks 08HY is an
@@ -580,7 +580,7 @@ theorem isIso_derivedBaseChangeSquare_of_torIndependent (sq : IsPullback i' g f 
       f.toLRSHom.toShHom (comp_toShHom_of_isPullback sq))
 ```
 
-**`Stacks.Cohomology.ClosedImmersionBaseChange.derivedBaseChangeSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean#L300).
+**`Stacks.Cohomology.ClosedImmersionBaseChange.derivedBaseChangeSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeMergeCoherence.lean#L300).
 
 > **Tor-independent base change along a closed immersion.**  For a cartesian square with `i` a
 > closed immersion and `Z`, `X'` Tor independent over `X`, the functors `Lf^* ∘ Ri_*` and
@@ -597,7 +597,7 @@ def derivedBaseChangeSquareIso (sq : IsPullback i' g f i)
           i'.toLRSHom.toShHom
 ```
 
-**`Stacks.Cohomology.ClosedImmersionBaseChange.derivedBaseChangeSquareAsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeTorIndependent.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeTorIndependent.lean#L406). The attribute's comment: “Lf^* ∘ Ri\_* ≅ Ri'\_* ∘ Lg^* on D(𝒪\_Z), by the canonical base change map”.
+**`Stacks.Cohomology.ClosedImmersionBaseChange.derivedBaseChangeSquareAsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeTorIndependent.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/ClosedImmersionBaseChangeTorIndependent.lean#L406). The attribute's comment: “Lf^* ∘ Ri\_* ≅ Ri'\_* ∘ Lg^* on D(𝒪\_Z), by the canonical base change map”.
 
 > **Tor-independent base change along a closed immersion.**  For a cartesian square of schemes
 > with `i` a closed immersion and `Z`, `X'` Tor independent over `X`, the functors `Lf^* ∘ Ri_*` and
@@ -618,4 +618,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.22, Tag 08ET](https://stacks.math.columbia.edu/tag/08ET)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

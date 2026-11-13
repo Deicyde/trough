@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.14 Composition of families of cycles on fibres
 
-Section 62.14 of the Stacks Project, [Tag 0H6H](https://stacks.math.columbia.edu/tag/0H6H). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.14 of the Stacks Project, [Tag 0H6H](https://stacks.math.columbia.edu/tag/0H6H). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H6I, a lemma
 
 [Tag 0H6I](https://stacks.math.columbia.edu/tag/0H6I) in the Stacks Project.
 
-**`Stacks.Chow.compFamily_add_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L260). The attribute's comment: “additivity in the family on X/Y”.
+**`Stacks.Chow.compFamily_add_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L260). The attribute's comment: “additivity in the family on X/Y”.
 
 > **Stacks Project, Tag 0H6I.** The composition of families of cycles on fibres is additive in
 > the family on `X/Y`: `(α₁ + α₂) ∘ β = α₁ ∘ β + α₂ ∘ β`.
@@ -25,7 +25,7 @@ theorem compFamily_add_left (f : X ⟶ Y) [LocallyOfFiniteType f] (g : Y ⟶ S)
     compFamily f g r e (α₁ + α₂) β = compFamily f g r e α₁ β + compFamily f g r e α₂ β
 ```
 
-**`Stacks.Chow.compFamily_add_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L272). The attribute's comment: “additivity in the family on Y/S”.
+**`Stacks.Chow.compFamily_add_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L272). The attribute's comment: “additivity in the family on Y/S”.
 
 > **Stacks Project, Tag 0H6I.** The composition of families of cycles on fibres is additive in
 > the family on `Y/S`: `α ∘ (β₁ + β₂) = α ∘ β₁ + α ∘ β₂`.
@@ -40,7 +40,7 @@ theorem compFamily_add_right (f : X ⟶ Y) [LocallyOfFiniteType f] (g : Y ⟶ S)
 
 [Tag 0H6J](https://stacks.math.columbia.edu/tag/0H6J) in the Stacks Project.
 
-**`Stacks.Chow.restrictedFamily_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L295).
+**`Stacks.Chow.restrictedFamily_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L295).
 
 > **Stacks Project, Tag 0H6J.** If `U ⊆ X`, `V ⊆ Y` and `W ⊆ S` are open with `f(U) ⊆ V` and
 > `g(V) ⊆ W`, then the restriction of the composition `α ∘ β` to `U` is the composition of the
@@ -69,7 +69,7 @@ theorem restrictedFamily_compFamily {U V W : Scheme.{u}} (f : X ⟶ Y) [LocallyO
 
 [Tag 0H6K](https://stacks.math.columbia.edu/tag/0H6K) in the Stacks Project.
 
-**`Stacks.Chow.compFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionBaseChange.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionBaseChange.lean#L353).
+**`Stacks.Chow.compFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionBaseChange.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionBaseChange.lean#L353).
 
 > The formation of the composition `α ∘ β` of a family of `r`-cycles on the fibres of `X/Y` with
 > a family of `e`-cycles on the fibres of `Y/S` is compatible with an arbitrary base change
@@ -93,7 +93,7 @@ theorem compFamily_baseChangeFamily (r e : ℕ) (α : FamilyOfCycles f r)
 
 [Tag 0H6L](https://stacks.math.columbia.edu/tag/0H6L) in the Stacks Project.
 
-**`Stacks.Chow.compFamily_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleComposition.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleComposition.lean#L419).
+**`Stacks.Chow.compFamily_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleComposition.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleComposition.lean#L423).
 
 > **Stacks Project, Tag 0H6L.** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes, both
 > locally of finite type, and let `r, e ≥ 0`. Let `F` be a quasi-coherent `𝒪_X`-module of finite
@@ -122,7 +122,7 @@ theorem compFamily_familyAssociatedToModule {X Y S : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0H6M](https://stacks.math.columbia.edu/tag/0H6M) in the Stacks Project.
 
-**`Stacks.Chow.compFamily_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean#L182).
+**`Stacks.Chow.compFamily_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean#L182).
 
 > **Stacks Project, Tag 0H6M.** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes, both
 > locally of finite type, and let `r, e ≥ 0`. Let `Z ⊆ X` be a closed subscheme of relative
@@ -148,7 +148,7 @@ theorem compFamily_familyAssociatedToClosedSubscheme {X Y S Z W : Scheme.{u}} (f
 
 [Tag 0H6N](https://stacks.math.columbia.edu/tag/0H6N) in the Stacks Project.
 
-**`Stacks.Chow.properPushforwardFamily_compFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionPushPull.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionPushPull.lean#L294).
+**`Stacks.Chow.properPushforwardFamily_compFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionPushPull.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionPushPull.lean#L294).
 
 > **Stacks Project, Tag 0H6N.** Let `S` be a scheme, let
 > ```
@@ -183,7 +183,7 @@ theorem properPushforwardFamily_compFamily_baseChangeFamily {X Y Y' S : Scheme.{
 
 [Tag 0H6P](https://stacks.math.columbia.edu/tag/0H6P) in the Stacks Project.
 
-**`Stacks.Chow.cap_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L378).
+**`Stacks.Chow.cap_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Composition.lean#L378).
 
 > **Stacks Project, Tag 0H6P.** Associativity of the action of families of cycles on fibres:
 > for `α` a family of `r`-cycles on the fibres of `X/Y`, `β` a family of `e`-cycles on the fibres
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.14, Tag 0H6H](https://stacks.math.columbia.edu/tag/0H6H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

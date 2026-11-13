@@ -8,7 +8,7 @@ proof: formalized
 
 # Cubic residue symbol
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html).
 
 ## Totalized prime-ideal cubic symbol
 
@@ -20,7 +20,7 @@ nonzero prime ideal whose absolute norm $N(P)$ is coprime to $3$, the value is $
 $a \in P$, and otherwise the unique $c \in \{1, \omega, \omega^2\}$ with
 $c \equiv a^{(N(P) - 1)/3} \pmod{P}$; for every other ideal $P$ the value is $1$.
 
-Formalized by `MetaMathlibExt.primeIdealCubicSymbolFactorRaw`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#prime-ideal-cubic-symbol-factor-raw).
+Formalized by `MetaMathlibExt.primeIdealCubicSymbolFactorRaw`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#prime-ideal-cubic-symbol-factor-raw).
 
 ## Totalized cubic residue symbol
 
@@ -31,7 +31,7 @@ otherwise it is the product, over the prime ideals $P$ in the factorization of t
 ideal $(n)$ counted with multiplicity, of the totalized prime-ideal cubic symbol of $a$ at $P$
 (which is $1$ unless $P$ is a nonzero prime ideal whose absolute norm is coprime to $3$).
 
-Formalized by `MetaMathlibExt.cubicResidueSymbolRaw`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#cubic-residue-symbol-raw).
+Formalized by `MetaMathlibExt.cubicResidueSymbolRaw`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 490](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L490). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#cubic-residue-symbol-raw).
 
 ## Cubic residue symbol at a prime ideal
 
@@ -43,7 +43,7 @@ coprime to $3$ and for $a \in \mathcal{O}_K$, the cubic residue symbol $(a/P)_3$
 $a \in P$, and otherwise the unique $c \in \{1, \omega, \omega^2\}$ with
 $c \equiv a^{(N(P) - 1)/3} \pmod{P}$.
 
-Formalized by `MetaMathlibExt.primeIdealCubicSymbol`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#prime-ideal-cubic-symbol).
+Formalized by `MetaMathlibExt.primeIdealCubicSymbol`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#prime-ideal-cubic-symbol).
 
 ## Cubic residue denominators
 
@@ -52,7 +52,7 @@ extension of $\mathbb{Q}$, with ring of integers $\mathcal{O}_K$. An element $n 
 is a cubic residue denominator when $n \neq 0$ and the absolute norm of the principal ideal
 $(n)$ is coprime to $3$.
 
-Formalized by `MetaMathlibExt.IsCubicResidueDenominator`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#is-cubic-residue-denominator).
+Formalized by `MetaMathlibExt.IsCubicResidueDenominator`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 659](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L659). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#is-cubic-residue-denominator).
 
 ## Cubic residue symbol modulo an element
 
@@ -67,7 +67,7 @@ $c \in \{1, \omega, \omega^2\}$ with $c \equiv a^{(N(P) - 1)/3} \pmod{P}$, where
 absolute norm of $P$. Each such $P$ is a nonzero prime ideal whose absolute norm is coprime
 to $3$.
 
-Formalized by `MetaMathlibExt.cubicResidueSymbol`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#cubic-residue-symbol).
+Formalized by `MetaMathlibExt.cubicResidueSymbol`, a definition declared in [MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean, line 664](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Cyclotomic/CubicResidueSymbol.lean#L664). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html#cubic-residue-symbol).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cubic residue symbol](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/power-residues-reciprocity/cubic-residue-symbol)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.25 Graded categories
 
-Section 22.25 of the Stacks Project, [Tag 09L1](https://stacks.math.columbia.edu/tag/09L1). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.25 of the Stacks Project, [Tag 09L1](https://stacks.math.columbia.edu/tag/09L1). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09L2, a definition
 
 [Tag 09L2](https://stacks.math.columbia.edu/tag/09L2) in the Stacks Project.
 
-**`CategoryTheory.GradedCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Category.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/Category.lean#L43).
+**`CategoryTheory.GradedCategory`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Category.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/Category.lean#L43).
 
 > A category graded over a ring `R`: every morphism module is the direct sum of its
 > integer-indexed homogeneous pieces, identities are homogeneous of degree zero, and composition
@@ -29,7 +29,7 @@ class GradedCategory (R : Type w) [Ring R] (C : Type u) [Category.{v} C] [Preadd
 
 [Tag 09L3](https://stacks.math.columbia.edu/tag/09L3) in the Stacks Project.
 
-**`CategoryTheory.Functor.Graded`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Functor.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/Functor.lean#L40).
+**`CategoryTheory.Functor.Graded`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Functor.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/Functor.lean#L40).
 
 > A functor between categories graded over `R` is graded if its maps on morphisms are
 > `R`-linear and preserve each homogeneous degree.
@@ -44,7 +44,7 @@ class Functor.Graded (R : Type w) [Ring R] {C : Type u₁} [Category.{v₁} C] [
 
 [Tag 09ML](https://stacks.math.columbia.edu/tag/09ML) in the Stacks Project.
 
-**`CategoryTheory.GradedCategory.DegreeZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L43).
+**`CategoryTheory.GradedCategory.DegreeZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L43).
 
 > The degree-zero category of a graded category. It has the same objects as the ambient
 > category, and its morphisms are the homogeneous morphisms of degree zero.
@@ -53,7 +53,7 @@ class Functor.Graded (R : Type w) [Ring R] {C : Type u₁} [Category.{v₁} C] [
 def DegreeZero (_R : Type w) (C : Type u)
 ```
 
-**`CategoryTheory.GradedCategory.DegreeZero.Hom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L51).
+**`CategoryTheory.GradedCategory.DegreeZero.Hom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L51).
 
 > The degree-zero homogeneous morphisms between two objects.
 
@@ -61,7 +61,7 @@ def DegreeZero (_R : Type w) (C : Type u)
 abbrev Hom (X Y : DegreeZero R C) : Type v
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L64).
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/DegreeZero.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/DegreeZero.lean#L64).
 
 > Composition and identities of a graded category restrict to its degree-zero morphisms.
 
@@ -73,7 +73,7 @@ instance : Category.{v} (DegreeZero R C)
 
 [Tag 09P2](https://stacks.math.columbia.edu/tag/09P2) in the Stacks Project.
 
-**`CategoryTheory.GradedCategory.GradedBinaryBiproductData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Biproduct.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/Biproduct.lean#L42).
+**`CategoryTheory.GradedCategory.GradedBinaryBiproductData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/Biproduct.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/Biproduct.lean#L42).
 
 > A chosen binary biproduct in a category graded over `R` whose inclusions and projections are
 > all homogeneous of degree zero.
@@ -87,7 +87,7 @@ structure GradedBinaryBiproductData (R : Type w) [Ring R] {C : Type u} [Category
 
 [Tag 09MM](https://stacks.math.columbia.edu/tag/09MM) in the Stacks Project.
 
-**`CategoryTheory.GradedObject.gradedCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L310). The attribute's comment: “graded\_category\_of\_graded\_objects”.
+**`CategoryTheory.GradedObject.gradedCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L310). The attribute's comment: “graded\_category\_of\_graded\_objects”.
 
 > The graded category of integer-graded objects in a preadditive category.
 
@@ -95,7 +95,7 @@ structure GradedBinaryBiproductData (R : Type w) [Ring R] {C : Type u} [Category
 noncomputable def gradedCategoryData : GradedCategoryData B
 ```
 
-**`CategoryTheory.GradedObject.degreeZeroEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L332).
+**`CategoryTheory.GradedObject.degreeZeroEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L332).
 
 > Degree-zero homogeneous maps of graded objects are precisely the componentwise maps: the
 > degree-zero category of the graded category of graded objects is canonically equivalent to the
@@ -128,7 +128,7 @@ noncomputable def degreeZeroEquivalence :
 
 [Tag 09MN](https://stacks.math.columbia.edu/tag/09MN) in the Stacks Project.
 
-**`ExternallyGraded.RightModuleCat.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L101). The attribute's comment: “graded\_category\_of\_graded\_modules”.
+**`ExternallyGraded.RightModuleCat.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L101). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > The degree-`n` right `𝒜`-linear maps between graded right modules.
 
@@ -137,7 +137,7 @@ def homogeneousMapSubmodule (M N : RightModuleCat 𝒜) (n : ℤ) :
     Submodule R (M.Total →ₗ[R] N.Total)
 ```
 
-**`ExternallyGraded.RightModuleCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L282). The attribute's comment: “graded\_category\_of\_graded\_modules”.
+**`ExternallyGraded.RightModuleCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L282). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > Graded right modules, with finite sums of homogeneous maps as morphisms.
 
@@ -145,7 +145,7 @@ def homogeneousMapSubmodule (M N : RightModuleCat 𝒜) (n : ℤ) :
 instance instCategory : Category (RightModuleCat 𝒜)
 ```
 
-**`ExternallyGraded.RightModuleCat.instGradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L361). The attribute's comment: “graded\_category\_of\_graded\_modules”.
+**`ExternallyGraded.RightModuleCat.instGradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L361). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > The category of graded right modules is graded by the degrees of homogeneous maps.
 
@@ -153,7 +153,7 @@ instance instCategory : Category (RightModuleCat 𝒜)
 instance instGradedCategory : GradedCategory R (RightModuleCat 𝒜)
 ```
 
-**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L380). The attribute's comment: “degree-zero morphisms”.
+**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L380). The attribute's comment: “degree-zero morphisms”.
 
 > The canonical identification of degree-zero morphisms with graded right-module maps.
 
@@ -164,7 +164,7 @@ noncomputable def degreeZeroHomEquiv (𝒜 : ExternallyGradedAlgebra.{u, v} R)
       ∀ f, (e f).1 = toLinearMap M N f.1 }
 ```
 
-**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L403). The attribute's comment: “identities”.
+**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L403). The attribute's comment: “identities”.
 
 > Under the canonical identification, the identity is the identity homogeneous map.
 
@@ -176,7 +176,7 @@ theorem degreeZeroHomEquiv_id (𝒜 : ExternallyGradedAlgebra.{u, v} R)
       HomogeneousMap.id M
 ```
 
-**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L414). The attribute's comment: “composition”.
+**`ExternallyGraded.RightModuleCat.degreeZeroHomEquiv_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L414). The attribute's comment: “composition”.
 
 > Under the canonical identification, composition is composition of homogeneous maps.
 
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.25, Tag 09L1](https://stacks.math.columbia.edu/tag/09L1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

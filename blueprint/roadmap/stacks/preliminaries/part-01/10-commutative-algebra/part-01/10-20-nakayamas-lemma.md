@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.20 Nakayama's lemma
 
-Section 10.20 of the Stacks Project, [Tag 07RC](https://stacks.math.columbia.edu/tag/07RC). 3 tags here are carried by 12 declarations of the repository (all in StacksCore) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.20 of the Stacks Project, [Tag 07RC](https://stacks.math.columbia.edu/tag/07RC). 3 tags here are carried by 14 declarations of the repository (12 in StacksCore and 2 in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00DV, a lemma
 
 [Tag 00DV](https://stacks.math.columbia.edu/tag/00DV) in the Stacks Project.
 
-**`LinearMap.exists_sub_one_mem_and_map_surjective_of_surjective_comp_mkQ`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L93). The attribute's comment: “(5)”.
+**`LinearMap.exists_sub_one_mem_and_map_surjective_of_surjective_comp_mkQ`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L93). The attribute's comment: “(5)”.
 
 > **Stacks 00DV (5)**: if `φ : N →ₗ[R] M` has `N/IN → M/IM` surjective and `M` is finite, then
 > some `r ∈ 1 + I` makes `φ` surjective after localizing at the powers of `r`.
@@ -36,7 +36,7 @@ theorem LinearMap.exists_sub_one_mem_and_map_surjective_of_surjective_comp_mkQ
       Function.Surjective (IsLocalizedModule.map (Submonoid.powers r) fN fM φ)
 ```
 
-**`LinearMap.exists_sub_one_mem_and_localizedMap_surjective_of_surjective_comp_mkQ`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L114). The attribute's comment: “(5)”.
+**`LinearMap.exists_sub_one_mem_and_localizedMap_surjective_of_surjective_comp_mkQ`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L114). The attribute's comment: “(5)”.
 
 > **Stacks 00DV (5)**, in the concrete `LocalizedModule` model: the tag's literal
 > "`N_f → M_f` is surjective".
@@ -52,7 +52,7 @@ theorem LinearMap.exists_sub_one_mem_and_localizedMap_surjective_of_surjective_c
       Function.Surjective (LocalizedModule.map (Submonoid.powers r) φ)
 ```
 
-**`Submodule.exists_sub_one_mem_and_span_image_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L136). The attribute's comment: “(7)”.
+**`Submodule.exists_sub_one_mem_and_span_image_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L136). The attribute's comment: “(7)”.
 
 > **Stacks 00DV (7)**: if `s` generates `M/IM` and `M` is finite, then some `r ∈ 1 + I` makes
 > `s` generate `M` after localizing at the powers of `r`.
@@ -78,7 +78,7 @@ theorem Submodule.exists_sub_one_mem_and_span_image_eq_top
       Submodule.span S (fM '' s) = ⊤
 ```
 
-**`Submodule.exists_sub_one_mem_and_span_image_mkLinearMap_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L158). The attribute's comment: “(7)”.
+**`Submodule.exists_sub_one_mem_and_span_image_mkLinearMap_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L158). The attribute's comment: “(7)”.
 
 > **Stacks 00DV (7)**, in the concrete `LocalizedModule` model: the tag's literal
 > "`x₁, …, xₙ` generate `M_f` over `R_f`".
@@ -93,7 +93,7 @@ theorem Submodule.exists_sub_one_mem_and_span_image_mkLinearMap_eq_top
         (LocalizedModule.mkLinearMap (Submonoid.powers r) M '' s) = ⊤
 ```
 
-**`Submodule.eq_bot_of_le_smul_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L170). The attribute's comment: “(9)”.
+**`Submodule.eq_bot_of_le_smul_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L170). The attribute's comment: “(9)”.
 
 > **Stacks 00DV (9)**: if `N ≤ I • N` and `I` is nilpotent, then `N = ⊥`.
 
@@ -102,7 +102,7 @@ theorem Submodule.eq_bot_of_le_smul_of_isNilpotent (I : Ideal R) (N : Submodule 
     (hI : IsNilpotent I) (hN : N ≤ I • N) : N = ⊥
 ```
 
-**`Submodule.le_of_le_smul_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L189). The attribute's comment: “(10)”.
+**`Submodule.le_of_le_smul_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L189). The attribute's comment: “(10)”.
 
 > **Stacks 00DV (10)**: if `N' ≤ N ⊔ I • N'` and `I` is nilpotent, then `N' ≤ N`.
 >
@@ -122,7 +122,7 @@ theorem Submodule.le_of_le_smul_of_isNilpotent {I : Ideal R} {N N' : Submodule R
     (hI : IsNilpotent I) (hNN : N' ≤ N ⊔ I • N') : N' ≤ N
 ```
 
-**`LinearMap.surjective_of_surjective_comp_mkQ_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L199). The attribute's comment: “(11)”.
+**`LinearMap.surjective_of_surjective_comp_mkQ_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L199). The attribute's comment: “(11)”.
 
 > **Stacks 00DV (11)**: if `φ : N →ₗ[R] M` has `N/IN → M/IM` surjective and `I` is nilpotent,
 > then `φ` is surjective.
@@ -134,7 +134,7 @@ theorem LinearMap.surjective_of_surjective_comp_mkQ_of_isNilpotent
     Function.Surjective φ
 ```
 
-**`Submodule.span_eq_top_of_span_image_mkQ_eq_top_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L214). The attribute's comment: “(12)”.
+**`Submodule.span_eq_top_of_span_image_mkQ_eq_top_of_isNilpotent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Nakayama.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L214). The attribute's comment: “(12)”.
 
 > **Stacks 00DV (12)**: if `s` generates `M/IM` and `I` is nilpotent, then `s` generates `M`.
 >
@@ -151,15 +151,46 @@ theorem Submodule.span_eq_top_of_span_image_mkQ_eq_top_of_isNilpotent
     Submodule.span R s = ⊤
 ```
 
+**`Submodule.span_eq_top_of_span_image_mkQ_eq_top_of_le_jacobson_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nakayama.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nakayama.lean#L39). The attribute's comment: “(8): elements of a finite module `M` generating `M/IM`, with `I ⊆ rad(R)`, generate `M`; stated for an arbitrary set `s`.”.
+
+> **Stacks 00DV (8)**: if `M` is finite, `I ≤ rad(R)`, and the image of `s` spans `M ⧸ I • ⊤`,
+> then `s` spans `M`.
+>
+> The hypothesis "`s` generates `M/IM`" is taken literally, as `s` spanning the quotient
+> `M ⧸ I • ⊤`. Finiteness of `s` is not used, so `s` is an arbitrary set; the tag's
+> `x₁, …, xₙ` is `s := Set.range x`, see
+> `Submodule.span_range_eq_top_of_span_range_mkQ_eq_top_of_le_jacobson_bot`.
+
+```lean
+theorem Submodule.span_eq_top_of_span_image_mkQ_eq_top_of_le_jacobson_bot
+    [Module.Finite R M] (I : Ideal R) (hI : I ≤ Ideal.jacobson ⊥) (s : Set M)
+    (hs : Submodule.span R
+      (Submodule.Quotient.mk '' s : Set (M ⧸ I • (⊤ : Submodule R M))) = ⊤) :
+    Submodule.span R s = ⊤
+```
+
+**`Submodule.span_range_eq_top_of_span_range_mkQ_eq_top_of_le_jacobson_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Nakayama.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Nakayama.lean#L52). The attribute's comment: “(8): the tag's literal form, for a family `x : Fin n → M`.”.
+
+> **Stacks 00DV (8)**, for a finite family: if `M` is finite, `I ≤ rad(R)`, and the images of
+> `x₁, …, xₙ` generate `M ⧸ I • ⊤`, then `x₁, …, xₙ` generate `M`.
+
+```lean
+theorem Submodule.span_range_eq_top_of_span_range_mkQ_eq_top_of_le_jacobson_bot
+    [Module.Finite R M] (I : Ideal R) (hI : I ≤ Ideal.jacobson ⊥) {n : ℕ} (x : Fin n → M)
+    (hx : Submodule.span R
+      (Set.range fun i ↦ (Submodule.Quotient.mk (x i) : M ⧸ I • (⊤ : Submodule R M))) = ⊤) :
+    Submodule.span R (Set.range x) = ⊤
+```
+
 Declarations registered for the tag:
 
-- [`LinearMap.surjective_of_surjective_comp_mkQ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.surjective_of_surjective_comp_mkQ#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Nakayama.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Nakayama.lean#L62) (StacksCore): “(6): `N → M` with `N/IN → M/IM` surjective, `M` finite and `I ⊆ rad(R)` forces `N → M` surjective. Mathlib swaps the names of source and target.”. References: EGA 0 (7.1.14), “sufficiency”; SGA 3 V (4.1.3), “more general”; SGA 4 XIII (1.5), “special case”.
+- [`LinearMap.surjective_of_surjective_comp_mkQ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.surjective_of_surjective_comp_mkQ#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Nakayama.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Nakayama.lean#L62) (StacksCore): “(6): `N → M` with `N/IN → M/IM` surjective, `M` finite and `I ⊆ rad(R)` forces `N → M` surjective. Mathlib swaps the names of source and target.”. References: EGA 0 (7.1.14), “sufficiency”; SGA 3 V (4.1.3), “more general”; SGA 4 XIII (1.5), “special case”.
 
 ## Tag 0GLX, a lemma
 
 [Tag 0GLX](https://stacks.math.columbia.edu/tag/0GLX) in the Stacks Project.
 
-**`Module.exists_localizedMap_away_surjective_of_localizedMap_surjective`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Support.lean#L82). The attribute's comment: “the footnote's special case (I), `I = 0`; for the general statement see `Submodule.exists_mem_addIdeal_and_span_image_eq_top` below”.
+**`Module.exists_localizedMap_away_surjective_of_localizedMap_surjective`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Support.lean#L82). The attribute's comment: “the footnote's special case (I), `I = 0`; for the general statement see `Submodule.exists_mem_addIdeal_and_span_image_eq_top` below”.
 
 > **Stacks 0GLX, special case (I) `I = 0`**: if `φ` becomes surjective after localizing at `S`,
 > it is already surjective after localizing at a single `f ∈ S`.
@@ -180,7 +211,7 @@ theorem Module.exists_localizedMap_away_surjective_of_localizedMap_surjective
     ∃ f ∈ S, Function.Surjective (LocalizedModule.map (Submonoid.powers f) φ)
 ```
 
-**`Submodule.exists_mem_addIdeal_and_span_image_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Support.lean#L172). References: EGA IV (2.5.8.8), “partial, special case”; SGA 3 V (4.1.3), “more general”; SGA 6 III (5.4.1), “special case”.
+**`Submodule.exists_mem_addIdeal_and_span_image_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Support.lean#L172). References: EGA IV (2.5.8.8), “partial, special case”; SGA 3 V (4.1.3), “more general”; SGA 6 III (5.4.1), “special case”.
 
 > **Stacks 0GLX**: if `s` generates `S⁻¹(M/IM)` and `M` is finite, then `s` generates `M_f`
 > for some `f ∈ S + I`.
@@ -216,7 +247,7 @@ theorem Submodule.exists_mem_addIdeal_and_span_image_eq_top
       Submodule.span Rf (g '' s) = ⊤
 ```
 
-**`Submodule.exists_mem_addIdeal_and_span_image_mkLinearMap_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Support.lean#L194).
+**`Submodule.exists_mem_addIdeal_and_span_image_mkLinearMap_eq_top`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Support.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Support.lean#L194).
 
 > **Stacks 0GLX**, in the concrete `LocalizedModule` model: the tag's literal `M_f`.
 
@@ -234,7 +265,7 @@ theorem Submodule.exists_mem_addIdeal_and_span_image_mkLinearMap_eq_top
 
 [Tag 0E8M](https://stacks.math.columbia.edu/tag/0E8M) in the Stacks Project.
 
-**`IsLocalRing.surjective_of_surjective_mapCotangent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/LocalRing/RingHom/Basic.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/RingHom/Basic.lean#L75).
+**`IsLocalRing.surjective_of_surjective_mapCotangent`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/LocalRing/RingHom/Basic.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/RingHom/Basic.lean#L75).
 
 > **Stacks 0E8M**: a local homomorphism `A → B` with `B` finite over `A`, `m_B` finitely
 > generated, surjective on residue fields, and surjective on cotangent spaces, is surjective.
@@ -261,4 +292,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.20, Tag 07RC](https://stacks.math.columbia.edu/tag/07RC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

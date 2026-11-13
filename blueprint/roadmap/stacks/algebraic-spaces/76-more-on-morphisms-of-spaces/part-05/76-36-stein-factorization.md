@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.36 Stein factorization
 
-Section 76.36 of the Stacks Project, [Tag 0A18](https://stacks.math.columbia.edu/tag/0A18). 10 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.36 of the Stacks Project, [Tag 0A18](https://stacks.math.columbia.edu/tag/0A18). 10 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A19, a lemma
 
 [Tag 0A19](https://stacks.math.columbia.edu/tag/0A19) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L174). The attribute's comment: “part (1): the morphism to the normalization is universally closed”.
+**`AlgebraicGeometry.Space.universallyClosed_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L174). The attribute's comment: “part (1): the morphism to the normalization is universally closed”.
 
 > **Stacks 0A19, clause (1): `f'` is universally closed.**  By Stacks 04NX part (1), since the
 > composite `f = f' ≫ π` is universally closed and `π` is separated.
@@ -25,7 +25,7 @@ theorem universallyClosed_toNormalizationIn
     UniversallyClosed B S hS (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompact_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L186). The attribute's comment: “part (1): the morphism to the normalization is quasi-compact”.
+**`AlgebraicGeometry.Space.isQuasiCompact_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L186). The attribute's comment: “part (1): the morphism to the normalization is quasi-compact”.
 
 > **Stacks 0A19, clause (1): `f'` is quasi-compact.**  By Stacks 03KS, since the composite
 > `f = f' ≫ π` is quasi-compact — a universally closed morphism is quasi-compact by
@@ -37,7 +37,7 @@ theorem isQuasiCompact_toNormalizationIn
     IsQuasiCompact B S hS (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L197). The attribute's comment: “part (1): the morphism to the normalization is quasi-separated”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L197). The attribute's comment: “part (1): the morphism to the normalization is quasi-separated”.
 
 > **Stacks 0A19, clause (1): `f'` is quasi-separated.**  By Stacks 03KR, since the composite
 > `f = f' ≫ π` is quasi-separated.  Nothing is required of `π`.
@@ -48,7 +48,7 @@ theorem isQuasiSeparated_toNormalizationIn
     IsQuasiSeparated B S hS (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L253). The attribute's comment: “part (1): the morphism to the normalization is surjective”.
+**`AlgebraicGeometry.Space.isSurjective_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L253). The attribute's comment: “part (1): the morphism to the normalization is surjective”.
 
 > **Stacks 0A19, clause (1): `f'` is surjective.**  The scheme-theoretic image of `f'` inside
 > the normalization `Y'` of `Y` in `X` is a closed subspace, hence integral over `Y`, through
@@ -63,7 +63,7 @@ theorem isSurjective_toNormalizationIn
     IsSurjective B S hS (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.isIntegralHom_normalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L274). The attribute's comment: “part (2): the normalization morphism is integral”.
+**`AlgebraicGeometry.Space.isIntegralHom_normalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L274). The attribute's comment: “part (2): the normalization morphism is integral”.
 
 > **Stacks 0A19, clause (2): `π` is integral.**  This is clause (1) of Stacks 0823 for the
 > same factorization, proved as
@@ -79,7 +79,7 @@ theorem isIntegralHom_normalizationIn
     IsIntegralHom B S hS (normalizationIn B S hS E f hqc').obj.hom.hom
 ```
 
-**`AlgebraicGeometry.Space.isRelativeNormalization_steinFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L288). The attribute's comment: “part (5): the intermediate space is the normalization of Y in X”.
+**`AlgebraicGeometry.Space.isRelativeNormalization_steinFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L288). The attribute's comment: “part (5): the intermediate space is the normalization of Y in X”.
 
 > **Stacks 0A19, clause (5): `Y'` is the normalization of `Y` in `X`.**  The factorization
 > `f = f' ≫ π` has the two properties of Stacks 0823 which characterize the normalization:
@@ -95,7 +95,7 @@ theorem isRelativeNormalization_steinFactorization
       (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.steinFactorization_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatBaseChange.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatBaseChange.lean#L297). The attribute's comment: “all five clauses and the compatibility with flat base change, for the factorization through the normalization of Stacks 0822”. References: EGA III (4.3.4), “more general”; EGA III (7.8.10), “partial”.
+**`AlgebraicGeometry.Space.steinFactorization_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatBaseChange.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatBaseChange.lean#L297). The attribute's comment: “all five clauses and the compatibility with flat base change, for the factorization through the normalization of Stacks 0822”. References: EGA III (4.3.4), “more general”; EGA III (7.8.10), “partial”.
 
 > **Stacks 0A19 (Stein factorization).**  Let `f : X ⟶ Y` be a universally closed and
 > quasi-separated morphism of algebraic spaces over `S`.  It is quasi-compact (Stacks 04XW); let
@@ -145,7 +145,7 @@ theorem steinFactorization_of_universallyClosed (huc : UniversallyClosed B S hS 
                       e.hom ≫ p = normalizationInQcqsHom B S hS f₁ hf₁qc hf₁qs
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L208). The attribute's comment: “clause (1): the morphism f' : X ⟶ Y' to the normalization of Y in X is surjective, for a universally closed f”.
+**`AlgebraicGeometry.Space.isSurjective_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L207). The attribute's comment: “clause (1): the morphism f' : X ⟶ Y' to the normalization of Y in X is surjective, for a universally closed f”.
 
 > **`f'` is surjective**, which is the remaining assertion of clause (1) of Stacks 0A19.  The
 > factorization `f = f' ≫ π` has the characterizing property of Stacks 0823
@@ -162,7 +162,7 @@ theorem isSurjective_toNormalizationInQcqs (hfuc : UniversallyClosed B S hS f.ho
 
 [Tag 0E1C](https://stacks.math.columbia.edu/tag/0E1C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAffine_finite_fibres_normalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqsFiniteFibres.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqsFiniteFibres.lean#L70).
+**`AlgebraicGeometry.Space.exists_isAffine_finite_fibres_normalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqsFiniteFibres.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqsFiniteFibres.lean#L70).
 
 > **Stacks 0E1C.**  Let `f : X ⟶ Y` be a universally closed and quasi-separated morphism of
 > algebraic spaces over `S` and `X ⟶ Y' ⟶ Y` its Stein factorization of Stacks 0A19, the
@@ -194,7 +194,7 @@ theorem exists_isAffine_finite_fibres_normalizationInQcqs {X Y : AlgebraicSpaces
 
 [Tag 0A1A](https://stacks.math.columbia.edu/tag/0A1A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.connectedSpace_geometricFiber_iff_forall_scheme_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricFibreConnected.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricFibreConnected.lean#L270).
+**`AlgebraicGeometry.Space.connectedSpace_geometricFiber_iff_forall_scheme_etaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricFibreConnected.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricFibreConnected.lean#L270).
 
 > **Stacks 0A1A.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S` of a big
 > fppf site and let `y` be a geometric point of `Y`. The geometric fibre of `f` above `y` is
@@ -222,7 +222,7 @@ theorem connectedSpace_geometricFiber_iff_forall_scheme_etaleNeighborhood
 
 [Tag 0A1B](https://stacks.math.columbia.edu/tag/0A1B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_normalizationInQcqsHom_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInFiniteOfProper.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInFiniteOfProper.lean#L251). The attribute's comment: “part (2): for f proper with Y locally Noetherian, the morphism pi : Y' -> Y from the normalization of Y in X (Stacks 0822), through which f factors as X -> Y' -> Y, is finite”.
+**`AlgebraicGeometry.Space.isFinite_normalizationInQcqsHom_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInFiniteOfProper.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInFiniteOfProper.lean#L251). The attribute's comment: “part (2): for f proper with Y locally Noetherian, the morphism pi : Y' -> Y from the normalization of Y in X (Stacks 0822), through which f factors as X -> Y' -> Y, is finite”.
 
 > **Stacks 0A1B, clause (2): `π : Y' ⟶ Y` is finite.**  For a proper morphism `f : X ⟶ Y` of
 > algebraic spaces with `Y` locally Noetherian, the normalization `ν : Y' ⟶ Y` of `Y` in `X`
@@ -236,7 +236,7 @@ theorem isFinite_normalizationInQcqsHom_of_isProper (hf : IsProper B S hS f.hom)
       (isQuasiSeparated_of_isSeparated B S hS hf.1)).hom
 ```
 
-**`AlgebraicGeometry.Space.isProper_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L362). The attribute's comment: “part (1): the morphism to the normalization is proper”.
+**`AlgebraicGeometry.Space.isProper_toNormalizationIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorization.lean#L362). The attribute's comment: “part (1): the morphism to the normalization is proper”.
 
 > **Stacks 0A1B, clause (1): `f'` is proper.**  By Stacks 04NX part (2), since the composite
 > `f = f' ≫ π` is proper and `π` is separated.
@@ -246,7 +246,7 @@ theorem isProper_toNormalizationIn (hf : IsProper B S hS f.hom) :
     IsProper B S hS (toNormalizationIn B S hS E C f hqc hqc' hid).left.hom
 ```
 
-**`AlgebraicGeometry.Space.isProper_and_connectedPullback_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianConnectedFibres.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianConnectedFibres.lean#L55). The attribute's comment: “part (1): for f proper with Y locally Noetherian, the morphism f' : X -> Y' to the normalization of Y in X (Stacks 0822), with f = pi o f', is proper and its geometric fibres are connected”.
+**`AlgebraicGeometry.Space.isProper_and_connectedPullback_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianConnectedFibres.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianConnectedFibres.lean#L55). The attribute's comment: “part (1): for f proper with Y locally Noetherian, the morphism f' : X -> Y' to the normalization of Y in X (Stacks 0822), with f = pi o f', is proper and its geometric fibres are connected”.
 
 > **Stacks 0A1B, clause (1).**  Let `f : X ⟶ Y` be a proper morphism of algebraic spaces with
 > `Y` locally Noetherian.  The morphism `f' : X ⟶ Y'` to the normalization of `Y` in `X`
@@ -269,15 +269,15 @@ theorem isProper_and_connectedPullback_toNormalizationInQcqs (f : X ⟶ Y)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isIso_fSharp_toNormalizationInQcqs`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqs.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L84) (StacksFrontier): “part (3): f'\_*O\_X = O\_\{Y'} for the factorization X -> Y' -> Y through the normalization of Stacks 0822 -- the structure map O\_\{Y'} -> f'\_*O\_X is an isomorphism of sheaves of rings; proved for every quasi-compact, quasi-separated, universally closed f, which a proper f is”.
-- [`AlgebraicGeometry.Space.isIso_pushforwardAlgebraMap_toNormalizationInQcqsOver_of_universallyClosed`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L90) (StacksFrontier): “part (4): Y' = Spec\_Y(f\_*O\_X) for the factorization through the normalization of Stacks 0822 -- pi is affine and the map pi\_*O\_\{Y'} -> f\_*O\_X induced by f' is an isomorphism of O\_Y-algebras; proved for every quasi-compact, quasi-separated, universally closed f, which a proper f is”.
-- [`AlgebraicGeometry.Space.isRelativeNormalization_normalizationInQcqs`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsUniversalProperty.lean#L116), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L96) (StacksFrontier): “part (5): the intermediate space Y' of the factorization X -> Y' -> Y is the normalization of Y in X, in the characterization of Stacks 0823; proved for every quasi-compact quasi-separated f, which a proper f is”.
+- [`AlgebraicGeometry.Space.isIso_fSharp_toNormalizationInQcqs`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationQcqs.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L86) (StacksFrontier): “part (3): f'\_*O\_X = O\_\{Y'} for the factorization X -> Y' -> Y through the normalization of Stacks 0822 -- the structure map O\_\{Y'} -> f'\_*O\_X is an isomorphism of sheaves of rings; proved for every quasi-compact, quasi-separated, universally closed f, which a proper f is”.
+- [`AlgebraicGeometry.Space.isIso_pushforwardAlgebraMap_toNormalizationInQcqsOver_of_universallyClosed`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L118), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L92) (StacksFrontier): “part (4): Y' = Spec\_Y(f\_*O\_X) for the factorization through the normalization of Stacks 0822 -- pi is affine and the map pi\_*O\_\{Y'} -> f\_*O\_X induced by f' is an isomorphism of O\_Y-algebras; proved for every quasi-compact, quasi-separated, universally closed f, which a proper f is”.
+- [`AlgebraicGeometry.Space.isRelativeNormalization_normalizationInQcqs`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsUniversalProperty.lean#L117), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationNoetherianQcqs.lean#L98) (StacksFrontier): “part (5): the intermediate space Y' of the factorization X -> Y' -> Y is the normalization of Y in X, in the characterization of Stacks 0823; proved for every quasi-compact quasi-separated f, which a proper f is”.
 
 ## Tag 0A1C, a theorem
 
 [Tag 0A1C](https://stacks.math.columbia.edu/tag/0A1C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L177). The attribute's comment: “clause (1): the morphism f' : X ⟶ Y' to the normalization of Y in X is proper, for a proper f and an arbitrary base Y”.
+**`AlgebraicGeometry.Space.isProper_toNormalizationInQcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L176). The attribute's comment: “clause (1): the morphism f' : X ⟶ Y' to the normalization of Y in X is proper, for a proper f and an arbitrary base Y”.
 
 > **Clause (1) of Stacks 0A1C: `f'` is proper.**  By Stacks 04NX part (2), since the composite
 > `f = f' ≫ π` is proper and `π` is separated.
@@ -287,7 +287,7 @@ theorem isProper_toNormalizationInQcqs (hf : IsProper B S hS f.hom) :
     IsProper B S hS (toNormalizationInQcqs f hfqc hfqs).hom
 ```
 
-**`AlgebraicGeometry.Space.steinFactorization_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L242). The attribute's comment: “clause (1) properness together with the surjectivity of f', clause (2) integrality of pi, clause (4) and clause (5), for a proper morphism of algebraic spaces over an arbitrary base. Clause (3) and the connectedness of the geometric fibres of f' in clause (1) are not asserted”. References: EGA III (7.8.10), “partial”.
+**`AlgebraicGeometry.Space.steinFactorization_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneral.lean#L241). The attribute's comment: “clause (1) properness together with the surjectivity of f', clause (2) integrality of pi, clause (4) and clause (5), for a proper morphism of algebraic spaces over an arbitrary base. Clause (3) and the connectedness of the geometric fibres of f' in clause (1) are not asserted”. References: EGA III (7.8.10), “partial”.
 
 > **Stacks 0A1C, clauses (1) properness, (2), (4) and (5).**  Let `f : X ⟶ Y` be a proper
 > morphism of algebraic spaces over `S`, let `Y'` be the normalization of `Y` in `X` and let
@@ -322,7 +322,7 @@ theorem steinFactorization_general (hf : IsProper B S hS f.hom) :
         (toNormalizationInQcqs f hfqc hfqs).hom
 ```
 
-**`AlgebraicGeometry.Space.steinFactorization_general_complete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneralRegistration.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneralRegistration.lean#L191). The attribute's comment: “all five clauses, for the factorization X ⟶ Y' ⟶ Y through the normalization of Y in X (0822): f' proper with connected geometric fibres, π integral, f'\_*O\_X = O\_\{Y'} as the invertibility of the structure map, Y' = Spec\_Y(f\_*O\_X) as π affine with π\_*O\_\{Y'} ≅ f\_*O\_X, and the 0823 characterization of the normalization”.
+**`AlgebraicGeometry.Space.steinFactorization_general_complete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneralRegistration.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationGeneralRegistration.lean#L191). The attribute's comment: “all five clauses, for the factorization X ⟶ Y' ⟶ Y through the normalization of Y in X (0822): f' proper with connected geometric fibres, π integral, f'\_*O\_X = O\_\{Y'} as the invertibility of the structure map, Y' = Spec\_Y(f\_*O\_X) as π affine with π\_*O\_\{Y'} ≅ f\_*O\_X, and the 0823 characterization of the normalization”.
 
 > **Stacks 0A1C (Stein factorization; general case).**  Let `f : X ⟶ Y` be a proper morphism
 > of algebraic spaces over a scheme `S`.  Let `π : Y' ⟶ Y` be the normalization of `Y` in `X`
@@ -363,7 +363,7 @@ theorem steinFactorization_general_complete (f : X ⟶ Y) (hf : IsProper B S hS 
 
 [Tag 0AYI](https://stacks.math.columbia.edu/tag/0AYI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_fSharp_and_connectedPullback_of_isNormal_of_isIntegralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperNormalIntegralBaseFibres.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperNormalIntegralBaseFibres.lean#L167).
+**`AlgebraicGeometry.Space.isIso_fSharp_and_connectedPullback_of_isNormal_of_isIntegralSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperNormalIntegralBaseFibres.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperNormalIntegralBaseFibres.lean#L167).
 
 > **Stacks 0AYI.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` such that
 >
@@ -408,7 +408,7 @@ theorem isIso_fSharp_and_connectedPullback_of_isNormal_of_isIntegralSpace
 
 [Tag 0E1D](https://stacks.math.columbia.edu/tag/0E1D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.lowerSemicontinuous_numberGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLowerSemicontinuous.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLowerSemicontinuous.lean#L475). References: EGA IV (15.5.9), “more general”.
+**`AlgebraicGeometry.Space.lowerSemicontinuous_numberGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLowerSemicontinuous.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLowerSemicontinuous.lean#L473). References: EGA IV (15.5.9), “more general”.
 
 > **Stacks 0E1D.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is proper,
 > flat and of finite presentation.  Then the function `n_{X/Y} : |Y| → ℕ∞` counting the geometric
@@ -427,7 +427,7 @@ theorem lowerSemicontinuous_numberGeometricConnectedComponents
 
 [Tag 0E1E](https://stacks.math.columbia.edu/tag/0E1E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyConstant_numberGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLocallyConstantUnconditional.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLocallyConstantUnconditional.lean#L192).
+**`AlgebraicGeometry.Space.isLocallyConstant_numberGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLocallyConstantUnconditional.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponentsLocallyConstantUnconditional.lean#L192).
 
 > **Stacks 0E1E.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is proper,
 > flat and of finite presentation, and whose geometric fibres are reduced. Then the function
@@ -446,7 +446,7 @@ theorem isLocallyConstant_numberGeometricConnectedComponents
 
 [Tag 0E0D](https://stacks.math.columbia.edu/tag/0E0D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_and_isEtale_normalizationInQcqsHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatProperFiniteEtale.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatProperFiniteEtale.lean#L50). The attribute's comment: “for the Stein factorization X ⟶ Y' ⟶ Y of 0A1C, Y' the normalization of Y in X: Y' ⟶ Y is finite and étale when f is proper, flat, of finite presentation, with geometrically reduced fibres”.
+**`AlgebraicGeometry.Space.isFinite_and_isEtale_normalizationInQcqsHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatProperFiniteEtale.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SteinFactorizationFlatProperFiniteEtale.lean#L50). The attribute's comment: “for the Stein factorization X ⟶ Y' ⟶ Y of 0A1C, Y' the normalization of Y in X: Y' ⟶ Y is finite and étale when f is proper, flat, of finite presentation, with geometrically reduced fibres”.
 
 > **Stacks 0E0D.**  Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S`, and let
 > `X ⟶ Y' ⟶ Y` be its Stein factorization (Stacks 0A1C): `Y'` is the normalization of `Y` in `X`,
@@ -470,7 +470,7 @@ theorem isFinite_and_isEtale_normalizationInQcqsHom
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_isOpenSubspace_isClosedSubspace_isProper_of_henselianPair`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClopenLiftOverHenselianPair.lean#L216), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperPartOverHenselianPairTag.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperPartOverHenselianPairTag.lean#L24) (StacksFrontier): “the whole tag, on the theorem proved in ClopenLiftOverHenselianPair”.
+- [`AlgebraicGeometry.Space.exists_isOpenSubspace_isClosedSubspace_isProper_of_henselianPair`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClopenLiftOverHenselianPair.lean#L216), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperPartOverHenselianPairTag.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperPartOverHenselianPairTag.lean#L24) (StacksFrontier): “the whole tag, on the theorem proved in ClopenLiftOverHenselianPair”.
 
 ## Depends on
 
@@ -479,4 +479,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.36, Tag 0A18](https://stacks.math.columbia.edu/tag/0A18)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

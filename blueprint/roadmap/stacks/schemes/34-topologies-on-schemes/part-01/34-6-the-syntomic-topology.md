@@ -8,13 +8,13 @@ proof: formalized
 
 # 34.6 The syntomic topology
 
-Section 34.6 of the Stacks Project, [Tag 0224](https://stacks.math.columbia.edu/tag/0224). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 34.6 of the Stacks Project, [Tag 0224](https://stacks.math.columbia.edu/tag/0224). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0225, a definition
 
 [Tag 0225](https://stacks.math.columbia.edu/tag/0225) in the Stacks Project.
 
-**`AlgebraicGeometry.IsSyntomicCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean#L51).
+**`AlgebraicGeometry.IsSyntomicCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean#L51).
 
 > A family `fᵢ : Tᵢ ⟶ T` is a **syntomic covering** if every `fᵢ` is
 > syntomic and their images cover `T`.
@@ -28,7 +28,7 @@ public abbrev IsSyntomicCovering {T : AlgebraicGeometry.Scheme.{u}}
 
 [Tag 0226](https://stacks.math.columbia.edu/tag/0226) in the Stacks Project.
 
-**`AlgebraicGeometry.isSyntomicCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L46). The attribute's comment: “smooth coverings”.
+**`AlgebraicGeometry.isSyntomicCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L46). The attribute's comment: “smooth coverings”.
 
 > **Stacks Project, Tag 0226.** Every smooth covering is a syntomic covering.
 
@@ -39,7 +39,7 @@ public theorem isSyntomicCovering_of_mem_smoothPrecoverage
     IsSyntomicCovering X f
 ```
 
-**`AlgebraicGeometry.isSyntomicCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L56). The attribute's comment: “étale coverings”.
+**`AlgebraicGeometry.isSyntomicCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L56). The attribute's comment: “étale coverings”.
 
 > **Stacks Project, Tag 0226.** Every étale covering is a syntomic covering.
 
@@ -50,7 +50,7 @@ public theorem isSyntomicCovering_of_mem_etalePrecoverage
     IsSyntomicCovering X f
 ```
 
-**`AlgebraicGeometry.isSyntomicCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L66). The attribute's comment: “Zariski coverings”.
+**`AlgebraicGeometry.isSyntomicCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/Coverings.lean#L66). The attribute's comment: “Zariski coverings”.
 
 > **Stacks Project, Tag 0226.** Every Zariski covering is a syntomic covering.
 
@@ -65,7 +65,7 @@ public theorem isSyntomicCovering_of_mem_zariskiPrecoverage
 
 [Tag 0227](https://stacks.math.columbia.edu/tag/0227) in the Stacks Project.
 
-**`AlgebraicGeometry.isSyntomicCovering_singleton_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L54). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isSyntomicCovering_singleton_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L54). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0227, part (1).** An isomorphism, regarded as a singleton family, is
 > a syntomic covering.
@@ -76,7 +76,7 @@ public lemma isSyntomicCovering_singleton_of_isIso {T' T : Scheme.{u}}
     IsSyntomicCovering (fun _ : Unit ↦ T') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.IsSyntomicCovering.comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L65). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.IsSyntomicCovering.comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L65). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0227, part (2).** Refining every member of a syntomic covering by a
 > syntomic covering gives another syntomic covering.
@@ -92,7 +92,7 @@ public lemma IsSyntomicCovering.comp {T : Scheme.{u}} {I : Type v}
       (fun ij ↦ g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.isSyntomicCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L82). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isSyntomicCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Stability.lean#L82). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 0227, part (3).** Pulling a syntomic covering back along an arbitrary
 > morphism gives a syntomic covering.
@@ -110,7 +110,7 @@ public lemma isSyntomicCovering_pullback {T : Scheme.{u}} {I : Type v}
 
 [Tag 0228](https://stacks.math.columbia.edu/tag/0228) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_affine_standardSyntomic_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/StandardRefinement.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/StandardRefinement.lean#L163).
+**`AlgebraicGeometry.exists_finite_affine_standardSyntomic_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/StandardRefinement.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/StandardRefinement.lean#L163).
 
 > **Stacks Project, Tag 0228.** A syntomic covering of an affine scheme has a finite
 > refinement by affine schemes which are standard syntomic over the target; each member of the
@@ -131,7 +131,7 @@ public theorem exists_finite_affine_standardSyntomic_refinement
 
 [Tag 0229](https://stacks.math.columbia.edu/tag/0229) in the Stacks Project.
 
-**`AlgebraicGeometry.IsStandardSyntomicCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean#L58).
+**`AlgebraicGeometry.IsStandardSyntomicCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/Coverings.lean#L58).
 
 > A family `fᵢ : Uᵢ ⟶ T` is a **standard syntomic covering** if its
 > indexing type is finite, its source and target schemes are affine, every `fᵢ`
@@ -146,7 +146,7 @@ public structure IsStandardSyntomicCovering {T : Scheme.{u}} {I : Type v}
 
 [Tag 03X1](https://stacks.math.columbia.edu/tag/03X1) in the Stacks Project.
 
-**`AlgebraicGeometry.BigSyntomicSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSite.lean#L69).
+**`AlgebraicGeometry.BigSyntomicSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSite.lean#L69).
 
 > **Stacks 03X1.** A big syntomic site consists of an initial set of
 > schemes and syntomic coverings, a size cutoff containing those schemes, and
@@ -161,7 +161,7 @@ public structure BigSyntomicSite
 
 [Tag 03X2](https://stacks.math.columbia.edu/tag/03X2) in the Stacks Project.
 
-**`AlgebraicGeometry.BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/ConstantSheaf.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/ConstantSheaf.lean#L61). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/ConstantSheaf.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/ConstantSheaf.lean#L61). The attribute's comment: “part (3)”.
 
 > A Zariski covering of an object of a big syntomic site is tautologically equivalent to one
 > of the site's own covering families.
@@ -175,7 +175,7 @@ public theorem BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_openCo
           (V.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.exists_siteCovering_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L78). The attribute's comment: “site\_refinement”.
+**`AlgebraicGeometry.exists_siteCovering_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L78). The attribute's comment: “site\_refinement”.
 
 > Every syntomic covering of an object of a big syntomic site admits a
 > refinement by a covering in the site.
@@ -190,7 +190,7 @@ public theorem exists_siteCovering_refining
         Nonempty ((𝒰.map B.inclusion).Hom E)
 ```
 
-**`AlgebraicGeometry.BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_standardCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L132). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_standardCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L132). The attribute's comment: “part (2)”.
 
 > A standard syntomic covering of an object of a big syntomic site is tautologically
 > equivalent to a covering belonging to the site.
@@ -209,7 +209,7 @@ public theorem BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_standa
 
 [Tag 03X3](https://stacks.math.columbia.edu/tag/03X3) in the Stacks Project.
 
-**`AlgebraicGeometry.BigSyntomicOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L48). The attribute's comment: “part (1), category”.
+**`AlgebraicGeometry.BigSyntomicOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L48). The attribute's comment: “part (1), category”.
 
 > The big syntomic category over `S` is the slice of the chosen big syntomic category at `S`.
 
@@ -217,7 +217,7 @@ public theorem BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_standa
 public abbrev BigSyntomicOver
 ```
 
-**`AlgebraicGeometry.BigSyntomicOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L62). The attribute's comment: “part (1), coverings”.
+**`AlgebraicGeometry.BigSyntomicOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L62). The attribute's comment: “part (1), coverings”.
 
 > A family in the slice is covering precisely when its underlying family is covering in the
 > chosen big syntomic site.
@@ -226,7 +226,7 @@ public abbrev BigSyntomicOver
 public abbrev IsCovering (E : Covering (BigSyntomicOver B S hS)) : Prop
 ```
 
-**`AlgebraicGeometry.BigAffineSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L78). The attribute's comment: “part (2), category”.
+**`AlgebraicGeometry.BigAffineSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L78). The attribute's comment: “part (2), category”.
 
 > The big affine syntomic category over `S` is the full subcategory of the big syntomic category
 > over `S` on affine source schemes.
@@ -235,7 +235,7 @@ public abbrev IsCovering (E : Covering (BigSyntomicOver B S hS)) : Prop
 public abbrev BigAffineSyntomic
 ```
 
-**`AlgebraicGeometry.BigAffineSyntomic.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L103). The attribute's comment: “part (2), coverings”.
+**`AlgebraicGeometry.BigAffineSyntomic.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/BigSiteOver.lean#L103). The attribute's comment: “part (2), coverings”.
 
 > A family in the big affine syntomic site is covering exactly when it is covering in the
 > localized big syntomic site and is a standard syntomic covering of schemes.
@@ -248,7 +248,7 @@ public abbrev IsCovering (E : Covering (BigAffineSyntomic B S hS)) : Prop
 
 [Tag 06VD](https://stacks.math.columbia.edu/tag/06VD) in the Stacks Project.
 
-**`AlgebraicGeometry.BigAffineSyntomic.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineSyntomicDenseSubsite.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineSyntomicDenseSubsite.lean#L352).
+**`AlgebraicGeometry.BigAffineSyntomic.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineSyntomicDenseSubsite.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffineSyntomicDenseSubsite.lean#L352).
 
 > **Stacks 06VD.** The inclusion of affine objects over `S` into the big
 > syntomic site over `S` is special cocontinuous. Its dense-subsite component
@@ -268,7 +268,7 @@ public theorem BigAffineSyntomic.inclusion_isSpecialCocontinuous
 
 [Tag 04HD](https://stacks.math.columbia.edu/tag/04HD) in the Stacks Project.
 
-**`AlgebraicGeometry.bigSyntomicMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L111). The attribute's comment: “big\_syntomic\_morphism”.
+**`AlgebraicGeometry.bigSyntomicMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L111). The attribute's comment: “big\_syntomic\_morphism”.
 
 > **Stacks Project, Tag 04HD.** The big syntomic morphism of topoi attached
 > to `f : T ⟶ S` in a chosen big syntomic site. Its defining functor sends
@@ -280,7 +280,7 @@ public noncomputable def bigSyntomicMorphismOfTopoi : MorphismOfTopoi
     (Sheaf (BigSyntomicOver.topology B S.obj S.property) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.bigSyntomicMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L133). The attribute's comment: “same\_morphism”.
+**`AlgebraicGeometry.bigSyntomicMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L133). The attribute's comment: “same\_morphism”.
 
 > **Stacks Project, Tag 04HD.** The big syntomic morphism of topoi defined by postcomposition
 > along `f` is the morphism of topoi induced by the continuous base-change functor
@@ -294,7 +294,7 @@ public noncomputable def bigSyntomicMorphismPushforwardIso :
         (BigSyntomicOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L143). The attribute's comment: “lower\_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L143). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek on big syntomic sheaves is left adjoint to
 > inverse image.
@@ -307,7 +307,7 @@ public noncomputable def bigSyntomicLowerShriekAdjunction :
         (bigSyntomicMorphismOfTopoi B f).inverseImage
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L160). The attribute's comment: “lower\_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L160). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek preserves fibre products.
 
@@ -319,7 +319,7 @@ public theorem bigSyntomicLowerShriek_preservesPullbacks :
         (BigSyntomicOver.topology B S.obj S.property))
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesEqualizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L171). The attribute's comment: “lower\_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesEqualizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L171). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek preserves equalizers.
 
@@ -333,11 +333,11 @@ public theorem bigSyntomicLowerShriek_preservesEqualizers :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L63) (StacksFrontier): “cocontinuity”.
-- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L66) (StacksFrontier): “right\_adjoint”.
-- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L67) (StacksFrontier): “right\_adjoint”.
-- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L70) (StacksFrontier): “inverse\_image”.
-- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L73) (StacksFrontier): “direct\_image”.
+- [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L63) (StacksFrontier): “cocontinuity”.
+- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L66) (StacksFrontier): “right\_adjoint”.
+- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L67) (StacksFrontier): “right\_adjoint”.
+- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L70) (StacksFrontier): “inverse\_image”.
+- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L73) (StacksFrontier): “direct\_image”.
 
 ## Depends on
 
@@ -346,4 +346,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 34.6, Tag 0224](https://stacks.math.columbia.edu/tag/0224)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

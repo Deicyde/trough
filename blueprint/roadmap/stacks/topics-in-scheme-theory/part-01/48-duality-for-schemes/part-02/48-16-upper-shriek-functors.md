@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.16 Upper shriek functors
 
-Section 48.16 of the Stacks Project, [Tag 0A9Y](https://stacks.math.columbia.edu/tag/0A9Y). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.16 of the Stacks Project, [Tag 0A9Y](https://stacks.math.columbia.edu/tag/0A9Y). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A9Y, the section
 
 [Tag 0A9Y](https://stacks.math.columbia.edu/tag/0A9Y) in the Stacks Project.
 
-**`Stacks.Duality.upperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/Basic.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/Basic.lean#L192).
+**`Stacks.Duality.upperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/Basic.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/Basic.lean#L192).
 
 > **Stacks Project, Tag 0A9Y.** The upper shriek functor of a compactification. Let `S` be a
 > quasi-compact quasi-separated scheme (in the source, a Noetherian one), let `f : X ⟶ Y` be a
@@ -32,7 +32,7 @@ def upperShriek :
 
 [Tag 0F42](https://stacks.math.columbia.edu/tag/0F42) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparatedFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean#L67). The attribute's comment: “the condition on the objects”. References: SGA 4 Vbis (5.3.1); SGA 4 XVII (7.0.1).
+**`AlgebraicGeometry.isSeparatedFiniteType`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean#L67). The attribute's comment: “the condition on the objects”. References: SGA 4 Vbis (5.3.1); SGA 4 XVII (7.0.1).
 
 > A morphism of schemes is separated and of finite type when it is separated, locally of
 > finite type and quasi-compact.
@@ -41,7 +41,7 @@ def upperShriek :
 abbrev isSeparatedFiniteType : MorphismProperty Scheme.{u}
 ```
 
-**`AlgebraicGeometry.FTS`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean#L80). The attribute's comment: “the category”. References: SGA 4 Vbis (5.3.1).
+**`AlgebraicGeometry.FTS`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SeparatedFiniteTypeCategory.lean#L80). The attribute's comment: “the category”. References: SGA 4 Vbis (5.3.1).
 
 > The category of schemes separated and of finite type over `S`: its objects are the
 > schemes over `S` whose structure morphism is separated and of finite type, and its
@@ -55,7 +55,7 @@ abbrev FTS (S : Scheme.{u}) : Type (u + 1)
 
 [Tag 0AA0](https://stacks.math.columbia.edu/tag/0AA0) in the Stacks Project.
 
-**`Stacks.Duality.compactificationUpperShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean#L203). The attribute's comment: “the canonical isomorphism f^!\_j = f^!\_k between the upper shriek functors (Stacks.Duality.compactificationUpperShriek, which is Stacks.Duality.upperShriek of Stacks 0A9Y, read on D^+\_QCoh(O\_Y) as in the source) of any two compactifications j, k of a morphism f : X -> Y of FTS S over a Noetherian S: the source's alpha\_\{g\_1}^\{-1} then alpha\_\{g\_2} for the two projections of the common refinement with dense interior of Stacks 0ATU. Nothing is carried: alpha\_g needs Stacks 0A9K for the square of g, which is Stacks.Duality.isIso\_refinementXi, and Stacks 0A9P (2) for it (G proper, Xbar\_2 Noetherian), which is Stacks.Duality.isIso\_refinementBaseChangePlus, both instances. Its value on the diagonal is the identity (Stacks.Duality.compactificationUpperShriekIso\_refl), it is transitive (Stacks.Duality.compactificationUpperShriekIso\_trans) and it is the source's alpha\_g for an interior-preserving g (Stacks.Duality.compactificationUpperShriekIso\_eq\_iso); Stacks.Duality.exists\_coherent\_compactificationUpperShriekIso collects these. The compactifications are arguments; that one exists is Stacks 0F41”.
+**`Stacks.Duality.compactificationUpperShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean#L203). The attribute's comment: “the canonical isomorphism f^!\_j = f^!\_k between the upper shriek functors (Stacks.Duality.compactificationUpperShriek, which is Stacks.Duality.upperShriek of Stacks 0A9Y, read on D^+\_QCoh(O\_Y) as in the source) of any two compactifications j, k of a morphism f : X -> Y of FTS S over a Noetherian S: the source's alpha\_\{g\_1}^\{-1} then alpha\_\{g\_2} for the two projections of the common refinement with dense interior of Stacks 0ATU. Nothing is carried: alpha\_g needs Stacks 0A9K for the square of g, which is Stacks.Duality.isIso\_refinementXi, and Stacks 0A9P (2) for it (G proper, Xbar\_2 Noetherian), which is Stacks.Duality.isIso\_refinementBaseChangePlus, both instances. Its value on the diagonal is the identity (Stacks.Duality.compactificationUpperShriekIso\_refl), it is transitive (Stacks.Duality.compactificationUpperShriekIso\_trans) and it is the source's alpha\_g for an interior-preserving g (Stacks.Duality.compactificationUpperShriekIso\_eq\_iso); Stacks.Duality.exists\_coherent\_compactificationUpperShriekIso collects these. The compactifications are arguments; that one exists is Stacks 0F41”.
 
 > **[Stacks, Tag 0AA0]: the canonical comparison of the upper shriek functors of two
 > compactifications.**  It is `α_{g₁}⁻¹ ≫ α_{g₂}` for the two projections of the common refinement
@@ -67,7 +67,7 @@ def compactificationUpperShriekIso (j k : CompactificationOf (Over.mk f.left)) :
     compactificationUpperShriek f j ≅ compactificationUpperShriek f k
 ```
 
-**`Stacks.Duality.exists_coherent_compactificationUpperShriekIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean#L328). The attribute's comment: “the upper shriek functor of a compactification (Stacks.Duality.compactificationUpperShriek, which is Stacks.Duality.upperShriek of Stacks 0A9Y) on D^+\_QCoh(O\_Y), the source's own domain for it, is independent of the compactification up to canonical isomorphism: a family of isomorphisms between the functors of any two compactifications that is the identity on the diagonal, transitive, and equal to the source's alpha\_g (Stacks.Duality.refinementIso) whenever the two compactifications are joined by an interior-preserving morphism g. Nothing is carried; the family is Stacks.Duality.compactificationUpperShriekIso”.
+**`Stacks.Duality.exists_coherent_compactificationUpperShriekIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekIndependence.lean#L328). The attribute's comment: “the upper shriek functor of a compactification (Stacks.Duality.compactificationUpperShriek, which is Stacks.Duality.upperShriek of Stacks 0A9Y) on D^+\_QCoh(O\_Y), the source's own domain for it, is independent of the compactification up to canonical isomorphism: a family of isomorphisms between the functors of any two compactifications that is the identity on the diagonal, transitive, and equal to the source's alpha\_g (Stacks.Duality.refinementIso) whenever the two compactifications are joined by an interior-preserving morphism g. Nothing is carried; the family is Stacks.Duality.compactificationUpperShriekIso”.
 
 > **[Stacks, Tag 0AA0]: the upper shriek functor is independent of the compactification, by a
 > coherent family of isomorphisms.**  There is a family of isomorphisms `e j k : f^!_j ≅ f^!_k`
@@ -96,7 +96,7 @@ theorem exists_coherent_compactificationUpperShriekIso :
 
 [Tag 0ATX](https://stacks.math.columbia.edu/tag/0ATX) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekCompIsoAtModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean#L1073). The attribute's comment: “the canonical isomorphism (g o f)^! = f^! o g^! of upper shriek functors for composable morphisms f : X -> Y, g : Y -> Z of FTS S over a Noetherian S, at arbitrary compactifications k of g o f, j of f and i of g, as functors out of D^+\_QCoh(O\_Z), with g^! read in D^+\_QCoh(O\_Y) (Stacks 0A9I) and each f^! the functor Stacks.Duality.compactificationUpperShriek of Stacks 0A9Y/0AA0. It is the source's construction for a choice of compactifications through i: (j' o j)^* a b = j^* (j')^* a b -> j^* a' i^* b via the base change map of Stacks 0AA6, invertible by Stacks 0A9P (2), read through the canonical comparisons of Stacks 0AA0. Canonicity is proved, not assumed: Stacks.Duality.upperShriekCompIsoAtModel\_choice says it is the source's isomorphism for every choice (the second half of the source's proof: the chase of squares A..F through Stacks 0ATQ and 0ATR, and a dominating choice from Stacks 0ATU), and Stacks.Duality.upperShriekCompIsoAtModel\_naturality says it is compatible with the comparisons of Stacks 0AA0 in all three compactifications. The compactifications are arguments, as in Stacks 0AA0; that they exist is Stacks 0F41”.
+**`Stacks.Duality.upperShriekCompIsoAtModel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean, line 1079](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean#L1079). The attribute's comment: “the canonical isomorphism (g o f)^! = f^! o g^! of upper shriek functors for composable morphisms f : X -> Y, g : Y -> Z of FTS S over a Noetherian S, at arbitrary compactifications k of g o f, j of f and i of g, as functors out of D^+\_QCoh(O\_Z), with g^! read in D^+\_QCoh(O\_Y) (Stacks 0A9I) and each f^! the functor Stacks.Duality.compactificationUpperShriek of Stacks 0A9Y/0AA0. It is the source's construction for a choice of compactifications through i: (j' o j)^* a b = j^* (j')^* a b -> j^* a' i^* b via the base change map of Stacks 0AA6, invertible by Stacks 0A9P (2), read through the canonical comparisons of Stacks 0AA0. Canonicity is proved, not assumed: Stacks.Duality.upperShriekCompIsoAtModel\_choice says it is the source's isomorphism for every choice (the second half of the source's proof: the chase of squares A..F through Stacks 0ATQ and 0ATR, and a dominating choice from Stacks 0ATU), and Stacks.Duality.upperShriekCompIsoAtModel\_naturality says it is compatible with the comparisons of Stacks 0AA0 in all three compactifications. The compactifications are arguments, as in Stacks 0AA0; that they exist is Stacks 0F41”.
 
 > **[Stacks, Tag 0ATX]: the canonical isomorphism `(g ∘ f)^! ≅ f^! ∘ g^!`**, for any
 > compactifications `k` of `g ∘ f`, `j` of `f` and `i` of `g`. It is the source's construction for a
@@ -110,7 +110,7 @@ def upperShriekCompIsoAtModel (k : CompactificationOf (Over.mk (f ≫ g).left))
       upperShriekPlusAtModel i ⋙ compactificationUpperShriek f j
 ```
 
-**`Stacks.Duality.exists_canonical_upperShriekCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean, line 1136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean#L1136). The attribute's comment: “existence and canonicity of the isomorphism (g o f)^! = f^! o g^! for composable morphisms of FTS S over a Noetherian S, the upper shriek functors being those of Stacks 0AA0 on D^+\_QCoh and g^! read in D^+\_QCoh(O\_Y): a family of isomorphisms indexed by compactifications of g o f, f and g that equals the source's construction for every choice of compactifications (Stacks.Duality.CompositionData.compIsoAPI) and is compatible with the comparisons of Stacks 0AA0 in all three compactifications. Nothing is assumed beyond the compactifications themselves, which are arguments as in Stacks 0AA0 (their existence is Stacks 0F41)”.
+**`Stacks.Duality.exists_canonical_upperShriekCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekComposition.lean#L1142). The attribute's comment: “existence and canonicity of the isomorphism (g o f)^! = f^! o g^! for composable morphisms of FTS S over a Noetherian S, the upper shriek functors being those of Stacks 0AA0 on D^+\_QCoh and g^! read in D^+\_QCoh(O\_Y): a family of isomorphisms indexed by compactifications of g o f, f and g that equals the source's construction for every choice of compactifications (Stacks.Duality.CompositionData.compIsoAPI) and is compatible with the comparisons of Stacks 0AA0 in all three compactifications. Nothing is assumed beyond the compactifications themselves, which are arguments as in Stacks 0AA0 (their existence is Stacks 0F41)”.
 
 > **[Stacks, Tag 0ATX]: there is a canonical isomorphism `(g ∘ f)^! → f^! ∘ g^!`.** For
 > composable morphisms `f : X ⟶ Y`, `g : Y ⟶ Z` of `AlgebraicGeometry.FTS S` over a Noetherian `S`
@@ -135,7 +135,7 @@ theorem exists_canonical_upperShriekCompIso :
 
 [Tag 0ATY](https://stacks.math.columbia.edu/tag/0ATY) in the Stacks Project.
 
-**`Stacks.Duality.exists_upperShriekPseudofunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekPseudofunctor/Pseudofunctor.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekPseudofunctor/Pseudofunctor.lean#L222). The attribute's comment: “the full statement: Stacks.Duality.upperShriekPseudofunctor is a pseudofunctor LocallyDiscrete (FTS S)^op -> Cat (Mathlib's Pseudofunctor, i.e. Categories 003N with conditions (a) invertibility, (b), (c) unit laws and (d) cocycle condition as its axioms) over a Noetherian S, with object X |-> D^+\_QCoh(O\_X), morphism f |-> f^! of Stacks 0AA0 (the functor Stacks.Duality.compactificationUpperShriek of a compactification of f, read in D^+\_QCoh, Stacks 0A9I; compactifications exist by Stacks 0F41) and compositor the canonical isomorphism (g o f)^! = f^! o g^! of Stacks 0ATX (Stacks.Duality.upperShriekCompIsoAtModel). The cocycle condition (d) is the source's proof, Stacks.Duality.upperShriekCompIsoAtModel\_cocycle: a choice Zbar over T, Ybar over Zbar, Xbar over Ybar (0F41, 0A9Z), the squares A, B, C, and gamma\_\{A+B} = gamma\_A o gamma\_B (0ATR), gamma\_\{B+C} = gamma\_C o gamma\_B (0ATQ), gamma\_A and gamma\_C commuting by naturality. The unit (1\_X)^! = id, which the source does not specify, is the one determined by the compositor of 1\_X, and (b), (c) follow from (d). Nothing is assumed”.
+**`Stacks.Duality.exists_upperShriekPseudofunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekPseudofunctor/Pseudofunctor.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekPseudofunctor/Pseudofunctor.lean#L222). The attribute's comment: “the full statement: Stacks.Duality.upperShriekPseudofunctor is a pseudofunctor LocallyDiscrete (FTS S)^op -> Cat (Mathlib's Pseudofunctor, i.e. Categories 003N with conditions (a) invertibility, (b), (c) unit laws and (d) cocycle condition as its axioms) over a Noetherian S, with object X |-> D^+\_QCoh(O\_X), morphism f |-> f^! of Stacks 0AA0 (the functor Stacks.Duality.compactificationUpperShriek of a compactification of f, read in D^+\_QCoh, Stacks 0A9I; compactifications exist by Stacks 0F41) and compositor the canonical isomorphism (g o f)^! = f^! o g^! of Stacks 0ATX (Stacks.Duality.upperShriekCompIsoAtModel). The cocycle condition (d) is the source's proof, Stacks.Duality.upperShriekCompIsoAtModel\_cocycle: a choice Zbar over T, Ybar over Zbar, Xbar over Ybar (0F41, 0A9Z), the squares A, B, C, and gamma\_\{A+B} = gamma\_A o gamma\_B (0ATR), gamma\_\{B+C} = gamma\_C o gamma\_B (0ATQ), gamma\_A and gamma\_C commuting by naturality. The unit (1\_X)^! = id, which the source does not specify, is the one determined by the compositor of 1\_X, and (b), (c) follow from (d). Nothing is assumed”.
 
 > **[Stacks, Tag 0ATY]**: in Situation 0F42 the constructions of [Stacks, Tag 0AA0] and
 > [Stacks, Tag 0ATX] define a pseudofunctor from `FTS S` into the 2-category of categories: there
@@ -163,7 +163,7 @@ theorem exists_upperShriekPseudofunctor :
 
 [Tag 0B6T](https://stacks.math.columbia.edu/tag/0B6T) in the Stacks Project.
 
-**`Stacks.Duality.upperShriekCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean#L175). The attribute's comment: “the map mu\_\{f,K} of Lemma 48.16.5, at the compactification j from which Stacks.Duality.upperShriek computes f^!”.
+**`Stacks.Duality.upperShriekCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean#L175). The attribute's comment: “the map mu\_\{f,K} of Lemma 48.16.5, at the compactification j from which Stacks.Duality.upperShriek computes f^!”.
 
 > **Stacks Project, Tag 0B6T (Lemma 48.16.5).** Let `f : X ⟶ Y` be a morphism of
 > `AlgebraicGeometry.FTS S` and let `j` be a compactification of `X` over `Y`, with ambient scheme
@@ -183,7 +183,7 @@ public def upperShriekCompareWithPullback (K : quasiCoherentDerivedCategory Y.le
       (upperShriek f j).obj K
 ```
 
-**`Stacks.Duality.upperShriekCompareWithPullback_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean#L206). The attribute's comment: “functoriality of mu\_\{f,K} in K”.
+**`Stacks.Duality.upperShriekCompareWithPullback_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparison.lean#L206). The attribute's comment: “functoriality of mu\_\{f,K} in K”.
 
 > **The map `μ_{f,K}` of [Stacks, Tag 0B6T] is functorial in `K`.** Each of its three factors
 > is natural: the composition formula for derived pullback, the monoidality of `Lj^*`, and
@@ -200,7 +200,7 @@ public theorem upperShriekCompareWithPullback_naturality
         (upperShriek f j).map h
 ```
 
-**`Stacks.Duality.upperShriekCompareWithPullback_comp_upperShriekPlusIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonical.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonical.lean#L670). The attribute's comment: “independence of the compactification”.
+**`Stacks.Duality.upperShriekCompareWithPullback_comp_upperShriekPlusIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonical.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonical.lean#L670). The attribute's comment: “independence of the compactification”.
 
 > **[Stacks, Tag 0B6T]: `μ_{f,K}` does not depend on the compactification.** For two
 > compactifications `j₁`, `j₂` of `X` over `Y` and `K ∈ D⁺_QCoh(𝒪_Y)`, `μ_{f,K}` for `j₁`, followed
@@ -219,7 +219,7 @@ theorem upperShriekCompareWithPullback_comp_upperShriekPlusIso
         upperShriekCompareWithPullbackCanonical f j₂ K.obj
 ```
 
-**`Stacks.Duality.upperShriekCompareWithPullbackCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean#L85). The attribute's comment: “the maps μ\_\{f,K}”.
+**`Stacks.Duality.upperShriekCompareWithPullbackCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean#L85). The attribute's comment: “the maps μ\_\{f,K}”.
 
 > **Stacks Project, Tag 0B6T (Lemma 48.16.5).** Let `f : X ⟶ Y` be a morphism of
 > `AlgebraicGeometry.FTS S` and let `j` be a compactification of `X` over `Y`, with ambient scheme
@@ -239,7 +239,7 @@ public def upperShriekCompareWithPullbackCanonical (K : quasiCoherentDerivedCate
       (upperShriek f j).obj K
 ```
 
-**`Stacks.Duality.upperShriekCompareWithPullbackCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean#L108). The attribute's comment: “functoriality of μ\_\{f,K} in K”.
+**`Stacks.Duality.upperShriekCompareWithPullbackCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonCanonicalMaps.lean#L108). The attribute's comment: “functoriality of μ\_\{f,K} in K”.
 
 > **The map `μ_{f,K}` of [Stacks, Tag 0B6T] is functorial in `K`.** Each of its three factors
 > is natural: the composition formula for derived pullback, the monoidality of `Lj^*`, and
@@ -256,7 +256,7 @@ public theorem upperShriekCompareWithPullbackCanonical_naturality
         (upperShriek f j).map h
 ```
 
-**`Stacks.Duality.upperShriekCompareWithPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonComp.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonComp.lean#L549). The attribute's comment: “compatibility with composition”.
+**`Stacks.Duality.upperShriekCompareWithPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonComp.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekPullbackComparisonComp.lean#L549). The attribute's comment: “compatibility with composition”.
 
 > **Stacks Project, Tag 0B6T (Lemma 48.16.5), compatibility with composition.** Let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of `AlgebraicGeometry.FTS S` with `S` Noetherian, and
@@ -318,4 +318,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.16, Tag 0A9Y](https://stacks.math.columbia.edu/tag/0A9Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

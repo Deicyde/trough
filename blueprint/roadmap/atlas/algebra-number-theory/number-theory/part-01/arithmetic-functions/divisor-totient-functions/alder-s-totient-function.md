@@ -8,7 +8,7 @@ proof: formalized
 
 # Alder's totient function
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html).
 
 ## Alder's totient with second argument 2
 
@@ -17,7 +17,7 @@ second argument $2$ is the arithmetic function $g : \mathbb{N} \to \mathbb{N}$ s
 natural number $k$ to the number of natural numbers $r < k$ with $\gcd(k, r) = 1$ and
 $\gcd(k, 2r+1) = 1$. In particular $g(0) = 0$, since there is no natural number $r < 0$.
 
-Formalized by `ArithmeticFunction.alderTotientTwo`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two).
+Formalized by `ArithmeticFunction.alderTotientTwo`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two).
 
 ## Alder's totient at a successor as a count over an inclusive range
 
@@ -25,7 +25,7 @@ For every natural
 number $k$, Alder's totient $g$ with second argument $2$ satisfies that $g(k+1)$ is the number
 of natural numbers $r \le k$ with $\gcd(r, k+1) = 1$ and $\gcd(2r+1, k+1) = 1$.
 
-Formalized by `ArithmeticFunction.alderTotientTwo_succ_Iic_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two-succ-iic-apply).
+Formalized by `ArithmeticFunction.alderTotientTwo_succ_Iic_apply`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two-succ-iic-apply).
 
 ## Alder's totient with second argument $2$ is at most Euler's totient
 
@@ -33,7 +33,7 @@ For every natural
 number $k$, Alder's totient $g(k)$ with second argument $2$ is at most Euler's totient
 $\varphi(k)$.
 
-Formalized by `ArithmeticFunction.alderTotientTwo_le_totient`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two-le-totient).
+Formalized by `ArithmeticFunction.alderTotientTwo_le_totient`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/AlderTotient.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html#alder-totient-two-le-totient).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Alder's totient function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/alder-s-totient-function)

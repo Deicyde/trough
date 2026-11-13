@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.11 Formally smooth morphisms
 
-Section 37.11 of the Stacks Project, [Tag 02GZ](https://stacks.math.columbia.edu/tag/02GZ). 13 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.11 of the Stacks Project, [Tag 02GZ](https://stacks.math.columbia.edu/tag/02GZ). 13 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02H0, a definition
 
 [Tag 02H0](https://stacks.math.columbia.edu/tag/02H0) in the Stacks Project.
 
-**`Stacks.Smooth.FormallySmoothScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothScheme.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothScheme.lean#L103). References: EGA IV (17.1.1); SGA 3 XVII (5.7.1).
+**`Stacks.Smooth.FormallySmoothScheme`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothScheme.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothScheme.lean#L103). References: EGA IV (17.1.1); SGA 3 XVII (5.7.1).
 
 > A morphism of schemes `f : X ⟶ S` is **formally smooth** when it has the infinitesimal
 > lifting property: for every first-order thickening `i : T ⟶ T'` of affine schemes, every
@@ -36,7 +36,7 @@ abbrev FormallySmoothScheme {X S : Scheme.{u}} (f : X ⟶ S) : Prop
 
 [Tag 02H1](https://stacks.math.columbia.edu/tag/02H1) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallySmooth.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L60).
+**`AlgebraicGeometry.FormallySmooth.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L60).
 
 > A composition of formally smooth morphisms is formally smooth.
 
@@ -50,7 +50,7 @@ theorem FormallySmooth.comp {X Y S : Scheme.{u}} {f : X ⟶ Y} {g : Y ⟶ S}
 
 [Tag 02H2](https://stacks.math.columbia.edu/tag/02H2) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallySmooth.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L70).
+**`AlgebraicGeometry.FormallySmooth.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L70).
 
 > An arbitrary base change of a formally smooth morphism is formally smooth.
 
@@ -64,7 +64,7 @@ theorem FormallySmooth.pullback_snd {X S S' : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 02HH](https://stacks.math.columbia.edu/tag/02HH) in the Stacks Project.
 
-**`AlgebraicGeometry.formallyEtale_iff_formallySmooth_and_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean#L46). References: EGA IV (17.1.1), “étale ⟺ smooth+unram”.
+**`AlgebraicGeometry.formallyEtale_iff_formallySmooth_and_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean#L46). References: EGA IV (17.1.1), “étale ⟺ smooth+unram”.
 
 > A morphism of schemes is formally étale if and only if it is formally smooth and formally
 > unramified.
@@ -79,7 +79,7 @@ theorem formallyEtale_iff_formallySmooth_and_formallyUnramified
 
 [Tag 02H3](https://stacks.math.columbia.edu/tag/02H3) in the Stacks Project.
 
-**`AlgebraicGeometry.FormallySmooth.resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L82).
+**`AlgebraicGeometry.FormallySmooth.resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L82).
 
 > Formal smoothness is preserved by restriction to compatible open subschemes.
 
@@ -90,7 +90,7 @@ theorem FormallySmooth.resLE {X S : Scheme.{u}} {f : X ⟶ S}
     FormallySmooth (f.resLE V U hUV)
 ```
 
-**`Stacks.Smooth.FormallySmooth.resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothCriterion.lean#L208).
+**`Stacks.Smooth.FormallySmooth.resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothCriterion.lean#L208).
 
 > **Stacks Project, Tag 02H3.** Formal smoothness passes to the restriction of a morphism to
 > opens of the source and of the target. The point is that a first-order thickening of affine
@@ -106,7 +106,7 @@ theorem FormallySmooth.resLE {X S : Scheme.{u}} {f : X ⟶ S} (hf : FormallySmoo
 
 [Tag 02H4](https://stacks.math.columbia.edu/tag/02H4) in the Stacks Project.
 
-**`AlgebraicGeometry.formallySmooth_iff_appTop_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L92).
+**`AlgebraicGeometry.formallySmooth_iff_appTop_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Basic.lean#L92).
 
 > A morphism of affine schemes is formally smooth if and only if its map on global sections is
 > formally smooth.
@@ -121,7 +121,7 @@ theorem formallySmooth_iff_appTop_formallySmooth
 
 [Tag 02H6](https://stacks.math.columbia.edu/tag/02H6) in the Stacks Project.
 
-**`Stacks.Smooth.smooth_iff_locallyOfFinitePresentation_and_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/SmoothFormallySmoothTag.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/SmoothFormallySmoothTag.lean#L684). References: EGA IV (17.3.2), “(ii) smooth”; EGA 0 (19.0.1); EGA IV (17.3.1); SGA 3 XI (1.1); SGA 3 XV (1.1), “more general”.
+**`Stacks.Smooth.smooth_iff_locallyOfFinitePresentation_and_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/SmoothFormallySmoothTag.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/SmoothFormallySmoothTag.lean#L684). References: EGA IV (17.3.2), “(ii) smooth”; EGA 0 (19.0.1); EGA IV (17.3.1); SGA 3 XI (1.1); SGA 3 XV (1.1), “more general”.
 
 > **A scheme morphism is smooth exactly when it is locally of finite presentation and formally
 > smooth.** This is the infinitesimal lifting criterion for smoothness.
@@ -141,7 +141,7 @@ theorem smooth_iff_locallyOfFinitePresentation_and_formallySmooth {X S : Scheme.
 
 [Tag 06B5](https://stacks.math.columbia.edu/tag/06B5) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyProjective_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean#L78). References: EGA IV (17.2.3), “(i) locally projective”.
+**`AlgebraicGeometry.isLocallyProjective_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean#L78). References: EGA IV (17.2.3), “(i) locally projective”.
 
 > **Stacks 06B5.** The sheaf of relative differentials of a formally smooth morphism of
 > schemes is locally projective on its source. This is **Stacks 061I** for a morphism of
@@ -157,7 +157,7 @@ theorem isLocallyProjective_relativeDifferentials {X S : Scheme.{u}} {f : X ⟶ 
 
 [Tag 0D0E](https://stacks.math.columbia.edu/tag/0D0E) in the Stacks Project.
 
-**`Stacks.Cohomology.Affine.isZero_firstCohomology_sheafHom_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/InternalHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/InternalHom.lean#L168).
+**`Stacks.Cohomology.Affine.isZero_firstCohomology_sheafHom_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/InternalHom.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineCohomologyVanishing/InternalHom.lean#L168).
 
 > **The first cohomology of an internal hom out of a locally projective module on an affine
 > scheme vanishes.** The source is a retract of a free module, so the internal hom is a retract of
@@ -176,7 +176,7 @@ theorem isZero_firstCohomology_sheafHom_of_isLocallyProjective (T : Scheme.{u}) 
 
 [Tag 0D0F](https://stacks.math.columbia.edu/tag/0D0F) in the Stacks Project.
 
-**`Stacks.Smooth.formallySmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothTFAE.lean, line 833](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothTFAE.lean#L833). The attribute's comment: “all four criteria, for an arbitrary morphism of schemes”.
+**`Stacks.Smooth.formallySmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothTFAE.lean, line 833](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/FormallySmoothTFAE.lean#L833). The attribute's comment: “all four criteria, for an arbitrary morphism of schemes”.
 
 > **[Stacks Project, Tag 0D0F].** For a morphism of schemes `f : X ⟶ Y` the following are
 > equivalent: `f` is formally smooth; `f` is formally smooth on a neighbourhood of every point of
@@ -209,7 +209,7 @@ theorem formallySmooth_tfae {X Y : Scheme.{u}} (f : X ⟶ Y) :
 
 [Tag 06B6](https://stacks.math.columbia.edu/tag/06B6) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.toRelativeDifferentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FormallySmooth.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FormallySmooth.lean#L318). References: EGA IV (17.2.3).
+**`AlgebraicGeometry.Scheme.Hom.toRelativeDifferentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FormallySmooth.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FormallySmooth.lean#L317). References: EGA IV (17.2.3).
 
 > For morphisms of schemes `f : X ⟶ Y` and `g : Y ⟶ S` with `f` formally smooth, the canonical
 > sequence `0 ⟶ f^* Ω_{Y/S} ⟶ Ω_{X/S} ⟶ Ω_{X/Y} ⟶ 0` of `𝒪_X`-modules is short exact. The case of a
@@ -227,7 +227,7 @@ theorem toRelativeDifferentials_shortExact (f : X ⟶ Y) (g : Y ⟶ S) (hf : For
 
 [Tag 06B7](https://stacks.math.columbia.edu/tag/06B7) in the Stacks Project.
 
-**`Stacks.UnramifiedConormalSequence.exists_localRetraction_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean#L145). The attribute's comment: “the step of the proof using formal smoothness of Z over S: locally on the universal first-order thickening Z' there is a left inverse Z' ⟶ Z over S”.
+**`Stacks.UnramifiedConormalSequence.exists_localRetraction_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean#L145). The attribute's comment: “the step of the proof using formal smoothness of Z over S: locally on the universal first-order thickening Z' there is a left inverse Z' ⟶ Z over S”.
 
 > **A local left inverse `Z' ⟶ Z` over `S`, from formal smoothness of `Z` over `S`.** Let
 > `i : Z ⟶ Z'` with structure morphism `h' : Z' ⟶ X` be a universal first-order thickening of
@@ -253,7 +253,7 @@ theorem exists_localRetraction_of_formallySmooth {Z' : Scheme.{u}} {h : Z ⟶ X}
         j ≫ g = 𝟙 V.toScheme ∧ g ≫ (V.ι ≫ (h ≫ p)) = W.ι ≫ (h' ≫ p)
 ```
 
-**`Stacks.UnramifiedConormalSequence.forall_exists_isSplitEpi_restrict_relativeDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean#L251). The attribute's comment: “the conclusion of the source's proof before Tag 0474 is invoked: the sequence is locally split, i.e. the second arrow h^*Ω\_\{X/S} ⟶ Ω\_\{Z/S} restricts to a split epimorphism on a neighbourhood of every point of Z. Left exactness, the assertion of the tag, is not this declaration: it is conormalShortComplex\_shortExact of StacksFrontier.AlgebraicGeometry.MoreMorphisms.FormallySmooth.UnramifiedConormalShortExact”.
+**`Stacks.UnramifiedConormalSequence.forall_exists_isSplitEpi_restrict_relativeDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalSequence.lean#L251). The attribute's comment: “the conclusion of the source's proof before Tag 0474 is invoked: the sequence is locally split, i.e. the second arrow h^*Ω\_\{X/S} ⟶ Ω\_\{Z/S} restricts to a split epimorphism on a neighbourhood of every point of Z. Left exactness, the assertion of the tag, is not this declaration: it is conormalShortComplex\_shortExact of StacksFrontier.AlgebraicGeometry.MoreMorphisms.FormallySmooth.UnramifiedConormalShortExact”.
 
 > **[Stacks, Tag 06B7]: the conormal sequence of a formally unramified morphism with formally
 > smooth source is locally split.** Let `h : Z ⟶ X` be formally unramified, let `p : X ⟶ S`, and
@@ -276,7 +276,7 @@ theorem forall_exists_isSplitEpi_restrict_relativeDifferentialsMap (h : Z ⟶ X)
         (show h ≫ p = (h ≫ p) ≫ 𝟙 S by simp)))
 ```
 
-**`Stacks.UnramifiedConormalSequence.conormalShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalShortExact.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalShortExact.lean#L318). References: EGA IV (17.2.5), “more general”; SGA 7 XI (1.3), “partial”; SGA 7 XVII (5.1), “more general”.
+**`Stacks.UnramifiedConormalSequence.conormalShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalShortExact.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/UnramifiedConormalShortExact.lean#L318). References: EGA IV (17.2.5), “more general”; SGA 7 XI (1.3), “partial”; SGA 7 XVII (5.1), “more general”.
 
 > Let `h : Z ⟶ X` be a formally unramified morphism of schemes over `p : X ⟶ S` and assume
 > `Z` is formally smooth over `S`. Then the canonical sequence
@@ -299,7 +299,7 @@ theorem conormalShortComplex_shortExact
 
 [Tag 067W](https://stacks.math.columbia.edu/tag/067W) in the Stacks Project.
 
-**`Stacks.ConormalSequenceUnramifiedPair.exists_retraction_restrict_universalConormalTransitivityMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L360). The attribute's comment: “locally split, in the sense the source's proof produces and its final sentence defines: every point of Z has an open neighbourhood over which the first arrow 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} of Tag 067V admits a retraction”.
+**`Stacks.ConormalSequenceUnramifiedPair.exists_retraction_restrict_universalConormalTransitivityMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L360). The attribute's comment: “locally split, in the sense the source's proof produces and its final sentence defines: every point of Z has an open neighbourhood over which the first arrow 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} of Tag 067V admits a retraction”.
 
 > **[Stacks, Tag 067W]: the conormal sequence is locally split.** For formally unramified
 > `i : Z ⟶ X` and `j : Z ⟶ Y` in a commutative triangle `i ≫ p = j` with `p` formally smooth, every
@@ -316,7 +316,7 @@ theorem exists_retraction_restrict_universalConormalTransitivityMap (h : i ≫ p
           𝟙 _
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.mono_conormalSequenceFirstArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L462). The attribute's comment: “exact on the left: the first arrow 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} of Tag 067V is a monomorphism, which is the only strengthening of Tag 067V's right-exact sequence to a short exact one that this tag asserts; obtained from the local splitting”.
+**`Stacks.ConormalSequenceUnramifiedPair.mono_conormalSequenceFirstArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L462). The attribute's comment: “exact on the left: the first arrow 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} of Tag 067V is a monomorphism, which is the only strengthening of Tag 067V's right-exact sequence to a short exact one that this tag asserts; obtained from the local splitting”.
 
 > **[Stacks, Tag 067W]: the first arrow of the conormal sequence is a monomorphism.** This is
 > the `0 ⟶` at the left-hand end of the sequence, and the only strengthening of the right-exact
@@ -327,7 +327,7 @@ theorem mono_conormalSequenceFirstArrow (h : i ≫ p = j) (hp : FormallySmooth p
     Mono (conormalSequenceFirstArrow i j p h)
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.exists_retraction_restrict_conormalSequenceFirstArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L478). The attribute's comment: “locally split, in the shape of the locallySplit clause the library uses for the sibling tag 062S”.
+**`Stacks.ConormalSequenceUnramifiedPair.exists_retraction_restrict_conormalSequenceFirstArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L478). The attribute's comment: “locally split, in the shape of the locallySplit clause the library uses for the sibling tag 062S”.
 
 > **The local splitting, stated for
 > `Stacks.ConormalSequenceUnramifiedPair.conormalSequenceFirstArrow`.** This is the `locallySplit`
@@ -344,7 +344,7 @@ theorem exists_retraction_restrict_conormalSequenceFirstArrow (h : i ≫ p = j)
           𝟙 _
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.shortExact_of_comp_eq_zero_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1130). The attribute's comment: “the sequence of Tag 067V is short exact: exactness at the middle term and surjectivity of the second arrow are the assertions of Tag 067V, and injectivity of the first arrow is what this tag adds, by way of the local splitting its proof produces”.
+**`Stacks.ConormalSequenceUnramifiedPair.shortExact_of_comp_eq_zero_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1130). The attribute's comment: “the sequence of Tag 067V is short exact: exactness at the middle term and surjectivity of the second arrow are the assertions of Tag 067V, and injectivity of the first arrow is what this tag adds, by way of the local splitting its proof produces”.
 
 > **[Stacks, Tag 067W]: the conormal sequence is short exact.** For formally unramified
 > `i : Z ⟶ X` and `j : Z ⟶ Y` in a commutative triangle `i ≫ p = j` with `p` formally smooth, the
@@ -365,4 +365,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.11, Tag 02GZ](https://stacks.math.columbia.edu/tag/02GZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # 37 More on Morphisms
 
-Chapter 37 of the Stacks Project, *More on Morphisms*, [Tag 02GX](https://stacks.math.columbia.edu/tag/02GX): the 79 sections of its 81 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 516 tags are carried by 1,224 declarations of the repository (all in StacksFrontier) and 45 registered declarations.
+Chapter 37 of the Stacks Project, *More on Morphisms*, [Tag 02GX](https://stacks.math.columbia.edu/tag/02GX): the 79 sections of its 81 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 516 tags are carried by 1,255 declarations of the repository (all in StacksFrontier) and 45 registered declarations.
 
 ## [37.2 Thickenings to 37.11 Formally smooth morphisms](part-01/README.md)
 
@@ -34,7 +34,7 @@ Chapter 37 of the Stacks Project, *More on Morphisms*, [Tag 02GX](https://stacks
 - [37.26 Reduced fibres](part-02/37-26-reduced-fibres.md)
 - [37.27 Irreducible components of fibres](part-02/37-27-irreducible-components-of-fibres.md)
 
-## [37.28 Connected components of… to 37.45 Applications of Zariski's…](part-03/README.md)
+## [37.28 Connected components of… to 37.47 Application to the…](part-03/README.md)
 
 - [37.28 Connected components of fibres](part-03/37-28-connected-components-of-fibres.md)
 - [37.29 Connected components meeting a section](part-03/37-29-connected-components-meeting-a-section.md)
@@ -54,19 +54,19 @@ Chapter 37 of the Stacks Project, *More on Morphisms*, [Tag 02GX](https://stacks
 - [37.43 Zariski's Main Theorem](part-03/37-43-zariskis-main-theorem.md)
 - [37.44 Applications of Zariski's Main Theorem, I](part-03/37-44-applications-of-zariskis-main-theorem-i.md)
 - [37.45 Applications of Zariski's Main Theorem, II](part-03/37-45-applications-of-zariskis-main-theorem-ii.md)
+- [37.46 Application to morphisms with connected fibres](part-03/37-46-application-to-morphisms-with-connected-fi.md)
+- [37.47 Application to the structure of finite type morphisms](part-03/37-47-application-to-the-structure-of-finite-typ.md)
 
-## [37.46 Application to morphisms… to 37.52 Closed points in fibres](part-04/README.md)
+## [37.48 Application to the fppf… to 37.51 Proj and Spec](part-04/README.md)
 
-- [37.46 Application to morphisms with connected fibres](part-04/37-46-application-to-morphisms-with-connected-fi.md)
-- [37.47 Application to the structure of finite type morphisms](part-04/37-47-application-to-the-structure-of-finite-typ.md)
 - [37.48 Application to the fppf topology](part-04/37-48-application-to-the-fppf-topology.md)
 - [37.49 Quasi-projective schemes](part-04/37-49-quasi-projective-schemes.md)
 - [37.50 Projective schemes](part-04/37-50-projective-schemes.md)
 - [37.51 Proj and Spec](part-04/37-51-proj-and-spec.md)
-- [37.52 Closed points in fibres](part-04/37-52-closed-points-in-fibres.md)
 
-## [37.53 Stein factorization to 37.67 Pushouts in the category…](part-05/README.md)
+## [37.52 Closed points in fibres to 37.66 Ind-quasi-affine morphisms](part-05/README.md)
 
+- [37.52 Closed points in fibres](part-05/37-52-closed-points-in-fibres.md)
 - [37.53 Stein factorization](part-05/37-53-stein-factorization.md)
 - [37.54 Generic flatness stratification](part-05/37-54-generic-flatness-stratification.md)
 - [37.55 Stratifying a morphism](part-05/37-55-stratifying-a-morphism.md)
@@ -80,10 +80,10 @@ Chapter 37 of the Stacks Project, *More on Morphisms*, [Tag 02GX](https://stacks
 - [37.64 Weakly étale morphisms](part-05/37-64-weakly-etale-morphisms.md)
 - [37.65 Reduced fibre theorem](part-05/37-65-reduced-fibre-theorem.md)
 - [37.66 Ind-quasi-affine morphisms](part-05/37-66-ind-quasi-affine-morphisms.md)
-- [37.67 Pushouts in the category of schemes, II](part-05/37-67-pushouts-in-the-category-of-schemes-ii.md)
 
-## [37.68 Relative morphisms to 37.81 The extensive criterion…](part-06/README.md)
+## [37.67 Pushouts in the category… to 37.81 The extensive criterion…](part-06/README.md)
 
+- [37.67 Pushouts in the category of schemes, II](part-06/37-67-pushouts-in-the-category-of-schemes-ii.md)
 - [37.68 Relative morphisms](part-06/37-68-relative-morphisms.md)
 - [37.69 Characterizing pseudo-coherent complexes, III](part-06/37-69-characterizing-pseudo-coherent-complexes-i.md)
 - [37.70 Descent finiteness properties of complexes](part-06/37-70-descent-finiteness-properties-of-complexes.md)

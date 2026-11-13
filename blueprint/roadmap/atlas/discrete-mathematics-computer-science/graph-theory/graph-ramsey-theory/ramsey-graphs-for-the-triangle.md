@@ -7,7 +7,7 @@ statement: formalized
 
 # Ramsey graphs for the triangle
 
-12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html).
+12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html).
 
 ## Ramsey graphs for the triangle
 
@@ -23,7 +23,7 @@ monochromatic triangle.
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsTriangleRamsey`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-ramsey).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsTriangleRamsey`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-ramsey).
 
 ## Ramsey property for the triangle after deleting a vertex
 
@@ -37,7 +37,7 @@ triangle in $G$ with $c(u, v) = c(v, w) = c(w, u)$.
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsTriangleRamseyDeleteVertex`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-ramsey-delete-vertex).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsTriangleRamseyDeleteVertex`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-ramsey-delete-vertex).
 
 ## Ramsey-minimal graphs for the triangle
 
@@ -54,7 +54,7 @@ Given the first two conditions, the last one says exactly that $G$ has no isolat
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsRamseyMinimal`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-ramsey-minimal).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.IsRamseyMinimal`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-ramsey-minimal).
 
 ## Minimum degree of a finite graph
 
@@ -66,7 +66,7 @@ exactly $d$ neighbours; in particular $n \ge 1$.
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.HasMinDegree`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#has-min-degree).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.HasMinDegree`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#has-min-degree).
 
 ## Least minimum degree of Ramsey-minimal graphs for the triangle
 
@@ -79,7 +79,7 @@ such graph exists, $s_r(K_3) = 0$.
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory, Conjecture `$s_r(3) = \Theta(r^2 \log r)$`.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.sRamsey`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#s-ramsey).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.sRamsey`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#s-ramsey).
 
 ## Minimum-degree conjecture for minimal Ramsey graphs of the triangle
 
@@ -93,7 +93,7 @@ $c \, r^2 \log r \le s_r(K_3) \le C \, r^2 \log r$ for all sufficiently large $r
 
 - [AIM-COMBINATORICS-0060], `aim-combinatorics-notes.json notes[59]`, Source item 13, Section Ramsey minimal graphs, Workshop Graph Ramsey theory, Canonical tag conjecture.
 
-Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture).
 
 ## Minimum degree of minimal Ramsey graphs for the triangle (Guo–Warnke)
 
@@ -111,7 +111,7 @@ prove this, confirming the conjecture of Fox, Grinshpun, Liebenau, Person and Sz
 
 - H. Guo and L. Warnke, Packing nearly optimal Ramsey R(3,t) graphs, arXiv:1711.05877, https://arxiv.org/abs/1711.05877.
 
-Stated but not proved: `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.TriangleRamseyMinimalThetaWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleRamseyMinimalThetaWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-holds).
 
 ## Trees of triangles
 
@@ -125,7 +125,7 @@ the graph obtained from $H_0$ by joining $z$ to $x$ and to $y$ is a tree of tria
 
 - AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: any graph built recursively by starting with a triangle, and then adding two edges at a time that forms a single new triangle with an existing edge.
 
-Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.IsTriangleTree`, an inductive type declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-tree).
+Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.IsTriangleTree`, an inductive type declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-triangle-tree).
 
 ## Graphs that arrow the triangle
 
@@ -137,7 +137,7 @@ triangle: three distinct pairwise adjacent vertices whose three edges all have t
 
 - AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: `G` with `2` colors arrows `K₃`, i.e. every 2-coloring of the edges of `G` contains a monochromatic triangle.
 
-Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.Ramseys2Triangle`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#ramseys2-triangle).
+Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.Ramseys2Triangle`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#ramseys2-triangle).
 
 ## Graphs that are locally trees of triangles
 
@@ -149,7 +149,7 @@ tree of triangles on $V$ that contains every edge of $G$ with both endpoints in 
 
 - AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: on every `ℓ` vertices `G` induces a subgraph of a tree of triangles.
 
-Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.IsLocallyTriangleTree`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-locally-triangle-tree).
+Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.IsLocallyTriangleTree`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#is-locally-triangle-tree).
 
 ## Rödl's question on Ramsey graphs that are locally trees of triangles
 
@@ -166,7 +166,7 @@ Posed as an open question, it has been answered in the affirmative.
 
 - AIM-COMBINATORICS-0056, aim-combinatorics-notes.json notes[55]: for every `ℓ`, does there exist a graph `G →₂ K₃` which on every `ℓ` vertices induces a subgraph of a tree of triangles.
 
-Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-2).
+Formalized by `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-2).
 
 ## Ramsey graphs for the triangle that are locally trees of triangles
 
@@ -185,7 +185,7 @@ trees of triangles ($2$-trees).
 
 - C. Reiher and V. Rödl, The girth Ramsey theorem, arXiv:2308.15589, https://arxiv.org/abs/2308.15589.
 
-Stated but not proved: `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-holds-2).
+Stated but not proved: `MathlibExt.Combinatorics.TriangleTreeLocalRamseyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/TriangleTreeLocalRamseyWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html#conjecture-holds-2).
 
 ## Depends on
 
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramsey graphs for the triangle](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-ramsey-theory/ramsey-graphs-for-the-triangle)

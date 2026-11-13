@@ -8,7 +8,7 @@ proof: formalized
 
 # Convex functions of martingales
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html).
 
 ## Convex functions of martingales are submartingales
 
@@ -23,7 +23,7 @@ and $\mu$.
 
 - Lecture 26/27, martingale observations.
 
-Formalized by `MeasureTheory.Martingale.submartingale_comp_convex`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ConvexSubmartingale.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#submartingale-comp-convex).
+Formalized by `MeasureTheory.Martingale.submartingale_comp_convex`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ConvexSubmartingale.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#submartingale-comp-convex).
 
 ## Convex nondecreasing functions preserve submartingales
 
@@ -38,7 +38,7 @@ Monotonicity is needed: a convex function of a submartingale need not be a subma
 example, take $\varphi(x) = (x - 4)^2$ and a submartingale with $X_i = 2$ and $X_j = 3$ almost
 surely for some $i < j$; then $\varphi(X_i) = 4 > 1 = \varphi(X_j)$.
 
-Formalized by `MeasureTheory.Submartingale.comp_convex_of_monotoneOn`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ConvexSubmartingale.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#comp-convex-of-monotone-on).
+Formalized by `MeasureTheory.Submartingale.comp_convex_of_monotoneOn`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ConvexSubmartingale.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#comp-convex-of-monotone-on).
 
 ## Concave functions of martingales are supermartingales
 
@@ -49,7 +49,7 @@ $\varphi : \mathbb{R} \to \mathbb{R}$ be concave, and suppose $\varphi(X_n)$ is 
 every $n$. Then $(\varphi(X_n))_{n \in \mathbb{N}}$ is a supermartingale with respect to
 $(\mathcal{F}_n)$ and $\mu$.
 
-Formalized by `MeasureTheory.Martingale.supermartingale_comp_concave`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/ConvexSubmartingale.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#supermartingale-comp-concave).
+Formalized by `MeasureTheory.Martingale.supermartingale_comp_concave`, a theorem declared in [MathlibExt/Probability/ConvexSubmartingale.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/ConvexSubmartingale.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html#supermartingale-comp-concave).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convex functions of martingales](https://deicyde.github.io/atlas-lean/roadmap/Probability/martingales/convex-functions-of-martingales/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/martingales/convex-functions-of-martingales)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/martingales/convex-functions-of-martingales)

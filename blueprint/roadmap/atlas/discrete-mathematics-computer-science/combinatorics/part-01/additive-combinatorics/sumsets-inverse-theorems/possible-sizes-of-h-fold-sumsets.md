@@ -7,7 +7,7 @@ statement: formalized
 
 # Possible sizes of h-fold sumsets
 
-13 results, 5 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html).
+13 results, 5 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html).
 
 ## Trivial elements of an $h$-fold sumset
 
@@ -30,7 +30,7 @@ paper's list.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, definition of trivial and nontrivial elements (arXiv:2505.07679v2, Definition 1.8).
 
-Formalized by `MetaMathlibExt.sumsetTrivialElements`, a definition declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements).
+Formalized by `MetaMathlibExt.sumsetTrivialElements`, a definition declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements).
 
 ## No trivial elements for $k = 0$
 
@@ -42,7 +42,7 @@ set, the set of trivial elements of its $h$-fold sumset is empty.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, definition of trivial elements (arXiv:2505.07679v2, Definition 1.8).
 
-Formalized by `MetaMathlibExt.sumsetTrivialElements_zero`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements-zero).
+Formalized by `MetaMathlibExt.sumsetTrivialElements_zero`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements-zero).
 
 ## Trivial elements of a one-element set
 
@@ -55,7 +55,7 @@ $\{h a_0\}$, where $h a_0 = a_0 + \dots + a_0$ is the $h$-fold sum of $a_0$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, definition of trivial elements (arXiv:2505.07679v2, Definition 1.8).
 
-Formalized by `MetaMathlibExt.sumsetTrivialElements_one`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements-one).
+Formalized by `MetaMathlibExt.sumsetTrivialElements_one`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-trivial-elements-one).
 
 ## Adjacent sums are trivial elements
 
@@ -68,7 +68,7 @@ $a_0, \ldots, a_{k-1}$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, definition of trivial elements (arXiv:2505.07679v2, Definition 1.8).
 
-Formalized by `MetaMathlibExt.adjacent_sum_mem_sumsetTrivialElements`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#adjacent-sum-mem-sumset-trivial-elements).
+Formalized by `MetaMathlibExt.adjacent_sum_mem_sumsetTrivialElements`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#adjacent-sum-mem-sumset-trivial-elements).
 
 ## Characterization of the trivial elements
 
@@ -82,7 +82,7 @@ $j + 1 < k$ and $i \le h$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, definition of trivial elements (arXiv:2505.07679v2, Definition 1.8).
 
-Formalized by `MetaMathlibExt.mem_sumsetTrivialElements_iff`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#mem-sumset-trivial-elements-iff).
+Formalized by `MetaMathlibExt.mem_sumsetTrivialElements_iff`, a theorem declared in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#mem-sumset-trivial-elements-iff).
 
 ## Dropping the largest element keeps nontrivial sums nontrivial
 
@@ -101,7 +101,7 @@ nontrivial elements).
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Lemma 1 (arXiv:2505.07679v2, Lemma 3.2).
 
-Stated but not proved: `MetaMathlibExt.nsmul_sumset_erase_max_nontrivial` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nsmul-sumset-erase-max-nontrivial).
+Stated but not proved: `MetaMathlibExt.nsmul_sumset_erase_max_nontrivial` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nsmul-sumset-erase-max-nontrivial).
 
 ## Many nontrivial sums when the last gap is not a multiple of the previous one
 
@@ -120,7 +120,7 @@ The paper takes $h > 1$; the bound is vacuous for $h \le 1$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 1 (arXiv:2505.07679v2, Theorem 3.3).
 
-Stated but not proved: `MetaMathlibExt.nontrivial_sumset_card_of_last_gap_ne_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nontrivial-sumset-card-of-last-gap-ne-ns).
+Stated but not proved: `MetaMathlibExt.nontrivial_sumset_card_of_last_gap_ne_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nontrivial-sumset-card-of-last-gap-ne-ns).
 
 ## Many nontrivial sums when the last gap is a proper multiple of the previous one
 
@@ -139,7 +139,7 @@ the bound is vacuous for $h \le 1$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 2 (arXiv:2505.07679v2, Theorem 3.4).
 
-Stated but not proved: `MetaMathlibExt.nontrivial_sumset_card_of_last_gap_eq_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nontrivial-sumset-card-of-last-gap-eq-ns).
+Stated but not proved: `MetaMathlibExt.nontrivial_sumset_card_of_last_gap_eq_nsmul` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#nontrivial-sumset-card-of-last-gap-eq-ns).
 
 ## Equal last two gaps: an arithmetic progression or many nontrivial sums
 
@@ -158,7 +158,7 @@ $j \ge 1$. The paper takes $h > 1$; the second alternative is vacuous for $h \le
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 3 (arXiv:2505.07679v2, Theorem 3.5).
 
-Stated but not proved: `MetaMathlibExt.arithProg_or_nontrivial_sumset_card_of_last_gaps_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#arith-prog-or-nontrivial-sumset-card-of).
+Stated but not proved: `MetaMathlibExt.arithProg_or_nontrivial_sumset_card_of_last_gaps_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#arith-prog-or-nontrivial-sumset-card-of).
 
 ## A gap in the possible sumset sizes
 
@@ -175,7 +175,7 @@ $h \le 1$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 4 (arXiv:2505.07679v2, Theorem 3.6).
 
-Stated but not proved: `MetaMathlibExt.card_nsmul_notMem_Icc_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-not-mem-icc-of-is-add-torsion).
+Stated but not proved: `MetaMathlibExt.card_nsmul_notMem_Icc_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-not-mem-icc-of-is-add-torsion).
 
 ## Sumset sizes between $hk - h + 1$ and $hk$
 
@@ -195,7 +195,7 @@ $hk - h + 1$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.sumsetSizes_inter_Icc_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-sizes-inter-icc-of-is-add-torsion).
+Stated but not proved: `MetaMathlibExt.sumsetSizes_inter_Icc_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#sumset-sizes-inter-icc-of-is-add-torsion).
 
 ## Sumset of an arithmetic progression with its second-to-last term removed
 
@@ -211,7 +211,7 @@ The paper leaves $h$ unquantified; $h \ge 1$ is needed, since $|0A| = 1$.
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.card_nsmul_arithProg_skip_penultimate` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-arith-prog-skip-penultimate).
+Stated but not proved: `MetaMathlibExt.card_nsmul_arithProg_skip_penultimate` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-arith-prog-skip-penultimate).
 
 ## Rajagopal's family of missing sumset sizes
 
@@ -232,7 +232,7 @@ generalizes ($\ell = 0$ is Theorem 4, here also for $k = 3$).
 
 - Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 6 (journal version; credited to Rajagopal, Theorem 1.3).
 
-Stated but not proved: `MetaMathlibExt.card_nsmul_notMem_Icc_add_mul_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-not-mem-icc-add-mul-of-is-add).
+Stated but not proved: `MetaMathlibExt.card_nsmul_notMem_Icc_add_mul_of_isAddTorsionFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SumsetSetsOfSizeKWanted.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html#card-nsmul-not-mem-icc-add-mul-of-is-add).
 
 ## Depends on
 
@@ -241,4 +241,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Possible sizes of h-fold sumsets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sumsets-inverse-theorems/possible-sizes-of-h-fold-sumsets)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Cubic lattice walks and colored Motzkin paths
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html).
 
 ## Cubic lattice walks counted by a colored Motzkin number
 
@@ -25,7 +25,7 @@ one color of up step, $2n$ colors of level step and one color of down step.
 
 - Rigoberto Flórez, Leandro Junes, and José L. Ramírez, "Further Results on Paths in an n-Dimensional Cubic Lattice," Journal of Integer Sequences 21 (2018), Article 18.1.2, Theorem, lines 924–926, https://cs.uwaterloo.ca/journals/JIS/VOL21/Florez/florez4.tex
 
-Formalized by `MetaMathlibExt.cube_lattice_paths_card_eq_uldMotzkinNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html#cube-lattice-paths-card-eq-uld-motzkin-n).
+Formalized by `MetaMathlibExt.cube_lattice_paths_card_eq_uldMotzkinNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html#cube-lattice-paths-card-eq-uld-motzkin-n).
 
 ## Cubic lattice walks and colored Motzkin paths
 
@@ -47,7 +47,7 @@ constrained, and the $2n$ steps $\pm e_i$ with $i < n$ correspond to the $2n$ le
 
 - Rigoberto Flórez, Leandro Junes, and José L. Ramírez, "Further Results on Paths in an n-Dimensional Cubic Lattice," Journal of Integer Sequences 21 (2018), Article 18.1.2, Theorem, lines 924–926, https://cs.uwaterloo.ca/journals/JIS/VOL21/Florez/florez4.tex
 
-Formalized by `MetaMathlibExt.cube_lattice_paths_card_eq_colored_motzkin_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html#cube-lattice-paths-card-eq-colored-motzk).
+Formalized by `MetaMathlibExt.cube_lattice_paths_card_eq_colored_motzkin_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CubicLatticeColoredMotzkin.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html#cube-lattice-paths-card-eq-colored-motzk).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cubic lattice walks and colored Motzkin paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/cubic-lattice-walks-and-colored-motzkin-paths)

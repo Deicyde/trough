@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.27 The cotangent complex of an algebraic space over a ring
 
-Section 92.27 of the Stacks Project, [Tag 08VH](https://stacks.math.columbia.edu/tag/08VH). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.27 of the Stacks Project, [Tag 08VH](https://stacks.math.columbia.edu/tag/08VH). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08VI, an equation
 
 [Tag 08VI](https://stacks.math.columbia.edu/tag/08VI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PolynomialChart`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L77). The attribute's comment: “the objects of the category C\_\{X/Λ}”.
+**`AlgebraicGeometry.Space.PolynomialChart`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L77). The attribute's comment: “the objects of the category C\_\{X/Λ}”.
 
 > A commutative square `U ⟶ A ⟶ Spec Λ`, `U ⟶ X ⟶ Spec Λ`, in which `U ⟶ X` is an object of
 > the small étale site of the algebraic space `X` and `A` is an affine space over `Spec Λ`.
@@ -23,7 +23,7 @@ Section 92.27 of the Stacks Project, [Tag 08VH](https://stacks.math.columbia.edu
 structure PolynomialChart (hX : IsAlgebraicSpace B (Spec (CommRingCat.of Λ)) hS X)
 ```
 
-**`AlgebraicGeometry.Space.PolynomialChart.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L108). The attribute's comment: “the morphisms of the category C\_\{X/Λ}”.
+**`AlgebraicGeometry.Space.PolynomialChart.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L108). The attribute's comment: “the morphisms of the category C\_\{X/Λ}”.
 
 > A morphism of polynomial charts is a commutative diagram over both the algebraic space `X`
 > and `Spec Λ`.
@@ -32,7 +32,7 @@ structure PolynomialChart (hX : IsAlgebraicSpace B (Spec (CommRingCat.of Λ)) hS
 structure Hom (P Q : PolynomialChart Λ B hS X hX)
 ```
 
-**`AlgebraicGeometry.Space.PolynomialChart.openFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L147). The attribute's comment: “the forgetful functor to the small étale site”.
+**`AlgebraicGeometry.Space.PolynomialChart.openFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialChartSpace.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialChartSpace.lean#L147). The attribute's comment: “the forgetful functor to the small étale site”.
 
 > The functor sending a polynomial chart `(U ⟶ A)` to the object `U ⟶ X` of the small étale
 > site of `X`.
@@ -46,7 +46,7 @@ def openFunctor :
 
 [Tag 08VJ](https://stacks.math.columbia.edu/tag/08VJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PolynomialChart.openFunctor_isFibered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceFibred.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceFibred.lean#L115).
+**`AlgebraicGeometry.Space.PolynomialChart.openFunctor_isFibered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceFibred.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceFibred.lean#L115).
 
 > **Stacks 08VJ.** The category `C_{X/Λ}` of polynomial charts of an algebraic space `X` over
 > `Λ` is fibred over the small étale site of `X`.
@@ -63,10 +63,12 @@ noncomputable instance openFunctor_isFibered (Λ : Type u) [CommRing Λ] (B : Bi
 
 [Tag 08VK](https://stacks.math.columbia.edu/tag/08VK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PolynomialChart.piSpacesDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceRingedTopoi.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceRingedTopoi.lean#L620).
+**`AlgebraicGeometry.Space.PolynomialChart.piSpacesDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceRingedTopoi.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceRingedTopoi.lean#L630). The attribute's comment: “the morphisms of ringed topoi i and π out of (Sh(C\_\{X/Λ}), π⁻¹𝒪\_X); 𝒪 is taken as the sheafification of (U ⟶ A) ↦ Γ(A, 𝒪\_A), which is not a sheaf at charts with U = ∅”.
 
-> The diagram of ringed topoi of the polynomial charts of an algebraic space over a ring, with
-> all of its arrows pinned to the canonical ones.
+> The diagram of ringed topoi of the polynomial charts of an algebraic space over a ring: the
+> morphisms of ringed topoi `i : (Sh(C_{X/Λ}), π⁻¹𝒪_X) ⟶ (Sh(C_{X/Λ}), 𝒪)` and
+> `π : (Sh(C_{X/Λ}), π⁻¹𝒪_X) ⟶ (Sh(X_étale), 𝒪_X)`, with all of their data pinned to the
+> canonical ones.
 
 ```lean
 def piSpacesDiagram [HasWeakSheafify (topology Λ B hS X hX) CommRingCat.{u}] :
@@ -77,7 +79,7 @@ def piSpacesDiagram [HasWeakSheafify (topology Λ B hS X hX) CommRingCat.{u}] :
 
 [Tag 08VL](https://stacks.math.columbia.edu/tag/08VL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PolynomialChart.standardResolutionChart_computes_derivedAbelianLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceStandardResolution.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceStandardResolution.lean#L253).
+**`AlgebraicGeometry.Space.PolynomialChart.standardResolutionChart_computes_derivedAbelianLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceStandardResolution.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SheavesOfRings/PolynomialChartSpaceStandardResolution.lean#L253).
 
 > **Stacks 08VL.** Let `X` be an algebraic space over a ring `Λ`, let `C_{X/Λ}` be its category
 > of polynomial charts, fibred over `X_étale`, and let `π : Sh(C_{X/Λ}) ⟶ Sh(X_étale)` be the
@@ -140,7 +142,7 @@ theorem standardResolutionChart_computes_derivedAbelianLowerShriek :
 
 [Tag 08VM](https://stacks.math.columbia.edu/tag/08VM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PolynomialChart.derivedLowerShriekInverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L193). The attribute's comment: “second isomorphism Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) for an algebraic space X over Λ, induced by the canonical map Li^*Ω ⟶ i^*Ω, an isomorphism since Ω\_\{𝒪/Λ̲} is flat”.
+**`AlgebraicGeometry.Space.PolynomialChart.derivedLowerShriekInverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L193). The attribute's comment: “second isomorphism Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) for an algebraic space X over Λ, induced by the canonical map Li^*Ω ⟶ i^*Ω, an isomorphism since Ω\_\{𝒪/Λ̲} is flat”.
 
 > **Stacks Project, Tag 08VM, the second isomorphism**
 > `Lπ_!(Li^*Ω_{𝒪/Λ̲}) ≅ Lπ_!(i^*Ω_{𝒪/Λ̲})`: `Lπ_!` applied to the canonical map
@@ -156,7 +158,7 @@ def derivedLowerShriekInverseImageDifferentialsIso :
         ((DerivedCategory.singleFunctor _ 0).obj (pulledBackDifferentials Λ B hS X hX))
 ```
 
-**`AlgebraicGeometry.Space.PolynomialChart.derivedLowerShriekPulledBackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L208). The attribute's comment: “third isomorphism Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(Ω\_\{𝒪/Λ̲} ⊗\_𝒪 𝒪̲\_X) for an algebraic space X over Λ, induced by the canonical identification of i^* with extension of scalars along i♯”.
+**`AlgebraicGeometry.Space.PolynomialChart.derivedLowerShriekPulledBackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L208). The attribute's comment: “third isomorphism Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(Ω\_\{𝒪/Λ̲} ⊗\_𝒪 𝒪̲\_X) for an algebraic space X over Λ, induced by the canonical identification of i^* with extension of scalars along i♯”.
 
 > **Stacks Project, Tag 08VM, the third isomorphism**
 > `Lπ_!(i^*Ω_{𝒪/Λ̲}) ≅ Lπ_!(Ω_{𝒪/Λ̲} ⊗_𝒪 𝒪̲_X)`: `Lπ_!` applied to the canonical identification of
@@ -171,7 +173,7 @@ def derivedLowerShriekPulledBackDifferentialsIso :
         ((DerivedCategory.singleFunctor _ 0).obj (chartDifferentialsBaseChange Λ B hS X hX))
 ```
 
-**`AlgebraicGeometry.Space.PolynomialChart.cotangentComplexIsoDerivedLowerShriekInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L266). The attribute's comment: “first isomorphism L\_\{X/Λ} = Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) in D(𝒪\_X), for the site of polynomial charts of an algebraic space X over a ring Λ, with L\_\{X/Λ} the cotangent complex of X ⟶ Spec Λ (Tag 08VD, sections lifted to the universe of the site); built from the canonical maps of the proof: flatness of Ω, Tag 08VL, Tag 08SX and Tag 08VG”.
+**`AlgebraicGeometry.Space.PolynomialChart.cotangentComplexIsoDerivedLowerShriekInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/SpaceCotangentChartSite.lean#L266). The attribute's comment: “first isomorphism L\_\{X/Λ} = Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) in D(𝒪\_X), for the site of polynomial charts of an algebraic space X over a ring Λ, with L\_\{X/Λ} the cotangent complex of X ⟶ Spec Λ (Tag 08VD, sections lifted to the universe of the site); built from the canonical maps of the proof: flatness of Ω, Tag 08VL, Tag 08SX and Tag 08VG”.
 
 > **Stacks Project, Tag 08VM, the first isomorphism** `L_{X/Λ} ≅ Lπ_!(Li^*Ω_{𝒪/Λ̲})` in `D(𝒪_X)`,
 > for the site of polynomial charts of Section 08VJ of an algebraic space `X` over a ring `Λ`. Here
@@ -202,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.27, Tag 08VH](https://stacks.math.columbia.edu/tag/08VH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

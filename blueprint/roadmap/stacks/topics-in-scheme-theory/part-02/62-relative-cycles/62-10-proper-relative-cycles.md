@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.10 Proper relative cycles
 
-Section 62.10 of the Stacks Project, [Tag 0H60](https://stacks.math.columbia.edu/tag/0H60). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.10 of the Stacks Project, [Tag 0H60](https://stacks.math.columbia.edu/tag/0H60). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H61, a definition
 
 [Tag 0H61](https://stacks.math.columbia.edu/tag/0H61) in the Stacks Project.
 
-**`Stacks.Chow.IsProperRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L135). The attribute's comment: “the predicate”.
+**`Stacks.Chow.IsProperRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L135). The attribute's comment: “the predicate”.
 
 > **Stacks Project, Definition 0H61.** A family `α` of `r`-cycles on the fibres of `X/S` has
 > proper support when its support is contained in a closed subset `W ⊆ X` proper over `S`; a
@@ -25,7 +25,7 @@ def IsProperRelativeCycle {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType 
     (α : FamilyOfCycles f r) : Prop
 ```
 
-**`Stacks.Chow.properRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L169). The attribute's comment: “the group c(X/S, r) of proper relative cycles”.
+**`Stacks.Chow.properRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L169). The attribute's comment: “the group c(X/S, r) of proper relative cycles”.
 
 > **Stacks Project, Definition 0H61.** The group `c(X/S, r)` of proper relative `r`-cycles on
 > `X/S`: the subgroup of the group of families of `r`-cycles on the fibres of `X/S` whose members
@@ -40,7 +40,7 @@ def properRelativeCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f
 
 [Tag 0H62](https://stacks.math.columbia.edu/tag/0H62) in the Stacks Project.
 
-**`Stacks.Chow.isProperRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L211).
+**`Stacks.Chow.isProperRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperRelativeCycles.lean#L211).
 
 > **Stacks Project, Lemma 0H62.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of
 > finite type and let `α` be a relative `r`-cycle on `X/S`. If `α` is proper, then every base
@@ -58,7 +58,7 @@ theorem isProperRelativeCycle_baseChangeFamily {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H63](https://stacks.math.columbia.edu/tag/0H63) in the Stacks Project.
 
-**`Stacks.Chow.isProperRelativeCycle_iff_forall_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperHDescent.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperHDescent.lean#L264).
+**`Stacks.Chow.isProperRelativeCycle_iff_forall_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperHDescent.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperHDescent.lean#L264).
 
 > **Stacks Project, Lemma 0H63.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of
 > finite type and let `α` be a family of `r`-cycles on the fibres of `X/S`. Let `{g i : S i ⟶ S}`
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.10, Tag 0H60](https://stacks.math.columbia.edu/tag/0H60)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

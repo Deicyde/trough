@@ -10,7 +10,7 @@ proof: formalized
 
 > Constructs a finitely presented group that is not sofic, resolving the question whether every group admits arbitrarily accurate finite permutation approximations. The development combines an explicit elementary group with property T, a finite-table construction of a finitely presented group, finite-model expansion, and a local obstruction to sofic approximation.
 
-*Quoted from the card [LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/non-sofic-group.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/non-sofic-group.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,9 +18,9 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists one main result, with its informal statement quoted from the card. The scan finds its declaration in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`SoficGroups.exists_finitelyPresented_nonsofic_group`](https://leanpool.github.io/lean-pool/LeanPool/NonSoficGroup/Conclusion.html#SoficGroups.exists_finitelyPresented_nonsofic_group) (theorem; a main declaration), declared in [LeanPool/NonSoficGroup/Conclusion.lean, line 5411](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NonSoficGroup/Conclusion.lean#L5411): “There exists a group admitting a finite presentation but no sofic approximation.”
+- [`SoficGroups.exists_finitelyPresented_nonsofic_group`](https://leanpool.github.io/lean-pool/LeanPool/NonSoficGroup/Conclusion.html#SoficGroups.exists_finitelyPresented_nonsofic_group) (theorem; a main declaration), declared in [LeanPool/NonSoficGroup/Conclusion.lean, line 5411](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/NonSoficGroup/Conclusion.lean#L5411): “There exists a group admitting a finite presentation but no sofic approximation.”
 
 ## Project
 
@@ -30,9 +30,9 @@ The card lists one main result, with its informal statement quoted from the card
 - Provenance: mix, which in Lean Pool's terms means people and AI “both contributed substantially” to its Lean proofs.
 - License: Apache-2.0.
 - MSC2020: 20F65, 20E22.
-- In Lean Pool: [LeanPool/NonSoficGroup](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NonSoficGroup), from the card [LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/non-sofic-group.yaml).
+- In Lean Pool: [LeanPool/NonSoficGroup](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/NonSoficGroup), from the card [LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/non-sofic-group.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/non-sofic-group.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/NonSoficGroup](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/NonSoficGroup)
+- [Lean Pool at 701389c0: LeanPool/projects/non-sofic-group.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/non-sofic-group.yaml)
+- [Lean Pool at 701389c0: LeanPool/NonSoficGroup](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/NonSoficGroup)

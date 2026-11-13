@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.6 Boundedness for Quot
 
-Section 108.6 of the Stacks Project, [Tag 0DP9](https://stacks.math.columbia.edu/tag/0DP9). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 108.6 of the Stacks Project, [Tag 0DP9](https://stacks.math.columbia.edu/tag/0DP9). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DPA, a lemma
 
 [Tag 0DPA](https://stacks.math.columbia.edu/tag/0DPA) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveQuot.isProperAlgebraicSpaceOver_hilbertSubfunctor_quotSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuot/SiteQuotProper.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuot/SiteQuotProper.lean#L140).
+**`AlgebraicGeometry.ProjectiveQuot.isProperAlgebraicSpaceOver_hilbertSubfunctor_quotSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuot/SiteQuotProper.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuot/SiteQuotProper.lean#L140).
 
 > Let `n ≥ 0`, `r ≥ 1` and `P ∈ ℚ[t]`.  The algebraic space `Quot^P_{𝒪^{⊕ r}_{ℙⁿ_ℤ}/ℙⁿ_ℤ/ℤ}`
 > parametrizing quotients of `𝒪^{⊕ r}_{ℙⁿ_ℤ}` with Hilbert polynomial `P` is proper over `Spec ℤ`:
@@ -33,7 +33,7 @@ theorem isProperAlgebraicSpaceOver_hilbertSubfunctor_quotSituation (hr : 1 ≤ r
 
 [Tag 0DPB](https://stacks.math.columbia.edu/tag/0DPB) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveQuotOverSpace.isProperAlgebraicSpaceOver_hilbertPolynomialQuot_productSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuotOverSpace/QuotProper.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuotOverSpace/QuotProper.lean#L45).
+**`AlgebraicGeometry.ProjectiveQuotOverSpace.isProperAlgebraicSpaceOver_hilbertPolynomialQuot_productSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuotOverSpace/QuotProper.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ProjectiveQuotOverSpace/QuotProper.lean#L45).
 
 > Let `Y` be an algebraic space, `X = Y × ℙⁿ_ℤ`, `𝓛` the pullback of `𝒪_{ℙⁿ}(1)` to `X` and `F`
 > an `𝒪_X`-module of finite presentation.  For a numerical polynomial `P : ℤ → ℤ` (the function of a
@@ -60,7 +60,7 @@ theorem isProperAlgebraicSpaceOver_hilbertPolynomialQuot_productSpace
 
 [Tag 0DPC](https://stacks.math.columbia.edu/tag/0DPC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.isProperAlgebraicSpaceOver_hilbertPolynomialQuot_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialRelativelyAmpleProper.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialRelativelyAmpleProper.lean#L59).
+**`AlgebraicGeometry.Space.QuotSituation.isProperAlgebraicSpaceOver_hilbertPolynomialQuot_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialRelativelyAmpleProper.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialRelativelyAmpleProper.lean#L59).
 
 > **Stacks 0DPC.**  Let `f : X ⟶ B` be a proper morphism of finite presentation of algebraic
 > spaces (over `Spec ℤ`), `F` a finitely presented `𝒪_X`-module, `L` an invertible `𝒪_X`-module
@@ -87,7 +87,7 @@ theorem isProperAlgebraicSpaceOver_hilbertPolynomialQuot_of_isRelativelyAmple
 
 [Tag 0DPD](https://stacks.math.columbia.edu/tag/0DPD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotSituation.exists_model_isSeparated_isFinitePresentation_hilbertPolynomialQuot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialSeparatedFinitePresentation.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialSeparatedFinitePresentation.lean#L51).
+**`AlgebraicGeometry.Space.QuotSituation.exists_model_isSeparated_isFinitePresentation_hilbertPolynomialQuot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialSeparatedFinitePresentation.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/QuotHilbertPolynomialSeparatedFinitePresentation.lean#L51).
 
 > Let `F/X/B` be a Quot situation over `Spec ℤ` (Stacks 09TR): `f : X ⟶ B` a morphism of finite
 > presentation of algebraic spaces and `F` a quasi-coherent `𝒪_X`-module.  If `f` is separated, `F`
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.6, Tag 0DP9](https://stacks.math.columbia.edu/tag/0DP9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

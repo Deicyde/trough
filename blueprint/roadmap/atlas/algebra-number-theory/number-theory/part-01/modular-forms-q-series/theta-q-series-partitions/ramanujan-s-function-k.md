@@ -7,7 +7,7 @@ statement: formalized
 
 # Ramanujan's function k
 
-6 results, 2 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html).
+6 results, 2 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html).
 
 ## Ramanujan's function $k(q)$
 
@@ -29,7 +29,7 @@ Rogers–Ramanujan continued fraction.
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Section 1 (product representation of `k(q)`).
 
-Formalized by `MetaMathlibExt.ramanujanK`, a definition declared in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k).
+Formalized by `MetaMathlibExt.ramanujanK`, a definition declared in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k).
 
 ## Ramanujan's function $k$ vanishes at $0$
 
@@ -39,7 +39,7 @@ Ramanujan's function satisfies $k(0) = 0$.
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Section 1 (product representation of `k(q)`).
 
-Formalized by `MetaMathlibExt.ramanujanK_zero`, a theorem declared in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-zero).
+Formalized by `MetaMathlibExt.ramanujanK_zero`, a theorem declared in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-zero).
 
 ## Eta-quotient expressions for Ramanujan's function $k$
 
@@ -57,7 +57,7 @@ $$
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Lemma 2, Equations (5)-(7).
 
-Stated but not proved: `MetaMathlibExt.ramanujanK_eta_quotients` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-eta-quotients).
+Stated but not proved: `MetaMathlibExt.ramanujanK_eta_quotients` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-eta-quotients).
 
 ## Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient
 
@@ -75,7 +75,7 @@ where $(a;x)_\infty = \prod_{n \ge 0} (1 - a x^n)$ is the infinite q-Pochhammer 
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.ramanujanK_div_sub_div_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-div-sub-div-sq).
+Stated but not proved: `MetaMathlibExt.ramanujanK_div_sub_div_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-div-sub-div-sq).
 
 ## Modular equation of degree 2 for Ramanujan's function $k$
 
@@ -87,7 +87,7 @@ $X^2 - Y + 2XY + X^2 Y + Y^2 = 0$.
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.ramanujanK_sq_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-sq-relation).
+Stated but not proved: `MetaMathlibExt.ramanujanK_sq_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-k-sq-relation).
 
 ## Ramanujan's level-10 theta function identities
 
@@ -112,7 +112,7 @@ $$
 
 - Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Theorem 1, Equations (3) and (4).
 
-Stated but not proved: `MetaMathlibExt.ramanujan_theta_level_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-theta-level-ten).
+Stated but not proved: `MetaMathlibExt.ramanujan_theta_level_ten` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanKFunctionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanKFunctionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html#ramanujan-theta-level-ten).
 
 ## Depends on
 
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramanujan's function k](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-function-k)

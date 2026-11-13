@@ -8,7 +8,7 @@ proof: formalized
 
 # 29.12 Families of ample invertible modules
 
-Section 29.12 of the Stacks Project, [Tag 0FXQ](https://stacks.math.columbia.edu/tag/0FXQ). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.12 of the Stacks Project, [Tag 0FXQ](https://stacks.math.columbia.edu/tag/0FXQ). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FXR, a definition
 
@@ -16,13 +16,13 @@ Section 29.12 of the Stacks Project, [Tag 0FXQ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.IsAmpleFamily`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean#L163) (StacksFrontier). References: SGA 6 II (2.2.4).
+- [`AlgebraicGeometry.Scheme.IsAmpleFamily`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamily.lean#L163) (StacksFrontier). References: SGA 6 II (2.2.4).
 
 ## Tag 0FXS, a lemma
 
 [Tag 0FXS](https://stacks.math.columbia.edu/tag/0FXS) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isAffineHom_diagonal_of_affine_nonvanishingOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/AffineDiagonal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/AffineDiagonal.lean#L67).
+**`AlgebraicGeometry.Scheme.Modules.isAffineHom_diagonal_of_affine_nonvanishingOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineNonvanishing/AffineDiagonal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineNonvanishing/AffineDiagonal.lean#L67).
 
 > **Stacks Project, Tag 0FXS.** A cover by affine nonvanishing loci of sections of invertible
 > modules implies that the diagonal is affine.
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.12, Tag 0FXQ](https://stacks.math.columbia.edu/tag/0FXQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

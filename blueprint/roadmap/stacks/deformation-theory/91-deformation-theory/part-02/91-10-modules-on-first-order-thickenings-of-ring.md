@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.10 Modules on first order thickenings of ringed topoi
 
-Section 91.10 of the Stacks Project, [Tag 08MA](https://stacks.math.columbia.edu/tag/08MA). 12 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.10 of the Stacks Project, [Tag 08MA](https://stacks.math.columbia.edu/tag/08MA). 12 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08MB, an equation
 
 [Tag 08MB](https://stacks.math.columbia.edu/tag/08MB) in the Stacks Project.
 
-**`Deformation.ToposThickening.extensionActionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Basic.lean, line 1391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Basic.lean#L1391). The attribute's comment: “canonical action map”.
+**`Deformation.ToposThickening.extensionActionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Basic.lean, line 1391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Basic.lean#L1391). The attribute's comment: “canonical action map”.
 
 > The canonical map `I ⊗[O] F → K`, characterized by multiplication by an
 > ideal section after lifting a section of `F` to the middle module.
@@ -62,13 +62,13 @@ public noncomputable def extensionActionMap
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Abelian.YonedaExtension`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/Basic.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Basic.lean#L1386) (StacksFrontier).
+- [`CategoryTheory.Abelian.YonedaExtension`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/Basic/ExtAndYonedaExtensions.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/Basic.lean, line 1386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Basic.lean#L1386) (StacksFrontier).
 
 ## Tag 08MC, a lemma
 
 [Tag 08MC](https://stacks.math.columbia.edu/tag/08MC) in the Stacks Project.
 
-**`Deformation.ToposThickening.compatibleMap_add_quotientKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L89). The attribute's comment: “compatible\_lifts\_torsor”.
+**`Deformation.ToposThickening.compatibleMap_add_quotientKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L89). The attribute's comment: “compatible\_lifts\_torsor”.
 
 > Adding a map which factors through the first quotient and the second kernel preserves
 > compatibility.
@@ -84,7 +84,7 @@ theorem compatibleMap_add_quotientKernel
           D.secondExtension.f)
 ```
 
-**`Deformation.ToposThickening.compatibleMap_unique_quotientKernel_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L111). The attribute's comment: “compatible\_lifts\_torsor”.
+**`Deformation.ToposThickening.compatibleMap_unique_quotientKernel_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L111). The attribute's comment: “compatible\_lifts\_torsor”.
 
 > Any two compatible maps differ by a unique map from the first quotient to the second kernel.
 > Together with closure under those translations, this is the torsor assertion.
@@ -102,13 +102,13 @@ theorem compatibleMap_unique_quotientKernel_difference
 
 Declarations registered for the tag:
 
-- [`idealActionMap_naturality`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=idealActionMap_naturality#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L162) (StacksFrontier): “ideal\_action\_compatible”.
+- [`idealActionMap_naturality`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=idealActionMap_naturality#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L162) (StacksFrontier): “ideal\_action\_compatible”.
 
 ## Tag 08MD, a lemma
 
 [Tag 08MD](https://stacks.math.columbia.edu/tag/08MD) in the Stacks Project.
 
-**`Deformation.ToposThickening.obstructionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean#L270). The attribute's comment: “obstruction class”.
+**`Deformation.ToposThickening.obstructionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean#L270). The attribute's comment: “obstruction class”.
 
 > The obstruction class in the first Ext group over the quotient structure sheaf. Its
 > vanishing characterizes lifts of the prescribed end maps.
@@ -121,7 +121,7 @@ noncomputable def obstructionClass
     Abelian.Ext D.F D.L 1
 ```
 
-**`Deformation.ToposThickening.obstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean#L280). The attribute's comment: “vanishing criterion”.
+**`Deformation.ToposThickening.obstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ExtensionObstruction.lean#L280). The attribute's comment: “vanishing criterion”.
 
 > The obstruction vanishes exactly when the end maps extend to a map of the two
 > extensions.
@@ -140,7 +140,7 @@ theorem obstructionClass_eq_zero_iff
 
 [Tag 08ME](https://stacks.math.columbia.edu/tag/08ME) in the Stacks Project.
 
-**`Deformation.ToposThickening.fixedActionExtensionClass_torsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/Torsor.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/Torsor.lean#L685).
+**`Deformation.ToposThickening.fixedActionExtensionClass_torsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/Torsor.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/Torsor.lean#L685).
 
 > **Stacks 08ME.** If some extension over a first order thickening of ringed topoi induces the
 > prescribed action `c` of the square-zero ideal, then the isomorphism classes of extensions
@@ -162,7 +162,7 @@ theorem fixedActionExtensionClass_torsor
       (FixedActionExtensionClass.{_, _, _, _, _, _, e} hi F K c))
 ```
 
-**`Deformation.ToposThickening.exists_addTorsor_fixedActionExtensionIsoClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedActionIsoClasses.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedActionIsoClasses.lean#L170).
+**`Deformation.ToposThickening.exists_addTorsor_fixedActionExtensionIsoClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedActionIsoClasses.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedActionIsoClasses.lean#L170).
 
 > **Stacks 08ME.** Let `i` be a first order thickening of ringed topoi, `F`, `K` modules over
 > the quotient structure sheaf and `c : I ⊗ F ⟶ K` linear. If there is an extension
@@ -194,7 +194,7 @@ theorem exists_addTorsor_fixedActionExtensionIsoClass
 
 [Tag 08MF](https://stacks.math.columbia.edu/tag/08MF) in the Stacks Project.
 
-**`Deformation.ToposThickening.existenceObstructionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean#L618). The attribute's comment: “obstruction class”.
+**`Deformation.ToposThickening.existenceObstructionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean#L618). The attribute's comment: “obstruction class”.
 
 > **Stacks 08MF.** The obstruction to the existence of an extension over a first order
 > thickening of ringed topoi inducing a prescribed action `c` of the square-zero ideal: a class in
@@ -213,7 +213,7 @@ noncomputable def existenceObstructionClass
     Abelian.Ext F K 2
 ```
 
-**`Deformation.ToposThickening.existenceObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean#L636). The attribute's comment: “vanishing criterion”.
+**`Deformation.ToposThickening.existenceObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/FixedAction/ExistenceObstruction.lean#L636). The attribute's comment: “vanishing criterion”.
 
 > **Stacks 08MF.** The obstruction class vanishes exactly when there is an extension of `F` by
 > `K` over the first order thickening whose canonical action of the square-zero ideal is `c`.
@@ -241,7 +241,7 @@ theorem existenceObstructionClass_eq_zero_iff
 
 [Tag 08MG](https://stacks.math.columbia.edu/tag/08MG) in the Stacks Project.
 
-**`Deformation.ToposThickening.Trivialization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L68). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
+**`Deformation.ToposThickening.Trivialization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L68). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
 
 > A retraction of a morphism of ringed topoi: a morphism in the reverse direction whose
 > composite direct-image functor is identified with the identity, compatibly with the
@@ -251,7 +251,7 @@ theorem existenceObstructionClass_eq_zero_iff
 structure Trivialization (i : RingedToposHom X Y)
 ```
 
-**`Deformation.ToposThickening.IsTrivial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L87). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
+**`Deformation.ToposThickening.IsTrivial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L87). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
 
 > A morphism of ringed topoi is trivial if it admits a trivialization.
 
@@ -259,7 +259,7 @@ structure Trivialization (i : RingedToposHom X Y)
 abbrev IsTrivial (i : RingedToposHom X Y) : Prop
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening.moduleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean#L532). The attribute's comment: “trivialized first order thickenings are the O-modules; morphisms of thickenings run in the algebraic direction (A\_T ⟶ A\_S of sheaves of rings, the opposite of the source's ringed-topos morphisms of Stacks 08MK), so the module side carries no ᵒᵖ; stated at a single universe (site C : Type u with Category.\{u} C, sheaves valued in Type u), which is the source's own setting since the Stacks Project fixes one universe throughout”.
+**`Deformation.ToposThickening.TrivializedThickening.moduleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean#L532). The attribute's comment: “trivialized first order thickenings are the O-modules; morphisms of thickenings run in the algebraic direction (A\_T ⟶ A\_S of sheaves of rings, the opposite of the source's ringed-topos morphisms of Stacks 08MK), so the module side carries no ᵒᵖ; stated at a single universe (site C : Type u with Category.\{u} C, sheaves valued in Type u), which is the source's own setting since the Stacks Project fixes one universe throughout”.
 
 > **Stacks 08MG.** The category of trivialized first order thickenings of a ringed topos
 > `(Sh(C), O)` is equivalent to the category of `O`-modules: a module goes to the square-zero
@@ -279,7 +279,7 @@ noncomputable def moduleEquivalence :
     SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf O) ≌ TrivializedThickening O
 ```
 
-**`Deformation.ToposThickening.trivializationOfSplitting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean#L59). The attribute's comment: “splitting\_determines\_trivialization”.
+**`Deformation.ToposThickening.trivializationOfSplitting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean#L59). The attribute's comment: “splitting\_determines\_trivialization”.
 
 > A splitting of the structure sheaf of a first order thickening determines a trivialization
 > whose structure map is the given section.
@@ -295,7 +295,7 @@ noncomputable def trivializationOfSplitting (i : RingedToposHom X Y)
         π.retraction.fSharp ≫ α.hom.app Y.O = split }
 ```
 
-**`Deformation.ToposThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean#L55). The attribute's comment: “splitting\_from\_trivialization”.
+**`Deformation.ToposThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean#L55). The attribute's comment: “splitting\_from\_trivialization”.
 
 > A trivialization splits the structure map of a first order thickening. The natural
 > equivalence identifies the ring sheaf with the square-zero extension of its quotient by its
@@ -311,7 +311,7 @@ noncomputable def splittingFromTrivialization (i : RingedToposHom X Y)
             i.fSharp.hom split // hs.retraction = i.fSharp.hom }
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L98). The attribute's comment: “the category of trivialized first order thickenings: objects”.
+**`Deformation.ToposThickening.TrivializedThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L98). The attribute's comment: “the category of trivialized first order thickenings: objects”.
 
 > A trivialized first order thickening of the ringed topos `(Sh(C), O)`, presented on the
 > site `C`: a sheaf of commutative rings `A` with a surjection onto `O` whose kernel has square
@@ -321,7 +321,7 @@ noncomputable def splittingFromTrivialization (i : RingedToposHom X Y)
 structure TrivializedThickening (O : Sheaf J CommRingCat.{u})
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L131). The attribute's comment: “the category of trivialized first order thickenings: morphisms, in the algebraic direction A\_T ⟶ A\_S (the opposite of the source's ringed-topos morphisms of Stacks 08MK)”.
+**`Deformation.ToposThickening.TrivializedThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L131). The attribute's comment: “the category of trivialized first order thickenings: morphisms, in the algebraic direction A\_T ⟶ A\_S (the opposite of the source's ringed-topos morphisms of Stacks 08MK)”.
 
 > A morphism of trivialized first order thickenings: a morphism of the structure sheaves
 > compatible with both the surjections and the trivializations.
@@ -336,7 +336,7 @@ structure TrivializedThickening (O : Sheaf J CommRingCat.{u})
 structure Hom (T S : TrivializedThickening O)
 ```
 
-**`Deformation.ToposThickening.trivializedThickeningOfTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L153). The attribute's comment: “a trivialized thickening is an object of the category; the target ringed topos is at a single universe, forced by Deformation.ToposThickening.TrivializedThickening, whose category is declared over a site C : Type u with Category.\{u} C and sheaves valued in Type u — the source's own setting, since the Stacks Project fixes one universe throughout”.
+**`Deformation.ToposThickening.trivializedThickeningOfTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L153). The attribute's comment: “a trivialized thickening is an object of the category; the target ringed topos is at a single universe, forced by Deformation.ToposThickening.TrivializedThickening, whose category is declared over a site C : Type u with Category.\{u} C and sheaves valued in Type u — the source's own setting, since the Stacks Project fixes one universe throughout”.
 
 > A trivialization of a first order thickening of ringed topoi exhibits the thickening as an
 > object of the category of trivialized first order thickenings of `(Sh(D), i_*O)`, which is the
@@ -348,7 +348,7 @@ noncomputable def trivializedThickeningOfTrivialization (i : RingedToposHom X Y)
     TrivializedThickening ((pushforwardCommRingFunctor i.toToposHom).obj X.O)
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening.exists_thickening_trivialization_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L638). The attribute's comment: “clause (4) for the source's objects: every object of the category of trivialized first order thickenings of (Sh(C), O) is the trivialized thickening of a first order thickening of ringed topoi (Sh(C), O) ⟶ (Sh(C), A) with a trivialization of it, up to the isomorphism of objects supplied here and the equivalence of categories Deformation.ToposThickening.TrivializedThickening.baseIsoEquivalence that reads the base through the comparison of the direct image along the identity morphism of topoi with the identity functor; together with Deformation.ToposThickening.trivializedThickeningOfTrivialization in the other direction this identifies the objects of the two presentations, which is what makes Deformation.ToposThickening.TrivializedThickening.moduleEquivalence the source's sentence about the source's objects; the thickening is presented on the site of the base, which loses nothing because the direct image of a first order thickening is an equivalence of topoi, and at a single universe, the Stacks Project's own convention”.
+**`Deformation.ToposThickening.TrivializedThickening.exists_thickening_trivialization_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L638). The attribute's comment: “clause (4) for the source's objects: every object of the category of trivialized first order thickenings of (Sh(C), O) is the trivialized thickening of a first order thickening of ringed topoi (Sh(C), O) ⟶ (Sh(C), A) with a trivialization of it, up to the isomorphism of objects supplied here and the equivalence of categories Deformation.ToposThickening.TrivializedThickening.baseIsoEquivalence that reads the base through the comparison of the direct image along the identity morphism of topoi with the identity functor; together with Deformation.ToposThickening.trivializedThickeningOfTrivialization in the other direction this identifies the objects of the two presentations, which is what makes Deformation.ToposThickening.TrivializedThickening.moduleEquivalence the source's sentence about the source's objects; the thickening is presented on the site of the base, which loses nothing because the direct image of a first order thickening is an equivalence of topoi, and at a single universe, the Stacks Project's own convention”.
 
 > **Stacks 08MG, clause (4), for the source's objects.** Every object of the category of
 > trivialized first order thickenings of `(Sh(C), O)` is, up to isomorphism, the trivialized
@@ -371,7 +371,7 @@ theorem exists_thickening_trivialization_iso :
 
 [Tag 08MI](https://stacks.math.columbia.edu/tag/08MI) in the Stacks Project.
 
-**`Deformation.ToposThickening.trivialExtension_bijective_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/TrivialExtension.lean, line 887](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/TrivialExtension.lean#L887).
+**`Deformation.ToposThickening.trivialExtension_bijective_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/TrivialExtension.lean, line 901](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/TrivialExtension.lean#L901).
 
 > **Stacks 08MI.** Let `i : (Sh(C), O) ⟶ (Sh(D), O')` be a first order thickening of ringed
 > topoi with square-zero ideal `I`, and `π` a trivialization of it. Let `F`, `K` be `O`-modules and
@@ -447,7 +447,7 @@ theorem trivialExtension_bijective_underlyingExtensionClass
 
 [Tag 08MJ](https://stacks.math.columbia.edu/tag/08MJ) in the Stacks Project.
 
-**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.PushoutExtensionData.extensionOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean#L425). The attribute's comment: “the canonical map on extensions, by pushout along the map of kernel modules”.
+**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.PushoutExtensionData.extensionOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean#L425). The attribute's comment: “the canonical map on extensions, by pushout along the map of kernel modules”.
 
 > **Stacks Project, Tag 08MJ.** The extension over the first thickening produced from an
 > extension over the second: the pushout `F'₂ ⊔_{K₂} K₁` carries an `O'₁`-module structure, built
@@ -464,7 +464,7 @@ noncomputable def extensionOne :
       ((SheafOfModules.restrictScalars (structureRingMap i)).obj dat.K₁) 0
 ```
 
-**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.PushoutExtensionData.extensionOne_actionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean#L506). The attribute's comment: “the action map of the pushed-out extension is c₁”.
+**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.PushoutExtensionData.extensionOne_actionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ExtensionPushout/TwistedDescent.lean#L506). The attribute's comment: “the action map of the pushed-out extension is c₁”.
 
 > **Stacks Project, Tag 08MJ.** The canonical action map of the extension produced over the
 > first thickening is the prescribed `c₁`.
@@ -478,7 +478,7 @@ theorem extensionOne_actionMap :
 
 [Tag 08MK](https://stacks.math.columbia.edu/tag/08MK) in the Stacks Project.
 
-**`Deformation.ToposThickening.underlyingExtensionClass_eq_comp_mk₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/TrivializedThickeningComparison.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/TrivializedThickeningComparison.lean#L266). The attribute's comment: “the commutative square: the extension class of the image extension is the image of the extension class under functoriality of `Ext` in the map of kernel modules”.
+**`Deformation.ToposThickening.underlyingExtensionClass_eq_comp_mk₀`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/TrivializedThickeningComparison.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/TrivializedThickeningComparison.lean#L266). The attribute's comment: “the commutative square: the extension class of the image extension is the image of the extension class under functoriality of `Ext` in the map of kernel modules”.
 
 > If `h` is a morphism of trivialized first order thickenings of `(Sh(C), O)` and an extension
 > `F'₂` of `F` by `K₂` over the second thickening maps to an extension `F'₁` of `F` by `K₁` over
@@ -518,7 +518,7 @@ theorem underlyingExtensionClass_eq_comp_mk₀
 
 [Tag 0CYC](https://stacks.math.columbia.edu/tag/0CYC) in the Stacks Project.
 
-**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ObstructionCompatibility.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ObstructionCompatibility.lean#L405).
+**`Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ObstructionCompatibility.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ObstructionCompatibility.lean#L405).
 
 > The obstruction classes of the two thickenings are compatible: the map
 > `Ext²_O(F, K₂) ⟶ Ext²_O(F, K₁)` induced by `κ` carries `o(F, K₂, c₂)` to `o(F, K₁, c₁)`.
@@ -540,7 +540,7 @@ theorem existenceObstructionClass_first
 
 [Tag 08ML](https://stacks.math.columbia.edu/tag/08ML) in the Stacks Project.
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L109). The attribute's comment: “the sequence of morphisms of first order thickenings being classified”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L125). The attribute's comment: “the sequence of morphisms of first order thickenings being classified”.
 
 > **Stacks 08ML.** A sequence of morphisms of first order thickenings of a ringed topos
 > `X`: three first order thickenings `i₁`, `i₂`, `i₃` of `X`, with their defining ideals, and two
@@ -550,7 +550,7 @@ theorem existenceObstructionClass_first
 structure FirstOrderThickeningSequence
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence.IsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L205). The attribute's comment: “paragraph (1), the definition: the complex condition on the ideal maps”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence.IsComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L221). The attribute's comment: “paragraph (1), the definition: the complex condition on the ideal maps”.
 
 > **Stacks 08ML.** A sequence of morphisms of first order thickenings of a ringed topos is a
 > *complex* when the induced maps of its defining ideals compose to zero, so that
@@ -560,18 +560,19 @@ structure FirstOrderThickeningSequence
 def IsComplex : Prop
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence.IsShortExactSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L225). The attribute's comment: “paragraph (2): the short exact sequence condition on the ideal maps”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence.IsShortExactOnBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/FirstOrderThickeningSequence.lean#L306). The attribute's comment: “paragraph (2): the short exact sequence `0 → I₃ → I₂ → I₁ → 0` of `O`-modules, each ideal `Iₖ` read as the `O`-module `iₖ^*Iₖ = Iₖ/Iₖ²`”.
 
-> **Stacks 08ML.** A sequence of morphisms of first order thickenings of a ringed topos is a
-> *short exact sequence* when its induced maps of defining ideals form a short exact sequence
-> `0 ⟶ I₃ ⟶ I₂ ⟶ I₁ ⟶ 0` of modules: the sequence is a complex, the map `I₃ ⟶ I₂` is a
-> monomorphism, the map `I₂ ⟶ I₁` is an epimorphism, and the complex is exact in the middle.
+> **Stacks 08ML.** A sequence of morphisms of first order thickenings of a ringed topos
+> `(Sh(C), O)` is a *short exact sequence* when the induced maps of defining ideals form a short
+> exact sequence `0 ⟶ I₃ ⟶ I₂ ⟶ I₁ ⟶ 0` of `O`-modules: the composite `I₃ ⟶ I₁` is zero, the
+> map `I₃ ⟶ I₂` is a monomorphism, the map `I₂ ⟶ I₁` is an epimorphism, and the sequence is
+> exact in the middle. Each ideal is read as an `O`-module through its pullback `iₖ^*Iₖ`.
 
 ```lean
-def IsShortExactSequence : Prop
+def IsShortExactOnBase : Prop
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.fSharp₃_comp_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L175). The attribute's comment: “the composition D₁ ⟶ D₃ factors through the base”.
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.fSharp₃_comp_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L175). The attribute's comment: “the composition D₁ ⟶ D₃ factors through the base”.
 
 > **Stacks 08ML.** For a complex of first order thickenings, the composition
 > `(Sh(D₁), O'₁) ⟶ (Sh(D₃), O'₃)` factors through `(Sh(C), O) ⟶ (Sh(D₃), O'₃)`: on structure
@@ -581,7 +582,7 @@ def IsShortExactSequence : Prop
 theorem fSharp₃_comp_splitting : S.fSharp₃ ≫ S.splitting hS = S.whole.hSharp
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.trivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L207). The attribute's comment: “the canonical trivialization of the smallest thickening”.
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.trivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L207). The attribute's comment: “the canonical trivialization of the smallest thickening”.
 
 > **Stacks 08ML.** The canonical trivialization `π : (Sh(D₁), O'₁) ⟶ (Sh(C), O)` of the
 > smallest thickening of a complex of first order thickenings.
@@ -590,7 +591,7 @@ theorem fSharp₃_comp_splitting : S.fSharp₃ ≫ S.splitting hS = S.whole.hSha
 noncomputable def trivialization : Trivialization i
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L213). The attribute's comment: “the smallest thickening of a complex is trivial”.
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexTrivialization.lean#L213). The attribute's comment: “the smallest thickening of a complex is trivial”.
 
 > **Stacks 08ML.** The smallest thickening of a complex of first order thickenings is a
 > trivial first order thickening of the base.
@@ -599,7 +600,7 @@ noncomputable def trivialization : Trivialization i
 theorem isTrivial (S : FirstOrderThickeningComplex i) (hS : S.IsComplex) : IsTrivial i
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence.i₃_fSharp_comp_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L465). The attribute's comment: “the composition D₁ ⟶ D₃ factors through the base”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence.i₃_fSharp_comp_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L465). The attribute's comment: “the composition D₁ ⟶ D₃ factors through the base”.
 
 > **Stacks 08ML.** For a complex of first order thickenings, the composition
 > `(Sh(D₁), O'₁) ⟶ (Sh(D₃), O'₃)` factors through `(Sh(C), O) ⟶ (Sh(D₃), O'₃)`: on structure
@@ -613,7 +614,7 @@ theorem i₃_fSharp_comp_splitting (hS : S.IsComplex) :
       S.wholeSharp
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence.trivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L509). The attribute's comment: “the canonical trivialization of the smallest thickening”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence.trivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L509). The attribute's comment: “the canonical trivialization of the smallest thickening”.
 
 > **Stacks 08ML.** The canonical trivialization `π : (Sh(D₁), O'₁) ⟶ (Sh(C), O)` of the
 > smallest thickening of a complex of first order thickenings.
@@ -622,7 +623,7 @@ theorem i₃_fSharp_comp_splitting (hS : S.IsComplex) :
 noncomputable def trivialization (hS : S.IsComplex) : Trivialization S.i₁
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningSequence.isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L516). The attribute's comment: “the smallest thickening of a complex is trivial”.
+**`Deformation.ToposThickening.FirstOrderThickeningSequence.isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningSequenceTrivialization.lean#L516). The attribute's comment: “the smallest thickening of a complex is trivial”.
 
 > **Stacks 08ML.** The smallest thickening of a complex of first order thickenings is a
 > trivial first order thickening of the base.
@@ -635,7 +636,7 @@ theorem isTrivial (hS : S.IsComplex) : IsTrivial S.i₁
 
 [Tag 08MM](https://stacks.math.columbia.edu/tag/08MM) in the Stacks Project.
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundary.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundary.lean#L199). The attribute's comment: “the claim: the boundary of the extension class is the obstruction class”.
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundary.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundary.lean#L199). The attribute's comment: “the claim: the boundary of the extension class is the obstruction class”.
 
 > Let `(Sh(C), O)` be a ringed topos, `F` an `O`-module, and let `O'₃ ⟶ O'₂ ⟶ O'₁` be a
 > complex of first order thickenings of `(Sh(C), O)` presented on one site, with `π` a
@@ -688,7 +689,7 @@ theorem boundary_underlyingExtensionClass (_hS : S.IsComplex) (π : Trivializati
       existenceObstructionClass S.third F K₃ c₃
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean#L247).
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean#L246).
 
 > **Stacks Project, Tag 08MM.** Let `(Sh(C), O)` be a ringed topos, `F` an `O`-module and
 > `O'₃ ⟶ O'₂ ⟶ O'₁` a complex of first order thickenings of `(Sh(C), O)` (Stacks 08ML), presented
@@ -737,7 +738,7 @@ theorem boundary_underlyingExtensionClass_eq_obstructionClass
       existenceObstructionClass S.third F K₃ c₃
 ```
 
-**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass_extensionOne_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean#L337).
+**`Deformation.ToposThickening.FirstOrderThickeningComplex.boundary_underlyingExtensionClass_extensionOne_eq_obstructionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/ThickeningComplexBoundaryCanonical.lean#L335).
 
 > **Stacks Project, Tag 08MM**, for the extension `F'₁` that Stacks 08MJ constructs. Let
 > `(Sh(C), O)` be a ringed topos, `F` an `O`-module and `O'₃ ⟶ O'₂ ⟶ O'₁` a complex of first order
@@ -786,4 +787,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.10, Tag 08MA](https://stacks.math.columbia.edu/tag/08MA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

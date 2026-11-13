@@ -7,7 +7,7 @@ statement: formalized
 
 # Closed range theorem
 
-7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html).
+7 results, 5 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html).
 
 ## The range of a bounded operator as a set
 
@@ -19,7 +19,7 @@ regarded as a linear subspace of $F'$.
 This lets closedness of the range pass between the anti-Lipschitz criterion, stated for the
 set of values, and the adjoint orthogonality identities, stated for the linear subspace.
 
-Formalized by `ContinuousLinearMap.setRange_eq_coe_linearMap_range`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#set-range-eq-coe-linear-map-range).
+Formalized by `ContinuousLinearMap.setRange_eq_coe_linearMap_range`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#set-range-eq-coe-linear-map-range).
 
 ## Restriction to the orthogonal complement of the kernel keeps the range
 
@@ -30,7 +30,7 @@ restriction of $T$ to the orthogonal complement $(\ker T)^\perp$ of its kernel h
 range as $T$: every value $T x$ is attained at the orthogonal projection of $x$ onto
 $(\ker T)^\perp$, since the difference lies in $\ker T$.
 
-Formalized by `ContinuousLinearMap.range_comp_subtypeL_orthogonalComplement_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#range-comp-subtype-l-orthogonal-compleme).
+Formalized by `ContinuousLinearMap.range_comp_subtypeL_orthogonalComplement_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#range-comp-subtype-l-orthogonal-compleme).
 
 ## Restriction to the orthogonal complement of the kernel is injective
 
@@ -40,7 +40,7 @@ and let $T : E \to F$ be a bounded linear operator. Then the restriction of $T$ 
 orthogonal complement $(\ker T)^\perp$ of its kernel is injective: a vector lying in both
 $\ker T$ and $(\ker T)^\perp$ is zero.
 
-Formalized by `ContinuousLinearMap.injective_comp_subtypeL_orthogonalComplement_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#injective-comp-subtype-l-orthogonal-comp).
+Formalized by `ContinuousLinearMap.injective_comp_subtypeL_orthogonalComplement_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#injective-comp-subtype-l-orthogonal-comp).
 
 ## Closed range passes to the adjoint
 
@@ -59,7 +59,7 @@ C \|y\| \|T^\dagger y\|$; cancelling $\|y\|$ shows that $T^\dagger$ is bounded b
 $(\ker T^\dagger)^\perp$, so its range, which is the range of its restriction to
 $(\ker T^\dagger)^\perp$, is closed.
 
-Formalized by `ContinuousLinearMap.isClosed_range_adjoint_of_isClosed_range`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-of-is-closed-ran).
+Formalized by `ContinuousLinearMap.isClosed_range_adjoint_of_isClosed_range`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-of-is-closed-ran).
 
 ## Closed range theorem for adjoints
 
@@ -71,7 +71,7 @@ range of $T^\dagger$ is closed in $E$.
 The reverse direction is the forward direction applied to $T^\dagger$, using
 $T^{\dagger\dagger} = T$.
 
-Formalized by `ContinuousLinearMap.isClosed_range_adjoint_iff`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-iff).
+Formalized by `ContinuousLinearMap.isClosed_range_adjoint_iff`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/ClosedRangeAdjoint.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-iff).
 
 ## Closed range from a Fredholm $T^*T$
 
@@ -89,7 +89,7 @@ operator is closed.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; General theory of linear operators), problem `ma_proofbench_l2_23`, with the change above.
 
-Stated but not proved: `MathlibExt.Analysis.OperatorTheory.AdjointCompFredholmClosedRangeWanted.isClosed_range_of_isFredholm_adjoint_comp` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/AdjointCompFredholmClosedRangeWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/OperatorTheory/AdjointCompFredholmClosedRangeWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-of-is-fredholm-adjoint-c).
+Stated but not proved: `MathlibExt.Analysis.OperatorTheory.AdjointCompFredholmClosedRangeWanted.isClosed_range_of_isFredholm_adjoint_comp` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/AdjointCompFredholmClosedRangeWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/OperatorTheory/AdjointCompFredholmClosedRangeWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-of-is-fredholm-adjoint-c).
 
 ## Closed range passes to the Hilbert space adjoint
 
@@ -101,7 +101,7 @@ the range of $A$ is closed in $Y$, then the range of $A^*$ is closed in $X$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; General theory of linear operators), problem `ma_proofbench_l2_85`.
 
-Stated but not proved: `MathlibExt.Analysis.OperatorTheory.HilbertAdjointClosedRangeWanted.isClosed_range_adjoint_of_isClosed_range` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/HilbertAdjointClosedRangeWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/OperatorTheory/HilbertAdjointClosedRangeWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-of-is-closed-ran-2).
+Stated but not proved: `MathlibExt.Analysis.OperatorTheory.HilbertAdjointClosedRangeWanted.isClosed_range_adjoint_of_isClosed_range` is written with `theorem_wanted` in [WantedExt/Analysis/OperatorTheory/HilbertAdjointClosedRangeWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/OperatorTheory/HilbertAdjointClosedRangeWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html#is-closed-range-adjoint-of-is-closed-ran-2).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Closed range theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/compact-and-fredholm/closed-range-theorem)

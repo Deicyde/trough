@@ -1,59 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.Triangulated.nonempty_upperRightCorner, CategoryTheory.Triangulated.UpperRightCorner.ofBiprodCone, AlgebraicGeometry.Space.fibreProductCotangentCorner, AlgebraicGeometry.Space.fiberProductCotangentCorner, AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent, AlgebraicGeometry.Space.upperRightCorner_homology, AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology
+lean: AlgebraicGeometry.Space.fibreProductCotangentCorner, AlgebraicGeometry.Space.fiberProductCotangentCorner, AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent, AlgebraicGeometry.Space.upperRightCorner_homology, AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology
 statement: formalized
 proof: formalized
 ---
 
 # 92.28 Fibre products of algebraic spaces and the cotangent complex
 
-Section 92.28 of the Stacks Project, [Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.28 of the Stacks Project, [Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09DK, an equation
 
 [Tag 09DK](https://stacks.math.columbia.edu/tag/09DK) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.nonempty_upperRightCorner`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/UpperRightCorner.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/UpperRightCorner.lean#L160). The attribute's comment: “existence of the upper right corner, in a triangulated category”.
-
-> **Stacks 09DK.** Two distinguished triangles sharing their middle vertex have an upper right
-> corner: an object `E` turning both the top row `A₁ ⟶ C₂ ⟶ E` and the right column
-> `A₂ ⟶ C₁ ⟶ E` of the diagram into distinguished triangles, with the remaining square
-> commutative.
->
-> This is the nine diagram of Tag 05R0 applied to the lower left square of the diagram, whose
-> left column and bottom row are the contractible triangles `0 ⟶ A₁ ⟶ A₁` and `0 ⟶ A₂ ⟶ A₂`;
-> the square commutes because both of its composites leave a zero object. The identity second
-> arrow of each contractible triangle is what identifies the first arrow of the third row with
-> `α₁ ≫ β₂` and the first arrow of the third column with `α₂ ≫ β₁`.
-
-```lean
-theorem nonempty_upperRightCorner (h₁ : Triangle.mk α₁ β₁ γ₁ ∈ distTriang D)
-    (h₂ : Triangle.mk α₂ β₂ γ₂ ∈ distTriang D) :
-    Nonempty (UpperRightCorner α₁ β₁ α₂ β₂)
-```
-
-**`CategoryTheory.Triangulated.UpperRightCorner.ofBiprodCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/UpperRightCorner.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/UpperRightCorner.lean#L180). The attribute's comment: “the cone of the direct sum as an upper right corner, in a triangulated category”.
-
-> **Stacks 09DK.** Any cone of the map `A₁ ⊞ A₂ ⟶ M` out of the direct sum, with components
-> the first arrows `α₁` and `α₂` of the two given triangles, is an upper right corner.
->
-> The two arrows into the cone come from the octahedron axiom for the two factorizations of
-> `biprod.desc α₁ α₂` through the biproduct inclusions: factoring through `biprod.inr` has
-> `A₁` as the cone of the first map and `C₂` as the cone of the composite, so the octahedron is
-> the top row, and factoring through `biprod.inl` has `A₂` and `C₁`, so the octahedron is the
-> right column. In each case the first arrow of the octahedron becomes the required composite
-> after precomposition with the complementary inclusion.
-
-```lean
-noncomputable def UpperRightCorner.ofBiprodCone (h₁ : Triangle.mk α₁ β₁ γ₁ ∈ distTriang D)
-    (h₂ : Triangle.mk α₂ β₂ γ₂ ∈ distTriang D) {E : D} {ε : M ⟶ E}
-    {ζ : E ⟶ (A₁ ⊞ A₂)⟦(1 : ℤ)⟧}
-    (hE : Triangle.mk (biprod.desc α₁ α₂) ε ζ ∈ distTriang D) :
-    UpperRightCorner α₁ β₁ α₂ β₂
-```
-
-**`AlgebraicGeometry.Space.fibreProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L148). The attribute's comment: “the diagram for a commutative square, in particular for the two projections of a fibre product; `E` is the cone of the map out of the direct sum”.
+**`AlgebraicGeometry.Space.fibreProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L156). The attribute's comment: “the diagram for a commutative square, in particular for the two projections of a fibre product; `E` is the cone of the map out of the direct sum”.
 
 > **Stacks 09DK.** Let `p : W ⟶ X` and `q : W ⟶ Y` be morphisms of algebraic spaces over `S`
 > with `p ≫ f = q ≫ g` for morphisms `f : X ⟶ Z` and `g : Y ⟶ Z`, for instance the two projections
@@ -94,12 +55,13 @@ noncomputable def fibreProductCotangentCorner (h : p ≫ f = q ≫ g) :
           distTriang (DerivedCategory (smallEtaleModulesULift B S hS W)) }
 ```
 
-**`AlgebraicGeometry.Space.fiberProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L182). The attribute's comment: “the diagram for the fibre product `X ×_Z Y` and its two projections”.
+**`AlgebraicGeometry.Space.fiberProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L192). The attribute's comment: “the diagram for the fibre product `X ×_Z Y` and its two projections; `E` is the cone of the map out of the direct sum”.
 
 > **Stacks 09DK**, for the fibre product `X ×_Z Y` of algebraic spaces (Stacks 02X2) with its
 > projections `p` and `q`: the diagram of
 > `AlgebraicGeometry.Space.fibreProductCotangentCorner` in `D(𝒪_{X ×_Z Y})`, built on the
-> transitivity triangles of `X ×_Z Y ⟶ X ⟶ Z` and `X ×_Z Y ⟶ Y ⟶ Z`.
+> transitivity triangles of `X ×_Z Y ⟶ X ⟶ Z` and `X ×_Z Y ⟶ Y ⟶ Z`, with `E` a cone of the map
+> `Lp^*L_{X/Z} ⊕ Lq^*L_{Y/Z} ⟶ L_{X ×_Z Y/Z}`.
 
 ```lean
 noncomputable def fiberProductCotangentCorner
@@ -109,7 +71,7 @@ noncomputable def fiberProductCotangentCorner
 
 [Tag 09DL](https://stacks.math.columbia.edu/tag/09DL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean#L332).
+**`AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean#L331).
 
 > **Stacks 09DL.** Let `X ⟶ Z` and `Y ⟶ Z` be morphisms of algebraic spaces over `S`, and let
 > `W = X ×_Z Y` with projections `p` and `q`. If `X` and `Y` are Tor independent over `Z`, then the
@@ -134,7 +96,7 @@ theorem fiberProduct_cotangentComplex_of_torIndependent (f : X ⟶ Z) (g : Y ⟶
 
 [Tag 09DM](https://stacks.math.columbia.edu/tag/09DM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L303). The attribute's comment: “for every cartesian square of algebraic spaces, in particular for the fibre product with its two projections (`fiberProduct_upperRightCorner_homology`), and every object E fitting into the upper right corner of the diagram of 09DK”.
+**`AlgebraicGeometry.Space.upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L303). The attribute's comment: “for every cartesian square of algebraic spaces, in particular for the fibre product with its two projections (`fiberProduct_upperRightCorner_homology`), and every object E fitting into the upper right corner of the diagram of 09DK”.
 
 > **Stacks 09DM, for a cartesian square.** Let `p : W ⟶ X`, `q : W ⟶ Y`, `f : X ⟶ Z`,
 > `g : Y ⟶ Z` be a cartesian square of algebraic spaces over `S` and let `E` be an object fitting
@@ -175,7 +137,7 @@ theorem upperRightCorner_homology (hpb : IsPullback p q f g)
           (CommAlgCat.torOneTensorProductModule _ _ _))
 ```
 
-**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×\_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^\{-1}(E) = 0, and H^\{-2}(E)\_w ≅ Tor\_1^R(A, B) ⊗\_\{A ⊗\_R B} C as C-modules for the etale local rings R, A, B, C”.
+**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×\_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^\{-1}(E) = 0, and H^\{-2}(E)\_w ≅ Tor\_1^R(A, B) ⊗\_\{A ⊗\_R B} C as C-modules for the etale local rings R, A, B, C”.
 
 > **Stacks 09DM.** Let `X ⟶ Z` and `Y ⟶ Z` be morphisms of algebraic spaces over `S`, let
 > `W = X ×_Z Y` with projections `p` and `q`, and let `E` be the object of Stacks 09DK, i.e. any
@@ -249,4 +211,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.28, Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

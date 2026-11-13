@@ -1,6 +1,6 @@
 # Congruences and modular arithmetic
 
-117 results of ATLAS's vault, 39 proved and 78 stated but not proved, in this branch's topics.
+117 results of ATLAS's vault, 36 proved, 69 stated but not proved and 12 whose declaration the Lean read here does not declare, in this branch's topics.
 
 Congruences for factorials, quotients and power sums (Wilson, Wolstenholme, Fermat quotients), lifting the exponent, multiplicative order, primitive roots, residue systems.
 

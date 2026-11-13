@@ -7,7 +7,7 @@ statement: formalized
 
 # Zeros of polynomials: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/index.html).
 
 Location, counting and multiplicity of the zeros of polynomials: real-rootedness, stability, interlacing, root bounds and Sturm sequences.
 
@@ -24,7 +24,7 @@ complement is equivalent to the path-connectedness used by Rojas.
 
 - H. Auerbach, Problem 148 of the Scottish Book; both necessity and sufficiency proved by J. M. Rojas, "About Herman Auerbach's problem on factors of real polynomials with connected zero set complement", 2015 (see the commentary in Mauldin (ed.), The Scottish Book, 2nd ed., 2015).
 
-Stated but not proved: `MathlibExt.Algebra.Polynomial.ScottishBook148Wanted.auerbachPolynomialZeroSetSeparatesIffFactorsSignDefinite` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ScottishBook148Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/Polynomial/ScottishBook148Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/index.html#auerbach-polynomial-zero-set-separates-i).
+Stated but not proved: `MathlibExt.Algebra.Polynomial.ScottishBook148Wanted.auerbachPolynomialZeroSetSeparatesIffFactorsSignDefinite` is written with `theorem_wanted` in [WantedExt/Algebra/Polynomial/ScottishBook148Wanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/Polynomial/ScottishBook148Wanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/index.html#auerbach-polynomial-zero-set-separates-i).
 
 ## Depends on
 
@@ -33,4 +33,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zeros of polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/zeros-of-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/zeros-of-polynomials)

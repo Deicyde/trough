@@ -8,7 +8,7 @@ proof: formalized
 
 # Multigraded Poincaré polynomial
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html).
 
 ## Multigraded Poincaré polynomial
 
@@ -21,7 +21,7 @@ $\mathbb{N}[\mathbb{N} \times \mathbb{Z}^n]$ whose coefficient at $(i, \alpha)$ 
 multigraded Betti number $\beta_{i,\alpha}(D)$ of $D$ in homological degree $i$ and multidegree
 $\alpha$; the hypotheses on the $\iota_i$ make these coefficients finitely supported.
 
-Formalized by `MetaMathlibExt.multigradedPoincarePolynomial`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html#multigraded-poincare-polynomial).
+Formalized by `MetaMathlibExt.multigradedPoincarePolynomial`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html#multigraded-poincare-polynomial).
 
 ## Coefficients of the multigraded Poincaré polynomial
 
@@ -33,7 +33,7 @@ $b \in \mathbb{N}$. For every $i \in \mathbb{N}$ and $\alpha \in \mathbb{Z}^n$, 
 at $(i, \alpha)$ of the multigraded Poincaré polynomial of $D$ is the multigraded Betti number
 $\beta_{i,\alpha}(D)$ of $D$ in homological degree $i$ and multidegree $\alpha$.
 
-Formalized by `MetaMathlibExt.multigradedPoincarePolynomial_coeff`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html#multigraded-poincare-polynomial-coeff).
+Formalized by `MetaMathlibExt.multigradedPoincarePolynomial_coeff`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincarePolynomial.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html#multigraded-poincare-polynomial-coeff).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multigraded Poincaré polynomial](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/multigraded-poincar-polynomial)

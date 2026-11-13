@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.31 Flat morphisms
 
-Section 18.31 of the Stacks Project, [Tag 04JA](https://stacks.math.columbia.edu/tag/04JA). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.31 of the Stacks Project, [Tag 04JA](https://stacks.math.columbia.edu/tag/04JA). 4 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04JB, a definition
 
 [Tag 04JB](https://stacks.math.columbia.edu/tag/04JB) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean#L49). The attribute's comment: “flat morphisms of ringed topoi”. References: SGA 4 Vbis (2.4.3.1), “non-fibered case”; SGA 4 V (1.8), “left flat”.
+**`AlgebraicGeometry.RingedToposHom.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean#L49). The attribute's comment: “flat morphisms of ringed topoi”. References: SGA 4 Vbis (2.4.3.1), “non-fibered case”; SGA 4 V (1.8), “left flat”.
 
 > A morphism of ringed topoi is flat when its inverse-image structure map is flat.
 
@@ -29,13 +29,13 @@ abbrev IsFlat {X : RingedTopos.{v, u, w}} {Y : RingedTopos.{v', u', w'}}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.RingedSite.Hom.IsFlat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedSites.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean#L59) (StacksFrontier): “flat morphisms of ringed sites”.
+- [`AlgebraicGeometry.RingedSite.Hom.IsFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedSites.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FlatMorphisms/RingedTopoi.lean#L59) (StacksFrontier): “flat morphisms of ringed sites”.
 
 ## Tag 04JC, a lemma
 
 [Tag 04JC](https://stacks.math.columbia.edu/tag/04JC) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.preservesFiniteLimits_ringedSitePullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1147). The attribute's comment: “left exactness of the flat pullback, for a morphism of ringed sites”.
+**`Stacks.SheafOfModules.InternalHom.preservesFiniteLimits_ringedSitePullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1147). The attribute's comment: “left exactness of the flat pullback, for a morphism of ringed sites”.
 
 > **Stacks 04JC for a morphism of ringed sites.** If `f` is flat — that is, if `O_C` is flat
 > as an `f⁻¹O_D`-module — then the pullback `f^* : Mod(O_D) ⥤ Mod(O_C)` of sheaves of modules
@@ -56,7 +56,7 @@ theorem preservesFiniteLimits_ringedSitePullback_of_isFlat
     Limits.PreservesFiniteLimits (ringedSitePullback f)
 ```
 
-**`CategoryTheory.Sites.abelianInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean#L446). The attribute's comment: “inverse\_image\_exact”.
+**`CategoryTheory.Sites.abelianInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean#L446). The attribute's comment: “inverse\_image\_exact”.
 
 > The inverse image of a morphism of topoi is exact on ordinary abelian sheaves.
 
@@ -66,7 +66,7 @@ theorem abelianInverseImage_exact :
       (abelianInverseImage f)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean#L369). The attribute's comment: “flat\_pullback\_exact”.
+**`Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean#L369). The attribute's comment: “flat\_pullback\_exact”.
 
 > **Stacks 04JC**, second assertion. Pullback of sheaves of modules along a *flat* morphism
 > of ringed topoi is exact: it preserves finite limits and finite colimits. The first assertion,
@@ -85,7 +85,7 @@ theorem pullbackModules_exact_of_isFlatMap (f : AlgebraicGeometry.RingedToposHom
 
 [Tag 08M5](https://stacks.math.columbia.edu/tag/08M5) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L285). The attribute's comment: “flatness over a morphism of ringed topoi: this predicate for the pullback ring”. References: SGA 4 V (1.1), “commutative case”.
+**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L286). The attribute's comment: “flatness over a morphism of ringed topoi: this predicate for the pullback ring”. References: SGA 4 V (1.1), “commutative case”.
 
 > A sheaf of modules is flat when tensoring on the right with it is an exact
 > endofunctor on sheaves of modules.
@@ -101,7 +101,7 @@ abbrev IsFlat {O : Sheaf J CommRingCat.{w}}
     (F : _root_.SheafOfModules.{z} (Stacks.SheafOfModules.Tensor.ringSheaf O)) : Prop
 ```
 
-**`AlgebraicGeometry.RingedToposHom.IsFlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/RingedToposFlatModule.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/RingedToposFlatModule.lean#L62). The attribute's comment: “the definition: a sheaf of modules flat over the target ringed topos”.
+**`AlgebraicGeometry.RingedToposHom.IsFlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/RingedToposFlatModule.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/RingedToposFlatModule.lean#L62). The attribute's comment: “the definition: a sheaf of modules flat over the target ringed topos”.
 
 > A sheaf `F` of `O`-modules on `X = (Sh(C), O)` is **flat over** the ringed topos
 > `Y = (Sh(D), O')` along a morphism of ringed topoi `f : X ⟶ Y` when `F`, regarded as a sheaf of
@@ -124,7 +124,7 @@ noncomputable abbrev IsFlatOver
 
 [Tag 0GN2](https://stacks.math.columbia.edu/tag/0GN2) in the Stacks Project.
 
-**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFinitePresentation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFinitePresentation.lean#L81). The attribute's comment: “the isomorphism under the source's own hypotheses: `F` of finite presentation in the local sense of Tag 03DL and `f` flat; stated for a site and coefficients in one universe”.
+**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFinitePresentation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFinitePresentation.lean#L81). The attribute's comment: “the isomorphism under the source's own hypotheses: `F` of finite presentation in the local sense of Tag 03DL and `f` flat; stated for a site and coefficients in one universe”.
 
 > Flat pullback commutes with the canonical internal-Hom map for a module which is locally
 > finitely presented. This statement uses a single universe for the site and coefficients.
@@ -136,7 +136,7 @@ theorem isIso_pullbackInternalHomMap_of_isFinitePresentationOnSite
       f.ringedToposHom.fSharpInverseImage) : IsIso (pullbackInternalHomMap f F G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1189). The attribute's comment: “the isomorphism, for a global rather than local (Tag 03DL) finite presentation of F”. References: EGA 0 (6.7.6), “special case”.
+**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1189). The attribute's comment: “the isomorphism, for a global rather than local (Tag 03DL) finite presentation of F”. References: EGA 0 (6.7.6), “special case”.
 
 > **Stacks 0GN2, for a globally finitely presented `F`.** Let
 > `f : (C, O_C) ⟶ (D, O_D)` be a flat morphism of ringed sites and let `F`, `G` be sheaves of
@@ -180,7 +180,7 @@ theorem isIso_pullbackInternalHomMap
     IsIso (pullbackInternalHomMap f F G)
 ```
 
-**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1242). The attribute's comment: “the isomorphism for F the structure sheaf”. References: EGA 0 (6.7.6), “partial, special case”.
+**`Stacks.SheafOfModules.InternalHom.isIso_pullbackInternalHomMap_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/PullbackInternalHomFlat.lean#L1242). The attribute's comment: “the isomorphism for F the structure sheaf”. References: EGA 0 (6.7.6), “partial, special case”.
 
 > **Stacks 0GN2 for `F` the structure sheaf.** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of
 > ringed sites and `G` a sheaf of `O_D`-modules. The canonical map
@@ -207,4 +207,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.31, Tag 04JA](https://stacks.math.columbia.edu/tag/04JA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

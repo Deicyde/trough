@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.106 Regular local rings
 
-Section 10.106 of the Stacks Project, [Tag 00NN](https://stacks.math.columbia.edu/tag/00NN). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.106 of the Stacks Project, [Tag 00NN](https://stacks.math.columbia.edu/tag/00NN). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00NO, a lemma
 
 [Tag 00NO](https://stacks.math.columbia.edu/tag/00NO) in the Stacks Project.
 
-**`IsRegularLocalRing.gradedRing_maximalIdeal_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/AssociatedGradedPolynomial.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/AssociatedGradedPolynomial.lean#L432). The attribute's comment: “The graded-RING form: the canonical ring map `κ[X_1, …, X_d] → ⨁_{n ≥ 0} 𝔪^n/𝔪^(n+1)`, `X_i ↦ x_i mod 𝔪^2`, of a minimal generating sequence of the maximal ideal is bijective, and carries the degree-`n` homogeneous polynomials exactly onto `𝔪^n/𝔪^(n+1)`; that is the source's isomorphism of the graded ring with the graded polynomial algebra, with the isomorphism pinned to the source's own map rather than merely asserted. See also `IsRegularLocalRing.isQuasiRegular` for the graded-module form (Tag 061N/061P).”.
+**`IsRegularLocalRing.gradedRing_maximalIdeal_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/AssociatedGradedPolynomial.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/AssociatedGradedPolynomial.lean#L432). The attribute's comment: “The graded-RING form: the canonical ring map `κ[X_1, …, X_d] → ⨁_{n ≥ 0} 𝔪^n/𝔪^(n+1)`, `X_i ↦ x_i mod 𝔪^2`, of a minimal generating sequence of the maximal ideal is bijective, and carries the degree-`n` homogeneous polynomials exactly onto `𝔪^n/𝔪^(n+1)`; that is the source's isomorphism of the graded ring with the graded polynomial algebra, with the isomorphism pinned to the source's own map rather than merely asserted. See also `IsRegularLocalRing.isQuasiRegular` for the graded-module form (Tag 061N/061P).”.
 
 > **Stacks 00NO, in the form of a graded-ring isomorphism.** Let `(R, 𝔪, κ)` be a regular local
 > ring of dimension `d` and let `xs = x_1, …, x_d` be a minimal set of generators of `𝔪`, that is, a
@@ -40,7 +40,7 @@ public theorem gradedRing_maximalIdeal_isPolynomialAlgebra
               (fun i : Fin xs.length => xs[i]) hx p = y
 ```
 
-**`IsRegularLocalRing.isQuasiRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L478). The attribute's comment: “Stated as quasi-regularity (Tag 061P) of a minimal generating sequence of the maximal ideal, which is exactly the assertion that the source's graded surjection `κ[X_1, …, X_d] → ⨁ m^n/m^(n+1)`, `X_i ↦ x_i mod m^2`, is an isomorphism. See the module docstring.”.
+**`IsRegularLocalRing.isQuasiRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L478). The attribute's comment: “Stated as quasi-regularity (Tag 061P) of a minimal generating sequence of the maximal ideal, which is exactly the assertion that the source's graded surjection `κ[X_1, …, X_d] → ⨁ m^n/m^(n+1)`, `X_i ↦ x_i mod m^2`, is an isomorphism. See the module docstring.”.
 
 > **Stacks 00NO.** Let `(R, m, κ)` be a regular local ring of dimension `d` and let
 > `xs = x_1, …, x_d` be a minimal set of generators of `m`, that is, a list generating `m` whose
@@ -61,7 +61,7 @@ public theorem IsRegularLocalRing.isQuasiRegular {R : Type*} [CommRing R] [IsReg
 
 [Tag 00NP](https://stacks.math.columbia.edu/tag/00NP) in the Stacks Project.
 
-**`IsRegularLocalRing.isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 779](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L779).
+**`IsRegularLocalRing.isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L779).
 
 > **A regular local ring is a domain.** If the maximal ideal of a Noetherian local ring `R` can
 > be generated by `dim R` elements, then `R` has no zero divisors.
@@ -75,7 +75,7 @@ public theorem IsRegularLocalRing.isDomain (R : Type*) [CommRing R] [IsRegularLo
 
 [Tag 00NQ](https://stacks.math.columbia.edu/tag/00NQ) in the Stacks Project.
 
-**`Stacks.Blowup.isWeaklyRegular_of_span_range_eq_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean#L307). The attribute's comment: “for a two-dimensional regular local ring and a two-element generating family of the maximal ideal”.
+**`Stacks.Blowup.isWeaklyRegular_of_span_range_eq_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/ProjectiveLineExceptional.lean#L307). The attribute's comment: “for a two-dimensional regular local ring and a two-element generating family of the maximal ideal”.
 
 > **Two generators of the maximal ideal of a regular local ring of dimension two form a regular
 > sequence.** A family of two elements spanning `𝔪` has the minimal length
@@ -88,7 +88,7 @@ theorem isWeaklyRegular_of_span_range_eq_maximalIdeal (A : Type u) [CommRing A]
     RingTheory.Sequence.IsWeaklyRegular A [x 0, x 1]
 ```
 
-**`IsRegularLocalRing.isRegular_and_isRegularLocalRing_quotient_and_isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 1038](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L1038). The attribute's comment: “Cohen-Macaulayness is the named predicate `Module.IsMaximalCohenMacaulay R R` (Definition 00NF), the equality `depth_𝔪(R) = dim R`; the minimal generating sequence is bound inside the clause that uses it, so the `in particular` is a statement about `R` alone. See the module docstring.”. References: EGA 0 (17.1.3), “CM clause”; SGA 4½ Cycle (2.2.1), “special case”.
+**`IsRegularLocalRing.isRegular_and_isRegularLocalRing_quotient_and_isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 1038](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L1038). The attribute's comment: “Cohen-Macaulayness is the named predicate `Module.IsMaximalCohenMacaulay R R` (Definition 00NF), the equality `depth_𝔪(R) = dim R`; the minimal generating sequence is bound inside the clause that uses it, so the `in particular` is a statement about `R` alone. See the module docstring.”. References: EGA 0 (17.1.3), “CM clause”; SGA 4½ Cycle (2.2.1), “special case”.
 
 > **A minimal set of generators of the maximal ideal of a regular local ring is a regular
 > sequence.** Let `(R, 𝔪)` be a regular local ring. Then every list `xs = x₁, …, x_d` generating
@@ -111,7 +111,7 @@ public theorem isRegular_and_isRegularLocalRing_quotient_and_isMaximalCohenMacau
 
 [Tag 00NR](https://stacks.math.columbia.edu/tag/00NR) in the Stacks Project.
 
-**`IsRegularLocalRing.exists_ofList_eq_maximalIdeal_length_eq_spanFinrank_and_ofList_take_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 1403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L1403). The attribute's comment: “A minimal set of generators of `𝔪` is a list generating it whose length is `(𝔪).spanFinrank`, and `(x₁, …, x_c)` is the ideal generated by the length-`c` prefix of that list, as in Tag 00NQ. The source's existentially bound `c` is pinned by the dimension equation `dim (R ⧸ I) + c = dim R` proved along with it. See the module docstring.”.
+**`IsRegularLocalRing.exists_ofList_eq_maximalIdeal_length_eq_spanFinrank_and_ofList_take_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 1403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L1403). The attribute's comment: “A minimal set of generators of `𝔪` is a list generating it whose length is `(𝔪).spanFinrank`, and `(x₁, …, x_c)` is the ideal generated by the length-`c` prefix of that list, as in Tag 00NQ. The source's existentially bound `c` is pinned by the dimension equation `dim (R ⧸ I) + c = dim R` proved along with it. See the module docstring.”.
 
 > **An ideal of a regular local ring with regular quotient is generated by part of a minimal
 > set of generators of the maximal ideal.** Let `(R, 𝔪)` be a regular local ring and let `I` be an
@@ -133,7 +133,7 @@ public theorem exists_ofList_eq_maximalIdeal_length_eq_spanFinrank_and_ofList_ta
 
 [Tag 00NS](https://stacks.math.columbia.edu/tag/00NS) in the Stacks Project.
 
-**`free_mod_x`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean#L67). References: EGA 0 (10.1.2), “special case”; EGA 0 (10.2.2), “(x), special case”; SGA 1 IV (4.1), “(b), special case”.
+**`free_mod_x`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean#L67). References: EGA 0 (10.1.2), “special case”; EGA 0 (10.2.2), “(x), special case”; SGA 1 IV (4.1), “(b), special case”.
 
 > **Stacks Tag 00NS.** Let `R` be a Noetherian local ring with maximal ideal
 > `m`, and let `x ∈ m`. Let `M` be a finite `R`-module on which `x` is a
@@ -155,7 +155,7 @@ theorem free_mod_x
 
 [Tag 00NT](https://stacks.math.columbia.edu/tag/00NT) in the Stacks Project.
 
-**`regular_mcm_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean, line 2010](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean#L2010). References: EGA 0 (17.3.5), “(i), sufficiency”; EGA IV (6.1.5), “special case”.
+**`regular_mcm_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean, line 2010](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/MaximalCohenMacaulay.lean#L2010). References: EGA 0 (17.3.5), “(i), sufficiency”; EGA IV (6.1.5), “special case”.
 
 > Stacks Tag 00NT (Lemma 10.106.6): over a regular local ring, any nonzero
 > finitely generated maximal Cohen-Macaulay module is free.
@@ -171,7 +171,7 @@ theorem regular_mcm_free
 
 [Tag 00NU](https://stacks.math.columbia.edu/tag/00NU) in the Stacks Project.
 
-**`isRegularLocalRing_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean#L145). The attribute's comment: “regular sequence”. References: EGA IV (19.1.2), “sufficiency direction”; EGA 0 (17.1.1), “more general”; EGA 0 (17.1.7), “b⇒regularity of A”; EGA IV (16.9.12), “sufficiency”; EGA IV (7.9.7), “partial”; SGA 6 X (7.7), “special case”.
+**`isRegularLocalRing_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean#L145). The attribute's comment: “regular sequence”. References: EGA IV (19.1.2), “sufficiency direction”; EGA 0 (17.1.1), “more general”; EGA 0 (17.1.7), “b⇒regularity of A”; EGA IV (16.9.12), “sufficiency”; EGA IV (7.9.7), “partial”; SGA 6 X (7.7), “special case”.
 
 > **Stacks 00NU**, regular sequence case. Let `R` be a Noetherian local ring, and
 > `rs` a regular sequence such that `R / (rs)` is a regular local ring. Then `R` is a
@@ -184,7 +184,7 @@ theorem isRegularLocalRing_of_isRegular (R : Type*) [CommRing R] [IsLocalRing R]
     IsRegularLocalRing R
 ```
 
-**`isRegularLocalRing_of_nonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean#L199). The attribute's comment: “single element”. References: EGA IV (19.1.2), “principal J, sufficiency”; EGA 0 (17.1.1), “(d) ⇒ (c)”; EGA 0 (17.1.7), “r=1: b⇒regularity of A”; EGA 0 (17.1.8), “a ⇒ b”; EGA IV (16.9.12), “special case”; EGA IV (7.9.7), “partial”; SGA 6 X (7.7), “special case”.
+**`isRegularLocalRing_of_nonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Criteria.lean#L199). The attribute's comment: “single element”. References: EGA IV (19.1.2), “principal J, sufficiency”; EGA 0 (17.1.1), “(d) ⇒ (c)”; EGA 0 (17.1.7), “r=1: b⇒regularity of A”; EGA 0 (17.1.8), “a ⇒ b”; EGA IV (16.9.12), “special case”; EGA IV (7.9.7), “partial”; SGA 6 X (7.7), “special case”.
 
 > **Stacks 00NU**, single nonzerodivisor case. Let `R` be a Noetherian local ring,
 > and `x` a nonzerodivisor such that `R / xR` is a regular local ring. Then `R` is a
@@ -204,7 +204,7 @@ theorem isRegularLocalRing_of_nonZeroDivisor (R : Type*) [CommRing R] [IsLocalRi
 
 [Tag 07DX](https://stacks.math.columbia.edu/tag/07DX) in the Stacks Project.
 
-**`CommRingCat.isRegularLocalRing_pt_of_forall_isRegularLocalRing_of_forall_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Colimit.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Colimit.lean#L439). The attribute's comment: “The directed system is a functor on a nonempty `u`-small directed preorder together with an arbitrary colimit cocone, as in 0AS7; locality of a transition map is `IsLocalHom` of the underlying ring homomorphism; `IsRegularLocalRing` of the colimit includes the assertion that it is local. See the module docstring.”.
+**`CommRingCat.isRegularLocalRing_pt_of_forall_isRegularLocalRing_of_forall_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Colimit.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Colimit.lean#L439). The attribute's comment: “The directed system is a functor on a nonempty `u`-small directed preorder together with an arbitrary colimit cocone, as in 0AS7; locality of a transition map is `IsLocalHom` of the underlying ring homomorphism; `IsRegularLocalRing` of the colimit includes the assertion that it is local. See the module docstring.”.
 
 > Let `F : J ⥤ CommRingCat` be a directed system `(R i, φ i i')` of commutative rings over a
 > nonempty, `u`-small directed preorder `J`, and let `c` be a colimit cocone on `F`, so that `c.pt`
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.106, Tag 00NN](https://stacks.math.columbia.edu/tag/00NN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

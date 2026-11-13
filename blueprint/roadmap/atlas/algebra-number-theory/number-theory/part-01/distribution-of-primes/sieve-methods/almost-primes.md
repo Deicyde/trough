@@ -8,7 +8,7 @@ proof: formalized
 
 # Almost primes
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html).
 
 ## Counting almost primes
 
@@ -20,7 +20,7 @@ This is the counting function in Landau's theorem on almost primes.
 
 - Rafael Jakimczuk, "Functions of Slow Increase and Integer Sequences," Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Jakimczuk/jakimczuk8.tex>, lines 451-453.
 
-Formalized by `MetaMathlibExt.almostPrimeCounting`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html#almost-prime-counting).
+Formalized by `MetaMathlibExt.almostPrimeCounting`, a definition declared in [MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html#almost-prime-counting).
 
 ## Landau's theorem on almost primes
 
@@ -34,7 +34,7 @@ $$\pi_k(x) \sim \frac{x \, (\log \log x)^{k-1}}{(k-1)! \, \log x}.$$
 
 - Rafael Jakimczuk, "Functions of Slow Increase and Integer Sequences," Journal of Integer Sequences 13 (2010), <https://cs.uwaterloo.ca/journals/JIS/VOL13/Jakimczuk/jakimczuk8.tex>, lines 451-453.
 
-Formalized by `MetaMathlibExt.landau_almostPrimeCounting_isEquivalent`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean, line 2013](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean#L2013). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html#landau-almost-prime-counting-is-equivale).
+Formalized by `MetaMathlibExt.landau_almostPrimeCounting_isEquivalent`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean, line 2013](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/LandauAlmostPrimeAsymptotic.lean#L2013). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html#landau-almost-prime-counting-is-equivale).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Almost primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/distribution-of-primes/sieve-methods/almost-primes)

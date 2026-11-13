@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.4 Points of algebraic spaces
 
-Section 66.4 of the Stacks Project, [Tag 03BT](https://stacks.math.columbia.edu/tag/03BT). 12 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.4 of the Stacks Project, [Tag 03BT](https://stacks.math.columbia.edu/tag/03BT). 12 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03BU, a definition
 
 [Tag 03BU](https://stacks.math.columbia.edu/tag/03BU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.points`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L222). The attribute's comment: “set of points”.
+**`AlgebraicGeometry.Space.points`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L222). The attribute's comment: “set of points”.
 
 > **Stacks 03BU.** Points of an algebraic space are equivalence classes of its
 > field-valued points.
@@ -23,7 +23,7 @@ Section 66.4 of the Stacks Project, [Tag 03BT](https://stacks.math.columbia.edu/
 abbrev points : Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.FieldValuedPoint.hasCommonExtension_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L232). The attribute's comment: “equivalence of field-valued points”.
+**`AlgebraicGeometry.Space.FieldValuedPoint.hasCommonExtension_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L232). The attribute's comment: “equivalence of field-valued points”.
 
 > **Stacks 03BU.** Common extension is transitive: two extensions of a field-valued point
 > can be amalgamated over that point.
@@ -36,7 +36,7 @@ theorem FieldValuedPoint.hasCommonExtension_trans
     FieldValuedPoint.HasCommonExtension B S hS F p r
 ```
 
-**`AlgebraicGeometry.Space.FieldValuedPoint.class_eq_class_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L276). The attribute's comment: “equality of points”.
+**`AlgebraicGeometry.Space.FieldValuedPoint.class_eq_class_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Points.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Points.lean#L276). The attribute's comment: “equality of points”.
 
 > **Stacks 03BU.** Two field-valued representatives define the same point exactly when
 > they admit a common field-valued extension.
@@ -52,7 +52,7 @@ theorem FieldValuedPoint.class_eq_class_iff
 
 [Tag 03BV](https://stacks.math.columbia.edu/tag/03BV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.bijective_pointsToScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsRepresentable.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsRepresentable.lean#L184).
+**`AlgebraicGeometry.Space.bijective_pointsToScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsRepresentable.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsRepresentable.lean#L184).
 
 > The points of a scheme, viewed as an algebraic space through its functor
 > of points, are in canonical one-to-one correspondence with the points of the representing
@@ -67,7 +67,7 @@ theorem bijective_pointsToScheme (U : BigFppfOver B S hS) :
 
 [Tag 03H4](https://stacks.math.columbia.edu/tag/03H4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_pointsULift_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleOpenPoints.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleOpenPoints.lean#L118). The attribute's comment: “for a value universe independent of the universe of the schemes”.
+**`AlgebraicGeometry.Space.exists_pointsULift_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleOpenPoints.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LargeValuedEtaleOpenPoints.lean#L118). The attribute's comment: “for a value universe independent of the universe of the schemes”.
 
 > **Stacks 03H4** for presheaves with values in a universe `max w u` independent of the
 > universe `u` of the schemes: a point of one middle term of a cartesian square and a point of
@@ -85,7 +85,7 @@ theorem exists_pointsULift_of_isPullback
       pointsMapULift B S hS W p v = a ∧ pointsMapULift B S hS W q v = b
 ```
 
-**`AlgebraicGeometry.Space.exists_points_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsBaseChange.lean#L116).
+**`AlgebraicGeometry.Space.exists_points_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsBaseChange.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsBaseChange.lean#L116).
 
 > The comparison map from the points of a fibre product of presheaves to the fibre product
 > of the point sets is surjective: a point of `X` and a point of `Z` with the same image in `Y`
@@ -99,7 +99,7 @@ theorem exists_points_of_isPullback {p : W ⟶ X} {q : W ⟶ Z} {f : X ⟶ Y} {g
       pointsMap B S hS W p w = a ∧ pointsMap B S hS W q w = b
 ```
 
-**`AlgebraicGeometry.Space.exists_point_of_isPullback_presheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsOfPullback.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsOfPullback.lean#L63).
+**`AlgebraicGeometry.Space.exists_point_of_isPullback_presheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsOfPullback.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsOfPullback.lean#L63).
 
 > **Stacks 03H4.** Compatible points of the two middle terms of a cartesian square of
 > presheaves on the big fppf site of `S` lift to a point of its upper left corner.
@@ -119,7 +119,7 @@ theorem exists_point_of_isPullback_presheaf
       pointsMap B S hS W p w = z ∧ pointsMap B S hS W q w = x
 ```
 
-**`AlgebraicGeometry.Space.exists_point_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsPullback.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsPullback.lean#L36).
+**`AlgebraicGeometry.Space.exists_point_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsPullback.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsPullback.lean#L36).
 
 > In a cartesian square of algebraic spaces over `S`, a point of `Z` and a
 > point of `X` with the same image in `Y` are the two images of a point of `W`.
@@ -139,7 +139,7 @@ theorem exists_point_of_isPullback (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : 
 
 [Tag 03H5](https://stacks.math.columbia.edu/tag/03H5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheafSurjective_iff_isSurjective_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean#L292).
+**`AlgebraicGeometry.Space.presheafSurjective_iff_isSurjective_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean#L292).
 
 > A morphism from a scheme over `S` to an algebraic space over `S` is surjective, in the sense
 > that every represented base change of it is a surjective morphism of schemes, if and only if the
@@ -156,7 +156,7 @@ theorem presheafSurjective_iff_isSurjective_yoneda (F : (BigFppfOver B S hS)ᵒ�
 
 [Tag 03BW](https://stacks.math.columbia.edu/tag/03BW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Presentation.pointsRelation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L72). The attribute's comment: “image equivalence relation”.
+**`AlgebraicGeometry.Space.Presentation.pointsRelation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L72). The attribute's comment: “image equivalence relation”.
 
 > **Stacks 03BW.** Two points of the presenting scheme are related by the relation scheme
 > exactly when they have the same image in the algebraic space.
@@ -169,7 +169,7 @@ theorem pointsRelation_iff (P : Presentation B S hS F hF)
         pointsMap B S hS (yoneda.obj P.U) P.toSpace y
 ```
 
-**`AlgebraicGeometry.Space.Presentation.pointsMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L95). The attribute's comment: “surjectivity on points”.
+**`AlgebraicGeometry.Space.Presentation.pointsMap_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L95). The attribute's comment: “surjectivity on points”.
 
 > **Stacks 03BW.** The atlas of a presentation is surjective on points.
 
@@ -180,14 +180,14 @@ theorem pointsMap_surjective (P : Presentation B S hS F hF) :
 
 Declarations registered for the tag:
 
-- [`Setoid.ker`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Setoid.ker#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L51) (StacksFrontier): “equivalence relation on points”. References: SGA 3 IV (3.3.1), “category of sets”; SGA 4 I (10.9), “special case”.
-- [`Setoid.quotientKerEquivOfSurjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Setoid.quotientKerEquivOfSurjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L54) (StacksFrontier): “canonical quotient equivalence”.
+- [`Setoid.ker`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Setoid.ker#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L51) (StacksFrontier): “equivalence relation on points”. References: SGA 3 IV (3.3.1), “category of sets”; SGA 4 I (10.9), “special case”.
+- [`Setoid.quotientKerEquivOfSurjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Setoid.quotientKerEquivOfSurjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Presentation/Points.lean#L54) (StacksFrontier): “canonical quotient equivalence”.
 
 ## Tag 03BX, a lemma
 
 [Tag 03BX](https://stacks.math.columbia.edu/tag/03BX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_pointTopologyFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsTopologyUnique.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsTopologyUnique.lean#L293).
+**`AlgebraicGeometry.Space.existsUnique_pointTopologyFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsTopologyUnique.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsTopologyUnique.lean#L293).
 
 > **Stacks 03BX.** There is a unique family of topologies on the points of the algebraic
 > spaces over `S` which is the scheme topology on a scheme, makes every morphism of algebraic
@@ -202,7 +202,7 @@ theorem existsUnique_pointTopologyFamily :
 
 [Tag 03BY](https://stacks.math.columbia.edu/tag/03BY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pointTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsTopology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsTopology.lean#L79). The attribute's comment: “the underlying topological space of an algebraic space”.
+**`AlgebraicGeometry.Space.pointTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsTopology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsTopology.lean#L79). The attribute's comment: “the underlying topological space of an algebraic space”.
 
 > The topology on the points of a presheaf on the big fppf site of `S`: a set of points
 > is open when its preimage under every scheme-valued point is scheme open.
@@ -216,7 +216,7 @@ def pointTopology (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) :
 
 [Tag 03BZ](https://stacks.math.columbia.edu/tag/03BZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.openSubspacesOrderIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L397). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.openSubspacesOrderIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L397). The attribute's comment: “part (1)”.
 
 > The order isomorphism from the open subspaces of an algebraic space over `S` to the open
 > subsets of its space of points, sending an open subspace to the image of its point set.
@@ -227,7 +227,7 @@ noncomputable def openSubspacesOrderIso (hF : IsAlgebraicSpace B S hS F) :
       TopologicalSpace.Opens (points B S hS F)
 ```
 
-**`AlgebraicGeometry.Space.openSubspacesOrderIso_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L408). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.openSubspacesOrderIso_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L408). The attribute's comment: “part (1)”.
 
 > The open subset of points attached to an open subspace is the image of its points.
 
@@ -238,7 +238,7 @@ theorem openSubspacesOrderIso_apply (hF : IsAlgebraicSpace B S hS F)
       Set.range (pointsMap B S hS G.1.toFunctor G.1.ι)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L419). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.existsUnique_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceCorrespondence.lean#L419). The attribute's comment: “part (1)”.
 
 > Taking the image of the points of an open subspace is an inclusion-preserving bijection
 > from the open subspaces of an algebraic space over `S` to the open subsets of its space of
@@ -251,7 +251,7 @@ theorem existsUnique_openSubspacesOrderIso (hF : IsAlgebraicSpace B S hS F) :
       ∀ G, (e G).1 = Set.range (pointsMap B S hS G.1.toFunctor G.1.ι)
 ```
 
-**`AlgebraicGeometry.Space.openSubspacesOrderIso_and_isZariskiCover_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceZariskiSite.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceZariskiSite.lean#L66).
+**`AlgebraicGeometry.Space.openSubspacesOrderIso_and_isZariskiCover_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceZariskiSite.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenSubspaceZariskiSite.lean#L66).
 
 > **Stacks Tag 03BZ.** Let `X` be an algebraic space over `S`.
 >
@@ -275,7 +275,7 @@ theorem openSubspacesOrderIso_and_isZariskiCover_iff
           (⋃ i, Set.range (pointsMap B S hS (X i).toFunctor (X i).ι)) = Set.univ)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCover_iff_iUnion_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L443). The attribute's comment: “zariski\_coverings”.
+**`AlgebraicGeometry.Space.isZariskiCover_iff_iUnion_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L443). The attribute's comment: “zariski\_coverings”.
 
 > Open subspaces cover an algebraic space in the Zariski topology if and only
 > if their images on the space of points cover all points.
@@ -290,7 +290,7 @@ theorem isZariskiCover_iff_iUnion_points
         Set.univ
 ```
 
-**`AlgebraicGeometry.Space.isCovering_iff_iSup_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L457). The attribute's comment: “zariski\_coverings”.
+**`AlgebraicGeometry.Space.isCovering_iff_iSup_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L457). The attribute's comment: “zariski\_coverings”.
 
 > Via the canonical identification with open subsets of the point space,
 > covering families of the small Zariski site are precisely open covers.
@@ -311,7 +311,7 @@ theorem isCovering_iff_iSup_openSubspacesOrderIso
 
 [Tag 03IE](https://stacks.math.columbia.edu/tag/03IE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.factorsThrough_openSubspace_iff_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FactorThroughOpenSubspace.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FactorThroughOpenSubspace.lean#L52).
+**`AlgebraicGeometry.Space.factorsThrough_openSubspace_iff_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FactorThroughOpenSubspace.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FactorThroughOpenSubspace.lean#L52).
 
 > A morphism of algebraic spaces factors through an open subspace if and only
 > if its map on points has image in the point set of that subspace.
@@ -333,7 +333,7 @@ theorem factorsThrough_openSubspace_iff_points
 
 [Tag 06NF](https://stacks.math.columbia.edu/tag/06NF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.factorThroughEtaleImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L90). The attribute's comment: “induced morphism”.
+**`AlgebraicGeometry.Space.factorThroughEtaleImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L90). The attribute's comment: “induced morphism”.
 
 > The morphism from a scheme to the open subspace corresponding to the image
 > of its étale map.
@@ -343,7 +343,7 @@ noncomputable def factorThroughEtaleImage :
     yoneda.obj U ⟶ X'.toFunctor
 ```
 
-**`AlgebraicGeometry.Space.factorThroughEtaleImage_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L99). The attribute's comment: “factorization”.
+**`AlgebraicGeometry.Space.factorThroughEtaleImage_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L99). The attribute's comment: “factorization”.
 
 > The induced morphism composes with the inclusion to give the original
 > étale map.
@@ -353,7 +353,7 @@ theorem factorThroughEtaleImage_comp :
     factorThroughEtaleImage B S hS hX U f X' hX' hX'image ≫ X'.ι = f
 ```
 
-**`AlgebraicGeometry.Space.surjective_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L107). The attribute's comment: “surjective”.
+**`AlgebraicGeometry.Space.surjective_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L107). The attribute's comment: “surjective”.
 
 > The induced map to the image open subspace is surjective.
 
@@ -365,7 +365,7 @@ theorem surjective_factor_through_etaleImage
       (BigFppfOver.toScheme B S hS))) f'
 ```
 
-**`AlgebraicGeometry.Space.etale_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L132). The attribute's comment: “étale”.
+**`AlgebraicGeometry.Space.etale_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L132). The attribute's comment: “étale”.
 
 > The induced map to the image open subspace is étale.
 
@@ -377,7 +377,7 @@ theorem etale_factor_through_etaleImage
       (BigFppfOver.toScheme B S hS))) f'
 ```
 
-**`AlgebraicGeometry.Space.isEtaleEquivalenceRelation_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L162). The attribute's comment: “étale equivalence relation”.
+**`AlgebraicGeometry.Space.isEtaleEquivalenceRelation_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L162). The attribute's comment: “étale equivalence relation”.
 
 > The kernel pair of an étale scheme morphism is an étale equivalence
 > relation on its source.
@@ -391,7 +391,7 @@ theorem isEtaleEquivalenceRelation_etaleImage
         ((Over.post B.inclusion).map t))
 ```
 
-**`AlgebraicGeometry.Space.isCoequalizer_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L186). The attribute's comment: “presentation as a quotient”.
+**`AlgebraicGeometry.Space.isCoequalizer_factor_through_etaleImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L186). The attribute's comment: “presentation as a quotient”.
 
 > The image open subspace is the fppf sheaf quotient of `U` by the kernel
 > pair of the original map.
@@ -417,7 +417,7 @@ theorem isCoequalizer_factor_through_etaleImage
       Nonempty (IsColimit (Cofork.ofπ ff w))
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_etale_surjective_lift_openSubspaceOfPoints_range_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean#L174). The attribute's comment: “factorisation: induced morphism, factorization, surjective, étale”.
+**`AlgebraicGeometry.Space.isOpenSubspace_etale_surjective_lift_openSubspaceOfPoints_range_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringAffineCharts.lean#L174). The attribute's comment: “factorisation: induced morphism, factorization, surjective, étale”.
 
 > **Stacks 06NF, the whole of its factorisation clause.** Let `U` be an object of the big
 > fppf category over `S` and `f : h_U ⟶ X` an étale morphism to an algebraic space over `S`.
@@ -462,13 +462,13 @@ theorem isOpenSubspace_etale_surjective_lift_openSubspaceOfPoints_range_yoneda
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.PullbackCone.isLimitOfFactors`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.PullbackCone.isLimitOfFactors#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L59) (StacksFrontier): “kernel pair”.
+- [`CategoryTheory.Limits.PullbackCone.isLimitOfFactors`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.PullbackCone.isLimitOfFactors#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleImageSubspace.lean#L59) (StacksFrontier): “kernel pair”.
 
 ## Tag 0H2X, a lemma
 
 [Tag 0H2X](https://stacks.math.columbia.edu/tag/0H2X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FieldValuedPoint.existsUnique_factor_of_class_eq_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L62).
+**`AlgebraicGeometry.Space.FieldValuedPoint.existsUnique_factor_of_class_eq_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L62).
 
 > **Stacks 0H2X.** Two representatives of the same point factor uniquely through a
 > representative whose map to the algebraic space is a monomorphism.
@@ -489,7 +489,7 @@ theorem FieldValuedPoint.existsUnique_factor_of_class_eq_of_mono
 
 [Tag 03E1](https://stacks.math.columbia.edu/tag/03E1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.iso_of_mono_of_point_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L112).
+**`AlgebraicGeometry.Space.iso_of_mono_of_point_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/MonomorphismPoints.lean#L112).
 
 > **Stacks 03E1.** Monomorphic field-valued representatives of the same point are
 > isomorphic over the algebraic space.
@@ -513,4 +513,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.4, Tag 03BT](https://stacks.math.columbia.edu/tag/03BT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

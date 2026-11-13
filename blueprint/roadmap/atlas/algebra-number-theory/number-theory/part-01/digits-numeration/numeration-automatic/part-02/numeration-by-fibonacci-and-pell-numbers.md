@@ -7,7 +7,7 @@ statement: formalized
 
 # Numeration by Fibonacci and Pell numbers
 
-26 results, 10 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html).
+26 results, 10 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html).
 
 ## Odd-indexed Fibonacci numbers times the golden ratio
 
@@ -21,7 +21,7 @@ $F_{2k+1} (1 + \varphi) = F_{2k+3} + \left((\sqrt 5 - 1)/2\right)^{2k+1}$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.fib_odd_mul_goldenRatio` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#fib-odd-mul-golden-ratio).
+Stated but not proved: `MetaMathlibExt.fib_odd_mul_goldenRatio` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#fib-odd-mul-golden-ratio).
 
 ## Numeration by odd-indexed Fibonacci numbers
 
@@ -39,7 +39,7 @@ digit patterns $2F_3 + F_1$ and $2F_{2k+3} + 2F_{2k+1}$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_odd_fib_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-odd-fib-representation).
+Stated but not proved: `MetaMathlibExt.exists_odd_fib_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-odd-fib-representation).
 
 ## Odd Pell and even Pell–Lucas numbers times $1 + \sqrt 2$
 
@@ -52,7 +52,7 @@ $H_{2k}(1 + \sqrt 2) = H_{2k+1} + \sqrt 2\,(\sqrt 2 - 1)^{2k}$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Proposition 2 (1), (2).
 
-Stated but not proved: `MetaMathlibExt.pellNumber_odd_mul_one_add_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#pell-number-odd-mul-one-add-sqrt-two).
+Stated but not proved: `MetaMathlibExt.pellNumber_odd_mul_one_add_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#pell-number-odd-mul-one-add-sqrt-two).
 
 ## Numeration by doubled Pell and half-companion Pell numbers
 
@@ -69,7 +69,7 @@ $a_{2k-1} = a_{2k+1} = 0$ and $a_{2k-2} < 3$ whenever $a_{2k} = 3$ with $k \ge 1
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.exists_two_pell_halfCompanion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-two-pell-half-companion-represent).
+Stated but not proved: `MetaMathlibExt.exists_two_pell_halfCompanion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-two-pell-half-companion-represent).
 
 ## Numeration by Pell and half-companion Pell numbers
 
@@ -86,7 +86,7 @@ $a_{2k} = a_{2k+2} = 0$, $a_{2k-1} < 3$ and $a_{2k+3} < 3$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.exists_pell_halfCompanion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-pell-half-companion-representatio).
+Stated but not proved: `MetaMathlibExt.exists_pell_halfCompanion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-pell-half-companion-representatio).
 
 ## Bronze Lucas parameters
 
@@ -98,7 +98,7 @@ $B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 3B_{n+1} + B_n$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4 (bronze numbers).
 
-Formalized by `MetaMathlibExt.bronzeLucasParams`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-lucas-params).
+Formalized by `MetaMathlibExt.bronzeLucasParams`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-lucas-params).
 
 ## Recurrence of the bronze numbers
 
@@ -109,7 +109,7 @@ sequence $U(3, -1)$. For every natural number $n$, $B_{n+2} = 3B_{n+1} + B_n$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4 (bronze numbers).
 
-Formalized by `MetaMathlibExt.lucasU_bronzeLucasParams_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#lucas-u-bronze-lucas-params-add-two).
+Formalized by `MetaMathlibExt.lucasU_bronzeLucasParams_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#lucas-u-bronze-lucas-params-add-two).
 
 ## The first bronze numbers
 
@@ -120,7 +120,7 @@ $U(3, -1)$. Then $B_0, B_1, B_2, B_3, B_4, B_5$ are $0, 1, 3, 10, 33, 109$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4 (bronze numbers).
 
-Formalized by `MetaMathlibExt.lucasU_bronzeLucasParams_values`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#lucas-u-bronze-lucas-params-values).
+Formalized by `MetaMathlibExt.lucasU_bronzeLucasParams_values`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#lucas-u-bronze-lucas-params-values).
 
 ## Companion bronze numbers of the first type
 
@@ -135,7 +135,7 @@ Thus $C_0 = C_1 = 1$, $C_{n+2} = 3C_{n+1} + C_n$, and $C_n = B_n + B_{n-1}$ for 
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4 (companion bronze numbers of the first type).
 
-Formalized by `MetaMathlibExt.bronzeCompanionFirst`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-first).
+Formalized by `MetaMathlibExt.bronzeCompanionFirst`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-first).
 
 ## Companion bronze numbers of the second type
 
@@ -150,7 +150,7 @@ Thus $D_0 = 1$, $D_1 = 2$, $D_{n+2} = 3D_{n+1} + D_n$, and $D_n = 2B_n + B_{n-1}
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4 (companion bronze numbers of the second type).
 
-Formalized by `MetaMathlibExt.bronzeCompanionSecond`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-second).
+Formalized by `MetaMathlibExt.bronzeCompanionSecond`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-second).
 
 ## Recurrence for the companion bronze numbers of the first type
 
@@ -161,7 +161,7 @@ $n$, the companion bronze numbers $C_n$ of the first type satisfy $C_{n+2} = 3C_
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4.
 
-Formalized by `MetaMathlibExt.bronzeCompanionFirst_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-first-add-two).
+Formalized by `MetaMathlibExt.bronzeCompanionFirst_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-first-add-two).
 
 ## Recurrence for the companion bronze numbers of the second type
 
@@ -172,7 +172,7 @@ $n$, the companion bronze numbers $D_n$ of the second type satisfy $D_{n+2} = 3D
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4.
 
-Formalized by `MetaMathlibExt.bronzeCompanionSecond_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-second-add-two).
+Formalized by `MetaMathlibExt.bronzeCompanionSecond_add_two`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-second-add-two).
 
 ## Initial companion bronze numbers
 
@@ -184,7 +184,7 @@ of the second type satisfy $(D_0, D_1, D_2, D_3, D_4) = (1, 2, 7, 23, 76)$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 4.
 
-Formalized by `MetaMathlibExt.bronzeCompanion_values`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-values).
+Formalized by `MetaMathlibExt.bronzeCompanion_values`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-companion-values).
 
 ## Moves of the Beatty octal game
 
@@ -205,7 +205,7 @@ $i$ lies in the second.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 1.1 (octal codes) and the codes of the gold, silver and bronze games in Sections 2, 3, 4.
 
-Formalized by `MetaMathlibExt.beattyOctalMove`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#beatty-octal-move).
+Formalized by `MetaMathlibExt.beattyOctalMove`, a definition declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#beatty-octal-move).
 
 ## Moves of a Beatty octal game decrease the heap
 
@@ -219,7 +219,7 @@ Consequently every play of the game terminates.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Section 1.1.
 
-Formalized by `MetaMathlibExt.beattyOctalMove_lt`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#beatty-octal-move-lt).
+Formalized by `MetaMathlibExt.beattyOctalMove_lt`, a theorem declared in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#beatty-octal-move-lt).
 
 ## Floor of greedy odd-Fibonacci sums times $\varphi$ and $1 + \varphi$
 
@@ -238,7 +238,7 @@ The hypothesis says that the $a_k$ are the digits of the greedy representation o
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.floor_greedy_odd_fib_sum_mul_goldenRatio` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-odd-fib-sum-mul-golden-rati).
+Stated but not proved: `MetaMathlibExt.floor_greedy_odd_fib_sum_mul_goldenRatio` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-odd-fib-sum-mul-golden-rati).
 
 ## P-positions of the gold game
 
@@ -258,7 +258,7 @@ P-positions of the gold game are exactly the heap sizes in $S$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.goldGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#gold-game-p-positions).
+Stated but not proved: `MetaMathlibExt.goldGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#gold-game-p-positions).
 
 ## Floor of greedy Pell sums times $1 + \sqrt 2$
 
@@ -276,7 +276,7 @@ $n$ need not be minimal.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 6 (1).
 
-Stated but not proved: `MetaMathlibExt.floor_greedy_pell_halfCompanion_sum_mul_one_add_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-pell-half-companion-sum-mul).
+Stated but not proved: `MetaMathlibExt.floor_greedy_pell_halfCompanion_sum_mul_one_add_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-pell-half-companion-sum-mul).
 
 ## Floor of greedy sums of $2P_k$ and $H_k$ times $(2 + \sqrt 2)/2$
 
@@ -294,7 +294,7 @@ $R_k$; $n$ need not be minimal.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 6 (2).
 
-Stated but not proved: `MetaMathlibExt.floor_greedy_two_pell_halfCompanion_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-two-pell-half-companion-sum).
+Stated but not proved: `MetaMathlibExt.floor_greedy_two_pell_halfCompanion_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-two-pell-half-companion-sum).
 
 ## P-positions of the silver game
 
@@ -315,7 +315,7 @@ P-positions of the silver game are exactly the heap sizes in $S$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.silverGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#silver-game-p-positions).
+Stated but not proved: `MetaMathlibExt.silverGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#silver-game-p-positions).
 
 ## Metallic identities for the bronze numbers
 
@@ -334,7 +334,7 @@ natural number $k$, the following hold in $\mathbb{R}$:
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.bronze_mul_metallic_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-mul-metallic-identities).
+Stated but not proved: `MetaMathlibExt.bronze_mul_metallic_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-mul-metallic-identities).
 
 ## Mixed bronze numeration
 
@@ -356,7 +356,7 @@ $a_{3m-1} = 1$ or $a_{3m-2} = 1$ then $a_{3m+1} = a_{3m+2} = 0$.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.exists_mixed_bronze_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-mixed-bronze-representation).
+Stated but not proved: `MetaMathlibExt.exists_mixed_bronze_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-mixed-bronze-representation).
 
 ## Numeration by bronze and companion bronze numbers
 
@@ -379,7 +379,7 @@ together with (2)–(5), and the greedy representation $410 = 3B_5 + D_4 + D_2$
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 9 (1)–(5).
 
-Stated but not proved: `MetaMathlibExt.exists_bronze_companion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-bronze-companion-representation).
+Stated but not proved: `MetaMathlibExt.exists_bronze_companion_representation` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#exists-bronze-companion-representation).
 
 ## Floor of greedy bronze sums times $(3 + \sqrt{13})/2$
 
@@ -400,7 +400,7 @@ $n$ need not be minimal.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 10 (1).
 
-Stated but not proved: `MetaMathlibExt.floor_greedy_bronze_companion_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-bronze-companion-sum-mul).
+Stated but not proved: `MetaMathlibExt.floor_greedy_bronze_companion_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-bronze-companion-sum-mul).
 
 ## Floor of greedy mixed bronze sums times $(5 + \sqrt{13})/6$
 
@@ -421,7 +421,7 @@ $n$ need not be minimal.
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 10 (2).
 
-Stated but not proved: `MetaMathlibExt.floor_greedy_mixed_bronze_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-mixed-bronze-sum-mul).
+Stated but not proved: `MetaMathlibExt.floor_greedy_mixed_bronze_sum_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#floor-greedy-mixed-bronze-sum-mul).
 
 ## P-positions of the bronze game
 
@@ -441,7 +441,7 @@ wins: $0, B_1, C_2, D_2, B_3, C_4, D_4, \ldots$
 
 - Michael Fisher, Keith Hazen, and Craig Tennenhouse, *Olympic Games: Three Impartial Games with Infinite Octal Codes*, INTEGERS 24 (2024), Article G3, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.bronzeGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-game-p-positions).
+Stated but not proved: `MetaMathlibExt.bronzeGame_pPositions` is written with `theorem_wanted` in [WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OlympicGamesNumerationWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html#bronze-game-p-positions).
 
 ## Depends on
 
@@ -450,4 +450,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Numeration by Fibonacci and Pell numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/numeration-by-fibonacci-and-pell-numbers)

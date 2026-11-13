@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.7 Fpqc coverings
 
-Section 74.7 of the Stacks Project, [Tag 04P0](https://stacks.math.columbia.edu/tag/04P0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.7 of the Stacks Project, [Tag 04P0](https://stacks.math.columbia.edu/tag/04P0). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04P1, a lemma
 
 [Tag 04P1](https://stacks.math.columbia.edu/tag/04P1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_openSubspace_of_fpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcOpenSubspaceDescent.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcOpenSubspaceDescent.lean#L420).
+**`AlgebraicGeometry.Space.existsUnique_openSubspace_of_fpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcOpenSubspaceDescent.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcOpenSubspaceDescent.lean#L420).
 
 > A family of open subspaces `Wᵢ i` of the members of an fpqc covering `f i : Tᵢ i ⟶ T` whose
 > two pullbacks to each `Tᵢ i ×_T Tᵢ j` agree is the family of preimages of a unique open subspace
@@ -39,7 +39,7 @@ public theorem existsUnique_openSubspace_of_fpqcCovering
 
 [Tag 04P2](https://stacks.math.columbia.edu/tag/04P2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_desc_of_fpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcMorphismDescent.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcMorphismDescent.lean#L485).
+**`AlgebraicGeometry.Space.existsUnique_desc_of_fpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcMorphismDescent.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcMorphismDescent.lean#L485).
 
 > **Stacks 04P2.** For an fpqc covering `{X i ⟶ Y}` of algebraic spaces over `S` and an
 > algebraic space `Z` over `S`, the diagram
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.7, Tag 04P0](https://stacks.math.columbia.edu/tag/04P0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

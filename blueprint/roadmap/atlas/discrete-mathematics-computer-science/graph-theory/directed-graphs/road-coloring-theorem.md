@@ -8,7 +8,7 @@ proof: formalized
 
 # Road coloring theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html).
 
 ## Road coloring theorem for a finite vertex type
 
@@ -27,7 +27,7 @@ ends at $r$.
 This form only assumes that $V$ is finite, as a property, rather than being given a finite set of
 all its elements as data.
 
-Formalized by `MetaMathlibExt.roadColoring'`, a theorem declared in [MathlibExt/Combinatorics/RoadColoring.lean, line 3835](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RoadColoring.lean#L3835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html#road-coloring).
+Formalized by `MetaMathlibExt.roadColoring'`, a theorem declared in [MathlibExt/Combinatorics/RoadColoring.lean, line 3835](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RoadColoring.lean#L3835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html#road-coloring).
 
 ## Road coloring theorem
 
@@ -46,7 +46,7 @@ that following the labels $c_1, \dots, c_m$ in order from any vertex $v$ ends at
 
 - https://en.wikipedia.org/wiki/Road_coloring_theorem
 
-Formalized by `MetaMathlibExt.roadColoring`, a theorem declared in [MathlibExt/Combinatorics/RoadColoring.lean, line 3875](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/RoadColoring.lean#L3875). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html#road-coloring-2).
+Formalized by `MetaMathlibExt.roadColoring`, a theorem declared in [MathlibExt/Combinatorics/RoadColoring.lean, line 3875](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/RoadColoring.lean#L3875). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html#road-coloring-2).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Road coloring theorem](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/road-coloring-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/directed-graphs/road-coloring-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/directed-graphs/road-coloring-theorem)

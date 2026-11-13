@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.23 Formal fibres
 
-Section 47.23 of the Stacks Project, [Tag 0BJM](https://stacks.math.columbia.edu/tag/0BJM). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.23 of the Stacks Project, [Tag 0BJM](https://stacks.math.columbia.edu/tag/0BJM). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BJN, a lemma
 
 [Tag 0BJN](https://stacks.math.columbia.edu/tag/0BJN) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_tensorProduct_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean#L80). The attribute's comment: “gorenstein\_field\_extension”.
+**`Dualizing.isGorensteinRing_tensorProduct_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean#L80). The attribute's comment: “gorenstein\_field\_extension”.
 
 > **Stacks Project, Tag 0BJN, clause (A).** Let `k` be a field, `R` a Noetherian `k`-algebra and
 > `K/k` an extension of fields which is finitely generated as a field extension. If `R` is
@@ -35,7 +35,7 @@ public theorem isGorensteinRing_tensorProduct_of_essFiniteType_fieldExtension
     IsGorensteinRing (R ⊗[k] K)
 ```
 
-**`Dualizing.gorensteinProperty_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L198). The attribute's comment: “(B)”.
+**`Dualizing.gorensteinProperty_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L198). The attribute's comment: “(B)”.
 
 > **Stacks Project, Tag 0BJN, clause (B).** The property of a map from a field to a Noetherian
 > ring that its target is Gorenstein can be checked after localizing at every prime.
@@ -49,7 +49,7 @@ public theorem gorensteinProperty_localization (P : RingMapProperty.{u, u})
         P (algebraMap k R)
 ```
 
-**`Dualizing.gorensteinProperty_regularAscent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L211). The attribute's comment: “(C)”.
+**`Dualizing.gorensteinProperty_regularAscent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L211). The attribute's comment: “(C)”.
 
 > **Stacks Project, Tag 0BJN, clause (C).** For flat maps `A → B → C` of Noetherian rings with
 > `B → C` regular, if every fibre of `A → B` is Gorenstein then so is every fibre of `A → C`.
@@ -68,7 +68,7 @@ public theorem gorensteinProperty_regularAscent (P : RingMapProperty.{u, u})
       ∀ p : PrimeSpectrum A, P (algebraMap p.asIdeal.ResidueField (p.asIdeal.Fiber C))
 ```
 
-**`Dualizing.gorensteinProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L268). The attribute's comment: “(D)”.
+**`Dualizing.gorensteinProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L268). The attribute's comment: “(D)”.
 
 > **Stacks Project, Tag 0BJN, clause (D).** For flat maps `A → B → C` of Noetherian rings with
 > `B → C` faithfully flat, if every fibre of `A → C` is Gorenstein then so is every fibre of
@@ -86,7 +86,7 @@ public theorem gorensteinProperty_faithfullyFlatDescent (P : RingMapProperty.{u,
         ∀ p : PrimeSpectrum A, P (algebraMap p.asIdeal.ResidueField (p.asIdeal.Fiber B))
 ```
 
-**`Dualizing.gorensteinProperty_groundFieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L295). The attribute's comment: “(E)”.
+**`Dualizing.gorensteinProperty_groundFieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L295). The attribute's comment: “(E)”.
 
 > **Stacks Project, Tag 0BJN, clause (E).** Gorensteinness of the target is unchanged when the
 > ground field is replaced by a separable algebraic extension of it inside the target: the
@@ -102,7 +102,7 @@ public theorem gorensteinProperty_groundFieldExtension (P : RingMapProperty.{u, 
       P (algebraMap k R) → P (algebraMap K R)
 ```
 
-**`Dualizing.gorensteinTarget_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L371). The attribute's comment: “all five clauses conjoined, stated through the `RingMapProperty` interface at the concrete property `Dualizing.gorensteinTarget`, whose value on a map is Gorensteinness of the target together with the Noetherian structure that Gorensteinness presupposes”.
+**`Dualizing.gorensteinTarget_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibreAxioms.lean#L371). The attribute's comment: “all five clauses conjoined, stated through the `RingMapProperty` interface at the concrete property `Dualizing.gorensteinTarget`, whose value on a map is Gorensteinness of the target together with the Noetherian structure that Gorensteinness presupposes”.
 
 > **Stacks Project, Tag 0BJN.** Gorensteinness of the target of a map from a field to a
 > Noetherian ring satisfies properties (A)--(E) of [Stacks, Tag 0BIR]: it is preserved by finitely
@@ -149,13 +149,13 @@ public theorem gorensteinTarget_satisfies_formalFiberAxioms :
 
 Declarations registered for the tag:
 
-- [`Dualizing.IsGorensteinRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L62) (StacksFrontier): “gorenstein\_local and gorenstein\_ground\_field: this predicate is defined by the condition at every prime localization and takes no ground field as input”.
+- [`Dualizing.IsGorensteinRing`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L62) (StacksFrontier): “gorenstein\_local and gorenstein\_ground\_field: this predicate is defined by the condition at every prime localization and takes no ground field as input”.
 
 ## Tag 0AWY, a lemma
 
 [Tag 0AWY](https://stacks.math.columbia.edu/tag/0AWY) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_formalFibre_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibres.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibres.lean#L287).
+**`Dualizing.isGorensteinRing_formalFibre_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibres.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/GorensteinFormalFibres.lean#L287).
 
 > **Stacks Project, Tag 0AWY.** Every formal fibre of a Noetherian local ring admitting a
 > dualizing complex is Gorenstein.
@@ -174,7 +174,7 @@ theorem isGorensteinRing_formalFibre_of_isDualizingComplex
 
 [Tag 0BJP](https://stacks.math.columbia.edu/tag/0BJP) in the Stacks Project.
 
-**`localCompleteIntersectionProperty_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L132). The attribute's comment: “(A)”.
+**`localCompleteIntersectionProperty_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L132). The attribute's comment: “(A)”.
 
 > **Stacks Project, Tag 0BJP, clause (A).** Being a local complete intersection is preserved by
 > base change along a finitely generated extension of the ground field.
@@ -189,7 +189,7 @@ public theorem localCompleteIntersectionProperty_fieldExtension (P : RingMapProp
         P (Algebra.TensorProduct.includeRight (R := k) (A := R) (B := K)).toRingHom
 ```
 
-**`localCompleteIntersectionProperty_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L150). The attribute's comment: “(B)”.
+**`localCompleteIntersectionProperty_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L150). The attribute's comment: “(B)”.
 
 > **Stacks Project, Tag 0BJP, clause (B).** Being a local complete intersection can be checked
 > after localizing at every prime.
@@ -203,7 +203,7 @@ public theorem localCompleteIntersectionProperty_localization (P : RingMapProper
         P (algebraMap k R)
 ```
 
-**`localCompleteIntersectionProperty_regularAscent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L172). The attribute's comment: “(C)”.
+**`localCompleteIntersectionProperty_regularAscent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L172). The attribute's comment: “(C)”.
 
 > **Stacks Project, Tag 0BJP, clause (C).** For flat maps `A → B → C` of Noetherian rings with
 > `B → C` regular, if every fibre of `A → B` is a local complete intersection then so is every
@@ -230,7 +230,7 @@ public theorem localCompleteIntersectionProperty_regularAscent (P : RingMapPrope
       ∀ p : PrimeSpectrum A, P (algebraMap p.asIdeal.ResidueField (p.asIdeal.Fiber C))
 ```
 
-**`localCompleteIntersectionProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L237). The attribute's comment: “(D)”.
+**`localCompleteIntersectionProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L237). The attribute's comment: “(D)”.
 
 > **Stacks Project, Tag 0BJP, clause (D).** For flat maps `A → B → C` of Noetherian rings with
 > `B → C` faithfully flat, if every fibre of `A → C` is a local complete intersection then so is
@@ -253,7 +253,7 @@ public theorem localCompleteIntersectionProperty_faithfullyFlatDescent
         ∀ p : PrimeSpectrum A, P (algebraMap p.asIdeal.ResidueField (p.asIdeal.Fiber B))
 ```
 
-**`localCompleteIntersectionProperty_groundFieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L265). The attribute's comment: “(E)”.
+**`localCompleteIntersectionProperty_groundFieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L265). The attribute's comment: “(E)”.
 
 > **Stacks Project, Tag 0BJP, clause (E).** Being a local complete intersection is unchanged
 > when the ground field is replaced by a separable algebraic extension of it inside the target: the
@@ -269,7 +269,7 @@ public theorem localCompleteIntersectionProperty_groundFieldExtension (P : RingM
       P (algebraMap k R) → P (algebraMap K R)
 ```
 
-**`localCompleteIntersectionProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L289).
+**`localCompleteIntersectionProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/FormalFibreAxioms.lean#L289).
 
 > **Stacks 0BJP.** The property of a map from a field to a Noetherian ring that its target is a
 > local complete intersection satisfies properties (A)--(E) of [Stacks, Tag 0BIR]: it is preserved
@@ -323,8 +323,8 @@ public theorem localCompleteIntersectionProperty_satisfies_formalFiberAxioms
 
 Declarations registered for the tag:
 
-- [`LocalCompleteIntersection.isLocalCompleteIntersectionRing_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L140), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L51) (StacksFrontier): “localization”.
-- [`LocalCompleteIntersection.IsLocalCompleteIntersectionRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L53) (StacksFrontier): “ground\_field\_change”.
+- [`LocalCompleteIntersection.isLocalCompleteIntersectionRing_iff`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L140), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L51) (StacksFrontier): “localization”.
+- [`LocalCompleteIntersection.IsLocalCompleteIntersectionRing`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L53) (StacksFrontier): “ground\_field\_change”.
 
 ## Depends on
 
@@ -333,4 +333,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.23, Tag 0BJM](https://stacks.math.columbia.edu/tag/0BJM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

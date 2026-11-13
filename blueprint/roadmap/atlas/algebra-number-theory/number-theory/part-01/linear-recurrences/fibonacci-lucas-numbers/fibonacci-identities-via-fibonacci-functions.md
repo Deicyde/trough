@@ -7,7 +7,7 @@ statement: formalized
 
 # Fibonacci identities via Fibonacci functions
 
-44 results, 44 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html).
+44 results, 44 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html).
 
 ## Weighted binomial sums of Lucas and Fibonacci numbers with even step
 
@@ -28,7 +28,7 @@ For $n = 0$ the exponent $n - 1$ is read as $0$; the term carrying it has the fa
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 2 (`jis-2024-24.6.2-prop-2`).
 
-Stated but not proved: `MetaMathlibExt.lucas_fib_weighted_binomial_sum_even_step` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-fib-weighted-binomial-sum-even-ste).
+Stated but not proved: `MetaMathlibExt.lucas_fib_weighted_binomial_sum_even_step` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-fib-weighted-binomial-sum-even-ste).
 
 ## Two telescoping relations between Lucas and Fibonacci numbers
 
@@ -47,7 +47,7 @@ $$\frac{L_{2k+1}}{L_{2k} L_{2k+2}} \cdot \frac{(F_{2k}^2 + 1)(F_{2k+2}^2 + 1)}{F
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 3 (`jis-2024-24.6.2-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.lucas_div_fib_sq_add_one_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-div-fib-sq-add-one-telescoping).
+Stated but not proved: `MetaMathlibExt.lucas_div_fib_sq_add_one_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-div-fib-sq-add-one-telescoping).
 
 ## Telescoping sums of Lucas numbers over Fibonacci squares plus one
 
@@ -69,7 +69,7 @@ and the real series $\sum_{k \ge 1} L_{2k+1} / (F_{2k+1}^2 + 1)$ has sum $3/2$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 4 (`jis-2024-24.6.2-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.sum_lucas_div_fib_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#sum-lucas-div-fib-sq-add-one).
+Stated but not proved: `MetaMathlibExt.sum_lucas_div_fib_sq_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#sum-lucas-div-fib-sq-add-one).
 
 ## Binomial sum with even powers of a Lucas number
 
@@ -85,7 +85,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 5 (`jis-2024-24.6.2-prop-5`).
 
-Stated but not proved: `MetaMathlibExt.fib_cube_mul_sum_choose_lucas_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-cube-mul-sum-choose-lucas-pow).
+Stated but not proved: `MetaMathlibExt.fib_cube_mul_sum_choose_lucas_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-cube-mul-sum-choose-lucas-pow).
 
 ## Ten times a Fibonacci cube divides a Fibonacci–Lucas combination
 
@@ -97,7 +97,7 @@ $10 F_k^3$ divides $(2n+1) F_{2k} L_{(2n+1)k} - F_{(2n+1)k} L_k^2$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 6 (`jis-2024-24.6.2-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.ten_mul_fib_cube_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#ten-mul-fib-cube-dvd).
+Stated but not proved: `MetaMathlibExt.ten_mul_fib_cube_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#ten-mul-fib-cube-dvd).
 
 ## Cubic gibonacci identity from Candido's identity
 
@@ -118,7 +118,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 7 (`jis-2024-24.6.2-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_candido_derivative_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-derivative-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_candido_derivative_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-derivative-identity).
 
 ## Companion of Melham's sum-of-squares identity for gibonacci sequences
 
@@ -138,7 +138,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 8 (`jis-2024-24.6.2-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_sum_sq_mul_sum_lucas_like` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-sum-sq-mul-sum-lucas-like).
+Stated but not proved: `MetaMathlibExt.gibonacci_sum_sq_mul_sum_lucas_like` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-sum-sq-mul-sum-lucas-like).
 
 ## Derivative form of the Gelin–Cesàro identity for generalized Fibonacci sequences
 
@@ -160,7 +160,7 @@ assumption $p \ne 0$ is not needed.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 9 (`jis-2024-24.6.2-prop-9`).
 
-Stated but not proved: `MetaMathlibExt.generalized_fibonacci_gelin_cesaro_derivative` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-gelin-cesaro-deriv).
+Stated but not proved: `MetaMathlibExt.generalized_fibonacci_gelin_cesaro_derivative` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-gelin-cesaro-deriv).
 
 ## Alternating Fibonacci and Lucas sums from the Gelin–Cesàro identity
 
@@ -188,7 +188,7 @@ $\sqrt{5}$ and $1/\sqrt{5}$, so the summands do not tend to $0$ and neither seri
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 10 (`jis-2024-24.6.2-prop-10`).
 
-Stated but not proved: `MetaMathlibExt.alternating_sum_fib_sq_fib_div_fib_pow_four_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-sum-fib-sq-fib-div-fib-pow-f).
+Stated but not proved: `MetaMathlibExt.alternating_sum_fib_sq_fib_div_fib_pow_four_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-sum-fib-sq-fib-div-fib-pow-f).
 
 ## Alternating Gelin–Cesàro sum for generalized Fibonacci sequences
 
@@ -211,7 +211,7 @@ The paper's standing assumption $p \ne 0$ is not needed.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 11 (`jis-2024-24.6.2-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.generalized_fibonacci_gelin_cesaro_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-gelin-cesaro-alter).
+Stated but not proved: `MetaMathlibExt.generalized_fibonacci_gelin_cesaro_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-gelin-cesaro-alter).
 
 ## Reciprocal series of Lucas sequences with doubling subscripts
 
@@ -233,7 +233,7 @@ The paper's real parameter $p$ is restricted here to integers $P$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 12 (`jis-2024-24.6.2-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.sum_two_pow_lucasV_div_lucasU_sq_doubling` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#sum-two-pow-lucas-v-div-lucas-u-sq-doubl).
+Stated but not proved: `MetaMathlibExt.sum_two_pow_lucasV_div_lucasU_sq_doubling` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#sum-two-pow-lucas-v-div-lucas-u-sq-doubl).
 
 ## A Fibonacci–Lucas identity for gibonacci sequences
 
@@ -252,7 +252,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 18 (`jis-2024-24.6.2-prop-18`).
 
-Stated but not proved: `MetaMathlibExt.five_fib_mul_gibonacci_sub_lucas_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#five-fib-mul-gibonacci-sub-lucas-mul).
+Stated but not proved: `MetaMathlibExt.five_fib_mul_gibonacci_sub_lucas_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#five-fib-mul-gibonacci-sub-lucas-mul).
 
 ## An identity for products of two gibonacci sequences
 
@@ -271,7 +271,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 19 (`jis-2024-24.6.2-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.five_gibonacci_mul_sub_two_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#five-gibonacci-mul-sub-two-gibonacci).
+Stated but not proved: `MetaMathlibExt.five_gibonacci_mul_sub_two_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#five-gibonacci-mul-sub-two-gibonacci).
 
 ## Addition formula for gibonacci sequences
 
@@ -284,7 +284,7 @@ $F_{k+1} G_{s+1} + F_k G_s = G_{k+s+1}$ for all integers $k$ and $s$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 20 (`jis-2024-24.6.2-prop-20`).
 
-Stated but not proved: `MetaMathlibExt.fib_mul_gibonacci_add_eq_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-mul-gibonacci-add-eq-gibonacci).
+Stated but not proved: `MetaMathlibExt.fib_mul_gibonacci_add_eq_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-mul-gibonacci-add-eq-gibonacci).
 
 ## A sum of two gibonacci products in terms of the seeds
 
@@ -301,7 +301,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 21 (`jis-2024-24.6.2-prop-21`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_mul_gibonacci_add_eq_seed_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-mul-gibonacci-add-eq-seed-comb).
+Stated but not proved: `MetaMathlibExt.gibonacci_mul_gibonacci_add_eq_seed_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-mul-gibonacci-add-eq-seed-comb).
 
 ## d'Ocagne-type identity for two gibonacci sequences
 
@@ -318,7 +318,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 23 (`jis-2024-24.6.2-prop-23`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_dOcagne_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-d-ocagne-type-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_dOcagne_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-d-ocagne-type-identity).
 
 ## Shifted product identity for two gibonacci sequences
 
@@ -335,7 +335,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 24 (`jis-2024-24.6.2-prop-24`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_product_shift_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-product-shift-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_product_shift_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-product-shift-identity).
 
 ## Product recurrence for three gibonacci sequences
 
@@ -353,7 +353,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 25 (`jis-2024-24.6.2-prop-25`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_triple_product_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-triple-product-recurrence).
+Stated but not proved: `MetaMathlibExt.gibonacci_triple_product_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-triple-product-recurrence).
 
 ## Gibonacci index doubling via Fibonacci squares
 
@@ -368,7 +368,7 @@ $$G_{2k+s} = F_{k+1}^2 G_{s+1} + F_k^2 G_s - F_{k-1}^2 G_{s-1}.$$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 26 (`jis-2024-24.6.2-prop-26`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_two_mul_add_eq_fib_sq_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-two-mul-add-eq-fib-sq-combinat).
+Stated but not proved: `MetaMathlibExt.gibonacci_two_mul_add_eq_fib_sq_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-two-mul-add-eq-fib-sq-combinat).
 
 ## Seed expansion of a triple gibonacci product
 
@@ -383,7 +383,7 @@ $$G_0 H_0 I_{k+r+s-2} + (G_0 H_1 + G_1 H_0) I_{k+r+s-1} + G_1 H_1 I_{k+r+s}
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 27 (`jis-2024-24.6.2-prop-27`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_triple_product_seed_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-triple-product-seed-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_triple_product_seed_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-triple-product-seed-identity).
 
 ## Lucas expansion of shifted gibonacci sums
 
@@ -397,7 +397,7 @@ $G_{k+r+1} + G_{k+r-1} = L_k G_{r+1} + L_{k-1} G_r$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 28 (`jis-2024-24.6.2-prop-28`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_add_gibonacci_eq_lucas_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-add-gibonacci-eq-lucas-combina).
+Stated but not proved: `MetaMathlibExt.gibonacci_add_gibonacci_eq_lucas_combination` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-add-gibonacci-eq-lucas-combina).
 
 ## Seed form of a Lucas-type product identity for two gibonacci sequences
 
@@ -415,7 +415,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 29 (`jis-2024-24.6.2-prop-29`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_seed_lucas_like_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-seed-lucas-like-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_seed_lucas_like_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-seed-lucas-like-identity).
 
 ## Sum of products of two gibonacci sequences
 
@@ -434,7 +434,7 @@ derivation (its display before the proposition) carries the factor $2$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 30 (`jis-2024-24.6.2-prop-30`).
 
-Stated but not proved: `MetaMathlibExt.two_mul_sum_gibonacci_mul_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#two-mul-sum-gibonacci-mul-gibonacci).
+Stated but not proved: `MetaMathlibExt.two_mul_sum_gibonacci_mul_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#two-mul-sum-gibonacci-mul-gibonacci).
 
 ## Hoggatt–Bicknell-type binomial sum with Fibonacci cubes
 
@@ -452,7 +452,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 31 (`jis-2024-24.6.2-prop-31`).
 
-Stated but not proved: `MetaMathlibExt.alternating_binomial_sum_fib_cube_mul_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-binomial-sum-fib-cube-mul-gi).
+Stated but not proved: `MetaMathlibExt.alternating_binomial_sum_fib_cube_mul_gibonacci` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-binomial-sum-fib-cube-mul-gi).
 
 ## Hoggatt–Bicknell-type binomial sum of four gibonacci sequences
 
@@ -471,7 +471,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 32 (`jis-2024-24.6.2-prop-32`).
 
-Stated but not proved: `MetaMathlibExt.alternating_binomial_sum_four_gibonacci_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-binomial-sum-four-gibonacci).
+Stated but not proved: `MetaMathlibExt.alternating_binomial_sum_four_gibonacci_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#alternating-binomial-sum-four-gibonacci).
 
 ## Mixed Melham-type sum for two gibonacci sequences
 
@@ -491,7 +491,7 @@ Proposition 8.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 33 (`jis-2024-24.6.2-prop-33`).
 
-Stated but not proved: `MetaMathlibExt.six_mul_sum_gibonacci_sq_mul_sum_mixed` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#six-mul-sum-gibonacci-sq-mul-sum-mixed).
+Stated but not proved: `MetaMathlibExt.six_mul_sum_gibonacci_sq_mul_sum_mixed` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#six-mul-sum-gibonacci-sq-mul-sum-mixed).
 
 ## Four-sequence Melham-type identity for gibonacci sequences
 
@@ -515,7 +515,7 @@ The source leaves $n$ unquantified; it is taken to be a natural number.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 34 (`jis-2024-24.6.2-prop-34`).
 
-Stated but not proved: `MetaMathlibExt.four_gibonacci_melham_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#four-gibonacci-melham-type-identity).
+Stated but not proved: `MetaMathlibExt.four_gibonacci_melham_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#four-gibonacci-melham-type-identity).
 
 ## Two-sequence gibonacci identity with a Fibonacci factor
 
@@ -533,7 +533,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 35 (`jis-2024-24.6.2-prop-35`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_neg_one_pow_eq_fib_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-mul-add-neg-one-pow-eq-fib-mul).
+Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_neg_one_pow_eq_fib_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 538](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L538). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-mul-add-neg-one-pow-eq-fib-mul).
 
 ## Four-index product identity for two gibonacci sequences
 
@@ -552,7 +552,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 36 (`jis-2024-24.6.2-prop-36`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_product_four_index_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-product-four-index-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_product_four_index_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-product-four-index-identity).
 
 ## Two-sequence Candido-type identity for gibonacci sequences
 
@@ -569,7 +569,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 37 (`jis-2024-24.6.2-prop-37`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_candido_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-two-sequence).
+Stated but not proved: `MetaMathlibExt.gibonacci_candido_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-two-sequence).
 
 ## Four-sequence Candido-type identity for gibonacci sequences
 
@@ -589,7 +589,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 38 (`jis-2024-24.6.2-prop-38`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_candido_four_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-four-sequence).
+Stated but not proved: `MetaMathlibExt.gibonacci_candido_four_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 582](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L582). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-candido-four-sequence).
 
 ## Lucas multiplier identity for gibonacci sequences
 
@@ -603,7 +603,7 @@ $G_{s+r} + (-1)^r G_{s-r} = L_r G_s$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 39 (`jis-2024-24.6.2-prop-39`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_add_neg_one_pow_mul_eq_lucas_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-add-neg-one-pow-mul-eq-lucas-m).
+Stated but not proved: `MetaMathlibExt.gibonacci_add_neg_one_pow_mul_eq_lucas_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 602](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L602). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-add-neg-one-pow-mul-eq-lucas-m).
 
 ## Two-sequence gibonacci identity with a Fibonacci factor and Lucas-type sums
 
@@ -622,7 +622,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 40 (`jis-2024-24.6.2-prop-40`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_lucas_like_mul_add_eq_fib_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-lucas-like-mul-add-eq-fib-mul).
+Stated but not proved: `MetaMathlibExt.gibonacci_lucas_like_mul_add_eq_fib_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 614](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L614). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-lucas-like-mul-add-eq-fib-mul).
 
 ## Two-sequence Gelin–Cesàro derivative identity for gibonacci sequences
 
@@ -641,7 +641,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 42 (`jis-2024-24.6.2-prop-42`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_gelin_cesaro_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-gelin-cesaro-two-sequence).
+Stated but not proved: `MetaMathlibExt.gibonacci_gelin_cesaro_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-gelin-cesaro-two-sequence).
 
 ## Catalan-type identity for Fibonacci and gibonacci numbers
 
@@ -659,7 +659,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 43 (`jis-2024-24.6.2-prop-43`).
 
-Stated but not proved: `MetaMathlibExt.fib_gibonacci_catalan_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-gibonacci-catalan-type-identity).
+Stated but not proved: `MetaMathlibExt.fib_gibonacci_catalan_type_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#fib-gibonacci-catalan-type-identity).
 
 ## Lucas-weighted identity for two gibonacci sequences
 
@@ -676,7 +676,7 @@ $$L_r (G_0 H_{s+t-1} + G_1 H_{s+t}) - (-1)^r G_{s-r} (H_{t+1} + H_{t-1})
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 44 (`jis-2024-24.6.2-prop-44`).
 
-Stated but not proved: `MetaMathlibExt.lucas_mul_gibonacci_seed_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 662](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L662). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-mul-gibonacci-seed-sub-eq).
+Stated but not proved: `MetaMathlibExt.lucas_mul_gibonacci_seed_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 662](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L662). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#lucas-mul-gibonacci-seed-sub-eq).
 
 ## Two-sequence Catalan-type identity for gibonacci sequences
 
@@ -696,7 +696,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 45 (`jis-2024-24.6.2-prop-45`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_catalan_type_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-catalan-type-two-sequence).
+Stated but not proved: `MetaMathlibExt.gibonacci_catalan_type_two_sequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-catalan-type-two-sequence).
 
 ## Gibonacci identity with Fibonacci-square denominators
 
@@ -714,7 +714,7 @@ $$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 46 (`jis-2024-24.6.2-prop-46`).
 
-Stated but not proved: `MetaMathlibExt.gibonacci_div_fib_sq_add_one_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-div-fib-sq-add-one-identity).
+Stated but not proved: `MetaMathlibExt.gibonacci_div_fib_sq_add_one_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#gibonacci-div-fib-sq-add-one-identity).
 
 ## Ratio form of the Binet formula for Horadam sequences
 
@@ -735,7 +735,7 @@ This covers the paper's sequence $W_j(W_0, W_1; p)$, the case $P = p$, $Q = -1$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Lemma 47 (`jis-2024-24.6.2-lem-47`).
 
-Stated but not proved: `MetaMathlibExt.horadam_sub_root_mul_div_eq_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 714](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L714). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-sub-root-mul-div-eq-zpow).
+Stated but not proved: `MetaMathlibExt.horadam_sub_root_mul_div_eq_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 714](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L714). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-sub-root-mul-div-eq-zpow).
 
 ## Product exchange identity for two Horadam sequences
 
@@ -752,7 +752,7 @@ The paper states this for $Q < 0$; the identity holds for every $Q \neq 0$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 48 (`jis-2024-24.6.2-prop-48`).
 
-Stated but not proved: `MetaMathlibExt.horadam_product_exchange_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-product-exchange-identity).
+Stated but not proved: `MetaMathlibExt.horadam_product_exchange_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-product-exchange-identity).
 
 ## Companion Lucas sequence identity for Horadam sequences
 
@@ -767,7 +767,7 @@ $$V_r W_{k+1} - Q V_{r-1} W_k = W_{k+r+1} - Q W_{k+r-1}.$$
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Proposition 49 (`jis-2024-24.6.2-prop-49`).
 
-Stated but not proved: `MetaMathlibExt.horadam_companion_lucas_mul_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-companion-lucas-mul-identity).
+Stated but not proved: `MetaMathlibExt.horadam_companion_lucas_mul_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#horadam-companion-lucas-mul-identity).
 
 ## Companion Binet formula for generalized Fibonacci sequences
 
@@ -787,7 +787,7 @@ $W_j = (A \sigma^j - B \tau^j)/(\sigma - \tau)$.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Lemma 13 (`jis-2024-24.6.2-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.generalizedFibonacci_binet_add_eq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-binet-add-eq-add).
+Stated but not proved: `MetaMathlibExt.generalizedFibonacci_binet_add_eq_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-binet-add-eq-add).
 
 ## Derivative of a branch of $\lambda^x$ for negative $\lambda$
 
@@ -805,7 +805,7 @@ and is not part of this statement.
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Lemma 14 (`jis-2024-24.6.2-lem-14`).
 
-Stated but not proved: `MetaMathlibExt.hasDerivAt_neg_rpow_branch` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 774](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#has-deriv-at-neg-rpow-branch).
+Stated but not proved: `MetaMathlibExt.hasDerivAt_neg_rpow_branch` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 774](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L774). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#has-deriv-at-neg-rpow-branch).
 
 ## Real part of the derivative of the generalized Fibonacci function at integers
 
@@ -828,7 +828,7 @@ $(-\tau)^x e^{i \pi (2m + 1) x}$; this is the generalized Fibonacci function of 
 
 - Kunle Adegoke, *Fibonacci Identities via Fibonacci Functions*, Journal of Integer Sequences 27 (2024), Article 24.6.2, Theorem 15 (`jis-2024-24.6.2-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.generalizedFibonacci_function_deriv_re` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 789](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L789). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-function-deriv-re).
+Stated but not proved: `MetaMathlibExt.generalizedFibonacci_function_deriv_re` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean, line 789](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciFunctionIdentitiesWanted.lean#L789). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html#generalized-fibonacci-function-deriv-re).
 
 ## Depends on
 
@@ -837,4 +837,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fibonacci identities via Fibonacci functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-identities-via-fibonacci-functions)

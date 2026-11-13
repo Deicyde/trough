@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.25 A criterion for representability
 
-Section 4.25 of the Stacks Project, [Tag 0AHM](https://stacks.math.columbia.edu/tag/0AHM). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.25 of the Stacks Project, [Tag 0AHM](https://stacks.math.columbia.edu/tag/0AHM). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AHN, a lemma
 
 [Tag 0AHN](https://stacks.math.columbia.edu/tag/0AHN) in the Stacks Project.
 
-**`CategoryTheory.isCorepresentable_of_solutionSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/SolutionSet.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Representable/SolutionSet.lean#L273). References: SGA 4 I (8.12.8.1), “Sufficiency direction”.
+**`CategoryTheory.isCorepresentable_of_solutionSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/SolutionSet.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Representable/SolutionSet.lean#L273). References: SGA 4 I (8.12.8.1), “Sufficiency direction”.
 
 > **Stacks 0AHN** (Brown representability criterion).
 >
@@ -36,7 +36,7 @@ theorem isCorepresentable_of_solutionSet
 
 [Tag 0AHP](https://stacks.math.columbia.edu/tag/0AHP) in the Stacks Project.
 
-**`CategoryTheory.bijective_comp_freeGroup_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Representable/Applications.lean#L56). The attribute's comment: “the free group on a set”.
+**`CategoryTheory.bijective_comp_freeGroup_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Representable/Applications.lean#L56). The attribute's comment: “the free group on a set”.
 
 > **Stacks 0AHP**, the free group on a set.
 > The free group on `E` represents the functor `G ↦ Map(E, G)` on groups: composing a group
@@ -48,7 +48,7 @@ theorem bijective_comp_freeGroup_of (E : Type u) (G : Type v) [Group G] :
     Function.Bijective fun f : FreeGroup E →* G => (f : FreeGroup E → G) ∘ FreeGroup.of
 ```
 
-**`CategoryTheory.closure_range_freeGroup_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Representable/Applications.lean#L63). The attribute's comment: “the free group on a set”.
+**`CategoryTheory.closure_range_freeGroup_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Representable/Applications.lean#L63). The attribute's comment: “the free group on a set”.
 
 > **Stacks 0AHP**, the free group on a set: the map `E → F_E` corresponding to the identity of
 > `F_E` generates `F_E`, so no relations have been imposed.
@@ -58,7 +58,7 @@ theorem closure_range_freeGroup_of (E : Type u) :
     Subgroup.closure (Set.range (FreeGroup.of : E → FreeGroup E)) = ⊤
 ```
 
-**`CategoryTheory.colimitHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Representable/Applications.lean#L74). The attribute's comment: “colimits of topological spaces”.
+**`CategoryTheory.colimitHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Representable/Applications.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Representable/Applications.lean#L74). The attribute's comment: “colimits of topological spaces”.
 
 > **Stacks 0AHP**, colimits of topological spaces.
 > For a diagram `X : 𝓘 ⥤ Top` of topological spaces, a morphism out of the colimit of `X` is the
@@ -79,7 +79,7 @@ noncomputable def colimitHomEquiv {𝓘 : Type u} [SmallCategory 𝓘] (X : 𝓘
 
 Declarations registered for the tag:
 
-- [`isRightAdjoint_of_preservesLimits_of_solutionSetCondition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRightAdjoint_of_preservesLimits_of_solutionSetCondition#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/AdjointFunctors.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/AdjointFunctors.lean#L62) (StacksCore).
+- [`isRightAdjoint_of_preservesLimits_of_solutionSetCondition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRightAdjoint_of_preservesLimits_of_solutionSetCondition#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/AdjointFunctors.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/AdjointFunctors.lean#L62) (StacksCore).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.25, Tag 0AHM](https://stacks.math.columbia.edu/tag/0AHM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

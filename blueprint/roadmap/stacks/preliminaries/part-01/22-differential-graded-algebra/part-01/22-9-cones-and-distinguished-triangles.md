@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.9 Cones and distinguished triangles
 
-Section 22.9 of the Stacks Project, [Tag 09P1](https://stacks.math.columbia.edu/tag/09P1). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.9 of the Stacks Project, [Tag 09P1](https://stacks.math.columbia.edu/tag/09P1). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09KB, a lemma
 
 [Tag 09KB](https://stacks.math.columbia.edu/tag/09KB) in the Stacks Project.
 
-**`DifferentialGradedModule.mappingCone_isAdmissibleShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean#L107). The attribute's comment: “the admissible short exact sequence”.
+**`DifferentialGradedModule.mappingCone_isAdmissibleShortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean#L107). The attribute's comment: “the admissible short exact sequence”.
 
 > The cone sequence `L ⟶ C(f) ⟶ K[1]` of a homomorphism of differential graded modules is an
 > admissible short exact sequence.
@@ -24,7 +24,7 @@ theorem mappingCone_isAdmissibleShortExact (f : K ⟶ L) :
     IsAdmissibleShortExact (coneInclusion f) (coneProjection f)
 ```
 
-**`DifferentialGradedModule.associatedTriangle_mappingCone_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean#L148). The attribute's comment: “the associated triangle”.
+**`DifferentialGradedModule.associatedTriangle_mappingCone_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeAdmissible.lean#L148). The attribute's comment: “the associated triangle”.
 
 > The triangle of the cone sequence of `f` is the displayed triangle `L → C(f) → K[1]` whose
 > connecting arrow is the shift `f[1]` of `f`.
@@ -44,7 +44,7 @@ theorem associatedTriangle_mappingCone_eq (f : K ⟶ L)
 
 [Tag 09KC](https://stacks.math.columbia.edu/tag/09KC) in the Stacks Project.
 
-**`DifferentialGradedModule.rotatedAssociatedTriangle_iso_connectingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean#L351). The attribute's comment: “source sign convention”.
+**`DifferentialGradedModule.rotatedAssociatedTriangle_iso_connectingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean#L351). The attribute's comment: “source sign convention”.
 
 > The rotated admissible-sequence triangle is isomorphic to the cone triangle of its
 > desuspended connecting homomorphism.
@@ -55,7 +55,7 @@ theorem rotatedAssociatedTriangle_iso_connectingConeTriangle (f : K ⟶ L) (g : 
     Nonempty (rotatedAssociatedTriangle f g hfg ≅ connectingConeTriangle f g hfg)
 ```
 
-**`DifferentialGradedModule.inverseRotatedAssociatedTriangle_iso_mappingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean#L427). The attribute's comment: “standard cone sign convention”.
+**`DifferentialGradedModule.inverseRotatedAssociatedTriangle_iso_mappingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeRotation.lean#L427). The attribute's comment: “standard cone sign convention”.
 
 > The standard inverse rotation of an admissible-sequence triangle is the standard cone
 > triangle of the negative desuspended connecting map.
@@ -71,7 +71,7 @@ theorem inverseRotatedAssociatedTriangle_iso_mappingConeTriangle (f : K ⟶ L) (
 
 [Tag 09KE](https://stacks.math.columbia.edu/tag/09KE) in the Stacks Project.
 
-**`DifferentialGradedModule.isIso_mappingConeMap_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeHomotopyEquivalence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeHomotopyEquivalence.lean#L128).
+**`DifferentialGradedModule.isIso_mappingConeMap_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeHomotopyEquivalence.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeHomotopyEquivalence.lean#L128).
 
 > In a morphism of cone triangles, if the maps on the source and the target of the two
 > original arrows are homotopy equivalences, then so is the induced map on the cones.
@@ -94,7 +94,7 @@ theorem isIso_mappingConeMap_of_isIso
 
 [Tag 09KF](https://stacks.math.columbia.edu/tag/09KF) in the Stacks Project.
 
-**`DifferentialGradedModule.mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_negMor₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/ConeSignClasses.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/ConeSignClasses.lean#L138). The attribute's comment: “the two cone sign conventions against the admissible-sequence class”.
+**`DifferentialGradedModule.mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_negMor₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/ConeSignClasses.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/ConeSignClasses.lean#L138). The attribute's comment: “the two cone sign conventions against the admissible-sequence class”.
 
 > A triangle of the homotopy category is isomorphic to a cone triangle exactly when negating
 > its third arrow gives the triangle of an admissible short exact sequence: the two classes are the
@@ -107,7 +107,7 @@ theorem mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_negMor₃
       IsDistinguishedTriangle A (Triangle.mk T.mor₁ T.mor₂ (-T.mor₃))
 ```
 
-**`DifferentialGradedModule.mem_distinguishedTriangles_admissible_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L162). The attribute's comment: “the admissible-sequence pretriangulated structure against the cone-triangle one”.
+**`DifferentialGradedModule.mem_distinguishedTriangles_admissible_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L162). The attribute's comment: “the admissible-sequence pretriangulated structure against the cone-triangle one”.
 
 > **The sign comparison of the two pretriangulated structures on `K(Mod_(A, d))`.** A triangle
 > is distinguished for the admissible-sequence structure
@@ -123,7 +123,7 @@ theorem mem_distinguishedTriangles_admissible_iff
         (instPretriangulatedHomotopyCategory (A := A)).distinguishedTriangles
 ```
 
-**`DifferentialGradedModule.mem_distinguishedTriangles_cone_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L179). The attribute's comment: “the cone-triangle pretriangulated structure against the admissible-sequence one”.
+**`DifferentialGradedModule.mem_distinguishedTriangles_cone_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L179). The attribute's comment: “the cone-triangle pretriangulated structure against the admissible-sequence one”.
 
 > **The sign comparison, from the side of the default structure.** A triangle is distinguished
 > for the cone-triangle structure `DifferentialGradedModule.instPretriangulatedHomotopyCategory`
@@ -138,7 +138,7 @@ theorem mem_distinguishedTriangles_cone_iff
         (instPretriangulatedHomotopyCategory' A).distinguishedTriangles
 ```
 
-**`DifferentialGradedModule.exists_mappingConeTriangle_iso_associatedTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean#L376). The attribute's comment: “part (1)”. References: SGA 4 XVII (1.1.1), “DG modules over a DGA”.
+**`DifferentialGradedModule.exists_mappingConeTriangle_iso_associatedTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean#L376). The attribute's comment: “part (1)”. References: SGA 4 XVII (1.1.1), “DG modules over a DGA”.
 
 > For an admissible short exact sequence, the projection of the cone onto the third term is a
 > homotopy equivalence and completes the identity maps on `K` and `L` to an isomorphism from the
@@ -155,7 +155,7 @@ theorem exists_mappingConeTriangle_iso_associatedTriangle (f : K ⟶ L) (g : L �
           e.hom.hom₃ = (toHomotopyCategory A).map q
 ```
 
-**`DifferentialGradedModule.exists_associatedTriangle_iso_mappingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean#L431). The attribute's comment: “part (2)”. References: SGA 4 XVII (1.1.1), “DG modules over a DGA”.
+**`DifferentialGradedModule.exists_associatedTriangle_iso_mappingConeTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/MappingConeTriangle.lean#L431). The attribute's comment: “part (2)”. References: SGA 4 XVII (1.1.1), “DG modules over a DGA”.
 
 > Every cone triangle is isomorphic to the triangle of an admissible short exact sequence, by
 > the identity on the first vertex and a comparison to the original second vertex compatible with
@@ -170,7 +170,7 @@ theorem exists_associatedTriangle_iso_mappingConeTriangle (f : K ⟶ L) :
           e.hom.hom₁ = 𝟙 _ ∧ e.hom.hom₂ = (toHomotopyCategory A).map b
 ```
 
-**`AlgebraicGeometry.RingedSite.tensorWithComplexToDerivedCategory_negMor₃_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexConeExactness.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexConeExactness.lean#L50). The attribute's comment: “the sign that relates the two classes of triangles”.
+**`AlgebraicGeometry.RingedSite.tensorWithComplexToDerivedCategory_negMor₃_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexConeExactness.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexConeExactness.lean#L50). The attribute's comment: “the sign that relates the two classes of triangles”.
 
 > The image in `D(O)` of a triangle isomorphic to a cone triangle of `K(Mod_(E, d))` is
 > distinguished once its third arrow is negated: that negation turns a cone triangle into the
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.9, Tag 09P1](https://stacks.math.columbia.edu/tag/09P1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

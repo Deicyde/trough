@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.15 Semistable reduction in genus zero
 
-Section 55.15 of the Stacks Project, [Tag 0CDK](https://stacks.math.columbia.edu/tag/0CDK). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.15 of the Stacks Project, [Tag 0CDK](https://stacks.math.columbia.edu/tag/0CDK). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CDL, an example
 
 [Tag 0CDL](https://stacks.math.columbia.edu/tag/0CDL) in the Stacks Project.
 
-**`Stacks.Models.RealConicModel.realConic_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RealConicExample.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/RealConicExample.lean#L339).
+**`Stacks.Models.RealConicModel.realConic_example`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RealConicExample.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/RealConicExample.lean#L339).
 
 > **Stacks Project, Tag 0CDL.** Let `R = ℝ[[π]]` with fraction field `K`, let
 > `X = V(T₁² + T₂² - πT₀²) ⊆ ℙ²_R` and let `C = V(T₁² + T₂² - πT₀²) ⊆ ℙ²_K` be its generic fibre.
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.15, Tag 0CDK](https://stacks.math.columbia.edu/tag/0CDK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

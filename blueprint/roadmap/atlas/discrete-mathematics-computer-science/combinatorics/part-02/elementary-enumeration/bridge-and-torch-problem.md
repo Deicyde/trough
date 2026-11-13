@@ -7,7 +7,7 @@ statement: formalized
 
 # Bridge and torch problem
 
-48 results, 30 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html).
+48 results, 30 proved and 18 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html).
 
 ## Weights of the capacity-3 lower bound
 
@@ -19,7 +19,7 @@ The value $y_0$ is unused and set to $0$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 15.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight).
 
 ## First seven weights of the capacity-3 lower bound
 
@@ -30,7 +30,7 @@ capacity-3 lower bound are $0, 0, 0, 2, 4, 5, 20/3$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 15.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_small`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-small).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_small`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-small).
 
 ## Weights of the capacity-3 lower bound from $7$ on
 
@@ -41,7 +41,7 @@ the weight $y_i$ of the capacity-3 lower bound equals $(4i - 8)/3$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 15.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_of_seven_le`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-of-seven-le).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_of_seven_le`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-of-seven-le).
 
 ## Valid crossing sequences from a state of the bridge and torch problem
 
@@ -60,7 +60,7 @@ $L \cup A_1$ with the torch on the left.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, proof of Theorem 1 (states and moves) and Section 3 (capacity `c`).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeScheduleFrom`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-schedule-from).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeScheduleFrom`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-schedule-from).
 
 ## Bridge schedules
 
@@ -77,7 +77,7 @@ crossing the left bank is empty and the torch is on the right bank.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, proof of Theorem 1 and Section 3.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsBridgeSchedule`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsBridgeSchedule`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule).
 
 ## Total time of a schedule
 
@@ -90,7 +90,7 @@ crossing time among the people in it.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, proof of Theorem 1.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost).
 
 ## Optimal crossing time of the bridge and torch problem
 
@@ -105,7 +105,7 @@ example when $n = 0$), the value is $0$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 1 and Theorem 12.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time).
 
 ## Forward crossings
 
@@ -117,7 +117,7 @@ these are its forward moves, from left to right.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 7.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#forward-crossings).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#forward-crossings).
 
 ## Return crossings
 
@@ -130,7 +130,7 @@ are the crossings from right to left.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 7.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.returnCrossings`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#return-crossings).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.returnCrossings`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#return-crossings).
 
 ## Right bank after a sequence of crossings
 
@@ -146,7 +146,7 @@ crossed an odd number of times, so they stand on the right bank.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 9.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.rightBank`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#right-bank).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.rightBank`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#right-bank).
 
 ## Every schedule bounds the optimal time
 
@@ -159,7 +159,7 @@ of $\sigma$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 1 (definition of `T(n)`).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_le_scheduleCost`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-le-schedule-cost).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_le_scheduleCost`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-le-schedule-cost).
 
 ## A four-person schedule of total time 11
 
@@ -171,7 +171,7 @@ $\{1,4\}$ forward, in this order, form a schedule, and its total time is $11$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, table after the proof of Theorem 1.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_two_four`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule-two-four).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_two_four`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule-two-four).
 
 ## One crossing of three people under capacities two and three
 
@@ -183,7 +183,7 @@ is a schedule on a bridge of capacity $3$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Section 3.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_capacity_three`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule-capacity-three).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_capacity_three`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-bridge-schedule-capacity-three).
 
 ## Forward moves, returns and right bank of a four-person schedule
 
@@ -196,7 +196,7 @@ the right bank after the crossings $\{1,2\}$, $\{1\}$ (the first two of the sche
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, table after the proof of Theorem 1.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings_returnCrossings_rightBank_example`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#forward-crossings-return-crossings-right).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings_returnCrossings_rightBank_example`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#forward-crossings-return-crossings-right).
 
 ## Parity interpolation
 
@@ -210,7 +210,7 @@ $$a_n = \frac{1 + (-1)^n}{2} f(\lfloor n/2 \rfloor) + \frac{1 - (-1)^n}{2} g(\lf
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 2 (`jis-2026-26.5.6-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.parity_interpolation` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#parity-interpolation).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.parity_interpolation` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#parity-interpolation).
 
 ## Local inequality for the capacity-3 weights
 
@@ -223,7 +223,7 @@ $$\sum_{i \in T} y_i + \frac{9}{2}(|T| - 1) \le \max T + \sum_{i \in T} i.$$
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 15 (`jis-2026-26.5.6-lem-15`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_local_inequality` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-local-inequality).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_local_inequality` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-local-inequality).
 
 ## Return inequality for the capacity-3 weights
 
@@ -236,7 +236,7 @@ $$\frac{9}{2}(|R| - 1) + \max R + \sum_{i \in R} (y_i - i) \ge 0.$$
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 16 (`jis-2026-26.5.6-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_return_inequality` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-return-inequality).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_return_inequality` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-weight-return-inequality).
 
 ## The capacity-3 closed form is an integer close to the lower bound
 
@@ -248,7 +248,7 @@ $V(n) = n^2/6 + 2n - 11/2$. Then $U(n)$ is an integer and $0 \le U(n) - V(n) < 1
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 19 (`jis-2026-26.5.6-lem-19`), with `U` from Theorem 12 and `V` from Proposition 17.
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.closedForm_U_integral_and_near_V` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#closed-form-u-integral-and-near-v).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.closedForm_U_integral_and_near_V` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#closed-form-u-integral-and-near-v).
 
 ## Closed form for capacity two
 
@@ -261,7 +261,7 @@ $$T(n) = \frac{n^2}{4} + 3n - 5 + \frac{(-1)^n - 1}{8}.$$
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 1 (`jis-2026-26.5.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_two_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-two-closed-form).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_two_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-two-closed-form).
 
 ## Fewest crossings of the fastest person in an optimal schedule
 
@@ -278,7 +278,7 @@ non-uniqueness of optimal schedules); over all schedules the minimum would be $1
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 6 (`jis-2026-26.5.6-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_two_least_trips_of_fastest` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-two-least-trips-of-fastest).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_two_least_trips_of_fastest` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-two-least-trips-of-fastest).
 
 ## Lower bound for capacity-two schedules
 
@@ -293,7 +293,7 @@ $T(n) + \lceil n/2 \rceil - a + 4m + 3s$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 7 (`jis-2026-26.5.6-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_two_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost-two-lower-bound).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_two_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost-two-lower-bound).
 
 ## Initial values for capacity three
 
@@ -305,7 +305,7 @@ $T_3(1) = 1$, $T_3(2) = 2$, $T_3(3) = 3$, $T_3(4) = 7$, $T_3(5) = 9$ and $T_3(6)
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 8 (`jis-2026-26.5.6-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_initial_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-initial-values).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_initial_values` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-initial-values).
 
 ## Optimal capacity-3 schedules with fastest single returns
 
@@ -319,7 +319,7 @@ single person $p$, and $p \le q$ for every person $q$ on the right bank just bef
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Lemma 9 (`jis-2026-26.5.6-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.exists_optimal_schedule_three_fastest_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#exists-optimal-schedule-three-fastest-re).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.exists_optimal_schedule_three_fastest_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#exists-optimal-schedule-three-fastest-re).
 
 ## Six-step upper bound for capacity three
 
@@ -331,7 +331,7 @@ every $k \ge 9$, $T_3(k) \le T_3(k - 6) + 2k + 6$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 11 (`jis-2026-26.5.6-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_le_sub_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-le-sub-six).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_le_sub_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-le-sub-six).
 
 ## Upper bound for capacity three
 
@@ -345,7 +345,7 @@ $$T_3(n) \le \frac{n^2}{6} + 2n - \frac{181}{36} + \frac{(-1)^n}{4} - \frac{2}{9
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 12 (`jis-2026-26.5.6-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_le_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-le-closed-form).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_le_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-le-closed-form).
 
 ## Lower bound for capacity-three schedules
 
@@ -357,7 +357,7 @@ least $V(n) = n^2/6 + 2n - 11/2$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 17 (`jis-2026-26.5.6-prop-17`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_three_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost-three-lower-bound).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_three_lower_bound` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#schedule-cost-three-lower-bound).
 
 ## Closed form for capacity three
 
@@ -371,7 +371,7 @@ $$T_3(n) = \frac{n^2}{6} + 2n - \frac{181}{36} + \frac{(-1)^n}{4} - \frac{2}{9}\
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 20 (`jis-2026-26.5.6-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-closed-form).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-closed-form).
 
 ## Six-step recurrence for capacity three
 
@@ -383,7 +383,7 @@ every $n \ge 13$, $T_3(n) = T_3(n - 6) + 2n + 6$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Corollary 21 (`jis-2026-26.5.6-cor-21`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-recurrence).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bridge-time-three-recurrence).
 
 ## Admissible bags
 
@@ -397,7 +397,7 @@ member of $F$ with its multiplicity and $n - 1$ is read as $0$ when $n = 0$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (admissible bag), Section 3 (journal version).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsAdmissibleBag`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsAdmissibleBag`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag).
 
 ## Weight of a bag
 
@@ -410,7 +410,7 @@ set counts with its multiplicity in $F$ and $\max \emptyset = 0$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (admissible bag), Section 3 (journal version).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bagWeight`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bag-weight).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.bagWeight`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bag-weight).
 
 ## A one-trip admissible bag for three people
 
@@ -421,7 +421,7 @@ $\{1, 2, 3\}$ is an admissible bag for $3$ people, and its weight for $3$ people
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (admissible bag), characteristic example.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_three_and_bagWeight`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag-three-and-bag-weight).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_three_and_bagWeight`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag-three-and-bag-weight).
 
 ## Schedules with single-person returns give admissible bags
 
@@ -435,7 +435,7 @@ equals the weight $w(F(\sigma))$ of this bag for $n$ people.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 14 (`jis-2026-26.5.6-prop-14`), first assertion.
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_forwardCrossings_of_single_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag-forward-crossings-of-s).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_forwardCrossings_of_single_returns` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-admissible-bag-forward-crossings-of-s).
 
 ## Some admissible bag weighs at most the capacity-3 optimal time
 
@@ -447,7 +447,7 @@ crossing time $T_3(n)$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Proposition 14 (`jis-2026-26.5.6-prop-14`), consequence.
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.exists_isAdmissibleBag_bagWeight_le_bridgeTime_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#exists-is-admissible-bag-bag-weight-le-b).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.exists_isAdmissibleBag_bagWeight_le_bridgeTime_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#exists-is-admissible-bag-bag-weight-le-b).
 
 ## Lower bound for the weight of an admissible bag
 
@@ -459,7 +459,7 @@ $\frac{n^2}{6} + 2n - \frac{11}{2}$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Corollary 18 (`jis-2026-26.5.6-cor-18`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bagWeight_ge_of_isAdmissibleBag` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bag-weight-ge-of-is-admissible-bag).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.bagWeight_ge_of_isAdmissibleBag` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#bag-weight-ge-of-is-admissible-bag).
 
 ## Movement in the star model
 
@@ -474,7 +474,7 @@ together is part of the definition of a legal step.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model), Section 5 (journal version).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove`, a structure declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-move).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove`, a structure declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-move).
 
 ## Start vertex of a star movement
 
@@ -487,7 +487,7 @@ at $u$ otherwise.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove.src`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#src).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove.src`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#src).
 
 ## End vertex of a star movement
 
@@ -499,7 +499,7 @@ $u_\ell$ if it goes outward from $o$, and at the center $o$ otherwise.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove.dst`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#dst).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.StarMove.dst`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#dst).
 
 ## Legal parallel steps in the star model
 
@@ -516,7 +516,7 @@ step start at $v$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsStarStep`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-step).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsStarStep`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-step).
 
 ## Positions after a step in the star model
 
@@ -529,7 +529,7 @@ center if it is inward), and $\mathrm{pos}(p)$ if no movement of $S$ includes $p
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepPos`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-pos).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepPos`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-pos).
 
 ## Torch counts after a step in the star model
 
@@ -542,7 +542,7 @@ movements of $S$ that start at $v$ and $b$ is the number of movements of $S$ tha
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepTorch`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-torch).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepTorch`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-torch).
 
 ## Duration of a step in the star model
 
@@ -554,7 +554,7 @@ movements, and $0$ if no person moves.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepDuration`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-duration).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starStepDuration`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-step-duration).
 
 ## Legal runs in the star model
 
@@ -571,7 +571,7 @@ exactly when every person already stands at a leaf.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starRunFrom`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-run-from).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starRunFrom`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-run-from).
 
 ## Star schedules
 
@@ -588,7 +588,7 @@ configuration every person is at some leaf.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsStarSchedule`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-schedule).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.IsStarSchedule`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-schedule).
 
 ## Optimal time in the star model
 
@@ -601,7 +601,7 @@ $k = 0$ or $t = 0$), then $T(n, k, t) = 0$ by convention.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model).
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starTime`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starTime`, a definition declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time).
 
 ## Every star schedule bounds the optimal time
 
@@ -614,7 +614,7 @@ the sum of the durations of its steps.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model), definition of `T(n, k, t)`.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starTime_le`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time-le).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.starTime_le`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time-le).
 
 ## Two persons crossing a one-edge star
 
@@ -627,7 +627,7 @@ schedule, and its total duration is $2$.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model), characteristic example.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isStarSchedule_two_one_one`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-schedule-two-one-one).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.isStarSchedule_two_one_one`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#is-star-schedule-two-one-one).
 
 ## Example: no return from a leaf without a torch
 
@@ -640,7 +640,7 @@ single movement that carries the person from the leaf back to the center is not 
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Definition (the star model), characteristic example.
 
-Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.not_isStarStep_return_without_torch`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#not-is-star-step-return-without-torch).
+Formalized by `MetaMathlibExt.BridgeTorchGeneralizations.not_isStarStep_return_without_torch`, a theorem declared in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 562](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#not-is-star-step-return-without-torch).
 
 ## Bridge and torch on star graphs
 
@@ -665,7 +665,7 @@ paper.
 
 - Thang Pang Ern and Gerard Sayson, *Some Generalizations of the Bridge and Torch Problem*, Journal of Integer Sequences 29 (2026), Article 26.5.6, Theorem 26 (`jis-2026-26.5.6-thm-26`).
 
-Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.starTime_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time-bounds).
+Stated but not proved: `MetaMathlibExt.BridgeTorchGeneralizations.starTime_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BridgeTorchGeneralizationsWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html#star-time-bounds).
 
 ## Depends on
 
@@ -674,4 +674,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bridge and torch problem](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/elementary-enumeration/bridge-and-torch-problem)

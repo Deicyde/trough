@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.20 Applications
 
-Section 90.20 of the Stacks Project, [Tag 0DYM](https://stacks.math.columbia.edu/tag/0DYM). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.20 of the Stacks Project, [Tag 0DYM](https://stacks.math.columbia.edu/tag/0DYM). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06L5, a lemma
 
 [Tag 06L5](https://stacks.math.columbia.edu/tag/06L5) in the Stacks Project.
 
-**`Deformation.boundaryLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBoundaryLinear.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductBoundaryLinear.lean#L495). The attribute's comment: “part (2), the boundary map `Inf(ℱ) → T𝒲` of the six-term exact sequence, as a `k`-linear map of the vector spaces of Tag 06IH”.
+**`Deformation.boundaryLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBoundaryLinear.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductBoundaryLinear.lean#L495). The attribute's comment: “part (2), the boundary map `Inf(ℱ) → T𝒲` of the six-term exact sequence, as a `k`-linear map of the vector spaces of Tag 06IH”.
 
 > **Stacks Project, Tag 06L5, part (2): the boundary map `δ : Inf(ℱ) → T𝒲` of the six-term
 > sequence, as a `k`-linear map**, at an arbitrary coordinate module. At the rank-one module this
@@ -38,7 +38,7 @@ public noncomputable def boundaryLinearMap
       ↥((productTangentLift.{u, v, w} pF f g hH hG hF).obj M)
 ```
 
-**`Deformation.isDeformationCategory_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean#L260). The attribute's comment: “part (1)”.
+**`Deformation.isDeformationCategory_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductDeformation.lean#L260). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 06L5, part (1).** The `2`-fibre product `𝒲 = ℋ ×_ℱ 𝒢` of two
 > `1`-morphisms of deformation categories over `𝒞_Λ` is again a deformation category.
@@ -63,7 +63,7 @@ theorem isDeformationCategory_twoFibreProductOver
     IsDeformationCategory (TwoFibreProductOver.structureFunctor pH pG pF f g)
 ```
 
-**`Deformation.injective_infProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean#L302). The attribute's comment: “part (2), the map `Inf(𝒲) → Inf(ℋ) ⊕ Inf(𝒢)` of the six-term exact sequence and the injectivity of it asserted at the first spot”.
+**`Deformation.injective_infProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean#L302). The attribute's comment: “part (2), the map `Inf(𝒲) → Inf(ℋ) ⊕ Inf(𝒢)` of the six-term exact sequence and the injectivity of it asserted at the first spot”.
 
 > **Stacks Project, Tag 06L5, part (2): exactness at `Inf(𝒲)`.** The map
 > `a : Inf(𝒲) → Inf(ℋ) ⊕ Inf(𝒢)` of the six-term sequence is injective, which is the `0 →` at
@@ -98,7 +98,7 @@ public theorem injective_infProjPair
     Function.Injective (infProjPair.{u, v, w} pF f g hH hG hF PW QH QG)
 ```
 
-**`Deformation.exact_infProjPair_infLegDiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean#L743). The attribute's comment: “part (2), exactness at `Inf(ℋ) ⊕ Inf(𝒢)` of the six-term exact sequence”.
+**`Deformation.exact_infProjPair_infLegDiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductInfRow.lean#L743). The attribute's comment: “part (2), exactness at `Inf(ℋ) ⊕ Inf(𝒢)` of the six-term exact sequence”.
 
 > **Stacks Project, Tag 06L5, part (2): exactness at `Inf(ℋ) ⊕ Inf(𝒢)`.** In the
 > `Inf`-row
@@ -148,7 +148,7 @@ public theorem exact_infProjPair_infLegDiff
       (infLegDiff.{u, v, w} pF f g hH hG hF QH QG PF PF' hw₀)
 ```
 
-**`Deformation.exact_boundaryLinearMap_tangentProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean#L280). The attribute's comment: “part (2), exactness at `T𝒲` of the six-term exact sequence, for the `k`-linear boundary map `Inf(ℱ) → T𝒲` and the map `T𝒲 → Tℋ ⊕ T𝒢`”.
+**`Deformation.exact_boundaryLinearMap_tangentProjPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSelfExact.lean#L280). The attribute's comment: “part (2), exactness at `T𝒲` of the six-term exact sequence, for the `k`-linear boundary map `Inf(ℱ) → T𝒲` and the map `T𝒲 → Tℋ ⊕ T𝒢`”.
 
 > **Stacks Project, Tag 06L5, part (2), for the `k`-linear boundary map: exactness at `T𝒲`.**
 > The kernel of `c : T𝒲 → Tℋ ⊕ T𝒢` is the image of the `k`-linear boundary map
@@ -183,7 +183,7 @@ public theorem exact_boundaryLinearMap_tangentProjPair
       (tangentProjPair.{u, v, w} pF f g hH hG hF M)
 ```
 
-**`Deformation.exact_tangentProjPair_tangentLegDiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean#L329). The attribute's comment: “part (2), the tangent row `T𝒲 → Tℋ ⊕ T𝒢 → Tℱ` of the six-term exact sequence and its exactness at `Tℋ ⊕ T𝒢`”.
+**`Deformation.exact_tangentProjPair_tangentLegDiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean#L329). The attribute's comment: “part (2), the tangent row `T𝒲 → Tℋ ⊕ T𝒢 → Tℱ` of the six-term exact sequence and its exactness at `Tℋ ⊕ T𝒢`”.
 
 > In the tangent row `T𝒲 → Tℋ ⊕ T𝒢 → Tℱ` of the six-term sequence of the `2`-fibre product
 > `𝒲 = ℋ ×_ℱ 𝒢`, the kernel of the difference of the two outer legs is the image of the pair of
@@ -198,7 +198,7 @@ public theorem exact_tangentProjPair_tangentLegDiff
       (tangentLegDiff.{u, v, w} pF f g hH hG hF M)
 ```
 
-**`Deformation.tangentProjPair_boundaryFun_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean#L550). The attribute's comment: “part (2), that the boundary map of the six-term exact sequence lands in the kernel of `T𝒲 → Tℋ ⊕ T𝒢`”.
+**`Deformation.tangentProjPair_boundaryFun_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermExact.lean#L550). The attribute's comment: “part (2), that the boundary map of the six-term exact sequence lands in the kernel of `T𝒲 → Tℋ ⊕ T𝒢`”.
 
 > The boundary map `δ : Aut(x'₀) → T𝒲` of the six-term sequence lands in the kernel of the
 > map `c : T𝒲 → Tℋ ⊕ T𝒢`.
@@ -222,7 +222,7 @@ public theorem tangentProjPair_boundaryFun_eq_zero
             (isDeformationCategory_productBased.{u, v, w} pF f g hH hG hF)) M α) = 0
 ```
 
-**`Deformation.exact_infLegDiff_infBoundaryLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean#L94). The attribute's comment: “part (2), exactness at `Inf(ℱ)` of the six-term exact sequence, for the map `Inf(ℋ) ⊕ Inf(𝒢) → Inf(ℱ)` and the boundary map `Inf(ℱ) → T𝒲`”.
+**`Deformation.exact_infLegDiff_infBoundaryLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean#L94). The attribute's comment: “part (2), exactness at `Inf(ℱ)` of the six-term exact sequence, for the map `Inf(ℋ) ⊕ Inf(𝒢) → Inf(ℱ)` and the boundary map `Inf(ℱ) → T𝒲`”.
 
 > **Stacks Project, Tag 06L5, part (2): exactness at `Inf(ℱ)`.** In the six-term sequence of
 > the `2`-fibre product `𝒲 = ℋ ×_ℱ 𝒢`, the kernel of the boundary map `δ : Inf(ℱ) → T𝒲` is the
@@ -271,7 +271,7 @@ public theorem exact_infLegDiff_infBoundaryLinearMap
       (infBoundaryLinearMap.{u, v, w} pF f g hH hG hF QH QG PF)
 ```
 
-**`Deformation.twoFibreProduct_sixTermExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean#L350). The attribute's comment: “part (2), the six-term exact sequence `0 → Inf(𝒲) → Inf(ℋ) ⊕ Inf(𝒢) → Inf(ℱ) → T𝒲 → Tℋ ⊕ T𝒢 → Tℱ` of a 2-fibre product of deformation categories, with its five `k`-linear maps and the exactness at all five of its spots: at `Inf(𝒲)`, at `Inf(ℋ) ⊕ Inf(𝒢)`, at `Inf(ℱ)`, at `T𝒲` and at `Tℋ ⊕ T𝒢`”.
+**`Deformation.twoFibreProduct_sixTermExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductSixTermFull/SixTerm.lean#L350). The attribute's comment: “part (2), the six-term exact sequence `0 → Inf(𝒲) → Inf(ℋ) ⊕ Inf(𝒢) → Inf(ℱ) → T𝒲 → Tℋ ⊕ T𝒢 → Tℱ` of a 2-fibre product of deformation categories, with its five `k`-linear maps and the exactness at all five of its spots: at `Inf(𝒲)`, at `Inf(ℋ) ⊕ Inf(𝒢)`, at `Inf(ℱ)`, at `T𝒲` and at `Tℋ ⊕ T𝒢`”.
 
 > **Stacks Project, Tag 06L5, part (2): the six-term sequence**
 >
@@ -331,7 +331,7 @@ public theorem twoFibreProduct_sixTermExact
 
 [Tag 0DYN](https://stacks.math.columbia.edu/tag/0DYN) in the Stacks Project.
 
-**`Deformation.mapTwoFibreProductBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L191). The attribute's comment: “the canonical functor between the two 2-fibre products”.
+**`Deformation.mapTwoFibreProductBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L191). The attribute's comment: “the canonical functor between the two 2-fibre products”.
 
 > The canonical functor over `𝒞_Λ` from the `2`-fibre product of `ℋ₁` and `ℋ₂` over `𝒢` to
 > their `2`-fibre product over `ℱ`, for a morphism `q : 𝒢 → ℱ`: it keeps both components and
@@ -344,7 +344,7 @@ public def mapTwoFibreProductBaseChange
       (twoFibreProductBasedCategory (BasedFunctor.comp p₁ q) (BasedFunctor.comp p₂ q))
 ```
 
-**`Deformation.isSmooth_mapTwoFibreProductBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L538). The attribute's comment: “smoothness”.
+**`Deformation.isSmooth_mapTwoFibreProductBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L538). The attribute's comment: “smoothness”.
 
 > Let `p₁ : ℋ₁ → 𝒢`, `p₂ : ℋ₂ → 𝒢` and `q : 𝒢 → ℱ` be morphisms of categories cofibered in
 > groupoids over `𝒞_Λ`. Assume that `ℱ` and `𝒢` are deformation categories, that `T𝒢 → Tℱ` is
@@ -373,7 +373,7 @@ public theorem isSmooth_mapTwoFibreProductBaseChange'
 
 [Tag 0DYP](https://stacks.math.columbia.edu/tag/0DYP) in the Stacks Project.
 
-**`Deformation.isSmooth_iff_differential_surjective_and_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Criterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Criterion.lean#L115).
+**`Deformation.isSmooth_iff_differential_surjective_and_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Criterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Criterion.lean#L115).
 
 > Surjectivity of the differential and preservation of the existence of lifts across small
 > extensions characterize smoothness.
@@ -402,7 +402,7 @@ public theorem isSmooth_iff_differential_surjective_and_lifts
 
 [Tag 0E3R](https://stacks.math.columbia.edu/tag/0E3R) in the Stacks Project.
 
-**`Deformation.isSmooth_of_differential_surjective_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Composite.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Composite.lean#L45).
+**`Deformation.isSmooth_of_differential_surjective_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Composite.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/LiftsOfObjects/Smoothness/Composite.lean#L45).
 
 > **Stacks Project, Tag 0E3R.** A morphism of deformation categories is smooth if its
 > differential is surjective and its composite with another morphism is smooth.
@@ -429,4 +429,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.20, Tag 0DYM](https://stacks.math.columbia.edu/tag/0DYM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.8 Modifications and alterations
 
-Section 72.8 of the Stacks Project, [Tag 0AD7](https://stacks.math.columbia.edu/tag/0AD7). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.8 of the Stacks Project, [Tag 0AD7](https://stacks.math.columbia.edu/tag/0AD7). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AD8, a definition
 
 [Tag 0AD8](https://stacks.math.columbia.edu/tag/0AD8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsIntegralModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean#L85).
+**`AlgebraicGeometry.Space.IsIntegralModification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean#L85).
 
 > **Stacks 0AD8.** A *modification* of an integral algebraic space `X` over `S` is a
 > birational proper morphism `f : X' ⟶ X` of algebraic spaces over `S` with `X'` integral.
@@ -32,7 +32,7 @@ def IsIntegralModification {X' X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0AD9](https://stacks.math.columbia.edu/tag/0AD9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsIntegralModification.exists_isIso_fromPreimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean#L132).
+**`AlgebraicGeometry.Space.IsIntegralModification.exists_isIso_fromPreimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralModification.lean#L132).
 
 > **Stacks 0AD9.** A modification of an integral algebraic space over `S` is an isomorphism
 > over a nonempty open subspace of its target.
@@ -51,7 +51,7 @@ theorem IsIntegralModification.exists_isIso_fromPreimage
 
 [Tag 0ADA](https://stacks.math.columbia.edu/tag/0ADA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsAlteration`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean#L84).
+**`AlgebraicGeometry.Space.IsAlteration`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean#L84).
 
 > **Stacks 0ADA.** An *alteration* of an integral algebraic space `X` over `S` is a proper
 > dominant morphism `f : Y ⟶ X` of algebraic spaces over `S` with `Y` integral such that the
@@ -65,7 +65,7 @@ abbrev IsAlteration (f : Y ⟶ X) : Prop
 
 [Tag 0ADB](https://stacks.math.columbia.edu/tag/0ADB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlteration_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean#L126). The attribute's comment: “against condition (4) of Stacks 0AD5”.
+**`AlgebraicGeometry.Space.isAlteration_iff_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralAlteration.lean#L126). The attribute's comment: “against condition (4) of Stacks 0AD5”.
 
 > **Stacks 0ADB.** A proper dominant morphism `f : Y ⟶ X` of integral algebraic spaces over
 > `S` is an alteration exactly when it is quasi-finite at the generic point of `|Y|`, which is
@@ -85,7 +85,7 @@ theorem isAlteration_iff_isQuasiFiniteAt (hY : IsAlgebraicSpace B S hS Y)
 
 [Tag 0DMN](https://stacks.math.columbia.edu/tag/0DMN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isClosedSubspace_isAlteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlterationInProperSurjection.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlterationInProperSurjection.lean#L164).
+**`AlgebraicGeometry.Space.exists_isClosedSubspace_isAlteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlterationInProperSurjection.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlterationInProperSurjection.lean#L164).
 
 > Let `f : X ⟶ Y` be a proper surjective morphism of algebraic spaces over a scheme `S` with
 > `Y` integral. Then `f` restricts to an alteration on some integral closed subspace of `X`.
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.8, Tag 0AD7](https://stacks.math.columbia.edu/tag/0AD7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

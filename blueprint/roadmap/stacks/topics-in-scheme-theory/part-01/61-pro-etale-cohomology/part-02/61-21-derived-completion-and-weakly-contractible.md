@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.21 Derived completion and weakly contractible objects
 
-Section 61.21 of the Stacks Project, [Tag 099P](https://stacks.math.columbia.edu/tag/099P). 1 tag here is carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.21 of the Stacks Project, [Tag 099P](https://stacks.math.columbia.edu/tag/099P). 1 tag here is carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 099Q, a proposition
 
 [Tag 099Q](https://stacks.math.columbia.edu/tag/099Q) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1059](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1059). The attribute's comment: “completion\_criterion”.
+**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1059](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1059). The attribute's comment: “completion\_criterion”.
 
 > Ordinary completeness is derived completeness plus separatedness.
 
@@ -36,7 +36,7 @@ theorem isLimit_adicQuotientSystem_iff_of_slicedObjectsSituation
         (⨅ n : ℕ, idealPowerProduct X I F n) = ⊥
 ```
 
-**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1398). The attribute's comment: “completion\_criterion”.
+**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean, line 1398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterion.lean#L1398). The attribute's comment: “completion\_criterion”.
 
 > Ordinary completeness is derived completeness plus separatedness.
 
@@ -59,7 +59,7 @@ theorem isLimit_adicQuotientSystem_iff
         (⨅ n : ℕ, idealPowerProduct X I F n) = ⊥
 ```
 
-**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean#L741). The attribute's comment: “completion\_criterion”.
+**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean, line 741](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/AdicCompletionCriterionSliceTesting.lean#L741). The attribute's comment: “completion\_criterion”.
 
 > Ordinary completeness is derived completeness plus separatedness.
 
@@ -81,7 +81,7 @@ theorem isLimit_adicQuotientSystem_iff_of_sliceTestingFamily
         (⨅ n : ℕ, idealPowerProductOfSize X I F n) = ⊥
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean#L125). The attribute's comment: “cohomology\_criterion”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean#L125). The attribute's comment: “cohomology\_criterion”.
 
 > A complex is derived complete precisely when each cohomology sheaf is.
 
@@ -102,7 +102,7 @@ theorem isDerivedComplete_iff_homology_of_slicedObjectsSituation
             (SheafOfModules.{max u v} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) p).obj K))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean#L160). The attribute's comment: “cohomology\_criterion”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomology.lean#L160). The attribute's comment: “cohomology\_criterion”.
 
 > A complex is derived complete precisely when each cohomology sheaf is.
 
@@ -123,7 +123,7 @@ theorem isDerivedComplete_iff_homology
             (SheafOfModules.{max u v} ((Stacks.SheafOfModules.Tensor.ringSheaf X.O))) p).obj K))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomologySliceTesting.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomologySliceTesting.lean#L52). The attribute's comment: “cohomology\_criterion”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomologySliceTesting.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCohomologySliceTesting.lean#L53). The attribute's comment: “cohomology\_criterion”.
 
 > A complex is derived complete precisely when each cohomology sheaf is.
 
@@ -144,7 +144,7 @@ theorem isDerivedComplete_iff_homology_of_sliceTestingFamily
             p).obj K))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_adicQuotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCompletedStructureSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCompletedStructureSheaf.lean#L76). The attribute's comment: “completed\_structure\_sheaf”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_adicQuotientTower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCompletedStructureSheaf.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteCompletedStructureSheaf.lean#L74). The attribute's comment: “completed\_structure\_sheaf”.
 
 > **The completion `limₙ 𝒪/ℐⁿ` of the structure sheaf is derived complete along `ℐ`.** Every
 > term of the tower of adic quotients is derived complete, and an inverse limit of derived-complete
@@ -162,7 +162,7 @@ theorem isDerivedComplete_limit_adicQuotientTower
         (limit (adicQuotientTower X I)))
 ```
 
-**`AlgebraicGeometry.RingedSite.isWeakSerreClass_isDerivedComplete_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L190). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.RingedSite.isWeakSerreClass_isDerivedComplete_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L189). The attribute's comment: “(1)”.
 
 > **[Stacks, Tag 099Q] (1).** On a site with enough weakly contractible objects, the derived
 > complete sheaves of `Λ`-modules form a weak Serre subcategory of `Mod(𝒞, Λ)`.
@@ -176,7 +176,7 @@ theorem isWeakSerreClass_isDerivedComplete_constant (hJ : J.HasEnoughWeaklyContr
           ((DerivedCategory.singleFunctor _ 0).obj F))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L202). The attribute's comment: “(4)”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L201). The attribute's comment: “(4)”.
 
 > **[Stacks, Tag 099Q] (4).** On a site with enough weakly contractible objects, the limit of an
 > inverse system `… → ℱ₃ → ℱ₂ → ℱ₁` of derived complete sheaves of `Λ`-modules is derived
@@ -192,7 +192,7 @@ theorem isDerivedComplete_limit_constant (hJ : J.HasEnoughWeaklyContractibleObje
       ((DerivedCategory.singleFunctor _ 0).obj (limit F))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L215). The attribute's comment: “(5)”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_iff_homology_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L214). The attribute's comment: “(5)”.
 
 > **[Stacks, Tag 099Q] (5).** On a site with enough weakly contractible objects, an object `K`
 > of `D(𝒞, Λ)` is derived complete if and only if each cohomology sheaf `Hᵖ(K)` is derived
@@ -208,7 +208,7 @@ theorem isDerivedComplete_iff_homology_constant (hJ : J.HasEnoughWeaklyContracti
         ((DerivedCategory.singleFunctor _ 0).obj ((DerivedCategory.homologyFunctor _ p).obj K))
 ```
 
-**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L229). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.RingedSite.isLimit_adicQuotientSystem_iff_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L228). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 099Q] (2).** On a site with enough weakly contractible objects, a sheaf `ℱ` of
 > `Λ`-modules satisfies `ℱ = lim ℱ/Iⁿℱ` — the maps `ℱ ⟶ ℱ/Iⁿℱ` form a limit cone — if and only if
@@ -226,7 +226,7 @@ theorem isLimit_adicQuotientSystem_iff_constant (hJ : J.HasEnoughWeaklyContracti
         (⨅ n : ℕ, idealPowerProduct (constant J Λ) (constantIdealSheaf J Λ I) F n) = ⊥
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_constantCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L244). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_constantCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L243). The attribute's comment: “(3)”.
 
 > **[Stacks, Tag 099Q] (3).** On a site with enough weakly contractible objects, the sheaf
 > `Λ̲^∧ = lim (Λ/Iⁿ)̲` is derived complete. Only the finite generation of `I` is used of the
@@ -240,7 +240,7 @@ theorem isDerivedComplete_constantCompletion (hJ : J.HasEnoughWeaklyContractible
         (limit (Stacks.ConstantSheaf.adicQuotientSystem I ⋙ constantModuleFunctor J Λ)))
 ```
 
-**`AlgebraicGeometry.RingedSite.isBoundedAbove_iff_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L316). The attribute's comment: “(6)”.
+**`AlgebraicGeometry.RingedSite.isBoundedAbove_iff_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L315). The attribute's comment: “(6)”.
 
 > **[Stacks, Tag 099Q] (6).** On a site with enough weakly contractible objects, a derived
 > complete object `K` of `D(𝒞, Λ)` is bounded above if and only if `K ⊗^𝐋_Λ (Λ/I)̲` is bounded
@@ -259,7 +259,7 @@ theorem isBoundedAbove_iff_constant [IsNoetherianRing Λ]
             ((constantModuleFunctor J Λ).obj (ModuleCat.of Λ (Λ ⧸ I)))))
 ```
 
-**`AlgebraicGeometry.RingedSite.isBounded_of_hasFiniteTorDimension_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L364). The attribute's comment: “(7)”.
+**`AlgebraicGeometry.RingedSite.isBounded_of_hasFiniteTorDimension_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteConstantNoetherian.lean#L363). The attribute's comment: “(7)”.
 
 > **[Stacks, Tag 099Q] (7).** On a site with enough weakly contractible objects, a derived
 > complete object `K` of `D(𝒞, Λ)` is bounded if `K ⊗^𝐋_Λ Λ/I`, as an object of `D(𝒞, Λ/I)`, has
@@ -280,7 +280,7 @@ theorem isBounded_of_hasFiniteTorDimension_constant [IsNoetherianRing Λ]
     ∃ a b : ℤ, K.IsGE a ∧ K.IsLE b
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean#L193). The attribute's comment: “inverse\_limits, at a sliced situation of testing objects”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean#L193). The attribute's comment: “inverse\_limits, at a sliced situation of testing objects”.
 
 > **The inverse limit of a countable system of derived-complete sheaves of modules is derived
 > complete**, on a ringed site equipped with a covering collection of objects which test
@@ -311,7 +311,7 @@ public theorem isDerivedComplete_limit_of_slicedObjectsSituation
         (limit F))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean#L264). The attribute's comment: “inverse\_limits”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimit.lean#L264). The attribute's comment: “inverse\_limits”.
 
 > The inverse limit of a countable system of derived-complete sheaves is derived complete.
 
@@ -333,7 +333,7 @@ public theorem isDerivedComplete_limit
         (limit F))
 ```
 
-**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimitSliceTesting.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimitSliceTesting.lean#L64). The attribute's comment: “inverse\_limits”.
+**`AlgebraicGeometry.RingedSite.isDerivedComplete_limit_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimitSliceTesting.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteInverseLimitSliceTesting.lean#L64). The attribute's comment: “inverse\_limits”.
 
 > **The inverse limit of a countable system of derived-complete sheaves is derived
 > complete**, on a ringed site with a slice testing family of weakly contractible objects at the
@@ -356,7 +356,7 @@ public theorem isDerivedComplete_limit_of_sliceTestingFamily
         (limit F))
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean#L56). The attribute's comment: “weak\_serre”.
+**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass_of_slicedObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean#L56). The attribute's comment: “weak\_serre”.
 
 > Derived-complete sheaves of modules form a weak Serre subcategory on a site
 > with enough weakly contractible objects.
@@ -376,7 +376,7 @@ theorem derivedCompleteSheaves_isWeakSerreClass_of_slicedObjectsSituation
             (SheafOfModules.{max u v} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) 0).obj F))
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean#L215). The attribute's comment: “weak\_serre”.
+**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerre.lean#L215). The attribute's comment: “weak\_serre”.
 
 > Derived-complete sheaves of modules form a weak Serre subcategory on a site
 > with enough weakly contractible objects.
@@ -399,7 +399,7 @@ theorem derivedCompleteSheaves_isWeakSerreClass
             0).obj F))
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerreSliceTesting.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerreSliceTesting.lean#L69). The attribute's comment: “weak\_serre”.
+**`AlgebraicGeometry.RingedSite.derivedCompleteSheaves_isWeakSerreClass_of_sliceTestingFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerreSliceTesting.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedCompleteWeakSerreSliceTesting.lean#L70). The attribute's comment: “weak\_serre”.
 
 > Derived-complete sheaves of modules form a weak Serre subcategory on a site
 > with enough weakly contractible objects.
@@ -427,4 +427,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.21, Tag 099P](https://stacks.math.columbia.edu/tag/099P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

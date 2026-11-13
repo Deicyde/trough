@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.11 Formal algebraic spaces
 
-Section 87.11 of the Stacks Project, [Tag 0AIL](https://stacks.math.columbia.edu/tag/0AIL). 6 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.11 of the Stacks Project, [Tag 0AIL](https://stacks.math.columbia.edu/tag/0AIL). 6 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AIL, the section
 
 [Tag 0AIL](https://stacks.math.columbia.edu/tag/0AIL) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.formalAlgebraicSpaces_discussion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalAlgebraicSpaceSanityChecks.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalAlgebraicSpaceSanityChecks.lean#L188). The attribute's comment: “the unnumbered discussion of Definition 0AIM in the section: an affine formal algebraic space is a formal algebraic space; the members of a family as in Definition 0AIM are representable by schemes; surjectivity of the map from the coproduct as a map of sheaves may be replaced by surjectivity (Bootstrap, Lemma 04S1). Also records that an affine formal algebraic space is quasi-compact”.
+**`AlgebraicGeometry.FormalSpace.formalAlgebraicSpaces_discussion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalAlgebraicSpaceSanityChecks.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalAlgebraicSpaceSanityChecks.lean#L188). The attribute's comment: “the unnumbered discussion of Definition 0AIM in the section: an affine formal algebraic space is a formal algebraic space; the members of a family as in Definition 0AIM are representable by schemes; surjectivity of the map from the coproduct as a map of sheaves may be replaced by surjectivity (Bootstrap, Lemma 04S1). Also records that an affine formal algebraic space is quasi-compact”.
 
 > **Stacks 0AIL**, the discussion following Definition 0AIM in Section 87.11, "Formal algebraic
 > spaces". Over a scheme `S` contained in a big fppf site:
@@ -60,7 +60,7 @@ theorem formalAlgebraicSpaces_discussion :
 
 [Tag 0AIM](https://stacks.math.columbia.edu/tag/0AIM) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean#L50).
+**`AlgebraicGeometry.FormalSpace.IsFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Defs.lean#L50).
 
 > An fppf sheaf on the big fppf site of `S` is a *formal algebraic space* over `S` when it
 > satisfies the set-theoretic condition of Stacks 0AIS and admits an atlas by affine formal
@@ -77,7 +77,7 @@ abbrev IsFormalAlgebraicSpace (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
 
 [Tag 0AIP](https://stacks.math.columbia.edu/tag/0AIP) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1010). The attribute's comment: “representable by schemes, for an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1010). The attribute's comment: “representable by schemes, for an arbitrary formal algebraic space”.
 
 > **Stacks 0AIP, representability, for an arbitrary formal algebraic space:** the absolute
 > diagonal of a formal algebraic space over `S` is representable by objects of the big fppf site
@@ -94,7 +94,7 @@ theorem relativelyRepresentable_diag_of_isFormalAlgebraicSpace
       (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1164). The attribute's comment: “locally of finite type, for an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1164). The attribute's comment: “locally of finite type, for an arbitrary formal algebraic space”.
 
 > **Stacks 0AIP, local finite type, for an arbitrary formal algebraic space:** every
 > represented base change of the absolute diagonal of a formal algebraic space over `S` is a
@@ -113,7 +113,7 @@ theorem relative_locallyOfFiniteType_diag_of_isFormalAlgebraicSpace
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1182). The attribute's comment: “locally quasi-finite, for an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1182). The attribute's comment: “locally quasi-finite, for an arbitrary formal algebraic space”.
 
 > **Stacks 0AIP, local quasi-finiteness, for an arbitrary formal algebraic space:** every
 > represented base change of the absolute diagonal of a formal algebraic space over `S` is a
@@ -134,7 +134,7 @@ theorem relative_locallyQuasiFinite_diag_of_isFormalAlgebraicSpace
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isSeparated_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1205). The attribute's comment: “separated, for an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_isSeparated_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L1205). The attribute's comment: “separated, for an arbitrary formal algebraic space”.
 
 > **Stacks 0AIP, separatedness, for an arbitrary formal algebraic space:** every represented
 > base change of the absolute diagonal of a formal algebraic space over `S` is a separated
@@ -152,7 +152,7 @@ theorem relative_isSeparated_diag_of_isFormalAlgebraicSpace
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L199). The attribute's comment: “representable by schemes, for an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L199). The attribute's comment: “representable by schemes, for an affine formal algebraic space”.
 
 > The absolute diagonal of an affine formal algebraic space is representable by objects of the
 > site.
@@ -163,7 +163,7 @@ theorem relativelyRepresentable_diag_of_isAffineFormal {X : FppfSheaf B S hS}
     (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)).relativelyRepresentable (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L207). The attribute's comment: “locally quasi-finite, for an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyQuasiFinite_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L207). The attribute's comment: “locally quasi-finite, for an affine formal algebraic space”.
 
 > Every represented base change of the absolute diagonal of an affine formal algebraic space is
 > a locally quasi-finite, locally of finite type morphism of schemes.
@@ -178,7 +178,7 @@ theorem relative_locallyQuasiFinite_diag_of_isAffineFormal {X : FppfSheaf B S hS
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L222). The attribute's comment: “locally of finite type, for an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_locallyOfFiniteType_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L222). The attribute's comment: “locally of finite type, for an affine formal algebraic space”.
 
 > Every represented base change of the absolute diagonal of an affine formal algebraic space is
 > a locally of finite type morphism of schemes.
@@ -192,7 +192,7 @@ theorem relative_locallyOfFiniteType_diag_of_isAffineFormal {X : FppfSheaf B S h
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isSeparated_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L234). The attribute's comment: “separated, for an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relative_isSeparated_diag_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L234). The attribute's comment: “separated, for an affine formal algebraic space”.
 
 > Every represented base change of the absolute diagonal of an affine formal algebraic space is
 > a separated morphism of schemes.
@@ -206,7 +206,7 @@ theorem relative_isSeparated_diag_of_isAffineFormal {X : FppfSheaf B S hS}
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) (diag X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.mono_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L247). The attribute's comment: “monomorphism, for an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.mono_diag_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L247). The attribute's comment: “monomorphism, for an arbitrary formal algebraic space”.
 
 > The absolute diagonal of a formal algebraic space over `S` is a monomorphism of fppf sheaves,
 > which by **Stacks 0AQB** is what it is for a morphism of formal algebraic spaces to be a
@@ -219,13 +219,13 @@ theorem mono_diag_of_isFormalAlgebraicSpace {X : FppfSheaf B S hS}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.instIsSplitMonoDiag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.instIsSplitMonoDiag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L328) (StacksFrontier): “monomorphism”.
+- [`CategoryTheory.Limits.instIsSplitMonoDiag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.instIsSplitMonoDiag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RelativeDiagonal.lean#L328) (StacksFrontier): “monomorphism”.
 
 ## Tag 0AIQ, a lemma
 
 [Tag 0AIQ](https://stacks.math.columbia.edu/tag/0AIQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 993](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L993). The attribute's comment: “for an arbitrary formal algebraic space target, carrying nothing: the representable-relative-products hypothesis is discharged by this module's own Stacks 0AIP”.
+**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean, line 993](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/DiagonalRepresentable.lean#L993). The attribute's comment: “for an arbitrary formal algebraic space target, carrying nothing: the representable-relative-products hypothesis is discharged by this module's own Stacks 0AIP”.
 
 > **Stacks 0AIQ for an arbitrary formal algebraic space target.** A morphism of fppf sheaves
 > whose source is an algebraic space over `S` and whose target is a formal algebraic space over `S`
@@ -246,7 +246,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isForm
     Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS f.hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsFromAlgebraicSpace.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsFromAlgebraicSpace.lean#L134). The attribute's comment: “for a target which is an affine formal algebraic space, that being the case in which this library has Stacks 0AIP”.
+**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MapsFromAlgebraicSpace.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MapsFromAlgebraicSpace.lean#L134). The attribute's comment: “for a target which is an affine formal algebraic space, that being the case in which this library has Stacks 0AIP”.
 
 > **Stacks 0AIQ** when the target is an affine formal algebraic space. A morphism of fppf
 > sheaves from an algebraic space over `S` to an affine formal algebraic space over `S` is
@@ -265,7 +265,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isAffi
 
 [Tag 0AIR](https://stacks.math.columbia.edu/tag/0AIR) in the Stacks Project.
 
-**`AlgebraicGeometry.full_formalSchemePointsFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L104). The attribute's comment: “fullness of the embedding by the functor of points, on all schemes”.
+**`AlgebraicGeometry.full_formalSchemePointsFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L104). The attribute's comment: “fullness of the embedding by the functor of points, on all schemes”.
 
 > The functor of points of formal schemes on the category of all schemes is full, with no size
 > hypothesis.
@@ -274,7 +274,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isAffi
 instance full_formalSchemePointsFunctor : formalSchemePointsFunctor.{u}.Full
 ```
 
-**`AlgebraicGeometry.fullyFaithfulFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L111). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into presheaves on schemes”.
+**`AlgebraicGeometry.fullyFaithfulFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L111). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into presheaves on schemes”.
 
 > Taking the functor of points on the category of all schemes is a fully faithful embedding of
 > the category of formal schemes into presheaves of sets on schemes.
@@ -284,7 +284,7 @@ noncomputable def fullyFaithfulFormalSchemePointsFunctor :
     formalSchemePointsFunctor.{u}.FullyFaithful
 ```
 
-**`AlgebraicGeometry.faithful_formalSchemePointsFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsSheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsSheaf.lean#L81). The attribute's comment: “faithfulness of the embedding by the functor of points, on all schemes”.
+**`AlgebraicGeometry.faithful_formalSchemePointsFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsSheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsSheaf.lean#L81). The attribute's comment: “faithfulness of the embedding by the functor of points, on all schemes”.
 
 > The functor of points of formal schemes on the category of all schemes is faithful.
 
@@ -292,7 +292,7 @@ noncomputable def fullyFaithfulFormalSchemePointsFunctor :
 instance faithful_formalSchemePointsFunctor : formalSchemePointsFunctor.{u}.Faithful
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isOpenImmersion_openFormalSubschemePresheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L504). The attribute's comment: “the morphisms h\_\{𝔛ᵢ} ⟶ h\_𝔛 of an open covering are representable and open immersions”.
+**`AlgebraicGeometry.FormalSpace.relative_isOpenImmersion_openFormalSubschemePresheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L504). The attribute's comment: “the morphisms h\_\{𝔛ᵢ} ⟶ h\_𝔛 of an open covering are representable and open immersions”.
 
 > **Stacks 0AIR, clause (4).** The morphism `h_{𝔛|_𝔘} ⟶ h_𝔛` of fppf sheaves on the big fppf
 > site of `S` is representable and an open immersion: it is representable by morphisms of the
@@ -311,7 +311,7 @@ theorem relative_isOpenImmersion_openFormalSubschemePresheafHom :
       (uliftYoneda.{u + 1}) (openFormalSubschemePresheafHom B S hS X V hV)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_openFormalSubschemePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L612). The attribute's comment: “the charts h\_\{𝔛ᵢ} of an affine open covering are affine formal algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_openFormalSubschemePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L612). The attribute's comment: “the charts h\_\{𝔛ᵢ} of an affine open covering are affine formal algebraic spaces”.
 
 > **Stacks 0AIR, clause (3).** For a member `𝔛|_𝔘` of an affine open covering of `𝔛` — an open
 > of `𝔛` whose restriction is isomorphic to the formal spectrum of an admissible topological ring
@@ -332,7 +332,7 @@ theorem isAffineFormalAlgebraicSpace_openFormalSubschemePoints (hterm : IsTermin
       (formalSchemePointsFppfSheaf B S hS (openFormalSubscheme X V hV))
 ```
 
-**`AlgebraicGeometry.FormalSpace.fullyFaithfulFormalSchemePointsFppfSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L735). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into the fppf sheaves on the big fppf site of the base”.
+**`AlgebraicGeometry.FormalSpace.fullyFaithfulFormalSchemePointsFppfSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L735). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into the fppf sheaves on the big fppf site of the base”.
 
 > **Stacks 0AIR, clause (2).** The assignment `𝔛 ↦ h_𝔛` is a fully faithful embedding of the
 > category of formal schemes into the category `AlgebraicGeometry.FormalSpace.FppfSheaf B S hS`
@@ -351,7 +351,7 @@ def fullyFaithfulFormalSchemePointsFppfSheafFunctor (hterm : IsTerminal S) :
     (sizeBoundedFormalSchemePointsFppfSheafFunctor B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpaceFormalSchemePoints_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L811). The attribute's comment: “the functor of points of a formal scheme with an affine open covering is a formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpaceFormalSchemePoints_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L811). The attribute's comment: “the functor of points of a formal scheme with an affine open covering is a formal algebraic space”.
 
 > **Stacks 0AIR, clause (5).** The functor of points of a formal scheme à la EGA is a formal
 > algebraic space over `S`, for a formal scheme admitting an open covering `𝔛 = ⋃ 𝔘_i` whose
@@ -381,7 +381,7 @@ theorem isFormalAlgebraicSpaceFormalSchemePoints_of_affineCover
     IsFormalAlgebraicSpaceFormalSchemePoints B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.fullyFaithfulComparableFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 864](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L864). The attribute's comment: “the category of formal schemes is equivalent to a full subcategory of the category of formal algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.fullyFaithfulComparableFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 864](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L864). The attribute's comment: “the category of formal schemes is equivalent to a full subcategory of the category of formal algebraic spaces”.
 
 > **Stacks 0AIR, the comparison.** The category of formal schemes à la EGA is equivalent to a
 > full subcategory of the category of formal algebraic spaces over `S`: the functor `𝔛 ↦ h_𝔛`
@@ -400,7 +400,7 @@ def fullyFaithfulComparableFormalSchemePointsFunctor (hterm : IsTerminal S) :
     (comparableFormalSchemePointsFunctor B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFppfSheafFormalSchemePoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean#L133). The attribute's comment: “the functor of points is an fppf sheaf, for a formal scheme that is a scheme”.
+**`AlgebraicGeometry.FormalSpace.isFppfSheafFormalSchemePoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean#L133). The attribute's comment: “the functor of points is an fppf sheaf, for a formal scheme that is a scheme”.
 
 > **Stacks 0AIR**, the sheaf clause, for a formal scheme isomorphic to a scheme: its functor
 > of points satisfies the fppf sheaf condition on the big fppf site of `S`, with no hypothesis
@@ -415,7 +415,7 @@ theorem isFppfSheafFormalSchemePoints_of_iso {X : FormalScheme.{u}} {Z : Scheme.
     (e : X ≅ schemeToFormalScheme.obj Z) : IsFppfSheafFormalSchemePoints B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFppfSheafFormalSchemePoints_formalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean#L164). The attribute's comment: “the functor of points of an arbitrary formal scheme is an fppf sheaf”.
+**`AlgebraicGeometry.FormalSpace.isFppfSheafFormalSchemePoints_formalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonSheaf.lean#L164). The attribute's comment: “the functor of points of an arbitrary formal scheme is an fppf sheaf”.
 
 > **Stacks 0AIR**, the sheaf clause, for an *arbitrary* formal scheme: the functor of points
 > of a formal scheme à la EGA satisfies the fppf sheaf condition on the big fppf site of `S`, with
@@ -436,7 +436,7 @@ theorem isFppfSheafFormalSchemePoints_formalScheme (X : FormalScheme.{u}) :
 
 [Tag 0AIS](https://stacks.math.columbia.edu/tag/0AIS) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.SatisfiesSetTheoreticCondition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean#L73). The attribute's comment: “the set-theoretic condition”.
+**`AlgebraicGeometry.FormalSpace.SatisfiesSetTheoreticCondition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean#L73). The attribute's comment: “the set-theoretic condition”.
 
 > An fppf sheaf satisfies the *set-theoretic condition* when there is a representable sheaf
 > surjecting onto it and a representable sheaf surjecting onto the kernel pair of that surjection.
@@ -447,7 +447,7 @@ theorem isFppfSheafFormalSchemePoints_formalScheme (X : FormalScheme.{u}) :
 abbrev SatisfiesSetTheoreticCondition (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_bounded_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean#L123). The attribute's comment: “bounded\_colimit”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_bounded_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean#L123). The attribute's comment: “bounded\_colimit”.
 
 > **Stacks 0AIS, bounded colimit.** A directed colimit of affine fppf sheaves along
 > thickenings satisfies the set-theoretic condition as soon as one cardinal `μ` below the size
@@ -476,7 +476,7 @@ theorem satisfiesSetTheoreticCondition_of_bounded_colimit
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_representable_epi_of_countable_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L174). The attribute's comment: “observation (3), countable atlas”.
+**`AlgebraicGeometry.FormalSpace.exists_representable_epi_of_countable_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L174). The attribute's comment: “observation (3), countable atlas”.
 
 > **Stacks 0AIS, observation (3), first half.** Let `{Xᵢ ⟶ X}` be a family of maps of fppf
 > sheaves over `S` satisfying conditions (1), (2) and (3) of Definition 0AIM, with a *countable*
@@ -496,7 +496,7 @@ theorem exists_representable_epi_of_countable_atlas (X : FppfSheaf B S hS)
       (t : (BigFppfOver.topology B S hS).uliftYoneda.{u + 1}.obj U ⟶ X), Epi t
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L405). The attribute's comment: “observation (3)”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L406). The attribute's comment: “observation (3)”.
 
 > **Stacks 0AIS, observation (3).** Let `{Xᵢ ⟶ X}` be a family of maps of fppf sheaves over
 > `S` satisfying conditions (1), (2) and (3) of Definition 0AIM with a *countable* index. Then
@@ -522,12 +522,13 @@ theorem satisfiesSetTheoreticCondition_of_countable_atlas (X : FppfSheaf B S hS)
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_atlas_of_hasQuasiCompactDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L518). The attribute's comment: “observation (3), the source's quasi-compact diagonal”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_atlas_of_hasQuasiCompactDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableAtlas.lean#L520). The attribute's comment: “observation (3), the source's quasi-compact diagonal”.
 
-> **Stacks 0AIS, observation (3), as the source states it.** Let `{Xᵢ ⟶ X}` be a family of
-> maps of fppf sheaves over `S` satisfying conditions (1), (2) and (3) of Definition 0AIM with a
-> *countable* index, and let the diagonal of `X` be quasi-compact, that is, let `X` be
-> quasi-separated over `S`. Then `X` satisfies the set-theoretic condition of Stacks 0AIS.
+> **Stacks 0AIS, observation (3), without the source's diagonal hypothesis.** Let
+> `{Xᵢ ⟶ X}` be a family of maps of fppf sheaves over `S` satisfying conditions (1), (2) and
+> (3) of Definition 0AIM with a *countable* index. Then `X` satisfies the set-theoretic
+> condition of Stacks 0AIS. The source also asks the diagonal of `X` to be quasi-compact, that
+> is, `X` to be quasi-separated over `S`; that hypothesis is unused and is not taken here.
 >
 > Quasi-separatedness of `X` over `S` is quasi-compactness of the relative diagonal of its
 > structure morphism in the sense of Stacks 0ARN part (2), the structure morphism being the
@@ -544,12 +545,11 @@ theorem satisfiesSetTheoreticCondition_of_countable_atlas (X : FppfSheaf B S hS)
 ```lean
 theorem satisfiesSetTheoreticCondition_of_countable_atlas_of_hasQuasiCompactDiagonal
     (X : FppfSheaf B S hS) {I : Type (u + 1)} [Countable I] (Xi : I → FppfSheaf B S hS)
-    (f : ∀ i, Xi i ⟶ X) (hatlas : IsFormalAtlas B S hS X Xi f)
-    (hdiag : HasQuasiCompactDiagonal B S hS (terminal.from X)) :
+    (f : ∀ i, Xi i ⟶ X) (hatlas : IsFormalAtlas B S hS X Xi f) :
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean#L264). The attribute's comment: “countable\_colimit”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean#L264). The attribute's comment: “countable\_colimit”.
 
 > **Stacks 0AIS, countable colimit.** A countable directed colimit of affine fppf sheaves
 > along thickenings satisfies the set-theoretic condition.
@@ -573,7 +573,7 @@ theorem satisfiesSetTheoreticCondition_of_countable_colimit (B : BigFppfSite.{u}
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_representable_over_affineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineSetCondition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineSetCondition.lean#L155). The attribute's comment: “the condition for the source of a morphism to an affine formal algebraic space which is representable by algebraic spaces, which is the first conjunct of the conclusion of Stacks 0AJH”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_representable_over_affineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineSetCondition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineSetCondition.lean#L155). The attribute's comment: “the condition for the source of a morphism to an affine formal algebraic space which is representable by algebraic spaces, which is the first conjunct of the conclusion of Stacks 0AJH”.
 
 > **The set-theoretic condition of Stacks 0AIS for the source of a morphism to an affine
 > formal algebraic space representable by algebraic spaces.** This is the first conjunct of the
@@ -596,7 +596,7 @@ theorem satisfiesSetTheoreticCondition_of_representable_over_affineFormal
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAlgebraicSpace_of_affineSchemeAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SchemeAtlas.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SchemeAtlas.lean#L736). The attribute's comment: “observation (2)”.
+**`AlgebraicGeometry.FormalSpace.isAlgebraicSpace_of_affineSchemeAtlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SchemeAtlas.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SchemeAtlas.lean#L736). The attribute's comment: “observation (2)”.
 
 > **Stacks 0AIS, observation (2), the sanity check.** A family `{Xᵢ ⟶ X}` as in
 > Definition 0AIM — the set-theoretic condition included — in which every `Xᵢ` is an affine
@@ -638,7 +638,7 @@ public theorem isAlgebraicSpace_of_affineSchemeAtlas
     AlgebraicGeometry.Space.IsAlgebraicSpaceULift.{u + 1} B S hS X.obj
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean#L213). The attribute's comment: “colimit\_condition”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean#L213). The attribute's comment: “colimit\_condition”.
 
 > A directed colimit of affine fppf sheaves along thickenings satisfies the set-theoretic
 > condition if the coproduct of its stages is representable in the big site.
@@ -672,4 +672,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.11, Tag 0AIL](https://stacks.math.columbia.edu/tag/0AIL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

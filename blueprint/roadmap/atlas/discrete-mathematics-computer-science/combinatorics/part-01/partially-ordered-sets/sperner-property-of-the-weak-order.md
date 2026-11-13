@@ -7,7 +7,7 @@ statement: formalized
 
 # Sperner property of the weak order
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html).
 
 ## Inversion set of a permutation
 
@@ -15,7 +15,7 @@ For a permutation $\sigma$ of $\{0, \dots, n-1\}$, the
 inversion set of $\sigma$ is the set of pairs of positions $(i, j)$ with $i < j$ and
 $\sigma(j) < \sigma(i)$.
 
-Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.inversions`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#inversions).
+Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.inversions`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#inversions).
 
 ## Weak order on the symmetric group
 
@@ -24,7 +24,7 @@ $\{0, \dots, n-1\}$, $\sigma \le \tau$ in the weak order when the inversion set 
 pairs of positions $(i, j)$ with $i < j$ and $\sigma(j) < \sigma(i)$) is contained in the inversion
 set of $\tau$.
 
-Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakLE`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-le).
+Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakLE`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-le).
 
 ## Sperner property of the weak order
 
@@ -35,7 +35,7 @@ has at most as many elements as there are permutations with exactly $k$ inversio
 no antichain is larger than the largest rank level, the rank of a permutation being its number of
 inversions.
 
-Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakOrderSperner`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-order-sperner).
+Formalized by `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakOrderSperner`, a definition declared in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-order-sperner).
 
 ## The weak order on the symmetric group is Sperner
 
@@ -51,7 +51,7 @@ Sperner (a Peck poset); in particular it is Sperner.
 
 - J. Cooper, Combinatorial Problems I Like (2020 snapshot), Matroids, Lattices, and Posets, item 39, https://people.math.sc.edu/cooper/combprob.html; resolution: C. Gaetz and Y. Gao, A combinatorial sl₂-action and the Sperner property for the weak order, Proc. Amer. Math. Soc. 148 (2020); arXiv:1811.05501, abstract: the sl₂-representation resolves Stanley's conjecture that the weak order has the strong Sperner property (and is a Peck poset); strongly Sperner implies Sperner, https://doi.org/10.1090/proc/14655.
 
-Stated but not proved: `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakOrderSperner_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-order-sperner-holds).
+Stated but not proved: `MathlibExt.Combinatorics.WeakOrderSpernerAMR30Problem0039Wanted.weakOrderSperner_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/WeakOrderSpernerAMR30Problem0039Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html#weak-order-sperner-holds).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sperner property of the weak order](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/partially-ordered-sets/sperner-property-of-the-weak-order)

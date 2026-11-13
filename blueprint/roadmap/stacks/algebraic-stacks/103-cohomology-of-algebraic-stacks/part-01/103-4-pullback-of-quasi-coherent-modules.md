@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.4 Pullback of quasi-coherent modules
 
-Section 103.4 of the Stacks Project, [Tag 076W](https://stacks.math.columbia.edu/tag/076W). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 103.4 of the Stacks Project, [Tag 076W](https://stacks.math.columbia.edu/tag/076W). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 076X, a lemma
 
 [Tag 076X](https://stacks.math.columbia.edu/tag/076X) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exactFunctor_quasicoherentPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelsFlatObjects.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelsFlatObjects.lean#L86).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exactFunctor_quasicoherentPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelsFlatObjects.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelsFlatObjects.lean#L86).
 
 > **Stacks 076X.** If `f : 𝒳 ⟶ 𝒴` is a flat morphism of algebraic stacks, then
 > `f^* : QCoh(𝒪_𝒴) ⥤ QCoh(𝒪_𝒳)` is an exact functor: it preserves finite colimits, as it does for
@@ -28,7 +28,7 @@ theorem exactFunctor_quasicoherentPullback (hf : AlgebraicStacks.IsFlat B S hS f
       (quasicoherentPullback B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.preservesFiniteColimits_quasicoherentPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasicoherentPullbackExactness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasicoherentPullbackExactness.lean#L140). The attribute's comment: “right exactness”.
+**`AlgebraicGeometry.Stack.preservesFiniteColimits_quasicoherentPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasicoherentPullbackExactness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasicoherentPullbackExactness.lean#L140). The attribute's comment: “right exactness”.
 
 > The inverse image of quasi-coherent modules along a 1-morphism of categories fibred in
 > groupoids over the big fppf category of `S`, `f^* : QCoh(𝒪_𝒴) ⥤ QCoh(𝒪_𝒳)`, is right exact.
@@ -42,7 +42,7 @@ theorem preservesFiniteColimits_quasicoherentPullback :
 
 [Tag 0GQF](https://stacks.math.columbia.edu/tag/0GQF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean#L344). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.Stack.isIso_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean#L344). The attribute's comment: “isomorphism”.
 
 > **Stacks 0GQF, isomorphisms.**  Let `𝒳` be an algebraic stack and `x_i : U_i → 𝒳`, `i ∈ I`,
 > flat objects with `∐ x_i : ∐ U_i → 𝒳` surjective.  An arrow `φ` of `QCoh(𝒪_𝒳)` is an
@@ -55,7 +55,7 @@ theorem isIso_iff_restrictMapToSmallEtale :
         ((PresheafOfModules.toPresheaf _).map φ.hom.val))
 ```
 
-**`AlgebraicGeometry.Stack.epi_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean#L370). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Stack.epi_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyDetection.lean#L370). The attribute's comment: “surjectivity”.
 
 > **Stacks 0GQF, surjectivity.**  Let `𝒳` be an algebraic stack and `x_i : U_i → 𝒳`,
 > `i ∈ I`, flat objects with `∐ x_i : ∐ U_i → 𝒳` surjective.  An arrow `φ` of `QCoh(𝒪_𝒳)` is
@@ -71,7 +71,7 @@ theorem epi_iff_restrictMapToSmallEtale :
         ((PresheafOfModules.toPresheaf _).map φ.hom.val))
 ```
 
-**`AlgebraicGeometry.Stack.mono_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyMono.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyMono.lean#L73). The attribute's comment: “injectivity”.
+**`AlgebraicGeometry.Stack.mono_iff_restrictMapToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyMono.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentFlatFamilyMono.lean#L73). The attribute's comment: “injectivity”.
 
 > **Stacks 0GQF, injectivity.**  Let `𝒳` be an algebraic stack and `x_i : U_i → 𝒳`, `i ∈ I`,
 > flat objects with `∐ x_i : ∐ U_i → 𝒳` surjective.  An arrow `φ` of `QCoh(𝒪_𝒳)` is injective (a
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.4, Tag 076W](https://stacks.math.columbia.edu/tag/076W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

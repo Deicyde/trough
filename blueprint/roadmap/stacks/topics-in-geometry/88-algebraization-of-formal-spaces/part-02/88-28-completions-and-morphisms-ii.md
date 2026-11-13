@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.28 Completions and morphisms, II
 
-Section 88.28 of the Stacks Project, [Tag 0GDS](https://stacks.math.columbia.edu/tag/0GDS). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.28 of the Stacks Project, [Tag 0GDS](https://stacks.math.columbia.edu/tag/0GDS). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ARU, a lemma
 
 [Tag 0ARU](https://stacks.math.columbia.edu/tag/0ARU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isQuasiCompact_iff_isQuasiCompact_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean#L456).
+**`AlgebraicGeometry.FormalSpace.isQuasiCompact_iff_isQuasiCompact_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean#L462).
 
 > **Stacks 0ARU.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > a closed subset and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. Let `f : X' ⟶ X` be
@@ -38,7 +38,7 @@ theorem isQuasiCompact_iff_isQuasiCompact_of_overIso
 
 [Tag 0ARV](https://stacks.math.columbia.edu/tag/0ARV) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isQuasiSeparated_iff_hasQuasiCompactDiagonal_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiSeparatedIff.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiSeparatedIff.lean#L246).
+**`AlgebraicGeometry.FormalSpace.isQuasiSeparated_iff_hasQuasiCompactDiagonal_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiSeparatedIff.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiSeparatedIff.lean#L246).
 
 > **Stacks 0ARV.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > a closed subset and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. Let `f : X' ⟶ X` be
@@ -64,7 +64,7 @@ theorem isQuasiSeparated_iff_hasQuasiCompactDiagonal_of_overIso
 
 [Tag 0ARW](https://stacks.math.columbia.edu/tag/0ARW) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isSeparated_iff_isSeparatedMorphism_and_isRigSurjective_diagonal_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputSeparated.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputSeparated.lean#L240). The attribute's comment: “the correspondence `f ↔ g` of Theorem 0ARB is rendered as an isomorphism over `X_{/T}` between the image `f_{/T}` of `f` under the completion functor of Stacks 0AR5 and an object `g` of the right-hand category of Stacks 0AR5; the equivalence of Theorem 0ARB itself is not used. Separatedness of `g` is the separatedness axiom of Stacks 0ARN, part (1)”.
+**`AlgebraicGeometry.FormalSpace.isSeparated_iff_isSeparatedMorphism_and_isRigSurjective_diagonal_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputSeparated.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputSeparated.lean#L242). The attribute's comment: “the correspondence `f ↔ g` of Theorem 0ARB is rendered as an isomorphism over `X_{/T}` between the image `f_{/T}` of `f` under the completion functor of Stacks 0AR5 and an object `g` of the right-hand category of Stacks 0AR5; the equivalence of Theorem 0ARB itself is not used. Separatedness of `g` is the separatedness axiom of Stacks 0ARN, part (1)”.
 
 > **Stacks 0ARW.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > closed with open complement `U`, and let `f : X' ⟶ X` be a finite-type modification of `X`
@@ -91,7 +91,7 @@ theorem isSeparated_iff_isSeparatedMorphism_and_isRigSurjective_diagonal_of_iso
 
 [Tag 0ARX](https://stacks.math.columbia.edu/tag/0ARX) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isProper_iff_isFormalModification_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputProper.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputProper.lean#L820). The attribute's comment: “the correspondence `f ↔ g` of Theorem 0ARB is rendered as an isomorphism over `X_{/T}` between the image `f_{/T}` of `f` under the completion functor of Stacks 0AR5 and an object `g` of the right-hand category of Stacks 0AR5; the equivalence of Theorem 0ARB itself is not used”.
+**`AlgebraicGeometry.FormalSpace.isProper_iff_isFormalModification_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputProper.lean, line 820](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ModificationOutputProper.lean#L820). The attribute's comment: “the correspondence `f ↔ g` of Theorem 0ARB is rendered as an isomorphism over `X_{/T}` between the image `f_{/T}` of `f` under the completion functor of Stacks 0AR5 and an object `g` of the right-hand category of Stacks 0AR5; the equivalence of Theorem 0ARB itself is not used”.
 
 > Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be closed with open
 > complement `U`, and let `f : X' ⟶ X` be a finite-type modification of `X` outside `U`
@@ -115,7 +115,7 @@ theorem isProper_iff_isFormalModification_of_iso
 
 [Tag 0GI4](https://stacks.math.columbia.edu/tag/0GI4) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEtale_iff_isRepresentableEtale_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtaleIff.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtaleIff.lean#L75).
+**`AlgebraicGeometry.FormalSpace.isEtale_iff_isRepresentableEtale_of_overIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtaleIff.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtaleIff.lean#L75).
 
 > **Stacks 0GI4.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > a closed subset and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. Let `f : X' ⟶ X` be
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.28, Tag 0GDS](https://stacks.math.columbia.edu/tag/0GDS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

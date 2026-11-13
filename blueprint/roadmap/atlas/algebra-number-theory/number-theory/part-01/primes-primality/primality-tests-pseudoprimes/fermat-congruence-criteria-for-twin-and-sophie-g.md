@@ -7,7 +7,7 @@ statement: formalized
 
 # Fermat congruence criteria for twin and Sophie Germain primes
 
-6 results, 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html).
+6 results, 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html).
 
 ## Fermat-type characterizations of twin primes
 
@@ -22,7 +22,7 @@ $n(n + 2)$.
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.1, Congruences (3.2).
 
-Stated but not proved: `MetaMathlibExt.twinPrime_iff_forall_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#twin-prime-iff-forall-fermat-congruence).
+Stated but not proved: `MetaMathlibExt.twinPrime_iff_forall_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#twin-prime-iff-forall-fermat-congruence).
 
 ## Alahmadi–Luca theorem on Carmichael numbers
 
@@ -33,7 +33,7 @@ prime $p$, the number $2^n p + 1$ is not a Carmichael number.
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.2, quoting A. Alahmadi and F. Luca, C. R. Math. Acad. Sci. Paris 360 (2022).
 
-Stated but not proved: `MetaMathlibExt.not_isCarmichaelNumber_two_pow_mul_prime_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#not-is-carmichael-number-two-pow-mul-pri).
+Stated but not proved: `MetaMathlibExt.not_isCarmichaelNumber_two_pow_mul_prime_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#not-is-carmichael-number-two-pow-mul-pri).
 
 ## Fermat-type characterizations of Sophie Germain primes
 
@@ -47,7 +47,7 @@ $p(2p + 1)$.
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.3, Congruences (3.5).
 
-Stated but not proved: `MetaMathlibExt.isSophieGermainPrime_iff_forall_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#is-sophie-germain-prime-iff-forall-ferma).
+Stated but not proved: `MetaMathlibExt.isSophieGermainPrime_iff_forall_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#is-sophie-germain-prime-iff-forall-ferma).
 
 ## Fermat-type congruences along a Sophie Germain prime chain
 
@@ -62,7 +62,7 @@ $q'\,a^{q-1} \equiv q\,a^{q'-1} + q + 1 \pmod{qq'}$.
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Corollary 3.4, Congruences (3.8).
 
-Stated but not proved: `MetaMathlibExt.sophieGermainChain_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#sophie-germain-chain-fermat-congruence).
+Stated but not proved: `MetaMathlibExt.sophieGermainChain_fermat_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#sophie-germain-chain-fermat-congruence).
 
 ## Length of a Sophie Germain prime chain
 
@@ -76,7 +76,7 @@ consecutive primes.
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.5, quoting T. Agoh, Tatra Mt. Math. Publ. 20 (2000), Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.sophieGermainChain_length_le_orderOf_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#sophie-germain-chain-length-le-order-of).
+Stated but not proved: `MetaMathlibExt.sophieGermainChain_length_le_orderOf_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#sophie-germain-chain-length-le-order-of).
 
 ## Fermat's congruence for a product of coprime moduli
 
@@ -96,7 +96,7 @@ $a^{m-1} \equiv \frac{a^{m-n} - 1}{m - n}\,n + a^{m-n} \equiv \frac{a^{m-n} - 1}
 
 - Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 1.1 (a).
 
-Stated but not proved: `MetaMathlibExt.forall_fermat_congruence_iff_of_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#forall-fermat-congruence-iff-of-coprime).
+Stated but not proved: `MetaMathlibExt.forall_fermat_congruence_iff_of_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FermatCongruenceTwinSophieGermainWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html#forall-fermat-congruence-iff-of-coprime).
 
 ## Depends on
 
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fermat congruence criteria for twin and Sophie Germain primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/fermat-congruence-criteria-for-twin-and-sophie-g)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.ProjectiveSpaceOfModule.exists_intersectProperly_torFormulaCycleIntersectionProduct_eq, AlgebraicGeometry.ProjectiveSpaceOfModule.endProjectionImage_eq_of_represents_identity, AlgebraicGeometry.ProjectiveSpaceOfModule.exists_movingFamily_of_subvariety_fixed, AlgebraicGeometry.ProjectiveSpaceOfModule.exists_isOpen_forall_closedPoint_line_moving_of_codimension, AlgebraicGeometry.exists_rationallyEquivalent_forall_intersectProperly, AlgebraicGeometry.exists_rationallyEquivalent_intersectProperly
+lean: AlgebraicGeometry.ProjectiveSpaceOfModule.exists_intersectProperly_torFormulaCycleIntersectionProduct_eq_and_le, AlgebraicGeometry.ProjectiveSpaceOfModule.endProjectionImage_eq_of_represents_identity, AlgebraicGeometry.ProjectiveSpaceOfModule.exists_movingFamily_of_subvariety_fixed, AlgebraicGeometry.ProjectiveSpaceOfModule.exists_isOpen_forall_closedPoint_line_moving_of_codimension, AlgebraicGeometry.exists_rationallyEquivalent_forall_intersectProperly, AlgebraicGeometry.exists_rationallyEquivalent_intersectProperly
 statement: formalized
 proof: formalized
 ---
 
 # 43.24 Moving Lemma
 
-Section 43.24 of the Stacks Project, [Tag 0B0D](https://stacks.math.columbia.edu/tag/0B0D). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 43.24 of the Stacks Project, [Tag 0B0D](https://stacks.math.columbia.edu/tag/0B0D). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B0E, a lemma
 
 [Tag 0B0E](https://stacks.math.columbia.edu/tag/0B0E) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_intersectProperly_torFormulaCycleIntersectionProduct_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/KeyLemma.lean, line 1024](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/KeyLemma.lean#L1024). The attribute's comment: “the whole lemma. `X ⊂ 𝐏^N` is read as `⊆`, so `dim X = N` is covered: there `X` is the whole of `𝐏(V)` and the conclusion holds with `C = Z` and an empty family of `Z_j`, which is the empty case of the source's chain of projections. The non-strict dimension clause is registered in the disjunctive form `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i) ∨ dim (Z_j ∩ T_i) + n ≤ d + d'` — written additively because `WithBot ℕ∞` has no subtraction — which is what condition (4) of the source's proof yields and which implies the source's own first inequality wherever Tag 0AZP makes it true, namely whenever `Z ∩ T_i` is nonempty; in the bottom case `Z ∩ T_i = ∅` the source's first inequality is refuted by a nonsingular quadric surface in 𝐏^3 with Z and T\_1 two distinct lines of one ruling, written out in this module's implementation notes, and the second disjunct is what holds there. The strict clause is as the source has it, and is vacuous exactly on that bottom case”.
+**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_intersectProperly_torFormulaCycleIntersectionProduct_eq_and_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/KeyLemmaInequality.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/KeyLemmaInequality.lean#L126). The attribute's comment: “the whole lemma, with the erratum that the source's inequality `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i)` is stated at each `i` with `Z ∩ T_i` nonempty: for `Z ∩ T_i = ∅` it is false, as a nonsingular quadric surface in 𝐏^3 with Z and T\_1 two distinct lines of one ruling shows (see the implementation notes of `StacksFrontier.AlgebraicGeometry.Intersection.MovingLemma.KeyLemma`). At every `i` the statement also carries `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i) ∨ dim (Z_j ∩ T_i) + n ≤ d + d'`, which is condition (4) of the source's proof and holds in that bottom case too; the strict inequality, when `Z` and `T_i` do not intersect properly in `X`, is as in the source. `X ⊂ 𝐏^N` is read as `⊆`, so `dim X = N` is covered, with `C = Z` and no `Z_j`. Dimensions are `topologicalKrullDim` in `WithBot ℕ∞`, written additively.”.
 
 > **Stacks Project, Tag 0B0E.** Let `X ⊆ 𝐏(V)` be a nonsingular closed subvariety of dimension
 > `n` of the projective space of a vector space of dimension `N + 1` over an algebraically closed
@@ -27,17 +27,15 @@ Section 43.24 of the Stacks Project, [Tag 0B0D](https://stacks.math.columbia.edu
 > in the Tor-formula intersection product of Section 0B08, where the `Z_j ⊆ X` are irreducible
 > closed of dimension `d`, distinct from `Z`, with nonzero multiplicities, and where
 >
-> * `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i)` or `dim (Z_j ∩ T_i) + n ≤ d + d'`, and
+> * `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i)` for every `i` with `Z ∩ T_i` nonempty,
+> * `dim (Z_j ∩ T_i) ≤ dim (Z ∩ T_i)` or `dim (Z_j ∩ T_i) + n ≤ d + d'` for every `i`, and
 > * `dim (Z_j ∩ T_i) < dim (Z ∩ T_i)` whenever `Z` does not intersect `T_i` properly inside `X`.
 >
-> The first clause is the disjunction that condition (4) of the source's proof yields; its first
-> disjunct is the source's own inequality, which Tag 0AZP supplies from the second whenever
-> `Z ∩ T_i` is nonempty, and which alone would be false in the bottom case `Z ∩ T_i = ∅` — see the
-> quadric-surface counterexample in the implementation notes of this module. The second clause is
-> vacuous exactly on that bottom case and needs no guard.
+> For `Z ∩ T_i = ∅` the first inequality would say `Z_j ∩ T_i = ∅`, which fails for two lines of one
+> ruling on a quadric surface in `𝐏^3`; there the second clause is what holds.
 
 ```lean
-public theorem exists_intersectProperly_torFormulaCycleIntersectionProduct_eq
+public theorem exists_intersectProperly_torFormulaCycleIntersectionProduct_eq_and_le
     (k V : Type u) [Field k] [IsAlgClosed k] [AddCommGroup V] [Module k V]
     [FiniteDimensional k V] [Nontrivial V] [DecidableEq (projectiveSpaceOfModule k V)]
     {N n d d' : ℕ} (hV : Module.finrank k V = N + 1)
@@ -74,6 +72,13 @@ public theorem exists_intersectProperly_torFormulaCycleIntersectionProduct_eq
         (∀ W ∈ S, topologicalKrullDim (W : Set (projectiveSpaceOfModule k V)) =
           (d : WithBot ℕ∞)) ∧
         (∀ W ∈ S, ∀ i,
+          ((ZC : Set (projectiveSpaceOfModule k V)) ∩
+              (TC i : Set (projectiveSpaceOfModule k V))).Nonempty →
+            topologicalKrullDim ↥((W : Set (projectiveSpaceOfModule k V)) ∩
+                (TC i : Set (projectiveSpaceOfModule k V))) ≤
+              topologicalKrullDim ↥((ZC : Set (projectiveSpaceOfModule k V)) ∩
+                (TC i : Set (projectiveSpaceOfModule k V)))) ∧
+        (∀ W ∈ S, ∀ i,
           topologicalKrullDim ↥((W : Set (projectiveSpaceOfModule k V)) ∩
                 (TC i : Set (projectiveSpaceOfModule k V))) ≤
               topologicalKrullDim ↥((ZC : Set (projectiveSpaceOfModule k V)) ∩
@@ -97,7 +102,7 @@ public theorem exists_intersectProperly_torFormulaCycleIntersectionProduct_eq
 
 [Tag 0B1T](https://stacks.math.columbia.edu/tag/0B1T) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpaceOfModule.endProjectionImage_eq_of_represents_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemma.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemma.lean#L183). The attribute's comment: “clause (2), C'\_0 = C, in the fibrewise form of this module: the fibre of the family over 0 = [id\_V] is r\_g(C) for g a representative of [id\_V], and that translate is C itself; the family C' and hence the scheme-theoretic reading of the equality are not constructed, see the implementation notes”.
+**`AlgebraicGeometry.ProjectiveSpaceOfModule.endProjectionImage_eq_of_represents_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemma.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemma.lean#L183). The attribute's comment: “clause (2), C'\_0 = C, in the fibrewise form of this module: the fibre of the family over 0 = [id\_V] is r\_g(C) for g a representative of [id\_V], and that translate is C itself; the family C' and hence the scheme-theoretic reading of the equality are not constructed, see the implementation notes”.
 
 > **Clause (2) of the Moving Lemma: the fibre over `0` is `C`.** Every endomorphism
 > representing the point `[id_V]` of the parameter space is a unit scalar multiple of the
@@ -112,7 +117,7 @@ public theorem endProjectionImage_eq_of_represents_identity [Nontrivial V]
     endProjectionImage k V g S = S
 ```
 
-**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_movingFamily_of_subvariety_fixed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaFixedPoints.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaFixedPoints.lean#L172). The attribute's comment: “the whole lemma, at the source's hypotheses and no others, over the source's fixed 𝐏^1 with its fixed points: C a closed subvariety of 𝐏^N = 𝐏(V) (an irreducible closed subset with its reduced structure), X a subvariety of 𝐏^N (an irreducible locally closed subset, not necessarily closed), T i ⊆ X finitely many closed subvarieties of X (irreducible, closed in X), C and X intersecting properly; for every projective line 𝐏^1 = 𝐏(W), dim\_k W = 2, and every pair of distinct closed points 0, ∞ of it, a closed subvariety C' of 𝐏^1 × 𝐏^N with (1) C' → 𝐏^1 dominant, read as density of the image; (2) C'\_0 = C scheme theoretically: the ideal sheaf of the reduced closed subscheme on C' pulled back along the section of 𝐏^1 × 𝐏^N → 𝐏^N at 0 is the ideal sheaf of the reduced closed subscheme on C; (3) C' and X × 𝐏^1 intersect properly; (4) C'\_∞ intersects each T i properly. Proper intersection is the dimension criterion of Definition 0AZQ read on the subsets”.
+**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_movingFamily_of_subvariety_fixed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaFixedPoints.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaFixedPoints.lean#L172). The attribute's comment: “the whole lemma, at the source's hypotheses and no others, over the source's fixed 𝐏^1 with its fixed points: C a closed subvariety of 𝐏^N = 𝐏(V) (an irreducible closed subset with its reduced structure), X a subvariety of 𝐏^N (an irreducible locally closed subset, not necessarily closed), T i ⊆ X finitely many closed subvarieties of X (irreducible, closed in X), C and X intersecting properly; for every projective line 𝐏^1 = 𝐏(W), dim\_k W = 2, and every pair of distinct closed points 0, ∞ of it, a closed subvariety C' of 𝐏^1 × 𝐏^N with (1) C' → 𝐏^1 dominant, read as density of the image; (2) C'\_0 = C scheme theoretically: the ideal sheaf of the reduced closed subscheme on C' pulled back along the section of 𝐏^1 × 𝐏^N → 𝐏^N at 0 is the ideal sheaf of the reduced closed subscheme on C; (3) C' and X × 𝐏^1 intersect properly; (4) C'\_∞ intersects each T i properly. Proper intersection is the dimension criterion of Definition 0AZQ read on the subsets”.
 
 > **Stacks Project, Tag 0B1T, over a given projective line with given points `0 ≠ ∞`.** Let `C`
 > be a closed subvariety of `𝐏^N = 𝐏(V)`, `X` a subvariety of `𝐏^N` (irreducible and locally
@@ -164,7 +169,7 @@ public theorem exists_movingFamily_of_subvariety_fixed
           topologicalKrullDim ↥(T i)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_isOpen_forall_closedPoint_line_moving_of_codimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaOfCodimension.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaOfCodimension.lean#L190). The attribute's comment: “clauses (1), (3) and (4), read on the fibres, in the form that assumes bounds on the two bad loci: 𝐏^1 is the source's own line ℓ ⊆ 𝐏 = 𝐏((End V)ᵛ) through [id\_V] and the fibre C'\_[g] is the translate r\_g(C), so that (1) 'C' → 𝐏^1 is dominant' is read as 'the fibre over every closed point of ℓ is nonempty', (3) as 'r\_g(C) intersects X properly for every representative g of every closed point of ℓ' and (4) as 'r\_g(C) intersects each T i properly for every representative g of the ∞ point of ℓ'; clause (2) is endProjectionImage\_eq\_of\_represents\_identity of this module; 'general' is read as in Tags 0B2T and 0B1S, namely that there is a nonempty Zariski open subset of 𝐏 each of whose closed points is the ∞ point of such a line; proper intersection is the dimension criterion defining Tag 0AZQ read on the image set r\_g(C), as in Tag 0B1S; X is taken closed in this form, Lemma 0B1S being formalized for a pair of closed subvarieties. The two bad-locus bounds are discharged by AlgebraicGeometry.ProjectiveSpaceOfModule .exists\_isOpen\_forall\_closedPoint\_line\_moving\_of\_intersectProperly of StacksFrontier.AlgebraicGeometry.Intersection.Projections.MovingFamilyMain, and the tag is registered for all four clauses about the family C' over 𝐏^1 at the source's own hypotheses on C, X (not necessarily closed) and the T i, clause (2) scheme theoretically, on AlgebraicGeometry.ProjectiveSpaceOfModule.exists\_movingFamily\_of\_subvariety\_fixed of StacksFrontier.AlgebraicGeometry.Intersection.Projections.MovingLemmaFixedPoints; this form keeps its place here, upstream of the incidence-correspondence construction that either discharge needs”.
+**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_isOpen_forall_closedPoint_line_moving_of_codimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaOfCodimension.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/Projections/MovingLemmaOfCodimension.lean#L190). The attribute's comment: “clauses (1), (3) and (4), read on the fibres, in the form that assumes bounds on the two bad loci: 𝐏^1 is the source's own line ℓ ⊆ 𝐏 = 𝐏((End V)ᵛ) through [id\_V] and the fibre C'\_[g] is the translate r\_g(C), so that (1) 'C' → 𝐏^1 is dominant' is read as 'the fibre over every closed point of ℓ is nonempty', (3) as 'r\_g(C) intersects X properly for every representative g of every closed point of ℓ' and (4) as 'r\_g(C) intersects each T i properly for every representative g of the ∞ point of ℓ'; clause (2) is endProjectionImage\_eq\_of\_represents\_identity of this module; 'general' is read as in Tags 0B2T and 0B1S, namely that there is a nonempty Zariski open subset of 𝐏 each of whose closed points is the ∞ point of such a line; proper intersection is the dimension criterion defining Tag 0AZQ read on the image set r\_g(C), as in Tag 0B1S; X is taken closed in this form, Lemma 0B1S being formalized for a pair of closed subvarieties. The two bad-locus bounds are discharged by AlgebraicGeometry.ProjectiveSpaceOfModule .exists\_isOpen\_forall\_closedPoint\_line\_moving\_of\_intersectProperly of StacksFrontier.AlgebraicGeometry.Intersection.Projections.MovingFamilyMain, and the tag is registered for all four clauses about the family C' over 𝐏^1 at the source's own hypotheses on C, X (not necessarily closed) and the T i, clause (2) scheme theoretically, on AlgebraicGeometry.ProjectiveSpaceOfModule.exists\_movingFamily\_of\_subvariety\_fixed of StacksFrontier.AlgebraicGeometry.Intersection.Projections.MovingLemmaFixedPoints; this form keeps its place here, upstream of the incidence-correspondence construction that either discharge needs”.
 
 > **Stacks Project, Tag 0B1T.** Let `C, X` be closed subvarieties of
 > `𝐏(V)` which intersect properly, with `C ≠ 𝐏(V)` and `C ∩ X ≠ ∅`, and let `T i ⊆ X` be a finite
@@ -240,7 +245,7 @@ public theorem exists_isOpen_forall_closedPoint_line_moving_of_codimension [Nont
 
 [Tag 0B1U](https://stacks.math.columbia.edu/tag/0B1U) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_rationallyEquivalent_forall_intersectProperly`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean#L97). The attribute's comment: “for a finite family of cycles `β i` of arbitrary dimensions `s i` in place of the single `s`-cycle `β`, which is the case of a one-element family; `r` and the `s i` are arbitrary integers. Nonsingular is `IsRegular X`, projective variety is `IsProjectiveVariety`, cycles are the graded cycle groups `Stacks.Chow.CycleGroup` over `Spec k`, rational equivalence is Tag 02RW and proper intersection is Definition 0AZQ. The proof replaces the source's degeneration of the cone `C` in `𝐏^N × 𝐏^1` (Tags 0B1T, 0B1M, 0B07) by the flat pullback along the finite projection `π : X → 𝐏^n` of the proof of Tag 0B0E, which is flat by miracle flatness, together with moving `π(Z)` inside `𝐏^n`”.
+**`AlgebraicGeometry.exists_rationallyEquivalent_forall_intersectProperly`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean#L97). The attribute's comment: “for a finite family of cycles `β i` of arbitrary dimensions `s i` in place of the single `s`-cycle `β`, which is the case of a one-element family; `r` and the `s i` are arbitrary integers. Nonsingular is `IsRegular X`, projective variety is `IsProjectiveVariety`, cycles are the graded cycle groups `Stacks.Chow.CycleGroup` over `Spec k`, rational equivalence is Tag 02RW and proper intersection is Definition 0AZQ. The proof replaces the source's degeneration of the cone `C` in `𝐏^N × 𝐏^1` (Tags 0B1T, 0B1M, 0B07) by the flat pullback along the finite projection `π : X → 𝐏^n` of the proof of Tag 0B0E, which is flat by miracle flatness, together with moving `π(Z)` inside `𝐏^n`”.
 
 > **Stacks Project, Tag 0B1U, for a finite family of cycles.** Let `X` be a nonsingular
 > projective variety over an algebraically closed field, let `α` be an `r`-cycle on `X` and let
@@ -259,7 +264,7 @@ public theorem exists_rationallyEquivalent_forall_intersectProperly (k : Type u)
         ∀ i, AlgebraicCycle.IntersectProperly α'.1 (β i).1
 ```
 
-**`AlgebraicGeometry.exists_rationallyEquivalent_intersectProperly`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean#L115). The attribute's comment: “as stated: nonsingular is `IsRegular X`, projective variety is `IsProjectiveVariety`, cycles are the graded cycle groups `Stacks.Chow.CycleGroup` over `Spec k`, rational equivalence is Tag 02RW and proper intersection is Definition 0AZQ; `r` and `s` are arbitrary integers”.
+**`AlgebraicGeometry.exists_rationallyEquivalent_intersectProperly`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/MovingLemma/MovingCycles.lean#L115). The attribute's comment: “as stated: nonsingular is `IsRegular X`, projective variety is `IsProjectiveVariety`, cycles are the graded cycle groups `Stacks.Chow.CycleGroup` over `Spec k`, rational equivalence is Tag 02RW and proper intersection is Definition 0AZQ; `r` and `s` are arbitrary integers”.
 
 > **Stacks Project, Tag 0B1U.** Let `X` be a nonsingular projective variety over an
 > algebraically closed field, let `α` be an `r`-cycle and `β` an `s`-cycle on `X`. Then there is an
@@ -282,4 +287,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.24, Tag 0B0D](https://stacks.math.columbia.edu/tag/0B0D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

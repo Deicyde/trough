@@ -1,6 +1,6 @@
 # Special classes of primes
 
-74 results of ATLAS's vault, 27 proved and 47 stated but not proved, in this branch's topics.
+74 results of ATLAS's vault, 41 proved and 33 stated but not proved, in this branch's topics.
 
 Fermat, Mersenne, Sophie Germain, Wieferich, Cullen and other named prime families, Fermat numbers, Sierpiński–Riesel numbers, prime-producing formulas.
 

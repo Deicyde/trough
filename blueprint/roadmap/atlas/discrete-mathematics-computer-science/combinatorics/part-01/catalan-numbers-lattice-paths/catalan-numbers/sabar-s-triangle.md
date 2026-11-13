@@ -7,7 +7,7 @@ statement: formalized
 
 # Sabar's triangle
 
-14 results, 3 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html).
+14 results, 3 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html).
 
 ## Sabar's triangle
 
@@ -25,7 +25,7 @@ OEIS A341091.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 2 (definition of `s(n, i)`).
 
-Formalized by `MetaMathlibExt.sabarNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number).
+Formalized by `MetaMathlibExt.sabarNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number).
 
 ## Rows 5 and 10 of Sabar's triangle
 
@@ -39,7 +39,7 @@ These are rows $n = 5$ and $n = 10$ of the source's Table 1.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Table 1.
 
-Formalized by `MetaMathlibExt.sabarNumber_rows_five_ten`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-rows-five-ten).
+Formalized by `MetaMathlibExt.sabarNumber_rows_five_ten`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-rows-five-ten).
 
 ## A recurrence for Sabar's triangle in small cases
 
@@ -55,7 +55,7 @@ for example $s(2, 1) = 2$ but $s(0, 1) + \binom{1}{0} = 1$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Section 2 (identities following from the definition).
 
-Formalized by `MetaMathlibExt.sabarNumber_recurrence_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-recurrence-small).
+Formalized by `MetaMathlibExt.sabarNumber_recurrence_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-recurrence-small).
 
 ## Harmonic numbers from Sabar's triangle
 
@@ -69,7 +69,7 @@ $$H_n = \frac{1}{n} \sum_{i=0}^{n-1} \binom{n-1}{i}^{-1} +
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.harmonic_eq_sum_inv_choose_add_sum_sabarNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#harmonic-eq-sum-inv-choose-add-sum-sabar).
+Stated but not proved: `MetaMathlibExt.harmonic_eq_sum_inv_choose_add_sum_sabarNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#harmonic-eq-sum-inv-choose-add-sum-sabar).
 
 ## Reciprocal binomial sums from Sabar's triangle
 
@@ -86,7 +86,7 @@ it fails at $n = 2$: the left side is $5/6$ but $1 + s(1, 0)/(2 \cdot 3) = 7/6$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.sum_inv_choose_succ_eq_one_add_sum_sabarNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-inv-choose-succ-eq-one-add-sum-sabar).
+Stated but not proved: `MetaMathlibExt.sum_inv_choose_succ_eq_one_add_sum_sabarNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-inv-choose-succ-eq-one-add-sum-sabar).
 
 ## The harmonic numbers as an alternating sum of Sabar numbers
 
@@ -100,7 +100,7 @@ $$\sum_{i=0}^{2n-2} \frac{(-1)^i \, s(2n-1, i)}{i+1} = H_n.$$
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sum_sabarNumber_div_succ_eq_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-sabar-number-div-succ-eq-harmonic).
+Stated but not proved: `MetaMathlibExt.sum_sabarNumber_div_succ_eq_harmonic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-sabar-number-div-succ-eq-harmonic).
 
 ## Fine numbers from Sabar's triangle
 
@@ -112,7 +112,7 @@ $F(n) = s(2n, n+1) - s(2n, n-1)$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.fineNumber_eq_sabarNumber_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#fine-number-eq-sabar-number-sub).
+Stated but not proved: `MetaMathlibExt.fineNumber_eq_sabarNumber_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#fine-number-eq-sabar-number-sub).
 
 ## Sabar's alternating binomial sum equal to $n$
 
@@ -125,7 +125,7 @@ $$\sum_{k=1}^{n} (-1)^{k+1} \left(1 - \frac{2k}{n+1} + \frac{n}{k+1}\right) \bin
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_choose_eq_self` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-neg-one-pow-mul-choose-eq-self).
+Stated but not proved: `MetaMathlibExt.sum_neg_one_pow_mul_choose_eq_self` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-neg-one-pow-mul-choose-eq-self).
 
 ## Fine numbers as an alternating binomial sum
 
@@ -139,7 +139,7 @@ $$F(n) = \frac{1}{2} (-1)^n +
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.fineNumber_eq_half_neg_one_pow_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#fine-number-eq-half-neg-one-pow-add-sum).
+Stated but not proved: `MetaMathlibExt.fineNumber_eq_half_neg_one_pow_add_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#fine-number-eq-half-neg-one-pow-add-sum).
 
 ## Central entries of Sabar's triangle and Fine numbers
 
@@ -165,7 +165,7 @@ $$s(2n-1, n) = \frac{2}{3} \binom{2n-1}{n} + \frac{1}{3} F(n-1) + (-1)^n.$$
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.sabarNumber_central_eq_fineNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-central-eq-fine-number).
+Stated but not proved: `MetaMathlibExt.sabarNumber_central_eq_fineNumber` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-central-eq-fine-number).
 
 ## Consecutive binomial sums weighted by powers of 2
 
@@ -177,7 +177,7 @@ $V_n(2) + V_{n+1}(2) = 3 \cdot 2^n \binom{2n+2}{n+1}$.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_two_pow_add_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-choose-mul-two-pow-add-succ).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_two_pow_add_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sum-choose-mul-two-pow-add-succ).
 
 ## Consecutive Whitt generalized Catalan numbers at $\alpha = 2$
 
@@ -192,7 +192,7 @@ where $c_n = \frac{1}{n+1}\binom{2n}{n}$ is the $n$-th Catalan number.
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.whittGeneralizedCatalan_two_add_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#whitt-generalized-catalan-two-add-succ).
+Stated but not proved: `MetaMathlibExt.whittGeneralizedCatalan_two_add_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#whitt-generalized-catalan-two-add-succ).
 
 ## Central entries of Sabar's triangle and Whitt's numbers
 
@@ -207,7 +207,7 @@ $$s(2n, n) = \frac{2}{3} \binom{2n}{n} - \frac{1}{3} \cdot \frac{C(2, n)}{2^{n+1
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.sabarNumber_central_eq_whittGeneralizedCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-central-eq-whitt-generalize).
+Stated but not proved: `MetaMathlibExt.sabarNumber_central_eq_whittGeneralizedCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#sabar-number-central-eq-whitt-generalize).
 
 ## Fine numbers from Whitt's generalized Catalan numbers
 
@@ -221,7 +221,7 @@ $$2^{n+2} F(n) = C(2, n+1) + 3(-1)^n.$$
 
 - Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.two_pow_mul_fineNumber_eq_whittGeneralizedCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#two-pow-mul-fine-number-eq-whitt-general).
+Stated but not proved: `MetaMathlibExt.two_pow_mul_fineNumber_eq_whittGeneralizedCatalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SabarTriangleWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html#two-pow-mul-fine-number-eq-whitt-general).
 
 ## Depends on
 
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sabar's triangle](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/sabar-s-triangle)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.8 Noetherian algebraic stacks
 
-Section 101.8 of the Stacks Project, [Tag 050Z](https://stacks.math.columbia.edu/tag/050Z). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.8 of the Stacks Project, [Tag 050Z](https://stacks.math.columbia.edu/tag/050Z). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0510, a definition
 
 [Tag 0510](https://stacks.math.columbia.edu/tag/0510) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsNoetherianStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianStack.lean#L72).
+**`AlgebraicGeometry.Stack.IsNoetherianStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianStack.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianStack.lean#L72).
 
 > **Stacks 0510**, verbatim: *"Let `𝒳` be an algebraic stack. We say `𝒳` is Noetherian if `𝒳`
 > is quasi-compact, quasi-separated and locally Noetherian."*
@@ -33,7 +33,7 @@ noncomputable abbrev IsNoetherianStack (𝒳 : AlgebraicStacks.{u, w} B S hS) : 
 
 [Tag 0CPM](https://stacks.math.columbia.edu/tag/0CPM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean#L228). The attribute's comment: “part (1): the source is locally Noetherian”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherian_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianAlgebraicStack.lean#L228). The attribute's comment: “part (1): the source is locally Noetherian”.
 
 > **Stacks 0CPM, part (1), first half**, verbatim: *"Let `j : 𝒳 → 𝒴` be an immersion of
 > algebraic stacks. If `𝒴` is locally Noetherian, then `𝒳` is locally Noetherian [and `j` is
@@ -61,7 +61,7 @@ theorem isLocallyNoetherian_of_isImmersion
       (fun T : Scheme.{u} => IsLocallyNoetherian T) 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.hasRelativeProperty_quasiCompact_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean#L97). The attribute's comment: “part (1): the 1-morphism is quasi-compact, in the sense of Stacks 03YK”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.hasRelativeProperty_quasiCompact_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean#L97). The attribute's comment: “part (1): the 1-morphism is quasi-compact, in the sense of Stacks 03YK”.
 
 > Let `j : 𝒳 ⟶ 𝒴` be an immersion of algebraic stacks, where `𝒴` has a smooth surjective
 > scheme atlas with locally Noetherian source. Then `j` is quasi-compact: it has the relative
@@ -77,7 +77,7 @@ theorem hasRelativeProperty_quasiCompact_of_isImmersion
       (Space.quasiCompactProperty B S hS) j.hom hj.1
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isNoetherianStack_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean#L164). The attribute's comment: “part (2): the source is Noetherian”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isNoetherianStack_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactImmersion.lean#L164). The attribute's comment: “part (2): the source is Noetherian”.
 
 > Let `j : 𝒳 ⟶ 𝒴` be an immersion of algebraic stacks. If `𝒴` is Noetherian, then `𝒳` is
 > Noetherian.
@@ -94,7 +94,7 @@ theorem isNoetherianStack_of_isImmersion
 
 [Tag 0DQI](https://stacks.math.columbia.edu/tag/0DQI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherianSpace_points_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L149). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyNoetherianSpace_points_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L150). The attribute's comment: “part (1)”.
 
 > **Stacks 0DQI, part (1).** The space of points of Stacks 04XL of a locally Noetherian
 > algebraic stack over `S` is a locally Noetherian topological space.
@@ -114,7 +114,7 @@ theorem isLocallyNoetherianSpace_points_of_isLocallyNoetherian
     IsLocallyNoetherianSpace (Stack.points B S hS 𝒳.val.val 𝒳.val.property)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.noetherianSpace_points_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L169). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.noetherianSpace_points_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L170). The attribute's comment: “part (2)”.
 
 > **Stacks 0DQI, part (2).** The space of points of Stacks 04XL of a quasi-compact locally
 > Noetherian algebraic stack over `S` is a Noetherian topological space.
@@ -137,7 +137,7 @@ theorem noetherianSpace_points_of_isQuasiCompactStack
 
 [Tag 0GVX](https://stacks.math.columbia.edu/tag/0GVX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasiSober_points_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L191).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasiSober_points_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianPointsAlgebraicStack.lean#L192).
 
 > **Stacks 0GVX.** The space of points of Stacks 04XL of a locally Noetherian algebraic stack
 > over `S` is quasi-sober in the sense of Stacks 004X: every irreducible closed subset of it has a
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.8, Tag 050Z](https://stacks.math.columbia.edu/tag/050Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.34 Morphisms and dimensions of fibres
 
-Section 67.34 of the Stacks Project, [Tag 04NP](https://stacks.math.columbia.edu/tag/04NP). 8 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.34 of the Stacks Project, [Tag 04NP](https://stacks.math.columbia.edu/tag/04NP). 8 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04NQ, a lemma
 
 [Tag 04NQ](https://stacks.math.columbia.edu/tag/04NQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeDimensionAt_eq_fiberLocalRingDimension_add_transcendenceDegreeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L313).
+**`AlgebraicGeometry.Space.relativeDimensionAt_eq_fiberLocalRingDimension_add_transcendenceDegreeAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L314).
 
 > **Stacks 04NQ.** For a morphism of algebraic spaces over `S` which is locally of finite
 > type, the relative dimension at a point is the dimension of the local ring of the fibre there
@@ -37,7 +37,7 @@ theorem relativeDimensionAt_eq_fiberLocalRingDimension_add_transcendenceDegreeAt
 
 [Tag 04NR](https://stacks.math.columbia.edu/tag/04NR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L354). The attribute's comment: “part (3): additivity of the transcendence degree”.
+**`AlgebraicGeometry.Space.hasTranscendenceDegreeAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L355). The attribute's comment: “part (3): additivity of the transcendence degree”.
 
 > **Additivity of the transcendence degree at a point**, part (3) of Stacks 04NR. For
 > composable morphisms `f : X ⟶ Y` and `g : Y ⟶ Z` of algebraic spaces over `S` and a point `x`
@@ -62,7 +62,7 @@ theorem hasTranscendenceDegreeAt_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
     HasTranscendenceDegreeAt B S hS (f ≫ g) x (r + s)
 ```
 
-**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_le_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L477). The attribute's comment: “part (1): the relative dimension of a composite is at most the sum”.
+**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_le_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L478). The attribute's comment: “part (1): the relative dimension of a composite is at most the sum”.
 
 > **Stacks 04NR, part (1).** For composable morphisms of algebraic spaces over `S` which are
 > locally of finite type, the relative dimension of the composite at a point is at most the sum of
@@ -83,7 +83,7 @@ theorem hasRelativeDimensionAt_comp_le_add {X Y Z : (BigFppfOver B S hS)ᵒᵖ �
     (hn : HasRelativeDimensionAt n B S hS (f ≫ g) x) : n ≤ d + e
 ```
 
-**`AlgebraicGeometry.Space.exists_hasRelativeDimensionAt_comp_le_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L500). The attribute's comment: “part (1): the relative dimension of a composite is at most the sum”.
+**`AlgebraicGeometry.Space.exists_hasRelativeDimensionAt_comp_le_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L501). The attribute's comment: “part (1): the relative dimension of a composite is at most the sum”.
 
 > **Stacks 04NR, part (1).** The composite of two morphisms of algebraic spaces over `S` which
 > are locally of finite type has a relative dimension at every point of its source, and that
@@ -99,7 +99,7 @@ theorem exists_hasRelativeDimensionAt_comp_le_add {X Y Z : (BigFppfOver B S hS)�
     ∃ n : ℕ∞, HasRelativeDimensionAt n B S hS (f ≫ g) x ∧ n ≤ d + e
 ```
 
-**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L517). The attribute's comment: “part (2): equality when the first morphism is flat at the point”.
+**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L518). The attribute's comment: “part (2): equality when the first morphism is flat at the point”.
 
 > **Stacks 04NR, part (2), special case.** The inequality of part (1) is an equality as soon as
 > the first morphism is flat at the point.
@@ -119,7 +119,7 @@ theorem hasRelativeDimensionAt_comp_of_isFlatAt {X Y Z : (BigFppfOver B S hS)ᵒ
     HasRelativeDimensionAt (d + e) B S hS (f ≫ g) x
 ```
 
-**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_of_isFlatAt_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1057](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1057). The attribute's comment: “part (2): equality when the morphism of field-valued fibres is flat”.
+**`AlgebraicGeometry.Space.hasRelativeDimensionAt_comp_of_isFlatAt_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1058). The attribute's comment: “part (2): equality when the morphism of field-valued fibres is flat”.
 
 > **Stacks 04NR, part (2).** The inequality of part (1) is an equality as soon as the morphism
 > of field-valued fibres over the image point is flat at a point above `x`: here `Xk` and `Yk` are
@@ -157,7 +157,7 @@ theorem hasRelativeDimensionAt_comp_of_isFlatAt_fibre
 
 [Tag 04NS](https://stacks.math.columbia.edu/tag/04NS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasRelativeDimensionAt_iff_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L686). The attribute's comment: “part (1): invariance of the relative dimension under base change”.
+**`AlgebraicGeometry.Space.hasRelativeDimensionAt_iff_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L687). The attribute's comment: “part (1): invariance of the relative dimension under base change”.
 
 > **Invariance of relative dimension under base change**, part (1) of Stacks 04NS. In a
 > cartesian square of algebraic spaces over `S` whose right vertical arrow `f` is locally of
@@ -183,7 +183,7 @@ theorem hasRelativeDimensionAt_iff_of_isPullback {X' X Y' Y : (BigFppfOver B S h
       HasRelativeDimensionAt d B S hS f' x'
 ```
 
-**`AlgebraicGeometry.Space.exists_fiberLocalRingDimension_add_eq_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 784](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L784). The attribute's comment: “part (2): the gain in the dimension of the local ring of the fibre is the loss in transcendence degree”.
+**`AlgebraicGeometry.Space.exists_fiberLocalRingDimension_add_eq_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 785](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L785). The attribute's comment: “part (2): the gain in the dimension of the local ring of the fibre is the loss in transcendence degree”.
 
 > **Part (2) of Stacks 04NS.** In a cartesian square of algebraic spaces over `S` whose right
 > vertical arrow `f` is locally of finite type, the dimension gained by the local ring of the
@@ -212,7 +212,7 @@ theorem exists_fiberLocalRingDimension_add_eq_of_isPullback
     ∃ n : ℕ∞, e + n = e' ∧ r' + n = r
 ```
 
-**`AlgebraicGeometry.Space.fiberLocalRingDimension_le_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 832](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L832). The attribute's comment: “part (2): the dimension of the local ring of the fibre does not decrease”.
+**`AlgebraicGeometry.Space.fiberLocalRingDimension_le_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 833](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L833). The attribute's comment: “part (2): the dimension of the local ring of the fibre does not decrease”.
 
 > **Part (2) of Stacks 04NS.** Base change does not decrease the dimension of the local ring
 > of the fibre at a point.
@@ -230,7 +230,7 @@ theorem fiberLocalRingDimension_le_of_isPullback
     (hr' : HasTranscendenceDegreeAt B S hS f' x' r') : e ≤ e'
 ```
 
-**`AlgebraicGeometry.Space.transcendenceDegreeAt_le_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L850). The attribute's comment: “part (2): the transcendence degree does not increase”.
+**`AlgebraicGeometry.Space.transcendenceDegreeAt_le_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L851). The attribute's comment: “part (2): the transcendence degree does not increase”.
 
 > **Part (2) of Stacks 04NS.** Base change does not increase the transcendence degree of a
 > point over its image.
@@ -248,7 +248,7 @@ theorem transcendenceDegreeAt_le_of_isPullback
     (hr' : HasTranscendenceDegreeAt B S hS f' x' r') : r' ≤ r
 ```
 
-**`AlgebraicGeometry.Space.exists_point_preserving_fiberLocalRingDimension_and_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L890). The attribute's comment: “part (3): a common lift at which both invariants are preserved”.
+**`AlgebraicGeometry.Space.exists_point_preserving_fiberLocalRingDimension_and_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 891](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L891). The attribute's comment: “part (3): a common lift at which both invariants are preserved”.
 
 > **Part (3) of Stacks 04NS.** In a cartesian square of algebraic spaces over `S` whose right
 > vertical arrow `f` is locally of finite type, a point `x` of `X` and a point `y'` of `Y'` with
@@ -280,7 +280,7 @@ theorem exists_point_preserving_fiberLocalRingDimension_and_trdeg
         HasTranscendenceDegreeAt B S hS f' x' r)
 ```
 
-**`AlgebraicGeometry.Space.hasRelativeDimensionAt_iff_of_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionBaseChange.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionBaseChange.lean#L167). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.hasRelativeDimensionAt_iff_of_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionBaseChange.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionBaseChange.lean#L167). The attribute's comment: “part (1)”.
 
 > In a cartesian square of algebraic spaces over `S` with `f` locally of finite type, the
 > relative dimension of the base change of `f` at a point of its source is the relative dimension of
@@ -305,7 +305,7 @@ theorem hasRelativeDimensionAt_iff_of_isPullback' (d : ℕ∞)
 
 [Tag 04NT](https://stacks.math.columbia.edu/tag/04NT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_setOf_hasRelativeDimensionAt_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionOpenness.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionOpenness.lean#L55).
+**`AlgebraicGeometry.Space.isOpen_setOf_hasRelativeDimensionAt_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionOpenness.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionOpenness.lean#L55).
 
 > For a morphism of algebraic spaces over `S` which is locally of finite type, the set of
 > points of the source at which the relative dimension is at most `n` is open.
@@ -322,7 +322,7 @@ theorem isOpen_setOf_hasRelativeDimensionAt_le (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 04NU](https://stacks.math.columbia.edu/tag/04NU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRetrocompact_setOf_exists_hasRelativeDimensionAt_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1170).
+**`AlgebraicGeometry.Space.isRetrocompact_setOf_exists_hasRelativeDimensionAt_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1171).
 
 > **Stacks 04NU.** For a morphism of algebraic spaces over `S` which is locally of finite
 > presentation and a natural number `n`, the open set of Stacks 04NT — the points of the source
@@ -350,7 +350,7 @@ theorem isRetrocompact_setOf_exists_hasRelativeDimensionAt_le (hF : IsAlgebraicS
 
 [Tag 04NV](https://stacks.math.columbia.edu/tag/04NV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_forall_hasRelativeDimensionAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionQuasiFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionQuasiFinite.lean#L60).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_forall_hasRelativeDimensionAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionQuasiFinite.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionQuasiFinite.lean#L60).
 
 > A morphism `f : F ⟶ G` of presheaves over `S` on the big fppf site which is locally of finite
 > type is locally quasi-finite exactly when it has relative dimension `0` at every point of its
@@ -367,7 +367,7 @@ theorem isLocallyQuasiFinite_iff_forall_hasRelativeDimensionAt_zero (f : F ⟶ G
 
 [Tag 04NW](https://stacks.math.columbia.edu/tag/04NW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyQuasiFinitePart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1275). The attribute's comment: “the canonical open subspace”.
+**`AlgebraicGeometry.Space.locallyQuasiFinitePart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1276). The attribute's comment: “the canonical open subspace”.
 
 > **Stacks 04NW, the canonical open subspace.** The open subspace of the source of a morphism
 > of algebraic spaces over `S` which is locally of finite type cut out by the points of relative
@@ -379,7 +379,7 @@ noncomputable def locallyQuasiFinitePart (hF : IsAlgebraicSpace B S hS F)
     {U : Subfunctor F // IsOpenSubspace B S hS U}
 ```
 
-**`AlgebraicGeometry.Space.mem_range_pointsMap_locallyQuasiFinitePart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1286). The attribute's comment: “the points of the canonical open subspace”.
+**`AlgebraicGeometry.Space.mem_range_pointsMap_locallyQuasiFinitePart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1287). The attribute's comment: “the points of the canonical open subspace”.
 
 > **Stacks 04NW, the points of the canonical open subspace.** A point of the source lies in
 > the point set of `AlgebraicGeometry.Space.locallyQuasiFinitePart` exactly when the relative
@@ -394,7 +394,7 @@ theorem mem_range_pointsMap_locallyQuasiFinitePart_iff (hF : IsAlgebraicSpace B 
       HasRelativeDimensionAt 0 B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1310). The attribute's comment: “local quasi-finiteness of the restriction”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1311). The attribute's comment: “local quasi-finiteness of the restriction”.
 
 > **Stacks 04NW, local quasi-finiteness of the restriction.** The restriction of the morphism
 > to `AlgebraicGeometry.Space.locallyQuasiFinitePart` is locally quasi-finite.
@@ -409,7 +409,7 @@ theorem isLocallyQuasiFinite_locallyQuasiFinitePart (hF : IsAlgebraicSpace B S h
     IsLocallyQuasiFinite B S hS ((locallyQuasiFinitePart B S hS hF hG f hf).1.ι ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.exists_one_le_hasRelativeDimensionAt_of_not_mem_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1327). The attribute's comment: “positive relative dimension outside the canonical open subspace”.
+**`AlgebraicGeometry.Space.exists_one_le_hasRelativeDimensionAt_of_not_mem_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1328). The attribute's comment: “positive relative dimension outside the canonical open subspace”.
 
 > **Stacks 04NW, positive relative dimension outside the canonical open subspace.** At a point
 > of the source which is not in the point set of
@@ -426,7 +426,7 @@ theorem exists_one_le_hasRelativeDimensionAt_of_not_mem_locallyQuasiFinitePart
     ∃ d : ℕ∞, 1 ≤ d ∧ HasRelativeDimensionAt d B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.le_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1344). The attribute's comment: “maximality of the canonical open subspace”.
+**`AlgebraicGeometry.Space.le_locallyQuasiFinitePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1345). The attribute's comment: “maximality of the canonical open subspace”.
 
 > **Stacks 04NW, maximality.** Every open subspace of the source over which the morphism is
 > locally quasi-finite is contained in
@@ -442,7 +442,7 @@ theorem le_locallyQuasiFinitePart (hF : IsAlgebraicSpace B S hS F)
     U ≤ locallyQuasiFinitePart B S hS hF hG f hf
 ```
 
-**`AlgebraicGeometry.Space.locallyQuasiFinitePart_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1371). The attribute's comment: “compatibility with arbitrary base change”. References: SGA 3 V (7.4), “more general”.
+**`AlgebraicGeometry.Space.locallyQuasiFinitePart_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1372). The attribute's comment: “compatibility with arbitrary base change”. References: SGA 3 V (7.4), “more general”.
 
 > **Stacks 04NW, compatibility with arbitrary base change.** In a cartesian square of
 > algebraic spaces over `S` whose right vertical arrow is locally of finite type, the base change
@@ -464,7 +464,7 @@ theorem locallyQuasiFinitePart_preimage_of_isPullback
         (locallyQuasiFinitePart B S hS hX hY f hf).1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L110). The attribute's comment: “the canonical open subspace”.
+**`AlgebraicGeometry.Space.isOpenSubspace_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L110). The attribute's comment: “the canonical open subspace”.
 
 > For a morphism of algebraic spaces over `S` which is locally of finite type, the locus where
 > the relative dimension is zero is an open subspace of the source.
@@ -475,7 +475,7 @@ theorem isOpenSubspace_relativeDimensionZeroLocus (hF : IsAlgebraicSpace B S hS 
     IsOpenSubspace B S hS (relativeDimensionZeroLocus B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L128). The attribute's comment: “local quasi-finiteness of the restriction”. References: EGA III (4.4.12), “partial”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L128). The attribute's comment: “local quasi-finiteness of the restriction”. References: EGA III (4.4.12), “partial”.
 
 > A morphism of algebraic spaces over `S` which is locally of finite type is locally
 > quasi-finite on the open subspace of its source where its relative dimension is zero.
@@ -486,7 +486,7 @@ theorem isLocallyQuasiFinite_relativeDimensionZeroLocus (hF : IsAlgebraicSpace B
     IsLocallyQuasiFinite B S hS ((relativeDimensionZeroLocus B S hS f).ι ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.one_le_of_hasRelativeDimensionAt_of_notMem_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L143). The attribute's comment: “relative dimension at least one outside the subspace”.
+**`AlgebraicGeometry.Space.one_le_of_hasRelativeDimensionAt_of_notMem_relativeDimensionZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionZeroLocus.lean#L143). The attribute's comment: “relative dimension at least one outside the subspace”.
 
 > At a point of the source which is not in the relative-dimension-zero locus, every value of
 > the relative dimension of the morphism is at least `1`.
@@ -503,7 +503,7 @@ theorem one_le_of_hasRelativeDimensionAt_of_notMem_relativeDimensionZeroLocus (f
 
 [Tag 06LS](https://stacks.math.columbia.edu/tag/06LS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_dimensionAtPoint_fiber_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1470).
+**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_dimensionAtPoint_fiber_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean, line 1473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FibreDimension.lean#L1473).
 
 > **Stacks 06LS.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, let `p` be a field-valued point of `Y` — a morphism `Spec k ⟶ Y` from
@@ -532,4 +532,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.34, Tag 04NP](https://stacks.math.columbia.edu/tag/04NP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

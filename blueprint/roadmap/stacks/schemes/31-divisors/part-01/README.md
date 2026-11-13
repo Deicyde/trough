@@ -14,6 +14,7 @@ navigation: transparent
 - [31.9 Fitting ideals](31-9-fitting-ideals.md)
 - [31.10 The singular locus of a morphism](31-10-the-singular-locus-of-a-morphism.md)
 - [31.11 Torsion free modules](31-11-torsion-free-modules.md)
+- [31.12 Ranks of modules](31-12-ranks-of-modules.md)
 - [31.13 Reflexive modules](31-13-reflexive-modules.md)
 - [31.14 Effective Cartier divisors](31-14-effective-cartier-divisors.md)
 - [31.15 Effective Cartier divisors and invertible sheaves](31-15-effective-cartier-divisors-and-invertible.md)

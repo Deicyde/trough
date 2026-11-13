@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.4 Total direct image
 
-Section 36.4 of the Stacks Project, [Tag 08DY](https://stacks.math.columbia.edu/tag/08DY). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.4 of the Stacks Project, [Tag 08DY](https://stacks.math.columbia.edu/tag/08DY). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08D5, a lemma
 
 [Tag 08D5](https://stacks.math.columbia.edu/tag/08D5) in the Stacks Project.
 
-**`Stacks.Duality.exists_isLE_derivedPushforward_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBound.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBound.lean#L116). The attribute's comment: “part (2), in the duality spelling”.
+**`Stacks.Duality.exists_isLE_derivedPushforward_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBound.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBound.lean#L117). The attribute's comment: “part (2), in the duality spelling”.
 
 > **[Stacks, Tag 08D5] part (2), in the duality spelling.** Let `f : X ⟶ Y` be a quasi-compact
 > and quasi-separated morphism of schemes with `Y` quasi-compact. There is an integer `N`,
@@ -33,7 +33,7 @@ theorem exists_isLE_derivedPushforward_obj [QuasiCompact f] [QuasiSeparated f]
       ∀ b : ℤ, E.IsLE b → ((derivedPushforward f).obj E).IsLE (b + N)
 ```
 
-**`Stacks.Duality.exists_isLE_derivedPushforward_obj_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBoundAnyModel.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBoundAnyModel.lean#L256). The attribute's comment: “part (2), at an arbitrary derived category”.
+**`Stacks.Duality.exists_isLE_derivedPushforward_obj_anyModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBoundAnyModel.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/UniformBoundAnyModel.lean#L257). The attribute's comment: “part (2), at an arbitrary derived category”.
 
 > **[Stacks, Tag 08D5] part (2), at an arbitrary chosen model of the derived categories, in the
 > `IsLE` form.** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of schemes with `Y`
@@ -53,7 +53,7 @@ theorem exists_isLE_derivedPushforward_obj_anyModel
       ∀ b : ℤ, E.IsLE b → ((derivedPushforward.{w} f).obj E).IsLE (b + N)
 ```
 
-**`AlgebraicGeometry.exists_uniform_isZero_homology_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/BaseChangeBound.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/BaseChangeBound.lean#L144). The attribute's comment: “uniform\_bound\_after\_base\_change”.
+**`AlgebraicGeometry.exists_uniform_isZero_homology_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/BaseChangeBound.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/BaseChangeBound.lean#L144). The attribute's comment: “uniform\_bound\_after\_base\_change”.
 
 > **Stacks 08D5, part (3).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism
 > of schemes with `S` quasi-compact. There is an integer `N`, depending only on `f`, such that for
@@ -83,7 +83,7 @@ theorem exists_uniform_isZero_homology_derivedPushforward {X S : Scheme.{u}} (f 
           ((derivedPushforward (pullback.snd f g).toLRSHom.toShHom).obj E))
 ```
 
-**`AlgebraicGeometry.exists_isZero_homology_derivedPushforward_of_isLE_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/BoundedCohomologicalDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/BoundedCohomologicalDimension.lean#L131). The attribute's comment: “bounded\_cohomological\_dimension”.
+**`AlgebraicGeometry.exists_isZero_homology_derivedPushforward_of_isLE_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/BoundedCohomologicalDimension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/BoundedCohomologicalDimension.lean#L131). The attribute's comment: “bounded\_cohomological\_dimension”.
 
 > Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of schemes with `S`
 > quasi-compact. There is an integer `N`, depending only on `f`, such that every object `E` of
@@ -100,7 +100,7 @@ theorem exists_isZero_homology_derivedPushforward_of_isLE_zero
           ((derivedPushforward f.toLRSHom.toShHom).obj E))
 ```
 
-**`AlgebraicGeometry.isQuasicoherent_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/QuasiCoherentDirectImage.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TotalDirectImage/QuasiCoherentDirectImage.lean#L374). The attribute's comment: “quasi\_coherent\_direct\_image”.
+**`AlgebraicGeometry.isQuasicoherent_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TotalDirectImage/QuasiCoherentDirectImage.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TotalDirectImage/QuasiCoherentDirectImage.lean#L374). The attribute's comment: “quasi\_coherent\_direct\_image”.
 
 > **Stacks 08D5, part (1).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of
 > schemes. The unbounded derived direct image `Rf_*` carries `D_QCoh(𝒪_X)` into `D_QCoh(𝒪_S)`: the
@@ -118,7 +118,7 @@ theorem isQuasicoherent_derivedPushforward [QuasiCompact f] [QuasiSeparated f]
       ((RingedSpace.derivedPushforward f.toLRSHom.toShHom).obj E.obj)
 ```
 
-**`AlgebraicGeometry.isQuasicoherent_derivedPushforward_affineLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/QuasiCoherence.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/QuasiCoherence.lean#L281). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isQuasicoherent_derivedPushforward_affineLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/QuasiCoherence.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/QuasiCoherence.lean#L282). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 08D5], part (1).** For a quasi-compact and quasi-separated morphism of schemes
 > `f : X ⟶ S` the unbounded derived direct image `Rf_*` carries `D_QCoh(𝒪_X)` into `D_QCoh(𝒪_S)`:
@@ -137,7 +137,7 @@ theorem isQuasicoherent_derivedPushforward_affineLocal
       ((RingedSpace.derivedPushforward f.toLRSHom.toShHom).obj E.obj)
 ```
 
-**`AlgebraicGeometry.exists_isZero_homology_derivedPushforward_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/UniformBound.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/UniformBound.lean#L424). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_isZero_homology_derivedPushforward_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/UniformBound.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/UnboundedDerivedDirectImage/UniformBound.lean#L424). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 08D5], part (2).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes with `S` quasi-compact. There is an integer `N`, depending on `X`, `S` and `f`
@@ -158,7 +158,7 @@ theorem exists_isZero_homology_derivedPushforward_of_isLE (f : X ⟶ S) [QuasiCo
 
 [Tag 0G9N](https://stacks.math.columbia.edu/tag/0G9N) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_to_rightDerived_of_termwise_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/Pushforward.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/Pushforward.lean#L433).
+**`AlgebraicGeometry.isIso_to_rightDerived_of_termwise_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/Pushforward.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/Pushforward.lean#L433).
 
 > **Stacks Project, Tag 0G9N.** Let `f : X ⟶ S` be a quasi-separated and quasi-compact
 > morphism of schemes and let `K` be a complex of quasi-coherent `𝒪_X`-modules each of which is
@@ -179,7 +179,7 @@ theorem isIso_to_rightDerived_of_termwise_acyclic
     IsIso (α.app ((HomotopyCategory.quotient _ _).obj K))
 ```
 
-**`AlgebraicGeometry.isIso_pushforwardComparisonQ_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffinePushforwardComparisonQ.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffinePushforwardComparisonQ.lean#L83). The attribute's comment: “the comparison Q(f\_*C) ⟶ Rf\_*(QC) at the Q spelling: it is invertible for an affine morphism of schemes and a complex of quasi-coherent modules, with no boundedness hypothesis”.
+**`AlgebraicGeometry.isIso_pushforwardComparisonQ_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffinePushforwardComparisonQ.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffinePushforwardComparisonQ.lean#L83). The attribute's comment: “the comparison Q(f\_*C) ⟶ Rf\_*(QC) at the Q spelling: it is invertible for an affine morphism of schemes and a complex of quasi-coherent modules, with no boundedness hypothesis”.
 
 > **`Q(f_*C^•) ⟶ Rf_*(QC^•)` is invertible along an affine morphism of schemes**, for a
 > cochain complex `C^•` of quasi-coherent `𝒪_X`-modules and with no boundedness hypothesis.
@@ -205,7 +205,7 @@ theorem isIso_pushforwardComparisonQ_of_isAffineHom {X Y : Scheme.{u}} (f : X �
 
 [Tag 0G9P](https://stacks.math.columbia.edu/tag/0G9P) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_to_derivedGlobalSections_of_termwise_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/GlobalSections.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/GlobalSections.lean#L201).
+**`AlgebraicGeometry.isIso_to_derivedGlobalSections_of_termwise_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/GlobalSections.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/GlobalSections.lean#L201).
 
 > Let `X` be a quasi-separated and quasi-compact scheme and let `K` be a complex of
 > quasi-coherent `𝒪_X`-modules each of which is right acyclic for `Γ(X, -)`. Then `Γ(X, K)`
@@ -230,7 +230,7 @@ theorem isIso_to_derivedGlobalSections_of_termwise_acyclic (X : Scheme.{u})
 
 [Tag 0G9Q](https://stacks.math.columbia.edu/tag/0G9Q) in the Stacks Project.
 
-**`AlgebraicGeometry.hypercohomologySpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean#L275). The attribute's comment: “boundedness”.
+**`AlgebraicGeometry.hypercohomologySpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean#L275). The attribute's comment: “boundedness”.
 
 > **Stacks Project, Tag 0G9Q.** The hypercohomology spectral sequence of an object of
 > `D_QCoh(𝒪_X)` on a quasi-compact quasi-separated scheme is bounded: in each total degree only
@@ -246,7 +246,7 @@ theorem hypercohomologySpectralSequence_isBounded (X : Scheme.{u}) [CompactSpace
     IsBounded (hypercohomologySpectralSequence X.toRingedSpace K.obj).spectralSequence
 ```
 
-**`AlgebraicGeometry.hypercohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean#L300). The attribute's comment: “convergence”.
+**`AlgebraicGeometry.hypercohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/HypercohomologySpectralSequence/Convergence.lean#L300). The attribute's comment: “convergence”.
 
 > **Stacks Project, Tag 0G9Q.** The hypercohomology spectral sequence of an object `K` of
 > `D_QCoh(𝒪_X)` on a quasi-compact quasi-separated scheme converges to the hypercohomology of `K`:
@@ -274,7 +274,7 @@ theorem hypercohomologySpectralSequence_abutsTo (X : Scheme.{u}) [CompactSpace X
 
 [Tag 08DZ](https://stacks.math.columbia.edu/tag/08DZ) in the Stacks Project.
 
-**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QcohDirectSumsAnyModel.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QcohDirectSumsAnyModel.lean#L599). The attribute's comment: “locally\_small\_model”.
+**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QcohDirectSumsAnyModel.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QcohDirectSumsAnyModel.lean#L599). The attribute's comment: “locally\_small\_model”.
 
 > **[Stacks, Tag 08DZ].** Let `f : X ⟶ S` be a quasi-separated and quasi-compact morphism of
 > schemes. Then `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_S)` commutes with direct sums: for every index type
@@ -296,7 +296,7 @@ theorem preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward_lo
       (qcqsQuasiCoherentDerivedPushforwardLocallySmall f)
 ```
 
-**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSums.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSums.lean#L558).
+**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSums.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSums.lean#L558).
 
 > **[Stacks, Tag 08DZ].** Let `f : X ⟶ S` be a quasi-separated and quasi-compact morphism of
 > schemes. Then `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_S)` commutes with direct sums: for every index type
@@ -311,7 +311,7 @@ theorem preservesColimitsOfShape_discrete_qcqsQuasiCoherentDerivedPushforward (�
     PreservesColimitsOfShape (Discrete α) (qcqsQuasiCoherentDerivedPushforward f)
 ```
 
-**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsRestrictedDerivedPushforward`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSumsLocallySmall.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSumsLocallySmall.lean#L415). The attribute's comment: “at the locally small model, which is the one Brown representability runs at”.
+**`Stacks.Duality.DerivedPushforward.preservesColimitsOfShape_discrete_qcqsRestrictedDerivedPushforward`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSumsLocallySmall.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/QuasiCoherentDirectSumsLocallySmall.lean#L415). The attribute's comment: “at the locally small model, which is the one Brown representability runs at”.
 
 > **[Stacks, Tag 08DZ] at the locally small model, for the canonical restricted functor.** Let
 > `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of schemes with `Y` quasi-compact.
@@ -335,4 +335,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.4, Tag 08DY](https://stacks.math.columbia.edu/tag/08DY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Points and spanned hyperplanes
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html).
 
 ## Hyperplanes spanned by point sets
 
@@ -21,7 +21,7 @@ a real number $c$ such that $A = \{x \in \mathbb{R}^d : \ell(x) = c\}$.
 
 - `OWR-1183-011`.
 
-Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.IsAffineHyperplane`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#is-affine-hyperplane).
+Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.IsAffineHyperplane`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#is-affine-hyperplane).
 
 ## Hyperplanes spanned by a point set
 
@@ -33,7 +33,7 @@ subset of $P$.
 
 - `OWR-1183-011`.
 
-Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.SpannedHyperplaneSet`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#spanned-hyperplane-set).
+Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.SpannedHyperplaneSet`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#spanned-hyperplane-set).
 
 ## Injective point-to-hyperplane matching question
 
@@ -47,7 +47,7 @@ every $p \in P$.
 
 - the question of `OWR-1183-011`.
 
-Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.OWR1183Question`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#owr1183-question).
+Formalized by `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.OWR1183Question`, a definition declared in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#owr1183-question).
 
 ## Spanning point sets have injective point-to-hyperplane matchings
 
@@ -66,7 +66,7 @@ spanned by subsets of $P$.
 
 - J. D. Farley, A question of Björner from 1981: infinite geometric lattices of finite rank have matchings, Australasian Journal of Combinatorics 82 (2022) 228-235, arXiv:2004.11972, https://arxiv.org/abs/2004.11972.
 
-Stated but not proved: `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.OWR1183Question_holds` is written with `theorem_wanted` in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#owr1183-question-holds).
+Stated but not proved: `MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.OWR1183Question_holds` is written with `theorem_wanted` in [WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/InfiniteTransversalsSpannedHyperplanesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html#owr1183-question-holds).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Points and spanned hyperplanes](https://deicyde.github.io/atlas-lean/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/discrete-geometry/part-01/points-and-spanned-hyperplanes)

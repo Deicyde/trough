@@ -7,7 +7,7 @@ statement: formalized
 
 # Fagin's theorem
 
-11 results, 10 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html).
+11 results, 10 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html).
 
 ## Finite graphs as edge tables
 
@@ -15,7 +15,7 @@ A finite graph is a pair $(n, t)$ of a natural number $n$,
 the number of vertices, and a finite list $t$ of booleans, read as a row-major edge table. The
 length of $t$ is not required to be $n^2$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.FaginGraph`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-graph).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.FaginGraph`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-graph).
 
 ## Edge relation of a graph
 
@@ -24,7 +24,7 @@ $t$, a finite list of booleans. For vertices $a, b < n$, there is an edge from $
 when the entry of $t$ at position $an + b$ (counting from $0$) is true; a position beyond the end
 of $t$ counts as false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEdge`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-edge).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEdge`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-edge).
 
 ## First-order formulas over graphs
 
@@ -34,7 +34,7 @@ applying a relation symbol $i$ to a finite list of variables, by negation, conju
 disjunction and existential quantification $\exists \varphi$, which binds variable $0$ of
 $\varphi$ (de Bruijn indexing).
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.FaginFO`, an inductive type declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-fo).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.FaginFO`, an inductive type declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-fo).
 
 ## Evaluation of a first-order formula in a graph
 
@@ -47,7 +47,7 @@ $[\rho(a_1), \dots, \rho(a_m)]$; negation, conjunction and disjunction are inter
 and $\exists \varphi$ holds when there is a vertex $v$ such that $\varphi$ holds under the
 assignment sending $x_0$ to $v$ and $x_{j+1}$ to $\rho(j)$ for each $j$, with $S$ unchanged.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-eval).
 
 ## Interpretation of relation symbols in a graph
 
@@ -57,7 +57,7 @@ of $G$. Relation symbol $0$ is interpreted as the edge relation of $G$: it holds
 when the list is $[a, b]$ for vertices $a, b$ with an edge from $a$ to $b$. For $i \ge 1$, relation
 symbol $i$ is interpreted as $E_{i-1}$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginBase`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-base).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginBase`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-base).
 
 ## Satisfaction of an existential second-order sentence
 
@@ -69,7 +69,7 @@ relation symbol $0$ is interpreted as the edge relation (holding exactly of the 
 with an edge from $a$ to $b$), relation symbol $j + 1$ as $R_j$ for each $j < k$, every relation
 symbol above $k$ as the empty relation, and every variable as vertex $0$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESOSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-esosat).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESOSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-esosat).
 
 ## Encodings of a graph class as a decision problem
 
@@ -78,7 +78,7 @@ decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under th
 bitstring encoding of pairs of a natural number and a list of booleans, to a graph $G \in K$ with
 $n$ vertices whose edge table has length exactly $n^2$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEncodings`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-encodings).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginEncodings`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-encodings).
 
 ## Isomorphic graphs
 
@@ -87,14 +87,14 @@ vertices and there is a bijection $\sigma$ from the vertices of $G_1$ to the ver
 such that for all vertices $a, b$ of $G_1$, there is an edge from $a$ to $b$ in $G_1$ if and only
 if there is an edge from $\sigma(a)$ to $\sigma(b)$ in $G_2$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginIso`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-iso).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginIso`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-iso).
 
 ## Isomorphism-closed graph classes
 
 A class $K$ of graphs is isomorphism-closed if for every
 $G_1 \in K$, every graph $G_2$ isomorphic to $G_1$ also belongs to $K$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginIsoClosed`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-iso-closed).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginIsoClosed`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-iso-closed).
 
 ## Existential second-order definable graph classes
 
@@ -104,7 +104,7 @@ boolean $e$ such that every graph $G$ with $n$ vertices whose edge table has len
 satisfies the following: if $n > 0$, then $G \in K$ if and only if $G$ satisfies the existential
 second-order sentence $(k, \varphi)$; if $n = 0$, then $G \in K$ if and only if $e$ is true.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESODefinable`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-esodefinable).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.Fagin.faginESODefinable`, a definition declared in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin-esodefinable).
 
 ## Fagin's theorem: NP is existential second-order logic
 
@@ -122,7 +122,7 @@ free variable of $\varphi$ denoting vertex $0$), or $n = 0$ and $b$ is true.
 
 - R. Fagin, "Generalized first-order spectra and polynomial-time recognizable sets", in Complexity of Computation, SIAM-AMS Proceedings 7 (1974), 43-73.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Fagin.fagin` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Fagin.fagin` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/FaginWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/FaginWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html#fagin).
 
 ## Depends on
 
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fagin's theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/descriptive-complexity/fagin-s-theorem)

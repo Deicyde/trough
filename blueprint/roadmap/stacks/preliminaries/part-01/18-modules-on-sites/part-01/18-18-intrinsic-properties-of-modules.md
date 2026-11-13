@@ -1,230 +1,136 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Sheaves.LocalizedPullback.localizedPullbackMapData, Stacks.Sheaves.LocalizedPullback.isQuasicoherentOnSite_pullbackTopos_of_quasicoherentData, Stacks.Sheaves.LocalizedPullback.isQuasicoherentOnSite_pullbackTopos, Stacks.Sheaves.LocalizedPullback.isFiniteFree_over_pullbackTopos, Stacks.Sheaves.LocalizedPullback.isFiniteLocallyFreeOnSite_pullbackTopos, Stacks.Sheaves.LocalizedPullback.isFree_over_pullbackTopos, Stacks.Sheaves.LocalizedPullback.isLocallyFreeOnSite_pullbackTopos, Stacks.Sheaves.LocalizedPullback.generatingSectionsPullbackTopos
+lean: AlgebraicGeometry.RingedTopos.ModuleProperty.IsIntrinsic, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_of_specialCocontinuousInvariant, AlgebraicGeometry.RingedTopos.ModuleProperty.pullbackModules_of_sitePullbackStable, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isFree, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isFiniteFree, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isGeneratedByGlobalSections, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isGeneratedByGlobalSectionsOfCard, AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_exists_isGeneratedByGlobalSectionsOfCard
 statement: formalized
 proof: formalized
 ---
 
 # 18.18 Intrinsic properties of modules
 
-Section 18.18 of the Stacks Project, [Tag 03DG](https://stacks.math.columbia.edu/tag/03DG). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.18 of the Stacks Project, [Tag 03DG](https://stacks.math.columbia.edu/tag/03DG). 1 tag here is carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03DG, the section
 
 [Tag 03DG](https://stacks.math.columbia.edu/tag/03DG) in the Stacks Project.
 
-**`Stacks.Sheaves.LocalizedPullback.localizedPullbackMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L440). The attribute's comment: “condition (3) of the method, for the quasi-coherent property: the datum needed to carry a global presentation along a pullback is the pullback along the localized morphism of ringed topoi of 04J0, and this constructs it”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.IsIntrinsic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L116). The attribute's comment: “the definition of an intrinsic property of sheaves of modules”.
 
-> **The localized pullback datum of Section 03DG, for the quasi-coherent property.** Let
-> `(f, f♯) : (C, O) ⟶ (D, O')` be a morphism of ringed sites whose underlying functor `u : D ⥤ C`
-> is left exact, and let `q` be quasi-coherent data for a sheaf of `O'`-modules `M`: a family
-> `{W_i}` covering the final object of `D` together with a global presentation of `M|_{W_i}` for
-> each `i`.  Then the family `{u(W_i)}` covers the final object of `C`, and pullback along the
-> localized morphism of ringed topoi `(Sh(C/u(W_i)), O_{u(W_i)}) ⟶ (Sh(D/W_i), O'_{W_i})` of
-> Stacks 04J0 carries `M|_{W_i}` to `(f^*M)|_{u(W_i)}` and the structure sheaf to the structure
-> sheaf, and preserves colimits.
->
-> Section 03DG's method for defining an intrinsic property of modules asks, in its condition (3),
-> that the property be preserved by pullback along a morphism of ringed sites presented by a left
-> exact continuous functor; the functor that verification needs is the pullback along the
-> localized morphism of ringed topoi, and this is that datum for quasi-coherence.  The three
-> properties of it required are exactly the fields of
-> `Stacks.SheafOfModules.QuasicoherentData.MapData`, and each is one of the property-agnostic
-> pieces above: colimit preservation is
-> `Stacks.Sheaves.LocalizedPullback.preservesColimitsOfSize_localizedPullbackTopos`, the unit
-> isomorphism is `.localizedPullbackUnitIso`, and the identification of the transported module is
-> `.localizedPullbackOverIso`.
+> **An intrinsic property of sheaves of modules**, Section 03DG: `P(F) ⇔ P(f^*F)` whenever
+> `(f, f♯)` is an equivalence of ringed topoi, that is, its underlying morphism of topoi is an
+> equivalence and its structure map `f♯` is an isomorphism.
 
 ```lean
-def localizedPullbackMapData (q : M.QuasicoherentData.{ww}) :
-    Stacks.SheafOfModules.QuasicoherentData.MapData
-      f.toRingedToposSiteHom.pullbackTopos q
+def IsIntrinsic : Prop
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isQuasicoherentOnSite_pullbackTopos_of_quasicoherentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L472). The attribute's comment: “condition (3) verified for the quasi-coherent property: the pullback of a quasi-coherent module along a morphism of ringed sites presented by a left exact continuous functor is quasi-coherent”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_of_specialCocontinuousInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L252). The attribute's comment: “the method, steps (1) and (2): combined with Lemma 03CR they make the property well defined on ringed topoi, i.e. intrinsic”.
 
-> **The quasi-coherent clause of Stacks 03DO for a morphism of ringed sites presented by a
-> left exact continuous functor.** The pullback of a sheaf of `O'`-modules admitting quasi-coherent
-> data is quasi-coherent on the site.
+> **Section 03DG, conditions (1) and (2): the property is intrinsic.**  Let `P` be a property
+> of sheaves of modules on ringed sites (step (1), invariant under isomorphism of the data as
+> explained in the module documentation) satisfying condition (2).  Then `P(F) ⇔ P(f^*F)` for
+> every equivalence of ringed topoi `(f, f♯)`: the property is well defined on ringed topoi.
 >
-> The data is transported by `Stacks.Sheaves.LocalizedPullback.localizedPullbackMapData` and the
-> transported presentations assemble into quasi-coherence on the site by
-> `Stacks.SheafOfModules.isQuasicoherentOnSite_of_mapData`.
->
-> This is the case to which Stacks 03DO's own proof reduces its quasi-coherent clause through
-> Section 03DG; the general statement, for an arbitrary morphism of ringed topoi, is
-> `AlgebraicGeometry.RingedToposHom.isQuasicoherentOnSite_pullbackModules`, which transports this
-> one along the two equivalences of ringed topoi that Stacks 03CR produces.
+> The addendum to Lemma 03CR,
+> `AlgebraicGeometry.RingedToposHom.exists_oneSided_isDenseSubsite_of_isEquivalence`, factors the
+> equivalence over a single replacement site through two equivalences attached to special
+> cocontinuous functors and a change of structure sheaf along an isomorphism; condition (2)
+> crosses the first two and the invariance under isomorphism the third.  The reverse implication
+> is the same argument for the inverse equivalence.
 
 ```lean
-theorem isQuasicoherentOnSite_pullbackTopos_of_quasicoherentData
-    (q : M.QuasicoherentData.{ww}) :
-    (f.toRingedToposSiteHom.pullbackTopos.obj M).IsQuasicoherentOnSite
+theorem isIntrinsic_of_specialCocontinuousInvariant (hiso : P.IsIsoInvariant)
+    (hring : P.IsRingIsoInvariant) (h2 : P.SpecialCocontinuousInvariant) : P.IsIntrinsic
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isQuasicoherentOnSite_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L527). The attribute's comment: “condition (3) verified for the quasi-coherent property, with the hypothesis in the form 03DO states it: the pullback of a quasi-coherent module along a morphism of ringed sites presented by a left exact continuous functor is quasi-coherent”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.pullbackModules_of_sitePullbackStable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L287). The attribute's comment: “the method, step (3): a property satisfying (1), (2) and (3) is preserved under pullback of modules along arbitrary morphisms of ringed topoi”.
 
-> **The quasi-coherent clause of Stacks 03DO for a morphism of ringed sites, with the
-> hypothesis in the form the clause states it.** If a sheaf of `O'`-modules is quasi-coherent on
-> the site, so is its pullback along a morphism of ringed sites presented by a left exact
-> continuous functor.
+> **Section 03DG, conditions (1), (2) and (3): the property is preserved under pullback along
+> an arbitrary morphism of ringed topoi.**  Let `P` be a property of sheaves of modules on ringed
+> sites (step (1), invariant under isomorphism of sheaves of modules) satisfying conditions (2)
+> and (3).  Then for every morphism of ringed topoi `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and
+> every `O_D`-module `F`, `P(F) ⇒ P(f^*F)`.
 >
-> Quasi-coherence may be tested on a single family covering the final object, by Stacks 03DN in the
-> form `Stacks.SheafOfModules.isQuasicoherentOnSite_iff_exists_cover_hasGlobalPresentation`.  Such
-> a family `{W_i}` for `M` is carried to the family `{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.coversTop_mapObj`, and the global presentation of `M|_{W_i}` to
-> one of `(f^*M)|_{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.hasGlobalPresentation_over_pullbackTopos`.  No smallness
-> hypothesis on the slices of the target site is needed, for the reason recorded there.
->
-> This is the case to which Stacks 03DO's own proof reduces its quasi-coherent clause through
-> Section 03DG; the general statement, for an arbitrary morphism of ringed topoi, is
-> `AlgebraicGeometry.RingedToposHom.isQuasicoherentOnSite_pullbackModules`, which transports this
-> one along the two equivalences of ringed topoi that Stacks 03CR produces.
+> Lemma 03CR,
+> `AlgebraicGeometry.RingedToposHom.exists_twoSided_isDenseSubsite_morphismOfSites`, factors the
+> morphism through two equivalences attached to special cocontinuous functors, which condition (2)
+> crosses, and a morphism of ringed sites given by a left exact continuous functor between sites
+> with finite limits, which condition (3) crosses.
 
 ```lean
-theorem isQuasicoherentOnSite_pullbackTopos (hM : M.IsQuasicoherentOnSite) :
-    (f.toRingedToposSiteHom.pullbackTopos.obj M).IsQuasicoherentOnSite
+theorem pullbackModules_of_sitePullbackStable (hiso : P.IsIsoInvariant)
+    (h2 : P.SpecialCocontinuousInvariant) (h3 : P.SitePullbackStable)
+    {X Y : RingedTopos.{w, w, w}} (f : RingedToposHom X Y)
+    (F : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf Y.O)) (hF : P Y F) :
+    P X (f.toModulesHom.pullbackModules.obj F)
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isFiniteFree_over_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L554). The attribute's comment: “condition (3) of the method, for the finite locally free property: the datum needed to carry a finite free cofan along a pullback is the pullback along the localized morphism of ringed topoi of 04J0, and this is that transport”. References: EGA 0 (5.4.5), “partial”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L327). The attribute's comment: “the example: the property of being free is intrinsic”.
 
-> **The localized pullback datum of Section 03DG, for the finite locally free property.** Let
-> `(f, f♯) : (C, O) ⟶ (D, O')` be a morphism of ringed sites whose underlying functor `u : D ⥤ C`
-> is left exact, let `M` be a sheaf of `O'`-modules and let `W` be an object of `D` on which `M`
-> is finite free, that is, on which `M|_W` is a coproduct of finitely many copies of `O'_W`.  Then
-> `(f^*M)|_{u(W)}` is a coproduct of as many copies of `O_{u(W)}`.
->
-> The three pieces of the localized pullback datum are what the transport consumes: pullback along
-> the localized morphism of ringed topoi of Stacks 04J0 preserves colimits, carries `O'_W` to
-> `O_{u(W)}`, and carries `M|_W` to `(f^*M)|_{u(W)}`.  None of them mentions a property of
-> modules; the property enters only through
-> `Stacks.Sheaves.LocalizedPullback.isFiniteFree_map`, which is the statement that finite freeness
-> is expressed by a colimit.
+> **Being free is intrinsic**, the example of Section 03DG.  The pullback of a free module is
+> free by Stacks 03DF, and freeness does not distinguish isomorphic modules.
 
 ```lean
-theorem isFiniteFree_over_pullbackTopos (W : Y.C)
-    (h : _root_.SheafOfModules.IsFiniteFree ((Stacks.SheafOfModules.Tensor.ringSheaf Y.O).over W)
-      (M.over W)) :
-    _root_.SheafOfModules.IsFiniteFree
-      ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over (f.u.obj W))
-      ((f.toRingedToposSiteHom.pullbackTopos.obj M).over (f.u.obj W))
+theorem isIntrinsic_isFree : ModuleProperty.IsIntrinsic.{w} fun _ F ↦ F.IsFree
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isFiniteLocallyFreeOnSite_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L590). The attribute's comment: “condition (3) verified for the finite locally free property: the pullback of a finite locally free module along a morphism of ringed sites presented by a left exact continuous functor is finite locally free”. References: EGA II (6.4.8), “more general”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L334). The attribute's comment: “each property of Definition 03DE is intrinsic: finite free”.
 
-> **The finite locally free clause of Stacks 03DO for a morphism of ringed sites presented by
-> a left exact continuous functor.** If a sheaf of `O'`-modules is finite locally free on the
-> site, so is its pullback along a morphism of ringed sites whose underlying functor is left
-> exact.  This is the clause of Stacks 03DO for Stacks 03DL (2).
->
-> Finite local freeness may be tested on a single family covering the final object, by Stacks 03DN
-> in the form `Stacks.SheafOfModules.isFiniteLocallyFreeOnSite_iff_exists_cover_isFiniteFree`.
-> Such a family `{W_i}` for `M` is carried to the family `{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.coversTop_mapObj`, and the finite freeness of `M|_{W_i}` is
-> carried to that of `(f^*M)|_{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.isFiniteFree_over_pullbackTopos`.
->
-> This is the case to which Stacks 03DO's own proof reduces the clause through Section 03DG; the
-> general statement, for an arbitrary morphism of ringed topoi, is
-> `AlgebraicGeometry.RingedToposHom.isFiniteLocallyFreeOnSite_pullbackModules`, which transports
-> this one along the two equivalences of ringed topoi that Stacks 03CR produces.
+> **Being finite free is intrinsic**, Definition 03DE (2), as Section 03DG asserts.
 
 ```lean
-theorem isFiniteLocallyFreeOnSite_pullbackTopos
-    (hM : SheafOfModules.IsFiniteLocallyFreeOnSite M) :
-    SheafOfModules.IsFiniteLocallyFreeOnSite
-      (f.toRingedToposSiteHom.pullbackTopos.obj M)
+theorem isIntrinsic_isFiniteFree : ModuleProperty.IsIntrinsic.{w}
+    fun X F ↦ SheafOfModules.IsFiniteFree (Stacks.SheafOfModules.Tensor.ringSheaf X.O) F
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isFree_over_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L618). The attribute's comment: “condition (3) of the method, for the locally free property: the datum needed to carry a free cofan along a pullback is the pullback along the localized morphism of ringed topoi of 04J0, and this is that transport”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isGeneratedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L343). The attribute's comment: “each property of Definition 03DE is intrinsic: generated by global sections”.
 
-> **The localized pullback datum of Section 03DG, for the locally free property.** Let
-> `(f, f♯) : (C, O) ⟶ (D, O')` be a morphism of ringed sites whose underlying functor `u : D ⥤ C`
-> is left exact, let `M` be a sheaf of `O'`-modules and let `W` be an object of `D` on which `M`
-> is free, that is, on which `M|_W` is a coproduct of copies of `O'_W`.  Then `(f^*M)|_{u(W)}` is
-> a coproduct of copies of `O_{u(W)}` indexed by the same type.
->
-> As for finite freeness, the three pieces of the localized pullback datum are what the transport
-> consumes, and the property enters only through
-> `Stacks.Sheaves.LocalizedPullback.isFree_map`.
+> **Being generated by global sections is intrinsic**, Definition 03DE (3), as Section 03DG
+> asserts.
 
 ```lean
-theorem isFree_over_pullbackTopos (W : Y.C)
-    (h : (M.over W).IsFree) :
-    ((f.toRingedToposSiteHom.pullbackTopos.obj M).over (f.u.obj W)).IsFree
+theorem isIntrinsic_isGeneratedByGlobalSections :
+    ModuleProperty.IsIntrinsic.{w} fun _ F ↦ F.IsGeneratedByGlobalSections
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isLocallyFreeOnSite_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 650](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L650). The attribute's comment: “condition (3) verified for the locally free property: the pullback of a locally free module along a morphism of ringed sites presented by a left exact continuous functor is locally free”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isGeneratedByGlobalSectionsOfCard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L352). The attribute's comment: “each property of Definition 03DE is intrinsic: generated by r global sections”.
 
-> **The locally free clause of Stacks 03DO for a morphism of ringed sites presented by a left
-> exact continuous functor.** If a sheaf of `O'`-modules is locally free on the site, so is its
-> pullback along a morphism of ringed sites whose underlying functor is left exact.  This is the
-> clause of Stacks 03DO for Stacks 03DL (1).
->
-> Local freeness may be tested on a single family covering the final object, by Stacks 03DN in the
-> form `Stacks.SheafOfModules.isLocallyFreeOnSite_iff_exists_cover_isFree`.  Such a family `{W_i}`
-> for `M` is carried to the family `{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.coversTop_mapObj`, and the freeness of `M|_{W_i}` is carried to
-> that of `(f^*M)|_{u(W_i)}` by `Stacks.Sheaves.LocalizedPullback.isFree_over_pullbackTopos`.
->
-> This is the case to which Stacks 03DO's own proof reduces the clause through Section 03DG; the
-> general statement, for an arbitrary morphism of ringed topoi, is
-> `AlgebraicGeometry.RingedToposHom.isLocallyFreeOnSite_pullbackModules`, which transports this
-> one along the two equivalences of ringed topoi that Stacks 03CR produces.
+> **Being generated by `r` global sections is intrinsic**, Definition 03DE (4), as
+> Section 03DG asserts.
 
 ```lean
-theorem isLocallyFreeOnSite_pullbackTopos (hM : SheafOfModules.IsLocallyFreeOnSite M) :
-    SheafOfModules.IsLocallyFreeOnSite
-      (f.toRingedToposSiteHom.pullbackTopos.obj M)
+theorem isIntrinsic_isGeneratedByGlobalSectionsOfCard (r : ℕ) :
+    ModuleProperty.IsIntrinsic.{w} fun _ F ↦ F.IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.generatingSectionsPullbackTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L675). The attribute's comment: “condition (3) of the method, for the locally generated property: the datum needed to carry a generating family of global sections along a pullback is the pullback along the localized morphism of ringed topoi of 04J0, and this is that transport”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_exists_isGeneratedByGlobalSectionsOfCard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L363). The attribute's comment: “each property of Definition 03DE is intrinsic: generated by finitely many global sections”.
 
-> **The localized pullback datum of Section 03DG, for the locally generated property.**
-> Generating global sections of `M|_W` are carried by the pullback along the localized morphism of
-> ringed topoi of Stacks 04J0 to generating global sections of `(f^*M)|_{u(W)}`, indexed by the
-> same type.
->
-> The transport is Mathlib's `SheafOfModules.GeneratingSections.map`, whose two hypotheses are
-> again pieces of the localized pullback datum: colimit preservation and the identification of the
-> two structure sheaves.  The identification of the transported module with `(f^*M)|_{u(W)}` is
-> `Stacks.Sheaves.LocalizedPullback.localizedPullbackOverIso`.
+> **Being generated by finitely many global sections is intrinsic**, Definition 03DE (5), as
+> Section 03DG asserts.
 
 ```lean
-def generatingSectionsPullbackTopos (W : Y.C) (σ : (M.over W).GeneratingSections) :
-    ((f.toRingedToposSiteHom.pullbackTopos.obj M).over (f.u.obj W)).GeneratingSections
+theorem isIntrinsic_exists_isGeneratedByGlobalSectionsOfCard :
+    ModuleProperty.IsIntrinsic.{w} fun _ F ↦ ∃ r : ℕ, F.IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`Stacks.Sheaves.LocalizedPullback.isLocallyGeneratedBySectionsOnSite_pullbackTopos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocalizedPullbackQuasicoherent.lean#L713). The attribute's comment: “condition (3) verified for the locally generated property: the pullback of a module locally generated by sections along a morphism of ringed sites presented by a left exact continuous functor is locally generated by sections”.
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isPresentedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L374). The attribute's comment: “each property of Definition 03DE is intrinsic: global presentation”.
 
-> **The locally generated clause of Stacks 03DO for a morphism of ringed sites presented by a
-> left exact continuous functor.** If a sheaf of `O'`-modules is locally generated by sections, so
-> is its pullback along a morphism of ringed sites whose underlying functor is left exact.  This is
-> the clause of Stacks 03DO for Stacks 03DL (3).
->
-> Local generation by sections may be tested on a single family covering the final object, by
-> Stacks 03DN in the form
-> `Stacks.SheafOfModules.isLocallyGeneratedBySectionsOnSite_iff_exists_cover_generatingSections`.
-> Such a family `{W_i}` for `M` is carried to the family `{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.coversTop_mapObj`, and the generating sections of `M|_{W_i}`
-> to those of `(f^*M)|_{u(W_i)}` by
-> `Stacks.Sheaves.LocalizedPullback.generatingSectionsPullbackTopos`.
->
-> This is the case to which Stacks 03DO's own proof reduces the clause through Section 03DG; the
-> general statement, for an arbitrary morphism of ringed topoi, is
-> `AlgebraicGeometry.RingedToposHom.isLocallyGeneratedBySectionsOnSite_pullbackModules`, which
-> transports this one along the two equivalences of ringed topoi that Stacks 03CR produces.  The
-> clause for local generation by a fixed number `r` of sections, Stacks 03DL (4), is proved for an
-> arbitrary morphism of ringed topoi in
-> `Stacks.Sheaves.LocalGeneration.pullbackModules_isLocallyGeneratedByOnSite`.
+> **Having a global presentation is intrinsic**, Definition 03DE (6), as Section 03DG
+> asserts.
 
 ```lean
-theorem isLocallyGeneratedBySectionsOnSite_pullbackTopos
-    (hM : SheafOfModules.IsLocallyGeneratedBySectionsOnSite M) :
-    SheafOfModules.IsLocallyGeneratedBySectionsOnSite
-      (f.toRingedToposSiteHom.pullbackTopos.obj M)
+theorem isIntrinsic_isPresentedByGlobalSections :
+    ModuleProperty.IsIntrinsic.{w} fun _ F ↦ F.IsPresentedByGlobalSections
+```
+
+**`AlgebraicGeometry.RingedTopos.ModuleProperty.isIntrinsic_isFinitelyPresentedByGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/IntrinsicProperty.lean#L383). The attribute's comment: “each property of Definition 03DE is intrinsic: finite global presentation”.
+
+> **Having a finite global presentation is intrinsic**, Definition 03DE (7), as Section 03DG
+> asserts.
+
+```lean
+theorem isIntrinsic_isFinitelyPresentedByGlobalSections :
+    ModuleProperty.IsIntrinsic.{w} fun _ F ↦ F.IsFinitelyPresentedByGlobalSections
 ```
 
 ## Depends on
@@ -234,4 +140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.18, Tag 03DG](https://stacks.math.columbia.edu/tag/03DG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

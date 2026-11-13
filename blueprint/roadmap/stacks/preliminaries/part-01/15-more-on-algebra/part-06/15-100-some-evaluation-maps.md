@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.100 Some evaluation maps
 
-Section 15.100 of the Stacks Project, [Tag 0ATJ](https://stacks.math.columbia.edu/tag/0ATJ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.100 of the Stacks Project, [Tag 0ATJ](https://stacks.math.columbia.edu/tag/0ATJ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A68, a lemma
 
 [Tag 0A68](https://stacks.math.columbia.edu/tag/0A68) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.evaluationToIteratedDerivedHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean#L184).
+**`StacksDraft.DerivedHom.evaluationToIteratedDerivedHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean#L184).
 
 > **Stacks 0A68.** The canonical evaluation morphism
 > `RHom_R(L, M) ⊗ᴸ_R K ⟶ RHom_R(RHom_R(K, L), M)` is an isomorphism if `K` is
@@ -37,7 +37,7 @@ public theorem evaluationToIteratedDerivedHom_isIso
 
 [Tag 0A69](https://stacks.math.columbia.edu/tag/0A69) in the Stacks Project.
 
-**`StacksDraft.DerivedHom.evaluationToIteratedDerivedHom_isIso_of_truncLE_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean#L583).
+**`StacksDraft.DerivedHom.evaluationToIteratedDerivedHom_isIso_of_truncLE_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/Evaluation/Iterated.lean#L583).
 
 > **Stacks 0A69.** The canonical evaluation morphism
 > `RHom_R(L, M) ⊗ᴸ_R K ⟶ RHom_R(RHom_R(K, L), M)` is an isomorphism if `L` and `M`
@@ -67,7 +67,7 @@ public theorem evaluationToIteratedDerivedHom_isIso_of_truncLE_pseudoCoherent
 
 [Tag 0ATK](https://stacks.math.columbia.edu/tag/0ATK) in the Stacks Project.
 
-**`Stacks.DerivedTensorHomDiagonal.isIso_derivedTensorHomDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/TensorHom/PerfectAndCurrying.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/Evaluation/TensorHom/PerfectAndCurrying.lean#L306). References: SGA 6 I (7.6), “affine case, E perfect”.
+**`Stacks.DerivedTensorHomDiagonal.isIso_derivedTensorHomDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/TensorHom/PerfectAndCurrying.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/Evaluation/TensorHom/PerfectAndCurrying.lean#L329). References: SGA 6 I (7.6), “affine case, E perfect”.
 
 > **Stacks 0ATK.** The canonical derived tensor--Hom diagonal
 > `K ⊗ᴸ RHom(M, L) ⟶ RHom(M, K ⊗ᴸ L)` is an isomorphism if `M` is perfect, if `K` is perfect, or
@@ -91,7 +91,7 @@ public theorem isIso_derivedTensorHomDiagonal
 
 [Tag 0BYQ](https://stacks.math.columbia.edu/tag/0BYQ) in the Stacks Project.
 
-**`Stacks.DerivedHom.KFlatHomComplex.homComplex_kFlat_and_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/KFlat.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/Evaluation/KFlat.lean#L395).
+**`Stacks.DerivedHom.KFlatHomComplex.homComplex_kFlat_and_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/Evaluation/KFlat.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/Evaluation/KFlat.lean#L395).
 
 > **Stacks 0BYQ.** Let `P` be a bounded above cochain complex of projective `R`-modules which
 > is perfect as an object of the derived category `D(R)`, and let `K` be a K-flat complex of
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.100, Tag 0ATJ](https://stacks.math.columbia.edu/tag/0ATJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

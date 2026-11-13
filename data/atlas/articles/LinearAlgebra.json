@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "LinearAlgebra/bilinear-and-quadratic-forms/dual-lattices/dual-submodule-dual-submodule-of-is-latt.md",
@@ -2385,7 +2385,7 @@
    "declaration": "MathlibExt.Analysis.InnerProductSpace.HoffmanWielandtWanted.hoffman_wielandt_hermitian",
    "lean": {
     "file": "MathlibExt/Analysis/InnerProductSpace/HoffmanWielandt.lean",
-    "line": 219,
+    "line": 208,
     "kind": "theorem",
     "sorry": false
    }
@@ -2997,7 +2997,7 @@
    "declaration": "Matrix.IsNonsingularMMatrix.inv_nonneg",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 299,
+    "line": 328,
     "kind": "theorem",
     "sorry": false
    }
@@ -3009,7 +3009,7 @@
    "declaration": "Matrix.inv_one_sub_nonneg",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 142,
+    "line": 171,
     "kind": "theorem",
     "sorry": false
    }
@@ -3021,7 +3021,7 @@
    "declaration": "Matrix.IsHurwitz",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 63,
+    "line": 66,
     "kind": "def",
     "sorry": false
    }
@@ -3033,7 +3033,7 @@
    "declaration": "Matrix.IsNonsingularMMatrix",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 72,
+    "line": 75,
     "kind": "def",
     "sorry": false
    }
@@ -3045,7 +3045,7 @@
    "declaration": "Matrix.isUnit_one_sub_of_spectralRadius_lt_one",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 120,
+    "line": 149,
     "kind": "theorem",
     "sorry": false
    }
@@ -3057,7 +3057,7 @@
    "declaration": "Matrix.IsNonsingularMMatrix.isUnit",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 288,
+    "line": 317,
     "kind": "theorem",
     "sorry": false
    }
@@ -3069,7 +3069,7 @@
    "declaration": "Matrix.IsZMatrix",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 67,
+    "line": 70,
     "kind": "def",
     "sorry": false
    }
@@ -3081,7 +3081,7 @@
    "declaration": "Matrix.le_spectralRadius_of_smul_le_mulVec",
    "lean": {
     "file": "MathlibExt/LinearAlgebra/Matrix/MMatrix.lean",
-    "line": 168,
+    "line": 197,
     "kind": "theorem",
     "sorry": false
    }

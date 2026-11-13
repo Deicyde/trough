@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.3 Cycles relative to fields
 
-Section 62.3 of the Stacks Project, [Tag 0H4E](https://stacks.math.columbia.edu/tag/0H4E). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.3 of the Stacks Project, [Tag 0H4E](https://stacks.math.columbia.edu/tag/0H4E). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H4E, the section
 
 [Tag 0H4E](https://stacks.math.columbia.edu/tag/0H4E) in the Stacks Project.
 
-**`Stacks.Chow.injective_baseChangeCyclePullback_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Injective.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Injective.lean#L169). The attribute's comment: “the base change map on cycle groups along a field extension, and its injectivity”.
+**`Stacks.Chow.injective_baseChangeCyclePullback_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Injective.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Injective.lean#L169). The attribute's comment: “the base change map on cycle groups along a field extension, and its injectivity”.
 
 > **Stacks Project, Section 0H4E.** For a scheme `X` locally of finite type over a field `k`
 > and an arbitrary extension `K/k` of fields, the base-change homomorphism
@@ -32,7 +32,7 @@ theorem injective_baseChangeCyclePullback_fieldExtension (k K : Type u) [Field k
 
 [Tag 0H4F](https://stacks.math.columbia.edu/tag/0H4F) in the Stacks Project.
 
-**`Stacks.Chow.componentMultiplicity_baseChange_eq_one_or_char_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BaseFieldExtension.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BaseFieldExtension.lean#L430).
+**`Stacks.Chow.componentMultiplicity_baseChange_eq_one_or_char_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BaseFieldExtension.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BaseFieldExtension.lean#L430).
 
 > The multiplicity of an irreducible component of the base change of an integral scheme
 > locally of finite type over a field along a field extension is one or, in positive
@@ -55,7 +55,7 @@ theorem componentMultiplicity_baseChange_eq_one_or_char_pow
 
 [Tag 0H4G](https://stacks.math.columbia.edu/tag/0H4G) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeCyclePullback_perfectClosure_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean#L309). The attribute's comment: “injectivity”.
+**`Stacks.Chow.baseChangeCyclePullback_perfectClosure_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean#L309). The attribute's comment: “injectivity”.
 
 > For an algebraic scheme `X` over a field `k`, the base-change homomorphism
 > `Z_r(X) ⟶ Z_r(X_{k^perf})` to the perfect closure of `k` is injective.
@@ -68,7 +68,7 @@ theorem baseChangeCyclePullback_perfectClosure_injective (k : Type u) [Field k] 
       (baseChangeCyclePullback (perfectClosureBaseChangeSituation k) f (r : ℤ))
 ```
 
-**`Stacks.Chow.isElementPowerTorsion_cokernel_baseChangeCyclePullback_perfectClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean#L322). The attribute's comment: “p-power torsion cokernel”.
+**`Stacks.Chow.isElementPowerTorsion_cokernel_baseChangeCyclePullback_perfectClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PerfectClosureCycles.lean#L322). The attribute's comment: “p-power torsion cokernel”.
 
 > For an algebraic scheme `X` over a field `k` of characteristic `p > 0`, the cokernel of the
 > base-change homomorphism `Z_r(X) ⟶ Z_r(X_{k^perf})` to the perfect closure of `k` is a `p`-power
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.3, Tag 0H4E](https://stacks.math.columbia.edu/tag/0H4E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

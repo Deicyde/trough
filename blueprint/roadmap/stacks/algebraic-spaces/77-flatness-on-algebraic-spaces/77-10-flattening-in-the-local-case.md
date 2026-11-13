@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.10 Flattening in the local case
 
-Section 77.10 of the Stacks Project, [Tag 0CWN](https://stacks.math.columbia.edu/tag/0CWN). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.10 of the Stacks Project, [Tag 0CWN](https://stacks.math.columbia.edu/tag/0CWN). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CWP, a lemma
 
 [Tag 0CWP](https://stacks.math.columbia.edu/tag/0CWP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L406). The attribute's comment: “the closed flattening subscheme, for an arbitrary subset E of the closed fibre: nothing is assumed beyond the source's hypotheses”.
+**`AlgebraicGeometry.Space.exists_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L406). The attribute's comment: “the closed flattening subscheme, for an arbitrary subset E of the closed fibre: nothing is assumed beyond the source's hypotheses”.
 
 > **Stacks Project, Tag 0CWP.** Let `S = Spec A` be the spectrum of a henselian local ring with
 > closed point `s`, let `f : X ⟶ S` be a morphism of algebraic spaces which is locally of finite
@@ -61,7 +61,7 @@ theorem exists_idealSheafData_isFlatOverAtPoint_iff_factors [HenselianLocalRing 
               (BigFppfOver.toScheme B (Spec (.of A)) hA).map g)
 ```
 
-**`AlgebraicGeometry.Space.exists_finitePresentation_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L460). The attribute's comment: “the finite-presentation assertion, for E closed and quasi-compact in |X\_s|: nothing is assumed beyond the source's hypotheses”.
+**`AlgebraicGeometry.Space.exists_finitePresentation_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L460). The attribute's comment: “the finite-presentation assertion, for E closed and quasi-compact in |X\_s|: nothing is assumed beyond the source's hypotheses”.
 
 > **Stacks Project, Tag 0CWP, the final assertion.** In the situation of
 > `AlgebraicGeometry.Space.exists_idealSheafData_isFlatOverAtPoint_iff_factors`, if moreover
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.10, Tag 0CWN](https://stacks.math.columbia.edu/tag/0CWN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

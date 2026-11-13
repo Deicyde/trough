@@ -8,7 +8,7 @@ proof: formalized
 
 # 33.7 Geometrically connected schemes
 
-Section 33.7 of the Stacks Project, [Tag 0361](https://stacks.math.columbia.edu/tag/0361). 19 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.7 of the Stacks Project, [Tag 0361](https://stacks.math.columbia.edu/tag/0361). 19 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0362, a definition
 
@@ -16,13 +16,13 @@ Section 33.7 of the Stacks Project, [Tag 0361](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.GeometricallyConnected`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.GeometricallyConnected#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L49) (StacksFrontier): “geometrically connected, for a morphism; the tag is the case of `X ⟶ Spec k`”. References: EGA III (4.3.4); EGA IV (4.5.2), “partial”; SGA 1 IX (3.4).
+- [`AlgebraicGeometry.GeometricallyConnected`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.GeometricallyConnected#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L49) (StacksFrontier): “geometrically connected, for a morphism; the tag is the case of `X ⟶ Spec k`”. References: EGA III (4.3.4); EGA IV (4.5.2), “partial”; SGA 1 IX (3.4).
 
 ## Tag 054N, a lemma
 
 [Tag 054N](https://stacks.math.columbia.edu/tag/054N) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_iff_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedBaseChange.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedBaseChange.lean#L40).
+**`AlgebraicGeometry.geometricallyConnected_iff_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedBaseChange.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedBaseChange.lean#L40).
 
 > **Stacks Project, Tag 054N.** A scheme over a field is geometrically connected if and only if
 > its base change along a field extension is geometrically connected.
@@ -40,7 +40,7 @@ public theorem geometricallyConnected_iff_baseChange_fieldExtension
 
 [Tag 0385](https://stacks.math.columbia.edu/tag/0385) in the Stacks Project.
 
-**`AlgebraicGeometry.pullback_snd_connectedComponentsMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedProductProjection.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedProductProjection.lean#L64).
+**`AlgebraicGeometry.pullback_snd_connectedComponentsMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedProductProjection.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedProductProjection.lean#L64).
 
 > **Stacks 0385.** Let `k` be a field and let `X`, `Y` be schemes over `k`, presented by
 > their structure maps `f : X ⟶ Spec k` and `g : Y ⟶ Spec k`. If `X` is geometrically connected
@@ -58,7 +58,7 @@ public theorem pullback_snd_connectedComponentsMap_bijective
 
 [Tag 0386](https://stacks.math.columbia.edu/tag/0386) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_spec_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedAffine.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedAffine.lean#L34).
+**`AlgebraicGeometry.geometricallyConnected_spec_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedAffine.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedAffine.lean#L34).
 
 > An affine scheme is geometrically connected over a field if and only if its coordinate
 > algebra is geometrically connected over that field.
@@ -74,7 +74,7 @@ public theorem geometricallyConnected_spec_iff (k A : Type u) [Field k] [CommRin
 
 [Tag 0363](https://stacks.math.columbia.edu/tag/0363) in the Stacks Project.
 
-**`AlgebraicGeometry.baseChange_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean#L60). The attribute's comment: “bijection on connected components”. References: EGA III (4.3.4), “special case”; EGA IV (4.4.1), “special case”; EGA IV (4.5.15), “special case”; EGA IV (4.5.21), “more general”; EGA IV (4.5.6), “(i), special case”; SGA 3 VIA (4.1), “special case”.
+**`AlgebraicGeometry.baseChange_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean#L60). The attribute's comment: “bijection on connected components”. References: EGA III (4.3.4), “special case”; EGA IV (4.4.1), “special case”; EGA IV (4.5.15), “special case”; EGA IV (4.5.21), “more general”; EGA IV (4.5.6), “(i), special case”; SGA 3 VIA (4.1), “special case”.
 
 > **Stacks Project, Tag 0363.** Base change along any extension of a separably closed
 > field induces a bijection on the connected components of a scheme.
@@ -88,7 +88,7 @@ public theorem baseChange_connectedComponents_bijective
         (Spec.map (CommRingCat.ofHom (algebraMap k k')))).continuous.connectedComponentsMap
 ```
 
-**`AlgebraicGeometry.geometricallyConnected_iff_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean#L77). The attribute's comment: “geometric connectedness”. References: EGA IV (4.4.4), “more general”; EGA IV (8.4.5), “special case”.
+**`AlgebraicGeometry.geometricallyConnected_iff_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparablyClosed.lean#L77). The attribute's comment: “geometric connectedness”. References: EGA IV (4.4.4), “more general”; EGA IV (8.4.5), “special case”.
 
 > **Stacks Project, Tag 0363.** Over a separably closed field, a scheme is geometrically
 > connected if and only if its underlying topological space is connected.
@@ -104,7 +104,7 @@ public theorem geometricallyConnected_iff_connectedSpace
 
 [Tag 0387](https://stacks.math.columbia.edu/tag/0387) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_iff_connectedSpace_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparableClosure.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparableClosure.lean#L58).
+**`AlgebraicGeometry.geometricallyConnected_iff_connectedSpace_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparableClosure.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedSeparableClosure.lean#L58).
 
 > A scheme over a field is geometrically connected if and only if its base change to a
 > separable algebraic closure is connected.
@@ -123,7 +123,7 @@ public theorem geometricallyConnected_iff_connectedSpace_baseChange
 
 [Tag 0388](https://stacks.math.columbia.edu/tag/0388) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fg_subalgebra_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean#L231). References: EGA IV (8.2.11), “X\_A over f.g. subalgs”.
+**`AlgebraicGeometry.exists_fg_subalgebra_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean#L231). References: EGA IV (8.2.11), “X\_A over f.g. subalgs”.
 
 > **[Stacks, Tag 0388].** Let `X` be a scheme over a commutative ring `k` and let `A` be a
 > `k`-algebra. A quasi-compact open `V` of the base change `X_A` is the inverse image of a
@@ -158,13 +158,13 @@ public theorem exists_fg_subalgebra_descending_isCompact_open
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.galoisActionOnBaseChange`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L128) (StacksFrontier): “For a Galois extension `kbar/k` the group `kbar ≃ₐ[k] kbar` is `Gal(kbar/k)`, and `galoisActionOnBaseChange` is the canonical action of its opposite group on `X_kbar`, induced by the automorphisms `Spec σ` of `Spec kbar` through the defining fibre product. The opposite group appears because `Spec σ ≫ Spec τ = Spec (τ ∘ σ)`.”.
+- [`AlgebraicGeometry.galoisActionOnBaseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L128) (StacksFrontier): “For a Galois extension `kbar/k` the group `kbar ≃ₐ[k] kbar` is `Gal(kbar/k)`, and `galoisActionOnBaseChange` is the canonical action of its opposite group on `X_kbar`, induced by the automorphisms `Spec σ` of `Spec kbar` through the defining fibre product. The opposite group appears because `Spec σ ≫ Spec τ = Spec (τ ∘ σ)`.”.
 
 ## Tag 04KU, a lemma
 
 [Tag 04KU](https://stacks.math.columbia.edu/tag/04KU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_subextension_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean#L407). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_finite_subextension_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean#L402). The attribute's comment: “part (1)”.
 
 > A quasi-compact open in the base change of a scheme to an algebraic extension is pulled back
 > from a quasi-compact open after a finite intermediate extension.
@@ -184,7 +184,7 @@ public theorem exists_finite_subextension_descending_isCompact_open
           V = p ⁻¹ᵁ V'
 ```
 
-**`AlgebraicGeometry.exists_open_subgroup_fixing_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean#L483). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_open_subgroup_fixing_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpen.lean#L478). The attribute's comment: “part (2)”.
 
 > A quasi-compact open in the base change of a scheme to a Galois extension is fixed by an open
 > subgroup of the Galois group.
@@ -208,7 +208,7 @@ public theorem exists_open_subgroup_fixing_isCompact_open
 
 [Tag 038B](https://stacks.math.columbia.edu/tag/038B) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_closed_subset_with_preimage_eq_of_galois_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/GaloisInvariantClosed.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/GaloisInvariantClosed.lean#L511).
+**`AlgebraicGeometry.exists_closed_subset_with_preimage_eq_of_galois_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/GaloisInvariantClosed.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/GaloisInvariantClosed.lean#L510).
 
 > **Stacks Project, Tag 038B.** A closed subset of a scheme after base change by a
 > Galois field extension descends if it is invariant under the Galois group.
@@ -229,7 +229,7 @@ public theorem exists_closed_subset_with_preimage_eq_of_galois_invariant
 
 [Tag 0389](https://stacks.math.columbia.edu/tag/0389) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_iff_forall_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedFiniteSeparable.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedFiniteSeparable.lean#L193). References: EGA IV (8.4.5), “more general”; EGA IV (4.5.17), “more general”.
+**`AlgebraicGeometry.geometricallyConnected_iff_forall_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedFiniteSeparable.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedFiniteSeparable.lean#L193). References: EGA IV (8.4.5), “more general”; EGA IV (4.5.17), “more general”.
 
 > A scheme over a field is geometrically connected if and only if its base change to every
 > finite separable extension is connected.
@@ -249,7 +249,7 @@ public theorem geometricallyConnected_iff_forall_finite_separable
 
 [Tag 038C](https://stacks.math.columbia.edu/tag/038C) in the Stacks Project.
 
-**`AlgebraicGeometry.not_connectedSpace_of_galois_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGalois.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGalois.lean#L117).
+**`AlgebraicGeometry.not_connectedSpace_of_galois_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGalois.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGalois.lean#L117).
 
 > Let `kbar/k` be a possibly infinite Galois extension and let `T → X` be a morphism of
 > schemes over `k`. If `T_kbar` is connected and `X_kbar` is disconnected, then `X` is
@@ -270,7 +270,7 @@ public theorem not_connectedSpace_of_galois_baseChange
 
 [Tag 056R](https://stacks.math.columbia.edu/tag/056R) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_of_comp_of_connectedSpace`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedCriterion.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedCriterion.lean#L41).
+**`AlgebraicGeometry.geometricallyConnected_of_comp_of_connectedSpace`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedCriterion.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedCriterion.lean#L41).
 
 > If a connected scheme over a field admits a morphism over that field from a geometrically
 > connected scheme, then it is geometrically connected.
@@ -286,7 +286,7 @@ public lemma geometricallyConnected_of_comp_of_connectedSpace
 
 [Tag 04KV](https://stacks.math.columbia.edu/tag/04KV) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyConnected_of_connectedSpace_of_algebraicClosure_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean#L47). The attribute's comment: “point with algebraically closed base field”.
+**`AlgebraicGeometry.geometricallyConnected_of_connectedSpace_of_algebraicClosure_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean#L47). The attribute's comment: “point with algebraically closed base field”.
 
 > **Stacks Project, Tag 04KV.** A connected scheme over a field is geometrically
 > connected if the field is algebraically closed in the residue field of one of
@@ -304,7 +304,7 @@ public theorem geometricallyConnected_of_connectedSpace_of_algebraicClosure_eq_b
     GeometricallyConnected f
 ```
 
-**`AlgebraicGeometry.geometricallyConnected_of_connectedSpace_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean#L100). The attribute's comment: “rational-point consequence”. References: SGA 3 VIA (2.1.2), “Y = Spec of field ext”.
+**`AlgebraicGeometry.geometricallyConnected_of_connectedSpace_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedPoint.lean#L100). The attribute's comment: “rational-point consequence”. References: SGA 3 VIA (2.1.2), “Y = Spec of field ext”.
 
 > **Stacks Project, Tag 04KV, rational-point consequence.** A connected scheme
 > over a field with a rational point is geometrically connected.
@@ -322,13 +322,13 @@ public theorem geometricallyConnected_of_connectedSpace_of_section
 
 Declarations registered for the tag:
 
-- [`Continuous.preimage_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.preimage_connectedComponent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L46) (StacksFrontier): “for the continuous map X\_K → X; stated for any continuous map”.
+- [`Continuous.preimage_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.preimage_connectedComponent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L46) (StacksFrontier): “for the continuous map X\_K → X; stated for any continuous map”.
 
 ## Tag 07VM, a lemma
 
 [Tag 07VM](https://stacks.math.columbia.edu/tag/07VM) in the Stacks Project.
 
-**`AlgebraicGeometry.baseChange_image_connectedComponent_eq_connectedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFiniteExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFiniteExtension.lean#L98). References: EGA IV (4.4.1), “partial, special case”; SGA 3 VIA (2.4.1), “partial”.
+**`AlgebraicGeometry.baseChange_image_connectedComponent_eq_connectedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFiniteExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFiniteExtension.lean#L98). References: EGA IV (4.4.1), “partial, special case”; SGA 3 VIA (2.4.1), “partial”.
 
 > **Stacks Project, Tag 07VM.** Let `K/k` be a finite extension of fields and let `X` be a
 > scheme over `k`. The projection `X_K → X` sends every connected component of `X_K` onto a
@@ -349,7 +349,7 @@ public theorem baseChange_image_connectedComponent_eq_connectedComponent
 
 [Tag 04PZ](https://stacks.math.columbia.edu/tag/04PZ) in the Stacks Project.
 
-**`AlgebraicGeometry.image_connectedComponent_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFieldExtension.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFieldExtension.lean#L443). References: EGA IV (4.4.1), “partial”; SGA 3 VIA (2.4.1), “partial”; SGA 3 VIB (1.4.1), “partial”.
+**`AlgebraicGeometry.image_connectedComponent_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFieldExtension.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedComponentsFieldExtension.lean#L444). References: EGA IV (4.4.1), “partial”; SGA 3 VIA (2.4.1), “partial”; SGA 3 VIB (1.4.1), “partial”.
 
 > **Stacks Project, Tag 04PZ** (Gabber). Let `K/k` be an extension of fields -- not assumed
 > finite, algebraic or separable -- and let `X` be a scheme over `k`. The projection `X_K ⟶ X`
@@ -371,7 +371,7 @@ theorem image_connectedComponent_baseChange
 
 [Tag 038D](https://stacks.math.columbia.edu/tag/038D) in the Stacks Project.
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L95). The attribute's comment: “galois\_action\_on\_geometric\_connected\_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L95). The attribute's comment: “galois\_action\_on\_geometric\_connected\_components”.
 
 > The canonical action of the opposite Galois group on the connected components of a scheme
 > after base change. A component is sent to its image under the corresponding automorphism of the
@@ -383,7 +383,7 @@ public noncomputable def galoisActionOnGeometricConnectedComponents
     Action (Type u) (MulOpposite (S ≃ₐ[R] S))
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L175). The attribute's comment: “base\_extension\_compatibility”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L174). The attribute's comment: “base\_extension\_compatibility”.
 
 > Restriction of Galois automorphisms commutes with the canonical map on the connected
 > components of the two geometric base changes.
@@ -410,7 +410,7 @@ public theorem galoisActionOnGeometricConnectedComponents_baseChange
         (p.continuous.connectedComponentsMap C)
 ```
 
-**`AlgebraicGeometry.baseChangeComparison_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L222). The attribute's comment: “base\_extension\_compatibility”.
+**`AlgebraicGeometry.baseChangeComparison_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L221). The attribute's comment: “base\_extension\_compatibility”.
 
 > The canonical base-extension map is bijective on geometric connected components.
 
@@ -426,7 +426,7 @@ public theorem baseChangeComparison_connectedComponents_bijective
     Function.Bijective p.continuous.connectedComponentsMap
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_fixed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean#L318). The attribute's comment: “fixed\_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_fixed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean#L318). The attribute's comment: “fixed\_components”.
 
 > **Stacks Project, Tag 038D.** A connected component of the base change of `X` to a separable
 > algebraic closure `kbar` of `k` is fixed by the Galois action if and only if it is the inverse
@@ -450,7 +450,7 @@ public theorem galoisActionOnGeometricConnectedComponents_fixed_iff
 
 [Tag 038E](https://stacks.math.columbia.edu/tag/038E) in the Stacks Project.
 
-**`AlgebraicGeometry.finite_geometricConnectedComponents_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L100). The attribute's comment: “part (a)”.
+**`AlgebraicGeometry.finite_geometricConnectedComponents_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L100). The attribute's comment: “part (a)”.
 
 > Open connected components of the geometric base change of a quasi-compact scheme are
 > finite in number.
@@ -463,7 +463,7 @@ public theorem finite_geometricConnectedComponents_of_isOpen
     Finite (ConnectedComponents (galoisActionOnBaseChange k ksep X).V)
 ```
 
-**`AlgebraicGeometry.continuous_galoisActionOnGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L113). The attribute's comment: “part (b)”.
+**`AlgebraicGeometry.continuous_galoisActionOnGeometricConnectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L113). The attribute's comment: “part (b)”.
 
 > The absolute Galois action on open geometric connected components of a quasi-compact
 > scheme is continuous for the Krull topology.
@@ -482,7 +482,7 @@ public theorem continuous_galoisActionOnGeometricConnectedComponents
         ((galoisActionOnGeometricConnectedComponents k ksep X).ρ p.1).asHom p.2)
 ```
 
-**`AlgebraicGeometry.isOpen_geometricConnectedComponent_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L168). The attribute's comment: “finite type implies assumption (2)”.
+**`AlgebraicGeometry.isOpen_geometricConnectedComponent_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L168). The attribute's comment: “finite type implies assumption (2)”.
 
 > The geometric connected components of a scheme of finite type over a field are open.
 
@@ -495,7 +495,7 @@ public theorem isOpen_geometricConnectedComponent_of_finiteType
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.QuasiCompact.compactSpace_of_compactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.QuasiCompact.compactSpace_of_compactSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L50) (StacksFrontier): “finite type implies assumption (1)”. References: SGA 3 VIB (10.1), “Y is quasi-compact”; SGA 4 VI (1.14), “(i), special case”; SGA 4 VIII (5.1), “partial”.
+- [`AlgebraicGeometry.QuasiCompact.compactSpace_of_compactSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.QuasiCompact.compactSpace_of_compactSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisContinuity.lean#L50) (StacksFrontier): “finite type implies assumption (1)”. References: SGA 3 VIB (10.1), “Y is quasi-compact”; SGA 4 VI (1.14), “(i), special case”; SGA 4 VIII (5.1), “partial”.
 
 ## Depends on
 
@@ -504,4 +504,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.7, Tag 0361](https://stacks.math.columbia.edu/tag/0361)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.61 Applications of dimension theory
 
-Section 10.61 of the Stacks Project, [Tag 02IF](https://stacks.math.columbia.edu/tag/02IF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.61 of the Stacks Project, [Tag 02IF](https://stacks.math.columbia.edu/tag/02IF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02IG, a lemma
 
 [Tag 02IG](https://stacks.math.columbia.edu/tag/02IG) in the Stacks Project.
 
-**`PrimeSpectrum.infinite_of_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/DimensionTwoOpens.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/DimensionTwoOpens.lean#L129). References: EGA IV (10.5.1), “e) ⇒ f) for local B”.
+**`PrimeSpectrum.infinite_of_two_le_ringKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/DimensionTwoOpens.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/DimensionTwoOpens.lean#L129). References: EGA IV (10.5.1), “e) ⇒ f) for local B”.
 
 > A nonempty open subset of the spectrum of a Noetherian local domain of dimension at least
 > two is infinite.
@@ -29,7 +29,7 @@ public theorem infinite_of_two_le_ringKrullDim (R : Type*) [CommRing R] [IsNoeth
 
 [Tag 0ALV](https://stacks.math.columbia.edu/tag/0ALV) in the Stacks Project.
 
-**`Ring.krullDimLE_one_of_finite_primeSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/FinitePrimeSpectrum.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/FinitePrimeSpectrum.lean#L181).
+**`Ring.krullDimLE_one_of_finite_primeSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/KrullDimension/FinitePrimeSpectrum.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/KrullDimension/FinitePrimeSpectrum.lean#L181).
 
 > A Noetherian ring with finitely many primes has dimension at most `1`: every prime ideal is
 > either minimal or maximal.
@@ -44,7 +44,7 @@ public theorem krullDimLE_one_of_finite_primeSpectrum (R : Type*) [CommRing R]
 
 [Tag 0ALW](https://stacks.math.columbia.edu/tag/0ALW) in the Stacks Project.
 
-**`Algebra.FiniteType.krullDimLE_zero_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Artinian/FiniteType.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Artinian/FiniteType.lean#L580). The attribute's comment: “Items (1)-(8); (4) via 04MG's Hausdorff and totally disconnected conditions.”. References: EGA I (6.4.4), “affine case”.
+**`Algebra.FiniteType.krullDimLE_zero_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Artinian/FiniteType.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Artinian/FiniteType.lean#L618). The attribute's comment: “Items (1)-(8); (4) via 04MG's Hausdorff and totally disconnected conditions.”. References: EGA I (6.4.4), “affine case”.
 
 > **Zero-dimensional finite type algebras.** For an algebra `S` of finite type over an
 > Artinian ring `R` the following are equivalent: `S` has Krull dimension at most `0`; `S` has
@@ -71,7 +71,7 @@ public theorem krullDimLE_zero_tfae (R S : Type*) [CommRing R] [CommRing S] [Alg
 
 [Tag 00KX](https://stacks.math.columbia.edu/tag/00KX) in the Stacks Project.
 
-**`isJacobsonRing_of_forall_isMaximal_or_infinite_setOf_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Criteria.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Jacobson/Criteria.lean#L203). References: EGA IV (10.5.2), “sufficiency”; EGA IV (10.5.5), “(ii) sufficiency, affine”; EGA IV (10.4.3), “Artinian, PID clauses”.
+**`isJacobsonRing_of_forall_isMaximal_or_infinite_setOf_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Criteria.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Criteria.lean#L203). References: EGA IV (10.5.2), “sufficiency”; EGA IV (10.5.5), “(ii) sufficiency, affine”; EGA IV (10.4.3), “Artinian, PID clauses”.
 
 > A Noetherian ring in which every prime ideal is either maximal or contained in infinitely
 > many prime ideals is a Jacobson ring.
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.61, Tag 02IF](https://stacks.math.columbia.edu/tag/02IF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Matrix decompositions and linear systems: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html).
 
 Factorizations of matrices (singular value, polar, Schur and LU decompositions), Gaussian elimination and the solvability of linear systems, iterative methods and condition numbers.
 
@@ -24,7 +24,7 @@ iterates $J^k(x_0)$ converge to $x^*$ as $k \to \infty$.
 
 - G. H. Golub and C. F. Van Loan, Matrix Computations, 4th ed., Johns Hopkins Univ. Press, 2013, §11.2; https://en.wikipedia.org/wiki/Jacobi_method
 
-Stated but not proved: `MathlibExt.LinearAlgebra.Matrix.JacobiIterationWanted.jacobi_iteration_converges` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/Matrix/JacobiIterationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/Matrix/JacobiIterationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#jacobi-iteration-converges).
+Stated but not proved: `MathlibExt.LinearAlgebra.Matrix.JacobiIterationWanted.jacobi_iteration_converges` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/Matrix/JacobiIterationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/Matrix/JacobiIterationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#jacobi-iteration-converges).
 
 ## Rouché–Capelli theorem
 
@@ -41,7 +41,7 @@ membership of $b$ in the column span, which we compare before and after adjoinin
 
 - https://en.wikipedia.org/wiki/Rouch%C3%A9%E2%80%93Capelli_theorem.
 
-Formalized by `MetaMathlibExt.rouche_capelli`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RoucheCapelli.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/RoucheCapelli.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#rouche-capelli).
+Formalized by `MetaMathlibExt.rouche_capelli`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/RoucheCapelli.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/RoucheCapelli.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#rouche-capelli).
 
 ## Schur decomposition of a complex square matrix
 
@@ -54,7 +54,7 @@ on $n$ (that is, $T_{ij} = 0$ whenever $j < i$) such that $A = U T U^*$.
 
 - I. Schur, Uber charakteristische Wurzeln, Math. Ann. 66 (1909), 488-510, DOI 10.1007/BF01450045.
 
-Formalized by `Matrix.exists_unitaryGroup_isUpperTriangular`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Factorizations/Schur.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/Factorizations/Schur.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#exists-unitary-group-is-upper-triangular).
+Formalized by `Matrix.exists_unitaryGroup_isUpperTriangular`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/Factorizations/Schur.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/Factorizations/Schur.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html#exists-unitary-group-is-upper-triangular).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Matrix decompositions and linear systems](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/matrix-decompositions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/matrix-decompositions)

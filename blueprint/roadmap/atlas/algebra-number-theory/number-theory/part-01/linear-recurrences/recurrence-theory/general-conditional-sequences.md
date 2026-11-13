@@ -7,7 +7,7 @@ statement: formalized
 
 # General conditional sequences
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html).
 
 ## Decimation coefficients
 
@@ -24,7 +24,7 @@ $v_l^{(i)} = s_{lr+i} - A_{m-1} s_{(l-1)r+i} - \cdots - A_{m-l} s_i$.
 
 - Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1.
 
-Formalized by `MetaMathlibExt.decimationCoeff`, a definition declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff).
+Formalized by `MetaMathlibExt.decimationCoeff`, a definition declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff).
 
 ## Zeroth decimation coefficient
 
@@ -36,7 +36,7 @@ equals $s_i$.
 
 - Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1.
 
-Formalized by `MetaMathlibExt.decimationCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff-zero).
+Formalized by `MetaMathlibExt.decimationCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff-zero).
 
 ## First decimation coefficient
 
@@ -48,7 +48,7 @@ equals $s_{r+i} - A_{m-1} s_i$, where $A_{m-1}$ is read as $A_0$ when $m = 0$.
 
 - Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1.
 
-Formalized by `MetaMathlibExt.decimationCoeff_one`, a theorem declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff-one).
+Formalized by `MetaMathlibExt.decimationCoeff_one`, a theorem declared in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-coeff-one).
 
 ## Generating function of a decimated linear recurrence
 
@@ -74,7 +74,7 @@ $1 - A_1 x^r - A_0 x^{2r}$).
 
 - Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.decimation_generating_function` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-generating-function).
+Stated but not proved: `MetaMathlibExt.decimation_generating_function` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-generating-function).
 
 ## Binet formula for decimated linear recurrences
 
@@ -97,7 +97,7 @@ $\lfloor n/0 \rfloor = 0$.
 
 - Emre Güday and Murat Sahin, *Linear Recurrence Relations Satisfied by the General Conditional Sequences*, INTEGERS 26 (2026), Article A5, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.decimation_binet` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-binet).
+Stated but not proved: `MetaMathlibExt.decimation_binet` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralConditionalSequenceWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html#decimation-binet).
 
 ## Depends on
 
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: General conditional sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/general-conditional-sequences)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Schur and Rado theorems: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html).
 
 Monochromatic solutions of equations: Schur's theorem and Schur and modular Schur numbers, Rado's theorem and disjunctive Rado, monochromatic linear equations, monochromatic sums, sums of squares and products, and rainbow-free colourings of x−y=z^k.
 
@@ -25,7 +25,7 @@ that case is trivial, all parts being $0$.
 
 - Srashti Dwivedi and Amitabha Tripathi, "On the Two-Color Disjunctive Rado Number for the Equations `∑_{i=1}^{m-2} x_i + a x_{m-1} - x_m = c_j`, `j = 1, 2`", Proposition 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.DisjunctiveRadoWanted.exists_bounded_rep` is written with `theorem_wanted` in [WantedExt/Combinatorics/DisjunctiveRadoWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DisjunctiveRadoWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html#exists-bounded-rep).
+Stated but not proved: `MathlibExt.Combinatorics.DisjunctiveRadoWanted.exists_bounded_rep` is written with `theorem_wanted` in [WantedExt/Combinatorics/DisjunctiveRadoWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DisjunctiveRadoWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html#exists-bounded-rep).
 
 ## Schur's theorem
 
@@ -41,7 +41,7 @@ $\{1, \dots, S\}$ has no such solution.
 
 - https://en.wikipedia.org/wiki/Schur%27s_theorem.
 
-Formalized by `MetaMathlibExt.schur_ramsey`, a theorem declared in [MathlibExt/Combinatorics/SchurRamsey.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SchurRamsey.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html#schur-ramsey).
+Formalized by `MetaMathlibExt.schur_ramsey`, a theorem declared in [MathlibExt/Combinatorics/SchurRamsey.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SchurRamsey.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html#schur-ramsey).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Schur and Rado theorems](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems)

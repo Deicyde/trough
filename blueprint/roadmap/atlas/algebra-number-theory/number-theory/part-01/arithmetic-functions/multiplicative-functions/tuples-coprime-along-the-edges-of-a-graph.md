@@ -7,7 +7,7 @@ statement: formalized
 
 # Tuples coprime along the edges of a graph
 
-21 results, 7 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html).
+21 results, 7 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html).
 
 ## Coprimality indicator of a graph
 
@@ -20,7 +20,7 @@ natural number $1$ if $\gcd(n_i, n_j) = 1$ for every $(i, j) \in E$, and $0$ oth
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, display (def_delta_G).
 
-Formalized by `MetaMathlibExt.coprimalityIndicator`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator).
+Formalized by `MetaMathlibExt.coprimalityIndicator`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator).
 
 ## Coprimality indicator of the empty graph
 
@@ -32,7 +32,7 @@ $\delta_G(n) = 1$ for every $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, remark after display (def_delta_G).
 
-Formalized by `MetaMathlibExt.coprimalityIndicator_empty`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-empty).
+Formalized by `MetaMathlibExt.coprimalityIndicator_empty`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-empty).
 
 ## Coprimality indicator of a single edge: examples
 
@@ -44,7 +44,7 @@ $\delta_G(2, 3) = 1$ and $\delta_G(2, 4) = 0$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, display (def_delta_G).
 
-Formalized by `MetaMathlibExt.coprimalityIndicator_small_values`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-small-values).
+Formalized by `MetaMathlibExt.coprimalityIndicator_small_values`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-small-values).
 
 ## Number of coprime pairs
 
@@ -59,7 +59,7 @@ exactly when it is at least $r$, and $\beta = \beta_0$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, displays (def_beta), (def_beta_exact), (def_beta_least).
 
-Formalized by `MetaMathlibExt.coprimePairCount`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprime-pair-count).
+Formalized by `MetaMathlibExt.coprimePairCount`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprime-pair-count).
 
 ## Number of coprime pairs: examples
 
@@ -71,7 +71,7 @@ non-coprime.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, displays (def_beta) and (def_beta_exact).
 
-Formalized by `MetaMathlibExt.coprimePairCount_small_values`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprime-pair-count-small-values).
+Formalized by `MetaMathlibExt.coprimePairCount_small_values`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprime-pair-count-small-values).
 
 ## Coprimality density of a graph
 
@@ -92,7 +92,7 @@ every edge $(a, b)$ of $G$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 1, display (A_G_version).
 
-Formalized by `MetaMathlibExt.coprimalityDensity`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density).
+Formalized by `MetaMathlibExt.coprimalityDensity`, a definition declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density).
 
 ## The coprimality density of the empty graph is $1$
 
@@ -103,7 +103,7 @@ coprimality density of the graph on $\{1, \dots, k\}$ with no edges equals $1$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 1, display (A_G_version).
 
-Formalized by `MetaMathlibExt.coprimalityDensity_empty`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-empty).
+Formalized by `MetaMathlibExt.coprimalityDensity_empty`, a theorem declared in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-empty).
 
 ## Asymptotic count of tuples coprime along the edges of a graph
 
@@ -120,7 +120,7 @@ $$\Bigl|\sum_{n \in \{1, \dots, N\}^k} \delta_G(n) - A_G N^k\Bigr| \le C N^{k-1}
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 1 (`jis-2024-24.8.5-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.coprimality_graph_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-graph-count-asymp).
+Stated but not proved: `MetaMathlibExt.coprimality_graph_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-graph-count-asymp).
 
 ## Hu's independent-set formula for the coprimality density
 
@@ -138,7 +138,7 @@ the product running over all primes $p$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 1 (`jis-2024-24.8.5-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_independent_set_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-independent-set-p).
+Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_independent_set_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-independent-set-p).
 
 ## Multiplicativity of the coprimality indicator
 
@@ -152,7 +152,7 @@ $\delta_G(m_0 n_0, \dots, m_{k-1} n_{k-1}) = \delta_G(m)\, \delta_G(n)$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Lemma 4 (`jis-2024-24.8.5-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.coprimalityIndicator_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-mul).
+Stated but not proved: `MetaMathlibExt.coprimalityIndicator_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-indicator-mul).
 
 ## Inclusion–exclusion for tuples with exactly $r$ coprime pairs
 
@@ -172,7 +172,7 @@ non-coprime tuples.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Lemma 5 (`jis-2024-24.8.5-lem-5`).
 
-Stated but not proved: `MetaMathlibExt.exactly_coprime_pairs_inclusion_exclusion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#exactly-coprime-pairs-inclusion-exclusio).
+Stated but not proved: `MetaMathlibExt.exactly_coprime_pairs_inclusion_exclusion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#exactly-coprime-pairs-inclusion-exclusio).
 
 ## Inclusion–exclusion for at least $r$ coprime pairs
 
@@ -190,7 +190,7 @@ where the inner sum runs over all sets $E$ of exactly $j$ such pairs.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Lemma 6 (`jis-2024-24.8.5-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.at_least_coprime_pairs_inclusion_exclusion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#at-least-coprime-pairs-inclusion-exclusi).
+Stated but not proved: `MetaMathlibExt.at_least_coprime_pairs_inclusion_exclusion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#at-least-coprime-pairs-inclusion-exclusi).
 
 ## Dirichlet series of the coprimality indicator
 
@@ -213,7 +213,7 @@ both endpoints in $L$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 7 (`jis-2024-24.8.5-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.coprimality_dirichlet_series_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-dirichlet-series-eq).
+Stated but not proved: `MetaMathlibExt.coprimality_dirichlet_series_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-dirichlet-series-eq).
 
 ## Absolute convergence of the vertex-cover Euler product
 
@@ -235,7 +235,7 @@ $\sum_p |D'_{G,p}(s) - 1| < \infty$, the sum running over all primes $p$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 7 (`jis-2024-24.8.5-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.coprimality_euler_factor_summable` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-euler-factor-summable).
+Stated but not proved: `MetaMathlibExt.coprimality_euler_factor_summable` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-euler-factor-summable).
 
 ## Möbius-convolution series for the coprimality density
 
@@ -256,7 +256,7 @@ $$A_G = \sum_{n_1, \dots, n_k \ge 1} \frac{(\mu * \delta_G)(n)}{n_1 \cdots n_k}.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 9 (`jis-2024-24.8.5-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_tsum_moebius_conv` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-tsum-moebius-conv).
+Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_tsum_moebius_conv` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-tsum-moebius-conv).
 
 ## Prime-power Euler product for the coprimality density
 
@@ -276,7 +276,7 @@ the product running over all primes $p$ and the sum over all $k$-tuples $\nu$ of
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 9 (`jis-2024-24.8.5-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_prime_power_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-prime-power-produ).
+Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_prime_power_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-prime-power-produ).
 
 ## Vertex-cover Euler product for the coprimality density
 
@@ -296,7 +296,7 @@ of $G$, that is, subsets of $J$ such that no edge of $E$ has both endpoints in $
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 9 (`jis-2024-24.8.5-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_vertex_cover_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-vertex-cover-prod).
+Stated but not proved: `MetaMathlibExt.coprimalityDensity_eq_vertex_cover_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#coprimality-density-eq-vertex-cover-prod).
 
 ## Asymptotic count of tuples with exactly $r$ coprime pairs
 
@@ -316,7 +316,7 @@ $$|T_r(N) - C_{k,r} N^k| \le C N^{k-1} (\log N)^{k-1}.$$
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 11 (`jis-2024-24.8.5-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.exactly_coprime_pairs_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#exactly-coprime-pairs-count-asymp).
+Stated but not proved: `MetaMathlibExt.exactly_coprime_pairs_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#exactly-coprime-pairs-count-asymp).
 
 ## Asymptotic count of $k$-tuples with at least $r$ coprime pairs
 
@@ -335,7 +335,7 @@ $a < b$ differs from $C'_{k,r} N^k$ by at most $C N^{k-1} (\log N)^{k-1}$.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 11 (`jis-2024-24.8.5-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.at_least_coprime_pairs_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#at-least-coprime-pairs-count-asymp).
+Stated but not proved: `MetaMathlibExt.at_least_coprime_pairs_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#at-least-coprime-pairs-count-asymp).
 
 ## The Möbius series for pairwise non-coprime tuples equals the inclusion–exclusion sum
 
@@ -362,7 +362,7 @@ coprime pairs.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Corollary 12 (`jis-2024-24.8.5-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.pairwise_non_coprime_density_eq_tsum_moebius_conv` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#pairwise-non-coprime-density-eq-tsum-moe).
+Stated but not proved: `MetaMathlibExt.pairwise_non_coprime_density_eq_tsum_moebius_conv` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#pairwise-non-coprime-density-eq-tsum-moe).
 
 ## Euler product for the mean value of a multiplicative function of several variables
 
@@ -393,7 +393,7 @@ hypothesis is the source's multivariable one, weaker than coordinatewise multipl
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem 3 (`jis-2024-24.8.5-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.euler_product_mean_value_of_coprime_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#euler-product-mean-value-of-coprime-prod).
+Stated but not proved: `MetaMathlibExt.euler_product_mean_value_of_coprime_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ArithmeticFunction/TothPairwiseNonCoprimeTuplesWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html#euler-product-mean-value-of-coprime-prod).
 
 ## Depends on
 
@@ -402,4 +402,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tuples coprime along the edges of a graph](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/tuples-coprime-along-the-edges-of-a-graph)

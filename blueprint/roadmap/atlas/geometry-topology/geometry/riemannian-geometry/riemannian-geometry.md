@@ -8,7 +8,7 @@ proof: formalized
 
 # Riemannian and Finsler geometry: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html).
 
 Manifolds with smoothly varying inner products or norms on tangent spaces: connections, curvature, geodesics, differential operators and rigidity theorems.
 
@@ -22,7 +22,7 @@ or corners). Then $M$ admits a $C^\infty$ Riemannian metric on its tangent bundl
 
 - J. Lee, Introduction to Smooth Manifolds, 2nd ed. existence of Riemannian metrics via partition of unity; also Lee, Riemannian Manifolds; Lean states finite-dimensional Hausdorff second-countable specialization.
 
-Formalized by `MathlibExt.Geometry.Manifold.RiemannianMetricExistenceWanted.riemannianMetricExistence`, a theorem declared in [MathlibExt/Geometry/Manifold/RiemannianMetricExistence.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/RiemannianMetricExistence.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html#riemannian-metric-existence).
+Formalized by `MathlibExt.Geometry.Manifold.RiemannianMetricExistenceWanted.riemannianMetricExistence`, a theorem declared in [MathlibExt/Geometry/Manifold/RiemannianMetricExistence.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/RiemannianMetricExistence.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html#riemannian-metric-existence).
 
 ## Manifolds admitting a metric of positive scalar curvature
 
@@ -31,7 +31,7 @@ boundary modeled on $\mathbb{R}^n$ admits a metric of positive scalar curvature 
 $C^\infty$ Riemannian metric $g$ on its tangent bundle has scalar curvature, computed for $g$,
 strictly positive at every point of $M$.
 
-Formalized by `Manifold.AdmitsPositiveScalarCurvatureMetric`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/PositiveScalarCurvature.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/PositiveScalarCurvature.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html#admits-positive-scalar-curvature-metric).
+Formalized by `Manifold.AdmitsPositiveScalarCurvatureMetric`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/PositiveScalarCurvature.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/PositiveScalarCurvature.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html#admits-positive-scalar-curvature-metric).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Riemannian and Finsler geometry](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry)

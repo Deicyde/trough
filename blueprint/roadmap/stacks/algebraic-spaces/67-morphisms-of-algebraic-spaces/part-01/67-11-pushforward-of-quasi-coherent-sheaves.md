@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.11 Pushforward of quasi-coherent sheaves
 
-Section 67.11 of the Stacks Project, [Tag 03M7](https://stacks.math.columbia.edu/tag/03M7). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.11 of the Stacks Project, [Tag 03M7](https://stacks.math.columbia.edu/tag/03M7). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03M8, a lemma
 
 [Tag 03M8](https://stacks.math.columbia.edu/tag/03M8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exact_moduleChartDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardPresentationExactSequence.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardPresentationExactSequence.lean#L459).
+**`AlgebraicGeometry.Space.exact_moduleChartDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardPresentationExactSequence.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardPresentationExactSequence.lean#L459).
 
 > **Stacks 03M8.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let `U` be a
 > surjective étale scheme chart of `X` with structure morphism `τ`, let `R = U ×_X U` (the
@@ -51,7 +51,7 @@ theorem exact_moduleChartDirectImage (hU : IsSurjective B S hS U.1.hom) {t s : R
 
 [Tag 04CF](https://stacks.math.columbia.edu/tag/04CF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.modulePushforward_comp_overFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardChartRestriction.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardChartRestriction.lean#L484). The attribute's comment: “for an arbitrary morphism of algebraic spaces, with the restriction to the base-changed chart taken on the slice of the spaces-étale site”.
+**`AlgebraicGeometry.Space.modulePushforward_comp_overFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardChartRestriction.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardChartRestriction.lean#L484). The attribute's comment: “for an arbitrary morphism of algebraic spaces, with the restriction to the base-changed chart taken on the slice of the spaces-étale site”.
 
 > **Stacks 04CF, for an arbitrary morphism of algebraic spaces.** Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces over `S` and let `V` be an étale scheme chart of `Y`.  Write
@@ -85,7 +85,7 @@ noncomputable def modulePushforward_comp_overFunctorIso (f : X ⟶ Y)
 
 [Tag 03M9](https://stacks.math.columbia.edu/tag/03M9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePushforward_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean#L110). The attribute's comment: “the direct image along a closed immersion of algebraic spaces”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePushforward_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean#L110). The attribute's comment: “the direct image along a closed immersion of algebraic spaces”.
 
 > **Stacks 03M9 along a closed immersion of algebraic spaces.**  The direct image `i_*G` of a
 > quasi-coherent `𝒪_Z`-module along a closed immersion `i : Z ⟶ X` is quasi-coherent.
@@ -101,7 +101,7 @@ theorem isQuasicoherentOnSite_modulePushforward_of_isClosedImmersion (i : Z ⟶ 
     ((modulePushforward B S hS i).obj G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePushforward_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentPushforwardQcqs.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentPushforwardQcqs.lean#L202).
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePushforward_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentPushforwardQcqs.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentPushforwardQcqs.lean#L202).
 
 > **Stacks 03M9.**  Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces over `S`.  Then the direct image `f_*F` of a quasi-coherent `𝒪_X`-module `F` is
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.11, Tag 03M7](https://stacks.math.columbia.edu/tag/03M7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

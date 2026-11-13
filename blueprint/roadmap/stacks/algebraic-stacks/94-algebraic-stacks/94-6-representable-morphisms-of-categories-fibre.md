@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.6 Representable morphisms of categories fibred in groupoids
 
-Section 94.6 of the Stacks Project, [Tag 04ST](https://stacks.math.columbia.edu/tag/04ST). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.6 of the Stacks Project, [Tag 04ST](https://stacks.math.columbia.edu/tag/04ST). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02ZR, a lemma
 
 [Tag 02ZR](https://stacks.math.columbia.edu/tag/02ZR) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Slices.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Slices.lean#L315).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Slices.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Slices.lean#L315).
 
 > **Stacks 02ZR.** A morphism in a category with pullbacks induces a
 > representable 1-morphism of the categories fibred in groupoids of objects over
@@ -30,7 +30,7 @@ public theorem isRepresentableMorphism_overMap (f : X ⟶ Y) :
 
 [Tag 0456](https://stacks.math.columbia.edu/tag/0456) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Invariance.lean, line 660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Invariance.lean#L660).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_iff_of_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Invariance.lean, line 660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Invariance.lean#L660).
 
 > **Stacks 0456.** Representability of a 1-morphism of categories fibred in
 > groupoids is invariant under equivalences in a 2-commutative square.
@@ -52,7 +52,7 @@ public theorem isRepresentableMorphism_iff_of_equivalences
 
 [Tag 02ZS](https://stacks.math.columbia.edu/tag/02ZS) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Composition.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Composition.lean#L277).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Composition.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Composition.lean#L277).
 
 > **Stacks 02ZS.** A composite of representable 1-morphisms of categories fibred in
 > groupoids over a base category is representable.
@@ -73,7 +73,7 @@ public lemma isRepresentableMorphism_comp
 
 [Tag 02ZT](https://stacks.math.columbia.edu/tag/02ZT) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_fst_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/BaseChange.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/BaseChange.lean#L437).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_fst_twoFibreProductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/BaseChange.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/BaseChange.lean#L436).
 
 > **Stacks Project, Tag 02ZT.** The projection to `𝒵` from the 2-fibre
 > product `𝒵 ×_𝒴 𝒳` is representable when `𝒳 ⥤ 𝒴` is representable.
@@ -93,7 +93,7 @@ public theorem isRepresentableMorphism_fst_twoFibreProductOver
 
 [Tag 02ZU](https://stacks.math.columbia.edu/tag/02ZU) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Product.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Product.lean#L362).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Product.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/RepresentableMorphism/Product.lean#L362).
 
 > The product of two representable 1-morphisms of categories fibred in groupoids over a base
 > category is representable.
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.6, Tag 04ST](https://stacks.math.columbia.edu/tag/04ST)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

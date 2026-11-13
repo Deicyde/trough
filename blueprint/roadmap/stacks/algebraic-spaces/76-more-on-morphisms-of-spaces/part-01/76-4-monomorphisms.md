@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.4 Monomorphisms
 
-Section 76.4 of the Stacks Project, [Tag 0B89](https://stacks.math.columbia.edu/tag/0B89). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.4 of the Stacks Project, [Tag 0B89](https://stacks.math.columbia.edu/tag/0B89). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B8A, a lemma
 
 [Tag 0B8A](https://stacks.math.columbia.edu/tag/0B8A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_of_isFlat_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatMonomorphismRepresentable.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatMonomorphismRepresentable.lean#L712).
+**`AlgebraicGeometry.Space.relativelyRepresentable_of_isFlat_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatMonomorphismRepresentable.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatMonomorphismRepresentable.lean#L712).
 
 > **Stacks 0B8A** (David Rydh). A flat monomorphism of algebraic spaces is representable by
 > schemes.
@@ -29,7 +29,7 @@ theorem relativelyRepresentable_of_isFlat_of_mono {X Y : (BigFppfOver B S hS)ᵒ
 
 [Tag 0B8B](https://stacks.math.columbia.edu/tag/0B8B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_of_mono_of_forall_baseChange_mono_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismInjectiveStructureMap.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismInjectiveStructureMap.lean#L699).
+**`AlgebraicGeometry.Space.isIso_of_mono_of_forall_baseChange_mono_fSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismInjectiveStructureMap.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphismInjectiveStructureMap.lean#L698).
 
 > **Stacks 0B8B.** A quasi-compact monomorphism of algebraic spaces over `S` whose structure
 > homomorphism `𝒪_T ⟶ f_{T,*}𝒪_{X ×_Y T}` is a monomorphism for every `T ⟶ Y` is an
@@ -51,7 +51,7 @@ public theorem isIso_of_mono_of_forall_baseChange_mono_fSharp
 
 [Tag 0B8C](https://stacks.math.columbia.edu/tag/0B8C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_of_mono_of_isQuasiCompact_of_isFlat_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatSurjectiveMonomorphism.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatSurjectiveMonomorphism.lean#L138).
+**`AlgebraicGeometry.Space.isIso_of_mono_of_isQuasiCompact_of_isFlat_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatSurjectiveMonomorphism.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatSurjectiveMonomorphism.lean#L138).
 
 > **Stacks 0B8C.** A quasi-compact, flat and surjective monomorphism of algebraic spaces
 > over `S` is an isomorphism.
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.4, Tag 0B89](https://stacks.math.columbia.edu/tag/0B89)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

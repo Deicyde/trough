@@ -8,13 +8,13 @@ proof: formalized
 
 # 73.6 Syntomic topology
 
-Section 73.6 of the Stacks Project, [Tag 03YA](https://stacks.math.columbia.edu/tag/03YA). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 73.6 of the Stacks Project, [Tag 03YA](https://stacks.math.columbia.edu/tag/03YA). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 041A, a definition
 
 [Tag 041A](https://stacks.math.columbia.edu/tag/041A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSyntomicCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L242).
+**`AlgebraicGeometry.Space.IsSyntomicCovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L242).
 
 > **Stacks 041A.** A family of morphisms of algebraic spaces over `S` with common target
 > is a *syntomic covering* when every member is syntomic and the family is jointly
@@ -25,7 +25,7 @@ structure IsSyntomicCovering {I : Type v} {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
     (X : I → (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (f : ∀ i, X i ⟶ F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L257). The attribute's comment: “the condition unfolded”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L257). The attribute's comment: “the condition unfolded”.
 
 > **Stacks 041A.** Being a syntomic covering is exactly: the target and all the sources are
 > algebraic spaces, every member of the family is syntomic, and the images of the maps on points
@@ -44,7 +44,7 @@ theorem isSyntomicCovering_iff {I : Type v} {F : (BigFppfOver B S hS)ᵒᵖ ⥤ 
 
 [Tag 0DFB](https://stacks.math.columbia.edu/tag/0DFB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_of_isSmoothCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L132). The attribute's comment: “smooth coverings”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_of_isSmoothCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L132). The attribute's comment: “smooth coverings”.
 
 > **Stacks 0DFB**, the smooth case: a smooth covering of algebraic spaces over `S` is a
 > syntomic covering.
@@ -57,7 +57,7 @@ theorem isSyntomicCovering_of_isSmoothCovering
     IsSyntomicCovering B S hS X f
 ```
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L143). The attribute's comment: “étale coverings”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L143). The attribute's comment: “étale coverings”.
 
 > **Stacks 0DFB**, the étale case: an étale covering of algebraic spaces over `S` is a
 > syntomic covering.
@@ -70,7 +70,7 @@ theorem isSyntomicCovering_of_isEtaleCovering
     IsSyntomicCovering B S hS X f
 ```
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L254). The attribute's comment: “Zariski coverings”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L254). The attribute's comment: “Zariski coverings”.
 
 > **Stacks 0DFB**, the Zariski case: a Zariski covering of algebraic spaces over `S` is a
 > syntomic covering.
@@ -88,7 +88,7 @@ theorem isSyntomicCovering_of_isZariskiCovering
 
 [Tag 041B](https://stacks.math.columbia.edu/tag/041B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringBaseChange.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringBaseChange.lean#L84). The attribute's comment: “part (3), base change”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringBaseChange.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringBaseChange.lean#L85). The attribute's comment: “part (3), base change”.
 
 > **Stacks 041B**, the base-change clause. The first projections of the presheaf fibre
 > products of a syntomic covering of an algebraic space over `S` with a morphism `g` into its
@@ -104,7 +104,7 @@ theorem isSyntomicCovering_pullback {I : Type v}
       (fun i => pullback.fst g (f i))
 ```
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringComposition.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringComposition.lean#L54). The attribute's comment: “part (2), composition”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringComposition.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoveringComposition.lean#L54). The attribute's comment: “part (2), composition”.
 
 > **Stacks 041B**, the composition clause. A syntomic covering of each member of a syntomic
 > covering composes to a syntomic covering of the original algebraic space.
@@ -121,7 +121,7 @@ theorem isSyntomicCovering_comp {I : Type v} (J : I → Type w)
       (fun ij => g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.Space.isSyntomicCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoverings.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoverings.lean#L46). The attribute's comment: “part (1), isomorphisms”.
+**`AlgebraicGeometry.Space.isSyntomicCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoverings.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SyntomicCoverings.lean#L46). The attribute's comment: “part (1), isomorphisms”.
 
 > **Stacks 041B**, the isomorphism clause. An isomorphism of algebraic spaces over `S`,
 > regarded as a family indexed by a point, is a syntomic covering.
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 73.6, Tag 03YA](https://stacks.math.columbia.edu/tag/03YA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

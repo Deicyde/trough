@@ -8,7 +8,7 @@ proof: formalized
 
 # Earley parser
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html).
 
 ## Earley item
 
@@ -17,7 +17,7 @@ output, recognizing input that starts at the end of `pre` and whose
 recognized prefix is `consumed`. The full input is `pre ++ consumed
 ++ rest` for some `rest`.
 
-Formalized by `Cslib.Language.EarleyItem`, a structure declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-item).
+Formalized by `Cslib.Language.EarleyItem`, a structure declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-item).
 
 ## Earley chart
 
@@ -28,7 +28,7 @@ under initialization, prediction, scanning, and completion.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.EarleyChart`, an inductive type declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart).
+Formalized by `Cslib.Language.EarleyChart`, an inductive type declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart).
 
 ## Earley chart as a predicate on items
 
@@ -38,7 +38,7 @@ The chart as a predicate on `EarleyItem`s.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.EarleyChartItem`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart-item).
+Formalized by `Cslib.Language.EarleyChartItem`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart-item).
 
 ## Acceptance by the Earley recognizer
 
@@ -49,7 +49,7 @@ production of the initial nonterminal consumes the whole input.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.earleyAccepts`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-accepts).
+Formalized by `Cslib.Language.earleyAccepts`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-accepts).
 
 ## Earley item dot stays within its production
 
@@ -59,7 +59,7 @@ The dot of a chart item never passes the end of its production.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.dot_le_of_earleyChart`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#dot-le-of-earley-chart).
+Formalized by `Cslib.Language.dot_le_of_earleyChart`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#dot-le-of-earley-chart).
 
 ## Soundness of the Earley chart
 
@@ -70,7 +70,7 @@ it consumed.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.yields_take_of_earleyChart`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#yields-take-of-earley-chart).
+Formalized by `Cslib.Language.yields_take_of_earleyChart`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#yields-take-of-earley-chart).
 
 ## Completeness of the Earley chart
 
@@ -82,7 +82,7 @@ the item completed by that word.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.earleyChart_complete_of_yields`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart-complete-of-yields).
+Formalized by `Cslib.Language.earleyChart_complete_of_yields`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-chart-complete-of-yields).
 
 ## A yield from one nonterminal starts with one of its productions
 
@@ -93,7 +93,7 @@ one production of that nonterminal.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.exists_rule_of_yields_singleton`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#exists-rule-of-yields-singleton).
+Formalized by `Cslib.Language.exists_rule_of_yields_singleton`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#exists-rule-of-yields-singleton).
 
 ## Correctness of the Earley recognizer
 
@@ -103,7 +103,7 @@ The Earley recognizer accepts exactly the grammar's language.
 
 - Earley, "An efficient context-free parsing algorithm", Communications of the ACM 13 (1970), 94-102.
 
-Formalized by `Cslib.Language.earleyAccepts_iff`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-accepts-iff).
+Formalized by `Cslib.Language.earleyAccepts_iff`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/Earley.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/Earley.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html#earley-accepts-iff).
 
 ## Depends on
 
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Earley parser](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/earley-parser)

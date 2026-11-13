@@ -7,7 +7,7 @@ statement: formalized
 
 # Bilinear polynomial ergodic averages
 
-7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html).
+7 results, 3 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html).
 
 ## Lacunary sequence
 
@@ -16,7 +16,7 @@ $(a_n)_{n \in \mathbb{N}}$ of nonnegative real numbers is $\Lambda$-lacunary if
 $a_{n+1} / a_n > \Lambda$ for every $n \in \mathbb{N}$, where division by $0$ gives $0$; in
 particular every term of a $\Lambda$-lacunary sequence is positive.
 
-Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.Lacunary`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#lacunary).
+Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.Lacunary`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#lacunary).
 
 ## Variational norm
 
@@ -33,7 +33,7 @@ $N_0 \le N_1 \le \dots \le N_J$ and the empty sum ($J = 0$) is $0$. For $r = 0$ 
 $\big( \sum_{j=0}^{J-1} |a_{N_{j+1}} - a_{N_j}|^r \big)^{1/r}$ is replaced by the number of
 indices $j < J$ with $a_{N_{j+1}} \ne a_{N_j}$.
 
-Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.variationalNorm`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#variational-norm).
+Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.variationalNorm`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#variational-norm).
 
 ## Bilinear polynomial ergodic averages
 
@@ -49,7 +49,7 @@ where $T^k$ for $k \in \mathbb{Z}$ is the $k$-th power of $T$ in the group of bi
 (so negative powers are iterates of $T^{-1}$), and $A_N^{P_1, P_2}(f, g)(x) = 0$ when
 $\lfloor N \rfloor = 0$.
 
-Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.A`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#a).
+Formalized by `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.A`, a definition declared in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#a).
 
 ## Mean ergodic theorem for bilinear polynomial averages
 
@@ -74,7 +74,7 @@ This is Theorem 1.17(i) of Krause, Mirek and Tao.
 
 - B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_i` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-i).
+Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_i` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-i).
 
 ## Pointwise ergodic theorem for bilinear polynomial averages
 
@@ -99,7 +99,7 @@ This is Theorem 1.17(ii) of Krause, Mirek and Tao.
 
 - B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_ii` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-ii).
+Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_ii` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-ii).
 
 ## Maximal inequality for bilinear polynomial averages
 
@@ -128,7 +128,7 @@ This is Theorem 1.17(iii) of Krause, Mirek and Tao.
 
 - B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iii` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-iii).
+Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iii` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-iii).
 
 ## Long variational inequality for bilinear polynomial averages
 
@@ -160,7 +160,7 @@ This is Theorem 1.17(iv) of Krause, Mirek and Tao.
 
 - B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iv` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-iv).
+Stated but not proved: `MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iv` is written with `theorem_wanted` in [WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html#theorem-1-17-iv).
 
 ## Depends on
 
@@ -169,4 +169,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bilinear polynomial ergodic averages](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages)

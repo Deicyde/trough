@@ -1,6 +1,6 @@
 # Pell and quadratic Diophantine equations
 
-197 results of ATLAS's vault, 88 proved and 109 stated but not proved, in this branch's topics.
+197 results of ATLAS's vault, 89 proved and 108 stated but not proved, in this branch's topics.
 
 Pell and negative Pell equations, norm equations, Pythagorean triples, Markov triples and quadratic equations in two or three variables.
 

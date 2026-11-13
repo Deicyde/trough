@@ -8,13 +8,13 @@ proof: formalized
 
 # 5.8 Irreducible components
 
-Section 5.8 of the Stacks Project, [Tag 004U](https://stacks.math.columbia.edu/tag/004U). 13 tags here are carried by 26 declarations of the repository (2 in StacksCore and 24 in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.8 of the Stacks Project, [Tag 004U](https://stacks.math.columbia.edu/tag/004U). 13 tags here are carried by 26 declarations of the repository (2 in StacksCore and 24 in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G2Y, a lemma
 
 [Tag 0G2Y](https://stacks.math.columbia.edu/tag/0G2Y) in the Stacks Project.
 
-**`irreducibleComponents_eq_range_of_irredundant_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/IrreducibleComponents.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/IrreducibleComponents.lean#L35). References: EGA 0 (2.1.7), “first assertion”.
+**`irreducibleComponents_eq_range_of_irredundant_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/IrreducibleComponents.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/IrreducibleComponents.lean#L35). References: EGA 0 (2.1.7), “first assertion”.
 
 > **Stacks 0G2Y**.
 > Given an irredundant finite covering of `X` by irreducible closed subsets `T i` (`i : Fin n`),
@@ -34,7 +34,7 @@ theorem irreducibleComponents_eq_range_of_irredundant_cover
 
 [Tag 0GM2](https://stacks.math.columbia.edu/tag/0GM2) in the Stacks Project.
 
-**`ncard_irreducibleComponents_le_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/SurjectionComponents.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/SurjectionComponents.lean#L63).
+**`ncard_irreducibleComponents_le_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/SurjectionComponents.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/SurjectionComponents.lean#L63).
 
 > Let `f : X → Y` be a surjective, continuous map of topological spaces. If `X` has finitely
 > many irreducible components, then `Y` has finitely many irreducible components and their number
@@ -53,7 +53,7 @@ theorem ncard_irreducibleComponents_le_of_surjective
 
 [Tag 004X](https://stacks.math.columbia.edu/tag/004X) in the Stacks Project.
 
-**`isGenericPoint_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Defs.lean#L70). The attribute's comment: “generic point”.
+**`isGenericPoint_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Defs.lean#L70). The attribute's comment: “generic point”.
 
 > A point `ξ` lies in `Z` with `Z = closure {ξ}` exactly when `ξ` is a generic point of `Z`.
 
@@ -62,7 +62,7 @@ theorem isGenericPoint_iff (Z : Set X) (ξ : X) :
     (ξ ∈ Z ∧ Z = closure {ξ}) ↔ IsGenericPoint ξ Z
 ```
 
-**`kolmogorov_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Defs.lean#L77). The attribute's comment: “Kolmogorov”. References: EGA 0 (2.1.3).
+**`kolmogorov_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Defs.lean#L77). The attribute's comment: “Kolmogorov”. References: EGA 0 (2.1.3).
 
 > A space in which any two distinct points are separated by a closed set is exactly a
 > `T0Space`.
@@ -73,7 +73,7 @@ theorem kolmogorov_iff :
         ∃ C : Set X, IsClosed C ∧ ((x ∈ C) ↔ x' ∉ C)) ↔ T0Space X
 ```
 
-**`local_quasiSober_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Defs.lean#L93). The attribute's comment: “quasi-sober”.
+**`local_quasiSober_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Defs.lean#L93). The attribute's comment: “quasi-sober”.
 
 > A space in which every irreducible closed subset `Z` admits some `ξ ∈ Z` with `Z = closure {ξ}`
 > is exactly a `QuasiSober` space.
@@ -84,7 +84,7 @@ theorem local_quasiSober_iff :
         ∃ ξ ∈ Z, Z = closure {ξ}) ↔ QuasiSober X
 ```
 
-**`StacksSober`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Defs.lean#L102). The attribute's comment: “sober”. References: SGA 4 IV (4.2.1), “sober definition”; SGA 4 VIII (7.9.3).
+**`StacksSober`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Defs.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Defs.lean#L102). The attribute's comment: “sober”. References: SGA 4 IV (4.2.1), “sober definition”; SGA 4 VIII (7.9.3).
 
 > A space is sober when every irreducible closed subset has a *unique* generic point.
 
@@ -96,7 +96,7 @@ def StacksSober (X : Type*) [TopologicalSpace X] : Prop
 
 [Tag 0B31](https://stacks.math.columbia.edu/tag/0B31) in the Stacks Project.
 
-**`IsLocallyClosed.quasiSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/LocallyClosed.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/LocallyClosed.lean#L35). The attribute's comment: “(2)”.
+**`IsLocallyClosed.quasiSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/LocallyClosed.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/LocallyClosed.lean#L35). The attribute's comment: “(2)”.
 
 > **Stacks 0B31 (2).** A locally closed subspace of a quasi-sober space is quasi-sober.
 
@@ -105,7 +105,7 @@ theorem IsLocallyClosed.quasiSober [QuasiSober X] {Y : Set X} (hY : IsLocallyClo
     QuasiSober Y
 ```
 
-**`IsLocallyClosed.quasiSober_and_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/LocallyClosed.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/LocallyClosed.lean#L44). The attribute's comment: “(3)”.
+**`IsLocallyClosed.quasiSober_and_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/LocallyClosed.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/LocallyClosed.lean#L44). The attribute's comment: “(3)”.
 
 > **Stacks 0B31 (3).** A locally closed subspace of a sober space is sober, sobriety being
 > `QuasiSober` together with `T0Space`.
@@ -119,7 +119,7 @@ theorem IsLocallyClosed.quasiSober_and_t0Space [QuasiSober X] [T0Space X] {Y : S
 
 [Tag 06N9](https://stacks.math.columbia.edu/tag/06N9) in the Stacks Project.
 
-**`kolmogorov_iff_of_locallyClosed_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Local.lean#L59). The attribute's comment: “(1)”.
+**`kolmogorov_iff_of_locallyClosed_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Local.lean#L59). The attribute's comment: “(1)”.
 
 > If a covering `U` of `X` consists of locally closed subsets, then `X` is Kolmogorov if and only
 > if each `U i` is.
@@ -132,7 +132,7 @@ theorem kolmogorov_iff_of_locallyClosed_cover
     T0Space X ↔ ∀ i, T0Space (U i)
 ```
 
-**`quasiSober_iff_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Local.lean#L86). The attribute's comment: “(2)”.
+**`quasiSober_iff_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Local.lean#L86). The attribute's comment: “(2)”.
 
 > If a covering `U` of `X` consists of open subsets, then `X` is quasi-sober if and only if each
 > `U i` is.
@@ -145,7 +145,7 @@ theorem quasiSober_iff_of_open_cover
     QuasiSober X ↔ ∀ i, QuasiSober (U i)
 ```
 
-**`sober_iff_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Local.lean#L96). The attribute's comment: “(3)”.
+**`sober_iff_of_open_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Local.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Local.lean#L96). The attribute's comment: “(3)”.
 
 > If a covering `U` of `X` consists of open subsets, then `X` is sober if and only if each `U i`
 > is.
@@ -162,7 +162,7 @@ theorem sober_iff_of_open_cover
 
 [Tag 0B32](https://stacks.math.columbia.edu/tag/0B32) in the Stacks Project.
 
-**`quasiSober_of_indiscreteTopology`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Sober/Indiscrete.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Sober/Indiscrete.lean#L30). The attribute's comment: “quasi-sober”.
+**`quasiSober_of_indiscreteTopology`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Sober/Indiscrete.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Sober/Indiscrete.lean#L30). The attribute's comment: “quasi-sober”.
 
 > **Stacks 0B32.** An indiscrete topological space with at least two points is
 > quasi-sober: its only nonempty closed subset is the whole space, and every point is a
@@ -173,7 +173,7 @@ theorem quasiSober_of_indiscreteTopology (X : Type*) [TopologicalSpace X]
     [IndiscreteTopology X] [Nontrivial X] : QuasiSober X
 ```
 
-**`not_t0Space_of_indiscreteTopology`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Sober/Indiscrete.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Sober/Indiscrete.lean#L41). The attribute's comment: “not Kolmogorov”.
+**`not_t0Space_of_indiscreteTopology`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Sober/Indiscrete.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Sober/Indiscrete.lean#L41). The attribute's comment: “not Kolmogorov”.
 
 > **Stacks 0B32.** An indiscrete topological space with at least two points is not
 > Kolmogorov: any two of its points are inseparable.
@@ -185,14 +185,14 @@ theorem not_t0Space_of_indiscreteTopology (X : Type*) [TopologicalSpace X]
 
 Declarations registered for the tag:
 
-- [`Set.iUnion_of_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Set.iUnion_of_singleton#doc) registered with `add_to_stacks` in [StacksCore/Topology/Sober/Indiscrete.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Sober/Indiscrete.lean#L47) (StacksCore): “the singleton subspaces cover the space”.
-- [`Subsingleton.discreteTopology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subsingleton.discreteTopology#doc) registered with `add_to_stacks` in [StacksCore/Topology/Sober/Indiscrete.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Sober/Indiscrete.lean#L48) (StacksCore): “the singleton subspaces are discrete”.
+- [`Set.iUnion_of_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Set.iUnion_of_singleton#doc) registered with `add_to_stacks` in [StacksCore/Topology/Sober/Indiscrete.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Sober/Indiscrete.lean#L47) (StacksCore): “the singleton subspaces cover the space”.
+- [`Subsingleton.discreteTopology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Subsingleton.discreteTopology#doc) registered with `add_to_stacks` in [StacksCore/Topology/Sober/Indiscrete.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Sober/Indiscrete.lean#L48) (StacksCore): “the singleton subspaces are discrete”.
 
 ## Tag 0B33, an example
 
 [Tag 0B33](https://stacks.math.columbia.edu/tag/0B33) in the Stacks Project.
 
-**`t0Space_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CofiniteExample.lean#L44). The attribute's comment: “Kolmogorov”.
+**`t0Space_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CofiniteExample.lean#L44). The attribute's comment: “Kolmogorov”.
 
 > **Stacks 0B33** (Kolmogorov).
 > An infinite set with the cofinite topology is Kolmogorov: its singletons are finite, hence
@@ -202,7 +202,7 @@ Declarations registered for the tag:
 theorem t0Space_cofiniteTopology : T0Space (CofiniteTopology Y)
 ```
 
-**`not_quasiSober_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CofiniteExample.lean#L50). The attribute's comment: “not quasi-sober”.
+**`not_quasiSober_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CofiniteExample.lean#L50). The attribute's comment: “not quasi-sober”.
 
 > **Stacks 0B33** (not quasi-sober).
 > An infinite set with the cofinite topology is not quasi-sober: the whole space is irreducible
@@ -212,7 +212,7 @@ theorem t0Space_cofiniteTopology : T0Space (CofiniteTopology Y)
 theorem not_quasiSober_cofiniteTopology [Infinite Y] : ¬ QuasiSober (CofiniteTopology Y)
 ```
 
-**`singleton_cover_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CofiniteExample.lean#L65). The attribute's comment: “covering by discrete, hence sober, subspaces”.
+**`singleton_cover_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CofiniteExample.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CofiniteExample.lean#L65). The attribute's comment: “covering by discrete, hence sober, subspaces”.
 
 > **Stacks 0B33** (covering by sober subspaces).
 > The singletons of an infinite set with the cofinite topology cover it, and each singleton
@@ -230,7 +230,7 @@ theorem singleton_cover_cofiniteTopology :
 
 [Tag 0B34](https://stacks.math.columbia.edu/tag/0B34) in the Stacks Project.
 
-**`not_t0Space_sum_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleNeither.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CounterexampleNeither.lean#L30).
+**`not_t0Space_sum_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleNeither.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CounterexampleNeither.lean#L30).
 
 > **Stacks 0B34.** The disjoint union of an indiscrete space with at least two points and
 > an infinite set with the cofinite topology is not Kolmogorov.
@@ -241,7 +241,7 @@ theorem not_t0Space_sum_cofiniteTopology (X : Type*) [TopologicalSpace X]
     ¬ T0Space (X ⊕ CofiniteTopology Y)
 ```
 
-**`not_quasiSober_sum_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleNeither.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CounterexampleNeither.lean#L39).
+**`not_quasiSober_sum_cofiniteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleNeither.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CounterexampleNeither.lean#L39).
 
 > **Stacks 0B34.** The disjoint union of an indiscrete space with at least two points and
 > an infinite set with the cofinite topology is not quasi-sober.
@@ -256,7 +256,7 @@ theorem not_quasiSober_sum_cofiniteTopology (X : Type*) [TopologicalSpace X]
 
 [Tag 0B35](https://stacks.math.columbia.edu/tag/0B35) in the Stacks Project.
 
-**`Stacks.Examples.SoberSubspace.unique_genericPoint_cofiniteAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleSubspace.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CounterexampleSubspace.lean#L150).
+**`Stacks.Examples.SoberSubspace.unique_genericPoint_cofiniteAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleSubspace.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CounterexampleSubspace.lean#L150).
 
 > **Stacks 0B35.** The space `Z` with the topology `cofiniteAway Z z` is sober: every
 > irreducible closed subset has a unique generic point.
@@ -267,7 +267,7 @@ theorem unique_genericPoint_cofiniteAway (Z : Type*) [Infinite Z] (z : Z) :
     ∀ {S : Set Z}, IsIrreducible S → IsClosed S → ∃! x, IsGenericPoint x S
 ```
 
-**`Stacks.Examples.SoberSubspace.not_quasiSober_subtype_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleSubspace.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/CounterexampleSubspace.lean#L161).
+**`Stacks.Examples.SoberSubspace.not_quasiSober_subtype_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/CounterexampleSubspace.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/CounterexampleSubspace.lean#L161).
 
 > **Stacks 0B35.** The subspace `Z \ {z}` of the sober space `cofiniteAway Z z` is not
 > quasi-sober: it is irreducible, yet all of its singletons are closed.
@@ -282,7 +282,7 @@ theorem not_quasiSober_subtype_ne (Z : Type*) [Infinite Z] (z : Z) :
 
 [Tag 004Y](https://stacks.math.columbia.edu/tag/004Y) in the Stacks Project.
 
-**`isIrreducible_iff_singleton_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Irreducible.lean#L67). The attribute's comment: “subset irreducible iff singleton”.
+**`isIrreducible_iff_singleton_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Irreducible.lean#L67). The attribute's comment: “subset irreducible iff singleton”.
 
 > **Stacks 004Y** (subset irreducible iff singleton).
 > A subset `s` of a Hausdorff space `X` is irreducible if and only if `s` is a singleton.
@@ -293,7 +293,7 @@ theorem isIrreducible_iff_singleton_of_t2 (X : Type*) [TopologicalSpace X]
     IsIrreducible s ↔ ∃ x : X, s = {x}
 ```
 
-**`irreducibleSpace_iff_univ_singleton_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Irreducible.lean#L76). The attribute's comment: “space irreducible iff singleton”.
+**`irreducibleSpace_iff_univ_singleton_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Irreducible.lean#L76). The attribute's comment: “space irreducible iff singleton”.
 
 > **Stacks 004Y** (space irreducible iff singleton).
 > A Hausdorff space `X` is irreducible as a space if and only if its underlying set is a
@@ -305,7 +305,7 @@ theorem irreducibleSpace_iff_univ_singleton_of_t2 (X : Type*)
     IrreducibleSpace X ↔ ∃ x : X, (Set.univ : Set X) = {x}
 ```
 
-**`sober_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Irreducible.lean#L98). The attribute's comment: “Hausdorff implies sober”. References: SGA 4 IV (4.2.1), “Hausdorff ⇒ sober”.
+**`sober_of_t2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Irreducible.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Irreducible.lean#L98). The attribute's comment: “Hausdorff implies sober”. References: SGA 4 IV (4.2.1), “Hausdorff ⇒ sober”.
 
 > **Stacks 004Y** (Hausdorff implies sober).
 > A Hausdorff space is `T0` and quasi-sober, that is, sober.
@@ -319,7 +319,7 @@ theorem sober_of_t2 (X : Type*) [TopologicalSpace X] [T2Space X] :
 
 [Tag 004Z](https://stacks.math.columbia.edu/tag/004Z) in the Stacks Project.
 
-**`irreducibleSpace_of_continuous_of_dense_isIrreducible_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Irreducible/DenseFibres.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Irreducible/DenseFibres.lean#L106).
+**`irreducibleSpace_of_continuous_of_dense_isIrreducible_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Irreducible/DenseFibres.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Irreducible/DenseFibres.lean#L106).
 
 > **Stacks 004Z**.
 > Let `f : X → Y` be a continuous map of topological spaces. Assume that (a) `Y` is irreducible,
@@ -340,7 +340,7 @@ theorem irreducibleSpace_of_continuous_of_dense_isIrreducible_fiber
 
 [Tag 0A2N](https://stacks.math.columbia.edu/tag/0A2N) in the Stacks Project.
 
-**`Soberification.exists_universal_quasiSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Soberification.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sober/Soberification.lean#L484). References: SGA 4 IV (4.2.1), “universal property”.
+**`Soberification.exists_universal_quasiSober`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sober/Soberification.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sober/Soberification.lean#L484). References: SGA 4 IV (4.2.1), “universal property”.
 
 > For any topological space `X`, there is a canonical continuous map `c : X → X'` from `X`
 > to a sober topological space `X'` which is universal among continuous maps from `X` to sober
@@ -381,7 +381,7 @@ theorem exists_universal_quasiSober :
 
 [Tag 0GM3](https://stacks.math.columbia.edu/tag/0GM3) in the Stacks Project.
 
-**`TopologicalSpace.exists_isConnected_sUnion_irreducibleComponents_sdiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/IrreducibleComponentRemoval.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Connected/IrreducibleComponentRemoval.lean#L146).
+**`TopologicalSpace.exists_isConnected_sUnion_irreducibleComponents_sdiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/IrreducibleComponentRemoval.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Connected/IrreducibleComponentRemoval.lean#L146).
 
 > **Stacks 0GM3.** Let `X` be a connected topological space with finitely many irreducible
 > components, more than one of them. Then some irreducible component `Z` may be deleted so
@@ -402,4 +402,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.8, Tag 004U](https://stacks.math.columbia.edu/tag/004U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

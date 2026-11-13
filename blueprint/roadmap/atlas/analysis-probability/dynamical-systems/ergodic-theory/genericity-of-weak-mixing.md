@@ -7,7 +7,7 @@ statement: formalized
 
 # Genericity of weak mixing
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html).
 
 ## Measure-preserving automorphism
 
@@ -15,7 +15,7 @@ An automorphism of a measure space $(X, m)$ is a
 bijection $e \colon X \to X$ such that $e$ and its inverse are measurable and $e$ preserves $m$,
 that is, $m(e^{-1}(A)) = m(A)$ for every measurable set $A \subseteq X$.
 
-Formalized by `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.Automorphism`, a structure declared in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#automorphism).
+Formalized by `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.Automorphism`, a structure declared in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#automorphism).
 
 ## Weakly mixing automorphism
 
@@ -28,7 +28,7 @@ as $n \to \infty$, where $T^{-k}(A)$ is the preimage of $A$ under the $k$-th ite
 
 Measures are converted to real numbers here, with an infinite measure counted as $0$.
 
-Formalized by `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.IsWeaklyMixing`, a definition declared in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#is-weakly-mixing).
+Formalized by `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.IsWeaklyMixing`, a definition declared in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#is-weakly-mixing).
 
 ## Halmos's theorem: weak mixing is generic
 
@@ -44,7 +44,7 @@ automorphism of $(X, m)$ is ergodic for $m$.
 
 - P.R. Halmos, 'In general a measure-preserving transformation is mixing', Ann. of Math. (2) 45 (1944) 786–792, and *Lectures on Ergodic Theory*, Chelsea, 1956. Related Baire-category genericity results in ergodic theory: A. Katok and A. Stepin (1967); J.R. Choksi (1965). Listed as §90 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `halmos_generic_weak_mixing` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.generic_weakly_mixing` is written with `theorem_wanted` in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#generic-weakly-mixing).
+Stated but not proved: `MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.generic_weakly_mixing` is written with `theorem_wanted` in [WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html#generic-weakly-mixing).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Genericity of weak mixing](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/ergodic-theory/genericity-of-weak-mixing)

@@ -10,7 +10,7 @@ proof: formalized
 
 > Decomposes every finite loopless edge set with even degree at each vertex into edge-disjoint simple cycles and derives a simultaneous fixed-point-free pairing of incident edges.
 
-*Quoted from the card [LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/even-graph-cycle-decomposition.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/even-graph-cycle-decomposition.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Finset.exists_cycleDecomp`](https://leanpool.github.io/lean-pool/LeanPool/EvenGraphCycles.html#Finset.exists_cycleDecomp) (theorem; a main declaration), declared in [LeanPool/EvenGraphCycles.lean, line 592](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/EvenGraphCycles.lean#L592): “Every finite loopless edge set whose degree is even at every vertex is the edge-disjoint union of simple cycles of length at least three.”
-- [`Finset.exists_edge_pairing_of_even`](https://leanpool.github.io/lean-pool/LeanPool/EvenGraphCycles.html#Finset.exists_edge_pairing_of_even) (theorem; a main declaration), declared in [LeanPool/EvenGraphCycles.lean, line 725](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/EvenGraphCycles.lean#L725): “If every vertex has even degree, then the incident edges at every vertex admit a simultaneous fixed-point-free involutive pairing.”
+- [`Finset.exists_cycleDecomp`](https://leanpool.github.io/lean-pool/LeanPool/EvenGraphCycles.html#Finset.exists_cycleDecomp) (theorem; a main declaration), declared in [LeanPool/EvenGraphCycles.lean, line 592](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/EvenGraphCycles.lean#L592): “Every finite loopless edge set whose degree is even at every vertex is the edge-disjoint union of simple cycles of length at least three.”
+- [`Finset.exists_edge_pairing_of_even`](https://leanpool.github.io/lean-pool/LeanPool/EvenGraphCycles.html#Finset.exists_edge_pairing_of_even) (theorem; a main declaration), declared in [LeanPool/EvenGraphCycles.lean, line 725](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/EvenGraphCycles.lean#L725): “If every vertex has even degree, then the incident edges at every vertex admit a simultaneous fixed-point-free involutive pairing.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 05C45.
-- In Lean Pool: [LeanPool/EvenGraphCycles](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/EvenGraphCycles), from the card [LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/even-graph-cycle-decomposition.yaml).
+- In Lean Pool: [LeanPool/EvenGraphCycles](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/EvenGraphCycles), from the card [LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/even-graph-cycle-decomposition.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/even-graph-cycle-decomposition.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/EvenGraphCycles](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/EvenGraphCycles)
+- [Lean Pool at 701389c0: LeanPool/projects/even-graph-cycle-decomposition.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/even-graph-cycle-decomposition.yaml)
+- [Lean Pool at 701389c0: LeanPool/EvenGraphCycles](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/EvenGraphCycles)

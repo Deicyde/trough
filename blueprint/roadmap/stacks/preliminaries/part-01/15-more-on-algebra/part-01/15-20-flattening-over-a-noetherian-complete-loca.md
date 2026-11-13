@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.20 Flattening over a Noetherian complete local ring
 
-Section 15.20 of the Stacks Project, [Tag 05LV](https://stacks.math.columbia.edu/tag/05LV). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.20 of the Stacks Project, [Tag 05LV](https://stacks.math.columbia.edu/tag/05LV). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0526, a lemma
 
 [Tag 0526](https://stacks.math.columbia.edu/tag/0526) in the Stacks Project.
 
-**`Module.FlatAfterQuotientAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L50). The attribute's comment: “the property (15.20.1) quantified over in the statement”.
+**`Module.FlatAfterQuotientAlong`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L50). The attribute's comment: “the property (15.20.1) quantified over in the statement”.
 
 > Flatness along the inverse image of `V(m)` after quotienting `R`, `S` and `M` by the ideal
 > `I` of `R`. Here `(S / IS) ⊗[S] M` is the canonical model of `M / IM`.
@@ -25,7 +25,7 @@ abbrev Module.FlatAfterQuotientAlong
     (M : Type w) [AddCommGroup M] [Module S M] (m I : Ideal R) : Prop
 ```
 
-**`Module.exists_least_flattening_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L352).
+**`Module.exists_least_flattening_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L352).
 
 > Over a complete Noetherian local ring, there is a least ideal contained in the maximal ideal
 > such that the quotient module is flat at every prime lying over the maximal ideal.
@@ -48,7 +48,7 @@ theorem Module.exists_least_flattening_ideal
 
 [Tag 0527](https://stacks.math.columbia.edu/tag/0527) in the Stacks Project.
 
-**`Module.flatAlongZeroLocus_baseChange_iff_map_eq_bot`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L473).
+**`Module.flatAlongZeroLocus_baseChange_iff_map_eq_bot`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L473).
 
 > For the least ideal making the indicated quotient of `M` flat along the closed point, a local
 > map from `R` to a Noetherian local ring `R'` annihilates that ideal exactly when the base change
@@ -75,7 +75,7 @@ lemma Module.flatAlongZeroLocus_baseChange_iff_map_eq_bot
 
 [Tag 0528](https://stacks.math.columbia.edu/tag/0528) in the Stacks Project.
 
-**`Module.flatAlongZeroLocus_baseChange_iff_map_eq_bot_of_finiteType`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 1084](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L1084).
+**`Module.flatAlongZeroLocus_baseChange_iff_map_eq_bot_of_finiteType`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CompleteLocal.lean, line 1084](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/CompleteLocal.lean#L1084).
 
 > For the least ideal making the indicated quotient of `M` flat along the closed point, a local
 > map from `R` to an arbitrary local ring `R'` annihilates that ideal exactly when the base change
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.20, Tag 05LV](https://stacks.math.columbia.edu/tag/05LV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Landen connection formula and poly-Bernoulli numbers
 
-37 results, 29 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html).
+37 results, 29 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html).
 
 ## Pole series and Landen data
 
@@ -23,7 +23,7 @@ the matrix $g$ with rows $(a, b)$ and $(c, d)$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function `G_g(t)` before Table 1.
 
-Formalized by `MetaMathlibExt.linearFractionalPoleSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#linear-fractional-pole-series).
+Formalized by `MetaMathlibExt.linearFractionalPoleSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#linear-fractional-pole-series).
 
 ## The linear fractional pole series solves its defining equation
 
@@ -35,7 +35,7 @@ $\frac{cu}{a - cu}$, satisfies $(a - cu) \cdot F_{a,c}(u) = cu$ in $\mathbb{R}[[
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function `G_g(t)` before Table 1.
 
-Formalized by `MetaMathlibExt.linearFractionalPoleSeries_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#linear-fractional-pole-series-spec).
+Formalized by `MetaMathlibExt.linearFractionalPoleSeries_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#linear-fractional-pole-series-spec).
 
 ## Landen form series
 
@@ -51,7 +51,7 @@ $g \in GL_2(\mathbb{R})$ the last case does not occur.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the function `G_g(t)` before Table 1.
 
-Formalized by `MetaMathlibExt.landenFormSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-form-series).
+Formalized by `MetaMathlibExt.landenFormSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-form-series).
 
 ## Landen form series of the identity matrix
 
@@ -63,7 +63,7 @@ $\mathbb{R}[[u]]$; that is, $G_g(t) = 1/t$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Table 1.
 
-Formalized by `MetaMathlibExt.landenFormSeries_identity`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-form-series-identity).
+Formalized by `MetaMathlibExt.landenFormSeries_identity`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-form-series-identity).
 
 ## Formal integral against $du/u$
 
@@ -77,7 +77,7 @@ term.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the integrals defining `Li_k(g; (β, γ); z)`.
 
-Formalized by `MetaMathlibExt.integralDivX`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#integral-div-x).
+Formalized by `MetaMathlibExt.integralDivX`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#integral-div-x).
 
 ## The formal integral against $du/u$ is a right inverse of $z \, d/dz$
 
@@ -91,7 +91,7 @@ $z \, \frac{d}{dz} I(h) = h$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, the integrals defining `Li_k(g; (β, γ); z)`.
 
-Formalized by `MetaMathlibExt.integralDivX_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#integral-div-x-spec).
+Formalized by `MetaMathlibExt.integralDivX_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#integral-div-x-spec).
 
 ## Landen data
 
@@ -105,7 +105,7 @@ required.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2.
 
-Formalized by `MetaMathlibExt.LandenData`, a structure declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-data).
+Formalized by `MetaMathlibExt.LandenData`, a structure declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-data).
 
 ## Transformed Landen data
 
@@ -122,7 +122,7 @@ $\tilde g_i = \begin{pmatrix} 1 & 0 \\ c_0 - d_0 & -1 \end{pmatrix} g_i$ for $0 
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, display before Theorem 2.
 
-Formalized by `MetaMathlibExt.LandenData.tilde`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#tilde).
+Formalized by `MetaMathlibExt.LandenData.tilde`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#tilde).
 
 ## The transformation of Landen data is an involution
 
@@ -136,7 +136,7 @@ Then the transformed data of $\tilde g$ is $g$ itself: $\tilde{\tilde g} = g$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, remark before Theorem 2.
 
-Formalized by `MetaMathlibExt.LandenData.tilde_tilde`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#tilde-tilde).
+Formalized by `MetaMathlibExt.LandenData.tilde_tilde`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#tilde-tilde).
 
 ## Weighted form series
 
@@ -151,7 +151,7 @@ fraction with zero numerator and zero denominator being read as $0$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, definition of `Li_k(g; (β, γ); z)`.
 
-Formalized by `MetaMathlibExt.LandenData.formSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#form-series).
+Formalized by `MetaMathlibExt.LandenData.formSeries`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#form-series).
 
 ## Reversed recursion for Kamano's generalized multiple polylogarithm
 
@@ -179,7 +179,7 @@ zero entry anywhere gives $0$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, display (6) and the two inductive integrals before it.
 
-Formalized by `MetaMathlibExt.LandenData.polylogRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#polylog-rev).
+Formalized by `MetaMathlibExt.LandenData.polylogRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#polylog-rev).
 
 ## Kamano's generalized multiple polylogarithm
 
@@ -204,7 +204,7 @@ a zero entry gives $0$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, display (6).
 
-Formalized by `MetaMathlibExt.generalizedMultiplePolylog`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog).
+Formalized by `MetaMathlibExt.generalizedMultiplePolylog`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog).
 
 ## Initial value of the generalized multiple polylogarithm
 
@@ -219,7 +219,7 @@ $g_0$ and the integral of a power series is taken term by term.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, display (6).
 
-Formalized by `MetaMathlibExt.generalizedMultiplePolylog_one`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-one).
+Formalized by `MetaMathlibExt.generalizedMultiplePolylog_one`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-one).
 
 ## Recurrence for raising the last entry
 
@@ -235,7 +235,7 @@ and the integral of a power series is taken term by term.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2.
 
-Formalized by `MetaMathlibExt.generalizedMultiplePolylog_up`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-up).
+Formalized by `MetaMathlibExt.generalizedMultiplePolylog_up`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-up).
 
 ## Recurrence for appending the entry 1
 
@@ -251,7 +251,7 @@ and the integral of a power series is taken term by term.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2.
 
-Formalized by `MetaMathlibExt.generalizedMultiplePolylog_right`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-right).
+Formalized by `MetaMathlibExt.generalizedMultiplePolylog_right`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-right).
 
 ## Coefficient recursion for multiple polylogarithms
 
@@ -268,7 +268,7 @@ whose coefficient of $z^m$ is $c_{(k_r, \dots, k_1)}(m)$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of `Li_k(z)`.
 
-Formalized by `MetaMathlibExt.multiplePolylogCoeffRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-coeff-rev).
+Formalized by `MetaMathlibExt.multiplePolylogCoeffRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-coeff-rev).
 
 ## Multiple polylogarithm
 
@@ -283,7 +283,7 @@ in $\mathbb{R}[[z]]$; for the empty sequence it is the constant series $1$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.multiplePolylog`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog).
+Formalized by `MetaMathlibExt.multiplePolylog`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog).
 
 ## Depth-one multiple polylogarithm
 
@@ -295,7 +295,7 @@ $1/m^a$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.coeff_multiplePolylog_singleton`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#coeff-multiple-polylog-singleton).
+Formalized by `MetaMathlibExt.coeff_multiplePolylog_singleton`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#coeff-multiple-polylog-singleton).
 
 ## Coefficient recursion for the non-strict multiple polylogarithm
 
@@ -316,7 +316,7 @@ $\sum_{0 < m_1 \le \cdots \le m_r} z^{m_r} / (m_1^{k_1} \cdots m_r^{k_r})$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1, definition of `Li⋆_k(z)`.
 
-Formalized by `MetaMathlibExt.multiplePolylogStarCoeffRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-star-coeff-rev).
+Formalized by `MetaMathlibExt.multiplePolylogStarCoeffRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-star-coeff-rev).
 
 ## Non-strict multiple polylogarithm
 
@@ -336,7 +336,7 @@ empty list gives the constant series $1$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.multiplePolylogStar`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-star).
+Formalized by `MetaMathlibExt.multiplePolylogStar`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-star).
 
 ## Depth-one non-strict multiple polylogarithm
 
@@ -349,7 +349,7 @@ $\mathrm{Li}^{\star}_{(a)}(z) = \sum_{m \ge 1} z^m / m^a$ for $a \ge 1$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.coeff_multiplePolylogStar_singleton`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#coeff-multiple-polylog-star-singleton).
+Formalized by `MetaMathlibExt.coeff_multiplePolylogStar_singleton`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#coeff-multiple-polylog-star-singleton).
 
 ## Hoffman dual on reversed lists
 
@@ -368,7 +368,7 @@ entry $1$: the Hoffman dual of an index $k$ is the reverse of $R$ applied to the
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2, definition of Hoffman's dual index.
 
-Formalized by `MetaMathlibExt.hoffmanDualRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual-rev).
+Formalized by `MetaMathlibExt.hoffmanDualRev`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual-rev).
 
 ## Hoffman dual index
 
@@ -382,7 +382,7 @@ list is sent to the empty list and a list with an entry $0$ is sent to an unspec
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2.
 
-Formalized by `MetaMathlibExt.hoffmanDual`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual).
+Formalized by `MetaMathlibExt.hoffmanDual`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual).
 
 ## Small values of the Hoffman dual
 
@@ -393,7 +393,7 @@ $(3)^\vee = (1, 1, 1)$ and $(1, 2)^\vee = (2, 1)$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 2.
 
-Formalized by `MetaMathlibExt.hoffmanDual_small_values`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual-small-values).
+Formalized by `MetaMathlibExt.hoffmanDual_small_values`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#hoffman-dual-small-values).
 
 ## Landen exponential variable
 
@@ -406,7 +406,7 @@ $c_0 + d_0 \neq 0$; when $c_0 + d_0 = 0$ the inverse is taken to be $0$, so $z(t
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4, definition of `C_n^{(k, g, (β, γ))}`.
 
-Formalized by `MetaMathlibExt.landenExpVariable`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-exp-variable).
+Formalized by `MetaMathlibExt.landenExpVariable`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-exp-variable).
 
 ## Defining relation of the Landen exponential variable
 
@@ -419,7 +419,7 @@ Then $(c_0 e^t + d_0)\, z(t) = e^t - 1$ in $\mathbb{R}[[t]]$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.landenExpVariable_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-exp-variable-spec).
+Formalized by `MetaMathlibExt.landenExpVariable_spec`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#landen-exp-variable-spec).
 
 ## Generalized poly-Bernoulli numbers of the first kind
 
@@ -441,7 +441,7 @@ polylogarithm, into which the series $z(t)$ is substituted.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.generalizedPolyBernoulliC`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c).
+Formalized by `MetaMathlibExt.generalizedPolyBernoulliC`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c).
 
 ## Generalized poly-Bernoulli numbers of the second kind
 
@@ -463,7 +463,7 @@ polylogarithm, into which the series $z(t)$ is substituted.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.generalizedPolyBernoulliB`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-b).
+Formalized by `MetaMathlibExt.generalizedPolyBernoulliB`, a definition declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-b).
 
 ## Generalized poly-Bernoulli numbers $C_n$ as Taylor coefficients
 
@@ -485,7 +485,7 @@ generalized multiple polylogarithm.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.generalizedPolyBernoulliC_eq_coeff`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-eq-coeff).
+Formalized by `MetaMathlibExt.generalizedPolyBernoulliC_eq_coeff`, a theorem declared in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-eq-coeff).
 
 ## Landen connection formula
 
@@ -505,7 +505,7 @@ sum of $k'$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Theorem 1 (quoting Okuda and Ueno, Prop. 9).
 
-Stated but not proved: `MetaMathlibExt.multiplePolylog_landen_connection` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-landen-connection).
+Stated but not proved: `MetaMathlibExt.multiplePolylog_landen_connection` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multiple-polylog-landen-connection).
 
 ## Sum formula
 
@@ -524,7 +524,7 @@ is equivalent.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Proposition 1, Identity (7).
 
-Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-sum-formula).
+Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-sum-formula).
 
 ## Generalized Landen connection formula
 
@@ -545,7 +545,7 @@ needed. The invertibility of the $g_i$ is needed: with $a_i = c_i = 0$ the ident
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Theorem 2, Identity (8).
 
-Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_landen_connection` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-landen-conn).
+Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_landen_connection` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-landen-conn).
 
 ## Landen formula in the classical case
 
@@ -562,7 +562,7 @@ in $\mathbb{R}[[z]]$, where $\frac{z}{z - 1} = -\sum_{n \ge 1} z^n$ is substitut
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Theorem 3, Identity (10).
 
-Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_landen_connection_classical` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-landen-conn-2).
+Stated but not proved: `MetaMathlibExt.generalizedMultiplePolylog_landen_connection_classical` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-multiple-polylog-landen-conn-2).
 
 ## Duality of multi-poly-Bernoulli-star numbers
 
@@ -582,7 +582,7 @@ determine $F$ and $G$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Theorem 4 (quoting Imatomi, Theorem 3.2), with generating functions (13) and (14).
 
-Stated but not proved: `MetaMathlibExt.multiPolyBernoulliStar_duality` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multi-poly-bernoulli-star-duality).
+Stated but not proved: `MetaMathlibExt.multiPolyBernoulliStar_duality` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#multi-poly-bernoulli-star-duality).
 
 ## Sum formula for generalized poly-Bernoulli numbers $C_n$
 
@@ -603,7 +603,7 @@ integers with sum $k$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Proposition 2, Identity (16).
 
-Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliC_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-sum-formula).
+Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliC_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-sum-formula).
 
 ## Sum formula for generalized poly-Bernoulli numbers $B_n$
 
@@ -624,7 +624,7 @@ integers with sum $k$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Proposition 2, Identity (17).
 
-Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliB_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-b-sum-formula).
+Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliB_sum_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 487](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L487). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-b-sum-formula).
 
 ## Landen formula for generalized poly-Bernoulli numbers $C_n$
 
@@ -662,7 +662,7 @@ identity asks for $1 = -1$.
 
 - Ken Kamano, *A Generalization of the Landen Connection Formula and Generalized Poly-Bernoulli Numbers*, INTEGERS 24 (2024), Article A77, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliC_landen` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-landen).
+Stated but not proved: `MetaMathlibExt.generalizedPolyBernoulliC_landen` is written with `theorem_wanted` in [WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean, line 510](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KamanoLandenPolyBernoulliWanted.lean#L510). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html#generalized-poly-bernoulli-c-landen).
 
 ## Depends on
 
@@ -671,4 +671,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Landen connection formula and poly-Bernoulli numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/euler-genocchi-poly-bernoulli/landen-connection-formula-and-poly-bernoulli-num)

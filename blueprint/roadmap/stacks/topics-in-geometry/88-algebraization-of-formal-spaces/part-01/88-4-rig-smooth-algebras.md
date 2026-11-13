@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.4 Rig-smooth algebras
 
-Section 88.4 of the Stacks Project, [Tag 0GAH](https://stacks.math.columbia.edu/tag/0GAH). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.4 of the Stacks Project, [Tag 0GAH](https://stacks.math.columbia.edu/tag/0GAH). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GAI, a definition
 
 [Tag 0GAI](https://stacks.math.columbia.edu/tag/0GAI) in the Stacks Project.
 
-**`Rig.IsRigSmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean#L60).
+**`Rig.IsRigSmooth`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothDefs.lean#L60).
 
 > **Stacks Project, Tag 0GAI.** Rig-smoothness of an adically finite type `A`-algebra over
 > `(A, I)`: some uniform power of `I` annihilates `Ext¹` from its completed naive cotangent
@@ -28,7 +28,7 @@ public def IsRigSmooth (B : AdicFiniteTypeAlgebra.{u, v} A I) : Prop
 
 [Tag 0GAJ](https://stacks.math.columbia.edu/tag/0GAJ) in the Stacks Project.
 
-**`Rig.isRigSmooth_iff_cotangentCohomologyCondition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L377). The attribute's comment: “conditions (1) and (2)”.
+**`Rig.isRigSmooth_iff_cotangentCohomologyCondition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L377). The attribute's comment: “conditions (1) and (2)”.
 
 > Rig-smoothness is equivalent to the cohomological criterion for the completed naive
 > cotangent complex.
@@ -40,7 +40,7 @@ public theorem isRigSmooth_iff_cotangentCohomologyCondition
     Rig.IsRigSmooth B ↔ HasCotangentCohomologyCondition B P
 ```
 
-**`Rig.isRigSmooth_iff_cotangentFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L403). The attribute's comment: “conditions (1) and (3)”.
+**`Rig.isRigSmooth_iff_cotangentFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L403). The attribute's comment: “conditions (1) and (3)”.
 
 > Rig-smoothness is equivalent to uniform factorization of powers of the ideal of
 > definition through the differential of a chosen completed naive cotangent complex.
@@ -52,7 +52,7 @@ public theorem isRigSmooth_iff_cotangentFactorization
     Rig.IsRigSmooth B ↔ HasCotangentFactorization B P
 ```
 
-**`Rig.isRigSmooth_iff_hasJacobianCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L459). The attribute's comment: “conditions (1) and (4)”.
+**`Rig.isRigSmooth_iff_hasJacobianCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L459). The attribute's comment: “conditions (1) and (4)”.
 
 > Rig-smoothness is equivalent to a finite Jacobian cover away from the ideal of
 > definition.
@@ -64,7 +64,7 @@ public theorem isRigSmooth_iff_hasJacobianCover
     Rig.IsRigSmooth B ↔ HasJacobianCover B P
 ```
 
-**`Rig.isElementPowerTorsion_hneg_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L527). The attribute's comment: “the proof of (4) ⟹ (2): H⁻¹(NL^∧) is b\_l-power torsion”.
+**`Rig.isElementPowerTorsion_hneg_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L527). The attribute's comment: “the proof of (4) ⟹ (2): H⁻¹(NL^∧) is b\_l-power torsion”.
 
 > **Stacks 0GAJ, inside the proof of (4) ⟹ (2).**  Let `b` carry a Jacobian chart: a
 > subset `T` of `m` of the variables and `m` elements `f₁, …, fₘ` of the presentation ideal `J`
@@ -88,7 +88,7 @@ public theorem isElementPowerTorsion_hneg_of_jacobianChart
       (P.toAlgHom b)
 ```
 
-**`Rig.free_localized_hzero_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean#L411). The attribute's comment: “the proof of (4) ⟹ (2): H⁰(NL^∧) is finite free after inverting b\_l”.
+**`Rig.free_localized_hzero_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean#L411). The attribute's comment: “the proof of (4) ⟹ (2): H⁰(NL^∧) is finite free after inverting b\_l”.
 
 > **Stacks 0GAJ, inside the proof of (4) ⟹ (2).**  Let `b` carry a Jacobian chart: a subset
 > `T` of `m` of the variables and `m` elements `f₁, …, fₘ` of the presentation ideal `J` whose
@@ -120,7 +120,7 @@ public theorem free_localized_hzero_of_jacobianChart
 
 [Tag 0GAK](https://stacks.math.columbia.edu/tag/0GAK) in the Stacks Project.
 
-**`Rig.isRigSmooth_adicCompletionObj_of_smoothAwayFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean, line 705](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean#L705). The attribute's comment: “part (1)”.
+**`Rig.isRigSmooth_adicCompletionObj_of_smoothAwayFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean#L703). The attribute's comment: “part (1)”.
 
 > **Stacks 0GAK (1).** If `Spec(B) → Spec(A)` is smooth over `Spec(A) ∖ V(I)`, then the
 > `I`-adic completion `B^` is rig-smooth over `(A, I)`.
@@ -130,7 +130,7 @@ public theorem isRigSmooth_adicCompletionObj_of_smoothAwayFrom (h : SmoothAwayFr
     IsRigSmooth (adicCompletionObj I (B := B))
 ```
 
-**`Rig.exists_sub_one_mem_and_smoothAwayFrom_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean#L747). The attribute's comment: “part (2)”.
+**`Rig.exists_sub_one_mem_and_smoothAwayFrom_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Restricted/RigSmoothSmoothLocus.lean#L745). The attribute's comment: “part (2)”.
 
 > **Stacks 0GAK (2).** If the `I`-adic completion `B^` is rig-smooth over `(A, I)`, then there
 > is `g ∈ 1 + IB` such that `Spec(B_g) → Spec(A)` is smooth over `Spec(A) ∖ V(I)`.
@@ -145,7 +145,7 @@ public theorem exists_sub_one_mem_and_smoothAwayFrom_of_isRigSmooth
 
 [Tag 0GAL](https://stacks.math.columbia.edu/tag/0GAL) in the Stacks Project.
 
-**`Rig.smul_ext_one_completedBaseChangeOfIsNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeExt.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeExt.lean#L556).
+**`Rig.smul_ext_one_completedBaseChangeOfIsNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeExt.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/NaiveCotangent/BaseChangeExt.lean#L555).
 
 > **Stacks Project, Tag 0GAL.**  Let `(A₁, I₁) → (A₂, I₂)` be as in Stacks Remark 0AL5 — a
 > ring map `A₁ → A₂` of Noetherian rings with ideals `I₁ ⊆ A₁`, `I₂ ⊆ A₂` such that `I₁ ^ c`
@@ -186,7 +186,7 @@ public theorem smul_ext_one_completedBaseChangeOfIsNoetherianRing
 
 [Tag 0GAM](https://stacks.math.columbia.edu/tag/0GAM) in the Stacks Project.
 
-**`Rig.isRigSmooth_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothBaseChange.lean#L135).
+**`Rig.isRigSmooth_completedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothBaseChange.lean#L135).
 
 > **Stacks Project, Tag 0GAM.** Rig-smoothness is preserved by completed base change along a
 > map of Noetherian rings whose source and target ideals define the same closed subset of the
@@ -200,7 +200,7 @@ public theorem isRigSmooth_completedBaseChange
     IsRigSmooth (C.functor.obj B₁)
 ```
 
-**`Rig.isRigSmooth_completedBaseChangedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothCompletedBaseChange.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigSmoothCompletedBaseChange.lean#L86).
+**`Rig.isRigSmooth_completedBaseChangedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigSmoothCompletedBaseChange.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigSmoothCompletedBaseChange.lean#L86).
 
 > **Stacks Project, Tag 0GAM.** Let `A₁ → A₂` be a map of Noetherian rings and let
 > `I₁ ⊆ A₁`, `I₂ ⊆ A₂` be ideals with `V(I₁ A₂) = V(I₂)`.  If `B₁` is rig-smooth over
@@ -224,4 +224,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.4, Tag 0GAH](https://stacks.math.columbia.edu/tag/0GAH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

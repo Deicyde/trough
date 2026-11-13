@@ -7,7 +7,7 @@ statement: formalized
 
 # (ℓ, k)-regular partitions
 
-15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html).
+15 results, 3 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html).
 
 ## Number of $(\ell, k)$-regular partitions
 
@@ -19,7 +19,7 @@ $n$ none of whose parts is divisible by $\ell$ or by $k$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Section 1 (definition of `b_{ℓ,k}(n)`).
 
-Formalized by `MetaMathlibExt.regularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count).
+Formalized by `MetaMathlibExt.regularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count).
 
 ## The $(4, 9)$-regular partition count at zero
 
@@ -31,7 +31,7 @@ $4$ or by $9$, equals $1$: the only such partition is the empty partition.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Section 1 (definition of `b_{ℓ,k}(n)`).
 
-Formalized by `MetaMathlibExt.regularPartitionCount_four_nine_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-zero).
+Formalized by `MetaMathlibExt.regularPartitionCount_four_nine_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-zero).
 
 ## For small $n$ every partition is $(\ell, k)$-regular
 
@@ -45,7 +45,7 @@ $(\ell, k)$-regular, so $b_{\ell,k}(n) = p(n)$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Section 1 (definition of `b_{ℓ,k}(n)`).
 
-Formalized by `MetaMathlibExt.regularPartitionCount_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-of-lt).
+Formalized by `MetaMathlibExt.regularPartitionCount_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-of-lt).
 
 ## Parity of $(4, p)$-regular partitions in nonresidue progressions
 
@@ -62,7 +62,7 @@ natural-number representative.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 1 (`jis-2025-25.6.1-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_prime_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-prime-mod-t).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_prime_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-prime-mod-t).
 
 ## Parity of $(2, p)$-regular partitions in nonresidue progressions
 
@@ -76,7 +76,7 @@ $b_{2,p}(pn + r) \equiv 0 \pmod 2$ for every natural number $n$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 2 (`jis-2025-25.6.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_two_prime_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-two-prime-mod-tw).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_two_prime_mod_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-two-prime-mod-tw).
 
 ## Congruences modulo $12$ for $b_{4,9}$ along powers of $2$
 
@@ -88,7 +88,7 @@ $\alpha \ge 3$ and $n$, $b_{4,9}(2^\alpha n + 6 \cdot 2^{\alpha - 3} + 1) \equiv
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 3 (`jis-2025-25.6.1-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_mod_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-mod-tw).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_mod_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-mod-tw).
 
 ## The 2-dissection of $f_9/f_1$
 
@@ -107,7 +107,7 @@ with both sides multiplied by $f_1 f_2^3 f_6 f_{12} f_{36}$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 7 (`jis-2025-25.6.1-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.f9_div_f1_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f9-div-f1-two-dissection).
+Stated but not proved: `MetaMathlibExt.f9_div_f1_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f9-div-f1-two-dissection).
 
 ## The 2-dissection of $f_3/f_1^3$
 
@@ -126,7 +126,7 @@ sides multiplied by $f_1^3 f_2^9 f_{12}^2$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 8 (`jis-2025-25.6.1-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.f3_div_f1_cube_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f3-div-f1-cube-two-dissection).
+Stated but not proved: `MetaMathlibExt.f3_div_f1_cube_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f3-div-f1-cube-two-dissection).
 
 ## The 2-dissection of $f_3^2/f_1^2$
 
@@ -146,7 +146,7 @@ $f_1^2 f_2^5 f_8 f_{12} f_{24}$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 9 (`jis-2025-25.6.1-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.f3_sq_div_f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f3-sq-div-f1-sq-two-dissection).
+Stated but not proved: `MetaMathlibExt.f3_sq_div_f1_sq_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#f3-sq-div-f1-sq-two-dissection).
 
 ## The 2-dissections of $1/f_1^4$, $1/f_1^8$ and $1/f_1^{12}$
 
@@ -183,7 +183,7 @@ $1/f_1^{12} = f_4^{42}/(f_2^{42} f_8^{12}) + 12q f_4^{30}/(f_2^{38} f_8^4) +
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 10 (`jis-2025-25.6.1-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.one_div_f1_pow_four_eight_twelve_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#one-div-f1-pow-four-eight-twelve-two-dis).
+Stated but not proved: `MetaMathlibExt.one_div_f1_pow_four_eight_twelve_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#one-div-f1-pow-four-eight-twelve-two-dis).
 
 ## The 2-dissection of $1/(f_1 f_3)$
 
@@ -204,7 +204,7 @@ $f_1 f_3 f_2^4 f_4 f_6^4 f_8^2 f_{12} f_{24}^2$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Lemma 11 (`jis-2025-25.6.1-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.one_div_f1_f3_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#one-div-f1-f3-two-dissection).
+Stated but not proved: `MetaMathlibExt.one_div_f1_f3_two_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#one-div-f1-f3-two-dissection).
 
 ## Generating function of $b_{4,9}$ at odd arguments
 
@@ -223,7 +223,7 @@ $\sum_{n \ge 0} b_{4,9}(2n + 1) q^n = f_2^3 f_3 / (f_1^3 f_6)$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 12 (`jis-2025-25.6.1-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-odd-ge).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-odd-ge).
 
 ## An internal congruence modulo $4$ for $b_{4,9}$
 
@@ -235,7 +235,7 @@ $b_{4,9}(16n + 1) \equiv b_{4,9}(4n + 1) \pmod 4$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 13 (`jis-2025-25.6.1-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_internal_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-intern).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_internal_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-intern).
 
 ## $b_{4,9}(16n + 13)$ is divisible by $4$
 
@@ -247,7 +247,7 @@ $b_{4,9}(16n + 13) \equiv 0 \pmod 4$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 14 (`jis-2025-25.6.1-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_sixteen_mul_add_thirteen` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-sixtee).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_sixteen_mul_add_thirteen` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-sixtee).
 
 ## $b_{4,9}(32n + 25)$ is divisible by $4$
 
@@ -259,7 +259,7 @@ $b_{4,9}(32n + 25) \equiv 0 \pmod 4$.
 
 - Manjil P. Saikia and James A. Sellers, *Generalizing Recent Results of Kathiravan, Majumdar, Sangale, and Srinivas on `(ℓ, k)`-regular Partitions*, Journal of Integer Sequences 28 (2025), Article 25.6.1, Theorem 15 (`jis-2025-25.6.1-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_thirtyTwo_mul_add_twentyFive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-thirty).
+Stated but not proved: `MetaMathlibExt.regularPartitionCount_four_nine_thirtyTwo_mul_add_twentyFive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularPartitionsLKWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html#regular-partition-count-four-nine-thirty).
 
 ## Depends on
 
@@ -268,4 +268,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: (ℓ, k)-regular partitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/k-regular-partitions)

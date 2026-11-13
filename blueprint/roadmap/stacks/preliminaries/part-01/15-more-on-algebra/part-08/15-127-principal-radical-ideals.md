@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.127 Principal radical ideals
 
-Section 15.127 of the Stacks Project, [Tag 0BWR](https://stacks.math.columbia.edu/tag/0BWR). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.127 of the Stacks Project, [Tag 0BWR](https://stacks.math.columbia.edu/tag/0BWR). 10 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BWS, a lemma
 
 [Tag 0BWS](https://stacks.math.columbia.edu/tag/0BWS) in the Stacks Project.
 
-**`length_quotient_span_pow_le_and_eq_of_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L152). References: EGA IV (21.10.13), “(i) for M=A”.
+**`length_quotient_span_pow_le_and_eq_of_mem_nonZeroDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L152). References: EGA IV (21.10.13), “(i) for M=A”.
 
 > **Stacks 0BWS.** The quotients by powers of a parameter in a one-dimensional Noetherian
 > local ring have finite length. Their lengths grow at most linearly, and grow exactly linearly
@@ -36,7 +36,7 @@ theorem length_quotient_span_pow_le_and_eq_of_mem_nonZeroDivisors
 
 [Tag 0BWT](https://stacks.math.columbia.edu/tag/0BWT) in the Stacks Project.
 
-**`natCard_minimalPrimes_le_length_quotient_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L392).
+**`natCard_minimalPrimes_le_length_quotient_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L392).
 
 > **Stacks 0BWT.** The number of minimal primes of a one-dimensional Noetherian local ring is
 > at most the length of its quotient by a parameter avoiding all minimal primes.
@@ -55,7 +55,7 @@ theorem natCard_minimalPrimes_le_length_quotient_span_singleton
 
 [Tag 0BWU](https://stacks.math.columbia.edu/tag/0BWU) in the Stacks Project.
 
-**`exists_isSystemOfParameters_cons_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L176).
+**`exists_isSystemOfParameters_cons_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L176).
 
 > **Stacks 0BWU.** In a Noetherian local ring of dimension `d > 1`, an element `f` of
 > the maximal ideal which belongs to no minimal prime extends to a system of parameters
@@ -77,7 +77,7 @@ theorem exists_isSystemOfParameters_cons_of_avoids_minimalPrimes
 
 [Tag 0BWV](https://stacks.math.columbia.edu/tag/0BWV) in the Stacks Project.
 
-**`exists_isSystemOfParameters_pair_add_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L255).
+**`exists_isSystemOfParameters_pair_add_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L255).
 
 > **Stacks 0BWV.** In a two-dimensional Noetherian local ring, an element `f` of the maximal
 > ideal which belongs to no minimal prime can be completed by an element `g` to a system of
@@ -102,7 +102,7 @@ theorem exists_isSystemOfParameters_pair_add_of_avoids_minimalPrimes
 
 [Tag 0AXH](https://stacks.math.columbia.edu/tag/0AXH) in the Stacks Project.
 
-**`exists_nonzero_mem_isReduced_quotient_of_height_one_primes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L661).
+**`exists_nonzero_mem_isReduced_quotient_of_height_one_primes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L661).
 
 > **Stacks 0AXH.** In a two-dimensional Noetherian normal local domain, finitely many
 > height-one prime ideals contain a common nonzero element whose principal quotient is reduced.
@@ -119,7 +119,7 @@ theorem exists_nonzero_mem_isReduced_quotient_of_height_one_primes
 
 [Tag 0AXI](https://stacks.math.columbia.edu/tag/0AXI) in the Stacks Project.
 
-**`exists_isReduced_quotient_and_dvd_pow`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L742).
+**`exists_isReduced_quotient_and_dvd_pow`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 742](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L742).
 
 > **Stacks 0AXI.** In a two-dimensional Noetherian normal local domain, every nonzero element of
 > the maximal ideal divides a power of an element whose principal quotient is reduced.
@@ -136,7 +136,7 @@ lemma exists_isReduced_quotient_and_dvd_pow
 
 [Tag 0BWW](https://stacks.math.columbia.edu/tag/0BWW) in the Stacks Project.
 
-**`multiplicity_le_length_quotient_of_isSystemOfParameters`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L672).
+**`multiplicity_le_length_quotient_of_isSystemOfParameters`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L672).
 
 > **Stacks 0BWW.** If `I` is generated by a system of parameters and the leading coefficient
 > of its Hilbert–Samuel polynomial is `e / d!`, then `e ≤ length_R(R / I)`.
@@ -154,7 +154,7 @@ theorem multiplicity_le_length_quotient_of_isSystemOfParameters
 
 [Tag 0BWX](https://stacks.math.columbia.edu/tag/0BWX) in the Stacks Project.
 
-**`natCard_fullDimensionalMinimalPrimes_le_length_quotient_of_isSystemOfParameters`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L1195).
+**`natCard_fullDimensionalMinimalPrimes_le_length_quotient_of_isSystemOfParameters`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Length.lean#L1195).
 
 > **Stacks 0BWX.** In a Noetherian local ring, the number of minimal primes whose quotient
 > has the full dimension of the ring is at most the length of the quotient by a system of
@@ -174,7 +174,7 @@ theorem natCard_fullDimensionalMinimalPrimes_le_length_quotient_of_isSystemOfPar
 
 [Tag 0BWY](https://stacks.math.columbia.edu/tag/0BWY) in the Stacks Project.
 
-**`exists_isSystemOfParameters_cons_stable_under_add_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L280).
+**`exists_isSystemOfParameters_cons_stable_under_add_of_avoids_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/SystemOfParameters.lean#L280).
 
 > **Stacks 0BWY.** A parameter in the maximal ideal of a Noetherian local ring which avoids all
 > minimal primes can be completed to a system of parameters such that perturbing the parameter by
@@ -201,7 +201,7 @@ theorem exists_isSystemOfParameters_cons_stable_under_add_of_avoids_minimalPrime
 
 [Tag 0BWZ](https://stacks.math.columbia.edu/tag/0BWZ) in the Stacks Project.
 
-**`exists_nonzero_mem_isReduced_quotient_of_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 1304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L1304).
+**`exists_nonzero_mem_isReduced_quotient_of_isRadical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean, line 1304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/PrincipalRadical/Basic.lean#L1304).
 
 > **Stacks 0BWZ.** A nonzero radical ideal in a catenary Noetherian local normal domain
 > contains a nonzero element whose principal quotient is reduced.
@@ -221,4 +221,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.127, Tag 0BWR](https://stacks.math.columbia.edu/tag/0BWR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

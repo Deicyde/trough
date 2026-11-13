@@ -7,7 +7,7 @@ statement: formalized
 
 # Singularity of random Bernoulli matrices
 
-5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html).
+5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html).
 
 ## Smallest singular value of a matrix
 
@@ -18,14 +18,14 @@ $\sigma_{\min}(M) = \inf_{x \in \mathbb{K}^m,\ \lVert x \rVert_2 = 1} \lVert Mx 
 $\lVert \cdot \rVert_2$ is the Euclidean norm. When $m$ is empty there are no unit vectors, and
 $\sigma_{\min}(M) = 0$.
 
-Formalized by `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.σ_min`, a definition declared in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#min).
+Formalized by `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.σ_min`, a definition declared in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#min).
 
 ## Rademacher measure on the real line
 
 The Rademacher measure is the probability measure on
 $\mathbb{R}$ that assigns mass $1/2$ to $1$ and mass $1/2$ to $-1$.
 
-Formalized by `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.rademacherMeasure`, a definition declared in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#rademacher-measure).
+Formalized by `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.rademacherMeasure`, a definition declared in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#rademacher-measure).
 
 ## Tikhomirov's Theorem A: smallest singular value of shifted Bernoulli matrices
 
@@ -43,7 +43,7 @@ $$P\bigl(\sigma_{\min}(B + sJ) \le t / \sqrt{n}\bigr) \le (1 - p + \varepsilon)^
 
 - K. Tikhomirov, `Singularity of random Bernoulli matrices`, Annals of Math, 191 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_random_bernoulli_matrices` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.theorem_A` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#theorem-a).
+Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.theorem_A` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#theorem-a).
 
 ## Singularity probability of Bernoulli matrices
 
@@ -57,7 +57,7 @@ that $P_n(\det B_n = 0) = (1 - p + o(n))^n$ for every $n \ge 1$.
 
 - K. Tikhomirov, `Singularity of random Bernoulli matrices`, Annals of Math, 191 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_random_bernoulli_matrices` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_1` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#corollary-1).
+Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_1` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#corollary-1).
 
 ## Singularity probability of Rademacher matrices
 
@@ -71,7 +71,7 @@ $P_n(\det M_n = 0) = (1/2 + o(n))^n$ for every $n \ge 1$.
 
 - K. Tikhomirov, `Singularity of random Bernoulli matrices`, Annals of Math, 191 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_random_bernoulli_matrices` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_2` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#corollary-2).
+Stated but not proved: `MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_2` is written with `theorem_wanted` in [WantedExt/Probability/RandomBernoulliMatricesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/RandomBernoulliMatricesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html#corollary-2).
 
 ## Depends on
 
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Singularity of random Bernoulli matrices](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/high-dimensional-probability/singularity-of-random-bernoulli-matrices)

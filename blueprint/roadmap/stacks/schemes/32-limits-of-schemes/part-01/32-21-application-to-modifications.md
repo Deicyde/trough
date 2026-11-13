@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.21 Application to modifications
 
-Section 32.21 of the Stacks Project, [Tag 0B3W](https://stacks.math.columbia.edu/tag/0B3W). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.21 of the Stacks Project, [Tag 0B3W](https://stacks.math.columbia.edu/tag/0B3W). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B3X, a lemma
 
 [Tag 0B3X](https://stacks.math.columbia.edu/tag/0B3X) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.finitePresentationAwayBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Modifications.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Modifications.lean#L308).
+**`AlgebraicGeometry.GlueingNearPoint.finitePresentationAwayBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Modifications.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Modifications.lean#L308).
 
 > **Stacks Project, Tag 0B3X.** Let `s` be a closed point of a scheme `S` whose open
 > complement `U = S ∖ {s}` has quasi-compact inclusion.  Base change along
@@ -32,7 +32,7 @@ theorem finitePresentationAwayBaseChange_isEquivalence (S : Scheme.{u}) (s : S)
 
 [Tag 0BFN](https://stacks.math.columbia.edu/tag/0BFN) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.isSeparated_iff_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L131). The attribute's comment: “separated”.
+**`AlgebraicGeometry.GlueingNearPoint.isSeparated_iff_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L131). The attribute's comment: “separated”.
 
 > **Stacks Project, Tag 0BFN (separated case).** A morphism of finite presentation to `S` which
 > is an isomorphism over the complement of a closed point `s` is separated exactly when its base
@@ -46,7 +46,7 @@ theorem isSeparated_iff_isSeparated_baseChange (S : Scheme.{u}) (s : S)
       IsSeparated ((finitePresentationAwayBaseChange S s hs).obj X).obj.hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.isProper_iff_isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L144). The attribute's comment: “proper”.
+**`AlgebraicGeometry.GlueingNearPoint.isProper_iff_isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L144). The attribute's comment: “proper”.
 
 > **Stacks Project, Tag 0BFN (proper case).** A morphism of finite presentation to `S` which is
 > an isomorphism over the complement of a closed point `s` is proper exactly when its base change
@@ -60,7 +60,7 @@ theorem isProper_iff_isProper_baseChange (S : Scheme.{u}) (s : S)
       IsProper ((finitePresentationAwayBaseChange S s hs).obj X).obj.hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.isFinite_iff_isFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L157). The attribute's comment: “finite”.
+**`AlgebraicGeometry.GlueingNearPoint.isFinite_iff_isFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L157). The attribute's comment: “finite”.
 
 > **Stacks Project, Tag 0BFN (finite case).** A morphism of finite presentation to `S` which is
 > an isomorphism over the complement of a closed point `s` is finite exactly when its base change
@@ -74,7 +74,7 @@ theorem isFinite_iff_isFinite_baseChange (S : Scheme.{u}) (s : S)
       IsFinite ((finitePresentationAwayBaseChange S s hs).obj X).obj.hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.etale_iff_etale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L170). The attribute's comment: “etale”.
+**`AlgebraicGeometry.GlueingNearPoint.etale_iff_etale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/ModificationProperties.lean#L170). The attribute's comment: “etale”.
 
 > **Stacks Project, Tag 0BFN (étale case).** A morphism of finite presentation to `S` which is
 > an isomorphism over the complement of a closed point `s` is étale exactly when its base change
@@ -95,4 +95,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.21, Tag 0B3W](https://stacks.math.columbia.edu/tag/0B3W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,37 +1,50 @@
 ---
 declaration: section
 origin: cited
-lean: LeftAdjointsPreserveFiniteLimits, CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi
+lean: SheafToposMorphism, SheafToposMorphism.comp, CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi
 statement: formalized
 proof: formalized
 ---
 
 # 7.15 Topoi
 
-Section 7.15 of the Stacks Project, [Tag 00X9](https://stacks.math.columbia.edu/tag/00X9). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.15 of the Stacks Project, [Tag 00X9](https://stacks.math.columbia.edu/tag/00X9). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00XA, a definition
 
 [Tag 00XA](https://stacks.math.columbia.edu/tag/00XA) in the Stacks Project.
 
-**`LeftAdjointsPreserveFiniteLimits`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L25).
+**`SheafToposMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L38). The attribute's comment: “(1); the composition (2) is `SheafToposMorphism.comp`”.
 
-> **Stacks 00XA.** A *topos* is a category `Sheaf J A` of sheaves on a site, and a *morphism of
-> topoi* `f` from `Sheaf K A` to `Sheaf J A` is a pair of functors `f_* : Sheaf K A ⥤ Sheaf J A` and
-> `f⁻¹ : Sheaf J A ⥤ Sheaf K A` such that `f⁻¹ ⊣ f_*` bifunctorially and `f⁻¹` is left exact. This
-> records the second requirement: the left adjoint of such a pair preserves finite limits.
+> **Stacks 00XA (1).** Let `(C, J)` and `(D, K)` be sites. A *morphism of topoi* `f` from
+> `Sh(D)` to `Sh(C)` is a pair of functors `f_* : Sh(D) ⥤ Sh(C)` and `f⁻¹ : Sh(C) ⥤ Sh(D)`
+> together with an adjunction `f⁻¹ ⊣ f_*` (that is, `Mor(f⁻¹ G, F) = Mor(G, f_* F)` bifunctorially)
+> such that `f⁻¹` commutes with finite limits. Here `Sh(C)` is the category of sheaves of sets
+> `Sheaf J (Type w)`; the fields are `pushforward` (`f_*`), `inverseImage` (`f⁻¹`), `adj` and
+> `preservesFiniteLimits` of `MorphismOfTopoi`.
 
 ```lean
-def LeftAdjointsPreserveFiniteLimits (C : Type*) [Category C] (J : GrothendieckTopology C)
-    (D : Type*) [Category D] (K : GrothendieckTopology D)
-    (A : Type*) [Category A] : Prop
+abbrev SheafToposMorphism {C : Type u₁} [Category.{v₁} C] (J : GrothendieckTopology C)
+    {D : Type u₂} [Category.{v₂} D] (K : GrothendieckTopology D)
+```
+
+**`SheafToposMorphism.comp`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposDefs.lean#L53). The attribute's comment: “(2)”.
+
+> **Stacks 00XA (2).** Given morphisms of topoi `f : Sh(D) → Sh(C)` and `g : Sh(E) → Sh(D)`,
+> the composition `f ∘ g : Sh(E) → Sh(C)` is the morphism of topoi given by the functors
+> `(f ∘ g)_* = f_* ∘ g_*` and `(f ∘ g)⁻¹ = g⁻¹ ∘ f⁻¹` (see `pushforward_comp` and
+> `inverseImage_comp`).
+
+```lean
+abbrev comp (f : SheafToposMorphism.{w} J K) (g : SheafToposMorphism.{w} K L) :
+    SheafToposMorphism.{w} J L
 ```
 
 ## Tag 00XC, a lemma
 
 [Tag 00XC](https://stacks.math.columbia.edu/tag/00XC) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean#L99).
+**`CategoryTheory.Functor.IsMorphismOfSites.morphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/MorphismOfTopoi.lean#L99).
 
 > Given a morphism of sites `f : D → C`, i.e. a continuous functor `u : C ⥤ D` whose associated
 > functor `u_s` on sheaves of sets is exact, the pair `(f⁻¹ = u_s, f_* = u^s)` is a morphism of topoi
@@ -53,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.15, Tag 00X9](https://stacks.math.columbia.edu/tag/00X9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

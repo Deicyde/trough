@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.33 Properties of morphisms of germs local on source-and-target
 
-Section 35.33 of the Stacks Project, [Tag 04R5](https://stacks.math.columbia.edu/tag/04R5). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.33 of the Stacks Project, [Tag 04R5](https://stacks.math.columbia.edu/tag/04R5). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04NB, a definition
 
 [Tag 04NB](https://stacks.math.columbia.edu/tag/04NB) in the Stacks Project.
 
-**`AlgebraicGeometry.MorphismOfGerms.IsEtaleLocalOnSourceAndTarget`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L66).
+**`AlgebraicGeometry.MorphismOfGerms.IsEtaleLocalOnSourceAndTarget`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/Local.lean#L66).
 
 > A property of morphisms of germs of schemes is étale local on the source and target if it
 > is invariant under commutative squares with étale vertical arrows.
@@ -28,7 +28,7 @@ structure MorphismOfGerms.IsEtaleLocalOnSourceAndTarget
 
 [Tag 04R6](https://stacks.math.columbia.edu/tag/04R6) in the Stacks Project.
 
-**`AlgebraicGeometry.MorphismOfGerms.hasRepresentativeWithProperty_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/InducedProperty.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/InducedProperty.lean#L108).
+**`AlgebraicGeometry.MorphismOfGerms.hasRepresentativeWithProperty_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/InducedProperty.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/InducedProperty.lean#L108).
 
 > Étale locality on the source and target of a property of morphisms of schemes passes to
 > the property it induces on morphisms of germs.
@@ -44,7 +44,7 @@ theorem hasRepresentativeWithProperty_isEtaleLocalOnSourceAndTarget
 
 [Tag 04R7](https://stacks.math.columbia.edu/tag/04R7) in the Stacks Project.
 
-**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.iff_forall_hasRepresentativeWithProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/EtaleLocalCriterion.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/EtaleLocalCriterion.lean#L53).
+**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.iff_forall_hasRepresentativeWithProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/EtaleLocalCriterion.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/EtaleLocalCriterion.lean#L53).
 
 > A property of morphisms of schemes which is étale local on the source and target holds for
 > a morphism exactly when the associated property of morphisms of germs holds for every induced
@@ -62,7 +62,7 @@ theorem IsEtaleLocalOnSourceAndTarget.iff_forall_hasRepresentativeWithProperty
 
 [Tag 04ND](https://stacks.math.columbia.edu/tag/04ND) in the Stacks Project.
 
-**`AlgebraicGeometry.MorphismOfGerms.isEtaleLocalOnSourceAndTarget_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/GermSourceAndTarget/Flat.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/GermSourceAndTarget/Flat.lean#L461).
+**`AlgebraicGeometry.MorphismOfGerms.isEtaleLocalOnSourceAndTarget_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/GermSourceAndTarget/Flat.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/GermSourceAndTarget/Flat.lean#L461).
 
 > Flatness of the map on local rings of a morphism of germs is étale local on
 > both source and target.
@@ -76,7 +76,7 @@ theorem isEtaleLocalOnSourceAndTarget_isFlat :
 
 [Tag 04NI](https://stacks.math.columbia.edu/tag/04NI) in the Stacks Project.
 
-**`AlgebraicGeometry.etale_fiberMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Fiber.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Fiber.lean#L164).
+**`AlgebraicGeometry.etale_fiberMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Fiber.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Fiber.lean#L164).
 
 > **Stacks Project, Tag 04NI.** The morphism between corresponding fibres in
 > a commutative square with étale vertical arrows is étale.
@@ -91,7 +91,7 @@ public lemma etale_fiberMap (f' : U' ⟶ V') (g' : U' ⟶ U)
 
 [Tag 04NJ](https://stacks.math.columbia.edu/tag/04NJ) in the Stacks Project.
 
-**`AlgebraicGeometry.fiberLocalRingDimension_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberLocalRingDimension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberLocalRingDimension.lean#L282).
+**`AlgebraicGeometry.fiberLocalRingDimension_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberLocalRingDimension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberLocalRingDimension.lean#L282).
 
 > The dimension of the local ring of the fibre of a morphism of germs at its distinguished
 > point is étale local on the source and target germs.
@@ -106,7 +106,7 @@ public theorem fiberLocalRingDimension_isEtaleLocalOnSourceAndTarget (d : ℕ∞
 
 [Tag 04NK](https://stacks.math.columbia.edu/tag/04NK) in the Stacks Project.
 
-**`AlgebraicGeometry.MorphismOfGerms.residueFieldTranscendenceDegree_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/TranscendenceDegree.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/TranscendenceDegree.lean#L563).
+**`AlgebraicGeometry.MorphismOfGerms.residueFieldTranscendenceDegree_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/TranscendenceDegree.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/TranscendenceDegree.lean#L563).
 
 > **Stacks Project, Tag 04NK.** Residue-field transcendence degree at a
 > point is étale local on the source and target of a morphism of germs.
@@ -122,7 +122,7 @@ public theorem residueFieldTranscendenceDegree_isEtaleLocalOnSourceAndTarget
 
 [Tag 04NL](https://stacks.math.columbia.edu/tag/04NL) in the Stacks Project.
 
-**`AlgebraicGeometry.fiberDimensionAt_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberDimension.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberDimension.lean#L185).
+**`AlgebraicGeometry.fiberDimensionAt_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberDimension.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/FiberDimension.lean#L185).
 
 > **Stacks Project, Tag 04NL.** Dimension at a point of a fibre is étale
 > local on the source and target of a morphism of germs.
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.33, Tag 04R5](https://stacks.math.columbia.edu/tag/04R5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

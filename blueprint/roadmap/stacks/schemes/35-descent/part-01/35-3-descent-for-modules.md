@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.3 Descent for modules
 
-Section 35.3 of the Stacks Project, [Tag 023F](https://stacks.math.columbia.edu/tag/023F). 12 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.3 of the Stacks Project, [Tag 023F](https://stacks.math.columbia.edu/tag/023F). 12 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 023G, a definition
 
 [Tag 023G](https://stacks.math.columbia.edu/tag/023G) in the Stacks Project.
 
-**`ModuleCat.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L244). The attribute's comment: “descent data”.
+**`ModuleCat.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L244). The attribute's comment: “descent data”.
 
 > A descent datum for modules for an `R`-algebra `A`.
 >
@@ -25,7 +25,7 @@ Section 35.3 of the Stacks Project, [Tag 023F](https://stacks.math.columbia.edu/
 structure DescentData
 ```
 
-**`ModuleCat.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L271). The attribute's comment: “morphisms”.
+**`ModuleCat.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L271). The attribute's comment: “morphisms”.
 
 > A morphism of module descent data is an `A`-linear map commuting with the transition
 > isomorphisms.
@@ -38,7 +38,7 @@ structure Hom (D E : DescentData.{u, v, w} R A)
 
 [Tag 023H](https://stacks.math.columbia.edu/tag/023H) in the Stacks Project.
 
-**`ModuleCat.exists_descentCosimplicialModuleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean, line 1103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean#L1103).
+**`ModuleCat.exists_descentCosimplicialModuleFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean, line 1103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean#L1103).
 
 > **Stacks Lemma 023H.** To a descent datum `(N, φ)` one can associate a
 > cosimplicial module over the Čech algebra `(A / R)_•` by the rules
@@ -51,7 +51,7 @@ public theorem exists_descentCosimplicialModuleFunctor :
       IsDescentCosimplicialModuleFunctor R A F
 ```
 
-**`ModuleCat.descentCosimplicialModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean, line 1120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean#L1120).
+**`ModuleCat.descentCosimplicialModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean, line 1120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CechCosimplicialModule.lean#L1120).
 
 > The functor which associates to a descent datum `(N, φ)` its cosimplicial
 > module over the Čech algebra `(A / R)_•`.  It is characterised by
@@ -67,7 +67,7 @@ public noncomputable def descentCosimplicialModuleFunctor :
 
 [Tag 023I](https://stacks.math.columbia.edu/tag/023I) in the Stacks Project.
 
-**`ModuleCat.cechTensorModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean#L246). The attribute's comment: “tensor cosimplicial module”.
+**`ModuleCat.cechTensorModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean#L246). The attribute's comment: “tensor cosimplicial module”.
 
 > The Čech cosimplicial algebra tensored with `M`, together with its
 > degreewise and cosimplicial-map specification.
@@ -77,7 +77,7 @@ public noncomputable def cechTensorModule (M : ModuleCat.{w} R) :
     {T : CechModule.{u, v, w} R A // IsCechTensorModule R A M T}
 ```
 
-**`ModuleCat.canonicalDescent_cosimplicialModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean#L560). The attribute's comment: “canonical isomorphism”.
+**`ModuleCat.canonicalDescent_cosimplicialModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/CanonicalCechTensorModule.lean#L560). The attribute's comment: “canonical isomorphism”.
 
 > The cosimplicial module associated to a canonical descent datum is
 > isomorphic to the Čech cosimplicial algebra tensored with its base module.
@@ -99,7 +99,7 @@ public theorem canonicalDescent_cosimplicialModule
 
 [Tag 023J](https://stacks.math.columbia.edu/tag/023J) in the Stacks Project.
 
-**`ModuleCat.DescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L310).
+**`ModuleCat.DescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L310).
 
 > A module descent datum is effective if it is isomorphic to the canonical descent datum
 > obtained by extending scalars from an `R`-module.
@@ -113,7 +113,7 @@ abbrev DescentData.IsEffective (R : Type u) (A : Type v) [CommRing R] [CommRing 
 
 [Tag 023K](https://stacks.math.columbia.edu/tag/023K) in the Stacks Project.
 
-**`Stacks.Descent.augmentedDescentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L368). The attribute's comment: “the augmented complex 0 → M → A ⊗ M → A ⊗ A ⊗ M → ⋯”.
+**`Stacks.Descent.augmentedDescentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L368). The attribute's comment: “the augmented complex 0 → M → A ⊗ M → A ⊗ A ⊗ M → ⋯”.
 
 > **Equation 023K: the augmented descent complex** `0 → M → A ⊗[R] M → A ⊗[R] A ⊗[R] M → ⋯`
 > of the ring map `R → A` with coefficients in `M`. It is the alternating coface map complex of
@@ -123,7 +123,7 @@ abbrev DescentData.IsEffective (R : Type u) (A : Type v) [CommRing R] [CommRing 
 noncomputable def augmentedDescentComplex : CochainComplex (ModuleCat.{max u v} R) ℕ
 ```
 
-**`Stacks.Descent.augmentedDescentComplexXIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L387). The attribute's comment: “its degree-(n+1) term is A^\{⊗(n+1)} ⊗\_R M”.
+**`Stacks.Descent.augmentedDescentComplexXIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L387). The attribute's comment: “its degree-(n+1) term is A^\{⊗(n+1)} ⊗\_R M”.
 
 > **The degree-`(n + 1)` term of the augmented descent complex is `A^{⊗(n + 1)} ⊗[R] M`.**
 
@@ -137,7 +137,7 @@ noncomputable def augmentedDescentComplexXIso (n : ℕ) :
 
 [Tag 023L](https://stacks.math.columbia.edu/tag/023L) in the Stacks Project.
 
-**`AlgebraicTopology.amitsurExtendedCochainComplex_acyclic_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Amitsur.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/Amitsur.lean#L151).
+**`AlgebraicTopology.amitsurExtendedCochainComplex_acyclic_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Amitsur.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/Amitsur.lean#L151).
 
 > **Stacks Lemma 023L.** If `R → A` admits a section, then the extended Amitsur
 > cochain complex with coefficients in any `R`-module `M` is exact.
@@ -152,7 +152,7 @@ theorem amitsurExtendedCochainComplex_acyclic_of_section
 
 [Tag 023M](https://stacks.math.columbia.edu/tag/023M) in the Stacks Project.
 
-**`Stacks.Descent.amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AmitsurAcyclic.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/AmitsurAcyclic.lean#L435). References: SGA 1 VIII (1.7), “affine case”.
+**`Stacks.Descent.amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AmitsurAcyclic.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/AmitsurAcyclic.lean#L435). References: SGA 1 VIII (1.7), “affine case”.
 
 > **Stacks Lemma 023M.** For a faithfully flat algebra `A` over a commutative ring `R` and an
 > arbitrary `R`-module `M`, the extended Amitsur cochain complex
@@ -164,7 +164,7 @@ theorem amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat [Module.Faithful
     (amitsurExtendedCochainComplex R A M).Acyclic
 ```
 
-**`AlgebraicTopology.amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleEquivalence/FaithfullyFlatAmitsur.lean, line 1259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/ModuleEquivalence/FaithfullyFlatAmitsur.lean#L1259). References: SGA 1 VIII (1.7), “affine case”.
+**`AlgebraicTopology.amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/ModuleEquivalence/FaithfullyFlatAmitsur.lean, line 1257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/ModuleEquivalence/FaithfullyFlatAmitsur.lean#L1257). References: SGA 1 VIII (1.7), “affine case”.
 
 > **Stacks Lemma 023M**, and **Stacks Lemma 03OA**.  The extended Amitsur cochain complex of a
 > faithfully flat algebra is exact for every module of coefficients.  Exactness of the extended
@@ -178,7 +178,7 @@ theorem amitsurExtendedCochainComplex_acyclic_of_faithfullyFlat
     (amitsurExtendedCochainComplex R A M).Acyclic
 ```
 
-**`ModuleCat.baseExtensionUnitEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L364). The attribute's comment: “degrees −1 and 0”. References: SGA 1 VIII (1.7), “affine case”.
+**`ModuleCat.baseExtensionUnitEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L364). The attribute's comment: “degrees −1 and 0”. References: SGA 1 VIII (1.7), “affine case”.
 
 > **Stacks Project, Tag 023M in degrees `−1` and `0`.** For a universally injective ring map
 > the unit `m ↦ 1 ⊗ m` of the base-extension adjunction is an isomorphism of `M` onto the
@@ -202,7 +202,7 @@ noncomputable def baseExtensionUnitEquiv
 
 [Tag 039W](https://stacks.math.columbia.edu/tag/039W) in the Stacks Project.
 
-**`ModuleCat.DescentData.isEffective_iff_canonicalMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/EffectiveCriterion.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/EffectiveCriterion.lean#L560).
+**`ModuleCat.DescentData.isEffective_iff_canonicalMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/EffectiveCriterion.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/EffectiveCriterion.lean#L557).
 
 > A module descent datum is effective if and only if its canonical map from the base change
 > of its zeroth cohomology is an isomorphism.
@@ -218,7 +218,7 @@ public theorem isEffective_iff_canonicalMap_bijective
 
 [Tag 039X](https://stacks.math.columbia.edu/tag/039X) in the Stacks Project.
 
-**`ModuleCat.all_isEffective_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean#L49).
+**`ModuleCat.all_isEffective_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean#L49).
 
 > **Stacks Project, Tag 039X.** Let `R → A` be a faithfully flat ring map and let `R → R'` be
 > faithfully flat, and set `A' = R' ⊗[R] A`. If all descent data for `R' → A'` are effective,
@@ -238,7 +238,7 @@ public theorem all_isEffective_of_faithfullyFlat_baseChange
 
 [Tag 023N](https://stacks.math.columbia.edu/tag/023N) in the Stacks Project.
 
-**`ModuleCat.isEffectiveDescentMorphismForModules_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean#L95). The attribute's comment: “(2)”. References: SGA 1 VIII (1.6), “effectivity”; SGA 1 VIII (1.1), “affine case”; SGA 4½ Arcata (1.4.5), “affine case”; SGA 4½ Arcata (1.4), “module equivalence”.
+**`ModuleCat.isEffectiveDescentMorphismForModules_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean#L95). The attribute's comment: “(2)”. References: SGA 1 VIII (1.6), “effectivity”; SGA 1 VIII (1.1), “affine case”; SGA 4½ Arcata (1.4.5), “affine case”; SGA 4½ Arcata (1.4), “module equivalence”.
 
 > **Stacks 023N, part (2).** For a faithfully flat ring map `R → A`, base extension
 > `M ↦ (A ⊗[R] M, can)` is an equivalence from `R`-modules onto the category of descent data for
@@ -249,7 +249,7 @@ theorem isEffectiveDescentMorphismForModules_of_faithfullyFlat :
     IsEffectiveDescentMorphismForModules.{u, u, w} R A
 ```
 
-**`ModuleCat.baseExtension_essSurj_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean#L106). The attribute's comment: “(1)”. References: SGA 1 VIII (1.6), “effectivity”; SGA 1 VIII (1.1), “affine case, effectivity”; SGA 4½ Arcata (1.4.5), “ess. surj. (affine)”.
+**`ModuleCat.baseExtension_essSurj_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffective.lean#L106). The attribute's comment: “(1)”. References: SGA 1 VIII (1.6), “effectivity”; SGA 1 VIII (1.1), “affine case, effectivity”; SGA 4½ Arcata (1.4.5), “ess. surj. (affine)”.
 
 > **Stacks 023N, part (1).** Every descent datum on modules along a faithfully flat ring map
 > `R → A` is effective, that is, lies in the essential image of base extension.
@@ -259,7 +259,7 @@ theorem baseExtension_essSurj_of_faithfullyFlat :
     (baseExtension.{u, u, w} R A).functor.EssSurj
 ```
 
-**`ModuleCat.DescentData.isEffective_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffectiveDescent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffectiveDescent.lean#L84). The attribute's comment: “effectivity of descent data”. References: SGA 1 VIII (1.1), “affine case”; SGA 1 VIII (1.6), “effectivity”; SGA 4½ Arcata (1.4.5), “ess. surj. (affine)”; SGA 4½ Arcata (1.4), “module case”.
+**`ModuleCat.DescentData.isEffective_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffectiveDescent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/FaithfullyFlatEffectiveDescent.lean#L84). The attribute's comment: “effectivity of descent data”. References: SGA 1 VIII (1.1), “affine case”; SGA 1 VIII (1.6), “effectivity”; SGA 4½ Arcata (1.4.5), “ess. surj. (affine)”; SGA 4½ Arcata (1.4), “module case”.
 
 > **Stacks 023N, part (1).** Every descent datum for modules along a faithfully flat ring map
 > `R → A` is effective: it is isomorphic, as a descent datum, to the canonical datum on the
@@ -270,7 +270,7 @@ public theorem DescentData.isEffective_of_faithfullyFlat
     (D : DescentData.{u, u, max u w} R A) : D.IsEffective R A
 ```
 
-**`Stacks.Descent.faithfullyFlatInvariantsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean#L283). The attribute's comment: “(3)”. References: SGA 1 VIII (1.6), “more general”.
+**`Stacks.Descent.faithfullyFlatInvariantsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean#L278). The attribute's comment: “(3)”. References: SGA 1 VIII (1.6), “more general”.
 
 > **Stacks 023N, part (3).** For a faithfully flat ring map `R → A` the functor
 > `M ↦ (A ⊗[R] M, can)` from `R`-modules to descent data for modules along `R → A` is an
@@ -283,7 +283,7 @@ def faithfullyFlatInvariantsEquivalence [Module.FaithfullyFlat R A] :
     ModuleCat.{max u w} R ≌ DescentData.{u, u, max u w} R A
 ```
 
-**`Stacks.Descent.faithfullyFlatInvariantsEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean#L295). The attribute's comment: “(3)”.
+**`Stacks.Descent.faithfullyFlatInvariantsEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/InvariantsInverseFunctor.lean#L290). The attribute's comment: “(3)”.
 
 > **Stacks 023N, part (3).** The inverse functor of the equivalence of Stacks 023N is
 > `ModuleCat.pushforward`, that is `(N, φ) ↦ H⁰(s(N_•))`.
@@ -297,7 +297,7 @@ theorem faithfullyFlatInvariantsEquivalence_inverse [Module.FaithfullyFlat R A] 
 
 [Tag 023O](https://stacks.math.columbia.edu/tag/023O) in the Stacks Project.
 
-**`PrimeSpectrum.faithfullyFlat_standardCoverAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L230). The attribute's comment: “faithfully flat product”.
+**`PrimeSpectrum.faithfullyFlat_standardCoverAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L230). The attribute's comment: “faithfully flat product”.
 
 > The product of the principal localizations of a standard cover is faithfully flat.
 
@@ -307,7 +307,7 @@ public theorem faithfullyFlat_standardCoverAlgebra
     Module.FaithfullyFlat R (∀ i : Fin m, Localization.Away (f i))
 ```
 
-**`PrimeSpectrum.standardCoverCechDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L332). The attribute's comment: “degree-wise Čech algebra”.
+**`PrimeSpectrum.standardCoverCechDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L332). The attribute's comment: “degree-wise Čech algebra”.
 
 > In degree `d`, the Čech algebra of a standard cover is the product of the
 > localizations at all `(d + 1)`-fold products of its covering elements.
@@ -322,13 +322,13 @@ public noncomputable def standardCoverCechDegreeEquiv (d : ℕ) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.Cech.isZero_cechCohomology_of_isStandardOpenCover`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Cech/StandardCoverVanishing.lean#L424), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L341) (StacksFrontier): “Čech cohomology vanishing”.
+- [`Stacks.Cohomology.Cech.isZero_cechCohomology_of_isStandardOpenCover`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/Cech/StandardCoverVanishing.lean#L424), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/StandardCoverAlgebra.lean#L341) (StacksFrontier): “Čech cohomology vanishing”.
 
 ## Tag 039Y, a remark
 
 [Tag 039Y](https://stacks.math.columbia.edu/tag/039Y) in the Stacks Project.
 
-**`ModuleCat.descentDataEquivCartesianCechModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CartesianCechEquivalence.lean, line 1274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/CartesianCechEquivalence.lean#L1274). The attribute's comment: “(2): descent data for `A / R` correspond to cartesian `(A / R)_•`-modules, through the cosimplicial module of a descent datum of Stacks 023H”.
+**`ModuleCat.descentDataEquivCartesianCechModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CartesianCechEquivalence.lean, line 1254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/CartesianCechEquivalence.lean#L1254). The attribute's comment: “(2): descent data for `A / R` correspond to cartesian `(A / R)_•`-modules, through the cosimplicial module of a descent datum of Stacks 023H”.
 
 > Let `A` be an `R`-algebra.  Descent data for `A / R` correspond to cartesian
 > `(A / R)_•`-modules: the functor `(N, φ) ↦ N_•`, sending a descent datum to its cosimplicial
@@ -343,7 +343,7 @@ noncomputable def descentDataEquivCartesianCechModule :
     DescentData.{u, u, max u w} R A ≌ CartesianCechModule.{u, u, max u w} R A
 ```
 
-**`CategoryTheory.Arrow.cechConerve_homotopyEquivalent_const_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean#L118). The attribute's comment: “split\_cech\_homotopy”.
+**`CategoryTheory.Arrow.cechConerve_homotopyEquivalent_const_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean#L118). The attribute's comment: “split\_cech\_homotopy”.
 
 > A split Čech conerve is homotopy equivalent to the constant cosimplicial object on the base.
 > For commutative `R`-algebras this is the split Čech algebra `(A/R)•` and the constant algebra
@@ -358,7 +358,7 @@ theorem cechConerve_homotopyEquivalent_const_of_section
       SimplicialObject.homotopyEquivalences Cᵒᵖ a
 ```
 
-**`CategoryTheory.CosimplicialModule.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean#L74). The attribute's comment: “cartesian\_module”.
+**`CategoryTheory.CosimplicialModule.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean#L74). The attribute's comment: “cartesian\_module”.
 
 > A cosimplicial module is cartesian when every cosimplicial transition map
 > induces an isomorphism after extension of scalars.
@@ -367,7 +367,7 @@ theorem cechConerve_homotopyEquivalent_const_of_section
 abbrev Cartesian (M : CosimplicialModule A) : Prop
 ```
 
-**`CategoryTheory.CosimplicialModule.isEquivalence_cartesianBaseChange_of_homotopyEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CosimplicialCartesian.lean, line 651](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/CosimplicialCartesian.lean#L651). The attribute's comment: “(4): base change along a homotopy equivalence of cosimplicial algebras is an equivalence of the categories of cartesian modules”.
+**`CategoryTheory.CosimplicialModule.isEquivalence_cartesianBaseChange_of_homotopyEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CosimplicialCartesian.lean, line 651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/CosimplicialCartesian.lean#L651). The attribute's comment: “(4): base change along a homotopy equivalence of cosimplicial algebras is an equivalence of the categories of cartesian modules”.
 
 > **Stacks 039Y (4).**  If `α : A_• ⟶ B_•` is a homotopy equivalence of cosimplicial
 > `R`-algebras, then the functor `M_• ↦ M_• ⊗_{A_•} B_•` is an equivalence of categories between
@@ -388,7 +388,7 @@ theorem isEquivalence_cartesianBaseChange_of_homotopyEquivalence (α : A ⟶ B)
     (cartesianBaseChange.{u, v, w} α).IsEquivalence
 ```
 
-**`ModuleCat.all_isEffective_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean#L49). The attribute's comment: “(1): descent data for `A / R` are effective once those for `(R' ⊗ A) / R'` are”.
+**`ModuleCat.all_isEffective_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/BaseChangeEffective.lean#L49). The attribute's comment: “(1): descent data for `A / R` are effective once those for `(R' ⊗ A) / R'` are”.
 
 > **Stacks Project, Tag 039X.** Let `R → A` be a faithfully flat ring map and let `R → R'` be
 > faithfully flat, and set `A' = R' ⊗[R] A`. If all descent data for `R' → A'` are effective,
@@ -411,4 +411,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.3, Tag 023F](https://stacks.math.columbia.edu/tag/023F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

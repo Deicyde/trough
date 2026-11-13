@@ -7,7 +7,7 @@ statement: formalized
 
 # Dilogarithm identities
 
-15 results, 7 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html).
+15 results, 7 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html).
 
 ## Entry 24 of Chapter 9 of Ramanujan's notebooks
 
@@ -34,7 +34,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry24Dougall.ramanujan_part1_ch9_entry24_dougall`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry24Dougall.lean, line 1292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry24Dougall.lean#L1292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry24-dougall).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry24Dougall.ramanujan_part1_ch9_entry24_dougall`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry24Dougall.lean, line 1287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry24Dougall.lean#L1287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry24-dougall).
 
 ## Entry 25 of Chapter 9 of Ramanujan's notebooks
 
@@ -65,7 +65,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry25Dixon.ramanujan_part1_ch9_entry25_dixon`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry25Dixon.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry25Dixon.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry25-dixon).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry25Dixon.ramanujan_part1_ch9_entry25_dixon`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry25Dixon.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry25Dixon.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry25-dixon).
 
 ## The Entry 26 boundary logarithm is the real logarithm
 
@@ -74,7 +74,7 @@ extended to all of $\mathbb{R}$ by $\log 0 = 0$ and $\log x = \log|x|$ for $x < 
 real $x$, the boundary logarithm of $x$, defined as $0$ if $x = 0$ and as $\log x$ otherwise,
 equals $\log x$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9BoundaryLog_eq_log`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-boundary-log-eq-log).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9BoundaryLog_eq_log`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-boundary-log-eq-log).
 
 ## The Entry 26 and Entry 24 dilogarithm cosine terms agree
 
@@ -83,7 +83,7 @@ $\alpha$ and every natural number $j$, the $j$-th term $\rho^{j+1} \cos((j+1)\al
 the dilogarithm cosine series defined for Entry 26 equals the $j$-th term of the cosine series
 defined for Entry 24, which is given by the same formula.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9DilogCosTerm_eq_entry24`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-dilog-cos-term-eq-entry24).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9DilogCosTerm_eq_entry24`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-dilog-cos-term-eq-entry24).
 
 ## The Entry 26 and Entry 24 dilogarithm sine terms agree
 
@@ -92,7 +92,7 @@ $\alpha$ and every natural number $j$, the $j$-th term $\rho^{j+1} \sin((j+1)\al
 the dilogarithm sine series defined for Entry 26 equals the $j$-th term of the sine series
 defined for Entry 24, which is given by the same formula.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9DilogSinTerm_eq_entry24`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-dilog-sin-term-eq-entry24).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9DilogSinTerm_eq_entry24`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#chapter9-dilog-sin-term-eq-entry24).
 
 ## Ramanujan's Landen-type identity in terms of the Entry 24 series
 
@@ -108,7 +108,7 @@ and, where $\log$ is the real logarithm with $\log 0 = 0$,
 $C(x, \theta) + C(y, \varphi) = \pi^2/8 - \tfrac12 \log x \log y + \tfrac12 \theta\varphi$ and
 $S(x, \theta) + S(y, \varphi) = -\tfrac12 \varphi \log x - \tfrac12 \theta \log y$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.ramanujan_part1_ch9_entry26_ramanujanpi_entry24_terms`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 1817](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L1817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry26-ramanujanpi).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.ramanujan_part1_ch9_entry26_ramanujanpi_entry24_terms`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 1817](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L1817). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry26-ramanujanpi).
 
 ## Ramanujan's Landen-type dilogarithm identity (Entry 26)
 
@@ -131,7 +131,7 @@ Chapter 1.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9, Entry 26, p. 273.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.ramanujan_part1_ch9_entry26_ramanujanpi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 1876](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L1876). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry26-ramanujanpi-2).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.ramanujan_part1_ch9_entry26_ramanujanpi`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean, line 1876](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry26Ramanujanpi.lean#L1876). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#ramanujan-part1-ch9-entry26-ramanujanpi-2).
 
 ## Hoorfar–Qi dilogarithm series
 
@@ -151,7 +151,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 1, quoting Hoorfar and Qi.
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_hoorfarQi_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-hoorfar-qi-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_hoorfarQi_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-hoorfar-qi-series).
 
 ## Bridgeman's dilogarithm series for a positive Pell solution
 
@@ -172,7 +172,7 @@ and if $a$ and $b$ are integers, then for every $k \ge 0$ there is an integer $m
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 3 (3), quoting Bridgeman.
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_pell_positive_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-pell-positive-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_pell_positive_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-pell-positive-series).
 
 ## Bridgeman's dilogarithm series for a negative Pell solution
 
@@ -195,7 +195,7 @@ integers.
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 3 (4), quoting Bridgeman.
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_pell_negative_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-pell-negative-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_pell_negative_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-pell-negative-series).
 
 ## Sanford's coupled recurrence
 
@@ -218,7 +218,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sanford_coupled_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#sanford-coupled-recurrence).
+Stated but not proved: `MetaMathlibExt.sanford_coupled_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#sanford-coupled-recurrence).
 
 ## Sanford's dilogarithm series identity
 
@@ -236,7 +236,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_sanford_principal_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-sanford-principal-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_sanford_principal_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-sanford-principal-series).
 
 ## Sanford's symmetric dilogarithm series
 
@@ -254,7 +254,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_sanford_symmetric_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-sanford-symmetric-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_sanford_symmetric_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-sanford-symmetric-series).
 
 ## Sanford's Lucas-sequence dilogarithm series for $Q > 0$
 
@@ -273,7 +273,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 5 (8).
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_lucasU_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-lucas-u-series).
+Stated but not proved: `MetaMathlibExt.rogersDilog_lucasU_series` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-lucas-u-series).
 
 ## Sanford's Lucas-sequence dilogarithm series for $Q < 0$
 
@@ -293,7 +293,7 @@ $$
 
 - Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Theorem 5 (9).
 
-Stated but not proved: `MetaMathlibExt.rogersDilog_lucasUV_series_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-lucas-uv-series-of-neg).
+Stated but not proved: `MetaMathlibExt.rogersDilog_lucasUV_series_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RogersDilogarithmSeriesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html#rogers-dilog-lucas-uv-series-of-neg).
 
 ## Depends on
 
@@ -302,4 +302,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dilogarithm identities](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/dilogarithm-identities)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.Limits.pointwisePullback, CategoryTheory.CosimplicialObject.isBijective_canonicalMap
+lean: CategoryTheory.Limits.pointwisePullback, CategoryTheory.CosimplicialObject.isBijective_canonicalMap_pointwisePullback
 statement: formalized
 proof: formalized
 ---
 
 # 14.10 Fibre products of cosimplicial objects
 
-Section 14.10 of the Stacks Project, [Tag 0171](https://stacks.math.columbia.edu/tag/0171). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.10 of the Stacks Project, [Tag 0171](https://stacks.math.columbia.edu/tag/0171). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0172, a definition
 
 [Tag 0172](https://stacks.math.columbia.edu/tag/0172) in the Stacks Project.
 
-**`CategoryTheory.Limits.pointwisePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L320). The attribute's comment: “stated for an arbitrary index category `D`: the fibre product of cosimplicial objects is the case `D = SimplexCategory`, and that of simplicial objects, Tag 016T, the case `D = SimplexCategoryᵒᵖ`”.
+**`CategoryTheory.Limits.pointwisePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FunctorCategory/Pointwise.lean#L320). The attribute's comment: “stated for an arbitrary index category `D`: the fibre product of cosimplicial objects is the case `D = SimplexCategory`, and that of simplicial objects, Tag 016T, the case `D = SimplexCategoryᵒᵖ`”.
 
 > **Stacks 0172.** The fibre product of cosimplicial objects, as a pointwise pullback in a
 > functor category. Given a cospan `f : F ⟶ H`, `g : G ⟶ H` of morphisms of functors `D ⥤ C` all
@@ -34,21 +34,22 @@ noncomputable def pointwisePullback (f : F ⟶ H) (g : G ⟶ H)
 
 [Tag 0173](https://stacks.math.columbia.edu/tag/0173) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.isBijective_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Limits.lean#L321).
+**`CategoryTheory.CosimplicialObject.isBijective_canonicalMap_pointwisePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/CosimplicialFibreProduct.lean#L52). The attribute's comment: “the fibre product of sets `Mor(T, V) ×_{Mor(T, U)} Mor(T, W)` is `Types.PullbackObj`, the set of pairs `(f, g)` with `f ≫ a = g ≫ b`, and the identification is composition with the degreewise projections of `V ×_U W`”.
 
 > **Stacks 0173**.
 > Let `C` be a category, `U V W` cosimplicial objects of `C`, and `a : V ⟶ U`, `b : W ⟶ U`
-> morphisms of cosimplicial objects. If `V ×_U W`, with projections `p` and `q`, is a fibre
-> product of `a` and `b`, then for every cosimplicial object `T` the comparison map
+> morphisms of cosimplicial objects such that every fibre product `V_n ×_{U_n} W_n` exists in `C`,
+> and let `V ×_U W = Limits.pointwisePullback a b` be the degreewise fibre product of Tag 0172,
+> with its degreewise projections `p`, `q`. Then for every cosimplicial object `T` the map
 > `Mor(T, V ×_U W) → Mor(T, V) ×_{Mor(T, U)} Mor(T, W)`, `f ↦ (f ≫ p, f ≫ q)`, is a bijection.
 
 ```lean
-theorem isBijective_canonicalMap
+theorem isBijective_canonicalMap_pointwisePullback
     {C : Type u} [Category.{v} C] {U V W : CosimplicialObject C}
-    {a : V ⟶ U} {b : W ⟶ U}
-    {P : CosimplicialObject C} {p : P ⟶ V} {q : P ⟶ W}
-    (hPB : IsPullback p q a b) (T : CosimplicialObject C) :
-    Function.Bijective (PullbackCone.canonicalMap a b hPB.cone (T := T))
+    (a : V ⟶ U) (b : W ⟶ U) [∀ n, HasPullback (a.app n) (b.app n)]
+    (T : CosimplicialObject C) :
+    Function.Bijective
+      (PullbackCone.canonicalMap a b (isPullback_pointwisePullback a b).cone (T := T))
 ```
 
 ## Depends on
@@ -58,4 +59,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.10, Tag 0171](https://stacks.math.columbia.edu/tag/0171)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

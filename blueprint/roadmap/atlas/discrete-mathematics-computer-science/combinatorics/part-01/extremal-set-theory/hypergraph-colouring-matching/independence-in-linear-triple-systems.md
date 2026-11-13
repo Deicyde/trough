@@ -7,7 +7,7 @@ statement: formalized
 
 # Independence in linear triple systems
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html).
 
 ## Linear triple systems
 
@@ -16,7 +16,7 @@ triple system (a $3$-uniform linear hypergraph, or partial Steiner triple system
 member of $H$ has exactly three elements and any two distinct members of $H$ share at most one
 element.
 
-Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.IsLinearTripleSystem`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#is-linear-triple-system).
+Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.IsLinearTripleSystem`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#is-linear-triple-system).
 
 ## Independence number of linear triple systems
 
@@ -26,7 +26,7 @@ has an independent set of size at least $m$: a set $I$ of at least $m$ vertices 
 triple of $H$ is a subset of $I$. The largest such $m$ exists because $m = 0$ qualifies and no
 such $m$ exceeds $n$.
 
-Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependence`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence).
+Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependence`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence).
 
 ## Erdős Problem 1024: the Phelps–Rödl asymptotic
 
@@ -37,7 +37,7 @@ triple of the system) of at least $m$ vertices. This is the statement that
 $f(n) = \Theta(\sqrt{n \log n})$ as $n \to \infty$, that is, $f(n) = O(\sqrt{n \log n})$ and
 $\sqrt{n \log n} = O(f(n))$.
 
-Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependenceAsymp`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence-asymp).
+Formalized by `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependenceAsymp`, a definition declared in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence-asymp).
 
 ## Phelps–Rödl theorem on independence in linear triple systems
 
@@ -54,7 +54,7 @@ Erdős had shown $n^{1/2} \ll f(n) \ll n^{2/3}$.
 
 - T. F. Bloom, Erdős Problems, Problem #1024, https://www.erdosproblems.com/1024 (status SOLVED); resolution: K. T. Phelps and V. Rödl, Steiner triple systems with minimum independence number, Ars Combin. (1986), 167-172, f(n) ≍ (n log n)^{1/2} (erdosproblems.com/1024), https://www.erdosproblems.com/1024.
 
-Stated but not proved: `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependenceAsymp_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence-asymp-holds).
+Stated but not proved: `MathlibExt.Combinatorics.LinearTripleSystemIndependenceErdosProblem1024Wanted.linearTripleIndependenceAsymp_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LinearTripleSystemIndependenceErdosProblem1024Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html#linear-triple-independence-asymp-holds).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Independence in linear triple systems](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/independence-in-linear-triple-systems)

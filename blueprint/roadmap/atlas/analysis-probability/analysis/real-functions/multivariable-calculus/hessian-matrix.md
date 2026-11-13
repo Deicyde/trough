@@ -8,7 +8,7 @@ proof: formalized
 
 # Hessian matrix
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html).
 
 ## Hessian matrix
 
@@ -22,7 +22,7 @@ taken to be $0$.
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Hessian_matrix.
 
-Formalized by `MetaMathlibExt.hessianMatrix`, a definition declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix).
+Formalized by `MetaMathlibExt.hessianMatrix`, a definition declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix).
 
 ## Entries of the Hessian matrix
 
@@ -36,7 +36,7 @@ differentiate first along $e_j$, then along $e_i$.
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
 
-Formalized by `MetaMathlibExt.hessianMatrix_apply`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-apply).
+Formalized by `MetaMathlibExt.hessianMatrix_apply`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-apply).
 
 ## Hessian entries as second Fréchet derivatives
 
@@ -46,7 +46,7 @@ $(i, j)$ entry of the Hessian matrix of $f$ at $x$ equals $D(Df)(x)(e_i)(e_j)$, 
 the Fréchet derivative $Df$ at $x$ in the direction $e_i$, applied to $e_j$, where
 $e_1, \dots, e_n$ is the standard basis of $\mathbb{R}^n$.
 
-Formalized by `MetaMathlibExt.hessianMatrix_eq_fderiv_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-eq-fderiv-fderiv).
+Formalized by `MetaMathlibExt.hessianMatrix_eq_fderiv_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-eq-fderiv-fderiv).
 
 ## Symmetry of the Hessian
 
@@ -62,7 +62,7 @@ Wikipedia's “Symmetry of second derivatives”.
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Theorem 9.41 (pp. 235–236).
 
-Formalized by `MetaMathlibExt.hessianMatrix_symmetric`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-symmetric).
+Formalized by `MetaMathlibExt.hessianMatrix_symmetric`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#hessian-matrix-symmetric).
 
 ## The second derivative is nonnegative at a local minimum
 
@@ -71,7 +71,7 @@ be twice continuously differentiable. If $g$ has a local minimum at $x$, then $g
 
 This is the necessary direction of the one-variable second derivative test.
 
-Formalized by `IsLocalMin.deriv_deriv_nonneg`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#deriv-deriv-nonneg).
+Formalized by `IsLocalMin.deriv_deriv_nonneg`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#deriv-deriv-nonneg).
 
 ## Second-derivative test, necessary condition
 
@@ -90,7 +90,7 @@ first derivative negative just right of the critical point, so the function decr
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
 
-Formalized by `MetaMathlibExt.isLocalMin_hessian_quadratic_nonneg`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Hessian.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#is-local-min-hessian-quadratic-nonneg).
+Formalized by `MetaMathlibExt.isLocalMin_hessian_quadratic_nonneg`, a theorem declared in [MathlibExt/Analysis/Calculus/Hessian.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Hessian.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html#is-local-min-hessian-quadratic-nonneg).
 
 ## Depends on
 
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hessian matrix](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/hessian-matrix)

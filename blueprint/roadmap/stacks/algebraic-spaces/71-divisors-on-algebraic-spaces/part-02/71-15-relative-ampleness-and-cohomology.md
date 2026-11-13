@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.15 Relative ampleness and cohomology
 
-Section 71.15 of the Stacks Project, [Tag 0D37](https://stacks.math.columbia.edu/tag/0D37). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.15 of the Stacks Project, [Tag 0D37](https://stacks.math.columbia.edu/tag/0D37). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D38, a lemma
 
 [Tag 0D38](https://stacks.math.columbia.edu/tag/0D38) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isCoherent_exists_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleTwistVanishing.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleTwistVanishing.lean#L62).
+**`AlgebraicGeometry.Space.isRelativelyAmple_iff_forall_isCoherent_exists_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleTwistVanishing.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeAmpleTwistVanishing.lean#L62).
 
 > **Stacks 0D38.**  Let `R` be a Noetherian ring — here an affine object `V` of the site with
 > `Γ(V, 𝒪_V) = R` Noetherian — let `X` be an algebraic space over `R` whose structure morphism
@@ -44,7 +44,7 @@ theorem isRelativelyAmple_iff_forall_isCoherent_exists_isZero_rightDerived
 
 [Tag 0D39](https://stacks.math.columbia.edu/tag/0D39) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_ampleSchemeFibreTwistConclusion_tensorPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L61).
+**`AlgebraicGeometry.Space.exists_ampleSchemeFibreTwistConclusion_tensorPow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L61).
 
 > **Stacks 0D39.**  Let `Y` be a Noetherian scheme of the site, `f : X ⟶ h_Y` a proper morphism
 > from an algebraic space, `ℒ` an invertible and `ℱ` a coherent `𝒪_X`-module, and `y ∈ Y` a point
@@ -74,7 +74,7 @@ theorem exists_ampleSchemeFibreTwistConclusion_tensorPow (Y : BigFppfOver B S hS
 
 [Tag 0D3A](https://stacks.math.columbia.edu/tag/0D3A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_mem_isRelativelyAmple_openSub_of_isAmple_baseChangeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L85).
+**`AlgebraicGeometry.Space.exists_mem_isRelativelyAmple_openSub_of_isAmple_baseChangeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L85).
 
 > **Stacks 0D3A.**  Let `Y` be a Noetherian scheme of the site, `f : X ⟶ h_Y` a proper morphism
 > from an algebraic space, `ℒ` an invertible `𝒪_X`-module, and `y ∈ Y` a point such that the fibre
@@ -103,7 +103,7 @@ theorem exists_mem_isRelativelyAmple_openSub_of_isAmple_baseChangeModule
         IsRelativelyAmple B S hS f₁ ((modulePullback B S hS p₁).obj L)
 ```
 
-**`AlgebraicGeometry.Space.exists_mem_isRelativelyAmple_openSub_of_forall_isRelativelyAmple_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L113).
+**`AlgebraicGeometry.Space.exists_mem_isRelativelyAmple_openSub_of_forall_isRelativelyAmple_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AmpleSchemeFibreTwistAndNeighbourhood.lean#L113).
 
 > **Stacks 0D3A, the fibre read through Stacks 0D31.**  Let `Y` be a Noetherian scheme of the
 > site, `f : X ⟶ h_Y` a proper morphism from an algebraic space, `ℒ` an invertible `𝒪_X`-module, and
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.15, Tag 0D37](https://stacks.math.columbia.edu/tag/0D37)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

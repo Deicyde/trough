@@ -7,7 +7,7 @@ statement: formalized
 
 # Pattern avoidance in inversion sequences
 
-82 results, 16 proved and 66 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html).
+82 results, 16 proved and 66 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html).
 
 ## Containment of a length-3 pattern
 
@@ -21,7 +21,7 @@ is order-isomorphic to $p$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Introduction.
 
-Formalized by `MetaMathlibExt.InvSeqContainsPattern`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-contains-pattern).
+Formalized by `MetaMathlibExt.InvSeqContainsPattern`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-contains-pattern).
 
 ## Short sequences contain no length-3 pattern
 
@@ -32,7 +32,7 @@ $e_0 e_1 \cdots e_{n-1}$ of natural numbers contains a length-3 pattern $p$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Introduction.
 
-Formalized by `MetaMathlibExt.not_invSeqContainsPattern_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#not-inv-seq-contains-pattern-of-lt).
+Formalized by `MetaMathlibExt.not_invSeqContainsPattern_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#not-inv-seq-contains-pattern-of-lt).
 
 ## Number of inversion sequences avoiding a set of patterns
 
@@ -47,7 +47,7 @@ of $B$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Introduction.
 
-Formalized by `MetaMathlibExt.invSeqAvoidCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-count).
+Formalized by `MetaMathlibExt.invSeqAvoidCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-count).
 
 ## One inversion sequence of length one
 
@@ -59,7 +59,7 @@ only inversion sequence of length one is $0$, and it avoids every length-3 patte
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Introduction.
 
-Formalized by `MetaMathlibExt.invSeqAvoidCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-count-one).
+Formalized by `MetaMathlibExt.invSeqAvoidCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-count-one).
 
 ## Generating function of inversion sequences avoiding a set of patterns
 
@@ -72,7 +72,7 @@ number $|I_n(B)|$ of inversion sequences of length $n$ that avoid every pattern 
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Section 2.
 
-Formalized by `MetaMathlibExt.invSeqAvoidGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf).
+Formalized by `MetaMathlibExt.invSeqAvoidGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf).
 
 ## Coefficients of the generating function of pattern-avoiding inversion sequences
 
@@ -86,7 +86,7 @@ that avoid every pattern in $B$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Section 2.
 
-Formalized by `MetaMathlibExt.coeff_invSeqAvoidGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#coeff-inv-seq-avoid-gf).
+Formalized by `MetaMathlibExt.coeff_invSeqAvoidGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#coeff-inv-seq-avoid-gf).
 
 ## I-Wilf equivalence of $\{000, 010, 100, 101, 120\}$ and $\{000, 010, 100, 110, 120\}$
 
@@ -98,7 +98,7 @@ every $n \ge 0$, $|I_n(\{000, 010, 100, 101, 120\})| = |I_n(\{000, 010, 100, 110
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_100_120_101_110` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-100-120-101-110).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_100_120_101_110` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-100-120-101-110).
 
 ## Three I-Wilf-equivalent sets of five patterns containing $000$, $010$ and $120$
 
@@ -113,7 +113,7 @@ $|I_n(B_1)| = |I_n(B_2)| = |I_n(B_3)|$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_120_five_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-120-five-class).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_120_five_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-120-five-class).
 
 ## Inversion sequences avoiding $\{011, 102, 120\}$
 
@@ -130,7 +130,7 @@ Since $(1 - 2x)^2$ is a unit in $\mathbb{Q}[[x]]$, this says $F_B(x) = x(1 - x)^
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_011_102_120` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-011-102-120).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_011_102_120` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-011-102-120).
 
 ## Three I-Wilf-equivalent sets of five patterns containing $000$, $102$ and $120$
 
@@ -145,7 +145,7 @@ $|I_n(B_1)| = |I_n(B_2)| = |I_n(B_3)|$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_102_120_five_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-102-120-five-class).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_102_120_five_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-102-120-five-class).
 
 ## Two I-Wilf equivalences exchanging $201$ and $210$ in five-pattern sets
 
@@ -159,7 +159,7 @@ Then for every $n \ge 0$, $|I_n(A_{201})| = |I_n(A_{210})|$ and $|I_n(B_{201})| 
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_100_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-100-120-201-210).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_100_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-100-120-201-210).
 
 ## I-Wilf equivalences among five-pattern sets containing $010$, $102$ and $120$
 
@@ -175,7 +175,7 @@ $|I_n(A'_{100})| = |I_n(A'_{101})| = |I_n(A'_{110})| = |I_n(B)|$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_102_120_five_classes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-102-120-five-classes).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_102_120_five_classes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-102-120-five-classes).
 
 ## I-Wilf equivalence of $\{010, 100, 101, 120, 201\}$ and $\{010, 100, 101, 120, 210\}$
 
@@ -187,7 +187,7 @@ every $n \ge 0$, $|I_n(\{010, 100, 101, 120, 201\})| = |I_n(\{010, 100, 101, 120
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_100_101_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-100-101-120-201-210).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_100_101_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-100-101-120-201-210).
 
 ## Five I-Wilf-equivalent sets of six patterns containing $000$, $010$ and $120$
 
@@ -202,7 +202,7 @@ $|I_n(A_{201})| = |I_n(A_{210})| = |I_n(B_{201})| = |I_n(B_{210})| = |I_n(C)|$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_120_six_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-120-six-class).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_000_010_120_six_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-000-010-120-six-class).
 
 ## Three I-Wilf-equivalent six-pattern sets containing 102 and 110
 
@@ -216,7 +216,7 @@ Then $|I_n(A_{201})| = |I_n(A_{210})| = |I_n(C)|$ for every $n \ge 0$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_102_110_six_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-102-110-six-class).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_102_110_six_class` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-102-110-six-class).
 
 ## A common generating function for three sets of seven patterns
 
@@ -236,7 +236,7 @@ $F_{B_j}(x) = x/(1 - x) + x^2(1 - x)/(1 - 2x)^2$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_010_011_102_201_210_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-010-011-102-201-210-sev).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_010_011_102_201_210_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-010-011-102-201-210-sev).
 
 ## Eight-pattern sets differing in 201 and 210: equivalence and generating function
 
@@ -260,7 +260,7 @@ the role of $\sqrt{1 - 2x - 3x^2}$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_eight_201_210_and_gf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-eight-201-210-and-gf).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_eight_201_210_and_gf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-eight-201-210-and-gf).
 
 ## A common generating function for three sets of eight patterns
 
@@ -282,7 +282,7 @@ with the denominator cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_eight_radical_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-eight-radical-three).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_eight_radical_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-eight-radical-three).
 
 ## Inversion sequences avoiding $\{000, 100, 101, 102, 110, 120, 201, 210\}$
 
@@ -303,7 +303,7 @@ denominator cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 21.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_000_100_101_102_110_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-000-100-101-102-110-120).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_000_100_101_102_110_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-000-100-101-102-110-120).
 
 ## Inversion sequences avoiding nine patterns
 
@@ -324,7 +324,7 @@ cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_nine_patterns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-nine-patterns).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_nine_patterns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-nine-patterns).
 
 ## Number of I-Wilf classes of sets of length-3 patterns
 
@@ -340,7 +340,7 @@ $w_9 = 35$, $w_{10} = 21$, $w_{11} = 10$, $w_{12} = 4$ and $w_{13} = 1$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilfClassCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-class-count).
+Stated but not proved: `MetaMathlibExt.invSeq_wilfClassCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-class-count).
 
 ## Reducible sets of length-3 patterns for inversion sequences
 
@@ -366,7 +366,7 @@ $C = \{001, 012, 100\}$ with $\tau = 210$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.invSeq_reducible_pattern_sets` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-reducible-pattern-sets).
+Stated but not proved: `MetaMathlibExt.invSeq_reducible_pattern_sets` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-reducible-pattern-sets).
 
 ## A Catalan generating function for two sets of five patterns
 
@@ -387,7 +387,7 @@ this says $F_B(x) = F_{B'}(x) = x / ((1 - x)(2 - (1 - \sqrt{1 - 4x})/(2x)))$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_010_101_102_201_210_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-010-101-102-201-210-cat).
+Stated but not proved: `MetaMathlibExt.invSeqAvoidGF_010_101_102_201_210_catalan` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-avoid-gf-010-101-102-201-210-cat).
 
 ## I-Wilf-equivalence of 101 and 110 alongside 102, 120, 210
 
@@ -405,7 +405,7 @@ are $206$ and $205$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_102_120_101_110_parts_B_C` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-102-120-101-110-parts-b-c).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_102_120_101_110_parts_B_C` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-102-120-101-110-parts-b-c).
 
 ## I-Wilf-equivalence of 101 and 110 alongside 010, 120, 201, 210
 
@@ -424,7 +424,7 @@ and $81$.
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_120_201_210_101_110` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-120-201-210-101-110).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_120_201_210_101_110` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-120-201-210-101-110).
 
 ## Exchanging $201$ and $210$ in $\{010, 100, 101, 102, 120, 201\}$
 
@@ -442,7 +442,7 @@ false as printed ($|I_7| = 538, 537, 539$ for $A_{210}$, $B$, $C$) and are omitt
 
 - Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_100_101_102_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-100-101-102-120-201-210).
+Stated but not proved: `MetaMathlibExt.invSeq_wilf_010_100_101_102_120_201_210` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/InversionSequencePatternSetsWanted.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#inv-seq-wilf-010-100-101-102-120-201-210).
 
 ## Length-2 signed pattern
 
@@ -456,7 +456,7 @@ whether $\tau_2$ is barred.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Introduction.
 
-Formalized by `MetaMathlibExt.SignedPattern2`, a structure declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-pattern2).
+Formalized by `MetaMathlibExt.SignedPattern2`, a structure declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-pattern2).
 
 ## Number of length-2 signed patterns
 
@@ -466,7 +466,7 @@ There are exactly twelve length-2 signed patterns.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Section 5 (`binom 12 k` sets of `k` patterns).
 
-Formalized by `MetaMathlibExt.card_signedPattern2`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#card-signed-pattern2).
+Formalized by `MetaMathlibExt.card_signedPattern2`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#card-signed-pattern2).
 
 ## Containment of a length-2 signed pattern
 
@@ -480,7 +480,7 @@ or larger than $|\tau_2|$, and $e_i$ and $e_j$ are barred exactly when $\tau_1$ 
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Introduction.
 
-Formalized by `MetaMathlibExt.SignedInvSeqContains`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-contains).
+Formalized by `MetaMathlibExt.SignedInvSeqContains`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-contains).
 
 ## Number of signed inversion sequences avoiding a set of patterns
 
@@ -495,7 +495,7 @@ of $B$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Introduction.
 
-Formalized by `MetaMathlibExt.signedInvAvoidCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count).
+Formalized by `MetaMathlibExt.signedInvAvoidCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count).
 
 ## Signed inversion sequences of length zero
 
@@ -508,7 +508,7 @@ pattern of $B$ is $1$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Introduction.
 
-Formalized by `MetaMathlibExt.signedInvAvoidCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-zero).
+Formalized by `MetaMathlibExt.signedInvAvoidCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-zero).
 
 ## Signed inversion sequences of length one
 
@@ -521,7 +521,7 @@ avoiding every pattern of $B$ is $2$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Introduction.
 
-Formalized by `MetaMathlibExt.signedInvAvoidCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-one).
+Formalized by `MetaMathlibExt.signedInvAvoidCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-one).
 
 ## Generating function of signed inversion sequences avoiding a set of patterns
 
@@ -534,7 +534,7 @@ of signed inversion sequences of length $n$ avoiding every pattern of $B$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Section 2.
 
-Formalized by `MetaMathlibExt.signedInvAvoidGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-gf).
+Formalized by `MetaMathlibExt.signedInvAvoidGF`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-gf).
 
 ## Coefficients of the avoidance generating function
 
@@ -548,7 +548,7 @@ $n \ge 0$ the coefficient of $x^n$ in $F_B(x)$ is $|\bar I_n(B)|$, viewed as a r
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Section 2.
 
-Formalized by `MetaMathlibExt.coeff_signedInvAvoidGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#coeff-signed-inv-avoid-gf).
+Formalized by `MetaMathlibExt.coeff_signedInvAvoidGF`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#coeff-signed-inv-avoid-gf).
 
 ## Number of signed Wilf classes
 
@@ -562,7 +562,7 @@ length $n$ avoiding every pattern of $B$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1.
 
-Formalized by `MetaMathlibExt.signedWilfClassCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count).
+Formalized by `MetaMathlibExt.signedWilfClassCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count).
 
 ## The empty pattern set forms one signed Wilf class
 
@@ -574,7 +574,7 @@ the only set of no patterns.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1 (definition of `sw_k`).
 
-Formalized by `MetaMathlibExt.signedWilfClassCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-zero).
+Formalized by `MetaMathlibExt.signedWilfClassCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-zero).
 
 ## Mansour–Safadi Lemma 1 (signed patterns 0̄1̄, 0̄0, 01)
 
@@ -593,7 +593,7 @@ that is, $F_{B_1}(x) = (1 - x)/(1 - 3x + x^2)$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b00-01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b00-01).
 
 ## Wilf-equivalence and count for \{0̄0̄, 0̄0, 01̄} (Lemma 2)
 
@@ -613,7 +613,7 @@ $$
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b0_b00_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b0-b00-0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b0_b00_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b0-b00-0).
 
 ## Mansour–Safadi Lemma 3 (signed patterns 0̄1̄, 0̄0̄, 01̄)
 
@@ -632,7 +632,7 @@ $H_n = \sum_{k=1}^{n} 1/k$ is the $n$th harmonic number.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b1_b0b0_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b1-b0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b1_b0b0_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b1-b0b0).
 
 ## Mansour–Safadi Lemma 4 (signed patterns 0̄1̄, 0̄0̄, 0̄1)
 
@@ -649,7 +649,7 @@ $n \ge 0$, $|\bar I_n(\{\bar 0\bar 1, \bar 0\bar 0, \bar 0 1\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b1_b0b0_b01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b1-b0b0-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_count_b0b1_b0b0_b01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-count-b0b1-b0b0-2).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, 01\}$
 
@@ -672,7 +672,7 @@ $F_B(x) = 1 + \frac{x(1 - x)^2}{(1 - 2x)(1 - 3x + x^2)} + \frac{x(1 - x + x^2)}{
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-01).
 
 ## Mansour–Safadi Lemma 6
 
@@ -686,7 +686,7 @@ $|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}\bar{0}, \bar{0}1\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01).
 
 ## Mansour–Safadi Lemma 7
 
@@ -700,7 +700,7 @@ $|\bar{I}_n(\{\bar{1}0, \bar{0}\bar{1}, \bar{0}\bar{0}\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b0b1_b0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b0b1-b0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b0b1_b0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b0b1-b0b0).
 
 ## Eight signed-pattern triples with (n + 1)! avoiders (Lemma 8)
 
@@ -724,7 +724,7 @@ The source prints an unbarred $I_n$ in parts (iii) and (iv); it is read as $\bar
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.signedInvAvoidCount_eq_factorial_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-eq-factorial-succ).
+Stated but not proved: `MetaMathlibExt.signedInvAvoidCount_eq_factorial_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-eq-factorial-succ).
 
 ## Mansour–Safadi Lemma 9: a Wilf-equivalence of three-pattern sets
 
@@ -738,7 +738,7 @@ $\{\bar1\bar0, \bar10, \bar0\bar0\} \sim \{\bar1\bar0, \bar10, \bar00\}$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0).
 
 ## Mansour–Safadi Lemma 10
 
@@ -752,7 +752,7 @@ $|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}\bar{0}, 1\bar{0}\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-1b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-1b0).
 
 ## Signed Wilf classes of sets of three to twelve patterns
 
@@ -766,7 +766,7 @@ $\mathrm{sw}_{11} = 3$ and $\mathrm{sw}_{12} = 1$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.signedWilfClassCount_three_to_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-three-to-twelve).
+Stated but not proved: `MetaMathlibExt.signedWilfClassCount_three_to_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-three-to-twelve).
 
 ## Mansour–Safadi Class 141 Wilf-equivalence
 
@@ -784,7 +784,7 @@ for the number of Wilf classes of five-pattern sets to be exactly $239$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1, closing remark.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0_b00_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0-b00-00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0_b00_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0-b00-00).
 
 ## Signed Wilf classes of sets of three patterns
 
@@ -795,7 +795,7 @@ Wilf-equivalence classes among the sets of $3$ length-2 signed patterns is $93$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.signedWilfClassCount_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-three).
+Stated but not proved: `MetaMathlibExt.signedWilfClassCount_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-three).
 
 ## Signed Wilf classes of sets of four patterns
 
@@ -806,7 +806,7 @@ Wilf-equivalence classes among the sets of $4$ length-2 signed patterns is $195$
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.signedWilfClassCount_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-four).
+Stated but not proved: `MetaMathlibExt.signedWilfClassCount_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-four).
 
 ## Signed Wilf classes of sets of five to twelve patterns
 
@@ -819,7 +819,7 @@ $\mathrm{sw}_9 = 22$, $\mathrm{sw}_{10} = 8$, $\mathrm{sw}_{11} = 3$ and $\mathr
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.signedWilfClassCount_five_to_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-five-to-twelve).
+Stated but not proved: `MetaMathlibExt.signedWilfClassCount_five_to_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-wilf-class-count-five-to-twelve).
 
 ## Mansour–Safadi Theorem 3, class C2 (signed patterns 0̄0̄, 0̄0, 0̄1, 01)
 
@@ -843,7 +843,7 @@ $F_{B_1}(x) = 1 + 2\sum_{k \ge 1} x^k / \prod_{i=1}^{k} (1 - ix)$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C2).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b0_b00_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b0-b00-b01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b0_b00_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b0-b00-b01).
 
 ## Mansour–Safadi Theorem 3, class C3 (signed patterns 0̄1̄, 0̄0̄, 0̄1, 01̄)
 
@@ -862,7 +862,7 @@ $|\bar I_n(B_1)| = |\bar I_n(B_2)| = |\bar I_n(B_3)| = \sum_{i=0}^{n} i!$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C3).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b01_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b01_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b01).
 
 ## Mansour–Safadi Theorem 3, class C4 (signed patterns 0̄1̄, 0̄0̄, 0̄0, 01̄)
 
@@ -886,7 +886,7 @@ $\sum_{n \ge 0} |\bar I_n(B_1)|\,x^n = 1 + 2\sum_{k \ge 1} k!\,x^k$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C4).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b00_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b00_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b00).
 
 ## Mansour–Safadi Theorem 3, class C12 (signed patterns 0̄1̄, 0̄0̄, 01̄, 01)
 
@@ -906,7 +906,7 @@ $(1 - x)^2\,F_{B_1}(x) = 1 + x^2$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C12).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-0b1).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-0b1).
 
 ## Mansour–Safadi Theorem 3, class C15 (signed patterns 0̄1̄, 0̄0̄, 0̄1, 01)
 
@@ -930,7 +930,7 @@ $(1 - 2x)\,F_{B_1}(x) = 1$, that is, $F_{B_1}(x) = 1/(1 - 2x)$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C15).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b01-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b0b0_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b0b0-b01-2).
 
 ## Mansour–Safadi Theorem 3, class C16 (signed patterns 0̄1̄, 0̄0, 01̄, 01)
 
@@ -949,7 +949,7 @@ $(1 - x)^2 (1 - 3x + x^2)\,F_{B_1}(x) = 1 - 3x + 2x^2 - x^3$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C16).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b00_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b00-0b1).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b1_b00_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b0b1-b00-0b1).
 
 ## Mansour–Safadi Theorem 3, class C21
 
@@ -966,7 +966,7 @@ The generating function printed in the paper, $1/(1 - x)^2 + \sum_{j \ge 0} j!\,
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C21).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b0b1_b01_0b1_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b0b1-b01-0b1-0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b0b1_b01_0b1_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b0b1-b01-0b1-0b0).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar01, 00\}$
 
@@ -982,7 +982,7 @@ $F_B(x) = (1 - x + 2x^2)/(1 - x)^3$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C23).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b01_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b01_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 442](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L442). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b01).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar0, 0\bar1, 01\}$
 
@@ -998,7 +998,7 @@ that is, $F_B(x) = (1 - x + x^2)/((1 - x)(1 - 2x))$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C25).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-0b1).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 456](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L456). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-0b1).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar0\bar0, 00\}$
 
@@ -1017,7 +1017,7 @@ $F_{B_1}(x) = (1 - 2x + 2x^2)/((1 - x)^2(1 - 2x))$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C30).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b0b0_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b0b).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b0b0_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b0b).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 01\}$
 
@@ -1034,7 +1034,7 @@ $F_B(x) = (1 - 4x + 5x^2 - 3x^3)/((1 - x)(1 - 2x)(1 - 3x + x^2))$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C32).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 498](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L498). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b00).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, 0\bar1, 01\}$
 
@@ -1050,7 +1050,7 @@ $F_B(x) = (1 - x)/(1 - 3x + x^2)$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C38).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-0b1).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_0b1_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-0b1).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar0, \bar00, 01\}$
 
@@ -1074,7 +1074,7 @@ multiplied by its denominator, with $S = \sqrt{1 - 4x}$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C39).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-b00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_b00_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-b00).
 
 ## Mansour–Safadi Theorem 3, class C41 (signed patterns 1̄0̄, 0̄0̄, 01̄, 00)
 
@@ -1098,7 +1098,7 @@ $F_{B_1}(x) = \frac{1}{1 - x}\bigl(1 + \sum_{j \ge 1} x^j / (1 - (j + 1)x)\bigr)
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C41).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-0b1-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b0-0b1-2).
 
 ## Mansour–Safadi Theorem 3, class C45
 
@@ -1114,7 +1114,7 @@ The generating function $C(x)$ printed in the paper is not defined there and is 
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C45).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01-01).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01_01` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 559](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L559). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01-01).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 00\}$
 
@@ -1139,7 +1139,7 @@ $F_{B_1}(x) = \frac{1}{1 - x}\Bigl(1 + \sum_{j \ge 1} x^j (1 - jx) /
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C46).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b00_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b00-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b00_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b00-2).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar01, 0\bar1\}$
 
@@ -1156,7 +1156,7 @@ $F_B(x) = \frac{1 - x}{1 - 2x} \sum_{j \ge 0} j!\, x^j$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C50).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b01_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b01-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b01_0b1` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-b01-2).
 
 ## Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, 0\bar1, 00\}$
 
@@ -1176,7 +1176,7 @@ $F_B(x) = \sum_{j \ge 0} x^j / \prod_{i=1}^{j+1} (1 - ix)$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C60).
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-0b1-2).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-and-gf-b1b0-b0b1-0b1-2).
 
 ## Mansour–Safadi Theorem 4
 
@@ -1190,7 +1190,7 @@ $|\bar{I}_n(\{\bar{0}\bar{1}, \bar{0}\bar{0}, \bar{0}1, 0\bar{0}\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b0b1_b0b0_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b0b1-b0b0-b01-0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b0b1_b0b0_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b0b1-b0b0-b01-0b0).
 
 ## Mansour–Safadi Theorem 5
 
@@ -1208,7 +1208,7 @@ $|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}\bar{0}, \bar{0}1, 1\bar{0}\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01-0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b0_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 631](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L631). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b0-b01-0b0).
 
 ## Mansour–Safadi Theorem 6
 
@@ -1222,7 +1222,7 @@ $|\bar{I}_n(\{\bar{1}0, \bar{0}0, 0\bar{1}, 00\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b00_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b00-0b1-00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b00_0b1_00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 649](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L649). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b00-0b1-00).
 
 ## Mansour–Safadi Theorem 7: four Wilf-equivalent four-pattern sets
 
@@ -1237,7 +1237,7 @@ $\{\bar1\bar0, \bar0\bar1, \bar0\bar0, \bar00\} \sim \{\bar1\bar0, \bar0\bar1, \
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b0b0_b00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 660](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L660). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b0b0-b00).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b0b0_b00` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 660](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L660). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b0b0-b00).
 
 ## Mansour–Safadi Theorem 8: two Wilf-equivalences of four-pattern sets
 
@@ -1252,7 +1252,7 @@ and $\{\bar1\bar0, \bar0\bar0, \bar00, 1\bar0\} \sim \{\bar1\bar0, \bar00, 0\bar
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b0b0-1b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b0b0-1b0).
 
 ## Mansour–Safadi Theorem 9: a Wilf-equivalence of four-pattern sets
 
@@ -1266,7 +1266,7 @@ $\{\bar1\bar0, \bar10, \bar0\bar0, 0\bar0\} \sim \{\bar1\bar0, \bar10, \bar00, 0
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0-0b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 693](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L693). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b0-0b0).
 
 ## Mansour–Safadi Theorem 12: four Wilf-equivalences of five-pattern sets
 
@@ -1291,7 +1291,7 @@ $|\bar I_2| = 5$, against $4$ for the first two sets.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b00-b01-0b).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 707](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L707). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b00-b01-0b).
 
 ## Mansour–Safadi Theorem 13: a Wilf-equivalence of five-pattern sets
 
@@ -1306,7 +1306,7 @@ $\{\bar1\bar0, \bar0\bar1, \bar00, \bar01, 1\bar0\} \sim
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b00-b01-1b).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b0b1-b00-b01-1b).
 
 ## Mansour–Safadi Theorem 14
 
@@ -1328,7 +1328,7 @@ $|\bar{I}_n(B_1)| = |\bar{I}_n(B_2)| = |\bar{I}_n(B_3)| = |\bar{I}_n(B_4)| = |\b
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b0b1_0b1_0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b0b1-0b1-0b0-1b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b10_b0b1_0b1_0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 741](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L741). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b10-b0b1-0b1-0b0-1b0).
 
 ## Mansour–Safadi Theorem 15
 
@@ -1342,7 +1342,7 @@ $|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}0, \bar{0}1, 0\bar{0}, 1\bar{0}\})| =
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b00_b01_0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 771](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b00-b01-0b0-1b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b00_b01_0b0_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 771](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L771). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b00-b01-0b0-1b0).
 
 ## Mansour–Safadi Theorem 16: a Wilf-equivalence of six-pattern sets
 
@@ -1357,7 +1357,7 @@ $\{\bar1\bar0, \bar10, \bar0\bar1, \bar00, \bar01, 0\bar0\} \sim
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b1_b00_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b1-b00-b0).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b1_b00_b01_0b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 781](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L781). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b1-b00-b0).
 
 ## Three six-pattern sets with 2 · n! avoiders (Theorem 17)
 
@@ -1375,7 +1375,7 @@ $|\bar I_n(A)| = 2 \cdot n!$.
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.signedInvAvoidCount_eq_two_mul_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-eq-two-mul-factor).
+Stated but not proved: `MetaMathlibExt.signedInvAvoidCount_eq_two_mul_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-avoid-count-eq-two-mul-factor).
 
 ## Mansour–Safadi Theorem 18: a Wilf-equivalence of seven-pattern sets
 
@@ -1390,7 +1390,7 @@ $\{\bar1\bar0, \bar10, \bar0\bar1, \bar0\bar0, \bar00, \bar01, 1\bar0\} \sim
 
 - Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b1_b0b0_b00_b01_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 806](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L806). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b1-b0b0-b).
+Stated but not proved: `MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b1_b0b0_b00_b01_1b0` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean, line 806](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SignedInversionSequenceLength2Wanted.lean#L806). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html#signed-inv-seq-wilf-b1b0-b10-b0b1-b0b0-b).
 
 ## Depends on
 
@@ -1399,4 +1399,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pattern avoidance in inversion sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/pattern-avoidance-in-inversion-sequences)

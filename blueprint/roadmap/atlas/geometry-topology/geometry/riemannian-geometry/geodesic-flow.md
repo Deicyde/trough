@@ -8,7 +8,7 @@ proof: formalized
 
 # Geodesic flow
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html).
 
 ## Unit tangent bundle of a Riemannian manifold
 
@@ -17,7 +17,7 @@ norm for the installed metric on their fiber is `1`, as a set of `TangentBundle 
 subspace topology. Source: Burns-Matveev, ETDS 41 (2021), §1 ("the unit tangent bundle ... is
 denoted by SM").
 
-Formalized by `Manifold.unitTangentBundle`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#unit-tangent-bundle).
+Formalized by `Manifold.unitTangentBundle`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#unit-tangent-bundle).
 
 ## Geodesic velocity curves
 
@@ -37,7 +37,7 @@ values $W(\gamma(t))$ exhaust the tangent space. The two conditions force $\gamm
 charts, where the weak form is equivalent to $\nabla_{\gamma'} \gamma' = 0$; no further
 smoothness of the curve is assumed.
 
-Formalized by `Manifold.IsGeodesicVelocityCurve`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-velocity-curve).
+Formalized by `Manifold.IsGeodesicVelocityCurve`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-velocity-curve).
 
 ## Geodesic flow on the tangent bundle
 
@@ -53,7 +53,7 @@ The definition characterizes the flow and does not assert that one exists or is 
 $C^\infty$ metric on a boundaryless manifold, uniqueness is classical, and the global flow exists
 when the metric is also complete. No continuity, smoothness or conservation of speed is assumed.
 
-Formalized by `Manifold.IsGeodesicFlow`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-flow).
+Formalized by `Manifold.IsGeodesicFlow`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-flow).
 
 ## Geodesic flow on the unit tangent bundle
 
@@ -71,7 +71,7 @@ The definition characterizes the flow and does not assert that one exists or is 
 $C^\infty$ metric on a boundaryless manifold, uniqueness is classical, and the global flow exists
 when the metric is also complete. No continuity, smoothness or conservation of speed is assumed.
 
-Formalized by `Manifold.IsUnitGeodesicFlow`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-unit-geodesic-flow).
+Formalized by `Manifold.IsUnitGeodesicFlow`, a structure declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-unit-geodesic-flow).
 
 ## Geodesic velocity curves in Euclidean space
 
@@ -82,7 +82,7 @@ $(x, v)$ with $x, v \in F$. A curve $t \mapsto u(t) = (x(t), v(t))$ in $TF$, def
 $t$, is the velocity curve of a geodesic if and only if, for every real $t$,
 $x(t) = x(0) + t\,v(0)$ and $v(t) = v(0)$.
 
-Formalized by `Manifold.isGeodesicVelocityCurve_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-velocity-curve-vector-space).
+Formalized by `Manifold.isGeodesicVelocityCurve_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-velocity-curve-vector-space).
 
 ## The geodesic flow of Euclidean space is the straight-line flow
 
@@ -93,7 +93,7 @@ tangent bundle $TF$ is a pair $(x, v)$ with $x, v \in F$. A family of maps
 $\varphi_t \colon TF \to TF$, $t \in \mathbb{R}$, is a geodesic flow on $TF$ if and only if
 $\varphi_t(x, v) = (x + t v, v)$ for every real $t$ and every $(x, v) \in TF$.
 
-Formalized by `Manifold.isGeodesicFlow_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-flow-vector-space-iff).
+Formalized by `Manifold.isGeodesicFlow_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-geodesic-flow-vector-space-iff).
 
 ## The unit geodesic flow of Euclidean space is the straight-line flow
 
@@ -105,7 +105,7 @@ the pairs with $\|v\| = 1$. A family of maps $\varphi_t \colon SF \to SF$, $t \i
 a geodesic flow on $SF$ if and only if $\varphi_t(x, v) = (x + t v, v)$ for every real $t$ and
 every $(x, v) \in SF$.
 
-Formalized by `Manifold.isUnitGeodesicFlow_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-unit-geodesic-flow-vector-space-iff).
+Formalized by `Manifold.isUnitGeodesicFlow_vectorSpace_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/GeodesicFlow/VectorSpace.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html#is-unit-geodesic-flow-vector-space-iff).
 
 ## Depends on
 
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Geodesic flow](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/geodesic-flow/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry/geodesic-flow)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry/geodesic-flow)

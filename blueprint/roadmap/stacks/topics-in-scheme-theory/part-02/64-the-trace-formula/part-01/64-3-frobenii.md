@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: cohomologyPullbackMap_eq_id_of_preimageEq, Stacks.EtaleCohomology.etaleCohomologyPullbackMap_comp_comparison, Stacks.EtaleCohomology.absoluteFrobeniusCohomologyFunctorIso, Stacks.EtaleCohomology.absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id, Stacks.Frobenius.geometricFrobenius, Stacks.EtaleCohomology.geometricFrobeniusPushforwardIso, Stacks.EtaleCohomology.geometricFrobeniusInverseImageIso, Stacks.EtaleCohomology.geometricFrobeniusDescentIsos
+lean: cohomologyPullbackMap_eq_id_of_preimageEq, Stacks.EtaleCohomology.etaleCohomologyRestrictionMap_comparison_eq_self, Stacks.EtaleCohomology.absoluteFrobeniusCohomologyFunctorIso, Stacks.EtaleCohomology.absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id, Stacks.Frobenius.geometricFrobenius, Stacks.EtaleCohomology.geometricFrobeniusPushforwardIso, Stacks.EtaleCohomology.geometricFrobeniusInverseImageIso, Stacks.EtaleCohomology.geometricFrobeniusDescentIsos
 statement: formalized
 proof: formalized
 ---
 
 # 64.3 Frobenii
 
-Section 64.3 of the Stacks Project, [Tag 03SL](https://stacks.math.columbia.edu/tag/03SL). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.3 of the Stacks Project, [Tag 03SL](https://stacks.math.columbia.edu/tag/03SL). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03SO, an exercise
 
 [Tag 03SO](https://stacks.math.columbia.edu/tag/03SO) in the Stacks Project.
 
-**`cohomologyPullbackMap_eq_id_of_preimageEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Pullback/IdOfPreimageEq.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Pullback/IdOfPreimageEq.lean#L99). The attribute's comment: “g induces the identity on cohomology, for any coefficients”.
+**`cohomologyPullbackMap_eq_id_of_preimageEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Pullback/IdOfPreimageEq.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Pullback/IdOfPreimageEq.lean#L99). The attribute's comment: “g induces the identity on cohomology, for any coefficients”.
 
 > **Stacks tag 03SO.** Let `X` be a topological space and `g : X ⟶ X` a continuous map such
 > that `g ⁻¹' U = U` for every open `U` of `X`. Then the map `g` induces on sheaf cohomology,
@@ -39,35 +39,41 @@ theorem cohomologyPullbackMap_eq_id_of_preimageEq
 
 [Tag 03SP](https://stacks.math.columbia.edu/tag/03SP) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleCohomologyPullbackMap_comp_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean#L207). The attribute's comment: “g induces the identity on cohomology, for any sheaf”.
+**`Stacks.EtaleCohomology.etaleCohomologyRestrictionMap_comparison_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCohomologyIdentityLawTransport.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCohomologyIdentityLawTransport.lean#L146). The attribute's comment: “g induces the identity on cohomology, for any sheaf”.
 
-> **Stacks Project, Tag 03SP.** Let `X` be a scheme and `g : X ⟶ X` a morphism such that every
-> étale `X`-scheme `U` is isomorphic over `X` to its base change `U ×_{g} X`, functorially in `U`.
-> Then `g` induces the identity on cohomology, for any abelian sheaf `F` and in every degree `n`:
-> the map `H^n(X, F) ⟶ H^n(X, g^{-1}F)` induced by `g`, followed by the canonical comparison
-> `H^n(X, g^{-1}F) ≅ H^n(X, F)`, is the identity of `H^n(X, F)`.
+> **Stacks Project, Tag 03SP.** Let `X` be a scheme and `g : X ⟶ X` a morphism such that
+> every étale `X`-scheme `U` is isomorphic over `X` to its base change `U ×_{g} X`, functorially in
+> `U` (the natural isomorphism `e : 𝟭 X.Etale ≅ smallEtaleBaseChange g`). Then `g` induces the
+> identity on cohomology, for every abelian sheaf `ℱ` and in every degree `n`: the canonical
+> pullback map `Stacks.EtaleCohomology.etaleCohomologyRestrictionMap g` on étale cohomology, which
+> is attached to `g` alone and does not depend on `e`, followed by the canonical comparison
+> `g^{-1}ℱ ≅ ℱ` of `Stacks.EtaleCohomology.etaleSheafPullbackComparison`, sends every class of
+> `H^n(X, ℱ)` to itself.
 >
-> See [Stacks Project, Tag 03SP](https://stacks.math.columbia.edu/tag/03SP).
+> For `ℱ` a constant sheaf and `g` the absolute Frobenius this is the baffling theorem
+> `Stacks.EtaleCohomology.absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id`
+> ([Stacks, Tag 03SN]); the proof is the same, the exactness of the inverse image making
+> `Stacks.Homology.ext_mapExactFunctor_of_isoId` applicable, and only the identification of the
+> comparison on the constant sheaf `ℤ` — `etaleAbelianInverseImageConstantIso_hom_app` — is needed
+> to see the two comparisons in the restriction map and in the statement as the components of one
+> isomorphism.
 
 ```lean
-public theorem etaleCohomologyPullbackMap_comp_comparison (X : Scheme.{u}) (g : X ⟶ X)
+theorem etaleCohomologyRestrictionMap_comparison_eq_self {X : Scheme.{u}} (g : X ⟶ X)
     (e : 𝟭 X.Etale ≅ smallEtaleBaseChange g)
-    [HasWeakSheafify (smallEtaleTopology X) AddCommGrpCat.{max (u + 1) v}]
-    [∀ F : X.Etaleᵒᵖ ⥤ AddCommGrpCat.{max (u + 1) v},
-      (smallEtaleBaseChange g).op.HasLeftKanExtension F]
-    [HasSheafify (smallEtaleTopology X) AddCommGrpCat.{max (u + 1) v}]
-    [HasExt.{w} (Sheaf (smallEtaleTopology X) AddCommGrpCat.{max (u + 1) v})]
-    (F : Sheaf (smallEtaleTopology X) AddCommGrpCat.{max (u + 1) v}) (n : ℕ) :
-    (Sheaf.H.map ((etaleSheafPullbackComparison.{u, v} X g e).hom.app F) n).comp
-        (etaleCohomologyPullbackMap.{u, v, w} X g e F n) =
-      AddMonoidHom.id (Sheaf.H.{w} F n)
+    [HasSheafify X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}]
+    [HasExt.{w} (Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})]
+    (F : Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}) (n : ℕ)
+    (x : Sheaf.H.{w} F n) :
+    Sheaf.H.map ((etaleSheafPullbackComparison.{u, v} X g e).hom.app F) n
+        (etaleCohomologyRestrictionMap.{u, v, w} g F n x) = x
 ```
 
 ## Tag 03SN, a theorem
 
 [Tag 03SN](https://stacks.math.columbia.edu/tag/03SN) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.absoluteFrobeniusCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean#L302). The attribute's comment: “pullback along the absolute Frobenius is identified with the identity functor”.
+**`Stacks.EtaleCohomology.absoluteFrobeniusCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheorem.lean#L307). The attribute's comment: “pullback along the absolute Frobenius is identified with the identity functor”.
 
 > On a scheme `X` of characteristic `p`, pullback along the absolute Frobenius is identified
 > with the identity functor on abelian étale sheaves, so composing it with cohomology in degree `j`
@@ -89,7 +95,7 @@ public def absoluteFrobeniusCohomologyFunctorIso
       Sheaf.functorH (smallEtaleTopology X) j
 ```
 
-**`Stacks.EtaleCohomology.absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheoremIdentity.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheoremIdentity.lean#L110). The attribute's comment: “the induced map on H^j(X, Z/nZ) is the identity”. References: SGA 5 XV (2.Proposition2), “special case”.
+**`Stacks.EtaleCohomology.absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheoremIdentity.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BafflingTheoremIdentity.lean#L110). The attribute's comment: “the induced map on H^j(X, Z/nZ) is the identity”. References: SGA 5 XV (2.Proposition2), “special case”.
 
 > **The Baffling Theorem**: on a scheme `X` of characteristic `p` the absolute Frobenius induces
 > the identity on `H^j(X, ℤ/nℤ)`. The canonical pullback map on étale cohomology, followed by the
@@ -114,7 +120,7 @@ public theorem absoluteFrobenius_etaleCohomologyRestrictionMap_eq_id
 
 [Tag 03SQ](https://stacks.math.columbia.edu/tag/03SQ) in the Stacks Project.
 
-**`Stacks.Frobenius.geometricFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L276). References: SGA 4½ Rapport (1.1).
+**`Stacks.Frobenius.geometricFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L276). References: SGA 4½ Rapport (1.1).
 
 > **Stacks Project, Tag 03SQ.** The geometric Frobenius of a scheme over a finite field of
 > characteristic `p` and cardinality `p ^ f`. It is the `f`-fold absolute Frobenius, bundled with
@@ -130,7 +136,7 @@ noncomputable def geometricFrobenius {k : Type u} [Field k] [Fintype k]
 
 [Tag 03SR](https://stacks.math.columbia.edu/tag/03SR) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.geometricFrobeniusPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean#L305). The attribute's comment: “direct image”. References: SGA 5 XII (7.3), “more general”.
+**`Stacks.EtaleCohomology.geometricFrobeniusPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean#L305). The attribute's comment: “direct image”. References: SGA 5 XII (7.3), “more general”.
 
 > Let `k` be a finite field with `p ^ f` elements, let `X` be a scheme over `k` and let `π_X` be
 > the geometric Frobenius of `X`. Then a sheaf `ℱ` on the small étale site of `X` is canonically
@@ -147,7 +153,7 @@ public def geometricFrobeniusPushforwardIso :
         (smallEtaleTopology X.left) (smallEtaleTopology X.left)
 ```
 
-**`Stacks.EtaleCohomology.geometricFrobeniusInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean#L330). The attribute's comment: “inverse image, for coefficients admitting sheafification and left Kan extensions”.
+**`Stacks.EtaleCohomology.geometricFrobeniusInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusDescent.lean#L330). The attribute's comment: “inverse image, for coefficients admitting sheafification and left Kan extensions”.
 
 > Let `k` be a finite field with `p ^ f` elements, let `X` be a scheme over `k` and let `π_X` be
 > the geometric Frobenius of `X`. Then the inverse image `π_X^{-1} ℱ` of a sheaf `ℱ` on the small
@@ -166,7 +172,7 @@ public def geometricFrobeniusInverseImageIso
       𝟭 (Sheaf (smallEtaleTopology X.left) A)
 ```
 
-**`Stacks.EtaleCohomology.geometricFrobeniusDescentIsos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusInverseImage.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusInverseImage.lean#L157). References: SGA 4½ Rapport (1.2); SGA 5 XII (7.3), “more general”.
+**`Stacks.EtaleCohomology.geometricFrobeniusDescentIsos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusInverseImage.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusInverseImage.lean#L157). References: SGA 4½ Rapport (1.2); SGA 5 XII (7.3), “more general”.
 
 > **Stacks Project, Tag 03SR.** Let `k` be a finite field with `q = p ^ f` elements, let `X` be
 > a scheme over `k` with geometric Frobenius `π_X = F_X^f`, and let `ℱ` be a sheaf on the small
@@ -199,7 +205,7 @@ public def geometricFrobeniusDescentIsos :
 
 [Tag 03SS](https://stacks.math.columbia.edu/tag/03SS) in the Stacks Project.
 
-**`Stacks.Frobenius.geometricFrobenius_left_eq_absoluteFrobenius_pow_and_exists_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L382).
+**`Stacks.Frobenius.geometricFrobenius_left_eq_absoluteFrobenius_pow_and_exists_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L382).
 
 > **Stacks Project, Tag 03SS.** The geometric Frobenius of a scheme over a finite field with
 > `p ^ f` elements is the `f`-fold absolute Frobenius. The exponent is read off from the base
@@ -225,7 +231,7 @@ theorem geometricFrobenius_left_eq_absoluteFrobenius_pow_and_exists_ne :
 
 [Tag 03ST](https://stacks.math.columbia.edu/tag/03ST) in the Stacks Project.
 
-**`Stacks.Frobenius.fibreComparison_galoisStalkAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisActionFibreCohomology.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisActionFibreCohomology.lean#L395). The attribute's comment: “Galois equivariance of the Theorem 03Q9 comparison in degree zero: unconditional in `α`, in the sheaf and in the algebraically closed extension, stated on the germ at an arbitrary étale neighbourhood of the geometric point. That the comparison is an isomorphism is Tag 03Q9, available in this library only over a strictly henselian base, and the equivariance in degree j > 0 needs transitivity of restriction of sections in the scheme over the base; neither is assumed here”.
+**`Stacks.Frobenius.fibreComparison_galoisStalkAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisActionFibreCohomology.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisActionFibreCohomology.lean#L396). The attribute's comment: “Galois equivariance of the Theorem 03Q9 comparison in degree zero: unconditional in `α`, in the sheaf and in the algebraically closed extension, stated on the germ at an arbitrary étale neighbourhood of the geometric point. That the comparison is an isomorphism is Tag 03Q9, in this library as `AlgebraicGeometry.stalkHigherDirectImageIso`, not identified here with this comparison, and the equivariance in degree j > 0 needs transitivity of restriction of sections in the scheme over the base; neither is assumed here”.
 
 > **Stacks Project, Tag 03ST, Galois equivariance in degree zero.** The comparison of Étale
 > Cohomology, Theorem 03Q9 carries the Galois action of Étale Cohomology Section 03QW on the stalk
@@ -254,7 +260,7 @@ public theorem fibreComparison_galoisStalkAction (σ : K ≃ₐ[k] K)
           (fibreLift_comp_hom K X W (galoisLift K σ W u)))).app F
 ```
 
-**`Stacks.Frobenius.higherDirectImageFibreMap_isIso_galoisEquivariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisModuleHigherDirectImageStalk.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisModuleHigherDirectImageStalk.lean#L245). References: SGA 4½ Arcata (2.3.3), “special case”; SGA 4½ Rapport (1.4), “special case”; SGA 7 XXII (2.2), “more general”.
+**`Stacks.Frobenius.higherDirectImageFibreMap_isIso_galoisEquivariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisModuleHigherDirectImageStalk.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GaloisModuleHigherDirectImageStalk.lean#L247). References: SGA 4½ Arcata (2.3.3), “special case”; SGA 4½ Rapport (1.4), “special case”; SGA 7 XXII (2.2), “more general”.
 
 > **Stacks Project, Tag 03ST.** Let `k` be a finite field, `K` an algebraic closure of `k`,
 > `G_k = Gal(K/k)`, `α : X ⟶ Spec k` quasi-compact and quasi-separated, and `ℱ` an abelian sheaf on
@@ -299,7 +305,7 @@ theorem higherDirectImageFibreMap_isIso_galoisEquivariant [Finite k] [Algebra.Is
 
 [Tag 03SU](https://stacks.math.columbia.edu/tag/03SU) in the Stacks Project.
 
-**`Stacks.Frobenius.arithmeticFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L304). References: SGA 7 XXI (5.0).
+**`Stacks.Frobenius.arithmeticFrobenius`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Frobenius.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Frobenius.lean#L304). References: SGA 7 XXI (5.0).
 
 > **Stacks Project, Tag 03SU.** The arithmetic Frobenius `x ↦ x ^ q` of a finite field `k`
 > with `q = p ^ f` elements, acting on a perfect extension field `K` of exponential
@@ -314,7 +320,7 @@ noncomputable def arithmeticFrobenius (hcard : Fintype.card k = p ^ f) : K ≃�
 
 [Tag 03SV](https://stacks.math.columbia.edu/tag/03SV) in the Stacks Project.
 
-**`Stacks.Frobenius.galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L434). The attribute's comment: “the Galois action of frob\_k after the map induced by the geometric Frobenius is the identity”.
+**`Stacks.Frobenius.galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L434). The attribute's comment: “the Galois action of frob\_k after the map induced by the geometric Frobenius is the identity”.
 
 > Let `k` be a finite field with `q = p ^ f` elements, let `X` be a scheme over `k`, let
 > `K/k` be an extension and let `σ` be the arithmetic Frobenius `x ↦ x ^ q` of `K`. For an
@@ -339,7 +345,7 @@ public theorem galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo (n :
         ((etaleAbelianInverseImage.{u, v} (fieldBaseChangeProj X K)).obj F) n)
 ```
 
-**`Stacks.Frobenius.geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L471). The attribute's comment: “the map induced by the geometric Frobenius after the Galois action of frob\_k is the identity”.
+**`Stacks.Frobenius.geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L471). The attribute's comment: “the map induced by the geometric Frobenius after the Galois action of frob\_k is the identity”.
 
 > With the data of `galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`, the
 > endomorphism of `H^j(X_K, ℱ|_{X_K})` induced by `π_X × id` undoes the one induced by the Galois
@@ -362,7 +368,7 @@ public theorem geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo (n :
 
 [Tag 03SW](https://stacks.math.columbia.edu/tag/03SW) in the Stacks Project.
 
-**`Stacks.Frobenius.geometricFrobeniusStalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L183). The attribute's comment: “on the stalk functor”. References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”; SGA 7 I (6.3); SGA 7 XXII (2.2.4), “The element φ\_q”.
+**`Stacks.Frobenius.geometricFrobeniusStalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L183). The attribute's comment: “on the stalk functor”. References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”; SGA 7 I (6.3); SGA 7 XXII (2.2.4), “The element φ\_q”.
 
 > **Stacks Project, Tag 03SW.** The geometric Frobenius at a rational point `x` of a scheme
 > over a finite field `k` with `p ^ f` elements, as an endomorphism of the étale stalk functor at
@@ -374,7 +380,7 @@ def geometricFrobeniusStalkFunctor (hcard : Fintype.card k = p ^ f) (x : Spec (.
       (Scheme.pointSmallEtale (rationalGeometricPoint K x).hom).sheafFiber
 ```
 
-**`Stacks.Frobenius.geometricFrobeniusStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L191). References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”.
+**`Stacks.Frobenius.geometricFrobeniusStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L191). References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”.
 
 > **Stacks Project, Tag 03SW.** The geometric Frobenius at a rational point `x`, acting on
 > the étale stalk of a sheaf `F` at the geometric point over `x`.
@@ -393,4 +399,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.3, Tag 03SL](https://stacks.math.columbia.edu/tag/03SL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.8 Derived category of coherent modules
 
-Section 75.8 of the Stacks Project, [Tag 08GI](https://stacks.math.columbia.edu/tag/08GI). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.8 of the Stacks Project, [Tag 08GI](https://stacks.math.columbia.edu/tag/08GI). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08GJ, an equation
 
 [Tag 08GJ](https://stacks.math.columbia.edu/tag/08GJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.coherentDerivedComparison_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L210). The attribute's comment: “well-definedness”.
+**`AlgebraicGeometry.Space.coherentDerivedComparison_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L210). The attribute's comment: “well-definedness”.
 
 > **Stacks 08GJ, well-definedness.**  The derived functor of the inclusion of the coherent
 > `𝒪_F`-modules has coherent cohomology in every degree: the inclusion is exact, so it commutes
@@ -26,7 +26,7 @@ theorem coherentDerivedComparison_mem (K : DerivedCategory (CoherentModules.{u, 
       ((isCoherent.{u, u} B S hS F hF).ι.mapDerivedCategory.obj K)
 ```
 
-**`AlgebraicGeometry.Space.coherentDerivedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L226).
+**`AlgebraicGeometry.Space.coherentDerivedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L226).
 
 > **Stacks 08GJ.**  The canonical functor from the derived category of the coherent
 > `𝒪_F`-modules to the derived category of all `𝒪_F`-modules with coherent cohomology,
@@ -42,7 +42,7 @@ noncomputable def coherentDerivedComparison :
       CoherentDerivedCategory.{u} B S hS F hF
 ```
 
-**`AlgebraicGeometry.Space.coherentDerivedComparisonCompιIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L237). The attribute's comment: “canonical comparison”.
+**`AlgebraicGeometry.Space.coherentDerivedComparisonCompιIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedComparison.lean#L237). The attribute's comment: “canonical comparison”.
 
 > **Stacks 08GJ, the canonical comparison.**  The functor `D(Coh(𝒪_F)) ⥤ D_Coh(𝒪_F)` followed
 > by the inclusion of `D_Coh(𝒪_F)` into `D(𝒪_F)` is the derived functor of the inclusion
@@ -59,7 +59,7 @@ noncomputable def coherentDerivedComparisonCompιIso :
 
 [Tag 08GK](https://stacks.math.columbia.edu/tag/08GK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedCategoryBBounded_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean#L154).
+**`AlgebraicGeometry.Space.derivedCategoryBBounded_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean#L154).
 
 > Let `S` be a scheme and `f : X ⟶ Y` a morphism of algebraic spaces over `S` which is locally
 > of finite type, with `Y` Noetherian.  Let `E ∈ D^b_{Coh}(𝒪_X)` be such that the support of
@@ -82,7 +82,7 @@ theorem derivedCategoryBBounded_derivedModulePushforward_of_hasProperSupport
 
 [Tag 0D0R](https://stacks.math.columbia.edu/tag/0D0R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedCategoryBPlus_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean#L182). The attribute's comment: “with the support of each H^i(E) proper over Y: proper over S, as printed, the statement fails (the open immersion of one chart P^1 into the projective line with doubled origin over a field, with E = O\_X), and Y is what the source's proof, through 08GK, uses”.
+**`AlgebraicGeometry.Space.derivedCategoryBPlus_derivedModulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedPushforwardCoherentProperSupport.lean#L182). The attribute's comment: “with the support of each H^i(E) proper over Y: proper over S, as printed, the statement fails (the open immersion of one chart P^1 into the projective line with doubled origin over a field, with E = O\_X), and Y is what the source's proof, through 08GK, uses”.
 
 > Let `S` be a scheme and `f : X ⟶ Y` a morphism of algebraic spaces over `S` which is locally
 > of finite type, with `Y` Noetherian.  Let `E ∈ D^+_{Coh}(𝒪_X)` be such that the support of
@@ -106,7 +106,7 @@ theorem derivedCategoryBPlus_derivedModulePushforward_of_hasProperSupport
 
 [Tag 0D0S](https://stacks.math.columbia.edu/tag/0D0S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBoundedBelow_sheafHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean#L269). The attribute's comment: “the bounded-below clause, on a pair of models and with no Noetherian or coherence hypothesis”.
+**`AlgebraicGeometry.Space.isBoundedBelow_sheafHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean#L269). The attribute's comment: “the bounded-below clause, on a pair of models and with no Noetherian or coherence hypothesis”.
 
 > **Stacks 0D0S, the bounded-below clause, on a pair of models.** If `A` is concentrated in
 > degrees `≤ d` and `J` in degrees `≥ b`, the class of the internal Hom complex `SheafHom(A, J)`
@@ -125,7 +125,7 @@ public theorem isBoundedBelow_sheafHomComplex
         (sheafHomComplex (smallEtaleRingedSite B S hS F hF) A J).obj)
 ```
 
-**`AlgebraicGeometry.Space.isBoundedBelow_derivedSheafHomOnSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean#L319). The attribute's comment: “the bounded-below clause, for K and L themselves and with no Noetherian hypothesis”.
+**`AlgebraicGeometry.Space.isBoundedBelow_derivedSheafHomOnSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHom.lean#L319). The attribute's comment: “the bounded-below clause, for K and L themselves and with no Noetherian hypothesis”.
 
 > **Stacks 0D0S, the bounded-below clause.** Let `X` be an algebraic space over `S`. If `K` is
 > in `D⁻_Coh(𝒪_X)` and `L` is in `D⁺_Coh(𝒪_X)`, then `RSheafHom(K, L)` is cohomologically bounded
@@ -156,7 +156,7 @@ public theorem isBoundedBelow_derivedSheafHomOnSpace
             (sheafHomComplex (smallEtaleRingedSite B S hS F hF) A J).obj)
 ```
 
-**`AlgebraicGeometry.Space.derivedCategoryBPlus_isCoherentOnSite_sheafHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHomCoherentCohomology.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHomCoherentCohomology.lean#L151). The attribute's comment: “read on a model of K and a K-injective model of L”.
+**`AlgebraicGeometry.Space.derivedCategoryBPlus_isCoherentOnSite_sheafHomComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHomCoherentCohomology.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDerivedInternalHomCoherentCohomology.lean#L151). The attribute's comment: “read on a model of K and a K-injective model of L”.
 
 > **Stacks 0D0S.** On a locally Noetherian algebraic space, `RSheafHom(K, L)` lies in
 > `D⁺_Coh(𝒪_X)` for `K` in `D⁻_Coh(𝒪_X)` and `L` in `D⁺_Coh(𝒪_X)`, read on a model `A` of `K` and
@@ -181,7 +181,7 @@ theorem derivedCategoryBPlus_isCoherentOnSite_sheafHomComplex
 
 [Tag 0D0T](https://stacks.math.columbia.edu/tag/0D0T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.moduleFinite_hom_shift_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperExtFiniteComplexes.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperExtFiniteComplexes.lean#L223).
+**`AlgebraicGeometry.Space.moduleFinite_hom_shift_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperExtFiniteComplexes.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperExtFiniteComplexes.lean#L223).
 
 > **Stacks 0D0T.**  Let `A` be a Noetherian ring and `X` an algebraic space over `A` proper over
 > `A`.  Let `K ∈ D⁻_Coh(𝒪_X)` and `L ∈ D⁺_Coh(𝒪_X)`.  Then `Ext^n_X(K, L) = Hom_{D(𝒪_X)}(K, L[n])`
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.8, Tag 08GI](https://stacks.math.columbia.edu/tag/08GI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

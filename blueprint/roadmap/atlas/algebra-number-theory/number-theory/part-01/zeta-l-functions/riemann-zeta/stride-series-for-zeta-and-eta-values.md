@@ -7,7 +7,7 @@ statement: formalized
 
 # Stride series for zeta and eta values
 
-15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html).
+15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html).
 
 ## Alternating stride sum
 
@@ -26,7 +26,7 @@ $m \ge 1$; with $j = i + 1$ it reads $\sum_{j=1}^{K} (-1)^{j+1}/(n + q - qj)^t$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 1, equation (9).
 
-Formalized by `MetaMathlibExt.strideAlternatingSum`, a definition declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum).
+Formalized by `MetaMathlibExt.strideAlternatingSum`, a definition declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum).
 
 ## Signed stride sum
 
@@ -45,7 +45,7 @@ sign is $+$, and for even $q$ the signs alternate.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 2, equation (25).
 
-Formalized by `MetaMathlibExt.strideSignedSum`, a definition declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum).
+Formalized by `MetaMathlibExt.strideSignedSum`, a definition declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum).
 
 ## Alternating stride sum with a single term
 
@@ -56,7 +56,7 @@ $1 \le n \le q$, the alternating stride sum satisfies $S_{q,t}(n) = 1/n^t$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, equation (9).
 
-Formalized by `MetaMathlibExt.strideAlternatingSum_of_le`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum-of-le).
+Formalized by `MetaMathlibExt.strideAlternatingSum_of_le`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum-of-le).
 
 ## Signed stride sum with a single term
 
@@ -67,7 +67,7 @@ $1 \le n \le q$, the signed stride sum satisfies $T_{q,t}(n) = 1/n^t$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, equation (25).
 
-Formalized by `MetaMathlibExt.strideSignedSum_of_le`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum-of-le).
+Formalized by `MetaMathlibExt.strideSignedSum_of_le`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum-of-le).
 
 ## Recurrence for the alternating stride sum
 
@@ -79,7 +79,7 @@ $S_{q,t}(n + q) = 1/(n + q)^t - S_{q,t}(n)$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, equation (9).
 
-Formalized by `MetaMathlibExt.strideAlternatingSum_add`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum-add).
+Formalized by `MetaMathlibExt.strideAlternatingSum_add`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-alternating-sum-add).
 
 ## Recurrence for the signed stride sum
 
@@ -91,7 +91,7 @@ $T_{q,t}(n + q) = 1/(n + q)^t + (-1)^{q+1} T_{q,t}(n)$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, equation (25).
 
-Formalized by `MetaMathlibExt.strideSignedSum_add`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum-add).
+Formalized by `MetaMathlibExt.strideSignedSum_add`, a theorem declared in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#stride-signed-sum-add).
 
 ## Alternating stride sum series for $\zeta(t + 1)$
 
@@ -112,7 +112,7 @@ identity (8) use a quantity $A^{(t)}$ that the record does not define and are no
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 1, equation (9).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_riemannZeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-riemann-z).
+Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_riemannZeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-riemann-z).
 
 ## Digamma series for the signed stride sum
 
@@ -140,7 +140,7 @@ absolutely.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 2, equation (24).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-digamma).
+Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-digamma).
 
 ## Stride series for the Dirichlet eta function
 
@@ -156,7 +156,7 @@ the Dirichlet eta function.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 2, equation (25).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_dirichletEta` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-dirichlet-eta).
+Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_dirichletEta` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-dirichlet-eta).
 
 ## Digamma identity for stride sums over odd indices
 
@@ -184,7 +184,7 @@ paper's series (9) for $\zeta(t+1)$ and (25) for $\eta(t+1)$.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (27).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideSums_digamma_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-sums-digamma-odd).
+Stated but not proved: `MetaMathlibExt.tendsto_strideSums_digamma_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-sums-digamma-odd).
 
 ## Stride series for the Dirichlet lambda function
 
@@ -206,7 +206,7 @@ $\lambda(2) = \pi^2/8 \approx 1.234$).
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (28).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideSums_dirichletLambda` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-sums-dirichlet-lambda).
+Stated but not proved: `MetaMathlibExt.tendsto_strideSums_dirichletLambda` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-sums-dirichlet-lambda).
 
 ## Alternating stride sum series for $\zeta(p + t + 1)$
 
@@ -227,7 +227,7 @@ $A^{(t)}$ that the record does not define.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 4, equation (32).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_riemannZeta_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-riemann-z-2).
+Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_riemannZeta_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-riemann-z-2).
 
 ## Higher-power stride series for the Dirichlet eta function
 
@@ -244,7 +244,7 @@ is the Dirichlet eta function.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 5, equation (40).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_dirichletEta_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-dirichlet-eta-2).
+Stated but not proved: `MetaMathlibExt.tendsto_strideSignedSum_dirichletEta_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-signed-sum-dirichlet-eta-2).
 
 ## Digamma series for the alternating stride sum
 
@@ -269,7 +269,7 @@ $$
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Corollary 1, equation (20).
 
-Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_digamma_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-digamma-h).
+Stated but not proved: `MetaMathlibExt.tendsto_strideAlternatingSum_digamma_half` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tendsto-stride-alternating-sum-digamma-h).
 
 ## Closed form of $\sum_{n \ge 1} 1/(n^t(2n-1))$
 
@@ -283,7 +283,7 @@ where $\zeta$ is the Riemann zeta function.
 
 - Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Corollary 1, equation (22).
 
-Stated but not proved: `MetaMathlibExt.tsum_inv_pow_mul_two_mul_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tsum-inv-pow-mul-two-mul-sub-one).
+Stated but not proved: `MetaMathlibExt.tsum_inv_pow_mul_two_mul_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZetaStrideSeriesWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html#tsum-inv-pow-mul-two-mul-sub-one).
 
 ## Depends on
 
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stride series for zeta and eta values](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/stride-series-for-zeta-and-eta-values)

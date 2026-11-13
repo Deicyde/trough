@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.19 Invertible sheaves and morphisms into relative Proj
 
-Section 27.19 of the Stacks Project, [Tag 01O8](https://stacks.math.columbia.edu/tag/01O8). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.19 of the Stacks Project, [Tag 01O8](https://stacks.math.columbia.edu/tag/01O8). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01O8, the section
 
 [Tag 01O8](https://stacks.math.columbia.edu/tag/01O8) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.value_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L120). The attribute's comment: “item (6): the components of psi are multiplicative across degrees, the value at a product of homogeneous sections over an open of the base being the product of the values in the tensor powers of L over the preimage of that open”.
+**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.value_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L120). The attribute's comment: “item (6): the components of psi are multiplicative across degrees, the value at a product of homogeneous sections over an open of the base being the product of the values in the tensor powers of L over the preimage of that open”.
 
 > `ψ` is multiplicative across degrees on values: `ψ(a · b) = ψ(a) · ψ(b)` in
 > `Γ(f^{-1}(V), ℒ^{⊗ (n + m)})`.
@@ -27,7 +27,7 @@ public theorem value_mul (n m : ℕ) (V : S.Opens) (a : Γ(A.piece (n : ℤ), V)
           (P.value n V a) (P.value m V b)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.coveringOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L175). The attribute's comment: “the open U(psi) = union over triples (U, V, a) -- V affine open of the base, U = f^\{-1}(V), a a homogeneous section of positive degree of A over V -- of the open U\_\{psi(a)} on which the section psi(a) of L^\{tensor deg(a)} over U does not vanish”.
+**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.coveringOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L175). The attribute's comment: “the open U(psi) = union over triples (U, V, a) -- V affine open of the base, U = f^\{-1}(V), a a homogeneous section of positive degree of A over V -- of the open U\_\{psi(a)} on which the section psi(a) of L^\{tensor deg(a)} over U does not vanish”.
 
 > The open `U(ψ) = ⋃_{(U, V, a)} U_{ψ(a)}`: the union of the opens on which the values of `ψ`
 > at the homogeneous sections of positive degree over the affine opens of the base do not
@@ -41,7 +41,7 @@ public def coveringOpen : T.Opens
 
 [Tag 01O9](https://stacks.math.columbia.edu/tag/01O9) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.tag01O9`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean#L87). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj\_S(A) over S and the unital map of graded algebras theta : r^*(sum\_d O(d)) -> sum\_d L^d|\_\{U(psi)}; properties (1), (2) and (3) for them; and every triple (U', r', theta') with properties (1), (2) and (3) is (U(psi), r\_\{L,psi}, theta)”.
+**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.tag01O9`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean#L87). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj\_S(A) over S and the unital map of graded algebras theta : r^*(sum\_d O(d)) -> sum\_d L^d|\_\{U(psi)}; properties (1), (2) and (3) for them; and every triple (U', r', theta') with properties (1), (2) and (3) is (U(psi), r\_\{L,psi}, theta)”.
 
 > **[Stacks, Tag 01O9].** For `ψ : f^*𝒜 ⟶ ⨁_{d} ℒ^{⊗ d}` with `ℒ` invertible, put
 > `P = toGradedPowerMap ψ`, `U(ψ) = P.coveringOpen`, `r = P.globalMorphism (relativeProj A)` and
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.19, Tag 01O8](https://stacks.math.columbia.edu/tag/01O8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

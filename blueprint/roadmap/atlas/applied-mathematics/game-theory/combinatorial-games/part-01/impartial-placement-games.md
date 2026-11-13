@@ -7,7 +7,7 @@ statement: formalized
 
 # Impartial placement games
 
-30 results, 15 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html).
+30 results, 15 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html).
 
 ## Terminal positions of a placement game
 
@@ -20,7 +20,7 @@ play has ended, or every cell is occupied. These are the positions with no optio
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Definition 1.1 (terminal positions).
 
-Formalized by `MetaMathlibExt.placementTerminal`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-terminal).
+Formalized by `MetaMathlibExt.placementTerminal`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-terminal).
 
 ## Ults of a placement game
 
@@ -33,7 +33,7 @@ cell $c \notin S$ such that $S \cup \{c\}$ is terminal.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Definition 1.1 (ults).
 
-Formalized by `MetaMathlibExt.placementUlt`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-ult).
+Formalized by `MetaMathlibExt.placementUlt`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-ult).
 
 ## Penults of a placement game
 
@@ -46,7 +46,7 @@ not terminal, and $S \cup \{c\}$ is an ult for every cell $c \notin S$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Definition 1.1 (penults).
 
-Formalized by `MetaMathlibExt.placementPenult`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-penult).
+Formalized by `MetaMathlibExt.placementPenult`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-penult).
 
 ## The placement game
 
@@ -61,7 +61,7 @@ $|\alpha| - |S|$ of empty cells.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (normal-play impartial placement games).
 
-Formalized by `MetaMathlibExt.placementGame`, an abbreviation declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-game).
+Formalized by `MetaMathlibExt.placementGame`, an abbreviation declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-game).
 
 ## Moves of a placement game
 
@@ -74,7 +74,7 @@ $T = S \cup \{c\}$ for some cell $c \notin S$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (normal-play impartial placement games).
 
-Formalized by `MetaMathlibExt.mem_placementGame_moves`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#mem-placement-game-moves).
+Formalized by `MetaMathlibExt.mem_placementGame_moves`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#mem-placement-game-moves).
 
 ## First-player win in a placement game
 
@@ -87,7 +87,7 @@ P-position of that game under normal play, in which the player unable to move lo
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (normal-play impartial games) and Section 4 (winning strategies).
 
-Formalized by `MetaMathlibExt.placementFirstPlayerWins`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-first-player-wins).
+Formalized by `MetaMathlibExt.placementFirstPlayerWins`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-first-player-wins).
 
 ## Normal-play recursion for placement games
 
@@ -101,7 +101,7 @@ does not win.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (normal-play impartial games).
 
-Formalized by `MetaMathlibExt.placementFirstPlayerWins_iff`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-first-player-wins-iff).
+Formalized by `MetaMathlibExt.placementFirstPlayerWins_iff`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-first-player-wins-iff).
 
 ## The full board is terminal
 
@@ -113,7 +113,7 @@ ending condition $E$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Definition 1.1 (a position with no options is terminal).
 
-Formalized by `MetaMathlibExt.placementTerminal_univ`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-terminal-univ).
+Formalized by `MetaMathlibExt.placementTerminal_univ`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#placement-terminal-univ).
 
 ## End of Impartial Tic
 
@@ -126,7 +126,7 @@ is a column $c$ with $(r, c) \in S$ for every row $r$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (rules of Impartial Tic).
 
-Formalized by `MetaMathlibExt.ticEnded`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tic-ended).
+Formalized by `MetaMathlibExt.ticEnded`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tic-ended).
 
 ## Impartial Tic has not ended on the empty board
 
@@ -137,7 +137,7 @@ not ended on the empty $n \times n$ board: no row and no column is full.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (rules of Impartial Tic).
 
-Formalized by `MetaMathlibExt.not_ticEnded_empty`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#not-tic-ended-empty).
+Formalized by `MetaMathlibExt.not_ticEnded_empty`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#not-tic-ended-empty).
 
 ## Orthogonal adjacency
 
@@ -150,7 +150,7 @@ the same column and their rows differ by $1$ ($p_2 = q_2$ and $|p_1 - q_1| = 1$)
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (orthogonal paths in Impartial Tak).
 
-Formalized by `MetaMathlibExt.takAdjacent`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tak-adjacent).
+Formalized by `MetaMathlibExt.takAdjacent`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tak-adjacent).
 
 ## Roads in Impartial Tak
 
@@ -165,7 +165,7 @@ first column and $b$ in the last column, or $a$ lies in the first row and $b$ in
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (rules of Impartial Tak).
 
-Formalized by `MetaMathlibExt.takHasRoad`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tak-has-road).
+Formalized by `MetaMathlibExt.takHasRoad`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#tak-has-road).
 
 ## The empty board has no Tak road
 
@@ -176,7 +176,7 @@ road of Impartial Tak.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Section 1 (rules of Impartial Tak).
 
-Formalized by `MetaMathlibExt.not_takHasRoad_empty`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#not-tak-has-road-empty).
+Formalized by `MetaMathlibExt.not_takHasRoad_empty`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#not-tak-has-road-empty).
 
 ## Weights of the Weighted Cross
 
@@ -190,7 +190,7 @@ four orthogonal neighbours) and $1$ elsewhere.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Figure 10 (c) (the Weighted Cross; arXiv:2408.01837v1, Figure 7 (c)).
 
-Formalized by `MetaMathlibExt.weightedCrossWeight`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#weighted-cross-weight).
+Formalized by `MetaMathlibExt.weightedCrossWeight`, a definition declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#weighted-cross-weight).
 
 ## Total weight of the Weighted Cross
 
@@ -201,7 +201,7 @@ $5 \times 5$ window sum to $26$: $\sum_{a=0}^{4} \sum_{b=0}^{4} w(a, b) = 26$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Figure 10 (c) and Proposition 14 (coefficient `26`).
 
-Formalized by `MetaMathlibExt.sum_weightedCrossWeight`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#sum-weighted-cross-weight).
+Formalized by `MetaMathlibExt.sum_weightedCrossWeight`, a theorem declared in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#sum-weighted-cross-weight).
 
 ## The first player wins Impartial Tic exactly on odd boards
 
@@ -213,7 +213,7 @@ empty board, if and only if $n$ is odd; for even $n$ the second player wins.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.impartialTic_firstPlayerWins_iff_odd` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-first-player-wins-iff-odd).
+Stated but not proved: `MetaMathlibExt.impartialTic_firstPlayerWins_iff_odd` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-first-player-wins-iff-odd).
 
 ## The second player wins Impartial Tak on even boards
 
@@ -227,7 +227,7 @@ player wins.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_not_firstPlayerWins_of_even` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-not-first-player-wins-of-e).
+Stated but not proved: `MetaMathlibExt.impartialTak_not_firstPlayerWins_of_even` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-not-first-player-wins-of-e).
 
 ## The first player wins Impartial Tak on the $5 \times 5$ board
 
@@ -240,7 +240,7 @@ On the $5 \times 5$ board the first player wins from the empty board.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_five_firstPlayerWins` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-five-first-player-wins).
+Stated but not proved: `MetaMathlibExt.impartialTak_five_firstPlayerWins` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-five-first-player-wins).
 
 ## Token bound for dual Impartial Tic penults
 
@@ -256,7 +256,7 @@ that a penult of the dual game on the $n \times n$ board has at most $4(n - 2)$ 
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.impartialTic_dual_penult_card_le` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-dual-penult-card-le).
+Stated but not proved: `MetaMathlibExt.impartialTic_dual_penult_card_le` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-dual-penult-card-le).
 
 ## Dual Impartial Tic penults on the 4 × 4 board have at most 9 tokens
 
@@ -271,7 +271,7 @@ that a penult of the dual game on the $4 \times 4$ board has at most $9$ tokens.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.impartialTic_dual_penult_card_le_of_four` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-dual-penult-card-le-of-fou).
+Stated but not proved: `MetaMathlibExt.impartialTic_dual_penult_card_le_of_four` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-dual-penult-card-le-of-fou).
 
 ## Token counts of dual Impartial Tic penults
 
@@ -287,7 +287,7 @@ penult of the dual game on the $n \times n$ board with exactly $x$ tokens.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.impartialTic_exists_dual_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-exists-dual-penult-card).
+Stated but not proved: `MetaMathlibExt.impartialTic_exists_dual_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tic-exists-dual-penult-card).
 
 ## Impartial Tak penults of every size from $n^2 - 4(n - 2) - 2$ to $n^2 - 2n$
 
@@ -300,7 +300,7 @@ is an Impartial Tak penult on the $n \times n$ board with exactly $x$ tokens.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_exists_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-exists-penult-card).
+Stated but not proved: `MetaMathlibExt.impartialTak_exists_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-exists-penult-card).
 
 ## The largest Impartial Tak penult
 
@@ -313,7 +313,7 @@ exactly $n^2 - 2n$ tokens and no penult has more.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_isGreatest_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-is-greatest-penult-card).
+Stated but not proved: `MetaMathlibExt.impartialTak_isGreatest_penult_card` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-is-greatest-penult-card).
 
 ## Impartial Tak penults with about $n^2/3$ tokens
 
@@ -331,7 +331,7 @@ $n^2/3 + 2n - 6$ in the four cases.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_exists_snake_penult` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-exists-snake-penult).
+Stated but not proved: `MetaMathlibExt.impartialTak_exists_snake_penult` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-exists-snake-penult).
 
 ## Every Cross meets an Impartial Tak penult
 
@@ -346,7 +346,7 @@ orthogonal neighbours) contains a token.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_cross_nonempty` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-cross-nonempty).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_cross_nonempty` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 312](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L312). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-cross-nonempty).
 
 ## An $n^2/5$ lower bound for Impartial Tak penults
 
@@ -359,7 +359,7 @@ least $n^2/5 - Cn$ tokens; that is, every penult has at least $n^2/5 + O(n)$ tok
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_fifth` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-fifth).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_fifth` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-fifth).
 
 ## Every Thick Cross holds three tokens of an Impartial Tak penult
 
@@ -375,7 +375,7 @@ $(r + 3, c + 3)$ removed. Then at least $3$ cells of the Thick Cross belong to $
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_thickCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-thick-cross).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_thickCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-thick-cross).
 
 ## An $n^2/4$ lower bound for Impartial Tak penults
 
@@ -388,7 +388,7 @@ least $n^2/4 - Cn$ tokens; that is, every penult has at least $n^2/4 + O(n)$ tok
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_quarter` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-quarter).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_quarter` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-quarter).
 
 ## Weighted Cross bound for Impartial Tak penults
 
@@ -403,7 +403,7 @@ of $S$ in the window have total weight at least $7$.
 
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 13.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_weightedCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-weighted-cross).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_weightedCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-weighted-cross).
 
 ## A $\frac{7}{26}(n - 4)^2$ lower bound for Impartial Tak penults
 
@@ -417,7 +417,7 @@ $7(n - 4)^2 \le 26|S|$, that is, it has at least $\frac{7}{26}(n - 4)^2$ tokens.
 - the journal text layer prints the bound as `26 (n - 4)2` with the numerator lost; the numerator `7` is the one in arXiv:2408.01837v1, whose statement prints `(7/26)(n - 8)²` but whose proof (summing the Weighted Cross bound of Proposition 13 over the `(n - 4)²` windows, each cell carrying total weight at most `26`) concludes `(7/26)(n - 4)²`, matching the journal's `(n - 4)²`.
 - Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 14.
 
-Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_weightedCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/PenultsOfTakWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-weighted-cr).
+Stated but not proved: `MetaMathlibExt.impartialTak_penult_card_ge_weightedCross` is written with `theorem_wanted` in [WantedExt/GameTheory/PenultsOfTakWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/PenultsOfTakWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html#impartial-tak-penult-card-ge-weighted-cr).
 
 ## Depends on
 
@@ -426,4 +426,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Impartial placement games](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/impartial-placement-games/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/impartial-placement-games)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/impartial-placement-games)

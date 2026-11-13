@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.7 Points and specializations
 
-Section 68.7 of the Stacks Project, [Tag 03K1](https://stacks.math.columbia.edu/tag/03K1). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.7 of the Stacks Project, [Tag 03K1](https://stacks.math.columbia.edu/tag/03K1). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03IM, a lemma
 
 [Tag 03IM](https://stacks.math.columbia.edu/tag/03IM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_specializes_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L256).
+**`AlgebraicGeometry.Space.eq_of_specializes_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L256).
 
 > **Stacks 03IM.** Let `X` be an algebraic space over `S` and let `x` be a point of `X`
 > above which every étale chart of `X` by an affine scheme has a finite fibre, which is
@@ -43,7 +43,7 @@ theorem eq_of_specializes_of_pointsMap_eq {X : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
 
 [Tag 0H1Q](https://stacks.math.columbia.edu/tag/0H1Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_specializes_of_chartPoint_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericPointsAndDimension.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericPointsAndDimension.lean#L125).
+**`AlgebraicGeometry.Space.eq_of_specializes_of_chartPoint_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericPointsAndDimension.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericPointsAndDimension.lean#L125).
 
 > Let `X` be an algebraic space over `S` and let `a : h_U ⟶ X` be an étale scheme chart of `X`
 > whose scheme is locally Noetherian. Two points `u`, `u'` of `U` lying above the same point `x` of
@@ -65,7 +65,7 @@ theorem eq_of_specializes_of_chartPoint_of_isLocallyNoetherian
 
 [Tag 03K2](https://stacks.math.columbia.edu/tag/03K2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_specializes_pointsMap_eq_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L517).
+**`AlgebraicGeometry.Space.exists_specializes_pointsMap_eq_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L517).
 
 > **Stacks 03K2.** Let `X` be an algebraic space over `S`, let `x' ⤳ x` be a
 > specialization of points of `X` and assume that every étale chart of `X` by an affine scheme
@@ -95,7 +95,7 @@ theorem exists_specializes_pointsMap_eq_of_isEtale
 
 [Tag 0B7W](https://stacks.math.columbia.edu/tag/0B7W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_specializes_pointsMap_eq_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L552).
+**`AlgebraicGeometry.Space.exists_specializes_pointsMap_eq_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/Specializations.lean#L552).
 
 > **Stacks 0B7W.** Let `f : Y ⟶ X` be a flat morphism of algebraic spaces over `S`, let
 > `x' ⤳ x` be a specialization of points of `X` and assume that every étale chart of `X` by an
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.7, Tag 03K1](https://stacks.math.columbia.edu/tag/03K1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

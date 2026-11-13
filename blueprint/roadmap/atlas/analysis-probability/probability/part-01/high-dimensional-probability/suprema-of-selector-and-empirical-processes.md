@@ -7,7 +7,7 @@ statement: formalized
 
 # Suprema of selector and empirical processes
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html).
 
 ## Binomial random subset
 
@@ -16,7 +16,7 @@ distribution on $X$ with parameter $p$ is the probability measure on the subsets
 which each element of $X$ belongs to the random subset independently with probability $p$. A
 random subset with this law is denoted $X_p$.
 
-Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.binomialSetDistribution`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#binomial-set-distribution).
+Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.binomialSetDistribution`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#binomial-set-distribution).
 
 ## $p$-small families of sets
 
@@ -25,7 +25,7 @@ $\mathcal{F}$ of subsets of $X$ is $p$-small when there is a family $\mathcal{G}
 $X$ such that every member of $\mathcal{F}$ contains some member of $\mathcal{G}$ and
 $\sum_{S \in \mathcal{G}} p^{|S|} \le 1/2$.
 
-Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.IsSmall`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#is-small).
+Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.IsSmall`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#is-small).
 
 ## Park–Pham theorem on selector processes (Talagrand's selector process conjecture)
 
@@ -45,7 +45,7 @@ with a constant $c > 1$.
 
 - J. Park and H. T. Pham, `On a conjecture of Talagrand on selector processes and a consequence on positive empirical processes`, Annals of Math, 199 (3) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_supremum_of_selector_processes` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#theorem-1-2).
 
 ## Empirical averages
 
@@ -55,7 +55,7 @@ $Z_N(f)(\omega) = \frac{1}{N} \sum_{i=1}^{N} f(Y_i(\omega))$, which is $0$ when 
 
 When $Y_1, \dots, Y_N$ are i.i.d., $Z_N(f)$ is called an empirical process.
 
-Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.Z`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#z).
+Formalized by `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.Z`, a definition declared in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#z).
 
 ## Park–Pham theorem on positive empirical processes
 
@@ -79,7 +79,7 @@ for the sum to make sense, and the collections produced by the proof are finite.
 
 - J. Park and H. T. Pham, `On a conjecture of Talagrand on selector processes and a consequence on positive empirical processes`, Annals of Math, 199 (3) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_supremum_of_selector_processes` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_3` is written with `theorem_wanted` in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#theorem-1-3).
+Stated but not proved: `MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_3` is written with `theorem_wanted` in [WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/SupremumOfSelectorProcessesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html#theorem-1-3).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Suprema of selector and empirical processes](https://deicyde.github.io/atlas-lean/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/high-dimensional-probability/suprema-of-selector-and-empirical-processes)

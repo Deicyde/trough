@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "InformationTheory/channel-simulation/functional-representation-lemma/auxiliary-conditioning.md",
@@ -585,7 +585,7 @@
    "declaration": "InformationTheory.conditionalShannonEntropy_const",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 76,
+    "line": 77,
     "kind": "theorem",
     "sorry": false
    }
@@ -597,7 +597,7 @@
    "declaration": "InformationTheory.conditionalShannonEntropy",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 68,
+    "line": 69,
     "kind": "def",
     "sorry": false
    }
@@ -609,7 +609,7 @@
    "declaration": "InformationTheory.finiteConditionalEntropy_le",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 278,
+    "line": 264,
     "kind": "theorem",
     "sorry": false
    }
@@ -621,7 +621,7 @@
    "declaration": "InformationTheory.finiteConditionalEntropy",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 246,
+    "line": 232,
     "kind": "def",
     "sorry": false
    }
@@ -633,7 +633,7 @@
    "declaration": "InformationTheory.measureMutualInformation_toMeasure_eq_zero_iff",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 234,
+    "line": 220,
     "kind": "theorem",
     "sorry": false
    }
@@ -645,7 +645,7 @@
    "declaration": "InformationTheory.measureMutualInformation_toMeasure",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 218,
+    "line": 204,
     "kind": "theorem",
     "sorry": false
    }
@@ -657,7 +657,7 @@
    "declaration": "InformationTheory.measureMutualInformation",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 88,
+    "line": 89,
     "kind": "def",
     "sorry": false
    }
@@ -669,7 +669,7 @@
    "declaration": "InformationTheory.quantizedConditionalEntropy_const",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 59,
+    "line": 60,
     "kind": "theorem",
     "sorry": false
    }
@@ -681,7 +681,7 @@
    "declaration": "InformationTheory.quantizedConditionalEntropy_singleton",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 52,
+    "line": 53,
     "kind": "theorem",
     "sorry": false
    }
@@ -693,7 +693,7 @@
    "declaration": "InformationTheory.quantizedConditionalEntropy",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 44,
+    "line": 45,
     "kind": "def",
     "sorry": false
    }
@@ -705,7 +705,7 @@
    "declaration": "InformationTheory.shannonEntropy_eq_add_finiteConditionalEntropy",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 252,
+    "line": 238,
     "kind": "theorem",
     "sorry": false
    }
@@ -717,7 +717,7 @@
    "declaration": "InformationTheory.shannonEntropy_le_add",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 205,
+    "line": 191,
     "kind": "theorem",
     "sorry": false
    }
@@ -729,7 +729,7 @@
    "declaration": "InformationTheory.toReal_klDiv_prod",
    "lean": {
     "file": "MathlibExt/InformationTheory/ConditionalEntropy.lean",
-    "line": 147,
+    "line": 133,
     "kind": "theorem",
     "sorry": false
    }
@@ -2265,7 +2265,7 @@
    "declaration": "MathlibExt.InformationTheory.Pinsker.csiszar_kullback_pinsker",
    "lean": {
     "file": "MathlibExt/InformationTheory/Pinsker.lean",
-    "line": 283,
+    "line": 350,
     "kind": "theorem",
     "sorry": false
    }
@@ -2649,7 +2649,7 @@
    "declaration": "Cslib.Algorithms.Lean.HuffmanTree.encodedLength_eq_sum_codeLengths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 475,
+    "line": 476,
     "kind": "theorem",
     "sorry": false
    }
@@ -2745,7 +2745,7 @@
    "declaration": "Cslib.Algorithms.Lean.extractTwoMin_cons_elements",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 565,
+    "line": 573,
     "kind": "theorem",
     "sorry": false
    }
@@ -2757,7 +2757,7 @@
    "declaration": "Cslib.Algorithms.Lean.extractTwoMin_greedy",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 587,
+    "line": 595,
     "kind": "theorem",
     "sorry": false
    }
@@ -2769,7 +2769,7 @@
    "declaration": "Cslib.Algorithms.Lean.extractTwoMin?",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 556,
+    "line": 564,
     "kind": "def",
     "sorry": false
    }
@@ -2829,7 +2829,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanForestLeaves",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 630,
+    "line": 638,
     "kind": "def",
     "sorry": false
    }
@@ -2865,7 +2865,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanHeapOfForest",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 768,
+    "line": 776,
     "kind": "def",
     "sorry": false
    }
@@ -2901,7 +2901,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoop_lookupCount",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 916,
+    "line": 924,
     "kind": "theorem",
     "sorry": false
    }
@@ -2913,7 +2913,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoopWithLookupCountAux",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 807,
+    "line": 815,
     "kind": "def",
     "sorry": false
    }
@@ -2925,7 +2925,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoopWithLookupCount_eq",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 900,
+    "line": 908,
     "kind": "theorem",
     "sorry": false
    }
@@ -2937,7 +2937,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoopWithLookupCount_map_fst",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 908,
+    "line": 916,
     "kind": "theorem",
     "sorry": false
    }
@@ -2949,7 +2949,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoopWithLookupCount",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 841,
+    "line": 849,
     "kind": "def",
     "sorry": false
    }
@@ -2961,7 +2961,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanLoop",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 773,
+    "line": 781,
     "kind": "def",
     "sorry": false
    }
@@ -3009,7 +3009,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffman_prefixFree",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 1036,
+    "line": 1044,
     "kind": "theorem",
     "sorry": false
    }
@@ -3021,7 +3021,7 @@
    "declaration": "Cslib.Algorithms.Lean.HuffmanPriority",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 528,
+    "line": 529,
     "kind": "structure",
     "sorry": false
    }
@@ -3033,7 +3033,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanTableForest_initial",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 756,
+    "line": 764,
     "kind": "theorem",
     "sorry": false
    }
@@ -3045,7 +3045,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanTableForest_push_some",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 761,
+    "line": 769,
     "kind": "theorem",
     "sorry": false
    }
@@ -3057,7 +3057,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffmanTableForest",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 611,
+    "line": 619,
     "kind": "def",
     "sorry": false
    }
@@ -3081,7 +3081,7 @@
    "declaration": "Cslib.Algorithms.Lean.HuffmanTwoMin",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 550,
+    "line": 555,
     "kind": "structure",
     "sorry": false
    }
@@ -3105,7 +3105,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffman_weightedLeaves_perm",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 1025,
+    "line": 1033,
     "kind": "theorem",
     "sorry": false
    }
@@ -3117,7 +3117,7 @@
    "declaration": "Cslib.Algorithms.Lean.HuffmanWorkItem",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 544,
+    "line": 547,
     "kind": "structure",
     "sorry": false
    }
@@ -3129,7 +3129,7 @@
    "declaration": "Cslib.Algorithms.Lean.huffman",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 1015,
+    "line": 1023,
     "kind": "def",
     "sorry": false
    }
@@ -3141,7 +3141,7 @@
    "declaration": "Cslib.Algorithms.Lean.initialHuffmanForestFrom",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 738,
+    "line": 746,
     "kind": "def",
     "sorry": false
    }
@@ -3153,7 +3153,7 @@
    "declaration": "Cslib.Algorithms.Lean.initialHuffmanForest",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 746,
+    "line": 754,
     "kind": "def",
     "sorry": false
    }
@@ -3165,7 +3165,7 @@
    "declaration": "Cslib.Algorithms.Lean.initialHuffmanTable",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 751,
+    "line": 759,
     "kind": "def",
     "sorry": false
    }
@@ -3309,7 +3309,7 @@
    "declaration": "Cslib.Algorithms.Lean.takeSerial?_getElem?_of_ne",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 701,
+    "line": 709,
     "kind": "theorem",
     "sorry": false
    }
@@ -3321,7 +3321,7 @@
    "declaration": "Cslib.Algorithms.Lean.takeSerial?_isSome_of_stored",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 721,
+    "line": 729,
     "kind": "theorem",
     "sorry": false
    }
@@ -3333,7 +3333,7 @@
    "declaration": "Cslib.Algorithms.Lean.takeSerial?_item",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 660,
+    "line": 668,
     "kind": "theorem",
     "sorry": false
    }
@@ -3345,7 +3345,7 @@
    "declaration": "Cslib.Algorithms.Lean.takeSerial?_size",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 683,
+    "line": 691,
     "kind": "theorem",
     "sorry": false
    }
@@ -3357,7 +3357,7 @@
    "declaration": "Cslib.Algorithms.Lean.takeSerial?",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 618,
+    "line": 626,
     "kind": "def",
     "sorry": false
    }
@@ -3405,7 +3405,7 @@
    "declaration": "Cslib.Algorithms.Lean.HuffmanTree.weightedPathLength_eq_sum_pathLengths",
    "lean": {
     "file": "CSLibExt/Algorithms/Lean/Greedy/Huffman.lean",
-    "line": 420,
+    "line": 421,
     "kind": "theorem",
     "sorry": false
    }

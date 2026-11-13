@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.91 Formal glueing of module categories
 
-Section 15.91 of the Stacks Project, [Tag 05E5](https://stacks.math.columbia.edu/tag/05E5). 22 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.91 of the Stacks Project, [Tag 05E5](https://stacks.math.columbia.edu/tag/05E5). 22 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05E7, a lemma
 
 [Tag 05E7](https://stacks.math.columbia.edu/tag/05E7) in the Stacks Project.
 
-**`FormalGlueing.flat_and_faithful_on_ideal_torsion_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L269).
+**`FormalGlueing.flat_and_faithful_on_ideal_torsion_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L269).
 
 > Let `R → S` be a ring map and `I` an ideal of `R`. The following are equivalent:
 >
@@ -49,7 +49,7 @@ public theorem flat_and_faithful_on_ideal_torsion_tfae
 
 Declarations registered for the tag:
 
-- [`IPowerTorsion.baseChange_bijective_iff_quotientMap_bijective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/IdealPowerTorsion.lean#L345), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L351) (StacksFrontier): “the base-change criterion on ideal-power torsion modules”.
+- [`IPowerTorsion.baseChange_bijective_iff_quotientMap_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/IdealPowerTorsion.lean#L344), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L351) (StacksFrontier): “the base-change criterion on ideal-power torsion modules”.
 
 ## Tag 05EC, a lemma
 
@@ -57,13 +57,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`IPowerTorsion.baseChange_equiv_of_quotientMap_bijective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/IdealPowerTorsion.lean#L1002), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L377) (StacksFrontier): “the torsion-submodule isomorphism and the equivalence of subcategories”.
+- [`IPowerTorsion.baseChange_equiv_of_quotientMap_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/IdealPowerTorsion.lean#L999), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L378) (StacksFrontier): “the torsion-submodule isomorphism and the equivalence of subcategories”.
 
 ## Tag 091M, a lemma
 
 [Tag 091M](https://stacks.math.columbia.edu/tag/091M) in the Stacks Project.
 
-**`FormalGlueing.quasiIso_koszulSeq_and_cechComplex_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulBaseChange.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulBaseChange.lean#L431).
+**`FormalGlueing.quasiIso_koszulSeq_and_cechComplex_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulBaseChange.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulBaseChange.lean#L426).
 
 > If a flat map `R → S` is an isomorphism modulo a finitely generated ideal `I`, then for
 > every finite sequence defining the same closed subset as `I`, the canonical base-change maps on
@@ -117,7 +117,7 @@ public theorem quasiIso_koszulSeq_and_cechComplex_baseChange
 
 [Tag 05ED](https://stacks.math.columbia.edu/tag/05ED) in the Stacks Project.
 
-**`Stacks.RelationsOfSequence.short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean#L106).
+**`Stacks.RelationsOfSequence.short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean#L106).
 
 > The sequence `0 → K → M → I → 0` is exact: the inclusion `K ↪ M` and `φ` are exact at `M`, and
 > the range of `φ` is the ideal `I = (f_1, …, f_n)`.
@@ -128,7 +128,7 @@ theorem short_exact :
       LinearMap.range (phi f) = (idealI f).restrictScalars R
 ```
 
-**`Stacks.RelationsOfSequence.K_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean#L142).
+**`Stacks.RelationsOfSequence.K_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RelationsOfSequence.lean#L142).
 
 > The kernel `K = ker φ` is annihilated by the ideal `I = (f_1, …, f_n)`.
 
@@ -140,7 +140,7 @@ theorem K_annihilated : ∀ a ∈ idealI f, ∀ k ∈ K f, a • k = 0
 
 [Tag 05EE](https://stacks.math.columbia.edu/tag/05EE) in the Stacks Project.
 
-**`FormalGlueing.extOne_exact_firstRelationHomology_to_kernelHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean#L438).
+**`FormalGlueing.extOne_exact_firstRelationHomology_to_kernelHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean#L438).
 
 > There is a canonical exact sequence
 > `0 → Ext¹_R(R / (f), N) → H₁(N, f) → Hom_R(K, N)`, where `K` is the kernel from
@@ -166,7 +166,7 @@ public theorem extOne_exact_firstRelationHomology_to_kernelHom
 
 [Tag 05EF](https://stacks.math.columbia.edu/tag/05EF) in the Stacks Project.
 
-**`FormalGlueing.idealI_le_annihilator_firstRelationHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean#L498).
+**`FormalGlueing.idealI_le_annihilator_firstRelationHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingKoszulRelations.lean#L498).
 
 > The ideal generated by a finite family annihilates its first relation
 > homology with coefficients in any module.
@@ -183,7 +183,7 @@ public theorem idealI_le_annihilator_firstRelationHomology
 
 [Tag 05EG](https://stacks.math.columbia.edu/tag/05EG) in the Stacks Project.
 
-**`FormalGlueing.exists_shortExactSequence_lift_of_flat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 1312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L1312).
+**`FormalGlueing.exists_shortExactSequence_lift_of_flat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean, line 1314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingFlatIsomorphism.lean#L1314).
 
 > A short exact sequence over `S` ending in the base change of an
 > `I`-power torsion module fits below a short exact sequence over `R`, provided `R → S` is flat
@@ -214,7 +214,7 @@ public theorem exists_shortExactSequence_lift_of_flat_baseChange
 
 [Tag 05EJ](https://stacks.math.columbia.edu/tag/05EJ) in the Stacks Project.
 
-**`FormalGlueing.glueingBeta_comp_glueingAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Basic.lean#L157).
+**`FormalGlueing.glueingBeta_comp_glueingAlpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Basic.lean#L157).
 
 > The maps `glueingAlpha` and `glueingBeta` form the glueing complex of Stacks Project,
 > Tag 05EJ.
@@ -228,7 +228,7 @@ public theorem glueingBeta_comp_glueingAlpha :
 
 [Tag 05EK](https://stacks.math.columbia.edu/tag/05EK) in the Stacks Project.
 
-**`FormalGlueing.glueingComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Exact.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Exact.lean#L429).
+**`FormalGlueing.glueingComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Exact.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingComplex/Exact.lean#L428).
 
 > If `R → S` is flat and induces an isomorphism modulo the ideal generated by `f`, then the
 > glueing complex of every `R`-module is exact, including at its initial term.
@@ -250,7 +250,7 @@ public theorem glueingComplex_exact
 
 [Tag 05EL](https://stacks.math.columbia.edu/tag/05EL) in the Stacks Project.
 
-**`FormalGlueing.moduleGlueingConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean#L166).
+**`FormalGlueing.moduleGlueingConstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean#L166).
 
 > The category `Glue(R → S, f₁, …, fₜ)`, its canonical functor from `R`-modules, and its
 > compatible-sections functor `H⁰`.
@@ -263,7 +263,7 @@ public noncomputable def moduleGlueingConstruction : ModuleGlueingConstruction S
 
 [Tag 0H77](https://stacks.math.columbia.edu/tag/0H77) in the Stacks Project.
 
-**`FormalGlueing.canonicalSectionsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean#L572).
+**`FormalGlueing.canonicalSectionsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Adjunction.lean#L570).
 
 > The compatible-sections functor `H⁰` on module glueing data is right adjoint to the canonical
 > glueing-data functor.
@@ -281,7 +281,7 @@ public noncomputable def canonicalSectionsAdjunction
 
 [Tag 05EM](https://stacks.math.columbia.edu/tag/05EM) in the Stacks Project.
 
-**`FormalGlueing.canonicalSectionsUnit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/LeftQuasiInverse.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/LeftQuasiInverse.lean#L261).
+**`FormalGlueing.canonicalSectionsUnit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/LeftQuasiInverse.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/LeftQuasiInverse.lean#L260).
 
 > If a flat ring map is an isomorphism modulo the ideal generated by `f`, then compatible
 > sections are a left quasi-inverse to the canonical module glueing functor.
@@ -303,7 +303,7 @@ public theorem canonicalSectionsUnit_isIso
 
 [Tag 05EN](https://stacks.math.columbia.edu/tag/05EN) in the Stacks Project.
 
-**`FormalGlueing.moduleGlueingConstruction_abelian_exact_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Abelian.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Abelian.lean#L735).
+**`FormalGlueing.moduleGlueingConstruction_abelian_exact_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Abelian.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingCategory/Abelian.lean#L735).
 
 > For a flat ring map, the category of module glueing data is abelian, and the canonical
 > functor from modules is exact and preserves arbitrary colimits.
@@ -324,7 +324,7 @@ public theorem moduleGlueingConstruction_abelian_exact_preservesColimits
 
 [Tag 05EP](https://stacks.math.columbia.edu/tag/05EP) in the Stacks Project.
 
-**`FormalGlueing.canonicalFunctor_sections_areQuasiInverse_of_span_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/UnitIdeal.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/UnitIdeal.lean#L303).
+**`FormalGlueing.canonicalFunctor_sections_areQuasiInverse_of_span_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/UnitIdeal.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/UnitIdeal.lean#L303).
 
 > If a finite family generates the unit ideal and `R → S` is flat, then the canonical module
 > glueing functor and compatible sections are quasi-inverse equivalences of categories.
@@ -344,7 +344,7 @@ public theorem canonicalFunctor_sections_areQuasiInverse_of_span_eq_top
 
 [Tag 05EQ](https://stacks.math.columbia.edu/tag/05EQ) in the Stacks Project.
 
-**`FormalGlueing.exists_baseChange_commuting_with_canonical_and_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/BaseChange.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/BaseChange.lean#L544).
+**`FormalGlueing.exists_baseChange_commuting_with_canonical_and_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/BaseChange.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/BaseChange.lean#L535).
 
 > **Stacks 05EQ.** Flat base change defines a functor on module glueing data which commutes,
 > up to natural isomorphism, with the canonical glueing-data functor and compatible global
@@ -355,8 +355,7 @@ public theorem canonicalFunctor_sections_areQuasiInverse_of_span_eq_top
 public theorem exists_baseChange_commuting_with_canonical_and_sections
     (R : Type u) (S : Type v) (R' : Type x)
     [CommRing R] [CommRing S] [CommRing R'] [Algebra R S] [Algebra R R']
-    {r : ℕ} (f : Fin r → R) (I : Ideal R) (hI : I = Ideal.span (Set.range f))
-    (hS : Module.Flat R S) (hR' : Module.Flat R R') :
+    {r : ℕ} (f : Fin r → R) (hR' : Module.Flat R R') :
     let upper := FormalGlueing.moduleGlueingConstruction.{u, v, max u v x w} S f
     let lower := FormalGlueing.moduleGlueingConstruction.{x, max v x, max u v x w}
       (TensorProduct R S R') (fun i ↦ algebraMap R R' (f i))
@@ -460,7 +459,7 @@ public theorem exists_baseChange_commuting_with_canonical_and_sections
 
 [Tag 05ER](https://stacks.math.columbia.edu/tag/05ER) in the Stacks Project.
 
-**`FormalGlueing.canonicalFunctor_sections_areQuasiInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L281).
+**`FormalGlueing.canonicalFunctor_sections_areQuasiInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L280).
 
 > **Stacks 05ER.** For a flat ring map inducing an isomorphism modulo the ideal generated by
 > `f`, the canonical module glueing functor and compatible sections are quasi-inverse equivalences
@@ -484,7 +483,7 @@ public theorem canonicalFunctor_sections_areQuasiInverse
 
 [Tag 0ALK](https://stacks.math.columbia.edu/tag/0ALK) in the Stacks Project.
 
-**`FormalGlueing.exists_descent_of_idealPowerTorsion_kernel_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L747).
+**`FormalGlueing.exists_descent_of_idealPowerTorsion_kernel_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L746).
 
 > **Stacks 0ALK.** A map to or from an extended module whose kernel and cokernel are
 > ideal-power torsion descends at the level of its source or target module, with the
@@ -525,7 +524,7 @@ public theorem exists_descent_of_idealPowerTorsion_kernel_cokernel
 
 [Tag 05ES](https://stacks.math.columbia.edu/tag/05ES) in the Stacks Project.
 
-**`FormalGlueing.exists_canonicalModuleGlueingEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/PrincipalLocalization.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/PrincipalLocalization.lean#L523).
+**`FormalGlueing.exists_canonicalModuleGlueingEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/PrincipalLocalization.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/PrincipalLocalization.lean#L521).
 
 > **Stacks 05ES.** For a flat ring map inducing an isomorphism modulo `(f)`, the canonical
 > functor from modules over the source to pairs of modules identified after localization is an
@@ -571,7 +570,7 @@ public theorem exists_canonicalModuleGlueingEquivalence
 
 [Tag 05ET](https://stacks.math.columbia.edu/tag/05ET) in the Stacks Project.
 
-**`FormalGlueing.exists_adicCompletionGlueingEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/AdicCompletion.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/AdicCompletion.lean#L327).
+**`FormalGlueing.exists_adicCompletionGlueingEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/AdicCompletion.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/AdicCompletion.lean#L327).
 
 > **Stacks 05ET.** Over a Noetherian ring, finitely generated modules are equivalent to
 > finitely generated modules on the adic completion and on the complementary principal open,
@@ -606,7 +605,7 @@ public theorem exists_adicCompletionGlueingEquivalence
 
 [Tag 05EU](https://stacks.math.columbia.edu/tag/05EU) in the Stacks Project.
 
-**`FormalGlueing.formalGlueing_preserves_moduleProperties_tensor_and_algebras`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/Properties.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/Properties.lean#L608).
+**`FormalGlueing.formalGlueing_preserves_moduleProperties_tensor_and_algebras`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/Properties.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingModuleProperties/Properties.lean#L600).
 
 > **Stacks 05EU.** Formal glueing detects the standard finiteness and flatness properties,
 > is pointwise symmetric monoidal, and hence induces an equivalence on commutative algebra objects.
@@ -617,11 +616,11 @@ public theorem exists_adicCompletionGlueingEquivalence
 ```lean
 public theorem formalGlueing_preserves_moduleProperties_tensor_and_algebras :
     (∀ (R : Type u) (S : Type v) [CommRing R] [CommRing S] [Algebra R S]
-      (r : ℕ) (f : Fin r → R) (hflat : Module.Flat R S)
-      (hq : Function.Bijective
+      (r : ℕ) (f : Fin r → R), Module.Flat R S →
+      Function.Bijective
         (Ideal.quotientMap
           ((Ideal.span (Set.range f)).map (algebraMap R S))
-          (algebraMap R S) Ideal.le_comap_map)),
+          (algebraMap R S) Ideal.le_comap_map) →
       let c := moduleGlueingConstruction.{u, v, w} S f
       letI := c.category
       let G := ModuleGlueingDatum.{u, v, w} S f c.comparison
@@ -664,10 +663,10 @@ public theorem formalGlueing_preserves_moduleProperties_tensor_and_algebras :
           ∃ algebraEquivalence : CommMon (ModuleCat.{max u v w} R) ≌ CommMon G,
             algebraEquivalence = e.mapCommMon) ∧
     (∀ (R : Type u) (S : Type v) [CommRing R] [CommRing S] [Algebra R S]
-      (f : R) (hflat : Module.Flat R S)
-      (hq : Function.Bijective
+      (f : R), Module.Flat R S →
+      Function.Bijective
         (Ideal.quotientMap ((Ideal.span {f}).map (algebraMap R S))
-          (algebraMap R S) Ideal.le_comap_map)),
+          (algebraMap R S) Ideal.le_comap_map) →
       let Rf := Localization.Away f
       let Sf := Localization.Away (algebraMap R S f)
       let ρ := FormalGlueing.principalLocalizationMap R S f
@@ -784,7 +783,7 @@ public theorem formalGlueing_preserves_moduleProperties_tensor_and_algebras :
 
 Declarations registered for the tag:
 
-- [`TopCat.Sheaf.sheafEquivGlueData`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Glueing/Equivalence.lean#L188), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L811) (StacksFrontier).
+- [`TopCat.Sheaf.sheafEquivGlueData`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Glueing/Equivalence.lean#L189), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/FormalGlueingEquivalence/MainTheorem.lean#L810) (StacksFrontier).
 
 ## Depends on
 
@@ -793,4 +792,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.91, Tag 05E5](https://stacks.math.columbia.edu/tag/05E5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

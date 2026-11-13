@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.27 Lefschetz for the fundamental group
 
-Section 58.27 of the Stacks Project, [Tag 0ELB](https://stacks.math.columbia.edu/tag/0ELB). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.27 of the Stacks Project, [Tag 0ELB](https://stacks.math.columbia.edu/tag/0ELB). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ELC, a proposition
 
 [Tag 0ELC](https://stacks.math.columbia.edu/tag/0ELC) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L253). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is fully faithful. Nothing is carried: Stacks 0EL1 is isIso\_zeroSchemeComparison\_of\_isProper, and the passage from it to full faithfulness is the formalized Stacks 0EKP chain followed by Stacks 0EL8”. References: SGA 1 X (2.13), “partial”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L254). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is fully faithful. Nothing is carried: Stacks 0EL1 is isIso\_zeroSchemeComparison\_of\_isProper, and the passage from it to full faithfulness is the formalized Stacks 0EKP chain followed by Stacks 0EL8”. References: SGA 1 X (2.13), “partial”.
 
 > **[Stacks, Tag 0ELC], first statement.** Let `k` be a field, `X` a proper scheme over `k`,
 > `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`. If
@@ -40,7 +40,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim
     Nonempty (finiteEtaleBaseChange (zeroScheme X L s).subschemeι).FullyFaithful
 ```
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L78). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module on a proper scheme over a field is fully faithful when depth + dim > 1 off the zero scheme”. References: SGA 1 X (2.13), “partial”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L78). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module on a proper scheme over a field is fully faithful when depth + dim > 1 off the zero scheme”. References: SGA 1 X (2.13), “partial”.
 
 > **[Stacks, Tag 0ELC], first statement.** Let `k` be a field, `X` a proper scheme over `k`,
 > `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`. If
@@ -59,7 +59,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper
     Nonempty (finiteEtaleBaseChange (zeroScheme X L s).subschemeι).FullyFaithful
 ```
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L99). The attribute's comment: “second statement: restriction FÉt\_V → FÉt\_Y is fully faithful for every open V of X containing the zero scheme”. References: SGA 1 X (2.13), “partial”; SGA 2 XII (3.5), “more general”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L99). The attribute's comment: “second statement: restriction FÉt\_V → FÉt\_Y is fully faithful for every open V of X containing the zero scheme”. References: SGA 1 X (2.13), “partial”; SGA 2 XII (3.5), “more general”.
 
 > **[Stacks, Tag 0ELC], second statement.** In the situation of
 > `Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`, the
@@ -84,7 +84,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper
 
 [Tag 0ELD](https://stacks.math.columbia.edu/tag/0ELD) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_zeroScheme_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean#L100). The attribute's comment: “the restriction functor colim\_V FÉt\_V → FÉt\_Y is an equivalence, stated as its fully faithful half and its essentially surjective half, at exactly the source's hypotheses”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_zeroScheme_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean#L100). The attribute's comment: “the restriction functor colim\_V FÉt\_V → FÉt\_Y is an equivalence, stated as its fully faithful half and its essentially surjective half, at exactly the source's hypotheses”.
 
 > **Stacks Project, Tag 0ELD.** Let `k` be a field, `X` a proper scheme over `k`, `L` an ample
 > invertible `𝒪_X`-module, `s ∈ Γ(X, L)`, `Y = Z(s)` the zero scheme of `s`, and `𝒱` the open
@@ -116,7 +116,7 @@ public theorem finiteEtaleColimitEquivalence_zeroScheme_of_depth
 
 [Tag 0ELE](https://stacks.math.columbia.edu/tag/0ELE) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L452). The attribute's comment: “first conclusion: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is an equivalence”. References: SGA 1 X (2.13), “more general”; SGA 2 XII (3.5), “special case”.
+**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L453). The attribute's comment: “first conclusion: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is an equivalence”. References: SGA 1 X (2.13), “more general”; SGA 2 XII (3.5), “special case”.
 
 > **[Stacks, Tag 0ELE], the first conclusion.** Let `k` be a field, `X` a proper scheme over
 > `k`, `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`.
@@ -143,7 +143,7 @@ public theorem isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_de
     (finiteEtaleBaseChange (zeroScheme X L s).subschemeι).IsEquivalence
 ```
 
-**`Stacks.FundamentalGroup.connectedSpace_zeroScheme_iff_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L467). The attribute's comment: “the "or equivalently": X is connected if and only if its zero scheme Y = Z(s) is”.
+**`Stacks.FundamentalGroup.connectedSpace_zeroScheme_iff_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L468). The attribute's comment: “the "or equivalently": X is connected if and only if its zero scheme Y = Z(s) is”.
 
 > **[Stacks, Tag 0ELE], the "or equivalently".** In the situation of
 > `Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth` the
@@ -158,7 +158,7 @@ public theorem connectedSpace_zeroScheme_iff_of_hasPurity_of_depth
     ConnectedSpace (zeroScheme X L s).subscheme ↔ ConnectedSpace X
 ```
 
-**`Stacks.FundamentalGroup.fundamentalGroupEquiv_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L488). The attribute's comment: “second conclusion: for X, equivalently Y, connected, the induced map π₁(Y, y‾) → π₁(X, y‾) is an isomorphism of topological groups at every geometric point of Y”. References: SGA 1 X (2.13), “more general”; SGA 2 X (3.10), “special case”; SGA 2 XII (4.9), “4.9 a), special case”.
+**`Stacks.FundamentalGroup.fundamentalGroupEquiv_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L489). The attribute's comment: “second conclusion: for X, equivalently Y, connected, the induced map π₁(Y, y‾) → π₁(X, y‾) is an isomorphism of topological groups at every geometric point of Y”. References: SGA 1 X (2.13), “more general”; SGA 2 X (3.10), “special case”; SGA 2 XII (4.9), “4.9 a), special case”.
 
 > **[Stacks, Tag 0ELE], the second conclusion.** In the situation of
 > `Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth`,
@@ -188,4 +188,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.27, Tag 0ELB](https://stacks.math.columbia.edu/tag/0ELB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

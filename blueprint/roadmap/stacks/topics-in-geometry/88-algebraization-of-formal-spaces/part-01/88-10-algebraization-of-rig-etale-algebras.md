@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.10 Algebraization of rig-étale algebras
 
-Section 88.10 of the Stacks Project, [Tag 0AK5](https://stacks.math.columbia.edu/tag/0AK5). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.10 of the Stacks Project, [Tag 0AK5](https://stacks.math.columbia.edu/tag/0AK5). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ALS, a lemma
 
 [Tag 0ALS](https://stacks.math.columbia.edu/tag/0ALS) in the Stacks Project.
 
-**`Rig.exists_finiteType_algEquiv_of_isRigEtale_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/PrincipalIsomorphism.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/PrincipalIsomorphism.lean#L221). The attribute's comment: “the rig-étale case of Elkik III Theorem 7, over a principal ideal”.
+**`Rig.exists_finiteType_algEquiv_of_isRigEtale_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/PrincipalIsomorphism.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/PrincipalIsomorphism.lean#L221). The attribute's comment: “the rig-étale case of Elkik III Theorem 7, over a principal ideal”.
 
 > **Stacks 0ALS**, the rig-étale case of [Elkik, III Theorem 7], with no restriction on the
 > universe of `B`.  Let `A` be a Noetherian ring and `I = (a)` a principal ideal.  Let `B` be an
@@ -40,7 +40,7 @@ public theorem exists_finiteType_algEquiv_of_isRigEtale_principal
 
 [Tag 0AKA](https://stacks.math.columbia.edu/tag/0AKA) in the Stacks Project.
 
-**`Rig.exists_finiteType_algEquiv_adicCompletion_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean#L82).
+**`Rig.exists_finiteType_algEquiv_adicCompletion_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean#L82).
 
 > Let `A` be a Noetherian ring and `I ⊆ A` an ideal. If `B` is an object of
 > `Rig.AdicFiniteTypeAlgebra A I` which is rig-étale over `(A, I)`, then there is a finite type
@@ -59,7 +59,7 @@ public theorem exists_finiteType_algEquiv_adicCompletion_of_isRigEtale
 
 [Tag 0AKG](https://stacks.math.columbia.edu/tag/0AKG) in the Stacks Project.
 
-**`Rig.exists_isEtaleOutside_finiteType_algEquiv_of_isRigEtale_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/EtaleOutside.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/EtaleOutside.lean#L270). The attribute's comment: “the converse implication, over a PRINCIPAL ideal: the equivalent conditions of Stacks 0AJU imply condition (8). Stacks 0ALS algebraizes a rig-étale object over a principal ideal and the improvement step above makes the algebraization étale over the complement of V(I); that improvement step, `Rig.exists_isEtaleOutside_finiteType_algEquiv_of_algEquiv_adicCompletion`, is proved for an arbitrary ideal”.
+**`Rig.exists_isEtaleOutside_finiteType_algEquiv_of_isRigEtale_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/EtaleOutside.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/EtaleOutside.lean#L270). The attribute's comment: “the converse implication, over a PRINCIPAL ideal: the equivalent conditions of Stacks 0AJU imply condition (8). Stacks 0ALS algebraizes a rig-étale object over a principal ideal and the improvement step above makes the algebraization étale over the complement of V(I); that improvement step, `Rig.exists_isEtaleOutside_finiteType_algEquiv_of_algEquiv_adicCompletion`, is proved for an arbitrary ideal”.
 
 > **Stacks 0AKG, the equivalent conditions of Stacks 0AJU imply condition (8), over a
 > principal ideal.** Let `A` be a Noetherian ring and `I = (a)` a principal ideal. Let `B` be an
@@ -80,7 +80,7 @@ public theorem exists_isEtaleOutside_finiteType_algEquiv_of_isRigEtale_principal
         Nonempty (B.carrier ≃ₐ[A] AdicCompletion (I.map (algebraMap A C)) C)
 ```
 
-**`Rig.isRigEtale_iff_exists_isEtaleOutside_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean#L102).
+**`Rig.isRigEtale_iff_exists_isEtaleOutside_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/RigEtaleAlgebraization.lean#L102).
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal and `B` an `I`-adically complete `A`-algebra
 > with `A ⧸ I → B ⧸ IB` of finite type. Then `B` is rig-étale if and only if there is a finite type
@@ -97,7 +97,7 @@ public theorem isRigEtale_iff_exists_isEtaleOutside_algEquiv
           Nonempty (B.carrier ≃ₐ[A] AdicCompletion (I.map (algebraMap A C)) C)
 ```
 
-**`Rig.isRigEtale_of_isEtaleOutside_of_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L590). The attribute's comment: “condition (8) implies the equivalent conditions of Stacks 0AJU; the converse implication is not covered, since it rests on the algebraization lemma — that a rig-étale object of this category is the completion of a finite type algebra — which this library does not carry”.
+**`Rig.isRigEtale_of_isEtaleOutside_of_algEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/RigEtaleLocus.lean#L590). The attribute's comment: “condition (8) implies the equivalent conditions of Stacks 0AJU; the converse implication is not covered, since it rests on the algebraization lemma — that a rig-étale object of this category is the completion of a finite type algebra — which this library does not carry”.
 
 > **Stacks 0AKG, condition (8) implies the equivalent conditions of Stacks 0AJU.**  Let `A`
 > be a Noetherian ring, `I ⊆ A` an ideal and `B` an `I`-adically complete `A`-algebra of finite
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.10, Tag 0AK5](https://stacks.math.columbia.edu/tag/0AK5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.8 Cohen-Macaulay curves
 
-Section 109.8 of the Stacks Project, [Tag 0E0H](https://stacks.math.columbia.edu/tag/0E0H). 2 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.8 of the Stacks Project, [Tag 0E0H](https://stacks.math.columbia.edu/tag/0E0H). 2 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E0I, a lemma
 
 [Tag 0E0I](https://stacks.math.columbia.edu/tag/0E0I) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.isOpen_cohenMacaulayBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L169). The attribute's comment: “the open locus in the base”.
+**`AlgebraicGeometry.CurveFamily.isOpen_cohenMacaulayBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L169). The attribute's comment: “the open locus in the base”.
 
 > **Stacks 0E0I.** The locus of points of the base of a family of curves over which the
 > family is Cohen–Macaulay is open.
@@ -28,7 +28,7 @@ theorem CurveFamily.isOpen_cohenMacaulayBaseLocus (X : CurveFamily B hZ) :
     IsOpen (Space.cohenMacaulayBaseLocus B integerBase hZ X.toBase.hom)
 ```
 
-**`AlgebraicGeometry.CurveFamily.preimage_cohenMacaulayBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L179). The attribute's comment: “base change of the open locus in the base”. References: EGA IV (6.8.2), “partial”.
+**`AlgebraicGeometry.CurveFamily.preimage_cohenMacaulayBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L179). The attribute's comment: “base change of the open locus in the base”. References: EGA IV (6.8.2), “partial”.
 
 > **Stacks 0E0I.** The open locus in the base over which a family of curves is
 > Cohen–Macaulay commutes with base change: for a morphism of families of curves, the locus of
@@ -42,7 +42,7 @@ theorem CurveFamily.preimage_cohenMacaulayBaseLocus {X Y : CurveFamily B hZ} (φ
       Space.cohenMacaulayBaseLocus B integerBase hZ X.toBase.hom
 ```
 
-**`AlgebraicGeometry.curvesCM_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L212). The attribute's comment: “strict fullness of the Cohen–Macaulay subcategory”.
+**`AlgebraicGeometry.curvesCM_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L212). The attribute's comment: “strict fullness of the Cohen–Macaulay subcategory”.
 
 > **Stacks 0E0I.** The condition that a family of curves be Cohen–Macaulay is invariant under
 > isomorphism, so `Curves^{CM}` is a strictly full subcategory of the category of families of
@@ -57,7 +57,7 @@ theorem curvesCM_isStrictlyFull :
       IsCohenMacaulayFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.CurvesCM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L220). The attribute's comment: “the Cohen–Macaulay subcategory of the category of curves”.
+**`AlgebraicGeometry.CurvesCM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L220). The attribute's comment: “the Cohen–Macaulay subcategory of the category of curves”.
 
 > **Stacks 0E0I.** The subcategory `Curves^{CM}`: the strictly full subcategory of families
 > of curves whose structure morphism is Cohen–Macaulay.
@@ -66,7 +66,7 @@ theorem curvesCM_isStrictlyFull :
 abbrev CurvesCM
 ```
 
-**`AlgebraicGeometry.exists_cohenMacaulayCurves_openSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayOverField.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayOverField.lean#L152).
+**`AlgebraicGeometry.exists_cohenMacaulayCurves_openSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayOverField.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayOverField.lean#L152).
 
 > There is an open substack `Curves^{CM} ⊂ Curves` such that
 >
@@ -111,7 +111,7 @@ theorem exists_cohenMacaulayCurves_openSubstack :
 
 [Tag 0E1F](https://stacks.math.columbia.edu/tag/0E1F) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.preimage_cohenMacaulayDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L347). The attribute's comment: “base change of the locus in the base of Cohen–Macaulay relative dimension one”.
+**`AlgebraicGeometry.CurveFamily.preimage_cohenMacaulayDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L347). The attribute's comment: “base change of the locus in the base of Cohen–Macaulay relative dimension one”.
 
 > **Stacks 0E1F.** The locus in the base over which a family of curves is Cohen–Macaulay and
 > has relative dimension one commutes with base change: for a morphism of families of curves, the
@@ -125,7 +125,7 @@ theorem CurveFamily.preimage_cohenMacaulayDimOneBaseLocus {X Y : CurveFamily B h
       CurveFamily.cohenMacaulayDimOneBaseLocus B hZ X
 ```
 
-**`AlgebraicGeometry.CurveFamily.isOpen_relativeDimensionOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L380). The attribute's comment: “the open locus in the base of relative dimension one, for a Cohen–Macaulay family”.
+**`AlgebraicGeometry.CurveFamily.isOpen_relativeDimensionOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L380). The attribute's comment: “the open locus in the base of relative dimension one, for a Cohen–Macaulay family”.
 
 > **Stacks 0E1F.** For a Cohen–Macaulay family of curves the locus in the base over which the
 > family has relative dimension one is open.
@@ -142,7 +142,7 @@ theorem CurveFamily.isOpen_relativeDimensionOneBaseLocus (X : CurveFamily B hZ)
     IsOpen (CurveFamily.relativeDimensionOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.CurveFamily.isOpen_cohenMacaulayDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L422). The attribute's comment: “the open locus in the base of Cohen–Macaulay relative dimension one, for a CM family”.
+**`AlgebraicGeometry.CurveFamily.isOpen_cohenMacaulayDimOneBaseLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L422). The attribute's comment: “the open locus in the base of Cohen–Macaulay relative dimension one, for a CM family”.
 
 > **Stacks 0E1F.** For a Cohen–Macaulay family of curves the locus in the base over which the
 > family is Cohen–Macaulay and has relative dimension one is open: the Cohen–Macaulay locus is
@@ -154,7 +154,7 @@ theorem CurveFamily.isOpen_cohenMacaulayDimOneBaseLocus (X : CurveFamily B hZ)
     IsOpen (CurveFamily.cohenMacaulayDimOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.curvesCM1_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L464). The attribute's comment: “strict fullness of the Cohen–Macaulay subcategory of relative dimension one”.
+**`AlgebraicGeometry.curvesCM1_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L464). The attribute's comment: “strict fullness of the Cohen–Macaulay subcategory of relative dimension one”.
 
 > **Stacks 0E1F.** The condition that a family of curves be Cohen–Macaulay of relative
 > dimension one is invariant under isomorphism, so `Curves^{CM,1}` is a strictly full subcategory
@@ -170,7 +170,7 @@ theorem curvesCM1_isStrictlyFull :
       IsCohenMacaulayDimOneFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.CurvesCM1`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L472). The attribute's comment: “the Cohen–Macaulay subcategory of relative dimension one”.
+**`AlgebraicGeometry.CurvesCM1`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulay.lean#L472). The attribute's comment: “the Cohen–Macaulay subcategory of relative dimension one”.
 
 > **Stacks 0E1F.** The subcategory `Curves^{CM,1}`: the strictly full subcategory of families
 > of curves whose structure morphism is Cohen–Macaulay of relative dimension one.
@@ -179,7 +179,7 @@ theorem curvesCM1_isStrictlyFull :
 abbrev CurvesCM1
 ```
 
-**`AlgebraicGeometry.CurveFamily.cohenMacaulayDimOneBaseLocus_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L113). The attribute's comment: “the open locus in the base of Cohen–Macaulay relative dimension one, for an arbitrary family”.
+**`AlgebraicGeometry.CurveFamily.cohenMacaulayDimOneBaseLocus_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L113). The attribute's comment: “the open locus in the base of Cohen–Macaulay relative dimension one, for an arbitrary family”.
 
 > **The locus of Cohen–Macaulay relative dimension one is open.** For every family of curves
 > `f : X → S`, the set of points of `S` over which `f` is Cohen–Macaulay and has relative
@@ -194,7 +194,7 @@ theorem CurveFamily.cohenMacaulayDimOneBaseLocus_isOpen (X : CurveFamily B hZ) :
     IsOpen (CurveFamily.cohenMacaulayDimOneBaseLocus B hZ X)
 ```
 
-**`AlgebraicGeometry.isOpenCurvesLocus_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L128). The attribute's comment: “condition (o) of 0E0E: the open locus in the base, for an arbitrary family”.
+**`AlgebraicGeometry.isOpenCurvesLocus_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L128). The attribute's comment: “condition (o) of 0E0E: the open locus in the base, for an arbitrary family”.
 
 > **Condition (o) of Section 0E0E for `Curves^{CM,1}`.** For every family of curves `X → S`
 > there is an open subset `S'` of the base such that a family of curves mapping to `X → S` is
@@ -207,7 +207,7 @@ theorem isOpenCurvesLocus_isCohenMacaulayDimOneFamily :
     IsOpenCurvesLocus B hZ (IsCohenMacaulayDimOneFamily B hZ)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayDimOneFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L158). The attribute's comment: “part (2), on the family of curves of the proper scheme: Cohen–Macaulay and equidimensional of dimension one”.
+**`AlgebraicGeometry.isCohenMacaulayDimOneFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOne.lean#L158). The attribute's comment: “part (2), on the family of curves of the proper scheme: Cohen–Macaulay and equidimensional of dimension one”.
 
 > **Part (2) of Stacks 0E1F, on the family.** Let `g : T ⟶ U` be a morphism of the big fppf
 > site of the integers whose target scheme is the spectrum of a field `k`, whose underlying
@@ -236,7 +236,7 @@ theorem isCohenMacaulayDimOneFamily_curveFamilyOfSchemeMorphism_iff
           topologicalKrullDim W = (1 : WithBot ℕ∞))
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_cohenMacaulayDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L89). The attribute's comment: “the inclusion of Curves^\{CM,1} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_cohenMacaulayDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L89). The attribute's comment: “the inclusion of Curves^\{CM,1} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0E1F, `Curves^{CM,1}` is open in `Curves`.** The inclusion into the category fibred
 > in groupoids of families of curves of the full subcategory `Curves^{CM,1}` of the families which
@@ -253,7 +253,7 @@ theorem isOpenImmersion_curvesSubstackInclusion_cohenMacaulayDimOne :
           (isOpenCurvesLocus_isCohenMacaulayDimOneFamily B hZ).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_cohenMacaulayDimOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L103). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_cohenMacaulayDimOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L103). The attribute's comment: “part (1)”.
 
 > **Stacks 0E1F, part (1).** Let `X → S` be a family of curves and `z : (Sch/S) → Curves` a
 > classifying morphism for it, a scheme-valued point together with an isomorphism `z(S) ≅ X`.
@@ -276,7 +276,7 @@ theorem factorsThrough_curvesSubstack_cohenMacaulayDimOne_iff
         Space.HasRelativeDimension 1 B integerBase hZ X.toBase.hom
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_cohenMacaulayDimOne_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L126). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_cohenMacaulayDimOne_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L126). The attribute's comment: “part (2)”.
 
 > **Stacks 0E1F, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
@@ -318,4 +318,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.8, Tag 0E0H](https://stacks.math.columbia.edu/tag/0E0H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

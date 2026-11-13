@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.10 The V topology and the pro-h topology
 
-Section 61.10 of the Stacks Project, [Tag 0EVM](https://stacks.math.columbia.edu/tag/0EVM). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.10 of the Stacks Project, [Tag 0EVM](https://stacks.math.columbia.edu/tag/0EVM). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EVN, a lemma
 
 [Tag 0EVN](https://stacks.math.columbia.edu/tag/0EVN) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isStandardVCovering_limit_iff'`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologyLimits.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologyLimits.lean#L621).
+**`AlgebraicGeometry.ProEtale.isStandardVCovering_limit_iff'`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologyLimits.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologyLimits.lean#L621).
 
 > A morphism from a cofiltered limit of affine schemes over an affine base is a
 > standard V covering if and only if all stage morphisms are standard V coverings.
@@ -42,7 +42,7 @@ public lemma isStandardVCovering_limit_iff'
 
 [Tag 0EVP](https://stacks.math.columbia.edu/tag/0EVP) in the Stacks Project.
 
-**`AlgebraicGeometry.isStandardVCovering_of_exists_isPHCovering_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L219). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.isStandardVCovering_of_exists_isPHCovering_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L218). The attribute's comment: “(2) implies (1)”.
 
 > A morphism of affine schemes which is a directed inverse limit over the base of affine ph
 > coverings is a standard V covering.
@@ -62,7 +62,7 @@ theorem isStandardVCovering_of_exists_isPHCovering_limit
     IsStandardVCovering (fun _ : Unit ↦ X) (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.exists_isPHCovering_limit_of_exists_isHCovering_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L249). The attribute's comment: “(3) implies (2)”.
+**`AlgebraicGeometry.exists_isPHCovering_limit_of_exists_isHCovering_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L248). The attribute's comment: “(3) implies (2)”.
 
 > A presentation of a morphism of affine schemes as a directed inverse limit over the base of
 > affine h coverings is one by affine ph coverings.
@@ -90,7 +90,7 @@ theorem exists_isPHCovering_limit_of_exists_isHCovering_limit
         (∀ i, IsPHCovering (fun _ : Unit ↦ D.obj i) (fun _ ↦ t.app i))
 ```
 
-**`AlgebraicGeometry.isStandardVCovering_limit_tfae_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L278). The attribute's comment: “(1) implies (3); the other two implications are stated without the hard direction of Stacks 0ETR and tagged separately”.
+**`AlgebraicGeometry.isStandardVCovering_limit_tfae_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimits.lean#L277). The attribute's comment: “(1) implies (3); the other two implications are stated without the hard direction of Stacks 0ETR and tagged separately”.
 
 > A morphism of affine schemes is a standard V covering exactly when it is a directed inverse
 > limit over the base of affine ph coverings, and exactly when it is such a limit of affine h
@@ -121,7 +121,7 @@ theorem isStandardVCovering_limit_tfae_unconditional
           (∀ i, IsHCovering (fun _ : Unit ↦ D.obj i) (fun _ ↦ t.app i)))]
 ```
 
-**`AlgebraicGeometry.isStandardVCovering_limit_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimitsIff.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimitsIff.lean#L40).
+**`AlgebraicGeometry.isStandardVCovering_limit_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimitsIff.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/StandardVCoveringLimitsIff.lean#L40).
 
 > **Stacks 0EVP.** Let `f : X ⟶ Y` be a morphism of affine schemes. Then `f` is a standard V
 > covering if and only if `X` is the limit of a directed inverse system of affine schemes `Xᵢ` over
@@ -165,7 +165,7 @@ theorem isStandardVCovering_limit_equivalences {X Y : Scheme.{u}} [IsAffine X] [
 
 [Tag 0EVQ](https://stacks.math.columbia.edu/tag/0EVQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isVSheaf_of_isSheafFor_vCovering_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterion.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterion.lean#L491).
+**`AlgebraicGeometry.isVSheaf_of_isSheafFor_vCovering_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterion.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterion.lean#L491).
 
 > **Stacks 0EVQ.** A presheaf of sets on schemes which satisfies the sheaf condition for
 > every h covering and which is limit preserving in the sense of Stacks 05LX over every base
@@ -188,7 +188,7 @@ theorem isVSheaf_of_isSheafFor_vCovering_of_isLimitPreserving (F : Scheme.{u}ᵒ
     IsVSheaf.{u, max u v, w} F
 ```
 
-**`AlgebraicGeometry.ExtendingFunctors.isVSheafOver_of_isSheafFor_vCovering_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterionOver.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterionOver.lean#L124). The attribute's comment: “the relative form, for a contravariant functor on the category of all schemes over `S`, which is how the source states it. The sheaf property for the h topology is read, as in the absolute case, through the second of the two equivalent conditions of Stacks 0ETR: the hypothesis is the sheaf condition for the families which are locally of finite presentation and are V coverings. Stacks 0ETR, `AlgebraicGeometry.isPHCovering_iff_isVCovering`, is what identifies that hypothesis with the ph reading fixed by `AlgebraicGeometry.IsHCovering`; it is proved in this library, further down the import graph than this file”.
+**`AlgebraicGeometry.ExtendingFunctors.isVSheafOver_of_isSheafFor_vCovering_of_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterionOver.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtale/VTopologySheafCriterionOver.lean#L124). The attribute's comment: “the relative form, for a contravariant functor on the category of all schemes over `S`, which is how the source states it. The sheaf property for the h topology is read, as in the absolute case, through the second of the two equivalent conditions of Stacks 0ETR: the hypothesis is the sheaf condition for the families which are locally of finite presentation and are V coverings. Stacks 0ETR, `AlgebraicGeometry.isPHCovering_iff_isVCovering`, is what identifies that hypothesis with the ph reading fixed by `AlgebraicGeometry.IsHCovering`; it is proved in this library, further down the import graph than this file”.
 
 > A functor on the schemes over `S` which satisfies the sheaf condition for every h covering
 > of `Sch/S` and which is limit preserving in the sense of Stacks 05LX satisfies the sheaf condition
@@ -211,7 +211,7 @@ theorem isVSheafOver_of_isSheafFor_vCovering_of_isLimitPreserving (F : (Over S)�
 
 [Tag 0EVR](https://stacks.math.columbia.edu/tag/0EVR) in the Stacks Project.
 
-**`AlgebraicGeometry.ExtendingFunctors.exists_unique_isHSheaf_isVSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/HSheafExtensionVSheaf.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/HSheafExtensionVSheaf.lean#L400). The attribute's comment: “the whole of the remark: the extension of an h sheaf on the big h category over `S` which carries a directed inverse limit of affine objects to a filtered colimit, together with its uniqueness and every property the remark asserts of it. The extension is an h sheaf on all schemes over `S`, is limit preserving in the sense of Stacks 05LX, satisfies the sheaf property for the V topology, restricts to the given functor, and is the only functor which is an h sheaf, is limit preserving and restricts to it, up to isomorphism”.
+**`AlgebraicGeometry.ExtendingFunctors.exists_unique_isHSheaf_isVSheaf_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/HSheafExtensionVSheaf.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/HSheafExtensionVSheaf.lean#L400). The attribute's comment: “the whole of the remark: the extension of an h sheaf on the big h category over `S` which carries a directed inverse limit of affine objects to a filtered colimit, together with its uniqueness and every property the remark asserts of it. The extension is an h sheaf on all schemes over `S`, is limit preserving in the sense of Stacks 05LX, satisfies the sheaf property for the V topology, restricts to the given functor, and is the only functor which is an h sheaf, is limit preserving and restricts to it, up to isomorphism”.
 
 > **Stacks 0EVR.** Let `S` be a scheme, let `P` be a full subcategory of `Sch/S` satisfying
 > conditions (1) and (2) of Stacks 0EUW and let `F : Pᵒᵖ ⥤ Set` be an h sheaf whose values on a
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.10, Tag 0EVM](https://stacks.math.columbia.edu/tag/0EVM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

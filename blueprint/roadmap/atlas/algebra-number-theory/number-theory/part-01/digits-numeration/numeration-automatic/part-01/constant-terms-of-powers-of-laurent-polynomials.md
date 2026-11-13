@@ -7,7 +7,7 @@ statement: formalized
 
 # Constant terms of powers of Laurent polynomials
 
-33 results, 11 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html).
+33 results, 11 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html).
 
 ## Cartier operator $\Lambda_k$ on Laurent polynomials
 
@@ -22,7 +22,7 @@ $\Lambda_0 f = 0$ (the paper uses only positive $k$).
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Section 2 (definition of `Λ_k`).
 
-Formalized by `MetaMathlibExt.laurentCartier`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-cartier).
+Formalized by `MetaMathlibExt.laurentCartier`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-cartier).
 
 ## Coefficients of Kohen's operator $\Lambda_k$
 
@@ -35,7 +35,7 @@ coefficient of $x^{kj}$ in $f$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Section 2 (definition of `Λ_k`).
 
-Formalized by `MetaMathlibExt.coeff_laurentCartier`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-laurent-cartier).
+Formalized by `MetaMathlibExt.coeff_laurentCartier`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-laurent-cartier).
 
 ## Degree of a Laurent polynomial
 
@@ -50,7 +50,7 @@ variables $x, y$ one has $\deg(5x^{-3}y^{-2} + 2xy^{-1}) = 3$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Section 1.1.
 
-Formalized by `MetaMathlibExt.laurentDeg`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg).
+Formalized by `MetaMathlibExt.laurentDeg`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg).
 
 ## Exponent criterion for the degree of a Laurent polynomial
 
@@ -65,7 +65,7 @@ $f$ satisfies $|j_i| \le m$ for every $i$, that is, lies in $[-m, m]^r$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Section 1.1.
 
-Formalized by `MetaMathlibExt.laurentDeg_le_iff`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-le-iff).
+Formalized by `MetaMathlibExt.laurentDeg_le_iff`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-le-iff).
 
 ## Occurrence of a sequence factor at a position
 
@@ -77,7 +77,7 @@ position $i$ occurs at position $i'$ when $s_{i'+t} = s_{i+t}$ for every natural
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.SeqFactorOccursAt`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#seq-factor-occurs-at).
+Formalized by `MetaMathlibExt.SeqFactorOccursAt`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#seq-factor-occurs-at).
 
 ## Recurrent sequence
 
@@ -89,7 +89,7 @@ is $j > 0$ such that $s(i + j + t) = s(i + t)$ for every $t < \ell$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, definition before Proposition 19.
 
-Formalized by `MetaMathlibExt.IsRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq).
+Formalized by `MetaMathlibExt.IsRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq).
 
 ## Uniformly recurrent sequence
 
@@ -103,7 +103,7 @@ there is $j$ with $0 < j \le C$ and $s(i' + j + t) = s(i + t)$ for all $t < \ell
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.IsUniformlyRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-uniformly-recurrent-seq).
+Formalized by `MetaMathlibExt.IsUniformlyRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-uniformly-recurrent-seq).
 
 ## Linearly recurrent sequence
 
@@ -118,7 +118,7 @@ $K \ell$ positions later.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.IsLinearlyRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq).
+Formalized by `MetaMathlibExt.IsLinearlyRecurrentSeq`, a definition declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq).
 
 ## Linearly recurrent sequences are uniformly recurrent
 
@@ -129,7 +129,7 @@ $s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is uniformly recu
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.IsLinearlyRecurrentSeq.isUniformlyRecurrentSeq`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-uniformly-recurrent-seq-2).
+Formalized by `MetaMathlibExt.IsLinearlyRecurrentSeq.isUniformlyRecurrentSeq`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-uniformly-recurrent-seq-2).
 
 ## Uniformly recurrent sequences are recurrent
 
@@ -140,7 +140,7 @@ $s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is recurrent.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.IsUniformlyRecurrentSeq.isRecurrentSeq`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-2).
+Formalized by `MetaMathlibExt.IsUniformlyRecurrentSeq.isRecurrentSeq`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-2).
 
 ## Constant sequences are linearly recurrent
 
@@ -151,7 +151,7 @@ the constant sequence $n \mapsto c$ on $\mathbb{N}$ is linearly recurrent.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Definition 1.
 
-Formalized by `MetaMathlibExt.isLinearlyRecurrentSeq_const`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-const).
+Formalized by `MetaMathlibExt.isLinearlyRecurrentSeq_const`, a theorem declared in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-const).
 
 ## Rowland–Zeilberger congruence
 
@@ -169,7 +169,7 @@ of a general Laurent polynomial are undefined.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 3 (`jis-2026-26.4.2-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.constantTerm_pow_mul_modEq_laurentCartier` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-pow-mul-mod-eq-laurent-car).
+Stated but not proved: `MetaMathlibExt.constantTerm_pow_mul_modEq_laurentCartier` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-pow-mul-mod-eq-laurent-car).
 
 ## Degree bound for the Rowland–Zeilberger states
 
@@ -185,7 +185,7 @@ polynomial of degree at most $\max(\deg P - 1, \deg Q)$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 4 (`jis-2026-26.4.2-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.laurentDeg_foldl_laurentCartier_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-foldl-laurent-cartier-le).
+Stated but not proved: `MetaMathlibExt.laurentDeg_foldl_laurentCartier_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-foldl-laurent-cartier-le).
 
 ## Cartier operator applied to a power times a monomial
 
@@ -204,7 +204,7 @@ In Kohen's notation $\mathrm{coef}_{pj - i}[P^k]$ is $a^k_{i - pj}$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 6 (`jis-2026-26.4.2-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.laurentCartier_pow_mul_single_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-cartier-pow-mul-single-eq-sum).
+Stated but not proved: `MetaMathlibExt.laurentCartier_pow_mul_single_eq_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-cartier-pow-mul-single-eq-sum).
 
 ## Kohen's linear representation step modulo $p$
 
@@ -225,7 +225,7 @@ $\mathbb{F}_p$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 9 (`jis-2026-26.4.2-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.coeff_pow_modEq_sum_gamma_mul_V` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-pow-mod-eq-sum-gamma-mul-v).
+Stated but not proved: `MetaMathlibExt.coeff_pow_modEq_sum_gamma_mul_V` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-pow-mod-eq-sum-gamma-mul-v).
 
 ## Powers of $\gamma(0)$ modulo $p$ stabilize at a matrix unit
 
@@ -239,7 +239,7 @@ $\gamma(0)^{s'}$ is the matrix whose $(0, 0)$ entry is $1$ and whose other entri
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 11 (`jis-2026-26.4.2-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.exists_gammaZero_pow_eq_single` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-gamma-zero-pow-eq-single).
+Stated but not proved: `MetaMathlibExt.exists_gammaZero_pow_eq_single` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-gamma-zero-pow-eq-single).
 
 ## Divisibility of constant terms of powers is decided on a bounded prefix
 
@@ -255,7 +255,7 @@ $\operatorname{ct}[P^{n_0}]$ for some natural number $n_0 < B$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 12 (`jis-2026-26.4.2-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.exists_bound_constantTerm_pow_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-bound-constant-term-pow-dvd).
+Stated but not proved: `MetaMathlibExt.exists_bound_constantTerm_pow_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-bound-constant-term-pow-dvd).
 
 ## Density-one zeros of constant terms modulo $p$
 
@@ -273,7 +273,7 @@ $\operatorname{ct}[P^n Q] \bmod p$ in $\mathbb{Z}/p\mathbb{Z}$ is not uniformly 
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Theorem 14 (`jis-2026-26.4.2-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.constantTerm_zero_density_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-zero-density-mod-prime).
+Stated but not proved: `MetaMathlibExt.constantTerm_zero_density_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-zero-density-mod-prime).
 
 ## Return to the initial coefficient vector modulo $p$
 
@@ -293,7 +293,7 @@ reduced modulo $p$, the block $V(p^{t_0} n), \dots, V(p^{t_0} n + p^{t_0} - 1)$ 
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 15 (`jis-2026-26.4.2-prop-15`).
 
-Stated but not proved: `MetaMathlibExt.exists_sigma_pow_V_contains_V_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-sigma-pow-v-contains-v-zero).
+Stated but not proved: `MetaMathlibExt.exists_sigma_pow_V_contains_V_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-sigma-pow-v-contains-v-zero).
 
 ## Linear recurrence of constant terms modulo $p$
 
@@ -308,7 +308,7 @@ then the set of $n$ with $p \mid \operatorname{ct}[P^n Q]$ has natural density $
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Theorem 16 (`jis-2026-26.4.2-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_prime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-constant-term).
+Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_prime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-constant-term).
 
 ## Linear recurrence of combinations of constant terms modulo $p$
 
@@ -327,7 +327,7 @@ for some $n$, then the set of $n$ with $b_n = F(0, \dots, 0)$ has natural densit
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Corollary 17 (`jis-2026-26.4.2-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_combination_mod_prime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-combination-mo).
+Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_combination_mod_prime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-combination-mo).
 
 ## Recurrence of constant-term sequences modulo a prime
 
@@ -341,7 +341,7 @@ $\mathbb{Z}/p\mathbb{Z}$ is recurrent.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 19 (`jis-2026-26.4.2-prop-19`).
 
-Stated but not proved: `MetaMathlibExt.isRecurrentSeq_constantTerm_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-constant-term-mod-prime).
+Stated but not proved: `MetaMathlibExt.isRecurrentSeq_constantTerm_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-constant-term-mod-prime).
 
 ## Divisibility of constant terms of powers of $P$ and $\tilde P$
 
@@ -359,7 +359,7 @@ $p \mid \operatorname{ct}[\tilde P^{n_0}]$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 22 (`jis-2026-26.4.2-lem-22`).
 
-Stated but not proved: `MetaMathlibExt.exists_constantTerm_pow_dvd_iff_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-constant-term-pow-dvd-iff-tilde).
+Stated but not proved: `MetaMathlibExt.exists_constantTerm_pow_dvd_iff_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-constant-term-pow-dvd-iff-tilde).
 
 ## Passing from $P$ to $\tilde P$ modulo $p^a$
 
@@ -380,7 +380,7 @@ The statement holds for every natural number $k$; the paper restricts to $k < p^
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 23 (`jis-2026-26.4.2-prop-23`).
 
-Stated but not proved: `MetaMathlibExt.constantTerm_pow_mul_modEq_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-pow-mul-mod-eq-tilde).
+Stated but not proved: `MetaMathlibExt.constantTerm_pow_mul_modEq_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 319](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L319). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-pow-mul-mod-eq-tilde).
 
 ## Rowland–Zeilberger congruence modulo $p^a$
 
@@ -401,7 +401,7 @@ The statement holds for every natural number $k$; the paper states it for $k \in
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 24 (`jis-2026-26.4.2-lem-24`).
 
-Stated but not proved: `MetaMathlibExt.constantTerm_tilde_pow_mul_modEq_laurentCartier` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-tilde-pow-mul-mod-eq-laure).
+Stated but not proved: `MetaMathlibExt.constantTerm_tilde_pow_mul_modEq_laurentCartier` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-tilde-pow-mul-mod-eq-laure).
 
 ## Degree bound for the Rowland–Zeilberger states mod $p^a$
 
@@ -418,7 +418,7 @@ of degree at most $\max(\deg \tilde P - 1, \deg Q_0)$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 25 (`jis-2026-26.4.2-lem-25`).
 
-Stated but not proved: `MetaMathlibExt.laurentDeg_foldl_laurentCartier_le_zmod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-foldl-laurent-cartier-le-zmo).
+Stated but not proved: `MetaMathlibExt.laurentDeg_foldl_laurentCartier_le_zmod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#laurent-deg-foldl-laurent-cartier-le-zmo).
 
 ## Kohen's linear representation step modulo $p^a$
 
@@ -444,7 +444,7 @@ $\mathbb{Z}/p^a\mathbb{Z}$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 28 (`jis-2026-26.4.2-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.coeff_tilde_pow_modEq_sum_gamma_mul_V` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-tilde-pow-mod-eq-sum-gamma-mul-v).
+Stated but not proved: `MetaMathlibExt.coeff_tilde_pow_modEq_sum_gamma_mul_V` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#coeff-tilde-pow-mod-eq-sum-gamma-mul-v).
 
 ## Powers of $\tilde\gamma(0)$ modulo $p^a$ stabilize at a matrix unit
 
@@ -462,7 +462,7 @@ $s' \ge s$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 30 (`jis-2026-26.4.2-lem-30`).
 
-Stated but not proved: `MetaMathlibExt.exists_gammaZero_pow_eq_single_zmod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-gamma-zero-pow-eq-single-zmod).
+Stated but not proved: `MetaMathlibExt.exists_gammaZero_pow_eq_single_zmod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-gamma-zero-pow-eq-single-zmod).
 
 ## Density-one zeros of constant terms modulo $p^a$
 
@@ -479,7 +479,7 @@ such that $p^a$ divides $\operatorname{ct}[\tilde P^n Q]$ has natural density $1
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Lemma 31 (`jis-2026-26.4.2-lem-31`).
 
-Stated but not proved: `MetaMathlibExt.constantTerm_tilde_zero_density` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-tilde-zero-density).
+Stated but not proved: `MetaMathlibExt.constantTerm_tilde_zero_density` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#constant-term-tilde-zero-density).
 
 ## Return to the initial coefficient vector modulo $p^a$
 
@@ -502,7 +502,7 @@ $\tilde V(0)$. This is the analogue modulo $p^a$ of Proposition 15.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 32 (`jis-2026-26.4.2-prop-32`).
 
-Stated but not proved: `MetaMathlibExt.exists_sigma_pow_V_contains_V_zero_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-sigma-pow-v-contains-v-zero-tilde).
+Stated but not proved: `MetaMathlibExt.exists_sigma_pow_V_contains_V_zero_tilde` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 404](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L404). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#exists-sigma-pow-v-contains-v-zero-tilde).
 
 ## Linear recurrence of constant terms modulo $p^a$
 
@@ -521,7 +521,7 @@ depend on $Q$ or $a$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Theorem 33 (`jis-2026-26.4.2-thm-33`).
 
-Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_primePow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-constant-term-2).
+Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_constantTerm_mod_primePow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-constant-term-2).
 
 ## Linear recurrence of combinations of constant terms modulo $p^a$
 
@@ -540,7 +540,7 @@ $b_n = F(0, \dots, 0)$ has natural density $1$.
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Corollary 34 (`jis-2026-26.4.2-cor-34`).
 
-Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_combination_mod_primePow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-combination-mo-2).
+Stated but not proved: `MetaMathlibExt.isLinearlyRecurrentSeq_combination_mod_primePow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-linearly-recurrent-seq-combination-mo-2).
 
 ## Recurrence of constant-term sequences modulo a prime power
 
@@ -554,7 +554,7 @@ $(\mathrm{ct}[P^n Q] \bmod p^a)_{n \ge 0}$ in $\mathbb{Z}/p^a\mathbb{Z}$ is recu
 
 - Nadav Kohen, *A Linear Representation for Constant Term Sequences mod p^a with Applications to Uniform Recurrence*, Journal of Integer Sequences 29 (2026), Article 26.4.2, Proposition 35 (`jis-2026-26.4.2-prop-35`).
 
-Stated but not proved: `MetaMathlibExt.isRecurrentSeq_constantTerm_mod_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-constant-term-mod-prime-2).
+Stated but not proved: `MetaMathlibExt.isRecurrentSeq_constantTerm_mod_primePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConstantTermLinearRepresentationWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html#is-recurrent-seq-constant-term-mod-prime-2).
 
 ## Depends on
 
@@ -563,4 +563,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Constant terms of powers of Laurent polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/numeration-automatic/constant-terms-of-powers-of-laurent-polynomials)

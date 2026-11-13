@@ -7,7 +7,7 @@ statement: formalized
 
 # Precoloring extension
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html).
 
 ## Instances of PRECOLORING EXTENSION
 
@@ -17,7 +17,7 @@ of natural numbers (the edges), a list $c$ of natural numbers (the partial color
 entry $0$ means uncolored and an entry $k + 1$ means color $k$), and a natural number $K$ (the
 number of colors).
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.PrecoloringExtensionInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.PrecoloringExtensionInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-instance).
 
 ## Well-formed precoloring extension instances
 
@@ -26,7 +26,7 @@ extension is well formed when the edge list $E$ has no repeated entries, every e
 $E$ satisfies $u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$, and the partial coloring $c$
 has length $n$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#well-formed).
 
 ## Feasible precoloring extension instances
 
@@ -37,7 +37,7 @@ $v < n$ with $c_v \ne 0$, and $\chi_u \ne \chi_v$ for every edge $(u, v)$ in $E$
 the entry of $c$ at position $v$, and an entry of a list at a position beyond its length is read
 as $0$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.PrecoloringExtensionFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.PrecoloringExtensionFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-feasible).
 
 ## PRECOLORING EXTENSION as a decision problem
 
@@ -46,7 +46,7 @@ accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring 
 precoloring extension instance that is well formed and feasible; bitstrings that do not decode
 are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.precoloringExtensionDec`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.precoloringExtensionDec`, a definition declared in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-dec).
 
 ## PRECOLORING EXTENSION is NP-complete
 
@@ -57,7 +57,7 @@ NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 
 - M. Biro, M. Hujter, and Z. Tuza, "Precoloring extension. I. Interval graphs", Discrete Mathematics 100 (1992), 267-279 (NP- completeness on interval graphs, hence on general graphs); hardness also follows directly from Garey-Johnson CHROMATIC NUMBER (GT4) by taking the precoloring to be empty.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.precoloringExtension_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.PrecoloringExtension.precoloringExtension_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/PrecoloringExtensionWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html#precoloring-extension-np-complete).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Precoloring extension](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/precoloring-extension)

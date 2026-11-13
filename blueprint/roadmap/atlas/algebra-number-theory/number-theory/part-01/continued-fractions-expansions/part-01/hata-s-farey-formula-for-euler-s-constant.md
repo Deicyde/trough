@@ -7,7 +7,7 @@ statement: formalized
 
 # Hata's Farey formula for Euler's constant
 
-9 results, 3 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html).
+9 results, 3 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html).
 
 ## Mediant telescoping identity for Farey intervals
 
@@ -25,7 +25,7 @@ $$
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.farey_interval_mediant_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-interval-mediant-telescoping).
+Stated but not proved: `MetaMathlibExt.farey_interval_mediant_telescoping` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-interval-mediant-telescoping).
 
 ## Farey intervals lie in reciprocal intervals
 
@@ -41,7 +41,7 @@ intervals $[0/1, 1/n]$, the ones excluded in the source's proof of this corollar
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.farey_interval_subset_reciprocal_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-interval-subset-reciprocal-interva).
+Stated but not proved: `MetaMathlibExt.farey_interval_subset_reciprocal_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-interval-subset-reciprocal-interva).
 
 ## Sum over the Farey intervals inside a reciprocal interval
 
@@ -58,7 +58,7 @@ $$
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.hasSum_farey_subintervals_reciprocal_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#has-sum-farey-subintervals-reciprocal-in).
+Stated but not proved: `MetaMathlibExt.hasSum_farey_subintervals_reciprocal_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#has-sum-farey-subintervals-reciprocal-in).
 
 ## Hata's formula for Euler's constant
 
@@ -78,7 +78,7 @@ The set $S$ is the source's $F \setminus F^*$, where $F^*$ consists of the inter
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Theorem 1, attributed there to Hata.
 
-Stated but not proved: `MetaMathlibExt.euler_mascheroni_eq_hata_farey_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#euler-mascheroni-eq-hata-farey-sum).
+Stated but not proved: `MetaMathlibExt.euler_mascheroni_eq_hata_farey_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#euler-mascheroni-eq-hata-farey-sum).
 
 ## Stern-Brocot generations
 
@@ -92,7 +92,7 @@ $[(a + c)/(b + d), c/d]$.
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Section 2 (before Corollary 1).
 
-Formalized by `MetaMathlibExt.fareyGeneration`, a definition declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation).
+Formalized by `MetaMathlibExt.fareyGeneration`, a definition declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation).
 
 ## The first two Stern-Brocot generations
 
@@ -104,7 +104,7 @@ and $F_2 = \{[0/1, 1/3], [1/3, 1/2], [1/2, 2/3], [2/3, 1/1]\}$.
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Section 2 (before Corollary 1).
 
-Formalized by `MetaMathlibExt.fareyGeneration_one_two`, a theorem declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-one-two).
+Formalized by `MetaMathlibExt.fareyGeneration_one_two`, a theorem declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-one-two).
 
 ## Recurrence for the Stern-Brocot generations
 
@@ -117,7 +117,7 @@ is stored as the quadruple $(x, y, z, w)$.
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Section 2 (before Corollary 1).
 
-Formalized by `MetaMathlibExt.fareyGeneration_succ`, a theorem declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-succ).
+Formalized by `MetaMathlibExt.fareyGeneration_succ`, a theorem declared in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-succ).
 
 ## Length bound for the Stern-Brocot generations
 
@@ -129,7 +129,7 @@ $(a, b, c, d) \in F_n$, satisfies $c/d - a/b \le 1/(n + 1)$.
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.fareyGeneration_length_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-length-le).
+Stated but not proved: `MetaMathlibExt.fareyGeneration_length_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#farey-generation-length-le).
 
 ## Riemann-sum bound for Farey partitions
 
@@ -154,7 +154,7 @@ $\max_k 1/(B(k) B(k+1))$.
 
 - Nikita Kalinin, *A Short Telescoping Proof of Hata's Formula for the Euler-Mascheroni Constant*, INTEGERS 25 (2025), Article A90, Lemma 2, inequality (2).
 
-Stated but not proved: `MetaMathlibExt.abs_sum_farey_partition_sub_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#abs-sum-farey-partition-sub-integral-le).
+Stated but not proved: `MetaMathlibExt.abs_sum_farey_partition_sub_integral_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HataEulerMascheroniFareyWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html#abs-sum-farey-partition-sub-integral-le).
 
 ## Depends on
 
@@ -163,4 +163,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hata's Farey formula for Euler's constant](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/hata-s-farey-formula-for-euler-s-constant)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Information inequalities: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html).
 
 Inequalities relating entropies, divergences and mutual information, such as the log-sum, Pinsker, Fano, data-processing and Shearer inequalities.
 
@@ -25,7 +25,7 @@ $$
 Here $\log$ is the natural logarithm; a summand with $p_i = 0$ is $0$, and both sides are $0$
 when $s$ is empty.
 
-Formalized by `Real.sum_mul_log_sum_div_sum_le_sum_mul_log_div`, a theorem declared in [MathlibExt/InformationTheory/LogSum.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/LogSum.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html#sum-mul-log-sum-div-sum-le-sum-mul-log-d).
+Formalized by `Real.sum_mul_log_sum_div_sum_le_sum_mul_log_div`, a theorem declared in [MathlibExt/InformationTheory/LogSum.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/LogSum.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html#sum-mul-log-sum-div-sum-le-sum-mul-log-d).
 
 ## Csiszár–Kullback–Pinsker inequality for strictly positive distributions
 
@@ -45,7 +45,7 @@ $\sqrt{D/2}$, where $D = \sum_a p(a) \log (p(a)/q(a))$ is the Kullback–Leibler
 
 - M. S. Pinsker, Information and Information Stability of Random Variables and Processes (1960; English translation 1964), with I. Csiszar, Information-type measures of difference of probability distributions and indirect observations, Studia Sci. Math. Hungar. 2 (1967), 299-318.
 
-Formalized by `MathlibExt.InformationTheory.Pinsker.csiszar_kullback_pinsker`, a theorem declared in [MathlibExt/InformationTheory/Pinsker.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/Pinsker.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html#csiszar-kullback-pinsker).
+Formalized by `MathlibExt.InformationTheory.Pinsker.csiszar_kullback_pinsker`, a theorem declared in [MathlibExt/InformationTheory/Pinsker.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/Pinsker.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html#csiszar-kullback-pinsker).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Information inequalities](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/information-inequalities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/InformationTheory/information-inequalities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/InformationTheory/information-inequalities)

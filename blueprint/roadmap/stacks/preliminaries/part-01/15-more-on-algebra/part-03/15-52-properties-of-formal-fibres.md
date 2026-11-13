@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.52 Properties of formal fibres
 
-Section 15.52 of the Stacks Project, [Tag 0BIR](https://stacks.math.columbia.edu/tag/0BIR). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.52 of the Stacks Project, [Tag 0BIR](https://stacks.math.columbia.edu/tag/0BIR). 13 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BIS, a lemma
 
 [Tag 0BIS](https://stacks.math.columbia.edu/tag/0BIS) in the Stacks Project.
 
-**`propertyRing_iff_quotientCompletion_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuotientCompletion.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuotientCompletion.lean#L483).
+**`propertyRing_iff_quotientCompletion_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuotientCompletion.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuotientCompletion.lean#L483).
 
 > **Stacks 0BIS.** A Noetherian ring has property `P` on all the formal fibres of its
 > localizations at prime ideals if and only if the corresponding completed localizations of
@@ -39,7 +39,7 @@ public theorem propertyRing_iff_quotientCompletion_fibers
 
 [Tag 0BK8](https://stacks.math.columbia.edu/tag/0BK8) in the Stacks Project.
 
-**`fibersHaveProperty_iff_localizations_at_primes_and_maximals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/FibreLocalization.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/FibreLocalization.lean#L622).
+**`fibersHaveProperty_iff_localizations_at_primes_and_maximals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/FibreLocalization.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/FibreLocalization.lean#L621).
 
 > A fibre property which is local for localization may be checked on all maps of localizations
 > at primes lying over one another, or only on those obtained from maximal ideals of the target.
@@ -70,7 +70,7 @@ public theorem fibersHaveProperty_iff_localizations_at_primes_and_maximals
 
 [Tag 0BIT](https://stacks.math.columbia.edu/tag/0BIT) in the Stacks Project.
 
-**`quasiFinite_preserves_formalFiberProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuasiFiniteFormalFibres.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuasiFiniteFormalFibres.lean#L615).
+**`quasiFinite_preserves_formalFiberProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuasiFiniteFormalFibres.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/RingMapProperty/QuasiFiniteFormalFibres.lean#L615).
 
 > **Stacks 0BIT.** Let `R → S` be a finite-type map of Noetherian rings and let
 > `q' ⊆ p'` be primes of `S`. If the map is quasi-finite at `p'`, then a property of
@@ -115,7 +115,7 @@ public theorem quasiFinite_preserves_formalFiberProperty
 
 [Tag 0BIU](https://stacks.math.columbia.edu/tag/0BIU) in the Stacks Project.
 
-**`isPRing_iff_formalFibersHave_localization_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Localization.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Localization.lean#L308).
+**`isPRing_iff_formalFibersHave_localization_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Localization.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Localization.lean#L308).
 
 > For a property of ring maps satisfying ascent through regular maps and
 > faithfully flat descent, a Noetherian ring is a `P`-ring exactly when the formal fibres of its
@@ -155,7 +155,7 @@ public theorem isPRing_iff_formalFibersHave_localization_maximal
 
 [Tag 0BIV](https://stacks.math.columbia.edu/tag/0BIV) in the Stacks Project.
 
-**`isPRing_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/EssFiniteType.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/EssFiniteType.lean#L249). References: EGA IV (7.4.3), “(ii)”; EGA IV (7.6.5).
+**`isPRing_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/EssFiniteType.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/EssFiniteType.lean#L249). References: EGA IV (7.4.3), “(ii)”; EGA IV (7.6.5).
 
 > **Stacks 0BIV.** If a property of maps from fields to Noetherian rings satisfies
 > properties (A)--(D), then an essentially finite-type algebra over a `P`-ring is a `P`-ring.
@@ -202,7 +202,7 @@ public theorem isPRing_of_essFiniteType
 
 [Tag 0BK9](https://stacks.math.columbia.edu/tag/0BK9) in the Stacks Project.
 
-**`fibersHaveProperty_adicCompletion_of_isPRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Localization.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Localization.lean#L566). References: EGA IV (7.4.6).
+**`fibersHaveProperty_adicCompletion_of_isPRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Localization.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Localization.lean#L566). References: EGA IV (7.4.6).
 
 > If `A` is a `P`-ring, `P` is local for localization, and `P` descends
 > along faithfully flat maps in flat towers of Noetherian rings, then all fibres of the map from
@@ -227,7 +227,7 @@ public theorem fibersHaveProperty_adicCompletion_of_isPRing
 
 [Tag 0BKA](https://stacks.math.columbia.edu/tag/0BKA) in the Stacks Project.
 
-**`isPRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Henselization.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Henselization.lean#L558). References: EGA IV (18.7.2), “Forward implication”.
+**`isPRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Henselization.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Henselization.lean#L558). References: EGA IV (18.7.2), “Forward implication”.
 
 > A henselization of a pair over a `P`-ring is again a `P`-ring when `P` is local on the
 > target, ascends along regular maps, descends along faithfully flat maps, and is preserved by
@@ -282,7 +282,7 @@ public theorem isPRing_henselization :
 
 [Tag 0C36](https://stacks.math.columbia.edu/tag/0C36) in the Stacks Project.
 
-**`isPRing_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Henselization.lean, line 1209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Henselization.lean#L1209). References: EGA IV (18.7.2), “partial”.
+**`isPRing_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Henselization.lean, line 1209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Henselization.lean#L1209). References: EGA IV (18.7.2), “partial”.
 
 > The henselization and strict henselization of a local `P`-ring are `P`-rings when `P` is
 > local on the target, ascends along regular maps, descends along faithfully flat maps, and is
@@ -339,7 +339,7 @@ public theorem isPRing_henselization_and_strictHenselization
 
 [Tag 0BIW](https://stacks.math.columbia.edu/tag/0BIW) in the Stacks Project.
 
-**`geometricReducedness_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyReduced.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyReduced.lean#L387). References: EGA IV (7.5.3), “(viii) reduced”; EGA IV (7.9.7), “partial”.
+**`geometricReducedness_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyReduced.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyReduced.lean#L387). References: EGA IV (7.5.3), “(viii) reduced”; EGA IV (7.9.7), “partial”.
 
 > **Stacks 0BIW.** Geometric reducedness satisfies properties (A)--(E) for formal fibres:
 > base change by a finitely generated field extension, detection on local rings, ascent along a
@@ -387,7 +387,7 @@ public theorem geometricReducedness_satisfies_formalFibre_properties :
 
 [Tag 0BIX](https://stacks.math.columbia.edu/tag/0BIX) in the Stacks Project.
 
-**`geometricNormality_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyNormal.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyNormal.lean#L425). References: EGA IV (7.3.10), “special case”.
+**`geometricNormality_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyNormal.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Examples/GeometricallyNormal.lean#L425). References: EGA IV (7.3.10), “special case”.
 
 > Geometric normality satisfies properties (A)--(E) for formal fibres: base change by a
 > finitely generated field extension, detection on local rings, ascent along a regular map,
@@ -435,7 +435,7 @@ public theorem geometricNormality_satisfies_formalFibre_properties :
 
 [Tag 0BIY](https://stacks.math.columbia.edu/tag/0BIY) in the Stacks Project.
 
-**`serreProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean#L240). The attribute's comment: “The source fixes `n ≥ 1`, so `_hn : 1 ≤ n` is carried for faithfulness even though the proof does not use it — each of the five axioms holds for `(Sₙ)` at every `n`. Hence the leading underscore on that binder.”.
+**`serreProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean#L240). The attribute's comment: “The source fixes `n ≥ 1`, so `_hn : 1 ≤ n` is carried for faithfulness even though the proof does not use it — each of the five axioms holds for `(Sₙ)` at every `n`. Hence the leading underscore on that binder.”.
 
 > **Stacks 0BIY.** For `n ≥ 1`, the property that the target of a map from a field to a
 > Noetherian ring satisfies `(Sₙ)` has properties (A)--(E).
@@ -479,7 +479,7 @@ public theorem serreProperty_satisfies_formalFiberAxioms
 
 [Tag 0BJ9](https://stacks.math.columbia.edu/tag/0BJ9) in the Stacks Project.
 
-**`cohenMacaulayProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean#L406). References: EGA IV (7.5.3), “(iii) Cohen-Macaulay”.
+**`cohenMacaulayProperty_satisfies_formalFiberAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Examples/SerreCondition.lean#L406). References: EGA IV (7.5.3), “(iii) Cohen-Macaulay”.
 
 > **Stacks 0BJ9.** The property of a map from a field to a Noetherian ring that its target is
 > Cohen–Macaulay satisfies properties (A)--(E): it is preserved by finitely generated field
@@ -527,7 +527,7 @@ public theorem cohenMacaulayProperty_satisfies_formalFiberAxioms
 
 [Tag 0BIZ](https://stacks.math.columbia.edu/tag/0BIZ) in the Stacks Project.
 
-**`propertyRk_after_finiteExtensions_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/RegularInCodimension.lean, line 648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormalFibres/Examples/RegularInCodimension.lean#L648).
+**`propertyRk_after_finiteExtensions_satisfies_formalFibre_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormalFibres/Examples/RegularInCodimension.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormalFibres/Examples/RegularInCodimension.lean#L648).
 
 > For fixed `n`, the property that every finite extension of the ground field makes an algebra
 > satisfy Serre's condition `(R_n)` satisfies properties (A)--(E) for formal fibres: base change by
@@ -594,4 +594,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.52, Tag 0BIR](https://stacks.math.columbia.edu/tag/0BIR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

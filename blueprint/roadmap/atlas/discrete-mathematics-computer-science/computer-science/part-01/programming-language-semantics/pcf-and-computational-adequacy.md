@@ -8,21 +8,21 @@ proof: formalized
 
 # PCF and computational adequacy
 
-74 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html).
+74 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html).
 
 ## PCF types
 
 PCF types are the simple types over a single ground type, the type of natural
 numbers.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ty).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ty).
 
 ## Natural number type of PCF
 
 The ground type $\mathsf{nat}$ of natural numbers is the unique
 base type of PCF, whose types are the simple types over a single base type.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.nat`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#nat).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.nat`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#nat).
 
 ## PCF variables
 
@@ -30,7 +30,7 @@ PCF uses the typed de Bruijn variables of the simply typed
 $\lambda$-calculus over a single base type: a variable of type $A$ in a context $\Gamma$ is a
 position in the list $\Gamma$ at which $A$ occurs.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Var`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#var).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Var`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#var).
 
 ## PCF terms
 
@@ -45,7 +45,7 @@ if $t$, $s_1$ and $s_2$ have type $\mathsf{nat}$, so does the zero test
 $\mathsf{ifz}\,t\,s_1\,s_2$; and if $t$ has type $A \Rightarrow A$, then the fixed point
 $\mathsf{fix}\,t$ has type $A$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#tm).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#tm).
 
 ## PCF renamings
 
@@ -53,7 +53,7 @@ For contexts $\Gamma$ and $\Delta$ (lists of PCF types), a renaming from
 $\Gamma$ to $\Delta$ is a map sending each variable of $\Gamma$ of type $A$, for every type $A$,
 to a variable of $\Delta$ of the same type $A$; it is the STLC notion of renaming at PCF types.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ren`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ren).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ren`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ren).
 
 ## Parallel substitutions for PCF
 
@@ -61,7 +61,7 @@ A substitution from a context $\Gamma$ to a context
 $\Delta$ (lists of PCF types) assigns to every variable of $\Gamma$, of any type $A$, a PCF term
 of type $A$ in context $\Delta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#sub).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#sub).
 
 ## PCF numerals
 
@@ -69,7 +69,7 @@ For every context $\Gamma$ and natural number $n$, the numeral of $n$ is the
 term $\mathsf{succ}^n(\mathsf{zero})$ of type $\mathsf{nat}$ in $\Gamma$: the numeral of $0$ is
 $\mathsf{zero}$, and the numeral of $n + 1$ is $\mathsf{succ}$ applied to the numeral of $n$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-2).
 
 ## Injectivity of PCF numerals
 
@@ -77,7 +77,7 @@ In every context, the map sending a natural number $n$ to
 the numeral $\mathsf{succ}^n(\mathsf{zero})$ of type $\mathsf{nat}$ is injective: distinct
 natural numbers give distinct numerals.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral_injective`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-injective).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral_injective`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-injective).
 
 ## Renaming of PCF terms
 
@@ -89,7 +89,7 @@ the successor of each variable $x$ of $\Gamma$ to the successor of $\rho(x)$. Re
 zero unchanged and commutes with application, successor, predecessor, the zero test and the
 fixed-point combinator.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename).
 
 ## Weakening of PCF terms
 
@@ -98,21 +98,21 @@ PCF term $t$ of type $A$ in context $\Gamma$ to the term of type $A$ in the cont
 prepending a new variable of type $B$ to $\Gamma$, by renaming every free variable of $t$ to its
 successor, that is, by shifting each de Bruijn index up by one.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.weaken`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#weaken).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.weaken`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#weaken).
 
 ## Renaming a PCF term by the identity
 
 For every context $\Gamma$, type $A$ and term $t$ of
 type $A$ in $\Gamma$, renaming $t$ along the identity renaming of $\Gamma$ gives $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename-id).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename-id).
 
 ## Identity PCF substitution
 
 For every context $\Gamma$, the identity substitution from
 $\Gamma$ to $\Gamma$ sends each variable $x$ of $\Gamma$ to the term consisting of $x$ alone.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.id`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#id).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.id`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#id).
 
 ## Lifting a PCF substitution under a binder
 
@@ -122,7 +122,7 @@ $\Gamma$ extended by a newest variable of type $A$ to $\Delta$ extended by a new
 type $A$ that sends the newest variable to the newest variable and every older variable $x$ to
 the weakening of $\sigma(x)$ by one variable.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.lift`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#lift).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.lift`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#lift).
 
 ## Single-variable substitution in PCF
 
@@ -131,7 +131,7 @@ this is the substitution from the context $\Gamma$ extended by a newest variable
 $\Gamma$ that sends the newest variable to $a$ and each older variable $x$ to the variable $x$
 of $\Gamma$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.single`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#single).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.single`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#single).
 
 ## Extending a PCF substitution by a term
 
@@ -140,7 +140,7 @@ $\Gamma$ to a context $\Delta$ and a term $a$ of type $A$ in $\Delta$, the exten
 goes from $\Gamma$ extended by a newest variable of type $A$ to $\Delta$: it sends the newest
 variable to $a$ and every older variable $x$ of $\Gamma$ to $\sigma(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.cons`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#cons).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Sub.cons`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#cons).
 
 ## Substitution in PCF terms
 
@@ -155,7 +155,7 @@ the fixed-point combinator.
 All variables are replaced simultaneously, and since variables are de Bruijn indices the
 substitution is capture-avoiding.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst).
 
 ## Instantiating the newest variable of a PCF term
 
@@ -164,7 +164,7 @@ $\Gamma$ extended by a newest variable of type $A$, and a term $a$ of type $A$ i
 instantiation of $b$ with $a$ is the term of type $B$ in $\Gamma$ obtained by applying to $b$ the
 substitution that sends the newest variable to $a$ and every older variable to itself.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.instantiate`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#instantiate).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.instantiate`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#instantiate).
 
 ## Substitution after renaming in PCF
 
@@ -174,7 +174,7 @@ $t$ of type $A$ in context $\Gamma$, applying $\sigma$ to the renaming of $t$ al
 the result of applying to $t$ the substitution from $\Gamma$ to $\Xi$ that sends each variable
 $x$ of $\Gamma$ to $\sigma(\rho(x))$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst-rename).
 
 ## Renaming after substitution in PCF
 
@@ -184,7 +184,7 @@ $t$ of type $A$ in context $\Gamma$, renaming along $\rho$ the result of applyin
 gives the result of applying to $t$ the substitution from $\Gamma$ to $\Xi$ that sends each
 variable $x$ of $\Gamma$ to the renaming of $\sigma(x)$ along $\rho$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.rename_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#rename-subst).
 
 ## Composition of PCF substitutions
 
@@ -195,7 +195,7 @@ $t$ of type $A$ in context $\Gamma$, $t[\sigma][\tau] = t[\sigma']$, where $\sig
 substitution from $\Gamma$ to $\Xi$ that sends each variable $x$ of $\Gamma$ to
 $\sigma(x)[\tau]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.subst_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#subst-subst).
 
 ## Instantiation after substitution under a binder
 
@@ -206,14 +206,14 @@ $\sigma$ to $b$ and then instantiating the newest variable with $a$ gives the sa
 applying to $b$ the extension of $\sigma$ by $a$, which sends the newest variable to $a$ and
 every older variable $x$ to $\sigma(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.instantiate_subst_lift`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#instantiate-subst-lift).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.instantiate_subst_lift`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Syntax.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#instantiate-subst-lift).
 
 ## Values of PCF
 
 A closed PCF term is a value when it is a $\lambda$-abstraction or the
 numeral $\mathsf{succ}^n\,\mathsf{zero}$ for some natural number $n$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#value).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#value).
 
 ## Closed values of ground type are numerals
 
@@ -221,7 +221,7 @@ If a closed PCF term $v$ of the ground type of
 natural numbers is a value, then $v$ is the numeral $\mathsf{succ}^n\,\mathsf{zero}$ for some
 natural number $n$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value.eq_numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eq-numeral).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value.eq_numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eq-numeral).
 
 ## Big-step call-by-name evaluation of PCF
 
@@ -240,7 +240,7 @@ $b[a/x] \Downarrow v$, then $f\,a \Downarrow v$, where $b[a/x]$ substitutes the 
 argument $a$ for $x$ in $b$. If $t\,(\mathsf{fix}\,t) \Downarrow v$, then
 $\mathsf{fix}\,t \Downarrow v$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval).
 
 ## Numerals evaluate to themselves
 
@@ -248,21 +248,21 @@ For every natural number $n$, the closed PCF numeral
 $\underline{n} = \mathsf{succ}^n\,\mathsf{zero}$ evaluates to itself under big-step call-by-name
 evaluation: $\underline{n} \Downarrow \underline{n}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral).
 
 ## PCF values evaluate to themselves
 
 For every type $A$ and every closed PCF term $v$ of type
 $A$ that is a value, $v \Downarrow v$ under big-step call-by-name evaluation.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#of-value).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#of-value).
 
 ## PCF evaluation results are values
 
 For closed PCF terms $t$ and $v$ of the same type, if
 $t \Downarrow v$ under big-step call-by-name evaluation, then $v$ is a value.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#value-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#value-2).
 
 ## Determinism of PCF big-step evaluation
 
@@ -270,7 +270,7 @@ For closed PCF terms $t$, $v$, $w$ of the same
 type, if $t \Downarrow v$ and $t \Downarrow w$ under big-step call-by-name evaluation, then
 $v = w$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#deterministic).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/BigStep.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#deterministic).
 
 ## Domain of a PCF type
 
@@ -279,7 +279,7 @@ recursion on the type: the ground type denotes the flat domain of partial natura
 function type $A \to B$ denotes the ω-complete partial order of Scott-continuous maps from the
 domain of $A$ to the domain of $B$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.dom`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#dom).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.dom`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#dom).
 
 ## Least elements of PCF domains
 
@@ -288,7 +288,7 @@ least element, defined by recursion on $A$: at the ground type it is the undefin
 flat domain of partial natural numbers, and at a function type $B \to C$ it is the continuous map
 that sends every argument to the least element of the domain denoted by $C$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.orderBot`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#order-bot).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ty.orderBot`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#order-bot).
 
 ## Semantic environments for PCF
 
@@ -298,7 +298,7 @@ one-point order, and the environments for $\Gamma$ extended by a newest variable
 the pairs $(\eta, a)$ of an environment $\eta$ for $\Gamma$ and an element $a$ of the domain of
 $A$, ordered componentwise.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#env).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#env).
 
 ## Variable lookup in a PCF environment
 
@@ -308,7 +308,7 @@ defined by recursion on $x$: if $x$ is the newest variable, it sends an environm
 $a$; if $x$ is the shift of a variable $y$ of the older context, it sends $(\eta, a)$ to the lookup
 of $y$ at $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env.lookup`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#lookup).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env.lookup`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#lookup).
 
 ## Environment from a family of values
 
@@ -321,7 +321,7 @@ variable of type $B$ it is the pair of the environment built from $f$ on the old
 $\Gamma'$ and the value of $f$ at the newest variable. So its entry at every variable $x$ is
 $f(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env.ofFun`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#of-fun).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Env.ofFun`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#of-fun).
 
 ## Strict zero test as a continuous map
 
@@ -331,7 +331,7 @@ numbers. Their strict zero test is the Scott-continuous map sending $x \in \alph
 $t(x)$ is defined and equal to $0$, to $s_2(x)$ if $t(x)$ is defined and nonzero, and to the
 undefined value if $t(x)$ is undefined.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.ifzHom`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ifz-hom).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.ifzHom`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ifz-hom).
 
 ## Denotation of PCF terms
 
@@ -346,7 +346,7 @@ $[\![\mathsf{ifz}\,t\,s_1\,s_2]\!]$ is the strict zero test of $[\![t]\!]$, $[\!
 $[\![s_2]\!]$; and $[\![\mathsf{fix}\,t]\!]\eta$ is the least fixed point of the continuous map
 $[\![t]\!]\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote).
 
 ## Fixed-point equation for the PCF denotation of fix
 
@@ -355,7 +355,7 @@ $A \to A$ in a context $\Gamma$ and every environment $\eta$ for $\Gamma$, the d
 $\mathsf{fix}\,t$ at $\eta$ equals the denotation of the application $t\,(\mathsf{fix}\,t)$ at
 $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_fix_unfold`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-fix-unfold).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_fix_unfold`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-fix-unfold).
 
 ## PCF denotation of a renamed term
 
@@ -365,7 +365,7 @@ context $\Gamma$, and let $\eta$ be an environment for $\Delta$. Then the denota
 the renaming of $t$ along $\rho$ equals the denotation of $t$ at the environment for $\Gamma$ that
 gives each variable $x$ of $\Gamma$ the value of the variable $\rho(x)$ in $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-rename).
 
 ## Weakening preserves the PCF denotation
 
@@ -375,7 +375,7 @@ type $B$. The denotation of the weakening of $t$ (the same term in the context $
 a newest variable of type $B$) at the extended environment $(\eta, b)$ equals the denotation of $t$
 at $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-weaken).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-weaken).
 
 ## PCF denotation of a substituted term
 
@@ -386,7 +386,7 @@ denotation at $\eta$ of the term obtained by applying $\sigma$ to $t$ equals the
 at the environment for $\Gamma$ that gives each variable $x$ of $\Gamma$ the value at $\eta$ of the
 denotation of $\sigma(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-subst).
 
 ## PCF denotation of instantiation
 
@@ -397,7 +397,7 @@ at $\eta$, the denotation at $\eta$ of the term obtained from $t$ by substitutin
 variable equals $[\![t]\!](\eta, [\![a]\!]\eta)$, the denotation of $t$ at the extension of $\eta$
 that gives the newest variable the value $[\![a]\!]\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-instantiate).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Denotational.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-instantiate).
 
 ## Call-by-name reduction step of PCF
 
@@ -414,7 +414,7 @@ $\mathrm{ifz}\,\mathrm{zero}\,s_1\,s_2 \to s_1$ and
 $\mathrm{ifz}\,\underline{n+1}\,s_1\,s_2 \to s_2$ for every natural number $n$; and
 $\mathrm{fix}\,t \to t\,(\mathrm{fix}\,t)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#step).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#step).
 
 ## Multi-step call-by-name reduction of PCF
 
@@ -423,7 +423,7 @@ type, $t \to^* t'$ holds when $t$ reduces to $t'$ in finitely many, possibly zer
 call-by-name reductions; that is, $\to^*$ is the reflexive transitive closure of one-step
 reduction.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Steps`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#steps).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Steps`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#steps).
 
 ## PCF numerals are normal forms
 
@@ -431,7 +431,7 @@ For every natural number $n$, the closed numeral
 $\mathrm{succ}^n\,\mathrm{zero}$ of type nat does not reduce: there is no closed term $t'$ such
 that $\mathrm{succ}^n\,\mathrm{zero}$ reduces to $t'$ in one call-by-name step.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral_not_step`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-not-step).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.numeral_not_step`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#numeral-not-step).
 
 ## PCF values are normal forms
 
@@ -439,7 +439,7 @@ If $v$ is a closed PCF value of type $A$ (an abstraction or a
 numeral), then there is no closed term $t'$ such that $v$ reduces to $t'$ in one call-by-name
 step.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value.not_step`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#not-step).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Value.not_step`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#not-step).
 
 ## Determinism of PCF call-by-name reduction
 
@@ -447,7 +447,7 @@ One-step call-by-name reduction of closed PCF
 terms is deterministic: if a closed term $t$ of type $A$ reduces in one step to $t_1$ and also
 reduces in one step to $t_2$, then $t_1 = t_2$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#deterministic-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#deterministic-2).
 
 ## Big-step evaluation implies reduction in PCF
 
@@ -455,7 +455,7 @@ Let $t$ and $v$ be closed PCF terms of
 type $A$. If $t$ evaluates to $v$ in the big-step call-by-name semantics, then $t$ reduces to
 $v$ in finitely many (possibly zero) call-by-name steps.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.steps`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#steps-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.steps`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#steps-2).
 
 ## Backward reduction preserves evaluation in PCF
 
@@ -463,7 +463,7 @@ Let $t$, $t'$ and $v$ be closed PCF terms
 of type $A$. If $t$ reduces to $t'$ in one call-by-name step and $t'$ evaluates to $v$ in the
 big-step call-by-name semantics, then $t$ evaluates to $v$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step.eval`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Step.eval`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-2).
 
 ## Reduction to a value implies big-step evaluation in PCF
 
@@ -471,7 +471,7 @@ Let $t$ and $v$ be closed PCF
 terms of type $A$. If $t$ reduces to $v$ in finitely many (possibly zero) call-by-name steps and
 $v$ is a value, then $t$ evaluates to $v$ in the big-step call-by-name semantics.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Steps.eval`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-3).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Steps.eval`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-3).
 
 ## Big-step evaluation agrees with small-step reduction in PCF
 
@@ -479,7 +479,7 @@ For closed PCF terms $t$ and
 $v$ of type $A$, $t$ evaluates to $v$ in the big-step call-by-name semantics if and only if $t$
 reduces to $v$ in finitely many (possibly zero) call-by-name steps and $v$ is a value.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.eval_iff_steps`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-iff-steps).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.eval_iff_steps`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/SmallStep.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-iff-steps).
 
 ## Soundness of the PCF denotational semantics
 
@@ -488,7 +488,7 @@ be closed terms of type $A$. If $t$ evaluates to $v$ under big-step call-by-name
 then for every environment $\eta$ of the empty context, the denotations of $t$ and $v$ at
 $\eta$ are equal.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.denote_eq`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-eq).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.denote_eq`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-eq).
 
 ## Closed PCF terms that evaluate to a numeral denote its value
 
@@ -497,7 +497,7 @@ term of the ground type of natural numbers and let $n$ be a natural number. If $
 to the numeral for $n$, then for every environment $\eta$ of the empty context, the denotation
 of $t$ at $\eta$ is the defined element $n$ of the flat domain of partial natural numbers.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.denote_numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-numeral).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Eval.denote_numeral`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Soundness.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-numeral).
 
 ## Formal approximation relation
 
@@ -510,14 +510,14 @@ $A \to B$, $f$ formally approximates $t$ when, for every element $d$ of the doma
 every closed term $s$ of type $A$ such that $d$ formally approximates $s$, the element $f(d)$
 formally approximates the application $t\,s$ at type $B$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Approx`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.Approx`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx).
 
 ## The least element approximates every term
 
 For every PCF type $A$ and every closed term
 $t$ of type $A$, the least element $\bot$ of the domain of $A$ formally approximates $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_bot`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-bot).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_bot`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-bot).
 
 ## Formal approximation is closed under suprema of chains
 
@@ -525,7 +525,7 @@ Let $A$ be a PCF type, $t$ a
 closed term of type $A$ and $(c_i)_{i \in \mathbb{N}}$ a chain in the domain of $A$. If every
 $c_i$ formally approximates $t$, then the supremum $\bigsqcup_i c_i$ formally approximates $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_ωSup`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-sup).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_ωSup`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-sup).
 
 ## Formal approximation is closed under head expansion
 
@@ -534,7 +534,7 @@ $t'$ be closed terms of type $A$, and let $d$ be an element of the domain of $A$
 evaluates to every closed term $v$ to which $t'$ evaluates, and $d$ formally approximates $t'$,
 then $d$ formally approximates $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_expand`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-expand).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_expand`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-expand).
 
 ## Fundamental lemma of formal approximation
 
@@ -546,7 +546,7 @@ $\sigma(x)$ at type $B$. Then the denotation of $t$ in $\eta$ formally approxima
 the closed term $\sigma(t)$ obtained by simultaneously substituting $\sigma(x)$ for each
 variable $x$ in $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_denote`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-denote).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.approx_denote`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#approx-denote).
 
 ## Computational adequacy for PCF
 
@@ -554,7 +554,7 @@ Let $t$ be a closed PCF term of ground type
 $\mathsf{nat}$ and let $n$ be a natural number. If the denotation of $t$ in the empty environment
 is defined with value $n$, then $t$ evaluates to the numeral $\mathsf{succ}^n(\mathsf{zero})$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.adequacy`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#adequacy).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.adequacy`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#adequacy).
 
 ## Evaluation to a numeral agrees with the denotation
 
@@ -562,7 +562,7 @@ For every natural number $n$, a
 closed PCF term $t$ of ground type evaluates to the numeral $n$ if and only if the denotation
 of $t$ is the defined value $n$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.eval_numeral_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-numeral-iff).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.eval_numeral_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#eval-numeral-iff).
 
 ## Termination agrees with definedness of the denotation
 
@@ -570,7 +570,7 @@ A closed PCF term $t$ of ground
 type evaluates to some term if and only if its denotation, an element of the flat domain of
 partial natural numbers, is defined.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.terminates_iff_dom`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#terminates-iff-dom).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.terminates_iff_dom`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/Adequacy.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#terminates-iff-dom).
 
 ## One-hole contexts of PCF
 
@@ -590,7 +590,7 @@ applied to a context to $(\Delta, B \to B)$ is a context to $(\Delta, B)$. Final
 type-preserving renaming of variables from $\Delta$ to $\Delta'$ applied to a context to
 $(\Delta, B)$ is a context to $(\Delta', B)$, which renames the term the inner context builds.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx).
 
 ## Plugging a term into a PCF context
 
@@ -603,7 +603,7 @@ a subcontext $C'$ and fixed terms, $C[t]$ applies the same former to $C'[t]$ and
 and if $C$ is a subcontext $C'$ carried along a renaming $\rho$, then $C[t]$ is $C'[t]$ renamed
 by $\rho$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.plug`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#plug).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.plug`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#plug).
 
 ## Composition of PCF contexts
 
@@ -614,7 +614,7 @@ and which produces terms of type $B$ in typing context $\Delta$. The composite $
 context obtained from $C$ by replacing its hole by $D$; its hole takes terms of type $A$ in
 typing context $\Gamma$, and it produces terms of type $B'$ in typing context $\Theta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.comp`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#comp).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.comp`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#comp).
 
 ## Plugging into a composite PCF context
 
@@ -625,7 +625,7 @@ $K[t]$ for the term obtained by plugging a term $t$ into the hole of a context $
 $D \circ E$ for the context obtained by replacing the hole of $D$ by $E$. Then
 $(D \circ E)[t] = D[E[t]]$ for every term $t$ of type $A$ in context $\Gamma$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.plug_comp`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#plug-comp).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.plug_comp`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#plug-comp).
 
 ## Associativity of PCF context composition
 
@@ -636,7 +636,7 @@ and $C_3$ such that the hole of $C_1$ takes terms of the type and typing context
 produces, and the hole of $C_2$ takes terms of the type and typing context that $C_3$ produces,
 composition is associative: $(C_1 \circ C_2) \circ C_3 = C_1 \circ (C_2 \circ C_3)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.comp_assoc`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#comp-assoc).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Ctx.comp_assoc`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#comp-assoc).
 
 ## Contextual equivalence in PCF
 
@@ -647,7 +647,7 @@ $A$ in typing context $\Gamma$ and which produces closed terms of the ground typ
 numbers, and for every natural number $n$, $C[t]$ evaluates to the numeral $n$ if and only if
 $C[u]$ evaluates to the numeral $n$. Evaluation is big-step call-by-name evaluation.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv).
 
 ## Equal denotations are preserved by plugging into PCF contexts
 
@@ -656,7 +656,7 @@ terms of type $A$ in typing context $\Gamma$ with the same denotation, and let $
 context whose hole takes terms of type $A$ in typing context $\Gamma$. Then the terms $C[t]$ and
 $C[u]$ obtained by plugging $t$ and $u$ into the hole of $C$ have the same denotation.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-plug-congr).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-plug-congr).
 
 ## Equal denotations imply contextual equivalence in PCF
 
@@ -664,7 +664,7 @@ If two PCF terms $t$ and $u$ of
 the same type in the same typing context have the same denotation, as continuous maps from
 environments to the domain of their type, then $t$ and $u$ are contextually equivalent.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_of_denote_eq`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv-of-denote-eq).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_of_denote_eq`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv-of-denote-eq).
 
 ## Contextual approximation in PCF
 
@@ -675,7 +675,7 @@ terms of type $A$ in typing context $\Gamma$ and which produces closed terms of 
 of natural numbers, and for every natural number $n$: if $C[t]$ evaluates to the numeral $n$,
 then $C[u]$ evaluates to the numeral $n$. Evaluation is big-step call-by-name evaluation.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-approx).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox`, a definition declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-approx).
 
 ## Plugging into a PCF context is monotone in the denotation
 
@@ -687,7 +687,7 @@ in an environment $\eta$, ordered in the domain of its type. If
 $[\![ t ]\!]\,\eta \le [\![ u ]\!]\,\eta$ for every environment $\eta$ for $\Gamma$, then
 $[\![ C[t] ]\!]\,\eta \le [\![ C[u] ]\!]\,\eta$ for every environment $\eta$ for $\Delta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_mono`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-plug-mono).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.denote_plug_mono`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#denote-plug-mono).
 
 ## Denotational approximation implies contextual approximation in PCF
 
@@ -696,14 +696,14 @@ PCF terms of type $A$ in typing context $\Gamma$, and write $[\![s]\!]$ for the 
 term $s$. If $[\![t]\!]\eta \le [\![u]\!]\eta$ in the domain denoted by $A$ for every environment
 $\eta$ for $\Gamma$, then $t$ contextually approximates $u$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxApprox_of_denote_le`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-approx-of-denote-le).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxApprox_of_denote_le`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-approx-of-denote-le).
 
 ## Contextual equivalence in PCF is reflexive
 
 Every term $t$ of type $A$ in context $\Gamma$
 is contextually equivalent to itself.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.refl`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#refl).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.refl`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#refl).
 
 ## Contextual equivalence in PCF is a congruence
 
@@ -712,14 +712,14 @@ typing context $\Gamma$. If $t$ and $u$ are contextually equivalent, then for ev
 context $D$ whose hole takes terms of type $A$ in typing context $\Gamma$, the terms $D[t]$ and
 $D[u]$ obtained by plugging $t$ and $u$ into the hole of $D$ are contextually equivalent.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#congr).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxEquiv.congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#congr).
 
 ## Contextual approximation in PCF is reflexive
 
 Every term $t$ of type $A$ in context
 $\Gamma$ contextually approximates itself.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox.refl`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#refl-2).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.CtxApprox.refl`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#refl-2).
 
 ## Contextual equivalence is mutual contextual approximation in PCF
 
@@ -727,7 +727,7 @@ PCF terms $t$ and $u$
 of the same type in the same typing context are contextually equivalent if and only if $t$
 contextually approximates $u$ and $u$ contextually approximates $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_iff_ctxApprox`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv-iff-ctx-approx).
+Formalized by `Cslib.Languages.LambdaCalculus.PCF.Tm.ctxEquiv_iff_ctxApprox`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/PCF/ContextualEquivalence.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html#ctx-equiv-iff-ctx-approx).
 
 ## Depends on
 
@@ -736,4 +736,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: PCF and computational adequacy](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/programming-language-semantics/pcf-and-computational-adequacy)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Domino tilings and Fibonacci–Pell products
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html).
 
 ## Factorization of the domino tiling sequence
 
@@ -25,7 +25,7 @@ of $P_5 \times P_{2n-2}$ (OEIS A003775) and $g_n$ is OEIS A004253.
 
 - James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, second Theorem (`d_n = g_n h_n`), lines 153–154, with `d` defined at lines 146–150 and `g` at line 164, https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.tex
 
-Formalized by `MetaMathlibExt.domino_tiling_sequence_factorization`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/DominoTilingSequenceFactorization.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/DominoTilingSequenceFactorization.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#domino-tiling-sequence-factorization).
+Formalized by `MetaMathlibExt.domino_tiling_sequence_factorization`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/DominoTilingSequenceFactorization.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/DominoTilingSequenceFactorization.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#domino-tiling-sequence-factorization).
 
 ## Sellers' domino tiling theorem
 
@@ -35,7 +35,7 @@ the number of perfect matchings (domino tilings) of the Cartesian product $W_4 \
 equals $f_n p_n$, where $f_n$ is the $n$-th Fibonacci number ($f_0 = 0$, $f_1 = 1$) and $p_n$ is
 the $n$-th Pell number ($p_0 = 0$, $p_1 = 1$, $p_{k+2} = 2 p_{k+1} + p_k$).
 
-Formalized by `MetaMathlibExt.boxProd_tiling_card_eq_fib_mul_pellNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean, line 1748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean#L1748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#box-prod-tiling-card-eq-fib-mul-pell-num).
+Formalized by `MetaMathlibExt.boxProd_tiling_card_eq_fib_mul_pellNumber`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean, line 1748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean#L1748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#box-prod-tiling-card-eq-fib-mul-pell-num).
 
 ## Sellers' domino tiling theorem, recursive Pell form
 
@@ -53,7 +53,7 @@ $c_n$ for this number of tilings; its values $c_2 = 2$, $c_3 = 10$, $c_4 = 36$ m
 
 - James A. Sellers, "Domino Tilings and Products of Fibonacci and Pell Numbers," Journal of Integer Sequences 5 (2002), Article 02.1.2, Theorem, lines 105–108, https://cs.uwaterloo.ca/journals/JIS/VOL5/Sellers/sellers4.tex
 
-Formalized by `MetaMathlibExt.boxProd_tiling_card_eq_fib_mul_pell`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean, line 1798](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean#L1798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#box-prod-tiling-card-eq-fib-mul-pell).
+Formalized by `MetaMathlibExt.boxProd_tiling_card_eq_fib_mul_pell`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean, line 1798](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/W4PathDominoTilings.lean#L1798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html#box-prod-tiling-card-eq-fib-mul-pell).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Domino tilings and Fibonacci–Pell products](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/domino-tilings-and-fibonacci-pell-products)

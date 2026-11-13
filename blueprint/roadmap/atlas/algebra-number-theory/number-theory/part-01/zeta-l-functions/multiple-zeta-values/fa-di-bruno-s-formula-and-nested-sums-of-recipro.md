@@ -7,7 +7,7 @@ statement: formalized
 
 # Faà di Bruno's formula and nested sums of reciprocal squares
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html).
 
 ## Faà di Bruno's formula for Taylor coefficients
 
@@ -27,7 +27,7 @@ where the sum runs over all partitions $\pi$ of $n$.
 
 - Serge Iovleff, *About Some Nested Sums of Reciprocal Squared Numbers*, INTEGERS 26 (2026), Article A114, Corollary 1 (quoted as Corollary 4 from the paper's reference [8]).
 
-Stated but not proved: `MetaMathlibExt.taylorCoeff_comp_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#taylor-coeff-comp-eq-sum-partitions).
+Stated but not proved: `MetaMathlibExt.taylorCoeff_comp_eq_sum_partitions` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#taylor-coeff-comp-eq-sum-partitions).
 
 ## Nested sums of reciprocal odd squares
 
@@ -49,7 +49,7 @@ $(\pi/4)\,\beta(1) = \pi^2/16$, and at $k = 1$ it is $\pi^2/8$ but $(\pi/4)\,\be
 
 - Serge Iovleff, *About Some Nested Sums of Reciprocal Squared Numbers*, INTEGERS 26 (2026), Article A114, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tsum_weaklyDecreasing_prod_inv_odd_sq_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#tsum-weakly-decreasing-prod-inv-odd-sq-e).
+Stated but not proved: `MetaMathlibExt.tsum_weaklyDecreasing_prod_inv_odd_sq_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#tsum-weakly-decreasing-prod-inv-odd-sq-e).
 
 ## Nested sums of reciprocal squares
 
@@ -72,7 +72,7 @@ at $k = 0$ all three expressions equal $1$, since $\zeta(0) = -1/2$.
 
 - Serge Iovleff, *About Some Nested Sums of Reciprocal Squared Numbers*, INTEGERS 26 (2026), Article A114, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.starValue_replicate_two_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#star-value-replicate-two-eq).
+Stated but not proved: `MetaMathlibExt.starValue_replicate_two_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#star-value-replicate-two-eq).
 
 ## Strictly nested sums of reciprocal odd squares
 
@@ -90,7 +90,7 @@ The source states the identity for $k > 0$; the case $k = 0$ is included here.
 
 - Serge Iovleff, *About Some Nested Sums of Reciprocal Squared Numbers*, INTEGERS 26 (2026), Article A114, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.tsum_strictDecreasing_prod_inv_odd_sq_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#tsum-strict-decreasing-prod-inv-odd-sq-e).
+Stated but not proved: `MetaMathlibExt.tsum_strictDecreasing_prod_inv_odd_sq_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/TaylorCoefficientCompositionWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html#tsum-strict-decreasing-prod-inv-odd-sq-e).
 
 ## Depends on
 
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Faà di Bruno's formula and nested sums of reciprocal squares](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/fa-di-bruno-s-formula-and-nested-sums-of-recipro)

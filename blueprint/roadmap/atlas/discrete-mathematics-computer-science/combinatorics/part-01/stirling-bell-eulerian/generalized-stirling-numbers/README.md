@@ -1,6 +1,6 @@
 # Generalized Stirling numbers
 
-121 results of ATLAS's vault, 104 proved and 17 stated but not proved, in this branch's topics.
+121 results of ATLAS's vault, 114 proved and 7 stated but not proved, in this branch's topics.
 
 Deformations and generalizations of Stirling numbers: r-Stirling, associated Stirling, Hsu–Shiue, Jacobi–Stirling, Legendre–Stirling, meromorphic and degenerate Stirling numbers, α-Stirling and generalized Stirling matrices, and (q,r)-Whitney and Dowling numbers.
 

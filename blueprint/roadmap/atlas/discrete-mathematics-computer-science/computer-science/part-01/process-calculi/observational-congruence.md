@@ -8,7 +8,7 @@ proof: formalized
 
 # Observational congruence
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html).
 
 ## Rooted weak transition
 
@@ -19,7 +19,7 @@ $s_1 \xrightarrow{\mu} s_2$ is a transition, and $s_2$ reaches $t$ by zero or mo
 $\tau$-transitions. In particular, a rooted weak transition with label $\tau$ contains at least
 one actual $\tau$-transition.
 
-Formalized by `Cslib.LTS.RootedWeakStep`, a definition declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step).
+Formalized by `Cslib.LTS.RootedWeakStep`, a definition declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step).
 
 ## Transitions are rooted weak transitions
 
@@ -27,7 +27,7 @@ In a labelled transition system with a silent
 label $\tau$, every transition $s \xrightarrow{\mu} t$ is a rooted weak transition from $s$ to $t$
 with label $\mu$.
 
-Formalized by `Cslib.LTS.rootedWeakStep_of_tr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step-of-tr).
+Formalized by `Cslib.LTS.rootedWeakStep_of_tr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step-of-tr).
 
 ## Rooted weak transitions are weak transitions
 
@@ -37,7 +37,7 @@ transition from $s$ to $t$ with label $\mu$, where a weak transition with label 
 the trivial step from a state to itself with label $\tau$, or a transition with label $\mu$
 preceded and followed by zero or more $\tau$-transitions.
 
-Formalized by `Cslib.LTS.RootedWeakStep.toSTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#to-str).
+Formalized by `Cslib.LTS.RootedWeakStep.toSTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#to-str).
 
 ## Silent steps before a rooted weak transition
 
@@ -46,7 +46,7 @@ silent label $\tau$, if $s$ reaches $m$ by zero or more $\tau$-transitions and t
 weak transition from $m$ to $t$ with label $\mu$, then there is a rooted weak transition from $s$
 to $t$ with label $\mu$.
 
-Formalized by `Cslib.LTS.τSTr.rootedWeakStep_trans`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step-trans).
+Formalized by `Cslib.LTS.τSTr.rootedWeakStep_trans`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weak-step-trans).
 
 ## Appending silent steps to a rooted weak transition
 
@@ -55,7 +55,7 @@ silent action $\tau$, if there is a rooted weak transition from $s$ to $m$ with 
 is reachable from $m$ by zero or more $\tau$-transitions, then there is a rooted weak transition
 from $s$ to $t$ with label $a$.
 
-Formalized by `Cslib.LTS.RootedWeakStep.trans_τSTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans-str).
+Formalized by `Cslib.LTS.RootedWeakStep.trans_τSTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans-str).
 
 ## A rooted silent step followed by a weak transition is rooted
 
@@ -69,7 +69,7 @@ preceded and followed by zero or more $\tau$-transitions.
 The initial rooted transition supplies the required actual silent step even when the following
 weak transition is reflexive.
 
-Formalized by `Cslib.LTS.RootedWeakStep.trans_sTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans-s-tr).
+Formalized by `Cslib.LTS.RootedWeakStep.trans_sTr`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans-s-tr).
 
 ## Rooted observation congruence
 
@@ -80,7 +80,7 @@ with label $\mu$ such that $p'$ and $q'$ are weakly bisimilar, and every transit
 $q \xrightarrow{\mu} q'$ is matched by a rooted weak transition from $p$ to some $p'$ with label
 $\mu$ such that $p'$ and $q'$ are weakly bisimilar.
 
-Formalized by `Cslib.LTS.RootedWeaklyBisimilar`, a definition declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weakly-bisimilar).
+Formalized by `Cslib.LTS.RootedWeaklyBisimilar`, a definition declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#rooted-weakly-bisimilar).
 
 ## Observation congruence matches rooted weak transitions
 
@@ -89,7 +89,7 @@ with a silent label $\tau$, if $p$ and $q$ are rooted weakly bisimilar and there
 transition from $p$ to $p'$ with label $\mu$, then there is a state $q'$ with a rooted weak
 transition from $q$ to $q'$ with label $\mu$ such that $p'$ and $q'$ are weakly bisimilar.
 
-Formalized by `Cslib.LTS.RootedWeaklyBisimilar.match_rootedLeft`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#match-rooted-left).
+Formalized by `Cslib.LTS.RootedWeaklyBisimilar.match_rootedLeft`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#match-rooted-left).
 
 ## Transitivity of rooted observational congruence
 
@@ -97,7 +97,7 @@ In a labelled transition system with
 silent action $\tau$, if $p$ is rooted observationally congruent to $q$ and $q$ is rooted
 observationally congruent to $r$, then $p$ is rooted observationally congruent to $r$.
 
-Formalized by `Cslib.LTS.RootedWeaklyBisimilar.trans`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans).
+Formalized by `Cslib.LTS.RootedWeaklyBisimilar.trans`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#trans).
 
 ## Observation congruence is an equivalence relation
 
@@ -105,21 +105,21 @@ In every labelled transition system
 with a silent label $\tau$, rooted weak bisimilarity (observation congruence) is reflexive,
 symmetric and transitive.
 
-Formalized by `Cslib.LTS.observationCongruent_equivalence`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#observation-congruent-equivalence).
+Formalized by `Cslib.LTS.observationCongruent_equivalence`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#observation-congruent-equivalence).
 
 ## Strong bisimilarity implies observation congruence
 
 In a labelled transition system with
 a silent label $\tau$, any two strongly bisimilar states are rooted weakly bisimilar.
 
-Formalized by `Cslib.LTS.observationCongruent_of_bisimilar`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#observation-congruent-of-bisimilar).
+Formalized by `Cslib.LTS.observationCongruent_of_bisimilar`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#observation-congruent-of-bisimilar).
 
 ## Observation congruence implies weak bisimilarity
 
 In a labelled transition system with
 a silent label $\tau$, any two rooted weakly bisimilar states are weakly bisimilar.
 
-Formalized by `Cslib.LTS.RootedWeaklyBisimilar.to_homWeakBisimilarity`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#to-hom-weak-bisimilarity).
+Formalized by `Cslib.LTS.RootedWeaklyBisimilar.to_homWeakBisimilarity`, a theorem declared in [CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Foundations/Semantics/LTS/ObservationCongruence.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html#to-hom-weak-bisimilarity).
 
 ## Depends on
 
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Observational congruence](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/process-calculi/observational-congruence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/process-calculi/observational-congruence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/process-calculi/observational-congruence)

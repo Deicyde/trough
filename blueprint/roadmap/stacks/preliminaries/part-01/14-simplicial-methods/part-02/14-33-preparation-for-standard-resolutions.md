@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.33 Preparation for standard resolutions
 
-Section 14.33 of the Stacks Project, [Tag 0G5L](https://stacks.math.columbia.edu/tag/0G5L). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.33 of the Stacks Project, [Tag 0G5L](https://stacks.math.columbia.edu/tag/0G5L). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G5M, an example
 
 [Tag 0G5M](https://stacks.math.columbia.edu/tag/0G5M) in the Stacks Project.
 
-**`CategoryTheory.Functor.iterate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L97).
+**`CategoryTheory.Functor.iterate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L97).
 
 > **Stacks 0G5M**.
 > The `n`-fold composite `Y ∘ … ∘ Y` of an endofunctor `Y : C ⥤ C` with itself, with
@@ -27,7 +27,7 @@ Section 14.33 of the Stacks Project, [Tag 0G5L](https://stacks.math.columbia.edu
 public def iterate (Y : C ⥤ C) : ℕ → C ⥤ C
 ```
 
-**`CategoryTheory.Functor.iterate_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L120).
+**`CategoryTheory.Functor.iterate_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L120).
 
 > **Stacks 0G5M**.
 > The powers of an endofunctor are additive: `Y^{m+n} = Y^m ∘ Y^n` in `⋙`-order, i.e.
@@ -39,7 +39,7 @@ public theorem iterate_add (Y : C ⥤ C) (m n : ℕ) :
     Y.iterate (m + n) = Y.iterate m ⋙ Y.iterate n
 ```
 
-**`CategoryTheory.Godement.face`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L138).
+**`CategoryTheory.Godement.face`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L138).
 
 > **Stacks 0G5M**.
 > The face `d^n_j : X_n ⟶ X_{n-1}` attached to a transformation `d : Y ⟶ 𝟭 C`, for `n ≥ 0` and
@@ -54,7 +54,7 @@ public def face (d : Y ⟶ 𝟭 C) :
     (n : ℕ) → Fin (n + 1) → (Y.iterate (n + 1) ⟶ Y.iterate n)
 ```
 
-**`CategoryTheory.Godement.degeneracy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L152).
+**`CategoryTheory.Godement.degeneracy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L152).
 
 > **Stacks 0G5M**.
 > The degeneracy `s^n_j : X_n ⟶ X_{n+1}` attached to a transformation `s : Y ⟶ Y ⋙ Y`, for `n ≥ 0`
@@ -72,7 +72,7 @@ public def degeneracy (s : Y ⟶ Y ⋙ Y) :
 
 [Tag 0G5N](https://stacks.math.columbia.edu/tag/0G5N) in the Stacks Project.
 
-**`CategoryTheory.Godement.exists_augmented_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L612).
+**`CategoryTheory.Godement.exists_augmented_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L612).
 
 > **Stacks 0G5N**.
 > Let `Y : C ⥤ C` be an endofunctor with transformations `d : Y ⟶ 𝟭 C` and `s : Y ⟶ Y ⋙ Y` satisfying
@@ -101,7 +101,7 @@ public theorem exists_augmented_standardResolution {C : Type u} [Category.{v} C]
 
 [Tag 0G5P](https://stacks.math.columbia.edu/tag/0G5P) in the Stacks Project.
 
-**`CategoryTheory.Godement.exists_augmented_standardResolution_whisker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L698).
+**`CategoryTheory.Godement.exists_augmented_standardResolution_whisker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L698).
 
 > **Stacks 0G5P**.
 > Let `Y : C ⥤ C` be an endofunctor with transformations `d : Y ⟶ 𝟭 C` and `s : Y ⟶ Y ⋙ Y` satisfying
@@ -139,7 +139,7 @@ public theorem exists_augmented_standardResolution_whisker
 
 [Tag 0G5Q](https://stacks.math.columbia.edu/tag/0G5Q) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Augmented.exists_section_of_comp_hom_app_zero_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L768).
+**`CategoryTheory.SimplicialObject.Augmented.exists_section_of_comp_hom_app_zero_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Godement.lean#L768).
 
 > **Stacks 0G5Q**.
 > Let `X` be an augmented simplicial object of `D`, with augmentation
@@ -160,7 +160,7 @@ public theorem exists_section_of_comp_hom_app_zero_eq_id {D : Type u} [Category.
 
 [Tag 0G5R](https://stacks.math.columbia.edu/tag/0G5R) in the Stacks Project.
 
-**`CategoryTheory.Godement.exists_homotopy_hcomp_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean#L657).
+**`CategoryTheory.Godement.exists_homotopy_hcomp_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean#L657).
 
 > **Stacks 0G5R**.
 > Let `Y : C ⥤ C` be an endofunctor with transformations `d : Y ⟶ 𝟭 C` and `s : Y ⟶ Y ⋙ Y`, let `F`,
@@ -230,7 +230,7 @@ public theorem exists_homotopy_hcomp_hcomp
 
 [Tag 0G5S](https://stacks.math.columbia.edu/tag/0G5S) in the Stacks Project.
 
-**`CategoryTheory.Godement.exists_homotopy_whiskerLeft_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean#L959).
+**`CategoryTheory.Godement.exists_homotopy_whiskerLeft_whiskerRight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean, line 959](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Whiskering.lean#L959).
 
 > **Stacks 0G5S**.
 > Let `Y : C ⥤ C` be an endofunctor with transformations `d : Y ⟶ 𝟭 C` and `s : Y ⟶ Y ⋙ Y`, and let
@@ -269,4 +269,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.33, Tag 0G5L](https://stacks.math.columbia.edu/tag/0G5L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

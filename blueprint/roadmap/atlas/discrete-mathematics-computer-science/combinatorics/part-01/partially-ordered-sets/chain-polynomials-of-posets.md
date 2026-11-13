@@ -7,7 +7,7 @@ statement: formalized
 
 # Chain polynomials of posets
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html).
 
 ## Chain polynomial
 
@@ -17,7 +17,7 @@ of whose elements are comparable; in particular $c_0(P) = 1$, counting the empty
 polynomial of $P$ is the polynomial $C(P, t) = \sum_{k \ge 0} c_k(P)\, t^k$ with integer
 coefficients.
 
-Formalized by `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.chainPolynomial`, a definition declared in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#chain-polynomial).
+Formalized by `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.chainPolynomial`, a definition declared in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#chain-polynomial).
 
 ## Stanley's Problem 20' on chain polynomials of distributive lattices
 
@@ -26,7 +26,7 @@ for every finite distributive lattice $L$, every complex root of the chain polyn
 real, where $C(L, t) = \sum_{k \ge 0} c_k(L)\, t^k$ and $c_k(L)$ is the number of $k$-element
 chains of $L$.
 
-Formalized by `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted`, a definition declared in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#distributive-lattice-chain-polynomial-re).
+Formalized by `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted`, a definition declared in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#distributive-lattice-chain-polynomial-re).
 
 ## Stanley's Problem 20' has a negative answer
 
@@ -46,7 +46,7 @@ have chain polynomials with non-real zeros.
 
 - R. P. Stanley, Positivity Problems and Conjectures in Algebraic Combinatorics (1999), Problem 20' (chain polynomial of a finite distributive lattice); resolution: Stanley, Positivity Problems (1999), text before Problem 20', citing F. Brenti, Mem. Amer. Math. Soc. 413 (1989), Conj. 3; J. R. Stembridge, Counterexamples to the poset conjectures of Neggers, Stanley, and Stembridge, Trans. Amer. Math. Soc. 359 (2007), 1115-1128; restated in C. A. Athanasiadis and K. Kalampogia-Evangelinou, Chain enumeration, partition lattices and polynomials with only real roots, arXiv:2205.03796, Introduction, Stanley: "When P is natural it can be shown [19, Conj. 3] that Problem 20 is equivalent to the following" (Problem 20', with L = J(P)); Stembridge, Introduction: naturally labeled posets on 17 vertices with non-real W-zeros; Athanasiadis–Kalampogia-Evangelinou: for finite distributive lattices the question is equivalent to the naturally labeled poset conjecture of Neggers, "finally disproved by Stembridge", https://arxiv.org/abs/2205.03796.
 
-Stated but not proved: `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#distributive-lattice-chain-polynomial-re-2).
+Stated but not proved: `MathlibExt.Combinatorics.DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.distributiveLatticeChainPolynomialRealRooted_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/DistributiveLatticeChainPolynomialAMR156Problem0021Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html#distributive-lattice-chain-polynomial-re-2).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chain polynomials of posets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/partially-ordered-sets/chain-polynomials-of-posets)

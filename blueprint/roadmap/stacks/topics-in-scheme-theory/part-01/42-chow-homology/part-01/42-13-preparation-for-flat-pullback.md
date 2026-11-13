@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.13 Preparation for flat pullback
 
-Section 42.13 of the Stacks Project, [Tag 02R7](https://stacks.math.columbia.edu/tag/02R7). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.13 of the Stacks Project, [Tag 02R7](https://stacks.math.columbia.edu/tag/02R7). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02R8, a lemma
 
 [Tag 02R8](https://stacks.math.columbia.edu/tag/02R8) in the Stacks Project.
 
-**`Stacks.Chow.dense_image_irreducibleComponent_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L147). The attribute's comment: “dominance of components”. References: EGA IV (2.3.4), “(iii), special case”; EGA IV (4.4.1), “special case”; SGA 7 VIII (5.2), “partial”.
+**`Stacks.Chow.dense_image_irreducibleComponent_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L147). The attribute's comment: “dominance of components”. References: EGA IV (2.3.4), “(iii), special case”; EGA IV (4.4.1), “special case”; SGA 7 VIII (5.2), “partial”.
 
 > **Stacks 02R8.** Every irreducible component of the scheme-theoretic inverse image of an
 > irreducible closed subscheme along a flat morphism dominates that subscheme: the inverse image
@@ -27,7 +27,7 @@ theorem dense_image_irreducibleComponent_pullback {X Y Z : Scheme.{u}} (f : X �
     closure ((pullback.snd f i).base '' (W : Set (pullback f i : Scheme.{u}))) = Set.univ
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L331). The attribute's comment: “dimension of the inverse image”.
+**`Stacks.Chow.schemeDeltaDimension_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L331). The attribute's comment: “dimension of the inverse image”.
 
 > **Stacks 02R8.** The scheme-theoretic inverse image of a closed subscheme `i : Z ⟶ Y` along
 > a flat morphism `f : X ⟶ Y` of relative dimension `r` has delta-dimension `dim_δ(Z) + r`, as
@@ -43,7 +43,7 @@ theorem schemeDeltaDimension_pullback_snd_comp (C : ChowSituation.{u}) {X Y Z : 
       schemeDeltaDimension C (i ≫ g) + ((r : ℤ) : EInt)
 ```
 
-**`Stacks.Chow.deltaDimension_irreducibleComponent_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L347). The attribute's comment: “dimension of components”.
+**`Stacks.Chow.deltaDimension_irreducibleComponent_pullback_snd_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimension.lean#L347). The attribute's comment: “dimension of components”.
 
 > **Stacks 02R8.** Over an irreducible closed subscheme `i : Z ⟶ Y`, every irreducible
 > component of the scheme-theoretic inverse image along a flat morphism `f : X ⟶ Y` of relative
@@ -62,7 +62,7 @@ theorem deltaDimension_irreducibleComponent_pullback_snd_comp (C : ChowSituation
           ⟨Set.univ, IrreducibleSpace.isIrreducible_univ Z, isClosed_univ⟩ + (r : ℤ)
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_pullback_snd_comp_eq_iSup_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean#L156). The attribute's comment: “corrected dimension formula: sup over the components of Z met by f⁻¹(Z)”.
+**`Stacks.Chow.schemeDeltaDimension_pullback_snd_comp_eq_iSup_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean#L156). The attribute's comment: “corrected dimension formula: sup over the components of Z met by f⁻¹(Z)”.
 
 > **Stacks 02R8**, the dimension formula for the inverse image, at the source's hypotheses.
 > The source asserts `dim_δ(f⁻¹(Z)) = dim_δ(Z) + r` for a closed subscheme `i : Z ⟶ Y` and a flat
@@ -88,7 +88,7 @@ theorem schemeDeltaDimension_pullback_snd_comp_eq_iSup_add (C : ChowSituation.{u
             EInt)) + ((r : ℤ) : EInt)
 ```
 
-**`Stacks.Chow.not_forall_schemeDeltaDimension_pullback_snd_comp_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean#L317). The attribute's comment: “the first claim is false as stated: f⁻¹(Z) nonempty does not suffice”.
+**`Stacks.Chow.not_forall_schemeDeltaDimension_pullback_snd_comp_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InverseImageDimensionCounterexample.lean#L317). The attribute's comment: “the first claim is false as stated: f⁻¹(Z) nonempty does not suffice”.
 
 > **Stacks 02R8**: the first claim, `dim_δ(f⁻¹(Z)) = dim_δ(Z) + r` for a closed subscheme
 > `Z ⊂ Y` provided only that `f⁻¹(Z)` is nonempty, is false. The counterexample is
@@ -113,7 +113,7 @@ theorem not_forall_schemeDeltaDimension_pullback_snd_comp_of_nonempty :
 
 Declarations registered for the tag:
 
-- [`LocallyFinite.preimage_continuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyFinite.preimage_continuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocallyFinitePreimage.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocallyFinitePreimage.lean#L41) (StacksFrontier): “the inverse image of a locally finite collection of subsets along a continuous map is locally finite”.
+- [`LocallyFinite.preimage_continuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyFinite.preimage_continuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocallyFinitePreimage.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/LocallyFinitePreimage.lean#L41) (StacksFrontier): “the inverse image of a locally finite collection of subsets along a continuous map is locally finite”.
 
 ## Depends on
 
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.13, Tag 02R7](https://stacks.math.columbia.edu/tag/02R7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Lambda calculus with references
 
-59 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html).
+59 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html).
 
 ## Types of the simply typed lambda calculus with references
 
@@ -18,7 +18,7 @@ $T ::= b \mid \mathsf{Unit} \mid T_1 \to T_2 \mid \mathsf{Ref}\,T$ with $b \in B
 the unit type, function types, and types $\mathsf{Ref}\,T$ of reference cells holding values of
 type $T$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Ty`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#ty).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Ty`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#ty).
 
 ## Terms of the simply typed lambda calculus with references
 
@@ -31,7 +31,7 @@ assignments $t_1 := t_2$.
 
 Store locations arise during evaluation, not in source programs.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#term).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#term).
 
 ## Values of the simply typed lambda calculus with references
 
@@ -39,7 +39,7 @@ A term is a value if and only
 if it is an abstraction $\lambda{:}T.\,t$, the unit value $\mathsf{unit}$, or a store location
 $l$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.Value`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#value).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.Value`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#value).
 
 ## Lifting a renaming under a binder in the lambda calculus with references
 
@@ -47,7 +47,7 @@ Given a
 renaming $\rho : \mathbb{N} \to \mathbb{N}$ of de Bruijn indices, its lift is the renaming that
 sends $0$ to $0$ and each $x + 1$ to $\rho(x) + 1$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.liftRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lift-ren).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.liftRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lift-ren).
 
 ## Renaming the variables of a term
 
@@ -58,7 +58,7 @@ each $x + 1$ to $\rho(x) + 1$), keeping the type annotation $T$; leaves the unit
 locations unchanged; and acts componentwise on applications, allocations, dereferences and
 assignments.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-2).
 
 ## Lifting a substitution under a binder
 
@@ -67,7 +67,7 @@ each de Bruijn index, its lift is the substitution that sends $0$ to the variabl
 $x + 1$ to the term $\sigma(x)$ renamed by $n \mapsto n + 1$, that is, with every free variable
 raised by one.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.liftSub`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lift-sub).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.liftSub`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lift-sub).
 
 ## Parallel substitution in a term
 
@@ -78,7 +78,7 @@ $0$ to the variable $0$ and each $x + 1$ to $\sigma(x)$ with every free variable
 keeping the type annotation $T$; leaves the unit value and store locations unchanged; and acts
 componentwise on applications, allocations, dereferences and assignments.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-2).
 
 ## Single-variable substitution at index zero
 
@@ -86,7 +86,7 @@ For a term $s$, the single-variable
 substitution for $s$ sends the de Bruijn index $0$ to $s$ and each index $x + 1$ to the
 variable $x$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.singleSub`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#single-sub).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.singleSub`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#single-sub).
 
 ## Substitution of a term for variable zero
 
@@ -99,14 +99,14 @@ every other free variable of $t$ is lowered by one.
 This is the substitution of β-reduction, written $\uparrow^{-1}([0 \mapsto \uparrow^1 s]\,t)$ in
 TAPL Section 6.3; TAPL's $[0 \mapsto s]\,t$ alone does not lower the other free variables.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.instantiate`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.instantiate`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Syntax.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Syntax.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate-2).
 
 ## Store
 
 A store $\mu$ is a finite list of terms; each location $l$ less than the length of
 $\mu$ holds the term $\mu[l]$, the entry of $\mu$ at index $l$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Store`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#store).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Store`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#store).
 
 ## One-step evaluation with references
 
@@ -128,7 +128,7 @@ $\mu'$ is $\mu$ with its entry at $l$ replaced by $v$.
 
 - TAPL Figure 13-1, with each fresh location allocated at the end of the store.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Step`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#step).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Step`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#step).
 
 ## Multi-step evaluation with references
 
@@ -136,14 +136,14 @@ The relation $t \mid \mu \to^* t' \mid \mu'$ holds
 when the configuration $(t, \mu)$ reaches $(t', \mu')$ in zero or more evaluation steps; that is,
 it is the reflexive-transitive closure of one-step evaluation on pairs of a term and a store.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Steps`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#steps).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Steps`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#steps).
 
 ## Values do not step
 
 If $v$ is a value, then there are no stores $\mu$, $\mu'$ and term $t'$
 such that the configuration $(v, \mu)$ steps to $(t', \mu')$: values are normal forms.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Step.not_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#not-of-value).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Step.not_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#not-of-value).
 
 ## Determinism of evaluation with references
 
@@ -154,7 +154,7 @@ This relies on allocating each fresh location at the end of the store, at the in
 length of $\mu$; with TAPL's arbitrary choice of fresh location only the result up to renaming of
 locations is unique.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Step.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#deterministic).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Step.deterministic`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Semantics.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Semantics.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#deterministic).
 
 ## Renaming respects pointwise equality
 
@@ -163,7 +163,7 @@ renamings of de Bruijn variables with $\rho(x) = \rho'(x)$ for every $x \in \mat
 every term $t$ of the simply typed lambda calculus with references, renaming $t$ by $\rho$ gives
 the same term as renaming $t$ by $\rho'$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-congr).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-congr).
 
 ## Renaming by the identity
 
@@ -171,7 +171,7 @@ For every term $t$ of the simply typed lambda calculus with
 references, renaming the de Bruijn variables of $t$ by the identity map of $\mathbb{N}$ gives
 back $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-id).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-id).
 
 ## Composition of renamings
 
@@ -180,7 +180,7 @@ de Bruijn variables and every term $t$ of the simply typed lambda calculus with 
 renaming $t$ by $\rho$ and then renaming the result by $\rho'$ gives the same term as renaming $t$
 by the composite $\rho' \circ \rho$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-rename).
 
 ## Substitution respects pointwise equality
 
@@ -189,7 +189,7 @@ each sending every de Bruijn index to a term of the simply typed lambda calculus
 with $\sigma(x) = \sigma'(x)$ for every $x \in \mathbb{N}$. Then for every term $t$, applying
 $\sigma$ to $t$ gives the same term as applying $\sigma'$ to $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-congr).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_congr`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-congr).
 
 ## Substitution by variables is the identity
 
@@ -197,7 +197,7 @@ For every term $t$ of the simply typed lambda
 calculus with references, applying the parallel substitution that sends each de Bruijn index $x$
 to the variable term $x$ gives back $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-id).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-id).
 
 ## Renaming then substituting
 
@@ -206,7 +206,7 @@ Bruijn variables, $\sigma$ a parallel substitution sending each index to a term 
 typed lambda calculus with references, and $t$ a term. Renaming $t$ by $\rho$ and then applying
 $\sigma$ gives the same term as applying the substitution $\sigma \circ \rho$ to $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-rename).
 
 ## Substituting then renaming
 
@@ -216,7 +216,7 @@ typed lambda calculus with references, and $t$ a term. Applying $\sigma$ to $t$ 
 the result by $\rho$ gives the same term as applying to $t$ the substitution that sends each
 index $x$ to the renaming of $\sigma(x)$ by $\rho$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.rename_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename-subst).
 
 ## Composition of substitutions in the lambda calculus with references
 
@@ -226,7 +226,7 @@ lambda calculus with references, and every term $t$, applying $\sigma$ to $t$ an
 the result gives the same term as applying to $t$ the substitution that sends each index $x$ to
 the result of applying $\tau$ to $\sigma(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.subst_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst-subst).
 
 ## Instantiating a shifted term
 
@@ -235,7 +235,7 @@ with references, shift every free de Bruijn variable of $t$ up by one (rename by
 $x \mapsto x + 1$), then instantiate the result with $s$, replacing variable $0$ by $s$ and
 lowering every other variable $x + 1$ to $x$. The outcome is $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.instantiate_rename_succ`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate-rename-succ).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.instantiate_rename_succ`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Substitution.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Substitution.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate-rename-succ).
 
 ## Typing judgment for the lambda calculus with references
 
@@ -251,7 +251,7 @@ location $l$ has type $\mathrm{Ref}\, T$ if $S$ assigns $T$ to $l$. If $t : T$, 
 $\mathrm{ref}\, t : \mathrm{Ref}\, T$. If $t : \mathrm{Ref}\, T$, then $!t : T$. If
 $t_1 : \mathrm{Ref}\, T$ and $t_2 : T$, then $t_1 := t_2$ has type $\mathrm{Unit}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#has-type).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#has-type).
 
 ## Well-typed stores
 
@@ -267,7 +267,7 @@ Stores here are lists of terms rather than of values, so each entry is required 
 
 - TAPL Definition 13.5.1.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#store-typed).
+Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#store-typed).
 
 ## Well-typed stores hold a typed value at every location
 
@@ -277,7 +277,7 @@ the contents of location $l$) that is well typed, $\Gamma \mid S \vdash \mu$. If
 type $T$ to location $l$, then $\mu$ has an entry $v$ at location $l$, $v$ is a value, and
 $\Gamma \mid S \vdash v : T$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.exists_of_getElem?`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#exists-of-get-elem).
+Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.exists_of_getElem?`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#exists-of-get-elem).
 
 ## Canonical forms for function types
 
@@ -285,7 +285,7 @@ For every context $\Gamma$ and store typing $S$, if
 $v$ is a value and $\Gamma \mid S \vdash v : T_1 \to T_2$, then $v$ is an abstraction
 $\lambda{:}T_1.\, t$ with parameter type $T_1$, for some body $t$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.lam_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lam-of-value).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.lam_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#lam-of-value).
 
 ## Canonical forms for reference types
 
@@ -293,28 +293,28 @@ For every context $\Gamma$ and store typing $S$, if
 $v$ is a value and $\Gamma \mid S \vdash v : \mathrm{Ref}\, T$, then $v$ is a location $l$ to
 which $S$ assigns type $T$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.loc_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#loc-of-value).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.loc_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#loc-of-value).
 
 ## Canonical forms for the unit type
 
 For every context $\Gamma$ and store typing $S$, if
 $v$ is a value and $\Gamma \mid S \vdash v : \mathrm{Unit}$, then $v = \mathtt{unit}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.unit_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#unit-of-value).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.unit_of_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#unit-of-value).
 
 ## No value has a base type
 
 For every context $\Gamma$, store typing $S$ and base type
 $b$, there is no value $v$ with $\Gamma \mid S \vdash v : b$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.not_value_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#not-value-base).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.not_value_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Typing.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Typing.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#not-value-base).
 
 ## The identity on Unit
 
 The identity function $\lambda x{:}\mathrm{Unit}.\ x$ on the
 unit type.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.idU`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#id-u).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.idU`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#id-u).
 
 ## The recursive function of Landin's knot, with the cell free
 
@@ -323,7 +323,7 @@ $\lambda x{:}\mathrm{Unit}.\ (!r)\,x$, which applies the contents of the referen
 argument. Here $r$ is a free variable, de Bruijn index $1$ under the binder $\lambda x$; in
 Landin's knot it is bound by the outer $\lambda r$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.body`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#body).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.body`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#body).
 
 ## Landin's knot
 
@@ -341,7 +341,7 @@ It allocates a cell $r$ holding the identity on $\mathrm{Unit}$, overwrites it w
 calls whatever $r$ holds, and then calls the contents of $r$ on $\mathrm{unit}$: a recursive knot
 tied through the store.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot).
 
 ## The stored recursive function of Landin's knot
 
@@ -351,7 +351,7 @@ $\ell_0 = 0$ to its argument.
 
 It is the function Landin's knot writes into location $0$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.body₀`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#body-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.body₀`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#body-2).
 
 ## Cycle term of Landin's knot
 
@@ -361,7 +361,7 @@ the store location $\ell_0$ (location $0$), applied to the unit value.
 When $\ell_0$ holds $b_0 = \lambda x{:}\mathrm{Unit}.\,(!\ell_0)\,x$, this term steps to
 $b_0\ \mathrm{unit}$, which steps back to it; these are the two configurations of the cycle.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.loopA`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#loop-a).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.loopA`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#loop-a).
 
 ## The knot after allocation
 
@@ -371,7 +371,7 @@ $(\lambda r{:}\mathrm{Ref}\,(\mathrm{Unit}\to\mathrm{Unit}).\ (\lambda y{:}\math
 location $0$: Landin's knot with its allocation $\mathrm{ref}\,(\lambda x{:}\mathrm{Unit}.\ x)$
 replaced by $\ell_0$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.c₁`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#c).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.c₁`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#c).
 
 ## The first four steps of Landin's knot
 
@@ -387,7 +387,7 @@ $[\mathrm{id}]$; that term with store $[\mathrm{id}]$ steps to
 $(\lambda y{:}\mathrm{Unit}.\ (!\ell_0)\,\mathrm{unit})\ \mathrm{unit}$ with store $[b_0]$; and
 that term with store $[b_0]$ steps to $(!\ell_0)\,\mathrm{unit}$ with store $[b_0]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot_prefix`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-prefix).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot_prefix`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-prefix).
 
 ## The cycle of Landin's knot
 
@@ -397,7 +397,7 @@ $\ell_0$, is $b_0$. In one call-by-value step, $(!\ell_0)\,\mathrm{unit}$ with s
 to $b_0\,\mathrm{unit}$ with store $[b_0]$, and in one further step $b_0\,\mathrm{unit}$ with store
 $[b_0]$ steps back to $(!\ell_0)\,\mathrm{unit}$ with store $[b_0]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot_cycle`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-cycle).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.knot_cycle`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-cycle).
 
 ## Configurations on the evaluation path of Landin's knot
 
@@ -414,14 +414,14 @@ $(a, [b_0])$, $(b, [b_0])$.
 Each configuration steps to the next and $(b, [b_0])$ steps back to $(a, [b_0])$; every
 configuration reachable from $(K, [\,])$ lies in this list.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.reachable`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#reachable).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Knot.reachable`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#reachable).
 
 ## Landin's knot is well typed
 
 Landin's knot is closed and has type $\mathrm{Unit}$
 in the empty typing context under the empty store typing.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.knot_hasType`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-has-type).
+Formalized by `Cslib.Languages.LambdaCalculus.References.knot_hasType`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-has-type).
 
 ## Landin's knot never evaluates to a value
 
@@ -429,7 +429,7 @@ Starting from Landin's knot with the empty
 store, no sequence of zero or more call-by-value evaluation steps reaches a configuration
 $(v, \mu)$ in which the term $v$ is a value, whatever the store $\mu$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.knot_diverges`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-diverges).
+Formalized by `Cslib.Languages.LambdaCalculus.References.knot_diverges`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-diverges).
 
 ## Landin's knot never gets stuck
 
@@ -437,7 +437,7 @@ If Landin's knot with the empty store evaluates in zero or
 more call-by-value steps to a term $t$ with store $\mu$, then $t$ with store $\mu$ takes a further
 step to some term $t'$ with some store $\mu'$. So the evaluation of the knot runs forever.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.knot_runs_forever`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-runs-forever).
+Formalized by `Cslib.Languages.LambdaCalculus.References.knot_runs_forever`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Divergence.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Divergence.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#knot-runs-forever).
 
 ## Embedding of simple types into the calculus with references
 
@@ -446,7 +446,7 @@ types. The embedding $\iota$ sends a simple type over $B$ to a type of the calcu
 references over $B$, by recursion: $\iota(b) = b$ for a base type $b \in B$, and
 $\iota(A_1 \to A_2) = \iota(A_1) \to \iota(A_2)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Ty.ofStlc`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-stlc).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Ty.ofStlc`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-stlc).
 
 ## Embedding of raw STLC terms into the calculus with references
 
@@ -460,7 +460,7 @@ where $\iota(A)$ is the embedding of the simple type $A$.
 The image is reference-free: it contains no unit value, locations, allocations, dereferences or
 assignments.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Term.ofRaw`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-raw).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Term.ofRaw`, a definition declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-raw).
 
 ## Typing is preserved by the embedding of raw STLC terms
 
@@ -472,7 +472,7 @@ type $A$ in $\Gamma$. Then for every store typing $S$ we have
 $\iota(\Gamma) \mid S \vdash \iota(t) : \iota(A)$, where $\iota(\Gamma)$ is the context
 obtained by applying $\iota$ to each entry of $\Gamma$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.ofRaw`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-raw-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.ofRaw`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-raw-2).
 
 ## Typing of embedded intrinsically typed STLC terms
 
@@ -485,7 +485,7 @@ information while keeping binder annotations. Then for every store typing $S$ we
 $\iota(\Gamma) \mid S \vdash \iota(\mathrm{erase}(t)) : \iota(A)$, where $\iota(\Gamma)$ is the
 context obtained by applying $\iota$ to each entry of $\Gamma$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.ofStlc`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-stlc-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.ofStlc`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Embedding.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Embedding.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#of-stlc-2).
 
 ## Progress
 
@@ -497,7 +497,7 @@ is a value, or the configuration $(t, \mu)$ takes an evaluation step to some $(t
 
 - TAPL Theorem 13.5.7.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.progress`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Progress.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Progress.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#progress).
+Formalized by `Cslib.Languages.LambdaCalculus.References.progress`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Progress.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Progress.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#progress).
 
 ## Renaming preserves typing
 
@@ -507,7 +507,7 @@ $\Gamma$ assigns type $A$ to variable $x$, $\Delta$ assigns type $A$ to variable
 term $t$ has type $T$ under $\Gamma$ and $S$, then the term obtained from $t$ by renaming its
 variables by $\rho$ has type $T$ under $\Delta$ and $S$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#rename).
 
 ## Weakening of typing
 
@@ -516,7 +516,7 @@ store typing $S$, then for every type $A$, the term obtained from $t$ by shiftin
 Bruijn variable up by one has type $T$ under $S$ in the context obtained from $\Gamma$ by adding
 $A$ in front as variable $0$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#weaken).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#weaken).
 
 ## Parallel substitution preserves typing
 
@@ -526,7 +526,7 @@ that whenever $\Gamma$ assigns type $A$ to variable $x$, the term $\sigma(x)$ ha
 $\Delta$ and $S$. If a term $t$ has type $T$ under $\Gamma$ and $S$, then the term obtained from
 $t$ by applying $\sigma$ has type $T$ under $\Delta$ and $S$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#subst).
 
 ## Substitution lemma for the lambda calculus with references
 
@@ -538,7 +538,7 @@ by one) gives a term of type $T$ under $\Gamma$ and $S$.
 
 This is TAPL Lemma 13.5.4 in de Bruijn form.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#instantiate).
 
 ## Store-typing weakening
 
@@ -549,7 +549,7 @@ then $t$ has type $T$ under $\Gamma$ and $S'$.
 This is TAPL Lemma 13.5.6, with the extension of store typings taken as the prefix order on
 lists.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.extendStore`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#extend-store).
+Formalized by `Cslib.Languages.LambdaCalculus.References.HasType.extendStore`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#extend-store).
 
 ## Retyping a well-typed store under an extended store typing
 
@@ -559,7 +559,7 @@ store that is well typed under $\Gamma$ and $S$. Then $\mu$ and $S$ have the sam
 every location $l$ less than this length, the entry of $\mu$ at $l$ is a value that has, under
 $\Gamma$ and $S'$, the type that $S$ assigns to $l$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.extendStore`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#extend-store-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.extendStore`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#extend-store-2).
 
 ## Allocation preserves store typing
 
@@ -568,7 +568,7 @@ typing and $\mu$ a store that is well typed under $\Gamma$ and $S$. If $v$ is a 
 $T$ under $\Gamma$ and $S$, then the store obtained by appending $v$ at the end of $\mu$ is well
 typed under $\Gamma$ and the store typing obtained by appending $T$ at the end of $S$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.append`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#append).
+Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.append`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#append).
 
 ## Assignment preserves store typing
 
@@ -579,7 +579,7 @@ $\mu$ by overwriting the entry at $l$ with $v$ is well typed under $\Gamma$ and 
 
 This is TAPL Lemma 13.5.5.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.set`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#set).
+Formalized by `Cslib.Languages.LambdaCalculus.References.StoreTyped.set`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#set).
 
 ## Preservation for the lambda calculus with references
 
@@ -592,7 +592,7 @@ type $T$ under $\Gamma$ and $S'$ and $\mu'$ is well typed under $\Gamma$ and $S'
 This is TAPL Theorem 13.5.3, with the extension of store typings taken as the prefix order on
 lists.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.preservation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#preservation).
+Formalized by `Cslib.Languages.LambdaCalculus.References.preservation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#preservation).
 
 ## Preservation for multi-step evaluation
 
@@ -602,7 +602,7 @@ under $\Gamma$ and $S$, and $t$ with store $\mu$ evaluates in zero or more steps
 store $\mu'$, then there is a store typing $S'$ having $S$ as a prefix such that $t'$ has type
 $T$ under $\Gamma$ and $S'$ and $\mu'$ is well typed under $\Gamma$ and $S'$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.Steps.preservation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#preservation-2).
+Formalized by `Cslib.Languages.LambdaCalculus.References.Steps.preservation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#preservation-2).
 
 ## Type safety
 
@@ -612,7 +612,7 @@ context. If the configuration $(t, \mu)$ evaluates in zero or more steps to $(t'
 $t'$ is a value or $(t', \mu')$ takes a step to some configuration $(t'', \mu'')$. So a closed
 term that is well typed in a well-typed store never reaches a stuck configuration.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.typeSafety`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#type-safety).
+Formalized by `Cslib.Languages.LambdaCalculus.References.typeSafety`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#type-safety).
 
 ## Type safety from the empty store
 
@@ -620,7 +620,7 @@ A closed term typed under the empty store typing, run
 from the empty store, never gets stuck: every term it reaches in zero or more steps, together
 with the store reached alongside it, is a value or can take a further step.
 
-Formalized by `Cslib.Languages.LambdaCalculus.References.typeSafety_empty`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#type-safety-empty).
+Formalized by `Cslib.Languages.LambdaCalculus.References.typeSafety_empty`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/References/Preservation.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/References/Preservation.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html#type-safety-empty).
 
 ## Depends on
 
@@ -629,4 +629,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lambda calculus with references](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/type-systems-and-lambda-calculi/lambda-calculus-with-references)

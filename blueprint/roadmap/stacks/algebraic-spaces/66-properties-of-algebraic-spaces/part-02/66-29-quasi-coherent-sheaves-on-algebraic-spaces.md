@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.29 Quasi-coherent sheaves on algebraic spaces
 
-Section 66.29 of the Stacks Project, [Tag 03G5](https://stacks.math.columbia.edu/tag/03G5). 7 tags here are carried by 47 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.29 of the Stacks Project, [Tag 03G5](https://stacks.math.columbia.edu/tag/03G5). 7 tags here are carried by 47 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03G9, a definition
 
 [Tag 03G9](https://stacks.math.columbia.edu/tag/03G9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentSheaves`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RingedSite.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RingedSite.lean#L82).
+**`AlgebraicGeometry.Space.QuasicoherentSheaves`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RingedSite.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RingedSite.lean#L82).
 
 > The category `QCoh(𝒪_F)` of quasi-coherent sheaves on the algebraic space `F`: the full
 > subcategory of the `𝒪_F`-modules cut out by quasi-coherence on the small étale ringed site.
@@ -27,7 +27,7 @@ noncomputable abbrev QuasicoherentSheaves (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 03GA](https://stacks.math.columbia.edu/tag/03GA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean#L81). The attribute's comment: “the inverse image along a closed immersion of algebraic spaces”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionQuasicoherentPushforward.lean#L81). The attribute's comment: “the inverse image along a closed immersion of algebraic spaces”.
 
 > **Stacks 03GA along a closed immersion of algebraic spaces.**  The inverse image `i^*F` of a
 > quasi-coherent `𝒪_X`-module along a closed immersion `i : Z ⟶ X` is quasi-coherent.
@@ -43,7 +43,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_isClosedImmersion (i : Z ⟶ X)
     ((modulePullback B S hS i).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean#L109). The attribute's comment: “the pullback functor preserves quasi-coherence”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean#L109). The attribute's comment: “the pullback functor preserves quasi-coherence”.
 
 > **[Stacks, Tag 03GA].**  The pullback `f^*F` of Stacks 03LU of a quasi-coherent
 > `𝒪_Y`-module along an arbitrary morphism `f : X ⟶ Y` of algebraic spaces is quasi-coherent.
@@ -60,7 +60,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_isQuasicoherentOnSite (f : X ⟶
     ((modulePullback B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentPullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean#L131). The attribute's comment: “the induced functor on quasi-coherent modules”.
+**`AlgebraicGeometry.Space.quasicoherentPullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePullbackQuasicoherentFromChartDiagrams.lean#L131). The attribute's comment: “the induced functor on quasi-coherent modules”.
 
 > **[Stacks, Tag 03GA], in the form the source states it.**  The pullback of Stacks 03LU
 > along an arbitrary morphism of algebraic spaces restricts to a functor
@@ -72,7 +72,7 @@ noncomputable def quasicoherentPullbackFunctor (f : X ⟶ Y) :
       QuasicoherentSheaves.{u, u} B S hS X.1 X.2
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L223). The attribute's comment: “the pullback of a module with a global presentation is quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L223). The attribute's comment: “the pullback of a module with a global presentation is quasi-coherent”.
 
 > **Stacks 03GA for a module with a global presentation.**  If an `𝒪_Y`-module `F` admits a
 > `SheafOfModules.Presentation` then its pullback `f^*F` of Stacks 03LU along an arbitrary
@@ -87,7 +87,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_presentation (f : X ⟶ Y)
     ((modulePullback B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L248). The attribute's comment: “the pullback of a module of finite presentation is quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L248). The attribute's comment: “the pullback of a module of finite presentation is quasi-coherent”.
 
 > **Stacks 03GA for a module of finite presentation.**  The pullback `f^*F` of Stacks 03LU of
 > an `𝒪_Y`-module of finite presentation along an arbitrary morphism `f : X ⟶ Y` of algebraic
@@ -104,7 +104,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_isFinitePresentation (f : X ⟶ 
     ((modulePullback B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L269). The attribute's comment: “the pullback functor preserves quasi-coherence along an étale morphism”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L269). The attribute's comment: “the pullback functor preserves quasi-coherence along an étale morphism”.
 
 > **Stacks 03GA along an étale morphism.**  The pullback functor
 > `f^* : Mod(𝒪_Y) ⟶ Mod(𝒪_X)` of Stacks 03LU along an étale morphism `f : X ⟶ Y` of algebraic
@@ -121,7 +121,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_isEtale (f : X ⟶ Y)
     ((modulePullback B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentPullbackOfIsEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L281). The attribute's comment: “the induced functor on quasi-coherent modules, along an étale morphism”.
+**`AlgebraicGeometry.Space.quasicoherentPullbackOfIsEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L281). The attribute's comment: “the induced functor on quasi-coherent modules, along an étale morphism”.
 
 > **Stacks 03GA along an étale morphism, in the form the source states it**: the pullback of
 > Stacks 03LU along an étale morphism of algebraic spaces restricts to a functor
@@ -133,7 +133,7 @@ noncomputable def quasicoherentPullbackOfIsEtale (f : X ⟶ Y) (hf : IsEtale B S
       QuasicoherentSheaves.{u, u} B S hS X.1 X.2
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_affineChartFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L318). The attribute's comment: “the pullback along a morphism factoring through an affine chart of the target”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_modulePullback_of_affineChartFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L318). The attribute's comment: “the pullback along a morphism factoring through an affine chart of the target”.
 
 > **Stacks 03GA along a morphism factoring through an affine étale chart of the target.**  If
 > `f : X ⟶ Y` factors as `k ≫ φ` with `φ` the structure morphism of an étale chart of `Y` whose
@@ -152,7 +152,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_affineChartFactorization (f : X 
     ((modulePullback B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentPullbackOfAffineChartFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L332). The attribute's comment: “the induced functor on quasi-coherent modules, through an affine chart”.
+**`AlgebraicGeometry.Space.quasicoherentPullbackOfAffineChartFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackQuasicoherence.lean#L332). The attribute's comment: “the induced functor on quasi-coherent modules, through an affine chart”.
 
 > **Stacks 03GA along a morphism factoring through an affine étale chart of the target, in the
 > form the source states it**: the pullback of Stacks 03LU along `k ≫ φ`, with `φ` the structure
@@ -171,7 +171,7 @@ noncomputable def quasicoherentPullbackOfAffineChartFactorization (V : SmallEtal
 
 [Tag 03LZ](https://stacks.math.columbia.edu/tag/03LZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_chartModuleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L93). The attribute's comment: “the chartwise pullback preserves quasi-coherence”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_chartModuleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L93). The attribute's comment: “the chartwise pullback preserves quasi-coherence”.
 
 > **Stacks 03LZ.** The chartwise pullback of modules preserves quasi-coherence: a morphism of
 > étale scheme charts of `X` represents an étale morphism of algebraic spaces, along which the
@@ -184,7 +184,7 @@ theorem isQuasicoherentOnSite_chartModuleInverseImage {V U : SmallEtale B S hS X
     ((chartModuleInverseImage B S hS X f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_forall_chartModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L112). The attribute's comment: “quasi-coherence of a module is quasi-coherence of its chartwise restrictions”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_forall_chartModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L112). The attribute's comment: “quasi-coherence of a module is quasi-coherence of its chartwise restrictions”.
 
 > **Stacks 03LZ.** An `𝒪_X`-module is quasi-coherent exactly when its restriction to every
 > étale scheme chart of `X` is quasi-coherent: the chartwise family of restrictions of a module
@@ -198,7 +198,7 @@ theorem isQuasicoherentOnSite_iff_forall_chartModuleRestriction
         ((chartModuleRestriction B S hS X U).obj M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isChartwiseQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L126). The attribute's comment: “datum (1): the chartwise modules are quasi-coherent”.
+**`AlgebraicGeometry.Space.isChartwiseQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L126). The attribute's comment: “datum (1): the chartwise modules are quasi-coherent”.
 
 > **Datum (1) of Stacks 03LZ**: the module of a chartwise glueing datum is quasi-coherent on
 > the small étale site of every étale scheme chart of `X`.
@@ -207,7 +207,7 @@ theorem isQuasicoherentOnSite_iff_forall_chartModuleRestriction
 def isChartwiseQuasicoherent : ObjectProperty (ChartModuleGlueingData B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.QuasicoherentChartModuleGlueingData`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L133). The attribute's comment: “the data (1), (2) and the cocycle condition”.
+**`AlgebraicGeometry.Space.QuasicoherentChartModuleGlueingData`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L133). The attribute's comment: “the data (1), (2) and the cocycle condition”.
 
 > **The data of Stacks 03LZ**: a quasi-coherent `𝒪_U`-module on the small étale site of every
 > étale scheme chart `U` of `X`, transition isomorphisms along the chartwise pullbacks, and the
@@ -217,7 +217,7 @@ def isChartwiseQuasicoherent : ObjectProperty (ChartModuleGlueingData B S hS X)
 noncomputable abbrev QuasicoherentChartModuleGlueingData
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L160). The attribute's comment: “the canonical chartwise description of quasi-coherent modules”.
+**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueing.lean#L160). The attribute's comment: “the canonical chartwise description of quasi-coherent modules”.
 
 > **The canonical chartwise description of quasi-coherent `𝒪_X`-modules**: the functor of
 > Stacks 03LY cut down to the quasi-coherent objects on both sides, so that composing it with the
@@ -234,7 +234,7 @@ noncomputable def quasicoherentChartModuleGlueingFunctor :
     QuasicoherentSheaves.{u, u} B S hS X.1 X.2 ⥤ QuasicoherentChartModuleGlueingData B S hS X
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean#L54). The attribute's comment: “quasi-coherent modules are the chartwise quasi-coherent glueing data”.
+**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean#L54). The attribute's comment: “quasi-coherent modules are the chartwise quasi-coherent glueing data”.
 
 > A quasi-coherent `𝒪_X`-module on the small étale site of an algebraic space `X` is the same
 > thing as a chartwise quasi-coherent glueing datum: a *quasi-coherent* `𝒪_U`-module `F_U` on the
@@ -251,7 +251,7 @@ def quasicoherentChartModuleGlueingEquivalence :
     QuasicoherentSheaves.{u, u} B S hS X.1 X.2 ≌ QuasicoherentChartModuleGlueingData B S hS X
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingFunctor_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean#L70). The attribute's comment: “the canonical chartwise description of quasi-coherent modules is an equivalence”.
+**`AlgebraicGeometry.Space.quasicoherentChartModuleGlueingFunctor_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartQuasicoherentGlueingEquivalence.lean#L70). The attribute's comment: “the canonical chartwise description of quasi-coherent modules is an equivalence”.
 
 > The canonical chartwise description of quasi-coherent `𝒪_X`-modules
 > `AlgebraicGeometry.Space.quasicoherentChartModuleGlueingFunctor` — restriction to the étale
@@ -266,7 +266,7 @@ instance quasicoherentChartModuleGlueingFunctor_isEquivalence :
 
 [Tag 05VP](https://stacks.math.columbia.edu/tag/05VP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean#L106). The attribute's comment: “the comparison map on germs of functions on an open of the chart”.
+**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean#L106). The attribute's comment: “the comparison map on germs of functions on an open of the chart”.
 
 > **The comparison map `𝒪_{U, u} → 𝒪_{X, x̄}` on germs of functions on an open of the
 > chart.**  The ordinary germ at `u` of a regular function on a Zariski open `W ∋ u` of the chart
@@ -284,7 +284,7 @@ theorem chartLocalRingToEtaleLocalRing_germ_open {x : GeometricPoint B S hS X}
         (W.topIso.inv a)
 ```
 
-**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ_open'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean#L159). The attribute's comment: “the comparison map on germs, through the chart restriction of functions”.
+**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ_open'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartLocalRingGermsOnOpens.lean#L160). The attribute's comment: “the comparison map on germs, through the chart restriction of functions”.
 
 > `AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ_open` with the restricted
 > function written through `AlgebraicGeometry.Space.chartRestrictionRingHom`, the form in which
@@ -301,7 +301,7 @@ theorem chartLocalRingToEtaleLocalRing_germ_open' {x : GeometricPoint B S hS X}
         (((chartRestrictionRingHom B S hS hX V.chart).app (op W)).hom a)
 ```
 
-**`AlgebraicGeometry.Space.chartStalkTensorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean#L311). The attribute's comment: “the comparison map (phi^* F)\_u tensor O\_\{U, u} O\_\{X, xbar} to F\_xbar”.
+**`AlgebraicGeometry.Space.chartStalkTensorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean#L311). The attribute's comment: “the comparison map (phi^* F)\_u tensor O\_\{U, u} O\_\{X, xbar} to F\_xbar”.
 
 > The comparison map from the Zariski stalk `(φ^* F)_u` of the restriction of an `𝒪_X`-module
 > to an étale scheme chart, base changed along the canonical map `𝒪_{U, u} → 𝒪_{X, x̄}`, to the
@@ -314,7 +314,7 @@ noncomputable def chartStalkTensorComparison {x : GeometricPoint B S hS X}
       geometricModuleStalk B S hS ⟨X, hX⟩ x F
 ```
 
-**`AlgebraicGeometry.Space.chartStalkTensorComparison_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean#L321). The attribute's comment: “the comparison map is the identity on germs of sections”.
+**`AlgebraicGeometry.Space.chartStalkTensorComparison_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorComparison.lean#L321). The attribute's comment: “the comparison map is the identity on germs of sections”.
 
 > The comparison map `(φ^* F)_u ⊗_{𝒪_{U, u}} 𝒪_{X, x̄} → F_{x̄}` sends the base change of the
 > Zariski germ at `u` of a section of `F` over a Zariski open `W` of the chart containing `u` to the
@@ -334,7 +334,7 @@ theorem chartStalkTensorComparison_germ {x : GeometricPoint B S hS X}
         (chartOpenNeighborhood B S hS V W hw) s
 ```
 
-**`AlgebraicGeometry.Space.isIso_chartStalkTensorComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorIsomorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorIsomorphism.lean#L197). The attribute's comment: “the comparison map is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_chartStalkTensorComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorIsomorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorIsomorphism.lean#L197). The attribute's comment: “the comparison map is an isomorphism”.
 
 > **Stacks 05VP.**  Let `F` be a quasi-coherent `𝒪_X`-module on an algebraic space `X`, let
 > `x̄` be a geometric point of `X` and let `φ : (U, ū) → (X, x̄)` be an étale neighbourhood whose
@@ -356,7 +356,7 @@ theorem isIso_chartStalkTensorComparison {x : GeometricPoint B S hS X}
     IsIso (chartStalkTensorComparison B S hS hX V F)
 ```
 
-**`AlgebraicGeometry.Space.surjective_chartStalkTensorComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorSurjective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorSurjective.lean#L83). The attribute's comment: “the comparison map is surjective for a quasi-coherent module”.
+**`AlgebraicGeometry.Space.surjective_chartStalkTensorComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorSurjective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartStalkTensorSurjective.lean#L83). The attribute's comment: “the comparison map is surjective for a quasi-coherent module”.
 
 > **The comparison map of Stacks 05VP is surjective for a quasi-coherent module.**  Every germ
 > at the geometric point of a section of a quasi-coherent `𝒪_X`-module is the image of a base
@@ -373,7 +373,7 @@ theorem surjective_chartStalkTensorComparison {x : GeometricPoint B S hS X}
     Function.Surjective (chartStalkTensorComparison B S hS hX V F)
 ```
 
-**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L141). The attribute's comment: “the canonical map O\_\{U, u} → O\_\{X, xbar}”.
+**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L141). The attribute's comment: “the canonical map O\_\{U, u} → O\_\{X, xbar}”.
 
 > The canonical map `𝒪_{U, u} → 𝒪_{X, x̄}` of Stacks 05VP: the structure map of `𝒪_{U, u}`
 > into its strict henselization, followed by the identification of that strict henselization with
@@ -385,7 +385,7 @@ noncomputable def chartLocalRingToEtaleLocalRing {x : GeometricPoint B S hS X}
     ↥(chartLocalRing B S hS X V) →+* ↥(etaleLocalRing B S hS X x)
 ```
 
-**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L151). The attribute's comment: “the comparison map is the identity on germs of regular functions”.
+**`AlgebraicGeometry.Space.chartLocalRingToEtaleLocalRing_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L151). The attribute's comment: “the comparison map is the identity on germs of regular functions”.
 
 > The canonical map `𝒪_{U, u} → 𝒪_{X, x̄}` sends the ordinary germ at `u` of a regular
 > function on the chart to the germ of the same function at the geometric point.
@@ -398,7 +398,7 @@ theorem chartLocalRingToEtaleLocalRing_germ {x : GeometricPoint B S hS X}
       etaleLocalRingGerm B S hS X x (op V) a
 ```
 
-**`AlgebraicGeometry.Space.faithfullyFlat_chartLocalRingToEtaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L164). The attribute's comment: “the base-change map is faithfully flat”.
+**`AlgebraicGeometry.Space.faithfullyFlat_chartLocalRingToEtaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L164). The attribute's comment: “the base-change map is faithfully flat”.
 
 > **The base change of Stacks 05VP is faithfully flat.** The canonical map
 > `𝒪_{U, u} → 𝒪_{X, x̄}` is faithfully flat: the étale local ring is the strict henselization of
@@ -411,7 +411,7 @@ theorem faithfullyFlat_chartLocalRingToEtaleLocalRing {x : GeometricPoint B S hS
     (chartLocalRingToEtaleLocalRing B S hS X hX V).FaithfullyFlat
 ```
 
-**`AlgebraicGeometry.Space.flat_chartLocalRingToEtaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L182). The attribute's comment: “the base-change map is flat”.
+**`AlgebraicGeometry.Space.flat_chartLocalRingToEtaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L182). The attribute's comment: “the base-change map is flat”.
 
 > The canonical map `𝒪_{U, u} → 𝒪_{X, x̄}` is flat, so the base change of Stacks 05VP along
 > it is exact.
@@ -422,7 +422,7 @@ theorem flat_chartLocalRingToEtaleLocalRing {x : GeometricPoint B S hS X}
     (chartLocalRingToEtaleLocalRing B S hS X hX V).Flat
 ```
 
-**`AlgebraicGeometry.Space.chartStalkBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L196). The attribute's comment: “the base-change functor - ⊗\_\{O\_\{U, u}} O\_\{X, xbar}”.
+**`AlgebraicGeometry.Space.chartStalkBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L196). The attribute's comment: “the base-change functor - ⊗\_\{O\_\{U, u}} O\_\{X, xbar}”.
 
 > The base-change functor `- ⊗_{𝒪_{U, u}} 𝒪_{X, x̄}` of Stacks 05VP, taking a module over the
 > local ring of the chart to a module over the étale local ring at the geometric point.
@@ -434,7 +434,7 @@ noncomputable def chartStalkBaseChange {x : GeometricPoint B S hS X}
       ModuleCat.{max (u + 1) m} ↥(etaleLocalRing B S hS X x)
 ```
 
-**`AlgebraicGeometry.Space.chartZariskiModuleStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L209). The attribute's comment: “the Zariski stalk of the chart restriction, the left factor of the tensor”.
+**`AlgebraicGeometry.Space.chartZariskiModuleStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L209). The attribute's comment: “the Zariski stalk of the chart restriction, the left factor of the tensor”.
 
 > The ordinary (Zariski) stalk `(φ^* F)_u` of the restriction of an `𝒪_X`-module to an étale
 > scheme chart, as a module over the local ring `𝒪_{U, u}` of the chart.
@@ -449,7 +449,7 @@ noncomputable def chartZariskiModuleStalk {x : GeometricPoint B S hS X}
     ModuleCat.{max u m} ↥(chartLocalRing B S hS X V)
 ```
 
-**`AlgebraicGeometry.Space.chartStalkTensorEtaleLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L224). The attribute's comment: “the left-hand side (phi^* F)\_u ⊗\_\{O\_\{U, u}} O\_\{X, xbar}”.
+**`AlgebraicGeometry.Space.chartStalkTensorEtaleLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricStalkBaseChange.lean#L224). The attribute's comment: “the left-hand side (phi^* F)\_u ⊗\_\{O\_\{U, u}} O\_\{X, xbar}”.
 
 > The left-hand side `(φ^* F)_u ⊗_{𝒪_{U, u}} 𝒪_{X, x̄}` of Stacks 05VP: the Zariski stalk of
 > the chart restriction, base changed along the canonical map to the étale local ring.
@@ -467,7 +467,7 @@ noncomputable def chartStalkTensorEtaleLocalRing {x : GeometricPoint B S hS X}
 
 [Tag 05VQ](https://stacks.math.columbia.edu/tag/05VQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricModuleStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalk.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalk.lean#L244). The attribute's comment: “the module stalk at a geometric point”.
+**`AlgebraicGeometry.Space.geometricModuleStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalk.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalk.lean#L244). The attribute's comment: “the module stalk at a geometric point”.
 
 > **Stacks 05VQ.** The stalk of an `𝒪_X`-module at a geometric point `x̄` of an algebraic
 > space, as a module over the étale local ring `𝒪_{X, x̄}`: the stalk at the point of the small
@@ -480,7 +480,7 @@ noncomputable def geometricModuleStalk (X : AlgebraicSpaces B S hS)
     ModuleCat (etaleLocalRing B S hS X.1 x)
 ```
 
-**`AlgebraicGeometry.Space.geometricModuleStalkPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalkBaseChange.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalkBaseChange.lean#L93). The attribute's comment: “the base-change formula `(f^*G)_x̄ ≅ 𝒪_{X, x̄} ⊗_{𝒪_{Y, f ∘ x̄}} G_{f ∘ x̄}` for the geometric stalk of a pullback of modules”.
+**`AlgebraicGeometry.Space.geometricModuleStalkPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalkBaseChange.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricModuleStalkBaseChange.lean#L93). The attribute's comment: “the base-change formula `(f^*G)_x̄ ≅ 𝒪_{X, x̄} ⊗_{𝒪_{Y, f ∘ x̄}} G_{f ∘ x̄}` for the geometric stalk of a pullback of modules”.
 
 > The stalk at a geometric point `x̄` of the
 > pullback of an `𝒪_Y`-module `G` along a morphism `f : X ⟶ Y` of algebraic spaces is the base
@@ -500,7 +500,7 @@ def geometricModuleStalkPullbackIso :
 
 [Tag 03M0](https://stacks.math.columbia.edu/tag/03M0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_over_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean#L250). The attribute's comment: “(1) iff (3)”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_over_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean#L250). The attribute's comment: “(1) iff (3)”.
 
 > **Stacks 03M0, conditions (1) and (3).** A sheaf of `𝒪_F`-modules on the small étale site
 > of an algebraic space `F` is quasi-coherent if and only if its restriction along one étale
@@ -515,7 +515,7 @@ theorem isQuasicoherentOnSite_iff_over_of_isSurjective (M : Modules.{u, u} B S h
     M.IsQuasicoherentOnSite ↔ (M.over U).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_forall_affine_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean#L264). The attribute's comment: “(1) iff (4)”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_forall_affine_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleChart.lean#L264). The attribute's comment: “(1) iff (4)”.
 
 > **Stacks 03M0, conditions (1) and (4).** A sheaf of `𝒪_F`-modules on the small étale site
 > of an algebraic space `F` is quasi-coherent if and only if its restriction along every étale
@@ -532,7 +532,7 @@ theorem isQuasicoherentOnSite_iff_forall_affine_over (M : Modules.{u, u} B S hS 
         (M.over U).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_etaleModulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean#L256). The attribute's comment: “(1) iff (2)”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_etaleModulePullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean#L256). The attribute's comment: “(1) iff (2)”.
 
 > **Stacks 03M0, conditions (1) and (2).** A sheaf of `𝒪_X`-modules on the small étale site
 > of an algebraic space `X` is quasi-coherent if and only if its pullback along an étale
@@ -556,7 +556,7 @@ theorem isQuasicoherentOnSite_etaleModulePullback_iff (f : Y ⟶ X) (hf : IsEtal
       ((etaleModulePullback B S hS f hf).obj M).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_exists_etale_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean#L295). The attribute's comment: “(1) iff (2), existential form”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_iff_exists_etale_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentEtaleMorphism.lean#L295). The attribute's comment: “(1) iff (2), existential form”.
 
 > **Stacks 03M0, conditions (1) and (2), in the existential form of the source.** A sheaf of
 > `𝒪_X`-modules on the small étale site of an algebraic space `X` is quasi-coherent if and only
@@ -584,7 +584,7 @@ theorem isQuasicoherentOnSite_iff_exists_etale_surjective
 
 [Tag 03M1](https://stacks.math.columbia.edu/tag/03M1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_smallEtaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InternalHomQuasicoherentChartLocal.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InternalHomQuasicoherentChartLocal.lean#L206). The attribute's comment: “(6) internal hom out of a module of finite presentation”. References: SGA 3 III (0.6), “more general”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_smallEtaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InternalHomQuasicoherentChartLocal.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InternalHomQuasicoherentChartLocal.lean#L206). The attribute's comment: “(6) internal hom out of a module of finite presentation”. References: SGA 3 III (0.6), “more general”.
 
 > **Stacks 03M1, the internal Hom.**  Let `F` be an algebraic space over a scheme `S` and let
 > `M`, `N` be quasi-coherent `𝒪_F`-modules with `M` of finite presentation, Stacks 03DL(7).  Then
@@ -604,17 +604,17 @@ theorem isQuasicoherentOnSite_iff_exists_etale_surjective
 > `AlgebraicGeometry.Space.isQuasicoherentOnSite_smallEtaleInternalHom_of_presentation'` on the
 > small étale site of the chart.
 >
-> The quasi-coherence of `M` is one of the source's hypotheses and is listed; the proof does not
-> use it, since finite presentation already implies it.
+> The source also assumes `M` quasi-coherent; that hypothesis is omitted here, since finite
+> presentation already implies it.
 
 ```lean
 theorem isQuasicoherentOnSite_smallEtaleInternalHom (M N : Modules.{u, u} B S hS F hF)
-    (hM : M.IsQuasicoherentOnSite) (hN : N.IsQuasicoherentOnSite)
+    (hN : N.IsQuasicoherentOnSite)
     (hMfp : M.IsFinitePresentationOnSite) :
     (smallEtaleInternalHom B S hS F hF M N).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherent_left_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L171). The attribute's comment: “clause (4), left term, for the small étale site of an algebraic space, at module universe u”.
+**`AlgebraicGeometry.Space.isQuasicoherent_left_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L172). The attribute's comment: “clause (4), left term, for the small étale site of an algebraic space, at module universe u”.
 
 > **Stacks 03M1 for short exact sequences, left term, at `m := u`, with nothing assumed.**  The
 > kernel term of a short exact sequence of `𝒪_F`-modules on an algebraic space is quasi-coherent if
@@ -631,7 +631,7 @@ theorem isQuasicoherent_left_of_shortExact'
     T.X₁.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherent_middle_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L187). The attribute's comment: “clause (4), middle term, for the small étale site of an algebraic space, at module universe u”.
+**`AlgebraicGeometry.Space.isQuasicoherent_middle_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L188). The attribute's comment: “clause (4), middle term, for the small étale site of an algebraic space, at module universe u”.
 
 > **Stacks 03M1 for short exact sequences, middle term, at `m := u`, with nothing assumed.**  An
 > extension of quasi-coherent `𝒪_F`-modules on an algebraic space is quasi-coherent.
@@ -648,7 +648,7 @@ theorem isQuasicoherent_middle_of_shortExact'
     T.X₂.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherent_right_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L205). The attribute's comment: “clause (4), right term, for the small étale site of an algebraic space, at module universe u”.
+**`AlgebraicGeometry.Space.isQuasicoherent_right_of_shortExact'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentClausesUnconditional.lean#L206). The attribute's comment: “clause (4), right term, for the small étale site of an algebraic space, at module universe u”.
 
 > **Stacks 03M1 for short exact sequences, right term, at `m := u`, with nothing assumed.**  The
 > quotient term of a short exact sequence of `𝒪_F`-modules on an algebraic space is quasi-coherent
@@ -664,7 +664,7 @@ theorem isQuasicoherent_right_of_shortExact'
     T.X₃.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_of_isColimit_cofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L154). The attribute's comment: “(1) any direct sum of quasi-coherent 𝒪\_X-modules is quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_of_isColimit_cofan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L154). The attribute's comment: “(1) any direct sum of quasi-coherent 𝒪\_X-modules is quasi-coherent”.
 
 > **Stacks 03M1 (1).**  Any direct sum of quasi-coherent `𝒪_X`-modules on an algebraic space
 > `X` is quasi-coherent: the vertex of a colimiting cofan on a family of quasi-coherent
@@ -681,7 +681,7 @@ theorem isQuasicoherentOnSite_of_isColimit_cofan {ι : Type w}
     c.pt.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isClosedUnderColimitsOfShape_quasicoherentSheaves_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L170). The attribute's comment: “(2) any colimit of quasi-coherent 𝒪\_X-modules is quasi-coherent”.
+**`AlgebraicGeometry.Space.isClosedUnderColimitsOfShape_quasicoherentSheaves_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L170). The attribute's comment: “(2) any colimit of quasi-coherent 𝒪\_X-modules is quasi-coherent”.
 
 > **Stacks 03M1 (2).**  Any colimit of quasi-coherent `𝒪_X`-modules on an algebraic space `X`
 > is quasi-coherent: quasi-coherence is closed under colimits of every small shape `K`.
@@ -698,7 +698,7 @@ theorem isClosedUnderColimitsOfShape_quasicoherentSheaves_of_essentiallySmall (K
         (smallEtaleRingedSite B S hS F hF).O))).IsClosedUnderColimitsOfShape K
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_kernel_and_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L185). The attribute's comment: “(3) the kernel and the cokernel of a morphism of quasi-coherent 𝒪\_X-modules are quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_kernel_and_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L185). The attribute's comment: “(3) the kernel and the cokernel of a morphism of quasi-coherent 𝒪\_X-modules are quasi-coherent”.
 
 > **Stacks 03M1 (3).**  The kernel and the cokernel of a morphism of quasi-coherent
 > `𝒪_X`-modules on an algebraic space `X` are quasi-coherent.
@@ -709,7 +709,7 @@ theorem isQuasicoherentOnSite_kernel_and_cokernel {M N : Modules.{u, u} B S hS F
     (kernel f).IsQuasicoherentOnSite ∧ (cokernel f).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_shortExact_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L213). The attribute's comment: “(4) in a short exact sequence of 𝒪\_X-modules, if two of the three terms are quasi-coherent so is the third”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_shortExact_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L213). The attribute's comment: “(4) in a short exact sequence of 𝒪\_X-modules, if two of the three terms are quasi-coherent so is the third”.
 
 > **Stacks 03M1 (4).**  Given a short exact sequence `0 → 𝓕₁ → 𝓕₂ → 𝓕₃ → 0` of `𝒪_X`-modules
 > on an algebraic space `X`, if two out of the three terms are quasi-coherent then so is the
@@ -725,7 +725,7 @@ theorem isQuasicoherentOnSite_shortExact_twoOutOfThree
         T.X₃.IsQuasicoherentOnSite)
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_tensorModule_schemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L236). The attribute's comment: “(5) the tensor product of two quasi-coherent 𝒪\_X-modules is quasi-coherent”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_tensorModule_schemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L236). The attribute's comment: “(5) the tensor product of two quasi-coherent 𝒪\_X-modules is quasi-coherent”.
 
 > **Stacks 03M1 (5).**  The tensor product of two quasi-coherent `𝒪_X`-modules on an algebraic
 > space `X` is quasi-coherent.
@@ -740,7 +740,7 @@ theorem isQuasicoherentOnSite_tensorModule_schemeUniverse (M N : Modules.{u, u} 
     (tensorModule.{u, u, u} B S hS F hF M N).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_internalHomSheafSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L303). The attribute's comment: “(6) the internal Hom 𝓗om(𝓕, 𝓖) of two quasi-coherent 𝒪\_X-modules with 𝓕 of finite presentation is quasi-coherent”. References: SGA 3 III (0.6), “more general”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_internalHomSheafSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSheavesProperties.lean#L303). The attribute's comment: “(6) the internal Hom 𝓗om(𝓕, 𝓖) of two quasi-coherent 𝒪\_X-modules with 𝓕 of finite presentation is quasi-coherent”. References: SGA 3 III (0.6), “more general”.
 
 > **Stacks 03M1 (6).**  Let `𝓕`, `𝓖` be quasi-coherent `𝒪_X`-modules on an algebraic space `X`
 > with `𝓕` of finite presentation (Stacks 03DL(7)).  Then the internal Hom
@@ -763,7 +763,7 @@ theorem isQuasicoherentOnSite_internalHomSheafSmall (M N : Modules.{u, u} B S hS
       N).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_tensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentTensorProduct.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentTensorProduct.lean#L132). The attribute's comment: “(5) tensor products”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_tensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentTensorProduct.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentTensorProduct.lean#L132). The attribute's comment: “(5) tensor products”.
 
 > **Stacks 03M1, tensor products.**  The tensor product of two quasi-coherent `𝒪_F`-modules on
 > an algebraic space is quasi-coherent.
@@ -785,4 +785,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.29, Tag 03G5](https://stacks.math.columbia.edu/tag/03G5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

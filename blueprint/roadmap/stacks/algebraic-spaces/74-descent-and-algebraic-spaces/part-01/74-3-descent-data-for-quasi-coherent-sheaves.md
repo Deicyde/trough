@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.3 Descent data for quasi-coherent sheaves
 
-Section 74.3 of the Stacks Project, [Tag 04W2](https://stacks.math.columbia.edu/tag/04W2). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.3 of the Stacks Project, [Tag 04W2](https://stacks.math.columbia.edu/tag/04W2). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04W3, a definition
 
 [Tag 04W3](https://stacks.math.columbia.edu/tag/04W3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.DescentDatum`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean#L109). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.DescentDatum`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean#L109). The attribute's comment: “part (1)”.
 
 > **Stacks 04W3, part (1).**  A descent datum for quasi-coherent modules relative to a family
 > `(f i : Y i ⟶ X)` of algebraic spaces over `X`: a quasi-coherent module on each `Y i`, an
@@ -25,7 +25,7 @@ Section 74.3 of the Stacks Project, [Tag 04W2](https://stacks.math.columbia.edu/
 structure DescentDatum (Y : I → AlgebraicSpaces B S hS) (f : ∀ i, Y i ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.DescentDatum.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean#L136). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.DescentDatum.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/DescentData.lean#L136). The attribute's comment: “part (2)”.
 
 > **Stacks 04W3, part (2).**  A morphism of descent data: a family of morphisms of the
 > component modules commuting with every pairwise isomorphism.
@@ -39,7 +39,7 @@ structure DescentDatum.Hom {Y : I → AlgebraicSpaces B S hS} {f : ∀ i, Y i �
 
 [Tag 04W4](https://stacks.math.columbia.edu/tag/04W4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L331). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L331). The attribute's comment: “part (1)”.
 
 > **Stacks 04W4, part (1).**  The pullback of a descent datum for quasi-coherent modules along
 > a morphism of families of morphisms with fixed target: the inverse images `(h₀ i)^*F (s₀ i)`,
@@ -51,7 +51,7 @@ def pullbackDatum (Φ : 𝒰.HomOver 𝒱 g)
     (D : DescentDatum B S hS 𝒱.X 𝒱.f) : DescentDatum B S hS 𝒰.X 𝒰.f
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L369). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L369). The attribute's comment: “part (2)”.
 
 > **Stacks 04W4, part (2).**  Pullback of descent data along a morphism of families of
 > morphisms with fixed target is a functor on the categories of descent data of Stacks 04W3.
@@ -61,7 +61,7 @@ def pullbackFunctor (Φ : 𝒰.HomOver 𝒱 g) :
     DescentDatum B S hS 𝒱.X 𝒱.f ⥤ DescentDatum B S hS 𝒰.X 𝒰.f
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L382). The attribute's comment: “part (3), the comparison isomorphism”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L382). The attribute's comment: “part (3), the comparison isomorphism”.
 
 > **Stacks 04W4, part (3).**  For two morphisms of families with the same morphism of
 > targets, the pairwise isomorphism of the given datum read on `U i` along `h₀ i` and `h₀' i` is
@@ -73,7 +73,7 @@ def pullbackCompare (Φ Ψ : 𝒰.HomOver 𝒱 g) (D : DescentDatum B S hS 𝒱.
       (modulePullback B S hS (Ψ.h₀ i)).obj (D.F (Ψ.s₀ i))
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L394). The attribute's comment: “part (3), compatibility of the comparison with the pairwise isomorphisms”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L394). The attribute's comment: “part (3), compatibility of the comparison with the pairwise isomorphisms”.
 
 > **Stacks 04W4, part (3).**  The components of `pullbackCompare` commute with the pairwise
 > isomorphisms of the two pulled-back data, so that they constitute a morphism of descent data:
@@ -90,7 +90,7 @@ theorem pullbackCompare_naturality
           (pullbackCompare B S hS Φ Ψ D j)
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare_datum_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L454). The attribute's comment: “part (3), naturality of the comparison in the descent datum”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.pullbackCompare_datum_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/FamilyPullback.lean#L454). The attribute's comment: “part (3), naturality of the comparison in the descent datum”.
 
 > **Stacks 04W4, part (3).**  The comparison is natural in the descent datum: it commutes
 > with the components of the pulled-back morphisms, which are the components of
@@ -109,7 +109,7 @@ theorem pullbackCompare_datum_naturality (Φ Ψ : 𝒰.HomOver 𝒱 g)
 
 [Tag 04W5](https://stacks.math.columbia.edu/tag/04W5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.canonicalDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L77). The attribute's comment: “the canonical descent datum”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.canonicalDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L77). The attribute's comment: “the canonical descent datum”.
 
 > **Stacks 04W5.**  The canonical descent datum `(M|_{Y i}, can)` of a quasi-coherent
 > `𝒪_X`-module `M` relative to a family `(f i : Y i ⟶ X)`: the inverse images `(f i)^*M`, with
@@ -122,7 +122,7 @@ def canonicalDescentDatum
     DescentDatum B S hS Y f
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.trivialDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L116). The attribute's comment: “the trivial descent datum”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.trivialDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L116). The attribute's comment: “the trivial descent datum”.
 
 > **Stacks 04W5.**  The trivial descent datum of a quasi-coherent `𝒪_X`-module: its canonical
 > descent datum relative to the one-member family `{𝟙 X}`.
@@ -133,7 +133,7 @@ def trivialDescentDatum
     DescentDatum B S hS (fun _ : PUnit.{v + 1} => X) (fun _ => 𝟙 X)
 ```
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.IsEffective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L124). The attribute's comment: “effective descent datum”.
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.IsEffective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/CanonicalDatum.lean#L124). The attribute's comment: “effective descent datum”.
 
 > **Stacks 04W5.**  A descent datum for quasi-coherent modules is effective when it is
 > isomorphic to the canonical descent datum of a quasi-coherent module on the target.
@@ -148,7 +148,7 @@ def IsEffective
 
 [Tag 04W6](https://stacks.math.columbia.edu/tag/04W6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasiCoherentDescent.isEtaleEffective_and_fullyFaithful_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/MemberPerMemberIsoDirect.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/MemberPerMemberIsoDirect.lean#L167).
+**`AlgebraicGeometry.Space.QuasiCoherentDescent.isEtaleEffective_and_fullyFaithful_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/MemberPerMemberIsoDirect.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/QuasiCoherent/MemberPerMemberIsoDirect.lean#L167).
 
 > For a Zariski covering of an algebraic space, every descent datum for quasi-coherent modules is
 > effective, and the canonical descent functor is fully faithful.
@@ -168,4 +168,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.3, Tag 04W2](https://stacks.math.columbia.edu/tag/04W2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Dyck paths and lattice walks: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html).
 
 Statistics on Dyck paths (peaks, valleys, marked steps, subwords) and their variants (skew, rational, k-box Dyck paths), lattice walks with unit or diagonal steps, Delannoy numbers, Sulanke arrays, colored Dyck paths, and nonintersecting paths via the Lindström–Gessel–Viennot lemma.
 
@@ -31,7 +31,7 @@ elements of $S$, taken in $R$, equals $\det e$.
 
 - https://en.wikipedia.org/wiki/Lindstr%C3%B6m%E2%80%93Gessel%E2%80%93Viennot_lemma
 
-Formalized by `MetaMathlibExt.lindstrom_gessel_viennot`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LindstromGesselViennot.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LindstromGesselViennot.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html#lindstrom-gessel-viennot).
+Formalized by `MetaMathlibExt.lindstrom_gessel_viennot`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/LindstromGesselViennot.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LindstromGesselViennot.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html#lindstrom-gessel-viennot).
 
 ## Minimal lattice walks with unit and diagonal steps
 
@@ -47,7 +47,7 @@ sequences counted are the minimal-length walks from the origin to $(a, b)$.
 
 - Jackson Evoniuk, Steven Klee, and Van Magnan, "Enumerating Minimal Length Lattice Paths," Journal of Integer Sequences 21 (2018), Article 18.3.6, Theorem (section Minimal walks for S = {(1,0),(0,1),(1,1)}, label sec2), lines 273–275, https://cs.uwaterloo.ca/journals/JIS/VOL21/Klee/klee2.tex
 
-Formalized by `MetaMathlibExt.minimal_lattice_walk_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalLatticeWalkCount.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MinimalLatticeWalkCount.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html#minimal-lattice-walk-count).
+Formalized by `MetaMathlibExt.minimal_lattice_walk_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MinimalLatticeWalkCount.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MinimalLatticeWalkCount.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html#minimal-lattice-walk-count).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Dyck paths and lattice walks](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/dyck-paths-lattice-walks)

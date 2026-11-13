@@ -7,7 +7,7 @@ statement: formalized
 
 # Paperfolding series for odd zeta values
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html).
 
 ## Hurwitz zeta at $3/4$ and odd arguments
 
@@ -30,7 +30,7 @@ excluded since $s = 1$ is the pole of both zeta functions.
 
 - László Tóth, *Evaluating ζ(s) at Odd Positive Integers Using Automatic Dirichlet Series*, Journal of Integer Sequences 28 (2025), Article 25.4.4, Lemma 3 (`jis-2025-25.4.4-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.hurwitzZeta_three_quarters_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TothOddZetaWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#hurwitz-zeta-three-quarters-two-mul-add).
+Stated but not proved: `MetaMathlibExt.hurwitzZeta_three_quarters_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TothOddZetaWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#hurwitz-zeta-three-quarters-two-mul-add).
 
 ## Tóth's paperfolding and Thue–Morse series for $\zeta(2k+1)$
 
@@ -59,7 +59,7 @@ $N(n;k) = (2^{4k+1} - 2^{2k})(2b_n - 1) +
 
 - László Tóth, *Evaluating ζ(s) at Odd Positive Integers Using Automatic Dirichlet Series*, Journal of Integer Sequences 28 (2025), Article 25.4.4, Theorem 2 (`jis-2025-25.4.4-thm-2`); `bₙ`, `tₙ` read from arXiv:2508.04151v1.
 
-Stated but not proved: `MetaMathlibExt.riemannZeta_two_mul_add_one_sub_eq_tsum_paperfolding_thueMorse` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TothOddZetaWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#riemann-zeta-two-mul-add-one-sub-eq-tsum).
+Stated but not proved: `MetaMathlibExt.riemannZeta_two_mul_add_one_sub_eq_tsum_paperfolding_thueMorse` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TothOddZetaWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#riemann-zeta-two-mul-add-one-sub-eq-tsum).
 
 ## A paperfolding Dirichlet series at odd integers
 
@@ -79,7 +79,7 @@ $\sum_{n \ge 1} (2 b_n - 1)/n^{2k+1}$.
 
 - László Tóth, *Evaluating ζ(s) at Odd Positive Integers Using Automatic Dirichlet Series*, Journal of Integer Sequences 28 (2025), Article 25.4.4, Lemma 5 (`jis-2025-25.4.4-lem-5`); `bₙ` read from arXiv:2508.04151v1.
 
-Stated but not proved: `MetaMathlibExt.tsum_paperfolding_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TothOddZetaWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#tsum-paperfolding-two-mul-add-one).
+Stated but not proved: `MetaMathlibExt.tsum_paperfolding_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TothOddZetaWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#tsum-paperfolding-two-mul-add-one).
 
 ## The $\pm 1$ paperfolding Dirichlet series at odd integers
 
@@ -101,7 +101,7 @@ gives the sum over $n \ge 1$ stated here.
 
 - László Tóth, *Evaluating ζ(s) at Odd Positive Integers Using Automatic Dirichlet Series*, Journal of Integer Sequences 28 (2025), Article 25.4.4, Corollary 7 (`jis-2025-25.4.4-cor-7`); `bₙ` read from arXiv:2508.04151v1.
 
-Stated but not proved: `MetaMathlibExt.tsum_neg_one_pow_paperfolding` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TothOddZetaWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#tsum-neg-one-pow-paperfolding).
+Stated but not proved: `MetaMathlibExt.tsum_neg_one_pow_paperfolding` is written with `theorem_wanted` in [WantedExt/NumberTheory/TothOddZetaWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TothOddZetaWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html#tsum-neg-one-pow-paperfolding).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Paperfolding series for odd zeta values](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/paperfolding-series-for-odd-zeta-values)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.15 Impurities
 
-Section 38.15 of the Stacks Project, [Tag 05IW](https://stacks.math.columbia.edu/tag/05IW). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.15 of the Stacks Project, [Tag 05IW](https://stacks.math.columbia.edu/tag/05IW). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05FW, a situation
 
 [Tag 05FW](https://stacks.math.columbia.edu/tag/05FW) in the Stacks Project.
 
-**`AlgebraicGeometry.PrePureSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L60).
+**`AlgebraicGeometry.PrePureSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L60).
 
 > **Stacks Project, Tag 05FW.** The standing pre-pure situation: a finite type morphism
 > `X ⟶ S`, a finite type quasi-coherent module on `X`, and a point of `S`.
@@ -27,7 +27,7 @@ structure PrePureSituation
 
 [Tag 05IX](https://stacks.math.columbia.edu/tag/05IX) in the Stacks Project.
 
-**`AlgebraicGeometry.ImpurityDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L85).
+**`AlgebraicGeometry.ImpurityDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L85).
 
 > **Stacks Project, Tag 05IX.** A base-change diagram together with a specialization over the
 > chosen point of a pre-pure situation and a point above its generalization.
@@ -40,7 +40,7 @@ structure ImpurityDiagram (P : PrePureSituation.{u})
 
 [Tag 05IY](https://stacks.math.columbia.edu/tag/05IY) in the Stacks Project.
 
-**`AlgebraicGeometry.IsImpurity`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L118).
+**`AlgebraicGeometry.IsImpurity`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/Impurities.lean#L118).
 
 > **Stacks Project, Tag 05IY.** An impurity diagram defines an impurity when its chosen point
 > belongs to the relative assassin of the pulled-back module and its closure is disjoint from the
@@ -54,7 +54,7 @@ abbrev IsImpurity (P : PrePureSituation.{u}) (D : ImpurityDiagram P) : Prop
 
 [Tag 05FX](https://stacks.math.columbia.edu/tag/05FX) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_impurity_locallyOfFinitePresentation_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/FinitePresentationBase.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/FinitePresentationBase.lean#L300).
+**`AlgebraicGeometry.exists_impurity_locallyOfFinitePresentation_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/FinitePresentationBase.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/FinitePresentationBase.lean#L300).
 
 > An impurity can be witnessed over a test family which is
 > locally of finite presentation over the base, with its specialized point closed in the fibre over
@@ -72,7 +72,7 @@ theorem exists_impurity_locallyOfFinitePresentation_closedPoint (P : PrePureSitu
 
 [Tag 05IZ](https://stacks.math.columbia.edu/tag/05IZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImpurity_mapBase_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/LimitDescent.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/LimitDescent.lean#L399).
+**`AlgebraicGeometry.exists_isImpurity_mapBase_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/LimitDescent.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/LimitDescent.lean#L399).
 
 > An impurity on a cofiltered limit of affine schemes over the base is the pullback of an
 > impurity at some stage.
@@ -92,7 +92,7 @@ public theorem exists_isImpurity_mapBase_of_isLimit
 
 [Tag 05J0](https://stacks.math.columbia.edu/tag/05J0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteNeighborhood.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteNeighborhood.lean#L235).
+**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_of_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteNeighborhood.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteNeighborhood.lean#L235).
 
 > **Stacks Project, Tag 05J0.** If a pre-pure situation admits an impurity whose test family
 > is quasi-finite over the base at the distinguished point, then it admits one whose test family,
@@ -116,7 +116,7 @@ theorem exists_isImpurity_elementaryEtaleNeighborhood_of_quasiFiniteAt
 
 [Tag 05J1](https://stacks.math.columbia.edu/tag/05J1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImpurity_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteTestFamily.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteTestFamily.lean#L337).
+**`AlgebraicGeometry.exists_isImpurity_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteTestFamily.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/QuasiFiniteTestFamily.lean#L337).
 
 > **Stacks Project, Tag 05J1.** Over a locally Noetherian base, an impurity of the module of a
 > pre-pure situation above the chosen point of the base can be witnessed by an impurity whose test
@@ -132,7 +132,7 @@ theorem exists_isImpurity_quasiFiniteAt (P : PrePureSituation.{u}) [IsLocallyNoe
 
 [Tag 05J2](https://stacks.math.columbia.edu/tag/05J2) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_of_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationDescent.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationDescent.lean#L173).
+**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_of_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationDescent.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationDescent.lean#L173).
 
 > An impurity whose test family is the spectrum of a henselization of the local ring of the base
 > at the distinguished point already occurs over an elementary étale neighbourhood of that point.
@@ -158,7 +158,7 @@ theorem exists_isImpurity_elementaryEtaleNeighborhood_of_henselization
 
 [Tag 05J3](https://stacks.math.columbia.edu/tag/05J3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImpurity_henselization_iff_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationAscent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationAscent.lean#L104). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.exists_isImpurity_henselization_iff_elementaryEtaleNeighborhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationAscent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Impurity/HenselizationAscent.lean#L104). The attribute's comment: “parts (1) and (2)”.
 
 > In a pre-pure situation, an impurity over the henselization of the base at the distinguished
 > point exists if and only if one exists over an elementary étale neighbourhood of that point.
@@ -177,7 +177,7 @@ theorem exists_isImpurity_henselization_iff_elementaryEtaleNeighborhood
            map_point := D.mapsToChosenPoint } : EtaleNeighborhood P.S P.s))
 ```
 
-**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_iff_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean#L248). The attribute's comment: “parts (2) and (3)”.
+**`AlgebraicGeometry.exists_isImpurity_elementaryEtaleNeighborhood_iff_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/RelativelyPure/QuasiFiniteImpurityData.lean#L248). The attribute's comment: “parts (2) and (3)”.
 
 > **Stacks Project, Tag 05J3, parts (2) and (3).** A pre-pure situation admits an impurity
 > whose test family, pointed at the distinguished point, is an elementary étale neighbourhood of
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.15, Tag 05IW](https://stacks.math.columbia.edu/tag/05IW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

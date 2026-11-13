@@ -8,7 +8,7 @@ proof: formalized
 
 # Heilermann's formula
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html).
 
 ## Heilermann's formula
 
@@ -27,7 +27,7 @@ that is, $\mu_0^{n+1} \beta_1^n \beta_2^{n-1} \cdots \beta_n$, which is $\mu_0$ 
 
 - Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117. Zero-indexed: `hankelTransform a n` is the determinant of the `(n + 1) x (n + 1)` Hankel matrix, and the product over `Finset.range n` with shift `beta (j + 1)` and exponent `n - j` gives `beta_1 ^ n, ..., beta_n ^ 1`; for `n = 0` the empty product yields `mu0`. Scope: only the determinant identity is stated; the Jacobi continued fraction data itself is carried by `HasJacobiFraction`.
 
-Formalized by `MetaMathlibExt.hankelTransform_eq_prod_of_hasJacobiFraction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-prod-of-has-jacobi-f).
+Formalized by `MetaMathlibExt.hankelTransform_eq_prod_of_hasJacobiFraction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-prod-of-has-jacobi-f).
 
 ## Hankel transforms of Jacobi fractions do not depend on the linear coefficients
 
@@ -45,7 +45,7 @@ $(a_{i+j})_{0 \le i, j \le n}$ and $(a'_{i+j})_{0 \le i, j \le n}$ are equal.
 
 - Paul Barry, "From Fibonacci to Robbins: Series Reversion and Hankel Transforms," Journal of Integer Sequences 24 (2021), Article 21.10.2, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex>, lines 110-117. Stated over a commutative ring.
 
-Formalized by `MetaMathlibExt.hankelTransform_eq_of_hasJacobiFraction_same_beta`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-of-has-jacobi-fracti).
+Formalized by `MetaMathlibExt.hankelTransform_eq_of_hasJacobiFraction_same_beta`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HeilermannFormula.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-of-has-jacobi-fracti).
 
 ## Weighted Motzkin recurrence for the coefficients of a Jacobi fraction
 
@@ -62,7 +62,7 @@ $a_n = \mu_0 M_{n,0}$ for every $n \ge 0$.
 
 - Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex. Barry does not explicitly state this auxiliary tableau lemma; it is a coefficientwise bridge for the displayed fraction.
 
-Formalized by `MetaMathlibExt.exists_weightedMotzkin_coefficients_of_hasJacobiFraction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkin.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkin.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#exists-weighted-motzkin-coefficients-of).
+Formalized by `MetaMathlibExt.exists_weightedMotzkin_coefficients_of_hasJacobiFraction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkin.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkin.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#exists-weighted-motzkin-coefficients-of).
 
 ## Heilermann's formula for weighted Motzkin arrays
 
@@ -84,7 +84,7 @@ No hypothesis that the $\beta_i$ are nonzero is needed.
 
 - Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex.
 
-Formalized by `MetaMathlibExt.hankelTransform_eq_prod_of_weightedMotzkin`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkinDeterminant.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkinDeterminant.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-prod-of-weighted-mot).
+Formalized by `MetaMathlibExt.hankelTransform_eq_prod_of_weightedMotzkin`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkinDeterminant.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/HeilermannWeightedMotzkinDeterminant.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html#hankel-transform-eq-prod-of-weighted-mot).
 
 ## Depends on
 
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Heilermann's formula](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/hankel-continued-fractions/heilermann-s-formula)

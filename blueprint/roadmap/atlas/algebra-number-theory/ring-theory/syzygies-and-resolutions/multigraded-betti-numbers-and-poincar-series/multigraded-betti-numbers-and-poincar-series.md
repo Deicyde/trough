@@ -8,7 +8,7 @@ proof: formalized
 
 # Multigraded Betti numbers and Poincaré series: its own results
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html).
 
 ## Finite homogeneous generating sets
 
@@ -22,7 +22,7 @@ $\alpha \in \mathbb{Z}^n$, that generates $M$ as an $R$-module.
 
 - Braun-Davis, JIS 23 (2020), span 856-877; see https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex
 
-Formalized by `MetaMathlibExt.MultigradedPolynomialModule.exists_finset_homogeneous_generators`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/FiniteHomogeneousGenerators.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/FiniteHomogeneousGenerators.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#exists-finset-homogeneous-generators).
+Formalized by `MetaMathlibExt.MultigradedPolynomialModule.exists_finset_homogeneous_generators`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/FiniteHomogeneousGenerators.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/FiniteHomogeneousGenerators.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#exists-finset-homogeneous-generators).
 
 ## Finite bases give finite-dimensional multidegree pieces
 
@@ -39,7 +39,7 @@ over $K$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreePiece_finite`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreePieceFinite.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreePieceFinite.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-degree-piece-finite).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreePiece_finite`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreePieceFinite.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDegreePieceFinite.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-degree-piece-finite).
 
 ## Multidegree decomposition of the base-changed resolution
 
@@ -57,7 +57,7 @@ over $\alpha \in \mathbb{Z}^n$.
 
 - Braun-Davis, JIS 23 (2020), lines 856-867. See https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeDecomposition`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedTermDecomposition.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedTermDecomposition.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-degree-decomposition).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeDecomposition`, a definition declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedTermDecomposition.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedTermDecomposition.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-degree-decomposition).
 
 ## Betti numbers do not depend on the choice of base change data
 
@@ -71,7 +71,7 @@ $\alpha \in \mathbb{Z}^n$ and every homological index $i \in \mathbb{N}$.
 
 - Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact lines 866--874. This covers only the fixed-resolution coherence step; independence across resolutions, finite support, Poincaré polynomiality, and Hilbert syzygy are deliberately not claimed here.
 
-Formalized by `MetaMathlibExt.multigradedBettiNumber_eq_of_baseChange`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBettiInvariance.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBettiInvariance.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#multigraded-betti-number-eq-of-base-chan).
+Formalized by `MetaMathlibExt.multigradedBettiNumber_eq_of_baseChange`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBettiInvariance.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBettiInvariance.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#multigraded-betti-number-eq-of-base-chan).
 
 ## Existence of finite multigraded free resolutions
 
@@ -89,7 +89,7 @@ dimension shifting, and Hilbert's syzygy theorem.
 
 - Hoffman–Wang, https://export.arxiv.org/e-print/math/0601101v1 lines 592-612 (finite free graded resolution). The Braun–Davis JIS passage https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex lines 856-876 supplies the motivating Hilbert-syzygy / Poincaré-series context only. No `≤ n` bound is claimed here.
 
-Formalized by `MetaMathlibExt.exists_finite_multigraded_free_resolution`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedHilbertSyzygy.lean, line 1286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedHilbertSyzygy.lean#L1286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#exists-finite-multigraded-free-resolutio).
+Formalized by `MetaMathlibExt.exists_finite_multigraded_free_resolution`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedHilbertSyzygy.lean, line 1286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedHilbertSyzygy.lean#L1286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#exists-finite-multigraded-free-resolutio).
 
 ## Finite support of the multigraded Poincaré coefficients
 
@@ -104,7 +104,7 @@ nonzero at only finitely many $(i, \alpha) \in \mathbb{N} \times \mathbb{Z}^n$.
 
 - Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact line 876. This is the conditional finite-resolution bridge behind that line, not the full Hilbert syzygy existence theorem: it assumes the finite terminating resolution and derives finite coefficient support, without assuming finite support, eventual Betti vanishing, or a polynomial realization, and without constructing the resolution.
 
-Formalized by `MetaMathlibExt.multigradedPoincareCoefficients_hasFiniteSupport_of_finiteResolution`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincareFiniteSupport.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincareFiniteSupport.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#multigraded-poincare-coefficients-has-fi).
+Formalized by `MetaMathlibExt.multigradedPoincareCoefficients_hasFiniteSupport_of_finiteResolution`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincareFiniteSupport.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedPoincareFiniteSupport.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#multigraded-poincare-coefficients-has-fi).
 
 ## Base change of a homogeneous element along zero evaluation
 
@@ -120,7 +120,7 @@ with $d_j = \alpha$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, which split a graded free resolution and take the degree-`α` component after tensoring with `K`.
 
-Formalized by `MetaMathlibExt.MultigradedFreeModule.baseChange_mem_degreeSpan`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedZeroEvalBaseChange.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedZeroEvalBaseChange.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-change-mem-degree-span).
+Formalized by `MetaMathlibExt.MultigradedFreeModule.baseChange_mem_degreeSpan`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedZeroEvalBaseChange.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedZeroEvalBaseChange.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-change-mem-degree-span).
 
 ## The base-changed differential preserves multidegree
 
@@ -139,7 +139,7 @@ $(K \otimes_R F)_i$.
 
 - Benjamin Braun and Brian Davis, "Antichain Simplices," Journal of Integer Sequences 23 (2020), lines 862–867, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>.
 
-Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDifferential_preservesDegree`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDifferential.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDifferential.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-differential-preserves-degr).
+Formalized by `MetaMathlibExt.MultigradedFreeResolution.baseChangedDifferential_preservesDegree`, a theorem declared in [MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDifferential.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/GradedAlgebra/MultigradedBaseChangedDifferential.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html#base-changed-differential-preserves-degr).
 
 ## Depends on
 
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multigraded Betti numbers and Poincaré series](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/syzygies-and-resolutions/multigraded-betti-numbers-and-poincar-series)

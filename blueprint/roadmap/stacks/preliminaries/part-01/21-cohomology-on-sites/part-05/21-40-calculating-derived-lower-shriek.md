@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.40 Calculating derived lower shriek
 
-Section 21.40 of the Stacks Project, [Tag 08P7](https://stacks.math.columbia.edu/tag/08P7). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.40 of the Stacks Project, [Tag 08P7](https://stacks.math.columbia.edu/tag/08P7). 3 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08PI, a lemma
 
 [Tag 08PI](https://stacks.math.columbia.edu/tag/08PI) in the Stacks Project.
 
-**`Stacks.Sites.FibredCategory.fiberHomologyPresheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L124). The attribute's comment: “the presheaf of fibre homology”.
+**`Stacks.Sites.FibredCategory.fiberHomologyPresheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L124). The attribute's comment: “the presheaf of fibre homology”.
 
 > **The presheaf of fibre homology.** The presheaf `L_{n,p}(F)` on the base whose value at `V` is
 > the homology `H_n(C_V, F|_{C_V})` of the fibre at `V`, with restriction maps given by the chosen
@@ -27,7 +27,7 @@ def fiberHomologyPresheafFunctor (n : ℕ) :
       (s.base.Cᵒᵖ ⥤ AddCommGrpCat.{max w uD vD uC})
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologyPresheaf_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L196). The attribute's comment: “the values of the presheaf of fibre homology”.
+**`Stacks.Sites.FibredCategory.fiberHomologyPresheaf_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L196). The attribute's comment: “the values of the presheaf of fibre homology”.
 
 > **The values of the presheaf of fibre homology.** Its value at `V` is the homology
 > `H_n(C_V, F|_{C_V})` of the fibre at `V`.
@@ -40,7 +40,7 @@ lemma fiberHomologyPresheaf_obj (F : s.Cᵒᵖ ⥤ AddCommGrpCat.{max w uD vD uC
         ((Functor.Fiber.fiberInclusion (p := s.p) (S := V.unop)).op ⋙ F) n
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologyPresheaf_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L207). The attribute's comment: “the restriction maps of the presheaf of fibre homology”.
+**`Stacks.Sites.FibredCategory.fiberHomologyPresheaf_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L207). The attribute's comment: “the restriction maps of the presheaf of fibre homology”.
 
 > **The restriction maps of the presheaf of fibre homology.** The restriction map along
 > `h : V' ⟶ V` is the map on homology of Stacks 08PH attached to the chosen pullback functor `h^*`
@@ -54,7 +54,7 @@ lemma fiberHomologyPresheaf_map (F : s.Cᵒᵖ ⥤ AddCommGrpCat.{max w uD vD uC
         ((Functor.chosenPullbacks s.p).pullbackFunctor h) (fiberCartesianRestriction s F h) n
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologyPresheafFunctor_map_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L218). The attribute's comment: “functoriality of the presheaf of fibre homology in the coefficients”.
+**`Stacks.Sites.FibredCategory.fiberHomologyPresheafFunctor_map_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L218). The attribute's comment: “functoriality of the presheaf of fibre homology in the coefficients”.
 
 > **Functoriality of the presheaf of fibre homology in the coefficients.** The map induced by
 > `α : F ⟶ G` is the map on homology of Stacks 08PH attached to the identity functor of the fibre and
@@ -68,7 +68,7 @@ lemma fiberHomologyPresheafFunctor_map_app {F G : s.Cᵒᵖ ⥤ AddCommGrpCat.{m
         (Functor.whiskerLeft (Functor.Fiber.fiberInclusion (p := s.p) (S := V.unop)).op α) n
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologySheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L228). The attribute's comment: “the sheaf of fibre homology”.
+**`Stacks.Sites.FibredCategory.fiberHomologySheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologyPresheaf.lean#L228). The attribute's comment: “the sheaf of fibre homology”.
 
 > **The sheaf `L_n(F)` of fibre homology.** The abelian sheaf on the base associated to the
 > presheaf of fibre homology.
@@ -79,7 +79,7 @@ abbrev fiberHomologySheaf [HasWeakSheafify s.base.J AddCommGrpCat.{max w uD vD u
     Sheaf s.base.J AddCommGrpCat.{max w uD vD uC}
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologySheaf_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean, line 1245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean#L1245).
+**`Stacks.Sites.FibredCategory.fiberHomologySheaf_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean, line 1245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean#L1245).
 
 > Sheafifying the coefficients on the total category does not change the
 > associated sheaf of fibre homology.
@@ -94,7 +94,7 @@ theorem fiberHomologySheaf_sheafify
         ((sheafificationAdjunction s.topology AddCommGrpCat.{max w uD vD uC}).unit.app F)))
 ```
 
-**`Stacks.Sites.FibredCategory.fiberHomologySheafSheafifyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean, line 1290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean#L1290). The attribute's comment: “the sheaf of fibre homology is unchanged by sheafifying the coefficients”.
+**`Stacks.Sites.FibredCategory.fiberHomologySheafSheafifyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean, line 1290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/FibreHomologySheafification.lean#L1290). The attribute's comment: “the sheaf of fibre homology is unchanged by sheafifying the coefficients”.
 
 > **Stacks 08PI.** The sheaf `L_n(F)` of fibre homology is unchanged when the coefficient
 > presheaf is replaced by its sheafification on the total category: the canonical map
@@ -115,7 +115,7 @@ def fiberHomologySheafSheafifyIso
 
 [Tag 08PJ](https://stacks.math.columbia.edu/tag/08PJ) in the Stacks Project.
 
-**`Stacks.Sites.FibredCategory.FibredCategorySituation.derivedLowerShriekHomologyIsoFiberHomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/UliftFreeCoverGenerators.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/UliftFreeCoverGenerators.lean#L356).
+**`Stacks.Sites.FibredCategory.FibredCategorySituation.derivedLowerShriekHomologyIsoFiberHomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/UliftFreeCoverGenerators.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/UliftFreeCoverGenerators.lean#L356).
 
 > **Stacks 08PJ.** Let `p : C ⥤ D` be a fibred category over a ringed site `D`, with `C` carrying
 > the inherited topology and `π` the induced morphism of topoi (Stacks 08P8). For every `n ≥ 0`,
@@ -140,7 +140,7 @@ def derivedLowerShriekHomologyIsoFiberHomology (n : ℕ) :
 
 [Tag 08PK](https://stacks.math.columbia.edu/tag/08PK) in the Stacks Project.
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean#L574). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U); assumes 07AC and cover acyclicity”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean#L574). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U); assumes 07AC and cover acyclicity”.
 
 > For an abelian sheaf `F'` on the source, `L_n g_!(F')` is the sheaf on the total category
 > associated to the presheaf `U ↦ H_n(I_U, F'_U)`. This takes as hypotheses the acyclicity
@@ -158,7 +158,7 @@ def derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf
         ((amelioratedLowerShriek S).obj F').obj n
 ```
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean#L121). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U)”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean#L121). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U)”.
 
 > For an abelian sheaf `F'` on the source, `L_n g_!(F')` is the sheaf on the total category
 > associated to the presheaf `U ↦ H_n(I_U, F'_U)`, where `I_U` is the fibre over `U` of the
@@ -179,4 +179,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.40, Tag 08P7](https://stacks.math.columbia.edu/tag/08P7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

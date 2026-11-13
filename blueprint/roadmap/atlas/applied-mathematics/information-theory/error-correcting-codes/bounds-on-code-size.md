@@ -8,7 +8,7 @@ proof: formalized
 
 # Bounds on code size
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html).
 
 ## Singleton bound
 
@@ -26,7 +26,7 @@ counting the punctured words.
 
 - R. C. Singleton, "Maximum distance q-nary codes", IEEE Transactions on Information Theory 10(2) (1964), 116–118, DOI 10.1109/TIT.1964.1053661.
 
-Formalized by `MathlibExt.Combinatorics.Coding.SingletonBound.singleton_bound`, a theorem declared in [MathlibExt/Combinatorics/Coding/SingletonBound.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/SingletonBound.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#singleton-bound).
+Formalized by `MathlibExt.Combinatorics.Coding.SingletonBound.singleton_bound`, a theorem declared in [MathlibExt/Combinatorics/Coding/SingletonBound.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/SingletonBound.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#singleton-bound).
 
 ## Closed Hamming ball
 
@@ -34,7 +34,7 @@ For finite types $\iota$ and $F$, a word $x : \iota \to F$ and a
 natural number $e$, the closed Hamming ball of radius $e$ about $x$ is the finite set of all words
 $y : \iota \to F$ whose Hamming distance from $x$ is at most $e$.
 
-Formalized by `Hamming.ball`, a definition declared in [MathlibExt/InformationTheory/HammingBall.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/HammingBall.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#ball).
+Formalized by `Hamming.ball`, a definition declared in [MathlibExt/InformationTheory/HammingBall.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/HammingBall.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#ball).
 
 ## Size of a Hamming ball
 
@@ -42,7 +42,7 @@ For finite types $\iota$ and $F$, every word $x : \iota \to F$ and
 every natural number $e$, the closed Hamming ball of radius $e$ about $x$ has
 $\sum_{k=0}^{e} \binom{|\iota|}{k} (|F| - 1)^k$ elements.
 
-Formalized by `Hamming.card_ball`, a theorem declared in [MathlibExt/InformationTheory/HammingBall.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/HammingBall.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#card-ball).
+Formalized by `Hamming.card_ball`, a theorem declared in [MathlibExt/InformationTheory/HammingBall.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/HammingBall.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#card-ball).
 
 ## Size of a Hamming ball of fixed-length words
 
@@ -50,7 +50,7 @@ Let $n \ge 1$ and let $F$ be a finite
 alphabet with $q \ge 2$ letters. For every word $x \in F^n$ and every natural number $e$, the
 closed Hamming ball of radius $e$ about $x$ has $\sum_{k=0}^{e} \binom{n}{k} (q - 1)^k$ elements.
 
-Formalized by `Hamming.card_ball_fin`, a theorem declared in [MathlibExt/InformationTheory/HammingBall.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/InformationTheory/HammingBall.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#card-ball-fin).
+Formalized by `Hamming.card_ball_fin`, a theorem declared in [MathlibExt/InformationTheory/HammingBall.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/InformationTheory/HammingBall.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#card-ball-fin).
 
 ## Hamming bound
 
@@ -72,7 +72,7 @@ Binary source: R. W. Hamming, "Error Detecting and Error Correcting Codes",
 Bell System Technical Journal 29 (1950), 147–160,
 DOI 10.1002/j.1538-7305.1950.tb00463.x.
 
-Formalized by `MathlibExt.Combinatorics.Coding.HammingSpherePacking.hamming_sphere_packing_bound`, a theorem declared in [MathlibExt/Combinatorics/Coding/HammingSpherePacking.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Coding/HammingSpherePacking.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#hamming-sphere-packing-bound).
+Formalized by `MathlibExt.Combinatorics.Coding.HammingSpherePacking.hamming_sphere_packing_bound`, a theorem declared in [MathlibExt/Combinatorics/Coding/HammingSpherePacking.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Coding/HammingSpherePacking.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html#hamming-sphere-packing-bound).
 
 ## Depends on
 
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bounds on code size](https://deicyde.github.io/atlas-lean/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/InformationTheory/error-correcting-codes/bounds-on-code-size)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Hierholzer's algorithm for Euler circuits
 
-42 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html).
+42 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html).
 
 ## Edge list of an adjacency function
 
@@ -18,7 +18,7 @@ pairs $(u, w)$, one for each entry $w$ of $R(u)$, taken over the vertices $u$ in
 vertex enumeration of $G$ and, for each $u$, in the order of $R(u)$. A repeated entry gives a
 repeated pair.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.edgeListOf`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#edge-list-of).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.edgeListOf`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#edge-list-of).
 
 ## Edge list of a directed graph
 
@@ -28,7 +28,7 @@ $u$ in the order of the vertex enumeration of $G$ and, for each $u$, in adjacenc
 repeated adjacency entry gives a repeated pair, so $G$ is read as a multigraph with one edge
 occurrence per entry.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.edgeList`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#edge-list).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.edgeList`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#edge-list).
 
 ## Steps of a walk
 
@@ -36,7 +36,7 @@ For a finite sequence of vertices $W = (w_0, w_1, \dots, w_n)$, the
 steps of $W$ are the list of consecutive pairs $((w_0, w_1), (w_1, w_2), \dots, (w_{n-1}, w_n))$,
 in order. A sequence with at most one vertex has no steps.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.walkEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#walk-edges).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.walkEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#walk-edges).
 
 ## Balanced directed multigraph
 
@@ -44,7 +44,7 @@ A finite directed multigraph, read from its adjacency lists
 with each entry $w$ in the list of $u$ counted as one occurrence of the edge $u \to w$, is
 balanced when every vertex is the source of as many edge occurrences as it is the target of.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsBalanced`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-balanced).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsBalanced`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-balanced).
 
 ## Semi-balanced directed multigraph
 
@@ -54,7 +54,7 @@ $[x = t]$ equals the number entering $x$ plus $[x = s]$, where $[P]$ is $1$ if $
 otherwise. So for $s \ne t$, one more edge occurrence leaves $s$ than enters it, one more enters
 $t$ than leaves it, and every other vertex is balanced; for $s = t$ every vertex is balanced.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsSemiBalanced`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-semi-balanced).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsSemiBalanced`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-semi-balanced).
 
 ## Euler path in a directed multigraph
 
@@ -63,7 +63,7 @@ $W = (w_0, \dots, w_k)$ is an Euler path from $s$ to $t$ when $w_0 = s$, $w_k = 
 of steps $(w_0, w_1), \dots, (w_{k-1}, w_k)$ is a permutation of the list of edge occurrences of
 the graph, so that each edge occurrence, counted with multiplicity, is traversed exactly once.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsEulerPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-euler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsEulerPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-euler-path).
 
 ## Euler circuit in a directed multigraph
 
@@ -72,7 +72,7 @@ vertices $W$ is an Euler circuit from a vertex $s$ when it is an Euler path from
 starts and ends at $s$, and its list of consecutive pairs is a permutation of the list of edge
 occurrences of the graph.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsEulerCircuit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-euler-circuit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsEulerCircuit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-euler-circuit).
 
 ## Hierholzer's recursion
 
@@ -89,7 +89,7 @@ the costs of the two calls.
 This follows unused edges depth first and splices sub-tours in; too little fuel can stop it
 early. Hierholzer's algorithm runs it with fuel one more than the number of edge occurrences.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.visit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#visit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.visit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#visit).
 
 ## Hierholzer's algorithm
 
@@ -100,7 +100,7 @@ runs Hierholzer's recursion from $s$ with fuel $m + 1$, with the adjacency list 
 its list of remaining out-neighbours and the empty list as accumulator, and returns the list of
 vertices produced by the recursion, at the cost of the recursion.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer).
 
 ## Steps of a concatenated walk
 
@@ -108,7 +108,7 @@ Let $A$ and $B$ be nonempty vertex sequences, where $A$
 ends at the vertex $a$ and $B$ starts at the vertex $b$. Then the steps of the concatenation
 $A B$ are the steps of $A$, followed by the step $(a, b)$, followed by the steps of $B$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.walkEdges_append`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#walk-edges-append).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.walkEdges_append`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#walk-edges-append).
 
 ## Moving a block of a list in front of an element is a permutation
 
@@ -119,7 +119,7 @@ one-element list.
 
 This is how a sub-tour $B$ is spliced in front of the edge $e$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.perm_splice`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#perm-splice).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.perm_splice`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#perm-splice).
 
 ## Semi-balanced edge list
 
@@ -130,7 +130,7 @@ if $P$ holds and $0$ otherwise. So for $v \ne t$, $v$ has one more outgoing than
 occurrence, $t$ one more incoming than outgoing, and every other vertex is balanced; for $v = t$
 every vertex is balanced.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.SemiBalancedEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#semi-balanced-edges).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.SemiBalancedEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#semi-balanced-edges).
 
 ## Balanced edge list
 
@@ -138,7 +138,7 @@ A list $E$ of ordered pairs of vertices, read as directed edge
 occurrences, is balanced when every vertex $x$ occurs as the first component of exactly as many
 entries of $E$ as it occurs as the second component, counted with multiplicity.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.BalancedEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#balanced-edges).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.BalancedEdges`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#balanced-edges).
 
 ## Contract of Hierholzer's recursion
 
@@ -156,7 +156,7 @@ by $E(R')$; every vertex is the first component of as many pairs of $E(R')$ as i
 component of; $R'(x)$ is empty for every vertex $x$ of $W$; $R'(x)$ is a suffix of $R(x)$ for
 every vertex $x$; and $c + |E(R')| = |E(R)|$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.visit_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#visit-spec).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.visit_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#visit-spec).
 
 ## Hierholzer's algorithm returns a trail in a directed multigraph
 
@@ -168,7 +168,7 @@ permutation of the list of consecutive pairs of $W$ followed by some further lis
 is a walk from $s$ to $t$ that uses each edge occurrence at most once; reachability is not
 assumed.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_trail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-trail).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_trail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-trail).
 
 ## Hierholzer's algorithm finds Euler paths in directed multigraphs
 
@@ -180,7 +180,7 @@ at every vertex when $s = t$) and the source of every edge of $G$ is reachable f
 vertex sequence returned by Hierholzer's algorithm on $G$ from $s$ is an Euler path of $G$ from $s$
 to $t$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_isEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-is-euler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_isEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-is-euler-path).
 
 ## Hierholzer's algorithm finds Euler circuits in directed multigraphs
 
@@ -194,7 +194,7 @@ returned by Hierholzer's algorithm on $G$ from $s$ is an Euler circuit of $G$ fr
 
 - CLRS, third edition, Problem 22-3, sufficiency with the algorithm; strong connectivity is weakened to reachability from $s$ of the source of every edge.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_isEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-is-euler-circuit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_isEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-is-euler-circuit).
 
 ## Running time of Hierholzer's algorithm
 
@@ -207,7 +207,7 @@ edge occurrences of $G$, that is, the length of its edge list.
 The cost model charges one unit per edge traversal (removing the head of an adjacency list);
 reading an adjacency list and emitting a vertex are free.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-time).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.hierholzer_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#hierholzer-time).
 
 ## A directed multigraph with an Euler path is semi-balanced
 
@@ -216,7 +216,7 @@ multigraph has an Euler path from $s$ to $t$, then it is semi-balanced for $s$ a
 edge occurrences, $s$ has one more outgoing than incoming edge, $t$ one more incoming than
 outgoing, and every other vertex is balanced (every vertex, when $s = t$).
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.isSemiBalanced_of_isEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-semi-balanced-of-is-euler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.isSemiBalanced_of_isEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-semi-balanced-of-is-euler-path).
 
 ## A directed multigraph with an Euler circuit is balanced
 
@@ -226,7 +226,7 @@ many edge occurrences as it is the target of.
 
 This is the necessity direction of CLRS Problem 22-3.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.isBalanced_of_isEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-balanced-of-is-euler-circuit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.isBalanced_of_isEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-balanced-of-is-euler-circuit).
 
 ## Euler path criterion for directed multigraphs
 
@@ -237,7 +237,7 @@ and only if $G$ is semi-balanced for $s$ and $t$: at $s$ one more edge occurrenc
 enters, at $t$ one more enters than leaves, and every other vertex is the source of exactly as
 many edge occurrences as it is the target of (every vertex, when $s = t$).
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isEulerPath_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-euler-path-iff).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isEulerPath_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-euler-path-iff).
 
 ## Euler circuit criterion for directed multigraphs
 
@@ -251,14 +251,14 @@ as it is the target of.
 
 - CLRS, third edition, Problem 22-3; strong connectivity is weakened to reachability from $s$ of the source of every edge.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isEulerCircuit_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-euler-circuit-iff).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isEulerCircuit_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean, line 478](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/Hierholzer.lean#L478). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-euler-circuit-iff).
 
 ## Unordered edge of an ordered pair
 
 The ordered pair $(a, b)$ of vertices, viewed as the
 unordered pair $\{a, b\}$, so that $(a, b)$ and $(b, a)$ give the same unordered edge.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.usym`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#usym).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.usym`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#usym).
 
 ## Degree in an undirected edge list
 
@@ -267,7 +267,7 @@ multigraph, each given as a pair $(a, b)$, the degree of a vertex $x$ is the num
 $R$ whose first component is $x$ plus the number whose second component is $x$; parallel edges
 count separately and a loop $(x, x)$ counts twice.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg).
 
 ## Degree parity condition for two endpoints
 
@@ -277,7 +277,7 @@ number $\deg_R(x) + [x = v] + [x = t]$ is even, where $\deg_R$ is the degree in 
 twice) and $[P]$ is $1$ if $P$ holds and $0$ otherwise. Thus if $v \ne t$, exactly $v$ and $t$
 have odd degree, and if $v = t$, every degree is even.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.EvenExcept`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.EvenExcept`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except).
 
 ## Reachability in an undirected multigraph
 
@@ -286,7 +286,7 @@ vertices), a vertex $x$ is reachable from a vertex $s$ when there are vertices
 $s = v_0, v_1, \dots, v_n = x$ with $n \ge 0$ such that for each $i < n$, $(v_i, v_{i+1})$ or
 $(v_{i+1}, v_i)$ belongs to $E$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.UReach`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#ureach).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.UReach`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#ureach).
 
 ## Euler path in an undirected multigraph
 
@@ -296,14 +296,14 @@ of $E$ from $s$ to $t$ when $w_0 = s$, $w_n = t$, and the multiset of unordered 
 $\{w_{i-1}, w_i\}$ for $1 \le i \le n$ equals the multiset of the edges of $E$ taken as unordered
 pairs. Thus every edge is traversed exactly once, in either direction.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsUEulerPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-ueuler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.IsUEulerPath`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#is-ueuler-path).
 
 ## Other endpoint of an edge
 
 For an edge $e = (a, b)$ and a vertex $v$, the other endpoint
 of $e$ at $v$ is $b$ if $a = v$, and $a$ otherwise; in particular a loop $(v, v)$ gives $v$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.otherEnd`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#other-end).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.otherEnd`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#other-end).
 
 ## Undirected Hierholzer recursion
 
@@ -316,7 +316,7 @@ recurses with fuel $f$ from the other endpoint of $e$ at $v$ on the shortened li
 accumulator $A$, obtaining a vertex list $A'$ and remaining edges $R'$, and then recurses with fuel
 $f$ from $v$ on $R'$ with accumulator $A'$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uvisit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uvisit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uvisit`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uvisit).
 
 ## Undirected Hierholzer's algorithm
 
@@ -325,7 +325,7 @@ vertices) and a start vertex $s$, run the undirected Hierholzer recursion from $
 empty accumulator and fuel $|E| + 1$, and return the list of emitted vertices; its cost is the
 cost of that recursion.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer).
 
 ## Degree after removing an edge
 
@@ -335,7 +335,7 @@ vertex. Then the degree of $x$ in $R$ equals the degree of $x$ in the list obtai
 removing the first occurrence of $e$, plus $[x = a] + [x = b]$, where $[P]$ is $1$ if $P$ holds
 and $0$ otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg_erase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg-erase).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg_erase`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg-erase).
 
 ## An edge at a vertex joins it to its other endpoint
 
@@ -343,7 +343,7 @@ If an ordered pair $e = (a, b)$ of
 vertices has $a = v$ or $b = v$, then the unordered pair $\{a, b\}$ equals $\{v, w\}$, where $w$
 is the other endpoint of $e$ at $v$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.usym_eq_otherEnd`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#usym-eq-other-end).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.usym_eq_otherEnd`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#usym-eq-other-end).
 
 ## Invariant of the undirected Hierholzer recursion
 
@@ -357,7 +357,7 @@ permutation of the consecutive pairs of $W$ followed by the edges of $R'$, all a
 every vertex has even degree in $R'$; every vertex of $W$ has degree $0$ in $R'$; $R'$ is a
 sublist of $R$; and $c + |R'| = |R|$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uvisit_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uvisit-spec).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uvisit_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uvisit-spec).
 
 ## Undirected Hierholzer's algorithm returns a trail
 
@@ -368,7 +368,7 @@ on $E$ from $s$ starts at $s$ and ends at $t$, and the consecutive pairs of $W$,
 pairs, form a sub-multiset of the edges of $E$ as unordered pairs: no edge is traversed more often
 than it occurs in $E$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_trail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-trail).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_trail`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-trail).
 
 ## Undirected Hierholzer's algorithm finds Euler paths
 
@@ -378,7 +378,7 @@ $E$ (no vertex has odd degree when $s = t$), and suppose the first endpoint of e
 reachable from $s$ through edges of $E$. Then the vertex sequence returned by the undirected
 Hierholzer algorithm on $E$ from $s$ is an Euler path of $E$ from $s$ to $t$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-is-ueuler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-is-ueuler-path).
 
 ## Undirected Hierholzer's algorithm finds Euler circuits
 
@@ -388,7 +388,7 @@ such that the first endpoint of every edge of $E$ is reachable from $s$ through 
 the vertex sequence returned by the undirected Hierholzer algorithm on $E$ from $s$ is an Euler
 path of $E$ from $s$ to $s$, that is, an Euler circuit at $s$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-is-ueuler-circuit).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerCircuit`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-is-ueuler-circuit).
 
 ## Cost of the undirected Hierholzer algorithm
 
@@ -398,7 +398,7 @@ when $s = t$), and suppose the first endpoint of every edge of $E$ is reachable 
 edges of $E$. Then the undirected Hierholzer algorithm on $E$ from $s$ costs exactly $|E|$, the
 number of edges of $E$, in the cost model that charges one unit per removed edge.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-time).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.uhierholzer_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#uhierholzer-time).
 
 ## Multiplicity of a vertex in an unordered edge
 
@@ -406,7 +406,7 @@ For a vertex $x$, this assigns to an
 unordered pair $\{a, b\}$ the number $[x = a] + [x = b]$ of its endpoints equal to $x$, where
 $[P]$ is $1$ if $P$ holds and $0$ otherwise; in particular a loop $\{x, x\}$ gives $2$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.endsAt`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#ends-at).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.endsAt`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#ends-at).
 
 ## Degrees depend only on the unordered edges
 
@@ -414,7 +414,7 @@ Let $A$ and $B$ be finite lists of edges of an
 undirected multigraph such that the multiset of edges of $A$, taken as unordered pairs, equals that
 of $B$. Then every vertex has the same degree in $A$ as in $B$.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg_eq_of_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg-eq-of-perm).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.udeg_eq_of_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#udeg-eq-of-perm).
 
 ## Degrees along a walk
 
@@ -424,7 +424,7 @@ $(w_{i-1}, w_i)$ for $1 \le i \le n$. In it every vertex other than $s$ and $t$ 
 (a loop counts twice); if $s \ne t$, then $s$ and $t$ have odd degree, and if $s = t$, every
 vertex has even degree.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.evenExcept_walkEdges`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except-walk-edges).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.evenExcept_walkEdges`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except-walk-edges).
 
 ## Degrees of an undirected Euler path
 
@@ -433,7 +433,7 @@ multigraph and let $W$ be an Euler path of $E$ from $s$ to $t$. Then every verte
 and $t$ has even degree in $E$ (a loop counts twice); if $s \ne t$, then $s$ and $t$ have odd
 degree, and if $s = t$, every vertex has even degree.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.evenExcept_of_isUEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except-of-is-ueuler-path).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.evenExcept_of_isUEulerPath`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#even-except-of-is-ueuler-path).
 
 ## Euler's theorem for undirected multigraphs
 
@@ -447,7 +447,7 @@ degree (a loop counts twice towards the degree).
 This is the algorithmic form: the proof shows that Hierholzer's algorithm started at $s$ finds
 such a path.
 
-Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isUEulerPath_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-ueuler-path-iff).
+Formalized by `Cslib.Algorithms.Lean.Hierholzer.exists_isUEulerPath_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/HierholzerUndirected.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html#exists-is-ueuler-path-iff).
 
 ## Depends on
 
@@ -456,4 +456,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hierholzer's algorithm for Euler circuits](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/traversal-and-connectivity/hierholzer-s-algorithm-for-euler-circuits)

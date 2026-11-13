@@ -7,7 +7,7 @@ statement: formalized
 
 # Hypergraph k-cut for fixed k
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html).
 
 ## Decision version of hypergraph $k$-cut
 
@@ -20,7 +20,7 @@ $\{0, \dots, n-1\}$ onto $\{0, \dots, k-1\}$, such that the total cost of the hy
 (counted with multiplicity) that meet two different parts is at most $B$. Inputs that do not
 decode are rejected.
 
-Formalized by `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutDec`, a definition declared in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-dec).
+Formalized by `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutDec`, a definition declared in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-dec).
 
 ## The EGRES question on hypergraph $k$-cut for fixed $k$
 
@@ -31,7 +31,7 @@ costs, and a budget $B$ iff every hyperedge lists only vertices below $n$ and so
 vertices into $k$ non-empty parts has total cost of the hyperedges meeting two parts at most $B$;
 inputs that do not decode are rejected.
 
-Formalized by `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP`, a definition declared in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-in-p).
+Formalized by `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP`, a definition declared in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-in-p).
 
 ## Hypergraph $k$-cut for fixed $k$ is in P
 
@@ -49,7 +49,7 @@ hypergraph $k$-cut with non-negative hyperedge costs, which decides this problem
 
 - EGRES Open (Egerváry Research Group), list of open problems, Minimum k-way cut in a hypergraph, https://oldlemon.cs.elte.hu/egres/open/Minimum_k-way_cut_in_a_hypergraph; resolution: K. Chandrasekaran and C. Chekuri, Hypergraph k-cut for fixed k in deterministic polynomial time, FOCS 2020; arXiv:2009.12442, abstract: for hypergraphs with non-negative hyperedge costs and fixed k, a deterministic polynomial-time algorithm for Hypergraph-k-cut (a least-cost F ⊆ E such that G - F has at least k components, equivalently a partition of V into k non-empty parts minimizing the cost of crossing hyperedges), https://arxiv.org/abs/2009.12442.
 
-Stated but not proved: `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP_holds` is written with `theorem_wanted` in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-in-p-holds).
+Stated but not proved: `MathlibExt.Complexity.HypergraphKCutFixedKAMR29Problem0056Wanted.hypergraphKCutInP_holds` is written with `theorem_wanted` in [WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/HypergraphKCutFixedKAMR29Problem0056Wanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html#hypergraph-kcut-in-p-holds).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hypergraph k-cut for fixed k](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/hypergraph-k-cut-for-fixed-k)

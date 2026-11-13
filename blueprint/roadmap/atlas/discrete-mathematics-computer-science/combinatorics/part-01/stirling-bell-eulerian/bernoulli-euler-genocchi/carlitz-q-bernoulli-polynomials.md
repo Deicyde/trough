@@ -7,7 +7,7 @@ statement: formalized
 
 # Carlitz q-Bernoulli polynomials
 
-32 results, 13 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html).
+32 results, 13 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html).
 
 ## The $q$-analogue of a real number
 
@@ -23,7 +23,7 @@ $0$ and the quotient is taken to be $0$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 1.
 
-Formalized by `MetaMathlibExt.qBracket`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket).
+Formalized by `MetaMathlibExt.qBracket`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket).
 
 ## Carlitz-type sequences
 
@@ -36,7 +36,7 @@ $T_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} a_k q^{kx}$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Definition in Section 2.1.
 
-Formalized by `MetaMathlibExt.IsCarlitzTypeWith`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-with).
+Formalized by `MetaMathlibExt.IsCarlitzTypeWith`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-with).
 
 ## Carlitz $q$-polynomials $\eta_n$
 
@@ -50,7 +50,7 @@ written $\eta_n = \eta_n(0)$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.1 (examples after Theorem 2.1); after L. Carlitz (1948).
 
-Formalized by `MetaMathlibExt.carlitzEtaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly).
+Formalized by `MetaMathlibExt.carlitzEtaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly).
 
 ## Carlitz $q$-Bernoulli polynomials
 
@@ -64,7 +64,7 @@ $a_k = (k + 1)/[k + 1]$. The Carlitz $q$-Bernoulli numbers are $\beta_n = \beta_
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.1 (examples after Theorem 2.1); after L. Carlitz (1948).
 
-Formalized by `MetaMathlibExt.carlitzBetaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-poly).
+Formalized by `MetaMathlibExt.carlitzBetaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-poly).
 
 ## The $q$-analogue of $0$ is $0$
 
@@ -76,7 +76,7 @@ $q = 1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 1.
 
-Formalized by `MetaMathlibExt.qBracket_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket-zero).
+Formalized by `MetaMathlibExt.qBracket_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket-zero).
 
 ## The $q$-number of $1$
 
@@ -87,7 +87,7 @@ satisfies $[1] = 1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 1.
 
-Formalized by `MetaMathlibExt.qBracket_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket-one).
+Formalized by `MetaMathlibExt.qBracket_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#q-bracket-one).
 
 ## The zeroth term of a Carlitz-type sequence
 
@@ -99,7 +99,7 @@ for every real $x$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Definition in Section 2.1.
 
-Formalized by `MetaMathlibExt.IsCarlitzTypeWith.apply_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#apply-zero).
+Formalized by `MetaMathlibExt.IsCarlitzTypeWith.apply_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#apply-zero).
 
 ## The zeroth Carlitz $q$-polynomial
 
@@ -110,7 +110,7 @@ $\eta_0(x)$ equals $1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.1.
 
-Formalized by `MetaMathlibExt.carlitzEtaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly-zero).
+Formalized by `MetaMathlibExt.carlitzEtaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly-zero).
 
 ## Carlitz's initial value $\eta_1 = 0$
 
@@ -121,7 +121,7 @@ Carlitz's $q$-polynomial $\eta_1$ at $0$ equals $0$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Sections 1 and 2.1.
 
-Formalized by `MetaMathlibExt.carlitzEtaPoly_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly-one-zero).
+Formalized by `MetaMathlibExt.carlitzEtaPoly_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-eta-poly-one-zero).
 
 ## The zeroth Carlitz $q$-Bernoulli polynomial
 
@@ -132,7 +132,7 @@ Carlitz $q$-Bernoulli polynomial $\beta_0(x)$ equals $1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.1.
 
-Formalized by `MetaMathlibExt.carlitzBetaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-poly-zero).
+Formalized by `MetaMathlibExt.carlitzBetaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-poly-zero).
 
 ## Characterization of Carlitz-type sequences
 
@@ -147,7 +147,7 @@ This is a $q$-analogue of the characterization of Appell sequences.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.isCarlitzType_iff_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-iff-sum-choose).
+Stated but not proved: `MetaMathlibExt.isCarlitzType_iff_sum_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-iff-sum-choose).
 
 ## Binomial inversion
 
@@ -159,7 +159,7 @@ identities $v_n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} u_k$ hold for all natur
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.binomial_inversion_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#binomial-inversion-iff).
+Stated but not proved: `MetaMathlibExt.binomial_inversion_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#binomial-inversion-iff).
 
 ## Sums of $q^{rk} (k)^n$ via Carlitz-type sequences
 
@@ -180,7 +180,7 @@ where $0^0 = 1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow).
 
 ## Sums of $q^{rk} (k)^{n-d}$ via Carlitz-type sequences
 
@@ -202,7 +202,7 @@ where $0^0 = 1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.4.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-sub).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-sub).
 
 ## Symbolic recurrence for Carlitz-type sequences
 
@@ -221,7 +221,7 @@ $P(0) = 0$ and leaves $a_0$ free.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.5.
 
-Stated but not proved: `MetaMathlibExt.carlitzType_symbolic_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-type-symbolic-recurrence).
+Stated but not proved: `MetaMathlibExt.carlitzType_symbolic_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-type-symbolic-recurrence).
 
 ## Closure properties of Carlitz-type sequences
 
@@ -240,7 +240,7 @@ is $0$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.6.
 
-Stated but not proved: `MetaMathlibExt.isCarlitzTypeWith_closure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-with-closure).
+Stated but not proved: `MetaMathlibExt.isCarlitzTypeWith_closure` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#is-carlitz-type-with-closure).
 
 ## Sums of $q^k (k)^{n-1}$ via Carlitz's $q$-polynomials $\eta_n$
 
@@ -256,7 +256,7 @@ where $0^0 = 1$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.7.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzEta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-carlitz-et).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzEta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-carlitz-et).
 
 ## Weighted $q$-power sums via Carlitz's $q$-Bernoulli polynomials
 
@@ -273,7 +273,7 @@ where $0^0 = 1$, and the first term is $0$ when $n = 0$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.8.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-carlitz-be).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-carlitz-be).
 
 ## Extended Carlitz $q$-Bernoulli polynomials
 
@@ -288,7 +288,7 @@ The extended Carlitz $q$-Bernoulli numbers are $\beta_n^{(r)} = \beta_n^{(r)}(0)
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.2 (definition of the extended family).
 
-Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly).
+Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly`, a definition declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly).
 
 ## Extended Carlitz $q$-Bernoulli polynomials of order zero
 
@@ -300,7 +300,7 @@ $q$-polynomial $\eta_n(x)$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.2.
 
-Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-zero).
+Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-zero).
 
 ## Recurrence for the extended Carlitz $q$-Bernoulli polynomials
 
@@ -312,7 +312,7 @@ $\beta_n^{(r+1)}(x) = q^{-x} \bigl(\beta_n^{(r)}(x) + (q - 1) \beta_{n+1}^{(r)}(
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Section 2.2.
 
-Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-succ).
+Formalized by `MetaMathlibExt.extendedCarlitzBetaPoly_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-succ).
 
 ## Closed forms for the extended Carlitz $q$-Bernoulli polynomials
 
@@ -331,7 +331,7 @@ $q^r \sum_{j=0}^{n} \binom{n}{j} q^j \beta_j^{(r)}(0) = \beta_n^{(r)}(0)$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.9.
 
-Stated but not proved: `MetaMathlibExt.extendedCarlitzBetaPoly_closed_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-closed-forms).
+Stated but not proved: `MetaMathlibExt.extendedCarlitzBetaPoly_closed_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-poly-closed-forms).
 
 ## Weighted $q$-power sums via the extended Carlitz $q$-Bernoulli polynomials
 
@@ -349,7 +349,7 @@ where $0^0 = 1$, and the first term is $0$ when $n = 0$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.10.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_extendedCarlitzBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-extended-c).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_extendedCarlitzBeta` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-bracket-pow-eq-extended-c).
 
 ## Series for the extended Carlitz $q$-Bernoulli numbers
 
@@ -368,7 +368,7 @@ $$
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.11.
 
-Stated but not proved: `MetaMathlibExt.extendedCarlitzBeta_eq_tsum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-eq-tsum).
+Stated but not proved: `MetaMathlibExt.extendedCarlitzBeta_eq_tsum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-eq-tsum).
 
 ## Bernoulli numbers as a limit as $q \to 1^-$
 
@@ -383,7 +383,7 @@ where $B_n$ is the $n$-th Bernoulli number, with the convention $B_1 = -1/2$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.12.
 
-Stated but not proved: `MetaMathlibExt.tendsto_tsum_qBracket_bernoulli` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-tsum-q-bracket-bernoulli).
+Stated but not proved: `MetaMathlibExt.tendsto_tsum_qBracket_bernoulli` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-tsum-q-bracket-bernoulli).
 
 ## Sums of $q^{ir}$ times $q$-falling factorials
 
@@ -398,7 +398,7 @@ $$\sum_{i=0}^{N-1} q^{ir} [i]_k = \left(\sum_{\ell=0}^{r-1}
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.14.
 
-Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qFalling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-falling).
+Stated but not proved: `MetaMathlibExt.sum_qpow_mul_qFalling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#sum-qpow-mul-q-falling).
 
 ## Limit of the $q$-power-sum interpolant at $0$: first closed form
 
@@ -415,7 +415,7 @@ $$(-1)^k [k]! \sum_{i=0}^{r-1} \frac{q^{ik} [r-1]_i}{[k+r]_{i+1}}.$$
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.15.
 
-Stated but not proved: `MetaMathlibExt.tendsto_qInterpolant_div_qBracket` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-q-interpolant-div-q-bracket).
+Stated but not proved: `MetaMathlibExt.tendsto_qInterpolant_div_qBracket` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-q-interpolant-div-q-bracket).
 
 ## Partial fraction decomposition of $q^{kx}$ over a $q$-falling factorial
 
@@ -431,7 +431,7 @@ $$\frac{q^{kx}}{[x][x-1]\cdots[x-k]} = \frac{1}{[k]!} \sum_{i=0}^{k} (-1)^{k-i} 
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.16.
 
-Stated but not proved: `MetaMathlibExt.qpow_div_qFalling_partial_fractions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#qpow-div-q-falling-partial-fractions).
+Stated but not proved: `MetaMathlibExt.qpow_div_qFalling_partial_fractions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#qpow-div-q-falling-partial-fractions).
 
 ## Second closed form of a limit of $q$-interpolated falling-factorial sums
 
@@ -452,7 +452,7 @@ $$g_r(q, k) = (-1)^k [k]! \, [r-1]! \, q^{1-r} \sum_{i=0}^{r-1}
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.17.
 
-Stated but not proved: `MetaMathlibExt.tendsto_qInterpolant_div_qBracket'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-q-interpolant-div-q-bracket-2).
+Stated but not proved: `MetaMathlibExt.tendsto_qInterpolant_div_qBracket'` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#tendsto-q-interpolant-div-q-bracket-2).
 
 ## Extended Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers
 
@@ -478,7 +478,7 @@ $$
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Theorem 2.13.
 
-Stated but not proved: `MetaMathlibExt.extendedCarlitzBeta_eq_sum_qStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-eq-sum-q-stirling).
+Stated but not proved: `MetaMathlibExt.extendedCarlitzBeta_eq_sum_qStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#extended-carlitz-beta-eq-sum-q-stirling).
 
 ## Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers
 
@@ -494,7 +494,7 @@ $\beta_n + q \beta_{n+1} = \sum_{k=0}^{n} (-1)^k \frac{[k]!}{[k+2]} S_q(n,k)$.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.18.
 
-Stated but not proved: `MetaMathlibExt.carlitzBeta_add_mul_succ_eq_sum_qStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-add-mul-succ-eq-sum-q-stirl).
+Stated but not proved: `MetaMathlibExt.carlitzBeta_add_mul_succ_eq_sum_qStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#carlitz-beta-add-mul-succ-eq-sum-q-stirl).
 
 ## Sum of consecutive Bernoulli numbers via Stirling numbers
 
@@ -507,7 +507,7 @@ Stirling numbers of the second kind.
 
 - Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Corollary 2.19.
 
-Stated but not proved: `MetaMathlibExt.bernoulli_add_bernoulli_succ_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#bernoulli-add-bernoulli-succ-eq-sum-stir).
+Stated but not proved: `MetaMathlibExt.bernoulli_add_bernoulli_succ_eq_sum_stirlingSecond` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CarlitzTypeQPolynomialsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html#bernoulli-add-bernoulli-succ-eq-sum-stir).
 
 ## Depends on
 
@@ -516,4 +516,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Carlitz q-Bernoulli polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bernoulli-euler-genocchi/carlitz-q-bernoulli-polynomials)

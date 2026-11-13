@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 101.7 Quasi-compact morphisms to 101.22 The Deligne-Mumford locus
+# 101.7 Quasi-compact morphisms to 101.26 Flat at a point
 
 - [101.7 Quasi-compact morphisms](101-7-quasi-compact-morphisms.md)
 - [101.8 Noetherian algebraic stacks](101-8-noetherian-algebraic-stacks.md)
@@ -20,3 +20,7 @@ navigation: transparent
 - [101.20 Presentations and properties of algebraic stacks](101-20-presentations-and-properties-of-algebraic.md)
 - [101.21 Special presentations of algebraic stacks](101-21-special-presentations-of-algebraic-stacks.md)
 - [101.22 The Deligne-Mumford locus](101-22-the-deligne-mumford-locus.md)
+- [101.23 Locally quasi-finite morphisms](101-23-locally-quasi-finite-morphisms.md)
+- [101.24 Quasi-finite morphisms](101-24-quasi-finite-morphisms.md)
+- [101.25 Flat morphisms](101-25-flat-morphisms.md)
+- [101.26 Flat at a point](101-26-flat-at-a-point.md)

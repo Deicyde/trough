@@ -7,7 +7,7 @@ statement: formalized
 
 # Path cover of a digraph
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html).
 
 ## Instances of DIRECTED PATH COVER
 
@@ -16,7 +16,7 @@ $(n, E, K)$, where the natural number $n$ is the number of vertices, the list $E
 pairs of natural numbers lists the directed edges, and the natural number $K$ bounds the number
 of paths.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DirectedPathCoverInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DirectedPathCoverInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-instance).
 
 ## Directed adjacency in an edge list
 
@@ -25,7 +25,7 @@ and natural numbers $u$ and $v$, the directed adjacency test of $E$ at $(u, v)$ 
 that is true exactly when the pair $(u, v)$ occurs in $E$, that is, when $E$ contains an edge
 from $u$ to $v$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DAdj`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#dadj).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DAdj`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#dadj).
 
 ## Well-formed DIRECTED PATH COVER instances
 
@@ -33,7 +33,7 @@ An instance $(n, E, K)$ of
 DIRECTED PATH COVER is well formed when the edge list $E$ has no repeated entries and every
 edge $(a, b)$ in $E$ satisfies $a < n$, $b < n$ and $a \ne b$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#well-formed).
 
 ## Feasible DIRECTED PATH COVER instances
 
@@ -43,7 +43,7 @@ such that every path has no repeated vertex, every vertex on a path is less than
 whenever $v$ immediately follows $u$ on a path the pair $(u, v)$ occurs in $E$; and such that
 every vertex $v < n$ lies on some path, and all paths containing $v$ are equal.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DirectedPathCoverFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.DirectedPathCoverFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-feasible).
 
 ## DIRECTED PATH COVER as a decision problem
 
@@ -52,7 +52,7 @@ that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitst
 to an instance $(n, E, K)$ of DIRECTED PATH COVER that is well formed and feasible; bitstrings
 that do not decode to an instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.directedPathCoverDec`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.directedPathCoverDec`, a definition declared in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-dec).
 
 ## DIRECTED PATH COVER is NP-complete
 
@@ -64,7 +64,7 @@ DIRECTED PATH COVER.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), PATH COVER (the `K = 1` slice is Hamiltonian path).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.directedPathCover_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.DirectedPathCover.directedPathCover_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/DirectedPathCoverWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html#directed-path-cover-np-complete).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Path cover of a digraph](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/paths-cycles-and-subgraphs/path-cover-of-a-digraph)

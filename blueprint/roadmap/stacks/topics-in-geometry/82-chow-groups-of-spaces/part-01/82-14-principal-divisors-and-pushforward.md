@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.14 Principal divisors and pushforward
 
-Section 82.14 of the Stacks Project, [Tag 0EQ3](https://stacks.math.columbia.edu/tag/0EQ3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.14 of the Stacks Project, [Tag 0EQ3](https://stacks.math.columbia.edu/tag/0EQ3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EQ4, a lemma
 
 [Tag 0EQ4](https://stacks.math.columbia.edu/tag/0EQ4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.properPushforward_principalDivisorCycle_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisor.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisor.lean#L403). The attribute's comment: “REDUCED, not proved: p\_*div(f) = div(g) in Z\_\{n-1}(Y) IF AND ONLY IF it holds at every prime divisor of Y; proved away from them, using dim\_δ(X) = dim\_δ(Y). Take g to be rationalFunctionNorm, the norm Nm\_\{R(X)/R(Y)} constructed here, for the source's statement”.
+**`AlgebraicGeometry.Space.properPushforward_principalDivisorCycle_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisor.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisor.lean#L403). The attribute's comment: “REDUCED, not proved: p\_*div(f) = div(g) in Z\_\{n-1}(Y) IF AND ONLY IF it holds at every prime divisor of Y; proved away from them, using dim\_δ(X) = dim\_δ(Y). Take g to be rationalFunctionNorm, the norm Nm\_\{R(X)/R(Y)} constructed here, for the source's statement”.
 
 > **Stacks 0EQ4, reduced to its coefficients at the prime divisors of `Y`.** In Situation
 > 0EDT let `X/B` and `Y/B` be good, let `p : X ⟶ Y` be quasi-compact over `B`, let `X` and `Y` be
@@ -60,7 +60,7 @@ theorem properPushforward_principalDivisorCycle_eq_iff
           principalDivisorCoefficients D.site D.base D.base_mem hY.1 hdecY embY g hg W
 ```
 
-**`AlgebraicGeometry.Space.properCyclePushforward_rationalFunctionPrincipalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisorCanonical.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisorCanonical.lean#L642). The attribute's comment: “p\_* div(f) = div(Nm\_\{R(X)/R(Y)}(f)) in Z\_\{n-1}(Y), for X/B, Y/B good and integral with dim\_δ X = dim\_δ Y = n, p : X → Y dominant and proper, f ∈ R(X)^*; div is 0EQ1 at the canonical embeddings, p\_* is 0EP2, the norm is constructed; nothing carried”.
+**`AlgebraicGeometry.Space.properCyclePushforward_rationalFunctionPrincipalDivisorCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisorCanonical.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardPrincipalDivisorCanonical.lean#L641). The attribute's comment: “p\_* div(f) = div(Nm\_\{R(X)/R(Y)}(f)) in Z\_\{n-1}(Y), for X/B, Y/B good and integral with dim\_δ X = dim\_δ Y = n, p : X → Y dominant and proper, f ∈ R(X)^*; div is 0EQ1 at the canonical embeddings, p\_* is 0EP2, the norm is constructed; nothing carried”.
 
 > **Stacks 0EQ4.** In Situation 0EDT let `X/B` and `Y/B` be good, let `X` and `Y` be integral
 > with `n = dim_δ(X) = dim_δ(Y)`, let `p : X ⟶ Y` be a dominant proper morphism, let `f ∈ R(X)^*`
@@ -92,7 +92,7 @@ theorem properCyclePushforward_rationalFunctionPrincipalDivisorCycle {p : X ⟶ 
             p hdom) f)
 ```
 
-**`Stacks.Norm.norm_baseChange_eq_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Norm/BaseChangeProduct.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Norm/BaseChangeProduct.lean#L154). The attribute's comment: “the field-theoretic norm compatibility at the end of the proof, for which the source says 'we omit the proof': for L/K finite and M/K finite separable, M ⊗\_K L = ∏ M\_i and Nm\_\{L/K}(t) = ∏ Nm\_\{M\_i/M}(t\_i)”.
+**`Stacks.Norm.norm_baseChange_eq_prod_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Norm/BaseChangeProduct.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Norm/BaseChangeProduct.lean#L154). The attribute's comment: “the field-theoretic norm compatibility at the end of the proof, for which the source says 'we omit the proof': for L/K finite and M/K finite separable, M ⊗\_K L = ∏ M\_i and Nm\_\{L/K}(t) = ∏ Nm\_\{M\_i/M}(t\_i)”.
 
 > **The field-theoretic step of Stacks 0EQ4, whose proof the source omits.** Let `K` be a
 > field, `L/K` a finite extension and `M/K` a finite *separable* extension. Then `M ⊗_K L` is a
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.14, Tag 0EQ3](https://stacks.math.columbia.edu/tag/0EQ3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

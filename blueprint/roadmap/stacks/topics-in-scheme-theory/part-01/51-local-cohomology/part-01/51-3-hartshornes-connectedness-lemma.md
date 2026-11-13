@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.3 Hartshorne's connectedness lemma
 
-Section 51.3 of the Stacks Project, [Tag 0FIV](https://stacks.math.columbia.edu/tag/0FIV). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.3 of the Stacks Project, [Tag 0FIV](https://stacks.math.columbia.edu/tag/0FIV). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BLR, a lemma
 
 [Tag 0BLR](https://stacks.math.columbia.edu/tag/0BLR) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectedness.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectedness.lean#L217). The attribute's comment: “the punctured spectrum of `A`”. References: EGA IV (5.10.7), “local ring case”; SGA 2 XII (4.6), “more general”.
+**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectedness.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectedness.lean#L217). The attribute's comment: “the punctured spectrum of `A`”. References: EGA IV (5.10.7), “local ring case”; SGA 2 XII (4.6), “more general”.
 
 > **Stacks Project, Tag 0BLR (first assertion).** The same statement in the
 > complement-of-the-closed-point spelling, which is the one the source uses.
@@ -25,7 +25,7 @@ theorem isConnected_puncturedSpectrum_of_two_le_depth (A : Type u) [CommRing A] 
     IsConnected ({closedPoint A}ᶜ : Set (PrimeSpectrum A))
 ```
 
-**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_henselization_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean#L86). The attribute's comment: “the punctured spectrum of `A^h`”.
+**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_henselization_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean#L86). The attribute's comment: “the punctured spectrum of `A^h`”.
 
 > **Stacks Project, Tag 0BLR (second assertion).** The punctured spectrum of a henselization of
 > a Noetherian local ring of depth at least two is connected.
@@ -39,7 +39,7 @@ theorem isConnected_puncturedSpectrum_henselization_of_two_le_depth
     IsConnected ({closedPoint Ah}ᶜ : Set (PrimeSpectrum Ah))
 ```
 
-**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_strictHenselization_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean#L103). The attribute's comment: “the punctured spectrum of `A^sh`”.
+**`Stacks.PuncturedSpectrum.isConnected_puncturedSpectrum_strictHenselization_of_two_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/HartshorneConnectednessHenselian.lean#L103). The attribute's comment: “the punctured spectrum of `A^sh`”.
 
 > **Stacks Project, Tag 0BLR (third assertion).** The punctured spectrum of a strict
 > henselization of a Noetherian local ring of depth at least two is connected.
@@ -58,7 +58,7 @@ theorem isConnected_puncturedSpectrum_strictHenselization_of_two_le_depth
 
 [Tag 0FIW](https://stacks.math.columbia.edu/tag/0FIW) in the Stacks Project.
 
-**`Stacks.Equidimensional.equidimensional_of_isCatenary_of_propertySkRing_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CatenaryEquidimensional.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CatenaryEquidimensional.lean#L154). References: EGA IV (5.10.9).
+**`Stacks.Equidimensional.equidimensional_of_isCatenary_of_propertySkRing_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CatenaryEquidimensional.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CatenaryEquidimensional.lean#L154). References: EGA IV (5.10.9).
 
 > **Stacks Project, Tag 0FIW** (EGA IV, Corollary 5.10.9). Let `A` be a Noetherian local ring
 > which is catenary and satisfies Serre's condition `(S₂)`. Then `Spec(A)` is equidimensional.
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.3, Tag 0FIV](https://stacks.math.columbia.edu/tag/0FIV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.14 Obtaining a scheme
 
-Section 66.14 of the Stacks Project, [Tag 07S5](https://stacks.math.columbia.edu/tag/07S5). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.14 of the Stacks Project, [Tag 07S5](https://stacks.math.columbia.edu/tag/07S5). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07S6, a proposition
 
 [Tag 07S6](https://stacks.math.columbia.edu/tag/07S6) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_schemeQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FppfQuotient.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FppfQuotient.lean#L363). References: SGA 3 V (4.1), “(iv)”.
+**`AlgebraicGeometry.GroupoidScheme.exists_schemeQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FppfQuotient.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FppfQuotient.lean#L363). References: SGA 3 V (4.1), “(iv)”.
 
 > **Stacks 07S6.** Let `(U, R, s, t, c)` be a groupoid scheme over `S` with `s` and `t` finite
 > locally free, with `(t, s)` an equivalence relation, and such that every nonempty closed subset
@@ -45,7 +45,7 @@ theorem exists_schemeQuotient (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
           (groupoidPreRelation G) p hp hM)
 ```
 
-**`AlgebraicGeometry.Space.isRepresentable_quotientSheaf_of_isInvariantOpen_isAffineOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L229). The attribute's comment: “representability of the quotient sheaf”. References: SGA 3 V (4.1), “(iv), special case”; SGA 3 V (7.1), “(iv), special case”.
+**`AlgebraicGeometry.Space.isRepresentable_quotientSheaf_of_isInvariantOpen_isAffineOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L229). The attribute's comment: “representability of the quotient sheaf”. References: SGA 3 V (4.1), “(iv), special case”; SGA 3 V (7.1), “(iv), special case”.
 
 > **The fppf quotient sheaf of a finite locally free groupoid covered by invariant affine opens
 > is representable.** For a groupoid scheme over `S` with finite locally free source and target whose
@@ -67,7 +67,7 @@ theorem isRepresentable_quotientSheaf_of_isInvariantOpen_isAffineOpen_cover {S :
     (quotientSheaf J F (groupoidPreRelation G)).obj.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.exists_quotientMap_isRepresented_of_isInvariantOpen_isAffineOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L346). The attribute's comment: “the quotient scheme and the three conclusion clauses, on a given site”. References: SGA 3 V (4.1), “invariant affine cover”.
+**`AlgebraicGeometry.Space.exists_quotientMap_isRepresented_of_isInvariantOpen_isAffineOpen_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L346). The attribute's comment: “the quotient scheme and the three conclusion clauses, on a given site”. References: SGA 3 V (4.1), “invariant affine cover”.
 
 > **The quotient scheme and the quotient morphism, on a given big fppf site.** Under the
 > hypotheses of
@@ -100,7 +100,7 @@ theorem exists_quotientMap_isRepresented_of_isInvariantOpen_isAffineOpen_cover
             F.op.whiskerLeft (yoneda.map f)
 ```
 
-**`AlgebraicGeometry.Space.exists_quotientMap_isRepresented_of_affineOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L514). The attribute's comment: “the three conclusion clauses from the affine-orbit condition, on a given site”. References: SGA 3 V (4.1), “(iv)”.
+**`AlgebraicGeometry.Space.exists_quotientMap_isRepresented_of_affineOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L514). The attribute's comment: “the three conclusion clauses from the affine-orbit condition, on a given site”. References: SGA 3 V (4.1), “(iv)”.
 
 > **The quotient scheme and the quotient morphism for a groupoid with affine orbits, on a given
 > big fppf site.** The same conclusion as
@@ -131,7 +131,7 @@ theorem exists_quotientMap_isRepresented_of_affineOrbits {S : Scheme.{u}} (G : G
             F.op.whiskerLeft (yoneda.map f)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_finiteFlatQuotient_of_affineOrbits_of_bigFppfSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L551). The attribute's comment: “the finite flat quotient, given a big fppf site containing the groupoid”. References: SGA 3 V (4.1), “more general”.
+**`AlgebraicGeometry.Space.nonempty_finiteFlatQuotient_of_affineOrbits_of_bigFppfSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L551). The attribute's comment: “the finite flat quotient, given a big fppf site containing the groupoid”. References: SGA 3 V (4.1), “more general”.
 
 > **A finite flat quotient of a groupoid with affine orbits, given a big fppf site.** Let
 > `(U, R, s, t, c)` be a groupoid scheme over `S` with `s` and `t` finite locally free and with
@@ -153,7 +153,7 @@ theorem nonempty_finiteFlatQuotient_of_affineOrbits_of_bigFppfSite {S : Scheme.{
     Nonempty (FiniteFlatQuotient G)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_finiteFlatQuotient_of_affineOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L581). References: SGA 3 V (4.1), “more general”; SGA 3 V (7.1), “special case”.
+**`AlgebraicGeometry.Space.nonempty_finiteFlatQuotient_of_affineOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientCharts.lean#L581). References: SGA 3 V (4.1), “more general”; SGA 3 V (7.1), “special case”.
 
 > **Finite flat quotients of groupoids with affine orbits.** Let `(U, R, s, t, c)` be a groupoid
 > scheme over a scheme `S` such that
@@ -182,7 +182,7 @@ theorem nonempty_finiteFlatQuotient_of_affineOrbits {S : Scheme.{u}} (G : Groupo
 
 [Tag 07S7](https://stacks.math.columbia.edu/tag/07S7) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_finiteFlatQuotient_actionGroupoid_of_geometry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean#L399). The attribute's comment: “the quotient sheaf is a scheme; all seven alternatives of condition (3)”. References: SGA 3 IX (2.3), “2.3(a)”; SGA 3 V (4.1), “special case”; SGA 3 V (9.0), “partial”; SGA 3 VIB (9.3), “Case 2° of Remark 9.3 b)”; SGA 3 XVI (1.1), “more general”; SGA 3 XXV (4.2), “special case”.
+**`AlgebraicGeometry.nonempty_finiteFlatQuotient_actionGroupoid_of_geometry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean#L399). The attribute's comment: “the quotient sheaf is a scheme; all seven alternatives of condition (3)”. References: SGA 3 IX (2.3), “2.3(a)”; SGA 3 V (4.1), “special case”; SGA 3 V (9.0), “partial”; SGA 3 VIB (9.3), “Case 2° of Remark 9.3 b)”; SGA 3 XVI (1.1), “more general”; SGA 3 XXV (4.2), “special case”.
 
 > Let `S` be a scheme, `G ⟶ S` a group scheme, `X ⟶ S` a
 > morphism of schemes and `a : G ×_S X ⟶ X` an action. Assume that `G ⟶ S` is finite locally
@@ -202,7 +202,7 @@ theorem nonempty_finiteFlatQuotient_actionGroupoid_of_geometry [IsFiniteLocallyF
     Nonempty (FiniteFlatQuotient (actionGroupoid (Over.mk (𝟙 S)) G X))
 ```
 
-**`AlgebraicGeometry.isFppfTorsor_quotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean#L422). The attribute's comment: “the fppf torsor clause: shear isomorphism and fppf-local sections”.
+**`AlgebraicGeometry.isFppfTorsor_quotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FreeGroupSchemeQuotient.lean#L422). The attribute's comment: “the fppf torsor clause: shear isomorphism and fppf-local sections”.
 
 > For a finite flat quotient `M = X/G` of the action groupoid, the morphism
 > `G ×_S X ⟶ X ×_M X` sending `(g, x)` to `(g · x, x)` is an isomorphism, and `X ⟶ M` is itself an
@@ -224,7 +224,7 @@ theorem isFppfTorsor_quotientMap [IsFiniteLocallyFree G.hom]
 
 [Tag 0BBM](https://stacks.math.columbia.edu/tag/0BBM) in the Stacks Project.
 
-**`Stacks.Groupoids.FiniteFlatQuotient.quasiSeparated_space_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L84). The attribute's comment: “part (1), quasi-separated over the base”.
+**`Stacks.Groupoids.FiniteFlatQuotient.quasiSeparated_space_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L84). The attribute's comment: “part (1), quasi-separated over the base”.
 
 > If the object scheme of the groupoid is quasi-separated over `S`, then so is the quotient
 > scheme.
@@ -234,7 +234,7 @@ theorem quasiSeparated_space_hom (Q : FiniteFlatQuotient G)
     (hU : QuasiSeparated G.objects.hom) : QuasiSeparated Q.space.hom
 ```
 
-**`Stacks.Groupoids.FiniteFlatQuotient.quasiSeparatedSpace_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L91). The attribute's comment: “part (2), quasi-separated”.
+**`Stacks.Groupoids.FiniteFlatQuotient.quasiSeparatedSpace_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L91). The attribute's comment: “part (2), quasi-separated”.
 
 > If the object scheme of the groupoid is quasi-separated, then so is the quotient scheme.
 
@@ -243,7 +243,7 @@ theorem quasiSeparatedSpace_space (Q : FiniteFlatQuotient G)
     (hU : QuasiSeparatedSpace G.objects.left) : QuasiSeparatedSpace Q.space.left
 ```
 
-**`Stacks.Groupoids.FiniteFlatQuotient.isSeparated_space_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L98). The attribute's comment: “part (3), separated over the base”. References: SGA 1 V (1.6), “partial”.
+**`Stacks.Groupoids.FiniteFlatQuotient.isSeparated_space_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L98). The attribute's comment: “part (3), separated over the base”. References: SGA 1 V (1.6), “partial”.
 
 > If the object scheme of the groupoid is separated over `S`, then so is the quotient scheme.
 
@@ -252,7 +252,7 @@ theorem isSeparated_space_hom (Q : FiniteFlatQuotient G)
     (hU : IsSeparated G.objects.hom) : IsSeparated Q.space.hom
 ```
 
-**`Stacks.Groupoids.FiniteFlatQuotient.isSeparated_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L105). The attribute's comment: “part (4), separated”. References: SGA 1 V (1.6), “partial”.
+**`Stacks.Groupoids.FiniteFlatQuotient.isSeparated_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFlatQuotientSeparated.lean#L105). The attribute's comment: “part (4), separated”. References: SGA 1 V (1.6), “partial”.
 
 > If the object scheme of the groupoid is separated, then so is the quotient scheme.
 
@@ -268,4 +268,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.14, Tag 07S5](https://stacks.math.columbia.edu/tag/07S5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

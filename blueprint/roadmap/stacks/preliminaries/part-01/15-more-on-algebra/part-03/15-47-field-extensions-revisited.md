@@ -8,7 +8,7 @@ proof: formalized
 
 # 15.47 Field extensions, revisited
 
-Section 15.47 of the Stacks Project, [Tag 07P0](https://stacks.math.columbia.edu/tag/07P0). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.47 of the Stacks Project, [Tag 07P0](https://stacks.math.columbia.edu/tag/07P0). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07P1, a definition
 
@@ -16,14 +16,14 @@ Section 15.47 of the Stacks Project, [Tag 07P0](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`_root_.PIndependent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.PIndependent#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L121) (StacksFrontier): “p-independent families”.
-- [`_root_.PBasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.PBasis#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L125) (StacksFrontier): “p-bases”.
+- [`_root_.PIndependent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.PIndependent#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L121) (StacksFrontier): “p-independent families”.
+- [`_root_.PBasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.PBasis#doc) registered with `add_to_stacks` in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L125) (StacksFrontier): “p-bases”.
 
 ## Tag 07P2, a lemma
 
 [Tag 07P2](https://stacks.math.columbia.edu/tag/07P2) in the Stacks Project.
 
-**`exists_pBasis_extending`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasis.lean#L1319). The attribute's comment: “extension to p-basis”. References: EGA 0 (21.4.2), “more general”.
+**`exists_pBasis_extending`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasis.lean#L1319). The attribute's comment: “extension to p-basis”. References: EGA 0 (21.4.2), “more general”.
 
 > **Stacks 07P2** (extension to p-basis).
 > Every `p`-independent family `{x_i}` over `k` extends to a `p`-basis: there is a subset `S ⊆ K`
@@ -36,7 +36,7 @@ theorem exists_pBasis_extending
     ∃ S : Set K, Set.range x ⊆ S ∧ PBasis k (Subtype.val : S → K) p
 ```
 
-**`exists_pBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasis.lean#L1341). The attribute's comment: “existence of p-basis”. References: EGA 0 (21.4.2).
+**`exists_pBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasis.lean#L1341). The attribute's comment: “existence of p-basis”. References: EGA 0 (21.4.2).
 
 > **Stacks 07P2** (existence of p-basis).
 > There is a subset of `K` that is a `p`-basis of `K` over `k`.
@@ -46,7 +46,7 @@ theorem exists_pBasis (p : ℕ) [hp : Fact (Nat.Prime p)] [CharP K p] :
     ∃ S : Set K, PBasis k (Subtype.val : S → K) p
 ```
 
-**`pIndependent_iff_linearIndependent_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasis.lean#L1368). The attribute's comment: “(1)<=>(2)”. References: EGA 0 (21.2.4), “partial”; EGA 0 (21.2.5), “partial”; EGA 0 (21.4.5); EGA 0 (21.4.6), “(b) ⇔ (c)”.
+**`pIndependent_iff_linearIndependent_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasis.lean#L1368). The attribute's comment: “(1)<=>(2)”. References: EGA 0 (21.2.4), “partial”; EGA 0 (21.2.5), “partial”; EGA 0 (21.4.5); EGA 0 (21.4.6), “(b) ⇔ (c)”.
 
 > **Stacks 07P2** ((1)<=>(2)).
 > For a family `x : I → K`, the elements `{x_i}` are `p`-independent over `k` if and only if the
@@ -59,7 +59,7 @@ theorem pIndependent_iff_linearIndependent_differentials
       LinearIndependent K (fun i => (KaehlerDifferential.D k K) (x i))
 ```
 
-**`pBasis_iff_basis_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasis.lean#L1402). The attribute's comment: “(a)<=>(b)”. References: EGA 0 (21.4.5), “p-base case”; EGA 0 (21.1.7), “a)⇒c), special case”; EGA 0 (21.2.4), “special case”; EGA 0 (21.2.5), “special case”; EGA 0 (21.4.4), “more general”.
+**`pBasis_iff_basis_differentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasis.lean, line 1402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasis.lean#L1402). The attribute's comment: “(a)<=>(b)”. References: EGA 0 (21.4.5), “p-base case”; EGA 0 (21.1.7), “a)⇒c), special case”; EGA 0 (21.2.4), “special case”; EGA 0 (21.2.5), “special case”; EGA 0 (21.4.4), “more general”.
 
 > **Stacks 07P2** ((a)<=>(b)).
 > For a family `x : I → K`, the elements `{x_i}` form a `p`-basis of `K` over `k` if and only if the
@@ -78,7 +78,7 @@ theorem pBasis_iff_basis_differentials
 
 [Tag 07P3](https://stacks.math.columbia.edu/tag/07P3) in the Stacks Project.
 
-**`intersection_subfields_07P3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/DirectedSubfields.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/DirectedSubfields.lean#L171). References: EGA 0 (21.8.1).
+**`intersection_subfields_07P3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/DirectedSubfields.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/DirectedSubfields.lean#L171). References: EGA 0 (21.8.1).
 
 > Let `K/k` be a field extension and `{K_α}_{α ∈ A}` a nonempty directed family of
 > intermediate fields with intersection `k`. Then for every `n` and every `K`-subspace
@@ -104,7 +104,7 @@ theorem intersection_subfields_07P3 {A : Type*} [Nonempty A]
 
 [Tag 07P4](https://stacks.math.columbia.edu/tag/07P4) in the Stacks Project.
 
-**`iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq_iInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L631). References: EGA 0 (21.8.5), “k₀=K^p, L/K finite”; EGA 0 (21.8.3), “a) => c), k₀=F\_p”.
+**`iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq_iInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L631). References: EGA 0 (21.8.5), “k₀=K^p, L/K finite”; EGA 0 (21.8.3), “a) => c), k₀=F\_p”.
 
 > Let `Kα` be a downward-directed family of subfields of a field `K` of characteristic
 > `p`, each containing the `p`-th powers, and suppose their intersection is exactly the subfield
@@ -131,7 +131,7 @@ public theorem iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq
 
 [Tag 07P5](https://stacks.math.columbia.edu/tag/07P5) in the Stacks Project.
 
-**`fractionFields_powerSeries_polynomial_subrings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 1230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L1230). References: EGA 0 (21.8.8), “∩K\_J=K^p, A\_J⊂A finite”.
+**`fractionFields_powerSeries_polynomial_subrings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 1230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L1230). References: EGA 0 (21.8.8), “∩K\_J=K^p, A\_J⊂A finite”.
 
 > Let `x` be a p-basis of a field `k` of characteristic `p`. Inside
 > `A = k[[X₁, ..., Xₙ]][Y₁, ..., Yₘ]`, let `AJ` be obtained by taking coefficients in the
@@ -176,4 +176,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.47, Tag 07P0](https://stacks.math.columbia.edu/tag/07P0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

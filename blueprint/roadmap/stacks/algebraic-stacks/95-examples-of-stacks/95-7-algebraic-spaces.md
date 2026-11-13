@@ -8,13 +8,13 @@ proof: formalized
 
 # 95.7 Algebraic spaces
 
-Section 95.7 of the Stacks Project, [Tag 04SP](https://stacks.math.columbia.edu/tag/04SP). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 95.7 of the Stacks Project, [Tag 04SP](https://stacks.math.columbia.edu/tag/04SP). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04U8, an equation
 
 [Tag 04U8](https://stacks.math.columbia.edu/tag/04U8) in the Stacks Project.
 
-**`AlgebraicGeometry.spaceHomEquivPullbackHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VaryingBaseHom.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/VaryingBaseHom.lean#L82).
+**`AlgebraicGeometry.spaceHomEquivPullbackHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VaryingBaseHom.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/VaryingBaseHom.lean#L82).
 
 > The hom-set equation for algebraic spaces over varying representable bases.
 
@@ -42,7 +42,7 @@ noncomputable def spaceHomEquivPullbackHom
 
 [Tag 04U9](https://stacks.math.columbia.edu/tag/04U9) in the Stacks Project.
 
-**`AlgebraicGeometry.spacesProjection_isStronglyCartesian_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StronglyCartesian.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StronglyCartesian.lean#L80).
+**`AlgebraicGeometry.spacesProjection_isStronglyCartesian_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StronglyCartesian.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StronglyCartesian.lean#L80).
 
 > **Stacks 04U9.** A morphism of algebraic spaces over varying schemes is strongly
 > cartesian if and only if its canonical comparison with the base change of its target is an
@@ -64,7 +64,7 @@ theorem spacesProjection_isStronglyCartesian_iff
 
 [Tag 04UA](https://stacks.math.columbia.edu/tag/04UA) in the Stacks Project.
 
-**`AlgebraicGeometry.spacesProjection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean, line 1084](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean#L1084). The attribute's comment: “condition (1)”.
+**`AlgebraicGeometry.spacesProjection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean#L1089). The attribute's comment: “condition (1)”.
 
 > The projection from algebraic spaces over schemes is a fibred category.
 
@@ -73,7 +73,7 @@ theorem spacesProjection_isFibered :
     (spacesProjection B S hS).IsFibered
 ```
 
-**`AlgebraicGeometry.spacesProjection_isMorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean, line 1092](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean#L1092). The attribute's comment: “condition (2)”.
+**`AlgebraicGeometry.spacesProjection_isMorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean, line 1097](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Prestack.lean#L1097). The attribute's comment: “condition (2)”.
 
 > Morphisms of algebraic spaces over a fixed scheme satisfy fppf descent.
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 95.7, Tag 04SP](https://stacks.math.columbia.edu/tag/04SP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Stirling numbers of the first kind
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html).
 
 ## Signed Stirling numbers of the first kind
 
@@ -17,7 +17,7 @@ Stirling number of the first kind is the integer $(-1)^{n-k} c(n,k)$, where $c(n
 unsigned Stirling number of the first kind (the number of permutations of $n$ elements with
 exactly $k$ cycles) and $n - k$ is truncated subtraction, equal to $0$ when $k > n$.
 
-Formalized by `MetaMathlibExt.signedStirlingFirst`, a definition declared in [MathlibExt/Combinatorics/Enumerative/SignedStirlingFirst.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SignedStirlingFirst.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#signed-stirling-first).
+Formalized by `MetaMathlibExt.signedStirlingFirst`, a definition declared in [MathlibExt/Combinatorics/Enumerative/SignedStirlingFirst.lean, line 20](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SignedStirlingFirst.lean#L20). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#signed-stirling-first).
 
 ## Number of cycles of a permutation
 
@@ -26,7 +26,7 @@ the number of cycles of $\sigma$, counting each fixed point as a cycle of length
 number of equivalence classes of $\alpha$ under the relation that holds between $x$ and $y$ when
 $\sigma^i(x) = y$ for some integer $i$.
 
-Formalized by `MetaMathlibExt.cycleQuotientCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#cycle-quotient-count).
+Formalized by `MetaMathlibExt.cycleQuotientCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#cycle-quotient-count).
 
 ## Counting cycles via the cycle type
 
@@ -35,7 +35,7 @@ number of cycles of $\sigma$, counting each fixed point as a cycle of length one
 number of cycles of $\sigma$ of length at least $2$ (the length of its cycle type) plus the
 number of fixed points of $\sigma$.
 
-Formalized by `MetaMathlibExt.cycleQuotientCount_eq`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#cycle-quotient-count-eq).
+Formalized by `MetaMathlibExt.cycleQuotientCount_eq`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#cycle-quotient-count-eq).
 
 ## Stirling numbers of the first kind count permutations by cycles
 
@@ -46,7 +46,7 @@ equals $k$ is the unsigned Stirling number of the first kind $c(n, k)$. In other
 $c(n, k)$ counts the permutations of an $n$-element set with exactly $k$ cycles, each fixed
 point counted as a cycle of length one.
 
-Formalized by `MetaMathlibExt.card_perm_cycleCount_eq_stirlingFirst`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#card-perm-cycle-count-eq-stirling-first).
+Formalized by `MetaMathlibExt.card_perm_cycleCount_eq_stirlingFirst`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Stirling.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Stirling.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#card-perm-cycle-count-eq-stirling-first).
 
 ## Rising factorial generates Stirling numbers of the first kind
 
@@ -54,14 +54,14 @@ The rising factorial is the generating polynomial of the unsigned Stirling numbe
 first kind: `ascPochhammer S n = ∑_{k=0}^{n} stirlingFirst n k * X ^ k`
 (Graham–Knuth–Patashnik, §6.1).
 
-Formalized by `Nat.sum_stirlingFirst_mul_X_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#sum-stirling-first-mul-x-pow).
+Formalized by `Nat.sum_stirlingFirst_mul_X_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#sum-stirling-first-mul-x-pow).
 
 ## Stirling numbers of the first kind and the rising factorial
 
 `∑_{k=0}^{n} stirlingFirst n k * x ^ k = x (x + 1) ⋯ (x + n - 1)`
 (Graham–Knuth–Patashnik, §6.1).
 
-Formalized by `Nat.sum_stirlingFirst_mul_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#sum-stirling-first-mul-pow).
+Formalized by `Nat.sum_stirlingFirst_mul_pow`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingAscPochhammer.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#sum-stirling-first-mul-pow).
 
 ## Addition formula for Stirling numbers of the first kind
 
@@ -77,7 +77,7 @@ where a term with $j > k$ is read as $0$.
 
 - Grzegorz Rządkowski, "Two Formulas for Successive Derivatives and Their Applications," Journal of Integer Sequences 12 (2009), Article 09.8.2, Theorem, equation (ex44), lines 257–263, https://cs.uwaterloo.ca/journals/JIS/VOL12/Rzadkowski/rzadkowski3.tex
 
-Formalized by `MetaMathlibExt.stirlingFirst_addition`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingFirstAddition.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/StirlingFirstAddition.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#stirling-first-addition).
+Formalized by `MetaMathlibExt.stirlingFirst_addition`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/StirlingFirstAddition.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/StirlingFirstAddition.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html#stirling-first-addition).
 
 ## Depends on
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stirling numbers of the first kind](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/stirling-numbers-of-the-first-kind)

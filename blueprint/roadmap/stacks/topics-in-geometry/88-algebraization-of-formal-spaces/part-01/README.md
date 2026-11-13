@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 88.2 Two categories to 88.17 Rig-smooth homomorphisms
+# 88.2 Two categories to 88.18 Rig-smooth morphisms
 
 - [88.2 Two categories](88-2-two-categories.md)
 - [88.3 A naive cotangent complex](88-3-a-naive-cotangent-complex.md)
@@ -20,3 +20,4 @@ navigation: transparent
 - [88.15 Rig-flat homomorphisms](88-15-rig-flat-homomorphisms.md)
 - [88.16 Rig-flat morphisms](88-16-rig-flat-morphisms.md)
 - [88.17 Rig-smooth homomorphisms](88-17-rig-smooth-homomorphisms.md)
+- [88.18 Rig-smooth morphisms](88-18-rig-smooth-morphisms.md)

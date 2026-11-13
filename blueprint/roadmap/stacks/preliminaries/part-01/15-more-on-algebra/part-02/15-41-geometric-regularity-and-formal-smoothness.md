@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.41 Geometric regularity and formal smoothness
 
-Section 15.41 of the Stacks Project, [Tag 07EK](https://stacks.math.columbia.edu/tag/07EK). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.41 of the Stacks Project, [Tag 07EK](https://stacks.math.columbia.edu/tag/07EK). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07EL, a theorem
 
 [Tag 07EL](https://stacks.math.columbia.edu/tag/07EL) in the Stacks Project.
 
-**`formalSmoothness_maximalIdeal_characterizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L1088). References: EGA 0 (19.6.6), “a) <=> c)”; EGA 0 (19.6.4), “char 0: a) ⇔ c)”; EGA 0 (19.6.5), “form. smooth ⟹ geom reg”; EGA 0 (22.1.2), “base a field, Noetherian”; EGA 0 (22.2.2), “(i)&(ii), char p”; EGA 0 (22.2.3), “a) (char p)”; EGA 0 (22.7.2), “a) <=> c) char 0”; EGA 0 (22.5.8); EGA 0 (22.6.7), “(i) b) ⇔ d)”; EGA 0 (19.0.2), “special case”; EGA 0 (19.6.7), “19.6.7(ii), special case”.
+**`formalSmoothness_maximalIdeal_characterizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 1088](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L1088). References: EGA 0 (19.6.6), “a) <=> c)”; EGA 0 (19.6.4), “char 0: a) ⇔ c)”; EGA 0 (19.6.5), “form. smooth ⟹ geom reg”; EGA 0 (22.1.2), “base a field, Noetherian”; EGA 0 (22.2.2), “(i)&(ii), char p”; EGA 0 (22.2.3), “a) (char p)”; EGA 0 (22.7.2), “a) <=> c) char 0”; EGA 0 (22.5.8); EGA 0 (22.6.7), “(i) b) ⇔ d)”; EGA 0 (19.0.2), “special case”; EGA 0 (19.6.7), “19.6.7(ii), special case”.
 
 > Let `A` be a Noetherian local algebra over a field `k`. In characteristic zero, `A` is a
 > regular local ring if and only if `k → A` is formally smooth for the maximal-ideal adic
@@ -73,7 +73,7 @@ public theorem formalSmoothness_maximalIdeal_characterizations
 
 [Tag 07EM](https://stacks.math.columbia.edu/tag/07EM) in the Stacks Project.
 
-**`formallySmooth_adic_examples_with_inseparable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 1745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L1745). References: EGA 0 (19.6.5.2), “existence of examples”.
+**`formallySmooth_adic_examples_with_inseparable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 1746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L1746). References: EGA 0 (19.6.5.2), “existence of examples”.
 
 > In characteristic `p`, the local ring
 > `k[x, y]_(x, y ^ p - a) / (y ^ p - a - x)` is geometrically regular over `k`, formally
@@ -131,7 +131,7 @@ public theorem formallySmooth_adic_examples_with_inseparable_residueField
 
 [Tag 07NP](https://stacks.math.columbia.edu/tag/07NP) in the Stacks Project.
 
-**`flat_of_isFormallySmooth_maximalIdeal_adic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L595). References: SGA 1 III (1.7), “only if, flatness”.
+**`flat_of_isFormallySmooth_maximalIdeal_adic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L595). References: SGA 1 III (1.7), “only if, flatness”.
 
 > **Stacks 07NP.** A formally smooth local homomorphism of Noetherian local rings, for the
 > maximal-ideal-adic topologies on source and target, is flat.
@@ -151,7 +151,7 @@ public theorem flat_of_isFormallySmooth_maximalIdeal_adic.{v, w}
 
 [Tag 0DYH](https://stacks.math.columbia.edu/tag/0DYH) in the Stacks Project.
 
-**`exact_jacobiZariski_residueField_of_formallySmoothNAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L755). References: EGA 0 (20.6.23), “residue field, m-adic”.
+**`exact_jacobiZariski_residueField_of_formallySmoothNAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 755](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L755). References: EGA 0 (20.6.23), “residue field, m-adic”.
 
 > Let `A → B` be a local homomorphism of Noetherian local rings which is formally smooth for
 > the maximal-ideal-adic topology on `B`, and let `K` be the residue field of `B`.  Then the
@@ -189,7 +189,7 @@ public theorem exact_jacobiZariski_residueField_of_formallySmoothNAdic
 
 [Tag 07NQ](https://stacks.math.columbia.edu/tag/07NQ) in the Stacks Project.
 
-**`RingHom.FormallySmoothNAdic.of_flat_of_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/SpecialFibre.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/SpecialFibre.lean#L401). The attribute's comment: “(2) ⟹ (3)”. References: EGA 0 (19.0.2), “I, one direction”; EGA 0 (19.7.1), “b) ⇒ a)”; SGA 1 III (1.7), “if direction”; SGA 1 III (1.7), “if direction”.
+**`RingHom.FormallySmoothNAdic.of_flat_of_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/SpecialFibre.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/SpecialFibre.lean#L401). The attribute's comment: “(2) ⟹ (3)”. References: EGA 0 (19.0.2), “I, one direction”; EGA 0 (19.7.1), “b) ⇒ a)”; SGA 1 III (1.7), “if direction”.
 
 > **Stacks 07NQ, (2) ⟹ (3).** A flat local homomorphism of Noetherian local rings whose
 > special fibre is adically formally smooth over the residue field of the source is itself formally
@@ -207,7 +207,7 @@ theorem FormallySmoothNAdic.of_flat_of_specialFibre
     FormallySmoothNAdic.{max u v} (algebraMap A B) (maximalIdeal B)
 ```
 
-**`flat_geometricallyRegular_specialFiber_formallySmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 2253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L2253). References: EGA 0 (19.0.2), “I”; EGA 0 (19.7.1), “more general”; SGA 1 III (1.7), “Noetherian local rings”; SGA 1 III (1.3), “more general”.
+**`flat_geometricallyRegular_specialFiber_formallySmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 2254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L2254). References: EGA 0 (19.0.2), “I”; EGA 0 (19.7.1), “more general”; SGA 1 III (1.7), “Noetherian local rings”; SGA 1 III (1.3), “more general”.
 
 > Let `f : A → B` be a local homomorphism of Noetherian local rings, let
 > `k` be the residue field of `A`, and let `B̄ = k ⊗[A] B` be the special
@@ -239,7 +239,7 @@ public theorem flat_geometricallyRegular_specialFiber_formallySmooth_tfae
 
 [Tag 07NR](https://stacks.math.columbia.edu/tag/07NR) in the Stacks Project.
 
-**`exists_completeLocal_formallySmooth_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 2512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L2512). References: EGA 0 (19.7.2), “existence, J = 𝔪”; EGA 0 (19.0.2), “III existence”; EGA 0 (19.7.1.3), “A complete, B geom reg”; EGA 0 (19.8.2), “(ii) existence”; EGA 0 (22.2.7), “(i)”.
+**`exists_completeLocal_formallySmooth_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 2513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L2513). References: EGA 0 (19.7.2), “existence, J = 𝔪”; EGA 0 (19.0.2), “III existence”; EGA 0 (19.7.1.3), “A complete, B geom reg”; EGA 0 (19.8.2), “(ii) existence”; EGA 0 (22.2.7), “(i)”.
 
 > **Stacks 07NR.** Let `A` be a Noetherian complete local ring and let `B` be a
 > Noetherian complete local algebra over the residue field of `A`. If `B` is formally smooth for
@@ -268,7 +268,7 @@ public theorem exists_completeLocal_formallySmooth_lift
 
 [Tag 07NS](https://stacks.math.columbia.edu/tag/07NS) in the Stacks Project.
 
-**`exists_completeLocal_formallySmooth_lift_with_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 3531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L3531). References: EGA 0 (22.2.7), “(i)”.
+**`exists_completeLocal_formallySmooth_lift_with_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean, line 3532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyRegular/FormalSmoothness.lean#L3532). References: EGA 0 (22.2.7), “(i)”.
 
 > **Stacks 07NS.** Consider local homomorphisms `A → A' → B` of Noetherian complete local
 > rings such that `A → A'` induces an isomorphism on residue fields. If the special fibre of `B`
@@ -346,4 +346,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.41, Tag 07EK](https://stacks.math.columbia.edu/tag/07EK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

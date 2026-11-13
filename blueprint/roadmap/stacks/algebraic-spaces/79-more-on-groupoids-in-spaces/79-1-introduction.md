@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.1 Introduction
 
-Section 79.1 of the Stacks Project, [Tag 04P5](https://stacks.math.columbia.edu/tag/04P5). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 79.1 of the Stacks Project, [Tag 04P5](https://stacks.math.columbia.edu/tag/04P5). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04P6, an equation
 
 [Tag 04P6](https://stacks.math.columbia.edu/tag/04P6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L138). The attribute's comment: “the displayed square of a groupoid over its quotient stack”.
+**`AlgebraicGeometry.Stack.quotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L144). The attribute's comment: “the displayed square of a groupoid over its quotient stack”.
 
 > The canonical source-target square over the quotient stack.
 
@@ -35,7 +35,7 @@ noncomputable def quotientStackSquare
         (liftedQuotientStackProjection G) : U ⟶ Q)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_twoCartesian_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 1044](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L1044). The attribute's comment: “the 2-cartesian square R ⇉ U → [U/R]: legs s, t, π twice, 2-arrow of 044S”.
+**`AlgebraicGeometry.Stack.quotientStack_twoCartesian_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/TwoFibreProduct.lean#L1080). The attribute's comment: “the 2-cartesian square R ⇉ U → [U/R]: legs s, t, π twice, 2-arrow of 044S”.
 
 > **The 2-cartesian square `R ⇉ U → [U/R]`.** Take the square whose apex is the arrow space
 > `R`, whose two legs `R ⟶ U` are the source `s` and the target `t`, whose two maps `U ⟶ [U/R]` are
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.1, Tag 04P5](https://stacks.math.columbia.edu/tag/04P5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

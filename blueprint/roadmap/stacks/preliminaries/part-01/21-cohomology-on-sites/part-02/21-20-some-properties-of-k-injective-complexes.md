@@ -8,22 +8,22 @@ proof: formalized
 
 # 21.20 Some properties of K-injective complexes
 
-Section 21.20 of the Stacks Project, [Tag 08FH](https://stacks.math.columbia.edu/tag/08FH). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.20 of the Stacks Project, [Tag 08FH](https://stacks.math.columbia.edu/tag/08FH). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08FI, a lemma
 
 [Tag 08FI](https://stacks.math.columbia.edu/tag/08FI) in the Stacks Project.
 
-**`Stacks.Cohomology.Localization.isKInjective_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/KInjectiveRestrictionAlongOverMap.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/KInjectiveRestrictionAlongOverMap.lean#L118). The attribute's comment: “for the restriction between two slices, along `Over.map`”.
+**`Stacks.Cohomology.Localization.isKInjective_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/KInjectiveRestrictionAlongOverMap.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/KInjectiveRestrictionAlongOverMap.lean#L119). The attribute's comment: “for the restriction between two slices, along `Over.map`”.
 
 > **Stacks 08FI for the slice-to-slice restriction.** Restriction of sheaves of modules along
 > `Over.map f`, for an arrow `f : V ⟶ U` of the site, carries K-injective complexes to K-injective
 > complexes.
 >
 > Restriction along `Over.map f` is restriction to the slice of `C/U` at `Over.mk f` followed by the
-> transport of that iterated slice to `C/V`. The first preserves K-injectivity by the library's form of
-> Stacks 08FI for `SheafOfModules.overFunctor`, extension by zero being an exact left adjoint of it,
-> and the second by `isKInjective_sliceBackward`.
+> transport of that iterated slice to `C/V`. The first preserves K-injectivity by the library's form
+> of Stacks 08FI for `SheafOfModules.overFunctor`, extension by zero being an exact left adjoint of
+> it, and the second by `isKInjective_sliceBackward`.
 
 ```lean
 theorem isKInjective_overMap
@@ -33,7 +33,7 @@ theorem isKInjective_overMap
         (ComplexShape.up ℤ)).obj I)
 ```
 
-**`Stacks.Cohomology.Localization.isKInjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L111).
+**`Stacks.Cohomology.Localization.isKInjective_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L111).
 
 > **Stacks 08FI.** Restriction to the slice site over an object preserves K-injective
 > complexes of sheaves of modules. Extension by zero is an exact left adjoint of the restriction,
@@ -52,7 +52,7 @@ theorem isKInjective_over {C : Type u} [Category.{u} C]
 
 [Tag 0D6F](https://stacks.math.columbia.edu/tag/0D6F) in the Stacks Project.
 
-**`Stacks.Cohomology.Localization.cohomologyOverObjectIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L364).
+**`Stacks.Cohomology.Localization.cohomologyOverObjectIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L364).
 
 > Cohomology over `U` agrees naturally with cohomology of the restricted
 > derived module on the slice site `C/U`.
@@ -72,7 +72,7 @@ noncomputable def cohomologyOverObjectIsoRestriction
 
 [Tag 0BKV](https://stacks.math.columbia.edu/tag/0BKV) in the Stacks Project.
 
-**`Stacks.Cohomology.SiteCohomologyPresheaf.sheafificationCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L293). The attribute's comment: “associated sheaf”.
+**`Stacks.Cohomology.SiteCohomologyPresheaf.sheafificationCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L293). The attribute's comment: “associated sheaf”.
 
 > Sheafifying the presheaf `U ↦ H^q(U, K)` gives the `q`-th cohomology sheaf of `K`,
 > naturally in the derived object `K`.
@@ -87,7 +87,7 @@ def sheafificationCohomologyPresheafIso (q : ℤ) :
           (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) q
 ```
 
-**`Stacks.Cohomology.SiteCohomologyPresheaf.sheafificationCohomologyPresheafIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L320). The attribute's comment: “canonical comparison”.
+**`Stacks.Cohomology.SiteCohomologyPresheaf.sheafificationCohomologyPresheafIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L320). The attribute's comment: “canonical comparison”.
 
 > Characterization of the associated-sheaf isomorphism: on a complex, it agrees with the
 > canonical exact-sheafification comparison after the unit of the total right derived
@@ -109,7 +109,7 @@ theorem sheafificationCohomologyPresheafIso_comp (q : ℤ)
             (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) q).inv.app I
 ```
 
-**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L402). The attribute's comment: “values on objects”.
+**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L402). The attribute's comment: “values on objects”.
 
 > Evaluation of the hypercohomology presheaf at `U` is the established cohomology functor
 > `H^q(U, -)`.
@@ -127,7 +127,7 @@ public def cohomologyPresheafEvaluationIso (X : RingedSite.{u, u, u}) (U : X.C) 
         DerivedCategory.homologyFunctor AddCommGrpCat.{u} q
 ```
 
-**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafEvaluationIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L435). The attribute's comment: “restriction maps”.
+**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafEvaluationIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L435). The attribute's comment: “restriction maps”.
 
 > The evaluation identifications commute with the restriction maps.
 
@@ -142,7 +142,7 @@ public theorem cohomologyPresheafEvaluationIso_naturality (X : RingedSite.{u, u,
         (hypercohomologyRestriction X g q).app K
 ```
 
-**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafSliceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L497). The attribute's comment: “cohomology on the slice site”.
+**`Stacks.Cohomology.SiteCohomologyPresheaf.cohomologyPresheafSliceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/SheafificationOfTheCohomologyPresheaf.lean#L497). The attribute's comment: “cohomology on the slice site”.
 
 > The same evaluation, expressed using cohomology on the localized site `C/U`; its second
 > factor is the comparison of Tag 0D6F.
@@ -164,7 +164,7 @@ public def cohomologyPresheafSliceIso (X : RingedSite.{u, u, u}) (U : X.C) (q : 
 
 [Tag 0D6G](https://stacks.math.columbia.edu/tag/0D6G) in the Stacks Project.
 
-**`Stacks.Cohomology.Localization.derivedPushforwardOverFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean#L377).
+**`Stacks.Cohomology.Localization.derivedPushforwardOverFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/DerivedDirectImageAndRestriction.lean#L379).
 
 > **Stacks 0D6G.** For a morphism of ringed sites `f : (C, O_C) ⟶ (D, O_D)` given by the
 > continuous functor `u : D ⥤ C`, an object `V` of `D` and `U = u(V)`, restricting the unbounded
@@ -182,7 +182,7 @@ noncomputable def derivedPushforwardOverFunctorIso :
 
 [Tag 0D6H](https://stacks.math.columbia.edu/tag/0D6H) in the Stacks Project.
 
-**`Stacks.Cohomology.LerayUnbounded.derivedGlobalSectionsPushforwardIsoGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedGlobalSectionsGeneral.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedGlobalSectionsGeneral.lean#L282). The attribute's comment: “the clause on global sections, as functors into the derived category of modules over the global sections of the structure sheaf of the target, for an arbitrary morphism of ringed sites; the clause on sections over an object of the target site is derivedSectionsOverObjectPushforwardIsoGeneral”.
+**`Stacks.Cohomology.LerayUnbounded.derivedGlobalSectionsPushforwardIsoGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedGlobalSectionsGeneral.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedGlobalSectionsGeneral.lean#L282). The attribute's comment: “the clause on global sections, as functors into the derived category of modules over the global sections of the structure sheaf of the target, for an arbitrary morphism of ringed sites; the clause on sections over an object of the target site is derivedSectionsOverObjectPushforwardIsoGeneral”.
 
 > **Stacks 0D6H, the global-sections clause, for an arbitrary morphism of ringed sites.** Let
 > `f : (C, O_C) ⟶ (D, O_D)` be a morphism of ringed sites given by the continuous functor
@@ -201,7 +201,7 @@ noncomputable def derivedGlobalSectionsPushforwardIsoGeneral :
       derivedGlobalSectionsRestricted f
 ```
 
-**`Stacks.Cohomology.LerayUnbounded.derivedSectionsOverObjectPushforwardIsoGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedSectionsGeneral.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedSectionsGeneral.lean#L256). The attribute's comment: “the clause on sections over an object of the target site, for an arbitrary morphism of ringed sites; the clause on global sections into the derived category of modules over the global sections of the structure sheaf of the target is derivedGlobalSectionsPushforwardIsoGeneral”.
+**`Stacks.Cohomology.LerayUnbounded.derivedSectionsOverObjectPushforwardIsoGeneral`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedSectionsGeneral.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/LerayForUnboundedSectionsGeneral.lean#L256). The attribute's comment: “the clause on sections over an object of the target site, for an arbitrary morphism of ringed sites; the clause on global sections into the derived category of modules over the global sections of the structure sheaf of the target is derivedGlobalSectionsPushforwardIsoGeneral”.
 
 > **Stacks 0D6H, the clause on sections over an object, for an arbitrary morphism of ringed
 > sites.** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of ringed sites given by the continuous
@@ -219,7 +219,7 @@ noncomputable def derivedSectionsOverObjectPushforwardIsoGeneral :
       derivedSectionsOverObject X (f.u.obj V)
 ```
 
-**`Stacks.Cohomology.Localization.derivedGlobalSectionsOverPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/LerayForTheSliceMorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/LerayForTheSliceMorphism.lean#L140). The attribute's comment: “the clause `RGamma(V, -) . Rf_* = RGamma(U, -)` on sections over an object, for ABELIAN sheaves and for the SLICE morphism of topoi `Sh(C/X) -> Sh(C/Y)` of a morphism `f : X -> Y` of the site, at the final object `V = id Y` of `C/Y`, where `u = Over.pullback f` and `u(V) = id X`. Unconditional: no analogue of the `h093Y` K-injectivity hypothesis, nor of the flatness, of `Stacks.Cohomology.LerayUnbounded.derivedSectionsOverObjectPushforwardIso` and `...IsoOfFlat`, which carry this tag for sheaves of MODULES on ringed sites. Assumed instead is `Limits.HasPullbacksAlong f`, base change of the single morphism `f`, used only to present `f_*` as restriction along `Over.pullback f`. NOT covered: the clause on global sections into `D(Gamma(O_D))` for a general morphism of ringed sites, and sections over a non-final object of `C/Y`”.
+**`Stacks.Cohomology.Localization.derivedGlobalSectionsOverPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/LerayForTheSliceMorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/LerayForTheSliceMorphism.lean#L140). The attribute's comment: “the clause `RGamma(V, -) . Rf_* = RGamma(U, -)` on sections over an object, for ABELIAN sheaves and for the SLICE morphism of topoi `Sh(C/X) -> Sh(C/Y)` of a morphism `f : X -> Y` of the site, at the final object `V = id Y` of `C/Y`, where `u = Over.pullback f` and `u(V) = id X`. Unconditional: no analogue of the `h093Y` K-injectivity hypothesis, nor of the flatness, of `Stacks.Cohomology.LerayUnbounded.derivedSectionsOverObjectPushforwardIso` and `...IsoOfFlat`, which carry this tag for sheaves of MODULES on ringed sites. Assumed instead is `Limits.HasPullbacksAlong f`, base change of the single morphism `f`, used only to present `f_*` as restriction along `Over.pullback f`. NOT covered: the clause on global sections into `D(Gamma(O_D))` for a general morphism of ringed sites, and sections over a non-final object of `C/Y`”.
 
 > **Stacks 0D6H for the slice morphism, on abelian sheaves.** For a morphism `f : X ⟶ Y` of a
 > site `C`, the unbounded derived global sections on `C/Y` of the unbounded derived direct image
@@ -246,7 +246,7 @@ def derivedGlobalSectionsOverPushforwardIso {X Y : C} (f : X ⟶ Y) [HasPullback
 
 [Tag 0D6I](https://stacks.math.columbia.edu/tag/0D6I) in the Stacks Project.
 
-**`Stacks.Cohomology.UnboundedHigherDirectImageOnSites.cohomologySheavesOfTheDerivedDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CohomologySheavesOfTheDerivedDirectImageUnconditional.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CohomologySheavesOfTheDerivedDirectImageUnconditional.lean#L160). The attribute's comment: “the i-th cohomology sheaf of Rf\_*K is the sheaf associated to the presheaf V ↦ H^i(u(V), K) = H^i(V, Rf\_*K), naturally in K, for an arbitrary morphism of ringed sites: the associated-sheaf clause and both readings of the value of the presheaf on an object”.
+**`Stacks.Cohomology.UnboundedHigherDirectImageOnSites.cohomologySheavesOfTheDerivedDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CohomologySheavesOfTheDerivedDirectImageUnconditional.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/CohomologySheavesOfTheDerivedDirectImageUnconditional.lean#L160). The attribute's comment: “the i-th cohomology sheaf of Rf\_*K is the sheaf associated to the presheaf V ↦ H^i(u(V), K) = H^i(V, Rf\_*K), naturally in K, for an arbitrary morphism of ringed sites: the associated-sheaf clause and both readings of the value of the presheaf on an object”.
 
 > **Stacks 0D6I.** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of ringed sites corresponding to
 > the continuous functor `u : D ⥤ C` and let `i : ℤ`. Then the `i`-th cohomology sheaf of `Rf_* K`
@@ -308,7 +308,7 @@ def cohomologySheavesOfTheDerivedDirectImage (i : ℤ) :
 
 [Tag 0D6J](https://stacks.math.columbia.edu/tag/0D6J) in the Stacks Project.
 
-**`Stacks.Cohomology.ForgetModule.pushforwardForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/ForgettingTheModuleStructureForTheDirectImage.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/ForgettingTheModuleStructureForTheDirectImage.lean#L389). The attribute's comment: “part (3): the unbounded derived direct image along a morphism of ringed sites”.
+**`Stacks.Cohomology.ForgetModule.pushforwardForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/ForgettingTheModuleStructureForTheDirectImage.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/ForgettingTheModuleStructureForTheDirectImage.lean#L389). The attribute's comment: “part (3): the unbounded derived direct image along a morphism of ringed sites”.
 
 > **Stacks 0D6J, part (3).** Let `f : (C, O_C) ⟶ (D, O_D)` be a morphism of ringed sites. For
 > `K` in the unbounded derived category `D(O_C)` the canonical map `Rf_*K ⟶ Rf_*(K_ab)` from the
@@ -319,7 +319,7 @@ def cohomologySheavesOfTheDerivedDirectImage (i : ℤ) :
 theorem pushforwardForgetComparison_isIso : IsIso (pushforwardForgetComparison f)
 ```
 
-**`Stacks.Cohomology.ForgetModule.sectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean#L247). The attribute's comment: “part (2): sections over an object of the site”.
+**`Stacks.Cohomology.ForgetModule.sectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean#L247). The attribute's comment: “part (2): sections over an object of the site”.
 
 > **Stacks 0D6J, part (2).** For every object `U` of the site, the canonical map
 > `RΓ(U, K) ⟶ RΓ(U, K_ab)` from unbounded derived sections of a sheaf of modules to derived
@@ -330,7 +330,7 @@ theorem sectionsForgetComparison_isIso (U : X.C) :
     IsIso (sectionsForgetComparison X U)
 ```
 
-**`Stacks.Cohomology.ForgetModule.globalSectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean#L362). The attribute's comment: “part (1): global sections of the site”.
+**`Stacks.Cohomology.ForgetModule.globalSectionsForgetComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/ForgettingTheModuleStructure.lean#L362). The attribute's comment: “part (1): global sections of the site”.
 
 > **Stacks 0D6J, part (1).** The canonical map `RΓ(C, K) ⟶ RΓ(C, K_ab)` from unbounded
 > derived global sections of a sheaf of modules to derived global sections of the underlying
@@ -345,7 +345,7 @@ theorem globalSectionsForgetComparison_isIso :
 
 [Tag 08FJ](https://stacks.math.columbia.edu/tag/08FJ) in the Stacks Project.
 
-**`Stacks.Cohomology.Localization.derivedExtensionByZeroRestrictionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L235).
+**`Stacks.Cohomology.Localization.derivedExtensionByZeroRestrictionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/RestrictionOfModules.lean#L235).
 
 > **Stacks 08FJ.** On the unbounded derived categories of modules over a ringed site,
 > extension by zero along the localization at an object is left adjoint to restriction to the
@@ -370,7 +370,7 @@ noncomputable def derivedExtensionByZeroRestrictionAdjunction
 
 [Tag 0GL1](https://stacks.math.columbia.edu/tag/0GL1) in the Stacks Project.
 
-**`Stacks.DerivedTensor.ExtensionByZero.derivedTensorExtensionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExtensionByZeroTensor.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExtensionByZeroTensor.lean#L357).
+**`Stacks.DerivedTensor.ExtensionByZero.derivedTensorExtensionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExtensionByZeroTensor.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ExtensionByZeroTensor.lean#L357).
 
 > **Stacks 0GL1.** Let `(C, O)` be a ringed site, `U` an object of `C` and `j_!` extension by
 > zero from the localized site `C/U`. For `L` in `D(O_U)` and `K` in `D(O)`,
@@ -390,7 +390,7 @@ def derivedTensorExtensionIso (L : DerivedCategory (Modules (X.O.over U)))
 
 [Tag 093Y](https://stacks.math.columbia.edu/tag/093Y) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.pushforwardModules_isKInjective_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/FlatRingedToposPushforwardKInjective.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/FlatRingedToposPushforwardKInjective.lean#L121). References: SGA 4 V (4.9), “more general”.
+**`AlgebraicGeometry.RingedToposHom.pushforwardModules_isKInjective_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/FlatRingedToposPushforwardKInjective.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedSections/FlatRingedToposPushforwardKInjective.lean#L121). References: SGA 4 V (4.9), “more general”.
 
 > **Stacks 093Y.** Let `(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)` be a *flat* morphism of ringed
 > topoi — flat in the sense of Stacks 04JB, that the ring map `f♯ : f⁻¹O_D ⟶ O_C` is flat — and
@@ -415,7 +415,7 @@ theorem pushforwardModules_isKInjective_of_isFlat
 
 [Tag 093Z](https://stacks.math.columbia.edu/tag/093Z) in the Stacks Project.
 
-**`Stacks.Sheaves.KInjectiveInternalHom.isKInjective_homSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomKInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomKInjective.lean#L60).
+**`Stacks.Sheaves.KInjectiveInternalHom.isKInjective_homSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomKInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InternalHomKInjective.lean#L60).
 
 > **Stacks Project, Tag 093Z.** Internal Hom from `O'` takes K-injective complexes of
 > `O`-modules to K-injective complexes of `O'`-modules.
@@ -435,4 +435,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.20, Tag 08FH](https://stacks.math.columbia.edu/tag/08FH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 25.2 Semi-representable objects
 
-Section 25.2 of the Stacks Project, [Tag 0DBB](https://stacks.math.columbia.edu/tag/0DBB). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.2 of the Stacks Project, [Tag 0DBB](https://stacks.math.columbia.edu/tag/0DBB). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01G0, a definition
 
@@ -16,9 +16,9 @@ Section 25.2 of the Stacks Project, [Tag 0DBB](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.FormalCoproduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 13](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L13) (StacksFrontier): “the objects of `SR(C)`: families `{U_i}_{i ∈ I}` of objects of `C`”.
-- [`CategoryTheory.Limits.FormalCoproduct.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L16) (StacksFrontier): “the morphisms of `SR(C)`: a map `α : I → J` and morphisms `U_i → V_{α(i)}`”.
-- [`CategoryTheory.Limits.FormalCoproduct.category`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.category#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L19) (StacksFrontier): “the category structure on `SR(C)`: identities and composition of such pairs”.
+- [`CategoryTheory.Limits.FormalCoproduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L13) (StacksFrontier): “the objects of `SR(C)`: families `{U_i}_{i ∈ I}` of objects of `C`”.
+- [`CategoryTheory.Limits.FormalCoproduct.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L16) (StacksFrontier): “the morphisms of `SR(C)`: a map `α : I → J` and morphisms `U_i → V_{α(i)}`”.
+- [`CategoryTheory.Limits.FormalCoproduct.category`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.category#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L19) (StacksFrontier): “the category structure on `SR(C)`: identities and composition of such pairs”.
 
 ## Tag 01G1, a definition
 
@@ -26,13 +26,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.FormalCoproduct.yoneda`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.yoneda#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L27) (StacksFrontier): “the functor `F : SR(C) → PSh(C)`, `{U_i}_{i ∈ I} ↦ ∐ h_{U_i}`”.
+- [`CategoryTheory.Limits.FormalCoproduct.yoneda`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.FormalCoproduct.yoneda#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L27) (StacksFrontier): “the functor `F : SR(C) → PSh(C)`, `{U_i}_{i ∈ I} ↦ ∐ h_{U_i}`”.
 
 ## Tag 01G2, a lemma
 
 [Tag 01G2](https://stacks.math.columbia.edu/tag/01G2) in the Stacks Project.
 
-**`CategoryTheory.Limits.FormalCoproduct.instHasBinaryProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductBinaryProducts.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductBinaryProducts.lean#L55). The attribute's comment: “products of pairs in SR(C)”.
+**`CategoryTheory.Limits.FormalCoproduct.instHasBinaryProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductBinaryProducts.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductBinaryProducts.lean#L55). The attribute's comment: “products of pairs in SR(C)”.
 
 > **Stacks Project, Tag 01G2**, products of pairs clause. If `C` has binary products, then so
 > does its category of formal coproducts — equivalently, the category `SR(C)` of semi-representable
@@ -42,7 +42,7 @@ Declarations registered for the tag:
 instance instHasBinaryProducts : HasBinaryProducts (FormalCoproduct.{w} C)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.instHasEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductEqualizers.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductEqualizers.lean#L116). The attribute's comment: “equalizers”. References: SGA 4 V (7.3.0), “equalizers in SR(C)”.
+**`CategoryTheory.Limits.FormalCoproduct.instHasEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductEqualizers.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductEqualizers.lean#L116). The attribute's comment: “equalizers”. References: SGA 4 V (7.3.0), “equalizers in SR(C)”.
 
 > **Stacks Project, Tag 01G2**, equalizers clause. If `C` has equalizers, then so does its
 > category of formal coproducts — equivalently, the category `SR(C)` of semi-representable
@@ -52,7 +52,7 @@ instance instHasBinaryProducts : HasBinaryProducts (FormalCoproduct.{w} C)
 instance instHasEqualizers : HasEqualizers (FormalCoproduct.{w} C)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.hasCoproducts_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L81). The attribute's comment: “coproducts in SR(C)”.
+**`CategoryTheory.Limits.FormalCoproduct.hasCoproducts_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L81). The attribute's comment: “coproducts in SR(C)”.
 
 > **Stacks Project, Tag 01G2**, coproducts clause, first half. The category of formal
 > coproducts of `C` — equivalently, the category `SR(C)` of semi-representable objects of `C` — has
@@ -63,7 +63,7 @@ instance instHasEqualizers : HasEqualizers (FormalCoproduct.{w} C)
 theorem hasCoproducts_formalCoproduct : HasCoproducts.{w} (FormalCoproduct.{w} C)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.preservesColimitsOfShape_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L88). The attribute's comment: “F commutes with coproducts”.
+**`CategoryTheory.Limits.FormalCoproduct.preservesColimitsOfShape_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L88). The attribute's comment: “F commutes with coproducts”.
 
 > **Stacks Project, Tag 01G2**, coproducts clause, second half. The functor
 > `F : SR(C) ⥤ PSh(C)`, sending a family `{U_i}` of objects of `C` to the coproduct `∐ h_{U_i}` of
@@ -74,7 +74,7 @@ theorem preservesColimitsOfShape_yoneda (J : Type v) :
     PreservesColimitsOfShape (Discrete J) (FormalCoproduct.yoneda (C := C))
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yoneda`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L133). The attribute's comment: “F : SR(C) → PSh(C) commutes with limits”.
+**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yoneda`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L133). The attribute's comment: “F : SR(C) → PSh(C) commutes with limits”.
 
 > **Stacks Project, Tag 01G2**, limits clause. The functor `F : SR(C) ⥤ PSh(C)`, sending a
 > family `{U_i}` of objects of `C` to the coproduct `∐ h_{U_i}` of the representable presheaves,
@@ -88,7 +88,7 @@ noncomputable instance preservesLimitsOfSize_yoneda :
     PreservesLimitsOfSize.{w, w'} (FormalCoproduct.yoneda (C := C))
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.hasPullbacks_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L149). The attribute's comment: “fibre products in SR(C)”.
+**`CategoryTheory.Limits.FormalCoproduct.hasPullbacks_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L149). The attribute's comment: “fibre products in SR(C)”.
 
 > **Stacks Project, Tag 01G2**, fibre products clause. If `C` has fibre products, then so does
 > its category of formal coproducts — equivalently, the category `SR(C)` of semi-representable
@@ -101,7 +101,7 @@ theorem hasPullbacks_formalCoproduct [HasPullbacks C] :
     HasPullbacks (FormalCoproduct.{w} C)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.hasTerminal_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L162). The attribute's comment: “final object in SR(C)”.
+**`CategoryTheory.Limits.FormalCoproduct.hasTerminal_formalCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Limits/FormalCoproductLimits.lean#L162). The attribute's comment: “final object in SR(C)”.
 
 > **Stacks Project, Tag 01G2**, final object clause. If `C` has a final object `X`, then the
 > one-member family `{X}` is a final object of the category of formal coproducts of `C` —
@@ -112,7 +112,7 @@ theorem hasTerminal_formalCoproduct [HasTerminal C] :
     HasTerminal (FormalCoproduct.{w} C)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hasFiniteLimits_formalCoproductOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 915](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L915). The attribute's comment: “SR(C, X) has finite limits”.
+**`Stacks.CategoryTheory.Hypercovering.hasFiniteLimits_formalCoproductOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean, line 920](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoveringPermanence.lean#L920). The attribute's comment: “SR(C, X) has finite limits”.
 
 > **Stacks Project, Tag 01G2**, finite limits clause for `SR(C, X)`, first half. If `C` has
 > fibre products then `SR(C, X)` has finite limits: it has a terminal object, namely `{X → X}`, and
@@ -128,7 +128,7 @@ instance hasFiniteLimits_formalCoproductOver {X : C} :
     HasFiniteLimits (FormalCoproduct.{w} (Over X))
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.yonedaOverObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L207). The attribute's comment: “the value of F: F(\{U\_i → X}) is ∐ h\_\{U\_i} augmented to h\_X”.
+**`CategoryTheory.Limits.FormalCoproduct.yonedaOverObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L207). The attribute's comment: “the value of F: F(\{U\_i → X}) is ∐ h\_\{U\_i} augmented to h\_X”.
 
 > **The value of `F` on a family, Stacks Project, Tag 01G2.** `F({U_i → X})` is the coproduct
 > `∐ h_{U_i}` of the representable presheaves of the `U_i`, equipped with the map to `h_X` whose
@@ -148,7 +148,7 @@ noncomputable def yonedaOverObjIso (A : FormalCoproduct.{v} (Over X)) :
       Over.mk (Sigma.desc fun i : A.I ↦ CategoryTheory.yoneda.map (A.obj i).hom)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.hasCoproducts_formalCoproductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L216). The attribute's comment: “coproducts in SR(C, X)”.
+**`CategoryTheory.Limits.FormalCoproduct.hasCoproducts_formalCoproductOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L216). The attribute's comment: “coproducts in SR(C, X)”.
 
 > **Stacks Project, Tag 01G2**, coproducts clause for `SR(C, X)`, first half. The category
 > `SR(C, X)` of semi-representable objects over `X` has arbitrary coproducts, obtained by
@@ -159,7 +159,7 @@ theorem hasCoproducts_formalCoproductOver :
     HasCoproducts.{w} (FormalCoproduct.{w} (Over X))
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.preservesColimitsOfShape_yonedaOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L224). The attribute's comment: “F commutes with coproducts in SR(C, X)”.
+**`CategoryTheory.Limits.FormalCoproduct.preservesColimitsOfShape_yonedaOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L224). The attribute's comment: “F commutes with coproducts in SR(C, X)”.
 
 > **Stacks Project, Tag 01G2**, coproducts clause for `SR(C, X)`, second half. The functor
 > `F : SR(C, X) ⥤ PSh(C)/h_X` commutes with coproducts: the semi-representable Yoneda embedding of
@@ -170,7 +170,7 @@ theorem preservesColimitsOfShape_yonedaOver (J : Type v) :
     PreservesColimitsOfShape (Discrete J) (yonedaOver X)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yonedaOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L235). The attribute's comment: “F : SR(C, X) → PSh(C)/h\_X commutes with finite limits”.
+**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yonedaOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L235). The attribute's comment: “F : SR(C, X) → PSh(C)/h\_X commutes with finite limits”.
 
 > **Stacks Project, Tag 01G2**, finite limits clause for `SR(C, X)`, second half. The functor
 > `F : SR(C, X) ⥤ PSh(C)/h_X` commutes with limits of every shape, with no hypothesis on `C`; this
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.2, Tag 0DBB](https://stacks.math.columbia.edu/tag/0DBB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

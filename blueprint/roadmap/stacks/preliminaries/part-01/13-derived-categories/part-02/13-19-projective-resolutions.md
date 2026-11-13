@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.19 Projective resolutions
 
-Section 13.19 of the Stacks Project, [Tag 0643](https://stacks.math.columbia.edu/tag/0643). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.19 of the Stacks Project, [Tag 0643](https://stacks.math.columbia.edu/tag/0643). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0644, a definition
 
 [Tag 0644](https://stacks.math.columbia.edu/tag/0644) in the Stacks Project.
 
-**`CochainComplex.IsProjectiveResolution`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/Defs/ProjectiveResolution.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/Defs/ProjectiveResolution.lean#L112). The attribute's comment: “The case of a complex; for an object it is `ProjectiveResolution`.”. References: SGA 4½ Etat 0 (3.1.8), “projective case”.
+**`CochainComplex.IsProjectiveResolution`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/Defs/ProjectiveResolution.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/Defs/ProjectiveResolution.lean#L112). The attribute's comment: “The case of a complex; for an object it is `ProjectiveResolution`.”. References: SGA 4½ Etat 0 (3.1.8), “projective case”.
 
 > A morphism of cochain complexes `α : P ⟶ K` in an abelian category is a
 > *projective resolution* of `K` if `P` is bounded above, all the terms of `P` are
@@ -29,7 +29,7 @@ public class IsProjectiveResolution {P K : CochainComplex C ℤ} (α : P ⟶ K) 
 
 [Tag 0645](https://stacks.math.columbia.edu/tag/0645) in the Stacks Project.
 
-**`Stacks.ProjectiveResolution.CohomologyVanishing.cohomology_vanishes_of_isProjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L125). The attribute's comment: “(1)”.
+**`Stacks.ProjectiveResolution.CohomologyVanishing.cohomology_vanishes_of_isProjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L125). The attribute's comment: “(1)”.
 
 > **Stacks Tag 0645, Lemma 13.19.2, part (1).**  If `K^•` has a projective
 > resolution, then `H^n(K^•) = 0` for `n ≫ 0`.
@@ -40,7 +40,7 @@ theorem cohomology_vanishes_of_isProjectiveResolution
     CohomologyVanishesForLargeN K
 ```
 
-**`Stacks.ProjectiveResolution.CohomologyVanishing.exists_boundedAbove_quasiIso_of_cohomologyVanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L147). The attribute's comment: “(2)”.
+**`Stacks.ProjectiveResolution.CohomologyVanishing.exists_boundedAbove_quasiIso_of_cohomologyVanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L147). The attribute's comment: “(2)”.
 
 > **Stacks Tag 0645, Lemma 13.19.2, part (2).**  If `H^n(K^•) = 0` for
 > `n ≫ 0`, then there exists a quasi-isomorphism `L^• → K^•` with `L^•` bounded
@@ -56,7 +56,7 @@ theorem exists_boundedAbove_quasiIso_of_cohomologyVanishes
 
 [Tag 0646](https://stacks.math.columbia.edu/tag/0646) in the Stacks Project.
 
-**`ProjectiveResolutionLemma.statement3`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean#L280). The attribute's comment: “(3)”. References: SGA 4½ Etat 0 (3.1.9), “Part 1, special case”; SGA 4½ Etat 0 (3.2.3), “partial”; SGA 4½ Etat 0 (4.2.3.1), “Corollary 1”.
+**`ProjectiveResolutionLemma.statement3`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean#L280). The attribute's comment: “(3)”. References: SGA 4½ Etat 0 (3.1.9), “Part 1, special case”; SGA 4½ Etat 0 (3.2.3), “partial”; SGA 4½ Etat 0 (4.2.3.1), “Corollary 1”.
 
 > **Statement 3.**
 > Assume `A` has enough projectives. Let `K^•` be a complex with `K^n = 0` for
@@ -68,7 +68,7 @@ theorem exists_boundedAbove_quasiIso_of_cohomologyVanishes
 alias statement3
 ```
 
-**`ProjectiveResolutionLemma.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean#L342). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (3.2.3), “partial”; SGA 4½ Etat 0 (4.2.3.1), “Corollary 1”.
+**`ProjectiveResolutionLemma.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/BoundedAbove.lean#L342). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (3.2.3), “partial”; SGA 4½ Etat 0 (4.2.3.1), “Corollary 1”.
 
 > **Statement 2.**
 > Assume `A` has enough projectives. Let `K^•` be a complex with `H^n(K^•) = 0`
@@ -82,7 +82,7 @@ theorem statement2 [EnoughProjectives C] (K : CochainComplex C ℤ)
     ∃ N : ℤ, Nonempty (ProjectiveResolutionComplex K N)
 ```
 
-**`ProjectiveResolutionLemma.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/EpiResData.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/EpiResData.lean#L140). The attribute's comment: “(1)”. References: SGA 2 VIII (1.4), “special case”; SGA 4½ Etat 0 (3.1.9), “Part 1, special case”; SGA 4½ Etat 0 (3.2.3), “partial”.
+**`ProjectiveResolutionLemma.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/EpiResData.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/EpiResData.lean#L140). The attribute's comment: “(1)”. References: SGA 2 VIII (1.4), “special case”; SGA 4½ Etat 0 (3.1.9), “Part 1, special case”; SGA 4½ Etat 0 (3.2.3), “partial”.
 
 > **Statement 1.**
 > If `A` has enough projectives, then every object `A` of `A` has a projective
@@ -100,7 +100,7 @@ theorem statement1 [EnoughProjectives C] (A : C) :
 
 [Tag 0647](https://stacks.math.columbia.edu/tag/0647) in the Stacks Project.
 
-**`projective_into_acyclic_is_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L309). References: SGA 6 I (4.1), “special case”; SGA 6 II (1.1), “c)”; SGA 6 II (1.2), “1.2 d), special case”.
+**`projective_into_acyclic_is_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L309). References: SGA 6 I (4.1), “special case”; SGA 6 II (1.1), “c)”; SGA 6 II (1.2), “1.2 d), special case”.
 
 > Let `K` be an acyclic complex and `P` a bounded above complex of projective objects. Then
 > every morphism of complexes `f : P ⟶ K` is homotopic to zero.
@@ -119,7 +119,7 @@ theorem projective_into_acyclic_is_zero
 
 [Tag 0648](https://stacks.math.columbia.edu/tag/0648) in the Stacks Project.
 
-**`bijective_postcomp_quotient_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L247).
+**`bijective_postcomp_quotient_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L247).
 
 > **Remark [Stacks 0648]** for a K-projective complex, the dual of [Stacks 05TF]. If `P` is a
 > K-projective cochain complex and `α : L ⟶ K` is a quasi-isomorphism, then postcomposition with
@@ -141,7 +141,7 @@ lemma bijective_postcomp_quotient_map {A : Type u} [Category.{v} A] [Abelian A]
 
 [Tag 0649](https://stacks.math.columbia.edu/tag/0649) in the Stacks Project.
 
-**`CochainComplex.IsKProjective.exists_lift_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L274).
+**`CochainComplex.IsKProjective.exists_lift_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L274).
 
 > **Stacks 0649.** Let `A` be an abelian category, let `α : L ⟶ K` be a quasi-isomorphism of
 > cochain complexes in `A` and let `P` be a K-projective cochain complex — for instance one which
@@ -163,7 +163,7 @@ public theorem CochainComplex.IsKProjective.exists_lift_of_quasiIso {A : Type u}
 
 [Tag 064A](https://stacks.math.columbia.edu/tag/064A) in the Stacks Project.
 
-**`CochainComplex.IsKProjective.nonempty_homotopy_of_comp_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L290).
+**`CochainComplex.IsKProjective.nonempty_homotopy_of_comp_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L290).
 
 > **Stacks 064A.** Let `A` be an abelian category, let `α : L ⟶ K` be a quasi-isomorphism of
 > cochain complexes in `A` and let `P` be a K-projective cochain complex — for instance one which
@@ -183,7 +183,7 @@ public theorem CochainComplex.IsKProjective.nonempty_homotopy_of_comp_quasiIso {
 
 [Tag 064B](https://stacks.math.columbia.edu/tag/064B) in the Stacks Project.
 
-**`CochainComplex.isKProjective_iff_Qh_map_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L324).
+**`CochainComplex.isKProjective_iff_Qh_map_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L324).
 
 > **Stacks 064B.** Let `A` be an abelian category and let `P` be a cochain complex in `A`. Then
 > `P` is K-projective — which a bounded above complex of projective objects is, by
@@ -203,7 +203,7 @@ public theorem CochainComplex.isKProjective_iff_Qh_map_bijective {A : Type u} [C
 
 [Tag 064C](https://stacks.math.columbia.edu/tag/064C) in the Stacks Project.
 
-**`CochainComplex.exists_shortExact_isProjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L682).
+**`CochainComplex.exists_shortExact_isProjectiveResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L682).
 
 > Let `C` be an abelian category with enough projectives, let
 > `S : 0 ⟶ S.X₁ ⟶ S.X₂ ⟶ S.X₃ ⟶ 0` be a short exact sequence of cochain complexes
@@ -228,7 +228,7 @@ public theorem exists_shortExact_isProjectiveResolution
 
 [Tag 064D](https://stacks.math.columbia.edu/tag/064D) in the Stacks Project.
 
-**`CochainComplex.IsKProjective.hom_eq_zero_of_isStrictlyGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L423).
+**`CochainComplex.IsKProjective.hom_eq_zero_of_isStrictlyGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/KProjective.lean#L423).
 
 > **Stacks 064D.** Let `A` be an abelian category, let `P` be a K-projective cochain complex of
 > `A` with `P^i = 0` for `i < n` — for instance a bounded complex of projective objects with that
@@ -250,7 +250,7 @@ public theorem CochainComplex.IsKProjective.hom_eq_zero_of_isStrictlyGE_of_isLE 
 
 [Tag 064E](https://stacks.math.columbia.edu/tag/064E) in the Stacks Project.
 
-**`exists_lift_homotopy_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L592). References: SGA 6 II (1.1), “c), special case”.
+**`exists_lift_homotopy_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/ProjectiveResolution/HomotopyLift.lean#L592). References: SGA 6 II (1.1), “c), special case”.
 
 > Stacks Tag 064E. Let `β : P^• → L^•` and `α : E^• → L^•` be maps of cochain
 > complexes in an abelian category `A`, and `n : ℤ`. Assume `P^•` is a bounded
@@ -276,4 +276,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.19, Tag 0643](https://stacks.math.columbia.edu/tag/0643)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

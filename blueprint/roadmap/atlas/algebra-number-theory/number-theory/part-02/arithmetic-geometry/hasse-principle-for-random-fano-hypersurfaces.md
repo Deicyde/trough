@@ -7,14 +7,14 @@ statement: formalized
 
 # Hasse principle for random Fano hypersurfaces
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html).
 
 ## Adele ring of the rationals
 
 $\mathbb{A}_\mathbb{Q}$, also written $\mathbb{A}$, is the
 adele ring of $\mathbb{Q}$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝔸`, an abbreviation declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝔸`, an abbreviation declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled).
 
 ## Height of a rational polynomial
 
@@ -25,7 +25,7 @@ integer coefficient vector $(a_m)_m$ of $f$, indexed by the monomials $m$ in the
 The height of $f$ is the Euclidean norm $\sqrt{\sum_m a_m^2}$ of this vector. The zero polynomial
 has height $0$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.height`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#height).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.height`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#height).
 
 ## Unimodular solutions of a polynomial
 
@@ -35,7 +35,7 @@ $\sigma$. Then $f$ has a solution in $S$ if there is a vector $x \in S^\sigma$ w
 generate the unit ideal of $S$ and such that $f(x) = 0$, where $f$ is evaluated at $x$ through
 the algebra map $R \to S$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.HasSolutionsIn`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#has-solutions-in).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.HasSolutionsIn`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#has-solutions-in).
 
 ## Parameter space of hypersurfaces
 
@@ -46,7 +46,7 @@ $\mathbb{Q}$. Since this space has dimension $N_{d,n} = \binom{n+d}{d}$, the num
 monomials in $n + 1$ variables, $\mathbb{V}_{d,n}$ is a copy of
 $\mathbb{P}^{N_{d,n} - 1}(\mathbb{Q})$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝕍`, an abbreviation declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled-2).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝕍`, an abbreviation declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled-2).
 
 ## Hypersurfaces of bounded height
 
@@ -55,7 +55,7 @@ degree-$d$ hypersurfaces $V \in \mathbb{V}_{d,n}$ in $\mathbb{P}^n$ whose height
 where the height of $V$ is the height of the chosen nonzero homogeneous polynomial of degree $d$
 that represents $V$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.heightLE`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#height-le).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.heightLE`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#height-le).
 
 ## Everywhere locally soluble hypersurfaces
 
@@ -65,7 +65,7 @@ soluble, that is, with $V(\mathbb{A}_\mathbb{Q}) \ne \emptyset$: the chosen homo
 representing $V$ has a solution in the adele ring $\mathbb{A}_\mathbb{Q}$, namely a zero given by
 $n + 1$ adeles that generate the unit ideal of $\mathbb{A}_\mathbb{Q}$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝕍Loc`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#loc).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.𝕍Loc`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#loc).
 
 ## Local density of everywhere locally soluble hypersurfaces
 
@@ -82,7 +82,7 @@ By a theorem of Poonen–Voloch [17, Th. 3.6], this limit exists (and is positiv
 $d \ge 2$, $n \ge 2$ and $(d, n) \ne (2, 2)$, and equals a product of local densities over all
 places of $\mathbb{Q}$.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.ρLoc`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#loc-2).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.ρLoc`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#loc-2).
 
 ## Proportion of soluble hypersurfaces of bounded height
 
@@ -94,7 +94,7 @@ elements of $\mathbb{V}_{d,n}(A)$, taken to be $0$ when $\mathbb{V}_{d,n}(A)$ is
 $V(\mathbb{Q}) \ne \emptyset$ means that the chosen homogeneous polynomial representing $V$ has a
 nonzero rational zero.
 
-Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.ρ`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled-3).
+Formalized by `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.ρ`, a definition declared in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#untitled-3).
 
 ## Density of soluble Fano hypersurfaces
 
@@ -107,7 +107,7 @@ local density $\rho^{\mathrm{loc}}_{d,n}$ as the real number $A$ tends to $\inft
 
 - T. Browning, P. L. Boudec, and W. Sawin, `The Hasse principle for random Fano hypersurfaces`, Annals of Math, 197 (3) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_hasse_principle_random_fano` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.theorem_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HassePrincipleRandomFanoWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hasse principle for random Fano hypersurfaces](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-geometry/hasse-principle-for-random-fano-hypersurfaces)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.7 Covering hypercoverings
 
-Section 25.7 of the Stacks Project, [Tag 01GG](https://stacks.math.columbia.edu/tag/01GG). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.7 of the Stacks Project, [Tag 01GG](https://stacks.math.columbia.edu/tag/01GG). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01GH, a lemma
 
 [Tag 01GH](https://stacks.math.columbia.edu/tag/01GH) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_fibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/FibreProduct.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/FibreProduct.lean#L270).
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_fibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/FibreProduct.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/FibreProduct.lean#L264).
 
 > A fibre product with a hypercovering is a hypercovering when the other morphism is covering
 > in degree zero and on every relative matching object.
@@ -41,7 +41,7 @@ theorem isHypercovering_fibreProduct (J : Pretopology C)
 
 [Tag 01GI](https://stacks.math.columbia.edu/tag/01GI) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.IsHypercovering.prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Product.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Product.lean#L169).
+**`Stacks.CategoryTheory.Hypercovering.IsHypercovering.prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Product.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Product.lean#L169).
 
 > **Stacks Project, Tag 01GI.** The product of two hypercoverings of an object of a site with
 > fibre products is a hypercovering.
@@ -58,7 +58,7 @@ theorem IsHypercovering.prod (J : Pretopology C)
 
 [Tag 01GJ](https://stacks.math.columbia.edu/tag/01GJ) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_map_factoring_through_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Refinement/FactoringThroughCovering.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Refinement/FactoringThroughCovering.lean#L289). References: SGA 4 V (7.3.2), “2)”.
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_map_factoring_through_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Refinement/FactoringThroughCovering.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Refinement/FactoringThroughCovering.lean#L289). References: SGA 4 V (7.3.2), “2)”.
 
 > **Stacks Project, Tag 01GJ.** A covering of the term in any fixed degree of a
 > hypercovering can be refined by a morphism from another hypercovering, whose component in that
@@ -82,7 +82,7 @@ public theorem exists_hypercovering_map_factoring_through_covering
 
 [Tag 0B16](https://stacks.math.columbia.edu/tag/0B16) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.power_cosk_unit_isProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ConstantPowerMatching.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/ConstantPowerMatching.lean#L599).
+**`Stacks.CategoryTheory.Hypercovering.power_cosk_unit_isProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ConstantPowerMatching.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ConstantPowerMatching.lean#L599).
 
 > The `(n + 1)`-st matching map of `Hom(C[k], T)` is, functorially in `T`,
 > a projection of finite powers of `T`.
@@ -131,7 +131,7 @@ public theorem power_cosk_unit_isProjection
 
 [Tag 01GK](https://stacks.math.columbia.edu/tag/01GK) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_map_factoring_through_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjectiveRefinement.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjectiveRefinement.lean#L224). References: SGA 4 V (7.3.2), “2)”.
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_map_factoring_through_locallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjectiveRefinement.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/LocallySurjectiveRefinement.lean#L224). References: SGA 4 V (7.3.2), “2)”.
 
 > **Stacks Project, Tag 01GK.** A locally surjective map onto the presheaf represented by one
 > term of a hypercovering can be factored through after refining the hypercovering.
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.7, Tag 01GG](https://stacks.math.columbia.edu/tag/01GG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.35 The dimension formula
 
-Section 67.35 of the Stacks Project, [Tag 0BAW](https://stacks.math.columbia.edu/tag/0BAW). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.35 of the Stacks Project, [Tag 0BAW](https://stacks.math.columbia.edu/tag/0BAW). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BAX, a lemma
 
 [Tag 0BAX](https://stacks.math.columbia.edu/tag/0BAX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finite_zeroDimensionalSpecializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L463). The attribute's comment: “finiteness of the family entering the maximum”. References: EGA IV (13.2.6), “more general”.
+**`AlgebraicGeometry.Space.finite_zeroDimensionalSpecializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L463). The attribute's comment: “finiteness of the family entering the maximum”. References: EGA IV (13.2.6), “more general”.
 
 > **Stacks 0BAX, finiteness of the family entering the maximum.** Under the hypotheses of the
 > dimension formula only finitely many codimension-zero points of the source specialize to a
@@ -34,7 +34,7 @@ theorem finite_zeroDimensionalSpecializations (f : X ⟶ Y)
     {ξ : points B S hS X | x ∈ closure {ξ} ∧ localRingDimension B S hS ξ = 0}.Finite
 ```
 
-**`AlgebraicGeometry.Space.exists_genericResidueFieldTranscendenceDegreeAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L520). The attribute's comment: “attainment of the maximum”.
+**`AlgebraicGeometry.Space.exists_genericResidueFieldTranscendenceDegreeAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L520). The attribute's comment: “attainment of the maximum”.
 
 > **Stacks 0BAX, attainment of the maximum.** Under the hypotheses of the dimension formula
 > the supremum defining the correction term is attained, so it is a maximum.
@@ -53,7 +53,7 @@ theorem exists_genericResidueFieldTranscendenceDegreeAt_eq (f : X ⟶ Y)
         residueFieldTranscendenceDegreeAt B S hS f ξ.1
 ```
 
-**`AlgebraicGeometry.Space.localRingDimension_add_residueFieldTranscendenceDegree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L594). The attribute's comment: “dimension inequality”. References: EGA IV (5.6.5), “more general”.
+**`AlgebraicGeometry.Space.localRingDimension_add_residueFieldTranscendenceDegree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L594). The attribute's comment: “dimension inequality”. References: EGA IV (5.6.5), “more general”.
 
 > **Stacks 0BAX, the dimension inequality.** For a morphism of algebraic spaces over `S`
 > locally of finite type with locally Noetherian target, the dimension of the local ring at a
@@ -84,7 +84,7 @@ theorem localRingDimension_add_residueFieldTranscendenceDegree_le (f : X ⟶ Y)
 
 [Tag 0BAY](https://stacks.math.columbia.edu/tag/0BAY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimension_le_add_iSup_residueFieldTranscendenceDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L677).
+**`AlgebraicGeometry.Space.dimension_le_add_iSup_residueFieldTranscendenceDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L677).
 
 > **Stacks 0BAY.** For a morphism of algebraic spaces over `S` locally of finite type with
 > locally Noetherian target, the dimension of the source is at most the dimension of the target
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.35, Tag 0BAW](https://stacks.math.columbia.edu/tag/0BAW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

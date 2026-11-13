@@ -8,13 +8,13 @@ proof: formalized
 
 # 44.3 Moduli of divisors on smooth curves
 
-Section 44.3 of the Stacks Project, [Tag 0B9C](https://stacks.math.columbia.edu/tag/0B9C). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 44.3 of the Stacks Project, [Tag 0B9C](https://stacks.math.columbia.edu/tag/0B9C). 8 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B9C, the section
 
 [Tag 0B9C](https://stacks.math.columbia.edu/tag/0B9C) in the Stacks Project.
 
-**`Stacks.Hilbert.HilbertFamily.isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean#L80). The attribute's comment: “the forward inclusion of the section's identification: a degree-`d` Hilbert family on a smooth relative curve is a relative effective Cartier divisor. The identification itself, as a natural isomorphism of functors, is `Stacks.Hilbert.hilbertFunctorOfRankIsoRelativeEffectiveCartierDivisorFunctorOfRank`”.
+**`Stacks.Hilbert.HilbertFamily.isRelativeEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean#L80). The attribute's comment: “the forward inclusion of the section's identification: a degree-`d` Hilbert family on a smooth relative curve is a relative effective Cartier divisor. The identification itself, as a natural isomorphism of functors, is `Stacks.Hilbert.hilbertFunctorOfRankIsoRelativeEffectiveCartierDivisorFunctorOfRank`”.
 
 > **Stacks Project, Section 0B9C, forward inclusion.** On a scheme smooth of relative dimension
 > one over `S`, a degree-`d` Hilbert family in `X` over `T` is a relative effective Cartier divisor
@@ -32,7 +32,7 @@ theorem HilbertFamily.isRelativeEffectiveCartierDivisor {S : Scheme.{u}} {X T : 
       ((Over.pullback T.hom).obj X).hom Z.ideal
 ```
 
-**`Stacks.Hilbert.hilbertFunctorOfRankIsoRelativeEffectiveCartierDivisorFunctorOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean#L187). The attribute's comment: “the section's assertion that `Hilb^d_{X/S}` parametrizes relative effective Cartier divisors, read as a natural isomorphism of functors on schemes over `S` between `Hilb^d_{X/S}` and the functor sending `T` to the relative effective Cartier divisors `D ⊂ X_T` over `T` which are finite locally free of degree `d` over `T`. This is the form in which the rest of the section uses it: 0B9E, 0B9F and the addition morphism on `Hilb^d` treat points of `Hilb^d` as divisors”.
+**`Stacks.Hilbert.hilbertFunctorOfRankIsoRelativeEffectiveCartierDivisorFunctorOfRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertFamilyDivisor.lean#L188). The attribute's comment: “the section's assertion that `Hilb^d_{X/S}` parametrizes relative effective Cartier divisors, read as a natural isomorphism of functors on schemes over `S` between `Hilb^d_{X/S}` and the functor sending `T` to the relative effective Cartier divisors `D ⊂ X_T` over `T` which are finite locally free of degree `d` over `T`. This is the form in which the rest of the section uses it: 0B9E, 0B9F and the addition morphism on `Hilb^d` treat points of `Hilb^d` as divisors”.
 
 > **Stacks Project, Section 0B9C.** For `X ⟶ S` smooth of relative dimension one, the
 > degree-`d` Hilbert functor `Hilb^d_{X/S}` is the functor of degree-`d` relative effective Cartier
@@ -55,7 +55,7 @@ def hilbertFunctorOfRankIsoRelativeEffectiveCartierDivisorFunctorOfRank {S : Sch
 
 [Tag 0B9D](https://stacks.math.columbia.edu/tag/0B9D) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_iff_locallyQuasiFinite_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L288). The attribute's comment: “(2) iff (3)”.
+**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_iff_locallyQuasiFinite_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L288). The attribute's comment: “(2) iff (3)”.
 
 > **Stacks Project, Tag 0B9D (2) iff (3).** On a scheme smooth of relative dimension one over
 > a base, the relative effective Cartier divisors are exactly the closed subschemes that are
@@ -75,7 +75,7 @@ theorem isRelativeEffectiveCartierDivisor_iff_locallyQuasiFinite_flat
         Flat (I.subschemeι ≫ f) ∧ LocallyOfFinitePresentation (I.subschemeι ≫ f)
 ```
 
-**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L301). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.isRelativeEffectiveCartierDivisor_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L301). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks Project, Tag 0B9D (1) implies (2).** A closed subscheme of a scheme smooth of
 > relative dimension one over a base that is finite locally free over the base is a relative
@@ -89,7 +89,7 @@ theorem isRelativeEffectiveCartierDivisor_of_isFiniteLocallyFree {X S : Scheme.{
     IsRelativeEffectiveCartierDivisor f I
 ```
 
-**`AlgebraicGeometry.locallyQuasiFinite_flat_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L316). The attribute's comment: “(3) implies (4)”.
+**`AlgebraicGeometry.locallyQuasiFinite_flat_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L316). The attribute's comment: “(3) implies (4)”.
 
 > **Stacks Project, Tag 0B9D (3) implies (4).** Dropping the local finite presentation
 > conjunct from the third condition gives the fourth.
@@ -101,7 +101,7 @@ theorem locallyQuasiFinite_flat_of_locallyOfFinitePresentation {D S : Scheme.{u}
     LocallyOfFiniteType g ∧ LocallyQuasiFinite g ∧ Flat g
 ```
 
-**`AlgebraicGeometry.isFiniteLocallyFree_iff_isRelativeEffectiveCartierDivisor_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L328). The attribute's comment: “(1) iff (2) when X over S is proper”. References: SGA 4 XVIII (1.5.10.3), “special case”.
+**`AlgebraicGeometry.isFiniteLocallyFree_iff_isRelativeEffectiveCartierDivisor_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorsOnSmoothCurves.lean#L328). The attribute's comment: “(1) iff (2) when X over S is proper”. References: SGA 4 XVIII (1.5.10.3), “special case”.
 
 > **Stacks Project, Tag 0B9D (1) iff (2) for a proper morphism.** On a proper scheme smooth of
 > relative dimension one over a base, the relative effective Cartier divisors are exactly the
@@ -116,7 +116,7 @@ theorem isFiniteLocallyFree_iff_isRelativeEffectiveCartierDivisor_of_isProper {X
       IsRelativeEffectiveCartierDivisor f I
 ```
 
-**`AlgebraicGeometry.locallyQuasiFinite_flat_locallyOfFinitePresentation_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/SmoothCurveLocalDimension.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/SmoothCurveLocalDimension.lean#L336). The attribute's comment: “(3) iff (4) when S is locally Noetherian”.
+**`AlgebraicGeometry.locallyQuasiFinite_flat_locallyOfFinitePresentation_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/SmoothCurveLocalDimension.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/SmoothCurveLocalDimension.lean#L336). The attribute's comment: “(3) iff (4) when S is locally Noetherian”.
 
 > **Stacks Project, Tag 0B9D (3) iff (4).** Over a locally Noetherian base, a morphism locally of
 > finite type is automatically locally of finite presentation, so the finite presentation conjunct
@@ -134,7 +134,7 @@ theorem locallyQuasiFinite_flat_locallyOfFinitePresentation_iff_of_isLocallyNoet
 
 [Tag 0B9E](https://stacks.math.columbia.edu/tag/0B9E) in the Stacks Project.
 
-**`AlgebraicGeometry.isFiniteLocallyFreeOfRank_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeSum.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeSum.lean#L655).
+**`AlgebraicGeometry.isFiniteLocallyFreeOfRank_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeSum.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeSum.lean#L655).
 
 > **Stacks Project, Tag 0B9E.** Let `f : X ⟶ S` be smooth of relative dimension one and let
 > `I` and `J` be quasi-coherent sheaves of ideals on `X` whose closed subschemes are finite
@@ -154,7 +154,7 @@ theorem isFiniteLocallyFreeOfRank_mul
 
 [Tag 0B9F](https://stacks.math.columbia.edu/tag/0B9F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_sub_mul_eq_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeDifference.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeDifference.lean#L112).
+**`AlgebraicGeometry.exists_isFiniteLocallyFreeOfRank_sub_mul_eq_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeDifference.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/DivisorDegreeDifference.lean#L112).
 
 > **Stacks Project, Tag 0B9F.** Let `f : X ⟶ S` be smooth of relative dimension one and let
 > `D₁` and `D₂` be quasi-coherent sheaves of ideals on `X` whose closed subschemes are finite
@@ -178,7 +178,7 @@ theorem exists_isFiniteLocallyFreeOfRank_sub_mul_eq_of_le
 
 [Tag 0B9G](https://stacks.math.columbia.edu/tag/0B9G) in the Stacks Project.
 
-**`Stacks.Hilbert.IsPointAddition.isFiniteLocallyFreeOfRank_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertPointAddition.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertPointAddition.lean#L565).
+**`Stacks.Hilbert.IsPointAddition.isFiniteLocallyFreeOfRank_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertPointAddition.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertPointAddition.lean#L565).
 
 > **Stacks Project, Tag 0B9G.** Let `X ⟶ S` be smooth of relative dimension one and suppose
 > the Hilbert functors `Hilb^d_{X/S}` are representable, say by `H` in degree `d` and by `H'` in
@@ -200,7 +200,7 @@ theorem isFiniteLocallyFreeOfRank_left (hf : IsPointAddition hH hH' f) :
 
 [Tag 0B9H](https://stacks.math.columbia.edu/tag/0B9H) in the Stacks Project.
 
-**`Stacks.Hilbert.smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean#L425). The attribute's comment: “corrected statement: adds the hypothesis that X -> S is separated, which the printed statement omits and needs (the source uses it through Hilb^1 = X and Tag 0B9G; without it the statement is false, see Stacks.Hilbert.NonSeparated.not\_smooth\_hilbertScheme\_doubledLine); representability is the tag's own hypothesis”.
+**`Stacks.Hilbert.smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean#L425). The attribute's comment: “corrected statement: adds the hypothesis that X -> S is separated, which the printed statement omits and needs (the source uses it through Hilb^1 = X and Tag 0B9G; without it the statement is false, see Stacks.Hilbert.NonSeparated.not\_smooth\_hilbertScheme\_doubledLine); representability is the tag's own hypothesis”.
 
 > **Stacks Project, Tag 0B9H.** Let `X ⟶ S` be a smooth morphism of schemes of relative
 > dimension one such that the functors `Hilb^d_{X/S}` are representable, say by `H d` over `S`.
@@ -225,7 +225,7 @@ theorem smoothOfRelativeDimension_of_represents [IsSeparated X.hom] (H : ℕ →
     SmoothOfRelativeDimension d (H d).hom
 ```
 
-**`Stacks.Hilbert.NonSeparated.not_forall_smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L232). The attribute's comment: “the statement as printed is false: without separatedness of X → S it fails (this is the negation of the printed statement); the separated case is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
+**`Stacks.Hilbert.NonSeparated.not_forall_smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L232). The attribute's comment: “the statement as printed is false: without separatedness of X → S it fails (this is the negation of the printed statement); the separated case is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
 
 > **Stacks Project, Tag 0B9H, as printed, is false.** The statement "for a smooth morphism of
 > schemes `X ⟶ S` of relative dimension `1` such that the functors `Hilb^d_{X/S}` are representable,
@@ -242,7 +242,7 @@ theorem not_forall_smoothOfRelativeDimension_of_represents :
         ∀ d, SmoothOfRelativeDimension d (H d).hom
 ```
 
-**`Stacks.Hilbert.NonSeparated.not_smooth_hilbertScheme_doubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L288). The attribute's comment: “the statement as printed is false: this is an explicit counterexample, a smooth non-separated relative curve over Spec of a product of copies of F\_2 with every Hilb^d representable and no Hilb^d with d >= 1 smooth. The source needs X -> S separated (it uses Hilb^1 = X and Tag 0B9G); the corrected statement is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
+**`Stacks.Hilbert.NonSeparated.not_smooth_hilbertScheme_doubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L288). The attribute's comment: “the statement as printed is false: this is an explicit counterexample, a smooth non-separated relative curve over Spec of a product of copies of F\_2 with every Hilb^d representable and no Hilb^d with d >= 1 smooth. The source needs X -> S separated (it uses Hilb^1 = X and Tag 0B9G); the corrected statement is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
 
 > **Stacks Project, Tag 0B9H, as printed, is false: the concrete counterexample.**
 >
@@ -304,7 +304,7 @@ theorem not_smooth_hilbertScheme_doubledLine :
 
 [Tag 0B9I](https://stacks.math.columbia.edu/tag/0B9I) in the Stacks Project.
 
-**`Stacks.Hilbert.smoothOfRelativeDimension_and_isProper_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L134). The attribute's comment: “(1), ingredient: every representing scheme is smooth of relative dimension d and proper. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
+**`Stacks.Hilbert.smoothOfRelativeDimension_and_isProper_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L134). The attribute's comment: “(1), ingredient: every representing scheme is smooth of relative dimension d and proper. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
 
 > **Stacks Project, Tag 0B9I, (1), smoothness and properness.** Let `X` be a smooth proper
 > curve over a field `k`. Every scheme representing the degree-`d` Hilbert functor of `X` is smooth
@@ -321,7 +321,7 @@ theorem smoothOfRelativeDimension_and_isProper_of_isCurve [IsProper f] [IsCurve 
     SmoothOfRelativeDimension d H.hom ∧ IsProper H.hom
 ```
 
-**`Stacks.Hilbert.isVariety_and_topologicalKrullDim_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L189). The attribute's comment: “(1), ingredient: every representing scheme is a variety of dimension d. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
+**`Stacks.Hilbert.isVariety_and_topologicalKrullDim_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L189). The attribute's comment: “(1), ingredient: every representing scheme is a variety of dimension d. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
 
 > **Stacks Project, Tag 0B9I, (1), the varieties.** Let `X` be a geometrically irreducible
 > smooth proper curve over a field `k`. Every scheme representing the degree-`d` Hilbert functor of
@@ -338,7 +338,7 @@ theorem isVariety_and_topologicalKrullDim_of_isCurve [IsProper f] [IsCurve k f] 
     IsVariety k H.hom ∧ topologicalKrullDim H.left = d
 ```
 
-**`Stacks.Hilbert.rationalPointsEquivEffectiveCartierDivisors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L232). The attribute's comment: “(2)”.
+**`Stacks.Hilbert.rationalPointsEquivEffectiveCartierDivisors`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L232). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0B9I, (2).** Let `X` be a smooth proper curve over a field `k` and `H`
 > a scheme representing the degree-`d` Hilbert functor of `X`. For a field extension `k'/k`, the
@@ -360,7 +360,7 @@ def rationalPointsEquivEffectiveCartierDivisors [IsProper f] [IsCurve k f] [Smoo
             (I.subschemeι ≫ ((Over.pullback (fieldExtOver k k').hom).obj (Over.mk f)).hom) d}
 ```
 
-**`Stacks.Hilbert.Curve.hilbertScheme_geometry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean#L125). The attribute's comment: “(1)”. References: SGA 4 XVII (6.3.8), “special case”.
+**`Stacks.Hilbert.Curve.hilbertScheme_geometry`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean#L125). The attribute's comment: “(1)”. References: SGA 4 XVII (6.3.8), “special case”.
 
 > **Stacks Project, Tag 0B9I, part (1).** Let `X` be a geometrically irreducible smooth proper
 > curve over a field `k` and `d ≥ 0`. The degree-`d` Hilbert functor of points of `X` is
@@ -376,7 +376,7 @@ theorem hilbertScheme_geometry [IsCurve k f] [GeometricallyIrreducible f] [Smoot
         topologicalKrullDim H.left = (d : WithBot ℕ∞)
 ```
 
-**`Stacks.Hilbert.Curve.rationalPointsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean#L156). The attribute's comment: “(2)”.
+**`Stacks.Hilbert.Curve.rationalPointsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurveGeometry.lean#L156). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0B9I, part (2).** Let `X` be a geometrically irreducible smooth proper
 > curve over a field `k`, let `H` represent its degree-`d` Hilbert functor and let `k'/k` be a field
@@ -397,7 +397,7 @@ def rationalPointsEquiv {k' : Type u} [Field k'] [Algebra k k'] [IsCurve k f]
             (Over.mk f)).hom) d}
 ```
 
-**`Stacks.Hilbert.exists_representsHilbertFunctorOfRank_isVariety_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L70). The attribute's comment: “(1)”.
+**`Stacks.Hilbert.exists_representsHilbertFunctorOfRank_isVariety_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L70). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 0B9I (1).** Let `X` be a geometrically irreducible smooth proper curve
 > over a field `k`. For every `d` the degree-`d` Hilbert functor of `X` is representable by a
@@ -411,7 +411,7 @@ theorem exists_representsHilbertFunctorOfRank_isVariety_of_isCurve [IsProper f] 
         topologicalKrullDim H.left = d
 ```
 
-**`Stacks.Hilbert.isFiniteLocallyFreeOfRank_addDivisors_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L84). The attribute's comment: “(3), for every choice of representing schemes; geometric irreducibility of X is not needed”.
+**`Stacks.Hilbert.isFiniteLocallyFreeOfRank_addDivisors_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L84). The attribute's comment: “(3), for every choice of representing schemes; geometric irreducibility of X is not needed”.
 
 > **Stacks Project, Tag 0B9I (3).** Let `X` be a smooth proper curve over a field `k`, and let
 > `H₁`, `H₂` and `H` be any schemes representing the Hilbert functors of `X` of degrees `d₁`, `d₂`
@@ -432,7 +432,7 @@ theorem isFiniteLocallyFreeOfRank_addDivisors_of_isCurve [IsProper f] [IsCurve k
       Morphisms.IsFiniteLocallyFreeOfRank (addDivisors h₁ h₂ h).left ((d₁ + d₂).choose d₁)
 ```
 
-**`Stacks.Hilbert.exists_hilbertSchemes_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L111).
+**`Stacks.Hilbert.exists_hilbertSchemes_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeProperCurve.lean#L111).
 
 > **Stacks Project, Tag 0B9I.** Let `X` be a geometrically irreducible smooth proper curve over
 > a field `k`. There are schemes `H d` representing the Hilbert functors `Hilb^d_{X/k}` such that
@@ -472,7 +472,7 @@ theorem exists_hilbertSchemes_of_isCurve [IsProper f] [IsCurve k f] [Smooth f]
 
 [Tag 0B9J](https://stacks.math.columbia.edu/tag/0B9J) in the Stacks Project.
 
-**`Stacks.Hilbert.isRelativeEffectiveCartierDivisor_univ_iso_prod_and_restrict_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L303).
+**`Stacks.Hilbert.isRelativeEffectiveCartierDivisor_univ_iso_prod_and_restrict_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L303).
 
 > **Stacks Project, Tag 0B9J.** Let `X` be a smooth proper curve over a field `k`, let `d ≥ 0`,
 > and let `H` and `H'` be schemes representing the Hilbert functors `Hilb^d_{X/k}` and
@@ -524,4 +524,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 44.3, Tag 0B9C](https://stacks.math.columbia.edu/tag/0B9C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.118 Generic flatness
 
-Section 10.118 of the Stacks Project, [Tag 051Q](https://stacks.math.columbia.edu/tag/051Q). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.118 of the Stacks Project, [Tag 051Q](https://stacks.math.columbia.edu/tag/051Q). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 051R, a lemma
 
 [Tag 051R](https://stacks.math.columbia.edu/tag/051R) in the Stacks Project.
 
-**`Module.exists_ne_zero_free_localizedModule_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Noetherian.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Noetherian.lean#L510). The attribute's comment: “The localizations are abstract: the conclusion asserts freeness over every model `Rf` of `R_f` and `Mf` of `M_f`, pinned by `IsLocalization.Away` and `IsLocalizedModule`. The `R`-module structure on `M` is the one induced by `R → S`. See the module docstring.”. References: EGA IV (6.9.2); EGA IV (8.9.4), “affine Noetherian case”; SGA 1 IV (6.7).
+**`Module.exists_ne_zero_free_localizedModule_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Noetherian.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Noetherian.lean#L511). The attribute's comment: “The localizations are abstract: the conclusion asserts freeness over every model `Rf` of `R_f` and `Mf` of `M_f`, pinned by `IsLocalization.Away` and `IsLocalizedModule`. The `R`-module structure on `M` is the one induced by `R → S`. See the module docstring.”. References: EGA IV (6.9.2); EGA IV (8.9.4), “affine Noetherian case”; SGA 1 IV (6.7).
 
 > **Stacks 051R** (generic freeness). Let `R` be a Noetherian domain, let `S` be an `R`-algebra
 > of finite type and let `M` be a finite `S`-module. Then there is a nonzero `f ∈ R` such that the
@@ -39,7 +39,7 @@ public theorem exists_ne_zero_free_localizedModule_away
 
 [Tag 051S](https://stacks.math.columbia.edu/tag/051S) in the Stacks Project.
 
-**`Module.FinitePresentation.exists_ne_zero_free_localizedModule_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/FinitePresentation.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/FinitePresentation.lean#L248). The attribute's comment: “The localizations are abstract: the conclusion asserts freeness over every model `Rf` of `R_f` and `Mf` of `M_f`, pinned by `IsLocalization.Away` and `IsLocalizedModule`. The `R`-module structure on `M` is the one induced by `R → S`. See the module docstring.”. References: EGA IV (8.9.4), “affine, free case”; EGA IV (8.9.4.1); EGA IV (8.9.4), “affine, free case”; EGA IV (11.4.6), “special case”; EGA IV (6.9.2), “more general”; SGA 1 IV (6.7), “more general”.
+**`Module.FinitePresentation.exists_ne_zero_free_localizedModule_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/FinitePresentation.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/FinitePresentation.lean#L247). The attribute's comment: “The localizations are abstract: the conclusion asserts freeness over every model `Rf` of `R_f` and `Mf` of `M_f`, pinned by `IsLocalization.Away` and `IsLocalizedModule`. The `R`-module structure on `M` is the one induced by `R → S`. See the module docstring.”. References: EGA IV (8.9.4), “affine, free case”; EGA IV (8.9.4.1); EGA IV (11.4.6), “special case”; EGA IV (6.9.2), “more general”; SGA 1 IV (6.7), “more general”.
 
 > **Stacks 051S** (generic freeness). Let `R` be a domain, let `S` be an `R`-algebra of finite
 > presentation and let `M` be an `S`-module of finite presentation. Then there is a nonzero `f ∈ R`
@@ -65,7 +65,7 @@ public theorem exists_ne_zero_free_localizedModule_away
 
 [Tag 051T](https://stacks.math.columbia.edu/tag/051T) in the Stacks Project.
 
-**`Algebra.exists_ne_zero_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/GenericFinitePresentation.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/GenericFinitePresentation.lean#L398). The attribute's comment: “The four conclusions are the condition of Equation 051U, so they are cited as `Algebra.IsFinitePresentationFreeAway` rather than written out; that definition fixes the models of `R_f`, `S_f` and `M_f`, and `Algebra.isFinitePresentationFreeAway_iff` moves the conclusion to any other models. See the module docstring.”. References: EGA IV (6.9.2), “more general”; EGA IV (8.9.4.1); EGA IV (11.4.6), “special case”; EGA IV (6.11.9), “more general”; SGA 1 IV (6.7), “more general”; SGA 1 IV (6.7), “more general”.
+**`Algebra.exists_ne_zero_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/GenericFinitePresentation.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/GenericFinitePresentation.lean#L396). The attribute's comment: “The four conclusions are the condition of Equation 051U, so they are cited as `Algebra.IsFinitePresentationFreeAway` rather than written out; that definition fixes the models of `R_f`, `S_f` and `M_f`, and `Algebra.isFinitePresentationFreeAway_iff` moves the conclusion to any other models. See the module docstring.”. References: EGA IV (6.9.2), “more general”; EGA IV (8.9.4.1); EGA IV (11.4.6), “special case”; EGA IV (6.11.9), “more general”; SGA 1 IV (6.7), “more general”.
 
 > **Stacks 051T** (generic freeness and generic finite presentation). Let `R` be a domain, let
 > `S` be an `R`-algebra of finite type and let `M` be a finite `S`-module. Then some nonzero `f ∈ R`
@@ -84,7 +84,7 @@ public theorem exists_ne_zero_isFinitePresentationFreeAway
 
 [Tag 051U](https://stacks.math.columbia.edu/tag/051U) in the Stacks Project.
 
-**`Algebra.IsFinitePresentationFreeAway`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/FreeAway.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FinitePresentation/FreeAway.lean#L385). The attribute's comment: “The condition of the source's display, as a predicate on `f`, with the canonical models of the localizations; `M_f` is the base change `S_f ⊗[S] M`. See the module docstring.”.
+**`Algebra.IsFinitePresentationFreeAway`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/FreeAway.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/FreeAway.lean#L385). The attribute's comment: “The condition of the source's display, as a predicate on `f`, with the canonical models of the localizations; `M_f` is the base change `S_f ⊗[S] M`. See the module docstring.”.
 
 > **Stacks 051U**. Let `R → S` be a ring map, let `M` be an `S`-module and let `f : R`. The
 > condition `Algebra.IsFinitePresentationFreeAway R S M f` says that, after inverting `f`, the ring
@@ -103,7 +103,7 @@ public def IsFinitePresentationFreeAway (R S M : Type*) [CommRing R] [CommRing S
 
 [Tag 051W](https://stacks.math.columbia.edu/tag/051W) in the Stacks Project.
 
-**`Algebra.iUnion_basicOpen_isFinitePresentationFreeAway_inter_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L244). The attribute's comment: “The locus `U(R → S, M)` of Equation 051V, which has no separate definition here, is written out as the union of the standard opens `D(f)` over the `f` satisfying Equation 051U, i.e. over `Algebra.IsFinitePresentationFreeAway R S M f`. See the module docstring.”.
+**`Algebra.iUnion_basicOpen_isFinitePresentationFreeAway_inter_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L244). The attribute's comment: “The locus `U(R → S, M)` of Equation 051V, which has no separate definition here, is written out as the union of the standard opens `D(f)` over the `f` satisfying Equation 051U, i.e. over `Algebra.IsFinitePresentationFreeAway R S M f`. See the module docstring.”.
 
 > **Stacks 051W**. Let `R → S` be a ring map and let `0 → M₁ → M₂ → M₃ → 0` be a short exact
 > sequence of `S`-modules. Writing `U(R → S, M) = ⋃ \{D(f) | Algebra.IsFinitePresentationFreeAway R S
@@ -130,7 +130,7 @@ public theorem iUnion_basicOpen_isFinitePresentationFreeAway_inter_subset_of_sho
 
 [Tag 051X](https://stacks.math.columbia.edu/tag/051X) in the Stacks Project.
 
-**`Algebra.image_comap_iUnion_basicOpen_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L274). The attribute's comment: “The locus `U(R → S, M)` of Equation 051V is written out as the union of the standard opens `D(g)` over the `g` satisfying 051U, cited as `Algebra.IsFinitePresentationFreeAway`; the identification `Spec(R_f) = D(f)` is the open embedding `PrimeSpectrum.comap (algebraMap R R_f)`, along which the left-hand side is pushed forward. See the module docstring.”.
+**`Algebra.image_comap_iUnion_basicOpen_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L274). The attribute's comment: “The locus `U(R → S, M)` of Equation 051V is written out as the union of the standard opens `D(g)` over the `g` satisfying 051U, cited as `Algebra.IsFinitePresentationFreeAway`; the identification `Spec(R_f) = D(f)` is the open embedding `PrimeSpectrum.comap (algebraMap R R_f)`, along which the left-hand side is pushed forward. See the module docstring.”.
 
 > **Stacks 051X**. Let `R → S` be a ring map, let `M` be an `S`-module and let `f : R`. Call
 > `g` good for a module when it satisfies the condition `Algebra.IsFinitePresentationFreeAway` of
@@ -161,7 +161,7 @@ public theorem image_comap_iUnion_basicOpen_isFinitePresentationFreeAway
 
 [Tag 051Y](https://stacks.math.columbia.edu/tag/051Y) in the Stacks Project.
 
-**`Algebra.dense_iUnion_basicOpen_isFinitePresentationFreeAway_of_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L344). The attribute's comment: “The dense open `U` of the source is the union of the `D(f)`, `f ∈ s`, so it is not a separate variable; the locus of Equation 051V is written out as the union of the `D(f)` over the `f` satisfying 051U, and density in `D(f)` is stated in `Spec(R_f)`. See the module docstring.”.
+**`Algebra.dense_iUnion_basicOpen_isFinitePresentationFreeAway_of_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L344). The attribute's comment: “The dense open `U` of the source is the union of the `D(f)`, `f ∈ s`, so it is not a separate variable; the locus of Equation 051V is written out as the union of the `D(f)` over the `f` satisfying 051U, and density in `D(f)` is stated in `Spec(R_f)`. See the module docstring.”.
 
 > **Stacks 051Y**. Let `R → S` be a ring map and let `M` be an `S`-module. Call `f ∈ R` good when
 > `S_f` is of finite presentation over `R_f`, `M_f` is of finite presentation over `S_f` and `S_f`,
@@ -187,7 +187,7 @@ public theorem dense_iUnion_basicOpen_isFinitePresentationFreeAway_of_localizati
 
 [Tag 051Z](https://stacks.math.columbia.edu/tag/051Z) in the Stacks Project.
 
-**`Algebra.exists_isOpen_dense_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/GenericFlatness.lean, line 867](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/GenericFlatness.lean#L867). The attribute's comment: “The four conditions on `f` are the condition of Equation 051U, cited as `Algebra.IsFinitePresentationFreeAway`; that definition fixes the models of `R_f`, `S_f` and `M_f`, and `Algebra.isFinitePresentationFreeAway_iff` moves the conclusion to any other models.”.
+**`Algebra.exists_isOpen_dense_isFinitePresentationFreeAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/GenericFlatness.lean, line 867](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/GenericFlatness.lean#L867). The attribute's comment: “The four conditions on `f` are the condition of Equation 051U, cited as `Algebra.IsFinitePresentationFreeAway`; that definition fixes the models of `R_f`, `S_f` and `M_f`, and `Algebra.isFinitePresentationFreeAway_iff` moves the conclusion to any other models.”.
 
 > **Stacks 051Z** (generic flatness over a reduced base). Let `R → S` be a ring map of finite
 > type with `R` reduced, and let `M` be a finite `S`-module. Then there is an open dense subset
@@ -211,4 +211,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.118, Tag 051Q](https://stacks.math.columbia.edu/tag/051Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

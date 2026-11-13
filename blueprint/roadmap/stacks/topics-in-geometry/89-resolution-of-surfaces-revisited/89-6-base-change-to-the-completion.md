@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.6 Base change to the completion
 
-Section 89.6 of the Stacks Project, [Tag 0BHN](https://stacks.math.columbia.edu/tag/0BHN). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.6 of the Stacks Project, [Tag 0BHN](https://stacks.math.columbia.edu/tag/0BHN). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BHP, a lemma
 
 [Tag 0BHP](https://stacks.math.columbia.edu/tag/0BHP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_adicCompletion_ringEquiv_henselianLocalRing_completionSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L210).
+**`AlgebraicGeometry.Space.exists_adicCompletion_ringEquiv_henselianLocalRing_completionSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HenselianCompletionBaseChange.lean#L210).
 
 > Let `(A, 𝔪)` be a local ring with finitely generated maximal ideal, let `X` be a decent
 > algebraic space over `Spec A` and let `Y = X ×_{Spec A} Spec A^` be its base change to the
@@ -68,7 +68,7 @@ theorem exists_adicCompletion_ringEquiv_henselianLocalRing_completionSpace
 
 [Tag 0BHQ](https://stacks.math.columbia.edu/tag/0BHQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRegularLocalRing_henselianLocalRing_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionBaseChange.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionBaseChange.lean#L97). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isRegularLocalRing_henselianLocalRing_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionBaseChange.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionBaseChange.lean#L97). The attribute's comment: “part (1)”.
 
 > **Stacks 0BHQ, part (1).** Let `(A, 𝔪)` be a Noetherian local ring, let `X` be a decent
 > algebraic space locally of finite type over `Spec A` and let `Y = X ×_{Spec A} Spec A^` be its
@@ -91,7 +91,7 @@ theorem isRegularLocalRing_henselianLocalRing_of_completion
           (completionProjection A B hA hAc f) y) hXdec : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.isRegularLocalRing_henselianLocalRing_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionClosedFibre.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionClosedFibre.lean#L151). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isRegularLocalRing_henselianLocalRing_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionClosedFibre.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionClosedFibre.lean#L151). The attribute's comment: “part (2)”.
 
 > Let `(A, 𝔪)` be a Noetherian local ring, let `X` be a decent algebraic space locally of finite
 > type over `Spec A` and let `Y = X ×_{Spec A} Spec A^` be its base change to the `𝔪`-adic
@@ -121,7 +121,7 @@ theorem isRegularLocalRing_henselianLocalRing_completion_iff
             (completionProjection A B hA hAc f) y) hXdec : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_completionSpace_iff_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionProper.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionProper.lean#L220). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_completionSpace_iff_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionProper.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularCompletionProper.lean#L220). The attribute's comment: “part (3)”.
 
 > **Stacks 0BHQ, part (3).** Let `(A, 𝔪)` be a Noetherian local ring and let `X` be a decent
 > algebraic space proper over `Spec A`. Then `X` is regular if and only if its base change
@@ -141,7 +141,7 @@ theorem hasEtaleLocalProperty_isRegular_completionSpace_iff_of_isProper
 
 [Tag 0BHR](https://stacks.math.columbia.edu/tag/0BHR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_normalization_of_isAnalyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean#L322). References: SGA 3 XXV (4.2), “more general”.
+**`AlgebraicGeometry.Space.isFinite_normalization_of_isAnalyticallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean#L322). References: SGA 3 XXV (4.2), “more general”.
 
 > **Stacks 0BHR.** Let `(A, 𝔪)` be an analytically unramified Noetherian local ring and let
 > `F` be an algebraic space over `S` whose structure morphism goes to an object of the site with
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.6, Tag 0BHN](https://stacks.math.columbia.edu/tag/0BHN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

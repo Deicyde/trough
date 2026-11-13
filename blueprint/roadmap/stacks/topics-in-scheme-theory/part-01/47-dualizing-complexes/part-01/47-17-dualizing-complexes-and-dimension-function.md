@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.17 Dualizing complexes and dimension functions
 
-Section 47.17 of the Stacks Project, [Tag 0A7W](https://stacks.math.columbia.edu/tag/0A7W). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.17 of the Stacks Project, [Tag 0A7W](https://stacks.math.columbia.edu/tag/0A7W). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A7W, the section
 
 [Tag 0A7W](https://stacks.math.columbia.edu/tag/0A7W) in the Stacks Project.
 
-**`Dualizing.dualizingDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L119). The attribute's comment: “the function δ attached to a dualizing complex over a Noetherian ring”.
+**`Dualizing.dualizingDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L119). The attribute's comment: “the function δ attached to a dualizing complex over a Noetherian ring”.
 
 > The **dimension function** of a dualizing complex `K` over a Noetherian ring `A`: the value
 > at a prime `p` is the unique integer `n` for which the localization `K_p`, shifted by `-n`, is a
@@ -26,7 +26,7 @@ noncomputable def dualizingDimension {A : Type u} [CommRing A] [IsNoetherianRing
     (K : DerivedCategory (ModuleCat.{max v u} A)) (p : PrimeSpectrum A) : ℤ
 ```
 
-**`Dualizing.dualizingDimension_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L151). The attribute's comment: “δ(p) is the unique integer n with K\_p⟦-n⟧ normalized over A\_p”.
+**`Dualizing.dualizingDimension_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L151). The attribute's comment: “δ(p) is the unique integer n with K\_p⟦-n⟧ normalized over A\_p”.
 
 > **The defining property of the dimension function.** A shift of the localization of a
 > dualizing complex at a prime is normalized exactly when the shift is the value of the dimension
@@ -46,7 +46,7 @@ theorem dualizingDimension_eq_iff {A : Type u} [CommRing A] [IsNoetherianRing A]
 
 [Tag 0A7X](https://stacks.math.columbia.edu/tag/0A7X) in the Stacks Project.
 
-**`Dualizing.existsUnique_nontrivial_localized_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean#L533).
+**`Dualizing.existsUnique_nontrivial_localized_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/MinimalPrimeNonvanishing.lean#L533).
 
 > **Stacks Project, Tag 0A7X.** Let `A` be a Noetherian ring with a dualizing complex `K` and
 > let `p` be a minimal prime of `A`. Then the localization at `p` of the cohomology module `H^i(K)`
@@ -66,7 +66,7 @@ theorem existsUnique_nontrivial_localized_homology
 
 [Tag 0A7Y](https://stacks.math.columbia.edu/tag/0A7Y) in the Stacks Project.
 
-**`Dualizing.dualizingDimension_derivedHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSurjective.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSurjective.lean#L756).
+**`Dualizing.dualizingDimension_derivedHom_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSurjective.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSurjective.lean#L750).
 
 > **Stacks 0A7Y.** For a surjection `f : A → B` of Noetherian rings and a dualizing complex
 > `K` over `A`, the dimension function of the dualizing complex `RHom_A(B, K)` over `B` is the
@@ -94,7 +94,7 @@ theorem dualizingDimension_derivedHom_of_surjective
 
 [Tag 0A7Z](https://stacks.math.columbia.edu/tag/0A7Z) in the Stacks Project.
 
-**`Dualizing.dualizingDimension_eq_succ_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L301). The attribute's comment: “δ(p) = δ(q) + 1 for an immediate specialization p ⤳ q”.
+**`Dualizing.dualizingDimension_eq_succ_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L301). The attribute's comment: “δ(p) = δ(q) + 1 for an immediate specialization p ⤳ q”.
 
 > The dimension function of a dualizing complex drops by exactly one along an immediate
 > specialization.
@@ -107,7 +107,7 @@ theorem dualizingDimension_eq_succ_of_isImmediateSpecialization
     dualizingDimension.{u, v} K p = dualizingDimension.{u, v} K q + 1
 ```
 
-**`Dualizing.dualizingDimension_lt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L392). The attribute's comment: “δ(q) < δ(p) for a non-trivial specialization p ⤳ q”.
+**`Dualizing.dualizingDimension_lt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L392). The attribute's comment: “δ(q) < δ(p) for a non-trivial specialization p ⤳ q”.
 
 > The dimension function of a dualizing complex drops strictly along a non-trivial
 > specialization.
@@ -120,7 +120,7 @@ theorem dualizingDimension_lt_of_specializes
     dualizingDimension.{u, v} K q < dualizingDimension.{u, v} K p
 ```
 
-**`Dualizing.dualizingDimensionFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L404). The attribute's comment: “the function δ of a dualizing complex is a dimension function on Spec A”.
+**`Dualizing.dualizingDimensionFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DimensionFunctionSpecialization.lean#L404). The attribute's comment: “the function δ of a dualizing complex is a dimension function on Spec A”.
 
 > The dimension function `δ_K` of a dualizing complex `K` over a Noetherian ring `A`, as a
 > dimension function on `Spec A`.
@@ -135,7 +135,7 @@ def dualizingDimensionFunction {A : Type u} [CommRing A] [IsNoetherianRing A]
 
 [Tag 0A80](https://stacks.math.columbia.edu/tag/0A80) in the Stacks Project.
 
-**`Dualizing.ringKrullDim_lt_top_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FiniteDimension.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FiniteDimension.lean#L360). The attribute's comment: “of finite dimension”.
+**`Dualizing.ringKrullDim_lt_top_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/FiniteDimension.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/FiniteDimension.lean#L360). The attribute's comment: “of finite dimension”.
 
 > **Stacks Project, Tag 0A80.** A Noetherian ring admitting a dualizing complex has finite
 > Krull dimension.
@@ -146,7 +146,7 @@ theorem ringKrullDim_lt_top_of_isDualizingComplex {A : Type u} [CommRing A] [IsN
     ringKrullDim A < ⊤
 ```
 
-**`Dualizing.isUniversallyCatenary_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UniversallyCatenary.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UniversallyCatenary.lean#L110). The attribute's comment: “universally catenary”.
+**`Dualizing.isUniversallyCatenary_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UniversallyCatenary.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UniversallyCatenary.lean#L110). The attribute's comment: “universally catenary”.
 
 > **Stacks Project, Tag 0A80.** A Noetherian ring admitting a dualizing complex is universally
 > catenary: every algebra of finite type over it is catenary.
@@ -161,7 +161,7 @@ theorem isUniversallyCatenary_of_isDualizingComplex {A : Type u} [CommRing A] [I
 
 [Tag 0AWE](https://stacks.math.columbia.edu/tag/0AWE) in the Stacks Project.
 
-**`Dualizing.support_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean#L293). The attribute's comment: “(1): the support of ω\_A is the union of the d-dimensional irreducible components”.
+**`Dualizing.support_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean#L293). The attribute's comment: “(1): the support of ω\_A is the union of the d-dimensional irreducible components”.
 
 > Let `A` be a Noetherian local ring with a normalized
 > dualizing complex `K`, let `d = dim(A)` and let `ω_A = H^{-d}(K)`. The support of `ω_A` is the
@@ -177,7 +177,7 @@ theorem support_canonicalModule
         topologicalKrullDim C = (d : WithBot ℕ∞)}
 ```
 
-**`Dualizing.propertySkModule_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean#L603). The attribute's comment: “(2): the canonical module ω\_A satisfies Serre's condition (S₂)”.
+**`Dualizing.propertySkModule_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean#L603). The attribute's comment: “(2): the canonical module ω\_A satisfies Serre's condition (S₂)”.
 
 > Let `A` be a Noetherian local ring with a normalized dualizing complex `K`, let `d = dim(A)`
 > and let `ω_A = H^{-d}(K)`. Then `ω_A` satisfies Serre's condition `(S₂)`.
@@ -199,4 +199,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.17, Tag 0A7W](https://stacks.math.columbia.edu/tag/0A7W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

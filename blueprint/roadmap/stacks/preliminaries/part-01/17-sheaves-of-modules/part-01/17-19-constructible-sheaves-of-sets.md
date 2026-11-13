@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.19 Constructible sheaves of sets
 
-Section 17.19 of the Stacks Project, [Tag 0CAG](https://stacks.math.columbia.edu/tag/0CAG). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.19 of the Stacks Project, [Tag 0CAG](https://stacks.math.columbia.edu/tag/0CAG). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CAH, a lemma
 
 [Tag 0CAH](https://stacks.math.columbia.edu/tag/0CAH) in the Stacks Project.
 
-**`Stacks.Sheaves.ConstantSheafGenerators.exists_epi_from_coproduct_jExtendConst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantSheafGenerators.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/ConstantSheafGenerators.lean#L510).
+**`Stacks.Sheaves.ConstantSheafGenerators.exists_epi_from_coproduct_jExtendConst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Sheaf/ConstantSheafGenerators.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Sheaf/ConstantSheafGenerators.lean#L510).
 
 > **Stacks 0CAH (Lemma 17.19.1).**  Let `X` be a topological space, `B` a basis for the
 > topology on `X`, and `F` a sheaf of sets on `X`.  Then there is an index set `I`, a family of
@@ -57,7 +57,7 @@ theorem exists_epi_from_coproduct_jExtendConst
 
 [Tag 0CAI](https://stacks.math.columbia.edu/tag/0CAI) in the Stacks Project.
 
-**`Stacks.isFilteredColimit_of_hasCompactBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/CompactBasisColimit.lean, line 976](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Spectral/CompactBasisColimit.lean#L976).
+**`Stacks.isFilteredColimit_of_hasCompactBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/CompactBasisColimit.lean, line 978](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Spectral/CompactBasisColimit.lean#L978).
 
 > Every sheaf of sets on a space admitting a basis of quasi-compact opens is
 > a filtered colimit of sheaves with finite basis coequalizer presentations.
@@ -78,7 +78,7 @@ theorem isFilteredColimit_of_hasCompactBasis (B : Set (Opens X))
 
 [Tag 0CAK](https://stacks.math.columbia.edu/tag/0CAK) in the Stacks Project.
 
-**`Stacks.exists_pullback_from_finite_sober_of_hasFiniteBasisCoequalizerPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/FiniteSoberPullback.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Spectral/FiniteSoberPullback.lean#L1015).
+**`Stacks.exists_pullback_from_finite_sober_of_hasFiniteBasisCoequalizerPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/FiniteSoberPullback.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Spectral/FiniteSoberPullback.lean#L1015).
 
 > A sheaf with a finite coequalizer presentation over the quasi-compact
 > opens of a spectral space descends to a sheaf with finite stalks on a finite
@@ -101,7 +101,7 @@ theorem exists_pullback_from_finite_sober_of_hasFiniteBasisCoequalizerPresentati
 
 [Tag 0CAL](https://stacks.math.columbia.edu/tag/0CAL) in the Stacks Project.
 
-**`Stacks.exists_mono_to_pi_constantSheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/ConstructibleSheaves.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Spectral/ConstructibleSheaves.lean#L489).
+**`Stacks.exists_mono_to_pi_constantSheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Spectral/ConstructibleSheaves.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Spectral/ConstructibleSheaves.lean#L489).
 
 > **Stacks Project, Tag 0CAL.** A constructible sheaf of sets on a spectral space — one with
 > a finite presentation by finite constant sheaves extended from quasi-compact opens — is
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.19, Tag 0CAG](https://stacks.math.columbia.edu/tag/0CAG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

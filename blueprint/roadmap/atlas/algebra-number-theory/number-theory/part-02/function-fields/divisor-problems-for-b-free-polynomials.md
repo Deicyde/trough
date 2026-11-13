@@ -7,7 +7,7 @@ statement: formalized
 
 # Divisor problems for B-free polynomials
 
-53 results, 28 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html).
+53 results, 28 proved and 25 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html).
 
 ## Dirichlet convolution over monic divisors
 
@@ -26,7 +26,7 @@ there are finitely many, and $0$ otherwise.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of the Dirichlet convolution.
 
-Formalized by `MetaMathlibExt.monicDirichletConv`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv).
+Formalized by `MetaMathlibExt.monicDirichletConv`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv).
 
 ## Dirichlet convolution at $1$
 
@@ -38,7 +38,7 @@ $(\alpha * \beta)(1) = \alpha(1) \beta(1)$, since the only monic divisor of $1$ 
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of the Dirichlet convolution.
 
-Formalized by `MetaMathlibExt.monicDirichletConv_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-one).
+Formalized by `MetaMathlibExt.monicDirichletConv_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-one).
 
 ## Perron's formula for monic polynomials over a finite field
 
@@ -55,7 +55,7 @@ $$\sum_{f \text{ monic},\ \deg f \le n} a(f) = \frac{1}{2 \pi i} \oint_{|u| = \r
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 1 (Perron's Formula).
 
-Stated but not proved: `MetaMathlibExt.monic_perron_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-perron-formula).
+Stated but not proved: `MetaMathlibExt.monic_perron_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-perron-formula).
 
 ## Dirichlet convolution of completely multiplicative functions at a product
 
@@ -76,7 +76,7 @@ nonzero constants to $1$ and $0$ to $0$), and only values at monic polynomials e
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.monicDirichletConv_mul_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-mul-of-completely-m).
+Stated but not proved: `MetaMathlibExt.monicDirichletConv_mul_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-mul-of-completely-m).
 
 ## Möbius sum over the monic divisors of a polynomial over a finite field
 
@@ -93,7 +93,7 @@ The right side is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient functi
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 6; `Φ` as defined after Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.monic_sum_moebius_div_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-moebius-div-norm).
+Stated but not proved: `MetaMathlibExt.monic_sum_moebius_div_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-moebius-div-norm).
 
 ## Degree-weighted Möbius sum over the monic divisors of a polynomial over a finite field
 
@@ -113,7 +113,7 @@ The product is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient function 
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 7; `Φ` as defined after Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.monic_sum_moebius_mul_natDegree_div_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-moebius-mul-nat-degree-div-nor).
+Stated but not proved: `MetaMathlibExt.monic_sum_moebius_mul_natDegree_div_norm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-moebius-mul-nat-degree-div-nor).
 
 ## Number of monic polynomials of bounded degree
 
@@ -125,7 +125,7 @@ most $N$ is $(q^{N+1} - 1)/(q - 1)$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4, case `h = 1`, `m = 1`.
 
-Stated but not proved: `MetaMathlibExt.monic_count_natDegree_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-count-nat-degree-le).
+Stated but not proved: `MetaMathlibExt.monic_count_natDegree_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-count-nat-degree-le).
 
 ## Summatory divisor function for monic polynomials over a finite field
 
@@ -141,7 +141,7 @@ $$\sum_{f \text{ monic},\ \deg f \le N} (1 * 1)(f) =
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 4, case `h = 2`, `m = 1`.
 
-Stated but not proved: `MetaMathlibExt.monic_sum_divisorCount_natDegree_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-divisor-count-nat-degree-le).
+Stated but not proved: `MetaMathlibExt.monic_sum_divisorCount_natDegree_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-sum-divisor-count-nat-degree-le).
 
 ## Norm of a polynomial over a finite field
 
@@ -152,7 +152,7 @@ norm of a nonzero $f \in F[T]$ is the real number $|f| = q^{\deg f}$, and $|0| =
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of the norm.
 
-Formalized by `MetaMathlibExt.fqNorm`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm).
+Formalized by `MetaMathlibExt.fqNorm`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm).
 
 ## The norm of a nonzero polynomial
 
@@ -163,7 +163,7 @@ nonzero $f \in F[T]$, the norm of $f$ is $|f| = q^{\deg f}$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of the norm.
 
-Formalized by `MetaMathlibExt.fqNorm_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm-of-ne-zero).
+Formalized by `MetaMathlibExt.fqNorm_of_ne_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm-of-ne-zero).
 
 ## Multiplicativity of the norm
 
@@ -175,7 +175,7 @@ $|fg| = |f| \, |g|$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of the norm.
 
-Formalized by `MetaMathlibExt.fqNorm_mul`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm-mul).
+Formalized by `MetaMathlibExt.fqNorm_mul`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#fq-norm-mul).
 
 ## Monic polynomials of degree zero
 
@@ -186,7 +186,7 @@ of degree at most $0$ if and only if $f = 1$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 2, the set `M_{≤ 0}`.
 
-Formalized by `MetaMathlibExt.monic_natDegree_le_zero_iff`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-nat-degree-le-zero-iff).
+Formalized by `MetaMathlibExt.monic_natDegree_le_zero_iff`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-nat-degree-le-zero-iff).
 
 ## $B_\kappa$-free polynomials
 
@@ -198,7 +198,7 @@ not divide $f$ for any monic irreducible $P \in F[T]$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `B_κ`-free polynomials.
 
-Formalized by `MetaMathlibExt.IsBFree`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#is-bfree).
+Formalized by `MetaMathlibExt.IsBFree`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#is-bfree).
 
 ## The polynomial $1$ is $B_\kappa$-free
 
@@ -210,7 +210,7 @@ Then $1$ is $B_\kappa$-free: $P^{\kappa(P)}$ does not divide $1$ for any monic i
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `B_κ`-free polynomials.
 
-Formalized by `MetaMathlibExt.isBFree_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#is-bfree-one).
+Formalized by `MetaMathlibExt.isBFree_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#is-bfree-one).
 
 ## The minimal exponent $\kappa_{\min}$
 
@@ -222,7 +222,7 @@ monic irreducible polynomials $P \in F[T]$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `κ_min`.
 
-Formalized by `MetaMathlibExt.kappaMin`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-min).
+Formalized by `MetaMathlibExt.kappaMin`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-min).
 
 ## $\kappa_{\min}$ is a lower bound for $\kappa$
 
@@ -235,7 +235,7 @@ irreducible $P \in F[T]$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `κ_min`.
 
-Formalized by `MetaMathlibExt.kappaMin_le`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-min-le).
+Formalized by `MetaMathlibExt.kappaMin_le`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-min-le).
 
 ## The $\kappa$-power of a polynomial
 
@@ -250,7 +250,7 @@ $0^\kappa = 1$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `f ^ κ`.
 
-Formalized by `MetaMathlibExt.kappaPow`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow).
+Formalized by `MetaMathlibExt.kappaPow`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow).
 
 ## The $\kappa$-power of $1$
 
@@ -261,7 +261,7 @@ to the natural numbers. Then the $\kappa$-power of the constant polynomial $1$ i
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `f ^ κ`.
 
-Formalized by `MetaMathlibExt.kappaPow_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow-one).
+Formalized by `MetaMathlibExt.kappaPow_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow-one).
 
 ## The $\kappa$-power of a monic irreducible polynomial
 
@@ -273,7 +273,7 @@ $\kappa$-power of $P$ is $P^\kappa = P^{\kappa(P)}$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `f ^ κ`.
 
-Formalized by `MetaMathlibExt.kappaPow_of_irreducible`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow-of-irreducible).
+Formalized by `MetaMathlibExt.kappaPow_of_irreducible`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#kappa-pow-of-irreducible).
 
 ## The $h$-fold divisor function
 
@@ -285,7 +285,7 @@ $F[T]$ with $g_1 \cdots g_h = f$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `d_h`.
 
-Formalized by `MetaMathlibExt.monicDivisorCount`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count).
+Formalized by `MetaMathlibExt.monicDivisorCount`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count).
 
 ## The divisor functions at $1$
 
@@ -297,7 +297,7 @@ product is $f$: the only such tuple for $f = 1$ has every entry equal to $1$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `d_h`.
 
-Formalized by `MetaMathlibExt.monicDivisorCount_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-one).
+Formalized by `MetaMathlibExt.monicDivisorCount_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-one).
 
 ## The divisor function $d_0$ vanishes away from $1$
 
@@ -310,7 +310,7 @@ is $1$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `d_h`.
 
-Formalized by `MetaMathlibExt.monicDivisorCount_zero_of_ne_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-zero-of-ne-one).
+Formalized by `MetaMathlibExt.monicDivisorCount_zero_of_ne_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-zero-of-ne-one).
 
 ## The divisor function $d_1$ on monic polynomials
 
@@ -322,14 +322,14 @@ $F[T]$ whose product is $f$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `d_h`.
 
-Formalized by `MetaMathlibExt.monicDivisorCount_one_left`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-one-left).
+Formalized by `MetaMathlibExt.monicDivisorCount_one_left`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-divisor-count-one-left).
 
 ## Shifted partial sums of a Dirichlet convolution
 
 Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$, let $\alpha * \beta$ be their Dirichlet convolution
 over monic divisors, let $f \in F[T]$ and let $n$ be a natural number. Then
-$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_g (\alpha * \beta)(fg)$, the sum over the monic $g \in F[T]$ with
+$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_g (\alpha * \beta)(fg)$, the sum over the monic $g \in F[T]$ with
 $\deg f + \deg g \le n$, where $\deg 0 = 0$. This is the paper's sum over $g$ of degree at most
 $n - \deg f$.
 
@@ -340,28 +340,28 @@ happen only for infinite $F$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, eq. (3).
 
-Formalized by `MetaMathlibExt.monicConvShiftedSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum).
+Formalized by `MetaMathlibExt.monicConvShiftedSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum).
 
 ## Shifted partial sums vanish below $\deg f$
 
 Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$ and let $f \in F[T]$. For every natural number
 $n < \deg f$, the shifted partial sum of the Dirichlet convolution satisfies
-$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$.
+$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$.
 
 ## Sources
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, eq. (3).
 
-Formalized by `MetaMathlibExt.monicConvShiftedSum_of_lt`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum-of-lt).
+Formalized by `MetaMathlibExt.monicConvShiftedSum_of_lt`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum-of-lt).
 
 ## Partial sums of a Dirichlet convolution over monic polynomials
 
 Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$, and let $\alpha * \beta$ be their Dirichlet
 convolution over monic divisors. For an integer $n$,
-$D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_g (\alpha * \beta)(g)$, the sum over the monic $g \in F[T]$ of degree
-at most $n$. For $n < 0$ the sum is empty, so $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$; this is how the paper's
+$D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_g (\alpha * \beta)(g)$, the sum over the monic $g \in F[T]$ of degree
+at most $n$. For $n < 0$ the sum is empty, so $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$; this is how the paper's
 Lemma 3 uses $D$ at $n - \deg(f \ell)$.
 
 The sum is a finitary sum: it is $0$ when infinitely many of its terms are nonzero, which can
@@ -369,33 +369,33 @@ happen only for infinite $F$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
 
-Formalized by `MetaMathlibExt.monicConvPartialSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum).
+Formalized by `MetaMathlibExt.monicConvPartialSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum).
 
 ## $D(\alpha, \beta)$ vanishes at negative arguments
 
 Let $F$ be a field and let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$. For every integer $n < 0$, the partial sum of the
-Dirichlet convolution of $\alpha$ and $\beta$ satisfies $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$.
+Dirichlet convolution of $\alpha$ and $\beta$ satisfies $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = 0$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
 
-Formalized by `MetaMathlibExt.monicConvPartialSum_of_neg`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum-of-neg).
+Formalized by `MetaMathlibExt.monicConvPartialSum_of_neg`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum-of-neg).
 
 ## The partial sum $D(\alpha, \beta)(0)$
 
 Let $F$ be a field and let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$. The partial sum of the Dirichlet convolution of
-$\alpha$ and $\beta$ at $0$ is $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/0) = \alpha(1)\, \beta(1)$.
+$\alpha$ and $\beta$ at $0$ is $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/0) = \alpha(1)\, \beta(1)$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[α, β](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
 
-Formalized by `MetaMathlibExt.monicConvPartialSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum-zero).
+Formalized by `MetaMathlibExt.monicConvPartialSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-partial-sum-zero).
 
 ## Weighted convolution sum
 
@@ -410,9 +410,9 @@ When $F$ is infinite and this sum has infinitely many nonzero terms, its value i
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[γ, α, β](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[γ, α, β](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
 
-Formalized by `MetaMathlibExt.weightedMonicConvSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum).
+Formalized by `MetaMathlibExt.weightedMonicConvSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum).
 
 ## The weighted convolution sum at degree zero
 
@@ -424,9 +424,9 @@ $\gamma(1)\,\alpha(1)\,\beta(1)$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[γ, α, β](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 3, definition of `D[γ, α, β](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)`.
 
-Formalized by `MetaMathlibExt.weightedMonicConvSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-zero).
+Formalized by `MetaMathlibExt.weightedMonicConvSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-zero).
 
 ## Shifted partial sums for completely multiplicative functions
 
@@ -434,12 +434,12 @@ Let $F$ be a finite field
 and let $\alpha, \beta \colon F[T] \to \mathbb{C}$ be completely multiplicative, that is, monoid
 homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. Write $\mu$ for the Möbius
 function of $F[T]$. For $f \in F[T]$, a natural number $n$ and an integer $k$, write
-$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)$ and $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k)$ for the shifted partial sums and the partial
+$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)$ and $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k)$ for the shifted partial sums and the partial
 sums of the Dirichlet convolution of $\alpha$ and $\beta$ over monic divisors, where
-$D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k) = 0$ for $k < 0$. Then for every monic $f \in F[T]$ and every natural number
+$D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k) = 0$ for $k < 0$. Then for every monic $f \in F[T]$ and every natural number
 $n$,
 
-$$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_{d \mid f} \alpha(d)\, \beta(f/d) \sum_{\ell \mid d} \mu(\ell)\,
+$$S_f[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_{d \mid f} \alpha(d)\, \beta(f/d) \sum_{\ell \mid d} \mu(\ell)\,
 \beta(\ell)\, D[\alpha, \beta](n - \deg(f \ell)),$$
 
 where $d$ runs over the monic divisors of $f$, $\ell$ over the monic divisors of $d$, and
@@ -452,7 +452,7 @@ $f$ monic.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.monicConvShiftedSum_eq_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum-eq-of-completely).
+Stated but not proved: `MetaMathlibExt.monicConvShiftedSum_eq_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-conv-shifted-sum-eq-of-completely).
 
 ## Weighted convolution sums as sums of shifted sums
 
@@ -471,22 +471,22 @@ $$D(\gamma, \alpha, \beta; n) = \sum_{f \in M_{\le n}} \lambda(f)\, S_f(\alpha, 
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.weightedMonicConvSum_eq_sum_shifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-eq-sum-shifted).
+Stated but not proved: `MetaMathlibExt.weightedMonicConvSum_eq_sum_shifted` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-eq-sum-shifted).
 
 ## Camargo's identity over $F(T)$
 
 Let $F$ be a finite field and let $\mu$ be the Möbius
 function of $F[T]$. For functions $\alpha, \beta \colon F[T] \to \mathbb{C}$ let
 $(\alpha * \beta)(f) = \sum_{g \mid f} \alpha(g) \beta(f/g)$, over monic divisors $g$, be their
-Dirichlet convolution, and let $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k)$ be the sum of $(\alpha * \beta)(g)$ over the
+Dirichlet convolution, and let $D[\alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/k)$ be the sum of $(\alpha * \beta)(g)$ over the
 monic $g$ of degree at most $k$, which is $0$ for $k < 0$. For a further function $\gamma$ let
-$D[\gamma, \alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)$ be the sum of $\gamma(f) (\alpha * \beta)(f)$ over the monic $f$ of
+$D[\gamma, \alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n)$ be the sum of $\gamma(f) (\alpha * \beta)(f)$ over the monic $f$ of
 degree at most $n$. Suppose $\alpha$ and $\beta$ are completely multiplicative, that is,
 $\alpha(1) = 1$ and $\alpha(f g) = \alpha(f) \alpha(g)$ for all $f, g \in F[T]$, and likewise for
 $\beta$, and let $\gamma \colon F[T] \to \mathbb{C}$ be arbitrary. Then for every natural number
 $n$,
 
-$$D[\gamma, \alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_{f \text{ monic},\ \deg f \le n} (\gamma * \mu)(f)
+$$D[\gamma, \alpha, \beta](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/n) = \sum_{f \text{ monic},\ \deg f \le n} (\gamma * \mu)(f)
 \sum_{d \mid f} \alpha(d) \beta(f/d) \sum_{\ell \mid d} \mu(\ell) \beta(\ell) \,
 D[\alpha, \beta](n - \deg(f \ell)),$$
 
@@ -496,7 +496,7 @@ where $d$ runs over the monic divisors of $f$ and $\ell$ over the monic divisors
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.weightedMonicConvSum_eq_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-eq-of-completely).
+Stated but not proved: `MetaMathlibExt.weightedMonicConvSum_eq_of_completelyMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#weighted-monic-conv-sum-eq-of-completely).
 
 ## Convolution of the $B_\kappa$-free indicator with the Möbius function
 
@@ -519,7 +519,7 @@ and $0$ if there is no such $r$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.monicDirichletConv_bFreeIndicator_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-b-free-indicator-mo).
+Stated but not proved: `MetaMathlibExt.monicDirichletConv_bFreeIndicator_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#monic-dirichlet-conv-b-free-indicator-mo).
 
 ## Bound on the Möbius sum over κ-th powers
 
@@ -541,7 +541,7 @@ divisors, $\mu$ is the Möbius function, and the exponent $N/\kappa_{\min}$ is a
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 8, eq. (6).
 
-Stated but not proved: `MetaMathlibExt.abs_sum_moebius_kappaPow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#abs-sum-moebius-kappa-pow-le).
+Stated but not proved: `MetaMathlibExt.abs_sum_moebius_kappaPow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#abs-sum-moebius-kappa-pow-le).
 
 ## Divisor-count bound over $\kappa$-th powers of monic polynomials
 
@@ -560,7 +560,7 @@ where $f$ runs over the monic divisors of $r^\kappa$ and $\ell$ over the monic d
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 8, eq. (7).
 
-Stated but not proved: `MetaMathlibExt.sum_divisors_kappaPow_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-divisors-kappa-pow-is-big-o).
+Stated but not proved: `MetaMathlibExt.sum_divisors_kappaPow_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-divisors-kappa-pow-is-big-o).
 
 ## Euler-product asymptotic with the $(h-1)$-divisor function over $\kappa$-th powers
 
@@ -586,7 +586,7 @@ over the monic irreducible polynomials not dividing $m$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.sum_moebius_kappaPow_divisorCount_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-kappa-pow-divisor-count-is-b).
+Stated but not proved: `MetaMathlibExt.sum_moebius_kappaPow_divisorCount_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-kappa-pow-divisor-count-is-b).
 
 ## Euler-product asymptotic for a degree-weighted Möbius sum over $\kappa$-th powers
 
@@ -612,7 +612,7 @@ in the product and in the sum over the monic irreducible polynomials not dividin
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.sum_moebius_kappaPow_moebius_natDegree_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-kappa-pow-moebius-nat-degree).
+Stated but not proved: `MetaMathlibExt.sum_moebius_kappaPow_moebius_natDegree_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-kappa-pow-moebius-nat-degree).
 
 ## Euler-product asymptotic for a Möbius sum weighted by $\deg r^\kappa$
 
@@ -639,7 +639,7 @@ in the product and in the sum over the monic irreducible polynomials not dividin
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.sum_moebius_natDegree_kappaPow_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-nat-degree-kappa-pow-is-big).
+Stated but not proved: `MetaMathlibExt.sum_moebius_natDegree_kappaPow_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#sum-moebius-nat-degree-kappa-pow-is-big).
 
 ## Character sums of the $h$-divisor function over monic polynomials
 
@@ -657,7 +657,7 @@ $$\left| \sum_{f \text{ monic},\ \deg f \le N} \chi(f) \, d_h(f) \right| \le
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Proposition 5; `χ^{(h)}` as in eq. (8).
 
-Stated but not proved: `MetaMathlibExt.norm_sum_mulChar_divisorCount_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#norm-sum-mul-char-divisor-count-le).
+Stated but not proved: `MetaMathlibExt.norm_sum_mulChar_divisorCount_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#norm-sum-mul-char-divisor-count-le).
 
 ## The $B_\kappa$-free divisor sum
 
@@ -674,7 +674,7 @@ The sum is meant for finite $F$; if it has infinitely many nonzero terms, its va
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `D̃_{B_κ,h}(N)`.
 
-Formalized by `MetaMathlibExt.bFreeDivisorSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum).
+Formalized by `MetaMathlibExt.bFreeDivisorSum`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum).
 
 ## The $B_\kappa$-free divisor sum at degree zero
 
@@ -690,7 +690,7 @@ $h$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `D̃_{B_κ,h}(N)`.
 
-Formalized by `MetaMathlibExt.bFreeDivisorSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-zero).
+Formalized by `MetaMathlibExt.bFreeDivisorSum_zero`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-zero).
 
 ## B-free divisor sum in an arithmetic progression
 
@@ -706,7 +706,7 @@ when $F$ is finite; it is taken to be $0$ if infinitely many of its terms are no
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `D̃_{B_κ,h}(N, a, m)`.
 
-Formalized by `MetaMathlibExt.bFreeDivisorSumMod`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod).
+Formalized by `MetaMathlibExt.bFreeDivisorSumMod`, a definition declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod).
 
 ## The progression sum modulo 1 is the full sum
 
@@ -723,7 +723,7 @@ for every $a \in F[T]$, $\tilde D_{\kappa,h}(N, a, 1) = \tilde D_{\kappa,h}(N)$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Section 1, definition of `D̃_{B_κ,h}(N, a, m)`.
 
-Formalized by `MetaMathlibExt.bFreeDivisorSumMod_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-one).
+Formalized by `MetaMathlibExt.bFreeDivisorSumMod_one`, a theorem declared in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-one).
 
 ## Asymptotic count of B-free polynomials
 
@@ -746,7 +746,7 @@ as $N \to \infty$, the product running over the monic irreducible $P$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 1, first formula.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-one-is-big-o).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 608](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L608). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-one-is-big-o).
 
 ## Asymptotic for the $B_\kappa$-free sum of the divisor function
 
@@ -774,7 +774,7 @@ where the product and the sum run over the monic irreducible polynomials $P$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 1, second formula.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_two_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-two-is-big-o).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_two_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-two-is-big-o).
 
 ## Asymptotic for B-free divisor sums when h is at most 2
 
@@ -800,7 +800,7 @@ The paper states this for every $h \ge 1$, but its main term is not correct for 
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 2, cases `h = 1, 2`.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_isBigO_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-is-big-o-of-le-two).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_isBigO_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-is-big-o-of-le-two).
 
 ## Asymptotic count of B-free polynomials in an arithmetic progression
 
@@ -828,7 +828,7 @@ modulus of a progression.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 3, first formula.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-one-is-big-o).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_one_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-one-is-big-o).
 
 ## Asymptotic for the B-free divisor function in an arithmetic progression
 
@@ -859,7 +859,7 @@ $N \to \infty$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 3, second formula; `Φ` as defined after Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_two_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-two-is-big-o).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_two_isBigO` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-two-is-big-o).
 
 ## Asymptotic for B-free divisor sums in progressions when h is at most 2
 
@@ -888,7 +888,7 @@ The paper states this for every $h \ge 1$, but its main term is not correct for 
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 4, cases `h = 1, 2`; `Φ` as defined after Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_isBigO_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-is-big-o-of-le-tw).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSumMod_isBigO_of_le_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 713](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L713). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-mod-is-big-o-of-le-tw).
 
 ## Divisor sums over $B_\kappa$-free polynomials in short intervals
 
@@ -919,7 +919,7 @@ The paper's $\kappa(P^*)$ leaves $P^*$ unnormalized and undefined for $P = T$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 5, general formula.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval).
 
 ## B-free polynomials in short intervals
 
@@ -946,7 +946,7 @@ with $P$ monic irreducible divides it, and $P$ runs over the monic irreducible p
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 5, case `h = 1`.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval-one).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval-one).
 
 ## The B-free divisor function in short intervals
 
@@ -977,7 +977,7 @@ polynomials, and $\kappa$ stands for $\kappa(P)$.
 
 - Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 5, case `h = 2`.
 
-Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval-two).
+Stated but not proved: `MetaMathlibExt.bFreeDivisorSum_shortInterval_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BFreeDirichletConvolutionFqTWanted.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html#b-free-divisor-sum-short-interval-two).
 
 ## Depends on
 
@@ -986,4 +986,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Divisor problems for B-free polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/divisor-problems-for-b-free-polynomials)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.5 Group algebraic spaces
 
-Section 78.5 of the Stacks Project, [Tag 043G](https://stacks.math.columbia.edu/tag/043G). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.5 of the Stacks Project, [Tag 043G](https://stacks.math.columbia.edu/tag/043G). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 043H, a definition
 
 [Tag 043H](https://stacks.math.columbia.edu/tag/043H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean#L101).
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupActions.lean#L101).
 
 > **Stacks Project, Tag 043H.** Group algebraic spaces over an algebraic space `B`.  An
 > object is a group object in presheaves over `B` whose underlying presheaf is an algebraic
@@ -30,7 +30,7 @@ noncomputable abbrev GroupAlgebraicSpace (𝒞 : BigFppfSite.{u}) (S : Scheme.{u
 
 [Tag 043I](https://stacks.math.columbia.edu/tag/043I) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.groupOverStarGrpObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ActionInSite.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ActionInSite.lean#L98). The attribute's comment: “the group object over `B` attached to a presheaf of groups on the site”.
+**`AlgebraicGeometry.Space.groupOverStarGrpObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ActionInSite.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ActionInSite.lean#L98). The attribute's comment: “the group object over `B` attached to a presheaf of groups on the site”.
 
 > **Stacks Project, Tag 043I.** `B ×_S G` is a group object of presheaves over `B`, with the
 > pointwise group law of the given presheaf of groups.
@@ -40,7 +40,7 @@ noncomputable instance groupOverStarGrpObj (F : (BigFppfOver 𝒞 S hS)ᵒᵖ �
     GrpObj (groupOverStar 𝒞 S hS B F)
 ```
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L215).
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L215).
 
 > **Stacks Project, Tag 043I.** The pullback of a group algebraic space over `B` along a
 > morphism `B' ⟶ B` of algebraic spaces is a group algebraic space over `B'`.
@@ -53,7 +53,7 @@ noncomputable def GroupAlgebraicSpace.baseChange
     GroupAlgebraicSpace 𝒞 S hS B' hB'
 ```
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace.baseChange_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L226). The attribute's comment: “the underlying pullback”.
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace.baseChange_obj_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L226). The attribute's comment: “the underlying pullback”.
 
 > **Stacks Project, Tag 043I.** The algebraic space underlying the pullback of a group
 > algebraic space is the fibre product of the original one with the new base.
@@ -67,7 +67,7 @@ theorem GroupAlgebraicSpace.baseChange_obj_X
       (Over.mk (pullback.snd G.obj.X.hom f) : Over B')
 ```
 
-**`AlgebraicGeometry.Space.GroupAlgebraicSpace.ofGroupSchemeInSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L355). The attribute's comment: “the group algebraic space attached to a group scheme over the base”.
+**`AlgebraicGeometry.Space.GroupAlgebraicSpace.ofGroupSchemeInSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/BaseChange.lean#L355). The attribute's comment: “the group algebraic space attached to a group scheme over the base”.
 
 > **Stacks Project, Tag 043I.** The group algebraic space `G_B = B ×_S G` over an algebraic
 > space `B` over `S` attached to a group scheme `G` over `S` belonging to the big fppf site: it is
@@ -82,7 +82,7 @@ noncomputable def GroupAlgebraicSpace.ofGroupSchemeInSite
     GroupAlgebraicSpace 𝒞 S hS B hB
 ```
 
-**`AlgebraicGeometry.Space.isSmooth_prod_fst_multiplicativeGroupULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/MultiplicativeSmooth.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/MultiplicativeSmooth.lean#L98). The attribute's comment: “the structure morphism of the multiplicative group algebraic space is smooth”. References: SGA 3 VIII (2.1), “(e), special case”.
+**`AlgebraicGeometry.Space.isSmooth_prod_fst_multiplicativeGroupULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/MultiplicativeSmooth.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/Examples/MultiplicativeSmooth.lean#L98). The attribute's comment: “the structure morphism of the multiplicative group algebraic space is smooth”. References: SGA 3 VIII (2.1), “(e), special case”.
 
 > The structure morphism of the group algebraic space `Gₘ,B = B ×_{Spec ℤ} Gₘ` over an
 > arbitrary algebraic space `B` over `Spec ℤ` is a smooth morphism of algebraic spaces.
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.5, Tag 043G](https://stacks.math.columbia.edu/tag/043G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

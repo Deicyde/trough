@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent, jacobiZariski_exact_of_fieldExtensions, finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map
+lean: trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent, jacobiZariski_exact_of_fieldExtensions, finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map_of_essFiniteType
 statement: formalized
 proof: formalized
 ---
 
 # 15.35 Cartier's equality and geometric regularity
 
-Section 15.35 of the Stacks Project, [Tag 07E0](https://stacks.math.columbia.edu/tag/07E0). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.35 of the Stacks Project, [Tag 07E0](https://stacks.math.columbia.edu/tag/07E0). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07E1, a lemma
 
 [Tag 07E1](https://stacks.math.columbia.edu/tag/07E1) in the Stacks Project.
 
-**`trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L337). References: EGA 0 (21.7.1); EGA 0 (21.7.2), “special case”.
+**`trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L342). References: EGA 0 (21.7.1); EGA 0 (21.7.2), “special case”.
 
 > **Cartier's equality.** For a finitely generated extension of fields `K/k`, the module of
 > Kähler differentials and the first homology of the naive cotangent complex are
@@ -34,7 +34,7 @@ public theorem trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent
 
 [Tag 07E2](https://stacks.math.columbia.edu/tag/07E2) in the Stacks Project.
 
-**`jacobiZariski_exact_of_fieldExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L476).
+**`jacobiZariski_exact_of_fieldExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L480).
 
 > Let `M/L/K` be a tower of field extensions. Then the canonical Jacobi--Zariski sequence
 >
@@ -65,7 +65,7 @@ public theorem jacobiZariski_exact_of_fieldExtensions
 
 [Tag 07E3](https://stacks.math.columbia.edu/tag/07E3) in the Stacks Project.
 
-**`finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L604). References: EGA 0 (21.7.1).
+**`finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L613). References: EGA 0 (21.7.1).
 
 > Given a commutative square of fields
 > ```
@@ -73,18 +73,24 @@ public theorem jacobiZariski_exact_of_fieldExtensions
 > ↑    ↑
 > k  → k'
 > ```
-> whose horizontal extensions are finitely generated, the kernels and cokernels of the canonical
-> maps on Kähler differentials and first cotangent homology are finite-dimensional. The alternating
-> sum of their dimensions is the difference of the transcendence degrees of the horizontal
-> extensions.
+> whose horizontal extensions `k'/k` and `K'/K` are finitely generated field extensions (possibly
+> transcendental), the kernels and cokernels of the canonical maps
+> `α : K' ⊗[K] Ω[K⁄k] → Ω[K'⁄k']` and `β : K' ⊗[K] H₁(L_{K/k}) → H₁(L_{K'/k'})` are
+> finite-dimensional. The alternating sum of their dimensions is the difference of the
+> transcendence degrees of the horizontal extensions.
+>
+> A finitely generated field extension is expressed by `Algebra.EssFiniteType`, following Mathlib;
+> it is equivalent to `(⊤ : IntermediateField k k').FG` by `IntermediateField.fg_top_iff`. Both
+> transcendence degrees are finite, so they are written as `Cardinal.toNat` of `Algebra.trdeg`.
 
 ```lean
-public theorem finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map
+public theorem
+    finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map_of_essFiniteType
     (k : Type u₁) (K : Type u₂) (k' : Type u₃) (K' : Type u₄)
     [Field k] [Field K] [Field k'] [Field K']
     [Algebra k K] [Algebra k k'] [Algebra K K'] [Algebra k' K'] [Algebra k K']
     [IsScalarTower k K K'] [IsScalarTower k k' K']
-    [Algebra.FiniteType k k'] [Algebra.FiniteType K K'] :
+    [Algebra.EssFiniteType k k'] [Algebra.EssFiniteType K K'] :
     let α := (KaehlerDifferential.map k k' K K').liftBaseChange K'
     let β := (Algebra.H1Cotangent.map k k' K K').liftBaseChange K'
     FiniteDimensional K' (LinearMap.ker α) ∧
@@ -106,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.35, Tag 07E0](https://stacks.math.columbia.edu/tag/07E0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

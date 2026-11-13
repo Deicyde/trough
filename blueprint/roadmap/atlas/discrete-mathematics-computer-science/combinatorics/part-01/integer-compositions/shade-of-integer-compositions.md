@@ -7,7 +7,7 @@ statement: formalized
 
 # Shade of integer compositions
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html).
 
 ## Shade of a composition
 
@@ -24,7 +24,7 @@ so the number of shaded cells is finite.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Section 1.
 
-Formalized by `MetaMathlibExt.compositionShade`, a definition declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade).
+Formalized by `MetaMathlibExt.compositionShade`, a definition declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade).
 
 ## Total shade of compositions
 
@@ -35,7 +35,7 @@ sum of the shades of all compositions of $n$.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Section 2.
 
-Formalized by `MetaMathlibExt.totalCompositionShade`, a definition declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade).
+Formalized by `MetaMathlibExt.totalCompositionShade`, a definition declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade).
 
 ## Shade of the composition 4
 
@@ -46,7 +46,7 @@ bargraph has $6$ shaded cells.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Figure 5.
 
-Formalized by `MetaMathlibExt.compositionShade_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-four).
+Formalized by `MetaMathlibExt.compositionShade_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-four).
 
 ## Shade of the composition 1 + 3
 
@@ -59,7 +59,7 @@ All three shaded cells lie to the right of the bargraph.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Figure 5.
 
-Formalized by `MetaMathlibExt.compositionShade_one_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-one-three).
+Formalized by `MetaMathlibExt.compositionShade_one_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-one-three).
 
 ## The total shade bounds the shade of each composition
 
@@ -73,7 +73,7 @@ For example, since the composition $4$ has shade $6$, this gives $c(4) \ge 6$.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Section 2.
 
-Formalized by `MetaMathlibExt.compositionShade_le_totalCompositionShade`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-le-total-composition-s).
+Formalized by `MetaMathlibExt.compositionShade_le_totalCompositionShade`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#composition-shade-le-total-composition-s).
 
 ## Total shade of the compositions of zero
 
@@ -86,7 +86,7 @@ The only composition of $0$ is the empty one, whose bargraph has no shaded cells
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Section 2.
 
-Formalized by `MetaMathlibExt.totalCompositionShade_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade-zero).
+Formalized by `MetaMathlibExt.totalCompositionShade_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade-zero).
 
 ## Generating function for the total shade of compositions
 
@@ -142,7 +142,7 @@ shade.
 
 - Aubrey Blecher, Arnold Knopfmacher and Michael Mays, *Shade in Compositions of Integers*, Journal of Integer Sequences 27 (2024), Article 24.5.6, Theorem 1 (`jis-2024-24.5.6-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.totalCompositionShade_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade-generating-funct).
+Stated but not proved: `MetaMathlibExt.totalCompositionShade_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CompositionShadeWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html#total-composition-shade-generating-funct).
 
 ## Depends on
 
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shade of integer compositions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-compositions/shade-of-integer-compositions)

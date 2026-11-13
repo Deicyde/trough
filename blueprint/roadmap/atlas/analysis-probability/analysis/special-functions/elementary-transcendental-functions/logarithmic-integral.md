@@ -8,7 +8,7 @@ proof: formalized
 
 # Logarithmic integral
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html).
 
 ## Domain of the logarithmic integral
 
@@ -23,7 +23,7 @@ principal value for $x \ne 1$.
 
 - arXiv:2306.14073v1 and arXiv:2309.16007v1, classical `li(x) := PV ∫₀ˣ dt/log t` with lower limit `0` and principal value at `t = 1`.
 
-Formalized by `Real.LogarithmicIntegralDomain`, an abbreviation declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-domain).
+Formalized by `Real.LogarithmicIntegralDomain`, an abbreviation declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-domain).
 
 ## Logarithmic integral
 
@@ -45,7 +45,7 @@ $\mathrm{PV}\int_0^x \frac{dt}{\log t}$. In particular $\mathrm{li}(0) = 0$.
 
 - arXiv:2306.14073v1 and arXiv:2309.16007v1, normalized lower limit `0` and Cauchy principal value at `t = 1` via symmetric pairing.
 
-Formalized by `Real.logarithmicIntegral`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral).
+Formalized by `Real.logarithmicIntegral`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral).
 
 ## The logarithmic integral vanishes at zero
 
@@ -56,7 +56,7 @@ satisfies $\mathrm{li}(0) = 0$; here $0$ lies in its domain since $0 \ge 0$ and 
 
 - `∫₀⁰ = 0` for Lebesgue interval integrals; holds for any domain proof `hx` with `x = 0`.
 
-Formalized by `Real.logarithmicIntegral_zero`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-zero).
+Formalized by `Real.logarithmicIntegral_zero`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-zero).
 
 ## The logarithmic integral below $1$
 
@@ -67,7 +67,7 @@ logarithmic integral $\mathrm{li}$ satisfies $\mathrm{li}(x) = \int_0^x \frac{dt
 
 - Direct unfolding of the `x < 1` branch of the piecewise definition.
 
-Formalized by `Real.logarithmicIntegral_of_lt_one`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-of-lt-one).
+Formalized by `Real.logarithmicIntegral_of_lt_one`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-of-lt-one).
 
 ## The logarithmic integral above $1$
 
@@ -86,7 +86,7 @@ $\mathrm{PV}\int_0^2 \frac{dt}{\log t}$.
 
 - Direct unfolding of the `x > 1` branch; `¬ x < 1` from `1 < x`.
 
-Formalized by `Real.logarithmicIntegral_of_one_lt`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-of-one-lt).
+Formalized by `Real.logarithmicIntegral_of_one_lt`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/Integral.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-of-one-lt).
 
 ## Real logarithmic integral extended by zero
 
@@ -98,7 +98,7 @@ The value $0$ off the domain of $\operatorname{li}$ is a convention. Near every 
 $x \ne 1$ the function agrees with $\operatorname{li}$, so its derivative there does not depend
 on this choice.
 
-Formalized by `Real.logarithmicIntegralReal`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-real).
+Formalized by `Real.logarithmicIntegralReal`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#logarithmic-integral-real).
 
 ## Derivative of the logarithmic integral
 
@@ -109,7 +109,7 @@ Below $1$ the function agrees near $x$ with $\int_0^x dt/\log t$; above $1$ it a
 with the paired principal-value constant plus $\int_2^x dt/\log t$. In both cases the
 fundamental theorem of calculus gives the derivative $1/\log x$.
 
-Formalized by `Real.hasDerivAt_logarithmicIntegralReal`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#has-deriv-at-logarithmic-integral-real).
+Formalized by `Real.hasDerivAt_logarithmicIntegralReal`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/Log/IntegralDerivative.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html#has-deriv-at-logarithmic-integral-real).
 
 ## Depends on
 
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Logarithmic integral](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/elementary-transcendental-functions/logarithmic-integral)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CochainComplex.exists_sequence_quasiIso_truncLE, CategoryTheory.Functor.hasPointwiseLeftDerivedFunctor_of_acyclic_mapHomologicalComplex, CochainComplex.exists_sequence_quasiIso_truncGE
+lean: CochainComplex.exists_sequence_quasiIso_truncLE, CategoryTheory.Functor.isLeftDerivable_of_acyclic_mapHomologicalComplex, CochainComplex.exists_sequence_quasiIso_truncGE
 statement: formalized
 proof: formalized
 ---
 
 # 13.29 Unbounded complexes
 
-Section 13.29 of the Stacks Project, [Tag 06XW](https://stacks.math.columbia.edu/tag/06XW). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.29 of the Stacks Project, [Tag 06XW](https://stacks.math.columbia.edu/tag/06XW). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06XX, a lemma
 
 [Tag 06XX](https://stacks.math.columbia.edu/tag/06XX) in the Stacks Project.
 
-**`CochainComplex.exists_sequence_quasiIso_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean#L443).
+**`CochainComplex.exists_sequence_quasiIso_truncLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncLEResolutions.lean#L443).
 
 > **Stacks 06XX.** Let `A` be an abelian category and let `P` be a class of objects of `A`
 > which contains a zero object, is closed under finite direct sums, and is such that every object
@@ -43,24 +43,31 @@ public theorem exists_sequence_quasiIso_truncLE (P : ObjectProperty A) [P.Contai
 
 [Tag 0794](https://stacks.math.columbia.edu/tag/0794) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasPointwiseLeftDerivedFunctor_of_acyclic_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean#L417).
+**`CategoryTheory.Functor.isLeftDerivable_of_acyclic_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/LeftDerivedFunctor.lean#L474).
 
 > **Stacks 0794.** Let `F : 𝒜 ⥤ ℬ` be a right exact functor of abelian categories and let `P`
-> be a class of objects of `𝒜` which contains a zero object, is closed under finite direct sums,
-> and is such that every object of `𝒜` is a quotient of an object satisfying `P`. Assume that
+> be a class of objects of `𝒜`. Assume
 >
-> 1. `F` turns every bounded above acyclic complex with all terms satisfying `P` into an acyclic
+> 1. `P` contains a zero object, is closed under finite direct sums, and every object of `𝒜` is a
+>    quotient of an object satisfying `P`,
+> 2. `F` turns every bounded above acyclic complex with all terms satisfying `P` into an acyclic
 >    complex,
-> 2. `𝒜` and `ℬ` have colimits of systems indexed by `ℕ`,
-> 3. those colimits are exact in both `𝒜` and `ℬ`, and
-> 4. `F` commutes with them.
+> 3. `𝒜` and `ℬ` have colimits of systems indexed by `ℕ`,
+> 4. those colimits are exact in both `𝒜` and `ℬ`, and
+> 5. `F` commutes with them.
 >
-> Then the left derived functor `LF` of `K(𝒜) ⥤ D(ℬ)`, `K ↦ F(K)`, along the localization
-> `Qh : K(𝒜) ⥤ D(𝒜)` at quasi-isomorphisms is defined at every object, i.e. `LF` is defined on
-> all of `D(𝒜)`.
+> Then `LF` is defined on all of `D(𝒜)`: the functor `K(𝒜) ⥤ D(ℬ)`, `K ↦ F(K)`, is left
+> derivable with respect to the quasi-isomorphisms (Tag 05SV), i.e. for every complex `K` the
+> pro-object `(s : K' ⟶ K) ↦ F(K')` over quasi-isomorphisms `s` is essentially constant (Tag 05S9).
+>
+> The proof is the source's: every object of `K(𝒜)` receives a quasi-isomorphism from a
+> `P`-cellular complex (the colimit of the ladder of Tag 06XX), `F` sends quasi-isomorphisms
+> between `P`-cellular complexes to quasi-isomorphisms (the claim of the source's proof,
+> `StacksDraft.UnboundedLeftDerivedFunctor.derives_cellularLocalizerMorphism`), and Tag 06XN(2)
+> then makes `LF` everywhere defined.
 
 ```lean
-public theorem hasPointwiseLeftDerivedFunctor_of_acyclic_mapHomologicalComplex
+public theorem isLeftDerivable_of_acyclic_mapHomologicalComplex
     (F : A ⥤ B) [F.Additive] [PreservesFiniteColimits F]
     (P : ObjectProperty A) [P.ContainsZero]
     (hsum : ∀ X Y : A, P X → P Y → P (X ⊞ Y))
@@ -70,8 +77,7 @@ public theorem hasPointwiseLeftDerivedFunctor_of_acyclic_mapHomologicalComplex
     [HasColimitsOfShape ℕ A] [HasColimitsOfShape ℕ B]
     [HasExactColimitsOfShape ℕ A] [HasExactColimitsOfShape ℕ B]
     [PreservesColimitsOfShape ℕ F] :
-    (F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙
-        DerivedCategory.Qh).HasPointwiseLeftDerivedFunctor
+    (F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh).IsLeftDerivable
       (HomotopyCategory.quasiIso A (ComplexShape.up ℤ))
 ```
 
@@ -79,7 +85,7 @@ public theorem hasPointwiseLeftDerivedFunctor_of_acyclic_mapHomologicalComplex
 
 [Tag 070F](https://stacks.math.columbia.edu/tag/070F) in the Stacks Project.
 
-**`CochainComplex.exists_sequence_quasiIso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean#L468).
+**`CochainComplex.exists_sequence_quasiIso_truncGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/UnboundedComplexes/TruncGEResolutions.lean#L468).
 
 > **Stacks 070F.** Let `A` be an abelian category and let `P` be a class of objects of `A`
 > which contains a zero object, is closed under finite products, and is such that every object of
@@ -111,4 +117,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.29, Tag 06XW](https://stacks.math.columbia.edu/tag/06XW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

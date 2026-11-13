@@ -8,7 +8,7 @@ proof: formalized
 
 # Sums of squares and representation numbers: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html).
 
 Two-, three- and four-square theorems, Jacobi-type counts, Gaussian and Hurwitz integer methods, x²+2y² and similar representations.
 
@@ -27,7 +27,7 @@ the cited result). That identification is an intentional omission relative to th
 
 - Labib Haddad and Charles Helou, "Representation of Integers by Near Quadratic Sequences," Journal of Integer Sequences 15 (2012), <https://cs.uwaterloo.ca/journals/JIS/VOL15/Helou/helou3.tex>, lines 483–486. Proof-method source (distinct from the statement source above): the proof adapts Wirsing's mean-value method as presented in Gérald Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, Chapter III.4.
 
-Formalized by `MetaMathlibExt.landau_ramanujan_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LandauRamanujan.lean, line 3376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PrimeCounting/LandauRamanujan.lean#L3376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#landau-ramanujan-asymptotic).
+Formalized by `MetaMathlibExt.landau_ramanujan_asymptotic`, a theorem declared in [MathlibExt/NumberTheory/PrimeCounting/LandauRamanujan.lean, line 3376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PrimeCounting/LandauRamanujan.lean#L3376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#landau-ramanujan-asymptotic).
 
 ## Positive integers that are differences of two squares
 
@@ -40,7 +40,7 @@ number $k$ with $n = 4k + 2$.
 - Arias, Borja, and Rubio cite D. M. Burton, "Elementary Number Theory," 7th edition, Theorem 13.4; truncated subtraction is exact on the witnesses.
 - Fabián Arias, Jerson Borja, and Luis Rubio, "Counting Integers Representable as Images of Polynomials Modulo n," Journal of Integer Sequences 22 (2019), Article 19.6.7, Theorem, lines 821–823, https://cs.uwaterloo.ca/journals/JIS/VOL22/Borja/borja3.tex
 
-Formalized by `MetaMathlibExt.nat_eq_sq_sub_sq_iff_not_eq_four_mul_add_two`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/DifferenceOfTwoSquares.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/QuadraticForms/DifferenceOfTwoSquares.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#nat-eq-sq-sub-sq-iff-not-eq-four-mul-add).
+Formalized by `MetaMathlibExt.nat_eq_sq_sub_sq_iff_not_eq_four_mul_add_two`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/DifferenceOfTwoSquares.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/QuadraticForms/DifferenceOfTwoSquares.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#nat-eq-sq-sub-sq-iff-not-eq-four-mul-add).
 
 ## Sums of two coprime squares
 
@@ -52,7 +52,7 @@ all of whose prime factors are congruent to $1$ modulo $4$, such that $d = q$ or
 
 - Nguyen Viet Dung and Luu Ba Thang, "The Number a²+b²−dc² Revisited", Journal of Integer Sequences 24 (2021), Article 21.9.3, theorem lines 105–107, https://cs.uwaterloo.ca/journals/JIS/VOL24/Thang/thang41.tex.
 
-Formalized by `MetaMathlibExt.SumTwoCoprimeSquares.sum_two_coprime_squares_characterization`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/SumTwoCoprimeSquares.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/QuadraticForms/SumTwoCoprimeSquares.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#sum-two-coprime-squares-characterization).
+Formalized by `MetaMathlibExt.SumTwoCoprimeSquares.sum_two_coprime_squares_characterization`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/SumTwoCoprimeSquares.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/QuadraticForms/SumTwoCoprimeSquares.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html#sum-two-coprime-squares-characterization).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of squares and representation numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.3 The local structure of a finite type module
 
-Section 38.3 of the Stacks Project, [Tag 057P](https://stacks.math.columbia.edu/tag/057P). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.3 of the Stacks Project, [Tag 057P](https://stacks.math.columbia.edu/tag/057P). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 057Q, a lemma
 
 [Tag 057Q](https://stacks.math.columbia.edu/tag/057Q) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_fiber_eq_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FiniteTypeModuleLocalStructure.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FiniteTypeModuleLocalStructure.lean#L264).
+**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_fiber_eq_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FiniteTypeModuleLocalStructure.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/FiniteTypeModuleLocalStructure.lean#L264).
 
 > **[Stacks, Tag 057Q].** Let `f : X ⟶ S` be a finite type morphism of affine schemes and let
 > `F` be a quasi-coherent `𝒪_X`-module of finite type. For every point `s` of `S` there is a closed
@@ -40,7 +40,7 @@ theorem exists_finitePresentation_closedSubscheme_fiber_eq_supp {S : Scheme.{u}}
 
 [Tag 057S](https://stacks.math.columbia.edu/tag/057S) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryDevissage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/ElementaryDevissage.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/ElementaryDevissage.lean#L811).
+**`AlgebraicGeometry.exists_elementaryDevissage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/ElementaryDevissage.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/ElementaryDevissage.lean#L811).
 
 > **Stacks Project, Tag 057S.** A finite-type quasi-coherent module admits an elementary
 > dévissage at any point of the support of its fibre.
@@ -57,7 +57,7 @@ theorem exists_elementaryDevissage {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFi
 
 [Tag 057T](https://stacks.math.columbia.edu/tag/057T) in the Stacks Project.
 
-**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L338). The attribute's comment: “finite presentation of π”.
+**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L338). The attribute's comment: “finite presentation of π”.
 
 > **Stacks Project, Tag 057T.** The finite morphism `π` of an elementary dévissage of a
 > morphism locally of finite presentation is of finite presentation.
@@ -73,7 +73,7 @@ theorem finitePresentation_π [LocallyOfFinitePresentation f] (D : ElementaryDev
     FinitePresentation D.π
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.isFinitePresentationNear_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L361). The attribute's comment: “equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFinitePresentationNear_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L361). The attribute's comment: “equivalence of (1), (2) and (3)”.
 
 > **Stacks Project, Tag 057T**, the equivalence of conditions (1) and (2). In an elementary
 > dévissage, `F` is of finite presentation near `x` exactly when the module `G` on the closed
@@ -89,7 +89,7 @@ theorem isFinitePresentationNear_iff_closed [F.IsQuasicoherent]
     IsFinitePresentationNear F x ↔ IsFinitePresentationNear D.G D.z
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.isFinitePresentationNear_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L382). The attribute's comment: “equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFinitePresentationNear_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L382). The attribute's comment: “equivalence of (1), (2) and (3)”.
 
 > **Stacks Project, Tag 057T**, the equivalence of conditions (2) and (3). In an elementary
 > dévissage of a morphism locally of finite presentation, the module `G` is of finite presentation
@@ -106,7 +106,7 @@ theorem isFinitePresentationNear_iff_pushforward [LocallyOfFinitePresentation f]
       IsFinitePresentationNear ((Scheme.Modules.pushforward D.π).obj D.G) (D.π D.z)
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_stalk_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L400). The attribute's comment: “equivalence of (a), (b) and (c)”.
+**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_stalk_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L400). The attribute's comment: “equivalence of (a), (b) and (c)”.
 
 > **Stacks Project, Tag 057T**, the equivalence of conditions (a) and (b). In an elementary
 > dévissage the stalk `F_x` is a finitely presented `𝒪_{X,x}`-module exactly when the stalk `G_z`
@@ -125,7 +125,7 @@ theorem finitePresentation_stalk_iff_closed (D : ElementaryDevissage f F x hx) :
         (ToType (TopCat.Presheaf.stalk D.G.val.presheaf D.z))
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_stalk_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L425). The attribute's comment: “equivalence of (a), (b) and (c)”.
+**`AlgebraicGeometry.ElementaryDevissage.finitePresentation_stalk_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FinitePresentationTransfer.lean#L425). The attribute's comment: “equivalence of (a), (b) and (c)”.
 
 > **Stacks Project, Tag 057T**, the equivalence of conditions (b) and (c). In an elementary
 > dévissage of a morphism locally of finite presentation the stalk `G_z` is a finitely presented
@@ -151,7 +151,7 @@ theorem finitePresentation_stalk_iff_pushforward [LocallyOfFinitePresentation f]
 
 [Tag 057U](https://stacks.math.columbia.edu/tag/057U) in the Stacks Project.
 
-**`AlgebraicGeometry.ElementaryDevissage.isFlatOverAt_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L252). The attribute's comment: “equivalence of (a), (b) and (c)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFlatOverAt_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L252). The attribute's comment: “equivalence of (a), (b) and (c)”.
 
 > **Stacks Project, Tag 057U**, the equivalence of conditions (a) and (b). In an elementary
 > dévissage the stalk `F_x` is flat over `𝒪_{S,f x}` exactly when the stalk `G_z` is flat over
@@ -168,7 +168,7 @@ theorem isFlatOverAt_iff_closed [F.IsQuasicoherent] (D : ElementaryDevissage f F
       IsFlatOverAt (D.π ≫ D.h).toLRSHom.toShHom D.G D.z
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.isFlatOverAt_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L286). The attribute's comment: “equivalence of (a), (b) and (c)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFlatOverAt_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L286). The attribute's comment: “equivalence of (a), (b) and (c)”.
 
 > **Stacks Project, Tag 057U**, the equivalence of conditions (b) and (c). In an elementary
 > dévissage the stalk `G_z` is flat over `𝒪_{V,h (π z)}` exactly when the stalk `(π_* G)_{π z}`
@@ -184,7 +184,7 @@ theorem isFlatOverAt_iff_pushforward (D : ElementaryDevissage f F x hx) :
         ((Scheme.Modules.pushforward D.π).obj D.G) (D.π D.z)
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.isFlatOverNear_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L302). The attribute's comment: “equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFlatOverNear_iff_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L302). The attribute's comment: “equivalence of (1), (2) and (3)”.
 
 > **Stacks Project, Tag 057U**, the equivalence of conditions (1) and (2). In an elementary
 > dévissage, `F` is flat over `S` near `x` exactly when `G` is flat over `V` near `z`.
@@ -199,7 +199,7 @@ theorem isFlatOverNear_iff_closed [F.IsQuasicoherent] (D : ElementaryDevissage f
     IsFlatOverNear f F x ↔ IsFlatOverNear (D.π ≫ D.h) D.G D.z
 ```
 
-**`AlgebraicGeometry.ElementaryDevissage.isFlatOverNear_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L324). The attribute's comment: “equivalence of (1), (2) and (3)”.
+**`AlgebraicGeometry.ElementaryDevissage.isFlatOverNear_iff_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/FlatnessTransfer.lean#L324). The attribute's comment: “equivalence of (1), (2) and (3)”.
 
 > **Stacks Project, Tag 057U**, the equivalence of conditions (2) and (3). In an elementary
 > dévissage, `G` is flat over `V` near `z` exactly when `π_* G` is flat over `V` near `π z`.
@@ -220,4 +220,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.3, Tag 057P](https://stacks.math.columbia.edu/tag/057P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

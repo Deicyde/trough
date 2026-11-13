@@ -7,7 +7,7 @@ statement: formalized
 
 # Necklaces over a group with identity product
 
-24 results, 4 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html).
+24 results, 4 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html).
 
 ## Counting necklaces with identity product
 
@@ -25,7 +25,7 @@ $g^k = 1$.
 
 - Darij Grinberg and Peter Mao, "Necklaces over a Group with Identity Product," Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 1 (`thm.main`), lines 186–195, <https://cs.uwaterloo.ca/journals/JIS/VOL29/Grinberg/grinberg2.tex>. Identity-product tuples, divisor-count notation, and necklaces defined at lines 140–180.
 
-Formalized by `MetaMathlibExt.identity_product_necklace_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/IdentityProductNecklace.lean, line 843](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/IdentityProductNecklace.lean#L843). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count).
+Formalized by `MetaMathlibExt.identity_product_necklace_count`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/IdentityProductNecklace.lean, line 843](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/IdentityProductNecklace.lean#L843). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count).
 
 ## Rotation orbit of a tuple
 
@@ -39,7 +39,7 @@ $(x_m, x_{m+1}, \dots, x_{m+n-1})$ of $x$, with indices taken modulo $n$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Definition 2.3 (the action of `C_n` by rotation; necklaces are its orbits), used by Theorem 16 (`jis-2026-26.4.6-thm-16`).
 
-Formalized by `MetaMathlibExt.tupleRotationOrbit`, a definition declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#tuple-rotation-orbit).
+Formalized by `MetaMathlibExt.tupleRotationOrbit`, a definition declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#tuple-rotation-orbit).
 
 ## A tuple lies in its own rotation orbit
 
@@ -50,7 +50,7 @@ type $\alpha$ belongs to the rotation orbit of $x$.
 
 - Grinberg and Mao, Journal of Integer Sequences 29 (2026), Article 26.4.6, Definition 2.3.
 
-Formalized by `MetaMathlibExt.self_mem_tupleRotationOrbit`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#self-mem-tuple-rotation-orbit).
+Formalized by `MetaMathlibExt.self_mem_tupleRotationOrbit`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#self-mem-tuple-rotation-orbit).
 
 ## One-step rotation stays in the rotation orbit
 
@@ -63,7 +63,7 @@ the rotation orbit of $x$.
 
 - Grinberg and Mao, Journal of Integer Sequences 29 (2026), Article 26.4.6, Definition 2.3.
 
-Formalized by `MetaMathlibExt.comp_finRotate_mem_tupleRotationOrbit`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#comp-fin-rotate-mem-tuple-rotation-orbit).
+Formalized by `MetaMathlibExt.comp_finRotate_mem_tupleRotationOrbit`, a theorem declared in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#comp-fin-rotate-mem-tuple-rotation-orbit).
 
 ## Identity-product necklaces over a product of cyclic groups
 
@@ -81,7 +81,7 @@ where $\varphi$ is Euler's totient function.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 6 (`jis-2026-26.4.6-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.identityProductNecklace_count_pi_cyclic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count-pi-cycli).
+Stated but not proved: `MetaMathlibExt.identityProductNecklace_count_pi_cyclic` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count-pi-cycli).
 
 ## Totient-weighted divisor sum identity
 
@@ -98,7 +98,7 @@ where $\varphi$ is Euler's totient function.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 9 (`jis-2026-26.4.6-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.sum_div_mul_eq_sum_totient_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#sum-div-mul-eq-sum-totient-mul).
+Stated but not proved: `MetaMathlibExt.sum_div_mul_eq_sum_totient_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#sum-div-mul-eq-sum-totient-mul).
 
 ## Divisibility of a product through the gcd
 
@@ -109,7 +109,7 @@ both zero. Then $a$ divides $bc$ if and only if $a / \gcd(a, b)$ divides $c$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 11 (`jis-2026-26.4.6-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.int_dvd_mul_iff_div_gcd_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#int-dvd-mul-iff-div-gcd-dvd).
+Stated but not proved: `MetaMathlibExt.int_dvd_mul_iff_div_gcd_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#int-dvd-mul-iff-div-gcd-dvd).
 
 ## Counting solutions of $x^b = 1$ in a cyclic group
 
@@ -122,7 +122,7 @@ The paper takes $b$ positive; for $b = 0$ both sides equal $a$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 12 (`jis-2026-26.4.6-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.card_pow_eq_one_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-pow-eq-one-zmod).
+Stated but not proved: `MetaMathlibExt.card_pow_eq_one_zmod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-pow-eq-one-zmod).
 
 ## Counting identity-product tuples with a given period
 
@@ -135,7 +135,7 @@ $r_{n/k}(G) \, |G|^{k-1}$, where $r_m(G)$ is the number of $g \in G$ with $g^m =
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 13, with `A_k` as defined in Section 5 of the arXiv text (`jis-2026-26.4.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.card_identityProduct_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-identity-product-period).
+Stated but not proved: `MetaMathlibExt.card_identityProduct_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-identity-product-period).
 
 ## Splitting periodic identity-product tuples by smallest period
 
@@ -150,7 +150,7 @@ $0 < l < d$. Then $|A_k| = \sum_{d \mid k} |P_d|$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 14, with `A_k`, `P_k` as in equation (9) of the arXiv text (`jis-2026-26.4.6-lem-14`).
 
-Stated but not proved: `MetaMathlibExt.card_identityProduct_period_eq_sum_smallestPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-identity-product-period-eq-sum-smal).
+Stated but not proved: `MetaMathlibExt.card_identityProduct_period_eq_sum_smallestPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-identity-product-period-eq-sum-smal).
 
 ## Counting aperiodic necklaces with identity product
 
@@ -168,7 +168,7 @@ where $\mu$ is the Möbius function and $r_k(G)$ is the number of $g \in G$ with
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 16 (`jis-2026-26.4.6-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.aperiodic_identityProductNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#aperiodic-identity-product-necklace-coun).
+Stated but not proved: `MetaMathlibExt.aperiodic_identityProductNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#aperiodic-identity-product-necklace-coun).
 
 ## Identity-product necklaces with a given smallest period
 
@@ -185,7 +185,7 @@ where $\mu$ is the Möbius function and $N(e)$ is the number of $g \in G$ with $
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 18 (`jis-2026-26.4.6-cor-18`).
 
-Stated but not proved: `MetaMathlibExt.identityProductNecklace_count_smallestPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count-smallest).
+Stated but not proved: `MetaMathlibExt.identityProductNecklace_count_smallestPeriod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#identity-product-necklace-count-smallest).
 
 ## Counting tuples up to rotation and left multiplication
 
@@ -206,7 +206,7 @@ the two counts agree.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 19, with the action of Section 7 of the arXiv text (`jis-2026-26.4.6-thm-19`).
 
-Stated but not proved: `MetaMathlibExt.homogeneousNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#homogeneous-necklace-count).
+Stated but not proved: `MetaMathlibExt.homogeneousNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#homogeneous-necklace-count).
 
 ## Counting necklaces with product in a conjugation-closed set
 
@@ -228,7 +228,7 @@ $14$).
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 22 (`jis-2026-26.4.6-thm-22`).
 
-Stated but not proved: `MetaMathlibExt.productInNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#product-in-necklace-count).
+Stated but not proved: `MetaMathlibExt.productInNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#product-in-necklace-count).
 
 ## Counting periodic tuples with product in a conjugation-closed set
 
@@ -242,7 +242,7 @@ all $i$ (indices taken mod $n$) is $\#\{a \in G : a^{n/k} \in K\} \cdot |G|^{k-1
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 23 (`jis-2026-26.4.6-lem-23`).
 
-Stated but not proved: `MetaMathlibExt.card_productIn_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-product-in-period).
+Stated but not proved: `MetaMathlibExt.card_productIn_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-product-in-period).
 
 ## Counting aperiodic necklaces with product in a conjugation-closed set
 
@@ -261,7 +261,7 @@ where $\mu$ is the Möbius function.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 24 (`jis-2026-26.4.6-thm-24`).
 
-Stated but not proved: `MetaMathlibExt.aperiodic_productInNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#aperiodic-product-in-necklace-count).
+Stated but not proved: `MetaMathlibExt.aperiodic_productInNecklace_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#aperiodic-product-in-necklace-count).
 
 ## Normal basis theorem for finite fields
 
@@ -277,7 +277,7 @@ $K$ over $F$, a normal basis.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 27 (`jis-2026-26.4.6-thm-27`).
 
-Stated but not proved: `MetaMathlibExt.exists_normalBasis_finiteField` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#exists-normal-basis-finite-field).
+Stated but not proved: `MetaMathlibExt.exists_normalBasis_finiteField` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#exists-normal-basis-finite-field).
 
 ## Normal basis coordinates turn Frobenius into rotation
 
@@ -295,7 +295,7 @@ that is, raising to the $q$-th power rotates the coordinates one step.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Lemma 28, with `Φ` as defined in Section 9 of the arXiv text (`jis-2026-26.4.6-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.normalBasisMap_bijective_frobenius` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-bijective-frobenius).
+Stated but not proved: `MetaMathlibExt.normalBasisMap_bijective_frobenius` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-bijective-frobenius).
 
 ## Rotation orbits correspond to conjugate elements
 
@@ -310,7 +310,7 @@ $\Phi(b)$ have the same minimal polynomial over $F$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 29 (`jis-2026-26.4.6-cor-29`).
 
-Stated but not proved: `MetaMathlibExt.normalBasisMap_rotation_iff_conj` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-rotation-iff-conj).
+Stated but not proved: `MetaMathlibExt.normalBasisMap_rotation_iff_conj` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-rotation-iff-conj).
 
 ## Zero-sum tuples correspond to trace-zero elements
 
@@ -325,7 +325,7 @@ the trace of $\Phi(a)$ from $K$ to $F$ is $0$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Theorem 30 (`jis-2026-26.4.6-thm-30`).
 
-Stated but not proved: `MetaMathlibExt.normalBasisMap_sum_eq_zero_iff_trace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-sum-eq-zero-iff-trace).
+Stated but not proved: `MetaMathlibExt.normalBasisMap_sum_eq_zero_iff_trace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#normal-basis-map-sum-eq-zero-iff-trace).
 
 ## Trace-zero Galois orbits and zero-sum necklaces
 
@@ -341,7 +341,7 @@ orbits of tuples $a \in F^n$ with $a_0 + a_1 + \dots + a_{n-1} = 0$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 31 (`jis-2026-26.4.6-cor-31`).
 
-Stated but not proved: `MetaMathlibExt.card_traceZero_conjClasses` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-conj-classes).
+Stated but not proved: `MetaMathlibExt.card_traceZero_conjClasses` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-conj-classes).
 
 ## Trace-zero Galois orbits of full size and aperiodic zero-sum necklaces
 
@@ -358,7 +358,7 @@ $a_0 + a_1 + \dots + a_{n-1} = 0$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Proposition 32 (`jis-2026-26.4.6-prop-32`).
 
-Stated but not proved: `MetaMathlibExt.card_traceZero_conjClasses_size_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-conj-classes-size-eq).
+Stated but not proved: `MetaMathlibExt.card_traceZero_conjClasses_size_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-conj-classes-size-eq).
 
 ## Trace-zero elements with Galois orbits of full size
 
@@ -377,7 +377,7 @@ such tuples.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 33 (`jis-2026-26.4.6-cor-33`).
 
-Stated but not proved: `MetaMathlibExt.card_traceZero_size_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-size-eq).
+Stated but not proved: `MetaMathlibExt.card_traceZero_size_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-trace-zero-size-eq).
 
 ## Monic irreducible polynomials with vanishing second coefficient
 
@@ -392,7 +392,7 @@ $a \in F^n$ with $a_0 + a_1 + \dots + a_{n-1} = 0$.
 
 - Darij Grinberg and Peter Mao, *Necklaces over a Group with Identity Product*, Journal of Integer Sequences 29 (2026), Article 26.4.6, Corollary 35 (`jis-2026-26.4.6-cor-35`).
 
-Stated but not proved: `MetaMathlibExt.card_monic_irreducible_nextCoeff_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-monic-irreducible-next-coeff-zero).
+Stated but not proved: `MetaMathlibExt.card_monic_irreducible_nextCoeff_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/IdentityProductNecklaceWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html#card-monic-irreducible-next-coeff-zero).
 
 ## Depends on
 
@@ -401,4 +401,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Necklaces over a group with identity product](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/elementary-enumeration/necklaces-over-a-group-with-identity-product)

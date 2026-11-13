@@ -7,7 +7,7 @@ statement: formalized
 
 # Fast van der Waerden game
 
-22 results, 12 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html).
+22 results, 12 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html).
 
 ## Containing a homothetic copy
 
@@ -20,7 +20,7 @@ condition.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 1.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.ContainsCopy`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#contains-copy).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.ContainsCopy`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#contains-copy).
 
 ## Maker wins within $p$ moves
 
@@ -38,7 +38,7 @@ has claimed $B \cup \{y\}$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Sections 1 and 5 (`p`-move strategy).
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.MakerWinsWithin`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.MakerWinsWithin`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within).
 
 ## Copies of finite sets of rationals
 
@@ -50,7 +50,7 @@ $B = aA + b = \{ax + b : x \in A\}$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 5.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsRatCopy`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-copy).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsRatCopy`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-copy).
 
 ## Reflections of finite sets of rationals
 
@@ -62,7 +62,7 @@ $B = aA + b = \{ax + b : x \in A\}$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 6.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsRatReflection`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-reflection).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsRatReflection`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-reflection).
 
 ## Symmetric sets of a given type
 
@@ -76,7 +76,7 @@ Positions are counted from $0$, so the paper's type $(i + 1, j + 1)$ is the type
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Definition 2.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetricOfType`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetricOfType`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type).
 
 ## Symmetric sets of rationals
 
@@ -87,7 +87,7 @@ symmetric of some type $(i, j)$ with $i, j < |S|$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Definition 2.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetric`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetric`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric).
 
 ## The zero-geometric set $S_2(n, k)$
 
@@ -99,7 +99,7 @@ $\{0, 1, k, \dots, k^{n-2}\}$ when $n \ge 2$ and $\{0\}$ when $n \le 1$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Definition 3.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet`, a definition declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set).
 
 ## Every finite set contains a copy of the empty set
 
@@ -110,7 +110,7 @@ numbers contains a homothetic copy of the empty set.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 1.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.containsCopy_empty`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#contains-copy-empty).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.containsCopy_empty`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#contains-copy-empty).
 
 ## Winning within zero moves
 
@@ -123,7 +123,7 @@ $aS + b = \{as + b : s \in S\}$ of $S$, where $a$ is a positive integer and $b$ 
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 5.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_zero`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-zero).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_zero`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-zero).
 
 ## Every finite set of rationals is a copy of itself
 
@@ -134,7 +134,7 @@ numbers, $A$ is a copy of $A$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Section 5.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.isRatCopy_refl`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-copy-refl).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.isRatCopy_refl`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-rat-copy-refl).
 
 ## The zero-geometric set $S_2(1, k)$ is $\{0\}$
 
@@ -145,7 +145,7 @@ zero-geometric set $S_2(1, k)$ equals $\{0\}$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Definition 3.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_one`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-one).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_one`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-one).
 
 ## The zero-geometric set $S_2(n + 2, k)$
 
@@ -156,7 +156,7 @@ $k$, $S_2(n + 2, k) = \{0\} \cup \{k^i : 0 \le i \le n\} = \{0, 1, k, \dots, k^n
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Definition 3.
 
-Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_add_two`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-add-two).
+Formalized by `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_add_two`, a theorem declared in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-add-two).
 
 ## Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$
 
@@ -168,7 +168,7 @@ claimed, Maker wins the $S$-game within $|S|$ moves.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_card_of_card_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-card-of-card-le-three).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_card_of_card_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-card-of-card-le-three).
 
 ## A fast Maker win forces symmetry
 
@@ -181,7 +181,7 @@ symmetric.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetric_of_makerWinsWithin_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-maker-wins-within-card).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetric_of_makerWinsWithin_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-maker-wins-within-card).
 
 ## Possible types of a symmetric set
 
@@ -194,7 +194,7 @@ are the types $(1, n)$, $(2, n)$ and $(1, n - 1)$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetricOfType_cases` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type-cases).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetricOfType_cases` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type-cases).
 
 ## Zero-geometric copies of symmetric sets
 
@@ -210,7 +210,7 @@ In the paper's one-based numbering these are the types $(2, n)$ and $(1, n - 1)$
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_of_isSymmetricOfType` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-of-is-symmetric-of-ty).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_of_isSymmetricOfType` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#zero-geometric-set-of-is-symmetric-of-ty).
 
 ## Uniqueness of the symmetry type
 
@@ -222,7 +222,7 @@ $(i', j')$, then $i = i'$ and $j = j'$.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetricOfType_unique` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type-unique).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.isSymmetricOfType_unique` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#is-symmetric-of-type-unique).
 
 ## Hales–Jewett bound for the $S$-game
 
@@ -235,7 +235,7 @@ claimed, Maker wins the $S$-game within $\lceil n^N / 2 \rceil$ moves.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_of_halesJewett` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-of-hales-jewett).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_of_halesJewett` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-of-hales-jewett).
 
 ## Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$
 
@@ -247,7 +247,7 @@ been claimed, Maker does not win the $S$-game within $|S|$ moves.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.not_makerWinsWithin_card_of_five_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#not-maker-wins-within-card-of-five-le).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.not_makerWinsWithin_card_of_five_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#not-maker-wins-within-card-of-five-le).
 
 ## Four-element sets with a four-move win are the symmetric ones
 
@@ -259,7 +259,7 @@ the $S$-game within $4$ moves if and only if $S$, viewed as a set of rationals, 
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_four_iff_isSymmetric` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-four-iff-is-symmetric).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_four_iff_isSymmetric` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-four-iff-is-symmetric).
 
 ## Maker wins the $S$-game in five moves when $|S| = 4$
 
@@ -271,7 +271,7 @@ $S$-game within $5$ moves.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_five_of_card_eq_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-five-of-card-eq-four).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_five_of_card_eq_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-five-of-card-eq-four).
 
 ## Tree criterion for fast wins
 
@@ -291,7 +291,7 @@ rationals along it.
 
 - Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_of_tree` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-of-tree).
+Stated but not proved: `MetaMathlibExt.FastVanDerWaerdenGame.makerWinsWithin_of_tree` is written with `theorem_wanted` in [WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FastVanDerWaerdenGameWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html#maker-wins-within-of-tree).
 
 ## Depends on
 
@@ -300,4 +300,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fast van der Waerden game](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/fast-van-der-waerden-game)

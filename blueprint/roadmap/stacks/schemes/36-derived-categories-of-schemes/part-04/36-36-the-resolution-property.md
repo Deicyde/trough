@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.36 The resolution property
 
-Section 36.36 of the Stacks Project, [Tag 0F85](https://stacks.math.columbia.edu/tag/0F85). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.36 of the Stacks Project, [Tag 0F85](https://stacks.math.columbia.edu/tag/0F85). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F86, a definition
 
 [Tag 0F86](https://stacks.math.columbia.edu/tag/0F86) in the Stacks Project.
 
-**`AlgebraicGeometry.HasResolutionProperty`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionProperty.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionProperty.lean#L46).
+**`AlgebraicGeometry.HasResolutionProperty`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionProperty.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionProperty.lean#L46).
 
 > A scheme has the resolution property if every finite type quasi-coherent module on it is a
 > quotient of a finite locally free module.
@@ -27,7 +27,7 @@ class HasResolutionProperty (X : Scheme.{u}) : Prop
 
 [Tag 0F87](https://stacks.math.columbia.edu/tag/0F87) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmple.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmple.lean#L128).
+**`AlgebraicGeometry.hasResolutionProperty_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmple.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmple.lean#L128).
 
 > A scheme carrying an ample invertible module has the resolution property: every finite type
 > quasi-coherent module on it is a quotient of a finite locally free module.
@@ -41,7 +41,7 @@ theorem hasResolutionProperty_of_isAmple {X : Scheme.{u}} (L : X.Modules)
 
 [Tag 0FDD](https://stacks.math.columbia.edu/tag/0FDD) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyRelativelyAmple.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyRelativelyAmple.lean#L450).
+**`AlgebraicGeometry.hasResolutionProperty_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyRelativelyAmple.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyRelativelyAmple.lean#L450).
 
 > **Stacks Tag 0FDD.** If `f : X ⟶ Y` is a morphism of schemes, `Y` is quasi-compact,
 > quasi-separated and has the resolution property, and `L` is an invertible `𝒪_X`-module ample
@@ -58,7 +58,7 @@ theorem hasResolutionProperty_of_isRelativelyAmple {X Y : Scheme.{u}} (f : X ⟶
 
 [Tag 0F88](https://stacks.math.columbia.edu/tag/0F88) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineHom.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineHom.lean#L91). The attribute's comment: “the affine case”.
+**`AlgebraicGeometry.hasResolutionProperty_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineHom.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineHom.lean#L91). The attribute's comment: “the affine case”.
 
 > **The affine case of [Stacks, Tag 0F88].** The source of an affine morphism onto a
 > quasi-compact, quasi-separated scheme with the resolution property has the resolution property.
@@ -73,7 +73,7 @@ theorem hasResolutionProperty_of_isAffineHom {X Y : Scheme.{u}} (f : X ⟶ Y) [I
     HasResolutionProperty X
 ```
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isAffineHom_or_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyQuasiAffineHom.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyQuasiAffineHom.lean#L60). The attribute's comment: “affine or quasi-affine f; the whole statement”.
+**`AlgebraicGeometry.hasResolutionProperty_of_isAffineHom_or_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyQuasiAffineHom.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyQuasiAffineHom.lean#L60). The attribute's comment: “affine or quasi-affine f; the whole statement”.
 
 > **Stacks 0F88**. Let `f : X ⟶ Y` be an affine or quasi-affine morphism of schemes with `Y`
 > quasi-compact and quasi-separated. If `Y` has the resolution property, so does `X`.
@@ -88,7 +88,7 @@ theorem hasResolutionProperty_of_isAffineHom_or_isQuasiAffineHom {X Y : Scheme.{
 
 [Tag 0GTC](https://stacks.math.columbia.edu/tag/0GTC) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionProperty_of_surjective_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyFiniteLocallyFree.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyFiniteLocallyFree.lean#L276).
+**`AlgebraicGeometry.hasResolutionProperty_of_surjective_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyFiniteLocallyFree.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyFiniteLocallyFree.lean#L276).
 
 > **Stacks Project, Tag 0GTC.** If `f : X ⟶ Y` is a surjective finite locally free morphism of
 > schemes and `X` has the resolution property, then so does `Y`.
@@ -103,7 +103,7 @@ theorem hasResolutionProperty_of_surjective_isFiniteLocallyFree {X Y : Scheme.{u
 
 [Tag 0F89](https://stacks.math.columbia.edu/tag/0F89) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFiniteLocallyFree_epi_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCovering.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCovering.lean#L105). The attribute's comment: “the direction that is immediate: resolution property implies each ideal is a finite-locally-free quotient”.
+**`AlgebraicGeometry.exists_isFiniteLocallyFree_epi_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCovering.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCovering.lean#L105). The attribute's comment: “the direction that is immediate: resolution property implies each ideal is a finite-locally-free quotient”.
 
 > Let `X` be a scheme with a finite affine open covering `U` and finite type quasi-coherent
 > sheaves of ideals `I j` whose vanishing loci are the complements of the `U j`.  If `X` has the
@@ -118,7 +118,7 @@ theorem exists_isFiniteLocallyFree_epi_of_isIdealAffineCovering [HasResolutionPr
       (q : E ⟶ idealPow (I j) 1), Epi q
 ```
 
-**`AlgebraicGeometry.hasResolutionProperty_iff_forall_exists_epi_idealPow_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringConverse.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringConverse.lean#L61).
+**`AlgebraicGeometry.hasResolutionProperty_iff_forall_exists_epi_idealPow_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringConverse.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringConverse.lean#L61).
 
 > **[Stacks, Tag 0F89].** Let `X` be a scheme with
 > 1. a finite affine open covering `X = U 0 ∪ ⋯ ∪ U (m - 1)`, and
@@ -139,7 +139,7 @@ theorem hasResolutionProperty_iff_forall_exists_epi_idealPow_of_isIdealAffineCov
         (q : E ⟶ idealPow (I j) 1), Epi q
 ```
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringSubstantial.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringSubstantial.lean#L234). The attribute's comment: “the substantial direction, at the source's generality: finite-locally-free quotients of the ideals give the resolution property”.
+**`AlgebraicGeometry.hasResolutionProperty_of_isIdealAffineCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringSubstantial.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyIdealCoveringSubstantial.lean#L234). The attribute's comment: “the substantial direction, at the source's generality: finite-locally-free quotients of the ideals give the resolution property”.
 
 > **The substantial direction of [Stacks, Tag 0F89].**  Let `X` be a scheme with a finite
 > affine open covering `U` and finite type quasi-coherent sheaves of ideals `I j` whose vanishing
@@ -163,7 +163,7 @@ theorem hasResolutionProperty_of_isIdealAffineCovering {X : Scheme.{u}} {m : ℕ
 
 [Tag 0GMM](https://stacks.math.columbia.edu/tag/0GMM) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IsAmpleFamily.hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean#L197). References: EGA III (7.7.9), “(ii)”.
+**`AlgebraicGeometry.Scheme.IsAmpleFamily.hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean#L197). References: EGA III (7.7.9), “(ii)”.
 
 > **[Stacks, Tag 0GMM].** A scheme carrying an ample family of invertible modules has the
 > resolution property.
@@ -184,7 +184,7 @@ theorem Scheme.IsAmpleFamily.hasResolutionProperty {ι : Type v} {X : Scheme.{u}
 
 [Tag 0F8A](https://stacks.math.columbia.edu/tag/0F8A) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRegular.hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean#L229). References: SGA 3 VIB (13.3), “more general”.
+**`AlgebraicGeometry.IsRegular.hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAmpleFamilyIdealCovering.lean#L229). References: SGA 3 VIB (13.3), “more general”.
 
 > **[Stacks, Tag 0F8A].** A quasi-compact regular scheme with affine diagonal has the resolution
 > property.
@@ -212,7 +212,7 @@ theorem IsRegular.hasResolutionProperty (X : Scheme.{u}) [CompactSpace X]
 
 [Tag 0F8B](https://stacks.math.columbia.edu/tag/0F8B) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionProperty_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimit.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimit.lean#L59). The attribute's comment: “the direction that is immediate: if a stage of the diagram has the resolution property then so does the limit”.
+**`AlgebraicGeometry.hasResolutionProperty_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimit.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimit.lean#L59). The attribute's comment: “the direction that is immediate: if a stage of the diagram has the resolution property then so does the limit”.
 
 > Let `c` be a limit cone over a cofiltered diagram `D` of quasi-compact, quasi-separated
 > schemes with affine transition morphisms.  If some stage `D.obj i` has the resolution property,
@@ -230,7 +230,7 @@ theorem hasResolutionProperty_of_isLimit [IsCofiltered I]
     HasResolutionProperty c.pt
 ```
 
-**`AlgebraicGeometry.hasResolutionProperty_iff_exists_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimitStageQcqs.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimitStageQcqs.lean#L197).
+**`AlgebraicGeometry.hasResolutionProperty_iff_exists_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimitStageQcqs.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyLimitStageQcqs.lean#L197).
 
 > **[Stacks, Tag 0F8B].**  Let `c` be a limit cone over a cofiltered diagram `D` of
 > quasi-compact, quasi-separated schemes with affine transition morphisms.  The limit `c.pt` has
@@ -245,7 +245,7 @@ theorem hasResolutionProperty_iff_exists_of_isLimit (hc : IsLimit c) :
 
 [Tag 0F8C](https://stacks.math.columbia.edu/tag/0F8C) in the Stacks Project.
 
-**`AlgebraicGeometry.HasResolutionProperty.isAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineDiagonal.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineDiagonal.lean#L734).
+**`AlgebraicGeometry.HasResolutionProperty.isAffineHom_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineDiagonal.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ResolutionPropertyAffineDiagonal.lean#L735).
 
 > **Stacks Project, Tag 0F8C.** A quasi-compact and quasi-separated scheme with the resolution
 > property has affine diagonal.
@@ -270,4 +270,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.36, Tag 0F85](https://stacks.math.columbia.edu/tag/0F85)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

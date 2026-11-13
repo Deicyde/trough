@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.77 Lifting complexes
 
-Section 15.77 of the Stacks Project, [Tag 0BC8](https://stacks.math.columbia.edu/tag/0BC8). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.77 of the Stacks Project, [Tag 0BC8](https://stacks.math.columbia.edu/tag/0BC8). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BC9, a lemma
 
 [Tag 0BC9](https://stacks.math.columbia.edu/tag/0BC9) in the Stacks Project.
 
-**`LiftAcyclic.exists_lift_acyclic_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LiftAcyclicComplex.lean, line 895](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/LiftAcyclicComplex.lean#L895).
+**`LiftAcyclic.exists_lift_acyclic_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/LiftAcyclicComplex.lean, line 888](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/LiftAcyclicComplex.lean#L888).
 
 > **Stacks 0BC9**.
 > A bounded above acyclic complex of `R/I`-modules with terms of the form `P/IP` has a bounded
@@ -47,7 +47,7 @@ theorem exists_lift_acyclic_complex
 
 [Tag 0BCA](https://stacks.math.columbia.edu/tag/0BCA) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_boundedAbove_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Lifting.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Lifting.lean#L792).
+**`StacksDraft.Perfect.exists_boundedAbove_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Lifting.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Lifting.lean#L792).
 
 > **Stacks 0BCA.** Let `I ⊆ R` and let `P` be a class of projective `R`-modules, closed under
 > finite direct sums and complementary summands, such that surjectivity modulo `I` lifts to
@@ -91,7 +91,7 @@ theorem exists_boundedAbove_lift_representing
 
 [Tag 09AR](https://stacks.math.columbia.edu/tag/09AR) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_boundedAbove_projective_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L698). References: SGA 5 XV (3.Lemma1), “existence of L', v, w”.
+**`StacksDraft.Perfect.exists_boundedAbove_projective_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L698). References: SGA 5 XV (3.Lemma1), “existence of L', v, w”.
 
 > **Stacks 09AR.** Let `I` be a nilpotent ideal of a commutative ring `R` and let `K` be an
 > object of `D(R)`. A bounded above complex `E` of projective `R ⧸ I`-modules representing
@@ -122,7 +122,7 @@ public theorem exists_boundedAbove_projective_lift_representing
 
 [Tag 0H76](https://stacks.math.columbia.edu/tag/0H76) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPseudoCoherent_derivedExtensionScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L811). References: SGA 6 I (2.16.2), “(i), punctual”.
+**`StacksDraft.Perfect.isPseudoCoherent_derivedExtensionScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L811). References: SGA 6 I (2.16.2), “(i), punctual”.
 
 > **Stacks 0H76.** Derived extension of scalars along a surjective map of commutative rings
 > with nilpotent kernel preserves *and reflects* pseudo-coherence.
@@ -146,7 +146,7 @@ public theorem isPseudoCoherent_derivedExtensionScalars_iff
 
 [Tag 0BCB](https://stacks.math.columbia.edu/tag/0BCB) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_boundedAbove_isStablyFree_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Lifting.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Lifting.lean#L1054).
+**`StacksDraft.Perfect.exists_boundedAbove_isStablyFree_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Lifting.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Lifting.lean#L1054).
 
 > **Stacks 0BCB.** Let `I ⊆ R` be an ideal every element of whose coset `1 + I` is a unit. A
 > bounded above complex `E` of finite stably free `R ⧸ I`-modules representing `K ⊗ᴸ[R] R ⧸ I`, for
@@ -179,7 +179,7 @@ theorem exists_boundedAbove_isStablyFree_lift_representing
 
 [Tag 0BCC](https://stacks.math.columbia.edu/tag/0BCC) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_unique_boundedAbove_free_complex_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/LocalRing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/MinimalRepresentative/LocalRing.lean#L562).
+**`StacksDraft.Perfect.exists_unique_boundedAbove_free_complex_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/LocalRing.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/MinimalRepresentative/LocalRing.lean#L558).
 
 > **Stacks 0BCC.** Let `K` be a pseudo-coherent object of the derived category of a commutative
 > local ring `R` with residue field `κ`. Its cohomology after derived extension of scalars to `κ` is
@@ -212,7 +212,7 @@ theorem exists_unique_boundedAbove_free_complex_representing
 
 [Tag 0BCD](https://stacks.math.columbia.edu/tag/0BCD) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_away_bounded_free_complex_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean#L322).
+**`StacksDraft.Perfect.exists_away_bounded_free_complex_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/MinimalRepresentative/PrincipalNeighbourhood.lean#L322).
 
 > **Stacks 0BCD.** Let `R` be a commutative ring, `p` a prime of `R` and `K` a perfect object of
 > `D(R)`. The dimensions `dᵢ = dim_{κ(p)} Hⁱ(K ⊗ᴸ_R κ(p))` are finite and only finitely many of them
@@ -244,7 +244,7 @@ theorem exists_away_bounded_free_complex_representing
 
 [Tag 0F9V](https://stacks.math.columbia.edu/tag/0F9V) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_away_iso_biprod_trivial_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/TrivialSummands.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/MinimalRepresentative/TrivialSummands.lean#L596).
+**`StacksDraft.Perfect.exists_away_iso_biprod_trivial_complexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/MinimalRepresentative/TrivialSummands.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/MinimalRepresentative/TrivialSummands.lean#L595).
 
 > **Stacks 0F9V.** Two bounded complexes of finite projective modules representing
 > isomorphic derived objects become isomorphic as complexes over some principal localization,
@@ -276,7 +276,7 @@ theorem exists_away_iso_biprod_trivial_complexes
 
 [Tag 0BCE](https://stacks.math.columbia.edu/tag/0BCE) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_boundedAbove_finiteProjective_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L267).
+**`StacksDraft.Perfect.exists_boundedAbove_finiteProjective_lift_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/NilpotentLifting.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/NilpotentLifting.lean#L267).
 
 > **Stacks 0BCE.** Let `(R, I)` be a henselian pair and let `K` be a pseudo-coherent object of
 > `D(R)`. A bounded above complex `E` of finite projective `R ⧸ I`-modules representing
@@ -314,4 +314,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.77, Tag 0BC8](https://stacks.math.columbia.edu/tag/0BC8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

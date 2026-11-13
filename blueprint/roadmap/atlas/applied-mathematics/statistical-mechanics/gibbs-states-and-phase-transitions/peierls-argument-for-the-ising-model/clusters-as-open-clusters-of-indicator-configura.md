@@ -8,7 +8,7 @@ proof: formalized
 
 # Clusters as open clusters of indicator configurations, and anchored boundary walks
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html).
 
 ## A. Indicator configurations of clusters
 
@@ -16,20 +16,20 @@ proof: formalized
 
 The bond configuration that is open exactly on the edges with both endpoints in `K`.
 
-Formalized by `StatMech.Lattice.indicatorConfig`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#indicator-config).
+Formalized by `StatMech.Lattice.indicatorConfig`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#indicator-config).
 
 ## Anchor row of $\ell$ sites in $\mathbb{Z}^2$
 
 The anchor row `{(j, 0) : j < ℓ}` in `ℤ²`.
 
-Formalized by `StatMech.Lattice.ccb_anchorRow`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#ccb-anchor-row).
+Formalized by `StatMech.Lattice.ccb_anchorRow`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#ccb-anchor-row).
 
 ## Anchored closed-walk decoding of cluster contours in $\mathbb{Z}^2$
 
 In `ℤ²`, every connected cluster in `Λ_n` with contour length `ℓ` has its contour decoded from a
 closed walk of length `ℓ` based in the anchor row.
 
-Formalized by `StatMech.Lattice.ccb_AnchoredBoundaryWalkExists`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#ccb-anchored-boundary-walk-exists).
+Formalized by `StatMech.Lattice.ccb_AnchoredBoundaryWalkExists`, a definition declared in [PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/PhyslibExt/CondensedMatter/IsingModel/Peierls/AnchoredBoundaryWalk.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html#ccb-anchored-boundary-walk-exists).
 
 ## Depends on
 
@@ -38,4 +38,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Clusters as open clusters of indicator configurations, and anchored boundary walks](https://deicyde.github.io/atlas-lean/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/StatisticalMechanics/gibbs-states-and-phase-transitions/peierls-argument-for-the-ising-model/clusters-as-open-clusters-of-indicator-configura)

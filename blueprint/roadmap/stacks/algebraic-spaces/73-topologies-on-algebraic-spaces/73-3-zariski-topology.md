@@ -8,13 +8,13 @@ proof: formalized
 
 # 73.3 Zariski topology
 
-Section 73.3 of the Stacks Project, [Tag 03YD](https://stacks.math.columbia.edu/tag/03YD). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 73.3 of the Stacks Project, [Tag 03YD](https://stacks.math.columbia.edu/tag/03YD). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 041G, a definition
 
 [Tag 041G](https://stacks.math.columbia.edu/tag/041G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsZariskiCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L81).
+**`AlgebraicGeometry.Space.IsZariskiCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L81).
 
 > **Stacks 041G.** A family of open immersions whose images cover every point of the
 > target.
@@ -26,7 +26,7 @@ abbrev IsZariskiCovering (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains
     (f : ∀ i, Xᵢ i ⟶ X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCovering_yoneda_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringOfOpenCover.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringOfOpenCover.lean#L103). The attribute's comment: “an open cover of an object of the site”.
+**`AlgebraicGeometry.Space.isZariskiCovering_yoneda_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringOfOpenCover.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringOfOpenCover.lean#L103). The attribute's comment: “an open cover of an object of the site”.
 
 > **Stacks 041G for an open cover of an object of the big fppf site of `S`.** A family of
 > morphisms of the site whose underlying morphisms of schemes are open immersions covering the
@@ -47,7 +47,7 @@ theorem isZariskiCovering_yoneda_of_openCover
 
 [Tag 041H](https://stacks.math.columbia.edu/tag/041H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZariskiCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L92). The attribute's comment: “isomorphism\_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L92). The attribute's comment: “isomorphism\_cover”.
 
 > **Stacks 041H.** An isomorphism gives a singleton Zariski covering.
 
@@ -59,7 +59,7 @@ theorem isZariskiCovering_of_isIso
     IsZariskiCovering B S hS PUnit (fun _ => X') (fun _ => f)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L107). The attribute's comment: “composition\_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L107). The attribute's comment: “composition\_cover”.
 
 > **Stacks 041H.** Composing a Zariski covering with a covering of each member gives a
 > Zariski covering.
@@ -79,7 +79,7 @@ theorem isZariskiCovering_comp
       (fun p => Xᵢⱼ p.1 p.2) (fun p => g p.1 p.2 ≫ f p.1)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L137). The attribute's comment: “base\_change\_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L137). The attribute's comment: “base\_change\_cover”.
 
 > **Stacks 041H.** Zariski coverings are stable under base change: the first projections of
 > the fibre products of a Zariski covering `{Xᵢ ⟶ X}` with a morphism `g : X' ⟶ X` form a
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 73.3, Tag 03YD](https://stacks.math.columbia.edu/tag/03YD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

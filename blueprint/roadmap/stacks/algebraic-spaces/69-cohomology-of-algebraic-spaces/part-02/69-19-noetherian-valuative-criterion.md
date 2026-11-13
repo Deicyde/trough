@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.19 Noetherian valuative criterion
 
-Section 69.19 of the Stacks Project, [Tag 0ARI](https://stacks.math.columbia.edu/tag/0ARI). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.19 of the Stacks Project, [Tag 0ARI](https://stacks.math.columbia.edu/tag/0ARI). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ARJ, a lemma
 
 [Tag 0ARJ](https://stacks.math.columbia.edu/tag/0ARJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_isQuasiSeparated_of_discreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparated.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparated.lean#L183).
+**`AlgebraicGeometry.Space.isSeparated_of_isQuasiSeparated_of_discreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparated.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeSeparated.lean#L184).
 
 > **Stacks 0ARJ.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally
 > Noetherian. If `f` is locally of finite type and quasi-separated, and every valuative square for
@@ -35,7 +35,7 @@ theorem isSeparated_of_isQuasiSeparated_of_discreteValuativeUniqueness
 
 [Tag 0ARK](https://stacks.math.columbia.edu/tag/0ARK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_of_isQuasiSeparated_of_discreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProper.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProper.lean#L276).
+**`AlgebraicGeometry.Space.isProper_of_isQuasiSeparated_of_discreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProper.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeProper.lean#L276).
 
 > **Stacks 0ARK.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y`
 > locally Noetherian. If `f` is of finite type and quasi-separated, and every valuative square
@@ -56,7 +56,7 @@ theorem isProper_of_isQuasiSeparated_of_discreteValuativeCriterion
 
 [Tag 0ARL](https://stacks.math.columbia.edu/tag/0ARL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_iff_discreteValuativeUniqueness_of_isCofinal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L177). The attribute's comment: “Lemma 69.19.1 (0ARJ) for any class of discrete valuation rings in which every discrete valuation ring has an extension”.
+**`AlgebraicGeometry.Space.isSeparated_iff_discreteValuativeUniqueness_of_isCofinal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L177). The attribute's comment: “Lemma 69.19.1 (0ARJ) for any class of discrete valuation rings in which every discrete valuation ring has an extension”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is locally of finite type and quasi-separated. Let `P` be a class of discrete valuation
@@ -76,7 +76,7 @@ theorem isSeparated_iff_discreteValuativeUniqueness_of_isCofinal
       ∀ q : ValuativeSquare f, ∀ _ : IsDiscreteValuationRing q.R, P q.R → Subsingleton q.Lift
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_discreteValuativeCriterion_of_isCofinal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L202). The attribute's comment: “Lemma 69.19.2 (0ARK) for any class of discrete valuation rings in which every discrete valuation ring has an extension”.
+**`AlgebraicGeometry.Space.isProper_iff_discreteValuativeCriterion_of_isCofinal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L202). The attribute's comment: “Lemma 69.19.2 (0ARK) for any class of discrete valuation rings in which every discrete valuation ring has an extension”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is of finite type and quasi-separated. Let `P` be a class of discrete valuation rings
@@ -99,7 +99,7 @@ theorem isProper_iff_discreteValuativeCriterion_of_isCofinal
         Nonempty e.square.Lift ∧ Subsingleton e.square.Lift
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_completeDiscreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L235). The attribute's comment: “Lemma 69.19.1 (0ARJ) with complete discrete valuation rings”.
+**`AlgebraicGeometry.Space.isSeparated_iff_completeDiscreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L235). The attribute's comment: “Lemma 69.19.1 (0ARJ) with complete discrete valuation rings”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is locally of finite type and quasi-separated. If every valuative square for `f` whose
@@ -116,7 +116,7 @@ theorem isSeparated_iff_completeDiscreteValuativeUniqueness
       IsAdicComplete (IsLocalRing.maximalIdeal q.R) q.R → Subsingleton q.Lift
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_completeDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L252). The attribute's comment: “Lemma 69.19.2 (0ARK) with complete discrete valuation rings”.
+**`AlgebraicGeometry.Space.isProper_iff_completeDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L252). The attribute's comment: “Lemma 69.19.2 (0ARK) with complete discrete valuation rings”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is of finite type and quasi-separated. If for every valuative square for `f` whose
@@ -138,7 +138,7 @@ theorem isProper_iff_completeDiscreteValuativeCriterion
         Nonempty e.square.Lift ∧ Subsingleton e.square.Lift
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_iff_completeAlgClosedDiscreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L273). The attribute's comment: “Lemma 69.19.1 (0ARJ) with complete discrete valuation rings with algebraically closed residue field”.
+**`AlgebraicGeometry.Space.isSeparated_iff_completeAlgClosedDiscreteValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L273). The attribute's comment: “Lemma 69.19.1 (0ARJ) with complete discrete valuation rings with algebraically closed residue field”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is locally of finite type and quasi-separated. If every valuative square for `f` whose
@@ -156,7 +156,7 @@ theorem isSeparated_iff_completeAlgClosedDiscreteValuativeUniqueness
       IsAlgClosed (IsLocalRing.ResidueField q.R) → Subsingleton q.Lift
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_completeAlgClosedDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L293). The attribute's comment: “Lemma 69.19.2 (0ARK) with complete discrete valuation rings with algebraically closed residue field”.
+**`AlgebraicGeometry.Space.isProper_iff_completeAlgClosedDiscreteValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianValuativeComplete.lean#L293). The attribute's comment: “Lemma 69.19.2 (0ARK) with complete discrete valuation rings with algebraically closed residue field”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` with `Y` locally Noetherian, and
 > assume `f` is of finite type and quasi-separated. If for every valuative square for `f` whose
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.19, Tag 0ARI](https://stacks.math.columbia.edu/tag/0ARI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

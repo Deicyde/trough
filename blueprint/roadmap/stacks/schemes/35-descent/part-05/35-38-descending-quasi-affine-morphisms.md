@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.38 Descending quasi-affine morphisms
 
-Section 35.38 of the Stacks Project, [Tag 0246](https://stacks.math.columbia.edu/tag/0246). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.38 of the Stacks Project, [Tag 0246](https://stacks.math.columbia.edu/tag/0246). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0247, a lemma
 
 [Tag 0247](https://stacks.math.columbia.edu/tag/0247) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveEtale_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean#L350). The attribute's comment: “effective descent along a surjective étale chart of the site”. References: SGA 1 VIII (7.9), “surjective étale cover”.
+**`AlgebraicGeometry.Space.isEffectiveDescentAlongSurjectiveEtale_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineEtaleDescent.lean#L350). The attribute's comment: “effective descent along a surjective étale chart of the site”. References: SGA 1 VIII (7.9), “surjective étale cover”.
 
 > **Quasi-affine morphisms descend effectively along the surjective étale morphisms of the big
 > fppf site of `S`.** If the base change of a morphism of sheaves `f : X ⟶ Y` along a surjective
@@ -28,7 +28,7 @@ theorem isEffectiveDescentAlongSurjectiveEtale_isQuasiAffineHom
       (@_root_.AlgebraicGeometry.IsQuasiAffineHom.{u} : MorphismProperty Scheme.{u})
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcDescent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcDescent.lean#L106). References: SGA 1 VIII (7.9), “partial”; SGA 3 IV (4.7), “partial”; SGA 3 IX (2.3), “Effectivity clause”; SGA 3 VIII (1.7.2), “more general”; SGA 3 X (5.4), “special case”; SGA 3 XXIV (3.11.2), “partial”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_isQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcDescent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/QuasiAffineFpqcDescent.lean#L106). References: SGA 1 VIII (7.9), “partial”; SGA 3 IV (4.7), “partial”; SGA 3 IX (2.3), “Effectivity clause”; SGA 3 VIII (1.7.2), “more general”; SGA 3 X (5.4), “special case”; SGA 3 XXIV (3.11.2), “partial”.
 
 > **[Stacks, Tag 0247](https://stacks.math.columbia.edu/tag/0247).** Let `S` be a scheme, let
 > `{X i ⟶ S}` be an fpqc covering family, indexed by a type in an arbitrary universe, and let `D`
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.38, Tag 0246](https://stacks.math.columbia.edu/tag/0246)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

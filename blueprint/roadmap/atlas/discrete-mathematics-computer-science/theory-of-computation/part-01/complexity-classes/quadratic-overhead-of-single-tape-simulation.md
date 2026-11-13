@@ -8,7 +8,7 @@ proof: formalized
 
 # Quadratic overhead of single-tape simulation
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html).
 
 ## Multi-stack steps on the `TM1` emulator
 
@@ -21,7 +21,7 @@ stack $k$ (for a given stack action and continuation), with internal state $v$ a
 bottom marker of $L$, reaches in exactly $n$ steps the same configuration with the head moved
 $n$ cells to the right.
 
-Formalized by `Cslib.Turing.TM2Time.relatesInSteps_go`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-in-steps-go).
+Formalized by `Cslib.Turing.TM2Time.relatesInSteps_go`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-in-steps-go).
 
 ## The emulator walks back to the bottom
 
@@ -31,7 +31,7 @@ state (for a given continuation), with internal state $v$ and head $n$ cells to 
 bottom marker of $L$, reaches in exactly $n$ steps the same configuration with the head at the
 bottom marker.
 
-Formalized by `Cslib.Turing.TM2Time.relatesInSteps_ret`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-in-steps-ret).
+Formalized by `Cslib.Turing.TM2Time.relatesInSteps_ret`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-in-steps-ret).
 
 ## Running one statement on the emulator
 
@@ -46,7 +46,7 @@ a configuration representing the result of running $N$ from state $v$ on the sta
 has the corresponding label and the same internal state, and its head is at the bottom marker
 of a tape whose $k$-th track lists the $k$-th resulting stack from bottom to top.
 
-Formalized by `Cslib.Turing.TM2Time.exists_relatesInSteps_stepAux`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-relates-in-steps-step-aux).
+Formalized by `Cslib.Turing.TM2Time.exists_relatesInSteps_stepAux`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-relates-in-steps-step-aux).
 
 ## One multi-stack step costs at most $1 + B(2(H + B) + 2)$ emulator steps
 
@@ -61,14 +61,14 @@ emulator reaches from $c_1$ in at most $1 + B(2(H + B) + 2)$ steps.
 The size of a statement is its structural size as a term. This is a counted form of the
 correctness of the emulation.
 
-Formalized by `Cslib.Turing.TM2Time.exists_relatesWithinSteps_tm1_of_step`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-relates-within-steps-tm1-of-step).
+Formalized by `Cslib.Turing.TM2Time.exists_relatesWithinSteps_tm1_of_step`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-relates-within-steps-tm1-of-step).
 
 ## The emulation halts where the multi-stack machine halts
 
 A halted configuration is
 related only to configurations of the single-tape emulation that do not step.
 
-Formalized by `Cslib.Turing.TM2Time.tm0_step_eq_none_of_step_eq_none`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#tm0-step-eq-none-of-step-eq-none).
+Formalized by `Cslib.Turing.TM2Time.tm0_step_eq_none_of_step_eq_none`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#tm0-step-eq-none-of-step-eq-none).
 
 ## Each step of the $\mathrm{TM1}$ emulator is at most three single-tape steps
 
@@ -78,7 +78,7 @@ $\mathrm{TM1}$ emulator of $M$ goes from $c$ to $c'$ in exactly $m$ steps, then 
 single-tape emulation of $M$ goes from the single-tape form of $c$ to the single-tape form of
 $c'$ in at most $3m$ steps.
 
-Formalized by `Cslib.Turing.TM2Time.relatesWithinSteps_tm0_of_relatesInSteps_tm1`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-within-steps-tm0-of-relates-in-s).
+Formalized by `Cslib.Turing.TM2Time.relatesWithinSteps_tm0_of_relatesInSteps_tm1`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#relates-within-steps-tm0-of-relates-in-s).
 
 ## Emulation constant
 
@@ -88,7 +88,7 @@ $M(l)$ over all labels $l$ (so each statement has size at most $B$), and $P$ is 
 of $M$, the total number of push instructions in its statements, which bounds the number of
 pushes in one step.
 
-Formalized by `Cslib.Turing.TM2Time.emulationConstant`, a definition declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#emulation-constant).
+Formalized by `Cslib.Turing.TM2Time.emulationConstant`, a definition declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 370](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L370). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#emulation-constant).
 
 ## Quadratic overhead of the single-tape emulation
 
@@ -100,7 +100,7 @@ single-tape form of a configuration of the $\mathrm{TM1}$ emulator of $M$ that r
 it has the corresponding label and the same internal state, and its head is at the bottom
 marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom to top.
 
-Formalized by `Cslib.Turing.TM2Time.exists_tm0_run_of_tm2_run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-tm0-run-of-tm2-run).
+Formalized by `Cslib.Turing.TM2Time.exists_tm0_run_of_tm2_run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-tm0-run-of-tm2-run).
 
 ## Single-tape emulation of halting multi-stack runs
 
@@ -114,7 +114,7 @@ that represents $c$: it has the corresponding label and the same internal state,
 is at the bottom marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom
 to top.
 
-Formalized by `Cslib.Turing.TM2Time.exists_tm0_halt_of_tm2_halt`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-tm0-halt-of-tm2-halt).
+Formalized by `Cslib.Turing.TM2Time.exists_tm0_halt_of_tm2_halt`, a theorem declared in [CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/SingleTape/TM2Time.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html#exists-tm0-halt-of-tm2-halt).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Quadratic overhead of single-tape simulation](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/complexity-classes/quadratic-overhead-of-single-tape-simulation)

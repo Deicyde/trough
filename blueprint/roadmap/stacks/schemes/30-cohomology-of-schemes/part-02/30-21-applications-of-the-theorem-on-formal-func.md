@@ -8,7 +8,7 @@ proof: formalized
 
 # 30.21 Applications of the theorem on formal functions
 
-Section 30.21 of the Stacks Project, [Tag 02OF](https://stacks.math.columbia.edu/tag/02OF). 4 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.21 of the Stacks Project, [Tag 02OF](https://stacks.math.columbia.edu/tag/02OF). 4 tags here are carried by 3 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02OG, a lemma
 
@@ -16,13 +16,13 @@ Section 30.21 of the Stacks Project, [Tag 02OF](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsFinite.tfae_isProper_finite_preimage_singleton`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/FiniteFibres.lean#L62), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteIffProperFiniteFibres.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteIffProperFiniteFibres.lean#L32) (StacksFrontier): “the equivalence of the first two conditions, for an arbitrary target; the source assumes it locally Noetherian”.
+- [`AlgebraicGeometry.IsFinite.tfae_isProper_finite_preimage_singleton`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/FiniteFibres.lean#L62), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteIffProperFiniteFibres.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteIffProperFiniteFibres.lean#L32) (StacksFrontier): “the equivalence of the first two conditions, for an arbitrary target; the source assumes it locally Noetherian”.
 
 ## Tag 02OH, a lemma
 
 [Tag 02OH](https://stacks.math.columbia.edu/tag/02OH) in the Stacks Project.
 
-**`Stacks.FormalFunctions.exists_isFinite_morphismRestrict_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L161). References: EGA III (4.8.11), “ordinary schemes”.
+**`Stacks.FormalFunctions.exists_isFinite_morphismRestrict_of_finite_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/FiniteFibreVanishing.lean#L161). References: EGA III (4.8.11), “ordinary schemes”.
 
 > **Stacks Project, Tag 02OH.** Let `f : X ⟶ Y` be a morphism of schemes and let `y : Y`.
 > Assume `Y` is locally Noetherian, `f` is proper, and the fibre `f ⁻¹' {y}` is finite. Then `y` has
@@ -45,7 +45,7 @@ theorem exists_isFinite_morphismRestrict_of_finite_fibre {X Y : Scheme.{u}} (f :
 
 [Tag 0D2M](https://stacks.math.columbia.edu/tag/0D2M) in the Stacks Project.
 
-**`Stacks.FormalFunctions.exists_isZero_stalk_rightDerived_and_surjective_fiberTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AmpleFibreTwistStalkSurjective.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/AmpleFibreTwistStalkSurjective.lean#L701).
+**`Stacks.FormalFunctions.exists_isZero_stalk_rightDerived_and_surjective_fiberTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AmpleFibreTwistStalkSurjective.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalFunctions/AmpleFibreTwistStalkSurjective.lean#L701).
 
 > **[Stacks, Tag 0D2M].**
 >
@@ -80,7 +80,7 @@ public theorem exists_isZero_stalk_rightDerived_and_surjective_fiberTwist (f : X
 
 [Tag 0D2N](https://stacks.math.columbia.edu/tag/0D2N) in the Stacks Project.
 
-**`Stacks.AmpleFibreNeighbourhood.exists_mem_isRelativelyAmple_of_isAmple_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFibreNeighbourhood/RelativelyAmpleNeighbourhood.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFibreNeighbourhood/RelativelyAmpleNeighbourhood.lean#L70).
+**`Stacks.AmpleFibreNeighbourhood.exists_mem_isRelativelyAmple_of_isAmple_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFibreNeighbourhood/RelativelyAmpleNeighbourhood.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFibreNeighbourhood/RelativelyAmpleNeighbourhood.lean#L71).
 
 > **Stacks Project, Tag 0D2N.**  Let `f : X ⟶ Y` be a proper morphism of schemes with `Y`
 > Noetherian, let `ℒ` be an invertible `𝒪_X`-module and let `y` be a point of `Y` such that `ℒ_y`
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.21, Tag 02OF](https://stacks.math.columbia.edu/tag/02OF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

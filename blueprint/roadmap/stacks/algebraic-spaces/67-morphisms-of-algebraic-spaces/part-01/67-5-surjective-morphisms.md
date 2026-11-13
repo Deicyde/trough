@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.5 Surjective morphisms
 
-Section 67.5 of the Stacks Project, [Tag 03MC](https://stacks.math.columbia.edu/tag/03MC). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.5 of the Stacks Project, [Tag 03MC](https://stacks.math.columbia.edu/tag/03MC). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03MD, a lemma
 
 [Tag 03MD](https://stacks.math.columbia.edu/tag/03MD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.surjective_iff_pointsMap_surjective_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean#L337).
+**`AlgebraicGeometry.Space.surjective_iff_pointsMap_surjective_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean#L337).
 
 > **Stacks 03MD.** A representable morphism of presheaves on the big fppf site of `S` is
 > surjective — surjective after every representable base change — if and only if the induced map
@@ -36,7 +36,7 @@ theorem surjective_iff_pointsMap_surjective_of_representable
 
 [Tag 03ME](https://stacks.math.columbia.edu/tag/03ME) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSurjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean#L48).
+**`AlgebraicGeometry.Space.IsSurjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean#L51).
 
 > A morphism of algebraic spaces over `S` is *surjective* when the induced map `|X| → |Y|` on
 > their sets of points is surjective.
@@ -50,7 +50,7 @@ abbrev IsSurjective (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 03MF](https://stacks.math.columbia.edu/tag/03MF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean#L233).
+**`AlgebraicGeometry.Space.isSurjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Surjective.lean#L233).
 
 > **Stacks 03MF.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following
 > are equivalent:
@@ -94,7 +94,7 @@ theorem isSurjective_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpac
 
 [Tag 03MG](https://stacks.math.columbia.edu/tag/03MG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L76).
+**`AlgebraicGeometry.Space.isSurjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveFpqcLocalAtTarget.lean#L76).
 
 > A composite of morphisms surjective on points is surjective on points.
 
@@ -109,7 +109,7 @@ theorem isSurjective_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03MH](https://stacks.math.columbia.edu/tag/03MH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean#L373).
+**`AlgebraicGeometry.Space.isSurjective_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SurjectiveOnPoints.lean#L373).
 
 > A base change of a morphism of algebraic spaces surjective on points is surjective on
 > points.
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.5, Tag 03MC](https://stacks.math.columbia.edu/tag/03MC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

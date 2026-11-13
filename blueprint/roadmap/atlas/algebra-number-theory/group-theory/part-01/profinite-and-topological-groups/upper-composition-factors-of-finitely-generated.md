@@ -7,7 +7,7 @@ statement: formalized
 
 # Upper composition factors of finitely generated groups
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html).
 
 ## Composition factor of a group (via subnormal subgroups)
 
@@ -19,7 +19,7 @@ of subgroups $H = H_0 \le H_1 \le \dots \le H_k = Q$ in which each $H_j$ is norm
 For simple $T$ and finite $Q$ this is the same as $T$ occurring as a factor of a composition series
 of $Q$ (refine the kernel and the subnormal chain).
 
-Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.IsCompositionFactor`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#is-composition-factor).
+Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.IsCompositionFactor`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#is-composition-factor).
 
 ## Upper composition factors
 
@@ -28,7 +28,7 @@ when it is a composition factor of some finite quotient of $G$: there are a fini
 surjective group homomorphism $G \to Q$ such that $T$ is a composition factor of $Q$, that is, $T$
 is a homomorphic image of a subnormal subgroup of $Q$.
 
-Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.IsUpperCompositionFactor`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#is-upper-composition-factor).
+Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.IsUpperCompositionFactor`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#is-upper-composition-factor).
 
 ## Kourovka Problem 11.57, 63-generator form (statement)
 
@@ -37,7 +37,7 @@ $(T_i)_{i \in I}$ of finite non-abelian simple groups there is a group $G$ gener
 elements such that a finite simple group $Q$ is an upper composition factor of $G$ if and only if
 $Q$ is isomorphic to $T_i$ for some $i \in I$.
 
-Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.upperCompositionFactorsAnySet63`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#upper-composition-factors-any-set63).
+Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.upperCompositionFactorsAnySet63`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#upper-composition-factors-any-set63).
 
 ## Kourovka Problem 11.57, 3-generator form (statement)
 
@@ -47,7 +47,7 @@ elements such that a finite non-abelian simple group $Q$ is an upper composition
 and only if $Q$ is isomorphic to $T_i$ for some $i \in I$. Abelian upper composition factors of $G$
 are not restricted.
 
-Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.nonabelianUpperCompositionFactorsAnySet3`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#nonabelian-upper-composition-factors-any).
+Formalized by `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.nonabelianUpperCompositionFactorsAnySet3`, a definition declared in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#nonabelian-upper-composition-factors-any).
 
 ## Segal's theorem on upper composition factors, 63 generators (Kourovka Problem 11.57)
 
@@ -61,7 +61,7 @@ In particular, no cyclic group of prime order is an upper composition factor of 
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.57 (A. Mann, D. Segal); resolution: D. Segal, Proc. London Math. Soc. (3) 82 (2001), 597-613, Kourovka Archive, Problem 11.57: any set of non-abelian finite simple groups is the set of upper composition factors of a 63-generator group; with abelian upper composition factors allowed, 3 generators suffice, https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.upperCompositionFactorsAnySet63_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#upper-composition-factors-any-set63-hold).
+Stated but not proved: `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.upperCompositionFactorsAnySet63_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#upper-composition-factors-any-set63-hold).
 
 ## Segal's theorem on upper composition factors, 3 generators (Kourovka Problem 11.57)
 
@@ -75,7 +75,7 @@ some $i \in I$. Abelian upper composition factors of $G$ are not restricted.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.57 (A. Mann, D. Segal); resolution: D. Segal, Proc. London Math. Soc. (3) 82 (2001), 597-613, Kourovka Archive, Problem 11.57: any set of non-abelian finite simple groups is the set of upper composition factors of a 63-generator group; with abelian upper composition factors allowed, 3 generators suffice, https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.nonabelianUpperCompositionFactorsAnySet3_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#nonabelian-upper-composition-factors-any-2).
+Stated but not proved: `MathlibExt.GroupTheory.UpperCompositionFactorsKourovka11Problem57Wanted.nonabelianUpperCompositionFactorsAnySet3_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/UpperCompositionFactorsKourovka11Problem57Wanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html#nonabelian-upper-composition-factors-any-2).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Upper composition factors of finitely generated groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/upper-composition-factors-of-finitely-generated)

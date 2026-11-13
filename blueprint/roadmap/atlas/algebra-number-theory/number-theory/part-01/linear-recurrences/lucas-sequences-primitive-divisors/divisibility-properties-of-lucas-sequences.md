@@ -7,7 +7,7 @@ statement: formalized
 
 # Divisibility properties of Lucas sequences
 
-60 results, 20 proved and 40 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html).
+60 results, 20 proved and 40 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html).
 
 ## Doubling formula $U_{2n} = U_n V_n$ for Lucas sequences
 
@@ -19,7 +19,7 @@ $U_{2n} = U_n V_n$ for every natural number $n$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Proposition 2.3 (i).
 
-Stated but not proved: `MetaMathlibExt.lucasU_two_mul_eq_lucasU_mul_lucasV` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-eq-lucas-u-mul-lucas-v).
+Stated but not proved: `MetaMathlibExt.lucasU_two_mul_eq_lucasU_mul_lucasV` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-eq-lucas-u-mul-lucas-v).
 
 ## Divisibility of Lucas sequences at divisible indices
 
@@ -32,7 +32,7 @@ $V_m \mid V_n$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Proposition 2.3 (iii), (iv).
 
-Stated but not proved: `MetaMathlibExt.lucasU_dvd_and_lucasV_dvd_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-dvd-and-lucas-v-dvd-of-dvd).
+Stated but not proved: `MetaMathlibExt.lucasU_dvd_and_lucasV_dvd_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-dvd-and-lucas-v-dvd-of-dvd).
 
 ## $P$ divides $U_{2n}$, and $V_n$ for odd $n$
 
@@ -44,7 +44,7 @@ natural number $n$, and $P \mid V_n$ for every odd natural number $n$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Proposition 2.3 (v), (vi).
 
-Stated but not proved: `MetaMathlibExt.p_dvd_lucasU_two_mul_and_lucasV_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#p-dvd-lucas-u-two-mul-and-lucas-v-of-odd).
+Stated but not proved: `MetaMathlibExt.p_dvd_lucasU_two_mul_and_lucasV_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#p-dvd-lucas-u-two-mul-and-lucas-v-of-odd).
 
 ## Lucas sequences under negation of the first parameter
 
@@ -56,7 +56,7 @@ $U_n(-P, Q) = (-1)^{n+1} U_n(P, Q)$ and $V_n(-P, Q) = (-1)^n V_n(P, Q)$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Proposition 2.3 (vii), (viii).
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_neg_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-lucas-v-neg-p).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_neg_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-lucas-v-neg-p).
 
 ## Shift congruence for the Lucas recurrence
 
@@ -69,7 +69,7 @@ $m \mid U_t$ and $\gcd(m, Q) = 1$, then $W_{n+t} \equiv U_{t+1} W_n \pmod{m}$ fo
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.5.
 
-Stated but not proved: `MetaMathlibExt.lucas_recurrence_add_modEq_of_dvd_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-recurrence-add-mod-eq-of-dvd-lucas).
+Stated but not proved: `MetaMathlibExt.lucas_recurrence_add_modEq_of_dvd_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-recurrence-add-mod-eq-of-dvd-lucas).
 
 ## When $p^{i+1}$ divides $U_{2n}$, for a prime power $p^i$ exactly dividing $P$
 
@@ -82,7 +82,7 @@ integer $n$, $p^{i+1} \mid U_{2n}$ if and only if $p \mid n$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.6, first claim.
 
-Stated but not proved: `MetaMathlibExt.prime_pow_succ_dvd_lucasU_two_mul_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#prime-pow-succ-dvd-lucas-u-two-mul-iff).
+Stated but not proved: `MetaMathlibExt.prime_pow_succ_dvd_lucasU_two_mul_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#prime-pow-succ-dvd-lucas-u-two-mul-iff).
 
 ## Coprimality of $U_{2n}/P$ and $P$
 
@@ -94,7 +94,7 @@ integer with $\gcd(n, P) = 1$, then $\gcd(U_{2n}/P, P) = 1$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.6, "in particular" claim.
 
-Stated but not proved: `MetaMathlibExt.gcd_lucasU_two_mul_div_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#gcd-lucas-u-two-mul-div-p-eq-one).
+Stated but not proved: `MetaMathlibExt.gcd_lucasU_two_mul_div_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#gcd-lucas-u-two-mul-div-p-eq-one).
 
 ## Lucas sequences modulo 2
 
@@ -113,7 +113,7 @@ modulo $2$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.7.
 
-Stated but not proved: `MetaMathlibExt.lucasU_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-mod-two).
+Stated but not proved: `MetaMathlibExt.lucasU_mod_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-mod-two).
 
 ## Lucas sequences modulo 3
 
@@ -134,7 +134,7 @@ positive indices these equivalences give.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.8.
 
-Stated but not proved: `MetaMathlibExt.lucasU_mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-mod-three).
+Stated but not proved: `MetaMathlibExt.lucasU_mod_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-mod-three).
 
 ## Growth and positivity of Lucas sequences with positive discriminant
 
@@ -151,7 +151,7 @@ nondegenerate (Theorem 2.1 of the source).
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.9.
 
-Stated but not proved: `MetaMathlibExt.lucas_abs_strictMono_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-abs-strict-mono-of-discr-pos).
+Stated but not proved: `MetaMathlibExt.lucas_abs_strictMono_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-abs-strict-mono-of-discr-pos).
 
 ## $U_n$ divides none of $U_1, \dots, U_{n-1}$
 
@@ -163,7 +163,7 @@ $n \ge 3$ and every $k$ with $0 < k < n$, $U_n$ does not divide $U_k$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 2.10.
 
-Stated but not proved: `MetaMathlibExt.not_lucasU_dvd_lucasU_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#not-lucas-u-dvd-lucas-u-of-lt).
+Stated but not proved: `MetaMathlibExt.not_lucasU_dvd_lucasU_of_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#not-lucas-u-dvd-lucas-u-of-lt).
 
 ## Common divisors of $P$ and the discriminant
 
@@ -175,7 +175,7 @@ dividing $D$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 4.9.
 
-Stated but not proved: `MetaMathlibExt.gcd_p_discr_dvd_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#gcd-p-discr-dvd-four).
+Stated but not proved: `MetaMathlibExt.gcd_p_discr_dvd_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#gcd-p-discr-dvd-four).
 
 ## Parity of $U_m$ and $U_{2m}/P$ and their coprimality to $D$
 
@@ -188,7 +188,7 @@ $P$ and $Q$ are both odd. Then $U_m$ and $U_{2m}/P$ are odd, and each of them is
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 4.10.
 
-Stated but not proved: `MetaMathlibExt.odd_lucasU_coprime_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#odd-lucas-u-coprime-discr).
+Stated but not proved: `MetaMathlibExt.odd_lucasU_coprime_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#odd-lucas-u-coprime-discr).
 
 ## Composite terms of Lucas sequences with positive discriminant
 
@@ -205,7 +205,7 @@ $U_{2m}/P$ is an integer because $P \mid U_{2m}$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 4.2.
 
-Stated but not proved: `MetaMathlibExt.lucasU_composite_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-composite-of-discr-pos).
+Stated but not proved: `MetaMathlibExt.lucasU_composite_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-composite-of-discr-pos).
 
 ## Pseudoprime candidates from a Lucas sequence
 
@@ -225,7 +225,7 @@ $U_{2m}/P$ is an integer because $P \mid U_{2m}$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 6.1.
 
-Stated but not proved: `MetaMathlibExt.lucasU_pseudoprime_candidates_jacobiSym` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-pseudoprime-candidates-jacobi-sy).
+Stated but not proved: `MetaMathlibExt.lucasU_pseudoprime_candidates_jacobiSym` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-pseudoprime-candidates-jacobi-sy).
 
 ## Classification of degenerate Lucas sequences
 
@@ -246,7 +246,7 @@ $n \ge 1$; or there is a nonzero integer $M$ such that one of the following hold
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.lucas_degenerate_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-degenerate-cases).
+Stated but not proved: `MetaMathlibExt.lucas_degenerate_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-degenerate-cases).
 
 ## Rank of appearance in a Lucas sequence
 
@@ -263,7 +263,7 @@ $\gcd(0, Q) = |Q| = 1$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2.
 
-Formalized by `MetaMathlibExt.lucasRankOfAppearance`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance).
+Formalized by `MetaMathlibExt.lucasRankOfAppearance`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance).
 
 ## Rank of appearance is at most any positive index of divisibility
 
@@ -275,7 +275,7 @@ appearance of a natural number $m$ in $U$. If $r > 0$ and $m \mid U_r$, then $\r
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of `ρ` as a least index).
 
-Formalized by `MetaMathlibExt.lucasRankOfAppearance_le_of_dvd`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-le-of-dvd).
+Formalized by `MetaMathlibExt.lucasRankOfAppearance_le_of_dvd`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-le-of-dvd).
 
 ## The rank of appearance in a Lucas sequence is attained
 
@@ -290,7 +290,7 @@ $\rho(m)$ the least such index.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of `ρ` as a least index).
 
-Formalized by `MetaMathlibExt.lucasRankOfAppearance_spec`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-spec).
+Formalized by `MetaMathlibExt.lucasRankOfAppearance_spec`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-spec).
 
 ## Rank of appearance of $1$
 
@@ -301,7 +301,7 @@ appearance of $1$ in the Lucas sequence $U(P, Q)$ is $1$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Section 2 (definition of `ρ`).
 
-Formalized by `MetaMathlibExt.lucasRankOfAppearance_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-one).
+Formalized by `MetaMathlibExt.lucasRankOfAppearance_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-one).
 
 ## Index of the Lucas pseudoprime congruences
 
@@ -313,7 +313,7 @@ symbol, replaced by $0$ when this difference is negative. For $N > 1$ the differ
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, congruences (3.1), (3.4).
 
-Formalized by `MetaMathlibExt.lucasPseudoprimeIndex`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-pseudoprime-index).
+Formalized by `MetaMathlibExt.lucasPseudoprimeIndex`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-pseudoprime-index).
 
 ## Lucas pseudoprimes
 
@@ -326,7 +326,7 @@ $U_{N - (D/N)}$, where $(D/N)$ is the Jacobi symbol.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.1.
 
-Formalized by `MetaMathlibExt.IsLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime).
+Formalized by `MetaMathlibExt.IsLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime).
 
 ## Lucas pseudoprimes of the second kind
 
@@ -339,7 +339,7 @@ $\gcd(N, QD) = 1$ and $U_N \equiv (D/N) \pmod{N}$, where $(D/N)$ is the Jacobi s
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.2.
 
-Formalized by `MetaMathlibExt.IsLucasPseudoprimeSecondKind`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-second-kind).
+Formalized by `MetaMathlibExt.IsLucasPseudoprimeSecondKind`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-second-kind).
 
 ## Dickson pseudoprimes
 
@@ -352,7 +352,7 @@ $\gcd(N, QD) = 1$, and $V_N \equiv P \pmod N$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.3.
 
-Formalized by `MetaMathlibExt.IsDicksonPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-dickson-pseudoprime).
+Formalized by `MetaMathlibExt.IsDicksonPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-dickson-pseudoprime).
 
 ## Dickson pseudoprimes of the second kind
 
@@ -366,7 +366,7 @@ $V_{N - (D/N)} \equiv 2Q^{(1 - (D/N))/2} \pmod N$, where $(D/N)$ is the Jacobi s
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.4.
 
-Formalized by `MetaMathlibExt.IsDicksonPseudoprimeSecondKind`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-dickson-pseudoprime-second-kind).
+Formalized by `MetaMathlibExt.IsDicksonPseudoprimeSecondKind`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-dickson-pseudoprime-second-kind).
 
 ## Frobenius pseudoprime for Lucas parameters
 
@@ -386,7 +386,7 @@ rings of polynomials.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.5.
 
-Formalized by `MetaMathlibExt.IsLucasFrobeniusPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime).
+Formalized by `MetaMathlibExt.IsLucasFrobeniusPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 354](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L354). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime).
 
 ## Euler pseudoprime
 
@@ -401,7 +401,7 @@ example $Q = -1$ in Remark 3.8); here $a$ is any integer.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.7.
 
-Formalized by `MetaMathlibExt.IsEulerPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-pseudoprime).
+Formalized by `MetaMathlibExt.IsEulerPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-pseudoprime).
 
 ## Euler–Lucas pseudoprime
 
@@ -415,7 +415,7 @@ $(Q/N)$ equals $1$, and $N \mid V_{(N-\varepsilon)/2}$ if $(Q/N) = -1$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.9.
 
-Formalized by `MetaMathlibExt.IsEulerLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime).
+Formalized by `MetaMathlibExt.IsEulerLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 373](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L373). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime).
 
 ## Strong Lucas pseudoprimes
 
@@ -429,7 +429,7 @@ $N \mid V_{2^r d}$ for some $r$ with $0 \le r < s$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.10.
 
-Formalized by `MetaMathlibExt.IsStrongLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime).
+Formalized by `MetaMathlibExt.IsStrongLucasPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime).
 
 ## Super pseudoprime
 
@@ -445,7 +445,7 @@ parameters $(P, Q)$ gives the super Lucas, super strong Lucas and super Frobeniu
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.13.
 
-Formalized by `MetaMathlibExt.IsSuperPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime).
+Formalized by `MetaMathlibExt.IsSuperPseudoprime`, a definition declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime).
 
 ## $9$ is a Lucas pseudoprime for $(P, Q) = (1, 5)$
 
@@ -459,7 +459,7 @@ divides $U_8 = -279$, where $U_n$ is the Lucas sequence of $(1, 5)$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.1 (example).
 
-Formalized by `MetaMathlibExt.isLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-one-five-nine).
+Formalized by `MetaMathlibExt.isLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-one-five-nine).
 
 ## $9$ is a strong Lucas pseudoprime for $(P, Q) = (1, 5)$
 
@@ -473,7 +473,7 @@ $9$ divides $V_2 = -9$, where $V_n$ is the companion Lucas sequence of $(1, 5)$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.10 (example).
 
-Formalized by `MetaMathlibExt.isStrongLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-one-five-nin).
+Formalized by `MetaMathlibExt.isStrongLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 413](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L413). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-one-five-nin).
 
 ## 9 is an Euler–Lucas pseudoprime for P = 1, Q = 5
 
@@ -486,7 +486,7 @@ Here $D = P^2 - 4Q = -19$, the Jacobi symbols $(D/9)$ and $(5/9)$ both equal $1$
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.9 (example).
 
-Formalized by `MetaMathlibExt.isEulerLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime-one-five-nine).
+Formalized by `MetaMathlibExt.isEulerLucasPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime-one-five-nine).
 
 ## 9 is a Frobenius pseudoprime for P = 4, Q = -1
 
@@ -497,7 +497,7 @@ $P = 4$ and $Q = -1$, so that $D = P^2 - 4Q = 20$, the number $9$ is a Frobenius
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.5 (example).
 
-Formalized by `MetaMathlibExt.isLucasFrobeniusPseudoprime_four_neg_one_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-four-neg).
+Formalized by `MetaMathlibExt.isLucasFrobeniusPseudoprime_four_neg_one_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 439](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L439). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-four-neg).
 
 ## 561 is an Euler pseudoprime to the base 2
 
@@ -508,7 +508,7 @@ is an Euler pseudoprime to the base $2$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.7 (example).
 
-Formalized by `MetaMathlibExt.isEulerPseudoprime_two_561`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-pseudoprime-two-561).
+Formalized by `MetaMathlibExt.isEulerPseudoprime_two_561`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-pseudoprime-two-561).
 
 ## $9$ is a super Lucas pseudoprime for $(P, Q) = (1, 5)$
 
@@ -520,7 +520,7 @@ $9$, a Lucas pseudoprime with these parameters.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Definition 3.13 (example).
 
-Formalized by `MetaMathlibExt.isSuperPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-one-five-nine).
+Formalized by `MetaMathlibExt.isSuperPseudoprime_one_five_nine`, a theorem declared in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-one-five-nine).
 
 ## Properties of the rank of appearance in a Lucas sequence
 
@@ -548,7 +548,7 @@ $\rho(8) = 6 \ne 12$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 2.4.
 
-Stated but not proved: `MetaMathlibExt.lucasRankOfAppearance_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-properties).
+Stated but not proved: `MetaMathlibExt.lucasRankOfAppearance_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-properties).
 
 ## Strong Lucas pseudoprimes are Euler–Lucas pseudoprimes
 
@@ -560,7 +560,7 @@ pseudoprime with parameters $P$ and $Q$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.12.
 
-Stated but not proved: `MetaMathlibExt.isEulerLucasPseudoprime_of_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime-of-is-strong).
+Stated but not proved: `MetaMathlibExt.isEulerLucasPseudoprime_of_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 520](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L520). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-euler-lucas-pseudoprime-of-is-strong).
 
 ## Strong Lucas pseudoprimes via the $2$-adic valuation of ranks
 
@@ -580,7 +580,7 @@ $\rho(p_i)$, as in Theorems 3.16 and 3.17.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.14.
 
-Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_iff_padicValNat_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-iff-padic-va).
+Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_iff_padicValNat_two_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-iff-padic-va).
 
 ## Lucas pseudoprimes of odd rank are strong
 
@@ -593,7 +593,7 @@ then $N$ is a strong Lucas pseudoprime with parameters $P, Q$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 3.15.
 
-Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_of_odd_lucasRankOfAppearance` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-of-odd-lucas).
+Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_of_odd_lucasRankOfAppearance` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-of-odd-lucas).
 
 ## Rank of appearance and super Lucas pseudoprimes
 
@@ -610,7 +610,7 @@ $p \equiv (D/p) \pmod h$ for every prime $p \mid N$, where $(D/p)$ is the Jacobi
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.16.
 
-Stated but not proved: `MetaMathlibExt.lucasRankOfAppearance_eq_lcm_and_isSuperPseudoprime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-eq-lcm-and-is-s).
+Stated but not proved: `MetaMathlibExt.lucasRankOfAppearance_eq_lcm_and_isSuperPseudoprime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-rank-of-appearance-eq-lcm-and-is-s).
 
 ## Super strong Lucas pseudoprimes from equal ranks of appearance
 
@@ -626,7 +626,7 @@ $(P, Q)$, and if $Q = \pm 1$ it is also a super Frobenius pseudoprime with param
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.17.
 
-Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_of_lucasRankOfAppearance_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-of-lucas-rank-of-ap).
+Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_of_lucasRankOfAppearance_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 577](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-of-lucas-rank-of-ap).
 
 ## From Euler–Lucas to Frobenius pseudoprimes
 
@@ -641,7 +641,7 @@ The base $Q$ is any nonzero integer; the source's Definition 3.7 is stated for p
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.18.
 
-Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_of_isEulerLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 593](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L593). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-of-is-eul).
+Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_of_isEulerLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 593](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L593). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-of-is-eul).
 
 ## From strong Lucas to Frobenius pseudoprimes when Q = ±1
 
@@ -654,7 +654,7 @@ pseudoprime with parameters $P, Q$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.19.
 
-Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_of_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-of-is-str).
+Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_of_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-of-is-str).
 
 ## Carmichael's primitive divisor theorem
 
@@ -667,7 +667,7 @@ a primitive prime divisor: a prime $p$ that divides $U_n$ but divides no $U_s$ w
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.exists_isPrimitivePrimeDivisor_lucasU_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#exists-is-primitive-prime-divisor-lucas).
+Stated but not proved: `MetaMathlibExt.exists_isPrimitivePrimeDivisor_lucasU_of_discr_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#exists-is-primitive-prime-divisor-lucas).
 
 ## Bilu–Hanrot–Voutier theorem for Lucas sequences
 
@@ -681,7 +681,7 @@ $1 \le s < n$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 4.3.
 
-Stated but not proved: `MetaMathlibExt.exists_isPrimitivePrimeDivisor_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#exists-is-primitive-prime-divisor-lucas-2).
+Stated but not proved: `MetaMathlibExt.exists_isPrimitivePrimeDivisor_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#exists-is-primitive-prime-divisor-lucas-2).
 
 ## Rotkiewicz: strong Lucas and Frobenius pseudoprimes with two prime factors
 
@@ -694,7 +694,7 @@ pseudoprimes and Frobenius pseudoprimes with parameters $P$ and $Q$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 4.5.
 
-Stated but not proved: `MetaMathlibExt.infinite_strong_frobenius_pseudoprimes_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-strong-frobenius-pseudoprimes-t).
+Stated but not proved: `MetaMathlibExt.infinite_strong_frobenius_pseudoprimes_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-strong-frobenius-pseudoprimes-t).
 
 ## Rotkiewicz: Frobenius pseudoprimes in arithmetic progressions
 
@@ -707,7 +707,7 @@ pseudoprimes with parameters $P$ and $Q$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 4.6.
 
-Stated but not proved: `MetaMathlibExt.infinite_frobenius_pseudoprimes_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-frobenius-pseudoprimes-mod-eq).
+Stated but not proved: `MetaMathlibExt.infinite_frobenius_pseudoprimes_modEq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-frobenius-pseudoprimes-mod-eq).
 
 ## Lucas-type pseudoprime properties are unchanged by $P \mapsto -P$
 
@@ -721,7 +721,7 @@ kind, Dickson pseudoprimes, Dickson pseudoprimes of the second kind, and Frobeni
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 4.7.
 
-Stated but not proved: `MetaMathlibExt.pseudoprime_iff_neg_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#pseudoprime-iff-neg-p).
+Stated but not proved: `MetaMathlibExt.pseudoprime_iff_neg_p` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 657](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L657). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#pseudoprime-iff-neg-p).
 
 ## Composite terms $|U_p|$ are super strong Lucas pseudoprimes
 
@@ -735,7 +735,7 @@ $P, Q$, and if $Q = \pm 1$ it is also a super Frobenius pseudoprime with paramet
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1, first two sentences.
 
-Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-pri).
+Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-pri).
 
 ## Compositeness criteria for $|U_p|$
 
@@ -764,7 +764,7 @@ with $2p + 1$ in each; the third claim above is that bound.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (i)–(iii).
 
-Stated but not proved: `MetaMathlibExt.natAbs_lucasU_prime_composite_criteria` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#nat-abs-lucas-u-prime-composite-criteria).
+Stated but not proved: `MetaMathlibExt.natAbs_lucasU_prime_composite_criteria` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#nat-abs-lucas-u-prime-composite-criteria).
 
 ## Super strong Lucas pseudoprimes from composed Lucas pairs
 
@@ -790,7 +790,7 @@ $D = 1300$ and $5 \mid U_5(\pm 36, -1)$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (iv).
 
-Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_prime_of_lucasV` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-pri-2).
+Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_prime_of_lucasV` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 729](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L729). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-pri-2).
 
 ## Super Lucas pseudoprimes of the form $|U_{2p}/P|$
 
@@ -809,7 +809,7 @@ $11$, $31$, $3739$ and $181$ are prime.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.3.
 
-Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_two_mul_prime_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-two).
+Stated but not proved: `MetaMathlibExt.isSuperPseudoprime_natAbs_lucasU_two_mul_prime_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 755](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L755). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-super-pseudoprime-nat-abs-lucas-u-two).
 
 ## Strong Lucas pseudoprimes among the terms $|U_m|$
 
@@ -827,7 +827,7 @@ The source states the result for $N_1 = U_m$, which is positive by its Lemma 6.1
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.2.
 
-Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_natAbs_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 778](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L778). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-nat-abs-luca).
+Stated but not proved: `MetaMathlibExt.isStrongLucasPseudoprime_natAbs_lucasU` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 778](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L778). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-strong-lucas-pseudoprime-nat-abs-luca).
 
 ## $|U_m|$ is a strong Lucas and Frobenius pseudoprime when $Q = \pm 1$
 
@@ -844,7 +844,7 @@ pseudoprime for $(P, Q)$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.3.
 
-Stated but not proved: `MetaMathlibExt.lucasU_strong_frobenius_of_q_eq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 796](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-strong-frobenius-of-q-eq-one-or).
+Stated but not proved: `MetaMathlibExt.lucasU_strong_frobenius_of_q_eq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 796](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L796). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-strong-frobenius-of-q-eq-one-or).
 
 ## Lucas pseudoprimes from even-index Lucas terms divided by P
 
@@ -863,7 +863,7 @@ positive, so $N_2 = U_{2m}/P$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.5.
 
-Stated but not proved: `MetaMathlibExt.isLucasPseudoprime_natAbs_lucasU_two_mul_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-nat-abs-lucas-u-two).
+Stated but not proved: `MetaMathlibExt.isLucasPseudoprime_natAbs_lucasU_two_mul_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 815](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L815). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-pseudoprime-nat-abs-lucas-u-two).
 
 ## $|U_{2m}/P|$ is a Lucas pseudoprime when $Q = \pm 1$
 
@@ -878,7 +878,7 @@ is odd, or $P$ is even and $Q = -1$, then $|N_2|$ is a Lucas pseudoprime for $(P
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.6.
 
-Stated but not proved: `MetaMathlibExt.lucasU_two_mul_div_isLucasPseudoprime_of_q_eq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 832](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L832). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-div-is-lucas-pseudoprime).
+Stated but not proved: `MetaMathlibExt.lucasU_two_mul_div_isLucasPseudoprime_of_q_eq_one_or_neg_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 832](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L832). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-div-is-lucas-pseudoprime).
 
 ## Frobenius criterion for Lucas pseudoprimes that are not strong
 
@@ -895,7 +895,7 @@ with parameters $P, Q$ if and only if $N \equiv (D/N) \pmod{2^{k+1}}$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.9.
 
-Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_iff_of_not_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-iff-of-no).
+Stated but not proved: `MetaMathlibExt.isLucasFrobeniusPseudoprime_iff_of_not_isStrongLucasPseudoprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#is-lucas-frobenius-pseudoprime-iff-of-no).
 
 ## When $|U_{2m}/P|$ is a Frobenius pseudoprime, for $Q = \pm 1$
 
@@ -915,7 +915,7 @@ and $Q = -1$.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.10.
 
-Stated but not proved: `MetaMathlibExt.lucasU_two_mul_div_isLucasFrobeniusPseudoprime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-div-is-lucas-frobenius-p).
+Stated but not proved: `MetaMathlibExt.lucasU_two_mul_div_isLucasFrobeniusPseudoprime_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 867](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L867). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#lucas-u-two-mul-div-is-lucas-frobenius-p).
 
 ## Frobenius and non-Frobenius pseudoprimes of the form $U_{2m}/P$
 
@@ -934,7 +934,7 @@ pseudoprime.
 
 - Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.11.
 
-Stated but not proved: `MetaMathlibExt.infinite_lucasU_two_mul_div_frobenius_and_not` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-lucas-u-two-mul-div-frobenius-a).
+Stated but not proved: `MetaMathlibExt.infinite_lucasU_two_mul_div_frobenius_and_not` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasSequenceDivisibilityWanted.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html#infinite-lucas-u-two-mul-div-frobenius-a).
 
 ## Depends on
 
@@ -943,4 +943,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Divisibility properties of Lucas sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/divisibility-properties-of-lucas-sequences)

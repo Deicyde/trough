@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.17 Algebraic stacks
 
-Section 98.17 of the Stacks Project, [Tag 07Y3](https://stacks.math.columbia.edu/tag/07Y3). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.17 of the Stacks Project, [Tag 07Y3](https://stacks.math.columbia.edu/tag/07Y3). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07Y4, a lemma
 
 [Tag 07Y4](https://stacks.math.columbia.edu/tag/07Y4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ArtinCriterion/Algebraicity.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ArtinCriterion/Algebraicity.lean#L429).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_artinAxioms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ArtinCriterion/Algebraicity.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ArtinCriterion/Algebraicity.lean#L429).
 
 > **Stacks 07Y4 (Artin's criterion).** Let `S` be a locally Noetherian scheme and let `𝒳` be a
 > category fibred in groupoids over the big fppf site of `S`. Assume that
@@ -69,7 +69,7 @@ public theorem isAlgebraicStack_of_artinAxioms [IsLocallyNoetherian S]
 
 [Tag 07Y5](https://stacks.math.columbia.edu/tag/07Y5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_artinAxioms_of_secondDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ArtinAxiomsSecondDiagonal.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ArtinAxiomsSecondDiagonal.lean#L396).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_artinAxioms_of_secondDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ArtinAxiomsSecondDiagonal.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ArtinAxiomsSecondDiagonal.lean#L396).
 
 > **Stacks 07Y5 (Artin's axioms, second diagonal form).** Let `S` be a locally Noetherian
 > scheme and `𝒳` a category fibred in groupoids over the big fppf site of `S`. Assume that
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.17, Tag 07Y3](https://stacks.math.columbia.edu/tag/07Y3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Maximal solutions and global existence
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html).
 
 ## Gluing solutions of an ODE
 
@@ -19,7 +19,7 @@ $y'(t) = v(t, y(t))$ for every $t \in J$, with $x = y$ on $I \cap J$. Then there
 $z : \mathbb{R} \to E$ with $z = x$ on $I$, $z = y$ on $J$ and $z'(t) = v(t, z(t))$ for every
 $t \in I \cup J$.
 
-Formalized by `hasDerivAt_piecewise_union_of_eqOn`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/MaximalSolution.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#has-deriv-at-piecewise-union-of-eq-on).
+Formalized by `hasDerivAt_piecewise_union_of_eqOn`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/MaximalSolution.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#has-deriv-at-piecewise-union-of-eq-on).
 
 ## Global existence and uniqueness for globally Lipschitz ODEs
 
@@ -38,7 +38,7 @@ one.
 
 - G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.2; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.
 
-Formalized by `MathlibExt.Analysis.ODE.MaximalSolutionWanted.ode_global_exists_of_global_lipschitz`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/MaximalSolution.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#ode-global-exists-of-global-lipschitz).
+Formalized by `MathlibExt.Analysis.ODE.MaximalSolutionWanted.ode_global_exists_of_global_lipschitz`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/MaximalSolution.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#ode-global-exists-of-global-lipschitz).
 
 ## Solutions of locally Lipschitz ODEs that leave every compact set
 
@@ -61,7 +61,7 @@ statements of Corollaries 2.15--2.16.
 
 - G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.4.
 
-Formalized by `MathlibExt.Analysis.ODE.MaximalSolutionWanted.ode_maximal_solution_exit_compact`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/MaximalSolution.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#ode-maximal-solution-exit-compact).
+Formalized by `MathlibExt.Analysis.ODE.MaximalSolutionWanted.ode_maximal_solution_exit_compact`, a theorem declared in [MathlibExt/Analysis/ODE/MaximalSolution.lean, line 744](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/MaximalSolution.lean#L744). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html#ode-maximal-solution-exit-compact).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Maximal solutions and global existence](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/ordinary-differential-equations/maximal-solutions-and-global-existence)

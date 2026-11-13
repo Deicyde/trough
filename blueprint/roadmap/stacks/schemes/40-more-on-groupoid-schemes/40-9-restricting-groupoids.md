@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.9 Restricting groupoids
 
-Section 40.9 of the Stacks Project, [Tag 04MM](https://stacks.math.columbia.edu/tag/04MM). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 40.9 of the Stacks Project, [Tag 04MM](https://stacks.math.columbia.edu/tag/04MM). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04MN, an equation
 
 [Tag 04MN](https://stacks.math.columbia.edu/tag/04MN) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “R' is the iterated fibre product of the displayed diagram and s', t' are its”.
+**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “R' is the iterated fibre product of the displayed diagram and s', t' are its”.
 
 > Restriction of a groupoid scheme along a morphism to its scheme of objects.
 
@@ -27,7 +27,7 @@ noncomputable def restrict {S : Scheme.{u}} (G : Stacks.Groupoids.GroupoidScheme
 
 [Tag 04MP](https://stacks.math.columbia.edu/tag/04MP) in the Stacks Project.
 
-**`AlgebraicGeometry.restrictionSource_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L173). The attribute's comment: “part (1), source map”.
+**`AlgebraicGeometry.restrictionSource_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L173). The attribute's comment: “part (1), source map”.
 
 > The source map of a restriction is locally of finite type if the original source map
 > and the restricting morphism are locally of finite type.
@@ -41,7 +41,7 @@ public theorem restrictionSource_locallyOfFiniteType {S : Scheme.{u}}
     LocallyOfFiniteType (GroupoidScheme.restrict G g').groupoid.source.left
 ```
 
-**`AlgebraicGeometry.restrictionTarget_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L185). The attribute's comment: “part (1), target map”.
+**`AlgebraicGeometry.restrictionTarget_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L185). The attribute's comment: “part (1), target map”.
 
 > The target map of a restriction is locally of finite type if the original target map
 > and the restricting morphism are locally of finite type.
@@ -55,7 +55,7 @@ public theorem restrictionTarget_locallyOfFiniteType {S : Scheme.{u}}
     LocallyOfFiniteType (GroupoidScheme.restrict G g').groupoid.target.left
 ```
 
-**`AlgebraicGeometry.restrictionSource_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L197). The attribute's comment: “part (2), source map”.
+**`AlgebraicGeometry.restrictionSource_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L197). The attribute's comment: “part (2), source map”.
 
 > The source map of a restriction is locally of finite presentation if the original source map
 > and the restricting morphism are locally of finite presentation.
@@ -70,7 +70,7 @@ public theorem restrictionSource_locallyOfFinitePresentation {S : Scheme.{u}}
       (GroupoidScheme.restrict G g').groupoid.source.left
 ```
 
-**`AlgebraicGeometry.restrictionTarget_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L210). The attribute's comment: “part (2), target map”.
+**`AlgebraicGeometry.restrictionTarget_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L210). The attribute's comment: “part (2), target map”.
 
 > The target map of a restriction is locally of finite presentation if the original target map
 > and the restricting morphism are locally of finite presentation.
@@ -85,7 +85,7 @@ public theorem restrictionTarget_locallyOfFinitePresentation {S : Scheme.{u}}
       (GroupoidScheme.restrict G g').groupoid.target.left
 ```
 
-**`AlgebraicGeometry.restrictionSource_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L223). The attribute's comment: “part (3), source map”.
+**`AlgebraicGeometry.restrictionSource_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L223). The attribute's comment: “part (3), source map”.
 
 > The source map of a restriction is flat if the original source map and the restricting
 > morphism are flat.
@@ -98,7 +98,7 @@ public theorem restrictionSource_flat {S : Scheme.{u}} (G : GroupoidScheme S)
     Flat (GroupoidScheme.restrict G g').groupoid.source.left
 ```
 
-**`AlgebraicGeometry.restrictionTarget_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L234). The attribute's comment: “part (3), target map”.
+**`AlgebraicGeometry.restrictionTarget_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L234). The attribute's comment: “part (3), target map”.
 
 > The target map of a restriction is flat if the original target map and the restricting
 > morphism are flat.
@@ -115,7 +115,7 @@ public theorem restrictionTarget_flat {S : Scheme.{u}} (G : GroupoidScheme S)
 
 [Tag 04MV](https://stacks.math.columbia.edu/tag/04MV) in the Stacks Project.
 
-**`AlgebraicGeometry.restriction_source_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L149). The attribute's comment: “source map”.
+**`AlgebraicGeometry.restriction_source_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L149). The attribute's comment: “source map”.
 
 > The source map of a restriction has every morphism property which is stable under base
 > change and holds for the source map after pulling back the target.
@@ -128,7 +128,7 @@ public theorem restriction_source_mem {S : Scheme.{u}} (G : GroupoidScheme S) {U
     P R.groupoid.source.left
 ```
 
-**`AlgebraicGeometry.restriction_target_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L159). The attribute's comment: “target map”.
+**`AlgebraicGeometry.restriction_target_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/RestrictionProperties.lean#L159). The attribute's comment: “target map”.
 
 > The target map of a restriction has every morphism property which is stable under base
 > change and holds for the source map after pulling back the target.
@@ -145,7 +145,7 @@ public theorem restriction_target_mem {S : Scheme.{u}} (G : GroupoidScheme S) {U
 
 [Tag 04MW](https://stacks.math.columbia.edu/tag/04MW) in the Stacks Project.
 
-**`AlgebraicGeometry.doubleRestrictionDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestriction.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestriction.lean#L326).
+**`AlgebraicGeometry.doubleRestrictionDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestriction.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestriction.lean#L326).
 
 > **Stacks Project, Tag 04MW.** Restricting a groupoid scheme successively
 > along `g` and `g'` gives a comparison diagram whose two squares are cartesian;
@@ -162,7 +162,7 @@ public noncomputable def doubleRestrictionDiagram {S : Scheme.{u}} (G : Groupoid
 
 [Tag 04MX](https://stacks.math.columbia.edu/tag/04MX) in the Stacks Project.
 
-**`AlgebraicGeometry.restrictionSource_mem_of_composite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L64). The attribute's comment: “pullback\_to\_second\_restriction”.
+**`AlgebraicGeometry.restrictionSource_mem_of_composite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L64). The attribute's comment: “pullback\_to\_second\_restriction”.
 
 > A property of the source map over a composite restriction descends to the
 > source map over the second restriction when the original target map covers.
@@ -178,7 +178,7 @@ public theorem restrictionSource_mem_of_composite {S : Scheme.{u}} (G : Groupoid
     P ((pullback.snd g' (restrictionTarget G g) ≫ restrictionSource G g).left)
 ```
 
-**`AlgebraicGeometry.descent_to_open_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L99). The attribute's comment: “descent\_to\_open\_image”.
+**`AlgebraicGeometry.descent_to_open_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L99). The attribute's comment: “descent\_to\_open\_image”.
 
 > A morphism property local on the target descends from the source map of a
 > restriction to the source map after a further restriction, viewed over the
@@ -206,4 +206,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.9, Tag 04MM](https://stacks.math.columbia.edu/tag/04MM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Interval tree
 
-84 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html).
+84 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html).
 
 ## Interval Tree
 
@@ -19,21 +19,21 @@ the closed interval from the low to the high endpoint. The structure itself impo
 endpoints; the public update operations accept an interval only when its low endpoint is at most
 its high endpoint.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#interval).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#interval).
 
 ## Valid interval
 
 A closed interval with integer endpoints $a$ (low) and $b$ (high) is
 valid when its low endpoint is at most its high endpoint, $a \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.Valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.Valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid).
 
 ## Boolean interval validity test
 
 For an interval $[a, b]$ with integer endpoints, the
 Boolean validity test returns true exactly when $a \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-2).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.valid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-2).
 
 ## Overlapping closed intervals
 
@@ -41,7 +41,7 @@ An interval $I$ with low endpoint $a$ and high endpoint $b$
 overlaps an interval $J$ with low endpoint $c$ and high endpoint $d$ when $a \le d$ and $c \le b$;
 in particular, intervals that share only an endpoint overlap.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.Overlaps`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.Overlaps`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps).
 
 ## Overlap test for closed intervals
 
@@ -50,7 +50,7 @@ endpoint $b$ and an interval $J$ with low endpoint $c$ and high endpoint $d$, th
 $I$ against $J$ returns true exactly when $a \le d$ and $c \le b$; it compares $a$ with $d$ first
 and returns false without the second comparison when $a > d$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlaps`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-2).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlaps`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-2).
 
 ## Overlap test with comparison count
 
@@ -60,7 +60,7 @@ overlap test of $I$ against $J$ returns the pair (false, $1$) when $a > d$, the 
 when $a \le d$ and $c > b$, and the pair (true, $2$) when $a \le d$ and $c \le b$; the number
 is the count of endpoint comparisons evaluated.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost).
 
 ## The instrumented overlap test returns the plain result
 
@@ -68,7 +68,7 @@ For intervals $I$ and $J$, the
 Boolean component of the instrumented overlap test of $I$ against $J$ equals the overlap test of
 $I$ against $J$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_fst`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost-fst).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_fst`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost-fst).
 
 ## Comparison count of the overlap test
 
@@ -76,7 +76,7 @@ For intervals $I$ and $J$, the instrumented overlap
 test of $I$ against $J$ reports $2$ endpoint comparisons when the low endpoint of $I$ is at most
 the high endpoint of $J$, and $1$ comparison otherwise.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_snd`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost-snd).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Interval.overlapsWithCost_snd`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#overlaps-with-cost-snd).
 
 ## Interval tree entry
 
@@ -86,7 +86,7 @@ natural number, and an interval with integer low and high endpoints.
 Identifiers, rather than endpoints, are meant to be unique among stored entries; this is required
 by the indexed tree's representation invariant, not by the entry itself.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Entry`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#entry).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Entry`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#entry).
 
 ## Search key of an interval entry
 
@@ -94,7 +94,7 @@ The key of an entry is the pair
 $(\ell, i) \in \mathbb{Z} \times \mathbb{N}$, where $\ell$ is the low endpoint of the entry's
 interval and $i$ is the entry's identifier.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Entry.key`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Entry.key`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key).
 
 ## Lexicographic comparison of keys
 
@@ -103,7 +103,7 @@ $\mathbb{Z} \times \mathbb{N}$ (a low endpoint and an occurrence identifier), th
 returns less-than if $a < b$, or if $a = b$ and $i < j$; greater-than if $a > b$, or if $a = b$
 and $i > j$; and equal if $a = b$ and $i = j$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.compareKey`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#compare-key).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.compareKey`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#compare-key).
 
 ## Operation cost counters for interval trees
 
@@ -117,7 +117,7 @@ construction, rebalancing and the rotations read cached heights, sizes and maxim
 nodes; those reads are not counted separately, and maintenance work is reported through the cache
 write, rotation and remaining counters instead.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Cost`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Cost`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cost).
 
 ## Interval tree
 
@@ -126,7 +126,7 @@ an entry, a right subtree and three cached fields: a height and a size (natural 
 maximum high endpoint (an integer). The type imposes no balance or consistency condition on
 these fields; it is the carrier on which the AVL interval-tree operations act.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#tree).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree`, an inductive type declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#tree).
 
 ## Cached maximum of an interval tree
 
@@ -137,7 +137,7 @@ maximum-high-endpoint field.
 It is read in constant time. The tree type itself does not require this field to equal the
 largest high endpoint of an interval in the subtree.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cachedMax?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cached-max).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cachedMax?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cached-max).
 
 ## Maximum with an optional value
 
@@ -145,7 +145,7 @@ For an integer $a$ and an optional integer $v$, the value
 is $a$ when $v$ is absent and $\max(a, v)$ when $v$ is present. It combines a value with an
 optional subtree maximum without using a sentinel value.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.maxWith`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#max-with).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.maxWith`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#max-with).
 
 ## Maximum high endpoint at a node
 
@@ -154,7 +154,7 @@ maximum is the largest of the high endpoint of the interval of $e$, the cached m
 endpoint stored at the root of $L$, and the one stored at the root of $R$, where an empty subtree
 stores no cached maximum and contributes nothing.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.nodeMax`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#node-max).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.nodeMax`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#node-max).
 
 ## Node construction with repaired metadata
 
@@ -167,7 +167,7 @@ nonempty subtrees among $L$ and $R$.
 
 It is the sole ordinary node constructor.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.mkNode`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#mk-node).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.mkNode`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#mk-node).
 
 ## Cache invariant of an interval tree
 
@@ -180,7 +180,7 @@ $h = \max(\operatorname{height} L, \operatorname{height} R) + 1$ and
 $s = \operatorname{size} L + \operatorname{size} R + 1$. Here the height and size of a subtree
 are its stored fields, and the empty tree has height and size $0$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.CacheInvariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.CacheInvariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant).
 
 ## Low-endpoint ordered interval tree
 
@@ -189,7 +189,7 @@ low-endpoint ordered when both of its subtrees are low-endpoint ordered, every i
 left subtree has low endpoint at most the low endpoint of the node's interval, and the node's
 low endpoint is at most the low endpoint of every interval in the right subtree.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.LowOrdered`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#low-ordered).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.LowOrdered`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#low-ordered).
 
 ## Validity invariant of an interval tree
 
@@ -198,7 +198,7 @@ every interval stored in it is valid, that is, its low endpoint is at most its h
 Recursively, the empty tree satisfies it, and a node satisfies it when its left subtree does,
 the interval of its entry is valid, and its right subtree does.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.ValidInvariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.ValidInvariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant).
 
 ## Right rotation
 
@@ -208,7 +208,7 @@ $\langle a, x, \langle b, y, c\rangle\rangle$, where both nodes of the result ge
 recomputed height, size and maximum high endpoint. Every tree not of this shape is returned
 unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateRight`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-right).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateRight`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-right).
 
 ## Left rotation
 
@@ -218,7 +218,7 @@ $\langle\langle a, x, b\rangle, y, c\rangle$, where both nodes of the result get
 recomputed height, size and maximum high endpoint. Every tree not of this shape is returned
 unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateLeft`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-left).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateLeft`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-left).
 
 ## Left-right double rotation
 
@@ -229,7 +229,7 @@ $\langle\langle a, x, b\rangle, y, \langle c, z, d\rangle\rangle$, where all thr
 result get freshly recomputed height, size and maximum high endpoint. Every tree not of this
 shape is returned unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateLeftRight`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-left-right).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateLeftRight`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-left-right).
 
 ## Right-left double rotation
 
@@ -240,7 +240,7 @@ $\langle\langle a, x, b\rangle, y, \langle c, z, d\rangle\rangle$, where all thr
 result get freshly recomputed height, size and maximum high endpoint. Every tree not of this
 shape is returned unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateRightLeft`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-right-left).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rotateRightLeft`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rotate-right-left).
 
 ## AVL rebalancing step with cost
 
@@ -255,7 +255,7 @@ $2$ cache writes and one rotation, when the right child of $R$ is at least as ta
 child of $R$, and otherwise a right-left double rotation, costing $3$ cache writes and two
 rotations. All other cost counters are zero.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rebalanceWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rebalance-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.rebalanceWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#rebalance-with-cost).
 
 ## Keyed insertion with cost
 
@@ -269,7 +269,7 @@ subtree, the node is rebuilt with recomputed metadata and rebalanced, and the co
 the recursive insertion, plus one node visit, one key comparison and one cache write, plus the
 cost of rebalancing.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-key-with-cost).
 
 ## Removing the leftmost entry, with its cost
 
@@ -281,7 +281,7 @@ node over the new left subtree with recomputed height, size and maximum high end
 rebalances that node; it returns $m$, the rebalanced tree, and the cost of the recursive call plus
 one node visit and one cache write plus the cost of rebalancing.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 330](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L330). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost).
 
 ## Keyed erasure with cost
 
@@ -298,7 +298,7 @@ Otherwise the leftmost entry of the right subtree is removed and takes the place
 is rebuilt and rebalanced, and the cost is the removal's cost plus one node visit, one key
 comparison, one cache write and the rebalancing cost.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-key-with-cost).
 
 ## Instrumented overlap search
 
@@ -314,7 +314,7 @@ is nonempty with cached maximum high endpoint $m$, it returns the result of sear
 $c \le m$ and of searching $R$ otherwise, adding one node visit, $k + 1$ endpoint comparisons and
 one cached-maximum read to that search's cost. No other counter is ever incremented.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost).
 
 ## Instrumented search in the empty tree
 
@@ -323,7 +323,7 @@ overlap search of $q$ in the empty interval tree returns no entry, and its cost 
 one node visit and zero for every other counter (key comparisons, endpoint comparisons,
 cached-maximum reads, cache writes, rotations and index operations).
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost-empty).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_empty`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost-empty).
 
 ## Instrumented search in a one-entry tree
 
@@ -336,7 +336,7 @@ comparisons. Otherwise it returns no entry with a cost record of two node visits
 its empty right subtree) and $k$ endpoint comparisons. All other counters are zero in both
 cases.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_singleton`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost-singleton).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.searchWithCost_singleton`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 461](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L461). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-with-cost-singleton).
 
 ## Interval-tree overlap search
 
@@ -344,7 +344,7 @@ The overlap search of a query interval $q$ in an interval
 tree $T$ returns the optional entry produced by the instrumented overlap search of $q$ in $T$,
 discarding its cost record.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search).
 
 ## Linear-scan overlap search
 
@@ -354,7 +354,7 @@ closed intervals, and returns nothing when no entry's interval overlaps $q$.
 
 It is a separate full-traversal oracle used only by specifications and tests.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.oracleSearch`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#oracle-search).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.oracleSearch`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#oracle-search).
 
 ## Completeness of interval-tree search
 
@@ -365,7 +365,7 @@ right subtree at least the node's). If some entry stored in $T$ has an interval 
 query interval $Q$ (each interval's low endpoint is at most the other's high endpoint), then
 searching $T$ for $Q$ returns some entry.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search_complete`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-complete).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search_complete`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-complete).
 
 ## Interval-tree search fails exactly when nothing overlaps
 
@@ -376,7 +376,7 @@ the node's, and those in the right subtree at least the node's). Then searching 
 interval $Q$ returns nothing if and only if no entry stored in $T$ has an interval that overlaps
 $Q$ (each interval's low endpoint is at most the other's high endpoint).
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.search_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 588](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L588). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-eq-none-iff).
 
 ## Executable cache check for interval trees
 
@@ -391,7 +391,7 @@ empty tree has height and size $0$.
 
 It is used only by the executable invariant checker.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-ok).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 606](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L606). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-ok).
 
 ## Key between optional bounds
 
@@ -400,7 +400,7 @@ key $k$ (a pair of an integer and a natural number), this test returns true exac
 bound is absent or strictly below $k$, and the upper bound is absent or strictly above $k$. Keys
 are compared lexicographically: first by the integer, then by the natural number.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyBetween`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-between).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyBetween`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 615](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L615). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-between).
 
 ## Ordered-and-valid check for interval trees
 
@@ -412,7 +412,7 @@ and strictly less than $u$ if $u$ is present, the interval of $e$ has low endpoi
 high endpoint, $L$ is accepted with bounds $\ell$ and $k$, and $R$ is accepted with bounds $k$
 and $u$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.orderedValid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#ordered-valid).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.orderedValid`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 621](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L621). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#ordered-valid).
 
 ## Boolean AVL balance check for interval trees
 
@@ -422,7 +422,7 @@ has height $0$), it returns true exactly when the node's stored height equals
 $\max(h_L, h_R) + 1$, $h_L \le h_R + 1$, $h_R \le h_L + 1$, and the check returns true on both
 subtrees.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balanced`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balanced`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced).
 
 ## AVL balance of an interval tree
 
@@ -432,7 +432,7 @@ of its left and right subtrees (the empty tree has height $0$), the node's store
 $\max(h_L, h_R) + 1$, $h_L \le h_R + 1$, $h_R \le h_L + 1$, and both subtrees are again AVL
 balanced with exact stored heights.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.BalancedProp`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.BalancedProp`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop).
 
 ## Key-ordered interval tree
 
@@ -442,7 +442,7 @@ than the key of the node's entry, and the key of the node's entry is strictly le
 every entry in the right subtree. Keys are compared lexicographically: low endpoint first, then
 identifier.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.KeyOrdered`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.KeyOrdered`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 673](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L673). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered).
 
 ## The executable ordering check implies key ordering
 
@@ -453,7 +453,7 @@ entry $e$ stored in $t$ satisfies $\ell < \operatorname{key}(e)$ when $\ell$ is 
 $\operatorname{key}(e) < u$ when $u$ is present, where $<$ is the lexicographic order on keys
 (low endpoint first, then identifier).
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-of-ordered-valid).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-of-ordered-valid).
 
 ## The executable ordering check implies low-endpoint ordering
 
@@ -464,7 +464,7 @@ low-endpoint ordered, and every entry $e$ stored in $t$ satisfies $\ell < \opera
 when $\ell$ is present and $\operatorname{key}(e) < u$ when $u$ is present, where $<$ is the
 lexicographic order on keys (low endpoint first, then identifier).
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.lowOrdered_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#low-ordered-of-ordered-valid).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.lowOrdered_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#low-ordered-of-ordered-valid).
 
 ## The ordering check implies interval validity
 
@@ -474,7 +474,7 @@ bounds $\ell$ and $u$, which tests that every key lies strictly between its boun
 stored interval passes the Boolean validity test, returns true, then every interval stored in
 $T$ is valid, that is, its low endpoint is at most its high endpoint.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-of-ordered-valid).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_of_orderedValid`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-of-ordered-valid).
 
 ## Removing the minimum preserves the other entries
 
@@ -482,7 +482,7 @@ If removing the leftmost entry of a tree
 $T$ returns an entry $m$, a tree $T'$ and a cost, then the list consisting of $m$ followed by the
 in-order entries of $T'$ is a permutation of the in-order entries of $T$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost-entries-perm).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost-entries-perm).
 
 ## Entries after keyed insertion
 
@@ -491,7 +491,7 @@ and let $x$ be an entry. The in-order list of entries of the tree obtained by in
 by key is a permutation of the list consisting of $x$ followed by those entries of $t$ whose key
 differs from the key of $x$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-key-with-cost-entries-perm).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.insertKeyWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-key-with-cost-entries-perm).
 
 ## Keyed erasure removes exactly the entries with that key
 
@@ -503,14 +503,14 @@ above it), and let $k \in \mathbb{Z} \times \mathbb{N}$ be a key. Then the in-or
 of the tree obtained by erasing $k$ from $T$ is a permutation of the in-order list of entries of $T$
 with every entry of key $k$ removed.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-key-with-cost-entries-perm).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.eraseKeyWithCost_entries_perm`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-key-with-cost-entries-perm).
 
 ## Strictly key-ordered trees have distinct keys
 
 If a tree is strictly ordered by key, then
 the keys of its stored entries are pairwise distinct.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyNodup_of_keyOrdered`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1600](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-nodup-of-key-ordered).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyNodup_of_keyOrdered`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1600](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-nodup-of-key-ordered).
 
 ## The removed minimum has the least key
 
@@ -521,7 +521,7 @@ compared lexicographically. If removing the leftmost entry of $T$ returns the en
 with the remaining tree and a cost record), then every entry $e$ stored in $T$ is either $m$
 itself or has a key strictly larger than the key of $m$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost_min_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1628](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost-min-le).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.removeMinWithCost_min_le`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1628](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#remove-min-with-cost-min-le).
 
 ## Insertion into an interval tree preserves key ordering
 
@@ -530,7 +530,7 @@ tree and let $e$ be an entry. Then the tree returned by the cost-instrumented ke
 $e$ into $t$ (which replaces the entry with the same key, if there is one; the reported cost is
 discarded) is again key-ordered.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1667](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1667). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-insert-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1667](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1667). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-insert-key-with-cost).
 
 ## Removing the minimum from an interval tree preserves key ordering
 
@@ -538,7 +538,7 @@ Let $t$ be a
 key-ordered interval tree. If the cost-instrumented removal of the leftmost entry of $t$ succeeds,
 returning that entry, a remaining tree $t'$ and a cost, then $t'$ is key-ordered.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-remove-min-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-remove-min-with-cost).
 
 ## Deletion from an interval tree preserves key ordering
 
@@ -547,7 +547,7 @@ tree and let $k \in \mathbb{Z} \times \mathbb{N}$ be a key. Then the tree return
 cost-instrumented keyed deletion of $k$ from $t$ (the reported cost is discarded) is again
 key-ordered.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1731](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-erase-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.keyOrdered_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#key-ordered-erase-key-with-cost).
 
 ## Rebalancing an interval-tree node with exact stored height restores AVL balance
 
@@ -560,7 +560,7 @@ component of the result; the cost is ignored). Then $B$ is AVL balanced with exa
 the height of $B$ is $\max(h_L, h_R) + 1$ or $\max(h_L, h_R)$, and it is $\max(h_L, h_R)$ only if
 $h_L = h_R + 2$ or $h_R = h_L + 2$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_rebalance_node`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1788](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-rebalance-node).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_rebalance_node`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1788](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-rebalance-node).
 
 ## Rebalancing a rebuilt interval-tree node restores AVL balance
 
@@ -572,7 +572,7 @@ of the result; the cost is ignored). Then $B$ is AVL balanced with exact stored 
 height of $B$ is $\max(h_L, h_R) + 1$ or $\max(h_L, h_R)$, and it is $\max(h_L, h_R)$ only if
 $h_L = h_R + 2$ or $h_R = h_L + 2$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_rebalance_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1900](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-rebalance-mk-node).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_rebalance_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1900](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-rebalance-mk-node).
 
 ## Keyed insertion preserves AVL balance in an interval tree
 
@@ -582,7 +582,7 @@ insertion of $e$ into $T$ (which replaces an entry with the same key, if there i
 tree component of the result and ignore the cost) is again AVL balanced with exact stored heights,
 and the height of $T'$ is either the height of $T$ or one more.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1914](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-insert-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1914](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1914). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-insert-key-with-cost).
 
 ## Removing the minimum preserves AVL balance in an interval tree
 
@@ -591,7 +591,7 @@ that is AVL balanced with exact stored heights. If removing the leftmost entry o
 returns an entry $m$, a remaining tree $R$ and a cost $c$, then $R$ is AVL balanced with exact
 stored heights, and the height of $R$ is either the height of $T$ or one less.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1962](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-remove-min-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1962](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-remove-min-with-cost).
 
 ## Keyed deletion preserves AVL balance in an interval tree
 
@@ -601,7 +601,7 @@ and a natural-number identifier). The tree $T'$ returned by keyed deletion of $k
 tree component of the result; the cost is ignored) is again AVL balanced with exact stored
 heights, and the height of $T'$ is either the height of $T$ or one less.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1997](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1997). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-erase-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.balancedProp_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 1997](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L1997). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#balanced-prop-erase-key-with-cost).
 
 ## Node construction preserves interval validity
 
@@ -610,14 +610,14 @@ satisfying the validity invariant and $e$ is an entry whose interval $[a, b]$ sa
 $a \le b$, then the node with left subtree $L$, entry $e$ and right subtree $R$, built by the
 node constructor that recomputes the cached fields, satisfies the validity invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2066](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2066). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-mk-node).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2066](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2066). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-mk-node).
 
 ## Stored intervals of a valid tree are valid
 
 If an interval tree $T$ satisfies the validity
 invariant, then every entry stored in $T$ has an interval $[a, b]$ with $a \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-mem).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-mem).
 
 ## Keyed insertion preserves interval validity
 
@@ -626,7 +626,7 @@ stored interval $[a, b]$ satisfies $a \le b$, and let $e$ be an entry whose inte
 satisfies $a \le b$. Then the tree returned by keyed insertion of $e$ into $T$ also has every
 stored interval $[a, b]$ satisfying $a \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-insert-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-insert-key-with-cost).
 
 ## Removing the minimum preserves interval validity
 
@@ -635,7 +635,7 @@ every stored interval is valid (its low endpoint is at most its high endpoint). 
 instrumented removal of the leftmost entry of $T$ succeeds, returning that entry $m$, the
 remaining tree $T'$ and a cost record $c$, then every interval stored in $T'$ is valid.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-remove-min-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-remove-min-with-cost).
 
 ## Keyed erasure preserves interval validity
 
@@ -644,7 +644,7 @@ stored interval $[a, b]$ satisfies $a \le b$. Then for every key $(\ell, i)$ wit
 integer and $i$ a natural number, the tree returned by keyed erasure of $(\ell, i)$ from $T$ also
 has every stored interval $[a, b]$ satisfying $a \le b$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-erase-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.validInvariant_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#valid-invariant-erase-key-with-cost).
 
 ## Indexed interval tree
 
@@ -652,7 +652,7 @@ An indexed interval tree consists of a root interval tree together
 with an identifier index: a finite map, implemented as a balanced search tree, from natural-number
 identifiers to integer low endpoints.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#indexed-interval-tree).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree`, a structure declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#indexed-interval-tree).
 
 ## Insertion by identifier with cost
 
@@ -666,7 +666,7 @@ interval tree with this new root tree and with the index updated to map $i$ to $
 is the cost of the erasure plus the cost of the insertion plus one endpoint comparison and two
 index operations.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.insertWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.insertWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-with-cost).
 
 ## Erasure by identifier with cost
 
@@ -679,7 +679,7 @@ cost is the cost of the keyed erasure plus two index operations.
 When the representation invariant holds, this deletes exactly the stored entry with identifier
 $i$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.eraseWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.eraseWithCost`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-with-cost).
 
 ## Forward identifier-index check
 
@@ -687,7 +687,7 @@ For an indexed interval tree, the forward index check
 returns true exactly when the identifier index maps the identifier of every stored entry to the low
 endpoint of that entry's interval.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.indexForwardOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#index-forward-ok).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.indexForwardOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#index-forward-ok).
 
 ## Backward identifier-index check
 
@@ -695,7 +695,7 @@ For an indexed interval tree, the backward index check
 returns true exactly when, for every identifier $i$ that the identifier index maps to a low endpoint
 $\ell$, some stored entry has identifier $i$ and an interval with low endpoint $\ell$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.indexBackwardOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#index-backward-ok).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.indexBackwardOK`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#index-backward-ok).
 
 ## Representation check for the indexed interval tree
 
@@ -710,7 +710,7 @@ identifiers of the stored entries are pairwise distinct; the identifier index ma
 every stored entry to that entry's low endpoint; and every identifier and low endpoint paired by the
 index belong to some stored entry.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.check`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#check).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.check`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#check).
 
 ## Representation invariant of an indexed interval tree
 
@@ -724,7 +724,7 @@ the identifier index is the identifier and low endpoint of some stored entry.
 
 The ordering of low endpoints used by search follows from the strict key ordering.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.Invariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#invariant).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.Invariant`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#invariant).
 
 ## The interval-tree smart constructor preserves the cache invariant
 
@@ -733,14 +733,14 @@ and $R$ satisfy the cache invariant (every cached maximum high endpoint, height 
 exact), then for every entry $e$ the node that the smart constructor builds from $L$, $e$ and $R$
 also satisfies the cache invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-mk-node).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_mkNode`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-mk-node).
 
 ## The executable cache check implies the cache invariant
 
 If the executable cache check
 returns true on an interval tree $t$, then $t$ satisfies the cache invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_of_cacheOK`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-of-cache-ok).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_of_cacheOK`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-of-cache-ok).
 
 ## Right rotation preserves the interval-tree cache invariant
 
@@ -748,7 +748,7 @@ If an interval tree $t$
 satisfies the cache invariant, then so does the right rotation of $t$, which leaves $t$ unchanged
 when $t$ is empty or has an empty left subtree.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateRight`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-right).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateRight`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-right).
 
 ## Left rotation preserves the interval-tree cache invariant
 
@@ -756,7 +756,7 @@ If an interval tree $t$
 satisfies the cache invariant, then so does the left rotation of $t$, which leaves $t$ unchanged
 when $t$ is empty or has an empty right subtree.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-left).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-left).
 
 ## Left-right rotation preserves the interval-tree cache invariant
 
@@ -764,7 +764,7 @@ If an interval tree $t$
 satisfies the cache invariant, then so does the left-right double rotation of $t$, which leaves
 $t$ unchanged unless $t$ has a nonempty left subtree whose right subtree is nonempty.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateLeftRight`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2405](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-left-right).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateLeftRight`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2405](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2405). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-left-right).
 
 ## Right-left rotation preserves the interval-tree cache invariant
 
@@ -772,7 +772,7 @@ If an interval tree $t$
 satisfies the cache invariant, then so does the right-left double rotation of $t$, which leaves
 $t$ unchanged unless $t$ has a nonempty right subtree whose left subtree is nonempty.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateRightLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-right-left).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rotateRightLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rotate-right-left).
 
 ## Rebalancing preserves the interval-tree cache invariant
 
@@ -780,7 +780,7 @@ If an interval tree $t$
 satisfies the cache invariant, then the tree returned by the rebalancing step at the root of $t$
 also satisfies the cache invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rebalanceWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rebalance-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_rebalanceWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-rebalance-with-cost).
 
 ## Keyed insertion preserves the interval-tree cache invariant
 
@@ -790,7 +790,7 @@ let $e$ be an entry. The tree returned by keyed insertion of $e$ into $T$ (the t
 the result; the cost is ignored) also satisfies the cache invariant. This includes the case where
 an entry with the same key is replaced.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-insert-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_insertKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-insert-key-with-cost).
 
 ## Removing the minimum preserves the interval-tree cache invariant
 
@@ -798,7 +798,7 @@ Let $t$ be an interval
 tree that satisfies the cache invariant. If removing the leftmost entry of $t$ succeeds and
 returns an entry, a tree $t'$ and an operation cost, then $t'$ satisfies the cache invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2479](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-remove-min-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_removeMinWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2479](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2479). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-remove-min-with-cost).
 
 ## Keyed deletion preserves the interval-tree cache invariant
 
@@ -808,14 +808,14 @@ let $k$ be a key (a pair of an integer low endpoint and a natural-number identif
 returned by keyed deletion of $k$ from $T$ (the tree component of the result; the cost is
 ignored) also satisfies the cache invariant. This includes keys that do not occur in $T$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2504](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-erase-key-with-cost).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.Tree.cacheInvariant_eraseKeyWithCost`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2504](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#cache-invariant-erase-key-with-cost).
 
 ## Soundness of the invariant checker
 
 If the executable checker returns true on an indexed
 interval tree $T$, then $T$ satisfies the representation invariant.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.invariant_of_check`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#invariant-of-check).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.invariant_of_check`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#invariant-of-check).
 
 ## Soundness of indexed interval-tree search
 
@@ -827,7 +827,7 @@ $e$ is one of the entries stored in the root tree of $T$ and the interval of $e$
 
 The representation invariant of $T$ is not needed.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.search_sound`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2562](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-sound).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.search_sound`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2562](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2562). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-sound).
 
 ## Completeness of indexed interval search
 
@@ -836,7 +836,7 @@ its representation invariant, and let $Q$ be a valid query interval (low endpoin
 endpoint). If some entry stored in $T$ has an interval that overlaps $Q$ (each interval's low
 endpoint is at most the other's high endpoint), then searching $T$ for $Q$ returns some entry.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.search_complete_of_invariant`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2577](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-complete-of-invariant).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.search_complete_of_invariant`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2577](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2577). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#search-complete-of-invariant).
 
 ## Correctness of insertion into an indexed interval tree
 
@@ -847,7 +847,7 @@ $T'$ satisfies the representation invariant, $x$ is stored in the root tree of $
 $e$ is stored in the root tree of $T'$ if and only if either $e = x$, or $e$ is stored in the root
 tree of $T$ and the identifier of $e$ differs from the identifier of $x$.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.insert_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-spec).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.insert_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#insert-spec).
 
 ## Correctness of erasure from the indexed interval tree
 
@@ -858,7 +858,7 @@ only if it is stored in $T$ and its identifier differs from $i$.
 
 In particular, if no stored entry has identifier $i$, the stored entries are unchanged.
 
-Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.erase_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-spec).
+Formalized by `Cslib.Algorithms.Lean.IntervalTree.IndexedIntervalTree.erase_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean, line 2792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/IntervalTree.lean#L2792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html#erase-spec).
 
 ## Depends on
 
@@ -867,4 +867,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Interval tree](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/data-structures/range-query-structures/interval-tree)

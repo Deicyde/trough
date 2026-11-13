@@ -8,13 +8,13 @@ proof: formalized
 
 # 83.3 Invariant morphisms
 
-Section 83.3 of the Stacks Project, [Tag 048D](https://stacks.math.columbia.edu/tag/048D). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 83.3 of the Stacks Project, [Tag 048D](https://stacks.math.columbia.edu/tag/048D). 6 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 048E, a definition
 
 [Tag 048E](https://stacks.math.columbia.edu/tag/048E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L93). The attribute's comment: “R-invariant”.
+**`AlgebraicGeometry.Space.IsInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L93). The attribute's comment: “R-invariant”.
 
 > A morphism `φ` out of `U` is *invariant* under a pre-relation `j : R ⟶ U ×_Z U` when it
 > identifies the target and the source of every arrow of `j`.
@@ -25,7 +25,7 @@ noncomputable abbrev IsInvariant {C : Type*} [Category C] {Z : C}
     (j : PreRelation R U) (φ : U.left ⟶ X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGroupInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L101). The attribute's comment: “G-invariant”. References: SGA 3 IV (3.2.1), “special case”.
+**`AlgebraicGeometry.Space.IsGroupInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L101). The attribute's comment: “G-invariant”. References: SGA 3 IV (3.2.1), “special case”.
 
 > A morphism `φ` out of an object `U` carrying an action of a group algebraic space `G` is
 > *invariant* when acting does not change its value.
@@ -40,7 +40,7 @@ noncomputable abbrev IsGroupInvariant
 
 [Tag 048F](https://stacks.math.columbia.edu/tag/048F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.invariant_iff_factors_through_quotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean#L75).
+**`AlgebraicGeometry.Space.invariant_iff_factors_through_quotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean#L75).
 
 > **Stacks 048F.** A morphism from `U` to a sheaf is invariant under a pre-relation `j` if
 > and only if it factors through the canonical projection of `U` onto the quotient sheaf
@@ -57,7 +57,7 @@ theorem invariant_iff_factors_through_quotientSheaf (j : PreRelation R U)
 
 [Tag 048G](https://stacks.math.columbia.edu/tag/048G) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.overInvariantTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L76). The attribute's comment: “groupoid\_over\_x”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.overInvariantTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L76). The attribute's comment: “groupoid\_over\_x”.
 
 > **Stacks 048G.** A morphism out of the object space of a groupoid in algebraic spaces
 > which is invariant under the pre-relation of the groupoid makes the groupoid a groupoid over
@@ -74,7 +74,7 @@ noncomputable def overInvariantTarget (G : GroupoidInAlgebraicSpaces C S hS B)
       ∃ hobj : H.objects = G.objects, eqToHom hobj.symm ≫ H.objectsToBase = φ }
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.baseChangedPreRelation_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L214). The attribute's comment: “base\_changed\_groupoid\_relation”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.baseChangedPreRelation_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L214). The attribute's comment: “base\_changed\_groupoid\_relation”.
 
 > **Stacks 048G.** The base change of the pre-relation of a groupoid in algebraic spaces
 > along a morphism to an invariant target is the pre-relation of the base change of the
@@ -107,7 +107,7 @@ theorem baseChangedPreRelation_isBaseChange (G : GroupoidInAlgebraicSpaces C S h
       (j'.target.left ≫ α.hom = β.hom ≫ bc.groupoid.target.hom)
 ```
 
-**`AlgebraicGeometry.Space.exists_inducedAction_of_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean#L75). The attribute's comment: “induced\_group\_action”.
+**`AlgebraicGeometry.Space.exists_inducedAction_of_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean#L75). The attribute's comment: “induced\_group\_action”.
 
 > An invariant base change of an action pre-relation is again an action
 > pre-relation. The comparison of arrow spaces respects the original arrows and
@@ -134,7 +134,7 @@ theorem exists_inducedAction_of_baseChangedPreRelation
         (e.hom ≫ j'.target = γ[G, U'])
 ```
 
-**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base\_changed\_pre\_relation”.
+**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base\_changed\_pre\_relation”.
 
 > **Stacks 048G** and **Stacks 048H.** The canonical pre-relation on the base changes of the
 > object and of the arrow space of an invariant pre-relation. Its target and source maps are
@@ -155,7 +155,7 @@ noncomputable def baseChangedPreRelation (j : PreRelation R U) (φ : U.left ⟶ 
           pullback.snd f (j.target.left ≫ φ) ≫ j.source.left)) }
 ```
 
-**`AlgebraicGeometry.Space.isPreEquivalenceRelation_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L319). The attribute's comment: “pre\_equivalence\_preserved”.
+**`AlgebraicGeometry.Space.isPreEquivalenceRelation_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L319). The attribute's comment: “pre\_equivalence\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves the pointwise
 > equivalence property of a pre-relation.
@@ -167,7 +167,7 @@ theorem isPreEquivalenceRelation_baseChangedPreRelation (j : PreRelation R U)
     IsPreEquivalenceRelation (baseChangedPreRelation j φ f hφ).val
 ```
 
-**`AlgebraicGeometry.Space.mono_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L332). The attribute's comment: “relation\_preserved”.
+**`AlgebraicGeometry.Space.mono_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L332). The attribute's comment: “relation\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves relations, that is
 > monomorphy of the map to the product.
@@ -178,7 +178,7 @@ theorem mono_baseChangedPreRelation (j : PreRelation R U) (φ : U.left ⟶ X) (f
     Mono (baseChangedPreRelation j φ f hφ).val
 ```
 
-**`AlgebraicGeometry.Space.isEquivalenceRelation_baseChangedPreRelation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L344). The attribute's comment: “equivalence\_preserved”.
+**`AlgebraicGeometry.Space.isEquivalenceRelation_baseChangedPreRelation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L344). The attribute's comment: “equivalence\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves equivalence relations:
 > the base-changed pre-relation of an invariant equivalence relation is again an internal
@@ -197,7 +197,7 @@ instance isEquivalenceRelation_baseChangedPreRelation (j : PreRelation R U) (φ 
 
 [Tag 048H](https://stacks.math.columbia.edu/tag/048H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base change of the pre-relation”.
+**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base change of the pre-relation”.
 
 > **Stacks 048G** and **Stacks 048H.** The canonical pre-relation on the base changes of the
 > object and of the arrow space of an invariant pre-relation. Its target and source maps are
@@ -220,13 +220,13 @@ noncomputable def baseChangedPreRelation (j : PreRelation R U) (φ : U.left ⟶ 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.IsFlat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean#L40), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L360) (StacksFrontier): “flat base change”.
+- [`AlgebraicGeometry.Space.IsFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat.lean#L43), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L360) (StacksFrontier): “flat base change”.
 
 ## Tag 0DTF, a lemma
 
 [Tag 0DTF](https://stacks.math.columbia.edu/tag/0DTF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quotientSheaf_isPullback_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean#L250).
+**`AlgebraicGeometry.Space.quotientSheaf_isPullback_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/QuotientSheafBaseChange.lean#L250).
 
 > **Stacks 0DTF.** The quotient sheaf of the base change of an invariant pre-relation along
 > `f : X' ⟶ X` is the fibre product of `X'` and the original quotient sheaf over `X`. The three
@@ -251,7 +251,7 @@ theorem quotientSheaf_isPullback_baseChange (j : PreRelation R U)
 
 [Tag 0DTG](https://stacks.math.columbia.edu/tag/0DTG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.baseChangeQuotientStackSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackComparisonFibreFull.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackComparisonFibreFull.lean#L356).
+**`AlgebraicGeometry.Stack.baseChangeQuotientStackSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackComparisonFibreFull.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackComparisonFibreFull.lean#L356).
 
 > **Stacks 0DTG, the 2-fibre product.** For a groupoid in algebraic spaces `(U, R, s, t, c)`
 > over an algebraic space `B` over a scheme `S` of a big fppf site, an `R`-invariant morphism
@@ -277,7 +277,7 @@ noncomputable def baseChangeQuotientStackSquare_isTwoFibreProduct :
       (baseChangeQuotientStackSquare.{u, w} G XtoB X'toB g hg φ hφB hφ)
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackSquare.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackSquare.lean#L257). The attribute's comment: “the displayed square and its 2-commutativity”.
+**`AlgebraicGeometry.Stack.baseChangeQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackSquare.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/BaseChangeQuotientStackSquare.lean#L257). The attribute's comment: “the displayed square and its 2-commutativity”.
 
 > **Stacks 0DTG, the displayed square.** For a groupoid in algebraic spaces `(U, R, s, t, c)`
 > over an algebraic space `B` over a scheme `S` of a big fppf site, an `R`-invariant morphism
@@ -320,4 +320,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 83.3, Tag 048D](https://stacks.math.columbia.edu/tag/048D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

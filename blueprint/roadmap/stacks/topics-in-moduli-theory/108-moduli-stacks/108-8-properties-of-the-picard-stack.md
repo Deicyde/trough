@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.8 Properties of the Picard stack
 
-Section 108.8 of the Stacks Project, [Tag 0DM9](https://stacks.math.columbia.edu/tag/0DM9). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 108.8 of the Stacks Project, [Tag 0DM9](https://stacks.math.columbia.edu/tag/0DM9). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DMA, a lemma
 
 [Tag 0DMA](https://stacks.math.columbia.edu/tag/0DMA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.picardRelativeDiagonal_affine_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackDiagonal.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackDiagonal.lean#L167).
+**`AlgebraicGeometry.Space.picardRelativeDiagonal_affine_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackDiagonal.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackDiagonal.lean#L167).
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S` which is flat, proper and of finite
 > presentation (finite presentation is part of the standing data `D`). The diagonal of
@@ -54,7 +54,7 @@ theorem picardRelativeDiagonal_affine_finitePresentation
 
 [Tag 0DMB](https://stacks.math.columbia.edu/tag/0DMB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PicardOverBase.quasiSeparated_limitPreservingOnObjects_picardToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackQuasiSeparatedLimitPreserving.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackQuasiSeparatedLimitPreserving.lean#L63). The attribute's comment: “quasi-separated: the relative diagonal is representable by algebraic spaces, quasi-compact and quasi-separated; locally of finite presentation: limit preserving on objects”.
+**`AlgebraicGeometry.Space.PicardOverBase.quasiSeparated_limitPreservingOnObjects_picardToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackQuasiSeparatedLimitPreserving.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackQuasiSeparatedLimitPreserving.lean#L63). The attribute's comment: “quasi-separated: the relative diagonal is representable by algebraic spaces, quasi-compact and quasi-separated; locally of finite presentation: limit preserving on objects”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S` which is flat, proper and of finite
 > presentation. Then the structure morphism `Picardstack_{X/B} ⟶ 𝒮_B` is quasi-separated, i.e. its
@@ -84,7 +84,7 @@ theorem quasiSeparated_limitPreservingOnObjects_picardToBase
 
 [Tag 0DNG](https://stacks.math.columbia.edu/tag/0DNG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.liftedValuativeCriterionExistence_picardToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackValuativeExistence.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackValuativeExistence.lean#L70).
+**`AlgebraicGeometry.Space.liftedValuativeCriterionExistence_picardToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackValuativeExistence.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackValuativeExistence.lean#L70).
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S` which is proper, of finite
 > presentation and smooth. Then the structure morphism `Picardstack_{X/B} ⟶ B` satisfies the
@@ -102,7 +102,7 @@ theorem liftedValuativeCriterionExistence_picardToBase (s : PicardSituation B S 
 
 [Tag 0DNH](https://stacks.math.columbia.edu/tag/0DNH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.picardInertiaEquivalenceOverMultiplicativeGroupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L828). The attribute's comment: “the inertia stack of the Picard stack is 𝐆\_\{m,S} ×\_S Picardstack\_\{X/B}, as categories over the big fppf site, when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every scheme T over the base”.
+**`AlgebraicGeometry.Space.picardInertiaEquivalenceOverMultiplicativeGroupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 828](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L828). The attribute's comment: “the inertia stack of the Picard stack is 𝐆\_\{m,S} ×\_S Picardstack\_\{X/B}, as categories over the big fppf site, when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every scheme T over the base”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S`, and assume that
 > for every scheme `T` over `B` the structure map `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` of the base change
@@ -142,7 +142,7 @@ def picardInertiaEquivalenceOverMultiplicativeGroupProduct (s : PicardSituation 
 
 [Tag 0DPJ](https://stacks.math.columbia.edu/tag/0DPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_picardStructureMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean#L46). The attribute's comment: “the full statement: f flat (hflat), proper (hproper), of finite presentation (the field of D) and of relative dimension ≤ 1 (hd); Picardstack\_\{X/B} → B is smooth; the algebraicity of Picardstack\_\{X/B} is Stacks 0D04, proved, not assumed”.
+**`AlgebraicGeometry.Space.isSmooth_picardStructureMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean#L46). The attribute's comment: “the full statement: f flat (hflat), proper (hproper), of finite presentation (the field of D) and of relative dimension ≤ 1 (hd); Picardstack\_\{X/B} → B is smooth; the algebraicity of Picardstack\_\{X/B} is Stacks 0D04, proved, not assumed”.
 
 > **Stacks 0DPJ: the Picard stack is smooth in relative dimension `≤ 1`.** Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces over `S` which is flat, proper, of finite presentation (a field of the
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.8, Tag 0DM9](https://stacks.math.columbia.edu/tag/0DM9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

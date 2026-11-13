@@ -8,7 +8,7 @@ proof: formalized
 
 # Galois action on torsion points
 
-19 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html).
+19 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html).
 
 ## Galois elements as automorphisms of $\overline{\mathbb{Q}}$
 
@@ -18,7 +18,7 @@ $\mathbb{Q}$-algebra automorphism $\sigma$ of the algebraic closure $\overline{\
 $\mathbb{Q}$. Since $G_{\mathbb{Q}}$ is by definition the group of $\mathbb{Q}$-algebra
 automorphisms of $\overline{\mathbb{Q}}$, this map is the identity.
 
-Formalized by `MetaMathlibExt.galAlgEquiv`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv).
+Formalized by `MetaMathlibExt.galAlgEquiv`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv).
 
 ## Galois action on the points of a Weierstrass curve
 
@@ -32,7 +32,7 @@ $(x, y)$ to $(\sigma(x), \sigma(y))$ and fixes the point at infinity.
 For each natural number $p$, restricting this action to the $p$-torsion points gives the mod-$p$
 Galois representation.
 
-Formalized by `MetaMathlibExt.galPointHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom).
+Formalized by `MetaMathlibExt.galPointHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom).
 
 ## Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect products
 
@@ -44,7 +44,7 @@ one attached to $\tau$ applied first.
 
 The equality holds by definition.
 
-Formalized by `MetaMathlibExt.galAlgEquiv_mul`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv-mul).
+Formalized by `MetaMathlibExt.galAlgEquiv_mul`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv-mul).
 
 ## Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect inverses
 
@@ -55,7 +55,7 @@ inverse of the automorphism attached to $\sigma$.
 
 The equality holds by definition.
 
-Formalized by `MetaMathlibExt.galAlgEquiv_inv`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv-inv).
+Formalized by `MetaMathlibExt.galAlgEquiv_inv`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-alg-equiv-inv).
 
 ## Galois automorphisms compose as algebra maps
 
@@ -66,7 +66,7 @@ $\overline{\mathbb{Q}} \to \overline{\mathbb{Q}}$ underlying the product $\sigma
 composite $\sigma \circ \tau$ of the $\mathbb{Q}$-algebra homomorphisms underlying $\sigma$
 and $\tau$.
 
-Formalized by `MetaMathlibExt.galToAlgHom_comp`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-to-alg-hom-comp).
+Formalized by `MetaMathlibExt.galToAlgHom_comp`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-to-alg-hom-comp).
 
 ## The identity acts trivially on points
 
@@ -78,7 +78,7 @@ $\sigma \cdot P$ be the point obtained by applying $\sigma$ to the coordinates o
 at infinity is fixed). Then $1 \cdot P = P$ for every $P \in W(\overline{\mathbb{Q}})$, where
 $1$ is the identity of $G_{\mathbb{Q}}$.
 
-Formalized by `MetaMathlibExt.galPointHom_apply_one`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-apply-one).
+Formalized by `MetaMathlibExt.galPointHom_apply_one`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-apply-one).
 
 ## The Galois action on points is compatible with multiplication
 
@@ -91,7 +91,7 @@ to the coordinates of $P$ (the point at infinity is fixed). Then for all
 $\sigma, \tau \in G_{\mathbb{Q}}$ and every $P \in W(\overline{\mathbb{Q}})$,
 $(\sigma\tau) \cdot P = \sigma \cdot (\tau \cdot P)$.
 
-Formalized by `MetaMathlibExt.galPointHom_apply_mul`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-apply-mul).
+Formalized by `MetaMathlibExt.galPointHom_apply_mul`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-apply-mul).
 
 ## The $p$-torsion subgroup
 
@@ -103,7 +103,7 @@ $pP = 0$.
 
 When $W$ is an elliptic curve $E$, this is the group usually written $E[p]$.
 
-Formalized by `MetaMathlibExt.torsionPts`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#torsion-pts).
+Formalized by `MetaMathlibExt.torsionPts`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#torsion-pts).
 
 ## Membership in the $p$-torsion subgroup
 
@@ -114,7 +114,7 @@ infinity, and let $W[p]$ be its $p$-torsion subgroup. A point $x \in W(\overline
 lies in $W[p]$ if and only if $p x = 0$, where $p x$ is the sum of $p$ copies of $x$ and $0$ is
 the point at infinity.
 
-Formalized by `MetaMathlibExt.mem_torsionPts_iff`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#mem-torsion-pts-iff).
+Formalized by `MetaMathlibExt.mem_torsionPts_iff`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#mem-torsion-pts-iff).
 
 ## The Galois action preserves $p$-torsion points
 
@@ -127,7 +127,7 @@ let $\sigma \cdot P$ be the point obtained by applying $\sigma$ to the coordinat
 point at infinity is fixed). Then for every $\sigma \in G_{\mathbb{Q}}$ and every $x \in W[p]$,
 the point $\sigma \cdot x$ lies in $W[p]$.
 
-Formalized by `MetaMathlibExt.galPointHom_mem`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-mem).
+Formalized by `MetaMathlibExt.galPointHom_mem`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-point-hom-mem).
 
 ## Galois action on $p$-torsion points
 
@@ -139,7 +139,7 @@ absolute Galois group $G_{\mathbb{Q}}$, this is the homomorphism of additive gro
 $W[p] \to W[p]$ that sends the point $(x, y)$ to $(\sigma(x), \sigma(y))$ and fixes the point at
 infinity.
 
-Formalized by `MetaMathlibExt.galTorsionHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-torsion-hom).
+Formalized by `MetaMathlibExt.galTorsionHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-torsion-hom).
 
 ## Linear Galois action on $W(p)$
 
@@ -151,7 +151,7 @@ $p$ annihilates it. For $\sigma$ in the absolute Galois group $G_{\mathbb{Q}}$ o
 this is the $\mathbb{Z}/p\mathbb{Z}$-linear map $W[p] \to W[p]$, $x \mapsto \sigma(x)$, where
 $\sigma$ acts on points through their coordinates.
 
-Formalized by `MetaMathlibExt.galLinearMap`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map).
+Formalized by `MetaMathlibExt.galLinearMap`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map).
 
 ## The linear Galois action on $W(p)$ is the action on points
 
@@ -163,7 +163,7 @@ group $G_{\mathbb{Q}}$ of $\mathbb{Q}$ and every $x \in W[p]$, the image of $x$ 
 $\mathbb{Z}/p\mathbb{Z}$-linear action of $\sigma$ on $W[p]$ is the point $\sigma(x)$ given by the
 Galois action of $\sigma$ on all of $W(\overline{\mathbb{Q}})$.
 
-Formalized by `MetaMathlibExt.galLinearMap_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-apply).
+Formalized by `MetaMathlibExt.galLinearMap_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-apply).
 
 ## The identity acts trivially on $W(p)$
 
@@ -174,7 +174,7 @@ infinity, and $W[p]$ its $p$-torsion subgroup. Under the $\mathbb{Z}/p\mathbb{Z}
 of the absolute Galois group of $\mathbb{Q}$ on $W[p]$, the identity element maps every
 $x \in W[p]$ to $x$.
 
-Formalized by `MetaMathlibExt.galLinearMap_one_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-one-apply).
+Formalized by `MetaMathlibExt.galLinearMap_one_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-one-apply).
 
 ## The linear Galois action on $W(p)$ respects products
 
@@ -187,7 +187,7 @@ under the $\mathbb{Z}/p\mathbb{Z}$-linear action of $\sigma$ on $W[p]$. Then for
 $\sigma, \tau \in G_{\mathbb{Q}}$ and every $x \in W[p]$,
 $(\sigma\tau) \cdot x = \sigma \cdot (\tau \cdot x)$.
 
-Formalized by `MetaMathlibExt.galLinearMap_mul_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-mul-apply).
+Formalized by `MetaMathlibExt.galLinearMap_mul_apply`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-mul-apply).
 
 ## Galois automorphisms act bijectively on $W(p)$
 
@@ -200,7 +200,7 @@ on $W[p]$ is bijective.
 
 The action of $\sigma^{-1}$ is a two-sided inverse.
 
-Formalized by `MetaMathlibExt.galLinearMap_bijective`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-bijective).
+Formalized by `MetaMathlibExt.galLinearMap_bijective`, a theorem declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-map-bijective).
 
 ## Galois automorphisms as linear automorphisms of $W(p)$
 
@@ -212,7 +212,7 @@ $G_{\mathbb{Q}}$ of $\mathbb{Q}$, this is the $\mathbb{Z}/p\mathbb{Z}$-linear ma
 $x \mapsto \sigma(x)$ on $W[p]$, where $\sigma$ acts on points through their coordinates, viewed
 as a linear automorphism of $W[p]$ (the map is bijective).
 
-Formalized by `MetaMathlibExt.galLinearEquiv`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-equiv).
+Formalized by `MetaMathlibExt.galLinearEquiv`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-linear-equiv).
 
 ## The mod-$p$ Galois representation
 
@@ -227,7 +227,7 @@ which fixes the point at infinity.
 
 When $W$ is an elliptic curve $E$, this is the representation usually written $\rho_{E,p}$.
 
-Formalized by `MetaMathlibExt.galRep`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-rep).
+Formalized by `MetaMathlibExt.galRep`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-rep).
 
 ## Determinant character of the mod-$p$ Galois representation
 
@@ -244,7 +244,7 @@ The determinant does not depend on a choice of basis, so no basis of $W[p]$ is f
 definition is unconditional: if $W[p]$ has no finite basis over $\mathbb{Z}/p\mathbb{Z}$, the
 character is constantly $1$.
 
-Formalized by `MetaMathlibExt.galDetHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-det-hom).
+Formalized by `MetaMathlibExt.galDetHom`, a definition declared in [MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/AlgebraicGeometry/EllipticCurve/GaloisRepresentation.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html#gal-det-hom).
 
 ## Depends on
 
@@ -253,4 +253,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Galois action on torsion points](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/elliptic-curves/galois-action-on-torsion-points)

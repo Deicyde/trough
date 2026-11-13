@@ -7,7 +7,7 @@ statement: formalized
 
 # Rowmotion on root posets
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html).
 
 ## Homomesy
 
@@ -20,7 +20,7 @@ the average $\frac{1}{k} \sum_{i=0}^{k-1} f(\sigma^i(x))$ equals $c$.
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsHomomesic`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-homomesic).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsHomomesic`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-homomesic).
 
 ## Finite antichains of a poset
 
@@ -31,7 +31,7 @@ $P$ are the finite subsets $A \subseteq P$ in which no element is below a differ
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.PosetAntichain`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#poset-antichain).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.PosetAntichain`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#poset-antichain).
 
 ## Antichain cardinality statistic
 
@@ -43,7 +43,7 @@ $f(A) = |A|$ for every finite antichain $A$ of $P$.
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainCardinality`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-antichain-cardinality).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainCardinality`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-antichain-cardinality).
 
 ## Rowmotion on antichains
 
@@ -57,7 +57,7 @@ every $y \le x$ with $y \not\le a$ for all $a \in A$ equals $x$.
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainRowmotion`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-antichain-rowmotion).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsAntichainRowmotion`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-antichain-rowmotion).
 
 ## Type-A root poset
 
@@ -70,7 +70,7 @@ interval $[i_a, j_a]$ is contained in $[i_b, j_b]$, that is, $i_b \le i_a$ and $
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsTypeARootPoset`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-type-aroot-poset).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.IsTypeARootPoset`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#is-type-aroot-poset).
 
 ## Type-A rowmotion homomesy conjecture
 
@@ -87,7 +87,7 @@ $\rho^k(A) = A$ the average $\frac{1}{k} \sum_{i=0}^{k-1} |\rho^i(A)|$ equals $n
 
 - [AIM-OTHER-0019] Conjecture 3.3 (aim-other-notes.json notes[18]; http://aimath.org/pastworkshops/dac_preworkshop.pdf).
 
-Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#conjecture).
 
 ## Antichain size is homomesic under type-A rowmotion
 
@@ -109,7 +109,7 @@ Armstrong, Stump, and Thomas proved for all crystallographic root systems.
 
 - D. Armstrong, C. Stump, and H. Thomas, A uniform bijection between nonnesting and noncrossing partitions, Transactions of the American Mathematical Society 365 (2013).
 
-Stated but not proved: `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.RootPosetRowmotionHomomesyWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/RootPosetRowmotionHomomesyWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rowmotion on root posets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/partially-ordered-sets/rowmotion-on-root-posets)

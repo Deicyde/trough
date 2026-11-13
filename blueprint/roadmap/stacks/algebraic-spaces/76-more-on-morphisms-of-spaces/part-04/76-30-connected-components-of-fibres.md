@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.30 Connected components of fibres
 
-Section 76.30 of the Stacks Project, [Tag 0E1A](https://stacks.math.columbia.edu/tag/0E1A). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.30 of the Stacks Project, [Tag 0E1A](https://stacks.math.columbia.edu/tag/0E1A). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E1B, a lemma
 
 [Tag 0E1B](https://stacks.math.columbia.edu/tag/0E1B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.numberGeometricConnectedComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean#L352). The attribute's comment: “well-definedness”. References: EGA III (4.3.4), “more general”; EGA IV (4.5.1), “partial”.
+**`AlgebraicGeometry.Space.numberGeometricConnectedComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean#L352). The attribute's comment: “well-definedness”. References: EGA III (4.3.4), “more general”; EGA IV (4.5.1), “partial”.
 
 > **Stacks 0E1B.** The number of geometric connected components of the fibres of a morphism
 > of algebraic spaces is, at the image of a geometric point, the number of connected components
@@ -28,7 +28,7 @@ theorem numberGeometricConnectedComponents_eq (hF : IsAlgebraicSpace B S hS F)
       geometricFiberComponentCount B S hS f p.val
 ```
 
-**`AlgebraicGeometry.Space.numberGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean#L372). The attribute's comment: “base change”.
+**`AlgebraicGeometry.Space.numberGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricComponentCount.lean#L372). The attribute's comment: “base change”.
 
 > **Stacks 0E1B.** Formation of the number of geometric connected components of the fibres
 > commutes with arbitrary base change: the function attached to the projection `F ×_G H ⟶ H` is
@@ -42,7 +42,7 @@ theorem numberGeometricConnectedComponents_baseChange
       numberGeometricConnectedComponents B S hS f ∘ pointsMap B S hS H g
 ```
 
-**`AlgebraicGeometry.Space.numberGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponents.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponents.lean#L114). The attribute's comment: “function”. References: EGA III (4.3.4); EGA IV (4.5.2), “partial”.
+**`AlgebraicGeometry.Space.numberGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponents.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricComponents.lean#L114). The attribute's comment: “function”. References: EGA III (4.3.4); EGA IV (4.5.2), “partial”.
 
 > **Stacks 0E1B.** The number of geometric connected components of the fibres of a morphism
 > of algebraic spaces: the function on the points of the target whose value at `y` is the number
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.30, Tag 0E1A](https://stacks.math.columbia.edu/tag/0E1A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

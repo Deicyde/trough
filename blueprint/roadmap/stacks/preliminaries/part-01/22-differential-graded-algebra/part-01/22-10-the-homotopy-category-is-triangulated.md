@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.10 The homotopy category is triangulated
 
-Section 22.10 of the Stacks Project, [Tag 09KG](https://stacks.math.columbia.edu/tag/09KG). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.10 of the Stacks Project, [Tag 09KG](https://stacks.math.columbia.edu/tag/09KG). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09KH, a lemma
 
 [Tag 09KH](https://stacks.math.columbia.edu/tag/09KH) in the Stacks Project.
 
-**`DifferentialGradedModule.mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_signTwist_mapTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L149). The attribute's comment: “the cone-triangle structure against the admissible-sequence structure: the two are exchanged by the sign-twisted identity of the homotopy category”.
+**`DifferentialGradedModule.mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_signTwist_mapTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/ConeSignTransfer.lean#L149). The attribute's comment: “the cone-triangle structure against the admissible-sequence structure: the two are exchanged by the sign-twisted identity of the homotopy category”.
 
 > **The two pretriangulated structures on `K(Mod_(A, d))` are exchanged by the sign-twisted
 > identity.** A triangle lies in the cone class exactly when its image under `signTwist A` is the
@@ -30,7 +30,7 @@ theorem mem_distinguishedConeTriangles_iff_isDistinguishedTriangle_signTwist_map
       IsDistinguishedTriangle A ((signTwist.{u, v, w} A).mapTriangle.obj T)
 ```
 
-**`DifferentialGradedModule.exists_pretriangulated_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Pretriangulated.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Pretriangulated.lean#L562).
+**`DifferentialGradedModule.exists_pretriangulated_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Pretriangulated.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/Pretriangulated.lean#L562).
 
 > There is a pretriangulated structure on the homotopy category of differential
 > graded modules whose distinguished triangles are precisely those arising from
@@ -46,7 +46,7 @@ theorem exists_pretriangulated_structure :
 
 [Tag 09KI](https://stacks.math.columbia.edu/tag/09KI) in the Stacks Project.
 
-**`DifferentialGradedModule.octahedron_of_admissible_monos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/Octahedron.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/Octahedron.lean#L379).
+**`DifferentialGradedModule.octahedron_of_admissible_monos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/Octahedron.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/Octahedron.lean#L379).
 
 > **Tag 09KI.** Two composable admissible monomorphisms of differential graded modules have
 > distinguished triangles completing them to an octahedron: there are distinguished triangles
@@ -73,7 +73,7 @@ theorem octahedron_of_admissible_monos (α : K ⟶ L) (β : L ⟶ M)
       Triangle.mk a b (d₃ ≫ p₁⟦(1 : ℤ)⟧') ∈ distTriang (HomotopyCategory.{u, v, w} A)
 ```
 
-**`DifferentialGradedModule.octahedron_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Octahedron.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Octahedron.lean#L398).
+**`DifferentialGradedModule.octahedron_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Octahedron.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Octahedron.lean#L398).
 
 > Two composable homomorphisms of differential graded modules have distinguished triangles
 > forming an octahedron.
@@ -103,7 +103,7 @@ theorem octahedron_of_isAdmissibleMono {K L M : DifferentialGradedModule A}
 
 [Tag 09KJ](https://stacks.math.columbia.edu/tag/09KJ) in the Stacks Project.
 
-**`DifferentialGradedModule.instIsTriangulatedHomotopyCategory'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Triangulated.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Triangulated.lean#L71). References: SGA 4½ Etat 0 (1.2.2), “special case”.
+**`DifferentialGradedModule.instIsTriangulatedHomotopyCategory'`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Triangulated.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/Triangulated.lean#L71). References: SGA 4½ Etat 0 (1.2.2), “special case”.
 
 > The homotopy category of differential graded modules is triangulated: the pretriangulated
 > structure of Tag 09KH satisfies the octahedron axiom.
@@ -122,7 +122,7 @@ instance instIsTriangulatedHomotopyCategory' (A : DifferentialGradedAlgebra.{u, 
 
 Declarations registered for the tag:
 
-- [`DifferentialGradedModule.instIsTriangulatedHomotopyCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/Octahedron.lean#L405), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Triangulated.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Triangulated.lean#L27) (StacksFrontier): “the homotopy category is triangulated”.
+- [`DifferentialGradedModule.instIsTriangulatedHomotopyCategory`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/Octahedron.lean#L405), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Triangulated.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/DerivedCategory/Triangulated.lean#L27) (StacksFrontier): “the homotopy category is triangulated”.
 
 ## Depends on
 
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.10, Tag 09KG](https://stacks.math.columbia.edu/tag/09KG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

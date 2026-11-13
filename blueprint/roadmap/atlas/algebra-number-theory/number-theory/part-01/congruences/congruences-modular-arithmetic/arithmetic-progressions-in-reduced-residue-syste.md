@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetic progressions in reduced residue systems
 
-23 results, 8 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html).
+23 results, 8 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html).
 
 ## The reduced residue system $R_m(n)$
 
@@ -19,7 +19,7 @@ $R_m(n) = \{a \in \mathbb{Z} : m + 1 \le a \le m + n,\ \gcd(a, n) = 1\}$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Section 1.
 
-Formalized by `MetaMathlibExt.reducedResidueWindow`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#reduced-residue-window).
+Formalized by `MetaMathlibExt.reducedResidueWindow`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#reduced-residue-window).
 
 ## Longest progression with a given common difference
 
@@ -35,7 +35,7 @@ definition gives $0$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Section 2.
 
-Formalized by `MetaMathlibExt.longestAPLengthWithDiff`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff).
+Formalized by `MetaMathlibExt.longestAPLengthWithDiff`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff).
 
 ## Length of the longest arithmetic progression in a reduced residue system
 
@@ -51,7 +51,7 @@ term counts as a progression of length $1$, and $f_m(n) = 0$ when $R_m(n)$ is em
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Section 1.
 
-Formalized by `MetaMathlibExt.longestAPLength`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength).
+Formalized by `MetaMathlibExt.longestAPLength`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength).
 
 ## Longest progression in the absolute least reduced residues
 
@@ -68,7 +68,7 @@ $R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Section 1.
 
-Formalized by `MetaMathlibExt.absLeastAPLength`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength).
+Formalized by `MetaMathlibExt.absLeastAPLength`, a definition declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength).
 
 ## Length bound for progressions in a reduced residue window
 
@@ -81,7 +81,7 @@ that $b + i d \in R_m(n)$ for every $0 \le i < s$, then $s \le n$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6 (`R_m(n) ⊆ [m + 1, m + n]`).
 
-Formalized by `MetaMathlibExt.apLength_le`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#ap-length-le).
+Formalized by `MetaMathlibExt.apLength_le`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#ap-length-le).
 
 ## The longest progression length is at most the modulus
 
@@ -94,7 +94,7 @@ $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6 (`R_m(n)` has at most `n` elements).
 
-Formalized by `MetaMathlibExt.longestAPLength_le`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-le).
+Formalized by `MetaMathlibExt.longestAPLength_le`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-le).
 
 ## The reduced residue system $R_{-3}(5)$
 
@@ -109,7 +109,7 @@ least reduced residues modulo $5$.
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Example 1(i).
 
-Formalized by `MetaMathlibExt.mem_reducedResidueWindow_neg_three_five`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#mem-reduced-residue-window-neg-three-fiv).
+Formalized by `MetaMathlibExt.mem_reducedResidueWindow_neg_three_five`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#mem-reduced-residue-window-neg-three-fiv).
 
 ## Longest progressions of absolute least residues modulo 5
 
@@ -120,7 +120,7 @@ longest arithmetic progression in the absolute least reduced residue system modu
 
 - Phothila, Thoket and Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Example 1(i).
 
-Formalized by `MetaMathlibExt.absLeastAPLength_five`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-five).
+Formalized by `MetaMathlibExt.absLeastAPLength_five`, a theorem declared in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-five).
 
 ## Prime bound for progressions with a fixed difference
 
@@ -133,7 +133,7 @@ contained in the set $R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and $
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Lemma 1(i).
 
-Stated but not proved: `MetaMathlibExt.longestAPLengthWithDiff_le_prime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff-le-prime-sub).
+Stated but not proved: `MetaMathlibExt.longestAPLengthWithDiff_le_prime_sub_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff-le-prime-sub).
 
 ## Squarefree bound for progressions with a fixed difference
 
@@ -147,7 +147,7 @@ integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Lemma 1(ii).
 
-Stated but not proved: `MetaMathlibExt.longestAPLengthWithDiff_le_gpf_sub_one_of_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff-le-gpf-sub-on).
+Stated but not proved: `MetaMathlibExt.longestAPLengthWithDiff_le_gpf_sub_one_of_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-with-diff-le-gpf-sub-on).
 
 ## Longest progressions of absolute least residues: primes congruent to 1 mod 4
 
@@ -159,7 +159,7 @@ absolute least reduced residue system modulo $p$ is $(p - 1)/2$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_of_mod_four_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-of-mod-four-eq).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_of_mod_four_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-of-mod-four-eq).
 
 ## Longest progressions of absolute least residues: primes congruent to 3 mod 4
 
@@ -171,7 +171,7 @@ absolute least reduced residue system modulo $p$ is $(p + 1)/2$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-of-mod-four-eq-2).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-of-mod-four-eq-2).
 
 ## Longest progressions of absolute least residues: prime powers
 
@@ -183,7 +183,7 @@ progression in the absolute least reduced residue system modulo $p^r$ is $p^{r-1
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-pow).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-prime-pow).
 
 ## Longest progressions of absolute least residues: odd squarefree composite moduli
 
@@ -197,7 +197,7 @@ $g(n) = \lfloor P - (P + 1)/(2d) \rfloor$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_odd_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-odd-squarefree).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_odd_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-odd-squarefree).
 
 ## Longest progressions of absolute least residues: twice an odd prime
 
@@ -209,7 +209,7 @@ residue system modulo $2p$ is $p - 1$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_two_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-two-mul-prime).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_two_mul_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-two-mul-prime).
 
 ## Longest progressions of absolute least residues: neither squarefree nor prime power
 
@@ -224,7 +224,7 @@ $g(n) = \max(n / \operatorname{rad}(n), P - 1)$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_of_not_squarefree_of_not_isPrimePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-of-not-squarefree-of).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_of_not_squarefree_of_not_isPrimePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-of-not-squarefree-of).
 
 ## Longest progressions of absolute least residues: even squarefree, three or more primes
 
@@ -237,7 +237,7 @@ $\lfloor P - 2P/d \rfloor \le g(n) \le P - 1$, and if $d \ge 2P$ then $g(n) = P 
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.absLeastAPLength_even_squarefree_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-even-squarefree-bound).
+Stated but not proved: `MetaMathlibExt.absLeastAPLength_even_squarefree_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#abs-least-aplength-even-squarefree-bound).
 
 ## Maximum longest progression length over all reduced residue windows
 
@@ -252,7 +252,7 @@ $f_m(n)$ over all integers $m$ is $\max(n / \operatorname{rad}(n), \operatorname
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_longestAPLength` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-greatest-longest-aplength).
+Stated but not proved: `MetaMathlibExt.isGreatest_longestAPLength` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-greatest-longest-aplength).
 
 ## Minimum longest progression length modulo a prime $p \equiv 1 \pmod 4$
 
@@ -266,7 +266,7 @@ $m$ is $(p - 1) / 2$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_of_mod_four_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-of-mod-f).
+Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_of_mod_four_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-of-mod-f).
 
 ## Minimum longest progression length modulo a prime $p \equiv 3 \pmod 4$
 
@@ -280,7 +280,7 @@ $m$ is $(p + 1) / 2$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-of-mod-f-2).
+Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_of_mod_four_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-of-mod-f-2).
 
 ## Minimum longest progression length modulo a prime power
 
@@ -294,7 +294,7 @@ integers $m$ is $p^{r-1}$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-pow).
+Stated but not proved: `MetaMathlibExt.isLeast_longestAPLength_prime_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#is-least-longest-aplength-prime-pow).
 
 ## Minimum longest progression length when $n$ is neither squarefree nor a prime power
 
@@ -312,7 +312,7 @@ $f_m(n)$ over all integers $m$ is $n / \operatorname{rad}(n)$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.longestAPLength_min_of_not_squarefree_of_not_isPrimePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-min-of-not-squarefree-o).
+Stated but not proved: `MetaMathlibExt.longestAPLength_min_of_not_squarefree_of_not_isPrimePow` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#longest-aplength-min-of-not-squarefree-o).
 
 ## Average longest progression length for non-squarefree moduli
 
@@ -328,7 +328,7 @@ $\frac{1}{n} \sum_{m=0}^{n-1} f_m(n) = \frac{n}{\operatorname{rad}(n)}$.
 
 - Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.average_longestAPLength_of_not_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#average-longest-aplength-of-not-squarefr).
+Stated but not proved: `MetaMathlibExt.average_longestAPLength_of_not_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ReducedResidueLongestAPWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html#average-longest-aplength-of-not-squarefr).
 
 ## Depends on
 
@@ -337,4 +337,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic progressions in reduced residue systems](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/arithmetic-progressions-in-reduced-residue-syste)

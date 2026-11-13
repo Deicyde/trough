@@ -7,7 +7,7 @@ statement: formalized
 
 # Power sum inequalities for monotone sequences
 
-11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html).
+11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html).
 
 ## Normalised power sums decrease in the exponent
 
@@ -19,7 +19,7 @@ $(\sum_{k=1}^{n} x_k^\alpha)^{1/\alpha} \le (\sum_{k=1}^{n} x_k^\beta)^{1/\beta}
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.power_sum_rpow_one_div_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-rpow-one-div-le).
+Stated but not proved: `MetaMathlibExt.power_sum_rpow_one_div_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-rpow-one-div-le).
 
 ## Lower bound for a power sum at the mean exponent
 
@@ -32,7 +32,7 @@ $S^{[r]} S^{[s]} / \max(x_N^{r/2} S^{[s/2]}, x_N^{s/2} S^{[r/2]}) \le S^{[(r+s)/
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.power_sum_mul_div_max_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-mul-div-max-le).
+Stated but not proved: `MetaMathlibExt.power_sum_mul_div_max_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-mul-div-max-le).
 
 ## Power sums under a larger exponent
 
@@ -47,7 +47,7 @@ assumption is needed here.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 2(i).
 
-Stated but not proved: `MetaMathlibExt.power_sum_le_rpow_of_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-le-rpow-of-le).
+Stated but not proved: `MetaMathlibExt.power_sum_le_rpow_of_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-le-rpow-of-le).
 
 ## Power mean bound for power sums with a smaller exponent
 
@@ -64,7 +64,7 @@ for every $k$ is the paper's $x_1 \ge 1$.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 2(ii), including (4).
 
-Stated but not proved: `MetaMathlibExt.power_sum_le_card_mul_rpow_of_lt` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-le-card-mul-rpow-of-lt).
+Stated but not proved: `MetaMathlibExt.power_sum_le_card_mul_rpow_of_lt` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#power-sum-le-card-mul-rpow-of-lt).
 
 ## Upper bound for Fibonacci power sums with exponent at least 2
 
@@ -78,7 +78,7 @@ In the paper $\alpha = (r + s)/2$.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 3(i).
 
-Stated but not proved: `MetaMathlibExt.sum_fib_rpow_le_of_two_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-le-of-two-le).
+Stated but not proved: `MetaMathlibExt.sum_fib_rpow_le_of_two_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-le-of-two-le).
 
 ## Upper bounds for Fibonacci power sums with exponent below 2
 
@@ -93,7 +93,7 @@ In the paper $\alpha = (r + s)/2$.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 3(ii).
 
-Stated but not proved: `MetaMathlibExt.sum_fib_rpow_le_card_mul_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-le-card-mul-rpow).
+Stated but not proved: `MetaMathlibExt.sum_fib_rpow_le_card_mul_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-le-card-mul-rpow).
 
 ## Lower bound for a weighted power sum at the mean exponent
 
@@ -106,7 +106,7 @@ $S^{[r]} S^{[s]} / \max(x_N^{r/2} S^{[s/2]}, x_N^{s/2} S^{[r/2]}) \le S^{[(r+s)/
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.weighted_power_sum_mul_div_max_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-power-sum-mul-div-max-le).
+Stated but not proved: `MetaMathlibExt.weighted_power_sum_mul_div_max_le` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-power-sum-mul-div-max-le).
 
 ## Weighted power mean bound for power sums with a smaller exponent
 
@@ -123,7 +123,7 @@ In the paper $\alpha = (r + s)/2$ and the sequence is monotone.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 4(ii).
 
-Stated but not proved: `MetaMathlibExt.weighted_power_sum_le_mul_rpow_of_lt` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-power-sum-le-mul-rpow-of-lt).
+Stated but not proved: `MetaMathlibExt.weighted_power_sum_le_mul_rpow_of_lt` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-power-sum-le-mul-rpow-of-lt).
 
 ## Weighted power-mean bounds for Fibonacci numbers
 
@@ -142,7 +142,7 @@ In the source the exponent is $\alpha = (r + s)/2$.
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 5(ii).
 
-Stated but not proved: `MetaMathlibExt.weighted_sum_fib_rpow_le_mul_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-sum-fib-rpow-le-mul-rpow).
+Stated but not proved: `MetaMathlibExt.weighted_sum_fib_rpow_le_mul_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#weighted-sum-fib-rpow-le-mul-rpow).
 
 ## Classical Fibonacci sum identities
 
@@ -159,7 +159,7 @@ These are parts (b), (c), (d), (e) and (g) of Lemma 1 of the paper, quoted there
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.fib_power_sum_identities` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#fib-power-sum-identities).
+Stated but not proved: `MetaMathlibExt.fib_power_sum_identities` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#fib-power-sum-identities).
 
 ## Product of two Fibonacci power sums
 
@@ -174,7 +174,7 @@ The paper quotes this result from its reference [2].
 
 - Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.sum_fib_rpow_mul_sum_fib_rpow_ge` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-mul-sum-fib-rpow-ge).
+Stated but not proved: `MetaMathlibExt.sum_fib_rpow_mul_sum_fib_rpow_ge` is written with `theorem_wanted` in [WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MonotonePowerSumInequalitiesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html#sum-fib-rpow-mul-sum-fib-rpow-ge).
 
 ## Depends on
 
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Power sum inequalities for monotone sequences](https://deicyde.github.io/atlas-lean/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/inequalities/power-sum-inequalities-for-monotone-sequences)

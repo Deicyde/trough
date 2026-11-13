@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.43 Blowing up complexes, II
 
-Section 38.43 of the Stacks Project, [Tag 0F8R](https://stacks.math.columbia.edu/tag/0F8R). 14 tags here are carried by 57 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.43 of the Stacks Project, [Tag 0F8R](https://stacks.math.columbia.edu/tag/0F8R). 14 tags here are carried by 52 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F8S, a situation
 
 [Tag 0F8S](https://stacks.math.columbia.edu/tag/0F8S) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ComplexAndDivisor.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ComplexAndDivisor.lean#L43).
+**`AlgebraicGeometry.ComplexAndDivisorSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ComplexAndDivisor.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ComplexAndDivisor.lean#L43).
 
 > **Stacks Project, Tag 0F8S.** The standing situation of a perfect derived object on a
 > scheme together with an effective Cartier divisor on that scheme.
@@ -27,7 +27,7 @@ structure ComplexAndDivisorSituation
 
 [Tag 0F8T](https://stacks.math.columbia.edu/tag/0F8T) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/AffineChartRestrict.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/AffineChartRestrict.lean#L291). The attribute's comment: “part (1) in the case `h = 𝟙 X`: the restriction of an affine chart to a smaller affine open `V ⊆ U` is an affine chart, with representing complex `M^• ⊗_A Γ(X, V)`. The case of a general `h` is AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback in StacksFrontier.AlgebraicGeometry.Flatness.BlowUpSquare.ChartPullback, which carries the tag too.”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/AffineChartRestrict.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/AffineChartRestrict.lean#L291). The attribute's comment: “part (1) in the case `h = 𝟙 X`: the restriction of an affine chart to a smaller affine open `V ⊆ U` is an affine chart, with representing complex `M^• ⊗_A Γ(X, V)`. The case of a general `h` is AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback in StacksFrontier.AlgebraicGeometry.Flatness.BlowUpSquare.ChartPullback, which carries the tag too.”.
 
 > **Stacks tag 0F8T, part (1), for the inclusion of an affine open into a chart.**  An affine
 > chart `(U, A, f, M^•)` for a triple `(X, D, M)` as in Situation 0F8S restricts to an affine chart
@@ -46,7 +46,7 @@ def restrict (C : AffineChart S) (V : S.X.affineOpens)
     (hle : (V : S.X.Opens) ≤ (C.U : S.X.Opens)) : AffineChart S
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.map_determinantalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBaseChange.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBaseChange.lean#L59). The attribute's comment: “the determinantal ideals of an affine chart under base change”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.map_determinantalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBaseChange.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBaseChange.lean#L59). The attribute's comment: “the determinantal ideals of an affine chart under base change”.
 
 > **Stacks Project, Tag 0F8T, second assertion.** For an affine chart `(U, A, f, M^•)` and a
 > ring map `φ : A ⟶ B`, the ideal generated in `B` by the determinantal ideal `I_i(M^•, f)` is the
@@ -58,7 +58,7 @@ public theorem map_determinantalIdeal (C : AffineChart S) {B : Type u} [CommRing
     Ideal.map φ (C.determinantalIdeal i) = idealI (C.complex.baseChange φ) (φ C.f) i
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L337). The attribute's comment: “part (1): an affine chart pulls back, along an arbitrary morphism `h` for which the pullback of the divisor is defined, to an affine chart of the pulled-back triple over any affine open of the source lying over its domain”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L337). The attribute's comment: “part (1): an affine chart pulls back, along an arbitrary morphism `h` for which the pullback of the divisor is defined, to an affine chart of the pulled-back triple over any affine open of the source lying over its domain”.
 
 > **Stacks tag 0F8T, part (1).**  Let `(X, D, M)` be a triple as in Situation 0F8S, let
 > `h : Y ⟶ X` be a morphism of schemes along which the pullback `E = h⁻¹D` of the divisor is
@@ -76,7 +76,7 @@ def pullback (C : AffineChart S) {Y : Scheme.{u}} (h : Y ⟶ S.X)
     (hV : (V : Y.Opens) ≤ h ⁻¹ᵁ (C.U : S.X.Opens)) : AffineChart (S.pullback h hD)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isGoodTriple_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L413). The attribute's comment: “part (3): goodness of a triple is inherited by the pulled-back triple”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isGoodTriple_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L413). The attribute's comment: “part (3): goodness of a triple is inherited by the pulled-back triple”.
 
 > **Stacks tag 0F8T, part (3).**  If `(X, D, M)` is a good triple and `h : Y ⟶ X` is a
 > morphism of schemes along which the pullback `E = h⁻¹D` of the divisor is defined, then
@@ -93,7 +93,7 @@ theorem isGoodTriple_pullback (S : ComplexAndDivisorSituation.{u, d}) {Y : Schem
     IsGoodTriple (S.pullback h hD)
 ```
 
-**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPerfect_uniqFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean#L194).
+**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPerfect_uniqFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean#L194).
 
 > **Perfectness survives a change of model of the derived category.**  The canonical
 > equivalence between two localizations of the complexes at the quasi-isomorphisms carries a
@@ -114,13 +114,13 @@ theorem isPerfect_uniqFunctor_obj {X : RingedSpace.{u, u}}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback_determinantalIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L384), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullbackRepresents.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullbackRepresents.lean#L337) (StacksFrontier): “part (2) for a general `h`: the determinantal ideals of the chart base-changed along the ring map induced by `h` on the two affine opens”.
+- [`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pullback_determinantalIdeal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullback.lean#L384), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullbackRepresents.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartPullbackRepresents.lean#L337) (StacksFrontier): “part (2) for a general `h`: the determinantal ideals of the chart base-changed along the ring map induced by `h` on the two affine opens”.
 
 ## Tag 0GTW, a lemma
 
 [Tag 0GTW](https://stacks.math.columbia.edu/tag/0GTW) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEtaData_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalage.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalage.lean#L192). The attribute's comment: “Lη\_I M is perfect for a good triple (X, D, M); Lη\_I is Stacks.Divisors.Eta.derivedEtaData, and M is carried to its model of D(𝒪\_X) by the canonical equivalence of localizations”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEtaData_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalage.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalage.lean#L192). The attribute's comment: “Lη\_I M is perfect for a good triple (X, D, M); Lη\_I is Stacks.Divisors.Eta.derivedEtaData, and M is carried to its model of D(𝒪\_X) by the canonical equivalence of localizations”.
 
 > **[Stacks, Tag 0GTW].** Let `X, D, I, M` be as in Situation 0F8S. If `(X, D, M)` is a good
 > triple, then `Lη_I M` is a perfect object of `D(𝒪_X)`. Here `Lη_I` is the derived décalage of
@@ -133,7 +133,7 @@ theorem isPerfect_derivedEtaData_obj (S : ComplexAndDivisorSituation.{u, d})
       ((derivedEtaData S.D).functor.obj S.standardM)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodTriple.isPerfect_derivedEta_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean#L411).
+**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodTriple.isPerfect_derivedEta_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartDecalageExistence.lean#L415).
 
 > **Stacks tag 0GTW.**  Let `X`, `D`, `I`, `M` be as in Situation 0F8S.  If `(X, D, M)` is a
 > good triple, then `Lη_I M` is a perfect object of `D(𝒪_X)`.
@@ -145,7 +145,11 @@ theorem isPerfect_derivedEtaData_obj (S : ComplexAndDivisorSituation.{u, d})
 > `ComplexAndDivisorSituation.exists_chart_isPrincipal_determinantalIdeal_of_notMem_supportSet`.
 > The derived décalage is any `Stacks.Divisors.Eta.DerivedEta` of the divisor at the model of
 > `D(𝒪_X)` the triple carries; for a triple at the standard model it may be taken to be
-> `Stacks.Divisors.Eta.derivedEtaData`.
+> `Stacks.Divisors.Eta.derivedEtaData`, the functor of tag 0F8Q, and for that functor applied to
+> the object carried to the standard model this is
+> `AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEtaData_obj`.  The untagged
+> `AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEta_obj_of_isGoodTriple` is the
+> same statement with the affine-chart comparison as a hypothesis.
 
 ```lean
 theorem IsGoodTriple.isPerfect_derivedEta_obj (S : ComplexAndDivisorSituation.{u, d})
@@ -153,52 +157,11 @@ theorem IsGoodTriple.isPerfect_derivedEta_obj (S : ComplexAndDivisorSituation.{u
     RingedSpace.IsPerfect (X := S.X.toRingedSpace) (E.functor.obj S.M)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEta_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPerfect.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPerfect.lean#L306). The attribute's comment: “granted Stacks 0F8Q as the hypothesis E, bundled as Stacks.Divisors.Eta.DerivedEta, and the second assertion of Stacks 0GTV as the hypothesis hcomp; neither is proved in this library. The hypothesis hoff supplies the affine charts with principal determinantal ideals at the points off D, which the source leaves implicit”.
-
-> **[Stacks, Tag 0GTW].** Let `X`, `D`, `I`, `M` be as in Situation 0F8S. If `(X, D, M)` is a
-> good triple, then `Lη_I M` is a perfect object of `D(𝒪_X)`.
->
-> The functor `Lη_I` is the hypothesis `E` (tag 0F8Q) and the affine-chart comparison is the
-> hypothesis `hcomp` (the second assertion of tag 0GTV); `hoff` supplies at the points off `D`
-> the charts with principal determinantal ideals that good-triple-ness supplies at the points of
-> `D`. See the module documentation for why each is carried.
->
-> Perfectness of a complex is local, so it is enough that, around every point of `X`, a
-> representative of `Lη_I M` restricts to a perfect complex. A chart with principal determinantal
-> ideals is such an open: by `hcomp` another representative restricts to a complex joined by a
-> roof of quasi-isomorphisms to the complex coming from the algebraic décalage of the chart, which
-> is strictly perfect by the translation of tag 0F7W, and the two representatives are joined by a
-> roof which restricts to the chart.
-
-```lean
-theorem isPerfect_derivedEta_obj (S : ComplexAndDivisorSituation.{u, d})
-    (E : Stacks.Divisors.Eta.DerivedEta S.D)
-    (hS : IsGoodTriple S)
-    (hoff : ∀ x ∉ S.D.supportSet, ∃ C : AffineChart S,
-      x ∈ (C.U : Set S.X) ∧ ∀ i : ℤ, (C.determinantalIdeal i).IsPrincipal)
-    (hcomp : ChartDecalage S E) :
-    RingedSpace.IsPerfect (X := S.X.toRingedSpace) (E.functor.obj S.M)
-```
-
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_derivedEta_obj_of_isGoodTriple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPerfectOffDivisor.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPerfectOffDivisor.lean#L55). The attribute's comment: “perfectness of Lη\_I M for a good triple, proved for every functor Lη\_I with the properties Stacks 0F8Q gives it --- the structure Stacks.Divisors.Eta.DerivedEta, realized for the ideal sheaf of an effective Cartier divisor by Stacks.Divisors.Eta.derivedEtaData --- and for every affine-chart comparison of the shape of Stacks 0GTV's second assertion read at an affine open of X”.
-
-> If `(X, D, M)` is a good triple, then `Lη_I M` is a perfect object of `D(𝒪_X)`, for every
-> functor `Lη_I` with the properties of tag 0F8Q and every affine-chart comparison of the shape of
-> the second assertion of tag 0GTV.
-
-```lean
-theorem isPerfect_derivedEta_obj_of_isGoodTriple (S : ComplexAndDivisorSituation.{u, d})
-    (E : Stacks.Divisors.Eta.DerivedEta S.D)
-    (hS : IsGoodTriple S)
-    (hcomp : ChartDecalage S E) :
-    RingedSpace.IsPerfect (X := S.X.toRingedSpace) (E.functor.obj S.M)
-```
-
 ## Tag 0GTX, a lemma
 
 [Tag 0GTX](https://stacks.math.columbia.edu/tag/0GTX) in the Stacks Project.
 
-**`Stacks.BlowUpComplexes.exists_isLocallyBoundedFiniteLocallyFree_derivedEta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean#L535).
+**`Stacks.BlowUpComplexes.exists_isLocallyBoundedFiniteLocallyFree_derivedEta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean#L535).
 
 > **Stacks Project, Tag 0GTX.**  Let `X` be a scheme, `D ⊆ X` an effective Cartier divisor
 > with ideal sheaf `ℐ`, and `M` a perfect object of `D(𝒪_X)`, and assume `(X, D, M)` is a good
@@ -227,7 +190,7 @@ theorem exists_isLocallyBoundedFiniteLocallyFree_derivedEta (X : Scheme.{u})
 
 [Tag 0F9X](https://stacks.math.columbia.edu/tag/0F9X) in the Stacks Project.
 
-**`Stacks.Divisors.Eta.isIso_derivedEtaPullbackComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedPullbackComparison.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedPullbackComparison.lean#L286). The attribute's comment: “the case of a flat h, which neither implies nor is implied by the source's statement: flatness replaces goodness of the triple, and no goodness is used. the general case, for an arbitrary h and a good triple, is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso”.
+**`Stacks.Divisors.Eta.isIso_derivedEtaPullbackComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedPullbackComparison.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EtaDerivedPullbackComparison.lean#L287). The attribute's comment: “the case of a flat h, which neither implies nor is implied by the source's statement: flatness replaces goodness of the triple, and no goodness is used. the general case, for an arbitrary h and a good triple, is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso”.
 
 > **[Stacks, Tag 0F9X] for a flat morphism.**  Let `X` be a scheme, let `D ⊆ X` be an effective
 > Cartier divisor with ideal sheaf `I = ℐ_D`, let `h : Y ⟶ X` be a flat morphism of schemes and
@@ -249,7 +212,7 @@ theorem isIso_derivedEtaPullbackComparison
     IsIso (derivedEtaPullbackComparison h D hflat K)
 ```
 
-**`Stacks.Divisors.Eta.nonempty_derivedPullback_derivedEta_iso_of_forall_stalk_good`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaGoodBaseChange/GeneralComparison.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EtaGoodBaseChange/GeneralComparison.lean#L220). The attribute's comment: “the general case --- goodness in place of flatness, with goodness of the triple (Situation 0F8S) read at the stalks: at every point z of Y the stalk complex of the chosen representative is represented in the derived category of the local ring O\_\{X,h(z)} by a bounded complex C of finite free modules whose determinantal ideals I\_i(C, a) are all principal, a being a generator of the stalk of the ideal sheaf. The passage from AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodTriple to that stalkwise reading is AlgebraicGeometry.ComplexAndDivisorSituation.exists\_affineOpen\_stalk\_goodModel, and the statement of the tag at a good triple is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso. The case of a flat h, which neither implies nor is implied by this one, is Stacks.Divisors.Eta.isIso\_derivedEtaPullbackComparison”.
+**`Stacks.Divisors.Eta.nonempty_derivedPullback_derivedEta_iso_of_forall_stalk_good`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EtaGoodBaseChange/GeneralComparison.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EtaGoodBaseChange/GeneralComparison.lean#L220). The attribute's comment: “the general case --- goodness in place of flatness, with goodness of the triple (Situation 0F8S) read at the stalks: at every point z of Y the stalk complex of the chosen representative is represented in the derived category of the local ring O\_\{X,h(z)} by a bounded complex C of finite free modules whose determinantal ideals I\_i(C, a) are all principal, a being a generator of the stalk of the ideal sheaf. The passage from AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodTriple to that stalkwise reading is AlgebraicGeometry.ComplexAndDivisorSituation.exists\_affineOpen\_stalk\_goodModel, and the statement of the tag at a good triple is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso. The case of a flat h, which neither implies nor is implied by this one, is Stacks.Divisors.Eta.isIso\_derivedEtaPullbackComparison”.
 
 > **[Stacks, Tag 0F9X] with goodness in place of flatness.**  Let `X` be a scheme, let
 > `D ⊆ X` be an effective Cartier divisor with ideal sheaf `I = ℐ_D`, let `h : Y ⟶ X` be an
@@ -290,7 +253,7 @@ theorem nonempty_derivedPullback_derivedEta_iso_of_forall_stalk_good
         ((derivedPullback h.toLRSHom.toShHom).obj M))
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.derivedEtaPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullback.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullback.lean#L139). The attribute's comment: “the case of a flat h, with no goodness hypothesis, which is therefore neither weaker nor stronger than the source's statement. the general case, for an arbitrary h and a good triple, is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.derivedEtaPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullback.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullback.lean#L139). The attribute's comment: “the case of a flat h, with no goodness hypothesis, which is therefore neither weaker nor stronger than the source's statement. the general case, for an arbitrary h and a good triple, is AlgebraicGeometry.ComplexAndDivisorSituation.nonempty\_derivedPullback\_derivedEta\_iso”.
 
 > **[Stacks, Tag 0F9X] for a flat morphism.**  Let `X`, `D`, `I`, `M` be as in Situation 0F8S,
 > let `h : Y ⟶ X` be a flat morphism of schemes such that the pullback `E = h^{-1}D` is defined,
@@ -330,7 +293,7 @@ def derivedEtaPullbackIso (S : ComplexAndDivisorSituation.{u, d}) {Y : Scheme.{u
         (S.derivedPullbackObject h)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_derivedPullback_derivedEta_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullbackGeneral.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullbackGeneral.lean#L222). The attribute's comment: “the whole statement: for a good triple and an arbitrary morphism `h` along which the inverse image of the divisor is defined, `Lh^*(Lη_I M) ≅ Lη_J(Lh^* M)`. Goodness enters through its reading at the stalks, AlgebraicGeometry.ComplexAndDivisorSituation.exists\_affineOpen\_stalk\_goodModel, and the ring-level input is Stacks 0F7X in the form Stacks.Eta.GoodBaseChange.quasiIso\_baseChangeMap\_comp\_etaBaseChangeMap\_of\_kFlat. The case of a flat h without goodness is Stacks.Divisors.Eta.isIso\_derivedEtaPullbackComparison”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_derivedPullback_derivedEta_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullbackGeneral.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleEtaPullbackGeneral.lean#L222). The attribute's comment: “the whole statement: for a good triple and an arbitrary morphism `h` along which the inverse image of the divisor is defined, `Lh^*(Lη_I M) ≅ Lη_J(Lh^* M)`. Goodness enters through its reading at the stalks, AlgebraicGeometry.ComplexAndDivisorSituation.exists\_affineOpen\_stalk\_goodModel, and the ring-level input is Stacks 0F7X in the form Stacks.Eta.GoodBaseChange.quasiIso\_baseChangeMap\_comp\_etaBaseChangeMap\_of\_kFlat. The case of a flat h without goodness is Stacks.Divisors.Eta.isIso\_derivedEtaPullbackComparison”.
 
 > **[Stacks, Tag 0F9X].**  Let `(X, D, M)` be a triple as in Situation 0F8S, with `ℐ` the ideal
 > sheaf of `D`, and let `h : Y ⟶ X` be a morphism of schemes such that the inverse image
@@ -359,7 +322,7 @@ theorem nonempty_derivedPullback_derivedEta_iso (hgood : S.IsGoodTriple) {Y : Sc
 
 [Tag 0GTY](https://stacks.math.columbia.edu/tag/0GTY) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isAdmissibleBlowup_blowUpToBase_blowupCentreIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean#L210). The attribute's comment: “the admissibility assertion over an affine chart: the blowing up of the chart in the product of its determinantal ideals, which is what `b` restricts to there, is a `(U \ D)`-admissible blowing up”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isAdmissibleBlowup_blowUpToBase_blowupCentreIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean#L210). The attribute's comment: “the admissibility assertion over an affine chart: the blowing up of the chart in the product of its determinantal ideals, which is what `b` restricts to there, is a `(U \ D)`-admissible blowing up”.
 
 > **Stacks tag 0GTY, the admissibility assertion over an affine chart.**  Over an affine chart
 > `(U, A, f, M^•)` the morphism `b` of the tag is the blowing up of `U` in the product
@@ -374,7 +337,7 @@ theorem isAdmissibleBlowup_blowUpToBase_blowupCentreIdealSheaf (C : AffineChart 
       (AlgebraicGeometry.blowUpToBase C.blowupCentreIdealSheaf)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isGoodOver_chartBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean#L421). The attribute's comment: “clause (1) over an affine chart: the triple pulled back along the blowing up of the chart in the product of its determinantal ideals --- which is what `b` restricts to over the chart --- is a good triple, and the pullback of `D` along it is defined”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isGoodOver_chartBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupAdmissible.lean#L421). The attribute's comment: “clause (1) over an affine chart: the triple pulled back along the blowing up of the chart in the product of its determinantal ideals --- which is what `b` restricts to over the chart --- is a good triple, and the pullback of `D` along it is defined”.
 
 > **Stacks tag 0GTY, clause (1) over an affine chart.**  Let `(U, A, f, M^•)` be an affine
 > chart for the triple `(X, D, M)` and let `b_U : U' ⟶ U` be the blowing up of `U` in the product
@@ -394,7 +357,7 @@ theorem isGoodOver_chartBlowupToBase (C : AffineChart S) :
     S.IsGoodOver C.chartBlowupToBase
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_lift_chartBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean#L248). The attribute's comment: “clause (2) over an affine chart: a morphism to the chart whose composite with the inclusion of the chart is good for the triple factors uniquely through the blowing up of the chart in the product of its determinantal ideals, which is what `b` restricts to there”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_lift_chartBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ChartBlowupUniversal.lean#L248). The attribute's comment: “clause (2) over an affine chart: a morphism to the chart whose composite with the inclusion of the chart is good for the triple factors uniquely through the blowing up of the chart in the product of its determinantal ideals, which is what `b` restricts to there”.
 
 > **Stacks tag 0GTY, clause (2) over an affine chart.**  Let `(U, A, f, M^•)` be an affine chart
 > for the triple `(X, D, M)` and let `b_U : U' ⟶ U` be the blowing up of `U` in the product
@@ -413,7 +376,7 @@ theorem existsUnique_lift_chartBlowup (C : AffineChart S) {Y : Scheme.{u}}
       k ≫ blowUpToBase C.blowupCentreIdealSheaf = b
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isAdmissibleBlowup_morphismRestrict_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupQuasiCompact.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupQuasiCompact.lean#L399). The attribute's comment: “the quasi-compact-open admissibility assertion: for a quasi-compact open `W ⊂ X` the restriction `b|_{b^{-1}(W)} : b^{-1}(W) ⟶ W` of the morphism of the tag is a `W \ D`-admissible blowing up. The centre is glued from the normalized determinantal products of the charts of a finite cover of `W`, with the product taken over a finite degree window containing the supports of those finitely many charts' complexes”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isAdmissibleBlowup_morphismRestrict_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupQuasiCompact.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupQuasiCompact.lean#L399). The attribute's comment: “the quasi-compact-open admissibility assertion: for a quasi-compact open `W ⊂ X` the restriction `b|_{b^{-1}(W)} : b^{-1}(W) ⟶ W` of the morphism of the tag is a `W \ D`-admissible blowing up. The centre is glued from the normalized determinantal products of the charts of a finite cover of `W`, with the product taken over a finite degree window containing the supports of those finitely many charts' complexes”.
 
 > **Stacks tag 0GTY, the quasi-compact-open admissibility assertion.**  In Situation 0F8S let
 > `b : X' ⟶ X` be the morphism of tag 0GTY and let `W ⊂ X` be a quasi-compact open.  Then
@@ -431,7 +394,7 @@ theorem isAdmissibleBlowup_morphismRestrict_goodBlowupToBase
       (S.goodBlowupToBase ∣_ W)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.existsUnique_isGoodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean#L87). The attribute's comment: “the existence and uniqueness assertion: there is a morphism `b : X' ⟶ X` whose pullback of `D` is defined and makes the pulled-back triple good, through which every morphism to `X` with defined pullback of `D` and good pulled-back triple factors uniquely, and any two such morphisms are identified by a unique isomorphism over `X`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.existsUnique_isGoodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean#L87). The attribute's comment: “the existence and uniqueness assertion: there is a morphism `b : X' ⟶ X` whose pullback of `D` is defined and makes the pulled-back triple good, through which every morphism to `X` with defined pullback of `D` and good pulled-back triple factors uniquely, and any two such morphisms are identified by a unique isomorphism over `X`”.
 
 > **Stacks tag 0GTY: the existence and uniqueness assertion.**  In Situation 0F8S there is a
 > morphism `b : X' ⟶ X` such that
@@ -455,7 +418,7 @@ theorem existsUnique_isGoodBlowup :
         ∃! e : X'' ≅ X', e.hom ≫ b = b'
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_iso_preimage_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean#L108). The attribute's comment: “the affine-chart description: over an affine chart `(U, A, f, M^•)` the restriction `b⁻¹(U) ⟶ U` of the morphism of the tag is the blowing up of `U` in the product of the determinantal ideals `I_i(M^•, f)` of the chart, by a unique isomorphism over `U`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_iso_preimage_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupTag.lean#L108). The attribute's comment: “the affine-chart description: over an affine chart `(U, A, f, M^•)` the restriction `b⁻¹(U) ⟶ U` of the morphism of the tag is the blowing up of `U` in the product of the determinantal ideals `I_i(M^•, f)` of the chart, by a unique isomorphism over `U`”.
 
 > **Stacks tag 0GTY: the affine-chart description of `b`.**  Over an affine chart
 > `(U, A, f, M^•)` for the triple, the restriction `b⁻¹(U) ⟶ U` of the morphism of the tag is the
@@ -475,7 +438,7 @@ theorem existsUnique_iso_preimage_blowUp (C : AffineChart S) :
         S.goodBlowupToBase ∣_ (C.U : S.X.Opens)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.blowupCentre_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean#L177). The attribute's comment: “the centre `∏ᵢ I_i(M^•, f)` of the blowup over an affine chart is of finite type; for the blowup in it over an affine chart --- its admissibility, the goodness of the pulled-back triple and its universal property --- see `ChartBlowupAdmissible.lean` and `ChartBlowupUniversal.lean`, and for the morphism `b : X' ⟶ X` glued from them see `GoodBlowupTag.lean`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.blowupCentre_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean#L177). The attribute's comment: “the centre `∏ᵢ I_i(M^•, f)` of the blowup over an affine chart is of finite type; for the blowup in it over an affine chart --- its admissibility, the goodness of the pulled-back triple and its universal property --- see `ChartBlowupAdmissible.lean` and `ChartBlowupUniversal.lean`, and for the morphism `b : X' ⟶ X` glued from them see `GoodBlowupTag.lean`”.
 
 > **Stacks tag 0GTY, the centre of the blowup over an affine chart: finite type.**  The
 > product of the determinantal ideals is finitely generated, being a finite product of finitely
@@ -488,7 +451,7 @@ theorem existsUnique_iso_preimage_blowUp (C : AffineChart S) :
 theorem blowupCentre_fg (C : AffineChart S) : C.blowupCentre.FG
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pow_mem_blowupCentre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean#L193). The attribute's comment: “the centre `∏ᵢ I_i(M^•, f)` of the blowup over an affine chart contains a power of the equation of the divisor, hence is supported on it; for the blowup in it over an affine chart --- its admissibility, the goodness of the pulled-back triple and its universal property --- see `ChartBlowupAdmissible.lean` and `ChartBlowupUniversal.lean`, and for the morphism `b : X' ⟶ X` glued from them see `GoodBlowupTag.lean`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.pow_mem_blowupCentre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTriple.lean#L193). The attribute's comment: “the centre `∏ᵢ I_i(M^•, f)` of the blowup over an affine chart contains a power of the equation of the divisor, hence is supported on it; for the blowup in it over an affine chart --- its admissibility, the goodness of the pulled-back triple and its universal property --- see `ChartBlowupAdmissible.lean` and `ChartBlowupUniversal.lean`, and for the morphism `b : X' ⟶ X` glued from them see `GoodBlowupTag.lean`”.
 
 > **Stacks tag 0GTY, the centre of the blowup over an affine chart: supported on the
 > divisor.**  The power `f ^ (∑ᵢ rᵢ)` of the equation of `D ∩ U` lies in the product of the
@@ -501,7 +464,7 @@ theorem pow_mem_blowupCentre (C : AffineChart S) :
     C.f ^ (∑ i ∈ C.complex.bounded.toFinset, C.complex.rank i) ∈ C.blowupCentre
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isGoodBlowup_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L132). The attribute's comment: “the morphism `b`, in the case where `𝟙 X` is good for the triple: the identity of `X` then has both properties of the tag, so `b` may be taken to be `𝟙 X`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isGoodBlowup_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L132). The attribute's comment: “the morphism `b`, in the case where `𝟙 X` is good for the triple: the identity of `X` then has both properties of the tag, so `b` may be taken to be `𝟙 X`”.
 
 > **The existence assertion of Stacks tag 0GTY for a triple that is already good.**  If `𝟙 X`
 > is good for `(X, D, M)` then it has both properties (1) and (2) of the tag: property (1) is the
@@ -511,7 +474,7 @@ theorem pow_mem_blowupCentre (C : AffineChart S) :
 theorem isGoodBlowup_id (h : S.IsGoodOver (𝟙 S.X)) : S.IsGoodBlowup (𝟙 S.X)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L155). The attribute's comment: “the uniqueness assertion: any two morphisms to `X` with properties (1) and (2) of the tag are identified by a unique isomorphism over `X`, which is what it means for the morphism the tag describes to be unique”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L155). The attribute's comment: “the uniqueness assertion: any two morphisms to `X` with properties (1) and (2) of the tag are identified by a unique isomorphism over `X`, which is what it means for the morphism the tag describes to be unique”.
 
 > **The uniqueness assertion of Stacks tag 0GTY.**  Two morphisms to `X` with properties (1)
 > and (2) are identified by a unique isomorphism over `X`.
@@ -526,7 +489,7 @@ theorem existsUnique_iso {X₁ X₂ : Scheme.{u}} {b₁ : X₁ ⟶ S.X} {b₂ : 
     ∃! e : X₁ ≅ X₂, e.hom ≫ b₂ = b₁
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_of_isGoodOver_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L171). The attribute's comment: “the morphism `b` over a triple for which `𝟙 X` is good: any morphism with the two properties of the tag is then an isomorphism”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_of_isGoodOver_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowup.lean#L171). The attribute's comment: “the morphism `b` over a triple for which `𝟙 X` is good: any morphism with the two properties of the tag is then an isomorphism”.
 
 > A morphism with properties (1) and (2) of Stacks tag 0GTY over a triple for which `𝟙 X` is
 > already good is an isomorphism.  By
@@ -538,7 +501,7 @@ theorem existsUnique_iso {X₁ X₂ : Scheme.{u}} {b₁ : X₁ ⟶ S.X} {b₂ : 
 theorem isIso_of_isGoodOver_id (hb : S.IsGoodBlowup b) (h : S.IsGoodOver (𝟙 S.X)) : IsIso b
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isPullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowupGlue.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowupGlue.lean#L337). The attribute's comment: “over every affine chart, b is the blowing up in the product of the determinantal ideals”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isPullback_blowUpToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowupGlue.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleBlowupGlue.lean#L337). The attribute's comment: “over every affine chart, b is the blowing up in the product of the determinantal ideals”.
 
 > **Stacks tag 0GTY, over an affine chart.**  For every affine chart `(U, A, f, M^•)` of the
 > triple, the part `b⁻¹(U) ⟶ U` of `b` over `U` is the blowing up of `U` in the product
@@ -560,7 +523,7 @@ theorem exists_isPullback_blowUpToBase (S : ComplexAndDivisorSituation.{u, d})
 
 [Tag 0F8U](https://stacks.math.columbia.edu/tag/0F8U) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDecalagePerfect.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDecalagePerfect.lean#L58). The attribute's comment: “`Q = Lη_{I'} Lb^* M` is perfect, for `b` the morphism goodBlowupToBase of tag 0GTY (existsUnique\_isGoodBlowup), `Lη_{I'}` the derived décalage Stacks.Divisors.Eta.derivedEtaData of `D' = b⁻¹D` and `Lb^*` the derived pullback of modules”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDecalagePerfect.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDecalagePerfect.lean#L58). The attribute's comment: “`Q = Lη_{I'} Lb^* M` is perfect, for `b` the morphism goodBlowupToBase of tag 0GTY (existsUnique\_isGoodBlowup), `Lη_{I'}` the derived décalage Stacks.Divisors.Eta.derivedEtaData of `D' = b⁻¹D` and `Lb^*` the derived pullback of modules”.
 
 > **Stacks tag 0F8U.**  In Situation 0F8S let `b : X' ⟶ X` be the morphism of Stacks tag 0GTY
 > and `D' = b⁻¹D`, with ideal sheaf `ℐ'`.  Then `Q = Lη_{ℐ'}Lb^*M` is a perfect object of
@@ -573,7 +536,7 @@ theorem isPerfect_etaDerivedPullbackObject_goodBlowup :
         S.isGoodOver_goodBlowupToBase.pullbackDefined)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupEtaPerfect.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupEtaPerfect.lean#L83). The attribute's comment: “perfectness of `Q = Lη_{I'} Lb^* M` for the morphism `b` of tag 0GTY itself, namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase, with the datum `hcomp` of the formalization of tag 0GTW: the second assertion of tag 0GTV read at an affine open of `X'`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupEtaPerfect.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupEtaPerfect.lean#L83). The attribute's comment: “perfectness of `Q = Lη_{I'} Lb^* M` for the morphism `b` of tag 0GTY itself, namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase, with the datum `hcomp` of the formalization of tag 0GTW: the second assertion of tag 0GTV read at an affine open of `X'`”.
 
 > **Stacks tag 0F8U for the morphism `b : X' ⟶ X` of Stacks tag 0GTY.**  In Situation 0F8S let
 > `b` be the morphism of tag 0GTY and `D' = b⁻¹D` with ideal sheaf `ℐ'`.  Then
@@ -597,7 +560,7 @@ theorem isPerfect_etaDerivedPullbackObject_goodBlowupToBase
         S.isGoodOver_goodBlowupToBase.pullbackDefined)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_of_isGoodOver_of_chartDecalage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaPerfectOfIsGoodOver.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaPerfectOfIsGoodOver.lean#L46). The attribute's comment: “perfectness of `Q = Lη_{I'} Lb^* M` for any `b` satisfying condition (1) of tag 0GTY, with the datum `hcomp` of the formalization of tag 0GTW: the second assertion of tag 0GTV read at an affine open of the pulled-back scheme”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isPerfect_etaDerivedPullbackObject_of_isGoodOver_of_chartDecalage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaPerfectOfIsGoodOver.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaPerfectOfIsGoodOver.lean#L46). The attribute's comment: “perfectness of `Q = Lη_{I'} Lb^* M` for any `b` satisfying condition (1) of tag 0GTY, with the datum `hcomp` of the formalization of tag 0GTW: the second assertion of tag 0GTV read at an affine open of the pulled-back scheme”.
 
 > **Stacks tag 0F8U, for a morphism good for the triple.**  Let `(X, D, M)` be a triple as in
 > Situation 0F8S and let `b : X' ⟶ X` be good for it — condition (1) of tag 0GTY, which the
@@ -618,7 +581,7 @@ theorem isPerfect_etaDerivedPullbackObject_of_isGoodOver_of_chartDecalage
 
 [Tag 0F8V](https://stacks.math.columbia.edu/tag/0F8V) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_iso_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupStrictTransform.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupStrictTransform.lean#L182). The attribute's comment: “the strict-transform assertion: over an affine chart `(U, A, f, M^•)`, the restriction of the morphism `c` of tag 0GTY for the pulled-back triple is identified, by exactly one isomorphism over `h⁻¹(U)`, with the strict transform of `h⁻¹(U)` with respect to the restriction of `b` over `U`, which is the blowing up of `U` in the product of the determinantal ideals of the chart”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique_iso_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupStrictTransform.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupStrictTransform.lean#L182). The attribute's comment: “the strict-transform assertion: over an affine chart `(U, A, f, M^•)`, the restriction of the morphism `c` of tag 0GTY for the pulled-back triple is identified, by exactly one isomorphism over `h⁻¹(U)`, with the strict transform of `h⁻¹(U)` with respect to the restriction of `b` over `U`, which is the blowing up of `U` in the product of the determinantal ideals of the chart”.
 
 > **Stacks tag 0F8V: the modification of the pulled-back triple is the strict transform.**  Let
 > `h : Y ⟶ X` be a morphism along which `E = h⁻¹D` is defined, let `b : X' ⟶ X` and `c : Y' ⟶ Y` be
@@ -647,7 +610,7 @@ theorem existsUnique_iso_strictTransform (C : AffineChart S) {Y : Scheme.{u}} (h
         (S.pullback h hD).goodBlowupToBase ∣_ (h ⁻¹ᵁ (C.U : S.X.Opens))
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean#L141). The attribute's comment: “the displayed identification: for `b` with the two properties of tag 0GTY for (X, D, M) and `c` with those properties for (Y, E, Lh^* M), the morphism `h' : Y' -> X'` over `h . c` satisfies `L eta_{J'} L(h . c)^* M ≅ L h'^* Q`. The sentence identifying `Y'` with the strict transform of `Y` with respect to `b` rests on the moreover clause of tag 0GTY --- that over an affine chart the restriction of `b` is the blowing up in the product of the determinantal ideals --- and is proved alongside that clause, as AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique\_iso\_strictTransform in GoodBlowupStrictTransform.lean”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean#L141). The attribute's comment: “the displayed identification: for `b` with the two properties of tag 0GTY for (X, D, M) and `c` with those properties for (Y, E, Lh^* M), the morphism `h' : Y' -> X'` over `h . c` satisfies `L eta_{J'} L(h . c)^* M ≅ L h'^* Q`. The sentence identifying `Y'` with the strict transform of `Y` with respect to `b` rests on the moreover clause of tag 0GTY --- that over an affine chart the restriction of `b` is the blowing up in the product of the determinantal ideals --- and is proved alongside that clause, as AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.existsUnique\_iso\_strictTransform in GoodBlowupStrictTransform.lean”.
 
 > **Stacks tag 0F8V, the displayed identification.**  Let `(X, D, M)` be a triple as in
 > Situation 0F8S, let `b : X' ⟶ X` have the two properties of tag 0GTY for `(X, D, M)`, and let
@@ -685,7 +648,7 @@ theorem exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodBlowup
             hc.isGoodOver.isGoodTriple).pullbackDefined)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean#L190). The attribute's comment: “the final assertion: for `b` with the two properties of tag 0GTY and `h` good for the triple, the unique `k` with `h = b . k` satisfies `L eta_J Lh^* M ≅ Lk^* Q`. It is the displayed identification at c = 1\_Y; the displayed identification itself, for a general `c`, is exists\_lift\_and\_nonempty\_etaDerivedPullbackObject\_iso\_of\_isGoodBlowup”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodOverEtaBaseChangeGeneral.lean#L190). The attribute's comment: “the final assertion: for `b` with the two properties of tag 0GTY and `h` good for the triple, the unique `k` with `h = b . k` satisfies `L eta_J Lh^* M ≅ Lk^* Q`. It is the displayed identification at c = 1\_Y; the displayed identification itself, for a general `c`, is exists\_lift\_and\_nonempty\_etaDerivedPullbackObject\_iso\_of\_isGoodBlowup”.
 
 > Let `b : X' ⟶ X` satisfy `IsGoodBlowup`. If moreover `(Y, E, Lh^*M)` is a good triple, then
 > the unique `k : Y ⟶ X'` with `h = b ∘ k` satisfies
@@ -706,7 +669,7 @@ theorem exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodOver
         S.etaDerivedPullbackObject h hh.pullbackDefined)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_isStrictTransform_and_etaDerivedPullbackObject_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationStrictTransform.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationStrictTransform.lean#L242). The attribute's comment: “the strict transform assertion, for every blowing up structure on b over an open W whose centre is supported in D, and the identification Lη\_J' L(h ∘ c)^* M ≅ L(h')^* Q; the last assertion is `exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodOver`”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_lift_isStrictTransform_and_etaDerivedPullbackObject_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationStrictTransform.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationStrictTransform.lean#L242). The attribute's comment: “the strict transform assertion, for every blowing up structure on b over an open W whose centre is supported in D, and the identification Lη\_J' L(h ∘ c)^* M ≅ L(h')^* Q; the last assertion is `exists_lift_and_nonempty_etaDerivedPullbackObject_iso_of_isGoodOver`”.
 
 > **Stacks tag 0F8V.**  Let `(X, D, M)` be a triple as in Situation 0F8S, let `h : Y ⟶ X` be a
 > morphism such that `E = h⁻¹D` is defined, and let `b : X' ⟶ X` and `c : Y' ⟶ Y` have
@@ -753,7 +716,7 @@ theorem exists_lift_isStrictTransform_and_etaDerivedPullbackObject_iso {X' Y Y' 
 
 [Tag 0F8W](https://stacks.math.columbia.edu/tag/0F8W) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_pullback_snd_goodBlowupToBase_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean#L89). The attribute's comment: “the morphism `b : X' ⟶ X` of tag 0GTY is an isomorphism over the maximal open `W ⊆ X` on which the cohomology sheaves of `M` are locally free”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_pullback_snd_goodBlowupToBase_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean#L89). The attribute's comment: “the morphism `b : X' ⟶ X` of tag 0GTY is an isomorphism over the maximal open `W ⊆ X` on which the cohomology sheaves of `M` are locally free”.
 
 > **Stacks tag 0F8W.**  In Situation 0F8S let `W ⊂ X` be the maximal open subscheme over which
 > the cohomology sheaves of `M` are locally free.  The morphism `b : X' ⟶ X` of Stacks tag 0GTY is
@@ -773,7 +736,7 @@ theorem isIso_pullback_snd_goodBlowupToBase_locallyFreeLocus :
     IsIso (Limits.pullback.snd S.goodBlowupToBase S.locallyFreeLocus.ι)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_morphismRestrict_goodBlowupToBase_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean#L99). The attribute's comment: “the restriction `b ∣_ W : b^{-1}W ⟶ W` of the morphism of tag 0GTY over the maximal open `W ⊆ X` on which the cohomology sheaves of `M` are locally free is an isomorphism”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_morphismRestrict_goodBlowupToBase_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupLocallyFree.lean#L99). The attribute's comment: “the restriction `b ∣_ W : b^{-1}W ⟶ W` of the morphism of tag 0GTY over the maximal open `W ⊆ X` on which the cohomology sheaves of `M` are locally free is an isomorphism”.
 
 > **Stacks tag 0F8W, written as the restriction of `b` over `W`.**  The morphism
 > `b ∣_ W : b⁻¹W ⟶ W` induced by the morphism of tag 0GTY is an isomorphism.
@@ -783,7 +746,7 @@ theorem isIso_morphismRestrict_goodBlowupToBase_locallyFreeLocus :
     IsIso (S.goodBlowupToBase ∣_ S.locallyFreeLocus)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isIso_blowUpToBase_of_le_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean#L313). The attribute's comment: “the affine-chart case: over an affine chart contained in the locally free locus `W` the centre in which tag 0GTY blows the chart up is locally generated by a power of the equation of the divisor, hence an effective Cartier divisor, so blowing the chart up in that centre is an isomorphism”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.AffineChart.isIso_blowUpToBase_of_le_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean#L313). The attribute's comment: “the affine-chart case: over an affine chart contained in the locally free locus `W` the centre in which tag 0GTY blows the chart up is locally generated by a power of the equation of the divisor, hence an effective Cartier divisor, so blowing the chart up in that centre is an isomorphism”.
 
 > **The affine-chart case of Stacks tag 0F8W.**  Over an affine chart contained in the
 > locally free locus `W` the centre `∏ᵢ I_i(M^•, f)` in which tag 0GTY blows the chart up is an
@@ -796,7 +759,7 @@ theorem isIso_blowUpToBase_of_le_locallyFreeLocus (C : AffineChart S)
     IsIso (AlgebraicGeometry.blowUpToBase C.blowupCentreIdealSheaf)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_pullback_snd_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean#L367). The attribute's comment: “the general form, over an arbitrary morphism which has the affine-chart description of tag 0GTY: a morphism which over every affine chart is the blowing up of that chart in the product of its determinantal ideals is an isomorphism over `W`, for an open `W` covered by the affine charts contained in it. The tag for the morphism tag 0GTY produces, with both descriptions discharged, is AlgebraicGeometry.ComplexAndDivisorSituation.isIso\_pullback\_snd\_goodBlowupToBase\_locallyFreeLocus”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isIso_pullback_snd_locallyFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/LocallyFreeLocus.lean#L367). The attribute's comment: “the general form, over an arbitrary morphism which has the affine-chart description of tag 0GTY: a morphism which over every affine chart is the blowing up of that chart in the product of its determinantal ideals is an isomorphism over `W`, for an open `W` covered by the affine charts contained in it. The tag for the morphism tag 0GTY produces, with both descriptions discharged, is AlgebraicGeometry.ComplexAndDivisorSituation.isIso\_pullback\_snd\_goodBlowupToBase\_locallyFreeLocus”.
 
 > **Stacks tag 0F8W.**  In Situation 0F8S let `W ⊂ X` be the maximal open subscheme over
 > which the cohomology sheaves of `M` are locally free.  A morphism `b : X' ⟶ X` which over
@@ -819,7 +782,7 @@ theorem isIso_pullback_snd_locallyFreeLocus {X' : Scheme.{u}} (b : X' ⟶ S.X)
 
 [Tag 0GTZ](https://stacks.math.columbia.edu/tag/0GTZ) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_of_ideal_eq_obstructionIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubscheme.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubscheme.lean#L391). The attribute's comment: “the finite presentation of the closed immersion `i : T → D` and part (1), at a closed subscheme `T` of `D` cutting out the obstruction ideal of Tag 0F81 on every good affine chart; such a `T` is constructed, and the tag stated existentially, in AlgebraicGeometry.ComplexAndDivisorSituation.exists\_isGoodChartOpen\_ideal\_eq\_obstructionIdeal of GoodTripleSubschemeExistence.lean. Parts (2) and (3), which concern `Li^*Lη_I M`, rest on identifying it over a good chart with the chart-local décalage, for which the affine comparison of Tag 08DW is proved and the remaining ingredient is the chart-level form of Tag 0GTV's second assertion recorded as AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_of_ideal_eq_obstructionIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubscheme.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubscheme.lean#L391). The attribute's comment: “the finite presentation of the closed immersion `i : T → D` and part (1), at a closed subscheme `T` of `D` cutting out the obstruction ideal of Tag 0F81 on every good affine chart; such a `T` is constructed, and the tag stated existentially, in AlgebraicGeometry.ComplexAndDivisorSituation.exists\_isGoodChartOpen\_ideal\_eq\_obstructionIdeal of GoodTripleSubschemeExistence.lean. Parts (2) and (3), which concern `Li^*Lη_I M`, rest on identifying it over a good chart with the chart-local décalage, for which the affine comparison of Tag 08DW is proved and the remaining ingredient is the chart-level form of Tag 0GTV's second assertion recorded as AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage”.
 
 > **More on Flatness, Tag 0GTZ: the finite presentation of the closed immersion and part
 > (1).**  Let `(X, D, M)` be a good triple as in Situation 0F8S and let `T ⊆ D` be a closed
@@ -840,7 +803,7 @@ theorem locallyOfFinitePresentation_and_comap_eq_bot_of_ideal_eq_obstructionIdea
       T.comap (S.D.subschemeι ⁻¹ᵁ S.locallyFreeLocus).ι = ⊥
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.isFiniteLocallyFree_etaDerivedPullbackRestrictHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L577). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.isFiniteLocallyFree_etaDerivedPullbackRestrictHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L577). The attribute's comment: “part (2)”.
 
 > **Stacks tag 0GTZ, part (2).**  Let `(X, D, M)` be a triple, let `b : X' ⟶ X` be a
 > morphism along which the pullback `D'` of the divisor is defined and the pulled-back triple
@@ -863,7 +826,7 @@ theorem isFiniteLocallyFree_etaDerivedPullbackRestrictHomology
         (T.subschemeι ≫ (S.pullback b hb).D.subschemeι) n)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.finiteLocallyFreeRank_etaDerivedPullbackRestrictHomology_eq_fiberRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L689). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.finiteLocallyFreeRank_etaDerivedPullbackRestrictHomology_eq_fiberRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L689). The attribute's comment: “part (3)”.
 
 > **Stacks tag 0GTZ, part (3).**  In the situation of
 > `isFiniteLocallyFree_etaDerivedPullbackRestrictHomology`, at a point `t ∈ T` whose image in `X'`
@@ -889,7 +852,7 @@ theorem finiteLocallyFreeRank_etaDerivedPullbackRestrictHomology_eq_fiberRank
         ((T.subschemeι ≫ (S.pullback b hb).D.subschemeι) t)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isGoodChartOpen_ideal_eq_obstructionIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeExistence.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeExistence.lean#L303). The attribute's comment: “the existence of the closed immersion `i : T ⟶ D` of finite presentation, and part (1). `T` is glued from the obstruction ideals of Tag 0F81 on the good affine charts by AlgebraicGeometry.Scheme.IdealSheafData.ofAffineFamily. Parts (2) and (3) concern `Li^*Lη_I M`: over and above the affine comparison of Tag 08DW they need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage, and part (3) then reads off Tag 0GTA --- formalized in both halves in StacksFrontier.Algebra.Category.ModuleCat.Sheaf.EtaSheafStalk --- at the points part (1) supplies, `i` being an isomorphism over `D` intersected with the locally free locus”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isGoodChartOpen_ideal_eq_obstructionIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeExistence.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeExistence.lean#L303). The attribute's comment: “the existence of the closed immersion `i : T ⟶ D` of finite presentation, and part (1). `T` is glued from the obstruction ideals of Tag 0F81 on the good affine charts by AlgebraicGeometry.Scheme.IdealSheafData.ofAffineFamily. Parts (2) and (3) concern `Li^*Lη_I M`: over and above the affine comparison of Tag 08DW they need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage, and part (3) then reads off Tag 0GTA --- formalized in both halves in StacksFrontier.Algebra.Category.ModuleCat.Sheaf.EtaSheafStalk --- at the points part (1) supplies, `i` being an isomorphism over `D` intersected with the locally free locus”.
 
 > **More on Flatness, Tag 0GTZ: the closed subscheme `T` of `D` exists, the closed immersion
 > `i : T ⟶ D` is of finite presentation, and `T` contains `D ∩ W` scheme-theoretically.**  Let
@@ -913,7 +876,7 @@ theorem exists_isGoodChartOpen_ideal_eq_obstructionIdeal (hS : S.IsGoodTriple) :
           T.comap (S.D.subschemeι ⁻¹ᵁ S.locallyFreeLocus).ι = ⊥
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_subscheme_isClosedImmersion_etaPullbackHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ObstructionSubschemeCohomology.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ObstructionSubschemeCohomology.lean#L381). The attribute's comment: “the existence of the closed immersion i : T → D of finite presentation together with parts (1), (2) and (3); locally free in (2) is proved in the stronger form finite locally free, and part (3) is stated for every degree n”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_subscheme_isClosedImmersion_etaPullbackHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ObstructionSubschemeCohomology.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ObstructionSubschemeCohomology.lean#L381). The attribute's comment: “the existence of the closed immersion i : T → D of finite presentation together with parts (1), (2) and (3); locally free in (2) is proved in the stronger form finite locally free, and part (3) is stated for every degree n”.
 
 > **More on Flatness, Tag 0GTZ.**  Let `X`, `D`, `I`, `M` be as in Situation 0F8S.  If
 > `(X, D, M)` is a good triple, then there exists a closed immersion `i : T ⟶ D` of finite
@@ -954,7 +917,7 @@ theorem exists_subscheme_isClosedImmersion_etaPullbackHomology (hS : S.IsGoodTri
 
 [Tag 0F8X](https://stacks.math.columbia.edu/tag/0F8X) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/BlowupSubscheme.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/BlowupSubscheme.lean#L374). The attribute's comment: “the finite presentation of `i : T → b^{-1}D` and part (1), in the general form: over any `b` satisfying condition (1) of tag 0GTY and flat over `W` --- which is what Tag 0F8W supplies for the morphism tag 0GTY produces --- and for a closed subscheme `T` of `b^{-1}D` given to cut out the obstruction ideal of Tag 0F81 on every good chart of the pulled-back triple, as in Tag 0GTZ. Parts (2) and (3) specialize parts (2) and (3) of Tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above Tag 08DW --- that tag being proved in both its parts. The tag over the morphism tag 0GTY produces is AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation\_and\_comap\_eq\_bot\_goodBlowupToBase”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/BlowupSubscheme.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/BlowupSubscheme.lean#L375). The attribute's comment: “the finite presentation of `i : T → b^{-1}D` and part (1), in the general form: over any `b` satisfying condition (1) of tag 0GTY and flat over `W` --- which is what Tag 0F8W supplies for the morphism tag 0GTY produces --- and for a closed subscheme `T` of `b^{-1}D` given to cut out the obstruction ideal of Tag 0F81 on every good chart of the pulled-back triple, as in Tag 0GTZ. Parts (2) and (3) specialize parts (2) and (3) of Tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above Tag 08DW --- that tag being proved in both its parts. The tag over the morphism tag 0GTY produces is AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation\_and\_comap\_eq\_bot\_goodBlowupToBase”.
 
 > In Situation 0F8S let `b : X' ⟶ X` be good for the triple — condition (1) of tag 0GTY —
 > so that `D' = b⁻¹D` is defined and `(X', D', Lb^*M)` is a good triple, let `W ⊆ X` be the
@@ -980,7 +943,7 @@ theorem locallyOfFinitePresentation_and_comap_eq_bot_of_isGoodOver
         (b ⁻¹ᵁ S.locallyFreeLocus)).ι = ⊥
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDivisorSubscheme.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDivisorSubscheme.lean#L95). The attribute's comment: “the finite presentation of `i : T → b^{-1}D` and part (1), stated for the morphism `b` of tag 0GTY itself --- namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase, whose flatness over `W` is tag 0F8W --- and for a closed subscheme `T` of `b^{-1}D` given to cut out the obstruction ideal of Tag 0F81 on every good chart of the pulled-back triple, as in the formalized Tag 0GTZ. Parts (2) and (3) specialize parts (2) and (3) of Tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above Tag 08DW --- that tag being formalized in both its parts”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.locallyOfFinitePresentation_and_comap_eq_bot_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDivisorSubscheme.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupDivisorSubscheme.lean#L95). The attribute's comment: “the finite presentation of `i : T → b^{-1}D` and part (1), stated for the morphism `b` of tag 0GTY itself --- namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase, whose flatness over `W` is tag 0F8W --- and for a closed subscheme `T` of `b^{-1}D` given to cut out the obstruction ideal of Tag 0F81 on every good chart of the pulled-back triple, as in the formalized Tag 0GTZ. Parts (2) and (3) specialize parts (2) and (3) of Tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above Tag 08DW --- that tag being formalized in both its parts”.
 
 > **Stacks tag 0F8X for the morphism `b : X' ⟶ X` of Stacks tag 0GTY: the finite presentation
 > of the closed immersion `i : T ⟶ D'` and part (1).**  Let `b` be the morphism of tag 0GTY, so
@@ -1011,7 +974,7 @@ theorem locallyOfFinitePresentation_and_comap_eq_bot_goodBlowupToBase
           (S.goodBlowupToBase ⁻¹ᵁ S.locallyFreeLocus)).ι = ⊥
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeCohomology.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeCohomology.lean#L111). The attribute's comment: “the closed immersion `i : T → D'` of finite presentation (locally of finite presentation) with parts (1), (2) and (3), for the morphism `b` of tag 0GTY, AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase; `Li^*Q` is etaDerivedPullbackRestrict of `Q = Lη_{ℐ'}Lb^*M` along `T → D' → X'`, and the rank of a free stalk is Module.finrank”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeCohomology.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeCohomology.lean#L111). The attribute's comment: “the closed immersion `i : T → D'` of finite presentation (locally of finite presentation) with parts (1), (2) and (3), for the morphism `b` of tag 0GTY, AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase; `Li^*Q` is etaDerivedPullbackRestrict of `Q = Lη_{ℐ'}Lb^*M` along `T → D' → X'`, and the rank of a free stalk is Module.finrank”.
 
 > **Stacks Tag 0F8X.**  In Situation 0F8S let `b : X' ⟶ X` be the morphism of tag 0GTY,
 > `D' = b⁻¹D`, `Q = Lη_{ℐ'}Lb^*M` as in tag 0F8U, and `W ⊆ X` the maximal open where the
@@ -1054,7 +1017,7 @@ theorem exists_closedSubscheme_goodBlowup :
               (ToType (TopCat.Presheaf.stalk (S.cohomologySheaf n).val.presheaf x))
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_etaDerivedPullback_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 924](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L924).
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_closedSubscheme_etaDerivedPullback_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 924](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L924).
 
 > **Stacks tag 0F8X.**  Let `b : X' ⟶ X` be the morphism of Stacks tag 0GTY, `D' = b⁻¹D` and
 > `Q = Lη_{ℐ'}Lb^*M`, and let `W ⊆ X` be the locally free locus of `M`.  There is a closed
@@ -1097,7 +1060,7 @@ theorem exists_closedSubscheme_etaDerivedPullback_goodBlowupToBase :
 
 [Tag 0F8Y](https://stacks.math.columbia.edu/tag/0F8Y) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_etaDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/DivisorRankStrata.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/DivisorRankStrata.lean#L259). The attribute's comment: “the rank stratum `T(ρ)` is open and closed, contains the inverse image of `W(ρ)` and has `H^n(Li^*Q)` free of rank `ρ_n`. The data are the ones tag 0F8Y is given, over an arbitrary `b` along which the pullback of `D` is defined: the morphism `i : T → D'` of tag 0F8X together with its parts (2) and (3), which are the binders `hQ` and `hrank` and are the instance at the pulled-back triple of parts (2) and (3) of tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above tag 08DW --- that tag being proved in both its parts; plus `hbd`, the local boundedness of `H^n(Li^*Q)`, a consequence of perfectness of `Li^*Q`, and `hM`, the finite local freeness of `H^n(M)` over `W`, which tag 0GT1's second assertion gives over the universe-lifted locus of Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus rather than over the open subscheme `W` built from AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus. For the morphism tag 0GTY produces see AlgebraicGeometry.ComplexAndDivisorSituation.exists\_isClopen\_rankStratum\_goodBlowupToBase”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_etaDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/DivisorRankStrata.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/DivisorRankStrata.lean#L259). The attribute's comment: “the rank stratum `T(ρ)` is open and closed, contains the inverse image of `W(ρ)` and has `H^n(Li^*Q)` free of rank `ρ_n`. The data are the ones tag 0F8Y is given, over an arbitrary `b` along which the pullback of `D` is defined: the morphism `i : T → D'` of tag 0F8X together with its parts (2) and (3), which are the binders `hQ` and `hrank` and are the instance at the pulled-back triple of parts (2) and (3) of tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above tag 08DW --- that tag being proved in both its parts; plus `hbd`, the local boundedness of `H^n(Li^*Q)`, a consequence of perfectness of `Li^*Q`, and `hM`, the finite local freeness of `H^n(M)` over `W`, which tag 0GT1's second assertion gives over the universe-lifted locus of Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus rather than over the open subscheme `W` built from AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus. For the morphism tag 0GTY produces see AlgebraicGeometry.ComplexAndDivisorSituation.exists\_isClopen\_rankStratum\_goodBlowupToBase”.
 
 > **Stacks tag 0F8Y.**  In Situation 0F8S let `b : X' ⟶ X` be a morphism along which the
 > pullback `D' = b⁻¹D` of the effective Cartier divisor is defined, let
@@ -1146,7 +1109,7 @@ theorem exists_isClopen_rankStratum_etaDerivedPullback
                 (i ≫ (S.D.comap b).subschemeι) n)).over V)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupRankStrata.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupRankStrata.lean#L101). The attribute's comment: “the rank stratum `T(ρ)` is open and closed, contains the inverse image of `W(ρ)` and has `H^n(Li^*Q)` free of rank `ρ_n`, stated for the morphism `b` of tag 0GTY itself, namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase. The data are the ones tag 0F8Y is given: the closed immersion `i : T → D'` of tag 0F8X together with its parts (2) and (3), which are the binders `hQ` and `hrank` and are the instance at the pulled-back triple of parts (2) and (3) of tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above tag 08DW --- that tag being formalized in both its parts; plus `hbd`, the local boundedness of the family `H^n(Li^*Q)`, a consequence of perfectness of `Li^*Q`, and `hM`, the finite local freeness of `H^n(M)` over `W`, which tag 0GT1's second assertion gives over the universe-lifted locus of Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus rather than over the open subscheme `W` built from AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_goodBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupRankStrata.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupRankStrata.lean#L101). The attribute's comment: “the rank stratum `T(ρ)` is open and closed, contains the inverse image of `W(ρ)` and has `H^n(Li^*Q)` free of rank `ρ_n`, stated for the morphism `b` of tag 0GTY itself, namely AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase. The data are the ones tag 0F8Y is given: the closed immersion `i : T → D'` of tag 0F8X together with its parts (2) and (3), which are the binders `hQ` and `hrank` and are the instance at the pulled-back triple of parts (2) and (3) of tag 0GTZ, which need the chart-level comparison AlgebraicGeometry.ComplexAndDivisorSituation.ChartDecalage over and above tag 08DW --- that tag being formalized in both its parts; plus `hbd`, the local boundedness of the family `H^n(Li^*Q)`, a consequence of perfectness of `Li^*Q`, and `hM`, the finite local freeness of `H^n(M)` over `W`, which tag 0GT1's second assertion gives over the universe-lifted locus of Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus rather than over the open subscheme `W` built from AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus”.
 
 > **Stacks tag 0F8Y for the morphism `b : X' ⟶ X` of Stacks tag 0GTY.**  Let `b` be the
 > morphism of tag 0GTY, `D' = b⁻¹D`, `Q = Lη_{ℐ'}Lb^*M` the object of tag 0F8U, `i : T ⟶ D'` the
@@ -1204,7 +1167,7 @@ theorem exists_isClopen_rankStratum_goodBlowupToBase
                 (i ≫ (S.D.comap S.goodBlowupToBase).subschemeι) n)).over V)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeRankStrata.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeRankStrata.lean#L209).
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_goodBlowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeRankStrata.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupSubschemeRankStrata.lean#L209).
 
 > For `b` of tag 0GTY, `Q` of tag 0F8U, `i : T ⟶ D'` of tag 0F8X and integers `ρ_n`, some open
 > and closed `T(ρ) ⊆ T` contains `D' ∩ b⁻¹(V)` scheme theoretically for every open `V` on which
@@ -1235,7 +1198,7 @@ theorem exists_isClopen_rankStratum_goodBlowup (ρ : ℤ → ℤ) :
                   (S.D.comap S.goodBlowupToBase).subschemeι) n)).over U)
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_etaDerivedPullback_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 887](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L887).
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isClopen_rankStratum_etaDerivedPullback_of_isGoodOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean, line 887](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleSubschemeCohomology.lean#L887).
 
 > **Stacks tag 0F8Y.**  Let `b : X' ⟶ X` be good for the triple — for instance the morphism of
 > Stacks tag 0GTY — let `T ⊆ D'` be the closed subscheme of Stacks tag 0F8X and let
@@ -1274,7 +1237,7 @@ theorem exists_isClopen_rankStratum_etaDerivedPullback_of_isGoodOver {X' : Schem
 
 [Tag 0GU0](https://stacks.math.columbia.edu/tag/0GU0) in the Stacks Project.
 
-**`Stacks.BlowUpComplexes.exists_isLocallyBoundedFiniteLocallyFree_etaDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean, line 781](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean#L781). The attribute's comment: “for every `b` along which `b⁻¹D` is defined and the pulled-back triple is good, in particular the morphism of Tag 0GTY (`goodBlowupToBase`); `Q` is stated directly as `Lη_{ℐ'}Lb^*M`”.
+**`Stacks.BlowUpComplexes.exists_isLocallyBoundedFiniteLocallyFree_etaDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodTripleLocallyFree.lean#L781). The attribute's comment: “for every `b` along which `b⁻¹D` is defined and the pulled-back triple is good, in particular the morphism of Tag 0GTY (`goodBlowupToBase`); `Q` is stated directly as `Lη_{ℐ'}Lb^*M`”.
 
 > **Stacks Project, Tag 0GU0.**  Let `(X, D, M)` be a triple as in Situation 0F8S and let
 > `b : X' ⟶ X` be a morphism along which the pullback `D' = b⁻¹D` of the effective Cartier divisor
@@ -1305,7 +1268,7 @@ theorem exists_isLocallyBoundedFiniteLocallyFree_etaDerivedPullback
 
 [Tag 0F9Y](https://stacks.math.columbia.edu/tag/0F9Y) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupModification.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupModification.lean#L101). The attribute's comment: “the whole statement, for `b` the morphism of tag 0GTY (AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase) and the concrete `Q = Lη_{I'} Lb^* M` (etaDerivedPullbackObject, with Lη the derived décalage Stacks.Divisors.Eta.derivedEtaData): properness and clauses (1)--(9). `T` is the closed subscheme glued from the obstruction ideals J(N^•, g) of tag 0F81. Correction: clause (9) as printed asks for a BOUNDED complex representing Q, which is false (X = ⊔ₙ A¹, D the origins, M = O[n] on the n-th copy: then W = X, b is an isomorphism and Q ≅ M has unbounded cohomology); it is stated with LOCALLY BOUNDED, the form tag 0GU0 gives”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupModification.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GoodBlowupModification.lean#L106). The attribute's comment: “the full statement, with the morphism b of tag 0GTY (AlgebraicGeometry.ComplexAndDivisorSituation.goodBlowupToBase) as the witness and Q = Lη\_\{I'} Lb^* M: b proper and clauses (1)--(9), with T the closed subscheme of D' glued from the obstruction ideals J(N^•, g) of tag 0F81. Clause (9) is stated in its corrected form, Q represented by a LOCALLY BOUNDED complex of finite locally free modules (as tag 0GU0 gives): the printed 'bounded' is false for X = ⊔ₙ A¹, D the origins, M = O[n] on the n-th copy; see errata.md, entry 0F9Y (last sentence), 2026-10-27”.
 
 > **Stacks tag 0F9Y.**  Let `(X, D, M)` be as in Situation 0F8S, `W ⊆ X` the maximal open over
 > which the cohomology sheaves of `M` are locally free, `b : X' ⟶ X` the morphism of tag 0GTY,
@@ -1391,7 +1354,7 @@ theorem goodBlowupToBase_modification :
               S.isPullbackDefined_goodBlowupToBase))
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isProper_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationCollected.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationCollected.lean#L131). The attribute's comment: “with clause (9) concluding a locally bounded complex, as in Tag 0GU0; the source's `bounded` fails for an infinite disjoint union”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.exists_isProper_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationCollected.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationCollected.lean#L137). The attribute's comment: “the full statement in existential form: a proper b : X' ⟶ X and Q with clauses (1)--(9). Clause (9) is stated in its corrected form, Q represented by a LOCALLY BOUNDED complex of finite locally free modules (as tag 0GU0 gives): the printed 'bounded' is false for an infinite disjoint union; see errata.md, entry 0F9Y (last sentence), 2026-10-27”.
 
 > **Stacks tag 0F9Y.**  Let `X` be a scheme, `D ⊆ X` an effective Cartier divisor and `M` a
 > perfect object of `D(𝒪_X)`, and let `W ⊆ X` be the maximal open over which the cohomology
@@ -1463,73 +1426,6 @@ theorem exists_isProper_modification (S : ComplexAndDivisorSituation.{u, d}) :
               Nonempty (DerivedCategory.Q.obj 𝒬 ≅ Q))
 ```
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_resLE_divisorComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationProperties.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationProperties.lean#L201). The attribute's comment: “part (1), `b` is an isomorphism over `X ∖ D`, for any `b` with properties (1) and (2) of tag 0GTY; the existence of such a `b` is not formalized, so `b` is a hypothesis, and part (1) is proved from the universal property rather than from the unformalized admissibility of the blowing up”.
-
-> **Clause (1) of Stacks tag 0F9Y.**  A morphism `b : X' ⟶ X` with properties (1) and (2) of
-> Stacks tag 0GTY is an isomorphism over the complement `X ∖ D` of the effective Cartier divisor.
->
-> The inclusion of `X ∖ D` and the restriction `b⁻¹(X ∖ D) ⟶ X` of `b` are both good for the
-> triple, because the divisor pulled back along either has no points at all; so the universal
-> property of `b` identifies `b⁻¹(X ∖ D)` with `X ∖ D` by
-> `AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_resLE_of_isGoodOver`.
-
-```lean
-theorem isIso_resLE_divisorComplement (hb : S.IsGoodBlowup b) :
-    IsIso (b.resLE S.divisorComplement (b ⁻¹ᵁ S.divisorComplement) le_rfl)
-```
-
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_and_isPerfect_and_exists_rep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationProperties.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationProperties.lean#L224). The attribute's comment: “parts (1), (5) and (9) together, for any `b` with properties (1) and (2) of tag 0GTY, under tag 0GU0's hypothesis `hrep` that `M` has a locally bounded finite locally free representative; properness and parts (6), (7) and (8) are not covered, part (2) is the proved tag 0F8W and is not bundled here, and parts (3) and (4) are the hypothesis `hb` and the definition of `Q`”.
-
-> **Clauses (1), (5) and (9) of Stacks tag 0F9Y.**  Let `(X, D, M)` be a triple as in
-> Situation 0F8S and let `b : X' ⟶ X` have properties (1) and (2) of Stacks tag 0GTY.  Suppose
-> `M` is represented by a locally bounded complex of finite locally free `𝒪_X`-modules.  Then `b`
-> is an isomorphism over `X ∖ D`, the object `Q = Lη_{ℐ'}Lb^*M` is a perfect object of
-> `D(𝒪_{X'})`, and `Q` too is represented by a locally bounded complex of finite locally free
-> `𝒪_{X'}`-modules.
->
-> Clause (1) is
-> `AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_resLE_divisorComplement`,
-> clause (9) is tag 0GU0 as
-> `Stacks.BlowUpComplexes.exists_isLocallyBoundedFiniteLocallyFree_etaDerivedPullback`, and clause
-> (5) follows from clause (9) because a locally bounded complex of finite locally free modules is
-> perfect.  Clause (2) is deliberately *not* among the conclusions; see the module docstring.
-
-```lean
-theorem isIso_and_isPerfect_and_exists_rep (hb : S.IsGoodBlowup b)
-    (hrep : ∃ ℳ : CochainComplex (OXMod.{u, u} S.X.toRingedSpace) ℤ,
-      Stacks.Chow.IsLocallyBoundedFiniteLocallyFree ℳ ∧
-        Nonempty ((@DerivedCategory.Q _ _ _ S.hasDerivedCategory).obj ℳ ≅ S.M)) :
-    IsIso (b.resLE S.divisorComplement (b ⁻¹ᵁ S.divisorComplement) le_rfl) ∧
-      RingedSpace.IsPerfect (X := X'.toRingedSpace)
-        (S.etaDerivedPullbackObject b hb.isGoodOver.pullbackDefined) ∧
-      ∃ 𝒬 : CochainComplex X'.Modules ℤ,
-        Stacks.Chow.IsLocallyBoundedFiniteLocallyFree 𝒬 ∧
-          Nonempty (DerivedCategory.Q.obj 𝒬 ≅
-            S.etaDerivedPullbackObject b hb.isGoodOver.pullbackDefined)
-```
-
-**`AlgebraicGeometry.ComplexAndDivisorSituation.IsGoodBlowup.isIso_and_imp_isPerfect_and_exists_rep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationPropertiesOfRep.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/ModificationPropertiesOfRep.lean#L53). The attribute's comment: “parts (1), (5) and (9) for any `b` with properties (1) and (2) of tag 0GTY: part (1) outright, and parts (5) and (9) in the shape of the source's own closing sentence --- if `M` is represented by a locally bounded complex of finite locally free modules, then so is `Q`, and `Q` is then perfect”.
-
-> Let `b : X' ⟶ X` have properties (1) and (2) of Stacks tag 0GTY for a triple `(X, D, M)`.
-> Then `b` is an isomorphism over `X ∖ D`, and if `M` is represented by a locally bounded complex
-> of finite locally free `𝒪_X`-modules, then `Q = Lη_{ℐ'}Lb^*M` is a perfect object of
-> `D(𝒪_{X'})` and is itself represented by a locally bounded complex of finite locally free
-> `𝒪_{X'}`-modules.
-
-```lean
-theorem isIso_and_imp_isPerfect_and_exists_rep (hb : S.IsGoodBlowup b) :
-    IsIso (b.resLE S.divisorComplement (b ⁻¹ᵁ S.divisorComplement) le_rfl) ∧
-      ((∃ ℳ : CochainComplex (OXMod.{u, u} S.X.toRingedSpace) ℤ,
-          Stacks.Chow.IsLocallyBoundedFiniteLocallyFree ℳ ∧
-            Nonempty ((@DerivedCategory.Q _ _ _ S.hasDerivedCategory).obj ℳ ≅ S.M)) →
-        RingedSpace.IsPerfect (X := X'.toRingedSpace)
-            (S.etaDerivedPullbackObject b hb.isGoodOver.pullbackDefined) ∧
-          ∃ 𝒬 : CochainComplex X'.Modules ℤ,
-            Stacks.Chow.IsLocallyBoundedFiniteLocallyFree 𝒬 ∧
-              Nonempty (DerivedCategory.Q.obj 𝒬 ≅
-                S.etaDerivedPullbackObject b hb.isGoodOver.pullbackDefined))
-```
-
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -1537,4 +1433,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.43, Tag 0F8R](https://stacks.math.columbia.edu/tag/0F8R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

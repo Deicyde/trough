@@ -1,6 +1,6 @@
 # 35 Descent
 
-Chapter 35 of the Stacks Project, *Descent*, [Tag 0238](https://stacks.math.columbia.edu/tag/0238): the 38 sections of its 39 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 226 tags are carried by 932 declarations of the repository (all in StacksFrontier) and 33 registered declarations.
+Chapter 35 of the Stacks Project, *Descent*, [Tag 0238](https://stacks.math.columbia.edu/tag/0238): the 38 sections of its 39 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 227 tags are carried by 932 declarations of the repository (all in StacksFrontier) and 32 registered declarations.
 
 ## [35.2 Descent data for… to 35.7 Descent of finiteness…](part-01/README.md)
 

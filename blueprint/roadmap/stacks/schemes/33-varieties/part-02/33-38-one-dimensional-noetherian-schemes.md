@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.38 One dimensional Noetherian schemes
 
-Section 33.38 of the Stacks Project, [Tag 09N7](https://stacks.math.columbia.edu/tag/09N7). 14 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.38 of the Stacks Project, [Tag 09N7](https://stacks.math.columbia.edu/tag/09N7). 14 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09N8, a lemma
 
 [Tag 09N8](https://stacks.math.columbia.edu/tag/09N8) in the Stacks Project.
 
-**`Stacks.RetrocompactOneDimensional.isZero_rightDerived_pushforward_of_isRetrocompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Basic.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Basic.lean#L32).
+**`Stacks.RetrocompactOneDimensional.isZero_rightDerived_pushforward_of_isRetrocompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Basic.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Basic.lean#L32).
 
 > The positive higher direct images of a quasi-coherent module along the inclusion of a
 > retrocompact open subscheme of a scheme whose local rings are Noetherian of dimension at most one
@@ -35,7 +35,7 @@ theorem isZero_rightDerived_pushforward_of_isRetrocompact
 
 [Tag 09N9](https://stacks.math.columbia.edu/tag/09N9) in the Stacks Project.
 
-**`AlgebraicGeometry.isAffineOpen_of_isCompact_of_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/OneDimensionalLocal/QuasiCompactOpen.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/OneDimensionalLocal/QuasiCompactOpen.lean#L245). References: EGA IV (21.12.9), “more general”.
+**`AlgebraicGeometry.isAffineOpen_of_isCompact_of_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/OneDimensionalLocal/QuasiCompactOpen.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/OneDimensionalLocal/QuasiCompactOpen.lean#L245). References: EGA IV (21.12.9), “more general”.
 
 > **[Stacks, Tag 09N9].** Let `X` be an affine scheme all of whose local rings are Noetherian of
 > dimension at most one. Then every quasi-compact open `V ⊆ X` is affine.
@@ -53,7 +53,7 @@ theorem isAffineOpen_of_isCompact_of_krullDimLE_one {X : Scheme.{u}} [IsAffine X
     (V : X.Opens) (hV : IsCompact (V : Set X)) : IsAffineOpen V
 ```
 
-**`Stacks.RetrocompactOneDimensional.isAffineOpen_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Affine.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Affine.lean#L164).
+**`Stacks.RetrocompactOneDimensional.isAffineOpen_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Affine.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RetrocompactOneDimensional/Affine.lean#L164).
 
 > A quasi-compact open subset of an affine scheme is affine when every local ring is Noetherian
 > and has Krull dimension at most one.
@@ -69,7 +69,7 @@ theorem isAffineOpen_of_isCompact (X : Scheme.{u}) [IsAffine X]
 
 [Tag 09NA](https://stacks.math.columbia.edu/tag/09NA) in the Stacks Project.
 
-**`Stacks.PicSurjectiveOpen.exists_isInvertible_modulePullback_iso_of_isRetrocompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveOpen/Retrocompact.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicSurjectiveOpen/Retrocompact.lean#L82). The attribute's comment: “surjectivity of the restriction Pic(X) -> Pic(U)”.
+**`Stacks.PicSurjectiveOpen.exists_isInvertible_modulePullback_iso_of_isRetrocompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveOpen/Retrocompact.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicSurjectiveOpen/Retrocompact.lean#L82). The attribute's comment: “surjectivity of the restriction Pic(X) -> Pic(U)”.
 
 > **Clause (2) of Stacks Tag 09NA.** For a retrocompact open `U` of a scheme `X` whose
 > complement is discrete and along which the local rings of `X` are Noetherian of Krull dimension
@@ -89,7 +89,7 @@ theorem exists_isInvertible_modulePullback_iso_of_isRetrocompact
       Nonempty ((modulePullback U.ι.toLRSHom.toShHom).obj L ≅ N)
 ```
 
-**`AlgebraicGeometry.exists_isInvertible_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean#L865). The attribute's comment: “nonvanishing\_locus”.
+**`AlgebraicGeometry.exists_isInvertible_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean, line 865](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean#L865). The attribute's comment: “nonvanishing\_locus”.
 
 > **Stacks Project, Tag 09NA.** A retrocompact open with discrete complement along which the
 > local rings are Noetherian of Krull dimension at most one is the nonvanishing open of a global
@@ -117,7 +117,7 @@ theorem exists_isInvertible_nonvanishingOpen_eq
 
 [Tag 09NB](https://stacks.math.columbia.edu/tag/09NB) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isInvertible_generatingSections_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/GloballyGenerated.lean, line 1311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/GloballyGenerated.lean#L1311).
+**`AlgebraicGeometry.exists_isInvertible_generatingSections_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/GloballyGenerated.lean, line 1311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/GloballyGenerated.lean#L1311).
 
 > **Stacks Project, Tag 09NB.** On an integral separated scheme, a nonempty affine open with
 > finite complement along which the local rings are Noetherian of dimension one is the
@@ -144,7 +144,7 @@ theorem exists_isInvertible_generatingSections_nonvanishingOpen_eq
 
 [Tag 09NC](https://stacks.math.columbia.edu/tag/09NC) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_globallyGenerated_affine_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean#L410).
+**`AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_globallyGenerated_affine_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean#L410).
 
 > **Stacks Project, Tag 09NC.** A quasi-compact scheme every point of which lies in an affine
 > nonvanishing locus of a global section of some globally generated invertible sheaf carries an
@@ -187,7 +187,7 @@ public theorem exists_isAmple_of_globallyGenerated_affine_nonvanishing (Y : Sche
 
 [Tag 09ND](https://stacks.math.columbia.edu/tag/09ND) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_topologicalKrullDim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean#L520).
+**`AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_topologicalKrullDim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFromAffineNonvanishing/Basic.lean#L520).
 
 > **Stacks Project, Tag 09ND.** A Noetherian integral separated scheme of topological Krull
 > dimension one has an ample invertible sheaf.
@@ -209,7 +209,7 @@ public theorem exists_isAmple_of_topologicalKrullDim_one (X : Scheme.{u})
 
 [Tag 0C0T](https://stacks.math.columbia.edu/tag/0C0T) in the Stacks Project.
 
-**`Stacks.PicFinite.exists_isInvertible_modulePullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/Basic.lean, line 1038](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/Basic.lean#L1038).
+**`Stacks.PicFinite.exists_isInvertible_modulePullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/Basic.lean, line 1038](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/Basic.lean#L1038).
 
 > **An invertible module descends along a finite morphism that is an isomorphism away
 > from a discrete closed subset.**
@@ -233,7 +233,7 @@ theorem exists_isInvertible_modulePullback_iso
 
 [Tag 09NE](https://stacks.math.columbia.edu/tag/09NE) in the Stacks Project.
 
-**`StacksTag09NE.exists_invertible_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Basic.lean, line 837](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Basic.lean#L837). The attribute's comment: “existence of an invertible sheaf”.
+**`StacksTag09NE.exists_invertible_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Basic.lean, line 837](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Basic.lean#L837). The attribute's comment: “existence of an invertible sheaf”.
 
 > Invertible sheaves on a finite closed cover of a reduced scheme extend when
 > pairwise intersections are discrete.
@@ -253,7 +253,7 @@ public theorem exists_invertible_of_closed_cover_discrete_intersections
       ∀ i, Nonempty ((modulePullback (f i).toLRSHom.toShHom).obj M ≅ L i)
 ```
 
-**`StacksTag09NE.exists_invertible_with_sections_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Sections.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Sections.lean#L782). The attribute's comment: “existence with prescribed sections”.
+**`StacksTag09NE.exists_invertible_with_sections_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Sections.lean, line 782](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedCoverGlue/Sections.lean#L782). The attribute's comment: “existence with prescribed sections”.
 
 > Sections nonvanishing along the pairwise intersections can be glued along
 > with the invertible sheaves.
@@ -264,8 +264,6 @@ public theorem exists_invertible_with_sections_of_closed_cover_discrete_intersec
     (Z : ι → Scheme.{u}) (f : ∀ i, Z i ⟶ X)
     [∀ i, IsClosedImmersion (f i)]
     (hcover : ∀ x : X, ∃ i z, f i z = x)
-    (hdiscrete : ∀ i j, i ≠ j → DiscreteTopology
-      (↥(Set.range (f i) ∩ Set.range (f j) : Set X)))
     (L : ∀ i, (Z i).Modules)
     [∀ i, AlgebraicGeometry.SheafOfModules.IsInvertible (Z i).presheaf (Z i).ringCatSheaf.2 (L i)]
     (s : ∀ i, (L i).sections)
@@ -281,7 +279,7 @@ public theorem exists_invertible_with_sections_of_closed_cover_discrete_intersec
             (op ⊤) (t.eval (op ⊤))) = (s i).eval (op ⊤)
 ```
 
-**`AlgebraicGeometry.exists_invertible_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean#L542). The attribute's comment: “existence of an invertible sheaf”.
+**`AlgebraicGeometry.exists_invertible_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean#L542). The attribute's comment: “existence of an invertible sheaf”.
 
 > Invertible sheaves on a finite closed cover of a reduced scheme extend when
 > pairwise intersections are discrete.
@@ -301,7 +299,7 @@ public theorem exists_invertible_of_closed_cover_discrete_intersections
       ∀ i, Nonempty ((modulePullback (f i).toLRSHom.toShHom).obj M ≅ L i)
 ```
 
-**`AlgebraicGeometry.exists_invertible_with_sections_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean, line 982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean#L982). The attribute's comment: “existence with prescribed sections”.
+**`AlgebraicGeometry.exists_invertible_with_sections_of_closed_cover_discrete_intersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean, line 982](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InvertibleOnClosedCover/Basic.lean#L982). The attribute's comment: “existence with prescribed sections”.
 
 > Sections nonvanishing along the pairwise intersections can be glued along
 > with the invertible sheaves.
@@ -333,7 +331,7 @@ public theorem exists_invertible_with_sections_of_closed_cover_discrete_intersec
 
 [Tag 09NW](https://stacks.math.columbia.edu/tag/09NW) in the Stacks Project.
 
-**`Ideal.inf_eq_bot_of_zeroLocus_union_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L56).
+**`Ideal.inf_eq_bot_of_zeroLocus_union_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L56).
 
 > In a reduced ring, ideals whose zero loci cover the spectrum have zero
 > intersection.
@@ -346,7 +344,7 @@ public theorem inf_eq_bot_of_zeroLocus_union_eq_univ
     I ⊓ J = ⊥
 ```
 
-**`Ideal.idealMap_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L68).
+**`Ideal.idealMap_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L68).
 
 > If `V(I) ∪ V(J) = Spec A` in a reduced ring, the canonical map from `I`
 > to its extension in `A ⧸ J` is an isomorphism of `A`-modules.
@@ -359,7 +357,7 @@ public theorem idealMap_quotient_bijective
     Function.Bijective (Algebra.idealMap (A ⧸ J) I)
 ```
 
-**`Ideal.multipleQuotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L88).
+**`Ideal.multipleQuotientMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/Conductor.lean#L88).
 
 > If `V(I) ∪ V(J) = Spec A`, the quotient map induces an isomorphism
 > `I • P ≅ I • (P ⧸ J • P)` for every flat `A`-module `P`. In particular this applies when
@@ -378,7 +376,7 @@ public theorem multipleQuotientMap_bijective
 
 [Tag 09NX](https://stacks.math.columbia.edu/tag/09NX) in the Stacks Project.
 
-**`Stacks.AmpleReducedDimensionOne.exists_isAmple_of_isReduced_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleReducedDimensionOne/Extension.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleReducedDimensionOne/Extension.lean#L502).
+**`Stacks.AmpleReducedDimensionOne.exists_isAmple_of_isReduced_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleReducedDimensionOne/Extension.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleReducedDimensionOne/Extension.lean#L502).
 
 > **[Stacks, Tag 09NX].**  A Noetherian, reduced, separated scheme of topological Krull
 > dimension at most one carries an ample invertible sheaf.
@@ -411,7 +409,7 @@ theorem exists_isAmple_of_isReduced_of_topologicalKrullDim_le_one (Y : Scheme.{u
 
 [Tag 09NY](https://stacks.math.columbia.edu/tag/09NY) in the Stacks Project.
 
-**`Stacks.LiftInvertible.exists_modulePullback_iso_of_isClosedImmersion_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LiftInvertible/ClosedUnionGlue.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LiftInvertible/ClosedUnionGlue.lean#L213).
+**`Stacks.LiftInvertible.exists_modulePullback_iso_of_isClosedImmersion_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LiftInvertible/ClosedUnionGlue.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LiftInvertible/ClosedUnionGlue.lean#L213).
 
 > An invertible module on a closed subscheme of a scheme whose underlying space is Noetherian
 > and has dimension at most one is the pullback of an invertible module on the ambient scheme.
@@ -433,7 +431,7 @@ theorem exists_modulePullback_iso_of_isClosedImmersion_of_dimension_le_one
 
 [Tag 09NZ](https://stacks.math.columbia.edu/tag/09NZ) in the Stacks Project.
 
-**`Stacks.AmpleNoetherianDimensionOne.exists_isAmple_of_isNoetherian_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNoetherianDimensionOne/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNoetherianDimensionOne/Basic.lean#L117). The attribute's comment: “with dimension at most one in place of the source's dimension one”.
+**`Stacks.AmpleNoetherianDimensionOne.exists_isAmple_of_isNoetherian_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNoetherianDimensionOne/Basic.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleNoetherianDimensionOne/Basic.lean#L116). The attribute's comment: “with dimension at most one in place of the source's dimension one”.
 
 > **[Stacks, Tag 09NZ].** A Noetherian separated scheme of topological Krull dimension at most
 > one carries an ample invertible module.
@@ -456,26 +454,7 @@ theorem exists_isAmple_of_isNoetherian_of_topologicalKrullDim_le_one
 
 [Tag 09P0](https://stacks.math.columbia.edu/tag/09P0) in the Stacks Project.
 
-**`Stacks.AmpleNoetherianReduction.exists_isAmple_of_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Basic.lean#L234). The attribute's comment: “granted the converse half of Tag 09MW as `AmpleDescendsAlongThickening`”.
-
-> **[Stacks, Tag 09P0].** A scheme whose reduction is a Noetherian separated scheme of
-> dimension at most one has an ample invertible sheaf, granted the converse half of
-> [Stacks, Tag 09MW].
->
-> The hypotheses are on the reduction only; `X` itself is not assumed Noetherian, which is exactly
-> what distinguishes this from [Stacks, Tag 09NZ] and what forces Tag 09MW in place of
-> [Stacks, Tag 09MS].
-
-```lean
-theorem exists_isAmple_of_reduction (X : Scheme.{u})
-    (hdesc : AmpleDescendsAlongThickening.{u})
-    [IsNoetherian (vanishingIdeal (⊤ : Closeds X)).subscheme]
-    [(vanishingIdeal (⊤ : Closeds X)).subscheme.IsSeparated]
-    (hdim : topologicalKrullDim ((vanishingIdeal (⊤ : Closeds X)).subscheme : Type u) ≤ 1) :
-    ∃ (L : X.Modules) (hL : IsInvertibleModule X L), @IsAmple X L hL
-```
-
-**`Stacks.AmpleNoetherianReduction.exists_isAmple_of_reduction_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Unconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Unconditional.lean#L68).
+**`Stacks.AmpleNoetherianReduction.exists_isAmple_of_reduction_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Unconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleNoetherianReduction/Unconditional.lean#L68).
 
 > **[Stacks, Tag 09P0].** A scheme whose reduction is a Noetherian separated scheme of
 > dimension at most one has an ample invertible sheaf.
@@ -495,7 +474,7 @@ theorem exists_isAmple_of_reduction_of_topologicalKrullDim_le_one (X : Scheme.{u
 
 [Tag 0C0U](https://stacks.math.columbia.edu/tag/0C0U) in the Stacks Project.
 
-**`Stacks.PicFinite.exists_isInvertible_modulePullback_iso_of_isClosedImmersion_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/DenseClosedImmersion.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/DenseClosedImmersion.lean#L105).
+**`Stacks.PicFinite.exists_isInvertible_modulePullback_iso_of_isClosedImmersion_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/DenseClosedImmersion.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicSurjectiveFinite/DenseClosedImmersion.lean#L105).
 
 > **Stacks Project, Tag 0C0U.** Let `f : X ⟶ Y` be a finite morphism of schemes with `Y` of
 > Noetherian underlying space and dimension at most one, and suppose `f` is a closed immersion
@@ -530,4 +509,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.38, Tag 09N7](https://stacks.math.columbia.edu/tag/09N7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

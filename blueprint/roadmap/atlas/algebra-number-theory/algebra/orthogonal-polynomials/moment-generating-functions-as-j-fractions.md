@@ -8,7 +8,7 @@ proof: formalized
 
 # Moment generating functions as J-fractions
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html).
 
 ## Moment generating function as a J-fraction, general form
 
@@ -25,7 +25,7 @@ for every $n \ge 0$.
 No monicity, degree or $\beta_n \ne 0$ hypothesis is needed, and orthogonality enters only
 through $L(p_n) = 0$ for $n \ge 1$.
 
-Formalized by `MetaMathlibExt.moment_generating_function_as_J_fraction_general`, a theorem declared in [MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html#moment-generating-function-as-j-fraction).
+Formalized by `MetaMathlibExt.moment_generating_function_as_J_fraction_general`, a theorem declared in [MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html#moment-generating-function-as-j-fraction).
 
 ## Moment generating function as a J-fraction
 
@@ -53,7 +53,7 @@ surrounding lines 315–317 and 364–366 of the source.
 
 - Paul Barry and Aoife Hennessy, "Meixner-Type Results for Riordan Arrays and Associated Integer Sequences," Journal of Integer Sequences 13 (2010), Article 10.9.4, J-fraction theorem citing C. Krattenthaler (cf. Viennot Proposition 1, (7), p. V-5; Wall Theorem 51.1), lines 353–362, https://cs.uwaterloo.ca/journals/JIS/VOL13/Barry5/barry96s.tex
 
-Formalized by `MetaMathlibExt.moment_generating_function_as_J_fraction`, a theorem declared in [MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html#moment-generating-function-as-j-fraction-2).
+Formalized by `MetaMathlibExt.moment_generating_function_as_J_fraction`, a theorem declared in [MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/MomentGeneratingJFraction.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html#moment-generating-function-as-j-fraction-2).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Moment generating functions as J-fractions](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/orthogonal-polynomials/moment-generating-functions-as-j-fractions)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 56.3 Functors between categories of modules
 
-Section 56.3 of the Stacks Project, [Tag 0GNR](https://stacks.math.columbia.edu/tag/0GNR). 8 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 56.3 of the Stacks Project, [Tag 0GNR](https://stacks.math.columbia.edu/tag/0GNR). 8 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GNS, a lemma
 
 [Tag 0GNS](https://stacks.math.columbia.edu/tag/0GNS) in the Stacks Project.
 
-**`ModuleCat.tfae_iso_tensorFunctor_preserves_colimits_isLeftAdjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/BimoduleTensor.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/BimoduleTensor.lean#L311). References: EGA III (7.3.1), “(a) <=> (e)”; EGA III (7.2.6), “(1) <=> (2)”; EGA III (7.2.5), “(a) <=> (c)”.
+**`ModuleCat.tfae_iso_tensorFunctor_preserves_colimits_isLeftAdjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/BimoduleTensor.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/BimoduleTensor.lean#L295). References: EGA III (7.3.1), “(a) <=> (e)”; EGA III (7.2.6), “(1) <=> (2)”; EGA III (7.2.5), “(a) <=> (c)”.
 
 > A functor between module categories is tensoring with a bimodule iff it is right exact and
 > commutes with arbitrary direct sums; these are also equivalent to preserving all colimits and
@@ -36,7 +36,7 @@ public lemma tfae_iso_tensorFunctor_preserves_colimits_isLeftAdjoint
 
 [Tag 0GNT](https://stacks.math.columbia.edu/tag/0GNT) in the Stacks Project.
 
-**`ModuleCat.tensorFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L72). The attribute's comment: “the functor”.
+**`ModuleCat.tensorFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L72). The attribute's comment: “the functor”.
 
 > Tensoring with an `A ⊗[R] B`-module, regarded as a functor from `A`-modules to
 > `B`-modules.
@@ -46,7 +46,7 @@ public noncomputable def tensorFunctor
     (K : ModuleCat.{u} (A ⊗[R] B)) : ModuleCat.{u} A ⥤ ModuleCat.{u} B
 ```
 
-**`ModuleCat.tensorFunctor_linear`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L82). The attribute's comment: “R-linearity”.
+**`ModuleCat.tensorFunctor_linear`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L82). The attribute's comment: “R-linearity”.
 
 > Tensoring with an `A ⊗[R] B`-module is `R`-linear.
 
@@ -55,7 +55,7 @@ public lemma tensorFunctor_linear (K : ModuleCat.{u} (A ⊗[R] B)) :
     (tensorFunctor R A B K).Linear R
 ```
 
-**`ModuleCat.tensorFunctor_preservesFiniteColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L95). The attribute's comment: “right exactness”.
+**`ModuleCat.tensorFunctor_preservesFiniteColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L95). The attribute's comment: “right exactness”.
 
 > Tensoring with an `A ⊗[R] B`-module is right exact.
 
@@ -64,7 +64,7 @@ public lemma tensorFunctor_preservesFiniteColimits (K : ModuleCat.{u} (A ⊗[R] 
     PreservesFiniteColimits (tensorFunctor R A B K)
 ```
 
-**`ModuleCat.tensorFunctor_preservesDirectSums`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L100). The attribute's comment: “arbitrary direct sums”.
+**`ModuleCat.tensorFunctor_preservesDirectSums`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L100). The attribute's comment: “arbitrary direct sums”.
 
 > Tensoring with an `A ⊗[R] B`-module commutes with arbitrary direct sums.
 
@@ -74,7 +74,7 @@ public lemma tensorFunctor_preservesDirectSums (K : ModuleCat.{u} (A ⊗[R] B))
     PreservesColimitsOfShape (Discrete J) (tensorFunctor R A B K)
 ```
 
-**`ModuleCat.tensorFunctor_preservesColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L107). The attribute's comment: “all colimits”.
+**`ModuleCat.tensorFunctor_preservesColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L107). The attribute's comment: “all colimits”.
 
 > Tensoring with an `A ⊗[R] B`-module commutes with all colimits.
 
@@ -83,7 +83,7 @@ public lemma tensorFunctor_preservesColimits (K : ModuleCat.{u} (A ⊗[R] B)) :
     PreservesColimits (tensorFunctor R A B K)
 ```
 
-**`ModuleCat.tensorFunctor_isLeftAdjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L112). The attribute's comment: “right adjoint”.
+**`ModuleCat.tensorFunctor_isLeftAdjoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctor.lean#L112). The attribute's comment: “right adjoint”.
 
 > Tensoring with an `A ⊗[R] B`-module has a right adjoint.
 
@@ -96,7 +96,7 @@ public lemma tensorFunctor_isLeftAdjoint (K : ModuleCat.{u} (A ⊗[R] B)) :
 
 [Tag 0GNV](https://stacks.math.columbia.edu/tag/0GNV) in the Stacks Project.
 
-**`ModuleCat.tensorFunctorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L782). The attribute's comment: “the equivalence”. References: EGA III (7.2.6), “commutative rings”.
+**`ModuleCat.tensorFunctorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L756). The attribute's comment: “the equivalence”. References: EGA III (7.2.6), “commutative rings”.
 
 > Modules over `A ⊗[R] B` are equivalent to `R`-linear right exact functors from
 > `A`-modules to `B`-modules which preserve arbitrary direct sums.
@@ -108,7 +108,7 @@ public noncomputable def tensorFunctorEquivalence :
         (IsLinearRightExactAndPreservesDirectSums R A B)
 ```
 
-**`ModuleCat.tensorFunctorEquivalence_functorIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L793). The attribute's comment: “given by tensoring”. References: EGA III (7.2.6), “N ↦ T\_N”.
+**`ModuleCat.tensorFunctorEquivalence_functorIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 767](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L767). The attribute's comment: “given by tensoring”. References: EGA III (7.2.6), “N ↦ T\_N”.
 
 > The functor underlying `tensorFunctorEquivalence` is naturally isomorphic to the functor
 > which sends a module `K` to tensoring with `K`.
@@ -123,7 +123,7 @@ public lemma tensorFunctorEquivalence_functorIso :
 
 [Tag 0GNW](https://stacks.math.columbia.edu/tag/0GNW) in the Stacks Project.
 
-**`ModuleCat.moduleTensorFunctor_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorComposition.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorComposition.lean#L254).
+**`ModuleCat.moduleTensorFunctor_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorComposition.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorComposition.lean#L245).
 
 > The tensor product over the middle algebra represents the composite of two tensor functors. The
 > equation on pure tensors records the canonical action of `A ⊗[R] C`, and the functor isomorphism
@@ -155,7 +155,7 @@ public lemma moduleTensorFunctor_comp
 
 [Tag 0GNX](https://stacks.math.columbia.edu/tag/0GNX) in the Stacks Project.
 
-**`ModuleCat.tensorFunctor_exact_iff_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctorExactness.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctorExactness.lean#L139). References: EGA 0 (6.1.1), “more general”.
+**`ModuleCat.tensorFunctor_exact_iff_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctorExactness.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/TensorFunctorExactness.lean#L137). References: EGA 0 (6.1.1), “more general”.
 
 > Tensoring with an `A ⊗[R] B`-module `K` is an exact functor from `A`-modules to `B`-modules if
 > and only if `K` is flat as an `A`-module.
@@ -173,7 +173,7 @@ public theorem tensorFunctor_exact_iff_flat
 
 [Tag 0GP0](https://stacks.math.columbia.edu/tag/0GP0) in the Stacks Project.
 
-**`ModuleCat.exists_ringEquiv_invertible_iso_extensionTensorFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/ModuleEquivalences.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/ModuleEquivalences.lean#L627).
+**`ModuleCat.exists_ringEquiv_invertible_iso_extensionTensorFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/ModuleEquivalences.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/ModuleEquivalences.lean#L618).
 
 > **Stacks Project, Tag 0GP0.** Every equivalence between categories of modules is extension
 > of scalars along an isomorphism of the rings, followed by tensoring with an invertible module.
@@ -190,7 +190,7 @@ public lemma exists_ringEquiv_invertible_iso_extensionTensorFunctor
 
 [Tag 0GP1](https://stacks.math.columbia.edu/tag/0GP1) in the Stacks Project.
 
-**`ModuleCat.exists_algEquiv_invertible_iso_extensionTensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearModuleEquivalences.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearModuleEquivalences.lean#L89).
+**`ModuleCat.exists_algEquiv_invertible_iso_extensionTensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearModuleEquivalences.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearModuleEquivalences.lean#L89).
 
 > **Stacks Project, Tag 0GP1.** An equivalence of module categories linear over the base
 > ring is extension of scalars along an algebra isomorphism, followed by tensoring with an
@@ -211,7 +211,7 @@ public theorem exists_algEquiv_invertible_iso_extensionTensorFunctor
 
 [Tag 0GP2](https://stacks.math.columbia.edu/tag/0GP2) in the Stacks Project.
 
-**`ModuleCat.monoidHomOfMonoidal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L101). The attribute's comment: “part (2): multiplicative scalar map”.
+**`ModuleCat.monoidHomOfMonoidal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L101). The attribute's comment: “part (2): multiplicative scalar map”.
 
 > A monoidal functor canonically induces a multiplicative map on scalars.
 
@@ -221,7 +221,7 @@ public noncomputable def monoidHomOfMonoidal
     { φ : A →* B // ∀ a, φ a = scalarValue F a }
 ```
 
-**`ModuleCat.scalarValue_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L147). The attribute's comment: “part (4): additive scalar map”.
+**`ModuleCat.scalarValue_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L147). The attribute's comment: “part (4): additive scalar map”.
 
 > The scalar map of an additive monoidal functor preserves addition.
 
@@ -231,7 +231,7 @@ public theorem scalarValue_add (F : ModuleCat.{u} A ⥤ ModuleCat.{u} B)
     scalarValue F (a + b) = scalarValue F a + scalarValue F b
 ```
 
-**`ModuleCat.ringHomOfAdditive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L172). The attribute's comment: “part (4): ring homomorphism”.
+**`ModuleCat.ringHomOfAdditive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L172). The attribute's comment: “part (4): ring homomorphism”.
 
 > An additive monoidal functor induces a ring homomorphism.
 
@@ -241,7 +241,7 @@ public noncomputable def ringHomOfAdditive
     { φ : A →+* B // ∀ a, φ a = scalarValue F a }
 ```
 
-**`ModuleCat.tensorSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L185). The attribute's comment: “part (3): tensor-square example”.
+**`ModuleCat.tensorSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L185). The attribute's comment: “part (3): tensor-square example”.
 
 > Tensor squaring is a monoidal functor whose scalar map is squaring.
 
@@ -252,7 +252,7 @@ public theorem tensorSquare (A : Type u) [CommRing A] :
         scalarValue (tensorSquareFunctor A) a = a ^ 2
 ```
 
-**`ModuleCat.torsionFreeQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L302). The attribute's comment: “part (5): monoidal torsion-free quotient”.
+**`ModuleCat.torsionFreeQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L299). The attribute's comment: “part (5): monoidal torsion-free quotient”.
 
 > Quotienting abelian groups by torsion is monoidal.
 
@@ -261,7 +261,7 @@ public theorem torsionFreeQuotient :
     Nonempty torsionFreeQuotientFunctor.{u}.Monoidal
 ```
 
-**`ModuleCat.torsionFreeQuotient_scalarValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L383). The attribute's comment: “part (5): induced scalar map is the identity”.
+**`ModuleCat.torsionFreeQuotient_scalarValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L380). The attribute's comment: “part (5): induced scalar map is the identity”.
 
 > For any monoidal structure on torsion-free quotient, conjugating the image of
 > each scalar endomorphism of the monoidal unit gives that same scalar endomorphism.
@@ -278,7 +278,7 @@ public theorem torsionFreeQuotient_scalarValue
         a • (𝟙 (𝟙_ (ModuleCat.{u} ℤ)))
 ```
 
-**`ModuleCat.torsionFreeQuotient_scalar_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L409). The attribute's comment: “part (5): scalar endomorphisms on all modules”.
+**`ModuleCat.torsionFreeQuotient_scalar_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L406). The attribute's comment: “part (5): scalar endomorphisms on all modules”.
 
 > Torsion-free quotient preserves multiplication by every integer on every module.
 
@@ -291,7 +291,7 @@ public theorem torsionFreeQuotient_scalar_action (M : ModuleCat.{u} ℤ) (a : �
           torsionFreeQuotientFunctor.{u}.obj M))
 ```
 
-**`ModuleCat.torsionFreeQuotient_not_iso_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L419). The attribute's comment: “part (5): nonidentity example”.
+**`ModuleCat.torsionFreeQuotient_not_iso_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L416). The attribute's comment: “part (5): nonidentity example”.
 
 > Torsion-free quotient is not naturally isomorphic to the identity functor.
 
@@ -300,7 +300,7 @@ public theorem torsionFreeQuotient_not_iso_id :
     ¬ Nonempty (torsionFreeQuotientFunctor.{u} ≅ 𝟭 (ModuleCat.{u} ℤ))
 ```
 
-**`ModuleCat.iso_extendScalars_of_rightExact_preservesDirectSums`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L634). The attribute's comment: “part (6): extension of scalars”.
+**`ModuleCat.iso_extendScalars_of_rightExact_preservesDirectSums`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L627). The attribute's comment: “part (6): extension of scalars”.
 
 > A right-exact monoidal functor commuting with direct sums is extension of
 > scalars along its induced ring map, compatibly with the monoidal structures.
@@ -316,7 +316,7 @@ public theorem iso_extendScalars_of_rightExact_preservesDirectSums
           NatTrans.IsMonoidal i.hom
 ```
 
-**`ModuleCat.extendScalars_injective_up_to_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L672). The attribute's comment: “classification: uniqueness”.
+**`ModuleCat.extendScalars_injective_up_to_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 665](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L665). The attribute's comment: “classification: uniqueness”.
 
 > Ring maps are uniquely determined by the corresponding monoidal extension-of-scalars
 > functors, up to natural isomorphism.
@@ -328,7 +328,7 @@ public theorem extendScalars_injective_up_to_iso (φ ψ : A →+* B)
     φ = ψ
 ```
 
-**`ModuleCat.extendScalars_monoidal_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L694). The attribute's comment: “classification: existence”.
+**`ModuleCat.extendScalars_monoidal_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 687](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L687). The attribute's comment: “classification: existence”.
 
 > Every ring map gives a cocontinuous monoidal extension-of-scalars functor.
 
@@ -340,7 +340,7 @@ public theorem extendScalars_monoidal_preservesColimits (φ : A →+* B) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.Monoidal.εIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Monoidal.εIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L97) (StacksFrontier): “part (1): the unit isomorphism”.
+- [`CategoryTheory.Functor.Monoidal.εIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Monoidal.εIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/MonoidalFunctors.lean#L97) (StacksFrontier): “part (1): the unit isomorphism”.
 
 ## Depends on
 
@@ -349,4 +349,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 56.3, Tag 0GNR](https://stacks.math.columbia.edu/tag/0GNR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

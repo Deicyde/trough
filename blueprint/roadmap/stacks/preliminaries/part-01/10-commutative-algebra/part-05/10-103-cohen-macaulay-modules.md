@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.103 Cohen-Macaulay modules
 
-Section 10.103 of the Stacks Project, [Tag 00N2](https://stacks.math.columbia.edu/tag/00N2). 13 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.103 of the Stacks Project, [Tag 00N2](https://stacks.math.columbia.edu/tag/00N2). 13 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00N3, a definition
 
 [Tag 00N3](https://stacks.math.columbia.edu/tag/00N3) in the Stacks Project.
 
-**`Module.IsCohenMacaulayAtMaximalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L171). The attribute's comment: “Stated without the Noetherian and finiteness hypotheses, as in tags 00LI, 00NF and 0AAH; the equation is oriented `depth_𝔪(M) = dim Supp(M)`, the spelling of Cohen–Macaulayness already used by tags 00LK, 00NF, 0AAG, 0AAH and 0C6G. The name records that the depth is taken at the maximal ideal, `Module.IsCohenMacaulay` being Definition 0AAH for a not necessarily local ring. See the module docstring.”. References: EGA 0 (16.5.1), “CM module def”; EGA IV (7.5.3).
+**`Module.IsCohenMacaulayAtMaximalIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L176). The attribute's comment: “Stated without the Noetherian and finiteness hypotheses, as in tags 00LI, 00NF and 0AAH; the equation is oriented `depth_𝔪(M) = dim Supp(M)`, the spelling of Cohen–Macaulayness already used by tags 00LK, 00NF, 0AAG, 0AAH and 0C6G. The name records that the depth is taken at the maximal ideal, `Module.IsCohenMacaulay` being Definition 0AAH for a not necessarily local ring. See the module docstring.”. References: EGA 0 (16.5.1), “CM module def”; EGA IV (7.5.3).
 
 > **Cohen–Macaulay module over a local ring.** A module `M` over a local ring `(R, 𝔪)` is
 > *Cohen–Macaulay* if the dimension of its support equals its depth,
@@ -28,13 +28,13 @@ public def Module.IsCohenMacaulayAtMaximalIdeal (R : Type*) [CommRing R] [IsLoca
 
 Declarations registered for the tag:
 
-- [`IsCohenMacaulayModule`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L193), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L441) (StacksFrontier): “the definition of a Cohen-Macaulay module”.
+- [`IsCohenMacaulayModule`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L198), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L443) (StacksFrontier): “the definition of a Cohen-Macaulay module”.
 
 ## Tag 00N4, a lemma
 
 [Tag 00N4](https://stacks.math.columbia.edu/tag/00N4) in the Stacks Project.
 
-**`isCohenMacaulayModule_quotient_of_isGoodElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/GoodElement.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/GoodElement.lean#L258).
+**`isCohenMacaulayModule_quotient_of_isGoodElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/GoodElement.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/GoodElement.lean#L258).
 
 > (Stacks 00N4, Lemma 10.103.2.) Let `R` be a Noetherian local ring with maximal
 > ideal `m`, let `M` be a Cohen-Macaulay finite `R`-module, and let `f_1, ..., f_d ∈ m`
@@ -70,7 +70,7 @@ theorem isCohenMacaulayModule_quotient_of_isGoodElement {R : Type*} [CommRing R]
 
 [Tag 00N5](https://stacks.math.columbia.edu/tag/00N5) in the Stacks Project.
 
-**`isSMulRegular_and_isCohenMacaulayModule_quotSMulTop_of_supportDim_drop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L544). References: EGA 0 (16.5.5), “b) ⇒ a), last part”.
+**`isSMulRegular_and_isCohenMacaulayModule_quotSMulTop_of_supportDim_drop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L546). References: EGA 0 (16.5.5), “b) ⇒ a), last part”.
 
 > **Stacks 00N5.** Let `M` be a Cohen-Macaulay module over a Noetherian local ring `R`, of
 > support dimension `e ≥ 1`, and let `g ∈ m` be such that
@@ -98,7 +98,7 @@ theorem isSMulRegular_and_isCohenMacaulayModule_quotSMulTop_of_supportDim_drop
 
 [Tag 00N6](https://stacks.math.columbia.edu/tag/00N6) in the Stacks Project.
 
-**`cohenMacaulay_regularSequence_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L365). References: EGA 0 (16.5.6), “b) ⇒ a)”; EGA 0 (16.5.5), “b) ⇒ a)”; EGA 0 (16.5.7), “CM: sop ⇒ max reg seq”; SGA 2 III (2.6), “CM local, dim condition”.
+**`cohenMacaulay_regularSequence_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L365). References: EGA 0 (16.5.6), “b) ⇒ a)”; EGA 0 (16.5.5), “b) ⇒ a)”; EGA 0 (16.5.7), “CM: sop ⇒ max reg seq”; SGA 2 III (2.6), “CM local, dim condition”.
 
 > **Stacks Tag 00N6 (Proposition 10.103.4).**
 > Let `R` be a Noetherian local ring with maximal ideal `m`, and let `M` be a finite,
@@ -135,7 +135,7 @@ theorem cohenMacaulay_regularSequence_extend
 
 [Tag 0C6G](https://stacks.math.columbia.edu/tag/0C6G) in the Stacks Project.
 
-**`Module.depth_eq_supportDim_iff_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L172). The attribute's comment: “Cohen-Macaulayness is written out as the equation `depth_𝔪(N) = dim Supp(N)` that Definition 00N3 is, rather than as the predicate, so that each side is verbatim the hypothesis of Stacks 0BUS; the two differ by unfolding a definition. It is not spelled as the existence of an `M`-regular sequence of length `dim Supp(M)`, which needs Stacks 090R(2) to be the same condition.”.
+**`Module.depth_eq_supportDim_iff_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L172). The attribute's comment: “Cohen-Macaulayness is written out as the equation `depth_𝔪(N) = dim Supp(N)` that Definition 00N3 is, rather than as the predicate, so that each side is verbatim the hypothesis of Stacks 0BUS; the two differ by unfolding a definition. It is not spelled as the existence of an `M`-regular sequence of length `dim Supp(M)`, which needs Stacks 090R(2) to be the same condition.”.
 
 > **Stacks 0C6G.** Let `R` be a Noetherian local ring with maximal ideal `𝔪`, let `M` be a
 > finite `R`-module and let `x ∈ 𝔪` be a nonzerodivisor on `M`. Then `M` is Cohen-Macaulay if and
@@ -152,7 +152,7 @@ public theorem depth_eq_supportDim_iff_quotSMulTop {R : Type*} [CommRing R] [IsN
         supportDim R (QuotSMulTop x M)
 ```
 
-**`isCohenMacaulayModule_iff_isCohenMacaulayModule_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L577).
+**`isCohenMacaulayModule_iff_isCohenMacaulayModule_quotSMulTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 579](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L579).
 
 > **Stacks 0C6G.** Let `R` be a Noetherian local ring, `M` a finite `R`-module and `x ∈ m` a
 > nonzerodivisor on `M`. Then `M` is Cohen-Macaulay if and only if `M/xM` is.
@@ -171,7 +171,7 @@ theorem isCohenMacaulayModule_iff_isCohenMacaulayModule_quotSMulTop
 
 [Tag 0AAD](https://stacks.math.columbia.edu/tag/0AAD) in the Stacks Project.
 
-**`isCohenMacaulay_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 866](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L866). References: EGA 0 (16.5.3), “surjective ρ”; EGA IV (5.7.10), “special case”.
+**`isCohenMacaulay_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 886](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L886). References: EGA 0 (16.5.3), “surjective ρ”; EGA IV (5.7.10), “special case”.
 
 > **Stacks 10.103.6 (tag 0AAD).**
 > Let `φ : R →+* S` be a surjective homomorphism of Noetherian local rings, and let `N`
@@ -192,7 +192,7 @@ theorem isCohenMacaulay_iff_of_surjective
       (letI : Module R N := Module.compHom N φ; IsCohenMacaulayPropForm R N)
 ```
 
-**`isCohenMacaulay_iff_of_surjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 889](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L889). References: EGA 0 (16.5.3), “surjective ρ”.
+**`isCohenMacaulay_iff_of_surjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 909](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L909). References: EGA 0 (16.5.3), “surjective ρ”.
 
 > **Stacks 10.103.6 (tag 0AAD).**
 > Let `φ : R →+* S` be a surjective homomorphism of Noetherian local rings, and let `N`
@@ -222,7 +222,7 @@ theorem isCohenMacaulay_iff_of_surjective'
 
 [Tag 0BUS](https://stacks.math.columbia.edu/tag/0BUS) in the Stacks Project.
 
-**`Module.ringKrullDim_quotient_eq_supportDim_and_minimal_support_of_mem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L385). The attribute's comment: “Cohen-Macaulayness is spelled out as `depth_𝔪(M) = dim Supp(M)`, the definition Stacks 00N8 unfolds to, there being no predicate for it in this library yet.”. References: EGA 0 (16.5.4); EGA IV (15.4.1), “local form”; EGA IV (7.2.1.1), “more general”.
+**`Module.ringKrullDim_quotient_eq_supportDim_and_minimal_support_of_mem_associatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L385). The attribute's comment: “Cohen-Macaulayness is spelled out as `depth_𝔪(M) = dim Supp(M)`, the definition Stacks 00N8 unfolds to, there being no predicate for it in this library yet.”. References: EGA 0 (16.5.4); EGA IV (15.4.1), “local form”; EGA IV (7.2.1.1), “more general”.
 
 > **Stacks 0BUS**.
 > Let `R` be a Noetherian local ring and let `M` be a finite Cohen-Macaulay `R`-module, that is,
@@ -241,7 +241,7 @@ public theorem ringKrullDim_quotient_eq_supportDim_and_minimal_support_of_mem_as
     ringKrullDim (R ⧸ p.asIdeal) = supportDim R M ∧ Minimal (· ∈ support R M) p
 ```
 
-**`coheight_eq_supportDim_of_mem_associatedPrimes_of_isCohenMacaulayModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L614). References: EGA 0 (16.5.4); EGA IV (7.2.1.1), “more general”.
+**`coheight_eq_supportDim_of_mem_associatedPrimes_of_isCohenMacaulayModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L616). References: EGA 0 (16.5.4); EGA IV (7.2.1.1), “more general”.
 
 > **Stacks 0BUS** (EGA Ch. 0, Proposition 16.5.4). Let `M` be a finite Cohen-Macaulay module
 > over a Noetherian local ring `R` and let `p ∈ Ass(M)`. Then `dim (R/p) = dim (Supp M)`, and `p`
@@ -268,34 +268,27 @@ theorem coheight_eq_supportDim_of_mem_associatedPrimes_of_isCohenMacaulayModule
 
 [Tag 00NF](https://stacks.math.columbia.edu/tag/00NF) in the Stacks Project.
 
-**`Module.IsMaximalCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L110). The attribute's comment: “Stated without the Noetherian and finiteness hypotheses; see the module docstring.”. References: EGA IV (7.5.3).
+**`Module.IsMaximalCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L115). The attribute's comment: “Stated without the Noetherian and finiteness hypotheses, which the lemmas assume where needed; under them this is the source's condition, with the depth of Tag 00LI. See the module docstring.”. References: EGA IV (7.5.3).
 
 > **Maximal Cohen–Macaulay module.** A module `M` over a local ring `(R, 𝔪)` is *maximal
 > Cohen–Macaulay* if its depth along `𝔪` equals the Krull dimension of `R`,
-> `depth_𝔪(M) = dim(R)`, which is the largest value the depth of an `R`-module can take. The
+> `depth_𝔪(M) = dim(R)`, which for `R` Noetherian is the largest value the depth of a nonzero
+> finite `R`-module can take. The
 > source states this for `R` Noetherian and `M` finite; neither hypothesis is needed to state the
-> condition, so both are left to the lemmas.
+> condition, so both are left to the lemmas, and under them this is the source's condition. The
+> depth is that of Tag 00LI, so the zero module has depth `∞` and, `dim(R)` being finite for a
+> Noetherian local ring, is not maximal Cohen–Macaulay, as in the source.
 
 ```lean
 public def Module.IsMaximalCohenMacaulay (R : Type*) [CommRing R] [IsLocalRing R] (M : Type*)
     [AddCommGroup M] [Module R M] : Prop
 ```
 
-**`IsMaximalCohenMacaulayModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L655).
-
-> **Stacks 00NF.** A finite module `M` over a Noetherian local ring `R` is *maximal
-> Cohen-Macaulay* if `depth M = dim R`, i.e. if its depth is as large as it can possibly be.
-
-```lean
-def IsMaximalCohenMacaulayModule (R : Type*) [CommRing R] [IsNoetherianRing R] [IsLocalRing R]
-    (M : Type*) [AddCommGroup M] [Module R M] [Module.Finite R M] : Prop
-```
-
 ## Tag 0AAE, a lemma
 
 [Tag 0AAE](https://stacks.math.columbia.edu/tag/0AAE) in the Stacks Project.
 
-**`Module.IsMaximalCohenMacaulay.length_eq_ringKrullDim_of_support_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L746). The attribute's comment: “The source's `M` Cohen-Macaulay with `Spec(R) = Supp(M)` is the conjunction of `Module.IsMaximalCohenMacaulay R M` (Definition 00NF, i.e. `depth_𝔪(M) = dim R`) and `Module.support R M = Set.univ`, the two being equivalent to it as the source itself remarks; a maximal chain of primes is a `RelSeries` for the covering relation `⋖` on `PrimeSpectrum R` whose head is minimal and whose last is maximal. See the module docstring.”. References: EGA IV (15.4.1), “special case”.
+**`Module.IsMaximalCohenMacaulay.length_eq_ringKrullDim_of_support_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L746). The attribute's comment: “The source's `M` Cohen-Macaulay with `Spec(R) = Supp(M)` is the conjunction of `Module.IsMaximalCohenMacaulay R M` (Definition 00NF, i.e. `depth_𝔪(M) = dim R`) and `Module.support R M = Set.univ`, the two being equivalent to it as the source itself remarks; a maximal chain of primes is a `RelSeries` for the covering relation `⋖` on `PrimeSpectrum R` whose head is minimal and whose last is maximal. See the module docstring.”. References: EGA IV (15.4.1), “special case”.
 
 > **Maximal chains of primes in a local ring with a Cohen–Macaulay module of full support.**
 > Let `R` be a Noetherian local ring and let `M` be a finite `R`-module which is Cohen–Macaulay
@@ -317,7 +310,7 @@ public theorem Module.IsMaximalCohenMacaulay.length_eq_ringKrullDim_of_support_e
 
 [Tag 0AAF](https://stacks.math.columbia.edu/tag/0AAF) in the Stacks Project.
 
-**`Module.IsMaximalCohenMacaulay.ringKrullDim_eq_height_add_ringKrullDim_quotient_of_support_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 1173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L1173). The attribute's comment: “The source's `M` Cohen-Macaulay with `Spec(R) = Supp(M)` is the conjunction of `Module.IsMaximalCohenMacaulay R M` (Definition 00NF, i.e. `depth_𝔪(M) = dim R`) and `Module.support R M = Set.univ`, the two being equivalent to it as the source itself remarks; `dim(R_𝔭)` is written `𝔭.height`. See the module docstring.”. References: EGA 0 (16.5.11); EGA 0 (16.5.10), “(ii), Supp M = Spec A”; EGA IV (15.4.1), “special case”.
+**`Module.IsMaximalCohenMacaulay.ringKrullDim_eq_height_add_ringKrullDim_quotient_of_support_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean, line 1173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Dimension.lean#L1173). The attribute's comment: “The source's `M` Cohen-Macaulay with `Spec(R) = Supp(M)` is the conjunction of `Module.IsMaximalCohenMacaulay R M` (Definition 00NF, i.e. `depth_𝔪(M) = dim R`) and `Module.support R M = Set.univ`, the two being equivalent to it as the source itself remarks; `dim(R_𝔭)` is written `𝔭.height`. See the module docstring.”. References: EGA 0 (16.5.11); EGA 0 (16.5.10), “(ii), Supp M = Spec A”; EGA IV (15.4.1), “special case”.
 
 > **The dimension formula in a local ring with a Cohen–Macaulay module of full support.** Let
 > `R` be a Noetherian local ring and let `M` be a finite `R`-module which is Cohen–Macaulay with
@@ -337,7 +330,7 @@ public theorem ringKrullDim_eq_height_add_ringKrullDim_quotient_of_support_eq_un
 
 [Tag 0AAG](https://stacks.math.columbia.edu/tag/0AAG) in the Stacks Project.
 
-**`Module.depth_eq_supportDim_of_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Localization.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Localization.lean#L288). The attribute's comment: “Cohen–Macaulayness is spelled out as `depth_𝔪(N) = dim Supp(N)`, the equation Definition 00N3 unfolds to, there being no predicate for it in this library yet; the localization is presented by `IsLocalization.AtPrime` and `IsLocalizedModule`; and `𝔭` is required to lie in `Supp(M)`, spelled `Nontrivial Mₚ`, without which the conclusion is false for the source's own conventions. See the module docstring.”. References: EGA 0 (16.5.10); EGA 0 (16.5.13), “forward direction”.
+**`Module.depth_eq_supportDim_of_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Localization.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Localization.lean#L288). The attribute's comment: “Cohen–Macaulayness is spelled out as `depth_𝔪(N) = dim Supp(N)`, the equation Definition 00N3 unfolds to, there being no predicate for it in this library yet; the localization is presented by `IsLocalization.AtPrime` and `IsLocalizedModule`; and `𝔭` is required to lie in `Supp(M)`, spelled `Nontrivial Mₚ`, without which the conclusion is false for the source's own conventions. See the module docstring.”. References: EGA 0 (16.5.10); EGA 0 (16.5.13), “forward direction”.
 
 > **Cohen–Macaulayness localizes.** Let `(R, 𝔪)` be a Noetherian local ring and `M` a finite
 > `R`-module which is Cohen–Macaulay, i.e. `depth_𝔪(M) = dim Supp(M)` (Definition 00N3). Let
@@ -362,7 +355,7 @@ public theorem depth_eq_supportDim_of_isLocalizedModule {R : Type*} [CommRing R]
 
 [Tag 0AAH](https://stacks.math.columbia.edu/tag/0AAH) in the Stacks Project.
 
-**`Module.IsCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L136). The attribute's comment: “The condition is imposed at the primes of `Supp(M)` rather than at all primes of `R`, the literal reading being vacuous for the source's own conventions on the zero module; Cohen–Macaulayness at a prime is spelled out as the equation `depth_{𝔭R_𝔭}(M_𝔭) = dim Supp(M_𝔭)` of Definition 00N3, there being no predicate for it in this library; the localisations are the canonical models; and the Noetherian and finiteness hypotheses are dropped, as in tags 00LI and 00NF. See the module docstring.”. References: EGA 0 (16.5.13); EGA IV (5.7.1), “special case”; EGA IV (7.5.3).
+**`Module.IsCohenMacaulay`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Defs.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Defs.lean#L141). The attribute's comment: “The condition is imposed at the primes of `Supp(M)` rather than at all primes of `R`, the literal reading being vacuous for the source's own conventions on the zero module; Cohen–Macaulayness at a prime is spelled out as the equation `depth_{𝔭R_𝔭}(M_𝔭) = dim Supp(M_𝔭)` of Definition 00N3, there being no predicate for it in this library; the localisations are the canonical models; and the Noetherian and finiteness hypotheses are dropped, as in tags 00LI and 00NF. See the module docstring.”. References: EGA 0 (16.5.13); EGA IV (5.7.1), “special case”; EGA IV (7.5.3).
 
 > **Cohen–Macaulay module.** An `R`-module `M` is *Cohen–Macaulay* if for every prime `𝔭` in
 > the support of `M` the localisation `M_𝔭` is a Cohen–Macaulay module over the local ring `R_𝔭`,
@@ -373,7 +366,7 @@ public def IsCohenMacaulay (R : Type*) [CommRing R] (M : Type*) [AddCommGroup M]
     [Module R M] : Prop
 ```
 
-**`IsLocallyCohenMacaulayModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L695). The attribute's comment: “Quantified over Supp M. The source's literal all-primes wording is inconsistent when M\_p = 0, since the zero module is not Cohen-Macaulay here; this is a source erratum, and the definition captures 0AAH in full.”. References: EGA 0 (16.5.13).
+**`IsLocallyCohenMacaulayModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 715](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L715). The attribute's comment: “Quantified over Supp M. The source's literal all-primes wording is inconsistent when M\_p = 0, since the zero module is not Cohen-Macaulay here; this is a source erratum, and the definition captures 0AAH in full.”. References: EGA 0 (16.5.13).
 
 > **Stacks 0AAH.** Let `R` be a Noetherian ring, not necessarily local, and let `M` be a finite
 > `R`-module. Then `M` is *Cohen-Macaulay* if `M_p` is a Cohen-Macaulay `R_p`-module for every prime
@@ -404,7 +397,7 @@ def IsLocallyCohenMacaulayModule (R : Type*) [CommRing R] [IsNoetherianRing R]
 
 [Tag 0AAI](https://stacks.math.columbia.edu/tag/0AAI) in the Stacks Project.
 
-**`Module.IsCohenMacaulay.mvPolynomial_of_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/MvPolynomial.lean, line 1484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/MvPolynomial.lean#L1484). The attribute's comment: “The base change `M ⊗_R R[x_1, …, x_n]` is presented abstractly, as an `S`-module `N` with an `R`-linear `f : M →ₗ[R] N` satisfying `IsBaseChange S f` for `S = MvPolynomial σ R`, as in tag 0AAG and in Mathlib's `RingTheory.Sequence.IsWeaklyRegular.of_flat_of_isBaseChange`; the variables are indexed by an arbitrary finite type rather than by `Fin n`; and the finiteness of `M`, which the source keeps inside Definition 0AAH, is assumed explicitly. See the module docstring.”. References: EGA IV (6.3.6); EGA IV (6.11.9), “more general”.
+**`Module.IsCohenMacaulay.mvPolynomial_of_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/MvPolynomial.lean, line 1484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/MvPolynomial.lean#L1484). The attribute's comment: “The base change `M ⊗_R R[x_1, …, x_n]` is presented abstractly, as an `S`-module `N` with an `R`-linear `f : M →ₗ[R] N` satisfying `IsBaseChange S f` for `S = MvPolynomial σ R`, as in tag 0AAG and in Mathlib's `RingTheory.Sequence.IsWeaklyRegular.of_flat_of_isBaseChange`; the variables are indexed by an arbitrary finite type rather than by `Fin n`; and the finiteness of `M`, which the source keeps inside Definition 0AAH, is assumed explicitly. See the module docstring.”. References: EGA IV (6.3.6); EGA IV (6.11.9), “more general”.
 
 > **Cohen–Macaulayness ascends along a polynomial extension.** Let `R` be a Noetherian ring, let
 > `M` be a finite Cohen–Macaulay `R`-module, and let `N`, together with an `R`-linear map
@@ -426,4 +419,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.103, Tag 00N2](https://stacks.math.columbia.edu/tag/00N2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

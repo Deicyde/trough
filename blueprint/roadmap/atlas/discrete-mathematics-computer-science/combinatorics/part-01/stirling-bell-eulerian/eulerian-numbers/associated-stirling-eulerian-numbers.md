@@ -7,7 +7,7 @@ statement: formalized
 
 # Associated Stirling–Eulerian numbers
 
-79 results, 19 proved and 60 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html).
+79 results, 19 proved and 60 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html).
 
 ## Number of excedances
 
@@ -19,7 +19,7 @@ of excedances of $\sigma$.
 
 - JIS VOL28/Rakotoson/rakoto12.tex Lines 130-132; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
 
-Formalized by `MetaMathlibExt.excedanceCount`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#excedance-count).
+Formalized by `MetaMathlibExt.excedanceCount`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#excedance-count).
 
 ## Permutations with all cycles of length at most $r$
 
@@ -33,7 +33,7 @@ $r$. For $n = 0$ the empty permutation qualifies for every $r$.
 
 - source JIS VOL28/Rakotoson/rakoto12.tex Lines 106-108 and Lines 257-259; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
 
-Formalized by `MetaMathlibExt.IsRMinusAssociatedCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rminus-associated-cycle-perm).
+Formalized by `MetaMathlibExt.IsRMinusAssociatedCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rminus-associated-cycle-perm).
 
 ## Permutations with all cycles longer than $r$
 
@@ -47,7 +47,7 @@ For $n = 0$ the empty permutation qualifies for every $r$.
 
 - source JIS VOL28/Rakotoson/rakoto12.tex Lines 106-108 and Lines 653-657; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
 
-Formalized by `MetaMathlibExt.IsRAssociatedCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rassociated-cycle-perm).
+Formalized by `MetaMathlibExt.IsRAssociatedCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rassociated-cycle-perm).
 
 ## $r$-minus-associated Stirling Eulerian numbers
 
@@ -61,7 +61,7 @@ $\sigma(i) > i$.
 
 - JIS VOL28/Rakotoson/rakoto12.tex Lines 257-259; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
 
-Formalized by `MetaMathlibExt.rMinusAssociatedStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-stirling-eulerian).
+Formalized by `MetaMathlibExt.rMinusAssociatedStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-stirling-eulerian).
 
 ## $r$-associated Stirling Eulerian numbers
 
@@ -75,7 +75,7 @@ with $\sigma(i) > i$.
 
 - Source JIS VOL28/Rakotoson/rakoto12.tex Lines 653-657; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
 
-Formalized by `MetaMathlibExt.rAssociatedStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian).
+Formalized by `MetaMathlibExt.rAssociatedStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian).
 
 ## Circular Eulerian numbers
 
@@ -92,7 +92,7 @@ For $n \ge 2$ the permutations with a single cycle through all points are exactl
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorems 5 and 6 (excedance distribution `C_n(x)` over circular permutations, `C_{1,0} = 1`).
 
-Formalized by `MetaMathlibExt.circularEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian).
+Formalized by `MetaMathlibExt.circularEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian).
 
 ## Small circular Eulerian numbers
 
@@ -106,7 +106,7 @@ excedance and $1 \mapsto 2 \mapsto 3 \mapsto 1$ has two.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 5.
 
-Formalized by `MetaMathlibExt.circularEulerian_small`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian-small).
+Formalized by `MetaMathlibExt.circularEulerian_small`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian-small).
 
 ## Circular permutations are the full cycles
 
@@ -120,7 +120,7 @@ $\sigma$ moves every point.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorems 5 and 6 (circular permutations).
 
-Formalized by `MetaMathlibExt.sameCycle_all_iff_isCycle_support_eq_univ`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#same-cycle-all-iff-is-cycle-support-eq-u).
+Formalized by `MetaMathlibExt.sameCycle_all_iff_isCycle_support_eq_univ`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#same-cycle-all-iff-is-cycle-support-eq-u).
 
 ## Permutations with all cycles of length $r$
 
@@ -136,7 +136,7 @@ These are the paper's $(r)$-cycle permutations, the set $S_n^r$ of Corollary 25.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorems 20-23 and Corollaries 24-26.
 
-Formalized by `MetaMathlibExt.IsRCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rcycle-perm).
+Formalized by `MetaMathlibExt.IsRCyclePerm`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rcycle-perm).
 
 ## Cycle-type characterization of $r$-cycle permutations
 
@@ -149,7 +149,7 @@ of length at least $2$ has length exactly $r$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorems 20-23 (cycle lengths of `(r)`-cycle permutations).
 
-Formalized by `MetaMathlibExt.isRCyclePerm_iff`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rcycle-perm-iff).
+Formalized by `MetaMathlibExt.isRCyclePerm_iff`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#is-rcycle-perm-iff).
 
 ## $r$-cycle Stirling Eulerian numbers
 
@@ -162,7 +162,7 @@ exactly $m$ excedances, that is, exactly $m$ indices $i$ with $\sigma(i) > i$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorems 20 and 21.
 
-Formalized by `MetaMathlibExt.rCycleStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian).
+Formalized by `MetaMathlibExt.rCycleStirlingEulerian`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian).
 
 ## Small $r$-cycle Stirling Eulerian numbers
 
@@ -177,7 +177,7 @@ $3$-cycles).
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 20 and Corollary 25.
 
-Formalized by `MetaMathlibExt.rCycleStirlingEulerian_small`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian-small).
+Formalized by `MetaMathlibExt.rCycleStirlingEulerian_small`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian-small).
 
 ## Excedance and cycle generating function of a permutation family
 
@@ -197,7 +197,7 @@ With $q = 1$ this is the paper's $P(x, u)$, and for general $q$ its $q$-analogue
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 6 and Corollary 43 (the series `C(x,u)` and `A_k(x,u)`), Corollary 24 (the weight `x^{e(π)} q^{c(π)}`).
 
-Formalized by `MetaMathlibExt.permExcedanceCycleEGF`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-excedance-cycle-egf).
+Formalized by `MetaMathlibExt.permExcedanceCycleEGF`, a definition declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-excedance-cycle-egf).
 
 ## Coefficients of the excedance and cycle generating function
 
@@ -213,7 +213,7 @@ length one.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 6.
 
-Formalized by `MetaMathlibExt.coeff_permExcedanceCycleEGF`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#coeff-perm-excedance-cycle-egf).
+Formalized by `MetaMathlibExt.coeff_permExcedanceCycleEGF`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#coeff-perm-excedance-cycle-egf).
 
 ## Constant coefficient of the generating function of all permutations
 
@@ -227,7 +227,7 @@ The only permutation of the empty set has no excedance and no cycle.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 6.
 
-Formalized by `MetaMathlibExt.coeff_zero_permExcedanceCycleEGF_true`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#coeff-zero-perm-excedance-cycle-egf-true).
+Formalized by `MetaMathlibExt.coeff_zero_permExcedanceCycleEGF_true`, a theorem declared in [MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/AssociatedStirlingEulerian.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#coeff-zero-perm-excedance-cycle-egf-true).
 
 ## Circular Eulerian numbers are shifted Eulerian numbers
 
@@ -245,7 +245,7 @@ $C_n(x) = \sum_{m=0}^{n} C_{n,m} x^m$ and $A_{n-1}(x) = \sum_{m=0}^{n-1} A_{n-1,
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 5 (`jis-2025-25.5.7-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.circularEulerian_eq_eulerian` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian-eq-eulerian).
+Stated but not proved: `MetaMathlibExt.circularEulerian_eq_eulerian` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-eulerian-eq-eulerian).
 
 ## Recurrence for permutations with cycle lengths at most r, by excedances
 
@@ -265,7 +265,7 @@ A term with $j > n$ vanishes because $\binom{n}{j} = 0$; there $n - j$ is read a
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 10 (`jis-2025-25.5.7-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-stirling-eulerian-suc).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-stirling-eulerian-suc).
 
 ## Recurrence for the $r$-associated Stirling Eulerian numbers
 
@@ -286,7 +286,7 @@ where the term $(n-m) A^r_{n-1,m-1}$ is read as $0$ when $m = 0$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 30 (`jis-2025-25.5.7-thm-30`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedStirlingEulerian_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian-recurrenc).
+Stated but not proved: `MetaMathlibExt.rAssociatedStirlingEulerian_recurrence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian-recurrenc).
 
 ## Convolution recurrence for the $r$-associated Stirling Eulerian numbers
 
@@ -309,7 +309,7 @@ being empty.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 31 (`jis-2025-25.5.7-thm-31`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian-succ).
+Stated but not proved: `MetaMathlibExt.rAssociatedStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-stirling-eulerian-succ).
 
 ## Derangements weighted by excedances and cycle weight $-2$
 
@@ -326,7 +326,7 @@ with the denominator cleared.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 55 (`jis-2025-25.5.7-cor-55`).
 
-Stated but not proved: `MetaMathlibExt.derangement_excedance_cycle_sum_neg_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-excedance-cycle-sum-neg-two).
+Stated but not proved: `MetaMathlibExt.derangement_excedance_cycle_sum_neg_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-excedance-cycle-sum-neg-two).
 
 ## Logarithm of the Eulerian generating function
 
@@ -343,7 +343,7 @@ cycle. Then $\exp C(x,u) = A(x,u)$, that is, $C(x,u) = \ln A(x,u)$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 6 (`jis-2025-25.5.7-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.exp_circularPermEGF_eq_permEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-perm-egf-eq-perm-egf).
+Stated but not proved: `MetaMathlibExt.exp_circularPermEGF_eq_permEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-perm-egf-eq-perm-egf).
 
 ## Excedance generating function of circular permutations of at most $r$ objects
 
@@ -361,7 +361,7 @@ points).
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 7 (`jis-2025-25.5.7-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.circularRMinusPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-rminus-perm-egf-eq).
+Stated but not proved: `MetaMathlibExt.circularRMinusPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-rminus-perm-egf-eq).
 
 ## Excedance generating function of circular permutations of $r$ objects
 
@@ -377,7 +377,7 @@ $x\,A_{r-1}(x)\,u^r/r!$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 8 (`jis-2025-25.5.7-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.circularRCyclePermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-rcycle-perm-egf-eq).
+Stated but not proved: `MetaMathlibExt.circularRCyclePermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#circular-rcycle-perm-egf-eq).
 
 ## Excedance generating function of circular permutations of more than $r$ objects
 
@@ -401,7 +401,7 @@ written in exponential form.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 9 (`jis-2025-25.5.7-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.exp_circularRPlusPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rplus-perm-egf-eq).
+Stated but not proved: `MetaMathlibExt.exp_circularRPlusPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rplus-perm-egf-eq).
 
 ## Exponential generating function of permutations with cycle lengths at most $r$
 
@@ -421,7 +421,7 @@ where $\exp$ of a series with zero constant term is its substitution into the ex
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 11 (`jis-2025-25.5.7-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-eq-exp).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-eq-exp).
 
 ## Logarithm of the generating function of permutations with short cycles
 
@@ -439,7 +439,7 @@ Then $\exp C^{r-}(x,u) = A^{r-}(x,u)$, that is, $C^{r-}(x,u) = \ln A^{r-}(x,u)$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 12 (`jis-2025-25.5.7-cor-12`).
 
-Stated but not proved: `MetaMathlibExt.exp_circularRMinusPermEGF_eq_rMinusAssociatedPermEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rminus-perm-egf-eq-r-minus).
+Stated but not proved: `MetaMathlibExt.exp_circularRMinusPermEGF_eq_rMinusAssociatedPermEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rminus-perm-egf-eq-r-minus).
 
 ## Primitive of the Eulerian generating function
 
@@ -458,7 +458,7 @@ logarithm exponentiated.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 13 (`jis-2025-25.5.7-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.exp_eulerianEGF_primitive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-eulerian-egf-primitive).
+Stated but not proved: `MetaMathlibExt.exp_eulerianEGF_primitive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-eulerian-egf-primitive).
 
 ## Generating function of permutations with cycle lengths at most $r$ and $k$ cycles
 
@@ -482,7 +482,7 @@ into the exponential series.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 14 (`jis-2025-25.5.7-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-cycle-count).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-cycle-count).
 
 ## Cycle-counting generating function for cycle lengths at most r
 
@@ -503,7 +503,7 @@ whose cycles have length at most $r$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 15 (`jis-2025-25.5.7-thm-15`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-q-eq-exp).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-q-eq-exp).
 
 ## Cycle lengths at most r: the q-analogue is a q-th power
 
@@ -523,7 +523,7 @@ power read as $\exp(q \ln F_1)$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 16 (`jis-2025-25.5.7-cor-16`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-q-eq-pow).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-q-eq-pow).
 
 ## Recurrence for $r$-cycle Stirling Eulerian numbers
 
@@ -543,7 +543,7 @@ $\binom{n}{r-1} = 0$).
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 20 (`jis-2025-25.5.7-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.rCycleStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian-succ).
+Stated but not proved: `MetaMathlibExt.rCycleStirlingEulerian_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-stirling-eulerian-succ).
 
 ## Excedance generating function of permutations with all cycles of length $r$
 
@@ -563,7 +563,7 @@ $$A^{(r)}(x,u) = \exp\left(\frac{x A_{r-1}(x)\, u^r}{r!}\right).$$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 21 (`jis-2025-25.5.7-thm-21`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-eq-exp).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-eq-exp).
 
 ## Excedance generating function of permutations with $k$ cycles, all of length $r$
 
@@ -587,7 +587,7 @@ $\exp L = A^{(r)}(x,u)$ also $A^{(r)}_k(x,u) = L^k/k!$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 22 (`jis-2025-25.5.7-thm-22`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-cycle-count-eq).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-cycle-count-eq).
 
 ## Cycle-weighted exponential formula for $r$-cycle permutations
 
@@ -608,7 +608,7 @@ where $\exp$ of a series with zero constant term is its substitution into the ex
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 23 (`jis-2025-25.5.7-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-q-eq-exp).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-q-eq-exp).
 
 ## Excedance and cycle polynomial of permutations with k cycles, all of length r
 
@@ -629,7 +629,7 @@ The quotient $(rk)!/((r!)^k k!)$ is an exact natural-number division.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 24 (`jis-2025-25.5.7-cor-24`).
 
-Stated but not proved: `MetaMathlibExt.sum_rCyclePerm_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#sum-r-cycle-perm-cycle-count-eq).
+Stated but not proved: `MetaMathlibExt.sum_rCyclePerm_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 359](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L359). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#sum-r-cycle-perm-cycle-count-eq).
 
 ## Number of permutations with all cycles of length $r$
 
@@ -644,7 +644,7 @@ When $r$ divides $n$ the quotient is an integer, so the natural-number division 
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 25 (`jis-2025-25.5.7-cor-25`).
 
-Stated but not proved: `MetaMathlibExt.card_rCyclePerm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#card-r-cycle-perm).
+Stated but not proved: `MetaMathlibExt.card_rCyclePerm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#card-r-cycle-perm).
 
 ## Exponential generating function for permutations with all cycles of length $r$
 
@@ -659,7 +659,7 @@ $$\sum_{n \ge 0} |S_n^r| \frac{u^n}{n!} = \exp\left(\frac{u^r}{r}\right).$$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 26 (`jis-2025-25.5.7-cor-26`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermCountEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-count-egf-eq-exp).
+Stated but not proved: `MetaMathlibExt.rCyclePermCountEGF_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-count-egf-eq-exp).
 
 ## Excedance generating function of permutations with all cycles longer than $r$
 
@@ -679,7 +679,7 @@ $$A^r(x,u) = A(x,u) \exp\left(-u - x \sum_{j=1}^{r-1} \frac{A_j(x)\, u^{j+1}}{(j
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 32 (`jis-2025-25.5.7-thm-32`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-eq).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 398](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L398). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-eq).
 
 ## Logarithm of the generating function of permutations with long cycles
 
@@ -700,7 +700,7 @@ all permutations, $C^{0+}(x,u)$ over all circular permutations, and this is Theo
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 33 (`jis-2025-25.5.7-cor-33`).
 
-Stated but not proved: `MetaMathlibExt.exp_circularRPlusPermEGF_eq_rAssociatedPermEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rplus-perm-egf-eq-r-associa).
+Stated but not proved: `MetaMathlibExt.exp_circularRPlusPermEGF_eq_rAssociatedPermEGF` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#exp-circular-rplus-perm-egf-eq-r-associa).
 
 ## Permutations with $k$ cycles, all of length greater than $r$, by excedances
 
@@ -719,7 +719,7 @@ $\exp(F) = \sum_{m \ge 0} F^m/m!$, then $A^r_k(x,u) = L^k/k!$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 34 (`jis-2025-25.5.7-thm-34`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-cycle-count-eq).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-cycle-count-eq).
 
 ## The $q$-analogue for cycles longer than $r$ is a $q$-th power
 
@@ -742,7 +742,7 @@ This is the paper's $A^r(q,x,u) = (A^r(x,u))^q$, with the power read through the
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 35 (`jis-2025-25.5.7-thm-35`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-q-eq-pow).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-q-eq-pow).
 
 ## Excedance generating function of involutions
 
@@ -758,7 +758,7 @@ $$\sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} \frac{u^n}{n!} = \exp
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 39 (`jis-2025-25.5.7-cor-39`).
 
-Stated but not proved: `MetaMathlibExt.involutionEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#involution-egf-q-eq-exp).
+Stated but not proved: `MetaMathlibExt.involutionEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 460](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L460). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#involution-egf-q-eq-exp).
 
 ## Excedance generating function of fixed-point-free involutions
 
@@ -774,7 +774,7 @@ $$\sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} \frac{u^n}{n!} = \exp
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 41 (`jis-2025-25.5.7-cor-41`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointFreeInvolutionEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-point-free-involution-egf-q-eq-exp).
+Stated but not proved: `MetaMathlibExt.fixedPointFreeInvolutionEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-point-free-involution-egf-q-eq-exp).
 
 ## Excedance generating function of permutations with $k$ cycles
 
@@ -792,7 +792,7 @@ $\exp(F) = \sum_{m \ge 0} F^m/m!$, then $A_k(x,u) = L^k/k!$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 43 (`jis-2025-25.5.7-cor-43`).
 
-Stated but not proved: `MetaMathlibExt.permEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-cycle-count-eq).
+Stated but not proved: `MetaMathlibExt.permEGF_cycleCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-cycle-count-eq).
 
 ## Brenti's excedance and cycle generating function
 
@@ -809,7 +809,7 @@ $\exp(F) = \sum_{m \ge 0} F^m/m!$, then $A(q,x,u) = \exp(qL)$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 44 (`jis-2025-25.5.7-cor-44`).
 
-Stated but not proved: `MetaMathlibExt.permEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-q-eq-pow).
+Stated but not proved: `MetaMathlibExt.permEGF_q_eq_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 500](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L500). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-q-eq-pow).
 
 ## First points in distinct cycles
 
@@ -825,7 +825,7 @@ $s$-fixed-points permutations.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Section 1 (definitions of `(r^-,k,s)`-cycle and `s`-fixed-points permutations).
 
-Formalized by `MetaMathlibExt.FirstPointsInDistinctCycles`, a definition declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles).
+Formalized by `MetaMathlibExt.FirstPointsInDistinctCycles`, a definition declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles).
 
 ## The first-points condition for $s = 0$
 
@@ -837,7 +837,7 @@ cycles: there are no such points, so the condition is vacuous.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Section 1.
 
-Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-zero).
+Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-zero).
 
 ## The identity permutation separates its first points
 
@@ -849,7 +849,7 @@ cycles: every point forms a cycle of its own.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Section 1.
 
-Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-one).
+Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-one).
 
 ## First points of the transposition $(0\,1)$
 
@@ -862,7 +862,7 @@ same cycle of $\tau$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Section 1.
 
-Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_swap`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 553](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L553). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-swap).
+Formalized by `MetaMathlibExt.firstPointsInDistinctCycles_swap`, a theorem declared in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 553](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L553). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-in-distinct-cycles-swap).
 
 ## Derivative formula for permutations with cycle lengths at most $r$ and separated first points
 
@@ -887,7 +887,7 @@ $r = 0$ and $s = 1$ the identity fails (the left side is $0$, the right side $1$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 17 (`jis-2025-25.5.7-thm-17`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 567](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L567). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points).
 
 ## Derivative formula for permutations with cycle lengths at most $r$, $k$ cycles and separated first points
 
@@ -915,7 +915,7 @@ right side is $1$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 18 (`jis-2025-25.5.7-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points-2).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 589](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L589). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points-2).
 
 ## Cycle-weighted derivative formula for permutations with cycle lengths at most $r$ and separated first points
 
@@ -944,7 +944,7 @@ side is $q$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 19 (`jis-2025-25.5.7-thm-19`).
 
-Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points-3).
+Stated but not proved: `MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-minus-associated-perm-egf-first-points-3).
 
 ## Derivative formula for $r$-cycle permutations with separated first points
 
@@ -966,7 +966,7 @@ $$F^{(s)}(u) = x^s \left(\frac{A_{r-1}(x)\, u^{r-1}}{(r-1)!}\right)^s A^{(r)}(x,
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 27 (`jis-2025-25.5.7-thm-27`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-iterate-de).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 634](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L634). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-iterate-de).
 
 ## Derivative formula for $r$-cycle permutations with $k$ cycles and separated first points
 
@@ -990,7 +990,7 @@ $$F^{(s)}(u) = x^s \left(\frac{A_{r-1}(x)\, u^{r-1}}{(r-1)!}\right)^s \frac{L^{k
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 28 (`jis-2025-25.5.7-thm-28`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-cycle-coun).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-cycle-coun).
 
 ## Cycle-weighted derivative formula for $r$-cycle permutations with separated first points
 
@@ -1015,7 +1015,7 @@ $$F^{(s)}(u) = q^s x^s \left(\frac{A_{r-1}(x)\, u^{r-1}}{(r-1)!}\right)^s \exp(q
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 29 (`jis-2025-25.5.7-thm-29`).
 
-Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-q-iterate).
+Stated but not proved: `MetaMathlibExt.rCyclePermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 676](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L676). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-cycle-perm-egf-first-points-q-iterate).
 
 ## Iterated derivative for cycles longer than $r$ with $s$ points in distinct cycles
 
@@ -1039,7 +1039,7 @@ x^s \left(A(x,u) - \sum_{n=0}^{r-1} \frac{A_n(x)\, u^n}{n!}\right)^s A^r(x,u).$$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 36 (`jis-2025-25.5.7-thm-36`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-itera).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 696](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L696). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-itera).
 
 ## Iterated derivative for $k$ cycles longer than $r$ with $s$ points in distinct cycles
 
@@ -1063,7 +1063,7 @@ x^s \left(A(x,u) - \sum_{n=0}^{r-1} \frac{A_n(x)\, u^n}{n!}\right)^s \frac{L^{k-
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 37 (`jis-2025-25.5.7-thm-37`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-cycle).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 716](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L716). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-cycle).
 
 ## Iterated derivative of the $q$-analogue for cycles longer than $r$, $s$ points apart
 
@@ -1091,7 +1091,7 @@ The factor $\exp(qL)$ is the paper's $(A^r(x,u))^q$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 38 (`jis-2025-25.5.7-thm-38`).
 
-Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-q-ite).
+Stated but not proved: `MetaMathlibExt.rAssociatedPermEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 739](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L739). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#r-associated-perm-egf-first-points-q-ite).
 
 ## Excedances and cycles of involutions
 
@@ -1115,7 +1115,7 @@ two-cycles has $2k$ (resp. $2k+1$) fixed points.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 40 (`jis-2025-25.5.7-cor-40`).
 
-Stated but not proved: `MetaMathlibExt.involution_excedance_cycle_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#involution-excedance-cycle-sum).
+Stated but not proved: `MetaMathlibExt.involution_excedance_cycle_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#involution-excedance-cycle-sum).
 
 ## Excedances and cycles of fixed-point-free involutions
 
@@ -1135,7 +1135,7 @@ $q x$); the single term is the reading forced by Corollary 41, $\exp(q x u^2/2)$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 42 (`jis-2025-25.5.7-cor-42`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointFreeInvolution_excedance_cycle_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-point-free-involution-excedance-cy).
+Stated but not proved: `MetaMathlibExt.fixedPointFreeInvolution_excedance_cycle_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 788](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L788). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-point-free-involution-excedance-cy).
 
 ## Derivative formula for permutations whose first $s$ points lie in distinct cycles
 
@@ -1155,7 +1155,7 @@ where $\exp(F) = \sum_{m \ge 0} F^m/m!$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 45 (`jis-2025-25.5.7-cor-45`).
 
-Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-iterate-derivative).
+Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 800](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L800). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-iterate-derivative).
 
 ## Derivative formula for permutations with $k$ cycles whose first $s$ points lie in distinct cycles
 
@@ -1177,7 +1177,7 @@ $$\frac{d^s}{du^s} A_{[s],k}(x,u) =
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 46 (`jis-2025-25.5.7-cor-46`).
 
-Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 816](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L816). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-cycle-count-iterat).
+Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 816](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L816). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-cycle-count-iterat).
 
 ## $q$-analogue of the derivative formula for permutations whose first $s$ points lie in distinct cycles
 
@@ -1198,7 +1198,7 @@ $$\frac{d^s}{du^s} A_{[s]}(q,x,u) = q^s \bigl(A(x,u) \exp((x-1)u)\bigr)^s \exp(q
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 47 (`jis-2025-25.5.7-cor-47`).
 
-Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 835](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-q-iterate-derivati).
+Stated but not proved: `MetaMathlibExt.permEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 835](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L835). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#perm-egf-first-points-q-iterate-derivati).
 
 ## Signed excedance sum with weight $-s$ over permutations with separated first points
 
@@ -1213,7 +1213,7 @@ $\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s s^{n+s} (x-1)^n$, with $0
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 48 (`jis-2025-25.5.7-cor-48`).
 
-Stated but not proved: `MetaMathlibExt.firstPoints_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 852](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L852). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-excedance-cycle-sum-neg).
+Stated but not proved: `MetaMathlibExt.firstPoints_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 852](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L852). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-excedance-cycle-sum-neg).
 
 ## Signed excedance sum with weight $-(s+1)$ over permutations with separated first points
 
@@ -1230,7 +1230,7 @@ The hypothesis $n \ge 1$ makes $(x-1)^{n-1}$ a polynomial.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 49 (`jis-2025-25.5.7-cor-49`).
 
-Stated but not proved: `MetaMathlibExt.firstPoints_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 866](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L866). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-excedance-cycle-sum-neg-suc).
+Stated but not proved: `MetaMathlibExt.firstPoints_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 866](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L866). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#first-points-excedance-cycle-sum-neg-suc).
 
 ## Derangements whose first $s$ points lie in distinct cycles
 
@@ -1250,7 +1250,7 @@ which is the paper's $q^s x^s (A(x,u) - 1)^s (A(x,u) e^{-u})^q$ with the power r
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 51 (`jis-2025-25.5.7-cor-51`).
 
-Stated but not proved: `MetaMathlibExt.derangementEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-egf-first-points-q-iterate-d).
+Stated but not proved: `MetaMathlibExt.derangementEGF_firstPoints_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 880](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L880). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-egf-first-points-q-iterate-d).
 
 ## Derangements with the first $s$ points in distinct cycles, cycle weight $-s$
 
@@ -1271,7 +1271,7 @@ $\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s (s x/(x-1))^s \sum_{i}
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 52 (`jis-2025-25.5.7-cor-52`).
 
-Stated but not proved: `MetaMathlibExt.derangement_firstPoints_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 900](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-first-points-excedance-cycle).
+Stated but not proved: `MetaMathlibExt.derangement_firstPoints_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 900](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L900). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-first-points-excedance-cycle).
 
 ## Derangements with the first $s$ points in distinct cycles, cycle weight $-(s+1)$
 
@@ -1298,7 +1298,7 @@ $(\sum_{n \ge 1} (x^n - 1) u^n/n!)^s$ and $\sum_{n \ge 0} (x - x^n)/(x-1)\,u^n/n
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 54 (`jis-2025-25.5.7-cor-54`).
 
-Stated but not proved: `MetaMathlibExt.derangement_firstPoints_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 922](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L922). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-first-points-excedance-cycle-2).
+Stated but not proved: `MetaMathlibExt.derangement_firstPoints_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 922](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L922). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#derangement-first-points-excedance-cycle-2).
 
 ## Excedance generating function of s-fixed-points permutations
 
@@ -1317,7 +1317,7 @@ $$\frac{d^s}{du^s} F(x,u) = \left(A(x,u) \exp((x-1)u)\right)^s A(x,u) \exp(-u).$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 57 (`jis-2025-25.5.7-thm-57`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 939](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L939). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-iterate-derivative).
+Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 939](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L939). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-iterate-derivative).
 
 ## Excedance generating function of s-fixed-points permutations with k cycles
 
@@ -1339,7 +1339,7 @@ Here $L - u$ is the paper's $\ln(A(x,u) \exp(-u))$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 58 (`jis-2025-25.5.7-thm-58`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-cycle-count-iterat).
+Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 957](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L957). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-cycle-count-iterat).
 
 ## Cycle-counting excedance generating function of s-fixed-points permutations
 
@@ -1362,7 +1362,7 @@ Here $\exp(qL)$ is the paper's $(A(x,u))^q$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 59 (`jis-2025-25.5.7-thm-59`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-q-iterate-derivati).
+Stated but not proved: `MetaMathlibExt.fixedPointsPermEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-egf-q-iterate-derivati).
 
 ## Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s
 
@@ -1380,7 +1380,7 @@ $$\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s s^n x^{n-s}.$$
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 60 (`jis-2025-25.5.7-cor-60`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointsPerm_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 998](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L998). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-excedance-cycle-sum-ne).
+Stated but not proved: `MetaMathlibExt.fixedPointsPerm_excedance_cycle_sum_neg` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 998](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L998). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-excedance-cycle-sum-ne).
 
 ## Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s-1
 
@@ -1401,7 +1401,7 @@ This is the paper's formula with the denominator $x - 1$ cleared.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 61 (`jis-2025-25.5.7-cor-61`).
 
-Stated but not proved: `MetaMathlibExt.fixedPointsPerm_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1013](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1013). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-excedance-cycle-sum-ne-2).
+Stated but not proved: `MetaMathlibExt.fixedPointsPerm_excedance_cycle_sum_neg_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1013](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1013). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#fixed-points-perm-excedance-cycle-sum-ne-2).
 
 ## Derivative formula for prescribed cycle lengths through the first $s$ points
 
@@ -1424,7 +1424,7 @@ $$\frac{d^s}{du^s} F(x,u) = x^s \Bigl(\prod_{i=0}^{s-1}
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 62 (`jis-2025-25.5.7-thm-62`).
 
-Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1029](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-iterate-deriva).
+Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1029](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1029). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-iterate-deriva).
 
 ## Derivative formula for prescribed cycle lengths through the first $s$ points, with $k$ cycles
 
@@ -1448,7 +1448,7 @@ $$\frac{d^s}{du^s} F_k(x,u) = x^s \Bigl(\prod_{i=0}^{s-1}
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 63 (`jis-2025-25.5.7-thm-63`).
 
-Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-cycle-count-it).
+Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_cycleCount_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1052](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1052). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-cycle-count-it).
 
 ## $q$-analogue of the derivative formula for prescribed cycle lengths through the first $s$ points
 
@@ -1473,7 +1473,7 @@ $$\frac{d^s}{du^s} F(q,x,u) = q^s x^s \Bigl(\prod_{i=0}^{s-1}
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 64 (`jis-2025-25.5.7-thm-64`).
 
-Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1078](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-q-iterate-deri).
+Stated but not proved: `MetaMathlibExt.prescribedCyclePermEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1078](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1078). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-perm-egf-q-iterate-deri).
 
 ## Permutations with all cycle lengths in a prescribed set
 
@@ -1492,7 +1492,7 @@ have length in $\mathcal{R}$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 65 (`jis-2025-25.5.7-thm-65`).
 
-Stated but not proved: `MetaMathlibExt.cycleLengthsInEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#cycle-lengths-in-egf-q-eq-exp).
+Stated but not proved: `MetaMathlibExt.cycleLengthsInEGF_q_eq_exp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#cycle-lengths-in-egf-q-eq-exp).
 
 ## $q$-analogue of the derivative formula for prescribed cycle lengths through the first $s$ points, other cycle lengths in a set $\mathcal{R}$
 
@@ -1520,7 +1520,7 @@ $$\frac{d^s}{du^s} F(q,x,u) = q^s x^s \Bigl(\prod_{i=0}^{s-1}
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 66 (`jis-2025-25.5.7-thm-66`).
 
-Stated but not proved: `MetaMathlibExt.prescribedCycleLengthsInEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-lengths-in-egf-q-iterat).
+Stated but not proved: `MetaMathlibExt.prescribedCycleLengthsInEGF_q_iterate_derivative` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#prescribed-cycle-lengths-in-egf-q-iterat).
 
 ## Permutations avoiding a prescribed set of cycle lengths
 
@@ -1540,7 +1540,7 @@ $\mathcal{R}$.
 
 - Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Corollary 67 (`jis-2025-25.5.7-cor-67`).
 
-Stated but not proved: `MetaMathlibExt.cycleLengthsNotInEGF_q_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#cycle-lengths-not-in-egf-q-eq).
+Stated but not proved: `MetaMathlibExt.cycleLengthsNotInEGF_q_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean, line 1149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/AssociatedStirlingEulerianWanted.lean#L1149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html#cycle-lengths-not-in-egf-q-eq).
 
 ## Depends on
 
@@ -1549,4 +1549,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Associated Stirling–Eulerian numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/associated-stirling-eulerian-numbers)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.7 The Weil divisor class associated to an invertible module
 
-Section 72.7 of the Stacks Project, [Tag 0ENV](https://stacks.math.columbia.edu/tag/0ENV). 7 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 72.7 of the Stacks Project, [Tag 0ENV](https://stacks.math.columbia.edu/tag/0ENV). 7 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EPR, a definition
 
 [Tag 0EPR](https://stacks.math.columbia.edu/tag/0EPR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrimeDivisor.pullbacksMeromorphicSections_genericHenselianMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianSpecMorphismFlat.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianSpecMorphismFlat.lean#L152). The attribute's comment: “the clause of the construction preceding the definition: c\_ξ is flat, so pullbacks of meromorphic functions and (regular) sections are defined for c\_ξ”.
+**`AlgebraicGeometry.Space.PrimeDivisor.pullbacksMeromorphicSections_genericHenselianMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianSpecMorphismFlat.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/HenselianSpecMorphismFlat.lean#L152). The attribute's comment: “the clause of the construction preceding the definition: c\_ξ is flat, so pullbacks of meromorphic functions and (regular) sections are defined for c\_ξ”.
 
 > **Pullbacks of meromorphic functions and sections are defined for
 > `c_ξ : Spec(𝒪^h_{X, ξ}) ⟶ X`.**
@@ -31,7 +31,7 @@ theorem PrimeDivisor.pullbacksMeromorphicSections_genericHenselianMorphism :
       (Z.genericHenselianMorphism B S hS hX hdec R hR).hom
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L84). The attribute's comment: “the ratio s/s\_ξ in Q(O^h\_\{X, ξ}) of a meromorphic section of an invertible module against the generator at the generic point of a prime divisor, read on the spectrum of the local ring of an affine elementary étale neighbourhood”.
+**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L84). The attribute's comment: “the ratio s/s\_ξ in Q(O^h\_\{X, ξ}) of a meromorphic section of an invertible module against the generator at the generic point of a prime divisor, read on the spectrum of the local ring of an affine elementary étale neighbourhood”.
 
 > The ratio `s / s_ξ` of a meromorphic section of an invertible `𝒪_X`-module against the
 > generator of `ℒ` at the generic point of a prime divisor, as an element of `Q(𝒪^h_{X, ξ})`: the
@@ -43,7 +43,7 @@ def PrimeDivisor.canonicalGenericRatio (t : MeromorphicSection.{u, u} B S hS X h
     Z.genericTotalFractionRing B S hS hX hdec
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.isUnit_canonicalGenericRatio`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L91). The attribute's comment: “the ratio s/s\_ξ of a regular meromorphic section is a unit of Q(O^h\_\{X, ξ})”.
+**`AlgebraicGeometry.Space.PrimeDivisor.isUnit_canonicalGenericRatio`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L91). The attribute's comment: “the ratio s/s\_ξ of a regular meromorphic section is a unit of Q(O^h\_\{X, ξ})”.
 
 > The ratio `s / s_ξ` of a regular meromorphic section is a unit of `Q(𝒪^h_{X, ξ})`.
 
@@ -54,7 +54,7 @@ theorem PrimeDivisor.isUnit_canonicalGenericRatio
     IsUnit (Z.canonicalGenericRatio B S hS hX hdec L hL hInt hN t)
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.canonicalLocalRatio`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L103). The attribute's comment: “the generator s\_ξ of an invertible module at the generic point of a prime divisor, read as the ratio family it assigns to meromorphic sections”.
+**`AlgebraicGeometry.Space.PrimeDivisor.canonicalLocalRatio`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L103). The attribute's comment: “the generator s\_ξ of an invertible module at the generic point of a prime divisor, read as the ratio family it assigns to meromorphic sections”.
 
 > The choice of the generator `s_ξ`: the generator of `ℒ` at the generic
 > point of a prime divisor, read as the ratio `t ↦ t / s_ξ` in the units of `Q(𝒪^h_{X, ξ})` that
@@ -65,7 +65,7 @@ theorem PrimeDivisor.isUnit_canonicalGenericRatio
 def PrimeDivisor.canonicalLocalRatio : LocalRatio.{u, u} B S hS hX hdec Z L
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L152). The attribute's comment: “the ratio s/s\_ξ is multiplied by c when the section is, which is the step by which Stacks 0EPT and Stacks 0EPV compare two sections through one generator”.
+**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L152). The attribute's comment: “the ratio s/s\_ξ is multiplied by c when the section is, which is the step by which Stacks 0EPT and Stacks 0EPV compare two sections through one generator”.
 
 > If the pullback of `t` to `Spec(𝒪_{U, u})` is `c` times the pullback of `t'` there, then the
 > ratio of `t` is the image of `c` times the ratio of `t'`.
@@ -90,7 +90,7 @@ theorem PrimeDivisor.canonicalGenericRatio_smul
         Z.canonicalGenericRatio B S hS hX hdec L hL hInt hN t'
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio_smul_of_eval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L217). The attribute's comment: “the ratio s/s\_ξ is multiplied by c when the section is, with the scaling read over the chart of X rather than over the spectrum of the local ring -- the step by which Stacks 0EPT and Stacks 0EPV compare two sections through one generator”.
+**`AlgebraicGeometry.Space.PrimeDivisor.canonicalGenericRatio_smul_of_eval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L217). The attribute's comment: “the ratio s/s\_ξ is multiplied by c when the section is, with the scaling read over the chart of X rather than over the spectrum of the local ring -- the step by which Stacks 0EPT and Stacks 0EPV compare two sections through one generator”.
 
 > If `t` is `c` times `t'` over the chosen affine elementary étale neighbourhood `U` of the
 > generic point, for `c` a meromorphic function on `U`, then the ratio of `t` is the image of the
@@ -111,7 +111,7 @@ theorem PrimeDivisor.canonicalGenericRatio_smul_of_eval
         Z.canonicalGenericRatio B S hS hX hdec L hL hInt hN t'
 ```
 
-**`AlgebraicGeometry.Space.canonicalLocalRatioFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L242). The attribute's comment: “the generators s\_ξ at every prime divisor, read as the ratio family”.
+**`AlgebraicGeometry.Space.canonicalLocalRatioFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L242). The attribute's comment: “the generators s\_ξ at every prime divisor, read as the ratio family”.
 
 > The family of canonical ratios over all prime divisors of `X`: the choice of a generator of
 > `ℒ` at the generic point of every prime divisor.
@@ -120,7 +120,7 @@ theorem PrimeDivisor.canonicalGenericRatio_smul_of_eval
 def canonicalLocalRatioFamily : LocalRatioFamily.{u, u} B S hS hX hdec L
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.orderOfVanishingSection_canonicalLocalRatio_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L251). The attribute's comment: “the length formula for ord\_\{Z,ℒ}(s) at the canonical ratio s/s\_ξ on a locally Noetherian integral algebraic space”.
+**`AlgebraicGeometry.Space.PrimeDivisor.orderOfVanishingSection_canonicalLocalRatio_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L251). The attribute's comment: “the length formula for ord\_\{Z,ℒ}(s) at the canonical ratio s/s\_ξ on a locally Noetherian integral algebraic space”.
 
 > If the canonical ratio `s / s_ξ` of a meromorphic section is `a / b` with
 > `a` and `b` nonzerodivisors of `𝒪^h_{X,ξ}`, then `ord_{Z,ℒ}(s)` is the difference of the lengths
@@ -151,7 +151,7 @@ theorem PrimeDivisor.orderOfVanishingSection_canonicalLocalRatio_eq_length_sub_l
           (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.PrimeDivisor.exists_orderOfVanishingSection_canonicalLocalRatio_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L291). The attribute's comment: “existence of the presentation s/s\_ξ = a/b by nonzerodivisors at the canonical ratio, with the length formula, on a locally Noetherian integral algebraic space”.
+**`AlgebraicGeometry.Space.PrimeDivisor.exists_orderOfVanishingSection_canonicalLocalRatio_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorCanonicalRatio.lean#L291). The attribute's comment: “existence of the presentation s/s\_ξ = a/b by nonzerodivisors at the canonical ratio, with the length formula, on a locally Noetherian integral algebraic space”.
 
 > The canonical ratio `s / s_ξ` is a fraction `a / b` of nonzerodivisors of `𝒪^h_{X,ξ}`, and for
 > one — hence for every — such presentation `ord_{Z,ℒ}(s)` is the difference of the lengths of the
@@ -182,7 +182,7 @@ theorem PrimeDivisor.exists_orderOfVanishingSection_canonicalLocalRatio_eq_lengt
               (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.orderOfVanishingSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L767). The attribute's comment: “ord\_\{Z,ℒ}(s), in the general form that takes the ratio s/s\_ξ as data, so that it is available for an arbitrary module over an arbitrary space. The tag's own definition is at the CONSTRUCTED ratio: PrimeDivisor.canonicalLocalRatio and canonicalLocalRatioFamily of StacksFrontier.AlgebraicGeometry.Spaces.Decent.PrimeDivisorCanonicalRatio build s/s\_ξ for an invertible module on a locally Noetherian integral algebraic space and carry no parameter”.
+**`AlgebraicGeometry.Space.orderOfVanishingSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L769). The attribute's comment: “ord\_\{Z,ℒ}(s), in the general form that takes the ratio s/s\_ξ as data, so that it is available for an arbitrary module over an arbitrary space. The tag's own definition is at the CONSTRUCTED ratio: PrimeDivisor.canonicalLocalRatio and canonicalLocalRatioFamily of StacksFrontier.AlgebraicGeometry.Spaces.Decent.PrimeDivisorCanonicalRatio build s/s\_ξ for an invertible module on a locally Noetherian integral algebraic space and carry no parameter”.
 
 > **Stacks 0EPR.** The *order of vanishing of a meromorphic section `s` of `ℒ` along `Z`*:
 > the order of vanishing of the ratio `s / s_ξ` in `Q(𝒪^h_{X,ξ})`, that is the difference
@@ -195,7 +195,7 @@ def orderOfVanishingSection (L : Modules.{u, max u z} B S hS X hX)
     (ratio : LocalRatio.{u, z} B S hS hX hdec Z L) : ℤ
 ```
 
-**`AlgebraicGeometry.Space.orderOfVanishingSection_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 794](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L794). The attribute's comment: “the length formula on any presentation, hence independence of the presentation”.
+**`AlgebraicGeometry.Space.orderOfVanishingSection_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L796). The attribute's comment: “the length formula on any presentation, hence independence of the presentation”.
 
 > **Stacks 0EPR.** If the ratio `s / s_ξ` is `a / b` with `a` and `b` nonzerodivisors of
 > `𝒪^h_{X,ξ}`, then `ord_{Z,ℒ}(s)` is the difference of the lengths of the quotients of
@@ -216,7 +216,7 @@ theorem orderOfVanishingSection_eq_length_sub_length (L : Modules.{u, max u z} B
           (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.exists_orderOfVanishingSection_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 846](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L846). The attribute's comment: “existence of the presentation s/s\_ξ = a/b by nonzerodivisors, with the length formula; the ratio s/s\_ξ is the parameter `ratio`”.
+**`AlgebraicGeometry.Space.exists_orderOfVanishingSection_eq_length_sub_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 848](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L848). The attribute's comment: “existence of the presentation s/s\_ξ = a/b by nonzerodivisors, with the length formula; the ratio s/s\_ξ is the parameter `ratio`”.
 
 > **Stacks 0EPR, well-definedness.** The ratio `s / s_ξ` *is* a fraction `a / b` of
 > nonzerodivisors of `𝒪^h_{X,ξ}`, and for one — hence, by
@@ -247,7 +247,7 @@ theorem exists_orderOfVanishingSection_eq_length_sub_length
               (b : ↥(Z.genericHenselianLocalRing B S hS hX hdec))).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.orderOfVanishingSection_unit_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 889](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L889). The attribute's comment: “independence of the choice of the generator s\_ξ”.
+**`AlgebraicGeometry.Space.orderOfVanishingSection_unit_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 891](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L891). The attribute's comment: “independence of the choice of the generator s\_ξ”.
 
 > **Stacks 0EPR, well-definedness.** Replacing the generator `s_ξ` of `ℒ` at the generic
 > point of `Z` by `u · s_ξ` for a unit `u` of `𝒪^h_{X,ξ}` replaces the ratio `s / s_ξ` by
@@ -270,7 +270,7 @@ theorem orderOfVanishingSection_unit_smul (L : Modules.{u, max u z} B S hS X hX)
 
 [Tag 0EPS](https://stacks.math.columbia.edu/tag/0EPS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_localRatioFamily_locallyFinite_divisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericSectionRatioOrderZero.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericSectionRatioOrderZero.lean#L213). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite, at the hypotheses of the source alone -- the proviso `hord` of locallyFinite\_divisorCoefficients\_ne\_zero\_of\_isIntegral is supplied here, by the canonical ratio of Stacks 0EPR, rather than assumed; the family of ratios is quantified existentially, over the choice of a free generator of ℒ\_ξ at each prime divisor and of the isomorphism across the universe gap that step (iii) of that construction is existential in, and its value at s is pinned to the ratio of s against that generator by the first clause of the conclusion”.
+**`AlgebraicGeometry.Space.exists_localRatioFamily_locallyFinite_divisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericSectionRatioOrderZero.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/GenericSectionRatioOrderZero.lean#L213). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite, at the hypotheses of the source alone -- the proviso `hord` of locallyFinite\_divisorCoefficients\_ne\_zero\_of\_isIntegral is supplied here, by the canonical ratio of Stacks 0EPR, rather than assumed; the family of ratios is quantified existentially, over the choice of a free generator of ℒ\_ξ at each prime divisor and of the isomorphism across the universe gap that step (iii) of that construction is existential in, and its value at s is pinned to the ratio of s against that generator by the first clause of the conclusion”.
 
 > **Stacks 0EPS, the second set, with `hord` supplied rather than assumed.**  Let `S` be a
 > scheme, let `X` be a locally Noetherian integral algebraic space over `S`, let `ℒ` be an
@@ -321,7 +321,7 @@ theorem exists_localRatioFamily_locallyFinite_divisorCoefficients_ne_zero
             else Z.support B S hS X
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_memGenericModuleStalk_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteFirstSetOfRegularSection.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteFirstSetOfRegularSection.lean#L94). The attribute's comment: “the first set: the prime divisors whose generic point ξ has s ∉ ℒ\_ξ are locally finite -- unconditionally, at the hypotheses of the source, the nonempty open subspace of the source's first sentence being produced rather than assumed”.
+**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_memGenericModuleStalk_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteFirstSetOfRegularSection.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteFirstSetOfRegularSection.lean#L94). The attribute's comment: “the first set: the prime divisors whose generic point ξ has s ∉ ℒ\_ξ are locally finite -- unconditionally, at the hypotheses of the source, the nonempty open subspace of the source's first sentence being produced rather than assumed”.
 
 > **Stacks 0EPS, the first set.**  Let `S` be a scheme, let `X` be a locally Noetherian
 > integral algebraic space over `S`, let `ℒ` be an invertible `𝒪_X`-module and let `s` be a regular
@@ -336,7 +336,6 @@ theorem locallyFinite_primeDivisor_not_memGenericModuleStalk_of_isIntegral
       (structureCommRings B S hS (⟨X, hX⟩ : AlgebraicSpaces B S hS))
       (structureRingSheaf B S hS (⟨X, hX⟩ : AlgebraicSpaces B S hS)).property L)
     (s : MeromorphicSection.{u, u} B S hS X hX L)
-    (hreg : IsRegularMeromorphicSection.{u, u} B S hS X hX L s)
     [DecidablePred fun Z : PrimeDivisor B S hS X ↦
       ¬ Z.MemGenericModuleStalk B S hS hX hdec (RR Z) (hRR Z) L s] :
     LocallyFinite fun Z : PrimeDivisor B S hS X ↦
@@ -345,7 +344,7 @@ theorem locallyFinite_primeDivisor_not_memGenericModuleStalk_of_isIntegral
       else ∅
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_generatesGenericModuleStalk_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean#L102). The attribute's comment: “the generating set: the prime divisors whose generic point ξ has s not generating ℒ\_ξ are locally finite -- unconditionally, at the hypotheses of the source, the nonempty open subspace of the source's first sentence being produced rather than assumed; the second set of the source is contained in this one”.
+**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_not_generatesGenericModuleStalk_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean#L102). The attribute's comment: “the generating set: the prime divisors whose generic point ξ has s not generating ℒ\_ξ are locally finite -- unconditionally, at the hypotheses of the source, the nonempty open subspace of the source's first sentence being produced rather than assumed; the second set of the source is contained in this one”.
 
 > **Stacks 0EPS, the generating set.**  Let `S` be a scheme, let `X` be a locally Noetherian
 > integral algebraic space over `S`, let `ℒ` be an invertible `𝒪_X`-module and let `s` be a regular
@@ -369,7 +368,7 @@ theorem locallyFinite_primeDivisor_not_generatesGenericModuleStalk_of_isIntegral
       else ∅
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_divisorCoefficients_ne_zero_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean#L168). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite, at the hypotheses of the source together with `hord`, the vanishing of ord\_\{Z,ℒ}(s) where s generates ℒ\_ξ -- which the ratio parameter of orderOfVanishingSection does not supply by itself”.
+**`AlgebraicGeometry.Space.locallyFinite_divisorCoefficients_ne_zero_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocallyFiniteSecondSetOfRegularSection.lean#L168). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite, at the hypotheses of the source together with `hord`, the vanishing of ord\_\{Z,ℒ}(s) where s generates ℒ\_ξ -- which the ratio parameter of orderOfVanishingSection does not supply by itself”.
 
 > **Stacks 0EPS, the second set.**  Let `S` be a scheme, let `X` be a locally Noetherian
 > integral algebraic space over `S`, let `ℒ` be an invertible `𝒪_X`-module and let `s` be a regular
@@ -396,7 +395,7 @@ theorem locallyFinite_divisorCoefficients_ne_zero_of_isIntegral
       else Z.support B S hS X
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_of_genericPoint_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L683). The attribute's comment: “both sets: prime divisors whose generic points avoid a nonempty open”.
+**`AlgebraicGeometry.Space.locallyFinite_primeDivisor_of_genericPoint_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L685). The attribute's comment: “both sets: prime divisors whose generic points avoid a nonempty open”.
 
 > **The Stacks 0EE5 step in the proof of Stacks 0EPS.** Any collection of prime divisors of a
 > locally Noetherian integral algebraic space whose generic points all avoid one nonempty open
@@ -425,7 +424,7 @@ theorem locallyFinite_primeDivisor_of_genericPoint_notMem
     LocallyFinite fun Z : PrimeDivisor B S hS X ↦ if P Z then Z.support B S hS X else ∅
 ```
 
-**`AlgebraicGeometry.Space.locallyFinite_divisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 1009](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L1009). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite”.
+**`AlgebraicGeometry.Space.locallyFinite_divisorCoefficients_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L1011). The attribute's comment: “the second set: the prime divisors with ord\_\{Z,ℒ}(s) ≠ 0 are locally finite”.
 
 > **The Stacks 0EE5 step in the proof of Stacks 0EPS, for its second set.** The prime divisors
 > at which `ord_{Z,ℒ}(s)` is nonzero are locally finite in `|X|`, given a nonempty open subset of
@@ -458,7 +457,7 @@ theorem locallyFinite_divisorCoefficients_ne_zero
 
 [Tag 0EPT](https://stacks.math.columbia.edu/tag/0EPT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_divisorCoefficients_canonicalLocalRatioFamily_sub_eq_ord_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionIso.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionIso.lean#L193). The attribute's comment: “the second conclusion for two ISOMORPHIC invertible modules: the Weil divisors of the chosen regular meromorphic sections of ℒ and of 𝒩 differ coefficientwise by div(f) for an invertible rational function f, at the canonical ratio s/s\_ξ of Stacks 0EPR and the embedding of Stacks 0ENK, with nothing assumed beyond X decent, locally Noetherian and integral”.
+**`AlgebraicGeometry.Space.exists_divisorCoefficients_canonicalLocalRatioFamily_sub_eq_ord_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionIso.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionIso.lean#L193). The attribute's comment: “the second conclusion for two ISOMORPHIC invertible modules: the Weil divisors of the chosen regular meromorphic sections of ℒ and of 𝒩 differ coefficientwise by div(f) for an invertible rational function f, at the canonical ratio s/s\_ξ of Stacks 0EPR and the embedding of Stacks 0ENK, with nothing assumed beyond X decent, locally Noetherian and integral”.
 
 > **Stacks 0EPT in the form the construction of Stacks 0EPW uses, at the canonical choices.**
 > On a decent, locally Noetherian, integral algebraic space the Weil divisors of the chosen
@@ -495,7 +494,7 @@ theorem exists_divisorCoefficients_canonicalLocalRatioFamily_sub_eq_ord_of_iso (
         (genericFractionEmbedding B S hS hX hdec hInt hNoeth).ord f W
 ```
 
-**`AlgebraicGeometry.Space.exists_units_rationalFunctions_canonicalLocalRatio_eq_emb_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean#L63). The attribute's comment: “the first conclusion, that the ratio s/s' of two regular meromorphic sections of an invertible module is an element of R(X)^*, read on the canonical ratios s/s\_ξ of Stacks 0EPR through the embedding R(X) → Q(O^h\_\{X, ξ}) of Stacks 0ENK”.
+**`AlgebraicGeometry.Space.exists_units_rationalFunctions_canonicalLocalRatio_eq_emb_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean#L63). The attribute's comment: “the first conclusion, that the ratio s/s' of two regular meromorphic sections of an invertible module is an element of R(X)^*, read on the canonical ratios s/s\_ξ of Stacks 0EPR through the embedding R(X) → Q(O^h\_\{X, ξ}) of Stacks 0ENK”.
 
 > **The ratio of two regular meromorphic sections is an invertible rational function.** On a
 > decent, locally Noetherian, integral algebraic space the ratio of two regular meromorphic sections
@@ -518,7 +517,7 @@ theorem exists_units_rationalFunctions_canonicalLocalRatio_eq_emb_mul
             W.genericTotalFractionRing B S hS hX hdec)
 ```
 
-**`AlgebraicGeometry.Space.exists_units_orderOfVanishingSection_canonicalLocalRatio_eq_add_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean#L95). The attribute's comment: “the second conclusion, div\_ℒ(s) = div\_ℒ(s') + div(f) coefficientwise, at the canonical ratio s/s\_ξ of Stacks 0EPR and the embedding of Stacks 0ENK, with f = s/s' PRODUCED rather than assumed”.
+**`AlgebraicGeometry.Space.exists_units_orderOfVanishingSection_canonicalLocalRatio_eq_add_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PrimeDivisorMeromorphicSectionRatio.lean#L95). The attribute's comment: “the second conclusion, div\_ℒ(s) = div\_ℒ(s') + div(f) coefficientwise, at the canonical ratio s/s\_ξ of Stacks 0EPR and the embedding of Stacks 0ENK, with f = s/s' PRODUCED rather than assumed”.
 
 > **The orders of vanishing of two regular meromorphic sections differ by `ord_Z` of their
 > ratio.** On a decent, locally Noetherian, integral algebraic space the orders of vanishing of two
@@ -549,7 +548,7 @@ theorem exists_units_orderOfVanishingSection_canonicalLocalRatio_eq_add_ord
           (genericFractionEmbedding B S hS hX hdec hInt hN).ord f W
 ```
 
-**`AlgebraicGeometry.Space.orderOfVanishingSection_eq_add_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 919](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L919). The attribute's comment: “div\_ℒ(s) = div\_ℒ(s') + div(f) coefficientwise; f = s/s' is the argument `hs`, discharged at the canonical ratio of Stacks 0EPR by exists\_units\_orderOfVanishingSection\_canonicalLocalRatio\_eq\_add\_ord, which produces f”.
+**`AlgebraicGeometry.Space.orderOfVanishingSection_eq_add_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 921](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L921). The attribute's comment: “div\_ℒ(s) = div\_ℒ(s') + div(f) coefficientwise; f = s/s' is the argument `hs`, discharged at the canonical ratio of Stacks 0EPR by exists\_units\_orderOfVanishingSection\_canonicalLocalRatio\_eq\_add\_ord, which produces f”.
 
 > **Stacks 0EPT, coefficientwise.** If `s` and `s'` are meromorphic sections of `ℒ` whose
 > ratios at the generic point of `Z` differ by the image of a rational function `f`, then
@@ -574,7 +573,7 @@ theorem orderOfVanishingSection_eq_add_ord (L : Modules.{u, max u z} B S hS X hX
         Z.ord B S hS hX hdec (emb f) hf
 ```
 
-**`AlgebraicGeometry.Space.divisorOfSection_eq_add_principalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSectionRatio.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSectionRatio.lean#L152). The attribute's comment: “the identity in Div(X); the coefficientwise form is orderOfVanishingSection\_eq\_add\_ord”.
+**`AlgebraicGeometry.Space.divisorOfSection_eq_add_principalDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSectionRatio.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSectionRatio.lean#L152). The attribute's comment: “the identity in Div(X); the coefficientwise form is orderOfVanishingSection\_eq\_add\_ord”.
 
 > **Stacks 0EPT.** If `s` and `s'` are nonzero meromorphic sections of `ℒ` whose ratios at
 > the generic point of every prime divisor differ by the invertible rational function
@@ -612,7 +611,7 @@ theorem divisorOfSection_eq_add_principalDivisor
       divisorOfSection.{u, z} B S hS hX hdec L s' ratio hfin' + E.principalDivisor hlf f
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_ratio_weilDivisorOfSection_eq_add_divRationalFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L208). The attribute's comment: “both conclusions at the source's hypotheses: for nonzero meromorphic sections s, s' of an invertible module on a locally Noetherian integral X, f = s/s' is THE element of R(X)^* with s = f s' (f read in Γ(X, 𝒦\_X) through the canonical comparison of Stacks 0ENA, for every presentation), and div\_ℒ(s) = div\_ℒ(s') + div(f) in Div(X), the sums being Weil divisors by Stacks 0EPS (proved) and div(f) the principal divisor of Stacks 0ENQ”.
+**`AlgebraicGeometry.Space.existsUnique_ratio_weilDivisorOfSection_eq_add_divRationalFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L208). The attribute's comment: “both conclusions at the source's hypotheses: for nonzero meromorphic sections s, s' of an invertible module on a locally Noetherian integral X, f = s/s' is THE element of R(X)^* with s = f s' (f read in Γ(X, 𝒦\_X) through the canonical comparison of Stacks 0ENA, for every presentation), and div\_ℒ(s) = div\_ℒ(s') + div(f) in Div(X), the sums being Weil divisors by Stacks 0EPS (proved) and div(f) the principal divisor of Stacks 0ENQ”.
 
 > **Stacks 0EPT.** Let `X` be a locally Noetherian integral algebraic space over `S`, let `ℒ`
 > be an invertible `𝒪_X`-module and let `s`, `s'` be nonzero meromorphic sections of `ℒ`. Then
@@ -658,7 +657,7 @@ theorem existsUnique_ratio_weilDivisorOfSection_eq_add_divRationalFunction
           divRationalFunction B S hS hX hInt hN f
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_units_smul_eq_of_isRegularMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionRatio.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionRatio.lean#L146). The attribute's comment: “the first conclusion, that the ratio s/s' of two regular meromorphic sections of an invertible module is invertible, read in Γ(X, 𝒦\_X) -- which is R(X) by the third conclusion of Stacks 0ENA; the ratio is also unique”.
+**`AlgebraicGeometry.Space.existsUnique_units_smul_eq_of_isRegularMeromorphicSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionRatio.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MeromorphicSectionRatio.lean#L146). The attribute's comment: “the first conclusion, that the ratio s/s' of two regular meromorphic sections of an invertible module is invertible, read in Γ(X, 𝒦\_X) -- which is R(X) by the third conclusion of Stacks 0ENA; the ratio is also unique”.
 
 > **Stacks 0EPT, the first conclusion; the algebraic-space analogue of Stacks 02SH.** On a
 > locally Noetherian integral algebraic space over a scheme `S`, two regular meromorphic sections
@@ -688,7 +687,7 @@ theorem existsUnique_units_smul_eq_of_isRegularMeromorphicSection
 
 [Tag 0EPU](https://stacks.math.columbia.edu/tag/0EPU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.divisorCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 966](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L966). The attribute's comment: “part (1): the coefficients ord\_\{Z,ℒ}(s) of div\_ℒ(s)”.
+**`AlgebraicGeometry.Space.divisorCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 968](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L968). The attribute's comment: “part (1): the coefficients ord\_\{Z,ℒ}(s) of div\_ℒ(s)”.
 
 > **Stacks 0EPU, part (1).** The coefficients of the *Weil divisor associated to a
 > meromorphic section `s` of `ℒ`*: the coefficient at a prime divisor `Z` is `ord_{Z,ℒ}(s)`.
@@ -699,7 +698,7 @@ def divisorCoefficients (L : Modules.{u, max u z} B S hS X hX)
     (ratio : LocalRatioFamily.{u, z} B S hS hX hdec L) : PrimeDivisor B S hS X → ℤ
 ```
 
-**`AlgebraicGeometry.Space.divisorOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 975](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L975). The attribute's comment: “part (1): div\_ℒ(s) = ∑ ord\_\{Z,ℒ}(s) [Z] as an element of Div(X)”.
+**`AlgebraicGeometry.Space.divisorOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 977](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L977). The attribute's comment: “part (1): div\_ℒ(s) = ∑ ord\_\{Z,ℒ}(s) [Z] as an element of Div(X)”.
 
 > **Stacks 0EPU, part (1).** The *Weil divisor associated to a meromorphic section `s` of
 > `ℒ`*, that is `div_ℒ(s) = ∑ ord_{Z,ℒ}(s) [Z]` in `Div(X)`. The prime divisors with nonzero
@@ -715,7 +714,7 @@ def divisorOfSection (L : Modules.{u, max u z} B S hS X hX)
     WeilDivisor B S hS X
 ```
 
-**`AlgebraicGeometry.Space.divisorOfSectionOfGenerating`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 1038](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L1038). The attribute's comment: “part (1): div\_ℒ(s) in Div(X); the local finiteness that Stacks 0EPS supplies in the source comes from the hypothesis quadruple (U, hUopen, hUne, hgen), the open subspace over which s generates ℒ not being produced in this library”.
+**`AlgebraicGeometry.Space.divisorOfSectionOfGenerating`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 1040](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L1040). The attribute's comment: “part (1): div\_ℒ(s) in Div(X); the local finiteness that Stacks 0EPS supplies in the source comes from the hypothesis quadruple (U, hUopen, hUne, hgen), the open subspace over which s generates ℒ not being produced in this library”.
 
 > **Stacks 0EPU, part (1).** The Weil divisor `div_ℒ(s) = ∑ ord_{Z,ℒ}(s) [Z]` of a
 > meromorphic section `s` of `ℒ`, with the local finiteness of its support supplied by
@@ -739,7 +738,7 @@ def divisorOfSectionOfGenerating
     WeilDivisor B S hS X
 ```
 
-**`AlgebraicGeometry.Space.weilDivisorOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisor.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisor.lean#L245). The attribute's comment: “part (1): div\_ℒ(s) = ∑ ord\_\{Z,ℒ}(s)[Z] ∈ Div(X) for a nonzero meromorphic section s of an invertible module, at the canonical ratio s/s\_ξ of Stacks 0EPR, with the local finiteness of Stacks 0EPS proved”.
+**`AlgebraicGeometry.Space.weilDivisorOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisor.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisor.lean#L245). The attribute's comment: “part (1): div\_ℒ(s) = ∑ ord\_\{Z,ℒ}(s)[Z] ∈ Div(X) for a nonzero meromorphic section s of an invertible module, at the canonical ratio s/s\_ξ of Stacks 0EPR, with the local finiteness of Stacks 0EPS proved”.
 
 > **Stacks 0EPU, part (1).** The *Weil divisor associated to a nonzero meromorphic section*
 > `s` of an invertible `𝒪_X`-module `ℒ` on a locally Noetherian integral algebraic space:
@@ -758,7 +757,7 @@ def weilDivisorOfSection
     (s : MeromorphicSection.{u, u} B S hS X hX L) (hs : s ≠ 0) : ↥(WeilDivisor B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.weilDivisorClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L129). The attribute's comment: “part (2): the Weil divisor class of ℒ, the image of div\_ℒ(s) in the canonical Cl(X) of Stacks 0ENR for a nonzero meromorphic section s, which exists; independence of s is weilDivisorClassOfInvertible\_eq”.
+**`AlgebraicGeometry.Space.weilDivisorClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L129). The attribute's comment: “part (2): the Weil divisor class of ℒ, the image of div\_ℒ(s) in the canonical Cl(X) of Stacks 0ENR for a nonzero meromorphic section s, which exists; independence of s is weilDivisorClassOfInvertible\_eq”.
 
 > **Stacks 0EPU, part (2).** The *Weil divisor class associated to an invertible
 > `𝒪_X`-module* `ℒ` on a locally Noetherian integral algebraic space: the image of `div_ℒ(s)` in
@@ -775,7 +774,7 @@ def weilDivisorClassOfInvertible
     weilDivisorClassGroup B S hS hX hInt hN
 ```
 
-**`AlgebraicGeometry.Space.weilDivisorClassOfInvertible_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L141). The attribute's comment: “part (2): well-definedness, the class of div\_ℒ(s) in Cl(X) is the same for every nonzero meromorphic section s, by Stacks 0EPT”.
+**`AlgebraicGeometry.Space.weilDivisorClassOfInvertible_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L141). The attribute's comment: “part (2): well-definedness, the class of div\_ℒ(s) in Cl(X) is the same for every nonzero meromorphic section s, by Stacks 0EPT”.
 
 > **Stacks 0EPU, part (2), well-definedness.** The Weil divisor class of `ℒ` is the image of
 > `div_ℒ(s)` in `Cl(X)` for every nonzero meromorphic section `s` of `ℒ`: two nonzero meromorphic
@@ -790,7 +789,7 @@ theorem weilDivisorClassOfInvertible_eq
         weilDivisorClassGroup B S hS hX hInt hN)
 ```
 
-**`AlgebraicGeometry.Space.divisorClassOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L120). The attribute's comment: “part (2): the Weil divisor class of ℒ, the image of div\_ℒ(s) in Cl(X); the class group is Stacks 0ENR, relative to the embedding R(X) → Q(𝒪^h\_\{X,ξ}) of Stacks 0ENK, which is the parameter `E` inhabited by genericFractionEmbedding, and the ratio s/s\_ξ is the parameter `ratio` as in Stacks 0EPR and in part (1)”.
+**`AlgebraicGeometry.Space.divisorClassOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L120). The attribute's comment: “part (2): the Weil divisor class of ℒ, the image of div\_ℒ(s) in Cl(X); the class group is Stacks 0ENR, relative to the embedding R(X) → Q(𝒪^h\_\{X,ξ}) of Stacks 0ENK, which is the parameter `E` inhabited by genericFractionEmbedding, and the ratio s/s\_ξ is the parameter `ratio` as in Stacks 0EPR and in part (1)”.
 
 > **Stacks 0EPU, part (2).** The *Weil divisor class associated to `ℒ`*: the image in `Cl(X)`
 > of the Weil divisor `div_ℒ(s) = ∑_Z ord_{Z,ℒ}(s) [Z]` of a nonzero meromorphic section `s` of
@@ -810,7 +809,7 @@ def divisorClassOfSection (L : Modules.{u, max u z} B S hS X hX)
     E.weilDivisorClassGroup
 ```
 
-**`AlgebraicGeometry.Space.divisorClassOfSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L138). The attribute's comment: “part (2): well-definedness, the class of div\_ℒ(s) in Cl(X) is independent of the nonzero meromorphic section s; this is the appeal to Stacks 0EPT that the source makes, whose conclusion div\_ℒ(s) = div\_ℒ(s') + div(f) is read through the coefficientwise membership condition of the subgroup of principal Weil divisors of Stacks 0ENR”.
+**`AlgebraicGeometry.Space.divisorClassOfSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L138). The attribute's comment: “part (2): well-definedness, the class of div\_ℒ(s) in Cl(X) is independent of the nonzero meromorphic section s; this is the appeal to Stacks 0EPT that the source makes, whose conclusion div\_ℒ(s) = div\_ℒ(s') + div(f) is read through the coefficientwise membership condition of the subgroup of principal Weil divisors of Stacks 0ENR”.
 
 > **Stacks 0EPU, part (2), well-definedness.** The Weil divisor class of `ℒ` does not depend
 > on the chosen nonzero meromorphic section: if the ratios of `s` and of `s'` at the generic point
@@ -837,7 +836,7 @@ theorem divisorClassOfSection_eq (L : Modules.{u, max u z} B S hS X hX)
       divisorClassOfSection.{u, z} B S hS hX hdec E L s' ratio hfin'
 ```
 
-**`AlgebraicGeometry.Space.divisorClassOfSectionOfGenerating`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L171). The attribute's comment: “part (2): the Weil divisor class of ℒ in Cl(X), with the local finiteness of the support of div\_ℒ(s) supplied by Stacks 0EPS from the open subspace U over which s generates ℒ”.
+**`AlgebraicGeometry.Space.divisorClassOfSectionOfGenerating`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeilDivisorClassOfSection.lean#L171). The attribute's comment: “part (2): the Weil divisor class of ℒ in Cl(X), with the local finiteness of the support of div\_ℒ(s) supplied by Stacks 0EPS from the open subspace U over which s generates ℒ”.
 
 > **Stacks 0EPU, part (2).** The Weil divisor class of `ℒ`, with the local finiteness that
 > makes `div_ℒ(s)` a Weil divisor supplied by Stacks 0EPS from a nonempty open subset of `|X|`
@@ -861,7 +860,7 @@ def divisorClassOfSectionOfGenerating
 
 [Tag 0EPV](https://stacks.math.columbia.edu/tag/0EPV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.orderOfVanishingSection_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 938](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L938). The attribute's comment: “div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) coefficientwise; ℒ⊗𝒩 is the module `M`”.
+**`AlgebraicGeometry.Space.orderOfVanishingSection_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean, line 940](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DivisorOfMeromorphicSection.lean#L940). The attribute's comment: “div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) coefficientwise; ℒ⊗𝒩 is the module `M`”.
 
 > **Stacks 0EPV, coefficientwise.** If the ratio of `st` at the generic point of `Z` is the
 > product of the ratios of `s` and of `t`, then
@@ -884,7 +883,7 @@ theorem orderOfVanishingSection_mul (L N M : Modules.{u, max u z} B S hS X hX)
         orderOfVanishingSection.{u, z} B S hS hX hdec Z N t ratioN
 ```
 
-**`AlgebraicGeometry.Space.exists_ne_zero_weilDivisorOfSection_meromorphicSectionTensor_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L335). The attribute's comment: “the whole lemma at the source's hypotheses: for nonzero meromorphic sections s of ℒ and t of 𝒩 on a locally Noetherian integral X, the product st (meromorphicSectionTensor) is a nonzero meromorphic section of ℒ ⊗ 𝒩, div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), and the Weil divisor class of ℒ ⊗ 𝒩 in the canonical Cl(X) of Stacks 0ENR is the sum of the classes of ℒ and 𝒩 (Stacks 0EPU part (2) evaluated at s, t and st)”.
+**`AlgebraicGeometry.Space.exists_ne_zero_weilDivisorOfSection_meromorphicSectionTensor_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleWeilDivisorClass.lean#L335). The attribute's comment: “the whole lemma at the source's hypotheses: for nonzero meromorphic sections s of ℒ and t of 𝒩 on a locally Noetherian integral X, the product st (meromorphicSectionTensor) is a nonzero meromorphic section of ℒ ⊗ 𝒩, div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), and the Weil divisor class of ℒ ⊗ 𝒩 in the canonical Cl(X) of Stacks 0ENR is the sum of the classes of ℒ and 𝒩 (Stacks 0EPU part (2) evaluated at s, t and st)”.
 
 > **Stacks 0EPV.** Let `X` be a locally Noetherian integral algebraic space over `S`, let `ℒ`,
 > `𝒩` be invertible `𝒪_X`-modules and let `s`, resp. `t`, be a nonzero meromorphic section of `ℒ`,
@@ -929,7 +928,7 @@ theorem exists_ne_zero_weilDivisorOfSection_meromorphicSectionTensor_eq_add
           weilDivisorClassOfInvertible B S hS hX hInt hN N hNinv
 ```
 
-**`AlgebraicGeometry.Space.PicardDivisorData.divisor_picardTensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean#L454). The attribute's comment: “the identity div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), at the sections and ratio families chosen by PicardDivisorData; st/(s\_ξ t\_ξ) = (s/s\_ξ)(t/t\_ξ), the source's own computation, is the argument hst, as it is in the coefficientwise orderOfVanishingSection\_mul: the ratio s/s\_ξ is a parameter here as in Stacks 0EPR, and the generator chosen at ξ for ℒ⊗𝒩 differs from s\_ξ ⊗ t\_ξ by a unit that no choice pins to 1 (HasCanonicalTensorProductSection), so hst is not derivable. What the data gives with no extra input is the weaker exists\_ord\_sub\_eq\_tensorModule, used by divisorClass\_picardTensorModule”.
+**`AlgebraicGeometry.Space.PicardDivisorData.divisor_picardTensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean#L455). The attribute's comment: “the identity div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), at the sections and ratio families chosen by PicardDivisorData; st/(s\_ξ t\_ξ) = (s/s\_ξ)(t/t\_ξ), the source's own computation, is the argument hst, as it is in the coefficientwise orderOfVanishingSection\_mul: the ratio s/s\_ξ is a parameter here as in Stacks 0EPR, and the generator chosen at ξ for ℒ⊗𝒩 differs from s\_ξ ⊗ t\_ξ by a unit that no choice pins to 1 (HasCanonicalTensorProductSection), so hst is not derivable. What the data gives with no extra input is the weaker exists\_ord\_sub\_eq\_tensorModule, used by divisorClass\_picardTensorModule”.
 
 > **Stacks 0EPV, the identity in `Div(X)`.** The Weil divisor of the chosen section of
 > `ℒ ⊗ 𝒩` is the sum of the Weil divisors of the chosen sections of `ℒ` and of `𝒩`, as soon as
@@ -973,7 +972,7 @@ theorem divisor_picardTensorModule (L N : Modules.{u, u} B S hS X hX)
       D.divisor L hL + D.divisor N hN
 ```
 
-**`AlgebraicGeometry.Space.PicardDivisorData.divisorClass_picardTensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean#L493). The attribute's comment: “the in-particular clause: the Weil divisor class of ℒ ⊗ 𝒩 is the sum of the Weil divisor classes of ℒ and of 𝒩, from the field exists\_ord\_sub\_eq\_tensorModule and so with nothing assumed of the chosen sections; divisor\_picardTensorModule is the identity in Div(X), which needs the ratio identity. Cl(X) is Stacks 0ENR relative to the embedding R(X) → Q(𝒪^h\_\{X,ξ}) of Stacks 0ENK, which is the parameter E inhabited by genericFractionEmbedding”.
+**`AlgebraicGeometry.Space.PicardDivisorData.divisorClass_picardTensorModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClass.lean#L494). The attribute's comment: “the in-particular clause: the Weil divisor class of ℒ ⊗ 𝒩 is the sum of the Weil divisor classes of ℒ and of 𝒩, from the field exists\_ord\_sub\_eq\_tensorModule and so with nothing assumed of the chosen sections; divisor\_picardTensorModule is the identity in Div(X), which needs the ratio identity. Cl(X) is Stacks 0ENR relative to the embedding R(X) → Q(𝒪^h\_\{X,ξ}) of Stacks 0ENK, which is the parameter E inhabited by genericFractionEmbedding”.
 
 > **Stacks 0EPV, the clause in `Cl(X)`.** The Weil divisor class of a tensor product of
 > invertible `𝒪_X`-modules is the sum of their Weil divisor classes: the Weil divisor of the
@@ -993,7 +992,7 @@ theorem divisorClass_picardTensorModule (L N : Modules.{u, u} B S hS X hX)
       D.divisorClass L hL + D.divisorClass N hN
 ```
 
-**`AlgebraicGeometry.Space.exists_divisorOfSection_canonicalLocalRatioFamily_picardTensorModule_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassTensor.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassTensor.lean#L615). The attribute's comment: “the identity div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), read through the ratio families of Stacks 0EPR, for arbitrary regular meromorphic sections s of ℒ and t of 𝒩 and for their product st, whose existence is the source's first clause and is asserted here too; nothing is assumed beyond X being decent, locally Noetherian and integral. The source's computation st/(s\_ξ t\_ξ) = (s/s\_ξ)(t/t\_ξ) holds up to a unit of 𝒪\_\{U,u}, the discrepancy between the generator chosen at ξ for ℒ⊗𝒩 and the product of those chosen for ℒ and for 𝒩, and that unit has order of vanishing zero. The whole lemma for nonzero sections, with the in-particular clause in the canonical Cl(X), is exists\_ne\_zero\_weilDivisorOfSection\_meromorphicSectionTensor\_eq\_add”.
+**`AlgebraicGeometry.Space.exists_divisorOfSection_canonicalLocalRatioFamily_picardTensorModule_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassTensor.lean, line 623](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassTensor.lean#L623). The attribute's comment: “the identity div\_\{ℒ⊗𝒩}(st) = div\_ℒ(s) + div\_𝒩(t) in Div(X), read through the ratio families of Stacks 0EPR, for arbitrary regular meromorphic sections s of ℒ and t of 𝒩 and for their product st, whose existence is the source's first clause and is asserted here too; nothing is assumed beyond X being decent, locally Noetherian and integral. The source's computation st/(s\_ξ t\_ξ) = (s/s\_ξ)(t/t\_ξ) holds up to a unit of 𝒪\_\{U,u}, the discrepancy between the generator chosen at ξ for ℒ⊗𝒩 and the product of those chosen for ℒ and for 𝒩, and that unit has order of vanishing zero. The whole lemma for nonzero sections, with the in-particular clause in the canonical Cl(X), is exists\_ne\_zero\_weilDivisorOfSection\_meromorphicSectionTensor\_eq\_add”.
 
 > **Stacks 0EPV's identity in `Div(X)`.**  Let `X` be a decent, locally Noetherian, integral
 > algebraic space over `S`, let `ℒ` and `𝒩` be invertible `𝒪_X`-modules, let `s` be a regular
@@ -1016,7 +1015,7 @@ theorem divisorClass_picardTensorModule (L N : Modules.{u, u} B S hS X hX)
 > (`AlgebraicGeometry.Space.PrimeDivisor.exists_isUnit_smul_genericStalkGenerator`) whose order of
 > vanishing is zero — the source's own computation `st/(s_ξ t_ξ) = (s/s_ξ)(t/t_ξ)` holds up to
 > exactly that unit, and it is discarded by
-> `AlgebraicGeometry.Space.PrimeDivisor.orderOfVanishingSection_canonicalLocalRatio_eq_add_of_genericStalkCoefficient_eq_unit_mul`.
+> `orderOfVanishingSection_canonicalLocalRatio_eq_add_of_genericStalkCoefficient_eq_unit_mul`.
 >
 > The product section is the chartwise product
 > `AlgebraicGeometry.Space.meromorphicSectionTensorMul` amalgamated over an affine covering,
@@ -1092,7 +1091,7 @@ theorem exists_divisorOfSection_canonicalLocalRatioFamily_picardTensorModule_eq_
 
 [Tag 0EPW](https://stacks.math.columbia.edu/tag/0EPW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.canonicalPicardToWeilDivisorClassHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean#L107). The attribute's comment: “the homomorphism Pic(X) → Cl(X) assigning to an invertible module its Weil divisor class, on a locally Noetherian integral algebraic space X over a scheme S — the hypotheses of Lemma 72.7.5 and no others, decency coming from integrality by `IsIntegralSpace.isDecentSpace`”.
+**`AlgebraicGeometry.Space.canonicalPicardToWeilDivisorClassHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean#L107). The attribute's comment: “the homomorphism Pic(X) → Cl(X) assigning to an invertible module its Weil divisor class, on a locally Noetherian integral algebraic space X over a scheme S — the hypotheses of Lemma 72.7.5 and no others, decency coming from integrality by `IsIntegralSpace.isDecentSpace`”.
 
 > The homomorphism of abelian groups
 >
@@ -1117,7 +1116,7 @@ def canonicalPicardToWeilDivisorClassHom :
       (genericFractionEmbedding B S hS hX hdec hInt hN).weilDivisorClassGroup
 ```
 
-**`AlgebraicGeometry.Space.canonicalPicardToWeilDivisorClassHom_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean#L135). The attribute's comment: “the value of the homomorphism Pic(X) → Cl(X) on the class of an invertible module, which characterizes it, on a locally Noetherian integral algebraic space X over a scheme S — the hypotheses of Lemma 72.7.5 and no others, decency coming from integrality by `IsIntegralSpace.isDecentSpace`”.
+**`AlgebraicGeometry.Space.canonicalPicardToWeilDivisorClassHom_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassHom.lean#L135). The attribute's comment: “the value of the homomorphism Pic(X) → Cl(X) on the class of an invertible module, which characterizes it, on a locally Noetherian integral algebraic space X over a scheme S — the hypotheses of Lemma 72.7.5 and no others, decency coming from integrality by `IsIntegralSpace.isDecentSpace`”.
 
 > The homomorphism `Pic(X) ⟶ Cl(X)` sends the class of an invertible `𝒪_X`-module to its Weil
 > divisor class — the class of the Weil divisor of the regular meromorphic section of Stacks 0EPQ
@@ -1149,7 +1148,7 @@ theorem canonicalPicardToWeilDivisorClassHom_picardClass (L : Modules.{u, u} B S
 
 [Tag 0EPX](https://stacks.math.columbia.edu/tag/0EPX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.injective_canonicalPicardToWeilDivisorClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassInjective.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassInjective.lean#L324). The attribute's comment: “injectivity of Pic(X) → Cl(X) — the homomorphism of Stacks 0EPW at the canonical choices, which takes no auxiliary data — on a normal, locally Noetherian, integral algebraic space over a scheme. No hypothesis beyond the source's: decency comes from integrality by `IsIntegralSpace.isDecentSpace`, the claim of the source is `picardClass_eq_zero_of_forall_isUnit_canonicalGenericRatio`, the rescaling t = f⁻¹ s is `exists_isRegularMeromorphicSection_canonicalLocalRatio_eq_genericEmb_mul`, and the three instance hypotheses on the henselian local rings at the generic points of the prime divisors are conclusions of Stacks 0ENK”.
+**`AlgebraicGeometry.Space.injective_canonicalPicardToWeilDivisorClassHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassInjective.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PicardWeilDivisorClassInjective.lean#L324). The attribute's comment: “injectivity of Pic(X) → Cl(X) — the homomorphism of Stacks 0EPW at the canonical choices, which takes no auxiliary data — on a normal, locally Noetherian, integral algebraic space over a scheme. No hypothesis beyond the source's: decency comes from integrality by `IsIntegralSpace.isDecentSpace`, the claim of the source is `picardClass_eq_zero_of_forall_isUnit_canonicalGenericRatio`, the rescaling t = f⁻¹ s is `exists_isRegularMeromorphicSection_canonicalLocalRatio_eq_genericEmb_mul`, and the three instance hypotheses on the henselian local rings at the generic points of the prime divisors are conclusions of Stacks 0ENK”.
 
 > **Stacks 0EPX.** On a normal, locally Noetherian, integral algebraic space `X` over a scheme
 > `S`, the homomorphism
@@ -1183,4 +1182,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.7, Tag 0ENV](https://stacks.math.columbia.edu/tag/0ENV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

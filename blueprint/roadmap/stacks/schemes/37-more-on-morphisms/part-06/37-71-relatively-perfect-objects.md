@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.71 Relatively perfect objects
 
-Section 37.71 of the Stacks Project, [Tag 0DJW](https://stacks.math.columbia.edu/tag/0DJW). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.71 of the Stacks Project, [Tag 0DJW](https://stacks.math.columbia.edu/tag/0DJW). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DJX, a lemma
 
 [Tag 0DJX](https://stacks.math.columbia.edu/tag/0DJX) in the Stacks Project.
 
-**`Stacks.Thickenings.isPseudoCoherent_of_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean#L154). The attribute's comment: “the whole statement, unconditionally: pseudo-coherence of K' in D(𝒪\_\{X'}) from pseudo-coherence of Li^*K', for a finite-order thickening i : X ⟶ X' of schemes, at the standard derived category”. References: SGA 6 I (2.16.2), “(i), special case”.
+**`Stacks.Thickenings.isPseudoCoherent_of_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean#L154). The attribute's comment: “the whole statement, unconditionally: pseudo-coherence of K' in D(𝒪\_\{X'}) from pseudo-coherence of Li^*K', for a finite-order thickening i : X ⟶ X' of schemes, at the standard derived category”. References: SGA 6 I (2.16.2), “(i), special case”.
 
 > **Pseudo-coherence descends along a finite-order thickening of schemes.** Let `i : X ⟶ X'` be
 > a closed immersion whose kernel ideal sheaf is nilpotent and let `K'` be an object of `D(𝒪_{X'})`
@@ -38,7 +38,7 @@ theorem isPseudoCoherent_of_derivedPullback {X X' : Scheme.{u}} (i : X ⟶ X')
     AlgebraicGeometry.RingedSpace.IsPseudoCoherent (X := X'.toRingedSpace) K'
 ```
 
-**`Stacks.Thickenings.isQuasicoherent_homology_of_isPseudoCoherent_derivedPullback_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean#L530). The attribute's comment: “the quasi-coherence of the cohomology, in the affine case”.
+**`Stacks.Thickenings.isQuasicoherent_homology_of_isPseudoCoherent_derivedPullback_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ThickeningQuasicoherent.lean#L530). The attribute's comment: “the quasi-coherence of the cohomology, in the affine case”.
 
 > **The quasi-coherence half of [Stacks, Tag 0DJX] in the affine case.** Let `f : R ⟶ S` be a
 > surjection of commutative rings with nilpotent kernel, so that `i = Spec f` is a finite-order
@@ -87,7 +87,7 @@ public theorem isQuasicoherent_homology_of_isPseudoCoherent_derivedPullback_spec
 
 [Tag 0DJY](https://stacks.math.columbia.edu/tag/0DJY) in the Stacks Project.
 
-**`Stacks.Thickenings.isPseudoCoherent_of_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickening.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickening.lean#L535). The attribute's comment: “the pseudo-coherence conjunct of the conclusion; the Tor-dimension conjunct is not proved — see the implementation notes of this module”.
+**`Stacks.Thickenings.isPseudoCoherent_of_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickening.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickening.lean#L535). The attribute's comment: “the pseudo-coherence conjunct of the conclusion; the Tor-dimension conjunct is not proved — see the implementation notes of this module”.
 
 > **The pseudo-coherence conjunct of Stacks 0DJY.** In a cartesian diagram of schemes with
 > `i : X ⟶ X'`, `f : X ⟶ Y`, `f' : X' ⟶ Y'` and `j : Y ⟶ Y'`, with `j` a finite-order thickening,
@@ -114,7 +114,7 @@ public theorem isPseudoCoherent_of_isPullback_of_isFiniteOrderThickening
     RingedSpace.IsPseudoCoherent (X := X'.toRingedSpace) E'
 ```
 
-**`Stacks.Thickenings.isRelativelyPerfect_of_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickeningTorDimension.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickeningTorDimension.lean#L252).
+**`Stacks.Thickenings.isRelativelyPerfect_of_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickeningTorDimension.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectThickeningTorDimension.lean#L252).
 
 > **Stacks 0DJY at the canonical derived tensor products.** Consider a cartesian diagram of
 > schemes with `i : X ⟶ X'`, `f : X ⟶ Y`, `f' : X' ⟶ Y'` and `j : Y ⟶ Y'`, in which `f'` is flat and
@@ -142,7 +142,7 @@ public theorem isRelativelyPerfect_of_isPullback_of_isFiniteOrderThickening
 
 [Tag 0DJZ](https://stacks.math.columbia.edu/tag/0DJZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.exists_finset_affineOpens_mvPolynomial_surjective_chartHom_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonChart.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonChart.lean#L184). The attribute's comment: “the covering step with which the proof opens: for `f : X ⟶ Spec R` universally closed and locally of finite type, finitely many affine opens cover `X` and the sections over each are a quotient of a polynomial algebra over `R` in finitely many variables”. References: EGA I (6.6.3), “special case”; EGA IV (1.5.1), “(a) ⇒ (c), special case”.
+**`AlgebraicGeometry.Scheme.Hom.exists_finset_affineOpens_mvPolynomial_surjective_chartHom_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonChart.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonChart.lean#L184). The attribute's comment: “the covering step with which the proof opens: for `f : X ⟶ Spec R` universally closed and locally of finite type, finitely many affine opens cover `X` and the sections over each are a quotient of a polynomial algebra over `R` in finitely many variables”. References: EGA I (6.6.3), “special case”; EGA IV (1.5.1), “(a) ⇒ (c), special case”.
 
 > **The covering step of Stacks 0DJZ.** Let `R` be a ring and let `f : X ⟶ Spec R` be
 > universally closed and locally of finite type. Then finitely many affine opens cover `X`, and over
@@ -172,7 +172,7 @@ public theorem exists_finset_affineOpens_mvPolynomial_surjective_chartHom_of_uni
         Function.Surjective ψ ∧ ψ.comp MvPolynomial.C = chartHom f V.1
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isPerfectRelativeTo_of_isPerfectRelativeTo_closedFibre_of_genuine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean#L218).
+**`AlgebraicGeometry.Scheme.Hom.isPerfectRelativeTo_of_isPerfectRelativeTo_closedFibre_of_genuine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean#L218).
 
 > **Stacks 0DJZ.** Let `R` be a ring and `I` an ideal contained in its Jacobson radical; set
 > `S = Spec R` and `S₀ = Spec (R/I)`. Let `f : X ⟶ S` be proper, flat and locally of finite
@@ -207,7 +207,7 @@ theorem isPerfectRelativeTo_of_isPerfectRelativeTo_closedFibre_of_genuine [IsPro
     f.IsPerfectRelativeTo D E
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isPerfectRelativeTo_canonical_of_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean#L249).
+**`AlgebraicGeometry.Scheme.Hom.isPerfectRelativeTo_canonical_of_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonDescent.lean#L249).
 
 > **Stacks 0DJZ at the canonical derived tensor products.** Let `R` be a ring and `I` an ideal
 > contained in its Jacobson radical; set `S = Spec R` and `S₀ = Spec (R/I)`. Let `f : X ⟶ S` be
@@ -232,7 +232,7 @@ theorem isPerfectRelativeTo_canonical_of_closedFibre [IsProper f] [Flat f]
         (RingedSpace.inverseImage (Spec (CommRingCat.of R)).toRingedSpace f.base)) E
 ```
 
-**`AlgebraicGeometry.exists_specializes_mem_range_pullback_snd_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonSpecialization.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonSpecialization.lean#L111). The attribute's comment: “the specialization step of the proof: universal closedness of `f` and `I` inside the Jacobson radical force every point of `X` to specialize to a point of `X₀ = Spec (R/I) ×_{Spec R} X`”.
+**`AlgebraicGeometry.exists_specializes_mem_range_pullback_snd_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonSpecialization.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativelyPerfectJacobsonSpecialization.lean#L111). The attribute's comment: “the specialization step of the proof: universal closedness of `f` and `I` inside the Jacobson radical force every point of `X` to specialize to a point of `X₀ = Spec (R/I) ×_{Spec R} X`”.
 
 > **Stacks 0DJZ, the specialization step.** Let `I` be an ideal of `R` contained in the
 > Jacobson radical, let `f : X ⟶ Spec R` be universally closed and let
@@ -254,4 +254,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.71, Tag 0DJW](https://stacks.math.columbia.edu/tag/0DJW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

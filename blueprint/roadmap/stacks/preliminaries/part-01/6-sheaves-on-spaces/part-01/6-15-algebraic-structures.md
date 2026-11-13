@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.15 Algebraic structures
 
-Section 6.15 of the Stacks Project, [Tag 007L](https://stacks.math.columbia.edu/tag/007L). 6 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 6.15 of the Stacks Project, [Tag 007L](https://stacks.math.columbia.edu/tag/007L). 6 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 007M, a definition
 
 [Tag 007M](https://stacks.math.columbia.edu/tag/007M) in the Stacks Project.
 
-**`AlgebraicStructureType`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Defs.lean#L58).
+**`AlgebraicStructureType`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Defs.lean#L58).
 
 > A *type of algebraic structure* is a category `C` together with a functor
 > `F : C ⥤ Type v` to the category of sets which is faithful, preserves all
@@ -32,7 +32,7 @@ structure AlgebraicStructureType
 
 [Tag 007N](https://stacks.math.columbia.edu/tag/007N) in the Stacks Project.
 
-**`isTypeOfAlgebraicStructure_pointed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 900](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L900). The attribute's comment: “(1)”.
+**`isTypeOfAlgebraicStructure_pointed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 900](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L900). The attribute's comment: “(1)”.
 
 > **Item (1).** The category of pointed sets is a type of
 > algebraic structures (with the forgetful functor to `Type`).
@@ -42,7 +42,7 @@ theorem isTypeOfAlgebraicStructure_pointed :
     IsTypeOfAlgebraicStructure Pointed.{w} (forget Pointed.{w})
 ```
 
-**`isTypeOfAlgebraicStructure_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L912). The attribute's comment: “(2)”.
+**`isTypeOfAlgebraicStructure_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 912](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L912). The attribute's comment: “(2)”.
 
 > **Item (2).** The category of abelian groups is a type of
 > algebraic structures.
@@ -52,7 +52,7 @@ theorem isTypeOfAlgebraicStructure_addCommGrpCat :
     IsTypeOfAlgebraicStructure AddCommGrpCat.{w} (forget AddCommGrpCat.{w})
 ```
 
-**`isTypeOfAlgebraicStructure_grpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 924](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L924). The attribute's comment: “(3)”.
+**`isTypeOfAlgebraicStructure_grpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 924](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L924). The attribute's comment: “(3)”.
 
 > **Item (3).** The category of groups is a type of algebraic
 > structures.
@@ -62,7 +62,7 @@ theorem isTypeOfAlgebraicStructure_grpCat :
     IsTypeOfAlgebraicStructure GrpCat.{w} (forget GrpCat.{w})
 ```
 
-**`isTypeOfAlgebraicStructure_monCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L936). The attribute's comment: “(4)”.
+**`isTypeOfAlgebraicStructure_monCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L936). The attribute's comment: “(4)”.
 
 > **Item (4).** The category of monoids is a type of algebraic
 > structures.
@@ -72,7 +72,7 @@ theorem isTypeOfAlgebraicStructure_monCat :
     IsTypeOfAlgebraicStructure MonCat.{w} (forget MonCat.{w})
 ```
 
-**`isTypeOfAlgebraicStructure_commRingCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 949](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L949). The attribute's comment: “(5)”.
+**`isTypeOfAlgebraicStructure_commRingCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 949](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L949). The attribute's comment: “(5)”.
 
 > **Item (5).** The category of commutative rings is a type of
 > algebraic structures. (In the Stacks Project, a ring is a commutative ring with
@@ -83,7 +83,7 @@ theorem isTypeOfAlgebraicStructure_commRingCat :
     IsTypeOfAlgebraicStructure CommRingCat.{w} (forget CommRingCat.{w})
 ```
 
-**`isTypeOfAlgebraicStructure_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 961](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L961). The attribute's comment: “(6)”.
+**`isTypeOfAlgebraicStructure_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 961](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L961). The attribute's comment: “(6)”.
 
 > **Item (6).** For any fixed commutative ring `R`, the category
 > of `R`-modules is a type of algebraic structures.
@@ -93,7 +93,7 @@ theorem isTypeOfAlgebraicStructure_moduleCat (R : Type w) [CommRing R] :
     IsTypeOfAlgebraicStructure (ModuleCat.{w} R) (forget (ModuleCat.{w} R))
 ```
 
-**`isTypeOfAlgebraicStructure_lieAlgCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L973). The attribute's comment: “(7)”.
+**`isTypeOfAlgebraicStructure_lieAlgCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean, line 973](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Examples.lean#L973). The attribute's comment: “(7)”.
 
 > **Item (7).** For any fixed field `K`, the category of `K`-Lie
 > algebras is a type of algebraic structures.
@@ -107,7 +107,7 @@ theorem isTypeOfAlgebraicStructure_lieAlgCat (K : Type w) [Field K] :
 
 [Tag 007O](https://stacks.math.columbia.edu/tag/007O) in the Stacks Project.
 
-**`AlgebraicStructureType.has_terminal_and_F_terminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L78). The attribute's comment: “(1)”.
+**`AlgebraicStructureType.has_terminal_and_F_terminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L78). The attribute's comment: “(1)”.
 
 > **Stacks 007O, Item (1).** `C` has a terminal (final) object and the value of `F` at
 > the terminal object is a one-element (singleton, i.e. `Unique`) set.
@@ -117,7 +117,7 @@ theorem has_terminal_and_F_terminal :
     HasTerminal S.C ∧ Nonempty (Unique (S.F.obj (⊤_ S.C)))
 ```
 
-**`AlgebraicStructureType.has_products_and_F_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L89). The attribute's comment: “(2)”.
+**`AlgebraicStructureType.has_products_and_F_preserves_products`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L89). The attribute's comment: “(2)”.
 
 > **Stacks 007O, Item (2).** `C` has all (small) products, and for every small family
 > `{A i}` the canonical comparison map `F (∏ A i) ⟶ ∏ (F ∘ A)` is an isomorphism (a
@@ -131,7 +131,7 @@ theorem has_products_and_F_preserves_products :
         IsIso (piComparison S.F f)
 ```
 
-**`AlgebraicStructureType.has_pullbacks_and_F_preserves_pullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L101). The attribute's comment: “(3)”.
+**`AlgebraicStructureType.has_pullbacks_and_F_preserves_pullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L101). The attribute's comment: “(3)”.
 
 > **Stacks 007O, Item (3).** `C` has all fibre products (pullbacks), and the canonical
 > comparison map `F (A ×_B C) ⟶ F A ×_{F B} F C` is an isomorphism (a bijection of sets).
@@ -144,7 +144,7 @@ theorem has_pullbacks_and_F_preserves_pullbacks :
         IsIso (pullbackComparison S.F f g)
 ```
 
-**`AlgebraicStructureType.has_equalizers_and_F_preserves_equalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L114). The attribute's comment: “(4)”.
+**`AlgebraicStructureType.has_equalizers_and_F_preserves_equalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L114). The attribute's comment: “(4)”.
 
 > **Stacks 007O, Item (4).** `C` has all equalizers, and if `e : E ⟶ A` is the
 > equalizer of `a b : A ⟶ B` in `C`, then `F e` is the equalizer of `F a, F b` in
@@ -158,7 +158,7 @@ theorem has_equalizers_and_F_preserves_equalizers :
         IsIso (equalizerComparison f g S.F)
 ```
 
-**`AlgebraicStructureType.mono_iff_F_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L129). The attribute's comment: “(5)”.
+**`AlgebraicStructureType.mono_iff_F_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L129). The attribute's comment: “(5)”.
 
 > **Stacks 007O, Item (5).** A morphism `a : A ⟶ B` in `C` is a monomorphism iff
 > the underlying function `F a : F A ⟶ F B` is injective.
@@ -171,7 +171,7 @@ theorem mono_iff_F_injective {A B : S.C} (a : A ⟶ B) :
     Mono a ↔ Function.Injective (S.F.map a)
 ```
 
-**`AlgebraicStructureType.epi_of_F_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L141). The attribute's comment: “(6)”.
+**`AlgebraicStructureType.epi_of_F_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L141). The attribute's comment: “(6)”.
 
 > **Stacks 007O, Item (6).** If the underlying function `F a : F A ⟶ F B` is
 > surjective, then `a : A ⟶ B` is an epimorphism in `C`.
@@ -184,7 +184,7 @@ theorem epi_of_F_surjective {A B : S.C} (a : A ⟶ B)
     (h : Function.Surjective (S.F.map a)) : Epi a
 ```
 
-**`AlgebraicStructureType.has_filtered_colimits_and_F_preserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L160). The attribute's comment: “(7)”.
+**`AlgebraicStructureType.has_filtered_colimits_and_F_preserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Consequences.lean#L160). The attribute's comment: “(7)”.
 
 > **Stacks 007O, Item (7).** For any filtered category `I` and any functor
 > `D : I ⥤ C`, the colimit of `D` exists in `C`, and the canonical comparison map
@@ -205,7 +205,7 @@ theorem has_filtered_colimits_and_F_preserves :
 
 [Tag 007P](https://stacks.math.columbia.edu/tag/007P) in the Stacks Project.
 
-**`factor_through_injective_image_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/FactorThroughInjective.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/FactorThroughInjective.lean#L34).
+**`factor_through_injective_image_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/FactorThroughInjective.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/FactorThroughInjective.lean#L34). The attribute's comment: “f factors through g when F(g) is injective and Im F(f) ⊆ Im F(g)”.
 
 > **Stacks Project, Tag 007P (Lemma 6.15.4).**
 > Let `(C, F)` be a type of algebraic structure. Let `A`, `B`, `C` be objects of `C` and
@@ -226,7 +226,7 @@ theorem factor_through_injective_image_subset
 
 [Tag 007Q](https://stacks.math.columbia.edu/tag/007Q) in the Stacks Project.
 
-**`algebraicStructure_factor_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Pullback.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Pullback.lean#L148).
+**`algebraicStructure_factor_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/Pullback.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/Pullback.lean#L148).
 
 > Stacks Project Example 6.15.5 (tag 007Q).
 >
@@ -252,7 +252,7 @@ theorem algebraicStructure_factor_exists (S : AlgebraicStructureTypeBundled.{v, 
 
 [Tag 007R](https://stacks.math.columbia.edu/tag/007R) in the Stacks Project.
 
-**`pointwiseProductPresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/PointwiseProduct.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/PointwiseProduct.lean#L126).
+**`pointwiseProductPresheaf_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/PointwiseProduct.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/AlgebraicStructure/PointwiseProduct.lean#L126).
 
 > **Stacks 007R.** Let `C` have all small limits and let `F : C ⥤ Type v` preserve all small
 > limits and reflect isomorphisms. Let `X` be a topological space and `A : X → C` a family of
@@ -278,4 +278,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.15, Tag 007L](https://stacks.math.columbia.edu/tag/007L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # Continuum hypothesis
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html).
 
 ## Continuum hypothesis
 
 CH: 2^{ℵ₀}=ℵ₁
 
-Formalized by `MetaMathlibExt.ContinuumHypothesis`, a definition declared in [MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html#continuum-hypothesis).
+Formalized by `MetaMathlibExt.ContinuumHypothesis`, a definition declared in [MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html#continuum-hypothesis).
 
 ## Equivalent forms of the continuum hypothesis
 
@@ -25,7 +25,7 @@ Formalized by `MetaMathlibExt.ContinuumHypothesis`, a definition declared in [Ma
 
 The full informal statement is in the module documentation directly above.
 
-Formalized by `MetaMathlibExt.continuumHypothesis_iff_continuum_eq_aleph_one`, a theorem declared in [MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html#equivalent-forms-of-the-continuum-hypoth).
+Formalized by `MetaMathlibExt.continuumHypothesis_iff_continuum_eq_aleph_one`, a theorem declared in [MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html#equivalent-forms-of-the-continuum-hypoth).
 
 ## Depends on
 
@@ -34,4 +34,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuum hypothesis](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/SetTheory/cardinal-arithmetic/continuum-hypothesis)

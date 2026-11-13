@@ -8,7 +8,7 @@ proof: formalized
 
 # INVERT transform
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html).
 
 ## Linear recurrence for INVERT convolution powers in characteristic zero
 
@@ -31,7 +31,7 @@ with the partial Bell polynomials $B_{n,k}$, that is, $y$ is the INVERT transfor
 formal power series in $z$, $\sum_{n \ge 0} y_n z^n = 1/(1 - \sum_{m \ge 1} c_m z^m)$. The value
 $c_0$ plays no role, and the theorem for real sequences is the case $K = \mathbb{R}$.
 
-Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence_of_charZero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence-of-ch).
+Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence_of_charZero`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence-of-ch).
 
 ## Linear recurrence for convolution powers of an INVERT sequence
 
@@ -57,7 +57,7 @@ $c_0$ plays no role.
 
 - Daniel Birmajer, Juan B. Gil, and Michael D. Weiner, "Linear Recurrence Sequences and Their Convolutions via Bell Polynomials," Journal of Integer Sequences 18 (2015), Article 15.1.2, Theorem, equation, lines 425–435, https://cs.uwaterloo.ca/journals/JIS/VOL18/Gil/gil3.tex
 
-Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence).
+Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence).
 
 ## Linear recurrence for INVERT convolution powers via partial Bell polynomials
 
@@ -73,7 +73,7 @@ $a_1 + \dots + a_r = N$. Then for every $n \ge 1$
 
 $$n \, y^{(r)}_n = \sum_{m=1}^{n} \bigl(n + m(r-1)\bigr) \, c_m \, y^{(r)}_{n-m}.$$
 
-Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence_partialBellPolynomial`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence-parti).
+Formalized by `MetaMathlibExt.bell_convolution_linear_recurrence_partialBellPolynomial`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BellPolynomialConvolutionRecurrence.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#bell-convolution-linear-recurrence-parti).
 
 ## The INVERT transform of an integer sequence
 
@@ -83,7 +83,7 @@ coefficient of $x^{n+1}$ in the inverse of $1 - \sum_{m \ge 0} a_m x^{m+1}$ in $
 (the inverse exists because the constant coefficient is $1$). In the one-based indexing of the
 source, $a_n$ and $b_n$ are the terms of index $n + 1$.
 
-Formalized by `MetaMathlibExt.invertTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/InvertTransform.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/InvertTransform.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#invert-transform).
+Formalized by `MetaMathlibExt.invertTransform`, a definition declared in [MathlibExt/Combinatorics/Enumerative/InvertTransform.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/InvertTransform.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#invert-transform).
 
 ## Generating function of the INVERT transform
 
@@ -92,7 +92,7 @@ sequence and $b = (b_n)_{n \ge 0}$ its INVERT transform, and put
 $A(x) = \sum_{n \ge 0} a_n x^{n+1}$ and $B(x) = \sum_{n \ge 0} b_n x^{n+1}$. Then
 $(1 - A(x))(1 + B(x)) = 1$ in $\mathbb{Z}[[x]]$, that is, $1 + B(x)$ is the inverse of $1 - A(x)$.
 
-Formalized by `MetaMathlibExt.invertTransform_spec`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/InvertTransform.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/InvertTransform.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#invert-transform-spec).
+Formalized by `MetaMathlibExt.invertTransform_spec`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/InvertTransform.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/InvertTransform.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html#invert-transform-spec).
 
 ## Depends on
 
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: INVERT transform](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/invert-transform)

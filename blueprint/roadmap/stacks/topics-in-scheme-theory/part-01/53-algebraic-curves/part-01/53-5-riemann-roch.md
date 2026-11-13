@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.5 Riemann-Roch
 
-Section 53.5 of the Stacks Project, [Tag 0B5B](https://stacks.math.columbia.edu/tag/0B5B). 8 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.5 of the Stacks Project, [Tag 0B5B](https://stacks.math.columbia.edu/tag/0B5B). 8 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B5B, the section
 
 [Tag 0B5B](https://stacks.math.columbia.edu/tag/0B5B) in the Stacks Project.
 
-**`AlgebraicGeometry.selfIntersectionNumber_pos_and_invertibleCurveDegree_pos_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean#L122). The attribute's comment: “the section's positivity claim: if L is ample then the integer (L . X) = deg(L) is positive. Stated for dim X = 1: under the section's standing dim X <= 1 the claim fails at dimension zero (X = Spec k, L = O\_X ample, deg(O\_X) = chi(O\_X) - chi(O\_X) = 0 = (O\_X . X)), and dim X = 1 is the dimension at which the section's name deg\_L(X) = (L . X) (Tag 0BEW) applies”.
+**`AlgebraicGeometry.selfIntersectionNumber_pos_and_invertibleCurveDegree_pos_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean#L122). The attribute's comment: “the section's positivity claim: if L is ample then the integer (L . X) = deg(L) is positive. Stated for dim X = 1: under the section's standing dim X <= 1 the claim fails at dimension zero (X = Spec k, L = O\_X ample, deg(O\_X) = chi(O\_X) - chi(O\_X) = 0 = (O\_X . X)), and dim X = 1 is the dimension at which the section's name deg\_L(X) = (L . X) (Tag 0BEW) applies”.
 
 > **"If `𝓛` is ample, then this integer is positive"** (Section [Stacks, Tag 0B5B]): on a
 > proper scheme `X` of dimension one over a field `k`, an ample invertible `𝒪_X`-module `𝓛` has
@@ -35,7 +35,7 @@ theorem selfIntersectionNumber_pos_and_invertibleCurveDegree_pos_of_isAmple
       0 < invertibleCurveDegree k f hdim.le L
 ```
 
-**`AlgebraicGeometry.curveDegree_dualizingSheafOverField_eq_neg_two_mul_and_chowDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean#L155). The attribute's comment: “the section's Riemann-Roch claim: in the case that omega\_X is invertible, -1/2 c\_1(omega\_X) cap [X]\_1 is a zero cycle (with half-integer coefficients) whose degree is chi(X, O\_X), together with deg(omega\_X) = -2 chi(X, O\_X); obtained, as the section says, from Tag 0BS5 (at omega^bullet = omega[1], Tag 0BS3), whose hypotheses X Cohen-Macaulay and equidimensional of dimension 1 it keeps. omega\_X invertible is the instance that the module of Tag 0BS2 is finite locally free of rank 1. The section's gloss 'omega\_X invertible, i.e., X Gorenstein' is clause (1) of Tag 0BS6”.
+**`AlgebraicGeometry.curveDegree_dualizingSheafOverField_eq_neg_two_mul_and_chowDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/RiemannRochSection.lean#L155). The attribute's comment: “the section's Riemann-Roch claim: in the case that omega\_X is invertible, -1/2 c\_1(omega\_X) cap [X]\_1 is a zero cycle (with half-integer coefficients) whose degree is chi(X, O\_X), together with deg(omega\_X) = -2 chi(X, O\_X); obtained, as the section says, from Tag 0BS5 (at omega^bullet = omega[1], Tag 0BS3), whose hypotheses X Cohen-Macaulay and equidimensional of dimension 1 it keeps. omega\_X invertible is the instance that the module of Tag 0BS2 is finite locally free of rank 1. The section's gloss 'omega\_X invertible, i.e., X Gorenstein' is clause (1) of Tag 0BS6”.
 
 > **The Riemann--Roch claim of Section [Stacks, Tag 0B5B]**: let `X` be a proper scheme over a
 > field `k`, Cohen--Macaulay and equidimensional of dimension one, and let
@@ -73,17 +73,17 @@ theorem curveDegree_dualizingSheafOverField_eq_neg_two_mul_and_chowDegree
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.curveDegree`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L34) (StacksFrontier): “equation (0BRX): deg(E) = χ(X, E) - rank(E) χ(X, O\_X)”.
-- [`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L37) (StacksFrontier): “equation (0BRY): deg(E) = deg(c\_1(E) ∩ [X]\_1)”.
-- [`AlgebraicGeometry.eulerCharacteristic_eq_chowDegree_firstChernCapOnCycles_add`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L40) (StacksFrontier): “equation (0BRZ): the first version of Riemann-Roch”.
-- [`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L43) (StacksFrontier): “equation (0BS0): (L · X) = deg(L)”.
-- [`AlgebraicGeometry.isSelfIntersectionNumber_one_iff_of_topologicalKrullDim_eq_one`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L217), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L46) (StacksFrontier): “equation (0BS1): deg\_L(X) = (L · X)”.
+- [`AlgebraicGeometry.curveDegree`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L34) (StacksFrontier): “equation (0BRX): deg(E) = χ(X, E) - rank(E) χ(X, O\_X)”.
+- [`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L37) (StacksFrontier): “equation (0BRY): deg(E) = deg(c\_1(E) ∩ [X]\_1)”.
+- [`AlgebraicGeometry.eulerCharacteristic_eq_chowDegree_firstChernCapOnCycles_add`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L40) (StacksFrontier): “equation (0BRZ): the first version of Riemann-Roch”.
+- [`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L43) (StacksFrontier): “equation (0BS0): (L · X) = deg(L)”.
+- [`AlgebraicGeometry.isSelfIntersectionNumber_one_iff_of_topologicalKrullDim_eq_one`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L217), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochSection.lean#L46) (StacksFrontier): “equation (0BS1): deg\_L(X) = (L · X)”.
 
 ## Tag 0BRX, an equation
 
 [Tag 0BRX](https://stacks.math.columbia.edu/tag/0BRX) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82). The attribute's comment: “the degree formula”.
+**`AlgebraicGeometry.curveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82). The attribute's comment: “the degree formula”.
 
 > The degree of a finite locally free sheaf of constant rank on a proper scheme of
 > dimension at most one over a field.
@@ -99,7 +99,7 @@ public noncomputable def curveDegree (k : Type u) [Field k]
 
 [Tag 0BRY](https://stacks.math.columbia.edu/tag/0BRY) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305).
+**`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305).
 
 > **Equation [Stacks, Tag 0BRY]**, in the orientation of the source:
 > `deg(ℰ) = deg(c₁(ℰ) ∩ [X]_1)` for `ℰ` finite locally free of constant rank on a proper scheme of
@@ -130,7 +130,7 @@ theorem curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental
 
 [Tag 0BRZ](https://stacks.math.columbia.edu/tag/0BRZ) in the Stacks Project.
 
-**`AlgebraicGeometry.eulerCharacteristic_eq_chowDegree_firstChernCapOnCycles_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean#L57). References: SGA 6 XIII (4.6), “more general”.
+**`AlgebraicGeometry.eulerCharacteristic_eq_chowDegree_firstChernCapOnCycles_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochChern.lean#L57). References: SGA 6 XIII (4.6), “more general”.
 
 > **Riemann-Roch**: on a proper scheme `X` of dimension at most one over a field `k`, a finite
 > locally free `𝒪_X`-module `ℰ` of constant rank `r` satisfies
@@ -166,7 +166,7 @@ theorem eulerCharacteristic_eq_chowDegree_firstChernCapOnCycles_add
 
 [Tag 0BS0](https://stacks.math.columbia.edu/tag/0BS0) in the Stacks Project.
 
-**`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169). The attribute's comment: “the numerical intersection number is the degree”.
+**`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169). The attribute's comment: “the numerical intersection number is the degree”.
 
 > **[Stacks, Tag 0BS1] and [Stacks, Tag 0BS0]**: on a proper scheme of dimension at most one
 > over a field, the numerical intersection number of an invertible module with the whole space is
@@ -190,7 +190,7 @@ theorem eq_invertibleCurveDegree_of_isSelfIntersectionNumber
 
 [Tag 0BS1](https://stacks.math.columbia.edu/tag/0BS1) in the Stacks Project.
 
-**`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169). The attribute's comment: “the intersection number and the degree”.
+**`AlgebraicGeometry.eq_invertibleCurveDegree_of_isSelfIntersectionNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L169). The attribute's comment: “the intersection number and the degree”.
 
 > **[Stacks, Tag 0BS1] and [Stacks, Tag 0BS0]**: on a proper scheme of dimension at most one
 > over a field, the numerical intersection number of an invertible module with the whole space is
@@ -210,7 +210,7 @@ theorem eq_invertibleCurveDegree_of_isSelfIntersectionNumber
     c = (invertibleCurveDegree k f hdim L : ℚ)
 ```
 
-**`AlgebraicGeometry.isSelfIntersectionNumber_one_iff_of_topologicalKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L217). The attribute's comment: “the degree of X with respect to an invertible module”.
+**`AlgebraicGeometry.isSelfIntersectionNumber_one_iff_of_topologicalKrullDim_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveIntersectionNumber/Basic.lean#L217). The attribute's comment: “the degree of X with respect to an invertible module”.
 
 > **The number of factors that [Stacks, Tag 0BEW] prescribes on a scheme of dimension one is
 > one.** This is the left equality `deg_𝓛(X) = (𝓛 · X)` of [Stacks, Tag 0BS1]: the degree of `X`
@@ -231,7 +231,7 @@ theorem isSelfIntersectionNumber_one_iff_of_topologicalKrullDim_eq_one
 
 [Tag 0BS5](https://stacks.math.columbia.edu/tag/0BS5) in the Stacks Project.
 
-**`AlgebraicGeometry.eulerCharacteristic_unit_eq_neg_eulerCharacteristic_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/CohenMacaulayEulerCharacteristic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/CohenMacaulayEulerCharacteristic.lean#L80). The attribute's comment: “second formula, chi(X, O\_X) = - chi(X, omega\_X), for X proper over a field, Cohen-Macaulay and equidimensional of dimension one, omega\_X = H^(-1)(f^x(O\_Spec k)) of Tag 0BS2”.
+**`AlgebraicGeometry.eulerCharacteristic_unit_eq_neg_eulerCharacteristic_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/CohenMacaulayEulerCharacteristic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/CohenMacaulayEulerCharacteristic.lean#L80). The attribute's comment: “second formula, chi(X, O\_X) = - chi(X, omega\_X), for X proper over a field, Cohen-Macaulay and equidimensional of dimension one, omega\_X = H^(-1)(f^x(O\_Spec k)) of Tag 0BS2”.
 
 > **The second formula of [Stacks, Tag 0BS5]: `χ(X, 𝒪_X) = -χ(X, ω_X)`** for a proper scheme
 > `X` over a field `k` which is Cohen--Macaulay and equidimensional of dimension one, with
@@ -258,7 +258,7 @@ public theorem eulerCharacteristic_unit_eq_neg_eulerCharacteristic_dualizingShea
       -eulerCharacteristic k f (Stacks.Duality.dualizingSheafOverField f)
 ```
 
-**`AlgebraicGeometry.eulerCharacteristic_unit_eq_eulerCharacteristicDerived_dualizingComplexOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexEulerCharacteristic.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexEulerCharacteristic.lean#L323). The attribute's comment: “first formula, chi(X, O\_X) = chi(X, omega^bullet), for X proper of dimension at most one over a field, omega^bullet = f^x(O\_Spec k) of Tag 0BS2, and chi(X, omega^bullet) the alternating sum of the dimensions of its hypercohomology, as the source defines it”.
+**`AlgebraicGeometry.eulerCharacteristic_unit_eq_eulerCharacteristicDerived_dualizingComplexOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexEulerCharacteristic.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexEulerCharacteristic.lean#L326). The attribute's comment: “first formula, chi(X, O\_X) = chi(X, omega^bullet), for X proper of dimension at most one over a field, omega^bullet = f^x(O\_Spec k) of Tag 0BS2, and chi(X, omega^bullet) the alternating sum of the dimensions of its hypercohomology, as the source defines it”.
 
 > **The first formula of [Stacks, Tag 0BS5]: `χ(X, 𝒪_X) = χ(X, ω_X^•)`** for a proper scheme `X`
 > of dimension at most one over a field `k`, with `ω_X^• = f^×(𝒪_{Spec k})` the dualizing complex of
@@ -284,7 +284,7 @@ public theorem eulerCharacteristic_unit_eq_eulerCharacteristicDerived_dualizingC
 
 [Tag 0BS6](https://stacks.math.columbia.edu/tag/0BS6) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_dualizingSheafOverField_eq_neg_two_mul_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean#L85). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.curveDegree_dualizingSheafOverField_eq_neg_two_mul_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean#L85). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 0BS6], clause (2).** Let `X` be a proper scheme over a field `k` which is
 > Gorenstein and equidimensional of dimension one, and `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` the
@@ -309,7 +309,7 @@ public theorem curveDegree_dualizingSheafOverField_eq_neg_two_mul_of_isGorenstei
       -2 * eulerCharacteristic k f (Stacks.Ample.unitModule X)
 ```
 
-**`AlgebraicGeometry.eulerCharacteristic_eq_and_finrank_cohomology_eq_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean#L180). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.eulerCharacteristic_eq_and_finrank_cohomology_eq_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinCurveRiemannRoch.lean#L180). The attribute's comment: “(3)”.
 
 > **[Stacks, Tag 0BS6], clause (3).** Let `X` be a proper scheme over a field `k` which is
 > Gorenstein and equidimensional of dimension one, `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` the dualizing
@@ -345,7 +345,7 @@ public theorem eulerCharacteristic_eq_and_finrank_cohomology_eq_of_isGorenstein
             (dualTensorDualizingSheafOverField f E)) (1 - i))
 ```
 
-**`Stacks.Duality.isInvertible_dualizingSheafOverField_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinDualizingInvertible.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinDualizingInvertible.lean#L143). The attribute's comment: “(1)”.
+**`Stacks.Duality.isInvertible_dualizingSheafOverField_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinDualizingInvertible.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GorensteinDualizingInvertible.lean#L143). The attribute's comment: “(1)”.
 
 > **The dualizing sheaf of a proper Gorenstein curve is invertible.** Let `X` be a proper scheme
 > over a field `k` which is Gorenstein and equidimensional of dimension one, and let
@@ -369,4 +369,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.5, Tag 0B5B](https://stacks.math.columbia.edu/tag/0B5B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

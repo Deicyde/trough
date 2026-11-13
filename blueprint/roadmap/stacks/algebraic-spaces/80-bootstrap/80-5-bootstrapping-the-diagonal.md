@@ -8,13 +8,13 @@ proof: formalized
 
 # 80.5 Bootstrapping the diagonal
 
-Section 80.5 of the Stacks Project, [Tag 046I](https://stacks.math.columbia.edu/tag/046I). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 80.5 of the Stacks Project, [Tag 046I](https://stacks.math.columbia.edu/tag/046I). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03Y2, a lemma
 
 [Tag 03Y2](https://stacks.math.columbia.edu/tag/03Y2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_diag_iff_forall_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L318). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_diag_iff_forall_yoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L318). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 03Y2, conditions (1) and (2).** The absolute diagonal of a presheaf on the big
 > fppf site of `S` is representable by algebraic spaces exactly when every morphism to that
@@ -28,7 +28,7 @@ theorem isRepresentableByAlgebraicSpaces_diag_iff_forall_yoneda
         IsRepresentableByAlgebraicSpaces B S hS f
 ```
 
-**`AlgebraicGeometry.Space.forall_yoneda_isRepresentableByAlgebraicSpaces_iff_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L342). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.forall_yoneda_isRepresentableByAlgebraicSpaces_iff_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L342). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 03Y2, conditions (2) and (3).** Representability by algebraic spaces of every
 > morphism to a presheaf on the big fppf site of `S` from a scheme over `S` is equivalent to
@@ -48,7 +48,7 @@ theorem forall_yoneda_isRepresentableByAlgebraicSpaces_iff_isAlgebraicSpace
 
 [Tag 046J](https://stacks.math.columbia.edu/tag/046J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_separated_locallyQuasiFinite_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SeparatedQuasiFiniteDescent.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SeparatedQuasiFiniteDescent.lean#L480).
+**`AlgebraicGeometry.Space.relativelyRepresentable_separated_locallyQuasiFinite_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SeparatedQuasiFiniteDescent.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/SeparatedQuasiFiniteDescent.lean#L489).
 
 > **Stacks 046J**, conditional only on the fppf locality of separatedness.
 >
@@ -87,7 +87,7 @@ theorem relativelyRepresentable_separated_locallyQuasiFinite_of_isPullback
 
 [Tag 046K](https://stacks.math.columbia.edu/tag/046K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_diag_of_flat_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L441).
+**`AlgebraicGeometry.Space.relativelyRepresentable_diag_of_flat_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/Diagonal.lean#L441).
 
 > **Stacks 046K.** Let `F` be a sheaf on the big fppf site of a scheme `S` which admits a
 > morphism `f : X ⟶ F` from an algebraic space over `S` that is representable by algebraic
@@ -123,7 +123,7 @@ theorem relativelyRepresentable_diag_of_flat_presentation
 
 [Tag 0AHV](https://stacks.math.columbia.edu/tag/0AHV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativelyRepresentable_of_isLocallyQuasiFinite_of_schemeSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallyQuasiFiniteFromScheme.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallyQuasiFiniteFromScheme.lean#L93).
+**`AlgebraicGeometry.Space.relativelyRepresentable_of_isLocallyQuasiFinite_of_schemeSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallyQuasiFiniteFromScheme.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Representable/Bootstrap/LocallyQuasiFiniteFromScheme.lean#L95).
 
 > **Stacks 0AHV.** Let `F` be a presheaf of sets on the big fppf site of `S` and let `X` be a
 > scheme over `S`, that is an object of the site. A morphism `a : h_X ⟶ F` which is representable
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 80.5, Tag 046I](https://stacks.math.columbia.edu/tag/046I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

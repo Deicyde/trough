@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.29 Reduced fibres
 
-Section 76.29 of the Stacks Project, [Tag 0E06](https://stacks.math.columbia.edu/tag/0E06). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.29 of the Stacks Project, [Tag 0E06](https://stacks.math.columbia.edu/tag/0E06). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E07, a lemma
 
 [Tag 0E07](https://stacks.math.columbia.edu/tag/0E07) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedFibre_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L442).
+**`AlgebraicGeometry.Space.isGeometricallyReducedFibre_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L442).
 
 > **Stacks 0E07.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` and a point `y`
 > of `|Y|` the following are equivalent: (1) the fibre `X_k` is geometrically reduced over `k`
@@ -44,7 +44,7 @@ theorem isGeometricallyReducedFibre_tfae (f : X ⟶ Y) (hX : IsAlgebraicSpace B 
 
 [Tag 0E08](https://stacks.math.columbia.edu/tag/0E08) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsGeometricallyReducedFibreAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L372).
+**`AlgebraicGeometry.Space.IsGeometricallyReducedFibreAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L372).
 
 > **Stacks 0E08.** The fibre of `f : X ⟶ Y` at a point `y` of `|Y|` is *geometrically reduced*
 > when the equivalent conditions of Stacks 0E07 hold: the fibre over some — equivalently, every —
@@ -59,7 +59,7 @@ abbrev IsGeometricallyReducedFibreAt (y : points B S hS Y) : Prop
 
 [Tag 0E09](https://stacks.math.columbia.edu/tag/0E09) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.geometricallyReducedFibreLocus_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L389).
+**`AlgebraicGeometry.Space.geometricallyReducedFibreLocus_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReduced.lean#L389).
 
 > **Stacks 0E09.** The locus of points with geometrically reduced fibre commutes with base
 > change: the fibre of the base change `X ×_Y Y' ⟶ Y'` over a point of `|Y'|` is geometrically
@@ -78,7 +78,7 @@ theorem geometricallyReducedFibreLocus_pullback {Y' : (BigFppfOver B S hS)ᵒᵖ
 
 [Tag 0E0A](https://stacks.math.columbia.edu/tag/0E0A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_geometricallyReducedFibreLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedLocus.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedLocus.lean#L428). References: EGA IV (9.7.7), “more general”.
+**`AlgebraicGeometry.Space.isEtaleLocallyConstructible_geometricallyReducedFibreLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedLocus.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedLocus.lean#L428). References: EGA IV (9.7.7), “more general”.
 
 > **Stacks 0E0A.** For a quasi-compact morphism of algebraic spaces over `S` which is
 > locally of finite presentation, the set of points of `|Y|` whose fibre is geometrically reduced
@@ -103,7 +103,7 @@ theorem isEtaleLocallyConstructible_geometricallyReducedFibreLocus
 
 [Tag 0E0B](https://stacks.math.columbia.edu/tag/0E0B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean, line 824](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean#L824). The attribute's comment: “total space”.
+**`AlgebraicGeometry.Space.isReduced_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean, line 824](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean#L824). The attribute's comment: “total space”.
 
 > **Stacks 0E0B.** A proper flat algebraic space over a discrete valuation ring is reduced
 > when its special fibre is reduced.
@@ -131,7 +131,7 @@ public theorem isReduced_of_isReduced_specialFiber
       (fun T : Scheme.{u} => IsReduced T)
 ```
 
-**`AlgebraicGeometry.Space.isReduced_genericFiber_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean, line 968](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean#L968). The attribute's comment: “generic fibre”.
+**`AlgebraicGeometry.Space.isReduced_genericFiber_of_isReduced_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean, line 968](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/Reduced.lean#L968). The attribute's comment: “generic fibre”.
 
 > **Stacks 0E0B.** The generic fibre of a proper flat algebraic space over a discrete
 > valuation ring with reduced special fibre is reduced.
@@ -168,7 +168,7 @@ public theorem isReduced_genericFiber_of_isReduced_specialFiber
 
 [Tag 0E0C](https://stacks.math.columbia.edu/tag/0E0C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_geometricallyReducedFibreLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedOpenLocus.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedOpenLocus.lean#L304). References: EGA IV (12.2.4), “more general”.
+**`AlgebraicGeometry.Space.isOpen_geometricallyReducedFibreLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedOpenLocus.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/GeometricallyReducedOpenLocus.lean#L304). References: EGA IV (12.2.4), “more general”.
 
 > **Stacks 0E0C.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is flat,
 > proper and of finite presentation. Then the set of points of `|Y|` at which the fibre of `f` is
@@ -196,4 +196,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.29, Tag 0E06](https://stacks.math.columbia.edu/tag/0E06)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

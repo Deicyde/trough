@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.15 Auto-associated rings
 
-Section 15.15 of the Stacks Project, [Tag 05GL](https://stacks.math.columbia.edu/tag/05GL). 7 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.15 of the Stacks Project, [Tag 05GL](https://stacks.math.columbia.edu/tag/05GL). 7 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05GM, a definition
 
 [Tag 05GM](https://stacks.math.columbia.edu/tag/05GM) in the Stacks Project.
 
-**`IsAutoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L52).
+**`IsAutoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L52).
 
 > **Stacks 05GM.** A commutative ring is *auto-associated* if it is local and its maximal
 > ideal is weakly associated to the ring as a module over itself.
@@ -27,7 +27,7 @@ def IsAutoAssociated (R : Type u) [CommRing R] : Prop
 
 [Tag 05GN](https://stacks.math.columbia.edu/tag/05GN) in the Stacks Project.
 
-**`annihilator_ne_bot_of_isAutoAssociated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L59).
+**`annihilator_ne_bot_of_isAutoAssociated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L59).
 
 > **Stacks 05GN.** Every proper finitely generated ideal in an auto-associated ring has a
 > nonzero annihilator.
@@ -42,7 +42,7 @@ theorem annihilator_ne_bot_of_isAutoAssociated {R : Type u} [CommRing R]
 
 [Tag 05GP](https://stacks.math.columbia.edu/tag/05GP) in the Stacks Project.
 
-**`universallyInjective_iff_injective_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L316).
+**`universallyInjective_iff_injective_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L316).
 
 > **Stacks 05GP.** Over a ring in which every proper finitely generated ideal has a nonzero
 > annihilator, a homomorphism between projective modules is universally injective if and only if it
@@ -61,7 +61,7 @@ theorem universallyInjective_iff_injective_of_projective
 
 [Tag 05GQ](https://stacks.math.columbia.edu/tag/05GQ) in the Stacks Project.
 
-**`annihilator_projective_splitting_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L409).
+**`annihilator_projective_splitting_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L409).
 
 > **Stacks 05GQ.** For a commutative ring `R`, the following are equivalent: every proper
 > finitely generated ideal has a nonzero annihilator; every injection between projective modules is
@@ -92,7 +92,7 @@ theorem annihilator_projective_splitting_tfae {R : Type u} [CommRing R] :
 
 [Tag 05GR](https://stacks.math.columbia.edu/tag/05GR) in the Stacks Project.
 
-**`exists_universallyInjective_nonSplit_freeModule_endomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 834](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L834).
+**`exists_universallyInjective_nonSplit_freeModule_endomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 833](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L833).
 
 > **Stacks 05GR.** Let `R = k[x₁, x₂, …]/(xᵢ²)`. The endomorphism of the countable free
 > `R`-module given on basis vectors by `eᵢ ↦ eᵢ - xᵢ eᵢ₊₁` is injective and universally
@@ -133,14 +133,14 @@ theorem exists_universallyInjective_nonSplit_freeModule_endomorphism
 
 Declarations registered for the tag:
 
-- [`Stacks.DeterminantalRank.injective_iff_rank_eq_and_annihilator_eq_bot`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L561), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/AutoAssociated.lean, line 954](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L954) (StacksFrontier): “(1) iff (2)”.
-- [`Stacks.DeterminantalRank.injective_iff_rank_eq_and_contains_nonZeroDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L622), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/AutoAssociated.lean, line 956](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L956) (StacksFrontier): “(1) iff (3)”.
+- [`Stacks.DeterminantalRank.injective_iff_rank_eq_and_annihilator_eq_bot`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L561), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/AutoAssociated.lean, line 953](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L953) (StacksFrontier): “(1) iff (2)”.
+- [`Stacks.DeterminantalRank.injective_iff_rank_eq_and_contains_nonZeroDivisor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/DeterminantalRank/ExteriorRank.lean#L622), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/AutoAssociated.lean, line 955](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L955) (StacksFrontier): “(1) iff (3)”.
 
 ## Tag 0EWY, a lemma
 
 [Tag 0EWY](https://stacks.math.columbia.edu/tag/0EWY) in the Stacks Project.
 
-**`subsingleton_dual_quotient_range_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 937](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AutoAssociated.lean#L937).
+**`subsingleton_dual_quotient_range_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AutoAssociated.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AutoAssociated.lean#L936).
 
 > **Stacks 0EWY.** The dual of the cokernel of an injective endomorphism of a finite free
 > module is zero.
@@ -160,4 +160,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.15, Tag 05GL](https://stacks.math.columbia.edu/tag/05GL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

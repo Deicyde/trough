@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.123 A regular local ring is a UFD
 
-Section 15.123 of the Stacks Project, [Tag 0FJH](https://stacks.math.columbia.edu/tag/0FJH). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.123 of the Stacks Project, [Tag 0FJH](https://stacks.math.columbia.edu/tag/0FJH). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AFZ, a lemma
 
 [Tag 0AFZ](https://stacks.math.columbia.edu/tag/0AFZ) in the Stacks Project.
 
-**`IsRegularLocalRing.pic_subsingleton_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean#L306).
+**`IsRegularLocalRing.pic_subsingleton_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean#L306).
 
 > **Stacks 0AFZ.** The Picard group of the localization of a regular local ring at an
 > element is trivial.
@@ -29,7 +29,7 @@ public theorem pic_subsingleton_localization_away
 
 [Tag 0AG0](https://stacks.math.columbia.edu/tag/0AG0) in the Stacks Project.
 
-**`IsRegularLocalRing.uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean#L549). References: SGA 2 XI (3.13); SGA 6 X (7.8), “more general”; SGA 7 VIII (6.5.1), “special case”.
+**`IsRegularLocalRing.uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/UniqueFactorization.lean#L550). References: SGA 2 XI (3.13); SGA 6 X (7.8), “more general”; SGA 7 VIII (6.5.1), “special case”.
 
 > **Stacks 0AG0.** A regular local ring is a unique factorization domain.
 
@@ -43,7 +43,7 @@ public theorem uniqueFactorizationMonoid
 
 [Tag 0DLQ](https://stacks.math.columbia.edu/tag/0DLQ) in the Stacks Project.
 
-**`ValuationRing.subsingleton_pic_genericFibre_of_isRegular_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/PicardGenericFibre.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/PicardGenericFibre.lean#L297). References: SGA 6 X (7.8), “special case”.
+**`ValuationRing.subsingleton_pic_genericFibre_of_isRegular_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/PicardGenericFibre.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/PicardGenericFibre.lean#L297). References: SGA 6 X (7.8), “special case”.
 
 > **Stacks 0DLQ.** Let `R` be a valuation ring with fraction field `K`, and let `A` be a
 > flat local `R`-algebra, essentially of finite type, whose special fibre is regular. Then the
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.123, Tag 0FJH](https://stacks.math.columbia.edu/tag/0FJH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

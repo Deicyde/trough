@@ -8,7 +8,7 @@ proof: formalized
 
 # Bernoulli polynomials, polylogarithms and Clausen functions: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/index.html).
 
 Bernoulli and Euler polynomials and their generating-function identities, Berndt's φ_r and power-difference series, Clausen functions, the inverse tangent integral and dilogarithm identities; results whose content is values of ζ, Dirichlet L or β functions belong to NumberTheory.
 
@@ -25,7 +25,7 @@ and $T(x) = P(x) + F(x)$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry17Sec.ramanujan_part1_ch9_entry17_sec`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry17Sec.lean, line 1372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry17Sec.lean#L1372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/index.html#ramanujan-part1-ch9-entry17-sec).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry17Sec.ramanujan_part1_ch9_entry17_sec`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch9Entry17Sec.lean, line 1372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch9Entry17Sec.lean#L1372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/index.html#ramanujan-part1-ch9-entry17-sec).
 
 ## Depends on
 
@@ -34,4 +34,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli polynomials, polylogarithms and Clausen functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen)

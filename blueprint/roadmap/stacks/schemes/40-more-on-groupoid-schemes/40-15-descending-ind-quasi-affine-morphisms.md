@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.15 Descending ind-quasi-affine morphisms
 
-Section 40.15 of the Stacks Project, [Tag 0APG](https://stacks.math.columbia.edu/tag/0APG). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 40.15 of the Stacks Project, [Tag 0APG](https://stacks.math.columbia.edu/tag/0APG). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0APH, an equation
 
 [Tag 0APH](https://stacks.math.columbia.edu/tag/0APH) in the Stacks Project.
 
-**`AlgebraicGeometry.colimit_sections_equiv_sections_iInter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SectionsOnIntersection.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SectionsOnIntersection.lean#L756).
+**`AlgebraicGeometry.colimit_sections_equiv_sections_iInter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SectionsOnIntersection.lean, line 756](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/SectionsOnIntersection.lean#L756).
 
 > Sections on the intersection of a nonempty directed family of
 > quasi-compact opens of a quasi-separated scheme are the filtered colimit of
@@ -40,7 +40,7 @@ theorem colimit_sections_equiv_sections_iInter
 
 [Tag 0API](https://stacks.math.columbia.edu/tag/0API) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iInter_iso_iInter_in_specΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1166). The attribute's comment: “intersection\_embedding”.
+**`AlgebraicGeometry.exists_iInter_iso_iInter_in_specΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1166). The attribute's comment: “intersection\_embedding”.
 
 > **Stacks Project, Tag 0API.** The canonical map from a nonempty intersection
 > of quasi-compact opens in an ind-quasi-affine scheme to the spectrum of its ring
@@ -73,7 +73,7 @@ theorem exists_iInter_iso_iInter_in_specΓ
             (identityToΓSpec.app Z).toHom
 ```
 
-**`AlgebraicGeometry.isOpen_image_toΓSpec_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1249). The attribute's comment: “open\_image”.
+**`AlgebraicGeometry.isOpen_image_toΓSpec_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1249). The attribute's comment: “open\_image”.
 
 > **Stacks Project, Tag 0API (open image).** The canonical map from an intersection of a
 > nonempty family of quasi-compact opens in an ind-quasi-affine scheme to the spectrum of its
@@ -96,7 +96,7 @@ theorem isOpen_image_toΓSpec_of_isOpen
 
 [Tag 0APJ](https://stacks.math.columbia.edu/tag/0APJ) in the Stacks Project.
 
-**`AlgebraicGeometry.sectionsRingOnSubset_preimage_iInter_iso_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/IndQuasiAffineDescent.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/IndQuasiAffineDescent.lean#L177).
+**`AlgebraicGeometry.sectionsRingOnSubset_preimage_iInter_iso_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/IndQuasiAffineDescent.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/IndQuasiAffineDescent.lean#L177).
 
 > **Stacks Project, Tag 0APJ.** In a cartesian square of schemes over the affine schemes
 > `Spec B ⟶ Spec A`, where `A ⟶ B` is flat, formation of sections over a nonempty intersection of
@@ -124,7 +124,7 @@ theorem sectionsRingOnSubset_preimage_iInter_iso_pushout
               exact Set.mem_preimage.mpr (hU (Set.mem_preimage.mp hx))))
 ```
 
-**`AlgebraicGeometry.isPushout_sectionsRingOnSubset_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/FlatBaseChangeOnIntersection.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/FlatBaseChangeOnIntersection.lean#L315).
+**`AlgebraicGeometry.isPushout_sectionsRingOnSubset_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/FlatBaseChangeOnIntersection.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/FlatBaseChangeOnIntersection.lean#L315).
 
 > Let
 > ```
@@ -166,7 +166,7 @@ theorem isPushout_sectionsRingOnSubset_of_flat {A R : CommRingCat.{u}} {Y X : Sc
 
 [Tag 0APK](https://stacks.math.columbia.edu/tag/0APK) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isIndQuasiAffineHom_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean#L119). References: SGA 1 VIII (7.9), “partial”; SGA 3 IX (2.3), “partial”; SGA 3 VIII (1.7.2), “more general”; SGA 3 X (5.4), “more general”; SGA 3 XI (4.2), “partial”; SGA 3 XXIV (3.11.2), “partial”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isIndQuasiAffineHom_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean#L119). References: SGA 1 VIII (7.9), “partial”; SGA 3 IX (2.3), “partial”; SGA 3 VIII (1.7.2), “more general”; SGA 3 X (5.4), “more general”; SGA 3 XI (4.2), “partial”; SGA 3 XXIV (3.11.2), “partial”.
 
 > **[Stacks, Tag 0APK](https://stacks.math.columbia.edu/tag/0APK), Gabber's theorem.** Let `S`
 > be a scheme, let `{X i ⟶ S}` be an fpqc covering family, indexed by a type in an arbitrary
@@ -188,7 +188,7 @@ theorem isFamilyEffective_of_forall_isIndQuasiAffineHom_of_anyIndex {ι : Type v
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isIndQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean#L144). The attribute's comment: “the case of an affine base”. References: SGA 1 VIII (7.9), “special case”; SGA 3 IX (2.3), “partial”; SGA 3 VIII (1.7.2), “(ii), special case”; SGA 3 X (5.4), “special case”; SGA 3 XXIV (3.11.2), “partial”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_forall_isIndQuasiAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/IndQuasiAffineFpqcEffective.lean#L144). The attribute's comment: “the case of an affine base”. References: SGA 1 VIII (7.9), “special case”; SGA 3 IX (2.3), “partial”; SGA 3 VIII (1.7.2), “(ii), special case”; SGA 3 X (5.4), “special case”; SGA 3 XXIV (3.11.2), “partial”.
 
 > **[Stacks, Tag 0APK](https://stacks.math.columbia.edu/tag/0APK) over an affine base.** Let `S`
 > be an affine scheme, let `{X i ⟶ S}` be an fpqc covering family and let `D` be a descent datum
@@ -207,7 +207,7 @@ theorem isFamilyEffective_of_forall_isIndQuasiAffineHom {ι : Type u} {S : Schem
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_isIndQuasiAffineHom_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L170). The attribute's comment: “the case of a one-member covering by a surjective flat quasi-compact morphism, over an arbitrary base”. References: SGA 1 VIII (7.8), “partial”; SGA 1 VIII (7.9), “partial”; SGA 3 X (5.4), “special case”; SGA 3 XI (4.2), “more general”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_isIndQuasiAffineHom_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/SeparatedQuasiFiniteSchemeDescent.lean#L170). The attribute's comment: “the case of a one-member covering by a surjective flat quasi-compact morphism, over an arbitrary base”. References: SGA 1 VIII (7.8), “partial”; SGA 1 VIII (7.9), “partial”; SGA 3 X (5.4), “special case”; SGA 3 XI (4.2), “more general”.
 
 > **Gabber's effectivity for ind-quasi-affine descent data along a single quasi-compact fpqc
 > covering.** A descent datum relative to a surjective, flat, quasi-compact morphism `f : X ⟶ S`
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.15, Tag 0APG](https://stacks.math.columbia.edu/tag/0APG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

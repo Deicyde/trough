@@ -10,7 +10,7 @@ proof: formalized
 
 > Constructs the Jacobian of a compact Riemann surface as the period-lattice quotient of the dual of holomorphic 1-forms, and proves the surrounding theory it needs: the genus as the dimension of the space of holomorphic 1-forms, discreteness and full rank 2g of the period lattice, the Abel-Jacobi map and its injectivity in positive genus, functoriality (pushforward, pullback, degree, and the projection formula), Riemann-Roch, Serre duality via Laurent tails, the residue theorem, the Dolbeault-Cech comparison, and finite dimensionality of the first cohomology by a Schwartz/Montel argument. The headline no-hack guard is that the genus vanishes exactly when the surface is homeomorphic to the sphere.
 
-*Quoted from the card [LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/jacobian-diffgeo.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/jacobian-diffgeo.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,11 +18,11 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`genus_eq_zero_iff_homeo`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.html#genus_eq_zero_iff_homeo) (theorem; a main declaration), declared in [LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.lean, line 128](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.lean#L128): “A compact connected Riemann surface has genus zero if and only if it is homeomorphic to the 2-sphere.”
-- [`Jacobian.ofCurve_inj`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/CechCount/Final.html#Jacobian.ofCurve_inj) (theorem; a main declaration), declared in [LeanPool/JacobianDiffgeo/CechCount/Final.lean, line 120](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JacobianDiffgeo/CechCount/Final.lean#L120): “The Abel-Jacobi map of a compact Riemann surface of positive genus is injective: two points with the same image coincide.”
-- [`Jacobian.pushforward_pullback`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/Challenge.html#Jacobian.pushforward_pullback) (lemma), declared in [LeanPool/JacobianDiffgeo/Challenge.lean, line 147](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JacobianDiffgeo/Challenge.lean#L147): “For a non-constant holomorphic map between compact Riemann surfaces, the pushforward composed with the pullback on Jacobians is multiplication by the degree of the map.”
+- [`genus_eq_zero_iff_homeo`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.html#genus_eq_zero_iff_homeo) (theorem; a main declaration), declared in [LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.lean, line 128](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/JacobianDiffgeo/GenusSphereHeadline/Basic.lean#L128): “A compact connected Riemann surface has genus zero if and only if it is homeomorphic to the 2-sphere.”
+- [`Jacobian.ofCurve_inj`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/CechCount/Final.html#Jacobian.ofCurve_inj) (theorem; a main declaration), declared in [LeanPool/JacobianDiffgeo/CechCount/Final.lean, line 120](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/JacobianDiffgeo/CechCount/Final.lean#L120): “The Abel-Jacobi map of a compact Riemann surface of positive genus is injective: two points with the same image coincide.”
+- [`Jacobian.pushforward_pullback`](https://leanpool.github.io/lean-pool/LeanPool/JacobianDiffgeo/Challenge.html#Jacobian.pushforward_pullback) (lemma), declared in [LeanPool/JacobianDiffgeo/Challenge.lean, line 147](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/JacobianDiffgeo/Challenge.lean#L147): “For a non-constant holomorphic map between compact Riemann surfaces, the pushforward composed with the pullback on Jacobians is multiplication by the degree of the map.”
 
 ## Project
 
@@ -32,9 +32,9 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 14H40, 30F30, 32G20.
-- In Lean Pool: [LeanPool/JacobianDiffgeo](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JacobianDiffgeo), from the card [LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/jacobian-diffgeo.yaml).
+- In Lean Pool: [LeanPool/JacobianDiffgeo](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/JacobianDiffgeo), from the card [LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/jacobian-diffgeo.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/jacobian-diffgeo.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/JacobianDiffgeo](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/JacobianDiffgeo)
+- [Lean Pool at 701389c0: LeanPool/projects/jacobian-diffgeo.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/jacobian-diffgeo.yaml)
+- [Lean Pool at 701389c0: LeanPool/JacobianDiffgeo](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/JacobianDiffgeo)

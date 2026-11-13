@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.6 Functoriality
 
-Section 92.6 of the Stacks Project, [Tag 08QL](https://stacks.math.columbia.edu/tag/08QL). 5 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.6 of the Stacks Project, [Tag 08QL](https://stacks.math.columbia.edu/tag/08QL). 5 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08QN, an equation
 
 [Tag 08QN](https://stacks.math.columbia.edu/tag/08QN) in the Stacks Project.
 
-**`Stacks.ChaoticSite.isTransport_coefficientSquareComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L396). The attribute's comment: “change-of-coefficients square: the comparison is the canonical one”.
+**`Stacks.ChaoticSite.isTransport_coefficientSquareComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L396). The attribute's comment: “change-of-coefficients square: the comparison is the canonical one”.
 
 > **The comparison is the canonical one.** It is the identity of the restriction functor along
 > `C ⥤ *`, not some other automorphism of it; this is what makes
@@ -26,7 +26,7 @@ theorem isTransport_coefficientSquareComparison :
     Stacks.IsTransport (coefficientSquareComparison.{w} C φ).hom
 ```
 
-**`Stacks.ChaoticSite.coefficientSquare_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L475). The attribute's comment: “the change-of-coefficients square of constant-coefficient ringed topoi”.
+**`Stacks.ChaoticSite.coefficientSquare_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L475). The attribute's comment: “the change-of-coefficients square of constant-coefficient ringed topoi”.
 
 > **The change-of-coefficients square commutes.** The structure map of the one composite,
 > transported along the adjoint mate of the canonical comparison, is the structure map of the
@@ -40,7 +40,7 @@ theorem coefficientSquare_commutes :
       (coefficientSquareComparison.{w} C φ)
 ```
 
-**`Stacks.ChaoticSite.isTransport_functorialitySquareComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L552). The attribute's comment: “functoriality triangle: the comparison is the canonical one”.
+**`Stacks.ChaoticSite.isTransport_functorialitySquareComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L552). The attribute's comment: “functoriality triangle: the comparison is the canonical one”.
 
 > **The comparison is the canonical one**, hence a transport: it is built from the
 > identification `u ⋙ star = star` of the two functors to the point and nothing else.
@@ -50,7 +50,7 @@ theorem isTransport_functorialitySquareComparison :
     Stacks.IsTransport (functorialitySquareComparison.{w} C D u R).hom
 ```
 
-**`Stacks.ChaoticSite.functorialitySquare_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L574). The attribute's comment: “the functoriality triangle of constant-coefficient ringed topoi”.
+**`Stacks.ChaoticSite.functorialitySquare_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedSquares.lean#L574). The attribute's comment: “the functoriality triangle of constant-coefficient ringed topoi”.
 
 > **The functoriality triangle commutes.** Every edge is a transport, so the structure map of
 > `π_C ∘ g` transported along the adjoint mate of the canonical comparison is the structure map of
@@ -68,7 +68,7 @@ theorem functorialitySquare_commutes :
         (constantProjection.{w} D R).fSharp
 ```
 
-**`CommAlgCat.baseChangeAugmentation_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L84). The attribute's comment: “base-change augmentation on a pure tensor”.
+**`CommAlgCat.baseChangeAugmentation_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L84). The attribute's comment: “base-change augmentation on a pure tensor”.
 
 > The augmentation of `A' ⊗_A P` sends `a' ⊗ p` to `a' · b(α(p))`.
 
@@ -78,7 +78,7 @@ theorem baseChangeAugmentation_tmul (X : Over B) (a' : A') (p : (X.left : Type u
       algebraMap A' (B' : Type u) a' * b (X.hom.hom p)
 ```
 
-**`CommAlgCat.baseChangeMap_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L96). The attribute's comment: “base change of a morphism on a pure tensor”.
+**`CommAlgCat.baseChangeMap_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L96). The attribute's comment: “base change of a morphism on a pure tensor”.
 
 > Extension of scalars of a morphism `f` of augmented algebras sends `a' ⊗ p` to `a' ⊗ f(p)`.
 
@@ -87,7 +87,7 @@ theorem baseChangeMap_tmul {X Y : Over B} (f : X ⟶ Y) (a' : A') (p : (X.left :
     baseChangeMap f (a' ⊗ₜ[A] p) = a' ⊗ₜ[A] f.left.hom p
 ```
 
-**`CommAlgCat.isPolynomialAlgebra_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L156). The attribute's comment: “base change preserves polynomial algebras”.
+**`CommAlgCat.isPolynomialAlgebra_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L153). The attribute's comment: “base change preserves polynomial algebras”.
 
 > Extension of scalars takes a polynomial `A`-algebra to a polynomial `A'`-algebra:
 > `A' ⊗_A A[S] = A'[S]`.
@@ -98,7 +98,7 @@ theorem isPolynomialAlgebra_baseChange (P : CommAlgCat.{u} A)
     IsPolynomialAlgebra A' (baseChangeObj (A' := A') P)
 ```
 
-**`CommAlgCat.polynomialBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L180). The attribute's comment: “polynomial-site base change”.
+**`CommAlgCat.polynomialBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L177). The attribute's comment: “polynomial-site base change”.
 
 > The functor of sites `C_{B/A} ⟶ C_{B'/A'}` induced by a commutative square of rings,
 > given by extension of scalars on polynomial algebras augmented to `B`.
@@ -107,7 +107,7 @@ theorem isPolynomialAlgebra_baseChange (P : CommAlgCat.{u} A)
 def polynomialBaseChange : polynomialSite A B ⥤ polynomialSite A' B'
 ```
 
-**`CommAlgCat.polynomialBaseChange_obj_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L186). The attribute's comment: “polynomial-site base change on objects”.
+**`CommAlgCat.polynomialBaseChange_obj_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L183). The attribute's comment: “polynomial-site base change on objects”.
 
 > The augmentation of the image of `X` under `polynomialBaseChange b` is
 > `baseChangeAugmentation b X`.
@@ -118,7 +118,7 @@ theorem polynomialBaseChange_obj_hom (X : polynomialSite A B) :
       CommAlgCat.ofHom (baseChangeAugmentation b X.unop.obj)
 ```
 
-**`CommAlgCat.polynomialBaseChange_map_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L193). The attribute's comment: “polynomial-site base change on morphisms”.
+**`CommAlgCat.polynomialBaseChange_map_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChange.lean#L190). The attribute's comment: “polynomial-site base change on morphisms”.
 
 > The underlying algebra map of the image of `f` under `polynomialBaseChange b` is
 > `baseChangeMap f`.
@@ -129,7 +129,7 @@ theorem polynomialBaseChange_map_left {X Y : polynomialSite A B} (f : X ⟶ Y) :
       CommAlgCat.ofHom (baseChangeMap f.unop.hom)
 ```
 
-**`CommAlgCat.boundedPolynomialBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L92). The attribute's comment: “polynomial-site base change, with the section's footnote in force: the functor between the sites restricted to at most κ variables. The unrestricted version is `CommAlgCat.polynomialBaseChange`”.
+**`CommAlgCat.boundedPolynomialBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L92). The attribute's comment: “polynomial-site base change, with the section's footnote in force: the functor between the sites restricted to at most κ variables. The unrestricted version is `CommAlgCat.polynomialBaseChange`”.
 
 > The base-change functor of sites `C_{B/A} ⟶ C_{B'/A'}`, between the sites restricted to
 > polynomial algebras on at most `κ` variables.
@@ -143,7 +143,7 @@ def boundedPolynomialBaseChange :
 
 [Tag 08QP](https://stacks.math.columbia.edu/tag/08QP) in the Stacks Project.
 
-**`CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L210). The attribute's comment: “a GENERALIZATION of the lemma: the identification `Lπ_!(g^{-1}ℱ') = Lπ'_!(ℱ')` under the weaker hypothesis that the base change `A' ⊗_A P_• ⟶ B'` of the chosen resolution is again a resolution, which is what the source's proof derives from `B ⊗_A^L A' = B'`. The source's own statement is `CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIsoOfTorIndependent`, proved from this one. Both are read at the small model of the footnote-restricted site `C_{B/A}` and through the sections at the point”.
+**`CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L210). The attribute's comment: “a GENERALIZATION of the lemma: the identification `Lπ_!(g^{-1}ℱ') = Lπ'_!(ℱ')` under the weaker hypothesis that the base change `A' ⊗_A P_• ⟶ B'` of the chosen resolution is again a resolution, which is what the source's proof derives from `B ⊗_A^L A' = B'`. The source's own statement is `CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIsoOfTorIndependent`, proved from this one. Both are read at the small model of the footnote-restricted site `C_{B/A}` and through the sections at the point”.
 
 > Let
 > ```
@@ -181,7 +181,7 @@ def leftDerivedPointLowerShriekPolynomialBaseChangeNatIso
         Stacks.ChaoticSite.pointSections AddCommGrpCat.{u}
 ```
 
-**`CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIsoOfTorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L254). The attribute's comment: “the lemma as stated: the identification `Lπ_!(g^{-1}ℱ') = Lπ'_!(ℱ')` from the source's own hypothesis that the square induce a quasi-isomorphism `B ⊗_A^L A' = B'`, written out as vanishing of the positive `Tor_i^A(A', B)` together with bijectivity of `A' ⊗_A B → B'`. Read at the small model of the footnote-restricted site `C_{B/A}` and through the sections at the point; the generalization assuming only that the base-changed augmentation is a resolution is `CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIso`”.
+**`CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIsoOfTorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PolynomialSiteBaseChangeShriek.lean#L254). The attribute's comment: “the lemma as stated: the identification `Lπ_!(g^{-1}ℱ') = Lπ'_!(ℱ')` from the source's own hypothesis that the square induce a quasi-isomorphism `B ⊗_A^L A' = B'`, written out as vanishing of the positive `Tor_i^A(A', B)` together with bijectivity of `A' ⊗_A B → B'`. Read at the small model of the footnote-restricted site `C_{B/A}` and through the sections at the point; the generalization assuming only that the base-changed augmentation is a resolution is `CommAlgCat.leftDerivedPointLowerShriekPolynomialBaseChangeNatIso`”.
 
 > Let
 > ```
@@ -223,7 +223,7 @@ def leftDerivedPointLowerShriekPolynomialBaseChangeNatIsoOfTorIndependent
 
 [Tag 08QQ](https://stacks.math.columbia.edu/tag/08QQ) in the Stacks Project.
 
-**`CommAlgCat.cotangentExtendScalarsComplexMap_eq_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeComplexCounit.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeComplexCounit.lean#L267). The attribute's comment: “the arrow of the lemma is the functoriality map of Tag 08PN: the adjoint map out of extension of scalars is extension of scalars of the B-linear map of Tag 08PN followed by the counit, as an equality of maps of cotangent complexes”.
+**`CommAlgCat.cotangentExtendScalarsComplexMap_eq_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeComplexCounit.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/BaseChangeComplexCounit.lean#L267). The attribute's comment: “the arrow of the lemma is the functoriality map of Tag 08PN: the adjoint map out of extension of scalars is extension of scalars of the B-linear map of Tag 08PN followed by the counit, as an equality of maps of cotangent complexes”.
 
 > **The two shapes of the functoriality map agree, on the cotangent complexes.** The adjoint
 > map `L_{B/A} ⊗_B B' ⟶ L_{B'/A'}` of [Stacks, Tag 08QQ] is extension of scalars along `B → B'` of
@@ -243,86 +243,7 @@ theorem cotangentExtendScalarsComplexMap_eq_counit :
           (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.overDifferentialsBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L250). The attribute's comment: “the step of the proof the source performs by inspection: extension of scalars along B → B' of i^*Ω\_\{𝒪/A} is the restriction of i^*Ω\_\{𝒪'/A'} along the base-change functor of sites of Tag 08QN”.
-
-> **`i^*Ω_{𝒪/A} ⊗_B B' = g^{-1}(i^*Ω_{𝒪'/A'})`, the step the source performs by inspection.**
-> Extension of scalars along `B → B'` of the `B`-module of differentials `B ⊗_P Ω[P⁄A]` is the
-> `B'`-module of differentials of the base-changed algebra `A' ⊗_A P`, naturally in the `A`-algebra
-> `P` augmented to `B`.
-
-```lean
-def overDifferentialsBaseChangeNatIso :
-    overDifferentialsFunctor (A := A) (B := B) ⋙ ModuleCat.extendScalars b.toRingHom ≅
-      baseChangeOver b ⋙ overDifferentialsFunctor (A := A') (B := B')
-```
-
-**`CommAlgCat.quasiIso_cotangentExtendScalarsMooreMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L564). The attribute's comment: “on the alternating-face-map complexes, under ONE carried hypothesis: Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, which Tag 08QI discharges; the source's own hypothesis and its conclusion on THE functoriality map of Tag 08PN are kept”.
-
-> **Stacks 08QQ, on the alternating-face-map complexes.** If the commutative square `A → B`,
-> `A → A'`, `B → B'`, `A' → B'` induces a quasi-isomorphism `B ⊗_A^L A' = B'` — that is, `A'` and
-> `B` are Tor-independent over `A` and `A' ⊗_A B → B'` is bijective — then the functoriality map
-> `L_{B/A} ⊗_B B' ⟶ L_{B'/A'}` of Tag 08PN is a quasi-isomorphism.
->
-> The hypothesis `B ⊗_A^L A' = B'` makes the base change `A' ⊗_A P_• ⟶ B'` of the standard
-> resolution a resolution of `B'` over `A'`, and the functoriality map is the map induced by
-> `A' ⊗_A P_• ⟶ P'_•` read through the identification of `L_{B/A} ⊗_B B'` with the complex of
-> `A' ⊗_A P_•`; Remark 08QI, carried as `CommAlgCat.CotangentComputedByEveryResolution`, inverts
-> that map.
-
-```lean
-theorem quasiIso_cotangentExtendScalarsMooreMap
-    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))
-    (hpush : Function.Bijective (baseChangeUnit b))
-    (hQI : CotangentComputedByEveryResolution A' B') :
-    QuasiIso (cotangentExtendScalarsMooreMap b)
-```
-
-**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L607). The attribute's comment: “on the cotangent complexes, under ONE carried hypothesis: Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, which Tag 08QI discharges; the source's own hypothesis B ⊗\_A^L A' = B' and its conclusion on THE functoriality map of 08PN are kept”.
-
-> **Stacks 08QQ.** If the commutative square `A → B`, `A → A'`, `B → B'`, `A' → B'` induces a
-> quasi-isomorphism `B ⊗_A^L A' = B'`, then the functoriality map
-> `L_{B/A} ⊗_B B' ⟶ L_{B'/A'}` of Tag 08PN is a quasi-isomorphism of cotangent complexes. The terms
-> of `L_{B/A}` are free `B`-modules, so the left-hand side computes `L_{B/A} ⊗_B^L B'`.
-
-```lean
-theorem quasiIso_cotangentExtendScalarsComplexMap
-    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))
-    (hpush : Function.Bijective (baseChangeUnit b))
-    (hQI : CotangentComputedByEveryResolution A' B') :
-    QuasiIso (cotangentExtendScalarsComplexMap b)
-```
-
-**`CommAlgCat.isIso_Q_map_cotangentExtendScalarsComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L628). The attribute's comment: “the lemma as an isomorphism in D(B'): the image of the functoriality map of Tag 08PN under the localization D(B') is invertible. Carries the same single hypothesis, Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, discharged by Tag 08QI”.
-
-> **Stacks 08QQ in the derived category.** Under the hypothesis `B ⊗_A^L A' = B'` the
-> functoriality map becomes an isomorphism `L_{B/A} ⊗_B^L B' ⟶ L_{B'/A'}` in `D(B')`.
-
-```lean
-theorem isIso_Q_map_cotangentExtendScalarsComplexMap
-    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))
-    (hpush : Function.Bijective (baseChangeUnit b))
-    (hQI : CotangentComputedByEveryResolution A' B') :
-    IsIso (DerivedCategory.Q.map (cotangentExtendScalarsComplexMap b))
-```
-
-**`CommAlgCat.cotangentBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L643). The attribute's comment: “the base-change isomorphism itself, as data: an isomorphism in D(B') whose underlying morphism is the functoriality map of Tag 08PN. Carries the same single hypothesis, Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, discharged by Tag 08QI”.
-
-> **Stacks 08QQ, the base-change isomorphism.** The isomorphism
-> `L_{B/A} ⊗_B^L B' ≅ L_{B'/A'}` in `D(B')` whose underlying morphism is the functoriality map of
-> the square.
-
-```lean
-def cotangentBaseChangeIso
-    (hTor : RingTheory.TorIndependence.TorIndependent A A' (B : Type u))
-    (hpush : Function.Bijective (baseChangeUnit b))
-    (hQI : CotangentComputedByEveryResolution A' B') :
-    DerivedCategory.Q.obj
-        (((ModuleCat.extendScalars b.toRingHom).mapHomologicalComplex
-          (ComplexShape.up ℤ)).obj (cotangentComplex.{u, u} A B)) ≅
-      DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')
-```
-
-**`CommAlgCat.quasiIso_cotangentExtendScalarsMooreMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L57). The attribute's comment: “on the alternating-face-map complexes: under the source's own hypothesis and with no other, the functoriality map of Tag 08PN is a quasi-isomorphism”.
+**`CommAlgCat.quasiIso_cotangentExtendScalarsMooreMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L57). The attribute's comment: “on the alternating-face-map complexes: under the source's own hypothesis and with no other, the functoriality map of Tag 08PN is a quasi-isomorphism”.
 
 > **Stacks 08QQ on the Moore complexes.** If the square induces `B ⊗_A^L A' = B'`, the
 > functoriality map of Tag 08PN is a quasi-isomorphism of the alternating face map complexes.
@@ -336,7 +257,7 @@ theorem quasiIso_cotangentExtendScalarsMooreMap_unconditional
     QuasiIso (cotangentExtendScalarsMooreMap b)
 ```
 
-**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L70). The attribute's comment: “on the cotangent complexes, under the source's own hypothesis B ⊗\_A^L A' = B' and no other: THE functoriality map of Tag 08PN is a quasi-isomorphism”.
+**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L70). The attribute's comment: “on the cotangent complexes, under the source's own hypothesis B ⊗\_A^L A' = B' and no other: THE functoriality map of Tag 08PN is a quasi-isomorphism”.
 
 > **Stacks 08QQ.** If the commutative square `A → B`, `A → A'`, `B → B'`, `A' → B'` induces a
 > quasi-isomorphism `B ⊗_A^L A' = B'`, then the functoriality map `L_{B/A} ⊗_B B' ⟶ L_{B'/A'}` of
@@ -351,7 +272,7 @@ theorem quasiIso_cotangentExtendScalarsComplexMap_unconditional
     QuasiIso (cotangentExtendScalarsComplexMap b)
 ```
 
-**`CommAlgCat.isIso_Q_map_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L82). The attribute's comment: “the lemma as an isomorphism in D(B'): the image of the functoriality map of Tag 08PN under the localization D(B') is invertible, under the source's own hypothesis and no other”.
+**`CommAlgCat.isIso_Q_map_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L82). The attribute's comment: “the lemma as an isomorphism in D(B'): the image of the functoriality map of Tag 08PN under the localization D(B') is invertible, under the source's own hypothesis and no other”.
 
 > **Stacks 08QQ in the derived category.** Under the hypothesis `B ⊗_A^L A' = B'` the
 > functoriality map becomes an isomorphism `L_{B/A} ⊗_B^L B' ⟶ L_{B'/A'}` in `D(B')`.
@@ -363,7 +284,7 @@ theorem isIso_Q_map_cotangentExtendScalarsComplexMap_unconditional
     IsIso (DerivedCategory.Q.map (cotangentExtendScalarsComplexMap b))
 ```
 
-**`CommAlgCat.cotangentBaseChangeIsoUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L95). The attribute's comment: “the base-change isomorphism itself, as data: an isomorphism in D(B') whose underlying morphism is the functoriality map of Tag 08PN, under the source's own hypothesis and no other”.
+**`CommAlgCat.cotangentBaseChangeIsoUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L95). The attribute's comment: “the base-change isomorphism itself, as data: an isomorphism in D(B') whose underlying morphism is the functoriality map of Tag 08PN, under the source's own hypothesis and no other”.
 
 > **Stacks 08QQ, the base-change isomorphism.** The isomorphism
 > `L_{B/A} ⊗_B^L B' ≅ L_{B'/A'}` in `D(B')` whose underlying morphism is the functoriality map of
@@ -379,7 +300,7 @@ def cotangentBaseChangeIsoUnconditional
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L395). The attribute's comment: “the lemma, with the arrow the source names: under the source's own hypothesis that the square induce a quasi-isomorphism B ⊗\_A^L A' = B' — written out as vanishing of the positive Tor\_i^A(A', B) together with bijectivity of A' ⊗\_A B → B' — THE functoriality map of Tag 08PN induces an isomorphism L\_\{B/A} ⊗^L\_B B' ≅ L\_\{B'/A'} in D(B'), the derived tensor product being the chapter's total derived extension-of-scalars functor. That the underlying morphism is that functoriality map is CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso\_hom below. No hypothesis beyond the source's is carried: Remark 08QI is proved, not assumed (CommAlgCat.cotangentComputedByEveryResolution)”.
+**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L395). The attribute's comment: “the lemma, with the arrow the source names: under the source's own hypothesis that the square induce a quasi-isomorphism B ⊗\_A^L A' = B' — written out as vanishing of the positive Tor\_i^A(A', B) together with bijectivity of A' ⊗\_A B → B' — THE functoriality map of Tag 08PN induces an isomorphism L\_\{B/A} ⊗^L\_B B' ≅ L\_\{B'/A'} in D(B'), the derived tensor product being the chapter's total derived extension-of-scalars functor. That the underlying morphism is that functoriality map is CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso\_hom below. No hypothesis beyond the source's is carried: Remark 08QI is proved, not assumed (CommAlgCat.cotangentComputedByEveryResolution)”.
 
 > **[Stacks, Tag 08QQ].** Let
 > ```
@@ -401,8 +322,8 @@ def cotangentBaseChangeIsoUnconditional
 > (`CommAlgCat.derivedExtensionScalarsCotangentComplexIso`), and on that the functoriality map of
 > [Stacks, Tag 08PN] after extension of scalars is
 > `CommAlgCat.cotangentExtendScalarsComplexMap`, a quasi-isomorphism by
-> `CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap`. That the isomorphism built here is
-> induced by the functoriality map and not merely some isomorphism between the two objects is
+> `CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`. That the isomorphism built
+> here is induced by the functoriality map and not merely some isomorphism between the two objects is
 > `CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`.
 
 ```lean
@@ -414,7 +335,7 @@ def derivedCotangentComplexBaseChangeFunctorialityIso
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L412). The attribute's comment: “that the isomorphism is induced by THE functoriality map of Tag 08PN: its underlying morphism in D(B') is the image of the chain-level map CommAlgCat.cotangentExtendScalarsComplexMap, read after the canonical identification of L\_\{B/A} ⊗^L\_B B' with the degreewise base change”.
+**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L412). The attribute's comment: “that the isomorphism is induced by THE functoriality map of Tag 08PN: its underlying morphism in D(B') is the image of the chain-level map CommAlgCat.cotangentExtendScalarsComplexMap, read after the canonical identification of L\_\{B/A} ⊗^L\_B B' with the degreewise base change”.
 
 > **The isomorphism of Tag 08QQ is the one the functoriality map induces.** Its underlying
 > morphism is the image in `D(B')` of `CommAlgCat.cotangentExtendScalarsComplexMap` — the
@@ -434,7 +355,7 @@ theorem derivedCotangentComplexBaseChangeFunctorialityIso_hom
 
 [Tag 08SB](https://stacks.math.columbia.edu/tag/08SB) in the Stacks Project.
 
-**`CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareFactoringThroughBase.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SquareFactoringThroughBase.lean#L180). The attribute's comment: “the conclusion of the remark: the induced map on cotangent complexes is homotopic to zero. The claim of the remark itself, that the functoriality map of standard resolutions is homotopic to the composition through `κ`, is `CommAlgCat.eqvGen_homotopy_squareResolutionRingMap_baseMap` of `StacksFrontier.Cotangent.SquareResolutionBaseHomotopy`; the proof here does not pass through it, factoring the square through the identity of `A'` instead.”.
+**`CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareFactoringThroughBase.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SquareFactoringThroughBase.lean#L181). The attribute's comment: “the conclusion of the remark: the induced map on cotangent complexes is homotopic to zero. The claim of the remark itself, that the functoriality map of standard resolutions is homotopic to the composition through `κ`, is `CommAlgCat.eqvGen_homotopy_squareResolutionRingMap_baseMap` of `StacksFrontier.Cotangent.SquareResolutionBaseHomotopy`; the proof here does not pass through it, factoring the square through the identity of `A'` instead.”.
 
 > **Stacks Project, Tag 08SB.** Let `A → A'`, `B → B'` be a commutative square of ring maps
 > compatible with the algebra structures `A → B` and `A' → B'`. If there is a ring map
@@ -450,7 +371,7 @@ public theorem nonempty_homotopy_squareCotangentComplexMap_zero
     Nonempty (Homotopy (squareCotangentComplexMap.{u, v, u} sq) 0)
 ```
 
-**`CommAlgCat.cotangentTermDifferential_squareResolutionRingBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean#L295). The attribute's comment: “the remark's observation that the composition through `κ` induces the zero map on differentials, read degreewise on the pure differentials `1 ⊗ d p` which generate the terms of the cotangent complex.”.
+**`CommAlgCat.cotangentTermDifferential_squareResolutionRingBaseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean#L295). The attribute's comment: “the remark's observation that the composition through `κ` induces the zero map on differentials, read degreewise on the pure differentials `1 ⊗ d p` which generate the terms of the cotangent complex.”.
 
 > The composition `P_• → B → A' → P'_•` lands in the image of `A'`, so it kills differentials:
 > the pure differential `1 ⊗ d` of each of its values vanishes. This is the step by which the
@@ -459,13 +380,13 @@ public theorem nonempty_homotopy_squareCotangentComplexMap_zero
 
 ```lean
 public theorem cotangentTermDifferential_squareResolutionRingBaseMap
-    (sq : AlgebraSquare.{u, v, u} A A' B B') (κ : B →+* A') (n : SimplexCategoryᵒᵖ)
+    (κ : B →+* A') (n : SimplexCategoryᵒᵖ)
     (p : (standardResolution.{u, max u v} A B).left.obj n) :
     cotangentTermDifferential.{u, max u v} A' B' n
-      ((squareResolutionRingBaseMap.{u, v} sq κ).app n p) = 0
+      ((squareResolutionRingBaseMap.{u, v} (B' := B') κ).app n p) = 0
 ```
 
-**`CommAlgCat.eqvGen_homotopy_squareResolutionRingMap_baseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean#L376). The attribute's comment: “the claim of the remark: the functoriality map of standard resolutions is homotopic to the composition through `κ`. The consequence drawn from it, that the induced map of cotangent complexes is homotopic to zero, is `CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_zero`.”.
+**`CommAlgCat.eqvGen_homotopy_squareResolutionRingMap_baseMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/SquareResolutionBaseHomotopy.lean#L376). The attribute's comment: “the claim of the remark: the functoriality map of standard resolutions is homotopic to the composition through `κ`. The consequence drawn from it, that the induced map of cotangent complexes is homotopic to zero, is `CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_zero`.”.
 
 > **Stacks Project, Tag 08SB.** Let `A → A'`, `B → B'` be a commutative square of ring maps
 > compatible with the algebra structures `A → B` and `A' → B'`, and let `κ : B → A'` be a ring map
@@ -481,14 +402,14 @@ public theorem eqvGen_homotopy_squareResolutionRingMap_baseMap
     Relation.EqvGen
       (fun f g : resolutionRing.{u, v} A B ⟶ resolutionRing.{u, v} A' B' =>
         Nonempty (SimplicialObject.Homotopy f g))
-      (squareResolutionRingMap.{u, v} sq) (squareResolutionRingBaseMap.{u, v} sq κ)
+      (squareResolutionRingMap.{u, v} sq) (squareResolutionRingBaseMap.{u, v} (B' := B') κ)
 ```
 
 ## Tag 08SC, a lemma
 
 [Tag 08SC](https://stacks.math.columbia.edu/tag/08SC) in the Stacks Project.
 
-**`CommAlgCat.cotangentComplexProductMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ProductDecomposition.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ProductDecomposition.lean#L460). The attribute's comment: “the canonical map `L_{B×C/A} → L_{B/A} ⊕ L_{C/A}` of the lemma, at chain level: the pair of the functoriality maps of the two projections, whose `DerivedCategory.Q` is the map in `D(B × C)` of the statement. That this map is an isomorphism in `D(B × C)` is `CommAlgCat.isIso_Q_map_cotangentComplexProductMap` of `StacksFrontier/Cotangent/ProductDecompositionBase.lean`, over an arbitrary base”.
+**`CommAlgCat.cotangentComplexProductMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ProductDecomposition.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ProductDecomposition.lean#L460). The attribute's comment: “the canonical map `L_{B×C/A} → L_{B/A} ⊕ L_{C/A}` of the lemma, at chain level: the pair of the functoriality maps of the two projections, whose `DerivedCategory.Q` is the map in `D(B × C)` of the statement. That this map is an isomorphism in `D(B × C)` is `CommAlgCat.isIso_Q_map_cotangentComplexProductMap` of `StacksFrontier/Cotangent/ProductDecompositionBase.lean`, over an arbitrary base”.
 
 > **The canonical map of [Stacks, Tag 08SC].** For ring maps `A → B` and `A → C`, the pair of
 > the functoriality maps of the two projections `B × C → B` and `B × C → C` is a map of complexes of
@@ -510,7 +431,7 @@ public noncomputable def cotangentComplexProductMap :
           (ComplexShape.up ℤ)).obj (cotangentComplex.{u, v} A C))
 ```
 
-**`CommAlgCat.isIso_Q_map_cotangentComplexProductMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ProductDecompositionBase.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ProductDecompositionBase.lean#L179). The attribute's comment: “the lemma: for ring maps `A → B` and `A → C` the canonical map `L_{B×C/A} → L_{B/A} ⊕ L_{C/A}` -- the pair of the functoriality maps of the two projections, `CommAlgCat.cotangentComplexProductMap` -- is an isomorphism in `D(B × C)`, over an arbitrary base `A`. The chain-level form, that the map is a quasi-isomorphism, is `CommAlgCat.quasiIso_cotangentComplexProductMap`”.
+**`CommAlgCat.isIso_Q_map_cotangentComplexProductMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ProductDecompositionBase.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/ProductDecompositionBase.lean#L179). The attribute's comment: “the lemma: for ring maps `A → B` and `A → C` the canonical map `L_{B×C/A} → L_{B/A} ⊕ L_{C/A}` -- the pair of the functoriality maps of the two projections, `CommAlgCat.cotangentComplexProductMap` -- is an isomorphism in `D(B × C)`, over an arbitrary base `A`. The chain-level form, that the map is a quasi-isomorphism, is `CommAlgCat.quasiIso_cotangentComplexProductMap`”.
 
 > **Stacks Project, Tag 08SC.** Let `A → B` and `A → C` be ring maps. Then the canonical map
 >
@@ -536,4 +457,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.6, Tag 08QL](https://stacks.math.columbia.edu/tag/08QL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.12 The structure theorem
 
-Section 41.12 of the Stacks Project, [Tag 025A](https://stacks.math.columbia.edu/tag/025A). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.12 of the Stacks Project, [Tag 025A](https://stacks.math.columbia.edu/tag/025A). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 025B, a theorem
 
 [Tag 025B](https://stacks.math.columbia.edu/tag/025B) in the Stacks Project.
 
-**`Algebra.exists_standardEtalePair_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/StructureTheorem.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/StructureTheorem.lean#L42).
+**`Algebra.exists_standardEtalePair_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/StructureTheorem.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/StructureTheorem.lean#L42).
 
 > If `A → B` is an étale local homomorphism of Noetherian local rings, then `B` is isomorphic as
 > an `A`-algebra to the localization of a standard étale `A`-algebra at a prime.
@@ -35,7 +35,7 @@ theorem exists_standardEtalePair_localization
 
 [Tag 039O](https://stacks.math.columbia.edu/tag/039O) in the Stacks Project.
 
-**`Algebra.exists_standardEtalePair_localization_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/UnramifiedStructure.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/UnramifiedStructure.lean#L33). References: SGA 1 I (7.7), “unramified ⇒ quotient”.
+**`Algebra.exists_standardEtalePair_localization_surjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/UnramifiedStructure.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleBasics/UnramifiedStructure.lean#L33). References: SGA 1 I (7.7), “unramified ⇒ quotient”.
 
 > An unramified local algebra over a local ring is a quotient of the localization at a prime of
 > a standard étale algebra.
@@ -54,7 +54,7 @@ theorem exists_standardEtalePair_localization_surjection
 
 [Tag 025C](https://stacks.math.columbia.edu/tag/025C) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L383). The attribute's comment: “the étale local structure theorem”.
+**`AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L383). The attribute's comment: “the étale local structure theorem”.
 
 > **Stacks Project, Tag 0CBJ, étale case.** At a point where the morphism is étale, the
 > immersion of `AlgebraicGeometry.exists_isImmersion_specMap_derivativePair_of_unramifiedAt` may
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.12, Tag 025A](https://stacks.math.columbia.edu/tag/025A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Double commutators of transvections
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html).
 
 ## Elementary transvection
 
@@ -16,7 +16,7 @@ $\tau \in \mathrm{GL}_n(R)$ is an elementary transvection when $\tau = 1 + r e_{
 indices $i \ne j$ and some nonzero $r \in R$, where $e_{ij}$ is the matrix unit with $1$ in
 position $(i, j)$ and $0$ elsewhere.
 
-Formalized by `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.IsElementaryTransvection`, a definition declared in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#is-elementary-transvection).
+Formalized by `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.IsElementaryTransvection`, a definition declared in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#is-elementary-transvection).
 
 ## Petechuk's double commutator question (Kourovka 10.46)
 
@@ -28,7 +28,7 @@ is, $[[\sigma, \tau_1], \tau_2] - 1$ is a nilpotent matrix, where $[x, y] = x y 
 
 In the problem, transvections are read as elementary transvections.
 
-Formalized by `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.doubleCommutatorWithTransvectionsUnipotent`, a definition declared in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#double-commutator-with-transvections-uni).
+Formalized by `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.doubleCommutatorWithTransvectionsUnipotent`, a definition declared in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#double-commutator-with-transvections-uni).
 
 ## Petechuk's double commutator question has a negative answer (Kourovka 10.46)
 
@@ -50,7 +50,7 @@ nonidentity unipotent matrices is nonunipotent.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 10.46 (V. M. Petechuk); resolution: K. Muliarchyk, A counterexample to Kourovka Notebook Problem 10.46: unipotent commutators over noncommutative algebras, preprint (2026), Theorem 1.1 (over R = k⟨x_ij, y_ij⟩ / (XY = YX = I) every nonempty iterated commutator of X with nonidentity unipotent matrices is nonunipotent); the Kourovka Notebook (21st issue) marks 10.46 solved, https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/kourovka_10.46_solution.pdf.
 
-Stated but not proved: `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.doubleCommutatorWithTransvectionsUnipotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#double-commutator-with-transvections-uni-2).
+Stated but not proved: `MathlibExt.GroupTheory.TransvectionCommutatorUnipotentKourovka10Problem46Wanted.doubleCommutatorWithTransvectionsUnipotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TransvectionCommutatorUnipotentKourovka10Problem46Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html#double-commutator-with-transvections-uni-2).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Double commutators of transvections](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/linear-groups/double-commutators-of-transvections)

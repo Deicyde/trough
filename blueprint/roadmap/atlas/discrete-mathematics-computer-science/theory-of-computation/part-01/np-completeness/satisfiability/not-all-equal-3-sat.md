@@ -7,7 +7,7 @@ statement: formalized
 
 # Not-all-equal 3-SAT
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html).
 
 ## NOT-ALL-EQUAL 3-SAT instances
 
@@ -15,7 +15,7 @@ A NOT-ALL-EQUAL 3-SAT instance is a pair $(n, \varphi)$ of
 a natural number $n$, the number of variables, and a CNF formula $\varphi$. The formula is not
 required to have three literals per clause; that is part of well-formedness.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.NaeThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.NaeThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-instance).
 
 ## Well-formed NOT-ALL-EQUAL 3-SAT instances
 
@@ -23,7 +23,7 @@ A NOT-ALL-EQUAL 3-SAT instance $(n, \varphi)$
 is well-formed when every clause of $\varphi$ is a list of exactly three literals, repetitions
 allowed, and every literal $(x, b)$ in it has variable index $x < n$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#well-formed).
 
 ## Not-all-equal satisfiability of an instance
 
@@ -33,7 +33,7 @@ when there are truth values $a_0, \dots, a_{n-1}$ such that, for the assignment 
 $v(x) = a_x$ for $x < n$ and $v(x) = \mathrm{false}$ for $x \ge n$, every clause of $\varphi$
 contains a literal satisfied by $v$ and a literal not satisfied by $v$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.NaeThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.NaeThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-feasible).
 
 ## NOT-ALL-EQUAL 3-SAT as a decision problem
 
@@ -42,7 +42,7 @@ accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring 
 NOT-ALL-EQUAL 3-SAT instance $(n, \varphi)$ that is well-formed and not-all-equal satisfiable.
 Every bitstring that decodes to no instance is rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.naeThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.naeThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-dec).
 
 ## NOT-ALL-EQUAL 3-SAT is NP-complete
 
@@ -54,7 +54,7 @@ reduction to it.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), NOT-ALL-EQUAL 3-SAT; T. J. Schaefer, "The complexity of satisfiability problems" (1978).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.naeThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.NaeThreeSat.naeThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/NaeThreeSatWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html#nae-three-sat-np-complete).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Not-all-equal 3-SAT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/not-all-equal-3-sat)

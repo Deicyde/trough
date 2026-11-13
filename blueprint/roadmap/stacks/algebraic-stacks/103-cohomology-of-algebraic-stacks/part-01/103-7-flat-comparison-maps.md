@@ -1,47 +1,85 @@
 ---
 declaration: section
 origin: cited
-lean: restrictModulePullbackComparison, AlgebraicGeometry.Stack.HasFlatBaseChangeProperty, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_colimit, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit, AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_cokernel, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_initial, AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_colimit
+lean: AlgebraicGeometry.Stack.restrictSheafModulesPullbackComparison, AlgebraicGeometry.Stack.HasFlatBaseChangePropertySheafUnivLE, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_colimit, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit, AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_cokernel, AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_initial, AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_colimit
 statement: formalized
 proof: formalized
 ---
 
 # 103.7 Flat comparison maps
 
-Section 103.7 of the Stacks Project, [Tag 0760](https://stacks.math.columbia.edu/tag/0760). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 103.7 of the Stacks Project, [Tag 0760](https://stacks.math.columbia.edu/tag/0760). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0761, an equation
 
 [Tag 0761](https://stacks.math.columbia.edu/tag/0761) in the Stacks Project.
 
-Declarations registered for the tag:
+**`AlgebraicGeometry.Stack.restrictSheafModulesPullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L287). The attribute's comment: “with `f_{small}^*` the pullback of sheaves of modules along the morphism of ringed topoi of the small étale sites”.
 
-- [`restrictModulePullbackComparison`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=restrictModulePullbackComparison#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeProperty.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeProperty.lean#L60) (StacksFrontier): “the comparison map `c_φ`”.
+> **Stacks 0761.** The comparison map
+> `c_φ : f_{small}^*(F|_{U'_ét}) ⟶ F|_{U_ét}` of Equation (103.7.0.1) for an étale sheaf `F` of
+> `𝒪_𝒳`-modules, below an arrow `φ : x ⟶ y` of `𝒳` lying over a morphism of schemes
+> `f : U ⟶ U'`. Here `f_{small}^*` is the pullback of modules along the morphism of ringed topoi
+> `(Sh(U_ét), 𝒪_U) ⟶ (Sh(U'_ét), 𝒪_{U'})`, that is `SheafOfModules.pullback` along the morphism
+> of ringed sites `ε_f` of **Stacks 070R (2)**, whose ring map is the map `f_{small}^♯` of
+> **Stacks 06WC**; it includes sheafification.
+>
+> It is `AlgebraicGeometry.Stack.restrictSheafPullbackComparison` (the adjunct, across
+> sheafification on `U_ét`, of the presheaf map
+> `AlgebraicGeometry.Stack.restrictModulePullbackComparison` of Sheaves on Stacks, Equation
+> (96.9.4.1)) read through the identification
+> `AlgebraicGeometry.Stack.sheafifiedPullbackComparisonIso` of the sheafified presheaf pullback
+> with `SheafOfModules.pullback`.
+>
+> This is also **Stacks 06WC**, the comparison map
+> `c_φ : a_{small}^*(F|_{V_ét}) ⟶ F|_{U_ét}` of `𝒪_{U_ét}`-modules of Sheaves on Stacks,
+> Equation (96.9.4.1), for an étale sheaf `F` of modules on `𝒳`: there too `a_{small}^*` is the
+> pullback of sheaves of modules along `ε_a`, the map `a_{small}^♯` being the one of Stacks 070R,
+> and `F|_{V_ét}`, `F|_{U_ét}` are the restrictions of Stacks 06WJ.
+
+```lean
+noncomputable def restrictSheafModulesPullbackComparison
+    (F : SheafOfModules.{u} (ringStructureSheafCore B S hS p hp (etaleTopology B)
+      (etaleTopology_le_topology B))) :
+    (SheafOfModules.pullback.{u} (SmallEtale.smallEtaleStructureMapRing E
+        (smallEtaleBaseMorphism B E h S hS p φ))).obj
+        ((restrictSheafToSmallEtale.{u, v, w, u} B E h S hS p hp y).obj F) ⟶
+      (restrictSheafToSmallEtale.{u, v, w, u} B E h S hS p hp x).obj F
+```
 
 ## Tag 0762, a definition
 
 [Tag 0762](https://stacks.math.columbia.edu/tag/0762) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasFlatBaseChangeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeProperty.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeProperty.lean#L71).
+**`AlgebraicGeometry.Stack.HasFlatBaseChangePropertySheafUnivLE`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L329). The attribute's comment: “for an étale sheaf of modules on a category fibred in groupoids, with `f_{small}^*` the pullback of sheaves of modules”.
 
-> **Stacks 0762.** A presheaf of modules over the structure sheaf of a category fibred in
-> groupoids *has the flat base change property* when the comparison map `c_φ` of Stacks 0761 is an
-> isomorphism for every arrow `φ` of `𝒳` lying over a flat morphism of schemes.
+> **Stacks 0762.** An étale sheaf of `𝒪_𝒳`-modules *has the flat base change property* when the
+> comparison map `c_φ` of **Stacks 0761**, taken with `a_{small}^*` the inverse image of sheaves of
+> modules as the source takes it, is an isomorphism for every arrow `φ` of `𝒳` lying over a flat
+> morphism of schemes. The source calls the name nonstandard.
 >
-> The source calls the name nonstandard.
+> This is the property read in the source's ambient category `Mod(𝒳_étale, 𝒪_𝒳)`. The source
+> takes `𝒳` an algebraic stack; here `𝒳` is any category fibred in groupoids over
+> `(Sch/S)_{fppf}`. The module sections live in any universe `m` with `UnivLE.{u, m}`; the source's
+> case is `m = u`, where `UnivLE.{u, u}` always holds, so this is no extra hypothesis. At `m = u`
+> the comparison map is `AlgebraicGeometry.Stack.restrictSheafModulesPullbackComparison`, whose
+> domain is `SheafOfModules.pullback`, up to the isomorphism of
+> `hasFlatBaseChangePropertySheafUnivLE_iff_isIso_restrictSheafModulesPullbackComparison`.
+> `AlgebraicGeometry.Stack.HasFlatBaseChangeProperty` is the same definition with the inverse image
+> of presheaves of modules, which on an étale sheaf is strictly the stronger demand; the
+> implementation notes of this file say why.
 
 ```lean
-noncomputable abbrev HasFlatBaseChangeProperty {𝒳 : Type v} [Category.{w} 𝒳]
-    (p : 𝒳 ⥤ BigFppfOver B S hS) (hp : p.IsFiberedInGroupoids)
-    (τ : GrothendieckTopology B.Schemes) (hτ : τ ≤ B.topology)
-    (F : PresheafOfModules.{u} (ringStructureSheafCore B S hS p hp τ hτ).obj) : Prop
+noncomputable abbrev HasFlatBaseChangePropertySheafUnivLE
+    (F : SheafOfModules.{m} (ringStructureSheafCore B S hS p hp (etaleTopology B)
+      (etaleTopology_le_topology B))) : Prop
 ```
 
 ## Tag 0764, a lemma
 
 [Tag 0764](https://stacks.math.columbia.edu/tag/0764) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L220). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: a colimit of presheaves of modules with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L220). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: a colimit of presheaves of modules with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (4), for presheaves of modules.** The colimit of a diagram of presheaves
 > of `𝒪_𝒳`-modules each having the flat base change property of **Stacks 0762** again has the flat
@@ -61,7 +99,7 @@ theorem hasFlatBaseChangeProperty_colimit
     HasFlatBaseChangeProperty B E h S hS p hp τ hτ (colimit K)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L237). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the vertex of a colimit cocone on a diagram of presheaves of modules with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L237). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the vertex of a colimit cocone on a diagram of presheaves of modules with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (4), for presheaves of modules**, in the form for an arbitrary colimit
 > cocone: the vertex of a colimit cocone on a diagram of presheaves of `𝒪_𝒳`-modules with the flat
@@ -78,7 +116,7 @@ theorem hasFlatBaseChangeProperty_of_isColimit
     HasFlatBaseChangeProperty B E h S hS p hp τ hτ c.pt
 ```
 
-**`AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L279). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the modules with the flat base change property have colimits”.
+**`AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L279). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the modules with the flat base change property have colimits”.
 
 > The presheaves of modules with the flat base change property are closed under colimits of
 > shape `J`, by `AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit`.
@@ -94,7 +132,7 @@ instance isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves :
       (flatBaseChangeModulePresheaves.{u, v, w} B E h S hS p hp τ hτ) J
 ```
 
-**`AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L279). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: those colimits agree with the colimits of all modules”.
+**`AlgebraicGeometry.Stack.isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L279). The attribute's comment: “part (4), with the ambient category the presheaves of modules rather than the étale sheaves of modules: those colimits agree with the colimits of all modules”.
 
 > The presheaves of modules with the flat base change property are closed under colimits of
 > shape `J`, by `AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_of_isColimit`.
@@ -110,7 +148,7 @@ instance isClosedUnderColimitsOfShape_flatBaseChangeModulePresheaves :
       (flatBaseChangeModulePresheaves.{u, v, w} B E h S hS p hp τ hτ) J
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L298). The attribute's comment: “part (2), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the closure under cokernels asked for by Stacks 0754”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L298). The attribute's comment: “part (2), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the closure under cokernels asked for by Stacks 0754”.
 
 > **Stacks 0764, part (2), for presheaves of modules.** The cokernel of a morphism of
 > presheaves of `𝒪_𝒳`-modules with the flat base change property of **Stacks 0762** has the flat
@@ -128,7 +166,7 @@ theorem hasFlatBaseChangeProperty_cokernel
     HasFlatBaseChangeProperty B E h S hS p hp τ hτ (cokernel α)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_initial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L317). The attribute's comment: “part (2), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the zero object asked for by Stacks 0754”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangeProperty_initial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeColimits.lean#L317). The attribute's comment: “part (2), with the ambient category the presheaves of modules rather than the étale sheaves of modules: the zero object asked for by Stacks 0754”.
 
 > **Stacks 0764, part (2), for presheaves of modules.** An initial presheaf of
 > `𝒪_𝒳`-modules — equivalently, a zero object — has the flat base change property of
@@ -145,7 +183,7 @@ theorem hasFlatBaseChangeProperty_initial
     HasFlatBaseChangeProperty B E h S hS p hp τ hτ F
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L332). The attribute's comment: “part (4), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules, not the inverse image of presheaves of modules used by the part (4) registrations of FlatBaseChangeColimits: a colimit of étale sheaves of modules with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L404). The attribute's comment: “part (4), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules, not the inverse image of presheaves of modules used by the part (4) registrations of FlatBaseChangeColimits: a colimit of étale sheaves of modules with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (4), as the source states it.** The colimit of a diagram of étale sheaves
 > of `𝒪_𝒳`-modules each having the flat base change property of **Stacks 0762** again has the flat
@@ -167,7 +205,7 @@ theorem hasFlatBaseChangePropertySheaf_colimit
     HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp (colimit K)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L378). The attribute's comment: “part (4), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules, not the inverse image of presheaves of modules used by the part (4) registrations of FlatBaseChangeColimits: the vertex of a colimit cocone on a diagram of étale sheaves of modules with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L450). The attribute's comment: “part (4), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules, not the inverse image of presheaves of modules used by the part (4) registrations of FlatBaseChangeColimits: the vertex of a colimit cocone on a diagram of étale sheaves of modules with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (4), as the source states it**, in the form for an arbitrary colimit
 > cocone: the vertex of a colimit cocone on a diagram of étale sheaves of `𝒪_𝒳`-modules with the
@@ -184,7 +222,7 @@ theorem hasFlatBaseChangePropertySheaf_of_isColimit
     HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp c.pt
 ```
 
-**`AlgebraicGeometry.Stack.hasColimitsOfShape_flatBaseChangeEtaleModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L592). The attribute's comment: “part (4), in the source's ambient category Mod(X\_etale, O\_X): the full subcategory of etale sheaves of modules with the flat base change property has colimits”.
+**`AlgebraicGeometry.Stack.hasColimitsOfShape_flatBaseChangeEtaleModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L664). The attribute's comment: “part (4), in the source's ambient category Mod(X\_etale, O\_X): the full subcategory of etale sheaves of modules with the flat base change property has colimits”.
 
 > **Stacks 0764, part (4), as the source states it**: the category of étale sheaves of
 > `𝒪_𝒳`-modules with the flat base change property has the colimits that `Mod(𝒳_étale, 𝒪_𝒳)`
@@ -196,7 +234,7 @@ theorem hasColimitsOfShape_flatBaseChangeEtaleModules :
     HasColimitsOfShape J (flatBaseChangeEtaleModules.{u, v, w} B E h S hS p hp).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.preservesColimitsOfShape_flatBaseChangeEtaleModules_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L608). The attribute's comment: “part (4), in the source's ambient category Mod(X\_etale, O\_X): the colimits of the subcategory agree with the colimits in Mod(X\_etale, O\_X)”.
+**`AlgebraicGeometry.Stack.preservesColimitsOfShape_flatBaseChangeEtaleModules_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafColimits.lean#L680). The attribute's comment: “part (4), in the source's ambient category Mod(X\_etale, O\_X): the colimits of the subcategory agree with the colimits in Mod(X\_etale, O\_X)”.
 
 > **Stacks 0764, part (4), as the source states it**: the colimits of étale sheaves of
 > `𝒪_𝒳`-modules with the flat base change property agree with the colimits of
@@ -207,7 +245,7 @@ theorem preservesColimitsOfShape_flatBaseChangeEtaleModules_ι :
     PreservesColimitsOfShape J (flatBaseChangeEtaleModules.{u, v, w} B E h S hS p hp).ι
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInternalHom.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInternalHom.lean#L153). The attribute's comment: “part (6): for F, G in Mod(𝒳\_étale, 𝒪\_𝒳) with F of finite presentation and G with the flat base change property, the internal Hom 𝓗om\_\{𝒪\_𝒳}(F, G) of Mod(𝒳\_étale, 𝒪\_𝒳) has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInternalHom.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInternalHom.lean#L153). The attribute's comment: “part (6): for F, G in Mod(𝒳\_étale, 𝒪\_𝒳) with F of finite presentation and G with the flat base change property, the internal Hom 𝓗om\_\{𝒪\_𝒳}(F, G) of Mod(𝒳\_étale, 𝒪\_𝒳) has the flat base change property”.
 
 > **Stacks 0764, part (6).** Let `p : 𝒳 ⥤ (Sch/S)_{fppf}` be a category fibred in groupoids and
 > let `F`, `G` be étale sheaves of `𝒪_𝒳`-modules, with `F` of finite presentation on `𝒳_étale`
@@ -229,7 +267,7 @@ theorem hasFlatBaseChangePropertySheaf_etaleInternalHom
     HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp (etaleInternalHom B S hS p hp F G)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInverseImage.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInverseImage.lean#L267). The attribute's comment: “part (1), the whole part, in the source's ambient category of étale sheaves of modules (a\_small^* the inverse image of sheaves of modules), for any 1-morphism f : 𝒳 ⥤ 𝒴 of categories fibred in groupoids over (Sch/S)\_fppf, in particular any morphism of algebraic stacks: the inverse image f^*F of a module F with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInverseImage.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafInverseImage.lean#L267). The attribute's comment: “part (1), the whole part, in the source's ambient category of étale sheaves of modules (a\_small^* the inverse image of sheaves of modules), for any 1-morphism f : 𝒳 ⥤ 𝒴 of categories fibred in groupoids over (Sch/S)\_fppf, in particular any morphism of algebraic stacks: the inverse image f^*F of a module F with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (1), in the source's ambient category.** Let `f : 𝒳 ⥤ 𝒴` be a
 > 1-morphism of categories fibred in groupoids over the big fppf category of `S`, and let `F` be an
@@ -251,7 +289,7 @@ theorem hasFlatBaseChangePropertySheaf_modulePullback
         (etaleTopology_le_topology B)).obj F)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_of_isSmooth_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafSmoothLocal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafSmoothLocal.lean#L120). The attribute's comment: “part (3), the whole part, in the source's ambient category of étale sheaves of modules (a\_small^* the inverse image of sheaves of modules): for a family of smooth 1-morphisms f j : 𝒵 j ⟶ 𝒳 of algebraic stacks with |𝒳| = ⋃ j, |f j|(|𝒵 j|), if each inverse image f j^* F has the flat base change property then so does F”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_of_isSmooth_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafSmoothLocal.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafSmoothLocal.lean#L120). The attribute's comment: “part (3), the whole part, in the source's ambient category of étale sheaves of modules (a\_small^* the inverse image of sheaves of modules): for a family of smooth 1-morphisms f j : 𝒵 j ⟶ 𝒳 of algebraic stacks with |𝒳| = ⋃ j, |f j|(|𝒵 j|), if each inverse image f j^* F has the flat base change property then so does F”.
 
 > **Stacks 0764, part (3), in the source's ambient category.** Let `f j : 𝒵 j ⟶ 𝒳` be a family
 > of smooth 1-morphisms of algebraic stacks over `S` with `|𝒳| = ⋃ j, |f j|(|𝒵 j|)`, and let `F` be
@@ -281,7 +319,7 @@ theorem hasFlatBaseChangePropertySheaf_of_isSmooth_jointlySurjective [UnivLE.{u,
     HasFlatBaseChangePropertySheafUnivLE B E h S hS 𝒳.val.val.p 𝒳.val.isFiberedInGroupoids F
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafTensor.lean, line 816](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafTensor.lean#L816). The attribute's comment: “part (5), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules: the tensor product in Mod(𝒳\_étale, 𝒪\_𝒳) of two modules with the flat base change property has the flat base change property”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafTensor.lean, line 816](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafTensor.lean#L816). The attribute's comment: “part (5), with the ambient category the étale sheaves of modules, as the source states it -- and so with a\_small^* the inverse image of sheaves of modules: the tensor product in Mod(𝒳\_étale, 𝒪\_𝒳) of two modules with the flat base change property has the flat base change property”.
 
 > **Stacks 0764, part (5).** The tensor product, in `Mod(𝒳_étale, 𝒪_𝒳)`, of two étale sheaves of
 > `𝒪_𝒳`-modules with the flat base change property of **Stacks 0762** has the flat base change
@@ -314,7 +352,7 @@ theorem hasFlatBaseChangePropertySheaf_tensor
           (etaleTopology_le_topology B))).obj F).obj G)
 ```
 
-**`AlgebraicGeometry.Stack.isWeakSerreClass_flatBaseChangeEtaleModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafWeakSerre.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafWeakSerre.lean#L215). The attribute's comment: “part (2): the étale sheaves of O\_X-modules with the flat base change property form a weak Serre subcategory of Mod(X\_etale, O\_X), in the form of Stacks 0754 -- strictly full, with a zero object, and closed under kernels, cokernels and extensions. The whole of part (2), in the source's ambient category, with a\_small^* the inverse image of sheaves of modules, and with no hypothesis beyond the source's”.
+**`AlgebraicGeometry.Stack.isWeakSerreClass_flatBaseChangeEtaleModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafWeakSerre.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeSheafWeakSerre.lean#L215). The attribute's comment: “part (2): the étale sheaves of O\_X-modules with the flat base change property form a weak Serre subcategory of Mod(X\_etale, O\_X), in the form of Stacks 0754 -- strictly full, with a zero object, and closed under kernels, cokernels and extensions. The whole of part (2), in the source's ambient category, with a\_small^* the inverse image of sheaves of modules, and with no hypothesis beyond the source's”.
 
 > **Stacks 0764, part (2), as the source states it.** The étale sheaves of `𝒪_𝒳`-modules with
 > the flat base change property of **Stacks 0762** form a weak Serre subcategory of
@@ -352,7 +390,7 @@ theorem isWeakSerreClass_flatBaseChangeEtaleModules :
 
 [Tag 0765](https://stacks.math.columbia.edu/tag/0765) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFlatBaseChangeSheaf.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFlatBaseChangeSheaf.lean#L168). The attribute's comment: “R^i f\_* of a locally quasi-coherent étale module with the flat base change property has the flat base change property, for f quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFlatBaseChangeSheaf.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageFlatBaseChangeSheaf.lean#L187). The attribute's comment: “the whole lemma, in every degree, with the source's hypotheses: f quasi-compact and quasi-separated, F an étale O\_X-module that is locally quasi-coherent with the flat base change property (read on sheaves, as in the source); then every R^i f\_* F, computed in the étale topology, has the flat base change property. Proved by the criterion of Stacks 076Z applied to LQCoh^fbc, all four of its conditions discharged”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact (Stacks 050U) and quasi-separated
 > (Stacks 04YW) 1-morphism of algebraic stacks, and let `ℱ` be an étale sheaf of
@@ -365,6 +403,14 @@ theorem isWeakSerreClass_flatBaseChangeEtaleModules :
 > sections in `Type (u + 1)`, where the higher direct images of Stacks 06WE live, and the source
 > `𝒳` is presented strictly, its structure functor written as the functor of `f` followed by that
 > of `𝒴`.
+>
+> This is the registered form of **Stacks 0765**: the whole lemma, in every degree, with the
+> source's hypotheses and nothing more. The proof is the source's: the criterion of
+> **Stacks 076Z** (`AlgebraicGeometry.Stack.smoothLocalHigherDirectImageCriterion_unconditional`)
+> at the rule `LQCoh^fbc`, whose four conditions are discharged in this file and its imports
+> (**Stacks 06WM**, **Stacks 06WL**, **Stacks 075Y** with **Stacks 0764**, and the affine case).
+> The presheaf-reading statement
+> `AlgebraicGeometry.Stack.hasFlatBaseChangePropertyUnivLE_moduleSheafHigherDirectImage` is untagged.
 
 ```lean
 theorem hasFlatBaseChangePropertySheaf_moduleSheafHigherDirectImage
@@ -396,54 +442,6 @@ theorem hasFlatBaseChangePropertySheaf_moduleSheafHigherDirectImage
         (etaleTopology_le_topology B) i).obj F)
 ```
 
-**`AlgebraicGeometry.Stack.hasFlatBaseChangePropertyUnivLE_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalCriterion.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/HigherDirectImageSmoothLocalCriterion.lean#L582). The attribute's comment: “the whole statement, in every degree and with the source's hypotheses unweakened, granted six named hypotheses: Stacks 076Z quantified over every rule; the weak Serre condition for LQCoh^fbc (Stacks 06WM (1)-(3), Stacks 0764 (2)); Stacks 0764 (1) and (3); Stacks 075Y at section universe u+1; and the affine case (Stacks 075P, Stacks 073K)”.
-
-> **Stacks 0765.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact (**Stacks 050U**) and quasi-separated
-> (**Stacks 04YW**) 1-morphism of algebraic stacks over `S` and let `ℱ` be a sheaf of `𝒪_𝒳`-modules
-> on `𝒳_étale` which is locally quasi-coherent (**Stacks 06WJ**) and has the flat base change
-> property (**Stacks 0762**). Then every higher direct image `Rⁱf_*ℱ`, computed in the étale
-> topology, has the flat base change property.
->
-> The conclusion is `AlgebraicGeometry.Stack.HasFlatBaseChangePropertyHigherDirectImage`: both
-> hypotheses on `ℱ` are the source's, the conclusion is about the flat base change property alone as
-> in the source, and it holds in every degree.
->
-> The route is the source's: the criterion of **Stacks 076Z** at the rule `LQCoh^fbc`, whose
-> conclusion gives local quasi-coherence of `Rⁱf_*ℱ` — which is **Stacks 075Z** — and the flat base
-> change property, of which only the latter is asserted. Five hypotheses are carried, each a clause
-> of that criterion at `LQCoh^fbc` or at the flat base change property alone, and each a result of
-> the source this library does not have:
->
-> * `hcrit` is **Stacks 076Z**, quantified over every rule.
-> * `hserre` is hypothesis (1) for `LQCoh^fbc`, which is parts (1) to (3) of **Stacks 06WM**
->   together with part (2) of **Stacks 0764**.
-> * `hfbcPull` is the flat base change half of hypothesis (2), which is part (1) of **Stacks 0764**;
->   its local quasi-coherence half is **Stacks 06WL** and is proved.
-> * `hconvLqc` and `hconvFbc` are the two halves of the converse of hypothesis (3), namely
->   **Stacks 075Y** at section universe `u + 1` and part (3) of **Stacks 0764**.
-> * `haffine` is hypothesis (4) for `LQCoh^fbc`, which the source proves from **Stacks 075P** and
->   **Stacks 073K**; **Stacks 073K** is proved but the cohomological content of **Stacks 075P** is
->   not.
-
-```lean
-theorem hasFlatBaseChangePropertyUnivLE_moduleSheafHigherDirectImage
-    (hcrit : SmoothLocalHigherDirectImageCriterion.{u, t, s} B S hS)
-    (hserre : StackEtaleModuleRule.IsWeakSerre.{u, t} B S hS
-      (locallyQuasicoherentFlatBaseChangeRule B E h S hS))
-    (hfbcPull : StackEtaleModuleRule.IsStableUnderSmoothPullback.{u, t} B S hS
-      (flatBaseChangePropertyRule B E h S hS))
-    (hconvLqc : StackEtaleModuleRule.IsSmoothLocalConverse.{u, t, s} B S hS
-      (locallyQuasicoherentRule B E h S hS))
-    (hconvFbc : StackEtaleModuleRule.IsSmoothLocalConverse.{u, t, s} B S hS
-      (flatBaseChangePropertyRule B E h S hS))
-    (haffine : StackEtaleModuleRule.PreservesHigherDirectImagesOfAffine.{u, t} B S hS
-      (locallyQuasicoherentFlatBaseChangeRule B E h S hS))
-    {𝒳 𝒴 : AlgebraicStacks.{u, t} B S hS} (f : 𝒳 ⟶ 𝒴)
-    (hqc : IsQuasiCompactMorphism B S hS f)
-    (hqs : AlgebraicStacks.IsQuasiSeparated B S hS f) (i : ℕ) :
-    HasFlatBaseChangePropertyHigherDirectImage B E h S hS f i
-```
-
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -451,4 +449,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.7, Tag 0760](https://stacks.math.columbia.edu/tag/0760)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

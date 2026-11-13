@@ -7,7 +7,7 @@ statement: formalized
 
 # Monochromatic clique packings
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html).
 
 ## Monochromatic clique packings
 
@@ -18,7 +18,7 @@ A finite family $P$ of sets of vertices is a monochromatic $k$-clique packing fo
 sets in $P$ are pairwise disjoint and each of them is a $k$-clique of $G$ or a $k$-clique of
 $G^c$, that is, a set of exactly $k$ vertices spanning a monochromatic copy of $K_k$.
 
-Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.IsMonochromaticCliquePacking`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#is-monochromatic-clique-packing).
+Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.IsMonochromaticCliquePacking`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#is-monochromatic-clique-packing).
 
 ## Burr–Erdős–Spencer leftover value
 
@@ -31,7 +31,7 @@ For $k \ge 2$ and large $n$, Burr, Erdős and Spencer showed that this is the le
 vertices that vertex-disjoint monochromatic copies of $K_k$ can be guaranteed to leave uncovered
 in every two-colouring of the edges of $K_n$.
 
-Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.leftoverValue`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#leftover-value).
+Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.leftoverValue`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#leftover-value).
 
 ## Erdős Problem 1015 in the Burr–Erdős–Spencer form
 
@@ -47,7 +47,7 @@ admits no such packing leaving fewer than $L$ vertices uncovered. In other words
 the least number $f(n, k)$ such that every two-colouring of $K_n$ admits such a packing leaving at
 most $f(n, k)$ vertices uncovered equals $L$.
 
-Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.monochromaticCliquePartitionLeftover`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#monochromatic-clique-partition-leftover).
+Formalized by `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.monochromaticCliquePartitionLeftover`, a definition declared in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#monochromatic-clique-partition-leftover).
 
 ## Burr–Erdős–Spencer theorem on monochromatic clique packings
 
@@ -65,7 +65,7 @@ vertices uncovered.
 
 - T. F. Bloom, Erdős Problems, Problem #1015, https://www.erdosproblems.com/1015 (status SOLVED); resolution: S. A. Burr, P. Erdős and J. H. Spencer, Ramsey theorems for multiple copies of graphs, Trans. Amer. Math. Soc. 209 (1975), 87-99, §5, Theorem 6: if k is given, then for sufficiently large n, f(n, k) = r(k, k - 1) - 1 + rem(n - r(k, k - 1) + 1, k), where f(n, k) is the minimal integer such that any two-coloring of K_n admits vertex-disjoint monochromatic K_k with at most f(n, k) points left over; erdosproblems.com/1015 lists the problem as solved citing this paper, https://users.renyi.hu/~p_erdos/1975-35.pdf.
 
-Stated but not proved: `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.monochromaticCliquePartitionLeftover_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#monochromatic-clique-partition-leftover-2).
+Stated but not proved: `MathlibExt.Combinatorics.MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.monochromaticCliquePartitionLeftover_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MonochromaticCliquePartitionLeftoverErdosProblem1015Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html#monochromatic-clique-partition-leftover-2).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monochromatic clique packings](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-ramsey-theory/monochromatic-clique-packings)

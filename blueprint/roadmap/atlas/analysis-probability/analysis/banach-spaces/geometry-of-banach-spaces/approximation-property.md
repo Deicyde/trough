@@ -7,7 +7,7 @@ statement: formalized
 
 # Approximation property
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html).
 
 ## Approximation property
 
@@ -15,14 +15,14 @@ A normed space has the **approximation property** if, on every compact
 set, the identity operator is a uniform limit of finite-rank continuous
 linear operators.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty`, a definition declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property).
 
 ## Finite-dimensional spaces have the approximation property
 
 Finite-dimensional spaces have the approximation property: the identity
 operator is itself finite-rank.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_finiteDimensional`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-finite-dim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_finiteDimensional`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-finite-dim).
 
 ## Banach spaces with a Schauder basis have the approximation property
 
@@ -33,14 +33,14 @@ identity, and are uniformly bounded by the Banach–Steinhaus theorem
 boundedness gives uniform convergence on compact sets via a finite
 `ε`-net argument.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_schauderBasis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-schauder-b).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_schauderBasis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-schauder-b).
 
 ## Approximation property is invariant under linear isomorphism
 
 The approximation property is preserved under continuous linear
 equivalence: conjugate a finite-rank approximant by the equivalence.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty.of_continuousLinearEquiv`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#of-continuous-linear-equiv).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty.of_continuousLinearEquiv`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#of-continuous-linear-equiv).
 
 ## Approximation property passes to complemented subspaces
 
@@ -49,7 +49,7 @@ continuous projection onto the submodule `F`, restrict a finite-rank
 approximant on the ambient space via `P`. The key point is that `P` fixes
 every point of `F`, so `P (S x) - x = P (S x - x)` for `x ∈ F`.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty.of_complemented`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#of-complemented).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.HasApproximationProperty.of_complemented`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#of-complemented).
 
 ## Separable Hilbert spaces have the approximation property
 
@@ -57,7 +57,7 @@ A Hilbert space with a Hilbert basis indexed by `ℕ` has the approximation
 property, via the associated Schauder basis
 (`HilbertBasis.toSchauderBasis`).
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_hilbertBasis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-hilbert-ba).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ApproximationProperty.hasApproximationProperty_of_hilbertBasis`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/ApproximationProperty.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#has-approximation-property-of-hilbert-ba).
 
 ## Mazur's Problem 153
 
@@ -70,7 +70,7 @@ $$\Bigl| f(x, y) - \sum_{k=1}^n c_k \, f(a_k, y) \, f(x, b_k) \Bigr| \le \vareps
 
 for all $x, y \in [0,1]$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook153Wanted.ScottishBookProblem153Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#scottish-book-problem153-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook153Wanted.ScottishBookProblem153Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#scottish-book-problem153-claim).
 
 ## Negative answer to Mazur's Problem 153
 
@@ -87,7 +87,7 @@ That is, the approximation scheme of Mazur's Problem 153 fails.
 
 - S. Mazur, Problem 153 of the Scottish Book; refuted via P. Enflo's counterexample to the approximation problem in Banach spaces, Acta Math. 130 (1973), 309–317, DOI 10.1007/BF02392270; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015). This is the original bivariate-function form of the problem, distinct from its consequence for the approximation property.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook153Wanted.mazur153_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#mazur153-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook153Wanted.mazur153_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook153Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html#mazur153-refuted).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Approximation property](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/geometry-of-banach-spaces/approximation-property)

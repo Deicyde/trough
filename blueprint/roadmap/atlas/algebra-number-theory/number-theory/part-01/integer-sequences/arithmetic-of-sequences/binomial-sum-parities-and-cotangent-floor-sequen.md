@@ -7,7 +7,7 @@ statement: formalized
 
 # Binomial sum parities and cotangent floor sequences
 
-17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html).
+17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html).
 
 ## Fried's alternating binomial identity
 
@@ -23,7 +23,7 @@ $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2n-2r}{n-k} \binom{n-k}{n-2r+s}
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Lemma 1 (`jis-2026-26.1.8-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.fried_alternating_binomial_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#fried-alternating-binomial-identity).
+Stated but not proved: `MetaMathlibExt.fried_alternating_binomial_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#fried-alternating-binomial-identity).
 
 ## The Bala–Somos parity conjectures
 
@@ -45,7 +45,7 @@ sequence from the coefficients $c(j)$ above.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 8 (`jis-2026-26.1.8-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.bala_somos_partition_parity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#bala-somos-partition-parity).
+Stated but not proved: `MetaMathlibExt.bala_somos_partition_parity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#bala-somos-partition-parity).
 
 ## A diagonal coefficient equal to a signed Franel number
 
@@ -58,7 +58,7 @@ $(-1)^n \sum_{k=0}^{n} \binom{n}{k}^3$ (A000172).
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 2 (`jis-2026-26.1.8-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.coeff_diag_trinomial_product_eq_franel` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#coeff-diag-trinomial-product-eq-franel).
+Stated but not proved: `MetaMathlibExt.coeff_diag_trinomial_product_eq_franel` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#coeff-diag-trinomial-product-eq-franel).
 
 ## Triangular numbers near squares along $\lfloor n\sqrt{2} \rfloor$
 
@@ -71,7 +71,7 @@ perfect square is at most $\lfloor a/2 \rfloor$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 3 (`jis-2026-26.1.8-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.exists_sq_near_triangular_beatty_sqrt_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#exists-sq-near-triangular-beatty-sqrt-tw).
+Stated but not proved: `MetaMathlibExt.exists_sq_near_triangular_beatty_sqrt_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#exists-sq-near-triangular-beatty-sqrt-tw).
 
 ## Counting arithmetic progressions in $\{1, \dots, n\}$
 
@@ -85,7 +85,7 @@ A006218).
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 5 (`jis-2026-26.1.8-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.ncard_arithProg_eq_sum_divisorSummatory` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-arith-prog-eq-sum-divisor-summator).
+Stated but not proved: `MetaMathlibExt.ncard_arithProg_eq_sum_divisorSummatory` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-arith-prog-eq-sum-divisor-summator).
 
 ## Inserting a digit and the digit sum
 
@@ -102,7 +102,7 @@ $d_0 + d_1 + \dots + d_{\ell-1}$ of $n$ (A007953).
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 6 (`jis-2026-26.1.8-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.card_digitInsertion_le_ten_mul_eq_digitSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#card-digit-insertion-le-ten-mul-eq-digit).
+Stated but not proved: `MetaMathlibExt.card_digitInsertion_le_ten_mul_eq_digitSum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#card-digit-insertion-le-ten-mul-eq-digit).
 
 ## Odd values of Bala's binomial sum are $1$ modulo $4$
 
@@ -117,7 +117,7 @@ the definition here.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 7 (`jis-2026-26.1.8-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.bala_binomial_sum_odd_imp_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#bala-binomial-sum-odd-imp-mod-four).
+Stated but not proved: `MetaMathlibExt.bala_binomial_sum_odd_imp_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#bala-binomial-sum-odd-imp-mod-four).
 
 ## The ceiling of $\cot(\pi/(2m))$ rises in steps of $0$ or $1$
 
@@ -130,7 +130,7 @@ $g(m) = n$ is $1$ or $2$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Lemma 9 (`jis-2026-26.1.8-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.ceil_cot_pi_div_two_mul_steps` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ceil-cot-pi-div-two-mul-steps).
+Stated but not proved: `MetaMathlibExt.ceil_cot_pi_div_two_mul_steps` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ceil-cot-pi-div-two-mul-steps).
 
 ## Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$
 
@@ -144,7 +144,7 @@ with $g(m) \le r$ equals $2r - s(r)$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Lemma 10 (`jis-2026-26.1.8-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.ncard_ceil_cot_le_eq_two_mul_sub_singletons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-ceil-cot-le-eq-two-mul-sub-singlet).
+Stated but not proved: `MetaMathlibExt.ncard_ceil_cot_le_eq_two_mul_sub_singletons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-ceil-cot-le-eq-two-mul-sub-singlet).
 
 ## Values taken once by the ceiling of $\cot(\pi/(2m))$
 
@@ -157,7 +157,7 @@ $g(m+1) = r + 1$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Lemma 11 (`jis-2026-26.1.8-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.ceil_cot_singleton_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ceil-cot-singleton-iff).
+Stated but not proved: `MetaMathlibExt.ceil_cot_singleton_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ceil-cot-singleton-iff).
 
 ## Jeffery's conjecture on singletons of $\lfloor \cot(\pi/(2m)) \rfloor$
 
@@ -173,7 +173,7 @@ If either list has fewer than $n$ terms, its $n$-th term is taken to be $0$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 12 (`jis-2026-26.1.8-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.jeffery_floor_cot_singletons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#jeffery-floor-cot-singletons).
+Stated but not proved: `MetaMathlibExt.jeffery_floor_cot_singletons` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#jeffery-floor-cot-singletons).
 
 ## Counting solutions of a repeating-decimal ratio equation
 
@@ -187,7 +187,7 @@ distinct prime factors of $m$.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 13 (`jis-2026-26.1.8-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.ncard_repeating_decimal_ratio_eq_two_pow_omega` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-repeating-decimal-ratio-eq-two-pow).
+Stated but not proved: `MetaMathlibExt.ncard_repeating_decimal_ratio_eq_two_pow_omega` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#ncard-repeating-decimal-ratio-eq-two-pow).
 
 ## Zakharov's conjecture on regions cut by cevians
 
@@ -202,7 +202,7 @@ $n$ cevians (not necessarily distinct) is $\lceil (n+1)(n+2)/3 \rceil$ (A007980)
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 14 (`jis-2026-26.1.8-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.cevian_max_regions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#cevian-max-regions).
+Stated but not proved: `MetaMathlibExt.cevian_max_regions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#cevian-max-regions).
 
 ## Zakharov's conjecture on intersection points of cevians
 
@@ -218,7 +218,7 @@ interior of $T$ that lie on $c_i$ and on $c_j$ for some $i \ne j$ is $\lfloor n^
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Corollary 15 (`jis-2026-26.1.8-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.cevian_max_regions_intersection_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#cevian-max-regions-intersection-count).
+Stated but not proved: `MetaMathlibExt.cevian_max_regions_intersection_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#cevian-max-regions-intersection-count).
 
 ## Intersection points of two fans of rays
 
@@ -237,7 +237,7 @@ $P$, $Q$ or along overlapping segments, which the paper does not count.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Theorem 16 (`jis-2026-26.1.8-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.two_fan_ray_intersection_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-ray-intersection-count).
+Stated but not proved: `MetaMathlibExt.two_fan_ray_intersection_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-ray-intersection-count).
 
 ## Blomberg's conjecture on intersection points of two equal fans
 
@@ -254,7 +254,7 @@ $P$, $Q$ or along overlapping segments, which are not counted.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Corollary 17 (`jis-2026-26.1.8-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.two_fan_ray_intersection_count_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-ray-intersection-count-diag).
+Stated but not proved: `MetaMathlibExt.two_fan_ray_intersection_count_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-ray-intersection-count-diag).
 
 ## Blomberg's conjecture on regions cut out by two equal fans
 
@@ -273,7 +273,7 @@ connected components are the regions into which the rays cut it.
 
 - Sela Fried, *Proofs of Ten Conjectures From the OEIS*, Journal of Integer Sequences 29 (2026), Article 26.1.8, Corollary 21 (`jis-2026-26.1.8-cor-21`).
 
-Stated but not proved: `MetaMathlibExt.two_fan_region_count_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-region-count-diag).
+Stated but not proved: `MetaMathlibExt.two_fan_region_count_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TenOeisConjecturesWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html#two-fan-region-count-diag).
 
 ## Depends on
 
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial sum parities and cotangent floor sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/binomial-sum-parities-and-cotangent-floor-sequen)

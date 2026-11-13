@@ -8,13 +8,13 @@ proof: formalized
 
 # 108.11 Properties of the stack of polarized proper schemes
 
-Section 108.11 of the Stacks Project, [Tag 0DPS](https://stacks.math.columbia.edu/tag/0DPS). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 108.11 of the Stacks Project, [Tag 0DPS](https://stacks.math.columbia.edu/tag/0DPS). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DPT, a lemma
 
 [Tag 0DPT](https://stacks.math.columbia.edu/tag/0DPT) in the Stacks Project.
 
-**`AlgebraicGeometry.diagonal_polarizedStackUnconditional_isSeparated_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonalUnconditional.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonalUnconditional.lean#L281).
+**`AlgebraicGeometry.diagonal_polarizedStackUnconditional_isSeparated_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonalUnconditional.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDiagonalUnconditional.lean#L281).
 
 > **Stacks 0DPT.** The diagonal `Δ : 𝒫olarized ⟶ 𝒫olarized × 𝒫olarized` of the stack of
 > polarized proper flat families of finite presentation, over the big fppf site of a terminal base
@@ -53,7 +53,7 @@ theorem diagonal_polarizedStackUnconditional_isSeparated_isFinitePresentation :
 
 [Tag 0DPU](https://stacks.math.columbia.edu/tag/0DPU) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiSeparated_and_isLocallyOfFinitePresentation_polarizedAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedQuasiSeparatedLocallyFinitePresentation.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedQuasiSeparatedLocallyFinitePresentation.lean#L94). The attribute's comment: “the morphism Polarized → Spec(Z) is quasi-separated and locally of finite presentation”.
+**`AlgebraicGeometry.isQuasiSeparated_and_isLocallyOfFinitePresentation_polarizedAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedQuasiSeparatedLocallyFinitePresentation.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedQuasiSeparatedLocallyFinitePresentation.lean#L94). The attribute's comment: “the morphism Polarized → Spec(Z) is quasi-separated and locally of finite presentation”.
 
 > The morphism `𝒫olarized → Spec(ℤ)` is quasi-separated (Stacks 04YW) and locally of finite
 > presentation (Stacks 06Q2).
@@ -70,7 +70,7 @@ theorem isQuasiSeparated_and_isLocallyOfFinitePresentation_polarizedAlgebraicSta
 
 [Tag 0E96](https://stacks.math.columbia.edu/tag/0E96) in the Stacks Project.
 
-**`AlgebraicGeometry.noetherianSpace_of_isHilbertPolarizedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedHilbertBoundedUnconditional.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedHilbertBoundedUnconditional.lean#L254).
+**`AlgebraicGeometry.noetherianSpace_of_isHilbertPolarizedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedHilbertBoundedUnconditional.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PolarizedHilbertBoundedUnconditional.lean#L254).
 
 > Let `n ∈ ℕ`, let `P ∈ ℚ[t]` and let `T ⊆ |𝒫olarized|` be a set of points each represented
 > over a field by a polarized proper scheme `(X, ℒ)` satisfying conditions (1) and (2)
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 108.11, Tag 0DPS](https://stacks.math.columbia.edu/tag/0DPS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

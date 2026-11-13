@@ -7,7 +7,7 @@ statement: formalized
 
 # Trace metric on cyclotomic fields
 
-27 results, 14 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html).
+27 results, 14 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html).
 
 ## Squared trace norm on a cyclotomic field
 
@@ -21,7 +21,7 @@ $$\lVert \alpha \rVert^2 = \sum_{j=1}^{p-1} \mathrm{Tr}_{K/\mathbb{Q}}(\alpha \o
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 1 (Definition 2.1 of arXiv:2410.22687).
 
-Formalized by `MetaMathlibExt.cyclotomicTraceNormSq`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq).
+Formalized by `MetaMathlibExt.cyclotomicTraceNormSq`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq).
 
 ## Trace norm on a cyclotomic field
 
@@ -38,7 +38,7 @@ $(\mathrm{Tr}_{K/\mathbb{Q}}(\alpha \omega^j))_{1 \le j \le p-1}$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 1 (Definition 2.1 of arXiv:2410.22687).
 
-Formalized by `MetaMathlibExt.cyclotomicTraceNorm`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm).
+Formalized by `MetaMathlibExt.cyclotomicTraceNorm`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm).
 
 ## Trace metric on a cyclotomic field
 
@@ -51,7 +51,7 @@ norm on $K$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 2 (Definition 2.2 of arXiv:2410.22687).
 
-Formalized by `MetaMathlibExt.cyclotomicTraceDist`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist).
+Formalized by `MetaMathlibExt.cyclotomicTraceDist`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist).
 
 ## Lattice points of a cyclotomic field
 
@@ -65,7 +65,7 @@ of $K$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 1 (the box `B(p, N)`).
 
-Formalized by `MetaMathlibExt.cyclotomicLatticePoint`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-lattice-point).
+Formalized by `MetaMathlibExt.cyclotomicLatticePoint`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-lattice-point).
 
 ## The cyclotomic box
 
@@ -80,7 +80,7 @@ cyclotomic field $\mathbb{Q}(\omega)$, where $\omega$ is a primitive $p$-th root
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 1 (the box `B(p, N)`).
 
-Formalized by `MetaMathlibExt.cyclotomicBox`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box).
+Formalized by `MetaMathlibExt.cyclotomicBox`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box).
 
 ## Moments of the trace distance on the cyclotomic box
 
@@ -102,7 +102,7 @@ $$
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 6 (Definition 6.1 of arXiv:2410.22687).
 
-Formalized by `MetaMathlibExt.cyclotomicDistMoment`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment).
+Formalized by `MetaMathlibExt.cyclotomicDistMoment`, a definition declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment).
 
 ## Squared trace norm of zero
 
@@ -114,7 +114,7 @@ $\lVert 0 \rVert^2 = 0$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 1.
 
-Formalized by `MetaMathlibExt.cyclotomicTraceNormSq_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-zero).
+Formalized by `MetaMathlibExt.cyclotomicTraceNormSq_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-zero).
 
 ## The squared trace norm is invariant under negation
 
@@ -126,7 +126,7 @@ trace norm satisfies $\lVert -\alpha \rVert^2 = \lVert \alpha \rVert^2$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 1.
 
-Formalized by `MetaMathlibExt.cyclotomicTraceNormSq_neg`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-neg).
+Formalized by `MetaMathlibExt.cyclotomicTraceNormSq_neg`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-neg).
 
 ## Trace distance from a point to itself
 
@@ -138,7 +138,7 @@ $d(\alpha, \alpha) = 0$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 2.
 
-Formalized by `MetaMathlibExt.cyclotomicTraceDist_self`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-self).
+Formalized by `MetaMathlibExt.cyclotomicTraceDist_self`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-self).
 
 ## Symmetry of the trace metric
 
@@ -150,7 +150,7 @@ $d(\alpha, \beta) = d(\beta, \alpha)$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Definition 2.
 
-Formalized by `MetaMathlibExt.cyclotomicTraceDist_comm`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-comm).
+Formalized by `MetaMathlibExt.cyclotomicTraceDist_comm`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-comm).
 
 ## The zero coefficient vector gives the zero lattice point
 
@@ -164,7 +164,7 @@ $\alpha_0 = 0$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 1 (the box `B(p, N)`).
 
-Formalized by `MetaMathlibExt.cyclotomicLatticePoint_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-lattice-point-zero).
+Formalized by `MetaMathlibExt.cyclotomicLatticePoint_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-lattice-point-zero).
 
 ## The cyclotomic box of radius zero
 
@@ -177,7 +177,7 @@ box of radius $0$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 1 (the box `B(p, N)`).
 
-Formalized by `MetaMathlibExt.cyclotomicBox_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-zero).
+Formalized by `MetaMathlibExt.cyclotomicBox_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-zero).
 
 ## The zero vector lies in every box
 
@@ -189,7 +189,7 @@ $|a_i| \le N$ for all $i$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 1 (the box `B(p, N)`).
 
-Formalized by `MetaMathlibExt.zero_mem_cyclotomicBox`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#zero-mem-cyclotomic-box).
+Formalized by `MetaMathlibExt.zero_mem_cyclotomicBox`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#zero-mem-cyclotomic-box).
 
 ## The zeroth moment of the trace distance is one
 
@@ -208,7 +208,7 @@ coinciding points.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Section 6 (Definition 6.1 of arXiv:2410.22687).
 
-Formalized by `MetaMathlibExt.cyclotomicDistMoment_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-zero).
+Formalized by `MetaMathlibExt.cyclotomicDistMoment_zero`, a theorem declared in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-zero).
 
 ## Galois invariance of the trace metric
 
@@ -221,7 +221,7 @@ $d(\sigma \alpha, \sigma \beta) = d(\alpha, \beta)$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicTraceDist_algEquiv` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-alg-equiv).
+Stated but not proved: `MetaMathlibExt.cyclotomicTraceDist_algEquiv` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-dist-alg-equiv).
 
 ## The trace norm is a norm
 
@@ -236,7 +236,7 @@ $\lVert q \alpha \rVert = |q| \, \lVert \alpha \rVert$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicTraceNorm_isNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-is-norm).
+Stated but not proved: `MetaMathlibExt.cyclotomicTraceNorm_isNorm` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-is-norm).
 
 ## Krasner-type lemma for the cyclotomic trace metric
 
@@ -256,7 +256,7 @@ conjugates of $\alpha$ over $\mathbb{Q}$ other than $\alpha$ itself.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.adjoin_le_adjoin_of_cyclotomicTraceDist_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#adjoin-le-adjoin-of-cyclotomic-trace-dis).
+Stated but not proved: `MetaMathlibExt.adjoin_le_adjoin_of_cyclotomicTraceDist_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#adjoin-le-adjoin-of-cyclotomic-trace-dis).
 
 ## Primitive elements α + nβ in a prime cyclotomic field
 
@@ -269,7 +269,7 @@ $\mathbb{Q}(\alpha + n\beta)$ and $\mathbb{Q}(\alpha, \beta)$ of $K$ are equal.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.eventually_adjoin_add_nsmul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#eventually-adjoin-add-nsmul-eq).
+Stated but not proved: `MetaMathlibExt.eventually_adjoin_add_nsmul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#eventually-adjoin-add-nsmul-eq).
 
 ## Squared trace norm in coordinates
 
@@ -288,7 +288,7 @@ and $\lVert \alpha \rVert_E^2 \le \lVert \alpha \rVert^2$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicTraceNormSq_eq_and_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-eq-and-ge).
+Stated but not proved: `MetaMathlibExt.cyclotomicTraceNormSq_eq_and_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-trace-norm-sq-eq-and-ge).
 
 ## Diameter of the cyclotomic box
 
@@ -308,7 +308,7 @@ coefficient of $\omega^i$ is $(-1)^{i-1} N$.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicBox_diam` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-diam).
+Stated but not proved: `MetaMathlibExt.cyclotomicBox_diam` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-diam).
 
 ## Power sums over a symmetric interval
 
@@ -324,7 +324,7 @@ The paper takes $N \ge 1$; here $N = 0$ is allowed.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.symmetric_power_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#symmetric-power-sums).
+Stated but not proved: `MetaMathlibExt.symmetric_power_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#symmetric-power-sums).
 
 ## Second moment of the trace distance on the cyclotomic box
 
@@ -344,7 +344,7 @@ exact formula.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicDistMoment_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-two).
+Stated but not proved: `MetaMathlibExt.cyclotomicDistMoment_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-two).
 
 ## Fourth-power sum of coordinate differences over a box
 
@@ -366,7 +366,7 @@ assumed.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.sum_sq_sub_mul_sq_sub_box` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#sum-sq-sub-mul-sq-sub-box).
+Stated but not proved: `MetaMathlibExt.sum_sq_sub_mul_sq_sub_box` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#sum-sq-sub-mul-sq-sub-box).
 
 ## Fourth moment of the trace distance on the cyclotomic box
 
@@ -391,7 +391,7 @@ exact formula.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicDistMoment_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-four).
+Stated but not proved: `MetaMathlibExt.cyclotomicDistMoment_four` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-dist-moment-four).
 
 ## Variance bound for squared trace distances in the box
 
@@ -410,7 +410,7 @@ C \left( p^5 N^4 + p^6 N^3 \right).$$
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.exists_cyclotomicDist_variance_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#exists-cyclotomic-dist-variance-le).
+Stated but not proved: `MetaMathlibExt.exists_cyclotomicDist_variance_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#exists-cyclotomic-dist-variance-le).
 
 ## Almost all pairs in the cyclotomic box are nearly equidistant
 
@@ -435,7 +435,7 @@ The constant $A$ depends only on $\varepsilon$; it is not claimed to be effectiv
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicBox_almost_equidistant` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-almost-equidistant).
+Stated but not proved: `MetaMathlibExt.cyclotomicBox_almost_equidistant` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#cyclotomic-box-almost-equidistant).
 
 ## Concentration of trace distances in the box, quantitative form
 
@@ -458,7 +458,7 @@ effectively computable; only its existence is stated here.
 
 - Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.exists_cyclotomicBox_deviation_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#exists-cyclotomic-box-deviation-le).
+Stated but not proved: `MetaMathlibExt.exists_cyclotomicBox_deviation_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicTraceMetricWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html#exists-cyclotomic-box-deviation-le).
 
 ## Depends on
 
@@ -467,4 +467,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Trace metric on cyclotomic fields](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/trace-metric-on-cyclotomic-fields)

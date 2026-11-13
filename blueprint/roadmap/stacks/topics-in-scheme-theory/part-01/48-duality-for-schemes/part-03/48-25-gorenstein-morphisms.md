@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.25 Gorenstein morphisms
 
-Section 48.25 of the Stacks Project, [Tag 0C02](https://stacks.math.columbia.edu/tag/0C02). 12 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.25 of the Stacks Project, [Tag 0C02](https://stacks.math.columbia.edu/tag/0C02). 12 tags here are carried by 29 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C03, a lemma
 
 [Tag 0C03](https://stacks.math.columbia.edu/tag/0C03) in the Stacks Project.
 
-**`AlgebraicGeometry.isGorensteinLocalRing_stalk_iff_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean#L306). The attribute's comment: “finitely generated field extension”.
+**`AlgebraicGeometry.isGorensteinLocalRing_stalk_iff_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean#L306). The attribute's comment: “finitely generated field extension”.
 
 > **Stacks Project, Tag 0C03.** Gorensteinness of local rings is unchanged after a finitely
 > generated extension of the ground field of a locally Noetherian scheme.
@@ -34,7 +34,7 @@ public theorem isGorensteinLocalRing_stalk_iff_of_essFiniteType_fieldExtension
           x')
 ```
 
-**`AlgebraicGeometry.isGorensteinLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean#L389). The attribute's comment: “arbitrary field extension for a locally finite type scheme”.
+**`AlgebraicGeometry.isGorensteinLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/FieldExtension.lean#L389). The attribute's comment: “arbitrary field extension for a locally finite type scheme”.
 
 > **Stacks Project, Tag 0C03.** Gorensteinness of local rings is unchanged after an arbitrary
 > extension of the ground field when the scheme is locally of finite type over that field.
@@ -56,7 +56,7 @@ public theorem isGorensteinLocalRing_stalk_iff_of_locallyOfFiniteType
 
 [Tag 0C04](https://stacks.math.columbia.edu/tag/0C04) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsGorensteinAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean#L38). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.Hom.IsGorensteinAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean#L38). The attribute's comment: “part (1)”.
 
 > A scheme morphism with locally Noetherian fibres is Gorenstein at `x` if it
 > is flat at `x` and the local ring of the fibre over `f x` is Gorenstein.
@@ -66,7 +66,7 @@ public abbrev IsGorensteinAt {X Y : Scheme.{u}} (f : X ⟶ Y)
     (hf : ∀ y : Y, IsLocallyNoetherian (f.fiber y)) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.IsGorenstein`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean#L48). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Scheme.Hom.IsGorenstein`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Basic.lean#L48). The attribute's comment: “part (2)”.
 
 > A scheme morphism with locally Noetherian fibres is Gorenstein when it is
 > Gorenstein at every point of the source.
@@ -80,7 +80,7 @@ public abbrev IsGorenstein {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0C05](https://stacks.math.columbia.edu/tag/0C05) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isGorenstein_iff_flat_and_isGorenstein_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean#L70).
+**`AlgebraicGeometry.Scheme.Hom.isGorenstein_iff_flat_and_isGorenstein_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Fibres.lean#L70).
 
 > A morphism of schemes with locally Noetherian fibres is Gorenstein if and only if it is flat
 > and all of its fibres are Gorenstein schemes.
@@ -95,7 +95,7 @@ public theorem isGorenstein_iff_flat_and_isGorenstein_fiber
 
 [Tag 0C06](https://stacks.math.columbia.edu/tag/0C06) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isCohenMacaulay_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/CohenMacaulay.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/CohenMacaulay.lean#L46).
+**`AlgebraicGeometry.Scheme.Hom.isCohenMacaulay_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/CohenMacaulay.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/CohenMacaulay.lean#L46).
 
 > **Stacks Project, Tag 0C06.** A Gorenstein morphism is Cohen--Macaulay.
 
@@ -109,7 +109,7 @@ public theorem isCohenMacaulay_of_isGorenstein
 
 [Tag 0C15](https://stacks.math.columbia.edu/tag/0C15) in the Stacks Project.
 
-**`AlgebraicGeometry.isGorenstein_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean#L110). The attribute's comment: “a syntomic morphism is Gorenstein”.
+**`AlgebraicGeometry.isGorenstein_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean#L110). The attribute's comment: “a syntomic morphism is Gorenstein”.
 
 > **Stacks 0C15.** A syntomic morphism of schemes is a Gorenstein morphism.
 
@@ -118,7 +118,7 @@ public theorem isGorenstein_of_syntomic {X S : Scheme.{u}} (f : X ⟶ S) (hf : S
     f.IsGorenstein (isLocallyNoetherian_fiber_of_syntomic hf)
 ```
 
-**`AlgebraicGeometry.isGorenstein_of_flat_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean#L120). The attribute's comment: “a flat local complete intersection morphism is Gorenstein”.
+**`AlgebraicGeometry.isGorenstein_of_flat_of_isLocalCompleteIntersectionMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Syntomic.lean#L120). The attribute's comment: “a flat local complete intersection morphism is Gorenstein”.
 
 > **Stacks 0C15.** A flat local complete intersection morphism of schemes is a Gorenstein
 > morphism; this is the second formulation of the lemma, equivalent to the first by Stacks
@@ -131,7 +131,7 @@ public theorem isGorenstein_of_flat_of_isLocalCompleteIntersectionMorphism {X S 
       (syntomic_of_flat_of_isLocalCompleteIntersectionMorphism hflat hlci))
 ```
 
-**`AlgebraicGeometry.syntomic_le_gorensteinWithLocallyNoetherianFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean#L62). The attribute's comment: “a syntomic morphism is Gorenstein, as an inclusion of morphism properties”.
+**`AlgebraicGeometry.syntomic_le_gorensteinWithLocallyNoetherianFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean#L62). The attribute's comment: “a syntomic morphism is Gorenstein, as an inclusion of morphism properties”.
 
 > **Stacks 0C15.** A syntomic morphism of schemes is a Gorenstein morphism: the syntomic
 > morphisms are contained in the morphism property of having locally Noetherian fibres and being
@@ -142,7 +142,7 @@ public theorem syntomic_le_gorensteinWithLocallyNoetherianFibers :
     (@Syntomic : MorphismProperty Scheme.{u}) ≤ gorensteinWithLocallyNoetherianFibers
 ```
 
-**`AlgebraicGeometry.flat_inf_lci_le_gorensteinWithLocallyNoetherianFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean#L71). The attribute's comment: “a flat lci morphism is Gorenstein, as an inclusion of morphism properties”.
+**`AlgebraicGeometry.flat_inf_lci_le_gorensteinWithLocallyNoetherianFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/SyntomicMorphismProperty.lean#L71). The attribute's comment: “a flat lci morphism is Gorenstein, as an inclusion of morphism properties”.
 
 > **Stacks 0C15.** A flat local complete intersection morphism of schemes is a Gorenstein
 > morphism: the meet of flatness and being a local complete intersection morphism is contained in
@@ -159,7 +159,7 @@ public theorem flat_inf_lci_le_gorensteinWithLocallyNoetherianFibers :
 
 [Tag 0C11](https://stacks.math.columbia.edu/tag/0C11) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L208). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L208). The attribute's comment: “part (1)”.
 
 > Gorensteinness at a point is preserved by composition.
 
@@ -172,7 +172,7 @@ public theorem isGorensteinAt_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶
     IsGorensteinAt (f ≫ g) hfg x
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorenstein_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L218). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorenstein_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L218). The attribute's comment: “part (2)”.
 
 > The composite of Gorenstein morphisms is Gorenstein.
 
@@ -185,7 +185,7 @@ public theorem isGorenstein_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ Z
     IsGorenstein (f ≫ g) hfg
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L229). The attribute's comment: “part (3), first morphism”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L229). The attribute's comment: “part (3), first morphism”.
 
 > If a composite is Gorenstein at a point and the first map is flat there, then the first map is
 > Gorenstein at that point.
@@ -200,7 +200,7 @@ public theorem isGorensteinAt_left_of_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g
     IsGorensteinAt f hf x
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_right_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L241). The attribute's comment: “part (3), second morphism”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_right_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L241). The attribute's comment: “part (3), second morphism”.
 
 > If a composite is Gorenstein at a point and the first map is flat there, then the second map is
 > Gorenstein at the image point.
@@ -215,7 +215,7 @@ public theorem isGorensteinAt_right_of_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (
     IsGorensteinAt g hg (f x)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorenstein_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L252). The attribute's comment: “part (4), first morphism”.
+**`AlgebraicGeometry.Scheme.Hom.isGorenstein_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L252). The attribute's comment: “part (4), first morphism”.
 
 > If the composite is Gorenstein and the first map is flat, the first map is Gorenstein.
 
@@ -228,7 +228,7 @@ public theorem isGorenstein_left_of_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g :
     IsGorenstein f hf
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_image_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L263). The attribute's comment: “part (4), second morphism on the image”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_image_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Composition.lean#L263). The attribute's comment: “part (4), second morphism on the image”.
 
 > If the composite is Gorenstein and the first map is flat, the second map is Gorenstein at each
 > point in the image of the first.
@@ -246,7 +246,7 @@ public theorem isGorensteinAt_image_of_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (
 
 [Tag 0C12](https://stacks.math.columbia.edu/tag/0C12) in the Stacks Project.
 
-**`Stacks.Duality.isGorensteinLocalRing_stalk_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Dualizing.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Dualizing.lean#L135). The attribute's comment: “Gorenstein local rings of the base”.
+**`Stacks.Duality.isGorensteinLocalRing_stalk_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Dualizing.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Dualizing.lean#L135). The attribute's comment: “Gorenstein local rings of the base”.
 
 > **Stacks Project, Tag 0C12.** The local ring of the base at any point in the image of a flat
 > morphism of locally Noetherian schemes with Gorenstein source is Gorenstein.
@@ -260,7 +260,7 @@ theorem isGorensteinLocalRing_stalk_of_flat {X Y : Scheme.{u}} (f : X ⟶ Y)
     Dualizing.IsGorensteinLocalRing (Y.presheaf.stalk (f x))
 ```
 
-**`Stacks.Duality.isGorenstein_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphismOfFlat.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphismOfFlat.lean#L85). The attribute's comment: “Gorenstein morphism”.
+**`Stacks.Duality.isGorenstein_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphismOfFlat.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphismOfFlat.lean#L85). The attribute's comment: “Gorenstein morphism”.
 
 > **Stacks Project, Tag 0C12.** A flat morphism of locally Noetherian schemes with Gorenstein
 > source is a Gorenstein morphism.
@@ -279,7 +279,7 @@ theorem isGorenstein_of_flat {X Y : Scheme.{u}} (f : X ⟶ Y)
 
 [Tag 0C07](https://stacks.math.columbia.edu/tag/0C07) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L298). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L298). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0C07 (1).** Gorensteinness at a point is preserved under a base change
 > locally of finite type.
@@ -293,7 +293,7 @@ public theorem isGorensteinAt_pullback {X Y Y' : Scheme.{u}}
       (fun y' => isLocallyNoetherian_fiber_pullback f g hf y') x'
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_of_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L320). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_of_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L320). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0C07 (2).** Gorensteinness descends from a base change locally of
 > finite type when the original morphism is flat at the point in question.
@@ -308,7 +308,7 @@ public theorem isGorensteinAt_of_pullback_of_flat {X Y Y' : Scheme.{u}}
     IsGorensteinAt f hf ((pullback.fst f g).base x')
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_of_pullback_of_flat_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L342). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_of_pullback_of_flat_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L342). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 0C07 (3).** Gorensteinness descends from a base change locally of
 > finite type that is flat at the image of the point in the new base.
@@ -327,7 +327,7 @@ public theorem isGorensteinAt_of_pullback_of_flat_base {X Y Y' : Scheme.{u}}
 
 [Tag 0E0Q](https://stacks.math.columbia.edu/tag/0E0Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.setOf_isGorensteinAt_pullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L457).
+**`AlgebraicGeometry.Scheme.Hom.setOf_isGorensteinAt_pullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChange.lean#L457).
 
 > **Stacks Project, Tag 0E0Q.** Let `f : X ⟶ Y` be flat and locally of finite type, and let
 > `g : Y' ⟶ Y` be an arbitrary morphism. Then the set of points of `X ×_Y Y'` at which the base
@@ -344,7 +344,7 @@ public theorem setOf_isGorensteinAt_pullback_eq_preimage {X Y Y' : Scheme.{u}}
       (pullback.fst f g).base ⁻¹' {x : X | IsGorensteinAt f hf x}
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.setOf_isGorensteinAt_pullback_eq_preimage_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChangeLocus.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChangeLocus.lean#L55).
+**`AlgebraicGeometry.Scheme.Hom.setOf_isGorensteinAt_pullback_eq_preimage_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChangeLocus.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/BaseChangeLocus.lean#L55).
 
 > Let `f : X ⟶ Y` be flat and locally of finite type and let `g : Y' ⟶ Y` be an arbitrary
 > morphism of schemes. Then the set of points of `X ×_Y Y'` at which the base change of `f` along
@@ -372,7 +372,7 @@ public theorem setOf_isGorensteinAt_pullback_eq_preimage_of_locallyOfFiniteType
 
 [Tag 0C08](https://stacks.math.columbia.edu/tag/0C08) in the Stacks Project.
 
-**`Stacks.Duality.isGorensteinAt_iff_isGorensteinFiberStalkAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/FibreStalkCriterion.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/FibreStalkCriterion.lean#L52). The attribute's comment: “proof chain (1) ↔ (2); (2)↔…↔(6) needs 0A9Y, 0BZZ, 0BFQ invertibility”.
+**`Stacks.Duality.isGorensteinAt_iff_isGorensteinFiberStalkAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/FibreStalkCriterion.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/FibreStalkCriterion.lean#L52). The attribute's comment: “proof chain (1) ↔ (2); (2)↔…↔(6) needs 0A9Y, 0BZZ, 0BFQ invertibility”.
 
 > **Stacks Project, Tag 0C08**, the first equivalence of its proof. A flat morphism with
 > locally Noetherian fibres is Gorenstein at a point exactly when the local ring of its fibre
@@ -384,7 +384,7 @@ theorem isGorensteinAt_iff_isGorensteinFiberStalkAt (f : X ⟶ Y)
     f.IsGorensteinAt hf x ↔ IsGorensteinFiberStalkAt f hf x
 ```
 
-**`Stacks.Duality.isGorensteinAt_iff_exists_isInvertible_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L54).
+**`Stacks.Duality.isGorensteinAt_iff_exists_isInvertible_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L54).
 
 > Let `S` be Noetherian, `f : X ⟶ Y` a flat morphism of `FTS S` and `x ∈ X`. Then `f` is
 > Gorenstein at `x` if and only if `f^!𝒪_Y` is isomorphic to an invertible object in a
@@ -406,7 +406,7 @@ theorem isGorensteinAt_iff_exists_isInvertible_upperShriek [Flat f.left] :
 
 [Tag 0C09](https://stacks.math.columbia.edu/tag/0C09) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/AffineSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/AffineSpace.lean#L72). The attribute's comment: “the equivalence of (1), (2), (3) and (4)”.
+**`AlgebraicGeometry.Scheme.Hom.isGorensteinAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/AffineSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/AffineSpace.lean#L72). The attribute's comment: “the equivalence of (1), (2), (3) and (4)”.
 
 > **Stacks Project, Tag 0C09.** Let `f : X ⟶ S` be flat and locally of finite presentation,
 > let `x ∈ X` and let `d = dim_x(X_{f x})`. The following are equivalent:
@@ -438,7 +438,7 @@ theorem isGorensteinAt_tfae {X S : Scheme.{u}} (f : X ⟶ S) [Flat f]
           g.IsGorensteinAt (isLocallyNoetherian_fiber_of_comp_eq hg) ⟨x, hx⟩]
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isOpen_setOf_isGorensteinAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/OpenLocus.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/OpenLocus.lean#L279). The attribute's comment: “the set of points where f is Gorenstein is open in X”.
+**`AlgebraicGeometry.Scheme.Hom.isOpen_setOf_isGorensteinAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/OpenLocus.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/OpenLocus.lean#L279). The attribute's comment: “the set of points where f is Gorenstein is open in X”.
 
 > **Stacks Project, Tag 0C09, last assertion.** For a flat morphism of schemes `f : X ⟶ S`
 > locally of finite presentation, the set of points of `X` at which `f` is Gorenstein is open.
@@ -454,7 +454,7 @@ theorem isOpen_setOf_isGorensteinAt {X S : Scheme.{u}} (f : X ⟶ S) [Flat f]
 
 [Tag 0C0A](https://stacks.math.columbia.edu/tag/0C0A) in the Stacks Project.
 
-**`AlgebraicGeometry.gorensteinWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean#L130). The attribute's comment: “local in the fppf topology on the target”.
+**`AlgebraicGeometry.gorensteinWithLocallyNoetherianFibers_isLocalAtTarget_fppf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean#L130). The attribute's comment: “local in the fppf topology on the target”.
 
 > **Stacks Project, Tag 0C0A.** Having locally Noetherian fibres and being Gorenstein is local
 > on the target for the fppf topology.
@@ -465,7 +465,7 @@ public instance gorensteinWithLocallyNoetherianFibers_isLocalAtTarget_fppf :
       Scheme.fppfPrecoverage
 ```
 
-**`AlgebraicGeometry.gorensteinWithLocallyNoetherianFibers_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean#L188). The attribute's comment: “local in the syntomic topology on the source”.
+**`AlgebraicGeometry.gorensteinWithLocallyNoetherianFibers_isLocalAtSource_syntomic`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GorensteinMorphisms/Locality.lean#L188). The attribute's comment: “local in the syntomic topology on the source”.
 
 > **Stacks Project, Tag 0C0A.** Having locally Noetherian fibres and being Gorenstein is local
 > on the source for the syntomic topology.
@@ -483,4 +483,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.25, Tag 0C02](https://stacks.math.columbia.edu/tag/0C02)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

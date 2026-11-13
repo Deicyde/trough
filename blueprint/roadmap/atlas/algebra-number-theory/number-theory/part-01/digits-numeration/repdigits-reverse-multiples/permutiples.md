@@ -7,7 +7,7 @@ statement: formalized
 
 # Permutiples
 
-43 results, 28 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html).
+43 results, 28 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html).
 
 ## Permutiples with a given digit permutation
 
@@ -23,7 +23,7 @@ that is, $(d_k, \dots, d_0)_b = n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Definition 1 (from Holt, *Some general results and open questions on palintiple numbers*).
 
-Formalized by `MetaMathlibExt.IsPermutiple`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple).
+Formalized by `MetaMathlibExt.IsPermutiple`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple).
 
 ## Carries of a permutiple multiplication
 
@@ -39,7 +39,7 @@ $c_{j+1} = 0$ for $j > k$. Division by $b = 0$ is taken to give $0$.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Section 2.
 
-Formalized by `MetaMathlibExt.permutipleCarry`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry).
+Formalized by `MetaMathlibExt.permutipleCarry`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry).
 
 ## First two carries of a permutiple multiplication
 
@@ -56,7 +56,7 @@ taken to give $0$.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Section 2.
 
-Formalized by `MetaMathlibExt.permutipleCarry_zero_one`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-zero-one).
+Formalized by `MetaMathlibExt.permutipleCarry_zero_one`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-zero-one).
 
 ## $87912$ is a $(4, 10)$-permutiple by digit reversal
 
@@ -69,7 +69,7 @@ the digits of $87912$ in reverse order.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Introduction.
 
-Formalized by `MetaMathlibExt.isPermutiple_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-87912).
+Formalized by `MetaMathlibExt.isPermutiple_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-87912).
 
 ## Carry relation for permutiples
 
@@ -87,7 +87,7 @@ with both sides computed in the integers.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 1, quoting Holt's earlier paper; restated as Theorem 1 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13.
 
-Stated but not proved: `MetaMathlibExt.permutipleCarry_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-relation).
+Stated but not proved: `MetaMathlibExt.permutipleCarry_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-relation).
 
 ## Carry bound for permutiples
 
@@ -102,7 +102,7 @@ $c_j \le n - 1$ if $n \ge 1$, and $c_j = 0$ if $n = 0$.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 2, quoting Holt's earlier paper; restated as Theorem 2 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13.
 
-Stated but not proved: `MetaMathlibExt.permutipleCarry_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-le).
+Stated but not proved: `MetaMathlibExt.permutipleCarry_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-carry-le).
 
 ## Holt's residue condition for rearranged permutiples
 
@@ -125,7 +125,7 @@ and the bound would read $0 \le -1$.
 
 - B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.permutiple_basePerm_residue_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-base-perm-residue-le).
+Stated but not proved: `MetaMathlibExt.permutiple_basePerm_residue_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-base-perm-residue-le).
 
 ## Edge set of the graph of a numeral
 
@@ -144,7 +144,7 @@ The vertices of $G$ are all base-$b$ digits, so $G$ is determined by its edge se
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Definition 3 (the graph of a permutiple).
 
-Formalized by `MetaMathlibExt.permutipleGraphEdges`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges).
+Formalized by `MetaMathlibExt.permutipleGraphEdges`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges).
 
 ## Graph of the permutiple 87912
 
@@ -161,7 +161,7 @@ Here $87912 = 4 \cdot 21978$, and $21978$ is $87912$ with its digits reversed.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Figure 1.
 
-Formalized by `MetaMathlibExt.permutipleGraphEdges_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-87912).
+Formalized by `MetaMathlibExt.permutipleGraphEdges_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-87912).
 
 ## Edges of the mother graph
 
@@ -177,7 +177,7 @@ and $n - 1$ are computed in the integers.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Definition 4 (the mother graph).
 
-Formalized by `MetaMathlibExt.IsMotherGraphEdge`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge).
+Formalized by `MetaMathlibExt.IsMotherGraphEdge`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge).
 
 ## An edge and a non-edge of the $(2, 4)$-mother graph
 
@@ -190,7 +190,7 @@ $\lambda$ is the least non-negative residue modulo $4$.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Definition 4 and Example 1.
 
-Formalized by `MetaMathlibExt.isMotherGraphEdge_two_four`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge-two-four).
+Formalized by `MetaMathlibExt.isMotherGraphEdge_two_four`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge-two-four).
 
 ## Carries of the Hoey–Sloane machine
 
@@ -210,7 +210,7 @@ division is exact.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Section 4, Equation (2) (the Hoey-Sloane machine).
 
-Formalized by `MetaMathlibExt.hoeySloaneCarry`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-carry).
+Formalized by `MetaMathlibExt.hoeySloaneCarry`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-carry).
 
 ## Carries of the $(2, 4)$-Hoey–Sloane machine on $(0,0)(2,3)(1,2)(3,1)$
 
@@ -225,7 +225,7 @@ This is the $(2, 4)$-permutiple string of $(3, 1, 2, 0)_4 = 216 = 2 \cdot 108 =
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Example 1.
 
-Formalized by `MetaMathlibExt.hoeySloaneCarry_two_four_example`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-carry-two-four-example).
+Formalized by `MetaMathlibExt.hoeySloaneCarry_two_four_example`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-carry-two-four-example).
 
 ## Hoey–Sloane words
 
@@ -242,7 +242,7 @@ ends in the state $0$.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Section 4 (the language `L` and `L`-walks).
 
-Formalized by `MetaMathlibExt.IsHoeySloaneWord`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-word).
+Formalized by `MetaMathlibExt.IsHoeySloaneWord`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-word).
 
 ## The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language
 
@@ -257,7 +257,7 @@ This is the $(2, 4)$-permutiple string of $(3, 1, 2, 0)_4 = 216 = 2 \cdot 108 =
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Example 1.
 
-Formalized by `MetaMathlibExt.isHoeySloaneWord_two_four_example`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-word-two-four-example).
+Formalized by `MetaMathlibExt.isHoeySloaneWord_two_four_example`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-word-two-four-example).
 
 ## Conjugate rearrangements have the same graph
 
@@ -279,7 +279,7 @@ permutiple $(d_k, \dots, d_0)_b$; these hypotheses are not needed.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.permutipleGraphEdges_eq_of_conj` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-eq-of-conj).
+Stated but not proved: `MetaMathlibExt.permutipleGraphEdges_eq_of_conj` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-eq-of-conj).
 
 ## Every permutiple has a cycle-preserving digit permutation
 
@@ -297,7 +297,7 @@ Unlike the paper, no assumption $1 < n < b$ is made.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 5, with Definition 5 (cycle-preserving permutations).
 
-Stated but not proved: `MetaMathlibExt.exists_cyclePreserving_permutiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-cycle-preserving-permutiple).
+Stated but not proved: `MetaMathlibExt.exists_cyclePreserving_permutiple` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-cycle-preserving-permutiple).
 
 ## Permutiple graphs are unions of simple cycles of the mother graph
 
@@ -315,7 +315,7 @@ $(v_i, v_{i+1}) \in E$ for every $0 \le i \le m$ and $e = (v_i, v_{i+1})$ for so
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 6, with Definition 6 (permutiple classes and their graphs).
 
-Stated but not proved: `MetaMathlibExt.permutipleGraphEdges_union_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-union-cycles).
+Stated but not proved: `MetaMathlibExt.permutipleGraphEdges_union_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-edges-union-cycles).
 
 ## Hoey–Sloane words with permuted digits are unions of cycles
 
@@ -332,7 +332,7 @@ modulo $m + 1$, and $e = (v_i, v_{i+1})$ for some $i$.
 
 - B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.hoeySloaneWord_inputs_union_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-word-inputs-union-cycles).
+Stated but not proved: `MetaMathlibExt.hoeySloaneWord_inputs_union_cycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-word-inputs-union-cycles).
 
 ## Sample edges of the $(4, 10)$-mother graph
 
@@ -345,7 +345,7 @@ $\lambda(2 + 6 \cdot 1) = 8 > 3$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 4 and Example 1.
 
-Formalized by `MetaMathlibExt.isMotherGraphEdge_four_ten`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge-four-ten).
+Formalized by `MetaMathlibExt.isMotherGraphEdge_four_ten`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-edge-four-ten).
 
 ## Transitions of the Hoey-Sloane machine
 
@@ -358,7 +358,7 @@ the $(n, b)$-mother graph, and $b c_2 - c_1 = n d_2 - d_1$ in the integers (Equa
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3, Equation (1).
 
-Formalized by `MetaMathlibExt.IsHoeySloaneStep`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step).
+Formalized by `MetaMathlibExt.IsHoeySloaneStep`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step).
 
 ## Runs of the Hoey-Sloane machine
 
@@ -373,7 +373,7 @@ of the $(n, b)$-Hoey-Sloane machine. For the empty string ($m = 0$) this says $c
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3.
 
-Formalized by `MetaMathlibExt.IsHoeySloaneRun`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-run).
+Formalized by `MetaMathlibExt.IsHoeySloaneRun`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-run).
 
 ## Language of the Hoey–Sloane machine
 
@@ -386,7 +386,7 @@ state $0$. In particular the empty string belongs to $L$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3.
 
-Formalized by `MetaMathlibExt.hoeySloaneLanguage`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-language).
+Formalized by `MetaMathlibExt.hoeySloaneLanguage`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-language).
 
 ## A word in the $(4, 10)$-Hoey-Sloane language
 
@@ -403,7 +403,7 @@ accepting run passes through the states $0, 3, 3, 3, 0, 0$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3 and Example 2.
 
-Formalized by `MetaMathlibExt.mem_hoeySloaneLanguage_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#mem-hoey-sloane-language-87912).
+Formalized by `MetaMathlibExt.mem_hoeySloaneLanguage_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#mem-hoey-sloane-language-87912).
 
 ## Permutiple strings
 
@@ -420,7 +420,7 @@ $s = (d_0, d_{\sigma(0)})(d_1, d_{\sigma(1)}) \cdots (d_k, d_{\sigma(k)})$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3.
 
-Formalized by `MetaMathlibExt.IsPermutipleString`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string).
+Formalized by `MetaMathlibExt.IsPermutipleString`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string).
 
 ## The permutiple string of $87912 = 4 \cdot 21978$
 
@@ -432,7 +432,7 @@ $(4, 10)$-permutiple $87912 = 4 \cdot 21978$, whose multiplication reverses the 
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3 and Table 1.
 
-Formalized by `MetaMathlibExt.isPermutipleString_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string-87912).
+Formalized by `MetaMathlibExt.isPermutipleString_87912`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string-87912).
 
 ## Edge list of a closed walk
 
@@ -446,7 +446,7 @@ $[(v_0, v_0)]$, and the empty list gives the empty edge list.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of `M`).
 
-Formalized by `MetaMathlibExt.cycleEdges`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-edges).
+Formalized by `MetaMathlibExt.cycleEdges`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-edges).
 
 ## Edges of the closed walks $2 \to 8 \to 2$ and $9 \to 9$
 
@@ -458,7 +458,7 @@ list $[2, 8]$ has edge list $[(2, 8), (8, 2)]$, and the closed walk with vertex 
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Example 2.
 
-Formalized by `MetaMathlibExt.cycleEdges_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-edges-examples).
+Formalized by `MetaMathlibExt.cycleEdges_examples`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-edges-examples).
 
 ## Cycles of the mother graph
 
@@ -472,7 +472,7 @@ In particular a one-element list $[v]$ is a cycle when $(v, v)$ is an edge of th
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 5 (cycles of `M`).
 
-Formalized by `MetaMathlibExt.IsMotherGraphCycle`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-cycle).
+Formalized by `MetaMathlibExt.IsMotherGraphCycle`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-mother-graph-cycle).
 
 ## Multiset union of cycle edges
 
@@ -485,7 +485,7 @@ with multiplicity: each list $j$ contributes its edges as often as $j$ occurs in
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 2.3 (multiset cycle union `C_I`).
 
-Formalized by `MetaMathlibExt.cycleUnion`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-union).
+Formalized by `MetaMathlibExt.cycleUnion`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#cycle-union).
 
 ## Hoey–Sloane transition of a digit pair
 
@@ -505,7 +505,7 @@ $0 \le c_1, c_2 \le n - 1$, that is, the transition of the Hoey–Sloane machine
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 6 and the proof of Theorem 6.
 
-Formalized by `MetaMathlibExt.hoeySloaneTransition`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-transition).
+Formalized by `MetaMathlibExt.hoeySloaneTransition`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-transition).
 
 ## Two multi-edges of the $(4, 10)$-Hoey–Sloane multigraph
 
@@ -518,7 +518,7 @@ transition sends $(2, 8)$ to $(0, 3)$ and $(1, 7)$ to $(3, 3)$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 6 and Figure 4.
 
-Formalized by `MetaMathlibExt.hoeySloaneTransition_four_ten`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-transition-four-ten).
+Formalized by `MetaMathlibExt.hoeySloaneTransition_four_ten`, a theorem declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#hoey-sloane-transition-four-ten).
 
 ## Multi-image union of a multiset of cycles
 
@@ -540,7 +540,7 @@ circuits.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 7.
 
-Formalized by `MetaMathlibExt.multiImageUnion`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#multi-image-union).
+Formalized by `MetaMathlibExt.multiImageUnion`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#multi-image-union).
 
 ## Eulerian circuit through the zero state
 
@@ -555,7 +555,7 @@ ends at $0$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 7 (hypothesis).
 
-Formalized by `MetaMathlibExt.HasEulerianCircuitFromZero`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#has-eulerian-circuit-from-zero).
+Formalized by `MetaMathlibExt.HasEulerianCircuitFromZero`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#has-eulerian-circuit-from-zero).
 
 ## $L$-Eulerian multigraphs
 
@@ -570,7 +570,7 @@ multi-edges in $D$ starting at $c$, counted with multiplicity.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Section 4 (definition of `L`-Eulerian, before Corollary 2).
 
-Formalized by `MetaMathlibExt.IsLEulerian`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-leulerian).
+Formalized by `MetaMathlibExt.IsLEulerian`, a definition declared in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-leulerian).
 
 ## Edge condition for permutiples
 
@@ -588,7 +588,7 @@ bound would read $0 \le -1$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 3, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
 
-Stated but not proved: `MetaMathlibExt.permutiple_edge_residue_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-edge-residue-le).
+Stated but not proved: `MetaMathlibExt.permutiple_edge_residue_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-edge-residue-le).
 
 ## Edges of a permutiple's graph lie on cycles of the mother graph
 
@@ -605,7 +605,7 @@ so the edge $(d_j, d_{\sigma(j)})$ lies on a directed cycle of that graph.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 4, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
 
-Stated but not proved: `MetaMathlibExt.permutiple_graph_isUnion_motherGraphCycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-is-union-mother-graph-c).
+Stated but not proved: `MetaMathlibExt.permutiple_graph_isUnion_motherGraphCycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#permutiple-graph-is-union-mother-graph-c).
 
 ## Uniqueness of Hoey-Sloane transitions
 
@@ -620,7 +620,7 @@ for $n = 3$ and $b = 1$ the input $(0, 0)$ moves $0$ to $0$ and also $1$ to $1$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.isHoeySloaneStep_unique` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step-unique).
+Stated but not proved: `MetaMathlibExt.isHoeySloaneStep_unique` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step-unique).
 
 ## Every mother-graph edge induces a carry transition
 
@@ -633,7 +633,7 @@ $b c_2 - c_1 = n d_2 - d_1$ as integers.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.exists_carries_of_isMotherGraphEdge` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-carries-of-is-mother-graph-edge).
+Stated but not proved: `MetaMathlibExt.exists_carries_of_isMotherGraphEdge` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-carries-of-is-mother-graph-edge).
 
 ## Hoey-Sloane transitions are transitions of the machine
 
@@ -650,7 +650,7 @@ by $e$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Definition 6, from Theorems 5 and 6.
 
-Stated but not proved: `MetaMathlibExt.isHoeySloaneStep_hoeySloaneTransition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step-hoey-sloane-transiti).
+Stated but not proved: `MetaMathlibExt.isHoeySloaneStep_hoeySloaneTransition` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-hoey-sloane-step-hoey-sloane-transiti).
 
 ## Inputs of a permutiple string lie on mother-graph cycles
 
@@ -664,7 +664,7 @@ In this sense the inputs of $s$ form a union of cycles of the mother graph.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 1, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
 
-Stated but not proved: `MetaMathlibExt.isPermutipleString_inputs_isUnion_motherGraphCycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string-inputs-is-union-mot).
+Stated but not proved: `MetaMathlibExt.isPermutipleString_inputs_isUnion_motherGraphCycles` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#is-permutiple-string-inputs-is-union-mot).
 
 ## Eulerian circuits through zero yield permutiple strings
 
@@ -678,7 +678,7 @@ multiset of entries is $C_I$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.exists_isPermutipleString_of_hasEulerianCircuitFromZero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-is-permutiple-string-of-has-euler).
+Stated but not proved: `MetaMathlibExt.exists_isPermutipleString_of_hasEulerianCircuitFromZero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-is-permutiple-string-of-has-euler).
 
 ## $L$-Eulerian criterion for permutiple strings
 
@@ -691,7 +691,7 @@ an $(n, b)$-permutiple string $s$ whose multiset of entries is $C_I$.
 
 - Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.exists_isPermutipleString_iff_isLEulerian` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-is-permutiple-string-iff-is-leule).
+Stated but not proved: `MetaMathlibExt.exists_isPermutipleString_iff_isLEulerian` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/PermutipleStringsWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html#exists-is-permutiple-string-iff-is-leule).
 
 ## Depends on
 
@@ -700,4 +700,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutiples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/permutiples)

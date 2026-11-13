@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.28 Completion and flatness
 
-Section 15.28 of the Stacks Project, [Tag 06LD](https://stacks.math.columbia.edu/tag/06LD). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.28 of the Stacks Project, [Tag 06LD](https://stacks.math.columbia.edu/tag/06LD). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05BC, a lemma
 
 [Tag 05BC](https://stacks.math.columbia.edu/tag/05BC) in the Stacks Project.
 
-**`AdicCompletion.universallyInjective_directSumToPi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/DirectSumToPi.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Flat/DirectSumToPi.lean#L415).
+**`AdicCompletion.universallyInjective_directSumToPi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/DirectSumToPi.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Flat/DirectSumToPi.lean#L415).
 
 > Let `R` be a Noetherian ring that is `I`-adically complete. Then the canonical map
 > `(⊕_{α ∈ A} R)^∧ → ∏_{α ∈ A} R` from the `I`-adic completion of a direct sum of copies of `R`
@@ -31,7 +31,7 @@ theorem AdicCompletion.universallyInjective_directSumToPi
 
 [Tag 06LE](https://stacks.math.columbia.edu/tag/06LE) in the Stacks Project.
 
-**`AdicCompletion.flat_directSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L202). References: EGA 0 (7.3.3), “more general”; SGA 1 IV (3.1), “more general”.
+**`AdicCompletion.flat_directSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L202). References: EGA 0 (7.3.3), “more general”; SGA 1 IV (3.1), “more general”.
 
 > For a Noetherian ring `R` and an ideal `I`, the `I`-adic completion `(⊕_{α ∈ A} R)^∧` of an
 > arbitrary direct sum of copies of `R` is a flat `R`-module.
@@ -46,7 +46,7 @@ theorem AdicCompletion.flat_directSum
 
 [Tag 0911](https://stacks.math.columbia.edu/tag/0911) in the Stacks Project.
 
-**`tor_pro_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ProZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/ProZero.lean#L204).
+**`tor_pro_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ProZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/ProZero.lean#L204).
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal, and `M` a finite `A`-module. Then for every
 > `p > 0` there exists `c > 0` such that, for all `n ≥ c`, the map
@@ -67,7 +67,7 @@ theorem tor_pro_zero
 
 [Tag 0912](https://stacks.math.columbia.edu/tag/0912) in the Stacks Project.
 
-**`flat_limit_and_tensor_limit_of_flat_quotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/TensorLimit.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Flat/TensorLimit.lean#L367).
+**`flat_limit_and_tensor_limit_of_flat_quotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/TensorLimit.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Flat/TensorLimit.lean#L364).
 
 > Let `A` be a Noetherian ring and `I ⊆ A` an ideal. Let `(M_n)` be an inverse system of
 > `A`-modules such that each `M_n` is flat over `A ⧸ Iⁿ` (compatibly with its `A`-module structure)
@@ -96,7 +96,7 @@ theorem flat_limit_and_tensor_limit_of_flat_quotients
 
 [Tag 0AGW](https://stacks.math.columbia.edu/tag/0AGW) in the Stacks Project.
 
-**`AdicCompletion.isNoetherianRing_and_flat_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L489). References: EGA 0 (10.2.3), “forward implication”.
+**`AdicCompletion.isNoetherianRing_and_flat_of_flat_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Flat/FlatCompletion.lean#L489). References: EGA 0 (10.2.3), “forward implication”.
 
 > Let `R` be a commutative ring, `I ⊆ R` a finitely generated ideal and `M` an `R`-module. If
 > `R/I` is Noetherian, `M/IM` is flat over `R/I` and `Tor₁ᴿ(M, R/I) = 0`, then the `I`-adic
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.28, Tag 06LD](https://stacks.math.columbia.edu/tag/06LD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

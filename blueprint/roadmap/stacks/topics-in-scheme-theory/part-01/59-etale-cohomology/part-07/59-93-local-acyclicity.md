@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.93 Local acyclicity
 
-Section 59.93 of the Stacks Project, [Tag 0GJM](https://stacks.math.columbia.edu/tag/0GJM). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.93 of the Stacks Project, [Tag 0GJM](https://stacks.math.columbia.edu/tag/0GJM). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GJN, an equation
 
 [Tag 0GJN](https://stacks.math.columbia.edu/tag/0GJN) in the Stacks Project.
 
-**`AlgebraicGeometry.vanishingCyclesMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L461). The attribute's comment: “for an arbitrary scheme over the strict henselization”.
+**`AlgebraicGeometry.vanishingCyclesMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L461). The attribute's comment: “for an arbitrary scheme over the strict henselization”.
 
 > **Stacks 0GJN.** The canonical map `α_{K,x,t} : K_x ⟶ RΓ(T, K)` from the stalk at a geometric
 > point `x` of `X` of an object `K` of the unbounded derived category of abelian sheaves on the
@@ -40,7 +40,7 @@ def vanishingCyclesMap :
         smallEtaleDerivedGlobalSections T
 ```
 
-**`AlgebraicGeometry.vanishingCyclesMap_fac_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L481). The attribute's comment: “the derived map factors the map on abelian sheaves”.
+**`AlgebraicGeometry.vanishingCyclesMap_fac_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L481). The attribute's comment: “the derived map factors the map on abelian sheaves”.
 
 > **Stacks 0GJN.** On every complex of abelian sheaves on the small étale site of `X`, the
 > canonical map to the derived global sections over `T` factors the degreewise map on sheaves
@@ -69,7 +69,7 @@ theorem vanishingCyclesMap_fac_app
               (q ≫ strictHenselizationToBase B X hX x)).mapDerivedCategoryFactorsh.inv.app J)
 ```
 
-**`AlgebraicGeometry.vanishingCyclesFibreMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L537).
+**`AlgebraicGeometry.vanishingCyclesFibreMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SpecializationMap.lean#L537).
 
 > **Stacks 0GJN.** The canonical map
 >
@@ -91,7 +91,7 @@ def vanishingCyclesFibreMap :
         smallEtaleDerivedGlobalSections (vanishingCyclesFibre B hX hS f x t)
 ```
 
-**`AlgebraicGeometry.smallEtaleDerivedStalkToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L98). The attribute's comment: “for an arbitrary scheme over the strict henselization”.
+**`AlgebraicGeometry.smallEtaleDerivedStalkToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L98). The attribute's comment: “for an arbitrary scheme over the strict henselization”.
 
 > **Stacks 0GJN.** The canonical map `α_{K,x} : K_x ⟶ RΓ(T, K)` from the stalk at a geometric
 > point `x` of `X` of an object `K` of the unbounded derived category `D(X_étale)` of abelian
@@ -116,7 +116,7 @@ def smallEtaleDerivedStalkToSections :
         smallEtaleDerivedGlobalSections T
 ```
 
-**`AlgebraicGeometry.smallEtaleDerivedStalkToSections_fac_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L112). The attribute's comment: “the derived map factors the map on abelian sheaves”.
+**`AlgebraicGeometry.smallEtaleDerivedStalkToSections_fac_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L112). The attribute's comment: “the derived map factors the map on abelian sheaves”.
 
 > **Stacks 0GJN.** On every complex of abelian sheaves on the small étale site of `X`, the
 > canonical map to the derived global sections over `T` factors the degreewise map on sheaves
@@ -145,7 +145,7 @@ theorem smallEtaleDerivedStalkToSections_fac_app
               (q ≫ strictHenselizationToBase B X hX x)).mapDerivedCategoryFactorsh.inv.app J)
 ```
 
-**`AlgebraicGeometry.stalkToVanishingCyclesFibreSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L156).
+**`AlgebraicGeometry.stalkToVanishingCyclesFibreSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L156).
 
 > **Stacks 0GJN.** The canonical map
 >
@@ -172,7 +172,7 @@ def stalkToVanishingCyclesFibreSections :
         smallEtaleDerivedGlobalSections (vanishingCyclesFibre B hX hS f x t)
 ```
 
-**`AlgebraicGeometry.smallEtaleDerivedStalkIsoStrictHenselizationSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L183). The attribute's comment: “`K_x = RΓ(Spec 𝒪^{sh}_{X,x}, K)`, since `𝒪^{sh}_{X,x}` is strictly henselian”.
+**`AlgebraicGeometry.smallEtaleDerivedStalkIsoStrictHenselizationSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L183). The attribute's comment: “`K_x = RΓ(Spec 𝒪^{sh}_{X,x}, K)`, since `𝒪^{sh}_{X,x}` is strictly henselian”.
 
 > **The stalk is the derived sections over the strict henselization.** For every object `K` of
 > the unbounded derived category of abelian sheaves on the small étale site of `X`, the canonical
@@ -187,7 +187,7 @@ def smallEtaleDerivedStalkIsoStrictHenselizationSections :
         smallEtaleDerivedGlobalSections (strictHenselization B X hX x)
 ```
 
-**`AlgebraicGeometry.stalkToVanishingCyclesFibreSections_eq_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L284). The attribute's comment: “the map is obtained by pulling back cohomology along `F_{x,t} ⟶ Spec 𝒪^{sh}_{X,x}`, using `K_x = RΓ(Spec 𝒪^{sh}_{X,x}, K)`”.
+**`AlgebraicGeometry.stalkToVanishingCyclesFibreSections_eq_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StalkToSectionsRestriction.lean#L284). The attribute's comment: “the map is obtained by pulling back cohomology along `F_{x,t} ⟶ Spec 𝒪^{sh}_{X,x}`, using `K_x = RΓ(Spec 𝒪^{sh}_{X,x}, K)`”.
 
 > **Stacks 0GJN: the map `α_{K,x,t}` is pullback of cohomology along
 > `F_{x,t} ⟶ Spec 𝒪^{sh}_{X,x}`.** The canonical map `α_{K,x,t} : K_x ⟶ RΓ(F_{x,t}, K)` at the
@@ -215,7 +215,7 @@ theorem stalkToVanishingCyclesFibreSections_eq_restriction :
 
 [Tag 0GJP](https://stacks.math.columbia.edu/tag/0GJP) in the Stacks Project.
 
-**`AlgebraicGeometry.localAcyclicity_iff_isIso_vanishingCyclesFibreMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/Basic.lean#L221).
+**`AlgebraicGeometry.localAcyclicity_iff_isIso_vanishingCyclesFibreMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/Basic.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/Basic.lean#L221).
 
 > Let `f : X ⟶ S` be a morphism of schemes and let `K` be an object of `D(X_étale)`. The five
 > notions of the definition are, in terms of the canonical maps `α_{K,x,t} : K_x ⟶ RΓ(F_{x,t}, K)`
@@ -283,7 +283,7 @@ public theorem localAcyclicity_iff_isIso_vanishingCyclesFibreMap (B : BigEtaleSi
 
 [Tag 0GJQ](https://stacks.math.columbia.edu/tag/0GJQ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.SmoothBaseChange.isUniversallyLocallyAcyclic_of_smooth_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/LocalAcyclicity/SmoothMorphismsRegistered.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/LocalAcyclicity/SmoothMorphismsRegistered.lean#L38). References: SGA 4½ Arcata (5.2.1), “more general”; SGA 7 I (2.4), “partial”.
+**`Stacks.EtaleCohomology.SmoothBaseChange.isUniversallyLocallyAcyclic_of_smooth_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/LocalAcyclicity/SmoothMorphismsRegistered.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/LocalAcyclicity/SmoothMorphismsRegistered.lean#L38). References: SGA 4½ Arcata (5.2.1), “more general”; SGA 7 I (2.4), “partial”.
 
 > **Smooth morphisms are universally locally acyclic** ([Stacks, Proposition 0GJQ]). Let
 > `f : X ⟶ S` be a smooth morphism of schemes. Then `f` is universally locally acyclic: for every
@@ -299,7 +299,7 @@ theorem isUniversallyLocallyAcyclic_of_smooth_unconditional {X S : Scheme.{u}} (
 
 [Tag 0GJR](https://stacks.math.columbia.edu/tag/0GJR) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyAcyclicRelative_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficients.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficients.lean#L382). The attribute's comment: “the dévissage from constant ℤ/nℤ coefficients to a locally constant prime-to-residue-characteristic torsion sheaf: the stalk is the filtered colimit of its finite subgroups and each of those is a finite direct sum of cyclic groups. The two strict-henselization inputs are hypotheses — `hdep`, that the canonical map depends only on the inverse image on Spec O^sh\_\{X,x}, and `hconst`, that a locally constant sheaf is constant there with value its stalk — as are `hcolim`, which is Tag 03Q5 for the affine variety of vanishing cycles, and `hadd`, additivity of RGamma”.
+**`AlgebraicGeometry.isLocallyAcyclicRelative_of_isLocallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficients.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficients.lean#L382). The attribute's comment: “the dévissage from constant ℤ/nℤ coefficients to a locally constant prime-to-residue-characteristic torsion sheaf: the stalk is the filtered colimit of its finite subgroups and each of those is a finite direct sum of cyclic groups. The two strict-henselization inputs are hypotheses — `hdep`, that the canonical map depends only on the inverse image on Spec O^sh\_\{X,x}, and `hconst`, that a locally constant sheaf is constant there with value its stalk — as are `hcolim`, which is Tag 03Q5 for the affine variety of vanishing cycles, and `hadd`, additivity of RGamma”.
 
 > **Stacks 0GJR.** Let `f : X ⟶ S` be a morphism of schemes and let `F` be a locally constant
 > abelian sheaf on `X_étale` whose stalk at every geometric point `x` is torsion with every element
@@ -366,7 +366,7 @@ theorem isLocallyAcyclicRelative_of_isLocallyConstant
       ((DerivedCategory.singleFunctor (Sheaf X.smallEtaleTopology Ab.{u + 1}) 0).obj F)
 ```
 
-**`AlgebraicGeometry.isLocallyAcyclicRelative_of_isLocallyConstant_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean#L401).
+**`AlgebraicGeometry.isLocallyAcyclicRelative_of_isLocallyConstant_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean#L400).
 
 > **Stacks 0GJR.** Let `f : X ⟶ S` be a morphism of schemes and let `F` be a locally constant
 > abelian sheaf on `X_étale` whose stalk at every geometric point `x` is torsion with every element
@@ -410,7 +410,7 @@ theorem isLocallyAcyclicRelative_of_isLocallyConstant_unconditional
 
 [Tag 0GJS](https://stacks.math.columbia.edu/tag/0GJS) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyAcyclicAt_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L101). The attribute's comment: “integral base change”.
+**`AlgebraicGeometry.isLocallyAcyclicAt_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L101). The attribute's comment: “integral base change”.
 
 > For a cartesian square of schemes with `g` integral, an
 > object `K` of `D(X_étale)` and a geometric point `x'` of the fibre product with image `x` in `X`,
@@ -423,7 +423,7 @@ public theorem isLocallyAcyclicAt_of_isIntegralHom [IsIntegralHom g]
     IsLocallyAcyclicAt B hX' hS' f' ((smallEtaleDerivedPullbackAb g').obj K) x'
 ```
 
-**`AlgebraicGeometry.isLocallyAcyclicAt_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L113). The attribute's comment: “locally quasi-finite base change”. References: SGA 4½ Arcata (5.1.4), “more general”.
+**`AlgebraicGeometry.isLocallyAcyclicAt_of_locallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L113). The attribute's comment: “locally quasi-finite base change”. References: SGA 4½ Arcata (5.1.4), “more general”.
 
 > For a cartesian square of schemes with `g` locally of finite type and locally quasi-finite, an
 > object `K` of `D(X_étale)` and a geometric point `x'` of the fibre product with image `x` in `X`,
@@ -436,7 +436,7 @@ public theorem isLocallyAcyclicAt_of_locallyQuasiFinite [LocallyOfFiniteType g]
     IsLocallyAcyclicAt B hX' hS' f' ((smallEtaleDerivedPullbackAb g').obj K) x'
 ```
 
-**`AlgebraicGeometry.isLocallyAcyclicAt_of_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L146). The attribute's comment: “directed inverse limit base change”. References: SGA 4½ Arcata (5.1.4), “more general”.
+**`AlgebraicGeometry.isLocallyAcyclicAt_of_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/BaseChangeTransfer.lean#L146). The attribute's comment: “directed inverse limit base change”. References: SGA 4½ Arcata (5.1.4), “more general”.
 
 > Let `{ Dᵢ }` be an inverse system of
 > schemes indexed by a cofiltered category, with affine transition morphisms, whose stages are
@@ -461,7 +461,7 @@ public theorem isLocallyAcyclicAt_of_limit (p : ∀ i : I, D.obj i ⟶ S)
     IsLocallyAcyclicAt B hX' hS' f' ((smallEtaleDerivedPullbackAb g').obj K) x'
 ```
 
-**`AlgebraicGeometry.isLocallyAcyclicAt_strictHenselizationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean#L87). The attribute's comment: “base change along the strict henselization at a geometric point”. References: SGA 4½ Arcata (5.1.4), “special case”; SGA 4½ Arcata (5.1.6), “more general”.
+**`AlgebraicGeometry.isLocallyAcyclicAt_strictHenselizationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean#L87). The attribute's comment: “base change along the strict henselization at a geometric point”. References: SGA 4½ Arcata (5.1.4), “special case”; SGA 4½ Arcata (5.1.6), “more general”.
 
 > **Local acyclicity survives base change to the strict henselization.** Let `f : X ⟶ S` be
 > a morphism of schemes of a big étale site `B`, let `K` be an object of `D(X_étale)`, let `s` be a
@@ -481,7 +481,7 @@ theorem isLocallyAcyclicAt_strictHenselizationBaseChange
         (strictHenselizationBaseChangeToSource B hS f s)).obj K) x
 ```
 
-**`AlgebraicGeometry.isLocallyAcyclicRelative_strictHenselizationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean#L111). The attribute's comment: “base change along the strict henselization at a geometric point”. References: SGA 4½ Arcata (5.1.6), “more general”.
+**`AlgebraicGeometry.isLocallyAcyclicRelative_strictHenselizationBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationBaseChangeSite.lean#L111). The attribute's comment: “base change along the strict henselization at a geometric point”. References: SGA 4½ Arcata (5.1.6), “more general”.
 
 > **Local acyclicity survives base change to the strict henselization.** If `f : X ⟶ S` is
 > locally acyclic relative to an object `K` of `D(X_étale)`, then the projection
@@ -505,4 +505,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.93, Tag 0GJM](https://stacks.math.columbia.edu/tag/0GJM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

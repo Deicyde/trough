@@ -8,7 +8,7 @@ proof: formalized
 
 # 14.3 Simplicial objects
 
-Section 14.3 of the Stacks Project, [Tag 0169](https://stacks.math.columbia.edu/tag/0169). 6 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.3 of the Stacks Project, [Tag 0169](https://stacks.math.columbia.edu/tag/0169). 6 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 016A, a definition
 
@@ -16,14 +16,14 @@ Section 14.3 of the Stacks Project, [Tag 0169](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L45) (StacksFrontier): “(1), (3), (4), (5): simplicial objects of C, the functor category Δᵒᵖ ⥤ C (morphisms are natural transformations); (3) is C = abelian groups”. References: SGA 4 V (7.1.0); SGA 4 Vbis (1.2.6); SGA 4 Vbis (3.0.1); SGA 4 Vbis (5.1.0).
-- [`SSet`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L48) (StacksFrontier): “(2)”. References: SGA 4 Vbis (3.0.1), “special case”.
+- [`CategoryTheory.SimplicialObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L45) (StacksFrontier): “(1), (3), (4), (5): simplicial objects of C, the functor category Δᵒᵖ ⥤ C (morphisms are natural transformations); (3) is C = abelian groups”. References: SGA 4 V (7.1.0); SGA 4 Vbis (1.2.6); SGA 4 Vbis (3.0.1); SGA 4 Vbis (5.1.0).
+- [`SSet`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SSet#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L48) (StacksFrontier): “(2)”. References: SGA 4 Vbis (3.0.1), “special case”.
 
 ## Tag 016B, a lemma
 
 [Tag 016B](https://stacks.math.columbia.edu/tag/016B) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.bijective_comp_toSimplexCategory_op_and_whiskerLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L73). The attribute's comment: “part (1) is `CategoryTheory.SimplicialObject.δ_comp_δ` and its companions in Mathlib; parts (2) and (3) are stated in terms of the presented category `SimplexCategoryGenRel`, so that no equality of objects of `C` is transported”.
+**`CategoryTheory.SimplicialObject.bijective_comp_toSimplexCategory_op_and_whiskerLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L73). The attribute's comment: “part (1) is `CategoryTheory.SimplicialObject.δ_comp_δ` and its companions in Mathlib; parts (2) and (3) are stated in terms of the presented category `SimplexCategoryGenRel`, so that no equality of objects of `C` is transported”.
 
 > **Stacks 016B** (parts (2) and (3), via the presented category `SimplexCategoryGenRel`).
 > Restriction along the canonical functor `SimplexCategoryGenRel.toSimplexCategory` from the
@@ -49,12 +49,12 @@ public theorem bijective_comp_toSimplexCategory_op_and_whiskerLeft (C : Type u)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.δ_comp_δ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_δ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L50) (StacksFrontier): “(1)”.
-- [`CategoryTheory.SimplicialObject.δ_comp_σ_of_le`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_of_le#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L51) (StacksFrontier): “(2)”.
-- [`CategoryTheory.SimplicialObject.δ_comp_σ_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_self#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L52) (StacksFrontier): “(3), dⱼ ∘ sⱼ = id”.
-- [`CategoryTheory.SimplicialObject.δ_comp_σ_succ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_succ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L53) (StacksFrontier): “(3), dⱼ₊₁ ∘ sⱼ = id”.
-- [`CategoryTheory.SimplicialObject.δ_comp_σ_of_gt`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_of_gt#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L54) (StacksFrontier): “(4)”.
-- [`CategoryTheory.SimplicialObject.σ_comp_σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.σ_comp_σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L55) (StacksFrontier): “(5)”.
+- [`CategoryTheory.SimplicialObject.δ_comp_δ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_δ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L50) (StacksFrontier): “(1)”.
+- [`CategoryTheory.SimplicialObject.δ_comp_σ_of_le`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_of_le#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L51) (StacksFrontier): “(2)”.
+- [`CategoryTheory.SimplicialObject.δ_comp_σ_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_self#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L52) (StacksFrontier): “(3), dⱼ ∘ sⱼ = id”.
+- [`CategoryTheory.SimplicialObject.δ_comp_σ_succ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_succ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L53) (StacksFrontier): “(3), dⱼ₊₁ ∘ sⱼ = id”.
+- [`CategoryTheory.SimplicialObject.δ_comp_σ_of_gt`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.δ_comp_σ_of_gt#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L54) (StacksFrontier): “(4)”.
+- [`CategoryTheory.SimplicialObject.σ_comp_σ`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.σ_comp_σ#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L55) (StacksFrontier): “(5)”.
 
 ## Tag 016D, an example
 
@@ -62,7 +62,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.const`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.const#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L57) (StacksFrontier). References: SGA 3 IV (4.3.17), “special case”; SGA 4 Vbis (1.2.6); SGA 4 Vbis (3.2.3).
+- [`CategoryTheory.SimplicialObject.const`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.const#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L57) (StacksFrontier). References: SGA 3 IV (4.3.17), “special case”; SGA 4 Vbis (1.2.6); SGA 4 Vbis (3.2.3).
 
 ## Tag 016E, an example
 
@@ -70,13 +70,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Arrow.cechNerve`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.cechNerve#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L59) (StacksFrontier). References: SGA 3 X (6.3); SGA 3 X (9.7.1); SGA 4 Vbis (1.2.7).
+- [`CategoryTheory.Arrow.cechNerve`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.cechNerve#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L59) (StacksFrontier). References: SGA 3 X (6.3); SGA 3 X (9.7.1); SGA 4 Vbis (1.2.7).
 
 ## Tag 016F, a lemma
 
 [Tag 016F](https://stacks.math.columbia.edu/tag/016F) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.isSplitMono_σ`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L138).
+**`CategoryTheory.SimplicialObject.isSplitMono_σ`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L138).
 
 > **Stacks 016F**.
 > Each degeneracy map `X.σ i : Xₙ ⟶ Xₙ₊₁` of a simplicial object `X` of a category `C` has a left
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.3, Tag 0169](https://stacks.math.columbia.edu/tag/0169)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

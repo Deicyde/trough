@@ -8,13 +8,13 @@ proof: formalized
 
 # 73.9 Fpqc topology
 
-Section 73.9 of the Stacks Project, [Tag 03MP](https://stacks.math.columbia.edu/tag/03MP). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 73.9 of the Stacks Project, [Tag 03MP](https://stacks.math.columbia.edu/tag/03MP). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03MQ, a definition
 
 [Tag 03MQ](https://stacks.math.columbia.edu/tag/03MQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFpqcCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L177).
+**`AlgebraicGeometry.Space.IsFpqcCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L177).
 
 > **Stacks 03MQ.** A family of flat morphisms of algebraic spaces over `S` with common
 > target `Y` is an *fpqc covering* when, for every affine object `T` of the big fppf site of
@@ -30,7 +30,7 @@ abbrev IsFpqcCovering {I : Type v} {X : I → (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 
 [Tag 0DFQ](https://stacks.math.columbia.edu/tag/0DFQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L246). The attribute's comment: “fppf coverings”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L246). The attribute's comment: “fppf coverings”.
 
 > **Stacks 0DFQ**, the fppf case: an fppf covering of algebraic spaces over `S` is an fpqc
 > covering.
@@ -45,7 +45,7 @@ theorem isFpqcCovering_of_isFppfCovering
     IsFpqcCovering B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isSyntomicCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L207). The attribute's comment: “syntomic coverings”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isSyntomicCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L207). The attribute's comment: “syntomic coverings”.
 
 > **Stacks 0DFQ**, the syntomic case: a syntomic covering of algebraic spaces over `S` is an
 > fpqc covering.
@@ -58,7 +58,7 @@ theorem isFpqcCovering_of_isSyntomicCovering
     IsFpqcCovering B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isSmoothCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L218). The attribute's comment: “smooth coverings”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isSmoothCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L218). The attribute's comment: “smooth coverings”.
 
 > **Stacks 0DFQ**, the smooth case: a smooth covering of algebraic spaces over `S` is an fpqc
 > covering.
@@ -71,7 +71,7 @@ theorem isFpqcCovering_of_isSmoothCovering
     IsFpqcCovering B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L229). The attribute's comment: “étale coverings”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L229). The attribute's comment: “étale coverings”.
 
 > **Stacks 0DFQ**, the étale case: an étale covering of algebraic spaces over `S` is an fpqc
 > covering.
@@ -84,7 +84,7 @@ theorem isFpqcCovering_of_isEtaleCovering
     IsFpqcCovering B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L278). The attribute's comment: “Zariski coverings”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isZariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L278). The attribute's comment: “Zariski coverings”.
 
 > **Stacks 0DFQ**, the Zariski case: a Zariski covering of algebraic spaces over `S` is an
 > fpqc covering.
@@ -98,7 +98,7 @@ theorem isFpqcCovering_of_isZariskiCovering
     IsFpqcCovering B S hS f
 ```
 
-**`AlgebraicGeometry.Space.Topology.precoverage_etale_le_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoproductChartPropertyDescent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/CoproductChartPropertyDescent.lean#L111). The attribute's comment: “étale coverings, at the precoverages”.
+**`AlgebraicGeometry.Space.Topology.precoverage_etale_le_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoproductChartPropertyDescent.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CoproductChartPropertyDescent.lean#L111). The attribute's comment: “étale coverings, at the precoverages”.
 
 > The étale precoverage of algebraic spaces over `S` is contained in the fpqc one.
 
@@ -111,7 +111,7 @@ theorem precoverage_etale_le_fpqc :
 
 [Tag 03MR](https://stacks.math.columbia.edu/tag/03MR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFpqcCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean#L42). The attribute's comment: “part (3): base change”.
+**`AlgebraicGeometry.Space.isFpqcCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean#L42). The attribute's comment: “part (3): base change”.
 
 > Pulling an fpqc covering family of algebraic spaces over `S`
 > back along a morphism `f : X ⟶ Y` of algebraic spaces gives an fpqc covering of `X`: the second
@@ -126,7 +126,7 @@ theorem isFpqcCovering_pullback
     IsFpqcCovering B S hS (fun i => pullback.snd (g i).hom f.hom)
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean#L59). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.Space.isFpqcCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringBaseChange.lean#L59). The attribute's comment: “isomorphism”.
 
 > An isomorphism of presheaves on the big fppf site of `S`, regarded as a family indexed by a
 > point, is an fpqc covering.
@@ -138,7 +138,7 @@ theorem isFpqcCovering_of_isIso
     IsFpqcCovering B S hS (fun _ : PUnit.{v + 1} => f)
 ```
 
-**`AlgebraicGeometry.Space.isFpqcCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringComposition.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringComposition.lean#L53). The attribute's comment: “composition”.
+**`AlgebraicGeometry.Space.isFpqcCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringComposition.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringComposition.lean#L53). The attribute's comment: “composition”.
 
 > **Stacks 03MR**, the composition clause. Composing an fpqc covering of an algebraic space
 > over `S` with fpqc coverings of each of its members gives an fpqc covering.
@@ -164,7 +164,7 @@ theorem isFpqcCovering_comp
 
 [Tag 03MS](https://stacks.math.columbia.edu/tag/03MS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFpqcCovering_iff_pullback_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringAtlas.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringAtlas.lean#L78).
+**`AlgebraicGeometry.Space.isFpqcCovering_iff_pullback_atlas`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringAtlas.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FpqcCoveringAtlas.lean#L79).
 
 > A family of morphisms of algebraic spaces over `S` with target `X` is an
 > fpqc covering exactly when its pullback along a surjective étale morphism `a : U ⟶ X` from a
@@ -184,7 +184,7 @@ theorem isFpqcCovering_iff_pullback_atlas
 
 [Tag 0419](https://stacks.math.columbia.edu/tag/0419) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_fpqc_scheme_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FpqcCoverings.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FpqcCoverings.lean#L55).
+**`AlgebraicGeometry.Space.exists_fpqc_scheme_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FpqcCoverings.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/FpqcCoverings.lean#L55).
 
 > **Stacks 0419.** Every fpqc covering of an algebraic space over `S` by algebraic spaces
 > has an fpqc refinement by schemes, with each new member factoring through the corresponding
@@ -209,4 +209,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 73.9, Tag 03MP](https://stacks.math.columbia.edu/tag/03MP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

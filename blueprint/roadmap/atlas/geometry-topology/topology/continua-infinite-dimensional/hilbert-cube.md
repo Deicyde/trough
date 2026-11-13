@@ -7,14 +7,14 @@ statement: formalized
 
 # Hilbert cube
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html).
 
 ## The Hilbert cube
 
 The Hilbert cube $Q = [0,1]^{\mathbb{N}}$ is the product of countably
 many copies of the closed unit interval $[0,1]$, with the product topology.
 
-Formalized by `MathlibExt.Topology.ScottishBook175Wanted.ScottishBookHilbertCube`, an abbreviation declared in [WantedExt/Topology/ScottishBook175Wanted.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook175Wanted.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#scottish-book-hilbert-cube).
+Formalized by `MathlibExt.Topology.ScottishBook175Wanted.ScottishBookHilbertCube`, an abbreviation declared in [WantedExt/Topology/ScottishBook175Wanted.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook175Wanted.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#scottish-book-hilbert-cube).
 
 ## The letter T
 
@@ -25,7 +25,7 @@ $$T = \{(0, y) : 0 \le y \le 1\} \cup \{(x, 1) : -1 \le x \le 1\}$$
 of $\mathbb{R}^2$: a vertical stem with a horizontal bar on top, meeting at the branch point
 $(0, 1)$.
 
-Formalized by `MathlibExt.Topology.ScottishBook175Wanted.ScottishBookLetterT`, an abbreviation declared in [WantedExt/Topology/ScottishBook175Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook175Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#scottish-book-letter-t).
+Formalized by `MathlibExt.Topology.ScottishBook175Wanted.ScottishBookLetterT`, an abbreviation declared in [WantedExt/Topology/ScottishBook175Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook175Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#scottish-book-letter-t).
 
 ## The Hilbert cube absorbs the letter T (Borsuk's Problem 175)
 
@@ -39,7 +39,7 @@ homeomorphic to $Q$.
 
 - K. Borsuk, Problem 175 of the Scottish Book; positively solved by R. D. Anderson, as cited in Domoradzki-Stawiska-Zarichnyi, "90+ years of the Scottish Book" (arXiv:2603.27867), and in the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Topology.ScottishBook175Wanted.borsuk175_hilbert_cube_times_letterT` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook175Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook175Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#borsuk175-hilbert-cube-times-letter-t).
+Stated but not proved: `MathlibExt.Topology.ScottishBook175Wanted.borsuk175_hilbert_cube_times_letterT` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook175Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook175Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html#borsuk175-hilbert-cube-times-letter-t).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hilbert cube](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/hilbert-cube/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/continua-infinite-dimensional/hilbert-cube)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/continua-infinite-dimensional/hilbert-cube)

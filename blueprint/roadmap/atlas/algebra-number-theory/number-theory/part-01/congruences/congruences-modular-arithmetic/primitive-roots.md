@@ -7,7 +7,7 @@ statement: formalized
 
 # Primitive λ-roots
 
-6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html).
+6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html).
 
 ## The count $\Delta_q(n)$ for primitive λ-roots
 
@@ -23,7 +23,7 @@ $\lambda(p^{v_p(n)})$. In all remaining cases $\Delta_q(n) = 0$.
 The argument $q$ is intended to be prime; the definition is the displayed formula for every
 natural $q$.
 
-Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaDelta`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-delta).
+Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaDelta`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-delta).
 
 ## The local factor $h_q(n)$ for primitive λ-roots
 
@@ -31,7 +31,7 @@ Let $\Delta_q(n)$ be the count for
 primitive λ-roots. For natural numbers $q$ and $n$, the rational number $h_q(n)$ equals $1$ if
 $\Delta_q(n) = 0$, and $1 - 1/q^{\Delta_q(n)}$ otherwise.
 
-Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaH`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-h).
+Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaH`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-h).
 
 ## Number of primitive λ-roots
 
@@ -39,7 +39,7 @@ For a natural number $n$, $R(n)$ is the number of units $a$
 of $\mathbb{Z}/n\mathbb{Z}$ whose multiplicative order equals $\lambda(n)$, where $\lambda$ is
 the Carmichael function.
 
-Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#primitive-lambda-root-count).
+Formalized by `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount`, a definition declared in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#primitive-lambda-root-count).
 
 ## Carmichael's function on coprime products
 
@@ -51,7 +51,7 @@ $\lambda(mn) = \operatorname{lcm}(\lambda(m), \lambda(n))$.
 
 - Benjamin Huang and Shuguang Li, "Notes on the Number of Primitive λ-roots mod n and Its Multiplicative Properties", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.carmichael_mul_eq_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#carmichael-mul-eq-lcm).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.carmichael_mul_eq_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#carmichael-mul-eq-lcm).
 
 ## Huang–Li inequality for the local factors $h_q$
 
@@ -66,7 +66,7 @@ $\Delta_q(m) > 0$, $\Delta_q(n) > 0$, and $\Delta_q(mn)$ equals $\Delta_q(m)$ or
 
 - Benjamin Huang and Shuguang Li, "Notes on the Number of Primitive λ-roots mod n and Its Multiplicative Properties", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaH_mul_ge_and_gt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-h-mul-ge-and-gt-iff).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.lambdaH_mul_ge_and_gt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#lambda-h-mul-ge-and-gt-iff).
 
 ## Supermultiplicativity of the number of primitive λ-roots
 
@@ -79,7 +79,7 @@ $n = 2$ and $m$ is odd.
 
 - Benjamin Huang and Shuguang Li, "Notes on the Number of Primitive λ-roots mod n and Its Multiplicative Properties", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount_mul_ge_and_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#primitive-lambda-root-count-mul-ge-and-e).
+Stated but not proved: `MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCount_mul_ge_and_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PrimitiveLambdaRootsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html#primitive-lambda-root-count-mul-ge-and-e).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Primitive λ-roots](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots)

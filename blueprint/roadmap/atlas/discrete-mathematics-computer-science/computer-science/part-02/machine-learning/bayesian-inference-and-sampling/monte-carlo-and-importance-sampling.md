@@ -8,7 +8,7 @@ proof: formalized
 
 # Monte Carlo and importance sampling
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html).
 
 ## Monte Carlo estimate
 
@@ -16,7 +16,7 @@ Given a function $f : \alpha \to \mathbb{R}$ and samples
 $X_0, X_1, \ldots : \Omega \to \alpha$, the Monte Carlo estimate from the first $n$ samples at
 $\omega \in \Omega$ is $\frac{1}{n} \sum_{i < n} f(X_i(\omega))$, which is $0$ when $n = 0$.
 
-Formalized by `Cslib.MachineLearning.Sampling.mcEstimate`, a definition declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#mc-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.mcEstimate`, a definition declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#mc-estimate).
 
 ## The Monte Carlo estimator is unbiased
 
@@ -26,7 +26,7 @@ to $\nu$. If $X_0, X_1, \ldots : \Omega \to \alpha$ are measurable and the pushf
 along each $X_i$ is $\nu$, then for every $n \ne 0$ the integral with respect to $\mu$ of the
 Monte Carlo estimate $\frac{1}{n} \sum_{i < n} f(X_i)$ equals $\int f \, d\nu$.
 
-Formalized by `Cslib.MachineLearning.Sampling.integral_mcEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-mc-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.integral_mcEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-mc-estimate).
 
 ## The Monte Carlo estimator is consistent
 
@@ -37,7 +37,7 @@ measurable, pairwise independent under $\mu$, and the pushforward of $\mu$ along
 $\nu$, then for $\mu$-almost every $\omega$ the Monte Carlo estimate
 $\frac{1}{n} \sum_{i < n} f(X_i(\omega))$ converges to $\int f \, d\nu$ as $n \to \infty$.
 
-Formalized by `Cslib.MachineLearning.Sampling.tendsto_mcEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#tendsto-mc-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.tendsto_mcEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#tendsto-mc-estimate).
 
 ## Importance-sampling estimate
 
@@ -49,7 +49,7 @@ $0$ and the estimate is $0$ when $n = 0$. If the samples are drawn from a propos
 $\rho$, it estimates $\int f \, d\nu$ for the target measure $\nu$ with density $w$ with respect to
 $\rho$.
 
-Formalized by `Cslib.MachineLearning.Sampling.isEstimate`, a definition declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#is-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.isEstimate`, a definition declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#is-estimate).
 
 ## Change of measure for importance weights
 
@@ -58,7 +58,7 @@ $w : \alpha \to [0, \infty]$ be measurable with $w < \infty$ $\rho$-almost every
 $\nu$ be the measure with density $w$ with respect to $\rho$. Then for every function
 $f : \alpha \to \mathbb{R}$, $\int w f \, d\rho = \int f \, d\nu$.
 
-Formalized by `Cslib.MachineLearning.Sampling.integral_weight_mul`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-weight-mul).
+Formalized by `Cslib.MachineLearning.Sampling.integral_weight_mul`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-weight-mul).
 
 ## Importance sampling is unbiased
 
@@ -71,7 +71,7 @@ $X_i$ is $\rho$, then for every $n \ne 0$ the integral with respect to $\mu$ of 
 importance-sampling estimate of $f$ with weight $w$ from the first $n$ samples equals
 $\int f \, d\nu$.
 
-Formalized by `Cslib.MachineLearning.Sampling.integral_isEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-is-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.integral_isEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#integral-is-estimate).
 
 ## Importance sampling is consistent
 
@@ -84,7 +84,7 @@ pushforward of $\mu$ along each $X_i$ is $\rho$, then for $\mu$-almost every $\o
 importance-sampling estimate of $f$ with weight $w$ from the first $n$ samples at $\omega$
 converges to $\int f \, d\nu$ as $n \to \infty$.
 
-Formalized by `Cslib.MachineLearning.Sampling.tendsto_isEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#tendsto-is-estimate).
+Formalized by `Cslib.MachineLearning.Sampling.tendsto_isEstimate`, a theorem declared in [CSLibExt/MachineLearning/Sampling/MonteCarlo.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Sampling/MonteCarlo.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html#tendsto-is-estimate).
 
 ## Depends on
 
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monte Carlo and importance sampling](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/monte-carlo-and-importance-sampling)

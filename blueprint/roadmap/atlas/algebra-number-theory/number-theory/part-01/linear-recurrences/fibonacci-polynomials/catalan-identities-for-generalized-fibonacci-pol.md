@@ -7,7 +7,7 @@ statement: formalized
 
 # Catalan identities for generalized Fibonacci polynomials
 
-16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html).
+16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html).
 
 ## Explicit formula for Fibonacci-type generalized Fibonacci polynomials
 
@@ -23,7 +23,7 @@ The source quotes this formula from Flórez and Saunders.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.1 (1).
 
-Stated but not proved: `MetaMathlibExt.gfp_fib_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.gfp_fib_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-eq-sum-choose).
 
 ## Explicit formula for Lucas-type generalized Fibonacci polynomials
 
@@ -43,7 +43,7 @@ Flórez and Saunders.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.1 (2).
 
-Stated but not proved: `MetaMathlibExt.gfp_lucas_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-lucas-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.gfp_lucas_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-lucas-eq-sum-choose).
 
 ## Webb–Parberry binomial identity
 
@@ -57,7 +57,7 @@ an identity of rational numbers in which the exponent $2m-n+1$ may be negative.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.2 (1).
 
-Stated but not proved: `MetaMathlibExt.choose_sub_sub_one_eq_two_zpow_mul_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-sub-sub-one-eq-two-zpow-mul-sum).
+Stated but not proved: `MetaMathlibExt.choose_sub_sub_one_eq_two_zpow_mul_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-sub-sub-one-eq-two-zpow-mul-sum).
 
 ## Binomial coefficients of odd lower index as an alternating sum
 
@@ -71,7 +71,7 @@ $$\binom{n}{2k+1} = \sum_{i=k}^{\lfloor (n-1)/2 \rfloor} (-1)^{i-k} \, 2^{n-2i-1
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.2 (2).
 
-Stated but not proved: `MetaMathlibExt.choose_two_mul_add_one_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-two-mul-add-one-eq-alternating-su).
+Stated but not proved: `MetaMathlibExt.choose_two_mul_add_one_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-two-mul-add-one-eq-alternating-su).
 
 ## Binomial coefficients of even lower index as an alternating sum
 
@@ -87,7 +87,7 @@ an identity of rational numbers in which the exponent $n-2i-1$ may be $-1$.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.2 (3).
 
-Stated but not proved: `MetaMathlibExt.choose_two_mul_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-two-mul-eq-alternating-sum).
+Stated but not proved: `MetaMathlibExt.choose_two_mul_eq_alternating_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#choose-two-mul-eq-alternating-sum).
 
 ## Catalan identity for Fibonacci-type generalized Fibonacci polynomials
 
@@ -102,7 +102,7 @@ $$2^{n-1} F_n = \sum_{i=0}^{\lfloor (n-1)/2 \rfloor} \binom{n}{2i+1} d^{n-2i-1} 
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 3.3 (1).
 
-Stated but not proved: `MetaMathlibExt.gfp_fib_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-catalan).
+Stated but not proved: `MetaMathlibExt.gfp_fib_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-catalan).
 
 ## Catalan identity for Lucas-type generalized Fibonacci polynomials
 
@@ -120,7 +120,7 @@ factor $2$ is cleared so that $n = 0$ is included.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 3.3 (2).
 
-Stated but not proved: `MetaMathlibExt.gfp_lucas_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-lucas-catalan).
+Stated but not proved: `MetaMathlibExt.gfp_lucas_catalan` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-lucas-catalan).
 
 ## Alternating sum of shifted binomial coefficients
 
@@ -137,7 +137,7 @@ $j \ge 1$ the bound $j \le \lfloor (n-s)/\ell \rfloor$ is the condition $\ell j 
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 4.1.
 
-Stated but not proved: `MetaMathlibExt.alternating_sum_choose_mul_choose_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#alternating-sum-choose-mul-choose-sub).
+Stated but not proved: `MetaMathlibExt.alternating_sum_choose_mul_choose_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#alternating-sum-choose-mul-choose-sub).
 
 ## Recurrence for the floor-exponent binomial sums
 
@@ -152,7 +152,7 @@ $$\sum_{i=0}^{\ell} (-1)^i \binom{\ell}{i} T_\ell(n+\ell-i; t) - t\, T_\ell(n; t
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.2.
 
-Stated but not proved: `MetaMathlibExt.floorPowBinomialSum_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#floor-pow-binomial-sum-recurrence).
+Stated but not proved: `MetaMathlibExt.floorPowBinomialSum_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#floor-pow-binomial-sum-recurrence).
 
 ## Alternating sum of binomial row sums
 
@@ -169,7 +169,7 @@ is the ordinary binomial coefficient, the case used in Theorem 4.4.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 4.3.
 
-Stated but not proved: `MetaMathlibExt.alternating_choose_mul_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#alternating-choose-mul-sum-choose).
+Stated but not proved: `MetaMathlibExt.alternating_choose_mul_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#alternating-choose-mul-sum-choose).
 
 ## Generating function of the floor-exponent binomial sums
 
@@ -188,7 +188,7 @@ $(1-x)^\ell - t x^\ell$, which is invertible since its constant term is $1$.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.4.
 
-Stated but not proved: `MetaMathlibExt.floorPowBinomialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#floor-pow-binomial-sum-generating-functi).
+Stated but not proved: `MetaMathlibExt.floorPowBinomialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#floor-pow-binomial-sum-generating-functi).
 
 ## Generating function of the binomial section sums
 
@@ -212,7 +212,7 @@ $s = 1$, $t = 2$ the left side is $x/(1-x)$ and the right side is $0$.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.5.
 
-Stated but not proved: `MetaMathlibExt.sectionBinomialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#section-binomial-sum-generating-function).
+Stated but not proved: `MetaMathlibExt.sectionBinomialSum_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#section-binomial-sum-generating-function).
 
 ## Integral representation of Fibonacci-type generalized Fibonacci polynomials
 
@@ -227,7 +227,7 @@ $$F_n(x) = \frac{n}{2^n} \int_{-1}^{1} \left( d(x) + y \sqrt{d(x)^2 + 4 g(x)} \r
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.1.
 
-Stated but not proved: `MetaMathlibExt.gfp_fib_eval_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-eval-eq-integral).
+Stated but not proved: `MetaMathlibExt.gfp_fib_eval_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-eval-eq-integral).
 
 ## Stewart's integral formula for the Fibonacci numbers
 
@@ -240,7 +240,7 @@ $$F_n = \frac{n}{2^n} \int_{-1}^{1} \left(1 + y\sqrt{5}\right)^{n-1} dy.$$
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Corollary 5.1.
 
-Stated but not proved: `MetaMathlibExt.fib_eq_integral_one_add_mul_sqrt_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#fib-eq-integral-one-add-mul-sqrt-five).
+Stated but not proved: `MetaMathlibExt.fib_eq_integral_one_add_mul_sqrt_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#fib-eq-integral-one-add-mul-sqrt-five).
 
 ## Binomial sum of generalized Fibonacci polynomials as an integral
 
@@ -261,7 +261,7 @@ $g(x) = 0$, the recurrence at $m = -1$ forces $F_1(x) = d(x) F_0(x) = 0$.
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.2.
 
-Stated but not proved: `MetaMathlibExt.gfp_fib_binomial_sum_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-binomial-sum-eq-integral).
+Stated but not proved: `MetaMathlibExt.gfp_fib_binomial_sum_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#gfp-fib-binomial-sum-eq-integral).
 
 ## Binomial sum of Fibonacci numbers as an integral
 
@@ -277,7 +277,7 @@ $$\sum_{i=0}^{n} (-1)^{n+1} \binom{n}{i} (k+1)^i (k-1)^{n-i} F_{n-2i}
 
 - Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Corollary 5.2.
 
-Stated but not proved: `MetaMathlibExt.fib_binomial_sum_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#fib-binomial-sum-eq-integral).
+Stated but not proved: `MetaMathlibExt.fib_binomial_sum_eq_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/GFPCatalanIdentitiesWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html#fib-binomial-sum-eq-integral).
 
 ## Depends on
 
@@ -286,4 +286,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Catalan identities for generalized Fibonacci polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/catalan-identities-for-generalized-fibonacci-pol)

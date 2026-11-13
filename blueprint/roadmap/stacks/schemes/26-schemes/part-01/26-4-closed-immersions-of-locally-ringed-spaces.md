@@ -8,13 +8,13 @@ proof: formalized
 
 # 26.4 Closed immersions of locally ringed spaces
 
-Section 26.4 of the Stacks Project, [Tag 01HJ](https://stacks.math.columbia.edu/tag/01HJ). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 26.4 of the Stacks Project, [Tag 01HJ](https://stacks.math.columbia.edu/tag/01HJ). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01HK, a definition
 
 [Tag 01HK](https://stacks.math.columbia.edu/tag/01HK) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.IsClosedImmersion`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean#L69). The attribute's comment: “the same three conditions for a morphism of locally ringed spaces”.
+**`Stacks.ClosedImmersion.IsClosedImmersion`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/Defs.lean#L69). The attribute's comment: “the same three conditions for a morphism of locally ringed spaces”.
 
 > **Stacks Project, Tag 01C2.** A morphism of ringed spaces is a closed immersion when its
 > underlying continuous map is a closed embedding, its map on structure sheaves is surjective,
@@ -28,7 +28,7 @@ class IsClosedImmersion {X Z : RingedSpace.{u, u}} (i : Z ⟶ X) : Prop
 
 [Tag 01HL](https://stacks.math.columbia.edu/tag/01HL) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.isClosedImmersion_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean#L700). The attribute's comment: “stated for ringed spaces; the source states it for locally ringed spaces”.
+**`Stacks.ClosedImmersion.isClosedImmersion_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean, line 700](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean#L700). The attribute's comment: “stated for ringed spaces; the source states it for locally ringed spaces”.
 
 > **Stacks Project, Tag 01HL.** A morphism of ringed spaces whose restrictions over the
 > members of an open covering of the target are closed immersions is itself a closed immersion.
@@ -45,7 +45,7 @@ theorem isClosedImmersion_of_iSup_eq_top
     IsClosedImmersion f
 ```
 
-**`Stacks.ClosedImmersion.isClosedImmersion_toShHom_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean#L755).
+**`Stacks.ClosedImmersion.isClosedImmersion_toShHom_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean, line 755](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/LocalAtTarget.lean#L755).
 
 > **Stacks Project, Tag 01HL.** Let `f : Z ⟶ X` be a morphism of locally ringed spaces. For
 > `f` to be a closed immersion it suffices that there is an open covering `X = ⋃ Uᵢ` such that
@@ -69,7 +69,7 @@ theorem isClosedImmersion_toShHom_of_iSup_eq_top
 
 [Tag 01HM](https://stacks.math.columbia.edu/tag/01HM) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.closedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean#L1164). The attribute's comment: “the construction of the example: the subspace is the support of the quotient”.
+**`Stacks.ClosedImmersion.closedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean#L1164). The attribute's comment: “the construction of the example: the subspace is the support of the quotient”.
 
 > The closed subspace associated to a locally generated sheaf of ideals on a locally ringed
 > space.
@@ -86,7 +86,7 @@ public noncomputable def closedSubspace
 
 [Tag 01HN](https://stacks.math.columbia.edu/tag/01HN) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.closedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean#L1164).
+**`Stacks.ClosedImmersion.closedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspaceExistence.lean#L1164).
 
 > The closed subspace associated to a locally generated sheaf of ideals on a locally ringed
 > space.
@@ -103,7 +103,7 @@ public noncomputable def closedSubspace
 
 [Tag 01HO](https://stacks.math.columbia.edu/tag/01HO) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.existsUnique_iso_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/IsomorphismOfClosedSubspaces.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/IsomorphismOfClosedSubspaces.lean#L256).
+**`Stacks.ClosedImmersion.existsUnique_iso_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/IsomorphismOfClosedSubspaces.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/IsomorphismOfClosedSubspaces.lean#L256).
 
 > A closed immersion is uniquely isomorphic over its target to the closed subspace defined by
 > its ideal sheaf.
@@ -119,7 +119,7 @@ theorem existsUnique_iso_closedSubspace {X Y : LocallyRingedSpace.{u}} (f : X �
 
 [Tag 01HP](https://stacks.math.columbia.edu/tag/01HP) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.subsingleton_factorizations_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspace.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspace.lean#L113). The attribute's comment: “uniqueness”.
+**`Stacks.ClosedImmersion.subsingleton_factorizations_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspace.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/ClosedSubspace.lean#L113). The attribute's comment: “uniqueness”.
 
 > **Stacks Project, Tag 01HP.** A factorization of a morphism of locally ringed spaces
 > through the closed subspace associated to an ideal sheaf, when it exists, is unique.
@@ -132,7 +132,7 @@ theorem subsingleton_factorizations_closedSubspace {X' Y : LocallyRingedSpace.{u
     Subsingleton {g : Y ⟶ D.space // g ≫ D.inclusion = f}
 ```
 
-**`Stacks.ClosedImmersion.factorsThrough_closedSubspace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationExistence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationExistence.lean#L359). The attribute's comment: “factorization criterion”.
+**`Stacks.ClosedImmersion.factorsThrough_closedSubspace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationExistence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationExistence.lean#L359). The attribute's comment: “factorization criterion”.
 
 > A morphism of locally ringed spaces factors through the closed subspace cut out by `j`
 > exactly when the canonical map `f^* J ⟶ 𝒪_Y` vanishes.
@@ -142,7 +142,7 @@ theorem factorsThrough_closedSubspace_iff [Mono j] (D : ClosedSubspaceData X J j
     (∃ g : Y ⟶ D.space, g ≫ D.inclusion = f) ↔ pullbackIdealMap f J j = 0
 ```
 
-**`Stacks.ClosedImmersion.factorsThrough_closedSubspace_of_localGenerators_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean#L50). The attribute's comment: “factorization criterion”.
+**`Stacks.ClosedImmersion.factorsThrough_closedSubspace_of_localGenerators_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean#L50). The attribute's comment: “factorization criterion”.
 
 > A morphism `f : Y ⟶ X` of locally ringed spaces factors through the closed subspace cut out
 > by a sheaf of ideals `j : J ⟶ 𝒪_X` which is locally generated by sections exactly when the
@@ -157,7 +157,7 @@ theorem factorsThrough_closedSubspace_of_localGenerators_iff {X Y : LocallyRinge
         g ≫ (closedSubspace X J j hJ).inclusion = f) ↔ pullbackIdealMap f J j = 0
 ```
 
-**`Stacks.ClosedImmersion.subsingleton_factorizations_closedSubspace_of_localGenerators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean#L61). The attribute's comment: “uniqueness”.
+**`Stacks.ClosedImmersion.subsingleton_factorizations_closedSubspace_of_localGenerators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/FactorizationLocalGenerators.lean#L61). The attribute's comment: “uniqueness”.
 
 > A factorization of a morphism of locally ringed spaces through the closed subspace cut out by
 > a sheaf of ideals which is locally generated by sections, when it exists, is unique.
@@ -176,7 +176,7 @@ theorem subsingleton_factorizations_closedSubspace_of_localGenerators
 
 [Tag 01HQ](https://stacks.math.columbia.edu/tag/01HQ) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.pullbackIdeal_locallyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L229). The attribute's comment: “local generation”.
+**`Stacks.ClosedImmersion.pullbackIdeal_locallyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L229). The attribute's comment: “local generation”.
 
 > **Stacks Project, Tag 01HQ.** The inverse-image ideal of a locally generated ideal sheaf is
 > locally generated. Tag 01B3 gives local generators for the pullback `f^* I`, and the inverse-image
@@ -189,7 +189,7 @@ theorem pullbackIdeal_locallyGenerated (I : SheafOfModules.{u} (structureSheafRi
     Nonempty (SheafOfModules.LocalGeneratorsData.{u} (pullbackIdeal f I i))
 ```
 
-**`Stacks.ClosedImmersion.restrictedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L311). The attribute's comment: “restricted map”.
+**`Stacks.ClosedImmersion.restrictedMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L311). The attribute's comment: “restricted map”.
 
 > **Stacks Project, Tag 01HQ.** The morphism of closed subspaces induced by `f`.
 
@@ -200,7 +200,7 @@ noncomputable def restrictedMap (I : SheafOfModules.{u} (structureSheafRing Y.to
     (pullbackClosedSubspace f I i hI).space ⟶ (closedSubspace Y I i hI).space
 ```
 
-**`Stacks.ClosedImmersion.restrictedMap_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L320). The attribute's comment: “commutative square”.
+**`Stacks.ClosedImmersion.restrictedMap_commutes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L320). The attribute's comment: “commutative square”.
 
 > **Stacks Project, Tag 01HQ.** The induced map commutes with the inclusions into the ambient
 > spaces.
@@ -213,7 +213,7 @@ theorem restrictedMap_commutes (I : SheafOfModules.{u} (structureSheafRing Y.toR
       (pullbackClosedSubspace f I i hI).inclusion ≫ f
 ```
 
-**`Stacks.ClosedImmersion.restrictedMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L330). The attribute's comment: “uniqueness”.
+**`Stacks.ClosedImmersion.restrictedMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L330). The attribute's comment: “uniqueness”.
 
 > **Stacks Project, Tag 01HQ.** A morphism between the associated closed subspaces over `f` is
 > the induced one.
@@ -228,7 +228,7 @@ theorem restrictedMap_unique (I : SheafOfModules.{u} (structureSheafRing Y.toRin
     g = restrictedMap f I i hI
 ```
 
-**`Stacks.ClosedImmersion.restrictedMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L345). The attribute's comment: “fibre square”.
+**`Stacks.ClosedImmersion.restrictedMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Schemes/ClosedImmersions/Pullback.lean#L345). The attribute's comment: “fibre square”.
 
 > **Stacks Project, Tag 01HQ.** The restriction square is a fibre square of locally ringed
 > spaces.
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 26.4, Tag 01HJ](https://stacks.math.columbia.edu/tag/01HJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

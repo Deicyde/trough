@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.17 Flat modules
 
-Section 17.17 of the Stacks Project, [Tag 05NC](https://stacks.math.columbia.edu/tag/05NC). 11 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.17 of the Stacks Project, [Tag 05NC](https://stacks.math.columbia.edu/tag/05NC). 11 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05ND, a definition
 
 [Tag 05ND](https://stacks.math.columbia.edu/tag/05ND) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L285). The attribute's comment: “the definition: F is flat when G ↦ G ⊗\_\{O\_X} F is exact”. References: SGA 4 V (1.1), “commutative case”.
+**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L286). The attribute's comment: “the definition: F is flat when G ↦ G ⊗\_\{O\_X} F is exact”. References: SGA 4 V (1.1), “commutative case”.
 
 > A sheaf of modules is flat when tensoring on the right with it is an exact
 > endofunctor on sheaves of modules.
@@ -34,7 +34,7 @@ abbrev IsFlat {O : Sheaf J CommRingCat.{w}}
 
 [Tag 05NE](https://stacks.math.columbia.edu/tag/05NE) in the Stacks Project.
 
-**`Stacks.SheafOfModules.flat_stalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantInvertible.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantInvertible.lean#L625). The attribute's comment: “flat implies stalkwise flat, for a ringed space, in the `structureSheafRing` spelling”.
+**`Stacks.SheafOfModules.flat_stalk_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantInvertible.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantInvertible.lean#L630). The attribute's comment: “flat implies stalkwise flat, for a ringed space, in the `structureSheafRing` spelling”.
 
 > **Tag 05NE, in the spellings the determinant development uses.** A flat sheaf of modules on
 > a ringed space has flat stalks, for the module structure
@@ -56,7 +56,7 @@ theorem flat_stalk_of_isFlat {Y : RingedSpace.{u, u}}
     @Module.Flat _ _ _ _ (Stacks.SheafOfModules.stalkModule F x)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.isFlat_iff_stalk_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Flat/Stalk.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Flat/Stalk.lean#L78).
+**`AlgebraicGeometry.SheafOfModules.isFlat_iff_stalk_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Flat/Stalk.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Flat/Stalk.lean#L78).
 
 > A module sheaf on a ringed space is flat precisely when each of its
 > stalks is flat over the corresponding stalk of the structure sheaf.
@@ -81,7 +81,7 @@ public theorem isFlat_iff_stalk_flat {X : TopCat.{u}}
 
 [Tag 05NF](https://stacks.math.columbia.edu/tag/05NF) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.IsFlatAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Flat/AtPoint.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Flat/AtPoint.lean#L42).
+**`AlgebraicGeometry.SheafOfModules.IsFlatAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Flat/AtPoint.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/Flat/AtPoint.lean#L42).
 
 > An `𝒪_X`-module `F` on a ringed space `X` is *flat at* `x : X` if its stalk `F_x` is a flat
 > `𝒪_{X,x}`-module.
@@ -97,7 +97,7 @@ noncomputable def IsFlatAt {X : RingedSpace.{u}}
 
 [Tag 0H97](https://stacks.math.columbia.edu/tag/0H97) in the Stacks Project.
 
-**`Stacks.SheafOfModules.modulePullback_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatPullback.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatPullback.lean#L47). References: SGA 4 V (1.7.1), “ringed spaces”.
+**`Stacks.SheafOfModules.modulePullback_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatPullback.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatPullback.lean#L47). References: SGA 4 V (1.7.1), “ringed spaces”.
 
 > Pullback along a morphism of ringed spaces preserves flat sheaves of modules.
 
@@ -115,7 +115,7 @@ theorem modulePullback_isFlat {X Y : RingedSpace.{u, u}} (f : X ⟶ Y)
 
 [Tag 05NG](https://stacks.math.columbia.edu/tag/05NG) in the Stacks Project.
 
-**`Stacks.SheafOfModules.FlatColimits.isFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L225). The attribute's comment: “filtered\_colimits\_flat”.
+**`Stacks.SheafOfModules.FlatColimits.isFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L227). The attribute's comment: “filtered\_colimits\_flat”.
 
 > **Stacks Project, Tag 03EU part (2), filtered colimits.** A filtered colimit of flat
 > sheaves of modules is flat.
@@ -128,7 +128,7 @@ theorem isFlat_colimit {O : Sheaf J CommRingCat.{w}}
     IsFlat (colimit F)
 ```
 
-**`Stacks.SheafOfModules.FlatColimits.isFlat_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L241). The attribute's comment: “direct\_sums\_flat”.
+**`Stacks.SheafOfModules.FlatColimits.isFlat_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L243). The attribute's comment: “direct\_sums\_flat”.
 
 > **Stacks Project, Tag 03EU part (2), direct sums.** An arbitrary direct sum of flat sheaves
 > of modules is flat. An arbitrary coproduct is the filtered colimit of its finite subcoproducts,
@@ -146,7 +146,7 @@ theorem isFlat_coproduct {O : Sheaf J CommRingCat.{w}} {ι : Type z}
 
 [Tag 05NH](https://stacks.math.columbia.edu/tag/05NH) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.isFlat_jShriek_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean#L169).
+**`AlgebraicGeometry.SheafOfModules.isFlat_jShriek_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean#L169).
 
 > **Stacks 05NH.** The extension by zero of the structure sheaf of an open subset of a ringed
 > space is a flat sheaf of modules.
@@ -165,7 +165,7 @@ theorem isFlat_jShriek_unit {X : TopCat.{u}} (U : Opens X)
 
 [Tag 05NI](https://stacks.math.columbia.edu/tag/05NI) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exists_epi_from_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean#L222). The attribute's comment: “part (2)”.
+**`Stacks.SheafOfModules.exists_epi_from_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ExtensionByZero/Flat.lean#L222). The attribute's comment: “part (2)”.
 
 > **Stacks 05NI, part (2).** Every sheaf of modules on a ringed space is a quotient of a flat
 > sheaf of modules: the explicit cover of part (1) is a direct sum of extensions by zero of
@@ -180,7 +180,7 @@ theorem exists_epi_from_flat {X : TopCat.{u}}
       IsFlat.{u, u, u, u} (O := O) P ∧ Epi f
 ```
 
-**`Stacks.SheafOfModules.exists_epi_from_coproduct_jShriek_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatCover.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatCover.lean#L66). The attribute's comment: “part (1)”.
+**`Stacks.SheafOfModules.exists_epi_from_coproduct_jShriek_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatCover.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/FlatCover.lean#L66). The attribute's comment: “part (1)”.
 
 > **Stacks 05NI, part (1).** Every sheaf of modules is a quotient of a coproduct of extensions
 > by zero of structure sheaves on open subspaces.
@@ -198,7 +198,7 @@ theorem exists_epi_from_coproduct_jShriek_unit :
 
 [Tag 05NJ](https://stacks.math.columbia.edu/tag/05NJ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.FlatCover.sheafTensorRight_shortExact_of_isFlat_X₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatCoverTensorExactness.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatCoverTensorExactness.lean#L385). The attribute's comment: “ringed spaces, as the special case of a general site”.
+**`Stacks.SheafOfModules.FlatCover.sheafTensorRight_shortExact_of_isFlat_X₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatCoverTensorExactness.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatCoverTensorExactness.lean#L385). The attribute's comment: “ringed spaces, as the special case of a general site”.
 
 > **Stacks Project, Tag 03EX, sheaf case.** If the final term of a short exact sequence of
 > sheaves of modules is flat, tensoring the sequence with any sheaf of modules gives a short exact
@@ -229,7 +229,7 @@ theorem sheafTensorRight_shortExact_of_isFlat_X₃
 
 [Tag 05NK](https://stacks.math.columbia.edu/tag/05NK) in the Stacks Project.
 
-**`Stacks.SheafOfModules.FlatShortExact.isFlat_middle_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean#L737). The attribute's comment: “(1)”. References: SGA 1 IV (1.1), “(ii) M' flat => M flat”.
+**`Stacks.SheafOfModules.FlatShortExact.isFlat_middle_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean#L737). The attribute's comment: “(1)”. References: SGA 1 IV (1.1), “(ii) M' flat => M flat”.
 
 > **Statement 1** (Stacks Tag 05NK, extension of flat modules is flat).  Given a short
 > exact sequence `0 → F₂ → F₁ → F₀ → 0` of sheaves of `O_X`-modules (encoded as a short
@@ -250,7 +250,7 @@ theorem isFlat_middle_of_shortExact
     IsFlat S.X₂
 ```
 
-**`Stacks.SheafOfModules.FlatShortExact.isFlat_sub_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean#L764). The attribute's comment: “(2)”. References: SGA 1 IV (1.1), “(ii) M flat => M' flat”; SGA 4 XVII (4.1.1), “(i), ringed space”.
+**`Stacks.SheafOfModules.FlatShortExact.isFlat_sub_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatShortExactSequence.lean#L764). The attribute's comment: “(2)”. References: SGA 1 IV (1.1), “(ii) M flat => M' flat”; SGA 4 XVII (4.1.1), “(i), ringed space”.
 
 > **Statement 2** (Stacks Tag 05NK, kernel of an epimorphism of flat modules is flat).
 > Given a short exact sequence `0 → F₂ → F₁ → F₀ → 0` of sheaves of `O_X`-modules (encoded as
@@ -274,7 +274,7 @@ theorem isFlat_sub_of_shortExact
 
 [Tag 05NL](https://stacks.math.columbia.edu/tag/05NL) in the Stacks Project.
 
-**`Stacks.SheafOfModules.FlatResolution.acyclic_map_sheafTensorRight_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatResolution/TensorExactness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/FlatResolution/TensorExactness.lean#L140). The attribute's comment: “ringed spaces, as the special case of a general site”. References: EGA IV (2.1.10), “Absolute case f = id”.
+**`Stacks.SheafOfModules.FlatResolution.acyclic_map_sheafTensorRight_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/FlatResolution/TensorExactness.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/FlatResolution/TensorExactness.lean#L140). The attribute's comment: “ringed spaces, as the special case of a general site”. References: EGA IV (2.1.10), “Absolute case f = id”.
 
 > **Stacks 03EZ, sheaf case.** An exact `ℕ`-indexed complex of sheaves of modules all of
 > whose terms are flat stays exact after tensoring with an arbitrary sheaf of modules.
@@ -302,7 +302,7 @@ theorem acyclic_map_sheafTensorRight_of_isFlat
 
 [Tag 08BK](https://stacks.math.columbia.edu/tag/08BK) in the Stacks Project.
 
-**`Stacks.FlatEquationalCriterion.exists_local_factorization_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatEquationalCriterion.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatEquationalCriterion.lean#L259).
+**`Stacks.FlatEquationalCriterion.exists_local_factorization_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatEquationalCriterion.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatEquationalCriterion.lean#L259).
 
 > **Stacks Project Tag 08BK (Modules, Lemma 17.17.11).**
 >
@@ -334,4 +334,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.17, Tag 05NC](https://stacks.math.columbia.edu/tag/05NC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

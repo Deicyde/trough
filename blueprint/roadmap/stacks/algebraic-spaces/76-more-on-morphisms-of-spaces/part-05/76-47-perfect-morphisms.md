@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.47 Perfect morphisms
 
-Section 76.47 of the Stacks Project, [Tag 06BY](https://stacks.math.columbia.edu/tag/06BY). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.47 of the Stacks Project, [Tag 06BY](https://stacks.math.columbia.edu/tag/06BY). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06BZ, a definition
 
 [Tag 06BZ](https://stacks.math.columbia.edu/tag/06BZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsPerfect`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean#L65). The attribute's comment: “part (1): perfect morphism”.
+**`AlgebraicGeometry.Space.IsPerfect`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean#L65). The attribute's comment: “part (1): perfect morphism”.
 
 > **Stacks 06BZ, part (1).** A morphism of algebraic spaces over `S` is *perfect* when
 > every commuting square of étale scheme charts induces a perfect scheme morphism.
@@ -23,7 +23,7 @@ Section 76.47 of the Stacks Project, [Tag 06BY](https://stacks.math.columbia.edu
 abbrev IsPerfect (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsPerfectAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean#L73). The attribute's comment: “part (2): perfect at a point”.
+**`AlgebraicGeometry.Space.IsPerfectAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Perfect.lean#L73). The attribute's comment: “part (2): perfect at a point”.
 
 > **Stacks 06BZ, part (2).** A morphism of algebraic spaces over `S` is *perfect at* a
 > point `x` of its source when it is perfect on an open subspace of the source containing
@@ -37,7 +37,7 @@ abbrev IsPerfectAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 06C0](https://stacks.math.columbia.edu/tag/06C0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsPerfect.of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L73).
+**`AlgebraicGeometry.Space.IsPerfect.of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L74).
 
 > **Stacks 06C0.** A flat base change of a perfect morphism of algebraic spaces over `S` is
 > perfect: in a cartesian square with `g : Y ⟶ Z` perfect and `f : X ⟶ Z` flat, the base change
@@ -50,7 +50,7 @@ theorem IsPerfect.of_isPullback_of_isFlat
     IsPerfect B S hS g'.hom
 ```
 
-**`AlgebraicGeometry.Space.IsPerfect.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L83). The attribute's comment: “pullback spelling”.
+**`AlgebraicGeometry.Space.IsPerfect.pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L84). The attribute's comment: “pullback spelling”.
 
 > **Stacks 06C0** in the `pullback` spelling: if `f : X ⟶ Y` is a perfect morphism of algebraic
 > spaces over `S` and `g : Y' ⟶ Y` is flat, then the projection `X ×_Y Y' ⟶ Y'` is perfect.
@@ -65,7 +65,7 @@ theorem IsPerfect.pullback_snd {X Y Y' : AlgebraicSpaces B S hS} (f : X ⟶ Y) (
 
 [Tag 06C1](https://stacks.math.columbia.edu/tag/06C1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsPerfect.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L92).
+**`AlgebraicGeometry.Space.IsPerfect.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/PerfectStability.lean#L93).
 
 > **Stacks 06C1.** A composition of perfect morphisms of algebraic spaces over `S` is
 > perfect.
@@ -82,7 +82,7 @@ theorem IsPerfect.comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 06C2](https://stacks.math.columbia.edu/tag/06C2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_and_isPerfect_iff_isFlat_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L75).
+**`AlgebraicGeometry.Space.isFlat_and_isPerfect_iff_isFlat_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/FinitePresentation.lean#L75).
 
 > **Stacks 06C2.** A morphism of algebraic spaces over `S` is flat and perfect if and
 > only if it is flat and locally of finite presentation.
@@ -99,7 +99,7 @@ theorem isFlat_and_isPerfect_iff_isFlat_and_isLocallyOfFinitePresentation
 
 [Tag 0E4U](https://stacks.math.columbia.edu/tag/0E4U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectProperPushforward.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectProperPushforward.lean#L255).
+**`AlgebraicGeometry.Space.isPerfect_derivedModulePushforward_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectProperPushforward.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectProperPushforward.lean#L255).
 
 > **Stacks 0E4U.**  Let `S` be a scheme, let `Y` be a Noetherian algebraic space over `S`, let
 > `f : X ⟶ Y` be a perfect proper morphism of algebraic spaces over `S`, and let `E` be a perfect
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.47, Tag 06BY](https://stacks.math.columbia.edu/tag/06BY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

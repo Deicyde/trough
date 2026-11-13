@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.26 Flat resolutions
 
-Section 20.26 of the Stacks Project, [Tag 06Y7](https://stacks.math.columbia.edu/tag/06Y7). 17 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.26 of the Stacks Project, [Tag 06Y7](https://stacks.math.columbia.edu/tag/06Y7). 17 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06Y8, a lemma
 
 [Tag 06Y8](https://stacks.math.columbia.edu/tag/06Y8) in the Stacks Project.
 
-**`main_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean#L39). References: SGA 4 XVII (7.3.3), “special case”.
+**`main_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean#L39). References: SGA 4 XVII (7.3.3), “special case”.
 
 > **Statement 1.**  For a fixed complex `G`, the functor
 > `Tleft G : F ↦ Tot(G ⊗ F)` on `K(Mod(O_X))` can be equipped with a functorial isomorphism
@@ -34,7 +34,7 @@ theorem main_left (G : CochainComplex C ℤ) :
       @Functor.IsTriangulated _ _ _ _ _ _ (Tleft G) e _ _ _ _ _ _ _ _
 ```
 
-**`main_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean#L52). References: SGA 4 XVII (7.3.3), “special case”.
+**`main_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TensorComplex/ExactFunctor/IsTriangulated.lean#L52). References: SGA 4 XVII (7.3.3), “special case”.
 
 > **Statement 2.**  For a fixed complex `G`, the functor
 > `Tright G : F ↦ Tot(F ⊗ G)` on `K(Mod(O_X))` can be equipped with a functorial isomorphism
@@ -52,7 +52,7 @@ theorem main_right (G : CochainComplex C ℤ) :
 
 [Tag 06Y9](https://stacks.math.columbia.edu/tag/06Y9) in the Stacks Project.
 
-**`Stacks.SheafOfModules.IsKFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Defs.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Defs.lean#L66).
+**`Stacks.SheafOfModules.IsKFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Defs.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Defs.lean#L66).
 
 > A cochain complex `K` of sheaves of `R`-modules is **K-flat** if `Tot(F ⊗_R K)` is acyclic
 > for every acyclic cochain complex `F`.
@@ -66,7 +66,7 @@ abbrev IsKFlat
 
 [Tag 06YA](https://stacks.math.columbia.edu/tag/06YA) in the Stacks Project.
 
-**`Stacks.SheafOfModules.IsKFlat.quasiIso_le_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean#L100). The attribute's comment: “on the homotopy category, as the tag states it”.
+**`Stacks.SheafOfModules.IsKFlat.quasiIso_le_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean#L100). The attribute's comment: “on the homotopy category, as the tag states it”.
 
 > **[Stacks, Tag 06YA].** For a K-flat complex `K` of `𝒪`-modules, the exact functor
 > `F ↦ Tot(F ⊗_𝒪 K)` of `K(Mod(𝒪))` carries quasi-isomorphisms to quasi-isomorphisms.
@@ -84,7 +84,7 @@ theorem IsKFlat.quasiIso_le_inverseImage
           (Stacks.SheafOfModules.Tensor.sheafTensor R) K)
 ```
 
-**`Stacks.SheafOfModules.IsKFlat.quasiIso_rightTensorComplex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean#L124). The attribute's comment: “at the level of complexes rather than of the homotopy category”.
+**`Stacks.SheafOfModules.IsKFlat.quasiIso_rightTensorComplex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TensorPreservesQuasiIso.lean#L124). The attribute's comment: “at the level of complexes rather than of the homotopy category”.
 
 > **[Stacks, Tag 06YA] at the level of complexes.** For a K-flat complex `K` of `𝒪`-modules
 > and a quasi-isomorphism `f : F₁ ⟶ F₂` of complexes of `𝒪`-modules, the induced morphism
@@ -107,7 +107,7 @@ theorem IsKFlat.quasiIso_rightTensorComplex_map
 
 [Tag 06YB](https://stacks.math.columbia.edu/tag/06YB) in the Stacks Project.
 
-**`Stacks.SheafOfModules.KFlatStalkCriterion.kFlat_iff_stalkwise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/StalkCriterion.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/StalkCriterion.lean#L567).
+**`Stacks.SheafOfModules.KFlatStalkCriterion.kFlat_iff_stalkwise`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/StalkCriterion.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/StalkCriterion.lean#L566).
 
 > **Stacks 06YB.** A complex of sheaves of modules on a ringed space is K-flat if and only if
 > its complex of stalks at every point is K-flat over the stalk of the structure sheaf.
@@ -123,14 +123,14 @@ theorem kFlat_iff_stalkwise
         HomologicalComplex.HasMapBifunctor left right
           (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} R) (ComplexShape.up ℤ) :=
       fun left right => Stacks.SheafOfModules.Tensor.hasMapBifunctor_sheafTensor R left right
-    Stacks.SheafOfModules.KFlat.KFlat.{u, u, u} R K ↔ KFlatStalkwise R K
+    Stacks.SheafOfModules.KFlat.{u, u, u} R K ↔ KFlatStalkwise R K
 ```
 
 ## Tag 079R, a lemma
 
 [Tag 079R](https://stacks.math.columbia.edu/tag/079R) in the Stacks Project.
 
-**`Stacks.SheafOfModules.kFlat_tensorComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TensorProduct.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TensorProduct.lean#L513).
+**`Stacks.SheafOfModules.kFlat_tensorComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TensorProduct.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TensorProduct.lean#L513).
 
 > **Stacks 079R.** The total tensor product of two K-flat complexes of sheaves of modules is
 > K-flat.
@@ -148,9 +148,9 @@ theorem kFlat_tensorComplex
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.kFlat_of_second_third`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L52) (StacksFrontier): “ringed space case of the ringed site statement, first vertex”.
-- [`Stacks.SheafOfModules.kFlat_of_first_third`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L55) (StacksFrontier): “ringed space case of the ringed site statement, second vertex”.
-- [`Stacks.SheafOfModules.kFlat_of_first_second`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L115), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L58) (StacksFrontier): “ringed space case of the ringed site statement, third vertex”.
+- [`Stacks.SheafOfModules.kFlat_of_second_third`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L52) (StacksFrontier): “ringed space case of the ringed site statement, first vertex”.
+- [`Stacks.SheafOfModules.kFlat_of_first_third`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L55) (StacksFrontier): “ringed space case of the ringed site statement, second vertex”.
+- [`Stacks.SheafOfModules.kFlat_of_first_second`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/DistinguishedTriangles.lean#L115), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L58) (StacksFrontier): “ringed space case of the ringed site statement, third vertex”.
 
 ## Tag 0G6U, a lemma
 
@@ -158,13 +158,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.isKFlat_two_out_of_three`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TwoOutOfThree.lean#L337), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L61) (StacksFrontier): “ringed space case of the ringed site statement”.
+- [`Stacks.SheafOfModules.isKFlat_two_out_of_three`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/TwoOutOfThree.lean#L337), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/TwoOutOfThree.lean#L61) (StacksFrontier): “ringed space case of the ringed site statement”.
 
 ## Tag 06YC, a lemma
 
 [Tag 06YC](https://stacks.math.columbia.edu/tag/06YC) in the Stacks Project.
 
-**`Stacks.SheafOfModules.KFlatPullback.kFlat_pullback_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/PullbackFromTheStalkCriterion.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/PullbackFromTheStalkCriterion.lean#L61).
+**`Stacks.SheafOfModules.KFlatPullback.kFlat_pullback_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/PullbackFromTheStalkCriterion.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/PullbackFromTheStalkCriterion.lean#L61).
 
 > **Stacks 06YC.** The degreewise pullback of a K-flat complex of `𝒪_Y`-modules along
 > a morphism of ringed spaces is a K-flat complex of `𝒪_X`-modules.
@@ -184,13 +184,13 @@ theorem kFlat_pullback_unconditional {X Y : AlgebraicGeometry.RingedSpace.{u, u}
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.kFlat_of_boundedAbove_of_flat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/BoundedAboveFlatComplexes.lean#L328), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/BoundedAboveFlatComplexes.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/BoundedAboveFlatComplexes.lean#L46) (StacksFrontier): “ringed space case of the ringed site statement”.
+- [`Stacks.SheafOfModules.kFlat_of_boundedAbove_of_flat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/BoundedAboveFlatComplexes.lean#L328), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/BoundedAboveFlatComplexes.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/BoundedAboveFlatComplexes.lean#L46) (StacksFrontier): “ringed space case of the ringed site statement”.
 
 ## Tag 06YE, a lemma
 
 [Tag 06YE](https://stacks.math.columbia.edu/tag/06YE) in the Stacks Project.
 
-**`Stacks.SheafOfModules.kFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/SequentialColimits.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/SequentialColimits.lean#L85).
+**`Stacks.SheafOfModules.kFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/SequentialColimits.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/SequentialColimits.lean#L85).
 
 > A sequential colimit of K-flat complexes of sheaves of modules is K-flat.
 
@@ -205,7 +205,7 @@ theorem kFlat_colimit
 
 [Tag 079T](https://stacks.math.columbia.edu/tag/079T) in the Stacks Project.
 
-**`Stacks.Cohomology.SpaceResolutionByExtensionsByZero.exists_resolutionByDirectSumsExtensionsByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/SpaceResolutionByExtensionsByZero.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/SpaceResolutionByExtensionsByZero.lean#L354).
+**`Stacks.Cohomology.SpaceResolutionByExtensionsByZero.exists_resolutionByDirectSumsExtensionsByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/SpaceResolutionByExtensionsByZero.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/SpaceResolutionByExtensionsByZero.lean#L354).
 
 > Every cochain complex `G` of `O`-modules on a ringed space admits a compatible system of
 > bounded-above resolutions of its canonical truncations `τ_{≤ n+1} G` whose terms and successive
@@ -222,7 +222,7 @@ theorem exists_resolutionByDirectSumsExtensionsByZero
 
 [Tag 06YF](https://stacks.math.columbia.edu/tag/06YF) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.exists_isKFlat_isFlat_quasiIso_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RingedSpace/FlatKFlatResolution.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RingedSpace/FlatKFlatResolution.lean#L64).
+**`AlgebraicGeometry.RingedSpace.exists_isKFlat_isFlat_quasiIso_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RingedSpace/FlatKFlatResolution.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RingedSpace/FlatKFlatResolution.lean#L64).
 
 > **Stacks 06YF.** Every cochain complex `G` of `𝒪_X`-modules on a ringed space receives a
 > termwise surjective quasi-isomorphism from a K-flat complex whose terms are flat `𝒪_X`-modules.
@@ -246,8 +246,8 @@ public theorem exists_isKFlat_isFlat_quasiIso_epi
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.quasiIso_mapBifunctorMap_id_of_kFlat_right`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/ResolutionIndependence.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean#L45) (StacksFrontier): “ringed space case of the ringed site statement”.
-- [`Stacks.SheafOfModules.quasiIso_tensorComplex_obj_map_of_kFlat`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/ResolutionIndependence.lean#L130), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean#L48) (StacksFrontier): “ringed space case, tensorComplex spelling”.
+- [`Stacks.SheafOfModules.quasiIso_mapBifunctorMap_id_of_kFlat_right`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/ResolutionIndependence.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean#L45) (StacksFrontier): “ringed space case of the ringed site statement”.
+- [`Stacks.SheafOfModules.quasiIso_tensorComplex_obj_map_of_kFlat`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/KFlat/ResolutionIndependence.lean#L130), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/QuasiIsoOfKFlatComplexes.lean#L48) (StacksFrontier): “ringed space case, tensorComplex spelling”.
 
 ## Tag 06YH, a definition
 
@@ -255,13 +255,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.TorAmplitude.derTensor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L103), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/OnARingedSpace.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/OnARingedSpace.lean#L40) (StacksFrontier): “the derived tensor product on a ringed space, with its exactness”.
+- [`Stacks.Cohomology.TorAmplitude.derTensor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/TorAmplitude/OnARingedSpace.lean#L103), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/OnARingedSpace.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/OnARingedSpace.lean#L40) (StacksFrontier): “the derived tensor product on a ringed space, with its exactness”.
 
 ## Tag 08BP, a definition
 
 [Tag 08BP](https://stacks.math.columbia.edu/tag/08BP) in the Stacks Project.
 
-**`Stacks.Cohomology.tor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean#L83). References: SGA 4½ Etat 0 (6.2), “Tor\_i, ringed space”; SGA 4 XVII (4.1.8), “modules, not complexes”.
+**`Stacks.Cohomology.tor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean#L83). References: SGA 4½ Etat 0 (6.2), “Tor\_i, ringed space”; SGA 4 XVII (4.1.8), “modules, not complexes”.
 
 > **Tag 08BP.** The `O_X`-module `Tor_p^{O_X}(F, G) = H^{-p}(F ⊗_{O_X}^{L} G)`.
 
@@ -273,7 +273,7 @@ def tor (p : ℤ) (F G : OXMod.{u} X) : OXMod.{u} X
 
 [Tag 08BQ](https://stacks.math.columbia.edu/tag/08BQ) in the Stacks Project.
 
-**`Stacks.Cohomology.flat_iff_forall_isZero_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean#L373). The attribute's comment: “(1) ⟺ (2) for a ringed space, with clause (2) stated in the source's own terms: the vanishing of the sheaf Tor\_1^\{O\_X}(F, G) = H^\{-1}(F ⊗^L\_\{O\_X} G) of Tag 08BP, for every O\_X-module G, and clause (1) sheaf-level flatness of Tag 05ND.”.
+**`Stacks.Cohomology.flat_iff_forall_isZero_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean#L373). The attribute's comment: “(1) ⟺ (2) for a ringed space, with clause (2) stated in the source's own terms: the vanishing of the sheaf Tor\_1^\{O\_X}(F, G) = H^\{-1}(F ⊗^L\_\{O\_X} G) of Tag 08BP, for every O\_X-module G, and clause (1) sheaf-level flatness of Tag 05ND.”.
 
 > **Tag 08BQ: Tor measures the deviation of flatness.** Let `(X, 𝒪_X)` be a ringed space and
 > `ℱ` an `𝒪_X`-module. The following are equivalent:
@@ -309,7 +309,7 @@ theorem flat_iff_forall_isZero_tor (F : OXMod.{u, u} X) :
     OXModule.Flat F ↔ ∀ G : OXMod.{u, u} X, IsZero (tor X 1 F G)
 ```
 
-**`OXModule.flat_iff_tor1_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean#L506). The attribute's comment: “(1) ⟺ (2) with clause (2) read stalkwise: Tor\_1 here is the module-theoretic Tor\_1^\{O\_\{X,x}}(F\_x, G\_x) at every point, not the sheaf Tor\_1 of Tag 08BP. The tag's clause (2) in the source's own terms — the vanishing of Stacks.Cohomology.tor X 1 F G — is Stacks.Cohomology.flat\_iff\_forall\_isZero\_tor in StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, and the two readings are identified there by isZero\_derivedTensorHomology\_iff\_forall\_isZero\_tor.”. References: SGA 6 I (5.1.1), “special case”.
+**`OXModule.flat_iff_tor1_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean#L506). The attribute's comment: “(1) ⟺ (2) with clause (2) read stalkwise: Tor\_1 here is the module-theoretic Tor\_1^\{O\_\{X,x}}(F\_x, G\_x) at every point, not the sheaf Tor\_1 of Tag 08BP. The tag's clause (2) in the source's own terms — the vanishing of Stacks.Cohomology.tor X 1 F G — is Stacks.Cohomology.flat\_iff\_forall\_isZero\_tor in StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, and the two readings are identified there by isZero\_derivedTensorHomology\_iff\_forall\_isZero\_tor.”. References: SGA 6 I (5.1.1), “special case”.
 
 > **Theorem (Stacks Tag 08BQ — "Tor measures the deviation of flatness").**
 > Let `(X, O_X)` be a ringed space and `F` an `O_X`-module.  Then `F` is flat
@@ -364,7 +364,7 @@ theorem flat_iff_tor1_eq_zero (F : OXModule X) :
 
 [Tag 0G6V](https://stacks.math.columbia.edu/tag/0G6V) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exists_isKFlat_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean#L117). The attribute's comment: “the K-flat factorization”.
+**`Stacks.SheafOfModules.exists_isKFlat_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean#L117). The attribute's comment: “the K-flat factorization”.
 
 > **Tag 0G6V.** A map `a : K^• ⟶ L^•` of complexes of `O`-modules with `K^•` K-flat factors,
 > up to homotopy, through a K-flat complex `N^•` which maps to `L^•` by a quasi-isomorphism.
@@ -380,7 +380,7 @@ theorem exists_isKFlat_factorization
       IsKFlat X.O N ∧ QuasiIso c ∧ Nonempty (Homotopy a (b ≫ c))
 ```
 
-**`Stacks.SheafOfModules.exists_isKFlat_isFlat_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean#L132). The attribute's comment: “the factorization with flat terms”.
+**`Stacks.SheafOfModules.exists_isKFlat_isFlat_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/Factorization.lean#L132). The attribute's comment: “the factorization with flat terms”.
 
 > **Tag 0G6V, second half.** If in addition the terms of `K^•` are flat `O`-modules, then the
 > intermediate complex of the factorization can be chosen with flat terms as well.
@@ -408,4 +408,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.26, Tag 06Y7](https://stacks.math.columbia.edu/tag/06Y7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

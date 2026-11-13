@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.23 Naive obstruction theories
 
-Section 98.23 of the Stacks Project, [Tag 07YJ](https://stacks.math.columbia.edu/tag/07YJ). 7 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.23 of the Stacks Project, [Tag 07YJ](https://stacks.math.columbia.edu/tag/07YJ). 7 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07YK, a lemma
 
 [Tag 07YK](https://stacks.math.columbia.edu/tag/07YK) in the Stacks Project.
 
-**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L537). The attribute's comment: “equivalence”.
+**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L537). The attribute's comment: “equivalence”.
 
 > Ext into a field is the linear dual of the cohomology of canonical derived base change.
 
@@ -30,7 +30,7 @@ public noncomputable def extIntoFieldEquivDualBaseChangeHomology
           f).functor.obj E.1) ⟶ ModuleCat.of k (ULift.{max v uA} k))
 ```
 
-**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L559). The attribute's comment: “k-linearity”.
+**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L559). The attribute's comment: “k-linearity”.
 
 > The Ext/base-change duality equivalence respects the intrinsic scalar action of `k`.
 
@@ -45,7 +45,7 @@ public theorem extIntoFieldEquivDualBaseChangeHomology_smul
       x • extIntoFieldEquivDualBaseChangeHomology f E i α
 ```
 
-**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L586). The attribute's comment: “naturality in the derived object”.
+**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L586). The attribute's comment: “naturality in the derived object”.
 
 > The Ext/base-change duality equivalence is contravariantly natural in derived objects.
 
@@ -64,7 +64,7 @@ public theorem extIntoFieldEquivDualBaseChangeHomology_naturality
         extIntoFieldEquivDualBaseChangeHomology f E i α
 ```
 
-**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L605). The attribute's comment: “naturality under change of source ring”.
+**`DerivedCategory.extIntoFieldEquivDualBaseChangeHomology_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Ext/IntoField.lean#L605). The attribute's comment: “naturality under change of source ring”.
 
 > The duality intertwines pullback of Ext classes across `A → B` with the dual of the
 > canonical map `E ⊗ᴸ_A k ⟶ F ⊗ᴸ_B k`.
@@ -90,7 +90,7 @@ public theorem extIntoFieldEquivDualBaseChangeHomology_restrictScalars
 
 [Tag 07YL](https://stacks.math.columbia.edu/tag/07YL) in the Stacks Project.
 
-**`Deformation.Artin.exists_squareZeroExtension_killing_cotangent_morphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedSquareZeroExtension.lean, line 1083](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/DerivedSquareZeroExtension.lean#L1083).
+**`Deformation.Artin.exists_squareZeroExtension_killing_cotangent_morphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/DerivedSquareZeroExtension.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/DerivedSquareZeroExtension.lean#L1082).
 
 > **Stacks Project, Tag 07YL.** Let `Λ → A → k = κ(𝔭)` be finite type maps of Noetherian
 > rings and let `ξ : E ⟶ NL_{A/Λ}` be a morphism in `D⁻(A)` such that `H⁻¹(ξ ⊗ᴸ k)` is not
@@ -129,7 +129,7 @@ public theorem exists_squareZeroExtension_killing_cotangent_morphism
 
 [Tag 07YM](https://stacks.math.columbia.edu/tag/07YM) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteType_residueField_of_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean#L151). The attribute's comment: “the use of closedness: the residue field at the point is of finite type”.
+**`AlgebraicGeometry.finiteType_residueField_of_isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean#L151). The attribute's comment: “the use of closedness: the residue field at the point is of finite type”.
 
 > The residue field at a closed point of an affine scheme is of finite type over the ring.
 >
@@ -145,7 +145,7 @@ public theorem finiteType_residueField_of_isClosed_singleton {A : Type u} [CommR
     Algebra.FiniteType A u₀.asIdeal.ResidueField
 ```
 
-**`Deformation.Artin.surjective_derivedFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L212). The attribute's comment: “condition (2) in degree -1 as injectivity of Ext¹(NL\_\{A/Λ}, k) → Ext¹(E, k)”.
+**`Deformation.Artin.surjective_derivedFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L212). The attribute's comment: “condition (2) in degree -1 as injectivity of Ext¹(NL\_\{A/Λ}, k) → Ext¹(E, k)”.
 
 > **Stacks 07YM, condition (2) in degree `-1`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a ring map `A ⟶ k` to a field, the map
@@ -172,7 +172,7 @@ public theorem surjective_derivedFibre_neg_one_iff_injective_extOne
           ξ ≫ α)
 ```
 
-**`Deformation.Artin.injective_derivedFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L236). The attribute's comment: “condition (2) in degree 0 as surjectivity of Ext⁰(NL\_\{A/Λ}, k) → Ext⁰(E, k)”.
+**`Deformation.Artin.injective_derivedFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L236). The attribute's comment: “condition (2) in degree 0 as surjectivity of Ext⁰(NL\_\{A/Λ}, k) → Ext⁰(E, k)”.
 
 > **Stacks 07YM, condition (2) in degree `0`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a ring map `A ⟶ k` to a field, the map `H^0(E ⊗ᴸ_A k) ⟶ H^0(NL_{A/Λ} ⊗ᴸ_A k)` is
@@ -198,7 +198,7 @@ public theorem injective_derivedFibre_zero_iff_surjective_extZero
           ξ ≫ α)
 ```
 
-**`Deformation.Artin.exists_pow_inf_eq_bot_of_mul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L267). The attribute's comment: “the Artin–Rees step of (1) ⇒ (2): (p')^n ∩ I = 0 for some n > 1”.
+**`Deformation.Artin.exists_pow_inf_eq_bot_of_mul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L267). The attribute's comment: “the Artin–Rees step of (1) ⇒ (2): (p')^n ∩ I = 0 for some n > 1”.
 
 > **Stacks 07YM, the Artin–Rees step of the implication `(1) ⇒ (2)`.** Let `A'` be a
 > Noetherian ring and let `p'` and `I` be ideals with `p' · I = 0`. Then `(p')^n ∩ I = 0` for
@@ -219,7 +219,7 @@ public theorem exists_pow_inf_eq_bot_of_mul_eq_bot {A' : Type*} [CommRing A']
     ∃ n > 1, p' ^ n ⊓ I = ⊥
 ```
 
-**`Deformation.Artin.surjective_derivedTensorFibre_neg_one_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeNegOne.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeNegOne.lean#L124). The attribute's comment: “(1) implies (2), degree -1”.
+**`Deformation.Artin.surjective_derivedTensorFibre_neg_one_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeNegOne.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeNegOne.lean#L124). The attribute's comment: “(1) implies (2), degree -1”.
 
 > **Stacks 07YM, `(1) ⇒ (2)` in degree `-1`.** Let `x` be a family over `Spec A` whose
 > deformation theory is controlled by `ξ : E ⟶ NL_{A/Λ}` as in hypothesis (i) of the tag: `x` lifts
@@ -253,7 +253,7 @@ public theorem surjective_derivedTensorFibre_neg_one_of_isVersalAt
             (ModuleCat.of A u₀.asIdeal.ResidueField))).map ξ))
 ```
 
-**`Deformation.Artin.surjective_comp_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L191). The attribute's comment: “(1) implies (2), degree 0: precomposition with xi is surjective”.
+**`Deformation.Artin.surjective_comp_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L191). The attribute's comment: “(1) implies (2), degree 0: precomposition with xi is surjective”.
 
 > **Stacks 07YM, the surjectivity hypothesis (ii) turns versality into.** If the lifting
 > property defining versality holds at the point of `Spec A` determined by the `A`-algebra
@@ -278,7 +278,7 @@ public theorem surjective_comp_of_liftsAtResiduePoint [Mono baseMap]
       ξ ≫ f)
 ```
 
-**`Deformation.Artin.injective_derivedTensorFibre_zero_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L268). The attribute's comment: “(1) implies (2), degree 0, at a field in the site”.
+**`Deformation.Artin.injective_derivedTensorFibre_zero_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L268). The attribute's comment: “(1) implies (2), degree 0, at a field in the site”.
 
 > **Stacks 07YM, condition (2) in degree `0` from the lifting property.** If the lifting
 > property defining versality holds at the point of `Spec A` determined by the `A`-algebra
@@ -306,7 +306,7 @@ public theorem injective_derivedTensorFibre_zero_of_liftsAtResiduePoint [Mono ba
             (ModuleCat.of A k))).map ξ))
 ```
 
-**`Deformation.Artin.injective_derivedTensorFibre_zero_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L357). The attribute's comment: “(1) implies (2), degree 0”.
+**`Deformation.Artin.injective_derivedTensorFibre_zero_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZero.lean#L357). The attribute's comment: “(1) implies (2), degree 0”.
 
 > **Stacks 07YM, `(1) ⇒ (2)` in degree `0`.** Let `x` be a family over `Spec A` whose tangent
 > theory is represented by `ξ : E ⟶ NL_{A/Λ}` as in hypothesis (ii) of the tag. If `x` is versal
@@ -334,7 +334,7 @@ public theorem injective_derivedTensorFibre_zero_of_isVersalAt [Mono baseMap]
             (ModuleCat.of A u₀.asIdeal.ResidueField))).map ξ))
 ```
 
-**`Deformation.Artin.bijective_comp_naiveCotangentToDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L343). The attribute's comment: “Ext^0\_A(NL\_\{A/Lambda}, M) = Der\_Lambda(A, M)”.
+**`Deformation.Artin.bijective_comp_naiveCotangentToDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L343). The attribute's comment: “Ext^0\_A(NL\_\{A/Lambda}, M) = Der\_Lambda(A, M)”.
 
 > **`Ext⁰_A(NL_{A/Λ}, M) = Der_Λ(A, M)`.** Composing the augmentation
 > `NL_{A/Λ} ⟶ Ω_{A/Λ}[0]` with a module map `Ω_{A/Λ} ⟶ M` is a bijection onto the morphisms
@@ -355,7 +355,7 @@ public theorem bijective_comp_naiveCotangentToDifferentials (M : ModuleCat.{u} A
         (DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).map θ)
 ```
 
-**`Deformation.Artin.surjective_canonicalTangentMap_of_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L419). The attribute's comment: “(2) implies (1), degree 0: the map on tangent spaces is surjective”.
+**`Deformation.Artin.surjective_canonicalTangentMap_of_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L419). The attribute's comment: “(2) implies (1), degree 0: the map on tangent spaces is surjective”.
 
 > **Stacks 07YM, `(2) ⇒ (1)` in degree `0`.** If precomposition with `ξ` is surjective on
 > morphisms `NL_{A/Λ} ⟶ k[0]` of `D(A)`, then the map `Der_Λ(A, k) ⟶ T_x(k)` on tangent spaces
@@ -385,7 +385,7 @@ public theorem surjective_canonicalTangentMap_of_surjective_comp
       baseFactorization)
 ```
 
-**`Deformation.Artin.exists_extends_of_surjective_canonicalTangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L481). The attribute's comment: “(2) implies (1): an infinitesimal deformation over the dual numbers extends”.
+**`Deformation.Artin.exists_extends_of_surjective_canonicalTangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L481). The attribute's comment: “(2) implies (1): an infinitesimal deformation over the dual numbers extends”.
 
 > **Stacks 07YM, `(2) ⇒ (1)` at the dual numbers.** If the map `Der_Λ(A, k) ⟶ T_x(k)` on
 > tangent spaces is surjective, then every lift of `x₀` along the square-zero immersion
@@ -428,7 +428,7 @@ public theorem exists_extends_of_surjective_canonicalTangentMap
             (Spec.map (CommRingCat.ofHom (algebraMap A k)) ≫ toS) hA hAk rfl) ⟨x, hx⟩
 ```
 
-**`Deformation.Artin.surjective_derivedTensorFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L84). The attribute's comment: “condition (2) in degree -1, through a chosen derived tensor product”.
+**`Deformation.Artin.surjective_derivedTensorFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L84). The attribute's comment: “condition (2) in degree -1, through a chosen derived tensor product”.
 
 > **Stacks 07YM, condition (2) in degree `-1`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a field `k` which is an `A`-algebra, the map
@@ -459,7 +459,7 @@ public theorem surjective_derivedTensorFibre_neg_one_iff_injective_extOne
           ξ ≫ α)
 ```
 
-**`Deformation.Artin.injective_derivedTensorFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L113). The attribute's comment: “condition (2) in degree 0, through a chosen derived tensor product”.
+**`Deformation.Artin.injective_derivedTensorFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L113). The attribute's comment: “condition (2) in degree 0, through a chosen derived tensor product”.
 
 > **Stacks 07YM, condition (2) in degree `0`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a field `k` which is an `A`-algebra, the map
@@ -490,7 +490,7 @@ public theorem injective_derivedTensorFibre_zero_iff_surjective_extZero
           ξ ≫ α)
 ```
 
-**`Deformation.Artin.injective_derivedTensorFibre_zero_iff_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L140). The attribute's comment: “condition (2) in degree 0, as a condition on morphisms”.
+**`Deformation.Artin.injective_derivedTensorFibre_zero_iff_surjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDerivedFibre.lean#L140). The attribute's comment: “condition (2) in degree 0, as a condition on morphisms”.
 
 > **Stacks 07YM, condition (2) in degree `0`, as a condition on morphisms.** The injectivity
 > of `H^0(ξ ⊗ᴸ_A k)` is the surjectivity of precomposition with `ξ` on morphisms
@@ -519,7 +519,7 @@ public theorem injective_derivedTensorFibre_zero_iff_surjective_comp
           ξ ≫ f)
 ```
 
-**`Deformation.Artin.exists_unique_eq_canonicalDualNumbersArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldArrowShape.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldArrowShape.lean#L171). The attribute's comment: “the dual-numbers arrows over Spec A are the tangent vectors”.
+**`Deformation.Artin.exists_unique_eq_canonicalDualNumbersArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldArrowShape.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldArrowShape.lean#L171). The attribute's comment: “the dual-numbers arrows over Spec A are the tangent vectors”.
 
 > **Stacks 07YM.** An arrow `ν : Spec k[k] ⟶ Spec A` of the site over `S` whose restriction
 > along the square-zero immersion `Spec k ⟶ Spec k[k]` is the point of `Spec A` determined by the
@@ -549,7 +549,7 @@ public theorem exists_unique_eq_canonicalDualNumbersArrow [Mono baseMap]
         baseFactorization θ
 ```
 
-**`Deformation.Artin.canonicalFieldBaseChangeEquiv_canonicalTangentMap_of_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldClassEquationLift.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldClassEquationLift.lean#L85). The attribute's comment: “the class equation at an arbitrary connecting arrow”.
+**`Deformation.Artin.canonicalFieldBaseChangeEquiv_canonicalTangentMap_of_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldClassEquationLift.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldClassEquationLift.lean#L85). The attribute's comment: “the class equation at an arbitrary connecting arrow”.
 
 > **Stacks 07YM, the class equation at an arbitrary connecting arrow.** Let `(y, φ)` be a lift
 > of `x` along `Deformation.Artin.canonicalDualNumbersArrow θ`, and let `χ : x₀ ⟶ y` be any arrow
@@ -598,7 +598,7 @@ public theorem canonicalFieldBaseChangeEquiv_canonicalTangentMap_of_fac
             Quotient.mk _ ⟨Under.mk χ, hmem⟩
 ```
 
-**`Deformation.Artin.exists_canonicalTangentMap_eq_of_extends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldTangentImage.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldTangentImage.lean#L107). The attribute's comment: “an extendable infinitesimal deformation is in the image of the tangent map”.
+**`Deformation.Artin.exists_canonicalTangentMap_eq_of_extends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldTangentImage.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldTangentImage.lean#L107). The attribute's comment: “an extendable infinitesimal deformation is in the image of the tangent map”.
 
 > **Stacks 07YM.** Let `x₀` be the chosen pullback of `x` to `Spec k` and let `w` represent an
 > infinitesimal deformation of `x₀` over the dual numbers `k[k]`, that is a lift of `x₀` along the
@@ -638,7 +638,7 @@ public theorem exists_canonicalTangentMap_eq_of_extends [Mono baseMap] :
             Quotient.mk _ w
 ```
 
-**`Deformation.Artin.exists_extends_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L262). The attribute's comment: “versality tested at the dual numbers of a residue field”.
+**`Deformation.Artin.exists_extends_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L262). The attribute's comment: “versality tested at the dual numbers of a residue field”.
 
 > **Stacks 07YM, the dual-numbers instance of versality.** Let `x₀` be the chosen pullback of
 > `x` to `Spec k` and let `w` be a lift of `x₀` along the square-zero immersion
@@ -673,7 +673,7 @@ public theorem exists_extends_of_liftsAtResiduePoint
             (Spec.map (CommRingCat.ofHom (algebraMap A k)) ≫ toS) hA hAk rfl) ⟨x, hx⟩
 ```
 
-**`Deformation.Artin.surjective_canonicalTangentMap_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L388). The attribute's comment: “(1) implies (2), degree 0: the map on tangent spaces is surjective”.
+**`Deformation.Artin.surjective_canonicalTangentMap_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L388). The attribute's comment: “(1) implies (2), degree 0: the map on tangent spaces is surjective”.
 
 > **Stacks 07YM, the surjectivity of the map on tangent spaces.** If the lifting property
 > defining versality holds at the point of `Spec A` determined by the `A`-algebra structure of
@@ -700,7 +700,7 @@ public theorem surjective_canonicalTangentMap_of_liftsAtResiduePoint [Mono baseM
             baseFactorization θ)))
 ```
 
-**`Deformation.Artin.liftsAtResiduePoint_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L493). The attribute's comment: “versality as the lifting property at the residue field of the prime”.
+**`Deformation.Artin.liftsAtResiduePoint_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityFieldVersalLift.lean#L493). The attribute's comment: “versality as the lifting property at the residue field of the prime”.
 
 > **Stacks 07YM.** Versality of `x` at `u₀` is the lifting property at the point of `Spec A`
 > determined by the algebra structure of the residue field `Ideal.ResidueField u₀.asIdeal` of the
@@ -723,7 +723,7 @@ public theorem liftsAtResiduePoint_of_isVersalAt
       (Spec.map (CommRingCat.ofHom (algebraMap A u₀.asIdeal.ResidueField)))
 ```
 
-**`Deformation.Artin.exists_algHom_section_of_surjective_derivedTensorFibre_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityObstructionVanishing.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityObstructionVanishing.lean#L404). The attribute's comment: “(2) implies (1): condition (2) in degree -1 forces the obstruction class of a square-zero extension with one-dimensional kernel to vanish, so the extension splits”.
+**`Deformation.Artin.exists_algHom_section_of_surjective_derivedTensorFibre_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityObstructionVanishing.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityObstructionVanishing.lean#L404). The attribute's comment: “(2) implies (1): condition (2) in degree -1 forces the obstruction class of a square-zero extension with one-dimensional kernel to vanish, so the extension splits”.
 
 > **Stacks 07YM, the obstruction step of `(2) ⇒ (1)`.** Let `A' → A` be a square-zero
 > surjection of `Λ`-algebras whose kernel `I` is one-dimensional over an `A`-algebra field `k`,
@@ -760,7 +760,7 @@ public theorem exists_algHom_section_of_surjective_derivedTensorFibre_neg_one
     ∃ σ : A →ₐ[Λ] A', (algebraMap A' A).comp (σ : A →+* A') = RingHom.id A
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_powQuotientMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean#L68). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n is an essential surjection of 𝒞\_Λ”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_powQuotientMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean#L68). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n is an essential surjection of 𝒞\_Λ”.
 
 > **The essential surjection of [Stacks, Tag 07YM].** Let `Λ → A' → A → k` be a tower with `k`
 > a field and both maps onto `k` surjective, let `𝔭` and `𝔭'` be the two augmentation ideals and
@@ -789,7 +789,7 @@ public theorem isEssentialSurjection_powQuotientMap_of_bijective
     IsEssentialSurjection (powQuotientMap hφ hε' hε n)
 ```
 
-**`Deformation.Artin.liftsAtResiduePoint_prime_base_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPrimeBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPrimeBase.lean#L135). The attribute's comment: “versality over any affine base at the residue field of the prime”.
+**`Deformation.Artin.liftsAtResiduePoint_prime_base_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPrimeBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPrimeBase.lean#L135). The attribute's comment: “versality over any affine base at the residue field of the prime”.
 
 > **Stacks 07YM, versality in the form the degree `-1` endgame consumes.** If `x` is versal at
 > a point `u₀` of `Spec A`, then the lifting property holds with *any* `Spec Λ ⟶ S` as deformation
@@ -811,7 +811,7 @@ public theorem liftsAtResiduePoint_prime_base_of_isVersalAt
       (Spec.map (CommRingCat.ofHom (algebraMap A u₀.asIdeal.ResidueField)))
 ```
 
-**`Deformation.Artin.differentialsBaseChangeMap_bijective_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityQuotientDifferentials.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityQuotientDifferentials.lean#L156). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n does not change differentials either”.
+**`Deformation.Artin.differentialsBaseChangeMap_bijective_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityQuotientDifferentials.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityQuotientDifferentials.lean#L156). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n does not change differentials either”.
 
 > **The quotient transfer of [Stacks, Tag 07YL]'s bijectivity.** Let `A' → A` be a map of
 > `Λ`-algebras with compatible surjective augmentations onto a field `k`, let `𝔭 = Ker ε` and
@@ -859,7 +859,7 @@ public theorem differentialsBaseChangeMap_bijective_powQuotient
         (A' ⧸ RingHom.ker ε'.toRingHom ^ n) (A ⧸ RingHom.ker ε.toRingHom ^ n) k)
 ```
 
-**`Deformation.Artin.schemeMap_restrictAlongArrow_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityRestriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityRestriction.lean#L179). The attribute's comment: “the restriction of x along a ring map, over Spec of that map”.
+**`Deformation.Artin.schemeMap_restrictAlongArrow_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityRestriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityRestriction.lean#L179). The attribute's comment: “the restriction of x along a ring map, over Spec of that map”.
 
 > **The bridge from a ring map to an arrow of the fibred category.** For a ring map
 > `φ : A → C` compatible with the structure morphisms, the restriction
@@ -878,7 +878,7 @@ public theorem schemeMap_restrictAlongArrow_mk
       Spec.map (CommRingCat.ofHom φ)
 ```
 
-**`Deformation.Artin.comp_ringHom_of_schemeMap_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean#L117). The attribute's comment: “i ≫ b = a read as an identity of ring maps”.
+**`Deformation.Artin.comp_ringHom_of_schemeMap_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean#L117). The attribute's comment: “i ≫ b = a read as an identity of ring maps”.
 
 > **An equation of arrows of the fibred category, read as an identity of ring maps.** Let
 > `i : y ⟶ z`, `b : z ⟶ x` and `a : y ⟶ x` be arrows with `i ≫ b = a`, between objects presented
@@ -906,7 +906,7 @@ public theorem comp_ringHom_of_schemeMap_of_comp_eq
     f.comp (ringHom_of_schemeMap (schemeMap q hz hx b)) = g
 ```
 
-**`Deformation.Artin.exists_algHom_powQuotient_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean#L158). The attribute's comment: “versality lifts A through A'/(𝔭') ^ n”.
+**`Deformation.Artin.exists_algHom_powQuotient_of_liftsAtResiduePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalitySquareLift.lean#L158). The attribute's comment: “versality lifts A through A'/(𝔭') ^ n”.
 
 > **The section of [Stacks, Tag 07YM].** Let `A' → A` be a map of augmented Noetherian
 > `Λ`-algebras over a field `κ`, with `φ` surjective, let `x` be a family over `Spec A` and `x'` a
@@ -953,7 +953,7 @@ public theorem exists_algHom_powQuotient_of_liftsAtResiduePoint
         Ideal.Quotient.mk (RingHom.ker ε.toRingHom ^ n) t
 ```
 
-**`Deformation.Artin.liftsAtResiduePoint_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean#L337). The attribute's comment: “the lifting property over the local ring of S transfers to the affine open”.
+**`Deformation.Artin.liftsAtResiduePoint_changeBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean#L337). The attribute's comment: “the lifting property over the local ring of S transfers to the affine open”.
 
 > **The change of deformation base.** If the lifting property defining versality holds with
 > the local ring of `S` at `s` as deformation base, it holds with any `Λ` whose spectrum maps to
@@ -979,7 +979,7 @@ public theorem liftsAtResiduePoint_changeBase
     LiftsAtResiduePoint (Λ := Λ) (k := k) iΛ q U x hx κ
 ```
 
-**`Deformation.Artin.liftsAtResiduePoint_base_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean#L404). The attribute's comment: “versality gives the lifting property over any affine deformation base”.
+**`Deformation.Artin.liftsAtResiduePoint_base_of_isVersalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityStalkBase.lean#L404). The attribute's comment: “versality gives the lifting property over any affine deformation base”.
 
 > **Versality at a point, read with an arbitrary affine deformation base.** If `x` is versal
 > at `u₀` then the lifting property holds with *any* `Spec Λ ⟶ S` as deformation base, at the
@@ -1003,7 +1003,7 @@ public theorem liftsAtResiduePoint_base_of_isVersalAt
       (U.left.fromSpecResidueField u₀)
 ```
 
-**`Deformation.Artin.naiveVersalityCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean#L94).
+**`Deformation.Artin.naiveVersalityCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean#L94).
 
 > **Stacks 07YM.** Let `S` be a locally Noetherian scheme, let `𝒳` be a category fibred in
 > groupoids over the big fppf site of `S` satisfying (RS\*), let `U = Spec A` be affine of finite
@@ -1028,7 +1028,7 @@ public theorem liftsAtResiduePoint_base_of_isVersalAt
 public theorem naiveVersalityCriterion : NaiveVersalityCriterion hp hRS P hΩ E ξ
 ```
 
-**`Deformation.Artin.tangentEquiv_canonicalTangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTangentFactorization.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTangentFactorization.lean#L90). The attribute's comment: “the map on tangent spaces factors through the augmentation”.
+**`Deformation.Artin.tangentEquiv_canonicalTangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTangentFactorization.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTangentFactorization.lean#L90). The attribute's comment: “the map on tangent spaces factors through the augmentation”.
 
 > **Stacks 07YM, hypothesis (ii) in use.** Under the functorial isomorphism
 > `T_x(-) ≅ Ext⁰_A(E, -)` of hypothesis (ii), the map on tangent spaces of Stacks 07YC sends a
@@ -1049,7 +1049,7 @@ public theorem tangentEquiv_canonicalTangentMap (θ : Ω[A⁄Λ] →ₗ[A] k) :
         (DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).map (ModuleCat.ofHom θ)
 ```
 
-**`Deformation.Artin.length_ker_eq_one_of_linearEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean#L241). The attribute's comment: “the kernel `I` of `A' → A` has length one over `A'`”.
+**`Deformation.Artin.length_ker_eq_one_of_linearEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean#L241). The attribute's comment: “the kernel `I` of `A' → A` has length one over `A'`”.
 
 > **The length-one hypothesis of
 > `Deformation.ArtinianLocalAlgCat.isSmallExtension_powQuotientMap`.** The kernel of the
@@ -1066,7 +1066,7 @@ public theorem length_ker_eq_one_of_linearEquiv_residueField
     Module.length A' (RingHom.ker (algebraMap A' A)) = 1
 ```
 
-**`Deformation.Artin.mul_ker_eq_bot_of_linearEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean#L262). The attribute's comment: “𝔭' annihilates the kernel I of A' → A”.
+**`Deformation.Artin.mul_ker_eq_bot_of_linearEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityThickeningSite.lean#L262). The attribute's comment: “𝔭' annihilates the kernel I of A' → A”.
 
 > **The Artin–Rees input of [Stacks, Tag 07YM].** An ideal of `A'` carried by the surjection
 > `A' → A` into the kernel of `A ⟶ κ(𝔭)` annihilates the kernel `I` of that surjection: the two
@@ -1085,7 +1085,7 @@ public theorem mul_ker_eq_bot_of_linearEquiv_residueField
     q * RingHom.ker (algebraMap A' A) = ⊥
 ```
 
-**`Deformation.ArtinianLocalAlgCat.powQuotientObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L143). The attribute's comment: “the object `A/𝔭 ^ n` of `𝒞_Λ` at a closed point”. References: EGA 0 (19.5.6.2), “special case”.
+**`Deformation.ArtinianLocalAlgCat.powQuotientObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L143). The attribute's comment: “the object `A/𝔭 ^ n` of `𝒞_Λ` at a closed point”. References: EGA 0 (19.5.6.2), “special case”.
 
 > The object `R ⧸ 𝔭 ^ n` of `𝒞_Λ`, for `𝔭 = Ker ε` the augmentation ideal of a surjective
 > augmentation of a Noetherian `Λ`-algebra and `n ≠ 0`. The algebra `R` itself is not asked to
@@ -1096,7 +1096,7 @@ public noncomputable def powQuotientObj [IsNoetherianRing R] (ε : R →ₐ[Λ] 
     (hε : Function.Surjective ε) (n : ℕ) [NeZero n] : ArtinianLocalAlgCat.{u, v, w} Λ k
 ```
 
-**`Deformation.ArtinianLocalAlgCat.maximalIdeal_pow_powQuotientObj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L169). The attribute's comment: “the maximal ideal of the object `A'/(𝔭') ^ n` of `𝒞_Λ` has vanishing power”.
+**`Deformation.ArtinianLocalAlgCat.maximalIdeal_pow_powQuotientObj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L169). The attribute's comment: “the maximal ideal of the object `A'/(𝔭') ^ n` of `𝒞_Λ` has vanishing power”.
 
 > The `n`-th power of the maximal ideal of `R ⧸ 𝔭 ^ n` vanishes. This is the hypothesis
 > `𝔪_{B'} ^ n = 0` of
@@ -1111,7 +1111,7 @@ public theorem maximalIdeal_pow_powQuotientObj_eq_bot [IsNoetherianRing R] (ε :
     maximalIdeal (powQuotientObj ε hε n : Type v) ^ n = ⊥
 ```
 
-**`Deformation.ArtinianLocalAlgCat.ker_powQuotientMapAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L235). The attribute's comment: “the kernel of `A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` is the image of `I = Ker(A' → A)`”.
+**`Deformation.ArtinianLocalAlgCat.ker_powQuotientMapAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L235). The attribute's comment: “the kernel of `A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` is the image of `I = Ker(A' → A)`”.
 
 > **The kernel computation of [Stacks, Tag 07YM].** For `φ : R' ↠ R` surjective, the kernel
 > of `R' ⧸ (𝔭') ^ n ⟶ R ⧸ 𝔭 ^ n` is the image of `Ker φ`.
@@ -1127,7 +1127,7 @@ public theorem ker_powQuotientMapAlgHom {ε' : R' →ₐ[Λ] k} {ε : R →ₐ[�
         (Ideal.Quotient.mk (RingHom.ker ε'.toRingHom ^ n))
 ```
 
-**`Deformation.ArtinianLocalAlgCat.powQuotientMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L257). The attribute's comment: “the morphism `A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` of `𝒞_Λ`”.
+**`Deformation.ArtinianLocalAlgCat.powQuotientMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L257). The attribute's comment: “the morphism `A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` of `𝒞_Λ`”.
 
 > The morphism `R' ⧸ (𝔭') ^ n ⟶ R ⧸ 𝔭 ^ n` of `𝒞_Λ` induced by a map of augmented
 > Noetherian algebras.
@@ -1139,7 +1139,7 @@ public noncomputable def powQuotientMap [IsNoetherianRing R'] [IsNoetherianRing 
     powQuotientObj ε' hε' n ⟶ powQuotientObj ε hε n
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isSmallExtension_powQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L294). The attribute's comment: “`A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` is a small extension”.
+**`Deformation.ArtinianLocalAlgCat.isSmallExtension_powQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotient.lean#L294). The attribute's comment: “`A'/(𝔭') ^ n ⟶ A/𝔭 ^ n` is a small extension”.
 
 > **The small extension of [Stacks, Tag 07YM].** Let `φ : R' ↠ R` be a surjection of
 > augmented Noetherian `Λ`-algebras whose kernel `I` has length one over `R'`, and suppose
@@ -1162,7 +1162,7 @@ public theorem isSmallExtension_powQuotientMap [IsNoetherianRing R'] [IsNoetheri
       (CommRingCat.ofHom (powQuotientMap hφ hε' hε n).hom.toRingHom)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.exists_section_of_lift_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean#L95). The attribute's comment: “the lift factors through A/𝔭 ^ n, giving a section of the small extension”.
+**`Deformation.ArtinianLocalAlgCat.exists_section_of_lift_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean#L95). The attribute's comment: “the lift factors through A/𝔭 ^ n, giving a section of the small extension”.
 
 > **The section of [Stacks, Tag 07YM].** If the quotient map `R → R ⧸ 𝔭 ^ n` lifts through a
 > morphism `f : C ⟶ R ⧸ 𝔭 ^ n` of `𝒞_Λ` whose source has `𝔪_C ^ n = 0`, then `f` has a section
@@ -1178,7 +1178,7 @@ public theorem exists_section_of_lift_powQuotient
     ∃ s : powQuotientObj ε hε n ⟶ C, s ≫ f = 𝟙 (powQuotientObj ε hε n)
 ```
 
-**`Deformation.ArtinianLocalAlgCat.not_isEssentialSurjection_of_lift_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean#L125). The attribute's comment: “a lift of A through A'/(𝔭') ^ n contradicts essential surjectivity”.
+**`Deformation.ArtinianLocalAlgCat.not_isEssentialSurjection_of_lift_powQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/BaseCategory/AugmentedPowQuotientSection.lean#L125). The attribute's comment: “a lift of A through A'/(𝔭') ^ n contradicts essential surjectivity”.
 
 > **The contradiction of [Stacks, Tag 07YM].** A small extension `f : C ⟶ R ⧸ 𝔭 ^ n` of
 > `𝒞_Λ` whose source has `𝔪_C ^ n = 0` and through which the quotient map `R → R ⧸ 𝔭 ^ n` lifts
@@ -1193,7 +1193,7 @@ public theorem not_isEssentialSurjection_of_lift_powQuotient
     ¬ IsEssentialSurjection f
 ```
 
-**`isLocalRing_quotient_pow_of_isMaximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L109). The attribute's comment: “the local half of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
+**`isLocalRing_quotient_pow_of_isMaximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L109). The attribute's comment: “the local half of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
 
 > For a maximal ideal `p` of a ring that need not be local and `n ≠ 0`, the ring `R ⧸ p ^ n`
 > is local.
@@ -1203,7 +1203,7 @@ public theorem isLocalRing_quotient_pow_of_isMaximal (p : Ideal R) [p.IsMaximal]
     (hn : n ≠ 0) : IsLocalRing (R ⧸ p ^ n)
 ```
 
-**`isArtinianRing_quotient_pow_of_isMaximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L116). The attribute's comment: “the Artinian half of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
+**`isArtinianRing_quotient_pow_of_isMaximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L116). The attribute's comment: “the Artinian half of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
 
 > For a maximal ideal `p` of a Noetherian ring that need not be local and `n ≠ 0`, the ring
 > `R ⧸ p ^ n` is Artinian.
@@ -1213,7 +1213,7 @@ public theorem isArtinianRing_quotient_pow_of_isMaximal [IsNoetherianRing R] (p 
     [p.IsMaximal] {n : ℕ} (hn : n ≠ 0) : IsArtinianRing (R ⧸ p ^ n)
 ```
 
-**`IsLocalRing.maximalIdeal_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L143). The attribute's comment: “the maximal ideal of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
+**`IsLocalRing.maximalIdeal_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L143). The attribute's comment: “the maximal ideal of `A/𝔭 ^ n`, for `𝔭` the prime of a closed point”.
 
 > For a maximal ideal `p` and `n ≠ 0`, the maximal ideal of `R ⧸ p ^ n` is the image of
 > `p`.
@@ -1224,7 +1224,7 @@ public theorem IsLocalRing.maximalIdeal_quotient_pow (p : Ideal R) [p.IsMaximal]
     IsLocalRing.maximalIdeal (R ⧸ p ^ n) = p.map (Ideal.Quotient.mk (p ^ n))
 ```
 
-**`IsLocalRing.maximalIdeal_quotient_pow_pow_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L159). The attribute's comment: “the maximal ideal of `A'/(𝔭') ^ n` has vanishing `n`-th power”.
+**`IsLocalRing.maximalIdeal_quotient_pow_pow_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L159). The attribute's comment: “the maximal ideal of `A'/(𝔭') ^ n` has vanishing `n`-th power”.
 
 > For a maximal ideal `p` and `n ≠ 0`, the `n`-th power of the maximal ideal of `R ⧸ p ^ n`
 > vanishes: that maximal ideal is the image of `p`, so its `n`-th power is the image of `p ^ n`,
@@ -1240,7 +1240,7 @@ public theorem IsLocalRing.maximalIdeal_quotient_pow_pow_eq_bot (p : Ideal R) [p
     (n : ℕ) [NeZero n] : IsLocalRing.maximalIdeal (R ⧸ p ^ n) ^ n = ⊥
 ```
 
-**`IsLocalRing.exists_isLocalHom_comp_mk_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L205). The attribute's comment: “σ : A → B' with 𝔪\_\{B'} ^ n = 0 factors through A/𝔭 ^ n”.
+**`IsLocalRing.exists_isLocalHom_comp_mk_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L205). The attribute's comment: “σ : A → B' with 𝔪\_\{B'} ^ n = 0 factors through A/𝔭 ^ n”.
 
 > **The local factorization of [Stacks, Tag 07YM].** A ring map `σ : R → S` into a local
 > ring whose maximal ideal satisfies `𝔪_S ^ n = 0` factors through `R ⧸ p ^ n` for every ideal
@@ -1266,7 +1266,7 @@ public theorem IsLocalRing.exists_isLocalHom_comp_mk_pow [IsLocalRing S] (f : R 
 
 [Tag 07YN](https://stacks.math.columbia.edu/tag/07YN) in the Stacks Project.
 
-**`Deformation.Artin.isOpenVersalityAt_of_naiveObstructionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean#L124).
+**`Deformation.Artin.isOpenVersalityAt_of_naiveObstructionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityTag.lean#L124).
 
 > **Stacks 07YN**, with the versality criterion of Stacks 07YM discharged rather than assumed.
 >
@@ -1294,7 +1294,7 @@ public theorem isOpenVersalityAt_of_naiveObstructionAt
 
 [Tag 07YP](https://stacks.math.columbia.edu/tag/07YP) in the Stacks Project.
 
-**`Deformation.Artin.NaiveObstructionTheory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheory.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheory.lean#L474).
+**`Deformation.Artin.NaiveObstructionTheory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheory.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheory.lean#L474).
 
 > **Stacks 07YP.** A naive obstruction theory for a category fibred in groupoids `𝒳` over
 > the big fppf site of `S` satisfying (RS*), relative to a fixed affine chart `Spec Λ ⊆ S`: a
@@ -1312,7 +1312,7 @@ public structure NaiveObstructionTheory (hp : p.IsFiberedInGroupoids)
 
 [Tag 07YT](https://stacks.math.columbia.edu/tag/07YT) in the Stacks Project.
 
-**`Deformation.Artin.NaiveObstructionTheory.functoriality_homology_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryFunctoriality.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryFunctoriality.lean#L175).
+**`Deformation.Artin.NaiveObstructionTheory.functoriality_homology_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryFunctoriality.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryFunctoriality.lean#L175).
 
 > **Stacks 07YT.** Let `𝒳` be fibred in groupoids over the big fppf site of `S`, satisfying
 > (RS*) and endowed with a naive obstruction theory. Let `A ⟶ B` be a ring map in the site, let
@@ -1351,7 +1351,7 @@ theorem NaiveObstructionTheory.functoriality_homology_bijective
 
 [Tag 07YU](https://stacks.math.columbia.edu/tag/07YU) in the Stacks Project.
 
-**`Deformation.Artin.isOpenVersality_of_naiveObstructionTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryVersalityOpenness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryVersalityOpenness.lean#L176).
+**`Deformation.Artin.isOpenVersality_of_naiveObstructionTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryVersalityOpenness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveTheoryVersalityOpenness.lean#L176).
 
 > **Stacks 07YU.** Let `S` be a locally Noetherian scheme and `𝒳` a category fibred in
 > groupoids over the big fppf site of `S`. Assume that `𝒳` satisfies (RS*) and that `𝒳` has a
@@ -1387,4 +1387,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.23, Tag 07YJ](https://stacks.math.columbia.edu/tag/07YJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

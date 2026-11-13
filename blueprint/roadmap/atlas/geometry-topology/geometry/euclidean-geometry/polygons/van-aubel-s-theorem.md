@@ -8,7 +8,7 @@ proof: formalized
 
 # Van Aubel's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html).
 
 ## Van Aubel's theorem
 
@@ -32,7 +32,7 @@ outward version is Van Aubel's theorem with squares on the right.
 
 - https://en.wikipedia.org/wiki/Van_Aubel%27s_theorem.
 
-Formalized by `MetaMathlibExt.vanAubel`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanAubel.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/VanAubel.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html#van-aubel).
+Formalized by `MetaMathlibExt.vanAubel`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanAubel.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/VanAubel.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html#van-aubel).
 
 ## Van Aubel's theorem with squares on the right
 
@@ -53,7 +53,7 @@ When $A$, $B$, $C$, $D$ are listed counterclockwise these are the outward square
 with Van Aubel's theorem for squares on the left this covers the outward construction for both
 orientations.
 
-Formalized by `MetaMathlibExt.vanAubel_right`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanAubel.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/VanAubel.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html#van-aubel-right).
+Formalized by `MetaMathlibExt.vanAubel_right`, a theorem declared in [MathlibExt/Geometry/Euclidean/VanAubel.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/VanAubel.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html#van-aubel-right).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Van Aubel's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/polygons/van-aubel-s-theorem)

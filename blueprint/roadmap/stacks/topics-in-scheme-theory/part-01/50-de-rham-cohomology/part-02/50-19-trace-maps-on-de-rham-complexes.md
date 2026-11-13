@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.19 Trace maps on de Rham complexes
 
-Section 50.19 of the Stacks Project, [Tag 0FK6](https://stacks.math.columbia.edu/tag/0FK6). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 50.19 of the Stacks Project, [Tag 0FK6](https://stacks.math.columbia.edu/tag/0FK6). 5 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FK7, an example
 
 [Tag 0FK7](https://stacks.math.columbia.edu/tag/0FK7) in the Stacks Project.
 
-**`AlgebraicGeometry.NoTraceOnOneForms.mem_A_iff_flip_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L199). The attribute's comment: “invariant ring”.
+**`AlgebraicGeometry.NoTraceOnOneForms.mem_A_iff_flip_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L199). The attribute's comment: “invariant ring”.
 
 > The three quadratic monomials generate precisely the simultaneous-negation invariants.
 
@@ -22,7 +22,7 @@ Section 50.19 of the Stacks Project, [Tag 0FK6](https://stacks.math.columbia.edu
 theorem mem_A_iff_flip_eq (p : B) : p ∈ A ↔ flip p = p
 ```
 
-**`AlgebraicGeometry.NoTraceOnOneForms.A_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L243). The attribute's comment: “normal domain”.
+**`AlgebraicGeometry.NoTraceOnOneForms.A_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L243). The attribute's comment: “normal domain”.
 
 > The invariant ring is a normal domain.
 
@@ -30,7 +30,7 @@ theorem mem_A_iff_flip_eq (p : B) : p ∈ A ↔ flip p = p
 theorem A_normal : IsNormalDomain A
 ```
 
-**`AlgebraicGeometry.NoTraceOnOneForms.A_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L256). The attribute's comment: “finite type”.
+**`AlgebraicGeometry.NoTraceOnOneForms.A_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L256). The attribute's comment: “finite type”.
 
 > The invariant ring is of finite type over `ℂ`.
 
@@ -38,7 +38,7 @@ theorem A_normal : IsNormalDomain A
 theorem A_finiteType : Algebra.FiniteType ℂ A
 ```
 
-**`AlgebraicGeometry.NoTraceOnOneForms.x_dy_flip_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L261). The attribute's comment: “invariant one-form”.
+**`AlgebraicGeometry.NoTraceOnOneForms.x_dy_flip_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L261). The attribute's comment: “invariant one-form”.
 
 > Simultaneously negating the variables fixes `x dy`.
 
@@ -48,7 +48,7 @@ theorem x_dy_flip_invariant :
       x • KaehlerDifferential.D ℂ B y
 ```
 
-**`AlgebraicGeometry.NoTraceOnOneForms.two_mul_x_dy_not_mem_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L268). The attribute's comment: “failure of descent for one-forms”.
+**`AlgebraicGeometry.NoTraceOnOneForms.two_mul_x_dy_not_mem_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L268). The attribute's comment: “failure of descent for one-forms”.
 
 > The form `2 x dy` does not lie in the `B`-span of the differentials of `x²`, `xy` and `y²`.
 
@@ -61,7 +61,7 @@ theorem two_mul_x_dy_not_mem_span :
           KaehlerDifferential.D ℂ B (y * y)} : Set Ω[B⁄ℂ])
 ```
 
-**`AlgebraicGeometry.NoTraceOnOneForms.two_mul_x_dy_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L353). The attribute's comment: “failure of the differential map to capture the invariant form”.
+**`AlgebraicGeometry.NoTraceOnOneForms.two_mul_x_dy_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/TraceMapsDe/Basic.lean#L353). The attribute's comment: “failure of the differential map to capture the invariant form”.
 
 > Twice the invariant one-form does not come from the invariant ring.
 
@@ -75,7 +75,7 @@ theorem two_mul_x_dy_not_mem_range :
 
 [Tag 0FLB](https://stacks.math.columbia.edu/tag/0FLB) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_formsTraceRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/Main.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormsTrace/Main.lean#L43).
+**`AlgebraicGeometry.existsUnique_formsTraceRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/Main.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormsTrace/Main.lean#L43).
 
 > **Stacks, Lemma 0FLB.** There exists a unique rule that to every finite syntomic morphism of
 > schemes `f : Y ⟶ X` assigns `𝒪_X`-module maps `Θ^p_{Y/X} : f_*Ω^p_{Y/ℤ} ⟶ Ω^p_{X/ℤ}` such that
@@ -92,7 +92,7 @@ theorem existsUnique_formsTraceRule :
 
 [Tag 0FLC](https://stacks.math.columbia.edu/tag/0FLC) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.formsTrace_isComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/Proposition.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormsTrace/Proposition.lean#L59).
+**`AlgebraicGeometry.Scheme.Hom.formsTrace_isComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/Proposition.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormsTrace/Proposition.lean#L59).
 
 > **Stacks, Proposition 0FLC.** Let `f : Y ⟶ X` be a finite syntomic morphism of schemes. The
 > maps `Θ^p_{Y/X} : f_*Ω^p_{Y/ℤ} ⟶ Ω^p_{X/ℤ}` of Lemma 0FLB (`formsTrace`, the rule
@@ -144,7 +144,7 @@ theorem formsTrace_isComplexMap :
 
 [Tag 0FLD](https://stacks.math.columbia.edu/tag/0FLD) in the Stacks Project.
 
-**`AlgebraicGeometry.formsTrace_app_top_eq_frameTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/MonogenicExample.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormsTrace/MonogenicExample.lean#L123). The attribute's comment: “the map `Θ_{B/A} : Ω^•_B → Ω^•_A` of the example is the map of Proposition 0FLC for `Spec B → Spec A` on global sections”.
+**`AlgebraicGeometry.formsTrace_app_top_eq_frameTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/MonogenicExample.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormsTrace/MonogenicExample.lean#L124). The attribute's comment: “the map `Θ_{B/A} : Ω^•_B → Ω^•_A` of the example is the map of Proposition 0FLC for `Spec B → Spec A` on global sections”.
 
 > **Stacks, Example 0FLD: the map `Θ_{B/A}` is the one of Proposition 0FLC.** Let `B` have a
 > power basis of positive dimension over `A`, for instance `B = A[x]/(f)` with `f` monic of degree
@@ -175,7 +175,7 @@ theorem formsTrace_app_top_eq_frameTrace (pb : PowerBasis A B) (hdim : 0 < pb.di
       formsMap A Γ(Spec (.of A), ⊤) p (frameTrace A B p x)
 ```
 
-**`Stacks.FormsTrace.frameTrace_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L179). The attribute's comment: “`Θ(dt) = -da₁`”.
+**`Stacks.FormsTrace.frameTrace_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L179). The attribute's comment: “`Θ(dt) = -da₁`”.
 
 > **Stacks, Example 0FLD: `Θ(dt) = -da₁`.** Let `f = x^d + ∑_{0 ≤ i < d} a_{d - i} x^i` with
 > `d ≥ 1`, let `B ≅ A[x]/(f)` and let `t ∈ B` be the image of `x`. Then the trace map
@@ -189,7 +189,7 @@ theorem frameTrace_oneForm_D_root (hd : 1 ≤ d)
       oneForm A Ω[A⁄ℤ] (-D ℤ A (a 1))
 ```
 
-**`Stacks.FormsTrace.frameTrace_root_smul_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L199). The attribute's comment: “`Θ(t dt) = a₁ da₁ - da₂`”.
+**`Stacks.FormsTrace.frameTrace_root_smul_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L199). The attribute's comment: “`Θ(t dt) = a₁ da₁ - da₂`”.
 
 > **Stacks, Example 0FLD: `Θ(t dt) = a₁ da₁ - da₂`.** Let `f = x^d + ∑_{0 ≤ i < d} a_{d - i} x^i`
 > with `d ≥ 2`, let `B ≅ A[x]/(f)` and let `t ∈ B` be the image of `x`. Then the trace map
@@ -203,7 +203,7 @@ theorem frameTrace_root_smul_oneForm_D_root (hd : 2 ≤ d)
       oneForm A Ω[A⁄ℤ] (a 1 • D ℤ A (a 1) - D ℤ A (a 2))
 ```
 
-**`Stacks.FormsTrace.frameTrace_root_sq_smul_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L223). The attribute's comment: “`Θ(t² dt) = -a₁² da₁ + a₁ da₂ + a₂ da₁ - da₃`”.
+**`Stacks.FormsTrace.frameTrace_root_sq_smul_oneForm_D_root`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L223). The attribute's comment: “`Θ(t² dt) = -a₁² da₁ + a₁ da₂ + a₂ da₁ - da₃`”.
 
 > **Stacks, Example 0FLD: `Θ(t² dt) = -a₁² da₁ + a₁ da₂ + a₂ da₁ - da₃`.** Let
 > `f = x^d + ∑_{0 ≤ i < d} a_{d - i} x^i` with `d ≥ 3`, let `B ≅ A[x]/(f)` and let `t ∈ B` be the
@@ -219,7 +219,7 @@ theorem frameTrace_root_sq_smul_oneForm_D_root (hd : 3 ≤ d)
         D ℤ A (a 3))
 ```
 
-**`Stacks.FormsTrace.frameTrace_root_pow_smul_oneForm_D_root_X_pow_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L285). The attribute's comment: “for `f = x^d - a`: `Θ(t^i dt) = 0` for `i = 0, …, d - 2`”.
+**`Stacks.FormsTrace.frameTrace_root_pow_smul_oneForm_D_root_X_pow_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L285). The attribute's comment: “for `f = x^d - a`: `Θ(t^i dt) = 0` for `i = 0, …, d - 2`”.
 
 > **Stacks, Example 0FLD: for `f = x^d - a`, `Θ(t^i dt) = 0` for `i = 0, …, d - 2`.** Let
 > `B ≅ A[x]/(x^d - a)` with `d ≥ 1` and let `t ∈ B` be the image of `x`. Then the trace map
@@ -232,7 +232,7 @@ theorem frameTrace_root_pow_smul_oneForm_D_root_X_pow_sub_C
         oneForm B Ω[B⁄ℤ] (D ℤ B (e (AdjoinRoot.root (Polynomial.X ^ d - C a))))) = 0
 ```
 
-**`Stacks.FormsTrace.frameTrace_root_pow_pred_smul_oneForm_D_root_X_pow_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L298). The attribute's comment: “for `f = x^d - a`: `Θ(t^{d-1} dt) = da`”.
+**`Stacks.FormsTrace.frameTrace_root_pow_pred_smul_oneForm_D_root_X_pow_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormsTrace/MonogenicExample.lean#L298). The attribute's comment: “for `f = x^d - a`: `Θ(t^{d-1} dt) = da`”.
 
 > **Stacks, Example 0FLD: for `f = x^d - a`, `Θ(t^{d-1} dt) = da`.** Let `B ≅ A[x]/(x^d - a)`
 > with `d ≥ 1` and let `t ∈ B` be the image of `x`. Then the trace map `Θ_{B/A}` of
@@ -250,7 +250,7 @@ theorem frameTrace_root_pow_pred_smul_oneForm_D_root_X_pow_sub_C
 
 [Tag 0FW2](https://stacks.math.columbia.edu/tag/0FW2) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeFrobenius_relativeFormsTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/RelativeFrobenius.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormsTrace/RelativeFrobenius.lean#L132). References: SGA 5 XV (1.Proposition2), “Clause a), special case”.
+**`AlgebraicGeometry.relativeFrobenius_relativeFormsTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormsTrace/RelativeFrobenius.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormsTrace/RelativeFrobenius.lean#L132). References: SGA 5 XV (1.Proposition2), “Clause a), special case”.
 
 > **Stacks, Lemma 0FW2.** Let `p` be a prime number and let `X → S` be a smooth morphism of
 > relative dimension `d` of schemes in characteristic `p`. Then:
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.19, Tag 0FK6](https://stacks.math.columbia.edu/tag/0FK6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.97 Künneth in étale cohomology
 
-Section 59.97 of the Stacks Project, [Tag 0F13](https://stacks.math.columbia.edu/tag/0F13). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.97 of the Stacks Project, [Tag 0F13](https://stacks.math.columbia.edu/tag/0F13). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F1E, a remark
 
 [Tag 0F1E](https://stacks.math.columbia.edu/tag/0F1E) in the Stacks Project.
 
-**`Stacks.Cohomology.KunnethMapOnRingedTopoi.directImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L174). The attribute's comment: “the canonical map Rf\_*E ⟶ Rc\_*p⁻¹E”.
+**`Stacks.Cohomology.KunnethMapOnRingedTopoi.directImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L174). The attribute's comment: “the canonical map Rf\_*E ⟶ Rc\_*p⁻¹E”.
 
 > **The canonical map `Rf_*E ⟶ Rc_*Lp^*E`** for a factorization `c = f ∘ p`: the adjoint
 > transpose, for `Lc^* ⊣ Rc_*`, of `pullbackDirectImageCounit`.
@@ -26,7 +26,7 @@ def directImageMap (hp : f.comp p = c)
       (derivedPushforward c).obj ((derivedPullback p).obj E)
 ```
 
-**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L214). The attribute's comment: “the canonical map, via the relative cup product of Remark 0B6C”.
+**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L214). The attribute's comment: “the canonical map, via the relative cup product of Remark 0B6C”.
 
 > **The Künneth map, via the relative cup product.**  For morphisms of ringed topoi
 > `p : W ⟶ X`, `f : X ⟶ S`, `q : W ⟶ Y`, `g : Y ⟶ S` and `c : W ⟶ S` with `c = f ∘ p = g ∘ q`,
@@ -46,7 +46,7 @@ def kunnethMapOfCupProduct :
           ((derivedPullback q).obj K))
 ```
 
-**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L236). The attribute's comment: “the canonical map, as the adjoint of the map on inverse images”.
+**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L236). The attribute's comment: “the canonical map, as the adjoint of the map on inverse images”.
 
 > **The Künneth map, as an adjoint.**  The same canonical map
 >
@@ -65,7 +65,7 @@ def kunnethMapOfAdjoint :
           ((derivedPullback q).obj K))
 ```
 
-**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfCupProduct_eq_kunnethMapOfAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L252). The attribute's comment: “the two constructions of the remark agree”.
+**`Stacks.Cohomology.KunnethMapOnRingedTopoi.kunnethMapOfCupProduct_eq_kunnethMapOfAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L252). The attribute's comment: “the two constructions of the remark agree”.
 
 > **The two constructions of the Künneth map agree**: `kunnethMapOfCupProduct` equals
 > `kunnethMapOfAdjoint`.
@@ -80,7 +80,7 @@ theorem kunnethMapOfCupProduct_eq_kunnethMapOfAdjoint :
 
 [Tag 0F14](https://stacks.math.columbia.edu/tag/0F14) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_zmod_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean#L68). The attribute's comment: “(2); on D((Spec k)\_et, ℤ/nℤ), which global sections identify with D(ℤ/nℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”. References: SGA 4½ Th finitude (1.11), “Künneth arrow RΓ(X”.
+**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_zmod_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean#L68). The attribute's comment: “(2); on D((Spec k)\_et, ℤ/nℤ), which global sections identify with D(ℤ/nℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”. References: SGA 4½ Th finitude (1.11), “Künneth arrow RΓ(X”.
 
 > **[Stacks, Tag 0F14] (2).** Let `k` be a separably closed field, `f : X ⟶ Spec k` proper,
 > `g : Y ⟶ Spec k` of finite type, and `n ≥ 1`. For `E ∈ D(X_étale, ℤ/nℤ)` and
@@ -99,7 +99,7 @@ theorem isIso_etaleKunnethCompositeMap_zmod_of_finiteType (n : ℕ) (hn : 0 < n)
       pullback.condition E K)
 ```
 
-**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_of_isGE_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean#L69). The attribute's comment: “(1); on D((Spec k)\_et, ℤ), which global sections identify with D(ℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”.
+**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_of_isGE_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean#L69). The attribute's comment: “(1); on D((Spec k)\_et, ℤ), which global sections identify with D(ℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”.
 
 > **[Stacks, Tag 0F14] (1).** Let `k` be a separably closed field, `f : X ⟶ Spec k` proper and
 > `g : Y ⟶ Spec k` with `Y` quasi-compact and quasi-separated. Let `E ∈ D⁺(X_étale)` have torsion
@@ -122,7 +122,7 @@ theorem isIso_etaleKunnethCompositeMap_of_isGE_of_isProper (k : Type u) [Field k
 
 [Tag 0F1F](https://stacks.math.columbia.edu/tag/0F1F) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_sheafH_and_epi_counit_of_supportSheaf_subset_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupport/Main.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupport/Main.lean#L75).
+**`AlgebraicGeometry.subsingleton_sheafH_and_epi_counit_of_supportSheaf_subset_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupport/Main.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupport/Main.lean#L75).
 
 > Let `K` be a separably closed field, let `X` be a scheme of finite type over `K` and let `F`
 > be an abelian sheaf on the small étale site of `X` whose support is contained in the set of
@@ -144,7 +144,7 @@ public theorem subsingleton_sheafH_and_epi_counit_of_supportSheaf_subset_closedP
 
 [Tag 0F1G](https://stacks.math.columbia.edu/tag/0F1G) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_iff_forall_isZero_etaleHypercohomology_of_closedPointSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupportDetection.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupportDetection.lean#L587).
+**`AlgebraicGeometry.isZero_iff_forall_isZero_etaleHypercohomology_of_closedPointSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupportDetection.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedPointSupportDetection.lean#L588).
 
 > **[Stacks, Tag 0F1G].** Let `K` be a separably closed field, `X` a scheme of finite type over
 > `K` and `Q` an object of the unbounded derived category of abelian sheaves on the small étale
@@ -176,7 +176,7 @@ public theorem isZero_iff_forall_isZero_etaleHypercohomology_of_closedPointSuppo
 
 [Tag 0F1H](https://stacks.math.columbia.edu/tag/0F1H) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.OpenImmersionProductSquare.isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/OpenImmersionProductSquareBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/OpenImmersionProductSquareBaseChange.lean#L55).
+**`Stacks.EtaleCohomology.OpenImmersionProductSquare.isIso_baseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/OpenImmersionProductSquareBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/OpenImmersionProductSquareBaseChange.lean#L55).
 
 > Let `K` be a field, `j : U ⟶ X` an open immersion of schemes of finite type over `K` and `Y`
 > a scheme of finite type over `K`. For every abelian sheaf `𝓕` on `U_étale` whose stalks are
@@ -203,7 +203,7 @@ theorem isIso_baseChangeMap {K : Type u} [Field K] {X U Y : Scheme.{u}}
 
 [Tag 0F1I](https://stacks.math.columbia.edu/tag/0F1I) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.BaseChangeOverField.isIso_smallEtaleDerivedBaseChangeAb_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/BaseChangeOverFieldTheorem.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/BaseChangeOverFieldTheorem.lean#L248).
+**`Stacks.EtaleCohomology.BaseChangeOverField.isIso_smallEtaleDerivedBaseChangeAb_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/BaseChangeOverFieldTheorem.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/BaseChangeOverFieldTheorem.lean#L248).
 
 > **[Stacks, Tag 0F1I].** Let `K` be a field. For any commutative diagram
 >
@@ -238,7 +238,7 @@ theorem isIso_smallEtaleDerivedBaseChangeAb_of_field (K : Type u) [Field K] {X :
 
 [Tag 0F1J](https://stacks.math.columbia.edu/tag/0F1J) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_tensorBaseChangeMap_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverField.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverField.lean#L84).
+**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_tensorBaseChangeMap_of_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverField.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverField.lean#L84).
 
 > **[Stacks, Tag 0F1J].** Let `K` be a field and `n ≥ 1` an integer invertible in `K`. Consider
 > a commutative diagram
@@ -277,7 +277,7 @@ theorem isIso_tensorBaseChangeMap_of_isUnit (K : Type u) [Field K] (n : ℕ) [Ne
 
 [Tag 0F1N](https://stacks.math.columbia.edu/tag/0F1N) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_tensorBaseChangeMap_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverFieldFiniteType.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverFieldFiniteType.lean#L82).
+**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_tensorBaseChangeMap_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverFieldFiniteType.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/TensorBaseChangeOverFieldFiniteType.lean#L82).
 
 > **[Stacks, Tag 0F1N].** Let `K` be a field and `n ≥ 1` an integer invertible in `K`.
 > Consider a commutative diagram
@@ -316,7 +316,7 @@ theorem isIso_tensorBaseChangeMap_of_finiteType (K : Type u) [Field K] (n : ℕ)
 
 [Tag 0F1P](https://stacks.math.columbia.edu/tag/0F1P) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_kunnethMap_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L101). References: SGA 4½ Th finitude (1.11), “special case”.
+**`Stacks.EtaleCohomology.EtaleCoefficients.isIso_kunnethMap_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L101). References: SGA 4½ Th finitude (1.11), “special case”.
 
 > **[Stacks, Tag 0F1P], as the Künneth map of [Stacks, Tag 0F1E].** Let `k` be a separably
 > closed field, `X` and `Y` schemes of finite type over `k` (through `f` and `g`), and `n ≥ 1` an
@@ -335,7 +335,7 @@ theorem isIso_kunnethMap_of_isSepClosed (hn : IsUnit (n : k))
       (Limits.pullback.snd f g) g Limits.pullback.condition E K)
 ```
 
-**`Stacks.EtaleCohomology.EtaleCoefficients.kunnethOverSepClosedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L120).
+**`Stacks.EtaleCohomology.EtaleCoefficients.kunnethOverSepClosedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L120).
 
 > **[Stacks, Tag 0F1P].** Let `k` be a separably closed field, `X` and `Y` schemes of finite
 > type over `k` (through `f` and `g`), and `n ≥ 1` an integer invertible in `k`. For
@@ -366,7 +366,7 @@ def kunnethOverSepClosedIso [HasDerivedCategory (ModuleCat.{u + 1} (ULift.{u + 1
           ((pushforward (ULift.{u + 1} (ZMod n)) g).obj K))
 ```
 
-**`Stacks.EtaleCohomology.EtaleCoefficients.kunnethOverSepClosedIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L143). References: SGA 4½ Th finitude (1.11), “special case”.
+**`Stacks.EtaleCohomology.EtaleCoefficients.kunnethOverSepClosedIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Kunneth/KunnethOverSeparablyClosedFieldFiniteType.lean#L143). References: SGA 4½ Th finitude (1.11), “special case”.
 
 > **[Stacks, Tag 0F1P]: the isomorphism is the Künneth map of [Stacks, Tag 0F1E].** The inverse
 > of `kunnethOverSepClosedIso` is the compatibility of `Γ` with `⊗^L`,
@@ -394,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.97, Tag 0F13](https://stacks.math.columbia.edu/tag/0F13)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

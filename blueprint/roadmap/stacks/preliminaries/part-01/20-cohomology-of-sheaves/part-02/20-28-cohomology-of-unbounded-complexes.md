@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.28 Cohomology of unbounded complexes
 
-Section 20.28 of the Stacks Project, [Tag 079V](https://stacks.math.columbia.edu/tag/079V). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.28 of the Stacks Project, [Tag 079V](https://stacks.math.columbia.edu/tag/079V). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 079W, a lemma
 
 [Tag 079W](https://stacks.math.columbia.edu/tag/079W) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L255). The attribute's comment: “derived adjunction”. References: SGA 4 XVII (2.3.7), “ringed spaces case”.
+**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L255). The attribute's comment: “derived adjunction”. References: SGA 4 XVII (2.3.7), “ringed spaces case”.
 
 > **The adjunction `Lf^* ⊣ Rf_*`** on the unbounded derived categories of sheaves of modules
 > over ringed spaces, for an arbitrary morphism of ringed spaces.
@@ -23,7 +23,7 @@ Section 20.28 of the Stacks Project, [Tag 079V](https://stacks.math.columbia.edu
 def derivedAdjunction : derivedPullback f ⊣ derivedPushforward f
 ```
 
-**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_unit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L263). The attribute's comment: “canonical unit”.
+**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_unit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L263). The attribute's comment: “canonical unit”.
 
 > The derived unit agrees with the ordinary unit after applying the canonical comparison
 > maps.
@@ -38,7 +38,7 @@ theorem derivedAdjunction_unit_fac
           (((modulePullback f).mapHomotopyCategory (ComplexShape.up ℤ)).obj M)
 ```
 
-**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L278). The attribute's comment: “canonical counit”.
+**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_counit_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L278). The attribute's comment: “canonical counit”.
 
 > The derived counit agrees with the ordinary counit after applying the canonical comparison
 > maps.
@@ -58,7 +58,7 @@ theorem derivedAdjunction_counit_fac
 
 [Tag 0D5T](https://stacks.math.columbia.edu/tag/0D5T) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPushforwardComposition.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CompositionUnconditional.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CompositionUnconditional.lean#L473).
+**`Stacks.Cohomology.DerivedPushforwardComposition.isIso_derivedPushforwardComparison_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CompositionUnconditional.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/CompositionUnconditional.lean#L473).
 
 > **Stacks 0D5T.**  For composable morphisms `f : X ⟶ Y` and `g : Y ⟶ Z` of ringed spaces, the
 > canonical comparison from a right derived pushforward along `f ≫ g` to the composite of right
@@ -83,7 +83,7 @@ theorem isIso_derivedPushforwardComparison_unconditional
 
 [Tag 08HY](https://stacks.math.columbia.edu/tag/08HY) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L286). The attribute's comment: “derived\_base\_change\_map”. References: SGA 4 XVII (4.1.5), “ringed spaces”; SGA 4 XVII (4.1.4), “ringed spaces case”.
+**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L285). The attribute's comment: “derived\_base\_change\_map”. References: SGA 4 XVII (4.1.5), “ringed spaces”; SGA 4 XVII (4.1.4), “ringed spaces case”.
 
 > **The derived base change map** `Lg^* (Rf_* K) ⟶ Rf'_* (Lg'^* K)` of a commutative square
 > of ringed spaces, at an object of the unbounded derived category.  It is adjoint to the derived
@@ -98,7 +98,7 @@ def derivedBaseChangeMap (K : DerivedCategory (SheafOfModules.{u} (structureShea
         ((Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback g').obj K)
 ```
 
-**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L299). The attribute's comment: “adjoint characterization of the canonical map”.
+**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L298). The attribute's comment: “adjoint characterization of the canonical map”.
 
 > Under the derived adjunction `Lf'^* ⊣ Rf'_*`, the base change map is the derived pullback
 > of the counit, transported across the two composition isomorphisms.
@@ -123,7 +123,7 @@ theorem derivedBaseChangeMap_adjoint
 
 [Tag 0ATL](https://stacks.math.columbia.edu/tag/0ATL) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean#L590).
+**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean#L590).
 
 > **Tag 0ATL.**  Derived base change for an outer rectangle is the composite of derived base
 > change for its two constituent squares.
@@ -149,7 +149,7 @@ theorem derivedBaseChangeMap_comp (sq₁ : k ≫ f = f' ≫ l) (sq₂ : l ≫ g 
 
 [Tag 0ATM](https://stacks.math.columbia.edu/tag/0ATM) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_comp_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean, line 846](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean#L846).
+**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap_comp_horizontal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean, line 846](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangePasting.lean#L846).
 
 > **Tag 0ATM.**  Derived base change for an outer rectangle is the composite of derived base
 > change for its two constituent squares.
@@ -178,13 +178,13 @@ theorem derivedBaseChangeMap_comp_horizontal (sq₁ : g ≫ f = f' ≫ h)
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_counit_fac`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L278), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean#L38) (StacksFrontier): “the square of the ordinary and the derived counit commutes”.
+- [`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedAdjunction_counit_fac`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/AdjunctionUnconditional.lean#L278), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/OrdinaryAndDerivedCounit.lean#L38) (StacksFrontier): “the square of the ordinary and the derived counit commutes”.
 
 ## Tag 0B68, a remark
 
 [Tag 0B68](https://stacks.math.columbia.edu/tag/0B68) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L173).
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L174).
 
 > **The relative cup product** `Rf_*K ⊗^L_{𝒪_Y} Rf_*M ⟶ Rf_*(K ⊗^L_{𝒪_X} M)`: the adjoint
 > transpose of the derived pullback-tensor comparison of Stacks 079U followed by the counit of
@@ -200,7 +200,7 @@ def relativeCupProduct
         (((Stacks.DerivedTensor.RingedSite.derivedTensorProductFunctor X.sheaf).obj K).obj M)
 ```
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L227). The attribute's comment: “naturality in both complexes”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L228). The attribute's comment: “naturality in both complexes”.
 
 > The relative cup product is natural in both derived modules on the source.
 
@@ -220,7 +220,7 @@ theorem relativeCupProduct_natural
               (k ×ₘ m))
 ```
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L250). The attribute's comment: “naturality in the first complex”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L251). The attribute's comment: “naturality in the first complex”.
 
 > The relative cup product is natural in the first derived module.
 
@@ -238,7 +238,7 @@ theorem relativeCupProduct_natural_left
           (((Stacks.DerivedTensor.RingedSite.derivedTensorProductFunctor X.sheaf).map k).app M)
 ```
 
-**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L271). The attribute's comment: “naturality in the second complex”.
+**`Stacks.Cohomology.DerivedRelativeCupProduct.relativeCupProduct_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/RelativeCupProduct.lean#L272). The attribute's comment: “naturality in the second complex”.
 
 > The relative cup product is natural in the second derived module.
 
@@ -263,4 +263,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.28, Tag 079V](https://stacks.math.columbia.edu/tag/079V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

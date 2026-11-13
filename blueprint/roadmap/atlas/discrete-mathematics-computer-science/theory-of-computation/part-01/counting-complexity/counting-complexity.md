@@ -7,7 +7,7 @@ statement: formalized
 
 # Counting complexity: its own results
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html).
 
 \#P and PP: #P-completeness (counting SAT, permanent), PP-completeness, Toda's theorem, threshold languages, and approximate counting algorithms and schemes (Stockmeyer, Karp–Luby, Jerrum–Sinclair–Vigoda).
 
@@ -33,7 +33,7 @@ queries and the query-length cap are all polynomial in $|x| + n$.
 
 - L. J. Stockmeyer, "The complexity of approximate counting", Proceedings of the Fifteenth Annual ACM Symposium on Theory of Computing (STOC 1983), 118-126 (journal version in Information and Computation 1985).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Stockmeyer.stockmeyer_approximate_counting` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/StockmeyerWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/StockmeyerWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html#stockmeyer-approximate-counting).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Stockmeyer.stockmeyer_approximate_counting` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/StockmeyerWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/StockmeyerWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html#stockmeyer-approximate-counting).
 
 ## Toda's theorem: PH is contained in $\mathsf{P}^{\#\mathsf{P}}$
 
@@ -45,7 +45,7 @@ decidable in polynomial time with a $\#\mathsf{P}$ oracle.
 
 - S. Toda, "PP is as hard as the polynomial-time hierarchy", SIAM Journal on Computing 20 (1991), 865-877 (FOCS 1989).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Toda.toda` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/TodaWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/TodaWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html#toda).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.Toda.toda` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/TodaWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/TodaWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html#toda).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Counting complexity](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/counting-complexity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/counting-complexity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/counting-complexity)

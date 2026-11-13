@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.17 Blowing up
 
-Section 71.17 of the Stacks Project, [Tag 085P](https://stacks.math.columbia.edu/tag/085P). 12 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.17 of the Stacks Project, [Tag 085P](https://stacks.math.columbia.edu/tag/085P). 12 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 085Q, a definition
 
 [Tag 085Q](https://stacks.math.columbia.edu/tag/085Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.blowUpAlong'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L78). The attribute's comment: “the blowup of X along Z as the relative Proj of the Rees algebra, the same object as blowUpAlong with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
+**`AlgebraicGeometry.Space.blowUpAlong'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L78). The attribute's comment: “the blowup of X along Z as the relative Proj of the Rees algebra, the same object as blowUpAlong with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
 
 > **Stacks 085Q.** The blowing up of an algebraic space `X` along a closed subspace `Z ⊆ X`:
 > the relative Proj `Proj_X(⨁_{n ≥ 0} 𝓘_Zⁿ)` of the Rees algebra of the defining ideal sheaf of
@@ -27,7 +27,7 @@ Section 71.17 of the Stacks Project, [Tag 085P](https://stacks.math.columbia.edu
 def blowUpAlong' : AlgebraicSpaces B S hS
 ```
 
-**`AlgebraicGeometry.Space.blowUpAlongHom'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L89). The attribute's comment: “the morphism b of the blowup, with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
+**`AlgebraicGeometry.Space.blowUpAlongHom'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L89). The attribute's comment: “the morphism b of the blowup, with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
 
 > **Stacks 085Q.** The blowing up `b : Proj_X(⨁_{n ≥ 0} 𝓘_Zⁿ) ⟶ X` of an algebraic space `X`
 > along a closed subspace `Z ⊆ X`, as a morphism of algebraic spaces over `S`, with the
@@ -37,7 +37,7 @@ def blowUpAlong' : AlgebraicSpaces B S hS
 def blowUpAlongHom' : blowUpAlong' Z P hcU hcR hcRR ⟶ X
 ```
 
-**`AlgebraicGeometry.Space.exceptionalDivisor'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L100). The attribute's comment: “the exceptional divisor b⁻¹(Z) of the blowup and the centre Z, with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
+**`AlgebraicGeometry.Space.exceptionalDivisor'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEquivalenceRelationClosed.lean#L100). The attribute's comment: “the exceptional divisor b⁻¹(Z) of the blowup and the centre Z, with the descent datum's equivalence-relation field discharged rather than assumed; the three B.Contains side conditions on the relative Projs remain”.
 
 > **Stacks 085Q.** The exceptional divisor `b⁻¹(Z)` of the blowing up of `X` along `Z`: the
 > inverse image of the centre along the structure morphism of the blowup, as a closed subspace of
@@ -47,7 +47,7 @@ def blowUpAlongHom' : blowUpAlong' Z P hcU hcR hcRR ⟶ X
 def exceptionalDivisor' : ClosedSubspaces B S hS (blowUpAlong' Z P hcU hcR hcRR).obj
 ```
 
-**`AlgebraicGeometry.Space.blowUpAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L439). The attribute's comment: “the blowup as the relative Proj of the Rees algebra, with the descent datum's equivalence-relation field carried as a parameter; Φ and its invertibility and both pullback squares are supplied from the Rees comparison”.
+**`AlgebraicGeometry.Space.blowUpAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L439). The attribute's comment: “the blowup as the relative Proj of the Rees algebra, with the descent datum's equivalence-relation field carried as a parameter; Φ and its invertibility and both pullback squares are supplied from the Rees comparison”.
 
 > The blowing up of an algebraic space `X` along a closed subspace `Z ⊆ X`: the relative Proj
 > `Proj_X(⨁_{n ≥ 0} 𝓘_Zⁿ)` of the Rees algebra of the defining ideal sheaf of `Z`, as an algebraic
@@ -57,7 +57,7 @@ def exceptionalDivisor' : ClosedSubspaces B S hS (blowUpAlong' Z P hcU hcR hcRR)
 def blowUpAlong : AlgebraicSpaces B S hS
 ```
 
-**`AlgebraicGeometry.Space.blowUpAlongHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L446). The attribute's comment: “the morphism b of the blowup, with the descent datum's equivalence-relation field carried as a parameter”.
+**`AlgebraicGeometry.Space.blowUpAlongHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L446). The attribute's comment: “the morphism b of the blowup, with the descent datum's equivalence-relation field carried as a parameter”.
 
 > The blowing up `b : Proj_X(⨁_{n ≥ 0} 𝓘_Zⁿ) ⟶ X` of an algebraic space `X` along a closed
 > subspace `Z ⊆ X`, as a morphism of algebraic spaces over `S`.
@@ -66,7 +66,7 @@ def blowUpAlong : AlgebraicSpaces B S hS
 def blowUpAlongHom : blowUpAlong Z P hcU hcR heq ⟶ X
 ```
 
-**`AlgebraicGeometry.Space.exceptionalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L452). The attribute's comment: “the exceptional divisor b⁻¹(Z) of the blowup, and the centre Z”.
+**`AlgebraicGeometry.Space.exceptionalDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupRelativeProj.lean#L452). The attribute's comment: “the exceptional divisor b⁻¹(Z) of the blowup, and the centre Z”.
 
 > The exceptional divisor `b⁻¹(Z)` of the blowing up of `X` along `Z`: the inverse image of the
 > centre along the structure morphism of the blowup, as a closed subspace of the blowup.
@@ -79,7 +79,7 @@ def exceptionalDivisor : ClosedSubspaces B S hS (blowUpAlong Z P hcU hcR heq).ob
 
 [Tag 085R](https://stacks.math.columbia.edu/tag/085R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean#L447). The attribute's comment: “the canonical isomorphism clause: for an affine scheme U = Spec A of the site étale over X, the fibre product U ×\_X X' is the scheme Proj of the Rees algebra of the ideal I of A corresponding to the restriction of the centre's defining sheaf of ideals, by an isomorphism over U; the blowup b is named by the universal property of Stacks 085U, and the only side conditions are the three B.Contains conditions on the relative Projs of the chart's own presentation that the construction of Stacks 085Q already takes; the tag's affine open covering clause is a separate registration”.
+**`AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean#L448). The attribute's comment: “the canonical isomorphism clause: for an affine scheme U = Spec A of the site étale over X, the fibre product U ×\_X X' is the scheme Proj of the Rees algebra of the ideal I of A corresponding to the restriction of the centre's defining sheaf of ideals, by an isomorphism over U; the blowup b is named by the universal property of Stacks 085U, and the only side conditions are the three B.Contains conditions on the relative Projs of the chart's own presentation that the construction of Stacks 085Q already takes; the tag's affine open covering clause is a separate registration”.
 
 > **Stacks 085R, the canonical isomorphism.**  Let `S` be a scheme, let `X` be an algebraic
 > space over `S`, let `Z ⊆ X` be a closed subspace with quasi-coherent defining sheaf of ideals
@@ -130,7 +130,7 @@ theorem exists_iso_proj_reesGrading_affineChart
               (Stacks.Blowup.topAffineOpen ((BigFppfOver.toScheme B S hS).obj V)).1.ι
 ```
 
-**`AlgebraicGeometry.Space.exists_iSup_opensRange_specAffineBlowupι_affineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean#L497). The attribute's comment: “the affine open covering clause: the scheme U ×\_X X' is covered by the images of the open immersions Spec A[I/a] ⟶ U ×\_X X', a ∈ I, out of the spectra of the affine blowup algebras; same hypotheses and same side conditions as the canonical-isomorphism clause”.
+**`AlgebraicGeometry.Space.exists_iSup_opensRange_specAffineBlowupι_affineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartRees.lean#L499). The attribute's comment: “the affine open covering clause: the scheme U ×\_X X' is covered by the images of the open immersions Spec A[I/a] ⟶ U ×\_X X', a ∈ I, out of the spectra of the affine blowup algebras; same hypotheses and same side conditions as the canonical-isomorphism clause”.
 
 > **Stacks 085R, the affine open covering.**  In the situation of
 > `AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart`, the scheme representing
@@ -181,7 +181,7 @@ theorem exists_iSup_opensRange_specAffineBlowupι_affineChart
           ⨆ c : I, (Stacks.Blowup.specAffineBlowupι I (c : _) c.2 ≫ f.hom).opensRange = ⊤
 ```
 
-**`AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean#L126). The attribute's comment: “the canonical isomorphism clause: for an affine scheme U = Spec A of the site étale over X, the fibre product U ×\_X X' is the scheme Proj of the Rees algebra of the ideal I of A corresponding to the restriction of the centre's defining sheaf of ideals, by an isomorphism over U; the blowup b is named by the universal property of Stacks 085U; there are no side conditions, the three B.Contains conditions on the relative Projs of the chart's own presentation being proved here from the Rees size bound; the tag's affine open covering clause is a separate registration”.
+**`AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean#L126). The attribute's comment: “the canonical isomorphism clause: for an affine scheme U = Spec A of the site étale over X, the fibre product U ×\_X X' is the scheme Proj of the Rees algebra of the ideal I of A corresponding to the restriction of the centre's defining sheaf of ideals, by an isomorphism over U; the blowup b is named by the universal property of Stacks 085U; there are no side conditions, the three B.Contains conditions on the relative Projs of the chart's own presentation being proved here from the Rees size bound; the tag's affine open covering clause is a separate registration”.
 
 > **Stacks 085R, the canonical isomorphism.**  Let `S` be a scheme, let `X` be an algebraic
 > space over `S`, let `Z ⊆ X` be a closed subspace with quasi-coherent defining sheaf of ideals
@@ -230,7 +230,7 @@ theorem exists_iso_proj_reesGrading_affineChart_unconditional
               (Stacks.Blowup.topAffineOpen ((BigFppfOver.toScheme B S hS).obj V)).1.ι
 ```
 
-**`AlgebraicGeometry.Space.exists_iSup_opensRange_specAffineBlowupι_affineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean#L175). The attribute's comment: “the affine open covering clause: the scheme U ×\_X X' is covered by the images of the open immersions Spec A[I/a] ⟶ U ×\_X X', a ∈ I, out of the spectra of the affine blowup algebras; same hypotheses as the canonical-isomorphism clause and, like it, no side conditions”.
+**`AlgebraicGeometry.Space.exists_iSup_opensRange_specAffineBlowupι_affineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupAffineChartReesUnconditional.lean#L175). The attribute's comment: “the affine open covering clause: the scheme U ×\_X X' is covered by the images of the open immersions Spec A[I/a] ⟶ U ×\_X X', a ∈ I, out of the spectra of the affine blowup algebras; same hypotheses as the canonical-isomorphism clause and, like it, no side conditions”.
 
 > **Stacks 085R, the affine open covering.**  In the situation of
 > `AlgebraicGeometry.Space.exists_iso_proj_reesGrading_affineChart_unconditional`, the scheme
@@ -283,7 +283,7 @@ theorem exists_iSup_opensRange_specAffineBlowupι_affineChart_unconditional
 
 [Tag 085S](https://stacks.math.columbia.edu/tag/085S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_preimage_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L130).
+**`AlgebraicGeometry.Space.isBlowupAlong_preimage_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L130).
 
 > **Stacks 085S.** Let `g : X₁ ⟶ X₂` be a flat morphism of algebraic spaces over `S`, let
 > `Z₂ ⊆ X₂` be a closed subspace and let `b₂ : X₂' ⟶ X₂` be the blowup of `X₂` in `Z₂`.  Then for
@@ -306,7 +306,7 @@ theorem isBlowupAlong_preimage_of_isPullback_of_isFlat
     IsBlowupAlong B S hS (preimageClosedSubspace g Z₂) q
 ```
 
-**`AlgebraicGeometry.Space.isBlowupAlong_pullbackFst_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L159).
+**`AlgebraicGeometry.Space.isBlowupAlong_pullbackFst_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L159).
 
 > **Stacks 085S for the chosen fibre product.** The first projection of the fibre product
 > `X₁ ×_{X₂} X₂'` of a flat morphism `g : X₁ ⟶ X₂` with the blowup `b₂ : X₂' ⟶ X₂` of `X₂` in a
@@ -320,7 +320,7 @@ theorem isBlowupAlong_pullbackFst_of_isFlat
     IsBlowupAlong B S hS (preimageClosedSubspace g Z₂) (pullback.fst g b₂)
 ```
 
-**`AlgebraicGeometry.Space.exists_isPullback_blowup_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L183).
+**`AlgebraicGeometry.Space.exists_isPullback_blowup_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFlatBaseChange.lean#L183).
 
 > **Stacks 085S in the source's phrasing.** For a flat morphism `g : X₁ ⟶ X₂` of algebraic
 > spaces over `S`, a closed subspace `Z₂ ⊆ X₂` with inverse image `Z₁ ⊆ X₁`, the blowup
@@ -352,7 +352,7 @@ theorem exists_isPullback_blowup_of_isFlat
 
 [Tag 085T](https://stacks.math.columbia.edu/tag/085T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_exceptionalDivisor_blowUpAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalCartier.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalCartier.lean#L124). The attribute's comment: “part (2), the exceptional divisor b⁻¹(Z) of the blowup of an algebraic space along a closed subspace is an effective Cartier divisor on the blowup”.
+**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_exceptionalDivisor_blowUpAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalCartier.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalCartier.lean#L124). The attribute's comment: “part (2), the exceptional divisor b⁻¹(Z) of the blowup of an algebraic space along a closed subspace is an effective Cartier divisor on the blowup”.
 
 > **Stacks 085T part (2).** Let `X` be an algebraic space over a scheme `S`, let `Z ⊆ X` be a
 > closed subspace and let `b : X' ⟶ X` be the blowing up of `X` along `Z` of Stacks 085Q, the
@@ -377,7 +377,7 @@ theorem isEffectiveCartierDivisor_exceptionalDivisor_blowUpAlong :
       (exceptionalDivisor Z P hcU hcR heq)
 ```
 
-**`AlgebraicGeometry.Space.IsBlowupAlong.isIso_and_isEffectiveCartierDivisor_and_twist_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalTwist.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalTwist.lean#L209). The attribute's comment: “all three parts, for any blowup b of X in a closed subspace Z in the sense of the Stacks 085U universal property: (1) b is an isomorphism over the complement of Z, (2) the exceptional divisor is an effective Cartier divisor, (3) O(E) = O(-1), read as in Stacks 084D on every affine scheme V etale over X, where V x\_X X' = Proj of the Rees algebra (Stacks 085R) and the base change of O(E) is the twist O(-1); no other hypothesis”.
+**`AlgebraicGeometry.Space.IsBlowupAlong.isIso_and_isEffectiveCartierDivisor_and_twist_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalTwist.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupExceptionalTwist.lean#L209). The attribute's comment: “all three parts, for any blowup b of X in a closed subspace Z in the sense of the Stacks 085U universal property: (1) b is an isomorphism over the complement of Z, (2) the exceptional divisor is an effective Cartier divisor, (3) O(E) = O(-1), read as in Stacks 084D on every affine scheme V etale over X, where V x\_X X' = Proj of the Rees algebra (Stacks 085R) and the base change of O(E) is the twist O(-1); no other hypothesis”.
 
 > **Stacks 085T.**  Let `S` be a scheme, let `X` be an algebraic space over `S`, let `Z ⊆ X` be
 > a closed subspace and let `b : X' ⟶ X` be the blowing up of `X` in `Z`, in the sense of the
@@ -434,7 +434,7 @@ theorem isIso_and_isEffectiveCartierDivisor_and_twist_neg_one
               twistingSheaf (Stacks.Blowup.reesGrading I) (-1))
 ```
 
-**`AlgebraicGeometry.Space.isIso_fromPreimage_openComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupIsomorphismOffCentre.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupIsomorphismOffCentre.lean#L200). The attribute's comment: “part (1): the blowup is an isomorphism away from the centre”.
+**`AlgebraicGeometry.Space.isIso_fromPreimage_openComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupIsomorphismOffCentre.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupIsomorphismOffCentre.lean#L200). The attribute's comment: “part (1): the blowup is an isomorphism away from the centre”.
 
 > **Stacks 085T, part (1).** The blowup `b : X' ⟶ X` of an algebraic space `X` in a closed
 > subspace `Z` is an isomorphism over the open complement of `Z`: the restriction
@@ -452,7 +452,7 @@ theorem isIso_fromPreimage_openComplement {X X' : AlgebraicSpaces B S hS}
     IsIso ((openComplementOfClosedSubspace B S hS X Z).1.fromPreimage b.hom)
 ```
 
-**`AlgebraicGeometry.Space.blowUpTwistSpaceNegOneIsoAssociatedInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTwistDescentCanonical.lean, line 869](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTwistDescentCanonical.lean#L869). The attribute's comment: “part (3): the canonical isomorphism O\_\{X'}(-1) = O\_\{X'}(E) on the blowup of an algebraic space, O\_\{X'}(1) being descended along the unique transition compatible with the canonical map O(1) → O”. References: EGA II (8.1.8), “partial”.
+**`AlgebraicGeometry.Space.blowUpTwistSpaceNegOneIsoAssociatedInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupTwistDescentCanonical.lean, line 869](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupTwistDescentCanonical.lean#L869). The attribute's comment: “part (3): the canonical isomorphism O\_\{X'}(-1) = O\_\{X'}(E) on the blowup of an algebraic space, O\_\{X'}(1) being descended along the unique transition compatible with the canonical map O(1) → O”. References: EGA II (8.1.8), “partial”.
 
 > **Stacks 085T, part (3): the canonical isomorphism `𝒪_{X'}(-1) ≅ 𝒪_{X'}(E)`.**  Let
 > `b : X' ⟶ X` be the blowing up of an algebraic space `X` along a closed subspace `Z` (Stacks
@@ -512,7 +512,7 @@ def blowUpTwistSpaceNegOneIsoAssociatedInvertibleSheaf (Z : ClosedSubspaces B S 
 
 [Tag 085U](https://stacks.math.columbia.edu/tag/085U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_blowUpAlongHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFinality.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFinality.lean#L441). The attribute's comment: “the blowup of an algebraic space along a closed subspace is a final object of the category of those Y over X whose inverse image of the centre is an effective Cartier divisor; both halves, membership and finality”.
+**`AlgebraicGeometry.Space.isBlowupAlong_blowUpAlongHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupFinality.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupFinality.lean#L441). The attribute's comment: “the blowup of an algebraic space along a closed subspace is a final object of the category of those Y over X whose inverse image of the centre is an effective Cartier divisor; both halves, membership and finality”.
 
 > **Stacks 085U.**  The blowing up `b : X' ⟶ X` of an algebraic space `X` along a closed
 > subspace `Z ⊆ X` is a final object of the category `𝒞` of algebraic spaces over `X` on which the
@@ -545,7 +545,7 @@ theorem isBlowupAlong_blowUpAlongHom' :
 
 [Tag 085V](https://stacks.math.columbia.edu/tag/085V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_id_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupOfEffectiveCartierDivisor.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupOfEffectiveCartierDivisor.lean#L92).
+**`AlgebraicGeometry.Space.isBlowupAlong_id_of_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupOfEffectiveCartierDivisor.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupOfEffectiveCartierDivisor.lean#L92).
 
 > **Stacks 085V.** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z ⊆ X` be an effective Cartier divisor.  **The blowup of `X` in `Z` is the identity morphism
@@ -570,7 +570,7 @@ theorem isBlowupAlong_id_of_isEffectiveCartierDivisor (X : AlgebraicSpaces B S h
 
 [Tag 085W](https://stacks.math.columbia.edu/tag/085W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupReduced.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupReduced.lean#L120). The attribute's comment: “given the étale-chart representability of the blowup supplied by Stacks 085Q”.
+**`AlgebraicGeometry.Space.isReduced_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupReduced.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupReduced.lean#L120). The attribute's comment: “given the étale-chart representability of the blowup supplied by Stacks 085Q”.
 
 > **Stacks 085W**, with the étale-chart representability of Stacks 085Q carried as a
 > hypothesis.
@@ -601,7 +601,7 @@ theorem isReduced_of_isBlowupAlong
     HasEtaleLocalProperty B S hS X'.1 (fun T : Scheme.{u} => IsReduced T)
 ```
 
-**`AlgebraicGeometry.Space.isReduced_of_isBlowupAlong_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupReducedPresentation.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupReducedPresentation.lean#L90). The attribute's comment: “the blowup of a reduced algebraic space in a closed subspace is reduced, with no assumed inputs beyond the Stacks 085Q construction data — the étale presentation P of the space, the HasSheafify universe choice for the quotient presheaf, and the three B.Contains size conditions on the relative Projs of the chart, relation and double situations — none of which occurs in the conclusion”.
+**`AlgebraicGeometry.Space.isReduced_of_isBlowupAlong_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupReducedPresentation.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupReducedPresentation.lean#L90). The attribute's comment: “the blowup of a reduced algebraic space in a closed subspace is reduced, with no assumed inputs beyond the Stacks 085Q construction data — the étale presentation P of the space, the HasSheafify universe choice for the quotient presheaf, and the three B.Contains size conditions on the relative Projs of the chart, relation and double situations — none of which occurs in the conclusion”.
 
 > **Stacks 085W.**  Let `X` be an algebraic space over `S` and let `Z ⊆ X` be the closed
 > subspace cut out by a quasi-coherent sheaf of ideals.  If `X` is reduced then so is the blowup
@@ -641,7 +641,7 @@ theorem isReduced_of_isBlowupAlong_of_presentation
 
 [Tag 0BH1](https://stacks.math.columbia.edu/tag/0BH1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_of_isBlowupAlong_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupLocallyFiniteIrreducibleComponents.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupLocallyFiniteIrreducibleComponents.lean#L127). The attribute's comment: “the blowup of an algebraic space satisfying the equivalent conditions of Stacks 0BB1 in a closed subspace satisfies them too, with no assumed inputs beyond the Stacks 085Q construction data for the centre -- a presentation P, the HasSheafify universe choice, and the three B.Contains side conditions hcU, hcR and hcRR on the relative Projs -- none of which occurs in the conclusion”.
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_of_isBlowupAlong_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupLocallyFiniteIrreducibleComponents.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupLocallyFiniteIrreducibleComponents.lean#L127). The attribute's comment: “the blowup of an algebraic space satisfying the equivalent conditions of Stacks 0BB1 in a closed subspace satisfies them too, with no assumed inputs beyond the Stacks 085Q construction data for the centre -- a presentation P, the HasSheafify universe choice, and the three B.Contains side conditions hcU, hcR and hcRR on the relative Projs -- none of which occurs in the conclusion”.
 
 > **Stacks 0BH1.**  Let `X` be an algebraic space over `S` and let `Z ⊆ X` be the closed
 > subspace cut out by a quasi-coherent sheaf of ideals.  If `X` satisfies the equivalent
@@ -685,7 +685,7 @@ theorem hasLocallyFiniteIrreducibleComponents_of_isBlowupAlong_of_presentation
 
 [Tag 085X](https://stacks.math.columbia.edu/tag/085X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullbackDefined_blowUpAlongHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean#L203). The attribute's comment: “for the blowup of Stacks 085Q: with no assumed inputs beyond the construction data P, hcU, hcR and heq naming the blowup, every effective Cartier divisor on an algebraic space has a defined pullback along it”.
+**`AlgebraicGeometry.Space.isPullbackDefined_blowUpAlongHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean#L204). The attribute's comment: “for the blowup of Stacks 085Q: with no assumed inputs beyond the construction data P, hcU, hcR and heq naming the blowup, every effective Cartier divisor on an algebraic space has a defined pullback along it”.
 
 > **Stacks 085X.** Let `X` be an algebraic space over a scheme `S`, let `Z ⊆ X` be a closed
 > subspace and let `b : X' ⟶ X` be the blowing up of `X` along `Z` of Stacks 085Q.  Then for every
@@ -709,7 +709,7 @@ theorem isPullbackDefined_blowUpAlongHom (D : ClosedSubspaces B S hS X.obj)
     IsPullbackDefined B S hS (blowUpAlongHom Z P hcU hcR heq) D
 ```
 
-**`AlgebraicGeometry.Space.isPullbackDefined_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean#L266). The attribute's comment: “the source statement, for any b which is a blowup of X in a closed subspace in the sense of the Stacks 085U universal property; with no assumed inputs apart from the Stacks 085Q construction data P, hcU, hcR and hcRR, which does not occur in the conclusion”.
+**`AlgebraicGeometry.Space.isPullbackDefined_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullback.lean#L267). The attribute's comment: “the source statement, for any b which is a blowup of X in a closed subspace in the sense of the Stacks 085U universal property; with no assumed inputs apart from the Stacks 085Q construction data P, hcU, hcR and hcRR, which does not occur in the conclusion”.
 
 > **Stacks 085X, for an arbitrary blowup.**  Let `X` be an algebraic space over a scheme `S`,
 > let `Z ⊆ X` be a closed subspace and let `b : X' ⟶ X` be *a* blowup of `X` in `Z`, in the sense
@@ -736,7 +736,7 @@ theorem isPullbackDefined_of_isBlowupAlong {X' : AlgebraicSpaces B S hS} {b : X'
     IsPullbackDefined B S hS b D
 ```
 
-**`AlgebraicGeometry.Space.isPullbackDefined_of_exists_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullbackAnyBlowup.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullbackAnyBlowup.lean#L49). The attribute's comment: “the full statement, for every morphism b which is a blowup of X in some closed subspace (Stacks 085U universal property) and every effective Cartier divisor D on X; no construction data and no size condition on the site among the hypotheses”.
+**`AlgebraicGeometry.Space.isPullbackDefined_of_exists_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullbackAnyBlowup.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupDivisorPullbackAnyBlowup.lean#L49). The attribute's comment: “the full statement, for every morphism b which is a blowup of X in some closed subspace (Stacks 085U universal property) and every effective Cartier divisor D on X; no construction data and no size condition on the site among the hypotheses”.
 
 > **Stacks 085X.**  Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `b : X' ⟶ X` be a blowup of `X` in a closed subspace.  Then for every effective Cartier divisor
@@ -759,7 +759,7 @@ theorem isPullbackDefined_of_exists_isBlowupAlong {X X' : AlgebraicSpaces B S hS
 
 [Tag 085Y](https://stacks.math.columbia.edu/tag/085Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_comp_of_isBlowupAlong'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupComposite.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupComposite.lean#L218). The attribute's comment: “with no assumed inputs beyond the Stacks 085Q construction data P, hcU, hcR and hcRR for the second centre, which does not occur in the conclusion: for b a blowup of X in Z and b' a blowup of X' in the inverse image of Y, both in the sense of the Stacks 085U universal property, the composite b' followed by b is the blowup of X in the sum Z + Y”.
+**`AlgebraicGeometry.Space.isBlowupAlong_comp_of_isBlowupAlong'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupComposite.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupComposite.lean#L218). The attribute's comment: “with no assumed inputs beyond the Stacks 085Q construction data P, hcU, hcR and hcRR for the second centre, which does not occur in the conclusion: for b a blowup of X in Z and b' a blowup of X' in the inverse image of Y, both in the sense of the Stacks 085U universal property, the composite b' followed by b is the blowup of X in the sum Z + Y”.
 
 > **Stacks 085Y.**  Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z, Y ⊆ X` be closed subspaces.  Let `b : X' ⟶ X` be a blowup of `X` in `Z` and let
@@ -804,7 +804,7 @@ theorem isBlowupAlong_comp_of_isBlowupAlong'
 
 [Tag 085Z](https://stacks.math.columbia.edu/tag/085Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_of_isBlowupAlong_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessReesChart.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessReesChart.lean#L244). The attribute's comment: “the blowup b : X' -> X of an algebraic space X in a closed subspace Z whose closed immersion is of finite presentation (equivalently, whose quasi-coherent ideal sheaf is of finite type) is a proper morphism, at the source's hypotheses: the relative Proj charts the proof reads are shown to lie in the site by hasReesProjChartInSite\_of\_isFinitePresentation”.
+**`AlgebraicGeometry.Space.isProper_of_isBlowupAlong_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessReesChart.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupPropernessReesChart.lean#L244). The attribute's comment: “the blowup b : X' -> X of an algebraic space X in a closed subspace Z whose closed immersion is of finite presentation (equivalently, whose quasi-coherent ideal sheaf is of finite type) is a proper morphism, at the source's hypotheses: the relative Proj charts the proof reads are shown to lie in the site by hasReesProjChartInSite\_of\_isFinitePresentation”.
 
 > **Stacks 085Z.**  Let `X` be an algebraic space over a scheme `S` and let `Z ⊆ X` be a
 > closed subspace whose closed immersion is of finite presentation — equivalently, whose
@@ -833,7 +833,7 @@ theorem isProper_of_isBlowupAlong_of_isFinitePresentation (Z : ClosedSubspaces B
 
 [Tag 0860](https://stacks.math.columbia.edu/tag/0860) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isCompositeCentre_isBlowupAlong_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCompositeCentre.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCompositeCentre.lean#L466).
+**`AlgebraicGeometry.Space.exists_isCompositeCentre_isBlowupAlong_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCompositeCentre.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCompositeCentre.lean#L466).
 
 > **Stacks 0860.**  Let `S` be a scheme and let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S`.  Let `Z ⊆ X` be a closed subspace of finite presentation and let
@@ -872,4 +872,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.17, Tag 085P](https://stacks.math.columbia.edu/tag/085P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

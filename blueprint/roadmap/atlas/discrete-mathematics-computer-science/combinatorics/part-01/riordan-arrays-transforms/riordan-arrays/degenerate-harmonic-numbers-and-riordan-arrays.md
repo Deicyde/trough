@@ -7,7 +7,7 @@ statement: formalized
 
 # Degenerate harmonic numbers and Riordan arrays
 
-33 results, 24 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html).
+33 results, 24 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html).
 
 ## Degenerate harmonic terms
 
@@ -25,7 +25,7 @@ follows the paper's convention $H^r_{0,\lambda}(\alpha) = 0$ and the generating 
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1 (`H⁰_{n,λ}(α)` and Equation (2)).
 
-Formalized by `MetaMathlibExt.degenerateHarmonicTerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term).
+Formalized by `MetaMathlibExt.degenerateHarmonicTerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term).
 
 ## Degenerate harmonic term of index zero
 
@@ -36,7 +36,7 @@ degenerate harmonic term of index $0$, $H^0_{0,\lambda}(\alpha)$, is $0$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.degenerateHarmonicTerm_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term-zero).
+Formalized by `MetaMathlibExt.degenerateHarmonicTerm_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term-zero).
 
 ## Degenerate harmonic term of index one
 
@@ -50,7 +50,7 @@ At $\alpha = 0$ both sides are $0$, under the convention that a quotient by $0$ 
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.degenerateHarmonicTerm_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term-one).
+Formalized by `MetaMathlibExt.degenerateHarmonicTerm_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-term-one).
 
 ## Generalized degenerate harmonic numbers
 
@@ -69,7 +69,7 @@ $H_{n,\lambda}$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic).
+Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic).
 
 ## The zeroth generalized degenerate harmonic number
 
@@ -80,7 +80,7 @@ $\alpha$, the generalized degenerate harmonic number $H_{0,\lambda}(\alpha)$ is 
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic-zero).
+Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic-zero).
 
 ## Recurrence for generalized degenerate harmonic numbers
 
@@ -98,7 +98,7 @@ where $\binom{\lambda}{n+1} = \lambda(\lambda - 1)\cdots(\lambda - n)/(n+1)!$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic-succ).
+Formalized by `MetaMathlibExt.generalizedDegenerateHarmonic_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-harmonic-succ).
 
 ## Generalized degenerate hyperharmonic numbers
 
@@ -118,7 +118,7 @@ $H_{n,\lambda}(\alpha) = \sum_{k=1}^{n} (-1)^{k-1} \binom{\lambda}{k} / (\lambda
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic).
+Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic).
 
 ## Generalized degenerate hyperharmonic numbers of positive order vanish at zero
 
@@ -130,7 +130,7 @@ hyperharmonic number of order $r + 1$ at index $0$ is zero: $H^{r+1}_{0,\lambda}
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic_succ_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic-suc).
+Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic_succ_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic-suc).
 
 ## Generalized degenerate hyperharmonic numbers of order one
 
@@ -143,7 +143,7 @@ $H^1_{n,\lambda}(\alpha) = H_{n,\lambda}(\alpha)$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic-one).
+Formalized by `MetaMathlibExt.generalizedDegenerateHyperharmonic_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#generalized-degenerate-hyperharmonic-one).
 
 ## Generalized degenerate harmonic numbers of a given rank
 
@@ -165,7 +165,7 @@ the source.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1, Equation (5).
 
-Formalized by `MetaMathlibExt.degenerateHarmonicRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank).
+Formalized by `MetaMathlibExt.degenerateHarmonicRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank).
 
 ## Degenerate harmonic numbers of rank vanish at index zero
 
@@ -177,7 +177,7 @@ satisfies $H_\lambda(0, r, \alpha) = 0$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.degenerateHarmonicRank_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-zero-left).
+Formalized by `MetaMathlibExt.degenerateHarmonicRank_zero_left`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-zero-left).
 
 ## Degenerate harmonic numbers of rank zero
 
@@ -189,7 +189,7 @@ degenerate harmonic number: $H_\lambda(n, 0, \alpha) = H_{n,\lambda}(\alpha)$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Section 1.
 
-Formalized by `MetaMathlibExt.degenerateHarmonicRank_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-zero-right).
+Formalized by `MetaMathlibExt.degenerateHarmonicRank_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-zero-right).
 
 ## Degenerate exponential series
 
@@ -203,7 +203,7 @@ factorial of $1$ with increment $\lambda$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (1) at `x = 1`.
 
-Formalized by `MetaMathlibExt.degenerateExpSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-exp-series).
+Formalized by `MetaMathlibExt.degenerateExpSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-exp-series).
 
 ## Constant term of the degenerate exponential series
 
@@ -214,7 +214,7 @@ constant term of the degenerate exponential series $e_\lambda(t)$ is $1$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (1).
 
-Formalized by `MetaMathlibExt.constantCoeff_degenerateExpSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#constant-coeff-degenerate-exp-series).
+Formalized by `MetaMathlibExt.constantCoeff_degenerateExpSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#constant-coeff-degenerate-exp-series).
 
 ## Degenerate Bernoulli numbers
 
@@ -233,7 +233,7 @@ $t / (e_\lambda(t) - 1) = \sum_{n \ge 0} \beta_{n,\lambda} \, t^n / n!$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (6).
 
-Formalized by `MetaMathlibExt.degenerateBernoulli`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-bernoulli).
+Formalized by `MetaMathlibExt.degenerateBernoulli`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-bernoulli).
 
 ## The zeroth degenerate Bernoulli number
 
@@ -244,7 +244,7 @@ Bernoulli number $\beta_{0,\lambda}$ equals $1$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (6).
 
-Formalized by `MetaMathlibExt.degenerateBernoulli_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-bernoulli-zero).
+Formalized by `MetaMathlibExt.degenerateBernoulli_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-bernoulli-zero).
 
 ## Degenerate Euler numbers
 
@@ -258,7 +258,7 @@ $2 / (e_\lambda(t) + 1) = \sum_{n \ge 0} \varepsilon_{n,\lambda} \, t^n / n!$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (7).
 
-Formalized by `MetaMathlibExt.degenerateEuler`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-euler).
+Formalized by `MetaMathlibExt.degenerateEuler`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-euler).
 
 ## The zeroth degenerate Euler number
 
@@ -269,7 +269,7 @@ number $\varepsilon_{0,\lambda}$ equals $1$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (7).
 
-Formalized by `MetaMathlibExt.degenerateEuler_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-euler-zero).
+Formalized by `MetaMathlibExt.degenerateEuler_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-euler-zero).
 
 ## Degenerate Stirling numbers of the first kind
 
@@ -285,7 +285,7 @@ $S_{1,\lambda}(n, k) = 0$ for $n < k$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equations (2) and (8).
 
-Formalized by `MetaMathlibExt.degenerateStirlingFirst`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-first).
+Formalized by `MetaMathlibExt.degenerateStirlingFirst`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-first).
 
 ## Degenerate Stirling numbers of the first kind in column zero
 
@@ -297,7 +297,7 @@ $S_{1,\lambda}(n, 0)$ equals $1$ if $n = 0$ and $0$ otherwise.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (8).
 
-Formalized by `MetaMathlibExt.degenerateStirlingFirst_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-first-zero-right).
+Formalized by `MetaMathlibExt.degenerateStirlingFirst_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-first-zero-right).
 
 ## Degenerate Stirling numbers of the second kind
 
@@ -313,7 +313,7 @@ $S_{2,\lambda}(n, k) = 0$ for $n < k$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (8).
 
-Formalized by `MetaMathlibExt.degenerateStirlingSecond`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-second).
+Formalized by `MetaMathlibExt.degenerateStirlingSecond`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-second).
 
 ## Degenerate Stirling numbers of the second kind in column zero
 
@@ -325,7 +325,7 @@ $S_{2,\lambda}(n, 0)$ equals $1$ if $n = 0$ and $0$ otherwise.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (8).
 
-Formalized by `MetaMathlibExt.degenerateStirlingSecond_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-second-zero-right).
+Formalized by `MetaMathlibExt.degenerateStirlingSecond_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-stirling-second-zero-right).
 
 ## Degenerate Daehee numbers
 
@@ -343,7 +343,7 @@ $\log_\lambda(1 + t) / t = \sum_{n \ge 0} D_{n,\lambda} \, t^n / n!$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equations (2) and (9).
 
-Formalized by `MetaMathlibExt.degenerateDaehee`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-daehee).
+Formalized by `MetaMathlibExt.degenerateDaehee`, a definition declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-daehee).
 
 ## The zeroth degenerate Daehee number
 
@@ -354,7 +354,7 @@ Daehee number $D_{0,\lambda}$ equals $1$.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Equation (9).
 
-Formalized by `MetaMathlibExt.degenerateDaehee_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-daehee-zero).
+Formalized by `MetaMathlibExt.degenerateDaehee_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-daehee-zero).
 
 ## Alternating and binomial sums of degenerate hyperharmonic numbers
 
@@ -378,7 +378,7 @@ $$
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.degenerateHyperharmonic_alternating_and_binomial_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-hyperharmonic-alternating-and).
+Stated but not proved: `MetaMathlibExt.degenerateHyperharmonic_alternating_and_binomial_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-hyperharmonic-alternating-and).
 
 ## Alternating binomial sum of degenerate harmonic numbers
 
@@ -392,7 +392,7 @@ where $\binom{n + \lambda - 1}{n}$ is the generalized binomial coefficient.
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonic_alternating_binomial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-alternating-binomial).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonic_alternating_binomial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-alternating-binomial).
 
 ## Alternating degenerate exponential sum of degenerate harmonic numbers of rank
 
@@ -410,7 +410,7 @@ H_{n+1,\lambda}(\alpha) - \frac{H_{n,\lambda}(\alpha)}{\alpha}.$$
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_exp_weighted_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-exp-weighted-su).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_exp_weighted_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-exp-weighted-su).
 
 ## Partial sums of degenerate harmonic numbers of rank as a convolution
 
@@ -426,7 +426,7 @@ $$\sum_{k=0}^{n} H_\lambda(k, r+1, \alpha) =
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_succ_partial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-succ-partial-su).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_succ_partial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-succ-partial-su).
 
 ## Shifted alternating degenerate exponential sum of degenerate harmonic numbers of rank
 
@@ -442,7 +442,7 @@ $$\sum_{k=0}^{n} (-1)^k \frac{(1)_{k+1,\lambda}}{(k+1)!} H_\lambda(n+1, k, \alph
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_shifted_exp_weighted_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-shifted-exp-wei).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_shifted_exp_weighted_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-shifted-exp-wei).
 
 ## A binomial sum equal to a degenerate hyperharmonic number
 
@@ -462,7 +462,7 @@ The hypothesis $r \le n$ makes the summation range $r \le k \le n$ nonempty, as 
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.degenerateHyperharmonic_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-hyperharmonic-eq-binomial-sum).
+Stated but not proved: `MetaMathlibExt.degenerateHyperharmonic_eq_binomial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-hyperharmonic-eq-binomial-sum).
 
 ## Degenerate harmonic numbers of rank and degenerate Stirling numbers of the first kind
 
@@ -479,7 +479,7 @@ $$\sum_{k=1}^{n} \frac{(1)_{k,\lambda}}{k!} H_\lambda(n, k-1, \alpha) =
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_exp_sum_eq_stirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-exp-sum-eq-stir).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_exp_sum_eq_stirlingFirst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-exp-sum-eq-stir).
 
 ## Degenerate Bernoulli and Euler sums of higher-rank degenerate harmonic numbers
 
@@ -497,7 +497,7 @@ $\sum_{k=1}^{n} (-1)^{k+1} \varepsilon_{k,\lambda} H_\lambda(n, k - 1, \alpha) /
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_bernoulli_euler_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-bernoulli-euler).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_bernoulli_euler_sums` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-bernoulli-euler).
 
 ## Degenerate harmonic numbers of rank and degenerate Stirling numbers of the second kind
 
@@ -512,7 +512,7 @@ $$\sum_{k=m}^{n} \frac{(-1)^k S_{2,\lambda}(k, m) H_\lambda(n, k-1, \alpha)}{k!}
 
 - Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_stirlingSecond_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-stirling-second).
+Stated but not proved: `MetaMathlibExt.degenerateHarmonicRank_stirlingSecond_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DegenerateHarmonicRiordanWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html#degenerate-harmonic-rank-stirling-second).
 
 ## Depends on
 
@@ -521,4 +521,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Degenerate harmonic numbers and Riordan arrays](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/degenerate-harmonic-numbers-and-riordan-arrays)

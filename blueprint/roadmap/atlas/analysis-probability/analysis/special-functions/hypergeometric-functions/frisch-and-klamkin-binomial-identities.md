@@ -8,7 +8,7 @@ proof: formalized
 
 # Frisch and Klamkin binomial identities
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html).
 
 ## Gauss summation at Frisch's specialization
 
@@ -30,7 +30,7 @@ side is $0$ when $b - n + 1$ is a nonpositive integer.
 
 - Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, displayed Frisch specialization at source lines 200-205 of the official TeX <https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex>.
 
-Formalized by `MetaMathlibExt.gauss_hypergeometric_summation_frisch`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationFrisch.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationFrisch.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#gauss-hypergeometric-summation-frisch).
+Formalized by `MetaMathlibExt.gauss_hypergeometric_summation_frisch`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationFrisch.lean, line 841](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationFrisch.lean#L841). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#gauss-hypergeometric-summation-frisch).
 
 ## Klamkin's Gauss summation
 
@@ -54,7 +54,7 @@ nonpositive integer.
 
 - U. Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," _Journal of Integer Sequences_ 23 (2020), Article 20.7.1.
 
-Formalized by `MetaMathlibExt.gauss_hypergeometric_summation_klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#gauss-hypergeometric-summation-klamkin).
+Formalized by `MetaMathlibExt.gauss_hypergeometric_summation_klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean, line 644](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean#L644). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#gauss-hypergeometric-summation-klamkin).
 
 ## Klamkin's Gauss summation as a convergent series
 
@@ -77,7 +77,7 @@ where $(x)_k = x(x + 1) \cdots (x + k - 1)$ is the rising factorial.
 The Gamma function is taken to be $0$ at its poles and division by $0$ gives $0$, so this sum is
 $0$ when $b - a - n$ is a nonpositive integer.
 
-Formalized by `MetaMathlibExt.hasSum_ordinaryHypergeometricCoefficient_klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#has-sum-ordinary-hypergeometric-coeffici).
+Formalized by `MetaMathlibExt.hasSum_ordinaryHypergeometricCoefficient_klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/GaussHypergeometricSummationKlamkin.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#has-sum-ordinary-hypergeometric-coeffici).
 
 ## Abel's variant of Klamkin's identity
 
@@ -101,7 +101,7 @@ specialization of Gauss's formula (Abramowitz-Stegun 15.1.20), then simplify by 
 
 - Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, Theorem, equation (Identity-variant-Klamkin), lines 210–218, https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex
 
-Formalized by `MetaMathlibExt.variant_Klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/KlamkinVariant.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/KlamkinVariant.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#variant-klamkin).
+Formalized by `MetaMathlibExt.variant_Klamkin`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/KlamkinVariant.lean, line 322](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/KlamkinVariant.lean#L322). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html#variant-klamkin).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Frisch and Klamkin binomial identities](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/frisch-and-klamkin-binomial-identities)

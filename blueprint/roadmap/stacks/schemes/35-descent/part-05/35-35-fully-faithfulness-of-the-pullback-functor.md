@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.35 Fully faithfulness of the pullback functors
 
-Section 35.35 of the Stacks Project, [Tag 02VV](https://stacks.math.columbia.edu/tag/02VV). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.35 of the Stacks Project, [Tag 02VV](https://stacks.math.columbia.edu/tag/02VV). 12 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02VX, a lemma
 
 [Tag 02VX](https://stacks.math.columbia.edu/tag/02VX) in the Stacks Project.
 
-**`AlgebraicGeometry.Flat.faithful_overPullback_of_surjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/BaseChangeFaithful.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/BaseChangeFaithful.lean#L49).
+**`AlgebraicGeometry.Flat.faithful_overPullback_of_surjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/BaseChangeFaithful.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/BaseChangeFaithful.lean#L49).
 
 > **Stacks Project, Tag 02VX.** Base change along a surjective flat morphism of schemes is a
 > faithful functor on the category of schemes over the base.
@@ -28,7 +28,7 @@ instance Flat.faithful_overPullback_of_surjective {S' S : Scheme.{u}} (h : S' �
 
 [Tag 0240](https://stacks.math.columbia.edu/tag/0240) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFaithful.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFaithful.lean#L42).
+**`AlgebraicGeometry.pullbackFunctor_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFaithful.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFaithful.lean#L42).
 
 > **Stacks Project, Tag 0240.** Pullback of descent data along a surjective flat morphism
 > is faithful.
@@ -45,7 +45,7 @@ theorem pullbackFunctor_faithful
 
 [Tag 0241](https://stacks.math.columbia.edu/tag/0241) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFullyFaithful.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFullyFaithful.lean#L504).
+**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFullyFaithful.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFullyFaithful.lean#L504).
 
 > **Stacks Project, Tag 0241.** Pullback along an fpqc covering over a fixed
 > base scheme is fully faithful on descent data.
@@ -63,7 +63,7 @@ public theorem pullbackFunctor_fullyFaithful_of_fpqc
 
 [Tag 0242](https://stacks.math.columbia.edu/tag/0242) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData.selfPullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean#L47).
+**`AlgebraicGeometry.DescentData.selfPullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean#L47).
 
 > Pullback of descent data along a selfmap `f : X ⟶ X` over `S` is isomorphic to the identity
 > functor on the category of descent data relative to `X ⟶ S`.
@@ -77,7 +77,7 @@ def selfPullbackFunctorIso {S X : Scheme.{u}} (a : X ⟶ S) (f : X ⟶ X) (hf : 
 
 [Tag 0243](https://stacks.math.columbia.edu/tag/0243) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_isEquivalence_of_exists_reverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean#L68).
+**`AlgebraicGeometry.pullbackFunctor_isEquivalence_of_exists_reverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Equivalence.lean#L68).
 
 > Pullback of descent data along `f : X' ⟶ X` is an equivalence if there is a morphism
 > `X ⟶ X'` over the same base scheme.
@@ -93,7 +93,7 @@ theorem pullbackFunctor_isEquivalence_of_exists_reverse
 
 [Tag 040J](https://stacks.math.columbia.edu/tag/040J) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_faithful_of_source_surjective_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFaithful.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFaithful.lean#L70).
+**`AlgebraicGeometry.pullbackFunctor_faithful_of_source_surjective_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFaithful.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFaithful.lean#L70).
 
 > **Stacks Project, Tag 040J.** Pullback of descent data along a morphism whose source is
 > surjective and flat over the base is faithful.
@@ -109,7 +109,7 @@ theorem pullbackFunctor_faithful_of_source_surjective_flat
 
 [Tag 040K](https://stacks.math.columbia.edu/tag/040K) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_source_fpqc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFullyFaithful.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFullyFaithful.lean#L59). References: SGA 1 VIII (5.2).
+**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_source_fpqc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFullyFaithful.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/SourceFullyFaithful.lean#L59). References: SGA 1 VIII (5.2).
 
 > Pullback along a morphism `X ⟶ X'` over `S` is fully
 > faithful on descent data if `X ⟶ S` is an fpqc covering.
@@ -127,7 +127,7 @@ lemma pullbackFunctor_fullyFaithful_of_source_fpqc
 
 [Tag 02VZ](https://stacks.math.columbia.edu/tag/02VZ) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_fpqcRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFpqcRefinement.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFpqcRefinement.lean#L91).
+**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_fpqcRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFpqcRefinement.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/PullbackFpqcRefinement.lean#L91).
 
 > An fpqc refinement of each member of a family induces a fully faithful
 > pullback functor on descent data.
@@ -151,7 +151,7 @@ public theorem pullbackFunctor_fullyFaithful_of_fpqcRefinement
 
 [Tag 02VY](https://stacks.math.columbia.edu/tag/02VY) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackFunctor_isEquivalence_of_zariskiRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean#L1158).
+**`AlgebraicGeometry.pullbackFunctor_isEquivalence_of_zariskiRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean#L1158).
 
 > A fibrewise Zariski refinement induces an equivalence on descent data.
 
@@ -170,7 +170,7 @@ public theorem pullbackFunctor_isEquivalence_of_zariskiRefinement
         baseHom := 𝟙 S, familyHom := α }).functor.IsEquivalence)
 ```
 
-**`AlgebraicGeometry.descentData_equivalence_of_zariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean#L1204).
+**`AlgebraicGeometry.descentData_equivalence_of_zariskiCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Scheme/ZariskiRefinementEquivalence.lean#L1204).
 
 > Schemes over a base are equivalent to descent data for any Zariski cover.
 
@@ -185,7 +185,7 @@ public theorem descentData_equivalence_of_zariskiCovering
 
 [Tag 02W0](https://stacks.math.columbia.edu/tag/02W0) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData.canonicalFunctor_fullyFaithful_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/CanonicalFullyFaithful.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/CanonicalFullyFaithful.lean#L66). The attribute's comment: “in particular, for a covering by a single morphism”. References: SGA 1 VIII (5.2), “more general”.
+**`AlgebraicGeometry.DescentData.canonicalFunctor_fullyFaithful_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/CanonicalFullyFaithful.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/CanonicalFullyFaithful.lean#L66). The attribute's comment: “in particular, for a covering by a single morphism”. References: SGA 1 VIII (5.2), “more general”.
 
 > If the single morphism `f : X ⟶ S` is an fpqc covering of `S`, then the canonical descent
 > datum functor `Over S ⥤ DescentDatum f` is fully faithful, so schemes over `S` form a full
@@ -197,7 +197,7 @@ theorem canonicalFunctor_fullyFaithful_of_fpqc (f : X ⟶ S)
     Nonempty (canonicalFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean#L76).
+**`AlgebraicGeometry.pullbackFunctor_fullyFaithful_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean#L76).
 
 > **Stacks 02W0.** Let `U` and `V` be families of schemes over `S` and let `α` exhibit `U` as
 > a refinement of `V` over the identity of `S`. If `U` is an fpqc covering of `S`, then the
@@ -215,7 +215,7 @@ theorem pullbackFunctor_fullyFaithful_of_refinement
         baseHom := 𝟙 S, familyHom := α }).functor.FullyFaithful)
 ```
 
-**`AlgebraicGeometry.fullyFaithful_canonicalFunctor_comp_familyCoproduct_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean#L108). The attribute's comment: “the schemes over the base as a full subcategory of the descent data”. References: SGA 1 VIII (5.2), “more general”.
+**`AlgebraicGeometry.fullyFaithful_canonicalFunctor_comp_familyCoproduct_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/PullbackFullyFaithful/Refinement.lean#L108). The attribute's comment: “the schemes over the base as a full subcategory of the descent data”. References: SGA 1 VIII (5.2), “more general”.
 
 > **Stacks 02W0**, final sentence: the schemes over `S` form a full subcategory of the
 > category of descent data relative to an fpqc covering `U` of `S`. The embedding is the
@@ -234,7 +234,7 @@ theorem fullyFaithful_canonicalFunctor_comp_familyCoproduct_inverse
 
 [Tag 040L](https://stacks.math.columbia.edu/tag/040L) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_relativeHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean#L103). The attribute's comment: “the functor `T ↦ Mor_T(X_T, Y_T)` on the schemes over `S` satisfies the sheaf condition for the fpqc topology”. References: SGA 1 VIII (5.2); SGA 3 IV (4.5.13), “Hom\_S(X, special case”; SGA 3 VIII (1.7.1), “more general”.
+**`AlgebraicGeometry.isSheaf_relativeHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean#L103). The attribute's comment: “the functor `T ↦ Mor_T(X_T, Y_T)` on the schemes over `S` satisfies the sheaf condition for the fpqc topology”. References: SGA 1 VIII (5.2); SGA 3 IV (4.5.13), “Hom\_S(X, special case”; SGA 3 VIII (1.7.1), “more general”.
 
 > Let `X` and `Y` be schemes over `S`. The relative morphism functor
 > `Mor_S(X, Y) : (Sch/S)ᵒᵖ ⥤ Set`, which sends an `S`-scheme `T` to the set of morphisms
@@ -250,7 +250,7 @@ theorem isSheaf_relativeHom_fpqc (X Y : Over S) :
 
 [Tag 0AP4](https://stacks.math.columbia.edu/tag/0AP4) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_restrictOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescendedScheme.lean, line 1186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescendedScheme.lean#L1186). References: SGA 1 VIII (7.2), “local eff ⇒ effective”.
+**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_restrictOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescendedScheme.lean, line 1186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescendedScheme.lean#L1186). References: SGA 1 VIII (7.2), “local eff ⇒ effective”.
 
 > **Effectivity of a descent datum is local on the scheme it is carried by.** Let
 > `f : X ⟶ S` be a surjective, quasi-compact, flat morphism of schemes and let `(V, φ)` be a
@@ -266,7 +266,7 @@ theorem isEffective_of_forall_exists_restrictOpen {S X : Scheme.{u}} {f : X ⟶ 
     DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_restrictOpen_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/LocalEffectivity.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/LocalEffectivity.lean#L59).
+**`AlgebraicGeometry.DescentDatum.isEffective_of_forall_exists_restrictOpen_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/LocalEffectivity.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Scheme/LocalEffectivity.lean#L59).
 
 > **Effectivity of a descent datum is local on the scheme it is carried by.** Let
 > `f : X ⟶ S` be a surjective, quasi-compact, flat morphism of schemes and let `(V, φ)` be a
@@ -297,4 +297,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.35, Tag 02VV](https://stacks.math.columbia.edu/tag/02VV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # 16 Smoothing Ring Maps
 
-Chapter 16 of the Stacks Project, *Smoothing Ring Maps*, [Tag 07BW](https://stacks.math.columbia.edu/tag/07BW): the 13 sections of its 14 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 75 tags are carried by 117 declarations of the repository (all in StacksFrontier).
+Chapter 16 of the Stacks Project, *Smoothing Ring Maps*, [Tag 07BW](https://stacks.math.columbia.edu/tag/07BW): the 13 sections of its 14 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 75 tags are carried by 116 declarations of the repository (all in StacksFrontier).
 
 - [16.2 Singular ideals](16-2-singular-ideals.md)
 - [16.3 Presentations of algebras](16-3-presentations-of-algebras.md)

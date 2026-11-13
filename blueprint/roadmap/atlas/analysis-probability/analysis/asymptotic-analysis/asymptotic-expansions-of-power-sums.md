@@ -7,7 +7,7 @@ statement: formalized
 
 # Asymptotic expansions of power sums
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html).
 
 ## Ramanujan's asymptotic expansion of power sums
 
@@ -27,7 +27,7 @@ by analytic continuation.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 1.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry1Powersum.ramanujan_part1_ch7_entry1_powersum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry1Powersum.lean, line 1049](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry1Powersum.lean#L1049). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch7-entry1-powersum).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry1Powersum.ramanujan_part1_ch7_entry1_powersum`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry1Powersum.lean, line 1049](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry1Powersum.lean#L1049). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch7-entry1-powersum).
 
 ## Ramanujan's asymptotic expansion of a binomial combination of log-power sums
 
@@ -55,7 +55,7 @@ remainder's derivatives, and the Euler–Maclaurin tail expansion of the log-pow
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry19Gaussdigamma.ramanujan_part1_ch8_entry19_gaussdigamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry19Gaussdigamma.lean, line 2236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry19Gaussdigamma.lean#L2236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch8-entry19-gaussdigamma).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry19Gaussdigamma.ramanujan_part1_ch8_entry19_gaussdigamma`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch8Entry19Gaussdigamma.lean, line 2236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch8Entry19Gaussdigamma.lean#L2236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch8-entry19-gaussdigamma).
 
 ## Asymptotic expansion of partial sums of powers times logarithms
 
@@ -85,7 +85,7 @@ $$
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Stated but not proved: `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry27Clausen.ramanujan_part1_ch9_entry27_clausen` is written with `theorem_wanted` in [WantedExt/Analysis/Ramanujan/Part1Ch9Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Ramanujan/Part1Ch9Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch9-entry27-clausen).
+Stated but not proved: `MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry27Clausen.ramanujan_part1_ch9_entry27_clausen` is written with `theorem_wanted` in [WantedExt/Analysis/Ramanujan/Part1Ch9Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Ramanujan/Part1Ch9Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html#ramanujan-part1-ch9-entry27-clausen).
 
 ## Depends on
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotic expansions of power sums](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis/asymptotic-expansions-of-power-sums)

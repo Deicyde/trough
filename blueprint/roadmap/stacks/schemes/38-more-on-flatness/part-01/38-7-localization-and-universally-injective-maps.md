@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.7 Localization and universally injective maps
 
-Section 38.7 of the Stacks Project, [Tag 05DD](https://stacks.math.columbia.edu/tag/05DD). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.7 of the Stacks Project, [Tag 05DD](https://stacks.math.columbia.edu/tag/05DD). 6 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05DE, a lemma
 
 [Tag 05DE](https://stacks.math.columbia.edu/tag/05DE) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.finite_maximalSpectrum_localization_nonZeroSMulDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L267). The attribute's comment: “semilocality; the multiplicative subset is `nonZeroSMulDivisors`”.
+**`Stacks.UniversalInjectivity.finite_maximalSpectrum_localization_nonZeroSMulDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L267). The attribute's comment: “semilocality; the multiplicative subset is `nonZeroSMulDivisors`”.
 
 > Localizing at the elements regular on a finite module over the Noetherian closed fibre of a
 > local base produces a semilocal ring.
@@ -23,7 +23,7 @@ Section 38.7 of the Stacks Project, [Tag 05DD](https://stacks.math.columbia.edu/
 theorem finite_maximalSpectrum_localization_nonZeroSMulDivisors : Finite (MaximalSpectrum T)
 ```
 
-**`Stacks.UniversalInjectivity.range_under_localization_nonZeroSMulDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L285). The attribute's comment: “the prime spectrum”.
+**`Stacks.UniversalInjectivity.range_under_localization_nonZeroSMulDivisors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L285). The attribute's comment: “the prime spectrum”.
 
 > The contractions of the primes of the localization are exactly the primes of `S` contained
 > in an associated prime of the closed-fibre module.
@@ -36,7 +36,7 @@ theorem range_under_localization_nonZeroSMulDivisors :
           (N ⧸ (Ideal.map (algebraMap R S) (maximalIdeal R) • (⊤ : Submodule S N))), q ≤ p}
 ```
 
-**`Stacks.UniversalInjectivity.exists_assStacks_closedFibre_of_isMaximal_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L302). The attribute's comment: “the maximal ideals”.
+**`Stacks.UniversalInjectivity.exists_assStacks_closedFibre_of_isMaximal_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L302). The attribute's comment: “the maximal ideals”.
 
 > Every maximal ideal of the localization corresponds to an associated prime of the
 > closed-fibre module over the closed-fibre ring, whose contraction to `S` is the maximal ideal's.
@@ -53,7 +53,7 @@ theorem exists_assStacks_closedFibre_of_isMaximal_localization (q : MaximalSpect
 
 [Tag 05DF](https://stacks.math.columbia.edu/tag/05DF) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.universallyInjectivePoly_lsmul_of_nonZeroSMulDivisors`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L363). The attribute's comment: “the homotheties”.
+**`Stacks.UniversalInjectivity.universallyInjectivePoly_lsmul_of_nonZeroSMulDivisors`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L363). The attribute's comment: “the homotheties”.
 
 > Every element acting injectively on the closed fibre defines a universally injective
 > `R`-linear homothety of `N`.
@@ -66,7 +66,7 @@ lemma universallyInjectivePoly_lsmul_of_nonZeroSMulDivisors
     UniversallyInjectivePoly (((LinearMap.lsmul S N) s.1).restrictScalars R)
 ```
 
-**`Stacks.UniversalInjectivity.universallyInjectivePoly_mkLinearMap_nonZeroSMulDivisors`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L376). The attribute's comment: “the localization map”.
+**`Stacks.UniversalInjectivity.universallyInjectivePoly_mkLinearMap_nonZeroSMulDivisors`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L376). The attribute's comment: “the localization map”.
 
 > The canonical map from `N` to its localization at the elements acting injectively on the
 > closed fibre is universally injective over `R`.
@@ -85,7 +85,7 @@ lemma universallyInjectivePoly_mkLinearMap_nonZeroSMulDivisors
 
 [Tag 05DG](https://stacks.math.columbia.edu/tag/05DG) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.universallyInjectivePoly_tensorUnit_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L494).
+**`Stacks.UniversalInjectivity.universallyInjectivePoly_tensorUnit_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChange.lean#L493).
 
 > Let `R → S` be a local homomorphism of local rings, essentially of finite presentation, let
 > `N` be a finitely presented `S`-module which is flat over `R`, and let `S → S'` be flat. If the
@@ -111,7 +111,7 @@ theorem universallyInjectivePoly_tensorUnit_of_flat {R : Type u} {S : Type v} {S
 
 [Tag 05DH](https://stacks.math.columbia.edu/tag/05DH) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.universallyInjective_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChangeFlat.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChangeFlat.lean#L589).
+**`Stacks.UniversalInjectivity.universallyInjective_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChangeFlat.lean, line 587](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjectiveBaseChangeFlat.lean#L587).
 
 > **Stacks 05DH.** Under the stated finite-presentation and flatness hypotheses, if every
 > associated prime of each fibre of `N` lifts to `S'`, then the canonical base-change map
@@ -136,7 +136,7 @@ theorem universallyInjective_baseChange_of_flat
 
 [Tag 05FQ](https://stacks.math.columbia.edu/tag/05FQ) in the Stacks Project.
 
-**`Module.Flat.rTensor_injective_of_projective_of_mem_maximalIdeal_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLeffler.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/MittagLeffler.lean#L291). The attribute's comment: “the hypothesis spells out injectivity of `M/𝔪M → N/𝔪N` as `u x ∈ 𝔪 • ⊤ → x ∈ 𝔪 • ⊤`, the form `Submodule.injective_mapQ_smul_top_iff` shows it to be equivalent to; the conclusion spells out universal injectivity, which `Mathlib` has no name for, as in Stacks 0AS5, 05CJ and 05CM.”.
+**`Module.Flat.rTensor_injective_of_projective_of_mem_maximalIdeal_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLeffler.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/MittagLeffler.lean#L292). The attribute's comment: “the hypothesis spells out injectivity of `M/𝔪M → N/𝔪N` as `u x ∈ 𝔪 • ⊤ → x ∈ 𝔪 • ⊤`, the form `Submodule.injective_mapQ_smul_top_iff` shows it to be equivalent to; the conclusion spells out universal injectivity, which `Mathlib` has no name for, as in Stacks 0AS5, 05CJ and 05CM.”.
 
 > **Stacks 05FQ.** Let `(R, 𝔪)` be a local ring and let `u : M →ₗ[R] N` be a map of `R`-modules
 > with `M` projective and `N` flat. If the reduction `M/𝔪M → N/𝔪N` is injective -- that is, if
@@ -153,7 +153,7 @@ public theorem Module.Flat.rTensor_injective_of_projective_of_mem_maximalIdeal_s
     ∀ (Q : Type v) [AddCommGroup Q] [Module R Q], Function.Injective (u.rTensor Q)
 ```
 
-**`Module.Flat.rTensor_injective_of_projective_of_injective_mapQ_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLeffler.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/MittagLeffler.lean#L347). The attribute's comment: “`M/𝔪M` is `M ⧸ 𝔪 • ⊤` and the reduction of `u` is `Submodule.mapQ` along `u`, as in Stacks 0AS5 and 046Y; the conclusion spells out universal injectivity, which `Mathlib` has no name for.”.
+**`Module.Flat.rTensor_injective_of_projective_of_injective_mapQ_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/MittagLeffler.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/MittagLeffler.lean#L348). The attribute's comment: “`M/𝔪M` is `M ⧸ 𝔪 • ⊤` and the reduction of `u` is `Submodule.mapQ` along `u`, as in Stacks 0AS5 and 046Y; the conclusion spells out universal injectivity, which `Mathlib` has no name for.”.
 
 > **Stacks 05FQ.** Let `(R, 𝔪)` be a local ring and let `u : M →ₗ[R] N` be a map of `R`-modules
 > with `M` projective and `N` flat. If the induced map `M/𝔪M → N/𝔪N` is injective, then `u` is
@@ -174,7 +174,7 @@ public theorem Module.Flat.rTensor_injective_of_projective_of_injective_mapQ_max
 
 [Tag 05FR](https://stacks.math.columbia.edu/tag/05FR) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L54). The attribute's comment: “elementwise\_universal\_injectivity”.
+**`Stacks.UniversalInjectivity.universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L54). The attribute's comment: “elementwise\_universal\_injectivity”.
 
 > **Stacks Project, Tag 05FR.** An element which acts injectively on the closed fibre of a
 > projective module acts universally injectively on the module over the local base ring.
@@ -198,7 +198,7 @@ theorem universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient
     UniversallyInjective ((LinearMap.lsmul S N s).restrictScalars R)
 ```
 
-**`Stacks.UniversalInjectivity.universallyInjective_localizedModule_mkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L103). The attribute's comment: “localization\_universal\_injectivity”.
+**`Stacks.UniversalInjectivity.universallyInjective_localizedModule_mkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L103). The attribute's comment: “localization\_universal\_injectivity”.
 
 > **Stacks Project, Tag 05FR.** If a module is projective over a local base ring, its
 > canonical map to the localization at the elements acting injectively on its closed fibre is
@@ -229,4 +229,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.7, Tag 05DD](https://stacks.math.columbia.edu/tag/05DD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

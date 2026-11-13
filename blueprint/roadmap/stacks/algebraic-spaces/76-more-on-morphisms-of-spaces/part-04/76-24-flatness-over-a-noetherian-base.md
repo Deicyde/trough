@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.24 Flatness over a Noetherian base
 
-Section 76.24 of the Stacks Project, [Tag 08VN](https://stacks.math.columbia.edu/tag/08VN). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.24 of the Stacks Project, [Tag 08VN](https://stacks.math.columbia.edu/tag/08VN). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0APR, a theorem
 
 [Tag 0APR](https://stacks.math.columbia.edu/tag/0APR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_and_isFlatOnFibre_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterion.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterion.lean#L128). The attribute's comment: “The full equivalence, at a geometric point `x̄` of `X`: condition (1) is flatness of `F` over `Z` at `x̄` (condition (2) of Stacks 05VU for `X ⟶ Z`) together with the fibre condition read on geometric stalks as in part (1) of Stacks 05WY, and condition (2) is flatness of `Y` over `Z` at the image point of `ȳ` together with flatness of `F` over `Y` at `x̄`. Local Noetherianity of `X`, `Y`, `Z` is the étale-local scheme property; coherence of `F` is used only through finiteness of `F_{x̄}` over `𝒪_{X, x̄}`, which is hypothesised, so quasi-coherence of `F` is not assumed. NOT covered: the identification of the fibre condition with flatness of a pullback of `F` to a genuine fibre product over a field-valued representative of `z̄`, which is Stacks 05WY.”.
+**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_and_isFlatOnFibre_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterion.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterion.lean#L128). The attribute's comment: “The full equivalence, at a geometric point `x̄` of `X`: condition (1) is flatness of `F` over `Z` at `x̄` (condition (2) of Stacks 05VU for `X ⟶ Z`) together with the fibre condition read on geometric stalks as in part (1) of Stacks 05WY, and condition (2) is flatness of `Y` over `Z` at the image point of `ȳ` together with flatness of `F` over `Y` at `x̄`. Local Noetherianity of `X`, `Y`, `Z` is the étale-local scheme property; coherence of `F` is used only through finiteness of `F_{x̄}` over `𝒪_{X, x̄}`, which is hypothesised, so quasi-coherence of `F` is not assumed. NOT covered: the identification of the fibre condition with flatness of a pullback of `F` to a genuine fibre product over a field-valued representative of `z̄`, which is Stacks 05WY.”.
 
 > **Stacks 0APR.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of algebraic spaces over `S`
 > with `X`, `Y`, `Z` locally Noetherian, let `F` be an `𝒪_X`-module and let `x̄` be a geometric
@@ -42,7 +42,7 @@ theorem isFlatOverAtGeometricPoint_and_isFlatOnFibre_iff {X Y Z : AlgebraicSpace
         IsFlatOverAtGeometricPoint B S hS f F xbar)
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtPoint_comp_and_isFlatOnFibreAtFieldValuedPoint_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterionFibreProduct.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterionFibreProduct.lean#L89). The attribute's comment: “The full statement: flatness of F over Z and over Y at x is the definition of Stacks 05VV (IsFlatOverAtPoint), flatness of Y over Z at y is that of Stacks 03ML, and the fibre clause is flatness of the pullback of F to the fibre product Spec(K) x\_Z X over Spec(K) x\_Z Y at the K-point, for every field-valued representative of x (condition (2) of Stacks 05WY); F is coherent and X, Y, Z are locally Noetherian.”.
+**`AlgebraicGeometry.Space.isFlatOverAtPoint_comp_and_isFlatOnFibreAtFieldValuedPoint_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterionFibreProduct.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleNoetherianFibreCriterionFibreProduct.lean#L89). The attribute's comment: “The full statement: flatness of F over Z and over Y at x is the definition of Stacks 05VV (IsFlatOverAtPoint), flatness of Y over Z at y is that of Stacks 03ML, and the fibre clause is flatness of the pullback of F to the fibre product Spec(K) x\_Z X over Spec(K) x\_Z Y at the K-point, for every field-valued representative of x (condition (2) of Stacks 05WY); F is coherent and X, Y, Z are locally Noetherian.”.
 
 > **Stacks 0APR.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian
 > algebraic spaces over `S`, let `F` be a coherent `𝒪_X`-module and let `x ∈ |X|`, with image
@@ -77,7 +77,7 @@ theorem isFlatOverAtPoint_comp_and_isFlatOnFibreAtFieldValuedPoint_iff
 
 [Tag 0APS](https://stacks.math.columbia.edu/tag/0APS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_flatFibreCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean#L208). The attribute's comment: “conclusion (A): flatness of the morphism; hypothesis (3) in its every-étale-chart reading `AlgebraicGeometry.Space.HasFlatFibreCharts`”.
+**`AlgebraicGeometry.Space.isFlat_of_flatFibreCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean#L208). The attribute's comment: “conclusion (A): flatness of the morphism; hypothesis (3) in its every-étale-chart reading `AlgebraicGeometry.Space.HasFlatFibreCharts`”.
 
 > **Stacks Project, Tag 0APS, conclusion (A).** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms
 > of algebraic spaces over a scheme `S`. If `X`, `Y`, `Z` are locally Noetherian, `X` is flat
@@ -99,7 +99,7 @@ theorem isFlat_of_flatFibreCharts
     IsFlat B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFlat_of_flatFibreCharts_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean#L230). The attribute's comment: “conclusion (B): flatness of the target over the base for surjective `f`; hypothesis (3) in its every-étale-chart reading `AlgebraicGeometry.Space.HasFlatFibreCharts`”.
+**`AlgebraicGeometry.Space.isFlat_of_flatFibreCharts_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatFibrewiseCriterion.lean#L230). The attribute's comment: “conclusion (B): flatness of the target over the base for surjective `f`; hypothesis (3) in its every-étale-chart reading `AlgebraicGeometry.Space.HasFlatFibreCharts`”.
 
 > **Stacks Project, Tag 0APS, conclusion (B).** In the situation of
 > `AlgebraicGeometry.Space.isFlat_of_flatFibreCharts`, if `f` is in addition surjective then `Y`
@@ -124,7 +124,7 @@ theorem isFlat_of_flatFibreCharts_of_isSurjective
 
 [Tag 08VP](https://stacks.math.columbia.edu/tag/08VP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_flatLocus_and_preimage_subset_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatLocusAdicThickenings.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatLocusAdicThickenings.lean#L576).
+**`AlgebraicGeometry.Space.isOpen_flatLocus_and_preimage_subset_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatLocusAdicThickenings.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatLocusAdicThickenings.lean#L576).
 
 > **Stacks 08VP.**  Let `A` be a Noetherian ring, `I ⊆ A` an ideal, and `X` an algebraic space
 > locally of finite presentation over `S = Spec A`.  For `n ≥ 0` let `Xₙ = Spec(A/Iⁿ⁺¹) ×_S X` be
@@ -160,7 +160,7 @@ theorem isOpen_flatLocus_and_preimage_subset_flatLocus [IsNoetherianRing A]
         flatLocus B (Spec (.of A)) hA X.2 f.hom F
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickenings.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickenings.lean#L116). The attribute's comment: “the local step at a geometric point lying over V(J)”.
+**`AlgebraicGeometry.Space.isFlatOverAtGeometricPoint_of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickenings.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickenings.lean#L116). The attribute's comment: “the local step at a geometric point lying over V(J)”.
 
 > **The local step of Stacks 08VP.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over
 > `S`, let `F` be an `𝒪_X`-module and let `x̄` be a geometric point of `X` whose étale local ring
@@ -197,7 +197,7 @@ theorem isFlatOverAtGeometricPoint_of_flat_quotient_pow
     IsFlatOverAtGeometricPoint B S hS f F xbar
 ```
 
-**`AlgebraicGeometry.Space.preimage_zeroLocus_subset_flatLocus_of_isFlatOver_adicFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickeningsFibre.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickeningsFibre.lean#L601).
+**`AlgebraicGeometry.Space.preimage_zeroLocus_subset_flatLocus_of_isFlatOver_adicFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickeningsFibre.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleAdicThickeningsFibre.lean#L598).
 
 > **Stacks 08VP.**  Let `A` be a Noetherian ring, let `I ⊆ A` be an ideal and let `X` be an
 > algebraic space locally of finite presentation over `S = Spec A`.  For `n ≥ 1` set
@@ -237,4 +237,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.24, Tag 08VN](https://stacks.math.columbia.edu/tag/08VN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

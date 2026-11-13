@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.38 Absolute weak normalization and h coverings
 
-Section 38.38 of the Stacks Project, [Tag 0EVS](https://stacks.math.columbia.edu/tag/0EVS). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.38 of the Stacks Project, [Tag 0EVS](https://stacks.math.columbia.edu/tag/0EVS). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EVJ, a lemma
 
 [Tag 0EVJ](https://stacks.math.columbia.edu/tag/0EVJ) in the Stacks Project.
 
-**`Stacks.AlmostBlowUp.surjective_Γ_modificationToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean#L222). The attribute's comment: “surjectivity”.
+**`Stacks.AlmostBlowUp.surjective_Γ_modificationToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean#L222). The attribute's comment: “surjectivity”.
 
 > **Stacks Project, Tag 0EVJ.** For the two-generator almost blowup square the ring map
 > `Γ(X, 𝒪_X) ⟶ Γ(X', 𝒪_{X'})` is surjective.
@@ -29,7 +29,7 @@ theorem surjective_Γ_modificationToBase :
     Function.Surjective (Scheme.Γ.map (modificationToBase A f₁ f₂).op).hom
 ```
 
-**`Stacks.AlmostBlowUp.isZero_hgroup_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean#L364). The attribute's comment: “higher cohomology vanishing”.
+**`Stacks.AlmostBlowUp.isZero_hgroup_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorCohomology.lean#L364). The attribute's comment: “higher cohomology vanishing”.
 
 > **Stacks Project, Tag 0EVJ.** `Hᵖ(X', 𝒪_{X'}) = 0` for `p > 0`.
 >
@@ -47,7 +47,7 @@ theorem isZero_hgroup_structureSheaf (p : ℕ) (hp : 0 < p) :
         (AlgebraicGeometry.Proj (modificationGrading A f₁ f₂)).ringCatSheaf))
 ```
 
-**`Stacks.AlmostBlowUp.modificationToBase_ker_sq_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean#L221). The attribute's comment: “kernel\_square\_zero”.
+**`Stacks.AlmostBlowUp.modificationToBase_ker_sq_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean#L221). The attribute's comment: “kernel\_square\_zero”.
 
 > **Stacks Project, Tag 0EVJ.** The global functions on `Spec A` killed by the modification
 > of the two-generator almost blowup square form an ideal of square zero.
@@ -62,7 +62,7 @@ theorem modificationToBase_ker_sq_eq_bot (A : Type u) [CommRing A] (f₁ f₂ : 
 
 [Tag 0EVK](https://stacks.math.columbia.edu/tag/0EVK) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHOver.existsUnique_iso_frobeniusColimitSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitHSheaf.lean, line 957](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitHSheaf.lean#L957).
+**`AlgebraicGeometry.BigHOver.existsUnique_iso_frobeniusColimitSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitHSheaf.lean, line 957](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitHSheaf.lean#L957).
 
 > **Stacks 0EVK.** Let `p` be a prime number, let `S` be a scheme over `𝔽_p` (that is, `p`
 > vanishes in `Γ(S, 𝒪_S)`), and let `(Sch/S)_h` be a big h site over `S` as in Stacks 0EU1.  There
@@ -107,7 +107,7 @@ public theorem existsUnique_iso_frobeniusColimitSections (p : ℕ) (hp : p.Prime
 
 [Tag 0EVL](https://stacks.math.columbia.edu/tag/0EVL) in the Stacks Project.
 
-**`AlgebraicGeometry.BigHOver.isSheaf_frobeniusLimitSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusLimitHSheafCriterion.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusLimitHSheafCriterion.lean#L69).
+**`AlgebraicGeometry.BigHOver.isSheaf_frobeniusLimitSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusLimitHSheafCriterion.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusLimitHSheafCriterion.lean#L69).
 
 > **Stacks 0EVL.** Let `p` be a prime number and let `S` be a scheme over `𝔽_p`, contained in a
 > big h site `B`.  Then `X ↦ lim_F Γ(X, 𝒪_X)`, the limit of the `p`-power map on global functions,
@@ -127,7 +127,7 @@ public theorem isSheaf_frobeniusLimitSections
 
 [Tag 0EVT](https://stacks.math.columbia.edu/tag/0EVT) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean, line 866](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean#L866).
+**`AlgebraicGeometry.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean, line 866](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean#L866).
 
 > On a big ph site, global functions on absolute weak normalizations form a sheaf.
 >
@@ -144,7 +144,7 @@ theorem isSheaf_absoluteWeakNormalizationSections (B : BigPHSite.{u}) (S : Schem
 
 [Tag 0EVU](https://stacks.math.columbia.edu/tag/0EVU) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean, line 866](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean#L866). The attribute's comment: “ph topology, the sheaf property”.
+**`AlgebraicGeometry.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean, line 866](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/PhSheafOfSections.lean#L866). The attribute's comment: “ph topology, the sheaf property”.
 
 > On a big ph site, global functions on absolute weak normalizations form a sheaf.
 >
@@ -157,7 +157,7 @@ theorem isSheaf_absoluteWeakNormalizationSections (B : BigPHSite.{u}) (S : Schem
     Presheaf.IsSheaf (BigPHOver.topology B S hS) (absoluteWeakNormalizationSections B S hS)
 ```
 
-**`AlgebraicGeometry.existsUnique_hom_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L661). The attribute's comment: “ph topology”.
+**`AlgebraicGeometry.existsUnique_hom_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L661). The attribute's comment: “ph topology”.
 
 > **Stacks Project, Tag 0EVU**, the ph case. On a big ph site over `S`, global functions on
 > absolute weak normalizations are the sheafification of the structure sheaf: every map from the
@@ -173,7 +173,7 @@ theorem existsUnique_hom_absoluteWeakNormalizationSections
       absoluteWeakNormalizationSectionsMap (BigPHOver.toScheme B S hS) ≫ χ = α
 ```
 
-**`AlgebraicGeometry.BigHOver.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L722). The attribute's comment: “h topology, the sheaf property”.
+**`AlgebraicGeometry.BigHOver.isSheaf_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L722). The attribute's comment: “h topology, the sheaf property”.
 
 > **Stacks Project, Tag 0EVU**, the sheaf property in the h case. On a big h site over `S`,
 > global functions on absolute weak normalizations form a sheaf for the h topology.
@@ -189,7 +189,7 @@ theorem isSheaf_absoluteWeakNormalizationSections :
       (absoluteWeakNormalizationSectionsOver (BigHOver.toScheme B S hS))
 ```
 
-**`AlgebraicGeometry.BigHOver.existsUnique_hom_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L758). The attribute's comment: “h topology, the universal property of the sheafification”.
+**`AlgebraicGeometry.BigHOver.existsUnique_hom_absoluteWeakNormalizationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/StructureSheafSheafification.lean#L758). The attribute's comment: “h topology, the universal property of the sheafification”.
 
 > **Stacks Project, Tag 0EVU**, the h case. On a big h site over `S`, global functions on
 > absolute weak normalizations are the sheafification of the structure sheaf: every map from the
@@ -211,7 +211,7 @@ theorem existsUnique_hom_absoluteWeakNormalizationSections
 
 [Tag 0EVV](https://stacks.math.columbia.edu/tag/0EVV) in the Stacks Project.
 
-**`isAbsolutelyWeaklyNormalRing_iff_perfectRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/AbsolutelyWeaklyNormalPerfect.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/AbsolutelyWeaklyNormalPerfect.lean#L56).
+**`isAbsolutelyWeaklyNormalRing_iff_perfectRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/AbsolutelyWeaklyNormalPerfect.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/AbsolutelyWeaklyNormalPerfect.lean#L56).
 
 > An algebra over `𝐅_p`, for `p` prime, is absolutely weakly normal if and only if its
 > Frobenius endomorphism is bijective.
@@ -226,7 +226,7 @@ lemma isAbsolutelyWeaklyNormalRing_iff_perfectRing
 
 [Tag 0EVW](https://stacks.math.columbia.edu/tag/0EVW) in the Stacks Project.
 
-**`Algebra.existsUnique_frobeniusColimit_iso_absoluteWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean#L229). The attribute's comment: “frobenius\_colimit”.
+**`Algebra.existsUnique_frobeniusColimit_iso_absoluteWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean#L229). The attribute's comment: “frobenius\_colimit”.
 
 > For `p` prime and `A` an algebra over `ZMod p`, the colimit of the Frobenius sequence of `A`
 > is the absolute weak normalization of `A`, by a unique isomorphism compatible with the canonical
@@ -242,7 +242,7 @@ theorem existsUnique_frobeniusColimit_iso_absoluteWeakNormalization
         CommRingCat.ofHom (algebraMap A (AbsoluteWeakNormalization A))
 ```
 
-**`AlgebraicGeometry.BigHOver.exists_bijective_hom_frobeniusColimitSections_of_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean#L86). The attribute's comment: “the h sheafification of the structure sheaf on qcqs objects”.
+**`AlgebraicGeometry.BigHOver.exists_bijective_hom_frobeniusColimitSections_of_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean#L86). The attribute's comment: “the h sheafification of the structure sheaf on qcqs objects”.
 
 > **Part (2) of Stacks Project, Tag 0EVW.** Let `p` be a prime number and let `S` be a scheme
 > over `𝔽_p`, that is, a scheme in which `p` vanishes on global functions.  Let `(Sch/S)_h` be a
@@ -272,7 +272,7 @@ public theorem exists_bijective_hom_frobeniusColimitSections_of_isSheafification
           Function.Bijective (φ.app (op X))
 ```
 
-**`AlgebraicGeometry.frobeniusColimit_absoluteWeakNormalization_and_hSheafificationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean#L176).
+**`AlgebraicGeometry.frobeniusColimit_absoluteWeakNormalization_and_hSheafificationSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimitSheafification.lean#L176).
 
 > **Stacks Project, Tag 0EVW.** Let `p` be a prime number.
 >
@@ -319,4 +319,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.38, Tag 0EVS](https://stacks.math.columbia.edu/tag/0EVS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

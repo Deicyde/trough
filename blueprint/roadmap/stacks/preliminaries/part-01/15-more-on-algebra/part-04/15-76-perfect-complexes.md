@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.76 Perfect complexes
 
-Section 15.76 of the Stacks Project, [Tag 0656](https://stacks.math.columbia.edu/tag/0656). 18 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.76 of the Stacks Project, [Tag 0656](https://stacks.math.columbia.edu/tag/0656). 18 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0657, a definition
 
 [Tag 0657](https://stacks.math.columbia.edu/tag/0657) in the Stacks Project.
 
-**`StacksDraft.Perfect.IsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Defs.lean#L48). The attribute's comment: “(1)”. References: SGA 6 I (4.8), “affine (ring) case”; SGA 6 II (2.2.1), “affine case, perfect”.
+**`StacksDraft.Perfect.IsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Defs.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Defs.lean#L48). The attribute's comment: “(1)”. References: SGA 6 I (4.8), “affine (ring) case”; SGA 6 II (2.2.1), “affine case, perfect”.
 
 > **Stacks 0657 (1).** An object of the derived category of `R`-modules is *perfect* if it is
 > isomorphic to a bounded complex of finite projective `R`-modules.
@@ -25,7 +25,7 @@ def IsPerfect {R : Type u} [Ring R]
     (K : DerivedCategory (ModuleCat.{v} R)) : Prop
 ```
 
-**`StacksDraft.Perfect.IsPerfectModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Defs.lean#L62). The attribute's comment: “(2)”. References: SGA 6 I (4.8), “affine case, module”; SGA 6 II (2.2.1), “affine, degree-0 module”.
+**`StacksDraft.Perfect.IsPerfectModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Defs.lean#L62). The attribute's comment: “(2)”. References: SGA 6 I (4.8), “affine case, module”; SGA 6 II (2.2.1), “affine, degree-0 module”.
 
 > **Stacks 0657 (2).** An `R`-module is *perfect* if the complex consisting of it placed in
 > degree zero is a perfect object of the derived category of `R`-modules.
@@ -40,7 +40,7 @@ def IsPerfectModule {R : Type u} [Ring R]
 
 [Tag 0658](https://stacks.math.columbia.edu/tag/0658) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_iff_pseudoCoherent_and_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 1055](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Basic.lean#L1055). References: SGA 5 VIII (8.1), “commutative rings only”; SGA 6 I (5.8.1), “module over a ring”; SGA 6 I (5.8), “special case”.
+**`StacksDraft.Perfect.isPerfect_iff_pseudoCoherent_and_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Basic.lean#L1054). References: SGA 5 VIII (8.1), “commutative rings only”; SGA 6 I (5.8.1), “module over a ring”; SGA 6 I (5.8), “special case”.
 
 > **Stacks 0658.** An object of `D(R)` is perfect if and only if it is pseudo-coherent and has
 > finite Tor dimension, the latter being recorded by the existence of a bounded flat representative.
@@ -65,7 +65,7 @@ theorem isPerfect_iff_pseudoCoherent_and_finiteTorDimension
 
 [Tag 066Q](https://stacks.math.columbia.edu/tag/066Q) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfectModule_iff_exists_finite_projective_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Module.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Module.lean#L200).
+**`StacksDraft.Perfect.isPerfectModule_iff_exists_finite_projective_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Module.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Module.lean#L200).
 
 > **Stacks 066Q.** An `R`-module is perfect if and only if it has a finite resolution by finite
 > projective `R`-modules.
@@ -83,14 +83,14 @@ theorem isPerfectModule_iff_exists_finite_projective_resolution
 
 [Tag 066R](https://stacks.math.columbia.edu/tag/066R) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Basic.lean#L219).
+**`StacksDraft.Perfect.isPerfect_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Basic.lean#L219).
 
 > **Stacks 066R.** In a distinguished triangle in `D(R)`, if two of the three objects are
 > perfect, then so is the third.
 
 ```lean
 theorem isPerfect_of_distinguished
-    {R : Type u} [Ring R]
+    {R : Type u} [Ring R] [HasDerivedCategory (ModuleCat.{v} R)]
     (T : Triangle (DerivedCategory (ModuleCat.{v} R)))
     (hT : T ∈ distinguishedTriangles) :
     (IsPerfect T.obj₁ → IsPerfect T.obj₂ → IsPerfect T.obj₃) ∧
@@ -102,7 +102,7 @@ theorem isPerfect_of_distinguished
 
 [Tag 066S](https://stacks.math.columbia.edu/tag/066S) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 918](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Basic.lean#L918).
+**`StacksDraft.Perfect.isPerfect_of_biproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 917](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Basic.lean#L917).
 
 > **Stacks 066S.** If a binary biproduct of objects of `D(R)` is perfect, then both summands are
 > perfect. Perfectness passes to the summands at arbitrary carrier universes: a small projective
@@ -119,7 +119,7 @@ theorem isPerfect_of_biproduct
 
 [Tag 066T](https://stacks.math.columbia.edu/tag/066T) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_bounded_of_isPerfectModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Basic.lean#L283).
+**`StacksDraft.Perfect.isPerfect_of_bounded_of_isPerfectModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Basic.lean#L283).
 
 > **Stacks 066T.** A bounded complex of perfect modules over a ring represents a perfect object
 > of the derived category.
@@ -137,7 +137,7 @@ theorem isPerfect_of_bounded_of_isPerfectModule
 
 [Tag 066U](https://stacks.math.columbia.edu/tag/066U) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_bounded_of_cohomology_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Basic.lean#L405). References: SGA 6 I (4.15), “special case”.
+**`StacksDraft.Perfect.isPerfect_of_bounded_of_cohomology_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Basic.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Basic.lean#L405). References: SGA 6 I (4.15), “special case”.
 
 > **Stacks 066U.** A bounded object of the derived category of modules whose cohomology modules
 > are all perfect is itself perfect.
@@ -156,7 +156,7 @@ theorem isPerfect_of_bounded_of_cohomology_isPerfect
 
 [Tag 066V](https://stacks.math.columbia.edu/tag/066V) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_restrictScalars_of_isPerfectModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BaseChange.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/BaseChange.lean#L184).
+**`StacksDraft.Perfect.isPerfect_restrictScalars_of_isPerfectModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BaseChange.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/BaseChange.lean#L184).
 
 > **Stacks 066V.** Let `f : A → B` be a homomorphism of commutative rings and assume that `B` is
 > perfect as an `A`-module. Then every perfect complex of `B`-modules is perfect as a complex of
@@ -176,7 +176,7 @@ theorem isPerfect_restrictScalars_of_isPerfectModule
 
 [Tag 066W](https://stacks.math.columbia.edu/tag/066W) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_derivedExtensionScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BaseChange.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/BaseChange.lean#L261).
+**`StacksDraft.Perfect.isPerfect_derivedExtensionScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BaseChange.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/BaseChange.lean#L261).
 
 > **Stacks 066W.** Let `f : A → B` be a homomorphism of commutative rings and let `K` be a
 > perfect object of `D(A)`. Then the derived base change `K ⊗_A^L B` is a perfect object of
@@ -193,7 +193,7 @@ theorem isPerfect_derivedExtensionScalars (f : A →+* B)
 
 [Tag 066X](https://stacks.math.columbia.edu/tag/066X) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfectModule_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Module.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Module.lean#L270).
+**`StacksDraft.Perfect.isPerfectModule_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Module.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Module.lean#L270).
 
 > **Stacks 066X.** Flat base change preserves perfect modules.
 
@@ -209,7 +209,7 @@ theorem isPerfectModule_tensorProduct_of_flat
 
 [Tag 0GM0](https://stacks.math.columbia.edu/tag/0GM0) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean#L151). References: SGA 6 I (4.19), “D(R), R a ring”.
+**`StacksDraft.Perfect.isPerfect_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean#L151). References: SGA 6 I (4.19), “D(R), R a ring”.
 
 > **Stacks 0GM0.** The derived tensor product of two perfect objects of `D(A)` is perfect.
 
@@ -224,7 +224,7 @@ theorem isPerfect_derivedTensorProduct
 
 [Tag 066Y](https://stacks.math.columbia.edu/tag/066Y) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Local.lean#L287).
+**`StacksDraft.Perfect.isPerfect_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Local.lean#L287).
 
 > Let `R` be a commutative ring, let the elements `f i` generate the unit ideal, and let `K` be
 > an object of the derived category of `R`-modules. If the derived localization `K ⊗_R R_{f i}` is
@@ -242,7 +242,7 @@ theorem isPerfect_of_localizationSpan {R : Type u} [CommRing R] {ι : Type*} [Fi
 
 [Tag 068T](https://stacks.math.columbia.edu/tag/068T) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Local.lean#L618).
+**`StacksDraft.Perfect.isPerfect_of_faithfullyFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Local.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Local.lean#L618).
 
 > Let `R → S` be a faithfully flat map of commutative rings and let `K` be a complex of
 > `R`-modules. If `K ⊗_R S` is perfect, then `K` is perfect.
@@ -263,7 +263,7 @@ theorem isPerfect_of_faithfullyFlat_baseChange
 
 [Tag 066Z](https://stacks.math.columbia.edu/tag/066Z) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfectModule_iff_finite_and_isPerfect_iff_bounded_finiteCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Regular.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Regular.lean#L247).
+**`StacksDraft.Perfect.isPerfectModule_iff_finite_and_isPerfect_iff_bounded_finiteCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Regular.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Regular.lean#L247).
 
 > **Stacks 066Z.** Over a regular ring, perfect modules are precisely finite modules, and
 > perfect derived objects are precisely the bounded objects with finite cohomology modules.
@@ -285,7 +285,7 @@ theorem isPerfectModule_iff_finite_and_isPerfect_iff_bounded_finiteCohomology
 
 [Tag 07VI](https://stacks.math.columbia.edu/tag/07VI) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_derivedDual_and_naturalIsos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorHom.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Duality/TensorHom.lean#L652). References: SGA 6 I (7.7), “affine case”; SGA 6 I (7.3), “affine (ring) case”.
+**`StacksDraft.Perfect.isPerfect_derivedDual_and_naturalIsos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorHom.lean, line 651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Duality/TensorHom.lean#L651). References: SGA 6 I (7.7), “affine case”; SGA 6 I (7.3), “affine (ring) case”.
 
 > **Stacks 07VI.** Let `A` be a ring and let `K` be a perfect object of `D(A)`. Then the derived
 > dual `Kᵛ = RHom_A(K, A)` is perfect, the canonical morphism `K ⟶ (Kᵛ)ᵛ` is an isomorphism, the
@@ -302,7 +302,7 @@ theorem isPerfect_derivedDual_and_naturalIsos
 
 [Tag 0H81](https://stacks.math.columbia.edu/tag/0H81) in the Stacks Project.
 
-**`StacksDraft.Perfect.hasFlatRepresentative_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean#L227). References: SGA 6 I (7.3), “finite Tor-dim stability”.
+**`StacksDraft.Perfect.hasFlatRepresentative_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Duality/TensorProductTorAmplitude.lean#L227). References: SGA 6 I (7.3), “finite Tor-dim stability”.
 
 > **Stacks 0H81.** If a perfect complex has Tor amplitude in `[a, b]` -- that is, a flat
 > representative supported in `[a, b]` -- then its derived dual has Tor amplitude in `[-b, -a]`.
@@ -319,7 +319,7 @@ theorem hasFlatRepresentative_derivedDual
 
 [Tag 0BKB](https://stacks.math.columbia.edu/tag/0BKB) in the Stacks Project.
 
-**`StacksDraft.Perfect.isDerivedLimit_derivedHom_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/SystemDuality.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/SystemDuality.lean#L443).
+**`StacksDraft.Perfect.isDerivedLimit_derivedHom_of_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/SystemDuality.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/SystemDuality.lean#L443).
 
 > If `K` is a homotopy colimit of a sequential system of perfect derived
 > objects `Kₙ`, then `RHomₐ(K, E)` is a derived inverse limit of the inverse system
@@ -339,7 +339,7 @@ theorem isDerivedLimit_derivedHom_of_isHomotopyColimit
 
 [Tag 0BC7](https://stacks.math.columbia.edu/tag/0BC7) in the Stacks Project.
 
-**`StacksDraft.Perfect.perfectComplexes_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Colimit/HomColimit.lean, line 839](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/Colimit/HomColimit.lean#L839).
+**`StacksDraft.Perfect.perfectComplexes_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/Colimit/HomColimit.lean, line 833](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/Colimit/HomColimit.lean#L833).
 
 > **Stacks 0BC7.** Let `R : I ⥤ CommRingCat` be a filtered system of commutative rings whose
 > colimit is computed on underlying sets, and let `c` be a colimit cocone. Writing `E f` for the
@@ -425,4 +425,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.76, Tag 0656](https://stacks.math.columbia.edu/tag/0656)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

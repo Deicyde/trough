@@ -8,7 +8,7 @@ proof: formalized
 
 # Euler method
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html).
 
 ## Uniform quadratic bound on the explicit Euler local error
 
@@ -19,7 +19,7 @@ Then there is a constant $C \ge 0$ such that
 $\|x(t + h) - (x(t) + h f(t, x(t)))\| \le C h^2$ for every $h \in (0, T - t_0]$ and every
 $t \in [t_0, T]$ with $t + h \le T$.
 
-Formalized by `ODE.exists_explicitEuler_localTruncationError_le`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#exists-explicit-euler-local-truncation-e).
+Formalized by `ODE.exists_explicitEuler_localTruncationError_le`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#exists-explicit-euler-local-truncation-e).
 
 ## First-order convergence of the explicit Euler method
 
@@ -40,7 +40,7 @@ first-order global estimate.
 
 - E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Theorem I.7.3; stable ref https://en.wikipedia.org/wiki/Euler_method.
 
-Formalized by `MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_first_order_convergence`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#explicit-euler-first-order-convergence).
+Formalized by `MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_first_order_convergence`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#explicit-euler-first-order-convergence).
 
 ## Local truncation error of the explicit Euler method
 
@@ -58,7 +58,7 @@ interval, and apply the mean value inequality twice.
 
 - E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Section I.7.
 
-Formalized by `MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_local_truncation_error`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#explicit-euler-local-truncation-error).
+Formalized by `MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_local_truncation_error`, a theorem declared in [MathlibExt/Analysis/ODE/ExplicitEuler.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/ExplicitEuler.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html#explicit-euler-local-truncation-error).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Euler method](https://deicyde.github.io/atlas-lean/roadmap/Analysis/numerical-analysis/euler-method/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/numerical-analysis/euler-method)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/numerical-analysis/euler-method)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 44.4 The Picard functor
 
-Section 44.4 of the Stacks Project, [Tag 0B9K](https://stacks.math.columbia.edu/tag/0B9K). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 44.4 of the Stacks Project, [Tag 0B9K](https://stacks.math.columbia.edu/tag/0B9K). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B9L, a definition
 
 [Tag 0B9L](https://stacks.math.columbia.edu/tag/0B9L) in the Stacks Project.
 
-**`Stacks.PicardFunctor.picardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L154). The attribute's comment: “the presheaf of Picard groups of the base changes”.
+**`Stacks.PicardFunctor.picardPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L154). The attribute's comment: “the presheaf of Picard groups of the base changes”.
 
 > **Stacks Project, Tag 0B9L.** The presheaf `T ↦ Pic(X_T)` on the `S`-schemes of the site,
 > whose fppf sheafification is the Picard functor. Its action on a morphism of test schemes is
@@ -24,7 +24,7 @@ Section 44.4 of the Stacks Project, [Tag 0B9K](https://stacks.math.columbia.edu/
 def picardPresheaf : (BigFppfOver B S hS)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`Stacks.PicardFunctor.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L176). The attribute's comment: “the Picard functor”. References: SGA 6 X (2.4), “definition of Pic\_\{X/S}”; SGA 6 XIII (3.1).
+**`Stacks.PicardFunctor.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L176). The attribute's comment: “the Picard functor”. References: SGA 6 X (2.4), “definition of Pic\_\{X/S}”; SGA 6 XIII (3.1).
 
 > **Stacks Project, Tag 0B9L.** The *Picard functor* `Pic_{X/S} : (Sch/S)_{fppf} ⥤ Sets` of a
 > morphism `f : X ⟶ S` of a big fppf site: the fppf sheafification of the presheaf
@@ -38,7 +38,7 @@ def picardFunctor : (BigFppfOver B S hS)ᵒᵖ ⥤ Type (u + 1)
 
 [Tag 0B9M](https://stacks.math.columbia.edu/tag/0B9M) in the Stacks Project.
 
-**`Stacks.PicardFunctor.injective_schemePullbackClass_baseChangeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceLeftExactness.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceLeftExactness.lean#L155). The attribute's comment: “left exactness”.
+**`Stacks.PicardFunctor.injective_schemePullbackClass_baseChangeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceLeftExactness.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceLeftExactness.lean#L155). The attribute's comment: “left exactness”.
 
 > **Stacks Project, Tag 0B9M.** If the comparison map `𝒪_T ⟶ f_{T,*}𝒪_{X_T}` is an
 > isomorphism for every `S`-scheme `T` of the site, then pullback along `X_T ⟶ T` is injective on
@@ -53,7 +53,7 @@ theorem injective_schemePullbackClass_baseChangeProj
     Function.Injective (Stacks.Picard.schemePullbackClass (baseChangeProj B hX hS f T))
 ```
 
-**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom_of_isIso_c`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean#L627). The attribute's comment: “exactness at Pic(X\_T)”.
+**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom_of_isIso_c`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean#L627). The attribute's comment: “exactness at Pic(X\_T)”.
 
 > If the comparison map `𝒪_T ⟶ f_{T,*}𝒪_{X_T}` is an isomorphism for every `S`-scheme `T` of the
 > site, then a Picard class of `X_T` dies in `Pic_{X/S}(T)` exactly when it is pulled back along the
@@ -71,7 +71,7 @@ theorem exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom_of_isIso_c
 
 [Tag 0B9N](https://stacks.math.columbia.edu/tag/0B9N) in the Stacks Project.
 
-**`Stacks.PicardFunctor.schemePullbackClass_baseChangeSection_baseChangeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L66). The attribute's comment: “the splitting”.
+**`Stacks.PicardFunctor.schemePullbackClass_baseChangeSection_baseChangeProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L66). The attribute's comment: “the splitting”.
 
 > **Stacks Project, Tag 0B9N.** Pullback of Picard classes along the induced section
 > `σ_T : T ⟶ X_T` is a left inverse of pullback along the projection `X_T ⟶ T`: the sequence
@@ -84,7 +84,7 @@ theorem schemePullbackClass_baseChangeSection_baseChangeProj (T : BigFppfOver B 
       (Stacks.Picard.schemePullbackClass (baseChangeProj B hX hS f T))
 ```
 
-**`Stacks.PicardFunctor.injective_schemePullbackClass_baseChangeProj_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L79). The attribute's comment: “injectivity”.
+**`Stacks.PicardFunctor.injective_schemePullbackClass_baseChangeProj_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L79). The attribute's comment: “injectivity”.
 
 > **Stacks Project, Tag 0B9N.** Pullback of Picard classes along the projection `X_T ⟶ T` is
 > injective, the induced section providing a left inverse; this is exactness at `Pic(T)` of
@@ -95,7 +95,7 @@ theorem injective_schemePullbackClass_baseChangeProj_of_section (T : BigFppfOver
     Function.Injective (Stacks.Picard.schemePullbackClass (baseChangeProj B hX hS f T))
 ```
 
-**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L591). The attribute's comment: “exactness in the middle”.
+**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean, line 591](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/SplittingExactness.lean#L591). The attribute's comment: “exactness in the middle”.
 
 > **Stacks Project, Tag 0B9N.** The image of pullback from `Pic(T)` is exactly the kernel of
 > the map to the Picard functor: a Picard class of `X_T` dies in `Pic_{X/S}(T)` if and only if it
@@ -111,7 +111,7 @@ theorem exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom
       (toPicardFunctorHom B hX hS f T)
 ```
 
-**`Stacks.PicardFunctor.surjective_toPicardFunctorHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/Surjectivity.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/Surjectivity.lean#L386). The attribute's comment: “surjectivity”.
+**`Stacks.PicardFunctor.surjective_toPicardFunctorHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/Surjectivity.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceSplitExact/Surjectivity.lean#L386). The attribute's comment: “surjectivity”.
 
 > **Stacks Project, Tag 0B9N.** Every section of the Picard functor over a test scheme `T` is
 > the class of an invertible module on `X_T`: pullback `Pic(X_T) ⟶ Pic_{X/S}(T)` is surjective.
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 44.4, Tag 0B9K](https://stacks.math.columbia.edu/tag/0B9K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

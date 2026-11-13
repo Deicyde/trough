@@ -1,6 +1,6 @@
 # Analysis
 
-3,265 results of ATLAS's vault, 2,902 proved and 363 stated but not proved, in this subject's topics.
+3,260 results of ATLAS's vault, 2,897 proved and 363 stated but not proved, in this subject's topics.
 
 Analysis studies limits, approximation, continuity, and infinite-dimensional spaces of functions and operators.
 

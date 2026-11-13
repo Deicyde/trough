@@ -8,7 +8,7 @@ proof: formalized
 
 # Isometries and crystallographic groups: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry/index.html).
 
 Distance-preserving maps of Euclidean space, their classification, and discrete symmetry groups such as wallpaper and space groups.
 
@@ -25,7 +25,7 @@ Surjectivity of $f$ is neither assumed nor concluded.
 
 - F. S. Beckman and D. A. Quarles Jr., On isometries of Euclidean spaces, Proc. Amer. Math. Soc. 4 (1953) 810–815 original theorem; standard formulation for `ℝ^n, n ≥ 2`.
 
-Formalized by `MathlibExt.Geometry.Euclidean.BeckmanQuarlesWanted.beckman_quarles`, a theorem declared in [MathlibExt/Geometry/Euclidean/BeckmanQuarles.lean, line 2234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/BeckmanQuarles.lean#L2234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry/index.html#beckman-quarles).
+Formalized by `MathlibExt.Geometry.Euclidean.BeckmanQuarlesWanted.beckman_quarles`, a theorem declared in [MathlibExt/Geometry/Euclidean/BeckmanQuarles.lean, line 2234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/BeckmanQuarles.lean#L2234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry/index.html#beckman-quarles).
 
 ## Depends on
 
@@ -34,4 +34,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Isometries and crystallographic groups](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/isometries-and-symmetry)

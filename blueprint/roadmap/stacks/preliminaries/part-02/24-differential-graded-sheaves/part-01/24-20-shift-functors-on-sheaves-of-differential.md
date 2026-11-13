@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.20 Shift functors on sheaves of differential graded modules
 
-Section 24.20 of the Stacks Project, [Tag 0FRY](https://stacks.math.columbia.edu/tag/0FRY). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.20 of the Stacks Project, [Tag 0FRY](https://stacks.math.columbia.edu/tag/0FRY). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FRY, the section
 
 [Tag 0FRY](https://stacks.math.columbia.edu/tag/0FRY) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L105). The attribute's comment: “the shift functor [k] on Mod^dg(A, d)”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L105). The attribute's comment: “the shift functor [k] on Mod^dg(A, d)”.
 
 > **Stacks Project, Tag 0FRY.** The `k`-th shift functor `[k]` on the differential graded
 > category `Mod^dg(A, d)` of right differential graded `A`-modules: a functor of differential
@@ -27,7 +27,7 @@ noncomputable def dgShiftFunctor (k : ℤ) :
       (dgCategoryData.{u, v, w} A).category
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L113). The attribute's comment: “clauses (1) and (2): the underlying complex of M[k]”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L113). The attribute's comment: “clauses (1) and (2): the underlying complex of M[k]”.
 
 > **Stacks Project, Tag 0FRY, clauses (1) and (2).** The complex of sheaves of modules
 > underlying `M[k]` is the `k`-th shift of the complex underlying `M`.
@@ -39,7 +39,7 @@ theorem dgShiftFunctor_complex (k : ℤ) (M : DifferentialGradedModule.{u, v, w}
         (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) k).obj M.complex
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_map_v`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L149). The attribute's comment: “the components of f[k]”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_map_v`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L149). The attribute's comment: “the components of f[k]”.
 
 > **Stacks Project, Tag 0FRY.** The components of the shift `f[k]` of a homogeneous morphism
 > `f` of degree `n` are those of `f`, multiplied by `(-1)^{k n}`. See the implementation notes:
@@ -54,7 +54,7 @@ theorem dgShiftFunctor_map_v (k n : ℤ) (M N : DifferentialGradedModule.{u, v, 
       ((Int.negOnePow (k * n) : ℤ) • (asCochain A f).v (p + k) (q + k) (by omega))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_map_v_of_degree_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L160). The attribute's comment: “f[k] has the same component maps as f in degree zero”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_map_v_of_degree_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L160). The attribute's comment: “f[k] has the same component maps as f in degree zero”.
 
 > **Stacks Project, Tag 0FRY.** On a homogeneous morphism of degree zero — in particular on a
 > morphism of `Mod(A, d)` — the shift `f[k]` has literally the same component maps as `f`, which
@@ -69,7 +69,7 @@ theorem dgShiftFunctor_map_v_of_degree_zero (k : ℤ)
       ((asCochain A f).v (p + k) (q + k) (by omega))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_zero_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L174). The attribute's comment: “[0] is the identity”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_zero_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L174). The attribute's comment: “[0] is the identity”.
 
 > **Stacks Project, Tag 0FRY.** The zeroth shift is the identity on objects.
 
@@ -78,7 +78,7 @@ theorem dgShiftFunctor_zero_obj (M : (dgCategoryData.{u, v, w} A).category.Obj) 
     (dgShiftFunctor.{u, v, w} A 0).obj M = M
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_add_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L186). The attribute's comment: “[k + l] = [k] ∘ [l]”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_add_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L186). The attribute's comment: “[k + l] = [k] ∘ [l]”.
 
 > **Stacks Project, Tag 0FRY.** `[k + l] = [k] ∘ [l]` on objects.
 
@@ -88,7 +88,7 @@ theorem dgShiftFunctor_add_obj (k l : ℤ) (M : (dgCategoryData.{u, v, w} A).cat
       (dgShiftFunctor.{u, v, w} A k).obj ((dgShiftFunctor.{u, v, w} A l).obj M)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_add_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L193). The attribute's comment: “[k + l] = [k] ∘ [l] on morphisms”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftFunctor_add_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L193). The attribute's comment: “[k + l] = [k] ∘ [l] on morphisms”.
 
 > **Stacks Project, Tag 0FRY.** `[k + l] = [k] ∘ [l]` on homogeneous morphisms.
 
@@ -99,7 +99,7 @@ theorem dgShiftFunctor_add_map (k l : ℤ) {M N : (dgCategoryData.{u, v, w} A).c
       ((dgShiftFunctor.{u, v, w} A k).map ((dgShiftFunctor.{u, v, w} A l).map f))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L204). The attribute's comment: “Hom(L, M[k]) = Hom(L, M)[k]”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L204). The attribute's comment: “Hom(L, M[k]) = Hom(L, M)[k]”.
 
 > **Stacks Project, Tag 0FRY.** The identification `Hom(L, M[k])^n = Hom(L, M)^{n + k}`, as
 > modules over the global sections of the structure sheaf.
@@ -111,7 +111,7 @@ noncomputable def dgShiftHomEquiv (k : ℤ) (L M : (dgCategoryData.{u, v, w} A).
       (dgCategoryData.{u, v, w} A).category.Hom L ((dgShiftFunctor.{u, v, w} A k).obj M) n
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgShiftHomEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L214). The attribute's comment: “Hom(L, M[k]) = Hom(L, M)[k] is compatible with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.dgShiftHomEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedShiftFunctor.lean#L214). The attribute's comment: “Hom(L, M[k]) = Hom(L, M)[k] is compatible with the differentials”.
 
 > **Stacks Project, Tag 0FRY.** The identification `Hom(L, M[k]) = Hom(L, M)[k]` is compatible
 > with the differentials: on the right hand side the differential of a shifted complex carries the
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.20, Tag 0FRY](https://stacks.math.columbia.edu/tag/0FRY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

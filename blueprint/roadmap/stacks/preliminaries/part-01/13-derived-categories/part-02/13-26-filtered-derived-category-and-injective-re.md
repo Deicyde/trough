@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.26 Filtered derived category and injective resolutions
 
-Section 13.26 of the Stacks Project, [Tag 015O](https://stacks.math.columbia.edu/tag/015O). 15 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 13.26 of the Stacks Project, [Tag 015O](https://stacks.math.columbia.edu/tag/015O). 15 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 015P, a definition
 
 [Tag 015P](https://stacks.math.columbia.edu/tag/015P) in the Stacks Project.
 
-**`CategoryTheory.FilteredObject.IsFilteredInjective`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L243).
+**`CategoryTheory.FilteredObject.IsFilteredInjective`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L244).
 
 > An object `I` of `Fil^f(C)` is *filtered injective* if each graded piece
 > `gr^p(I) = F^p I / F^{p + 1} I` is an injective object of `C`. As a property of a filtered object
@@ -29,7 +29,7 @@ public structure FilteredObject.IsFilteredInjective {C : Type u} [Category.{v} C
 
 [Tag 05TP](https://stacks.math.columbia.edu/tag/05TP) in the Stacks Project.
 
-**`CategoryTheory.FilteredObject.isFilteredInjective_iff_nonempty_iso_stdBiprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveObject.lean, line 758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveObject.lean#L758).
+**`CategoryTheory.FilteredObject.isFilteredInjective_iff_nonempty_iso_stdBiprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveObject.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveObject.lean#L758).
 
 > Let `𝒜` be an abelian category. An object `I` of `Fil^f(𝒜)` is filtered injective if and
 > only if there are integers `a ≤ b`, injective objects `I_n` of `𝒜` and an isomorphism
@@ -47,7 +47,7 @@ theorem isFilteredInjective_iff_nonempty_iso_stdBiprod (I : FilteredObject 𝒜 
 
 [Tag 05TQ](https://stacks.math.columbia.edu/tag/05TQ) in the Stacks Project.
 
-**`CategoryTheory.FilteredObject.isSplitMono_of_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveSplitting.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveSplitting.lean#L210).
+**`CategoryTheory.FilteredObject.isSplitMono_of_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveSplitting.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveSplitting.lean#L210).
 
 > **Stacks 05TQ.** Let `𝒜` be an abelian category. A strict monomorphism `u : I ⟶ A` of
 > filtered objects of `𝒜` whose source `I` is a filtered injective object of `Fil^f(𝒜)` — its
@@ -64,7 +64,7 @@ public theorem isSplitMono_of_isFilteredInjective {𝒜 : Type u} [Category.{v} 
 
 [Tag 05TR](https://stacks.math.columbia.edu/tag/05TR) in the Stacks Project.
 
-**`CategoryTheory.FilteredObject.factors_of_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveExtension.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveExtension.lean#L266).
+**`CategoryTheory.FilteredObject.factors_of_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveExtension.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveExtension.lean#L266).
 
 > **Stacks 05TR.** Let `𝒜` be an abelian category, let `u : A ⟶ B` be a strict morphism of
 > filtered objects of `𝒜` and let `f : A ⟶ I` be a morphism into a filtered injective object `I` of
@@ -84,7 +84,7 @@ public theorem factors_of_isFilteredInjective {𝒜 : Type u} [Category.{v} 𝒜
 
 [Tag 05TS](https://stacks.math.columbia.edu/tag/05TS) in the Stacks Project.
 
-**`CategoryTheory.FilteredObject.exists_mono_isStrict_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean#L66).
+**`CategoryTheory.FilteredObject.exists_mono_isStrict_isFilteredInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean#L66).
 
 > **Stacks 05TS.** Let `𝒜` be an abelian category with enough injectives. Every object `A` of
 > `Fil^f(𝒜)` admits a strict monomorphism `u : A ⟶ I` into a filtered injective object `I`: the
@@ -100,7 +100,7 @@ public theorem _root_.CategoryTheory.FilteredObject.exists_mono_isStrict_isFilte
 
 [Tag 05TT](https://stacks.math.columbia.edu/tag/05TT) in the Stacks Project.
 
-**`CochainComplex.exists_filteredQuasiIso_isStrictlyGE_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean#L248). References: EGA 0 (13.6.2), “existence of resolution”.
+**`CochainComplex.exists_filteredQuasiIso_isStrictlyGE_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolutionDegreeZero/FilteredResolution.lean#L248). References: EGA 0 (13.6.2), “existence of resolution”.
 
 > **Stacks 05TT.** Let `𝒜` be an abelian category with enough injectives and let `K^•` be a
 > filtered cochain complex of `𝒜` concentrated in degree `0` with finite filtration, i.e. `K^•` is
@@ -123,7 +123,7 @@ public theorem exists_filteredQuasiIso_isStrictlyGE_injective_gradedPiece {𝒜 
 
 [Tag 05TU](https://stacks.math.columbia.edu/tag/05TU) in the Stacks Project.
 
-**`CochainComplex.exists_hom_comp_eq_of_filteredQuasiIso_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean, line 1468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean#L1468). References: EGA 0 (13.6.3), “special case”.
+**`CochainComplex.exists_hom_comp_eq_of_filteredQuasiIso_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean, line 1468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean#L1468). References: EGA 0 (13.6.3), “special case”.
 
 > **Stacks 05TU.** Let `𝒜` be an abelian category, let `f : A ⟶ B` be a morphism of filtered
 > objects, placed in degree `0` by taking the filtered complexes `A` and `B` to be concentrated in
@@ -161,7 +161,7 @@ public theorem exists_hom_comp_eq_of_filteredQuasiIso_of_injective_gradedPiece
 
 [Tag 05TV](https://stacks.math.columbia.edu/tag/05TV) in the Stacks Project.
 
-**`CochainComplex.exists_termwiseSplit_shortExact_of_filteredQuasiIso_of_injective_gr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/TermwiseSplit/TwistedSum.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/TermwiseSplit/TwistedSum.lean#L712).
+**`CochainComplex.exists_termwiseSplit_shortExact_of_filteredQuasiIso_of_injective_gr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/TermwiseSplit/TwistedSum.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/TermwiseSplit/TwistedSum.lean#L712).
 
 > **Stacks 05TV.** Let `𝒜` be an abelian category and let `0 → A → B → C → 0` be a short exact
 > sequence of `Fil^f(𝒜)`, i.e. morphisms `α : A ⟶ B`, `β : B ⟶ C` of filtered objects with finite
@@ -218,7 +218,7 @@ public theorem exists_termwiseSplit_shortExact_of_filteredQuasiIso_of_injective_
 
 [Tag 05TW](https://stacks.math.columbia.edu/tag/05TW) in the Stacks Project.
 
-**`CochainComplex.exists_mono_isStrictHom_filteredQuasiIso_isStrictlyGE_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolution.lean, line 1485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolution.lean#L1485). References: EGA 0 (13.6.2), “existence of resolution”.
+**`CochainComplex.exists_mono_isStrictHom_filteredQuasiIso_isStrictlyGE_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolution.lean, line 1485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveResolution.lean#L1485). References: EGA 0 (13.6.2), “existence of resolution”.
 
 > **Stacks 05TW.** Let `𝒜` be an abelian category with enough injectives and let `K^•` be a
 > filtered cochain complex of `𝒜` with `K^n = 0` for `n < a` and with each `K^n` of finite
@@ -244,7 +244,7 @@ public theorem exists_mono_isStrictHom_filteredQuasiIso_isStrictlyGE_injective_g
 
 [Tag 05TX](https://stacks.math.columbia.edu/tag/05TX) in the Stacks Project.
 
-**`CochainComplex.exists_homotopy_zero_of_filteredAcyclic_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/AcyclicHomotopy.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/AcyclicHomotopy.lean#L599).
+**`CochainComplex.exists_homotopy_zero_of_filteredAcyclic_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/AcyclicHomotopy.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/AcyclicHomotopy.lean#L599).
 
 > **Stacks 05TX.** Let `𝒜` be an abelian category and let `K^•`, `I^•` be filtered cochain
 > complexes of `𝒜` whose terms have finite filtrations, i.e. objects of `K(Fil^f(𝒜))`. Assume `K^•`
@@ -274,7 +274,7 @@ public theorem exists_homotopy_zero_of_filteredAcyclic_of_injective_gradedPiece
 
 [Tag 05TY](https://stacks.math.columbia.edu/tag/05TY) in the Stacks Project.
 
-**`CochainComplex.bijective_precomp_full_and_map_eq_iff_filteredHomotopy_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean, line 1412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean#L1412).
+**`CochainComplex.bijective_precomp_full_and_map_eq_iff_filteredHomotopy_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean, line 1412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/InjectiveHom.lean#L1412).
 
 > **Stacks 05TY.** Let `𝒜` be an abelian category, let `Filf` be the class of filtered cochain
 > complexes of `𝒜` whose filtration is finite in each degree — so that `Filf.FullSubcategory` is
@@ -333,7 +333,7 @@ public theorem bijective_precomp_full_and_map_eq_iff_filteredHomotopy_of_injecti
 
 [Tag 015Q](https://stacks.math.columbia.edu/tag/015Q) in the Stacks Project.
 
-**`CochainComplex.FilteredDerivedCategory.isEquivalence_isTriangulated_toPlus_and_squares`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean#L571).
+**`CochainComplex.FilteredDerivedCategory.isEquivalence_isTriangulated_toPlus_and_squares`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/Triangulated.lean#L571).
 
 > Let `𝒜` be an abelian category with enough injectives, let `I^f ⊂ Fil^f(𝒜)`
 > be the filtered injective objects and `I ⊂ 𝒜` the injective objects. The canonical functor
@@ -370,83 +370,71 @@ theorem isEquivalence_isTriangulated_toPlus_and_squares [EnoughInjectives 𝒜] 
 
 [Tag 015U](https://stacks.math.columbia.edu/tag/015U) in the Stacks Project.
 
-**`CochainComplex.exists_iso_gradedPiece_rightDerivedFunctorPlus_of_filteredQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/DerivedFunctor.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/DerivedFunctor.lean#L253).
+**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorGrPIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean#L323). The attribute's comment: “the isomorphism `gr^p ∘ RT ≅ RT ∘ gr^p` of functors `DF⁺(A) ⥤ D⁺(B)`, for `T` additive and `A` with enough injectives, with `RT = T_ext ∘ j'`: `j'` is `(toPlus A).inv` and `T_ext` is `T` applied termwise on `K⁺(Iᶠ)`, `F^p T(I) = T(F^p I)` (`imageMapOfMonoIso`)”.
 
-> **Stacks 015U.** Let `T : 𝒜 ⥤ ℬ` be an additive functor of abelian categories with `𝒜` having
-> enough injectives, and let `RT : D⁺(𝒜) ⥤ D⁺(ℬ)` be its right derived functor. Let `α : K^• ⟶ I^•`
-> be a filtered quasi-isomorphism of filtered cochain complexes of `𝒜` with `I^•` filtered
-> injective, i.e. every `gr^p I^n` injective — a filtered injective resolution of `K^•` — and let
-> `M^•` be a filtered cochain complex of `ℬ` together with isomorphisms
-> `e p : gr^p M^• ≅ T(gr^p I^•)` in the homotopy category, the datum of `M^• = T_ext(I^•)` out of
-> which the filtered right derived functor is built, so that `M^•` presents `RT(K^•)` in `DF⁺(ℬ)`;
-> assume the graded pieces of `K^•`, `I^•` and `M^•` are bounded below. Then, for every `p`, there
-> is an isomorphism `gr^p(RT(K^•)) = gr^p M^• ≅ RT(gr^p K^•)` in `D⁺(ℬ)` compatible with
-> `RT(gr^p α)` and with the canonical map `Q(T(gr^p I^•)) ⟶ RT(Q(gr^p I^•))` of the right derived
-> functor; since the former is an isomorphism, the compatibility determines it uniquely. This is the
-> isomorphism of functors `gr^p ∘ RT ≅ RT ∘ gr^p` on `DF⁺(𝒜)`.
+> Taking the `p`-th graded piece commutes with the filtered right derived functor: for an
+> additive functor `T : A ⥤ B` out of an abelian category with enough injectives, there is a
+> natural isomorphism `RT ⋙ gr^p ≅ gr^p ⋙ RT` of functors `DF⁺(A) ⥤ D⁺(B)`, i.e.
+> `gr^p ∘ RT ≅ RT ∘ gr^p`, where the `RT` on the left is the filtered right derived functor and
+> the one on the right is the right derived functor `D⁺(A) ⥤ D⁺(B)`.
+>
+> This is the isomorphism of [Stacks, Tag 015U]. There the filtered right derived functor is
+> `RT = T_ext ∘ j'` ([Stacks, Tag 05U2]), with `j'` a quasi-inverse of the equivalence
+> `K⁺(Iᶠ) ⥤ DF⁺(A)` of [Stacks, Tag 015Q] and `T_ext` the functor of [Stacks, Tag 05U0],
+> `T_ext(I) = ⨁ T(I_q)` with `F^p T_ext(I) = ⨁_{q ≥ p} T(I_q)` for a splitting
+> `I ≅ ⨁ I_q`, `F^p I = ⨁_{q ≥ p} I_q`, of a filtered injective object ([Stacks, Tag 015T]).
+> Here `filteredRightDerivedFunctor T` is `(toPlus A).inv ⋙ filteredInjectivePlusMapToDerivedPlus T`:
+> `j'` is `(toPlus A).inv`, and on `K⁺(Iᶠ)` the functor `T` is applied termwise with the
+> filtration `F^p T(I) = T(F^p I) ⊆ T(I)`. On a filtered injective object each `F^p I ⟶ I` is a
+> split monomorphism, so `T(F^p I) ⟶ T(I)` is a monomorphism and the image filtration is
+> `T(F^p I)` itself (`imageMapOfMonoIso`); under a splitting `I ≅ ⨁ I_q` it is
+> `⨁_{q ≥ p} T(I_q)`, which is `T_ext(I)`. The identity
+> `gr^p(T_ext(I)) ≅ T(gr^p I)` used by the source is `gradedImageIso`.
+>
+> See [Stacks Project, Tag 03TE](https://stacks.math.columbia.edu/tag/03TE) and
+> [Stacks Project, Tag 015U](https://stacks.math.columbia.edu/tag/015U).
 
 ```lean
-public theorem exists_iso_gradedPiece_rightDerivedFunctorPlus_of_filteredQuasiIso
-    {A : Type u} {B : Type u'} [Category.{v} A] [Category.{v'} B] [Abelian A] [Abelian B]
-    [HasDerivedCategory.{w} A] [HasDerivedCategory.{w'} B] [EnoughInjectives A]
-    (T : A ⥤ B) [T.Additive]
-    {K I : FilteredObject (CochainComplex A ℤ) ℤᵒᵖ} (α : K ⟶ I)
-    (hα : filteredQuasiIso A α)
-    (hinj : ∀ p n : ℤ, Injective (((gr p).obj I).X n))
-    (M : FilteredObject (CochainComplex B ℤ) ℤᵒᵖ)
-    (hK : ∀ p : ℤ, CochainComplex.plus A ((gr p).obj K))
-    (hI : ∀ p : ℤ, CochainComplex.plus A ((gr p).obj I))
-    (hM : ∀ p : ℤ, CochainComplex.plus B ((gr p).obj M))
-    (e : ∀ p : ℤ, (HomotopyCategory.Plus.quotient B).obj ⟨_, hM p⟩ ≅
-      T.mapHomotopyCategoryPlus.obj ((HomotopyCategory.Plus.quotient A).obj ⟨_, hI p⟩)) (p : ℤ) :
-    ∃ Φ : DerivedCategory.Plus.Qh.obj ((HomotopyCategory.Plus.quotient B).obj ⟨_, hM p⟩) ≅
-        T.rightDerivedFunctorPlus.obj (DerivedCategory.Plus.Qh.obj
-          ((HomotopyCategory.Plus.quotient A).obj ⟨_, hK p⟩)),
-      Φ.hom ≫ T.rightDerivedFunctorPlus.map (DerivedCategory.Plus.Qh.map
-          ((HomotopyCategory.Plus.quotient A).map (ObjectProperty.homMk
-            (X := ⟨_, hK p⟩) (Y := ⟨_, hI p⟩)
-            ((gr p).map α)))) =
-        DerivedCategory.Plus.Qh.map (e p).hom ≫
-          T.rightDerivedFunctorPlusUnith.app
-            ((HomotopyCategory.Plus.quotient A).obj ⟨_, hI p⟩)
+noncomputable def filteredRightDerivedFunctorGrPIso (T : A ⥤ B) [T.Additive]
+    [EnoughInjectives A] (p : ℤ) :
+    filteredRightDerivedFunctor T ⋙
+        CochainComplex.FilteredDerivedCategory.liftDFPlus (FiniteFilteredObject.grP p)
+          (CochainComplex.FilteredDerivedCategory.grP_inverts p) ≅
+      CochainComplex.FilteredDerivedCategory.liftDFPlus (FiniteFilteredObject.grP p)
+          (CochainComplex.FilteredDerivedCategory.grP_inverts p) ⋙
+        T.rightDerivedFunctorPlus
 ```
 
 ## Tag 015V, an equation
 
 [Tag 015V](https://stacks.math.columbia.edu/tag/015V) in the Stacks Project.
 
-**`CochainComplex.isIso_rightDerivedFunctorPlusUnit_app_forget_of_injective_gradedPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/DerivedFunctor.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/DerivedFunctor.lean#L576).
+**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean#L383). The attribute's comment: “(forget F) ∘ RT ≅ RT ∘ (forget F) as functors DF⁺(A) ⥤ D⁺(B), for T additive”.
 
-> **Stacks 015V.** Let `T : 𝒜 ⥤ ℬ` be an additive functor of abelian categories with `𝒜` having
-> enough injectives, and let `I` be a bounded below complex of filtered injective objects: a bounded
-> below filtered cochain complex of `𝒜` every term `(I^n, F^• I^n)` of which is a filtered injective
-> object of `Fil^f(𝒜)`. Then the canonical map
-> ```
-> Q(T((forget F) I)) ⟶ RT(Q((forget F) I))
-> ```
-> in `D⁺(ℬ)` — the component at `(forget F) I` of the unit of the right derived functor
-> `RT : D⁺(𝒜) ⥤ D⁺(ℬ)` — is an isomorphism. Since the left-hand side is `(forget F)(RT(I))`, `RT`
-> here being the filtered right derived functor of [Stacks, Tag 05U2], and every object of `DF⁺(𝒜)`
-> is isomorphic to such an `I` ([Stacks, Tag 015Q]), this is the source's isomorphism
-> `(forget F) ∘ RT ≅ RT ∘ (forget F)` of functors `DF⁺(𝒜) ⥤ D⁺(ℬ)`.
+> Forgetting the filtration commutes with the filtered right derived functor: for an
+> additive functor `T : A ⥤ B` out of an abelian category with enough injectives, there is a
+> natural isomorphism `RT ⋙ forget F ≅ forget F ⋙ RT` of functors `DF⁺(A) ⥤ D⁺(B)`, where the
+> `RT` on the left is the filtered right derived functor `DF⁺(A) ⥤ DF⁺(B)` and the one on the
+> right is the right derived functor `D⁺(A) ⥤ D⁺(B)`.
+>
+> The source assumes `T` left exact; only additivity is used.
 
 ```lean
-public theorem isIso_rightDerivedFunctorPlusUnit_app_forget_of_injective_gradedPiece
-    {A : Type u} {B : Type u'} [Category.{v} A] [Category.{v'} B] [Abelian A] [Abelian B]
-    [HasDerivedCategory.{w} A] [HasDerivedCategory.{w'} B] [EnoughInjectives A]
-    (T : A ⥤ B) [T.Additive]
-    (I : FilteredObject (CochainComplex A ℤ) ℤᵒᵖ) (a : ℤ) [I.X.IsStrictlyGE a]
-    (hI : ∀ n : ℤ, (evalFil I n).IsFilteredInjective) :
-    IsIso (T.rightDerivedFunctorPlusUnith.app ((HomotopyCategory.Plus.quotient A).obj
-      ⟨FilteredObject.forget.obj I,
-        (CochainComplex.plus_iff A _).2 ⟨a, ‹I.X.IsStrictlyGE a›⟩⟩))
+noncomputable def filteredRightDerivedFunctorForgetIso (T : A ⥤ B) [T.Additive]
+    [EnoughInjectives A] :
+    filteredRightDerivedFunctor T ⋙
+        CochainComplex.FilteredDerivedCategory.liftDFPlus FiniteFilteredObject.forget
+          CochainComplex.FilteredDerivedCategory.forget_inverts ≅
+      CochainComplex.FilteredDerivedCategory.liftDFPlus FiniteFilteredObject.forget
+          CochainComplex.FilteredDerivedCategory.forget_inverts ⋙
+        T.rightDerivedFunctorPlus
 ```
 
 ## Tag 015W, a lemma
 
 [Tag 015W](https://stacks.math.columbia.edu/tag/015W) in the Stacks Project.
 
-**`CochainComplex.exists_spectralSequence_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L265). The attribute's comment: “the spectral sequence, its `E_1` page, boundedness, convergence and finiteness of the induced filtration”. References: EGA 0 (13.6.4), “E\_1, abutment, biregular”.
+**`CochainComplex.exists_spectralSequence_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L265). The attribute's comment: “the spectral sequence, its `E_1` page, boundedness, convergence and finiteness of the induced filtration”. References: EGA 0 (13.6.4), “E\_1, abutment, biregular”.
 
 > **Stacks 015W.** Let `T : 𝒜 ⥤ ℬ` be an additive functor of abelian categories, `𝒜` having
 > enough injectives, and let `(K^•, F)` be an object of `Comp⁺(Fil^f(𝒜))`: a filtered complex with
@@ -528,7 +516,7 @@ theorem exists_spectralSequence_rightDerivedFunctorPlus
             ((HomotopyCategory.Plus.quotient A).obj ⟨K.X, ⟨a, inferInstance⟩⟩)))))
 ```
 
-**`CochainComplex.exists_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L517). The attribute's comment: “functoriality in `K^•`: the induced morphism of spectral sequences, independent of choices on `E_r` for `r ≥ 1`”. References: EGA 0 (13.6.3), “existence of v”; EGA 0 (13.6.4), “E\_r indep. of choices”.
+**`CochainComplex.exists_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L517). The attribute's comment: “functoriality in `K^•`: the induced morphism of spectral sequences, independent of choices on `E_r` for `r ≥ 1`”. References: EGA 0 (13.6.3), “existence of v”; EGA 0 (13.6.4), “E\_r indep. of choices”.
 
 > **Stacks 015W, functoriality.** Let `f : K^• ⟶ L^•` be a morphism of
 > `Comp⁺(Fil^f(𝒜))` and let `α : K^• ⟶ I^•`, `β : L^• ⟶ J^•` be filtered injective resolutions.
@@ -553,7 +541,7 @@ theorem exists_spectralSequenceMap_rightDerivedFunctorPlus
               (by omega)
 ```
 
-**`CochainComplex.filteredHomotopic_comp_and_spectralSequenceMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L542). The attribute's comment: “the construction is compatible with composition”.
+**`CochainComplex.filteredHomotopic_comp_and_spectralSequenceMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L542). The attribute's comment: “the construction is compatible with composition”.
 
 > **Stacks 015W, compatibility with composition.** If `γ` lifts `f : K^• ⟶ L^•` and `δ` lifts
 > `g : L^• ⟶ M^•` along filtered injective resolutions, then `γ ≫ δ` lifts `f ≫ g`, and the
@@ -574,7 +562,7 @@ theorem filteredHomotopic_comp_and_spectralSequenceMap_comp
           filteredSpectralSequenceMap (mapFilteredInjectiveMap T δ hJ hP)
 ```
 
-**`CochainComplex.isIso_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L568). The attribute's comment: “the terms `(E_r, d_r)` for `r ≥ 1` do not depend on any choices”. References: EGA 0 (13.6.4), “partial”.
+**`CochainComplex.isIso_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L568). The attribute's comment: “the terms `(E_r, d_r)` for `r ≥ 1` do not depend on any choices”. References: EGA 0 (13.6.4), “partial”.
 
 > **Stacks 015W, independence of choices.** For two filtered injective resolutions
 > `α : K^• ⟶ I^•` and `α' : K^• ⟶ I'^•` of the same object, any `γ : I^• ⟶ I'^•` with
@@ -605,4 +593,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.26, Tag 015O](https://stacks.math.columbia.edu/tag/015O)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

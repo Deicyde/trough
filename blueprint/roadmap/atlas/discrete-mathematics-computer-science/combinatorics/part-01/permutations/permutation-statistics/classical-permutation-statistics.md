@@ -8,7 +8,7 @@ proof: formalized
 
 # Classical permutation statistics
 
-15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html).
+15 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html).
 
 ## Left-to-right and right-to-left extrema
 
@@ -22,7 +22,7 @@ every position $j < i$, that is, the number of entries larger than every entry t
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permLeftToRightMaxCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-left-to-right-max-count).
+Formalized by `MetaMathlibExt.permLeftToRightMaxCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-left-to-right-max-count).
 
 ## Number of right-to-left maxima
 
@@ -35,7 +35,7 @@ than every entry to their right.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permRightToLeftMaxCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-right-to-left-max-count).
+Formalized by `MetaMathlibExt.permRightToLeftMaxCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-right-to-left-max-count).
 
 ## Number of left-to-right minima
 
@@ -48,7 +48,7 @@ than every entry to their left.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permLeftToRightMinCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-left-to-right-min-count).
+Formalized by `MetaMathlibExt.permLeftToRightMinCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-left-to-right-min-count).
 
 ## Number of right-to-left minima
 
@@ -61,7 +61,7 @@ than every entry to their right.
 
 - Dan Li and Sergey Kitaev, *King Permutations and Partially Ordered Patterns*, INTEGERS 26 (2026), Article A59, Section 1 (statistics).
 
-Formalized by `MetaMathlibExt.permRightToLeftMinCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-right-to-left-min-count).
+Formalized by `MetaMathlibExt.permRightToLeftMinCount`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-right-to-left-min-count).
 
 ## Double ascent of a permutation
 
@@ -73,7 +73,7 @@ $\sigma(i) < \sigma(i+1) < \sigma(i+2)$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`).
 
-Formalized by `MetaMathlibExt.IsDoubleAscentAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-double-ascent-at).
+Formalized by `MetaMathlibExt.IsDoubleAscentAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-double-ascent-at).
 
 ## Double descent of a permutation
 
@@ -85,7 +85,7 @@ $\sigma(i) > \sigma(i+1) > \sigma(i+2)$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`ddes`).
 
-Formalized by `MetaMathlibExt.IsDoubleDescentAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-double-descent-at).
+Formalized by `MetaMathlibExt.IsDoubleDescentAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-double-descent-at).
 
 ## Peak of a permutation
 
@@ -98,7 +98,7 @@ the three entries.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`pk`).
 
-Formalized by `MetaMathlibExt.IsPeakAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-peak-at).
+Formalized by `MetaMathlibExt.IsPeakAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-peak-at).
 
 ## Valley of a permutation
 
@@ -111,7 +111,7 @@ position recorded is $i$, that of the first of the three entries.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`vl`).
 
-Formalized by `MetaMathlibExt.IsValleyAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-valley-at).
+Formalized by `MetaMathlibExt.IsValleyAt`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#is-valley-at).
 
 ## Number of double ascents
 
@@ -122,7 +122,7 @@ $\mathrm{dasc}(\sigma)$ is the number of positions $i$ that are double ascents o
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`dasc`).
 
-Formalized by `MetaMathlibExt.permDoubleAscents`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-ascents).
+Formalized by `MetaMathlibExt.permDoubleAscents`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-ascents).
 
 ## Number of double descents
 
@@ -133,7 +133,7 @@ $\mathrm{ddes}(\sigma)$ is the number of positions $i$ that are double descents 
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`ddes`).
 
-Formalized by `MetaMathlibExt.permDoubleDescents`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-descents).
+Formalized by `MetaMathlibExt.permDoubleDescents`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-descents).
 
 ## Number of peaks of a permutation
 
@@ -146,7 +146,7 @@ $\sigma$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`pk`).
 
-Formalized by `MetaMathlibExt.permPeaks`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-peaks).
+Formalized by `MetaMathlibExt.permPeaks`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-peaks).
 
 ## Number of valleys of a permutation
 
@@ -159,7 +159,7 @@ number of valleys of $\sigma$.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1 (`vl`).
 
-Formalized by `MetaMathlibExt.permValleys`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-valleys).
+Formalized by `MetaMathlibExt.permValleys`, a definition declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-valleys).
 
 ## Number of positions with two successors
 
@@ -174,7 +174,7 @@ ascent, a double descent, a peak or a valley.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.
 
-Formalized by `MetaMathlibExt.card_filter_add_two_lt`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#card-filter-add-two-lt).
+Formalized by `MetaMathlibExt.card_filter_add_two_lt`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#card-filter-add-two-lt).
 
 ## Local shape of a position in a permutation
 
@@ -188,7 +188,7 @@ otherwise.
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.
 
-Formalized by `MetaMathlibExt.ite_isDoubleAscentAt_add_ite_isDoubleDescentAt_add_ite_isPeakAt_add_ite_isValleyAt`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#ite-is-double-ascent-at-add-ite-is-doubl).
+Formalized by `MetaMathlibExt.ite_isDoubleAscentAt_add_ite_isDoubleDescentAt_add_ite_isPeakAt_add_ite_isValleyAt`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#ite-is-double-ascent-at-add-ite-is-doubl).
 
 ## Sum of the four local statistics of a permutation
 
@@ -203,7 +203,7 @@ where $n - 2$ is truncated subtraction (it is $0$ when $n < 2$).
 
 - Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Section 1.
 
-Formalized by `MetaMathlibExt.permDoubleAscents_add_permDoubleDescents_add_permPeaks_add_permValleys`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-ascents-add-perm-double-desc).
+Formalized by `MetaMathlibExt.permDoubleAscents_add_permDoubleDescents_add_permPeaks_add_permValleys`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PermutationStatistics.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html#perm-double-ascents-add-perm-double-desc).
 
 ## Depends on
 
@@ -212,4 +212,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Classical permutation statistics](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/classical-permutation-statistics)

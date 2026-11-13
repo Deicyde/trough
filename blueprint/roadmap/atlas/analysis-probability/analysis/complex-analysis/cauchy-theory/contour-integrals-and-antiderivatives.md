@@ -7,7 +7,7 @@ statement: formalized
 
 # Contour integrals and antiderivatives
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html).
 
 ## Fundamental theorem of contour integration
 
@@ -23,7 +23,7 @@ $\int_\gamma f(z)\,dz = \int_0^1 f(\gamma(t))\,\gamma'(t)\,dt$.
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §1.1 to §1.3 (line integrals).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.ContourIntegralWanted.contourIntegral_of_hasDerivAt` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ContourIntegralWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/ContourIntegralWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#contour-integral-of-has-deriv-at).
+Stated but not proved: `MathlibExt.Analysis.Complex.ContourIntegralWanted.contourIntegral_of_hasDerivAt` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ContourIntegralWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/ContourIntegralWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#contour-integral-of-has-deriv-at).
 
 ## ML estimate for contour integrals
 
@@ -41,7 +41,7 @@ The parameter interval has length one, so $L$ bounds the length of $\gamma$.
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §1.1 to §1.3 (line integrals).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.ContourIntegralWanted.norm_contourIntegral_le` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ContourIntegralWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/ContourIntegralWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#norm-contour-integral-le).
+Stated but not proved: `MathlibExt.Analysis.Complex.ContourIntegralWanted.norm_contourIntegral_le` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ContourIntegralWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/ContourIntegralWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#norm-contour-integral-le).
 
 ## The reciprocal function has no antiderivative on an annulus
 
@@ -53,7 +53,7 @@ that is complex differentiable at every $z \in U$ with $F'(z) = 1/z$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; General properties of functions of one complex variable), problem `ma_proofbench_l1_67`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.InvNoAntiderivativeAnnulusWanted.not_exists_hasDerivAt_inv_on_annulus` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/InvNoAntiderivativeAnnulusWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/InvNoAntiderivativeAnnulusWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#not-exists-has-deriv-at-inv-on-annulus).
+Stated but not proved: `MathlibExt.Analysis.Complex.InvNoAntiderivativeAnnulusWanted.not_exists_hasDerivAt_inv_on_annulus` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/InvNoAntiderivativeAnnulusWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/InvNoAntiderivativeAnnulusWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html#not-exists-has-deriv-at-inv-on-annulus).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Contour integrals and antiderivatives](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/contour-integrals-and-antiderivatives)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.13 The Leray spectral sequence
 
-Section 20.13 of the Stacks Project, [Tag 01EY](https://stacks.math.columbia.edu/tag/01EY). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.13 of the Stacks Project, [Tag 01EY](https://stacks.math.columbia.edu/tag/01EY). 7 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01EZ, a lemma
 
 [Tag 01EZ](https://stacks.math.columbia.edu/tag/01EZ) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L325). The attribute's comment: “the natural isomorphism”.
+**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L325). The attribute's comment: “the natural isomorphism”.
 
 > **Stacks 01EZ.** For a morphism `f : X ⟶ Y` of ringed spaces and an open `V` of `Y`,
 > let `U = f⁻¹(V)`. The composite of derived sections over `U` with derived restriction of
@@ -36,7 +36,7 @@ public noncomputable def rightDerivedSectionsRestrictionIso
         (op V)).rightDerivedFunctorPlus
 ```
 
-**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L352). The attribute's comment: “compatibility with the derived-functor units”.
+**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L352). The attribute's comment: “compatibility with the derived-functor units”.
 
 > The derived comparison is induced by the identity on underived sections: its
 > composite with the two derived-functor units is the comparison through pushforward.
@@ -85,7 +85,7 @@ theorem rightDerivedSectionsRestrictionIso_hom_app
 
 [Tag 01F0](https://stacks.math.columbia.edu/tag/01F0) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L352). The attribute's comment: “the comparison is induced by the identity on underived sections”.
+**`Stacks.Cohomology.DerivedPushforwardSections.rightDerivedSectionsRestrictionIso_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/DerivedSectionsOfAPushforward.lean#L352). The attribute's comment: “the comparison is induced by the identity on underived sections”.
 
 > The derived comparison is induced by the identity on underived sections: its
 > composite with the two derived-functor units is the comparison through pushforward.
@@ -134,7 +134,7 @@ theorem rightDerivedSectionsRestrictionIso_hom_app
 
 [Tag 01F1](https://stacks.math.columbia.edu/tag/01F1) in the Stacks Project.
 
-**`Stacks.Cohomology.ModuleComparison.rightDerivedFunctorPlus_sections_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean#L323). The attribute's comment: “bounded below complexes, part (1)”. References: EGA 0 (12.2.1), “H^p(U,F) comparison”.
+**`Stacks.Cohomology.ModuleComparison.rightDerivedFunctorPlus_sections_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean#L323). The attribute's comment: “bounded below complexes, part (1)”. References: EGA 0 (12.2.1), “H^p(U,F) comparison”.
 
 > The comparison between module and abelian-sheaf cohomology is valid for bounded below
 > complexes and is natural in the complex.
@@ -149,7 +149,7 @@ def rightDerivedFunctorPlus_sections_forget_iso (U : Opens X.carrier) :
           (op U)).rightDerivedFunctorPlus
 ```
 
-**`Stacks.Cohomology.ModuleComparison.rightDerivedFunctorPlus_sections_forget_iso_unit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean#L335). The attribute's comment: “bounded below complexes, part (1), canonical comparison”.
+**`Stacks.Cohomology.ModuleComparison.rightDerivedFunctorPlus_sections_forget_iso_unit`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/AcyclicityAndBoundedBelow.lean#L335). The attribute's comment: “bounded below complexes, part (1), canonical comparison”.
 
 > The bounded-below sections comparison is the canonical one: it intertwines the two
 > units from ordinary sections.
@@ -162,7 +162,7 @@ lemma rightDerivedFunctorPlus_sections_forget_iso_unit (U : Opens X.carrier) :
       abelianSectionsDerivedUnit X U
 ```
 
-**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CocycleFormula.lean, line 1365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CocycleFormula.lean#L1365). The attribute's comment: “part (1), canonical comparison in every degree”.
+**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CocycleFormula.lean, line 1365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CocycleFormula.lean#L1365). The attribute's comment: “part (1), canonical comparison in every degree”.
 
 > **Stacks 01F1, part (1), canonical comparison in every degree.**  In every degree the
 > comparison sends a cocycle to the same cocycle in an abelian injective resolution, for any
@@ -192,7 +192,7 @@ theorem rightDerivedSectionsForgetIso_cocycles (n : ℕ) (M : SheafOfModules.{u}
         c ≫ L.homologyπ n
 ```
 
-**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean#L110). The attribute's comment: “part (1)”.
+**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean#L110). The attribute's comment: “part (1)”.
 
 > Cohomology over an open subset `U`, computed by deriving module-valued sections and then
 > forgetting the module structure, agrees canonically and naturally with cohomology computed after
@@ -211,7 +211,7 @@ def rightDerivedSectionsForgetIso (n : ℕ) :
           (op U)).rightDerived n
 ```
 
-**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean#L155). The attribute's comment: “part (1), degree-zero normalization”.
+**`Stacks.Cohomology.ModuleComparison.rightDerivedSectionsForgetIso_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/ComparisonAndDegreeZero.lean#L155). The attribute's comment: “part (1), degree-zero normalization”.
 
 > In degree zero the comparison `rightDerivedSectionsForgetIso` intertwines the canonical maps
 > from ordinary sections to the zeroth right derived functors.
@@ -226,7 +226,7 @@ theorem rightDerivedSectionsForgetIso_zero :
           (op U)).toRightDerivedZero
 ```
 
-**`Stacks.Cohomology.ModuleComparison.canonicalSectionsForgetIso_naturality_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CompatibilityWithRestriction.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CompatibilityWithRestriction.lean#L239). The attribute's comment: “part (1), compatibility with restriction”.
+**`Stacks.Cohomology.ModuleComparison.canonicalSectionsForgetIso_naturality_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CompatibilityWithRestriction.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CompatibilityWithRestriction.lean#L239). The attribute's comment: “part (1), compatibility with restriction”.
 
 > **Stacks 01F1, part (1), compatibility with restriction.** The comparison of cohomology over
 > an open subset commutes with restriction to a smaller open subset.  The left-hand restriction is
@@ -252,7 +252,7 @@ theorem canonicalSectionsForgetIso_naturality_open {U V : Opens X} (h : U ≤ V)
           ((SheafOfModules.toSheaf R).obj M)
 ```
 
-**`Stacks.Cohomology.ModulePushforwardComparison.rightDerivedFunctorPlus_modulePushforward_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean#L197). The attribute's comment: “bounded below complexes, part (2)”.
+**`Stacks.Cohomology.ModulePushforwardComparison.rightDerivedFunctorPlus_modulePushforward_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean#L197). The attribute's comment: “bounded below complexes, part (2)”.
 
 > The comparison between module and abelian-sheaf higher direct images is valid for
 > bounded below complexes and is natural in the complex.
@@ -267,7 +267,7 @@ noncomputable def rightDerivedFunctorPlus_modulePushforward_forget_iso :
           (Opens.grothendieckTopology X.carrier)).rightDerivedFunctorPlus
 ```
 
-**`Stacks.Cohomology.ModulePushforwardComparison.rightDerivedFunctorPlus_modulePushforward_forget_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean#L211). The attribute's comment: “bounded below complexes, part (2), canonical comparison”.
+**`Stacks.Cohomology.ModulePushforwardComparison.rightDerivedFunctorPlus_modulePushforward_forget_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/BoundedBelowComplexes.lean#L211). The attribute's comment: “bounded below complexes, part (2), canonical comparison”.
 
 > The bounded-below higher-direct-image comparison is the canonical one: it intertwines
 > the units from ordinary pushforward.
@@ -280,7 +280,7 @@ theorem rightDerivedFunctorPlus_modulePushforward_forget_iso_unit :
       abelianPushforwardDerivedUnit f
 ```
 
-**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean#L482). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean#L483). The attribute's comment: “part (2)”.
 
 > **Stacks 01F1, part (2).**  Higher direct images of a sheaf of modules, computed in sheaves
 > of modules and then forgotten to abelian sheaves, agree canonically and naturally with the
@@ -300,7 +300,7 @@ noncomputable def rightDerived_modulePushforward_forget_iso (n : ℕ) :
           (Opens.grothendieckTopology X.carrier)).rightDerived n
 ```
 
-**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean#L498). The attribute's comment: “part (2), degree-zero normalization”.
+**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/HigherDirectImages.lean#L499). The attribute's comment: “part (2), degree-zero normalization”.
 
 > **Stacks 01F1, part (2), degree-zero normalization.**  In degree zero the comparison
 > intertwines the canonical maps from the ordinary pushforwards to the zeroth right derived
@@ -317,7 +317,7 @@ theorem rightDerived_modulePushforward_forget_iso_zero :
           (Opens.grothendieckTopology X.carrier)).toRightDerivedZero
 ```
 
-**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/ResolutionLevelFormula.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/ResolutionLevelFormula.lean#L628). The attribute's comment: “part (2), canonical comparison in every degree”.
+**`Stacks.Cohomology.ModulePushforwardComparison.rightDerived_modulePushforward_forget_iso_cocycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/ResolutionLevelFormula.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModulePushforwardComparison/ResolutionLevelFormula.lean#L628). The attribute's comment: “part (2), canonical comparison in every degree”.
 
 > The higher-direct-image comparison is induced by a comparison from a module injective
 > resolution to an abelian injective resolution extending the identity of the underlying abelian
@@ -349,7 +349,7 @@ theorem rightDerived_modulePushforward_forget_iso_cocycles (n : ℕ)
 
 [Tag 01F2](https://stacks.math.columbia.edu/tag/01F2) in the Stacks Project.
 
-**`Stacks.Cohomology.LerayCard.leraySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/Assembled.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Leray/Assembled.lean#L249).
+**`Stacks.Cohomology.LerayCard.leraySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/Assembled.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Leray/Assembled.lean#L249).
 
 > **The Leray spectral sequence of a morphism of ringed spaces**, [Stacks, Tag 01F2]. For
 > `f : X ⟶ Y` a morphism of ringed spaces, this is the functorial `E₂`-cohomological spectral
@@ -365,7 +365,7 @@ def leraySpectralSequence {X Y : RingedSpace.{u, u}} (f : X ⟶ Y) :
     LeraySpectralSequenceData.{u, u} f
 ```
 
-**`Stacks.Cohomology.LerayModules.exists_spectralSequence_leray`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/ModuleSheafSpectralSequence.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Leray/ModuleSheafSpectralSequence.lean#L96). The attribute's comment: “the whole statement: existence of the spectral sequence with second page `H^p(Y, R^q f_* K)` converging to `H^{p+q}(X, K)`, for `K` in `D⁺(Mod(𝒪_X))`. Functoriality in `K` is NOT asserted — the source does not state it”.
+**`Stacks.Cohomology.LerayModules.exists_spectralSequence_leray`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/ModuleSheafSpectralSequence.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Leray/ModuleSheafSpectralSequence.lean#L96). The attribute's comment: “the whole statement: existence of the spectral sequence with second page `H^p(Y, R^q f_* K)` converging to `H^{p+q}(X, K)`, for `K` in `D⁺(Mod(𝒪_X))`. Functoriality in `K` is NOT asserted — the source does not state it”.
 
 > **The Leray spectral sequence for sheaves of modules.**  Let `f : X ⟶ Y` be a morphism of
 > ringed spaces and let `K` be an object of `D⁺(Mod(𝒪_X))`.  There is a filtered complex `L` of
@@ -428,7 +428,7 @@ theorem exists_spectralSequence_leray
 
 [Tag 01F4](https://stacks.math.columbia.edu/tag/01F4) in the Stacks Project.
 
-**`Stacks.LeraySections.cohomologyIsoOfVanishingHigherDirectImages`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean#L230). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
+**`Stacks.LeraySections.cohomologyIsoOfVanishingHigherDirectImages`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean#L230). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
 
 > **[Stacks, Tag 01F4] part (1).** If the higher direct images of a sheaf of
 > `𝒪_X`-modules along a morphism of ringed spaces vanish, then its cohomology agrees in every
@@ -442,7 +442,7 @@ noncomputable def cohomologyIsoOfVanishingHigherDirectImages
       (Hfunctor (structureSheafRing Y) ⊤ p).obj ((modulePushforward f).obj F)
 ```
 
-**`Deformation.Artin.SectionsSheaf.isIso_edgeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean#L630). The attribute's comment: “(1) for a morphism of schemes, the isomorphism H^p(Y, f\_*F) ≅ H^p(X, F) being the edge map, which commutes with the connecting morphisms”.
+**`Deformation.Artin.SectionsSheaf.isIso_edgeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean#L630). The attribute's comment: “(1) for a morphism of schemes, the isomorphism H^p(Y, f\_*F) ≅ H^p(X, F) being the edge map, which commutes with the connecting morphisms”.
 
 > **Stacks 01F4, part (1), through the edge map.** If the higher direct images `R^q p_* G`
 > vanish for `q > 0`, the edge map `|Hⁿ(Y, p_* G)| ⟶ |Hⁿ(X, G)|` is an isomorphism in every
@@ -454,7 +454,7 @@ theorem isIso_edgeMap_app (G : SheafOfModules.{u} X.ringCatSheaf)
     (n : ℕ) : IsIso ((edgeMap p π n).app G)
 ```
 
-**`Stacks.Cohomology.LerayModules.isIso_cohomologyToSectionsHigherDirectImage_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/BaseVanishingCollapse.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Leray/BaseVanishingCollapse.lean#L166). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.LerayModules.isIso_cohomologyToSectionsHigherDirectImage_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Leray/BaseVanishingCollapse.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Leray/BaseVanishingCollapse.lean#L166). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 01F4] part (2).** Let `f : X ⟶ Y` be a morphism of ringed spaces and let `F`
 > be a sheaf of `𝒪_X`-modules. If `H^p(Y, R^q f_* F) = 0` for every `p > 0` and every `q`, then
@@ -482,7 +482,7 @@ theorem isIso_cohomologyToSectionsHigherDirectImage_of_vanishing
 
 [Tag 01F5](https://stacks.math.columbia.edu/tag/01F5) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeLeray.derivedPushforwardPlusCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L206).
+**`Stacks.Cohomology.RelativeLeray.derivedPushforwardPlusCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L206).
 
 > **[Stacks, Tag 01F5]: `R(g ∘ f)_* ≅ Rf_* ⋙ Rg_*` as functors `D⁺(X) ⥤ D⁺(Z)`**, for
 > arbitrary morphisms of ringed spaces `f : X ⟶ Y` and `g : Y ⟶ Z`. No hypothesis.
@@ -501,7 +501,7 @@ def derivedPushforwardPlusCompIso :
         (modulePushforward g).rightDerivedFunctorPlus
 ```
 
-**`Stacks.Cohomology.DerivedDirectImageComposition.higherDirectImagesComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/DerivedDirectImageComposition.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/DerivedDirectImageComposition.lean#L271).
+**`Stacks.Cohomology.DerivedDirectImageComposition.higherDirectImagesComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/DerivedDirectImageComposition.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryA/DerivedDirectImageComposition.lean#L271).
 
 > **Stacks Project, Tag 01F5.** The canonical comparison from the derived direct image of a
 > composite to the composite of the derived direct images is an isomorphism.
@@ -519,7 +519,7 @@ theorem higherDirectImagesComparison_isIso {X Y Z : RingedSpace.{u}}
 
 [Tag 01F6](https://stacks.math.columbia.edu/tag/01F6) in the Stacks Project.
 
-**`Stacks.RelativeLerayPlus.relativeLeraySpectralSequencePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLerayPlus/Basic.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeLerayPlus/Basic.lean#L189). The attribute's comment: “bounded below complexes”.
+**`Stacks.RelativeLerayPlus.relativeLeraySpectralSequencePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLerayPlus/Basic.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeLerayPlus/Basic.lean#L189). The attribute's comment: “bounded below complexes”.
 
 > **Relative Leray spectral sequence for bounded below complexes**, [Stacks, Tag 01F6].  For
 > each bounded below complex of `𝒪_X`-modules there is a bounded spectral sequence with second
@@ -534,7 +534,7 @@ noncomputable def relativeLeraySpectralSequencePlus :
     RelativeLeraySpectralSequencePlusData f g
 ```
 
-**`Stacks.Cohomology.RelativeLeray.exists_spectralSequence_relativeLeray`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L242). The attribute's comment: “the spectral sequence for a bounded below complex, not its functoriality”. References: EGA 0 (12.2.4); SGA 4 V (5.4), “ringed spaces”.
+**`Stacks.Cohomology.RelativeLeray.exists_spectralSequence_relativeLeray`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L242). The attribute's comment: “the spectral sequence for a bounded below complex, not its functoriality”. References: EGA 0 (12.2.4); SGA 4 V (5.4), “ringed spaces”.
 
 > **[Stacks, Tag 01F6] for a bounded below complex.** For morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` and an object `M` of `D⁺(X)` there is a filtered complex `K` of
@@ -597,7 +597,7 @@ theorem exists_spectralSequence_relativeLeray
             (imageSubobject (K.X.d (n - 1) n) ⊓ Fil p n ⊔ Fil (p + 1) n))
 ```
 
-**`Stacks.Cohomology.RelativeLeray.exists_spectralSequence_relativeLeray_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L306). The attribute's comment: “the spectral sequence for a module, not its functoriality”.
+**`Stacks.Cohomology.RelativeLeray.exists_spectralSequence_relativeLeray_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeLeraySpectralSequence/Basic.lean#L306). The attribute's comment: “the spectral sequence for a module, not its functoriality”.
 
 > **[Stacks, Tag 01F6], the relative Leray spectral sequence for a module.** For morphisms of
 > ringed spaces `f : X ⟶ Y` and `g : Y ⟶ Z` and an `𝒪_X`-module `ℱ` there is a spectral sequence
@@ -654,7 +654,7 @@ theorem exists_spectralSequence_relativeLeray_obj
             (imageSubobject (K.X.d (n - 1) n) ⊓ Fil p n ⊔ Fil (p + 1) n))
 ```
 
-**`Stacks.Cohomology.RelativeLeray.spectralSequencePlusPageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean#L115). The attribute's comment: “bounded below complexes, the second page”.
+**`Stacks.Cohomology.RelativeLeray.spectralSequencePlusPageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean#L115). The attribute's comment: “bounded below complexes, the second page”.
 
 > **The second page of the relative Leray spectral sequence of a bounded below complex** is
 > `R ᵖ g_*(H^q(R f_* -))`, naturally in the complex.
@@ -673,7 +673,7 @@ def spectralSequencePlusPageTwoIso (p : ℕ) (q : ℤ) :
           (modulePushforward g).rightDerived p
 ```
 
-**`Stacks.Cohomology.RelativeLeray.abutsTo_spectralSequencePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean#L139). The attribute's comment: “bounded below complexes, the convergence”. References: EGA 0 (12.2.4), “abutment, complexes”; SGA 4 V (5.4), “convergence, ringed sp”.
+**`Stacks.Cohomology.RelativeLeray.abutsTo_spectralSequencePlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/BoundedBelowComplexes.lean#L139). The attribute's comment: “bounded below complexes, the convergence”. References: EGA 0 (12.2.4), “abutment, complexes”; SGA 4 V (5.4), “convergence, ringed sp”.
 
 > **The relative Leray spectral sequence of a bounded below complex converges to the
 > cohomology of the derived direct image along the composite.** For every bounded below complex
@@ -693,7 +693,7 @@ theorem abutsTo_spectralSequencePlus (K : DerivedCategory.Plus (ModuleSheaves X)
         ((modulePushforward (f ≫ g)).rightDerivedFunctorPlus.obj K))
 ```
 
-**`Stacks.Cohomology.RelativeLeray.spectralSequencePageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean#L77). The attribute's comment: “sheaves of modules, the second page”.
+**`Stacks.Cohomology.RelativeLeray.spectralSequencePageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean#L77). The attribute's comment: “sheaves of modules, the second page”.
 
 > **The second page of the relative Leray spectral sequence of a sheaf of modules** is
 > `R ᵖ g_*(R^q f_* -)`, naturally in the module.
@@ -705,7 +705,7 @@ def spectralSequencePageTwoIso (p q : ℕ) :
       (modulePushforward f).rightDerived q ⋙ (modulePushforward g).rightDerived p
 ```
 
-**`Stacks.Cohomology.RelativeLeray.abutsTo_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean#L93). The attribute's comment: “sheaves of modules, the convergence”. References: EGA 0 (12.2.4), “abutment”; SGA 4 V (5.4), “convergence, ringed sp”; SGA 2 VIII (3.1), “partial”.
+**`Stacks.Cohomology.RelativeLeray.abutsTo_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeLeray/SheavesOfModules.lean#L93). The attribute's comment: “sheaves of modules, the convergence”. References: EGA 0 (12.2.4), “abutment”; SGA 4 V (5.4), “convergence, ringed sp”; SGA 2 VIII (3.1), “partial”.
 
 > **The relative Leray spectral sequence of a sheaf of modules converges to the higher direct
 > images along the composite.** For every `𝒪_X`-module `ℱ`, the spectral sequence has an infinity
@@ -725,4 +725,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.13, Tag 01EY](https://stacks.math.columbia.edu/tag/01EY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

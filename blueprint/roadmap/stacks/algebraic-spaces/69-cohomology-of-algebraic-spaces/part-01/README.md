@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 69.3 Higher direct images to 69.15 Limits of coherent modules
+# 69.3 Higher direct images to 69.18 A weak version of Chow's…
 
 - [69.3 Higher direct images](69-3-higher-direct-images.md)
 - [69.4 Finite morphisms](69-4-finite-morphisms.md)
@@ -17,3 +17,6 @@ navigation: transparent
 - [69.13 Coherent sheaves on Noetherian spaces](69-13-coherent-sheaves-on-noetherian-spaces.md)
 - [69.14 Devissage of coherent sheaves](69-14-devissage-of-coherent-sheaves.md)
 - [69.15 Limits of coherent modules](69-15-limits-of-coherent-modules.md)
+- [69.16 Vanishing of cohomology](69-16-vanishing-of-cohomology.md)
+- [69.17 Finite morphisms and affines](69-17-finite-morphisms-and-affines.md)
+- [69.18 A weak version of Chow's lemma](69-18-a-weak-version-of-chows-lemma.md)

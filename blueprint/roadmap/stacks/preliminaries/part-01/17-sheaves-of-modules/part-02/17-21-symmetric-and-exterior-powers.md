@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.21 Symmetric and exterior powers
 
-Section 17.21 of the Stacks Project, [Tag 01CF](https://stacks.math.columbia.edu/tag/01CF). 7 tags here are carried by 46 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 17.21 of the Stacks Project, [Tag 01CF](https://stacks.math.columbia.edu/tag/01CF). 7 tags here are carried by 46 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01CF, the section
 
 [Tag 01CF](https://stacks.math.columbia.edu/tag/01CF) in the Stacks Project.
 
-**`SheafOfModules.ringedSpaceAlgebras`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraBundleStalk.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraBundleStalk.lean#L424). The attribute's comment: “the construction of the three algebras themselves, for a sheaf of modules on a ringed space, which is the object the lemmas 01CG, 01CH, 01CJ, 01CK and 01CL of the section are statements about; the section has no finer tag for it”.
+**`SheafOfModules.ringedSpaceAlgebras`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraBundleStalk.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraBundleStalk.lean#L424). The attribute's comment: “the construction of the three algebras themselves, for a sheaf of modules on a ringed space, which is the object the lemmas 01CG, 01CH, 01CJ, 01CK and 01CL of the section are statements about; the section has no finer tag for it”.
 
 > **The tensor, exterior and symmetric algebras of a sheaf of modules on a ringed space**, as
 > the package Section 17.21 attaches to `F`: the three graded algebras, their three universal
@@ -34,7 +34,7 @@ noncomputable def ringedSpaceAlgebras (F : SheafOfModules.{w} (structureSheafRin
 
 [Tag 01CG](https://stacks.math.columbia.edu/tag/01CG) in the Stacks Project.
 
-**`SheafOfModules.exteriorPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean#L568). The attribute's comment: “exterior\_power\_sheafification: the exterior assertion, that `⋀ⁿ M` is the sheafification of `X ↦ ⋀ⁿ(M(X))`, with the comparison pinned on wedges of degree-one local sections. The symmetric assertion is `SheafOfModules.symmetricPower_isSheafification`; the tag states those two and nothing else, so that pair is its covering set.”.
+**`SheafOfModules.exteriorPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean#L568). The attribute's comment: “exterior\_power\_sheafification: the exterior assertion, that `⋀ⁿ M` is the sheafification of `X ↦ ⋀ⁿ(M(X))`, with the comparison pinned on wedges of degree-one local sections. The symmetric assertion is `SheafOfModules.symmetricPower_isSheafification`; the tag states those two and nothing else, so that pair is its covering set.”.
 
 > For a sheaf of modules `M` on a site with a sheaf of
 > commutative rings `O♯`, and an exterior algebra `A` of `M` in the sense of Section 17.21, the
@@ -71,7 +71,7 @@ theorem exteriorPower_isSheafification (n : ℕ) :
           IsIso ((sheafificationHomEquiv (𝟙 (toRingCat J Osharp).obj)).symm cmp)
 ```
 
-**`SheafOfModules.symmetricPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean#L411). The attribute's comment: “symmetric\_power\_sheafification”.
+**`SheafOfModules.symmetricPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean#L411). The attribute's comment: “symmetric\_power\_sheafification”.
 
 > **Tag 01CG.** For a sheaf of modules `M` on a site with a sheaf of commutative rings `O♯`, and
 > a symmetric algebra `A` of `M` in the sense of Section 17.21, the degree-`n` symmetric power
@@ -119,7 +119,7 @@ theorem symmetricPower_isSheafification (n : ℕ) :
 
 [Tag 01CH](https://stacks.math.columbia.edu/tag/01CH) in the Stacks Project.
 
-**`SheafOfModules.symmetricAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean#L536). The attribute's comment: “the ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections in every degree. The tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`; the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` for a sheaf is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, and the degreewise exterior assertion is `PresheafOfModules.extPowStalkEquivOfStalkIso`. With those the three ungraded isomorphisms the source asserts are all proved”. References: EGA II (1.7.4), “(S(E))\_s = S(E\_s)”.
+**`SheafOfModules.symmetricAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean#L536). The attribute's comment: “the ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections in every degree. The tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`; the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` for a sheaf is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, and the degreewise exterior assertion is `PresheafOfModules.extPowStalkEquivOfStalkIso`. With those the three ungraded isomorphisms the source asserts are all proved”. References: EGA II (1.7.4), “(S(E))\_s = S(E\_s)”.
 
 > **Tag 01CH, ungraded symmetric assertion.** For a sheaf of modules `M` on a topological space
 > with a sheaf of commutative rings `O♯`, a symmetric algebra `A` of `M` in the sense of Section
@@ -169,7 +169,7 @@ theorem symmetricAlgebra_stalk (x : ↥X) :
             (TopCat.Presheaf.germ M.val.presheaf U x hx (s i))
 ```
 
-**`PresheafOfModules.extPowStalkEquivOfStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerStalk.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerStalk.lean#L792). The attribute's comment: “the exterior assertion in each graded degree `n`: `(⋀ⁿ M)ₓ ≅ ⋀ⁿ(Mₓ)`, with the isomorphism pinned by `extPowStalkEquivOfStalkIso_germ_ιMulti` as the map carrying the germ of a wedge of local sections to the wedge of their germs. The symmetric assertion is `PresheafOfModules.symPowStalkEquivOfStalkIso`. The graded-to-ungraded passage is not proved here; it is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, which is the ungraded `⋀(M)ₓ ≅ ⋀(Mₓ)` that the source actually asserts.”. References: EGA 0 (4.1.5), “more general”.
+**`PresheafOfModules.extPowStalkEquivOfStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerStalk.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerStalk.lean#L792). The attribute's comment: “the exterior assertion in each graded degree `n`: `(⋀ⁿ M)ₓ ≅ ⋀ⁿ(Mₓ)`, with the isomorphism pinned by `extPowStalkEquivOfStalkIso_germ_ιMulti` as the map carrying the germ of a wedge of local sections to the wedge of their germs. The symmetric assertion is `PresheafOfModules.symPowStalkEquivOfStalkIso`. The graded-to-ungraded passage is not proved here; it is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, which is the ungraded `⋀(M)ₓ ≅ ⋀(Mₓ)` that the source actually asserts.”. References: EGA 0 (4.1.5), “more general”.
 
 > **The stalk of a sheafification of the sectionwise exterior powers.** If `φ` exhibits `Q` as
 > having the same stalks as the presheaf `U ↦ ⋀ⁿ_{R(U)}(F(U))` — which the sheafification unit
@@ -192,7 +192,7 @@ noncomputable def extPowStalkEquivOfStalkIso (n : ℕ)
       ⋀[↑(R.stalk x)]^n ↑(TopCat.Presheaf.stalk F.presheaf x)
 ```
 
-**`SheafOfModules.exteriorAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorStalkUngraded.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorStalkUngraded.lean#L346). The attribute's comment: “the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` — one of the three isomorphisms the source asserts — with the isomorphism pinned down by its values on germs of wedges of local sections in every degree. The ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)` is `SheafOfModules.symmetricAlgebra_stalk`. The ungraded tensor assertion `T(M)ₓ ≅ T(Mₓ)` is not covered here. The degreewise clauses, which are this library's convention and not assertions of the source, are `SheafOfModules.symmetricPower_stalk` and `PresheafOfModules.extPowStalkEquivOfStalkIso`.”.
+**`SheafOfModules.exteriorAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorStalkUngraded.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorStalkUngraded.lean#L346). The attribute's comment: “the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` — one of the three isomorphisms the source asserts — with the isomorphism pinned down by its values on germs of wedges of local sections in every degree. The ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)` is `SheafOfModules.symmetricAlgebra_stalk`. The ungraded tensor assertion `T(M)ₓ ≅ T(Mₓ)` is not covered here. The degreewise clauses, which are this library's convention and not assertions of the source, are `SheafOfModules.symmetricPower_stalk` and `PresheafOfModules.extPowStalkEquivOfStalkIso`.”.
 
 > **Tag 01CH, ungraded exterior assertion.** For a sheaf of modules `M` on a topological space
 > with a sheaf of commutative rings `O♯`, an exterior algebra `A` of `M` in the sense of Section
@@ -229,7 +229,7 @@ theorem exteriorAlgebra_stalk (x : ↥X) :
             fun i => TopCat.Presheaf.germ M.val.presheaf U x hx (s i)
 ```
 
-**`SheafOfModules.symmetricPower_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricStalkSheaf.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricStalkSheaf.lean#L431). The attribute's comment: “the symmetric assertion in each graded degree `n`: `(Symⁿ M)ₓ ≅ Symⁿ(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections. The ungraded `Sym(M)ₓ ≅ Sym(Mₓ)` is `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion in each degree is `PresheafOfModules.extPowStalkEquivOfStalkIso` and the ungraded `⋀(M)ₓ ≅ ⋀(Mₓ)` is `SheafOfModules.exteriorAlgebra_stalk`; the tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`. The three assertions the source makes are the ungraded ones; the degreewise statements, this one included, are this library's clause convention”. References: EGA II (1.7.4), “partial”.
+**`SheafOfModules.symmetricPower_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricStalkSheaf.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricStalkSheaf.lean#L431). The attribute's comment: “the symmetric assertion in each graded degree `n`: `(Symⁿ M)ₓ ≅ Symⁿ(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections. The ungraded `Sym(M)ₓ ≅ Sym(Mₓ)` is `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion in each degree is `PresheafOfModules.extPowStalkEquivOfStalkIso` and the ungraded `⋀(M)ₓ ≅ ⋀(Mₓ)` is `SheafOfModules.exteriorAlgebra_stalk`; the tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`. The three assertions the source makes are the ungraded ones; the degreewise statements, this one included, are this library's clause convention”. References: EGA II (1.7.4), “partial”.
 
 > **Tag 01CH, symmetric clause, in graded degree `n`.** For a sheaf of modules `M` on a
 > topological space with a sheaf of commutative rings `O♯`, a symmetric algebra `A` of `M` in the
@@ -282,7 +282,7 @@ theorem symmetricPower_stalk (n : ℕ) (x : ↥X) :
             (TopCat.Presheaf.germ M.val.presheaf U x hx (s i))
 ```
 
-**`SheafOfModules.tensorPower_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean#L986). The attribute's comment: “the tensor assertion in each graded degree `n`: `(Tⁿ M)ₓ ≅ Tⁿ(Mₓ)` for a sheaf of modules, with the isomorphism pinned down by its values on germs of ordered tensors of local sections. The ungraded `T(M)ₓ ≅ T(Mₓ)` is `SheafOfModules.tensorAlgebra_stalk`; the symmetric assertions are `SheafOfModules.symmetricPower_stalk` and `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion is not carried here”.
+**`SheafOfModules.tensorPower_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean, line 986](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean#L986). The attribute's comment: “the tensor assertion in each graded degree `n`: `(Tⁿ M)ₓ ≅ Tⁿ(Mₓ)` for a sheaf of modules, with the isomorphism pinned down by its values on germs of ordered tensors of local sections. The ungraded `T(M)ₓ ≅ T(Mₓ)` is `SheafOfModules.tensorAlgebra_stalk`; the symmetric assertions are `SheafOfModules.symmetricPower_stalk` and `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion is not carried here”.
 
 > For a sheaf of modules `M` on a topological space with a sheaf of commutative rings `O♯`, a
 > tensor algebra `A` of `M` in the sense of Section 17.21, and a point `x`, there is an isomorphism
@@ -311,7 +311,7 @@ theorem tensorPower_stalk (n : ℕ) (x : ↥X) :
             fun i => TopCat.Presheaf.germ M.val.presheaf U x hx (s i)
 ```
 
-**`SheafOfModules.tensorAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean, line 1065](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean#L1065). The attribute's comment: “the ungraded tensor assertion `T(M)ₓ ≅ T(Mₓ)`, with the isomorphism pinned down by its values on germs of ordered tensors of local sections in every degree. The degreewise `(Tⁿ M)ₓ ≅ Tⁿ(Mₓ)` is `SheafOfModules.tensorPower_stalk`; the symmetric assertions are `SheafOfModules.symmetricPower_stalk` and `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion is not carried here”.
+**`SheafOfModules.tensorAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean, line 1065](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerStalk.lean#L1065). The attribute's comment: “the ungraded tensor assertion `T(M)ₓ ≅ T(Mₓ)`, with the isomorphism pinned down by its values on germs of ordered tensors of local sections in every degree. The degreewise `(Tⁿ M)ₓ ≅ Tⁿ(Mₓ)` is `SheafOfModules.tensorPower_stalk`; the symmetric assertions are `SheafOfModules.symmetricPower_stalk` and `SheafOfModules.symmetricAlgebra_stalk`; the exterior assertion is not carried here”.
 
 > For a sheaf of modules `M` on a topological space with a sheaf of commutative rings `O♯`, a
 > tensor algebra `A` of `M` in the sense of Section 17.21, and a point `x`, there is an isomorphism
@@ -346,7 +346,7 @@ theorem tensorAlgebra_stalk (x : ↥X) :
 
 [Tag 01CI](https://stacks.math.columbia.edu/tag/01CI) in the Stacks Project.
 
-**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 877](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L877). The attribute's comment: “pullback\_exterior\_algebra: the EXTERIOR algebra clause only; symmetric NOT proved”.
+**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 877](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L877). The attribute's comment: “pullback\_exterior\_algebra: the EXTERIOR algebra clause only; symmetric NOT proved”.
 
 > **Stacks 01CI for the exterior algebra of a sheaf of modules.** For a morphism of ringed
 > spaces `f : X ⟶ Y` and a sheaf of `𝒪_Y`-modules `M`, the pullback of the exterior algebra of `M`
@@ -364,7 +364,7 @@ noncomputable def exteriorAlgebraPullbackIso (hA : IsExteriorAlgebra A ι)
     (hB : IsExteriorAlgebra B κ) : ExteriorAlgebraPullbackIso f A ι B κ
 ```
 
-**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 892](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L892). The attribute's comment: “pullback\_exterior\_algebra: canonicality of the EXTERIOR algebra comparison only”.
+**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 892](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L892). The attribute's comment: “pullback\_exterior\_algebra: canonicality of the EXTERIOR algebra comparison only”.
 
 > **The comparison of Stacks 01CI is unique.** Compatibility with multiplication, with the
 > unit and with the degree-one generators on the pullback-unit sections determines the comparison
@@ -377,7 +377,7 @@ theorem exteriorAlgebraPullbackIso_unique (hA : IsExteriorAlgebra A ι)
     e = exteriorAlgebraPullbackIso f A ι B κ hA hB
 ```
 
-**`Stacks.PullbackAlgebra.pullbackTensorPieceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean#L331). The attribute's comment: “the tensor algebra only. The exterior and symmetric algebras are NOT proved here; see the implementation notes for the two missing inputs.”.
+**`Stacks.PullbackAlgebra.pullbackTensorPieceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean#L331). The attribute's comment: “the tensor algebra only. The exterior and symmetric algebras are NOT proved here; see the implementation notes for the two missing inputs.”.
 
 > The pullback of the degree-`n` piece of the tensor algebra of `F` is the degree-`n` piece of
 > the tensor algebra of `f^*F`.
@@ -387,7 +387,7 @@ noncomputable def pullbackTensorPieceIso (n : ℕ) :
     (pullbackFunctor f).obj (S.tensor.piece (n : ℤ)) ≅ T.tensor.piece (n : ℤ)
 ```
 
-**`Stacks.PullbackAlgebra.pullbackTensorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean#L393). The attribute's comment: “the tensor algebra only, on the underlying direct-sum sheaf. The exterior and symmetric algebras are NOT proved here.”.
+**`Stacks.PullbackAlgebra.pullbackTensorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PullbackAlgebraIso.lean#L393). The attribute's comment: “the tensor algebra only, on the underlying direct-sum sheaf. The exterior and symmetric algebras are NOT proved here.”.
 
 > The pullback of the underlying direct-sum sheaf of the tensor algebra of `F` is the
 > underlying direct-sum sheaf of the tensor algebra of `f^*F`.
@@ -397,7 +397,7 @@ noncomputable def pullbackTensorSheafIso :
     (pullbackFunctor f).obj S.tensorAlgebraSheaf ≅ T.tensorAlgebraSheaf
 ```
 
-**`Stacks.RingedSpace.pullbackSymmetricPieceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean#L94). The attribute's comment: “symmetric algebra”. References: EGA II (1.7.5), “partial”.
+**`Stacks.RingedSpace.pullbackSymmetricPieceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean#L94). The attribute's comment: “symmetric algebra”. References: EGA II (1.7.5), “partial”.
 
 > **Stacks 01CI for the symmetric algebra.** For a morphism of ringed spaces `f : X ⟶ Y` and
 > a sheaf of `𝒪_Y`-modules `F`, the pullback of the degree-`n` symmetric power of `F` is the
@@ -414,7 +414,7 @@ noncomputable def pullbackSymmetricPieceIso (hA : IsSymmetricAlgebra A ι)
     (pullbackFunctor f).obj (A.piece n) ≅ B.piece n
 ```
 
-**`Stacks.RingedSpace.pullbackSymmetricPieceIsoOfRingedSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean#L137). The attribute's comment: “symmetric algebra, at the constructed symmetric algebras”. References: EGA II (1.7.5), “partial”.
+**`Stacks.RingedSpace.pullbackSymmetricPieceIsoOfRingedSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SymmetricPullback/Iso.lean#L137). The attribute's comment: “symmetric algebra, at the constructed symmetric algebras”. References: EGA II (1.7.5), “partial”.
 
 > **Stacks 01CI for the symmetric algebra, at the constructed symmetric algebras.** For a
 > morphism of ringed spaces `f : X ⟶ Y` and a sheaf of `𝒪_Y`-modules `F`, the pullback of the
@@ -433,7 +433,7 @@ noncomputable def pullbackSymmetricPieceIsoOfRingedSpace
 
 [Tag 01CJ](https://stacks.math.columbia.edu/tag/01CJ) in the Stacks Project.
 
-**`SheafOfModules.ExtPresentation.epi_extDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean#L334). The attribute's comment: “exterior case, surjectivity clause: the second map of the sequence is an epimorphism, in every degree and with no exactness hypothesis. Exactness at the middle term is covered, by `SheafOfModules.ExtPresentation.exteriorPresentation_exact` below, which carries that clause and states the sequence of the source. The symmetric counterparts are `SheafOfModules.SymPresentation.epi_symDesc_app` and `SheafOfModules.SymPresentation.symmetricPresentation_exact`.”.
+**`SheafOfModules.ExtPresentation.epi_extDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean#L334). The attribute's comment: “exterior case, surjectivity clause: the second map of the sequence is an epimorphism, in every degree and with no exactness hypothesis. Exactness at the middle term is covered, by `SheafOfModules.ExtPresentation.exteriorPresentation_exact` below, which carries that clause and states the sequence of the source. The symmetric counterparts are `SheafOfModules.SymPresentation.epi_symDesc_app` and `SheafOfModules.SymPresentation.symmetricPresentation_exact`.”.
 
 > **The surjectivity clause of Stacks Tag 01CJ for exterior powers.** If `p : M₁ ⟶ M` is an
 > epimorphism of sheaves of modules on a space, `A'` is an exterior algebra of `M₁` and `B'` an
@@ -447,7 +447,7 @@ noncomputable def pullbackSymmetricPieceIsoOfRingedSpace
 theorem epi_extDesc_app [Epi p] (n : ℕ) : Epi ((extDesc ι κ hA' hB' p).app (n : ℤ))
 ```
 
-**`SheafOfModules.ExtPresentation.exteriorPresentation_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean#L600). The attribute's comment: “exterior case, in full: the sequence `M₂ ⊗ ⋀^k(M₁) ⟶ ⋀^{k+1}(M₁) ⟶ ⋀^{k+1}(M) ⟶ 0` is exact at the middle term and its second map is an epimorphism. The surjectivity clause alone, in every degree and with no exactness hypothesis, is `SheafOfModules.ExtPresentation.epi_extDesc_app`. With the symmetric pair `SheafOfModules.SymPresentation.epi_symDesc_app` and `SheafOfModules.SymPresentation.symmetricPresentation_exact` this completes the tag: the source states the two clauses for the symmetric and the exterior powers and nothing else.”.
+**`SheafOfModules.ExtPresentation.exteriorPresentation_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPresentationExact.lean#L600). The attribute's comment: “exterior case, in full: the sequence `M₂ ⊗ ⋀^k(M₁) ⟶ ⋀^{k+1}(M₁) ⟶ ⋀^{k+1}(M) ⟶ 0` is exact at the middle term and its second map is an epimorphism. The surjectivity clause alone, in every degree and with no exactness hypothesis, is `SheafOfModules.ExtPresentation.epi_extDesc_app`. With the symmetric pair `SheafOfModules.SymPresentation.epi_symDesc_app` and `SheafOfModules.SymPresentation.symmetricPresentation_exact` this completes the tag: the source states the two clauses for the symmetric and the exterior powers and nothing else.”.
 
 > **Stacks Tag 01CJ for exterior powers.** Let `M₂ --q--> M₁ --p--> M ⟶ 0` be a presentation of
 > a sheaf of modules on a topological space with a sheaf of commutative rings — `p` an epimorphism
@@ -465,7 +465,7 @@ theorem exteriorPresentation_exact (hS : (ShortComplex.mk q p hqp).Exact) [Epi p
       Epi (extComplex ι κ hA' hB' p q hqp k).g
 ```
 
-**`SheafOfModules.SymPresentation.epi_symDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerPresentation.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerPresentation.lean#L380). The attribute's comment: “symmetric case, surjectivity clause: the second map of the sequence is an epimorphism, in every degree and with no exactness hypothesis. Exactness at the middle term is covered, by `SheafOfModules.SymPresentation.symmetricPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.SymmetricPresentationExact`, which carries that clause and states the sequence of the source. The exterior case is covered too, by `SheafOfModules.ExtPresentation.epi_extDesc_app` and `SheafOfModules.ExtPresentation.exteriorPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorPresentationExact`; those four declarations are the tag's covering set.”.
+**`SheafOfModules.SymPresentation.epi_symDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerPresentation.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerPresentation.lean#L380). The attribute's comment: “symmetric case, surjectivity clause: the second map of the sequence is an epimorphism, in every degree and with no exactness hypothesis. Exactness at the middle term is covered, by `SheafOfModules.SymPresentation.symmetricPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.SymmetricPresentationExact`, which carries that clause and states the sequence of the source. The exterior case is covered too, by `SheafOfModules.ExtPresentation.epi_extDesc_app` and `SheafOfModules.ExtPresentation.exteriorPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorPresentationExact`; those four declarations are the tag's covering set.”.
 
 > **The surjectivity clause of Stacks Tag 01CJ for symmetric powers.** If `p : M₁ ⟶ M` is an
 > epimorphism of sheaves of modules on a space, `A'` is a symmetric algebra of `M₁` and `B'` a
@@ -479,7 +479,7 @@ theorem exteriorPresentation_exact (hS : (ShortComplex.mk q p hqp).Exact) [Epi p
 theorem epi_symDesc_app [Epi p] (n : ℕ) : Epi ((symDesc ι κ hA' hB' p).app (n : ℤ))
 ```
 
-**`SheafOfModules.SymPresentation.symmetricPresentation_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPresentationExact.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPresentationExact.lean#L528). The attribute's comment: “symmetric case, in full: the sequence `M₂ ⊗ Sym^k(M₁) ⟶ Sym^{k+1}(M₁) ⟶ Sym^{k+1}(M) ⟶ 0` is exact at the middle term and its second map is an epimorphism. The surjectivity clause alone, in every degree and with no exactness hypothesis, is `SheafOfModules.SymPresentation.epi_symDesc_app`. The exterior case is covered too, by `SheafOfModules.ExtPresentation.epi_extDesc_app` and `SheafOfModules.ExtPresentation.exteriorPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorPresentationExact`; those four declarations are the tag's covering set”. References: EGA 0 (19.5.1), “more general”.
+**`SheafOfModules.SymPresentation.symmetricPresentation_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPresentationExact.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPresentationExact.lean#L528). The attribute's comment: “symmetric case, in full: the sequence `M₂ ⊗ Sym^k(M₁) ⟶ Sym^{k+1}(M₁) ⟶ Sym^{k+1}(M) ⟶ 0` is exact at the middle term and its second map is an epimorphism. The surjectivity clause alone, in every degree and with no exactness hypothesis, is `SheafOfModules.SymPresentation.epi_symDesc_app`. The exterior case is covered too, by `SheafOfModules.ExtPresentation.epi_extDesc_app` and `SheafOfModules.ExtPresentation.exteriorPresentation_exact` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorPresentationExact`; those four declarations are the tag's covering set”. References: EGA 0 (19.5.1), “more general”.
 
 > **Stacks Tag 01CJ for symmetric powers.** Let `M₂ --q--> M₁ --p--> M ⟶ 0` be a presentation of
 > a sheaf of modules on a topological space with a sheaf of commutative rings — `p` an epimorphism
@@ -500,7 +500,7 @@ theorem symmetricPresentation_exact (hS : (ShortComplex.mk q p hqp).Exact) [Epi 
     (symComplex ι κ hA' hB' q p hqp k).Exact ∧ Epi (symComplex ι κ hA' hB' q p hqp k).g
 ```
 
-**`SheafOfModules.exact_and_epi_symmetricPresentationShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricSituation/PowerExact.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SymmetricSituation/PowerExact.lean#L791). The attribute's comment: “symmetric powers”.
+**`SheafOfModules.exact_and_epi_symmetricPresentationShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricSituation/PowerExact.lean, line 792](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SymmetricSituation/PowerExact.lean#L792). The attribute's comment: “symmetric powers”.
 
 > **Stacks Tag 01CJ, symmetric powers.** Let `M₂ --q--> M₁ --p--> M --> 0` be an exact
 > sequence of sheaves of modules on a ringed site, and let `n = 1 + k` with `k ≥ 0`. Then
@@ -527,7 +527,7 @@ theorem exact_and_epi_symmetricPresentationShortComplex (q : M₂ ⟶ M₁) (p :
 
 [Tag 01CK](https://stacks.math.columbia.edu/tag/01CK) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isCoherent_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerCoherent.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerCoherent.lean#L297). The attribute's comment: “exterior powers of a coherent module, in positive degree”.
+**`Stacks.SheafOfModules.isCoherent_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerCoherent.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerCoherent.lean#L297). The attribute's comment: “exterior powers of a coherent module, in positive degree”.
 
 > **Each exterior power of positive degree of a coherent sheaf of modules on a ringed space is
 > coherent.** This is clause (4) of [Stacks, Tag 01CK] for the exterior powers. The kernel `K` of
@@ -542,7 +542,7 @@ theorem isCoherent_exteriorPower [_root_.SheafOfModules.IsCoherent F]
     _root_.SheafOfModules.IsCoherent (A.exteriorPower n)
 ```
 
-**`Stacks.SheafOfModules.isFinitePresentation_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerFiniteType.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerFiniteType.lean#L311). The attribute's comment: “exterior powers of a module of finite presentation”.
+**`Stacks.SheafOfModules.isFinitePresentation_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerFiniteType.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerFiniteType.lean#L311). The attribute's comment: “exterior powers of a module of finite presentation”.
 
 > **Each exterior power of a sheaf of modules of finite presentation on a ringed space is of
 > finite presentation.** The covering family is the one that presents `F` finitely; no degree needs
@@ -556,7 +556,7 @@ theorem isFinitePresentation_exteriorPower [F.IsFinitePresentation] (n : ℕ) :
     (A.exteriorPower n).IsFinitePresentation
 ```
 
-**`Stacks.SheafOfModules.isLocallyFree_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L179). The attribute's comment: “symmetric powers of a locally free module”.
+**`Stacks.SheafOfModules.isLocallyFree_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L179). The attribute's comment: “symmetric powers of a locally free module”.
 
 > **Each symmetric power of a locally free sheaf of modules is locally free.** This is clause
 > (6) of [Stacks, Tag 01CK] for the symmetric powers: a covering trivialising `F` with index types
@@ -568,7 +568,7 @@ theorem isLocallyFree_symmetricPower
     [hF : F.IsLocallyFree] : (A.symmetricPower n).IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.isLocallyFree_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L190). The attribute's comment: “exterior powers of a locally free module”. References: SGA 6 X (6.1), “special case”.
+**`Stacks.SheafOfModules.isLocallyFree_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L190). The attribute's comment: “exterior powers of a locally free module”. References: SGA 6 X (6.1), “special case”.
 
 > **Each exterior power of a locally free sheaf of modules is locally free.** This is clause
 > (6) of [Stacks, Tag 01CK] for the exterior powers: a covering trivialising `F` with index types
@@ -580,7 +580,7 @@ theorem isLocallyFree_exteriorPower
     [hF : F.IsLocallyFree] : (A.exteriorPower n).IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.isLocallyFree_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L268). The attribute's comment: “tensor powers of a locally free module”.
+**`Stacks.SheafOfModules.isLocallyFree_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreePowers.lean#L268). The attribute's comment: “tensor powers of a locally free module”.
 
 > **Each tensor power of a locally free sheaf of modules is locally free.** This is clause (6)
 > of [Stacks, Tag 01CK] for the tensor powers: a covering trivialising `F` with index types `γ i`
@@ -592,7 +592,7 @@ theorem isLocallyFree_tensorPower
     [hF : F.IsLocallyFree] : (A.tensor.piece (n : ℤ)).IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.nonempty_localGeneratorsData_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L329). The attribute's comment: “symmetric powers of a module locally generated by sections”.
+**`Stacks.SheafOfModules.nonempty_localGeneratorsData_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L329). The attribute's comment: “symmetric powers of a module locally generated by sections”.
 
 > **Each symmetric power of a sheaf of modules locally generated by sections on a ringed space
 > is locally generated by sections.** This is clause (1) of [Stacks, Tag 01CK] for the symmetric
@@ -604,7 +604,7 @@ theorem nonempty_localGeneratorsData_symmetricPower
     Nonempty ((A.symmetricPower n).LocalGeneratorsData.{u, u, u, u})
 ```
 
-**`Stacks.SheafOfModules.nonempty_localGeneratorsData_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L338). The attribute's comment: “exterior powers of a module locally generated by sections”.
+**`Stacks.SheafOfModules.nonempty_localGeneratorsData_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L338). The attribute's comment: “exterior powers of a module locally generated by sections”.
 
 > **Each exterior power of a sheaf of modules locally generated by sections on a ringed space is
 > locally generated by sections.** This is clause (1) of [Stacks, Tag 01CK] for the exterior
@@ -616,7 +616,7 @@ theorem nonempty_localGeneratorsData_exteriorPower
     Nonempty ((A.exteriorPower n).LocalGeneratorsData.{u, u, u, u})
 ```
 
-**`Stacks.SheafOfModules.isFiniteType_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L348). The attribute's comment: “symmetric powers of a module of finite type”. References: EGA II (1.7.7), “more general”.
+**`Stacks.SheafOfModules.isFiniteType_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L348). The attribute's comment: “symmetric powers of a module of finite type”. References: EGA II (1.7.7), “more general”.
 
 > **Each symmetric power of a sheaf of modules of finite type on a ringed space is of finite
 > type.** This is clause (2) of [Stacks, Tag 01CK] for the symmetric powers: the covering is the one
@@ -629,7 +629,7 @@ theorem isFiniteType_symmetricPower
     _root_.SheafOfModules.IsFiniteType.{u, u, u} (A.symmetricPower n)
 ```
 
-**`Stacks.SheafOfModules.isFiniteType_exteriorPower'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L361). The attribute's comment: “exterior powers of a module of finite type”.
+**`Stacks.SheafOfModules.isFiniteType_exteriorPower'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PowerLocalGenerators.lean#L361). The attribute's comment: “exterior powers of a module of finite type”.
 
 > **Each exterior power of a sheaf of modules of finite type on a ringed space is of finite
 > type.** This is clause (2) of [Stacks, Tag 01CK] for the exterior powers. The primed name
@@ -642,7 +642,7 @@ theorem isFiniteType_exteriorPower'
     _root_.SheafOfModules.IsFiniteType.{u, u, u} (A.exteriorPower n)
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L763). The attribute's comment: “symmetric powers of a quasi-coherent module”.
+**`Stacks.SheafOfModules.isQuasicoherent_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L763). The attribute's comment: “symmetric powers of a quasi-coherent module”.
 
 > **Each symmetric power of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.** A presentation of the module over an open presents every symmetric power of it
@@ -653,7 +653,7 @@ theorem isFiniteType_exteriorPower'
 theorem isQuasicoherent_symmetricPower (n : ℕ) : (A.symmetricPower n).IsQuasicoherent
 ```
 
-**`Stacks.SheafOfModules.isCoherent_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerCoherent.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerCoherent.lean#L304). The attribute's comment: “symmetric powers of a coherent module, in positive degree”.
+**`Stacks.SheafOfModules.isCoherent_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerCoherent.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerCoherent.lean#L305). The attribute's comment: “symmetric powers of a coherent module, in positive degree”.
 
 > **Each symmetric power of positive degree of a coherent sheaf of modules on a ringed space is
 > coherent.** This is clause (4) of [Stacks, Tag 01CK] for the symmetric powers. The sequence used
@@ -668,7 +668,7 @@ theorem isCoherent_symmetricPower [_root_.SheafOfModules.IsCoherent F]
     _root_.SheafOfModules.IsCoherent (A.symmetricPower n)
 ```
 
-**`Stacks.SheafOfModules.isFinitePresentation_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerFiniteType.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerFiniteType.lean#L169). The attribute's comment: “symmetric powers of a module of finite presentation”. References: EGA II (1.7.7), “special case”.
+**`Stacks.SheafOfModules.isFinitePresentation_symmetricPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerFiniteType.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerFiniteType.lean#L169). The attribute's comment: “symmetric powers of a module of finite presentation”. References: EGA II (1.7.7), “special case”.
 
 > **Each symmetric power of a sheaf of modules of finite presentation on a ringed space is of
 > finite presentation.** This is clause (3) of [Stacks, Tag 01CK] for the symmetric powers. The
@@ -681,7 +681,7 @@ theorem isFinitePresentation_symmetricPower [F.IsFinitePresentation] (n : ℕ) :
     (A.symmetricPower n).IsFinitePresentation
 ```
 
-**`Stacks.SheafOfModules.isCoherent_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerCoherent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerCoherent.lean#L98). The attribute's comment: “tensor powers of a coherent module, in positive degree”.
+**`Stacks.SheafOfModules.isCoherent_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerCoherent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerCoherent.lean#L98). The attribute's comment: “tensor powers of a coherent module, in positive degree”.
 
 > **Each tensor power of positive degree of a coherent sheaf of modules on a ringed space is
 > coherent.** This is clause (4) of [Stacks, Tag 01CK] for the tensor powers.
@@ -693,7 +693,7 @@ theorem isCoherent_tensorPower [_root_.SheafOfModules.IsCoherent F]
     _root_.SheafOfModules.IsCoherent (A.tensor.piece (n : ℤ))
 ```
 
-**`Stacks.SheafOfModules.isFinitePresentation_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerFiniteType.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerFiniteType.lean#L198). The attribute's comment: “tensor powers of a module of finite presentation”.
+**`Stacks.SheafOfModules.isFinitePresentation_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerFiniteType.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerFiniteType.lean#L198). The attribute's comment: “tensor powers of a module of finite presentation”.
 
 > **Each tensor power of a sheaf of modules of finite presentation on a ringed space is of
 > finite presentation.** This is clause (3) of [Stacks, Tag 01CK] for the tensor powers. The
@@ -706,7 +706,7 @@ theorem isFinitePresentation_tensorPower [F.IsFinitePresentation] (n : ℕ) :
     (A.tensor.piece (n : ℤ)).IsFinitePresentation
 ```
 
-**`Stacks.SheafOfModules.nonempty_localGeneratorsData_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean#L165). The attribute's comment: “tensor powers of a module locally generated by sections”.
+**`Stacks.SheafOfModules.nonempty_localGeneratorsData_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean#L165). The attribute's comment: “tensor powers of a module locally generated by sections”.
 
 > Each tensor power of a sheaf of modules locally generated by sections on a ringed space is
 > locally generated by sections, on the same covering.
@@ -717,7 +717,7 @@ theorem nonempty_localGeneratorsData_tensorPower
     Nonempty ((A.tensor.piece (n : ℤ)).LocalGeneratorsData.{t, t, t, t})
 ```
 
-**`Stacks.SheafOfModules.isFiniteType_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean#L173). The attribute's comment: “tensor powers of a module of finite type”.
+**`Stacks.SheafOfModules.isFiniteType_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerLocalGenerators.lean#L173). The attribute's comment: “tensor powers of a module of finite type”.
 
 > Each tensor power of a sheaf of modules of finite type on a ringed space is of finite
 > type.
@@ -727,7 +727,7 @@ theorem isFiniteType_tensorPower [hF : _root_.SheafOfModules.IsFiniteType.{t, t,
     _root_.SheafOfModules.IsFiniteType.{t, t, t} (A.tensor.piece (n : ℤ))
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean#L548). The attribute's comment: “tensor powers of a quasi-coherent module”.
+**`Stacks.SheafOfModules.isQuasicoherent_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean#L548). The attribute's comment: “tensor powers of a quasi-coherent module”.
 
 > **Each tensor power of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.** This is clause (5) of Stacks Tag 01CK for the tensor powers. A presentation of
@@ -743,7 +743,7 @@ theorem isQuasicoherent_tensorPower {X : AlgebraicGeometry.RingedSpace.{t, t}}
     (A.tensor.piece (n : ℤ)).IsQuasicoherent
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ConstantRank.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ConstantRank.lean#L123). The attribute's comment: “exterior powers of a quasi-coherent module”.
+**`Stacks.SheafOfModules.isQuasicoherent_exteriorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ConstantRank.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ConstantRank.lean#L123). The attribute's comment: “exterior powers of a quasi-coherent module”.
 
 > **Each exterior power of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.** A presentation of the module over an open presents every exterior power of it
@@ -758,7 +758,7 @@ theorem isQuasicoherent_exteriorPower {X : RingedSpace.{u, u}}
     (A.exteriorPower n).IsQuasicoherent
 ```
 
-**`Stacks.SymGraded.isQuasicoherentPieces_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymAlgebraQcohPieces/Basic.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SymAlgebraQcohPieces/Basic.lean#L408). The attribute's comment: “symmetric powers of a quasi-coherent module, at the encoding Stacks.SymGraded.schemeSymAlgebra”.
+**`Stacks.SymGraded.isQuasicoherentPieces_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymAlgebraQcohPieces/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SymAlgebraQcohPieces/Basic.lean#L407). The attribute's comment: “symmetric powers of a quasi-coherent module, at the encoding Stacks.SymGraded.schemeSymAlgebra”.
 
 > **Every homogeneous piece of `Sym(E)` is quasi-coherent, for `E` a quasi-coherent module on
 > an arbitrary scheme.** This discharges the hypothesis
@@ -770,7 +770,7 @@ theorem isQuasicoherentPieces_of_isQuasicoherent {X : Scheme.{u}} (E : X.Modules
     [E.IsQuasicoherent] : IsQuasicoherentPieces E
 ```
 
-**`Stacks.SliceAlgebra.isQuasicoherent_sheafifiedSymmetricPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricFree/Presentation.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SymmetricFree/Presentation.lean#L157). The attribute's comment: “symmetric powers of a quasi-coherent module”.
+**`Stacks.SliceAlgebra.isQuasicoherent_sheafifiedSymmetricPiece`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SymmetricFree/Presentation.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SymmetricFree/Presentation.lean#L157). The attribute's comment: “symmetric powers of a quasi-coherent module”.
 
 > **Symmetric powers of a quasi-coherent module are quasi-coherent.** For a quasi-coherent sheaf
 > of modules `F` on a scheme `X` and `n : ℕ`, the degree-`n` piece of the symmetric algebra of `F` is
@@ -787,7 +787,7 @@ theorem SliceAlgebra.isQuasicoherent_sheafifiedSymmetricPiece (X : Scheme.{u})
 
 [Tag 01CL](https://stacks.math.columbia.edu/tag/01CL) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isLocallyFree_symmetricAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L147). The attribute's comment: “the symmetric algebra of a locally free module sheaf is locally free”. References: SGA 3 XXII (5.3.0), “partial”.
+**`Stacks.SheafOfModules.isLocallyFree_symmetricAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L147). The attribute's comment: “the symmetric algebra of a locally free module sheaf is locally free”. References: SGA 3 XXII (5.3.0), “partial”.
 
 > **The symmetric algebra of a locally free sheaf of modules is locally free.** The covering
 > family is the one that trivialises `F`; no degree needs a smaller object of the site, because
@@ -799,7 +799,7 @@ theorem isLocallyFree_symmetricAlgebraSheaf_of_isLocallyFree :
     A.symmetricAlgebraSheaf.IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.isLocallyFree_exteriorAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L162). The attribute's comment: “the exterior algebra of a locally free module sheaf is locally free”.
+**`Stacks.SheafOfModules.isLocallyFree_exteriorAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L162). The attribute's comment: “the exterior algebra of a locally free module sheaf is locally free”.
 
 > **The exterior algebra of a locally free sheaf of modules is locally free.** The covering
 > family is the one that trivialises `F`, and
@@ -811,7 +811,7 @@ theorem isLocallyFree_exteriorAlgebraSheaf_of_isLocallyFree :
     A.exteriorAlgebraSheaf.IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.isLocallyFree_tensorAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L178). The attribute's comment: “the tensor algebra of a locally free module sheaf is locally free”.
+**`Stacks.SheafOfModules.isLocallyFree_tensorAlgebraSheaf_of_isLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeAlgebras.lean#L178). The attribute's comment: “the tensor algebra of a locally free module sheaf is locally free”.
 
 > **The tensor algebra of a locally free sheaf of modules is locally free.** The covering
 > family is the one that trivialises `F`, and
@@ -823,7 +823,7 @@ theorem isLocallyFree_tensorAlgebraSheaf_of_isLocallyFree :
     A.tensorAlgebraSheaf.IsLocallyFree
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_symmetricAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 779](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L779). The attribute's comment: “the symmetric algebra of a quasi-coherent module sheaf is quasi-coherent”.
+**`Stacks.SheafOfModules.isQuasicoherent_symmetricAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L779). The attribute's comment: “the symmetric algebra of a quasi-coherent module sheaf is quasi-coherent”.
 
 > **The symmetric algebra of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.** The covering family is the one that presents `F`; no degree needs a smaller
@@ -836,7 +836,7 @@ theorem isQuasicoherent_symmetricAlgebraSheaf_of_isQuasicoherent :
     A.symmetricAlgebraSheaf.IsQuasicoherent
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_exteriorAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 788](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L788). The attribute's comment: “the exterior algebra of a quasi-coherent module sheaf is quasi-coherent”.
+**`Stacks.SheafOfModules.isQuasicoherent_exteriorAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean, line 788](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/QuasicoherentAlgebras.lean#L788). The attribute's comment: “the exterior algebra of a quasi-coherent module sheaf is quasi-coherent”.
 
 > **The exterior algebra of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.**
@@ -846,7 +846,7 @@ theorem isQuasicoherent_exteriorAlgebraSheaf_of_isQuasicoherent :
     A.exteriorAlgebraSheaf.IsQuasicoherent
 ```
 
-**`Stacks.SheafOfModules.isQuasicoherent_tensorAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean#L569). The attribute's comment: “the tensor algebra of a quasi-coherent module sheaf is quasi-coherent”.
+**`Stacks.SheafOfModules.isQuasicoherent_tensorAlgebraSheaf_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean#L569). The attribute's comment: “the tensor algebra of a quasi-coherent module sheaf is quasi-coherent”.
 
 > **The tensor algebra of a quasi-coherent sheaf of modules on a ringed space is
 > quasi-coherent.** This is the tensor assertion of Stacks Tag 01CL. The covering family is the one
@@ -870,4 +870,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.21, Tag 01CF](https://stacks.math.columbia.edu/tag/01CF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

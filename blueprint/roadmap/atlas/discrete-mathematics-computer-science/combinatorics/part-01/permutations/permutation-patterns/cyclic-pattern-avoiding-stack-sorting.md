@@ -7,7 +7,7 @@ statement: formalized
 
 # Cyclic-pattern-avoiding stack sorting
 
-31 results, 21 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html).
+31 results, 21 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html).
 
 ## Sequences with the same relative order
 
@@ -19,7 +19,7 @@ $1 \le i, j \le m$, $s_i < s_j$ holds if and only if $p_i < p_j$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.SameRelativeOrder`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#same-relative-order).
+Formalized by `MetaMathlibExt.SameRelativeOrder`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#same-relative-order).
 
 ## Classical pattern containment in a sequence
 
@@ -32,7 +32,7 @@ $u_a < u_b$ if and only if $p_a < p_b$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.ContainsPatternSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#contains-pattern-seq).
+Formalized by `MetaMathlibExt.ContainsPatternSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#contains-pattern-seq).
 
 ## Consecutive pattern containment
 
@@ -45,7 +45,7 @@ $a, b \in \{1, \dots, k\}$, $w_{i+a} < w_{i+b}$ if and only if $p_a < p_b$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1 (after Defant and Zheng).
 
-Formalized by `MetaMathlibExt.ContainsConsecutivePatternSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#contains-consecutive-pattern-seq).
+Formalized by `MetaMathlibExt.ContainsConsecutivePatternSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#contains-consecutive-pattern-seq).
 
 ## Restricted stack-sorting from a given stack
 
@@ -62,7 +62,7 @@ output.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1 (Berlow's map `s_T`).
 
-Formalized by `MetaMathlibExt.restrictedStackSortAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#restricted-stack-sort-aux).
+Formalized by `MetaMathlibExt.restrictedStackSortAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#restricted-stack-sort-aux).
 
 ## West's stack-sorting map
 
@@ -77,7 +77,7 @@ pushed, the stack is emptied from top to bottom onto the output.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.westStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#west-stack-sort).
+Formalized by `MetaMathlibExt.westStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#west-stack-sort).
 
 ## Cyclic-pattern-avoiding stack-sorting map
 
@@ -96,7 +96,7 @@ $w_i' < w_j' \iff p_i < p_j$ for all $1 \le i, j \le m$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.cyclicStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-stack-sort).
+Formalized by `MetaMathlibExt.cyclicStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-stack-sort).
 
 ## Consecutive-cyclic-pattern-avoiding stack-sorting map
 
@@ -113,7 +113,7 @@ Then push $x$. When the input is exhausted, pop the stack from top to bottom ont
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.consecutiveCyclicStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#consecutive-cyclic-stack-sort).
+Formalized by `MetaMathlibExt.consecutiveCyclicStackSort`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#consecutive-cyclic-stack-sort).
 
 ## Cyclic avoidance machine
 
@@ -128,7 +128,7 @@ pattern $21$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.cyclicSortingMachine`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine).
+Formalized by `MetaMathlibExt.cyclicSortingMachine`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine).
 
 ## Stack-sorting examples
 
@@ -143,7 +143,7 @@ $SC_{[123]}(1324) = 3124$ and $SC_{[123]}(231) = 123$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1, Figures 1-3.
 
-Formalized by `MetaMathlibExt.stackSort_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#stack-sort-examples).
+Formalized by `MetaMathlibExt.stackSort_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#stack-sort-examples).
 
 ## Standardization
 
@@ -156,7 +156,7 @@ of $s_i$: the $r$th smallest entry becomes $r$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.standardizeSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#standardize-seq).
+Formalized by `MetaMathlibExt.standardizeSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#standardize-seq).
 
 ## Heads of runs of consecutive integers
 
@@ -170,7 +170,7 @@ of adjacent consecutive integers of the sequence.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.consecutiveRunHeads`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#consecutive-run-heads).
+Formalized by `MetaMathlibExt.consecutiveRunHeads`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#consecutive-run-heads).
 
 ## Reduction of a sequence
 
@@ -184,7 +184,7 @@ $x$, which for distinct entries is the rank of $x$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.reductionSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#reduction-seq).
+Formalized by `MetaMathlibExt.reductionSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#reduction-seq).
 
 ## Standardization and reduction examples
 
@@ -198,7 +198,7 @@ standardizes.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.standardizeSeq_reductionSeq_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#standardize-seq-reduction-seq-examples).
+Formalized by `MetaMathlibExt.standardizeSeq_reductionSeq_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#standardize-seq-reduction-seq-examples).
 
 ## Push order of the superimpose operation
 
@@ -216,7 +216,7 @@ $\mathrm{si}(\sigma_1, \sigma_2)$ pushes the entries of $\sigma_1$ and $\sigma_2
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 3.2.
 
-Formalized by `MetaMathlibExt.superimposePush`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose-push).
+Formalized by `MetaMathlibExt.superimposePush`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose-push).
 
 ## Superimpose operation
 
@@ -230,7 +230,7 @@ read from top to bottom.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 3.2.
 
-Formalized by `MetaMathlibExt.superimpose`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose).
+Formalized by `MetaMathlibExt.superimpose`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose).
 
 ## Superimpose examples
 
@@ -242,7 +242,7 @@ $\mathrm{si}((1, 2), (3, 4, 5, 6)) = (3, 4, 5, 1, 2, 6)$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 3.2 and Example 1.
 
-Formalized by `MetaMathlibExt.superimpose_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose-examples).
+Formalized by `MetaMathlibExt.superimpose_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#superimpose-examples).
 
 ## The permutation $\xi_n$
 
@@ -256,7 +256,7 @@ $\xi_n = 2, 4, \dots, n-1, 1, 3, \dots, n$ for odd $n$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.xiPermutation`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#xi-permutation).
+Formalized by `MetaMathlibExt.xiPermutation`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#xi-permutation).
 
 ## The parity-split permutations for six and seven
 
@@ -269,7 +269,7 @@ $\xi_7 = 2461357$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 1.
 
-Formalized by `MetaMathlibExt.xiPermutation_six_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#xi-permutation-six-seven).
+Formalized by `MetaMathlibExt.xiPermutation_six_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#xi-permutation-six-seven).
 
 ## Good sequences of suffix extrema
 
@@ -281,7 +281,7 @@ $s_i, s_{i+1}, \ldots, s_\ell$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 3.4.
 
-Formalized by `MetaMathlibExt.IsGoodSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#is-good-seq).
+Formalized by `MetaMathlibExt.IsGoodSeq`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#is-good-seq).
 
 ## Permutations sorted by a map
 
@@ -294,7 +294,7 @@ the identity permutation $\mathrm{id}_n = 12 \cdots n$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Section 2.
 
-Formalized by `MetaMathlibExt.sortedPermutations`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#sorted-permutations).
+Formalized by `MetaMathlibExt.sortedPermutations`, a definition declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#sorted-permutations).
 
 ## Small cases of good sequences and of sorting by the consecutive $321$-cyclic stack
 
@@ -307,7 +307,7 @@ the consecutive-cyclic-pattern-avoiding stack-sorting map $s^{[321]}$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Sections 2 and 3.4.
 
-Formalized by `MetaMathlibExt.isGoodSeq_consecutiveCyclicStackSort_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#is-good-seq-consecutive-cyclic-stack-sor).
+Formalized by `MetaMathlibExt.isGoodSeq_consecutiveCyclicStackSort_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#is-good-seq-consecutive-cyclic-stack-sor).
 
 ## $n - 2$ passes of $SC_{(123)}$ sort every permutation, and $n - 3$ do not
 
@@ -322,7 +322,7 @@ in increasing order.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_123_iterate_sorts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-123-iterate-sorts).
+Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_123_iterate_sorts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-123-iterate-sorts).
 
 ## Eventual periodicity of the identity under $SC_{(321)}$
 
@@ -338,7 +338,7 @@ $\lceil (n-1-c)/2 \rceil = \lfloor (n-c)/2 \rfloor$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_321_identity_orbit_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-321-identity-orbi).
+Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_321_identity_orbit_period` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-321-identity-orbi).
 
 ## No permutation of length at least four is sorted by the consecutive cyclic $123$-stack
 
@@ -351,7 +351,7 @@ $s^{[123]}$ maps to the identity has $0$ elements.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sortedPermutations_consecutiveCyclicStackSort_123` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#sorted-permutations-consecutive-cyclic-s).
+Stated but not proved: `MetaMathlibExt.sortedPermutations_consecutiveCyclicStackSort_123` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#sorted-permutations-consecutive-cyclic-s).
 
 ## Permutations sorted by the consecutive $321$-cyclic stack
 
@@ -365,7 +365,7 @@ $|\mathrm{Sort}_n(s^{[321]})| = 2^{n-2}$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.card_sortedPermutations_consecutiveCyclicStackSort_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#card-sorted-permutations-consecutive-cyc).
+Stated but not proved: `MetaMathlibExt.card_sortedPermutations_consecutiveCyclicStackSort_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#card-sorted-permutations-consecutive-cyc).
 
 ## Reducing before the $123$ cyclic sorting machine does not change the reduced output
 
@@ -383,7 +383,7 @@ $\pi$ enter and leave the stack together is not part of the statement.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.reductionSeq_cyclicSortingMachine_123_reductionSeq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#reduction-seq-cyclic-sorting-machine-123).
+Stated but not proved: `MetaMathlibExt.reductionSeq_cyclicSortingMachine_123_reductionSeq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#reduction-seq-cyclic-sorting-machine-123).
 
 ## Reduction and iterates of $SC_{(123)}$
 
@@ -397,7 +397,7 @@ $SC_{[123]}^k(\mathrm{red}(\pi)) = 12 \cdots \ell$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_123_iterate_eq_id_iff_reductionSeq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-123-iterate-eq-id).
+Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_123_iterate_eq_id_iff_reductionSeq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-123-iterate-eq-id).
 
 ## After one pass of the $123$ cyclic sorting machine, the reduction is shorter
 
@@ -410,7 +410,7 @@ machine $\mathrm{SC}_{[123]}$ has fewer than $n$ entries.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.length_reductionSeq_cyclicSortingMachine_123_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#length-reduction-seq-cyclic-sorting-mach).
+Stated but not proved: `MetaMathlibExt.length_reductionSeq_cyclicSortingMachine_123_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#length-reduction-seq-cyclic-sorting-mach).
 
 ## One pass of $SC_{(321)}$ on superimposed increasing runs
 
@@ -423,7 +423,7 @@ $\mathrm{si}((1, \dots, m+1), (m+2, \dots, n))$.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_321_superimpose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-321-superimpose).
+Stated but not proved: `MetaMathlibExt.cyclicSortingMachine_321_superimpose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#cyclic-sorting-machine-321-superimpose).
 
 ## First entry and tail of permutations sorted by the consecutive $321$-cyclic stack
 
@@ -438,7 +438,7 @@ is the minimum or the maximum of itself and all entries after it.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.head_tail_of_mem_sortedPermutations_consecutiveCyclicStackSort_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#head-tail-of-mem-sorted-permutations-con).
+Stated but not proved: `MetaMathlibExt.head_tail_of_mem_sortedPermutations_consecutiveCyclicStackSort_321` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#head-tail-of-mem-sorted-permutations-con).
 
 ## Characterization of the permutations sorted by the consecutive $321$-cyclic stack
 
@@ -453,7 +453,7 @@ entries after it.
 
 - Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.mem_sortedPermutations_consecutiveCyclicStackSort_321_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#mem-sorted-permutations-consecutive-cycl).
+Stated but not proved: `MetaMathlibExt.mem_sortedPermutations_consecutiveCyclicStackSort_321_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/CyclicPatternAvoidingStacksWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html#mem-sorted-permutations-consecutive-cycl).
 
 ## Depends on
 
@@ -462,4 +462,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cyclic-pattern-avoiding stack sorting](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-patterns/cyclic-pattern-avoiding-stack-sorting)

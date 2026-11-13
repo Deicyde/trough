@@ -1,85 +1,72 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.CategoryTheory.Hypercovering.split_iff_components_of_epi, Stacks.CategoryTheory.Hypercovering.components_of_epi_iff_components_of_degeneracy, Stacks.CategoryTheory.Hypercovering.truncated_split_iff_components_of_epi, Stacks.CategoryTheory.Hypercovering.truncated_components_of_epi_iff_components_of_degeneracy, Stacks.CategoryTheory.Hypercovering.exists_hypercovering_with_objects_in, Stacks.CategoryTheory.Hypercovering.exists_hypercoveringOfTerminal_with_objects_in, Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_map, Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite
+lean: Stacks.CategoryTheory.Hypercovering.tfae_nonempty_subobjectSplitting, Stacks.CategoryTheory.Hypercovering.tfae_nonempty_truncated_subobjectSplitting, Stacks.CategoryTheory.Hypercovering.exists_hypercovering_with_objects_in, Stacks.CategoryTheory.Hypercovering.exists_hypercoveringOfTerminal_with_objects_in, Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_map, Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite, Stacks.CategoryTheory.Hypercovering.IsHypercovering.map, Stacks.CategoryTheory.Hypercovering.exists_finite_hypercovering
 statement: formalized
 proof: formalized
 ---
 
 # 25.12 Constructing hypercoverings
 
-Section 25.12 of the Stacks Project, [Tag 094J](https://stacks.math.columbia.edu/tag/094J). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.12 of the Stacks Project, [Tag 094J](https://stacks.math.columbia.edu/tag/094J). 9 tags here are carried by 12 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DAU, a lemma
 
 [Tag 0DAU](https://stacks.math.columbia.edu/tag/0DAU) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.split_iff_components_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean#L850). The attribute's comment: “simplicial: (1) iff (2)”.
+**`Stacks.CategoryTheory.Hypercovering.tfae_nonempty_subobjectSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SplitSubobject.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SplitSubobject.lean#L48). The attribute's comment: “simplicial objects (`r = ∞`): (1), (2) and (3) are equivalent, with (1) the splitting by subobjects of Tag 017P”.
 
-> **Stacks Project, Tag 0DAU, parts (1) and (2).** A simplicial formal
-> coproduct is split iff each component map over a surjective simplicial
-> operator is an isomorphism.
+> **Stacks Project, Tag 0DAU**, for simplicial objects. For a simplicial object `K` of `SR(C)`,
+> written `K_n = {U_{n, i}}_{i ∈ I_n}`, the following are equivalent:
+> 1. `K` is split, in the sense of Tag 017P (a splitting by subobjects);
+> 2. for every surjection `φ : [m] → [n]` and every `i ∈ I_n`, the component
+>   `f_{φ, i} : U_{n, i} → U_{m, α(φ)(i)}` is an isomorphism;
+> 3. for all `n`, `0 ≤ j ≤ n` and `i ∈ I_n`, the component of the degeneracy `σ^n_j` at `i` is an
+>   isomorphism.
 
 ```lean
-theorem split_iff_components_of_epi
+theorem tfae_nonempty_subobjectSplitting
     (K : SimplicialObject (FormalCoproduct.{w} C)) :
-    Nonempty K.Splitting ↔
-      ∀ {m n : SimplexCategory} (φ : m ⟶ n) [Epi φ]
-        (i : (K.obj (op n)).I),
-        IsIso ((K.map φ.op).φ i)
+    List.TFAE
+      [Nonempty K.SubobjectSplitting,
+        ∀ {m n : SimplexCategory} (φ : m ⟶ n) [Epi φ] (i : (K.obj (op n)).I),
+          IsIso ((K.map φ.op).φ i),
+        ∀ (n : ℕ) (j : Fin (n + 1)) (i : (K.obj (op (SimplexCategory.mk n))).I),
+          IsIso ((K.map (SimplexCategory.σ j).op).φ i)]
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.components_of_epi_iff_components_of_degeneracy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean, line 864](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean#L864). The attribute's comment: “simplicial: (2) iff (3)”.
+**`Stacks.CategoryTheory.Hypercovering.tfae_nonempty_truncated_subobjectSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SplitSubobject.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SplitSubobject.lean#L72). The attribute's comment: “`r`-truncated simplicial objects: (1), (2) and (3) are equivalent, with (1) the truncated splitting by subobjects of Tag 017P”.
 
-> **Stacks Project, Tag 0DAU, parts (2) and (3).** It suffices to test the
-> elementary degeneracies of a simplicial formal coproduct.
-
-```lean
-theorem components_of_epi_iff_components_of_degeneracy
-    (K : SimplicialObject (FormalCoproduct.{w} C)) :
-    (∀ {m n : SimplexCategory} (φ : m ⟶ n) [Epi φ]
-      (i : (K.obj (op n)).I), IsIso ((K.map φ.op).φ i)) ↔
-    (∀ (n : ℕ) (j : Fin (n + 1))
-      (i : (K.obj (op (SimplexCategory.mk n))).I),
-      IsIso ((K.map (SimplexCategory.σ j).op).φ i))
-```
-
-**`Stacks.CategoryTheory.Hypercovering.truncated_split_iff_components_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean, line 895](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean#L895). The attribute's comment: “truncated: (1) iff (2)”.
-
-> **Stacks Project, Tag 0DAU, truncated parts (1) and (2).**
+> **Stacks Project, Tag 0DAU**, for `r`-truncated simplicial objects. For an `r`-truncated
+> simplicial object `K` of `SR(C)`, written `K_n = {U_{n, i}}_{i ∈ I_n}`, the following are
+> equivalent:
+> 1. `K` is split, in the sense of Tag 017P for truncated simplicial objects;
+> 2. for every surjection `φ : [m] → [n]` with `m ≤ r` and every `i ∈ I_n`, the component
+>   `f_{φ, i} : U_{n, i} → U_{m, α(φ)(i)}` is an isomorphism;
+> 3. for all `0 ≤ j ≤ n < r` and `i ∈ I_n`, the component of the degeneracy `σ^n_j` at `i` is an
+>   isomorphism.
 
 ```lean
-theorem truncated_split_iff_components_of_epi (r : ℕ)
+theorem tfae_nonempty_truncated_subobjectSplitting (r : ℕ)
     (K : SimplicialObject.Truncated (FormalCoproduct.{w} C) r) :
-    IsTruncatedSplit r K ↔
-      ∀ {m n : SimplexCategory.Truncated r} (φ : m ⟶ n) [Epi φ]
-        (i : (K.obj (op n)).I),
-        IsIso ((K.map φ.op).φ i)
-```
-
-**`Stacks.CategoryTheory.Hypercovering.truncated_components_of_epi_iff_components_of_degeneracy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean, line 918](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Split.lean#L918). The attribute's comment: “truncated: (2) iff (3)”.
-
-> **Stacks Project, Tag 0DAU, truncated parts (2) and (3).**
-
-```lean
-theorem truncated_components_of_epi_iff_components_of_degeneracy (r : ℕ)
-    (K : SimplicialObject.Truncated (FormalCoproduct.{w} C) r) :
-    (∀ {m n : SimplexCategory.Truncated r} (φ : m ⟶ n) [Epi φ]
-      (i : (K.obj (op n)).I), IsIso ((K.map φ.op).φ i)) ↔
-    (∀ (n : ℕ) (hn : n + 1 ≤ r) (j : Fin (n + 1))
-      (i : (K.obj (op (⟨SimplexCategory.mk n, Nat.le_of_succ_le hn⟩ :
-        SimplexCategory.Truncated r))).I),
-      IsIso ((K.map (ObjectProperty.homMk (SimplexCategory.σ j) :
-        (⟨SimplexCategory.mk (n + 1), hn⟩ : SimplexCategory.Truncated r) ⟶
-        (⟨SimplexCategory.mk n, Nat.le_of_succ_le hn⟩ :
-          SimplexCategory.Truncated r)).op).φ i))
+    List.TFAE
+      [Nonempty (SimplicialObject.Truncated.SubobjectSplitting K),
+        ∀ {m n : SimplexCategory.Truncated r} (φ : m ⟶ n) [Epi φ] (i : (K.obj (op n)).I),
+          IsIso ((K.map φ.op).φ i),
+        ∀ (n : ℕ) (hn : n + 1 ≤ r) (j : Fin (n + 1))
+          (i : (K.obj (op (⟨SimplexCategory.mk n, Nat.le_of_succ_le hn⟩ :
+            SimplexCategory.Truncated r))).I),
+          IsIso ((K.map (ObjectProperty.homMk (SimplexCategory.σ j) :
+            (⟨SimplexCategory.mk (n + 1), hn⟩ : SimplexCategory.Truncated r) ⟶
+            (⟨SimplexCategory.mk n, Nat.le_of_succ_le hn⟩ :
+              SimplexCategory.Truncated r)).op).φ i)]
 ```
 
 ## Tag 0DAV, a lemma
 
 [Tag 0DAV](https://stacks.math.columbia.edu/tag/0DAV) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_with_objects_in`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/ObjectsInCollection.lean, line 1156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/ObjectsInCollection.lean#L1156).
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_with_objects_in`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/ObjectsInCollection.lean, line 1156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/ObjectsInCollection.lean#L1156).
 
 > **Stacks Project, Tag 0DAV.** If the objects in `B` cover every object of a site and adjoining
 > one more morphism whose source lies in `B` preserves such a covering, then every object has a
@@ -105,7 +92,7 @@ theorem exists_hypercovering_with_objects_in
 
 [Tag 0DAX](https://stacks.math.columbia.edu/tag/0DAX) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercoveringOfTerminal_with_objects_in`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/PresheafObjects/Existence.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/PresheafObjects/Existence.lean#L29).
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercoveringOfTerminal_with_objects_in`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/PresheafObjects/Existence.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/PresheafObjects/Existence.lean#L29).
 
 > **Stacks Project, Tag 0DAX.** A covering collection of objects supplies a hypercovering of
 > the final presheaf all of whose terms are coproducts of objects in that collection.
@@ -124,7 +111,7 @@ theorem exists_hypercoveringOfTerminal_with_objects_in
 
 [Tag 0DAY](https://stacks.math.columbia.edu/tag/0DAY) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismOfSites.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismOfSites.lean#L585).
+**`Stacks.CategoryTheory.Hypercovering.exists_hypercovering_of_map`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismOfSites.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismOfSites.lean#L585).
 
 > The underlying functor of a morphism of sites which preserves equalizers and pullbacks
 > carries a hypercovering to a hypercovering.
@@ -145,7 +132,7 @@ lemma exists_hypercovering_of_map
 
 [Tag 0DAZ](https://stacks.math.columbia.edu/tag/0DAZ) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L265). The attribute's comment: “a hypercovering of LC\_qc transported to a small model of it”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L265). The attribute's comment: “a hypercovering of LC\_qc transported to a small model of it”.
 
 > **Stacks 0DAZ at the comparison with the small model.** A hypercovering of an object of
 > `LC_qc`, carried degreewise to the small model, is a hypercovering of the image object there.
@@ -165,7 +152,7 @@ theorem isHypercovering_map_smallSite {Y : S.category}
       (K ⋙ mapFormalCoproduct.{t₁} (Over.post S.smallEquivalence.functor))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.IsHypercovering.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Map.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Map.lean#L467). The attribute's comment: “the hypothesis that `u` be continuous is used only through its covering clause `MapsCoveringsToCoverings`, which is Tag 00WV(1) verbatim — the same index type and the same image family — together with the preservation of fibre products that is Tag 00WV(2); the conclusion is the full statement, both the degree-zero clause and the clause in degree n + 1”.
+**`Stacks.CategoryTheory.Hypercovering.IsHypercovering.map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Map.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Map.lean#L467). The attribute's comment: “the hypothesis that `u` be continuous is used only through its covering clause `MapsCoveringsToCoverings`, which is Tag 00WV(1) verbatim — the same index type and the same image family — together with the preservation of fibre products that is Tag 00WV(2); the conclusion is the full statement, both the degree-zero clause and the clause in degree n + 1”.
 
 > **Stacks Project, Tag 0DAZ.** Let `u : D ⥤ C` be a functor between sites given by
 > pretopologies which takes covering families to covering families and preserves fibre products.
@@ -183,7 +170,7 @@ theorem IsHypercovering.map (JD : Pretopology D) (JC : Pretopology C) (u : D ⥤
 
 [Tag 094K](https://stacks.math.columbia.edu/tag/094K) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_finite_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FiniteConstruction.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/FiniteConstruction.lean#L890).
+**`Stacks.CategoryTheory.Hypercovering.exists_finite_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/FiniteConstruction.lean, line 890](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/FiniteConstruction.lean#L890).
 
 > **Stacks Project, Tag 094K.** If a class `B` supplies finite coverings and every such
 > covering remains covering after adjoining one further arrow from an object of `B`, then every
@@ -214,14 +201,14 @@ theorem exists_finite_hypercovering
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.Sigma.map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L22) (StacksFrontier): “the induced map ∐ U\_i ⟶ ∐ V\_j from α : I → J and f\_i : U\_i ⟶ V\_\{α i}”.
-- [`CategoryTheory.Limits.Sigma.ι_comp_map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.ι_comp_map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L24) (StacksFrontier): “it sends the summand U\_i into V\_\{α i} via f\_i”.
+- [`CategoryTheory.Limits.Sigma.map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L22) (StacksFrontier): “the induced map ∐ U\_i ⟶ ∐ V\_j from α : I → J and f\_i : U\_i ⟶ V\_\{α i}”.
+- [`CategoryTheory.Limits.Sigma.ι_comp_map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.ι_comp_map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch25.lean#L24) (StacksFrontier): “it sends the summand U\_i into V\_\{α i} via f\_i”.
 
 ## Tag 0DB1, a remark
 
 [Tag 0DB1](https://stacks.math.columbia.edu/tag/0DB1) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.degreewiseUnions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean#L311). The attribute's comment: “the simplicial object of degreewise disjoint unions”.
+**`Stacks.CategoryTheory.Hypercovering.degreewiseUnions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean#L311). The attribute's comment: “the simplicial object of degreewise disjoint unions”.
 
 > Take disjoint unions in each degree of a simplicial semi-representable object.  Only the
 > coproducts of the objects actually occurring are required to exist.
@@ -231,7 +218,7 @@ noncomputable def degreewiseUnions (K : SimplicialObject (FormalCoproduct.{w} C)
     (hsum : ∀ n, HasCoproduct (K.obj n).obj) : SimplicialObject (FormalCoproduct.{w} C)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoveringDegreewiseUnions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean#L443). The attribute's comment: “the degreewise disjoint unions again form a hypercovering”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoveringDegreewiseUnions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DegreewiseUnions.lean#L443). The attribute's comment: “the degreewise disjoint unions again form a hypercovering”.
 
 > **Stacks Project, Tag 0DB1.** Let `K` be a hypercovering on a site with fibre products and
 > equalizers.  If the coproduct of the objects in each degree of `K` exists and the map from the
@@ -255,7 +242,7 @@ noncomputable def hypercoveringDegreewiseUnions (K : HypercoveringOfTerminal.{w}
 
 [Tag 0DB2](https://stacks.math.columbia.edu/tag/0DB2) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.takeUnionsSimplicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean#L95). The attribute's comment: “the degreewise construction”.
+**`Stacks.CategoryTheory.Hypercovering.takeUnionsSimplicial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean#L95). The attribute's comment: “the degreewise construction”.
 
 > Take the disjoint unions in each degree of a simplicial formal coproduct over `X`.
 > Only the coproducts of its actual terms are required to exist.
@@ -267,7 +254,7 @@ noncomputable def takeUnionsSimplicial
     SimplicialObject (FormalCoproduct.{w} (Over X))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isHypercovering_takeUnionsSimplicial`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean#L226). The attribute's comment: “preservation of hypercoverings”.
+**`Stacks.CategoryTheory.Hypercovering.isHypercovering_takeUnionsSimplicial`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/DisjointUnions.lean#L226). The attribute's comment: “preservation of hypercoverings”.
 
 > If summable semi-representable objects over `X` are closed
 > under finite limits, taking their coproducts commutes with those limits, and it sends coverings
@@ -294,4 +281,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.12, Tag 094J](https://stacks.math.columbia.edu/tag/094J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

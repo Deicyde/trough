@@ -8,7 +8,7 @@ proof: formalized
 
 # Generalized Catalan–Schröder numbers
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html).
 
 ## Functional equation of the generalized Catalan–Schröder recurrence
 
@@ -21,7 +21,7 @@ $$a_n = s\,a_{n-1} + t \sum_{k=0}^{n-3} a_{k+1}\,a_{n-k-2} \qquad (n \ge 2).$$
 Then the power series $A = \sum_{n \ge 0} a_n X^n$ over $R$ satisfies
 $A - 1 = pX + sX\,(A - 1) + tX\,(A - 1)^2$.
 
-Formalized by `MetaMathlibExt.generalizedCatalanSchroeder_recurrence_functionalEquation`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html#generalized-catalan-schroeder-recurrence).
+Formalized by `MetaMathlibExt.generalizedCatalanSchroeder_recurrence_functionalEquation`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html#generalized-catalan-schroeder-recurrence).
 
 ## Generating function of the generalized Catalan–Schröder numbers
 
@@ -52,7 +52,7 @@ comparing coefficients.
 
 - Paul Barry, "Generalized Catalan Recurrences, Riordan Arrays, Elliptic Curves, and Orthogonal Polynomials", Journal of Integer Sequences 24 (2021), Article 21.5.1, Proposition lines 367-373, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry/barry431.tex>.
 
-Formalized by `MetaMathlibExt.generalizedCatalanSchroeder_generatingFunction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html#generalized-catalan-schroeder-generating).
+Formalized by `MetaMathlibExt.generalizedCatalanSchroeder_generatingFunction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/GeneralizedCatalanSchroeder.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html#generalized-catalan-schroeder-generating).
 
 ## Depends on
 
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Catalan–Schröder numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/catalan-numbers/generalized-catalan-schr-der-numbers)

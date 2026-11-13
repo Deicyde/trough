@@ -8,7 +8,7 @@ proof: formalized
 
 # 29.8 Dominant morphisms
 
-Section 29.8 of the Stacks Project, [Tag 01RI](https://stacks.math.columbia.edu/tag/01RI). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.8 of the Stacks Project, [Tag 01RI](https://stacks.math.columbia.edu/tag/01RI). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01RJ, a definition
 
@@ -16,13 +16,13 @@ Section 29.8 of the Stacks Project, [Tag 01RI](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsDominant`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsDominant#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L135) (StacksFrontier). References: EGA I (2.2.6).
+- [`AlgebraicGeometry.IsDominant`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsDominant#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L137) (StacksFrontier). References: EGA I (2.2.6).
 
 ## Tag 01RK, a lemma
 
 [Tag 01RK](https://stacks.math.columbia.edu/tag/01RK) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_of_genericPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Dominant.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Dominant.lean#L51).
+**`AlgebraicGeometry.isDominant_of_genericPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Dominant.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Dominant.lean#L51).
 
 > A morphism of schemes whose image contains the generic point of every irreducible component
 > of the target is dominant.
@@ -36,7 +36,7 @@ theorem isDominant_of_genericPoints_subset_range {X S : Scheme.{u}} (f : X ⟶ S
 
 [Tag 01RL](https://stacks.math.columbia.edu/tag/01RL) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_iff_genericPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L234). References: EGA IV (1.1.5), “a) <=> b)”; EGA I (6.6.5).
+**`AlgebraicGeometry.isDominant_iff_genericPoints_subset_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L234). References: EGA IV (1.1.5), “a) <=> b)”; EGA I (6.6.5).
 
 > **Stacks Project, Tag 01RL.** A quasi-compact morphism of schemes is dominant if and only if
 > its image contains every generic point of an irreducible component of the target.
@@ -51,7 +51,7 @@ theorem isDominant_iff_genericPoints_subset_range {X S : Scheme.{u}} (f : X ⟶ 
 
 [Tag 0H3F](https://stacks.math.columbia.edu/tag/0H3F) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_pullback_snd_of_liftsGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean#L77).
+**`AlgebraicGeometry.isDominant_pullback_snd_of_liftsGeneralizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean#L77).
 
 > **Stacks Project, Tag 0H3F.** A generizing base change of a quasi-compact dominant morphism
 > of schemes is dominant.
@@ -66,7 +66,7 @@ public theorem isDominant_pullback_snd_of_liftsGeneralizations
 
 [Tag 0H8F](https://stacks.math.columbia.edu/tag/0H8F) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_pullback_snd_of_isOpenMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean#L50).
+**`AlgebraicGeometry.isDominant_pullback_snd_of_isOpenMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/BaseChange.lean#L50).
 
 > **Stacks Project, Tag 0H8F.** The base change of a dominant morphism of schemes along an
 > open morphism is dominant.
@@ -81,7 +81,7 @@ public theorem isDominant_pullback_snd_of_isOpenMap {X S S' : Scheme.{u}}
 
 [Tag 02NE](https://stacks.math.columbia.edu/tag/02NE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_nhds_disjoint_range_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L219). References: EGA IV (9.7.5.1), “more general”.
+**`AlgebraicGeometry.exists_open_nhds_disjoint_range_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L219). References: EGA IV (9.7.5.1), “more general”.
 
 > **Stacks Project, Tag 02NE.** If a generic point of an irreducible
 > component is not in the image of a quasi-compact morphism of schemes, it has
@@ -98,7 +98,7 @@ theorem exists_open_nhds_disjoint_range_of_quasiCompact
 
 [Tag 01RM](https://stacks.math.columbia.edu/tag/01RM) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_iff_genericPoint_mem_range`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L282). The attribute's comment: “dominant\_iff\_generic\_points\_in\_image”.
+**`AlgebraicGeometry.isDominant_iff_genericPoint_mem_range`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L282). The attribute's comment: “dominant\_iff\_generic\_points\_in\_image”.
 
 > **Stacks Project, Tag 01RM.** A morphism from a scheme with finitely many irreducible
 > components is dominant if and only if its image contains the generic point of every irreducible
@@ -112,7 +112,7 @@ lemma isDominant_iff_genericPoint_mem_range
       ∀ Z : irreducibleComponents S, Z.2.1.genericPoint ∈ Set.range f
 ```
 
-**`AlgebraicGeometry.finite_irreducibleComponents_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L313). The attribute's comment: “finite\_irreducible\_components\_target”.
+**`AlgebraicGeometry.finite_irreducibleComponents_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L313). The attribute's comment: “finite\_irreducible\_components\_target”.
 
 > A dominant morphism of schemes with finitely many irreducible components in its source has
 > finitely many irreducible components in its target.
@@ -128,7 +128,7 @@ theorem finite_irreducibleComponents_of_isDominant
 
 [Tag 0CC1](https://stacks.math.columbia.edu/tag/0CC1) in the Stacks Project.
 
-**`AlgebraicGeometry.tfae_isDominant_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/IntegralSchemes.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/IntegralSchemes.lean#L99).
+**`AlgebraicGeometry.tfae_isDominant_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/IntegralSchemes.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/IntegralSchemes.lean#L99).
 
 > **Stacks Project, Tag 0CC1.** For a morphism `f : X ⟶ Y` of integral schemes, the
 > following are equivalent: `f` is dominant; it maps the generic point of `X` to that of `Y`;
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.8, Tag 01RI](https://stacks.math.columbia.edu/tag/01RI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

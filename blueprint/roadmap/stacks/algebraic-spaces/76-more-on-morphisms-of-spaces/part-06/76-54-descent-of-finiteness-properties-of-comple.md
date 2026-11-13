@@ -1,50 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_fpqcCovering, AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_derivedPullback_of_isFpqcCovering, AlgebraicGeometry.Space.hasTorAmplitudeCanonical_etaleStalk_iff_of_cartesian, AlgebraicGeometry.Space.hasFiniteTorDimensionCanonical_etaleStalk_iff_of_cartesian, AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_forall_of_isFpqcCovering, AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_forall_of_isFpqcCovering, AlgebraicGeometry.Space.isPseudoCoherent_of_derivedPullback_of_isFiniteOrderThickening, AlgebraicGeometry.Space.isPerfectRelativeToCanonical_of_pull_of_isThickeningHom
+lean: AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_derivedPullback_of_isFpqcCovering, AlgebraicGeometry.Space.hasTorAmplitudeCanonical_etaleStalk_iff_of_cartesian, AlgebraicGeometry.Space.hasFiniteTorDimensionCanonical_etaleStalk_iff_of_cartesian, AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_forall_of_isFpqcCovering, AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_forall_of_isFpqcCovering, AlgebraicGeometry.Space.isPseudoCoherent_of_derivedPullback_of_isFiniteOrderThickening, AlgebraicGeometry.Space.isPerfectRelativeToCanonical_of_pull_of_isThickeningHom, AlgebraicGeometry.Space.isRelativelyPerfect_of_isRelativelyPerfect_closedFibre
 statement: formalized
 proof: formalized
 ---
 
 # 76.54 Descent of finiteness properties of complexes
 
-Section 76.54 of the Stacks Project, [Tag 0DL0](https://stacks.math.columbia.edu/tag/0DL0). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.54 of the Stacks Project, [Tag 0DL0](https://stacks.math.columbia.edu/tag/0DL0). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DL1, a lemma
 
 [Tag 0DL1](https://stacks.math.columbia.edu/tag/0DL1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_fpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PseudoCoherentFpqcDescent.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PseudoCoherentFpqcDescent.lean#L156). The attribute's comment: “carries 08H4 for spaces, the 0D6D comparison and the scheme case as hypotheses”.
-
-> **Stacks 0DL1.** Let `{f_i : X_i ⟶ X}` be an fpqc covering of algebraic spaces over a
-> scheme `S`, let `E` be an object of `D_QCoh(𝒪_X)` and let `m` be an integer. Then `E` is
-> `m`-pseudo-coherent if and only if every derived pullback `Lf_i^*E` is.
->
-> The forward implication is pullback preservation of `m`-pseudo-coherence. For the converse,
-> Stacks 0419 refines the covering by morphisms `e_i : T_i ⟶ X_i` out of schemes of the site with
-> `{e_i ≫ f_i}` again an fpqc covering; the derived pullback along `e_i ≫ f_i` is `Le_i^*` of
-> `Lf_i^*E`, which is `m`-pseudo-coherent by pullback preservation, and the refined covering has
-> scheme sources, so the case of schemes applies.
-
-```lean
-theorem isPseudoCoherentFrom_iff_forall_fpqcCovering
-    (hL : BottomRankStratum.HasDerivedModulePullbacks B S hS)
-    (hpull : DerivedPullbackPreservesPseudoCoherence B S hS hL)
-    (hcomp : HasDerivedModulePullbackCompIso B S hS hL)
-    (hschemes : FpqcDescentOfPseudoCoherenceOnSchemes.{u, v} B S hS hL)
-    {I : Type v} {X : AlgebraicSpaces B S hS} {Xi : I → AlgebraicSpaces B S hS}
-    (f : ∀ i, Xi i ⟶ X) (hf : IsFpqcCovering B S hS fun i => (f i).hom)
-    (E : DerivedCategory (Modules.{u, u} B S hS X.1 X.2))
-    (hE : ∀ n : ℤ, ((DerivedCategory.homologyFunctor
-      (Modules.{u, u} B S hS X.1 X.2) n).obj E).IsQuasicoherentOnSite)
-    (m : ℤ) :
-    (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherentFrom E m ↔
-      ∀ i, haveI := hL (f i)
-        (smallEtaleRingedSite B S hS (Xi i).1 (Xi i).2).IsPseudoCoherentFrom
-          ((smallEtaleDerivedModulePullback B S hS (f i)).obj E) m
-```
-
-**`AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_derivedPullback_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/FpqcDescent.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/FpqcDescent.lean#L461).
+**`AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_forall_derivedPullback_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/FpqcDescent.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/FpqcDescent.lean#L461). The attribute's comment: “the full statement, for an arbitrary fpqc covering of algebraic spaces”.
 
 > **Stacks 0DL1.** Let `{f_i : X_i ⟶ X}` be an fpqc covering of algebraic spaces over a scheme
 > `S`, let `E` be an object of `D_QCoh(𝒪_X)` and let `m` be an integer. Then `E` is
@@ -75,7 +45,7 @@ theorem isPseudoCoherentFrom_iff_forall_derivedPullback_of_isFpqcCovering {I : T
 
 [Tag 0DL2](https://stacks.math.columbia.edu/tag/0DL2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTorAmplitudeCanonical_etaleStalk_iff_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean#L365). The attribute's comment: “tor amplitude in [a, b], at a geometric point”.
+**`AlgebraicGeometry.Space.hasTorAmplitudeCanonical_etaleStalk_iff_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean#L365). The attribute's comment: “tor amplitude in [a, b], at a geometric point”.
 
 > **Stacks 0DL2**, the clause on Tor amplitude in `[a, b]`, at a geometric point.
 >
@@ -145,7 +115,7 @@ theorem hasTorAmplitudeCanonical_etaleStalk_iff_of_cartesian
         a b)
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteTorDimensionCanonical_etaleStalk_iff_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean#L448). The attribute's comment: “finite tor dimension, at a geometric point”.
+**`AlgebraicGeometry.Space.hasFiniteTorDimensionCanonical_etaleStalk_iff_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescent.lean#L448). The attribute's comment: “finite tor dimension, at a geometric point”.
 
 > **Stacks 0DL2**, the clause on finite Tor dimension, at a geometric point.
 >
@@ -197,7 +167,7 @@ theorem hasFiniteTorDimensionCanonical_etaleStalk_iff_of_cartesian
             ↥(etaleLocalRing B S hS X.1 (geometricPointMap g'.hom x')) T)).functor.obj E)))
 ```
 
-**`AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentLocal.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentLocal.lean#L658). The attribute's comment: “locally finite tor dimension”.
+**`AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentLocal.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentLocal.lean#L658). The attribute's comment: “locally finite tor dimension”.
 
 > **Stacks 0DL2**, locally finite Tor dimension.
 
@@ -215,7 +185,7 @@ theorem locallyHasFiniteTorDimension_derivedScalarRestriction_iff_forall_of_isFp
         ((smallEtaleDerivedModulePullback B S hS (g' i)).obj E))
 ```
 
-**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentSheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentSheaf.lean#L228). The attribute's comment: “tor amplitude in [a, b]”.
+**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_forall_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentSheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeTorAmplitudeFpqcDescentSheaf.lean#L228). The attribute's comment: “tor amplitude in [a, b]”.
 
 > Let `{g_i : Y_i ⟶ Y}` be an fpqc covering of
 > algebraic spaces over `S`, let `f : X ⟶ Y` be a morphism of algebraic spaces and let
@@ -241,7 +211,7 @@ theorem hasTorAmplitude_derivedScalarRestriction_iff_forall_of_isFpqcCovering
 
 [Tag 0DL3](https://stacks.math.columbia.edu/tag/0DL3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_derivedPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/Thickening.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/Thickening.lean#L135).
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_derivedPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/Thickening.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/Thickening.lean#L135).
 
 > **Stacks 0DL3.** Let `S` be a scheme and let `i : Z ⟶ X'` be a finite-order thickening of
 > algebraic spaces over `S`. Let `K'` be an object of `D(𝒪_{X'})` such that `K = Li^*K'` is
@@ -268,7 +238,7 @@ theorem isPseudoCoherent_of_derivedPullback_of_isFiniteOrderThickening
 
 [Tag 0DL4](https://stacks.math.columbia.edu/tag/0DL4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_of_pull_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackThickeningPerfectProved.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackThickeningPerfectProved.lean#L130).
+**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_of_pull_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackThickeningPerfectProved.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackThickeningPerfectProved.lean#L130).
 
 > Consider a cartesian square
 > ```
@@ -301,7 +271,7 @@ theorem isPerfectRelativeToCanonical_of_pull_of_isThickeningHom
 
 [Tag 0DL5](https://stacks.math.columbia.edu/tag/0DL5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyPerfect_of_isRelativelyPerfect_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectClosedFibre.lean, line 638](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectClosedFibre.lean#L638).
+**`AlgebraicGeometry.Space.isRelativelyPerfect_of_isRelativelyPerfect_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectClosedFibre.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectClosedFibre.lean#L637).
 
 > **Stacks 0DL5.** Let `(R, I)` be a ring with an ideal contained in its Jacobson radical, let
 > `𝒮 = Spec R` and `𝒮₀ = Spec (R/I)`, and let `f : X ⟶ 𝒮` be a proper and flat morphism of
@@ -335,7 +305,7 @@ theorem isRelativelyPerfect_of_isRelativelyPerfect_closedFibre
     IsRelativelyPerfect B S hS f hflat hlfp E
 ```
 
-**`AlgebraicGeometry.Space.isPerfectRelativeTo_of_isPerfectRelativeTo_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectJacobsonFibre.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectJacobsonFibre.lean#L258). The attribute's comment: “the pseudo-coherence clause and the specialization step; Tor clause carried”.
+**`AlgebraicGeometry.Space.isPerfectRelativeTo_of_isPerfectRelativeTo_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectJacobsonFibre.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectJacobsonFibre.lean#L258). The attribute's comment: “the pseudo-coherence clause and the specialization step; Tor clause carried”.
 
 > **Stacks 0DL5.** Let `(R, I)` be a ring with an ideal contained in its Jacobson radical, let
 > `𝒮 = Spec R` and `𝒮₀ = Spec (R/I)`, let `f : X ⟶ 𝒮` be a proper, flat, locally finitely
@@ -379,4 +349,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.54, Tag 0DL0](https://stacks.math.columbia.edu/tag/0DL0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

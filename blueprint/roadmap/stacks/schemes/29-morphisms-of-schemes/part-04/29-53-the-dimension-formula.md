@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.53 The dimension formula
 
-Section 29.53 of the Stacks Project, [Tag 02JT](https://stacks.math.columbia.edu/tag/02JT). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.53 of the Stacks Project, [Tag 02JT](https://stacks.math.columbia.edu/tag/02JT). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02JU, a lemma
 
 [Tag 02JU](https://stacks.math.columbia.edu/tag/02JU) in the Stacks Project.
 
-**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L100). The attribute's comment: “inequality”. References: EGA IV (13.3.4), “Inequality dim O\_\{X\_j”; EGA IV (5.5.6), “partial”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “(5.6.5.1), special case”.
+**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L100). The attribute's comment: “inequality”. References: EGA IV (13.3.4), “Inequality dim O\_\{X\_j”; EGA IV (5.5.6), “partial”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “(5.6.5.1), special case”.
 
 > The dimension formula for a dominant morphism `f : X ⟶ S` locally of finite type between
 > integral schemes over a locally Noetherian base:
@@ -33,7 +33,7 @@ theorem ringKrullDim_stalk_add_trdeg_residueField_le
         (Cardinal.toNat (Algebra.trdeg S.functionField X.functionField) : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L119). The attribute's comment: “equality for a universally catenary base”. References: EGA IV (5.5.8), “special case”; EGA IV (5.6.5), “partial”.
+**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L119). The attribute's comment: “equality for a universally catenary base”. References: EGA IV (5.5.8), “special case”; EGA IV (5.6.5), “partial”.
 
 > Over a universally catenary base the dimension formula is an equality:
 > `dim 𝒪_{X, x} + trdeg_{κ(f x)} κ(x) = dim 𝒪_{S, f x} + trdeg_{R(S)} R(X)`.
@@ -51,7 +51,7 @@ theorem ringKrullDim_stalk_add_trdeg_residueField_eq
         (Cardinal.toNat (Algebra.trdeg S.functionField X.functionField) : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.localDimension_add_trdeg_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L400). The attribute's comment: “dimension-formula inequality”.
+**`AlgebraicGeometry.localDimension_add_trdeg_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L400). The attribute's comment: “dimension-formula inequality”.
 
 > **Stacks 02JU.** The dimension formula for a dominant locally finite-type morphism of
 > integral schemes over a locally Noetherian base: the dimension of the local ring at `x` plus
@@ -71,7 +71,7 @@ theorem localDimension_add_trdeg_le {X S : Scheme.{u}} (f : X ⟶ S)
         (Cardinal.toENat (Algebra.trdeg S.functionField X.functionField) : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.localDimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L417). The attribute's comment: “universally catenary equality”.
+**`AlgebraicGeometry.localDimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L417). The attribute's comment: “universally catenary equality”.
 
 > **Stacks 02JU.** Over a universally catenary base the dimension formula is an equality.
 
@@ -93,7 +93,7 @@ theorem localDimension_add_trdeg_eq {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0BAE](https://stacks.math.columbia.edu/tag/0BAE) in the Stacks Project.
 
-**`AlgebraicGeometry.ringKrullDim_stalk_add_residueFieldTranscendenceDegree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L881). References: EGA IV (13.3.4), “partial”; EGA IV (5.5.6), “partial”; EGA IV (5.5.7), “more general”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “more general”.
+**`AlgebraicGeometry.ringKrullDim_stalk_add_residueFieldTranscendenceDegree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 881](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L881). References: EGA IV (13.3.4), “partial”; EGA IV (5.5.6), “partial”; EGA IV (5.5.7), “more general”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “more general”.
 
 > **Stacks 0BAE.** The general dimension formula: for a morphism `f : X ⟶ S` locally of finite
 > type over a locally Noetherian scheme and a point `x` of `X`,
@@ -114,7 +114,7 @@ theorem ringKrullDim_stalk_add_residueFieldTranscendenceDegree_le {X S : Scheme.
 
 [Tag 02JW](https://stacks.math.columbia.edu/tag/02JW) in the Stacks Project.
 
-**`Stacks.Chow.relativeDimension_isDimensionFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeDimension.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeDimension.lean#L544). References: SGA 6 X (1.5), “special case”.
+**`Stacks.Chow.relativeDimension_isDimensionFunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeDimension.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeDimension.lean#L544). References: SGA 6 X (1.5), “special case”.
 
 > **Stacks 02JW.** A dimension function on a locally Noetherian universally catenary scheme
 > propagates along every locally finite-type morphism by adding the transcendence degree of the
@@ -132,7 +132,7 @@ theorem relativeDimension_isDimensionFunction {X S : Scheme.{u}}
 
 [Tag 02JX](https://stacks.math.columbia.edu/tag/02JX) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_le_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean#L162). The attribute's comment: “dimension inequality”.
+**`AlgebraicGeometry.topologicalKrullDim_le_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean#L162). The attribute's comment: “dimension inequality”.
 
 > **Stacks Project, Tag 02JX.** For a dominant morphism of integral schemes locally of finite
 > type over a locally Noetherian base, the dimension of the source is at most the dimension of the
@@ -146,7 +146,7 @@ theorem topologicalKrullDim_le_add_trdeg (f : X ⟶ Y) [IsLocallyNoetherian Y]
       (Cardinal.toENat (Algebra.trdeg Y.functionField X.functionField) : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_add_trdeg_of_isClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean#L233). The attribute's comment: “equality for closed morphisms”.
+**`AlgebraicGeometry.topologicalKrullDim_eq_add_trdeg_of_isClosedMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionDominant.lean#L233). The attribute's comment: “equality for closed morphisms”.
 
 > **Stacks Project, Tag 02JX.** For a *closed* dominant morphism of integral schemes locally of
 > finite type over a locally Noetherian base — in particular for a proper one — the bound on the
@@ -164,7 +164,7 @@ theorem topologicalKrullDim_eq_add_trdeg_of_isClosedMap (f : X ⟶ Y) [IsLocally
 
 [Tag 0BAG](https://stacks.math.columbia.edu/tag/0BAG) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_le_add_iSup_residueFieldTrdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 920](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L920). References: EGA IV (5.6.6), “more general”.
+**`AlgebraicGeometry.topologicalKrullDim_le_add_iSup_residueFieldTrdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean, line 920](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/DimensionFormula.lean#L920). References: EGA IV (5.6.6), “more general”.
 
 > **Stacks 0BAG.** The dimension of the source of a morphism locally of finite type over a
 > locally Noetherian scheme is at most the dimension of the target plus the supremum of the
@@ -185,4 +185,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.53, Tag 02JT](https://stacks.math.columbia.edu/tag/02JT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
